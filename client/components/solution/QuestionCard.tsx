@@ -64,7 +64,6 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }
           <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
           {question.solution.map((step, index) => (
             <View key={index} style={styles.stepRow}>
-              <View style={[styles.stepDot, { backgroundColor: accentColor }]} />
               <ThemedText style={styles.stepText}>{step}</ThemedText>
             </View>
           ))}
@@ -126,21 +125,11 @@ const styles = StyleSheet.create({
     marginTop: Spacing.sm,
   },
   stepRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
     marginBottom: Spacing.xs,
-  },
-  stepDot: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    marginTop: 8,
-    marginRight: Spacing.sm,
   },
   stepText: {
     ...Typography.small,
     color: JiguuColors.textSecondary,
-    flex: 1,
     lineHeight: 22,
     textAlign: "justify",
   },
