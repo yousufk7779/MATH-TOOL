@@ -40,11 +40,12 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
       onPressOut={isAvailable ? handlePressOut : undefined}
       style={[
         styles.card, 
-        isAvailable ? { backgroundColor: color } : styles.cardDisabled,
+        { backgroundColor: color },
+        !isAvailable && styles.cardDisabled,
         isPressed && styles.cardPressed,
       ]}
     >
-      <View style={[styles.numberContainer, !isAvailable && styles.numberDisabled]}>
+      <View style={styles.numberContainer}>
         <ThemedText style={styles.number}>{number}</ThemedText>
       </View>
       <View style={styles.nameContainer}>
@@ -80,8 +81,7 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   cardDisabled: {
-    backgroundColor: JiguuColors.surface,
-    opacity: 0.6,
+    opacity: 0.65,
   },
   numberContainer: {
     width: 36,
