@@ -52,11 +52,6 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
         <ThemedText style={styles.name} numberOfLines={2}>
           {name}
         </ThemedText>
-        {!isAvailable ? (
-          <View style={styles.comingSoonBadge}>
-            <ThemedText style={styles.comingSoonText}>Coming Soon</ThemedText>
-          </View>
-        ) : null}
       </View>
       {isAvailable ? (
         <View style={styles.chevronIcon}>
@@ -108,19 +103,6 @@ const styles = StyleSheet.create({
     ...Typography.body,
     color: "#fff",
     fontWeight: "600",
-  },
-  comingSoonBadge: {
-    backgroundColor: "rgba(0, 0, 0, 0.3)",
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 2,
-    borderRadius: BorderRadius.xs,
-    alignSelf: "flex-start",
-    marginTop: Spacing.xs,
-  },
-  comingSoonText: {
-    ...Typography.caption,
-    color: "#fff",
-    fontFamily: "Nunito_600SemiBold",
   },
   chevronIcon: {
     width: 12,
