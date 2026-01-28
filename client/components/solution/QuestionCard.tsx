@@ -1,6 +1,5 @@
-import React, { memo, useState } from "react";
-import { StyleSheet, View, Pressable, Image } from "react-native";
-import { Feather } from "@expo/vector-icons";
+import React, { memo } from "react";
+import { StyleSheet, View, Image } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
@@ -21,8 +20,6 @@ interface QuestionCardProps {
 }
 
 function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }: QuestionCardProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
   return (
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
@@ -32,46 +29,26 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }
         <ThemedText style={styles.questionText}>{question.question}</ThemedText>
       </View>
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.toggleButton,
-          { backgroundColor: accentColor + "15" },
-          pressed && { opacity: 0.7 },
-        ]}
-        onPress={() => setIsExpanded(!isExpanded)}
-      >
-        <ThemedText style={[styles.toggleText, { color: accentColor }]}>
-          {isExpanded ? "Hide Solution" : "View Solution"}
-        </ThemedText>
-        <Feather
-          name={isExpanded ? "chevron-up" : "chevron-down"}
-          size={18}
-          color={accentColor}
-        />
-      </Pressable>
-
-      {isExpanded ? (
-        <View style={styles.solutionBox}>
-          {question.image && graphImages[question.image] ? (
-            <View style={styles.imageContainer}>
-              <Image
-                source={graphImages[question.image]}
-                style={styles.graphImage}
-                resizeMode="contain"
-              />
-            </View>
-          ) : null}
-          <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
-          {question.solution.map((step, index) => (
-            <View key={index} style={styles.stepRow}>
-              <ThemedText style={styles.stepText}>{step}</ThemedText>
-            </View>
-          ))}
-          <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-            <ThemedText style={styles.answerText}>{question.answer}</ThemedText>
+      <View style={styles.solutionBox}>
+        {question.image && graphImages[question.image] ? (
+          <View style={styles.imageContainer}>
+            <Image
+              source={graphImages[question.image]}
+              style={styles.graphImage}
+              resizeMode="contain"
+            />
           </View>
+        ) : null}
+        <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
+        {question.solution.map((step, index) => (
+          <View key={index} style={styles.stepRow}>
+            <ThemedText style={styles.stepText}>{step}</ThemedText>
+          </View>
+        ))}
+        <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
+          <ThemedText style={styles.answerText}>{question.answer}</ThemedText>
         </View>
-      ) : null}
+      </View>
     </View>
   );
 }
@@ -100,20 +77,9 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     textAlign: "justify",
   },
-  toggleButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingVertical: Spacing.sm,
-    gap: Spacing.xs,
-  },
-  toggleText: {
-    ...Typography.small,
-    fontFamily: "Nunito_600SemiBold",
-  },
   solutionBox: {
     padding: Spacing.md,
-    paddingTop: 0,
+    paddingTop: Spacing.sm,
     borderTopWidth: 1,
     borderTopColor: JiguuColors.border,
   },
