@@ -15,12 +15,11 @@ export const class10Chapters: Chapter[] = [
   { id: "ch7-coordinate-geometry", number: 7, name: "Coordinate Geometry", color: "#00E676" },
   { id: "ch8-trigonometry", number: 8, name: "Introduction to Trigonometry", color: "#FF5722" },
   { id: "ch9-applications-trigonometry", number: 9, name: "Some Applications of Trigonometry", color: "#9C27B0" },
-  { id: "ch10-circles", number: 10, name: "Circles", color: "#795548" },
-  { id: "ch11-constructions", number: 11, name: "Constructions", color: "#607D8B" },
-  { id: "ch12-areas-circles", number: 12, name: "Areas Related to Circles", color: "#3F51B5" },
-  { id: "ch13-surface-areas-volumes", number: 13, name: "Surface Areas and Volumes", color: "#009688" },
-  { id: "ch14-statistics", number: 14, name: "Statistics", color: "#FF6B6B" },
-  { id: "ch15-probability", number: 15, name: "Probability", color: "#FFA726" },
+  { id: "ch10-circles", number: 10, name: "Circles", color: "#26C6DA" },
+  { id: "ch12-areas-circles", number: 11, name: "Areas Related to Circles", color: "#EC407A" },
+  { id: "ch13-surface-areas-volumes", number: 12, name: "Surface Areas and Volumes", color: "#42A5F5" },
+  { id: "ch14-statistics", number: 13, name: "Statistics", color: "#66BB6A" },
+  { id: "ch15-probability", number: 14, name: "Probability", color: "#AB47BC" },
 ];
 
 export function getChapter(chapterId: string): Chapter | undefined {
