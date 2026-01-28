@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
     ...Typography.body,
     color: JiguuColors.textPrimary,
     lineHeight: 24,
+    textAlign: "justify",
   },
   toggleButton: {
     flexDirection: "row",
@@ -123,6 +124,7 @@ const styles = StyleSheet.create({
     color: JiguuColors.textSecondary,
     flex: 1,
     lineHeight: 22,
+    textAlign: "justify",
   },
   answerBox: {
     marginTop: Spacing.md,
@@ -134,5 +136,6 @@ const styles = StyleSheet.create({
     ...Typography.body,
     fontFamily: "Nunito_700Bold",
     color: "#4CAF50",
+    textAlign: "justify",
   },
 });

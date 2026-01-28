@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIGUU - Quadratic Equations (Class 10) - Final</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Nunito', 'Times New Roman', serif;
+      line-height: 1.6;
+      color: #1A1A2E;
+      background: #fff;
+      padding: 25px 35px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #6C63FF;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #6C63FF;
+    }
+    
+    .subtitle {
+      color: #5F6368;
+      font-size: 12px;
+    }
+    
+    .chapter-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1A1A2E;
+      margin: 15px 0 5px;
+      text-align: center;
+    }
+    
+    .class-badge {
+      display: inline-block;
+      background: #6C63FF;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+    
+    /* CHAPTER OPENING SECTIONS */
+    .intro-section {
+      background: #F8F9FA;
+      border: 1px solid #E0E0E0;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .intro-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6C63FF;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 5px;
+    }
+    
+    .definitions-box {
+      background: #E8F5E9;
+      border: 1px solid #4CAF50;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .key-points-box {
+      background: #FFF8E1;
+      border: 1px solid #FFA000;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .formulas-box {
+      background: #F3E5F5;
+      border: 1px solid #9C27B0;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .crux-box {
+      background: #E3F2FD;
+      border: 1px solid #2196F3;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    /* EXERCISE HEADERS */
+    .exercise-header {
+      background: #6C63FF;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin: 20px 0 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    
+    .example-header {
+      background: #FF6584;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin: 20px 0 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    
+    /* QUESTION BOX */
+    .question-box {
+      background: #F8F9FA;
+      border-left: 3px solid #6C63FF;
+      padding: 10px 12px;
+      margin: 10px 0 6px;
+    }
+    
+    .q-num {
+      font-weight: 700;
+      color: #6C63FF;
+    }
+    
+    /* SOLUTION BOX */
+    .solution-box {
+      padding: 8px 0 12px 12px;
+      border-bottom: 1px dashed #E0E0E0;
+      margin-bottom: 12px;
+    }
+    
+    .sol-label {
+      font-weight: 700;
+      color: #4CAF50;
+      margin-bottom: 6px;
+    }
+    
+    .step {
+      margin: 5px 0;
+    }
+    
+    /* FORMULA REFERENCE BOX - Key Feature */
+    .formula-ref {
+      display: inline-block;
+      background: #FFFDE7;
+      border: 1px solid #FFC107;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #795548;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    
+    .formula-ref-block {
+      background: #FFFDE7;
+      border: 1px solid #FFC107;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #795548;
+      margin: 5px 0 5px 15px;
+      display: inline-block;
+    }
+    
+    /* ANSWER BOX */
+    .ans {
+      background: #E8F5E9;
+      border: 1px solid #4CAF50;
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin-top: 8px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    
+    /* DIAGRAM - RIGHT SIDE with text wrap */
+    .diagram-right {
+      float: right;
+      margin: 0 0 10px 15px;
+      max-width: 300px;
+      width: 300px;
+    }
+    
+    .diagram-right img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* MCQ SECTION */
+    .mcq-section {
+      background: #F3E5F5;
+      padding: 12px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    
+    .mcq-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #7B1FA2;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    
+    .mcq {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 8px 0;
+    }
+    
+    .mcq-q {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    
+    .opts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      font-size: 13px;
+    }
+    
+    .ans-key {
+      background: #7B1FA2;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 12px;
+      font-size: 12px;
+    }
+    
+    /* SUMMARY */
+    .summary-box {
+      background: #E3F2FD;
+      padding: 12px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 12px;
+      border-top: 1px solid #E0E0E0;
+      color: #5F6368;
+      font-size: 11px;
+    }
+    
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 8px;
+    }
+    
+    li {
+      margin: 4px 0;
+    }
+    
+    @media print {
+      body { padding: 15px; }
+      .question-box, .solution-box { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">JIGUU</div>
+  <div class="subtitle">Complete Maths Solutions - Class 10 (Latest NCERT 2025-26)</div>
+</div>
+
+<h1 class="chapter-title">Chapter 4: Quadratic Equations</h1>
+<p style="text-align: center;"><span class="class-badge">Class 10 - NCERT</span></p>
+
+<!-- ==================== CHAPTER OPENING SECTIONS ==================== -->
+
+<!-- 1. INTRODUCTION -->
+<div class="intro-section">
+  <div class="intro-title">1. Introduction</div>
+  <p>A quadratic equation is a polynomial equation of degree 2. In this chapter, we will learn how to solve quadratic equations using different methods - factorisation, completing the square, and quadratic formula. We will also learn to determine the nature of roots using the discriminant. Quadratic equations have wide applications in real-life problems involving area, speed, age, and many more scenarios.</p>
+</div>
+
+<!-- 2. DEFINITIONS -->
+<div class="definitions-box">
+  <div class="intro-title" style="color: #2E7D32;">2. Definitions</div>
+  <ul>
+    <li><strong>Quadratic Equation:</strong> An equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0.</li>
+    <li><strong>Standard Form:</strong> ax² + bx + c = 0 (terms arranged in descending order of degree).</li>
+    <li><strong>Roots/Zeroes:</strong> Values of x that satisfy the quadratic equation.</li>
+    <li><strong>Discriminant (D):</strong> The expression b² - 4ac that determines the nature of roots.</li>
+    <li><strong>Factorisation:</strong> Expressing the quadratic as a product of two linear factors.</li>
+  </ul>
+</div>
+
+<!-- 3. KEY POINTS -->
+<div class="key-points-box">
+  <div class="intro-title" style="color: #E65100;">3. Key Points</div>
+  <ul>
+    <li>A quadratic equation can have at most 2 roots.</li>
+    <li>If a = 0, the equation becomes linear, not quadratic.</li>
+    <li>The sum of roots = <span class="frac"><span class="frac-num">−b</span><span class="frac-den">a</span></span> and product of roots = <span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span>.</li>
+    <li>For real roots, the discriminant must be ≥ 0.</li>
+    <li>When D > 0, roots are distinct; when D = 0, roots are equal; when D < 0, no real roots exist.</li>
+    <li>Always verify answers by substituting back into the original equation.</li>
+  </ul>
+</div>
+
+<!-- 4. FORMULAS USED -->
+<div class="formulas-box">
+  <div class="intro-title" style="color: #7B1FA2;">4. Formulas Used in This Chapter</div>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 8px;">
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Standard Form</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">ax² + bx + c = 0 (a ≠ 0)</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Quadratic Formula</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">x = (-b ± √(b² - 4ac)) / 2a</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Discriminant</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">D = b² - 4ac</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Sum of Roots</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">α + β = <span class="frac"><span class="frac-num">−b</span><span class="frac-den">a</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Product of Roots</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">αβ = <span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Pythagoras Theorem</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">Hypotenuse² = Base² + Altitude²</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>(a + b)²</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">a² + 2ab + b²</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>(a - b)²</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">a² - 2ab + b²</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>(a + b)³</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">a³ + 3a²b + 3ab² + b³</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 5. CRUX/SUMMARY -->
+<div class="crux-box">
+  <div class="intro-title" style="color: #1565C0;">5. Crux of the Chapter</div>
+  <p><strong>Step 1:</strong> Convert any given equation to standard form ax² + bx + c = 0.</p>
+  <p><strong>Step 2:</strong> Choose the appropriate method:</p>
+  <ul>
+    <li><em>Factorisation:</em> When factors are easy to find (integers or simple surds).</li>
+    <li><em>Quadratic Formula:</em> When factorisation is difficult or for general cases.</li>
+  </ul>
+  <p><strong>Step 3:</strong> Check the discriminant to know the nature of roots before solving.</p>
+  <p><strong>Step 4:</strong> In word problems, reject negative/invalid values based on context.</p>
+  <p><strong>Step 5:</strong> Always verify your answer by substitution.</p>
+</div>
+
+<!-- ==================== EXERCISE 4.1 ==================== -->
+<div class="exercise-header">EXERCISE 4.1</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(i)</span> Check whether the following is a quadratic equation: (x + 1)² = 2(x - 3)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">LHS = (x + 1)² = x² + 2x + 1 <span class="formula-ref">(a + b)² = a² + 2ab + b²</span></div>
+  <div class="step">RHS = 2(x - 3) = 2x - 6</div>
+  <div class="step">Equation becomes: x² + 2x + 1 = 2x - 6</div>
+  <div class="step">x² + 2x + 1 - 2x + 6 = 0</div>
+  <div class="step">x² + 7 = 0</div>
+  <div class="step">This is of the form ax² + bx + c = 0, where a = 1, b = 0, c = 7 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, it is a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(ii)</span> x² - 2x = (-2)(3 - x)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">RHS = (-2)(3 - x) = -6 + 2x</div>
+  <div class="step">Equation: x² - 2x = -6 + 2x</div>
+  <div class="step">x² - 2x - 2x + 6 = 0</div>
+  <div class="step">x² - 4x + 6 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Here a = 1, b = -4, c = 6 and a ≠ 0</div>
+  <div class="ans">Yes, it is a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(iii)</span> (x - 2)(x + 1) = (x - 1)(x + 3)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">LHS = (x - 2)(x + 1) = x² + x - 2x - 2 = x² - x - 2 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">RHS = (x - 1)(x + 3) = x² + 3x - x - 3 = x² + 2x - 3 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">Equation: x² - x - 2 = x² + 2x - 3</div>
+  <div class="step">x² - x - 2 - x² - 2x + 3 = 0</div>
+  <div class="step">-3x + 1 = 0</div>
+  <div class="step">This is linear (no x² term, coefficient of x² = 0).</div>
+  <div class="ans">No, it is NOT a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(iv)</span> (x - 3)(2x + 1) = x(x + 5)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">LHS = (x - 3)(2x + 1) = 2x² + x - 6x - 3 = 2x² - 5x - 3 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">RHS = x(x + 5) = x² + 5x</div>
+  <div class="step">Equation: 2x² - 5x - 3 = x² + 5x</div>
+  <div class="step">2x² - 5x - 3 - x² - 5x = 0</div>
+  <div class="step">x² - 10x - 3 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, it is a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(v)</span> (2x - 1)(x - 3) = (x + 5)(x - 1)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">LHS = (2x - 1)(x - 3) = 2x² - 6x - x + 3 = 2x² - 7x + 3 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">RHS = (x + 5)(x - 1) = x² - x + 5x - 5 = x² + 4x - 5</div>
+  <div class="step">Equation: 2x² - 7x + 3 = x² + 4x - 5</div>
+  <div class="step">2x² - 7x + 3 - x² - 4x + 5 = 0</div>
+  <div class="step">x² - 11x + 8 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, it is a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(vi)</span> x² + 3x + 1 = (x - 2)²
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">RHS = (x - 2)² = x² - 4x + 4 <span class="formula-ref">(a - b)² = a² - 2ab + b²</span></div>
+  <div class="step">Equation: x² + 3x + 1 = x² - 4x + 4</div>
+  <div class="step">x² + 3x + 1 - x² + 4x - 4 = 0</div>
+  <div class="step">7x - 3 = 0</div>
+  <div class="step">This is linear (no x² term).</div>
+  <div class="ans">No, it is NOT a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(vii)</span> (x + 2)³ = 2x(x² - 1)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">LHS = (x + 2)³ = x³ + 3x²(2) + 3x(4) + 8 = x³ + 6x² + 12x + 8 <span class="formula-ref">(a + b)³ identity</span></div>
+  <div class="step">RHS = 2x(x² - 1) = 2x³ - 2x</div>
+  <div class="step">Equation: x³ + 6x² + 12x + 8 = 2x³ - 2x</div>
+  <div class="step">x³ + 6x² + 12x + 8 - 2x³ + 2x = 0</div>
+  <div class="step">-x³ + 6x² + 14x + 8 = 0</div>
+  <div class="step">This is cubic (highest power is 3).</div>
+  <div class="ans">No, it is NOT a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(viii)</span> x³ - 4x² - x + 1 = (x - 2)³
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">RHS = (x - 2)³ = x³ - 3x²(2) + 3x(4) - 8 = x³ - 6x² + 12x - 8 <span class="formula-ref">(a - b)³ identity</span></div>
+  <div class="step">Equation: x³ - 4x² - x + 1 = x³ - 6x² + 12x - 8</div>
+  <div class="step">x³ - 4x² - x + 1 - x³ + 6x² - 12x + 8 = 0</div>
+  <div class="step">2x² - 13x + 9 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Here a = 2, b = -13, c = 9 (a ≠ 0)</div>
+  <div class="ans">Yes, it is a quadratic equation.</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(i)</span> The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.
+</div>
+<div class="solution-box clearfix">
+  <div class="diagram-right">
+    <img src="data:image/jpeg;base64,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" alt="Rectangle: Breadth = x, Length = 2x + 1">
+  </div>
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let breadth = x metres</div>
+  <div class="step">Then length = (2x + 1) metres</div>
+  <div class="step">Area of rectangle = length × breadth <span class="formula-ref">Area = l × b</span></div>
+  <div class="step">528 = (2x + 1) × x</div>
+  <div class="step">528 = 2x² + x</div>
+  <div class="step">2x² + x - 528 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required quadratic equation: 2x² + x - 528 = 0</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(ii)</span> The product of two consecutive positive integers is 306. Find the integers.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let first positive integer = x</div>
+  <div class="step">Next consecutive integer = x + 1</div>
+  <div class="step">Product = 306</div>
+  <div class="step">x(x + 1) = 306</div>
+  <div class="step">x² + x = 306</div>
+  <div class="step">x² + x - 306 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required quadratic equation: x² + x - 306 = 0</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(iii)</span> Rohan's mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. Find Rohan's present age.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let Rohan's present age = x years</div>
+  <div class="step">Mother's present age = (x + 26) years</div>
+  <div class="step">After 3 years:</div>
+  <div class="step">Rohan's age = (x + 3) years</div>
+  <div class="step">Mother's age = (x + 26 + 3) = (x + 29) years</div>
+  <div class="step">Product of ages after 3 years = 360</div>
+  <div class="step">(x + 3)(x + 29) = 360</div>
+  <div class="step">x² + 29x + 3x + 87 = 360 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">x² + 32x + 87 - 360 = 0</div>
+  <div class="step">x² + 32x - 273 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required quadratic equation: x² + 32x - 273 = 0</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(iv)</span> A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. Find the speed of the train.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let original speed = x km/h</div>
+  <div class="step">Time taken = Distance/Speed = 480/x hours <span class="formula-ref">Time = Distance/Speed</span></div>
+  <div class="step">New speed = (x - 8) km/h</div>
+  <div class="step">New time = 480/(x - 8) hours</div>
+  <div class="step">According to question: New time = Original time + 3</div>
+  <div class="step">480/(x - 8) = 480/x + 3</div>
+  <div class="step">Multiply by x(x - 8):</div>
+  <div class="step">480x = 480(x - 8) + 3x(x - 8)</div>
+  <div class="step">480x = 480x - 3840 + 3x² - 24x</div>
+  <div class="step">0 = -3840 + 3x² - 24x</div>
+  <div class="step">3x² - 24x - 3840 = 0</div>
+  <div class="step">Divide by 3: x² - 8x - 1280 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required quadratic equation: x² - 8x - 1280 = 0</div>
+</div>
+
+<!-- ==================== EXERCISE 4.2 ==================== -->
+<div class="exercise-header">EXERCISE 4.2</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(i)</span> Find the roots by factorisation: x² - 3x - 10 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">We need two numbers whose product = -10 and sum = -3</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers are: -5 and +2 (because -5 × 2 = -10 and -5 + 2 = -3)</div>
+  <div class="step">x² - 5x + 2x - 10 = 0</div>
+  <div class="step">x(x - 5) + 2(x - 5) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(x - 5)(x + 2) = 0</div>
+  <div class="step">Either x - 5 = 0  or  x + 2 = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 5  or  x = -2</div>
+  <div class="ans">Roots are: x = 5 and x = -2</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(ii)</span> 2x² + x - 6 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Product = 2 × (-6) = -12, Sum = 1</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: 4 and -3 (because 4 × -3 = -12 and 4 + (-3) = 1)</div>
+  <div class="step">2x² + 4x - 3x - 6 = 0</div>
+  <div class="step">2x(x + 2) - 3(x + 2) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(x + 2)(2x - 3) = 0</div>
+  <div class="step">x + 2 = 0  or  2x - 3 = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = -2  or  x = <span class="frac"><span class="frac-num">3</span><span class="frac-den">2</span></span></div>
+  <div class="ans">Roots are: x = -2 and x = <span class="frac"><span class="frac-num">3</span><span class="frac-den">2</span></span></div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(iii)</span> √2 x² + 7x + 5√2 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Product = √2 × 5√2 = 5 × 2 = 10, Sum = 7</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: 5 and 2 (because 5 × 2 = 10 and 5 + 2 = 7)</div>
+  <div class="step">√2 x² + 5x + 2x + 5√2 = 0</div>
+  <div class="step">x(√2 x + 5) + √2(√2 x + 5) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(√2 x + 5)(x + √2) = 0</div>
+  <div class="step">√2 x + 5 = 0  or  x + √2 = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = -5/√2 = -5√2/2  or  x = -√2</div>
+  <div class="ans">Roots are: x = -5√2/2 and x = -√2</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(iv)</span> 2x² - x + 1/8 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Multiply by 8 to remove fraction:</div>
+  <div class="step">16x² - 8x + 1 = 0</div>
+  <div class="step">Product = 16 × 1 = 16, Sum = -8</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: -4 and -4</div>
+  <div class="step">16x² - 4x - 4x + 1 = 0</div>
+  <div class="step">4x(4x - 1) - 1(4x - 1) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(4x - 1)(4x - 1) = 0</div>
+  <div class="step">(4x - 1)² = 0 <span class="formula-ref">Perfect Square</span></div>
+  <div class="step">4x - 1 = 0 → x = <span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span></div>
+  <div class="ans">Roots are: x = <span class="frac"><span class="frac-num">1</span><span class="frac-den">4</span></span>, 1/4 (equal roots)</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(v)</span> 100x² - 20x + 1 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">This is a perfect square: (10x)² - 2(10x)(1) + 1²</div>
+  <div class="formula-ref-block">(a - b)² = a² - 2ab + b²</div>
+  <div class="step">= (10x - 1)²</div>
+  <div class="step">(10x - 1)² = 0</div>
+  <div class="step">10x - 1 = 0 → x = 1/10 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="ans">Roots are: x = 1/10, 1/10 (equal roots)</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2</span> Solve the problems given in Example 1 (Marbles and Toys problem).
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Marbles Problem):</div>
+  <div class="step">From Example 1(i): x² - 45x + 324 = 0</div>
+  <div class="step">Product = 324, Sum = -45</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: -36 and -9 (because -36 × -9 = 324 and -36 + (-9) = -45)</div>
+  <div class="step">x² - 36x - 9x + 324 = 0</div>
+  <div class="step">x(x - 36) - 9(x - 36) = 0</div>
+  <div class="step">(x - 36)(x - 9) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 36 or x = 9</div>
+  <div class="ans">John had 36 marbles, Jivanti had 9 (or vice versa)</div>
+  
+  <div class="sol-label" style="margin-top: 15px;">Solution (Toys Problem):</div>
+  <div class="step">From Example 1(ii): x² - 55x + 750 = 0</div>
+  <div class="step">Product = 750, Sum = -55</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: -30 and -25</div>
+  <div class="step">x² - 30x - 25x + 750 = 0</div>
+  <div class="step">(x - 30)(x - 25) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 30 or x = 25</div>
+  <div class="ans">Number of toys = 25 or 30</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.3</span> Find two numbers whose sum is 27 and product is 182.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let one number = x</div>
+  <div class="step">Other number = 27 - x</div>
+  <div class="step">Product = 182</div>
+  <div class="step">x(27 - x) = 182</div>
+  <div class="step">27x - x² = 182</div>
+  <div class="step">x² - 27x + 182 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Product = 182, Sum = -27</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: -14 and -13</div>
+  <div class="step">(x - 14)(x - 13) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 14 or x = 13</div>
+  <div class="ans">The two numbers are 13 and 14</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.4</span> Find two consecutive positive integers, sum of whose squares is 365.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let first integer = x</div>
+  <div class="step">Next consecutive = x + 1</div>
+  <div class="step">Sum of squares = 365</div>
+  <div class="step">x² + (x + 1)² = 365</div>
+  <div class="step">x² + x² + 2x + 1 = 365 <span class="formula-ref">(a + b)² = a² + 2ab + b²</span></div>
+  <div class="step">2x² + 2x + 1 - 365 = 0</div>
+  <div class="step">2x² + 2x - 364 = 0</div>
+  <div class="step">x² + x - 182 = 0 (dividing by 2) <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Product = -182, Sum = 1</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: 14 and -13</div>
+  <div class="step">(x + 14)(x - 13) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = -14 (rejected, must be positive) or x = 13</div>
+  <div class="ans">The integers are 13 and 14</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.5</span> The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.
+</div>
+<div class="solution-box clearfix">
+  <div class="diagram-right">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QBaRXhpZgAATU0AKgAAAAgABQMBAAUAAAABAAAASgMDAAEAAAABAAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOw1ESAAQAAAABAAAOwwAAAAAAAYagAACxj//bAEMAAgEBAgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwMDP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAZkBrQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP38ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKjluBE4Uhst3xwPrQBJRX5ff8FUP+Dmbwp/wTM/ash+GD/Dy48cuunw3t5qNnriW62TvJIrQtH5TncqoG6jO4V+jXwj+KVl8YPhZ4d8VaeALTxDptvqUUYcMYxLGr7Se5G7B+lAHT0UyGUTRhgQfXBzg0+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBC4HUgfjWB8UPHun/C7wJqniHVbuKy0zR7Z7m5nlOEiRRksfatiRdjNhVYsctnoK/OP/g6C/a7X9nD/gmL4j0HT7yBdb+JMyaAIS2JhaSq/nTJ/uFYxkf3qAPzn/Y3/YovP+CwHwn/AG1fjx4q0iK7h8Y+a3hlFJa4g1GwDz7I+ThX3RDA65Nfdv8AwamftY3nxs/YDu/h3rKCLX/g/qsuiz+fMXuJ1d2l3MCScIXEfYfKK5T/AII5/wDBUH9kD9hn/gnv4C8BX/xd8GWHiGOy+1eIY/PY+devw7H5eu1UB+lfH3/BLH9r74afsnf8HC3jjw78MfEsXif4VfGaVrSz1RLljaxTzKt9LJz3EyPED6HHSgD+je3QpGQcdSRjsKkqK1YtGdzbiGI6Yx7VLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBVlkBBBB2+h6tX4Pf8FIzZf8Faf+DiT4X/AAVNlYeJvh98KLc3OuwxyBleBmh+3RN1G6ORUXHua/eSSFhkhc4GFA+tcJ4O/Zo8GfDj4h6v4u0LwpoWn+J/EDZ1DUooAJ7k5JJZuoBJJIGMnGc4oA8GX/ghp+x/CoD/ALPXw1GVA3HTQS2Onfk1+Wn/AAcn/wDBMb4e/sJaF8Jvjj8E/Aml+CR4d16O11Wx0SDyYJEXfOLiQjOCWVY+ezYr9/DZl0xyqg5Kjnd+fSsH4lfCPw/8Y/Bd74d8U6PY69ot+AstneRB4mAIOPUcgcjmgDjf2Ff2lLf9r39knwF8RYXtPN8U6PbX11FbuHW1neNWkiOOhUnBFetVg/DT4aaF8IPBNh4d8N6Xa6NoumxiK2tLdNscKgAAD14HU81vUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFR3UhiiJFAElFfzm/t0f8HF/x3/Yg/4LM/EzRv7Ti1/4b+Ddb/skeGZFaOKS1UBmZWLYWYh2Acgjhfl45/az9gX/AIKVfDL/AIKP/CK28U/DvW4LmTyVkvtKkkC32nvwHR0OGAD8BioDDBHUUAfQ1FR2pcxZcgknIwOg7VJQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVHPF5hU8cVJSN2+tAH85f7PPwm8NfHL/g7s+MXhLxbo1jr3h7Wp/EVteWV3HvjlRtMIPuCAeGGCDyCDV/8A4KB/8EWfjL/wRh+KKftA/sra9repeEtLvvtWo6LbN5k+mQHIO+JhiaDJEfG9xuB4xkaX7Ef/ACuZ/E7/AK/vEH/ptr+gG5sxqVrPBcQB4pFMbqUBDoeo9wR1/GgD4F/4I/f8HBPw7/4KU2dv4U1yODwL8WIYczaFcMUjvWXAkNuzE8BiMI7BzuHBwcfoQt2rgEH5SMg5xX42f8FmP+DcA+O9fb42fsxPL4N+KOk3X26XSLCRrSO9YEsJ7Z4+Yp1PRVX59/LDHOB/wR+/4OLdT0n4lSfAX9rGP/hD/GWkyLYWGvX8YjFxOOPs90DjYx4CvlizOBxjNAH7aC4DEhQSRT6zNO1O31exivLGZLqC5jEkbJJlHQjIZSPatGMAIADkAetADqKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApG7fWlpG7fWgD+ez9iD/AJXNfib/ANf3iD/021/QpX89f7EH/K5r8Tf+v7xB/wCm2v6FKAKl8Zhv8oIrkAKznKr6nFfB3/BYH/ghf8P/APgqT4Yh1eBIPCfxP0qHy9P8QQQ4NwoJYQzqOXQEsVIK4LEkmvveS2DyFskEjB7ikazUsWJPTb9BQB/Op+xB/wAFQvjf/wAEBPj9efAr9prSta134crcBNK1MlpPsCsQyy20uGWWFlJLRrlldjlhtIr98vgR+0F4R/ab+Fem+M/Aut6f4g0DV4t9vPbyqy5wCY3wTtkXOGU8g9RXI/tr/sBfDT9vn4S3fhL4haDaalBLEyW17sxdWLHo8cnDDB5xnBr8E/GPwt/ag/4Nef2hdR1fwtPqHxD+At1ciVGnzJZ3ERJKrMow0MwX77RhVJP3jgUAf0oafJ5+6VTlH+7g8VZr5m/4Jrf8FR/hj/wUu+Cun+J/BGqQW+qmMDVNAuHC32lTAZaNlHDDodylhg9cg19JR3nmtjbj5sc96AJ6KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkbt9aWkbt9aAP57P2IP+VzX4m/9f3iD/wBNtf0KV/PX+xB/yua/E3/r+8Qf+m2v6FKACkPTpmlooAbgtkbQK5z4k/DXRfiv4R1Dw94m0ew17QNTiaG7sLy3W4t7uMjDI8bfKQR610tFAH89v/BRD/ghL8Xf+CU/xNvPj5+yHq+vvo+lym/v9Etmd7mwtlO9wVB/0iBRuLhtoCbuDX3J/wAEb/8Ag4e8B/8ABRbTtM8G+MXtfBHxdKrbPps0oWHWJUX5mgJ2ncwBfYFwvIycZr9JNVjWa32uiSIwKsrDIYEcjHf6d6/Iz/gtH/wbhaR+0GLn4s/s/iHwZ8WNLkGoy2MEgt7bWCvJ2HI8ufOGDFsYBG3JFAH69+au3O4Y9adkHvX4a/8ABJf/AIOKPE/wr+J1h8BP2urbUvD3iuGVLCy8S6pC9sxcnav2reAArEZ847UGCa/bvwzr9n4p0aDUdPuYL2xvFElvcQyrJHMh6MrDgigC/RSZO72paACiiigAooooAKKKKACijI9RRkeooAKKMj1FGR6igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApG7fWlpG7fWgD+ez9iD/lc1+Jv/X94g/8ATbX9Clfz1/sQf8rmvxN/6/vEH/ptr+hSgAooooAKKKKAGywrNjcM4ORSNboxJKjPXpT6D0oA+Hv+Cvn/AARR+HX/AAVR+GbNew2/hr4haUjHSvEUEW18kcxz7R88bELyQzLg7cZOfyp/ZN/4KKftCf8ABu9+0gnwf/aE03WPFHwjvyq6dqOfOFtEWKrdW0pIYpkYaOQggKxC5Iz/AEXfZHCMFYAvnnrg/wBa8o/bL/Yn+Hn7dPwnm8F/EXQbTWdMmDNDKyjz7OQrjzImIJVuByPSgDb/AGcf2pfBP7W3wusPGHw98Q6d4l0O/jBE1s5JhfujqQGUg5HI7ccV3QumSMBiQz9MgZB9K/m5+MP7Pf7Sf/BsB+0Tqfi/4X3t94x+A+v3CzXAkiY2zJx+7uUyyxzJyiycllBOBuxX7Nf8Et/+Cs/wz/4KhfB2LXfCd9DZ+KbOMHWvDssga606bHOB1aIkHY+Bu2ngUAfWsT+ZGD606okuFjjXcTkjjPU06OdZTgZyBk57UAPqJpiHx/SpagU7n+lJ9yJX2Q25uWjPHpnHevnz9sf/AIKS/D/9jTQJ5tc1MahrZB+z6LZkPdTEdfZe33iPavoK5gF0pX8Dmvzm/aL/AOCNvhyz8RfGb4x+K/EWpeIb7UEvdX0yyXMC6dhGZFLbjvwenAxXsZDSwNbExWPbUW1ot2eHxFXx9HCyll8U5Jbs9B/4Jtf8FZtS/bu+M3iXwveeFIPD8Gkacup2kySF3mjaQRhZASQDknpX1945+INh8NvB2o69rM4s9M0qFp7mZx8saDvx2/xr8f8A/g3pmLfteeNFAwV8ODHPLf6X0PrxX66/Fr4XaV8Y/h1q3hbW4559J1u3a3uUilKOUJBIB7dK9XjLK8Jl+Zuhh1anozx+Ds1xePyt1sQ71NV5H5yfEL/g41hvdcaLwF8OtV1fToJGR7u/XCS46MnlMcL/AL2DXZ/skf8ABfHQfjP8R9P8KeM/DU/he+1ibybXUIJFewU4OFcli4YsNo+XHIr6a8F/sxfBP9nTwJcafZeH/CmlaVYxFbl5rePe2B8zSsR8xx1Jr8R/jL4V0X4rf8FC9S0n4U2EV3omoeJ7N9Gg0yIEGONopJmRF4IDpKxI6YJr6TJcqynNKFWnGhKDhG/O3p/kfNZxm+b5XXoylXjPnduS36n9FsUxeBGyeVHXrST3DRbGzwTgg96qeG4ZbTQ7SK4LPNFEquxOckDnmpNQu1hUMxxGudwI6j1z2xX5dOF5OMdbPofqkKnuKrLS66kn21gxBDj34wKWa6ZATuAyOp6Ka/M79r//AIL2W/gD4nXfhj4X+HYvEpspDbTaxcTeXE84faUhAVhJg5U8jBB9KP2Nv+C3fij4qftGaF8OPHngmPSb3xFeCyt7qOY70lJwuY9g+Xrk59K+mfCGZrC/XZQSja9m9beh84uM8t+u/Uoycn3S0+8/S6DUHDtvDAK235sc+hHtT/tjpkSDbk4GK/PT9rD/AILCat+zn+223gK68Oae3hKwWGS8vWuP3xDOwLBdvVQMgZ5PcV4p8X/+DiPxS3jaYeC/CFjB4ftL37MLi9uS0uofKSFK7P3THrgE/KM1eF4OzTEqFSELRmrp9CMTxpleHc4Sndweq6n66C6k4CsGJGRn+tLHetJMVDBgBzX5qr/wcKeGNO/Zrl16+8PGP4grM0C6FHc7oZCMhZDNtyEb/cry74Z/8HDvjHTfHXl+NfCFgNDmuUWd7S42S6dExAJI2fPgEnkjNV/qTnD5rw5eXo936GUuOsoSi1Pm5uq2Xqz9f4rgyN/EvHfHNSoT/ernvh/4vsfHnhrTdXsZvNtdUs47y2yNrGJ1DAkfiK6BEz618m4zUnGS2PrqU4TipRd76klFFFUahRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSN2+tLSN2+tAH89n7EH/K5r8Tf+v7xB/wCm2v6FK/nr/Yg/5XNfib/1/eIP/TbX9ClABRRRQAUUUUAFFFFABVa9VmYBSF3YGfxqzQQCQccigDnvFvg7SfHGgXela1p1tqmn30bR3FvcIsiOpGCCD0yK/CT/AIKV/wDBAv4lfsC/FfVP2hP2OdS1LS7OwZ9Sn8L6eSbnT1B3slunWSMDhY8M/GMkmv36ZBydoyfbrQEHcDNAH5af8EbP+Djnwb+3Lp+kfD74nNbeBvi7Zg2lyt4Tb2WrTLkZiZ+InP3fLdixcHA5Ar9Rbfmck/eI6+tflL/wWd/4NwfDH7XkepfEn4NC28CfFbTQb5IbUta2erSJ82B5f+rlOPlKgZfbkgZNfPn/AAS7/wCDiTxz+yz8RtI+AH7XumajoV9pzrpVt4ou4QslsqfJH9p2/fQABfMUOzHBPJJoA/eWoCmCdtZuj+I7PxPotvfadfW1/Z3f7yOe2lEiEcdGXgitQ4EY5NS73E03sIz7cV5t+2Tz+yl8QiOo0C8P/kFq9DuZCqEqDlefrX5jftt/8Fr7bSPEfxS+EkngnVGexe70Bb1QNkhKlPM+9059K9nIMuxGNxcFhldppu7S0TXc+e4izXD4HCT+tPdNKyb6HkP/AAb0OW/bC8a7gB/xTo/9K6/ZG8jMx4JK4wADwPrX8+n/AATy/bUh/YW+L2teKZNDu9Y/tfTvsPkoDlP33meor9StH/4KOa38ZP8Agmp4t+Mvg/wzPb6/o8d2LTTJULGWSCbyxkDJIIBPFfdeImTYqWZLFJJwlyq91vY+D8Pc7wtPLZYZ3U027Wex4J+1R/wQh8bfGb4xeLfF2jfE3T9Pg8R6tPqX2W8t7mXyVcLlBscDt9K+RPhh8YfH/wDwSR/aO1TRr3Q9GvbzTrmMXzXNu0oubYhSZLdlbj5TnqecivrDwb/wcf29p4e8rxf8PNRtNb8nDJYsPswYDknzXVwPwzXxl8XfGfxA/wCCpH7T819pfhy5lvNZljt7e2som8nT7bgFmkYDJABcjJ9q9zhylmSoVKOcJew5e6Xpax4PEdfLfawr5S5OupLo36n76fBj4sWHxu+Fnh/xZpiuuneIrCK+hV/vIsiBgD7gGuJ/bw8Vt4O/Y3+I2oxvcRXMfh69WF4UZ2ikMDhX45wDzntXUfs6/C//AIUt8C/CPhIus8ugaTbWDzIMLK0cSoXxx1xnpTv2hvhk3xf+CPinwkk/2ZvEWk3OnCbGfJMsTIGx7bs1+OUp0KePT+wpK3pc/Zq0MRVy+323D8bH5Kf8EAPhPpHxB/aR8Q6zrFtaajPpeiie0EuJVineVA0oHYkMw57mv1l8QfAHwd4x8TaRrepeGtLu9Y8Oz/aNOujDsmtpAfvAjAz9a/Dv9lv46+Mf+CRn7VGuDW/C11KEjOl6nE4Kia1EgZJ4ySFLEhOAehNfZfwv/wCC23i79qb9qj4e+DfAngmax8OavrEUetX1yu+ZLXJDkbSyAcjuD6d6/R+NcpxuKxrzPDu9HlVmpaLTsfnXBecYLC4P+z8Sv3t3o46vXufLX/BWHw/F4l/4Ki/2Xeh5bPU7vT7NkDAkJJcFGHHseK/Tf49fsreCfDn/AAT28Q+FdP8ADml2ekQaF5iKIQSrrtkLZ+9uLDOc9/wr81P+CoDun/BWbSwYpWLatpIDKhyB9s5P5V+uv7TMY/4Y+8Srlsf2C+OMk/uwe1VnOKaw+WQhLt+aMsmwadbMqlSPe33H5Pf8EGfg/wCHfi1+0Dc6rr2mQanP4cs4rjT47jDqHYZEjD+8u3v0ycivRf8Ag4t+EuieGNc8Ba9p1naWl9q4ubG6eBBE5jij3j2PLHtmsT/g3EikPxd8VyfZ1CtYxbnw2Q2G45r0H/g5TUN4Z+FmVkZPtmoFiiZP+oXHSvVnjZ1uLaftZaWtv0seXRwMKfCdRwj7177a7n2l/wAExtWbVv2KfAk8oO/7AIxnP3VYqP0Ar6CSQEelfO3/AAS1WVP2HPAnmxNEVsidrdcbzj9K+hhJldxGPavyfOlbMMR253+Z+uZEn/Z+H78q/JE1FA5FFeeewFFFFABRRRQAUUUhYDqRQFxaKaZVHVgPxpdw9RQAtFIZFB5IH40Bge4oAWiijPFABRRkUm4UALRSbh60bxnGRn60XAWik3j1H50nmLj7w/OldbAOpG7fWlpG7fWmB/PZ+xB/yua/E3/r+8Qf+m2v6FK/nr/Yg/5XNfib/wBf3iD/ANNtf0KUAFFFFABRRRQAUUUUAFFFFAAeRQBx60UUAQNZB5yx2lDztK/xetfIP/BWP/gjb8MP+Co3wsng8RWsekeN7CI/2P4lt4h9ptH7JIeC8R7puAyFPavsWo7iPzI8cHnv0oA/nA+AX7aX7SH/AAbS/H7Sfhj8a9N1LxN8C9SmaDTbgF3jESkBpbKQggtEpUtEuM5UbhX73fss/tifD/8AbM+Elj41+HniGx8QaHdYSSWCVXa0kIB8qQAna4yOPcUn7V/7IngP9tf4Rah4L+Inh6z13Q77IRZUzJbPjAkRuqsOvpxyDX4KfH39jv8AaI/4Npv2lR8T/hDfaj42+CWsTYvNPEbTRpFnm3uo1wylfvrKAq52Ak4IpNLdifa5/RupF2rYyu3ggjBNeeeJP2Qvhh4x1y41PVvAvhe/1K9cyT3M2nxvJKx6liRya8J/4JSf8Fj/AIW/8FTPhnLeeGr6LRfF+llE1Xw9fTKt3EzAkPEDjzY+OqZC5AJya+vWIZc96unVqU9aTa9HYxrUqdRWqRTt3VzyYfsLfCKNyyfDnwevfjTIxz+Vdt4O+FWg/Drwyuj+H9LstF0pWd1tbKERRqzHLEAdyeT610Kz4IB6GlOZGwOmM1U8XWq3jObaXmzOlhKFK0oQSv5I8g8e/sD/AAc+KGsSan4k+Gvg3W76Vy7z3elxSu5PckjrXbfD/wCCXhb4UaW1p4Y0PTdBtmIJhsoFiQkAAZA9AP0rrHUquMcVG+7zAADim8ZXlFRqTb8rsVPL8LGfPGnFPe9kJAuwAZbIGMk5zTZI2mk+UgEEZJGcipNvmEjBFGMHpXMnJN3Whu9Unc4n4s/s2eA/jpBFH4y8KaJ4mjgGI11G0ScJ343CovhH+zT4E+A+mXFr4N8KaD4ZtrlzJJHp9mkCO3PJCjk8mu9PQcHmmtFtAHNdMcTX5FDnfL2uc7weH5nU9muZdbHC+KP2a/AfjnxbHr+reE9Bv9dhKmO+ns0edSpyuGIzwea62+8Pwapo8tjcRxy200flSROu5GXGCMemKvKdx4BpWGRisHXqTSSlpHbfQ1+r0otyUd9/M4r4afs8+Cfg/cXUvhXwxoegS3n+uextEhaTGcbio56mpPiV8CvCPxetraHxR4b0fX4LMloI722WYQk8MRkcZFdhEhQk0yQGZsDII9uK0+sVHLnc3fvdkyw1Pk5VTVu2hS8I+D9P8F6NFp+l2dtp9hbrsgtoIxHHEvoAOK0sD0/CiNCiY5NBG0Hg1ne8m27t/ibxVkrKyX4ElFA6UVRYUUUUAFFFFADWGCD2FV7hl3AHPFWCckiqt5b+cwLNgAEc9PfIrOTfLeG4kle0tmI7YYAfMG6YAwBTGco43suBwOTkmvz+/wCC1Xxx+NP7NEfhvxh8PfECaZ4UA+w6jbi2JMExYlZWYMPlbcigY6960/2af+Cs9l4r/wCCduu/ETxVe2Evi7wgHs7y3hwjyTksIcLydzqN+PQGvoKfDeKq4SGLp6qT5dN7vufM1eKMJRxc8JUdnFc3k0j7xklECjzODnJPXFSWkhkchiucZGO4r84v+CLf7RXx4/a38Ya54v8AG/iKC98EWgNnFHHZlEuboZ3BG3EAJlSeDncOlfo5ZuZCxLBsce4rz8zy+pgsRLDTaclvZnqZXmlPHYdYmnF8r2uWGakdeeCBUTT7ImbuKqnUH2hgQygY4HLn/CvPVuf2d9T0Ob3PadC+o+X1pduD2qtBdbUwSCw74wDSTXoMZCuobsetVG7dhSqwT1ZPtbnpXzF/wVW/aJ8cfsv/ALMd54l8CW/m6nHOiSz/AGfz/siFlG4Jht2T8vTvmvpGG7kDclSW5IHVB71JIgkLFSOep7CujAYyFKtGtUp86i9n18jkx2ElXoSo05uLa3XQ/DW1/wCC1/7R9yI99wyb8kkaBwcf9seKiv8A/guL+0RoIWWfUNKaS2Ike2m02OLzxn7nEe4E9Onev2q+LnxD0z4OfC/XPE+tzR22laLaPdXEzn5Y1UdT7dK/D39kbwhqv/BSv/gpLFq+refHbTakddv0BMsVrFC3mJCemEk2Fce561+vZJj8qzDC1q1fAQhGmruSfXtsfjufYPNsvxVCjQxk5yqu3K+3fc/dT4T+Jbjxn8LvDmsXaLFdarplteTIvRHkiV2A/Emt9u31qHTbGPTNPgtoUWOGBBGiqMBVAwAPwqZu31r8dm05Nx2P22kpKCUt7H89n7EH/K5r8Tf+v7xB/wCm2v6FK/nr/Yg/5XNfib/1/eIP/TbX9ClSaBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABWD4v8ADOneOdHutJ1axttS0m/jMFxa3MCzRSZ67lYEEYrepiW6xjAyBnp2oA/CP/gqJ/wb0+NP2UPi5c/H/wDY+u9R0fUrKQ3974asrhxLGx+eTyMnDxuwLGNiFXgKMAV7x/wRj/4OPfDX7W9rb/Dn41vD4G+LmnyCzSa7X7PaayT8q8ceXNkHcpVVGVweuP1fuECFR85HTAGce9fl1/wWY/4NvfBX7eY1z4hfDlbPwb8YLvfdyXAUR2evXPJHnYxtkkPDSkt2ODigD9Oor6JoYiGV0lH7sr8xfPPXpjHNXLAYg+6y4Y/ePJ561+BH/BMz/g4N+If/AAT/APiJB+z/APtg6bq1qdAlXS7PXrqNvtlnGCAhnL8yxjPEhKgR7eMLX7x+DPHekePfCWna5oWoWeq6Pq0MdzZ3lpIJIbqKRdyyIw4IYEEEetAG3RUFpcPOzg4+RiDjn/JqegAxiiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAarZeobhS5GBznk+3pUpOegqpfvIHQRgEqejEgGolJJcz6CjHm91HlH7bPh3wr4g/Zg8Z2vjJraPRf7Mnkd5mCmJxGTGyk/wAQcKV9SB16V/OlcXrx6XPa215eyaM9yu5unnbQRHIwA2mTy89u54r9UP8Agvt8VvGfiGLwx8KvCmh67f22qxrqOoXFpDvjuR5rLHAWzn/WIDjpg0+H/gj3EP8Agl6dDms4pfiUyr4ihmK+U6XBVikDFf4USVkI5BKj61+vcG5th8owKnipXdaSVv5V3PxnjPKsTm2P5cJGypRbb7+R9S/8EsdO8H6d+w/4FbwaVl02TTUlndnDTNcMg8wy7ePMOBkYH0r6Otoy8nPGB0HQ1+Tf/BBn4teOvhb8UtY+FXiLQNattIv4pNTs/NtFjhsJ1BMoZv8Ab+QAc/dPSv1nsHDuwyCyjDD0PWvgeKcH7DM6sOfmjJ3T9dT9D4Ux0q+XU/d5XFWa9NCQwHa3vX52/wDBSf8A4JMfEv8AbC/aVXxf4b8e2mk6J/ZNvYLp109woiljaQvL+6ZQSwdf++a/RejA9BXn5fmFXB1/rFK1/NXPRzLKqONofV6raXk7H41L/wAG+/xrSARj4m6QFXgfvr7j/wAiUyT/AIN9fjaYyF+JukMT0zNfD/2pX7MYHoKMCvpHxxmTVvd/8BR81HgHL4zVRSldf3meS/se/ArW/gH+zT4M8G+JNZPiLWfD+lRWN7fDOy7kXOZOfm5z39K9MuGNuhUj5QAOB71erO8QXh0/S7uchmEETSbV6tgZx+lfH1ZyqVLt6yf3H2NOlGjT5Y7L8T84f+Dgf9qz/hE/h1pHwv065K3nidzd6j5UgJNrGNpicdQH8xT/AMBrf/4IF/ssp8Mf2drn4g31un9s+NiPs8hHSxXmIeudzSZr4g+M3w3+If8AwUL/AOCh95Bf6Bq+m2msasNLS7eDCafYwsUEuemCoXPrmv3B+G/gXT/hf4N07w/plt9lstKtY7eGONQI1QdlH5/nX6HneIpZdk1PLaM05T96dvyPzbIKFfMs6rZjXi1GHuwv+Z1kX+qXp07UrdvrQn3Bjpihu31r87Xkfp621P57P2IP+VzX4m/9f3iD/wBNtf0KV/PX+xB/yua/E3/r+8Qf+m2v6FKBhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAySPc4OMnGM56VE1qxjC7toB/h/+vViigD5P/4Kc/8ABIn4Yf8ABTr4R3ujeKtKgsfE8cB/sjxFboFvNOmBypJxhkP3WBBO1jjBwR+L3wm/aX/aa/4NifjrY+CvibYXvjj4J6ndEJNFuktzHu5e2lyRFLg5CSE8bsLxx/SjXmX7Vf7MXgj9sH4R6v4D+IOhWeveG9WgKyxzRgyQN0EkT/ejkGThkIPJ55oAzv2P/wBtL4cftt/Cuz8YfDrxNZa7pdzCsrxo4W4t8jpLEcOh/wB4DpXrnmrkDPUZFfzh/tSf8E7/AI//APBuD+0BafG/4CarqPjL4UzzmPUdPbdIsMZPzQ3cJBUI6ttSVdzqd5+XAJ/WD/gk9/wWw+Gf/BUXwU0Ok3Mfh7xtpESyaroF7IFuEyQDJFkndHuYDqG9sUAfbwOQD60UijCjGelLQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQnIxRIBI20gMBUnlmm+ScHJGTU9W2iWnZJFeWyiafeUUkdMjpUklvGwbKKd4weOtOeBmK8jA605IiM5NEZS+1/wAMQqcbuyt+pXgtIwWxEig9eOtWIsJIVAwKGhJ7inRpsotrd6lRjZWSsOoooqiwooooAKikbluPrUtMaLJPvSba1FJXViBLWNG3IiKT1IHNO+zx4Hyj5c446Z61KI8emKDEccGp683cmMbWitByjCj6UN2+tKBgUjdvrVln89n7EH/K5r8Tf+v7xB/6ba/oUr+ev9iD/lc1+Jv/AF/eIP8A021/QpQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABTWiV3DFQSvQ+lOooAzfFei2fiHQbmwvrSO9s75DbzwSR+YkqOMMrD0I61+In/AAVi/wCDdrxH8HPi/aftBfseG58OeI9Kka9v9BsZfJZJsMGms9uCAy/K0QBJLOd3OK/cuZDJGQDgnv6VELQ7MFs46HFAH5F/8EaP+DkbTPjrqTfCD9odl8D/ABY0a4Onx3t2v2a21N0JR45Q+PKnRgAVJJc7jxiv1vjuvNRcSBlkAZSGwWz6e1fm7/wWW/4N6/BX/BRSe48b+CZrfwH8W7eHCahboY4NTKj5fPVRwwwAGTaTkkknmvhj/gmv/wAFyPib/wAEofH7/s7ftcaJrCaLoN19h0/XZkaWfTEzt2+YuRPAMZVk3NktljxgA/oO85gy8H0bnO2p65j4afEbQvi14K0vxJ4a1ay1nRNYtlubS8tJRJFOh6HI7joR1BBB5FdAb5TGzKCSuRg8Zx9aAJ6KbFKJQSMcHHXNOoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRu31paRu31oA/ns/Yg/5XNfib/1/eIP/AE21/QpX89f7EH/K5r8Tf+v7xB/6ba/oUoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAKjKVmLncSM8dzXzb/wAFEf8Aglx8LP8Agpj8Krnw38QNFhi1BI3TTdbtE23+nvj93IHGGdVbny2bacEHqa+nagvY96D7x6/KDgN9aAP5r/BXxU/ah/4NffjgdD8S2V946+B2oX/2e3eSZ5rEwlt263LD9xJtBJRQqlt3Jzk/vH+xl+3r8NP29Pg/ZeMfhxr1vq9leRq9xasR9rsJSMmGVMkLIpyCASMg81137QfwC8LftL/C3WfA/jXRbHXfDXiGA2t/ZXMIZbgcMpUngMrBWBweVFfgp+2R/wAErPj1/wAEDfi4/wAdP2Y9a1XWfhvaXCnUtOkV7mW2i5bZdxIQZoMKd7/KFIGfvCgD+inS42jtRv27mOTgYz+FWAQe9fBv/BI//gul8Mf+CoehQ6Pbzf8ACNfE+3tTJd+HLqYb5iilpGtyQDIAASdo+Uda+5bVQLhQvA27iuMHPr70AXaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRu31paRyBjPrQB/PZ+xB/yua/E3/r+8Qf+m2v6FK/nt/YiiZf+DzD4mSEEIdQ8QKD7/2bX9CWR6igAoprSqgOSBilVwxwDkigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKZLAspBOQy5wR2zT6KAITZqx5JK+lQ6j4fs9Y0uayu7aG6s7hDHLDMgkjlQ/wALA5BFXKKAPxJ/4LIf8G5WpeG/Ga/Hv9k+4u/CnjfRZft97oFhN5Sysh3ie2LdH670dirKqgLknPSf8EZ/+DkJfiT4zT4JftMW/wDwhPxK03/RLLV76F7ePVJVwPKmB4jlK5YMQqELxyRn9iby3kmmBUlQvQg8n14r88P+Cyv/AAb/AHgT/gpbp48XaGYvBnxW0m3P2bVbSIRx6mQcqlztxlgcYkIZgFCjigD9C4daivLNLi3eK4glUNHLG4ZJAe4PcVcU7lB9a/ng/YH/AOCzvxm/4Iz/ABvl/Z3/AGr9J1DUPDWlzItjrkrNNcadESQkscjgGeCRfmUuwKBRheTX77/Bn4zeF/j58M9J8W+D9aste8Pa1ALi0vbWQOkqn+R9jQB1NFJ5i+ooDg9CPSgBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACobwF1CgE7jg+g+tTU2RQwwehoA/mYj/bX8Cf8ABPz/AIOqPi18TPiTe6hZ+FtM1fWLW4lsLF7qUPNZCOPCLyRuIye1fpp/xFv/ALGX/Q0eOP8Awlrmvzf8AfsreAf2zf8Ag7W+LPgL4meHbfxT4Sv9U1q4n06eaWJJHisA8Z3RsrDDAHg1+uf/ABDcfsUf9EJ0L/waah/8kUAc18Af+DmD9lP9p74z+H/A/hnxV4iTWfEVytnZf2joM1rA8rEBQZXwq/jX3xYXKSSxKkhfKb+TklT0r+av/gsl+xH8K/2Ef+CuXwN8OfCTwfaeC9Ku7q3uriK2up5fMk3R4OZXYjqeh71/Sl4UjX/hHNPfA3G1iGcc/cFAGjRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFMuWCQMSdoAyT6U+kdBIpBGQeooA+eP27v8AgnB8J/8AgpN8MX8N/EXRY9QCIfsOp2oWO9sCw4aKQhsdux6CvwqtNf8A2pP+DWf42XunzRy+O/gJq2oiWIqGFldqzBd6nLLbXDAKp3bvuqcV/S0lukYwqhR6DiuR+Mnwd8KfHzwVqXhXxjoGneItB1OB4Lm0vItyOjKVbB6qcdCpBB70AeUfsA/8FFvhn/wUV+DVh4x+HmsxXH2mIHUtKknUXukTDh45Y/vcNnDEAMMMODXvcKAurADaCcKDwQehNfzw/t5/8EYfjf8A8EVfiNd/Hf8AZa8Ra5qfgzTrr7dfaTARJPpsBfJR4iMSwjIj4DOFIOeCa/Rz/gkB/wAF/fhx/wAFMdOsvDesfY/BHxT8tTcaHK7JDdygYf7MzE5G7orNuOelAH6H0VWednPynAABx0JqaFy4JII9qAH0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU2RguM+tOqteb2uI1BwpB3YXn86AP58f2MLyDSf8Ag8k+Jt1dXEFvCNQ19SZHCbc6dxknjmv6A/8AhOdF/wCgvpf/AIFJ/jX4z/8ABRj/AINSNd/bU/bX8bfFnwz8ZdP8Hp41vG1CezudGmuZIpmG1tsiTINuAvGPWvGP+ILD4l/9HM6V/wCE/df/ACTQAn/BxxcQ63/wWn+AUtpNBdRSPAoeOVWUkGLPIOK/e/wt420ZfDunqdW0wGO3jUj7UnB2D3r8Cbn/AIMoPiBczLJN+0ZoM8ifdd/DdyzL9Cbnip/+ILX4lOcf8NL6UMd/7AusH/yZoA/oA/4TnRf+gvpf/gUn+NH/AAnOi/8AQX0v/wACk/xr8AP+ILD4l/8ARzOlf+E/df8AyTR/xBYfEv8A6OZ0r/wn7r/5JoA/f/8A4TnRf+gvpf8A4FJ/jR/wnOi/9BfS/wDwKT/GvwA/4gsPiX/0czpX/hP3X/yTR/xBYfEv/o5nSv8Awn7r/wCSaAP3/wD+E50X/oL6X/4FJ/jR/wAJzov/AEF9L/8AApP8a/AD/iCw+Jf/AEczpX/hP3X/AMk0f8QWHxL/AOjmdK/8J+6/+SaAP3//AOE50X/oL6X/AOBSf40f8Jzov/QX0v8A8Ck/xr8AP+ILD4l/9HM6V/4T91/8k0f8QWHxL/6OZ0r/AMJ+6/8AkmgD9/8A/hOdF/6C+l/+BSf40f8ACc6L/wBBfS//AAKT/GvwA/4gsPiX/wBHM6V/4T91/wDJNH/EFh8S/wDo5nSv/Cfuv/kmgD9//wDhOdF/6C+l/wDgUn+NH/Cc6L/0F9L/APApP8a/AD/iCw+Jf/RzOlf+E/df/JNH/EFh8S/+jmdK/wDCfuv/AJJoA/f/AP4TnRf+gvpf/gUn+NH/AAnOi/8AQX0v/wACk/xr8AP+ILD4l/8ARzOlf+E/df8AyTR/xBYfEv8A6OZ0r/wn7r/5JoA/f/8A4TnRf+gvpf8A4FJ/jR/wnOi/9BfS/wDwKT/GvwA/4gsPiX/0czpX/hP3X/yTR/xBYfEv/o5nSv8Awn7r/wCSaAP3/wD+E50X/oL6X/4FJ/jR/wAJzov/AEF9L/8AApP8a/AD/iCw+Jf/AEczpX/hP3X/AMk0f8QWHxL/AOjmdK/8J+6/+SaAP3//AOE50X/oL6X/AOBSf40f8Jzov/QX0v8A8Ck/xr8AP+ILD4l/9HM6V/4T91/8k0f8QWHxL/6OZ0r/AMJ+6/8AkmgD9/8A/hOdF/6C+l/+BSf40f8ACc6L/wBBfS//AAKT/GvwA/4gsPiX/wBHM6V/4T91/wDJNH/EFh8S/wDo5nSv/Cfuv/kmgD9//wDhOdF/6C+l/wDgUn+NH/Cc6L/0F9L/APApP8a/AD/iCw+Jf/RzOlf+E/df/JNH/EFh8S/+jmdK/wDCfuv/AJJoA/f/AP4TnRf+gvpf/gUn+NV5fGOjtIzLq+lEsMYN2mPr1r8CP+ILD4l/9HM6V/4T91/8k0f8QWHxL/6OZ0r/AMJ+6/8AkmgD98bzxJoV3YTW9zqmj3NvPGYpYmmjKyKwwVIzyMGvxq/4LNf8G9+h+Jbs/Gj9l7WLTwf8UdDuVv8A+xdMvVtEuwuWMtq8bZimQgbVVRu3csMCvI2/4MtfiXEhx+0tpD7uOfD91kfT/SaVP+DMD4leYP8AjJPSEYAHjw/dDGPf7TxQB7N/wSK/4OU31b4gW/wP/akiTwh46s5BpsGvzFUgupwAFjuAMCN24VSN25mGcZzX7QaDqUOsaZFdW80VxbzqGjkjbcrr2IPfiv563/4Ml/HFxcmZv2hPDr3BO9pm8Mz5z2z/AKRnP41+0v8AwTO/ZL1/9h39jbwp8MvEvjA+OtW8NiZH1gwNCJ0eVnRQrMxARWCjk/doA97ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopkkmwjjjqT2FADgoAwAMUtQRXolAO1sEbgccGiTUI4WUMwBc7VGeScZxQBPjNGKbG/mIDgrnseop1ABRRRQAUUUUAFFFFABRRRQA13Cim7h+dI+SzelNfPl5XBYdicVF3z67ENvluhxO3J7UqD05qJpsnBB2k4pBdYB2o/y+o6moVSD1e5TU29Niw3UUFcMPeoobkXEZYY4OOP1qQche3NXb7SEtXZj6KKKsoKKKKACiiigAooooAKKKKACiiigAoIB7CiigAwPQc0AYqFrzY2Cj8gkccnHb61wfx2/al8B/sv/AA8m8U/ETxPo/hLRICQ93f3AjjB7DPrQB6FRXwTpn/By1+yHqXieDTT8Sre3SebyRezIi2sfONzPv4X3xX2N8Gvjz4S/aE8AWHinwVr+meJvD2pKXt7/AE+YSwSj2P4UAdhRTY38xAfWnUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXw7/wAHBP7f/jr/AIJs/sFR/EX4dxaJL4im8S2WjD+1Ld54UinSdmYBXUhsxrg59eK+4q/LD/g8DbZ/wSXtDjP/ABXmkjt/zyuqAPMfhP8AH7/gqp8Yfg14a8beF/DPwT1bSNdthqMHmXSQu6HpuDXXzdOgxXp3/BIf/gvD4p/aX/aU1T4AfH3wbb+BvjBpplEbwRNa219KrZ8lIJCXBMeXD7iGVcjgiu6/4J+/8FUv2ePgh/wT2+F0Hi34reGNHl0vQIY7qBjM7wMC3BVEJz618Jf8E+fAsv8AwVf/AODivxT+054BDWHw18B3qXH2u8O1tVkSyWyEaKMkFg3mgkAbRgkNxQB+/wBbJsjI+XqTxUlR2wxFzjOecdM1JQAUUUUAFFFFABRRRQAUUUUARO3zEYqprt4NL0e6umBKW8TSthSxwoycAck4q5K21qhu9skBVuh4NKK2izKb0dj5G/Z7/wCCxnwb/aE+Mth4G0jUNbsNevDJFDDqelzWSh1wChaRQN5JAC9Sa9F/bK/b6+Hf7Cmm6VfeONQurdddmaK1itLR7uZyqlixVASq4B5IxmvzA/4LK/sw3v7KH7V9h8RfCsosLHxXdtqVs1uuJNOv4mDu/IxtJdMDkfKeK5H/AISTxV/wWB/be8HaZfxNaaVp9tFAzSNxBawqZZGcLn5pHDrkdnHSv0/D8FYXEUKeZxnajyty7proflFfjXEYetPLOW9XmSj5pn7S/sz/ALQOiftOfCOw8aeHI9TTR9WLfZ/t9nJaTOFYjdscBtp6g4wQQRXoCS7wMCsb4deELHwJ4L03RtMhS107S7aO1tolGAkaKFUe/AHWtuMjdx61+Z17e2bht+h+p4VP2EVPexJRRRUnSFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAY3ijWrXwxoV9qd/MYrCwgkvJnZgBHHGpdz9AFJr+ff4H/CHxB/wcrf8FWfHev8AjzVNeg+BPwuunsrTT4Js20nlSKgt4zghTNgzHIPG4d6/cb9uaQwfsT/GNo2IkTwPrTKwOCrfYJ8Yr8qf+DKWONv2S/jPKk7y3U3iq0e4VuqN9lPfvkc0AfeNz/wQi/ZJm0NtPX4DeA4bZslQlo+5WP8AEPm4NaX/AATZ/wCCWfhb/gmPofjLQvBura7qOgeIdWbU7Sz1CcSiwUoi7AQoHBQ4x2xX1UnzAMevSpKAI7VCkAz1PPTFSUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABX5W/8Hhi7v+CSNoMZB8eaSD9PKu6/VKvzS/4Os/g/4s+Nf/BLqHSvBvh3WvE+rW/jLTbxrLS7OS7uDEkdyGYRxgsQNw5x3FAHLfsIf8EF/wBl/wDaB/YG+GmueIvAVvLqutaFFc3t5bzCGWVyWy28LntXw/8At5fA/Wv+Dd3/AIKU/CO++Bni7xJb/Dbx9dQyXXh29vpJLVGeXyHicFiJgRmQFgNpwMcA17N+yV/wXg+MH7N37MHg/wCHVr+xv8bby+8MaYmmx3zaRdLBM4ztYqYM7cnnnpWJ4O/YB/af/wCC5H7Zfgr4uftBaNafC34deBHVtPsIlMN7chJvMWAQuxdH3/MXK7SARgEigD949Lu0v7CKeNt0cyh0J6kHpVimWyiOEKBtC8AelPoAKKKKACiiigAooooAKKKKAI5Oc1Wv3WG1dnwI1GXJ/hA6mrEqNuyOlUPFnhtfFfhy8055prdL2FoXkhYLIgYYJUnODz6VEI3a5tO/oZTcrNRWq2Pxb/4Ki/H/AFr9vr9uTR/hh4SuXl0PR77+x7XYuFluXcJNO2PvRrhCCenPrXmev6D4w/4JKft6aZLBNdGCykhnWR1IXU7CRRHOxXOGCky7Qf4kB4r9Tv2Ov+CO/wAMv2L/AImjxdoFz4k1jW44pIYptXuo5zGsgw2NqLyePyrrP23f+CafgH9vKz01fFjarp15pWRBfaVMkNztyTsLMrDbkk4x1r9Vw/GWW0FDL6cH9V5GpfzOT6n5RiOCcyr1JZlKaWJUrx7JI9f+FXxC0z4r+BdK8R6NP5+l6xbJdQN3CuoYAgdDg8jsa6WPJcjsK81/ZN/Zc0f9kP4M2HgjQb7V9Q0zTpJJIptSmWW4JdizZZVUdT6V6WsbI2fWvzCuoe1k6fw9O9j9QwqqqlB1fi6+pLRRRUHYFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAcl8UPBcHxO+H3iPwvfhlsPEOnXGlzMBuHlzxNExPqcMePav5/v8AgkJ+2VZ/8EFP+CiPxk+AXxpm/wCEb8EeIdUN7ZX8dsJI4ZiVNo8sjFfLiNq2TjOGIGD1r+iX7GzXG5wrKOQB614P+23/AMEyfg9/wUE8IHTPiX4TstXuI1xa6iqhL2yP95HxjOMjkHigC1e/8FIvgbp/w7Hi+b4q+CofCu1pF1NtRX7OyLgs272BH51k/sV/8FRfhT/wUF1/xfZfDDVNQ1m28GTi3u9Sa2VbK6JCndBIGPmL8w5wOhr400//AINCf2arPVoZm8R/Fee0il8w2MutQNauM/cKeR90+lfoR+zT+x/8PP2Pvh+nhn4beE9L8JaQjbzb2SbVkk2hTI2SSSQBmgD06GTzYlbswyD606mW6NHEAxyw60+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKr6gPkBAYt0AGOPfmrFIyhxggEUAUoown3cqEOAM5qRozkqMHA3KCBgGrHlKGB2jI4BxShQBwBQAy1QpCM/ePJ5zzUlFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=" alt="Right triangle: Base = x, Altitude = x - 7, Hypotenuse = 13">
+  </div>
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let base = x cm</div>
+  <div class="step">Altitude = (x - 7) cm</div>
+  <div class="step">Hypotenuse = 13 cm</div>
+  <div class="step">By Pythagoras theorem:</div>
+  <div class="formula-ref-block">Hypotenuse² = Base² + Altitude²</div>
+  <div class="step">13² = x² + (x - 7)²</div>
+  <div class="step">169 = x² + x² - 14x + 49 <span class="formula-ref">(a - b)² = a² - 2ab + b²</span></div>
+  <div class="step">169 = 2x² - 14x + 49</div>
+  <div class="step">2x² - 14x + 49 - 169 = 0</div>
+  <div class="step">2x² - 14x - 120 = 0</div>
+  <div class="step">x² - 7x - 60 = 0 (dividing by 2) <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Product = -60, Sum = -7</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: -12 and 5</div>
+  <div class="step">(x - 12)(x + 5) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 12 or x = -5 (rejected, length cannot be negative)</div>
+  <div class="step">Base = 12 cm, Altitude = 12 - 7 = 5 cm</div>
+  <div class="ans">Base = 12 cm, Altitude = 5 cm</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.6</span> A cottage industry produces a certain number of pottery articles in a day. It was observed on a particular day that the cost of production of each article (in rupees) was 3 more than twice the number of articles produced on that day. If the total cost of production on that day was Rs 90, find the number of articles produced and the cost of each article.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let number of articles = x</div>
+  <div class="step">Cost of each article = (2x + 3) rupees</div>
+  <div class="step">Total cost = Number × Cost per article</div>
+  <div class="step">90 = x(2x + 3)</div>
+  <div class="step">90 = 2x² + 3x</div>
+  <div class="step">2x² + 3x - 90 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Product = -180, Sum = 3</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: 15 and -12</div>
+  <div class="step">2x² + 15x - 12x - 90 = 0</div>
+  <div class="step">x(2x + 15) - 6(2x + 15) = 0</div>
+  <div class="step">(2x + 15)(x - 6) = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = -15/2 (rejected) or x = 6</div>
+  <div class="step">Cost = 2(6) + 3 = 15 rupees</div>
+  <div class="ans">Number of articles = 6, Cost of each = Rs 15</div>
+</div>
+
+<!-- ==================== EXERCISE 4.3 ==================== -->
+<div class="exercise-header">EXERCISE 4.3</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(i)</span> Find the nature of roots: 2x² - 3x + 5 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Here a = 2, b = -3, c = 5</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-3)² - 4(2)(5)</div>
+  <div class="step">D = 9 - 40 = -31</div>
+  <div class="step">Since D < 0 <span class="formula-ref">D < 0 → No real roots</span></div>
+  <div class="ans">No real roots exist</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(ii)</span> 3x² - 4√3 x + 4 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Here a = 3, b = -4√3, c = 4</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-4√3)² - 4(3)(4)</div>
+  <div class="step">D = 16 × 3 - 48 = 48 - 48 = 0</div>
+  <div class="step">Since D = 0, there are two equal real roots <span class="formula-ref">D = 0 → Equal roots</span></div>
+  <div class="step">x = -b/2a = 4√3/(2 × 3) = 4√3/6 = 2√3/3 <span class="formula-ref">x = -b/2a for equal roots</span></div>
+  <div class="ans">Two equal roots: x = 2√3/3, 2√3/3</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.1(iii)</span> 2x² - 6x + 3 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Here a = 2, b = -6, c = 3</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-6)² - 4(2)(3)</div>
+  <div class="step">D = 36 - 24 = 12</div>
+  <div class="step">Since D > 0, there are two distinct real roots <span class="formula-ref">D > 0 → Distinct roots</span></div>
+  <div class="formula-ref-block">Quadratic Formula: x = (-b ± √D) / 2a</div>
+  <div class="step">x = (6 ± √12) / 4 = (6 ± 2√3) / 4 = (3 ± √3) / 2</div>
+  <div class="ans">Roots: x = (3 + √3)/2 and x = (3 - √3)/2</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(i)</span> Find k so that the equation has equal roots: 2x² + kx + 3 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">For equal roots, D = 0 <span class="formula-ref">Condition for Equal Roots</span></div>
+  <div class="step">Here a = 2, b = k, c = 3</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">k² - 4(2)(3) = 0</div>
+  <div class="step">k² - 24 = 0</div>
+  <div class="step">k² = 24</div>
+  <div class="step">k = ±√24 = ±2√6</div>
+  <div class="ans">k = 2√6 or k = -2√6</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.2(ii)</span> kx(x - 2) + 6 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Expand: kx² - 2kx + 6 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="step">Here a = k, b = -2k, c = 6</div>
+  <div class="step">For equal roots, D = 0 <span class="formula-ref">Condition for Equal Roots</span></div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">(-2k)² - 4(k)(6) = 0</div>
+  <div class="step">4k² - 24k = 0</div>
+  <div class="step">4k(k - 6) = 0 <span class="formula-ref">Factorisation</span></div>
+  <div class="step">k = 0 or k = 6</div>
+  <div class="step">k = 0 rejected (equation won't be quadratic)</div>
+  <div class="ans">k = 6</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.3</span> Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m²? If so, find its length and breadth.
+</div>
+<div class="solution-box clearfix">
+  <div class="diagram-right">
+    <img src="data:image/jpeg;base64,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ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPzb/AODsb/lCh8Qf+wxon/pxhr1H/g3b/wCULHwB/wCwDN/6W3NeXf8AB2N/yhQ+IP8A2GNE/wDTjDXqP/Bu3/yhY+AP/YBm/wDS25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q//k1r4lf9irqn/pJLXf1wH7V//JrXxK/7FXVP/SSWgD8hf+DI/wD5NG+Nf/Y32n/pEtftyvQV+I3/AAZH/wDJo3xr/wCxvtP/AEiWv25XoKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPzb/4Oxv+UKHxB/7DGif+nGGvUf8Ag3b/AOULHwB/7AM3/pbc15d/wdjf8oUPiD/2GNE/9OMNeo/8G7f/AChY+AP/AGAZv/S25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q//AJNa+JX/AGKuqf8ApJLXf1wH7V//ACa18Sv+xV1T/wBJJaAPyF/4Mj/+TRvjX/2N9p/6RLX7cr0FfiN/wZH/APJo3xr/AOxvtP8A0iWv25XoKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPzb/4Oxv8AlCh8Qf8AsMaJ/wCnGGvUf+Ddv/lCx8Af+wDN/wCltzXl3/B2N/yhQ+IP/YY0T/04w16j/wAG7f8AyhY+AP8A2AZv/S25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q/8A5Na+JX/Yq6p/6SS139cB+1f/AMmtfEr/ALFXVP8A0kloA/IX/gyP/wCTRvjX/wBjfaf+kS1+3K9BX4jf8GR//Jo3xr/7G+0/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SNuRt8Kaoo+n2SXigD8iv+DI/wD5NG+Nf/Y32n/pEtftyvQV+I3/AAZH/wDJo3xr/wCxvtP/AEiWv25XoKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPzb/4Oxv+UKHxB/7DGif+nGGvUf8Ag3b/AOULHwB/7AM3/pbc15d/wdjf8oUPiD/2GNE/9OMNeo/8G7f/AChY+AP/AGAZv/S25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q//AJNa+JX/AGKuqf8ApJLXf1wH7V//ACa18Sv+xV1T/wBJJaAPyF/4Mj/+TRvjX/2N9p/6RLX7cr0FfiN/wZH/APJo3xr/AOxvtP8A0iWv25XoKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPzb/4Oxv8AlCh8Qf8AsMaJ/wCnGGvUf+Ddv/lCx8Af+wDN/wCltzXl3/B2N/yhQ+IP/YY0T/04w16j/wAG7f8AyhY+AP8A2AZv/S25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q/8A5Na+JX/Yq6p/6SS139cB+1f/AMmtfEr/ALFXVP8A0kloA/IX/gyP/wCTRvjX/wBjfaf+kS1+3K9BX4jf8GR//Jo3xr/7G+0/9Ilr9uV6CgAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD82/8Ag7G/5QofEH/sMaJ/6cYa9R/4N2/+ULHwB/7AM3/pbc15d/wdjf8AKFD4g/8AYY0T/wBOMNeo/wDBu3/yhY+AP/YBm/8AS25oA+06KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4D9q/wD5Na+JX/Yq6p/6SS139cB+1f8A8mtfEr/sVdU/9JJaAPyF/wCDI/8A5NG+Nf8A2N9p/wCkS1+3K9BX4jf8GR//ACaN8a/+xvtP/SJa/blegoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/Nv8A4Oxv+UKHxB/7DGif+nGGvUf+Ddv/AJQsfAH/ALAM3/pbc15d/wAHY3/KFD4g/wDYY0T/ANOMNeo/8G7f/KFj4A/9gGb/ANLbmgD7TooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArgP2r/+TWviV/2Kuqf+kktd/XAftX/8mtfEr/sVdU/9JJaAPyF/4Mj/APk0b41/9jfaf+kS1+3K9BX4jf8ABkf/AMmjfGv/ALG+0/8ASJa/blegoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/Nv/g7G/5QofEH/sMaJ/6cYa9R/wCDdv8A5QsfAH/sAzf+ltzXl3/B2N/yhQ+IP/YY0T/04w16j/wbt/8AKFj4A/8AYBm/9LbmgD7TooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArgP2rhn9lv4lf9irqn/pJLXf1ifEvwXF8SPhx4g8OzStBDr2m3OnSSKMtGs0TRlh7gNmgD8Yv+DJRTF+yP8AGrgsD4utSCORxZLX7apJuQHaRkdxg1+Baf8ABlz4s8P6jer4f/aYk0jT7idpY4Y/Dc6sqZOwOyXah2C4BOBn26VMf+DNP4jn/m7C9/8ABDdD/wBvaAP3w3H0NG4+hr8D/wDiDT+I/wD0dhe/+CG6/wDk2j/iDT+I/wD0dhe/+CG6/wDk2gD98Nx9DRuPoa/A/wD4g0/iP/0dhe/+CG6/+TaP+INP4j/9HYXv/ghuv/k2gD98Nx9DRuPoa/A//iDT+I//AEdhe/8Aghuv/k2j/iDT+I//AEdhe/8A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/syeMh4j8E/BrwzpOrxps82V7m/+T2S4kkUHrggZoAX9j74X61+1n/wSm8GeEPj/AGk+vat4z8JCy8Vw3KtaS3fmBlIby9jI2zbyuDXyt+yz/wAGqHwW/ZT/AGtPDfxW0fxl47vZfC2ojU7LRrs25tIXH3ULKnmMBz1Y+9fqXBEIvKRVUKgC7QNox249qtbR6CgD4I/af/4IOeAv2qf+Ci+iftH6z4y8W2niLRFso49JtorcWMi2yMq7iyb+c5OD2r6I/b3/AGL9F/4KBfsq+KfhVr+r6roOkeKFSOe909VNzEElWT5RICOqDqMV7hgZ6CjA9KAPnr/gmd/wT80D/gmZ+y5pfwp8Ma9rPiPR9Lurm7ivdUWNbhzPM8zAiNVXALkDjoK+haAMUUAFFFFAEd0cRZGMg8Zz/Svy9/b3/wCDXj4Uf8FA/wBpvxB8UNb+IPj3w5qfiBle5s9MjtZLcsCxMimSNmGc9M9hxX6jUiqFAAAAHTFAH4qTf8GUnwVVlA+LvxU292EGn8en/LLNfS3xY/4N7/BfxV/YF8Ffs7xfFD4jaL4N8GXr37z2jW32jVpCHGJwyEFAXJCgbcgHHAr9FsAjpSBAD0Hp0oA+VrD/AIJPfCzSf+CcL/sywWt5F4Hl00Wck4O65lmMiytd88CRph5hA+UEkYxxXPf8EmP+CP8AoH/BJPw54j0Pwp4+8X+LNH8SzrdvaaylusdtMFVS8flIpB2rjB4696+yto9B6UbR6DigBaKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEKAtmmG2ViScknv/SpKKAIobVYPu5wOgz0qWiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=" alt="Rectangle: Breadth = x, Length = 2x">
+  </div>
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let breadth = x m</div>
+  <div class="step">Length = 2x m</div>
+  <div class="step">Area = length × breadth <span class="formula-ref">Area = l × b</span></div>
+  <div class="step">800 = 2x × x</div>
+  <div class="step">800 = 2x²</div>
+  <div class="step">x² = 400</div>
+  <div class="step">x = ±20</div>
+  <div class="step">Since breadth must be positive, x = 20 m</div>
+  <div class="step">Length = 2 × 20 = 40 m</div>
+  <div class="ans">Yes, it is possible. Breadth = 20 m, Length = 40 m</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.4</span> Is the following situation possible? The sum of the ages of two friends is 20 years. Four years ago, the product of their ages in years was 48.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let ages be x and (20 - x) years</div>
+  <div class="step">Four years ago: (x - 4) and (16 - x)</div>
+  <div class="step">Product = 48</div>
+  <div class="step">(x - 4)(16 - x) = 48</div>
+  <div class="step">16x - x² - 64 + 4x = 48 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">-x² + 20x - 64 = 48</div>
+  <div class="step">-x² + 20x - 112 = 0</div>
+  <div class="step">x² - 20x + 112 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-20)² - 4(1)(112) = 400 - 448 = -48</div>
+  <div class="step">Since D < 0, no real roots exist <span class="formula-ref">D < 0 → No real roots</span></div>
+  <div class="ans">No, this situation is NOT possible</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Q.5</span> Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth.
+</div>
+<div class="solution-box clearfix">
+  <div class="diagram-right">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QKqRXhpZgAATU0AKgAAAAgACAESAAMAAAABAAEAAAMBAAUAAAABAAABegMDAAEAAAABAAAAAFEQAAEAAAABAQAAAFERAAQAAAABAAAOwVESAAQAAAABAAAOwYdpAAQAAAABAAABguocAAcAAAEMAAAAbgAAAAAc6gAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGoAAAsY8AAeocAAcAAAEMAAABlAAAAAAc6gAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4QHdaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIi8+PC94OnhtcG1ldGE+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0ndyc/Pv/bAEMAAgEBAgEBAgICAgICAgIDBQMDAwMDBgQEAwUHBgcHBwYHBwgJCwkICAoIBwcKDQoKCwwMDAwHCQ4PDQwOCwwMDP/bAEMBAgICAwMDBgMDBgwIBwgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDP/AABEIAUMCVQMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP38ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbJ2ook7UUAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbJ2ook7UUAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAbJ2ook7UUAOooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiuB/aW/aV8D/ALJfwmvvGvxD8Taf4S8Mae6JPf3hbYGbO1AFDMzHB4VSeDxQB31FfEUf/Bxd+xgBuPx78NMAfmP9naiMD2/0en/8RG37FH/RfPDf/gu1D/5HoA+2qK+Jf+Ijb9ij/ovnhv8A8F2of/I9H/ERt+xR/wBF88N/+C7UP/kegD7aor4l/wCIjb9ij/ovnhv/AMF2of8AyPR/xEbfsUf9F88N/wDgu1D/AOR6APtqiviX/iI2/Yo/6L54b/8ABdqH/wAj0f8AERt+xR/0Xzw3/wCC7UP/AJHoA+2qK+Jf+Ijb9ij/AKL54b/8F2of/I9H/ERt+xR/0Xzw3/4LtQ/+R6APtqiviX/iI2/Yo/6L54b/APBdqH/yPR/xEbfsUf8ARfPDf/gu1D/5HoA+2qK+Jf8AiI2/Yo/6L54b/wDBdqH/AMj0f8RG37FH/RfPDf8A4LtQ/wDkegD7aor4l/4iNv2KP+i+eG//AAXah/8AI9H/ABEbfsUf9F88N/8Agu1D/wCR6APtqivi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fG3g+40tZr+8vLOK4eO73uCnz3EWBtCdj1r9DPCGgp4W8NWOmxvJJHYwJArPjcwVQMnHGePStKgD8LD+3b/wWPYYP7PfhTB/6g9v/wDJ9frt+xR4i+JPj39lXwNq/wAXNHi8PfEq90uKXxBp8MSwx2t2VBkQKruAu70Y/WvXaKAPLf20fjz4U/Zk/Zj8a+OfG89rF4Y0LR7iS8juGPl3W5QiQkAEnzGYJwON/pX8etn8M9e8Earov7Tt/wDDuCX4Q6v4+ultNKuC/wBnkCSJOYWO0DygswjVgeWiYYG2v6xP+Cov/BNXQP8AgqR8ENO+H/inxl418JaDaagNSuF8OT28L6gyoUVJvNik3RjeTtGBnBOcDGD8WP8Agj78Jvix/wAE5tN/Zlng1bTfA2jWkUNjc2kqfbraVWZ/tIZ1ZPMaR3c5UrljxgAAA9z/AGYfj94b/ak+B3hHx/4Rmafw94q0uDUrLeFEkUcsYYI4UkLIucMueCCK9Dr51/4Jpf8ABPPQ/wDgmb8AI/hp4Y8WeLfFXh+1upLu0bxBJbyTWnmMWZEMMUY2liTgg47YFfRVABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA2TtRRJ2ooAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAcl8Y/gt4T+PfhCfw7418O6N4r8P3gH2jTtVs0u7WXBBBaNwVJBA7V5h8Mf8AgmT+zv8AA3xpaeI/B3wT+GPhbxDp5LWuo6X4ctbW5hPGSrogIzx3r3wgGmmNSTwOetAFeA7zGVIwOMZz+HHpVqmrEqtkKAadQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA2TtRRJ2ooAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA2TtRRJ2ooAdRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA2TtRRRQB//2Q==" alt="Rectangle: Length = x, Breadth = 40 - x">
+  </div>
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let length = x m</div>
+  <div class="step">Perimeter = 2(length + breadth) = 80 <span class="formula-ref">Perimeter = 2(l + b)</span></div>
+  <div class="step">length + breadth = 40</div>
+  <div class="step">breadth = (40 - x) m</div>
+  <div class="step">Area = 400 <span class="formula-ref">Area = l × b</span></div>
+  <div class="step">x(40 - x) = 400</div>
+  <div class="step">40x - x² = 400</div>
+  <div class="step">x² - 40x + 400 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-40)² - 4(1)(400) = 1600 - 1600 = 0</div>
+  <div class="step">Since D = 0, equal roots exist <span class="formula-ref">D = 0 → Equal roots</span></div>
+  <div class="step">x = -b/2a = 40/2 = 20 <span class="formula-ref">x = -b/2a for equal roots</span></div>
+  <div class="step">Length = 20 m, Breadth = 40 - 20 = 20 m</div>
+  <div class="ans">Yes, it is possible. Length = 20 m, Breadth = 20 m (It's a square!)</div>
+</div>
+
+<!-- ==================== EXAMPLES ==================== -->
+<div class="example-header">EXAMPLES FROM NCERT</div>
+
+<div class="question-box">
+  <span class="q-num">Example 1(i)</span> John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. Find how many marbles they had to start with.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let John has x marbles</div>
+  <div class="step">Then Jivanti has = 45 - x marbles</div>
+  <div class="step">After losing 5 each:</div>
+  <div class="step">John has = x - 5</div>
+  <div class="step">Jivanti has = 45 - x - 5 = 40 - x</div>
+  <div class="step">Product = (x - 5)(40 - x) = 124</div>
+  <div class="step">40x - x² - 200 + 5x = 124 <span class="formula-ref">Distributive Law</span></div>
+  <div class="step">-x² + 45x - 200 = 124</div>
+  <div class="step">-x² + 45x - 324 = 0</div>
+  <div class="step">x² - 45x + 324 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required equation: x² - 45x + 324 = 0</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 1(ii)</span> A cottage industry produces a certain number of toys in a day. The cost of production of each toy was found to be 55 minus the number of toys produced in a day. On a particular day, the total cost of production was Rs 750. Find the number of toys produced.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let number of toys = x</div>
+  <div class="step">Cost of each toy = (55 - x) rupees</div>
+  <div class="step">Total cost = x(55 - x)</div>
+  <div class="step">x(55 - x) = 750</div>
+  <div class="step">55x - x² = 750</div>
+  <div class="step">-x² + 55x - 750 = 0</div>
+  <div class="step">x² - 55x + 750 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Required equation: x² - 55x + 750 = 0</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 2</span> Check whether the following are quadratic equations:
+  (i) (x - 2)² + 1 = 2x - 3
+  (ii) x(x + 1) + 8 = (x + 2)(x - 2)
+  (iii) x(2x + 3) = x² + 1
+  (iv) (x + 2)³ = x³ - 4
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (i):</div>
+  <div class="step">LHS = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5 <span class="formula-ref">(a - b)²</span></div>
+  <div class="step">x² - 4x + 5 = 2x - 3</div>
+  <div class="step">x² - 6x + 8 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, quadratic equation</div>
+  
+  <div class="sol-label" style="margin-top: 10px;">Solution (ii):</div>
+  <div class="step">x(x + 1) + 8 = x² + x + 8</div>
+  <div class="step">(x + 2)(x - 2) = x² - 4 <span class="formula-ref">(a + b)(a - b) = a² - b²</span></div>
+  <div class="step">x² + x + 8 = x² - 4</div>
+  <div class="step">x + 12 = 0</div>
+  <div class="ans">No, not quadratic (linear)</div>
+  
+  <div class="sol-label" style="margin-top: 10px;">Solution (iii):</div>
+  <div class="step">LHS = x(2x + 3) = 2x² + 3x</div>
+  <div class="step">2x² + 3x = x² + 1</div>
+  <div class="step">x² + 3x - 1 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, quadratic equation</div>
+  
+  <div class="sol-label" style="margin-top: 10px;">Solution (iv):</div>
+  <div class="step">(x + 2)³ = x³ + 6x² + 12x + 8 <span class="formula-ref">(a + b)³ identity</span></div>
+  <div class="step">x³ + 6x² + 12x + 8 = x³ - 4</div>
+  <div class="step">6x² + 12x + 12 = 0</div>
+  <div class="step">x² + 2x + 2 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="ans">Yes, quadratic equation</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 3</span> Find the roots of 2x² - 5x + 3 = 0 by factorisation.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">2x² - 5x + 3 = 0</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Split -5x = -2x - 3x (because -2 × -3 = 6 = 2 × 3)</div>
+  <div class="step">2x² - 2x - 3x + 3 = 0</div>
+  <div class="step">2x(x - 1) - 3(x - 1) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(2x - 3)(x - 1) = 0</div>
+  <div class="step">2x - 3 = 0 or x - 1 = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = <span class="frac"><span class="frac-num">3</span><span class="frac-den">2</span></span> or x = 1</div>
+  <div class="ans">Roots are: x = <span class="frac"><span class="frac-num">3</span><span class="frac-den">2</span></span> and x = 1</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 4</span> Find the roots of 6x² - x - 2 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">6x² - x - 2 = 0</div>
+  <div class="step">Product = 6 × (-2) = -12, Sum = -1</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">Numbers: 3 and -4</div>
+  <div class="step">6x² + 3x - 4x - 2 = 0</div>
+  <div class="step">3x(2x + 1) - 2(2x + 1) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(3x - 2)(2x + 1) = 0</div>
+  <div class="step">3x - 2 = 0 or 2x + 1 = 0 <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">x = 2/3 or x = <span class="frac"><span class="frac-num">−1</span><span class="frac-den">2</span></span></div>
+  <div class="ans">Roots are: x = 2/3 and x = <span class="frac"><span class="frac-num">−1</span><span class="frac-den">2</span></span></div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 5</span> Find the roots of: √3 x² + 2√6 x + 2 = 0
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">√3 x² + 2√6 x + 2 = 0</div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">√3 x² + √6 x + √6 x + 2 = 0</div>
+  <div class="step">√3 x(√3 x + √2) + √2(√3 x + √2) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(√3 x + √2)(√3 x + √2) = 0</div>
+  <div class="step">(√3 x + √2)² = 0 <span class="formula-ref">Perfect Square</span></div>
+  <div class="step">√3 x + √2 = 0</div>
+  <div class="step">x = -√2/√3 = -√(2/3)</div>
+  <div class="ans">Roots are: x = -√(2/3), -√(2/3) (equal roots)</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 6</span> Find the dimensions of the prayer hall (breadth x, area 300 m², length = 2x + 1)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">From introduction: 2x² + x - 300 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="formula-ref-block">Splitting Middle Term Method</div>
+  <div class="step">2x² - 24x + 25x - 300 = 0</div>
+  <div class="step">2x(x - 12) + 25(x - 12) = 0 <span class="formula-ref">Factorisation by Grouping</span></div>
+  <div class="step">(x - 12)(2x + 25) = 0</div>
+  <div class="step">x = 12 or x = -12.5 (rejected) <span class="formula-ref">Zero Product Rule</span></div>
+  <div class="step">Breadth = 12 m</div>
+  <div class="step">Length = 2(12) + 1 = 25 m</div>
+  <div class="ans">Breadth = 12 m, Length = 25 m</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 7</span> Find the discriminant of 2x² - 4x + 3 = 0 and the nature of its roots.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Here a = 2, b = -4, c = 3</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-4)² - 4(2)(3)</div>
+  <div class="step">D = 16 - 24 = -8</div>
+  <div class="step">Since D < 0 <span class="formula-ref">D < 0 → No real roots</span></div>
+  <div class="ans">No real roots exist</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 8</span> A pole has to be erected at a point on the boundary of a circular park of diameter 13 metres in such a way that the differences of its distances from two diametrically opposite fixed gates A and B on the boundary is 7 metres. Is it possible? If yes, find the distances.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Let BP = x m, Then AP = (x + 7) m</div>
+  <div class="step">Since AB is diameter, angle APB = 90° (angle in semicircle)</div>
+  <div class="formula-ref-block">Pythagoras Theorem: Hypotenuse² = Base² + Altitude²</div>
+  <div class="step">AP² + BP² = AB²</div>
+  <div class="step">(x + 7)² + x² = 13²</div>
+  <div class="step">x² + 14x + 49 + x² = 169 <span class="formula-ref">(a + b)²</span></div>
+  <div class="step">2x² + 14x + 49 - 169 = 0</div>
+  <div class="step">2x² + 14x - 120 = 0</div>
+  <div class="step">x² + 7x - 60 = 0 <span class="formula-ref">Standard Form</span></div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = 49 + 240 = 289 > 0 ✓ Real roots exist</div>
+  <div class="formula-ref-block">Quadratic Formula: x = (-b ± √D) / 2a</div>
+  <div class="step">x = (-7 ± √289)/2 = (-7 ± 17)/2</div>
+  <div class="step">x = 5 or x = -12 (rejected)</div>
+  <div class="step">BP = 5 m, AP = 5 + 7 = 12 m</div>
+  <div class="ans">Yes, possible. Distance from B = 5 m, from A = 12 m</div>
+</div>
+
+<div class="question-box">
+  <span class="q-num">Example 9</span> Find the discriminant of 3x² - 2x + 1/3 = 0 and find the roots if real.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Here a = 3, b = -2, c = 1/3</div>
+  <div class="formula-ref-block">Discriminant: D = b² - 4ac</div>
+  <div class="step">D = (-2)² - 4(3)(1/3)</div>
+  <div class="step">D = 4 - 4 = 0</div>
+  <div class="step">Since D = 0, two equal real roots exist <span class="formula-ref">D = 0 → Equal roots</span></div>
+  <div class="step">x = -b/2a = 2/(2 × 3) = 2/6 = 1/3 <span class="formula-ref">x = -b/2a for equal roots</span></div>
+  <div class="ans">Two equal roots: x = 1/3, 1/3</div>
+</div>
+
+<!-- ==================== MCQ SECTION ==================== -->
+<div class="mcq-section">
+  <div class="mcq-title">IMPORTANT MCQs FOR PRACTICE</div>
+  
+  <div class="mcq">
+    <div class="mcq-q">1. Which of the following is a quadratic equation?</div>
+    <div class="opts">
+      <div>(a) x³ - x² + 5 = 0</div>
+      <div>(b) x + 1/x = 2 (x ≠ 0)</div>
+      <div>(c) x² + 1/x² = 5</div>
+      <div>(d) 3x - 7 = 0</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">2. The roots of x² - 5x + 6 = 0 are:</div>
+    <div class="opts">
+      <div>(a) 2 and 3</div>
+      <div>(b) -2 and -3</div>
+      <div>(c) 2 and -3</div>
+      <div>(d) -2 and 3</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">3. If one root of x² - 6x + k = 0 is 2, then k =</div>
+    <div class="opts">
+      <div>(a) 4</div>
+      <div>(b) 8</div>
+      <div>(c) 12</div>
+      <div>(d) 6</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">4. The discriminant of 2x² - 5x + 3 = 0 is:</div>
+    <div class="opts">
+      <div>(a) 1</div>
+      <div>(b) -1</div>
+      <div>(c) 25</div>
+      <div>(d) 49</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">5. For equal roots in x² + kx + 9 = 0, k =</div>
+    <div class="opts">
+      <div>(a) ±3</div>
+      <div>(b) ±6</div>
+      <div>(c) ±9</div>
+      <div>(d) ±12</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">6. Sum of roots of ax² + bx + c = 0 is:</div>
+    <div class="opts">
+      <div>(a) <span class="frac"><span class="frac-num">−b</span><span class="frac-den">a</span></span></div>
+      <div>(b) <span class="frac"><span class="frac-num">b</span><span class="frac-den">a</span></span></div>
+      <div>(c) <span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></div>
+      <div>(d) -<span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">7. Product of roots of ax² + bx + c = 0 is:</div>
+    <div class="opts">
+      <div>(a) <span class="frac"><span class="frac-num">−b</span><span class="frac-den">a</span></span></div>
+      <div>(b) <span class="frac"><span class="frac-num">b</span><span class="frac-den">a</span></span></div>
+      <div>(c) <span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></div>
+      <div>(d) -<span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">8. If D < 0, then the equation has:</div>
+    <div class="opts">
+      <div>(a) Two real roots</div>
+      <div>(b) Two equal roots</div>
+      <div>(c) No real roots</div>
+      <div>(d) One real root</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">9. The roots of (x - 3)² = 0 are:</div>
+    <div class="opts">
+      <div>(a) 3, 3</div>
+      <div>(b) -3, -3</div>
+      <div>(c) 3, -3</div>
+      <div>(d) 0, 3</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">10. The quadratic formula gives x =</div>
+    <div class="opts">
+      <div>(a) (-b ± √(b² + 4ac))/2a</div>
+      <div>(b) (-b ± √(b² - 4ac))/2a</div>
+      <div>(c) (b ± √(b² - 4ac))/2a</div>
+      <div>(d) (b ± √(b² + 4ac))/2a</div>
+    </div>
+  </div>
+  
+  <div class="ans-key">
+    <strong>Answer Key:</strong> 1.(b) 2.(a) 3.(b) 4.(a) 5.(b) 6.(a) 7.(c) 8.(c) 9.(a) 10.(b)
+  </div>
+</div>
+
+<!-- ==================== SUMMARY ==================== -->
+<div class="summary-box">
+  <h3 style="margin-bottom: 8px; color: #1565C0;">Chapter Summary</h3>
+  <p><strong>1.</strong> Standard form: ax² + bx + c = 0 (a ≠ 0)</p>
+  <p><strong>2.</strong> Quadratic Formula: x = (-b ± √(b² - 4ac)) / 2a</p>
+  <p><strong>3.</strong> Discriminant D = b² - 4ac</p>
+  <p style="margin-left: 15px;">• D > 0 → Two distinct real roots</p>
+  <p style="margin-left: 15px;">• D = 0 → Two equal real roots</p>
+  <p style="margin-left: 15px;">• D < 0 → No real roots</p>
+  <p><strong>4.</strong> Sum of roots = <span class="frac"><span class="frac-num">−b</span><span class="frac-den">a</span></span></p>
+  <p><strong>5.</strong> Product of roots = <span class="frac"><span class="frac-num">c</span><span class="frac-den">a</span></span></p>
+</div>
+
+<div class="footer">
+  <p><strong>JIGUU - Complete Maths Solutions</strong></p>
+  <p>Class 10 - Chapter 4: Quadratic Equations</p>
+  <p>Based on Latest NCERT 2025-26 Syllabus</p>
+  <p style="margin-top: 8px;">© JIGUU - All Rights Reserved</p>
+</div>
+
+</body>
+</html>

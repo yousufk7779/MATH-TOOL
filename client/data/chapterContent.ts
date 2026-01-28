@@ -29,6 +29,23 @@ export interface MCQ {
   correctAnswer: string;
 }
 
+export interface Example {
+  id: string;
+  number: string;
+  question: string;
+  solution: string[];
+  answer: string;
+}
+
+export interface Theorem {
+  id: string;
+  number: string;
+  name: string;
+  statement: string;
+  proof?: string[];
+  example?: string;
+}
+
 export interface ChapterContent {
   id: string;
   number: number;
@@ -39,6 +56,8 @@ export interface ChapterContent {
   formulas: Formula[];
   crux: string[];
   exercises: Exercise[];
+  examples: Example[];
+  theorems?: Theorem[];
   mcqs: MCQ[];
   summary: string[];
 }
@@ -239,6 +258,159 @@ export const chapterContents: Record<string, ChapterContent> = {
         ],
       },
     ],
+    examples: [
+      {
+        id: "ex1",
+        number: "Example 1",
+        question: "Consider the numbers 4ⁿ, where n is a natural number. Check whether there is any value of n for which 4ⁿ ends with the digit zero.",
+        solution: [
+          "For a number to end with digit 0, it must be divisible by 10.",
+          "10 = 2 × 5",
+          "Now, 4ⁿ = (2²)ⁿ = 2²ⁿ",
+          "The prime factorisation of 4ⁿ contains only 2.",
+          "There is no factor of 5 in 4ⁿ.",
+          "Since 5 is not a factor of 4ⁿ, it cannot be divisible by 10.",
+        ],
+        answer: "No, 4ⁿ cannot end with digit 0 for any natural number n.",
+      },
+      {
+        id: "ex2",
+        number: "Example 2",
+        question: "Find the LCM and HCF of 6 and 20 by the prime factorisation method.",
+        solution: [
+          "Prime factorisation:",
+          "6 = 2¹ × 3¹",
+          "20 = 2² × 5¹",
+          "HCF(6, 20) = 2¹ = 2 (Only 2 is common)",
+          "LCM(6, 20) = 2² × 3¹ × 5¹ = 4 × 3 × 5 = 60 (Greatest powers)",
+        ],
+        answer: "HCF = 2, LCM = 60",
+      },
+      {
+        id: "ex3",
+        number: "Example 3",
+        question: "Find the HCF of 96 and 404 by the prime factorisation method. Hence, find their LCM.",
+        solution: [
+          "Prime factorisation:",
+          "96 = 2⁵ × 3",
+          "404 = 2² × 101",
+          "HCF(96, 404) = 2² = 4 (Common factor: 2²)",
+          "Using: HCF × LCM = Product of numbers",
+          "LCM = (96 × 404) / 4 = 38784 / 4 = 9696",
+        ],
+        answer: "HCF = 4, LCM = 9696",
+      },
+      {
+        id: "ex4",
+        number: "Example 4",
+        question: "Find the HCF and LCM of 6, 72 and 120, using the prime factorisation method.",
+        solution: [
+          "Prime factorisation:",
+          "6 = 2 × 3",
+          "72 = 2³ × 3²",
+          "120 = 2³ × 3 × 5",
+          "Common factors: 2 and 3",
+          "HCF(6, 72, 120) = 2¹ × 3¹ = 6 (Smallest powers: 2¹, 3¹)",
+          "LCM(6, 72, 120) = 2³ × 3² × 5¹ = 8 × 9 × 5 = 360 (Greatest powers)",
+        ],
+        answer: "HCF = 6, LCM = 360",
+      },
+      {
+        id: "ex5",
+        number: "Example 5",
+        question: "Prove that √3 is irrational.",
+        solution: [
+          "Step 1: Assume, to the contrary, that √3 is rational.",
+          "Then √3 = a/b, where a and b are coprime integers, b ≠ 0.",
+          "Step 2: Squaring both sides:",
+          "3 = a²/b²",
+          "∴ 3b² = a²",
+          "This means 3 divides a².",
+          "Step 3: By Theorem 1.2, if 3 divides a², then 3 divides a.",
+          "So we can write a = 3c for some integer c.",
+          "Step 4: Substituting a = 3c in 3b² = a²:",
+          "3b² = 9c²",
+          "∴ b² = 3c²",
+          "This means 3 divides b², so 3 divides b.",
+          "Step 5: So 3 divides both a and b.",
+          "But this contradicts that a and b are coprime!",
+        ],
+        answer: "∴ √3 is irrational. (Hence Proved)",
+      },
+      {
+        id: "ex6",
+        number: "Example 6",
+        question: "Show that 5 - √3 is irrational.",
+        solution: [
+          "Step 1: Assume, to the contrary, that 5 - √3 is rational.",
+          "Then 5 - √3 = a/b, where a, b are coprime integers, b ≠ 0.",
+          "Step 2: Rearranging:",
+          "√3 = 5 - a/b = (5b - a)/b",
+          "Step 3: Since a and b are integers, (5b - a)/b is rational.",
+          "This means √3 is rational.",
+          "Step 4: But we know √3 is irrational!",
+          "This is a contradiction.",
+        ],
+        answer: "∴ 5 - √3 is irrational. (Hence Proved)",
+      },
+      {
+        id: "ex7",
+        number: "Example 7",
+        question: "Show that 3√2 is irrational.",
+        solution: [
+          "Step 1: Assume, to the contrary, that 3√2 is rational.",
+          "Then 3√2 = a/b, where a, b are coprime integers, b ≠ 0.",
+          "Step 2: Rearranging:",
+          "√2 = a/(3b)",
+          "Step 3: Since a, b are integers and 3 is an integer, a/(3b) is rational.",
+          "This means √2 is rational.",
+          "Step 4: But we know √2 is irrational (Theorem 1.3)!",
+          "This is a contradiction.",
+        ],
+        answer: "∴ 3√2 is irrational. (Hence Proved)",
+      },
+    ],
+    theorems: [
+      {
+        id: "thm1.1",
+        number: "Theorem 1.1",
+        name: "Euclid's Division Lemma",
+        statement: "For any positive integers a and b, there exist unique integers q and r such that: a = bq + r, where 0 ≤ r < b",
+        proof: [
+          "When we divide a by b, we get quotient q and remainder r.",
+          "Remainder is always less than divisor (r < b).",
+        ],
+        example: "17 = 5 × 3 + 2 (here a=17, b=5, q=3, r=2)",
+      },
+      {
+        id: "thm1.2",
+        number: "Theorem 1.2",
+        name: "Prime Factor Property",
+        statement: "If p is a prime number and p divides a², then p divides a.",
+        proof: [
+          "Let a = p₁ × p₂ × ... × pₙ (prime factorisation)",
+          "Then a² = p₁² × p₂² × ... × pₙ²",
+          "If prime p divides a², then p must be one of p₁, p₂, ..., pₙ",
+          "∴ p divides a.",
+        ],
+        example: "If 5 divides 15², then 5 divides 15 ✓",
+      },
+      {
+        id: "thm1.3",
+        number: "Theorem 1.3",
+        name: "Irrationality of √2",
+        statement: "√2 is irrational.",
+        proof: [
+          "Assume √2 is rational.",
+          "√2 = a/b (in lowest form)",
+          "Squaring: 2 = a²/b² → a² = 2b²",
+          "So 2 divides a² → 2 divides a. Let a = 2k.",
+          "Then 4k² = 2b² → b² = 2k²",
+          "So 2 divides b² → 2 divides b.",
+          "But then 2 divides both a and b — contradiction!",
+        ],
+      },
+    ],
     mcqs: [
       { id: "mcq1", question: "HCF of 135 and 225 is:", options: ["15", "45", "25", "9"], correctAnswer: "b" },
       { id: "mcq2", question: "LCM of 12, 15, 21 is:", options: ["60", "420", "84", "180"], correctAnswer: "b" },
@@ -372,6 +544,50 @@ export const chapterContents: Record<string, ChapterContent> = {
         ],
       },
     ],
+    examples: [
+      {
+        id: "ex1",
+        number: "Example 1",
+        question: "Find the zeroes of x² + 7x + 10 and verify the relationship.",
+        solution: [
+          "x² + 7x + 10 = 0",
+          "x² + 5x + 2x + 10 = 0",
+          "(x + 5)(x + 2) = 0",
+          "x = -5 or x = -2",
+          "Sum of zeroes = -5 + (-2) = -7 = -7/1 = -b/a ✓",
+          "Product of zeroes = (-5) × (-2) = 10 = 10/1 = c/a ✓",
+        ],
+        answer: "Zeroes are -5 and -2. Relationship verified.",
+      },
+      {
+        id: "ex2",
+        number: "Example 2",
+        question: "Find a quadratic polynomial whose zeroes are 3 and -2.",
+        solution: [
+          "Sum of zeroes = 3 + (-2) = 1",
+          "Product of zeroes = 3 × (-2) = -6",
+          "Required polynomial: x² - (sum)x + (product)",
+          "= x² - 1x + (-6)",
+          "= x² - x - 6",
+        ],
+        answer: "x² - x - 6",
+      },
+      {
+        id: "ex3",
+        number: "Example 3",
+        question: "Find the zeroes of p(x) = 2x² - 8x + 6.",
+        solution: [
+          "2x² - 8x + 6 = 0",
+          "Dividing by 2: x² - 4x + 3 = 0",
+          "x² - 3x - x + 3 = 0",
+          "(x - 3)(x - 1) = 0",
+          "x = 3 or x = 1",
+          "Verification: Sum = 3 + 1 = 4 = -(-8)/2 = -b/a ✓",
+          "Product = 3 × 1 = 3 = 6/2 = c/a ✓",
+        ],
+        answer: "Zeroes are 3 and 1.",
+      },
+    ],
     mcqs: [
       { id: "mcq1", question: "The number of zeroes of a cubic polynomial is at most:", options: ["1", "2", "3", "4"], correctAnswer: "c" },
       { id: "mcq2", question: "Sum of zeroes of x² - 5x + 6 is:", options: ["5", "-5", "6", "-6"], correctAnswer: "a" },
@@ -487,6 +703,49 @@ export const chapterContents: Record<string, ChapterContent> = {
             answer: "x = 19/5, y = 6/5",
           },
         ],
+      },
+    ],
+    examples: [
+      {
+        id: "ex1",
+        number: "Example 1",
+        question: "Solve graphically: x + 3y = 6 and 2x - 3y = 12",
+        solution: [
+          "For x + 3y = 6:",
+          "When x = 0, y = 2; When x = 6, y = 0",
+          "For 2x - 3y = 12:",
+          "When x = 0, y = -4; When x = 6, y = 0",
+          "Both lines intersect at (6, 0)",
+        ],
+        answer: "x = 6, y = 0",
+      },
+      {
+        id: "ex2",
+        number: "Example 2",
+        question: "Solve by elimination: 3x + 4y = 10 and 2x - 2y = 2",
+        solution: [
+          "Equation 1: 3x + 4y = 10",
+          "Equation 2: 2x - 2y = 2 → x - y = 1 → y = x - 1",
+          "Substituting in Equation 1: 3x + 4(x - 1) = 10",
+          "3x + 4x - 4 = 10",
+          "7x = 14, x = 2",
+          "y = 2 - 1 = 1",
+        ],
+        answer: "x = 2, y = 1",
+      },
+      {
+        id: "ex3",
+        number: "Example 3",
+        question: "Check whether the pair 2x + 3y = 11 and 2x - 4y = -24 is consistent.",
+        solution: [
+          "a₁ = 2, b₁ = 3, c₁ = -11",
+          "a₂ = 2, b₂ = -4, c₂ = 24",
+          "a₁/a₂ = 2/2 = 1",
+          "b₁/b₂ = 3/(-4) = -3/4",
+          "Since a₁/a₂ ≠ b₁/b₂, the lines intersect.",
+          "Therefore, the system has a unique solution (consistent).",
+        ],
+        answer: "Consistent with unique solution.",
       },
     ],
     mcqs: [
@@ -634,6 +893,64 @@ export const chapterContents: Record<string, ChapterContent> = {
             answer: "Real and equal roots (D = 0)",
           },
         ],
+      },
+    ],
+    examples: [
+      {
+        id: "ex1",
+        number: "Example 1",
+        question: "Solve x² + 5x + 6 = 0 by factorisation.",
+        solution: [
+          "x² + 5x + 6 = 0",
+          "We need factors of 6 that add up to 5: 2 and 3",
+          "x² + 2x + 3x + 6 = 0",
+          "x(x + 2) + 3(x + 2) = 0",
+          "(x + 3)(x + 2) = 0",
+          "x = -3 or x = -2",
+        ],
+        answer: "x = -3 or x = -2",
+      },
+      {
+        id: "ex2",
+        number: "Example 2",
+        question: "Solve 2x² - 5x + 3 = 0 using quadratic formula.",
+        solution: [
+          "Here a = 2, b = -5, c = 3",
+          "D = b² - 4ac = 25 - 24 = 1",
+          "x = (-b ± √D) / 2a",
+          "x = (5 ± √1) / 4",
+          "x = (5 + 1)/4 = 6/4 = 3/2",
+          "x = (5 - 1)/4 = 4/4 = 1",
+        ],
+        answer: "x = 3/2 or x = 1",
+      },
+      {
+        id: "ex3",
+        number: "Example 3",
+        question: "Find the nature of roots of x² - 4x + 5 = 0.",
+        solution: [
+          "a = 1, b = -4, c = 5",
+          "D = b² - 4ac = 16 - 20 = -4",
+          "Since D < 0, no real roots exist.",
+          "The roots are imaginary/complex.",
+        ],
+        answer: "No real roots (imaginary roots)",
+      },
+      {
+        id: "ex4",
+        number: "Example 4",
+        question: "Find two consecutive positive integers whose sum of squares is 365.",
+        solution: [
+          "Let the integers be x and x + 1",
+          "x² + (x + 1)² = 365",
+          "x² + x² + 2x + 1 = 365",
+          "2x² + 2x + 1 = 365",
+          "2x² + 2x - 364 = 0",
+          "x² + x - 182 = 0",
+          "(x + 14)(x - 13) = 0",
+          "x = 13 (rejecting negative value)",
+        ],
+        answer: "The integers are 13 and 14.",
       },
     ],
     mcqs: [
