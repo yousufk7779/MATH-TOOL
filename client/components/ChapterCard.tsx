@@ -73,8 +73,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderRadius: BorderRadius.md,
-    paddingVertical: Spacing.md,
+    paddingVertical: 14,
     paddingHorizontal: Spacing.lg,
+    minHeight: 60,
   },
   cardPressed: {
     opacity: 0.85,
