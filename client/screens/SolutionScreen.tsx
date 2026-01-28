@@ -70,7 +70,7 @@ function SolutionScreen() {
         title="Definitions"
         icon="bookmark"
         iconColor="#4CAF50"
-        backgroundColor="#E8F5E9" + "15"
+        backgroundColor="#E8F5E915"
       >
         {data.definitions.map((def, index) => (
           <DefinitionItem key={index} term={def.term} description={def.description} />
@@ -81,7 +81,7 @@ function SolutionScreen() {
         title="Key Points"
         icon="star"
         iconColor="#FFA000"
-        backgroundColor="#FFF8E1" + "15"
+        backgroundColor="#FFF8E115"
       >
         {data.keyPoints.map((point, index) => (
           <View key={index} style={styles.keyPointRow}>
@@ -95,7 +95,7 @@ function SolutionScreen() {
         title="Formulas"
         icon="edit-3"
         iconColor="#9C27B0"
-        backgroundColor="#F3E5F5" + "15"
+        backgroundColor="#F3E5F515"
       >
         {data.formulas.map((formula, index) => (
           <FormulaItem key={index} name={formula.name} formula={formula.formula} />
@@ -106,7 +106,7 @@ function SolutionScreen() {
         title="Chapter Crux"
         icon="zap"
         iconColor="#2196F3"
-        backgroundColor="#E3F2FD" + "15"
+        backgroundColor="#E3F2FD15"
       >
         {data.crux.map((item, index) => (
           <View key={index} style={styles.cruxRow}>
@@ -122,7 +122,7 @@ function SolutionScreen() {
         title="Summary"
         icon="file-text"
         iconColor="#1565C0"
-        backgroundColor="#E3F2FD" + "15"
+        backgroundColor="#E3F2FD15"
       >
         {data.summary.map((item, index) => (
           <View key={index} style={styles.summaryRow}>
