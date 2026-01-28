@@ -1,9 +1,24 @@
 import React, { memo } from "react";
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Image, Text } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/chapterContent";
+
+function renderTextWithReferences(text: string) {
+  const parts = text.split(/(\[[^\]]+\])/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("[") && part.endsWith("]")) {
+      const refText = part.slice(1, -1);
+      return (
+        <Text key={index} style={styles.referenceBox}>
+          {refText}
+        </Text>
+      );
+    }
+    return <Text key={index}>{part}</Text>;
+  });
+}
 
 const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_a": require("../../../assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
@@ -42,7 +57,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }
         <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
         {question.solution.map((step, index) => (
           <View key={index} style={styles.stepRow}>
-            <ThemedText style={styles.stepText}>{step}</ThemedText>
+            <Text style={styles.stepText}>{renderTextWithReferences(step)}</Text>
           </View>
         ))}
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
@@ -123,5 +138,16 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 200,
     borderRadius: BorderRadius.xs,
+  },
+  referenceBox: {
+    backgroundColor: "#FFFDE7",
+    borderWidth: 1,
+    borderColor: "#FFC107",
+    borderRadius: 4,
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    fontSize: 13,
+    color: "#5D4037",
+    fontFamily: "Nunito_600SemiBold",
   },
 });
