@@ -1,44 +1,63 @@
 import { Platform } from "react-native";
 
-const primaryColor = "#4F46E5";
-const primaryColorDark = "#6366F1";
+export const JiguuColors = {
+  background: "#1A1A2E",
+  surface: "#252538",
+  surfaceLight: "#303045",
+  border: "#3B3B52",
+  
+  realNumbers: "#FF6B6B",
+  polynomials: "#FFA726",
+  linearEquations: "#00BCD4",
+  quadraticEquations: "#7C4DFF",
+  arithmetic: "#4CAF50",
+  triangles: "#E91E63",
+  coordinate: "#00E676",
+  circles: "#FF5722",
+  constructions: "#9C27B0",
+  areas: "#795548",
+  surfaceVolume: "#607D8B",
+  statistics: "#3F51B5",
+  probability: "#009688",
+  
+  newsEvents: "#7C4DFF",
+  quickNotes: "#26A69A",
+  
+  accent1: "#00D4FF",
+  accent2: "#FF6B9D",
+  accent3: "#7C4DFF",
+  accent4: "#00E676",
+  
+  textPrimary: "#FFFFFF",
+  textSecondary: "#A0A0B0",
+  textOnColor: "#FFFFFF",
+};
+
+const tintColorLight = JiguuColors.realNumbers;
+const tintColorDark = "#818CF8";
 
 export const Colors = {
   light: {
-    text: "#1F2937",
-    textSecondary: "#6B7280",
-    buttonText: "#FFFFFF",
-    tabIconDefault: "#6B7280",
-    tabIconSelected: primaryColor,
-    link: primaryColor,
-    primary: primaryColor,
-    primaryGradientStart: "#6366F1",
-    primaryGradientEnd: "#8B5CF6",
-    success: "#10B981",
-    error: "#EF4444",
-    border: "#E5E7EB",
-    backgroundRoot: "#FAFAFA",
-    backgroundDefault: "#FFFFFF",
-    backgroundSecondary: "#F3F4F6",
-    backgroundTertiary: "#E5E7EB",
+    text: JiguuColors.textPrimary,
+    buttonText: JiguuColors.textOnColor,
+    tabIconDefault: JiguuColors.textSecondary,
+    tabIconSelected: tintColorLight,
+    link: JiguuColors.accent1,
+    backgroundRoot: JiguuColors.background,
+    backgroundDefault: JiguuColors.surface,
+    backgroundSecondary: JiguuColors.surfaceLight,
+    backgroundTertiary: JiguuColors.border,
   },
   dark: {
     text: "#ECEDEE",
-    textSecondary: "#9BA1A6",
     buttonText: "#FFFFFF",
     tabIconDefault: "#9BA1A6",
-    tabIconSelected: primaryColorDark,
-    link: primaryColorDark,
-    primary: primaryColorDark,
-    primaryGradientStart: "#6366F1",
-    primaryGradientEnd: "#8B5CF6",
-    success: "#10B981",
-    error: "#EF4444",
-    border: "#404244",
-    backgroundRoot: "#1F2123",
-    backgroundDefault: "#2A2C2E",
-    backgroundSecondary: "#353739",
-    backgroundTertiary: "#404244",
+    tabIconSelected: tintColorDark,
+    link: "#818CF8",
+    backgroundRoot: "#1A1A2E",
+    backgroundDefault: "#252538",
+    backgroundSecondary: "#303045",
+    backgroundTertiary: "#3B3B52",
   },
 };
 
@@ -53,13 +72,13 @@ export const Spacing = {
   "4xl": 40,
   "5xl": 48,
   inputHeight: 48,
-  buttonHeight: 52,
+  buttonHeight: 56,
 };
 
 export const BorderRadius = {
   xs: 8,
   sm: 12,
-  md: 18,
+  md: 16,
   lg: 24,
   xl: 30,
   "2xl": 40,
@@ -68,105 +87,85 @@ export const BorderRadius = {
 };
 
 export const Typography = {
-  hero: {
-    fontSize: 32,
-    lineHeight: 40,
+  logo: {
+    fontSize: 28,
+    lineHeight: 36,
     fontWeight: "700" as const,
+    fontFamily: "Nunito_700Bold",
   },
   h1: {
     fontSize: 32,
     lineHeight: 40,
     fontWeight: "700" as const,
+    fontFamily: "Nunito_700Bold",
   },
   h2: {
     fontSize: 28,
     lineHeight: 36,
     fontWeight: "700" as const,
+    fontFamily: "Nunito_700Bold",
   },
   h3: {
     fontSize: 24,
     lineHeight: 32,
     fontWeight: "600" as const,
+    fontFamily: "Nunito_600SemiBold",
   },
   h4: {
     fontSize: 20,
     lineHeight: 28,
     fontWeight: "600" as const,
+    fontFamily: "Nunito_600SemiBold",
   },
-  heading: {
+  button: {
     fontSize: 18,
-    lineHeight: 26,
+    lineHeight: 24,
     fontWeight: "600" as const,
+    fontFamily: "Nunito_600SemiBold",
   },
   body: {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "400" as const,
-  },
-  caption: {
-    fontSize: 14,
-    lineHeight: 20,
-    fontWeight: "400" as const,
+    fontFamily: "Nunito_400Regular",
   },
   small: {
     fontSize: 14,
     lineHeight: 20,
     fontWeight: "400" as const,
+    fontFamily: "Nunito_400Regular",
   },
-  tiny: {
+  caption: {
     fontSize: 12,
     lineHeight: 16,
     fontWeight: "400" as const,
+    fontFamily: "Nunito_400Regular",
   },
   link: {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "400" as const,
-  },
-};
-
-export const Shadows = {
-  small: {
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  medium: {
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.12,
-    shadowRadius: 6,
-    elevation: 4,
-  },
-  large: {
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.15,
-    shadowRadius: 12,
-    elevation: 8,
+    fontFamily: "Nunito_400Regular",
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
-    sans: "system-ui",
+    sans: "Nunito_400Regular",
     serif: "ui-serif",
-    rounded: "ui-rounded",
+    rounded: "Nunito_400Regular",
     mono: "ui-monospace",
   },
   default: {
-    sans: "normal",
+    sans: "Nunito_400Regular",
     serif: "serif",
-    rounded: "normal",
+    rounded: "Nunito_400Regular",
     mono: "monospace",
   },
   web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    sans: "Nunito_400Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded:
-      "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
+    rounded: "Nunito_400Regular, 'SF Pro Rounded', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });

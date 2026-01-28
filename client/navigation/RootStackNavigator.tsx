@@ -1,63 +1,40 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import MainTabNavigator from "@/navigation/MainTabNavigator";
+import { JiguuColors } from "@/constants/theme";
+import HomeScreen from "@/screens/HomeScreen";
+import ChapterListScreen from "@/screens/ChapterListScreen";
 import SolutionScreen from "@/screens/SolutionScreen";
-import ProblemDetailScreen from "@/screens/ProblemDetailScreen";
-import { useScreenOptions } from "@/hooks/useScreenOptions";
-
-interface HistoryItem {
-  id: string;
-  problem: string;
-  category: string;
-  answer: string;
-  steps: Array<{
-    stepNumber: number;
-    title: string;
-    explanation: string;
-    formula?: string;
-  }>;
-  createdAt: string;
-}
+import QuickNotesScreen from "@/screens/QuickNotesScreen";
+import NewsEventsScreen from "@/screens/NewsEventsScreen";
+import AboutEducatorScreen from "@/screens/AboutEducatorScreen";
 
 export type RootStackParamList = {
-  Main: undefined;
-  Solution: {
-    problemText?: string;
-    imageBase64?: string;
-  };
-  ProblemDetail: {
-    historyItem: HistoryItem;
-  };
+  Home: undefined;
+  ChapterList: undefined;
+  Solution: { chapterId: string; chapterName: string };
+  QuickNotes: undefined;
+  NewsEvents: undefined;
+  AboutEducator: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function RootStackNavigator() {
-  const screenOptions = useScreenOptions();
-
   return (
-    <Stack.Navigator screenOptions={screenOptions}>
-      <Stack.Screen
-        name="Main"
-        component={MainTabNavigator}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="Solution"
-        component={SolutionScreen}
-        options={{
-          presentation: "modal",
-          headerTitle: "Solution",
-        }}
-      />
-      <Stack.Screen
-        name="ProblemDetail"
-        component={ProblemDetailScreen}
-        options={({ route }) => ({
-          headerTitle: route.params.historyItem.category,
-        })}
-      />
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+        animation: "none",
+        contentStyle: { backgroundColor: JiguuColors.background },
+      }}
+    >
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="ChapterList" component={ChapterListScreen} />
+      <Stack.Screen name="Solution" component={SolutionScreen} />
+      <Stack.Screen name="QuickNotes" component={QuickNotesScreen} />
+      <Stack.Screen name="NewsEvents" component={NewsEventsScreen} />
+      <Stack.Screen name="AboutEducator" component={AboutEducatorScreen} />
     </Stack.Navigator>
   );
 }
