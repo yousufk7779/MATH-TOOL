@@ -38,13 +38,17 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
       onPress={isAvailable ? handlePress : undefined}
       onPressIn={isAvailable ? handlePressIn : undefined}
       onPressOut={isAvailable ? handlePressOut : undefined}
-      style={[styles.card, isPressed && styles.cardPressed, !isAvailable && styles.cardDisabled]}
+      style={[
+        styles.card, 
+        isAvailable ? { backgroundColor: color } : styles.cardDisabled,
+        isPressed && styles.cardPressed,
+      ]}
     >
-      <View style={[styles.numberContainer, { backgroundColor: color }, !isAvailable && styles.numberDisabled]}>
+      <View style={[styles.numberContainer, !isAvailable && styles.numberDisabled]}>
         <ThemedText style={styles.number}>{number}</ThemedText>
       </View>
       <View style={styles.nameContainer}>
-        <ThemedText style={[styles.name, !isAvailable && styles.nameDisabled]} numberOfLines={2}>
+        <ThemedText style={styles.name} numberOfLines={2}>
           {name}
         </ThemedText>
         {!isAvailable ? (
@@ -67,8 +71,7 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: JiguuColors.surface,
-    borderRadius: BorderRadius.xs,
+    borderRadius: BorderRadius.md,
     paddingVertical: Spacing.lg,
     paddingHorizontal: Spacing.lg,
   },
@@ -77,37 +80,36 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   cardDisabled: {
+    backgroundColor: JiguuColors.surface,
     opacity: 0.6,
   },
   numberContainer: {
-    width: 32,
-    height: 32,
-    borderRadius: BorderRadius.xs,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     alignItems: "center",
     justifyContent: "center",
     marginRight: Spacing.md,
+    backgroundColor: "rgba(255, 255, 255, 0.25)",
   },
   number: {
-    ...Typography.small,
+    ...Typography.body,
     fontWeight: "700",
-    color: JiguuColors.textOnColor,
+    color: "#fff",
   },
   numberDisabled: {
-    opacity: 0.5,
+    backgroundColor: JiguuColors.border,
   },
   nameContainer: {
     flex: 1,
   },
   name: {
     ...Typography.body,
-    color: JiguuColors.textPrimary,
+    color: "#fff",
     fontWeight: "600",
   },
-  nameDisabled: {
-    color: JiguuColors.textSecondary,
-  },
   comingSoonBadge: {
-    backgroundColor: JiguuColors.border,
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
     paddingHorizontal: Spacing.sm,
     paddingVertical: 2,
     borderRadius: BorderRadius.xs,
@@ -116,7 +118,7 @@ const styles = StyleSheet.create({
   },
   comingSoonText: {
     ...Typography.caption,
-    color: JiguuColors.textSecondary,
+    color: "#fff",
     fontFamily: "Nunito_600SemiBold",
   },
   chevronIcon: {
@@ -130,7 +132,7 @@ const styles = StyleSheet.create({
     top: 2,
     width: 8,
     height: 2,
-    backgroundColor: JiguuColors.textSecondary,
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
     borderRadius: 1,
     transform: [{ rotate: "45deg" }],
   },
@@ -139,7 +141,7 @@ const styles = StyleSheet.create({
     bottom: 2,
     width: 8,
     height: 2,
-    backgroundColor: JiguuColors.textSecondary,
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
     borderRadius: 1,
     transform: [{ rotate: "-45deg" }],
   },
