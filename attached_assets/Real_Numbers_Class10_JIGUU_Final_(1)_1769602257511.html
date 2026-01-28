@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIGUU - Real Numbers (Class 10) - Final</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Nunito', 'Times New Roman', serif;
+      line-height: 1.6;
+      color: #1A1A2E;
+      background: #fff;
+      padding: 25px 35px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #6C63FF;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #6C63FF;
+    }
+    
+    .subtitle {
+      color: #5F6368;
+      font-size: 12px;
+    }
+    
+    .chapter-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1A1A2E;
+      margin: 15px 0 5px;
+      text-align: center;
+    }
+    
+    .class-badge {
+      display: inline-block;
+      background: #6C63FF;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+    
+    /* CHAPTER OPENING SECTIONS */
+    .intro-section {
+      background: #F8F9FA;
+      border: 1px solid #E0E0E0;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .intro-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6C63FF;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 5px;
+    }
+    
+    .definitions-box {
+      background: #E8F5E9;
+      border: 1px solid #4CAF50;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .key-points-box {
+      background: #FFF8E1;
+      border: 1px solid #FFA000;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .formulas-box {
+      background: #F3E5F5;
+      border: 1px solid #9C27B0;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .crux-box {
+      background: #E3F2FD;
+      border: 1px solid #2196F3;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    /* EXERCISE HEADERS */
+    .exercise-header {
+      background: #6C63FF;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin: 20px 0 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    
+    .example-header {
+      background: #FF6584;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      margin: 20px 0 12px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    
+    /* QUESTION BOX */
+    .question-box {
+      background: #F8F9FA;
+      border-left: 3px solid #6C63FF;
+      padding: 10px 12px;
+      margin: 10px 0 6px;
+    }
+    
+    .q-num {
+      font-weight: 700;
+      color: #6C63FF;
+    }
+    
+    /* SOLUTION BOX */
+    .solution-box {
+      padding: 8px 0 12px 12px;
+      border-bottom: 1px dashed #E0E0E0;
+      margin-bottom: 12px;
+    }
+    
+    .sol-label {
+      font-weight: 700;
+      color: #4CAF50;
+      margin-bottom: 6px;
+    }
+    
+    .step {
+      margin: 5px 0;
+    }
+    
+    /* FORMULA REFERENCE BOX - Key Feature */
+    .formula-ref {
+      display: inline-block;
+      background: #FFFDE7;
+      border: 1px solid #FFC107;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      color: #795548;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    
+    .formula-ref-block {
+      background: #FFFDE7;
+      border: 1px solid #FFC107;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #795548;
+      margin: 5px 0 5px 15px;
+      display: inline-block;
+    }
+    
+    /* ANSWER BOX */
+    .ans {
+      background: #E8F5E9;
+      border: 1px solid #4CAF50;
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin-top: 8px;
+      font-weight: 600;
+      display: inline-block;
+    }
+    
+    /* DIAGRAM - RIGHT SIDE with text wrap */
+    .diagram-right {
+      float: right;
+      margin: 0 0 10px 15px;
+      max-width: 300px;
+      width: 300px;
+    }
+    
+    .diagram-right img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .diagram-placeholder {
+      background: #F5F5F5;
+      border: 2px dashed #9E9E9E;
+      padding: 40px 20px;
+      text-align: center;
+      color: #757575;
+      font-size: 12px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+    
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* MCQ SECTION */
+    .mcq-section {
+      background: #F3E5F5;
+      padding: 12px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    
+    .mcq-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #7B1FA2;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    
+    .mcq {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 8px 0;
+    }
+    
+    .mcq-q {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    
+    .opts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      font-size: 13px;
+    }
+    
+    .ans-key {
+      background: #7B1FA2;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 12px;
+      font-size: 12px;
+    }
+    
+    /* SUMMARY */
+    .summary-box {
+      background: #E3F2FD;
+      padding: 12px;
+      border-radius: 6px;
+      margin: 15px 0;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 12px;
+      border-top: 1px solid #E0E0E0;
+      color: #5F6368;
+      font-size: 11px;
+    }
+    
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 8px;
+    }
+    
+    li {
+      margin: 4px 0;
+    }
+    
+    /* DIVISION TABLE for Prime Factorisation */
+    .div-table {
+      display: inline-block;
+      border-collapse: collapse;
+      margin: 10px 0 10px 20px;
+      font-size: 14px;
+    }
+    .div-table td {
+      padding: 3px 12px;
+      border-left: 1px solid #1976D2;
+      border-bottom: 1px solid #1976D2;
+    }
+    .div-table td:first-child {
+      border-left: none;
+      color: #1976D2;
+      font-weight: 600;
+    }
+    .div-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    @media print {
+      body { padding: 15px; }
+      .question-box, .solution-box { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">JIGUU</div>
+  <div class="subtitle">Complete Maths Solutions - Class 10 (Latest NCERT 2025-26)</div>
+</div>
+
+<h1 class="chapter-title">Chapter 1: Real Numbers</h1>
+<p style="text-align: center;"><span class="class-badge">Class 10 - NCERT</span></p>
+
+<!-- ==================== CHAPTER OPENING SECTIONS ==================== -->
+
+<!-- 1. INTRODUCTION -->
+<div class="intro-section">
+  <div class="intro-title">1. Introduction</div>
+  <p>In Class IX, you explored the world of real numbers and encountered irrational numbers. In this chapter, we continue our discussion on real numbers with two very important properties of positive integers - <strong>Euclid's Division Algorithm</strong> and the <strong>Fundamental Theorem of Arithmetic</strong>. We will use these concepts to find HCF and LCM of numbers, prove the irrationality of numbers like √2, √3, √5, and explore when the decimal expansion of a rational number is terminating or non-terminating repeating.</p>
+</div>
+
+<!-- 2. DEFINITIONS -->
+<div class="definitions-box">
+  <div class="intro-title" style="color: #2E7D32;">2. Definitions</div>
+  <ul>
+    <li><strong>Real Numbers:</strong> The collection of all rational and irrational numbers. Denoted by R.</li>
+    <li><strong>Natural Numbers:</strong> Counting numbers 1, 2, 3, 4, ... Denoted by N.</li>
+    <li><strong>Whole Numbers:</strong> Natural numbers including 0, i.e., 0, 1, 2, 3, ... Denoted by W.</li>
+    <li><strong>Integers:</strong> All positive and negative whole numbers including 0. Denoted by Z.</li>
+    <li><strong>Rational Numbers:</strong> Numbers that can be written in the form <span class="frac"><span class="frac-num">p</span><span class="frac-den">q</span></span> where p and q are integers and q ≠ 0. Denoted by Q.</li>
+    <li><strong>Irrational Numbers:</strong> Numbers that cannot be written in the form <span class="frac"><span class="frac-num">p</span><span class="frac-den">q</span></span>. Examples: √2, √3, π.</li>
+    <li><strong>Prime Numbers:</strong> Numbers greater than 1 with exactly two factors - 1 and itself. Examples: 2, 3, 5, 7, 11...</li>
+    <li><strong>Composite Numbers:</strong> Numbers greater than 1 with more than two factors. Examples: 4, 6, 8, 9...</li>
+    <li><strong>Co-prime Numbers:</strong> Two numbers whose HCF is 1. Example: 15 and 28.</li>
+  </ul>
+</div>
+
+<!-- 3. KEY POINTS -->
+<div class="key-points-box">
+  <div class="intro-title" style="color: #E65100;">3. Key Points</div>
+  <ul>
+    <li>Every composite number can be expressed as a product of primes uniquely (Fundamental Theorem of Arithmetic).</li>
+    <li>HCF = Product of smallest powers of common prime factors.</li>
+    <li>LCM = Product of greatest powers of all prime factors.</li>
+    <li>For any two positive integers a and b: HCF(a, b) × LCM(a, b) = a × b.</li>
+    <li>√2, √3, √5 and √p (where p is prime) are irrational numbers.</li>
+    <li>Sum or difference of a rational and an irrational number is irrational.</li>
+    <li>Product or quotient of a non-zero rational and an irrational number is irrational.</li>
+    <li>If a prime p divides a², then p also divides a.</li>
+  </ul>
+</div>
+
+<!-- 4. FORMULAS USED -->
+<div class="formulas-box">
+  <div class="intro-title" style="color: #7B1FA2;">4. Formulas Used in This Chapter</div>
+  <table style="width: 100%; border-collapse: collapse; margin-top: 8px;">
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Euclid's Division Lemma</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">a = bq + r, where 0 ≤ r < b</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Fundamental Theorem</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">Every composite number = Product of prime factors (unique)</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>HCF × LCM</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">HCF(a, b) × LCM(a, b) = a × b</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>HCF (Prime Factorisation)</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">Product of smallest powers of common prime factors</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>LCM (Prime Factorisation)</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">Product of greatest powers of all prime factors</td>
+    </tr>
+    <tr>
+      <td style="padding: 6px; border: 1px solid #CE93D8;"><strong>Theorem 1.2</strong></td>
+      <td style="padding: 6px; border: 1px solid #CE93D8;">If p divides a², then p divides a (p is prime)</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 5. CRUX OF THE CHAPTER -->
+<div class="crux-box">
+  <div class="intro-title" style="color: #1565C0;">5. Crux of the Chapter</div>
+  <p><strong>Core Concept:</strong> This chapter establishes the foundation of number theory through two theorems - the Fundamental Theorem of Arithmetic ensures every composite number has a unique prime factorisation. This uniqueness is then used to prove irrationality of numbers like √2, √3, √5 using proof by contradiction.</p>
+  <p style="margin-top: 8px;"><strong>Exam Focus:</strong> Questions on prime factorisation, HCF-LCM using prime factorisation method, and proofs of irrationality are frequently asked. Remember: For HCF, take smallest powers; for LCM, take greatest powers.</p>
+</div>
+
+<!-- ==================== EXERCISE 1.1 ==================== -->
+<div class="exercise-header">EXERCISE 1.1</div>
+
+<!-- Q.1 -->
+<div class="question-box">
+  <span class="q-num">Q.1</span> Express each number as a product of its prime factors:
+</div>
+
+<!-- Q.1(i) -->
+<div class="question-box">
+  <span class="q-num">Q.1(i)</span> 140
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <table class="div-table">
+    <tr><td>2</td><td>140</td></tr>
+    <tr><td>2</td><td>70</td></tr>
+    <tr><td>5</td><td>35</td></tr>
+    <tr><td>7</td><td>7</td></tr>
+    <tr><td></td><td>1</td></tr>
+  </table>
+  <div class="step">Hence, <strong>140 = 2 × 2 × 5 × 7 = 2² × 5 × 7</strong></div>
+  <div class="ans">140 = 2² × 5 × 7</div>
+</div>
+
+<!-- Q.1(ii) -->
+<div class="question-box">
+  <span class="q-num">Q.1(ii)</span> 156
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <table class="div-table">
+    <tr><td>2</td><td>156</td></tr>
+    <tr><td>2</td><td>78</td></tr>
+    <tr><td>3</td><td>39</td></tr>
+    <tr><td>13</td><td>13</td></tr>
+    <tr><td></td><td>1</td></tr>
+  </table>
+  <div class="step">Hence, <strong>156 = 2 × 2 × 3 × 13 = 2² × 3 × 13</strong></div>
+  <div class="ans">156 = 2² × 3 × 13</div>
+</div>
+
+<!-- Q.1(iii) -->
+<div class="question-box">
+  <span class="q-num">Q.1(iii)</span> 3825
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <table class="div-table">
+    <tr><td>3</td><td>3825</td></tr>
+    <tr><td>3</td><td>1275</td></tr>
+    <tr><td>5</td><td>425</td></tr>
+    <tr><td>5</td><td>85</td></tr>
+    <tr><td>17</td><td>17</td></tr>
+    <tr><td></td><td>1</td></tr>
+  </table>
+  <div class="step">Hence, <strong>3825 = 3 × 3 × 5 × 5 × 17 = 3² × 5² × 17</strong></div>
+  <div class="ans">3825 = 3² × 5² × 17</div>
+</div>
+
+<!-- Q.1(iv) -->
+<div class="question-box">
+  <span class="q-num">Q.1(iv)</span> 5005
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <table class="div-table">
+    <tr><td>5</td><td>5005</td></tr>
+    <tr><td>7</td><td>1001</td></tr>
+    <tr><td>11</td><td>143</td></tr>
+    <tr><td>13</td><td>13</td></tr>
+    <tr><td></td><td>1</td></tr>
+  </table>
+  <div class="step">Hence, <strong>5005 = 5 × 7 × 11 × 13</strong></div>
+  <div class="ans">5005 = 5 × 7 × 11 × 13</div>
+</div>
+
+<!-- Q.1(v) -->
+<div class="question-box">
+  <span class="q-num">Q.1(v)</span> 7429
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <table class="div-table">
+    <tr><td>17</td><td>7429</td></tr>
+    <tr><td>19</td><td>437</td></tr>
+    <tr><td>23</td><td>23</td></tr>
+    <tr><td></td><td>1</td></tr>
+  </table>
+  <div class="step">Hence, <strong>7429 = 17 × 19 × 23</strong></div>
+  <div class="ans">7429 = 17 × 19 × 23</div>
+</div>
+
+<!-- Q.2 -->
+<div class="question-box">
+  <span class="q-num">Q.2</span> Find the LCM and HCF of the following pairs of integers and verify that LCM × HCF = product of the two numbers.
+</div>
+
+<!-- Q.2(i) -->
+<div class="question-box">
+  <span class="q-num">Q.2(i)</span> 26 and 91
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div style="display: flex; gap: 40px; margin: 10px 0;">
+    <table class="div-table">
+      <tr><td>2</td><td>26</td></tr>
+      <tr><td>13</td><td>13</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>7</td><td>91</td></tr>
+      <tr><td>13</td><td>13</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+  </div>
+  <div class="step">26 = 2 × 13 &nbsp;&nbsp;|&nbsp;&nbsp; 91 = 7 × 13</div>
+  <div class="step">HCF = 13 <span class="formula-ref">Common factor</span></div>
+  <div class="step">LCM = 2 × 7 × 13 = 182 <span class="formula-ref">All prime factors</span></div>
+  <div class="step"><strong>Verification:</strong> LCM × HCF = 182 × 13 = 2366 = 26 × 91 ✓</div>
+  <div class="ans">HCF = 13, LCM = 182 (Verified)</div>
+</div>
+
+<!-- Q.2(ii) -->
+<div class="question-box">
+  <span class="q-num">Q.2(ii)</span> 510 and 92
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div style="display: flex; gap: 40px; margin: 10px 0;">
+    <table class="div-table">
+      <tr><td>2</td><td>510</td></tr>
+      <tr><td>3</td><td>255</td></tr>
+      <tr><td>5</td><td>85</td></tr>
+      <tr><td>17</td><td>17</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>2</td><td>92</td></tr>
+      <tr><td>2</td><td>46</td></tr>
+      <tr><td>23</td><td>23</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+  </div>
+  <div class="step">510 = 2 × 3 × 5 × 17 &nbsp;&nbsp;|&nbsp;&nbsp; 92 = 2² × 23</div>
+  <div class="step">HCF = 2 <span class="formula-ref">Common factor: 2¹</span></div>
+  <div class="step">LCM = 2² × 3 × 5 × 17 × 23 = 23460 <span class="formula-ref">Greatest powers</span></div>
+  <div class="step"><strong>Verification:</strong> LCM × HCF = 23460 × 2 = 46920 = 510 × 92 ✓</div>
+  <div class="ans">HCF = 2, LCM = 23460 (Verified)</div>
+</div>
+
+<!-- Q.2(iii) -->
+<div class="question-box">
+  <span class="q-num">Q.2(iii)</span> 336 and 54
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div style="display: flex; gap: 40px; margin: 10px 0;">
+    <table class="div-table">
+      <tr><td>2</td><td>336</td></tr>
+      <tr><td>2</td><td>168</td></tr>
+      <tr><td>2</td><td>84</td></tr>
+      <tr><td>2</td><td>42</td></tr>
+      <tr><td>3</td><td>21</td></tr>
+      <tr><td>7</td><td>7</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>2</td><td>54</td></tr>
+      <tr><td>3</td><td>27</td></tr>
+      <tr><td>3</td><td>9</td></tr>
+      <tr><td>3</td><td>3</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+  </div>
+  <div class="step">336 = 2⁴ × 3 × 7 &nbsp;&nbsp;|&nbsp;&nbsp; 54 = 2 × 3³</div>
+  <div class="step">HCF = 2¹ × 3¹ = 6 <span class="formula-ref">Smallest powers of common factors</span></div>
+  <div class="step">LCM = 2⁴ × 3³ × 7 = 16 × 27 × 7 = 3024 <span class="formula-ref">Greatest powers</span></div>
+  <div class="step"><strong>Verification:</strong> LCM × HCF = 3024 × 6 = 18144 = 336 × 54 ✓</div>
+  <div class="ans">HCF = 6, LCM = 3024 (Verified)</div>
+</div>
+
+<!-- Q.3 -->
+<div class="question-box">
+  <span class="q-num">Q.3</span> Find the LCM and HCF of the following integers by applying the prime factorisation method.
+</div>
+
+<!-- Q.3(i) -->
+<div class="question-box">
+  <span class="q-num">Q.3(i)</span> 12, 15 and 21
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div style="display: flex; gap: 30px; margin: 10px 0;">
+    <table class="div-table">
+      <tr><td>2</td><td>12</td></tr>
+      <tr><td>2</td><td>6</td></tr>
+      <tr><td>3</td><td>3</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>3</td><td>15</td></tr>
+      <tr><td>5</td><td>5</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>3</td><td>21</td></tr>
+      <tr><td>7</td><td>7</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+  </div>
+  <div class="step">12 = 2² × 3 &nbsp;|&nbsp; 15 = 3 × 5 &nbsp;|&nbsp; 21 = 3 × 7</div>
+  <div class="step">HCF = 3 <span class="formula-ref">Only 3 is common in all</span></div>
+  <div class="step">LCM = 2² × 3 × 5 × 7 = 4 × 3 × 5 × 7 = 420 <span class="formula-ref">Greatest powers</span></div>
+  <div class="ans">HCF = 3, LCM = 420</div>
+</div>
+
+<!-- Q.3(ii) -->
+<div class="question-box">
+  <span class="q-num">Q.3(ii)</span> 17, 23 and 29
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div class="step">17 = 17 (prime number)</div>
+  <div class="step">23 = 23 (prime number)</div>
+  <div class="step">29 = 29 (prime number)</div>
+  <div class="formula-ref-block">All three are prime numbers with no common factors</div>
+  <div class="step">HCF(17, 23, 29) = 1 <span class="formula-ref">No common factor except 1</span></div>
+  <div class="step">LCM(17, 23, 29) = 17 × 23 × 29</div>
+  <div class="step">= 391 × 29 = 11339 <span class="formula-ref">Product of all primes</span></div>
+  <div class="ans">HCF = 1, LCM = 11339</div>
+</div>
+
+<!-- Q.3(iii) -->
+<div class="question-box">
+  <span class="q-num">Q.3(iii)</span> 8, 9 and 25
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div style="display: flex; gap: 30px; margin: 10px 0;">
+    <table class="div-table">
+      <tr><td>2</td><td>8</td></tr>
+      <tr><td>2</td><td>4</td></tr>
+      <tr><td>2</td><td>2</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>3</td><td>9</td></tr>
+      <tr><td>3</td><td>3</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+    <table class="div-table">
+      <tr><td>5</td><td>25</td></tr>
+      <tr><td>5</td><td>5</td></tr>
+      <tr><td></td><td>1</td></tr>
+    </table>
+  </div>
+  <div class="step">8 = 2³ &nbsp;|&nbsp; 9 = 3² &nbsp;|&nbsp; 25 = 5²</div>
+  <div class="step">HCF = 1 <span class="formula-ref">No common prime factor (co-prime)</span></div>
+  <div class="step">LCM = 2³ × 3² × 5² = 8 × 9 × 25 = 1800 <span class="formula-ref">Greatest powers</span></div>
+  <div class="ans">HCF = 1, LCM = 1800</div>
+</div>
+
+<!-- Q.4 -->
+<div class="question-box">
+  <span class="q-num">Q.4</span> Given that HCF(306, 657) = 9, find LCM(306, 657).
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">We know: HCF(a, b) × LCM(a, b) = a × b</div>
+  <div class="formula-ref-block">HCF × LCM = Product of two numbers</div>
+  <div class="step">Given: HCF(306, 657) = 9</div>
+  <div class="step">LCM(306, 657) = (306 × 657) / HCF</div>
+  <div class="step">= (306 × 657) / 9</div>
+  <div class="step">= 201042 / 9</div>
+  <div class="step">= 22338 <span class="formula-ref">LCM = (a × b) / HCF</span></div>
+  <div class="ans">LCM(306, 657) = 22338</div>
+</div>
+
+<!-- Q.5 -->
+<div class="question-box">
+  <span class="q-num">Q.5</span> Check whether 6ⁿ can end with the digit 0 for any natural number n.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">For a number to end with digit 0, it must be divisible by 10.</div>
+  <div class="step">10 = 2 × 5</div>
+  <div class="formula-ref-block">A number ends with 0 only if it has both 2 and 5 as prime factors</div>
+  <div class="step">Now, 6ⁿ = (2 × 3)ⁿ = 2ⁿ × 3ⁿ</div>
+  <div class="step">The prime factorisation of 6ⁿ contains only 2 and 3.</div>
+  <div class="step">There is no factor of 5 in 6ⁿ. <span class="formula-ref">Fundamental Theorem of Arithmetic</span></div>
+  <div class="step">Since 5 is not a factor of 6ⁿ, it cannot end with digit 0.</div>
+  <div class="ans">No, 6ⁿ cannot end with digit 0 for any natural number n.</div>
+</div>
+
+<!-- Q.6 -->
+<div class="question-box">
+  <span class="q-num">Q.6</span> Explain why 7 × 11 × 13 + 13 and 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5 are composite numbers.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step"><strong>For 7 × 11 × 13 + 13:</strong></div>
+  <div class="step">= 13(7 × 11 + 1) <span class="formula-ref">Taking 13 common</span></div>
+  <div class="step">= 13(77 + 1)</div>
+  <div class="step">= 13 × 78</div>
+  <div class="step">= 13 × 78 = 1014</div>
+  <div class="step">Since 1014 = 13 × 78 = 13 × 2 × 3 × 13, it has factors other than 1 and itself.</div>
+  <div class="step">∴ 7 × 11 × 13 + 13 is composite.</div>
+  <div class="step" style="margin-top: 10px;"><strong>For 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5:</strong></div>
+  <div class="step">= 7! + 5 = 5040 + 5 = 5045</div>
+  <div class="step">= 5(7 × 6 × 4 × 3 × 2 × 1 + 1) <span class="formula-ref">Taking 5 common</span></div>
+  <div class="step">= 5(1008 + 1)</div>
+  <div class="step">= 5 × 1009</div>
+  <div class="step">Since 5045 = 5 × 1009, it has factors other than 1 and itself.</div>
+  <div class="ans">Both are composite numbers as they can be expressed as product of factors other than 1 and themselves.</div>
+</div>
+
+<!-- Q.7 -->
+<div class="question-box">
+  <span class="q-num">Q.7</span> There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point?
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Sonia takes 18 minutes for one round.</div>
+  <div class="step">Ravi takes 12 minutes for one round.</div>
+  <div class="step">They will meet again at the starting point after LCM(18, 12) minutes.</div>
+  <div class="formula-ref-block">LCM gives the least time when both complete whole rounds</div>
+  <div class="step">Prime factorisation:</div>
+  <div class="step">18 = 2 × 3²</div>
+  <div class="step">12 = 2² × 3</div>
+  <div class="step">LCM(18, 12) = 2² × 3² = 4 × 9 = 36 <span class="formula-ref">Greatest powers of all primes</span></div>
+  <div class="ans">They will meet again at the starting point after 36 minutes.</div>
+</div>
+
+<!-- ==================== EXERCISE 1.2 ==================== -->
+<div class="exercise-header">EXERCISE 1.2</div>
+
+<!-- Q.1 -->
+<div class="question-box">
+  <span class="q-num">Q.1</span> Prove that √5 is irrational.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Assume √5 is rational.</div>
+  <div class="step">√5 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span> (in lowest form)</div>
+  <div class="step">Squaring:</div>
+  <div class="step">a² = 5b²</div>
+  <div class="step">So a is divisible by 5 → let a = 5k.</div>
+  <div class="step">Substitute:</div>
+  <div class="step">25k² = 5b² ⇒ b² = 5k²</div>
+  <div class="step">So b is also divisible by 5 — contradiction (since fraction was in lowest form).</div>
+  <div class="ans">√5 is irrational.</div>
+</div>
+
+<!-- Q.2 -->
+<div class="question-box">
+  <span class="q-num">Q.2</span> Prove that 3 + 2√5 is irrational.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Assume 3 + 2√5 is rational.</div>
+  <div class="step">Then:</div>
+  <div class="step">2√5 = (3 + 2√5) − 3</div>
+  <div class="step">So 2√5 is rational → divide by 2:</div>
+  <div class="step">√5 is rational</div>
+  <div class="step">But we already know √5 is <strong>irrational</strong>.</div>
+  <div class="step">Contradiction.</div>
+  <div class="ans">3 + 2√5 is irrational.</div>
+</div>
+
+<!-- Q.3 -->
+<div class="question-box">
+  <span class="q-num">Q.3</span> Prove that the following are irrationals:
+</div>
+
+<!-- Q.3(i) -->
+<div class="question-box">
+  <span class="q-num">Q.3(i)</span> <span class="frac"><span class="frac-num">1</span><span class="frac-den">√2</span></span>
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that <span class="frac"><span class="frac-num">1</span><span class="frac-den">√2</span></span> is rational.</div>
+  <div class="step">Then <span class="frac"><span class="frac-num">1</span><span class="frac-den">√2</span></span> = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a, b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Rearranging:</div>
+  <div class="step">√2 = <span class="frac"><span class="frac-num">b</span><span class="frac-den">a</span></span> <span class="formula-ref">Cross multiplying</span></div>
+  <div class="step"><strong>Step 3:</strong> Since a and b are integers, <span class="frac"><span class="frac-num">b</span><span class="frac-den">a</span></span> is rational.</div>
+  <div class="step">This means √2 is rational.</div>
+  <div class="step"><strong>Step 4:</strong> But we know √2 is irrational (Theorem 1.3)!</div>
+  <div class="step">This is a contradiction.</div>
+  <div class="ans">∴ <span class="frac"><span class="frac-num">1</span><span class="frac-den">√2</span></span> is irrational. (Hence Proved)</div>
+</div>
+
+<!-- Q.3(ii) -->
+<div class="question-box">
+  <span class="q-num">Q.3(ii)</span> 7√5
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that 7√5 is rational.</div>
+  <div class="step">Then 7√5 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a, b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Rearranging:</div>
+  <div class="step">√5 = a/(7b) <span class="formula-ref">Dividing both sides by 7</span></div>
+  <div class="step"><strong>Step 3:</strong> Since a, b are integers and 7 is an integer, a/(7b) is rational.</div>
+  <div class="step">This means √5 is rational.</div>
+  <div class="step"><strong>Step 4:</strong> But we know √5 is irrational (proved in Q.1)!</div>
+  <div class="step">This is a contradiction.</div>
+  <div class="ans">∴ 7√5 is irrational. (Hence Proved)</div>
+</div>
+
+<!-- Q.3(iii) -->
+<div class="question-box">
+  <span class="q-num">Q.3(iii)</span> 6 + √2
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that 6 + √2 is rational.</div>
+  <div class="step">Then 6 + √2 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a, b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Rearranging:</div>
+  <div class="step">√2 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span> - 6</div>
+  <div class="step">√2 = (a - 6b)/b <span class="formula-ref">Isolating √2</span></div>
+  <div class="step"><strong>Step 3:</strong> Since a and b are integers, (a - 6b)/b is rational.</div>
+  <div class="step">This means √2 is rational.</div>
+  <div class="step"><strong>Step 4:</strong> But we know √2 is irrational (Theorem 1.3)!</div>
+  <div class="step">This is a contradiction.</div>
+  <div class="ans">∴ 6 + √2 is irrational. (Hence Proved)</div>
+</div>
+
+<!-- ==================== EXAMPLES FROM NCERT ==================== -->
+<div class="example-header">NCERT TEXTBOOK EXAMPLES</div>
+
+<!-- Example 1 -->
+<div class="question-box">
+  <span class="q-num">Example 1</span> Consider the numbers 4ⁿ, where n is a natural number. Check whether there is any value of n for which 4ⁿ ends with the digit zero.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">For a number to end with digit 0, it must be divisible by 10.</div>
+  <div class="step">10 = 2 × 5</div>
+  <div class="formula-ref-block">Fundamental Theorem of Arithmetic</div>
+  <div class="step">Now, 4ⁿ = (2²)ⁿ = 2²ⁿ</div>
+  <div class="step">The prime factorisation of 4ⁿ contains only 2.</div>
+  <div class="step">There is no factor of 5 in 4ⁿ. <span class="formula-ref">Uniqueness of Prime Factorisation</span></div>
+  <div class="step">Since 5 is not a factor of 4ⁿ, it cannot be divisible by 10.</div>
+  <div class="ans">No, 4ⁿ cannot end with digit 0 for any natural number n.</div>
+</div>
+
+<!-- Example 2 -->
+<div class="question-box">
+  <span class="q-num">Example 2</span> Find the LCM and HCF of 6 and 20 by the prime factorisation method.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div class="step">6 = 2¹ × 3¹</div>
+  <div class="step">20 = 2² × 5¹</div>
+  <div class="formula-ref-block">HCF = Product of smallest powers of common factors</div>
+  <div class="step">HCF(6, 20) = 2¹ = 2 <span class="formula-ref">Only 2 is common</span></div>
+  <div class="formula-ref-block">LCM = Product of greatest powers of all factors</div>
+  <div class="step">LCM(6, 20) = 2² × 3¹ × 5¹ = 4 × 3 × 5 = 60 <span class="formula-ref">Greatest powers</span></div>
+  <div class="ans">HCF = 2, LCM = 60</div>
+</div>
+
+<!-- Example 3 -->
+<div class="question-box">
+  <span class="q-num">Example 3</span> Find the HCF of 96 and 404 by the prime factorisation method. Hence, find their LCM.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div class="step">96 = 2⁵ × 3</div>
+  <div class="step">404 = 2² × 101</div>
+  <div class="formula-ref-block">HCF = Product of smallest powers of common factors</div>
+  <div class="step">HCF(96, 404) = 2² = 4 <span class="formula-ref">Common factor: 2²</span></div>
+  <div class="step">Using: HCF × LCM = Product of numbers</div>
+  <div class="step">LCM = (96 × 404) / 4 = 38784 / 4 = 9696 <span class="formula-ref">LCM = (a × b) / HCF</span></div>
+  <div class="ans">HCF = 4, LCM = 9696</div>
+</div>
+
+<!-- Example 4 -->
+<div class="question-box">
+  <span class="q-num">Example 4</span> Find the HCF and LCM of 6, 72 and 120, using the prime factorisation method.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution:</div>
+  <div class="step">Prime factorisation:</div>
+  <div class="step">6 = 2 × 3</div>
+  <div class="step">72 = 2³ × 3²</div>
+  <div class="step">120 = 2³ × 3 × 5</div>
+  <div class="formula-ref-block">HCF = Product of smallest powers of common factors</div>
+  <div class="step">Common factors: 2 and 3</div>
+  <div class="step">HCF(6, 72, 120) = 2¹ × 3¹ = 6 <span class="formula-ref">Smallest powers: 2¹, 3¹</span></div>
+  <div class="formula-ref-block">LCM = Product of greatest powers of all factors</div>
+  <div class="step">LCM(6, 72, 120) = 2³ × 3² × 5¹ = 8 × 9 × 5 = 360 <span class="formula-ref">Greatest powers</span></div>
+  <div class="ans">HCF = 6, LCM = 360</div>
+</div>
+
+<!-- Example 5 -->
+<div class="question-box">
+  <span class="q-num">Example 5</span> Prove that √3 is irrational.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that √3 is rational.</div>
+  <div class="step">Then √3 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a and b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Squaring both sides:</div>
+  <div class="step">3 = <span class="frac"><span class="frac-num">a²</span><span class="frac-den">b²</span></span></div>
+  <div class="step">∴ 3b² = a² <span class="formula-ref">Cross multiplying</span></div>
+  <div class="step">This means 3 divides a².</div>
+  <div class="step"><strong>Step 3:</strong> By Theorem 1.2, if 3 divides a², then 3 divides a.</div>
+  <div class="step">So we can write a = 3c for some integer c.</div>
+  <div class="step"><strong>Step 4:</strong> Substituting a = 3c in 3b² = a²:</div>
+  <div class="step">3b² = 9c²</div>
+  <div class="step">∴ b² = 3c² <span class="formula-ref">Dividing by 3</span></div>
+  <div class="step">This means 3 divides b².</div>
+  <div class="step">∴ 3 divides b (by Theorem 1.2)</div>
+  <div class="step"><strong>Step 5:</strong> So 3 divides both a and b.</div>
+  <div class="step">But this contradicts that a and b are coprime!</div>
+  <div class="ans">∴ √3 is irrational. (Hence Proved)</div>
+</div>
+
+<!-- Example 6 -->
+<div class="question-box">
+  <span class="q-num">Example 6</span> Show that 5 - √3 is irrational.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that 5 - √3 is rational.</div>
+  <div class="step">Then 5 - √3 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a, b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Rearranging:</div>
+  <div class="step">√3 = 5 - <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span> = (5b - a)/b <span class="formula-ref">Isolating √3</span></div>
+  <div class="step"><strong>Step 3:</strong> Since a and b are integers, (5b - a)/b is rational.</div>
+  <div class="step">This means √3 is rational.</div>
+  <div class="step"><strong>Step 4:</strong> But we know √3 is irrational!</div>
+  <div class="step">This is a contradiction.</div>
+  <div class="ans">∴ 5 - √3 is irrational. (Hence Proved)</div>
+</div>
+
+<!-- Example 7 -->
+<div class="question-box">
+  <span class="q-num">Example 7</span> Show that 3√2 is irrational.
+</div>
+<div class="solution-box">
+  <div class="sol-label">Solution (Proof by Contradiction):</div>
+  <div class="step"><strong>Step 1:</strong> Assume, to the contrary, that 3√2 is rational.</div>
+  <div class="step">Then 3√2 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span>, where a, b are coprime integers, b ≠ 0.</div>
+  <div class="formula-ref-block">Proof by Contradiction Method</div>
+  <div class="step"><strong>Step 2:</strong> Rearranging:</div>
+  <div class="step">√2 = a/(3b) <span class="formula-ref">Dividing by 3</span></div>
+  <div class="step"><strong>Step 3:</strong> Since a, b are integers and 3 is an integer, a/(3b) is rational.</div>
+  <div class="step">This means √2 is rational.</div>
+  <div class="step"><strong>Step 4:</strong> But we know √2 is irrational (Theorem 1.3)!</div>
+  <div class="step">This is a contradiction.</div>
+  <div class="ans">∴ 3√2 is irrational. (Hence Proved)</div>
+</div>
+
+<!-- ==================== THEOREMS SECTION ==================== -->
+<div class="exercise-header" style="background: #9C27B0;">IMPORTANT THEOREMS</div>
+
+<!-- Theorem 1.1 -->
+<div class="question-box">
+  <span class="q-num">Theorem 1.1</span> (Euclid's Division Lemma)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Statement:</div>
+  <div class="step">For any positive integers a and b, there exist unique integers q and r such that:</div>
+  <div class="step" style="text-align: center; font-size: 16px;"><strong>a = bq + r</strong>, where 0 ≤ r < b</div>
+  <div class="step" style="margin-top: 8px;"><strong>Simple Meaning:</strong></div>
+  <div class="step">When we divide a by b, we get quotient q and remainder r.</div>
+  <div class="step">Remainder is always less than divisor (r < b).</div>
+  <div class="step" style="margin-top: 8px;"><strong>Example:</strong> 17 = 5 × 3 + 2 (here a=17, b=5, q=3, r=2)</div>
+</div>
+
+<!-- Theorem 1.2 -->
+<div class="question-box">
+  <span class="q-num">Theorem 1.2</span> (Prime Factor Property)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Statement:</div>
+  <div class="step">If p is a prime number and p divides a², then p divides a.</div>
+  <div class="step" style="margin-top: 8px;"><strong>Proof:</strong></div>
+  <div class="step">Let a = p₁ × p₂ × ... × pₙ (prime factorisation)</div>
+  <div class="step">Then a² = p₁² × p₂² × ... × pₙ²</div>
+  <div class="step">If prime p divides a², then p must be one of p₁, p₂, ..., pₙ</div>
+  <div class="step">∴ p divides a.</div>
+  <div class="step" style="margin-top: 8px;"><strong>Example:</strong> If 5 divides 15², then 5 divides 15 ✓</div>
+</div>
+
+<!-- Theorem 1.3 -->
+<div class="question-box">
+  <span class="q-num">Theorem 1.3</span> (Irrationality of √2)
+</div>
+<div class="solution-box">
+  <div class="sol-label">Statement:</div>
+  <div class="step">√2 is irrational.</div>
+  <div class="step" style="margin-top: 8px;"><strong>Proof:</strong></div>
+  <div class="step">Assume √2 is rational.</div>
+  <div class="step">√2 = <span class="frac"><span class="frac-num">a</span><span class="frac-den">b</span></span> (in lowest form)</div>
+  <div class="step">Squaring: 2 = <span class="frac"><span class="frac-num">a²</span><span class="frac-den">b²</span></span> → a² = 2b²</div>
+  <div class="step">So 2 divides a² → 2 divides a. Let a = 2k.</div>
+  <div class="step">Then 4k² = 2b² → b² = 2k²</div>
+  <div class="step">So 2 divides b² → 2 divides b.</div>
+  <div class="step">But then 2 divides both a and b — contradiction!</div>
+  <div class="ans">∴ √2 is irrational.</div>
+</div>
+
+<!-- ==================== MCQ SECTION ==================== -->
+<div class="mcq-section">
+  <div class="mcq-title">Important MCQs for Practice</div>
+  
+  <div class="mcq">
+    <div class="mcq-q">1. The HCF of 96 and 404 is:</div>
+    <div class="opts">
+      <div>(a) 4</div>
+      <div>(b) 2</div>
+      <div>(c) 8</div>
+      <div>(d) 12</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">2. If two positive integers a and b are written as a = x³y² and b = xy³, where x, y are prime numbers, then HCF(a, b) is:</div>
+    <div class="opts">
+      <div>(a) xy</div>
+      <div>(b) xy²</div>
+      <div>(c) x³y³</div>
+      <div>(d) x²y²</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">3. The LCM of smallest two-digit composite number and smallest composite number is:</div>
+    <div class="opts">
+      <div>(a) 12</div>
+      <div>(b) 20</div>
+      <div>(c) 4</div>
+      <div>(d) 44</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">4. For any two positive integers a and b, HCF(a, b) × LCM(a, b) =</div>
+    <div class="opts">
+      <div>(a) a + b</div>
+      <div>(b) a - b</div>
+      <div>(c) a × b</div>
+      <div>(d) a / b</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">5. √2 is:</div>
+    <div class="opts">
+      <div>(a) A rational number</div>
+      <div>(b) An irrational number</div>
+      <div>(c) A natural number</div>
+      <div>(d) A whole number</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">6. 7 × 11 × 13 + 13 is:</div>
+    <div class="opts">
+      <div>(a) A prime number</div>
+      <div>(b) A composite number</div>
+      <div>(c) An irrational number</div>
+      <div>(d) None of these</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">7. The HCF of two co-prime numbers is:</div>
+    <div class="opts">
+      <div>(a) 0</div>
+      <div>(b) 1</div>
+      <div>(c) The smaller number</div>
+      <div>(d) The larger number</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">8. If p is a prime number, then √p is:</div>
+    <div class="opts">
+      <div>(a) Rational</div>
+      <div>(b) Irrational</div>
+      <div>(c) Natural number</div>
+      <div>(d) Composite number</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">9. The product of a non-zero rational and an irrational number is:</div>
+    <div class="opts">
+      <div>(a) Always irrational</div>
+      <div>(b) Always rational</div>
+      <div>(c) Rational or irrational</div>
+      <div>(d) One</div>
+    </div>
+  </div>
+  
+  <div class="mcq">
+    <div class="mcq-q">10. The LCM of 12, 15 and 21 is:</div>
+    <div class="opts">
+      <div>(a) 60</div>
+      <div>(b) 84</div>
+      <div>(c) 420</div>
+      <div>(d) 180</div>
+    </div>
+  </div>
+  
+  <!-- ANSWER KEY -->
+  <div class="ans-key">
+    <strong>Answer Key:</strong> 1.(a) 2.(b) 3.(b) 4.(c) 5.(b) 6.(b) 7.(b) 8.(b) 9.(a) 10.(c)
+  </div>
+</div>
+
+<!-- ==================== SUMMARY ==================== -->
+<div class="summary-box">
+  <h3 style="margin-bottom: 8px; color: #1565C0;">Chapter Summary</h3>
+  <p><strong>1.</strong> The Fundamental Theorem of Arithmetic: Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur.</p>
+  <p><strong>2.</strong> If p is a prime and p divides a², then p divides a, where a is a positive integer.</p>
+  <p><strong>3.</strong> √2, √3, √5 are irrational numbers (proved using contradiction).</p>
+  <p><strong>4.</strong> HCF of two or more numbers = Product of smallest powers of common prime factors.</p>
+  <p><strong>5.</strong> LCM of two or more numbers = Product of greatest powers of all prime factors.</p>
+  <p><strong>6.</strong> For any two positive integers a and b: HCF(a, b) × LCM(a, b) = a × b.</p>
+  <p><strong>7.</strong> Sum or difference of a rational and an irrational number is irrational.</p>
+  <p><strong>8.</strong> Product or quotient of a non-zero rational and an irrational number is irrational.</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p><strong>JIGUU - Complete Maths Solutions</strong></p>
+  <p>Class 10 - Chapter 1: Real Numbers</p>
+  <p>Based on Latest NCERT 2025-26 Syllabus</p>
+  <p style="margin-top: 8px;">© JIGUU - All Rights Reserved</p>
+</div>
+
+</body>
+</html>
