@@ -11,9 +11,10 @@ interface ChapterCardProps {
   color?: string;
   onPress?: () => void;
   testID?: string;
+  isAvailable?: boolean;
 }
 
-export const ChapterCard = memo(function ChapterCard({ number, name, color = JiguuColors.realNumbers, onPress, testID }: ChapterCardProps) {
+export const ChapterCard = memo(function ChapterCard({ number, name, color = JiguuColors.realNumbers, onPress, testID, isAvailable = true }: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
 
   const handlePressIn = useCallback(() => {
@@ -34,21 +35,30 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
   return (
     <Pressable
       testID={testID}
-      onPress={handlePress}
-      onPressIn={handlePressIn}
-      onPressOut={handlePressOut}
-      style={[styles.card, isPressed && styles.cardPressed]}
+      onPress={isAvailable ? handlePress : undefined}
+      onPressIn={isAvailable ? handlePressIn : undefined}
+      onPressOut={isAvailable ? handlePressOut : undefined}
+      style={[styles.card, isPressed && styles.cardPressed, !isAvailable && styles.cardDisabled]}
     >
-      <View style={[styles.numberContainer, { backgroundColor: color }]}>
+      <View style={[styles.numberContainer, { backgroundColor: color }, !isAvailable && styles.numberDisabled]}>
         <ThemedText style={styles.number}>{number}</ThemedText>
       </View>
-      <ThemedText style={styles.name} numberOfLines={2}>
-        {name}
-      </ThemedText>
-      <View style={styles.chevronIcon}>
-        <View style={styles.chevronTop} />
-        <View style={styles.chevronBottom} />
+      <View style={styles.nameContainer}>
+        <ThemedText style={[styles.name, !isAvailable && styles.nameDisabled]} numberOfLines={2}>
+          {name}
+        </ThemedText>
+        {!isAvailable ? (
+          <View style={styles.comingSoonBadge}>
+            <ThemedText style={styles.comingSoonText}>Coming Soon</ThemedText>
+          </View>
+        ) : null}
       </View>
+      {isAvailable ? (
+        <View style={styles.chevronIcon}>
+          <View style={styles.chevronTop} />
+          <View style={styles.chevronBottom} />
+        </View>
+      ) : null}
     </Pressable>
   );
 });
@@ -66,6 +76,9 @@ const styles = StyleSheet.create({
     opacity: 0.85,
     transform: [{ scale: 0.98 }],
   },
+  cardDisabled: {
+    opacity: 0.6,
+  },
   numberContainer: {
     width: 32,
     height: 32,
@@ -79,11 +92,32 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: JiguuColors.textOnColor,
   },
+  numberDisabled: {
+    opacity: 0.5,
+  },
+  nameContainer: {
+    flex: 1,
+  },
   name: {
     ...Typography.body,
-    flex: 1,
     color: JiguuColors.textPrimary,
     fontWeight: "600",
+  },
+  nameDisabled: {
+    color: JiguuColors.textSecondary,
+  },
+  comingSoonBadge: {
+    backgroundColor: JiguuColors.border,
+    paddingHorizontal: Spacing.sm,
+    paddingVertical: 2,
+    borderRadius: BorderRadius.xs,
+    alignSelf: "flex-start",
+    marginTop: Spacing.xs,
+  },
+  comingSoonText: {
+    ...Typography.caption,
+    color: JiguuColors.textSecondary,
+    fontFamily: "Nunito_600SemiBold",
   },
   chevronIcon: {
     width: 12,
