@@ -1,3 +1,4 @@
+import { memo, useMemo } from "react";
 import { Text, type TextProps } from "react-native";
 
 import { useTheme } from "@/hooks/useTheme";
@@ -9,7 +10,7 @@ export type ThemedTextProps = TextProps & {
   type?: "h1" | "h2" | "h3" | "h4" | "body" | "small" | "link";
 };
 
-export function ThemedText({
+export const ThemedText = memo(function ThemedText({
   style,
   lightColor,
   darkColor,
@@ -18,23 +19,20 @@ export function ThemedText({
 }: ThemedTextProps) {
   const { theme, isDark } = useTheme();
 
-  const getColor = () => {
+  const color = useMemo(() => {
     if (isDark && darkColor) {
       return darkColor;
     }
-
     if (!isDark && lightColor) {
       return lightColor;
     }
-
     if (type === "link") {
       return theme.link;
     }
-
     return theme.text;
-  };
+  }, [isDark, darkColor, lightColor, type, theme.link, theme.text]);
 
-  const getTypeStyle = () => {
+  const typeStyle = useMemo(() => {
     switch (type) {
       case "h1":
         return Typography.h1;
@@ -53,9 +51,9 @@ export function ThemedText({
       default:
         return Typography.body;
     }
-  };
+  }, [type]);
 
   return (
-    <Text style={[{ color: getColor() }, getTypeStyle(), style]} {...rest} />
+    <Text style={[{ color }, typeStyle, style]} {...rest} />
   );
-}
+});
