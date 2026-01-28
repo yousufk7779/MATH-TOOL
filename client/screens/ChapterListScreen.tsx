@@ -39,11 +39,7 @@ function ChapterListScreen() {
   }, [navigation]);
 
   const renderHeader = useCallback(() => (
-    <View style={styles.header}>
-      <ThemedText style={[styles.title, { color: JiguuColors.quadraticEquations }]}>
-        Class 10 - NCERT Chapters
-      </ThemedText>
-    </View>
+    <View style={styles.header} />
   ), []);
 
   const renderEmptyState = useCallback(() => (
@@ -85,11 +81,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   header: {
-    marginBottom: Spacing.xl,
-    alignItems: "center",
-  },
-  title: {
-    ...Typography.h2,
+    marginBottom: Spacing.md,
   },
   separator: {
     height: Spacing.md,
