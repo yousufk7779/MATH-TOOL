@@ -1,10 +1,19 @@
 import React, { memo, useState } from "react";
-import { StyleSheet, View, Pressable } from "react-native";
+import { StyleSheet, View, Pressable, Image } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/chapterContent";
+
+const graphImages: Record<string, any> = {
+  "graph_ex2_1_q1_a": require("../../../assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
+  "graph_ex2_1_q1_b": require("../../../assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
+  "graph_ex2_1_q1_c": require("../../../assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
+  "graph_ex2_1_q1_d": require("../../../assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
+  "graph_ex2_1_q1_e": require("../../../assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
+  "graph_ex2_1_q1_f": require("../../../assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
+};
 
 interface QuestionCardProps {
   question: Question;
@@ -43,6 +52,15 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }
 
       {isExpanded ? (
         <View style={styles.solutionBox}>
+          {question.image && graphImages[question.image] ? (
+            <View style={styles.imageContainer}>
+              <Image
+                source={graphImages[question.image]}
+                style={styles.graphImage}
+                resizeMode="contain"
+              />
+            </View>
+          ) : null}
           <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
           {question.solution.map((step, index) => (
             <View key={index} style={styles.stepRow}>
@@ -137,5 +155,18 @@ const styles = StyleSheet.create({
     fontFamily: "Nunito_700Bold",
     color: "#4CAF50",
     textAlign: "justify",
+  },
+  imageContainer: {
+    alignItems: "center",
+    marginBottom: Spacing.md,
+    marginTop: Spacing.sm,
+    backgroundColor: "#FFFFFF",
+    borderRadius: BorderRadius.sm,
+    padding: Spacing.sm,
+  },
+  graphImage: {
+    width: "100%",
+    height: 200,
+    borderRadius: BorderRadius.xs,
   },
 });

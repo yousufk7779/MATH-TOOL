@@ -14,6 +14,7 @@ export interface Question {
   question: string;
   solution: string[];
   answer: string;
+  image?: string;
 }
 
 export interface Exercise {
@@ -491,6 +492,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since there is no intersection with x-axis, there are no zeroes.",
             ],
             answer: "Number of zeroes = 0",
+            image: "graph_ex2_1_q1_a",
           },
           {
             id: "q2.1.1ii",
@@ -502,6 +504,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since the graph touches x-axis at one point, there is one zero.",
             ],
             answer: "Number of zeroes = 1",
+            image: "graph_ex2_1_q1_b",
           },
           {
             id: "q2.1.1iii",
@@ -513,6 +516,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since the graph crosses x-axis at three points, there are three zeroes.",
             ],
             answer: "Number of zeroes = 3",
+            image: "graph_ex2_1_q1_c",
           },
           {
             id: "q2.1.1iv",
@@ -524,6 +528,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since the graph touches x-axis at one point (two equal zeroes), there are 2 zeroes.",
             ],
             answer: "Number of zeroes = 2",
+            image: "graph_ex2_1_q1_d",
           },
           {
             id: "q2.1.1v",
@@ -535,6 +540,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since the graph crosses x-axis at four points, there are four zeroes.",
             ],
             answer: "Number of zeroes = 4",
+            image: "graph_ex2_1_q1_e",
           },
           {
             id: "q2.1.1vi",
@@ -546,6 +552,7 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Since the graph crosses x-axis at three points, there are three zeroes.",
             ],
             answer: "Number of zeroes = 3",
+            image: "graph_ex2_1_q1_f",
           },
         ],
       },
