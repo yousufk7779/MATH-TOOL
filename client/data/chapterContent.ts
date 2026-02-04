@@ -646,7 +646,6 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph (straight line parallel to x-axis).",
             solution: [
               "The graph is a straight line parallel to the x-axis.",
-              "It does not intersect the x-axis at any point. [Zero = x-intercept]",
               "Since there is no intersection with x-axis, there are no zeroes.",
             ],
             answer: "Number of zeroes = 0",
@@ -658,7 +657,6 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph.",
             solution: [
               "The graph is a parabola opening downwards.",
-              "It intersects the x-axis at exactly one point. [Zero = x-intercept]",
               "Since the graph touches x-axis at one point, there is one zero.",
             ],
             answer: "Number of zeroes = 1",
@@ -670,8 +668,7 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph.",
             solution: [
               "The graph is a parabola opening upwards.",
-              "It intersects the x-axis at exactly two points. [Zero = x-intercept]",
-              "Since the graph crosses x-axis at two points, there are two zeroes.",
+              "Since the graph intersects x-axis at two points, there are two zeroes.",
             ],
             answer: "Number of zeroes = 2",
             image: "graph_ex2_1_q1_c",
@@ -682,8 +679,7 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph.",
             solution: [
               "The graph is a polynomial curve.",
-              "It intersects the x-axis at exactly two points. [Zero = x-intercept]",
-              "Since the graph crosses x-axis at two points, there are two zeroes.",
+              "Since the graph intersects x-axis at two points, there are two zeroes.",
             ],
             answer: "Number of zeroes = 2",
             image: "graph_ex2_1_q1_d",
@@ -694,8 +690,7 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph.",
             solution: [
               "The graph is a polynomial curve.",
-              "It intersects the x-axis at exactly four points. [Zero = x-intercept]",
-              "Since the graph crosses x-axis at four points, there are four zeroes.",
+              "Since the graph intersects x-axis at four points, there are four zeroes.",
             ],
             answer: "Number of zeroes = 4",
             image: "graph_ex2_1_q1_e",
@@ -706,8 +701,7 @@ export const chapterContents: Record<string, ChapterContent> = {
             question: "Find the number of zeroes from the graph.",
             solution: [
               "The graph is a polynomial curve with multiple turns.",
-              "It intersects the x-axis at exactly three points. [Zero = x-intercept]",
-              "Since the graph crosses x-axis at three points, there are three zeroes.",
+              "Since the graph intersects x-axis at three points, there are three zeroes.",
             ],
             answer: "Number of zeroes = 3",
             image: "graph_ex2_1_q1_f",
@@ -1141,7 +1135,8 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Adding both equations: 2x = 14 → x = 7",
               "Substituting x = 7: 7 + y = 10 → y = 3",
             ],
-            answer: "Number of girls = 7, Number of boys = 3",
+            answer: "Number of girls = 7, Number of boys = 3",		
+		
           },
           {
             id: "q3.1.1ii",
