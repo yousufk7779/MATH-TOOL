@@ -17,11 +17,11 @@ function HomeScreen() {
 
   return (
     <ScreenWrapper>
-      <ScrollView 
+      <ScrollView
         style={styles.scrollView}
         contentContainerStyle={[
           styles.content,
-          { 
+          {
             paddingTop: isLandscape ? Spacing.md : 0,
             paddingBottom: isLandscape ? 100 : 100,
             marginTop: isLandscape ? 0 : -20,
@@ -56,6 +56,15 @@ function HomeScreen() {
               title="News & Events"
               color={JiguuColors.newsEvents}
               onPress={() => navigation.navigate("NewsEvents")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-quiz"
+              title="Practice Quiz"
+              color={JiguuColors.accent2}
+              onPress={() => navigation.navigate("Quiz")}
             />
           </View>
 
