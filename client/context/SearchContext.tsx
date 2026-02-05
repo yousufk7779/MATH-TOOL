@@ -1,7 +1,6 @@
-import React, { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
-import { useSpeechRecognitionEvent, useSpeechRecognitionEventNames, ExpoSpeechRecognitionModule } from "expo-speech-recognition";
+import React, { createContext, useContext, useState, ReactNode, useEffect, useCallback } from "react";
+import { Alert } from "react-native";
 import { search, SearchResult, buildSearchIndex } from "@/utils/search-engine";
-import { Alert, PermissionsAndroid, Platform } from "react-native";
 
 interface SearchContextType {
     query: string;
@@ -19,6 +18,7 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState<SearchResult[]>([]);
     const [isListening, setIsListening] = useState(false);
+    // Voice Disabled for stability in Expo Go
     const [isAvailable, setIsAvailable] = useState(false);
 
     // Initialize Index
@@ -34,49 +34,13 @@ export function SearchProvider({ children }: { children: ReactNode }) {
         return () => clearTimeout(timeOutId);
     }, [query]);
 
-    // Voice Recognition Events
-    useSpeechRecognitionEvent("start", () => setIsListening(true));
-    useSpeechRecognitionEvent("end", () => setIsListening(false));
-    useSpeechRecognitionEvent("result", (event) => {
-        const transcript = event.results[0]?.transcript;
-        if (transcript) {
-            setQuery(transcript);
-            setIsListening(false);
-        }
-    });
-    useSpeechRecognitionEvent('error', (event) => {
-        console.log('Voice error:', event.error, event.message);
-        setIsListening(false);
-    });
-
-    // Request Permissions & Check Availability implementation
-    const startVoiceSearch = useCallback(async () => {
-        try {
-            const result = await ExpoSpeechRecognitionModule.requestPermissionsAsync();
-            if (!result.granted) {
-                Alert.alert("Permission Denied", "Microphone access is needed for voice search.");
-                return;
-            }
-
-            ExpoSpeechRecognitionModule.start({
-                lang: "en-US",
-                interimResults: true,
-                maxAlternatives: 1,
-                continuous: false,
-                requiresOnDeviceRecognition: false,
-                addsPunctuation: false,
-            });
-        } catch (e) {
-            console.error("Failed to start voice search", e);
-        }
+    const startVoiceSearch = useCallback(() => {
+        Alert.alert("Voice Search", "Voice search works best in a development build. This feature is currently disabled in Expo Go.");
+        // setIsListening(true); // Uncomment when native module is available
     }, []);
 
     const stopVoiceSearch = useCallback(() => {
-        try {
-            ExpoSpeechRecognitionModule.stop();
-        } catch (e) {
-            // ignore
-        }
+        setIsListening(false);
     }, []);
 
     return (
