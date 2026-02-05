@@ -16,8 +16,9 @@ export const StaticHeader = memo(function StaticHeader() {
     <View style={[
       styles.container,
       {
-        paddingTop: isLandscape ? insets.top + Spacing.xs : insets.top + Spacing.md,
-        paddingBottom: Spacing.md,
+        paddingTop: isLandscape ? insets.top + 2 : insets.top + Spacing.md,
+        paddingBottom: isLandscape ? Spacing.xs : Spacing.md,
+        height: isLandscape ? 80 : undefined, // Force shorter height in landscape
       }
     ]}>
       <View style={styles.logoContainer}>

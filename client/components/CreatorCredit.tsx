@@ -14,17 +14,17 @@ export const CreatorCredit = memo(function CreatorCredit() {
 
   return (
     <View style={[
-      styles.container, 
-      { 
+      styles.container,
+      {
         paddingBottom: isLandscape ? insets.bottom + 2 : insets.bottom + Spacing.sm,
         paddingTop: isLandscape ? 4 : Spacing.md,
       }
     ]}>
       <View style={[styles.photoWrapper, isLandscape && styles.photoWrapperLandscape]}>
-        <Image 
-          source={sameerPhoto} 
-          style={[styles.photo, isLandscape && styles.photoLandscape]} 
-          resizeMode="cover" 
+        <Image
+          source={sameerPhoto}
+          style={[styles.photo, isLandscape && styles.photoLandscape]}
+          resizeMode="cover"
         />
       </View>
       <View style={styles.textContainer}>
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...Typography.caption,
-    color: JiguuColors.quadraticEquations,
+    color: JiguuColors.accent2,
     fontWeight: "600",
     lineHeight: 16,
   },

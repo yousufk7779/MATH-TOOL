@@ -8,7 +8,7 @@ export interface Chapter {
 export const class10Chapters: Chapter[] = [
   { id: "ch1-real-numbers", number: 1, name: "Real Numbers", color: "#FF6B6B" },
   { id: "ch2-polynomials", number: 2, name: "Polynomials", color: "#FFA726" },
-  { id: "ch3-linear-equations", number: 3, name: "Pair of Linear Equations in Two Variables", color: "#00BCD4" },
+  { id: "ch3-linear-equations", number: 3, name: "Pair of Linear Equations", color: "#00BCD4" },
   { id: "ch4-quadratic-equations", number: 4, name: "Quadratic Equations", color: "#7C4DFF" },
   { id: "ch5-arithmetic-progressions", number: 5, name: "Arithmetic Progressions", color: "#4CAF50" },
   { id: "ch6-triangles", number: 6, name: "Triangles", color: "#E91E63" },

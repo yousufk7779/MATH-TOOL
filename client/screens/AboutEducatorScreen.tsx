@@ -29,7 +29,7 @@ function AboutEducatorScreen() {
               />
             </View>
             <ThemedText style={styles.name}>Sameer Khan</ThemedText>
-            <ThemedText style={styles.role}>Mathematics Educator (B.Sc, B.Ed)</ThemedText>
+            <ThemedText style={styles.role}>Educator (MCA, B.Ed)</ThemedText>
             <ThemedText style={styles.bio}>
               "Mathematics is not just about numbers, it's about logic and understanding."
               With over 10 years of experience, Sameer Sir has helped thousands of students master NCERT concepts with ease.
@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
     height: 140,
     borderRadius: 70,
     overflow: "hidden",
+    marginTop: Spacing.md, // Move photo down
     marginBottom: Spacing.md,
     borderWidth: 4,
     borderColor: JiguuColors.accent1,

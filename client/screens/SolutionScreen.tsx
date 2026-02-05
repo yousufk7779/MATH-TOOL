@@ -660,7 +660,8 @@ const styles = StyleSheet.create({
   questionButtonsGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: Spacing.sm,
+    gap: Spacing.md,
+    justifyContent: "center", // Center grid items
     marginBottom: Spacing.lg,
   },
   questionButton: {

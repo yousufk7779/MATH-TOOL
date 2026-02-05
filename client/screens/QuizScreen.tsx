@@ -443,13 +443,13 @@ const styles = StyleSheet.create({
         marginTop: "auto",
     },
     actionButton: {
-        backgroundColor: JiguuColors.accent1,
+        backgroundColor: JiguuColors.accent2, // Changed to Pink
         paddingVertical: Spacing.md,
         borderRadius: BorderRadius.lg,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: Spacing["4xl"], // Significantly increased to float button up deeply
+        marginBottom: Spacing["5xl"], // Increased further to float button up
     },
     disabledButton: {
         opacity: 0.5,
@@ -473,12 +473,12 @@ const styles = StyleSheet.create({
     resultScoreCard: {
         backgroundColor: JiguuColors.surface,
         paddingHorizontal: Spacing.lg,
-        paddingVertical: Spacing.md,
+        paddingVertical: Spacing.sm, // Tighter vertical padding
         borderRadius: BorderRadius.xl,
         alignItems: "center",
         width: "100%",
         marginBottom: Spacing.lg,
-        minHeight: 120, // Further reduced minHeight
+        // Removed minHeight to let it shrink to fit content
         justifyContent: 'center',
     },
     resultScoreLabel: {
@@ -487,12 +487,12 @@ const styles = StyleSheet.create({
         textTransform: "uppercase",
     },
     resultScoreValue: {
-        fontSize: 48,
-        lineHeight: 80, // Increased to prevent clipping
+        fontSize: 42, // Slightly smaller
+        lineHeight: 50,
         fontWeight: "bold",
         color: JiguuColors.textPrimary,
-        marginVertical: Spacing.md,
-        paddingVertical: Spacing.xs, // Extra padding for safety
+        marginVertical: Spacing.sm,
+        paddingVertical: 0,
     },
     resultPercentage: {
         ...Typography.h3,
