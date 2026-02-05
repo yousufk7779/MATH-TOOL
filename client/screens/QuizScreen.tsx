@@ -154,15 +154,13 @@ export default function QuizScreen() {
         if (!question) return null;
 
         return (
-            <View style={styles.quizContainer}>
+            <View style={styles.quizContainer} key={currentQuestionIndex}>
                 <View style={styles.quizHeader}>
-                    <View>
-                        <ThemedText style={styles.progressText}>
-                            Question {currentQuestionIndex + 1}/{questions.length}
-                        </ThemedText>
-                        <View style={styles.scoreBadge}>
-                            <ThemedText style={styles.scoreText}>Score: {score}</ThemedText>
-                        </View>
+                    <ThemedText style={styles.progressText}>
+                        Question {currentQuestionIndex + 1}/{questions.length}
+                    </ThemedText>
+                    <View style={styles.scoreBadge}>
+                        <ThemedText style={styles.scoreText}>Score: {score}</ThemedText>
                     </View>
                     <Pressable onPress={handleQuitQuiz} style={styles.quitButton}>
                         <Feather name="x-circle" size={24} color={JiguuColors.triangles} />
@@ -170,7 +168,6 @@ export default function QuizScreen() {
                 </View>
 
                 <View style={styles.questionCard}>
-                    <ThemedText style={styles.chapterTag}>{question.chapterTitle}</ThemedText>
                     <ThemedText style={styles.questionText}>{question.question}</ThemedText>
                 </View>
 
@@ -256,8 +253,8 @@ export default function QuizScreen() {
     };
 
     return (
-        <ScreenWrapper showBackButton={true}>
-            <ScrollView contentContainerStyle={styles.scrollView}>
+        <ScreenWrapper showBackButton={viewState !== "active"}>
+            <ScrollView contentContainerStyle={styles.scrollView} showsVerticalScrollIndicator={false}>
                 {viewState === "menu" && renderMenu()}
                 {viewState === "active" && renderActiveQuiz()}
                 {viewState === "result" && renderResult()}
@@ -269,7 +266,7 @@ export default function QuizScreen() {
 const styles = StyleSheet.create({
     scrollView: {
         paddingHorizontal: Spacing.xl,
-        paddingBottom: 40,
+        paddingBottom: 120, // Increased to clear footer
         flexGrow: 1,
     },
     menuContainer: {
@@ -362,6 +359,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         marginBottom: Spacing.lg,
+        paddingTop: Spacing.xl, // Added top padding to push down
     },
     progressText: {
         ...Typography.small,
@@ -405,9 +403,8 @@ const styles = StyleSheet.create({
     optionButton: {
         flexDirection: "row",
         alignItems: "center",
-        backgroundColor: JiguuColors.surface,
-        padding: Spacing.md,
         borderRadius: BorderRadius.md,
+        padding: Spacing.sm,
         borderWidth: 1,
         borderColor: JiguuColors.border,
     },
@@ -447,11 +444,12 @@ const styles = StyleSheet.create({
     },
     actionButton: {
         backgroundColor: JiguuColors.accent1,
-        paddingVertical: Spacing.lg,
+        paddingVertical: Spacing.md,
         borderRadius: BorderRadius.lg,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
+        marginBottom: Spacing["4xl"], // Significantly increased to float button up deeply
     },
     disabledButton: {
         opacity: 0.5,
@@ -465,7 +463,7 @@ const styles = StyleSheet.create({
     // Result Styles
     resultContainer: {
         alignItems: "center",
-        paddingTop: Spacing["4xl"],
+        paddingTop: Spacing.xl, // Reduced top padding
         flex: 1,
     },
     resultTitle: {
@@ -474,11 +472,14 @@ const styles = StyleSheet.create({
     },
     resultScoreCard: {
         backgroundColor: JiguuColors.surface,
-        padding: Spacing["2xl"],
+        paddingHorizontal: Spacing.lg,
+        paddingVertical: Spacing.md,
         borderRadius: BorderRadius.xl,
         alignItems: "center",
         width: "100%",
-        marginBottom: Spacing.xl,
+        marginBottom: Spacing.lg,
+        minHeight: 120, // Further reduced minHeight
+        justifyContent: 'center',
     },
     resultScoreLabel: {
         ...Typography.small,
@@ -487,9 +488,11 @@ const styles = StyleSheet.create({
     },
     resultScoreValue: {
         fontSize: 48,
+        lineHeight: 80, // Increased to prevent clipping
         fontWeight: "bold",
         color: JiguuColors.textPrimary,
         marginVertical: Spacing.md,
+        paddingVertical: Spacing.xs, // Extra padding for safety
     },
     resultPercentage: {
         ...Typography.h3,

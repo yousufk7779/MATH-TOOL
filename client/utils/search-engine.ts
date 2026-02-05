@@ -113,7 +113,29 @@ export const buildSearchIndex = () => {
             });
         });
 
-        // 6. Index Theorems
+        // 6. Index Examples (NEW)
+        chapter.examples?.forEach((example) => {
+            searchIndex.push({
+                id: example.id,
+                type: "question", // Treating like question but navigating to examples view
+                title: `Example ${example.number}: ${chapter.title}`,
+                subtitle: example.question.substring(0, 60) + "...",
+                keywords: `${example.number} example ${chapter.title} ${example.question}`,
+                navigationParams: {
+                    screen: "Solution",
+                    params: {
+                        chapterId: chapter.id,
+                        chapterName: chapter.title,
+                        section: "exercises",
+                        // @ts-ignore
+                        view: "examples",
+                        questionId: example.id
+                    }
+                }
+            });
+        });
+
+        // 7. Index Theorems
         if (chapter.theorems) {
             chapter.theorems.forEach(theorem => {
                 searchIndex.push({
@@ -127,7 +149,10 @@ export const buildSearchIndex = () => {
                         params: {
                             chapterId: chapter.id,
                             chapterName: chapter.title,
-                            section: "exercises" // Assuming theorems are viewed in exercise/menu section based on SolutionScreen logic
+                            section: "exercises",
+                            // @ts-ignore
+                            view: "theorems",
+                            questionId: theorem.id
                         }
                     }
                 })

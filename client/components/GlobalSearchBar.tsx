@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { StyleSheet, View, TextInput, Pressable, Animated, Platform } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useSearch } from "@/context/SearchContext";
@@ -6,6 +6,7 @@ import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/them
 
 export function GlobalSearchBar() {
     const { query, setQuery, isListening, startVoiceSearch, stopVoiceSearch } = useSearch();
+    const [isFocused, setIsFocused] = useState(false);
     const pulseAnim = useRef(new Animated.Value(1)).current;
 
     // Pulse animation when listening
@@ -39,7 +40,10 @@ export function GlobalSearchBar() {
     };
 
     return (
-        <View style={styles.container}>
+        <View style={[
+            styles.container,
+            isFocused && { borderColor: JiguuColors.accent2 }
+        ]}>
             <Feather name="search" size={20} color={JiguuColors.textSecondary} style={styles.searchIcon} />
             <TextInput
                 style={styles.input}
@@ -48,6 +52,8 @@ export function GlobalSearchBar() {
                 value={query}
                 onChangeText={setQuery}
                 returnKeyType="search"
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
             />
             {query.length > 0 && (
                 <Pressable onPress={() => setQuery("")} style={styles.clearButton}>
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: Spacing.md,
         height: 44,
         width: "100%",
-        borderWidth: 1,
+        borderWidth: 1.5,
         borderColor: JiguuColors.border,
     },
     searchIcon: {

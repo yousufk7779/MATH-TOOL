@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { StyleSheet, View, FlatList, Pressable } from "react-native";
+import { StyleSheet, View, FlatList, Pressable, Keyboard } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Feather } from "@expo/vector-icons";
@@ -19,9 +19,12 @@ export const SearchResults = memo(function SearchResults() {
     if (!query || results.length === 0) return null;
 
     const handlePress = (item: SearchResult) => {
-        setQuery(""); // Close search
-        // @ts-ignore
-        navigation.navigate(item.navigationParams.screen, item.navigationParams.params);
+        Keyboard.dismiss();
+        setTimeout(() => {
+            setQuery(""); // Close search
+            // @ts-ignore
+            navigation.navigate(item.navigationParams.screen, item.navigationParams.params);
+        }, 50);
     };
 
     const getIcon = (type: string) => {
@@ -65,7 +68,7 @@ export const SearchResults = memo(function SearchResults() {
                 data={results}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
-                keyboardShouldPersistTaps="handled"
+                keyboardShouldPersistTaps="always"
                 contentContainerStyle={styles.listContent}
                 ItemSeparatorComponent={() => <View style={styles.separator} />}
             />
@@ -78,8 +81,8 @@ const styles = StyleSheet.create({
         position: 'absolute',
         top: "100%", // Position right below the header
         marginTop: Spacing.sm,
-        left: 16,
-        right: 16,
+        left: 0,
+        right: 0,
         backgroundColor: JiguuColors.surface,
         borderRadius: BorderRadius.md,
         maxHeight: 400,

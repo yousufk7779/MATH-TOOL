@@ -93,7 +93,7 @@ function QuickNotesScreen() {
                     styles.noteCard,
                     {
                       backgroundColor: JiguuColors.surface,
-                      borderColor: NOTE_GRADIENTS[note.gradientIndex % NOTE_GRADIENTS.length][1] + "40"
+                      borderColor: NOTE_GRADIENTS[note.gradientIndex % NOTE_GRADIENTS.length][1]
                     }
                   ]}
                   onPress={() => navigation.navigate("NoteEditor", { note })}
@@ -157,41 +157,44 @@ const styles = StyleSheet.create({
   },
   noteCard: {
     borderRadius: BorderRadius.md,
-    padding: Spacing.md,
-    minHeight: 120,
-    borderWidth: 1,
+    padding: Spacing.sm,
+    // minHeight removed for strip view
+    borderWidth: 2,
     position: "relative",
     overflow: "hidden",
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   accentStrip: {
     position: "absolute",
     left: 0,
     top: 0,
     bottom: 0,
-    width: 4,
+    width: 6,
   },
   noteTitle: {
     ...Typography.h4,
     color: JiguuColors.textPrimary,
-    marginBottom: Spacing.xs,
-    paddingLeft: Spacing.xs,
+    marginBottom: 2,
+    paddingLeft: Spacing.sm,
   },
   notePreview: {
     ...Typography.small,
     color: JiguuColors.textSecondary,
-    marginBottom: Spacing.md,
-    paddingLeft: Spacing.xs,
-    flex: 1,
+    marginBottom: Spacing.xs,
+    paddingLeft: Spacing.sm,
+    // flex: 1, // removed to allow compact height
   },
   noteDate: {
     ...Typography.caption,
     color: JiguuColors.textSecondary,
     alignSelf: "flex-end",
     opacity: 0.7,
+    marginRight: Spacing.xs,
   },
   fab: {
     position: "absolute",
-    bottom: 32,
+    bottom: 150, // Raised to avoid CreatorCredit
     right: 24,
     width: 56,
     height: 56,
@@ -199,7 +202,8 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.accent1,
     alignItems: "center",
     justifyContent: "center",
-    elevation: 4,
+    elevation: 10,
+    zIndex: 1000,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,

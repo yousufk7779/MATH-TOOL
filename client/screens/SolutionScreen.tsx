@@ -94,7 +94,8 @@ const QuestionButton = memo(({ number, onPress, isActive, color }: QuestionButto
 function SolutionScreen() {
   const route = useRoute<SolutionRouteProp>();
   // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
-  const { chapterId, chapterName, section, exerciseId, questionId } = route.params;
+  // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
+  const { chapterId, chapterName, section, exerciseId, questionId, view } = route.params;
   const [activeSection, setActiveSection] = useState<SectionType>("overview");
   const [exerciseView, setExerciseView] = useState<ExerciseViewType>("menu");
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
@@ -110,24 +111,30 @@ function SolutionScreen() {
       setActiveSection(section as SectionType);
     }
 
-    if (content && section === "exercises" && exerciseId) {
-      const exercise = content.exercises.find(e => e.id === exerciseId);
-      if (exercise) {
-        setSelectedExercise(exercise);
-        setExerciseView("exercise");
+    if (content && section === "exercises") {
+      if (view === "examples") {
+        setExerciseView("examples");
+      } else if (view === "theorems") {
+        setExerciseView("theorems");
+      } else if (exerciseId) {
+        const exercise = content.exercises.find(e => e.id === exerciseId);
+        if (exercise) {
+          setSelectedExercise(exercise);
+          setExerciseView("exercise");
 
-        if (questionId) {
-          const question = exercise.questions.find(q => q.id === questionId);
-          if (question) {
-            setSelectedQuestion(question);
+          if (questionId) {
+            const question = exercise.questions.find(q => q.id === questionId);
+            if (question) {
+              setSelectedQuestion(question);
+            }
           }
         }
+      } else if (questionId && questionId.includes("theorem")) {
+        // Legacy/Fallback for theorem deep link
+        setExerciseView("theorems");
       }
-    } else if (content && section === "exercises" && questionId && questionId.includes("theorem")) {
-      // Handle theorem deep link if structured that way or if type provided
-      setExerciseView("theorems");
     }
-  }, [section, exerciseId, questionId, content]);
+  }, [section, exerciseId, questionId, content, view]);
 
   const handleExerciseClick = useCallback((exercise: Exercise) => {
     setSelectedExercise(exercise);
@@ -301,77 +308,90 @@ function SolutionScreen() {
     </View>
   ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion]);
 
-  const renderExamples = useCallback((data: ChapterContent) => (
-    <View style={styles.questionsContainer}>
-      <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-        <Feather name="arrow-left" size={18} color="#6C63FF" />
-        <ThemedText style={[styles.backButtonText, { color: "#6C63FF" }]}>Back to Menu</ThemedText>
-      </Pressable>
+  const renderExamples = useCallback((data: ChapterContent) => {
+    const examplesToShow = questionId
+      ? data.examples.filter(e => e.id === questionId)
+      : data.examples;
 
-      <View style={[styles.exerciseHeader, { backgroundColor: "#6C63FF" }]}>
-        <Feather name="book" size={16} color="#fff" />
-        <ThemedText style={styles.exerciseHeaderText}>NCERT Examples</ThemedText>
-      </View>
+    return (
+      <View style={styles.questionsContainer}>
+        <Pressable style={styles.backButton} onPress={handleBackToMenu}>
+          <Feather name="arrow-left" size={18} color="#6C63FF" />
+          <ThemedText style={[styles.backButtonText, { color: "#6C63FF" }]}>Back to Menu</ThemedText>
+        </Pressable>
 
-      {data.examples.map((example) => (
-        <QuestionCard
-          key={example.id}
-          question={{
-            id: example.id,
-            number: example.number,
-            question: example.question,
-            solution: example.solution,
-            answer: example.answer,
-          }}
-          accentColor="#6C63FF"
-        />
-      ))}
-    </View>
-  ), [handleBackToMenu]);
-
-  const renderTheorems = useCallback((data: ChapterContent) => (
-    <View style={styles.questionsContainer}>
-      <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-        <Feather name="arrow-left" size={18} color="#9C27B0" />
-        <ThemedText style={[styles.backButtonText, { color: "#9C27B0" }]}>Back to Menu</ThemedText>
-      </Pressable>
-
-      <View style={[styles.exerciseHeader, { backgroundColor: "#9C27B0" }]}>
-        <Feather name="award" size={16} color="#fff" />
-        <ThemedText style={styles.exerciseHeaderText}>Important Theorems</ThemedText>
-      </View>
-
-      {data.theorems?.map((theorem) => (
-        <View key={theorem.id} style={styles.theoremCard}>
-          <View style={styles.theoremHeader}>
-            <ThemedText style={styles.theoremNumber}>{theorem.number}</ThemedText>
-            <ThemedText style={styles.theoremName}>{theorem.name}</ThemedText>
-          </View>
-
-          <View style={styles.theoremSection}>
-            <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
-            <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
-          </View>
-
-          {theorem.proof && theorem.proof.length > 0 ? (
-            <View style={styles.theoremSection}>
-              <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
-              {theorem.proof.map((step, index) => (
-                <ThemedText key={index} style={styles.theoremStep}>{step}</ThemedText>
-              ))}
-            </View>
-          ) : null}
-
-          {theorem.example ? (
-            <View style={styles.theoremSection}>
-              <ThemedText style={styles.theoremLabel}>Example:</ThemedText>
-              <ThemedText style={styles.theoremExample}>{theorem.example}</ThemedText>
-            </View>
-          ) : null}
+        <View style={[styles.exerciseHeader, { backgroundColor: "#6C63FF" }]}>
+          <Feather name="book" size={16} color="#fff" />
+          <ThemedText style={styles.exerciseHeaderText}>NCERT Examples</ThemedText>
         </View>
-      ))}
-    </View>
-  ), [handleBackToMenu]);
+
+        {examplesToShow.map((example) => (
+          <QuestionCard
+            key={example.id}
+            question={{
+              id: example.id,
+              number: example.number,
+              question: example.question,
+              solution: example.solution,
+              answer: example.answer,
+            }}
+            accentColor="#6C63FF"
+          />
+        ))}
+      </View>
+    );
+  }, [handleBackToMenu, questionId]);
+
+  const renderTheorems = useCallback((data: ChapterContent) => {
+    // If view is already 'theorems', we can trust questionId refers to a theorem if present
+    const theoremsToShow = questionId
+      ? data.theorems?.filter(t => t.id === questionId)
+      : data.theorems;
+
+    return (
+      <View style={styles.questionsContainer}>
+        <Pressable style={styles.backButton} onPress={handleBackToMenu}>
+          <Feather name="arrow-left" size={18} color="#9C27B0" />
+          <ThemedText style={[styles.backButtonText, { color: "#9C27B0" }]}>Back to Menu</ThemedText>
+        </Pressable>
+
+        <View style={[styles.exerciseHeader, { backgroundColor: "#9C27B0" }]}>
+          <Feather name="award" size={16} color="#fff" />
+          <ThemedText style={styles.exerciseHeaderText}>Important Theorems</ThemedText>
+        </View>
+
+        {theoremsToShow?.map((theorem) => (
+          <View key={theorem.id} style={styles.theoremCard}>
+            <View style={styles.theoremHeader}>
+              <ThemedText style={styles.theoremNumber}>{theorem.number}</ThemedText>
+              <ThemedText style={styles.theoremName}>{theorem.name}</ThemedText>
+            </View>
+
+            <View style={styles.theoremSection}>
+              <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
+              <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
+            </View>
+
+            {theorem.proof && theorem.proof.length > 0 ? (
+              <View style={styles.theoremSection}>
+                <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
+                {theorem.proof.map((step, index) => (
+                  <ThemedText key={index} style={styles.theoremStep}>{step}</ThemedText>
+                ))}
+              </View>
+            ) : null}
+
+            {theorem.example ? (
+              <View style={styles.theoremSection}>
+                <ThemedText style={styles.theoremLabel}>Example:</ThemedText>
+                <ThemedText style={styles.theoremExample}>{theorem.example}</ThemedText>
+              </View>
+            ) : null}
+          </View>
+        ))}
+      </View>
+    );
+  }, [handleBackToMenu, questionId]);
 
   const renderExercises = useCallback((data: ChapterContent) => {
     switch (exerciseView) {

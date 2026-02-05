@@ -25,9 +25,8 @@ export const StaticHeader = memo(function StaticHeader() {
       </View>
       <View style={styles.searchContainer}>
         <GlobalSearchBar />
+        <SearchResults />
       </View>
-      {/* Search Results positioned absolute relative to this header */}
-      <SearchResults />
     </View>
   );
 });
