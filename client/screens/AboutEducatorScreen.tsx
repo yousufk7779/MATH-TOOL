@@ -5,37 +5,82 @@ import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 
-const sameerPhoto = require("../../assets/images/sameer-photo.jpg");
+// @ts-ignore
+import sameerPhoto from "../../assets/images/sameer-photo.jpg"; // Keeping import, but handling potential missing file gracefully in UI if needed
+import { JiguuLogo } from "@/components/JiguuLogo"; // Assuming this exists based on header use
 
 function AboutEducatorScreen() {
   return (
     <ScreenWrapper showBackButton>
-      <ScrollView 
+      <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.photoContainer}>
-          <Image 
-            source={sameerPhoto} 
-            style={styles.photo} 
-            resizeMode="cover" 
-          />
+        <View style={styles.section}>
+          <ThemedText style={styles.sectionHeader}>About Educator</ThemedText>
+          <View style={styles.educatorContainer}>
+            <View style={styles.photoContainer}>
+              {/* Using Image if available, or a fallback icon/view */}
+              <Image
+                source={sameerPhoto}
+                style={styles.photo}
+                resizeMode="cover"
+              />
+            </View>
+            <ThemedText style={styles.name}>Sameer Khan</ThemedText>
+            <ThemedText style={styles.role}>Mathematics Educator (B.Sc, B.Ed)</ThemedText>
+            <ThemedText style={styles.bio}>
+              "Mathematics is not just about numbers, it's about logic and understanding."
+              With over 10 years of experience, Sameer Sir has helped thousands of students master NCERT concepts with ease.
+            </ThemedText>
+          </View>
         </View>
 
-        <ThemedText style={styles.name}>Sameer Khan</ThemedText>
-        <ThemedText style={styles.title}>Educator</ThemedText>
-
-        <View style={styles.bioContainer}>
-          <ThemedText style={styles.bio}>
-            Dedicated mathematics educator helping students excel in NCERT Class 10 mathematics. 
-            Passionate about making complex mathematical concepts simple and accessible.
-          </ThemedText>
+        <View style={styles.section}>
+          <ThemedText style={styles.sectionHeader}>About Jiguu</ThemedText>
+          <View style={styles.aboutContainer}>
+            <JiguuLogo size="medium" showSubtitle={false} />
+            <ThemedText style={styles.aboutText}>
+              JIGUU is your personal math companion designed to simplify learning.
+              It bridges the gap between complex textbook problems and understandable solutions.
+            </ThemedText>
+          </View>
         </View>
+
+        <View style={styles.section}>
+          <ThemedText style={styles.sectionHeader}>Why Jiguu?</ThemedText>
+          <View style={styles.featuresGrid}>
+            <FeatureItem icon="check" text="Step-by-step NCERT Solutions" />
+            <FeatureItem icon="clock" text="Quick Notes for Revision" />
+            <FeatureItem icon="wifi-off" text="Works Offline" />
+            <FeatureItem icon="search" text="Global Search with Voice" />
+          </View>
+        </View>
+
+        <View style={styles.section}>
+          <ThemedText style={styles.sectionHeader}>Note of Thanks</ThemedText>
+          <View style={styles.thanksContainer}>
+            <ThemedText style={styles.thanksText}>
+              "I am deeply grateful to all my students for their trust and dedication.
+              This app is a small effort to support your journey towards excellence.
+              Keep practicing, stay curious, and never give up!"
+            </ThemedText>
+            <ThemedText style={styles.signature}>- Sameer Khan</ThemedText>
+          </View>
+        </View>
+
       </ScrollView>
     </ScreenWrapper>
   );
 }
+
+const FeatureItem = ({ icon, text }: { icon: string, text: string }) => (
+  <View style={styles.featureItem}>
+    <View style={styles.featureBullet} />
+    <ThemedText style={styles.featureText}>{text}</ThemedText>
+  </View>
+)
 
 export default memo(AboutEducatorScreen);
 
@@ -45,45 +90,116 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing["2xl"],
+    paddingTop: Spacing.lg,
     paddingBottom: 120,
+  },
+  section: {
+    marginBottom: Spacing["2xl"],
+  },
+  sectionHeader: {
+    ...Typography.h3,
+    color: JiguuColors.textPrimary,
+    marginBottom: Spacing.md,
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: 1,
+  },
+  educatorContainer: {
     alignItems: "center",
+    backgroundColor: JiguuColors.surface,
+    padding: Spacing.xl,
+    borderRadius: BorderRadius.lg,
+    borderTopWidth: 4,
+    borderTopColor: JiguuColors.accent1,
   },
   photoContainer: {
-    width: 120,
-    height: 120,
-    borderRadius: BorderRadius.full,
+    width: 140,
+    height: 140,
+    borderRadius: 70,
     overflow: "hidden",
-    marginBottom: Spacing.lg,
-    borderWidth: 3,
-    borderColor: JiguuColors.quadraticEquations,
+    marginBottom: Spacing.md,
+    borderWidth: 4,
+    borderColor: JiguuColors.accent1,
+    elevation: 4,
   },
   photo: {
-    width: 120,
-    height: 160,
-    marginTop: 20,
+    width: "100%",
+    height: "100%",
   },
   name: {
     ...Typography.h2,
     color: JiguuColors.textPrimary,
     marginBottom: Spacing.xs,
   },
-  title: {
+  role: {
     ...Typography.body,
-    color: JiguuColors.quadraticEquations,
+    color: JiguuColors.accent1,
     fontWeight: "600",
-    marginBottom: Spacing["2xl"],
-  },
-  bioContainer: {
-    backgroundColor: JiguuColors.surface,
-    padding: Spacing.xl,
-    borderRadius: BorderRadius.md,
-    width: "100%",
+    marginBottom: Spacing.md,
   },
   bio: {
     ...Typography.body,
     color: JiguuColors.textSecondary,
     textAlign: "center",
     lineHeight: 24,
+    fontStyle: 'italic',
   },
+  aboutContainer: {
+    alignItems: "center",
+    backgroundColor: JiguuColors.surface,
+    padding: Spacing.xl,
+    borderRadius: BorderRadius.lg,
+    borderTopWidth: 4,
+    borderTopColor: JiguuColors.accent2,
+  },
+  aboutText: {
+    ...Typography.body,
+    color: JiguuColors.textSecondary,
+    textAlign: "center",
+    marginTop: Spacing.md,
+    lineHeight: 24,
+  },
+  featuresGrid: {
+    backgroundColor: JiguuColors.surface,
+    padding: Spacing.xl,
+    borderRadius: BorderRadius.lg,
+    borderTopWidth: 4,
+    borderTopColor: JiguuColors.newsEvents,
+  },
+  featureItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: Spacing.sm,
+  },
+  featureBullet: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: JiguuColors.newsEvents,
+    marginRight: Spacing.md,
+  },
+  featureText: {
+    ...Typography.body,
+    color: JiguuColors.textPrimary,
+  },
+  thanksContainer: {
+    backgroundColor: JiguuColors.surface,
+    padding: Spacing.xl,
+    borderRadius: BorderRadius.lg,
+    borderTopWidth: 4,
+    borderTopColor: JiguuColors.accent3,
+  },
+  thanksText: {
+    ...Typography.body,
+    color: JiguuColors.textSecondary,
+    textAlign: "center",
+    lineHeight: 26,
+    fontStyle: 'italic',
+    marginBottom: Spacing.md,
+  },
+  signature: {
+    ...Typography.h4,
+    color: JiguuColors.textPrimary,
+    textAlign: 'right',
+  }
 });

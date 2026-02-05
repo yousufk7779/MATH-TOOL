@@ -76,7 +76,8 @@ export const SearchResults = memo(function SearchResults() {
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        top: 110, // Approx header height
+        top: "100%", // Position right below the header
+        marginTop: Spacing.sm,
         left: 16,
         right: 16,
         backgroundColor: JiguuColors.surface,

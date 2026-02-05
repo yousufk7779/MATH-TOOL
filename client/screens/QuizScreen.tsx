@@ -96,6 +96,17 @@ export default function QuizScreen() {
         setViewState("result");
     };
 
+    const handleQuitQuiz = () => {
+        Alert.alert(
+            "Quit Quiz",
+            "Are you sure you want to quit? Your progress will be lost.",
+            [
+                { text: "Cancel", style: "cancel" },
+                { text: "Quit", style: "destructive", onPress: () => setViewState("menu") }
+            ]
+        );
+    };
+
     const renderMenu = () => (
         <View style={styles.menuContainer}>
             <View style={styles.menuHeader}>
@@ -145,12 +156,17 @@ export default function QuizScreen() {
         return (
             <View style={styles.quizContainer}>
                 <View style={styles.quizHeader}>
-                    <ThemedText style={styles.progressText}>
-                        Question {currentQuestionIndex + 1}/{questions.length}
-                    </ThemedText>
-                    <View style={styles.scoreBadge}>
-                        <ThemedText style={styles.scoreText}>Score: {score}</ThemedText>
+                    <View>
+                        <ThemedText style={styles.progressText}>
+                            Question {currentQuestionIndex + 1}/{questions.length}
+                        </ThemedText>
+                        <View style={styles.scoreBadge}>
+                            <ThemedText style={styles.scoreText}>Score: {score}</ThemedText>
+                        </View>
                     </View>
+                    <Pressable onPress={handleQuitQuiz} style={styles.quitButton}>
+                        <Feather name="x-circle" size={24} color={JiguuColors.triangles} />
+                    </Pressable>
                 </View>
 
                 <View style={styles.questionCard}>
@@ -240,7 +256,7 @@ export default function QuizScreen() {
     };
 
     return (
-        <ScreenWrapper showBackButton={viewState === "menu"}>
+        <ScreenWrapper showBackButton={true}>
             <ScrollView contentContainerStyle={styles.scrollView}>
                 {viewState === "menu" && renderMenu()}
                 {viewState === "active" && renderActiveQuiz()}
@@ -483,5 +499,8 @@ const styles = StyleSheet.create({
         color: JiguuColors.textSecondary,
         marginBottom: Spacing["3xl"],
         fontStyle: "italic",
+    },
+    quitButton: {
+        padding: Spacing.sm,
     },
 });

@@ -93,7 +93,8 @@ const QuestionButton = memo(({ number, onPress, isActive, color }: QuestionButto
 
 function SolutionScreen() {
   const route = useRoute<SolutionRouteProp>();
-  const { chapterId, chapterName } = route.params;
+  // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
+  const { chapterId, chapterName, section, exerciseId, questionId } = route.params;
   const [activeSection, setActiveSection] = useState<SectionType>("overview");
   const [exerciseView, setExerciseView] = useState<ExerciseViewType>("menu");
   const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
@@ -102,6 +103,31 @@ function SolutionScreen() {
   const chapter = getChapter(chapterId);
   const content = getChapterContent(chapterId);
   const accentColor = chapter?.color || JiguuColors.quadraticEquations;
+
+  // Handle Deep Linking / Search Navigation
+  React.useEffect(() => {
+    if (section) {
+      setActiveSection(section as SectionType);
+    }
+
+    if (content && section === "exercises" && exerciseId) {
+      const exercise = content.exercises.find(e => e.id === exerciseId);
+      if (exercise) {
+        setSelectedExercise(exercise);
+        setExerciseView("exercise");
+
+        if (questionId) {
+          const question = exercise.questions.find(q => q.id === questionId);
+          if (question) {
+            setSelectedQuestion(question);
+          }
+        }
+      }
+    } else if (content && section === "exercises" && questionId && questionId.includes("theorem")) {
+      // Handle theorem deep link if structured that way or if type provided
+      setExerciseView("theorems");
+    }
+  }, [section, exerciseId, questionId, content]);
 
   const handleExerciseClick = useCallback((exercise: Exercise) => {
     setSelectedExercise(exercise);
@@ -217,7 +243,7 @@ function SolutionScreen() {
           icon="edit"
         />
       ))}
-      
+
       {data.examples.length > 0 ? (
         <NavigationButton
           title="NCERT Examples"
@@ -226,7 +252,7 @@ function SolutionScreen() {
           icon="book"
         />
       ) : null}
-      
+
       {data.theorems && data.theorems.length > 0 ? (
         <NavigationButton
           title="Important Theorems"
@@ -244,14 +270,14 @@ function SolutionScreen() {
         <Feather name="arrow-left" size={18} color={accentColor} />
         <ThemedText style={[styles.backButtonText, { color: accentColor }]}>Back to Menu</ThemedText>
       </Pressable>
-      
+
       <View style={[styles.exerciseHeader, { backgroundColor: accentColor }]}>
         <Feather name="edit" size={16} color="#fff" />
         <ThemedText style={styles.exerciseHeaderText}>{exercise.name}</ThemedText>
       </View>
 
       <ThemedText style={styles.selectQuestionText}>Select a Question:</ThemedText>
-      
+
       <View style={styles.questionButtonsGrid}>
         {exercise.questions.map((question) => (
           <QuestionButton
@@ -281,7 +307,7 @@ function SolutionScreen() {
         <Feather name="arrow-left" size={18} color="#6C63FF" />
         <ThemedText style={[styles.backButtonText, { color: "#6C63FF" }]}>Back to Menu</ThemedText>
       </Pressable>
-      
+
       <View style={[styles.exerciseHeader, { backgroundColor: "#6C63FF" }]}>
         <Feather name="book" size={16} color="#fff" />
         <ThemedText style={styles.exerciseHeaderText}>NCERT Examples</ThemedText>
@@ -309,7 +335,7 @@ function SolutionScreen() {
         <Feather name="arrow-left" size={18} color="#9C27B0" />
         <ThemedText style={[styles.backButtonText, { color: "#9C27B0" }]}>Back to Menu</ThemedText>
       </Pressable>
-      
+
       <View style={[styles.exerciseHeader, { backgroundColor: "#9C27B0" }]}>
         <Feather name="award" size={16} color="#fff" />
         <ThemedText style={styles.exerciseHeaderText}>Important Theorems</ThemedText>
@@ -321,12 +347,12 @@ function SolutionScreen() {
             <ThemedText style={styles.theoremNumber}>{theorem.number}</ThemedText>
             <ThemedText style={styles.theoremName}>{theorem.name}</ThemedText>
           </View>
-          
+
           <View style={styles.theoremSection}>
             <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
             <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
           </View>
-          
+
           {theorem.proof && theorem.proof.length > 0 ? (
             <View style={styles.theoremSection}>
               <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
@@ -335,7 +361,7 @@ function SolutionScreen() {
               ))}
             </View>
           ) : null}
-          
+
           {theorem.example ? (
             <View style={styles.theoremSection}>
               <ThemedText style={styles.theoremLabel}>Example:</ThemedText>

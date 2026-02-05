@@ -17,7 +17,13 @@ import { SearchProvider } from "@/context/SearchContext";
 export type RootStackParamList = {
   Home: undefined;
   ChapterList: undefined;
-  Solution: { chapterId: string; chapterName: string };
+  Solution: {
+    chapterId: string;
+    chapterName: string;
+    section?: string;
+    exerciseId?: string;
+    questionId?: string;
+  };
   QuickNotes: undefined;
   NoteEditor: { note?: Note } | undefined;
   Quiz: undefined;

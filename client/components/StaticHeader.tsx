@@ -13,23 +13,22 @@ export const StaticHeader = memo(function StaticHeader() {
   const isLandscape = width > height;
 
   return (
-    <>
-      <View style={[
-        styles.container,
-        {
-          paddingTop: isLandscape ? insets.top + Spacing.xs : insets.top + Spacing.md,
-          paddingBottom: Spacing.md,
-        }
-      ]}>
-        <View style={styles.logoContainer}>
-          <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
-        </View>
-        <View style={styles.searchContainer}>
-          <GlobalSearchBar />
-        </View>
+    <View style={[
+      styles.container,
+      {
+        paddingTop: isLandscape ? insets.top + Spacing.xs : insets.top + Spacing.md,
+        paddingBottom: Spacing.md,
+      }
+    ]}>
+      <View style={styles.logoContainer}>
+        <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
       </View>
+      <View style={styles.searchContainer}>
+        <GlobalSearchBar />
+      </View>
+      {/* Search Results positioned absolute relative to this header */}
       <SearchResults />
-    </>
+    </View>
   );
 });
 
