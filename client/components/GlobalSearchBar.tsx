@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { StyleSheet, View, TextInput, Pressable, Animated, Platform } from "react-native";
+import { StyleSheet, View, TextInput, Pressable, Animated, Platform, Keyboard } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { useSearch } from "@/context/SearchContext";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
@@ -44,7 +44,20 @@ export function GlobalSearchBar() {
             styles.container,
             isFocused && { borderColor: JiguuColors.accent2 }
         ]}>
-            <Feather name="search" size={20} color={JiguuColors.textSecondary} style={styles.searchIcon} />
+            <Pressable onPress={() => {
+                if (isFocused || query.length > 0) {
+                    setQuery("");
+                    Keyboard.dismiss();
+                    setIsFocused(false);
+                }
+            }}>
+                <Feather
+                    name={isFocused || query.length > 0 ? "arrow-left" : "search"}
+                    size={20}
+                    color={JiguuColors.textSecondary}
+                    style={styles.searchIcon}
+                />
+            </Pressable>
             <TextInput
                 style={styles.input}
                 placeholder={isListening ? "Listening..." : "Search chapters, questions..."}

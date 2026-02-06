@@ -19,8 +19,8 @@ export const StaticHeader = memo(function StaticHeader() {
         paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.md,
         paddingBottom: isLandscape ? 5 : Spacing.md,
         height: isLandscape ? 100 : undefined, // Increase height to fit logo
-        flexDirection: isLandscape ? "row" : "column", // Row layout for landscape
-        justifyContent: isLandscape ? "space-between" : "flex-end",
+        flexDirection: isLandscape ? "row" : "column",
+        justifyContent: isLandscape ? "space-between" : "flex-start", // Fix: Align top in portrait
         alignItems: "center",
       }
     ]}>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.background,
     paddingHorizontal: Spacing.lg,
     alignItems: "center",
-    justifyContent: "flex-end",
+    // justifyContent: "flex-end", // Removed to prevent layout issues
     borderBottomWidth: 1,
     borderBottomColor: JiguuColors.border,
     zIndex: 100, // Ensure header is above content
