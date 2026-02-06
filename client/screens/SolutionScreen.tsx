@@ -12,7 +12,6 @@ import FormulaItem from "@/components/solution/FormulaItem";
 import QuestionCard from "@/components/solution/QuestionCard";
 import TheoremCard from "@/components/solution/TheoremCard";
 import MCQSection from "@/components/solution/MCQSection";
-import PYQSection from "@/components/solution/PYQSection";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
@@ -20,7 +19,7 @@ import { getChapterContent, ChapterContent, Exercise, Example, Theorem, Question
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
 
-type SectionType = "overview" | "exercises" | "mcq" | "pyq";
+type SectionType = "overview" | "exercises" | "mcq";
 type ExerciseViewType = "menu" | "exercise" | "examples" | "theorems";
 
 interface TabButtonProps {
@@ -456,25 +455,11 @@ function SolutionScreen() {
             onPress={() => handleSectionChange("mcq")}
             color={accentColor}
           />
-          <TabButton
-            title="PYQ"
-            isActive={activeSection === "pyq"}
-            onPress={() => handleSectionChange("pyq")}
-            color={accentColor}
-          />
         </View>
 
         {activeSection === "overview" ? renderOverview(content) : null}
         {activeSection === "exercises" ? renderExercises(content) : null}
         {activeSection === "mcq" ? renderMCQ(content) : null}
-        {activeSection === "pyq" ? (
-          <PYQSection
-            chapterId={chapterId}
-            accentColor={accentColor}
-            initialYear={(route.params as any).year}
-            initialQuestionId={questionId}
-          />
-        ) : null}
       </ScrollView>
     </ScreenWrapper>
   );

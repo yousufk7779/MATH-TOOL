@@ -70,6 +70,15 @@ function HomeScreen() {
 
           <View style={styles.buttonWrapper}>
             <ColorButton
+              testID="button-pyq"
+              title="Previous Year Questions"
+              color={JiguuColors.accent3}
+              onPress={() => navigation.navigate("GlobalPYQ")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
               testID="button-about-educator"
               title="About the Educator"
               color={JiguuColors.accent1}

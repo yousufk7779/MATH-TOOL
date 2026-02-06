@@ -10,6 +10,7 @@ import NewsEventsScreen from "@/screens/NewsEventsScreen";
 import AboutEducatorScreen from "@/screens/AboutEducatorScreen";
 import BookmarksScreen from "@/screens/BookmarksScreen";
 import ImportantQuestionsScreen from "@/screens/ImportantQuestionsScreen";
+import { GlobalPYQScreen } from "@/screens/GlobalPYQScreen";
 
 import { Note } from "@/utils/storage";
 import NoteEditorScreen from "@/screens/NoteEditorScreen";
@@ -33,6 +34,7 @@ export type RootStackParamList = {
   AboutEducator: undefined;
   Bookmarks: undefined;
   ImportantQuestions: undefined;
+  GlobalPYQ: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -64,6 +66,7 @@ export default function RootStackNavigator() {
         <Stack.Screen name="AboutEducator" component={AboutEducatorScreen} />
         <Stack.Screen name="Bookmarks" component={BookmarksScreen} />
         <Stack.Screen name="ImportantQuestions" component={ImportantQuestionsScreen} />
+        <Stack.Screen name="GlobalPYQ" component={GlobalPYQScreen} />
       </Stack.Navigator>
     </SearchProvider>
   );

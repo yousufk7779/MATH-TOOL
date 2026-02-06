@@ -16,9 +16,12 @@ export const StaticHeader = memo(function StaticHeader() {
     <View style={[
       styles.container,
       {
-        paddingTop: isLandscape ? insets.top + 2 : insets.top + Spacing.md,
-        paddingBottom: isLandscape ? Spacing.xs : Spacing.md,
-        height: isLandscape ? 80 : undefined, // Force shorter height in landscape
+        paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.md,
+        paddingBottom: isLandscape ? 5 : Spacing.md,
+        height: isLandscape ? 100 : undefined, // Increase height to fit logo
+        flexDirection: isLandscape ? "row" : "column", // Row layout for landscape
+        justifyContent: isLandscape ? "space-between" : "flex-end",
+        alignItems: "center",
       }
     ]}>
       <View style={styles.logoContainer}>
@@ -48,5 +51,7 @@ const styles = StyleSheet.create({
   searchContainer: {
     width: "100%",
     maxWidth: 500,
+    flex: 1, // Take available space in landscape row
+    marginLeft: Spacing.md, // Add spacing if in row
   }
 });
