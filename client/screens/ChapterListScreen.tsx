@@ -29,12 +29,13 @@ function ChapterListScreen() {
         name={item.name}
         color={item.color}
         isAvailable={available}
-        onPress={() =>
+        onPress={() => {
+          console.log("Chapter clicked:", item.id);
           navigation.navigate("Solution", {
             chapterId: item.id,
             chapterName: item.name,
-          })
-        }
+          });
+        }}
       />
     );
   }, [navigation]);

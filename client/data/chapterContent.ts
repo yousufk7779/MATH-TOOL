@@ -63,6 +63,9 @@ export interface ChapterContent {
   summary: string[];
 }
 
+
+import { ChapterHTMLs } from "./chapterHTMLs";
+
 export const chapterContents: Record<string, ChapterContent> = {
   "ch1-real-numbers": {
     id: "ch1-real-numbers",
@@ -1135,8 +1138,8 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Adding both equations: 2x = 14 → x = 7",
               "Substituting x = 7: 7 + y = 10 → y = 3",
             ],
-            answer: "Number of girls = 7, Number of boys = 3",		
-		
+            answer: "Number of girls = 7, Number of boys = 3",
+
           },
           {
             id: "q3.1.1ii",
@@ -2105,5 +2108,5 @@ export function getChapterContent(chapterId: string): ChapterContent | undefined
 }
 
 export function isChapterAvailable(chapterId: string): boolean {
-  return chapterId in chapterContents;
+  return (chapterId in chapterContents) || (chapterId in ChapterHTMLs);
 }

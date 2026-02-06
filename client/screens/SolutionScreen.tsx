@@ -322,6 +322,8 @@ function SolutionScreen() {
           source={htmlChapter.overview}
           style={{ flex: 1 }}
           originWhitelist={["*"]}
+          javaScriptEnabled={true}
+          domStorageEnabled={true}
           showsVerticalScrollIndicator={false}
         />
       );
@@ -333,6 +335,8 @@ function SolutionScreen() {
           source={htmlChapter.mcqs}
           style={{ flex: 1 }}
           originWhitelist={["*"]}
+          javaScriptEnabled={true}
+          domStorageEnabled={true}
           showsVerticalScrollIndicator={false}
         />
       );
@@ -341,7 +345,11 @@ function SolutionScreen() {
     if (activeSection === "exercises") {
       if (exerciseView === "menu") {
         return (
-          <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={styles.content}
+            showsVerticalScrollIndicator={false}
+          >
             <View style={styles.exerciseMenuContainer}>
               {htmlChapter.exercises.map((exc) => (
                 <NavigationButton
@@ -380,6 +388,8 @@ function SolutionScreen() {
               source={htmlChapter.examples}
               style={{ flex: 1 }}
               originWhitelist={["*"]}
+              javaScriptEnabled={true}
+              domStorageEnabled={true}
             />
           </View>
         );
@@ -393,6 +403,8 @@ function SolutionScreen() {
               source={(selectedExercise as any).file}
               style={{ flex: 1 }}
               originWhitelist={["*"]}
+              javaScriptEnabled={true}
+              domStorageEnabled={true}
             />
           </View>
         );
@@ -499,15 +511,15 @@ function SolutionScreen() {
     return (
       <ScreenWrapper showBackButton>
         <View style={{ flex: 1 }}>
-          <ScrollView scrollEnabled={false} contentContainerStyle={{ paddingBottom: 0 }}>
-            <View style={[styles.header, { marginTop: Spacing.lg, paddingHorizontal: Spacing.xl }]}>
+          <View>
+            <View style={[styles.header, { marginTop: Spacing.sm, marginBottom: Spacing.sm, paddingHorizontal: Spacing.xl }]}>
               <ThemedText style={[styles.chapterNumber, { color: accentColor }]}>
                 Chapter {chapter?.number || ""}
               </ThemedText>
               <ThemedText style={styles.title}>{chapterName}</ThemedText>
             </View>
 
-            <View style={[styles.tabContainer, { marginHorizontal: Spacing.xl }]}>
+            <View style={[styles.tabContainer, { marginHorizontal: Spacing.xl, marginBottom: 0 }]}>
               <TabButton
                 title="Overview"
                 isActive={activeSection === "overview"}
@@ -527,7 +539,7 @@ function SolutionScreen() {
                 color={accentColor}
               />
             </View>
-          </ScrollView>
+          </View>
 
           <View style={{ flex: 1, backgroundColor: '#fff' }}>
             {renderHTMLContent()}
