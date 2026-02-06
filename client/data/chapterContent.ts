@@ -2101,6 +2101,96 @@ export const chapterContents: Record<string, ChapterContent> = {
       "Product of roots = c/a",
     ],
   },
+  "ch5-arithmetic-progressions": {
+    id: "ch5-arithmetic-progressions",
+    number: 5,
+    title: "Arithmetic Progressions",
+    introduction: "In daily life, we see many patterns. Example: Savings every month, or steps of a ladder. When numbers increase or decrease by a fixed amount, we call it an AP. This chapter helps us calculate large values simply without counting one by one.",
+    definitions: [
+      { term: "Arithmetic Progression (AP)", description: "A list of numbers where difference between two consecutive terms is always same." },
+      { term: "First Term (a)", description: "The number starting the list. It can be any number." },
+      { term: "Common Difference (d)", description: "The fixed number added to get the next term. It can be positive, negative, or zero." },
+      { term: "Finite AP", description: "An AP with limited terms (End is known)." },
+      { term: "Infinite AP", description: "An AP that never ends (Last term not known)." }
+    ],
+    keyPoints: [
+      "General form of an AP is: a, a + d, a + 2d, a + 3d ...",
+      "nth Term Formula: aₙ = a + (n - 1)d",
+      "Sum of First n Terms: Sₙ = n/2 [ 2a + (n - 1)d ]",
+      "Sum if last term (l) is known: Sₙ = n/2 ( a + l )",
+      "Sum of first n positive integers: Sₙ = n(n + 1)/2"
+    ],
+    formulas: [
+      { name: "General Form", formula: "a, a+d, a+2d..." },
+      { name: "nth Term", formula: "aₙ = a + (n - 1)d" },
+      { name: "Sum of n terms", formula: "Sₙ = n/2 [ 2a + (n - 1)d ]" }
+    ],
+    crux: [
+      "This whole chapter is about only TWO main formulas.",
+      "Always find values of 'a' and 'd' from the question first.",
+      "If they ask 'Find 10th term', use the aₙ formula.",
+      "If they ask 'Find Total' or 'Sum', use the Sₙ formula.",
+      "Be careful with signs. If AP is decreasing, d is negative."
+    ],
+    exercises: [
+      {
+        id: "ex5.1",
+        name: "Exercise 5.1",
+        questions: [
+          {
+            id: "q1", number: "1", question: "In which situations does the list of numbers make an AP?", solution: [
+              "(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.",
+              "Fare for 1st km = 15",
+              "Fare for 2nd km = 15 + 8 = 23, 3rd = 31...",
+              "List: 15, 23, 31... Difference = 8 (Same). Yes AP.",
+              "(ii) Air in cylinder: Removes 1/4 of remaining air.",
+              "Initial = 1. Removed = 1/4. Remaining = 3/4.",
+              "Next removed = 1/4 * 3/4 = 3/16. Remaining = 9/16.",
+              "Diff 1 = -1/4. Diff 2 = -3/16. Not Same. No AP."
+            ], answer: "Yes, No, Yes, No"
+          },
+          {
+            id: "q2", number: "2", question: "Write first four terms.", solution: [
+              "(i) a = 10, d = 10 -> 10, 20, 30, 40",
+              "(ii) a = -2, d = 0 -> -2, -2, -2, -2",
+              "(iii) a = 4, d = -3 -> 4, 1, -2, -5"
+            ], answer: "See solution"
+          },
+          {
+            id: "q3", number: "3", question: "Write first term (a) and common difference (d).", solution: [
+              "(i) 3, 1, -1, -3... -> a=3, d=-2",
+              "(ii) -5, -1, 3, 7... -> a=-5, d=4"
+            ], answer: "a=3, d=-2 etc"
+          },
+          {
+            id: "q4", number: "4", question: "Which are APs?", solution: [
+              "(i) 2, 4, 8, 16... -> Diff 2, 4. Not AP.",
+              "(ii) 2, 5/2, 3... -> Diff 1/2. Yes AP.",
+              "(v) 3, 3+√2, 3+2√2... -> Diff √2. Yes AP."
+            ], answer: "See solution"
+          }
+        ]
+      }
+    ],
+    examples: [],
+    mcqs: [
+      { id: "mcq5_1", question: "The common difference of the AP: 3, 1, -1, -3... is:", options: ["2", "-2", "3", "0"], correctAnswer: "b" },
+      { id: "mcq5_2", question: "If a = 10, d = 10, first four terms:", options: ["10, 30, 50, 60", "10, 15, 20, 25", "10, 20, 30, 40", "10, 10, 10, 10"], correctAnswer: "c" },
+      { id: "mcq5_3", question: "nth term formula is:", options: ["2a+(n-1)d", "a+(n-1)d", "a+nd", "a^n-1"], correctAnswer: "b" },
+      { id: "mcq5_4", question: "Not an AP:", options: ["2,4,6,8", "5,10,15,20", "1,2,4,8", "3,3,3,3"], correctAnswer: "c" },
+      { id: "mcq5_5", question: "10th term of 5, 8, 11, 14...", options: ["32", "35", "38", "185"], correctAnswer: "a" },
+      { id: "mcq5_6", question: "n=5, d=2, a=3, an is:", options: ["10", "11", "12", "13"], correctAnswer: "b" },
+      { id: "mcq5_7", question: "Sum of first 5 multiples of 3:", options: ["45", "55", "65", "75"], correctAnswer: "a" },
+      { id: "mcq5_8", question: "If d=0, AP is:", options: ["Increasing", "Decreasing", "Constant", "None"], correctAnswer: "c" },
+      { id: "mcq5_9", question: "30th term of 10, 7, 4...", options: ["97", "77", "-77", "-87"], correctAnswer: "c" },
+      { id: "mcq5_10", question: "Sum of first n positive integers:", options: ["n/2", "n^2", "n(n+1)/2", "n(n-1)"], correctAnswer: "c" }
+    ],
+    summary: [
+      "Common Difference d can be positive, negative or zero.",
+      "nth Term: a + (n-1)d",
+      "Sum: n/2[2a + (n-1)d]"
+    ]
+  },
 };
 
 export function getChapterContent(chapterId: string): ChapterContent | undefined {

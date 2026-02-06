@@ -7,13 +7,15 @@ import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 interface DefinitionItemProps {
   term: string;
   description: string;
+  termStyle?: any;
+  descriptionStyle?: any;
 }
 
-function DefinitionItem({ term, description }: DefinitionItemProps) {
+function DefinitionItem({ term, description, termStyle, descriptionStyle }: DefinitionItemProps) {
   return (
     <View style={styles.container}>
-      <ThemedText style={styles.term}>{term}:</ThemedText>
-      <ThemedText style={styles.description}>{description}</ThemedText>
+      <ThemedText style={[styles.term, termStyle]}>{term}:</ThemedText>
+      <ThemedText style={[styles.description, descriptionStyle]}>{description}</ThemedText>
     </View>
   );
 }

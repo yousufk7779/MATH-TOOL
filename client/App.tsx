@@ -12,6 +12,11 @@ import {
   Nunito_600SemiBold,
   Nunito_700Bold,
 } from "@expo-google-fonts/nunito";
+import {
+  useFonts as useKalamFonts,
+  Kalam_400Regular,
+  Kalam_700Bold,
+} from "@expo-google-fonts/kalam";
 
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/lib/query-client";
@@ -38,14 +43,18 @@ export default function App() {
     Nunito_600SemiBold,
     Nunito_700Bold,
   });
+  const [kalamLoaded] = useKalamFonts({
+    Kalam_400Regular,
+    Kalam_700Bold,
+  });
 
   useEffect(() => {
-    if (fontsLoaded || fontError) {
+    if ((fontsLoaded && kalamLoaded) || fontError) {
       SplashScreen.hideAsync();
     }
-  }, [fontsLoaded, fontError]);
+  }, [fontsLoaded, kalamLoaded, fontError]);
 
-  if (!fontsLoaded && !fontError) {
+  if ((!fontsLoaded || !kalamLoaded) && !fontError) {
     return <View style={styles.loading} />;
   }
 

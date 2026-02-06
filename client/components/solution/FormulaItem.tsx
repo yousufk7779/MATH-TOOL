@@ -7,14 +7,15 @@ import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/them
 interface FormulaItemProps {
   name: string;
   formula: string;
+  textStyle?: any;
 }
 
-function FormulaItem({ name, formula }: FormulaItemProps) {
+function FormulaItem({ name, formula, textStyle }: FormulaItemProps) {
   return (
     <View style={styles.container}>
-      <ThemedText style={styles.name}>{name}</ThemedText>
+      <ThemedText style={[styles.name, textStyle]}>{name}</ThemedText>
       <View style={styles.formulaBox}>
-        <ThemedText style={styles.formula}>{formula}</ThemedText>
+        <ThemedText style={[styles.formula, textStyle]}>{formula}</ThemedText>
       </View>
     </View>
   );

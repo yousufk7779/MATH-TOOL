@@ -16,8 +16,7 @@ import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/them
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
 import { getChapterContent, ChapterContent, Exercise, Example, Theorem, Question } from "@/data/chapterContent";
-import { ChapterHTMLs } from "@/data/chapterHTMLs";
-import { WebView } from "react-native-webview";
+
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
 
@@ -106,8 +105,16 @@ function SolutionScreen() {
 
   const chapter = getChapter(chapterId);
   const content = getChapterContent(chapterId);
-  const htmlChapter = ChapterHTMLs[chapterId];
+  // const htmlChapter = ChapterHTMLs[chapterId];
   const accentColor = chapter?.color || JiguuColors.quadraticEquations;
+
+  // Handwritten Style Logic for Chapter 5
+  const isHandwritten = chapterId === "ch5-arithmetic-progressions";
+  const hwStyle = isHandwritten ? { fontFamily: "Kalam_400Regular", color: "#fff" } : {};
+  // For headings or larger text if needed
+  const hwTitleStyle = isHandwritten ? { fontFamily: "Kalam_700Bold", color: "#fff" } : {};
+  // Background for Chapter 5 needs to be dark for white text
+  const ch5Background = isHandwritten ? { backgroundColor: "#1a1a2e" } : {}; // Dark blue equivalent
 
   // Handle Deep Linking / Search Navigation
   React.useEffect(() => {
@@ -172,7 +179,7 @@ function SolutionScreen() {
         iconColor="#6C63FF"
         borderColor="#6C63FF"
       >
-        <ThemedText style={styles.introText}>{data.introduction}</ThemedText>
+        <ThemedText style={[styles.introText, hwStyle]}>{data.introduction}</ThemedText>
       </SectionCard>
 
       <SectionCard
@@ -182,7 +189,13 @@ function SolutionScreen() {
         backgroundColor="#E8F5E915"
       >
         {data.definitions.map((def, index) => (
-          <DefinitionItem key={index} term={def.term} description={def.description} />
+          <DefinitionItem
+            key={index}
+            term={def.term}
+            description={def.description}
+            termStyle={hwTitleStyle}
+            descriptionStyle={hwStyle}
+          />
         ))}
       </SectionCard>
 
@@ -207,7 +220,12 @@ function SolutionScreen() {
         backgroundColor="#F3E5F515"
       >
         {data.formulas.map((formula, index) => (
-          <FormulaItem key={index} name={formula.name} formula={formula.formula} />
+          <FormulaItem
+            key={index}
+            name={formula.name}
+            formula={formula.formula}
+            textStyle={hwStyle}
+          />
         ))}
       </SectionCard>
 
@@ -235,13 +253,13 @@ function SolutionScreen() {
       >
         {data.summary.map((item, index) => (
           <View key={index} style={styles.summaryRow}>
-            <ThemedText style={styles.summaryNumber}>{index + 1}.</ThemedText>
-            <ThemedText style={styles.summaryText}>{item}</ThemedText>
+            <ThemedText style={[styles.summaryNumber, hwTitleStyle]}>{index + 1}.</ThemedText>
+            <ThemedText style={[styles.summaryText, hwStyle]}>{item}</ThemedText>
           </View>
         ))}
       </SectionCard>
     </>
-  ), []);
+  ), [hwStyle, hwTitleStyle]);
 
   const renderExerciseMenu = useCallback((data: ChapterContent) => (
     <View style={styles.exerciseMenuContainer}>
@@ -311,111 +329,13 @@ function SolutionScreen() {
         </View>
       ) : null}
     </View>
-  ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion]);
+  ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion, hwStyle]);
 
-  const renderHTMLContent = useCallback(() => {
-    if (!htmlChapter) return null;
+  // Removed renderHTMLContent logic here
 
-    if (activeSection === "overview") {
-      return (
-        <WebView
-          source={htmlChapter.overview}
-          style={{ flex: 1 }}
-          originWhitelist={["*"]}
-          javaScriptEnabled={true}
-          domStorageEnabled={true}
-          showsVerticalScrollIndicator={false}
-        />
-      );
-    }
 
-    if (activeSection === "mcq") {
-      return (
-        <WebView
-          source={htmlChapter.mcqs}
-          style={{ flex: 1 }}
-          originWhitelist={["*"]}
-          javaScriptEnabled={true}
-          domStorageEnabled={true}
-          showsVerticalScrollIndicator={false}
-        />
-      );
-    }
-
-    if (activeSection === "exercises") {
-      if (exerciseView === "menu") {
-        return (
-          <ScrollView
-            style={{ flex: 1 }}
-            contentContainerStyle={styles.content}
-            showsVerticalScrollIndicator={false}
-          >
-            <View style={styles.exerciseMenuContainer}>
-              {htmlChapter.exercises.map((exc) => (
-                <NavigationButton
-                  key={exc.id}
-                  title={exc.name}
-                  color={accentColor}
-                  onPress={() => handleExerciseClick(exc)}
-                  icon="edit"
-                />
-              ))}
-              <NavigationButton
-                title="NCERT Examples"
-                color="#6C63FF"
-                onPress={handleExamplesClick}
-                icon="book"
-              />
-            </View>
-          </ScrollView>
-        );
-      }
-
-      const backHeader = (
-        <View style={{ paddingHorizontal: Spacing.xl, paddingBottom: Spacing.sm }}>
-          <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-            <Feather name="arrow-left" size={18} color={accentColor} />
-            <ThemedText style={[styles.backButtonText, { color: accentColor }]}>Back to Menu</ThemedText>
-          </Pressable>
-        </View>
-      );
-
-      if (exerciseView === "examples") {
-        return (
-          <View style={{ flex: 1 }}>
-            {backHeader}
-            <WebView
-              source={htmlChapter.examples}
-              style={{ flex: 1 }}
-              originWhitelist={["*"]}
-              javaScriptEnabled={true}
-              domStorageEnabled={true}
-            />
-          </View>
-        );
-      }
-
-      if (exerciseView === "exercise" && selectedExercise) {
-        return (
-          <View style={{ flex: 1 }}>
-            {backHeader}
-            <WebView
-              source={(selectedExercise as any).file}
-              style={{ flex: 1 }}
-              originWhitelist={["*"]}
-              javaScriptEnabled={true}
-              domStorageEnabled={true}
-            />
-          </View>
-        );
-      }
-
-      // Fallback
-      return null;
-    }
-
-    return null;
-  }, [activeSection, htmlChapter, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
+  // Placeholder removed
+  // }, [activeSection, htmlChapter, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
 
   const renderExamples = useCallback((data: ChapterContent) => {
     const examplesToShow = questionId
@@ -507,47 +427,7 @@ function SolutionScreen() {
 
 
 
-  if (htmlChapter) {
-    return (
-      <ScreenWrapper showBackButton>
-        <View style={{ flex: 1 }}>
-          <View>
-            <View style={[styles.header, { marginTop: Spacing.sm, marginBottom: Spacing.sm, paddingHorizontal: Spacing.xl }]}>
-              <ThemedText style={[styles.chapterNumber, { color: accentColor }]}>
-                Chapter {chapter?.number || ""}
-              </ThemedText>
-              <ThemedText style={styles.title}>{chapterName}</ThemedText>
-            </View>
 
-            <View style={[styles.tabContainer, { marginHorizontal: Spacing.xl, marginBottom: 0 }]}>
-              <TabButton
-                title="Overview"
-                isActive={activeSection === "overview"}
-                onPress={() => handleSectionChange("overview")}
-                color={accentColor}
-              />
-              <TabButton
-                title="Exercises"
-                isActive={activeSection === "exercises"}
-                onPress={() => handleSectionChange("exercises")}
-                color={accentColor}
-              />
-              <TabButton
-                title="MCQs"
-                isActive={activeSection === "mcq"}
-                onPress={() => handleSectionChange("mcq")}
-                color={accentColor}
-              />
-            </View>
-          </View>
-
-          <View style={{ flex: 1, backgroundColor: '#fff' }}>
-            {renderHTMLContent()}
-          </View>
-        </View>
-      </ScreenWrapper>
-    );
-  }
 
   if (!content) {
     return (
@@ -576,18 +456,19 @@ function SolutionScreen() {
   return (
     <ScreenWrapper showBackButton>
       <ScrollView
-        style={styles.scrollView}
+        style={[styles.scrollView, ch5Background]}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.header}>
-          <ThemedText style={[styles.chapterNumber, { color: accentColor }]}>
+          <ThemedText style={[styles.chapterNumber, { color: accentColor }, hwTitleStyle]}>
             Chapter {content.number}
           </ThemedText>
-          <ThemedText style={styles.title}>{content.title}</ThemedText>
+          <ThemedText style={[styles.title, hwTitleStyle]}>{content.title}</ThemedText>
         </View>
 
         <View style={styles.tabContainer}>
+          {/* Tabs remain same style for now, or could apply hwFont? user said "tabs behaviour same" */}
           <TabButton
             title="Overview"
             isActive={activeSection === "overview"}
