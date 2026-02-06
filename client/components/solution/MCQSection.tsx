@@ -86,7 +86,7 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
         onPress={() => setShowAnswers(!showAnswers)}
       >
         <Feather name={showAnswers ? "eye-off" : "check-circle"} size={18} color="#fff" />
-        <ThemedText style={styles.checkButtonText}>
+        <ThemedText style={[styles.checkButtonText, textStyle]}>
           {showAnswers ? "Hide Answers" : "Check Answers"}
         </ThemedText>
       </Pressable>

@@ -13,6 +13,7 @@ interface SectionCardProps {
   borderColor?: string;
   children: React.ReactNode;
   style?: ViewStyle;
+  titleStyle?: any;
 }
 
 function SectionCard({
@@ -23,6 +24,7 @@ function SectionCard({
   borderColor,
   children,
   style,
+  titleStyle,
 }: SectionCardProps) {
   return (
     <View
@@ -37,7 +39,7 @@ function SectionCard({
         <View style={[styles.iconContainer, { backgroundColor: iconColor + "20" }]}>
           <Feather name={icon} size={18} color={iconColor} />
         </View>
-        <ThemedText style={[styles.title, { color: iconColor }]}>{title}</ThemedText>
+        <ThemedText style={[styles.title, { color: iconColor }, titleStyle]}>{title}</ThemedText>
       </View>
       <View style={styles.content}>{children}</View>
     </View>

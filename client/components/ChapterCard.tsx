@@ -39,7 +39,7 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
       onPressIn={isAvailable ? handlePressIn : undefined}
       onPressOut={isAvailable ? handlePressOut : undefined}
       style={[
-        styles.card, 
+        styles.card,
         { backgroundColor: color },
         !isAvailable && styles.cardDisabled,
         isPressed && styles.cardPressed,
@@ -90,8 +90,9 @@ const styles = StyleSheet.create({
   },
   number: {
     ...Typography.body,
-    fontWeight: "700",
+    fontFamily: "Kalam_700Bold",
     color: "#fff",
+    fontSize: 18,
   },
   numberDisabled: {
     backgroundColor: JiguuColors.border,
@@ -102,7 +103,8 @@ const styles = StyleSheet.create({
   name: {
     ...Typography.body,
     color: "#fff",
-    fontWeight: "600",
+    fontFamily: "Kalam_700Bold",
+    fontSize: 18,
   },
   chevronIcon: {
     width: 12,

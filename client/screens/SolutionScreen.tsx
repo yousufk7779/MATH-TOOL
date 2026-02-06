@@ -184,6 +184,7 @@ function SolutionScreen() {
         icon="book-open"
         iconColor="#6C63FF"
         borderColor="#6C63FF"
+        titleStyle={hwTitleStyle}
       >
         <ThemedText style={[styles.introText, hwStyle]}>{data.introduction}</ThemedText>
       </SectionCard>
@@ -193,6 +194,7 @@ function SolutionScreen() {
         icon="bookmark"
         iconColor="#4CAF50"
         backgroundColor="#E8F5E915"
+        titleStyle={hwTitleStyle}
       >
         {data.definitions.map((def, index) => (
           <DefinitionItem
@@ -210,11 +212,12 @@ function SolutionScreen() {
         icon="star"
         iconColor="#FFA000"
         backgroundColor="#FFF8E115"
+        titleStyle={hwTitleStyle}
       >
         {data.keyPoints.map((point, index) => (
           <View key={index} style={styles.keyPointRow}>
             <View style={[styles.bullet, { backgroundColor: "#FFA000" }]} />
-            <ThemedText style={styles.keyPointText}>{point}</ThemedText>
+            <ThemedText style={[styles.keyPointText, hwStyle]}>{point}</ThemedText>
           </View>
         ))}
       </SectionCard>
@@ -224,6 +227,7 @@ function SolutionScreen() {
         icon="edit-3"
         iconColor="#9C27B0"
         backgroundColor="#F3E5F515"
+        titleStyle={hwTitleStyle}
       >
         {data.formulas.map((formula, index) => (
           <FormulaItem
@@ -240,13 +244,14 @@ function SolutionScreen() {
         icon="zap"
         iconColor="#2196F3"
         backgroundColor="#E3F2FD15"
+        titleStyle={hwTitleStyle}
       >
         {data.crux.map((item, index) => (
           <View key={index} style={styles.cruxRow}>
             <View style={[styles.cruxNumber, { backgroundColor: "#2196F3" }]}>
               <ThemedText style={styles.cruxNumberText}>{index + 1}</ThemedText>
             </View>
-            <ThemedText style={styles.cruxText}>{item}</ThemedText>
+            <ThemedText style={[styles.cruxText, hwStyle]}>{item}</ThemedText>
           </View>
         ))}
       </SectionCard>
@@ -256,6 +261,7 @@ function SolutionScreen() {
         icon="file-text"
         iconColor="#1565C0"
         backgroundColor="#E3F2FD15"
+        titleStyle={hwTitleStyle}
       >
         {data.summary.map((item, index) => (
           <View key={index} style={styles.summaryRow}>
@@ -446,43 +452,41 @@ function SolutionScreen() {
   if (!content) {
     return (
       <ScreenWrapper showBackButton>
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={styles.content}
-          showsVerticalScrollIndicator={false}
-        >
+        <View style={styles.staticContainer}>
           <View style={styles.header}>
-            <ThemedText style={[styles.chapterNumber, { color: accentColor }]}>
-              Chapter {chapter?.number || ""}
+            <ThemedText style={[styles.title, { color: accentColor }]}>
+              {chapter?.number ? `${chapter.number}. ${chapterName}` : chapterName}
             </ThemedText>
-            <ThemedText style={styles.title}>{chapterName}</ThemedText>
           </View>
-          <EmptyState
-            title="Coming Soon"
-            message="Step-by-step solutions for this chapter will be added soon."
-            icon="book-open"
-          />
-        </ScrollView>
+          <ScrollView
+            style={styles.scrollView}
+            contentContainerStyle={styles.content}
+            showsVerticalScrollIndicator={false}
+          >
+            <EmptyState
+              title="Coming Soon"
+              message="Step-by-step solutions for this chapter will be added soon."
+              icon="book-open"
+            />
+          </ScrollView>
+        </View>
       </ScreenWrapper>
     );
   }
 
   return (
     <ScreenWrapper showBackButton>
-      <ScrollView
-        style={[styles.scrollView, ch5Background]}
-        contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}
-      >
+      <View style={[styles.staticContainer, ch5Background]}>
         <View style={styles.header}>
-          <ThemedText style={[styles.chapterNumber, { color: accentColor }, hwTitleStyle]}>
-            Chapter {content.number}
+          <View style={[styles.chapterIcon, { backgroundColor: accentColor }]}>
+            <ThemedText style={styles.chapterIconText}>{content.number}</ThemedText>
+          </View>
+          <ThemedText style={[styles.title, hwTitleStyle]} numberOfLines={1}>
+            {content.title}
           </ThemedText>
-          <ThemedText style={[styles.title, hwTitleStyle]}>{content.title}</ThemedText>
         </View>
 
         <View style={styles.tabContainer}>
-          {/* Tabs remain same style for now, or could apply hwFont? user said "tabs behaviour same" */}
           <TabButton
             title="Overview"
             isActive={activeSection === "overview"}
@@ -506,10 +510,16 @@ function SolutionScreen() {
           />
         </View>
 
-        {activeSection === "overview" ? renderOverview(content) : null}
-        {activeSection === "exercises" ? renderExercises(content) : null}
-        {activeSection === "mcq" ? renderMCQ(content) : null}
-      </ScrollView>
+        <ScrollView
+          style={styles.scrollView}
+          contentContainerStyle={styles.content}
+          showsVerticalScrollIndicator={false}
+        >
+          {activeSection === "overview" ? renderOverview(content) : null}
+          {activeSection === "exercises" ? renderExercises(content) : null}
+          {activeSection === "mcq" ? renderMCQ(content) : null}
+        </ScrollView>
+      </View>
     </ScreenWrapper>
   );
 }
@@ -517,31 +527,47 @@ function SolutionScreen() {
 export default memo(SolutionScreen);
 
 const styles = StyleSheet.create({
+  staticContainer: {
+    flex: 1,
+  },
   scrollView: {
     flex: 1,
   },
   content: {
     paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing.lg,
+    paddingTop: Spacing.sm,
     paddingBottom: 120,
   },
   header: {
-    marginBottom: Spacing.xl,
+    flexDirection: "row",
+    marginBottom: Spacing.sm,
+    paddingHorizontal: Spacing.lg,
+    paddingTop: Spacing.sm,
     alignItems: "center",
+    justifyContent: "center",
   },
-  chapterNumber: {
-    ...Typography.small,
-    fontWeight: "700",
-    marginBottom: Spacing.xs,
+  chapterIcon: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    justifyContent: "center",
+    alignItems: "center",
+    marginRight: Spacing.sm,
+  },
+  chapterIconText: {
+    color: "#fff",
+    fontSize: 14,
+    fontFamily: "Nunito_700Bold",
   },
   title: {
-    ...Typography.h3,
+    ...Typography.h4,
     color: JiguuColors.textPrimary,
     textAlign: "center",
   },
   tabContainer: {
     flexDirection: "row",
-    marginBottom: Spacing.xl,
+    marginBottom: Spacing.sm,
+    marginHorizontal: Spacing.lg,
     backgroundColor: JiguuColors.surface,
     borderRadius: BorderRadius.md,
     padding: Spacing.xs,
@@ -549,7 +575,7 @@ const styles = StyleSheet.create({
   },
   tabButton: {
     flex: 1,
-    paddingVertical: Spacing.sm,
+    paddingVertical: 6, // Reduced vertical padding
     alignItems: "center",
     borderRadius: BorderRadius.sm,
     borderWidth: 1,

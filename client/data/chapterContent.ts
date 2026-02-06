@@ -2137,71 +2137,146 @@ export const chapterContents: Record<string, ChapterContent> = {
         id: "ex5.1",
         name: "Exercise 5.1",
         questions: [
-          {
-            id: "q1", number: "1", question: "In which situations does the list of numbers make an AP?", solution: [
-              "(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.",
-              "Fare for 1st km = 15",
-              "Fare for 2nd km = 15 + 8 = 23, 3rd = 31...",
-              "List: 15, 23, 31... Difference = 8 (Same). Yes AP.",
-              "(ii) Air in cylinder: Removes 1/4 of remaining air.",
-              "Initial = 1. Removed = 1/4. Remaining = 3/4.",
-              "Next removed = 1/4 * 3/4 = 3/16. Remaining = 9/16.",
-              "Diff 1 = -1/4. Diff 2 = -3/16. Not Same. No AP."
-            ], answer: "Yes, No, Yes, No"
-          },
-          {
-            id: "q2", number: "2", question: "Write first four terms.", solution: [
-              "(i) a = 10, d = 10 -> 10, 20, 30, 40",
-              "(ii) a = -2, d = 0 -> -2, -2, -2, -2",
-              "(iii) a = 4, d = -3 -> 4, 1, -2, -5"
-            ], answer: "See solution"
-          },
-          {
-            id: "q3", number: "3", question: "Write first term (a) and common difference (d).", solution: [
-              "(i) 3, 1, -1, -3... -> a=3, d=-2",
-              "(ii) -5, -1, 3, 7... -> a=-5, d=4"
-            ], answer: "a=3, d=-2 etc"
-          },
-          {
-            id: "q4", number: "4", question: "Which are APs?", solution: [
-              "(i) 2, 4, 8, 16... -> Diff 2, 4. Not AP.",
-              "(ii) 2, 5/2, 3... -> Diff 1/2. Yes AP.",
-              "(v) 3, 3+√2, 3+2√2... -> Diff √2. Yes AP."
-            ], answer: "See solution"
-          }
+          { id: "q1", number: "1", question: "In which of the following situations, does the list of numbers involved make an arithmetic progression, and why?", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q1_i", number: "1(i)", question: "Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.", solution: ["Fare 1st km = 15", "2nd km = 23", "3rd km = 31", "Diff = 8. Yes AP."], answer: "Yes" },
+          { id: "q1_ii", number: "1(ii)", question: "Air in cylinder: Removes 1/4 of remaining.", solution: ["Start=1, Remove 1/4 -> 3/4", "Remove 1/4 of 3/4 -> 3/16. Rem=9/16", "Diff not constant. No AP."], answer: "No" },
+          { id: "q1_iii", number: "1(iii)", question: "Well digging: ₹150 first m, rises ₹50.", solution: ["150, 200, 250...", "Diff = 50. Yes AP."], answer: "Yes" },
+          { id: "q1_iv", number: "1(iv)", question: "Compound Interest ₹10000 at 8%.", solution: ["Calculated on changing amount.", "Diff keeps increasing. No AP."], answer: "No" },
+
+          { id: "q2", number: "2", question: "Write first four terms of the AP, when the first term a and the common difference d are given as follows:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q2_i", number: "2(i)", question: "a=10, d=10", solution: ["10, 20, 30, 40"], answer: "10, 20, 30, 40" },
+          { id: "q2_ii", number: "2(ii)", question: "a=-2, d=0", solution: ["-2, -2, -2, -2"], answer: "-2, -2, -2, -2" },
+          { id: "q2_iii", number: "2(iii)", question: "a=4, d=-3", solution: ["4, 1, -2, -5"], answer: "4, 1, -2, -5" },
+          { id: "q2_iv", number: "2(iv)", question: "a=-1, d=1/2", solution: ["-1, -1/2, 0, 1/2"], answer: "-1, -1/2, 0, 1/2" },
+          { id: "q2_v", number: "2(v)", question: "a=-1.25, d=-0.25", solution: ["-1.25, -1.50, -1.75, -2.00"], answer: "-1.25, -1.50, -1.75, -2.00" },
+
+          { id: "q3", number: "3", question: "For the following APs, write the first term and the common difference:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q3_i", number: "3(i)", question: "3, 1, -1, -3...", solution: ["a=3, d=-2"], answer: "a=3, d=-2" },
+          { id: "q3_ii", number: "3(ii)", question: "-5, -1, 3, 7...", solution: ["a=-5, d=4"], answer: "a=-5, d=4" },
+          { id: "q3_iii", number: "3(iii)", question: "1/3, 5/3, 9/3...", solution: ["a=1/3, d=4/3"], answer: "a=1/3, d=4/3" },
+          { id: "q3_iv", number: "3(iv)", question: "0.6, 1.7, 2.8...", solution: ["a=0.6, d=1.1"], answer: "a=0.6, d=1.1" },
+
+          { id: "q4", number: "4", question: "Which of the following are APs? If they form an AP, find the common difference d and write three more terms.", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q4_i", number: "4(i)", question: "2, 4, 8, 16...", solution: ["Diff 2, 4. No AP"], answer: "No" },
+          { id: "q4_ii", number: "4(ii)", question: "2, 5/2, 3...", solution: ["Diff 1/2. Yes AP. Next: 4, 9/2, 5"], answer: "Yes" },
+          { id: "q4_iii", number: "4(iii)", question: "-1.2, -3.2, -5.2...", solution: ["Diff -2. Yes AP. Next: -7.2, -9.2, -11.2"], answer: "Yes" },
+          { id: "q4_iv", number: "4(iv)", question: "-10, -6, -2, 2...", solution: ["Diff 4. Yes AP. Next: 6, 10, 14"], answer: "Yes" },
+          { id: "q4_v", number: "4(v)", question: "3, 3+√2, 3+2√2...", solution: ["Diff √2. Yes AP."], answer: "Yes" },
+          { id: "q4_vi", number: "4(vi)", question: "0.2, 0.22, 0.222...", solution: ["Diff not same. No AP."], answer: "No" },
+          { id: "q4_vii", number: "4(vii)", question: "0, -4, -8...", solution: ["Diff -4. Yes AP."], answer: "Yes" },
+          { id: "q4_viii", number: "4(viii)", question: "-1/2, -1/2, -1/2...", solution: ["Diff 0. Yes AP."], answer: "Yes" },
+          { id: "q4_ix", number: "4(ix)", question: "1, 3, 9, 27...", solution: ["Diff 2, 6. Not AP."], answer: "No" },
+          { id: "q4_x", number: "4(x)", question: "a, 2a, 3a...", solution: ["Diff a. Yes AP."], answer: "Yes" },
+          { id: "q4_xi", number: "4(xi)", question: "a, a^2, a^3...", solution: ["Not AP"], answer: "No" },
+          { id: "q4_xii", number: "4(xii)", question: "√2, √8, √18...", solution: ["√2, 2√2, 3√2... Diff √2. Yes AP."], answer: "Yes" },
+          { id: "q4_xiii", number: "4(xiii)", question: "√3, √6, √9...", solution: ["Not AP"], answer: "No" },
+          { id: "q4_xiv", number: "4(xiv)", question: "1^2, 3^2, 5^2...", solution: ["1, 9, 25... Diff 8, 16. No AP."], answer: "No" },
+          { id: "q4_xv", number: "4(xv)", question: "1^2, 5^2, 7^2, 73...", solution: ["1, 25, 49, 73... Diff 24. Yes AP."], answer: "Yes" }
         ]
       },
       {
         id: "ex5.2",
         name: "Exercise 5.2",
         questions: [
-          {
-            id: "q1", number: "1", question: "Fill in the blank: a=7, d=3, n=8, an=...", solution: [
-              "We know an = a + (n-1)d",
-              "an = 7 + (8-1)3",
-              "an = 7 + 21 = 28"
-            ], answer: "28"
-          }
+          { id: "q1", number: "1", question: "Fill in the blanks in the table:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q1_i", number: "1(i)", question: "a=7, d=3, n=8. Find an.", solution: ["an = 7 + (8-1)3", "an = 7 + 21 = 28"], answer: "28" },
+          { id: "q1_ii", number: "1(ii)", question: "a=-18, n=10, an=0. Find d.", solution: ["0 = -18 + 9d", "18 = 9d -> d = 2"], answer: "d=2" },
+          { id: "q1_iii", number: "1(iii)", question: "d=-3, n=18, an=-5. Find a.", solution: ["-5 = a + 17(-3)", "-5 = a - 51 -> a = 46"], answer: "a=46" },
+          { id: "q1_iv", number: "1(iv)", question: "a=-18.9, d=2.5, an=3.6. Find n.", solution: ["3.6 = -18.9 + (n-1)2.5", "22.5 = (n-1)2.5 -> n-1=9 -> n=10"], answer: "n=10" },
+          { id: "q1_v", number: "1(v)", question: "a=3.5, d=0, n=105. Find an.", solution: ["an = 3.5 + 0 = 3.5"], answer: "3.5" },
+          { id: "q2", number: "2", question: "Choose the correct choice in the following and justify:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q2_i", number: "2(i)", question: "30th term of AP: 10, 7, 4...", solution: ["a=10, d=-3", "a30 = 10 + 29(-3) = -77"], answer: "-77" },
+          { id: "q2_ii", number: "2(ii)", question: "11th term of AP: -3, -1/2, 2...", solution: ["a=-3, d=2.5", "a11 = -3 + 10(2.5) = 22"], answer: "22" },
+          { id: "q3", number: "3", question: "In the following APs, find the missing terms in the boxes:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q3_i", number: "3(i)", question: "2, _, 26", solution: ["a=2, a3=26", "2+2d=26 -> d=12", "Missing: 2+12=14"], answer: "14" },
+          { id: "q3_ii", number: "3(ii)", question: "_, 13, _, 3", solution: ["a+d=13, a+3d=3", "2d=-10 -> d=-5", "a=18. Missing: 18, 8"], answer: "18, 8" },
+          { id: "q3_iii", number: "3(iii)", question: "5, _, _, 9.5", solution: ["a=5, a4=9.5", "3d=4.5 -> d=1.5", "Terms: 6.5, 8"], answer: "6.5, 8" },
+          { id: "q3_iv", number: "3(iv)", question: "-4, _, _, _, _, 6", solution: ["a=-4, a6=6", "5d=10 -> d=2", "Terms: -2, 0, 2, 4"], answer: "-2, 0, 2, 4" },
+          { id: "q3_v", number: "3(v)", question: "_, 38, _, _, _, -22", solution: ["a+d=38, a+5d=-22", "4d=-60 -> d=-15", "a=53. Terms: 53, 23, 8, -7"], answer: "53, 23, 8, -7" },
+          { id: "q4", number: "4", question: "Which term of 3, 8, 13, 18 is 78?", solution: ["a=3, d=5, an=78", "78 = 3 + (n-1)5 -> 75=5(n-1) -> n=16"], answer: "16th" },
+          { id: "q5", number: "5", question: "Find the number of terms in each of the following APs:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q5_i", number: "5(i)", question: "Find no. of terms: 7, 13, 19... 205", solution: ["a=7, d=6, an=205", "205 = 7 + (n-1)6 -> n=34"], answer: "34" },
+          { id: "q5_ii", number: "5(ii)", question: "18, 15.5, 13... -47", solution: ["a=18, d=-2.5, an=-47", "-47 = 18 + (n-1)(-2.5) -> n=27"], answer: "27" },
+          { id: "q6", number: "6", question: "Check if -150 is term of 11, 8, 5, 2...", solution: ["a=11, d=-3", "-150 = 11 + (n-1)(-3)", "161/3 = n-1. Not integer. No."], answer: "No" },
+          { id: "q7", number: "7", question: "Find 31st term if 11th is 38 and 16th is 73.", solution: ["a+10d=38, a+15d=73", "5d=35 -> d=7, a=-32", "a31 = -32 + 30(7) = 178"], answer: "178" },
+          { id: "q8", number: "8", question: "AP of 50 terms, 3rd is 12, last is 106. Find 29th.", solution: ["a+2d=12, a+49d=106", "47d=94 -> d=2, a=8", "a29 = 8 + 28(2) = 64"], answer: "64" },
+          { id: "q9", number: "9", question: "3rd term 4, 9th term -8. Which term 0?", solution: ["a+2d=4, a+8d=-8", "6d=-12 -> d=-2, a=8", "0 = 8 + (n-1)(-2) -> n=5"], answer: "5th" },
+          { id: "q10", number: "10", question: "17th term exceeds 10th by 7. Find d.", solution: ["a17 - a10 = 7", "7d = 7 -> d = 1"], answer: "1" },
+          { id: "q11", number: "11", question: "Which term of 3, 15, 27... will be 132 more than 54th?", solution: ["a=3, d=12", "a54 = 3 + 53(12) = 639", "Req = 639+132=771", "771 = 3 + (n-1)12 -> n=65"], answer: "65th" },
+          { id: "q12", number: "12", question: "Two APs same d. Diff between 100th is 100. Diff between 1000th?", solution: ["Diff is constant for same d.", "Answer is 100."], answer: "100" },
+          { id: "q13", number: "13", question: "How many 3-digit numbers divisible by 7?", solution: ["105, 112... 994", "a=105, d=7, an=994", "994 = 105 + (n-1)7 -> n=128"], answer: "128" },
+          { id: "q14", number: "14", question: "Multiples of 4 between 10 and 250?", solution: ["12, 16... 248", "a=12, d=4, an=248", "248 = 12 + (n-1)4 -> n=60"], answer: "60" },
+          { id: "q15", number: "15", question: "For what n are nth terms of 63, 65... and 3, 10... equal?", solution: ["63 + (n-1)2 = 3 + (n-1)7", "61 + 2n = 7n - 4 -> 5n = 65 -> n=13"], answer: "13" },
+          { id: "q16", number: "16", question: "Determine AP: 3rd term 16, 7th exceeds 5th by 12.", solution: ["a+2d=16", "2d=12 -> d=6", "a=4. AP: 4, 10, 16..."], answer: "4, 10, 16..." },
+          { id: "q17", number: "17", question: "20th term from last of 3, 8, 13... 253.", solution: ["Reverse: 253, 248... 3", "a=253, d=-5", "a20 = 253 + 19(-5) = 158"], answer: "158" },
+          { id: "q18", number: "18", question: "Sum 4th+8th=24, 6th+10th=44. Find AP.", solution: ["2a+10d=24 -> a+5d=12", "2a+14d=44 -> a+7d=22", "d=5, a=-13. AP: -13, -8, -3..."], answer: "-13, -8, -3" },
+          { id: "q19", number: "19", question: "Salary 5000, inc 200. When 7000?", solution: ["5000 + (n-1)200 = 7000", "(n-1)200 = 2000 -> n=11", "11th year"], answer: "11th year" },
+          { id: "q20", number: "20", question: "Savings 5, inc 1.75. When 20.75?", solution: ["5 + (n-1)1.75 = 20.75", "(n-1)1.75 = 15.75 -> n=10"], answer: "10th week" }
         ]
       },
       {
         id: "ex5.3",
         name: "Exercise 5.3",
         questions: [
-          {
-            id: "q1", number: "1", question: "Find sum of AP: 2, 7, 12... to 10 terms.", solution: [
-              "a = 2, d = 5, n = 10",
-              "Sn = n/2 [2a + (n-1)d]",
-              "S10 = 10/2 [4 + 45]",
-              "S10 = 5 * 49 = 245"
-            ], answer: "245"
-          }
+          { id: "q1", number: "1", question: "Find the sum of the following APs:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q1_i", number: "1(i)", question: "Sum of 2, 7, 12... to 10 terms.", solution: ["S10 = 5[4 + 45] = 245"], answer: "245" },
+          { id: "q1_ii", number: "1(ii)", question: "Sum of -37, -33, -29... to 12 terms.", solution: ["S12 = 6[-74 + 44] = -180"], answer: "-180" },
+          { id: "q1_iii", number: "1(iii)", question: "Sum of 0.6, 1.7... to 100 terms.", solution: ["S100 = 50[1.2 + 108.9] = 5505"], answer: "5505" },
+          { id: "q1_iv", number: "1(iv)", question: "Sum of 1/15, 1/12... to 11 terms.", solution: ["S11 = 11/2[2/15 + 10/60] = 33/20"], answer: "33/20" },
+          { id: "q2", number: "2", question: "Find the sums given below:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q2_i", number: "2(i)", question: "Sum: 7 + 10.5 + 14 + ... + 84", solution: ["an=84 -> n=23. S23 = 23/2(7+84) = 1046.5"], answer: "1046.5" },
+          { id: "q2_ii", number: "2(ii)", question: "Sum: 34 + 32 + ... + 10", solution: ["n=13. S13 = 13/2(34+10) = 286"], answer: "286" },
+          { id: "q2_iii", number: "2(iii)", question: "Sum: -5 + (-8) + ... + (-230)", solution: ["n=76. S76 = 38(-5-230) = -8930"], answer: "-8930" },
+          { id: "q3", number: "3", question: "In a AP:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q3_i", number: "3(i)", question: "a=5, d=3, an=50. Find n, Sn.", solution: ["50=5+(n-1)3 -> n=16. S16=440"], answer: "n=16, Sn=440" },
+          { id: "q3_ii", number: "3(ii)", question: "a=7, a13=35. Find d, S13.", solution: ["a+12d=35 -> d=7/3. S13=273"], answer: "d=7/3, S13=273" },
+          { id: "q3_iii", number: "3(iii)", question: "a12=37, d=3. Find a, S12.", solution: ["a+33=37 -> a=4. S12=246"], answer: "a=4, S12=246" },
+          { id: "q3_iv", number: "3(iv)", question: "a3=15, S10=125. Find d, a10.", solution: ["d=-1, a=17. a10=8"], answer: "d=-1, a10=8" },
+          { id: "q3_v", number: "3(v)", question: "d=5, S9=75. Find a, a9.", solution: ["a=-35/3, a9=85/3"], answer: "a=-35/3, a9=85/3" },
+          { id: "q3_vi", number: "3(vi)", question: "a=2, d=8, Sn=90. Find n, an.", solution: ["90=n/2[4+(n-1)8] -> 4n^2-2n-90=0 -> n=5. an=34"], answer: "n=5, an=34" },
+          { id: "q3_vii", number: "3(vii)", question: "a=8, an=62, Sn=210. Find n, d.", solution: ["n=6, d=54/5"], answer: "n=6, d=54/5" },
+          { id: "q3_viii", number: "3(viii)", question: "an=4, d=2, Sn=-14. Find n, a.", solution: ["n=7, a=-8"], answer: "n=7, a=-8" },
+          { id: "q3_ix", number: "3(ix)", question: "a=3, n=8, S=192. Find d.", solution: ["192=4[6+7d] -> d=6"], answer: "d=6" },
+          { id: "q3_x", number: "3(x)", question: "l=28, S=144, n=9. Find a.", solution: ["144=9/2(a+28) -> a=4"], answer: "a=4" },
+          { id: "q4", number: "4", question: "How many terms of 9, 17... sum to 636?", solution: ["636 = n/2[18+(n-1)8] -> 4n^2+5n-636=0 -> n=12"], answer: "12" },
+          { id: "q5", number: "5", question: "a=5, l=45, Sum=400. Find n, d.", solution: ["400=n/2(50) -> n=16. 45=5+15d -> d=8/3"], answer: "n=16, d=8/3" },
+          { id: "q6", number: "6", question: "a=17, l=350, d=9. Find n, Sum.", solution: ["n=38. S=6973"], answer: "n=38, S=6973" },
+          { id: "q7", number: "7", question: "Sum of 22 terms if d=7, a22=149.", solution: ["a=2. S22=1661"], answer: "1661" },
+          { id: "q8", number: "8", question: "Sum of 51 terms if 2nd 14, 3rd 18.", solution: ["d=4, a=10. S51=5610"], answer: "5610" },
+          { id: "q9", number: "9", question: "S7=49, S17=289. Find Sn.", solution: ["a+3d=7, a+8d=17 -> d=2, a=1. Sn = n/2[2+(n-1)2] = n^2"], answer: "n²" },
+          { id: "q10", number: "10", question: "Show that a1, a2 ... an... form an AP where an is defined as below:", solution: ["See the sub-questions below for solutions."], answer: "Check parts" },
+          { id: "q10_i", number: "10(i)", question: "an = 3 + 4n. Find S15.", solution: ["a=7, d=4. S15=525"], answer: "525" },
+          { id: "q10_ii", number: "10(ii)", question: "an = 9 - 5n. Find S15.", solution: ["a=4, d=-5. S15=-465"], answer: "-465" },
+          { id: "q11", number: "11", question: "Sn = 4n - n². Find S1, S2, a2, a3, a10, an.", solution: ["S1=3, S2=4, a2=1, a3=-1, a10=-15, an=5-2n"], answer: "See solution" },
+          { id: "q12", number: "12", question: "Sum of first 40 pos integers div by 6.", solution: ["6, 12... S40 = 20[12 + 39(6)] = 4920"], answer: "4920" },
+          { id: "q13", number: "13", question: "Sum of first 15 multiples of 8.", solution: ["8, 16... S15 = 15/2[16 + 14(8)] = 960"], answer: "960" },
+          { id: "q14", number: "14", question: "Sum of odd numbers 0 to 50.", solution: ["1, 3... 49. n=25. S25=625"], answer: "625" },
+          { id: "q15", number: "15", question: "Penalty: 200, 250... for 30 days.", solution: ["S30 = 15[400 + 29(50)] = 27750"], answer: "27750" },
+          { id: "q16", number: "16", question: "700 for 7 prizes. Each 20 less.", solution: ["160, 140, 120, 100, 80, 60, 40"], answer: "See solution" },
+          { id: "q17", number: "17", question: "Planting trees. I-XII, 3 sections.", solution: ["3, 6... 36. S12 = 6(39) = 234"], answer: "234" },
+          { id: "q18", number: "18", question: "Spiral length 13 semi-circles. 0.5, 1.0...", solution: ["L = 143 cm"], answer: "143" },
+          { id: "q19", number: "19", question: "200 logs. 20, 19... How many rows?", solution: ["n=16 (25 invalid). Top row = 5"], answer: "16 rows, 5 logs" },
+          { id: "q20", number: "20", question: "Potato race. 10 potatoes.", solution: ["10, 16, 22... S10 = 370"], answer: "370 m" }
         ]
       }
     ],
     examples: [
-      { id: "eg1", number: "1", question: "For AP: 3/2, 1/2, -1/2... write a and d.", solution: ["a = 3/2", "d = 1/2 - 3/2 = -1"], answer: "a=3/2, d=-1" },
-      { id: "eg2", number: "2", question: "Which of these are AP?", solution: ["Check common difference d."], answer: "Check diff" }
+      { id: "eg1", number: "1", question: "For the AP: 3/2, 1/2, -1/2, -3/2... write first term a and common difference d.", solution: ["First term a = 3/2", "d = 1/2 - 3/2 = -1"], answer: "a = 3/2, d = -1" },
+      { id: "eg2", number: "2", question: "Which of the list of numbers form an AP? (i) 4, 10, 16, 22... (ii) 1, -1, -3, -5...", solution: ["(i) 10-4=6, 16-10=6. Constant diff. Yes AP.", "Next: 22+6=28, 28+6=34", "(ii) -1-1=-2, -3-(-1)=-2. Yes AP.", "Next: -5-2=-7, -7-2=-9"], answer: "See solution" },
+      { id: "eg3", number: "3", question: "Find the 10th term of the AP: 2, 7, 12...", solution: ["a = 2, d = 5, n = 10", "an = a + (n-1)d", "a10 = 2 + 9(5) = 47"], answer: "47" },
+      { id: "eg4", number: "4", question: "Which term of the AP: 21, 18, 15... is -81? Also is any term 0?", solution: ["a = 21, d = -3", "-81 = 21 + (n-1)(-3) -> -102 = (n-1)(-3) -> 34 = n-1 -> n = 35", "Check 0: 0 = 21 + (m-1)(-3) -> -21 = (m-1)(-3) -> 7 = m-1 -> m = 8"], answer: "35th term is -81; 8th term is 0" },
+      { id: "eg5", number: "5", question: "Determine the AP whose 3rd term is 5 and 7th term is 9.", solution: ["a + 2d = 5", "a + 6d = 9", "Subtract: 4d = 4 -> d = 1", "a + 2 = 5 -> a = 3", "AP: 3, 4, 5..."], answer: "3, 4, 5..." },
+      { id: "eg6", number: "6", question: "Check whether 301 is a term of 5, 11, 17...", solution: ["a = 5, d = 6", "301 = 5 + (n-1)6", "296 = (n-1)6 -> 49.33 = n-1", "n is not integer."], answer: "No" },
+      { id: "eg7", number: "7", question: "How many two-digit numbers are divisible by 3?", solution: ["12, 15... 99", "a = 12, d = 3, an = 99", "99 = 12 + (n-1)3", "87 = (n-1)3 -> 29 = n-1 -> n = 30"], answer: "30" },
+      { id: "eg8", number: "8", question: "Find the 11th term from the last term of the AP: 10, 7, 4... -62", solution: ["Reverse AP: -62... 4, 7, 10", "a = -62, d = 3", "a11 = -62 + 10(3) = -32"], answer: "-32" },
+      { id: "eg9", number: "9", question: "Sum of ₹1000 at 8% SI for n years.", solution: ["I = PRT/100", "Year 1: 80, Year 2: 160...", "AP with a=80, d=80", "30th year: a30 = 80 + 29(80) = 2400"], answer: "₹ 2400" },
+      { id: "eg10", number: "10", question: "Rose plants: 23, 21, 19... last row 5. Rows?", solution: ["a = 23, d = -2, an = 5", "5 = 23 + (n-1)(-2) -> -18 = (n-1)(-2) -> 9 = n-1 -> n = 10"], answer: "10" },
+      { id: "eg11", number: "11", question: "Find sum of first 22 terms of AP: 8, 3, -2...", solution: ["a = 8, d = -5, n = 22", "Sn = n/2[2a + (n-1)d]", "S22 = 11[16 + 21(-5)] = 11(-89) = -979"], answer: "-979" },
+      { id: "eg12", number: "12", question: "S14 = 1050, a = 10. Find a20.", solution: ["1050 = 7[20 + 13d] -> 150 = 20 + 13d -> 130 = 13d -> d=10", "a20 = 10 + 19(10) = 200"], answer: "200" },
+      { id: "eg13", number: "13", question: "How many terms of 24, 21, 18... sum to 78?", solution: ["S = 78, a = 24, d = -3", "78 = n/2[48 + (n-1)(-3)]", "156 = n(51-3n) -> 3n^2 - 51n + 156 = 0", "n^2 - 17n + 52 = 0 -> (n-4)(n-13)=0", "n=4 or 13"], answer: "4 or 13" },
+      { id: "eg14", number: "14", question: "Find sum of (i) First 1000 pos integers (ii) First n pos integers", solution: ["(i) S = 1000(1001)/2 = 500500", "(ii) S = n(n+1)/2"], answer: "500500" },
+      { id: "eg15", number: "15", question: "Sum of first 24 terms where an = 3 + 2n", solution: ["a1=5, a2=7, a3=9 -> AP: 5, 7, 9", "a=5, d=2, n=24", "S24 = 12[10 + 46] = 12(56) = 672"], answer: "672" },
+      { id: "eg16", number: "16", question: "TV production: 3rd yr 600, 7th yr 700. Find...", solution: ["a+2d = 600, a+6d = 700 -> 4d = 100 -> d = 25, a = 550", "(i) 550", "(ii) 10th yr: 550 + 9(25) = 775", "(iii) S7 = 3.5[1100 + 150] = 4375"], answer: "550, 775, 4375" }
     ],
     mcqs: [
       { id: "mcq5_1", question: "The common difference of the AP: 3, 1, -1, -3... is:", options: ["2", "-2", "3", "0"], correctAnswer: "b" },
@@ -2213,7 +2288,7 @@ export const chapterContents: Record<string, ChapterContent> = {
       { id: "mcq5_7", question: "Sum of first 5 multiples of 3:", options: ["45", "55", "65", "75"], correctAnswer: "a" },
       { id: "mcq5_8", question: "If d=0, AP is:", options: ["Increasing", "Decreasing", "Constant", "None"], correctAnswer: "c" },
       { id: "mcq5_9", question: "30th term of 10, 7, 4...", options: ["97", "77", "-77", "-87"], correctAnswer: "c" },
-      { id: "mcq5_10", question: "Sum of first n positive integers:", options: ["n/2", "n^2", "n(n+1)/2", "n(n-1)"], correctAnswer: "c" }
+      { id: "mcq5_10", question: "Sum of first n positive integers:", options: ["n/2", "n²", "n(n+1)/2", "n(n-1)"], correctAnswer: "c" }
     ],
     summary: [
       "Common Difference d can be positive, negative or zero.",

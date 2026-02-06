@@ -51,7 +51,7 @@ export const ColorButton = memo(function ColorButton({
       ]}
     >
       <ThemedText style={styles.buttonText}>
-        {title.toUpperCase()}
+        {title}
       </ThemedText>
     </Pressable>
   );
@@ -71,8 +71,8 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     ...Typography.button,
-    fontWeight: "700",
+    fontFamily: "Kalam_700Bold",
     color: JiguuColors.textOnColor,
-    letterSpacing: 1,
+    fontSize: 18, // Slightly larger for readability
   },
 });
