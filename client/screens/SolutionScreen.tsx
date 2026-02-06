@@ -16,6 +16,8 @@ import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/them
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
 import { getChapterContent, ChapterContent, Exercise, Example, Theorem, Question } from "@/data/chapterContent";
+import { ChapterHTMLs } from "@/data/chapterHTMLs";
+import { WebView } from "react-native-webview";
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
 
@@ -104,6 +106,7 @@ function SolutionScreen() {
 
   const chapter = getChapter(chapterId);
   const content = getChapterContent(chapterId);
+  const htmlChapter = ChapterHTMLs[chapterId];
   const accentColor = chapter?.color || JiguuColors.quadraticEquations;
 
   // Handle Deep Linking / Search Navigation
@@ -137,7 +140,7 @@ function SolutionScreen() {
     }
   }, [section, exerciseId, questionId, content, view]);
 
-  const handleExerciseClick = useCallback((exercise: Exercise) => {
+  const handleExerciseClick = useCallback((exercise: Exercise | any) => {
     setSelectedExercise(exercise);
     setSelectedQuestion(null);
     setExerciseView("exercise");
@@ -310,6 +313,98 @@ function SolutionScreen() {
     </View>
   ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion]);
 
+  const renderHTMLContent = useCallback(() => {
+    if (!htmlChapter) return null;
+
+    if (activeSection === "overview") {
+      return (
+        <WebView
+          source={htmlChapter.overview}
+          style={{ flex: 1 }}
+          originWhitelist={["*"]}
+          showsVerticalScrollIndicator={false}
+        />
+      );
+    }
+
+    if (activeSection === "mcq") {
+      return (
+        <WebView
+          source={htmlChapter.mcqs}
+          style={{ flex: 1 }}
+          originWhitelist={["*"]}
+          showsVerticalScrollIndicator={false}
+        />
+      );
+    }
+
+    if (activeSection === "exercises") {
+      if (exerciseView === "menu") {
+        return (
+          <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+            <View style={styles.exerciseMenuContainer}>
+              {htmlChapter.exercises.map((exc) => (
+                <NavigationButton
+                  key={exc.id}
+                  title={exc.name}
+                  color={accentColor}
+                  onPress={() => handleExerciseClick(exc)}
+                  icon="edit"
+                />
+              ))}
+              <NavigationButton
+                title="NCERT Examples"
+                color="#6C63FF"
+                onPress={handleExamplesClick}
+                icon="book"
+              />
+            </View>
+          </ScrollView>
+        );
+      }
+
+      const backHeader = (
+        <View style={{ paddingHorizontal: Spacing.xl, paddingBottom: Spacing.sm }}>
+          <Pressable style={styles.backButton} onPress={handleBackToMenu}>
+            <Feather name="arrow-left" size={18} color={accentColor} />
+            <ThemedText style={[styles.backButtonText, { color: accentColor }]}>Back to Menu</ThemedText>
+          </Pressable>
+        </View>
+      );
+
+      if (exerciseView === "examples") {
+        return (
+          <View style={{ flex: 1 }}>
+            {backHeader}
+            <WebView
+              source={htmlChapter.examples}
+              style={{ flex: 1 }}
+              originWhitelist={["*"]}
+            />
+          </View>
+        );
+      }
+
+      if (exerciseView === "exercise" && selectedExercise) {
+        return (
+          <View style={{ flex: 1 }}>
+            {backHeader}
+            <WebView
+              source={(selectedExercise as any).file}
+              style={{ flex: 1 }}
+              originWhitelist={["*"]}
+            />
+          </View>
+        );
+      }
+
+      // Fallback
+      return null;
+    }
+
+    return null;
+  }, [activeSection, htmlChapter, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
+
   const renderExamples = useCallback((data: ChapterContent) => {
     const examplesToShow = questionId
       ? data.examples.filter(e => e.id === questionId)
@@ -397,6 +492,50 @@ function SolutionScreen() {
       setSelectedQuestion(null);
     }
   }, []);
+
+
+
+  if (htmlChapter) {
+    return (
+      <ScreenWrapper showBackButton>
+        <View style={{ flex: 1 }}>
+          <ScrollView scrollEnabled={false} contentContainerStyle={{ paddingBottom: 0 }}>
+            <View style={[styles.header, { marginTop: Spacing.lg, paddingHorizontal: Spacing.xl }]}>
+              <ThemedText style={[styles.chapterNumber, { color: accentColor }]}>
+                Chapter {chapter?.number || ""}
+              </ThemedText>
+              <ThemedText style={styles.title}>{chapterName}</ThemedText>
+            </View>
+
+            <View style={[styles.tabContainer, { marginHorizontal: Spacing.xl }]}>
+              <TabButton
+                title="Overview"
+                isActive={activeSection === "overview"}
+                onPress={() => handleSectionChange("overview")}
+                color={accentColor}
+              />
+              <TabButton
+                title="Exercises"
+                isActive={activeSection === "exercises"}
+                onPress={() => handleSectionChange("exercises")}
+                color={accentColor}
+              />
+              <TabButton
+                title="MCQs"
+                isActive={activeSection === "mcq"}
+                onPress={() => handleSectionChange("mcq")}
+                color={accentColor}
+              />
+            </View>
+          </ScrollView>
+
+          <View style={{ flex: 1, backgroundColor: '#fff' }}>
+            {renderHTMLContent()}
+          </View>
+        </View>
+      </ScreenWrapper>
+    );
+  }
 
   if (!content) {
     return (
