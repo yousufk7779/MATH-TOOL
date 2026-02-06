@@ -1,4 +1,5 @@
 import { chapterContents, ChapterContent } from "@/data/chapterContent";
+import { chapterPYQs, ChapterPYQ } from "@/data/pyqData";
 import { JiguuColors } from "@/constants/theme";
 
 export type SearchResultType = "chapter" | "exercise" | "question" | "theorem" | "definition" | "formula";
@@ -158,6 +159,35 @@ export const buildSearchIndex = () => {
                 })
             })
         }
+    });
+
+    // 8. Index PYQs
+    Object.values(chapterPYQs).forEach((chapterPYQ) => {
+        const chapter = chapterContents[chapterPYQ.chapterId]; // Get chapter details for title
+        if (!chapter) return;
+
+        chapterPYQ.sets.forEach((set) => {
+            set.questions.forEach((question) => {
+                searchIndex.push({
+                    id: question.id,
+                    type: "question",
+                    title: `${set.year} - ${question.number}`,
+                    subtitle: `PYQ: ${question.question.substring(0, 60)}...`,
+                    keywords: `${set.year} ${chapter.title} pyq previous year ${question.question}`,
+                    navigationParams: {
+                        screen: "Solution",
+                        params: {
+                            chapterId: chapter.id,
+                            chapterName: chapter.title,
+                            section: "pyq",
+                            // @ts-ignore
+                            year: set.year,
+                            questionId: question.id
+                        }
+                    }
+                });
+            });
+        });
     });
 
     console.log(`[SearchEngine] Indexed ${searchIndex.length} items.`);

@@ -5,6 +5,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Feather } from "@expo/vector-icons";
 
 import { useSearch } from "@/context/SearchContext";
+import { useSavedItems } from "@/context/SavedItemsContext";
 import { SearchResult } from "@/utils/search-engine";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
@@ -14,6 +15,7 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 export const SearchResults = memo(function SearchResults() {
     const { results, query, setQuery } = useSearch();
+    const { isBookmarked, isImportant } = useSavedItems();
     const navigation = useNavigation<NavigationProp>();
 
     if (!query || results.length === 0) return null;
@@ -49,18 +51,27 @@ export const SearchResults = memo(function SearchResults() {
         }
     }
 
-    const renderItem = ({ item }: { item: SearchResult }) => (
-        <Pressable style={styles.item} onPress={() => handlePress(item)}>
-            <View style={[styles.iconContainer, { backgroundColor: getColor(item.type) + "20" }]}>
-                <Feather name={getIcon(item.type) as any} size={18} color={getColor(item.type)} />
-            </View>
-            <View style={styles.textContainer}>
-                <ThemedText style={styles.title} numberOfLines={1}>{item.title}</ThemedText>
-                <ThemedText style={styles.subtitle} numberOfLines={1}>{item.subtitle}</ThemedText>
-            </View>
-            <Feather name="chevron-right" size={16} color={JiguuColors.textSecondary} />
-        </Pressable>
-    );
+    const renderItem = ({ item }: { item: SearchResult }) => {
+        const bookmarked = isBookmarked(item.id);
+        const important = isImportant(item.id);
+
+        return (
+            <Pressable style={styles.item} onPress={() => handlePress(item)}>
+                <View style={[styles.iconContainer, { backgroundColor: getColor(item.type) + "20" }]}>
+                    <Feather name={getIcon(item.type) as any} size={18} color={getColor(item.type)} />
+                </View>
+                <View style={styles.textContainer}>
+                    <View style={styles.titleRow}>
+                        <ThemedText style={styles.title} numberOfLines={1}>{item.title}</ThemedText>
+                        {bookmarked && <Feather name="bookmark" size={12} color={JiguuColors.accent1} style={styles.statusIcon} />}
+                        {important && <Feather name="star" size={12} color="#FFAB00" style={styles.statusIcon} />}
+                    </View>
+                    <ThemedText style={styles.subtitle} numberOfLines={1}>{item.subtitle}</ThemedText>
+                </View>
+                <Feather name="chevron-right" size={16} color={JiguuColors.textSecondary} />
+            </Pressable>
+        );
+    };
 
     return (
         <View style={styles.container}>
@@ -119,6 +130,15 @@ const styles = StyleSheet.create({
         ...Typography.body,
         fontWeight: "600",
         color: JiguuColors.textPrimary,
+        flexShrink: 1,
+    },
+    titleRow: {
+        flexDirection: "row",
+        alignItems: "center",
+        flexWrap: "wrap",
+    },
+    statusIcon: {
+        marginLeft: Spacing.xs,
     },
     subtitle: {
         ...Typography.caption,

@@ -10,7 +10,9 @@ import SectionCard from "@/components/solution/SectionCard";
 import DefinitionItem from "@/components/solution/DefinitionItem";
 import FormulaItem from "@/components/solution/FormulaItem";
 import QuestionCard from "@/components/solution/QuestionCard";
+import TheoremCard from "@/components/solution/TheoremCard";
 import MCQSection from "@/components/solution/MCQSection";
+import PYQSection from "@/components/solution/PYQSection";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
@@ -18,7 +20,7 @@ import { getChapterContent, ChapterContent, Exercise, Example, Theorem, Question
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
 
-type SectionType = "overview" | "exercises" | "mcq";
+type SectionType = "overview" | "exercises" | "mcq" | "pyq";
 type ExerciseViewType = "menu" | "exercise" | "examples" | "theorems";
 
 interface TabButtonProps {
@@ -302,6 +304,7 @@ function SolutionScreen() {
           <QuestionCard
             question={selectedQuestion}
             accentColor={accentColor}
+            chapterId={chapterId}
           />
         </View>
       ) : null}
@@ -336,6 +339,7 @@ function SolutionScreen() {
               answer: example.answer,
             }}
             accentColor="#6C63FF"
+            chapterId={chapterId}
           />
         ))}
       </View>
@@ -361,33 +365,7 @@ function SolutionScreen() {
         </View>
 
         {theoremsToShow?.map((theorem) => (
-          <View key={theorem.id} style={styles.theoremCard}>
-            <View style={styles.theoremHeader}>
-              <ThemedText style={styles.theoremNumber}>{theorem.number}</ThemedText>
-              <ThemedText style={styles.theoremName}>{theorem.name}</ThemedText>
-            </View>
-
-            <View style={styles.theoremSection}>
-              <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
-              <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
-            </View>
-
-            {theorem.proof && theorem.proof.length > 0 ? (
-              <View style={styles.theoremSection}>
-                <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
-                {theorem.proof.map((step, index) => (
-                  <ThemedText key={index} style={styles.theoremStep}>{step}</ThemedText>
-                ))}
-              </View>
-            ) : null}
-
-            {theorem.example ? (
-              <View style={styles.theoremSection}>
-                <ThemedText style={styles.theoremLabel}>Example:</ThemedText>
-                <ThemedText style={styles.theoremExample}>{theorem.example}</ThemedText>
-              </View>
-            ) : null}
-          </View>
+          <TheoremCard key={theorem.id} theorem={theorem} chapterId={chapterId} />
         ))}
       </View>
     );
@@ -478,11 +456,25 @@ function SolutionScreen() {
             onPress={() => handleSectionChange("mcq")}
             color={accentColor}
           />
+          <TabButton
+            title="PYQ"
+            isActive={activeSection === "pyq"}
+            onPress={() => handleSectionChange("pyq")}
+            color={accentColor}
+          />
         </View>
 
         {activeSection === "overview" ? renderOverview(content) : null}
         {activeSection === "exercises" ? renderExercises(content) : null}
         {activeSection === "mcq" ? renderMCQ(content) : null}
+        {activeSection === "pyq" ? (
+          <PYQSection
+            chapterId={chapterId}
+            accentColor={accentColor}
+            initialYear={(route.params as any).year}
+            initialQuestionId={questionId}
+          />
+        ) : null}
       </ScrollView>
     </ScreenWrapper>
   );

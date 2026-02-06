@@ -5,6 +5,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ChapterCard } from "@/components/ChapterCard";
+import { ColorButton } from "@/components/ColorButton";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
@@ -39,8 +40,27 @@ function ChapterListScreen() {
   }, [navigation]);
 
   const renderHeader = useCallback(() => (
-    <View style={styles.header} />
-  ), []);
+    <View style={styles.header}>
+      <View style={styles.actionButtons}>
+        <View style={styles.actionButtonWrapper}>
+          <ColorButton
+            testID="button-bookmarks"
+            title="BOOKMARKS"
+            color={JiguuColors.accent1}
+            onPress={() => navigation.navigate("Bookmarks")}
+          />
+        </View>
+        <View style={styles.actionButtonWrapper}>
+          <ColorButton
+            testID="button-important"
+            title="IMPORTANT"
+            color="#FFAB00"
+            onPress={() => navigation.navigate("ImportantQuestions")}
+          />
+        </View>
+      </View>
+    </View>
+  ), [navigation]);
 
   const renderEmptyState = useCallback(() => (
     <EmptyState
@@ -82,6 +102,14 @@ const styles = StyleSheet.create({
   },
   header: {
     marginBottom: Spacing.md,
+  },
+  actionButtons: {
+    flexDirection: "row",
+    gap: Spacing.md,
+    marginBottom: Spacing.md,
+  },
+  actionButtonWrapper: {
+    flex: 1,
   },
   separator: {
     height: Spacing.md,

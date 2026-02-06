@@ -18,6 +18,7 @@ import { queryClient } from "@/lib/query-client";
 
 import RootStackNavigator from "@/navigation/RootStackNavigator";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { SavedItemsProvider } from "@/context/SavedItemsContext";
 import { JiguuColors } from "@/constants/theme";
 
 SplashScreen.preventAutoHideAsync();
@@ -54,10 +55,12 @@ export default function App() {
         <SafeAreaProvider style={styles.safeArea}>
           <GestureHandlerRootView style={styles.root}>
             <KeyboardProvider>
-              <NavigationContainer theme={navTheme}>
-                <RootStackNavigator />
-              </NavigationContainer>
-              <StatusBar style="dark" />
+              <SavedItemsProvider>
+                <NavigationContainer theme={navTheme}>
+                  <RootStackNavigator />
+                </NavigationContainer>
+                <StatusBar style="dark" />
+              </SavedItemsProvider>
             </KeyboardProvider>
           </GestureHandlerRootView>
         </SafeAreaProvider>

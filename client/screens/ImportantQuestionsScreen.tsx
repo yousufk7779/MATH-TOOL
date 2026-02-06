@@ -1,0 +1,140 @@
+import React, { memo } from "react";
+import { StyleSheet, View, FlatList } from "react-native";
+
+import { ScreenWrapper } from "@/components/ScreenWrapper";
+import { ThemedText } from "@/components/ThemedText";
+import { EmptyState } from "@/components/EmptyState";
+import QuestionCard from "@/components/solution/QuestionCard";
+import TheoremCard from "@/components/solution/TheoremCard";
+import { JiguuColors, Spacing, Typography } from "@/constants/theme";
+import { useSavedItems } from "@/context/SavedItemsContext";
+import { getChapterContent } from "@/data/chapterContent";
+
+function ImportantQuestionsScreen() {
+    const { importantItems } = useSavedItems();
+
+    const renderItem = ({ item }: { item: any }) => {
+        const content = getChapterContent(item.chapterId);
+        if (!content) return null;
+
+        if (item.type === "question") {
+            for (const ex of content.exercises) {
+                const q = ex.questions.find(q => q.id === item.id);
+                if (q) {
+                    return (
+                        <View style={styles.itemContainer}>
+                            <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
+                            <QuestionCard question={q} accentColor="#FFAB00" chapterId={item.chapterId} />
+                        </View>
+                    );
+                }
+            }
+            const ex = content.examples.find(e => e.id === item.id);
+            if (ex) {
+                return (
+                    <View style={styles.itemContainer}>
+                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
+                        <QuestionCard
+                            question={{
+                                id: ex.id,
+                                number: ex.number,
+                                question: ex.question,
+                                solution: ex.solution,
+                                answer: ex.answer
+                            }}
+                            accentColor="#FFAB00"
+                            chapterId={item.chapterId}
+                        />
+                    </View>
+                );
+            }
+        } else if (item.type === "theorem") {
+            const t = content.theorems?.find(t => t.id === item.id);
+            if (t) {
+                return (
+                    <View style={styles.itemContainer}>
+                        <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
+                        <TheoremCard theorem={t} chapterId={item.chapterId} />
+                    </View>
+                );
+            }
+        } else if (item.type === "example") {
+            const ex = content.examples.find(e => e.id === item.id);
+            if (ex) {
+                return (
+                    <View style={styles.itemContainer}>
+                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
+                        <QuestionCard
+                            question={{
+                                id: ex.id,
+                                number: ex.number,
+                                question: ex.question,
+                                solution: ex.solution,
+                                answer: ex.answer
+                            }}
+                            accentColor="#FFAB00"
+                            chapterId={item.chapterId}
+                        />
+                    </View>
+                );
+            }
+        }
+
+        return null;
+    };
+
+    return (
+        <ScreenWrapper showBackButton>
+            <View style={styles.header}>
+                <ThemedText style={styles.title}>Important Questions</ThemedText>
+            </View>
+            <FlatList
+                data={importantItems}
+                renderItem={renderItem}
+                keyExtractor={(item) => item.id}
+                contentContainerStyle={[
+                    styles.listContent,
+                    importantItems.length === 0 ? styles.emptyContent : null,
+                ]}
+                ListEmptyComponent={
+                    <EmptyState
+                        title="No Important Questions"
+                        message="Mark questions as important to see them here."
+                        icon="star"
+                    />
+                }
+            />
+        </ScreenWrapper>
+    );
+}
+
+export default memo(ImportantQuestionsScreen);
+
+const styles = StyleSheet.create({
+    header: {
+        paddingHorizontal: Spacing.xl,
+        paddingTop: Spacing.lg,
+        paddingBottom: Spacing.md,
+    },
+    title: {
+        ...Typography.h2,
+        color: JiguuColors.textPrimary,
+    },
+    listContent: {
+        paddingHorizontal: Spacing.xl,
+        paddingBottom: 100,
+    },
+    emptyContent: {
+        flex: 1,
+        justifyContent: "center",
+    },
+    itemContainer: {
+        marginBottom: Spacing.lg,
+    },
+    chapterTitle: {
+        ...Typography.small,
+        color: JiguuColors.textSecondary,
+        marginBottom: Spacing.xs,
+        fontFamily: "Nunito_600SemiBold",
+    },
+});

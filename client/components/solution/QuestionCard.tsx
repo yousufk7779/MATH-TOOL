@@ -29,18 +29,67 @@ const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_f": require("../../../assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
 };
 
+import { Feather } from "@expo/vector-icons";
+import { Pressable } from "react-native";
+import { useSavedItems } from "@/context/SavedItemsContext";
+
 interface QuestionCardProps {
   question: Question;
   accentColor?: string;
+  chapterId?: string; // Make optional to avoid breaking changes immediately, but needed for logic
 }
 
-function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations }: QuestionCardProps) {
+function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers" /* Fallback or require it */ }: QuestionCardProps) {
+  // Ideally chapterId should be passed. For now, if not passed, we might fail to save correctly or need to infer.
+  // We MUST update call sites to pass chapterId.
+
+  const { isBookmarked, isImportant, toggleBookmark, toggleImportant } = useSavedItems();
+
+  const bookmarked = isBookmarked(question.id);
+  const important = isImportant(question.id);
+
+  const handleBookmark = () => {
+    toggleBookmark({
+      id: question.id,
+      type: "question", // or 'example' - logic needed to distinguish or just use generic 'question' type?
+      // Since QuestionCard is used for both exercises and examples, maybe we should differentiate.
+      // Ideally pass 'type' prop or infer.
+      // For now, let's assume 'question' unless we know better.
+      chapterId: chapterId,
+    });
+  };
+
+  const handleImportant = () => {
+    toggleImportant({
+      id: question.id,
+      type: "question",
+      chapterId: chapterId,
+    });
+  };
   return (
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
-        <ThemedText style={[styles.questionNumber, { color: accentColor }]}>
-          {question.number}
-        </ThemedText>
+        <View style={styles.headerRow}>
+          <ThemedText style={[styles.questionNumber, { color: accentColor }]}>
+            {question.number}
+          </ThemedText>
+          <View style={styles.actionsContainer}>
+            <Pressable onPress={handleBookmark} style={styles.actionButton}>
+              <Feather
+                name="bookmark"
+                size={20}
+                color={bookmarked ? JiguuColors.accent1 : JiguuColors.textSecondary}
+              />
+            </Pressable>
+            <Pressable onPress={handleImportant} style={styles.actionButton}>
+              <Feather
+                name="star"
+                size={20}
+                color={important ? "#FFAB00" : JiguuColors.textSecondary}
+              />
+            </Pressable>
+          </View>
+        </View>
         <ThemedText style={styles.questionText}>{question.question}</ThemedText>
       </View>
 
@@ -85,6 +134,19 @@ const styles = StyleSheet.create({
     ...Typography.small,
     fontFamily: "Nunito_700Bold",
     marginBottom: Spacing.xs,
+  },
+  headerRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    marginBottom: Spacing.xs,
+  },
+  actionsContainer: {
+    flexDirection: "row",
+    gap: Spacing.md,
+  },
+  actionButton: {
+    padding: 2,
   },
   questionText: {
     ...Typography.body,
