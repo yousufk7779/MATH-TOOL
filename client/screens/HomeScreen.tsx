@@ -71,7 +71,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-pyq"
-              title="Previous Year Questions"
+              title="Previous Year Papers"
               color={JiguuColors.accent3}
               onPress={() => navigation.navigate("GlobalPYQ")}
             />

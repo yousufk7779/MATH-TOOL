@@ -15,10 +15,10 @@ export const chapterPYQs: Record<string, ChapterPYQ> = {
         chapterId: "ch1-real-numbers",
         sets: [
             {
-                year: "2023",
+                year: "2025",
                 questions: [
                     {
-                        id: "pyq_ch1_2023_1",
+                        id: "pyq_ch1_2025_1",
                         number: "Q.1",
                         question: "Find the HCF of 60 and 100 by prime factorization method.",
                         solution: [
@@ -32,10 +32,10 @@ export const chapterPYQs: Record<string, ChapterPYQ> = {
                 ]
             },
             {
-                year: "2022 AP",
+                year: "2024",
                 questions: [
                     {
-                        id: "pyq_ch1_2022_ap_1",
+                        id: "pyq_ch1_2024_1",
                         number: "Q.1",
                         question: "Show that 5 + √3 is irrational.",
                         solution: [
@@ -51,10 +51,10 @@ export const chapterPYQs: Record<string, ChapterPYQ> = {
                 ]
             },
             {
-                year: "2021 TS",
+                year: "2023",
                 questions: [
                     {
-                        id: "pyq_ch1_2021_ts_1",
+                        id: "pyq_ch1_2023_1",
                         number: "Q.2",
                         question: "If LCM(x, 18) = 36 and HCF(x, 18) = 2, find x.",
                         solution: [
@@ -73,10 +73,10 @@ export const chapterPYQs: Record<string, ChapterPYQ> = {
         chapterId: "ch2-polynomials",
         sets: [
             {
-                year: "2023",
+                year: "2025",
                 questions: [
                     {
-                        id: "pyq_ch2_2023_1",
+                        id: "pyq_ch2_2025_1",
                         number: "Q.1",
                         question: "If a and b are zeroes of x² - x - 2, find 1/a + 1/b.",
                         solution: [
@@ -85,6 +85,24 @@ export const chapterPYQs: Record<string, ChapterPYQ> = {
                             "= 1 / (-2) = -1/2"
                         ],
                         answer: "-1/2"
+                    }
+                ]
+            },
+            {
+                year: "2024",
+                questions: [
+                    {
+                        id: "pyq_ch2_2024_1",
+                        number: "Q.1",
+                        question: "Find the quadratic polynomial whose zeroes are 2 and -3.",
+                        solution: [
+                            "Sum of zeroes (S) = 2 + (-3) = -1",
+                            "Product of zeroes (P) = 2 * (-3) = -6",
+                            "Quadratic Polynomial = k[x² - (S)x + P]",
+                            "= k[x² - (-1)x + (-6)]",
+                            "= x² + x - 6"
+                        ],
+                        answer: "x² + x - 6"
                     }
                 ]
             }

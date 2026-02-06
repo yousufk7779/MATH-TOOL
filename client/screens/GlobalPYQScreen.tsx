@@ -12,6 +12,7 @@ import { class10Chapters as chapters } from "@/data/chapters";
 
 export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     const [selectedYear, setSelectedYear] = useState<string | null>(null);
+    const [selectedColor, setSelectedColor] = useState<string>(JiguuColors.accent3); // Default color
     const [selectedChapterId, setSelectedChapterId] = useState<string | null>(null);
 
     const years = useMemo(() => getAllPYQYears(), []);
@@ -21,8 +22,9 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
         return getQuestionsForYear(selectedYear, selectedChapterId || undefined);
     }, [selectedYear, selectedChapterId]);
 
-    const handleYearSelect = (year: string) => {
+    const handleYearSelect = (year: string, color: string) => {
         setSelectedYear(year);
+        setSelectedColor(color);
         setSelectedChapterId(null); // Reset filter on year change
     };
 
@@ -33,21 +35,33 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     // Render Year Selection Grid
     if (!selectedYear) {
         return (
-            <ScreenWrapper>
+            <ScreenWrapper showBackButton={true}>
                 <ScrollView contentContainerStyle={styles.content}>
-                    <ThemedText style={styles.headerTitle}>Previous Year Questions</ThemedText>
-                    <ThemedText style={styles.subTitle}>Select a Year</ThemedText>
+                    <ThemedText style={styles.headerTitle}>Previous Year Papers</ThemedText>
+                    <ThemedText style={styles.subTitle}>JKBOSE</ThemedText>
 
                     <View style={styles.grid}>
-                        {years.map((year, index) => (
-                            <View key={year} style={styles.gridItem}>
-                                <ColorButton
-                                    title={year}
-                                    color={index % 2 === 0 ? JiguuColors.accent1 : JiguuColors.accent2}
-                                    onPress={() => handleYearSelect(year)}
-                                />
-                            </View>
-                        ))}
+                        {years.map((year, index) => {
+                            // Cycle through a few vibrant colors
+                            const colors = [
+                                "#00C853", // Green
+                                "#FFAB00", // Amber
+                                "#AA00FF", // Purple
+                                "#00B8D4", // Cyan
+                                JiguuColors.accent1,
+                            ];
+                            const color = colors[index % colors.length];
+
+                            return (
+                                <View key={year} style={styles.gridItem}>
+                                    <ColorButton
+                                        title={year}
+                                        color={color}
+                                        onPress={() => handleYearSelect(year, color)}
+                                    />
+                                </View>
+                            );
+                        })}
                     </View>
                 </ScrollView>
             </ScreenWrapper>
@@ -56,15 +70,9 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
 
     // Render Question List
     return (
-        <ScreenWrapper>
+        <ScreenWrapper showBackButton={true}>
             <View style={styles.headerContainer}>
-                <ColorButton
-                    title="Change Year"
-                    color={JiguuColors.surfaceLight}
-                    onPress={handleBackToYears}
-                    style={styles.backButton}
-                />
-                <View style={styles.yearBadge}>
+                <View style={[styles.yearBadge, { backgroundColor: selectedColor }]}>
                     <ThemedText style={styles.yearText}>{selectedYear}</ThemedText>
                 </View>
             </View>
@@ -80,7 +88,7 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
                             key={item.question.id}
                             question={item.question}
                             chapterId={item.chapterId}
-                            accentColor={JiguuColors.accent3}
+                            accentColor={selectedColor}
                         />
                     ))
                 )}
@@ -110,19 +118,18 @@ const styles = StyleSheet.create({
         marginBottom: Spacing.xl,
     },
     grid: {
-        flexDirection: "row",
-        flexWrap: "wrap",
+        flexDirection: "column", // Stack vertically
         gap: Spacing.md,
         width: "100%",
-        justifyContent: "center",
+        paddingHorizontal: Spacing.md,
     },
     gridItem: {
-        width: "45%",
+        width: "100%", // Full width
     },
     headerContainer: {
         padding: Spacing.md,
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
         backgroundColor: JiguuColors.surface,
         borderBottomWidth: 1,

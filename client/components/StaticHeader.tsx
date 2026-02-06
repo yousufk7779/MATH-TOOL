@@ -27,7 +27,10 @@ export const StaticHeader = memo(function StaticHeader() {
       <View style={styles.logoContainer}>
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
       </View>
-      <View style={styles.searchContainer}>
+      <View style={[
+        styles.searchContainer,
+        isLandscape && { flex: 1, marginLeft: Spacing.md }
+      ]}>
         <GlobalSearchBar />
         <SearchResults />
       </View>
@@ -51,7 +54,5 @@ const styles = StyleSheet.create({
   searchContainer: {
     width: "100%",
     maxWidth: 500,
-    flex: 1, // Take available space in landscape row
-    marginLeft: Spacing.md, // Add spacing if in row
   }
 });
