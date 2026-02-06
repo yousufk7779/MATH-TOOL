@@ -36,7 +36,7 @@ function HomeScreen() {
             <ColorButton
               testID="button-chapters"
               title="All Chapters"
-              color={JiguuColors.quadraticEquations}
+              color="#00C853"
               onPress={() => navigation.navigate("ChapterList")}
             />
           </View>
@@ -45,7 +45,7 @@ function HomeScreen() {
             <ColorButton
               testID="button-quick-notes"
               title="Quick Notes"
-              color={JiguuColors.quickNotes}
+              color="#FFAB00"
               onPress={() => navigation.navigate("QuickNotes")}
             />
           </View>
@@ -54,7 +54,7 @@ function HomeScreen() {
             <ColorButton
               testID="button-news"
               title="News & Events"
-              color={JiguuColors.newsEvents}
+              color="#AA00FF"
               onPress={() => navigation.navigate("NewsEvents")}
             />
           </View>
@@ -72,7 +72,7 @@ function HomeScreen() {
             <ColorButton
               testID="button-about-educator"
               title="About the Educator"
-              color="#E91E63"
+              color={JiguuColors.accent1}
               onPress={() => navigation.navigate("AboutEducator")}
             />
           </View>
