@@ -9,9 +9,10 @@ import { MCQ } from "@/data/chapterContent";
 interface MCQSectionProps {
   mcqs: MCQ[];
   accentColor?: string;
+  textStyle?: any;
 }
 
-function MCQSection({ mcqs, accentColor = "#9C27B0" }: MCQSectionProps) {
+function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProps) {
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
   const [showAnswers, setShowAnswers] = useState(false);
 
@@ -26,12 +27,12 @@ function MCQSection({ mcqs, accentColor = "#9C27B0" }: MCQSectionProps) {
   return (
     <View style={styles.container}>
       <View style={[styles.header, { backgroundColor: accentColor }]}>
-        <ThemedText style={styles.headerText}>Practice MCQs</ThemedText>
+        <ThemedText style={[styles.headerText, textStyle]}>Practice MCQs</ThemedText>
       </View>
 
       {mcqs.map((mcq, mcqIndex) => (
         <View key={mcq.id} style={styles.mcqCard}>
-          <ThemedText style={styles.question}>
+          <ThemedText style={[styles.question, textStyle]}>
             {mcqIndex + 1}. {mcq.question}
           </ThemedText>
           <View style={styles.optionsGrid}>
@@ -68,7 +69,7 @@ function MCQSection({ mcqs, accentColor = "#9C27B0" }: MCQSectionProps) {
                       {optionLabel}
                     </ThemedText>
                   </View>
-                  <ThemedText style={styles.optionText}>{option}</ThemedText>
+                  <ThemedText style={[styles.optionText, textStyle]}>{option}</ThemedText>
                 </Pressable>
               );
             })}

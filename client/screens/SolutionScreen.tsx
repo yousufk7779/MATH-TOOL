@@ -28,9 +28,10 @@ interface TabButtonProps {
   isActive: boolean;
   onPress: () => void;
   color: string;
+  textStyle?: any;
 }
 
-const TabButton = memo(({ title, isActive, onPress, color }: TabButtonProps) => (
+const TabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButtonProps) => (
   <Pressable
     style={[
       styles.tabButton,
@@ -42,6 +43,7 @@ const TabButton = memo(({ title, isActive, onPress, color }: TabButtonProps) => 
       style={[
         styles.tabText,
         isActive && styles.tabTextActive,
+        textStyle,
       ]}
     >
       {title}
@@ -54,15 +56,16 @@ interface NavigationButtonProps {
   color: string;
   onPress: () => void;
   icon?: keyof typeof Feather.glyphMap;
+  textStyle?: any;
 }
 
-const NavigationButton = memo(({ title, color, onPress, icon }: NavigationButtonProps) => (
+const NavigationButton = memo(({ title, color, onPress, icon, textStyle }: NavigationButtonProps) => (
   <Pressable
     style={[styles.navButton, { backgroundColor: color }]}
     onPress={onPress}
   >
     {icon ? <Feather name={icon} size={18} color="#fff" style={styles.navButtonIcon} /> : null}
-    <ThemedText style={styles.navButtonText}>{title}</ThemedText>
+    <ThemedText style={[styles.navButtonText, textStyle]}>{title}</ThemedText>
     <Feather name="chevron-right" size={20} color="#fff" />
   </Pressable>
 ));
@@ -72,9 +75,10 @@ interface QuestionButtonProps {
   onPress: () => void;
   isActive: boolean;
   color: string;
+  textStyle?: any;
 }
 
-const QuestionButton = memo(({ number, onPress, isActive, color }: QuestionButtonProps) => (
+const QuestionButton = memo(({ number, onPress, isActive, color, textStyle }: QuestionButtonProps) => (
   <Pressable
     style={[
       styles.questionButton,
@@ -86,6 +90,8 @@ const QuestionButton = memo(({ number, onPress, isActive, color }: QuestionButto
       style={[
         styles.questionButtonText,
         isActive ? { color: "#fff" } : { color: color },
+        isActive && textStyle, // Apply hwStyle only if active or generally? User said "100% handwritten". So apply generally, but color handling is tricky.
+        textStyle && { color: isActive ? "#fff" : color } // Ensure color is maintained but font is overridden
       ]}
     >
       {number}
@@ -270,6 +276,7 @@ function SolutionScreen() {
           color={accentColor}
           onPress={() => handleExerciseClick(exercise)}
           icon="edit"
+          textStyle={hwStyle}
         />
       ))}
 
@@ -279,6 +286,7 @@ function SolutionScreen() {
           color="#6C63FF"
           onPress={handleExamplesClick}
           icon="book"
+          textStyle={hwStyle}
         />
       ) : null}
 
@@ -288,6 +296,7 @@ function SolutionScreen() {
           color="#9C27B0"
           onPress={handleTheoremsClick}
           icon="award"
+          textStyle={hwStyle}
         />
       ) : null}
     </View>
@@ -315,6 +324,7 @@ function SolutionScreen() {
             onPress={() => handleQuestionClick(question)}
             isActive={selectedQuestion?.id === question.id}
             color={accentColor}
+            textStyle={hwTitleStyle}
           />
         ))}
       </View>
@@ -325,6 +335,8 @@ function SolutionScreen() {
             question={selectedQuestion}
             accentColor={accentColor}
             chapterId={chapterId}
+            titleStyle={hwTitleStyle}
+            contentStyle={hwStyle}
           />
         </View>
       ) : null}
@@ -366,6 +378,8 @@ function SolutionScreen() {
             }}
             accentColor="#6C63FF"
             chapterId={chapterId}
+            titleStyle={hwTitleStyle}
+            contentStyle={hwStyle}
           />
         ))}
       </View>
@@ -413,8 +427,8 @@ function SolutionScreen() {
   }, [exerciseView, selectedExercise, renderExerciseMenu, renderExerciseQuestions, renderExamples, renderTheorems]);
 
   const renderMCQ = useCallback((data: ChapterContent) => (
-    <MCQSection mcqs={data.mcqs} accentColor={accentColor} />
-  ), [accentColor]);
+    <MCQSection mcqs={data.mcqs} accentColor={accentColor} textStyle={hwStyle} />
+  ), [accentColor, hwStyle]);
 
   const handleSectionChange = useCallback((section: SectionType) => {
     setActiveSection(section);
@@ -474,18 +488,21 @@ function SolutionScreen() {
             isActive={activeSection === "overview"}
             onPress={() => handleSectionChange("overview")}
             color={accentColor}
+            textStyle={hwTitleStyle}
           />
           <TabButton
             title="Exercises"
             isActive={activeSection === "exercises"}
             onPress={() => handleSectionChange("exercises")}
             color={accentColor}
+            textStyle={hwTitleStyle}
           />
           <TabButton
             title="MCQs"
             isActive={activeSection === "mcq"}
             onPress={() => handleSectionChange("mcq")}
             color={accentColor}
+            textStyle={hwTitleStyle}
           />
         </View>
 

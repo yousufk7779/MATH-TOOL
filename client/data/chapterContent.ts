@@ -2170,9 +2170,39 @@ export const chapterContents: Record<string, ChapterContent> = {
             ], answer: "See solution"
           }
         ]
+      },
+      {
+        id: "ex5.2",
+        name: "Exercise 5.2",
+        questions: [
+          {
+            id: "q1", number: "1", question: "Fill in the blank: a=7, d=3, n=8, an=...", solution: [
+              "We know an = a + (n-1)d",
+              "an = 7 + (8-1)3",
+              "an = 7 + 21 = 28"
+            ], answer: "28"
+          }
+        ]
+      },
+      {
+        id: "ex5.3",
+        name: "Exercise 5.3",
+        questions: [
+          {
+            id: "q1", number: "1", question: "Find sum of AP: 2, 7, 12... to 10 terms.", solution: [
+              "a = 2, d = 5, n = 10",
+              "Sn = n/2 [2a + (n-1)d]",
+              "S10 = 10/2 [4 + 45]",
+              "S10 = 5 * 49 = 245"
+            ], answer: "245"
+          }
+        ]
       }
     ],
-    examples: [],
+    examples: [
+      { id: "eg1", number: "1", question: "For AP: 3/2, 1/2, -1/2... write a and d.", solution: ["a = 3/2", "d = 1/2 - 3/2 = -1"], answer: "a=3/2, d=-1" },
+      { id: "eg2", number: "2", question: "Which of these are AP?", solution: ["Check common difference d."], answer: "Check diff" }
+    ],
     mcqs: [
       { id: "mcq5_1", question: "The common difference of the AP: 3, 1, -1, -3... is:", options: ["2", "-2", "3", "0"], correctAnswer: "b" },
       { id: "mcq5_2", question: "If a = 10, d = 10, first four terms:", options: ["10, 30, 50, 60", "10, 15, 20, 25", "10, 20, 30, 40", "10, 10, 10, 10"], correctAnswer: "c" },

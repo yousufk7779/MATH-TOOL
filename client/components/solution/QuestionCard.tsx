@@ -36,10 +36,12 @@ import { useSavedItems } from "@/context/SavedItemsContext";
 interface QuestionCardProps {
   question: Question;
   accentColor?: string;
-  chapterId?: string; // Make optional to avoid breaking changes immediately, but needed for logic
+  chapterId?: string;
+  titleStyle?: any;
+  contentStyle?: any;
 }
 
-function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers" /* Fallback or require it */ }: QuestionCardProps) {
+function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
   // Ideally chapterId should be passed. For now, if not passed, we might fail to save correctly or need to infer.
   // We MUST update call sites to pass chapterId.
 
@@ -70,7 +72,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
         <View style={styles.headerRow}>
-          <ThemedText style={[styles.questionNumber, { color: accentColor }]}>
+          <ThemedText style={[styles.questionNumber, { color: accentColor }, titleStyle]}>
             {question.number}
           </ThemedText>
           <View style={styles.actionsContainer}>
@@ -90,7 +92,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             </Pressable>
           </View>
         </View>
-        <ThemedText style={styles.questionText}>{question.question}</ThemedText>
+        <ThemedText style={[styles.questionText, contentStyle]}>{question.question}</ThemedText>
       </View>
 
       <View style={styles.solutionBox}>
@@ -103,14 +105,14 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             />
           </View>
         ) : null}
-        <ThemedText style={styles.solutionLabel}>Solution:</ThemedText>
+        <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
         {question.solution.map((step, index) => (
           <View key={index} style={styles.stepRow}>
-            <Text style={styles.stepText}>{renderTextWithReferences(step)}</Text>
+            <Text style={[styles.stepText, contentStyle]}>{renderTextWithReferences(step)}</Text>
           </View>
         ))}
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <ThemedText style={styles.answerText}>{question.answer}</ThemedText>
+          <ThemedText style={[styles.answerText, titleStyle]}>{question.answer}</ThemedText>
         </View>
       </View>
     </View>
