@@ -101,11 +101,21 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         ) : null}
         <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
-        {question.solution.map((step, index) => (
-          <View key={index} style={styles.stepRow}>
-            <Text style={[styles.stepText, contentStyle]}>{step}</Text>
-          </View>
-        ))}
+        {question.solution.map((step, index) => {
+          const isFormula = step.startsWith("[Formula]");
+          const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
+          return (
+            <View key={index} style={styles.stepRow}>
+              <Text style={[
+                styles.stepText,
+                contentStyle,
+                isFormula && { color: "#FF7043", fontWeight: "bold", fontFamily: "Kalam_700Bold" }
+              ]}>
+                {displayStep}
+              </Text>
+            </View>
+          );
+        })}
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
           <ThemedText style={[styles.answerText, titleStyle]}>{question.answer}</ThemedText>
         </View>
