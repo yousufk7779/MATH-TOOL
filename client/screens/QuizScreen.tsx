@@ -118,7 +118,7 @@ export default function QuizScreen() {
 
             <Pressable style={styles.startButton} onPress={startQuiz}>
                 <ThemedText style={styles.startButtonText}>Start New Quiz</ThemedText>
-                <Feather name="play" size={20} color="#FFF" />
+                <Feather name="play" size={20} color="#FFF" style={{ marginLeft: 8 }} />
             </Pressable>
 
             <View style={styles.historyContainer}>
@@ -231,22 +231,23 @@ export default function QuizScreen() {
 
         return (
             <View style={styles.resultContainer}>
-                <Feather name="award" size={64} color={JiguuColors.accent2} style={{ marginBottom: 24 }} />
-                <ThemedText style={styles.resultTitle}>Quiz Completed</ThemedText>
+                <Feather name="award" size={80} color={JiguuColors.accent2} style={{ marginBottom: 24 }} />
+                <ThemedText style={styles.resultTitle}>Quiz Completed!</ThemedText>
 
                 <View style={styles.resultScoreCard}>
-                    <ThemedText style={styles.resultScoreLabel}>Your Score</ThemedText>
-                    <ThemedText style={styles.resultScoreValue}>{score} / {questions.length}</ThemedText>
                     <ThemedText style={[
-                        styles.resultPercentage,
+                        styles.resultPercentageBig,
                         { color: percentage >= 50 ? JiguuColors.arithmetic : JiguuColors.triangles }
                     ]}>{percentage}%</ThemedText>
+                    <ThemedText style={styles.resultScoreLabel}>TOTAL SCORE</ThemedText>
+                    <ThemedText style={styles.resultScoreValue}>{score} / {questions.length}</ThemedText>
                 </View>
 
                 <ThemedText style={styles.resultFeedback}>{feedback}</ThemedText>
 
                 <Pressable style={styles.startButton} onPress={() => setViewState("menu")}>
-                    <ThemedText style={styles.startButtonText}>Back to Menu</ThemedText>
+                    <Feather name="home" size={20} color="#FFF" style={{ marginRight: 8 }} />
+                    <ThemedText style={styles.startButtonText}>Back to Home</ThemedText>
                 </Pressable>
             </View>
         );
@@ -302,11 +303,11 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.3,
         shadowRadius: 8,
         elevation: 4,
+        width: "100%", // Ensure full width for better touch target and text fitting
     },
     startButtonText: {
         ...Typography.button,
         color: "#FFF",
-        marginRight: Spacing.sm,
         fontFamily: "Kalam_700Bold",
     },
     historyContainer: {
@@ -475,42 +476,43 @@ const styles = StyleSheet.create({
     // Result Styles
     resultContainer: {
         alignItems: "center",
-        paddingTop: Spacing.xl, // Reduced top padding
+        paddingTop: Spacing.xl,
         flex: 1,
+        width: '100%',
     },
     resultTitle: {
         ...Typography.h2,
-        marginBottom: Spacing.xl,
+        marginBottom: Spacing.lg,
         fontFamily: "Kalam_700Bold",
     },
     resultScoreCard: {
         backgroundColor: JiguuColors.surface,
-        paddingHorizontal: Spacing.lg,
-        paddingVertical: Spacing.sm, // Tighter vertical padding
+        padding: Spacing.xl,
         borderRadius: BorderRadius.xl,
         alignItems: "center",
         width: "100%",
-        marginBottom: Spacing.lg,
-        // Removed minHeight to let it shrink to fit content
-        justifyContent: 'center',
+        marginBottom: Spacing.xl,
+        borderWidth: 1,
+        borderColor: JiguuColors.border,
+    },
+    resultPercentageBig: {
+        fontSize: 64,
+        fontFamily: "Kalam_700Bold",
+        includeFontPadding: false,
+        lineHeight: 80,
     },
     resultScoreLabel: {
         ...Typography.small,
         color: JiguuColors.textSecondary,
         textTransform: "uppercase",
         fontFamily: "Kalam_700Bold",
+        marginTop: Spacing.sm,
     },
     resultScoreValue: {
-        fontSize: 42, // Slightly smaller
-        lineHeight: 50,
-        fontFamily: "Kalam_700Bold",
-        color: JiguuColors.textPrimary,
-        marginVertical: Spacing.sm,
-        paddingVertical: 0,
-    },
-    resultPercentage: {
         ...Typography.h3,
         fontFamily: "Kalam_700Bold",
+        color: JiguuColors.textPrimary,
+        marginTop: Spacing.xs,
     },
     resultFeedback: {
         ...Typography.h4,
@@ -518,6 +520,7 @@ const styles = StyleSheet.create({
         marginBottom: Spacing["3xl"],
         fontStyle: "italic",
         fontFamily: "Kalam_700Bold",
+        textAlign: 'center',
     },
     quitButton: {
         padding: Spacing.sm,
