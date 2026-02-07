@@ -128,9 +128,9 @@ const styles = StyleSheet.create({
     },
     title: {
         ...Typography.body,
-        fontWeight: "600",
         color: JiguuColors.textPrimary,
         flexShrink: 1,
+        fontFamily: "Kalam_700Bold",
     },
     titleRow: {
         flexDirection: "row",
@@ -143,6 +143,7 @@ const styles = StyleSheet.create({
     subtitle: {
         ...Typography.caption,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
     },
     separator: {
         height: 1,

@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
         color: JiguuColors.textPrimary,
         ...Typography.body,
         height: "100%",
+        fontFamily: "Kalam_400Regular",
     },
     clearButton: {
         padding: Spacing.xs,

@@ -77,9 +77,10 @@ const styles = StyleSheet.create({
   },
   name: {
     ...Typography.small,
-    fontWeight: "700",
+    ...Typography.small,
     color: JiguuColors.textPrimary,
     lineHeight: 18,
+    fontFamily: "Kalam_700Bold",
   },
   nameLandscape: {
     fontSize: 12,
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
   title: {
     ...Typography.caption,
     color: JiguuColors.accent2,
-    fontWeight: "600",
     lineHeight: 16,
+    fontFamily: "Kalam_400Regular",
   },
 });

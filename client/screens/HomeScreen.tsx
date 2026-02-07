@@ -35,7 +35,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-chapters"
-              title="All Chapters"
+              title="ALL CHAPTERS"
               color="#00C853"
               onPress={() => navigation.navigate("ChapterList")}
             />
@@ -44,7 +44,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-quick-notes"
-              title="Quick Notes"
+              title="QUICK NOTES"
               color="#FFAB00"
               onPress={() => navigation.navigate("QuickNotes")}
             />
@@ -53,7 +53,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-news"
-              title="News & Events"
+              title="NEWS & EVENTS"
               color="#AA00FF"
               onPress={() => navigation.navigate("NewsEvents")}
             />
@@ -62,7 +62,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-quiz"
-              title="Practice Quiz"
+              title="PRACTICE QUIZ"
               color={JiguuColors.accent2}
               onPress={() => navigation.navigate("Quiz")}
             />
@@ -71,7 +71,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-pyq"
-              title="Previous Year Papers"
+              title="PREVIOUS YEAR PAPERS"
               color={JiguuColors.accent3}
               onPress={() => navigation.navigate("GlobalPYQ")}
             />
@@ -80,7 +80,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-about-educator"
-              title="About the Educator"
+              title="ABOUT THE EDUCATOR"
               color={JiguuColors.accent1}
               onPress={() => navigation.navigate("AboutEducator")}
             />

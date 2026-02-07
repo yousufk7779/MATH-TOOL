@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     ...Typography.body,
     color: JiguuColors.textSecondary,
     fontSize: 15,
-    fontWeight: "500",
     marginTop: -6,
+    fontFamily: "Kalam_700Bold",
   },
 });

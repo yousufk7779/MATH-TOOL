@@ -95,8 +95,8 @@ const styles = StyleSheet.create({
   },
   text: {
     color: JiguuColors.textPrimary,
-    fontSize: 14,
-    fontWeight: "600",
+    fontSize: 16,
     marginLeft: Spacing.sm,
+    fontFamily: "Kalam_700Bold",
   },
 });

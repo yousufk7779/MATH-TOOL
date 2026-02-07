@@ -89,6 +89,8 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
                             question={item.question}
                             chapterId={item.chapterId}
                             accentColor={selectedColor}
+                            titleStyle={{ fontFamily: "Kalam_700Bold" }}
+                            contentStyle={{ fontFamily: "Kalam_400Regular" }}
                         />
                     ))
                 )}
@@ -111,11 +113,13 @@ const styles = StyleSheet.create({
         color: JiguuColors.textPrimary,
         marginBottom: Spacing.xs,
         textAlign: "center",
+        fontFamily: "Kalam_700Bold",
     },
     subTitle: {
         ...Typography.body,
         color: JiguuColors.textSecondary,
         marginBottom: Spacing.xl,
+        fontFamily: "Kalam_400Regular",
     },
     grid: {
         flexDirection: "column", // Stack vertically
@@ -148,10 +152,12 @@ const styles = StyleSheet.create({
     yearText: {
         ...Typography.h4,
         color: "#fff",
+        fontFamily: "Kalam_700Bold",
     },
     emptyText: {
         textAlign: "center",
         marginTop: Spacing.xl,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
     }
 });

@@ -103,6 +103,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     textTransform: 'uppercase',
     letterSpacing: 1,
+    fontFamily: "Kalam_700Bold",
   },
   educatorContainer: {
     alignItems: "center",
@@ -131,19 +132,20 @@ const styles = StyleSheet.create({
     ...Typography.h2,
     color: JiguuColors.textPrimary,
     marginBottom: Spacing.xs,
+    fontFamily: "Kalam_700Bold",
   },
   role: {
     ...Typography.body,
     color: JiguuColors.accent1,
-    fontWeight: "600",
     marginBottom: Spacing.md,
+    fontFamily: "Kalam_700Bold",
   },
   bio: {
     ...Typography.body,
     color: JiguuColors.textSecondary,
     textAlign: "center",
     lineHeight: 24,
-    fontStyle: 'italic',
+    fontFamily: "Kalam_400Regular",
   },
   aboutContainer: {
     alignItems: "center",
@@ -159,6 +161,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: Spacing.md,
     lineHeight: 24,
+    fontFamily: "Kalam_400Regular",
   },
   featuresGrid: {
     backgroundColor: JiguuColors.surface,
@@ -182,6 +185,7 @@ const styles = StyleSheet.create({
   featureText: {
     ...Typography.body,
     color: JiguuColors.textPrimary,
+    fontFamily: "Kalam_400Regular",
   },
   thanksContainer: {
     backgroundColor: JiguuColors.surface,
@@ -195,12 +199,13 @@ const styles = StyleSheet.create({
     color: JiguuColors.textSecondary,
     textAlign: "center",
     lineHeight: 26,
-    fontStyle: 'italic',
     marginBottom: Spacing.md,
+    fontFamily: "Kalam_400Regular",
   },
   signature: {
     ...Typography.h4,
     color: JiguuColors.textPrimary,
     textAlign: 'right',
+    fontFamily: "Kalam_700Bold",
   }
 });

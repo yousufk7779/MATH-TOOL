@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...Typography.h2,
+    fontFamily: "Kalam_700Bold",
   },
   notesGrid: {
     gap: Spacing.md,
@@ -177,12 +178,14 @@ const styles = StyleSheet.create({
     color: JiguuColors.textPrimary,
     marginBottom: 2,
     paddingLeft: Spacing.sm,
+    fontFamily: "Kalam_700Bold",
   },
   notePreview: {
     ...Typography.small,
     color: JiguuColors.textSecondary,
     marginBottom: Spacing.xs,
     paddingLeft: Spacing.sm,
+    fontFamily: "Kalam_400Regular",
     // flex: 1, // removed to allow compact height
   },
   noteDate: {
@@ -191,6 +194,7 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     opacity: 0.7,
     marginRight: Spacing.xs,
+    fontFamily: "Kalam_400Regular",
   },
   fab: {
     position: "absolute",

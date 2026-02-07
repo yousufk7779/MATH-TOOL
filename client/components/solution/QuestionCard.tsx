@@ -7,6 +7,11 @@ import { Question } from "@/data/chapterContent";
 
 
 
+
+
+import { Feather } from "@expo/vector-icons";
+import { Pressable } from "react-native";
+import { useSavedItems } from "@/context/SavedItemsContext";
 const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_a": require("../../../assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
   "graph_ex2_1_q1_b": require("../../../assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
@@ -14,11 +19,10 @@ const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_d": require("../../../assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
   "graph_ex2_1_q1_e": require("../../../assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
   "graph_ex2_1_q1_f": require("../../../assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
+  "ap_spiral": require("../../assets/Chapter - 5/images/fig_5_4.png"),
+  "ap_logs": require("../../assets/Chapter - 5/images/fig_5_5.png"),
+  "ap_potato_race": require("../../assets/Chapter - 5/images/fig_5_6.png"),
 };
-
-import { Feather } from "@expo/vector-icons";
-import { Pressable } from "react-native";
-import { useSavedItems } from "@/context/SavedItemsContext";
 
 interface QuestionCardProps {
   question: Question;
@@ -85,11 +89,15 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
       <View style={styles.solutionBox}>
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
-            <Image
-              source={graphImages[question.image]}
-              style={styles.graphImage}
-              resizeMode="contain"
-            />
+            {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
+              React.createElement(graphImages[question.image])
+            ) : (
+              <Image
+                source={graphImages[question.image]}
+                style={styles.graphImage}
+                resizeMode="contain"
+              />
+            )}
           </View>
         ) : null}
         <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>

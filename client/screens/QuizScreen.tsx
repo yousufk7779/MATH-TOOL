@@ -280,11 +280,13 @@ const styles = StyleSheet.create({
         ...Typography.h2,
         textAlign: "center",
         marginBottom: Spacing.sm,
+        fontFamily: "Kalam_700Bold",
     },
     subtitle: {
         ...Typography.body,
         textAlign: "center",
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
     },
     startButton: {
         flexDirection: "row",
@@ -305,6 +307,7 @@ const styles = StyleSheet.create({
         ...Typography.button,
         color: "#FFF",
         marginRight: Spacing.sm,
+        fontFamily: "Kalam_700Bold",
     },
     historyContainer: {
         backgroundColor: JiguuColors.surface,
@@ -315,6 +318,7 @@ const styles = StyleSheet.create({
         ...Typography.h4,
         marginBottom: Spacing.lg,
         color: JiguuColors.textPrimary,
+        fontFamily: "Kalam_700Bold",
     },
     historyItem: {
         flexDirection: "row",
@@ -327,10 +331,12 @@ const styles = StyleSheet.create({
     historyScore: {
         ...Typography.h4,
         color: JiguuColors.textPrimary,
+        fontFamily: "Kalam_700Bold",
     },
     historyDate: {
         ...Typography.caption,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
     },
     percentageBadge: {
         paddingVertical: 4,
@@ -340,7 +346,7 @@ const styles = StyleSheet.create({
     percentageText: {
         ...Typography.caption,
         color: "#FFF",
-        fontWeight: "bold",
+        fontFamily: "Kalam_700Bold",
     },
     emptyText: {
         ...Typography.body,
@@ -348,6 +354,7 @@ const styles = StyleSheet.create({
         textAlign: "center",
         fontStyle: "italic",
         paddingVertical: Spacing.lg,
+        fontFamily: "Kalam_400Regular",
     },
 
     // Active Quiz Styles
@@ -364,6 +371,7 @@ const styles = StyleSheet.create({
     progressText: {
         ...Typography.small,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_700Bold",
     },
     scoreBadge: {
         backgroundColor: JiguuColors.surfaceLight,
@@ -373,7 +381,7 @@ const styles = StyleSheet.create({
     },
     scoreText: {
         ...Typography.small,
-        fontWeight: "bold",
+        fontFamily: "Kalam_700Bold",
         color: JiguuColors.accent1,
     },
     questionCard: {
@@ -390,11 +398,13 @@ const styles = StyleSheet.create({
         marginBottom: Spacing.sm,
         textTransform: "uppercase",
         letterSpacing: 1,
+        fontFamily: "Kalam_700Bold",
     },
     questionText: {
         ...Typography.h4,
         lineHeight: 28,
         color: JiguuColors.textPrimary,
+        fontFamily: "Kalam_400Regular",
     },
     optionsContainer: {
         gap: Spacing.md,
@@ -431,13 +441,14 @@ const styles = StyleSheet.create({
     },
     optionLetterText: {
         ...Typography.small,
-        fontWeight: "bold",
+        fontFamily: "Kalam_700Bold",
         color: JiguuColors.textSecondary,
     },
     optionText: {
         ...Typography.body,
         color: JiguuColors.textPrimary,
         flex: 1,
+        fontFamily: "Kalam_400Regular",
     },
     footer: {
         marginTop: "auto",
@@ -458,6 +469,7 @@ const styles = StyleSheet.create({
         ...Typography.button,
         color: "#FFF",
         marginRight: Spacing.sm,
+        fontFamily: "Kalam_700Bold",
     },
 
     // Result Styles
@@ -469,6 +481,7 @@ const styles = StyleSheet.create({
     resultTitle: {
         ...Typography.h2,
         marginBottom: Spacing.xl,
+        fontFamily: "Kalam_700Bold",
     },
     resultScoreCard: {
         backgroundColor: JiguuColors.surface,
@@ -485,23 +498,26 @@ const styles = StyleSheet.create({
         ...Typography.small,
         color: JiguuColors.textSecondary,
         textTransform: "uppercase",
+        fontFamily: "Kalam_700Bold",
     },
     resultScoreValue: {
         fontSize: 42, // Slightly smaller
         lineHeight: 50,
-        fontWeight: "bold",
+        fontFamily: "Kalam_700Bold",
         color: JiguuColors.textPrimary,
         marginVertical: Spacing.sm,
         paddingVertical: 0,
     },
     resultPercentage: {
         ...Typography.h3,
+        fontFamily: "Kalam_700Bold",
     },
     resultFeedback: {
         ...Typography.h4,
         color: JiguuColors.textSecondary,
         marginBottom: Spacing["3xl"],
         fontStyle: "italic",
+        fontFamily: "Kalam_700Bold",
     },
     quitButton: {
         padding: Spacing.sm,
