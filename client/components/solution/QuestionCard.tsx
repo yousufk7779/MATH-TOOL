@@ -19,9 +19,9 @@ const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_d": require("../../../assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
   "graph_ex2_1_q1_e": require("../../../assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
   "graph_ex2_1_q1_f": require("../../../assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
-  "ap_spiral": require("../../assets/Chapter - 5/images/fig_5_4.png"),
-  "ap_logs": require("../../assets/Chapter - 5/images/fig_5_5.png"),
-  "ap_potato_race": require("../../assets/Chapter - 5/images/fig_5_6.png"),
+  "ap_spiral": require("../../assets/chapter5/images/fig_5_4.png"),
+  "ap_logs": require("../../assets/chapter5/images/fig_5_5.png"),
+  "ap_potato_race": require("../../assets/chapter5/images/fig_5_6.png"),
 };
 
 interface QuestionCardProps {
