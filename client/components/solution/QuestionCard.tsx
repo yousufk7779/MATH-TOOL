@@ -13,15 +13,15 @@ import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useSavedItems } from "@/context/SavedItemsContext";
 const graphImages: Record<string, any> = {
-  "graph_ex2_1_q1_a": require("../../../assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
-  "graph_ex2_1_q1_b": require("../../../assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
-  "graph_ex2_1_q1_c": require("../../../assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
-  "graph_ex2_1_q1_d": require("../../../assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
-  "graph_ex2_1_q1_e": require("../../../assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
-  "graph_ex2_1_q1_f": require("../../../assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
-  "ap_spiral": require("../../assets/chapter5/images/fig_5_4.png"),
-  "ap_logs": require("../../assets/chapter5/images/fig_5_5.png"),
-  "ap_potato_race": require("../../assets/chapter5/images/fig_5_6.png"),
+  "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
+  "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
+  "graph_ex2_1_q1_c": require("@/assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
+  "graph_ex2_1_q1_d": require("@/assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
+  "graph_ex2_1_q1_e": require("@/assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
+  "graph_ex2_1_q1_f": require("@/assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
+  "ap_spiral": require("@/assets/chapter5/images/fig_5_4.png"),
+  "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
+  "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
 };
 
 interface QuestionCardProps {
