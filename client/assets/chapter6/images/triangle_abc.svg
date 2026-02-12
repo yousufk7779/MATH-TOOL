@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150" style="background-color:white; border:1px solid #ddd;">
+  <polygon points="100,20 40,130 160,130" fill="none" stroke="black" stroke-width="2"/>
+  <text x="95" y="15" font-family="Arial" font-size="12">A</text>
+  <text x="30" y="140" font-family="Arial" font-size="12">B</text>
+  <text x="165" y="140" font-family="Arial" font-size="12">C</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Vertices -->
+  <!-- A=(220, 50) -->
+  <!-- B=(50, 250) -->
+  <!-- C=(350, 250) -->
+  <!-- D=(135, 150) Midpoint of AB -->
+  <!-- E=(200, 250) Derived from DE || AC -->
+  <!-- F=(125, 250) Derived from DF || AE -->
+
+  <!-- Triangle ABC -->
+  <path d="M220 50 L50 250 L350 250 Z" class="line" />
+  
+  <!-- Internal Lines -->
+  <!-- AE -->
+  <line x1="220" y1="50" x2="200" y2="250" class="line" />
+  
+  <!-- DE -->
+  <line x1="135" y1="150" x2="200" y2="250" class="line" />
+  
+  <!-- DF -->
+  <line x1="135" y1="150" x2="125" y2="250" class="line" />
+
+  <!-- Labels -->
+  <text x="215" y="40" class="text">A</text>
+  <text x="35" y="260" class="text">B</text>
+  <text x="360" y="260" class="text">C</text>
+  <text x="110" y="150" class="text">D</text>
+  <text x="195" y="275" class="text">E</text>
+  <text x="120" y="275" class="text">F</text>
+
+</svg>

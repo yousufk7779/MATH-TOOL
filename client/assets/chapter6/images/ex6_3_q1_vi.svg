@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .label { font-size: 20px; font-weight: bold; }
+      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Triangle DEF -->
+  <!-- Coords: E(60, 250), F(240, 250), D(77, 156) -->
+  <path d="M77 156 L60 250 L240 250 Z" class="line" />
+
+  <!-- Labels DEF -->
+  <text x="70" y="145" class="text label">D</text>
+  <text x="40" y="260" class="text label">E</text>
+  <text x="250" y="260" class="text label">F</text>
+
+  <!-- Angles DEF -->
+  <text x="75" y="195" class="text">70°</text>
+  <text x="75" y="240" class="text">80°</text>
+
+  <!-- Arcs DEF -->
+  <path d="M73 175 A 20 20 0 0 0 88 180" class="angle-arc" transform="rotate(-10 77 156)" /> <!-- Approx arc for D -->
+  <path d="M63 235 A 20 20 0 0 1 75 250" class="angle-arc" />
+
+
+  <!-- Triangle PQR -->
+  <!-- Identical shape, shifted right -->
+  <!-- Coords: Q(320, 250), R(500, 250), P(337, 156) -->
+  <path d="M337 156 L320 250 L500 250 Z" class="line" />
+
+  <!-- Labels PQR -->
+  <text x="330" y="145" class="text label">P</text>
+  <text x="300" y="260" class="text label">Q</text>
+  <text x="510" y="260" class="text label">R</text>
+
+  <!-- Angles PQR -->
+  <text x="335" y="240" class="text">80°</text>
+  <text x="455" y="240" class="text">30°</text>
+
+  <!-- Arcs PQR -->
+  <path d="M323 235 A 20 20 0 0 1 335 250" class="angle-arc" />
+  <path d="M480 250 A 25 25 0 0 0 488 235" class="angle-arc" />
+
+</svg>

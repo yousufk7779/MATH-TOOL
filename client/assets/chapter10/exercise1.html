@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles - Exercise 10.1</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 10: Exercise 10.1</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">1. How many tangents can a circle have?</div>
+        <div class="diagram-placeholder">[Circle illustrating multiple tangents will be inserted here]</div>
+        <img src="images/ex10_1_q1.svg" alt="Infinite Tangents">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Answer:</strong> Infinitely many.</div>
+        <div class="step"><strong style="color: #1565C0;">Explanation:</strong></div>
+        <div class="step">A circle is a collection of points.</div>
+        <div class="step">A circle has infinitely many points on its circumference.</div>
+        <div class="step">At any single point on the circle, we can draw exactly one tangent.</div>
+        <div class="step">Since there are infinite points, there can be infinitely many tangents.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Fill in the blanks:</div>
+        <div class="diagram-placeholder">[Diagrams illustrating secant, tangent, and point of contact will be inserted
+            here]</div>
+        <img src="images/ex10_1_q2.svg" alt="Secant vs Tangent">
+        <div class="solution-header">Solution:</div>
+        <div class="sub-question">(i) A tangent to a circle intersects it in _____ point(s).</div>
+        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> One</div>
+
+        <div class="sub-question">(ii) A line intersecting a circle in two points is called a _____.</div>
+        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Secant</div>
+
+        <div class="sub-question">(iii) A circle can have _____ parallel tangents at the most.</div>
+        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Two (Usually at the ends of a diameter)</div>
+
+        <div class="sub-question">(iv) The common point of a tangent to a circle and the circle is called _____.</div>
+        <div class="step"><strong style="color: #2E7D32;">Answer:</strong> Point of contact</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O
+            at a point Q so that OQ = 12 cm. Length PQ is:</div>
+        <div class="diagram-placeholder">[Circle with radius 5, point Q at distance 12, tangent PQ will be inserted
+            here]</div>
+        <img src="images/ex10_1_q3.svg" alt="Tangent PQ Calculation">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Radius OP = 5 cm. Distance OQ = 12 cm. PQ is a
+            tangent at P.</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Length PQ.</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">We know that the radius is perpendicular to the tangent at the point of contact (<strong
+                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
+        <div class="step">So, \(\angle OPQ = 90^\circ\).</div>
+        <div class="step">Therefore, \(\triangle OPQ\) is a right-angled triangle.</div>
+        <div class="step">By Pythagoras Theorem: \(Hypotenuse^2 = Base^2 + Height^2\).</div>
+        <div class="step">\(OQ^2 = OP^2 + PQ^2\).</div>
+        <div class="step">Substitute the values: \(12^2 = 5^2 + PQ^2\).</div>
+        <div class="step">\(144 = 25 + PQ^2\).</div>
+        <div class="step">\(PQ^2 = 144 - 25\).</div>
+        <div class="step">\(PQ^2 = 119\).</div>
+        <div class="step">\(PQ = \sqrt{119}\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the length PQ is
+            \(\sqrt{119}\) cm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. Draw a circle and two lines parallel to a given line such that one is a tangent and the
+            other, a secant to the circle.</div>
+        <div class="diagram-placeholder">[Circle with secant and tangent parallel to a line will be inserted here]</div>
+        <img src="images/ex10_1_q4.svg" alt="Parallel Lines Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">To Do:</strong> Draw a circle and lines parallel to a given
+            line (one tangent, one secant).</div>
+        <div class="step"><strong style="color: #1565C0;">Steps of Construction:</strong></div>
+        <div class="step">Draw a circle with center O.</div>
+        <div class="step">Draw a straight line \(AB\) (this is the given line).</div>
+        <div class="step">Draw a perpendicular to line \(AB\) passing through the center O.</div>
+        <div class="step">Mark two points on this perpendicular line.</div>
+        <div class="step">One point P on the circle, and another point S inside the circle.</div>
+        <div class="step">Draw a line through P perpendicular to the radius (This is line \(n\)).</div>
+        <div class="step">Draw a line through S perpendicular to the radius line (This is line \(m\)).</div>
+        <div class="step">Here, line \(n\) touches the circle at one point, so it is a <strong>Tangent</strong>.</div>
+        <div class="step">Line \(m\) cuts the circle at two points, so it is a <strong>Secant</strong>.</div>
+        <div class="step">Both lines \(m\) and \(n\) are parallel to the given line \(AB\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> See the construction in the
+            diagram.</div>
+
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Geometry - Exercise 7.1</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 7: Exercise 7.1</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">1. Find the distance between the following pairs of points:</div>
+
+        <div class="sub-question">(i) (2, 3), (4, 1)</div>
+        <img src="images/ex7_1_q1_i.svg" alt="Points (2,3) and (4,1)">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(2, 3)\) and \(Q(4, 1)\).</div>
+        <div class="step">Distance \(PQ = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)</div>
+        <div class="step">\(= \sqrt{(4 - 2)^2 + (1 - 3)^2}\)</div>
+        <div class="step">\(= \sqrt{2^2 + (-2)^2}\)</div>
+        <div class="step">\(= \sqrt{4 + 4}\)</div>
+        <div class="step">\(= \sqrt{8} = \sqrt{4 \times 2} = 2\sqrt{2}\)</div>
+        <div class="final-answer">Distance = \(2\sqrt{2}\) units.</div>
+
+        <div class="sub-question">(ii) (-5, 7), (-1, 3)</div>
+        <img src="images/ex7_1_q1_ii.svg" alt="Points (-5,7) and (-1,3)">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(-5, 7)\) and \(Q(-1, 3)\).</div>
+        <div class="step">Distance \(PQ = \sqrt{(-1 - (-5))^2 + (3 - 7)^2}\)</div>
+        <div class="step">\(= \sqrt{4^2 + (-4)^2}\)</div>
+        <div class="step">\(= \sqrt{16 + 16}\)</div>
+        <div class="step">\(= \sqrt{32} = \sqrt{16 \times 2} = 4\sqrt{2}\)</div>
+        <div class="final-answer">Distance = \(4\sqrt{2}\) units.</div>
+
+        <div class="sub-question">(iii) (a, b), (-a, -b)</div>
+        <img src="images/ex7_1_q1_iii.svg" alt="Points (a,b) and (-a,-b)">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(a, b)\) and \(Q(-a, -b)\).</div>
+        <div class="step">Distance \(PQ = \sqrt{(-a - a)^2 + (-b - b)^2}\)</div>
+        <div class="step">\(= \sqrt{(-2a)^2 + (-2b)^2}\)</div>
+        <div class="step">\(= \sqrt{4a^2 + 4b^2}\)</div>
+        <div class="step">\(= \sqrt{4(a^2 + b^2)} = 2\sqrt{a^2 + b^2}\)</div>
+        <div class="final-answer">Distance = \(2\sqrt{a^2 + b^2}\) units.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Find the distance between the points (0, 0) and (36, 15). Can you now find the distance
+            between the two towns A and B discussed in Section 7.2?</div>
+        <img src="images/ex7_1_q2.svg" alt="Points (0,0) and (36,15)">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(0, 0)\) and \(B(36, 15)\).</div>
+        <div class="step">Distance \(AB = \sqrt{(36 - 0)^2 + (15 - 0)^2}\)</div>
+        <div class="step">\(= \sqrt{36^2 + 15^2}\)</div>
+        <div class="step">\(= \sqrt{1296 + 225}\)</div>
+        <div class="step">\(= \sqrt{1521} = 39\)</div>
+        <div class="final-answer">The distance is 39 units.</div>
+        <div class="step">Yes, the distance between the two towns A and B is 39 km.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. Determine if the points (1, 5), (2, 3) and (-2, -11) are collinear.</div>
+        <img src="images/ex7_1_q3.svg" alt="Points A, B, C">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(1, 5)\), \(B(2, 3)\), \(C(-2, -11)\).</div>
+        <div class="step">\(AB = \sqrt{(2-1)^2 + (3-5)^2} = \sqrt{1^2 + (-2)^2} = \sqrt{1 + 4} = \sqrt{5} \approx 2.23\)
+        </div>
+        <div class="step">\(BC = \sqrt{(-2-2)^2 + (-11-3)^2} = \sqrt{(-4)^2 + (-14)^2} = \sqrt{16 + 196} = \sqrt{212}
+            \approx 14.56\)</div>
+        <div class="step">\(AC = \sqrt{(-2-1)^2 + (-11-5)^2} = \sqrt{(-3)^2 + (-16)^2} = \sqrt{9 + 256} = \sqrt{265}
+            \approx 16.27\)</div>
+        <div class="step">Check if sum of two smaller equals largest:</div>
+        <div class="step">\(AB + BC = 2.23 + 14.56 = 16.79\)</div>
+        <div class="step">This is not equal to \(AC\) (16.27).</div>
+        <div class="final-answer">Therefore, the points are NOT collinear.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. Check whether (5, -2), (6, 4) and (7, -2) are the vertices of an isosceles triangle.
+        </div>
+        <img src="images/ex7_1_q4.svg" alt="Isosceles Triangle Verification">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(5, -2)\), \(B(6, 4)\), \(C(7, -2)\).</div>
+        <div class="step">\(AB = \sqrt{(6-5)^2 + (4-(-2))^2} = \sqrt{1^2 + 6^2} = \sqrt{1 + 36} = \sqrt{37}\)</div>
+        <div class="step">\(BC = \sqrt{(7-6)^2 + (-2-4)^2} = \sqrt{1^2 + (-6)^2} = \sqrt{1 + 36} = \sqrt{37}\)</div>
+        <div class="step">\(AC = \sqrt{(7-5)^2 + (-2-(-2))^2} = \sqrt{2^2 + 0^2} = \sqrt{4} = 2\)</div>
+        <div class="step">Since \(AB = BC = \sqrt{37}\), two sides are equal.</div>
+        <div class="final-answer">Yes, they are vertices of an isosceles triangle.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. In a classroom, 4 friends are seated at points A(3, 4), B(6, 7), C(9, 4) and D(6, 1).
+            Champa and Chameli walk into the class and after observing for a few minutes Champa asks Chameli, â€œDonâ€™t you
+            think ABCD is a square?â€ Chameli disagrees. Using distance formula, find which of them is correct.</div>
+        <img src="images/ex7_1_q5.svg" alt="Classroom Seating ABCD">
+        <div class="solution-header">Solution:</div>
+        <div class="step">\(A(3, 4)\), \(B(6, 7)\), \(C(9, 4)\), \(D(6, 1)\).</div>
+        <div class="step">\(AB = \sqrt{(6-3)^2 + (7-4)^2} = \sqrt{3^2 + 3^2} = \sqrt{18} = 3\sqrt{2}\)</div>
+        <div class="step">\(BC = \sqrt{(9-6)^2 + (4-7)^2} = \sqrt{3^2 + (-3)^2} = \sqrt{18} = 3\sqrt{2}\)</div>
+        <div class="step">\(CD = \sqrt{(6-9)^2 + (1-4)^2} = \sqrt{(-3)^2 + (-3)^2} = \sqrt{18} = 3\sqrt{2}\)</div>
+        <div class="step">\(DA = \sqrt{(3-6)^2 + (4-1)^2} = \sqrt{(-3)^2 + 3^2} = \sqrt{18} = 3\sqrt{2}\)</div>
+        <div class="step">All sides are equal. Now check diagonals.</div>
+        <div class="step">\(AC = \sqrt{(9-3)^2 + (4-4)^2} = \sqrt{6^2 + 0^2} = \sqrt{36} = 6\)</div>
+        <div class="step">\(BD = \sqrt{(6-6)^2 + (1-7)^2} = \sqrt{0^2 + (-6)^2} = \sqrt{36} = 6\)</div>
+        <div class="step">Diagonals are also equal. Since all sides and both diagonals are equal, ABCD is a square.
+        </div>
+        <div class="final-answer">Conclusion: Champa is correct.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. Name the type of quadrilateral formed, if any, by the following points, and give
+            reasons for your answer:</div>
+
+        <div class="sub-question">(i) (-1, -2), (1, 0), (-1, 2), (-3, 0)</div>
+        <img src="images/ex7_1_q6_i.svg" alt="Quadrilateral Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(-1,-2), B(1,0), C(-1,2), D(-3,0)\).</div>
+        <div class="step">\(AB = \sqrt{(1-(-1))^2 + (0-(-2))^2} = \sqrt{2^2 + 2^2} = \sqrt{8} = 2\sqrt{2}\)</div>
+        <div class="step">\(BC = \sqrt{(-1-1)^2 + (2-0)^2} = \sqrt{(-2)^2 + 2^2} = \sqrt{8} = 2\sqrt{2}\)</div>
+        <div class="step">\(CD = \sqrt{(-3-(-1))^2 + (0-2)^2} = \sqrt{(-2)^2 + (-2)^2} = \sqrt{8} = 2\sqrt{2}\)</div>
+        <div class="step">\(DA = \sqrt{(-1-(-3))^2 + (-2-0)^2} = \sqrt{2^2 + (-2)^2} = \sqrt{8} = 2\sqrt{2}\)</div>
+        <div class="step">All sides are equal. Now checking diagonals:</div>
+        <div class="step">\(AC = \sqrt{(-1-(-1))^2 + (2-(-2))^2} = \sqrt{0^2 + 4^2} = 4\)</div>
+        <div class="step">\(BD = \sqrt{(-3-1)^2 + (0-0)^2} = \sqrt{(-4)^2 + 0^2} = 4\)</div>
+        <div class="step">Diagonals are equal.</div>
+        <div class="final-answer">Thus, the quadrilateral is a square.</div>
+
+        <div class="sub-question">(ii) (-3, 5), (3, 1), (0, 3), (-1, -4)</div>
+        <img src="images/ex7_1_q6_ii.svg" alt="Quadrilateral Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(-3,5), B(3,1), C(0,3), D(-1,-4)\).</div>
+        <div class="step">\(AB = \sqrt{(3-(-3))^2 + (1-5)^2} = \sqrt{6^2 + (-4)^2} = \sqrt{36 + 16} = \sqrt{52} =
+            2\sqrt{13}\)</div>
+        <div class="step">\(BC = \sqrt{(0-3)^2 + (3-1)^2} = \sqrt{(-3)^2 + 2^2} = \sqrt{9 + 4} = \sqrt{13}\)</div>
+        <div class="step">\(AC = \sqrt{(0-(-3))^2 + (3-5)^2} = \sqrt{3^2 + (-2)^2} = \sqrt{9 + 4} = \sqrt{13}\)</div>
+        <div class="step">Here, \(AC + BC = \sqrt{13} + \sqrt{13} = 2\sqrt{13} = AB\).</div>
+        <div class="step">Since sums of two distances equals the third, the points are collinear.</div>
+        <div class="final-answer">Therefore, no quadrilateral is formed.</div>
+
+        <div class="sub-question">(iii) (4, 5), (7, 6), (4, 3), (1, 2)</div>
+        <img src="images/ex7_1_q6_iii.svg" alt="Quadrilateral Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(4,5), B(7,6), C(4,3), D(1,2)\).</div>
+        <div class="step">\(AB = \sqrt{10}\), \(BC = 3\sqrt{2}\), \(CD = \sqrt{10}\), \(DA = 3\sqrt{2}\).</div>
+        <div class="step">Opposite sides are equal. It is a parallelogram or rectangle.</div>
+        <div class="step">Check diagonals:</div>
+        <div class="step">\(AC = 2\), \(BD = \sqrt{52}\).</div>
+        <div class="step">Diagonals are unequal.</div>
+        <div class="final-answer">Thus, it is a Parallelogram.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. Find the point on the x-axis which is equidistant from (2, -5) and (-2, 9).</div>
+        <img src="images/ex7_1_q7.svg" alt="Point on X-axis">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let point be \(P(x, 0)\). \(A(2, -5)\), \(B(-2, 9)\).</div>
+        <div class="step">\(PA = PB \Rightarrow PA^2 = PB^2\)</div>
+        <div class="step">\((x - 2)^2 + (0 - (-5))^2 = (x - (-2))^2 + (0 - 9)^2\)</div>
+        <div class="step">\((x - 2)^2 + 25 = (x + 2)^2 + 81\)</div>
+        <div class="step">\(x^2 - 4x + 4 + 25 = x^2 + 4x + 4 + 81\)</div>
+        <div class="step">\(-4x - 4x = 81 - 25\)</div>
+        <div class="step">\(-8x = 56 \Rightarrow x = -7\)</div>
+        <div class="final-answer">Therefore, the point is (-7, 0).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. Find the values of y for which the distance between the points P(2, -3) and Q(10, y) is
+            10 units.</div>
+        <img src="images/ex7_1_q8.svg" alt="Points P and Q">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Given \(PQ = 10 \Rightarrow PQ^2 = 100\).</div>
+        <div class="step">\((10 - 2)^2 + (y - (-3))^2 = 100\)</div>
+        <div class="step">\(8^2 + (y + 3)^2 = 100\)</div>
+        <div class="step">\(64 + (y + 3)^2 = 100 \Rightarrow (y + 3)^2 = 36\)</div>
+        <div class="step">\(y + 3 = \pm 6\)</div>
+        <div class="step">Case 1: \(y + 3 = 6 \Rightarrow y = 3\).</div>
+        <div class="step">Case 2: \(y + 3 = -6 \Rightarrow y = -9\).</div>
+        <div class="final-answer">The possible values of y are 3 or -9.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. If Q(0, 1) is equidistant from P(5, -3) and R(x, 6), find the values of x. Also find
+            the distances QR and PR.</div>
+        <img src="images/ex7_1_q9.svg" alt="Points Q, P, R">
+        <div class="solution-header">Solution:</div>
+        <div class="step">\(QP = QR \Rightarrow QP^2 = QR^2\).</div>
+        <div class="step">\((5 - 0)^2 + (-3 - 1)^2 = (x - 0)^2 + (6 - 1)^2\)</div>
+        <div class="step">\(25 + 16 = x^2 + 25 \Rightarrow x^2 = 16 \Rightarrow x = \pm 4\).</div>
+        <div class="step">Case 1 (\(x=4\)): \(QR = \sqrt{41}\), \(PR = \sqrt{(4-5)^2 + (6+3)^2} = \sqrt{1 + 81} =
+            \sqrt{82}\).</div>
+        <div class="step">Case 2 (\(x=-4\)): \(QR = \sqrt{41}\), \(PR = \sqrt{(-4-5)^2 + (6+3)^2} = \sqrt{81 + 81} =
+            \sqrt{162} = 9\sqrt{2}\).</div>
+        <div class="final-answer">\(x = \pm 4\); \(QR = \sqrt{41}\), \(PR = \sqrt{82}\) or \(9\sqrt{2}\).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">10. Find a relation between x and y such that the point (x, y) is equidistant from the
+            point (3, 6) and (-3, 4).</div>
+        <img src="images/ex7_1_q10.svg" alt="Equidistant Locus">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(x, y)\), \(A(3, 6)\), \(B(-3, 4)\). \(PA^2 = PB^2\).</div>
+        <div class="step">\((x - 3)^2 + (y - 6)^2 = (x + 3)^2 + (y - 4)^2\)</div>
+        <div class="step">\(x^2 - 6x + 9 + y^2 - 12y + 36 = x^2 + 6x + 9 + y^2 - 8y + 16\)</div>
+        <div class="step">\(-6x - 12y + 45 = 6x - 8y + 25\)</div>
+        <div class="step">\(-12x - 4y + 20 = 0\)</div>
+        <div class="step">\(3x + y - 5 = 0\)</div>
+        <div class="final-answer">The relation is \(3x + y - 5 = 0\).</div>
+    </div>
+
+</body>
+
+</html>

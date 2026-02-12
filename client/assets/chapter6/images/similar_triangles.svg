@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150" style="background-color:white; border:1px solid #ddd;">
+  <!-- Triangle ABC -->
+  <polygon points="50,20 20,80 80,80" fill="none" stroke="black" stroke-width="2"/>
+  <text x="45" y="15" font-family="Arial" font-size="10">A</text>
+  <text x="10" y="90" font-family="Arial" font-size="10">B</text>
+  <text x="85" y="90" font-family="Arial" font-size="10">C</text>
+  
+  <!-- Triangle PQR (Larger) -->
+  <polygon points="150,20 110,120 190,120" fill="none" stroke="black" stroke-width="2"/>
+  <text x="145" y="15" font-family="Arial" font-size="10">P</text>
+  <text x="100" y="130" font-family="Arial" font-size="10">Q</text>
+  <text x="195" y="130" font-family="Arial" font-size="10">R</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .dim-text { font-family: 'Times New Roman', serif; font-size: 16px; fill: black; }
+      .mark { fill: none; stroke: #00BFFF; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Triangle CDF (Smaller) -->
+  <!-- D (80, 250), F (140, 250) -> Base 60px -->
+  <!-- C (80, 160) -> Height 90px -->
+  <!-- Ratio 90/60 = 1.5. Matches 6/4. -->
+  <path d="M80 160 L80 250 L140 250 Z" class="line" />
+
+  <!-- Labels CDF -->
+  <text x="75" y="150" class="text">C</text>
+  <text x="60" y="265" class="text">D</text>
+  <text x="145" y="265" class="text">F</text>
+  
+  <!-- Dimensions CDF -->
+  <text x="35" y="210" class="dim-text">6 m</text>
+  <text x="95" y="270" class="dim-text">4 m</text>
+
+  <!-- Right Angle D -->
+  <polyline points="80,240 90,240 90,250" class="mark" />
+
+
+  <!-- Triangle ABE (Larger) -->
+  <!-- B (300, 320). Base 28m. Height 42m. -->
+  <!-- Let's use scale 7px per m. -->
+  <!-- Base 28 * 7 = 196px. E at 300+196 = 496. -->
+  <!-- Height 42 * 7 = 294px. A at 320-294 = 26. -->
+  <!-- B (300, 320), E (496, 320), A (300, 26) -->
+  <path d="M300 26 L300 320 L496 320 Z" class="line" />
+
+  <!-- Labels ABE -->
+  <text x="295" y="20" class="text">A</text>
+  <text x="280" y="335" class="text">B</text>
+  <text x="500" y="335" class="text">E</text>
+  
+  <!-- Dimensions ABE -->
+  <text x="380" y="340" class="dim-text">28 m</text>
+
+  <!-- Right Angle B -->
+  <polyline points="300,310 310,310 310,320" class="mark" />
+
+</svg>
