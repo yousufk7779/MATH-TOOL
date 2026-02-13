@@ -22,6 +22,15 @@ const graphImages: Record<string, any> = {
   "ap_spiral": require("@/assets/chapter5/images/fig_5_4.png"),
   "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
   "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
+  // Chapter 3 Images
+  "Ex_3.1_Q1(i)": require("@/assets/chapter3/images/Ex_3.1_Q1(i).jpg"),
+  "Ex_3.1_Q1(ii)": require("@/assets/chapter3/images/Ex_3.1_Q1(ii).jpg"),
+  "Ex_3.1_Q4(iii)": require("@/assets/chapter3/images/Ex_3.1_Q4(iii).jpg"),
+  "Ex_3.1_Q7": require("@/assets/chapter3/images/Ex_3.1_Q7.jpg"),
+  "Example 1": require("@/assets/chapter3/images/Example 1.jpg"),
+  "mcq_k_value": require("@/assets/chapter3/images/mcq_k_value.svg"),
+  "mcq_ratios": require("@/assets/chapter3/images/mcq_ratios.svg"),
+  "mcq_solutions": require("@/assets/chapter3/images/mcq_solutions.svg"),
 };
 
 interface QuestionCardProps {

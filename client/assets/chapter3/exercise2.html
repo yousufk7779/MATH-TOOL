@@ -39,15 +39,7 @@
             font-family: 'Kalam', cursive;
         }
 
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
             font-weight: 700;
@@ -57,28 +49,33 @@
 
         .sub-question {
             margin-left: 15px;
-            margin-top: 20px;
+            margin-top: 15px;
             font-weight: 600;
+            text-decoration: none;
             color: #444;
-            border-bottom: 1px dashed #ddd;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
         }
 
+        /* Removed underline */
         .step {
             margin-bottom: 8px;
             font-size: 1.1em;
             color: #000;
-            line-height: 1.6;
+            line-height: 1.5;
+        }
+
+        .formula {
+            color: #D32F2F;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 5px;
         }
 
         .final-answer {
             color: #2E7D32;
             font-weight: 700;
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 1.2em;
-            padding-top: 5px;
-            display: inline-block;
         }
 
         .fraction {
@@ -86,7 +83,7 @@
             vertical-align: middle;
             text-align: center;
             font-size: 0.9em;
-            margin: 0 4px;
+            margin: 0 2px;
         }
 
         .numerator {
@@ -100,79 +97,40 @@
             padding: 0 2px;
         }
 
-        .solution-header {
-            color: #6C63FF;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-
-        .equation-ref {
-            font-weight: bold;
-            color: #000;
-            margin-left: 5px;
-        }
-
-        .diagram-placeholder {
-            float: right;
-            width: 200px;
-            height: 200px;
-            border: 2px dashed #bbb;
-            background: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 11px;
-            margin-left: 15px;
-            text-align: center;
-            font-family: 'Nunito', sans-serif;
-            margin-bottom: 15px;
-        }
-
         .clearfix::after {
             content: "";
             clear: both;
             display: table;
         }
 
-        .coord-table {
-            width: auto;
-            margin: 10px 0;
-            border-collapse: collapse;
-            font-family: 'Nunito', sans-serif;
-            font-size: 0.9em;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background: white;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .coord-table td,
-        .coord-table th {
-            background-color: #e8f5e9;
+        .solution-header {
             color: #2E7D32;
             font-weight: 700;
-            padding: 4px 8px;
-            border: 1px solid #ddd;
-            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 5px;
         }
 
-        .table-container {
-            display: inline-block;
-            margin-bottom: 15px;
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
         }
 
-        @media (max-width: 600px) {
-            .diagram-placeholder {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
+        sup {
+            top: -0.5em;
         }
-    </style>
+
+        sub {
+            bottom: -0.25em;
+        }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
 </head>
 
 <body>
@@ -182,207 +140,369 @@
         <div class="chapter-title">Chapter 3: Exercise 3.2</div>
     </div>
 
-    <!-- Question 1 -->
     <div class="content-box">
         <div class="question">1. Solve the following pair of linear equations by the substitution method.</div>
 
-        <!-- Part (i) -->
         <div class="sub-question">(i) x + y = 14 ; x – y = 4</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">x + y = 14 <span class="equation-ref">...(1)</span></div>
-        <div class="step">x - y = 4 <span class="equation-ref">...(2)</span></div>
-        <div class="step">From <span class="equation-ref">(2)</span>:</div>
-        <div class="step">x = 4 + y <span class="equation-ref">...(3)</span></div>
-        <div class="step">Substitute x in <span class="equation-ref">(1)</span>:</div>
+        <div class="step">Given equations are:</div>
+        <div class="step">x + y = 14 ... Let this be equation (1)</div>
+        <div class="step">x - y = 4 ... Let this be equation (2)</div>
+        <div class="step">From equation (2), find x:</div>
+        <div class="step">x = 4 + y ... Let this be equation (3)</div>
+        <div class="step">Put this value of x in equation (1):</div>
         <div class="step">(4 + y) + y = 14</div>
-        <div class="step">2y + 4 = 14</div>
+        <div class="step">4 + 2y = 14</div>
+        <div class="step">2y = 14 - 4</div>
         <div class="step">2y = 10</div>
+        <div class="step">y = 10/2</div>
         <div class="step">y = 5</div>
-        <div class="step">Substitute y = 5 in <span class="equation-ref">(3)</span>:</div>
-        <div class="step">x = 4 + 5 = 9</div>
+        <div class="step">Put y = 5 in equation (3):</div>
+        <div class="step">x = 4 + 5</div>
+        <div class="step">x = 9</div>
         <div class="final-answer">x = 9, y = 5</div>
 
-        <!-- Part (ii) -->
-        <div class="sub-question">(ii) s – t = 3 ; <span class="fraction"><span class="numerator">s</span><span
-                    class="denominator">3</span></span> + <span class="fraction"><span class="numerator">t</span><span
-                    class="denominator">2</span></span> = 6</div>
+        <div class="sub-question">(ii) s – t = 3 ; <span class="fraction"><span class="numerator">s</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">t</span><span class="denominator">2</span></span> = 6</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">s - t = 3 <span class="equation-ref">...(1)</span></div>
+        <div class="step">Given equations are:</div>
+        <div class="step">s - t = 3 ... Let this be equation (1)</div>
         <div class="step"><span class="fraction"><span class="numerator">s</span><span
                     class="denominator">3</span></span> + <span class="fraction"><span class="numerator">t</span><span
-                    class="denominator">2</span></span> = 6 <span class="equation-ref">...(2)</span></div>
-        <div class="step">From <span class="equation-ref">(1)</span>:</div>
-        <div class="step">s = 3 + t <span class="equation-ref">...(3)</span></div>
-        <div class="step">Substitute s in <span class="equation-ref">(2)</span>:</div>
+                    class="denominator">2</span></span> = 6 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find s:</div>
+        <div class="step">s = 3 + t ... Let this be equation (3)</div>
+        <div class="step">Put this value of s in equation (2):</div>
         <div class="step"><span class="fraction"><span class="numerator">3 + t</span><span
                     class="denominator">3</span></span> + <span class="fraction"><span class="numerator">t</span><span
                     class="denominator">2</span></span> = 6</div>
-        <div class="step">Multiply by 6:</div>
+        <div class="step">LCM of 3 and 2 is 6.</div>
+        <div class="step"><span class="fraction"><span class="numerator">2(3 + t) + 3t</span><span
+                    class="denominator">6</span></span> = 6</div>
         <div class="step">2(3 + t) + 3t = 36</div>
         <div class="step">6 + 2t + 3t = 36</div>
+        <div class="step">6 + 5t = 36</div>
+        <div class="step">5t = 36 - 6</div>
         <div class="step">5t = 30</div>
+        <div class="step">t = <span class="fraction"><span class="numerator">30</span><span
+                    class="denominator">5</span></span></div>
         <div class="step">t = 6</div>
-        <div class="step">Substitute t = 6 in <span class="equation-ref">(3)</span>:</div>
-        <div class="step">s = 3 + 6 = 9</div>
+        <div class="step">Put t = 6 in equation (3):</div>
+        <div class="step">s = 3 + 6</div>
+        <div class="step">s = 9</div>
         <div class="final-answer">s = 9, t = 6</div>
 
-        <!-- Part (iv) -->
+        <div class="sub-question">(iii) 3x – y = 3 ; 9x – 3y = 9</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Given equations are:</div>
+        <div class="step">3x - y = 3 ... Let this be equation (1)</div>
+        <div class="step">9x - 3y = 9 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find y:</div>
+        <div class="step">y = 3x - 3 ... Let this be equation (3)</div>
+        <div class="step">Put this value of y in equation (2):</div>
+        <div class="step">9x - 3(3x - 3) = 9</div>
+        <div class="step">9x - 9x + 9 = 9</div>
+        <div class="step">9 = 9</div>
+        <div class="step">This is a true statement.</div>
+        <div class="step">This means both equations are same.</div>
+        <div class="final-answer">Infinitely many solutions.</div>
+
         <div class="sub-question">(iv) 0.2x + 0.3y = 1.3 ; 0.4x + 0.5y = 2.3</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">Multiply equations by 10:</div>
-        <div class="step">2x + 3y = 13 <span class="equation-ref">...(1)</span></div>
-        <div class="step">4x + 5y = 23 <span class="equation-ref">...(2)</span></div>
-        <div class="step">From <span class="equation-ref">(1)</span>:</div>
+        <div class="step">Multiply both equations by 10 to remove decimals.</div>
+        <div class="step">2x + 3y = 13 ... Let this be equation (1)</div>
+        <div class="step">4x + 5y = 23 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find x:</div>
+        <div class="step">2x = 13 - 3y</div>
         <div class="step">x = <span class="fraction"><span class="numerator">13 - 3y</span><span
-                    class="denominator">2</span></span> <span class="equation-ref">...(3)</span></div>
-        <div class="step">Substitute x in <span class="equation-ref">(2)</span>:</div>
-        <div class="step">4(<span class="fraction"><span class="numerator">13 - 3y</span><span
-                    class="denominator">2</span></span>) + 5y = 23</div>
+                    class="denominator">2</span></span> ... Let this be equation (3)</div>
+        <div class="step">Put this value of x in equation (2):</div>
+        <div class="step">4[<span class="fraction"><span class="numerator">13 - 3y</span><span
+                    class="denominator">2</span></span>] + 5y = 23</div>
         <div class="step">2(13 - 3y) + 5y = 23</div>
         <div class="step">26 - 6y + 5y = 23</div>
         <div class="step">26 - y = 23</div>
+        <div class="step">-y = 23 - 26</div>
+        <div class="step">-y = -3</div>
         <div class="step">y = 3</div>
-        <div class="step">Substitute y = 3 in <span class="equation-ref">(3)</span>:</div>
+        <div class="step">Put y = 3 in equation (3):</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">13 - 3(3)</span><span
+                    class="denominator">2</span></span></div>
         <div class="step">x = <span class="fraction"><span class="numerator">13 - 9</span><span
                     class="denominator">2</span></span></div>
         <div class="step">x = <span class="fraction"><span class="numerator">4</span><span
-                    class="denominator">2</span></span> = 2</div>
+                    class="denominator">2</span></span></div>
+        <div class="step">x = 2</div>
         <div class="final-answer">x = 2, y = 3</div>
 
-        <!-- Part (v) -->
         <div class="sub-question">(v) √2x + √3y = 0 ; √3x – √8y = 0</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">√2x + √3y = 0 <span class="equation-ref">...(1)</span></div>
-        <div class="step">√3x - √8y = 0 <span class="equation-ref">...(2)</span></div>
-        <div class="step">From <span class="equation-ref">(1)</span>: x = <span class="fraction"><span
-                    class="numerator">-√3y</span><span class="denominator">√2</span></span> <span
-                class="equation-ref">...(3)</span></div>
-        <div class="step">Substitute x in <span class="equation-ref">(2)</span>:</div>
+        <div class="step">Given equations are:</div>
+        <div class="step">√2x + √3y = 0 ... Let this be equation (1)</div>
+        <div class="step">√3x - √8y = 0 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find x:</div>
+        <div class="step">√2x = -√3y</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-√3y</span><span
+                    class="denominator">√2</span></span> ... Let this be equation (3)</div>
+        <div class="step">Put this value of x in equation (2):</div>
         <div class="step">√3(<span class="fraction"><span class="numerator">-√3y</span><span
                     class="denominator">√2</span></span>) - √8y = 0</div>
         <div class="step"><span class="fraction"><span class="numerator">-3y</span><span
-                    class="denominator">√2</span></span> - 2√2y = 0</div>
-        <div class="step">Taking y common: y(<span class="fraction"><span class="numerator">-3</span><span
-                    class="denominator">√2</span></span> - 2√2) = 0</div>
-        <div class="step">Since constant term is not zero, y must be 0.</div>
-        <div class="step">Substitute y = 0 in <span class="equation-ref">(3)</span>:</div>
+                    class="denominator">√2</span></span> - √8y = 0</div>
+        <div class="step">Take y common:</div>
+        <div class="step">y(<span class="fraction"><span class="numerator">-3</span><span
+                    class="denominator">√2</span></span> - √8) = 0</div>
+        <div class="step">So, y = 0</div>
+        <div class="step">Put y = 0 in equation (3):</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-√3(0)</span><span
+                    class="denominator">√2</span></span></div>
         <div class="step">x = 0</div>
         <div class="final-answer">x = 0, y = 0</div>
+
+        <div class="sub-question">(vi) <span class="fraction"><span class="numerator">3x</span><span class="denominator">2</span></span> – <span class="fraction"><span class="numerator">5y</span><span class="denominator">3</span></span> = –2 ; <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">13</span><span class="denominator">6</span></span></div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Simplify equation 1: Multiply strictly by 6 (LCM of 2,3).</div>
+        <div class="step">9x - 10y = -12 ... Let this be equation (1)</div>
+        <div class="step">Simplify equation 2: Multiply strictly by 6.</div>
+        <div class="step">2x + 3y = 13 ... Let this be equation (2)</div>
+        <div class="step">From equation (2), find x:</div>
+        <div class="step">2x = 13 - 3y</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">13 - 3y</span><span
+                    class="denominator">2</span></span> ... Let this be equation (3)</div>
+        <div class="step">Put this value of x in equation (1):</div>
+        <div class="step">9[<span class="fraction"><span class="numerator">13 - 3y</span><span
+                    class="denominator">2</span></span>] - 10y = -12</div>
+        <div class="step">[<span class="fraction"><span class="numerator">117 - 27y</span><span
+                    class="denominator">2</span></span>] - 10y = -12</div>
+        <div class="step">Multiply by 2 to remove fraction:</div>
+        <div class="step">117 - 27y - 20y = -24</div>
+        <div class="step">117 - 47y = -24</div>
+        <div class="step">-47y = -24 - 117</div>
+        <div class="step">-47y = -141</div>
+        <div class="step">y = <span class="fraction"><span class="numerator">141</span><span
+                    class="denominator">47</span></span></div>
+        <div class="step">y = 3</div>
+        <div class="step">Put y = 3 in equation (3):</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">13 - 3(3)</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">13 - 9</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">4</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">x = 2</div>
+        <div class="final-answer">x = 2, y = 3</div>
     </div>
 
-    <!-- Question 2 -->
     <div class="content-box">
         <div class="question">2. Solve 2x + 3y = 11 and 2x – 4y = – 24 and hence find the value of ‘m’ for which y = mx
             + 3.</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">2x + 3y = 11 <span class="equation-ref">...(1)</span></div>
-        <div class="step">2x - 4y = -24 <span class="equation-ref">...(2)</span></div>
-        <div class="step">Subtract <span class="equation-ref">(2)</span> from <span class="equation-ref">(1)</span>:
-        </div>
-        <div class="step">(2x + 3y) - (2x - 4y) = 11 - (-24)</div>
+        <div class="step">Given equations are:</div>
+        <div class="step">2x + 3y = 11 ... Let this be equation (1)</div>
+        <div class="step">2x - 4y = -24 ... Let this be equation (2)</div>
+        <div class="step">From equation (2), find 2x:</div>
+        <div class="step">2x = 4y - 24</div>
+        <div class="step">x = 2y - 12 ... Let this be equation (3)</div>
+        <div class="step">Put this in equation (1):</div>
+        <div class="step">2(2y - 12) + 3y = 11</div>
+        <div class="step">4y - 24 + 3y = 11</div>
+        <div class="step">7y - 24 = 11</div>
+        <div class="step">7y = 11 + 24</div>
         <div class="step">7y = 35</div>
         <div class="step">y = 5</div>
-        <div class="step">Substitute y = 5 in <span class="equation-ref">(1)</span>:</div>
-        <div class="step">2x + 15 = 11</div>
-        <div class="step">2x = -4</div>
+        <div class="step">Put y = 5 in equation (3):</div>
+        <div class="step">x = 2(5) - 12</div>
+        <div class="step">x = 10 - 12</div>
         <div class="step">x = -2</div>
-        <div class="step">Now find m using y = mx + 3:</div>
+        <div class="step">Now we need to find m.</div>
+        <div class="step">Equation is: y = mx + 3</div>
+        <div class="step">Put x = -2 and y = 5</div>
         <div class="step">5 = m(-2) + 3</div>
         <div class="step">5 - 3 = -2m</div>
         <div class="step">2 = -2m</div>
+        <div class="step">m = 2/-2</div>
         <div class="step">m = -1</div>
         <div class="final-answer">m = -1</div>
     </div>
 
-    <!-- Question 4 -->
-    <div class="content-box clearfix">
-        <div class="question">4. Which of the following pairs of linear equations are consistent/inconsistent? If
-            consistent, obtain the solution graphically:</div>
+    <div class="content-box">
+        <div class="question">3. Form the pair of linear equations for the following problems and find their solution by
+            substitution method.</div>
 
-        <!-- Part (i) -->
-        <div class="sub-question">(i) x + y = 5, 2x + 2y = 10</div>
+        <div class="sub-question">(i) The difference between two numbers is 26 and one number is three times the other.
+            Find them.</div>
         <div class="solution-header">Solution:</div>
-        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
-                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">2</span></span></div>
-        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
-                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">2</span></span></div>
-        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
-                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">5</span><span
-                    class="denominator">10</span></span> = <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">2</span></span></div>
-        <div class="step">Since all ratios are equal.</div>
-        <div class="final-answer">Consistent (Infinitely many solutions).</div>
+        <div class="step">Let first number be x.</div>
+        <div class="step">Let second number be y.</div>
+        <div class="step">Let x be greater than y.</div>
+        <div class="step">Difference is 26:</div>
+        <div class="step">x - y = 26 ... Let this be equation (1)</div>
+        <div class="step">One number is 3 times other:</div>
+        <div class="step">x = 3y ... Let this be equation (2)</div>
+        <div class="step">Put value of x from (2) into (1):</div>
+        <div class="step">3y - y = 26</div>
+        <div class="step">2y = 26</div>
+        <div class="step">y = 13</div>
+        <div class="step">Put y = 13 in equation (2):</div>
+        <div class="step">x = 3(13)</div>
+        <div class="step">x = 39</div>
+        <div class="final-answer">Numbers are 39 and 13.</div>
 
-        <!-- Part (ii) -->
-        <div class="sub-question">(ii) x – y = 8, 3x – 3y = 16</div>
+        <div class="sub-question">(ii) The larger of two supplementary angles exceeds the smaller by 18 degrees. Find
+            them.</div>
         <div class="solution-header">Solution:</div>
-        <div class="step"><span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">3</span></span> = <span class="fraction"><span class="numerator">-1</span><span
-                    class="denominator">-3</span></span> ≠ <span class="fraction"><span class="numerator">8</span><span
-                    class="denominator">16</span></span></div>
-        <div class="final-answer">Inconsistent.</div>
+        <div class="step">Let larger angle = x.</div>
+        <div class="step">Let smaller angle = y.</div>
+        <div class="step">Angles are supplementary (Sum is 180°):</div>
+        <div class="step">x + y = 180 ... Let this be equation (1)</div>
+        <div class="step">Larger exceeds smaller by 18:</div>
+        <div class="step">x - y = 18 ... Let this be equation (2)</div>
+        <div class="step">From equation (2), find x:</div>
+        <div class="step">x = 18 + y ... Let this be equation (3)</div>
+        <div class="step">Put in equation (1):</div>
+        <div class="step">(18 + y) + y = 180</div>
+        <div class="step">18 + 2y = 180</div>
+        <div class="step">2y = 180 - 18</div>
+        <div class="step">2y = 162</div>
+        <div class="step">y = 81</div>
+        <div class="step">Put y = 81 in equation (3):</div>
+        <div class="step">x = 18 + 81</div>
+        <div class="step">x = 99</div>
+        <div class="final-answer">Angles are 99° and 81°.</div>
 
-        <!-- Part (iii) -->
-        <div class="sub-question">(iii) 2x + y – 6 = 0, 4x – 2y – 4 = 0</div>
-        <div class="diagram-placeholder">Graph of 2x+y=6 & 4x-2y=4</div>
+        <div class="sub-question">(iii) The coach of a cricket team buys 7 bats and 6 balls for ₹ 3800. Later, she buys
+            3 bats and 5 balls for ₹ 1750. Find the cost of each bat and each ball.</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">a₁/a₂ = <span class="fraction"><span class="numerator">2</span><span
-                    class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">2</span></span></div>
-        <div class="step">b₁/b₂ = <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">-2</span></span></div>
-        <div class="step">Since ratios unequal, lines intersect.</div>
+        <div class="step">Let cost of 1 bat = ₹x</div>
+        <div class="step">Let cost of 1 ball = ₹y</div>
+        <div class="step">Case 1: 7 bats + 6 balls = 3800</div>
+        <div class="step">7x + 6y = 3800 ... Let this be equation (1)</div>
+        <div class="step">Case 2: 3 bats + 5 balls = 1750</div>
+        <div class="step">3x + 5y = 1750 ... Let this be equation (2)</div>
+        <div class="step">From equation (2), find x:</div>
+        <div class="step">3x = 1750 - 5y</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">1750 - 5y</span><span
+                    class="denominator">3</span></span> ... Let this be equation (3)</div>
+        <div class="step">Put in equation (1):</div>
+        <div class="step">7[<span class="fraction"><span class="numerator">1750 - 5y</span><span
+                    class="denominator">3</span></span>] + 6y = 3800</div>
+        <div class="step">[<span class="fraction"><span class="numerator">12250 - 35y</span><span
+                    class="denominator">3</span></span>] + 6y = 3800</div>
+        <div class="step">Multiply by 3:</div>
+        <div class="step">12250 - 35y + 18y = 11400</div>
+        <div class="step">12250 - 17y = 11400</div>
+        <div class="step">-17y = 11400 - 12250</div>
+        <div class="step">-17y = -850</div>
+        <div class="step">y = <span class="fraction"><span class="numerator">850</span><span
+                    class="denominator">17</span></span></div>
+        <div class="step">y = 50</div>
+        <div class="step">Put y = 50 in equation (3):</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">1750 - 5(50)</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">1750 - 250</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">1500</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">x = 500</div>
+        <div class="final-answer">Cost of bat = ₹500, Cost of ball = ₹50.</div>
 
-        <div class="solution-header">Observation for Graph:</div>
-        <div class="step">For equation 2x + y = 6:</div>
-        <div class="table-container">
-            <table class="coord-table">
-                <tr>
-                    <th>x</th>
-                    <td>0</td>
-                    <td>3</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th>y</th>
-                    <td>6</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="step">For equation 4x - 2y = 4 (or 2x - y = 2):</div>
-        <div class="table-container">
-            <table class="coord-table">
-                <tr>
-                    <th>x</th>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th>y</th>
-                    <td>0</td>
-                    <td>-2</td>
-                    <td>2</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="step">Graphing the lines shows intersection at (2, 2).</div>
-        <div class="final-answer">x = 2, y = 2</div>
-
-        <!-- Part (iv) -->
-        <div class="sub-question">(iv) 2x – 2y – 2 = 0, 4x – 4y – 5 = 0</div>
+        <div class="sub-question">(iv) The taxi charges in a city consist of a fixed charge together with the charge for
+            the distance covered. For a distance of 10 km, the charge paid is ₹ 105 and for a journey of 15 km, the
+            charge paid is ₹ 155. What are the fixed charges and the charge per km? How much does a person have to pay
+            for travelling a distance of 25 km?</div>
         <div class="solution-header">Solution:</div>
-        <div class="step">Ratios of a and b equal (<span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">2</span></span>).</div>
-        <div class="step">Ratio of c is different (<span class="fraction"><span class="numerator">2</span><span
-                    class="denominator">5</span></span>).</div>
-        <div class="final-answer">Inconsistent.</div>
+        <div class="step">Let fixed charge = ₹x</div>
+        <div class="step">Let charge per km = ₹y</div>
+        <div class="step">For 10 km journey:</div>
+        <div class="step">Fixed + 10 × (per km) = 105</div>
+        <div class="step">x + 10y = 105 ... Let this be equation (1)</div>
+        <div class="step">For 15 km journey:</div>
+        <div class="step">x + 15y = 155 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find x:</div>
+        <div class="step">x = 105 - 10y ... Let this be equation (3)</div>
+        <div class="step">Put in equation (2):</div>
+        <div class="step">(105 - 10y) + 15y = 155</div>
+        <div class="step">105 + 5y = 155</div>
+        <div class="step">5y = 155 - 105</div>
+        <div class="step">5y = 50</div>
+        <div class="step">y = 10</div>
+        <div class="step">Put y = 10 in equation (3):</div>
+        <div class="step">x = 105 - 10(10)</div>
+        <div class="step">x = 105 - 100</div>
+        <div class="step">x = 5</div>
+        <div class="step">Cost for 25 km = x + 25y</div>
+        <div class="step">= 5 + 25(10)</div>
+        <div class="step">= 5 + 250 = 255</div>
+        <div class="final-answer">Fixed charge = ₹5, Charge per km = ₹10. Total cost = ₹255.</div>
+
+        <div class="sub-question">(v) A fraction becomes <span class="fraction"><span class="numerator">9</span><span class="denominator">11</span></span> if 2 is added to both the numerator and the denominator.
+            If 3 is added to both the numerator and the denominator it becomes <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span>. Find the fraction.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let numerator = x.</div>
+        <div class="step">Let denominator = y.</div>
+        <div class="step">Fraction = <span class="fraction"><span class="numerator">x</span><span
+                    class="denominator">y</span></span>.</div>
+        <div class="step">Case 1: Add 2 to both.</div>
+        <div class="step"><span class="fraction"><span class="numerator">x + 2</span><span class="denominator">y +
+                    2</span></span> = <span class="fraction"><span class="numerator">9</span><span
+                    class="denominator">11</span></span></div>
+        <div class="step">11(x + 2) = 9(y + 2)</div>
+        <div class="step">11x + 22 = 9y + 18</div>
+        <div class="step">11x - 9y = -4 ... Let this be equation (1)</div>
+        <div class="step">Case 2: Add 3 to both.</div>
+        <div class="step"><span class="fraction"><span class="numerator">x + 3</span><span class="denominator">y +
+                    3</span></span> = <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">6</span></span></div>
+        <div class="step">6(x + 3) = 5(y + 3)</div>
+        <div class="step">6x + 18 = 5y + 15</div>
+        <div class="step">6x - 5y = -3 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find x:</div>
+        <div class="step">11x = 9y - 4</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">9y - 4</span><span
+                    class="denominator">11</span></span> ... Let this be equation (3)</div>
+        <div class="step">Put in equation (2):</div>
+        <div class="step">6[<span class="fraction"><span class="numerator">9y - 4</span><span
+                    class="denominator">11</span></span>] - 5y = -3</div>
+        <div class="step">[<span class="fraction"><span class="numerator">54y - 24</span><span
+                    class="denominator">11</span></span>] - 5y = -3</div>
+        <div class="step">54y - 24 - 55y = -33 (Multiplying by 11)</div>
+        <div class="step">-y - 24 = -33</div>
+        <div class="step">-y = -33 + 24</div>
+        <div class="step">-y = -9 => y = 9</div>
+        <div class="step">Put y = 9 in equation (3):</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">9(9) - 4</span><span
+                    class="denominator">11</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">81 - 4</span><span
+                    class="denominator">11</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">77</span><span
+                    class="denominator">11</span></span></div>
+        <div class="step">x = 7</div>
+        <div class="final-answer">Fraction is <span class="fraction"><span class="numerator">7</span><span
+                    class="denominator">9</span></span>.</div>
+
+        <div class="sub-question">(vi) Five years hence, the age of Jacob will be three times that of his son. Five
+            years ago, Jacob’s age was seven times that of his son. What are their present ages?</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let Jacob's age = x.</div>
+        <div class="step">Let Son's age = y.</div>
+        <div class="step">5 years hence (Future):</div>
+        <div class="step">x + 5 = 3(y + 5)</div>
+        <div class="step">x + 5 = 3y + 15</div>
+        <div class="step">x - 3y = 10 ... Let this be equation (1)</div>
+        <div class="step">5 years ago (Past):</div>
+        <div class="step">x - 5 = 7(y - 5)</div>
+        <div class="step">x - 5 = 7y - 35</div>
+        <div class="step">x - 7y = -30 ... Let this be equation (2)</div>
+        <div class="step">From equation (1), find x:</div>
+        <div class="step">x = 10 + 3y ... Let this be equation (3)</div>
+        <div class="step">Put in equation (2):</div>
+        <div class="step">(10 + 3y) - 7y = -30</div>
+        <div class="step">10 - 4y = -30</div>
+        <div class="step">-4y = -40</div>
+        <div class="step">y = 10</div>
+        <div class="step">Put y = 10 in equation (3):</div>
+        <div class="step">x = 10 + 3(10)</div>
+        <div class="step">x = 40</div>
+        <div class="final-answer">Jacob is 40 years old, Son is 10 years old.</div>
     </div>
 
 </body>
