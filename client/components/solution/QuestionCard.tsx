@@ -129,7 +129,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
             {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
-              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image])
+              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image], { width: "100%", height: "100%" })
             ) : (
               <Image
                 source={graphImages[question.image]}
@@ -158,7 +158,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           );
         })}
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <ThemedText style={[styles.answerText, titleStyle]}>{question.answer}</ThemedText>
+          <ParsedText style={[styles.answerText, titleStyle]} Component={ThemedText}>{question.answer}</ParsedText>
         </View>
       </View>
     </View>
@@ -246,7 +246,7 @@ const styles = StyleSheet.create({
   },
   graphImage: {
     width: "90%",
-    height: 180,
+    height: 150,
     borderRadius: BorderRadius.xs,
     alignSelf: 'center',
     resizeMode: 'contain',

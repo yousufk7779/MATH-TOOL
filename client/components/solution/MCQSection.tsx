@@ -4,6 +4,7 @@ import { StyleSheet, View, Pressable, Animated, Modal, TouchableOpacity } from "
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
+import { ParsedText } from "@/components/ParsedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { MCQ } from "@/data/chapterContent";
 
@@ -110,9 +111,9 @@ const MCQCard = memo(({
 
   return (
     <Animated.View style={[styles.mcqCard, { transform: [{ translateX: shakeAnim }] }]}>
-      <ThemedText style={[styles.question, textStyle]}>
-        {index + 1}. {mcq.question}
-      </ThemedText>
+      <ParsedText style={[styles.question, textStyle]} Component={ThemedText}>
+        {`${index + 1}. ${mcq.question}`}
+      </ParsedText>
 
       <View style={styles.optionsGrid}>
         {state.shuffledOptions.map((option, optIndex) => {
@@ -165,7 +166,7 @@ const MCQCard = memo(({
                   </ThemedText>
                 )}
               </View>
-              <ThemedText style={[styles.optionText, textStyle]}>{option.text}</ThemedText>
+              <ParsedText style={[styles.optionText, textStyle]} Component={ThemedText}>{option.text}</ParsedText>
 
               {/* Tick for correct answer (Always show if answered) */}
               {state.answered && option.isCorrect && (
