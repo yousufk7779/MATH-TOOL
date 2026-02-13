@@ -12,6 +12,36 @@ import { Question } from "@/data/chapterContent";
 import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useSavedItems } from "@/context/SavedItemsContext";
+
+const ParsedText = ({ children, style, Component = Text, accentColor }: { children: string, style?: any, Component?: any, accentColor?: string }) => {
+  if (!children) return null;
+  const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}})/g);
+
+  return (
+    <Text style={style}>
+      {parts.map((part, index) => {
+        const match = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
+        if (match) {
+          const numerator = match[1];
+          const denominator = match[2];
+          return (
+            <View key={index} style={[styles.fractionContainer, { borderLeftColor: 'transparent' }]}>
+              <View style={styles.numeratorContainer}>
+                <Text style={[style, styles.numeratorText]}>{numerator}</Text>
+              </View>
+              <View style={[styles.separator, { backgroundColor: StyleSheet.flatten(style)?.color || '#000' }]} />
+              <View style={styles.denominatorContainer}>
+                <Text style={[style, styles.denominatorText]}>{denominator}</Text>
+              </View>
+            </View>
+          );
+        }
+        return <Text key={index}>{part}</Text>;
+      })}
+    </Text>
+  );
+};
+
 const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
   "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
@@ -23,17 +53,22 @@ const graphImages: Record<string, any> = {
   "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
   "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
   // Chapter 3 Images
-  "Ex_3.1_Q1(i)": require("@/assets/chapter3/images/fig_ex3_2_q1_i.svg"),
-  "Ex_3.1_Q1(ii)": require("@/assets/chapter3/images/fig_ex3_2_q1_ii.svg"),
-  "Ex_3.1_Q4(iii)": require("@/assets/chapter3/images/fig_ex3_2_q4_iii.svg"),
-  "Ex_3.1_Q7": require("@/assets/chapter3/images/fig_ex3_2_q7.svg"),
-  "Example 1": require("@/assets/chapter3/images/fig_example_1.svg"),
-  "Example 2": require("@/assets/chapter3/images/fig_example_2.svg"),
-  "Example 3": require("@/assets/chapter3/images/fig_example_3.svg"),
-  "Example 7": require("@/assets/chapter3/images/fig_example_7.svg"),
-  "mcq_k_value": require("@/assets/chapter3/images/mcq_k_value.svg"),
-  "mcq_ratios": require("@/assets/chapter3/images/mcq_ratios.svg"),
-  "mcq_solutions": require("@/assets/chapter3/images/mcq_solutions.svg"),
+  "fig_ex3_1_q1_aftab.svg": require("@/assets/chapter3/images/fig_ex3_1_q1_aftab.svg"),
+  "fig_ex3_1_q2_cricket.svg": require("@/assets/chapter3/images/fig_ex3_1_q2_cricket.svg"),
+  "fig_ex3_1_q3_grapes.svg": require("@/assets/chapter3/images/fig_ex3_1_q3_grapes.svg"),
+  "fig_ex3_2_q1_i.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_i.svg"),
+  "fig_ex3_2_q1_ii.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_ii.svg"),
+  "fig_ex3_2_q4_iii.svg": require("@/assets/chapter3/images/fig_ex3_2_q4_iii.svg"),
+  "fig_ex3_2_q5.svg": require("@/assets/chapter3/images/fig_ex3_2_q5.svg"),
+  "fig_ex3_2_q7.svg": require("@/assets/chapter3/images/fig_ex3_2_q7.svg"),
+  "fig_ex3_new_q4_i.svg": require("@/assets/chapter3/images/fig_ex3_new_q4_i.svg"),
+  "fig_example_1.svg": require("@/assets/chapter3/images/fig_example_1.svg"),
+  "fig_example_2.svg": require("@/assets/chapter3/images/fig_example_2.svg"),
+  "fig_example_3.svg": require("@/assets/chapter3/images/fig_example_3.svg"),
+  "fig_example_7.svg": require("@/assets/chapter3/images/fig_example_7.svg"),
+  "mcq_k_value.svg": require("@/assets/chapter3/images/mcq_k_value.svg"),
+  "mcq_ratios.svg": require("@/assets/chapter3/images/mcq_ratios.svg"),
+  "mcq_solutions.svg": require("@/assets/chapter3/images/mcq_solutions.svg"),
 };
 
 interface QuestionCardProps {
@@ -99,16 +134,19 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           {question.question.split('\n').map((part, index) => {
             const isSubQuestion = index > 0 || part.trim().startsWith('('); // Heuristic if \n is missing but should be
             return (
-              <ThemedText
+              <ParsedText
                 key={index}
                 style={[
                   styles.questionText,
                   contentStyle,
                   isSubQuestion && { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
                 ]}
+                Component={ThemedText}
+                accentColor={accentColor}
               >
                 {part}
-              </ThemedText>
+              </ParsedText>
+
             );
           })}
         </View>
@@ -134,13 +172,15 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
           return (
             <View key={index} style={styles.stepRow}>
-              <Text style={[
+              <ParsedText style={[
                 styles.stepText,
                 contentStyle,
                 isFormula && { color: "#FF7043", fontWeight: "bold", fontFamily: "Kalam_700Bold" }
-              ]}>
+              ]}
+                Component={Text}>
                 {displayStep}
-              </Text>
+              </ParsedText>
+
             </View>
           );
         })}
@@ -237,4 +277,34 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xs,
   },
   questionTextContainer: {},
+  fractionContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 3,
+    transform: [{ translateY: 4 }],
+  },
+  numeratorContainer: {
+    alignItems: 'center',
+    marginBottom: 1,
+  },
+  numeratorText: {
+    fontSize: 12,
+    textAlign: 'center',
+    lineHeight: 14,
+  },
+  separator: {
+    height: 1,
+    width: '100%',
+    minWidth: 10,
+    backgroundColor: 'black',
+  },
+  denominatorContainer: {
+    alignItems: 'center',
+    marginTop: 1,
+  },
+  denominatorText: {
+    fontSize: 12,
+    textAlign: 'center',
+    lineHeight: 14,
+  },
 });

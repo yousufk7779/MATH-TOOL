@@ -6,13 +6,13 @@ const CHAPTERS = [
     { id: "ch1-real-numbers", number: 1, title: "Real Numbers" },
     { id: "ch2-polynomials", number: 2, title: "Polynomials" },
     { id: "ch3-linear-equations", number: 3, title: "Pair of Linear Equations" },
-    //     { id: "ch4-quadratic-equations", number: 4, title: "Quadratic Equations" },
-    //     { id: "ch5-arithmetic-progressions", number: 5, title: "Arithmetic Progressions" },
-    //     { id: "ch6-triangles", number: 6, title: "Triangles" },
-    //     { id: "ch7-coordinate-geometry", number: 7, title: "Coordinate Geometry" },
-    //     { id: "ch8-trigonometry", number: 8, title: "Introduction to Trigonometry" },
-    //     { id: "ch9-applications-trigonometry", number: 9, title: "Some Applications of Trigonometry" },
-    //     { id: "ch10-circles", number: 10, title: "Circles" }
+    { id: "ch4-quadratic-equations", number: 4, title: "Quadratic Equations" },
+    { id: "ch5-arithmetic-progressions", number: 5, title: "Arithmetic Progressions" },
+    { id: "ch6-triangles", number: 6, title: "Triangles" },
+    { id: "ch7-coordinate-geometry", number: 7, title: "Coordinate Geometry" },
+    { id: "ch8-trigonometry", number: 8, title: "Introduction to Trigonometry" },
+    { id: "ch9-applications-trigonometry", number: 9, title: "Some Applications of Trigonometry" },
+    { id: "ch10-circles", number: 10, title: "Circles" },
 ];
 
 const ASSETS_DIR = path.join(__dirname, '../client/assets');
@@ -21,6 +21,7 @@ const OUTPUT_FILE = path.join(__dirname, '../client/data/chapterContent.ts');
 function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
+        .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '{{frac}}$1{{over}}$2{{endfrac}}') // Handle fractions
         .replace(/<[^>]+>/g, '') // Remove tags
         .replace(/&nbsp;/g, ' ')
         .replace(/&rArr;/g, '⇒')
@@ -44,12 +45,12 @@ function cleanText(text) {
 
 function parseTableToText(html) {
     if (!html || !html.includes('<table')) return "";
-    const rows = html.match(/<tr[^>]*>.*?<\/tr>/gs);
+    const rows = html.match(/<tr[^>]*>[\s\S]*?<\/tr>/gs);
     if (!rows) return "";
 
     let tableText = "\n";
     rows.forEach(row => {
-        const cells = row.match(/<(td|th)[^>]*>.*?<\/\1>/gs);
+        const cells = row.match(/<(td|th)[^>]*>[\s\S]*?<\/\1>/gs);
         if (cells) {
             const cleanCells = cells.map(c => cleanText(c));
             tableText += `| ${cleanCells.join(" | ")} |\n`;
@@ -240,8 +241,7 @@ function parseQuestions(html, type, chapterNum, exName) {
 
     try {
         if (type === 'mcq' && html.includes('mcq-box')) {
-            // MCQ logic (already updated previous turn)
-            // Re-including it here to ensure complete function replacement without losing MCQ logic
+            // MCQ logic (Format with mcq-box)
             const parts = html.split('<div class="mcq-box">');
             const answerKeyMatch = html.match(/<div class="answer-key">\s*(.*?)\s*<\/div>/s);
             const answerKey = answerKeyMatch ? cleanText(answerKeyMatch[1]) : "";
@@ -310,102 +310,109 @@ function parseQuestions(html, type, chapterNum, exName) {
                 }
             }
         } else {
-            // Format A (Content Box) - UPDATED LOGIC
-            // Use regex split to handle extra classes like "summary-box"
+            // Format A (Content Box) - UPDATED LOGIC (Handles Exercise, Example, and Content-Box style MCQs)
             const contentBoxes = html.split(/<div class="content-box(?: [^"]*)?">/);
 
             for (let i = 1; i < contentBoxes.length; i++) {
                 const box = contentBoxes[i];
-                // console.log("Checking box", i, "length:", box.length);
-                const questionMatch = box.match(/<div class="question">\s*(\d+[\.\)]?|Example \d+|Q\.\d+)\s*(.*?)<\/div>/s);
+                const questionMatch = box.match(/<div class="question">\s*(\d+[\.\)]?|Example \d+|Q\.\d+)\s*([\s\S]*?)<\/div>/i);
 
                 if (questionMatch) {
-                    // console.log("Found question:", questionMatch[1]);
-                    const mainNum = cleanText(questionMatch[1]).replace(/\.$/, ''); // Remove trailing dot
+                    const mainNum = cleanText(questionMatch[1]).replace(/\.$/, '');
                     const mainText = cleanText(questionMatch[2]);
+
+                    // Extract Options (for MCQs)
+                    const options = [];
+                    const optionsMatch = box.match(/<div class="option">(.*?)<\/div>/gs);
+                    if (optionsMatch) {
+                        optionsMatch.forEach(opt => options.push(cleanText(opt).replace(/^\([a-d]\)\s*/i, '')));
+                    }
+
+                    // Extract Correct Answer (for MCQs)
+                    const correctAnsMatch = box.match(/<div class="correct-answer">(.*?)<\/div>/s);
+                    let correctAnswer = correctAnsMatch ? cleanText(correctAnsMatch[1]) : "";
 
                     const subQuestions = box.split('<div class="sub-question">');
 
                     if (subQuestions.length > 1) {
                         for (let j = 1; j < subQuestions.length; j++) {
                             const subPart = subQuestions[j];
-                            const subNumMatch = subPart.match(/^\s*(.*?)\s*<\/div>/s);
-                            const fullSubContent = subNumMatch ? cleanText(subNumMatch[1]) : `(${j})`; // e.g. "(i) 140"
+                            const subNumMatch = subPart.match(/^\s*([\s\S]*?)\s*<\/div>/i);
+                            const fullSubContent = subNumMatch ? cleanText(subNumMatch[1]) : `(${j})`;
 
-                            // Try to split index from content: "(i) 140" -> index="(i)", text="140"
-                            // Regex: start with (something)
                             const indexMatch = fullSubContent.match(/^(\([a-z0-9]+\))(.*)/i);
                             let subIndex = "";
                             let subText = fullSubContent;
 
                             if (indexMatch) {
-                                subIndex = indexMatch[1]; // "(i)"
-                                subText = indexMatch[2].trim(); // "140"
+                                subIndex = indexMatch[1];
+                                subText = indexMatch[2].trim();
                             } else {
-                                // Fallback
                                 subIndex = `(${j})`;
                             }
 
                             let steps = [];
-                            // Updated regex to capture more content types
-                            const allSteps = subPart.match(/<div class="(step|formula-block|table-container|solution-header|diagram-placeholder)">(.*?)<\/div>/gs);
+                            const allSteps = subPart.match(/<div[^>]*class=["'](step|formula-block|table-container|solution-header|diagram-placeholder|final-answer)["'][^>]*>([\s\S]*?)<\/div>/gi);
                             if (allSteps) allSteps.forEach(s => {
                                 let content = "";
-                                if (s.includes('class="table-container"')) {
-                                    content = parseTableToText(s); // Convert table to text
-                                } else if (s.includes('class="solution-header"')) {
-                                    content = "**" + cleanText(s) + "**"; // Bold headers
+                                if (s.includes('class="table-container"') || s.includes("class='table-container'")) {
+                                    content = parseTableToText(s);
+                                } else if (s.includes('class="solution-header"') || s.includes("class='solution-header'")) {
+                                    content = "**" + cleanText(s) + "**";
+                                } else if (s.includes('class="final-answer"') || s.includes("class='final-answer'")) {
+                                    // exclude final answer from steps to avoid duplication
                                 } else {
                                     content = cleanText(s);
                                 }
                                 if (content && content.trim()) steps.push(content);
                             });
 
-                            const ansMatch = subPart.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
-                            const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
+                            const ansMatch = subPart.match(/<div class="(final-answer|answer)">([\s\S]*?)<\/div>/i);
+                            const answer = ansMatch ? cleanText(ansMatch[2]) : (correctAnswer || "Refer to Solution");
 
-                            const imgMatch = subPart.match(/<div class="question-image">(.*?)<\/div>/s);
-                            let image = imgMatch ? cleanText(imgMatch[1]) : undefined;
+                            let image = undefined;
+                            const divImgMatch = subPart.match(/<div class="question-image">([\s\S]*?)<\/div>/i);
+                            if (divImgMatch) {
+                                image = cleanText(divImgMatch[1]);
+                            } else {
+                                const imgTagMatch = subPart.match(/<img[^>]+src=["']([^"']+)["']/i);
+                                if (imgTagMatch) {
+                                    image = imgTagMatch[1];
+                                }
+                            }
 
-                            // Auto-link image if not found
                             if (!image && type === 'exercise' && exName) {
-                                // Construct filename: Ex_3.1_Q1(i).jpg
-                                // mainNum = "1", subIndex = "(i)"
-                                // exName = "Exercise 3.1" -> extract "3.1"
                                 const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
                                 if (exIdMatch) {
                                     const exId = exIdMatch[1];
                                     const qNumClean = mainNum;
-                                    const subClean = subIndex.replace(/[()]/g, (m) => m === '(' ? '(' : ')'); // Ensure brackets are correct
-                                    // Try patterns
-                                    // Pattern 1: Ex_3.1_Q1(i).jpg
+                                    const subClean = subIndex.replace(/[()]/g, (m) => m === '(' ? '(' : ')');
                                     const pattern1 = `Ex_${exId}_Q${qNumClean}${subClean}.jpg`;
-                                    // Pattern 2: Ex_3.1_Q1.jpg (if no subIndex or flattened) - but here we have subIndex
-
                                     if (availableImages.includes(pattern1)) {
-                                        image = pattern1.replace(/\.[^/.]+$/, ""); // Remove extension
+                                        image = pattern1.replace(/\.[^/.]+$/, "");
                                     }
                                 }
                             }
 
                             questions.push({
                                 id: `auto_${Math.random().toString(36).substr(2, 9)}`,
-                                number: `${mainNum}${subIndex}`, // "1(i)"
+                                number: `${mainNum}${subIndex}`,
                                 question: `${mainText}\n${subIndex} ${subText}`,
                                 solution: steps,
                                 answer: answer,
-                                image: image
+                                image: image,
+                                options: options.length === 4 ? options : undefined
                             });
                         }
                     } else {
                         // checks for root level steps
                         let steps = [];
-                        const allSteps = box.match(/<div class="(step|formula-block|table-container|solution-header|diagram-placeholder)">(.*?)<\/div>/gs);
+                        const allSteps = box.match(/<div[^>]*class=["'](step|formula-block|table-container|solution-header|diagram-placeholder)["'][^>]*>([\s\S]*?)<\/div>/gi);
                         if (allSteps) allSteps.forEach(s => {
                             let content = "";
-                            if (s.includes('class="table-container"')) {
+                            if (s.includes('class="table-container"') || s.includes("class='table-container'")) {
                                 content = parseTableToText(s);
-                            } else if (s.includes('class="solution-header"')) {
+                            } else if (s.includes('class="solution-header"') || s.includes("class='solution-header'")) {
                                 content = "**" + cleanText(s) + "**";
                             } else {
                                 content = cleanText(s);
@@ -413,29 +420,28 @@ function parseQuestions(html, type, chapterNum, exName) {
                             if (content && content.trim()) steps.push(content);
                         });
 
-                        const ansMatch = box.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
-                        const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
+                        const ansMatch = box.match(/<div class="(final-answer|answer)">([\s\S]*?)<\/div>/i);
+                        const answer = ansMatch ? cleanText(ansMatch[2]) : (correctAnswer || "Refer to Solution");
 
-                        const imgMatch = box.match(/<div class="question-image">(.*?)<\/div>/s);
-                        let image = imgMatch ? cleanText(imgMatch[1]) : undefined;
+                        let image = undefined;
+                        const divImgMatch = box.match(/<div class="question-image">([\s\S]*?)<\/div>/i);
+                        if (divImgMatch) {
+                            image = cleanText(divImgMatch[1]);
+                        } else {
+                            const imgTagMatch = box.match(/<img[^>]+src=["']([^"']+)["']/i);
+                            if (imgTagMatch) {
+                                image = imgTagMatch[1];
+                            }
+                        }
 
-                        // Auto-link image if not found
                         if (!image && type === 'exercise' && exName) {
                             const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
                             if (exIdMatch) {
                                 const exId = exIdMatch[1];
-                                // Pattern: Ex_3.1_Q7.jpg
                                 const pattern = `Ex_${exId}_Q${mainNum}.jpg`;
                                 if (availableImages.includes(pattern)) {
                                     image = pattern.replace(/\.[^/.]+$/, "");
                                 }
-                            }
-                            // Example image auto-link?
-                        } else if (!image && type === 'example') {
-                            // Pattern: Example 1.jpg
-                            const pattern = `${mainNum}.jpg`;
-                            if (availableImages.includes(pattern)) {
-                                image = pattern.replace(/\.[^/.]+$/, "");
                             }
                         }
 
@@ -445,7 +451,8 @@ function parseQuestions(html, type, chapterNum, exName) {
                             question: mainText,
                             solution: steps,
                             answer: answer,
-                            image: image
+                            image: image,
+                            options: options.length === 4 ? options : undefined
                         });
                     }
                 }
