@@ -187,24 +187,32 @@ const MCQCard = memo(({
   );
 });
 
-// ----------------------------------------------------------------------------
 // Wrapper Component
-// ----------------------------------------------------------------------------
 function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProps) {
   const [mcqStates, setMcqStates] = useState<MCQState[]>([]);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
-  const [attemptKey, setAttemptKey] = useState(0); // Forcing re-render on retry
+  const [attemptKey, setAttemptKey] = useState(0);
 
-  // Initialize / Reset
+  // Computed feedback based on current score
+  const currentScorePercentage = mcqs.length > 0 ? (score / mcqs.length) * 100 : 0;
+  let feedbackMessage = "";
+  if (currentScorePercentage >= 90) feedbackMessage = "Excellent! Perfect Score!";
+  else if (currentScorePercentage >= 70) feedbackMessage = "Very good performance.";
+  else if (currentScorePercentage >= 40) feedbackMessage = "Good effort. Keep practicing.";
+  else feedbackMessage = "Better luck next time.";
+
+
   const initQuiz = useCallback(() => {
-    setMcqStates(generateMCQStates(mcqs));
+    // Generate new states with reshuffled options
+    const newStates = generateMCQStates(mcqs);
+    setMcqStates(newStates);
     setScore(0);
     setShowResult(false);
-    setAttemptKey(prev => prev + 1);
+    setAttemptKey(prev => prev + 1); // Force re-render of cards
   }, [mcqs]);
 
-  // Initial load
+  // Re-init when MCQs prop changes (e.g. tab switch if unmounted)
   useEffect(() => {
     initQuiz();
   }, [initQuiz]);
@@ -219,11 +227,11 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
         selectedOptionIndex: optionIndex
       };
 
-      // Check completion
+      // Check completion immediately
       const allAnswered = newState.every(s => s.answered);
       if (allAnswered) {
-        // Delay showing result slightly for experience
-        setTimeout(() => setShowResult(true), 1000);
+        // Show result immediately with no delay
+        setShowResult(true);
       }
 
       return newState;
@@ -234,24 +242,24 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
     }
   };
 
-  const currentScorePercentage = (score / mcqs.length) * 100;
-
-  let feedbackMessage = "";
-  if (currentScorePercentage >= 90) feedbackMessage = "Excellent! Perfect Score!";
-  else if (currentScorePercentage >= 70) feedbackMessage = "Very good performance.";
-  else if (currentScorePercentage >= 40) feedbackMessage = "Good effort. Keep practicing.";
-  else feedbackMessage = "Better luck next time.";
+  const handleRetry = () => {
+    // Hide modal first then re-init
+    setShowResult(false);
+    // Small timeout to allow modal to close before state reset if needed visually, 
+    // but user asked for "smoothly", immediate might be better or specific sequence.
+    // Immediate state update:
+    initQuiz();
+  };
 
   return (
     <View style={styles.container}>
       <View style={[styles.header, { backgroundColor: accentColor }]}>
         <ThemedText style={[styles.headerText, textStyle]}>Practice MCQs</ThemedText>
-        {/* Score removed from top as per request */}
       </View>
 
       {mcqStates.map((state, index) => (
         <MCQCard
-          key={`${index}-${attemptKey}`} // Ensures fresh component on retry
+          key={`${index}-${attemptKey}`}
           mcq={mcqs[index]}
           index={index}
           state={state}
@@ -260,7 +268,6 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
         />
       ))}
 
-      {/* Result Modal */}
       <Modal
         visible={showResult}
         transparent={true}
@@ -278,7 +285,7 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
             </View>
             <TouchableOpacity
               style={[styles.resetButton, { backgroundColor: accentColor }]}
-              onPress={initQuiz}
+              onPress={handleRetry}
             >
               <ThemedText style={styles.resetButtonText}>Retry MCQs</ThemedText>
             </TouchableOpacity>
@@ -289,7 +296,6 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
     </View>
   );
 }
-
 export default memo(MCQSection);
 
 const styles = StyleSheet.create({

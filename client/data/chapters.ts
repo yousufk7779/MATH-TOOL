@@ -3,6 +3,7 @@ export interface Chapter {
   number: number;
   name: string;
   color: string;
+  locked?: boolean;
 }
 
 export const class10Chapters: Chapter[] = [

@@ -21,7 +21,7 @@ function ChapterListScreen() {
   const navigation = useNavigation<NavigationProp>();
 
   const renderItem = useCallback(({ item }: { item: Chapter }) => {
-    const available = isChapterAvailable(item.id);
+    const available = isChapterAvailable(item.id) && !item.locked;
     return (
       <ChapterCard
         testID={`chapter-card-${item.id}`}

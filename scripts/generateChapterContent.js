@@ -335,7 +335,7 @@ function parseQuestions(html, type) {
                             questions.push({
                                 id: `auto_${Math.random().toString(36).substr(2, 9)}`,
                                 number: `${mainNum}${subIndex}`, // "1(i)"
-                                question: `${mainText} ${subIndex} ${subText}`,
+                                question: `${mainText}\n${subIndex} ${subText}`,
                                 solution: steps,
                                 answer: answer,
                                 image: image

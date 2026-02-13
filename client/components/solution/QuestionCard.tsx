@@ -83,7 +83,23 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             </Pressable>
           </View>
         </View>
-        <ThemedText style={[styles.questionText, contentStyle]}>{question.question}</ThemedText>
+        <View style={styles.questionTextContainer}>
+          {question.question.split('\n').map((part, index) => {
+            const isSubQuestion = index > 0 || part.trim().startsWith('('); // Heuristic if \n is missing but should be
+            return (
+              <ThemedText
+                key={index}
+                style={[
+                  styles.questionText,
+                  contentStyle,
+                  isSubQuestion && { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
+                ]}
+              >
+                {part}
+              </ThemedText>
+            );
+          })}
+        </View>
       </View>
 
       <View style={styles.solutionBox}>
@@ -208,5 +224,5 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: BorderRadius.xs,
   },
-
+  questionTextContainer: {},
 });

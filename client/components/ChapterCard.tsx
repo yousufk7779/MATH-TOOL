@@ -1,6 +1,7 @@
 import React, { memo, useState, useCallback } from "react";
 import { StyleSheet, Pressable, View, Platform } from "react-native";
 import * as Haptics from "expo-haptics";
+import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
 import { BorderRadius, Spacing, JiguuColors, Typography } from "@/constants/theme";
@@ -58,7 +59,11 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
           <View style={styles.chevronTop} />
           <View style={styles.chevronBottom} />
         </View>
-      ) : null}
+      ) : (
+        <View style={styles.chevronIcon}>
+          <Feather name="lock" size={20} color="rgba(255,255,255,0.6)" />
+        </View>
+      )}
     </Pressable>
   );
 });
@@ -77,7 +82,8 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   cardDisabled: {
-    opacity: 0.65,
+    opacity: 0.8, // Increased opacity slightly so lock is visible clearly
+    // Using a grayscale filter might be better but not easily available in RN styles without View filtering
   },
   numberContainer: {
     width: 36,
@@ -107,7 +113,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   chevronIcon: {
-    width: 12,
+    width: 20, // Adjusted width for icon
     height: 20,
     justifyContent: "center",
     alignItems: "center",
