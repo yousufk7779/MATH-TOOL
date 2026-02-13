@@ -5,7 +5,7 @@ export interface Formula { name: string; formula: string; }
 export interface Question { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }
 export interface Exercise { id: string; name: string; questions: Question[]; }
 export interface MCQ { id: string; question: string; options: string[]; correctAnswer: string; }
-export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; }
+export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }
 export interface Theorem { id: string; number: string; name: string; statement: string; proof?: string[]; example?: string; }
 export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; }
 
@@ -175,7 +175,8 @@ export const chapterContents: Record<string, ChapterContent> = {
               "b₁/b₂ = (5/3)/(-10) = -1/6",
               "Since 1/6 ≠ -1/6, they are consistent."
             ],
-            answer: "Consistent"
+            answer: "Consistent",
+            image: "Ex_3.1_Q4(iii)"
           },
           {
             id: "ch3-linear-ex1_q9",
@@ -186,7 +187,8 @@ export const chapterContents: Record<string, ChapterContent> = {
               "Line 2: 3x + 2y = 12. Cuts x-axis at (4, 0). intersects Line 1 at (2, 3).",
               "Vertices are the intersection point (2,3) and the x-intercepts (-1,0) and (4,0)."
             ],
-            answer: "Vertices: (2, 3), (-1, 0) and (4, 0)"
+            answer: "Vertices: (2, 3), (-1, 0) and (4, 0)",
+            image: "Ex_3.1_Q7"
           }
         ]
       },
@@ -373,7 +375,8 @@ export const chapterContents: Record<string, ChapterContent> = {
         number: "Example 1",
         question: "Check graphically whether x + 3y = 6 and 2x - 3y = 12 is consistent. If so, solve them graphically.",
         solution: ["Plotting x + 3y = 6 points (0,2), (6,0)", "Plotting 2x - 3y = 12 points (0,-4), (6,0)", "The lines intersect at (6, 0)."],
-        answer: "Consistent. Solution: x = 6, y = 0"
+        answer: "Consistent. Solution: x = 6, y = 0",
+        image: "Example 1"
       },
       {
         id: "ch3-linear-eg2",
