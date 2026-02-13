@@ -329,12 +329,16 @@ function parseQuestions(html, type) {
                             const ansMatch = subPart.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
                             const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
 
+                            const imgMatch = subPart.match(/<div class="question-image">(.*?)<\/div>/s);
+                            const image = imgMatch ? cleanText(imgMatch[1]) : undefined;
+
                             questions.push({
                                 id: `auto_${Math.random().toString(36).substr(2, 9)}`,
                                 number: `${mainNum}${subIndex}`, // "1(i)"
                                 question: `${mainText} ${subIndex} ${subText}`,
                                 solution: steps,
-                                answer: answer
+                                answer: answer,
+                                image: image
                             });
                         }
                     } else {
@@ -346,12 +350,16 @@ function parseQuestions(html, type) {
                         const ansMatch = box.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
                         const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
 
+                        const imgMatch = box.match(/<div class="question-image">(.*?)<\/div>/s);
+                        const image = imgMatch ? cleanText(imgMatch[1]) : undefined;
+
                         questions.push({
                             id: `auto_${Math.random().toString(36).substr(2, 9)}`,
                             number: mainNum,
                             question: mainText,
                             solution: steps,
-                            answer: answer
+                            answer: answer,
+                            image: image
                         });
                     }
                 }
