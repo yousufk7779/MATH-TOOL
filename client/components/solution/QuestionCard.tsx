@@ -18,7 +18,7 @@ const ParsedText = ({ children, style, Component = Text, accentColor }: { childr
   const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}})/g);
 
   return (
-    <Text style={style}>
+    <Component style={style}>
       {parts.map((part, index) => {
         const match = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
         if (match) {
@@ -38,7 +38,7 @@ const ParsedText = ({ children, style, Component = Text, accentColor }: { childr
         }
         return <Text key={index}>{part}</Text>;
       })}
-    </Text>
+    </Component>
   );
 };
 
@@ -156,7 +156,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
             {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
-              React.createElement(graphImages[question.image])
+              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image])
             ) : (
               <Image
                 source={graphImages[question.image]}
