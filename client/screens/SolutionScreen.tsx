@@ -89,9 +89,8 @@ const QuestionButton = memo(({ number, onPress, isActive, color, textStyle }: Qu
     <ThemedText
       style={[
         styles.questionButtonText,
-        isActive ? { color: "#fff" } : { color: color },
-        isActive && textStyle, // Apply hwStyle only if active or generally? User said "100% handwritten". So apply generally, but color handling is tricky.
-        textStyle && { color: isActive ? "#fff" : color } // Ensure color is maintained but font is overridden
+        textStyle,
+        { color: isActive ? "#fff" : color }
       ]}
     >
       {number}
@@ -114,8 +113,8 @@ function SolutionScreen() {
   // const htmlChapter = ChapterHTMLs[chapterId];
   const accentColor = chapter?.color || JiguuColors.quadraticEquations;
 
-  // Handwritten Style Logic for Chapter 5
-  const isHandwritten = chapterId === "ch5-arithmetic-progressions";
+  // Handwritten Style Logic for All Chapters
+  const isHandwritten = true;
   const hwStyle = isHandwritten ? { fontFamily: "Kalam_400Regular", color: "#fff" } : {};
   // For headings or larger text if needed
   const hwTitleStyle = isHandwritten ? { fontFamily: "Kalam_700Bold", color: "#fff" } : {};

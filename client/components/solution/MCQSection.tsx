@@ -1,5 +1,6 @@
-import React, { memo, useState } from "react";
-import { StyleSheet, View, Pressable } from "react-native";
+
+import React, { memo, useState, useRef, useEffect, useCallback } from "react";
+import { StyleSheet, View, Pressable, Animated, Modal, TouchableOpacity } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
@@ -12,84 +13,284 @@ interface MCQSectionProps {
   textStyle?: any;
 }
 
-function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProps) {
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
-  const [showAnswers, setShowAnswers] = useState(false);
+interface ShuffledOption {
+  originalLabel: string;
+  text: string;
+  isCorrect: boolean;
+}
 
-  const handleSelect = (mcqId: string, option: string) => {
-    if (!showAnswers) {
-      setSelectedAnswers((prev) => ({ ...prev, [mcqId]: option }));
+interface MCQState {
+  shuffledOptions: ShuffledOption[];
+  answered: boolean;
+  isCorrect: boolean;
+  selectedOptionIndex: number | null;
+}
+
+// ----------------------------------------------------------------------------
+// Helper: Shuffle Options
+// ----------------------------------------------------------------------------
+const generateMCQStates = (mcqs: MCQ[]): MCQState[] => {
+  const optionLabels = ["a", "b", "c", "d"];
+
+  return mcqs.map((mcq) => {
+    // Create option objects with metadata
+    const rawOptions = mcq.options.map((opt, i) => ({
+      originalLabel: optionLabels[i],
+      text: opt,
+      isCorrect: optionLabels[i] === mcq.correctAnswer,
+    }));
+
+    // Shuffle
+    const shuffled = [...rawOptions].sort(() => Math.random() - 0.5);
+
+    return {
+      shuffledOptions: shuffled,
+      answered: false,
+      isCorrect: false,
+      selectedOptionIndex: null,
+    };
+  });
+};
+
+// ----------------------------------------------------------------------------
+// Component: MCQ Card
+// ----------------------------------------------------------------------------
+const MCQCard = memo(({
+  mcq,
+  index,
+  state,
+  onAnswer,
+  textStyle
+}: {
+  mcq: MCQ;
+  index: number;
+  state: MCQState;
+  onAnswer: (index: number, optionIndex: number, isCorrect: boolean) => void;
+  textStyle?: any;
+}) => {
+
+  // Local animations
+  const shakeAnim = useRef(new Animated.Value(0)).current;
+  const fadeAnim = useRef(new Animated.Value(0)).current; // For tick
+
+  useEffect(() => {
+    if (state.answered) {
+      // Always fade in indicators (check marks etc)
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 300,
+        useNativeDriver: true
+      }).start();
+
+      if (!state.isCorrect) {
+        // Shake only on wrong answer
+        shakeAnim.setValue(0);
+        Animated.sequence([
+          Animated.timing(shakeAnim, { toValue: 10, duration: 50, useNativeDriver: true }),
+          Animated.timing(shakeAnim, { toValue: -10, duration: 50, useNativeDriver: true }),
+          Animated.timing(shakeAnim, { toValue: 10, duration: 50, useNativeDriver: true }),
+          Animated.timing(shakeAnim, { toValue: 0, duration: 50, useNativeDriver: true }),
+        ]).start();
+      }
+    } else {
+      // Reset animations if state reset
+      fadeAnim.setValue(0);
+      shakeAnim.setValue(0);
     }
+  }, [state.answered, state.isCorrect]);
+
+  const handleSelect = (optionIndex: number) => {
+    if (state.answered) return; // Strict Mode: Already locked
+
+    const selectedOption = state.shuffledOptions[optionIndex];
+    onAnswer(index, optionIndex, selectedOption.isCorrect);
   };
 
-  const optionLabels = ["a", "b", "c", "d"];
+  const optionLabelsDisplay = ["a", "b", "c", "d"];
+
+  return (
+    <Animated.View style={[styles.mcqCard, { transform: [{ translateX: shakeAnim }] }]}>
+      <ThemedText style={[styles.question, textStyle]}>
+        {index + 1}. {mcq.question}
+      </ThemedText>
+
+      <View style={styles.optionsGrid}>
+        {state.shuffledOptions.map((option, optIndex) => {
+          const isSelected = state.selectedOptionIndex === optIndex;
+          const displayLabel = optionLabelsDisplay[optIndex]; // a, b, c, d based on CURRENT position
+
+          // Colors
+          let backgroundColor = JiguuColors.surfaceLight;
+          let borderColor = "transparent";
+          let labelBg = JiguuColors.border;
+          let labelColor = JiguuColors.textSecondary;
+
+          // Strict Logic Visuals WITH Correction
+          if (state.answered) {
+            if (option.isCorrect) {
+              // Always highlight correct answer Green
+              backgroundColor = "#4CAF50" + "20";
+              borderColor = "#4CAF50";
+              labelBg = "#4CAF50";
+              labelColor = "#fff";
+            } else if (isSelected) {
+              // Highlight wrong selected answer Red
+              backgroundColor = "#F44336" + "20";
+              borderColor = "#F44336";
+              labelBg = "#F44336";
+              labelColor = "#fff";
+            }
+          }
+
+          return (
+            <Pressable
+              key={optIndex}
+              style={[
+                styles.optionButton,
+                { backgroundColor, borderColor },
+                // Dim if answered AND (not selected AND not correct)
+                state.answered && !isSelected && !option.isCorrect && { opacity: 0.5 }
+              ]}
+              onPress={() => handleSelect(optIndex)}
+              disabled={state.answered}
+            >
+              <View style={[styles.optionLabel, { backgroundColor: labelBg }]}>
+                {state.answered && option.isCorrect ? (
+                  <Animated.View style={{ opacity: fadeAnim }}>
+                    <Feather name="check" size={14} color="#fff" />
+                  </Animated.View>
+                ) : (
+                  <ThemedText style={[styles.optionLabelText, { color: labelColor }]}>
+                    {displayLabel}
+                  </ThemedText>
+                )}
+              </View>
+              <ThemedText style={[styles.optionText, textStyle]}>{option.text}</ThemedText>
+
+              {/* Tick for correct answer (Always show if answered) */}
+              {state.answered && option.isCorrect && (
+                <Animated.View style={{ opacity: fadeAnim, marginLeft: 'auto' }}>
+                  <Feather name="check-circle" size={20} color="#4CAF50" />
+                </Animated.View>
+              )}
+              {/* Cross for wrong selected answer */}
+              {state.answered && isSelected && !option.isCorrect && (
+                <View style={{ marginLeft: 'auto' }}>
+                  <Feather name="x-circle" size={20} color="#F44336" />
+                </View>
+              )}
+            </Pressable>
+          );
+        })}
+      </View>
+    </Animated.View>
+  );
+});
+
+// ----------------------------------------------------------------------------
+// Wrapper Component
+// ----------------------------------------------------------------------------
+function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProps) {
+  const [mcqStates, setMcqStates] = useState<MCQState[]>([]);
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
+
+  // Initialize / Reset
+  const initQuiz = useCallback(() => {
+    setMcqStates(generateMCQStates(mcqs));
+    setScore(0);
+    setShowResult(false);
+  }, [mcqs]);
+
+  // Initial load
+  useEffect(() => {
+    initQuiz();
+  }, [initQuiz]);
+
+  const handleAnswer = (index: number, optionIndex: number, isCorrect: boolean) => {
+    setMcqStates(prev => {
+      const newState = [...prev];
+      newState[index] = {
+        ...newState[index],
+        answered: true,
+        isCorrect: isCorrect,
+        selectedOptionIndex: optionIndex
+      };
+
+      // Check completion
+      const allAnswered = newState.every(s => s.answered);
+      if (allAnswered) {
+        // Delay showing result slightly for experience
+        setTimeout(() => setShowResult(true), 1000);
+      }
+
+      return newState;
+    });
+
+    if (isCorrect) {
+      setScore(s => s + 1);
+    }
+
+    // Auto-focus logic would go here if we had ref access to parent ScrollView
+    // Since we don't, we skip scrolling but the visual feedback is strong.
+  };
+
+  const currentScorePercentage = (score / mcqs.length) * 100;
+
+  let feedbackMessage = "";
+  if (currentScorePercentage >= 90) feedbackMessage = "Excellent! Perfect Score!";
+  else if (currentScorePercentage >= 70) feedbackMessage = "Very good performance.";
+  else if (currentScorePercentage >= 40) feedbackMessage = "Good effort. Keep practicing.";
+  else feedbackMessage = "Better luck next time.";
 
   return (
     <View style={styles.container}>
       <View style={[styles.header, { backgroundColor: accentColor }]}>
         <ThemedText style={[styles.headerText, textStyle]}>Practice MCQs</ThemedText>
+        <View style={styles.scoreContainer}>
+          <ThemedText style={[styles.scoreText, textStyle]}>
+            Score: {score} / {mcqs.length}
+          </ThemedText>
+        </View>
       </View>
 
-      {mcqs.map((mcq, mcqIndex) => (
-        <View key={mcq.id} style={styles.mcqCard}>
-          <ThemedText style={[styles.question, textStyle]}>
-            {mcqIndex + 1}. {mcq.question}
-          </ThemedText>
-          <View style={styles.optionsGrid}>
-            {mcq.options.map((option, optIndex) => {
-              const optionLabel = optionLabels[optIndex];
-              const isSelected = selectedAnswers[mcq.id] === optionLabel;
-              const isCorrect = mcq.correctAnswer === optionLabel;
-              const showResult = showAnswers && isSelected;
-
-              return (
-                <Pressable
-                  key={optIndex}
-                  style={[
-                    styles.optionButton,
-                    isSelected && !showAnswers && { backgroundColor: accentColor + "20", borderColor: accentColor },
-                    showResult && isCorrect && styles.correctOption,
-                    showResult && !isCorrect && styles.incorrectOption,
-                    showAnswers && isCorrect && !isSelected && styles.correctOption,
-                  ]}
-                  onPress={() => handleSelect(mcq.id, optionLabel)}
-                >
-                  <View
-                    style={[
-                      styles.optionLabel,
-                      isSelected && { backgroundColor: accentColor },
-                      showResult && isCorrect && { backgroundColor: "#4CAF50" },
-                      showResult && !isCorrect && { backgroundColor: "#F44336" },
-                      showAnswers && isCorrect && !isSelected && { backgroundColor: "#4CAF50" },
-                    ]}
-                  >
-                    <ThemedText
-                      style={[styles.optionLabelText, isSelected && { color: "#fff" }]}
-                    >
-                      {optionLabel}
-                    </ThemedText>
-                  </View>
-                  <ThemedText style={[styles.optionText, textStyle]}>{option}</ThemedText>
-                </Pressable>
-              );
-            })}
-          </View>
-        </View>
+      {mcqStates.map((state, index) => (
+        <MCQCard
+          key={`${index} -${state.answered} `} // re-render helps with anim reset on full reset
+          mcq={mcqs[index]}
+          index={index}
+          state={state}
+          onAnswer={handleAnswer}
+          textStyle={textStyle}
+        />
       ))}
 
-      <Pressable
-        style={({ pressed }) => [
-          styles.checkButton,
-          { backgroundColor: showAnswers ? "#4CAF50" : accentColor },
-          pressed && { opacity: 0.8 },
-        ]}
-        onPress={() => setShowAnswers(!showAnswers)}
+      {/* Result Modal */}
+      <Modal
+        visible={showResult}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setShowResult(false)}
       >
-        <Feather name={showAnswers ? "eye-off" : "check-circle"} size={18} color="#fff" />
-        <ThemedText style={[styles.checkButtonText, textStyle]}>
-          {showAnswers ? "Hide Answers" : "Check Answers"}
-        </ThemedText>
-      </Pressable>
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <View style={[styles.modalHeader, { backgroundColor: accentColor }]}>
+              <ThemedText style={styles.modalTitle}>Quiz Completed!</ThemedText>
+            </View>
+            <View style={styles.modalBody}>
+              <ThemedText style={styles.modalScore}>{score} / {mcqs.length}</ThemedText>
+              <ThemedText style={styles.modalFeedback}>{feedbackMessage}</ThemedText>
+            </View>
+            <TouchableOpacity
+              style={[styles.resetButton, { backgroundColor: accentColor }]}
+              onPress={initQuiz}
+            >
+              <ThemedText style={styles.resetButtonText}>Retry Quiz</ThemedText>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+
     </View>
   );
 }
@@ -106,11 +307,26 @@ const styles = StyleSheet.create({
   header: {
     paddingVertical: Spacing.sm,
     paddingHorizontal: Spacing.md,
+    flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
   },
   headerText: {
     ...Typography.button,
     color: "#fff",
+    fontFamily: "Kalam_700Bold",
+  },
+  scoreContainer: {
+    backgroundColor: "rgba(0,0,0,0.2)",
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  scoreText: {
+    ...Typography.small,
+    color: "#fff",
+    fontFamily: "Kalam_700Bold",
+    fontWeight: 'bold',
   },
   mcqCard: {
     padding: Spacing.md,
@@ -119,7 +335,7 @@ const styles = StyleSheet.create({
   },
   question: {
     ...Typography.body,
-    fontFamily: "Nunito_600SemiBold",
+    fontFamily: "Kalam_700Bold",
     color: JiguuColors.textPrimary,
     marginBottom: Spacing.sm,
   },
@@ -135,14 +351,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "transparent",
   },
-  correctOption: {
-    backgroundColor: "#4CAF50" + "20",
-    borderColor: "#4CAF50",
-  },
-  incorrectOption: {
-    backgroundColor: "#F44336" + "20",
-    borderColor: "#F44336",
-  },
   optionLabel: {
     width: 24,
     height: 24,
@@ -155,23 +363,63 @@ const styles = StyleSheet.create({
   optionLabelText: {
     ...Typography.caption,
     fontFamily: "Nunito_700Bold",
-    color: JiguuColors.textSecondary,
     textTransform: "uppercase",
   },
   optionText: {
     ...Typography.small,
+    fontFamily: 'Kalam_400Regular',
     color: JiguuColors.textPrimary,
     flex: 1,
   },
-  checkButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingVertical: Spacing.md,
-    gap: Spacing.sm,
+  // Modal Styles
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20
   },
-  checkButtonText: {
-    ...Typography.button,
-    color: "#fff",
+  modalContent: {
+    width: '80%',
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    overflow: 'hidden',
+    elevation: 5,
   },
+  modalHeader: {
+    padding: 20,
+    alignItems: 'center',
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontFamily: 'Kalam_700Bold',
+    color: '#fff',
+  },
+  modalBody: {
+    padding: 30,
+    alignItems: 'center'
+  },
+  modalScore: {
+    fontSize: 48,
+    fontFamily: 'Nunito_700Bold',
+    color: '#333',
+    marginBottom: 10
+  },
+  modalFeedback: {
+    fontSize: 18,
+    fontFamily: 'Kalam_400Regular',
+    textAlign: 'center',
+    color: '#666'
+  },
+  resetButton: {
+    padding: 15,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  resetButtonText: {
+    fontSize: 18,
+    fontFamily: 'Kalam_700Bold',
+    color: '#fff'
+  }
 });
+

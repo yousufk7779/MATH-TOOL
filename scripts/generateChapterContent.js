@@ -32,113 +32,129 @@ function parseOverview(html) {
     let introduction = "";
 
     try {
-        // --- 1. Detect Format ---
-        // Format A: .section-title, .content-box
-        // Format B: h2, ul, li (Ch 5)
+        const contentBoxes = html.split('<div class="content-box">');
 
-        const isFormatB = html.includes('<h2>');
+        for (let i = 1; i < contentBoxes.length; i++) {
+            const box = contentBoxes[i];
+            const titleMatch = box.match(/<div class="section-title">(.*?)<\/div>/);
+            const title = titleMatch ? cleanText(titleMatch[1]).toLowerCase() : "";
 
-        if (isFormatB) {
-            // --- Format B Parsing ---
-            // Extract sections by splitting by <h2>
-            for (let i = 1; i < sections.length; i++) {
-                const sectionRaw = sections[i];
-                const endOfOpeningTag = sectionRaw.indexOf('>');
-                const endOfTitle = sectionRaw.indexOf('</h2>');
+            // Extract all key-points and steps
+            const pointsRaw = box.match(/<div class="(key-point|step)">(.*?)<\/div>/gs);
+            const points = pointsRaw ? pointsRaw.map(p => {
+                // strip outer div
+                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '');
+            }) : [];
 
-                if (endOfOpeningTag === -1 || endOfTitle === -1) continue;
-
-                const title = cleanText(sectionRaw.substring(endOfOpeningTag + 1, endOfTitle)).toLowerCase();
-                const content = sectionRaw.substring(endOfTitle + 5);
-
-                if (title.includes('introduction')) {
-                    // Extract spans with class point
-                    const pts = content.match(/<span class="point">(.*?)<\/span>/gs);
-                    if (pts) introduction = pts.map(p => cleanText(p)).join(' ');
-                } else if (title.includes('definition')) {
-                    // Extract li
-                    const lis = content.match(/<li>(.*?)<\/li>/gs);
-                    if (lis) {
-                        lis.forEach(li => {
-                            // <b>Term:</b> Desc
-                            const parts = li.match(/<b>(.*?):<\/b>(.*)/s);
-                            if (parts) {
-                                definitions.push({ term: cleanText(parts[1]), description: cleanText(parts[2]) });
-                            } else {
-                                definitions.push({ term: "Term", description: cleanText(li) });
-                            }
-                        });
-                    }
-                } else if (title.includes('key point')) {
-                    const lis = content.match(/<li>(.*?)<\/li>/gs);
-                    if (lis) lis.forEach(li => keyPoints.push(cleanText(li)));
-                    // Also Extract spans?
-                    const formulasInKeyPoints = content.match(/<span class="formula">(.*?)<\/span>/gs);
-                    if (formulasInKeyPoints) {
-                        formulasInKeyPoints.forEach(f => formulas.push({ name: "Formula", formula: cleanText(f) }));
-                    }
-                } else if (title.includes('crux')) {
-                    const pts = content.match(/<span class="point">(.*?)<\/span>/gs);
-                    if (pts) pts.forEach(p => crux.push(cleanText(p)));
-                } else if (title.includes('formula')) {
-                    // logic for formulas
-                }
+            // 1. Introduction
+            if (title.includes('introduction')) {
+                points.forEach(p => {
+                    introduction += cleanText(p) + " ";
+                });
+                // Also check for lists in intro
+                // basic cleanText handles lists poorly if not processed. 
+                // For now, let's just append text.
             }
-        } else {
-            // --- Format A Parsing ---
-            const contentBoxes = html.split('<div class="content-box">');
 
-            for (let i = 1; i < contentBoxes.length; i++) {
-                const box = contentBoxes[i];
-                // Get Title
-                const titleMatch = box.match(/<div class="section-title">(.*?)<\/div>/);
-                const title = titleMatch ? cleanText(titleMatch[1]).toLowerCase() : "";
+            // 2. Definitions / Key Definitions / Basic Number Systems
+            else if (title.includes('definition') || title.includes('basic number')) {
+                points.forEach(p => {
+                    // Check for bold term: <span class="bold">Term:</span> Desc
+                    const defMatch = p.match(/<span class="bold">(.*?)(:?)<\/span>(.*)/s);
+                    if (defMatch) {
+                        definitions.push({
+                            term: cleanText(defMatch[1]),
+                            description: cleanText(defMatch[3])
+                        });
+                    } else {
+                        // If just a point (like in basic number systems), treat as key point or definition with term=Point
+                        // Or if it looks like a definition without bold class but strong tag
+                        const altMatch = p.match(/<(strong|b)>(.*?)(:?)<\/\1>(.*)/s);
+                        if (altMatch) {
+                            definitions.push({
+                                term: cleanText(altMatch[2]),
+                                description: cleanText(altMatch[4])
+                            });
+                        } else {
+                            // Just a key point?
+                            keyPoints.push(cleanText(p));
+                        }
+                    }
+                });
+            }
 
-                // General Extraction of Steps/KeyPoints
-                // Look for strong/bold terms for definitions
-                // Look for formula boxes
+            // 3. Formulas / Theorems
+            else if (title.includes('formula') || title.includes('theorem')) {
+                // Extract formulas from spans or formula blocks
+                // The HTML structure for Ch1 formulas is:
+                // <div class="key-point"><span class="formula">Name:</span></div>
+                // <div class="key-point">Description/Formula</div>
 
-                // Definitions (heuristic: bold followed by :)
-                const defMatches = box.matchAll(/<(strong|b|span class="bold")>(.*?)(:?)<\/\1>(.*?)<(\/div|\/span|\/li)>/gs);
-                // This regex is tricky. Let's iterate steps.
+                // This is tricky because the name and content are in separate divs sometimes.
+                // Let's iterate points.
+                for (let j = 0; j < points.length; j++) {
+                    const p = points[j];
+                    const formulaMatch = p.match(/<span class="formula">(.*?)<\/span>/);
 
-                const steps = box.match(/<div class="step">(.*?)<\/div>/gs);
-                if (steps) {
-                    steps.forEach(stepHtml => {
-                        // Check for definition pattern
-                        const defMatch = stepHtml.match(/<(strong|b)>(.*?):?<\/\1>(.*)/);
-                        if (defMatch && (title.includes('introduction') || title.includes('definition'))) {
-                            definitions.push({ term: cleanText(defMatch[2]), description: cleanText(defMatch[3]) });
-                        } else if (title.includes('introduction')) {
-                            introduction += cleanText(stepHtml) + " ";
-                        } else if (title.includes('key')) {
-                            keyPoints.push(cleanText(stepHtml));
+                    if (formulaMatch) {
+                        const name = cleanText(formulaMatch[1]);
+                        let content = "";
+                        // Look ahead for content if the current point is JUST the name
+                        // Heuristic: if the point text is short or ends with colon
+
+                        // Actually, in Ch1 HTML:
+                        // <div class="key-point"><span class="formula">The Fundamental Theorem of Arithmetic:</span></div>
+                        // <div class="key-point">Every composite number...</div>
+
+                        if (j + 1 < points.length) {
+                            const nextP = points[j + 1];
+                            if (!nextP.includes('span class="formula"')) {
+                                content = cleanText(nextP);
+                                // Skip next point in iteration? Maybe.
+                                // But what if next point is part of description?
+                            }
+                        }
+
+                        // Also check for formula-block
+                        const blockMatch = box.match(/<div class="formula-block">(.*?)<\/div>/s);
+                        if (blockMatch && content === "") {
+                            // This might match the wrong block if multiple. 
+                            // Let's try to match formula blocks inside the current flow if possible.
+                        }
+
+                        formulas.push({ name: name, formula: content || name });
+                    }
+                }
+
+                // Also capture formula-blocks directly if missed
+                const formulaBlocks = box.match(/<div class="formula-block">(.*?)<\/div>/gs);
+                if (formulaBlocks) {
+                    formulaBlocks.forEach(fb => {
+                        // Check if this was already added? 
+                        // For Ch1, "HCF(a, b) x LCM(a, b) = a x b" is a block.
+                        const text = cleanText(fb);
+                        const exists = formulas.find(f => f.formula.includes(text));
+                        if (!exists) {
+                            formulas.push({ name: "Formula", formula: text });
                         }
                     });
                 }
-
-                // Formulas
-                if (title.includes('formula') || title.includes('theorem')) {
-                    const formulaBoxes = box.match(/<div class="formula-box">([\s\S]*?)<\/div>/gs);
-                    if (formulaBoxes) {
-                        formulaBoxes.forEach(fb => {
-                            formulas.push({ name: "Formula", formula: cleanText(fb) });
-                        });
-                    }
-                    // Also check spans with class formula
-                    const spans = box.match(/<span class="formula">(.*?)<\/span>/gs);
-                    if (spans) spans.forEach(s => formulas.push({ name: "Formula", formula: cleanText(s) }));
-                }
-
-                // Append any explicit introduction text
-                if (title.includes('introduction') && !introduction) {
-                    // logic already handled via steps
-                }
             }
 
-            // Clean introduction
-            introduction = introduction.trim();
+            // 4. Summary / Crux (if explicit)
+            else if (title.includes('summary')) {
+                points.forEach(p => summary.push(cleanText(p)));
+            }
+            else if (title.includes('crux')) {
+                points.forEach(p => crux.push(cleanText(p)));
+            }
+            // Fallback: Add to Key Points
+            else {
+                points.forEach(p => keyPoints.push(cleanText(p)));
+            }
         }
+
+        introduction = introduction.trim();
 
     } catch (e) {
         console.error("Error parsing overview:", e);
@@ -153,49 +169,36 @@ function parseQuestions(html, type) {
 
     try {
         if (type === 'mcq' && html.includes('mcq-box')) {
+            // MCQ logic (already updated previous turn)
+            // Re-including it here to ensure complete function replacement without losing MCQ logic
             const parts = html.split('<div class="mcq-box">');
-
-            // Extract Answer Key
             const answerKeyMatch = html.match(/<div class="answer-key">\s*(.*?)\s*<\/div>/s);
             const answerKey = answerKeyMatch ? cleanText(answerKeyMatch[1]) : "";
 
             for (let i = 1; i < parts.length; i++) {
                 const part = parts[i];
                 const qMatch = part.match(/<div class="mcq-question">\s*(.*?)\s*<\/div>/s);
-
                 if (qMatch) {
                     let qText = cleanText(qMatch[1]);
-                    // Extract number
                     const numMatch = qText.match(/^(\d+)\./);
                     const num = numMatch ? numMatch[1] : i.toString();
                     qText = qText.replace(/^\d+\.\s*/, '');
 
-                    // Extract Options
-                    const optionsRaw = part.match(/<div class="mcq-options">(.*?)<\/div>\s*<\/div>/s); // nested div?
-                    // The options are div siblings inside mcq-options
                     const optionsBlock = part.split('<div class="mcq-options">')[1];
                     const options = [];
                     if (optionsBlock) {
                         const optionDivs = optionsBlock.match(/<div>\s*\([a-d]\)\s*(.*?)\s*<\/div>/g);
-                        if (optionDivs) {
-                            optionDivs.forEach(opt => {
-                                const cleanOpt = cleanText(opt).replace(/^\([a-d]\)\s*/, '');
-                                options.push(cleanOpt);
-                            });
-                        }
+                        if (optionDivs) optionDivs.forEach(opt => options.push(cleanText(opt).replace(/^\([a-d]\)\s*/, '')));
                     }
 
-                    // Extract Answer
-                    // Key format: 1.(a) 2.(b)
                     const ansRegex = new RegExp(`${num}\\.\\(([a-d])\\)`);
                     const ansMatch = answerKey.match(ansRegex);
-                    const correctKey = ansMatch ? ansMatch[1] : "";
 
                     questions.push({
                         number: num,
                         question: qText,
                         solution: [],
-                        answer: correctKey, // "a", "b", etc.
+                        answer: ansMatch ? ansMatch[1] : "",
                         options: options.length === 4 ? options : ["Option A", "Option B", "Option C", "Option D"]
                     });
                 }
@@ -203,59 +206,40 @@ function parseQuestions(html, type) {
             return questions;
         }
 
-        const isFormatB = !html.includes('<div class="content-box">'); // Ch 5 uses question class directly?
+        const isFormatB = !html.includes('<div class="content-box">');
 
         if (isFormatB) {
-            // Ch 5 Format Parsing
-            // Split by <div class="question"> (Questions usually start with this)
-            // But verify exercise1.html structure: <h2>Exercise...</h2> <div class="question">Q1...</div> <div class="question">(i)...</div>
-
-            // This is unstructured. "Q1" is a header. "(i)" is a sub-question.
-            // We need to iterate nodes? Too hard with regex.
-            // Heuristic: split by <div class="question">
-
+            // Ch 5 Format Parsing (keeping as is/simplified)
             const parts = html.split('<div class="question">');
-            // parts[0] is header
-
             let currentMainQuestion = "";
 
             for (let i = 1; i < parts.length; i++) {
                 const part = parts[i];
-                // Extract question text (until </div>)
                 const endDiv = part.indexOf('</div>');
                 let qText = cleanText(part.substring(0, endDiv));
                 const rest = part.substring(endDiv + 6);
 
-                // Identify if this is a main question (Q1.) or sub ( (i) )
                 if (qText.match(/^Q\d+/)) {
                     currentMainQuestion = qText;
-                    // Does this part have solution steps? Usually yes or followed by sub questions.
-                    // If proper question, parse steps.
                 }
 
-                // Parse solution steps
                 const steps = [];
                 const stepMatches = rest.match(/<span class="step">(.*?)<\/span>/gs);
                 if (stepMatches) stepMatches.forEach(s => steps.push(cleanText(s)));
-
-                // Parse Answer
                 const ansMatch = rest.match(/<span class="answer">(.*?)<\/span>/);
-                const answer = ansMatch ? cleanText(ansMatch[1]) : "";
 
-                if (steps.length > 0 || answer) {
-                    // It's a question block
+                if (steps.length > 0 || ansMatch) {
                     questions.push({
                         id: `auto_${Math.random().toString(36).substr(2, 9)}`,
-                        number: qText.split(' ')[0], // First word usually
+                        number: qText.split(' ')[0],
                         question: currentMainQuestion && !qText.startsWith('Q') ? `${currentMainQuestion} ${qText}` : qText,
                         solution: steps,
-                        answer: answer || "Refer to steps"
+                        answer: ansMatch ? cleanText(ansMatch[1]) : "Refer to steps"
                     });
                 }
             }
-
         } else {
-            // Format A (Content Box)
+            // Format A (Content Box) - UPDATED LOGIC
             const contentBoxes = html.split('<div class="content-box">');
 
             for (let i = 1; i < contentBoxes.length; i++) {
@@ -263,7 +247,7 @@ function parseQuestions(html, type) {
                 const questionMatch = box.match(/<div class="question">\s*(\d+[\.\)]?|Example \d+|Q\.\d+)\s*(.*?)<\/div>/s);
 
                 if (questionMatch) {
-                    const mainNum = cleanText(questionMatch[1]);
+                    const mainNum = cleanText(questionMatch[1]).replace(/\.$/, ''); // Remove trailing dot
                     const mainText = cleanText(questionMatch[2]);
 
                     const subQuestions = box.split('<div class="sub-question">');
@@ -272,32 +256,48 @@ function parseQuestions(html, type) {
                         for (let j = 1; j < subQuestions.length; j++) {
                             const subPart = subQuestions[j];
                             const subNumMatch = subPart.match(/^\s*(.*?)\s*<\/div>/);
-                            const subNum = subNumMatch ? cleanText(subNumMatch[1]) : `(${j})`;
+                            const fullSubContent = subNumMatch ? cleanText(subNumMatch[1]) : `(${j})`; // e.g. "(i) 140"
+
+                            // Try to split index from content: "(i) 140" -> index="(i)", text="140"
+                            // Regex: start with (something)
+                            const indexMatch = fullSubContent.match(/^(\([a-z0-9]+\))(.*)/i);
+                            let subIndex = "";
+                            let subText = fullSubContent;
+
+                            if (indexMatch) {
+                                subIndex = indexMatch[1]; // "(i)"
+                                subText = indexMatch[2].trim(); // "140"
+                            } else {
+                                // Fallback
+                                subIndex = `(${j})`;
+                            }
 
                             const steps = [];
-                            // Support div.step and span.step
-                            const stepMatches = subPart.match(/<(div|span) class="step.*?">(.*?)<\/\1>/gs);
-                            if (stepMatches) stepMatches.forEach(s => steps.push(cleanText(s)));
+                            const allSteps = subPart.match(/<div class="(step|formula-block)">(.*?)<\/div>/gs);
+                            if (allSteps) allSteps.forEach(s => {
+                                const cleanS = cleanText(s);
+                                if (cleanS) steps.push(cleanS);
+                            });
 
-                            const ansMatch = subPart.match(/<(div|span) class="(final-answer|answer)">(.*?)<\/\1>/s);
-                            const answer = ansMatch ? cleanText(ansMatch[3]) : "Refer to Solution";
+                            const ansMatch = subPart.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
+                            const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
 
                             questions.push({
                                 id: `auto_${Math.random().toString(36).substr(2, 9)}`,
-                                number: `${mainNum}${subNum}`,
-                                question: `${mainText} ${subNum}`,
+                                number: `${mainNum}${subIndex}`, // "1(i)"
+                                question: `${mainText} ${subIndex} ${subText}`,
                                 solution: steps,
                                 answer: answer
                             });
                         }
                     } else {
+                        // checks for root level steps
                         const steps = [];
-                        const stepMatches = box.match(/<(div|span) class="step.*?">(.*?)<\/\1>/gs);
-                        // Filter out question text step if any? No.
-                        if (stepMatches) stepMatches.forEach(s => steps.push(cleanText(s)));
+                        const allSteps = box.match(/<div class="(step|formula-block)">(.*?)<\/div>/gs);
+                        if (allSteps) allSteps.forEach(s => steps.push(cleanText(s)));
 
-                        const ansMatch = box.match(/<(div|span) class="(final-answer|answer)">(.*?)<\/\1>/s);
-                        const answer = ansMatch ? cleanText(ansMatch[3]) : "Refer to Solution";
+                        const ansMatch = box.match(/<div class="(final-answer|answer)">(.*?)<\/div>/s);
+                        const answer = ansMatch ? cleanText(ansMatch[2]) : "Refer to Solution";
 
                         questions.push({
                             id: `auto_${Math.random().toString(36).substr(2, 9)}`,
