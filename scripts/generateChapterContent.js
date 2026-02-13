@@ -393,15 +393,26 @@ function parseQuestions(html, type, chapterNum, exName) {
                                 }
                             }
 
-                            if (!image && type === 'exercise' && exName) {
-                                const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
-                                if (exIdMatch) {
-                                    const exId = exIdMatch[1];
-                                    const qNumClean = mainNum;
-                                    const subClean = subIndex.replace(/[()]/g, (m) => m === '(' ? '(' : ')');
-                                    const pattern1 = `Ex_${exId}_Q${qNumClean}${subClean}.jpg`;
-                                    if (availableImages.includes(pattern1)) {
-                                        image = pattern1.replace(/\.[^/.]+$/, "");
+                            if (!image) {
+                                if (type === 'exercise' && exName) {
+                                    const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
+                                    if (exIdMatch) {
+                                        const exId = exIdMatch[1];
+                                        const qNumClean = mainNum;
+                                        const subClean = subIndex.replace(/[()]/g, (m) => m === '(' ? '(' : ')');
+                                        const pattern1 = `Ex_${exId}_Q${qNumClean}${subClean}.jpg`;
+                                        if (availableImages.includes(pattern1)) {
+                                            image = pattern1;
+                                        }
+                                    }
+                                } else if (type === 'example') {
+                                    const exNumMatch = mainNum.match(/\d+/);
+                                    if (exNumMatch) {
+                                        const exNum = exNumMatch[0];
+                                        const pattern = `fig_example_${exNum}.svg`;
+                                        if (availableImages.includes(pattern)) {
+                                            image = pattern;
+                                        }
                                     }
                                 }
                             }
@@ -446,13 +457,24 @@ function parseQuestions(html, type, chapterNum, exName) {
                             }
                         }
 
-                        if (!image && type === 'exercise' && exName) {
-                            const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
-                            if (exIdMatch) {
-                                const exId = exIdMatch[1];
-                                const pattern = `Ex_${exId}_Q${mainNum}.jpg`;
-                                if (availableImages.includes(pattern)) {
-                                    image = pattern.replace(/\.[^/.]+$/, "");
+                        if (!image) {
+                            if (type === 'exercise' && exName) {
+                                const exIdMatch = exName.match(/Exercise\s+(\d+\.\d+)/);
+                                if (exIdMatch) {
+                                    const exId = exIdMatch[1];
+                                    const pattern = `Ex_${exId}_Q${mainNum}.jpg`;
+                                    if (availableImages.includes(pattern)) {
+                                        image = pattern;
+                                    }
+                                }
+                            } else if (type === 'example') {
+                                const exNumMatch = mainNum.match(/\d+/);
+                                if (exNumMatch) {
+                                    const exNum = exNumMatch[0];
+                                    const pattern = `fig_example_${exNum}.svg`;
+                                    if (availableImages.includes(pattern)) {
+                                        image = pattern;
+                                    }
                                 }
                             }
                         }
@@ -541,7 +563,8 @@ function generateContent() {
                     number: q.number || `Example ${i + 1}`,
                     question: q.question,
                     solution: q.solution,
-                    answer: q.answer
+                    answer: q.answer,
+                    image: q.image
                 }));
             }
         } catch (e) { console.error(e); }

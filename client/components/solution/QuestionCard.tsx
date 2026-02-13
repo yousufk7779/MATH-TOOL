@@ -129,7 +129,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
             {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
-              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image], { width: "100%", height: "100%" })
+              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image], { width: "90%", height: 150 })
             ) : (
               <Image
                 source={graphImages[question.image]}
