@@ -4,7 +4,7 @@ const path = require('path');
 
 const CHAPTERS = [
     { id: "ch1-real-numbers", number: 1, title: "Real Numbers" },
-    //     { id: "ch2-polynomials", number: 2, title: "Polynomials" },
+    { id: "ch2-polynomials", number: 2, title: "Polynomials" },
     //     { id: "ch3-linear-equations", number: 3, title: "Pair of Linear Equations" },
     //     { id: "ch4-quadratic-equations", number: 4, title: "Quadratic Equations" },
     //     { id: "ch5-arithmetic-progressions", number: 5, title: "Arithmetic Progressions" },
