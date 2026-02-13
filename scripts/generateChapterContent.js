@@ -72,15 +72,27 @@ function parseOverview(html) {
 
         for (let i = 1; i < contentBoxes.length; i++) {
             const box = contentBoxes[i];
+            let title = "";
             const titleMatch = box.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
-            const title = titleMatch ? cleanText(titleMatch[1]).toLowerCase() : "";
+            if (titleMatch) {
+                title = cleanText(titleMatch[1]).toLowerCase();
+            } else {
+                // Check previous box content for title at the end (for structures where title is outside/before box)
+                const prev = contentBoxes[i - 1];
+                const allTitles = prev.match(/<div class="section-title"(?: [^>]*)?>([^<]*?)<\/div>/g);
+                if (allTitles && allTitles.length > 0) {
+                    const lastTitleTag = allTitles[allTitles.length - 1];
+                    const matcher = lastTitleTag.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
+                    if (matcher) title = cleanText(matcher[1]).toLowerCase();
+                }
+            }
 
             // Extract all key-points, steps, and list items
             // Matches <div class="key-point">...</div> OR <div class="step">...</div> OR <li>...</li>
-            const pointsRaw = box.match(/(<div class="(key-point|step)">(.*?)<\/div>|<li>(.*?)<\/li>)/gs);
+            const pointsRaw = box.match(/(<div class="(key-point|step)">(.*?)<\/div>|<li>(.*?)<\/li>|<p>(.*?)<\/p>)/gs);
             const points = pointsRaw ? pointsRaw.map(p => {
                 // strip outer div
-                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '').replace(/^<li>/, '').replace(/<\/li>$/, '');
+                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '').replace(/^<li>/, '').replace(/<\/li>$/, '').replace(/^<p>/, '').replace(/<\/p>$/, '');
             }) : [];
 
             // 1. Introduction
@@ -358,7 +370,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                                 if (s.includes('class="table-container"') || s.includes("class='table-container'")) {
                                     content = parseTableToText(s);
                                 } else if (s.includes('class="solution-header"') || s.includes("class='solution-header'")) {
-                                    content = "**" + cleanText(s) + "**";
+                                    content = ""; // Skip solution header to avoid duplication
                                 } else if (s.includes('class="final-answer"') || s.includes("class='final-answer'")) {
                                     // exclude final answer from steps to avoid duplication
                                 } else {
@@ -413,7 +425,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                             if (s.includes('class="table-container"') || s.includes("class='table-container'")) {
                                 content = parseTableToText(s);
                             } else if (s.includes('class="solution-header"') || s.includes("class='solution-header'")) {
-                                content = "**" + cleanText(s) + "**";
+                                content = ""; // Skip solution header to avoid duplication
                             } else {
                                 content = cleanText(s);
                             }

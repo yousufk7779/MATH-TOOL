@@ -12,6 +12,7 @@ import FormulaItem from "@/components/solution/FormulaItem";
 import QuestionCard from "@/components/solution/QuestionCard";
 import TheoremCard from "@/components/solution/TheoremCard";
 import MCQSection from "@/components/solution/MCQSection";
+import { ParsedText } from "@/components/ParsedText";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
@@ -185,7 +186,7 @@ function SolutionScreen() {
         borderColor="#6C63FF"
         titleStyle={hwTitleStyle}
       >
-        <ThemedText style={[styles.introText, hwStyle]}>{data.introduction}</ThemedText>
+        <ParsedText style={[styles.introText, hwStyle]} Component={ThemedText}>{data.introduction}</ParsedText>
       </SectionCard>
 
       <SectionCard
@@ -216,7 +217,7 @@ function SolutionScreen() {
         {data.keyPoints.map((point, index) => (
           <View key={index} style={styles.keyPointRow}>
             <View style={[styles.bullet, { backgroundColor: "#FFA000" }]} />
-            <ThemedText style={[styles.keyPointText, hwStyle]}>{point}</ThemedText>
+            <ParsedText style={[styles.keyPointText, hwStyle]} Component={ThemedText}>{point}</ParsedText>
           </View>
         ))}
       </SectionCard>
@@ -250,7 +251,7 @@ function SolutionScreen() {
             <View style={[styles.cruxNumber, { backgroundColor: "#2196F3" }]}>
               <ThemedText style={styles.cruxNumberText}>{index + 1}</ThemedText>
             </View>
-            <ThemedText style={[styles.cruxText, hwStyle]}>{item}</ThemedText>
+            <ParsedText style={[styles.cruxText, hwStyle]} Component={ThemedText}>{item}</ParsedText>
           </View>
         ))}
       </SectionCard>
@@ -265,7 +266,7 @@ function SolutionScreen() {
         {data.summary.map((item, index) => (
           <View key={index} style={styles.summaryRow}>
             <ThemedText style={[styles.summaryNumber, hwTitleStyle]}>{index + 1}.</ThemedText>
-            <ThemedText style={[styles.summaryText, hwStyle]}>{item}</ThemedText>
+            <ParsedText style={[styles.summaryText, hwStyle]} Component={ThemedText}>{item}</ParsedText>
           </View>
         ))}
       </SectionCard>

@@ -13,34 +13,7 @@ import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useSavedItems } from "@/context/SavedItemsContext";
 
-const ParsedText = ({ children, style, Component = Text, accentColor }: { children: string, style?: any, Component?: any, accentColor?: string }) => {
-  if (!children) return null;
-  const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}})/g);
-
-  return (
-    <Component style={style}>
-      {parts.map((part, index) => {
-        const match = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
-        if (match) {
-          const numerator = match[1];
-          const denominator = match[2];
-          return (
-            <View key={index} style={[styles.fractionContainer, { borderLeftColor: 'transparent' }]}>
-              <View style={styles.numeratorContainer}>
-                <Text style={[style, styles.numeratorText]}>{numerator}</Text>
-              </View>
-              <View style={[styles.separator, { backgroundColor: StyleSheet.flatten(style)?.color || '#000' }]} />
-              <View style={styles.denominatorContainer}>
-                <Text style={[style, styles.denominatorText]}>{denominator}</Text>
-              </View>
-            </View>
-          );
-        }
-        return <Text key={index}>{part}</Text>;
-      })}
-    </Component>
-  );
-};
+import { ParsedText } from "@/components/ParsedText";
 
 const graphImages: Record<string, any> = {
   "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
@@ -248,7 +221,7 @@ const styles = StyleSheet.create({
   stepText: {
     ...Typography.small,
     color: JiguuColors.textSecondary,
-    lineHeight: 22,
+    lineHeight: 28,
     textAlign: "justify",
   },
   answerBox: {
@@ -272,9 +245,11 @@ const styles = StyleSheet.create({
     padding: Spacing.sm,
   },
   graphImage: {
-    width: "100%",
-    height: 200,
+    width: "90%",
+    height: 180,
     borderRadius: BorderRadius.xs,
+    alignSelf: 'center',
+    resizeMode: 'contain',
   },
   questionTextContainer: {},
   fractionContainer: {
