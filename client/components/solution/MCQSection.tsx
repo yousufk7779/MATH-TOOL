@@ -194,12 +194,14 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
   const [mcqStates, setMcqStates] = useState<MCQState[]>([]);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [attemptKey, setAttemptKey] = useState(0); // Forcing re-render on retry
 
   // Initialize / Reset
   const initQuiz = useCallback(() => {
     setMcqStates(generateMCQStates(mcqs));
     setScore(0);
     setShowResult(false);
+    setAttemptKey(prev => prev + 1);
   }, [mcqs]);
 
   // Initial load
@@ -230,9 +232,6 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
     if (isCorrect) {
       setScore(s => s + 1);
     }
-
-    // Auto-focus logic would go here if we had ref access to parent ScrollView
-    // Since we don't, we skip scrolling but the visual feedback is strong.
   };
 
   const currentScorePercentage = (score / mcqs.length) * 100;
@@ -247,16 +246,12 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
     <View style={styles.container}>
       <View style={[styles.header, { backgroundColor: accentColor }]}>
         <ThemedText style={[styles.headerText, textStyle]}>Practice MCQs</ThemedText>
-        <View style={styles.scoreContainer}>
-          <ThemedText style={[styles.scoreText, textStyle]}>
-            Score: {score} / {mcqs.length}
-          </ThemedText>
-        </View>
+        {/* Score removed from top as per request */}
       </View>
 
       {mcqStates.map((state, index) => (
         <MCQCard
-          key={`${index} -${state.answered} `} // re-render helps with anim reset on full reset
+          key={`${index}-${attemptKey}`} // Ensures fresh component on retry
           mcq={mcqs[index]}
           index={index}
           state={state}
@@ -275,7 +270,7 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
         <View style={styles.modalOverlay}>
           <View style={styles.modalContent}>
             <View style={[styles.modalHeader, { backgroundColor: accentColor }]}>
-              <ThemedText style={styles.modalTitle}>Quiz Completed!</ThemedText>
+              <ThemedText style={styles.modalTitle}>MCQs Completed!</ThemedText>
             </View>
             <View style={styles.modalBody}>
               <ThemedText style={styles.modalScore}>{score} / {mcqs.length}</ThemedText>
@@ -285,7 +280,7 @@ function MCQSection({ mcqs, accentColor = "#9C27B0", textStyle }: MCQSectionProp
               style={[styles.resetButton, { backgroundColor: accentColor }]}
               onPress={initQuiz}
             >
-              <ThemedText style={styles.resetButtonText}>Retry Quiz</ThemedText>
+              <ThemedText style={styles.resetButtonText}>Retry MCQs</ThemedText>
             </TouchableOpacity>
           </View>
         </View>
@@ -316,18 +311,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontFamily: "Kalam_700Bold",
   },
-  scoreContainer: {
-    backgroundColor: "rgba(0,0,0,0.2)",
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    borderRadius: 12,
-  },
-  scoreText: {
-    ...Typography.small,
-    color: "#fff",
-    fontFamily: "Kalam_700Bold",
-    fontWeight: 'bold',
-  },
+  // Score container styles removed
   mcqCard: {
     padding: Spacing.md,
     borderBottomWidth: 1,
@@ -400,10 +384,12 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   modalScore: {
-    fontSize: 48,
+    fontSize: 40, // Reduced from 48
+    lineHeight: 50, // Added to ensure visibility
     fontFamily: 'Nunito_700Bold',
     color: '#333',
-    marginBottom: 10
+    marginBottom: 10,
+    textAlign: 'center'
   },
   modalFeedback: {
     fontSize: 18,

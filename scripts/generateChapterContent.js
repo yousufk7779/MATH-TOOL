@@ -20,7 +20,26 @@ const OUTPUT_FILE = path.join(__dirname, '../client/data/chapterContent.ts');
 
 function cleanText(text) {
     if (text === null || text === undefined) return "";
-    return String(text).replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+    let clean = String(text)
+        .replace(/<[^>]+>/g, '') // Remove tags
+        .replace(/&nbsp;/g, ' ')
+        .replace(/&rArr;/g, '⇒')
+        .replace(/&lArr;/g, '⇐')
+        .replace(/&hArr;/g, '⇔')
+        .replace(/&rarr;/g, '→')
+        .replace(/&larr;/g, '←')
+        .replace(/&times;/g, '×')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'")
+        .replace(/&#39;/g, "'")
+        .replace(/&deg;/g, '°')
+        .replace(/&minus;/g, '−')
+        .replace(/\s+/g, ' ')
+        .trim();
+    return clean;
 }
 
 function parseOverview(html) {
@@ -32,18 +51,19 @@ function parseOverview(html) {
     let introduction = "";
 
     try {
-        const contentBoxes = html.split('<div class="content-box">');
+        const contentBoxes = html.split(/<div class="content-box(?: [^"]*)?">/);
 
         for (let i = 1; i < contentBoxes.length; i++) {
             const box = contentBoxes[i];
-            const titleMatch = box.match(/<div class="section-title">(.*?)<\/div>/);
+            const titleMatch = box.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
             const title = titleMatch ? cleanText(titleMatch[1]).toLowerCase() : "";
 
-            // Extract all key-points and steps
-            const pointsRaw = box.match(/<div class="(key-point|step)">(.*?)<\/div>/gs);
+            // Extract all key-points, steps, and list items
+            // Matches <div class="key-point">...</div> OR <div class="step">...</div> OR <li>...</li>
+            const pointsRaw = box.match(/(<div class="(key-point|step)">(.*?)<\/div>|<li>(.*?)<\/li>)/gs);
             const points = pointsRaw ? pointsRaw.map(p => {
                 // strip outer div
-                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '');
+                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '').replace(/^<li>/, '').replace(/<\/li>$/, '');
             }) : [];
 
             // 1. Introduction
@@ -58,6 +78,26 @@ function parseOverview(html) {
 
             // 2. Definitions / Key Definitions / Basic Number Systems
             else if (title.includes('definition') || title.includes('basic number')) {
+                // If points array is empty, maybe try to extract LI elements?
+                if (points.length === 0) {
+                    const lis = box.match(/<li>(.*?)<\/li>/gs);
+                    if (lis) {
+                        lis.forEach(li => {
+                            const cleanLi = cleanText(li);
+                            // Check for bold term: <span class="bold">Term:</span> Desc
+                            const defMatch = li.match(/<span class="bold">(.*?)(:?)<\/span>(.*)/s);
+                            if (defMatch) {
+                                definitions.push({
+                                    term: cleanText(defMatch[1]),
+                                    description: cleanText(defMatch[3])
+                                });
+                            } else {
+                                keyPoints.push(cleanLi);
+                            }
+                        });
+                    }
+                }
+
                 points.forEach(p => {
                     // Check for bold term: <span class="bold">Term:</span> Desc
                     const defMatch = p.match(/<span class="bold">(.*?)(:?)<\/span>(.*)/s);
@@ -150,6 +190,12 @@ function parseOverview(html) {
             }
             // Fallback: Add to Key Points
             else {
+                if (points.length === 0) {
+                    const lis = box.match(/<li>(.*?)<\/li>/gs);
+                    if (lis) {
+                        lis.forEach(li => keyPoints.push(cleanText(li)));
+                    }
+                }
                 points.forEach(p => keyPoints.push(cleanText(p)));
             }
         }
@@ -240,7 +286,8 @@ function parseQuestions(html, type) {
             }
         } else {
             // Format A (Content Box) - UPDATED LOGIC
-            const contentBoxes = html.split('<div class="content-box">');
+            // Use regex split to handle extra classes like "summary-box"
+            const contentBoxes = html.split(/<div class="content-box(?: [^"]*)?">/);
 
             for (let i = 1; i < contentBoxes.length; i++) {
                 const box = contentBoxes[i];
