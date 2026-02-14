@@ -102,103 +102,543 @@ export const chapterContents: Record<string, ChapterContent> = {
     id: "ch5-arithmetic-progressions",
     number: 5,
     title: "Arithmetic Progressions",
-    introduction: "",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
+    introduction: "In daily life, we see many patterns. Example: Savings every month, or steps of a ladder. When numbers increase or decrease by a fixed amount, we call it an AP. This chapter helps us calculate large values simply without counting one by one.",
+    definitions: [
+      { "term": "Arithmetic Progression (AP)", "definition": "A list of numbers where difference between two consecutive terms is always same." },
+      { "term": "First Term (a)", "definition": "The number starting the list. It can be any number." },
+      { "term": "Common Difference (d)", "definition": "The fixed number added to get the next term. It can be positive, negative, or zero." },
+      { "term": "Finite AP", "definition": "An AP with limited terms (End is known)." },
+      { "term": "Infinite AP", "definition": "An AP that never ends (Last term not known)." }
+    ],
+    keyPoints: [
+      "General form of an AP is: a, a + d, a + 2d, a + 3d ...",
+      "nth Term Formula (General Term): aₙ = a + (n - 1)d",
+      "Sum of First n Terms Formula (1): Sₙ = {{frac}}n{{over}}2{{endfrac}} [ 2a + (n - 1)d ]",
+      "Sum Formula (2) if last term (l) is known: Sₙ = {{frac}}n{{over}}2{{endfrac}} ( a + l )",
+      "Sum of first n positive integers: Sₙ = {{frac}}n(n + 1){{over}}2{{endfrac}}"
+    ],
+    formulas: [
+      { "name": "General Form", "formula": "a, a + d, a + 2d, ..." },
+      { "name": "nth Term", "formula": "aₙ = a + (n - 1)d" },
+      { "name": "Sum of n Terms", "formula": "Sₙ = {{frac}}n{{over}}2{{endfrac}} [ 2a + (n - 1)d ]" },
+      { "name": "Sum (Last Term)", "formula": "Sₙ = {{frac}}n{{over}}2{{endfrac}} ( a + l )" },
+      { "name": "Sum of n Integers", "formula": "Sₙ = {{frac}}n(n + 1){{over}}2{{endfrac}}" }
+    ],
+    crux: [
+      "This whole chapter is about only TWO main formulas.",
+      "First, always find values of 'a' and 'd' from the question.",
+      "If they ask \"Find 10th term\", use the aₙ formula.",
+      "If they ask \"Find Total\" or \"Sum\", use the Sₙ formula.",
+      "Be careful with 'd' signs. If AP is decreasing, 'd' is negative.",
+      "If 3 variables are known out of a, d, n, aₙ, you can find the 4th one easily."
+    ],
     summary: [],
-    exercises: [{ "id": "ex5.1", "name": "Exercise 5.1", "questions": [{ "id": "ch5-arithmetic-progressions_ex1_q1", "number": "(i)", "question": "Q1. In which situations does the list of numbers make an AP? (i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.", "solution": ["Fare for 1st km = 15", "Fare for 2nd km = 15 + 8 = 23", "Fare for 3rd km = 23 + 8 = 31", "List: 15, 23, 31, ...", "Difference = 23 - 15 = 8", "Difference = 31 - 23 = 8", "Difference is same."], "answer": "Answer: Yes" }, { "id": "ch5-arithmetic-progressions_ex1_q2", "number": "(ii)", "question": "Q1. In which situations does the list of numbers make an AP? (ii) Air in cylinder: Removes 14 of remaining air.", "solution": ["Initial air = 1", "Removed 1st time = 1", "Remaining = 1 - 1", "Removed 2nd time = 1", "Remaining = 3", "= 12 - 3", "d₁ = 3", "d₂ = 9", "Difference is not same."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q3", "number": "(iii)", "question": "Q1. In which situations does the list of numbers make an AP? (iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.", "solution": ["1st metre = 150", "2nd metre = 150 + 50 = 200", "3rd metre = 200 + 50 = 250", "Difference = 50 (constant)."], "answer": "Answer: Yes" }, { "id": "ch5-arithmetic-progressions_ex1_q4", "number": "(iv)", "question": "Q1. In which situations does the list of numbers make an AP? (iv) Compound interest: ₹ 10000 at 8% per annum.", "solution": ["Amount = P(1 + R", "Calculating amounts for each year.", "Interest is on increasing amount.", "So difference keeps increasing.", "Difference is not same."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q5", "number": "(i)", "question": "Q2. Write first four terms. (i) a = 10, d = 10", "solution": ["a₁ = 10", "a₂ = 10 + 10 = 20", "a₃ = 20 + 10 = 30", "a₄ = 30 + 10 = 40"], "answer": "Answer: 10, 20, 30, 40" }, { "id": "ch5-arithmetic-progressions_ex1_q6", "number": "(ii)", "question": "Q2. Write first four terms. (ii) a = -2, d = 0", "solution": ["a₁ = -2", "a₂ = -2 + 0 = -2", "a₃ = -2", "a₄ = -2"], "answer": "Answer: -2, -2, -2, -2" }, { "id": "ch5-arithmetic-progressions_ex1_q7", "number": "(iii)", "question": "Q2. Write first four terms. (iii) a = 4, d = -3", "solution": ["a₁ = 4", "a₂ = 4 - 3 = 1", "a₃ = 1 - 3 = -2", "a₄ = -2 - 3 = -5"], "answer": "Answer: 4, 1, -2, -5" }, { "id": "ch5-arithmetic-progressions_ex1_q8", "number": "(iv)", "question": "Q2. Write first four terms. (iv) a = -1, d = 12", "solution": ["a₁ = -1", "a₂ = -1 + 1", "a₃ = -1", "a₄ = 0 + 1"], "answer": "Answer: -1, -1" }, { "id": "ch5-arithmetic-progressions_ex1_q9", "number": "(v)", "question": "Q2. Write first four terms. (v) a = -1.25, d = -0.25", "solution": ["a₁ = -1.25", "a₂ = -1.25 - 0.25 = -1.50", "a₃ = -1.50 - 0.25 = -1.75", "a₄ = -1.75 - 0.25 = -2.00"], "answer": "Answer: -1.25, -1.50, -1.75, -2.00" }, { "id": "ch5-arithmetic-progressions_ex1_q10", "number": "(i)", "question": "Q3. Write first term (a) and common difference (d). (i) 3, 1, -1, -3...", "solution": ["a = 3", "d = 1 - 3 = -2"], "answer": "Answer: a = 3, d = -2" }, { "id": "ch5-arithmetic-progressions_ex1_q11", "number": "(ii)", "question": "Q3. Write first term (a) and common difference (d). (ii) -5, -1, 3, 7...", "solution": ["a = -5", "d = -1 - (-5) = -1 + 5 = 4"], "answer": "Answer: a = -5, d = 4" }, { "id": "ch5-arithmetic-progressions_ex1_q12", "number": "(iii)", "question": "Q3. Write first term (a) and common difference (d). (iii) 13, 53, 93...", "solution": ["a = 1", "d = 5"], "answer": "Answer: a = 1" }, { "id": "ch5-arithmetic-progressions_ex1_q13", "number": "(iv)", "question": "Q3. Write first term (a) and common difference (d). (iv) 0.6, 1.7, 2.8...", "solution": ["a = 0.6", "d = 1.7 - 0.6 = 1.1"], "answer": "Answer: a = 0.6, d = 1.1" }, { "id": "ch5-arithmetic-progressions_ex1_q14", "number": "(i)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (i) 2, 4, 8, 16...", "solution": ["4 - 2 = 2", "8 - 4 = 4", "Difference not same. Not AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q15", "number": "(ii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (ii) 2, 52, 3, 72...", "solution": ["5", "3 - 5", "Yes AP. d = 1", "Next: 7", "Next: 4 + 1", "Next: 9"], "answer": "Answer: Yes, 4, 9" }, { "id": "ch5-arithmetic-progressions_ex1_q16", "number": "(iii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (iii) -1.2, -3.2, -5.2...", "solution": ["-3.2 - (-1.2) = -2", "-5.2 - (-3.2) = -2", "Yes AP. d = -2", "Next: -7.2 - 2 = -9.2", "Next: -9.2 - 2 = -11.2", "Next: -11.2 - 2 = -13.2"], "answer": "Answer: Yes, -9.2, -11.2, -13.2" }, { "id": "ch5-arithmetic-progressions_ex1_q17", "number": "(iv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (iv) -10, -6, -2, 2...", "solution": ["-6 - (-10) = 4", "-2 - (-6) = 4", "Yes AP. d = 4", "Next: 2 + 4 = 6", "Next: 6 + 4 = 10", "Next: 10 + 4 = 14"], "answer": "Answer: Yes, 6, 10, 14" }, { "id": "ch5-arithmetic-progressions_ex1_q18", "number": "(v)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (v) 3, 3+√2, 3+2√2...", "solution": ["(3+√2) - 3 = √2", "(3+2√2) - (3+√2) = √2", "Yes AP. d = √2", "Next: 3+3√2 + √2 = 3+4√2", "Next: 3+4√2 + √2 = 3+5√2", "Next: 3+5√2 + √2 = 3+6√2"], "answer": "Answer: Yes, 3+4√2, 3+5√2, 3+6√2" }, { "id": "ch5-arithmetic-progressions_ex1_q19", "number": "(vi)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (vi) 0.2, 0.22, 0.222...", "solution": ["0.22 - 0.2 = 0.02", "0.222 - 0.22 = 0.002", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q20", "number": "(vii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (vii) 0, -4, -8...", "solution": ["-4 - 0 = -4", "-8 - (-4) = -4", "Yes AP. d = -4", "Next: -12 - 4 = -16", "Next: -16 - 4 = -20", "Next: -20 - 4 = -24"], "answer": "Answer: Yes, -16, -20, -24" }, { "id": "ch5-arithmetic-progressions_ex1_q21", "number": "(viii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (viii) -12, -12, -12...", "solution": ["Diff = 0. Yes AP. d = 0"], "answer": "Answer: Yes, -1" }, { "id": "ch5-arithmetic-progressions_ex1_q22", "number": "(ix)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (ix) 1, 3, 9, 27...", "solution": ["3 - 1 = 2", "9 - 3 = 6", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q23", "number": "(x)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (x) a, 2a, 3a, 4a...", "solution": ["2a - a = a", "3a - 2a = a", "Yes AP. d = a", "Next: 4a + a = 5a", "Next: 5a + a = 6a", "Next: 6a + a = 7a"], "answer": "Answer: Yes, 5a, 6a, 7a" }, { "id": "ch5-arithmetic-progressions_ex1_q24", "number": "(xi)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xi) a, a², a³, a⁴...", "solution": ["a² - a = a(a-1)", "a³ - a² = a²(a-1)", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q25", "number": "(xii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xii) √2, √8, √18, √32...", "solution": ["Simplify terms:", "√2, 2√2, 3√2, 4√2...", "2√2 - √2 = √2", "3√2 - 2√2 = √2", "Yes AP. d = √2", "Next: 4√2 + √2 = 5√2 = √50", "Next: 5√2 + √2 = 6√2 = √72", "Next: 6√2 + √2 = 7√2 = √98"], "answer": "Answer: Yes, √50, √72, √98" }, { "id": "ch5-arithmetic-progressions_ex1_q26", "number": "(xiii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xiii) √3, √6, √9, √12...", "solution": ["√6 - √3 = √3(√2 - 1)", "√9 - √6 = 3 - √6", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q27", "number": "(xiv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xiv) 1², 3², 5², 7²...", "solution": ["1, 9, 25, 49...", "9 - 1 = 8", "25 - 9 = 16", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q28", "number": "(xv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xv) 1², 5², 7², 73...", "solution": ["1, 25, 49, 73...", "25 - 1 = 24", "49 - 25 = 24", "73 - 49 = 24", "Yes AP. d = 24", "Next: 73 + 24 = 97", "Next: 97 + 24 = 121", "Next: 121 + 24 = 145"], "answer": "Answer: Yes, 97, 121, 145" }] }, { "id": "ex5.2", "name": "Exercise 5.2", "questions": [{ "id": "ch5-arithmetic-progressions_ex2_q1", "number": "(i)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (i) a = 7, d = 3, n = 8. Find aₙ.", "solution": ["aₙ = 7 + (8 - 1)3", "aₙ = 7 + (7)3", "aₙ = 7 + 21", "aₙ = 28"], "answer": "Answer: 28" }, { "id": "ch5-arithmetic-progressions_ex2_q2", "number": "(ii)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (ii) a = -18, n = 10, aₙ = 0. Find d.", "solution": ["0 = -18 + (10 - 1)d", "18 = 9d", "d = 18 ÷ 9", "d = 2"], "answer": "Answer: d = 2" }, { "id": "ch5-arithmetic-progressions_ex2_q3", "number": "(iii)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (iii) d = -3, n = 18, aₙ = -5. Find a.", "solution": ["-5 = a + (18 - 1)(-3)", "-5 = a + (17)(-3)", "-5 = a - 51", "a = -5 + 51", "a = 46"], "answer": "Answer: a = 46" }, { "id": "ch5-arithmetic-progressions_ex2_q4", "number": "(iv)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (iv) a = -18.9, d = 2.5, aₙ = 3.6. Find n.", "solution": ["3.6 = -18.9 + (n - 1)2.5", "3.6 + 18.9 = (n - 1)2.5", "22.5 = (n - 1)2.5", "n - 1 = 22.5 ÷ 2.5", "n - 1 = 9", "n = 9 + 1 = 10"], "answer": "Answer: n = 10" }, { "id": "ch5-arithmetic-progressions_ex2_q5", "number": "(v)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (v) a = 3.5, d = 0, n = 105. Find aₙ.", "solution": ["aₙ = 3.5 + (105 - 1)0", "aₙ = 3.5 + 0", "aₙ = 3.5"], "answer": "Answer: 3.5" }, { "id": "ch5-arithmetic-progressions_ex2_q6", "number": "(i)", "question": "Q2. Choose correct choice. (i) 30th term of AP: 10, 7, 4...", "solution": ["a = 10, d = 7 - 10 = -3, n = 30", "a₃₀ = 10 + (30 - 1)(-3)", "a₃₀ = 10 + 29(-3)", "a₃₀ = 10 - 87", "a₃₀ = -77"], "answer": "Answer: (C) -77" }, { "id": "ch5-arithmetic-progressions_ex2_q7", "number": "(ii)", "question": "Q2. Choose correct choice. (ii) 11th term of AP: -3, -12, 2...", "solution": ["a = -3, n = 11", "d = -1", "d = -1", "a₁₁ = -3 + (11 - 1)5", "a₁₁ = -3 + 10 × 5", "a₁₁ = -3 + 25", "a₁₁ = 22"], "answer": "Answer: (B) 22" }, { "id": "ch5-arithmetic-progressions_ex2_q8", "number": "(i)", "question": "Q3. Find missing terms in boxes. (i) 2, □, 26", "solution": ["a = 2, a₃ = 26", "a + 2d = 26", "2 + 2d = 26", "2d = 24", "d = 12", "Missing term = a + d = 2 + 12 = 14"], "answer": "Answer: 14" }, { "id": "ch5-arithmetic-progressions_ex2_q9", "number": "(ii)", "question": "Q3. Find missing terms in boxes. (ii) □, 13, □, 3", "solution": ["a₂ = a + d = 13", "a₄ = a + 3d = 3", "Subtracting eq(1) from eq(2):", "2d = -10", "d = -5", "a = 13 - d = 13 - (-5) = 18", "a₃ = a + 2d = 18 + 2(-5) = 8"], "answer": "Answer: 18, 8" }, { "id": "ch5-arithmetic-progressions_ex2_q10", "number": "(iii)", "question": "Q3. Find missing terms in boxes. (iii) 5, □, □, 912", "solution": ["a = 5, a₄ = 9.5 = 19", "a + 3d = 19", "5 + 3d = 19", "3d = 19", "d = 3", "a₂ = 5 + 3", "a₃ = 13"], "answer": "Answer: 61" }, { "id": "ch5-arithmetic-progressions_ex2_q11", "number": "(iv)", "question": "Q3. Find missing terms in boxes. (iv) -4, □, □, □, □, 6", "solution": ["a = -4, a₆ = 6", "a + 5d = 6", "-4 + 5d = 6", "5d = 10 → d = 2", "Terms: -2, 0, 2, 4"], "answer": "Answer: -2, 0, 2, 4" }, { "id": "ch5-arithmetic-progressions_ex2_q12", "number": "(v)", "question": "Q3. Find missing terms in boxes. (v) □, 38, □, □, □, -22", "solution": ["a₂ = a + d = 38", "a₆ = a + 5d = -22", "Subtracting: 4d = -60 → d = -15", "a = 38 - (-15) = 53", "a₃ = 38 - 15 = 23", "a₄ = 23 - 15 = 8", "a₅ = 8 - 15 = -7"], "answer": "Answer: 53, 23, 8, -7" }, { "id": "ch5-arithmetic-progressions_ex2_q13", "number": "Q4.", "question": "Q4. Which term of the AP: 3, 8, 13, 18... is 78?", "solution": ["a = 3, d = 8 - 3 = 5, aₙ = 78", "78 = 3 + (n - 1)5", "75 = (n - 1)5", "15 = n - 1", "n = 16"], "answer": "Answer: 16th term" }, { "id": "ch5-arithmetic-progressions_ex2_q14", "number": "(i)", "question": "Q5. Find number of terms. (i) 7, 13, 19, ..., 205", "solution": ["a = 7, d = 6, aₙ = 205", "205 = 7 + (n - 1)6", "198 = (n - 1)6", "33 = n - 1", "n = 34"], "answer": "Answer: 34 terms" }, { "id": "ch5-arithmetic-progressions_ex2_q15", "number": "(ii)", "question": "Q5. Find number of terms. (ii) 18, 1512, 13, ..., -47", "solution": ["a = 18, aₙ = -47", "d = 15.5 - 18 = -2.5 = -5", "-47 = 18 + (n - 1)(-5", "-65 = (n - 1)(-5", "-65 × -2", "26 = n - 1", "n = 27"], "answer": "Answer: 27 terms" }, { "id": "ch5-arithmetic-progressions_ex2_q16", "number": "Q6.", "question": "Q6. Check if -150 is a term of 11, 8, 5, 2...", "solution": ["a = 11, d = -3", "-150 = 11 + (n - 1)(-3)", "-161 = (n - 1)(-3)", "n - 1 = 161/3", "161 is not divisible by 3.", "So n is not an integer."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex2_q17", "number": "Q7.", "question": "Q7. Find 31st term if 11th term is 38 and 16th term is 73.", "solution": ["a₁₁ = a + 10d = 38", "a₁₆ = a + 15d = 73", "Subtracting: 5d = 35 → d = 7", "a + 10(7) = 38", "a = 38 - 70 = -32", "a₃₁ = a + 30d", "a₃₁ = -32 + 30(7)", "a₃₁ = -32 + 210 = 178"], "answer": "Answer: 178" }, { "id": "ch5-arithmetic-progressions_ex2_q18", "number": "Q8.", "question": "Q8. AP of 50 terms. 3rd term = 12, Last term = 106. Find 29th term.", "solution": ["Total terms n = 50. So a₅₀ = 106.", "a₃ = a + 2d = 12", "a₅₀ = a + 49d = 106", "Subtracting: 47d = 94 → d = 2", "a + 2(2) = 12 → a = 8", "a₂₉ = a + 28d", "a₂₉ = 8 + 28(2)", "a₂₉ = 8 + 56 = 64"], "answer": "Answer: 64" }, { "id": "ch5-arithmetic-progressions_ex2_q19", "number": "Q9.", "question": "Q9. 3rd term is 4, 9th term is -8. Which term is 0?", "solution": ["a₃ = a + 2d = 4", "a₉ = a + 8d = -8", "Subtracting (2)-(1): 6d = -12", "d = -2", "a + 2(-2) = 4 → a - 4 = 4 → a = 8", "Let nth term be 0.", "0 = 8 + (n - 1)(-2)", "-8 = (n - 1)(-2)", "4 = n - 1", "n = 5"], "answer": "Answer: 5th term" }, { "id": "ch5-arithmetic-progressions_ex2_q20", "number": "Q10.", "question": "Q10. 17th term exceeds 10th term by 7. Find common difference.", "solution": ["a₁₇ - a₁₀ = 7", "(a + 16d) - (a + 9d) = 7", "a + 16d - a - 9d = 7", "7d = 7", "d = 1"], "answer": "Answer: 1" }, { "id": "ch5-arithmetic-progressions_ex2_q21", "number": "Q11.", "question": "Q11. Which term of 3, 15, 27, 39... will be 132 more than 54th term?", "solution": ["a = 3, d = 12", "a₅₄ = 3 + 53(12)", "a₅₄ = 3 + 636 = 639", "Required term = 639 + 132 = 771", "771 = 3 + (n - 1)12", "768 = (n - 1)12", "64 = n - 1", "n = 65"], "answer": "Answer: 65th term" }, { "id": "ch5-arithmetic-progressions_ex2_q22", "number": "Q12.", "question": "Q12. Two APs have same common difference. Diff between 100th terms is 100. Diff between 1000th terms?", "solution": ["Let APs be a, a+d... and A, A+d...", "Diff between nth terms = (A + (n-1)d) - (a + (n-1)d)", "= A - a (constant difference)", "Given diff between 100th terms = 100.", "So A - a = 100.", "Diff between 1000th terms will also be A - a.", "So difference is 100."], "answer": "Answer: 100" }, { "id": "ch5-arithmetic-progressions_ex2_q23", "number": "Q13.", "question": "Q13. How many 3-digit numbers are divisible by 7?", "solution": ["3-digit numbers: 100 to 999.", "First divisible by 7: 105 (7 × 15)", "Last divisible by 7: 994 (7 × 142)", "AP: 105, 112, ..., 994", "a = 105, d = 7, aₙ = 994", "994 = 105 + (n - 1)7", "889 = (n - 1)7", "127 = n - 1", "n = 128"], "answer": "Answer: 128" }, { "id": "ch5-arithmetic-progressions_ex2_q24", "number": "Q14.", "question": "Q14. How many multiples of 4 lie between 10 and 250?", "solution": ["First multiple > 10 is 12.", "Last multiple", "AP: 12, 16, ..., 248", "a = 12, d = 4, aₙ = 248", "248 = 12 + (n - 1)4", "236 = (n - 1)4", "59 = n - 1", "n = 60"], "answer": "Answer: 60" }, { "id": "ch5-arithmetic-progressions_ex2_q25", "number": "Q15.", "question": "Q15. For what value of n, terms of 63, 65, 67... and 3, 10, 17... are equal?", "solution": ["AP1: a = 63, d = 2 → nth term = 63 + (n-1)2", "AP2: a = 3, d = 7 → nth term = 3 + (n-1)7", "Equal: 63 + 2n - 2 = 3 + 7n - 7", "61 + 2n = 7n - 4", "65 = 5n", "n = 13"], "answer": "Answer: 13" }, { "id": "ch5-arithmetic-progressions_ex2_q26", "number": "Q16.", "question": "Q16. Determine AP: 3rd term is 16, 7th term exceeds 5th by 12.", "solution": ["a₃ = 16", "a₇ - a₅ = 12", "(a + 6d) - (a + 4d) = 12", "2d = 12 → d = 6", "a₃ = a + 2d = 16", "a + 2(6) = 16", "a + 12 = 16 → a = 4", "AP: 4, 10, 16, 22..."], "answer": "Answer: 4, 10, 16, 22..." }, { "id": "ch5-arithmetic-progressions_ex2_q27", "number": "Q17.", "question": "Q17. Find the 20th term from the last term of the AP: 3, 8, 13, ..., 253.", "solution": ["For last term, we reverse the AP.", "New AP: 253, ..., 13, 8, 3", "a = 253, d = 3 - 8 = -5", "Find 20th term (a₂₀).", "a₂₀ = a + 19d", "a₂₀ = 253 + 19(-5)", "a₂₀ = 253 - 95", "a₂₀ = 158"], "answer": "Answer: 158" }, { "id": "ch5-arithmetic-progressions_ex2_q28", "number": "Q18.", "question": "Q18. Sum of 4th and 8th terms is 24. Sum of 6th and 10th terms is 44. Find AP.", "solution": ["a₄ + a₈ = 24", "(a + 3d) + (a + 7d) = 24", "2a + 10d = 24 → a + 5d = 12 ...(1)", "a₆ + a₁₀ = 44", "(a + 5d) + (a + 9d) = 44", "2a + 14d = 44 → a + 7d = 22 ...(2)", "Subtracting (1) from (2):", "2d = 10 → d = 5", "From (1): a + 5(5) = 12", "a + 25 = 12 → a = -13", "Terms: -13, -8, -3..."], "answer": "Answer: -13, -8, -3..." }, { "id": "ch5-arithmetic-progressions_ex2_q29", "number": "Q19.", "question": "Q19. Subba Rao started at ₹ 5000 (1995), increment ₹ 200. When ₹ 7000?", "solution": ["a = 5000, d = 200, aₙ = 7000", "7000 = 5000 + (n - 1)200", "2000 = (n - 1)200", "10 = n - 1", "n = 11", "Year = 1995 + 10 = 2005 (11th year)"], "answer": "Answer: In 11th year (2005)" }, { "id": "ch5-arithmetic-progressions_ex2_q30", "number": "Q20.", "question": "Q20. Ramkali saved ₹ 5 first week, increased by ₹ 1.75. nth week ₹ 20.75. Find n.", "solution": ["a = 5, d = 1.75, aₙ = 20.75", "20.75 = 5 + (n - 1)1.75", "15.75 = (n - 1)1.75", "n - 1 = 15.75 ÷ 1.75", "n - 1 = 1575 ÷ 175", "n - 1 = 9", "n = 10"], "answer": "Answer: n = 10" }] }, { "id": "ex5.3", "name": "Exercise 5.3", "questions": [{ "id": "ch5-arithmetic-progressions_ex3_q1", "number": "(i)", "question": "Q1. Find the sum of the following APs: (i) 2, 7, 12..., to 10 terms.", "solution": ["a = 2, d = 7 - 2 = 5, n = 10", "Sâ‚â‚€ = 10", "Sâ‚â‚€ = 5[4 + 9(5)]", "Sâ‚â‚€ = 5[4 + 45]", "Sâ‚â‚€ = 5(49)", "Sâ‚â‚€ = 245"], "answer": "Answer: 245" }, { "id": "ch5-arithmetic-progressions_ex3_q2", "number": "(ii)", "question": "Q1. Find the sum of the following APs: (ii) -37, -33, -29..., to 12 terms.", "solution": ["a = -37, d = -33 - (-37) = 4, n = 12", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6[-74 + 11(4)]", "Sâ‚â‚‚ = 6[-74 + 44]", "Sâ‚â‚‚ = 6(-30)", "Sâ‚â‚‚ = -180"], "answer": "Answer: -180" }, { "id": "ch5-arithmetic-progressions_ex3_q3", "number": "(iii)", "question": "Q1. Find the sum of the following APs: (iii) 0.6, 1.7, 2.8..., to 100 terms.", "solution": ["a = 0.6, d = 1.1, n = 100", "Sâ‚â‚€â‚€ = 100", "Sâ‚â‚€â‚€ = 50[1.2 + 99(1.1)]", "Sâ‚â‚€â‚€ = 50[1.2 + 108.9]", "Sâ‚â‚€â‚€ = 50(110.1)", "Sâ‚â‚€â‚€ = 5505"], "answer": "Answer: 5505" }, { "id": "ch5-arithmetic-progressions_ex3_q4", "number": "(iv)", "question": "Q1. Find the sum of the following APs: (iv) 115, 112, 110..., to 11 terms.", "solution": ["a = 1", "d = 1", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11"], "answer": "Answer: 33" }, { "id": "ch5-arithmetic-progressions_ex3_q5", "number": "(i)", "question": "Q2. Find the sums given below: (i) 7 + 1012 + 14 + ... + 84", "solution": ["a = 7, d = 3.5 = 7", "84 = 7 + (n - 1)7", "77 = (n - 1)7", "22 = n - 1 â†’ n = 23", "Sâ‚‚â‚ƒ = 23", "Sâ‚‚â‚ƒ = 23"], "answer": "Answer: 10461" }, { "id": "ch5-arithmetic-progressions_ex3_q6", "number": "(ii)", "question": "Q2. Find the sums given below: (ii) 34 + 32 + 30 + ... + 10", "solution": ["a = 34, d = -2, aâ‚™ = 10", "10 = 34 + (n - 1)(-2)", "-24 = (n - 1)(-2)", "12 = n - 1 â†’ n = 13", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 286"], "answer": "Answer: 286" }, { "id": "ch5-arithmetic-progressions_ex3_q7", "number": "(iii)", "question": "Q2. Find the sums given below: (iii) -5 + (-8) + (-11) + ... + (-230)", "solution": ["a = -5, d = -3, aâ‚™ = -230", "-230 = -5 + (n - 1)(-3)", "-225 = (n - 1)(-3)", "75 = n - 1 â†’ n = 76", "Sâ‚‡â‚† = 76", "Sâ‚‡â‚† = 38(-235)", "Sâ‚‡â‚† = -8930"], "answer": "Answer: -8930" }, { "id": "ch5-arithmetic-progressions_ex3_q8", "number": "(i)", "question": "Q3. In an AP: (i) a = 5, d = 3, aâ‚™ = 50. Find n and Sâ‚™.", "solution": ["50 = 5 + (n - 1)3", "45 = (n - 1)3", "15 = n - 1 â†’ n = 16", "Sâ‚â‚† = 16", "Sâ‚â‚† = 8(55) = 440"], "answer": "Answer: n = 16, Sâ‚™ = 440" }, { "id": "ch5-arithmetic-progressions_ex3_q9", "number": "(ii)", "question": "Q3. In an AP: (ii) a = 7, aâ‚â‚ƒ = 35. Find d and Sâ‚â‚ƒ.", "solution": ["aâ‚â‚ƒ = a + 12d = 35", "7 + 12d = 35", "12d = 28", "d = 28", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 13"], "answer": "Answer: d = 7" }, { "id": "ch5-arithmetic-progressions_ex3_q10", "number": "(iii)", "question": "Q3. In an AP: (iii) aâ‚â‚‚ = 37, d = 3. Find a and Sâ‚â‚‚.", "solution": ["a + 11d = 37", "a + 11(3) = 37", "a + 33 = 37 â†’ a = 4", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6(41) = 246"], "answer": "Answer: a = 4, Sâ‚â‚‚ = 246" }, { "id": "ch5-arithmetic-progressions_ex3_q11", "number": "(iv)", "question": "Q3. In an AP: (iv) aâ‚ƒ = 15, Sâ‚â‚€ = 125. Find d and aâ‚â‚€.", "solution": ["a + 2d = 15 ...(1)", "Sâ‚â‚€ = 10", "5[2a + 9d] = 125", "2a + 9d = 25 ...(2)", "From (1), 2a + 4d = 30 ...(Multiply by 2)", "Subtracting: 5d = -5 â†’ d = -1", "a = 15 - 2(-1) = 17", "aâ‚â‚€ = a + 9d = 17 + 9(-1) = 8"], "answer": "Answer: d = -1, aâ‚â‚€ = 8" }, { "id": "ch5-arithmetic-progressions_ex3_q12", "number": "(v)", "question": "Q3. In an AP: (v) d = 5, Sâ‚‰ = 75. Find a and aâ‚‰.", "solution": ["Sâ‚‰ = 9", "9", "9(a + 20) = 75", "9a + 180 = 75", "9a = -105", "a = -35", "aâ‚‰ = a + 8d = -35", "aâ‚‰ = -35 + 120"], "answer": "Answer: a = -35" }, { "id": "ch5-arithmetic-progressions_ex3_q13", "number": "(vi)", "question": "Q3. In an AP: (vi) a = 2, d = 8, Sâ‚™ = 90. Find n and aâ‚™.", "solution": ["90 = n", "180 = n[4 + 8n - 8]", "180 = n[8n - 4]", "180 = 8nÂ² - 4n", "2nÂ² - n - 45 = 0", "2nÂ² - 10n + 9n - 45 = 0", "2n(n - 5) + 9(n - 5) = 0", "(n - 5)(2n + 9) = 0", "n = 5", "aâ‚… = 2 + 4(8) = 34"], "answer": "Answer: n = 5, aâ‚™ = 34" }, { "id": "ch5-arithmetic-progressions_ex3_q14", "number": "(vii)", "question": "Q3. In an AP: (vii) a = 8, aâ‚™ = 62, Sâ‚™ = 210. Find n and d.", "solution": ["Sâ‚™ = n", "210 = n", "210 = n", "210 = 35n â†’ n = 6", "aâ‚† = a + 5d = 62", "8 + 5d = 62", "5d = 54 â†’ d = 54"], "answer": "Answer: n = 6, d = 54" }, { "id": "ch5-arithmetic-progressions_ex3_q15", "number": "(viii)", "question": "Q3. In an AP: (viii) aâ‚™ = 4, d = 2, Sâ‚™ = -14. Find n and a.", "solution": ["a + (n - 1)2 = 4", "a + 2n - 2 = 4 â†’ a = 6 - 2n ...(1)", "Sâ‚™ = n", "n(a + 4) = -28", "Substitute (1): n(6 - 2n + 4) = -28", "n(10 - 2n) = -28", "10n - 2nÂ² = -28", "2nÂ² - 10n - 28 = 0", "nÂ² - 5n - 14 = 0", "(n - 7)(n + 2) = 0", "n = 7", "a = 6 - 2(7) = -8"], "answer": "Answer: n = 7, a = -8" }, { "id": "ch5-arithmetic-progressions_ex3_q16", "number": "(ix)", "question": "Q3. In an AP: (ix) a = 3, n = 8, S = 192. Find d.", "solution": ["192 = 8", "192 = 4[6 + 7d]", "48 = 6 + 7d", "7d = 42 â†’ d = 6"], "answer": "Answer: d = 6" }, { "id": "ch5-arithmetic-progressions_ex3_q17", "number": "(x)", "question": "Q3. In an AP: (x) l = 28, S = 144, n = 9. Find a.", "solution": ["S = n", "144 = 9", "32 = a + 28", "a = 4"], "answer": "Answer: a = 4" }, { "id": "ch5-arithmetic-progressions_ex3_q18", "number": "Q4.", "question": "Q4. How many terms of 9, 17, 25... needed to give sum 636?", "solution": ["a = 9, d = 8, Sâ‚™ = 636", "636 = n", "1272 = n[18 + 8n - 8]", "1272 = n[10 + 8n]", "8nÂ² + 10n - 1272 = 0", "4nÂ² + 5n - 636 = 0", "bÂ² - 4ac = 25 - 4(4)(-636) = 25 + 10176 = 10201", "âˆšD = 101", "n = -5 Â± 101", "n = 12 (positive)"], "answer": "Answer: 12 terms" }, { "id": "ch5-arithmetic-progressions_ex3_q19", "number": "Q5.", "question": "Q5. First term 5, last 45, sum 400. Find n and d.", "solution": ["a = 5, l = 45, S = 400", "400 = n", "800 = 50n â†’ n = 16", "l = a + 15d = 45", "5 + 15d = 45", "15d = 40 â†’ d = 40"], "answer": "Answer: n = 16, d = 8" }, { "id": "ch5-arithmetic-progressions_ex3_q20", "number": "Q6.", "question": "Q6. First 17, last 350, d = 9. Find n and Sum.", "solution": ["a = 17, l = aâ‚™ = 350, d = 9", "350 = 17 + (n - 1)9", "333 = (n - 1)9", "37 = n - 1 â†’ n = 38", "S = 38", "S = 19(367)", "S = 6973"], "answer": "Answer: n = 38, Sum = 6973" }, { "id": "ch5-arithmetic-progressions_ex3_q21", "number": "Q7.", "question": "Q7. Find sum of first 22 terms if d = 7, 22nd term = 149.", "solution": ["aâ‚‚â‚‚ = a + 21d = 149", "a + 21(7) = 149", "a + 147 = 149 â†’ a = 2", "Sâ‚‚â‚‚ = 22", "Sâ‚‚â‚‚ = 11(151) = 1661"], "answer": "Answer: 1661" }, { "id": "ch5-arithmetic-progressions_ex3_q22", "number": "Q8.", "question": "Q8. Sum of first 51 terms if 2nd term 14, 3rd 18.", "solution": ["d = aâ‚ƒ - aâ‚‚ = 18 - 14 = 4", "a = aâ‚‚ - d = 14 - 4 = 10", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 5610"], "answer": "Answer: 5610" }, { "id": "ch5-arithmetic-progressions_ex3_q23", "number": "Q9.", "question": "Q9. Sum of 7 terms is 49, sum of 17 terms is 289. Find sum of n terms.", "solution": ["Sâ‚‡ = 49 â†’ 7", "7(a+3d) = 49 â†’ a + 3d = 7 ...(1)", "Sâ‚â‚‡ = 289 â†’ 17", "17(a+8d) = 289 â†’ a + 8d = 17 ...(2)", "Subtracting (1) from (2): 5d = 10 â†’ d = 2", "a + 6 = 7 â†’ a = 1", "Sâ‚™ = n", "Sâ‚™ = n", "Sâ‚™ = n"], "answer": "Answer: nÂ²" }, { "id": "ch5-arithmetic-progressions_ex3_q24", "number": "(i)", "question": "Q10. Show aâ‚, aâ‚‚... form AP defined by aâ‚™. Find Sâ‚â‚…. (i) aâ‚™ = 3 + 4n", "solution": ["aâ‚ = 7, aâ‚‚ = 11, aâ‚ƒ = 15", "Diff = 4. It is an AP.", "a = 7, d = 4", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15"], "answer": "Answer: 525" }, { "id": "ch5-arithmetic-progressions_ex3_q25", "number": "(ii)", "question": "Q10. Show aâ‚, aâ‚‚... form AP defined by aâ‚™. Find Sâ‚â‚…. (ii) aâ‚™ = 9 - 5n", "solution": ["aâ‚ = 4, aâ‚‚ = -1, aâ‚ƒ = -6", "Diff = -5. It is an AP.", "a = 4, d = -5", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15"], "answer": "Answer: -465" }, { "id": "ch5-arithmetic-progressions_ex3_q26", "number": "Q11.", "question": "Q11. Sum of first n terms is 4n - nÂ². Find Sâ‚, Sâ‚‚, 2nd term, 3rd, 10th, nth terms.", "solution": ["Sâ‚™ = 4n - nÂ²", "Sâ‚ = 4(1) - 1Â² = 3 (First term a is Sâ‚)", "Sâ‚‚ = 4(2) - 2Â² = 8 - 4 = 4", "aâ‚‚ = Sâ‚‚ - Sâ‚ = 4 - 3 = 1", "aâ‚ƒ = Sâ‚ƒ - Sâ‚‚", "Sâ‚ƒ = 4(3) - 3Â² = 12 - 9 = 3", "aâ‚ƒ = 3 - 4 = -1", "aâ‚â‚€ = Sâ‚â‚€ - Sâ‚‰", "Sâ‚â‚€ = 40 - 100 = -60", "Sâ‚‰ = 36 - 81 = -45", "aâ‚â‚€ = -60 - (-45) = -15", "aâ‚™ = Sâ‚™ - Sâ‚™â‚‹â‚", "aâ‚™ = (4n - nÂ²) - [4(n - 1) - (n - 1)Â²]", "aâ‚™ = 4n - nÂ² - [4n - 4 - (nÂ² - 2n + 1)]", "aâ‚™ = 4n - nÂ² - 4n + 4 + nÂ² - 2n + 1", "aâ‚™ = 5 - 2n"], "answer": "Answer: Sâ‚=3, Sâ‚‚=4, aâ‚‚=1, aâ‚ƒ=-1, aâ‚â‚€=-15, aâ‚™=5-2n" }, { "id": "ch5-arithmetic-progressions_ex3_q27", "number": "Q12.", "question": "Q12. Sum of first 40 positive integers divisible by 6.", "solution": ["AP: 6, 12, 18, ... (40 terms)", "a = 6, d = 6, n = 40", "Sâ‚„â‚€ = 40", "Sâ‚„â‚€ = 20[12 + 234]", "Sâ‚„â‚€ = 20(246)", "Sâ‚„â‚€ = 4920"], "answer": "Answer: 4920" }, { "id": "ch5-arithmetic-progressions_ex3_q28", "number": "Q13.", "question": "Q13. Sum of first 15 multiples of 8.", "solution": ["AP: 8, 16, 24, ... (15 terms)", "a = 8, d = 8, n = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15(64)", "Sâ‚â‚… = 960"], "answer": "Answer: 960" }, { "id": "ch5-arithmetic-progressions_ex3_q29", "number": "Q14.", "question": "Q14. Sum of odd numbers between 0 and 50.", "solution": ["Odd numbers: 1, 3, 5, ..., 49", "a = 1, l = 49, d = 2", "49 = 1 + (n - 1)2 â†’ 48 = 2(n - 1) â†’ 24 = n - 1 â†’ n = 25", "Sâ‚‚â‚… = 25", "Sâ‚‚â‚… = 25", "Sâ‚‚â‚… = 625"], "answer": "Answer: 625" }, { "id": "ch5-arithmetic-progressions_ex3_q30", "number": "Q15.", "question": "Q15. Penalty for delay: â‚¹ 200, â‚¹ 250, â‚¹ 300... for 30 days.", "solution": ["a = 200, d = 50, n = 30", "Sâ‚ƒâ‚€ = 30", "Sâ‚ƒâ‚€ = 15[400 + 1450]", "Sâ‚ƒâ‚€ = 15(1850)", "Sâ‚ƒâ‚€ = 27750"], "answer": "Answer: â‚¹ 27750" }, { "id": "ch5-arithmetic-progressions_ex3_q31", "number": "Q16.", "question": "Q16. Sum â‚¹ 700 for 7 prizes. Each prize â‚¹ 20 less than preceding. Find prizes.", "solution": ["Let prizes be a, a-20, a-40...", "Sâ‚‡ = 700, n = 7, d = -20", "700 = 7", "200 = 2a - 120 (Divide by 3.5 is 200)", "Wait, 700/3.5 = 200. Yes. Or 700 = 7/2(...). 1400 = 7(...). 200 = 2a - 120.", "320 = 2a â†’ a = 160", "Prizes: 160, 140, 120, 100, 80, 60, 40"], "answer": "Answer: â‚¹ 160, 140, 120, 100, 80, 60, 40" }, { "id": "ch5-arithmetic-progressions_ex3_q32", "number": "Q17.", "question": "Q17. Planting trees. Class I plants 1, Class II plants 2... Class XII plants 12. 3 sections each.", "solution": ["Class I: 3 Ã— 1 = 3", "Class II: 3 Ã— 2 = 6", "... Class XII: 3 Ã— 12 = 36", "AP: 3, 6, ..., 36 (12 terms)", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6(39)", "Sâ‚â‚‚ = 234"], "answer": "Answer: 234 trees" }, { "id": "ch5-arithmetic-progressions_ex3_q33", "number": "Q18.", "question": "Q18. Spiral of semicircles. Radii 0.5, 1.0, 1.5... Total length of 13 spirals?", "solution": ["Perimeter of semicircle = Ï€r", "lâ‚ = Ï€(0.5), lâ‚‚ = Ï€(1.0), lâ‚ƒ = Ï€(1.5)...", "Total Length L = Ï€(0.5) + Ï€(1.0) + ... (13 terms)", "L = Ï€[0.5 + 1.0 + ... ]", "Inside bracket is AP: a = 0.5, d = 0.5, n = 13", "Sum = 13", "Sum = 13", "Total L = Ï€ Ã— 91", "L = 22", "L = 11 Ã— 13 = 143"], "answer": "Answer: 143 cm" }, { "id": "ch5-arithmetic-progressions_ex3_q34", "number": "Q19.", "question": "Q19. 200 logs stacked. 20 bottom, 19 next... How many rows? Top row logs?", "solution": ["AP: 20, 19, 18... Sum = 200", "a = 20, d = -1, Sâ‚™ = 200", "200 = n", "400 = n[40 - n + 1]", "400 = n[41 - n]", "nÂ² - 41n + 400 = 0", "Factors of 400 summing to 41: 16 and 25", "(n - 16)(n - 25) = 0", "n = 16 or n = 25", "If n = 25: aâ‚‚â‚… = 20 + 24(-1) = -4 (Negative logs impossible)", "So n = 16", "Top row (aâ‚â‚†) = 20 + 15(-1) = 5"], "answer": "Answer: 16 rows, 5 logs in top row" }, { "id": "ch5-arithmetic-progressions_ex3_q35", "number": "Q20.", "question": "Q20. Potato race. 5m first, then 3m apart. 10 potatoes. Total distance run?", "solution": ["Run to 1st: 2 Ã— 5 = 10 m", "Run to 2nd: 2 Ã— (5 + 3) = 16 m", "Run to 3rd: 2 Ã— (5 + 6) = 22 m", "AP: 10, 16, 22... (10 terms)", "a = 10, d = 6, n = 10", "Sâ‚â‚€ = 10", "Sâ‚â‚€ = 5[20 + 54]", "Sâ‚â‚€ = 5(74)", "Sâ‚â‚€ = 370"], "answer": "Answer: 370 m" }] }],
+    exercises: [{ "id": "ex5.1", "name": "Exercise 5.1", "questions": [{ "id": "ch5-arithmetic-progressions_ex1_q1", "number": "(i)", "question": "Q1. In which situations does the list of numbers make an AP? (i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.", "solution": ["Fare for 1st km = 15", "Fare for 2nd km = 15 + 8 = 23", "Fare for 3rd km = 23 + 8 = 31", "List: 15, 23, 31, ...", "Difference = 23 - 15 = 8", "Difference = 31 - 23 = 8", "Difference is same."], "answer": "Answer: Yes" }, { "id": "ch5-arithmetic-progressions_ex1_q2", "number": "(ii)", "question": "Q1. In which situations does the list of numbers make an AP? (ii) Air in cylinder: Removes 14 of remaining air.", "solution": ["Initial air = 1", "Removed 1st time = 1", "Remaining = 1 - 1", "Removed 2nd time = 1", "Remaining = 3", "= 12 - 3", "d₁ = 3", "d₂ = 9", "Difference is not same."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q3", "number": "(iii)", "question": "Q1. In which situations does the list of numbers make an AP? (iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.", "solution": ["1st metre = 150", "2nd metre = 150 + 50 = 200", "3rd metre = 200 + 50 = 250", "Difference = 50 (constant)."], "answer": "Answer: Yes" }, { "id": "ch5-arithmetic-progressions_ex1_q4", "number": "(iv)", "question": "Q1. In which situations does the list of numbers make an AP? (iv) Compound interest: ₹ 10000 at 8% per annum.", "solution": ["Amount = P(1 + R", "Calculating amounts for each year.", "Interest is on increasing amount.", "So difference keeps increasing.", "Difference is not same."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q5", "number": "(i)", "question": "Q2. Write first four terms. (i) a = 10, d = 10", "solution": ["a₁ = 10", "a₂ = 10 + 10 = 20", "a₃ = 20 + 10 = 30", "a₄ = 30 + 10 = 40"], "answer": "Answer: 10, 20, 30, 40" }, { "id": "ch5-arithmetic-progressions_ex1_q6", "number": "(ii)", "question": "Q2. Write first four terms. (ii) a = -2, d = 0", "solution": ["a₁ = -2", "a₂ = -2 + 0 = -2", "a₃ = -2", "a₄ = -2"], "answer": "Answer: -2, -2, -2, -2" }, { "id": "ch5-arithmetic-progressions_ex1_q7", "number": "(iii)", "question": "Q2. Write first four terms. (iii) a = 4, d = -3", "solution": ["a₁ = 4", "a₂ = 4 - 3 = 1", "a₃ = 1 - 3 = -2", "a₄ = -2 - 3 = -5"], "answer": "Answer: 4, 1, -2, -5" }, { "id": "ch5-arithmetic-progressions_ex1_q8", "number": "(iv)", "question": "Q2. Write first four terms. (iv) a = -1, d = 12", "solution": ["a₁ = -1", "a₂ = -1 + 1", "a₃ = -1", "a₄ = 0 + 1"], "answer": "Answer: -1, -1" }, { "id": "ch5-arithmetic-progressions_ex1_q9", "number": "(v)", "question": "Q2. Write first four terms. (v) a = -1.25, d = -0.25", "solution": ["a₁ = -1.25", "a₂ = -1.25 - 0.25 = -1.50", "a₃ = -1.50 - 0.25 = -1.75", "a₄ = -1.75 - 0.25 = -2.00"], "answer": "Answer: -1.25, -1.50, -1.75, -2.00" }, { "id": "ch5-arithmetic-progressions_ex1_q10", "number": "(i)", "question": "Q3. Write first term (a) and common difference (d). (i) 3, 1, -1, -3...", "solution": ["a = 3", "d = 1 - 3 = -2"], "answer": "Answer: a = 3, d = -2" }, { "id": "ch5-arithmetic-progressions_ex1_q11", "number": "(ii)", "question": "Q3. Write first term (a) and common difference (d). (ii) -5, -1, 3, 7...", "solution": ["a = -5", "d = -1 - (-5) = -1 + 5 = 4"], "answer": "Answer: a = -5, d = 4" }, { "id": "ch5-arithmetic-progressions_ex1_q12", "number": "(iii)", "question": "Q3. Write first term (a) and common difference (d). (iii) 13, 53, 93...", "solution": ["a = 1", "d = 5"], "answer": "Answer: a = 1" }, { "id": "ch5-arithmetic-progressions_ex1_q13", "number": "(iv)", "question": "Q3. Write first term (a) and common difference (d). (iv) 0.6, 1.7, 2.8...", "solution": ["a = 0.6", "d = 1.7 - 0.6 = 1.1"], "answer": "Answer: a = 0.6, d = 1.1" }, { "id": "ch5-arithmetic-progressions_ex1_q14", "number": "(i)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (i) 2, 4, 8, 16...", "solution": ["4 - 2 = 2", "8 - 4 = 4", "Difference not same. Not AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q15", "number": "(ii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (ii) 2, 52, 3, 72...", "solution": ["5", "3 - 5", "Yes AP. d = 1", "Next: 7", "Next: 4 + 1", "Next: 9"], "answer": "Answer: Yes, 4, 9" }, { "id": "ch5-arithmetic-progressions_ex1_q16", "number": "(iii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (iii) -1.2, -3.2, -5.2...", "solution": ["-3.2 - (-1.2) = -2", "-5.2 - (-3.2) = -2", "Yes AP. d = -2", "Next: -7.2 - 2 = -9.2", "Next: -9.2 - 2 = -11.2", "Next: -11.2 - 2 = -13.2"], "answer": "Answer: Yes, -9.2, -11.2, -13.2" }, { "id": "ch5-arithmetic-progressions_ex1_q17", "number": "(iv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (iv) -10, -6, -2, 2...", "solution": ["-6 - (-10) = 4", "-2 - (-6) = 4", "Yes AP. d = 4", "Next: 2 + 4 = 6", "Next: 6 + 4 = 10", "Next: 10 + 4 = 14"], "answer": "Answer: Yes, 6, 10, 14" }, { "id": "ch5-arithmetic-progressions_ex1_q18", "number": "(v)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (v) 3, 3+√2, 3+2√2...", "solution": ["(3+√2) - 3 = √2", "(3+2√2) - (3+√2) = √2", "Yes AP. d = √2", "Next: 3+3√2 + √2 = 3+4√2", "Next: 3+4√2 + √2 = 3+5√2", "Next: 3+5√2 + √2 = 3+6√2"], "answer": "Answer: Yes, 3+4√2, 3+5√2, 3+6√2" }, { "id": "ch5-arithmetic-progressions_ex1_q19", "number": "(vi)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (vi) 0.2, 0.22, 0.222...", "solution": ["0.22 - 0.2 = 0.02", "0.222 - 0.22 = 0.002", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q20", "number": "(vii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (vii) 0, -4, -8...", "solution": ["-4 - 0 = -4", "-8 - (-4) = -4", "Yes AP. d = -4", "Next: -12 - 4 = -16", "Next: -16 - 4 = -20", "Next: -20 - 4 = -24"], "answer": "Answer: Yes, -16, -20, -24" }, { "id": "ch5-arithmetic-progressions_ex1_q21", "number": "(viii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (viii) -12, -12, -12...", "solution": ["Diff = 0. Yes AP. d = 0"], "answer": "Answer: Yes, -1" }, { "id": "ch5-arithmetic-progressions_ex1_q22", "number": "(ix)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (ix) 1, 3, 9, 27...", "solution": ["3 - 1 = 2", "9 - 3 = 6", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q23", "number": "(x)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (x) a, 2a, 3a, 4a...", "solution": ["2a - a = a", "3a - 2a = a", "Yes AP. d = a", "Next: 4a + a = 5a", "Next: 5a + a = 6a", "Next: 6a + a = 7a"], "answer": "Answer: Yes, 5a, 6a, 7a" }, { "id": "ch5-arithmetic-progressions_ex1_q24", "number": "(xi)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xi) a, a², a³, a⁴...", "solution": ["a² - a = a(a-1)", "a³ - a² = a²(a-1)", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q25", "number": "(xii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xii) √2, √8, √18, √32...", "solution": ["Simplify terms:", "√2, 2√2, 3√2, 4√2...", "2√2 - √2 = √2", "3√2 - 2√2 = √2", "Yes AP. d = √2", "Next: 4√2 + √2 = 5√2 = √50", "Next: 5√2 + √2 = 6√2 = √72", "Next: 6√2 + √2 = 7√2 = √98"], "answer": "Answer: Yes, √50, √72, √98" }, { "id": "ch5-arithmetic-progressions_ex1_q26", "number": "(xiii)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xiii) √3, √6, √9, √12...", "solution": ["√6 - √3 = √3(√2 - 1)", "√9 - √6 = 3 - √6", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q27", "number": "(xiv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xiv) 1², 3², 5², 7²...", "solution": ["1, 9, 25, 49...", "9 - 1 = 8", "25 - 9 = 16", "Difference not same. No AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex1_q28", "number": "(xv)", "question": "Q4. Which are APs? If yes, find d and 3 more terms. (xv) 1², 5², 7², 73...", "solution": ["1, 25, 49, 73...", "25 - 1 = 24", "49 - 25 = 24", "73 - 49 = 24", "Yes AP. d = 24", "Next: 73 + 24 = 97", "Next: 97 + 24 = 121", "Next: 121 + 24 = 145"], "answer": "Answer: Yes, 97, 121, 145" }] }, { "id": "ex5.2", "name": "Exercise 5.2", "questions": [{ "id": "ch5-arithmetic-progressions_ex2_q1", "number": "(i)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (i) a = 7, d = 3, n = 8. Find aₙ.", "solution": ["aₙ = 7 + (8 - 1)3", "aₙ = 7 + (7)3", "aₙ = 7 + 21", "aₙ = 28"], "answer": "Answer: 28" }, { "id": "ch5-arithmetic-progressions_ex2_q2", "number": "(ii)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (ii) a = -18, n = 10, aₙ = 0. Find d.", "solution": ["0 = -18 + (10 - 1)d", "18 = 9d", "d = 18 ÷ 9", "d = 2"], "answer": "Answer: d = 2" }, { "id": "ch5-arithmetic-progressions_ex2_q3", "number": "(iii)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (iii) d = -3, n = 18, aₙ = -5. Find a.", "solution": ["-5 = a + (18 - 1)(-3)", "-5 = a + (17)(-3)", "-5 = a - 51", "a = -5 + 51", "a = 46"], "answer": "Answer: a = 46" }, { "id": "ch5-arithmetic-progressions_ex2_q4", "number": "(iv)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (iv) a = -18.9, d = 2.5, aₙ = 3.6. Find n.", "solution": ["3.6 = -18.9 + (n - 1)2.5", "3.6 + 18.9 = (n - 1)2.5", "22.5 = (n - 1)2.5", "n - 1 = 22.5 ÷ 2.5", "n - 1 = 9", "n = 9 + 1 = 10"], "answer": "Answer: n = 10" }, { "id": "ch5-arithmetic-progressions_ex2_q5", "number": "(v)", "question": "Q1. Fill in the blanks. Formula used: aₙ = a + (n - 1)d (v) a = 3.5, d = 0, n = 105. Find aₙ.", "solution": ["aₙ = 3.5 + (105 - 1)0", "aₙ = 3.5 + 0", "aₙ = 3.5"], "answer": "Answer: 3.5" }, { "id": "ch5-arithmetic-progressions_ex2_q6", "number": "(i)", "question": "Q2. Choose correct choice. (i) 30th term of AP: 10, 7, 4...", "solution": ["a = 10, d = 7 - 10 = -3, n = 30", "a₃₀ = 10 + (30 - 1)(-3)", "a₃₀ = 10 + 29(-3)", "a₃₀ = 10 - 87", "a₃₀ = -77"], "answer": "Answer: (C) -77" }, { "id": "ch5-arithmetic-progressions_ex2_q7", "number": "(ii)", "question": "Q2. Choose correct choice. (ii) 11th term of AP: -3, -12, 2...", "solution": ["a = -3, n = 11", "d = -1", "d = -1", "a₁₁ = -3 + (11 - 1)5", "a₁₁ = -3 + 10 × 5", "a₁₁ = -3 + 25", "a₁₁ = 22"], "answer": "Answer: (B) 22" }, { "id": "ch5-arithmetic-progressions_ex2_q8", "number": "(i)", "question": "Q3. Find missing terms in boxes. (i) 2, □, 26", "solution": ["a = 2, a₃ = 26", "a + 2d = 26", "2 + 2d = 26", "2d = 24", "d = 12", "Missing term = a + d = 2 + 12 = 14"], "answer": "Answer: 14" }, { "id": "ch5-arithmetic-progressions_ex2_q9", "number": "(ii)", "question": "Q3. Find missing terms in boxes. (ii) □, 13, □, 3", "solution": ["a₂ = a + d = 13", "a₄ = a + 3d = 3", "Subtracting eq(1) from eq(2):", "2d = -10", "d = -5", "a = 13 - d = 13 - (-5) = 18", "a₃ = a + 2d = 18 + 2(-5) = 8"], "answer": "Answer: 18, 8" }, { "id": "ch5-arithmetic-progressions_ex2_q10", "number": "(iii)", "question": "Q3. Find missing terms in boxes. (iii) 5, □, □, 912", "solution": ["a = 5, a₄ = 9.5 = 19", "a + 3d = 19", "5 + 3d = 19", "3d = 19", "d = 3", "a₂ = 5 + 3", "a₃ = 13"], "answer": "Answer: 61" }, { "id": "ch5-arithmetic-progressions_ex2_q11", "number": "(iv)", "question": "Q3. Find missing terms in boxes. (iv) -4, □, □, □, □, 6", "solution": ["a = -4, a₆ = 6", "a + 5d = 6", "-4 + 5d = 6", "5d = 10 → d = 2", "Terms: -2, 0, 2, 4"], "answer": "Answer: -2, 0, 2, 4" }, { "id": "ch5-arithmetic-progressions_ex2_q12", "number": "(v)", "question": "Q3. Find missing terms in boxes. (v) □, 38, □, □, □, -22", "solution": ["a₂ = a + d = 38", "a₆ = a + 5d = -22", "Subtracting: 4d = -60 → d = -15", "a = 38 - (-15) = 53", "a₃ = 38 - 15 = 23", "a₄ = 23 - 15 = 8", "a₅ = 8 - 15 = -7"], "answer": "Answer: 53, 23, 8, -7" }, { "id": "ch5-arithmetic-progressions_ex2_q13", "number": "Q4.", "question": "Q4. Which term of the AP: 3, 8, 13, 18... is 78?", "solution": ["a = 3, d = 8 - 3 = 5, aₙ = 78", "78 = 3 + (n - 1)5", "75 = (n - 1)5", "15 = n - 1", "n = 16"], "answer": "Answer: 16th term" }, { "id": "ch5-arithmetic-progressions_ex2_q14", "number": "(i)", "question": "Q5. Find number of terms. (i) 7, 13, 19, ..., 205", "solution": ["a = 7, d = 6, aₙ = 205", "205 = 7 + (n - 1)6", "198 = (n - 1)6", "33 = n - 1", "n = 34"], "answer": "Answer: 34 terms" }, { "id": "ch5-arithmetic-progressions_ex2_q15", "number": "(ii)", "question": "Q5. Find number of terms. (ii) 18, 1512, 13, ..., -47", "solution": ["a = 18, aₙ = -47", "d = 15.5 - 18 = -2.5 = -5", "-47 = 18 + (n - 1)(-5", "-65 = (n - 1)(-5", "-65 × -2", "26 = n - 1", "n = 27"], "answer": "Answer: 27 terms" }, { "id": "ch5-arithmetic-progressions_ex2_q16", "number": "Q6.", "question": "Q6. Check if -150 is a term of 11, 8, 5, 2...", "solution": ["a = 11, d = -3", "-150 = 11 + (n - 1)(-3)", "-161 = (n - 1)(-3)", "n - 1 = 161/3", "161 is not divisible by 3.", "So n is not an integer."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_ex2_q17", "number": "Q7.", "question": "Q7. Find 31st term if 11th term is 38 and 16th term is 73.", "solution": ["a₁₁ = a + 10d = 38", "a₁₆ = a + 15d = 73", "Subtracting: 5d = 35 → d = 7", "a + 10(7) = 38", "a = 38 - 70 = -32", "a₃₁ = a + 30d", "a₃₁ = -32 + 30(7)", "a₃₁ = -32 + 210 = 178"], "answer": "Answer: 178" }, { "id": "ch5-arithmetic-progressions_ex2_q18", "number": "Q8.", "question": "Q8. AP of 50 terms. 3rd term = 12, Last term = 106. Find 29th term.", "solution": ["Total terms n = 50. So a₅₀ = 106.", "a₃ = a + 2d = 12", "a₅₀ = a + 49d = 106", "Subtracting: 47d = 94 → d = 2", "a + 2(2) = 12 → a = 8", "a₂₉ = a + 28d", "a₂₉ = 8 + 28(2)", "a₂₉ = 8 + 56 = 64"], "answer": "Answer: 64" }, { "id": "ch5-arithmetic-progressions_ex2_q19", "number": "Q9.", "question": "Q9. 3rd term is 4, 9th term is -8. Which term is 0?", "solution": ["a₃ = a + 2d = 4", "a₉ = a + 8d = -8", "Subtracting (2)-(1): 6d = -12", "d = -2", "a + 2(-2) = 4 → a - 4 = 4 → a = 8", "Let nth term be 0.", "0 = 8 + (n - 1)(-2)", "-8 = (n - 1)(-2)", "4 = n - 1", "n = 5"], "answer": "Answer: 5th term" }, { "id": "ch5-arithmetic-progressions_ex2_q20", "number": "Q10.", "question": "Q10. 17th term exceeds 10th term by 7. Find common difference.", "solution": ["a₁₇ - a₁₀ = 7", "(a + 16d) - (a + 9d) = 7", "a + 16d - a - 9d = 7", "7d = 7", "d = 1"], "answer": "Answer: 1" }, { "id": "ch5-arithmetic-progressions_ex2_q21", "number": "Q11.", "question": "Q11. Which term of 3, 15, 27, 39... will be 132 more than 54th term?", "solution": ["a = 3, d = 12", "a₅₄ = 3 + 53(12)", "a₅₄ = 3 + 636 = 639", "Required term = 639 + 132 = 771", "771 = 3 + (n - 1)12", "768 = (n - 1)12", "64 = n - 1", "n = 65"], "answer": "Answer: 65th term" }, { "id": "ch5-arithmetic-progressions_ex2_q22", "number": "Q12.", "question": "Q12. Two APs have same common difference. Diff between 100th terms is 100. Diff between 1000th terms?", "solution": ["Let APs be a, a+d... and A, A+d...", "Diff between nth terms = (A + (n-1)d) - (a + (n-1)d)", "= A - a (constant difference)", "Given diff between 100th terms = 100.", "So A - a = 100.", "Diff between 1000th terms will also be A - a.", "So difference is 100."], "answer": "Answer: 100" }, { "id": "ch5-arithmetic-progressions_ex2_q23", "number": "Q13.", "question": "Q13. How many 3-digit numbers are divisible by 7?", "solution": ["3-digit numbers: 100 to 999.", "First divisible by 7: 105 (7 × 15)", "Last divisible by 7: 994 (7 × 142)", "AP: 105, 112, ..., 994", "a = 105, d = 7, aₙ = 994", "994 = 105 + (n - 1)7", "889 = (n - 1)7", "127 = n - 1", "n = 128"], "answer": "Answer: 128" }, { "id": "ch5-arithmetic-progressions_ex2_q24", "number": "Q14.", "question": "Q14. How many multiples of 4 lie between 10 and 250?", "solution": ["First multiple > 10 is 12.", "Last multiple", "AP: 12, 16, ..., 248", "a = 12, d = 4, aₙ = 248", "248 = 12 + (n - 1)4", "236 = (n - 1)4", "59 = n - 1", "n = 60"], "answer": "Answer: 60" }, { "id": "ch5-arithmetic-progressions_ex2_q25", "number": "Q15.", "question": "Q15. For what value of n, terms of 63, 65, 67... and 3, 10, 17... are equal?", "solution": ["AP1: a = 63, d = 2 → nth term = 63 + (n-1)2", "AP2: a = 3, d = 7 → nth term = 3 + (n-1)7", "Equal: 63 + 2n - 2 = 3 + 7n - 7", "61 + 2n = 7n - 4", "65 = 5n", "n = 13"], "answer": "Answer: 13" }, { "id": "ch5-arithmetic-progressions_ex2_q26", "number": "Q16.", "question": "Q16. Determine AP: 3rd term is 16, 7th term exceeds 5th by 12.", "solution": ["a₃ = 16", "a₇ - a₅ = 12", "(a + 6d) - (a + 4d) = 12", "2d = 12 → d = 6", "a₃ = a + 2d = 16", "a + 2(6) = 16", "a + 12 = 16 → a = 4", "AP: 4, 10, 16, 22..."], "answer": "Answer: 4, 10, 16, 22..." }, { "id": "ch5-arithmetic-progressions_ex2_q27", "number": "Q17.", "question": "Q17. Find the 20th term from the last term of the AP: 3, 8, 13, ..., 253.", "solution": ["For last term, we reverse the AP.", "New AP: 253, ..., 13, 8, 3", "a = 253, d = 3 - 8 = -5", "Find 20th term (a₂₀).", "a₂₀ = a + 19d", "a₂₀ = 253 + 19(-5)", "a₂₀ = 253 - 95", "a₂₀ = 158"], "answer": "Answer: 158" }, { "id": "ch5-arithmetic-progressions_ex2_q28", "number": "Q18.", "question": "Q18. Sum of 4th and 8th terms is 24. Sum of 6th and 10th terms is 44. Find AP.", "solution": ["a₄ + a₈ = 24", "(a + 3d) + (a + 7d) = 24", "2a + 10d = 24 → a + 5d = 12 ...(1)", "a₆ + a₁₀ = 44", "(a + 5d) + (a + 9d) = 44", "2a + 14d = 44 → a + 7d = 22 ...(2)", "Subtracting (1) from (2):", "2d = 10 → d = 5", "From (1): a + 5(5) = 12", "a + 25 = 12 → a = -13", "Terms: -13, -8, -3..."], "answer": "Answer: -13, -8, -3..." }, { "id": "ch5-arithmetic-progressions_ex2_q29", "number": "Q19.", "question": "Q19. Subba Rao started at ₹ 5000 (1995), increment ₹ 200. When ₹ 7000?", "solution": ["a = 5000, d = 200, aₙ = 7000", "7000 = 5000 + (n - 1)200", "2000 = (n - 1)200", "10 = n - 1", "n = 11", "Year = 1995 + 10 = 2005 (11th year)"], "answer": "Answer: In 11th year (2005)" }, { "id": "ch5-arithmetic-progressions_ex2_q30", "number": "Q20.", "question": "Q20. Ramkali saved ₹ 5 first week, increased by ₹ 1.75. nth week ₹ 20.75. Find n.", "solution": ["a = 5, d = 1.75, aₙ = 20.75", "20.75 = 5 + (n - 1)1.75", "15.75 = (n - 1)1.75", "n - 1 = 15.75 ÷ 1.75", "n - 1 = 1575 ÷ 175", "n - 1 = 9", "n = 10"], "answer": "Answer: n = 10" }] }, { "id": "ex5.3", "name": "Exercise 5.3", "questions": [{ "id": "ch5-arithmetic-progressions_ex3_q1", "number": "(i)", "question": "Q1. Find the sum of the following APs: (i) 2, 7, 12..., to 10 terms.", "solution": ["a = 2, d = 7 - 2 = 5, n = 10", "Sâ‚â‚€ = 10", "Sâ‚â‚€ = 5[4 + 9(5)]", "Sâ‚â‚€ = 5[4 + 45]", "Sâ‚â‚€ = 5(49)", "Sâ‚â‚€ = 245"], "answer": "Answer: 245" }, { "id": "ch5-arithmetic-progressions_ex3_q2", "number": "(ii)", "question": "Q1. Find the sum of the following APs: (ii) -37, -33, -29..., to 12 terms.", "solution": ["a = -37, d = -33 - (-37) = 4, n = 12", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6[-74 + 11(4)]", "Sâ‚â‚‚ = 6[-74 + 44]", "Sâ‚â‚‚ = 6(-30)", "Sâ‚â‚‚ = -180"], "answer": "Answer: -180" }, { "id": "ch5-arithmetic-progressions_ex3_q3", "number": "(iii)", "question": "Q1. Find the sum of the following APs: (iii) 0.6, 1.7, 2.8..., to 100 terms.", "solution": ["a = 0.6, d = 1.1, n = 100", "Sâ‚â‚€â‚€ = 100", "Sâ‚â‚€â‚€ = 50[1.2 + 99(1.1)]", "Sâ‚â‚€â‚€ = 50[1.2 + 108.9]", "Sâ‚â‚€â‚€ = 50(110.1)", "Sâ‚â‚€â‚€ = 5505"], "answer": "Answer: 5505" }, { "id": "ch5-arithmetic-progressions_ex3_q4", "number": "(iv)", "question": "Q1. Find the sum of the following APs: (iv) 115, 112, 110..., to 11 terms.", "solution": ["a = 1", "d = 1", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11", "Sâ‚â‚ = 11"], "answer": "Answer: 33" }, { "id": "ch5-arithmetic-progressions_ex3_q5", "number": "(i)", "question": "Q2. Find the sums given below: (i) 7 + 1012 + 14 + ... + 84", "solution": ["a = 7, d = 3.5 = 7", "84 = 7 + (n - 1)7", "77 = (n - 1)7", "22 = n - 1 â†’ n = 23", "Sâ‚‚â‚ƒ = 23", "Sâ‚‚â‚ƒ = 23"], "answer": "Answer: 10461" }, { "id": "ch5-arithmetic-progressions_ex3_q6", "number": "(ii)", "question": "Q2. Find the sums given below: (ii) 34 + 32 + 30 + ... + 10", "solution": ["a = 34, d = -2, aâ‚™ = 10", "10 = 34 + (n - 1)(-2)", "-24 = (n - 1)(-2)", "12 = n - 1 â†’ n = 13", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 286"], "answer": "Answer: 286" }, { "id": "ch5-arithmetic-progressions_ex3_q7", "number": "(iii)", "question": "Q2. Find the sums given below: (iii) -5 + (-8) + (-11) + ... + (-230)", "solution": ["a = -5, d = -3, aâ‚™ = -230", "-230 = -5 + (n - 1)(-3)", "-225 = (n - 1)(-3)", "75 = n - 1 â†’ n = 76", "Sâ‚‡â‚† = 76", "Sâ‚‡â‚† = 38(-235)", "Sâ‚‡â‚† = -8930"], "answer": "Answer: -8930" }, { "id": "ch5-arithmetic-progressions_ex3_q8", "number": "(i)", "question": "Q3. In an AP: (i) a = 5, d = 3, aâ‚™ = 50. Find n and Sâ‚™.", "solution": ["50 = 5 + (n - 1)3", "45 = (n - 1)3", "15 = n - 1 â†’ n = 16", "Sâ‚â‚† = 16", "Sâ‚â‚† = 8(55) = 440"], "answer": "Answer: n = 16, Sâ‚™ = 440" }, { "id": "ch5-arithmetic-progressions_ex3_q9", "number": "(ii)", "question": "Q3. In an AP: (ii) a = 7, aâ‚â‚ƒ = 35. Find d and Sâ‚â‚ƒ.", "solution": ["aâ‚â‚ƒ = a + 12d = 35", "7 + 12d = 35", "12d = 28", "d = 28", "Sâ‚â‚ƒ = 13", "Sâ‚â‚ƒ = 13"], "answer": "Answer: d = 7" }, { "id": "ch5-arithmetic-progressions_ex3_q10", "number": "(iii)", "question": "Q3. In an AP: (iii) aâ‚â‚‚ = 37, d = 3. Find a and Sâ‚â‚‚.", "solution": ["a + 11d = 37", "a + 11(3) = 37", "a + 33 = 37 â†’ a = 4", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6(41) = 246"], "answer": "Answer: a = 4, Sâ‚â‚‚ = 246" }, { "id": "ch5-arithmetic-progressions_ex3_q11", "number": "(iv)", "question": "Q3. In an AP: (iv) aâ‚ƒ = 15, Sâ‚â‚€ = 125. Find d and aâ‚â‚€.", "solution": ["a + 2d = 15 ...(1)", "Sâ‚â‚€ = 10", "5[2a + 9d] = 125", "2a + 9d = 25 ...(2)", "From (1), 2a + 4d = 30 ...(Multiply by 2)", "Subtracting: 5d = -5 â†’ d = -1", "a = 15 - 2(-1) = 17", "aâ‚â‚€ = a + 9d = 17 + 9(-1) = 8"], "answer": "Answer: d = -1, aâ‚â‚€ = 8" }, { "id": "ch5-arithmetic-progressions_ex3_q12", "number": "(v)", "question": "Q3. In an AP: (v) d = 5, Sâ‚‰ = 75. Find a and aâ‚‰.", "solution": ["Sâ‚‰ = 9", "9", "9(a + 20) = 75", "9a + 180 = 75", "9a = -105", "a = -35", "aâ‚‰ = a + 8d = -35", "aâ‚‰ = -35 + 120"], "answer": "Answer: a = -35" }, { "id": "ch5-arithmetic-progressions_ex3_q13", "number": "(vi)", "question": "Q3. In an AP: (vi) a = 2, d = 8, Sâ‚™ = 90. Find n and aâ‚™.", "solution": ["90 = n", "180 = n[4 + 8n - 8]", "180 = n[8n - 4]", "180 = 8nÂ² - 4n", "2nÂ² - n - 45 = 0", "2nÂ² - 10n + 9n - 45 = 0", "2n(n - 5) + 9(n - 5) = 0", "(n - 5)(2n + 9) = 0", "n = 5", "aâ‚… = 2 + 4(8) = 34"], "answer": "Answer: n = 5, aâ‚™ = 34" }, { "id": "ch5-arithmetic-progressions_ex3_q14", "number": "(vii)", "question": "Q3. In an AP: (vii) a = 8, aâ‚™ = 62, Sâ‚™ = 210. Find n and d.", "solution": ["Sâ‚™ = n", "210 = n", "210 = n", "210 = 35n â†’ n = 6", "aâ‚† = a + 5d = 62", "8 + 5d = 62", "5d = 54 â†’ d = 54"], "answer": "Answer: n = 6, d = 54" }, { "id": "ch5-arithmetic-progressions_ex3_q15", "number": "(viii)", "question": "Q3. In an AP: (viii) aâ‚™ = 4, d = 2, Sâ‚™ = -14. Find n and a.", "solution": ["a + (n - 1)2 = 4", "a + 2n - 2 = 4 â†’ a = 6 - 2n ...(1)", "Sâ‚™ = n", "n(a + 4) = -28", "Substitute (1): n(6 - 2n + 4) = -28", "n(10 - 2n) = -28", "10n - 2nÂ² = -28", "2nÂ² - 10n - 28 = 0", "nÂ² - 5n - 14 = 0", "(n - 7)(n + 2) = 0", "n = 7", "a = 6 - 2(7) = -8"], "answer": "Answer: n = 7, a = -8" }, { "id": "ch5-arithmetic-progressions_ex3_q16", "number": "(ix)", "question": "Q3. In an AP: (ix) a = 3, n = 8, S = 192. Find d.", "solution": ["192 = 8", "192 = 4[6 + 7d]", "48 = 6 + 7d", "7d = 42 â†’ d = 6"], "answer": "Answer: d = 6" }, { "id": "ch5-arithmetic-progressions_ex3_q17", "number": "(x)", "question": "Q3. In an AP: (x) l = 28, S = 144, n = 9. Find a.", "solution": ["S = n", "144 = 9", "32 = a + 28", "a = 4"], "answer": "Answer: a = 4" }, { "id": "ch5-arithmetic-progressions_ex3_q18", "number": "Q4.", "question": "Q4. How many terms of 9, 17, 25... needed to give sum 636?", "solution": ["a = 9, d = 8, Sâ‚™ = 636", "636 = n", "1272 = n[18 + 8n - 8]", "1272 = n[10 + 8n]", "8nÂ² + 10n - 1272 = 0", "4nÂ² + 5n - 636 = 0", "bÂ² - 4ac = 25 - 4(4)(-636) = 25 + 10176 = 10201", "âˆšD = 101", "n = -5 Â± 101", "n = 12 (positive)"], "answer": "Answer: 12 terms" }, { "id": "ch5-arithmetic-progressions_ex3_q19", "number": "Q5.", "question": "Q5. First term 5, last 45, sum 400. Find n and d.", "solution": ["a = 5, l = 45, S = 400", "400 = n", "800 = 50n â†’ n = 16", "l = a + 15d = 45", "5 + 15d = 45", "15d = 40 â†’ d = 40"], "answer": "Answer: n = 16, d = 8" }, { "id": "ch5-arithmetic-progressions_ex3_q20", "number": "Q6.", "question": "Q6. First 17, last 350, d = 9. Find n and Sum.", "solution": ["a = 17, l = aâ‚™ = 350, d = 9", "350 = 17 + (n - 1)9", "333 = (n - 1)9", "37 = n - 1 â†’ n = 38", "S = 38", "S = 19(367)", "S = 6973"], "answer": "Answer: n = 38, Sum = 6973" }, { "id": "ch5-arithmetic-progressions_ex3_q21", "number": "Q7.", "question": "Q7. Find sum of first 22 terms if d = 7, 22nd term = 149.", "solution": ["aâ‚‚â‚‚ = a + 21d = 149", "a + 21(7) = 149", "a + 147 = 149 â†’ a = 2", "Sâ‚‚â‚‚ = 22", "Sâ‚‚â‚‚ = 11(151) = 1661"], "answer": "Answer: 1661" }, { "id": "ch5-arithmetic-progressions_ex3_q22", "number": "Q8.", "question": "Q8. Sum of first 51 terms if 2nd term 14, 3rd 18.", "solution": ["d = aâ‚ƒ - aâ‚‚ = 18 - 14 = 4", "a = aâ‚‚ - d = 14 - 4 = 10", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 51", "Sâ‚…â‚ = 5610"], "answer": "Answer: 5610" }, { "id": "ch5-arithmetic-progressions_ex3_q23", "number": "Q9.", "question": "Q9. Sum of 7 terms is 49, sum of 17 terms is 289. Find sum of n terms.", "solution": ["Sâ‚‡ = 49 â†’ 7", "7(a+3d) = 49 â†’ a + 3d = 7 ...(1)", "Sâ‚â‚‡ = 289 â†’ 17", "17(a+8d) = 289 â†’ a + 8d = 17 ...(2)", "Subtracting (1) from (2): 5d = 10 â†’ d = 2", "a + 6 = 7 â†’ a = 1", "Sâ‚™ = n", "Sâ‚™ = n", "Sâ‚™ = n"], "answer": "Answer: nÂ²" }, { "id": "ch5-arithmetic-progressions_ex3_q24", "number": "(i)", "question": "Q10. Show aâ‚, aâ‚‚... form AP defined by aâ‚™. Find Sâ‚â‚…. (i) aâ‚™ = 3 + 4n", "solution": ["aâ‚ = 7, aâ‚‚ = 11, aâ‚ƒ = 15", "Diff = 4. It is an AP.", "a = 7, d = 4", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15"], "answer": "Answer: 525" }, { "id": "ch5-arithmetic-progressions_ex3_q25", "number": "(ii)", "question": "Q10. Show aâ‚, aâ‚‚... form AP defined by aâ‚™. Find Sâ‚â‚…. (ii) aâ‚™ = 9 - 5n", "solution": ["aâ‚ = 4, aâ‚‚ = -1, aâ‚ƒ = -6", "Diff = -5. It is an AP.", "a = 4, d = -5", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15"], "answer": "Answer: -465" }, { "id": "ch5-arithmetic-progressions_ex3_q26", "number": "Q11.", "question": "Q11. Sum of first n terms is 4n - nÂ². Find Sâ‚, Sâ‚‚, 2nd term, 3rd, 10th, nth terms.", "solution": ["Sâ‚™ = 4n - nÂ²", "Sâ‚ = 4(1) - 1Â² = 3 (First term a is Sâ‚)", "Sâ‚‚ = 4(2) - 2Â² = 8 - 4 = 4", "aâ‚‚ = Sâ‚‚ - Sâ‚ = 4 - 3 = 1", "aâ‚ƒ = Sâ‚ƒ - Sâ‚‚", "Sâ‚ƒ = 4(3) - 3Â² = 12 - 9 = 3", "aâ‚ƒ = 3 - 4 = -1", "aâ‚â‚€ = Sâ‚â‚€ - Sâ‚‰", "Sâ‚â‚€ = 40 - 100 = -60", "Sâ‚‰ = 36 - 81 = -45", "aâ‚â‚€ = -60 - (-45) = -15", "aâ‚™ = Sâ‚™ - Sâ‚™â‚‹â‚", "aâ‚™ = (4n - nÂ²) - [4(n - 1) - (n - 1)Â²]", "aâ‚™ = 4n - nÂ² - [4n - 4 - (nÂ² - 2n + 1)]", "aâ‚™ = 4n - nÂ² - 4n + 4 + nÂ² - 2n + 1", "aâ‚™ = 5 - 2n"], "answer": "Answer: Sâ‚=3, Sâ‚‚=4, aâ‚‚=1, aâ‚ƒ=-1, aâ‚â‚€=-15, aâ‚™=5-2n" }, { "id": "ch5-arithmetic-progressions_ex3_q27", "number": "Q12.", "question": "Q12. Sum of first 40 positive integers divisible by 6.", "solution": ["AP: 6, 12, 18, ... (40 terms)", "a = 6, d = 6, n = 40", "Sâ‚„â‚€ = 40", "Sâ‚„â‚€ = 20[12 + 234]", "Sâ‚„â‚€ = 20(246)", "Sâ‚„â‚€ = 4920"], "answer": "Answer: 4920" }, { "id": "ch5-arithmetic-progressions_ex3_q28", "number": "Q13.", "question": "Q13. Sum of first 15 multiples of 8.", "solution": ["AP: 8, 16, 24, ... (15 terms)", "a = 8, d = 8, n = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15", "Sâ‚â‚… = 15(64)", "Sâ‚â‚… = 960"], "answer": "Answer: 960" }, { "id": "ch5-arithmetic-progressions_ex3_q29", "number": "Q14.", "question": "Q14. Sum of odd numbers between 0 and 50.", "solution": ["Odd numbers: 1, 3, 5, ..., 49", "a = 1, l = 49, d = 2", "49 = 1 + (n - 1)2 â†’ 48 = 2(n - 1) â†’ 24 = n - 1 â†’ n = 25", "Sâ‚‚â‚… = 25", "Sâ‚‚â‚… = 25", "Sâ‚‚â‚… = 625"], "answer": "Answer: 625" }, { "id": "ch5-arithmetic-progressions_ex3_q30", "number": "Q15.", "question": "Q15. Penalty for delay: â‚¹ 200, â‚¹ 250, â‚¹ 300... for 30 days.", "solution": ["a = 200, d = 50, n = 30", "Sâ‚ƒâ‚€ = 30", "Sâ‚ƒâ‚€ = 15[400 + 1450]", "Sâ‚ƒâ‚€ = 15(1850)", "Sâ‚ƒâ‚€ = 27750"], "answer": "Answer: â‚¹ 27750" }, { "id": "ch5-arithmetic-progressions_ex3_q31", "number": "Q16.", "question": "Q16. Sum â‚¹ 700 for 7 prizes. Each prize â‚¹ 20 less than preceding. Find prizes.", "solution": ["Let prizes be a, a-20, a-40...", "Sâ‚‡ = 700, n = 7, d = -20", "700 = 7", "200 = 2a - 120 (Divide by 3.5 is 200)", "Wait, 700/3.5 = 200. Yes. Or 700 = 7/2(...). 1400 = 7(...). 200 = 2a - 120.", "320 = 2a â†’ a = 160", "Prizes: 160, 140, 120, 100, 80, 60, 40"], "answer": "Answer: â‚¹ 160, 140, 120, 100, 80, 60, 40" }, { "id": "ch5-arithmetic-progressions_ex3_q32", "number": "Q17.", "question": "Q17. Planting trees. Class I plants 1, Class II plants 2... Class XII plants 12. 3 sections each.", "solution": ["Class I: 3 Ã— 1 = 3", "Class II: 3 Ã— 2 = 6", "... Class XII: 3 Ã— 12 = 36", "AP: 3, 6, ..., 36 (12 terms)", "Sâ‚â‚‚ = 12", "Sâ‚â‚‚ = 6(39)", "Sâ‚â‚‚ = 234"], "answer": "Answer: 234 trees" }, { "id": "ch5-arithmetic-progressions_ex3_q33", "number": "Q18.", "question": "Q18. Spiral of semicircles. Radii 0.5, 1.0, 1.5... Total length of 13 spirals?", "image": "fig_5_4.png", "solution": ["Perimeter of semicircle = Ï€r", "lâ‚ = Ï€(0.5), lâ‚‚ = Ï€(1.0), lâ‚ƒ = Ï€(1.5)...", "Total Length L = Ï€(0.5) + Ï€(1.0) + ... (13 terms)", "L = Ï€[0.5 + 1.0 + ... ]", "Inside bracket is AP: a = 0.5, d = 0.5, n = 13", "Sum = 13", "Sum = 13", "Total L = Ï€ Ã— 91", "L = 22", "L = 11 Ã— 13 = 143"], "answer": "Answer: 143 cm" }, { "id": "ch5-arithmetic-progressions_ex3_q34", "number": "Q19.", "question": "Q19. 200 logs stacked. 20 bottom, 19 next... How many rows? Top row logs?", "image": "fig_5_5.png", "solution": ["AP: 20, 19, 18... Sum = 200", "a = 20, d = -1, Sâ‚™ = 200", "200 = n", "400 = n[40 - n + 1]", "400 = n[41 - n]", "nÂ² - 41n + 400 = 0", "Factors of 400 summing to 41: 16 and 25", "(n - 16)(n - 25) = 0", "n = 16 or n = 25", "If n = 25: aâ‚‚â‚… = 20 + 24(-1) = -4 (Negative logs impossible)", "So n = 16", "Top row (aâ‚â‚†) = 20 + 15(-1) = 5"], "answer": "Answer: 16 rows, 5 logs in top row" }, { "id": "ch5-arithmetic-progressions_ex3_q35", "number": "Q20.", "question": "Q20. Potato race. 5m first, then 3m apart. 10 potatoes. Total distance run?", "image": "fig_5_6.png", "solution": ["Run to 1st: 2 Ã— 5 = 10 m", "Run to 2nd: 2 Ã— (5 + 3) = 16 m", "Run to 3rd: 2 Ã— (5 + 6) = 22 m", "AP: 10, 16, 22... (10 terms)", "a = 10, d = 6, n = 10", "Sâ‚â‚€ = 10", "Sâ‚â‚€ = 5[20 + 54]", "Sâ‚â‚€ = 5(74)", "Sâ‚â‚€ = 370"], "answer": "Answer: 370 m" }] }],
     examples: [{ "id": "ch5-arithmetic-progressions_eg1", "number": "Example", "question": "Example 1: For the AP: 32, 12, -12, -32... write first term a and common difference d.", "solution": ["First term a = 3", "d = Second term - First term", "d = 1", "d = 1 - 3"], "answer": "Answer: a = 3" }, { "id": "ch5-arithmetic-progressions_eg2", "number": "(i)", "question": "(i) 4, 10, 16, 22...", "solution": ["10 - 4 = 6", "16 - 10 = 6", "22 - 16 = 6", "Difference is constant (6). Yes, it is an AP.", "Next terms: 22 + 6 = 28, 28 + 6 = 34"], "answer": "Answer: Yes; 28, 34" }, { "id": "ch5-arithmetic-progressions_eg3", "number": "(ii)", "question": "(ii) 1, -1, -3, -5...", "solution": ["-1 - 1 = -2", "-3 - (-1) = -2", "-5 - (-3) = -2", "Difference is constant (-2). Yes, it is an AP.", "Next terms: -5 - 2 = -7, -7 - 2 = -9"], "answer": "Answer: Yes; -7, -9" }, { "id": "ch5-arithmetic-progressions_eg4", "number": "(iii)", "question": "(iii) -2, 2, -2, 2, -2...", "solution": ["2 - (-2) = 4", "-2 - 2 = -4", "Difference is not constant. No, it is not an AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_eg5", "number": "(iv)", "question": "(iv) 1, 1, 1, 2, 2, 2, 3, 3, 3...", "solution": ["1 - 1 = 0", "2 - 1 = 1", "Difference is not constant. No, it is not an AP."], "answer": "Answer: No" }, { "id": "ch5-arithmetic-progressions_eg6", "number": "Example", "question": "Example 3: Find the 10th term of the AP: 2, 7, 12...", "solution": ["a = 2, d = 7 - 2 = 5, n = 10", "Formula: aₙ = a + (n - 1)d", "a₁₀ = 2 + (10 - 1)5", "a₁₀ = 2 + 9(5)", "a₁₀ = 2 + 45 = 47"], "answer": "Answer: 47" }, { "id": "ch5-arithmetic-progressions_eg7", "number": "Example", "question": "Example 4: Which term of the AP: 21, 18, 15... is -81? Also, is any term 0?", "solution": ["a = 21, d = 18 - 21 = -3", "Let nth term be -81.", "-81 = 21 + (n - 1)(-3)", "-81 - 21 = (n - 1)(-3)", "-102 = (n - 1)(-3)", "n - 1 = -102 / -3 = 34", "n = 35. So, 35th term is -81.", "Now check for 0:", "0 = 21 + (m - 1)(-3)", "-21 = (m - 1)(-3)", "m - 1 = 7", "m = 8. So, 8th term is 0."], "answer": "Answer: 35th term is -81; Yes, 8th term is 0" }, { "id": "ch5-arithmetic-progressions_eg8", "number": "Example", "question": "Example 5: Determine the AP whose 3rd term is 5 and 7th term is 9.", "solution": ["a₃ = a + 2d = 5 ...(1)", "a₇ = a + 6d = 9 ...(2)", "Subtract (1) from (2):", "4d = 4 → d = 1", "Put d=1 in (1): a + 2(1) = 5 → a = 3", "AP is: 3, 4, 5, 6..."], "answer": "Answer: 3, 4, 5, 6..." }, { "id": "ch5-arithmetic-progressions_eg9", "number": "Example", "question": "Example 6: Check whether 301 is a term of 5, 11, 17, 23...", "solution": ["a = 5, d = 11 - 5 = 6", "Let 301 be nth term.", "301 = 5 + (n - 1)6", "296 = (n - 1)6", "n - 1 = 296 / 6 = 49.33...", "Since n is not a whole number (integer), 301 is not a term."], "answer": "Answer: No, it is not a term." }, { "id": "ch5-arithmetic-progressions_eg10", "number": "Example", "question": "Example 7: How many two-digit numbers are divisible by 3?", "solution": ["Two digit numbers: 10 to 99.", "First divisible by 3: 12. Last: 99.", "List: 12, 15, 18, ..., 99", "This is an AP with a = 12, d = 3, aₙ = 99.", "99 = 12 + (n - 1)3", "87 = (n - 1)3", "n - 1 = 29", "n = 30"], "answer": "Answer: 30 numbers" }, { "id": "ch5-arithmetic-progressions_eg11", "number": "Example", "question": "Example 8: Find the 11th term from the last term of the AP: 10, 7, 4, ..., -62.", "solution": ["Method: Reverse the AP.", "New AP: -62, ..., 4, 7, 10", "a = -62, d = 3 (since original d was -3)", "Find 11th term: a₁₁ = a + 10d", "a₁₁ = -62 + 10(3)", "a₁₁ = -62 + 30 = -32"], "answer": "Answer: -32" }, { "id": "ch5-arithmetic-progressions_eg12", "number": "Example", "question": "Example 9: ₹ 1000 invested at 8% SI. Calculate interest at end of each year. Do they form AP? Find interest for 30 years.", "solution": ["Simple Interest = (P × R × T) / 100", "Year 1: (1000 × 8 × 1)/100 = ₹ 80", "Year 2: (1000 × 8 × 2)/100 = ₹ 160", "Year 3: (1000 × 8 × 3)/100 = ₹ 240", "List: 80, 160, 240...", "Difference is 80 (constant). Yes, it is an AP.", "Find interest for 30 years (30th term).", "a₃₀ = a + 29d", "a₃₀ = 80 + 29(80)", "Or simply, I = (1000 × 8 × 30)/100 = 2400.", "Using AP: 80 + 2320 = 2400."], "answer": "Answer: Yes AP; Interest at 30 years = ₹ 2400" }, { "id": "ch5-arithmetic-progressions_eg13", "number": "Example", "question": "Example 10: Rose plants: 23, 21, 19... last row 5. How many rows?", "solution": ["a = 23, d = -2, aₙ = 5", "5 = 23 + (n - 1)(-2)", "-18 = (n - 1)(-2)", "n - 1 = 9", "n = 10"], "answer": "Answer: 10 rows" }, { "id": "ch5-arithmetic-progressions_eg14", "number": "Example", "question": "Example 11: Find sum of first 22 terms of AP: 8, 3, -2...", "solution": ["a = 8, d = 3 - 8 = -5, n = 22", "Sₙ = n", "S₂₂ = 22", "S₂₂ = 11[16 - 105]", "S₂₂ = 11(-89)", "S₂₂ = -979"], "answer": "Answer: -979" }, { "id": "ch5-arithmetic-progressions_eg15", "number": "Example", "question": "Example 12: Sum of first 14 terms is 1050, first term is 10. Find 20th term.", "solution": ["S₁₄ = 1050, a = 10, n = 14", "1050 = 14", "1050 = 7[20 + 13d]", "150 = 20 + 13d", "130 = 13d → d = 10", "Find a₂₀ = a + 19d", "a₂₀ = 10 + 19(10)", "a₂₀ = 10 + 190 = 200"], "answer": "Answer: 200" }, { "id": "ch5-arithmetic-progressions_eg16", "number": "Example", "question": "Example 13: How many terms of AP: 24, 21, 18... must be taken so sum is 78?", "solution": ["a = 24, d = -3, Sₙ = 78", "78 = n", "156 = n[48 - 3n + 3]", "156 = n[51 - 3n]", "156 = 51n - 3n²", "3n² - 51n + 156 = 0", "Divide by 3: n² - 17n + 52 = 0", "(n - 4)(n - 13) = 0", "n = 4 or n = 13", "Both values are valid."], "answer": "Answer: 4 or 13 terms" }, { "id": "ch5-arithmetic-progressions_eg17", "number": "(i)", "question": "(i) First 1000 positive integers.", "solution": ["S = 1 + 2 + ... + 1000", "Use Sₙ = n(n + 1)", "S₁₀₀₀ = 1000 × 1001", "S₁₀₀₀ = 500 × 1001 = 500500"], "answer": "Answer: 500500" }, { "id": "ch5-arithmetic-progressions_eg18", "number": "(ii)", "question": "(ii) First n positive integers.", "solution": ["Formula derived from AP where a=1, d=1, l=n."], "answer": "Answer: n(n + 1)" }, { "id": "ch5-arithmetic-progressions_eg19", "number": "Example", "question": "Example 15: Find sum of first 24 terms where aₙ = 3 + 2n.", "solution": ["a₁ = 3 + 2(1) = 5", "a₂ = 3 + 2(2) = 7", "a₃ = 9. So AP is 5, 7, 9...", "a = 5, d = 2, n = 24", "S₂₄ = 24", "S₂₄ = 12[10 + 46]", "S₂₄ = 12(56)", "S₂₄ = 672"], "answer": "Answer: 672" }, { "id": "ch5-arithmetic-progressions_eg20", "number": "Example", "question": "Example 16: TV Manufacturer. 3rd year 600, 7th year 700. Uniform increase.", "solution": ["a₃ = 600, a₇ = 700", "a + 2d = 600", "a + 6d = 700", "Subtracting: 4d = 100 → d = 25", "a + 50 = 600 → a = 550"], "answer": "Refer to steps" }, { "id": "ch5-arithmetic-progressions_eg21", "number": "(i)", "question": "(i) Production in first year", "solution": [], "answer": "Answer: 550" }, { "id": "ch5-arithmetic-progressions_eg22", "number": "(ii)", "question": "(ii) Production in 10th year", "solution": ["a₁₀ = a + 9d = 550 + 9(25)", "a₁₀ = 550 + 225 = 775"], "answer": "Answer: 775" }, { "id": "ch5-arithmetic-progressions_eg23", "number": "(iii)", "question": "(iii) Total production in first 7 years", "solution": ["S₇ = 7", "S₇ = 7", "S₇ = 7", "S₇ = 7 × 625 = 4375"], "answer": "Answer: 4375" }],
-    mcqs: [],
+    mcqs: [
+      { "id": "ch5_mcq1", "question": "The common difference of the AP: 3, 1, -1, -3... is:", "options": ["2", "-2", "3", "0"], "correctAnswer": "Answer: (B) -2" },
+      { "id": "ch5_mcq2", "question": "If the first term 'a' is 10 and common difference 'd' is 10, the first four terms are:", "options": ["10, 30, 50, 60", "10, 15, 20, 25", "10, 20, 30, 40", "10, 10, 10, 10"], "correctAnswer": "Answer: (C) 10, 20, 30, 40" },
+      { "id": "ch5_mcq3", "question": "The nth term of an AP is given by formula:", "options": ["2a + (n-1)d", "a + (n-1)d", "a + nd", "aⁿ - 1"], "correctAnswer": "Answer: (B) a + (n-1)d" },
+      { "id": "ch5_mcq4", "question": "Which of the following is NOT an AP?", "options": ["2, 4, 6, 8", "5, 10, 15, 20", "1, 2, 4, 8", "3, 3, 3, 3"], "correctAnswer": "Answer: (C) 1, 2, 4, 8" },
+      { "id": "ch5_mcq5", "question": "The 10th term of the AP: 5, 8, 11, 14... is:", "options": ["32", "35", "38", "185"], "correctAnswer": "Answer: (A) 32" },
+      { "id": "ch5_mcq6", "question": "If n = 5, d = 2, a = 3, then aₙ is:", "options": ["10", "11", "12", "13"], "correctAnswer": "Answer: (B) 11" },
+      { "id": "ch5_mcq7", "question": "The sum of first five multiples of 3 is:", "options": ["45", "55", "65", "75"], "correctAnswer": "Answer: (A) 45" },
+      { "id": "ch5_mcq8", "question": "If 'd' is 0, the AP becomes:", "options": ["Increasing", "Decreasing", "Constant", "None of these"], "correctAnswer": "Answer: (C) Constant" },
+      { "id": "ch5_mcq9", "question": "The 30th term of the AP: 10, 7, 4... is:", "options": ["97", "77", "-77", "-87"], "correctAnswer": "Answer: (C) -77" },
+      { "id": "ch5_mcq10", "question": "The sum of first n positive integers is given by:", "options": ["n/2", "n²", "n(n+1)/2", "n(n-1)"], "correctAnswer": "Answer: (C) n(n+1)/2" },
+      { "id": "ch5_mcq11", "question": "In an AP, if Sₙ = n(4n+1), then S₁ (First term) is:", "options": ["4", "5", "6", "1"], "correctAnswer": "Answer: (B) 5" },
+      { "id": "ch5_mcq12", "question": "Find 'x' if 4, x, 12 are in AP.", "options": ["6", "8", "10", "16"], "correctAnswer": "Answer: (B) 8" },
+      { "id": "ch5_mcq13", "question": "The 11th term of the AP: -5, -2.5, 0, 2.5... is:", "options": ["20", "25", "30", "35"], "correctAnswer": "Answer: (A) 20" },
+      { "id": "ch5_mcq14", "question": "If a = 7 and a₁₃ = 35, then simple S₁₃ is:", "options": ["273", "263", "290", "300"], "correctAnswer": "Answer: (A) 273" },
+      { "id": "ch5_mcq15", "question": "How many 2-digit numbers are divisible by 3?", "options": ["29", "30", "31", "32"], "correctAnswer": "Answer: (B) 30" },
+      { "id": "ch5_mcq16", "question": "The sum of first 10 natural numbers is:", "options": ["50", "55", "60", "65"], "correctAnswer": "Answer: (B) 55" },
+      { "id": "ch5_mcq17", "question": "If 2k, 26, 40 are in AP, value of k is?", "options": ["4", "6", "8", "12"], "correctAnswer": "Answer: (B) 6" },
+      { "id": "ch5_mcq18", "question": "The list 1², 2², 3², 4²... is:", "options": ["An AP", "Not an AP", "An AP with d=2", "An AP with d=3"], "correctAnswer": "Answer: (B) Not an AP" },
+      { "id": "ch5_mcq19", "question": "If S₁₀ = 100, then average of first 10 terms is:", "options": ["10", "20", "100", "5"], "correctAnswer": "Answer: (A) 10" },
+      { "id": "ch5_mcq20", "question": "The 4th term from the END of AP: -11, -8, -5, ... 49 is:", "options": ["37", "40", "43", "58"], "correctAnswer": "Answer: (B) 40" }
+    ],
     theorems: [],
   },
   "ch4-quadratic-equations": {
     id: "ch4-quadratic-equations",
     number: 4,
     title: "Quadratic Equations",
-    introduction: "A quadratic equation in the variable x is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0. The standard form is ax² + bx + c = 0.",
+    introduction: "A quadratic equation in the variable x is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0. The standard form is ax² + bx + c = 0. In this chapter, we will study various methods of finding the roots of quadratic equations and applying them to solve daily life problems.",
     definitions: [],
-    keyPoints: ["A quadratic equation ax² + bx + c = 0 has two roots.", "Roots can be found by Factorization, Completing the Square, or Quadratic Formula.", "Quadratic Formula: x = {{frac}}-b ± √(b² - 4ac){{over}}2a{{endfrac}}", "Discriminant D = b² - 4ac determines the nature of roots.", "If D > 0: Two distinct real roots.", "If D = 0: Two equal real roots.", "If D < 0: No real roots."],
-    formulas: [],
+    keyPoints: [
+      "A quadratic equation ax² + bx + c = 0 has two roots.",
+      "Roots can be found by Factorization, Completing the Square, or Quadratic Formula.",
+      "Quadratic Formula: x = {{frac}}-b ± √(b² - 4ac){{over}}2a{{endfrac}}",
+      "Discriminant D = b² - 4ac determines the nature of roots.",
+      "If D > 0: Two distinct real roots.",
+      "If D = 0: Two equal real roots.",
+      "If D < 0: No real roots."
+    ],
+    formulas: [
+      { "name": "Standard Form", "formula": "ax² + bx + c = 0, a ≠ 0" },
+      { "name": "Quadratic Formula", "formula": "x = {{frac}}-b ± √(b² - 4ac){{over}}2a{{endfrac}}" },
+      { "name": "Discriminant", "formula": "D = b² - 4ac" }
+    ],
     crux: [],
     summary: [],
-    exercises: [{
-      "id": "ex4.1", "name": "Exercise 4.1", "questions": [
-        {
-          "id": "ch4_ex1_q1_ii", "number": "1(ii)", "question": "Check whether the following are quadratic equations:\n(ii) x² - 2x = (-2)(3 - x)",
-          "solution": ["LHS = x² - 2x", "RHS = (-2)(3 - x) = -6 + 2x", "x² - 2x = -6 + 2x", "x² - 2x - 2x + 6 = 0", "x² - 4x + 6 = 0", "It is of the form ax² + bx + c = 0.", "Therefore, it is a quadratic equation."],
-          "answer": "Yes, it is a quadratic equation."
-        },
-        {
-          "id": "ch4_ex1_q2_i", "number": "2(i)", "question": "Represent the following situations in the form of quadratic equations:\n(i) The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.",
-          "solution": ["Let breadth = x meters.", "Length = 2x + 1 meters.", "Area = Length × Breadth = (2x + 1)x", "Given Area = 528", "2x² + x = 528", "2x² + x - 528 = 0"],
-          "answer": "2x² + x - 528 = 0",
-          "image": "ex4_1_q2_i.svg"
-        }
-      ]
-    }, {
-      "id": "ex4.2", "name": "Exercise 4.2", "questions": [
-        {
-          "id": "ch4_ex2_q5", "number": "5", "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
-          "solution": ["Let base = x cm.", "Altitude = x - 7 cm.", "Hypotenuse = 13 cm.", "By Pythagoras Theorem: x² + (x - 7)² = 13²", "x² + x² - 14x + 49 = 169", "2x² - 14x - 120 = 0", "x² - 7x - 60 = 0", "(x - 12)(x + 5) = 0", "x = 12 or x = -5 (Reject negative)", "Base = 12 cm, Altitude = 5 cm."],
-          "answer": "Sides are 12 cm and 5 cm.",
-          "image": "ex4_2_q5.svg"
-        }
-      ]
-    }, {
-      "id": "ex4.3", "name": "Exercise 4.3", "questions": [
-        {
-          "id": "ch4_ex3_q3", "number": "3", "question": "Find the roots of the following equations:\n(i) x - 1/x = 3, x ≠ 0",
-          "solution": ["x - 1/x = 3", "Multiply by x: x² - 1 = 3x", "x² - 3x - 1 = 0", "Using quadratic formula:", "x = {{frac}}3 ± √(9 - 4(1)(-1)){{over}}2{{endfrac}}", "x = {{frac}}3 ± √13{{over}}2{{endfrac}}"],
-          "answer": "Roots are {{frac}}3 ± √13{{over}}2{{endfrac}}",
-          "image": "ex4_3_q3.svg"
-        },
-        {
-          "id": "ch4_ex3_q5", "number": "5", "question": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth.",
-          "solution": [
-            "Let length = L and breadth = B. {{ref}}(Variable Definition){{endref}}",
-            "Perimeter = 2(L + B) = 80 {{ref}}(Given){{endref}}",
-            "L + B = 40 => B = 40 - L {{ref}}(Equation 1){{endref}}",
-            "Area = L × B = 400 {{ref}}(Given){{endref}}",
-            "Substitute B in Area equation:",
-            "L(40 - L) = 400",
-            "40L - L² = 400",
-            "L² - 40L + 400 = 0",
-            "Check for real roots using Discriminant D = b² - 4ac",
-            "D = (-40)² - 4(1)(400)",
-            "D = 1600 - 1600 = 0",
-            "Since D = 0, equal real roots exist.",
-            "L = {{frac}}-(-40){{over}}2(1){{endfrac}} = 20",
-            "B = 40 - 20 = 20"
-          ],
-          "answer": "Yes, possible. Length = 20m, Breadth = 20m.",
-          "image": "ex4_3_q5.svg"
-        }
-      ]
-    }],
-    examples: [{
-      "id": "ch4_eg1", "number": "Example 1", "question": "Represent the following situations mathematically:\n(i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. We would like to find out how many marbles they had to start with.",
-      "solution": [
-        "Let the number of marbles John had be x.",
-        "Then the number of marbles Jivanti had = 45 - x (Since total is 45).",
-        "Number of marbles left with John = x - 5",
-        "Number of marbles left with Jivanti = 45 - x - 5 = 40 - x",
-        "Product of their marbles = 124",
-        "(x - 5)(40 - x) = 124",
-        "40x - x² - 200 + 5x = 124",
-        "-x² + 45x - 200 = 124",
-        "x² - 45x + 324 = 0",
-        "This is the required quadratic equation."
-      ],
-      "answer": "x² - 45x + 324 = 0"
-    }],
+    exercises: [
+      {
+        "id": "ex4.1", "name": "Exercise 4.1", "questions": [
+          {
+            "id": "ch4_ex1_q1_i", "number": "1(i)", "question": "Check whether the following are quadratic equations:\n(i) (x + 1)² = 2(x – 3)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Expand LHS: (x + 1)² = x² + 2x + 1",
+              "Expand RHS: 2(x - 3) = 2x - 6",
+              "Equating both sides:",
+              "x² + 2x + 1 = 2x - 6",
+              "x² + 2x - 2x + 1 + 6 = 0",
+              "x² + 7 = 0",
+              "It is of the form ax² + bx + c = 0 (where b = 0)."
+            ],
+            "answer": "Yes, it is a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_ii", "number": "1(ii)", "question": "Check whether the following are quadratic equations:\n(ii) x² – 2x = (–2) (3 – x)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Simplify RHS: (-2)(3 - x) = -6 + 2x",
+              "Equation becomes:",
+              "x² - 2x = -6 + 2x",
+              "x² - 2x - 2x + 6 = 0",
+              "x² - 4x + 6 = 0",
+              "It is of the form ax² + bx + c = 0."
+            ],
+            "answer": "Yes, it is a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_iii", "number": "1(iii)", "question": "Check whether the following are quadratic equations:\n(iii) (x – 2)(x + 1) = (x – 1)(x + 3)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Expand LHS: x(x + 1) - 2(x + 1) = x² - x - 2",
+              "Expand RHS: x(x + 3) - 1(x + 3) = x² + 2x - 3",
+              "Equating LHS and RHS:",
+              "x² - x - 2 = x² + 2x - 3",
+              "Subtract x² from both sides:",
+              "-x - 2 = 2x - 3",
+              "-3x + 1 = 0",
+              "Degree is 1."
+            ],
+            "answer": "No, it is not a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_iv", "number": "1(iv)", "question": "Check whether the following are quadratic equations:\n(iv) (x – 3)(2x + 1) = x(x + 5)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Expand LHS: 2x² + x - 6x - 3 = 2x² - 5x - 3",
+              "Expand RHS: x² + 5x",
+              "Equating both sides:",
+              "2x² - 5x - 3 = x² + 5x",
+              "x² - 10x - 3 = 0",
+              "It is of the form ax² + bx + c = 0."
+            ],
+            "answer": "Yes, it is a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_v", "number": "1(v)", "question": "Check whether the following are quadratic equations:\n(v) (2x – 1)(x – 3) = (x + 5)(x – 1)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Expand LHS: 2x² - 7x + 3",
+              "Expand RHS: x² + 4x - 5",
+              "Equating LHS and RHS:",
+              "2x² - 7x + 3 = x² + 4x - 5",
+              "x² - 11x + 8 = 0",
+              "It is of the form ax² + bx + c = 0."
+            ],
+            "answer": "Yes, it is a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_vi", "number": "1(vi)", "question": "Check whether the following are quadratic equations:\n(vi) x² + 3x + 1 = (x – 2)²",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Expand RHS: (x - 2)² = x² - 4x + 4",
+              "Equation: x² + 3x + 1 = x² - 4x + 4",
+              "Cancel x² from both sides:",
+              "7x - 3 = 0",
+              "Degree is 1."
+            ],
+            "answer": "No, it is not a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_vii", "number": "1(vii)", "question": "Check whether the following are quadratic equations:\n(vii) (x + 2)³ = 2x(x² – 1)",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Using (a + b)³ = a³ + b³ + 3ab(a + b)",
+              "LHS = x³ + 8 + 6x(x + 2) = x³ + 6x² + 12x + 8",
+              "RHS = 2x³ - 2x",
+              "Equating LHS and RHS:",
+              "x³ + 6x² + 12x + 8 = 2x³ - 2x",
+              "-x³ + 6x² + 14x + 8 = 0",
+              "Degree is 3."
+            ],
+            "answer": "No, it is not a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q1_viii", "number": "1(viii)", "question": "Check whether the following are quadratic equations:\n(viii) x³ – 4x² – x + 1 = (x – 2)³",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Using (a - b)³ = a³ - b³ - 3ab(a - b)",
+              "RHS = x³ - 8 - 6x(x - 2) = x³ - 6x² + 12x - 8",
+              "Equation: x³ - 4x² - x + 1 = x³ - 6x² + 12x - 8",
+              "Cancel x³:",
+              "-4x² - x + 1 = -6x² + 12x - 8",
+              "2x² - 13x + 9 = 0",
+              "It is of the form ax² + bx + c = 0."
+            ],
+            "answer": "Yes, it is a quadratic equation."
+          },
+          {
+            "id": "ch4_ex1_q2_i", "number": "2(i)", "question": "Represent the following situations in the form of quadratic equations:\n(i) The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.",
+            "solution": [
+              "{{ref}}Given:{{endref}}",
+              "Area of plot = 528 m²",
+              "Length is 1 more than twice breadth.",
+              "{{ref}}Solution:{{endref}}",
+              "Let breadth = x meters.",
+              "Length = 2x + 1 meters.",
+              "Area = Length × Breadth = (2x + 1)x",
+              "Given Area = 528",
+              "2x² + x = 528",
+              "2x² + x - 528 = 0"
+            ],
+            "answer": "2x² + x - 528 = 0",
+            "image": "ex4_1_q2_i.svg"
+          },
+          {
+            "id": "ch4_ex1_q2_ii", "number": "2(ii)", "question": "Represent the following situations in the form of quadratic equations:\n(ii) The product of two consecutive positive integers is 306. We need to find the integers.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let the first integer be x",
+              "Then the next consecutive integer is x + 1",
+              "Product = x(x + 1) = 306",
+              "x² + x - 306 = 0"
+            ],
+            "answer": "x² + x - 306 = 0"
+          },
+          {
+            "id": "ch4_ex1_q2_iii", "number": "2(iii)", "question": "Represent the following situations in the form of quadratic equations:\n(iii) Rohan’s mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. We would like to find Rohan’s present age.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let Rohan's present age = x years",
+              "Mother's present age = (x + 26) years",
+              "After 3 years:",
+              "Rohan's age = x + 3",
+              "Mother's age = (x + 26) + 3 = x + 29",
+              "Product = (x + 3)(x + 29) = 360",
+              "x² + 29x + 3x + 87 = 360",
+              "x² + 32x - 273 = 0"
+            ],
+            "answer": "x² + 32x - 273 = 0"
+          },
+          {
+            "id": "ch4_ex1_q2_iv", "number": "2(iv)", "question": "Represent the following situations in the form of quadratic equations:\n(iv) A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. We need to find the speed of the train.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let uniform speed = x km/h",
+              "Time taken t1 = {{frac}}480{{over}}x{{endfrac}}",
+              "New speed = x - 8 km/h",
+              "New time t2 = {{frac}}480{{over}}x - 8{{endfrac}}",
+              "Difference t2 - t1 = 3",
+              "{{frac}}480{{over}}x - 8{{endfrac}} - {{frac}}480{{over}}x{{endfrac}} = 3",
+              "480 [ {{frac}}x - (x - 8){{over}}x(x - 8){{endfrac}} ] = 3",
+              "160 [ {{frac}}8{{over}}x² - 8x{{endfrac}} ] = 1",
+              "1280 = x² - 8x",
+              "x² - 8x - 1280 = 0"
+            ],
+            "answer": "x² - 8x - 1280 = 0"
+          }
+        ]
+      },
+      {
+        "id": "ex4.2", "name": "Exercise 4.2", "questions": [
+          {
+            "id": "ch4_ex2_q1_i", "number": "1(i)", "question": "Find the roots by factorisation:\n(i) x² – 3x – 10 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Split -3x as -5x + 2x",
+              "x² - 5x + 2x - 10 = 0",
+              "x(x - 5) + 2(x - 5) = 0",
+              "(x - 5)(x + 2) = 0",
+              "x = 5, x = -2"
+            ],
+            "answer": "Roots are 5, -2."
+          },
+          {
+            "id": "ch4_ex2_q1_ii", "number": "1(ii)", "question": "Find the roots by factorisation:\n(ii) 2x² + x – 6 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Split x as 4x - 3x",
+              "2x² + 4x - 3x - 6 = 0",
+              "2x(x + 2) - 3(x + 2) = 0",
+              "(2x - 3)(x + 2) = 0",
+              "x = 3/2, x = -2"
+            ],
+            "answer": "Roots are 3/2, -2."
+          },
+          {
+            "id": "ch4_ex2_q1_iii", "number": "1(iii)", "question": "Find the roots by factorisation:\n(iii) √2x² + 7x + 5√2 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Split 7x as 2x + 5x",
+              "√2x² + 2x + 5x + 5√2 = 0",
+              "√2x(x + √2) + 5(x + √2) = 0",
+              "(√2x + 5)(x + √2) = 0",
+              "x = -5/√2, x = -√2"
+            ],
+            "answer": "Roots are -5/√2, -√2."
+          },
+          {
+            "id": "ch4_ex2_q1_iv", "number": "1(iv)", "question": "Find the roots by factorisation:\n(iv) 2x² – x + 1/8 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Multiply by 8: 16x² - 8x + 1 = 0",
+              "(4x - 1)² = 0",
+              "x = 1/4, 1/4"
+            ],
+            "answer": "Roots are 1/4, 1/4."
+          },
+          {
+            "id": "ch4_ex2_q1_v", "number": "1(v)", "question": "Find the roots by factorisation:\n(v) 100x² – 20x + 1 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "(10x - 1)² = 0",
+              "x = 1/10, 1/10"
+            ],
+            "answer": "Roots are 1/10, 1/10."
+          },
+          {
+            "id": "ch4_ex2_q3", "number": "3", "question": "Find two numbers whose sum is 27 and product is 182.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let first number = x, second = 27 - x",
+              "x(27 - x) = 182",
+              "x² - 27x + 182 = 0",
+              "(x - 13)(x - 14) = 0",
+              "x = 13 or 14"
+            ],
+            "answer": "Numbers are 13 and 14."
+          },
+          {
+            "id": "ch4_ex2_q4", "number": "4", "question": "Find two consecutive positive integers, sum of whose squares is 365.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let integers be x, x+1",
+              "x² + (x + 1)² = 365",
+              "2x² + 2x - 364 = 0",
+              "x² + x - 182 = 0",
+              "(x + 14)(x - 13) = 0",
+              "Since positive, x = 13"
+            ],
+            "answer": "Integers are 13 and 14."
+          },
+          {
+            "id": "ch4_ex2_q5", "number": "5", "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let Base = x. Altitude = x - 7.",
+              "x² + (x - 7)² = 13²",
+              "2x² - 14x - 120 = 0",
+              "x² - 7x - 60 = 0",
+              "(x - 12)(x + 5) = 0",
+              "x = 12 (positive)",
+              "Altitude = 5"
+            ],
+            "answer": "Sides are 12 cm and 5 cm.",
+            "image": "ex4_2_q5.svg"
+          },
+          {
+            "id": "ch4_ex2_q6", "number": "6", "question": "A cottage industry produces a certain number of pottery articles in a day. Cost of production is 3 more than twice the number of articles. Total cost is 90. Find number of articles.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "Let articles = x. Cost = 2x + 3.",
+              "x(2x + 3) = 90",
+              "2x² + 3x - 90 = 0",
+              "(2x + 15)(x - 6) = 0",
+              "x = 6 (positive)"
+            ],
+            "answer": "Number of articles = 6, Cost = 15."
+          }
+        ]
+      },
+      {
+        "id": "ex4.3", "name": "Exercise 4.3", "questions": [
+          {
+            "id": "ch4_ex3_q1_i", "number": "1(i)", "question": "Find the nature of the roots:\n(i) 2x² – 3x + 5 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "D = b² - 4ac = (-3)² - 4(2)(5) = 9 - 40 = -31",
+              "D < 0, No real roots."
+            ],
+            "answer": "No real roots."
+          },
+          {
+            "id": "ch4_ex3_q1_ii", "number": "1(ii)", "question": "Find the nature of the roots:\n(ii) 3x² – 4√3x + 4 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "D = (-4√3)² - 4(3)(4) = 48 - 48 = 0",
+              "Two equal real roots: x = -b/2a = 4√3/6 = 2√3/3"
+            ],
+            "answer": "Roots are 2√3/3."
+          },
+          {
+            "id": "ch4_ex3_q1_iii", "number": "1(iii)", "question": "Find the nature of the roots:\n(iii) 2x² – 6x + 3 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "D = 36 - 24 = 12 > 0",
+              "Two distinct real roots: {{frac}}6 ± √12{{over}}4{{endfrac}}",
+              "{{frac}}3 ± √3{{over}}2{{endfrac}}"
+            ],
+            "answer": "Roots are {{frac}}3 ± √3{{over}}2{{endfrac}}."
+          },
+          {
+            "id": "ch4_ex3_q2_i", "number": "2(i)", "question": "Find k for equal roots:\n(i) 2x² + kx + 3 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "D = 0 => k² - 24 = 0",
+              "k = ±√24 = ±2√6"
+            ],
+            "answer": "k = ±2√6"
+          },
+          {
+            "id": "ch4_ex3_q2_ii", "number": "2(ii)", "question": "Find k for equal roots:\n(ii) kx(x – 2) + 6 = 0",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "kx² - 2kx + 6 = 0",
+              "D = 4k² - 24k = 0",
+              "4k(k - 6) = 0",
+              "k = 6 (k=0 rejected as not quadratic)"
+            ],
+            "answer": "k = 6"
+          },
+          {
+            "id": "ch4_ex3_q3", "number": "3", "question": "Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m²? If so, find its length and breadth.",
+            "solution": [
+              "{{ref}}Given:{{endref}}",
+              "Length = 2 × Breadth",
+              "Area = 800",
+              "{{ref}}Solution:{{endref}}",
+              "Let Breadth = x, Length = 2x",
+              "2x² = 800 => x² = 400 => x = 20",
+              "Length = 40 m, Breadth = 20 m."
+            ],
+            "answer": "Yes. Length = 40 m, Breadth = 20 m.",
+            "image": "ex4_3_q3.svg"
+          },
+          {
+            "id": "ch4_ex3_q4", "number": "4", "question": "Is the following situation possible? Sum of ages of two friends is 20. Four years ago, product of ages was 48.",
+            "solution": [
+              "{{ref}}Solution:{{endref}}",
+              "x + y = 20 => y = 20 - x",
+              "(x - 4)(16 - x) = 48",
+              "-x² + 20x - 64 = 48",
+              "x² - 20x + 112 = 0",
+              "D = 400 - 448 = -48 < 0",
+              "No real roots."
+            ],
+            "answer": "Not possible."
+          },
+          {
+            "id": "ch4_ex3_q5", "number": "5", "question": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth.",
+            "solution": [
+              "{{ref}}Given:{{endref}}",
+              "Perimeter = 80 m, Area = 400 m²",
+              "{{ref}}Solution:{{endref}}",
+              "Let L, B be dimensions.",
+              "2(L + B) = 80 => L + B = 40 => B = 40 - L",
+              "Area = L(40 - L) = 400",
+              "L² - 40L + 400 = 0",
+              "D = 1600 - 1600 = 0",
+              "L = 20, B = 20"
+            ],
+            "answer": "Yes. Length = 20 m, B = 20 m.",
+            "image": "ex4_3_q5.svg"
+          }
+        ]
+      }
+    ],
+    examples: [
+      {
+        "id": "ch4_eg1_i", "number": "Example 1(i)", "question": "Represent mathematically: John and Jivanti have 45 marbles. Both lost 5, product is 124.",
+        "solution": [
+          "{{ref}}Solution:{{endref}}",
+          "Let John have x. Jivanti has 45 - x.",
+          "(x - 5)(40 - x) = 124",
+          "x² - 45x + 324 = 0"
+        ],
+        "answer": "x² - 45x + 324 = 0"
+      },
+      {
+        "id": "ch4_eg1_ii", "number": "Example 1(ii)", "question": "Represent mathematically: Cost of production is 55 minus number of toys. Total cost 750.",
+        "solution": [
+          "{{ref}}Solution:{{endref}}",
+          "Let toys = x. Cost = 55 - x.",
+          "x(55 - x) = 750",
+          "x² - 55x + 750 = 0"
+        ],
+        "answer": "x² - 55x + 750 = 0"
+      },
+      {
+        "id": "ch4_eg2_i", "number": "Example 2(i)", "question": "Check if quadratic: (x - 2)² + 1 = 2x - 3",
+        "solution": ["x² - 4x + 5 = 2x - 3 => x² - 6x + 8 = 0. Yes."],
+        "answer": "Yes"
+      },
+      {
+        "id": "ch4_eg2_ii", "number": "Example 2(ii)", "question": "Check if quadratic: x(x + 1) + 8 = (x + 2)(x - 2)",
+        "solution": ["x² + x + 8 = x² - 4 => x + 12 = 0. No."],
+        "answer": "No"
+      },
+      {
+        "id": "ch4_eg2_iii", "number": "Example 2(iii)", "question": "Check if quadratic: x(2x + 3) = x² + 1",
+        "solution": ["2x² + 3x = x² + 1 => x² + 3x - 1 = 0. Yes."],
+        "answer": "Yes"
+      },
+      {
+        "id": "ch4_eg2_iv", "number": "Example 2(iv)", "question": "Check if quadratic: (x + 2)³ = x³ - 4",
+        "solution": ["x³ + 6x² + 12x + 8 = x³ - 4 => 6x² + 12x + 12 = 0. Yes."],
+        "answer": "Yes"
+      },
+      {
+        "id": "ch4_eg3", "number": "Example 3", "question": "Find roots of 2x² - 5x + 3 = 0 by factorisation.",
+        "solution": ["2x² - 2x - 3x + 3 = 0", "(2x - 3)(x - 1) = 0", "x = 3/2, 1"],
+        "answer": "3/2, 1"
+      },
+      {
+        "id": "ch4_eg4", "number": "Example 4", "question": "Find roots of 6x² - x - 2 = 0.",
+        "solution": ["6x² - 4x + 3x - 2 = 0", "(3x - 2)(2x + 1) = 0", "x = 2/3, -1/2"],
+        "answer": "2/3, -1/2"
+      },
+      {
+        "id": "ch4_eg5", "number": "Example 5", "question": "Find roots of 3x² - 2√6x + 2 = 0.",
+        "solution": ["(√3x - √2)² = 0", "x = √2/√3 = √6/3"],
+        "answer": "√6/3"
+      },
+      {
+        "id": "ch4_eg6", "number": "Example 6", "question": "Prayer hall dimensions: Area 300, Length is 1 more than twice breadth.",
+        "solution": ["2x² + x - 300 = 0", "x = 12 (positive)", "Length = 25"],
+        "answer": "12 m, 25 m"
+      },
+      {
+        "id": "ch4_eg8", "number": "Example 8", "question": "Pole erection on circular park boundary. Diff of distances from gates is 7m. Diameter 13m.",
+        "solution": ["x² + (x + 7)² = 13²", "x² + 7x - 60 = 0", "x = 5", "Distances 5m, 12m"],
+        "answer": "5m, 12m"
+      }
+    ],
     mcqs: [
-      { "id": "ch4_mcq1", "question": "Which of the following is a quadratic equation?", "options": ["x² + 2x + 1 = (4-x²)+3", "-2x² = (5-x)(2x-2/5)", "(k+1)x² + 3/2 x = 7, where k=-1", "x³ - x² = (x-1)³"], "correctAnswer": "Answer: (d) x³ - x² = (x-1)³" },
-      { "id": "ch4_mcq2", "question": "The roots of the quadratic equation x² - 0.04 = 0 are:", "options": ["± 0.2", "± 0.02", "0.4", "2"], "correctAnswer": "Answer: (a) ± 0.2" },
-      { "id": "ch4_mcq3", "question": "If 1/2 is a root of the equation x² + kx - 5/4 = 0, then the value of k is:", "options": ["2", "-2", "¼", "½"], "correctAnswer": "Answer: (a) 2" },
-      { "id": "ch4_mcq4", "question": "Values of k for which the quadratic equation 2x² - kx + k = 0 has equal roots is:", "options": ["0 only", "4", "8 only", "0, 8"], "correctAnswer": "Answer: (d) 0, 8" },
-      { "id": "ch4_mcq5", "question": "The quadratic equation 2x² - √5x + 1 = 0 has:", "options": ["two distinct real roots", "two equal real roots", "no real roots", "more than 2 real roots"], "correctAnswer": "Answer: (c) no real roots" }
+      { "id": "ch4_mcq1", "question": "Which of the following is a quadratic equation?", "options": ["x² + 2x + 1 = (4-x²)+3", "-2x² = (5-x)(2x-2/5)", "(k+1)x² + 3/2 x = 7, where k=-1", "x³ - x² = (x-1)³"], "correctAnswer": "Answer: (D) x³ - x² = (x-1)³" },
+      { "id": "ch4_mcq2", "question": "The roots of the quadratic equation x² - 0.04 = 0 are:", "options": ["± 0.2", "± 0.02", "0.4", "2"], "correctAnswer": "Answer: (A) ± 0.2" },
+      { "id": "ch4_mcq3", "question": "If 1/2 is a root of the equation x² + kx - 5/4 = 0, then the value of k is:", "options": ["2", "-2", "1/4", "1/2"], "correctAnswer": "Answer: (A) 2" },
+      { "id": "ch4_mcq4", "question": "The equation 2x² - √5x + 1 = 0 has:", "options": ["two distinct real roots", "two equal real roots", "no real roots", "more than 2 real roots"], "correctAnswer": "Answer: (C) no real roots" },
+      { "id": "ch4_mcq5", "question": "Which constant must be added and subtracted to solve 9x² + 3/4 x - √2 = 0 by completing square?", "options": ["1/8", "1/64", "1/4", "9/64"], "correctAnswer": "Answer: (B) 1/64" },
+      { "id": "ch4_mcq6", "question": "The roots of 4x² + 12x + 9 = 0 are:", "options": ["Real and distinct", "Real and equal", "No real roots", "Imaginary"], "correctAnswer": "Answer: (B) Real and equal" },
+      { "id": "ch4_mcq7", "question": "Values of k for which 2x² - kx + k = 0 has equal roots:", "options": ["0", "4", "8", "0, 8"], "correctAnswer": "Answer: (D) 0, 8" },
+      { "id": "ch4_mcq8", "question": "The roots of 7x² + x - 1 = 0 are:", "options": ["real and distinct", "real and equal", "not real", "none"], "correctAnswer": "Answer: (A) real and distinct" },
+      { "id": "ch4_mcq9", "question": "If x² + 4x + k = 0 has real and distinct roots, then:", "options": ["k < 4", "k > 4", "k >= 4", "k <= 4"], "correctAnswer": "Answer: (A) k < 4" },
+      { "id": "ch4_mcq10", "question": "Sum of squares of two consecutive natural numbers is 313. Numbers are:", "options": ["12, 13", "13, 14", "11, 12", "14, 15"], "correctAnswer": "Answer: (A) 12, 13" }
     ],
     theorems: [],
   },
