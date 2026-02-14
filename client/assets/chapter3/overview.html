@@ -116,57 +116,135 @@
 
     <div class="header">
         <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 3: Linear Equations</div>
+        <div class="chapter-title">Chapter 3: Pair of Linear Equations in Two Variables</div>
     </div>
 
     <div class="section-title">1. Introduction</div>
     <div class="content-box">
-        <p>A pair of linear equations in two variables x and y represents two straight lines in a 2D plane. We can solve
-            them to find if they intersect at a point (unique solution), are parallel (no solution), or coincident
-            (infinitely many solutions).</p>
-    </div>
-
-    <div class="section-title">2. Standard Form</div>
-    <div class="content-box">
-        <div class="step">The general form for a pair of linear equations is:</div>
-        <div class="step"><span class="bold">1. </span> a₁x + b₁y + c₁ = 0</div>
-        <div class="step"><span class="bold">2. </span> a₂x + b₂y + c₂ = 0</div>
-        <div class="step">where a₁, b₁, c₁, a₂, b₂, c₂ are real numbers.</div>
-    </div>
-
-    <div class="section-title">3. Conditions for Consistency</div>
-    <div class="content-box">
-        <div class="step"><span class="formula">Case 1: Intersecting Lines</span></div>
-        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
-                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
-                    class="denominator">b₂</span></span></div>
-        <div class="step">Result: Exactly one solution (Unique). The system is <span class="bold">Consistent</span>.
+        <div class="step">
+            A linear equation in two variables is an equation of the form <span class="bold">ax + by + c = 0</span>,
+            where a, b, and c are real numbers, and a and b are not both zero. This chapter focuses on the "pair" of
+            such equations, meaning two linear equations in the same two variables considered together.
         </div>
-
-        <div class="step"><span class="formula">Case 2: Coincident Lines</span></div>
-        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
-                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
-                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">c₁</span><span
-                    class="denominator">c₂</span></span></div>
-        <div class="step">Result: Infinitely many solutions. The system is <span class="bold">Consistent
-                (Dependent)</span>.</div>
-
-        <div class="step"><span class="formula">Case 3: Parallel Lines</span></div>
-        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
-                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
-                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
-                    class="denominator">c₂</span></span></div>
-        <div class="step">Result: No solution. The system is <span class="bold">Inconsistent</span>.</div>
+        <div class="step">
+            Geometrically, a linear equation represents a straight line. When we have a pair of linear equations, we are
+            looking at two lines in the same plane. The solution to the pair corresponds to the point(s) common to both
+            lines.
+        </div>
     </div>
 
-    <div class="section-title">4. Methods of Solution</div>
+    <div class="section-title">2. Definitions</div>
     <div class="content-box">
-        <div class="key-point"><span class="bold">Graphical Method:</span> Plot both lines on a graph paper and find the
-            point of intersection.</div>
-        <div class="key-point"><span class="bold">Substitution Method:</span> Compute the value of one variable from one
-            equation and substitute it into the other equation.</div>
-        <div class="key-point"><span class="bold">Elimination Method:</span> Multiply equations by constants to make the
-            coefficients of one variable equal, then add or subtract to eliminate that variable.</div>
+        <div class="key-point">
+            <span class="bold">Linear Equation:</span> An algebraic equation where the highest degree of the variable is
+            1. Its graph is always a straight line.
+        </div>
+        <div class="key-point">
+            <span class="bold">System of Equations:</span> A set of two or more equations with the same variables.
+        </div>
+        <div class="key-point">
+            <span class="bold">Solution:</span> A pair of values (x, y) that satisfies both equations simultaneously.
+        </div>
+        <div class="key-point">
+            <span class="bold">Consistent System:</span> A system of equations that has at least one solution (either a
+            unique solution or infinitely many solutions).
+        </div>
+        <div class="key-point">
+            <span class="bold">Inconsistent System:</span> A system of equations that has no solution (the lines are
+            parallel).
+        </div>
+        <div class="key-point">
+            <span class="bold">Dependent System:</span> A consistent system that has infinitely many solutions (the
+            lines coincide).
+        </div>
+    </div>
+
+    <div class="section-title">3. Formulas and Conditions</div>
+    <div class="content-box">
+        <div class="step"><span class="bold">Standard Form:</span></div>
+        <div class="step">Equation 1: a₁x + b₁y + c₁ = 0</div>
+        <div class="step">Equation 2: a₂x + b₂y + c₂ = 0</div>
+
+        <div style="margin-top: 15px;"></div>
+
+        <div class="step"><span class="formula">Condition 1: Intersecting Lines (Unique Solution)</span></div>
+        <div class="step">
+            <span class="fraction"><span class="numerator">a₁</span><span class="denominator">a₂</span></span> ≠
+            <span class="fraction"><span class="numerator">b₁</span><span class="denominator">b₂</span></span>
+        </div>
+        <div class="step">System is <span class="bold">Consistent</span>.</div>
+
+        <div style="margin-top: 10px;"></div>
+
+        <div class="step"><span class="formula">Condition 2: Coincident Lines (Infinitely Many Solutions)</span></div>
+        <div class="step">
+            <span class="fraction"><span class="numerator">a₁</span><span class="denominator">a₂</span></span> =
+            <span class="fraction"><span class="numerator">b₁</span><span class="denominator">b₂</span></span> =
+            <span class="fraction"><span class="numerator">c₁</span><span class="denominator">c₂</span></span>
+        </div>
+        <div class="step">System is <span class="bold">Consistent (Dependent)</span>.</div>
+
+        <div style="margin-top: 10px;"></div>
+
+        <div class="step"><span class="formula">Condition 3: Parallel Lines (No Solution)</span></div>
+        <div class="step">
+            <span class="fraction"><span class="numerator">a₁</span><span class="denominator">a₂</span></span> =
+            <span class="fraction"><span class="numerator">b₁</span><span class="denominator">b₂</span></span> ≠
+            <span class="fraction"><span class="numerator">c₁</span><span class="denominator">c₂</span></span>
+        </div>
+        <div class="step">System is <span class="bold">Inconsistent</span>.</div>
+    </div>
+
+    <div class="section-title">4. Chapter Crux</div>
+    <div class="content-box">
+        <div class="step">
+            The crux of this chapter lies in understanding the relationship between the algebraic representation and the
+            geometric representation of lines.
+        </div>
+        <div class="key-point">
+            <span class="bold">1. Graphical Representation:</span>
+            <ul>
+                <li>If lines intersect at one point → Customary unique solution.</li>
+                <li>If lines are parallel → No solution.</li>
+                <li>If lines overlap exactly → Infinitely many solutions.</li>
+            </ul>
+        </div>
+        <div class="key-point">
+            <span class="bold">2. Algebraic Methods:</span>
+            <ul>
+                <li><span class="bold">Substitution Method:</span> Solve for one variable and substitute it into the
+                    other equation.</li>
+                <li><span class="bold">Elimination Method:</span> Equalize coefficients to eliminate one variable by
+                    addition or subtraction.</li>
+                <li><span class="bold">Cross-Multiplication Method:</span> A direct formula-based approach (often
+                    optional but useful).</li>
+            </ul>
+        </div>
+        <div class="step">
+            Mastering the conditions for consistency (<span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span>...) is critical for solving questions quickly
+            without solving the entire system.
+        </div>
+    </div>
+
+    <div class="section-title">5. Summary</div>
+    <div class="content-box">
+        <div class="step">
+            In this chapter, we explored the world of "Pair of Linear Equations in Two Variables". We learned that every
+            linear equation in two variables represents a straight line on a Cartesian plane.
+        </div>
+        <div class="step">
+            We discovered that a pair of such equations can behave in three ways: they intersect, they are parallel, or
+            they coincide. We can predict this behavior simply by comparing the ratios of their coefficients <span
+                class="fraction"><span class="numerator">a₁</span><span class="denominator">a₂</span></span>, <span
+                class="fraction"><span class="numerator">b₁</span><span class="denominator">b₂</span></span>, and <span
+                class="fraction"><span class="numerator">c₁</span><span class="denominator">c₂</span></span>.
+        </div>
+        <div class="step">
+            Finally, we equipped ourselves with powerful algebraic tools—Substitution and Elimination—to find the exact
+            values of variables, enabling us to solve a wide range of real-world problems involving ages, fractions,
+            speed, and costs.
+        </div>
     </div>
 
 </body>
