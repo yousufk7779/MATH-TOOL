@@ -83,32 +83,18 @@ export const chapterContents: Record<string, ChapterContent> = {
     mcqs: [{ "id": "ch3-linear-equations_mcq1", "question": "The pair of equations x = a and y = b graphically represents lines which are:", "options": ["parallel", "intersecting at (b, a)", "coincident", "intersecting at (a, b)"], "correctAnswer": "Answer: (d) intersecting at (a, b)" }, { "id": "ch3-linear-equations_mcq2", "question": "For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines?", "options": ["{{frac}}1{{over}}2{{endfrac}}", "{{frac}}-1{{over}}2{{endfrac}}", "2", "-2"], "correctAnswer": "Answer: (c) 2" }, { "id": "ch3-linear-equations_mcq3", "question": "If the lines given by 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, then the value of k is:", "options": ["{{frac}}-5{{over}}4{{endfrac}}", "{{frac}}2{{over}}5{{endfrac}}", "{{frac}}15{{over}}4{{endfrac}}", "{{frac}}3{{over}}2{{endfrac}}"], "correctAnswer": "Answer: (c) {{frac}}15{{over}}4{{endfrac}}" }, { "id": "ch3-linear-equations_mcq4", "question": "The value of c for which the pair of equations cx - y = 2 and 6x - 2y = 3 will have infinitely many solutions is:", "options": ["3", "-3", "-12", "no value"], "correctAnswer": "Answer: (d) no value" }, { "id": "ch3-linear-equations_mcq5", "question": "One equation of a pair of dependent linear equations is -5x + 7y = 2. The second equation can be:", "options": ["10x + 14y + 4 = 0", "-10x - 14y + 4 = 0", "-10x + 14y + 4 = 0", "10x - 14y = -4"], "correctAnswer": "Answer: (d) 10x - 14y = -4" }, { "id": "ch3-linear-equations_mcq6", "question": "A pair of linear equations which has a unique solution x = 2, y = -3 is:", "options": ["x + y = -1; 2x - 3y = -5", "2x + 5y = -11; 4x + 10y = -22", "2x - y = 1; 3x + 2y = 0", "x - 4y - 14 = 0; 5x - y - 13 = 0"], "correctAnswer": "Answer: (d) x - 4y - 14 = 0; 5x - y - 13 = 0" }, { "id": "ch3-linear-equations_mcq7", "question": "If x = a, y = b is the solution of the equations x - y = 2 and x + y = 4, then the values of a and b are:", "options": ["3 and 5", "5 and 3", "3 and 1", "-1 and -3"], "correctAnswer": "Answer: (c) 3 and 1" }, { "id": "ch3-linear-equations_mcq8", "question": "Aruna has only ₹ 1 and ₹ 2 coins with her. If total coins are 50 and amount is ₹ 75, then number of ₹ 1 and ₹ 2 coins are:", "options": ["35 and 15", "35 and 20", "15 and 35", "25 and 25"], "correctAnswer": "Answer: (d) 25 and 25" }, { "id": "ch3-linear-equations_mcq9", "question": "The father's age is six times his son's age. Four years hence, the age of the father will be four times his son's age. The present ages (in years) are:", "options": ["4 and 24", "5 and 30", "6 and 36", "3 and 24"], "correctAnswer": "Answer: (c) 6 and 36" }, { "id": "ch3-linear-equations_mcq10", "question": "Graphically, the pair of equations 6x - 3y + 10 = 0 and 2x - y + 9 = 0 represents two lines which are:", "options": ["intersecting at exactly one point", "intersecting at exactly two points", "coincident", "parallel"], "correctAnswer": "Answer: (d) parallel" }],
     theorems: [],
   },
-  "ch4-quadratic-equations": {
-    id: "ch4-quadratic-equations",
-    number: 4,
-    title: "Quadratic Equations",
-    introduction: "",
-    definitions: [],
-    keyPoints: ["A quadratic equation in the variable x is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0.", "The standard form is:", "ax² + bx + c = 0, a ≠ 0", "Here:", "a is the coefficient of x²", "b is the coefficient of x", "c is the constant term", "1. Factorisation: Splitting the middle term to form linear factors and equating each to zero.", "2. Completing the Square: Converting the equation into a perfect square form (x + a)² - b² = 0.", "3. Quadratic Formula: Using the direct formula to find roots.", "x = {{frac}}-b ± √D{{over}}2a{{endfrac}}", "Where D = b² - 4ac is called the Discriminant.", "The nature of roots depends on the value of the Discriminant D = b² - 4ac:", "Case 1: D > 0", "Two distinct real roots exist.", "Roots are {{frac}}-b + √D{{over}}2a{{endfrac}} and {{frac}}-b - √D{{over}}2a{{endfrac}}.", "Case 2: D = 0", "Two equal real roots exist (Real and Coincident).", "Roots are {{frac}}-b{{over}}2a{{endfrac}}, {{frac}}-b{{over}}2a{{endfrac}}.", "Case 3: D", "No real roots exist (Roots are imaginary)."],
-    formulas: [],
-    crux: [],
-    summary: [],
-    exercises: [{ "id": "ex4.1", "name": "Exercise 4.1", "questions": [{ "id": "ch4-quadratic-equations_ex1_q1", "number": "1(i)", "question": "Check whether the following are quadratic equations:\n(i) (x + 1)² = 2(x – 3)", "solution": ["Expand LHS: (x + 1)² = x² + 2x + 1", "Expand RHS: 2(x - 3) = 2x - 6", "Equating both sides:", "x² + 2x + 1 = 2x - 6", "Bring all terms to LHS:", "x² + 2x - 2x + 1 + 6 = 0", "x² + 7 = 0", "It is of the form ax² + bx + c = 0 (where b = 0)."], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q2", "number": "1(ii)", "question": "Check whether the following are quadratic equations:\n(ii) x² – 2x = (–2) (3 – x)", "solution": ["Simplify RHS: (-2)(3 - x) = -6 + 2x", "Equation becomes:", "x² - 2x = -6 + 2x", "x² - 2x - 2x + 6 = 0", "x² - 4x + 6 = 0", "It is of the form ax² + bx + c = 0."], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q3", "number": "1(iii)", "question": "Check whether the following are quadratic equations:\n(iii) (x – 2)(x + 1) = (x – 1)(x + 3)", "solution": ["Expand LHS: x(x + 1) - 2(x + 1)", "= x² + x - 2x - 2", "= x² - x - 2", "Expand RHS: x(x + 3) - 1(x + 3)", "= x² + 3x - x - 3", "= x² + 2x - 3", "Equating LHS and RHS:", "x² - x - 2 = x² + 2x - 3", "Subtract x² from both sides:", "-x - 2 = 2x - 3", "-x - 2x - 2 + 3 = 0", "-3x + 1 = 0", "Degree is 1."], "answer": "No, it is not a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q4", "number": "1(iv)", "question": "Check whether the following are quadratic equations:\n(iv) (x – 3)(2x + 1) = x(x + 5)", "solution": ["Expand LHS: x(2x + 1) - 3(2x + 1)", "= 2x² + x - 6x - 3", "= 2x² - 5x - 3", "Expand RHS: x² + 5x", "Equating both sides:", "2x² - 5x - 3 = x² + 5x", "2x² - x² - 5x - 5x - 3 = 0", "x² - 10x - 3 = 0", "It is of the form ax² + bx + c = 0."], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q5", "number": "1(v)", "question": "Check whether the following are quadratic equations:\n(v) (2x – 1)(x – 3) = (x + 5)(x – 1)", "solution": ["Expand LHS: 2x(x - 3) - 1(x - 3)", "= 2x² - 6x - x + 3", "= 2x² - 7x + 3", "Expand RHS: x(x - 1) + 5(x - 1)", "= x² - x + 5x - 5", "= x² + 4x - 5", "Equating LHS and RHS:", "2x² - 7x + 3 = x² + 4x - 5", "2x² - x² - 7x - 4x + 3 + 5 = 0", "x² - 11x + 8 = 0"], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q6", "number": "1(vi)", "question": "Check whether the following are quadratic equations:\n(vi) x² + 3x + 1 = (x – 2)²", "solution": ["Expand RHS: (x - 2)² = x² - 4x + 4", "Equation: x² + 3x + 1 = x² - 4x + 4", "Cancel x² from both sides:", "3x + 1 = -4x + 4", "3x + 4x + 1 - 4 = 0", "7x - 3 = 0", "Degree is 1."], "answer": "No, it is not a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q7", "number": "1(vii)", "question": "Check whether the following are quadratic equations:\n(vii) (x + 2)³ = 2x(x² – 1)", "solution": ["Using identity (a + b)³ = a³ + b³ + 3ab(a + b)", "LHS = x³ + 8 + 3(x)(2)(x + 2)", "= x³ + 8 + 6x(x + 2)", "= x³ + 6x² + 12x + 8", "RHS = 2x(x² - 1) = 2x³ - 2x", "Equating LHS and RHS:", "x³ + 6x² + 12x + 8 = 2x³ - 2x", "Rearranging terms:", "2x³ - x³ - 2x - 12x - 6x² - 8 = 0", "x³ - 6x² - 14x - 8 = 0", "Degree is 3."], "answer": "No, it is not a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q8", "number": "1(viii)", "question": "Check whether the following are quadratic equations:\n(viii) x³ – 4x² – x + 1 = (x – 2)³", "solution": ["Expand RHS using (a - b)³ = a³ - b³ - 3ab(a - b)", "RHS = x³ - 8 - 3(x)(2)(x - 2)", "= x³ - 8 - 6x(x - 2)", "= x³ - 6x² + 12x - 8", "Equation: x³ - 4x² - x + 1 = x³ - 6x² + 12x - 8", "Cancel x³ from both sides:", "-4x² - x + 1 = -6x² + 12x - 8", "Bring RHS terms to LHS:", "6x² - 4x² - x - 12x + 1 + 8 = 0", "2x² - 13x + 9 = 0"], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_ex1_q9", "number": "2(i)", "question": "Represent the following situations in the form of quadratic equations:\n(i) The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.", "solution": ["Area of plot = 528 m²", "Length is 1 more than twice breadth.", "Quadratic equation satisfying the condition.", "Let breadth of the plot = x meters", "Then, Length = 2x + 1 meters", "Area = Length × Breadth", "528 = (2x + 1)(x)", "528 = 2x² + x", "Rearranging terms:"], "answer": "2x² + x - 528 = 0" }, { "id": "ch4-quadratic-equations_ex1_q10", "number": "2(ii)", "question": "Represent the following situations in the form of quadratic equations:\n(ii) The product of two consecutive positive integers is 306. We need to find the integers.", "solution": ["Product of two consecutive positive integers = 306", "Quadratic representation.", "Let the first integer be x", "Then the next consecutive integer is x + 1", "Product = x(x + 1)", "According to question:", "x(x + 1) = 306", "x² + x = 306"], "answer": "x² + x - 306 = 0" }, { "id": "ch4-quadratic-equations_ex1_q11", "number": "2(iii)", "question": "Represent the following situations in the form of quadratic equations:\n(iii) Rohan’s mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. We would like to find Rohan’s present age.", "solution": ["Mother is 26 years older than Rohan.", "Product of ages 3 years hence = 360.", "Let Rohan's present age = x years", "Mother's present age = (x + 26) years", "After 3 years:", "Rohan's age = x + 3", "Mother's age = (x + 26) + 3 = x + 29", "Product = (x + 3)(x + 29)", "According to condition:", "(x + 3)(x + 29) = 360", "x(x + 29) + 3(x + 29) = 360", "x² + 29x + 3x + 87 = 360", "x² + 32x + 87 - 360 = 0"], "answer": "x² + 32x - 273 = 0" }, { "id": "ch4-quadratic-equations_ex1_q12", "number": "2(iv)", "question": "Represent the following situations in the form of quadratic equations:\n(iv) A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. We need to find the speed of the train.", "solution": ["Distance = 480 km", "If speed is 8 km/h less, time increases by 3 hours.", "Let uniform speed of train = x km/h", "Time taken (t₁) = {{frac}}Distance{{over}}Speed{{endfrac}} = {{frac}}480{{over}}x{{endfrac}} hours", "New speed = (x - 8) km/h", "New Time (t₂) = {{frac}}480{{over}}x - 8{{endfrac}} hours", "Difference in time is 3 hours:", "t₂ - t₁ = 3", "{{frac}}480{{over}}x - 8{{endfrac}} - {{frac}}480{{over}}x{{endfrac}} = 3", "Take 480 common:", "480 [{{frac}}1{{over}}x - 8{{endfrac}} - {{frac}}1{{over}}x{{endfrac}}] = 3", "Simplify bracket terms:", "480 [{{frac}}x - (x - 8){{over}}x(x - 8){{endfrac}}] = 3", "480 [{{frac}}8{{over}}x² - 8x{{endfrac}}] = 3", "Divide both sides by 3:", "160 [{{frac}}8{{over}}x² - 8x{{endfrac}}] = 1", "1280 = x² - 8x", "Rearranging terms:"], "answer": "x² - 8x - 1280 = 0" }] }, { "id": "ex4.2", "name": "Exercise 4.2", "questions": [{ "id": "ch4-quadratic-equations_ex2_q1", "number": "1(i)", "question": "Find the roots of the following quadratic equations by factorisation:\n(i) x² – 3x – 10 = 0", "solution": ["Split the middle term -3x as -5x + 2x:", "x² - 5x + 2x - 10 = 0", "Take common factors:", "x(x - 5) + 2(x - 5) = 0", "(x - 5)(x + 2) = 0", "Either x - 5 = 0 or x + 2 = 0"], "answer": "Roots are 5 and -2." }, { "id": "ch4-quadratic-equations_ex2_q2", "number": "1(ii)", "question": "Find the roots of the following quadratic equations by factorisation:\n(ii) 2x² + x – 6 = 0", "solution": ["Split the middle term x as 4x - 3x:", "2x² + 4x - 3x - 6 = 0", "2x(x + 2) - 3(x + 2) = 0", "(2x - 3)(x + 2) = 0", "Either 2x - 3 = 0 or x + 2 = 0", "2x = 3 ⇒ x = {{frac}}3{{over}}2{{endfrac}}", "x = -2"], "answer": "Roots are {{frac}}3{{over}}2{{endfrac}} and -2." }, { "id": "ch4-quadratic-equations_ex2_q3", "number": "1(iii)", "question": "Find the roots of the following quadratic equations by factorisation:\n(iii) √2x² + 7x + 5√2 = 0", "solution": ["Split the middle term 7x as 2x + 5x:", "√2x² + 2x + 5x + 5√2 = 0", "√2x(x + √2) + 5(x + √2) = 0", "(√2x + 5)(x + √2) = 0", "Either √2x + 5 = 0 or x + √2 = 0", "√2x = -5 ⇒ x = {{frac}}-5{{over}}√2{{endfrac}}", "x = -√2"], "answer": "Roots are {{frac}}-5{{over}}√2{{endfrac}} and -√2." }, { "id": "ch4-quadratic-equations_ex2_q4", "number": "1(iv)", "question": "Find the roots of the following quadratic equations by factorisation:\n(iv) 2x² – x + {{frac}}1{{over}}8{{endfrac}} = 0", "solution": ["Multiply entire equation by 8 to remove fraction:", "16x² - 8x + 1 = 0", "Split middle term -8x as -4x - 4x:", "16x² - 4x - 4x + 1 = 0", "4x(4x - 1) - 1(4x - 1) = 0", "(4x - 1)(4x - 1) = 0", "(4x - 1)² = 0", "4x = 1 ⇒ x = {{frac}}1{{over}}4{{endfrac}}"], "answer": "Roots are {{frac}}1{{over}}4{{endfrac}}, {{frac}}1{{over}}4{{endfrac}}." }, { "id": "ch4-quadratic-equations_ex2_q5", "number": "1(v)", "question": "Find the roots of the following quadratic equations by factorisation:\n(v) 100x² – 20x + 1 = 0", "solution": ["Split middle term -20x as -10x - 10x:", "100x² - 10x - 10x + 1 = 0", "10x(10x - 1) - 1(10x - 1) = 0", "(10x - 1)(10x - 1) = 0", "(10x - 1)² = 0", "10x = 1 ⇒ x = {{frac}}1{{over}}10{{endfrac}}"], "answer": "Roots are {{frac}}1{{over}}10{{endfrac}}, {{frac}}1{{over}}10{{endfrac}}." }, { "id": "ch4-quadratic-equations_ex2_q6", "number": "3", "question": "Find two numbers whose sum is 27 and product is 182.", "solution": ["Sum of numbers = 27", "Product of numbers = 182", "The two numbers.", "Let first number = x", "Then second number = 27 - x", "Checking product condition:", "x(27 - x) = 182", "27x - x² = 182", "Rearranging to form ax² + bx + c = 0:", "x² - 27x + 182 = 0", "Split middle term -27x as -13x - 14x:", "x² - 13x - 14x + 182 = 0", "x(x - 13) - 14(x - 13) = 0", "(x - 13)(x - 14) = 0", "x = 13 or x = 14", "If x = 13, second number is 14.", "If x = 14, second number is 13."], "answer": "Numbers are 13 and 14." }, { "id": "ch4-quadratic-equations_ex2_q7", "number": "4", "question": "Find two consecutive positive integers, sum of whose squares is 365.", "solution": ["Integers are consecutive positive integers.", "Sum of squares = 365.", "Let integers be x and x + 1", "x² + (x + 1)² = 365", "x² + (x² + 2x + 1) = 365", "2x² + 2x + 1 - 365 = 0", "2x² + 2x - 364 = 0", "Divide by 2:", "x² + x - 182 = 0", "Split middle term x as 14x - 13x:", "x² + 14x - 13x - 182 = 0", "x(x + 14) - 13(x + 14) = 0", "(x + 14)(x - 13) = 0", "x = -14 or x = 13", "Since integers are positive, x = 13.", "Next integer = 13 + 1 = 14."], "answer": "Integers are 13 and 14." }, { "id": "ch4-quadratic-equations_ex2_q8", "number": "5", "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.", "solution": ["Hypotenuse = 13 cm", "Altitude = Base - 7 cm", "Base and Altitude.", "Let Base = x cm", "Then Altitude = (x - 7) cm", "By Pythagoras Theorem:", "Base² + Altitude² = Hypotenuse²", "x² + (x - 7)² = 13²", "x² + (x² - 14x + 49) = 169", "2x² - 14x + 49 - 169 = 0", "2x² - 14x - 120 = 0", "Divide by 2:", "x² - 7x - 60 = 0", "Split middle term -7x as -12x + 5x:", "x² - 12x + 5x - 60 = 0", "x(x - 12) + 5(x - 12) = 0", "(x - 12)(x + 5) = 0", "x = 12 or x = -5", "Since length cannot be negative, x = 12.", "Base = 12 cm.", "Altitude = 12 - 7 = 5 cm."], "answer": "Sides are 12 cm and 5 cm.", "image": "ex4_2_q5.svg" }, { "id": "ch4-quadratic-equations_ex2_q9", "number": "6", "question": "A cottage industry produces a certain number of pottery articles in a day... the cost of production of each article (in rupees) was 3 more than twice the number of articles produced... total cost of production was ₹ 90... find the number of articles produced and the cost of each article.", "solution": ["Let number of articles produced = x", "Cost of each article = 2x + 3", "Total cost = (Number of articles) × (Cost per article)", "x(2x + 3) = 90", "2x² + 3x - 90 = 0", "Split middle term 3x as 15x - 12x:", "2x² - 12x + 15x - 90 = 0", "2x(x - 6) + 15(x - 6) = 0", "(2x + 15)(x - 6) = 0", "x = 6 or x = {{frac}}-15{{over}}2{{endfrac}}", "Number of articles cannot be fractional/negative, so x = 6.", "Cost per article = 2(6) + 3 = 15."], "answer": "Number of articles = 6, Cost per article = ₹ 15." }] }, { "id": "ex4.3", "name": "Exercise 4.3", "questions": [{ "id": "ch4-quadratic-equations_ex3_q1", "number": "1(i)", "question": "Find the nature of the roots of the following quadratic equations. If the real roots exist, find them:\n(i) 2x² – 3x + 5 = 0", "solution": ["Determining coefficients: a = 2, b = -3, c = 5", "Discriminant D = b² - 4ac", "D = (-3)² - 4(2)(5)", "D = 9 - 40", "D = -31", "Since D"], "answer": "No real roots." }, { "id": "ch4-quadratic-equations_ex3_q2", "number": "1(ii)", "question": "Find the nature of the roots of the following quadratic equations. If the real roots exist, find them:\n(ii) 3x² – 4√3x + 4 = 0", "solution": ["Determining coefficients: a = 3, b = -4√3, c = 4", "Discriminant D = b² - 4ac", "D = (-4√3)² - 4(3)(4)", "D = 16(3) - 48", "D = 48 - 48 = 0", "Since D = 0, two equal, real roots exist.", "Roots are given by x = {{frac}}-b{{over}}2a{{endfrac}}", "x = {{frac}}-(-4√3){{over}}2(3){{endfrac}}", "x = {{frac}}4√3{{over}}6{{endfrac}}", "Simplifying: x = {{frac}}2√3{{over}}3{{endfrac}}"], "answer": "Roots are {{frac}}2√3{{over}}3{{endfrac}}, {{frac}}2√3{{over}}3{{endfrac}}." }, { "id": "ch4-quadratic-equations_ex3_q3", "number": "1(iii)", "question": "Find the nature of the roots of the following quadratic equations. If the real roots exist, find them:\n(iii) 2x² – 6x + 3 = 0", "solution": ["Determining coefficients: a = 2, b = -6, c = 3", "Discriminant D = b² - 4ac", "D = (-6)² - 4(2)(3)", "D = 36 - 24 = 12", "Since D > 0, two distinct real roots exist.", "Roots x = {{frac}}-b ± √D{{over}}2a{{endfrac}}", "x = {{frac}}-(-6) ± √12{{over}}2(2){{endfrac}}", "x = {{frac}}6 ± 2√3{{over}}4{{endfrac}}", "Divide numerator and denominator by 2:", "x = {{frac}}3 ± √3{{over}}2{{endfrac}}"], "answer": "Roots are {{frac}}3 + √3{{over}}2{{endfrac}} and {{frac}}3 - √3{{over}}2{{endfrac}}." }, { "id": "ch4-quadratic-equations_ex3_q4", "number": "2(i)", "question": "Find the values of k for each of the following quadratic equations, so that they have two equal roots.\n(i) 2x² + kx + 3 = 0", "solution": ["For equal roots, Discriminant D must be 0.", "b² - 4ac = 0", "Here, a = 2, b = k, c = 3", "k² - 4(2)(3) = 0", "k² - 24 = 0", "k² = 24", "k = ±√24", "k = ±2√6"], "answer": "k = ±2√6" }, { "id": "ch4-quadratic-equations_ex3_q5", "number": "2(ii)", "question": "Find the values of k for each of the following quadratic equations, so that they have two equal roots.\n(ii) kx(x – 2) + 6 = 0", "solution": ["Simplifying the equation: kx² - 2kx + 6 = 0", "For equal roots, D = 0", "Here a = k, b = -2k, c = 6", "(-2k)² - 4(k)(6) = 0", "4k² - 24k = 0", "Take 4k common: 4k(k - 6) = 0", "Either 4k = 0 ⇒ k = 0", "Or k - 6 = 0 ⇒ k = 6", "However, if k = 0, the equation becomes 6 = 0 which is false and not quadratic.", "Therefore, k ≠ 0."], "answer": "k = 6" }, { "id": "ch4-quadratic-equations_ex3_q6", "number": "3", "question": "Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m²? If so, find its length and breadth.", "solution": ["Length (l) = 2 × Breadth (b)", "Area = 800 m²", "Possibility of design, and dimensions if possible.", "Let breadth = x meters.", "Then length = 2x meters.", "Area = Length × Breadth", "2x × x = 800", "2x² = 800", "Divide by 2: x² = 400", "x = ±√400 = ±20", "Since breadth cannot be negative, x = 20.", "Breadth = 20 m.", "Length = 2(20) = 40 m.", "Since real positive values exist, design is possible."], "answer": "Length = 40 m, Breadth = 20 m.", "image": "ex4_3_q3.svg" }, { "id": "ch4-quadratic-equations_ex3_q7", "number": "4", "question": "Is the following situation possible? If so, determine their present ages. The sum of the ages of two friends is 20 years. Four years ago, the product of their ages in years was 48.", "solution": ["Let age of first friend = x years.", "Then age of second friend = (20 - x) years.", "Four years ago:", "Age of first friend = x - 4", "Age of second friend = (20 - x) - 4 = 16 - x", "Product of ages = 48", "(x - 4)(16 - x) = 48", "16x - x² - 64 + 4x = 48", "-x² + 20x - 64 = 48", "-x² + 20x - 112 = 0", "Multiply by -1: x² - 20x + 112 = 0", "Check Discriminant D = b² - 4ac", "D = (-20)² - 4(1)(112)", "D = 400 - 448 = -48", "Since D"], "answer": "This situation is not possible." }, { "id": "ch4-quadratic-equations_ex3_q8", "number": "5", "question": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth.", "solution": ["Let length = l and breadth = b.", "Perimeter = 2(l + b) = 80", "l + b = 40 ⇒ b = 40 - l", "Area = l × b = 400", "l(40 - l) = 400", "40l - l² = 400", "l² - 40l + 400 = 0", "Check Discriminant D = b² - 4ac", "D = (-40)² - 4(1)(400)", "D = 1600 - 1600 = 0", "Since D = 0, equal real roots exist.", "l = {{frac}}-b{{over}}2a{{endfrac}} = {{frac}}40{{over}}2{{endfrac}} = 20", "Length = 20 m.", "Breadth = 40 - 20 = 20 m."], "answer": "Yes, possible. Length = 20 m, Breadth = 20 m.", "image": "ex4_3_q5.svg" }] }],
-    examples: [{ "id": "ch4-quadratic-equations_eg1", "number": "Example 1(i)", "question": ". Represent the following situations mathematically:\n(i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. We would like to find out how many marbles they had to start with.", "solution": ["Let the number of marbles John had be x.", "Then the number of marbles Jivanti had = 45 - x.", "After losing 5 marbles:", "Number of marbles left with John = x - 5", "Number of marbles left with Jivanti = (45 - x) - 5 = 40 - x", "Product of their marbles = 124", "(x - 5)(40 - x) = 124", "40x - x² - 200 + 5x = 124", "-x² + 45x - 200 = 124", "-x² + 45x - 324 = 0", "Multiply by -1:"], "answer": "x² - 45x + 324 = 0" }, { "id": "ch4-quadratic-equations_eg2", "number": "Example 1(ii)", "question": ". Represent the following situations mathematically:\n(ii) A cottage industry produces a certain number of toys in a day. The cost of production of each toy (in rupees) was found to be 55 minus the number of toys produced in a day. On a particular day, the total cost of production was ₹ 750. We would like to find out the number of toys produced on that day.", "solution": ["Let the number of toys produced be x.", "Cost of production of each toy = 55 - x", "Total cost of production = x(55 - x)", "Given total cost = 750", "x(55 - x) = 750", "55x - x² = 750", "-x² + 55x - 750 = 0", "Multiply by -1:"], "answer": "x² - 55x + 750 = 0" }, { "id": "ch4-quadratic-equations_eg3", "number": "Example 2(i)", "question": ". Check whether the following are quadratic equations:\n(i) (x - 2)² + 1 = 2x - 3", "solution": ["LHS = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5", "Given equation: x² - 4x + 5 = 2x - 3", "x² - 4x - 2x + 5 + 3 = 0", "x² - 6x + 8 = 0", "It is of the form ax² + bx + c = 0."], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_eg4", "number": "Example 2(ii)", "question": ". Check whether the following are quadratic equations:\n(ii) x(x + 1) + 8 = (x + 2)(x - 2)", "solution": ["LHS = x² + x + 8", "RHS = x² - 4", "x² + x + 8 = x² - 4", "x + 12 = 0", "It is a linear equation (degree 1)."], "answer": "No, it is not a quadratic equation." }, { "id": "ch4-quadratic-equations_eg5", "number": "Example 2(iii)", "question": ". Check whether the following are quadratic equations:\n(iii) x(2x + 3) = x² + 1", "solution": ["LHS = 2x² + 3x", "2x² + 3x = x² + 1", "x² + 3x - 1 = 0", "It is of the form ax² + bx + c = 0."], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_eg6", "number": "Example 2(iv)", "question": ". Check whether the following are quadratic equations:\n(iv) (x + 2)³ = x³ - 4", "solution": ["LHS = x³ + 6x² + 12x + 8", "x³ + 6x² + 12x + 8 = x³ - 4", "6x² + 12x + 12 = 0"], "answer": "Yes, it is a quadratic equation." }, { "id": "ch4-quadratic-equations_eg7", "number": "Example 3", "question": ". Find the roots of the equation 2x² - 5x + 3 = 0, by factorisation.", "solution": ["Find two numbers whose product is 2 × 3 = 6 and sum is -5.", "Numbers are -2 and -3.", "2x² - 2x - 3x + 3 = 0", "2x(x - 1) - 3(x - 1) = 0", "(2x - 3)(x - 1) = 0", "2x - 3 = 0 or x - 1 = 0", "x = {{frac}}3{{over}}2{{endfrac}} or x = 1"], "answer": "Roots are {{frac}}3{{over}}2{{endfrac}}, 1." }, { "id": "ch4-quadratic-equations_eg8", "number": "Example 4", "question": ". Find the roots of the quadratic equation 6x² - x - 2 = 0.", "solution": ["Product = 6 × (-2) = -12. Sum = -1.", "Numbers are -4 and 3.", "6x² - 4x + 3x - 2 = 0", "2x(3x - 2) + 1(3x - 2) = 0", "(3x - 2)(2x + 1) = 0", "3x - 2 = 0 ⇒ x = {{frac}}2{{over}}3{{endfrac}}", "2x + 1 = 0 ⇒ x = {{frac}}-1{{over}}2{{endfrac}}"], "answer": "Roots are {{frac}}2{{over}}3{{endfrac}}, {{frac}}-1{{over}}2{{endfrac}}." }, { "id": "ch4-quadratic-equations_eg9", "number": "Example 5", "question": ". Find the roots of the quadratic equation 3x² - 2√6x + 2 = 0.", "solution": ["3x² - 2√6x + 2 = 0", "Note that 3x² = (√3x)² and 2 = (√2)²", "Middle term -2√6x = -2(√3x)(√2)", "So, (√3x)² - 2(√3x)(√2) + (√2)² = 0", "(√3x - √2)² = 0", "√3x - √2 = 0", "√3x = √2", "x = {{frac}}√2{{over}}√3{{endfrac}}", "Rationalising the denominator:", "x = {{frac}}√6{{over}}3{{endfrac}}"], "answer": "Roots are {{frac}}√6{{over}}3{{endfrac}}, {{frac}}√6{{over}}3{{endfrac}}." }, { "id": "ch4-quadratic-equations_eg10", "number": "Example 6", "question": ". Find the dimensions of the prayer hall whose carpet area is 300 m² and length is one metre more than twice its breadth.", "solution": ["Area = 300 m²", "Length = 2 × Breadth + 1", "Let breadth = x meters.", "Length = 2x + 1 meters.", "Area = x(2x + 1) = 300", "2x² + x - 300 = 0", "Using quadratic formula: a = 2, b = 1, c = -300", "x = {{frac}}-1 ± √(1² - 4(2)(-300)){{over}}2(2){{endfrac}}", "x = {{frac}}-1 ± √(1 + 2400){{over}}4{{endfrac}}", "x = {{frac}}-1 ± √2401{{over}}4{{endfrac}}", "x = {{frac}}-1 ± 49{{over}}4{{endfrac}}", "Case 1: x = {{frac}}48{{over}}4{{endfrac}} = 12", "Case 2: x = {{frac}}-50{{over}}4{{endfrac}} (Negative, ignore)", "Breadth = 12 m.", "Length = 2(12) + 1 = 25 m."], "answer": "Breadth = 12 m, Length = 25 m." }, { "id": "ch4-quadratic-equations_eg12", "number": "Example 7", "question": "Solve the equation given in Example 3 by the method of completing the square.", "solution": ["The equation is 2x² - 5x + 3 = 0.", "Dividing throughout by 2, we get x² - {{frac}}5{{over}}2{{endfrac}}x + {{frac}}3{{over}}2{{endfrac}} = 0.", "x² - {{frac}}5{{over}}2{{endfrac}}x = -{{frac}}3{{over}}2{{endfrac}}", "Add ({{frac}}1{{over}}2{{endfrac}} × {{frac}}5{{over}}2{{endfrac}})² = ({{frac}}5{{over}}4{{endfrac}})² = {{frac}}25{{over}}16{{endfrac}} to both sides.", "(x - {{frac}}5{{over}}4{{endfrac}})² = -{{frac}}3{{over}}2{{endfrac}} + {{frac}}25{{over}}16{{endfrac}} = {{frac}}-24 + 25{{over}}16{{endfrac}} = {{frac}}1{{over}}16{{endfrac}}", "x - {{frac}}5{{over}}4{{endfrac}} = ±{{frac}}1{{over}}4{{endfrac}}", "x = {{frac}}5{{over}}4{{endfrac}} ± {{frac}}1{{over}}4{{endfrac}}", "x = {{frac}}6{{over}}4{{endfrac}} = {{frac}}3{{over}}2{{endfrac}}", "x = {{frac}}4{{over}}4{{endfrac}} = 1"], "answer": "Roots are {{frac}}3{{over}}2{{endfrac}} and 1." }, { "id": "ch4-quadratic-equations_eg11", "number": "Example 8", "question": ". A pole has to be erected at a point on the boundary of a circular park of diameter 13 metres in such a way that the differences of its distances from two diametrically opposite fixed gates A and B on the boundary is 7 metres. Is it possible to do so? If yes, at what distances from the two gates should the pole be erected?", "solution": ["Let P be the position of the pole.", "Let distance from gate B, PB = x meters.", "Then distance from gate A, PA = x + 7 meters (Difference is 7).", "AB is diameter = 13 m.", "∠APB = 90° (Angle in a semicircle is a right angle).", "Using Pythagoras theorem in ΔAPB:", "PA² + PB² = AB²", "(x + 7)² + x² = 13²", "x² + 14x + 49 + x² = 169", "2x² + 14x - 120 = 0", "Divide by 2: x² + 7x - 60 = 0", "Discriminant D = b² - 4ac = 7² - 4(1)(-60)", "D = 49 + 240 = 289 > 0", "Since D > 0, real roots exist. Thus, it is possible.", "x = {{frac}}-7 ± √289{{over}}2{{endfrac}}", "x = {{frac}}-7 ± 17{{over}}2{{endfrac}}", "x = {{frac}}10{{over}}2{{endfrac}} = 5 or x = {{frac}}-24{{over}}2{{endfrac}} = -12", "Since distance cannot be negative, x = 5.", "PB = 5 m, PA = 5 + 7 = 12 m."], "answer": "Distances are 5 m and 12 m." }, { "id": "ch4-quadratic-equations_eg13", "number": "Example 9", "question": "Find the discriminant of the equation 3x² - 2x + 1/3 = 0 and hence find the nature of its roots. Find them, if they are real.", "solution": ["Equation is 3x² - 2x + {{frac}}1{{over}}3{{endfrac}} = 0.", "Here a = 3, b = -2, c = {{frac}}1{{over}}3{{endfrac}}.", "Calculate Discriminant D:", "D = b² - 4ac", "D = (-2)² - 4(3)({{frac}}1{{over}}3{{endfrac}})", "D = 4 - 4 = 0", "Since D = 0, the roots are real and equal.", "Roots are x = {{frac}}-b{{over}}2a{{endfrac}}", "x = {{frac}}2{{over}}6{{endfrac}} = {{frac}}1{{over}}3{{endfrac}}"], "answer": "Roots are {{frac}}1{{over}}3{{endfrac}}, {{frac}}1{{over}}3{{endfrac}}." }],
-    mcqs: [{ "id": "ch4-quadratic-equations_mcq1", "question": "Which of the following is a quadratic equation?", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (D)" }, { "id": "ch4-quadratic-equations_mcq2", "question": "The roots of the quadratic equation x² - 0.04 = 0 are:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (A)" }, { "id": "ch4-quadratic-equations_mcq3", "question": "If 1/2 is a root of the equation x² + kx - 5/4 = 0, then the value of k is:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (A)" }, { "id": "ch4-quadratic-equations_mcq4", "question": "The equation 2x² - √5x + 1 = 0 has:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (C)" }, { "id": "ch4-quadratic-equations_mcq5", "question": "Which constant must be added and subtracted to solve the equation 9x² + 3/4 x - √2 = 0 by the method of completing the square?", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (B)" }, { "id": "ch4-quadratic-equations_mcq6", "question": "The roots of the quadratic equation 4x² + 12x + 9 = 0 are:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (B)" }, { "id": "ch4-quadratic-equations_mcq7", "question": "Values of k for which the quadratic equation 2x² - kx + k = 0 has equal roots is:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (D)" }, { "id": "ch4-quadratic-equations_mcq8", "question": "The roots of the equation 7x² + x - 1 = 0 are:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (A)" }, { "id": "ch4-quadratic-equations_mcq9", "question": "If the equation x² + 4x + k = 0 has real and distinct roots, then:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (A)" }, { "id": "ch4-quadratic-equations_mcq10", "question": "The sum of the squares of two consecutive natural numbers is 313. The numbers are:", "options": ["Option A", "Option B", "Option C", "Option D"], "correctAnswer": "Answer: (A)" }],
-    theorems: [],
-  },
+
   "ch5-arithmetic-progressions": {
     id: "ch5-arithmetic-progressions",
     number: 5,
     title: "Arithmetic Progressions",
     introduction: "In daily life, we see many patterns. Example: Savings every month, or steps of a ladder. When numbers increase or decrease by a fixed amount, we call it an AP. This chapter helps us calculate large values simply without counting one by one.",
     definitions: [
-      { "term": "Arithmetic Progression (AP)", "definition": "A list of numbers where difference between two consecutive terms is always same." },
-      { "term": "First Term (a)", "definition": "The number starting the list. It can be any number." },
-      { "term": "Common Difference (d)", "definition": "The fixed number added to get the next term. It can be positive, negative, or zero." },
-      { "term": "Finite AP", "definition": "An AP with limited terms (End is known)." },
-      { "term": "Infinite AP", "definition": "An AP that never ends (Last term not known)." }
+      { "term": "Arithmetic Progression (AP)", "description": "A list of numbers where difference between two consecutive terms is always same." },
+      { "term": "First Term (a)", "description": "The number starting the list. It can be any number." },
+      { "term": "Common Difference (d)", "description": "The fixed number added to get the next term. It can be positive, negative, or zero." },
+      { "term": "Finite AP", "description": "An AP with limited terms (End is known)." },
+      { "term": "Infinite AP", "description": "An AP that never ends (Last term not known)." }
     ],
     keyPoints: [
       "General form of an AP is: a, a + d, a + 2d, a + 3d ...",
@@ -405,9 +391,16 @@ export const chapterContents: Record<string, ChapterContent> = {
           {
             "id": "ch4_ex2_q1_v", "number": "1(v)", "question": "Find the roots by factorisation:\n(v) 100x² – 20x + 1 = 0",
             "solution": [
-              "{{ref}}Solution:{{endref}}",
+              "Standard form: 100x² - 20x + 1 = 0",
+              "Split the middle term -20x such that product is 100(1)=100 and sum is -20.",
+              "Numbers are -10 and -10.",
+              "100x² - 10x - 10x + 1 = 0",
+              "Group terms:",
+              "10x(10x - 1) - 1(10x - 1) = 0",
+              "(10x - 1)(10x - 1) = 0",
               "(10x - 1)² = 0",
-              "x = 1/10, 1/10"
+              "10x - 1 = 0  =>  10x = 1  =>  x = 1/10",
+              "Since it is quadratic, we have two equal roots."
             ],
             "answer": "Roots are 1/10, 1/10."
           },
@@ -440,12 +433,19 @@ export const chapterContents: Record<string, ChapterContent> = {
             "id": "ch4_ex2_q5", "number": "5", "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
             "solution": [
               "{{ref}}Solution:{{endref}}",
-              "Let Base = x. Altitude = x - 7.",
+              "Let Base = x cm. Altitude = x - 7 cm.",
+              "Using Pythagoras Theorem:",
               "x² + (x - 7)² = 13²",
+              "x² + x² - 14x + 49 = 169",
+              "2x² - 14x + 49 - 169 = 0",
               "2x² - 14x - 120 = 0",
-              "x² - 7x - 60 = 0",
+              "Divide by 2: x² - 7x - 60 = 0",
+              "Split middle term: Product -60, Sum -7 (-12, 5)",
+              "x² - 12x + 5x - 60 = 0",
+              "x(x - 12) + 5(x - 12) = 0",
               "(x - 12)(x + 5) = 0",
-              "x = 12 (positive)",
+              "x = 12 or x = -5",
+              "Length cannot be negative, so x = 12",
               "Altitude = 5"
             ],
             "answer": "Sides are 12 cm and 5 cm.",
@@ -565,9 +565,15 @@ export const chapterContents: Record<string, ChapterContent> = {
       {
         "id": "ch4_eg1_i", "number": "Example 1(i)", "question": "Represent mathematically: John and Jivanti have 45 marbles. Both lost 5, product is 124.",
         "solution": [
-          "{{ref}}Solution:{{endref}}",
-          "Let John have x. Jivanti has 45 - x.",
+          "Let John have x marbles.",
+          "Then Jivanti has 45 - x marbles.",
+          "Both lost 5 marbles:",
+          "John has x - 5",
+          "Jivanti has (45 - x) - 5 = 40 - x",
+          "Product is 124:",
           "(x - 5)(40 - x) = 124",
+          "40x - x² - 200 + 5x = 124",
+          "-x² + 45x - 200 = 124",
           "x² - 45x + 324 = 0"
         ],
         "answer": "x² - 45x + 324 = 0"
@@ -575,57 +581,166 @@ export const chapterContents: Record<string, ChapterContent> = {
       {
         "id": "ch4_eg1_ii", "number": "Example 1(ii)", "question": "Represent mathematically: Cost of production is 55 minus number of toys. Total cost 750.",
         "solution": [
-          "{{ref}}Solution:{{endref}}",
-          "Let toys = x. Cost = 55 - x.",
+          "Let number of toys produced = x.",
+          "Cost of production of each toy = 55 - x",
+          "Total cost = (Number of toys) × (Cost per toy)",
           "x(55 - x) = 750",
+          "55x - x² = 750",
+          "-x² + 55x - 750 = 0",
+          "Multiply by -1:",
           "x² - 55x + 750 = 0"
         ],
         "answer": "x² - 55x + 750 = 0"
       },
       {
         "id": "ch4_eg2_i", "number": "Example 2(i)", "question": "Check if quadratic: (x - 2)² + 1 = 2x - 3",
-        "solution": ["x² - 4x + 5 = 2x - 3 => x² - 6x + 8 = 0. Yes."],
+        "solution": [
+          "LHS = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5",
+          "RHS = 2x - 3",
+          "Equating LHS and RHS:",
+          "x² - 4x + 5 = 2x - 3",
+          "x² - 6x + 8 = 0",
+          "It is of the form ax² + bx + c = 0.",
+          "Yes, it is a quadratic equation."
+        ],
         "answer": "Yes"
       },
       {
         "id": "ch4_eg2_ii", "number": "Example 2(ii)", "question": "Check if quadratic: x(x + 1) + 8 = (x + 2)(x - 2)",
-        "solution": ["x² + x + 8 = x² - 4 => x + 12 = 0. No."],
+        "solution": [
+          "LHS = x(x + 1) + 8 = x² + x + 8",
+          "RHS = (x + 2)(x - 2) = x² - 4",
+          "Equating LHS and RHS:",
+          "x² + x + 8 = x² - 4",
+          "Subtract x² from both sides:",
+          "x + 8 = -4",
+          "x + 12 = 0",
+          "This is a linear equation (degree 1), not quadratic."
+        ],
         "answer": "No"
       },
       {
         "id": "ch4_eg2_iii", "number": "Example 2(iii)", "question": "Check if quadratic: x(2x + 3) = x² + 1",
-        "solution": ["2x² + 3x = x² + 1 => x² + 3x - 1 = 0. Yes."],
+        "solution": [
+          "LHS = x(2x + 3) = 2x² + 3x",
+          "RHS = x² + 1",
+          "Equating LHS and RHS:",
+          "2x² + 3x = x² + 1",
+          "x² + 3x - 1 = 0",
+          "It is of the form ax² + bx + c = 0.",
+          "Yes, it is a quadratic equation."
+        ],
         "answer": "Yes"
       },
       {
         "id": "ch4_eg2_iv", "number": "Example 2(iv)", "question": "Check if quadratic: (x + 2)³ = x³ - 4",
-        "solution": ["x³ + 6x² + 12x + 8 = x³ - 4 => 6x² + 12x + 12 = 0. Yes."],
+        "solution": [
+          "LHS = (x + 2)³ = x³ + 8 + 3(x)(2)(x + 2) = x³ + 6x² + 12x + 8",
+          "RHS = x³ - 4",
+          "Equating LHS and RHS:",
+          "x³ + 6x² + 12x + 8 = x³ - 4",
+          "Subtract x³ from both sides:",
+          "6x² + 12x + 8 = -4",
+          "6x² + 12x + 12 = 0",
+          "This is of the form ax² + bx + c = 0."
+        ],
         "answer": "Yes"
       },
       {
         "id": "ch4_eg3", "number": "Example 3", "question": "Find roots of 2x² - 5x + 3 = 0 by factorisation.",
-        "solution": ["2x² - 2x - 3x + 3 = 0", "(2x - 3)(x - 1) = 0", "x = 3/2, 1"],
+        "solution": [
+          "Equation: 2x² - 5x + 3 = 0",
+          "Split middle term -5x such that product is 2(3)=6 and sum is -5.",
+          "Numbers are -2 and -3.",
+          "2x² - 2x - 3x + 3 = 0",
+          "2x(x - 1) - 3(x - 1) = 0",
+          "(2x - 3)(x - 1) = 0",
+          "2x - 3 = 0 => x = 3/2",
+          "x - 1 = 0 => x = 1",
+          "Roots are 3/2, 1"
+        ],
         "answer": "3/2, 1"
       },
       {
         "id": "ch4_eg4", "number": "Example 4", "question": "Find roots of 6x² - x - 2 = 0.",
-        "solution": ["6x² - 4x + 3x - 2 = 0", "(3x - 2)(2x + 1) = 0", "x = 2/3, -1/2"],
+        "solution": [
+          "To factorise 6x² - x - 2 = 0, we need numbers whose product is 6(-2) = -12 and sum is -1.",
+          "Numbers are -4 and 3.",
+          "Splitting the middle term:",
+          "6x² - 4x + 3x - 2 = 0",
+          "2x(3x - 2) + 1(3x - 2) = 0",
+          "(3x - 2)(2x + 1) = 0",
+          "3x - 2 = 0 => x = 2/3",
+          "2x + 1 = 0 => x = -1/2",
+          "Roots are 2/3, -1/2"
+        ],
         "answer": "2/3, -1/2"
       },
       {
         "id": "ch4_eg5", "number": "Example 5", "question": "Find roots of 3x² - 2√6x + 2 = 0.",
-        "solution": ["(√3x - √2)² = 0", "x = √2/√3 = √6/3"],
-        "answer": "√6/3"
+        "solution": [
+          "3x² - 2√6x + 2 = 0",
+          "We can write 3x² as (√3x)² and 2 as (√2)².",
+          "Middle term -2√6x = -2(√3x)(√2).",
+          "(√3x)² - 2(√3x)(√2) + (√2)² = 0",
+          "Using (a - b)² = a² - 2ab + b²:",
+          "(√3x - √2)² = 0",
+          "√3x - √2 = 0",
+          "√3x = √2 => x = √2/√3",
+          "Rationalising: x = √6/3",
+          "Roots are √6/3, √6/3"
+        ],
+        "answer": "√6/3, √6/3"
       },
       {
         "id": "ch4_eg6", "number": "Example 6", "question": "Prayer hall dimensions: Area 300, Length is 1 more than twice breadth.",
-        "solution": ["2x² + x - 300 = 0", "x = 12 (positive)", "Length = 25"],
+        "solution": [
+          "Let breadth = x m.",
+          "Length = 2x + 1 m.",
+          "Area = x(2x + 1) = 300",
+          "2x² + x - 300 = 0",
+          "Split middle term (Product = -600, Sum = 1): 25 and -24",
+          "2x² + 25x - 24x - 300 = 0",
+          "x(2x + 25) - 12(2x + 25) = 0",
+          "(2x + 25)(x - 12) = 0",
+          "x = 12 or x = -25/2",
+          "Since breadth cannot be negative, x = 12.",
+          "Breadth = 12 m, Length = 2(12) + 1 = 25 m."
+        ],
         "answer": "12 m, 25 m"
+      },
+      {
+        "id": "ch4_eg7", "number": "Example 7", "question": "Find the discriminant of the quadratic equation 2x² - 4x + 3 = 0 and hence find the nature of its roots.",
+        "solution": [
+          "Equation: 2x² - 4x + 3 = 0",
+          "Here a = 2, b = -4, c = 3.",
+          "Discriminant D = b² - 4ac",
+          "D = (-4)² - 4(2)(3)",
+          "D = 16 - 24",
+          "D = -8",
+          "Since D < 0, the equation has no real roots."
+        ],
+        "answer": "No real roots"
       },
       {
         "id": "ch4_eg8", "number": "Example 8", "question": "Pole erection on circular park boundary. Diff of distances from gates is 7m. Diameter 13m.",
         "solution": ["x² + (x + 7)² = 13²", "x² + 7x - 60 = 0", "x = 5", "Distances 5m, 12m"],
         "answer": "5m, 12m"
+      },
+      {
+        "id": "ch4_eg9", "number": "Example 9", "question": "Find the discriminant of the equation 3x² – 2x + 1/3 = 0 and hence find the nature of its roots. Find them, if they are real.",
+        "solution": [
+          "Equation: 3x² - 2x + 1/3 = 0",
+          "Here a = 3, b = -2, c = 1/3.",
+          "Discriminant D = b² - 4ac",
+          "D = (-2)² - 4(3)(1/3)",
+          "D = 4 - 4 = 0",
+          "Since D = 0, the equation has two equal real roots.",
+          "Roots are given by x = -b/2a",
+          "x = -(-2) / 2(3) = 2/6 = 1/3",
+          "Roots are 1/3, 1/3."
+        ],
+        "answer": "1/3, 1/3"
       }
     ],
     mcqs: [
