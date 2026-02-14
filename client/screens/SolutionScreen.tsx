@@ -381,6 +381,7 @@ function SolutionScreen() {
               question: example.question,
               solution: example.solution,
               answer: example.answer,
+              image: example.image,
             }}
             accentColor="#6C63FF"
             chapterId={chapterId}

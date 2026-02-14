@@ -4,6 +4,8 @@ import { StyleSheet, View } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 
+import { ParsedText } from "@/components/ParsedText";
+
 interface FormulaItemProps {
   name: string;
   formula: string;
@@ -15,7 +17,7 @@ function FormulaItem({ name, formula, textStyle }: FormulaItemProps) {
     <View style={styles.container}>
       <ThemedText style={[styles.name, textStyle]}>{name}</ThemedText>
       <View style={styles.formulaBox}>
-        <ThemedText style={[styles.formula, textStyle]}>{formula}</ThemedText>
+        <ParsedText style={[styles.formula, textStyle]} Component={ThemedText}>{formula}</ParsedText>
       </View>
     </View>
   );

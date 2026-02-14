@@ -508,7 +508,7 @@ function generateContent() {
     output += `export interface Question { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }\n`;
     output += `export interface Exercise { id: string; name: string; questions: Question[]; }\n`;
     output += `export interface MCQ { id: string; question: string; options: string[]; correctAnswer: string; }\n`;
-    output += `export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; }\n`;
+    output += `export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }\n`;
     output += `export interface Theorem { id: string; number: string; name: string; statement: string; proof?: string[]; example?: string; }\n`;
     output += `export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; }\n\n`;
 
