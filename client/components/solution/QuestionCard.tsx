@@ -42,6 +42,11 @@ const graphImages: Record<string, any> = {
   "mcq_k_value.svg": require("@/assets/chapter3/images/mcq_k_value.svg"),
   "mcq_ratios.svg": require("@/assets/chapter3/images/mcq_ratios.svg"),
   "mcq_solutions.svg": require("@/assets/chapter3/images/mcq_solutions.svg"),
+  // Chapter 4 Images
+  "ex4_1_q2_i.svg": require("@/assets/chapter4/images/ex4_1_q2_i.svg"),
+  "ex4_2_q5.svg": require("@/assets/chapter4/images/ex4_2_q5.svg"),
+  "ex4_3_q3.svg": require("@/assets/chapter4/images/ex4_3_q3.svg"),
+  "ex4_3_q5.svg": require("@/assets/chapter4/images/ex4_3_q5.svg"),
 };
 
 interface QuestionCardProps {

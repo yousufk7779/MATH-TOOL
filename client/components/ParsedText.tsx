@@ -12,7 +12,7 @@ interface ParsedTextProps {
 
 export const ParsedText = ({ children, style, Component = Text, accentColor, ...rest }: ParsedTextProps) => {
     if (!children) return null;
-    const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}})/g);
+    const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}}|{{ref}}.*?{{endref}})/g);
 
     // Helper to flatten style and get color (for separator)
     const flattenedStyle = StyleSheet.flatten(style);
@@ -21,10 +21,12 @@ export const ParsedText = ({ children, style, Component = Text, accentColor, ...
     return (
         <Component style={style} {...rest}>
             {parts.map((part, index) => {
-                const match = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
-                if (match) {
-                    const numerator = match[1];
-                    const denominator = match[2];
+                const fractionMatch = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
+                const refMatch = part.match(/{{ref}}(.*?){{endref}}/);
+
+                if (fractionMatch) {
+                    const numerator = fractionMatch[1];
+                    const denominator = fractionMatch[2];
                     return (
                         <View key={index} style={styles.fractionContainer}>
                             <View style={styles.numeratorContainer}>
@@ -35,6 +37,12 @@ export const ParsedText = ({ children, style, Component = Text, accentColor, ...
                                 <Text style={[styles.denominatorText, { color: textColor }, { fontSize: (flattenedStyle?.fontSize || 14) * 0.8 }]}>{denominator}</Text>
                             </View>
                         </View>
+                    );
+                } else if (refMatch) {
+                    return (
+                        <Text key={index} style={{ color: '#FF4081', fontSize: (flattenedStyle?.fontSize || 14) * 0.85, fontWeight: 'bold' }}>
+                            {refMatch[1]}
+                        </Text>
                     );
                 }
                 return <Text key={index}>{part}</Text>;

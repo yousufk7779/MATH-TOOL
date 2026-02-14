@@ -113,6 +113,95 @@ export const chapterContents: Record<string, ChapterContent> = {
     mcqs: [],
     theorems: [],
   },
+  "ch4-quadratic-equations": {
+    id: "ch4-quadratic-equations",
+    number: 4,
+    title: "Quadratic Equations",
+    introduction: "A quadratic equation in the variable x is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0. The standard form is ax² + bx + c = 0.",
+    definitions: [],
+    keyPoints: ["A quadratic equation ax² + bx + c = 0 has two roots.", "Roots can be found by Factorization, Completing the Square, or Quadratic Formula.", "Quadratic Formula: x = {{frac}}-b ± √(b² - 4ac){{over}}2a{{endfrac}}", "Discriminant D = b² - 4ac determines the nature of roots.", "If D > 0: Two distinct real roots.", "If D = 0: Two equal real roots.", "If D < 0: No real roots."],
+    formulas: [],
+    crux: [],
+    summary: [],
+    exercises: [{
+      "id": "ex4.1", "name": "Exercise 4.1", "questions": [
+        {
+          "id": "ch4_ex1_q1_ii", "number": "1(ii)", "question": "Check whether the following are quadratic equations:\n(ii) x² - 2x = (-2)(3 - x)",
+          "solution": ["LHS = x² - 2x", "RHS = (-2)(3 - x) = -6 + 2x", "x² - 2x = -6 + 2x", "x² - 2x - 2x + 6 = 0", "x² - 4x + 6 = 0", "It is of the form ax² + bx + c = 0.", "Therefore, it is a quadratic equation."],
+          "answer": "Yes, it is a quadratic equation."
+        },
+        {
+          "id": "ch4_ex1_q2_i", "number": "2(i)", "question": "Represent the following situations in the form of quadratic equations:\n(i) The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. We need to find the length and breadth of the plot.",
+          "solution": ["Let breadth = x meters.", "Length = 2x + 1 meters.", "Area = Length × Breadth = (2x + 1)x", "Given Area = 528", "2x² + x = 528", "2x² + x - 528 = 0"],
+          "answer": "2x² + x - 528 = 0",
+          "image": "ex4_1_q2_i.svg"
+        }
+      ]
+    }, {
+      "id": "ex4.2", "name": "Exercise 4.2", "questions": [
+        {
+          "id": "ch4_ex2_q5", "number": "5", "question": "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
+          "solution": ["Let base = x cm.", "Altitude = x - 7 cm.", "Hypotenuse = 13 cm.", "By Pythagoras Theorem: x² + (x - 7)² = 13²", "x² + x² - 14x + 49 = 169", "2x² - 14x - 120 = 0", "x² - 7x - 60 = 0", "(x - 12)(x + 5) = 0", "x = 12 or x = -5 (Reject negative)", "Base = 12 cm, Altitude = 5 cm."],
+          "answer": "Sides are 12 cm and 5 cm.",
+          "image": "ex4_2_q5.svg"
+        }
+      ]
+    }, {
+      "id": "ex4.3", "name": "Exercise 4.3", "questions": [
+        {
+          "id": "ch4_ex3_q3", "number": "3", "question": "Find the roots of the following equations:\n(i) x - 1/x = 3, x ≠ 0",
+          "solution": ["x - 1/x = 3", "Multiply by x: x² - 1 = 3x", "x² - 3x - 1 = 0", "Using quadratic formula:", "x = {{frac}}3 ± √(9 - 4(1)(-1)){{over}}2{{endfrac}}", "x = {{frac}}3 ± √13{{over}}2{{endfrac}}"],
+          "answer": "Roots are {{frac}}3 ± √13{{over}}2{{endfrac}}",
+          "image": "ex4_3_q3.svg"
+        },
+        {
+          "id": "ch4_ex3_q5", "number": "5", "question": "Is it possible to design a rectangular park of perimeter 80 m and area 400 m²? If so, find its length and breadth.",
+          "solution": [
+            "Let length = L and breadth = B. {{ref}}(Variable Definition){{endref}}",
+            "Perimeter = 2(L + B) = 80 {{ref}}(Given){{endref}}",
+            "L + B = 40 => B = 40 - L {{ref}}(Equation 1){{endref}}",
+            "Area = L × B = 400 {{ref}}(Given){{endref}}",
+            "Substitute B in Area equation:",
+            "L(40 - L) = 400",
+            "40L - L² = 400",
+            "L² - 40L + 400 = 0",
+            "Check for real roots using Discriminant D = b² - 4ac",
+            "D = (-40)² - 4(1)(400)",
+            "D = 1600 - 1600 = 0",
+            "Since D = 0, equal real roots exist.",
+            "L = {{frac}}-(-40){{over}}2(1){{endfrac}} = 20",
+            "B = 40 - 20 = 20"
+          ],
+          "answer": "Yes, possible. Length = 20m, Breadth = 20m.",
+          "image": "ex4_3_q5.svg"
+        }
+      ]
+    }],
+    examples: [{
+      "id": "ch4_eg1", "number": "Example 1", "question": "Represent the following situations mathematically:\n(i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. We would like to find out how many marbles they had to start with.",
+      "solution": [
+        "Let the number of marbles John had be x.",
+        "Then the number of marbles Jivanti had = 45 - x (Since total is 45).",
+        "Number of marbles left with John = x - 5",
+        "Number of marbles left with Jivanti = 45 - x - 5 = 40 - x",
+        "Product of their marbles = 124",
+        "(x - 5)(40 - x) = 124",
+        "40x - x² - 200 + 5x = 124",
+        "-x² + 45x - 200 = 124",
+        "x² - 45x + 324 = 0",
+        "This is the required quadratic equation."
+      ],
+      "answer": "x² - 45x + 324 = 0"
+    }],
+    mcqs: [
+      { "id": "ch4_mcq1", "question": "Which of the following is a quadratic equation?", "options": ["x² + 2x + 1 = (4-x²)+3", "-2x² = (5-x)(2x-2/5)", "(k+1)x² + 3/2 x = 7, where k=-1", "x³ - x² = (x-1)³"], "correctAnswer": "Answer: (d) x³ - x² = (x-1)³" },
+      { "id": "ch4_mcq2", "question": "The roots of the quadratic equation x² - 0.04 = 0 are:", "options": ["± 0.2", "± 0.02", "0.4", "2"], "correctAnswer": "Answer: (a) ± 0.2" },
+      { "id": "ch4_mcq3", "question": "If 1/2 is a root of the equation x² + kx - 5/4 = 0, then the value of k is:", "options": ["2", "-2", "¼", "½"], "correctAnswer": "Answer: (a) 2" },
+      { "id": "ch4_mcq4", "question": "Values of k for which the quadratic equation 2x² - kx + k = 0 has equal roots is:", "options": ["0 only", "4", "8 only", "0, 8"], "correctAnswer": "Answer: (d) 0, 8" },
+      { "id": "ch4_mcq5", "question": "The quadratic equation 2x² - √5x + 1 = 0 has:", "options": ["two distinct real roots", "two equal real roots", "no real roots", "more than 2 real roots"], "correctAnswer": "Answer: (c) no real roots" }
+    ],
+    theorems: [],
+  },
   "ch6-triangles": {
     id: "ch6-triangles",
     number: 6,
