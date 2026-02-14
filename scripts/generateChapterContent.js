@@ -22,6 +22,7 @@ function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
         .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '{{frac}}$1{{over}}$2{{endfrac}}') // Handle fractions
+        .replace(/<br\s*\/?>/gi, '\n') // Replace <br> with newlines
         .replace(/<[^>]+>/g, '') // Remove tags
         .replace(/&nbsp;/g, ' ')
         .replace(/&rArr;/g, '⇒')
@@ -59,7 +60,7 @@ function parseTableToText(html) {
     return tableText;
 }
 
-function parseOverview(html) {
+function parseOverview(html, chapterId) {
     const definitions = [];
     const keyPoints = [];
     const formulas = [];
@@ -68,31 +69,139 @@ function parseOverview(html) {
     let introduction = "";
 
     try {
-        const contentBoxes = html.split(/<div class="content-box(?: [^"]*)?">/);
+        let contentBoxes = html.split(/<div class="content-box(?: [^"]*)?">/);
+
+        // Fallback for Simple Structure (e.g. Chapter 5) if no content-boxes found
+        if (contentBoxes.length <= 1) {
+            const h2Split = html.split(/<h2>/i);
+            if (h2Split.length > 1) {
+                // Map the simple structure to the "contentBoxes" style logic or parse directly here.
+                // We will parse directly here and return.
+
+                // Chunk 0 is before first h2.
+                for (let i = 1; i < h2Split.length; i++) {
+                    const section = h2Split[i];
+                    const endTitleIdx = section.indexOf('</h2>');
+                    if (endTitleIdx === -1) continue;
+
+                    const title = cleanText(section.substring(0, endTitleIdx)).toLowerCase();
+                    const content = section.substring(endTitleIdx + 5);
+
+                    if (title.includes('introduction')) {
+                        const introMatches = content.match(/<span class="point">(.*?)<\/span>|<p>(.*?)<\/p>/gs);
+                        if (introMatches) {
+                            introduction = introMatches.map(m => cleanText(m)).join(" ");
+                        } else {
+                            introduction = cleanText(content); // Fallback
+                        }
+                    }
+
+                    if (title.includes('definition')) {
+                        const listItems = content.match(/<li>(.*?)<\/li>/gs);
+                        if (listItems) {
+                            listItems.forEach(item => {
+                                const cleanItem = cleanText(item);
+                                // Try to split by colon or bold tag
+                                // Pattern: <b>Term:</b> Description
+                                const parts = cleanItem.split(/:|–|-/);
+                                if (parts.length >= 2) {
+                                    definitions.push({
+                                        term: cleanText(parts[0]),
+                                        description: cleanText(parts.slice(1).join(":"))
+                                    });
+                                } else {
+                                    definitions.push({ term: "Term", description: cleanItem });
+                                }
+                            });
+                        }
+                    }
+
+                    if (title.includes('key point')) {
+                        const listItems = content.match(/<li>(.*?)<\/li>/gs);
+                        if (listItems) {
+                            listItems.forEach(item => keyPoints.push(cleanText(item)));
+                        }
+                        // Also check for formulas in key points
+                        const formulaMatches = content.match(/<span class="formula">(.*?)<\/span>/gs);
+                        if (formulaMatches) {
+                            formulaMatches.forEach(f => {
+                                formulas.push({ name: "Formula", formula: cleanText(f) });
+                            });
+                        }
+
+                    } else if (title.includes('formula')) {
+                        const formulaMatches = content.match(/<span class="formula">(.*?)<\/span>|<div class="formula-block">(.*?)<\/div>/gs);
+                        if (formulaMatches) {
+                            formulaMatches.forEach(f => {
+                                formulas.push({ name: "Formula", formula: cleanText(f) });
+                            });
+                        }
+                    } else if (title.includes('crux')) {
+                        const points = content.match(/<span class="point">(.*?)<\/span>|<li>(.*?)<\/li>/gs);
+                        if (points) {
+                            points.forEach(p => crux.push(cleanText(p)));
+                        }
+                    } else if (title.includes('summary')) {
+                        const points = content.match(/<span class="point">(.*?)<\/span>|<p>(.*?)<\/p>/gs);
+                        if (points) {
+                            points.forEach(p => summary.push(cleanText(p)));
+                        }
+                    }
+                }
+
+                return {
+                    introduction: cleanText(introduction),
+                    definitions,
+                    keyPoints,
+                    formulas,
+                    crux,
+                    summary
+                };
+            }
+        }
 
         for (let i = 1; i < contentBoxes.length; i++) {
             const box = contentBoxes[i];
             let title = "";
-            const titleMatch = box.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
-            if (titleMatch) {
-                title = cleanText(titleMatch[1]).toLowerCase();
-            } else {
-                // Check previous box content for title at the end (for structures where title is outside/before box)
-                const prev = contentBoxes[i - 1];
-                const allTitles = prev.match(/<div class="section-title"(?: [^>]*)?>([^<]*?)<\/div>/g);
-                if (allTitles && allTitles.length > 0) {
-                    const lastTitleTag = allTitles[allTitles.length - 1];
-                    const matcher = lastTitleTag.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
-                    if (matcher) title = cleanText(matcher[1]).toLowerCase();
+            let prevTitleMatch = null;
+
+            // 1. Check previous box context for a trailing title (Title for THIS box)
+            const prev = contentBoxes[i - 1];
+
+            const titleRegex = /<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/g;
+            let match;
+            while ((match = titleRegex.exec(prev)) !== null) {
+                prevTitleMatch = match;
+            }
+
+            if (prevTitleMatch) {
+                // If the title is NOT followed by a closing div, it is likely a top-level trailing title
+                const after = prev.substring(prevTitleMatch.index + prevTitleMatch[0].length);
+                if (!after.includes('</div>')) {
+                    title = cleanText(prevTitleMatch[1]).toLowerCase();
+                }
+            }
+
+            // 2. If no external title found, check inside the current box (Title inside THIS box)
+            if (!title) {
+                const boxFirstDivIdx = box.indexOf('</div>');
+                const internalMatch = box.match(/<div class="section-title"(?: [^>]*)?>(.*?)<\/div>/);
+
+                // Only accept internal title if it appears BEFORE the closing div of this box
+                // (Otherwise it's a trailing title for the NEXT box)
+                if (internalMatch) {
+                    if (boxFirstDivIdx === -1 || internalMatch.index < boxFirstDivIdx) {
+                        title = cleanText(internalMatch[1]).toLowerCase();
+                    }
                 }
             }
 
             // Extract all key-points, steps, and list items
-            // Matches <div class="key-point">...</div> OR <div class="step">...</div> OR <li>...</li>
-            const pointsRaw = box.match(/(<div class="(key-point|step)">(.*?)<\/div>|<li>(.*?)<\/li>|<p>(.*?)<\/p>)/gs);
+            // Matches <div class="key-point">...</div> OR <div class="step">...</div> OR <li>...</li> OR <div class="formula-box">...</div>
+            const pointsRaw = box.match(/(<div class="(key-point|step|formula-box)">([\s\S]*?)<\/div>|<li>(.*?)<\/li>|<p>(.*?)<\/p>)/gs);
             const points = pointsRaw ? pointsRaw.map(p => {
                 // strip outer div
-                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '').replace(/^<li>/, '').replace(/<\/li>$/, '').replace(/^<p>/, '').replace(/<\/p>$/, '');
+                return p.replace(/^<div class="(key-point|step)">/, '').replace(/<\/div>$/, '').replace(/^<li>/, '').replace(/<\/li>$/, '').replace(/^<p>/, '').replace(/<\/p>$/, '').replace(/^<div class="formula-box">/, '').replace(/<\/div>$/, '');
             }) : [];
 
             // 1. Introduction
@@ -106,7 +215,7 @@ function parseOverview(html) {
             }
 
             // 2. Definitions / Key Definitions / Basic Number Systems
-            else if (title.includes('definition') || title.includes('basic number')) {
+            if (title.includes('definition') || title.includes('basic number')) {
                 // If points array is empty, maybe try to extract LI elements?
                 if (points.length === 0) {
                     const lis = box.match(/<li>(.*?)<\/li>/gs);
@@ -153,7 +262,7 @@ function parseOverview(html) {
             }
 
             // 3. Formulas / Theorems
-            else if (title.includes('formula') || title.includes('theorem')) {
+            else if (title.includes('formula') || title.includes('theorem') || title.includes('identit')) {
                 // Extract formulas from spans or formula blocks
                 // The HTML structure for Ch1 formulas is:
                 // <div class="key-point"><span class="formula">Name:</span></div>
@@ -206,6 +315,21 @@ function parseOverview(html) {
                         if (!exists) {
                             formulas.push({ name: "Formula", formula: text });
                         }
+                    });
+                }
+
+                // Fallback: If no explicit formulas found, treat the points content as formulas (e.g. for Chapter 8 Identities)
+                if (formulas.length === 0 && points.length > 0) {
+                    points.forEach(p => {
+                        // Custom clean to preserve newlines from <br>
+                        const rawText = p.replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, '');
+                        const lines = rawText.split('\n').map(l => l.trim().replace(/\s+/g, ' ')).filter(l => l.length > 0);
+
+                        lines.forEach(line => {
+                            // Heuristic: skip headers like "Pythagorean Identities:" or short texts
+                            if (line.endsWith(':') || line.length < 3) return;
+                            formulas.push({ name: "Identity", formula: line });
+                        });
                     });
                 }
             }
@@ -327,22 +451,53 @@ function parseQuestions(html, type, chapterNum, exName) {
 
             for (let i = 1; i < contentBoxes.length; i++) {
                 const box = contentBoxes[i];
-                const questionMatch = box.match(/<div class="question">\s*(\d+[\.\)]?|Example \d+|Q\.\d+)\s*([\s\S]*?)<\/div>/i);
+                const questionMatch = box.match(/<div class="(?:question|theorem-title)">\s*(\d+[\.\)]?|Example \d+|Q\.\d+|Theorem\s+\d+(?:\.\d+)?)\s*([\s\S]*?)<\/div>/i);
 
                 if (questionMatch) {
                     const mainNum = cleanText(questionMatch[1]).replace(/\.$/, '');
-                    const mainText = cleanText(questionMatch[2]);
+                    const mainText = cleanText(questionMatch[2]).replace(/^[:\s]+/, '');
 
                     // Extract Options (for MCQs)
+                    // Extract Options (for MCQs)
                     const options = [];
-                    const optionsMatch = box.match(/<div class="option">(.*?)<\/div>/gs);
-                    if (optionsMatch) {
-                        optionsMatch.forEach(opt => options.push(cleanText(opt).replace(/^\([a-d]\)\s*/i, '')));
+                    // Try to find options container first for better handling of nested tags
+                    const optionsContainerMatch = box.match(/<div class="options">([\s\S]*?)<\/div>\s*<div class="correct-answer">/i);
+
+                    if (optionsContainerMatch) {
+                        const optionsHtml = optionsContainerMatch[1];
+                        // Split by option start tag, handling both div and span
+                        const rawOptions = optionsHtml.split(/<(?:div|span) class="option">/i);
+
+                        // First item is usually empty string before first option tag
+                        for (let k = 1; k < rawOptions.length; k++) {
+                            let optText = rawOptions[k];
+                            // Remove the last closing tag (div/span) + whitespace
+                            const lastCloseIdx = optText.lastIndexOf('</');
+                            if (lastCloseIdx !== -1) {
+                                optText = optText.substring(0, lastCloseIdx);
+                            }
+                            options.push(cleanText(optText).replace(/^\([a-d]\)\s*/i, ''));
+                        }
+                    } else {
+                        // Fallback logic
+                        const optionsMatch = box.match(/<(?:div|span) class="option">(.*?)<\/(?:div|span)>/gs);
+                        if (optionsMatch) {
+                            optionsMatch.forEach(opt => options.push(cleanText(opt).replace(/^\([a-d]\)\s*/i, '')));
+                        }
                     }
 
                     // Extract Correct Answer (for MCQs)
                     const correctAnsMatch = box.match(/<div class="correct-answer">(.*?)<\/div>/s);
-                    let correctAnswer = correctAnsMatch ? cleanText(correctAnsMatch[1]) : "";
+                    let correctAnswer = "";
+                    if (correctAnsMatch) {
+                        const cleanAns = cleanText(correctAnsMatch[1]);
+                        const match = cleanAns.match(/\(([a-d])\)/i);
+                        if (match) {
+                            correctAnswer = match[1].toLowerCase();
+                        } else {
+                            correctAnswer = cleanAns.trim().toLowerCase();
+                        }
+                    }
 
                     const subQuestions = box.split('<div class="sub-question">');
 
@@ -523,7 +678,7 @@ function generateContent() {
         try {
             if (fs.existsSync(path.join(chapterDir, 'overview.html'))) {
                 const html = fs.readFileSync(path.join(chapterDir, 'overview.html'), 'utf-8');
-                overviewParsed = parseOverview(html);
+                overviewParsed = parseOverview(html, chapter.id);
             }
         } catch (e) { console.error(e); }
 
@@ -584,6 +739,23 @@ function generateContent() {
             }
         } catch (e) { console.error(e); }
 
+        // Theorems
+        const theorems = [];
+        try {
+            if (fs.existsSync(path.join(chapterDir, 'theorems.html'))) {
+                const html = fs.readFileSync(path.join(chapterDir, 'theorems.html'), 'utf-8');
+                const qs = parseQuestions(html, 'exercise', chapter.number, "Theorems");
+                qs.forEach((q, i) => theorems.push({
+                    id: `${chapter.id}_theorem${i + 1}`,
+                    number: q.number || `Theorem ${chapter.number}.${i + 1}`,
+                    name: q.question.split(':')[0] || `Theorem ${chapter.number}.${i + 1}`,
+                    statement: q.question,
+                    proof: q.solution,
+                    example: undefined
+                }));
+            }
+        } catch (e) { console.error(e); }
+
         output += `  "${chapter.id}": {\n`;
         output += `    id: "${chapter.id}",\n`;
         output += `    number: ${chapter.number},\n`;
@@ -597,7 +769,7 @@ function generateContent() {
         output += `    exercises: ${JSON.stringify(exercises)},\n`;
         output += `    examples: ${JSON.stringify(examples)},\n`;
         output += `    mcqs: ${JSON.stringify(mcqs)},\n`;
-        output += `    theorems: [],\n`;
+        output += `    theorems: ${JSON.stringify(theorems)},\n`;
         output += `  },\n`;
     }
 
