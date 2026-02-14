@@ -382,9 +382,16 @@ export const chapterContents: Record<string, ChapterContent> = {
             "id": "ch4_ex2_q1_iv", "number": "1(iv)", "question": "Find the roots by factorisation:\n(iv) 2x² – x + 1/8 = 0",
             "solution": [
               "{{ref}}Solution:{{endref}}",
-              "Multiply by 8: 16x² - 8x + 1 = 0",
-              "(4x - 1)² = 0",
-              "x = 1/4, 1/4"
+              "2x² - x + 1/8 = 0",
+              "Multiply both sides by 8 to remove the fraction:",
+              "16x² - 8x + 1 = 0",
+              "Find two numbers whose product is 16(1) = 16 and sum is -8. The numbers are -4 and -4.",
+              "Split the middle term:",
+              "16x² - 4x - 4x + 1 = 0",
+              "4x(4x - 1) - 1(4x - 1) = 0",
+              "(4x - 1)(4x - 1) = 0",
+              "4x - 1 = 0 => x = 1/4",
+              "Roots are 1/4, 1/4"
             ],
             "answer": "Roots are 1/4, 1/4."
           },
