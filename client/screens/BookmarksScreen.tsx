@@ -32,7 +32,13 @@ function BookmarksScreen() {
                     return (
                         <View style={styles.itemContainer}>
                             <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                            <QuestionCard question={q} accentColor={JiguuColors.accent1} chapterId={item.chapterId} />
+                            <QuestionCard
+                                question={q}
+                                accentColor={JiguuColors.accent1}
+                                chapterId={item.chapterId}
+                                titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                                contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
+                            />
                         </View>
                     );
                 }
@@ -53,6 +59,8 @@ function BookmarksScreen() {
                             }}
                             accentColor={JiguuColors.accent1}
                             chapterId={item.chapterId}
+                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
                         />
                     </View>
                 );
@@ -83,6 +91,8 @@ function BookmarksScreen() {
                             }}
                             accentColor={JiguuColors.accent1}
                             chapterId={item.chapterId}
+                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
                         />
                     </View>
                 );

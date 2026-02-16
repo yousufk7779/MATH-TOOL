@@ -89,8 +89,8 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
                             question={item.question}
                             chapterId={item.chapterId}
                             accentColor={selectedColor}
-                            titleStyle={{ fontFamily: "Kalam_700Bold" }}
-                            contentStyle={{ fontFamily: "Kalam_400Regular" }}
+                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
                         />
                     ))
                 )}
