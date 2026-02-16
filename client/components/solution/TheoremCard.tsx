@@ -3,6 +3,7 @@ import { StyleSheet, View, Pressable } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
+import { ParsedText } from "@/components/ParsedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Theorem } from "@/data/chapterContent";
 import { useSavedItems } from "@/context/SavedItemsContext";
@@ -66,14 +67,14 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
 
             <View style={styles.theoremSection}>
                 <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
-                <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
+                <ParsedText style={styles.theoremStatement}>{theorem.statement}</ParsedText>
             </View>
 
             {theorem.proof && theorem.proof.length > 0 ? (
                 <View style={styles.theoremSection}>
                     <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
                     {theorem.proof.map((step, index) => (
-                        <ThemedText key={index} style={styles.theoremStep}>{step}</ThemedText>
+                        <ParsedText key={index} style={styles.theoremStep}>{step}</ParsedText>
                     ))}
                 </View>
             ) : null}
@@ -81,7 +82,7 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
             {theorem.example ? (
                 <View style={styles.theoremSection}>
                     <ThemedText style={styles.theoremLabel}>Example:</ThemedText>
-                    <ThemedText style={styles.theoremExample}>{theorem.example}</ThemedText>
+                    <ParsedText style={styles.theoremExample}>{theorem.example}</ParsedText>
                 </View>
             ) : null}
         </View>
@@ -144,12 +145,14 @@ const styles = StyleSheet.create({
     theoremStatement: {
         ...Typography.body,
         color: JiguuColors.textPrimary,
+        fontFamily: "Kalam_400Regular",
         lineHeight: 24,
         textAlign: "justify",
     },
     theoremStep: {
         ...Typography.small,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
         lineHeight: 22,
         marginBottom: Spacing.xs,
         textAlign: "justify",
@@ -157,6 +160,7 @@ const styles = StyleSheet.create({
     theoremExample: {
         ...Typography.small,
         color: JiguuColors.textSecondary,
+        fontFamily: "Kalam_400Regular",
         fontStyle: "italic",
         lineHeight: 22,
         textAlign: "justify",

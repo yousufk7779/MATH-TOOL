@@ -1,6 +1,11 @@
 import React, { memo } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import {
+    useFonts,
+    Kalam_400Regular,
+    Kalam_700Bold,
+} from "@expo-google-fonts/kalam";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
@@ -12,8 +17,14 @@ import { useSavedItems } from "@/context/SavedItemsContext";
 import { getChapterContent } from "@/data/chapterContent";
 
 function BookmarksScreen() {
+    const [fontsLoaded] = useFonts({
+        Kalam_400Regular,
+        Kalam_700Bold,
+    });
     const { bookmarks } = useSavedItems();
     const navigation = useNavigation();
+
+    if (!fontsLoaded) return null;
 
     const renderItem = ({ item }: { item: any }) => {
         // We need to fetch the actual content based on the ID.
