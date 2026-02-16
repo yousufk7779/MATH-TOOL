@@ -21,7 +21,8 @@ const OUTPUT_FILE = path.join(__dirname, '../client/data/chapterContent.ts');
 function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
-        .replace(/\s+/g, ' ')
+        .replace(/\r?\n|\r/g, ' ') // Remove newlines
+        .replace(/\s+/g, ' ')      // Collapse multiple spaces
         .trim();
     return clean;
 }

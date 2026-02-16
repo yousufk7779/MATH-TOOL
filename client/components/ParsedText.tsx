@@ -14,28 +14,36 @@ interface ParsedTextProps {
 // Global styles for HTML content tags
 const tagsStyles = {
     body: {
-        fontSize: 16,
+        fontSize: 18,
         color: JiguuColors.textPrimary,
-        fontFamily: 'Nunito_400Regular',
+        fontFamily: 'Kalam_400Regular',
+        lineHeight: 28,
     },
     p: {
         marginBottom: 8,
         marginTop: 0,
+        fontFamily: 'Kalam_400Regular',
     },
     b: {
-        fontFamily: 'Nunito_700Bold',
+        fontFamily: 'Kalam_700Bold',
     },
     strong: {
-        fontFamily: 'Nunito_700Bold',
+        fontFamily: 'Kalam_700Bold',
     },
     i: {
         fontStyle: 'italic',
+        fontFamily: 'Kalam_400Regular',
     },
     em: {
         fontStyle: 'italic',
+        fontFamily: 'Kalam_400Regular',
     },
     div: {
         marginBottom: 4,
+        fontFamily: 'Kalam_400Regular',
+    },
+    span: {
+        fontFamily: 'Kalam_400Regular',
     }
 };
 
@@ -46,28 +54,29 @@ const classesStyles = {
         justifyContent: 'center',
         display: 'flex',
         marginHorizontal: 4,
+        fontFamily: 'Kalam_400Regular',
     },
     'numerator': {
         borderBottomWidth: 1,
         borderBottomColor: 'black',
         paddingHorizontal: 2,
         textAlign: 'center',
-        fontFamily: 'Nunito_600SemiBold',
-        fontSize: 14,
+        fontFamily: 'Kalam_700Bold',
+        fontSize: 16,
     },
     'denominator': {
         paddingTop: 1,
         textAlign: 'center',
-        fontFamily: 'Nunito_600SemiBold',
-        fontSize: 14,
+        fontFamily: 'Kalam_700Bold',
+        fontSize: 16,
     },
     'formula': {
         color: '#2E7D32',
         fontFamily: 'Kalam_700Bold',
-        fontSize: 16,
+        fontSize: 18,
     },
     'bold': {
-        fontFamily: 'Nunito_700Bold',
+        fontFamily: 'Kalam_700Bold',
     }
 };
 

@@ -58,35 +58,44 @@ interface QuestionCardProps {
 // Custom styles for HTML tags/classes
 const tagsStyles = {
   body: {
-    fontSize: 16,
+    fontSize: 18, // Increased font size for better readability with Kalam
     color: JiguuColors.textPrimary,
-    fontFamily: 'Nunito_400Regular', // Default font
+    fontFamily: 'Kalam_400Regular', // Enforce Kalam font
+    lineHeight: 28,
   },
   p: {
     marginBottom: 8,
+    fontFamily: 'Kalam_400Regular',
+  },
+  div: {
+    fontFamily: 'Kalam_400Regular',
+  },
+  span: { // Added span explicitly
+    fontFamily: 'Kalam_400Regular',
   },
   b: {
-    fontFamily: 'Nunito_700Bold',
+    fontFamily: 'Kalam_700Bold',
   },
   strong: {
-    fontFamily: 'Nunito_700Bold',
+    fontFamily: 'Kalam_700Bold',
   },
 };
 
 const classesStyles = {
   'question': {
-    fontFamily: 'Nunito_700Bold',
+    fontFamily: 'Nunito_700Bold', // Keep Question Title as Nunito (or change to Kalam if preferred, but usually titles are distinct)
     fontSize: 16,
     marginBottom: 8,
   },
   'step': {
-    fontSize: 15,
+    fontSize: 18,
     marginBottom: 8,
-    lineHeight: 24,
+    lineHeight: 28,
     color: JiguuColors.textSecondary,
+    fontFamily: 'Kalam_400Regular', // Enforce Kalam
   },
   'bold': {
-    fontFamily: 'Nunito_700Bold',
+    fontFamily: 'Kalam_700Bold',
   },
   'fraction': {
     flexDirection: 'column',
@@ -94,30 +103,31 @@ const classesStyles = {
     justifyContent: 'center',
     display: 'flex',
     marginHorizontal: 4,
+    fontFamily: 'Kalam_400Regular',
   },
   'numerator': {
     borderBottomWidth: 1,
     borderBottomColor: 'black',
     paddingHorizontal: 2,
     textAlign: 'center',
-    fontFamily: 'Nunito_600SemiBold',
-    fontSize: 14,
+    fontFamily: 'Kalam_700Bold', // Proper fraction font
+    fontSize: 16,
   },
   'denominator': {
     paddingTop: 1,
     textAlign: 'center',
-    fontFamily: 'Nunito_600SemiBold',
-    fontSize: 14,
+    fontFamily: 'Kalam_700Bold',
+    fontSize: 16,
   },
   'formula': {
     color: '#2E7D32',
     fontFamily: 'Kalam_700Bold',
-    fontSize: 16,
+    fontSize: 18,
   },
   'final-answer': {
     color: '#2E7D32',
     fontFamily: 'Kalam_700Bold',
-    fontSize: 16,
+    fontSize: 18,
     marginTop: 10,
   }
 };
