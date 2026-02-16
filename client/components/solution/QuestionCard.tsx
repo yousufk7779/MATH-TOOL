@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { StyleSheet, View, Image, useWindowDimensions } from "react-native";
-import { ParsedText } from "@/components/ParsedText";
+import RenderHtml from "react-native-render-html";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/chapterContent";
@@ -81,7 +81,7 @@ const tagsStyles = {
   },
 };
 
-const classesStyles = {
+const classesStyles: any = {
   'question': {
     fontFamily: 'Nunito_700Bold', // Keep Question Title as Nunito (or change to Kalam if preferred, but usually titles are distinct)
     fontSize: 16,
@@ -191,9 +191,12 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         </View>
 
         <View style={styles.questionTextContainer}>
-          <ParsedText tagsStyles={tagsStyles} classesStyles={dynamicClassesStyles}>
-            {question.question}
-          </ParsedText>
+          <RenderHtml
+            contentWidth={width}
+            source={{ html: `<body>${question.question}</body>` }}
+            tagsStyles={tagsStyles}
+            classesStyles={dynamicClassesStyles}
+          />
         </View>
       </View>
 
@@ -217,16 +220,22 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
 
         {question.solution.map((step, index) => (
           <View key={index} style={styles.stepRow}>
-            <ParsedText tagsStyles={tagsStyles} classesStyles={classesStyles}>
-              {step}
-            </ParsedText>
+            <RenderHtml
+              contentWidth={width}
+              source={{ html: `<body>${step}</body>` }}
+              tagsStyles={tagsStyles}
+              classesStyles={classesStyles}
+            />
           </View>
         ))}
 
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <ParsedText tagsStyles={tagsStyles} classesStyles={classesStyles}>
-            {`<div class="final-answer">${question.answer}</div>`}
-          </ParsedText>
+          <RenderHtml
+            contentWidth={width}
+            source={{ html: `<body><div class="final-answer">${question.answer}</div></body>` }}
+            tagsStyles={tagsStyles}
+            classesStyles={classesStyles}
+          />
         </View>
       </View>
     </View>
