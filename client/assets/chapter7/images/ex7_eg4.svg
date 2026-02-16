@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#03a9f4" />
+    </marker>
+  </defs>
+  
+  <!-- P(x,y) equidistant from (7,1) and (3,5) -->
+  <line x1="280" y1="260" x2="240" y2="140" stroke="#03a9f4" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="120" y1="100" x2="240" y2="140" stroke="#03a9f4" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <circle cx="280" cy="260" r="5" fill="#222" />
+  <circle cx="120" cy="100" r="5" fill="#222" />
+  <circle cx="240" cy="140" r="5" fill="#e91e63" />
+
+  <text x="290" y="260" font-family="serif" font-weight="bold" font-size="18">A(7,1)</text>
+  <text x="80" y="90" font-family="serif" font-weight="bold" font-size="18">B(3,5)</text>
+  <text x="245" y="130" font-family="serif" font-weight="bold" font-size="18">P(x,y)</text>
+  
+  <text x="180" y="280" font-size="16" fill="#555">PA = PB</text>
+</svg>

@@ -1,87 +1,115 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, useWindowDimensions, ViewStyle, TextStyle } from 'react-native';
+import RenderHtml from 'react-native-render-html';
+import { JiguuColors } from '@/constants/theme';
 
 interface ParsedTextProps {
     children: string;
     style?: any;
     Component?: React.ComponentType<any>;
     accentColor?: string;
-    // If we need to pass props to the underlying component
     [key: string]: any;
 }
 
-export const ParsedText = ({ children, style, Component = Text, accentColor, ...rest }: ParsedTextProps) => {
-    if (!children) return null;
-    const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}}|{{ref}}.*?{{endref}})/g);
+// Global styles for HTML content tags
+const tagsStyles = {
+    body: {
+        fontSize: 16,
+        color: JiguuColors.textPrimary,
+        fontFamily: 'Nunito_400Regular',
+    },
+    p: {
+        marginBottom: 8,
+        marginTop: 0,
+    },
+    b: {
+        fontFamily: 'Nunito_700Bold',
+    },
+    strong: {
+        fontFamily: 'Nunito_700Bold',
+    },
+    i: {
+        fontStyle: 'italic',
+    },
+    em: {
+        fontStyle: 'italic',
+    },
+    div: {
+        marginBottom: 4,
+    }
+};
 
-    // Helper to flatten style and get color (for separator)
-    const flattenedStyle = StyleSheet.flatten(style);
-    const textColor = flattenedStyle?.color || '#000';
+const classesStyles = {
+    'fraction': {
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        display: 'flex',
+        marginHorizontal: 4,
+    },
+    'numerator': {
+        borderBottomWidth: 1,
+        borderBottomColor: 'black',
+        paddingHorizontal: 2,
+        textAlign: 'center',
+        fontFamily: 'Nunito_600SemiBold',
+        fontSize: 14,
+    },
+    'denominator': {
+        paddingTop: 1,
+        textAlign: 'center',
+        fontFamily: 'Nunito_600SemiBold',
+        fontSize: 14,
+    },
+    'formula': {
+        color: '#2E7D32',
+        fontFamily: 'Kalam_700Bold',
+        fontSize: 16,
+    },
+    'bold': {
+        fontFamily: 'Nunito_700Bold',
+    }
+};
+
+export const ParsedText = ({ children, style, Component, accentColor, ...rest }: ParsedTextProps) => {
+    const { width } = useWindowDimensions();
+
+    if (!children) return null;
+
+    // Flatten incoming style to apply to base body style
+    const flattenedStyle = StyleSheet.flatten(style) || {};
+
+    // Merge incoming styles with default tag styles
+    // Note: RenderHtml 'baseStyle' applies to the root, but 'tagsStyles.body' is safer for text inheritance
+    const dynamicTagsStyles = {
+        ...tagsStyles,
+        body: {
+            ...tagsStyles.body,
+            ...flattenedStyle, // Apply color, fontFamily, fontSize from props
+            marginBottom: 0, // Reset margin for inline-like usage
+        }
+    };
+
+    // If accentColor is provided, we can use it for specific classes if needed
+    const dynamicClassesStyles = {
+        ...classesStyles,
+        // potentially add accent colored classes here
+    };
+
+    // Wrap in a div to ensure body styles apply if content is just text
+    const htmlContent = `<body>${children}</body>`;
 
     return (
-        <Component style={style} {...rest}>
-            {parts.map((part, index) => {
-                const fractionMatch = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
-                const refMatch = part.match(/{{ref}}(.*?){{endref}}/);
-
-                if (fractionMatch) {
-                    const numerator = fractionMatch[1];
-                    const denominator = fractionMatch[2];
-                    return (
-                        <View key={index} style={styles.fractionContainer}>
-                            <View style={styles.numeratorContainer}>
-                                <Text style={[styles.numeratorText, { color: textColor }, { fontSize: (flattenedStyle?.fontSize || 14) * 0.8 }]}>{numerator}</Text>
-                            </View>
-                            <View style={[styles.separator, { backgroundColor: textColor }]} />
-                            <View style={styles.denominatorContainer}>
-                                <Text style={[styles.denominatorText, { color: textColor }, { fontSize: (flattenedStyle?.fontSize || 14) * 0.8 }]}>{denominator}</Text>
-                            </View>
-                        </View>
-                    );
-                } else if (refMatch) {
-                    return (
-                        <Text key={index} style={{ color: '#FF4081', fontSize: (flattenedStyle?.fontSize || 14) * 0.85, fontWeight: 'bold' }}>
-                            {refMatch[1]}
-                        </Text>
-                    );
-                }
-                return <Text key={index}>{part}</Text>;
-            })}
-        </Component>
+        <RenderHtml
+            contentWidth={width - 48} // standardized padding subtraction
+            source={{ html: htmlContent }}
+            tagsStyles={dynamicTagsStyles as any}
+            classesStyles={dynamicClassesStyles as any}
+            baseStyle={flattenedStyle as any}
+            enableExperimentalMarginCollapsing={true}
+            {...rest}
+        />
     );
 };
 
-const styles = StyleSheet.create({
-    fractionContainer: {
-        alignItems: 'center',
-        justifyContent: 'center', // Center vertically within the line height
-        marginHorizontal: 3,
-        // Adjust vertical alignment to match text baseline better
-        transform: [{ translateY: 4 }],
-    },
-    numeratorContainer: {
-        alignItems: 'center',
-        marginBottom: 0,
-        paddingHorizontal: 1,
-    },
-    numeratorText: {
-        textAlign: 'center',
-        lineHeight: 12,
-        fontWeight: '500',
-    },
-    separator: {
-        height: 1,
-        width: '100%',
-        minWidth: 8,
-    },
-    denominatorContainer: {
-        alignItems: 'center',
-        marginTop: 0,
-        paddingHorizontal: 1,
-    },
-    denominatorText: {
-        textAlign: 'center',
-        lineHeight: 12,
-        fontWeight: '500',
-    }
-});
+const styles = StyleSheet.create({});

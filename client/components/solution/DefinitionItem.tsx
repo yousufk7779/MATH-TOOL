@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { StyleSheet, View } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
+import { ParsedText } from "@/components/ParsedText";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 
 interface DefinitionItemProps {
@@ -15,7 +16,7 @@ function DefinitionItem({ term, description, termStyle, descriptionStyle }: Defi
   return (
     <View style={styles.container}>
       <ThemedText style={[styles.term, termStyle]}>{term}:</ThemedText>
-      <ThemedText style={[styles.description, descriptionStyle]}>{description}</ThemedText>
+      <ParsedText style={[styles.description, descriptionStyle]}>{description}</ParsedText>
     </View>
   );
 }

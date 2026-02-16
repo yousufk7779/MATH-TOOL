@@ -1,21 +1,15 @@
 import React, { memo } from "react";
-import { StyleSheet, View, Image, Text } from "react-native";
-
+import { StyleSheet, View, Image, useWindowDimensions } from "react-native";
+import RenderHtml from 'react-native-render-html';
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/chapterContent";
-
-
-
-
-
 import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useSavedItems } from "@/context/SavedItemsContext";
 
-import { ParsedText } from "@/components/ParsedText";
-
 const graphImages: Record<string, any> = {
+  // ... existing images ...
   "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
   "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
   "graph_ex2_1_q1_c": require("@/assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
@@ -61,10 +55,75 @@ interface QuestionCardProps {
   contentStyle?: any;
 }
 
-function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
-  // Ideally chapterId should be passed. For now, if not passed, we might fail to save correctly or need to infer.
-  // We MUST update call sites to pass chapterId.
+// Custom styles for HTML tags/classes
+const tagsStyles = {
+  body: {
+    fontSize: 16,
+    color: JiguuColors.textPrimary,
+    fontFamily: 'Nunito_400Regular', // Default font
+  },
+  p: {
+    marginBottom: 8,
+  },
+  b: {
+    fontFamily: 'Nunito_700Bold',
+  },
+  strong: {
+    fontFamily: 'Nunito_700Bold',
+  },
+};
 
+const classesStyles = {
+  'question': {
+    fontFamily: 'Nunito_700Bold',
+    fontSize: 16,
+    marginBottom: 8,
+  },
+  'step': {
+    fontSize: 15,
+    marginBottom: 8,
+    lineHeight: 24,
+    color: JiguuColors.textSecondary,
+  },
+  'bold': {
+    fontFamily: 'Nunito_700Bold',
+  },
+  'fraction': {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    display: 'flex',
+    marginHorizontal: 4,
+  },
+  'numerator': {
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+    paddingHorizontal: 2,
+    textAlign: 'center',
+    fontFamily: 'Nunito_600SemiBold',
+    fontSize: 14,
+  },
+  'denominator': {
+    paddingTop: 1,
+    textAlign: 'center',
+    fontFamily: 'Nunito_600SemiBold',
+    fontSize: 14,
+  },
+  'formula': {
+    color: '#2E7D32',
+    fontFamily: 'Kalam_700Bold',
+    fontSize: 16,
+  },
+  'final-answer': {
+    color: '#2E7D32',
+    fontFamily: 'Kalam_700Bold',
+    fontSize: 16,
+    marginTop: 10,
+  }
+};
+
+function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
+  const { width } = useWindowDimensions();
   const { isBookmarked, isImportant, toggleBookmark, toggleImportant } = useSavedItems();
 
   const bookmarked = isBookmarked(question.id);
@@ -73,10 +132,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
   const handleBookmark = () => {
     toggleBookmark({
       id: question.id,
-      type: "question", // or 'example' - logic needed to distinguish or just use generic 'question' type?
-      // Since QuestionCard is used for both exercises and examples, maybe we should differentiate.
-      // Ideally pass 'type' prop or infer.
-      // For now, let's assume 'question' unless we know better.
+      type: "question",
       chapterId: chapterId,
     });
   };
@@ -88,6 +144,17 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
       chapterId: chapterId,
     });
   };
+
+  // Combine styles dynamically
+  const dynamicClassesStyles = {
+    ...classesStyles,
+    'question': {
+      ...classesStyles['question'],
+      color: accentColor,
+      ...StyleSheet.flatten(titleStyle)
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
@@ -112,31 +179,22 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             </Pressable>
           </View>
         </View>
-        <View style={styles.questionTextContainer}>
-          {question.question.split('\n').map((part, index) => {
-            const isSubQuestion = index > 0 || part.trim().startsWith('('); // Heuristic if \n is missing but should be
-            return (
-              <ParsedText
-                key={index}
-                style={[
-                  styles.questionText,
-                  contentStyle,
-                  isSubQuestion && { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
-                ]}
-                Component={ThemedText}
-                accentColor={accentColor}
-              >
-                {part}
-              </ParsedText>
 
-            );
-          })}
+        <View style={styles.questionTextContainer}>
+          <RenderHtml
+            contentWidth={width - 48} // Padding adjustments
+            source={{ html: `<div>${question.question}</div>` }}
+            tagsStyles={tagsStyles as any}
+            classesStyles={dynamicClassesStyles as any}
+            enableExperimentalMarginCollapsing={true}
+          />
         </View>
       </View>
 
       <View style={styles.solutionBox}>
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
+            {/* Image handling logic remains same */}
             {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
               React.createElement(graphImages[question.image]?.default ?? graphImages[question.image], { width: "90%", height: 150 })
             ) : (
@@ -148,26 +206,27 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             )}
           </View>
         ) : null}
-        <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
-        {question.solution.map((step, index) => {
-          const isFormula = step.startsWith("[Formula]");
-          const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
-          return (
-            <View key={index} style={styles.stepRow}>
-              <ParsedText style={[
-                styles.stepText,
-                contentStyle,
-                isFormula && { color: "#FF7043", fontWeight: "bold", fontFamily: "Kalam_700Bold" }
-              ]}
-                Component={Text}>
-                {displayStep}
-              </ParsedText>
 
-            </View>
-          );
-        })}
+        <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
+
+        {question.solution.map((step, index) => (
+          <View key={index} style={styles.stepRow}>
+            <RenderHtml
+              contentWidth={width - 32}
+              source={{ html: `<div>${step}</div>` }}
+              tagsStyles={tagsStyles as any}
+              classesStyles={classesStyles as any}
+            />
+          </View>
+        ))}
+
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <ParsedText style={[styles.answerText, titleStyle]} Component={ThemedText}>{question.answer}</ParsedText>
+          <RenderHtml
+            contentWidth={width - 50}
+            source={{ html: `<div class="final-answer">${question.answer}</div>` }}
+            tagsStyles={tagsStyles as any}
+            classesStyles={classesStyles as any}
+          />
         </View>
       </View>
     </View>
@@ -205,11 +264,8 @@ const styles = StyleSheet.create({
   actionButton: {
     padding: 2,
   },
-  questionText: {
-    ...Typography.body,
-    color: JiguuColors.textPrimary,
-    lineHeight: 24,
-    textAlign: "justify",
+  questionTextContainer: {
+    // RenderHTML handles this
   },
   solutionBox: {
     padding: Spacing.md,
@@ -225,25 +281,13 @@ const styles = StyleSheet.create({
     marginTop: Spacing.sm,
   },
   stepRow: {
-    marginBottom: Spacing.xs,
-  },
-  stepText: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    lineHeight: 28,
-    textAlign: "justify",
+    marginBottom: 2,
   },
   answerBox: {
     marginTop: Spacing.md,
     padding: Spacing.sm,
     borderRadius: BorderRadius.xs,
     borderWidth: 1,
-  },
-  answerText: {
-    ...Typography.body,
-    fontFamily: "Nunito_700Bold",
-    color: "#4CAF50",
-    textAlign: "justify",
   },
   imageContainer: {
     alignItems: "center",
@@ -259,36 +303,5 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.xs,
     alignSelf: 'center',
     resizeMode: 'contain',
-  },
-  questionTextContainer: {},
-  fractionContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginHorizontal: 3,
-    transform: [{ translateY: 4 }],
-  },
-  numeratorContainer: {
-    alignItems: 'center',
-    marginBottom: 1,
-  },
-  numeratorText: {
-    fontSize: 12,
-    textAlign: 'center',
-    lineHeight: 14,
-  },
-  separator: {
-    height: 1,
-    width: '100%',
-    minWidth: 10,
-    backgroundColor: 'black',
-  },
-  denominatorContainer: {
-    alignItems: 'center',
-    marginTop: 1,
-  },
-  denominatorText: {
-    fontSize: 12,
-    textAlign: 'center',
-    lineHeight: 14,
   },
 });

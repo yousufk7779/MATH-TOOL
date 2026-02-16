@@ -21,24 +21,6 @@ const OUTPUT_FILE = path.join(__dirname, '../client/data/chapterContent.ts');
 function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
-        .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '{{frac}}$1{{over}}$2{{endfrac}}') // Handle fractions
-        .replace(/<br\s*\/?>/gi, '\n') // Replace <br> with newlines
-        .replace(/<[^>]+>/g, '') // Remove tags
-        .replace(/&nbsp;/g, ' ')
-        .replace(/&rArr;/g, '⇒')
-        .replace(/&lArr;/g, '⇐')
-        .replace(/&hArr;/g, '⇔')
-        .replace(/&rarr;/g, '→')
-        .replace(/&larr;/g, '←')
-        .replace(/&times;/g, '×')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&')
-        .replace(/&quot;/g, '"')
-        .replace(/&apos;/g, "'")
-        .replace(/&#39;/g, "'")
-        .replace(/&deg;/g, '°')
-        .replace(/&minus;/g, '−')
         .replace(/\s+/g, ' ')
         .trim();
     return clean;
@@ -46,18 +28,10 @@ function cleanText(text) {
 
 function parseTableToText(html) {
     if (!html || !html.includes('<table')) return "";
-    const rows = html.match(/<tr[^>]*>[\s\S]*?<\/tr>/gs);
-    if (!rows) return "";
-
-    let tableText = "\n";
-    rows.forEach(row => {
-        const cells = row.match(/<(td|th)[^>]*>[\s\S]*?<\/\1>/gs);
-        if (cells) {
-            const cleanCells = cells.map(c => cleanText(c));
-            tableText += `| ${cleanCells.join(" | ")} |\n`;
-        }
-    });
-    return tableText;
+    // Return the raw HTML table structure (or the container div's innerHTML)
+    // The previous logic converted to markdown, which lost styling.
+    // Now we keep HTML.
+    return html;
 }
 
 function parseOverview(html, chapterId) {
