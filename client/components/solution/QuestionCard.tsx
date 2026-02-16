@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { StyleSheet, View, Image, useWindowDimensions } from "react-native";
-import RenderHtml from 'react-native-render-html';
+import { ParsedText } from "@/components/ParsedText";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/chapterContent";
@@ -191,13 +191,9 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         </View>
 
         <View style={styles.questionTextContainer}>
-          <RenderHtml
-            contentWidth={width - 48} // Padding adjustments
-            source={{ html: `<div>${question.question}</div>` }}
-            tagsStyles={tagsStyles as any}
-            classesStyles={dynamicClassesStyles as any}
-            enableExperimentalMarginCollapsing={true}
-          />
+          <ParsedText tagsStyles={tagsStyles} classesStyles={dynamicClassesStyles}>
+            {question.question}
+          </ParsedText>
         </View>
       </View>
 
@@ -221,22 +217,16 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
 
         {question.solution.map((step, index) => (
           <View key={index} style={styles.stepRow}>
-            <RenderHtml
-              contentWidth={width - 32}
-              source={{ html: `<div>${step}</div>` }}
-              tagsStyles={tagsStyles as any}
-              classesStyles={classesStyles as any}
-            />
+            <ParsedText tagsStyles={tagsStyles} classesStyles={classesStyles}>
+              {step}
+            </ParsedText>
           </View>
         ))}
 
         <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <RenderHtml
-            contentWidth={width - 50}
-            source={{ html: `<div class="final-answer">${question.answer}</div>` }}
-            tagsStyles={tagsStyles as any}
-            classesStyles={classesStyles as any}
-          />
+          <ParsedText tagsStyles={tagsStyles} classesStyles={classesStyles}>
+            {`<div class="final-answer">${question.answer}</div>`}
+          </ParsedText>
         </View>
       </View>
     </View>
