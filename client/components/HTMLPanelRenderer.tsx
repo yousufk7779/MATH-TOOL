@@ -4,7 +4,8 @@ import { StyleSheet, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 interface RenderPanelProps {
-    htmlUri: string; // The local file path (e.g., file:///...)
+    htmlUri?: string; // The local file path (e.g., file:///...)
+    htmlContent?: string; // Direct HTML content string
     targetId: string; // ID of the question/block to show
     style?: any;
 }
@@ -76,18 +77,25 @@ const INJECTED_SCRIPT = `
 })();
 `;
 
-export const HTMLPanelRenderer = memo(({ htmlUri, targetId, style }: RenderPanelProps) => {
+export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }: RenderPanelProps) => {
     const webviewRef = useRef<WebView>(null);
     const [height, setHeight] = useState(100);
 
     const script = INJECTED_SCRIPT + ` showOnlyTarget('${targetId}');`;
+
+    const source = htmlContent
+        ? { html: htmlContent, baseUrl: '' }
+        : { uri: htmlUri || '', baseUrl: '' };
 
     return (
         <View style={[styles.container, style, { height }]}>
             <WebView
                 ref={webviewRef}
                 originWhitelist={['*']}
-                source={{ uri: htmlUri }}
+                allowFileAccess={true}
+                allowFileAccessFromFileURLs={true}
+                allowUniversalAccessFromFileURLs={true}
+                source={source}
                 injectedJavaScript={script}
                 onMessage={(event) => {
                     try {

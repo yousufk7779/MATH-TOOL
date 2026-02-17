@@ -59,6 +59,7 @@ function SolutionScreen() {
   const [questions, setQuestions] = useState<QuestionBlock[]>([]);
   const [mcqs, setMcqs] = useState<MCQType[]>([]);
   const [currentHtmlUri, setCurrentHtmlUri] = useState<string | null>(null);
+  const [currentHtmlContent, setCurrentHtmlContent] = useState<string | null>(null);
 
   // Selection State (for Exercises)
   const [selectedQuestionId, setSelectedQuestionId] = useState<string | null>(null);
@@ -72,6 +73,7 @@ function SolutionScreen() {
       setLoading(true);
       setSelectedQuestionId(null);
       setCurrentHtmlUri(null);
+      setCurrentHtmlContent(null);
       setQuestions([]);
       setMcqs([]);
 
@@ -83,15 +85,32 @@ function SolutionScreen() {
         if (activeTabId === 'mcqs') {
           const fetchedMcqs = await ContentService.getMCQs(chapter.id);
           if (isMounted) setMcqs(fetchedMcqs);
-        } else if (activeTabId !== 'overview' && activeTabId !== 'eg') {
+        } else if (activeTabId === 'overview') {
+          // For overview, we prefer loading content string to avoid WebView file access issues
+          const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
+          if (isMounted) setCurrentHtmlContent(content);
+        } else if (activeTabId !== 'eg') {
+          // Exercises
           const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
           if (isMounted) {
             setQuestions(fetchedQuestions);
+            // If we fallback to full HTML, we might need content?
+            // Usually if questions loaded, we don't need full html content string for the fallback panel, 
+            // but for 'Question Panel' we use URI.
+            // If questions are empty, we might want content.
+            if (fetchedQuestions.length === 0) {
+              const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
+              if (isMounted) setCurrentHtmlContent(content);
+            }
           }
         } else if (activeTabId === 'eg') {
           // Examples
           const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
           if (isMounted) setQuestions(fetchedQuestions);
+          if (fetchedQuestions.length === 0) {
+            const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
+            if (isMounted) setCurrentHtmlContent(content);
+          }
         }
 
       } catch (e) {
@@ -161,10 +180,14 @@ function SolutionScreen() {
     }
 
     if (activeTabId === 'overview') {
-      if (!currentHtmlUri) return <EmptyState title="Error" message="Could not load content." />;
+      if (!currentHtmlContent && !currentHtmlUri) return <EmptyState title="Error" message="Could not load content." />;
       return (
         <View style={styles.fullPanel}>
-          <HTMLPanelRenderer htmlUri={currentHtmlUri} targetId="" />
+          <HTMLPanelRenderer
+            htmlUri={currentHtmlUri || undefined}
+            htmlContent={currentHtmlContent || undefined}
+            targetId=""
+          />
         </View>
       );
     }
@@ -199,7 +222,11 @@ function SolutionScreen() {
             </View>
           </View>
         ) : (
-          <HTMLPanelRenderer htmlUri={currentHtmlUri || ""} targetId="" />
+          <HTMLPanelRenderer
+            htmlUri={currentHtmlUri || ""}
+            htmlContent={currentHtmlContent || undefined}
+            targetId=""
+          />
         )}
 
         {/* Question Panel */}

@@ -14,7 +14,7 @@ import { ContentService } from "@/services/ContentService";
 
 // Helper component to load and render a single bookmarked item
 const BookmarkItem = memo(({ item }: { item: any }) => {
-    const [htmlUri, setHtmlUri] = useState<string | null>(null);
+    const [htmlContent, setHtmlContent] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -28,13 +28,15 @@ const BookmarkItem = memo(({ item }: { item: any }) => {
             // If the ID format is standardized as chX_exY_qZ, we can extract 'exY'.
 
             let exerciseId = null;
-            const parts = item.id.split('_');
-            if (parts.length >= 2) {
-                // heuristic: 2nd part is usually exercise ID or similar
-                // e.g. ch3_ex3.1_q1 -> ex3.1
-                // e.g. ch3_mcqs_q1 -> mcqs
-                // e.g. ch3_eg_q1 -> eg
-                exerciseId = parts[1];
+            if (item.id) {
+                const parts = item.id.split('_');
+                if (parts.length >= 2) {
+                    // heuristic: 2nd part is usually exercise ID or similar
+                    // e.g. ch3_ex3.1_q1 -> ex3.1
+                    // e.g. ch3_mcqs_q1 -> mcqs
+                    // e.g. ch3_eg_q1 -> eg
+                    exerciseId = parts[1];
+                }
             }
 
             if (exerciseId && item.chapterId) {
@@ -44,8 +46,9 @@ const BookmarkItem = memo(({ item }: { item: any }) => {
                     chId = chId.split('-')[0]; // simple fallback
                 }
 
-                const uri = await ContentService.getHtmlUri(chId, exerciseId);
-                setHtmlUri(uri);
+                // Prefer loading content string to avoid WebView file access issues
+                const content = await ContentService.getHtmlContent(chId, exerciseId);
+                setHtmlContent(content);
             }
             setLoading(false);
         };
@@ -53,7 +56,7 @@ const BookmarkItem = memo(({ item }: { item: any }) => {
     }, [item.id, item.chapterId]);
 
     if (loading) return <ActivityIndicator size="small" />;
-    if (!htmlUri) return <ThemedText>Content not found</ThemedText>;
+    if (!htmlContent) return <ThemedText>Content not found</ThemedText>;
 
     return (
         <View style={styles.itemContainer}>
@@ -65,7 +68,7 @@ const BookmarkItem = memo(({ item }: { item: any }) => {
             </View>
             <View style={styles.panelContainer}>
                 <HTMLPanelRenderer
-                    htmlUri={htmlUri}
+                    htmlContent={htmlContent}
                     targetId={item.id}
                 />
             </View>
