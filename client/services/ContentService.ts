@@ -49,22 +49,33 @@ async function resolveUri(htmlSource: any): Promise<string> {
     }
 }
 
-// Scans the HTML content string to find question blocks
+// Scans the HTML content string to find question blocks with robust parsing
 function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
     const questions: QuestionBlock[] = [];
     const seenIds = new Set<string>();
 
-    // Regex to find IDs and Labels we injected
-    const regex = /<div[^>]+id="([^"]+)"(?:[^>]*data-label="([^"]*)")?(?:[^>]*data-type="([^"]*)")?.*?>/g;
+    // Regex to find divs with IDs. We will parse attributes manually from the tag string.
+    const divRegex = /<div\s+([^>]*id="[^"]+"[^>]*)>/g;
 
     let match;
-    while ((match = regex.exec(htmlContent)) !== null) {
-        const id = match[1];
-        const label = match[2];
-        const type = match[3] || 'sub';
+    while ((match = divRegex.exec(htmlContent)) !== null) {
+        const fullTag = match[1];
+
+        // Extract ID
+        const idMatch = fullTag.match(/id="([^"]+)"/);
+        if (!idMatch) continue;
+        const id = idMatch[1];
 
         if (!id.includes('ch')) continue;
-        if (seenIds.has(id)) continue; // Skip duplicates
+        if (seenIds.has(id)) continue;
+
+        // Extract Label
+        const labelMatch = fullTag.match(/data-label="([^"]*)"/);
+        const label = labelMatch ? labelMatch[1] : "";
+
+        // Extract Type
+        const typeMatch = fullTag.match(/data-type="([^"]*)"/);
+        const type = typeMatch ? typeMatch[1] : 'sub';
 
         let displayLabel = label || "";
 
@@ -87,15 +98,25 @@ function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
         });
     }
 
+    // Filter out parent questions if they are merely containers for sub-parts?
+    // Logic: If 'ch8_ex8.1_q1' exists and 'ch8_ex8.1_q1_1' exists,
+    // usually q1 is the main question text. Usage depends on UI.
+    // Preserving existing logic:
     const parentIds = new Set<string>();
     questions.forEach(q => {
+        // Assume format chX_exY_qZ_part
+        // If we see qZ_part, does it mean qZ is a parent?
         const parts = q.id.split('_');
-        if (parts.length > 3) {
-            const parentId_ = parts.slice(0, 3).join('_');
-            parentIds.add(parentId_);
+        // Valid parent ID would likely be 'chX_exY_qZ'
+        // Valid child ID: 'chX_exY_qZ_1'
+        if (parts.length > 3) { // Child
+            const parentId = parts.slice(0, 3).join('_');
+            parentIds.add(parentId);
         }
     });
 
+    // If we have sub-parts, do we show the parent?
+    // Original code filtered OUT parents if children existed.
     return questions.filter(q => !parentIds.has(q.id));
 }
 
