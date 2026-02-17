@@ -52,6 +52,7 @@ async function resolveUri(htmlSource: any): Promise<string> {
 // Scans the HTML content string to find question blocks
 function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
     const questions: QuestionBlock[] = [];
+    const seenIds = new Set<string>();
 
     // Regex to find IDs and Labels we injected
     const regex = /<div[^>]+id="([^"]+)"(?:[^>]*data-label="([^"]*)")?(?:[^>]*data-type="([^"]*)")?.*?>/g;
@@ -63,6 +64,7 @@ function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
         const type = match[3] || 'sub';
 
         if (!id.includes('ch')) continue;
+        if (seenIds.has(id)) continue; // Skip duplicates
 
         let displayLabel = label || "";
 
@@ -76,6 +78,7 @@ function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
             }
         }
 
+        seenIds.add(id);
         questions.push({
             id,
             label: displayLabel,

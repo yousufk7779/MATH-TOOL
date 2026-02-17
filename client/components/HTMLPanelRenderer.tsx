@@ -70,9 +70,35 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
     const script = INJECTED_SCRIPT + ` showOnlyTarget('${targetId}');`;
 
     // Construct source object
-    const source = htmlContent
-        ? { html: htmlContent, baseUrl: '' }
-        : { uri: htmlUri || '', baseUrl: '' };
+    const source = React.useMemo(() => {
+        if (htmlContent) {
+            // Inject MathJax if not present
+            let content = htmlContent;
+            if (!content.includes('MathJax')) {
+                const mathJaxScript = `
+                <script type="text/javascript" id="MathJax-script" async
+                  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+                </script>
+                <script>
+                window.MathJax = {
+                  tex: {
+                    inlineMath: [['\\\\(', '\\\\)'], ['$', '$']],
+                    displayMath: [['\\\\[', '\\\\]'], ['$$', '$$']]
+                  }
+                };
+                </script>
+                `;
+                // Try to inject before </head>, otherwise prepend to body
+                if (content.includes('</head>')) {
+                    content = content.replace('</head>', `${mathJaxScript}</head>`);
+                } else {
+                    content = `<html><head>${mathJaxScript}</head><body>${content}</body></html>`;
+                }
+            }
+            return { html: content, baseUrl: 'file:///' };
+        }
+        return { uri: htmlUri || '', baseUrl: '' };
+    }, [htmlContent, htmlUri]);
 
     return (
         <View style={[styles.container, style, { height }]}>

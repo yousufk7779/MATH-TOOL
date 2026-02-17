@@ -94,20 +94,15 @@ function SolutionScreen() {
           const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
           if (isMounted) {
             setQuestions(fetchedQuestions);
-            // If we fallback to full HTML, we might need content?
-            // Usually if questions loaded, we don't need full html content string for the fallback panel, 
-            // but for 'Question Panel' we use URI.
-            // If questions are empty, we might want content.
-            if (fetchedQuestions.length === 0) {
-              const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
-              if (isMounted) setCurrentHtmlContent(content);
-            }
+            // Always load content string to ensure we can inject MathJax and avoid access denied
+            const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
+            if (isMounted) setCurrentHtmlContent(content);
           }
         } else if (activeTabId === 'eg') {
           // Examples
           const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
-          if (isMounted) setQuestions(fetchedQuestions);
-          if (fetchedQuestions.length === 0) {
+          if (isMounted) {
+            setQuestions(fetchedQuestions);
             const content = await ContentService.getHtmlContent(chapter.id, activeTabId);
             if (isMounted) setCurrentHtmlContent(content);
           }
@@ -255,6 +250,7 @@ function SolutionScreen() {
             </View>
             <HTMLPanelRenderer
               htmlUri={currentHtmlUri}
+              htmlContent={currentHtmlContent || undefined}
               targetId={selectedQuestionId}
             />
           </View>
