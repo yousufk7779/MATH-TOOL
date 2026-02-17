@@ -77,7 +77,7 @@ const KatexRenderer = ({ tnode, style }: CustomRendererProps<TBlock>) => {
         } catch (e) { }
     }, []);
 
-    const cssStyle = StyleSheet.flatten(style);
+    const cssStyle = StyleSheet.flatten(style as any || {});
     const fontSize = cssStyle.fontSize || 16;
     const color = cssStyle.color || 'black';
 

@@ -3,6 +3,8 @@ import { Asset } from 'expo-asset';
 import * as FileSystem from 'expo-file-system';
 import { chapterList } from '../data/chapterRegistry';
 
+console.log("[ContentService] Module loading...");
+
 // Types for our content model
 export interface QuestionBlock {
     id: string; // The HTML ID we generated (chX_exY_qZ)
@@ -11,9 +13,20 @@ export interface QuestionBlock {
     htmlUri: string; // Local URI to the full HTML file
 }
 
+export interface MCQ {
+    id: string;
+    question: string;
+    options: string[];
+    correctAnswer: string;
+}
+
 // Validates and resolves the local URI for an asset
 async function resolveUri(htmlSource: any): Promise<string> {
     try {
+        if (!htmlSource) {
+            throw new Error("Invalid htmlSource");
+        }
+
         const asset = Asset.fromModule(htmlSource);
         await asset.downloadAsync(); // Ensure it's available locally
 
@@ -24,10 +37,7 @@ async function resolveUri(htmlSource: any): Promise<string> {
             uri = `file://${uri}`;
         }
 
-        // If after download we still don't have a local file URI (and it's not a remote http one), 
-        // it means we failed to get a local path.
-        // For Expo Go/Dev Client, asset.uri might be http (metro), which readAsStringAsync can't handle efficiently as a file.
-        // We prefer localUri.
+        // Prefer localUri if available to avoid http (dev server) issues
         if (asset.localUri) {
             return asset.localUri;
         }
@@ -86,13 +96,6 @@ function scanQuestions(htmlContent: string, htmlUri: string): QuestionBlock[] {
     return questions.filter(q => !parentIds.has(q.id));
 }
 
-export interface MCQ {
-    id: string;
-    question: string;
-    options: string[];
-    correctAnswer: string;
-}
-
 function parseMCQs(htmlContent: string): MCQ[] {
     const mcqs: MCQ[] = [];
     const parts = htmlContent.split(/<div[^>]*class="content-box"[^>]*>/);
@@ -143,9 +146,6 @@ export const ContentService = {
         try {
             const uri = await resolveUri(exercise.htmlSource);
             if (!uri) throw new Error("Could not resolve URI");
-
-            // If it's a remote URI (e.g. dev server), readAsStringAsync might fail if not handled? 
-            // Actually it supports http. But typically we want local.
 
             const content = await FileSystem.readAsStringAsync(uri);
             return scanQuestions(content, uri);
