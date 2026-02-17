@@ -1,6 +1,6 @@
 
 import { Asset } from 'expo-asset';
-import * as FileSystem from 'expo-file-system';
+import * as FileSystem from 'expo-file-system/legacy';
 import { chapterList } from '../data/chapterRegistry';
 
 console.log("[ContentService] Module loading...");
