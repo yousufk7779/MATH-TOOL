@@ -326,14 +326,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   fullPanel: {
-    minHeight: 500,
+    minHeight: 600,
+    marginTop: Spacing.md,
   },
   gridContainer: {
-    marginBottom: Spacing.lg,
+    marginBottom: Spacing.xl,
   },
   sectionTitle: {
     ...Typography.h4,
-    marginBottom: Spacing.sm,
+    marginBottom: Spacing.md,
     color: JiguuColors.textPrimary,
   },
   grid: {
@@ -364,11 +365,16 @@ const styles = StyleSheet.create({
   },
   panelContainer: {
     backgroundColor: '#fff',
-    borderRadius: BorderRadius.md,
+    borderRadius: BorderRadius.lg,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: JiguuColors.border,
-    minHeight: 200,
+    borderColor: '#E0E0E0',
+    minHeight: 300,
+    elevation: 3,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
   panelHeader: {
     padding: Spacing.sm,
