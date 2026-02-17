@@ -364,16 +364,16 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   panelContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: '#1A1A2E', // Dark Background
     borderRadius: BorderRadius.lg,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: '#333',
     minHeight: 300,
     elevation: 3,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.3,
     shadowRadius: 4,
   },
   panelHeader: {

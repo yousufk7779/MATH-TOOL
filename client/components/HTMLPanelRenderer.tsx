@@ -22,23 +22,65 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
         var style = document.createElement('style');
         style.innerHTML = \`
             @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+            
+            /* Aggressive Dark Theme Overrides */
+            html, body {
+                background-color: #1A1A2E !important; 
+                margin: 0; padding: 0;
+            }
             * { color: #E0E0E0 !important; }
+
             body { 
                 font-family: 'Kalam', cursive, sans-serif !important; 
-                background-color: #1A1A2E !important; 
-                margin: 0; padding: 20px;
                 font-size: 18px;
+                padding: 10px;
             }
-            .content-box { display: none; } /* Hide all by default */
+
+            /* Hide original containers/cards styling */
+            .content-box { 
+                display: none; 
+                background: transparent !important; 
+                border: none !important; 
+                box-shadow: none !important; 
+                margin: 0 !important;
+                padding: 0 !important;
+            } 
             .content-box.active { display: block !important; } 
             
-            /* Specific overrides */
-            .question { color: #FFFFFF !important; font-weight: 700; font-size: 1.2em; margin-bottom: 15px; }
-            .sub-question { color: #FFD700 !important; font-weight: 600; margin-top: 15px; }
-            .step { background: #16213E !important; padding: 10px; border-radius: 8px; border-left: 4px solid #E94560; margin-bottom: 10px; }
-            .solution-header, .final-answer { color: #4CAF50 !important; font-weight: bold; }
-            .mjx-chtml { color: #FFFFFF !important; }
-            img { background: #fff; padding: 5px; border-radius: 8px; max-width: 100%; }
+            /* Make theorem/example boxes transparent or dark */
+            div:not(.step):not(#active-display):not(.content-box) {
+                background-color: transparent !important;
+                border: none !important;
+            }
+
+            /* Specific component styling */
+            .question { 
+                color: #FFFFFF !important; 
+                font-weight: 700; 
+                font-size: 1.3em; 
+                margin-bottom: 20px; 
+                border-bottom: 1px solid #333;
+                padding-bottom: 10px;
+            }
+            .sub-question { 
+                color: #FFD700 !important; 
+                font-weight: 600; 
+                font-size: 1.1em;
+                margin-top: 20px; 
+                margin-bottom: 10px;
+            }
+            .step { 
+                background: #16213E !important; 
+                padding: 15px; 
+                border-radius: 12px; 
+                border-left: 5px solid #E94560; 
+                margin-bottom: 15px; 
+                box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            }
+            .solution-header { color: #4CAF50 !important; font-weight: bold; margin-top: 10px; font-size: 1.1em; }
+            .final-answer { color: #4CAF50 !important; font-weight: bold; margin-top: 15px; font-size: 1.1em; }
+            .mjx-chtml { color: #FFFFFF !important; font-size: 110% !important; }
+            img { background: #fff; padding: 8px; border-radius: 8px; max-width: 100%; margin: 10px 0; }
         \`;
         document.head.appendChild(style);
 
