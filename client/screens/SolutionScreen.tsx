@@ -1,38 +1,30 @@
-import React, { memo, useState, useCallback } from "react";
-import { StyleSheet, View, ScrollView, Pressable } from "react-native";
+
+import React, { memo, useState, useCallback, useEffect, useMemo } from "react";
+import { StyleSheet, View, ScrollView, Pressable, ActivityIndicator } from "react-native";
 import { useRoute, RouteProp } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import SectionCard from "@/components/solution/SectionCard";
-import DefinitionItem from "@/components/solution/DefinitionItem";
-import FormulaItem from "@/components/solution/FormulaItem";
-import QuestionCard from "@/components/solution/QuestionCard";
-import TheoremCard from "@/components/solution/TheoremCard";
+import { HTMLPanelRenderer } from "@/components/HTMLPanelRenderer";
 import MCQSection from "@/components/solution/MCQSection";
-import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
-import { getChapter } from "@/data/chapters";
-import { getChapterContent, ChapterContent, Exercise, Example, Theorem, Question } from "@/data/chapterContent";
-
+import { chapterList } from "@/data/chapterRegistry";
+import { ContentService, QuestionBlock, MCQ as MCQType } from "@/services/ContentService";
+import { useSavedItems } from "@/context/SavedItemsContext";
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
-
-type SectionType = "overview" | "exercises" | "mcq";
-type ExerciseViewType = "menu" | "exercise" | "examples" | "theorems";
 
 interface TabButtonProps {
   title: string;
   isActive: boolean;
   onPress: () => void;
   color: string;
-  textStyle?: any;
 }
 
-const TabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButtonProps) => (
+const TabButton = memo(({ title, isActive, onPress, color }: TabButtonProps) => (
   <Pressable
     style={[
       styles.tabButton,
@@ -44,7 +36,6 @@ const TabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButto
       style={[
         styles.tabText,
         isActive && styles.tabTextActive,
-        textStyle,
       ]}
     >
       {title}
@@ -52,734 +43,327 @@ const TabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButto
   </Pressable>
 ));
 
-interface NavigationButtonProps {
-  title: string;
-  color: string;
-  onPress: () => void;
-  icon?: keyof typeof Feather.glyphMap;
-  textStyle?: any;
-}
-
-const NavigationButton = memo(({ title, color, onPress, icon, textStyle }: NavigationButtonProps) => (
-  <Pressable
-    style={[styles.navButton, { backgroundColor: color }]}
-    onPress={onPress}
-  >
-    {icon ? <Feather name={icon} size={18} color="#fff" style={styles.navButtonIcon} /> : null}
-    <ThemedText style={[styles.navButtonText, textStyle]}>{title}</ThemedText>
-    <Feather name="chevron-right" size={20} color="#fff" />
-  </Pressable>
-));
-
-interface QuestionButtonProps {
-  number: string;
-  onPress: () => void;
-  isActive: boolean;
-  color: string;
-  textStyle?: any;
-}
-
-const QuestionButton = memo(({ number, onPress, isActive, color, textStyle }: QuestionButtonProps) => (
-  <Pressable
-    style={[
-      styles.questionButton,
-      isActive ? { backgroundColor: color, borderColor: color } : { borderColor: color },
-    ]}
-    onPress={onPress}
-  >
-    <ThemedText
-      style={[
-        styles.questionButtonText,
-        textStyle,
-        { color: isActive ? "#fff" : color }
-      ]}
-    >
-      {number}
-    </ThemedText>
-  </Pressable>
-));
-
 function SolutionScreen() {
   const route = useRoute<SolutionRouteProp>();
-  // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
-  // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
-  const { chapterId, chapterName, section, exerciseId, questionId, view } = route.params;
-  const [activeSection, setActiveSection] = useState<SectionType>("overview");
-  const [exerciseView, setExerciseView] = useState<ExerciseViewType>("menu");
-  const [selectedExercise, setSelectedExercise] = useState<Exercise | null>(null);
-  const [selectedQuestion, setSelectedQuestion] = useState<Question | null>(null);
+  const { chapterId } = route.params;
+  const { isBookmarked, toggleBookmark, isImportant, toggleImportant } = useSavedItems();
 
-  const chapter = getChapter(chapterId);
-  const content = getChapterContent(chapterId);
-  // const htmlChapter = ChapterHTMLs[chapterId];
-  const accentColor = chapter?.color || JiguuColors.quadraticEquations;
+  // Find Chapter Info
+  const chapter = useMemo(() => chapterList.find(c => c.id === chapterId), [chapterId]);
+  const defaultTab = chapter?.exercises[0]?.id || 'overview';
 
-  // Handwritten Style Logic for All Chapters
-  const isHandwritten = true;
-  const hwStyle = isHandwritten ? { fontFamily: "Kalam_400Regular", color: "#fff" } : {};
-  // For headings or larger text if needed
-  const hwTitleStyle = isHandwritten ? { fontFamily: "Kalam_700Bold", color: "#fff" } : {};
-  // Background for Chapter 5 needs to be dark for white text
-  const ch5Background = isHandwritten ? { backgroundColor: "#1a1a2e" } : {}; // Dark blue equivalent
+  const [activeTabId, setActiveTabId] = useState<string>(defaultTab);
+  const [loading, setLoading] = useState(false);
 
-  // Handle Deep Linking / Search Navigation
-  React.useEffect(() => {
-    if (section) {
-      setActiveSection(section as SectionType);
-    }
+  // Data States
+  const [questions, setQuestions] = useState<QuestionBlock[]>([]);
+  const [mcqs, setMcqs] = useState<MCQType[]>([]);
+  const [currentHtmlUri, setCurrentHtmlUri] = useState<string | null>(null);
 
-    if (content && section === "exercises") {
-      if (view === "examples") {
-        setExerciseView("examples");
-      } else if (view === "theorems") {
-        setExerciseView("theorems");
-      } else if (exerciseId) {
-        const exercise = content.exercises.find(e => e.id === exerciseId);
-        if (exercise) {
-          setSelectedExercise(exercise);
-          setExerciseView("exercise");
+  // Selection State (for Exercises)
+  const [selectedQuestionId, setSelectedQuestionId] = useState<string | null>(null);
 
-          if (questionId) {
-            const question = exercise.questions.find(q => q.id === questionId);
-            if (question) {
-              setSelectedQuestion(question);
-            }
+  // Load Content when Tab Changes
+  useEffect(() => {
+    let isMounted = true;
+
+    const loadContent = async () => {
+      if (!chapter) return;
+      setLoading(true);
+      setSelectedQuestionId(null);
+      setCurrentHtmlUri(null);
+      setQuestions([]);
+      setMcqs([]);
+
+      try {
+        // resolve URI
+        const uri = await ContentService.getHtmlUri(chapter.id, activeTabId);
+        if (isMounted) setCurrentHtmlUri(uri);
+
+        if (activeTabId === 'mcqs') {
+          const fetchedMcqs = await ContentService.getMCQs(chapter.id);
+          if (isMounted) setMcqs(fetchedMcqs);
+        } else if (activeTabId !== 'overview' && activeTabId !== 'eg') {
+          const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
+          if (isMounted) {
+            setQuestions(fetchedQuestions);
           }
+        } else if (activeTabId === 'eg') {
+          // Examples
+          const fetchedQuestions = await ContentService.getQuestions(chapter.id, activeTabId);
+          if (isMounted) setQuestions(fetchedQuestions);
         }
-      } else if (questionId && questionId.includes("theorem")) {
-        // Legacy/Fallback for theorem deep link
-        setExerciseView("theorems");
+
+      } catch (e) {
+        console.error("Failed to load tab content", e);
+      } finally {
+        if (isMounted) setLoading(false);
       }
-    }
-  }, [section, exerciseId, questionId, content, view]);
+    };
 
-  const handleExerciseClick = useCallback((exercise: Exercise | any) => {
-    setSelectedExercise(exercise);
-    setSelectedQuestion(null);
-    setExerciseView("exercise");
+    loadContent();
+    return () => { isMounted = false; };
+  }, [chapter, activeTabId]);
+
+  const handleQuestionSelect = useCallback((qId: string) => {
+    setSelectedQuestionId(qId);
   }, []);
 
-  const handleExamplesClick = useCallback(() => {
-    setExerciseView("examples");
-  }, []);
+  const handleBookmark = useCallback(() => {
+    if (!selectedQuestionId) return;
+    toggleBookmark({
+      id: selectedQuestionId,
+      type: 'question',
+      chapterId: chapterId
+    });
+  }, [selectedQuestionId, chapterId, toggleBookmark]);
 
-  const handleTheoremsClick = useCallback(() => {
-    setExerciseView("theorems");
-  }, []);
+  const handleImportant = useCallback(() => {
+    if (!selectedQuestionId) return;
+    toggleImportant({
+      id: selectedQuestionId,
+      type: 'question',
+      chapterId: chapterId
+    });
+  }, [selectedQuestionId, chapterId, toggleImportant]);
 
-  const handleBackToMenu = useCallback(() => {
-    setExerciseView("menu");
-    setSelectedExercise(null);
-    setSelectedQuestion(null);
-  }, []);
-
-  const handleQuestionClick = useCallback((question: Question) => {
-    setSelectedQuestion(question);
-  }, []);
-
-  const renderOverview = useCallback((data: ChapterContent) => (
-    <>
-      <SectionCard
-        title="Introduction"
-        icon="book-open"
-        iconColor="#6C63FF"
-        borderColor="#6C63FF"
-        titleStyle={hwTitleStyle}
-      >
-        <MathRender html={data.introduction} baseStyle={{ ...StyleSheet.flatten(styles.introText), ...hwStyle }} ignoredTags={['img']} />
-      </SectionCard>
-
-      <SectionCard
-        title="Definitions"
-        icon="bookmark"
-        iconColor="#4CAF50"
-        backgroundColor="#E8F5E915"
-        titleStyle={hwTitleStyle}
-      >
-        {data.definitions.map((def, index) => (
-          <DefinitionItem
-            key={index}
-            term={def.term}
-            description={def.description}
-            termStyle={hwTitleStyle}
-            descriptionStyle={hwStyle}
-          />
-        ))}
-      </SectionCard>
-
-      <SectionCard
-        title="Key Points"
-        icon="star"
-        iconColor="#FFA000"
-        backgroundColor="#FFF8E115"
-        titleStyle={hwTitleStyle}
-      >
-        {data.keyPoints.map((point, index) => (
-          <View key={index} style={styles.keyPointRow}>
-            <View style={[styles.bullet, { backgroundColor: "#FFA000" }]} />
-            <MathRender html={point} baseStyle={{ ...StyleSheet.flatten(styles.keyPointText), ...hwStyle }} ignoredTags={['img']} />
-          </View>
-        ))}
-      </SectionCard>
-
-      <SectionCard
-        title="Formulas"
-        icon="edit-3"
-        iconColor="#9C27B0"
-        backgroundColor="#F3E5F515"
-        titleStyle={hwTitleStyle}
-      >
-        {data.formulas.map((formula, index) => (
-          <FormulaItem
-            key={index}
-            name={formula.name}
-            formula={formula.formula}
-            textStyle={hwStyle}
-          />
-        ))}
-      </SectionCard>
-
-      <SectionCard
-        title="Chapter Crux"
-        icon="zap"
-        iconColor="#2196F3"
-        backgroundColor="#E3F2FD15"
-        titleStyle={hwTitleStyle}
-      >
-        {data.crux.map((item, index) => (
-          <View key={index} style={styles.cruxRow}>
-            <View style={[styles.cruxNumber, { backgroundColor: "#2196F3" }]}>
-              <ThemedText style={styles.cruxNumberText}>{index + 1}</ThemedText>
-            </View>
-            <MathRender html={item} baseStyle={{ ...StyleSheet.flatten(styles.cruxText), ...hwStyle }} ignoredTags={['img']} />
-          </View>
-        ))}
-      </SectionCard>
-
-      <SectionCard
-        title="Summary"
-        icon="file-text"
-        iconColor="#1565C0"
-        backgroundColor="#E3F2FD15"
-        titleStyle={hwTitleStyle}
-      >
-        {data.summary.map((item, index) => (
-          <View key={index} style={styles.summaryRow}>
-            <ThemedText style={[styles.summaryNumber, hwTitleStyle]}>{index + 1}.</ThemedText>
-            <MathRender html={item} baseStyle={{ ...StyleSheet.flatten(styles.summaryText), ...hwStyle }} ignoredTags={['img']} />
-          </View>
-        ))}
-      </SectionCard>
-    </>
-  ), [hwStyle, hwTitleStyle]);
-
-  const renderExerciseMenu = useCallback((data: ChapterContent) => (
-    <View style={styles.exerciseMenuContainer}>
-      {data.exercises.map((exercise) => (
-        <NavigationButton
-          key={exercise.id}
-          title={exercise.name}
-          color={accentColor}
-          onPress={() => handleExerciseClick(exercise)}
-          icon="edit"
-          textStyle={hwStyle}
+  // Renderers
+  const renderTabs = () => (
+    <ScrollView
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      style={styles.tabsContainer}
+      contentContainerStyle={styles.tabsContent}
+    >
+      {chapter?.exercises.map((ex) => (
+        <TabButton
+          key={ex.id}
+          title={ex.title}
+          isActive={activeTabId === ex.id}
+          onPress={() => setActiveTabId(ex.id)}
+          color={JiguuColors.accent3}
         />
       ))}
+    </ScrollView>
+  );
 
-      {data.examples.length > 0 ? (
-        <NavigationButton
-          title="NCERT Examples"
-          color="#6C63FF"
-          onPress={handleExamplesClick}
-          icon="book"
-          textStyle={hwStyle}
-        />
-      ) : null}
-
-      {data.theorems && data.theorems.length > 0 ? (
-        <NavigationButton
-          title="Important Theorems"
-          color="#9C27B0"
-          onPress={handleTheoremsClick}
-          icon="award"
-          textStyle={hwStyle}
-        />
-      ) : null}
-    </View>
-  ), [accentColor, handleExerciseClick, handleExamplesClick, handleTheoremsClick]);
-
-  const renderExerciseQuestions = useCallback((exercise: Exercise) => (
-    <View style={styles.questionsContainer}>
-      <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-        <Feather name="arrow-left" size={18} color={accentColor} />
-        <ThemedText style={[styles.backButtonText, { color: accentColor }]}>Back to Menu</ThemedText>
-      </Pressable>
-
-      <View style={[styles.exerciseHeader, { backgroundColor: accentColor }]}>
-        <Feather name="edit" size={16} color="#fff" />
-        <ThemedText style={styles.exerciseHeaderText}>{exercise.name}</ThemedText>
-      </View>
-
-      <ThemedText style={styles.selectQuestionText}>Select a Question:</ThemedText>
-
-      <View style={styles.questionButtonsGrid}>
-        {exercise.questions.map((question) => (
-          <QuestionButton
-            key={question.id}
-            number={question.number}
-            onPress={() => handleQuestionClick(question)}
-            isActive={selectedQuestion?.id === question.id}
-            color={accentColor}
-            textStyle={hwTitleStyle}
-          />
-        ))}
-      </View>
-
-      {selectedQuestion ? (
-        <View style={styles.questionContent}>
-          <QuestionCard
-            question={selectedQuestion}
-            accentColor={accentColor}
-            chapterId={chapterId}
-            titleStyle={hwTitleStyle}
-            contentStyle={hwStyle}
-          />
-        </View>
-      ) : null}
-    </View>
-  ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion, hwStyle]);
-
-  // Removed renderHTMLContent logic here
-
-
-  // Placeholder removed
-  // }, [activeSection, htmlChapter, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
-
-  const renderExamples = useCallback((data: ChapterContent) => {
-    const examplesToShow = questionId
-      ? data.examples.filter(e => e.id === questionId)
-      : data.examples;
-
-    return (
-      <View style={styles.questionsContainer}>
-        <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-          <Feather name="arrow-left" size={18} color="#6C63FF" />
-          <ThemedText style={[styles.backButtonText, { color: "#6C63FF" }]}>Back to Menu</ThemedText>
-        </Pressable>
-
-        <View style={[styles.exerciseHeader, { backgroundColor: "#6C63FF" }]}>
-          <Feather name="book" size={16} color="#fff" />
-          <ThemedText style={styles.exerciseHeaderText}>NCERT Examples</ThemedText>
-        </View>
-
-        {examplesToShow.map((example) => (
-          <QuestionCard
-            key={example.id}
-            question={{
-              id: example.id,
-              number: example.number,
-              question: example.question,
-              solution: example.solution,
-              answer: example.answer,
-              image: example.image,
-            }}
-            accentColor="#6C63FF"
-            chapterId={chapterId}
-            titleStyle={hwTitleStyle}
-            contentStyle={hwStyle}
-          />
-        ))}
-      </View>
-    );
-  }, [handleBackToMenu, questionId]);
-
-  const renderTheorems = useCallback((data: ChapterContent) => {
-    // If view is already 'theorems', we can trust questionId refers to a theorem if present
-    const theoremsToShow = questionId
-      ? data.theorems?.filter(t => t.id === questionId)
-      : data.theorems;
-
-    return (
-      <View style={styles.questionsContainer}>
-        <Pressable style={styles.backButton} onPress={handleBackToMenu}>
-          <Feather name="arrow-left" size={18} color="#9C27B0" />
-          <ThemedText style={[styles.backButtonText, { color: "#9C27B0" }]}>Back to Menu</ThemedText>
-        </Pressable>
-
-        <View style={[styles.exerciseHeader, { backgroundColor: "#9C27B0" }]}>
-          <Feather name="award" size={16} color="#fff" />
-          <ThemedText style={styles.exerciseHeaderText}>Important Theorems</ThemedText>
-        </View>
-
-        {theoremsToShow?.map((theorem) => (
-          <TheoremCard key={theorem.id} theorem={theorem} chapterId={chapterId} />
-        ))}
-      </View>
-    );
-  }, [handleBackToMenu, questionId]);
-
-  const renderExercises = useCallback((data: ChapterContent) => {
-    switch (exerciseView) {
-      case "menu":
-        return renderExerciseMenu(data);
-      case "exercise":
-        return selectedExercise ? renderExerciseQuestions(selectedExercise) : renderExerciseMenu(data);
-      case "examples":
-        return renderExamples(data);
-      case "theorems":
-        return renderTheorems(data);
-      default:
-        return renderExerciseMenu(data);
+  const renderContent = () => {
+    if (loading) {
+      return <ActivityIndicator size="large" color={JiguuColors.accent3} style={{ marginTop: 50 }} />;
     }
-  }, [exerciseView, selectedExercise, renderExerciseMenu, renderExerciseQuestions, renderExamples, renderTheorems]);
 
-  const renderMCQ = useCallback((data: ChapterContent) => (
-    <MCQSection mcqs={data.mcqs} accentColor={accentColor} textStyle={hwStyle} />
-  ), [accentColor, hwStyle]);
-
-  const handleSectionChange = useCallback((section: SectionType) => {
-    setActiveSection(section);
-    if (section !== "exercises") {
-      setExerciseView("menu");
-      setSelectedExercise(null);
-      setSelectedQuestion(null);
+    if (activeTabId === 'mcqs') {
+      return (
+        <View style={styles.contentArea}>
+          <MCQSection mcqs={mcqs} />
+        </View>
+      );
     }
-  }, []);
 
+    if (activeTabId === 'overview') {
+      if (!currentHtmlUri) return <EmptyState title="Error" message="Could not load content." />;
+      return (
+        <View style={styles.fullPanel}>
+          <HTMLPanelRenderer htmlUri={currentHtmlUri} targetId="" />
+        </View>
+      );
+    }
 
-
-
-
-  if (!content) {
+    // Exercise or Examples
     return (
-      <ScreenWrapper showBackButton>
-        <View style={styles.staticContainer}>
-          <View style={styles.header}>
-            <ThemedText style={[styles.title, { color: accentColor }]}>
-              {chapter?.number ? `${chapter.number}. ${chapterName}` : chapterName}
-            </ThemedText>
+      <View style={styles.contentArea}>
+        {/* Question Grid */}
+        {questions.length > 0 ? (
+          <View style={styles.gridContainer}>
+            <ThemedText style={styles.sectionTitle}>Select a Question:</ThemedText>
+            <View style={styles.grid}>
+              {questions.map((q) => (
+                <Pressable
+                  key={q.id}
+                  onPress={() => handleQuestionSelect(q.id)}
+                  style={[
+                    styles.gridButton,
+                    selectedQuestionId === q.id && styles.gridButtonActive
+                  ]}
+                >
+                  <ThemedText
+                    style={[
+                      styles.gridButtonText,
+                      selectedQuestionId === q.id && styles.gridButtonTextActive
+                    ]}
+                  >
+                    {q.label}
+                  </ThemedText>
+                </Pressable>
+              ))}
+            </View>
           </View>
-          <ScrollView
-            style={styles.scrollView}
-            contentContainerStyle={styles.content}
-            showsVerticalScrollIndicator={false}
-          >
-            <EmptyState
-              title="Coming Soon"
-              message="Step-by-step solutions for this chapter will be added soon."
-              icon="book-open"
+        ) : (
+          <HTMLPanelRenderer htmlUri={currentHtmlUri || ""} targetId="" />
+        )}
+
+        {/* Question Panel */}
+        {selectedQuestionId && currentHtmlUri && (
+          <View style={styles.panelContainer}>
+            <View style={styles.panelHeader}>
+              <ThemedText style={styles.panelTitle}>
+                Question {questions.find(q => q.id === selectedQuestionId)?.label}
+              </ThemedText>
+              <View style={{ flexDirection: 'row', gap: 10 }}>
+                <Pressable onPress={handleImportant} style={styles.iconButton}>
+                  <Feather
+                    name={isImportant(selectedQuestionId) ? "star" : "star"}
+                    size={22}
+                    color={isImportant(selectedQuestionId) ? "#FFD700" : JiguuColors.textSecondary}
+                  />
+                </Pressable>
+                <Pressable onPress={handleBookmark} style={styles.iconButton}>
+                  <Feather
+                    name={isBookmarked(selectedQuestionId) ? "bookmark" : "bookmark"}
+                    size={22}
+                    color={isBookmarked(selectedQuestionId) ? JiguuColors.accent1 : JiguuColors.textSecondary}
+                  />
+                </Pressable>
+              </View>
+            </View>
+            <HTMLPanelRenderer
+              htmlUri={currentHtmlUri}
+              targetId={selectedQuestionId}
             />
-          </ScrollView>
-        </View>
+          </View>
+        )}
+      </View>
+    );
+  };
+
+  if (!chapter) {
+    return (
+      <ScreenWrapper>
+        <EmptyState title="Chapter Not Found" message="The requested chapter does not exist." />
       </ScreenWrapper>
     );
   }
 
   return (
     <ScreenWrapper showBackButton>
-      <View style={[styles.staticContainer, ch5Background]}>
-        <View style={styles.header}>
-          <View style={[styles.chapterIcon, { backgroundColor: accentColor }]}>
-            <ThemedText style={styles.chapterIconText}>{content.number}</ThemedText>
-          </View>
-          <ThemedText style={[styles.title, hwTitleStyle]} numberOfLines={1}>
-            {content.title}
-          </ThemedText>
-        </View>
-
-        <View style={styles.tabContainer}>
-          <TabButton
-            title="Overview"
-            isActive={activeSection === "overview"}
-            onPress={() => handleSectionChange("overview")}
-            color={accentColor}
-            textStyle={hwTitleStyle}
-          />
-          <TabButton
-            title="Exercises"
-            isActive={activeSection === "exercises"}
-            onPress={() => handleSectionChange("exercises")}
-            color={accentColor}
-            textStyle={hwTitleStyle}
-          />
-          <TabButton
-            title="MCQs"
-            isActive={activeSection === "mcq"}
-            onPress={() => handleSectionChange("mcq")}
-            color={accentColor}
-            textStyle={hwTitleStyle}
-          />
-        </View>
-
-        <ScrollView
-          style={styles.scrollView}
-          contentContainerStyle={styles.content}
-          showsVerticalScrollIndicator={false}
-        >
-          {activeSection === "overview" ? renderOverview(content) : null}
-          {activeSection === "exercises" ? renderExercises(content) : null}
-          {activeSection === "mcq" ? renderMCQ(content) : null}
-        </ScrollView>
+      <View style={styles.header}>
+        <ThemedText style={styles.headerTitle}>{chapter.name}</ThemedText>
       </View>
+      {renderTabs()}
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        {renderContent()}
+      </ScrollView>
     </ScreenWrapper>
   );
 }
 
-export default memo(SolutionScreen);
-
 const styles = StyleSheet.create({
-  staticContainer: {
-    flex: 1,
-  },
-  scrollView: {
-    flex: 1,
-  },
-  content: {
-    paddingHorizontal: Spacing.xl,
-    paddingTop: Spacing.sm,
-    paddingBottom: 120,
-  },
   header: {
-    flexDirection: "row",
-    marginBottom: Spacing.sm,
-    paddingHorizontal: Spacing.lg,
-    paddingTop: Spacing.sm,
-    alignItems: "center",
-    justifyContent: "center",
+    padding: Spacing.md,
+    backgroundColor: JiguuColors.background,
   },
-  chapterIcon: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    justifyContent: "center",
-    alignItems: "center",
-    marginRight: Spacing.sm,
-  },
-  chapterIconText: {
-    color: "#fff",
-    fontSize: 14,
-    fontFamily: "Nunito_700Bold",
-  },
-  title: {
-    ...Typography.h4,
+  headerTitle: {
+    ...Typography.h3,
     color: JiguuColors.textPrimary,
-    textAlign: "center",
   },
-  tabContainer: {
-    flexDirection: "row",
+  tabsContainer: {
+    maxHeight: 60,
     marginBottom: Spacing.sm,
-    marginHorizontal: Spacing.lg,
-    backgroundColor: JiguuColors.surface,
-    borderRadius: BorderRadius.md,
-    padding: Spacing.xs,
-    gap: Spacing.xs,
+    backgroundColor: JiguuColors.background,
+    borderBottomWidth: 1,
+    borderBottomColor: JiguuColors.border,
+  },
+  tabsContent: {
+    paddingHorizontal: Spacing.md,
+    alignItems: 'center',
+    gap: Spacing.sm,
   },
   tabButton: {
-    flex: 1,
-    paddingVertical: 6, // Reduced vertical padding
-    alignItems: "center",
-    borderRadius: BorderRadius.sm,
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.xs,
+    borderRadius: BorderRadius.full,
     borderWidth: 1,
-    borderColor: "transparent",
+    borderColor: JiguuColors.border,
+    marginRight: Spacing.xs,
+    backgroundColor: JiguuColors.surface,
   },
   tabText: {
-    ...Typography.small,
-    fontFamily: "Nunito_600SemiBold",
+    ...Typography.button,
     color: JiguuColors.textSecondary,
+    fontSize: 14,
   },
   tabTextActive: {
     color: "#fff",
   },
-  introText: {
-    ...Typography.body,
-    color: JiguuColors.textSecondary,
-    lineHeight: 26,
-    textAlign: "justify",
+  scrollContent: {
+    padding: Spacing.md,
+    paddingBottom: 100,
   },
-  keyPointRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
-    marginBottom: Spacing.sm,
-  },
-  bullet: {
-    width: 6,
-    height: 6,
-    borderRadius: 3,
-    marginTop: 8,
-    marginRight: Spacing.sm,
-  },
-  keyPointText: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    flex: 1,
-    lineHeight: 22,
-    textAlign: "justify",
-  },
-  cruxRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
-    marginBottom: Spacing.md,
-  },
-  cruxNumber: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: Spacing.sm,
-  },
-  cruxNumberText: {
-    ...Typography.caption,
-    color: "#fff",
-    fontFamily: "Nunito_700Bold",
-  },
-  cruxText: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    flex: 1,
-    lineHeight: 22,
-    textAlign: "justify",
-  },
-  summaryRow: {
-    flexDirection: "row",
-    alignItems: "flex-start",
-    marginBottom: Spacing.sm,
-  },
-  summaryNumber: {
-    ...Typography.body,
-    color: "#1565C0",
-    fontFamily: "Nunito_700Bold",
-    marginRight: Spacing.sm,
-    width: 24,
-  },
-  summaryText: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    flex: 1,
-    lineHeight: 22,
-    textAlign: "justify",
-  },
-  exerciseMenuContainer: {
-    gap: Spacing.md,
-  },
-  navButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: Spacing.md,
-    paddingHorizontal: Spacing.lg,
-    borderRadius: BorderRadius.md,
-    marginBottom: Spacing.xs,
-  },
-  navButtonIcon: {
-    marginRight: Spacing.sm,
-  },
-  navButtonText: {
-    ...Typography.button,
-    color: "#fff",
+  contentArea: {
     flex: 1,
   },
-  questionsContainer: {
-    flex: 1,
+  fullPanel: {
+    minHeight: 500,
   },
-  backButton: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginBottom: Spacing.md,
-    paddingVertical: Spacing.xs,
-  },
-  backButtonText: {
-    ...Typography.small,
-    fontFamily: "Nunito_600SemiBold",
-    marginLeft: Spacing.xs,
-  },
-  exerciseHeader: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingVertical: Spacing.sm,
-    paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.xs,
-    marginBottom: Spacing.md,
-    gap: Spacing.sm,
-  },
-  exerciseHeaderText: {
-    ...Typography.button,
-    color: "#fff",
-  },
-  selectQuestionText: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    marginBottom: Spacing.md,
-  },
-  questionButtonsGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: Spacing.md,
-    justifyContent: "center", // Center grid items
+  gridContainer: {
     marginBottom: Spacing.lg,
   },
-  questionButton: {
-    paddingVertical: Spacing.sm,
-    paddingHorizontal: Spacing.md,
-    borderRadius: BorderRadius.sm,
-    borderWidth: 2,
-    minWidth: 70,
-    alignItems: "center",
-  },
-  questionButtonText: {
-    ...Typography.small,
-    fontFamily: "Nunito_700Bold",
-  },
-  questionContent: {
-    marginTop: Spacing.md,
-  },
-  theoremCard: {
-    backgroundColor: JiguuColors.surface,
-    borderRadius: BorderRadius.md,
-    padding: Spacing.lg,
-    marginBottom: Spacing.md,
-    borderLeftWidth: 4,
-    borderLeftColor: "#9C27B0",
-  },
-  theoremHeader: {
-    marginBottom: Spacing.md,
-  },
-  theoremNumber: {
-    ...Typography.small,
-    color: "#9C27B0",
-    fontFamily: "Nunito_700Bold",
-    marginBottom: Spacing.xs,
-  },
-  theoremName: {
+  sectionTitle: {
     ...Typography.h4,
+    marginBottom: Spacing.sm,
     color: JiguuColors.textPrimary,
   },
-  theoremSection: {
-    marginTop: Spacing.md,
+  grid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: Spacing.sm,
   },
-  theoremLabel: {
-    ...Typography.small,
-    color: "#9C27B0",
-    fontFamily: "Nunito_700Bold",
-    marginBottom: Spacing.xs,
+  gridButton: {
+    width: 45,
+    height: 45,
+    borderRadius: BorderRadius.sm,
+    borderWidth: 1,
+    borderColor: JiguuColors.accent3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: JiguuColors.surface,
   },
-  theoremStatement: {
+  gridButtonActive: {
+    backgroundColor: JiguuColors.accent3,
+  },
+  gridButtonText: {
     ...Typography.body,
+    fontWeight: 'bold',
+    color: JiguuColors.accent3,
+  },
+  gridButtonTextActive: {
+    color: '#fff',
+  },
+  panelContainer: {
+    backgroundColor: '#fff',
+    borderRadius: BorderRadius.md,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: JiguuColors.border,
+    minHeight: 200,
+  },
+  panelHeader: {
+    padding: Spacing.sm,
+    backgroundColor: JiguuColors.surfaceLight,
+    borderBottomWidth: 1,
+    borderBottomColor: JiguuColors.border,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  panelTitle: {
+    ...Typography.h4,
+    fontSize: 18,
     color: JiguuColors.textPrimary,
-    lineHeight: 24,
-    textAlign: "justify",
   },
-  theoremStep: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    lineHeight: 22,
-    marginBottom: Spacing.xs,
-    textAlign: "justify",
-  },
-  theoremExample: {
-    ...Typography.small,
-    color: JiguuColors.textSecondary,
-    fontStyle: "italic",
-    lineHeight: 22,
-    textAlign: "justify",
-  },
+  iconButton: {
+    padding: 5,
+  }
 });
+
+export default memo(SolutionScreen);
