@@ -28,6 +28,7 @@ function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
         .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '\\(\\frac{$1}{$2}\\)') // Handle fractions as KaTeX
+        .replace(/<span[^>]*class=["']frac["'][^>]*>[\s\S]*?<span[^>]*class=["']frac-top["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']frac-bottom["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '\\(\\frac{$1}{$2}\\)') // Handle fractions type 2
         .replace(/<br\s*\/?>/gi, '<br />') // Normalize line breaks
         .replace(/&nbsp;/g, ' ')
         .replace(/&rArr;/g, '⇒')
@@ -428,13 +429,40 @@ function parseQuestions(html, type, chapterNum, exName) {
                 const plainQText = stripTags(qText);
                 const rest = part.substring(endDiv + 6);
 
-                if (plainQText.match(/^Q\d+/)) {
+                if (plainQText.match(/^Q\d+/) && exName.includes('Exercise 5.3')) {
+                    console.log('Detected Q in Ex 5.3:', qText);
                     currentMainQuestion = qText;
+                } else if (exName.includes('Exercise 5.3')) {
+                    // console.log('Processing sub-part in Ex 5.3');
                 }
 
                 const steps = [];
-                const stepMatches = rest.match(/<span class="step">(.*?)<\/span>/gs);
-                if (stepMatches) stepMatches.forEach(s => steps.push(cleanText(s)));
+                const stepMatches = [];
+                let stepRegex = /<span class="step">/g;
+                let match;
+                while ((match = stepRegex.exec(rest)) !== null) {
+                    let start = match.index;
+                    let depth = 1;
+                    let cursor = start + match[0].length;
+                    while (depth > 0 && cursor < rest.length) {
+                        if (rest.substring(cursor).startsWith('<span')) {
+                            depth++;
+                            cursor += 5;
+                        } else if (rest.substring(cursor).startsWith('</span>')) {
+                            depth--;
+                            cursor += 7;
+                        } else {
+                            cursor++;
+                        }
+                    }
+                    if (depth === 0) {
+                        stepMatches.push(cleanText(rest.substring(start, cursor)));
+                    }
+                }
+                if (exName && exName.includes('Exercise 5.3') && stepMatches.length > 0) {
+                    // console.log("DEBUG Ex 5.3 Extracted steps:", stepMatches[0].substr(0, 100)); // Log first 100 chars of 1st step
+                }
+                if (stepMatches.length > 0) stepMatches.forEach(s => steps.push(s));
                 const ansMatch = rest.match(/<span class="answer">(.*?)<\/span>/);
 
                 if (steps.length > 0 || ansMatch) {
