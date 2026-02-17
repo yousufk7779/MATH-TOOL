@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { Question } from "@/data/chapterContent";
+import { Question } from "@/data/pyqData";
 
 
 
@@ -137,7 +137,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         ) : null}
         <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
-        {question.solution.map((step, index) => {
+        {question.solution && question.solution.map((step, index) => {
           const isFormula = step.startsWith("[Formula]");
           const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
           return (
@@ -158,13 +158,15 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
             </View>
           );
         })}
-        <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <MathRender
-            html={question.answer}
-            baseStyle={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
-            ignoredTags={['img']}
-          />
-        </View>
+        {question.answer && (
+          <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
+            <MathRender
+              html={question.answer}
+              baseStyle={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
+              ignoredTags={['img']}
+            />
+          </View>
+        )}
       </View>
     </View>
   );

@@ -6,7 +6,7 @@ import { Feather } from "@expo/vector-icons";
 import { ThemedText } from "@/components/ThemedText";
 import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { MCQ } from "@/data/chapterContent";
+import { MCQ } from "@/services/ContentService";
 
 interface MCQSectionProps {
   mcqs: MCQ[];

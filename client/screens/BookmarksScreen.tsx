@@ -1,117 +1,81 @@
-import React, { memo } from "react";
-import { StyleSheet, View, FlatList } from "react-native";
+
+import React, { memo, useEffect, useState } from "react";
+import { StyleSheet, View, FlatList, ActivityIndicator } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import {
-    useFonts,
-    Kalam_400Regular,
-    Kalam_700Bold,
-} from "@expo-google-fonts/kalam";
+import { Feather } from "@expo/vector-icons";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import QuestionCard from "@/components/solution/QuestionCard";
-import TheoremCard from "@/components/solution/TheoremCard";
-import { JiguuColors, Spacing, Typography } from "@/constants/theme";
+import { HTMLPanelRenderer } from "@/components/HTMLPanelRenderer";
+import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { useSavedItems } from "@/context/SavedItemsContext";
-import { getChapterContent } from "@/data/chapterContent";
+import { ContentService } from "@/services/ContentService";
+
+// Helper component to load and render a single bookmarked item
+const BookmarkItem = memo(({ item }: { item: any }) => {
+    const [htmlUri, setHtmlUri] = useState<string | null>(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const loadContent = async () => {
+            // Parse ID: ch3_ex3.1_q1 -> chapterId=ch3, exerciseId=ex3.1
+            // OR checks generic IDs if needed.
+            // But we have item.chapterId stored.
+            // item.id is the targetId (e.g. ch3_ex3.1_q1)
+
+            // We need to find which exercise this ID belongs to.
+            // If the ID format is standardized as chX_exY_qZ, we can extract 'exY'.
+
+            let exerciseId = null;
+            const parts = item.id.split('_');
+            if (parts.length >= 2) {
+                // heuristic: 2nd part is usually exercise ID or similar
+                // e.g. ch3_ex3.1_q1 -> ex3.1
+                // e.g. ch3_mcqs_q1 -> mcqs
+                // e.g. ch3_eg_q1 -> eg
+                exerciseId = parts[1];
+            }
+
+            if (exerciseId && item.chapterId) {
+                // Handle legacy chapter IDs if necessary (e.g. ch3-linear -> ch3)
+                let chId = item.chapterId;
+                if (chId.includes('-')) {
+                    chId = chId.split('-')[0]; // simple fallback
+                }
+
+                const uri = await ContentService.getHtmlUri(chId, exerciseId);
+                setHtmlUri(uri);
+            }
+            setLoading(false);
+        };
+        loadContent();
+    }, [item.id, item.chapterId]);
+
+    if (loading) return <ActivityIndicator size="small" />;
+    if (!htmlUri) return <ThemedText>Content not found</ThemedText>;
+
+    return (
+        <View style={styles.itemContainer}>
+            <View style={styles.itemHeader}>
+                <ThemedText style={styles.chapterTitle}>{item.chapterId.toUpperCase()}</ThemedText>
+                <View style={styles.badge}>
+                    <ThemedText style={styles.badgeText}>{item.type}</ThemedText>
+                </View>
+            </View>
+            <View style={styles.panelContainer}>
+                <HTMLPanelRenderer
+                    htmlUri={htmlUri}
+                    targetId={item.id}
+                />
+            </View>
+        </View>
+    );
+});
 
 function BookmarksScreen() {
-    const [fontsLoaded] = useFonts({
-        Kalam_400Regular,
-        Kalam_700Bold,
-    });
     const { bookmarks } = useSavedItems();
     const navigation = useNavigation();
-
-    if (!fontsLoaded) return null;
-
-    const renderItem = ({ item }: { item: any }) => {
-        // We need to fetch the actual content based on the ID.
-        // This is a bit inefficient if we have many bookmarks, but works for limited set.
-        // Ideally SavedItem should store enough data or we have a quick lookup map.
-        // Since we have getChapterContent(chapterId), we can look it up.
-
-        const content = getChapterContent(item.chapterId);
-        if (!content) return null;
-
-        if (item.type === "question") {
-            // Find within exercises
-            for (const ex of content.exercises) {
-                const q = ex.questions.find(q => q.id === item.id);
-                if (q) {
-                    return (
-                        <View style={styles.itemContainer}>
-                            <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                            <QuestionCard
-                                question={q}
-                                accentColor={JiguuColors.accent1}
-                                chapterId={item.chapterId}
-                                titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
-                                contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
-                            />
-                        </View>
-                    );
-                }
-            }
-            // Check examples (sometimes marked as question type if ambiguous, but let's check examples too)
-            const ex = content.examples.find(e => e.id === item.id);
-            if (ex) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
-                        <QuestionCard
-                            question={{
-                                id: ex.id,
-                                number: ex.number,
-                                question: ex.question,
-                                solution: ex.solution,
-                                answer: ex.answer
-                            }}
-                            accentColor={JiguuColors.accent1}
-                            chapterId={item.chapterId}
-                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
-                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
-                        />
-                    </View>
-                );
-            }
-        } else if (item.type === "theorem") {
-            const t = content.theorems?.find(t => t.id === item.id);
-            if (t) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                        <TheoremCard theorem={t} chapterId={item.chapterId} />
-                    </View>
-                );
-            }
-        } else if (item.type === "example") {
-            const ex = content.examples.find(e => e.id === item.id);
-            if (ex) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
-                        <QuestionCard
-                            question={{
-                                id: ex.id,
-                                number: ex.number,
-                                question: ex.question,
-                                solution: ex.solution,
-                                answer: ex.answer
-                            }}
-                            accentColor={JiguuColors.accent1}
-                            chapterId={item.chapterId}
-                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
-                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
-                        />
-                    </View>
-                );
-            }
-        }
-
-        return null;
-    };
 
     return (
         <ScreenWrapper showBackButton>
@@ -120,7 +84,7 @@ function BookmarksScreen() {
             </View>
             <FlatList
                 data={bookmarks}
-                renderItem={renderItem}
+                renderItem={({ item }) => <BookmarkItem item={item} />}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={[
                     styles.listContent,
@@ -138,8 +102,6 @@ function BookmarksScreen() {
     );
 }
 
-export default memo(BookmarksScreen);
-
 const styles = StyleSheet.create({
     header: {
         paddingHorizontal: Spacing.xl,
@@ -151,20 +113,52 @@ const styles = StyleSheet.create({
         color: JiguuColors.textPrimary,
     },
     listContent: {
-        paddingHorizontal: Spacing.xl,
+        paddingHorizontal: Spacing.md,
         paddingBottom: 100,
     },
     emptyContent: {
         flex: 1,
         justifyContent: "center",
+        alignItems: "center"
     },
     itemContainer: {
         marginBottom: Spacing.lg,
+        backgroundColor: JiguuColors.surface,
+        borderRadius: BorderRadius.md,
+        overflow: 'hidden',
+        borderWidth: 1,
+        borderColor: JiguuColors.border
+    },
+    itemHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: Spacing.sm,
+        backgroundColor: JiguuColors.surfaceLight,
+        borderBottomWidth: 1,
+        borderBottomColor: JiguuColors.border
     },
     chapterTitle: {
         ...Typography.small,
+        fontWeight: 'bold',
         color: JiguuColors.textSecondary,
-        marginBottom: Spacing.xs,
-        fontFamily: "Nunito_600SemiBold",
     },
+    badge: {
+        backgroundColor: JiguuColors.accent1,
+        paddingHorizontal: 8,
+        paddingVertical: 2,
+        borderRadius: 4,
+    },
+    badgeText: {
+        ...Typography.caption,
+        color: '#fff',
+        fontWeight: 'bold',
+        textTransform: 'uppercase'
+    },
+    panelContainer: {
+        minHeight: 100,
+        backgroundColor: '#fff'
+    }
 });
+
+export default memo(BookmarksScreen);
