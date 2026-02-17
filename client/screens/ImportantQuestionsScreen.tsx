@@ -1,5 +1,10 @@
 import React, { memo } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
+import {
+    useFonts,
+    Kalam_400Regular,
+    Kalam_700Bold,
+} from "@expo-google-fonts/kalam";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
@@ -11,7 +16,13 @@ import { useSavedItems } from "@/context/SavedItemsContext";
 import { getChapterContent } from "@/data/chapterContent";
 
 function ImportantQuestionsScreen() {
+    const [fontsLoaded] = useFonts({
+        Kalam_400Regular,
+        Kalam_700Bold,
+    });
     const { importantItems } = useSavedItems();
+
+    if (!fontsLoaded) return null;
 
     const renderItem = ({ item }: { item: any }) => {
         const content = getChapterContent(item.chapterId);
@@ -24,7 +35,13 @@ function ImportantQuestionsScreen() {
                     return (
                         <View style={styles.itemContainer}>
                             <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                            <QuestionCard question={q} accentColor="#FFAB00" chapterId={item.chapterId} />
+                            <QuestionCard
+                                question={q}
+                                accentColor="#FFAB00"
+                                chapterId={item.chapterId}
+                                titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                                contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
+                            />
                         </View>
                     );
                 }

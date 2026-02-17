@@ -546,7 +546,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                             } else {
                                 const imgTagMatch = subPart.match(/<img[^>]+src=["']([^"']+)["']/i);
                                 if (imgTagMatch) {
-                                    image = imgTagMatch[1];
+                                    image = path.basename(imgTagMatch[1]);
                                 }
                             }
 
@@ -610,7 +610,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                         } else {
                             const imgTagMatch = box.match(/<img[^>]+src=["']([^"']+)["']/i);
                             if (imgTagMatch) {
-                                image = imgTagMatch[1];
+                                image = path.basename(imgTagMatch[1]);
                             }
                         }
 

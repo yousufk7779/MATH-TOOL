@@ -39,12 +39,31 @@
             text-decoration: underline;
         }
 
+	.header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
         .question {
             font-weight: bold;
             color: #000;
             margin-top: 2em;
             margin-bottom: 1em;
         }
+
+	.sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
 
         .step {
             display: block;
@@ -83,7 +102,7 @@
             font-weight: bold;
             display: block;
             margin-top: 1em;
-            text-decoration: underline;
+            
         }
 
         /* Utility for roots and powers */
@@ -95,16 +114,18 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 5: Exercise 5.1</div>
+    </div>
 
-        <h1>Class 10 Maths Solutions</h1>
-
-        <h2>Exercise 5.1</h2>
 
         <!-- Question 1 -->
-        <div class="question">Q1. In which situations does the list of numbers make an AP?</div>
+ <div class="content-box">
 
-        <div class="question">(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.</div>
+        <div class="question">1. In which situations does the list of numbers make an AP, and why?</div>
+<!-- Part (i) -->
+        <div class="sub-question">(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.</div>
         <span class="step">Fare for 1st km = 15</span>
         <span class="step">Fare for 2nd km = 15 + 8 = 23</span>
         <span class="step">Fare for 3rd km = 23 + 8 = 31</span>
@@ -114,7 +135,7 @@
         <span class="step">Difference is same.</span>
         <span class="answer">Answer: Yes</span>
 
-        <div class="question">(ii) Air in cylinder: Removes <span class="frac"><span class="frac-top">1</span><span
+        <div class="sub-question">(ii) Air in cylinder: Removes <span class="frac"><span class="frac-top">1</span><span
                     class="frac-bottom">4</span></span> of remaining air.</div>
         <span class="step">Initial air = 1</span>
         <span class="step">Removed 1st time = <span class="frac"><span class="frac-top">1</span><span
@@ -144,7 +165,7 @@
         <span class="step">Difference is not same.</span>
         <span class="answer">Answer: No</span>
 
-        <div class="question">(iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.</div>
+        <div class="sub-question">(iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.</div>
         <span class="step">1st metre = 150</span>
         <span class="step">2nd metre = 150 + 50 = 200</span>
         <span class="step">3rd metre = 200 + 50 = 250</span>
@@ -378,7 +399,7 @@
         <span class="step">Next: 121 + 24 = 145</span>
         <span class="answer">Answer: Yes, 97, 121, 145</span>
 
-       
+        </div>
     </div>
 </body>
 
