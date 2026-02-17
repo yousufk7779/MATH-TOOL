@@ -6,6 +6,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Theorem } from "@/data/chapterContent";
 import { useSavedItems } from "@/context/SavedItemsContext";
+import { MathRender } from "@/components/MathRender";
 
 interface TheoremCardProps {
     theorem: Theorem;
@@ -42,6 +43,7 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
                     <ThemedText style={styles.theoremName}>{theorem.name}</ThemedText>
                 </View>
                 <View style={styles.actionsContainer}>
+                    {/* ... actions ... */}
                     <Pressable onPress={handleBookmark} style={styles.actionButton}>
                         <Feather
                             name={bookmarked ? "bookmark" : "bookmark"}
@@ -49,10 +51,6 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
                             color={bookmarked ? JiguuColors.accent1 : JiguuColors.textSecondary}
                             style={bookmarked ? styles.filledIcon : undefined}
                         />
-                        {/* Expo Vector Icons Feather doesn't have filled variants easily for bookmark universally without "fill" prop or different glyph name, usually it's just outline. 
-                 Workaround: color change is enough, or use FontAwesome. Feather "bookmark" is outline. 
-                 Wait, Feather doesn't support 'fill' prop in all versions. 
-                 Let's assume color change indicates state. */}
                     </Pressable>
                     <Pressable onPress={handleImportant} style={styles.actionButton}>
                         <Feather
@@ -66,14 +64,36 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
 
             <View style={styles.theoremSection}>
                 <ThemedText style={styles.theoremLabel}>Statement:</ThemedText>
-                <ThemedText style={styles.theoremStatement}>{theorem.statement}</ThemedText>
+                <MathRender
+                    html={theorem.statement}
+                    baseStyle={{
+                        ...Typography.body,
+                        color: JiguuColors.textPrimary,
+                        lineHeight: 24,
+                        textAlign: "justify",
+                        ...StyleSheet.flatten(styles.theoremStatement)
+                    }}
+                    ignoredTags={['img']}
+                />
             </View>
 
             {theorem.proof && theorem.proof.length > 0 ? (
                 <View style={styles.theoremSection}>
                     <ThemedText style={styles.theoremLabel}>Proof:</ThemedText>
                     {theorem.proof.map((step, index) => (
-                        <ThemedText key={index} style={styles.theoremStep}>{step}</ThemedText>
+                        <MathRender
+                            key={index}
+                            html={step}
+                            baseStyle={{
+                                ...Typography.small,
+                                color: JiguuColors.textSecondary,
+                                lineHeight: 22,
+                                marginBottom: Spacing.xs,
+                                textAlign: "justify",
+                                ...StyleSheet.flatten(styles.theoremStep)
+                            }}
+                            ignoredTags={['img']}
+                        />
                     ))}
                 </View>
             ) : null}
@@ -81,7 +101,18 @@ function TheoremCard({ theorem, chapterId }: TheoremCardProps) {
             {theorem.example ? (
                 <View style={styles.theoremSection}>
                     <ThemedText style={styles.theoremLabel}>Example:</ThemedText>
-                    <ThemedText style={styles.theoremExample}>{theorem.example}</ThemedText>
+                    <MathRender
+                        html={theorem.example}
+                        baseStyle={{
+                            ...Typography.small,
+                            color: JiguuColors.textSecondary,
+                            fontStyle: "italic",
+                            lineHeight: 22,
+                            textAlign: "justify",
+                            ...StyleSheet.flatten(styles.theoremExample)
+                        }}
+                        ignoredTags={['img']}
+                    />
                 </View>
             ) : null}
         </View>

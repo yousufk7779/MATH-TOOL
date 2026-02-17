@@ -12,7 +12,7 @@ import FormulaItem from "@/components/solution/FormulaItem";
 import QuestionCard from "@/components/solution/QuestionCard";
 import TheoremCard from "@/components/solution/TheoremCard";
 import MCQSection from "@/components/solution/MCQSection";
-import { ParsedText } from "@/components/ParsedText";
+import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
@@ -186,7 +186,7 @@ function SolutionScreen() {
         borderColor="#6C63FF"
         titleStyle={hwTitleStyle}
       >
-        <ParsedText style={[styles.introText, hwStyle]} Component={ThemedText}>{data.introduction}</ParsedText>
+        <MathRender html={data.introduction} baseStyle={{ ...StyleSheet.flatten(styles.introText), ...hwStyle }} ignoredTags={['img']} />
       </SectionCard>
 
       <SectionCard
@@ -217,7 +217,7 @@ function SolutionScreen() {
         {data.keyPoints.map((point, index) => (
           <View key={index} style={styles.keyPointRow}>
             <View style={[styles.bullet, { backgroundColor: "#FFA000" }]} />
-            <ParsedText style={[styles.keyPointText, hwStyle]} Component={ThemedText}>{point}</ParsedText>
+            <MathRender html={point} baseStyle={{ ...StyleSheet.flatten(styles.keyPointText), ...hwStyle }} ignoredTags={['img']} />
           </View>
         ))}
       </SectionCard>
@@ -251,7 +251,7 @@ function SolutionScreen() {
             <View style={[styles.cruxNumber, { backgroundColor: "#2196F3" }]}>
               <ThemedText style={styles.cruxNumberText}>{index + 1}</ThemedText>
             </View>
-            <ParsedText style={[styles.cruxText, hwStyle]} Component={ThemedText}>{item}</ParsedText>
+            <MathRender html={item} baseStyle={{ ...StyleSheet.flatten(styles.cruxText), ...hwStyle }} ignoredTags={['img']} />
           </View>
         ))}
       </SectionCard>
@@ -266,7 +266,7 @@ function SolutionScreen() {
         {data.summary.map((item, index) => (
           <View key={index} style={styles.summaryRow}>
             <ThemedText style={[styles.summaryNumber, hwTitleStyle]}>{index + 1}.</ThemedText>
-            <ParsedText style={[styles.summaryText, hwStyle]} Component={ThemedText}>{item}</ParsedText>
+            <MathRender html={item} baseStyle={{ ...StyleSheet.flatten(styles.summaryText), ...hwStyle }} ignoredTags={['img']} />
           </View>
         ))}
       </SectionCard>

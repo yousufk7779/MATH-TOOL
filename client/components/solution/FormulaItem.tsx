@@ -4,7 +4,7 @@ import { StyleSheet, View } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 
-import { ParsedText } from "@/components/ParsedText";
+import { MathRender } from "@/components/MathRender";
 
 interface FormulaItemProps {
   name: string;
@@ -17,7 +17,17 @@ function FormulaItem({ name, formula, textStyle }: FormulaItemProps) {
     <View style={styles.container}>
       <ThemedText style={[styles.name, textStyle]}>{name}</ThemedText>
       <View style={styles.formulaBox}>
-        <ParsedText style={[styles.formula, textStyle]} Component={ThemedText}>{formula}</ParsedText>
+        <MathRender
+          html={formula}
+          baseStyle={{
+            ...Typography.body,
+            fontFamily: "Nunito_600SemiBold",
+            color: JiguuColors.textPrimary,
+            lineHeight: 24,
+            ...textStyle
+          }}
+          ignoredTags={['img']}
+        />
       </View>
     </View>
   );

@@ -4,7 +4,7 @@ import { StyleSheet, View, Pressable, Animated, Modal, TouchableOpacity } from "
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
-import { ParsedText } from "@/components/ParsedText";
+import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { MCQ } from "@/data/chapterContent";
 
@@ -111,9 +111,17 @@ const MCQCard = memo(({
 
   return (
     <Animated.View style={[styles.mcqCard, { transform: [{ translateX: shakeAnim }] }]}>
-      <ParsedText style={[styles.question, textStyle]} Component={ThemedText}>
-        {`${index + 1}. ${mcq.question}`}
-      </ParsedText>
+      <MathRender
+        html={`${index + 1}. ${mcq.question}`}
+        baseStyle={{
+          ...Typography.body,
+          fontFamily: "Kalam_700Bold",
+          color: JiguuColors.textPrimary,
+          marginBottom: Spacing.sm,
+          ...textStyle
+        }}
+        ignoredTags={['img']}
+      />
 
       <View style={styles.optionsGrid}>
         {state.shuffledOptions.map((option, optIndex) => {
@@ -166,7 +174,18 @@ const MCQCard = memo(({
                   </ThemedText>
                 )}
               </View>
-              <ParsedText style={[styles.optionText, textStyle]} Component={ThemedText}>{option.text}</ParsedText>
+              <View style={{ flex: 1 }}>
+                <MathRender
+                  html={option.text}
+                  baseStyle={{
+                    ...Typography.small,
+                    fontFamily: 'Kalam_400Regular',
+                    color: JiguuColors.textPrimary,
+                    ...textStyle
+                  }}
+                  ignoredTags={['img']}
+                />
+              </View>
 
               {/* Tick for correct answer (Always show if answered) */}
               {state.answered && option.isCorrect && (

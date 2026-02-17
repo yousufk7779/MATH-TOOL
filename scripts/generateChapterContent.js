@@ -18,12 +18,17 @@ const CHAPTERS = [
 const ASSETS_DIR = path.join(__dirname, '../client/assets');
 const OUTPUT_FILE = path.join(__dirname, '../client/data/chapterContent.ts');
 
+
+function stripTags(text) {
+    if (!text) return "";
+    return String(text).replace(/<[^>]+>/g, '').trim();
+}
+
 function cleanText(text) {
     if (text === null || text === undefined) return "";
     let clean = String(text)
-        .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '{{frac}}$1{{over}}$2{{endfrac}}') // Handle fractions
-        .replace(/<br\s*\/?>/gi, '\n') // Replace <br> with newlines
-        .replace(/<[^>]+>/g, '') // Remove tags
+        .replace(/<span[^>]*class=["']fraction["'][^>]*>[\s\S]*?<span[^>]*class=["']numerator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<span[^>]*class=["']denominator["'][^>]*>([\s\S]*?)<\/span>[\s\S]*?<\/span>/gis, '\\(\\frac{$1}{$2}\\)') // Handle fractions as KaTeX
+        .replace(/<br\s*\/?>/gi, '<br />') // Normalize line breaks
         .replace(/&nbsp;/g, ' ')
         .replace(/&rArr;/g, '⇒')
         .replace(/&lArr;/g, '⇐')
@@ -31,34 +36,22 @@ function cleanText(text) {
         .replace(/&rarr;/g, '→')
         .replace(/&larr;/g, '←')
         .replace(/&times;/g, '×')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&')
-        .replace(/&quot;/g, '"')
-        .replace(/&apos;/g, "'")
-        .replace(/&#39;/g, "'")
-        .replace(/&deg;/g, '°')
-        .replace(/&minus;/g, '−')
-        .replace(/\s+/g, ' ')
+        // Encode specific entities or keep them for HTML renderer
+        // Do NOT strip tags indiscriminately
         .trim();
+
+    // Ensure LaTeX delimiters are consistent if they exist
+    // No specific replacement needed for \(...\) as they are text and RenderHtml passes them through
+
     return clean;
 }
 
 function parseTableToText(html) {
     if (!html || !html.includes('<table')) return "";
-    const rows = html.match(/<tr[^>]*>[\s\S]*?<\/tr>/gs);
-    if (!rows) return "";
-
-    let tableText = "\n";
-    rows.forEach(row => {
-        const cells = row.match(/<(td|th)[^>]*>[\s\S]*?<\/\1>/gs);
-        if (cells) {
-            const cleanCells = cells.map(c => cleanText(c));
-            tableText += `| ${cleanCells.join(" | ")} |\n`;
-        }
-    });
-    return tableText;
+    // Return the full HTML table string for RenderHtml to handle
+    return html;
 }
+
 
 function parseOverview(html, chapterId) {
     const definitions = [];
@@ -84,7 +77,7 @@ function parseOverview(html, chapterId) {
                     const endTitleIdx = section.indexOf('</h2>');
                     if (endTitleIdx === -1) continue;
 
-                    const title = cleanText(section.substring(0, endTitleIdx)).toLowerCase();
+                    const title = stripTags(section.substring(0, endTitleIdx)).toLowerCase();
                     const content = section.substring(endTitleIdx + 5);
 
                     if (title.includes('introduction')) {
@@ -178,7 +171,7 @@ function parseOverview(html, chapterId) {
                 // If the title is NOT followed by a closing div, it is likely a top-level trailing title
                 const after = prev.substring(prevTitleMatch.index + prevTitleMatch[0].length);
                 if (!after.includes('</div>')) {
-                    title = cleanText(prevTitleMatch[1]).toLowerCase();
+                    title = stripTags(prevTitleMatch[1]).toLowerCase();
                 }
             }
 
@@ -191,7 +184,7 @@ function parseOverview(html, chapterId) {
                 // (Otherwise it's a trailing title for the NEXT box)
                 if (internalMatch) {
                     if (boxFirstDivIdx === -1 || internalMatch.index < boxFirstDivIdx) {
-                        title = cleanText(internalMatch[1]).toLowerCase();
+                        title = stripTags(internalMatch[1]).toLowerCase();
                     }
                 }
             }
@@ -275,7 +268,7 @@ function parseOverview(html, chapterId) {
                     const formulaMatch = p.match(/<span class="formula">(.*?)<\/span>/);
 
                     if (formulaMatch) {
-                        const name = cleanText(formulaMatch[1]);
+                        const name = stripTags(formulaMatch[1]); // Ensure name is plain text for ID/Label
                         let content = "";
                         // Look ahead for content if the current point is JUST the name
                         // Heuristic: if the point text is short or ends with colon
@@ -387,9 +380,17 @@ function parseQuestions(html, type, chapterNum, exName) {
                 const qMatch = part.match(/<div class="mcq-question">\s*(.*?)\s*<\/div>/s);
                 if (qMatch) {
                     let qText = cleanText(qMatch[1]);
-                    const numMatch = qText.match(/^(\d+)\./);
+                    const plainQText = stripTags(qText);
+                    const numMatch = plainQText.match(/^(\d+)\./);
                     const num = numMatch ? numMatch[1] : i.toString();
-                    qText = qText.replace(/^\d+\.\s*/, '');
+                    // Remove number prefix from HTML if possible. 
+                    // This is tricky with HTML. simpler to replace strictly if it matches plain structure or just leave it.
+                    // For now, let's try to remove it from qText only if it's plain text start, 
+                    // or just leave it in the question text (it's fine to show number twice or handle in UI).
+                    // Example: "1. Question" -> "Question".
+                    // If HTML: "<b>1.</b> Question", regex "^\d+\." won't match qText.
+                    // Regex on qText for replacement:
+                    qText = qText.replace(/^(\d+\.|<b>\s*\d+\.\s*<\/b>)\s*/, '');
 
                     const optionsBlock = part.split('<div class="mcq-options">')[1];
                     const options = [];
@@ -424,9 +425,10 @@ function parseQuestions(html, type, chapterNum, exName) {
                 const part = parts[i];
                 const endDiv = part.indexOf('</div>');
                 let qText = cleanText(part.substring(0, endDiv));
+                const plainQText = stripTags(qText);
                 const rest = part.substring(endDiv + 6);
 
-                if (qText.match(/^Q\d+/)) {
+                if (plainQText.match(/^Q\d+/)) {
                     currentMainQuestion = qText;
                 }
 
@@ -438,7 +440,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                 if (steps.length > 0 || ansMatch) {
                     questions.push({
                         id: `auto_${Math.random().toString(36).substr(2, 9)}`,
-                        number: qText.split(' ')[0],
+                        number: stripTags(qText).split(' ')[0],
                         question: currentMainQuestion && !qText.startsWith('Q') ? `${currentMainQuestion} ${qText}` : qText,
                         solution: steps,
                         answer: ansMatch ? cleanText(ansMatch[1]) : "Refer to steps"
@@ -454,7 +456,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                 const questionMatch = box.match(/<div class="(?:question|theorem-title)">\s*(\d+[\.\)]?|Example \d+|Q\.\d+|Theorem\s+\d+(?:\.\d+)?)\s*([\s\S]*?)<\/div>/i);
 
                 if (questionMatch) {
-                    const mainNum = cleanText(questionMatch[1]).replace(/\.$/, '');
+                    const mainNum = stripTags(questionMatch[1]).replace(/\.$/, '');
                     const mainText = cleanText(questionMatch[2]).replace(/^[:\s]+/, '');
 
                     // Extract Options (for MCQs)
@@ -540,7 +542,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                             let image = undefined;
                             const divImgMatch = subPart.match(/<div class="question-image">([\s\S]*?)<\/div>/i);
                             if (divImgMatch) {
-                                image = cleanText(divImgMatch[1]);
+                                image = stripTags(divImgMatch[1]);
                             } else {
                                 const imgTagMatch = subPart.match(/<img[^>]+src=["']([^"']+)["']/i);
                                 if (imgTagMatch) {
@@ -604,7 +606,7 @@ function parseQuestions(html, type, chapterNum, exName) {
                         let image = undefined;
                         const divImgMatch = box.match(/<div class="question-image">([\s\S]*?)<\/div>/i);
                         if (divImgMatch) {
-                            image = cleanText(divImgMatch[1]);
+                            image = stripTags(divImgMatch[1]);
                         } else {
                             const imgTagMatch = box.match(/<img[^>]+src=["']([^"']+)["']/i);
                             if (imgTagMatch) {
