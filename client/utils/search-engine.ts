@@ -1,5 +1,6 @@
 
-import { chapterList } from "@/data/chapterRegistry";
+import { chapterContents } from "@/data/chapterContent";
+import { class10Chapters } from "@/data/chapters";
 import { chapterPYQs } from "@/data/pyqData";
 import { JiguuColors } from "@/constants/theme";
 
@@ -30,12 +31,12 @@ let searchIndex: SearchResult[] = [];
 export const buildSearchIndex = () => {
     if (searchIndex.length > 0) return;
 
-    chapterList.forEach((chapter) => {
-        // 1. Index Chapter
+    // Index basic chapter info from chapters.ts (metadata)
+    class10Chapters.forEach((chapter) => {
         searchIndex.push({
             id: chapter.id,
             type: "chapter",
-            title: chapter.name,
+            title: `${chapter.number}. ${chapter.name}`,
             subtitle: "Browse chapter content",
             keywords: `${chapter.name} chapter content`,
             navigationParams: {
@@ -43,49 +44,39 @@ export const buildSearchIndex = () => {
                 params: { chapterId: chapter.id, chapterName: chapter.name, section: "overview" },
             },
         });
+    });
 
+    // dynamic content from chapterContent.ts
+    Object.values(chapterContents).forEach((chapter) => {
         // 4. Index Exercises and other sections
-        chapter.exercises.forEach((exercise) => {
-            let type: SearchResultType = "exercise";
-            let section = "exercises";
-            let view = undefined;
-
-            if (exercise.id === 'mcqs') {
-                type = "question"; // approximation
-                section = "mcqs";
-            } else if (exercise.id === 'eg') {
-                section = "exercises"; // It's a tab
-                // view = "examples"; // Logic in SolutionScreen handles 'eg' as tab
-            } else if (exercise.id === 'theorems') {
-                type = "theorem";
-                section = "exercises";
-                // view = "theorems";
-            }
-
-            searchIndex.push({
-                id: `${chapter.id}-${exercise.id}`,
-                type: type,
-                title: exercise.title,
-                subtitle: `${chapter.name} - ${exercise.title}`,
-                keywords: `${exercise.title} ${chapter.name}`,
-                navigationParams: {
-                    screen: "Solution",
-                    params: {
-                        chapterId: chapter.id,
-                        chapterName: chapter.name,
-                        section: section,
-                        exerciseId: exercise.id,
-                        view: view
+        if (chapter.exercises) {
+            chapter.exercises.forEach((exercise) => {
+                searchIndex.push({
+                    id: `${chapter.id}-${exercise.id}`,
+                    type: "exercise",
+                    title: exercise.name,
+                    subtitle: `${chapter.title} - ${exercise.name}`,
+                    keywords: `${exercise.name} ${chapter.title}`,
+                    navigationParams: {
+                        screen: "Solution",
+                        params: {
+                            chapterId: chapter.id,
+                            chapterName: chapter.title,
+                            section: "exercises",
+                            exerciseId: exercise.id,
+                        },
                     },
-                },
+                });
             });
-        });
+        }
+
+        // Can index other sections similarly (Examples, Theorems, etc.)
     });
 
     // 8. Index PYQs (Still works because pyqData handles its own data)
     Object.values(chapterPYQs).forEach((chapterPYQ) => {
-        const chapter = chapterList.find(c => c.id === chapterPYQ.chapterId);
-        if (!chapter) return;
+        const chapter = class10Chapters.find(c => c.id === chapterPYQ.chapterId);
+        if (!chapter) return; // Should optimize by using chapterContents, but PYQ has incomplete coverage maybe?
 
         chapterPYQ.sets.forEach((set) => {
             set.questions.forEach((question) => {

@@ -1,62 +1,19 @@
 
-import React, { memo, useEffect, useState } from "react";
-import { StyleSheet, View, FlatList, ActivityIndicator } from "react-native";
+import React, { memo } from "react";
+import { StyleSheet, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { Feather } from "@expo/vector-icons";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import { HTMLPanelRenderer } from "@/components/HTMLPanelRenderer";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { useSavedItems } from "@/context/SavedItemsContext";
-import { ContentService } from "@/services/ContentService";
+// import { ContentService } from "@/services/ContentService"; // Removed
 
 // Helper component to load and render a single bookmarked item
 const BookmarkItem = memo(({ item }: { item: any }) => {
-    const [htmlContent, setHtmlContent] = useState<string | null>(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const loadContent = async () => {
-            // Parse ID: ch3_ex3.1_q1 -> chapterId=ch3, exerciseId=ex3.1
-            // OR checks generic IDs if needed.
-            // But we have item.chapterId stored.
-            // item.id is the targetId (e.g. ch3_ex3.1_q1)
-
-            // We need to find which exercise this ID belongs to.
-            // If the ID format is standardized as chX_exY_qZ, we can extract 'exY'.
-
-            let exerciseId = null;
-            if (item.id) {
-                const parts = item.id.split('_');
-                if (parts.length >= 2) {
-                    // heuristic: 2nd part is usually exercise ID or similar
-                    // e.g. ch3_ex3.1_q1 -> ex3.1
-                    // e.g. ch3_mcqs_q1 -> mcqs
-                    // e.g. ch3_eg_q1 -> eg
-                    exerciseId = parts[1];
-                }
-            }
-
-            if (exerciseId && item.chapterId) {
-                // Handle legacy chapter IDs if necessary (e.g. ch3-linear -> ch3)
-                let chId = item.chapterId;
-                if (chId.includes('-')) {
-                    chId = chId.split('-')[0]; // simple fallback
-                }
-
-                // Prefer loading content string to avoid WebView file access issues
-                const content = await ContentService.getHtmlContent(chId, exerciseId);
-                setHtmlContent(content);
-            }
-            setLoading(false);
-        };
-        loadContent();
-    }, [item.id, item.chapterId]);
-
-    if (loading) return <ActivityIndicator size="small" />;
-    if (!htmlContent) return <ThemedText>Content not found</ThemedText>;
+    // Placeholder logic since we removed HTML content service
+    // In the future, we will look up the question in chapterContent.ts using item.id and item.chapterId
 
     return (
         <View style={styles.itemContainer}>
@@ -67,10 +24,9 @@ const BookmarkItem = memo(({ item }: { item: any }) => {
                 </View>
             </View>
             <View style={styles.panelContainer}>
-                <HTMLPanelRenderer
-                    htmlContent={htmlContent}
-                    targetId={item.id}
-                />
+                <ThemedText style={{ padding: 20, textAlign: 'center', color: JiguuColors.textSecondary }}>
+                    Bookmark ID: {item.id} (Content loading pending migration)
+                </ThemedText>
             </View>
         </View>
     );
@@ -159,8 +115,8 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase'
     },
     panelContainer: {
-        minHeight: 100,
-        backgroundColor: '#fff'
+        minHeight: 50,
+        backgroundColor: JiguuColors.surface
     }
 });
 

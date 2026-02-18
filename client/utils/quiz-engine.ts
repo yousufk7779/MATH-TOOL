@@ -1,6 +1,6 @@
 
-import { chapterList } from "@/data/chapterRegistry";
-import { ContentService, MCQ } from "@/services/ContentService";
+import { chapterContents, MCQ } from "@/data/chapterContent";
+import { class10Chapters } from "@/data/chapters";
 
 export interface QuizQuestion extends MCQ {
     chapterId: string;
@@ -8,29 +8,25 @@ export interface QuizQuestion extends MCQ {
 }
 
 export const generateQuizAsync = async (questionCount: number = 10): Promise<QuizQuestion[]> => {
+    // Synchronous generation is fine now that data is in memory
+    return generateQuiz(questionCount);
+};
+
+export const generateQuiz = (questionCount: number = 10): QuizQuestion[] => {
     const allMcqs: QuizQuestion[] = [];
 
-    // Strategy: Load MCQs from ALL chapters. It should be fast enough.
-    // Use Promise.all
-
-    const chapters = chapterList;
-
-    await Promise.all(chapters.map(async (chapter) => {
-        try {
-            const mcqs = await ContentService.getMCQs(chapter.id);
-            if (mcqs && mcqs.length > 0) {
-                mcqs.forEach(m => {
-                    allMcqs.push({
-                        ...m,
-                        chapterId: chapter.id,
-                        chapterTitle: chapter.name
-                    });
+    // Iterate over all available chapters in the content store
+    Object.values(chapterContents).forEach((chapter) => {
+        if (chapter.mcqs && chapter.mcqs.length > 0) {
+            chapter.mcqs.forEach((mcq) => {
+                allMcqs.push({
+                    ...mcq,
+                    chapterId: chapter.id,
+                    chapterTitle: chapter.title,
                 });
-            }
-        } catch (e) {
-            console.warn(`Failed to load MCQs for ${chapter.id}`);
+            });
         }
-    }));
+    });
 
     // Shuffle array using Fisher-Yates algorithm
     for (let i = allMcqs.length - 1; i > 0; i--) {
@@ -40,10 +36,4 @@ export const generateQuizAsync = async (questionCount: number = 10): Promise<Qui
 
     // Return requested number of questions
     return allMcqs.slice(0, questionCount);
-};
-
-// Deprecated sync version to prevent build errors if used elsewhere, 
-// though we should switch to Async everywhere.
-export const generateQuiz = (questionCount: number = 10): QuizQuestion[] => {
-    return [];
 };
