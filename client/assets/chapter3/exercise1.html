@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equations - Exercise 3.1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            /* Border removed as per request */
+            padding-top: 5px;
+            display: inline-block;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #bbb;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 11px;
+            margin-left: 15px;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .solution-header {
+            color: #6C63FF;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        /* Reduced table length/width settings */
+        .coord-table {
+            width: auto;
+            margin: 10px 0;
+            border-collapse: collapse;
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .coord-table td,
+        .coord-table th {
+            background-color: #e8f5e9;
+            color: #2E7D32;
+            font-weight: 700;
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .table-container {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .equation-ref {
+            font-weight: bold;
+            color: #000;
+            margin-left: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 3: Exercise 3.1</div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="content-box" id="ch3_ex3.1_q1" data-type="main">
+        <div class="question">1. Form the pair of linear equations in the following problems, and find their solutions
+            graphically.</div>
+
+        <!-- Part (i) -->
+<div class="question-block" id="ch3_ex3.1_q1_1" data-label="1(i)">
+<div class="question-block" id="ch3_ex3.1_q1_1" data-label="1(i)">
+<div class="question-block" id="ch3_ex3.1_q1_1" data-label="1(i)">
+        <div class="sub-question">(i) 10 students of Class X took part in a Mathematics quiz. If the number of girls is
+            4 more than the number of boys, find the number of boys and girls who took part in the quiz.</div>
+
+        <img src="fig_ex3_2_q1_i.svg" alt="Graph 1"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Given:</div>
+        <div class="step">Total students = 10</div>
+        <div class="step">Number of girls is 4 more than the number of boys.</div>
+
+        <div class="solution-header">To Find:</div>
+        <div class="step">Number of boys and girls.</div>
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let number of girls = x</div>
+        <div class="step">Let number of boys = y</div>
+
+        <div class="step">According to the first condition:</div>
+        <div class="step">x + y = 10 <span class="equation-ref">...(1)</span></div>
+
+        <div class="step">According to the second condition:</div>
+        <div class="step">x = y + 4</div>
+        <div class="step">x - y = 4 <span class="equation-ref">...(2)</span></div>
+
+        <div class="solution-header">Observation for Graph:</div>
+        <div class="step">For equation <span class="equation-ref">(1)</span>: x + y = 10</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>6</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">For equation <span class="equation-ref">(2)</span>: x - y = 4</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">Plotting these points, the lines intersect at (7, 3).</div>
+
+        <div class="final-answer">Number of Girls = 7, Number of Boys = 3</div>
+        <div class="clearfix"></div>
+
+
+        <!-- Part (ii) -->
+</div>
+<div class="question-block" id="ch3_ex3.1_q1_2" data-label="1(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q1_2" data-label="1(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q1_2" data-label="1(ii)">
+        <div class="sub-question">(ii) 5 pencils and 7 pens together cost ₹ 50, whereas 7 pencils and 5 pens together
+            cost ₹ 46. Find the cost of one pencil and that of one pen.</div>
+
+        <img src="fig_ex3_2_q1_ii.svg" alt="Graph 2"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Given:</div>
+        <div class="step">Cost of 5 pencils and 7 pens = ₹ 50</div>
+        <div class="step">Cost of 7 pencils and 5 pens = ₹ 46</div>
+
+        <div class="solution-header">To Find:</div>
+        <div class="step">Cost of one pencil and one pen.</div>
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the cost of 1 pencil = ₹ x</div>
+        <div class="step">Let the cost of 1 pen = ₹ y</div>
+
+        <div class="step">According to the conditions:</div>
+        <div class="step">5x + 7y = 50 <span class="equation-ref">...(1)</span></div>
+        <div class="step">7x + 5y = 46 <span class="equation-ref">...(2)</span></div>
+
+        <div class="solution-header">Observation for Graph:</div>
+        <div class="step">For equation <span class="equation-ref">(1)</span>: 5x + 7y = 50</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>10</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">For equation <span class="equation-ref">(2)</span>: 7x + 5y = 46</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>8</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>-2</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">The lines intersect at (3, 5).</div>
+
+        <div class="final-answer">Cost of Pencil = ₹ 3, Cost of Pen = ₹ 5</div>
+</div>
+</div>
+</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box" id="ch3_ex3.1_q2" data-type="main">
+        <div class="question">2. On comparing the ratios <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span>, <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> and <span class="fraction"><span
+                    class="numerator">c₁</span><span class="denominator">c₂</span></span>, find out whether the lines
+            representing the following pairs of linear equations intersect at a point, are parallel or coincident:</div>
+
+<div class="question-block" id="ch3_ex3.1_q2_1" data-label="2(i)">
+<div class="question-block" id="ch3_ex3.1_q2_1" data-label="2(i)">
+<div class="question-block" id="ch3_ex3.1_q2_1" data-label="2(i)">
+        <div class="sub-question">(i) 5x – 4y + 8 = 0; 7x + 6y – 9 = 0</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">a₁ = 5, b₁ = -4</div>
+        <div class="step">a₂ = 7, b₂ = 6</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">7</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-4</span><span
+                    class="denominator">6</span></span> = <span class="fraction"><span class="numerator">-2</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span></div>
+        <div class="final-answer">Lines intersect at a single point.</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_2" data-label="2(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_2" data-label="2(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_2" data-label="2(ii)">
+        <div class="sub-question">(ii) 9x + 3y + 12 = 0; 18x + 6y + 24 = 0</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">9</span><span
+                    class="denominator">18</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">3</span><span
+                    class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">12</span><span
+                    class="denominator">24</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">Since all ratios are equal.</div>
+        <div class="final-answer">Lines are coincident (Infinite solutions).</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_3" data-label="2(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_3" data-label="2(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q2_3" data-label="2(iii)">
+        <div class="sub-question">(iii) 6x – 3y + 10 = 0; 2x – y + 9 = 0</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">6</span><span
+                    class="denominator">2</span></span> = 3</div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-3</span><span
+                    class="denominator">-1</span></span> = 3</div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">10</span><span
+                    class="denominator">9</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Lines are parallel (No solution).</div>
+</div>
+</div>
+</div>
+    </div>
+
+    <!-- Question 3 -->
+
+    <!-- Question 3 -->
+    <div class="content-box" id="ch3_ex3.1_q3" data-type="main">
+        <div class="question">3. On comparing the ratios <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span>, <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> and <span class="fraction"><span
+                    class="numerator">c₁</span><span class="denominator">c₂</span></span>, find out whether the
+            following pair of linear equations are consistent or inconsistent.</div>
+
+<div class="question-block" id="ch3_ex3.1_q3_1" data-label="3(i)">
+<div class="question-block" id="ch3_ex3.1_q3_1" data-label="3(i)">
+<div class="question-block" id="ch3_ex3.1_q3_1" data-label="3(i)">
+        <div class="sub-question">(i) 3x + 2y = 5 ; 2x – 3y = 7</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">3</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">-3</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span></div>
+        <div class="final-answer">Consistent (Unique Solution).</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_2" data-label="3(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_2" data-label="3(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_2" data-label="3(ii)">
+        <div class="sub-question">(ii) 2x – 3y = 8 ; 4x – 6y = 9</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-3</span><span
+                    class="denominator">-6</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">8</span><span
+                    class="denominator">9</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Inconsistent (Parallel lines).</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_3" data-label="3(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_3" data-label="3(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_3" data-label="3(iii)">
+        <div class="sub-question">(iii) <span class="fraction"><span class="numerator">3</span><span
+                    class="denominator">2</span></span>x + <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">3</span></span>y = 7 ; 9x – 10y = 14</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span
+                    class="numerator">3/2</span><span class="denominator">9</span></span> = <span class="fraction"><span
+                    class="numerator">1</span><span class="denominator">6</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span
+                    class="numerator">5/3</span><span class="denominator">-10</span></span> = <span
+                class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span></div>
+        <div class="final-answer">Consistent.</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_4" data-label="3(iv)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_4" data-label="3(iv)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_4" data-label="3(iv)">
+        <div class="sub-question">(iv) 5x – 3y = 11 ; –10x + 6y = –22</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">-10</span></span> = <span class="fraction"><span
+                    class="numerator">-1</span><span class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-3</span><span
+                    class="denominator">6</span></span> = <span class="fraction"><span class="numerator">-1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">11</span><span
+                    class="denominator">-22</span></span> = <span class="fraction"><span
+                    class="numerator">-1</span><span class="denominator">2</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Consistent (Dependent/Coincident).</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_5" data-label="3(v)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_5" data-label="3(v)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q3_5" data-label="3(v)">
+        <div class="sub-question">(v) <span class="fraction"><span class="numerator">4</span><span
+                    class="denominator">3</span></span>x + 2y = 8 ; 2x + 3y = 12</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span
+                    class="numerator">4/3</span><span class="denominator">2</span></span> = <span class="fraction"><span
+                    class="numerator">2</span><span class="denominator">3</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">8</span><span
+                    class="denominator">12</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Consistent (Dependent/Coincident).</div>
+</div>
+</div>
+</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="content-box" id="ch3_ex3.1_q4" data-type="main">
+        <div class="question">4. Which of the following pairs of linear equations are consistent/inconsistent? If
+            consistent, obtain the solution graphically:</div>
+
+<div class="question-block" id="ch3_ex3.1_q4_1" data-label="4(i)">
+<div class="question-block" id="ch3_ex3.1_q4_1" data-label="4(i)">
+<div class="question-block" id="ch3_ex3.1_q4_1" data-label="4(i)">
+        <div class="sub-question">(i) x + y = 5, 2x + 2y = 10</div>
+
+        <img src="fig_ex3_new_q4_i.svg" alt="Graph Q4i"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span>, <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span>, <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">10</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">Since ratios are equal, the lines are coincident.</div>
+        <div class="final-answer">Consistent (Infinitely many solutions).</div>
+        <div class="clearfix"></div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_2" data-label="4(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_2" data-label="4(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_2" data-label="4(ii)">
+        <div class="sub-question">(ii) x – y = 8, 3x – 3y = 16</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-1</span><span
+                    class="denominator">-3</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">8</span><span
+                    class="denominator">16</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Inconsistent (Parallel lines).</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_3" data-label="4(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_3" data-label="4(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_3" data-label="4(iii)">
+        <div class="sub-question">(iii) 2x + y – 6 = 0, 4x – 2y – 4 = 0</div>
+
+        <img src="fig_ex3_2_q4_iii.svg" alt="Graph Q4iii"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">-2</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span></div>
+        <div class="step">Lines intersect at a unique point.</div>
+        <div class="final-answer">Consistent (Solution: x=2, y=2).</div>
+        <div class="clearfix"></div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_4" data-label="4(iv)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_4" data-label="4(iv)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q4_4" data-label="4(iv)">
+        <div class="sub-question">(iv) 2x – 2y – 2 = 0, 4x – 4y – 5 = 0</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step"><span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">-2</span><span
+                    class="denominator">-4</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span> = <span class="fraction"><span class="numerator">-2</span><span
+                    class="denominator">-5</span></span> = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">5</span></span></div>
+        <div class="step">Since <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="final-answer">Inconsistent (Parallel lines).</div>
+</div>
+</div>
+</div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="content-box clearfix">
+        <div class="question">5. Half the perimeter of a rectangular garden, whose length is 4 m more than its width, is
+            36 m. Find the dimensions of the garden.</div>
+
+        <img src="fig_ex3_2_q5.svg" alt="Graph Q5"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let length = x meters, width = y meters</div>
+        <div class="step">Length is 4 more than width: x - y = 4 <span class="equation-ref">...(1)</span></div>
+        <div class="step">Half perimeter = 36: x + y = 36 <span class="equation-ref">...(2)</span></div>
+
+        <div class="solution-header">Graphical Solution:</div>
+        <div class="step">From (1): x = y + 4</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>8</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>4</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">From (2): y = 36 - x</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>16</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>20</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">Lines intersect at (20, 16).</div>
+        <div class="final-answer">Length = 20 m, Width = 16 m</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="content-box" id="ch3_ex3.1_q5" data-type="main">
+        <div class="question">6. Given the linear equation 2x + 3y – 8 = 0, write another linear equation in two
+            variables such that the geometrical representation of the pair so formed is:</div>
+
+<div class="question-block" id="ch3_ex3.1_q5_1" data-label="6(i)">
+<div class="question-block" id="ch3_ex3.1_q5_1" data-label="6(i)">
+<div class="question-block" id="ch3_ex3.1_q5_1" data-label="6(i)">
+        <div class="sub-question">(i) intersecting lines</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> ≠ <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span></div>
+        <div class="step">Example: 3x + 2y - 7 = 0</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_2" data-label="6(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_2" data-label="6(ii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_2" data-label="6(ii)">
+        <div class="sub-question">(ii) parallel lines</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> ≠ <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="step">Example: 2x + 3y - 12 = 0</div>
+
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_3" data-label="6(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_3" data-label="6(iii)">
+</div>
+<div class="question-block" id="ch3_ex3.1_q5_3" data-label="6(iii)">
+        <div class="sub-question">(iii) coincident lines</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Condition: <span class="fraction"><span class="numerator">a₁</span><span
+                    class="denominator">a₂</span></span> = <span class="fraction"><span class="numerator">b₁</span><span
+                    class="denominator">b₂</span></span> = <span class="fraction"><span class="numerator">c₁</span><span
+                    class="denominator">c₂</span></span></div>
+        <div class="step">Example: 4x + 6y - 16 = 0</div>
+</div>
+</div>
+</div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="content-box clearfix">
+        <div class="question">7. Draw the graphs of the equations x – y + 1 = 0 and 3x + 2y – 12 = 0. Determine the
+            coordinates of the vertices of the triangle formed by these lines and the x-axis, and shade the triangular
+            region.</div>
+
+        <img src="fig_ex3_2_q7.svg" alt="Graph 7"
+            style="float: right; margin-left: 20px; max-width: 300px; border: 1px solid #ddd; padding: 5px;">
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">x - y = -1 <span class="equation-ref">...(1)</span></div>
+        <div class="step">3x + 2y = 12 <span class="equation-ref">...(2)</span></div>
+
+        <div class="solution-header">Observation for Graph:</div>
+        <div class="step">For equation <span class="equation-ref">(1)</span>: x - y = -1</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>-1</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">For equation <span class="equation-ref">(2)</span>: 3x + 2y = 12</div>
+        <div class="table-container">
+            <table class="coord-table">
+                <tr>
+                    <th>x</th>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th>y</th>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="step">From graph, lines intersect at (2, 3).</div>
+        <div class="step">Line <span class="equation-ref">(1)</span> cuts x-axis at (-1, 0).</div>
+        <div class="step">Line <span class="equation-ref">(2)</span> cuts x-axis at (4, 0).</div>
+
+        <div class="final-answer">Vertices: (2, 3), (-1, 0) and (4, 0)</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-import React, { memo, useState, useCallback } from "react";
+import React, { memo, useState, useCallback, useEffect } from "react";
 import { StyleSheet, View, ScrollView, Pressable } from "react-native";
 import { useRoute, RouteProp } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
@@ -102,7 +102,6 @@ const QuestionButton = memo(({ number, onPress, isActive, color, textStyle }: Qu
 function SolutionScreen() {
   const route = useRoute<SolutionRouteProp>();
   // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
-  // @ts-ignore - Ignoring TS warning for now as RootStackParamList update is pending or complex to type fully quickly
   const { chapterId, chapterName, section, exerciseId, questionId, view } = route.params;
   const [activeSection, setActiveSection] = useState<SectionType>("overview");
   const [exerciseView, setExerciseView] = useState<ExerciseViewType>("menu");
@@ -123,7 +122,7 @@ function SolutionScreen() {
   const ch5Background = isHandwritten ? { backgroundColor: "#1a1a2e" } : {}; // Dark blue equivalent
 
   // Handle Deep Linking / Search Navigation
-  React.useEffect(() => {
+  useEffect(() => {
     if (section) {
       setActiveSection(section as SectionType);
     }
@@ -348,12 +347,6 @@ function SolutionScreen() {
       ) : null}
     </View>
   ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion, hwStyle]);
-
-
-
-
-  // Placeholder removed
-  // }, [activeSection, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
 
   const renderExamples = useCallback((data: ChapterContent) => {
     const examplesToShow = questionId

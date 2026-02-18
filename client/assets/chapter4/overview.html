@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equations - Overview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .section-title {
+            color: #6C63FF;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 4px solid #6C63FF;
+            padding-left: 10px;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .key-point {
+            margin-bottom: 8px;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .formula {
+            background-color: #fff3e0;
+            padding: 3px 6px;
+            border-radius: 4px;
+            color: #D32F2F;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 5px;
+            border: 1px solid #ffe0b2;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 4: Quadratic Equations</div>
+    </div>
+
+    <div class="section-title">1. Introduction</div>
+    <div class="content-box">
+        <div class="step">A quadratic equation in the variable x is an equation of the form <span class="bold">ax² + bx
+                + c = 0</span>, where a, b, c are real numbers and a ≠ 0.</div>
+    </div>
+
+    <div class="section-title">2. Standard Form</div>
+    <div class="content-box">
+        <div class="step">The standard form is:</div>
+        <div class="step"><span class="formula">ax² + bx + c = 0, a ≠ 0</span></div>
+        <div class="step">Here:</div>
+        <div class="step"><span class="bold">a</span> is the coefficient of x²</div>
+        <div class="step"><span class="bold">b</span> is the coefficient of x</div>
+        <div class="step"><span class="bold">c</span> is the constant term</div>
+    </div>
+
+    <div class="section-title">3. Methods to Solve</div>
+    <div class="content-box">
+        <div class="key-point"><span class="bold">1. Factorisation:</span> Splitting the middle term to form linear
+            factors and equating each to zero.</div>
+        <div class="key-point"><span class="bold">2. Completing the Square:</span> Converting the equation into a
+            perfect square form <span class="bold">(x + a)² - b² = 0</span>.</div>
+        <div class="key-point"><span class="bold">3. Quadratic Formula:</span> Using the direct formula to find roots.
+        </div>
+        <div class="step"><span class="formula">x = <span class="fraction"><span class="numerator">-b ± √D</span><span
+                        class="denominator">2a</span></span></span></div>
+        <div class="step">Where D = b² - 4ac is called the Discriminant.</div>
+    </div>
+
+    <div class="section-title">4. Nature of Roots</div>
+    <div class="content-box">
+        <div class="step">The nature of roots depends on the value of the Discriminant <span class="bold">D = b² -
+                4ac</span>:</div>
+
+        <div class="step"><span class="formula">Case 1: D > 0</span></div>
+        <div class="step">Two distinct real roots exist.</div>
+        <div class="step">Roots are <span class="fraction"><span class="numerator">-b + √D</span><span
+                    class="denominator">2a</span></span> and <span class="fraction"><span class="numerator">-b -
+                    √D</span><span class="denominator">2a</span></span>.</div>
+
+        <div class="step"><span class="formula">Case 2: D = 0</span></div>
+        <div class="step">Two equal real roots exist (Real and Coincident).</div>
+        <div class="step">Roots are <span class="fraction"><span class="numerator">-b</span><span
+                    class="denominator">2a</span></span>, <span class="fraction"><span class="numerator">-b</span><span
+                    class="denominator">2a</span></span>.</div>
+
+        <div class="step"><span class="formula">Case 3: D < 0</span>
+        </div>
+        <div class="step">No real roots exist (Roots are imaginary).</div>
+    </div>
+
+</body>
+
+</html>

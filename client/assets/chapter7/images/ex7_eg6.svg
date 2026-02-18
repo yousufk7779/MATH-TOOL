@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- (4,-3) to (8,5) ratio 3:1 -->
+  <!-- A(4, -3) -> 100, 250 -->
+  <!-- B(8, 5) -> 300, 50 -->
+  <!-- P -> 3/4 way -->
+  
+  <line x1="100" y1="250" x2="300" y2="50" stroke="#03a9f4" stroke-width="3" />
+  
+  <circle cx="100" cy="250" r="6" fill="#222" />
+  <circle cx="300" cy="50" r="6" fill="#222" />
+  <circle cx="250" cy="100" r="6" fill="#e91e63" />
+  
+  <text x="80" y="270" font-family="serif" font-weight="bold" font-size="18">A(4,-3)</text>
+  <text x="310" y="50" font-family="serif" font-weight="bold" font-size="18">B(8,5)</text>
+  <text x="260" y="90" font-family="serif" font-weight="bold" font-size="18">P(7,3)</text>
+  
+  <text x="180" y="190" font-size="14" fill="#666">3</text>
+  <text x="280" y="80" font-size="14" fill="#666">1</text>
+</svg>

@@ -4,9 +4,9 @@ import { StyleSheet, View, Pressable, Animated, Modal, TouchableOpacity } from "
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
-import { ParsedText } from "@/components/ParsedText";
+import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { MCQ } from "@/data/chapterContent";
+import { MCQ } from "@/services/ContentService";
 
 interface MCQSectionProps {
   mcqs: MCQ[];
@@ -111,9 +111,17 @@ const MCQCard = memo(({
 
   return (
     <Animated.View style={[styles.mcqCard, { transform: [{ translateX: shakeAnim }] }]}>
-      <ParsedText style={[styles.question, textStyle]} Component={ThemedText}>
-        {`${index + 1}. ${mcq.question}`}
-      </ParsedText>
+      <MathRender
+        html={`${index + 1}. ${mcq.question}`}
+        baseStyle={{
+          ...Typography.body,
+          fontFamily: "Kalam_700Bold",
+          color: '#FFFFFF',
+          marginBottom: Spacing.sm,
+          ...textStyle
+        }}
+        ignoredTags={['img']}
+      />
 
       <View style={styles.optionsGrid}>
         {state.shuffledOptions.map((option, optIndex) => {
@@ -121,22 +129,22 @@ const MCQCard = memo(({
           const displayLabel = optionLabelsDisplay[optIndex]; // a, b, c, d based on CURRENT position
 
           // Colors
-          let backgroundColor = JiguuColors.surfaceLight;
+          let backgroundColor = '#222831'; // Darker surface
           let borderColor = "transparent";
-          let labelBg = JiguuColors.border;
-          let labelColor = JiguuColors.textSecondary;
+          let labelBg = '#393E46';
+          let labelColor = '#EEEEEE';
 
           // Strict Logic Visuals WITH Correction
           if (state.answered) {
             if (option.isCorrect) {
-              // Always highlight correct answer Green
-              backgroundColor = "#4CAF50" + "20";
+              // Always highlight correct answer Green (but translucent for dark theme)
+              backgroundColor = "rgba(76, 175, 80, 0.4)";
               borderColor = "#4CAF50";
               labelBg = "#4CAF50";
               labelColor = "#fff";
             } else if (isSelected) {
               // Highlight wrong selected answer Red
-              backgroundColor = "#F44336" + "20";
+              backgroundColor = "rgba(244, 67, 54, 0.4)";
               borderColor = "#F44336";
               labelBg = "#F44336";
               labelColor = "#fff";
@@ -166,7 +174,18 @@ const MCQCard = memo(({
                   </ThemedText>
                 )}
               </View>
-              <ParsedText style={[styles.optionText, textStyle]} Component={ThemedText}>{option.text}</ParsedText>
+              <View style={{ flex: 1 }}>
+                <MathRender
+                  html={option.text}
+                  baseStyle={{
+                    ...Typography.small,
+                    fontFamily: 'Kalam_400Regular',
+                    color: '#CCCCCC', // Light grey for contrast
+                    ...textStyle
+                  }}
+                  ignoredTags={['img']}
+                />
+              </View>
 
               {/* Tick for correct answer (Always show if answered) */}
               {state.answered && option.isCorrect && (
@@ -301,10 +320,12 @@ export default memo(MCQSection);
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: JiguuColors.surface,
+    backgroundColor: '#1A1A2E', // Dark Background
     borderRadius: BorderRadius.md,
     overflow: "hidden",
     marginBottom: Spacing.lg,
+    borderWidth: 1,
+    borderColor: '#333',
   },
   header: {
     paddingVertical: Spacing.sm,
@@ -322,12 +343,12 @@ const styles = StyleSheet.create({
   mcqCard: {
     padding: Spacing.md,
     borderBottomWidth: 1,
-    borderBottomColor: JiguuColors.border,
+    borderBottomColor: '#2C2C4E', // Lighter border
   },
   question: {
     ...Typography.body,
     fontFamily: "Kalam_700Bold",
-    color: JiguuColors.textPrimary,
+    color: '#FFFFFF', // White text
     marginBottom: Spacing.sm,
   },
   optionsGrid: {

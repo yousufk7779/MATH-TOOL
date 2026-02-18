@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { Question } from "@/data/chapterContent";
+import { Question } from "@/data/pyqData";
 
 
 
@@ -13,9 +13,10 @@ import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
 import { useSavedItems } from "@/context/SavedItemsContext";
 
-import { ParsedText } from "@/components/ParsedText";
+import { MathRender } from "@/components/MathRender";
 
 const graphImages: Record<string, any> = {
+  // ... (keeping existing map)
   "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
   "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
   "graph_ex2_1_q1_c": require("@/assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
@@ -25,7 +26,6 @@ const graphImages: Record<string, any> = {
   "ap_spiral": require("@/assets/chapter5/images/fig_5_4.png"),
   "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
   "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
-  // Chapter 3 Images
   "fig_ex3_1_q1_aftab.svg": require("@/assets/chapter3/images/fig_ex3_1_q1_aftab.svg"),
   "fig_ex3_1_q2_cricket.svg": require("@/assets/chapter3/images/fig_ex3_1_q2_cricket.svg"),
   "fig_ex3_1_q3_grapes.svg": require("@/assets/chapter3/images/fig_ex3_1_q3_grapes.svg"),
@@ -42,11 +42,9 @@ const graphImages: Record<string, any> = {
   "mcq_k_value.svg": require("@/assets/chapter3/images/mcq_k_value.svg"),
   "mcq_ratios.svg": require("@/assets/chapter3/images/mcq_ratios.svg"),
   "mcq_solutions.svg": require("@/assets/chapter3/images/mcq_solutions.svg"),
-  // Chapter 5 Images
   "fig_5_4.png": require("@/assets/chapter5/images/fig_5_4.png"),
   "fig_5_5.png": require("@/assets/chapter5/images/fig_5_5.png"),
   "fig_5_6.png": require("@/assets/chapter5/images/fig_5_6.png"),
-  // Chapter 4 Images
   "ex4_1_q2_i.svg": require("@/assets/chapter4/images/ex4_1_q2_i.svg"),
   "ex4_2_q5.svg": require("@/assets/chapter4/images/ex4_2_q5.svg"),
   "ex4_3_q3.svg": require("@/assets/chapter4/images/ex4_3_q3.svg"),
@@ -62,9 +60,6 @@ interface QuestionCardProps {
 }
 
 function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
-  // Ideally chapterId should be passed. For now, if not passed, we might fail to save correctly or need to infer.
-  // We MUST update call sites to pass chapterId.
-
   const { isBookmarked, isImportant, toggleBookmark, toggleImportant } = useSavedItems();
 
   const bookmarked = isBookmarked(question.id);
@@ -73,10 +68,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
   const handleBookmark = () => {
     toggleBookmark({
       id: question.id,
-      type: "question", // or 'example' - logic needed to distinguish or just use generic 'question' type?
-      // Since QuestionCard is used for both exercises and examples, maybe we should differentiate.
-      // Ideally pass 'type' prop or infer.
-      // For now, let's assume 'question' unless we know better.
+      type: "question",
       chapterId: chapterId,
     });
   };
@@ -113,24 +105,20 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         </View>
         <View style={styles.questionTextContainer}>
-          {question.question.split('\n').map((part, index) => {
-            const isSubQuestion = index > 0 || part.trim().startsWith('('); // Heuristic if \n is missing but should be
-            return (
-              <ParsedText
-                key={index}
-                style={[
-                  styles.questionText,
-                  contentStyle,
-                  isSubQuestion && { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
-                ]}
-                Component={ThemedText}
-                accentColor={accentColor}
-              >
-                {part}
-              </ParsedText>
-
-            );
-          })}
+          <MathRender
+            html={question.question}
+            baseStyle={{
+              ...Typography.body,
+              color: JiguuColors.textPrimary,
+              lineHeight: 24,
+              textAlign: "justify",
+              ...contentStyle
+            }}
+            classesStyles={{
+              'sub-question': { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
+            }}
+            ignoredTags={['img']}
+          />
         </View>
       </View>
 
@@ -149,26 +137,36 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         ) : null}
         <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
-        {question.solution.map((step, index) => {
+        {question.solution && question.solution.map((step, index) => {
           const isFormula = step.startsWith("[Formula]");
           const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
           return (
             <View key={index} style={styles.stepRow}>
-              <ParsedText style={[
-                styles.stepText,
-                contentStyle,
-                isFormula && { color: "#FF7043", fontWeight: "bold", fontFamily: "Kalam_700Bold" }
-              ]}
-                Component={Text}>
-                {displayStep}
-              </ParsedText>
-
+              <MathRender
+                html={displayStep}
+                baseStyle={{
+                  ...Typography.small,
+                  color: isFormula ? "#FF7043" : JiguuColors.textSecondary,
+                  lineHeight: 28,
+                  textAlign: "justify",
+                  fontFamily: isFormula ? "Kalam_700Bold" : undefined,
+                  fontWeight: isFormula ? "bold" : undefined,
+                  ...contentStyle
+                }}
+                ignoredTags={['img']}
+              />
             </View>
           );
         })}
-        <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-          <ParsedText style={[styles.answerText, titleStyle]} Component={ThemedText}>{question.answer}</ParsedText>
-        </View>
+        {question.answer && (
+          <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
+            <MathRender
+              html={question.answer}
+              baseStyle={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
+              ignoredTags={['img']}
+            />
+          </View>
+        )}
       </View>
     </View>
   );

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Trigonometry - Exercise 8.3</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 8: Exercise 8.3</div>
+    </div>
+
+    <div class="content-box" id="ch8_ex8.3_q1" data-type="main">
+        <div class="question">1. Express the trigonometric ratios sin A, sec A and tan A in terms of cot A.</div>
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">We know the identity: <span class="formula">\(\text{cosec}^2 A - \cot^2 A = 1\)</span></div>
+        <div class="step">\(\Rightarrow \text{cosec}^2 A = 1 + \cot^2 A\)</div>
+        <div class="step">\(\Rightarrow \frac{1}{\sin^2 A} = 1 + \cot^2 A\)</div>
+        <div class="step">\(\Rightarrow \sin^2 A = \frac{1}{1 + \cot^2 A}\)</div>
+        <div class="step">\(\Rightarrow \sin A = \frac{1}{\sqrt{1 + \cot^2 A}}\)</div>
+        <div class="step">We know that <span class="formula">\(\tan A = \frac{1}{\cot A}\)</span></div>
+        <div class="step">Also, <span class="formula">\(\sec^2 A = 1 + \tan^2 A\)</span></div>
+        <div class="step">\(\sec^2 A = 1 + \frac{1}{\cot^2 A}\)</div>
+        <div class="step">\(\sec^2 A = \frac{\cot^2 A + 1}{\cot^2 A}\)</div>
+        <div class="step">\(\sec A = \frac{\sqrt{\cot^2 A + 1}}{\cot A}\)</div>
+        <div class="final-answer">Therefore, the required values are \(\sin A = \frac{1}{\sqrt{1 + \cot^2 A}}, \tan A =
+            \frac{1}{\cot A}, \sec A = \frac{\sqrt{\cot^2 A + 1}}{\cot A}\).</div>
+    </div>
+
+    <div class="content-box" id="ch8_ex8.3_q2" data-type="main">
+        <div class="question">2. Write all the other trigonometric ratios of ∠A in terms of sec A.</div>
+
+        <div class="solution-header">Solution:</div>
+        <div class="step">1. <span class="formula">\(\cos A = \frac{1}{\sec A}\)</span></div>
+        <div class="step">2. We know <span class="formula">\(\sin^2 A + \cos^2 A = 1\)</span></div>
+        <div class="step">\(\sin^2 A = 1 - \cos^2 A = 1 - \frac{1}{\sec^2 A}\)</div>
+        <div class="step">\(\sin^2 A = \frac{\sec^2 A - 1}{\sec^2 A}\)</div>
+        <div class="step">\(\sin A = \frac{\sqrt{\sec^2 A - 1}}{\sec A}\)</div>
+        <div class="step">3. We know <span class="formula">\(\tan^2 A = \sec^2 A - 1\)</span></div>
+        <div class="step">\(\tan A = \sqrt{\sec^2 A - 1}\)</div>
+        <div class="step">4. <span class="formula">\(\cot A = \frac{1}{\tan A}\)</span></div>
+        <div class="step">\(\cot A = \frac{1}{\sqrt{\sec^2 A - 1}}\)</div>
+        <div class="step">5. <span class="formula">\(\text{cosec } A = \frac{1}{\sin A}\)</span></div>
+        <div class="step">\(\text{cosec } A = \frac{\sec A}{\sqrt{\sec^2 A - 1}}\)</div>
+        <div class="final-answer">Therefore, the ratios are expressed in terms of \(\sec A\) as above.</div>
+    </div>
+
+    <div class="content-box" id="ch8_ex8.3_q3" data-type="main">
+        <div class="question">3. Choose the correct option. Justify your choice.</div>
+
+
+<div class="question-block" id="ch8_ex8.3_q3_1" data-label="3(i)">
+<div class="question-block" id="ch8_ex8.3_q3_1" data-label="3(i)">
+        <div class="sub-question">(i) \(9 \sec^2 A - 9 \tan^2 A =\)</div>
+        <div class="step">\(= 9 (\sec^2 A - \tan^2 A)\)</div>
+        <div class="step">Using identity <span class="formula">\(\sec^2 A - \tan^2 A = 1\)</span></div>
+        <div class="step">\(= 9 (1) = 9\)</div>
+        <div class="final-answer">Therefore, the required value is (B) 9.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_2" data-label="3(ii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_2" data-label="3(ii)">
+        <div class="sub-question">(ii) \((1 + \tan \theta + \sec \theta) (1 + \cot \theta - \text{cosec } \theta)\)
+        </div>
+        <div class="step">\(= (1 + \frac{\sin \theta}{\cos \theta} + \frac{1}{\cos \theta}) (1 + \frac{\cos \theta}{\sin
+            \theta} - \frac{1}{\sin \theta})\)</div>
+        <div class="step">\(= (\frac{\cos \theta + \sin \theta + 1}{\cos \theta}) (\frac{\sin \theta + \cos \theta -
+            1}{\sin \theta})\)</div>
+        <div class="step">Let \(x = (\sin \theta + \cos \theta)\) and \(y = 1\).</div>
+        <div class="step">\(= \frac{(x + 1)(x - 1)}{\sin \theta \cos \theta} = \frac{x^2 - 1}{\sin \theta \cos \theta}\)
+        </div>
+        <div class="step">\(= \frac{(\sin \theta + \cos \theta)^2 - 1}{\sin \theta \cos \theta}\)</div>
+        <div class="step">\(= \frac{\sin^2 \theta + \cos^2 \theta + 2\sin \theta \cos \theta - 1}{\sin \theta \cos
+            \theta}\)</div>
+        <div class="step">Using <span class="formula">\(\sin^2 \theta + \cos^2 \theta = 1\)</span></div>
+        <div class="step">\(= \frac{1 + 2\sin \theta \cos \theta - 1}{\sin \theta \cos \theta}\)</div>
+        <div class="step">\(= \frac{2\sin \theta \cos \theta}{\sin \theta \cos \theta} = 2\)</div>
+        <div class="final-answer">Therefore, the required value is (C) 2.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_3" data-label="3(iii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_3" data-label="3(iii)">
+        <div class="sub-question">(iii) \((\sec A + \tan A) (1 - \sin A)\)</div>
+        <div class="step">\(= (\frac{1}{\cos A} + \frac{\sin A}{\cos A}) (1 - \sin A)\)</div>
+        <div class="step">\(= (\frac{1 + \sin A}{\cos A}) (1 - \sin A)\)</div>
+        <div class="step">\(= \frac{(1 + \sin A)(1 - \sin A)}{\cos A}\)</div>
+        <div class="step">\(= \frac{1 - \sin^2 A}{\cos A}\)</div>
+        <div class="step">Using <span class="formula">\(1 - \sin^2 A = \cos^2 A\)</span></div>
+        <div class="step">\(= \frac{\cos^2 A}{\cos A} = \cos A\)</div>
+        <div class="final-answer">Therefore, the required value is (D) \(\cos A\).</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_4" data-label="3(iv)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q3_4" data-label="3(iv)">
+        <div class="sub-question">(iv) \(\frac{1 + \tan^2 A}{1 + \cot^2 A}\)</div>
+        <div class="step">Using identities <span class="formula">\(1 + \tan^2 A = \sec^2 A\)</span> and <span
+                class="formula">\(1 + \cot^2 A = \text{cosec}^2 A\)</span></div>
+        <div class="step">\(= \frac{\sec^2 A}{\text{cosec}^2 A}\)</div>
+        <div class="step">\(= \frac{1/\cos^2 A}{1/\sin^2 A}\)</div>
+        <div class="step">\(= \frac{\sin^2 A}{\cos^2 A} = \tan^2 A\)</div>
+        <div class="final-answer">Therefore, the required value is (D) \(\tan^2 A\).</div>
+</div>
+</div>
+    </div>
+
+    <div class="content-box" id="ch8_ex8.3_q4" data-type="main">
+        <div class="question">4. Prove the following identities, where the angles involved are acute angles for which
+            the expressions are defined.</div>
+
+
+<div class="question-block" id="ch8_ex8.3_q4_1" data-label="4(i)">
+<div class="question-block" id="ch8_ex8.3_q4_1" data-label="4(i)">
+        <div class="sub-question">(i) \((\text{cosec } \theta - \cot \theta)^2 = \frac{1 - \cos \theta}{1 + \cos
+            \theta}\)</div>
+        <div class="step">LHS = \((\frac{1}{\sin \theta} - \frac{\cos \theta}{\sin \theta})^2\)</div>
+        <div class="step">\(= (\frac{1 - \cos \theta}{\sin \theta})^2\)</div>
+        <div class="step">\(= \frac{(1 - \cos \theta)^2}{\sin^2 \theta}\)</div>
+        <div class="step">Using identity <span class="formula">\(\sin^2 \theta = 1 - \cos^2 \theta\)</span></div>
+        <div class="step">\(= \frac{(1 - \cos \theta)^2}{1 - \cos^2 \theta}\)</div>
+        <div class="step">\(= \frac{(1 - \cos \theta)(1 - \cos \theta)}{(1 - \cos \theta)(1 + \cos \theta)}\)</div>
+        <div class="step">\(= \frac{1 - \cos \theta}{1 + \cos \theta}\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_2" data-label="4(ii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_2" data-label="4(ii)">
+        <div class="sub-question">(ii) \(\frac{\cos A}{1 + \sin A} + \frac{1 + \sin A}{\cos A} = 2 \sec A\)</div>
+        <div class="step">LHS = \(\frac{\cos^2 A + (1 + \sin A)^2}{(1 + \sin A)\cos A}\)</div>
+        <div class="step">\(= \frac{\cos^2 A + 1 + \sin^2 A + 2\sin A}{(1 + \sin A)\cos A}\)</div>
+        <div class="step">Using <span class="formula">\(\sin^2 A + \cos^2 A = 1\)</span></div>
+        <div class="step">\(= \frac{1 + 1 + 2\sin A}{(1 + \sin A)\cos A}\)</div>
+        <div class="step">\(= \frac{2 + 2\sin A}{(1 + \sin A)\cos A}\)</div>
+        <div class="step">\(= \frac{2(1 + \sin A)}{(1 + \sin A)\cos A}\)</div>
+        <div class="step">\(= \frac{2}{\cos A} = 2 \sec A\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_3" data-label="4(iii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_3" data-label="4(iii)">
+        <div class="sub-question">(iii) \(\frac{\tan \theta}{1 - \cot \theta} + \frac{\cot \theta}{1 - \tan \theta} = 1
+            + \sec \theta \text{cosec } \theta\)</div>
+        <div class="step">Convert to sin and cos:</div>
+        <div class="step">\(= \frac{\frac{\sin \theta}{\cos \theta}}{1 - \frac{\cos \theta}{\sin \theta}} +
+            \frac{\frac{\cos \theta}{\sin \theta}}{1 - \frac{\sin \theta}{\cos \theta}}\)</div>
+        <div class="step">\(= \frac{\frac{\sin \theta}{\cos \theta}}{\frac{\sin \theta - \cos \theta}{\sin \theta}} +
+            \frac{\frac{\cos \theta}{\sin \theta}}{\frac{\cos \theta - \sin \theta}{\cos \theta}}\)</div>
+        <div class="step">\(= \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} + \frac{\cos^2 \theta}{\sin
+            \theta(\cos \theta - \sin \theta)}\)</div>
+        <div class="step">\(= \frac{\sin^2 \theta}{\cos \theta(\sin \theta - \cos \theta)} - \frac{\cos^2 \theta}{\sin
+            \theta(\sin \theta - \cos \theta)}\)</div>
+        <div class="step">\(= \frac{\sin^3 \theta - \cos^3 \theta}{\sin \theta \cos \theta (\sin \theta - \cos
+            \theta)}\)</div>
+        <div class="step">Using <span class="formula">\(a^3 - b^3 = (a-b)(a^2 + b^2 + ab)\)</span></div>
+        <div class="step">\(= \frac{(\sin \theta - \cos \theta)(\sin^2 \theta + \cos^2 \theta + \sin \theta \cos
+            \theta)}{\sin \theta \cos \theta (\sin \theta - \cos \theta)}\)</div>
+        <div class="step">\(= \frac{1 + \sin \theta \cos \theta}{\sin \theta \cos \theta}\)</div>
+        <div class="step">\(= \frac{1}{\sin \theta \cos \theta} + 1\)</div>
+        <div class="step">\(= \text{cosec } \theta \sec \theta + 1\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_4" data-label="4(iv)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_4" data-label="4(iv)">
+        <div class="sub-question">(iv) \(\frac{1 + \sec A}{\sec A} = \frac{\sin^2 A}{1 - \cos A}\)</div>
+        <div class="step">LHS = \(\frac{1 + 1/\cos A}{1/\cos A} = \frac{(\cos A + 1)/\cos A}{1/\cos A} = 1 + \cos A\).
+        </div>
+        <div class="step">RHS = \(\frac{\sin^2 A}{1 - \cos A} = \frac{1 - \cos^2 A}{1 - \cos A}\)</div>
+        <div class="step">\(= \frac{(1 - \cos A)(1 + \cos A)}{1 - \cos A} = 1 + \cos A\)</div>
+        <div class="step">LHS = RHS.</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_5" data-label="4(v)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_5" data-label="4(v)">
+        <div class="sub-question">(v) \(\frac{\cos A - \sin A + 1}{\cos A + \sin A - 1} = \text{cosec } A + \cot A\)
+        </div>
+
+        <div class="step">Divide numerator and denominator by \(\sin A\):</div>
+        <div class="step">\(= \frac{\cot A - 1 + \text{cosec } A}{\cot A + 1 - \text{cosec } A}\)</div>
+        <div class="step">Using identity: <span class="formula">\(1 = \text{cosec}^2 A - \cot^2 A\)</span> in numerator
+        </div>
+        <div class="step">\(= \frac{\cot A + \text{cosec } A - (\text{cosec}^2 A - \cot^2 A)}{\cot A - \text{cosec } A +
+            1}\)</div>
+        <div class="step">\(= \frac{(\cot A + \text{cosec } A) - (\text{cosec } A - \cot A)(\text{cosec } A + \cot
+            A)}{\cot A - \text{cosec } A + 1}\)</div>
+        <div class="step">Factor out \((\cot A + \text{cosec } A)\):</div>
+        <div class="step">\(= \frac{(\cot A + \text{cosec } A)(1 - \text{cosec } A + \cot A)}{1 - \text{cosec } A + \cot
+            A}\)</div>
+        <div class="step">\(= \cot A + \text{cosec } A\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_6" data-label="4(vi)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_6" data-label="4(vi)">
+        <div class="sub-question">(vi) \(\sqrt{\frac{1 + \sin A}{1 - \sin A}} = \sec A + \tan A\)</div>
+        <div class="step">LHS = \(\sqrt{\frac{1 + \sin A}{1 - \sin A} \times \frac{1 + \sin A}{1 + \sin A}}\)</div>
+        <div class="step">\(= \sqrt{\frac{(1 + \sin A)^2}{1 - \sin^2 A}}\)</div>
+        <div class="step">Using <span class="formula">\(1 - \sin^2 A = \cos^2 A\)</span></div>
+        <div class="step">\(= \sqrt{\frac{(1 + \sin A)^2}{\cos^2 A}}\)</div>
+        <div class="step">\(= \frac{1 + \sin A}{\cos A}\)</div>
+        <div class="step">\(= \frac{1}{\cos A} + \frac{\sin A}{\cos A} = \sec A + \tan A\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_7" data-label="4(vii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_7" data-label="4(vii)">
+        <div class="sub-question">(vii) \(\frac{\sin \theta - 2 \sin^3 \theta}{2 \cos^3 \theta - \cos \theta} = \tan
+            \theta\)</div>
+        <div class="step">LHS = \(\frac{\sin \theta (1 - 2\sin^2 \theta)}{\cos \theta (2\cos^2 \theta - 1)}\)</div>
+        <div class="step">We know <span class="formula">\(\cos 2\theta = 1 - 2\sin^2 \theta = 2\cos^2 \theta -
+                1\)</span></div>
+        <div class="step">Or substitution: \(1 - 2\sin^2 \theta = \sin^2 \theta + \cos^2 \theta - 2\sin^2 \theta =
+            \cos^2 \theta - \sin^2 \theta\).</div>
+        <div class="step">Denominator: \(2\cos^2 \theta - 1 = 2\cos^2 \theta - (\sin^2 \theta + \cos^2 \theta) = \cos^2
+            \theta - \sin^2 \theta\).</div>
+        <div class="step">\(= \frac{\sin \theta (\cos^2 \theta - \sin^2 \theta)}{\cos \theta (\cos^2 \theta - \sin^2
+            \theta)}\)</div>
+        <div class="step">\(= \frac{\sin \theta}{\cos \theta} = \tan \theta\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_8" data-label="4(viii)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_8" data-label="4(viii)">
+        <div class="sub-question">(viii) \((\sin A + \text{cosec } A)^2 + (\cos A + \sec A)^2 = 7 + \tan^2 A + \cot^2
+            A\)</div>
+        <div class="step">Expand LHS:</div>
+        <div class="step">\(= (\sin^2 A + \text{cosec}^2 A + 2\sin A \text{cosec } A) + (\cos^2 A + \sec^2 A + 2\cos A
+            \sec A)\)</div>
+        <div class="step">We know <span class="formula">\(\sin A \text{cosec } A = 1\)</span> and <span
+                class="formula">\(\cos A \sec A = 1\)</span></div>
+        <div class="step">\(= \sin^2 A + \text{cosec}^2 A + 2 + \cos^2 A + \sec^2 A + 2\)</div>
+        <div class="step">Group terms: \((\sin^2 A + \cos^2 A) + \text{cosec}^2 A + \sec^2 A + 4\)</div>
+        <div class="step">\(= 1 + (1 + \cot^2 A) + (1 + \tan^2 A) + 4\)</div>
+        <div class="step">\(= 1 + 1 + 1 + 4 + \cot^2 A + \tan^2 A\)</div>
+        <div class="step">\(= 7 + \tan^2 A + \cot^2 A\) = RHS</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_9" data-label="4(ix)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_9" data-label="4(ix)">
+        <div class="sub-question">(ix) \((\text{cosec } A - \sin A)(\sec A - \cos A) = \frac{1}{\tan A + \cot A}\)</div>
+        <div class="step">LHS = \((\frac{1}{\sin A} - \sin A)(\frac{1}{\cos A} - \cos A)\)</div>
+        <div class="step">\(= (\frac{1 - \sin^2 A}{\sin A})(\frac{1 - \cos^2 A}{\cos A})\)</div>
+        <div class="step">\(= (\frac{\cos^2 A}{\sin A})(\frac{\sin^2 A}{\cos A}) = \sin A \cos A\)</div>
+        <div class="step">RHS = \(\frac{1}{\frac{\sin A}{\cos A} + \frac{\cos A}{\sin A}}\)</div>
+        <div class="step">\(= \frac{1}{\frac{\sin^2 A + \cos^2 A}{\sin A \cos A}}\)</div>
+        <div class="step">\(= \frac{\sin A \cos A}{1} = \sin A \cos A\)</div>
+        <div class="step">LHS = RHS.</div>
+        <div class="final-answer">Hence Proved.</div>
+
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_10" data-label="4(x)">
+</div>
+<div class="question-block" id="ch8_ex8.3_q4_10" data-label="4(x)">
+        <div class="sub-question">(x) \((\frac{1 + \tan^2 A}{1 + \cot^2 A}) = (\frac{1 - \tan A}{1 - \cot A})^2 = \tan^2
+            A\)</div>
+        <div class="step">First part: \(\frac{1 + \tan^2 A}{1 + \cot^2 A} = \frac{\sec^2 A}{\text{cosec}^2 A}\)</div>
+        <div class="step">\(= \frac{1/\cos^2 A}{1/\sin^2 A} = \frac{\sin^2 A}{\cos^2 A} = \tan^2 A\).</div>
+        <div class="step">Second part: \(\frac{1 - \tan A}{1 - \frac{1}{\tan A}} = \frac{1 - \tan A}{\frac{\tan A -
+            1}{\tan A}}\)</div>
+        <div class="step">\(= \frac{\tan A(1 - \tan A)}{-(1 - \tan A)} = -\tan A\)</div>
+        <div class="step">So, \((-\tan A)^2 = \tan^2 A\).</div>
+        <div class="step">All parts equal \(\tan^2 A\).</div>
+        <div class="final-answer">Hence Proved.</div>
+</div>
+</div>
+    </div>
+
+</body>
+
+</html>

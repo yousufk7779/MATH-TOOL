@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Geometry - Examples</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 7: Solved Examples</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q1" data-type="main">
+        <div class="question">Example 1. Do the points (3, 2), (-2, -3) and (2, 3) form a triangle? If so, name the type
+            of triangle formed.</div>
+        <img src="images/ex7_1_q3.svg" alt="Points (3,2), (-2,-3), (2,3)">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(3, 2)\), \(Q(-2, -3)\) and \(R(2, 3)\).</div>
+        <div class="step">\(PQ = \sqrt{(-2-3)^2 + (-3-2)^2} = \sqrt{(-5)^2 + (-5)^2} = \sqrt{50} \approx 7.07\)</div>
+        <div class="step">\(QR = \sqrt{(2-(-2))^2 + (3-(-3))^2} = \sqrt{4^2 + 6^2} = \sqrt{16+36} = \sqrt{52} \approx
+            7.21\)</div>
+        <div class="step">\(PR = \sqrt{(2-3)^2 + (3-2)^2} = \sqrt{(-1)^2 + 1^2} = \sqrt{2} \approx 1.41\)</div>
+        <div class="step">Since sums of any two sides > third, they form a triangle.</div>
+        <div class="step">Also \(PQ^2 + PR^2 = 50 + 2 = 52 = QR^2\).</div>
+        <div class="final-answer">Yes, they form a Right-Angled Triangle.</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q2" data-type="main">
+        <div class="question">Example 2. Show that the points (1, 7), (4, 2), (-1, -1) and (-4, 4) form a square.</div>
+        <img src="images/ex7_1_q6_i.svg" alt="Square Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(1, 7), B(4, 2), C(-1, -1), D(-4, 4)\).</div>
+        <div class="step">\(AB = \sqrt{(4-1)^2 + (2-7)^2} = \sqrt{9+25} = \sqrt{34}\)</div>
+        <div class="step">\(BC = \sqrt{(-1-4)^2 + (-1-2)^2} = \sqrt{25+9} = \sqrt{34}\)</div>
+        <div class="step">\(CD = \sqrt{(-4-(-1))^2 + (4-(-1))^2} = \sqrt{9+25} = \sqrt{34}\)</div>
+        <div class="step">\(DA = \sqrt{(1-(-4))^2 + (7-4)^2} = \sqrt{25+9} = \sqrt{34}\)</div>
+        <div class="step">Diagonals: \(AC = \sqrt{(-1-1)^2 + (-1-7)^2} = \sqrt{4+64} = \sqrt{68}\)</div>
+        <div class="step">\(BD = \sqrt{(-4-4)^2 + (4-2)^2} = \sqrt{64+4} = \sqrt{68}\)</div>
+        <div class="final-answer">Since sides are equal and diagonals are equal, it forms a square.</div>
+    </div>
+
+
+
+
+
+
+    <div class="content-box" id="ch7_eg_q3" data-type="main">
+        <div class="question">Example 3. Fig. 7.6 shows the arrangement of desks in a classroom. Ashima, Bharti and
+            Camella are seated at A(3, 1), B(6, 4) and C(8, 6) respectively. Do you think they are seated in a line?
+            Give reasons for your answer.</div>
+        <img src="images/ex7_eg3.svg" alt="Seated Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Using Distance Formula:</div>
+        <div class="step">\(AB = \sqrt{(6-3)^2 + (4-1)^2} = \sqrt{3^2 + 3^2} = \sqrt{9+9} = \sqrt{18} = 3\sqrt{2}\)
+        </div>
+        <div class="step">\(BC = \sqrt{(8-6)^2 + (6-4)^2} = \sqrt{2^2 + 2^2} = \sqrt{4+4} = \sqrt{8} = 2\sqrt{2}\)
+        </div>
+        <div class="step">\(AC = \sqrt{(8-3)^2 + (6-1)^2} = \sqrt{5^2 + 5^2} = \sqrt{25+25} = \sqrt{50} = 5\sqrt{2}\)
+        </div>
+        <div class="step">Since \(AB + BC = 3\sqrt{2} + 2\sqrt{2} = 5\sqrt{2} = AC\), the points A, B and C are
+            collinear.</div>
+        <div class="final-answer">Yes, they are seated in a line.</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q4" data-type="main">
+        <div class="question">Example 4. Find a relation between x and y such that the point (x, y) is equidistant from
+            the
+            points (7, 1) and (3, 5).</div>
+        <img src="images/ex7_eg4.svg" alt="Equidistant Point">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(x, y)\) be equidistant from \(A(7, 1)\) and \(B(3, 5)\).</div>
+        <div class="step">We are given \(AP = BP\), so \(AP^2 = BP^2\).</div>
+        <div class="step">\((x - 7)^2 + (y - 1)^2 = (x - 3)^2 + (y - 5)^2\)</div>
+        <div class="step">\(x^2 - 14x + 49 + y^2 - 2y + 1 = x^2 - 6x + 9 + y^2 - 10y + 25\)</div>
+        <div class="step">\(x^2 - 14x + y^2 - 2y + 50 = x^2 - 6x + y^2 - 10y + 34\)</div>
+        <div class="step">\(-14x + 6x - 2y + 10y + 50 - 34 = 0\)</div>
+        <div class="step">\(-8x + 8y + 16 = 0\)</div>
+        <div class="step">Dividing by -8: \(x - y - 2 = 0\) or \(x - y = 2\).</div>
+        <div class="final-answer">Relation is \(x - y = 2\).</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q5" data-type="main">
+        <div class="question">Example 5. Find a point on the y-axis which is equidistant from the points A(6, 5) and
+            B(-4,
+            3).</div>
+        <img src="images/ex7_eg5.svg" alt="Point on Y-axis">
+        <div class="solution-header">Solution:</div>
+        <div class="step">We know that a point on the y-axis is of the form \((0, y)\).</div>
+        <div class="step">Let the point \(P(0, y)\) be equidistant from \(A(6, 5)\) and \(B(-4, 3)\).</div>
+        <div class="step">\(PA^2 = PB^2\)</div>
+        <div class="step">\((0 - 6)^2 + (y - 5)^2 = (0 - (-4))^2 + (y - 3)^2\)</div>
+        <div class="step">\(36 + y^2 - 10y + 25 = 16 + y^2 - 6y + 9\)</div>
+        <div class="step">\(61 - 10y = 25 - 6y\)</div>
+        <div class="step">\(-10y + 6y = 25 - 61\)</div>
+        <div class="step">\(-4y = -36 \Rightarrow y = 9\)</div>
+        <div class="final-answer">The required point is (0, 9).</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q6" data-type="main">
+        <div class="question">Example 6. Find the coordinates of the point which divides the line segment joining the
+            points
+            (4, -3) and (8, 5) in the ratio 3 : 1 internally.</div>
+        <img src="images/ex7_eg6.svg" alt="Section Point">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(x, y)\) divide AB in 3:1.</div>
+        <div class="step">\(x = \frac{3(8) + 1(4)}{3+1} = \frac{24+4}{4} = \frac{28}{4} = 7\)</div>
+        <div class="step">\(y = \frac{3(5) + 1(-3)}{3+1} = \frac{15-3}{4} = \frac{12}{4} = 3\)</div>
+        <div class="final-answer">Point P is (7, 3).</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q7" data-type="main">
+        <div class="question">Example 7. In what ratio does the point (-4, 6) divide the line segment joining the points
+            A(-6, 10) and B(3, -8)?</div>
+        <img src="images/ex7_eg7.svg" alt="Ratio Division">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the ratio be \(m_1 : m_2\). Using Section Formula for x-coordinate:</div>
+        <div class="step">\(-4 = \frac{m_1(3) + m_2(-6)}{m_1 + m_2}\)</div>
+        <div class="step">\(-4(m_1 + m_2) = 3m_1 - 6m_2\)</div>
+        <div class="step">\(-4m_1 - 4m_2 = 3m_1 - 6m_2\)</div>
+        <div class="step">\(2m_2 = 7m_1 \Rightarrow \frac{m_1}{m_2} = \frac{2}{7}\)</div>
+        <div class="step">Verification for y-coordinate: \(\frac{2(-8) + 7(10)}{2+7} = \frac{-16 + 70}{9} = \frac{54}{9}
+            =
+            6\). (Matches).</div>
+        <div class="final-answer">Ratio is 2:7.</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q8" data-type="main">
+        <div class="question">Example 8. Find the coordinates of the points of trisection (i.e., points dividing in
+            three
+            equal parts) of the line segment joining the points A(2, -2) and B(-7, 4).</div>
+        <img src="images/ex7_eg8.svg" alt="Trisection Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let P and Q be the points of trisection of AB.</div>
+        <div class="step">Case 1: P divides AB in ratio 1:2.</div>
+        <div class="step">\(P = \left( \frac{1(-7) + 2(2)}{1+2}, \frac{1(4) + 2(-2)}{1+2} \right)\)</div>
+        <div class="step">\(P = \left( \frac{-7+4}{3}, \frac{4-4}{3} \right) = \left( \frac{-3}{3}, 0 \right) = (-1,
+            0)\)
+        </div>
+        <div class="step">Case 2: Q divides AB in ratio 2:1.</div>
+        <div class="step">\(Q = \left( \frac{2(-7) + 1(2)}{2+1}, \frac{2(4) + 1(-2)}{2+1} \right)\)</div>
+        <div class="step">\(Q = \left( \frac{-14+2}{3}, \frac{8-2}{3} \right) = \left( \frac{-12}{3}, \frac{6}{3}
+            \right) =
+            (-4, 2)\)</div>
+        <div class="final-answer">Points are (-1, 0) and (-4, 2).</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q9" data-type="main">
+        <div class="question">Example 9. Find the ratio in which the y-axis divides the line segment joining the points
+            (5,
+            -6) and (-1, -4). Also find the point of intersection.</div>
+        <img src="images/ex7_eg9.svg" alt="Y-axis Division">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the ratio be \(k : 1\). The point on y-axis is \((0, y)\).</div>
+        <div class="step">x-coordinate = \(0\).</div>
+        <div class="step">\(\frac{k(-1) + 1(5)}{k+1} = 0\)</div>
+        <div class="step">\(-k + 5 = 0 \Rightarrow k = 5\). So ratio is 5:1.</div>
+        <div class="step">Now finding y-coordinate:</div>
+        <div class="step">\(y = \frac{5(-4) + 1(-6)}{5+1} = \frac{-20 - 6}{6} = \frac{-26}{6} = \frac{-13}{3}\)</div>
+        <div class="final-answer">Ratio is 5:1 and Point is (0, -13/3).</div>
+    </div>
+
+    <div class="content-box" id="ch7_eg_q10" data-type="main">
+        <div class="question">Example 10. If the points A(6, 1), B(8, 2), C(9, 4) and D(p, 3) are the vertices of a
+            parallelogram, taken in order, find the value of p.</div>
+        <img src="images/ex7_eg10.svg" alt="Parallelogram Vertices">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diagonals of a parallelogram bisect each other. So midpoint of AC = midpoint of BD.</div>
+        <div class="step">Midpoint of AC = \(\left( \frac{6+9}{2}, \frac{1+4}{2} \right) = (7.5, 2.5)\)</div>
+        <div class="step">Midpoint of BD = \(\left( \frac{8+p}{2}, \frac{2+3}{2} \right) = \left( \frac{8+p}{2}, 2.5
+            \right)\)</div>
+        <div class="step">Equating x-coordinates:</div>
+        <div class="step">\(\frac{8+p}{2} = 7.5 \Rightarrow 8+p = 15 \Rightarrow p = 7\).</div>
+        <div class="final-answer">Value of p is 7.</div>
+    </div>
+
+</html>

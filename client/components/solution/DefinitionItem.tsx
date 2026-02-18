@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { StyleSheet, View } from "react-native";
 
-import { ThemedText } from "@/components/ThemedText";
+import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 
 interface DefinitionItemProps {
@@ -14,8 +14,27 @@ interface DefinitionItemProps {
 function DefinitionItem({ term, description, termStyle, descriptionStyle }: DefinitionItemProps) {
   return (
     <View style={styles.container}>
-      <ThemedText style={[styles.term, termStyle]}>{term}:</ThemedText>
-      <ThemedText style={[styles.description, descriptionStyle]}>{description}</ThemedText>
+      <MathRender
+        html={`${term}:`}
+        baseStyle={{
+          ...Typography.body,
+          fontFamily: "Nunito_700Bold",
+          color: "#4CAF50",
+          marginBottom: 2,
+          ...termStyle
+        }}
+        ignoredTags={['img']}
+      />
+      <MathRender
+        html={description}
+        baseStyle={{
+          ...Typography.small,
+          color: JiguuColors.textSecondary,
+          lineHeight: 22,
+          ...descriptionStyle
+        }}
+        ignoredTags={['img']}
+      />
     </View>
   );
 }

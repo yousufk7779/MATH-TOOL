@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equations - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            padding-top: 5px;
+            display: inline-block;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .solution-header {
+            color: #6C63FF;
+            font-weight: 700;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 4: Examples</div>
+    </div>
+
+    <!-- Example 1 -->
+    <div class="content-box" id="ch4_eg_q1" data-type="main">
+        <div class="question">Example 1. Represent the following situations mathematically:</div>
+
+<div class="question-block" id="ch4_eg_q1_1" data-label="1(i)">
+<div class="question-block" id="ch4_eg_q1_1" data-label="1(i)">
+        <div class="sub-question">(i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and
+            the product of the number of marbles they now have is 124. We would like to find out how many marbles they
+            had to start with.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the number of marbles John had be x.</div>
+        <div class="step">Then the number of marbles Jivanti had = 45 - x.</div>
+        <div class="step">After losing 5 marbles:</div>
+        <div class="step">Number of marbles left with John = x - 5</div>
+        <div class="step">Number of marbles left with Jivanti = (45 - x) - 5 = 40 - x</div>
+        <div class="step">Product of their marbles = 124</div>
+        <div class="step">(x - 5)(40 - x) = 124</div>
+        <div class="step">40x - x² - 200 + 5x = 124</div>
+        <div class="step">-x² + 45x - 200 = 124</div>
+        <div class="step">-x² + 45x - 324 = 0</div>
+        <div class="step">Multiply by -1:</div>
+        <div class="final-answer">x² - 45x + 324 = 0</div>
+
+</div>
+<div class="question-block" id="ch4_eg_q1_2" data-label="1(ii)">
+</div>
+<div class="question-block" id="ch4_eg_q1_2" data-label="1(ii)">
+        <div class="sub-question">(ii) A cottage industry produces a certain number of toys in a day. The cost of
+            production of each toy (in rupees) was found to be 55 minus the number of toys produced in a day. On a
+            particular day, the total cost of production was ₹ 750. We would like to find out the number of toys
+            produced on that day.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the number of toys produced be x.</div>
+        <div class="step">Cost of production of each toy = 55 - x</div>
+        <div class="step">Total cost of production = x(55 - x)</div>
+        <div class="step">Given total cost = 750</div>
+        <div class="step">x(55 - x) = 750</div>
+        <div class="step">55x - x² = 750</div>
+        <div class="step">-x² + 55x - 750 = 0</div>
+        <div class="step">Multiply by -1:</div>
+        <div class="final-answer">x² - 55x + 750 = 0</div>
+</div>
+</div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="content-box" id="ch4_eg_q2" data-type="main">
+        <div class="question">Example 2. Check whether the following are quadratic equations:</div>
+
+<div class="question-block" id="ch4_eg_q2_1" data-label="2(i)">
+<div class="question-block" id="ch4_eg_q2_1" data-label="2(i)">
+        <div class="sub-question">(i) (x - 2)² + 1 = 2x - 3</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">LHS = (x - 2)² + 1 = x² - 4x + 4 + 1 = x² - 4x + 5</div>
+        <div class="step">Given equation: x² - 4x + 5 = 2x - 3</div>
+        <div class="step">x² - 4x - 2x + 5 + 3 = 0</div>
+        <div class="step">x² - 6x + 8 = 0</div>
+        <div class="step">It is of the form ax² + bx + c = 0.</div>
+        <div class="final-answer">Yes, it is a quadratic equation.</div>
+
+</div>
+<div class="question-block" id="ch4_eg_q2_2" data-label="2(ii)">
+</div>
+<div class="question-block" id="ch4_eg_q2_2" data-label="2(ii)">
+        <div class="sub-question">(ii) x(x + 1) + 8 = (x + 2)(x - 2)</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">LHS = x² + x + 8</div>
+        <div class="step">RHS = x² - 4</div>
+        <div class="step">x² + x + 8 = x² - 4</div>
+        <div class="step">x + 12 = 0</div>
+        <div class="step">It is a linear equation (degree 1).</div>
+        <div class="final-answer">No, it is not a quadratic equation.</div>
+
+</div>
+<div class="question-block" id="ch4_eg_q2_3" data-label="2(iii)">
+</div>
+<div class="question-block" id="ch4_eg_q2_3" data-label="2(iii)">
+        <div class="sub-question">(iii) x(2x + 3) = x² + 1</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">LHS = 2x² + 3x</div>
+        <div class="step">2x² + 3x = x² + 1</div>
+        <div class="step">x² + 3x - 1 = 0</div>
+        <div class="step">It is of the form ax² + bx + c = 0.</div>
+        <div class="final-answer">Yes, it is a quadratic equation.</div>
+
+</div>
+<div class="question-block" id="ch4_eg_q2_4" data-label="2(iv)">
+</div>
+<div class="question-block" id="ch4_eg_q2_4" data-label="2(iv)">
+        <div class="sub-question">(iv) (x + 2)³ = x³ - 4</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">LHS = x³ + 6x² + 12x + 8</div>
+        <div class="step">x³ + 6x² + 12x + 8 = x³ - 4</div>
+        <div class="step">6x² + 12x + 12 = 0</div>
+        <div class="final-answer">Yes, it is a quadratic equation.</div>
+</div>
+</div>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="content-box" id="ch4_eg_q3" data-type="main">
+        <div class="question">Example 3. Find the roots of the equation 2x² - 5x + 3 = 0, by factorisation.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Find two numbers whose product is 2 × 3 = 6 and sum is -5.</div>
+        <div class="step">Numbers are -2 and -3.</div>
+        <div class="step">2x² - 2x - 3x + 3 = 0</div>
+        <div class="step">2x(x - 1) - 3(x - 1) = 0</div>
+        <div class="step">(2x - 3)(x - 1) = 0</div>
+        <div class="step">2x - 3 = 0 or x - 1 = 0</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">3</span><span
+                    class="denominator">2</span></span> or x = 1</div>
+        <div class="final-answer">Roots are <span class="fraction"><span class="numerator">3</span><span
+                    class="denominator">2</span></span>, 1.</div>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="content-box" id="ch4_eg_q4" data-type="main">
+        <div class="question">Example 4. Find the roots of the quadratic equation 6x² - x - 2 = 0.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Product = 6 × (-2) = -12. Sum = -1.</div>
+        <div class="step">Numbers are -4 and 3.</div>
+        <div class="step">6x² - 4x + 3x - 2 = 0</div>
+        <div class="step">2x(3x - 2) + 1(3x - 2) = 0</div>
+        <div class="step">(3x - 2)(2x + 1) = 0</div>
+        <div class="step">3x - 2 = 0 ⇒ x = <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step">2x + 1 = 0 ⇒ x = <span class="fraction"><span class="numerator">-1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="final-answer">Roots are <span class="fraction"><span class="numerator">2</span><span
+                    class="denominator">3</span></span>, <span class="fraction"><span class="numerator">-1</span><span
+                    class="denominator">2</span></span>.</div>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="content-box" id="ch4_eg_q5" data-type="main">
+        <div class="question">Example 5. Find the roots of the quadratic equation 3x² - 2√6x + 2 = 0.</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">3x² - 2√6x + 2 = 0</div>
+        <div class="step">Note that 3x² = (√3x)² and 2 = (√2)²</div>
+        <div class="step">Middle term -2√6x = -2(√3x)(√2)</div>
+        <div class="step">So, (√3x)² - 2(√3x)(√2) + (√2)² = 0</div>
+        <div class="step">(√3x - √2)² = 0</div>
+        <div class="step">√3x - √2 = 0</div>
+        <div class="step">√3x = √2</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">√2</span><span
+                    class="denominator">√3</span></span></div>
+        <div class="step">Rationalising the denominator:</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">√6</span><span
+                    class="denominator">3</span></span></div>
+        <div class="final-answer">Roots are <span class="fraction"><span class="numerator">√6</span><span
+                    class="denominator">3</span></span>, <span class="fraction"><span class="numerator">√6</span><span
+                    class="denominator">3</span></span>.</div>
+    </div>
+
+    <!-- Example 6 -->
+    <div class="content-box" id="ch4_eg_q6" data-type="main">
+        <div class="question">Example 6. Find the dimensions of the prayer hall whose carpet area is 300 m² and length
+            is one metre more than twice its breadth.</div>
+        <div class="solution-header">Given:</div>
+        <div class="step">Area = 300 m²</div>
+        <div class="step">Length = 2 × Breadth + 1</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let breadth = x meters.</div>
+        <div class="step">Length = 2x + 1 meters.</div>
+        <div class="step">Area = x(2x + 1) = 300</div>
+        <div class="step">2x² + x - 300 = 0</div>
+        <div class="step">Using quadratic formula: a = 2, b = 1, c = -300</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-1 ± √(1² - 4(2)(-300))</span><span
+                    class="denominator">2(2)</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-1 ± √(1 + 2400)</span><span
+                    class="denominator">4</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-1 ± √2401</span><span
+                    class="denominator">4</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-1 ± 49</span><span
+                    class="denominator">4</span></span></div>
+        <div class="step">Case 1: x = <span class="fraction"><span class="numerator">48</span><span
+                    class="denominator">4</span></span> = 12</div>
+        <div class="step">Case 2: x = <span class="fraction"><span class="numerator">-50</span><span
+                    class="denominator">4</span></span> (Negative, ignore)</div>
+        <div class="step">Breadth = 12 m.</div>
+        <div class="step">Length = 2(12) + 1 = 25 m.</div>
+        <div class="final-answer">Breadth = 12 m, Length = 25 m.</div>
+    </div>
+
+    <!-- Example 8 -->
+    <div class="content-box" id="ch4_eg_q7" data-type="main">
+        <div class="question">Example 8. A pole has to be erected at a point on the boundary of a circular park of
+            diameter 13 metres in such a way that the differences of its distances from two diametrically opposite fixed
+            gates A and B on the boundary is 7 metres. Is it possible to do so? If yes, at what distances from the two
+            gates should the pole be erected?</div>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let P be the position of the pole.</div>
+        <div class="step">Let distance from gate B, PB = x meters.</div>
+        <div class="step">Then distance from gate A, PA = x + 7 meters (Difference is 7).</div>
+        <div class="step">AB is diameter = 13 m.</div>
+        <div class="step">∠APB = 90° (Angle in a semicircle is a right angle).</div>
+        <div class="step">Using Pythagoras theorem in ΔAPB:</div>
+        <div class="step">PA² + PB² = AB²</div>
+        <div class="step">(x + 7)² + x² = 13²</div>
+        <div class="step">x² + 14x + 49 + x² = 169</div>
+        <div class="step">2x² + 14x - 120 = 0</div>
+        <div class="step">Divide by 2: x² + 7x - 60 = 0</div>
+        <div class="step">Discriminant D = b² - 4ac = 7² - 4(1)(-60)</div>
+        <div class="step">D = 49 + 240 = 289 > 0</div>
+        <div class="step">Since D > 0, real roots exist. Thus, it is possible.</div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-7 ± √289</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">-7 ± 17</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step">x = <span class="fraction"><span class="numerator">10</span><span
+                    class="denominator">2</span></span> = 5 or x = <span class="fraction"><span
+                    class="numerator">-24</span><span class="denominator">2</span></span> = -12</div>
+        <div class="step">Since distance cannot be negative, x = 5.</div>
+        <div class="step">PB = 5 m, PA = 5 + 7 = 12 m.</div>
+        <div class="final-answer">Distances are 5 m and 12 m.</div>
+    </div>
+
+</body>
+
+</html>

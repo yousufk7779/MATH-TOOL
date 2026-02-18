@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .example-title {
+            color: #D32F2F;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            clear: none;
+        }
+
+        .sub-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .reason {
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            padding-top: 5px;
+            border-top: 1px dashed #ddd;
+            display: block;
+            clear: both;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 6: Examples</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q1" data-type="main">
+        <div class="example-title">Example 1</div>
+        <img src="images/example_1.svg" alt="Line Intersecting Triangle Sides">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If a line intersects sides AB and AC of a ∆ABC at D and E respectively and is parallel to BC,
+            prove that <span class="fraction"><span class="numerator">AD</span><span
+                    class="denominator">AB</span></span> = <span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">AC</span></span>.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">DE || BC.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AD</span><span
+                    class="denominator">AB</span></span> = <span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">AC</span></span></div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since DE || BC, by BPT:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AD</span><span
+                    class="denominator">DB</span></span> = <span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">EC</span></span></div>
+        <div class="step">Inverting the relation:</div>
+        <div class="step"><span class="fraction"><span class="numerator">DB</span><span
+                    class="denominator">AD</span></span> = <span class="fraction"><span class="numerator">EC</span><span
+                    class="denominator">AE</span></span></div>
+        <div class="step">Adding 1 to both sides:</div>
+        <div class="step"><span class="fraction"><span class="numerator">DB</span><span
+                    class="denominator">AD</span></span> + 1 = <span class="fraction"><span
+                    class="numerator">EC</span><span class="denominator">AE</span></span> + 1</div>
+        <div class="step"><span class="fraction"><span class="numerator">DB + AD</span><span
+                    class="denominator">AD</span></span> = <span class="fraction"><span class="numerator">EC +
+                    AE</span><span class="denominator">AE</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">AD</span></span> = <span class="fraction"><span class="numerator">AC</span><span
+                    class="denominator">AE</span></span></div>
+        <div class="step">Inverting again:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AD</span><span
+                    class="denominator">AB</span></span> = <span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">AC</span></span></div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q2" data-type="main">
+        <div class="example-title">Example 2</div>
+        <img src="images/example_2.svg" alt="Trapezium with EF parallel">
+        <div class="sub-header">Statement:</div>
+        <div class="step">ABCD is a trapezium with AB || DC. E and F are points on non-parallel sides AD and BC
+            respectively such that EF is parallel to AB. Show that <span class="fraction"><span
+                    class="numerator">AE</span><span class="denominator">ED</span></span> = <span class="fraction"><span
+                    class="numerator">BF</span><span class="denominator">FC</span></span>.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">AB || DC and EF || AB.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">ED</span></span> = <span class="fraction"><span class="numerator">BF</span><span
+                    class="denominator">FC</span></span></div>
+
+        <div class="sub-header">Construction:</div>
+        <div class="step">Join AC to intersect EF at G.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ADC, EG || DC (Since EF || AB || DC).</div>
+        <div class="step">By BPT: <span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">ED</span></span> = <span class="fraction"><span class="numerator">AG</span><span
+                    class="denominator">GC</span></span> <span class="reason">...(1)</span></div>
+        <div class="step">In ∆CAB, GF || AB.</div>
+        <div class="step">By BPT: <span class="fraction"><span class="numerator">AG</span><span
+                    class="denominator">GC</span></span> = <span class="fraction"><span class="numerator">BF</span><span
+                    class="denominator">FC</span></span> <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step"><span class="fraction"><span class="numerator">AE</span><span
+                    class="denominator">ED</span></span> = <span class="fraction"><span class="numerator">BF</span><span
+                    class="denominator">FC</span></span></div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q3" data-type="main">
+        <div class="example-title">Example 3</div>
+        <img src="images/example_3.svg" alt="Similar Triangles Question">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., <span class="fraction"><span class="numerator">PS</span><span
+                    class="denominator">SQ</span></span> = <span class="fraction"><span class="numerator">PT</span><span
+                    class="denominator">TR</span></span> and ∠PST = ∠PRQ. Prove that PQR is an isosceles triangle.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step"><span class="fraction"><span class="numerator">PS</span><span
+                    class="denominator">SQ</span></span> = <span class="fraction"><span class="numerator">PT</span><span
+                    class="denominator">TR</span></span> and ∠PST = ∠PRQ.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆PQR is isosceles.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since <span class="fraction"><span class="numerator">PS</span><span
+                    class="denominator">SQ</span></span> = <span class="fraction"><span class="numerator">PT</span><span
+                    class="denominator">TR</span></span>, by Converse of BPT: ST || QR.</div>
+        <div class="step">Therefore, ∠PST = ∠PQR <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">But given ∠PST = ∠PRQ.</div>
+        <div class="step">So, ∠PQR = ∠PRQ.</div>
+        <div class="step">Sides opposite to equal angles are equal, so PQ = PR.</div>
+        <div class="step">Since two sides are equal, ∆PQR is isosceles.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q4" data-type="main">
+        <div class="example-title">Example 4</div>
+        <img src="images/example_4.svg" alt="Similar Triangles Example">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., if PQ || RS, prove that ∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">PQ || RS.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆POQ and ∆SOR:</div>
+        <div class="step">1. ∠P = ∠S <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">2. ∠Q = ∠R <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">3. ∠POQ = ∠SOR <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">By AAA Similarity Criterion <span class="reason">(AAA Similarity)</span>:</div>
+        <div class="step">∆POQ ~ ∆SOR</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q5" data-type="main">
+        <div class="example-title">Example 5</div>
+        <img src="images/example_5.svg" alt="Finding Angle P">
+        <div class="sub-header">Statement:</div>
+        <div class="step">Observe Fig. and then find ∠P.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC with A=80°, B=60°. AB=3.8, BC=6, AC=3√3.</div>
+        <div class="step">∆RPQ with R=?, P=?, Q=?. PR=6√3, PQ=12, RQ=7.6.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Value of ∠P.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Compare ratios of sides:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">RQ</span></span> = <span class="fraction"><span
+                    class="numerator">3.8</span><span class="denominator">7.6</span></span> = <span
+                class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">BC</span><span
+                    class="denominator">QP</span></span> = <span class="fraction"><span class="numerator">6</span><span
+                    class="denominator">12</span></span> = <span class="fraction"><span class="numerator">1</span><span
+                    class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">CA</span><span
+                    class="denominator">PR</span></span> = <span class="fraction"><span
+                    class="numerator">3√3</span><span class="denominator">6√3</span></span> = <span
+                class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step">Since sides are proportional, ∆ABC ~ ∆RQP <span class="reason">(SSS Similarity)</span>.</div>
+        <div class="step">Therefore, corresponding angles are equal: ∠C = ∠P.</div>
+        <div class="step">In ∆ABC, ∠C = 180° - (∠A + ∠B) = 180° - (80° + 60°) = 180° - 140° = 40°.</div>
+        <div class="step">So, ∠P = 40°.</div>
+        <div class="final-answer">∠P = 40°.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q6" data-type="main">
+        <div class="example-title">Example 6</div>
+        <img src="images/example_6.svg" alt="Shadow Problem">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., OA . OB = OC . OD. Show that ∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">OA . OB = OC . OD</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Rearranging the given equation:</div>
+        <div class="step"><span class="fraction"><span class="numerator">OA</span><span
+                    class="denominator">OC</span></span> = <span class="fraction"><span class="numerator">OD</span><span
+                    class="denominator">OB</span></span></div>
+        <div class="step">In ∆AOD and ∆COB:</div>
+        <div class="step">∠AOD = ∠COB <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">Sides containing these angles are proportional <span class="reason">(from above)</span>.</div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="step">∆AOD ~ ∆COB</div>
+        <div class="step">Corresponding angles are equal:</div>
+        <div class="step">∠A = ∠C and ∠D = ∠B.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q7" data-type="main">
+        <div class="example-title">Example 7</div>
+        <img src="images/example_7.svg" alt="Girl Walking Away from Lamp">
+        <div class="sub-header">Statement:</div>
+        <div class="step">A girl of height 90 cm is walking away from the base of a lamp-post at a speed of 1.2 m/s. If
+            the lamp is 3.6 m above the ground, find the length of her shadow after 4 seconds.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Height of girl (CD) = 90 cm = 0.9 m.</div>
+        <div class="step">Height of lamp (AB) = 3.6 m.</div>
+        <div class="step">Speed = 1.2 m/s. Time = 4 s.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Length of her shadow (DE = x).</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Distance covered (BD) = Speed × Time = 1.2 × 4 = 4.8 m.</div>
+        <div class="step">In ∆ABE and ∆CDE:</div>
+        <div class="step">∠B = ∠D = 90° <span class="reason">(Vertical poles)</span>.</div>
+        <div class="step">∠E is common.</div>
+        <div class="step">So ∆ABE ~ ∆CDE <span class="reason">(AA Similarity)</span>.</div>
+        <div class="step">Therefore, <span class="fraction"><span class="numerator">BE</span><span
+                    class="denominator">DE</span></span> = <span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">CD</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">4.8 + x</span><span
+                    class="denominator">x</span></span> = <span class="fraction"><span class="numerator">3.6</span><span
+                    class="denominator">0.9</span></span> = 4</div>
+        <div class="step">4.8 + x = 4x</div>
+        <div class="step">3x = 4.8</div>
+        <div class="step">x = 1.6 m.</div>
+        <div class="final-answer">Length of her shadow is 1.6 m.</div>
+    </div>
+
+    <div class="content-box" id="ch6_eg_q8" data-type="main">
+        <div class="example-title">Example 8</div>
+        <img src="images/example_8.svg" alt="Similar Triangles Medians">
+        <div class="sub-header">Statement:</div>
+        <div class="step">CM and RN are respectively the medians of ∆ABC and ∆PQR. If ∆ABC ~ ∆PQR, prove that:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR</div>
+        <div class="step">(ii) CM/RN = AB/PQ</div>
+        <div class="step">(iii) ∆CMB ~ ∆RNQ</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC ~ ∆PQR. CM and RN are medians.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR, (ii) <span class="fraction"><span class="numerator">CM</span><span
+                    class="denominator">RN</span></span> = <span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">PQ</span></span>, (iii) ∆CMB ~ ∆RNQ.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆PQR:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">PQ</span></span> = <span class="fraction"><span class="numerator">BC</span><span
+                    class="denominator">QR</span></span> = <span class="fraction"><span class="numerator">AC</span><span
+                    class="denominator">PR</span></span> and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R.</div>
+        <div class="step">Since M and N are midpoints: 2AM = AB and 2PN = PQ.</div>
+        <div class="step">So <span class="fraction"><span class="numerator">2AM</span><span
+                    class="denominator">2PN</span></span> = <span class="fraction"><span
+                    class="numerator">AC</span><span class="denominator">PR</span></span> ⇒ <span class="fraction"><span
+                    class="numerator">AM</span><span class="denominator">PN</span></span> = <span class="fraction"><span
+                    class="numerator">AC</span><span class="denominator">PR</span></span>.</div>
+        <div class="step">In ∆AMC and ∆PNR:</div>
+        <div class="step"><span class="fraction"><span class="numerator">AM</span><span
+                    class="denominator">PN</span></span> = <span class="fraction"><span class="numerator">AC</span><span
+                    class="denominator">PR</span></span></div>
+        <div class="step">∠A = ∠P <span class="reason">(Given)</span></div>
+        <div class="step">So ∆AMC ~ ∆PNR <span class="reason">(SAS Similarity)</span>.</div>
+        <div class="step">Hence <span class="fraction"><span class="numerator">CM</span><span
+                    class="denominator">RN</span></span> = <span class="fraction"><span class="numerator">AC</span><span
+                    class="denominator">PR</span></span> = <span class="fraction"><span class="numerator">AB</span><span
+                    class="denominator">PQ</span></span>.</div>
+        <div class="step">Similarly, for (iii), we can prove ∆CMB ~ ∆RNQ using SAS (BM/QN = BC/QR and ∠B=∠Q).</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+</body>
+
+</html>
