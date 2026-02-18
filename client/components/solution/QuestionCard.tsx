@@ -1,13 +1,10 @@
 import React, { memo } from "react";
-import { StyleSheet, View, Image, Text } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { Question } from "@/data/pyqData";
-
-
-
-
+// Changed import from pyqData to chapterContent to match SolutionScreen
+import { Question } from "@/data/chapterContent";
 
 import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";
@@ -15,41 +12,8 @@ import { useSavedItems } from "@/context/SavedItemsContext";
 
 import { MathRender } from "@/components/MathRender";
 
-const graphImages: Record<string, any> = {
-  // ... (keeping existing map)
-  "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
-  "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
-  "graph_ex2_1_q1_c": require("@/assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
-  "graph_ex2_1_q1_d": require("@/assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
-  "graph_ex2_1_q1_e": require("@/assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
-  "graph_ex2_1_q1_f": require("@/assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
-  "ap_spiral": require("@/assets/chapter5/images/fig_5_4.png"),
-  "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
-  "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
-  "fig_ex3_1_q1_aftab.svg": require("@/assets/chapter3/images/fig_ex3_1_q1_aftab.svg"),
-  "fig_ex3_1_q2_cricket.svg": require("@/assets/chapter3/images/fig_ex3_1_q2_cricket.svg"),
-  "fig_ex3_1_q3_grapes.svg": require("@/assets/chapter3/images/fig_ex3_1_q3_grapes.svg"),
-  "fig_ex3_2_q1_i.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_i.svg"),
-  "fig_ex3_2_q1_ii.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_ii.svg"),
-  "fig_ex3_2_q4_iii.svg": require("@/assets/chapter3/images/fig_ex3_2_q4_iii.svg"),
-  "fig_ex3_2_q5.svg": require("@/assets/chapter3/images/fig_ex3_2_q5.svg"),
-  "fig_ex3_2_q7.svg": require("@/assets/chapter3/images/fig_ex3_2_q7.svg"),
-  "fig_ex3_new_q4_i.svg": require("@/assets/chapter3/images/fig_ex3_new_q4_i.svg"),
-  "fig_example_1.svg": require("@/assets/chapter3/images/fig_example_1.svg"),
-  "fig_example_2.svg": require("@/assets/chapter3/images/fig_example_2.svg"),
-  "fig_example_3.svg": require("@/assets/chapter3/images/fig_example_3.svg"),
-  "fig_example_7.svg": require("@/assets/chapter3/images/fig_example_7.svg"),
-  "mcq_k_value.svg": require("@/assets/chapter3/images/mcq_k_value.svg"),
-  "mcq_ratios.svg": require("@/assets/chapter3/images/mcq_ratios.svg"),
-  "mcq_solutions.svg": require("@/assets/chapter3/images/mcq_solutions.svg"),
-  "fig_5_4.png": require("@/assets/chapter5/images/fig_5_4.png"),
-  "fig_5_5.png": require("@/assets/chapter5/images/fig_5_5.png"),
-  "fig_5_6.png": require("@/assets/chapter5/images/fig_5_6.png"),
-  "ex4_1_q2_i.svg": require("@/assets/chapter4/images/ex4_1_q2_i.svg"),
-  "ex4_2_q5.svg": require("@/assets/chapter4/images/ex4_2_q5.svg"),
-  "ex4_3_q3.svg": require("@/assets/chapter4/images/ex4_3_q3.svg"),
-  "ex4_3_q5.svg": require("@/assets/chapter4/images/ex4_3_q5.svg"),
-};
+// Placeholder for future image handling - currently empty to avoid missing asset errors
+const graphImages: Record<string, any> = {};
 
 interface QuestionCardProps {
   question: Question;
@@ -123,19 +87,13 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
       </View>
 
       <View style={styles.solutionBox}>
+        {/* Image rendering logic paused/removed until assets are restored/new assets added */}
         {question.image && graphImages[question.image] ? (
           <View style={styles.imageContainer}>
-            {typeof graphImages[question.image] === 'function' || typeof graphImages[question.image] === 'object' && !graphImages[question.image].uri && !Number.isInteger(graphImages[question.image]) ? (
-              React.createElement(graphImages[question.image]?.default ?? graphImages[question.image], { width: "90%", height: 150 })
-            ) : (
-              <Image
-                source={graphImages[question.image]}
-                style={styles.graphImage}
-                resizeMode="contain"
-              />
-            )}
+            {/* Placeholder for future image rendering */}
           </View>
         ) : null}
+
         <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
         {question.solution && question.solution.map((step, index) => {
           const isFormula = step.startsWith("[Formula]");
@@ -259,34 +217,4 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   questionTextContainer: {},
-  fractionContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginHorizontal: 3,
-    transform: [{ translateY: 4 }],
-  },
-  numeratorContainer: {
-    alignItems: 'center',
-    marginBottom: 1,
-  },
-  numeratorText: {
-    fontSize: 12,
-    textAlign: 'center',
-    lineHeight: 14,
-  },
-  separator: {
-    height: 1,
-    width: '100%',
-    minWidth: 10,
-    backgroundColor: 'black',
-  },
-  denominatorContainer: {
-    alignItems: 'center',
-    marginTop: 1,
-  },
-  denominatorText: {
-    fontSize: 12,
-    textAlign: 'center',
-    lineHeight: 14,
-  },
 });

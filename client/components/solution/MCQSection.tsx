@@ -6,7 +6,8 @@ import { Feather } from "@expo/vector-icons";
 import { ThemedText } from "@/components/ThemedText";
 import { MathRender } from "@/components/MathRender";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-import { MCQ } from "@/services/ContentService";
+// Changed import to use the central ChapterContent type
+import { MCQ } from "@/data/chapterContent";
 
 interface MCQSectionProps {
   mcqs: MCQ[];
@@ -436,4 +437,3 @@ const styles = StyleSheet.create({
     color: '#fff'
   }
 });
-
