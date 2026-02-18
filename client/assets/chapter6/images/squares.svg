@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150" style="background-color:white; border:1px solid #ddd;">
-  <rect x="20" y="45" width="60" height="60" fill="none" stroke="green" stroke-width="2"/>
-  <rect x="110" y="35" width="80" height="80" fill="none" stroke="green" stroke-width="2"/>
-  <text x="35" y="120" font-family="Arial" font-size="10">Square 1</text>
-  <text x="130" y="130" font-family="Arial" font-size="10">Square 2</text>
-</svg>

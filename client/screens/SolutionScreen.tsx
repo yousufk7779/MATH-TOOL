@@ -111,7 +111,7 @@ function SolutionScreen() {
 
   const chapter = getChapter(chapterId);
   const content = getChapterContent(chapterId);
-  // const htmlChapter = ChapterHTMLs[chapterId];
+
   const accentColor = chapter?.color || JiguuColors.quadraticEquations;
 
   // Handwritten Style Logic for All Chapters
@@ -349,11 +349,11 @@ function SolutionScreen() {
     </View>
   ), [accentColor, handleBackToMenu, handleQuestionClick, selectedQuestion, hwStyle]);
 
-  // Removed renderHTMLContent logic here
+
 
 
   // Placeholder removed
-  // }, [activeSection, htmlChapter, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
+  // }, [activeSection, exerciseView, handleExerciseClick, handleExamplesClick, handleBackToMenu, selectedExercise, accentColor]);
 
   const renderExamples = useCallback((data: ChapterContent) => {
     const examplesToShow = questionId
