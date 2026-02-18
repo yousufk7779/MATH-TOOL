@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,14 +38,14 @@
             font-family: 'Kalam', cursive;
         }
 
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
+        .content-box { 
+            background: #f8f9fa; 
+            border: 1px solid #e9ecef; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            display: flow-root; 
+            transition: transform 0.2s ease; 
         }
 
         .question {
@@ -71,6 +70,8 @@
             margin-top: 10px;
             margin-bottom: 5px;
             font-size: 1em;
+            text-decoration: underline; /* Optional for section headers, but user said "don't underline ANY question or text" - leaving plain or bold */
+            text-decoration: none;
         }
 
         .step {
@@ -90,7 +91,7 @@
             margin: 2px 0;
             border: 1px solid #ffe0b2;
         }
-
+        
         .formula-block {
             display: block;
             margin: 10px 0;
@@ -125,24 +126,33 @@
             padding: 0 2px;
         }
 
-        sub,
-        sup {
+        sub, sup {
             font-size: 75%;
             line-height: 0;
             position: relative;
             vertical-align: baseline;
         }
+        sup { top: -0.5em; }
+        sub { bottom: -0.25em; }
 
-        sup {
-            top: -0.5em;
+        img { 
+            float: right; 
+            margin-left: 20px; 
+            margin-bottom: 15px; 
+            max-width: 280px; 
+            height: auto; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+            padding: 5px; 
+            background: white; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
         }
-
-        sub {
-            bottom: -0.25em;
+        
+        @media (max-width: 600px) { 
+            img { float: none; display: block; margin: 10px auto; max-width: 100%; } 
         }
     </style>
 </head>
-
 <body>
 
     <div class="header">
@@ -151,119 +161,143 @@
     </div>
 
     <!-- Question 1 -->
-    <div class="content-box" id="ch1_ex1.2_q1" data-type="main">
+    <div class="content-box">
         <div class="question">1. Prove that √5 is irrational.</div>
+        
+        <div class="section-title">Given:</div>
+        <div class="step">Number √5.</div>
+
+        <div class="section-title">To Prove:</div>
+        <div class="step">√5 is an irrational number.</div>
 
         <div class="section-title">Proof:</div>
-        <div class="step">Assume to the contrary that <b>√5 is rational</b>.</div>
-        <div class="step">So, we can find co-prime integers <i>a</i> and <i>b</i> (where <i>b</i> ≠ 0) such that:</div>
-        <div class="step"><b>√5 = <span class="fraction"><span class="numerator">a</span><span
-                        class="denominator">b</span></span></b></div>
-        <div class="step">Squaring both sides and rearranging: <b>5b² = a²</b> ... (Equation 1)</div>
-        <div class="step">This means <b>5 divides a²</b>.</div>
-        <div class="step">Therefore, <b>5 divides a</b> (by Theorem 1.3).</div>
-        <div class="step">So, we can write <b>a = 5c</b> for some integer <i>c</i>.</div>
-        <div class="step">Substituting <i>a = 5c</i> in Equation 1:</div>
-        <div class="step">5b² = (5c)² &rArr; 5b² = 25c²</div>
-        <div class="step">Dividing by 5: <b>b² = 5c²</b></div>
-        <div class="step">This implies <b>5 divides b²</b>, so <b>5 divides b</b>.</div>
-        <div class="step"><b>Conclusion:</b> <i>a</i> and <i>b</i> have at least 5 as a common factor.</div>
-        <div class="step">But this contradicts the fact that <i>a</i> and <i>b</i> have no common factor other than 1
-            (they are co-prime).</div>
-        <div class="step">This contradiction arose because of our incorrect assumption.</div>
-
-        <div class="final-answer">Hence, √5 is irrational.</div>
+        <div class="step">Let us assume, to the contrary, that √5 is rational.</div>
+        <div class="step">This means we can find integers <i>a</i> and <i>b</i> (where <i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            √5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+        </div>
+        <div class="step">Suppose <i>a</i> and <i>b</i> have a common factor other than 1. Can divide by the common factor to assume <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">So, <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">Rearranging, we get:</div>
+        <div class="step">√5 <i>b</i> = <i>a</i></div>
+        <div class="step">Squaring both sides:</div>
+        <div class="step">5<i>b</i>² = <i>a</i>²  ... (Equation 1)</div>
+        <div class="step">Therefore, 5 divides <i>a</i>².</div>
+        <div class="step formula-block"><span class="formula">Theorem 1.3: If a prime number p divides a², then p divides a.</span></div>
+        <div class="step">So, 5 divides <i>a</i>.</div>
+        
+        <div class="step">Let <i>a</i> = 5<i>c</i> for some integer <i>c</i>.</div>
+        <div class="step">Substituting <i>a</i> = 5<i>c</i> in Equation 1:</div>
+        <div class="step">5<i>b</i>² = (5<i>c</i>)²</div>
+        <div class="step">5<i>b</i>² = 25<i>c</i>²</div>
+        <div class="step">Dividing both sides by 5:</div>
+        <div class="step"><i>b</i>² = 5<i>c</i>²</div>
+        <div class="step">This limits that 5 divides <i>b</i>².</div>
+        <div class="step">So, 5 divides <i>b</i> (using Theorem 1.3 again).</div>
+        
+        <div class="step">Therefore, <i>a</i> and <i>b</i> have at least 5 as a common factor.</div>
+        <div class="step">But this contradicts the fact that <i>a</i> and <i>b</i> have no common factor other than 1 (they are co-prime).</div>
+        <div class="step">This contradiction has arisen because of our incorrect assumption that √5 is rational.</div>
+        
+        <div class="final-answer">Hence, we conclude that √5 is irrational.</div>
     </div>
 
     <!-- Question 2 -->
-    <div class="content-box" id="ch1_ex1.2_q2" data-type="main">
+    <div class="content-box">
         <div class="question">2. Prove that 3 + 2√5 is irrational.</div>
 
-        <div class="section-title">Proof:</div>
-        <div class="step">Assume that <b>3 + 2√5 is rational</b>.</div>
-        <div class="step">Then we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
-        <div class="step"><b>3 + 2√5 = <span class="fraction"><span class="numerator">a</span><span
-                        class="denominator">b</span></span></b></div>
-        <div class="step">Rearranging to isolate √5:</div>
-        <div class="step">2√5 = <span class="fraction"><span class="numerator">a</span><span
-                    class="denominator">b</span></span> - 3</div>
-        <div class="step">2√5 = <span class="fraction"><span class="numerator">a - 3b</span><span
-                    class="denominator">b</span></span></div>
-        <div class="step formula-block"><b>√5 = <span class="fraction"><span class="numerator">a - 3b</span><span
-                        class="denominator">2b</span></span></b></div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator">a -
-                    3b</span><span class="denominator">2b</span></span> is a rational number.</div>
-        <div class="step">This implies that <b>√5 is also rational</b>.</div>
-        <div class="step">But we know that <b>√5 is irrational</b>.</div>
-        <div class="step">This contradiction implies our assumption was wrong.</div>
+        <div class="section-title">Given:</div>
+        <div class="step">Number 3 + 2√5.</div>
 
-        <div class="final-answer">Hence, 3 + 2√5 is irrational.</div>
+        <div class="section-title">To Prove:</div>
+        <div class="step">3 + 2√5 is irrational.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume, to the contrary, that 3 + 2√5 is rational.</div>
+        <div class="step">That is, we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            3 + 2√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+        </div>
+        <div class="step">Rearranging the equation to isolate √5:</div>
+        <div class="step">
+            2√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> - 3
+        </div>
+        <div class="step">Taking LCM on RHS:</div>
+        <div class="step">
+            2√5 = <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator"><i>b</i></span></span>
+        </div>
+        <div class="step">Dividing by 2:</div>
+        <div class="step">
+            <span class="formula">√5 = <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator">2<i>b</i></span></span></span>
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, (<i>a</i> - 3<i>b</i>) and 2<i>b</i> are also integers.</div>
+        <div class="step">
+            Thus, <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator">2<i>b</i></span></span> is a rational number.
+        </div>
+        <div class="step">Therefore, √5 should be rational.</div>
+        <div class="step">But this contradicts the fact that √5 is irrational.</div>
+        <div class="step">This contradiction has arisen because of our incorrect assumption that 3 + 2√5 is rational.</div>
+
+        <div class="final-answer">Hence, we conclude that 3 + 2√5 is irrational.</div>
     </div>
 
     <!-- Question 3 -->
-    <div class="content-box" id="ch1_ex1.2_q3" data-type="main">
+    <div class="content-box">
         <div class="question">3. Prove that the following are irrationals:</div>
-
+        
         <!-- Part (i) -->
-<div class="question-block" id="ch1_ex1.2_q3_1" data-label="3(i)">
-<div class="question-block" id="ch1_ex1.2_q3_1" data-label="3(i)">
-        <div class="sub-question">(i) <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">√2</span></span></div>
-
+        <div class="sub-question">(i) <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span></div>
+        
         <div class="section-title">Proof:</div>
-        <div class="step">Assume <b><span class="fraction"><span class="numerator">1</span><span
-                        class="denominator">√2</span></span> is rational</b>.</div>
-        <div class="step">So, <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">√2</span></span> = <span class="fraction"><span class="numerator">a</span><span
-                    class="denominator">b</span></span>, where <i>a, b</i> are co-prime integers.</div>
-        <div class="step">Taking reciprocal on both sides:</div>
-        <div class="step"><b>√2 = <span class="fraction"><span class="numerator">b</span><span
-                        class="denominator">a</span></span></b></div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span
-                    class="numerator">b</span><span class="denominator">a</span></span> is rational.</div>
-        <div class="step">This implies <b>√2 is rational</b>, which contradicts the fact that √2 is irrational.</div>
-        <div class="final-answer">Hence, <span class="fraction"><span class="numerator">1</span><span
-                    class="denominator">√2</span></span> is irrational.</div>
+        <div class="step">Let us assume 
+            <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> is rational.
+        </div>
+        <div class="step">Then we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+        </div>
+        <div class="step">Reciprocating both sides (or cross-multiplying):</div>
+        <div class="step">
+            √2 = <span class="fraction"><span class="numerator"><i>b</i></span><span class="denominator"><i>a</i></span></span>
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>b</i></span><span class="denominator"><i>a</i></span></span> is rational.</div>
+        <div class="step">This implies √2 is rational.</div>
+        <div class="step">But this contradicts the fact that √2 is irrational.</div>
+        <div class="final-answer">Hence, <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> is irrational.</div>
 
         <!-- Part (ii) -->
-</div>
-<div class="question-block" id="ch1_ex1.2_q3_2" data-label="3(ii)">
-</div>
-<div class="question-block" id="ch1_ex1.2_q3_2" data-label="3(ii)">
         <div class="sub-question">(ii) 7√5</div>
 
         <div class="section-title">Proof:</div>
-        <div class="step">Assume <b>7√5 is rational</b>.</div>
-        <div class="step">So, 7√5 = <span class="fraction"><span class="numerator">a</span><span
-                    class="denominator">b</span></span>, where <i>a, b</i> are integers.</div>
-        <div class="step">Rearranging to isolate √5:</div>
-        <div class="step"><b>√5 = <span class="fraction"><span class="numerator">a</span><span
-                        class="denominator">7b</span></span></b></div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, the RHS is rational.</div>
-        <div class="step">But this contradicts the fact that <b>√5 is irrational</b>.</div>
+        <div class="step">Let us assume 7√5 is rational.</div>
+        <div class="step">So, 7√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">Rearranging:</div>
+        <div class="step">
+            √5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator">7<i>b</i></span></span>
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator">7<i>b</i></span></span> is rational.</div>
+        <div class="step">This implies √5 is rational.</div>
+        <div class="step">But this contradicts the fact that √5 is irrational.</div>
         <div class="final-answer">Hence, 7√5 is irrational.</div>
 
         <!-- Part (iii) -->
-</div>
-<div class="question-block" id="ch1_ex1.2_q3_3" data-label="3(iii)">
-</div>
-<div class="question-block" id="ch1_ex1.2_q3_3" data-label="3(iii)">
         <div class="sub-question">(iii) 6 + √2</div>
 
         <div class="section-title">Proof:</div>
-        <div class="step">Assume <b>6 + √2 is rational</b>.</div>
-        <div class="step">So, 6 + √2 = <span class="fraction"><span class="numerator">a</span><span
-                    class="denominator">b</span></span>.</div>
-        <div class="step">Rearranging terms:</div>
-        <div class="step"><b>√2 = <span class="fraction"><span class="numerator">a</span><span
-                        class="denominator">b</span></span> - 6</b></div>
-        <div class="step">Since <i>a, b</i> are integers, the RHS is rational.</div>
-        <div class="step">But <b>√2 is irrational</b>. This is a contradiction.</div>
+        <div class="step">Let us assume 6 + √2 is rational.</div>
+        <div class="step">So, 6 + √2 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">Transposing 6 to the RHS:</div>
+        <div class="step">
+            √2 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> - 6
+        </div>
+        <div class="step">
+            √2 = <span class="fraction"><span class="numerator"><i>a</i> - 6<i>b</i></span><span class="denominator"><i>b</i></span></span>
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>a</i> - 6<i>b</i></span><span class="denominator"><i>b</i></span></span> is rational.</div>
+        <div class="step">This implies √2 is rational.</div>
+        <div class="step">But this contradicts the fact that √2 is irrational.</div>
         <div class="final-answer">Hence, 6 + √2 is irrational.</div>
-</div>
-</div>
     </div>
 
 </body>
-
 </html>
