@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350" width="400" height="350">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Coordinates -->
+  <!-- P: (200, 40) -->
+  <!-- Q: (60, 300) -->
+  <!-- R: (340, 300) -->
+  <!-- O: (200, 190) -->
+  
+  <!-- Inner Triangle Vertices (Scaling P,Q,R towards O by factor ~0.6) -->
+  <!-- A = O + 0.55 * (P-O) = (200, 190) + 0.55*(0, -150) = (200, 190-82.5) = (200, 107.5) -->
+  <!-- B = O + 0.55 * (Q-O) = (200, 190) + 0.55*(-140, 110) = (200-77, 190+60.5) = (123, 250.5) -->
+  <!-- C = O + 0.55 * (R-O) = (200, 190) + 0.55*(140, 110) = (200+77, 190+60.5) = (277, 250.5) -->
+  
+  <!-- Outer Triangle PQR -->
+  <path d="M200 40 L60 300 L340 300 Z" class="line" />
+
+  <!-- Connecting Lines from Vertices to O -->
+  <line x1="200" y1="40" x2="200" y2="190" class="inner-line" /> <!-- PO -->
+  <line x1="60" y1="300" x2="200" y2="190" class="inner-line" /> <!-- QO -->
+  <line x1="340" y1="300" x2="200" y2="190" class="inner-line" /> <!-- RO -->
+
+  <!-- Inner Triangle ABC -->
+  <path d="M200 107.5 L123 250.5 L277 250.5 Z" class="inner-line" />
+
+  <!-- Labels -->
+  <text x="190" y="30" class="text">P</text>
+  <text x="40" y="310" class="text">Q</text>
+  <text x="350" y="310" class="text">R</text>
+  <text x="205" y="210" class="text">O</text>
+  
+  <text x="180" y="110" class="text">A</text>
+  <text x="105" y="245" class="text">B</text>
+  <text x="285" y="245" class="text">C</text>
+
+</svg>

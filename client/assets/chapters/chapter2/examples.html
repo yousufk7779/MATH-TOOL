@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomials - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .section-title {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.0em;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .formula {
+            background-color: #fff3e0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: #D32F2F;
+            font-weight: 700;
+            display: inline-block;
+            margin: 2px 0;
+            border: 1px solid #ffe0b2;
+        }
+
+        .formula-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            width: 150px;
+            height: 120px;
+            border: 2px dashed #bbb;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 11px;
+            margin-left: 10px;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 2: Polynomials - Examples</div>
+    </div>
+
+    <!-- Example 1 -->
+    <div class="content-box">
+        <div class="question">Example 1. Look at the graphs in the figure given below. Each is the graph of y = p(x),
+            where p(x) is a polynomial. For each of the graphs, find the number of zeroes of p(x).</div>
+        <div class="diagram-placeholder">Graphs of polynomials (i-vi)</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step"><strong>(i)</strong> The graph does not intersect the x-axis.</div>
+        <div class="step">Number of zeroes = 0</div>
+
+        <div class="step"><strong>(ii)</strong> The graph intersects the x-axis at exactly 1 point.</div>
+        <div class="step">Number of zeroes = 1</div>
+
+        <div class="step"><strong>(iii)</strong> The graph intersects the x-axis at 3 points.</div>
+        <div class="step">Number of zeroes = 3</div>
+
+        <div class="step"><strong>(iv)</strong> The graph intersects the x-axis at 2 points.</div>
+        <div class="step">Number of zeroes = 2</div>
+
+        <div class="step"><strong>(v)</strong> The graph intersects the x-axis at 4 points.</div>
+        <div class="step">Number of zeroes = 4</div>
+
+        <div class="step"><strong>(vi)</strong> The graph intersects the x-axis at 3 points.</div>
+        <div class="step">Number of zeroes = 3</div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="content-box">
+        <div class="question">Example 2. Find the zeroes of the quadratic polynomial x² + 7x + 10, and verify the
+            relationship between the zeroes and the coefficients.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Let p(x) = x² + 7x + 10</div>
+        <div class="step">To find zeroes, put p(x) = 0</div>
+        <div class="step">By splitting the middle term:</div>
+        <div class="step">x² + 2x + 5x + 10 = 0</div>
+        <div class="step">x(x + 2) + 5(x + 2) = 0</div>
+        <div class="step">(x + 2)(x + 5) = 0</div>
+        <div class="step">x + 2 = 0 OR x + 5 = 0</div>
+        <div class="step">x = -2 OR x = -5</div>
+        <div class="final-answer">Zeroes are α = -2 and β = -5.</div>
+
+        <div class="section-title">Verification:</div>
+        <div class="step">Comparing with ax² + bx + c: a = 1, b = 7, c = 10</div>
+
+        <div class="step"><strong>Sum of zeroes:</strong></div>
+        <div class="step">α + β = -2 + (-5) = -7</div>
+        <div class="step formula-block"><span class="formula">-b/a = -7/1 = -7</span></div>
+        <div class="step">Matches.</div>
+
+        <div class="step"><strong>Product of zeroes:</strong></div>
+        <div class="step">α × β = (-2) × (-5) = 10</div>
+        <div class="step formula-block"><span class="formula">c/a = 10/1 = 10</span></div>
+        <div class="step">Matches.</div>
+
+        <div class="final-answer">Relationship verified.</div>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="content-box">
+        <div class="question">Example 3. Find the zeroes of the polynomial x² - 3 and verify the relationship between
+            the zeroes and the coefficients.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Let p(x) = x² - 3</div>
+        <div class="step">To find zeroes, put p(x) = 0</div>
+        <div class="step">x² - 3 = 0</div>
+        <div class="step">x² - (√3)² = 0</div>
+        <div class="step formula-block"><span class="formula">Using identity a² - b² = (a - b)(a + b)</span></div>
+        <div class="step">(x - √3)(x + √3) = 0</div>
+        <div class="step">x - √3 = 0 OR x + √3 = 0</div>
+        <div class="step">x = √3 OR x = -√3</div>
+        <div class="final-answer">Zeroes are α = √3 and β = -√3.</div>
+
+        <div class="section-title">Verification:</div>
+        <div class="step">Comparing with ax² + bx + c: a = 1, b = 0 (no x term), c = -3</div>
+
+        <div class="step"><strong>Sum of zeroes:</strong></div>
+        <div class="step">α + β = √3 + (-√3) = 0</div>
+        <div class="step formula-block"><span class="formula">-b/a = -0/1 = 0</span></div>
+
+        <div class="step"><strong>Product of zeroes:</strong></div>
+        <div class="step">α × β = √3 × (-√3) = -3</div>
+        <div class="step formula-block"><span class="formula">c/a = -3/1 = -3</span></div>
+
+        <div class="final-answer">Relationship verified.</div>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="content-box">
+        <div class="question">Example 4. Find a quadratic polynomial, the sum and product of whose zeroes are -3 and 2,
+            respectively.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Given:</div>
+        <div class="step">Sum of zeroes (S) = -3</div>
+        <div class="step">Product of zeroes (P) = 2</div>
+
+        <div class="step">A quadratic polynomial is given by:</div>
+        <div class="step formula-block"><span class="formula">p(x) = k[x² - (Sum of zeroes)x + (Product of
+                zeroes)]</span></div>
+        <div class="step">p(x) = k[x² - (-3)x + 2]</div>
+        <div class="step">p(x) = k[x² + 3x + 2]</div>
+        <div class="step">For k = 1, the polynomial is:</div>
+        <div class="final-answer">x² + 3x + 2</div>
+    </div>
+
+    <!-- Example 5 (Cubic) -->
+    <div class="content-box">
+        <div class="question">Example 5. Verify that 3, -1, -⅓ are the zeroes of the cubic polynomial p(x) = 3x³ - 5x² -
+            11x - 3, and then verify the relationship between the zeroes and the coefficients.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Given polynomial: p(x) = 3x³ - 5x² - 11x - 3</div>
+
+        <div class="step"><strong>Checking 3:</strong></div>
+        <div class="step">p(3) = 3(3)³ - 5(3)² - 11(3) - 3</div>
+        <div class="step">= 3(27) - 5(9) - 33 - 3</div>
+        <div class="step">= 81 - 45 - 36</div>
+        <div class="step">= 81 - 81 = 0</div>
+
+        <div class="step"><strong>Checking -1:</strong></div>
+        <div class="step">p(-1) = 3(-1)³ - 5(-1)² - 11(-1) - 3</div>
+        <div class="step">= -3 - 5 + 11 - 3</div>
+        <div class="step">= -11 + 11 = 0</div>
+
+        <div class="step"><strong>Checking -1/3:</strong></div>
+        <div class="step">p(-1/3) = 3(-1/3)³ - 5(-1/3)² - 11(-1/3) - 3</div>
+        <div class="step">= 3(-1/27) - 5(1/9) + 11/3 - 3</div>
+        <div class="step">= -1/9 - 5/9 + 33/9 - 27/9</div>
+        <div class="step">= (-1 - 5 + 33 - 27) / 9</div>
+        <div class="step">= 0 / 9 = 0</div>
+
+        <div class="final-answer">Thus, 3, -1, and -1/3 are indeed zeroes of p(x).</div>
+
+        <div class="section-title">Verification of Relationship:</div>
+        <div class="step">Comparing with ax³ + bx² + cx + d:</div>
+        <div class="step">a = 3, b = -5, c = -11, d = -3</div>
+        <div class="step">Let α = 3, β = -1, γ = -1/3</div>
+
+        <div class="step"><strong>1. Sum of zeroes (α + β + γ):</strong></div>
+        <div class="step">3 + (-1) + (-1/3) = 2 - 1/3 = <span class="fraction"><span class="numerator">5</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step formula-block"><span class="formula">-b/a = -(-5)/3 = <span class="fraction"><span
+                        class="numerator">5</span><span class="denominator">3</span></span></span></div>
+
+        <div class="step"><strong>2. Sum of product of zeroes taken two at a time (αβ + βγ + γα):</strong></div>
+        <div class="step">(3)(-1) + (-1)(-1/3) + (-1/3)(3)</div>
+        <div class="step">= -3 + 1/3 - 1</div>
+        <div class="step">= -4 + 1/3 = <span class="fraction"><span class="numerator">-11</span><span
+                    class="denominator">3</span></span></div>
+        <div class="step formula-block"><span class="formula">c/a = <span class="fraction"><span
+                        class="numerator">-11</span><span class="denominator">3</span></span></span></div>
+
+        <div class="step"><strong>3. Product of zeroes (αβγ):</strong></div>
+        <div class="step">(3) × (-1) × (-1/3) = 1</div>
+        <div class="step formula-block"><span class="formula">-d/a = -(-3)/3 = 3/3 = 1</span></div>
+
+        <div class="final-answer">Relationship verified.</div>
+    </div>
+
+</body>
+
+</html>

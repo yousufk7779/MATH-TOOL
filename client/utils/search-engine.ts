@@ -1,5 +1,4 @@
 
-import { chapterContents } from "@/data/chapterContent";
 import { class10Chapters } from "@/data/chapters";
 import { chapterPYQs } from "@/data/pyqData";
 import { JiguuColors } from "@/constants/theme";
@@ -44,33 +43,6 @@ export const buildSearchIndex = () => {
                 params: { chapterId: chapter.id, chapterName: chapter.name, section: "overview" },
             },
         });
-    });
-
-    // dynamic content from chapterContent.ts
-    Object.values(chapterContents).forEach((chapter) => {
-        // 4. Index Exercises and other sections
-        if (chapter.exercises) {
-            chapter.exercises.forEach((exercise) => {
-                searchIndex.push({
-                    id: `${chapter.id}-${exercise.id}`,
-                    type: "exercise",
-                    title: exercise.name,
-                    subtitle: `${chapter.title} - ${exercise.name}`,
-                    keywords: `${exercise.name} ${chapter.title}`,
-                    navigationParams: {
-                        screen: "Solution",
-                        params: {
-                            chapterId: chapter.id,
-                            chapterName: chapter.title,
-                            section: "exercises",
-                            exerciseId: exercise.id,
-                        },
-                    },
-                });
-            });
-        }
-
-        // Can index other sections similarly (Examples, Theorems, etc.)
     });
 
     // 8. Index PYQs (Still works because pyqData handles its own data)

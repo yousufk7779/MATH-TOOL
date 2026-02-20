@@ -30,7 +30,7 @@ const SavedItemCard = memo(({ item }: { item: any }) => {
                 if (chId.includes('-')) {
                     chId = chId.split('-')[0];
                 }
-                const uri = await ContentService.getHtmlUri(chId, exerciseId);
+                const uri = ContentService.getSectionUri(chId, 'exercises');
                 setHtmlUri(uri);
             }
             setLoading(false);

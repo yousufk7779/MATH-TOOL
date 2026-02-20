@@ -3,8 +3,7 @@ import { StyleSheet, View, Image } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
-// Changed import from pyqData to chapterContent to match SolutionScreen
-import { Question } from "@/data/chapterContent";
+import { Question } from "@/data/pyqData";
 
 import { Feather } from "@expo/vector-icons";
 import { Pressable } from "react-native";

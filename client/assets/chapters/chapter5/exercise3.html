@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Solutions - Notebook Style</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+        /* Handwriting font */
+
+        body {
+            font-family: 'Kalam', cursive, sans-serif;
+            /* Fallback to sans-serif if Kalam fails */
+            line-height: 1.8;
+            color: #000080;
+            /* Dark Blue like ink */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fdfdfd;
+            background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
+            background-size: 100% 2em;
+            /* Notebook lines */
+        }
+
+        /* Simulating notebook margin */
+        .container {
+            border-left: 2px solid #ff9999;
+            padding-left: 20px;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2 {
+            color: #d32f2f;
+            /* Red heading */
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        .step {
+            display: block;
+            margin-bottom: 0px;
+            /* Steps sit on lines */
+        }
+
+        /* Vertical Fraction Style */
+        .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 4px;
+        }
+
+        .frac-top {
+            display: block;
+            border-bottom: 1px solid #000080;
+            padding: 0 2px;
+            line-height: 1;
+        }
+
+        .frac-bottom {
+            display: block;
+            padding: 0 2px;
+            line-height: 1;
+        }
+
+        .formula {
+            color: #d35400;
+            /* Burnt Orange/Red for emphasis */
+            font-weight: bold;
+        }
+
+        .answer {
+            font-weight: bold;
+            display: block;
+            margin-top: 1em;
+            text-decoration: underline;
+        }
+
+        /* Images style */
+        .diagram {
+            display: block;
+            margin: 1em auto;
+            max-width: 100%;
+            border: 1px dashed #aaa;
+            padding: 5px;
+            background: #fff;
+        }
+
+        /* Utility for roots and powers */
+        sup {
+            vertical-align: super;
+            font-size: smaller;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Class 10 Maths Solutions</h1>
+
+        <h2>Exercise 5.3</h2>
+
+        <span class="step"><span class="formula">Sum of n terms: Sₙ = <span class="frac"><span
+                        class="frac-top">n</span><span class="frac-bottom">2</span></span>[2a + (n - 1)d]</span></span>
+        <span class="step"><span class="formula">Or: Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                        class="frac-bottom">2</span></span>(a + aₙ)</span></span>
+
+        <!-- Question 1 -->
+        <div class="question">Q1. Find the sum of the following APs:</div>
+
+        <div class="question">(i) 2, 7, 12..., to 10 terms.</div>
+        <span class="step">a = 2, d = 7 - 2 = 5, n = 10</span>
+        <span class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span
+                    class="frac-bottom">2</span></span>[2(2) + (10 - 1)5]</span>
+        <span class="step">S₁₀ = 5[4 + 9(5)]</span>
+        <span class="step">S₁₀ = 5[4 + 45]</span>
+        <span class="step">S₁₀ = 5(49)</span>
+        <span class="step">S₁₀ = 245</span>
+        <span class="answer">Answer: 245</span>
+
+        <div class="question">(ii) -37, -33, -29..., to 12 terms.</div>
+        <span class="step">a = -37, d = -33 - (-37) = 4, n = 12</span>
+        <span class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span
+                    class="frac-bottom">2</span></span>[2(-37) + (12 - 1)4]</span>
+        <span class="step">S₁₂ = 6[-74 + 11(4)]</span>
+        <span class="step">S₁₂ = 6[-74 + 44]</span>
+        <span class="step">S₁₂ = 6(-30)</span>
+        <span class="step">S₁₂ = -180</span>
+        <span class="answer">Answer: -180</span>
+
+        <div class="question">(iii) 0.6, 1.7, 2.8..., to 100 terms.</div>
+        <span class="step">a = 0.6, d = 1.1, n = 100</span>
+        <span class="step">S₁₀₀ = <span class="frac"><span class="frac-top">100</span><span
+                    class="frac-bottom">2</span></span>[2(0.6) + (100 - 1)1.1]</span>
+        <span class="step">S₁₀₀ = 50[1.2 + 99(1.1)]</span>
+        <span class="step">S₁₀₀ = 50[1.2 + 108.9]</span>
+        <span class="step">S₁₀₀ = 50(110.1)</span>
+        <span class="step">S₁₀₀ = 5505</span>
+        <span class="answer">Answer: 5505</span>
+
+        <div class="question">(iv) <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">15</span></span>, <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">12</span></span>, <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">10</span></span>..., to 11 terms.</div>
+        <span class="step">a = <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">15</span></span></span>
+        <span class="step">d = <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">12</span></span> - <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">15</span></span> = <span class="frac"><span class="frac-top">5 - 4</span><span
+                    class="frac-bottom">60</span></span> = <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">60</span></span></span>
+        <span class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span
+                    class="frac-bottom">2</span></span>[2(<span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">15</span></span>) + (11 - 1)<span class="frac"><span
+                    class="frac-top">1</span><span class="frac-bottom">60</span></span>]</span>
+        <span class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span
+                    class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">2</span><span
+                    class="frac-bottom">15</span></span> + <span class="frac"><span class="frac-top">10</span><span
+                    class="frac-bottom">60</span></span>]</span>
+        <span class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span
+                    class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">2</span><span
+                    class="frac-bottom">15</span></span> + <span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">6</span></span>]</span>
+        <span class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span
+                    class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">4 + 5</span><span
+                    class="frac-bottom">30</span></span>]</span>
+        <span class="step">S₁₁ = <span class="frac"><span class="frac-top">11</span><span
+                    class="frac-bottom">2</span></span>[<span class="frac"><span class="frac-top">9</span><span
+                    class="frac-bottom">30</span></span>] = <span class="frac"><span class="frac-top">33</span><span
+                    class="frac-bottom">20</span></span></span>
+        <span class="answer">Answer: <span class="frac"><span class="frac-top">33</span><span
+                    class="frac-bottom">20</span></span></span>
+
+        <!-- Question 2 -->
+        <div class="question">Q2. Find the sums given below:</div>
+
+        <div class="question">(i) 7 + 10<span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">2</span></span> + 14 + ... + 84</div>
+        <span class="step">a = 7, d = 3.5 = <span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">2</span></span>, aₙ = 84</span>
+        <span class="step">84 = 7 + (n - 1)<span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">2</span></span></span>
+        <span class="step">77 = (n - 1)<span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">2</span></span></span>
+        <span class="step">22 = n - 1 → n = 23</span>
+        <span class="step">S₂₃ = <span class="frac"><span class="frac-top">23</span><span
+                    class="frac-bottom">2</span></span>(7 + 84)</span>
+        <span class="step">S₂₃ = <span class="frac"><span class="frac-top">23</span><span
+                    class="frac-bottom">2</span></span>(91) = <span class="frac"><span class="frac-top">2093</span><span
+                    class="frac-bottom">2</span></span></span>
+        <span class="answer">Answer: 1046<span class="frac"><span class="frac-top">1</span><span
+                    class="frac-bottom">2</span></span></span>
+
+        <div class="question">(ii) 34 + 32 + 30 + ... + 10</div>
+        <span class="step">a = 34, d = -2, aₙ = 10</span>
+        <span class="step">10 = 34 + (n - 1)(-2)</span>
+        <span class="step">-24 = (n - 1)(-2)</span>
+        <span class="step">12 = n - 1 → n = 13</span>
+        <span class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>(34 + 10)</span>
+        <span class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>(44) = 13(22)</span>
+        <span class="step">S₁₃ = 286</span>
+        <span class="answer">Answer: 286</span>
+
+        <div class="question">(iii) -5 + (-8) + (-11) + ... + (-230)</div>
+        <span class="step">a = -5, d = -3, aₙ = -230</span>
+        <span class="step">-230 = -5 + (n - 1)(-3)</span>
+        <span class="step">-225 = (n - 1)(-3)</span>
+        <span class="step">75 = n - 1 → n = 76</span>
+        <span class="step">S₇₆ = <span class="frac"><span class="frac-top">76</span><span
+                    class="frac-bottom">2</span></span>(-5 - 230)</span>
+        <span class="step">S₇₆ = 38(-235)</span>
+        <span class="step">S₇₆ = -8930</span>
+        <span class="answer">Answer: -8930</span>
+
+        <!-- Question 3 -->
+        <div class="question">Q3. In an AP:</div>
+
+        <div class="question">(i) a = 5, d = 3, aₙ = 50. Find n and Sₙ.</div>
+        <span class="step">50 = 5 + (n - 1)3</span>
+        <span class="step">45 = (n - 1)3</span>
+        <span class="step">15 = n - 1 → n = 16</span>
+        <span class="step">S₁₆ = <span class="frac"><span class="frac-top">16</span><span
+                    class="frac-bottom">2</span></span>(5 + 50)</span>
+        <span class="step">S₁₆ = 8(55) = 440</span>
+        <span class="answer">Answer: n = 16, Sₙ = 440</span>
+
+        <div class="question">(ii) a = 7, a₁₃ = 35. Find d and S₁₃.</div>
+        <span class="step">a₁₃ = a + 12d = 35</span>
+        <span class="step">7 + 12d = 35</span>
+        <span class="step">12d = 28</span>
+        <span class="step">d = <span class="frac"><span class="frac-top">28</span><span
+                    class="frac-bottom">12</span></span> = <span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">3</span></span></span>
+        <span class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>(7 + 35)</span>
+        <span class="step">S₁₃ = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>(42) = 13(21) = 273</span>
+        <span class="answer">Answer: d = <span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">3</span></span>, S₁₃ = 273</span>
+
+        <div class="question">(iii) a₁₂ = 37, d = 3. Find a and S₁₂.</div>
+        <span class="step">a + 11d = 37</span>
+        <span class="step">a + 11(3) = 37</span>
+        <span class="step">a + 33 = 37 → a = 4</span>
+        <span class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span
+                    class="frac-bottom">2</span></span>(4 + 37)</span>
+        <span class="step">S₁₂ = 6(41) = 246</span>
+        <span class="answer">Answer: a = 4, S₁₂ = 246</span>
+
+        <div class="question">(iv) a₃ = 15, S₁₀ = 125. Find d and a₁₀.</div>
+        <span class="step">a + 2d = 15 ...(1)</span>
+        <span class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span
+                    class="frac-bottom">2</span></span>[2a + 9d] = 125</span>
+        <span class="step">5[2a + 9d] = 125</span>
+        <span class="step">2a + 9d = 25 ...(2)</span>
+        <span class="step">From (1), 2a + 4d = 30 ...(Multiply by 2)</span>
+        <span class="step">Subtracting: 5d = -5 → d = -1</span>
+        <span class="step">a = 15 - 2(-1) = 17</span>
+        <span class="step">a₁₀ = a + 9d = 17 + 9(-1) = 8</span>
+        <span class="answer">Answer: d = -1, a₁₀ = 8</span>
+
+        <div class="question">(v) d = 5, S₉ = 75. Find a and a₉.</div>
+        <span class="step">S₉ = <span class="frac"><span class="frac-top">9</span><span
+                    class="frac-bottom">2</span></span>[2a + 8(5)] = 75</span>
+        <span class="step"><span class="frac"><span class="frac-top">9</span><span
+                    class="frac-bottom">2</span></span>[2a + 40] = 75</span>
+        <span class="step">9(a + 20) = 75</span>
+        <span class="step">9a + 180 = 75</span>
+        <span class="step">9a = -105</span>
+        <span class="step">a = -<span class="frac"><span class="frac-top">35</span><span
+                    class="frac-bottom">3</span></span></span>
+        <span class="step">a₉ = a + 8d = -<span class="frac"><span class="frac-top">35</span><span
+                    class="frac-bottom">3</span></span> + 40</span>
+        <span class="step">a₉ = <span class="frac"><span class="frac-top">-35 + 120</span><span
+                    class="frac-bottom">3</span></span> = <span class="frac"><span class="frac-top">85</span><span
+                    class="frac-bottom">3</span></span></span>
+        <span class="answer">Answer: a = -<span class="frac"><span class="frac-top">35</span><span
+                    class="frac-bottom">3</span></span>, a₉ = <span class="frac"><span class="frac-top">85</span><span
+                    class="frac-bottom">3</span></span></span>
+
+        <div class="question">(vi) a = 2, d = 8, Sₙ = 90. Find n and aₙ.</div>
+        <span class="step">90 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>[2(2) + (n - 1)8]</span>
+        <span class="step">180 = n[4 + 8n - 8]</span>
+        <span class="step">180 = n[8n - 4]</span>
+        <span class="step">180 = 8n² - 4n</span>
+        <span class="step">2n² - n - 45 = 0</span>
+        <span class="step">2n² - 10n + 9n - 45 = 0</span>
+        <span class="step">2n(n - 5) + 9(n - 5) = 0</span>
+        <span class="step">(n - 5)(2n + 9) = 0</span>
+        <span class="step">n = 5</span>
+        <span class="step">a₅ = 2 + 4(8) = 34</span>
+        <span class="answer">Answer: n = 5, aₙ = 34</span>
+
+        <div class="question">(vii) a = 8, aₙ = 62, Sₙ = 210. Find n and d.</div>
+        <span class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(a + aₙ)</span>
+        <span class="step">210 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(8 + 62)</span>
+        <span class="step">210 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(70)</span>
+        <span class="step">210 = 35n → n = 6</span>
+        <span class="step">a₆ = a + 5d = 62</span>
+        <span class="step">8 + 5d = 62</span>
+        <span class="step">5d = 54 → d = <span class="frac"><span class="frac-top">54</span><span
+                    class="frac-bottom">5</span></span></span>
+        <span class="answer">Answer: n = 6, d = <span class="frac"><span class="frac-top">54</span><span
+                    class="frac-bottom">5</span></span></span>
+
+        <div class="question">(viii) aₙ = 4, d = 2, Sₙ = -14. Find n and a.</div>
+        <span class="step">a + (n - 1)2 = 4</span>
+        <span class="step">a + 2n - 2 = 4 → a = 6 - 2n ...(1)</span>
+        <span class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(a + aₙ) = -14</span>
+        <span class="step">n(a + 4) = -28</span>
+        <span class="step">Substitute (1): n(6 - 2n + 4) = -28</span>
+        <span class="step">n(10 - 2n) = -28</span>
+        <span class="step">10n - 2n² = -28</span>
+        <span class="step">2n² - 10n - 28 = 0</span>
+        <span class="step">n² - 5n - 14 = 0</span>
+        <span class="step">(n - 7)(n + 2) = 0</span>
+        <span class="step">n = 7</span>
+        <span class="step">a = 6 - 2(7) = -8</span>
+        <span class="answer">Answer: n = 7, a = -8</span>
+
+        <div class="question">(ix) a = 3, n = 8, S = 192. Find d.</div>
+        <span class="step">192 = <span class="frac"><span class="frac-top">8</span><span
+                    class="frac-bottom">2</span></span>[2(3) + 7d]</span>
+        <span class="step">192 = 4[6 + 7d]</span>
+        <span class="step">48 = 6 + 7d</span>
+        <span class="step">7d = 42 → d = 6</span>
+        <span class="answer">Answer: d = 6</span>
+
+        <div class="question">(x) l = 28, S = 144, n = 9. Find a.</div>
+        <span class="step">S = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(a + l)</span>
+        <span class="step">144 = <span class="frac"><span class="frac-top">9</span><span
+                    class="frac-bottom">2</span></span>(a + 28)</span>
+        <span class="step">32 = a + 28</span>
+        <span class="step">a = 4</span>
+        <span class="answer">Answer: a = 4</span>
+
+        <!-- Question 4 -->
+        <div class="question">Q4. How many terms of 9, 17, 25... needed to give sum 636?</div>
+        <span class="step">a = 9, d = 8, Sₙ = 636</span>
+        <span class="step">636 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>[18 + (n - 1)8]</span>
+        <span class="step">1272 = n[18 + 8n - 8]</span>
+        <span class="step">1272 = n[10 + 8n]</span>
+        <span class="step">8n² + 10n - 1272 = 0</span>
+        <span class="step">4n² + 5n - 636 = 0</span>
+        <span class="step">b² - 4ac = 25 - 4(4)(-636) = 25 + 10176 = 10201</span>
+        <span class="step">√D = 101</span>
+        <span class="step">n = <span class="frac"><span class="frac-top">-5 ± 101</span><span
+                    class="frac-bottom">8</span></span></span>
+        <span class="step">n = 12 (positive)</span>
+        <span class="answer">Answer: 12 terms</span>
+
+        <!-- Question 5 -->
+        <div class="question">Q5. First term 5, last 45, sum 400. Find n and d.</div>
+        <span class="step">a = 5, l = 45, S = 400</span>
+        <span class="step">400 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(5 + 45)</span>
+        <span class="step">800 = 50n → n = 16</span>
+        <span class="step">l = a + 15d = 45</span>
+        <span class="step">5 + 15d = 45</span>
+        <span class="step">15d = 40 → d = <span class="frac"><span class="frac-top">40</span><span
+                    class="frac-bottom">15</span></span> = <span class="frac"><span class="frac-top">8</span><span
+                    class="frac-bottom">3</span></span></span>
+        <span class="answer">Answer: n = 16, d = <span class="frac"><span class="frac-top">8</span><span
+                    class="frac-bottom">3</span></span></span>
+
+        <!-- Question 6 -->
+        <div class="question">Q6. First 17, last 350, d = 9. Find n and Sum.</div>
+        <span class="step">a = 17, l = aₙ = 350, d = 9</span>
+        <span class="step">350 = 17 + (n - 1)9</span>
+        <span class="step">333 = (n - 1)9</span>
+        <span class="step">37 = n - 1 → n = 38</span>
+        <span class="step">S = <span class="frac"><span class="frac-top">38</span><span
+                    class="frac-bottom">2</span></span>(17 + 350)</span>
+        <span class="step">S = 19(367)</span>
+        <span class="step">S = 6973</span>
+        <span class="answer">Answer: n = 38, Sum = 6973</span>
+
+        <!-- Question 7 -->
+        <div class="question">Q7. Find sum of first 22 terms if d = 7, 22nd term = 149.</div>
+        <span class="step">a₂₂ = a + 21d = 149</span>
+        <span class="step">a + 21(7) = 149</span>
+        <span class="step">a + 147 = 149 → a = 2</span>
+        <span class="step">S₂₂ = <span class="frac"><span class="frac-top">22</span><span
+                    class="frac-bottom">2</span></span>(2 + 149)</span>
+        <span class="step">S₂₂ = 11(151) = 1661</span>
+        <span class="answer">Answer: 1661</span>
+
+        <!-- Question 8 -->
+        <div class="question">Q8. Sum of first 51 terms if 2nd term 14, 3rd 18.</div>
+        <span class="step">d = a₃ - a₂ = 18 - 14 = 4</span>
+        <span class="step">a = a₂ - d = 14 - 4 = 10</span>
+        <span class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span
+                    class="frac-bottom">2</span></span>[2(10) + 50(4)]</span>
+        <span class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span
+                    class="frac-bottom">2</span></span>[20 + 200]</span>
+        <span class="step">S₅₁ = <span class="frac"><span class="frac-top">51</span><span
+                    class="frac-bottom">2</span></span>(220) = 51(110)</span>
+        <span class="step">S₅₁ = 5610</span>
+        <span class="answer">Answer: 5610</span>
+
+        <!-- Question 9 -->
+        <div class="question">Q9. Sum of 7 terms is 49, sum of 17 terms is 289. Find sum of n terms.</div>
+        <span class="step">S₇ = 49 → <span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">2</span></span>[2a+6d] = 49</span>
+        <span class="step">7(a+3d) = 49 → a + 3d = 7 ...(1)</span>
+        <span class="step">S₁₇ = 289 → <span class="frac"><span class="frac-top">17</span><span
+                    class="frac-bottom">2</span></span>[2a+16d] = 289</span>
+        <span class="step">17(a+8d) = 289 → a + 8d = 17 ...(2)</span>
+        <span class="step">Subtracting (1) from (2): 5d = 10 → d = 2</span>
+        <span class="step">a + 6 = 7 → a = 1</span>
+        <span class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>[2(1) + (n-1)2]</span>
+        <span class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>[2 + 2n - 2]</span>
+        <span class="step">Sₙ = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>(2n) = n²</span>
+        <span class="answer">Answer: n²</span>
+
+        <!-- Question 10 -->
+        <div class="question">Q10. Show a₁, a₂... form AP defined by aₙ. Find S₁₅.</div>
+
+        <div class="question">(i) aₙ = 3 + 4n</div>
+        <span class="step">a₁ = 7, a₂ = 11, a₃ = 15</span>
+        <span class="step">Diff = 4. It is an AP.</span>
+        <span class="step">a = 7, d = 4</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[2(7) + 14(4)]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[14 + 56]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>(70) = 525</span>
+        <span class="answer">Answer: 525</span>
+
+        <div class="question">(ii) aₙ = 9 - 5n</div>
+        <span class="step">a₁ = 4, a₂ = -1, a₃ = -6</span>
+        <span class="step">Diff = -5. It is an AP.</span>
+        <span class="step">a = 4, d = -5</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[2(4) + 14(-5)]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[8 - 70]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>(-62) = -465</span>
+        <span class="answer">Answer: -465</span>
+
+        <!-- Question 11 -->
+        <div class="question">Q11. Sum of first n terms is 4n - n². Find S₁, S₂, 2nd term, 3rd, 10th, nth terms.</div>
+        <span class="step">Sₙ = 4n - n²</span>
+        <span class="step">S₁ = 4(1) - 1² = 3 (First term a is S₁)</span>
+        <span class="step">S₂ = 4(2) - 2² = 8 - 4 = 4</span>
+        <span class="step">a₂ = S₂ - S₁ = 4 - 3 = 1</span>
+        <span class="step">a₃ = S₃ - S₂</span>
+        <span class="step">S₃ = 4(3) - 3² = 12 - 9 = 3</span>
+        <span class="step">a₃ = 3 - 4 = -1</span>
+        <span class="step">a₁₀ = S₁₀ - S₉</span>
+        <span class="step">S₁₀ = 40 - 100 = -60</span>
+        <span class="step">S₉ = 36 - 81 = -45</span>
+        <span class="step">a₁₀ = -60 - (-45) = -15</span>
+        <span class="step">aₙ = Sₙ - Sₙ₋₁</span>
+        <span class="step">aₙ = (4n - n²) - [4(n - 1) - (n - 1)²]</span>
+        <span class="step">aₙ = 4n - n² - [4n - 4 - (n² - 2n + 1)]</span>
+        <span class="step">aₙ = 4n - n² - 4n + 4 + n² - 2n + 1</span>
+        <span class="step">aₙ = 5 - 2n</span>
+        <span class="answer">Answer: S₁=3, S₂=4, a₂=1, a₃=-1, a₁₀=-15, aₙ=5-2n</span>
+
+        <!-- Question 12 -->
+        <div class="question">Q12. Sum of first 40 positive integers divisible by 6.</div>
+        <span class="step">AP: 6, 12, 18, ... (40 terms)</span>
+        <span class="step">a = 6, d = 6, n = 40</span>
+        <span class="step">S₄₀ = <span class="frac"><span class="frac-top">40</span><span
+                    class="frac-bottom">2</span></span>[2(6) + 39(6)]</span>
+        <span class="step">S₄₀ = 20[12 + 234]</span>
+        <span class="step">S₄₀ = 20(246)</span>
+        <span class="step">S₄₀ = 4920</span>
+        <span class="answer">Answer: 4920</span>
+
+        <!-- Question 13 -->
+        <div class="question">Q13. Sum of first 15 multiples of 8.</div>
+        <span class="step">AP: 8, 16, 24, ... (15 terms)</span>
+        <span class="step">a = 8, d = 8, n = 15</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[2(8) + 14(8)]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>[16 + 112]</span>
+        <span class="step">S₁₅ = <span class="frac"><span class="frac-top">15</span><span
+                    class="frac-bottom">2</span></span>(128)</span>
+        <span class="step">S₁₅ = 15(64)</span>
+        <span class="step">S₁₅ = 960</span>
+        <span class="answer">Answer: 960</span>
+
+        <!-- Question 14 -->
+        <div class="question">Q14. Sum of odd numbers between 0 and 50.</div>
+        <span class="step">Odd numbers: 1, 3, 5, ..., 49</span>
+        <span class="step">a = 1, l = 49, d = 2</span>
+        <span class="step">49 = 1 + (n - 1)2 → 48 = 2(n - 1) → 24 = n - 1 → n = 25</span>
+        <span class="step">S₂₅ = <span class="frac"><span class="frac-top">25</span><span
+                    class="frac-bottom">2</span></span>(1 + 49)</span>
+        <span class="step">S₂₅ = <span class="frac"><span class="frac-top">25</span><span
+                    class="frac-bottom">2</span></span>(50) = 25(25)</span>
+        <span class="step">S₂₅ = 625</span>
+        <span class="answer">Answer: 625</span>
+
+        <!-- Question 15 -->
+        <div class="question">Q15. Penalty for delay: ₹ 200, ₹ 250, ₹ 300... for 30 days.</div>
+        <span class="step">a = 200, d = 50, n = 30</span>
+        <span class="step">S₃₀ = <span class="frac"><span class="frac-top">30</span><span
+                    class="frac-bottom">2</span></span>[2(200) + 29(50)]</span>
+        <span class="step">S₃₀ = 15[400 + 1450]</span>
+        <span class="step">S₃₀ = 15(1850)</span>
+        <span class="step">S₃₀ = 27750</span>
+        <span class="answer">Answer: ₹ 27750</span>
+
+        <!-- Question 16 -->
+        <div class="question">Q16. Sum ₹ 700 for 7 prizes. Each prize ₹ 20 less than preceding. Find prizes.</div>
+        <span class="step">Let prizes be a, a-20, a-40...</span>
+        <span class="step">S₇ = 700, n = 7, d = -20</span>
+        <span class="step">700 = <span class="frac"><span class="frac-top">7</span><span
+                    class="frac-bottom">2</span></span>[2a + 6(-20)]</span>
+        <span class="step">200 = 2a - 120 (Divide by 3.5 is 200)</span>
+        <span class="step">Wait, 700/3.5 = 200. Yes. Or 700 = 7/2(...). 1400 = 7(...). 200 = 2a - 120.</span>
+        <span class="step">320 = 2a → a = 160</span>
+        <span class="step">Prizes: 160, 140, 120, 100, 80, 60, 40</span>
+        <span class="answer">Answer: ₹ 160, 140, 120, 100, 80, 60, 40</span>
+
+        <!-- Question 17 -->
+        <div class="question">Q17. Planting trees. Class I plants 1, Class II plants 2... Class XII plants 12. 3
+            sections each.</div>
+        <span class="step">Class I: 3 × 1 = 3</span>
+        <span class="step">Class II: 3 × 2 = 6</span>
+        <span class="step">... Class XII: 3 × 12 = 36</span>
+        <span class="step">AP: 3, 6, ..., 36 (12 terms)</span>
+        <span class="step">S₁₂ = <span class="frac"><span class="frac-top">12</span><span
+                    class="frac-bottom">2</span></span>(3 + 36)</span>
+        <span class="step">S₁₂ = 6(39)</span>
+        <span class="step">S₁₂ = 234</span>
+        <span class="answer">Answer: 234 trees</span>
+
+        <!-- Question 18 -->
+        <div class="question">Q18. Spiral of semicircles. Radii 0.5, 1.0, 1.5... Total length of 13 spirals?</div>
+        <img src="fig_5_4.png" class="diagram" alt="Spiral Diagram">
+        <span class="step">Perimeter of semicircle = πr</span>
+        <span class="step">l₁ = π(0.5), l₂ = π(1.0), l₃ = π(1.5)...</span>
+        <span class="step">Total Length L = π(0.5) + π(1.0) + ... (13 terms)</span>
+        <span class="step">L = π[0.5 + 1.0 + ... ]</span>
+        <span class="step">Inside bracket is AP: a = 0.5, d = 0.5, n = 13</span>
+        <span class="step">Sum = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>[2(0.5) + 12(0.5)]</span>
+        <span class="step">Sum = <span class="frac"><span class="frac-top">13</span><span
+                    class="frac-bottom">2</span></span>[1 + 6] = <span class="frac"><span
+                    class="frac-top">13</span><span class="frac-bottom">2</span></span>(7) = <span class="frac"><span
+                    class="frac-top">91</span><span class="frac-bottom">2</span></span></span>
+        <span class="step">Total L = π × <span class="frac"><span class="frac-top">91</span><span
+                    class="frac-bottom">2</span></span></span>
+        <span class="step">L = <span class="frac"><span class="frac-top">22</span><span
+                    class="frac-bottom">7</span></span> × <span class="frac"><span class="frac-top">91</span><span
+                    class="frac-bottom">2</span></span></span>
+        <span class="step">L = 11 × 13 = 143</span>
+        <span class="answer">Answer: 143 cm</span>
+
+        <!-- Question 19 -->
+        <div class="question">Q19. 200 logs stacked. 20 bottom, 19 next... How many rows? Top row logs?</div>
+        <img src="fig_5_5.png" class="diagram" alt="Logs Stack">
+        <span class="step">AP: 20, 19, 18... Sum = 200</span>
+        <span class="step">a = 20, d = -1, Sₙ = 200</span>
+        <span class="step">200 = <span class="frac"><span class="frac-top">n</span><span
+                    class="frac-bottom">2</span></span>[2(20) + (n - 1)(-1)]</span>
+        <span class="step">400 = n[40 - n + 1]</span>
+        <span class="step">400 = n[41 - n]</span>
+        <span class="step">n² - 41n + 400 = 0</span>
+        <span class="step">Factors of 400 summing to 41: 16 and 25</span>
+        <span class="step">(n - 16)(n - 25) = 0</span>
+        <span class="step">n = 16 or n = 25</span>
+        <span class="step">If n = 25: a₂₅ = 20 + 24(-1) = -4 (Negative logs impossible)</span>
+        <span class="step">So n = 16</span>
+        <span class="step">Top row (a₁₆) = 20 + 15(-1) = 5</span>
+        <span class="answer">Answer: 16 rows, 5 logs in top row</span>
+
+        <!-- Question 20 -->
+        <div class="question">Q20. Potato race. 5m first, then 3m apart. 10 potatoes. Total distance run?</div>
+        <img src="fig_5_6.png" class="diagram" alt="Potato Race">
+        <span class="step">Run to 1st: 2 × 5 = 10 m</span>
+        <span class="step">Run to 2nd: 2 × (5 + 3) = 16 m</span>
+        <span class="step">Run to 3rd: 2 × (5 + 6) = 22 m</span>
+        <span class="step">AP: 10, 16, 22... (10 terms)</span>
+        <span class="step">a = 10, d = 6, n = 10</span>
+        <span class="step">S₁₀ = <span class="frac"><span class="frac-top">10</span><span
+                    class="frac-bottom">2</span></span>[2(10) + 9(6)]</span>
+        <span class="step">S₁₀ = 5[20 + 54]</span>
+        <span class="step">S₁₀ = 5(74)</span>
+        <span class="step">S₁₀ = 370</span>
+        <span class="answer">Answer: 370 m</span>
+
+    </div>
+</body>
+
+</html>

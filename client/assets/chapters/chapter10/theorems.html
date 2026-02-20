@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles - Theorms</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 10: Theorems</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through
+            the point of contact.</div>
+        <img src="images/theorem_10_1.svg" alt="Theorem 10.1 Diagram">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O and a tangent XY at a
+            point P.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> OP is perpendicular to XY (OP ⊥ XY).</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Take a point Q on tangent XY, other
+            than P. Join OQ. Let OQ intersect the circle at point R.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">We have a point Q on tangent XY (other than contact point P).</div>
+        <div class="step">Therefore, point Q must lie <strong>outside</strong> the circle.</div>
+        <div class="step">(If Q was inside, XY would be a secant, not a tangent).</div>
+        <div class="step">Since Q is outside, the distance OQ is greater than the radius of the circle.</div>
+        <div class="step">So, length OQ > length OP (since OP is the radius).</div>
+        <div class="step">This is true for <strong>every</strong> point on line XY, except point P.</div>
+        <div class="step">It means OP is the <strong>shortest distance</strong> from center O to the line XY.</div>
+        <div class="step">We know that the shortest distance from a point to a line is the perpendicular distance.</div>
+        <div class="step">Therefore, OP ⊥ XY.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the tangent at any point of
+            a circle is perpendicular to the radius through the point of contact.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal.
+        </div>
+        <img src="images/theorem_10_2.svg" alt="Theorem 10.2 Diagram">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. An external point P.
+            Two tangents PQ and PR drawn from P to the circle.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Length PQ = Length PR.</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join center O to points P, Q, and R.
+        </div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">PQ is a tangent at Q and OQ is the radius.</div>
+        <div class="step">According to <strong style="color: #D32F2F;">Theorem 10.1 (Radius is perpendicular to
+                tangent)</strong>:</div>
+        <div class="step">\(\angle OQP = 90^\circ\).</div>
+        <div class="step">Similarly, PR is a tangent at R and OR is the radius.</div>
+        <div class="step">So, \(\angle ORP = 90^\circ\).</div>
+        <div class="step">Now, consider the right-angled triangles \(\triangle OQP\) and \(\triangle ORP\).</div>
+        <div class="step">\(OQ = OR\) (Radii of the same circle are equal).</div>
+        <div class="step">\(OP = OP\) (Common hypotenuse side).</div>
+        <div class="step">By <strong style="color: #D32F2F;">RHS Congruence Rule</strong> (Right angle - Hypotenuse -
+            Side):</div>
+        <div class="step">\(\triangle OQP \cong \triangle ORP\).</div>
+        <div class="step">Since the triangles are congruent, their corresponding parts are equal (CPCT).</div>
+        <div class="step">Therefore, \(PQ = PR\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+
+</body>
+
+</html>

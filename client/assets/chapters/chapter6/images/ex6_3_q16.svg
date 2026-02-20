@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Triangle ABC (Smaller) -->
+  <!-- A(100, 120) -->
+  <!-- B(50, 300) -->
+  <!-- C(170, 300) -->
+  <!-- D(110, 300) -->
+  <path d="M100 120 L50 300 L170 300 Z" class="line" />
+  
+  <!-- Median AD -->
+  <line x1="100" y1="120" x2="110" y2="300" class="inner-line" />
+
+  <!-- Labels ABC -->
+  <text x="90" y="110" class="text">A</text>
+  <text x="35" y="315" class="text">B</text>
+  <text x="180" y="315" class="text">C</text>
+  <text x="105" y="320" class="text">D</text>
+
+
+  <!-- Triangle PQR (Larger) -->
+  <!-- P(325, 30) -->
+  <!-- Q(250, 300) -->
+  <!-- R(430, 300) -->
+  <!-- M(340, 300) -->
+  <path d="M325 30 L250 300 L430 300 Z" class="line" />
+  
+  <!-- Median PM -->
+  <line x1="325" y1="30" x2="340" y2="300" class="inner-line" />
+
+  <!-- Labels PQR -->
+  <text x="315" y="20" class="text">P</text>
+  <text x="230" y="315" class="text">Q</text>
+  <text x="440" y="315" class="text">R</text>
+  <text x="335" y="320" class="text">M</text>
+
+</svg>

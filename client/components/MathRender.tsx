@@ -58,7 +58,7 @@ const KatexRenderer = ({ tnode, style }: CustomRendererProps<TBlock>) => {
     // <katex inline="true">formula</katex>
 
     // extract text content
-    const formula = tnode.domNode?.children?.[0]?.data || "";
+    const formula = (tnode.domNode?.children?.[0] as any)?.data || "";
     // Wait, domNode might not be available directly in all versions, checking tnode props.
     // tnode.data is invalid. tnode.children[0].data.
 

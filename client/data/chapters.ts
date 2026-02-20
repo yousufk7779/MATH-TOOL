@@ -19,11 +19,10 @@ export const class10Chapters: Chapter[] = [
   { id: "ch9", number: 9, name: "Some Applications of Trigonometry", color: "#0091EA" }, // Light Blue
   { id: "ch10", number: 10, name: "Circles", color: "#FFD600" }, // Yellow
 
-  // Placeholders for future chapters if needed
-  // { id: "ch12", number: 11, name: "Areas Related to Circles", color: "#304FFE" },
-  // { id: "ch13", number: 12, name: "Surface Areas and Volumes", color: "#00BFA5" },
-  // { id: "ch14", number: 13, name: "Statistics", color: "#E040FB" },
-  // { id: "ch15", number: 14, name: "Probability", color: "#64DD17" },
+  { id: "ch11", number: 11, name: "Areas Related to Circles", color: "#304FFE" },
+  { id: "ch12", number: 12, name: "Surface Areas and Volumes", color: "#00BFA5" },
+  { id: "ch13", number: 13, name: "Statistics", color: "#E040FB" },
+  { id: "ch14", number: 14, name: "Probability", color: "#64DD17" },
 ];
 
 export function getChapter(chapterId: string): Chapter | undefined {

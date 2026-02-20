@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Areas and Volumes - Exercise 12.2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 12: Exercise 12.2</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">1. A solid is in the shape of a cone standing on a hemisphere with both their radii being
+            equal to 1 cm and the height of the cone is equal to its radius. Find the volume of the solid in terms of π.
+        </div>
+        <img src="ex12_2_q1.svg" alt="Solid Cone on Hemisphere">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 1 cm. Height of cone h = r = 1 cm.</div>
+        <div class="step">Volume = Volume of Cone + Volume of Hemisphere.</div>
+        <div class="step">= (1/3)πr²h + (2/3)πr³</div>
+        <div class="step">= (1/3)π(1) + (2/3)π(1)</div>
+        <div class="step">= π cm³.</div>
+        <div class="final-answer">Volume = π cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Rachel, an engineering student, was asked to make a model shaped like a cylinder with
+            two cones attached at its two ends. The diameter of the model is 3 cm and its length is 12 cm. If each cone
+            has a height of 2 cm, find the volume of air contained in the model that Rachel made.</div>
+        <img src="ex12_2_q2.svg" alt="Model Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter = 3 cm => Radius r = 1.5 cm.</div>
+        <div class="step">Total length = 12 cm. Height of each cone h_c = 2 cm.</div>
+        <div class="step">Height of cylinder h_cyl = 12 - 2 - 2 = 8 cm.</div>
+        <div class="step">Volume = Volume Cylinder + 2 × Volume Cone.</div>
+        <div class="step">= πr²h_cyl + 2(1/3)πr²h_c</div>
+        <div class="step">= πr²(h_cyl + (2/3)h_c)</div>
+        <div class="step">= (22/7) × 1.5 × 1.5 × (8 + 4/3)</div>
+        <div class="step">= (22/7) × 2.25 × (28/3)</div>
+        <div class="step">= 22 × 0.75 × 4</div>
+        <div class="step">= 22 × 3 = 66 cm³.</div>
+        <div class="final-answer">Volume = 66 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A gulab jamun, contains sugar syrup up to about 30% of its volume. Find approximately
+            how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends
+            with length 5 cm and diameter 2.8 cm (see Fig.).</div>
+        <img src="ex12_2_q3.svg" alt="Gulab Jamun">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter 2.8 cm => Radius r = 1.4 cm.</div>
+        <div class="step">Total length = 5 cm. Cylinder length h = 5 - 1.4 - 1.4 = 2.2 cm.</div>
+        <div class="step">Volume of one Gulab Jamun = Vol Cyl + 2 × Vol Hemi.</div>
+        <div class="step">= πr²h + (4/3)πr³</div>
+        <div class="step">= πr²(h + 4r/3)</div>
+        <div class="step">= (22/7) × 1.4 × 1.4 × (2.2 + 5.6/3)</div>
+        <div class="step">= 6.16 × (2.2 + 1.866) = 6.16 × 4.066 ≈ 25.05 cm³.</div>
+        <div class="step">Volume of 45 Gulab Jamuns = 45 × 25.05 = 1127.25 cm³.</div>
+        <div class="step">Syrup = 30% of Volume = 0.30 × 1127.25 ≈ 338 cm³.</div>
+        <div class="final-answer">Syrup Volume ≈ 338 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. A pen stand made of wood is in the shape of a cuboid with four conical depressions to
+            hold pens. The dimensions of the cuboid are 15 cm by 10 cm by 3.5 cm. The radius of each of the depressions
+            is 0.5 cm and the depth is 1.4 cm. Find the volume of wood in the entire stand.</div>
+        <img src="ex12_2_q4.svg" alt="Pen Stand">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Volume of Cuboid = 15 × 10 × 3.5 = 525 cm³.</div>
+        <div class="step">Volume of one Conical Depression = (1/3)πr²h.</div>
+        <div class="step">r = 0.5 cm, h = 1.4 cm.</div>
+        <div class="step">Vol = (1/3) × (22/7) × 0.25 × 1.4 = (1/3) × 22 × 0.25 × 0.2 = 1.1/3 = 0.366 cm³.</div>
+        <div class="step">Volume of 4 Depressions = 4 × 0.366 = 1.464 cm³.</div>
+        <div class="step">Volume of Wood = 525 - 1.464 = 523.536 cm³.</div>
+        <div class="final-answer">Volume of Wood ≈ 523.53 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. A vessel is in the form of an inverted cone. Its height is 8 cm and the radius of its
+            top, which is open, is 5 cm. It is filled with water up to the brim. When lead shots, each of which is a
+            sphere of radius 0.5 cm are dropped into the vessel, one-fourth of the water flows out. Find the number of
+            lead shots dropped in the vessel.</div>
+        <img src="ex12_2_q5.svg" alt="Lead Shots Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Volume of Cone = (1/3)πr²h = (1/3)π(25)(8) = 200π/3 cm³.</div>
+        <div class="step">Volume of water flowed out = (1/4) × (200π/3) = 50π/3 cm³.</div>
+        <div class="step">Volume of one lead shot (Sphere) = (4/3)πr³ = (4/3)π(0.5)³ = (4/3)π(0.125) = 0.5π/3 = π/6 cm³.
+        </div>
+        <div class="step">Number of shots = (Total Val Flowed) / (Vol of one shot).</div>
+        <div class="step">= (50π/3) / (π/6) = (50/3) × 6 = 100.</div>
+        <div class="final-answer">Number of Lead Shots = 100.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm,
+            which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given
+            that 1 cm³ of iron has approximately 8g mass. (Use π = 3.14)</div>
+        <img src="ex12_2_q6.svg" alt="Iron Pole Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Big Cylinder: h1 = 220, r1 = 12. small Cylinder: h2 = 60, r2 = 8.</div>
+        <div class="step">Volume = πr₁²h₁ + πr₂²h₂</div>
+        <div class="step">= 3.14 × (144 × 220 + 64 × 60)</div>
+        <div class="step">= 3.14 × (31680 + 3840)</div>
+        <div class="step">= 3.14 × 35520 = 111532.8 cm³.</div>
+        <div class="step">Mass = 111532.8 × 8 g = 892262.4 g = 892.26 kg.</div>
+        <div class="final-answer">Mass = 892.26 kg.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. A solid consisting of a right circular cone of height 120 cm and radius 60 cm standing
+            on a hemisphere of radius 60 cm is placed upright in a right circular cylinder full of water such that it
+            touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is 60 cm
+            and its height is 180 cm.</div>
+        <img src="ex12_2_q7.svg" alt="Solid in Water">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 60 cm (all same).</div>
+        <div class="step">Cylinder height H = 180 cm. Cone height h = 120 cm. Hemisphere height = 60 cm.</div>
+        <div class="step">Total height of solid = 120 + 60 = 180 cm = H. Matches.</div>
+        <div class="step">Volume of Water Left = Vol Cylinder - Vol Solid.</div>
+        <div class="step">= πr²H - [(1/3)πr²h + (2/3)πr³]</div>
+        <div class="step">= πr² [H - h/3 - 2r/3]</div>
+        <div class="step">= (22/7) × 3600 × [180 - 40 - 40]</div>
+        <div class="step">= (22/7) × 3600 × 100</div>
+        <div class="step">= 1.131 m³.</div>
+        <div class="final-answer">Volume of Water Left ≈ 1.131 m³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A spherical glass vessel has a cylindrical neck 8 cm long, 2 cm in diameter; the
+            diameter of the spherical part is 8.5 cm. By measuring the amount of water it holds, a child finds its
+            volume to be 345 cm³. Check whether she is correct, taking the above as the inside measurements, and π =
+            3.14.</div>
+        <img src="ex12_2_q8.svg" alt="Glass Vessel">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Sphere d = 8.5 => r = 4.25. Cylinder r = 1, h = 8.</div>
+        <div class="step">Volume = Volume Sphere + Volume Cylinder.</div>
+        <div class="step">= (4/3)π(4.25)³ + π(1)²(8)</div>
+        <div class="step">= 3.14 [(4/3)(76.765) + 8]</div>
+        <div class="step">= 3.14 [102.35 + 8]</div>
+        <div class="step">= 3.14 × 110.35 ≈ 346.51 cm³.</div>
+        <div class="step">346.51 ≠ 345.</div>
+        <div class="final-answer">She is incorrect. Correct volume ≈ 346.51 cm³.</div>
+    </div>
+
+</body>
+
+</html>

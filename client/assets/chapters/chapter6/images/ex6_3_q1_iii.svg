@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 250" width="500" height="250">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .label { font-size: 20px; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Triangle LMP -->
+  <!-- Scaled by 40: LM=2.7->108, MP=2->80, LP=3->120 -->
+  <!-- Coords: M(50, 200), P(130, 200) -->
+  <!-- L approx (73, 95) -->
+  <path d="M73 95 L50 200 L130 200 Z" class="line" />
+
+  <!-- Labels LMP -->
+  <text x="70" y="85" class="text label">L</text>
+  <text x="35" y="215" class="text label">M</text>
+  <text x="140" y="215" class="text label">P</text>
+
+  <!-- Sides LMP -->
+  <text x="30" y="150" class="text">2.7</text>
+  <text x="80" y="220" class="text">2</text>
+  <text x="110" y="140" class="text">3</text>
+
+  <!-- Triangle DEF -->
+  <!-- Scaled by 40: DE=4->160, EF=5->200, DF=6->240 -->
+  <!-- Coords: E(250, 200), F(450, 200) -->
+  <!-- D approx (270, 41) -->
+  <path d="M270 41 L250 200 L450 200 Z" class="line" />
+
+  <!-- Labels DEF -->
+  <text x="265" y="30" class="text label">D</text>
+  <text x="235" y="215" class="text label">E</text>
+  <text x="460" y="215" class="text label">F</text>
+
+  <!-- Sides DEF -->
+  <text x="230" y="130" class="text">4</text>
+  <text x="340" y="220" class="text">5</text>
+  <text x="370" y="110" class="text">6</text>
+
+</svg>
