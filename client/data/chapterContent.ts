@@ -27,6 +27,13 @@ import { sstHis2 } from "./content/sst-his-2";
 import { sstHis3 } from "./content/sst-his-3";
 import { sstHis4 } from "./content/sst-his-4";
 import { sstHis5 } from "./content/sst-his-5";
+import { sstGeo1 } from "./content/sst-geo-1";
+import { sstGeo2 } from "./content/sst-geo-2";
+import { sstGeo3 } from "./content/sst-geo-3";
+import { sstGeo4 } from "./content/sst-geo-4";
+import { sstGeo5 } from "./content/sst-geo-5";
+import { sstGeo6 } from "./content/sst-geo-6";
+import { sstGeo7 } from "./content/sst-geo-7";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "sci-phy-1": sciPhy1,
@@ -47,6 +54,13 @@ export const chapterContents: Record<string, ChapterContent> = {
   "sst-his-3": sstHis3,
   "sst-his-4": sstHis4,
   "sst-his-5": sstHis5,
+  "sst-geo-1": sstGeo1,
+  "sst-geo-2": sstGeo2,
+  "sst-geo-3": sstGeo3,
+  "sst-geo-4": sstGeo4,
+  "sst-geo-5": sstGeo5,
+  "sst-geo-6": sstGeo6,
+  "sst-geo-7": sstGeo7,
 };
 
 export const isChapterAvailable = (chapterId: string): boolean => {
