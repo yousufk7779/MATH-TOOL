@@ -10,7 +10,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
-import { class10Chapters, Chapter } from "@/data/chapters";
+import { class10Chapters, Chapter, otherSubjectsData } from "@/data/chapters";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -23,8 +23,12 @@ function ChapterListScreen() {
   const subject = route.params?.subject || "Mathematics";
   const topic = route.params?.topic || "";
 
-  // Only show Mathematics chapters right now
-  const displayChapters = subject === "Mathematics" ? class10Chapters : [];
+  let displayChapters: Chapter[] = [];
+  if (subject === "Mathematics") {
+    displayChapters = class10Chapters;
+  } else if (subject && topic && otherSubjectsData[subject] && otherSubjectsData[subject][topic]) {
+    displayChapters = otherSubjectsData[subject][topic];
+  }
 
   const renderItem = useCallback(({ item }: { item: Chapter }) => {
     // Assuming all chapters in the list are available if they are in the registry/list.
@@ -66,7 +70,7 @@ function ChapterListScreen() {
         keyExtractor={(item) => item.id}
         contentContainerStyle={[
           styles.listContent,
-          class10Chapters.length === 0 ? styles.emptyContent : null,
+          displayChapters.length === 0 ? styles.emptyContent : null,
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
