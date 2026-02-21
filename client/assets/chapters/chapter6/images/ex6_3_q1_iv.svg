@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="600" height="320">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .label { font-size: 20px; font-weight: bold; }
+      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Triangle MNL -->
+  <!-- M(100, 100), N(79, 159), L(196, 180) approximately based on calc -->
+  <!-- MN = 2.5*25 = 62.5 -->
+  <!-- ML = 5*25 = 125 -->
+  <!-- Angle M = 70 -->
+  <path d="M100 100 L79 159 L196 180 Z" class="line" />
+
+  <!-- Labels MNL -->
+  <text x="95" y="90" class="text label">M</text>
+  <text x="60" y="170" class="text label">N</text>
+  <text x="205" y="190" class="text label">L</text>
+
+  <!-- Side Values MNL -->
+  <text x="55" y="135" class="text">2.5</text>
+  <text x="160" y="135" class="text">5</text>
+  <text x="95" y="145" class="text">70°</text>
+
+  <!-- Arc M -->
+  <!-- Start angle 110, end angle 40. Center (100,100) -->
+  <path d="M106 118 A 20 20 0 0 0 115 110" class="angle-arc" transform="rotate(0 100 100)" /> 
+  <!-- Manual arc path approximation for 70 deg between vectors -->
+  <!-- Vector MN is approx 110 deg. Vector ML is approx 40 deg. -->
+  <path d="M93 118 A 20 20 0 0 0 115 112" class="angle-arc" fill="none" />
+
+
+  <!-- Triangle PQR -->
+  <!-- Q(300, 280), R(550, 280) -->
+  <!-- PQ = 5*25 = 125. Angle Q = 70. -->
+  <!-- P(343, 163) -->
+  <path d="M343 163 L300 280 L550 280 Z" class="line" />
+
+  <!-- Labels PQR -->
+  <text x="335" y="150" class="text label">P</text>
+  <text x="280" y="295" class="text label">Q</text>
+  <text x="560" y="295" class="text label">R</text>
+
+  <!-- Side Values PQR -->
+  <text x="295" y="220" class="text">5</text>
+  <text x="420" y="300" class="text">10</text>
+  <text x="315" y="270" class="text">70°</text>
+
+  <!-- Arc Q -->
+  <path d="M318 280 A 25 25 0 0 0 308 258" class="angle-arc" />
+
+</svg>

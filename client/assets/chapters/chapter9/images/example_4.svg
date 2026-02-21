@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <line x1="20" y1="300" x2="300" y2="300" stroke="#7B1FA2" stroke-width="2"/>
+
+  <!-- Building AB. A(223, 300). B(223, 200). -->
+  <line x1="223" y1="300" x2="223" y2="200" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="230" y="300" font-family="Arial" font-size="18" font-weight="bold">A</text>
+  <text x="230" y="200" font-family="Arial" font-size="18" font-weight="bold">B</text>
+  <text x="235" y="250" font-family="Arial" font-size="16" fill="#333">10 m</text>
+
+  <!-- Flagstaff BD. D(223, 127). -->
+  <line x1="223" y1="200" x2="223" y2="127" stroke="#9C27B0" stroke-width="2"/>
+  <text x="230" y="125" font-family="Arial" font-size="18" font-weight="bold">D</text>
+  <text x="235" y="160" font-family="Arial" font-size="20" fill="#333" font-weight="bold">?</text>
+
+  <!-- Point P(50, 300) -->
+  <circle cx="50" cy="300" r="3" fill="#333"/>
+  <text x="40" y="320" font-family="Arial" font-size="18" font-weight="bold">P</text>
+
+  <!-- Sight Lines -->
+  <line x1="50" y1="300" x2="223" y2="200" stroke="#7B1FA2" stroke-width="2"/> <!-- To B -->
+  <line x1="50" y1="300" x2="223" y2="127" stroke="#7B1FA2" stroke-width="2"/> <!-- To D -->
+
+  <!-- Angle 30 to B. dx 173 dy -100. Unit(0.86, -0.5). End (101, 270) -->
+  <path d="M 110 300 A 60 60 0 0 0 101 270" fill="none" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="120" y="290" font-family="Arial" font-size="16" fill="#333">30°</text>
+
+  <!-- Angle 45 to D. dx 173 dy -173. Unit(0.707, -0.707). End (78, 272) -->
+  <path d="M 90 300 A 40 40 0 0 0 78 272" fill="none" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="70" y="270" font-family="Arial" font-size="16" fill="#333">45°</text>
+
+</svg>

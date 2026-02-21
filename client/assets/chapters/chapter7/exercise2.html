@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate Geometry - Exercise 7.2</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">1. Find the coordinates of the point which divides the join of (-1, 7) and (4, -3) in the
+            ratio 2 : 3.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTQwIiB5MT0iMzAiIHgyPSIxOTAiIHkyPSIxMzAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjMwIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxNDAiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KC0xLDcpPC90ZXh0PjxjaXJjbGUgY3g9IjE5MCIgY3k9IjEzMCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTkwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4oNCwtMyk8L3RleHQ+PGNpcmNsZSBjeD0iMTYwIiBjeT0iNzAiIHI9IjMiIGZpbGw9ImJsdWUiLz48dGV4dCB4PSIxNjAiIHk9IjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsdWUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlAoMSwzKTwvdGV4dD48L3N2Zz4=" alt="Section Point">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(P(x, y)\) divide AB in 2:3. \(A(-1, 7)\), \(B(4, -3)\).</div>
+        <div class="step">Coordinates \(x = \frac{m_1x_2 + m_2x_1}{m_1 + m_2} = \frac{2(4) + 3(-1)}{2 + 3}\)</div>
+        <div class="step">\(x = \frac{8 - 3}{5} = \frac{5}{5} = 1\)</div>
+        <div class="step">\(y = \frac{m_1y_2 + m_2y_1}{m_1 + m_2} = \frac{2(-3) + 3(7)}{2 + 3}\)</div>
+        <div class="step">\(y = \frac{-6 + 21}{5} = \frac{15}{5} = 3\)</div>
+        <div class="final-answer">Point P is (1, 3).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Find the coordinates of the points of trisection of the line segment joining (4, -1)
+            and (-2, -3).</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTkwIiB5MT0iMTEwIiB4Mj0iMTMwIiB5Mj0iMTMwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48Y2lyY2xlIGN4PSIxOTAiIGN5PSIxMTAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjE5MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48Y2lyY2xlIGN4PSIxMzAiIGN5PSIxMzAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjEzMCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjwvdGV4dD48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxMTYuNiIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTcwIiB5PSIxMDYuNiIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlA8L3RleHQ+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTIzLjMiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjE1MCIgeT0iMTEzLjMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5RPC90ZXh0Pjwvc3ZnPg==" alt="Trisection Points">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let A(4, -1) and B(-2, -3). Points P, Q trisect AB.</div>
+        <div class="step">P divides AB in 1:2.</div>
+        <div class="step">\(x_P = \frac{1(-2) + 2(4)}{3} = \frac{-2 + 8}{3} = 2\)</div>
+        <div class="step">\(y_P = \frac{1(-3) + 2(-1)}{3} = \frac{-3 - 2}{3} = -\frac{5}{3}\)</div>
+        <div class="step">Q divides AB in 2:1.</div>
+        <div class="step">\(x_Q = \frac{2(-2) + 1(4)}{3} = \frac{-4 + 4}{3} = 0\)</div>
+        <div class="step">\(y_Q = \frac{2(-3) + 1(-1)}{3} = \frac{-6 - 1}{3} = -\frac{7}{3}\)</div>
+        <div class="final-answer">P(2, -\(\frac{5}{3}\)), Q(0, -\(\frac{7}{3}\)).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. To conduct Sports Day activities, in your rectangular shaped school ground ABCD, lines
+            have been drawn with chalk powder at a distance of 1m each. 100 flower pots have been placed at a distance
+            of 1m from each other along AD, as shown in Fig. 7.12. Niharika runs \(\frac{1}{4th}\) the distance AD on the 2nd line
+            and posts a green flag. Preet runs \(\frac{1}{5th}\) the distance AD on the eighth line and posts a red flag. What is
+            the distance between both the flags? If Rashmi has to post a blue flag exactly halfway between the line
+            segment joining the two flags, where should she post her flag?</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5heGlzIHsgc3Ryb2tlOiAjMzMzOyBzdHJva2Utd2lkdGg6IDI7IH0NCiAgICAgICAgLmdyaWQtbGluZSB7IHN0cm9rZTogI2NjYzsgc3Ryb2tlLXdpZHRoOiAxOyB9DQogICAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IGZpbGw6ICMzMzM7IH0NCiAgICAgICAgLmZsYWctcG9sZSB7IHN0cm9rZTogIzU1NTsgc3Ryb2tlLXdpZHRoOiAyOyB9DQogICAgICAgIC5ncmVlbi1mbGFnIHsgZmlsbDogIzRDQUY1MDsgc3Ryb2tlOiBub25lOyB9DQogICAgICAgIC5yZWQtZmxhZyB7IGZpbGw6ICNGNDQzMzY7IHN0cm9rZTogbm9uZTsgfQ0KICAgICAgICAuYmx1ZS1mbGFnIHsgZmlsbDogIzIxOTZGMzsgc3Ryb2tlOiBub25lOyB9DQogICAgICAgIC5mbGFnLXBhdGggeyBmaWxsLW9wYWNpdHk6IDAuODsgfQ0KICAgIDwvc3R5bGU+DQoNCiAgICA8IS0tIERlZmluaXRpb25zIGZvciBBeGVzIC0tPg0KICAgIDwhLS0gWCBheGlzOiAwIHRvIDEwLiBNYXBwZWQgdG8gMzAgdG8gMzMwICgzMHB4IHBlciB1bml0KSAtLT4NCiAgICA8IS0tIFkgYXhpczogMCB0byAxMDAuIE1hcHBlZCB0byAzMjAgdG8gMjAgKDNweCBwZXIgdW5pdCkgLS0+DQogICAgDQogICAgPCEtLSBHcmlkIGFuZCBMaW5lcyAoVmVydGljYWwgbGluZXMgZm9yIHJ1bm5lcnMpIC0tPg0KICAgIDxsaW5lIHgxPSIzMCIgeTE9IjMyMCIgeDI9IjMzMCIgeTI9IjMyMCIgY2xhc3M9ImF4aXMiIC8+IDwhLS0gWC1heGlzIC0tPg0KICAgIDxsaW5lIHgxPSIzMCIgeTE9IjMyMCIgeDI9IjMwIiB5Mj0iMjAiIGNsYXNzPSJheGlzIiAvPiAgPCEtLSBZLWF4aXMgLS0+DQogICAgDQogICAgPCEtLSBWZXJ0aWNhbCBMaW5lcyAxIHRvIDEwIC0tPg0KICAgIDxsaW5lIHgxPSI2MCIgeTE9IjMyMCIgeDI9IjYwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gMSAtLT4NCiAgICA8bGluZSB4MT0iOTAiIHkxPSIzMjAiIHgyPSI5MCIgeTI9IjIwIiBjbGFzcz0iZ3JpZC1saW5lIiAvPiA8IS0tIDIgKE5paGFyaWthKSAtLT4NCiAgICA8bGluZSB4MT0iMTIwIiB5MT0iMzIwIiB4Mj0iMTIwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gMyAtLT4NCiAgICA8bGluZSB4MT0iMTUwIiB5MT0iMzIwIiB4Mj0iMTUwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gNCAtLT4NCiAgICA8bGluZSB4MT0iMTgwIiB5MT0iMzIwIiB4Mj0iMTgwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gNSAoUmFzaG1pKSAtLT4NCiAgICA8bGluZSB4MT0iMjEwIiB5MT0iMzIwIiB4Mj0iMjEwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gNiAtLT4NCiAgICA8bGluZSB4MT0iMjQwIiB5MT0iMzIwIiB4Mj0iMjQwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gNyAtLT4NCiAgICA8bGluZSB4MT0iMjcwIiB5MT0iMzIwIiB4Mj0iMjcwIiB5Mj0iMjAiIGNsYXNzPSJncmlkLWxpbmUiIC8+IDwhLS0gOCAoUHJlZXQpIC0tPg0KICAgIDxsaW5lIHgxPSIzMDAiIHkxPSIzMjAiIHgyPSIzMDAiIHkyPSIyMCIgY2xhc3M9ImdyaWQtbGluZSIgLz4gPCEtLSA5IC0tPg0KICAgIDxsaW5lIHgxPSIzMzAiIHkxPSIzMjAiIHgyPSIzMzAiIHkyPSIyMCIgY2xhc3M9ImdyaWQtbGluZSIgLz4gPCEtLSAxMCAtLT4NCg0KICAgIDwhLS0gQ29vcmRpbmF0ZSBNYXBwaW5nIC0tPg0KICAgIDwhLS0gRygyLCAyNSk6IHg9OTAsIHk9MzIwIC0gKDI1KjMpID0gMzIwIC0gNzUgPSAyNDUgLS0+DQogICAgPCEtLSBSKDgsIDIwKTogeD0yNzAsIHk9MzIwIC0gKDIwKjMpID0gMzIwIC0gNjAgPSAyNjAgLS0+DQogICAgPCEtLSBCKDUsIDIyLjUpOiB4PTE4MCwgeT0zMjAgLSAoMjIuNSozKSA9IDMyMCAtIDY3LjUgPSAyNTIuNSAtLT4NCiAgICANCiAgICA8IS0tIENvbm5lY3QgRyBhbmQgUiAtLT4NCiAgICA8bGluZSB4MT0iOTAiIHkxPSIyNDUiIHgyPSIyNzAiIHkyPSIyNjAiIHN0cm9rZT0iIzk5OSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgICA8IS0tIEdyZWVuIEZsYWcgYXQgRyAtLT4NCiAgICA8bGluZSB4MT0iOTAiIHkxPSIzMjAiIHgyPSI5MCIgeTI9IjI0NSIgY2xhc3M9ImZsYWctcG9sZSIgLz4NCiAgICA8cGF0aCBkPSJNIDkwLDI0NSBMIDExMCwyMzUgTCA5MCwyMjUgWiIgY2xhc3M9ImdyZWVuLWZsYWcgZmxhZy1wYXRoIiAvPg0KICAgIDx0ZXh0IHg9Ijc1IiB5PSIyNDAiIGNsYXNzPSJ0ZXh0Ij5HKDIsIDI1KTwvdGV4dD4NCg0KICAgIDwhLS0gUmVkIEZsYWcgYXQgUiAtLT4NCiAgICA8bGluZSB4MT0iMjcwIiB5MT0iMzIwIiB4Mj0iMjcwIiB5Mj0iMjYwIiBjbGFzcz0iZmxhZy1wb2xlIiAvPg0KICAgIDxwYXRoIGQ9Ik0gMjcwLDI2MCBMIDI5MCwyNTAgTCAyNzAsMjQwIFoiIGNsYXNzPSJyZWQtZmxhZyBmbGFnLXBhdGgiIC8+DQogICAgPHRleHQgeD0iMjc1IiB5PSIyNzUiIGNsYXNzPSJ0ZXh0Ij5SKDgsIDIwKTwvdGV4dD4NCg0KICAgIDwhLS0gQmx1ZSBGbGFnIGF0IEIgLS0+DQogICAgPGxpbmUgeDE9IjE4MCIgeTE9IjMyMCIgeDI9IjE4MCIgeTI9IjI1Mi41IiBjbGFzcz0iZmxhZy1wb2xlIiAvPg0KICAgIDxwYXRoIGQ9Ik0gMTgwLDI1Mi41IEwgMjAwLDI0Mi41IEwgMTgwLDIzMi41IFoiIGNsYXNzPSJibHVlLWZsYWcgZmxhZy1wYXRoIiAvPg0KICAgIDx0ZXh0IHg9IjE4NSIgeT0iMjMwIiBjbGFzcz0idGV4dCI+Qig1LCAyMi41KTwvdGV4dD4NCg0KICAgIDwhLS0gRmxvd2VyIFBvdHMgTGFiZWwgb24gWS1heGlzIC0tPg0KICAgIDx0ZXh0IHg9IjEwIiB5PSIyMCIgY2xhc3M9InRleHQiIHRyYW5zZm9ybT0icm90YXRlKC05MCAxMCwyMCkiPkZsb3dlciBQb3RzIChBRCk8L3RleHQ+DQogICAgPCEtLSBMaW5lcyBMYWJlbCBvbiBYLWF4aXMgLS0+DQogICAgPHRleHQgeD0iMTUwIiB5PSIzNDAiIGNsYXNzPSJ0ZXh0Ij5MaW5lcyAoQUIpPC90ZXh0Pg0KICAgIA0KICAgIDwhLS0gWC1heGlzIE51bWJlcnMgLS0+DQogICAgPHRleHQgeD0iOTAiIHk9IjMzNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+DQogICAgPHRleHQgeD0iMTgwIiB5PSIzMzUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41PC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjI3MCIgeT0iMzM1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ODwvdGV4dD4NCg0KPC9zdmc+" alt="Sports Day Activities">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Given: AD = 100m.</div>
+        <div class="step"><strong>Niharika's Green Flag (G):</strong> On 2nd line, \(x_1 = 2\). Distance = \(\frac{1}{4}
+            \times 100 = 25\)m. So, \(y_1 = 25\). G(2, 25).</div>
+        <div class="step"><strong>Preet's Red Flag (R):</strong> On 8th line, \(x_2 = 8\). Distance = \(\frac{1}{5}
+            \times 100 = 20\)m. So, \(y_2 = 20\). R(8, 20).</div>
+        <div class="step"><strong>Distance between flags (GR):</strong></div>
+        <div class="step">\(GR = \sqrt{(8-2)^2 + (20-25)^2} = \sqrt{6^2 + (-5)^2} = \sqrt{36 + 25} = \sqrt{61}\)m.</div>
+        <div class="step"><strong>Rashmi's Blue Flag (B)</strong> is halfway:</div>
+        <div class="step">\(x = \frac{2+8}{2} = 5\). \(y = \frac{25+20}{2} = 22.5\).</div>
+        <div class="final-answer">Distance is \(\sqrt{61}\)m. Blue flag at 5th line, 22.5m distance.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. Determine the ratio in which the line segment joining the points (-3, 10) and (6, -8)
+            is divided by (-1, 6).</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTIwIiB5MT0iMCIgeDI9IjIxMCIgeTI9IjE4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iMTIwIiBjeT0iMCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTIwIiB5PSItMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BKC0zLDEwKTwvdGV4dD48Y2lyY2xlIGN4PSIyMTAiIGN5PSIxODAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjIxMCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Qig2LC04KTwvdGV4dD48Y2lyY2xlIGN4PSIxNDAiIGN5PSI0MCIgcj0iMyIgZmlsbD0iYmx1ZSIvPjx0ZXh0IHg9IjE0MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmx1ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UCgtMSw2KTwvdGV4dD48L3N2Zz4=" alt="Ratio Division">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let ratio be \(k:1\). P(-1, 6).</div>
+        <div class="step">\(x = \frac{k(6) + 1(-3)}{k + 1} = -1 \Rightarrow 6k - 3 = -k - 1\)</div>
+        <div class="step">\(7k = 2 \Rightarrow k = \frac{2}{7}\)</div>
+        <div class="step">Verify with y: \(\frac{\frac{2}{7}(-8) + 10}{\frac{2}{7} + 1} = \frac{-\frac{16}{7} + \frac{70}{7}}{\frac{9}{7}} = \frac{54}{9} = 6\)
+            (True).</div>
+        <div class="final-answer">Ratio is 2:7.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. Find the ratio in which the line segment joining A(1, -5) and B(-4, 5) is divided by
+            the x-axis. Also find the coordinates of the point of division.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTYwIiB5MT0iMTUwIiB4Mj0iMTEwIiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTYwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0PjxjaXJjbGUgY3g9IjExMCIgY3k9IjUwIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxMTAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjwvdGV4dD48Y2lyY2xlIGN4PSIxMzUuMCIgY3k9IjEwMCIgcj0iMyIgZmlsbD0iYmx1ZSIvPjx0ZXh0IHg9IjEzNS4wIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibHVlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QKHgsMCk8L3RleHQ+PC9zdmc+" alt="Division by X-axis">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let ratio be \(k:1\). Point on x-axis: \(P(x, 0)\).</div>
+        <div class="step">\(y = \frac{k(5) + 1(-5)}{k + 1} = 0 \Rightarrow 5k - 5 = 0 \Rightarrow k = 1\).</div>
+        <div class="step">Ratio is 1:1.</div>
+        <div class="step">\(x = \frac{1(-4) + 1(1)}{2} = -\frac{3}{2}\).</div>
+        <div class="final-answer">Ratio 1:1. Point (-\(\frac{3}{2}\), 0).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. If (1, 2), (4, y), (x, 6) and (3, 5) are the vertices of a parallelogram taken in
+            order, find x and y.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTAwIiB5MT0iMTUwIiB4Mj0iMjAwIiB5Mj0iMTUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjAwIiB5MT0iMTUwIiB4Mj0iMjIwIiB5Mj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjIwIiB5MT0iMTAwIiB4Mj0iMTIwIiB5Mj0iMTAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTIwIiB5MT0iMTAwIiB4Mj0iMTAwIiB5Mj0iMTUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTAwIiB5MT0iMTUwIiB4Mj0iMjIwIiB5Mj0iMTAwIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyMDAiIHkxPSIxNTAiIHgyPSIxMjAiIHkyPSIxMDAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTYwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1pZHBvaW50IE08L3RleHQ+PC9zdmc+" alt="Parallelogram Vertices">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diagonals bisect each other. Midpoint AC = Midpoint BD.</div>
+        <div class="step">\(\left(\frac{1+x}{2}, \frac{2+6}{2}\right) = \left(\frac{4+3}{2}, \frac{y+5}{2}\right)\)
+        </div>
+        <div class="step">\(\frac{1+x}{2} = \frac{7}{2} \Rightarrow 1 + x = 7 \Rightarrow x = 6\).</div>
+        <div class="step">\(\frac{8}{2} = \frac{y+5}{2} \Rightarrow 8 = y + 5 \Rightarrow y = 3\).</div>
+        <div class="final-answer">x = 6, y = 3.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. Find the coordinates of a point A, where AB is the diameter of a circle whose centre is
+            (2, -3) and B is (1, 4).</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxMzAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTgwIiB5MT0iMjAwIiB4Mj0iMTYwIiB5Mj0iNjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjE3MCIgY3k9IjEzMCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTcwIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DKDIsLTMpPC90ZXh0PjxjaXJjbGUgY3g9IjE2MCIgY3k9IjYwIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxNjAiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QigxLDQpPC90ZXh0PjxjaXJjbGUgY3g9IjE4MCIgY3k9IjIwMCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTgwIiB5PSIxOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BKHgseSk8L3RleHQ+PC9zdmc+" alt="Circle Diameter">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let \(A(x, y)\). Centre \(C(2, -3)\) is midpoint of AB.</div>
+        <div class="step">\(\frac{x+1}{2} = 2 \Rightarrow x + 1 = 4 \Rightarrow x = 3\).</div>
+        <div class="step">\(\frac{y+4}{2} = -3 \Rightarrow y + 4 = -6 \Rightarrow y = -10\).</div>
+        <div class="final-answer">A is (3, -10).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. If A and B are (-2, -2) and (2, -4), respectively, find the coordinates of P such that
+            AP = \(\frac{3}{7}\) AB and P lies on the line segment AB.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTMwIiB5MT0iMTIwIiB4Mj0iMTcwIiB5Mj0iMTQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48Y2lyY2xlIGN4PSIxMzAiIGN5PSIxMjAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjEzMCIgeT0iMTEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48Y2lyY2xlIGN4PSIxNzAiIGN5PSIxNDAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjE3MCIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjwvdGV4dD48Y2lyY2xlIGN4PSIxNDcuMiIgY3k9IjEyOC41IiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxNDcuMiIgeT0iMTE4LjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QPC90ZXh0Pjwvc3ZnPg==" alt="Point P on Line Segment AB">
+        <div class="solution-header">Solution:</div>
+        <div class="step">\(AP = \frac{3}{7}AB \Rightarrow AP:PB = 3:4\).</div>
+        <div class="step">\(x = \frac{3(2) + 4(-2)}{7} = \frac{6-8}{7} = -\frac{2}{7}\).</div>
+        <div class="step">\(y = \frac{3(-4) + 4(-2)}{7} = \frac{-12-8}{7} = -\frac{20}{7}\).</div>
+        <div class="final-answer">P(-\(\frac{2}{7}\), -\(\frac{20}{7}\)).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. Find the coordinates of the points which divide the line segment joining A(-2, 2) and
+            B(2, 8) into four equal parts.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTMwIiB5MT0iODAiIHgyPSIxNzAiIHkyPSIyMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iMTMwIiBjeT0iODAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjEzMCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0PjxjaXJjbGUgY3g9IjE3MCIgY3k9IjIwIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxNzAiIHk9IjEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QjwvdGV4dD48Y2lyY2xlIGN4PSIxNDAiIGN5PSI2NS4wIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxNDAiIHk9IjU1LjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QMTwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSI1MCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTUwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlAyPC90ZXh0PjxjaXJjbGUgY3g9IjE2MCIgY3k9IjM1LjAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjE2MCIgeT0iMjUuMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlAzPC90ZXh0Pjwvc3ZnPg==" alt="Four Equal Parts">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Midpoint Q of AB = \((0, 5)\).</div>
+        <div class="step">Midpoint P of AQ = \((-1, 3.5)\) or \((-1, \frac{7}{2})\).</div>
+        <div class="step">Midpoint R of QB = \((1, 6.5)\) or \((1, \frac{13}{2})\).</div>
+        <div class="final-answer">The points are (-1, \(\frac{7}{2}\)), (0, 5), (1, \(\frac{13}{2}\)).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">10. Find the area of a rhombus if its vertices are (3, 0), (4, 5), (-1, 4) and (-2, -1)
+            taken in order. [Hint : Area of a rhombus = \(\frac{1}{2}\) (product of its diagonals)]</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIyMCIgeTE9IjEwMC4wIiB4Mj0iMjgwIiB5Mj0iMTAwLjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjAiIHgyPSIxNTAuMCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyOTAiIHk9IjEwNS4wIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj54PC90ZXh0Pjx0ZXh0IHg9IjE1NS4wIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eTwvdGV4dD48bGluZSB4MT0iMTgwIiB5MT0iMTAwIiB4Mj0iMTkwIiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxOTAiIHkxPSI1MCIgeDI9IjE0MCIgeTI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTQwIiB5MT0iNjAiIHgyPSIxMzAiIHkyPSIxMTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxMzAiIHkxPSIxMTAiIHgyPSIxODAiIHkyPSIxMDAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxODAiIHkxPSIxMDAiIHgyPSIxNDAiIHkyPSI2MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTkwIiB5MT0iNTAiIHgyPSIxMzAiIHkyPSIxMTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGNpcmNsZSBjeD0iMTgwIiBjeT0iMTAwIiByPSIzIiBmaWxsPSJyZWQiLz48dGV4dCB4PSIxODAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9InJlZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD48Y2lyY2xlIGN4PSIxOTAiIGN5PSI1MCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTkwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PGNpcmNsZSBjeD0iMTQwIiBjeT0iNjAiIHI9IjMiIGZpbGw9InJlZCIvPjx0ZXh0IHg9IjE0MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DPC90ZXh0PjxjaXJjbGUgY3g9IjEzMCIgY3k9IjExMCIgcj0iMyIgZmlsbD0icmVkIi8+PHRleHQgeD0iMTMwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0icmVkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EPC90ZXh0Pjwvc3ZnPg==" alt="Rhombus Area">
+        <div class="solution-header">Solution:</div>
+        <div class="step">\(AC = \sqrt{(-1-3)^2 + (4-0)^2} = \sqrt{16+16} = \sqrt{32} = 4\sqrt{2}\).</div>
+        <div class="step">\(BD = \sqrt{(-2-4)^2 + (-1-5)^2} = \sqrt{36+36} = \sqrt{72} = 6\sqrt{2}\).</div>
+        <div class="step">Area = \(\frac{1}{2} \times 4\sqrt{2} \times 6\sqrt{2} = \frac{1}{2} \times 24 \times 2 =
+            24\).</div>
+        <div class="final-answer">Area = 24 square units.</div>
+    </div>
+
+
+
+</body></html>

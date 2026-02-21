@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 300" width="450" height="300">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .mark { fill: none; stroke: #00BFFF; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Coordinates -->
+  <!-- A: (250, 40) -->
+  <!-- B: (180, 250) -->
+  <!-- C: (320, 250) -->
+  <!-- AB = AC check: (70, 210) vs (70, 210). Yes isosceles. -->
+  <!-- D: (250, 250) -->
+  <!-- E: Point on CB produced. (50, 250) -->
+  <!-- F: Point on AC such that EF perp AC -->
+  
+  <!-- Line AC: (320-250, 250-40) = (70, 210). Slope 3. -->
+  <!-- Line EF slope -1/3. Equation: y - 250 = -1/3 (x - 50) => y = -x/3 + 50/3 + 250 -->
+  <!-- Line AC equation: y - 40 = 3(x - 250) => y = 3x - 750 + 40 = 3x - 710 -->
+  <!-- Intersection: 3x - 710 = -x/3 + 266.67 -->
+  <!-- 9x - 2130 = -x + 800 -->
+  <!-- 10x = 2930 -> x = 293 -->
+  <!-- y = 3(293) - 710 = 879 - 710 = 169 -->
+  <!-- F = (293, 169) -->
+
+  <!-- Base Line EC -->
+  <line x1="50" y1="250" x2="320" y2="250" class="line" />
+
+  <!-- Triangle Sides AB, AC -->
+  <line x1="180" y1="250" x2="250" y2="40" class="line" />
+  <line x1="320" y1="250" x2="250" y2="40" class="line" />
+  
+  <!-- Line EF -->
+  <line x1="50" y1="250" x2="293" y2="169" class="inner-line" />
+
+  <!-- Altitude AD -->
+  <line x1="250" y1="40" x2="250" y2="250" class="inner-line" />
+
+  <!-- Labels -->
+  <text x="245" y="30" class="text">A</text>
+  <text x="175" y="270" class="text">B</text>
+  <text x="330" y="270" class="text">C</text>
+  <text x="245" y="270" class="text">D</text>
+  <text x="35" y="270" class="text">E</text>
+  <text x="300" y="165" class="text">F</text>
+
+  <!-- Right Angle D -->
+  <polyline points="240,250 240,240 250,240" class="mark" />
+
+  <!-- Right Angle F -->
+  <!-- Vector FE approx (243, 81). Vector FA approx (-43, -129) -->
+  <polyline points="286,176 295,183 301,176" class="mark" fill="none" /> 
+  <!-- Crude approximation drawing a small square rotated -->
+
+</svg>

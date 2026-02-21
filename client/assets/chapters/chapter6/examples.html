@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .example-title {
+            color: #D32F2F;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            clear: none;
+        }
+
+        .sub-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .reason {
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            padding-top: 5px;
+            border-top: 1px dashed #ddd;
+            display: block;
+            clear: both;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="example-title">Example 1</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuYXJyb3cgeyBmaWxsOiAjMDBCRkZGOyB9DQogICAgPC9zdHlsZT4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI1IiByZWZZPSI1IiBvcmllbnQ9ImF1dG8iPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMTAsNSBMMCwxMCIgY2xhc3M9ImFycm93IiAvPg0KICAgIDwvbWFya2VyPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogIDwhLS0gQSgyMjUsIDMwKSAtLT4NCiAgPCEtLSBCKDUwLCAzMDApIC0tPg0KICA8IS0tIEMoNDAwLCAzMDApIC0tPg0KICA8cGF0aCBkPSJNMjI1IDMwIEw1MCAzMDAgTDQwMCAzMDAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMaW5lIERFIFBhcmFsbGVsIHRvIEJDIC0tPg0KICA8IS0tIEQgb24gQUIuIEUgb24gQUMuIC0tPg0KICA8IS0tIExldCdzIHB1dCBERSBhdCB5ID0gMTgwIC0tPg0KICA8IS0tIExpbmUgQUI6ICg1MC0yMjUpLygzMDAtMzApID0gLTE3NS8yNzAgLS0+DQogIDwhLS0gSW50ZXJwIGF0IHk9MTgwOiBBKDIyNSwzMCkgKyB0KihCLUEpLiAzMCArIHQqMjcwID0gMTgwID0+IHQgPSAxNTAvMjcwID0gNS85IC0tPg0KICA8IS0tIHggPSAyMjUgKyAoNS85KSooLTE3NSkgPSAyMjUgLSA5Ny4yID0gMTI3LjggLS0+DQogIDwhLS0gRCAoMTI4LCAxODApIC0tPg0KICANCiAgPCEtLSBMaW5lIEFDOiAoNDAwLTIyNSkvKDMwMC0zMCkgPSAxNzUvMjcwIC0tPg0KICA8IS0tIHggPSAyMjUgKyAoNS85KSooMTc1KSA9IDIyNSArIDk3LjIgPSAzMjIuMiAtLT4NCiAgPCEtLSBFICgzMjIsIDE4MCkgLS0+DQoNCiAgPGxpbmUgeDE9IjEyOCIgeTE9IjE4MCIgeDI9IjMyMiIgeTI9IjE4MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBQYXJhbGxlbCBNYXJrZXJzIChBcnJvd3MpIC0tPg0KICA8IS0tIE9uIERFIC0tPg0KICA8cGF0aCBkPSJNMjI1IDE4MCBMMjM1IDE3NSBMMjI1IDE3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBCRkZGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIA0KICA8IS0tIE9uIEJDIC0tPg0KICA8cGF0aCBkPSJNMjI1IDMwMCBMMjM1IDI5NSBMMjI1IDI5MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBCRkZGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjIyMCIgeT0iMjUiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzNSIgeT0iMzEwIiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDEwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIxMTAiIHk9IjE4NSIgY2xhc3M9InRleHQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjMzMCIgeT0iMTg1IiBjbGFzcz0idGV4dCI+RTwvdGV4dD4NCg0KPC9zdmc+" alt="Line Intersecting Triangle Sides">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If a line intersects sides AB and AC of a ∆ABC at D and E respectively and is parallel to BC,
+            prove that \(\frac{AD}{AB}\) = \(\frac{AE}{AC}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">DE || BC.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since DE || BC, by BPT:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">Inverting the relation:</div>
+        <div class="step">\(\frac{DB}{AD}\) = \(\frac{EC}{AE}\)</div>
+        <div class="step">Adding 1 to both sides:</div>
+        <div class="step">\(\frac{DB}{AD}\) + 1 = \(\frac{EC}{AE}\) + 1</div>
+        <div class="step">\(\frac{DB + AD}{AD}\) = \(\frac{EC +
+                    AE}{AE}\)</div>
+        <div class="step">\(\frac{AB}{AD}\) = \(\frac{AC}{AE}\)</div>
+        <div class="step">Inverting again:</div>
+        <div class="step">\(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 2</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzAwIiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5maWxsLWdyZWVuIHsgZmlsbDogI0RDRURDODsgb3BhY2l0eTogMC42OyB9IC8qIExpZ2h0IEdyZWVuICovDQogICAgICAuZmlsbC1ibHVlIHsgZmlsbDogI0JCREVGQjsgb3BhY2l0eTogMC42OyB9IC8qIExpZ2h0IEJsdWUgKi8NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBGaWxsIFJlZ2lvbnMgLS0+DQogIDwhLS0gVHJpYW5nbGUgQURDIChHcmVlbmlzaCkgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iMTIwLDUwIDUwLDI1MCA0MDAsMjUwIiBjbGFzcz0iZmlsbC1ncmVlbiIgLz4NCiAgDQogIDwhLS0gVHJpYW5nbGUgQUJDIChCbHVpc2gpIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjEyMCw1MCAzMzAsNTAgNDAwLDI1MCIgY2xhc3M9ImZpbGwtYmx1ZSIgLz4NCg0KICA8IS0tIFRyYXBleml1bSBPdXRsaW5lcyAtLT4NCiAgPCEtLSBBQiAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjUwIiB4Mj0iMzMwIiB5Mj0iNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIEJDIC0tPg0KICA8bGluZSB4MT0iMzMwIiB5MT0iNTAiIHgyPSI0MDAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIENEIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIERBIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSIxMjAiIHkyPSI1MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBEaWFnb25hbCBBQyAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjUwIiB4Mj0iNDAwIiB5Mj0iMjUwIiBjbGFzcz0iaW5uZXItbGluZSIgLz4NCg0KICA8IS0tIExpbmUgRUYgLS0+DQogIDxsaW5lIHgxPSI4NSIgeTE9IjE1MCIgeDI9IjM2NSIgeTI9IjE1MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjExMCIgeT0iNDUiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMzUiIHk9IjQ1IiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDEwIiB5PSIyNTUiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzMCIgeT0iMjU1IiBjbGFzcz0idGV4dCI+RDwvdGV4dD4NCiAgPHRleHQgeD0iNjUiIHk9IjE1NSIgY2xhc3M9InRleHQiPkU8L3RleHQ+DQogIDx0ZXh0IHg9IjM3NSIgeT0iMTU1IiBjbGFzcz0idGV4dCI+RjwvdGV4dD4NCiAgPHRleHQgeD0iMjU1IiB5PSIxNDUiIGNsYXNzPSJ0ZXh0Ij5HPC90ZXh0Pg0KDQo8L3N2Zz4NCg==" alt="Trapezium with EF parallel">
+        <div class="sub-header">Statement:</div>
+        <div class="step">ABCD is a trapezium with AB || DC. E and F are points on non-parallel sides AD and BC
+            respectively such that EF is parallel to AB. Show that \(\frac{AE}{ED}\) = \(\frac{BF}{FC}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">AB || DC and EF || AB.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{BF}{FC}\)</div>
+
+        <div class="sub-header">Construction:</div>
+        <div class="step">Join AC to intersect EF at G.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ADC, EG || DC (Since EF || AB || DC).</div>
+        <div class="step">By BPT: \(\frac{AE}{ED}\) = \(\frac{AG}{GC}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆CAB, GF || AB.</div>
+        <div class="step">By BPT: \(\frac{AG}{GC}\) = \(\frac{BF}{FC}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{BF}{FC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 3</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuYW5nbGUtYXJjIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDEuNTsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIFRyaWFuZ2xlIFBRUiAtLT4NCiAgPCEtLSBQKDIwMCwgNTApIC0tPg0KICA8IS0tIFEoMTAwLCAzMDApIC0tPg0KICA8IS0tIFIoMzAwLCAzMDApIC0tPg0KICA8cGF0aCBkPSJNMjAwIDUwIEwxMDAgMzAwIEwzMDAgMzAwIFoiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gTGluZSBTVCAtLT4NCiAgPCEtLSBTKDE1MCwgMTc1KSBvbiBQUSAtLT4NCiAgPCEtLSBUKDI1MCwgMTc1KSBvbiBQUiAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE3NSIgeDI9IjI1MCIgeTI9IjE3NSIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE5NSIgeT0iNDAiIGNsYXNzPSJ0ZXh0Ij5QPC90ZXh0Pg0KICA8dGV4dCB4PSI4MCIgeT0iMzEwIiBjbGFzcz0idGV4dCI+UTwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0Ij5SPC90ZXh0Pg0KICA8dGV4dCB4PSIxMzAiIHk9IjE4MCIgY2xhc3M9InRleHQiPlM8L3RleHQ+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMTgwIiBjbGFzcz0idGV4dCI+VDwvdGV4dD4NCg0KICA8IS0tIEFuZ2xlIFBTVCAtLT4NCiAgPHBhdGggZD0iTTE2NSAxNzUgQSAxNSAxNSAwIDAgMCAxNjAgMTYwIiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KDQogIDwhLS0gQW5nbGUgUFJRIC0tPg0KICA8cGF0aCBkPSJNMjg1IDMwMCBBIDI1IDI1IDAgMCAwIDI5MCAyNzUiIGNsYXNzPSJhbmdsZS1hcmMiIC8+DQoNCjwvc3ZnPg0K" alt="Similar Triangles Question">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., \(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\) and ∠PST = ∠PRQ. Prove that PQR is an isosceles triangle.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">\(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\) and ∠PST = ∠PRQ.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆PQR is isosceles.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since \(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\), by Converse of BPT: ST || QR.</div>
+        <div class="step">Therefore, ∠PST = ∠PQR <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">But given ∠PST = ∠PRQ.</div>
+        <div class="step">So, ∠PQR = ∠PRQ.</div>
+        <div class="step">Sides opposite to equal angles are equal, so PQ = PR.</div>
+        <div class="step">Since two sides are equal, ∆PQR is isosceles.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 4</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gU2lkZSBQUSAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjEwMCIgeDI9IjEzMCIgeTI9IjIwMCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBTaWRlIFJTIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iNTAiIHgyPSIzNjAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gRGlhZ29uYWxzL0Nyb3NzaW5nIGxpbmVzIC0tPg0KICA8IS0tIFBTIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTAwIiB4Mj0iMzYwIiB5Mj0iMjUwIiBjbGFzcz0ibGluZSIgLz4NCiAgDQogIDwhLS0gUVIgLS0+DQogIDxsaW5lIHgxPSIxMzAiIHkxPSIyMDAiIHgyPSI0MDAiIHkyPSI1MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE0MCIgeT0iOTAiIGNsYXNzPSJ0ZXh0Ij5QPC90ZXh0Pg0KICA8dGV4dCB4PSIxMDUiIHk9IjIxNSIgY2xhc3M9InRleHQiPlE8L3RleHQ+DQogIDx0ZXh0IHg9IjIxNSIgeT0iMTcwIiBjbGFzcz0idGV4dCI+TzwvdGV4dD4NCiAgPHRleHQgeD0iNDA1IiB5PSI0NSIgY2xhc3M9InRleHQiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjM2NSIgeT0iMjY1IiBjbGFzcz0idGV4dCI+UzwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Similar Triangles Example">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., if PQ || RS, prove that ∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">PQ || RS.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆POQ and ∆SOR:</div>
+        <div class="step">1. ∠P = ∠S <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">2. ∠Q = ∠R <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">3. ∠POQ = ∠SOR <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">By AAA Similarity Criterion <span class="reason">(AAA Similarity)</span>:</div>
+        <div class="step">∆POQ ~ ∆SOR</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 5</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzUwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuZGltLXRleHQgeyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZpbGw6IGJsYWNrOyB9DQogICAgICAuYW5nbGUtYXJjIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDEuNTsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIFRyaWFuZ2xlIEFCQyAoU21hbGxlcikgLS0+DQogIDwhLS0gQig1MCwgMjgwKSAtLT4NCiAgPCEtLSBDKDE3MCwgMjgwKSBCYXNlID0gMTIwIChyZXByZXNlbnRpbmcgNikgLS0+DQogIDwhLS0gQTogQW5nbGUgQj02MC4gU2lkZSBBQj0zLjggKDc2cHgpLiANCiAgICAgICB4ID0gNTAgKyA3Nipjb3MoNjApID0gODgNCiAgICAgICB5ID0gMjgwIC0gNzYqc2luKDYwKSA9IDI4MCAtIDY2ID0gMjE0IC0tPg0KICA8cGF0aCBkPSJNODggMjE0IEw1MCAyODAgTDE3MCAyODAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgQUJDIC0tPg0KICA8dGV4dCB4PSI4MCIgeT0iMjA1IiBjbGFzcz0idGV4dCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzAiIHk9IjI5MCIgY2xhc3M9InRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjE3NSIgeT0iMjkwIiBjbGFzcz0idGV4dCI+QzwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgQUJDIC0tPg0KICA8dGV4dCB4PSI0MCIgeT0iMjUwIiBjbGFzcz0iZGltLXRleHQiPjMuODwvdGV4dD4NCiAgPHRleHQgeD0iMTA1IiB5PSIyOTUiIGNsYXNzPSJkaW0tdGV4dCI+NjwvdGV4dD4NCiAgPHRleHQgeD0iMTM1IiB5PSIyNTAiIGNsYXNzPSJkaW0tdGV4dCI+M+KImjM8L3RleHQ+DQoNCiAgPCEtLSBBbmdsZXMgQUJDIC0tPg0KICA8IS0tIEFuZ2xlIEEgKDgwKSAtLT4NCiAgPHBhdGggZD0iTTgyIDIyNSBBIDE1IDE1IDAgMCAxIDk4IDIyMiIgY2xhc3M9ImFuZ2xlLWFyYyIgLz4NCiAgPHRleHQgeD0iODUiIHk9IjI0MCIgY2xhc3M9ImRpbS10ZXh0IiBmb250LXNpemU9IjE0Ij44MMKwPC90ZXh0Pg0KICANCiAgPCEtLSBBbmdsZSBCICg2MCkgLS0+DQogIDxwYXRoIGQ9Ik02NSAyODAgQSAxNSAxNSAwIDAgMCA1OCAyNjgiIGNsYXNzPSJhbmdsZS1hcmMiIC8+DQogIDx0ZXh0IHg9IjY1IiB5PSIyNzUiIGNsYXNzPSJkaW0tdGV4dCIgZm9udC1zaXplPSIxNCI+NjDCsDwvdGV4dD4NCg0KDQogIDwhLS0gVHJpYW5nbGUgUFFSIChMYXJnZXIpIC0tPg0KICA8IS0tIFNjYWxlIGZhY3RvciAyIC0tPg0KICA8IS0tIFAoMjUwLCAyODApIC0tPg0KICA8IS0tIFEoNDkwLCAyODApIEJhc2UgUFEgPSAyNDAgKHJlcHJlc2VudGluZyAxMikgLS0+DQogIDwhLS0gUjogQ29ycmVzcG9uZHMgdG8gQT8gTm8sIHdhaXQuIA0KICAgICAgIENoZWNrIHNpZGUgcmF0aW9zOiBBQi9SUSA9IDMuOC83LjYuIEJDL1FQID0gNi8xMi4gQ0EvUFIgPSAzcnQzLzZydDMuDQogICAgICAgU28gQTwtPlIsIEI8LT5RLCBDPC0+UC4NCiAgICAgICBBbmdsZSBRIHNob3VsZCBiZSA2MC4gQW5nbGUgUiBzaG91bGQgYmUgODAuIEFuZ2xlIFAgc2hvdWxkIGJlIDQwLg0KICAgICAgIFNpZGUgUlEgPSA3LjYgLT4gMTUycHguDQogICAgICAgUiBmcm9tIFE6IGFuZ2xlIDYwLiANCiAgICAgICB4ID0gNDkwIC0gMTUyKmNvcyg2MCkgPSA0OTAgLSA3NiA9IDQxNA0KICAgICAgIHkgPSAyODAgLSAxNTIqc2luKDYwKSA9IDI4MCAtIDEzMiA9IDE0OCAtLT4NCiAgPHBhdGggZD0iTTQxNCAxNDggTDI1MCAyODAgTDQ5MCAyODAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgUFFSIC0tPg0KICA8dGV4dCB4PSI0MjAiIHk9IjE0MCIgY2xhc3M9InRleHQiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjIzNSIgeT0iMjkwIiBjbGFzcz0idGV4dCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iNTAwIiB5PSIyOTAiIGNsYXNzPSJ0ZXh0Ij5RPC90ZXh0Pg0KDQogIDwhLS0gRGltZW5zaW9ucyBQUVIgLS0+DQogIDx0ZXh0IHg9IjMxMCIgeT0iMjAwIiBjbGFzcz0iZGltLXRleHQiIHRyYW5zZm9ybT0icm90YXRlKC0zOCwgMzIwLCAyMDApIj424oiaMzwvdGV4dD4gPCEtLSBQUiAtLT4NCiAgPHRleHQgeD0iMzYwIiB5PSIyOTUiIGNsYXNzPSJkaW0tdGV4dCI+MTI8L3RleHQ+IDwhLS0gUFEgLS0+DQogIDx0ZXh0IHg9IjQ2MCIgeT0iMjEwIiBjbGFzcz0iZGltLXRleHQiPjcuNjwvdGV4dD4gPCEtLSBSUSAtLT4NCg0KPC9zdmc+" alt="Finding Angle P">
+        <div class="sub-header">Statement:</div>
+        <div class="step">Observe Fig. and then find ∠P.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC with A=80°, B=60°. AB=3.8, BC=6, AC=3√3.</div>
+        <div class="step">∆RPQ with R=?, P=?, Q=?. PR=6√3, PQ=12, RQ=7.6.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Value of ∠P.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Compare ratios of sides:</div>
+        <div class="step">\(\frac{AB}{RQ}\) = \(\frac{3.8}{7.6}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{BC}{QP}\) = \(\frac{6}{12}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{CA}{PR}\) = \(\frac{3√3}{6√3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Since sides are proportional, ∆ABC ~ ∆RQP <span class="reason">(SSS Similarity)</span>.</div>
+        <div class="step">Therefore, corresponding angles are equal: ∠C = ∠P.</div>
+        <div class="step">In ∆ABC, ∠C = 180° - (∠A + ∠B) = 180° - (80° + 60°) = 180° - 140° = 40°.</div>
+        <div class="step">So, ∠P = 40°.</div>
+        <div class="final-answer">∠P = 40°.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 6</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5saW5lIHsgc3Ryb2tlOiAjMDA3YmZmOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1saW5lY2FwOiByb3VuZDsgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsgfQ0KICAgICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIiwgVGltZXMsIHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5hbmdsZS1tYXJrIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDEuNTsgZmlsbDogbm9uZTsgfQ0KICAgIDwvc3R5bGU+DQoNCiAgICA8IS0tIERlZmluaXRpb25zIC0tPg0KICAgIDxkZWZzPg0KICAgICAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjciIHJlZlg9IjkiIHJlZlk9IjMuNSIgb3JpZW50PSJhdXRvIj4NCiAgICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0iMCAwLCAxMCAzLjUsIDAgNyIgZmlsbD0iIzAwN2JmZiIgLz4NCiAgICAgICAgPC9tYXJrZXI+DQogICAgPC9kZWZzPg0KDQogICAgPCEtLSBDb29yZGluYXRlczogQSg4MCwgNjApLCBEKDQwLCAxNjApLCBPKDE1MCwgMTEwKSwgQygyMjAsIDYwKSwgQigyNjAsIDE2MCkgLS0+DQogICAgPCEtLSBBZGp1c3RlZCBmb3Igc3ltbWV0cnkgYW5kIG5vbi1wYXJhbGxlbCB0b3AvYm90dG9tIC0tPg0KICAgIDwhLS0gTGluZSBBQiBwYXNzZXMgdGhyb3VnaCBPLiBBKDgwLCA2MCksIE8oMTUwLCAxMTApLiBkeD03MCwgZHk9NTAuIEIgPSBPICsgKDEuMSkqZD8gDQogICAgICAgICBMZXQncyBrZWVwIGxlbmd0aHMgc2ltaWxhci4NCiAgICAgICAgIEEoODAsIDYwKSwgTygxNTAsIDExMCkuIEIoMjIwLCAxNjApLg0KICAgICAgICAgQygyMjAsIDYwKSwgTygxNTAsIDExMCkuIEQoODAsIDE2MCkuDQogICAgICAgICBUaGlzIGZvcm1zIGEgc3ltbWV0cmljYWwgdHJhcGV6aXVtIGlmIGNoZWNrZWQsIGJ1dCBsZXQncyBzZWUuDQogICAgICAgICBBRCBjb25uZWN0cyAoODAsIDYwKSBhbmQgKDgwLCAxNjApIC0gVmVydGljYWwgbGluZS4NCiAgICAgICAgIENCIGNvbm5lY3RzICgyMjAsIDYwKSBhbmQgKDIyMCwgMTYwKSAtIFZlcnRpY2FsIGxpbmUuDQogICAgICAgICBVc2VyIGltYWdlIGxpa2VseSBnZW5lcmljLiBMZXQncyB0aWx0IHRoZW0uDQogICAgICAgICANCiAgICAgICAgIE5ldyBDb29yZHM6DQogICAgICAgICBPKDE1MCwgMTEwKQ0KICAgICAgICAgTGluZSBBT0I6IEEoOTAsIDcwKSAtPiBPKDE1MCwgMTEwKSAtPiBCKDI0MCwgMTcwKS4gKFNsb3BlIDQwLzYwID0gMi8zKQ0KICAgICAgICAgTGluZSBET0M6IEQoNjAsIDE3MCkgLT4gTygxNTAsIDExMCkgLT4gQygyMTAsIDcwKS4gKFNsb3BlIC00MC82MCA9IC0yLzMpDQogICAgLS0+DQogICAgDQogICAgPCEtLSBUcmlhbmdsZSBBT0Q6IEEoOTAsNzApLU8oMTUwLDExMCktRCg2MCwxNzApLWNsb3NlIC0tPg0KICAgIDxwYXRoIGQ9Ik0gOTAsNzAgTCAxNTAsMTEwIEwgNjAsMTcwIFoiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gVHJpYW5nbGUgQ09COiBDKDIxMCw3MCktTygxNTAsMTEwKS1CKDI0MCwxNzApLWNsb3NlIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjEwLDcwIEwgMTUwLDExMCBMIDI0MCwxNzAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgICA8IS0tIEFuZ2xlIE1hcmtpbmdzIGF0IE8gLS0+DQogICAgPCEtLSBMZWZ0IEFuZ2xlOiBCZXR3ZWVuIE9BIGFuZCBPRCAtLT4NCiAgICA8cGF0aCBkPSJNIDEzNSwxMDAgQSAyMCwyMCAwIDAsMCAxMzUsMTIwIiBjbGFzcz0iYW5nbGUtbWFyayIgLz4NCiAgICANCiAgICA8IS0tIFJpZ2h0IEFuZ2xlOiBCZXR3ZWVuIE9DIGFuZCBPQiAtLT4NCiAgICA8cGF0aCBkPSJNIDE2NSwxMDAgQSAyMCwyMCAwIDAsMSAxNjUsMTIwIiBjbGFzcz0iYW5nbGUtbWFyayIgLz4NCg0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9Ijg1IiB5PSI2NSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkE8L3RleHQ+DQogICAgPHRleHQgeD0iNTUiIHk9IjE4NSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkQ8L3RleHQ+DQogICAgPHRleHQgeD0iMTUwIiB5PSIxNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjIxNSIgeT0iNjUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkM8L3RleHQ+DQogICAgPHRleHQgeD0iMjQ1IiB5PSIxODUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkI8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Shadow Problem">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., OA . OB = OC . OD. Show that ∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">OA . OB = OC . OD</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Rearranging the given equation:</div>
+        <div class="step">\(\frac{OA}{OC}\) = \(\frac{OD}{OB}\)</div>
+        <div class="step">In ∆AOD and ∆COB:</div>
+        <div class="step">∠AOD = ∠COB <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">Sides containing these angles are proportional <span class="reason">(from above)</span>.</div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="step">∆AOD ~ ∆COB</div>
+        <div class="step">Corresponding angles are equal:</div>
+        <div class="step">∠A = ∠C and ∠D = ∠B.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 7</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI1MCIgeTE9IjIwIiB4Mj0iNTAiIHkyPSIxODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxMjAiIHgyPSIxNTAiIHkyPSIxODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyMCIgeTE9IjE4MCIgeDI9IjI4MCIgeTI9IjE4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjUwIiB5MT0iMjAiIHgyPSIyMjAiIHkyPSIxODAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iNDAiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pjx0ZXh0IHg9IjQwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+PHRleHQgeD0iMjIwIiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkU8L3RleHQ+PHRleHQgeD0iMjAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My42bTwvdGV4dD48dGV4dCB4PSIxNzAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MC45bTwvdGV4dD48dGV4dCB4PSIxMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC44bTwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eDwvdGV4dD48L3N2Zz4=" alt="Girl Walking Away from Lamp">
+        <div class="sub-header">Statement:</div>
+        <div class="step">A girl of height 90 cm is walking away from the base of a lamp-post at a speed of 1.2 \(\frac{m}{s}\). If
+            the lamp is 3.6 m above the ground, find the length of her shadow after 4 seconds.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Height of girl (CD) = 90 cm = 0.9 m.</div>
+        <div class="step">Height of lamp (AB) = 3.6 m.</div>
+        <div class="step">Speed = 1.2 \(\frac{m}{s}\). Time = 4 s.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Length of her shadow (DE = x).</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Distance covered (BD) = Speed × Time = 1.2 × 4 = 4.8 m.</div>
+        <div class="step">In ∆ABE and ∆CDE:</div>
+        <div class="step">∠B = ∠D = 90° <span class="reason">(Vertical poles)</span>.</div>
+        <div class="step">∠E is common.</div>
+        <div class="step">So ∆ABE ~ ∆CDE <span class="reason">(AA Similarity)</span>.</div>
+        <div class="step">Therefore, \(\frac{BE}{DE}\) = \(\frac{AB}{CD}\)</div>
+        <div class="step">\(\frac{4.8 + x}{x}\) = \(\frac{3.6}{0.9}\) = 4</div>
+        <div class="step">4.8 + x = 4x</div>
+        <div class="step">3x = 4.8</div>
+        <div class="step">x = 1.6 m.</div>
+        <div class="final-answer">Length of her shadow is 1.6 m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 8</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5saW5lIHsgc3Ryb2tlOiAjMDNBOUY0OyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICJUaW1lcyBOZXcgUm9tYW4iLCBzZXJpZjsgZm9udC1zaXplOiAyMHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogIzAwMDsgfQ0KICAgICAgICAuYW5nbGUtYXJjIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IH0NCiAgICA8L3N0eWxlPg0KICAgIA0KICAgIDwhLS0gVHJpYW5nbGUgQUJDIChMZWZ0KSAtLT4NCiAgICA8IS0tIEEoMTEwLCA1MCksIEIoNTAsIDIwMCksIEMoMTgwLCAyMDApIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTEwLDUwIEwgNTAsMjAwIEwgMTgwLDIwMCBaIiBjbGFzcz0ibGluZSIgLz4NCiAgICANCiAgICA8IS0tIE1lZGlhbiBDTSAtLT4NCiAgICA8IS0tIE1pZHBvaW50IG9mIEFCOiB4PSgxMTArNTApLzI9ODAsIHk9KDUwKzIwMCkvMj0xMjUgLS0+DQogICAgPCEtLSBNKDgwLCAxMjUpIC0tPg0KICAgIDxsaW5lIHgxPSIxODAiIHkxPSIyMDAiIHgyPSI4MCIgeTI9IjEyNSIgY2xhc3M9ImxpbmUiIC8+DQogICAgDQogICAgPCEtLSBBbmdsZSBBIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTAwLDc1IEEgMzAsMzAgMCAwLDAgMTI1LDcwIiBjbGFzcz0iYW5nbGUtYXJjIiB0cmFuc2Zvcm09InJvdGF0ZSgxMCAxMTAgNTApIiAvPg0KICAgIA0KICAgIDwhLS0gTGFiZWxzIEFCQyAtLT4NCiAgICA8dGV4dCB4PSIxMTAiIHk9IjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD4NCiAgICA8dGV4dCB4PSI0MCIgeT0iMjEwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+QjwvdGV4dD4NCiAgICA8dGV4dCB4PSIxOTAiIHk9IjIxMCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+QzwvdGV4dD4NCiAgICA8dGV4dCB4PSI2NSIgeT0iMTI1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+TTwvdGV4dD4NCg0KICAgIDwhLS0gVHJpYW5nbGUgUVBSIChSaWdodCwgSW52ZXJ0ZWQpIC0tPg0KICAgIDwhLS0gUSgzMDAsIDUwKSwgUCg0NjAsIDUwKSwgUigzODAsIDIyMCkgLS0+DQogICAgPHBhdGggZD0iTSAzMDAsNTAgTCA0NjAsNTAgTCAzODAsMjIwIFoiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gTWVkaWFuIFJOIC0tPg0KICAgIDwhLS0gTWlkcG9pbnQgb2YgUVA6IHg9KDMwMCs0NjApLzI9MzgwLCB5PTUwIC0tPg0KICAgIDwhLS0gTigzODAsIDUwKSAtLT4NCiAgICA8bGluZSB4MT0iMzgwIiB5MT0iMjIwIiB4Mj0iMzgwIiB5Mj0iNTAiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgUCAtLT4NCiAgICA8cGF0aCBkPSJNIDQzMCw1MCBBIDMwLDMwIDAgMCwwIDQ0NSw4MCIgY2xhc3M9ImFuZ2xlLWFyYyIvPg0KICAgIA0KICAgIDwhLS0gTGFiZWxzIFFQUiAtLT4NCiAgICA8dGV4dCB4PSIyOTAiIHk9IjUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+UTwvdGV4dD4NCiAgICA8dGV4dCB4PSI0NzAiIHk9IjUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5QPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjM4MCIgeT0iMjQ1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UjwvdGV4dD4NCiAgICA8dGV4dCB4PSIzODAiIHk9IjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TjwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Similar Triangles Medians">
+        <div class="sub-header">Statement:</div>
+        <div class="step">CM and RN are respectively the medians of ∆ABC and ∆PQR. If ∆ABC ~ ∆PQR, prove that:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR</div>
+        <div class="step">(ii) \(\frac{CM}{RN}\) = \(\frac{AB}{PQ}\)</div>
+        <div class="step">(iii) ∆CMB ~ ∆RNQ</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC ~ ∆PQR. CM and RN are medians.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR, (ii) \(\frac{CM}{RN}\) = \(\frac{AB}{PQ}\), (iii) ∆CMB ~ ∆RNQ.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆PQR:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BC}{QR}\) = \(\frac{AC}{PR}\) and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R.</div>
+        <div class="step">Since M and N are midpoints: 2AM = AB and 2PN = PQ.</div>
+        <div class="step">So \(\frac{2AM}{2PN}\) = \(\frac{AC}{PR}\) ⇒ \(\frac{AM}{PN}\) = \(\frac{AC}{PR}\).</div>
+        <div class="step">In ∆AMC and ∆PNR:</div>
+        <div class="step">\(\frac{AM}{PN}\) = \(\frac{AC}{PR}\)</div>
+        <div class="step">∠A = ∠P <span class="reason">(Given)</span></div>
+        <div class="step">So ∆AMC ~ ∆PNR <span class="reason">(SAS Similarity)</span>.</div>
+        <div class="step">Hence \(\frac{CM}{RN}\) = \(\frac{AC}{PR}\) = \(\frac{AB}{PQ}\).</div>
+        <div class="step">Similarly, for (iii), we can prove ∆CMB ~ ∆RNQ using SAS (\(\frac{BM}{QN}\) = \(\frac{BC}{QR}\) and ∠B=∠Q).</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+
+
+</body></html>

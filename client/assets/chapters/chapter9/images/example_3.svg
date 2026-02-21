@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Rectangle DCBE -->
+  <!-- C(50, 320), B(300, 320), E(300, 270), D(50, 270) -->
+  <polyline points="50,270 50,320 300,320 300,270" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="50" y1="270" x2="300" y2="270" stroke="#333" stroke-width="2"/>
+  
+  <!-- Triangle ADE -->
+  <!-- D(50, 270), E(300, 270), A(300, 20) -->
+  <line x1="50" y1="270" x2="300" y2="20" stroke="#D81B60" stroke-width="2"/>
+  <line x1="300" y1="270" x2="300" y2="20" stroke="#D81B60" stroke-width="2"/>
+
+  <!-- Right Angle Symbol at E -->
+  <rect x="280" y="250" width="20" height="20" fill="none" stroke="#333" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="300" y="15" font-family="Arial" font-size="18" font-weight="bold">A</text>
+  <text x="300" y="340" font-family="Arial" font-size="18" font-weight="bold">B</text>
+  <text x="40" y="340" font-family="Arial" font-size="18" font-weight="bold">C</text>
+  <text x="30" y="270" font-family="Arial" font-size="18" font-weight="bold">D</text>
+  <text x="310" y="270" font-family="Arial" font-size="18" font-weight="bold">E</text>
+
+  <!-- Dimensions -->
+  <text x="140" y="260" font-family="Arial" font-size="18">28.5 m</text>
+  <text x="140" y="340" font-family="Arial" font-size="18">28.5 m</text>
+  
+  <text x="5" y="295" font-family="Arial" font-size="16">1.5 m</text>
+  <text x="305" y="300" font-family="Arial" font-size="16">1.5 m</text>
+  
+  <!-- Height AB Question Mark -->
+  <line x1="330" y1="20" x2="330" y2="320" stroke="#333" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="340" y="170" font-family="Arial" font-size="24" font-weight="bold">?</text>
+
+  <!-- Angle 45 at D. dx 250 dy -250. Unit(0.707, -0.707). End (50+28=78, 270-28=242) -->
+  <path d="M 90 270 A 40 40 0 0 0 78 242" fill="none" stroke="#D81B60" stroke-width="2"/>
+  <text x="100" y="255" font-family="Arial" font-size="16" fill="#333">45°</text>
+
+</svg>

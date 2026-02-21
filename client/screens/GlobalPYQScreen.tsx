@@ -1,6 +1,11 @@
 import React, { memo, useState, useCallback, useMemo } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import {
+    useFonts,
+    Kalam_400Regular,
+    Kalam_700Bold,
+} from "@expo-google-fonts/kalam";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
@@ -11,6 +16,11 @@ import { getAllPYQYears, getQuestionsForYear, AggregatedQuestion } from "@/data/
 import { class10Chapters as chapters } from "@/data/chapters";
 
 export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
+    const [fontsLoaded] = useFonts({
+        Kalam_400Regular,
+        Kalam_700Bold,
+    });
+
     const [selectedYear, setSelectedYear] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<string>(JiguuColors.accent3); // Default color
     const [selectedChapterId, setSelectedChapterId] = useState<string | null>(null);
@@ -33,6 +43,8 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     };
 
     // Render Year Selection Grid
+    if (!fontsLoaded) return null;
+
     if (!selectedYear) {
         return (
             <ScreenWrapper showBackButton={true}>
@@ -89,8 +101,8 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
                             question={item.question}
                             chapterId={item.chapterId}
                             accentColor={selectedColor}
-                            titleStyle={{ fontFamily: "Kalam_700Bold" }}
-                            contentStyle={{ fontFamily: "Kalam_400Regular" }}
+                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
                         />
                     ))
                 )}

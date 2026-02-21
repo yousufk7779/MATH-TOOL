@@ -16,7 +16,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
     <View style={[
       styles.container,
       {
-        paddingBottom: isLandscape ? insets.bottom + 2 : insets.bottom + Spacing.sm,
+        paddingBottom: insets.bottom + Spacing.sm,
         paddingTop: isLandscape ? 4 : Spacing.md,
       }
     ]}>
@@ -29,7 +29,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
       </View>
       <View style={styles.textContainer}>
         <ThemedText style={[styles.name, isLandscape && styles.nameLandscape]}>Sameer Khan</ThemedText>
-        {!isLandscape ? <ThemedText style={styles.title}>Educator</ThemedText> : null}
+        <ThemedText style={styles.title} numberOfLines={1}>Founder & Educator</ThemedText>
       </View>
     </View>
   );
@@ -41,6 +41,8 @@ const styles = StyleSheet.create({
     bottom: 0,
     right: 0,
     left: 0,
+    zIndex: 10,
+    elevation: 10,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-end",

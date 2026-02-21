@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+        body { font-family: 'Kalam', cursive; margin: 0; padding: 15px; background: #fff; color: #333; }
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+        .question { font-weight: bold; margin-bottom: 15px; font-size: 1.2em; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+        .step { background: #eef; padding: 10px; border-radius: 8px; border-left: 4px solid #00BFA5; margin-bottom: 10px; }
+        .final-answer { color: #4CAF50; font-weight: bold; margin-top: 10px; }
+        .sub-question { color: #FFAB00; font-weight: bold; margin-top: 10px; margin-bottom: 5px;}
+        .exercise-title { text-align: center; font-size: 1.5em; border-bottom: 2px solid #00BFA5; margin-bottom: 20px; font-family: 'Nunito', sans-serif; color: #00BFA5; }
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="exercise-title">Exercise 12.1</div>
+<div class="content-box">
+        <div class="question">1. Two cubes each of volume 64 cm³ are joined end to end. Find the surface area of the
+            resulting cuboid.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gNTAgMTMwLjAgTCA4MC4wIDEwMCBMIDE0MC4wIDEwMCBMIDExMCAxMzAuMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI1MCIgeT0iMTMwLjAiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTMwLjAgTCAxNDAuMCAxMDAgTCAxNDAuMCAxNjAgTCAxMTAgMTkwLjAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTMwLjAgTCAxNDAuMCAxMDAgTCAyMDAuMCAxMDAgTCAxNzAgMTMwLjAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHJlY3QgeD0iMTEwIiB5PSIxMzAuMCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjYwIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE3MCAxMzAuMCBMIDIwMC4wIDEwMCBMIDIwMC4wIDE2MCBMIDE3MCAxOTAuMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxMTAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VHdvIEN1YmVzIEpvaW5lZDwvdGV4dD48dGV4dCB4PSI4MCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj40Y208L3RleHQ+PC9zdmc+" alt="Two Cubes Joined">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Volume of cube = a³ = 64. So a = 4 cm.</div>
+        <div class="step">When joined end to end, length L = 4 + 4 = 8 cm.</div>
+        <div class="step">Breadth B = 4 cm. Height H = 4 cm.</div>
+        <div class="step">Surface Area = 2(LB + BH + HL)</div>
+        <div class="step">= 2(32 + 16 + 32)</div>
+        <div class="step">= 2(80) = 160 cm².</div>
+        <div class="final-answer">Surface Area = 160 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. A vessel is in the form of a hollow hemisphere mounted by a hollow cylinder. The
+            diameter of the hemisphere is 14 cm and the total height of the vessel is 13 cm. Find the inner surface area
+            of the vessel.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDE1MCBBIDUwIDUwIDAgMCAwIDIwMCAxNTAiIGZpbGw9IiNiYmRlZmIiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI1MCIgcnk9IjE2LjY2NjY2NjY2NjY2NjY2OCIgZmlsbD0iI2UzZjJmZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMDAgMTEwIEwgMTAwIDE1MCBBIDUwIDE2LjY2NjY2NjY2NjY2NjY2OCAwIDAgMCAyMDAgMTUwIEwgMjAwIDExMCBaIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTEwIiByeD0iNTAiIHJ5PSIxNi42NjY2NjY2NjY2NjY2NjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZW1pc3BoZXJlICsgQ3lsaW5kZXI8L3RleHQ+PGxpbmUgeDE9IjIyMCIgeTE9IjExMCIgeDI9IjIyMCIgeTI9IjIwMCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzUiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTNjbTwvdGV4dD48bGluZSB4MT0iMTAwIiB5MT0iMTUwIiB4Mj0iMjAwIiB5Mj0iMTUwIiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5kPTE0Y208L3RleHQ+PC9zdmc+" alt="Vessel Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter = 14 cm =&gt; Radius r = 7 cm.</div>
+        <div class="step">Total height = 13 cm.</div>
+        <div class="step">Height of hemisphere portion = radius = 7 cm.</div>
+        <div class="step">Height of cylinder h = 13 - 7 = 6 cm.</div>
+        <div class="step">Inner Surface Area = CSA of Cylinder + CSA of Hemisphere.</div>
+        <div class="step">= 2πrh + 2πr²</div>
+        <div class="step">= 2πr(h + r)</div>
+        <div class="step">= 2 × (\(\frac{22}{7}\)) × 7 × (6 + 7)</div>
+        <div class="step">= 44 × 13 = 572 cm².</div>
+        <div class="final-answer">Inner Surface Area = 572 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A toy is in the form of a cone of radius 3.5 cm mounted on a hemisphere of same radius.
+            The total height of the toy is 15.5 cm. Find the total surface area of the toy.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUuNWNtPC90ZXh0PjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTcwIiB5PSIxNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPnI9My41PC90ZXh0Pjwvc3ZnPg==" alt="Toy Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 3.5 cm. Total height = 15.5 cm.</div>
+        <div class="step">Height of cone h = 15.5 - 3.5 = 12 cm.</div>
+        <div class="step">Slant height l = √(h² + r²) = √(144 + 3.5²) = √(144 + 12.25) = √156.25 = 12.5 cm.</div>
+        <div class="step">Total Surface Area = CSA of Cone + CSA of Hemisphere.</div>
+        <div class="step">= πrl + 2πr²</div>
+        <div class="step">= πr(l + 2r)</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 3.5 × (12.5 + 2×3.5)</div>
+        <div class="step">= 11 × (12.5 + 7) = 11 × 19.5 = 214.5 cm².</div>
+        <div class="final-answer">Total Surface Area = 214.5 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. A cubical block of side 7 cm is surmounted by a hemisphere. What is the greatest
+            diameter the hemisphere can have? Find the surface area of the solid.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7Ij4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMwLCAyMDApIj4KICA8IS0tIEZyb250IGZhY2UgLS0+CiAgPHBhdGggZD0iTSAtNzAgMCBMIDcwIDAgTCA3MCAtMTEwIEwgLTcwIC0xMTAgWiIgZmlsbD0iIzAyNzdiZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBSaWdodCBmYWNlIC0tPgogIDxwYXRoIGQ9Ik0gNzAgMCBMIDEyMCAtNTAgTCAxMjAgLTE2MCBMIDcwIC0xMTAgWiIgZmlsbD0iIzAxNTc5YiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBUb3AgZmFjZSAtLT4KICA8cGF0aCBkPSJNIC03MCAtMTEwIEwgLTIwIC0xNjAgTCAxMjAgLTE2MCBMIDcwIC0xMTAgWiIgZmlsbD0iIzI5YjZmNiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgCiAgPCEtLSBIZW1pc3BoZXJlIG9uIHRvcCAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNSwgLTEzNSkiPgogICAgPCEtLSBCYWNrIG9mIGJhc2UgKHRyYW5zcGFyZW50KSAtLT4KICAgIDxwYXRoIGQ9Ik0gLTcwIDAgQSA3MCAyMCAwIDAgMSA3MCAwIiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPgogICAgPCEtLSBEb21lIC0tPgogICAgPHBhdGggZD0iTSAtNzAgMCBBIDcwIDcwIDAgMCAxIDcwIDAiIGZpbGw9IiM0ZmMzZjciIGZpbGwtb3BhY2l0eT0iMC44NSIgc3Ryb2tlPSIjMDI4OGQxIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwhLS0gRnJvbnQgb2YgYmFzZSAtLT4KICAgIDxwYXRoIGQ9Ik0gLTcwIDAgQSA3MCAyMCAwIDAgMCA3MCAwIiBmaWxsPSIjNGZjM2Y3IiBmaWxsLW9wYWNpdHk9IjAuOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAKICAgIDwhLS0gSGVtaXNwaGVyZSBkaWFtZXRlciBsYWJlbCAtLT4KICAgIDxsaW5lIHgxPSItNjUiIHkxPSIwIiB4Mj0iNjUiIHkyPSIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICAgIDx0ZXh0IHg9IjAiIHk9Ii0xMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NyBjbTwvdGV4dD4KICA8L2c+CgogIDwhLS0gTGFiZWxzIGZvciBDdWJlIC0tPgogIDxsaW5lIHgxPSItNzAiIHkxPSIxNSIgeDI9IjcwIiB5Mj0iMTUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgogIDx0ZXh0IHg9IjAiIHk9IjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj43IGNtPC90ZXh0PgoKICA8bGluZSB4MT0iLTg1IiB5MT0iMCIgeDI9Ii04NSIgeTI9Ii0xMTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgogIDx0ZXh0IHg9Ii05NSIgeT0iLTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0iZW5kIj43IGNtPC90ZXh0PgoKICA8bGluZSB4MT0iODUiIHkxPSI1IiB4Mj0iMTM1IiB5Mj0iLTQ1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIxMjAiIHk9Ii0xMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9InN0YXJ0Ij43IGNtPC90ZXh0Pgo8L2c+CjxkZWZzPgogIDxtYXJrZXIgaWQ9ImFycm93IiBtYXJrZXJXaWR0aD0iNSIgbWFya2VySGVpZ2h0PSI1IiByZWZYPSIyLjUiIHJlZlk9IjIuNSIgb3JpZW50PSJhdXRvIj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMCwwIDUsMi41IDAsNSIgZmlsbD0iYmxhY2siLz4KICA8L21hcmtlcj4KPC9kZWZzPgo8L3N2Zz4=" alt="Cube with Hemisphere">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Side of cube a = 7 cm.</div>
+        <div class="step">Greatest diameter = Side of cube = 7 cm. Radius r = 3.5 cm.</div>
+        <div class="step">Surface Area = TSA of Cube - Base Area of Hemisphere + CSA of Hemisphere.</div>
+        <div class="step">= 6a² - πr² + 2πr²</div>
+        <div class="step">= 6a² + πr²</div>
+        <div class="step">= 6(49) + (\(\frac{22}{7}\))(3.5)(3.5)</div>
+        <div class="step">= 294 + 38.5 = 332.5 cm².</div>
+        <div class="final-answer">Diameter = 7 cm; Surface Area = 332.5 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. A hemispherical depression is cut out from one face of a cubical wooden block such that
+            the diameter l of the hemisphere is equal to the edge of the cube. Determine the surface area of the
+            remaining solid.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7Ij4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMwLCAyMDApIj4KICA8IS0tIEZyb250IGZhY2UgLS0+CiAgPHBhdGggZD0iTSAtNzAgMCBMIDcwIDAgTCA3MCAtMTEwIEwgLTcwIC0xMTAgWiIgZmlsbD0iIzY0YjVmNiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBSaWdodCBmYWNlIC0tPgogIDxwYXRoIGQ9Ik0gNzAgMCBMIDEyMCAtNTAgTCAxMjAgLTE2MCBMIDcwIC0xMTAgWiIgZmlsbD0iIzQyYTVmNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgPCEtLSBUb3AgZmFjZSAtLT4KICA8cGF0aCBkPSJNIC03MCAtMTEwIEwgLTIwIC0xNjAgTCAxMjAgLTE2MCBMIDcwIC0xMTAgWiIgZmlsbD0iIzkwY2FmOSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgCiAgPCEtLSBIZW1pc3BoZXJpY2FsIGRlcHJlc3Npb24gLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUsIC0xMzUpIj4KICAgIDwhLS0gQmFjayBvZiBiYXNlICh0b3AgY2lyY2xlIG9mIHRoZSBob2xlKSAtLT4KICAgIDxwYXRoIGQ9Ik0gLTcwIDAgQSA3MCAyMCAwIDAgMSA3MCAwIiBmaWxsPSIjZTNmMmZkIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwhLS0gRGVwcmVzc2lvbiBib3dsIC0tPgogICAgPHBhdGggZD0iTSAtNzAgMCBBIDcwIDcwIDAgMCAwIDcwIDAiIGZpbGw9IiMxOTc2ZDIiIGZpbGwtb3BhY2l0eT0iMC45IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDwhLS0gRnJvbnQgb2YgYmFzZSAodG9wIGNpcmNsZSBvZiB0aGUgaG9sZSkgLS0+CiAgICA8cGF0aCBkPSJNIC03MCAwIEEgNzAgMjAgMCAwIDAgNzAgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAKICAgIDwhLS0gSGVtaXNwaGVyZSBkaWFtZXRlciBsYWJlbCAtLT4KICAgIDxsaW5lIHgxPSItNjUiIHkxPSIwIiB4Mj0iNjUiIHkyPSIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICAgIDx0ZXh0IHg9IjAiIHk9Ii0xMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5sPC90ZXh0PgogIDwvZz4KCiAgPCEtLSBMYWJlbHMgZm9yIEN1YmUgLS0+CiAgPGxpbmUgeDE9Ii03MCIgeTE9IjE1IiB4Mj0iNzAiIHkyPSIxNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgPHRleHQgeD0iMCIgeT0iMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZm9udC1zdHlsZT0iaXRhbGljIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+bDwvdGV4dD4KCiAgPGxpbmUgeDE9Ii04NSIgeTE9IjAiIHgyPSItODUiIHkyPSItMTEwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSItOTUiIHk9Ii01MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0iZW5kIj5sPC90ZXh0PgoKICA8bGluZSB4MT0iODUiIHkxPSI1IiB4Mj0iMTM1IiB5Mj0iLTQ1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICA8dGV4dCB4PSIxMjAiIHk9Ii0xMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXN0eWxlPSJpdGFsaWMiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPmw8L3RleHQ+CjwvZz4KPGRlZnM+CiAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSI1IiBtYXJrZXJIZWlnaHQ9IjUiIHJlZlg9IjIuNSIgcmVmWT0iMi41IiBvcmllbnQ9ImF1dG8iPgogICAgPHBvbHlnb24gcG9pbnRzPSIwLDAgNSwyLjUgMCw1IiBmaWxsPSJibGFjayIvPgogIDwvbWFya2VyPgo8L2RlZnM+Cjwvc3ZnPg==" alt="Depression in Cube">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let edge be l. Radius r = \(\frac{l}{2}\).</div>
+        <div class="step">Surface Area = TSA of Cube - Top Circle Area + CSA of Hemisphere (depression surface).</div>
+        <div class="step">= 6l² - π(\(\frac{l}{2}\))² + 2π(\(\frac{l}{2}\))²</div>
+        <div class="step">= 6l² + π(\(\frac{l}{2}\))²</div>
+        <div class="step">= 6l² + πl²/4</div>
+        <div class="step">= (l²/4)(24 + π).</div>
+        <div class="final-answer">Surface Area = (l²/4)(24 + π) sq units.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. A medicine capsule is in the shape of a cylinder with two hemispheres stuck to each of
+            its ends. The length of the entire capsule is 14 mm and the diameter of the capsule is 5 mm. Find its
+            surface area.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwNS4wIiB5PSIxMjUiIHdpZHRoPSI5MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJub25lIi8+PGxpbmUgeDE9IjEwNS4wIiB5MT0iMTI1IiB4Mj0iMTk1LjAiIHkyPSIxMjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxMDUuMCIgeTE9IjE3NSIgeDI9IjE5NS4wIiB5Mj0iMTc1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDEwNS4wIDEyNSBBIDI1IDI1IDAgMCAwIDEwNS4wIDE3NSBaIiBmaWxsPSIjZTFiZWU3IiBzdHJva2U9ImJsYWNrIi8+PHBhdGggZD0iTSAxOTUuMCAxMjUgQSAyNSAyNSAwIDAgMSAxOTUuMCAxNzUgWiIgZmlsbD0iI2UxYmVlNyIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSI4MC4wIiB5MT0iMTkwIiB4Mj0iMjIwLjAiIHkyPSIxOTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE0bW08L3RleHQ+PC9zdmc+" alt="Capsule Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter = 5 mm =&gt; r = 2.5 mm.</div>
+        <div class="step">Total length = 14 mm.</div>
+        <div class="step">Length of cylinder h = 14 - 2.5 - 2.5 = 9 mm.</div>
+        <div class="step">Surface Area = CSA Cylinder + 2 × CSA Hemisphere.</div>
+        <div class="step">= 2πrh + 2(2πr²)</div>
+        <div class="step">= 2πr(h + 2r)</div>
+        <div class="step">= 2 × (\(\frac{22}{7}\)) × 2.5 × (9 + 5)</div>
+        <div class="step">= (\(\frac{110}{7}\)) × 14 = 220 mm².</div>
+        <div class="final-answer">Surface Area = 220 mm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. A tent is in the shape of a cylinder surmounted by a conical top. If the height and
+            diameter of the cylindrical part are 2.1 m and 4 m respectively, and the slant height of the top is 2.8 m,
+            find the area of the canvas used for making the tent. Also, find the cost of the canvas of the tent at the
+            rate of ₹ 500 per m². (Note that the base of the tent will not be covered with canvas.)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gOTAgMTUwIEwgOTAgMjEwIEEgNjAgMjAuMCAwIDAgMCAyMTAgMjEwIEwgMjEwIDE1MCBaIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTUwIiByeD0iNjAiIHJ5PSIyMC4wIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE1MCA1MCBMIDkwIDE1MCBMIDIxMCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI2MCIgcnk9IjIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIzMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLjFtPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5kPTRtPC90ZXh0Pjx0ZXh0IHg9IjkwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPmw9Mi44bTwvdGV4dD48L3N2Zz4=" alt="Tent Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Cylinder: h = 2.1 m, d = 4 m =&gt; r = 2 m.</div>
+        <div class="step">Cone: l = 2.8 m, r = 2 m.</div>
+        <div class="step">Area of Canvas = CSA Cylinder + CSA Cone.</div>
+        <div class="step">= 2πrh + πrl</div>
+        <div class="step">= πr(2h + l)</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 2 × (2×2.1 + 2.8)</div>
+        <div class="step">= (\(\frac{44}{7}\)) × (4.2 + 2.8)</div>
+        <div class="step">= (\(\frac{44}{7}\)) × 7 = 44 m².</div>
+        <div class="step">Cost = 44 × 500 = ₹ 22000.</div>
+        <div class="final-answer">Area = 44 m²; Cost = ₹ 22000.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of
+            the same height and same diameter is hollowed out. Find the total surface area of the remaining solid to the
+            nearest cm².</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBMIDEwMCAyMDAgQSA1MCAxNi42NjY2NjY2NjY2NjY2NjggMCAwIDAgMjAwIDIwMCBMIDIwMCAxMDAgWiIgZmlsbD0iI2NmZDhkYyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjEwMCIgcng9IjUwIiByeT0iMTYuNjY2NjY2NjY2NjY2NjY4IiBmaWxsPSIjY2ZkOGRjIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDEwMCAxMDAgTCAxNTAgMjAwIEwgMjAwIDEwMCIgZmlsbD0iIzkwYTRhZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLWRhc2hhcnJheT0iMiIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxMDAiIHJ4PSI1MCIgcnk9IjE1IiBmaWxsPSJub25lIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48dGV4dCB4PSIxNTAiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q29uaWNhbCBDYXZpdHk8L3RleHQ+PC9zdmc+" alt="Conical Cavity">
+        <div class="solution-header">Solution:</div>
+        <div class="step">h = 2.4 cm, d = 1.4 cm =&gt; r = 0.7 cm.</div>
+        <div class="step">l = √(h² + r²) = √(2.4² + 0.7²) = √(5.76 + 0.49) = √6.25 = 2.5 cm.</div>
+        <div class="step">TSA = CSA Cylinder + CSA Cone (Cavity inside) + Area of Base (Top is \(\frac{open}{hollowed}\) from top
+            but base remains? "From a solid cylinder... cavity hollowed out". Usually base remains unless specified
+            fully through). Letds assume cavity from top. Base solid.</div>
+        <div class="step">TSA = 2πrh + πrl + πr²</div>
+        <div class="step">= πr(2h + l + r)</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 0.7 × (4.8 + 2.5 + 0.7)</div>
+        <div class="step">= 2.2 × 8 = 17.6 cm².</div>
+        <div class="step">Nearest cm² = 18 cm².</div>
+        <div class="final-answer">Total Surface Area ≈ 18 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. A wooden article was made by scooping out a hemisphere from each end of a solid
+            cylinder, as shown in Fig. If the height of the cylinder is 10 cm, and its base is of radius 3.5 cm, find
+            the total surface area of the article.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSIxMTAiIHkxPSI1MCIgeDI9IjExMCIgeTI9IjIwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE5MCIgeTE9IjUwIiB4Mj0iMTkwIiB5Mj0iMjAwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDExMCA1MCBBIDQwIDQwIDAgMCAwIDE5MCA1MCIgZmlsbD0iI2VjZWZmMSIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTEwIDIwMCBBIDQwIDQwIDAgMCAxIDE5MCAyMDAiIGZpbGw9IiNlY2VmZjEiIHN0cm9rZT0iYmxhY2siLz48dGV4dCB4PSIxNTAiIHk9IjIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aGVtaXNwaGVyaWNhbCBzY29vcHM8L3RleHQ+PC9zdmc+" alt="Scooped Cylinder">
+        <div class="solution-header">Solution:</div>
+        <div class="step">h = 10 cm, r = 3.5 cm.</div>
+        <div class="step">TSA = CSA Cylinder + 2 × CSA Hemisphere (scoops add area).</div>
+        <div class="step">= 2πrh + 2(2πr²)</div>
+        <div class="step">= 2πr(h + 2r)</div>
+        <div class="step">= 2 × (\(\frac{22}{7}\)) × 3.5 × (10 + 7)</div>
+        <div class="step">= 22 × 17 = 374 cm².</div>
+        <div class="final-answer">Total Surface Area = 374 cm².</div>
+    </div>
+
+
+
+<hr/>
+<div class="exercise-title">Exercise 12.2</div>
+<div class="content-box">
+        <div class="question">1. A solid is in the shape of a cone standing on a hemisphere with both their radii being
+            equal to 1 cm and the height of the cone is equal to its radius. Find the volume of the solid in terms of π.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+aD1yPTE8L3RleHQ+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjE1MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNzAiIHk9IjE2NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+cj0xY208L3RleHQ+PC9zdmc+" alt="Solid Cone on Hemisphere">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 1 cm. Height of cone h = r = 1 cm.</div>
+        <div class="step">Volume = Volume of Cone + Volume of Hemisphere.</div>
+        <div class="step">= (\(\frac{1}{3}\))πr²h + (\(\frac{2}{3}\))πr³</div>
+        <div class="step">= (\(\frac{1}{3}\))π(1) + (\(\frac{2}{3}\))π(1)</div>
+        <div class="step">= π cm³.</div>
+        <div class="final-answer">Volume = π cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Rachel, an engineering student, was asked to make a model shaped like a cylinder with
+            two cones attached at its two ends. The diameter of the model is 3 cm and its length is 12 cm. If each cone
+            has a height of 2 cm, find the volume of air contained in the model that Rachel made.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMC4wIiB5PSIxMjUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIGZpbGw9IiNmZmUwYjIiIHN0cm9rZT0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTAwLjAgMTI1IEwgNzAuMCAxNTAgTCAxMDAuMCAxNzUgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMjAwLjAgMTI1IEwgMjMwLjAgMTUwIEwgMjAwLjAgMTc1IFoiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siLz48bGluZSB4MT0iMTAwLjAiIHkxPSIxMjUiIHgyPSIyMDAuMCIgeTI9IjEyNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjEwMC4wIiB5MT0iMTc1IiB4Mj0iMjAwLjAiIHkyPSIxNzUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Ud28gQ29uZXMgTW9kZWw8L3RleHQ+PC9zdmc+" alt="Model Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter = 3 cm =&gt; Radius r = 1.5 cm.</div>
+        <div class="step">Total length = 12 cm. Height of each cone h_c = 2 cm.</div>
+        <div class="step">Height of cylinder h_cyl = 12 - 2 - 2 = 8 cm.</div>
+        <div class="step">Volume = Volume Cylinder + 2 × Volume Cone.</div>
+        <div class="step">= πr²h_cyl + 2(\(\frac{1}{3}\))πr²h_c</div>
+        <div class="step">= πr²(h_cyl + (\(\frac{2}{3}\))h_c)</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 1.5 × 1.5 × (8 + \(\frac{4}{3}\))</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 2.25 × (\(\frac{28}{3}\))</div>
+        <div class="step">= 22 × 0.75 × 4</div>
+        <div class="step">= 22 × 3 = 66 cm³.</div>
+        <div class="final-answer">Volume = 66 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A gulab jamun, contains sugar syrup up to about 30% of its volume. Find approximately
+            how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends
+            with length 5 cm and diameter 2.8 cm (see Fig.).</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwNS4wIiB5PSIxMjUiIHdpZHRoPSI5MCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2Jyb3duIiBzdHJva2U9Im5vbmUiLz48bGluZSB4MT0iMTA1LjAiIHkxPSIxMjUiIHgyPSIxOTUuMCIgeTI9IjEyNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjEwNS4wIiB5MT0iMTc1IiB4Mj0iMTk1LjAiIHkyPSIxNzUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTA1LjAgMTI1IEEgMjUgMjUgMCAwIDAgMTA1LjAgMTc1IFoiIGZpbGw9IiNicm93biIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTk1LjAgMTI1IEEgMjUgMjUgMCAwIDEgMTk1LjAgMTc1IFoiIGZpbGw9IiNicm93biIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSI4MC4wIiB5MT0iMTkwIiB4Mj0iMjIwLjAiIHkyPSIxOTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxlbmd0aD88L3RleHQ+PC9zdmc+" alt="Gulab Jamun">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter 2.8 cm =&gt; Radius r = 1.4 cm.</div>
+        <div class="step">Total length = 5 cm. Cylinder length h = 5 - 1.4 - 1.4 = 2.2 cm.</div>
+        <div class="step">Volume of one Gulab Jamun = Vol Cyl + 2 × Vol Hemi.</div>
+        <div class="step">= πr²h + (\(\frac{4}{3}\))πr³</div>
+        <div class="step">= πr²(h + \(\frac{4r}{3}\))</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 1.4 × 1.4 × (2.2 + 5.\(\frac{6}{3}\))</div>
+        <div class="step">= 6.16 × (2.2 + 1.866) = 6.16 × 4.066 ≈ 25.05 cm³.</div>
+        <div class="step">Volume of 45 Gulab Jamuns = 45 × 25.05 = 1127.25 cm³.</div>
+        <div class="step">Syrup = 30% of Volume = 0.30 × 1127.25 ≈ 338 cm³.</div>
+        <div class="final-answer">Syrup Volume ≈ 338 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. A pen stand made of wood is in the shape of a cuboid with four conical depressions to
+            hold pens. The dimensions of the cuboid are 15 cm by 10 cm by 3.5 cm. The radius of each of the depressions
+            is 0.5 cm and the depth is 1.4 cm. Find the volume of wood in the entire stand.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDE1MC4wIEwgMTUwLjAgMTAwIEwgMjUwLjAgMTAwIEwgMjAwIDE1MC4wIFoiIGZpbGw9IiNkN2NjYzgiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjEwMCIgeT0iMTUwLjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZDdjY2M4IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDIwMCAxNTAuMCBMIDI1MC4wIDEwMCBMIDI1MC4wIDIwMCBMIDIwMCAyNTAuMCBaIiBmaWxsPSIjZDdjY2M4IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTIwIiBjeT0iMTEwIiByeD0iOCIgcnk9IjQiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPjxlbGxpcHNlIGN4PSIxNDAiIGN5PSIxMjAiIHJ4PSI4IiByeT0iNCIgZmlsbD0iYmxhY2siIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE2MCIgY3k9IjEzMCIgcng9IjgiIHJ5PSI0IiBmaWxsPSJibGFjayIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTgwIiBjeT0iMTQwIiByeD0iOCIgcnk9IjQiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QZW4gU3RhbmQ8L3RleHQ+PC9zdmc+" alt="Pen Stand">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Volume of Cuboid = 15 × 10 × 3.5 = 525 cm³.</div>
+        <div class="step">Volume of one Conical Depression = (\(\frac{1}{3}\))πr²h.</div>
+        <div class="step">r = 0.5 cm, h = 1.4 cm.</div>
+        <div class="step">Vol = (\(\frac{1}{3}\)) × (\(\frac{22}{7}\)) × 0.25 × 1.4 = (\(\frac{1}{3}\)) × 22 × 0.25 × 0.2 = 1.\(\frac{1}{3}\) = 0.366 cm³.</div>
+        <div class="step">Volume of 4 Depressions = 4 × 0.366 = 1.464 cm³.</div>
+        <div class="step">Volume of Wood = 525 - 1.464 = 523.536 cm³.</div>
+        <div class="final-answer">Volume of Wood ≈ 523.53 cm³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. A vessel is in the form of an inverted cone. Its height is 8 cm and the radius of its
+            top, which is open, is 5 cm. It is filled with water up to the brim. When lead shots, each of which is a
+            sphere of radius 0.5 cm are dropped into the vessel, one-fourth of the water flows out. Find the number of
+            lead shots dropped in the vessel.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDEwMCBMIDE1MCAyMjAgTCAyMDAgMTAwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTAwIiByeD0iNTAiIHJ5PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMTAgMTIwIEwgMTUwIDIxMCBMIDE5MCAxMjAgWiIgZmlsbD0ibGlnaHRibHVlIiBvcGFjaXR5PSIwLjUiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxODAiIHI9IjIiIGZpbGw9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTQ1IiBjeT0iMTgwIiByPSIyIiBmaWxsPSJibGFjayIvPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE4MCIgcj0iMiIgZmlsbD0iYmxhY2siLz48Y2lyY2xlIGN4PSIxNTUiIGN5PSIxODAiIHI9IjIiIGZpbGw9ImJsYWNrIi8+PGNpcmNsZSBjeD0iMTYwIiBjeT0iMTgwIiByPSIyIiBmaWxsPSJibGFjayIvPjx0ZXh0IHg9IjE1MCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WZXNzZWwgKyBMZWFkIFNob3RzPC90ZXh0Pjwvc3ZnPg==" alt="Lead Shots Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Volume of Cone = (\(\frac{1}{3}\))πr²h = (\(\frac{1}{3}\))π(25)(8) = 200π/3 cm³.</div>
+        <div class="step">Volume of water flowed out = (\(\frac{1}{4}\)) × (200π/3) = 50π/3 cm³.</div>
+        <div class="step">Volume of one lead shot (Sphere) = (\(\frac{4}{3}\))πr³ = (\(\frac{4}{3}\))π(0.5)³ = (\(\frac{4}{3}\))π(0.125) = 0.5π/3 = π/6 cm³.
+        </div>
+        <div class="step">Number of shots = (Total Val Flowed) / (Vol of one shot).</div>
+        <div class="step">= (50π/3) / (π/6) = (\(\frac{50}{3}\)) × 6 = 100.</div>
+        <div class="final-answer">Number of Lead Shots = 100.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm,
+            which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given
+            that 1 cm³ of iron has approximately 8g mass. (Use π = 3.14)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE4MCBMIDExMCAyNDAgQSA0MCAxMy4zMzMzMzMzMzMzMzMzMzQgMCAwIDAgMTkwIDI0MCBMIDE5MCAxODAgWiIgZmlsbD0iIzllOWU5ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjE4MCIgcng9IjQwIiByeT0iMTMuMzMzMzMzMzMzMzMzMzM0IiBmaWxsPSIjOWU5ZTllIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDEzMCAxMjAgTCAxMzAgMTgwIEEgMjAgNi42NjY2NjY2NjY2NjY2NjcgMCAwIDAgMTcwIDE4MCBMIDE3MCAxMjAgWiIgZmlsbD0iI2JkYmRiZCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PGVsbGlwc2UgY3g9IjE1MCIgY3k9IjEyMCIgcng9IjIwIiByeT0iNi42NjY2NjY2NjY2NjY2NjciIGZpbGw9IiNiZGJkYmQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Jcm9uIFBvbGU8L3RleHQ+PC9zdmc+" alt="Iron Pole Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Big Cylinder: h1 = 220, r1 = 12. small Cylinder: h2 = 60, r2 = 8.</div>
+        <div class="step">Volume = πr₁²h₁ + πr₂²h₂</div>
+        <div class="step">= 3.14 × (144 × 220 + 64 × 60)</div>
+        <div class="step">= 3.14 × (31680 + 3840)</div>
+        <div class="step">= 3.14 × 35520 = 111532.8 cm³.</div>
+        <div class="step">Mass = 111532.8 × 8 g = 892262.4 g = 892.26 kg.</div>
+        <div class="final-answer">Mass = 892.26 kg.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. A solid consisting of a right circular cone of height 120 cm and radius 60 cm standing
+            on a hemisphere of radius 60 cm is placed upright in a right circular cylinder full of water such that it
+            touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is 60 cm
+            and its height is 180 cm.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjEwMCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAxMDAgMTAwIEwgMTAwIDI1MCBMIDIwMCAyNTAgTCAyMDAgMTAwIFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgb3BhY2l0eT0iMC4zIi8+PHBhdGggZD0iTSAxMDAgMjUwIEEgNTAgNTAgMCAwIDAgMjAwIDI1MCBaIiBmaWxsPSIjY2NjIiBzdHJva2U9ImJsYWNrIi8+PHBhdGggZD0iTSAxNTAgMTUwIEwgMTAwIDI1MCBMIDIwMCAyNTAgWiIgZmlsbD0iI2NjYyIgc3Ryb2tlPSJibGFjayIvPjx0ZXh0IHg9IjE1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Tb2xpZCBpbiBXYXRlcjwvdGV4dD48L3N2Zz4=" alt="Solid in Water">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 60 cm (all same).</div>
+        <div class="step">Cylinder height H = 180 cm. Cone height h = 120 cm. Hemisphere height = 60 cm.</div>
+        <div class="step">Total height of solid = 120 + 60 = 180 cm = H. Matches.</div>
+        <div class="step">Volume of Water Left = Vol Cylinder - Vol Solid.</div>
+        <div class="step">= πr²H - [(\(\frac{1}{3}\))πr²h + (\(\frac{2}{3}\))πr³]</div>
+        <div class="step">= πr² [H - \(\frac{h}{3}\) - \(\frac{2r}{3}\)]</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 3600 × [180 - 40 - 40]</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 3600 × 100</div>
+        <div class="step">= 1.131 m³.</div>
+        <div class="final-answer">Volume of Water Left ≈ 1.131 m³.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A spherical glass vessel has a cylindrical neck 8 cm long, 2 cm in diameter; the
+            diameter of the spherical part is 8.5 cm. By measuring the amount of water it holds, a child finds its
+            volume to be 345 cm³. Check whether she is correct, taking the above as the inside measurements, and π =
+            3.14.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9ImJsYWNrIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjE0MCIgeT0iMTIwIiB3aWR0aD0iMjAiIGhlaWdodD0iNDUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjE1MCIgeT0iMjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5HbGFzcyBWZXNzZWw8L3RleHQ+PC9zdmc+" alt="Glass Vessel">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Sphere d = 8.5 =&gt; r = 4.25. Cylinder r = 1, h = 8.</div>
+        <div class="step">Volume = Volume Sphere + Volume Cylinder.</div>
+        <div class="step">= (\(\frac{4}{3}\))π(4.25)³ + π(1)²(8)</div>
+        <div class="step">= 3.14 [(\(\frac{4}{3}\))(76.765) + 8]</div>
+        <div class="step">= 3.14 [102.35 + 8]</div>
+        <div class="step">= 3.14 × 110.35 ≈ 346.51 cm³.</div>
+        <div class="step">346.51 ≠ 345.</div>
+        <div class="final-answer">She is incorrect. Correct volume ≈ 346.51 cm³.</div>
+    </div>
+
+
+
+<hr/>
+<div class="exercise-title">Examples</div>
+<div class="content-box">
+        <div class="question">Example 1. Rasheed got a playing top (lattu) as his birthday present, which surprisingly
+            had no colour on it. He wanted to colour it with his crayons. The top is shaped like a cone surmounted by a
+            hemisphere. The total height of the top is 5 cm and the diameter of the top is 3.5 cm. Find the area he has
+            to colour. (Use π = \(\frac{22}{7}\))</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTEwIDE1MCBBIDQwIDQwIDAgMCAwIDE5MCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxwYXRoIGQ9Ik0gMTUwIDMwIEwgMTEwIDE1MCBMIDE5MCAxNTAgWiIgZmlsbD0iI2ZmZjljNCIgc3Ryb2tlPSJibGFjayIvPjxsaW5lIHgxPSIyMTAiIHkxPSIzMCIgeDI9IjIxMCIgeTI9IjE5MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIyMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTUuNWNtPC90ZXh0PjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTcwIiB5PSIxNjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPnI9My41PC90ZXh0Pjwvc3ZnPg==" alt="Toy Top">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter d = 3.5 cm -&gt; r = 1.75 cm.</div>
+        <div class="step">Total height = 5 cm. Height of cone h = 5 - 1.75 = 3.25 cm.</div>
+        <div class="step">Slant height l = √(h² + r²) = √(3.25² + 1.75²) ≈ 3.7 cm.</div>
+        <div class="step">Area = CSA Hemisphere + CSA Cone.</div>
+        <div class="step">= 2πr² + πrl</div>
+        <div class="step">= πr(2r + l)</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 1.75 × (3.5 + 3.7)</div>
+        <div class="step">= 5.5 × 7.2 = 39.6 cm².</div>
+        <div class="final-answer">Area to colour ≈ 39.6 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 2. The decorative block shown in Fig. is made of two solids — a cube and a
+            hemisphere. The base of the block is a cube with edge 5 cm, and the hemisphere fixed on the top has a
+            diameter of 4.2 cm. Find the total surface area of the block. (Use π = \(\frac{22}{7}\))</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDE1MC4wIEwgMTUwLjAgMTAwIEwgMjUwLjAgMTAwIEwgMjAwIDE1MC4wIFoiIGZpbGw9IiNmZmY5YzQiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjxyZWN0IHg9IjEwMCIgeT0iMTUwLjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDIwMCAxNTAuMCBMIDI1MC4wIDEwMCBMIDI1MC4wIDIwMCBMIDIwMCAyNTAuMCBaIiBmaWxsPSIjZmZmOWM0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDEwMCAxMDAgQSA1MCA1MCAwIDAgMSAyMDAgMTAwIiBmaWxsPSIjYmJkZWZiIiBzdHJva2U9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuOCIvPjx0ZXh0IHg9IjE1MCIgeT0iMjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IZW1pc3BoZXJlIG9uIEN1YmU8L3RleHQ+PC9zdmc+" alt="Block Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Cube edge a = 5 cm. Hemisphere d = 4.2 cm -&gt; r = 2.1 cm.</div>
+        <div class="step">TSA = TSA of Cube - Base of Hemisphere + CSA Hemisphere.</div>
+        <div class="step">= 6a² - πr² + 2πr²</div>
+        <div class="step">= 6(25) + π(2.1)²</div>
+        <div class="step">= 150 + (\(\frac{22}{7}\)) × 4.41</div>
+        <div class="step">= 150 + 13.86 = 163.86 cm².</div>
+        <div class="final-answer">Total Surface Area = 163.86 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 3. A wooden toy rocket is in the shape of a cone mounted on a cylinder, as shown
+            in Fig. The height of the entire rocket is 26 cm, while the height of the conical part is 6 cm. The base of
+            the conical portion has a diameter of 5 cm, while the base diameter of the cylindrical portion is 3 cm. If
+            the conical portion is to be painted orange and the cylindrical portion yellow, find the area of the rocket
+            painted with each of these colours. (Use π = 3.14)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gOTAgMTUwIEwgOTAgMjEwIEEgNjAgMjAuMCAwIDAgMCAyMTAgMjEwIEwgMjEwIDE1MCBaIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48ZWxsaXBzZSBjeD0iMTUwIiBjeT0iMTUwIiByeD0iNjAiIHJ5PSIyMC4wIiBmaWxsPSIjZmZlMGIyIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz48cGF0aCBkPSJNIDE1MCA1MCBMIDkwIDE1MCBMIDIxMCAxNTAgWiIgZmlsbD0iI2ZmY2NiYyIgc3Ryb2tlPSJibGFjayIvPjxlbGxpcHNlIGN4PSIxNTAiIGN5PSIxNTAiIHJ4PSI2MCIgcnk9IjIwLjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPjx0ZXh0IHg9IjIzMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjwvdGV4dD48dGV4dCB4PSI5MCIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5sPTIuOG08L3RleHQ+PC9zdmc+" alt="Toy Rocket">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Cone: h = 6 cm, r = 2.5 cm. l = √(36 + 6.25) = 6.5 cm.</div>
+        <div class="step">Cylinder: h = 26 - 6 = 20 cm, r = 1.5 cm.</div>
+        <div class="step">Orange Area (Cone) = CSA + Base Ring Area (Cone base - Cylinder base).</div>
+        <div class="step">= π(2.5)(6.5) + π(2.5² - 1.5²)</div>
+        <div class="step">= 3.14 (16.25 + 4) = 63.585 cm².</div>
+        <div class="step">Yellow Area (Cylinder) = CSA + Base Area.</div>
+        <div class="step">= 2π(1.5)(20) + π(1.5)²</div>
+        <div class="step">= 3.14 (60 + 2.25) = 195.465 cm².</div>
+        <div class="final-answer">Orange: 63.585 cm²; Yellow: 195.465 cm².</div>
+    </div>
+
+
+
+<hr/>
+</body>
+</html>

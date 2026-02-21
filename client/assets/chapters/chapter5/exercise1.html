@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Solutions - Notebook Style</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+        /* Handwriting font */
+
+        body {
+            font-family: 'Kalam', cursive, sans-serif;
+            /* Fallback to sans-serif if Kalam fails */
+            line-height: 1.8;
+            color: #000080;
+            /* Dark Blue like ink */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            
+            
+            
+            /* Notebook lines */
+        }
+
+        /* Simulating notebook margin */
+        .container {
+            
+            padding-left: 20px;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2 {
+            color: #d32f2f;
+            /* Red heading */
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #000;
+            margin-top: 2em;
+            margin-bottom: 1em;
+        }
+
+        .step {
+            display: block;
+            margin-bottom: 0px;
+            /* Steps sit on lines */
+        }
+
+        /* Vertical Fraction Style */
+        .frac {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            margin: 0 4px;
+        }
+
+        .frac-top {
+            display: block;
+            border-bottom: 1px solid #000080;
+            padding: 0 2px;
+            line-height: 1;
+        }
+
+        .frac-bottom {
+            display: block;
+            padding: 0 2px;
+            line-height: 1;
+        }
+
+        .formula {
+            color: #d35400;
+            /* Burnt Orange/Red for emphasis */
+            font-weight: bold;
+        }
+
+        .answer {
+            font-weight: bold;
+            display: block;
+            margin-top: 1em;
+            text-decoration: underline;
+        }
+
+        /* Utility for roots and powers */
+        sup {
+            vertical-align: super;
+            font-size: smaller;
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+        <h1>Class 10 Maths Solutions</h1>
+
+        <h2>Exercise 5.1</h2>
+
+        <!-- Question 1 -->
+        <div class="question">Q1. In which situations does the list of numbers make an AP?</div>
+
+        <div class="sub-question">(i) Taxi fare: ₹ 15 for first km, ₹ 8 for additional km.</div>
+        <div class="step">Fare for 1st km = 15</div>
+        <div class="step">Fare for 2nd km = 15 + 8 = 23</div>
+        <div class="step">Fare for 3rd km = 23 + 8 = 31</div>
+        <div class="step">List: 15, 23, 31, ...</div>
+        <div class="step">Difference = 23 - 15 = 8</div>
+        <div class="step">Difference = 31 - 23 = 8</div>
+        <div class="step">Difference is same.</div>
+        <div class="final-answer">Answer: Yes</div>
+
+        <div class="sub-question">(ii) Air in cylinder: Removes <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> of remaining air.</div>
+        <div class="step">Initial air = 1</div>
+        <div class="step">Removed 1st time = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span></div>
+        <div class="step">Remaining = 1 - <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span></div>
+        <br>
+        <div class="step">Removed 2nd time = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span> × <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
+        <div class="step">Remaining = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> - <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
+        <div class="step">= <span class="frac"><span class="frac-top">12 - 3</span><span class="frac-bottom">16</span></span> = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">16</span></span></div>
+        <br>
+        <div class="step">d₁ = <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> - 1 = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">4</span></span></div>
+        <div class="step">d₂ = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">16</span></span> - <span class="frac"><span class="frac-top">3</span><span class="frac-bottom">4</span></span> = -<span class="frac"><span class="frac-top">3</span><span class="frac-bottom">16</span></span></div>
+        <div class="step">Difference is not same.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(iii) Well digging cost: ₹ 150 first metre, rises by ₹ 50.</div>
+        <div class="step">1st metre = 150</div>
+        <div class="step">2nd metre = 150 + 50 = 200</div>
+        <div class="step">3rd metre = 200 + 50 = 250</div>
+        <div class="step">Difference = 50 (constant).</div>
+        <div class="final-answer">Answer: Yes</div>
+
+        <div class="sub-question">(iv) Compound interest: ₹ 10000 at 8% per annum.</div>
+        <div class="step"><span class="formula">Amount = P(1 + <span class="frac"><span class="frac-top">R</span><span class="frac-bottom">100</span></span>)ⁿ</span></div>
+        <div class="step">Calculating amounts for each year.</div>
+        <div class="step">Interest is on increasing amount.</div>
+        <div class="step">So difference keeps increasing.</div>
+        <div class="step">Difference is not same.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <!-- Question 2 -->
+        <div class="question">Q2. Write first four terms.</div>
+
+        <div class="sub-question">(i) a = 10, d = 10</div>
+        <div class="step">a₁ = 10</div>
+        <div class="step">a₂ = 10 + 10 = 20</div>
+        <div class="step">a₃ = 20 + 10 = 30</div>
+        <div class="step">a₄ = 30 + 10 = 40</div>
+        <div class="final-answer">Answer: 10, 20, 30, 40</div>
+
+        <div class="sub-question">(ii) a = -2, d = 0</div>
+        <div class="step">a₁ = -2</div>
+        <div class="step">a₂ = -2 + 0 = -2</div>
+        <div class="step">a₃ = -2</div>
+        <div class="step">a₄ = -2</div>
+        <div class="final-answer">Answer: -2, -2, -2, -2</div>
+
+        <div class="sub-question">(iii) a = 4, d = -3</div>
+        <div class="step">a₁ = 4</div>
+        <div class="step">a₂ = 4 - 3 = 1</div>
+        <div class="step">a₃ = 1 - 3 = -2</div>
+        <div class="step">a₄ = -2 - 3 = -5</div>
+        <div class="final-answer">Answer: 4, 1, -2, -5</div>
+
+        <div class="sub-question">(iv) a = -1, d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">a₁ = -1</div>
+        <div class="step">a₂ = -1 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">a₃ = -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 0</div>
+        <div class="step">a₄ = 0 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="final-answer">Answer: -1, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, 0, <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+
+        <div class="sub-question">(v) a = -1.25, d = -0.25</div>
+        <div class="step">a₁ = -1.25</div>
+        <div class="step">a₂ = -1.25 - 0.25 = -1.50</div>
+        <div class="step">a₃ = -1.50 - 0.25 = -1.75</div>
+        <div class="step">a₄ = -1.75 - 0.25 = -2.00</div>
+        <div class="final-answer">Answer: -1.25, -1.50, -1.75, -2.00</div>
+
+        <!-- Question 3 -->
+        <div class="question">Q3. Write first term (a) and common difference (d).</div>
+
+        <div class="sub-question">(i) 3, 1, -1, -3...</div>
+        <div class="step">a = 3</div>
+        <div class="step">d = 1 - 3 = -2</div>
+        <div class="final-answer">Answer: a = 3, d = -2</div>
+
+        <div class="sub-question">(ii) -5, -1, 3, 7...</div>
+        <div class="step">a = -5</div>
+        <div class="step">d = -1 - (-5) = -1 + 5 = 4</div>
+        <div class="final-answer">Answer: a = -5, d = 4</div>
+
+        <div class="sub-question">(iii) <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span>, <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">3</span></span>, <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">3</span></span>...</div>
+        <div class="step">a = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span></div>
+        <div class="step">d = <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">3</span></span> - <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span> = <span class="frac"><span class="frac-top">4</span><span class="frac-bottom">3</span></span></div>
+        <div class="final-answer">Answer: a = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">3</span></span>, d = <span class="frac"><span class="frac-top">4</span><span class="frac-bottom">3</span></span></div>
+
+        <div class="sub-question">(iv) 0.6, 1.7, 2.8...</div>
+        <div class="step">a = 0.6</div>
+        <div class="step">d = 1.7 - 0.6 = 1.1</div>
+        <div class="final-answer">Answer: a = 0.6, d = 1.1</div>
+
+        <!-- Question 4 -->
+        <div class="question">Q4. Which are APs? If yes, find d and 3 more terms.</div>
+
+        <div class="sub-question">(i) 2, 4, 8, 16...</div>
+        <div class="step">4 - 2 = 2</div>
+        <div class="step">8 - 4 = 4</div>
+        <div class="step">Difference not same. Not AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(ii) 2, <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span>, 3, <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span>...</div>
+        <div class="step"><span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span> -
+            2 = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">3 - <span class="frac"><span class="frac-top">5</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">Yes AP. d = <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">Next: <span class="frac"><span class="frac-top">7</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 4</div>
+        <div class="step">Next: 4 + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span></div>
+        <div class="step">Next: <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span> + <span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span> = 5</div>
+        <div class="final-answer">Answer: Yes, 4, <span class="frac"><span class="frac-top">9</span><span class="frac-bottom">2</span></span>, 5</div>
+
+        <div class="sub-question">(iii) -1.2, -3.2, -5.2...</div>
+        <div class="step">-3.2 - (-1.2) = -2</div>
+        <div class="step">-5.2 - (-3.2) = -2</div>
+        <div class="step">Yes AP. d = -2</div>
+        <div class="step">Next: -7.2 - 2 = -9.2</div>
+        <div class="step">Next: -9.2 - 2 = -11.2</div>
+        <div class="step">Next: -11.2 - 2 = -13.2</div>
+        <div class="final-answer">Answer: Yes, -9.2, -11.2, -13.2</div>
+
+        <div class="sub-question">(iv) -10, -6, -2, 2...</div>
+        <div class="step">-6 - (-10) = 4</div>
+        <div class="step">-2 - (-6) = 4</div>
+        <div class="step">Yes AP. d = 4</div>
+        <div class="step">Next: 2 + 4 = 6</div>
+        <div class="step">Next: 6 + 4 = 10</div>
+        <div class="step">Next: 10 + 4 = 14</div>
+        <div class="final-answer">Answer: Yes, 6, 10, 14</div>
+
+        <div class="sub-question">(v) 3, 3+√2, 3+2√2...</div>
+        <div class="step">(3+√2) - 3 = √2</div>
+        <div class="step">(3+2√2) - (3+√2) = √2</div>
+        <div class="step">Yes AP. d = √2</div>
+        <div class="step">Next: 3+3√2 + √2 = 3+4√2</div>
+        <div class="step">Next: 3+4√2 + √2 = 3+5√2</div>
+        <div class="step">Next: 3+5√2 + √2 = 3+6√2</div>
+        <div class="final-answer">Answer: Yes, 3+4√2, 3+5√2, 3+6√2</div>
+
+        <div class="sub-question">(vi) 0.2, 0.22, 0.222...</div>
+        <div class="step">0.22 - 0.2 = 0.02</div>
+        <div class="step">0.222 - 0.22 = 0.002</div>
+        <div class="step">Difference not same. No AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(vii) 0, -4, -8...</div>
+        <div class="step">-4 - 0 = -4</div>
+        <div class="step">-8 - (-4) = -4</div>
+        <div class="step">Yes AP. d = -4</div>
+        <div class="step">Next: -12 - 4 = -16</div>
+        <div class="step">Next: -16 - 4 = -20</div>
+        <div class="step">Next: -20 - 4 = -24</div>
+        <div class="final-answer">Answer: Yes, -16, -20, -24</div>
+
+        <div class="sub-question">(viii) -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>...</div>
+        <div class="step">Diff = 0. Yes AP. d = 0</div>
+        <div class="final-answer">Answer: Yes, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span>, -<span class="frac"><span class="frac-top">1</span><span class="frac-bottom">2</span></span></div>
+
+        <div class="sub-question">(ix) 1, 3, 9, 27...</div>
+        <div class="step">3 - 1 = 2</div>
+        <div class="step">9 - 3 = 6</div>
+        <div class="step">Difference not same. No AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(x) a, 2a, 3a, 4a...</div>
+        <div class="step">2a - a = a</div>
+        <div class="step">3a - 2a = a</div>
+        <div class="step">Yes AP. d = a</div>
+        <div class="step">Next: 4a + a = 5a</div>
+        <div class="step">Next: 5a + a = 6a</div>
+        <div class="step">Next: 6a + a = 7a</div>
+        <div class="final-answer">Answer: Yes, 5a, 6a, 7a</div>
+
+        <div class="sub-question">(xi) a, a², a³, a⁴...</div>
+        <div class="step">a² - a = a(a-1)</div>
+        <div class="step">a³ - a² = a²(a-1)</div>
+        <div class="step">Difference not same. No AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(xii) √2, √8, √18, √32...</div>
+        <div class="step">Simplify terms:</div>
+        <div class="step">√2, 2√2, 3√2, 4√2...</div>
+        <div class="step">2√2 - √2 = √2</div>
+        <div class="step">3√2 - 2√2 = √2</div>
+        <div class="step">Yes AP. d = √2</div>
+        <div class="step">Next: 4√2 + √2 = 5√2 = √50</div>
+        <div class="step">Next: 5√2 + √2 = 6√2 = √72</div>
+        <div class="step">Next: 6√2 + √2 = 7√2 = √98</div>
+        <div class="final-answer">Answer: Yes, √50, √72, √98</div>
+
+        <div class="sub-question">(xiii) √3, √6, √9, √12...</div>
+        <div class="step">√6 - √3 = √3(√2 - 1)</div>
+        <div class="step">√9 - √6 = 3 - √6</div>
+        <div class="step">Difference not same. No AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(xiv) 1², 3², 5², 7²...</div>
+        <div class="step">1, 9, 25, 49...</div>
+        <div class="step">9 - 1 = 8</div>
+        <div class="step">25 - 9 = 16</div>
+        <div class="step">Difference not same. No AP.</div>
+        <div class="final-answer">Answer: No</div>
+
+        <div class="sub-question">(xv) 1², 5², 7², 73...</div>
+        <div class="step">1, 25, 49, 73...</div>
+        <div class="step">25 - 1 = 24</div>
+        <div class="step">49 - 25 = 24</div>
+        <div class="step">73 - 49 = 24</div>
+        <div class="step">Yes AP. d = 24</div>
+        <div class="step">Next: 73 + 24 = 97</div>
+        <div class="step">Next: 97 + 24 = 121</div>
+        <div class="step">Next: 121 + 24 = 145</div>
+        <div class="final-answer">Answer: Yes, 97, 121, 145</div>
+
+       
+    </div>
+
+
+</body></html>

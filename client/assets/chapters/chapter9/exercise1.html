@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications of Trigonometry - Exercise 9.1</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">1. A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from
+            the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with
+            the ground level is 30°.</div>
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICANCiAgPHBhdGggZD0iTTUwLDMwIEw1MCwyMDAgTDMwMCwyMDAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHJlY3QgeD0iNTAiIHk9IjE4MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBBbmdsZSBBcmMgMzAgYXQgQygzMDAsMjAwKS4gU3RhcnQgKDI2MCwyMDApLiBFbmQgKDI2NywxNzcpIC0tPg0KICA8cGF0aCBkPSJNIDI2MCAyMDAgQSA0MCA0MCAwIDAgMSAyNjcgMTc3IiBmaWxsPSJub25lIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMjAiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KICANCiAgPHRleHQgeD0iMjAiIHk9IjExNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCiAgPHRleHQgeD0iMTgwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzMzMyI+MjAgbTwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjQwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQo8L3N2Zz4=" alt="Circus Artist Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let AB be the height of the pole (\(h\)) and AC be the rope (20 m).</div>
+        <div class="step">In right \(\triangle ABC\), \(\sin 30^\circ = \frac{AB}{AC}\).</div>
+        <div class="step">We know <span class="formula">\(\sin 30^\circ = \frac{1}{2}\)</span></div>
+        <div class="step">\(\frac{1}{2} = \frac{h}{20}\)</div>
+        <div class="step">\(2h = 20 \Rightarrow h = 10\)</div>
+        <div class="final-answer">Therefore, the required value is 10 m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. A tree breaks due to storm and the broken part bends so that the top of the tree
+            touches the ground making an angle 30° with it. The distance between the foot of the tree to the point where
+            the top touches the ground is 8 m. Find the height of the tree.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMzAwLDIwMCBMMzAwLDUwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjI4MCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gU3RhcnQgKDkwLDIwMCkuIEVuZCAoODQsMTg4KSAoYXBwcm94IGZvciAyMCBkZWcgc2xvcGUgdG8gQSgzMDAsNTApPyBObyBBIGlzIGF0IDMwMCw1MC4gQmFzZSAyNTAsIEggMTUwLiBBbmdsZSAzMSBkZWcpIC0tPg0KICA8IS0tIFN0YXJ0ICg5MCwgMjAwKS4gRW5kIHZlY3RvciAoMjUwLCAtMTUwKS4gVW5pdCgwLjg1LCAtMC41MSkuIFB0KDUwKzM0LCAyMDAtMjApID0gKDg0LCAxODApIC0tPg0KICA8cGF0aCBkPSJNIDkwIDIwMCBBIDQwIDQwIDAgMCAwIDg0IDE4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTAwIiB5PSIxOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+MzDCsDwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE1MCIgeT0iMjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiPjggbTwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjM1IiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjMxMCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTAiIHk9IjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KPC9zdmc+" alt="Broken Tree Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let the broken part be AC and the standing part be BC.</div>
+        <div class="step">Total height of tree = BC + AC.</div>
+        <div class="step">Given distance AB = 8 m and angle \(\theta = 30^\circ\).</div>
+        <div class="step">In \(\triangle ABC\):</div>
+        <div class="step">\(\tan 30^\circ = \frac{BC}{AB} \Rightarrow \frac{1}{\sqrt{3}} = \frac{BC}{8} \Rightarrow BC =
+            \frac{8}{\sqrt{3}}\)</div>
+        <div class="step">\(\cos 30^\circ = \frac{AB}{AC} \Rightarrow \frac{\sqrt{3}}{2} = \frac{8}{AC} \Rightarrow AC =
+            \frac{16}{\sqrt{3}}\)</div>
+        <div class="step">Total height = \(BC + AC = \frac{8}{\sqrt{3}} + \frac{16}{\sqrt{3}}\)</div>
+        <div class="step">\(= \frac{24}{\sqrt{3}}\)</div>
+        <div class="step">Rationalizing: \(\frac{24\sqrt{3}}{3} = 8\sqrt{3}\)</div>
+        <div class="final-answer">Therefore, the required value is \(8\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A contractor plans to install two slides... (height 1.5m @ 30° and height 3m @ 60°).
+            What should be the length of the slide in each case?</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NTAgMzAwIj4NCiAgPCEtLSBTbGlkZSAxIChMZWZ0KSAtLT4NCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDUwKSI+DQogICAgPHBhdGggZD0iTTUwLDUwIEw1MCwxNTAgTDIwMCwxNTAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICA8cmVjdCB4PSI1MCIgeT0iMTMwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgDQogICAgPCEtLSBBbmdsZSAzMCBhdCBDKDIwMCwxNTApLiBTdGFydCAoMTYwLDE1MCkuIEVuZCAoMTY3LDEyOCkgLS0+DQogICAgPHBhdGggZD0iTSAxNjAgMTUwIEEgNDAgNDAgMCAwIDEgMTY3IDEyOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICA8dGV4dCB4PSIxMjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjEwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+MS41IG08L3RleHQ+DQogICAgPHRleHQgeD0iNjAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+U2xpZGUgMTwvdGV4dD4NCiAgICA8dGV4dCB4PSIxMzAiIHk9IjkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj4/PC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjQwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgICA8dGV4dCB4PSIzNSIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjIxMCIgeT0iMTcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8L2c+DQoNCiAgPCEtLSBTbGlkZSAyIChSaWdodCkgLS0+DQogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI4MCwgMCkiPg0KICAgIDxwYXRoIGQ9Ik01MCwyMCBMNTAsMjAwIEwxODAsMjAwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPHJlY3QgeD0iNTAiIHk9IjE4MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgNjAgYXQgUigxODAsMjAwKS4gU3RhcnQgKDE0MCwyMDApLiBFbmQgKDE1NywxNjgpIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTQwIDIwMCBBIDQwIDQwIDAgMCAxIDE1NyAxNjgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgPHRleHQgeD0iMTAwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCiAgICANCiAgICA8dGV4dCB4PSItMTAiIHk9IjExMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj4zIG08L3RleHQ+DQogICAgPHRleHQgeD0iNjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+U2xpZGUgMjwvdGV4dD4NCiAgICA8dGV4dCB4PSIxMzAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICAgIDx0ZXh0IHg9IjQwIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgICA8dGV4dCB4PSIzNSIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5SPC90ZXh0Pg0KICA8L2c+DQo8L3N2Zz4=" alt="Two Slides Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Case 1: For younger children. Height \(h_1 = 1.5\) m, Angle = 30°. Let length be \(l_1\).
+        </div>
+        <div class="step">\(\sin 30^\circ = \frac{h_1}{l_1} \Rightarrow \frac{1}{2} = \frac{1.5}{l_1}\)</div>
+        <div class="step">\(l_1 = 1.5 \times 2 = 3\) m.</div>
+        <div class="step">Case 2: For elder children. Height \(h_2 = 3\) m, Angle = 60°. Let length be \(l_2\).</div>
+        <div class="step">\(\sin 60^\circ = \frac{h_2}{l_2} \Rightarrow \frac{\sqrt{3}}{2} = \frac{3}{l_2}\)</div>
+        <div class="step">\(l_2\sqrt{3} = 6 \Rightarrow l_2 = \frac{6}{\sqrt{3}}\)</div>
+        <div class="step">Rationalizing: \(l_2 = \frac{6\sqrt{3}}{3} = 2\sqrt{3}\) m.</div>
+        <div class="final-answer">Therefore, the required value is 3 m and \(2\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. The angle of elevation of the top of a tower from a point on the ground, which is 30 m
+            away from the foot of the tower, is 30°. Find the height of the tower.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMzAwLDIwMCBMMzAwLDUwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjI4MCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gU2FtZSBhcyBRMiBBPTMwMCw1MCAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4NCAxODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPHRleHQgeD0iMzE1IiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPj88L3RleHQ+DQogIDx0ZXh0IHg9IjE0MCIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiMzMzMiPjMwIG08L3RleHQ+DQoNCiAgPHRleHQgeD0iMzUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMxMCIgeT0iNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQo8L3N2Zz4=" alt="Tower Angle 30">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let height of tower be \(h\). Distance = 30 m. Angle = 30°.</div>
+        <div class="step">\(\tan 30^\circ = \frac{h}{30}\)</div>
+        <div class="step"><span class="formula">\(\frac{1}{\sqrt{3}} = \frac{h}{30}\)</span></div>
+        <div class="step">\(h = \frac{30}{\sqrt{3}}\)</div>
+        <div class="step">Rationalizing: \(h = \frac{30\sqrt{3}}{3} = 10\sqrt{3}\)</div>
+        <div class="final-answer">Therefore, the required value is \(10\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. A kite is flying at a height of 60 m above the ground... inclination ... is 60°. Find
+            the length of the string...</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIj4NCiAgPHBhdGggZD0iTTUwLDIwMCBMMjUwLDIwMCBMMjUwLDIwIFoiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxyZWN0IHg9IjIzMCIgeT0iMTgwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIGF0IEMoNTAsMjAwKS4gQSgyNTAsMjApLiBCYXNlIDIwMC4gSCAxODAuIEFuZ2xlIH40Mi4gLS0+DQogIDwhLS0gU3RhcnQgKDkwLCAyMDApLiBFbmQgdmVjdG9yICgyMDAsIC0xODApLiBVbml0KDAuNzQsIC0wLjY2KS4gRW5kICg4MCwgMTczKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4MCAxNzMiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEwMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPHRleHQgeD0iMjYwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iIzMzMyI+NjAgbTwvdGV4dD4NCiAgPHRleHQgeD0iMTMwIiB5PSI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8dGV4dCB4PSIzNSIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIyNjAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMjUwIiB5PSIxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCjwvc3ZnPg==" alt="Kite Flying Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Height = 60 m. Angle = 60°. Let length of string be \(L\).</div>
+        <div class="step">\(\sin 60^\circ = \frac{60}{L}\)</div>
+        <div class="step"><span class="formula">\(\frac{\sqrt{3}}{2} = \frac{60}{L}\)</span></div>
+        <div class="step">\(L\sqrt{3} = 120 \Rightarrow L = \frac{120}{\sqrt{3}}\)</div>
+        <div class="step">Rationalizing: \(L = \frac{120\sqrt{3}}{3} = 40\sqrt{3}\)</div>
+        <div class="final-answer">Therefore, the required value is \(40\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. A 1.5 m tall boy is standing... angle of elevation... increases from 30° to 60°... Find
+            distance walked.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gR3JvdW5kIExpbmUgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDwhLS0gQm95IFAxIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSI1MCIgeTI9IjIwMCIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgPHRleHQgeD0iNTAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMTAiIHk9IjIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0Ij4xLjVtPC90ZXh0Pg0KDQogIDwhLS0gQm95IFAyIC0tPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjUwIiB4Mj0iMjUwIiB5Mj0iMjAwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iMjQ1IiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+DQoNCiAgPCEtLSBCdWlsZGluZyAtLT4NCiAgPGxpbmUgeDE9IjQyMCIgeTE9IjI1MCIgeDI9IjQyMCIgeTI9IjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI0MjUiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI0MjUiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDI1IiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjQ2MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjMwIG08L3RleHQ+DQoNCiAgPCEtLSBIb3Jpem9udGFsIEV5ZSBMZXZlbCAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iNDIwIiB5Mj0iMjAwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjIwMCIgeDI9IjQyMCIgeTI9IjUwIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjAwIiB4Mj0iNDIwIiB5Mj0iNTAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSBBbmdsZSAzMCBhdCBQKDUwLDIwMCkuIFJheSB0byBBKDQyMCw1MCkuIGR4IDM3MCwgZHkgLTE1MC4gVW5pdCgwLjkyLCAtMC4zNykuIEVuZCAoODcsIDE4NSkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMjAwIEEgNDAgNDAgMCAwIDAgODcgMTg1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjE5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQogIDwhLS0gQW5nbGUgNjAgYXQgUygyNTAsMjAwKS4gUmF5IHRvIEEoNDIwLDUwKS4gZHggMTcwLCBkeSAtMTUwLiBVbml0KDAuNzUsIC0wLjY2KS4gRW5kICgyODAsIDE3NCkgLS0+DQogIDxwYXRoIGQ9Ik0gMjkwIDIwMCBBIDQwIDQwIDAgMCAwIDI4MCAxNzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjMwMCIgeT0iMTkwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSBEaXN0YW5jZSBBcnJvdyAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjgwIiB4Mj0iMjUwIiB5Mj0iMjgwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiAvPg0KICA8dGV4dCB4PSIxNDAiIHk9IjMwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCjwvc3ZnPg==" alt="Boy walking towards building">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Height of building = 30 m. Boy = 1.5 m.</div>
+        <div class="step">Effective height \(h = 30 - 1.5 = 28.5\) m.</div>
+        <div class="step">In first position (Angle 30°), let horizontal distance be \(x\).</div>
+        <div class="step">\(\tan 30^\circ = \frac{28.5}{x} \Rightarrow \frac{1}{\sqrt{3}} = \frac{28.5}{x} \Rightarrow x
+            = 28.5\sqrt{3}\).</div>
+        <div class="step">In second position (Angle 60°), let horizontal distance be \(y\).</div>
+        <div class="step">\(\tan 60^\circ = \frac{28.5}{y} \Rightarrow \sqrt{3} = \frac{28.5}{y} \Rightarrow y =
+            \frac{28.5}{\sqrt{3}}\).</div>
+        <div class="step">Distance walked = \(x - y\)</div>
+        <div class="step">\(= 28.5\sqrt{3} - \frac{28.5}{\sqrt{3}}\)</div>
+        <div class="step">\(= 28.5 (\frac{3 - 1}{\sqrt{3}}) = 28.5 (\frac{2}{\sqrt{3}})\)</div>
+        <div class="step">\(= \frac{57}{\sqrt{3}} = \frac{57\sqrt{3}}{3} = 19\sqrt{3}\)</div>
+        <div class="final-answer">Therefore, the required value is \(19\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. From a point on the ground, the angles of elevation of the bottom and the top of a
+            transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. Find the height of
+            the tower.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBWZXJ0aWNhbCBMaW5lIEMtQS1CIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICANCiAgPHRleHQgeD0iMzA1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMwNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij4yMCBtPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjEyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSI0MCIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjMwMCIgeTI9IjIwMCIgc3Ryb2tlPSIjRTY1MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4gPCEtLSBQQSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iI0U2NTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+ICA8IS0tIFBDIC0tPg0KDQogIDwhLS0gNDUgYXQgUCB0byBBKDMwMCwyMDApLiBkeCAyNTAgZHkgLTEwMC4gVW5pdCgwLjkzLCAtMC4zNykuIEVuZCAoODcsIDI4NSkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMzAwIEEgNDAgNDAgMCAwIDAgODcgMjg1IiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjI5MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMzMzIj40NcKwPC90ZXh0Pg0KDQogIDwhLS0gNjAgYXQgUCB0byBDKDMwMCw1MCkuIGR4IDI1MCBkeSAtMjUwLiBVbml0KDAuNywgLTAuNykuIEVuZCAoNzgsIDI3MikgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMzAwIEEgNDAgNDAgMCAwIDAgNzggMjcyIiBmaWxsPSJub25lIiBzdHJva2U9IiNFNjUxMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI3NSIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Transmission Tower on Building">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let building height AB = 20 m. Tower height BC = \(h\). Let point P be at distance \(x\).
+        </div>
+        <div class="step">For bottom of tower (Angle 45°):</div>
+        <div class="step">\(\tan 45^\circ = \frac{AB}{x} \Rightarrow 1 = \frac{20}{x} \Rightarrow x = 20\) m.</div>
+        <div class="step">For top of tower (Angle 60°):</div>
+        <div class="step">\(\tan 60^\circ = \frac{AB + BC}{x} \Rightarrow \sqrt{3} = \frac{20 + h}{20}\)</div>
+        <div class="step">\(20\sqrt{3} = 20 + h\)</div>
+        <div class="step">\(h = 20\sqrt{3} - 20 = 20(\sqrt{3} - 1)\)</div>
+        <div class="final-answer">Therefore, the required value is \(20(\sqrt{3} - 1)\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A statue, 1.6 m tall, stands on the top of a pedestal... Top of statue is 60°... top of
+            pedestal is 45°. Find height of pedestal.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBWZXJ0aWNhbCBMaW5lIEMtQS1CIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KDQogIDx0ZXh0IHg9IjMwNSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzA1IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjMxNSIgeT0iMTAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiPjEuNiBtPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSI0MCIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KDQogIDwhLS0gU2lnaHQgTGluZXMgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjMwMCIgeTI9IjE1MCIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iMzAwIiB5Mj0iNTAiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA0NSB0byBBKDMwMCwgMTUwKS4gZHggMjUwIGR5IC0xNTAuIFVuaXQgKDAuODUsIC0wLjUxKS4gRW5kICg4NCwgMjgwKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAzMDAgQSA0MCA0MCAwIDAgMCA4NCAyODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjYwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMzMzMiPjQ1wrA8L3RleHQ+DQoNCiAgPCEtLSA2MCB0byBDKDMwMCwgNTApLiBFbmQgKDc4LCAyNzIpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDMwMCBBIDQwIDQwIDAgMCAwIDc4IDI3MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iNzUiIHk9IjIzNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjMzMzIj42MMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Statue on Pedestal">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let pedestal height be \(h\) and horizontal distance be \(x\). Statue = 1.6 m.</div>
+        <div class="step">For top of pedestal (Angle 45°):</div>
+        <div class="step">\(\tan 45^\circ = \frac{h}{x} \Rightarrow 1 = \frac{h}{x} \Rightarrow x = h\).</div>
+        <div class="step">For top of statue (Angle 60°):</div>
+        <div class="step">\(\tan 60^\circ = \frac{h + 1.6}{x}\)</div>
+        <div class="step">\(\sqrt{3} = \frac{h + 1.6}{h}\) (since \(x=h\))</div>
+        <div class="step">\(h\sqrt{3} = h + 1.6\)</div>
+        <div class="step">\(h(\sqrt{3} - 1) = 1.6\)</div>
+        <div class="step">\(h = \frac{1.6}{\sqrt{3} - 1}\)</div>
+        <div class="step">Rationalizing: \(h = \frac{1.6(\sqrt{3} + 1)}{3 - 1} = \frac{1.6(\sqrt{3} + 1)}{2} =
+            0.8(\sqrt{3} + 1)\).</div>
+        <div class="final-answer">Therefore, the required value is \(0.8(\sqrt{3} + 1)\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. The angle of elevation of the top of a building from the foot of the tower is 30°...
+            tower from foot of building is 60°. Tower is 50 m. Find building height.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIzMCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjI1MCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBCdWlsZGluZyAoTGVmdCkgQUIgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjI1MCIgeDI9IjUwIiB5Mj0iMTcwIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPHRleHQgeD0iMzUiIHk9IjE2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzUiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMTAiIHk9IjIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMzMzIiBmb250LXdlaWdodD0iYm9sZCI+PzwvdGV4dD4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgQ0QgLS0+DQogIDxsaW5lIHgxPSI0MDAiIHkxPSIyNTAiIHgyPSI0MDAiIHkyPSI1MCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDx0ZXh0IHg9IjQwNSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjQwNSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSI0MTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj41MCBtPC90ZXh0Pg0KDQogIDwhLS0gRGlhZ29uYWxzIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSIxNzAiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiAvPiA8IS0tIEMgdG8gQSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iNDAwIiB5Mj0iNTAiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIiAvPiA8IS0tIEIgdG8gRCAtLT4NCg0KICA8IS0tIDMwIGF0IEMoNDAwLDI1MCkgdG8gQSg1MCwxNzApLiBkeCAtMzUwIGR5IC04MC4gVW5pdCgtMC45NywgLTAuMjIpLiBFbmQgKDM2MSwgMjQxKSAtLT4NCiAgPHBhdGggZD0iTSAzNjAgMjUwIEEgNDAgNDAgMCAwIDEgMzYxIDI0MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzIwIiB5PSIyNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+MzDCsDwvdGV4dD4NCg0KICA8IS0tIDYwIGF0IEIoNTAsMjUwKSB0byBEKDQwMCw1MCkuIGR4IDM1MCBkeSAtMjAwLiBVbml0KDAuODYsIC0wLjQ5KS4gRW5kICg4NCwgMjMwKSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyNTAgQSA0MCA0MCAwIDAgMCA4NCAyMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0QzMkYyRiIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Building and Tower">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Tower height = 50 m. Let distance between feet be \(x\). Building height \(h\).</div>
+        <div class="step">From building foot to tower top (60°):</div>
+        <div class="step">\(\tan 60^\circ = \frac{50}{x} \Rightarrow \sqrt{3} = \frac{50}{x} \Rightarrow x =
+            \frac{50}{\sqrt{3}}\).</div>
+        <div class="step">From tower foot to building top (30°):</div>
+        <div class="step">\(\tan 30^\circ = \frac{h}{x} \Rightarrow \frac{1}{\sqrt{3}} = \frac{h}{x}\)</div>
+        <div class="step">\(h = \frac{x}{\sqrt{3}} = \frac{50/\sqrt{3}}{\sqrt{3}} = \frac{50}{3}\)</div>
+        <div class="final-answer">Therefore, the required value is \(16\frac{2}{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">10. Two poles of equal heights... road 80 m wide... angles 60° and 30°. Find height and
+            distances.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIzMCIgeTE9IjI1MCIgeDI9IjQ3MCIgeTI9IjI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBQb2xlIDEgKExlZnQpIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSI1MCIgeTI9IjUwIiBzdHJva2U9IiMxNTY1QzAiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPHRleHQgeD0iNDAiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI0MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9sZSAyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSI0NTAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDx0ZXh0IHg9IjQ1MCIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjQ1MCIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgUCAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjUwIiByPSIzIiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSIxOTUiIHk9IjI3NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iMjAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSA2MCBMZWZ0IGZyb20gUCgyMDAsMjUwKSB0byBBKDUwLDUwKS4gZHggLTE1MCBkeSAtMjAwLiBVbml0KC0wLjYsIC0wLjgpLiBFbmQgKDE3NiwgMjE4KSAtLT4NCiAgPHBhdGggZD0iTSAxNjAgMjUwIEEgNDAgNDAgMCAwIDEgMTc2IDIxOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTU2NUMwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCg0KICA8IS0tIDMwIFJpZ2h0IGZyb20gUCB0byBEKDQ1MCw1MCkuIGR4IDI1MCBkeSAtMjAwLiBVbml0KDAuNzgsIC0wLjYyKS4gRW5kICgyMzEsIDIyNSkgLS0+DQogIDxwYXRoIGQ9Ik0gMjQwIDI1MCBBIDQwIDQwIDAgMCAwIDIzMSAyMjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE1NjVDMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjkwIiB4Mj0iNDUwIiB5Mj0iMjkwIiBzdHJva2U9IiMzMzMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdykiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiAvPg0KICA8dGV4dCB4PSIyMzAiIHk9IjMxNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj44MCBtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Two Poles on Road">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let height of poles be \(h\). Let point be at distance \(x\) from first pole so \((80-x)\)
+            from second.</div>
+        <div class="step">First pole (Angle 60°): \(\tan 60^\circ = \frac{h}{x} \Rightarrow h = x\sqrt{3}\).</div>
+        <div class="step">Second pole (Angle 30°): \(\tan 30^\circ = \frac{h}{80 - x} \Rightarrow \frac{1}{\sqrt{3}} =
+            \frac{h}{80 - x} \Rightarrow h = \frac{80 - x}{\sqrt{3}}\).</div>
+        <div class="step">Equating \(h\):</div>
+        <div class="step">\(x\sqrt{3} = \frac{80 - x}{\sqrt{3}}\)</div>
+        <div class="step">\(3x = 80 - x \Rightarrow 4x = 80 \Rightarrow x = 20\).</div>
+        <div class="step">Distances are 20 m and 60 m.</div>
+        <div class="step">Height \(h = 20\sqrt{3}\).</div>
+        <div class="final-answer">Therefore, the required value is Height: \(20\sqrt{3}\) m; Distances: 20 m, 60 m.
+        </div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">11. A TV tower... 60°... 20 m away... 30°. Find height and width.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjI1MCIgeDI9IjQ4MCIgeTI9IjI1MCIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIC0tPg0KICA8bGluZSB4MT0iNDUwIiB5MT0iMjUwIiB4Mj0iNDUwIiB5Mj0iNTAiIHN0cm9rZT0iIzQzQTA0NyIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjQ1NSIgeT0iNDUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjQ1NSIgeT0iMjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgQyAoMzMwKSBhbmQgRCgxNTApIC0tPg0KICA8Y2lyY2xlIGN4PSIzMzAiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjMyNSIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIyNTAiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjE0NSIgeT0iMjc1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIzMzAiIHkxPSIyNTAiIHgyPSI0NTAiIHkyPSI1MCIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjI1MCIgeDI9IjQ1MCIgeTI9IjUwIiBzdHJva2U9IiM0M0EwNDciIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgYXQgQygzMzAsMjUwKSB0byBBKDQ1MCw1MCkuIGR4IDEyMCBkeSAtMjAwLiBVbml0KDAuNSwgLTAuODUpLiBFbmQgKDM1MCwgMjE2KSAtLT4NCiAgPHBhdGggZD0iTSAzNzAgMjUwIEEgNDAgNDAgMCAwIDAgMzUwIDIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDNBMDQ3IiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzgwIiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyI+NjDCsDwvdGV4dD4NCg0KICA8IS0tIDMwIGF0IEQoMTUwLDI1MCkgdG8gQSg0NTAsNTApLiBkeCAzMDAgZHkgLTIwMC4gVW5pdCgwLjgzLCAtMC41NSkuIEVuZCAoMTgzLCAyMjgpIC0tPg0KICA8cGF0aCBkPSJNIDE5MCAyNTAgQSA0MCA0MCAwIDAgMCAxODMgMjI4IiBmaWxsPSJub25lIiBzdHJva2U9IiM0M0EwNDciIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyMTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIxNTAiIHkxPSIyODAiIHgyPSIzMzAiIHkyPSIyODAiIHN0cm9rZT0iIzMzMyIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiIC8+DQogIDx0ZXh0IHg9IjIyMCIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMzMzMiPjIwIG08L3RleHQ+DQo8L3N2Zz4=" alt="Canal Tower Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let height be \(h\) and width of canal be \(x\).</div>
+        <div class="step">First point (60°): \(\tan 60^\circ = \frac{h}{x} \Rightarrow h = x\sqrt{3}\).</div>
+        <div class="step">Second point (30°) at distance \((x+20)\):</div>
+        <div class="step">\(\tan 30^\circ = \frac{h}{x+20} \Rightarrow \frac{1}{\sqrt{3}} = \frac{h}{x+20} \Rightarrow
+            h\sqrt{3} = x+20\).</div>
+        <div class="step">Substitute \(h = x\sqrt{3}\):</div>
+        <div class="step">\((x\sqrt{3})\sqrt{3} = x+20 \Rightarrow 3x = x+20\)</div>
+        <div class="step">\(2x = 20 \Rightarrow x = 10\) m.</div>
+        <div class="step">Height \(h = 10\sqrt{3}\) m.</div>
+        <div class="final-answer">Therefore, the required value is Height: \(10\sqrt{3}\) m; Width: 10 m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">12. From top of 7 m building... elevation 60°... depression 45°. Find height of tower.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEJ1aWxkaW5nIChMZWZ0KSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMzAwIiB4Mj0iNTAiIHkyPSIyMDAiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjM1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjM1IiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjEwIiB5PSIyNjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzMzMyIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDEwLDI2MCkiPjcgbTwvdGV4dD4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSIzMDAiIHkxPSIzMDAiIHgyPSIzMDAiIHkyPSIyMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzA1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjMwNSIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5FPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDUiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDwhLS0gSG9yaXpvbnRhbCBBRSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMjAwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4NCg0KICA8IS0tIFNpZ2h0IExpbmVzIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMDAiIHgyPSIzMDAiIHkyPSIyMCIgc3Ryb2tlPSIjRkI4QzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iMzAwIiB5Mj0iMzAwIiBzdHJva2U9IiNGQjhDMDAiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgRWxldmF0aW9uIGF0IEEoNTAsMjAwKSB0byBDKDMwMCwyMCkuIGR4IDI1MCBkeSAtMTgwLiBVbml0KDAuODEsIC0wLjU4KS4gRW5kICg4MiwgMTc3KSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMCA4MiAxNzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSA0NSBEZXByZXNzaW9uIGF0IEEgdG8gRCgzMDAsMzAwKS4gZHggMjUwIGR5IDEwMC4gVW5pdCgwLjkyLCAwLjM3KS4gRW5kICg4NywgMjE1KSAtLT4NCiAgPHBhdGggZD0iTSA5MCAyMDAgQSA0MCA0MCAwIDAgMSA4NyAyMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZCOEMwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjQ1wrA8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Cable Tower Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Building height \(AB = 7\) m. Let tower be CD.</div>
+        <div class="step">Draw horizontal line from top of building A to tower at E.</div>
+        <div class="step">Angle of depression of foot is 45° \(\Rightarrow\) Angle of elevation from foot to top of
+            building is 45°.</div>
+        <div class="step">\(\tan 45^\circ = \frac{7}{\text{distance}} \Rightarrow \text{distance} = 7\) m. So \(AE = 7\)
+            m.</div>
+        <div class="step">For top of tower (Angle 60°): In \(\triangle AEC\), \(\tan 60^\circ = \frac{CE}{AE}\).</div>
+        <div class="step">\(\sqrt{3} = \frac{CE}{7} \Rightarrow CE = 7\sqrt{3}\).</div>
+        <div class="step">Total height \(CD = CE + ED = 7\sqrt{3} + 7\) (since \(ED = AB = 7\)).</div>
+        <div class="step">\(CD = 7(\sqrt{3} + 1)\).</div>
+        <div class="final-answer">Therefore, the required value is \(7(\sqrt{3} + 1)\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">13. As observed from top of 75 m lighthouse... depressions 30° and 45°. Find distance
+            between ships.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGxpbmUgeDE9IjIwIiB5MT0iMzAwIiB4Mj0iNDAwIiB5Mj0iMzAwIiBzdHJva2U9IiM4RTI0QUEiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gTGlnaHRob3VzZSAoUmlnaHQpIC0tPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iMzAwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzhFMjRBQSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjM1NSIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzNTUiIHk9IjUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzNjAiIHk9IjE3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMzMzIj43NSBtPC90ZXh0Pg0KDQogIDwhLS0gVG9wIEhvcml6b250YWwgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjUwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPg0KICA8dGV4dCB4PSI0MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQoNCiAgPCEtLSBQb2ludHMgQygyMTAsIDMwMCkgYW5kIEQoMTAwLCAzMDApIC0tPg0KICA8Y2lyY2xlIGN4PSIyMTAiIGN5PSIzMDAiIHI9IjMiIGZpbGw9IiMzMzMiLz4NCiAgPHRleHQgeD0iMjA1IiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQoNCiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9Ijk1IiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjIxMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjUwIiBzdHJva2U9IiM4RTI0QUEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzhFMjRBQSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA0NSBEZXByZXNzaW9uIGF0IFAoNTAsNTApPyBObywgQSgzNTAsNTApLiBQIGlzIGxlZnQuIEFuZ2xlIFAtQS1DLiBGYWNlIExlZnQuIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMyOSA4OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPCEtLSBDYWxjOiBBKDM1MCw1MCkgdG8gQygyMTAsMzAwKS4gZHggLTE0MCBkeSAyNTAuIFVuaXQoLTAuNDksIDAuODcpLiBFbmQgKDMzMCwgODUpIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMzMCA4NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMjgwIiB5PSI4MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj40NcKwPC90ZXh0Pg0KDQogIDwhLS0gMzAgRGVwcmVzc2lvbiB0byBEKDEwMCwzMDApLiBkeCAtMjUwIGR5IDI1MC4gVW5pdCgtMC43LCAwLjcpLiBFbmQgKDMyMiwgNzgpIC0tPg0KICA8cGF0aCBkPSJNIDMxMCA1MCBBIDQwIDQwIDAgMCAwIDMyMiA3OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOEUyNEFBIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMjEwIiB5PSI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Lighthouse Ships">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Height \(h = 75\) m. Let ships be at distances \(y\) (near) and \(x\) (far).</div>
+        <div class="step">Near ship (Angle 45°): \(\tan 45^\circ = \frac{75}{y} \Rightarrow 1 = \frac{75}{y} \Rightarrow
+            y = 75\) m.</div>
+        <div class="step">Far ship (Angle 30°): \(\tan 30^\circ = \frac{75}{x} \Rightarrow \frac{1}{\sqrt{3}} =
+            \frac{75}{x} \Rightarrow x = 75\sqrt{3}\) m.</div>
+        <div class="step">Distance between ships = \(x - y\)</div>
+        <div class="step">\(= 75\sqrt{3} - 75 = 75(\sqrt{3} - 1)\).</div>
+        <div class="final-answer">Therefore, the required value is \(75(\sqrt{3} - 1)\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">14. A 1.2 m tall girl spots a balloon... height 88.2 m... angle reduces 60° to 30°. Find
+            distance travelled.</div>
+            here]</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjQ4MCIgeTI9IjMwMCIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIEdpcmwgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMwMCIgeDI9IjUwIiB5Mj0iMjUwIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSI0NSIgeT0iMzIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KICA8dGV4dCB4PSI0NSIgeT0iMjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSI1IiB5PSIyODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+MS4ybTwvdGV4dD4NCg0KICA8IS0tIEV5ZSBMZXZlbCAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iNDUwIiB5Mj0iMjUwIiBzdHJva2U9IiM1NTUiIHN0cm9rZS1kYXNoYXJyYXk9IjQiLz4NCg0KICA8IS0tIEJhbGxvb24gQSAoMTUwLDgwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iODAiIHI9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iOTAiIHgyPSIxNTAiIHkyPSIzMDAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLWRhc2hhcnJheT0iMiIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDx0ZXh0IHg9IjE0MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIA0KICA8IS0tIEJhbGxvb24gQiAoMzUwLDgwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMzUwIiBjeT0iODAiIHI9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMzUwIiB5MT0iOTAiIHgyPSIzNTAiIHkyPSIzMDAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDx0ZXh0IHg9IjM0MCIgeT0iNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMjAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiPjg4LjIgbTwvdGV4dD4NCg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSIxNTAiIHkyPSI4MCIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iODAiIHN0cm9rZT0iI0Q4MUI2MCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQoNCiAgPCEtLSA2MCB0byBBKDE1MCw4MCkuIGR4IDEwMCBkeSAtMTcwLiBVbml0KDAuNSwgLTAuODYpLiBFbmQgKDcwLCAyMTYpIC0tPg0KICA8cGF0aCBkPSJNIDkwIDI1MCBBIDQwIDQwIDAgMCAwIDcwIDIxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRDgxQjYwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iOTAiIHk9IjIxMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj42MMKwPC90ZXh0Pg0KDQogIDwhLS0gMzAgdG8gQigzNTAsODApLiBkeCAzMDAgZHkgLTE3MC4gVW5pdCgwLjg3LCAtMC40OSkuIEVuZCAoODUsIDIzMCkgLS0+DQogIDxwYXRoIGQ9Ik0gOTAgMjUwIEEgNDAgNDAgMCAwIDAgODUgMjMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNEODFCNjAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIxMjAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSIjMzMzIj4zMMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Balloon Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Balloon height from ground = 88.2 m. Girl height = 1.2 m.</div>
+        <div class="step">Effective height \(h = 88.2 - 1.2 = 87\) m.</div>
+        <div class="step">Position 1 (Angle 60°): Let horizontal distance be \(x\).</div>
+        <div class="step">\(\tan 60^\circ = \frac{87}{x} \Rightarrow \sqrt{3} = \frac{87}{x} \Rightarrow x =
+            \frac{87}{\sqrt{3}} = 29\sqrt{3}\).</div>
+        <div class="step">Position 2 (Angle 30°): Let horizontal distance be \(y\).</div>
+        <div class="step">\(\tan 30^\circ = \frac{87}{y} \Rightarrow \frac{1}{\sqrt{3}} = \frac{87}{y} \Rightarrow y =
+            87\sqrt{3}\).</div>
+        <div class="step">Distance travelled = \(y - x\)</div>
+        <div class="step">\(= 87\sqrt{3} - 29\sqrt{3} = 58\sqrt{3}\).</div>
+        <div class="final-answer">Therefore, the required value is \(58\sqrt{3}\) m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">15. A straight highway leads to foot of tower... car at 30°... 6 seconds later 60°. Find
+            time taken.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIj4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iOSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMCw2IEw5LDMgeiIgZmlsbD0iIzMzMyIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjQwMCIgeTI9IjMwMCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCg0KICA8IS0tIFRvd2VyIChSaWdodCkgLS0+DQogIDxsaW5lIHgxPSIzNTAiIHkxPSIzMDAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMzU1IiB5PSI0NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzU1IiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQoNCiAgPCEtLSBUb3AgSG9yaXpvbnRhbCBmcm9tIEEoMzUwLDUwKSAtLT4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjUwIiB4Mj0iMzUwIiB5Mj0iNTAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIvPg0KDQogIDwhLS0gQygyNTApIEQoMTAwKSAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMzAwIiByPSIzIiBmaWxsPSIjMzMzIi8+DQogIDx0ZXh0IHg9IjI0NSIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KDQogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMwMCIgcj0iMyIgZmlsbD0iIzMzMyIvPg0KICA8dGV4dCB4PSI5NSIgeT0iMzI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIj5EPC90ZXh0Pg0KDQogIDxsaW5lIHgxPSIyNTAiIHkxPSIzMDAiIHgyPSIzNTAiIHkyPSI1MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjUwIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KDQogIDwhLS0gNjAgYXQgQSB0byBDKDI1MCwzMDApLiBkeCAtMTAwIGR5IDI1MC4gVW5pdCgtMC4zNywgMC45MykuIEVuZCAoMzM1LCA4NykgLS0+DQogIDxwYXRoIGQ9Ik0gMzEwIDUwIEEgNDAgNDAgMCAwIDAgMzM1IDg3IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyODAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjYwwrA8L3RleHQ+DQoNCiAgPCEtLSAzMCBhdCBBIHRvIEQoMTAwLDMwMCkuIGR4IC0yNTAgZHkgMjUwLiBVbml0KC0wLjcsIDAuNykuIEVuZCAoMzIyLCA3OCkgLS0+DQogIDxwYXRoIGQ9Ik0gMzEwIDUwIEEgNDAgNDAgMCAwIDAgMzIyIDc4IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8dGV4dCB4PSIyNjAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMzMzMiPjMwwrA8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjMzMCIgeDI9IjI1MCIgeTI9IjMzMCIgc3Ryb2tlPSIjMzMzIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIzNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyI+NiBzZWM8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Car Speed Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Let height be \(h\). Distances \(x\) (at 30°) and \(y\) (at 60°).</div>
+        <div class="step">At 60°: \(\tan 60^\circ = \frac{h}{y} \Rightarrow h = y\sqrt{3}\).</div>
+        <div class="step">At 30°: \(\tan 30^\circ = \frac{h}{x} \Rightarrow h = \frac{x}{\sqrt{3}}\).</div>
+        <div class="step">Equating \(h\): \(\frac{x}{\sqrt{3}} = y\sqrt{3} \Rightarrow x = 3y\).</div>
+        <div class="step">Distance travelled in 6 seconds = \(x - y = 3y - y = 2y\).</div>
+        <div class="step">Time to cover distance \(2y\) is 6 seconds.</div>
+        <div class="step">Time to cover distance \(y\) is \(\frac{6}{2} = 3\) seconds.</div>
+        <div class="final-answer">Therefore, the required value is 3 seconds.</div>
+    </div>
+
+
+
+</body>
+
+</html>

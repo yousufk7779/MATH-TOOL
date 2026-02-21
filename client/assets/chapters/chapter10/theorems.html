@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles - Theorms</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through
+            the point of contact.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTkwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjIwMCIgeTI9IjIzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIzMCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBQb2ludCBQIC0tPg0KICA8dGV4dCB4PSIyMTAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBYWSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjMwIiB4Mj0iMzUwIiB5Mj0iMjMwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5YPC90ZXh0Pg0KICA8dGV4dCB4PSIzNDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+WTwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjgwIiBjeT0iMjMwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIyODUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gTGluZSBPUSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjI4MCIgeTI9IjIzMCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2wgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIwMCwyMjAgMjEwLDIyMCAyMTAsMjMwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Theorem 10.1 Diagram">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O and a tangent XY at a
+            point P.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> OP is perpendicular to XY (OP ⊥ XY).</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Take a point Q on tangent XY, other
+            than P. Join OQ. Let OQ intersect the circle at point R.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">We have a point Q on tangent XY (other than contact point P).</div>
+        <div class="step">Therefore, point Q must lie <strong>outside</strong> the circle.</div>
+        <div class="step">(If Q was inside, XY would be a secant, not a tangent).</div>
+        <div class="step">Since Q is outside, the distance OQ is greater than the radius of the circle.</div>
+        <div class="step">So, length OQ > length OP (since OP is the radius).</div>
+        <div class="step">This is true for <strong>every</strong> point on line XY, except point P.</div>
+        <div class="step">It means OP is the <strong>shortest distance</strong> from center O to the line XY.</div>
+        <div class="step">We know that the shortest distance from a point to a line is the perpendicular distance.</div>
+        <div class="step">Therefore, OP ⊥ XY.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the tangent at any point of
+            a circle is perpendicular to the radius through the point of contact.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI2MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTQwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIEV4dGVybmFsIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMzMwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQogIA0KICA8IS0tIFRhbmdlbnQgUG9pbnRzIFEgYW5kIFIgY2FsY3VsYXRlZCAtLT4NCiAgPCEtLSBUYW5nZW50IGNvbnRhY3QgcG9pbnRzIGZvciBjaXJjbGUgKDE1MCwxNTApIHI9NjAgZnJvbSBQKDMyMCwxNTApIC0tPg0KICA8IS0tIGRpc3RhbmNlIE9QID0gMTcwLiBhbmdsZSA9IGFjb3MoNjAvMTcwKSA9IDY5LjMgZGVnIC0tPg0KICA8IS0tIFEgaXMgYXQgYW5nbGUgLTY5LjMsIFIgYXQgKzY5LjMgcmVsYXRpdmUgdG8gT1AgbGluZT8gTm8sIE9QIGlzIGhvcml6b250YWwgLS0+DQogIDwhLS0gV2FpdCwgYW5nbGUgaXMgYWNvcyhyL2QpLiBRKHgseSkgPSAoMTUwICsgNjAqY29zKGEpLCAxNTAgLSA2MCpzaW4oYSkpIC0tPg0KICA8IS0tIEFjdHVhbGx5IGJhc2ljIGdlb21ldHJ5OiBRIGlzICgxNTAgKyA2MCo2MC8xNzAsIDE1MCAtIDYwKnNxcnQoMTcwXjItNjBeMikvMTcwKSBhcHByb3ggLS0+DQogIDwhLS0gTGV0J3MgbWF4aW1pemUgY2xhcml0eSB2aXN1YWxseS4gUSBhcHByb3ggYXQgKDE3MSwgOTMpLCBSIGF0ICgxNzEsIDIwNykgLS0+DQogIA0KICA8IS0tIFRhbmdlbnQgUFEgLS0+DQogIDxsaW5lIHgxPSIzMjAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSI5MyIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTcwIiB5PSI4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBQUiAtLT4NCiAgPGxpbmUgeDE9IjMyMCIgeTE9IjE1MCIgeDI9IjE3MSIgeTI9IjIwNyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSIyMDciIHI9IjMiIGZpbGw9ImJsYWNrIi8+DQogIDx0ZXh0IHg9IjE3MCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5SPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpaSBPUSBhbmQgT1IgLS0+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSIyMDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBMaW5lIE9QIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMzIwIiB5Mj0iMTUwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ii8+DQogIA0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbHMgLS0+DQogIDwhLS0gQXBwcm94aW1hdGUgcHJvamVjdGlvbiBmb3Igc3ltYm9sIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSIxNjUsMTA3IDE3OCwxMTIgMTg0LDk4IiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTY1LDE5MyAxNzgsMTg4IDE4NCwyMDIiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPg0KICANCiAgPCEtLSBFcXVhbGl0eSBNYXJrcyAtLT4NCiAgPGxpbmUgeDE9IjI0MCIgeTE9IjExNSIgeDI9IjI1MCIgeTI9IjEyNSIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjQwIiB5MT0iMTg1IiB4Mj0iMjUwIiB5Mj0iMTc1IiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KPC9zdmc+" alt="Theorem 10.2 Diagram">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. An external point P.
+            Two tangents PQ and PR drawn from P to the circle.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Length PQ = Length PR.</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join center O to points P, Q, and R.
+        </div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">PQ is a tangent at Q and OQ is the radius.</div>
+        <div class="step">According to <strong style="color: #D32F2F;">Theorem 10.1 (Radius is perpendicular to
+                tangent)</strong>:</div>
+        <div class="step">\(\angle OQP = 90^\circ\).</div>
+        <div class="step">Similarly, PR is a tangent at R and OR is the radius.</div>
+        <div class="step">So, \(\angle ORP = 90^\circ\).</div>
+        <div class="step">Now, consider the right-angled triangles \(\triangle OQP\) and \(\triangle ORP\).</div>
+        <div class="step">\(OQ = OR\) (Radii of the same circle are equal).</div>
+        <div class="step">\(OP = OP\) (Common hypotenuse side).</div>
+        <div class="step">By <strong style="color: #D32F2F;">RHS Congruence Rule</strong> (Right angle - Hypotenuse -
+            Side):</div>
+        <div class="step">\(\triangle OQP \cong \triangle ORP\).</div>
+        <div class="step">Since the triangles are congruent, their corresponding parts are equal (CPCT).</div>
+        <div class="step">Therefore, \(PQ = PR\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+
+</body>
+
+</html>

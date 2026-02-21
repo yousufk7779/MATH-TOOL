@@ -1,3 +1,4 @@
+
 import React, { memo } from "react";
 import { StyleSheet, View, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
@@ -5,92 +6,35 @@ import { useNavigation } from "@react-navigation/native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import QuestionCard from "@/components/solution/QuestionCard";
-import TheoremCard from "@/components/solution/TheoremCard";
-import { JiguuColors, Spacing, Typography } from "@/constants/theme";
+import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { useSavedItems } from "@/context/SavedItemsContext";
-import { getChapterContent } from "@/data/chapterContent";
+// import { ContentService } from "@/services/ContentService"; // Removed
+
+// Helper component to load and render a single bookmarked item
+const BookmarkItem = memo(({ item }: { item: any }) => {
+    // Placeholder logic since we removed HTML content service
+    // In the future, we will look up the question in chapterContent.ts using item.id and item.chapterId
+
+    return (
+        <View style={styles.itemContainer}>
+            <View style={styles.itemHeader}>
+                <ThemedText style={styles.chapterTitle}>{item.chapterId.toUpperCase()}</ThemedText>
+                <View style={styles.badge}>
+                    <ThemedText style={styles.badgeText}>{item.type}</ThemedText>
+                </View>
+            </View>
+            <View style={styles.panelContainer}>
+                <ThemedText style={{ padding: 20, textAlign: 'center', color: JiguuColors.textSecondary }}>
+                    Bookmark ID: {item.id} (Content loading pending migration)
+                </ThemedText>
+            </View>
+        </View>
+    );
+});
 
 function BookmarksScreen() {
     const { bookmarks } = useSavedItems();
     const navigation = useNavigation();
-
-    const renderItem = ({ item }: { item: any }) => {
-        // We need to fetch the actual content based on the ID.
-        // This is a bit inefficient if we have many bookmarks, but works for limited set.
-        // Ideally SavedItem should store enough data or we have a quick lookup map.
-        // Since we have getChapterContent(chapterId), we can look it up.
-
-        const content = getChapterContent(item.chapterId);
-        if (!content) return null;
-
-        if (item.type === "question") {
-            // Find within exercises
-            for (const ex of content.exercises) {
-                const q = ex.questions.find(q => q.id === item.id);
-                if (q) {
-                    return (
-                        <View style={styles.itemContainer}>
-                            <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                            <QuestionCard question={q} accentColor={JiguuColors.accent1} chapterId={item.chapterId} />
-                        </View>
-                    );
-                }
-            }
-            // Check examples (sometimes marked as question type if ambiguous, but let's check examples too)
-            const ex = content.examples.find(e => e.id === item.id);
-            if (ex) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
-                        <QuestionCard
-                            question={{
-                                id: ex.id,
-                                number: ex.number,
-                                question: ex.question,
-                                solution: ex.solution,
-                                answer: ex.answer
-                            }}
-                            accentColor={JiguuColors.accent1}
-                            chapterId={item.chapterId}
-                        />
-                    </View>
-                );
-            }
-        } else if (item.type === "theorem") {
-            const t = content.theorems?.find(t => t.id === item.id);
-            if (t) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title}</ThemedText>
-                        <TheoremCard theorem={t} chapterId={item.chapterId} />
-                    </View>
-                );
-            }
-        } else if (item.type === "example") {
-            const ex = content.examples.find(e => e.id === item.id);
-            if (ex) {
-                return (
-                    <View style={styles.itemContainer}>
-                        <ThemedText style={styles.chapterTitle}>{content.title} - Example</ThemedText>
-                        <QuestionCard
-                            question={{
-                                id: ex.id,
-                                number: ex.number,
-                                question: ex.question,
-                                solution: ex.solution,
-                                answer: ex.answer
-                            }}
-                            accentColor={JiguuColors.accent1}
-                            chapterId={item.chapterId}
-                        />
-                    </View>
-                );
-            }
-        }
-
-        return null;
-    };
 
     return (
         <ScreenWrapper showBackButton>
@@ -99,7 +43,7 @@ function BookmarksScreen() {
             </View>
             <FlatList
                 data={bookmarks}
-                renderItem={renderItem}
+                renderItem={({ item }) => <BookmarkItem item={item} />}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={[
                     styles.listContent,
@@ -117,8 +61,6 @@ function BookmarksScreen() {
     );
 }
 
-export default memo(BookmarksScreen);
-
 const styles = StyleSheet.create({
     header: {
         paddingHorizontal: Spacing.xl,
@@ -130,20 +72,52 @@ const styles = StyleSheet.create({
         color: JiguuColors.textPrimary,
     },
     listContent: {
-        paddingHorizontal: Spacing.xl,
+        paddingHorizontal: Spacing.md,
         paddingBottom: 100,
     },
     emptyContent: {
         flex: 1,
         justifyContent: "center",
+        alignItems: "center"
     },
     itemContainer: {
         marginBottom: Spacing.lg,
+        backgroundColor: JiguuColors.surface,
+        borderRadius: BorderRadius.md,
+        overflow: 'hidden',
+        borderWidth: 1,
+        borderColor: JiguuColors.border
+    },
+    itemHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: Spacing.sm,
+        backgroundColor: JiguuColors.surfaceLight,
+        borderBottomWidth: 1,
+        borderBottomColor: JiguuColors.border
     },
     chapterTitle: {
         ...Typography.small,
+        fontWeight: 'bold',
         color: JiguuColors.textSecondary,
-        marginBottom: Spacing.xs,
-        fontFamily: "Nunito_600SemiBold",
     },
+    badge: {
+        backgroundColor: JiguuColors.accent1,
+        paddingHorizontal: 8,
+        paddingVertical: 2,
+        borderRadius: 4,
+    },
+    badgeText: {
+        ...Typography.caption,
+        color: '#fff',
+        fontWeight: 'bold',
+        textTransform: 'uppercase'
+    },
+    panelContainer: {
+        minHeight: 50,
+        backgroundColor: JiguuColors.surface
+    }
 });
+
+export default memo(BookmarksScreen);

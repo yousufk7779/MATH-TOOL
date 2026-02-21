@@ -1,0 +1,50 @@
+<svg width="500" height="250" xmlns="http://www.w3.org/2000/svg">
+    <!-- Styles -->
+    <style>
+        .main-line { stroke: #000; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .dashed-line { stroke: #000; stroke-width: 2.5; fill: none; stroke-dasharray: 6,4; stroke-linecap: round; }
+        .text { font-family: "Times New Roman", serif; font-size: 20px; font-weight: bold; fill: #000; }
+        .dot { fill: #000; }
+        .angle-arc { stroke: #4682B4; stroke-width: 2; fill: none; } /* SteelBlue */
+    </style>
+
+    <!-- Triangle ABC (Smaller) -->
+    <!-- A(100, 50), B(60, 180), C(140, 180) -->
+    <path d="M 100,50 L 60,180 L 140,180 Z" class="main-line" />
+    
+    <!-- Triangle DEF (Larger) -->
+    <!-- D(350, 20), E(250, 220), F(450, 220) -->
+    <path d="M 350,20 L 250,220 L 450,220 Z" class="main-line" />
+
+    <!-- Points P and Q on DE and DF -->
+    <!-- Line PQ (Dashed) -->
+    <line x1="300" y1="120" x2="400" y2="120" class="dashed-line" />
+    
+    <!-- Dots at P and Q -->
+    <circle cx="300" cy="120" r="5" class="dot" />
+    <circle cx="400" cy="120" r="5" class="dot" />
+
+    <!-- Angle Arcs -->
+    
+    <!-- Angle A in ABC -->
+    <!-- Vertex A(100, 50). Legs to B(60, 180) and C(140, 180). -->
+    <!-- Draw a simple arc near A -->
+    <path d="M 94,70 A 20,20 0 0,0 106,70" class="angle-arc" />
+    
+    <!-- Angle D in DEF -->
+    <!-- Vertex D(350, 20). Legs to E(250, 220) and F(450, 220). -->
+    <path d="M 340,45 A 25,25 0 0,0 360,45" class="angle-arc" />
+
+    <!-- Labels -->
+    <text x="100" y="40" class="text" text-anchor="middle">A</text>
+    <text x="50" y="200" class="text" text-anchor="end">B</text>
+    <text x="150" y="200" class="text" text-anchor="start">C</text>
+    
+    <text x="350" y="15" class="text" text-anchor="middle">D</text>
+    <text x="240" y="240" class="text" text-anchor="end">E</text>
+    <text x="460" y="240" class="text" text-anchor="start">F</text>
+    
+    <text x="290" y="125" class="text" text-anchor="end">P</text>
+    <text x="410" y="125" class="text" text-anchor="start">Q</text>
+
+</svg>

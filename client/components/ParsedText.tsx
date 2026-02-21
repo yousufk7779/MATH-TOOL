@@ -1,87 +1,92 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, useWindowDimensions, ViewStyle, TextStyle } from 'react-native';
+import RenderHtml from 'react-native-render-html';
+import { JiguuColors } from '@/constants/theme';
 
 interface ParsedTextProps {
     children: string;
     style?: any;
     Component?: React.ComponentType<any>;
     accentColor?: string;
-    // If we need to pass props to the underlying component
-    [key: string]: any;
+    classesStyles?: any;
+    tagsStyles?: any;
 }
 
-export const ParsedText = ({ children, style, Component = Text, accentColor, ...rest }: ParsedTextProps) => {
-    if (!children) return null;
-    const parts = children.split(/({{frac}}.*?{{over}}.*?{{endfrac}}|{{ref}}.*?{{endref}})/g);
+// Global styles for HTML content tags
+const defaultTagsStyles = {
+    body: {
+        fontSize: 18,
+        color: JiguuColors.textPrimary,
+        fontFamily: 'Kalam_400Regular',
+        lineHeight: 28,
+    },
+    p: {
+        marginBottom: 8,
+        marginTop: 0,
+        fontFamily: 'Kalam_400Regular',
+    },
+    b: {
+        fontFamily: 'Kalam_700Bold',
+    },
+    strong: {
+        fontFamily: 'Kalam_700Bold',
+    },
+    i: {
+        fontStyle: 'italic',
+        fontFamily: 'Kalam_400Regular',
+    },
+    em: {
+        fontStyle: 'italic',
+        fontFamily: 'Kalam_400Regular',
+    },
+    div: {
+        marginBottom: 4,
+        fontFamily: 'Kalam_400Regular',
+    },
+    span: {
+        fontFamily: 'Kalam_400Regular',
+    }
+};
 
-    // Helper to flatten style and get color (for separator)
-    const flattenedStyle = StyleSheet.flatten(style);
-    const textColor = flattenedStyle?.color || '#000';
+export const ParsedText = ({ children, style, Component, accentColor, classesStyles, tagsStyles, ...rest }: ParsedTextProps) => {
+    const { width } = useWindowDimensions();
+
+    if (!children) return null;
+
+    // Flatten incoming style to apply to base body style
+    const flattenedStyle = StyleSheet.flatten(style) || {};
+
+    // Merge incoming styles with default tag styles
+    const dynamicTagsStyles = {
+        ...defaultTagsStyles,
+        ...tagsStyles,
+        body: {
+            ...defaultTagsStyles.body,
+            ...tagsStyles?.body,
+            ...flattenedStyle,
+            marginBottom: 0,
+        }
+    };
+
+    // Use passed classesStyles or keep empty object
+    const dynamicClassesStyles = {
+        ...classesStyles,
+    };
+
+    // Wrap in a div to ensure body styles apply if content is just text
+    const htmlContent = `<body>${children}</body>`;
 
     return (
-        <Component style={style} {...rest}>
-            {parts.map((part, index) => {
-                const fractionMatch = part.match(/{{frac}}(.*?){{over}}(.*?){{endfrac}}/);
-                const refMatch = part.match(/{{ref}}(.*?){{endref}}/);
-
-                if (fractionMatch) {
-                    const numerator = fractionMatch[1];
-                    const denominator = fractionMatch[2];
-                    return (
-                        <View key={index} style={styles.fractionContainer}>
-                            <View style={styles.numeratorContainer}>
-                                <Text style={[styles.numeratorText, { color: textColor }, { fontSize: (flattenedStyle?.fontSize || 14) * 0.8 }]}>{numerator}</Text>
-                            </View>
-                            <View style={[styles.separator, { backgroundColor: textColor }]} />
-                            <View style={styles.denominatorContainer}>
-                                <Text style={[styles.denominatorText, { color: textColor }, { fontSize: (flattenedStyle?.fontSize || 14) * 0.8 }]}>{denominator}</Text>
-                            </View>
-                        </View>
-                    );
-                } else if (refMatch) {
-                    return (
-                        <Text key={index} style={{ color: '#FF4081', fontSize: (flattenedStyle?.fontSize || 14) * 0.85, fontWeight: 'bold' }}>
-                            {refMatch[1]}
-                        </Text>
-                    );
-                }
-                return <Text key={index}>{part}</Text>;
-            })}
-        </Component>
+        <RenderHtml
+            contentWidth={width - 48}
+            source={{ html: htmlContent }}
+            tagsStyles={dynamicTagsStyles as any}
+            classesStyles={dynamicClassesStyles as any}
+            baseStyle={flattenedStyle as any}
+            enableExperimentalMarginCollapsing={true}
+            {...rest}
+        />
     );
 };
 
-const styles = StyleSheet.create({
-    fractionContainer: {
-        alignItems: 'center',
-        justifyContent: 'center', // Center vertically within the line height
-        marginHorizontal: 3,
-        // Adjust vertical alignment to match text baseline better
-        transform: [{ translateY: 4 }],
-    },
-    numeratorContainer: {
-        alignItems: 'center',
-        marginBottom: 0,
-        paddingHorizontal: 1,
-    },
-    numeratorText: {
-        textAlign: 'center',
-        lineHeight: 12,
-        fontWeight: '500',
-    },
-    separator: {
-        height: 1,
-        width: '100%',
-        minWidth: 8,
-    },
-    denominatorContainer: {
-        alignItems: 'center',
-        marginTop: 0,
-        paddingHorizontal: 1,
-    },
-    denominatorText: {
-        textAlign: 'center',
-        lineHeight: 12,
-        fontWeight: '500',
-    }
-});
+const styles = StyleSheet.create({});

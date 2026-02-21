@@ -1,0 +1,752 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Exercise 13.1 (Mean)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        table { width: auto; min-width: 60%; margin: 15px auto; border-collapse: collapse; font-family: 'Nunito', sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; border-radius: 4px; overflow: hidden; }
+
+        th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
+
+        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">1. A survey was conducted by a group of students... regarding the number of plants in 20
+            houses... Find the mean number of plants. Which method did you use and why?</div>
+        <div class="step" style="text-align: center; font-weight: bold; margin-top: 10px;">Number of Plants per House</div>
+<table style="width:100%; max-width: 600px; margin: 15px auto; border-collapse: collapse; text-align: center; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+  <tbody><tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Class}{Category}\)</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">0-2</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">2-4</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">4-6</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">6-8</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">8-10</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">10-12</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">12-14</th>
+  </tr>
+  <tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Frequency}{Value}\)</th>
+    <td style="padding: 8px; border: 1px solid #ddd;">1</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">2</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">1</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">5</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">6</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">2</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">3</td>
+  </tr>
+</tbody></table>
+        <div class="solution-header">Solution:</div>
+        <div class="step">We use Direct Method as values of f and x are small.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi (mid)</th>
+                <th>fixi</th>
+            </tr>
+            <tr>
+                <td>0-2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2-4</td>
+                <td>2</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>4-6</td>
+                <td>1</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6-8</td>
+                <td>5</td>
+                <td>7</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>8-10</td>
+                <td>6</td>
+                <td>9</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>10-12</td>
+                <td>2</td>
+                <td>11</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>12-14</td>
+                <td>3</td>
+                <td>13</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>20</th>
+                <th></th>
+                <th>162</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean x̄ = Σfixi / Σfi = \(\frac{162}{20}\) = 8.1.</div>
+        <div class="final-answer">Mean = 8.1 plants.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Consider the following distribution of daily wages of 50 workers... Find the mean daily
+            wages.</div>
+        <div class="step" style="text-align: center; font-weight: bold; margin-top: 10px;">Daily Wages Distribution</div>
+<table style="width:100%; max-width: 600px; margin: 15px auto; border-collapse: collapse; text-align: center; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+  <tbody><tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Class}{Category}\)</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">500-520</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">520-540</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">540-560</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">560-580</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">580-600</th>
+  </tr>
+  <tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Frequency}{Value}\)</th>
+    <td style="padding: 8px; border: 1px solid #ddd;">12</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">14</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">8</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">6</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">10</td>
+  </tr>
+</tbody></table>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Using Step Deviation Method. Let a = 550, h = 20.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>di=xi-a</th>
+                <th>ui=\(\frac{di}{h}\)</th>
+                <th>fiui</th>
+            </tr>
+            <tr>
+                <td>500-520</td>
+                <td>12</td>
+                <td>510</td>
+                <td>-40</td>
+                <td>-2</td>
+                <td>-24</td>
+            </tr>
+            <tr>
+                <td>520-540</td>
+                <td>14</td>
+                <td>530</td>
+                <td>-20</td>
+                <td>-1</td>
+                <td>-14</td>
+            </tr>
+            <tr>
+                <td>540-560</td>
+                <td>8</td>
+                <td>550</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>560-580</td>
+                <td>6</td>
+                <td>570</td>
+                <td>20</td>
+                <td>1</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>580-600</td>
+                <td>10</td>
+                <td>590</td>
+                <td>40</td>
+                <td>2</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>50</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>-12</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean x̄ = a + (Σfiui / Σfi) × h</div>
+        <div class="step">= 550 + (-\(\frac{12}{50}\)) × 20</div>
+        <div class="step">= 550 - 4.8 = 545.2.</div>
+        <div class="final-answer">Mean Daily Wages = ₹ 545.20.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. The following distribution shows daily pocket allowance... The mean pocket allowance is
+            ₹ 18. Find the missing frequency f.</div>
+        <div class="step" style="text-align: center; font-weight: bold; margin-top: 10px;">Pocket Allowance (Find f)</div>
+<table style="width:100%; max-width: 600px; margin: 15px auto; border-collapse: collapse; text-align: center; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 4px; overflow: hidden;">
+  <tbody><tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Class}{Category}\)</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">11-13</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">13-15</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">15-17</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">17-19</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">19-21</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">21-23</th>
+    <th style="padding: 8px; border: 1px solid #ddd; background-color: #f1f8e9;">23-25</th>
+  </tr>
+  <tr>
+    <th style="background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd;">\(\frac{Frequency}{Value}\)</th>
+    <td style="padding: 8px; border: 1px solid #ddd;">7</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">6</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">9</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">13</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">f?</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">5</td>
+    <td style="padding: 8px; border: 1px solid #ddd;">4</td>
+  </tr>
+</tbody></table>
+        <div class="solution-header">Solution:</div>
+        <div class="step">Using Direct Method. Mean = 18.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>fixi</th>
+            </tr>
+            <tr>
+                <td>11-13</td>
+                <td>7</td>
+                <td>12</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>13-15</td>
+                <td>6</td>
+                <td>14</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>15-17</td>
+                <td>9</td>
+                <td>16</td>
+                <td>144</td>
+            </tr>
+            <tr>
+                <td>17-19</td>
+                <td>13</td>
+                <td>18</td>
+                <td>234</td>
+            </tr>
+            <tr>
+                <td>19-21</td>
+                <td>f</td>
+                <td>20</td>
+                <td>20f</td>
+            </tr>
+            <tr>
+                <td>21-23</td>
+                <td>5</td>
+                <td>22</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>23-25</td>
+                <td>4</td>
+                <td>24</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>44+f</th>
+                <th></th>
+                <th>752+20f</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = Σfixi / Σfi =&gt; 18 = (752 + 20f) / (44 + f).</div>
+        <div class="step">18(44 + f) = 752 + 20f</div>
+        <div class="step">792 + 18f = 752 + 20f</div>
+        <div class="step">40 = 2f =&gt; f = 20.</div>
+        <div class="final-answer">Missing frequency f = 20.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. Thirty women were examined... find the mean heart beats per minute.</div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Using Step Deviation Method. a = 75.5, h = 3.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>ui</th>
+                <th>fiui</th>
+            </tr>
+            <tr>
+                <td>65-68</td>
+                <td>2</td>
+                <td>66.5</td>
+                <td>-3</td>
+                <td>-6</td>
+            </tr>
+            <tr>
+                <td>68-71</td>
+                <td>4</td>
+                <td>69.5</td>
+                <td>-2</td>
+                <td>-8</td>
+            </tr>
+            <tr>
+                <td>71-74</td>
+                <td>3</td>
+                <td>72.5</td>
+                <td>-1</td>
+                <td>-3</td>
+            </tr>
+            <tr>
+                <td>74-77</td>
+                <td>8</td>
+                <td>75.5</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>77-80</td>
+                <td>7</td>
+                <td>78.5</td>
+                <td>1</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>80-83</td>
+                <td>4</td>
+                <td>81.5</td>
+                <td>2</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>83-86</td>
+                <td>2</td>
+                <td>84.5</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>30</th>
+                <th></th>
+                <th></th>
+                <th>4</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = 75.5 + (\(\frac{4}{30}\)) × 3 = 75.5 + 0.4 = 75.9.</div>
+        <div class="final-answer">Mean = 75.9 \(\frac{beats}{min}\).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. In a retail market, fruit vendors were selling mangoes... kept in packing boxes. Find
+            the mean number of mangoes.</div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Classes are discontinuous (50-52, 53-55). Make continuous (49.5-52.5). However, for mean, 'xi'
+            remains same.</div>
+        <div class="step">Step Deviation. a = 57, h = 3.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>ui</th>
+                <th>fiui</th>
+            </tr>
+            <tr>
+                <td>50-52</td>
+                <td>15</td>
+                <td>51</td>
+                <td>-2</td>
+                <td>-30</td>
+            </tr>
+            <tr>
+                <td>53-55</td>
+                <td>110</td>
+                <td>54</td>
+                <td>-1</td>
+                <td>-110</td>
+            </tr>
+            <tr>
+                <td>56-58</td>
+                <td>135</td>
+                <td>57</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>59-61</td>
+                <td>115</td>
+                <td>60</td>
+                <td>1</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td>62-64</td>
+                <td>25</td>
+                <td>63</td>
+                <td>2</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>400</th>
+                <th></th>
+                <th></th>
+                <th>25</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = 57 + (\(\frac{25}{400}\)) × 3 = 57 + 0.1875 = 57.19.</div>
+        <div class="final-answer">Mean = 57.19 mangoes.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. The table below shows the daily expenditure on food of 25 households... Find the mean
+            daily expenditure.</div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Step Deviation. a = 225, h = 50.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>ui</th>
+                <th>fiui</th>
+            </tr>
+            <tr>
+                <td>100-150</td>
+                <td>4</td>
+                <td>125</td>
+                <td>-2</td>
+                <td>-8</td>
+            </tr>
+            <tr>
+                <td>150-200</td>
+                <td>5</td>
+                <td>175</td>
+                <td>-1</td>
+                <td>-5</td>
+            </tr>
+            <tr>
+                <td>200-250</td>
+                <td>12</td>
+                <td>225</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>250-300</td>
+                <td>2</td>
+                <td>275</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>300-350</td>
+                <td>2</td>
+                <td>325</td>
+                <td>2</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>25</th>
+                <th></th>
+                <th></th>
+                <th>-7</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = 225 + (-\(\frac{7}{25}\)) × 50 = 225 - 14 = 211.</div>
+        <div class="final-answer">Mean = ₹ 211.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. To find out the concentration of SO2 in the air... find the mean concentration.</div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Direct Method looks manageable with decimals. Or Step Deviation.</div>
+        <div class="step">Let's use Direct Method.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>fixi</th>
+            </tr>
+            <tr>
+                <td>0.00-0.04</td>
+                <td>4</td>
+                <td>0.02</td>
+                <td>0.08</td>
+            </tr>
+            <tr>
+                <td>0.04-0.08</td>
+                <td>9</td>
+                <td>0.06</td>
+                <td>0.54</td>
+            </tr>
+            <tr>
+                <td>0.08-0.12</td>
+                <td>9</td>
+                <td>0.10</td>
+                <td>0.90</td>
+            </tr>
+            <tr>
+                <td>0.12-0.16</td>
+                <td>2</td>
+                <td>0.14</td>
+                <td>0.28</td>
+            </tr>
+            <tr>
+                <td>0.16-0.20</td>
+                <td>4</td>
+                <td>0.18</td>
+                <td>0.72</td>
+            </tr>
+            <tr>
+                <td>0.20-0.24</td>
+                <td>2</td>
+                <td>0.22</td>
+                <td>0.44</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>30</th>
+                <th></th>
+                <th>2.96</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = 2.\(\frac{96}{30}\) = 0.0986... ≈ 0.099 ppm.</div>
+        <div class="final-answer">Mean = 0.099 ppm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A class teacher has the following absentee record... Find the mean number of days.
+        </div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Class sizes are unequal (6, 4, 4, 6, 8, 10, 2). Use Direct Method.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>fixi</th>
+            </tr>
+            <tr>
+                <td>0-6</td>
+                <td>11</td>
+                <td>3</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>6-10</td>
+                <td>10</td>
+                <td>8</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>10-14</td>
+                <td>7</td>
+                <td>12</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td>14-20</td>
+                <td>4</td>
+                <td>17</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td>20-28</td>
+                <td>4</td>
+                <td>24</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>28-38</td>
+                <td>3</td>
+                <td>33</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>38-40</td>
+                <td>1</td>
+                <td>39</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>40</th>
+                <th></th>
+                <th>499</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = \(\frac{499}{40}\) = 12.475.</div>
+        <div class="final-answer">Mean = 12.48 days.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. The following table gives the literacy rate... Find the mean literacy rate.</div>
+        
+        <div class="solution-header">Solution:</div>
+        <div class="step">Step Deviation. a = 70, h = 10.</div>
+        <table>
+            <tbody><tr>
+                <th>Class</th>
+                <th>fi</th>
+                <th>xi</th>
+                <th>ui</th>
+                <th>fiui</th>
+            </tr>
+            <tr>
+                <td>45-55</td>
+                <td>3</td>
+                <td>50</td>
+                <td>-2</td>
+                <td>-6</td>
+            </tr>
+            <tr>
+                <td>55-65</td>
+                <td>10</td>
+                <td>60</td>
+                <td>-1</td>
+                <td>-10</td>
+            </tr>
+            <tr>
+                <td>65-75</td>
+                <td>11</td>
+                <td>70</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>75-85</td>
+                <td>8</td>
+                <td>80</td>
+                <td>1</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>85-95</td>
+                <td>3</td>
+                <td>90</td>
+                <td>2</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>35</th>
+                <th></th>
+                <th></th>
+                <th>-2</th>
+            </tr>
+        </tbody></table>
+        <div class="step">Mean = 70 + (-\(\frac{2}{35}\)) × 10 = 70 - 0.57 = 69.43.</div>
+        <div class="final-answer">Mean = 69.43 %.</div>
+    </div>
+
+
+
+</body></html>

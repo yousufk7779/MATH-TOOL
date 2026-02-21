@@ -1,5 +1,10 @@
 import React, { memo } from "react";
 import { StyleSheet, View, ScrollView, Image } from "react-native";
+import {
+  useFonts,
+  Kalam_400Regular,
+  Kalam_700Bold,
+} from "@expo-google-fonts/kalam";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
@@ -10,6 +15,15 @@ import sameerPhoto from "../../assets/images/sameer-photo.jpg"; // Keeping impor
 import { JiguuLogo } from "@/components/JiguuLogo"; // Assuming this exists based on header use
 
 function AboutEducatorScreen() {
+  const [fontsLoaded] = useFonts({
+    Kalam_400Regular,
+    Kalam_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <ScreenWrapper showBackButton>
       <ScrollView

@@ -75,6 +75,8 @@ function PYQSection({ chapterId, accentColor = JiguuColors.accent3, initialYear,
                         question={q}
                         accentColor={accentColor}
                         chapterId={chapterId}
+                        titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
+                        contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
                     />
                 ))}
             </View>

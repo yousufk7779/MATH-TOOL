@@ -11,7 +11,6 @@ import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { class10Chapters, Chapter } from "@/data/chapters";
-import { isChapterAvailable } from "@/data/chapterContent";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -21,7 +20,10 @@ function ChapterListScreen() {
   const navigation = useNavigation<NavigationProp>();
 
   const renderItem = useCallback(({ item }: { item: Chapter }) => {
-    const available = isChapterAvailable(item.id) && !item.locked;
+    // Assuming all chapters in the list are available if they are in the registry/list.
+    // Or we can check if they are in chapterRegistry?
+    // For now, let's assume available.
+    const available = !item.locked;
     return (
       <ChapterCard
         testID={`chapter-card-${item.id}`}
@@ -40,28 +42,7 @@ function ChapterListScreen() {
     );
   }, [navigation]);
 
-  const renderHeader = useCallback(() => (
-    <View style={styles.header}>
-      <View style={styles.actionButtons}>
-        <View style={styles.actionButtonWrapper}>
-          <ColorButton
-            testID="button-bookmarks"
-            title="BOOKMARKS"
-            color={JiguuColors.accent1}
-            onPress={() => navigation.navigate("Bookmarks")}
-          />
-        </View>
-        <View style={styles.actionButtonWrapper}>
-          <ColorButton
-            testID="button-important"
-            title="IMPORTANT"
-            color="#FFAB00"
-            onPress={() => navigation.navigate("ImportantQuestions")}
-          />
-        </View>
-      </View>
-    </View>
-  ), [navigation]);
+
 
   const renderEmptyState = useCallback(() => (
     <EmptyState
@@ -82,7 +63,6 @@ function ChapterListScreen() {
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
-        ListHeaderComponent={renderHeader}
         ListEmptyComponent={renderEmptyState}
       />
     </ScreenWrapper>

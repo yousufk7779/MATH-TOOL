@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="400" height="250">
+  <defs>
+    <style>
+      .label { font-family: 'Times New Roman', serif; font-size: 18px; font-weight: bold; }
+      .dim { font-family: 'Times New Roman', serif; font-size: 16px; }
+    </style>
+  </defs>
+
+  <!-- Coordinates -->
+  <!-- Scale: 1 unit = 6 px -->
+  <!-- Radius = 7 units = 42 px -->
+  <!-- PQ = 24 units = 144 px -->
+  <!-- OQ = 25 units = 150 px -->
+  <!-- Let's scale up a bit for better visibility -->
+  <!-- Scale: 1 unit = 8 px -->
+  <!-- Radius = 56 px -->
+  <!-- PQ = 192 px -->
+  <!-- OQ = 200 px -->
+  
+  <!-- O at (100, 80) -->
+  <!-- P at (100, 136) -->
+  <!-- Q at (292, 136) -->
+
+  <!-- Circle -->
+  <!-- Color: Blue #1976D2 -->
+  <circle cx="100" cy="80" r="56" fill="none" stroke="#1976D2" stroke-width="2.5" />
+  
+  <!-- Radius OP -->
+  <!-- Color: Red #D32F2F -->
+  <line x1="100" y1="80" x2="100" y2="136" stroke="#D32F2F" stroke-width="2.5" />
+  
+  <!-- Tangent PQ -->
+  <!-- Color: Green #388E3C -->
+  <line x1="100" y1="136" x2="292" y2="136" stroke="#388E3C" stroke-width="2.5" />
+
+  <!-- Hypotenuse OQ -->
+  <!-- Color: Orange #F57C00 -->
+  <line x1="100" y1="80" x2="292" y2="136" stroke="#F57C00" stroke-width="2.5" />
+
+  <!-- Points -->
+  <circle cx="100" cy="80" r="3" fill="black" />
+  <circle cx="100" cy="136" r="3" fill="black" />
+  <circle cx="292" cy="136" r="3" fill="black" />
+
+  <!-- Right Angle Symbol -->
+  <polyline points="100,126 110,126 110,136" fill="none" stroke="black" stroke-width="1" />
+
+  <!-- Labels -->
+  <text x="90" y="75" class="label">O</text>
+  <text x="90" y="155" class="label">P</text>
+  <text x="300" y="140" class="label">Q</text>
+
+  <!-- Dimensions -->
+  <!-- 25 cm on OQ -->
+  <text x="200" y="100" class="dim" fill="black" transform="rotate(16, 200, 100)">25 cm</text>
+  
+  <!-- 24 cm on PQ -->
+  <text x="190" y="160" class="dim" fill="black">24 cm</text>
+
+</svg>

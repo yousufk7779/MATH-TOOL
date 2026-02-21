@@ -6,7 +6,7 @@ import { Feather } from "@expo/vector-icons";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
-import { generateQuiz, QuizQuestion } from "@/utils/quiz-engine";
+import { generateQuizAsync, QuizQuestion } from "@/utils/quiz-engine";
 import { saveQuizResult, getQuizHistory, QuizResult } from "@/utils/quiz-storage";
 
 type QuizState = "menu" | "active" | "result";
@@ -20,6 +20,7 @@ export default function QuizScreen() {
     const [history, setHistory] = useState<QuizResult[]>([]);
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const [showAnswer, setShowAnswer] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     // Load history on mount
     useEffect(() => {
@@ -31,18 +32,26 @@ export default function QuizScreen() {
         setHistory(data);
     };
 
-    const startQuiz = useCallback(() => {
-        const newQuestions = generateQuiz(10); // Generate 10 random questions
-        if (newQuestions.length === 0) {
-            Alert.alert("Error", "No questions available to generate a quiz.");
-            return;
+    const startQuiz = useCallback(async () => {
+        setLoading(true);
+        try {
+            const newQuestions = await generateQuizAsync(10); // Generate 10 random questions
+            if (newQuestions.length === 0) {
+                Alert.alert("Error", "No questions available to generate a quiz.");
+                return;
+            }
+            setQuestions(newQuestions);
+            setCurrentQuestionIndex(0);
+            setScore(0);
+            setViewState("active");
+            setSelectedOption(null);
+            setShowAnswer(false);
+        } catch (e) {
+            console.error(e);
+            Alert.alert("Error", "Failed to start quiz.");
+        } finally {
+            setLoading(false);
         }
-        setQuestions(newQuestions);
-        setCurrentQuestionIndex(0);
-        setScore(0);
-        setViewState("active");
-        setSelectedOption(null);
-        setShowAnswer(false);
     }, []);
 
     const handleOptionSelect = (optionIndex: number) => {

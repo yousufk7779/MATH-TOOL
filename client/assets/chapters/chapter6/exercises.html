@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+        body { font-family: 'Kalam', cursive; margin: 0; padding: 15px; background: #fff; color: #333; }
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+        .question { font-weight: bold; margin-bottom: 15px; font-size: 1.2em; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+        .step { background: #eef; padding: 10px; border-radius: 8px; border-left: 4px solid #C6FF00; margin-bottom: 10px; }
+        .final-answer { color: #4CAF50; font-weight: bold; margin-top: 10px; }
+        .sub-question { color: #FFAB00; font-weight: bold; margin-top: 10px; margin-bottom: 5px;}
+        .exercise-title { text-align: center; font-size: 1.5em; border-bottom: 2px solid #C6FF00; margin-bottom: 20px; font-family: 'Nunito', sans-serif; color: #C6FF00; }
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="exercise-title">Exercise 6.1</div>
+<!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. Fill in the blanks using the correct word given in brackets:</div>
+
+        <div class="sub-question">(i) All circles are ___ (congruent, similar)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">All circles have the same shape but different sizes.</div>
+        <div class="final-answer">All circles are similar.</div>
+
+        <div class="sub-question">(ii) All squares are ___ (similar, congruent)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">All squares have equal angles <span class="reason">(90°)</span> and proportional sides.</div>
+        <div class="final-answer">All squares are similar.</div>
+
+        <div class="sub-question">(iii) All ___ triangles are similar. (isosceles, equilateral)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Equilateral triangles always have angles of 60°.</div>
+        <div class="final-answer">All equilateral triangles are similar.</div>
+
+        <div class="sub-question">(iv) Two polygons of the same number of sides are similar, if (a) their corresponding
+            angles are ___ as and (b) their corresponding sides are ___. (equal, proportional)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">For similarity, angles must be equal and sides must be proportional.</div>
+        <div class="final-answer">Two polygons are similar if corresponding angles are equal and corresponding sides are
+            proportional.</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <div class="question">2. Give two different examples of pair of:</div>
+
+        <div class="sub-question">(i) Similar figures</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">1. Two equilateral triangles of sides 2 cm and 5 cm.</div>
+        <div class="step">2. Two squares of sides 3 cm and 4 cm.</div>
+        <div class="final-answer">Any two circles, any two squares.</div>
+
+        <div class="sub-question">(ii) Non-similar figures</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">1. A square and a rectangle <span class="reason">(Angles are 90°, but sides may not be
+                proportional)</span>.</div>
+        <div class="step">2. A triangle and a trapezium <span class="reason">(Different shapes)</span>.</div>
+        <div class="final-answer">A square and a rhombus; A circle and a triangle.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNjAsNjAgMTIwLDYwIDEwMCwxMjAgNDAsMTIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cmVjdCB4PSIxODAiIHk9IjQwIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjgwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MS41PC90ZXh0Pjx0ZXh0IHg9IjEzMCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEuNTwvdGV4dD48dGV4dCB4PSIyMjAiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjx0ZXh0IHg9IjI3MCIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjM8L3RleHQ+PHRleHQgeD0iODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UCBRIFIgUzwvdGV4dD48dGV4dCB4PSIyMjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QSBCIEMgRDwvdGV4dD48L3N2Zz4=" alt="Rhombus and Square">
+        <div class="question">3. State whether the following quadrilaterals are similar or not:</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Quadrilateral PQRS <span class="reason">(Rhombus with side 1.5 cm)</span>.</div>
+        <div class="step">Quadrilateral ABCD <span class="reason">(Square with side 3 cm)</span>.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Whether PQRS ~ ABCD.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Comparing corresponding sides:</div>
+        <div class="step">\(\frac{PQ}{AB}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{QR}{BC}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{RS}{CD}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{SP}{DA}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Sides are proportional.</div>
+        <div class="step">Comparing corresponding angles:</div>
+        <div class="step">Angles of ABCD are 90°.</div>
+        <div class="step">Angles of PQRS are NOT 90°.</div>
+        <div class="step">Corresponding angles are not equal.</div>
+        <div class="final-answer">No, the quadrilaterals are not similar.</div>
+    </div>
+
+<hr/>
+<div class="exercise-title">Exercise 6.2</div>
+<!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. In Fig., DE || BC. Find EC in (i) and AD in (ii).</div>
+
+        <div class="sub-question">(i)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxtYXJrZXIgaWQ9ImFycm93IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjkiIHJlZlk9IjMiIG9yaWVudD0iYXV0byIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIj4NCiAgICAgIDxwYXRoIGQ9Ik0wLDAgTDAsNiBMOSwzIHoiIGZpbGw9IiMwM2E5ZjQiIC8+DQogICAgPC9tYXJrZXI+DQogICAgPG1hcmtlciBpZD0iYXJyb3dfcmV2IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjAiIHJlZlk9IjMiIG9yaWVudD0iYXV0byIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIj4NCiAgICAgIDxwYXRoIGQ9Ik05LDAgTDksNiBMMCwzIHoiIGZpbGw9IiMwM2E5ZjQiIC8+DQogICAgPC9tYXJrZXI+DQogIDwvZGVmcz4NCiAgDQogIDwhLS0gVHJpYW5nbGUgY29vcmRzOiBBKDI1MCwgNTApLCBCKDUwLCAyNTApLCBDKDM1MCwgMjUwKSAtLT4NCiAgDQogIDwhLS0gTGluZXMgLS0+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSI1MCIgeDI9IjUwIiB5Mj0iMjUwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBBQiAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjUwIiB4Mj0iMzUwIiB5Mj0iMjUwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBCQyAtLT4NCiAgPGxpbmUgeDE9IjM1MCIgeTE9IjI1MCIgeDI9IjI1MCIgeTI9IjUwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBDQSAtLT4NCg0KICA8IS0tIFBhcmFsbGVsIExpbmUgREUgLS0+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxMTciIHgyPSIzMjAiIHkyPSIxMTciIHN0cm9rZT0iIzAzYTlmNCIgc3Ryb2tlLXdpZHRoPSIzIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3dfcmV2KSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDxzdHlsZT4NCiAgICB0ZXh0IHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXdlaWdodDogYm9sZDsgZm9udC1zaXplOiAyNHB4OyBmaWxsOiAjMjIyOyB9DQogIDwvc3R5bGU+DQoNCiAgPCEtLSBWZXJ0aWNlcyAtLT4NCiAgPHRleHQgeD0iMjQ1IiB5PSI0MCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzAiIHk9IjI2MCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMzYwIiB5PSIyNjAiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjE2NSIgeT0iMTA1Ij5EPC90ZXh0Pg0KICA8dGV4dCB4PSIyODUiIHk9IjEwNSI+RTwvdGV4dD4NCg0KICA8IS0tIE1lYXN1cmVtZW50cyAtLT4NCiAgPHRleHQgeD0iMTQwIiB5PSI4MCI+MS41IGNtPC90ZXh0PiA8IS0tIG5lYXIgQUQgLS0+DQogIDx0ZXh0IHg9IjYwIiB5PSIxODAiPjMgY208L3RleHQ+IDwhLS0gbmVhciBEQiAtLT4NCiAgPHRleHQgeD0iMjk1IiB5PSI4NSI+MSBjbTwvdGV4dD4gPCEtLSBuZWFyIEFFIC0tPg0KICA8dGV4dCB4PSIzMjUiIHk9IjE4MCI+PzwvdGV4dD4gPCEtLSBuZWFyIEVDIC0tPg0KDQogIDwhLS0gKGkpIGxhYmVsIC0tPg0KICA8dGV4dCB4PSIxOTAiIHk9IjI5MCI+KGkpPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle with AD=1.5, DB=3, AE=1">
+        <div class="sub-header">Given:</div>
+        <div class="step">AD = 1.5 cm, DB = 3 cm, AE = 1 cm.</div>
+        <div class="step">DE || BC.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Length of EC.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since DE || BC, by Basic Proportionality Theorem <span class="reason">(BPT)</span>:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">Substituting values:</div>
+        <div class="step">\(\frac{1.5}{3}\) = \(\frac{1}{EC}\)</div>
+        <div class="step">\(\frac{1}{2}\) = \(\frac{1}{EC}\)</div>
+        <div class="step">EC = 2 cm.</div>
+        <div class="final-answer">EC = 2 cm.</div>
+
+        <div class="sub-question">(ii)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzUwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxtYXJrZXIgaWQ9ImFycm93IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjkiIHJlZlk9IjMiIG9yaWVudD0iYXV0byIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIj4NCiAgICAgIDxwYXRoIGQ9Ik0wLDAgTDAsNiBMOSwzIHoiIGZpbGw9IiMwM2E5ZjQiIC8+DQogICAgPC9tYXJrZXI+DQogICAgPG1hcmtlciBpZD0iYXJyb3dfcmV2IiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjAiIHJlZlk9IjMiIG9yaWVudD0iYXV0byIgbWFya2VyVW5pdHM9InN0cm9rZVdpZHRoIj4NCiAgICAgIDxwYXRoIGQ9Ik05LDAgTDksNiBMMCwzIHoiIGZpbGw9IiMwM2E5ZjQiIC8+DQogICAgPC9tYXJrZXI+DQogIDwvZGVmcz4NCiAgDQogIDwhLS0gVHJpYW5nbGUgY29vcmRzIEEoMzUwLCA1MCksIEIoNTAsIDIwMCksIEMoNDUwLCAzMDApIC0tPg0KDQogIDwhLS0gTGluZXMgLS0+DQogIDxsaW5lIHgxPSIzNTAiIHkxPSI1MCIgeDI9IjUwIiB5Mj0iMjAwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBBQiAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjAwIiB4Mj0iNDUwIiB5Mj0iMzAwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBCQyAtLT4NCiAgPGxpbmUgeDE9IjQ1MCIgeTE9IjMwMCIgeDI9IjM1MCIgeTI9IjUwIiBzdHJva2U9IiMwM2E5ZjQiIHN0cm9rZS13aWR0aD0iMyIgLz4gPCEtLSBDQSAtLT4NCg0KICA8IS0tIFBhcmFsbGVsIExpbmUgREUgLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSI2OSIgeDI9IjQ1MCIgeTI9IjEzMSIgc3Ryb2tlPSIjMDNhOWY0IiBzdHJva2Utd2lkdGg9IjMiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvd19yZXYpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgLz4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHN0eWxlPg0KICAgIHRleHQgeyBmb250LWZhbWlseTogc2VyaWY7IGZvbnQtd2VpZ2h0OiBib2xkOyBmb250LXNpemU6IDI0cHg7IGZpbGw6ICMyMjI7IH0NCiAgPC9zdHlsZT4NCg0KICA8IS0tIFZlcnRpY2VzIC0tPg0KICA8dGV4dCB4PSIzNTAiIHk9IjQwIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMCIgeT0iMjAwIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSI0NjAiIHk9IjMxMCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMjYwIiB5PSIxMDAiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjM4MCIgeT0iMTA1Ij5FPC90ZXh0Pg0KDQogIDwhLS0gTWVhc3VyZW1lbnRzIC0tPg0KICA8dGV4dCB4PSIyOTAiIHk9IjU1Ij4/PC90ZXh0PiA8IS0tIG5lYXIgQUQgLS0+DQogIDx0ZXh0IHg9IjE0MCIgeT0iMTIwIj43LjIgY208L3RleHQ+IDwhLS0gbmVhciBEQiAtLT4NCiAgPHRleHQgeD0iNDEwIiB5PSI5MCI+MS44IGNtPC90ZXh0PiA8IS0tIG5lYXIgQUUgLS0+DQogIDx0ZXh0IHg9IjQyMCIgeT0iMjIwIj41LjQgY208L3RleHQ+IDwhLS0gbmVhciBFQyAtLT4NCg0KICA8IS0tIChpaSkgbGFiZWwgLS0+DQogIDx0ZXh0IHg9IjI1MCIgeT0iMzIwIj4oaWkpPC90ZXh0Pg0KPC9zdmc+" alt="Triangle with DB=7.2, AE=1.8, EC=5.4">
+        <div class="sub-header">Given:</div>
+        <div class="step">DB = 7.2 cm, AE = 1.8 cm, EC = 5.4 cm.</div>
+        <div class="step">DE || BC.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Length of AD.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">By BPT: \(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">\(\frac{AD}{7.2}\) = \(\frac{1.8}{5.4}\)</div>
+        <div class="step">\(\frac{AD}{7.2}\) = \(\frac{1}{3}\)</div>
+        <div class="step">AD = \(\frac{7.2}{3}\) = 2.4 cm.</div>
+        <div class="final-answer">AD = 2.4 cm.</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <div class="question">2. E and F are points on sides PQ and PR respectively of a ∆ PQR. For each of the
+            following cases, state whether EF || QR.</div>
+
+        <div class="sub-question">(i) PE = 3.9 cm, EQ = 3 cm, PF = 3.6 cm and FR = 2.4 cm.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzAwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDA5OUNDOyBzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1saW5lY2FwOiByb3VuZDsgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsgfQ0KICAgICAgLnRleHQgeyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZpbGw6IGJsYWNrOyB0ZXh0LWFuY2hvcjogbWlkZGxlOyB9DQogICAgICAubGFiZWwgeyBmb250LXNpemU6IDIwcHg7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gVmVydGljZXMgLS0+DQogIDwhLS0gUDogKDE3NSwgNDApIC0tPg0KICA8IS0tIFE6ICg4MCwgMjYwKSAtLT4NCiAgPCEtLSBSOiAoMzAwLCAyMjApIC0tPg0KDQogIDwhLS0gRSBpcyBvbiBQUS4gUEUvUFEgPSAzLjkgLyAoMy45KzMpID0gMy45LzYuOSDiiYggMC41NjUgLS0+DQogIDwhLS0gRSDiiYggKDEyMS40LCAxNjQuMykgLS0+DQogIA0KICA8IS0tIEYgaXMgb24gUFIuIFBGL1BSID0gMy42IC8gKDMuNisyLjQpID0gMy42LzYuMCA9IDAuNiAtLT4NCiAgPCEtLSBGID0gKDI1MCwgMTQ4KSAtLT4NCg0KICA8IS0tIFRyaWFuZ2xlIFBRUiAtLT4NCiAgPHBhdGggZD0iTTE3NSA0MCBMODAgMjYwIEwzMDAgMjIwIFoiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gTGluZSBFRiAtLT4NCiAgPGxpbmUgeDE9IjEyMS40IiB5MT0iMTY0LjMiIHgyPSIyNTAiIHkyPSIxNDgiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gVmVydGV4IExhYmVscyAtLT4NCiAgPHRleHQgeD0iMTc1IiB5PSIzMCIgY2xhc3M9InRleHQgbGFiZWwiPlA8L3RleHQ+DQogIDx0ZXh0IHg9IjY1IiB5PSIyNzUiIGNsYXNzPSJ0ZXh0IGxhYmVsIj5RPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjIzNSIgY2xhc3M9InRleHQgbGFiZWwiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjEwNSIgeT0iMTcwIiBjbGFzcz0idGV4dCBsYWJlbCI+RTwvdGV4dD4NCiAgPHRleHQgeD0iMjY1IiB5PSIxNTUiIGNsYXNzPSJ0ZXh0IGxhYmVsIj5GPC90ZXh0Pg0KDQogIDwhLS0gTGVuZ3RoIExhYmVscyAtLT4NCiAgPCEtLSBQRSA9IDMuOSBjbSAtLT4NCiAgPHRleHQgeD0iMTMwIiB5PSIxMTAiIGNsYXNzPSJ0ZXh0Ij4zLjkgY208L3RleHQ+DQogIA0KICA8IS0tIEVRID0gMyBjbSAtLT4NCiAgPHRleHQgeD0iODAiIHk9IjIyMCIgY2xhc3M9InRleHQiPjMgY208L3RleHQ+DQogIA0KICA8IS0tIFBGID0gMy42IGNtIC0tPg0KICA8dGV4dCB4PSIyMzUiIHk9IjEwMCIgY2xhc3M9InRleHQiPjMuNiBjbTwvdGV4dD4NCiAgDQogIDwhLS0gRlIgPSAyLjQgY20gLS0+DQogIDx0ZXh0IHg9IjI5MCIgeT0iMTkwIiBjbGFzcz0idGV4dCI+Mi40IGNtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle with PE=3.9, EQ=3, PF=3.6, FR=2.4">
+        <div class="sub-header">Given:</div>
+        <div class="step">PE = 3.9 cm, EQ = 3 cm, PF = 3.6 cm, FR = 2.4 cm.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">If EF || QR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Ratio 1: \(\frac{PE}{EQ}\) = \(\frac{3.9}{3}\) = 1.3</div>
+        <div class="step">Ratio 2: \(\frac{PF}{FR}\) = \(\frac{3.6}{2.4}\) = 1.5</div>
+        <div class="step">Since 1.3 ≠ 1.5, the sides are not divided in the same ratio.</div>
+        <div class="final-answer">No, EF is not parallel to QR.</div>
+
+        <div class="sub-question">(ii) PE = 4 cm, QE = 4.5 cm, PF = 8 cm and RF = 9 cm.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5sYWJlbCB7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBWZXJ0aWNlcyAtLT4NCiAgPCEtLSBQOiBUb3AsIHNsaWdodGx5IGxlZnQgLS0+DQogIDwhLS0gY29vcmRpbmF0ZXMgUCgxNDAsIDQwKSAtLT4NCiAgDQogIDwhLS0gUTogQm90dG9tIExlZnQgLS0+DQogIDwhLS0gY29vcmRpbmF0ZXMgUSg2MCwgMjIwKSAtLT4NCiAgDQogIDwhLS0gUjogQm90dG9tIFJpZ2h0LCBzaWduaWZpY2FudGx5IGxvd2VyL2Z1cnRoZXIgLS0+DQogIDwhLS0gY29vcmRpbmF0ZXMgUigzNTAsIDMyMCkgLS0+DQoNCiAgPCEtLSBFIGlzIG9uIFBRLiBSYXRpbyBQRTpFUSA9IDQ6NC41LiBUb3RhbCA4LjUuIEZyYWN0aW9uID0gNC84LjUgPSAwLjQ3IC0tPg0KICA8IS0tIEV4ID0gMTQwICsgMC40NyAqICg2MCAtIDE0MCkgPSAxNDAgLSAzNy42ID0gMTAyLjQgLS0+DQogIDwhLS0gRXkgPSA0MCArIDAuNDcgKiAoMjIwIC0gNDApID0gNDAgKyA4NC42ID0gMTI0LjYgLS0+DQogIA0KICA8IS0tIEYgaXMgb24gUFIuIFJhdGlvIFBGOkZSID0gODo5LiBUb3RhbCAxNy4gRnJhY3Rpb24gPSA4LzE3ID0gMC40NyAtLT4NCiAgPCEtLSBGeCA9IDE0MCArIDAuNDcgKiAoMzUwIC0gMTQwKSA9IDE0MCArIDk4LjcgPSAyMzguNyAtLT4NCiAgPCEtLSBGeSA9IDQwICsgMC40NyAqICgzMjAgLSA0MCkgPSA0MCArIDEzMS42ID0gMTcxLjYgLS0+DQoNCiAgPCEtLSBUcmlhbmdsZSBQUVIgLS0+DQogIDxwYXRoIGQ9Ik0xNDAgNDAgTDYwIDIyMCBMMzUwIDMyMCBaIiBjbGFzcz0ibGluZSIgLz4NCg0KICA8IS0tIExpbmUgRUYgLS0+DQogIDxsaW5lIHgxPSIxMDIuNCIgeTE9IjEyNC42IiB4Mj0iMjM4LjciIHkyPSIxNzEuNiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBWZXJ0ZXggTGFiZWxzIC0tPg0KICA8dGV4dCB4PSIxMzUiIHk9IjMwIiBjbGFzcz0idGV4dCBsYWJlbCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iNDAiIHk9IjIzMCIgY2xhc3M9InRleHQgbGFiZWwiPlE8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMzMwIiBjbGFzcz0idGV4dCBsYWJlbCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iODUiIHk9IjEyNSIgY2xhc3M9InRleHQgbGFiZWwiPkU8L3RleHQ+DQogIDx0ZXh0IHg9IjI0NSIgeT0iMTcwIiBjbGFzcz0idGV4dCBsYWJlbCI+RjwvdGV4dD4NCg0KICA8IS0tIExlbmd0aCBMYWJlbHMgLS0+DQogIDwhLS0gUEUgPSA0IGNtIC0tPg0KICA8dGV4dCB4PSI4MCIgeT0iNzAiIGNsYXNzPSJ0ZXh0Ij40IGNtPC90ZXh0Pg0KICANCiAgPCEtLSBRRSA9IDQuNSBjbSAtLT4NCiAgPHRleHQgeD0iNDAiIHk9IjE3MCIgY2xhc3M9InRleHQiPjQuNSBjbTwvdGV4dD4NCiAgDQogIDwhLS0gUEYgPSA4IGNtIC0tPg0KICA8dGV4dCB4PSIyMDAiIHk9IjEwMCIgY2xhc3M9InRleHQiPjggY208L3RleHQ+DQogIA0KICA8IS0tIFJGID0gOSBjbSAtLT4NCiAgPHRleHQgeD0iMzAwIiB5PSIyNDAiIGNsYXNzPSJ0ZXh0Ij45IGNtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle with PE=4, QE=4.5, PF=8, RF=9">
+        <div class="sub-header">Given:</div>
+        <div class="step">PE = 4 cm, QE = 4.5 cm, PF = 8 cm, RF = 9 cm.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">If EF || QR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Ratio 1: \(\frac{PE}{QE}\) = \(\frac{4}{4.5}\) = \(\frac{40}{45}\) = \(\frac{8}{9}\)</div>
+        <div class="step">Ratio 2: \(\frac{PF}{RF}\) = \(\frac{8}{9}\)</div>
+        <div class="step">Since ratios are equal \(\frac{PE}{QE}\) = \(\frac{PF}{RF}\).</div>
+        <div class="step">By Converse of Basic Proportionality Theorem <span class="reason">(Converse of BPT)</span>:
+        </div>
+        <div class="final-answer">Yes, EF || QR.</div>
+
+        <div class="sub-question">(iii) PQ = 1.28 cm, PR = 2.56 cm, PE = 0.18 cm and PF = 0.36 cm.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDI7IHN0cm9rZS1saW5lY2FwOiByb3VuZDsgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsgfQ0KICAgICAgLmRpbS1saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDEuNTsgbWFya2VyLWVuZDogdXJsKCNhcnJvdyk7IG1hcmtlci1zdGFydDogdXJsKCNhcnJvdyk7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxNnB4OyBmaWxsOiBibGFjazsgfQ0KICAgICAgLmxhYmVsIHsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogYm9sZDsgfQ0KICAgIDwvc3R5bGU+DQogICAgPG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iNSIgcmVmWT0iNSIgb3JpZW50PSJhdXRvIj4NCiAgICAgIDxwYXRoIGQ9Ik0wLDAgTDEwLDUgTDAsMTAiIGZpbGw9IiMwMEJGRkYiIC8+DQogICAgPC9tYXJrZXI+DQogIDwvZGVmcz4NCg0KICA8IS0tIFZlcnRpY2VzIC0tPg0KICA8IS0tIFA6IFRvcCAtLT4NCiAgPCEtLSBQID0gKDIwMCwgNTApIC0tPg0KICA8IS0tIFE6IEJvdHRvbSBMZWZ0IC0tPg0KICA8IS0tIFEgPSAoMTAwLCAyODApIC0tPg0KICA8IS0tIFI6IEJvdHRvbSBSaWdodCAtLT4NCiAgPCEtLSBSID0gKDM4MCwgMzIwKSAtLT4NCg0KICA8IS0tIEUgaXMgb24gUFEuIFJhdGlvIFBFL1BRID0gMC4xOC8xLjI4IGFwcHJveCAwLjE0IC0tPg0KICA8IS0tIEUgPSBQICsgMC4yNSAqIChRLVApIChFeGFnZ2VyYXRlZCBmb3IgdmlzaWJpbGl0eSwgMC4xNCBpcyB0b28gc21hbGwgdmlzdWFsbHkpIC0tPg0KICA8IS0tIExldCdzIHZpc3VhbGx5IHBsYWNlIGl0IGFyb3VuZCAxLzR0aCB3YXkgZG93biB0byBtYXRjaCB0aGUgZGlhZ3JhbSdzIGxvb2sgLS0+DQogIDwhLS0gUCgyMDAsNTApLCBRKDEwMCwyODApLiBWZWN0b3I9KC0xMDAsIDIzMCkuIDAuMjUqVmVjdG9yPSgtMjUsIDU3LjUpIC0tPg0KICA8IS0tIEUgPSAoMTc1LCAxMDcuNSkgLS0+DQogIA0KICA8IS0tIEYgaXMgb24gUFIuIFJhdGlvIFBGL1BSID0gMC4zNi8yLjU2IGFwcHJveCAwLjE0IC0tPg0KICA8IS0tIEYgPSBQICsgMC4yNSAqIChSLVApIC0tPg0KICA8IS0tIFAoMjAwLDUwKSwgUigzODAsMzIwKS4gVmVjdG9yPSgxODAsIDI3MCkuIDAuMjUqVmVjdG9yPSg0NSwgNjcuNSkgLS0+DQogIDwhLS0gRiA9ICgyNDUsIDExNy41KSAtLT4NCg0KICA8IS0tIFRyaWFuZ2xlIFBRUiAtLT4NCiAgPHBhdGggZD0iTTIwMCA1MCBMMTAwIDI4MCBMMzgwIDMyMCBaIiBjbGFzcz0ibGluZSIgLz4NCg0KICA8IS0tIExpbmUgRUYgLS0+DQogIDxsaW5lIHgxPSIxNzUiIHkxPSIxMDcuNSIgeDI9IjI0NSIgeTI9IjExNy41IiBjbGFzcz0ibGluZSIgLz4NCg0KICA8IS0tIFZlcnRleCBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE5NSIgeT0iNDAiIGNsYXNzPSJ0ZXh0IGxhYmVsIj5QPC90ZXh0Pg0KICA8dGV4dCB4PSI4MCIgeT0iMjkwIiBjbGFzcz0idGV4dCBsYWJlbCI+UTwvdGV4dD4NCiAgPHRleHQgeD0iMzkwIiB5PSIzMzAiIGNsYXNzPSJ0ZXh0IGxhYmVsIj5SPC90ZXh0Pg0KICA8dGV4dCB4PSIxNTUiIHk9IjExNSIgY2xhc3M9InRleHQgbGFiZWwiPkU8L3RleHQ+DQogIDx0ZXh0IHg9IjI0NSIgeT0iMTQwIiBjbGFzcz0idGV4dCBsYWJlbCI+RjwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgTGVmdCBTaWRlIChQUSkgLS0+DQogIDwhLS0gT2Zmc2V0IHBhcmFsbGVsIGxpbmUgdG8gUFEgLS0+DQogIDwhLS0gTm9ybWFsIHZlY3RvciByb3VnaGx5ICgtMjMwLCAtMTAwKSAtPiAoLTEsIC0wLjQpIC0tPg0KICA8IS0tIFNoaWZ0IGJ5IC00MCwgLTE1IC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iNDUiIHgyPSI1MCIgeTI9IjI3NSIgY2xhc3M9ImRpbS1saW5lIiAvPg0KICA8dGV4dCB4PSI4MCIgeT0iMTYwIiBjbGFzcz0idGV4dCIgdHJhbnNmb3JtPSJyb3RhdGUoLTY2IDgwLDE2MCkiPjEuMjggY208L3RleHQ+DQoNCiAgPCEtLSBEaW1lbnNpb25zIFBFIC0tPg0KICA8IS0tIElubmVyIG9mZnNldCAtLT4NCiAgPGxpbmUgeDE9IjE5MCIgeTE9IjU1IiB4Mj0iMTY1IiB5Mj0iMTEyLjUiIGNsYXNzPSJkaW0tbGluZSIgLz4NCiAgPHRleHQgeD0iMTYwIiB5PSI4NSIgY2xhc3M9InRleHQiIHRyYW5zZm9ybT0icm90YXRlKC02NiAxNjAsODUpIj4wLjE4IGNtPC90ZXh0Pg0KDQogIDwhLS0gRGltZW5zaW9ucyBSaWdodCBTaWRlIChQUikgLS0+DQogIDwhLS0gT2Zmc2V0IHBhcmFsbGVsIGxpbmUgdG8gUFIgLS0+DQogIDwhLS0gTm9ybWFsIHZlY3RvciByb3VnaGx5ICgyNzAsIC0xODApIC0+ICgxLCAtMC42KSAtLT4NCiAgPCEtLSBTaGlmdCBieSA0MCwgLTI1IC0tPg0KICA8bGluZSB4MT0iMjQwIiB5MT0iNDAiIHgyPSI0MjAiIHkyPSIzMTAiIGNsYXNzPSJkaW0tbGluZSIgLz4NCiAgPHRleHQgeD0iMzQwIiB5PSIxNzAiIGNsYXNzPSJ0ZXh0IiB0cmFuc2Zvcm09InJvdGF0ZSg1NiAzNDAsMTcwKSI+Mi41NiBjbTwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgUEYgLS0+DQogIDxsaW5lIHgxPSIyMTAiIHkxPSI1NSIgeDI9IjI1NSIgeTI9IjEyMi41IiBjbGFzcz0iZGltLWxpbmUiIC8+DQogIDx0ZXh0IHg9IjI0NSIgeT0iOTAiIGNsYXNzPSJ0ZXh0IiB0cmFuc2Zvcm09InJvdGF0ZSg1NiAyNDUsOTApIj4wLjM2IGNtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle with PE=0.18, PF=0.36, PQ=1.28, PR=2.56">
+        <div class="sub-header">Proof:</div>
+        <div class="step">EQ = PQ - PE = 1.28 - 0.18 = 1.10 cm.</div>
+        <div class="step">FR = PR - PF = 2.56 - 0.36 = 2.20 cm.</div>
+        <div class="step">Ratio 1: \(\frac{PE}{EQ}\) = \(\frac{0.18}{1.10}\) = \(\frac{9}{55}\)</div>
+        <div class="step">Ratio 2: \(\frac{PF}{FR}\) = \(\frac{0.36}{2.20}\) = \(\frac{9}{55}\)</div>
+        <div class="step">Ratios are equal. By Converse of BPT:</div>
+        <div class="final-answer">Yes, EF || QR.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ29vcmRpbmF0ZXMgY2FsY3VsYXRlZCBmb3IgcGFyYWxsZWwgbGluZXMgLS0+DQogIDwhLS0gQT0oNDAsIDE1MCkgLS0+DQogIDwhLS0gQj0oMjYwLCA0MCkgLS0+DQogIDwhLS0gQz0oMzYwLCAxNTApIC0tPg0KICA8IS0tIEQ9KDI4MCwgMjYwKSAtLT4NCiAgPCEtLSBMPSgxODQsIDE1MCkgLS0+DQogIDwhLS0gTT0oMTM5LCAxMDAuNSkgLS0+DQogIDwhLS0gTj0oMTQ4LCAxOTkuNSkgLS0+DQoNCiAgPCEtLSBNYWluIFF1YWRyaWxhdGVyYWwgYW5kIERpYWdvbmFsIC0tPg0KICA8IS0tIFBhdGggQSAtPiBCIC0+IEMgLT4gRCAtPiBBIC0tPg0KICA8cGF0aCBkPSJNNDAgMTUwIEwyNjAgNDAgTDM2MCAxNTAgTDI4MCAyNjAgWiIgY2xhc3M9ImxpbmUiIC8+DQogIA0KICA8IS0tIERpYWdvbmFsIEFDIC0tPg0KICA8bGluZSB4MT0iNDAiIHkxPSIxNTAiIHgyPSIzNjAiIHkyPSIxNTAiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gUGFyYWxsZWwgTGluZXMgc2VnbWVudHMgLS0+DQogIDwhLS0gTE0gLS0+DQogIDxsaW5lIHgxPSIxODQiIHkxPSIxNTAiIHgyPSIxMzkiIHkyPSIxMDAuNSIgY2xhc3M9ImxpbmUiIC8+DQogIA0KICA8IS0tIExOIC0tPg0KICA8bGluZSB4MT0iMTg0IiB5MT0iMTUwIiB4Mj0iMTQ4IiB5Mj0iMTk5LjUiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8IS0tIEEgLSBMZWZ0IC0tPg0KICA8dGV4dCB4PSIyMCIgeT0iMTU1IiBjbGFzcz0idGV4dCI+QTwvdGV4dD4NCiAgDQogIDwhLS0gQiAtIFRvcCAtLT4NCiAgPHRleHQgeD0iMjYwIiB5PSIzMCIgY2xhc3M9InRleHQiPkI8L3RleHQ+DQogIA0KICA8IS0tIEMgLSBSaWdodCAtLT4NCiAgPHRleHQgeD0iMzcwIiB5PSIxNTUiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICANCiAgPCEtLSBEIC0gQm90dG9tIC0tPg0KICA8dGV4dCB4PSIyODAiIHk9IjI4MCIgY2xhc3M9InRleHQiPkQ8L3RleHQ+DQogIA0KICA8IS0tIE0gLSBPbiBBQiAtLT4NCiAgPHRleHQgeD0iMTI1IiB5PSI5MCIgY2xhc3M9InRleHQiPk08L3RleHQ+DQogIA0KICA8IS0tIE4gLSBPbiBBRCAtLT4NCiAgPHRleHQgeD0iMTMwIiB5PSIyMTUiIGNsYXNzPSJ0ZXh0Ij5OPC90ZXh0Pg0KICANCiAgPCEtLSBMIC0gT24gQUMgLS0+DQogIDx0ZXh0IHg9IjE4NSIgeT0iMTQwIiBjbGFzcz0idGV4dCI+TDwvdGV4dD4NCg0KPC9zdmc+" alt="Figure with LM||CB and LN||CD">
+        <div class="question">3. In Fig., if LM || CB and LN || CD, prove that \(\frac{AM}{AB}\) = \(\frac{AN}{AD}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">LM || CB and LN || CD.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AM}{AB}\) = \(\frac{AN}{AD}\)</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ ABC, LM || CB. By BPT (Corollary):</div>
+        <div class="step">\(\frac{AM}{AB}\) = \(\frac{AL}{AC}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆ ADC, LN || CD. By BPT (Corollary):</div>
+        <div class="step">\(\frac{AN}{AD}\) = \(\frac{AL}{AC}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2), comparing RHS:</div>
+        <div class="step">\(\frac{AM}{AB}\) = \(\frac{AN}{AD}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gVmVydGljZXMgLS0+DQogIDwhLS0gQT0oMjIwLCA1MCkgLS0+DQogIDwhLS0gQj0oNTAsIDI1MCkgLS0+DQogIDwhLS0gQz0oMzUwLCAyNTApIC0tPg0KICA8IS0tIEQ9KDEzNSwgMTUwKSBNaWRwb2ludCBvZiBBQiAtLT4NCiAgPCEtLSBFPSgyMDAsIDI1MCkgRGVyaXZlZCBmcm9tIERFIHx8IEFDIC0tPg0KICA8IS0tIEY9KDEyNSwgMjUwKSBEZXJpdmVkIGZyb20gREYgfHwgQUUgLS0+DQoNCiAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogIDxwYXRoIGQ9Ik0yMjAgNTAgTDUwIDI1MCBMMzUwIDI1MCBaIiBjbGFzcz0ibGluZSIgLz4NCiAgDQogIDwhLS0gSW50ZXJuYWwgTGluZXMgLS0+DQogIDwhLS0gQUUgLS0+DQogIDxsaW5lIHgxPSIyMjAiIHkxPSI1MCIgeDI9IjIwMCIgeTI9IjI1MCIgY2xhc3M9ImxpbmUiIC8+DQogIA0KICA8IS0tIERFIC0tPg0KICA8bGluZSB4MT0iMTM1IiB5MT0iMTUwIiB4Mj0iMjAwIiB5Mj0iMjUwIiBjbGFzcz0ibGluZSIgLz4NCiAgDQogIDwhLS0gREYgLS0+DQogIDxsaW5lIHgxPSIxMzUiIHkxPSIxNTAiIHgyPSIxMjUiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8dGV4dCB4PSIyMTUiIHk9IjQwIiBjbGFzcz0idGV4dCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzUiIHk9IjI2MCIgY2xhc3M9InRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMjYwIiBjbGFzcz0idGV4dCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMTEwIiB5PSIxNTAiIGNsYXNzPSJ0ZXh0Ij5EPC90ZXh0Pg0KICA8dGV4dCB4PSIxOTUiIHk9IjI3NSIgY2xhc3M9InRleHQiPkU8L3RleHQ+DQogIDx0ZXh0IHg9IjEyMCIgeT0iMjc1IiBjbGFzcz0idGV4dCI+RjwvdGV4dD4NCg0KPC9zdmc+" alt="Figure with DE||AC and DF||AE">
+        <div class="question">4. In Fig., DE || AC and DF || AE. Prove that \(\frac{BF}{FE}\) = \(\frac{BE}{EC}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">In ∆ ABC, DE || AC and DF || AE.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{BF}{FE}\) = \(\frac{BE}{EC}\)</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ ABC, DE || AC. By BPT:</div>
+        <div class="step">\(\frac{BD}{DA}\) = \(\frac{BE}{EC}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆ ABE, DF || AE. By BPT:</div>
+        <div class="step">\(\frac{BD}{DA}\) = \(\frac{BF}{FE}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2), comparing LHS:</div>
+        <div class="step">\(\frac{BF}{FE}\) = \(\frac{BE}{EC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBQOiAoMjAwLCA0MCkgLS0+DQogIDwhLS0gUTogKDUwLCAzMjApIC0tPg0KICA8IS0tIFI6ICgzNTAsIDMyMCkgLS0+DQogIDwhLS0gTzogKDIwMCwgMjQwKSAtLT4NCiAgPCEtLSBEOiAoMjAwLCAxMzApIC0tPg0KICA8IS0tIEU6ICgxMzIuNSwgMTY2KSAtLT4NCiAgPCEtLSBGOiAoMjY3LjUsIDE2NikgLS0+DQoNCiAgPCEtLSBPdXRlciBUcmlhbmdsZSBQUVIgLS0+DQogIDxwYXRoIGQ9Ik0yMDAgNDAgTDUwIDMyMCBMMzUwIDMyMCBaIiBjbGFzcz0ibGluZSIgLz4NCg0KICA8IS0tIElubmVyIExpbmVzIHRvIE8gLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSI0MCIgeDI9IjIwMCIgeTI9IjI0MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gUE8gLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjMyMCIgeDI9IjIwMCIgeTI9IjI0MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gUU8gLS0+DQogIDxsaW5lIHgxPSIzNTAiIHkxPSIzMjAiIHgyPSIyMDAiIHkyPSIyNDAiIGNsYXNzPSJpbm5lci1saW5lIiAvPiA8IS0tIFJPIC0tPg0KDQogIDwhLS0gUGFyYWxsZWwgU2VnbWVudHMgLS0+DQogIDxsaW5lIHgxPSIxMzIuNSIgeTE9IjE2NiIgeDI9IjIwMCIgeTI9IjEzMCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gREUgLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIxMzAiIHgyPSIyNjcuNSIgeTI9IjE2NiIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gREYgLS0+DQogIDxsaW5lIHgxPSIxMzIuNSIgeTE9IjE2NiIgeDI9IjI2Ny41IiB5Mj0iMTY2IiBjbGFzcz0iaW5uZXItbGluZSIgLz4gPCEtLSBFRiAtLT4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHRleHQgeD0iMTk1IiB5PSIzMCIgY2xhc3M9InRleHQiPlA8L3RleHQ+DQogIDx0ZXh0IHg9IjMwIiB5PSIzMjUiIGNsYXNzPSJ0ZXh0Ij5RPC90ZXh0Pg0KICA8dGV4dCB4PSIzNjAiIHk9IjMyNSIgY2xhc3M9InRleHQiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjE5MCIgeT0iMjYwIiBjbGFzcz0idGV4dCI+TzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjIwNSIgeT0iMTMwIiBjbGFzcz0idGV4dCI+RDwvdGV4dD4NCiAgPHRleHQgeD0iMTEwIiB5PSIxNjUiIGNsYXNzPSJ0ZXh0Ij5FPC90ZXh0Pg0KICA8dGV4dCB4PSIyNzUiIHk9IjE2NSIgY2xhc3M9InRleHQiPkY8L3RleHQ+DQoNCjwvc3ZnPg0K" alt="Figure with DE||OQ and DF||OR">
+        <div class="question">5. In Fig., DE || OQ and DF || OR. Show that EF || QR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">DE || OQ and DF || OR.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">EF || QR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ PQO, DE || OQ. By BPT:</div>
+        <div class="step">\(\frac{PE}{EQ}\) = \(\frac{PD}{DO}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆ POR, DF || OR. By BPT:</div>
+        <div class="step">\(\frac{PF}{FR}\) = \(\frac{PD}{DO}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{PE}{EQ}\) = \(\frac{PF}{FR}\)</div>
+        <div class="step">In ∆ PQR, since the sides PQ and PR are divided in the same ratio:</div>
+        <div class="step">By Converse of BPT:</div>
+        <div class="final-answer">EF || QR.</div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBQOiAoMjAwLCA0MCkgLS0+DQogIDwhLS0gUTogKDYwLCAzMDApIC0tPg0KICA8IS0tIFI6ICgzNDAsIDMwMCkgLS0+DQogIDwhLS0gTzogKDIwMCwgMTkwKSAtLT4NCiAgDQogIDwhLS0gSW5uZXIgVHJpYW5nbGUgVmVydGljZXMgKFNjYWxpbmcgUCxRLFIgdG93YXJkcyBPIGJ5IGZhY3RvciB+MC42KSAtLT4NCiAgPCEtLSBBID0gTyArIDAuNTUgKiAoUC1PKSA9ICgyMDAsIDE5MCkgKyAwLjU1KigwLCAtMTUwKSA9ICgyMDAsIDE5MC04Mi41KSA9ICgyMDAsIDEwNy41KSAtLT4NCiAgPCEtLSBCID0gTyArIDAuNTUgKiAoUS1PKSA9ICgyMDAsIDE5MCkgKyAwLjU1KigtMTQwLCAxMTApID0gKDIwMC03NywgMTkwKzYwLjUpID0gKDEyMywgMjUwLjUpIC0tPg0KICA8IS0tIEMgPSBPICsgMC41NSAqIChSLU8pID0gKDIwMCwgMTkwKSArIDAuNTUqKDE0MCwgMTEwKSA9ICgyMDArNzcsIDE5MCs2MC41KSA9ICgyNzcsIDI1MC41KSAtLT4NCiAgDQogIDwhLS0gT3V0ZXIgVHJpYW5nbGUgUFFSIC0tPg0KICA8cGF0aCBkPSJNMjAwIDQwIEw2MCAzMDAgTDM0MCAzMDAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBDb25uZWN0aW5nIExpbmVzIGZyb20gVmVydGljZXMgdG8gTyAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjQwIiB4Mj0iMjAwIiB5Mj0iMTkwIiBjbGFzcz0iaW5uZXItbGluZSIgLz4gPCEtLSBQTyAtLT4NCiAgPGxpbmUgeDE9IjYwIiB5MT0iMzAwIiB4Mj0iMjAwIiB5Mj0iMTkwIiBjbGFzcz0iaW5uZXItbGluZSIgLz4gPCEtLSBRTyAtLT4NCiAgPGxpbmUgeDE9IjM0MCIgeTE9IjMwMCIgeDI9IjIwMCIgeTI9IjE5MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gUk8gLS0+DQoNCiAgPCEtLSBJbm5lciBUcmlhbmdsZSBBQkMgLS0+DQogIDxwYXRoIGQ9Ik0yMDAgMTA3LjUgTDEyMyAyNTAuNSBMMjc3IDI1MC41IFoiIGNsYXNzPSJpbm5lci1saW5lIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBjbGFzcz0idGV4dCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iNDAiIHk9IjMxMCIgY2xhc3M9InRleHQiPlE8L3RleHQ+DQogIDx0ZXh0IHg9IjM1MCIgeT0iMzEwIiBjbGFzcz0idGV4dCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iMjA1IiB5PSIyMTAiIGNsYXNzPSJ0ZXh0Ij5PPC90ZXh0Pg0KICANCiAgPHRleHQgeD0iMTgwIiB5PSIxMTAiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIxMDUiIHk9IjI0NSIgY2xhc3M9InRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjI4NSIgeT0iMjQ1IiBjbGFzcz0idGV4dCI+QzwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Triangle with Points on Medians">
+        <div class="question">6. In Fig., A, B and C are points on OP, OQ and OR respectively such that AB || PQ and AC
+            || PR. Show that BC || QR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Points A, B, C on OP, OQ, OR. AB || PQ and AC || PR.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">BC || QR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ OPQ, AB || PQ. By BPT:</div>
+        <div class="step">\(\frac{OA}{AP}\) = \(\frac{OB}{BQ}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆ OPR, AC || PR. By BPT:</div>
+        <div class="step">\(\frac{OA}{AP}\) = \(\frac{OC}{CR}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{OB}{BQ}\) = \(\frac{OC}{CR}\)</div>
+        <div class="step">In ∆ OQR, points B and C divide sides OQ and OR in the same ratio.</div>
+        <div class="step">By Converse of BPT:</div>
+        <div class="final-answer">BC || QR.</div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1kYXNoYXJyYXk6IDYsNDsgfQ0KICAgICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIiwgc2VyaWY7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6ICMwMDA7IH0NCiAgICAgICAgLmFuZ2xlLW1hcmsgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMS41OyBmaWxsOiBub25lOyB9DQogICAgPC9zdHlsZT4NCg0KICAgIDwhLS0gQ29vcmRpbmF0ZXM6IEEoMjUwLCA1MCksIEIoMTAwLCAzMDApLCBDKDQwMCwgMzAwKSAtLT4NCiAgICA8IS0tIEQoMTkwLCAxNTApLCBFKDMxMCwgMTUwKSAtLT4NCiAgICA8IS0tIE4oMjIyLCA5NyksIE0oMjc4LCA5NykgLS0+DQoNCiAgICA8IS0tIE1haW4gVHJpYW5nbGUgQUJDIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjUwLDUwIEwgMTAwLDMwMCBMIDQwMCwzMDAgWiIgY2xhc3M9Im1haW4tbGluZSIgLz4NCg0KICAgIDwhLS0gTGluZSBERSAtLT4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KDQogICAgPCEtLSBEYXNoZWQgTGluZXM6IEJFIGFuZCBDRCAtLT4NCiAgICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0iZGFzaGVkLWxpbmUiIC8+DQogICAgPGxpbmUgeDE9IjQwMCIgeTE9IjMwMCIgeDI9IjE5MCIgeTI9IjE1MCIgY2xhc3M9ImRhc2hlZC1saW5lIiAvPg0KDQogICAgPCEtLSBQZXJwZW5kaWN1bGFyczogRU4gKEUgdG8gQUIpIGFuZCBETSAoRCB0byBBQykgLS0+DQogICAgPCEtLSBOIGlzIG9uIEFCLiBNIGlzIG9uIEFDLiAtLT4NCiAgICA8bGluZSB4MT0iMzEwIiB5MT0iMTUwIiB4Mj0iMjIyIiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMjc4IiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCg0KICAgIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VycyAtLT4NCiAgICA8IS0tIEF0IE4oMjIyLCA5Nykgb24gQUIuIEFCIHNsb3BlIGlzIC01LzMuIE5vcm1hbCBzbG9wZSBpcyAzLzUuIC0tPg0KICAgIDwhLS0gVmVjdG9yIGFsb25nIEFCIGFwcHJveCAoLTMsIDUpLiBWZWN0b3IgYWxvbmcgTkUgYXBwcm94ICgtMSwgLTAuNikgLS0+DQogICAgPCEtLSBKdXN0IGRyYXcgc21hbGwgc3F1YXJlcyByb3RhdGVkIGFwcHJvcHJpYXRlbHkgLS0+DQogICAgPCEtLSBOIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjIyLDk3IEwgMjI3LDEwNSBMIDIzNSwxMDAiIGNsYXNzPSJhbmdsZS1tYXJrIiBmaWxsPSJub25lIi8+IA0KICAgIDwhLS0gU2ltcGxpZmllZCByaWdodCBhbmdsZSBtYXJrIG9yIHJvdGF0ZSBhIHJlY3QgLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoLTU5IDIyMiA5NykiPg0KICAgICAgICA8cmVjdCB4PSIyMjIiIHk9Ijk3IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KICAgIDwvZz4NCiAgICANCiAgICA8IS0tIE0gLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoNTkgMjc4IDk3KSI+DQogICAgICAgIDxyZWN0IHg9IjI2OCIgeT0iOTciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogICAgPC9nPg0KICAgIDwhLS0gVGhlIHJvdGF0aW9uIG1pZ2h0IG5lZWQgZmluZSB0dW5pbmcsIGJ1dCA1OSBkZWcgaXMgYXBwcm94IHNsb3BlIGFuZ2xlICh0YW4gNS8zID0gNTkgZGVnKSAtLT4NCiAgICA8IS0tIEZvciBNIChvbiBBQyksIHNsb3BlIGlzIDUvMy4gQW5nbGUgaXMgNTkgZGVnLiBUaGUgcmVjdCBzaG91bGQgYWxpZ24gd2l0aCBsaW5lIEFDLg0KICAgICAgICAgUmVjdCBhdCAoMjc4LDk3KS4gVGhlIGxpbmUgZ29lcyAnZG93bi1yaWdodCcuIFNvIHdlIHdhbnQgdGhlIHJlY3QgJ2luc2lkZScgdG93YXJkcyBEPw0KICAgICAgICAgRCBpcyB0byB0aGUgbGVmdC4NCiAgICAgICAgIExldCdzIGp1c3QgdXNlIG1hbnVhbCBwYXRoIGZvciBiZXR0ZXIgY29udHJvbCBpZiB1bnN1cmUgb2Ygcm90YXRpb24gb3JpZ2luLiAtLT4NCiAgICAgICAgIA0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9IjI1MCIgeT0iNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjkwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjQxMCIgeT0iMzEwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5DPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE4MCIgeT0iMTUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+RDwvdGV4dD4NCiAgICA8dGV4dCB4PSIzMjAiIHk9IjE1MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+RTwvdGV4dD4NCiAgICA8dGV4dCB4PSIyMTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+TjwvdGV4dD4NCiAgICA8dGV4dCB4PSIyOTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5NPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Midpoint Theorem BPT">
+        <div class="question">7. Using Theorem 6.1 (BPT), prove that a line drawn through the mid-point of one side of a
+            triangle parallel to another side bisects the third side.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ ABC, D is midpoint of AB (AD = DB). Line DE || BC intersecting AC at E.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">E is midpoint of AC (AE = EC).</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">By BPT, since DE || BC:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">Since AD = DB, \(\frac{AD}{DB}\) = 1.</div>
+        <div class="step">Therefore, 1 = \(\frac{AE}{EC}\)</div>
+        <div class="step">AE = EC.</div>
+        <div class="final-answer">Hence, E bisects AC.</div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1kYXNoYXJyYXk6IDYsNDsgfQ0KICAgICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIiwgc2VyaWY7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6ICMwMDA7IH0NCiAgICAgICAgLmFuZ2xlLW1hcmsgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMS41OyBmaWxsOiBub25lOyB9DQogICAgPC9zdHlsZT4NCg0KICAgIDwhLS0gQ29vcmRpbmF0ZXM6IEEoMjUwLCA1MCksIEIoMTAwLCAzMDApLCBDKDQwMCwgMzAwKSAtLT4NCiAgICA8IS0tIEQoMTkwLCAxNTApLCBFKDMxMCwgMTUwKSAtLT4NCiAgICA8IS0tIE4oMjIyLCA5NyksIE0oMjc4LCA5NykgLS0+DQoNCiAgICA8IS0tIE1haW4gVHJpYW5nbGUgQUJDIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjUwLDUwIEwgMTAwLDMwMCBMIDQwMCwzMDAgWiIgY2xhc3M9Im1haW4tbGluZSIgLz4NCg0KICAgIDwhLS0gTGluZSBERSAtLT4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KDQogICAgPCEtLSBEYXNoZWQgTGluZXM6IEJFIGFuZCBDRCAtLT4NCiAgICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0iZGFzaGVkLWxpbmUiIC8+DQogICAgPGxpbmUgeDE9IjQwMCIgeTE9IjMwMCIgeDI9IjE5MCIgeTI9IjE1MCIgY2xhc3M9ImRhc2hlZC1saW5lIiAvPg0KDQogICAgPCEtLSBQZXJwZW5kaWN1bGFyczogRU4gKEUgdG8gQUIpIGFuZCBETSAoRCB0byBBQykgLS0+DQogICAgPCEtLSBOIGlzIG9uIEFCLiBNIGlzIG9uIEFDLiAtLT4NCiAgICA8bGluZSB4MT0iMzEwIiB5MT0iMTUwIiB4Mj0iMjIyIiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMjc4IiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCg0KICAgIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VycyAtLT4NCiAgICA8IS0tIEF0IE4oMjIyLCA5Nykgb24gQUIuIEFCIHNsb3BlIGlzIC01LzMuIE5vcm1hbCBzbG9wZSBpcyAzLzUuIC0tPg0KICAgIDwhLS0gVmVjdG9yIGFsb25nIEFCIGFwcHJveCAoLTMsIDUpLiBWZWN0b3IgYWxvbmcgTkUgYXBwcm94ICgtMSwgLTAuNikgLS0+DQogICAgPCEtLSBKdXN0IGRyYXcgc21hbGwgc3F1YXJlcyByb3RhdGVkIGFwcHJvcHJpYXRlbHkgLS0+DQogICAgPCEtLSBOIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjIyLDk3IEwgMjI3LDEwNSBMIDIzNSwxMDAiIGNsYXNzPSJhbmdsZS1tYXJrIiBmaWxsPSJub25lIi8+IA0KICAgIDwhLS0gU2ltcGxpZmllZCByaWdodCBhbmdsZSBtYXJrIG9yIHJvdGF0ZSBhIHJlY3QgLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoLTU5IDIyMiA5NykiPg0KICAgICAgICA8cmVjdCB4PSIyMjIiIHk9Ijk3IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KICAgIDwvZz4NCiAgICANCiAgICA8IS0tIE0gLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoNTkgMjc4IDk3KSI+DQogICAgICAgIDxyZWN0IHg9IjI2OCIgeT0iOTciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogICAgPC9nPg0KICAgIDwhLS0gVGhlIHJvdGF0aW9uIG1pZ2h0IG5lZWQgZmluZSB0dW5pbmcsIGJ1dCA1OSBkZWcgaXMgYXBwcm94IHNsb3BlIGFuZ2xlICh0YW4gNS8zID0gNTkgZGVnKSAtLT4NCiAgICA8IS0tIEZvciBNIChvbiBBQyksIHNsb3BlIGlzIDUvMy4gQW5nbGUgaXMgNTkgZGVnLiBUaGUgcmVjdCBzaG91bGQgYWxpZ24gd2l0aCBsaW5lIEFDLg0KICAgICAgICAgUmVjdCBhdCAoMjc4LDk3KS4gVGhlIGxpbmUgZ29lcyAnZG93bi1yaWdodCcuIFNvIHdlIHdhbnQgdGhlIHJlY3QgJ2luc2lkZScgdG93YXJkcyBEPw0KICAgICAgICAgRCBpcyB0byB0aGUgbGVmdC4NCiAgICAgICAgIExldCdzIGp1c3QgdXNlIG1hbnVhbCBwYXRoIGZvciBiZXR0ZXIgY29udHJvbCBpZiB1bnN1cmUgb2Ygcm90YXRpb24gb3JpZ2luLiAtLT4NCiAgICAgICAgIA0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9IjI1MCIgeT0iNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjkwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjQxMCIgeT0iMzEwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5DPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE4MCIgeT0iMTUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+RDwvdGV4dD4NCiAgICA8dGV4dCB4PSIzMjAiIHk9IjE1MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+RTwvdGV4dD4NCiAgICA8dGV4dCB4PSIyMTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+TjwvdGV4dD4NCiAgICA8dGV4dCB4PSIyOTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5NPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Midpoint Theorem Converse">
+        <div class="question">8. Using Theorem 6.2 (Converse BPT), prove that the line joining the mid-points of any two
+            sides of a triangle is parallel to the third side.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ ABC, D is midpoint of AB (AD = DB), E is midpoint of AC (AE = EC).</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">DE || BC.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Ratio 1: \(\frac{AD}{DB}\) = 1 (Since AD=DB)</div>
+        <div class="step">Ratio 2: \(\frac{AE}{EC}\) = 1 (Since AE=EC)</div>
+        <div class="step">Since \(\frac{AD}{DB}\) = \(\frac{AE}{EC}\), by Converse of BPT:</div>
+        <div class="final-answer">DE || BC.</div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBBOiAoMTAwLCA1MCkgLS0+DQogIDwhLS0gQjogKDMwMCwgNTApIC0tPg0KICA8IS0tIEM6ICgzNTAsIDI1MCkgLS0+DQogIDwhLS0gRDogKDUwLCAyNTApIC0tPg0KICA8IS0tIE86ICgyMDAsIDEzMCkgSW50ZXJzZWN0aW9uIG9mIERpYWdvbmFscyAtLT4NCiAgPCEtLSBFOiAoODAsIDEzMCkgUG9pbnQgb24gQUQgcGFyYWxsZWwgdG8gQUIvREMgdGhyb3VnaCBPIC0tPg0KDQogIDwhLS0gVHJhcGV6aXVtIEFCQ0QgLS0+DQogIDxwYXRoIGQ9Ik0xMDAgNTAgTDMwMCA1MCBMMzUwIDI1MCBMNTAgMjUwIFoiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gRGlhZ29uYWxzIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iNTAiIHgyPSIzNTAiIHkyPSIyNTAiIGNsYXNzPSJpbm5lci1saW5lIiAvPiA8IS0tIEFDIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iNTAiIHgyPSI1MCIgeTI9IjI1MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gQkQgLS0+DQoNCiAgPCEtLSBQYXJhbGxlbCBMaW5lIE9FIC0tPg0KICA8bGluZSB4MT0iODAiIHkxPSIxMzAiIHgyPSIyMDAiIHkyPSIxMzAiIGNsYXNzPSJpbm5lci1saW5lIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8dGV4dCB4PSI4NSIgeT0iNDAiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDAiIHk9IjQwIiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMzYwIiB5PSIyNzAiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzNSIgeT0iMjcwIiBjbGFzcz0idGV4dCI+RDwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE5NSIgeT0iMTYwIiBjbGFzcz0idGV4dCI+TzwvdGV4dD4NCiAgPHRleHQgeD0iNjAiIHk9IjEzNSIgY2xhc3M9InRleHQiPkU8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Trapezium Diagonals">
+        <div class="question">9. ABCD is a trapezium in which AB || DC and its diagonals intersect each other at the
+            point O. Show that \(\frac{AO}{BO}\) = \(\frac{CO}{DO}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Trapezium ABCD with AB || DC. Diagonals AC and BD intersect at O.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AO}{BO}\) = \(\frac{CO}{DO}\)</div>
+        <div class="sub-header">Construction:</div>
+        <div class="step">Draw a line EO || DC passing through O and meeting AD at E.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ ADC, EO || DC. By BPT:</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{AO}{CO}\) <span class="reason">...(1)</span></div>
+        <div class="step">Since AB || DC and EO || DC, then EO || AB.</div>
+        <div class="step">In ∆ ADB, EO || AB. By BPT:</div>
+        <div class="step">\(\frac{ED}{AE}\) = \(\frac{DO}{BO}\)</div>
+        <div class="step">Taking reciprocal: \(\frac{AE}{ED}\) = \(\frac{BO}{DO}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{AO}{CO}\) = \(\frac{BO}{DO}\)</div>
+        <div class="step">Rearranging terms:</div>
+        <div class="step">\(\frac{AO}{BO}\) = \(\frac{CO}{DO}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="content-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBBOiAoMTAwLCA1MCkgLS0+DQogIDwhLS0gQjogKDMwMCwgNTApIC0tPg0KICA8IS0tIEM6ICgzNTAsIDI1MCkgLS0+DQogIDwhLS0gRDogKDUwLCAyNTApIC0tPg0KICA8IS0tIE86ICgyMDAsIDEzMCkgSW50ZXJzZWN0aW9uIG9mIERpYWdvbmFscyAtLT4NCiAgPCEtLSBFOiAoODAsIDEzMCkgUG9pbnQgb24gQUQgcGFyYWxsZWwgdG8gQUIvREMgdGhyb3VnaCBPIC0tPg0KDQogIDwhLS0gVHJhcGV6aXVtIEFCQ0QgLS0+DQogIDxwYXRoIGQ9Ik0xMDAgNTAgTDMwMCA1MCBMMzUwIDI1MCBMNTAgMjUwIFoiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gRGlhZ29uYWxzIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iNTAiIHgyPSIzNTAiIHkyPSIyNTAiIGNsYXNzPSJpbm5lci1saW5lIiAvPiA8IS0tIEFDIC0tPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iNTAiIHgyPSI1MCIgeTI9IjI1MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+IDwhLS0gQkQgLS0+DQoNCiAgPCEtLSBQYXJhbGxlbCBMaW5lIE9FIC0tPg0KICA8bGluZSB4MT0iODAiIHkxPSIxMzAiIHgyPSIyMDAiIHkyPSIxMzAiIGNsYXNzPSJpbm5lci1saW5lIiAvPg0KDQogIDwhLS0gTGFiZWxzIC0tPg0KICA8dGV4dCB4PSI4NSIgeT0iNDAiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMDAiIHk9IjQwIiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iMzYwIiB5PSIyNzAiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzNSIgeT0iMjcwIiBjbGFzcz0idGV4dCI+RDwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE5NSIgeT0iMTYwIiBjbGFzcz0idGV4dCI+TzwvdGV4dD4NCiAgPHRleHQgeD0iNjAiIHk9IjEzNSIgY2xhc3M9InRleHQiPkU8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Quadrilateral ABCD">
+        <div class="question">10. The diagonals of a quadrilateral ABCD intersect each other at the point O such that
+            \(\frac{AO}{BO}\) = \(\frac{CO}{DO}\). Show that
+            ABCD is a trapezium.
+        </div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Quadrilateral ABCD, diagonals intersect at O, \(\frac{AO}{BO}\) = \(\frac{CO}{DO}\).</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">ABCD is a trapezium (i.e., AB || DC).</div>
+        <div class="sub-header">Construction:</div>
+        <div class="step">Draw line EO || AB meeting AD at E.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ DAB, EO || AB. By BPT:</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{BO}{DO}\) <span class="reason">...(1)</span></div>
+        <div class="step">Given: \(\frac{AO}{BO}\) = \(\frac{CO}{DO}\)</div>
+        <div class="step">Rearranging: \(\frac{AO}{CO}\) = \(\frac{BO}{DO}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{AO}{CO}\)</div>
+        <div class="step">In ∆ ADC, points E and O divide sides AD and AC in the same ratio.</div>
+        <div class="step">By Converse of BPT, EO || DC.</div>
+        <div class="step">But by construction, EO || AB.</div>
+        <div class="step">Since EO is parallel to both AB and DC, therefore AB || DC.</div>
+        <div class="step">Since one pair of opposite sides is parallel, ABCD is a trapezium.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+<hr/>
+<div class="exercise-title">Exercise 6.3</div>
+<!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. State which pairs of triangles in Fig. are similar. Write the similarity criterion used
+            by you for answering the question and also write the pairs of similar triangles in the symbolic form.</div>
+
+        <div class="sub-question">(i) ∆ABC (Angles 60, 80, 40) and ∆PQR (Angles 60, 80, 40)</div>
+        <img src="images/" ex6_3_q1_i.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠A = ∠P = 60°</div>
+        <div class="step">∠B = ∠Q = 80°</div>
+        <div class="step">∠C = ∠R = 40°</div>
+        <div class="step">Corresponding angles are equal.</div>
+        <div class="step">By AAA Similarity Criterion <span class="reason">(AAA Similarity)</span>:</div>
+        <div class="final-answer">∆ABC ~ ∆PQR</div>
+
+        <div class="sub-question">(ii) ∆ABC (Sides 2, 3, 2.5) and ∆PQR (Sides 6, 5, 4)</div>
+        <img src="images/" ex6_3_q1_ii.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">\(\frac{AB}{QR}\) = \(\frac{2}{4}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{BC}{RP}\) = \(\frac{2.5}{5}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{CA}{PQ}\) = \(\frac{3}{6}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Sides are proportional. By SSS Similarity Criterion <span class="reason">(SSS
+                Similarity)</span>:</div>
+        <div class="final-answer">∆ABC ~ ∆QRP</div>
+
+        <div class="sub-question">(iii) ∆LMP (Sides 2.7, 3, 2) and ∆DEF (Sides 5, 6, 4)</div>
+        <img src="images/" ex6_3_q1_iii.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">\(\frac{MP}{DE}\) = \(\frac{2}{4}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{LP}{DF}\) = \(\frac{3}{6}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{LM}{EF}\) = \(\frac{2.7}{5}\) ≠ \(\frac{1}{2}\)</div>
+        <div class="step">Sides are not proportional.</div>
+        <div class="final-answer">Not similar.</div>
+
+        <div class="sub-question">(iv) ∆MNL (M=70, MN=2.5, ML=5) and ∆PQR (Q=70, PQ=5, QR=10)</div>
+        <img src="images/" ex6_3_q1_iv.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">\(\frac{MN}{PQ}\) = \(\frac{2.5}{5}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{ML}{QR}\) = \(\frac{5}{10}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Included Angle M = Angle Q = 70°.</div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="final-answer">∆MNL ~ ∆PQR</div>
+
+        <div class="sub-question">(v) ∆ABC (A=80, AB=2.5, BC=3) and ∆DEF (F=80, DF=5, EF=6)</div>
+        <img src="images/" ex6_3_q1_v.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">\(\frac{AB}{DF}\) = \(\frac{2.5}{5}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{BC}{EF}\) = \(\frac{3}{6}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Angle A = 80°. Angle F = 80°.</div>
+        <div class="step">However, Angle A is not included between AB and BC. Angle F is included between DF and EF.
+        </div>
+        <div class="step">The condition for SAS is not satisfied.</div>
+        <div class="final-answer">Not similar.</div>
+
+        <div class="sub-question">(vi) ∆DEF (D=70, E=80) and ∆PQR (Q=80, R=30)</div>
+        <img src="images/" ex6_3_q1_vi.svg"="" alt="Triangles Pair">
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆DEF, ∠F = 180° - (70° + 80°) = 30° <span class="reason">(Angle Sum Property)</span>.</div>
+        <div class="step">In ∆PQR, ∠P = 180° - (80° + 30°) = 70° <span class="reason">(Angle Sum Property)</span>.</div>
+        <div class="step">∠D = ∠P = 70°</div>
+        <div class="step">∠E = ∠Q = 80°</div>
+        <div class="step">∠F = ∠R = 30°</div>
+        <div class="step">By AAA Similarity Criterion <span class="reason">(AAA Similarity)</span>:</div>
+        <div class="final-answer">∆DEF ~ ∆PQR</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q2.svg"="" alt="Intersecting Lines with 125 and 70 degrees">
+        <div class="question">2. In Fig., ∆ODC ~ ∆OBA, ∠BOC = 125° and ∠CDO = 70°. Find ∠DOC, ∠DCO and ∠OAB.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ODC ~ ∆OBA, ∠BOC = 125°, ∠CDO = 70°.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∠DOC, ∠DCO and ∠OAB.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠DOC + ∠BOC = 180° <span class="reason">(Linear Pair)</span></div>
+        <div class="step">∠DOC + 125° = 180° ⇒ ∠DOC = 55°</div>
+        <div class="step">In ∆ODC: ∠DCO + ∠CDO + ∠DOC = 180° <span class="reason">(Angle Sum Property)</span></div>
+        <div class="step">∠DCO + 70° + 55° = 180°</div>
+        <div class="step">∠DCO = 180° - 125° = 55°</div>
+        <div class="step">Since ∆ODC ~ ∆OBA, corresponding angles are equal.</div>
+        <div class="step">∠OAB = ∠OCD <span class="reason">(Corresponding parts of similar triangles)</span></div>
+        <div class="step">So, ∠OAB = 55°</div>
+        <div class="final-answer">∠DOC = 55°, ∠DCO = 55°, ∠OAB = 55°.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q3.svg"="" alt="Trapezium with Diagonals">
+        <div class="question">3. Diagonals AC and BD of a trapezium ABCD with AB || DC intersect each other at the point
+            O. Using a similarity criterion for two triangles, show that \(\frac{OA}{OC}\) = \(\frac{OB}{OD}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Trapezium ABCD, AB || DC. Diagonals intersect at O.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{OA}{OC}\) = \(\frac{OB}{OD}\)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆OAB and ∆OCD:</div>
+        <div class="step">AB || DC <span class="reason">(Given)</span></div>
+        <div class="step">∠OAB = ∠OCD <span class="reason">(Alternate Interior Angles)</span></div>
+        <div class="step">∠OBA = ∠ODC <span class="reason">(Alternate Interior Angles)</span></div>
+        <div class="step">By AA Similarity Criterion <span class="reason">(AA Similarity)</span>:</div>
+        <div class="step">∆OAB ~ ∆OCD</div>
+        <div class="step">Corresponding sides are proportional:</div>
+        <div class="step">\(\frac{OA}{OC}\) = \(\frac{OB}{OD}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q4.svg"="" alt="Triangle PQR">
+        <div class="question">4. In Fig., \(\frac{QR}{QS}\) = \(\frac{QT}{PR}\) and ∠1 = ∠2. Show that ∆PQS ~ ∆TQR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">\(\frac{QR}{QS}\) = \(\frac{QT}{PR}\) and ∠1 = ∠2.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆PQS ~ ∆TQR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆PQR: ∠1 = ∠2 (i.e., ∠PQR = ∠PRQ).</div>
+        <div class="step">So PQ = PR <span class="reason">(Sides opposite to equal angles are equal)</span>.</div>
+        <div class="step">Given: \(\frac{QR}{QS}\) = \(\frac{QT}{PR}\)</div>
+        <div class="step">Substitute PR = PQ:</div>
+        <div class="step">\(\frac{QR}{QS}\) = \(\frac{QT}{PQ}\)</div>
+        <div class="step">Invert both sides: \n \(\frac{QS}{QR}\) = \(\frac{PQ}{QT}\)</div>
+        <div class="step">Now in ∆PQS and ∆TQR:</div>
+        <div class="step">\(\frac{PQ}{QT}\) = \(\frac{QS}{QR}\)</div>
+        <div class="step">∠PQS = ∠TQR (= ∠1) is common.</div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="final-answer">∆PQS ~ ∆TQR.</div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q5.svg"="" alt="Triangle PQR">
+        <div class="question">5. S and T are points on sides PR and QR of ∆ PQR such that ∠P = ∠RTS. Show that ∆RPQ ~
+            ∆RTS.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆PQR with points S on PR, T on QR such that ∠P = ∠RTS.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆RPQ ~ ∆RTS.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆RPQ and ∆RTS:</div>
+        <div class="step">∠R is common <span class="reason">(Common Angle)</span>.</div>
+        <div class="step">∠RPQ = ∠RTS <span class="reason">(Given)</span>.</div>
+        <div class="step">By AA Similarity Criterion <span class="reason">(AA Similarity)</span>:</div>
+        <div class="final-answer">∆RPQ ~ ∆RTS.</div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q6.svg"="" alt="Congruent Triangles">
+        <div class="question">6. In Fig., if ∆ABE ≅ ∆ACD, show that ∆ADE ~ ∆ABC.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABE ≅ ∆ACD.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆ADE ~ ∆ABC.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABE ≅ ∆ACD <span class="reason">(Given)</span>:</div>
+        <div class="step">AB = AC <span class="reason">(CPCT)</span></div>
+        <div class="step">AE = AD <span class="reason">(CPCT)</span> ⇒ AD = AE</div>
+        <div class="step">Divide equations: \(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+        <div class="step">In ∆ADE and ∆ABC:</div>
+        <div class="step">\(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+        <div class="step">∠DAE = ∠BAC <span class="reason">(Common Angle)</span></div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="final-answer">∆ADE ~ ∆ABC.</div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q7.svg"="" alt="Altitudes Figure">
+        <div class="question">7. In Fig., altitudes AD and CE of ∆ ABC intersect each other at the point P. Show that:
+        </div>
+
+        <div class="sub-question">(i) ∆AEP ~ ∆CDP</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠AEP = ∠CDP = 90° <span class="reason">(Altitudes)</span></div>
+        <div class="step">∠APE = ∠CPD <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆AEP ~ ∆CDP.</div>
+
+        <div class="sub-question">(ii) ∆ABD ~ ∆CBE</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠ADB = ∠CEB = 90° <span class="reason">(Altitudes)</span></div>
+        <div class="step">∠ABD = ∠CBE <span class="reason">(Common Angle B)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆ABD ~ ∆CBE.</div>
+
+        <div class="sub-question">(iii) ∆AEP ~ ∆ADB</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠AEP = ∠ADB = 90° <span class="reason">(Altitudes)</span></div>
+        <div class="step">∠PAE = ∠BAD <span class="reason">(Common Angle A)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆AEP ~ ∆ADB.</div>
+
+        <div class="sub-question">(iv) ∆PDC ~ ∆BEC</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠PDC = ∠BEC = 90° <span class="reason">(Altitudes)</span></div>
+        <div class="step">∠PCD = ∠BCE <span class="reason">(Common Angle C)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆PDC ~ ∆BEC.</div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q8.svg"="" alt="Parallelogram Figure">
+        <div class="question">8. E is a point on the side AD produced of a parallelogram ABCD and BE intersects CD at F.
+            Show that ∆ABE ~ ∆CFB.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Parallelogram ABCD. E on AD produced. BE intersects CD at F.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆ABE ~ ∆CFB.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In Parallelogram ABCD, ∠A = ∠C <span class="reason">(Opposite angles of parallelogram)</span>.
+        </div>
+        <div class="step">AE || BC. So ∠AEB = ∠CBF <span class="reason">(Alternate Interior Angles)</span>.</div>
+        <div class="step">In ∆ABE and ∆CFB:</div>
+        <div class="step">∠A = ∠C</div>
+        <div class="step">∠AEB = ∠CBF</div>
+        <div class="step">By AA Similarity Criterion <span class="reason">(AA Similarity)</span>:</div>
+        <div class="final-answer">∆ABE ~ ∆CFB.</div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q9.svg"="" alt="Right Triangles">
+        <div class="question">9. In Fig., ABC and AMP are two right triangles, right angled at B and M respectively.
+            Prove that:</div>
+
+        <div class="sub-question">(i) ∆ABC ~ ∆AMP</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ABC and ∆AMP:</div>
+        <div class="step">∠ABC = ∠AMP = 90° <span class="reason">(Given)</span></div>
+        <div class="step">∠BAC = ∠MAP <span class="reason">(Common Angle A)</span></div>
+        <div class="step">By AA Similarity Criterion <span class="reason">(AA Similarity)</span>:</div>
+        <div class="final-answer">∆ABC ~ ∆AMP.</div>
+
+        <div class="sub-question">(ii) \(\frac{CA}{PA}\) = \(\frac{BC}{MP}\)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆AMP <span class="reason">(Proved above)</span>:</div>
+        <div class="step">Corresponding sides are proportional.</div>
+        <div class="step">\(\frac{CA}{PA}\) = \(\frac{BC}{MP}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q10.svg"="" alt="Bisectors Figure">
+        <div class="question">10. CD and GH are respectively the bisectors of ∠ACB and ∠EGF such that D and H lie on
+            sides AB and FE of ∆ABC and ∆EFG respectively. If ∆ABC ~ ∆FEG, show that:</div>
+
+        <div class="sub-question">(i) \(\frac{CD}{GH}\) = \(\frac{AC}{FG}\)</div>
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC ~ ∆FEG. CD bisects ∠C, GH bisects ∠G.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆FEG:</div>
+        <div class="step">∠A = ∠F <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">∠C = ∠G <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">Since CD and GH are bisectors:</div>
+        <div class="step">∠ACD = \(\frac{1}{2}\) ∠C and ∠FGH = \(\frac{1}{2}\) ∠G.</div>
+        <div class="step">So ∠ACD = ∠FGH.</div>
+        <div class="step">In ∆ACD and ∆FGH:</div>
+        <div class="step">∠A = ∠F</div>
+        <div class="step">∠ACD = ∠FGH</div>
+        <div class="step">By AA Similarity <span class="reason">(AA Similarity)</span>:</div>
+        <div class="step">∆ACD ~ ∆FGH</div>
+        <div class="step">So \(\frac{CD}{GH}\) = \(\frac{AC}{FG}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+
+        <div class="sub-question">(ii) ∆DCB ~ ∆HGE</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">∠B = ∠E <span class="reason">(Since ∆ABC ~ ∆FEG)</span></div>
+        <div class="step">∠BCD = ∠HGE <span class="reason">(Halves of equal angles)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆DCB ~ ∆HGE.</div>
+
+        <div class="sub-question">(iii) ∆DCA ~ ∆HGF</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Refer to proof in part (i) above.</div>
+        <div class="step">We established ∆ACD ~ ∆FGH, which is same as ∆DCA ~ ∆HGF.</div>
+        <div class="final-answer">Proved.</div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q11.svg"="" alt="Isosceles Triangle">
+        <div class="question">11. In Fig., E is a point on side CB produced of a isosceles triangle ABC with AB = AC.
+            If AD ⊥ BC and EF ⊥ AC, prove that ∆ABD ~ ∆ECF.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Isosceles ∆ABC with AB = AC. AD ⊥ BC, EF ⊥ AC.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆ABD ~ ∆ECF.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since AB = AC, ∠B = ∠C <span class="reason">(Angles opposite equal sides)</span>.</div>
+        <div class="step">In ∆ABD and ∆ECF:</div>
+        <div class="step">∠ADB = ∠EFC = 90° <span class="reason">(Given altitudes)</span></div>
+        <div class="step">∠ABD = ∠ECF <span class="reason">(Since ∠B = ∠C)</span></div>
+        <div class="step">By AA Similarity:</div>
+        <div class="final-answer">∆ABD ~ ∆ECF.</div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q12.svg"="" alt="Proportional Sides">
+        <div class="question">12. Sides AB and BC and median AD of a triangle ABC are respectively proportional to sides
+            PQ and QR and median PM of ∆ PQR. Show that ∆ABC ~ ∆PQR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BC}{QR}\) = \(\frac{AD}{PM}\). AD and PM are medians.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆ABC ~ ∆PQR.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since AD is median, BC = 2BD. Since PM is median, QR = 2QM.</div>
+        <div class="step">\(\frac{BC}{QR}\) = \(\frac{2BD}{2QM}\) = \(\frac{BD}{QM}\)</div>
+        <div class="step">In ∆ABD and ∆PQM:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{AD}{PM}\) <span class="reason">(Given)</span></div>
+        <div class="step">\(\frac{BD}{QM}\) = \(\frac{AB}{PQ}\) <span class="reason">(From above)</span></div>
+        <div class="step">So \(\frac{AB}{PQ}\) = \(\frac{BD}{QM}\) = \(\frac{AD}{PM}\)</div>
+        <div class="step">By SSS Similarity: ∆ABD ~ ∆PQM.</div>
+        <div class="step">Therefore, ∠B = ∠Q <span class="reason">(Matching angles)</span>.</div>
+        <div class="step">Now in ∆ABC and ∆PQR:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BC}{QR}\) <span class="reason">(Given)</span></div>
+        <div class="step">∠B = ∠Q <span class="reason">(Proved)</span></div>
+        <div class="step">By SAS Similarity Criterion:</div>
+        <div class="final-answer">∆ABC ~ ∆PQR.</div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q13.svg"="" alt="Triangle with Point D">
+        <div class="question">13. D is a point on the side BC of a triangle ABC such that ∠ADC = ∠BAC. Show that CA² =
+            CB.CD.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC with D on BC such that ∠ADC = ∠BAC.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">CA² = CB.CD</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ABC and ∆DAC:</div>
+        <div class="step">∠C is common.</div>
+        <div class="step">∠BAC = ∠ADC <span class="reason">(Given)</span>.</div>
+        <div class="step">By AA Similarity Criterion: ∆ABC ~ ∆DAC.</div>
+        <div class="step">So corresponding sides are proportional:</div>
+        <div class="step">\(\frac{CA}{CD}\) = \(\frac{CB}{CA}\)</div>
+        <div class="step">Cross multiply: CA × CA = CB × CD</div>
+        <div class="final-answer">CA² = CB.CD</div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q14.svg"="" alt="Similar Triangles">
+        <div class="question">14. Sides AB and AC and median AD of a triangle ABC are respectively proportional to sides
+            PQ and PR and median PM of another triangle PQR. Show that ∆ABC ~ ∆PQR.</div>
+        <div class="sub-header">Given:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{AC}{PR}\) = \(\frac{AD}{PM}\).</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆ABC ~ ∆PQR.</div>
+        <div class="sub-header">Construction:</div>
+        <div class="step">Produce AD to E such that AD = DE. Join CE.</div>
+        <div class="step">Produce PM to N such that PM = MN. Join RN.</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">In quadrilateral ABEC, diagonals bisect each other (AD=DE by construction, BD=DC given).</div>
+        <div class="step">So ABEC is a parallelogram. Thus AC = BE and AB = CE.</div>
+        <div class="step">Similarly, PQNR is a parallelogram, so PR = QN and PQ = RN.</div>
+        <div class="step">Given: \(\frac{AB}{PQ}\) = \(\frac{AC}{PR}\) = \(\frac{AD}{PM}\)</div>
+        <div class="step">Substitute AC = BE and PR = QN: \(\frac{AB}{PQ}\) = \(\frac{BE}{QN}\)</div>
+        <div class="step">Also \(\frac{AD}{PM}\) = \(\frac{2AD}{2PM}\) = \(\frac{AE}{PN}\)</div>
+        <div class="step">So in ∆ABE and ∆PQN:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BE}{QN}\) = \(\frac{AE}{PN}\)</div>
+        <div class="step">So ∆ABE ~ ∆PQN <span class="reason">(SSS Similarity)</span>.</div>
+        <div class="step">Therefore ∠BAE = ∠QPN <span class="reason">...(1)</span></div>
+        <div class="step">Similarly, ∆ACE ~ ∆PRN, so ∠CAE = ∠RPN <span class="reason">...(2)</span></div>
+        <div class="step">Adding (1) and (2):</div>
+        <div class="step">∠BAE + ∠CAE = ∠QPN + ∠RPN ⇒ ∠BAC = ∠QPR.</div>
+        <div class="step">Now in ∆ABC and ∆PQR:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{AC}{PR}\) <span class="reason">(Given)</span></div>
+        <div class="step">∠A = ∠P <span class="reason">(Proved)</span></div>
+        <div class="step">By SAS Similarity Criterion:</div>
+        <div class="final-answer">∆ABC ~ ∆PQR.</div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q15.svg"="" alt="Pole and Tower Shadows">
+        <div class="question">15. A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same
+            time a tower casts a shadow 28 m long. Find the height of the tower.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Pole Height = 6 m, Pole Shadow = 4 m.</div>
+        <div class="step">Tower Shadow = 28 m.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Tower Height (h).</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">The sun's inclination is constant at the same time, so the triangles formed by \(\frac{pole}{tower}\) and
+            shadows are similar <span class="reason">(AA Similarity - Right angle and Sun's angle)</span>.</div>
+        <div class="step">Ratio of heights = Ratio of shadows.</div>
+        <div class="step">\(\frac{Height of Pole}{Height of Tower}\) = \(\frac{Shadow of Pole}{Shadow of Tower}\)</div>
+        <div class="step">\(\frac{6}{h}\) = \(\frac{4}{28}\)</div>
+        <div class="step">h = \(\frac{6 × 28}{4}\) = 6 × 7 = 42 m.</div>
+        <div class="final-answer">Height of tower is 42 m.</div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="content-box">
+        <img src="images/" ex6_3_q16.svg"="" alt="Similar Triangles with Medians">
+        <div class="question">16. If AD and PM are medians of triangles ABC and PQR, respectively where ∆ABC ~ ∆PQR,
+            prove that \(\frac{AB}{PQ}\) = \(\frac{AD}{PM}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC ~ ∆PQR. AD and PM are medians.</div>
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{AD}{PM}\)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆PQR:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BC}{QR}\) <span class="reason">(Proportional sides)</span></div>
+        <div class="step">And ∠B = ∠Q <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">Since D and M are midpoints:</div>
+        <div class="step">BC = 2BD and QR = 2QM.</div>
+        <div class="step">So \(\frac{BC}{QR}\) = \(\frac{2BD}{2QM}\) = \(\frac{BD}{QM}\)</div>
+        <div class="step">In ∆ABD and ∆PQM:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BD}{QM}\)</div>
+        <div class="step">∠B = ∠Q</div>
+        <div class="step">By SAS Similarity: ∆ABD ~ ∆PQM.</div>
+        <div class="step">Corresponding sides are proportional:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{AD}{PM}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+
+
+<hr/>
+<div class="exercise-title">Examples</div>
+<div class="content-box">
+        <div class="example-title">Example 1</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzUwIiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuYXJyb3cgeyBmaWxsOiAjMDBCRkZGOyB9DQogICAgPC9zdHlsZT4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI1IiByZWZZPSI1IiBvcmllbnQ9ImF1dG8iPg0KICAgICAgPHBhdGggZD0iTTAsMCBMMTAsNSBMMCwxMCIgY2xhc3M9ImFycm93IiAvPg0KICAgIDwvbWFya2VyPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogIDwhLS0gQSgyMjUsIDMwKSAtLT4NCiAgPCEtLSBCKDUwLCAzMDApIC0tPg0KICA8IS0tIEMoNDAwLCAzMDApIC0tPg0KICA8cGF0aCBkPSJNMjI1IDMwIEw1MCAzMDAgTDQwMCAzMDAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMaW5lIERFIFBhcmFsbGVsIHRvIEJDIC0tPg0KICA8IS0tIEQgb24gQUIuIEUgb24gQUMuIC0tPg0KICA8IS0tIExldCdzIHB1dCBERSBhdCB5ID0gMTgwIC0tPg0KICA8IS0tIExpbmUgQUI6ICg1MC0yMjUpLygzMDAtMzApID0gLTE3NS8yNzAgLS0+DQogIDwhLS0gSW50ZXJwIGF0IHk9MTgwOiBBKDIyNSwzMCkgKyB0KihCLUEpLiAzMCArIHQqMjcwID0gMTgwID0+IHQgPSAxNTAvMjcwID0gNS85IC0tPg0KICA8IS0tIHggPSAyMjUgKyAoNS85KSooLTE3NSkgPSAyMjUgLSA5Ny4yID0gMTI3LjggLS0+DQogIDwhLS0gRCAoMTI4LCAxODApIC0tPg0KICANCiAgPCEtLSBMaW5lIEFDOiAoNDAwLTIyNSkvKDMwMC0zMCkgPSAxNzUvMjcwIC0tPg0KICA8IS0tIHggPSAyMjUgKyAoNS85KSooMTc1KSA9IDIyNSArIDk3LjIgPSAzMjIuMiAtLT4NCiAgPCEtLSBFICgzMjIsIDE4MCkgLS0+DQoNCiAgPGxpbmUgeDE9IjEyOCIgeTE9IjE4MCIgeDI9IjMyMiIgeTI9IjE4MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBQYXJhbGxlbCBNYXJrZXJzIChBcnJvd3MpIC0tPg0KICA8IS0tIE9uIERFIC0tPg0KICA8cGF0aCBkPSJNMjI1IDE4MCBMMjM1IDE3NSBMMjI1IDE3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBCRkZGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIA0KICA8IS0tIE9uIEJDIC0tPg0KICA8cGF0aCBkPSJNMjI1IDMwMCBMMjM1IDI5NSBMMjI1IDI5MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBCRkZGIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjIyMCIgeT0iMjUiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzNSIgeT0iMzEwIiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDEwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIxMTAiIHk9IjE4NSIgY2xhc3M9InRleHQiPkQ8L3RleHQ+DQogIDx0ZXh0IHg9IjMzMCIgeT0iMTg1IiBjbGFzcz0idGV4dCI+RTwvdGV4dD4NCg0KPC9zdmc+" alt="Line Intersecting Triangle Sides">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If a line intersects sides AB and AC of a ∆ABC at D and E respectively and is parallel to BC,
+            prove that \(\frac{AD}{AB}\) = \(\frac{AE}{AC}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">DE || BC.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since DE || BC, by BPT:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">Inverting the relation:</div>
+        <div class="step">\(\frac{DB}{AD}\) = \(\frac{EC}{AE}\)</div>
+        <div class="step">Adding 1 to both sides:</div>
+        <div class="step">\(\frac{DB}{AD}\) + 1 = \(\frac{EC}{AE}\) + 1</div>
+        <div class="step">\(\frac{DB + AD}{AD}\) = \(\frac{EC +
+                    AE}{AE}\)</div>
+        <div class="step">\(\frac{AB}{AD}\) = \(\frac{AC}{AE}\)</div>
+        <div class="step">Inverting again:</div>
+        <div class="step">\(\frac{AD}{AB}\) = \(\frac{AE}{AC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 2</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NTAgMzAwIiB3aWR0aD0iNDUwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAuaW5uZXItbGluZSB7IGZpbGw6IG5vbmU7IHN0cm9rZTogIzAwQkZGRjsgc3Ryb2tlLXdpZHRoOiAyOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICdUaW1lcyBOZXcgUm9tYW4nLCBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmaWxsOiBibGFjazsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5maWxsLWdyZWVuIHsgZmlsbDogI0RDRURDODsgb3BhY2l0eTogMC42OyB9IC8qIExpZ2h0IEdyZWVuICovDQogICAgICAuZmlsbC1ibHVlIHsgZmlsbDogI0JCREVGQjsgb3BhY2l0eTogMC42OyB9IC8qIExpZ2h0IEJsdWUgKi8NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBGaWxsIFJlZ2lvbnMgLS0+DQogIDwhLS0gVHJpYW5nbGUgQURDIChHcmVlbmlzaCkgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iMTIwLDUwIDUwLDI1MCA0MDAsMjUwIiBjbGFzcz0iZmlsbC1ncmVlbiIgLz4NCiAgDQogIDwhLS0gVHJpYW5nbGUgQUJDIChCbHVpc2gpIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjEyMCw1MCAzMzAsNTAgNDAwLDI1MCIgY2xhc3M9ImZpbGwtYmx1ZSIgLz4NCg0KICA8IS0tIFRyYXBleml1bSBPdXRsaW5lcyAtLT4NCiAgPCEtLSBBQiAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjUwIiB4Mj0iMzMwIiB5Mj0iNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIEJDIC0tPg0KICA8bGluZSB4MT0iMzMwIiB5MT0iNTAiIHgyPSI0MDAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIENEIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iMjUwIiB4Mj0iNTAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KICA8IS0tIERBIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyNTAiIHgyPSIxMjAiIHkyPSI1MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBEaWFnb25hbCBBQyAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjUwIiB4Mj0iNDAwIiB5Mj0iMjUwIiBjbGFzcz0iaW5uZXItbGluZSIgLz4NCg0KICA8IS0tIExpbmUgRUYgLS0+DQogIDxsaW5lIHgxPSI4NSIgeTE9IjE1MCIgeDI9IjM2NSIgeTI9IjE1MCIgY2xhc3M9ImlubmVyLWxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjExMCIgeT0iNDUiIGNsYXNzPSJ0ZXh0Ij5BPC90ZXh0Pg0KICA8dGV4dCB4PSIzMzUiIHk9IjQ1IiBjbGFzcz0idGV4dCI+QjwvdGV4dD4NCiAgPHRleHQgeD0iNDEwIiB5PSIyNTUiIGNsYXNzPSJ0ZXh0Ij5DPC90ZXh0Pg0KICA8dGV4dCB4PSIzMCIgeT0iMjU1IiBjbGFzcz0idGV4dCI+RDwvdGV4dD4NCiAgPHRleHQgeD0iNjUiIHk9IjE1NSIgY2xhc3M9InRleHQiPkU8L3RleHQ+DQogIDx0ZXh0IHg9IjM3NSIgeT0iMTU1IiBjbGFzcz0idGV4dCI+RjwvdGV4dD4NCiAgPHRleHQgeD0iMjU1IiB5PSIxNDUiIGNsYXNzPSJ0ZXh0Ij5HPC90ZXh0Pg0KDQo8L3N2Zz4NCg==" alt="Trapezium with EF parallel">
+        <div class="sub-header">Statement:</div>
+        <div class="step">ABCD is a trapezium with AB || DC. E and F are points on non-parallel sides AD and BC
+            respectively such that EF is parallel to AB. Show that \(\frac{AE}{ED}\) = \(\frac{BF}{FC}\).</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">AB || DC and EF || AB.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{BF}{FC}\)</div>
+
+        <div class="sub-header">Construction:</div>
+        <div class="step">Join AC to intersect EF at G.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ADC, EG || DC (Since EF || AB || DC).</div>
+        <div class="step">By BPT: \(\frac{AE}{ED}\) = \(\frac{AG}{GC}\) <span class="reason">...(1)</span></div>
+        <div class="step">In ∆CAB, GF || AB.</div>
+        <div class="step">By BPT: \(\frac{AG}{GC}\) = \(\frac{BF}{FC}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{AE}{ED}\) = \(\frac{BF}{FC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 3</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuYW5nbGUtYXJjIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDEuNTsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIFRyaWFuZ2xlIFBRUiAtLT4NCiAgPCEtLSBQKDIwMCwgNTApIC0tPg0KICA8IS0tIFEoMTAwLCAzMDApIC0tPg0KICA8IS0tIFIoMzAwLCAzMDApIC0tPg0KICA8cGF0aCBkPSJNMjAwIDUwIEwxMDAgMzAwIEwzMDAgMzAwIFoiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gTGluZSBTVCAtLT4NCiAgPCEtLSBTKDE1MCwgMTc1KSBvbiBQUSAtLT4NCiAgPCEtLSBUKDI1MCwgMTc1KSBvbiBQUiAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE3NSIgeDI9IjI1MCIgeTI9IjE3NSIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE5NSIgeT0iNDAiIGNsYXNzPSJ0ZXh0Ij5QPC90ZXh0Pg0KICA8dGV4dCB4PSI4MCIgeT0iMzEwIiBjbGFzcz0idGV4dCI+UTwvdGV4dD4NCiAgPHRleHQgeD0iMzEwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0Ij5SPC90ZXh0Pg0KICA8dGV4dCB4PSIxMzAiIHk9IjE4MCIgY2xhc3M9InRleHQiPlM8L3RleHQ+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMTgwIiBjbGFzcz0idGV4dCI+VDwvdGV4dD4NCg0KICA8IS0tIEFuZ2xlIFBTVCAtLT4NCiAgPHBhdGggZD0iTTE2NSAxNzUgQSAxNSAxNSAwIDAgMCAxNjAgMTYwIiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KDQogIDwhLS0gQW5nbGUgUFJRIC0tPg0KICA8cGF0aCBkPSJNMjg1IDMwMCBBIDI1IDI1IDAgMCAwIDI5MCAyNzUiIGNsYXNzPSJhbmdsZS1hcmMiIC8+DQoNCjwvc3ZnPg0K" alt="Similar Triangles Question">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., \(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\) and ∠PST = ∠PRQ. Prove that PQR is an isosceles triangle.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">\(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\) and ∠PST = ∠PRQ.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆PQR is isosceles.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since \(\frac{PS}{SQ}\) = \(\frac{PT}{TR}\), by Converse of BPT: ST || QR.</div>
+        <div class="step">Therefore, ∠PST = ∠PQR <span class="reason">(Corresponding Angles)</span>.</div>
+        <div class="step">But given ∠PST = ∠PRQ.</div>
+        <div class="step">So, ∠PQR = ∠PRQ.</div>
+        <div class="step">Sides opposite to equal angles are equal, so PQ = PR.</div>
+        <div class="step">Since two sides are equal, ∆PQR is isosceles.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 4</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDAgMzAwIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gU2lkZSBQUSAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjEwMCIgeDI9IjEzMCIgeTI9IjIwMCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBTaWRlIFJTIC0tPg0KICA8bGluZSB4MT0iNDAwIiB5MT0iNTAiIHgyPSIzNjAiIHkyPSIyNTAiIGNsYXNzPSJsaW5lIiAvPg0KDQogIDwhLS0gRGlhZ29uYWxzL0Nyb3NzaW5nIGxpbmVzIC0tPg0KICA8IS0tIFBTIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTAwIiB4Mj0iMzYwIiB5Mj0iMjUwIiBjbGFzcz0ibGluZSIgLz4NCiAgDQogIDwhLS0gUVIgLS0+DQogIDxsaW5lIHgxPSIxMzAiIHkxPSIyMDAiIHgyPSI0MDAiIHkyPSI1MCIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE0MCIgeT0iOTAiIGNsYXNzPSJ0ZXh0Ij5QPC90ZXh0Pg0KICA8dGV4dCB4PSIxMDUiIHk9IjIxNSIgY2xhc3M9InRleHQiPlE8L3RleHQ+DQogIDx0ZXh0IHg9IjIxNSIgeT0iMTcwIiBjbGFzcz0idGV4dCI+TzwvdGV4dD4NCiAgPHRleHQgeD0iNDA1IiB5PSI0NSIgY2xhc3M9InRleHQiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjM2NSIgeT0iMjY1IiBjbGFzcz0idGV4dCI+UzwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Similar Triangles Example">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., if PQ || RS, prove that ∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">PQ || RS.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∆POQ ~ ∆SOR.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆POQ and ∆SOR:</div>
+        <div class="step">1. ∠P = ∠S <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">2. ∠Q = ∠R <span class="reason">(Alternate Interior Angles as PQ || RS)</span></div>
+        <div class="step">3. ∠POQ = ∠SOR <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">By AAA Similarity Criterion <span class="reason">(AAA Similarity)</span>:</div>
+        <div class="step">∆POQ ~ ∆SOR</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 5</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzUwIiB3aWR0aD0iNjAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5saW5lIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDIuNTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgICAuZGltLXRleHQgeyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZpbGw6IGJsYWNrOyB9DQogICAgICAuYW5nbGUtYXJjIHsgZmlsbDogbm9uZTsgc3Ryb2tlOiAjMDBCRkZGOyBzdHJva2Utd2lkdGg6IDEuNTsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIFRyaWFuZ2xlIEFCQyAoU21hbGxlcikgLS0+DQogIDwhLS0gQig1MCwgMjgwKSAtLT4NCiAgPCEtLSBDKDE3MCwgMjgwKSBCYXNlID0gMTIwIChyZXByZXNlbnRpbmcgNikgLS0+DQogIDwhLS0gQTogQW5nbGUgQj02MC4gU2lkZSBBQj0zLjggKDc2cHgpLiANCiAgICAgICB4ID0gNTAgKyA3Nipjb3MoNjApID0gODgNCiAgICAgICB5ID0gMjgwIC0gNzYqc2luKDYwKSA9IDI4MCAtIDY2ID0gMjE0IC0tPg0KICA8cGF0aCBkPSJNODggMjE0IEw1MCAyODAgTDE3MCAyODAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgQUJDIC0tPg0KICA8dGV4dCB4PSI4MCIgeT0iMjA1IiBjbGFzcz0idGV4dCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzAiIHk9IjI5MCIgY2xhc3M9InRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjE3NSIgeT0iMjkwIiBjbGFzcz0idGV4dCI+QzwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgQUJDIC0tPg0KICA8dGV4dCB4PSI0MCIgeT0iMjUwIiBjbGFzcz0iZGltLXRleHQiPjMuODwvdGV4dD4NCiAgPHRleHQgeD0iMTA1IiB5PSIyOTUiIGNsYXNzPSJkaW0tdGV4dCI+NjwvdGV4dD4NCiAgPHRleHQgeD0iMTM1IiB5PSIyNTAiIGNsYXNzPSJkaW0tdGV4dCI+M+KImjM8L3RleHQ+DQoNCiAgPCEtLSBBbmdsZXMgQUJDIC0tPg0KICA8IS0tIEFuZ2xlIEEgKDgwKSAtLT4NCiAgPHBhdGggZD0iTTgyIDIyNSBBIDE1IDE1IDAgMCAxIDk4IDIyMiIgY2xhc3M9ImFuZ2xlLWFyYyIgLz4NCiAgPHRleHQgeD0iODUiIHk9IjI0MCIgY2xhc3M9ImRpbS10ZXh0IiBmb250LXNpemU9IjE0Ij44MMKwPC90ZXh0Pg0KICANCiAgPCEtLSBBbmdsZSBCICg2MCkgLS0+DQogIDxwYXRoIGQ9Ik02NSAyODAgQSAxNSAxNSAwIDAgMCA1OCAyNjgiIGNsYXNzPSJhbmdsZS1hcmMiIC8+DQogIDx0ZXh0IHg9IjY1IiB5PSIyNzUiIGNsYXNzPSJkaW0tdGV4dCIgZm9udC1zaXplPSIxNCI+NjDCsDwvdGV4dD4NCg0KDQogIDwhLS0gVHJpYW5nbGUgUFFSIChMYXJnZXIpIC0tPg0KICA8IS0tIFNjYWxlIGZhY3RvciAyIC0tPg0KICA8IS0tIFAoMjUwLCAyODApIC0tPg0KICA8IS0tIFEoNDkwLCAyODApIEJhc2UgUFEgPSAyNDAgKHJlcHJlc2VudGluZyAxMikgLS0+DQogIDwhLS0gUjogQ29ycmVzcG9uZHMgdG8gQT8gTm8sIHdhaXQuIA0KICAgICAgIENoZWNrIHNpZGUgcmF0aW9zOiBBQi9SUSA9IDMuOC83LjYuIEJDL1FQID0gNi8xMi4gQ0EvUFIgPSAzcnQzLzZydDMuDQogICAgICAgU28gQTwtPlIsIEI8LT5RLCBDPC0+UC4NCiAgICAgICBBbmdsZSBRIHNob3VsZCBiZSA2MC4gQW5nbGUgUiBzaG91bGQgYmUgODAuIEFuZ2xlIFAgc2hvdWxkIGJlIDQwLg0KICAgICAgIFNpZGUgUlEgPSA3LjYgLT4gMTUycHguDQogICAgICAgUiBmcm9tIFE6IGFuZ2xlIDYwLiANCiAgICAgICB4ID0gNDkwIC0gMTUyKmNvcyg2MCkgPSA0OTAgLSA3NiA9IDQxNA0KICAgICAgIHkgPSAyODAgLSAxNTIqc2luKDYwKSA9IDI4MCAtIDEzMiA9IDE0OCAtLT4NCiAgPHBhdGggZD0iTTQxNCAxNDggTDI1MCAyODAgTDQ5MCAyODAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgUFFSIC0tPg0KICA8dGV4dCB4PSI0MjAiIHk9IjE0MCIgY2xhc3M9InRleHQiPlI8L3RleHQ+DQogIDx0ZXh0IHg9IjIzNSIgeT0iMjkwIiBjbGFzcz0idGV4dCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iNTAwIiB5PSIyOTAiIGNsYXNzPSJ0ZXh0Ij5RPC90ZXh0Pg0KDQogIDwhLS0gRGltZW5zaW9ucyBQUVIgLS0+DQogIDx0ZXh0IHg9IjMxMCIgeT0iMjAwIiBjbGFzcz0iZGltLXRleHQiIHRyYW5zZm9ybT0icm90YXRlKC0zOCwgMzIwLCAyMDApIj424oiaMzwvdGV4dD4gPCEtLSBQUiAtLT4NCiAgPHRleHQgeD0iMzYwIiB5PSIyOTUiIGNsYXNzPSJkaW0tdGV4dCI+MTI8L3RleHQ+IDwhLS0gUFEgLS0+DQogIDx0ZXh0IHg9IjQ2MCIgeT0iMjEwIiBjbGFzcz0iZGltLXRleHQiPjcuNjwvdGV4dD4gPCEtLSBSUSAtLT4NCg0KPC9zdmc+" alt="Finding Angle P">
+        <div class="sub-header">Statement:</div>
+        <div class="step">Observe Fig. and then find ∠P.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC with A=80°, B=60°. AB=3.8, BC=6, AC=3√3.</div>
+        <div class="step">∆RPQ with R=?, P=?, Q=?. PR=6√3, PQ=12, RQ=7.6.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Value of ∠P.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Compare ratios of sides:</div>
+        <div class="step">\(\frac{AB}{RQ}\) = \(\frac{3.8}{7.6}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{BC}{QP}\) = \(\frac{6}{12}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{CA}{PR}\) = \(\frac{3√3}{6√3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">Since sides are proportional, ∆ABC ~ ∆RQP <span class="reason">(SSS Similarity)</span>.</div>
+        <div class="step">Therefore, corresponding angles are equal: ∠C = ∠P.</div>
+        <div class="step">In ∆ABC, ∠C = 180° - (∠A + ∠B) = 180° - (80° + 60°) = 180° - 140° = 40°.</div>
+        <div class="step">So, ∠P = 40°.</div>
+        <div class="final-answer">∠P = 40°.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 6</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5saW5lIHsgc3Ryb2tlOiAjMDA3YmZmOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1saW5lY2FwOiByb3VuZDsgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsgfQ0KICAgICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIiwgVGltZXMsIHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5hbmdsZS1tYXJrIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDEuNTsgZmlsbDogbm9uZTsgfQ0KICAgIDwvc3R5bGU+DQoNCiAgICA8IS0tIERlZmluaXRpb25zIC0tPg0KICAgIDxkZWZzPg0KICAgICAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjciIHJlZlg9IjkiIHJlZlk9IjMuNSIgb3JpZW50PSJhdXRvIj4NCiAgICAgICAgICAgIDxwb2x5Z29uIHBvaW50cz0iMCAwLCAxMCAzLjUsIDAgNyIgZmlsbD0iIzAwN2JmZiIgLz4NCiAgICAgICAgPC9tYXJrZXI+DQogICAgPC9kZWZzPg0KDQogICAgPCEtLSBDb29yZGluYXRlczogQSg4MCwgNjApLCBEKDQwLCAxNjApLCBPKDE1MCwgMTEwKSwgQygyMjAsIDYwKSwgQigyNjAsIDE2MCkgLS0+DQogICAgPCEtLSBBZGp1c3RlZCBmb3Igc3ltbWV0cnkgYW5kIG5vbi1wYXJhbGxlbCB0b3AvYm90dG9tIC0tPg0KICAgIDwhLS0gTGluZSBBQiBwYXNzZXMgdGhyb3VnaCBPLiBBKDgwLCA2MCksIE8oMTUwLCAxMTApLiBkeD03MCwgZHk9NTAuIEIgPSBPICsgKDEuMSkqZD8gDQogICAgICAgICBMZXQncyBrZWVwIGxlbmd0aHMgc2ltaWxhci4NCiAgICAgICAgIEEoODAsIDYwKSwgTygxNTAsIDExMCkuIEIoMjIwLCAxNjApLg0KICAgICAgICAgQygyMjAsIDYwKSwgTygxNTAsIDExMCkuIEQoODAsIDE2MCkuDQogICAgICAgICBUaGlzIGZvcm1zIGEgc3ltbWV0cmljYWwgdHJhcGV6aXVtIGlmIGNoZWNrZWQsIGJ1dCBsZXQncyBzZWUuDQogICAgICAgICBBRCBjb25uZWN0cyAoODAsIDYwKSBhbmQgKDgwLCAxNjApIC0gVmVydGljYWwgbGluZS4NCiAgICAgICAgIENCIGNvbm5lY3RzICgyMjAsIDYwKSBhbmQgKDIyMCwgMTYwKSAtIFZlcnRpY2FsIGxpbmUuDQogICAgICAgICBVc2VyIGltYWdlIGxpa2VseSBnZW5lcmljLiBMZXQncyB0aWx0IHRoZW0uDQogICAgICAgICANCiAgICAgICAgIE5ldyBDb29yZHM6DQogICAgICAgICBPKDE1MCwgMTEwKQ0KICAgICAgICAgTGluZSBBT0I6IEEoOTAsIDcwKSAtPiBPKDE1MCwgMTEwKSAtPiBCKDI0MCwgMTcwKS4gKFNsb3BlIDQwLzYwID0gMi8zKQ0KICAgICAgICAgTGluZSBET0M6IEQoNjAsIDE3MCkgLT4gTygxNTAsIDExMCkgLT4gQygyMTAsIDcwKS4gKFNsb3BlIC00MC82MCA9IC0yLzMpDQogICAgLS0+DQogICAgDQogICAgPCEtLSBUcmlhbmdsZSBBT0Q6IEEoOTAsNzApLU8oMTUwLDExMCktRCg2MCwxNzApLWNsb3NlIC0tPg0KICAgIDxwYXRoIGQ9Ik0gOTAsNzAgTCAxNTAsMTEwIEwgNjAsMTcwIFoiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gVHJpYW5nbGUgQ09COiBDKDIxMCw3MCktTygxNTAsMTEwKS1CKDI0MCwxNzApLWNsb3NlIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjEwLDcwIEwgMTUwLDExMCBMIDI0MCwxNzAgWiIgY2xhc3M9ImxpbmUiIC8+DQoNCiAgICA8IS0tIEFuZ2xlIE1hcmtpbmdzIGF0IE8gLS0+DQogICAgPCEtLSBMZWZ0IEFuZ2xlOiBCZXR3ZWVuIE9BIGFuZCBPRCAtLT4NCiAgICA8cGF0aCBkPSJNIDEzNSwxMDAgQSAyMCwyMCAwIDAsMCAxMzUsMTIwIiBjbGFzcz0iYW5nbGUtbWFyayIgLz4NCiAgICANCiAgICA8IS0tIFJpZ2h0IEFuZ2xlOiBCZXR3ZWVuIE9DIGFuZCBPQiAtLT4NCiAgICA8cGF0aCBkPSJNIDE2NSwxMDAgQSAyMCwyMCAwIDAsMSAxNjUsMTIwIiBjbGFzcz0iYW5nbGUtbWFyayIgLz4NCg0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9Ijg1IiB5PSI2NSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkE8L3RleHQ+DQogICAgPHRleHQgeD0iNTUiIHk9IjE4NSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkQ8L3RleHQ+DQogICAgPHRleHQgeD0iMTUwIiB5PSIxNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjIxNSIgeT0iNjUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkM8L3RleHQ+DQogICAgPHRleHQgeD0iMjQ1IiB5PSIxODUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkI8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Shadow Problem">
+        <div class="sub-header">Statement:</div>
+        <div class="step">In Fig., OA . OB = OC . OD. Show that ∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">OA . OB = OC . OD</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">∠A = ∠C and ∠B = ∠D.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Rearranging the given equation:</div>
+        <div class="step">\(\frac{OA}{OC}\) = \(\frac{OD}{OB}\)</div>
+        <div class="step">In ∆AOD and ∆COB:</div>
+        <div class="step">∠AOD = ∠COB <span class="reason">(Vertically Opposite Angles)</span></div>
+        <div class="step">Sides containing these angles are proportional <span class="reason">(from above)</span>.</div>
+        <div class="step">By SAS Similarity Criterion <span class="reason">(SAS Similarity)</span>:</div>
+        <div class="step">∆AOD ~ ∆COB</div>
+        <div class="step">Corresponding angles are equal:</div>
+        <div class="step">∠A = ∠C and ∠D = ∠B.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 7</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxsaW5lIHgxPSI1MCIgeTE9IjIwIiB4Mj0iNTAiIHkyPSIxODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxMjAiIHgyPSIxNTAiIHkyPSIxODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyMCIgeTE9IjE4MCIgeDI9IjI4MCIgeTI9IjE4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjUwIiB5MT0iMjAiIHgyPSIyMjAiIHkyPSIxODAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PHRleHQgeD0iNDAiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pjx0ZXh0IHg9IjQwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkI8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+PHRleHQgeD0iMjIwIiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkU8L3RleHQ+PHRleHQgeD0iMjAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My42bTwvdGV4dD48dGV4dCB4PSIxNzAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MC45bTwvdGV4dD48dGV4dCB4PSIxMDAiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC44bTwvdGV4dD48dGV4dCB4PSIxODUiIHk9IjE5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+eDwvdGV4dD48L3N2Zz4=" alt="Girl Walking Away from Lamp">
+        <div class="sub-header">Statement:</div>
+        <div class="step">A girl of height 90 cm is walking away from the base of a lamp-post at a speed of 1.2 \(\frac{m}{s}\). If
+            the lamp is 3.6 m above the ground, find the length of her shadow after 4 seconds.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Height of girl (CD) = 90 cm = 0.9 m.</div>
+        <div class="step">Height of lamp (AB) = 3.6 m.</div>
+        <div class="step">Speed = 1.2 \(\frac{m}{s}\). Time = 4 s.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Length of her shadow (DE = x).</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Distance covered (BD) = Speed × Time = 1.2 × 4 = 4.8 m.</div>
+        <div class="step">In ∆ABE and ∆CDE:</div>
+        <div class="step">∠B = ∠D = 90° <span class="reason">(Vertical poles)</span>.</div>
+        <div class="step">∠E is common.</div>
+        <div class="step">So ∆ABE ~ ∆CDE <span class="reason">(AA Similarity)</span>.</div>
+        <div class="step">Therefore, \(\frac{BE}{DE}\) = \(\frac{AB}{CD}\)</div>
+        <div class="step">\(\frac{4.8 + x}{x}\) = \(\frac{3.6}{0.9}\) = 4</div>
+        <div class="step">4.8 + x = 4x</div>
+        <div class="step">3x = 4.8</div>
+        <div class="step">x = 1.6 m.</div>
+        <div class="final-answer">Length of her shadow is 1.6 m.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="example-title">Example 8</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5saW5lIHsgc3Ryb2tlOiAjMDNBOUY0OyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWxpbmVjYXA6IHJvdW5kOyBzdHJva2UtbGluZWpvaW46IHJvdW5kOyB9DQogICAgICAgIC50ZXh0IHsgZm9udC1mYW1pbHk6ICJUaW1lcyBOZXcgUm9tYW4iLCBzZXJpZjsgZm9udC1zaXplOiAyMHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogIzAwMDsgfQ0KICAgICAgICAuYW5nbGUtYXJjIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IH0NCiAgICA8L3N0eWxlPg0KICAgIA0KICAgIDwhLS0gVHJpYW5nbGUgQUJDIChMZWZ0KSAtLT4NCiAgICA8IS0tIEEoMTEwLCA1MCksIEIoNTAsIDIwMCksIEMoMTgwLCAyMDApIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTEwLDUwIEwgNTAsMjAwIEwgMTgwLDIwMCBaIiBjbGFzcz0ibGluZSIgLz4NCiAgICANCiAgICA8IS0tIE1lZGlhbiBDTSAtLT4NCiAgICA8IS0tIE1pZHBvaW50IG9mIEFCOiB4PSgxMTArNTApLzI9ODAsIHk9KDUwKzIwMCkvMj0xMjUgLS0+DQogICAgPCEtLSBNKDgwLCAxMjUpIC0tPg0KICAgIDxsaW5lIHgxPSIxODAiIHkxPSIyMDAiIHgyPSI4MCIgeTI9IjEyNSIgY2xhc3M9ImxpbmUiIC8+DQogICAgDQogICAgPCEtLSBBbmdsZSBBIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTAwLDc1IEEgMzAsMzAgMCAwLDAgMTI1LDcwIiBjbGFzcz0iYW5nbGUtYXJjIiB0cmFuc2Zvcm09InJvdGF0ZSgxMCAxMTAgNTApIiAvPg0KICAgIA0KICAgIDwhLS0gTGFiZWxzIEFCQyAtLT4NCiAgICA8dGV4dCB4PSIxMTAiIHk9IjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QTwvdGV4dD4NCiAgICA8dGV4dCB4PSI0MCIgeT0iMjEwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+QjwvdGV4dD4NCiAgICA8dGV4dCB4PSIxOTAiIHk9IjIxMCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+QzwvdGV4dD4NCiAgICA8dGV4dCB4PSI2NSIgeT0iMTI1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+TTwvdGV4dD4NCg0KICAgIDwhLS0gVHJpYW5nbGUgUVBSIChSaWdodCwgSW52ZXJ0ZWQpIC0tPg0KICAgIDwhLS0gUSgzMDAsIDUwKSwgUCg0NjAsIDUwKSwgUigzODAsIDIyMCkgLS0+DQogICAgPHBhdGggZD0iTSAzMDAsNTAgTCA0NjAsNTAgTCAzODAsMjIwIFoiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gTWVkaWFuIFJOIC0tPg0KICAgIDwhLS0gTWlkcG9pbnQgb2YgUVA6IHg9KDMwMCs0NjApLzI9MzgwLCB5PTUwIC0tPg0KICAgIDwhLS0gTigzODAsIDUwKSAtLT4NCiAgICA8bGluZSB4MT0iMzgwIiB5MT0iMjIwIiB4Mj0iMzgwIiB5Mj0iNTAiIGNsYXNzPSJsaW5lIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgUCAtLT4NCiAgICA8cGF0aCBkPSJNIDQzMCw1MCBBIDMwLDMwIDAgMCwwIDQ0NSw4MCIgY2xhc3M9ImFuZ2xlLWFyYyIvPg0KICAgIA0KICAgIDwhLS0gTGFiZWxzIFFQUiAtLT4NCiAgICA8dGV4dCB4PSIyOTAiIHk9IjUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+UTwvdGV4dD4NCiAgICA8dGV4dCB4PSI0NzAiIHk9IjUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5QPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjM4MCIgeT0iMjQ1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UjwvdGV4dD4NCiAgICA8dGV4dCB4PSIzODAiIHk9IjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TjwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Similar Triangles Medians">
+        <div class="sub-header">Statement:</div>
+        <div class="step">CM and RN are respectively the medians of ∆ABC and ∆PQR. If ∆ABC ~ ∆PQR, prove that:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR</div>
+        <div class="step">(ii) \(\frac{CM}{RN}\) = \(\frac{AB}{PQ}\)</div>
+        <div class="step">(iii) ∆CMB ~ ∆RNQ</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">∆ABC ~ ∆PQR. CM and RN are medians.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">(i) ∆AMC ~ ∆PNR, (ii) \(\frac{CM}{RN}\) = \(\frac{AB}{PQ}\), (iii) ∆CMB ~ ∆RNQ.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Since ∆ABC ~ ∆PQR:</div>
+        <div class="step">\(\frac{AB}{PQ}\) = \(\frac{BC}{QR}\) = \(\frac{AC}{PR}\) and ∠A = ∠P, ∠B = ∠Q, ∠C = ∠R.</div>
+        <div class="step">Since M and N are midpoints: 2AM = AB and 2PN = PQ.</div>
+        <div class="step">So \(\frac{2AM}{2PN}\) = \(\frac{AC}{PR}\) ⇒ \(\frac{AM}{PN}\) = \(\frac{AC}{PR}\).</div>
+        <div class="step">In ∆AMC and ∆PNR:</div>
+        <div class="step">\(\frac{AM}{PN}\) = \(\frac{AC}{PR}\)</div>
+        <div class="step">∠A = ∠P <span class="reason">(Given)</span></div>
+        <div class="step">So ∆AMC ~ ∆PNR <span class="reason">(SAS Similarity)</span>.</div>
+        <div class="step">Hence \(\frac{CM}{RN}\) = \(\frac{AC}{PR}\) = \(\frac{AB}{PQ}\).</div>
+        <div class="step">Similarly, for (iii), we can prove ∆CMB ~ ∆RNQ using SAS (\(\frac{BM}{QN}\) = \(\frac{BC}{QR}\) and ∠B=∠Q).</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+
+
+<hr/>
+</body>
+</html>

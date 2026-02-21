@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles - Exercise 10.2</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .formula {
+            font-weight: bold;
+            color: #2E7D32;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            border: 2px dashed #bbb;
+            padding: 10px;
+            margin: 0 0 10px 15px;
+            background: #fff;
+            color: #555;
+            font-size: 0.9em;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+
+            img,
+            .diagram-placeholder {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">1. From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q
+            from the centre is 25 cm. The radius of the circle is:</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMjUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5kaW0geyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBTY2FsZTogMSB1bml0ID0gNiBweCAtLT4NCiAgPCEtLSBSYWRpdXMgPSA3IHVuaXRzID0gNDIgcHggLS0+DQogIDwhLS0gUFEgPSAyNCB1bml0cyA9IDE0NCBweCAtLT4NCiAgPCEtLSBPUSA9IDI1IHVuaXRzID0gMTUwIHB4IC0tPg0KICA8IS0tIExldCdzIHNjYWxlIHVwIGEgYml0IGZvciBiZXR0ZXIgdmlzaWJpbGl0eSAtLT4NCiAgPCEtLSBTY2FsZTogMSB1bml0ID0gOCBweCAtLT4NCiAgPCEtLSBSYWRpdXMgPSA1NiBweCAtLT4NCiAgPCEtLSBQUSA9IDE5MiBweCAtLT4NCiAgPCEtLSBPUSA9IDIwMCBweCAtLT4NCiAgDQogIDwhLS0gTyBhdCAoMTAwLCA4MCkgLS0+DQogIDwhLS0gUCBhdCAoMTAwLCAxMzYpIC0tPg0KICA8IS0tIFEgYXQgKDI5MiwgMTM2KSAtLT4NCg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPCEtLSBDb2xvcjogQmx1ZSAjMTk3NkQyIC0tPg0KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iNTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPCEtLSBDb2xvcjogUmVkICNEMzJGMkYgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSI4MCIgeDI9IjEwMCIgeTI9IjEzNiIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgDQogIDwhLS0gVGFuZ2VudCBQUSAtLT4NCiAgPCEtLSBDb2xvcjogR3JlZW4gIzM4OEUzQyAtLT4NCiAgPGxpbmUgeDE9IjEwMCIgeTE9IjEzNiIgeDI9IjI5MiIgeTI9IjEzNiIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIEh5cG90ZW51c2UgT1EgLS0+DQogIDwhLS0gQ29sb3I6IE9yYW5nZSAjRjU3QzAwIC0tPg0KICA8bGluZSB4MT0iMTAwIiB5MT0iODAiIHgyPSIyOTIiIHkyPSIxMzYiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMTAwIiBjeT0iMTM2IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMjkyIiBjeT0iMTM2IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTAwLDEyNiAxMTAsMTI2IDExMCwxMzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIgLz4NCg0KICA8IS0tIExhYmVscyAtLT4NCiAgPHRleHQgeD0iOTAiIHk9Ijc1IiBjbGFzcz0ibGFiZWwiPk88L3RleHQ+DQogIDx0ZXh0IHg9IjkwIiB5PSIxNTUiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMzAwIiB5PSIxNDAiIGNsYXNzPSJsYWJlbCI+UTwvdGV4dD4NCg0KICA8IS0tIERpbWVuc2lvbnMgLS0+DQogIDwhLS0gMjUgY20gb24gT1EgLS0+DQogIDx0ZXh0IHg9IjIwMCIgeT0iMTAwIiBjbGFzcz0iZGltIiBmaWxsPSJibGFjayIgdHJhbnNmb3JtPSJyb3RhdGUoMTYsIDIwMCwgMTAwKSI+MjUgY208L3RleHQ+DQogIA0KICA8IS0tIDI0IGNtIG9uIFBRIC0tPg0KICA8dGV4dCB4PSIxOTAiIHk9IjE2MCIgY2xhc3M9ImRpbSIgZmlsbD0iYmxhY2siPjI0IGNtPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Tangent Length Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Radius OP. Distance OQ = 25 cm. Tangent PQ =
+            24 cm.</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Radius of the circle (OP).</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">We know that radius is perpendicular to tangent at the point of contact (<strong
+                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
+        <div class="step">Therefore, \(\angle OPQ = 90^\circ\).</div>
+        <div class="step">In right-angled \(\triangle OPQ\): By Pythagoras Theorem:</div>
+        <div class="step">\(Hypotenuse^2 = Base^2 + Altitude^2\).</div>
+        <div class="step">\(OQ^2 = OP^2 + PQ^2\).</div>
+        <div class="step">\(25^2 = OP^2 + 24^2\).</div>
+        <div class="step">\(625 = OP^2 + 576\).</div>
+        <div class="step">\(OP^2 = 625 - 576\).</div>
+        <div class="step">\(OP^2 = 49\).</div>
+        <div class="step">\(OP = \sqrt{49} = 7\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the radius of the circle is
+            7 cm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. In Fig., if TP and TQ are the two tangents to a circle with centre O so that ∠POQ =
+            110°, then ∠PTQ is equal to:</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTMwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFBvaW50cyBQIGFuZCBRIG9uIGNpcmNsZSAtLT4NCiAgPCEtLSBBbmdsZSBQT1EgPSAxMTAgZGVnLiAtLT4NCiAgDQogIDwhLS0gUmFkaXVzIE9QIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTkwIiB5Mj0iOTMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSI5MyIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTgwIiB5PSI4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUmFkaXVzIE9RIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMTkwIiB5Mj0iMjA3IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGNpcmNsZSBjeD0iMTkwIiBjeT0iMjA3IiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIxODAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudHMgbGluZXMgVCB0byBQIGFuZCBRIC0tPg0KICA8IS0tIFQgaXMgYXQgKDI3MiwgMTUwKSAtLT4NCiAgPGxpbmUgeDE9IjI3MiIgeTE9IjE1MCIgeDI9IjE5MCIgeTI9IjkzIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxsaW5lIHgxPSIyNzIiIHkxPSIxNTAiIHgyPSIxOTAiIHkyPSIyMDciIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgDQogIDxjaXJjbGUgY3g9IjI3MiIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMjgwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlQ8L3RleHQ+DQogIA0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbHMgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjE4MywxMDAgMTk1LDEwOCAyMDIsMTAwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTgzLDIwMCAxOTUsMTkyIDIwMiwyMDAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPg0KICANCiAgPCEtLSBBbmdsZSBBcmMgYXQgTyAtLT4NCiAgPHBhdGggZD0iTTE2NSwxMjkgQSAzMCAzMCAwIDAgMSAxNjUgMTcxIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIi8+DQogIDwhLS0gTW92ZWQgMTEwIGRlZyB0ZXh0IHRvIHRoZSByaWdodCwgaW5zaWRlIHRoZSBhbmdsZSAtLT4NCiAgPHRleHQgeD0iMTc1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+MTEwwrA8L3RleHQ+DQogIA0KPC9zdmc+" alt="Angles in Circle Tangents">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Two tangents TP and TQ. Angle at center
+            \(\angle POQ = 110^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Angle \(\angle PTQ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">We know that radius is perpendicular to tangent (<strong style="color: #D32F2F;">Theorem
+                10.1</strong>).</div>
+        <div class="step">Therefore, \(\angle OPT = 90^\circ\) and \(\angle OQT = 90^\circ\).</div>
+        <div class="step">POQT is a quadrilateral. Sum of angles in a quadrilateral is \(360^\circ\).</div>
+        <div class="step">\(\angle POQ + \angle OPT + \angle OQT + \angle PTQ = 360^\circ\).</div>
+        <div class="step">Substitute the values: \(110^\circ + 90^\circ + 90^\circ + \angle PTQ = 360^\circ\).</div>
+        <div class="step">\(290^\circ + \angle PTQ = 360^\circ\).</div>
+        <div class="step">\(\angle PTQ = 360^\circ - 290^\circ\).</div>
+        <div class="step">\(\angle PTQ = 70^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, \(\angle PTQ\) is equal to
+            \(70^\circ\).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. If tangents PA and PB from a point P to a circle with centre O are inclined to each
+            other at angle of 80°, then ∠POA is equal to:</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMzAwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjMwMCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICAgIC5kaW0geyBmb250LWZhbWlseTogJ1RpbWVzIE5ldyBSb21hbicsIHNlcmlmOyBmb250LXNpemU6IDE2cHg7IH0NCiAgICAgIC5kYXNoZWQgeyBzdHJva2UtZGFzaGFycmF5OiA0LCA0OyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ29vcmRpbmF0ZXMgLS0+DQogIDwhLS0gQ2VudGVyIE8gYXQgKDIwMCwgMTgwKSAtLT4NCiAgPCEtLSBSYWRpdXMgUiA9IDgwIC0tPg0KICA8IS0tIEFuZ2xlIEFQQiA9IDgwIGRlZ3JlZXMuIFNvIGFuZ2xlIEFQTyA9IDQwIGRlZy4gLS0+DQogIDwhLS0gRGlzdGFuY2UgT1AgPSBSIC8gc2luKDQwKSA9IDgwIC8gMC42NDI4ID0gMTI0LjUgYXBwcm94IDEyNS4gLS0+DQogIDwhLS0gUCBpcyBhdCBhbmdsZSAyMjUgZGVnICh0b3AtbGVmdCkgZnJvbSBPLiAtLT4NCiAgPCEtLSBQeCA9IDIwMCArIDEyNSAqIGNvcygyMjUpID0gMjAwIC0gODggPSAxMTIgLS0+DQogIDwhLS0gUHkgPSAxODAgKyAxMjUgKiBzaW4oMjI1KSA9IDE4MCAtIDg4ID0gOTIgLS0+DQogIA0KICA8IS0tIEEgaXMgYXQgYW5nbGUgMjI1ICsgKDkwICsgKDkwLTQwKSk/IE5vLiAtLT4NCiAgPCEtLSBJbiB0cmlhbmdsZSBPQVAgKHJpZ2h0IGFuZ2xlIGF0IEEpLCBhbmdsZSBBT1AgPSA5MCAtIDQwID0gNTAgZGVnLiAtLT4NCiAgPCEtLSBTbyB2ZWN0b3IgT0EgbWFrZXMgYW5nbGUgKDIyNSArIDUwKSA9IDI3NSBkZWcgd2l0aCBYIGF4aXM/IE5vLiAtLT4NCiAgPCEtLSBMZXQncyBjaGVjayByZWxhdGl2ZSB0byBQTyB2ZWN0b3IgKHdoaWNoIGlzIGF0IDIyNSBkZWcpLiAtLT4NCiAgPCEtLSBPQSBpcyArNTAgZGVnIHJlbGF0aXZlIHRvIFBPPyBObywgT0EgaXMgcmFkaXVzIHRvIGNvbnRhY3QgcG9pbnQuIC0tPg0KICA8IS0tIFBBIGlzIHRhbmdlbnQuIE9BIGlzIHBlcnAgdG8gUEEuIC0tPg0KICA8IS0tIEFjdHVhbGx5IGFuZ2xlIEFPUCA9IDUwIGRlZy4gU28gQSBpcyArNTAgb3IgLTUwIGZyb20gUE8gbGluZS4gLS0+DQogIDwhLS0gQW5nbGUgb2YgUE8gPSAyMjUgZGVnLiAtLT4NCiAgPCEtLSBBbmdsZSBvZiBPQSA9IDIyNSArIDUwID0gMjc1ICgtODUgZGVnKSAtPiBUb3Agb2YgY2lyY2xlIHJvdWdobHkuIC0tPg0KICA8IS0tIEFuZ2xlIG9mIE9CID0gMjI1IC0gNTAgPSAxNzUgKC0xODUgZGVnKSAtPiBMZWZ0IG9mIGNpcmNsZSByb3VnaGx5LiAtLT4NCiAgDQogIDwhLS0gQXggPSAyMDAgKyA4MCAqIGNvcygyNzUpID0gMjAwICsgNyA9IDIwNyAtLT4NCiAgPCEtLSBBeSA9IDE4MCArIDgwICogc2luKDI3NSkgPSAxODAgLSA3OS43ID0gMTAwIC0tPg0KICANCiAgPCEtLSBCeCA9IDIwMCArIDgwICogY29zKDE3NSkgPSAyMDAgLSA3OS43ID0gMTIwIC0tPg0KICA8IS0tIEJ5ID0gMTgwICsgODAgKiBzaW4oMTc1KSA9IDE4MCArIDcgPSAxODcgLS0+DQoNCiAgPCEtLSBDaXJjbGUgLS0+DQogIDwhLS0gQ29sb3I6IEJsdWUgIzE5NzZEMiAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTgwIiByPSI4MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgDQogIDwhLS0gUmFkaWkgT0EgYW5kIE9CIC0tPg0KICA8IS0tIENvbG9yOiBSZWQgI0QzMkYyRiAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE4MCIgeDI9IjIwNyIgeTI9IjEwMCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE4MCIgeDI9IjEyMCIgeTI9IjE4NyIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIFRhbmdlbnRzIFBBIGFuZCBQQiAtLT4NCiAgPCEtLSBDb2xvcjogR3JlZW4gIzM4OEUzQyAtLT4NCiAgPGxpbmUgeDE9IjExMiIgeTE9IjkyIiB4Mj0iMjA3IiB5Mj0iMTAwIiBzdHJva2U9IiMzODhFM0MiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICA8bGluZSB4MT0iMTEyIiB5MT0iOTIiIHgyPSIxMjAiIHkyPSIxODciIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBMaW5lIFBPIChEYXNoZWQpIC0tPg0KICA8IS0tIENvbG9yOiBHcmV5ICM1NTUgLS0+DQogIDxsaW5lIHgxPSIxMTIiIHkxPSI5MiIgeDI9IjIwMCIgeTI9IjE4MCIgc3Ryb2tlPSIjNTU1IiBzdHJva2Utd2lkdGg9IjIiIGNsYXNzPSJkYXNoZWQiIC8+DQoNCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2xzIC0tPg0KICA8IS0tIEF0IEE6IHZlY3RvciBQLT5BIGFuZCBPLT5BIGFyZSBwZXJwLiAtLT4NCiAgPCEtLSBKdXN0IGFwcHJveGltYXRlIHNtYWxsIHNxdWFyZSByb3RhdGVkIGFwcHJvcHJpYXRlbHkuIC0tPg0KICA8IS0tIFZlY3RvciBPQSBpcyBhdCAyNzUgZGVnLiBQZXJwZW5kaWN1bGFyIGlzIDE4NSBkZWcgKHRvd2FyZHMgUCkuIC0tPg0KICA8cGF0aCBkPSJNIDIwNyAxMDAgTCAyMDIgMTA4IEwgMTk1IDEwNiIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogIA0KICA8IS0tIEF0IEI6IHZlY3RvciBPQiBpcyBhdCAxNzUgZGVnLiBQZXJwIGlzIDg1IGRlZyAodG93YXJkcyBQKS4gLS0+DQogIDxwYXRoIGQ9Ik0gMTIwIDE4NyBMIDEyMiAxNzggTCAxMTIgMTc4IiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIgLz4NCg0KICA8IS0tIEFuZ2xlIEFyYyBhdCBQICg4MCBkZWcpIC0tPg0KICA8cGF0aCBkPSJNIDEzNCA5NCBRIDE0MCAxMTAgMTIwIDEyNSIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIgc3Ryb2tlLWRhc2hhcnJheT0iMiwyIiBzdHJva2Utd2lkdGg9IjEuNSIgLz4NCiAgPHRleHQgeD0iMTQwIiB5PSIxMDUiIGNsYXNzPSJkaW0iPjgwwrA8L3RleHQ+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjEwMCIgeT0iODUiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMjE1IiB5PSI5NSIgY2xhc3M9ImxhYmVsIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSI5NSIgeT0iMjAwIiBjbGFzcz0ibGFiZWwiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjIxMCIgeT0iMjAwIiBjbGFzcz0ibGFiZWwiPk88L3RleHQ+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+DQogIDxjaXJjbGUgY3g9IjExMiIgY3k9IjkyIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMjA3IiBjeT0iMTAwIiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMTg3IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCg0KPC9zdmc+" alt="Inclined Tangents">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Tangents PA and PB are inclined at
+            \(80^\circ\) (i.e., \(\angle APB = 80^\circ\)).</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Angle \(\angle POA\).</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">We know that the line joining the center and external point bisects the angle between
+            tangents.</div>
+        <div class="step">Therefore, \(\angle APO = \frac{1}{2} \angle APB\).</div>
+        <div class="step">\(\angle APO = \frac{80^\circ}{2} = 40^\circ\).</div>
+        <div class="step">Also, radius OA \(\perp\) tangent PA at A (<strong style="color: #D32F2F;">Theorem
+                10.1</strong>).</div>
+        <div class="step">So, \(\angle OAP = 90^\circ\).</div>
+        <div class="step">In \(\triangle OAP\), sum of angles is \(180^\circ\).</div>
+        <div class="step">\(\angle POA + \angle OAP + \angle APO = 180^\circ\).</div>
+        <div class="step">\(\angle POA + 90^\circ + 40^\circ = 180^\circ\).</div>
+        <div class="step">\(\angle POA + 130^\circ = 180^\circ\).</div>
+        <div class="step">\(\angle POA = 180^\circ - 130^\circ = 50^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, \(\angle POA\) is equal to
+            \(50^\circ\).</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. Prove that the tangents drawn at the ends of a diameter of a circle are parallel.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTg1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIERpYW1ldGVyIFBRIHZlcnRpY2FsIGZvciBjbGVhciBwYXJhbGxlbGlzbSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjgwIiB4Mj0iMjAwIiB5Mj0iMjIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iODAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDwhLS0gUCAtLT4NCiAgPHRleHQgeD0iMjA1IiB5PSI5NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjIwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8IS0tIFEgLS0+DQogIDx0ZXh0IHg9IjIwNSIgeT0iMjE1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50IEFCIGF0IFAgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSI4MCIgeDI9IjMwMCIgeTI9IjgwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSIxMTAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICA8dGV4dCB4PSIyOTAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50IENEIGF0IFEgLS0+DQogIDxsaW5lIHgxPSIxMDAiIHkxPSIyMjAiIHgyPSIzMDAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5DPC90ZXh0Pg0KICA8dGV4dCB4PSIyOTAiIHk9IjI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+RDwvdGV4dD4NCiAgDQogIDwhLS0gUmlnaHQgQW5nbGUgU3ltYm9scyAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDk1IDIxMCw5NSAyMTAsODAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDIwNSAxOTAsMjA1IDE5MCwyMjAiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiLz4NCiAgPCEtLSBBbHRlcm5hdGUgSW50ZXJpb3IgQW5nbGVzIHZpc3VhbCBsb2dpYyAtLT4NCiAgDQogIDwhLS0gUGFyYWxsZWwgYXJyb3dzIG9uIGxpbmVzIC0tPg0KICA8cGF0aCBkPSJNMjUwLDgwIEwyNjAsNzAgTTI1NSw4MCBMMjY1LDcwIiBzdHJva2U9ImJsYWNrIi8+IDwhLS0gQXJyb3cgc3R5bGluZyAtLT4NCiAgPHBhdGggZD0iTTI1MCwyMjAgTDI2MCwyMTAgTTI1NSwyMjAgTDI2NSwyMTAiIHN0cm9rZT0iYmxhY2siLz4NCjwvc3ZnPg==" alt="Parallel Tangents Proof">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. PQ is a diameter. AB
+            and CD are tangents at P and Q respectively.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Tangent AB is parallel to Tangent CD (AB ||
+            CD).</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">OP is the radius and AB is the tangent at P.</div>
+        <div class="step">By <strong style="color: #D32F2F;">Theorem 10.1</strong>: Radius \(\perp\) Tangent.</div>
+        <div class="step">Therefore, \(\angle OPB = 90^\circ\) (or \(\angle APQ = 90^\circ\)).</div>
+        <div class="step">OQ is the radius and CD is the tangent at Q.</div>
+        <div class="step">By <strong style="color: #D32F2F;">Theorem 10.1</strong>: Radius \(\perp\) Tangent.</div>
+        <div class="step">Therefore, \(\angle OQC = 90^\circ\) (or \(\angle DQP = 90^\circ\)).</div>
+        <div class="step">Consider transversal PQ intersecting lines AB and CD.</div>
+        <div class="step">From the above, \(\angle OPB = 90^\circ\) and \(\angle OQC = 90^\circ\).</div>
+        <div class="step">Their sum \(\angle OPB + \angle OQC = 180^\circ\) (Consecutive Interior Angles).</div>
+        <div class="step">Also alternate interior angles \(\angle APQ\) and \(\angle DQP\) are both \(90^\circ\).</div>
+        <div class="step">Since alternate interior angles are equal, the lines are parallel.</div>
+        <div class="step">Therefore, AB || CD.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the tangents drawn at the
+            ends of a diameter are parallel.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. Prove that the perpendicular at the point of contact to the tangent to a circle passes
+            through the centre.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjcwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIyMTAiIHk9IjE0NSIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFRhbmdlbnQgQUIgYXQgcG9pbnQgUCAob24gY2lyY2xlKSAtLT4NCiAgPCEtLSBMZXQgUCBiZSBhdCByb3VnaGx5IDMzMCBkZWdyZWVzIChib3R0b20gcmlnaHQpIGZvciBjbGFyaXR5LiAtLT4NCiAgPCEtLSBObywgbGV0J3Mga2VlcCBpdCBzaW1wbGUuIFAgYXQgKDIwMCwgMjIwKSAtIGJvdHRvbS4gVGFuZ2VudCBob3Jpem9udGFsLiAtLT4NCiAgPCEtLSBTYW1lIGFzIGJlZm9yZSBidXQgY2xlYXJlciBsYWJlbHMuIC0tPg0KICANCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjIwIiB4Mj0iMzUwIiB5Mj0iMjIwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyNDAiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0PiA8dGV4dCB4PSIzNDAiIHk9IjI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiPkI8L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjIwMCIgeT0iMjQwIiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUGVycGVuZGljdWxhciBhdCBQIC0tPg0KICA8bGluZSB4MT0iMjAwIiB5MT0iMjIwIiB4Mj0iMjAwIiB5Mj0iODAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDx0ZXh0IHg9IjIwNSIgeT0iOTAiIGZpbGw9ImJsdWUiPlBlcnBlbmRpY3VsYXIgYXQgUDwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgTycgbm90IG9uIGNlbnRlciAtLT4NCiAgPGNpcmNsZSBjeD0iMTgwIiBjeT0iMTMwIiByPSIzIiBmaWxsPSJyZWQiLz4gPHRleHQgeD0iMTY1IiB5PSIxMzAiIGZpbGw9InJlZCIgZm9udC13ZWlnaHQ9ImJvbGQiPk8nPC90ZXh0Pg0KICANCiAgPCEtLSBMaW5lIE8nUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjIyMCIgeDI9IjE4MCIgeTI9IjEzMCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI0LDQiLz4NCiAgDQogIDwhLS0gU2hvd2luZyBjb250cmFkaWN0aW9uIHZpc3VhbGx5OiBPJ1AgaXMgbm90IHBlcnAgKGFuZ2xlIDwgOTApIC0tPg0KICA8cGF0aCBkPSJNMTkwLDIxMCBBIDE1IDE1IDAgMCAwIDE4NSwyMjAiIHN0cm9rZT0icmVkIiBmaWxsPSJub25lIi8+DQogIDx0ZXh0IHg9IjE2MCIgeT0iMjAwIiBmb250LXNpemU9IjEyIiBmaWxsPSJyZWQiPuKJoDkwwrA8L3RleHQ+DQogIA0KICA8cG9seWxpbmUgcG9pbnRzPSIyMDAsMjEwIDIxMCwyMTAgMjEwLDIyMCIgc3Ryb2tlPSJibHVlIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Normal Passes Through Center">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. Tangent AB touches at
+            point P.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Perpendicular to AB at P passes through
+            center O.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">Let us assume the perpendicular to AB at point P does <strong>not</strong> pass through center
+            O.</div>
+        <div class="step">Let it pass through another point O'.</div>
+        <div class="step">Then, \(\angle O'PB = 90^\circ\) (by our assumption).</div>
+        <div class="step">However, we know by <strong style="color: #D32F2F;">Theorem 10.1</strong> that the radius is
+            perpendicular to the tangent.</div>
+        <div class="step">So, OP \(\perp\) AB \(\Rightarrow \angle OPB = 90^\circ\).</div>
+        <div class="step">Comparing the two angles: \(\angle O'PB = \angle OPB = 90^\circ\).</div>
+        <div class="step">This is only possible if the line segment O'P and OP coincide.</div>
+        <div class="step">Therefore, O' must coincide with O.</div>
+        <div class="step">Thus, the perpendicular at the point of contact must pass through the center.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. The length of a tangent from a point A at distance 5 cm from the centre of the circle
+            is 4 cm. Find the radius of the circle.</div>
+       <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbC10ZXh0IHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE4cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgICAgLmRpbS10ZXh0IHsgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6IGJsYWNrOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENlbnRlciBPKDEyMCwgMTIwKS4gUmFkaXVzIDkwIChyZXByZXNlbnRpbmcgMyB1bml0cykuIFNjYWxlOiAxIHVuaXQgPSAzMHB4IC0tPg0KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjkwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgLz4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMTIwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMTEwIiB5PSIxMTAiIGNsYXNzPSJsYWJlbC10ZXh0Ij5PPC90ZXh0Pg0KDQogIDwhLS0gVHJpYW5nbGUgT0JBIC0tPg0KICA8IS0tIE8oMTIwLCAxMjApIC0tPg0KICA8IS0tIEIoMTIwLCAyMTApIC0gVmVydGljYWxseSBkb3duLiBMZW5ndGggOTAgKDMgdW5pdHMpIC0tPg0KICA8IS0tIEEoMjQwLCAyMTApIC0gSG9yaXpvbnRhbGx5IHJpZ2h0LiBMZW5ndGggMTIwICg0IHVuaXRzKSAtLT4NCiAgPCEtLSBIeXBvdGVudXNlIE9BIGxlbmd0aCAxNTAgKDUgdW5pdHMpIC0tPg0KDQogIDwhLS0gVGFuZ2VudCBCQSAoQmx1ZSkgLS0+DQogIDxsaW5lIHgxPSIxMjAiIHkxPSIyMTAiIHgyPSIyNDAiIHkyPSIyMTAiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPg0KDQogIDwhLS0gUmFkaXVzIE9CIChHcmVlbikgLS0+DQogIDxsaW5lIHgxPSIxMjAiIHkxPSIxMjAiIHgyPSIxMjAiIHkyPSIyMTAiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIzIiAvPg0KDQogIDwhLS0gSHlwb3RlbnVzZSBPQSAoUmVkKSAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjEyMCIgeDI9IjI0MCIgeTI9IjIxMCIgc3Ryb2tlPSIjRDMyRjJGIiBzdHJva2Utd2lkdGg9IjMiIC8+DQoNCiAgPCEtLSBQb2ludHMgLS0+DQogIDwhLS0gQiAtLT4NCiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iMjEwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMTEwIiB5PSIyMzUiIGNsYXNzPSJsYWJlbC10ZXh0Ij5QPC90ZXh0Pg0KDQogIDwhLS0gQSAtLT4NCiAgPGNpcmNsZSBjeD0iMjQwIiBjeT0iMjEwIiByPSI0IiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iMjUwIiB5PSIyMjAiIGNsYXNzPSJsYWJlbC10ZXh0Ij5BPC90ZXh0Pg0KDQogIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VyIGF0IEIgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjEyMCwyMDAgMTMwLDIwMCAxMzAsMjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gRGltZW5zaW9ucyAtLT4NCiAgPCEtLSA0IGNtIG9uIFRhbmdlbnQgLS0+DQogIDx0ZXh0IHg9IjE2MCIgeT0iMjM1IiBjbGFzcz0iZGltLXRleHQiIGZpbGw9IiMxOTc2RDIiPjQgY208L3RleHQ+DQoNCiAgPCEtLSA1IGNtIG9uIEh5cG90ZW51c2UgLS0+DQogIDx0ZXh0IHg9IjE5MCIgeT0iMTYwIiBjbGFzcz0iZGltLXRleHQiIGZpbGw9IiNEMzJGMkYiPjUgY208L3RleHQ+DQoNCjwvc3ZnPg==" alt="Radius Calculation">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Distance OA = 5 cm. Length of tangent AP = 4
+            cm.</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Radius of the circle (OP).</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">Since AP is a tangent and OP is a radius, they are perpendicular (<strong
+                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
+        <div class="step">So, \(\triangle OPA\) is a right-angled triangle.</div>
+        <div class="step">By Pythagoras Theorem: \(OA^2 = OP^2 + AP^2\).</div>
+        <div class="step">Substitute values: \(5^2 = OP^2 + 4^2\).</div>
+        <div class="step">\(25 = OP^2 + 16\).</div>
+        <div class="step">\(OP^2 = 25 - 16\).</div>
+        <div class="step">\(OP^2 = 9\).</div>
+        <div class="step">\(OP = 3\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the radius of the circle is
+            3 cm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. Two concentric circles are of radii 5 cm and 3 cm. Find the length of the chord of the
+            larger circle which touches the smaller circle.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjEwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+IDwhLS0gNWNtIC0tPg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIxNTAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4gPCEtLSAzY20gLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMjAwIiB5PSIxMzUiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5PPC90ZXh0Pg0KICANCiAgPCEtLSBDaG9yZCBBQiB0b3VjaGluZyBzbWFsbGVyIGNpcmNsZSBhdCB0b3AgcG9pbnQgUCgyMDAsIDkwKSAtLT4NCiAgPGxpbmUgeDE9IjEyMCIgeTE9IjkwIiB4Mj0iMjgwIiB5Mj0iOTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPHRleHQgeD0iMTEwIiB5PSI5MCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjI5MCIgeT0iOTAiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iOTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjIwNSIgeT0iODAiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpdXMgT1AgLS0+DQogIDxsaW5lIHgxPSIyMDAiIHkxPSIxNTAiIHgyPSIyMDAiIHkyPSI5MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIFJhZGl1cyBPQSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjEyMCIgeTI9IjkwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjAwLDEwMCAxOTAsMTAwIDE5MCw5MCIgc3Ryb2tlPSJibGFjayIgZmlsbD0ibm9uZSIvPg0KICANCiAgPHRleHQgeD0iMjEwIiB5PSIxMjAiIGZvbnQtc2l6ZT0iMTQiPjM8L3RleHQ+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMTMwIiBmb250LXNpemU9IjE0Ij41PC90ZXh0Pg0KPC9zdmc+" alt="Concentric Circles Chord">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Two concentric circles with center O. Radii 5
+            cm and 3 cm. Chord AB of larger circle touches smaller circle.</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Length of chord AB.</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">Let chord AB touch the smaller circle at point P.</div>
+        <div class="step">OP is the radius of the smaller circle (= 3 cm).</div>
+        <div class="step">AB is a tangent to the smaller circle at P.</div>
+        <div class="step">So, OP \(\perp\) AB (by <strong style="color: #D32F2F;">Theorem 10.1</strong>).</div>
+        <div class="step">Since AB is a chord of the larger circle and OP \(\perp\) AB:</div>
+        <div class="step">P bisects AB (Perpendicular from center to chord bisects it).</div>
+        <div class="step">So, \(AP = PB\).</div>
+        <div class="step">In right-angled \(\triangle OPA\) (Hypotenuse OA = 5 cm):</div>
+        <div class="step">\(OA^2 = OP^2 + AP^2\).</div>
+        <div class="step">\(5^2 = 3^2 + AP^2\).</div>
+        <div class="step">\(25 = 9 + AP^2\).</div>
+        <div class="step">\(AP^2 = 16 \Rightarrow AP = 4\) cm.</div>
+        <div class="step">Length of chord \(AB = 2 \times AP = 2 \times 4 = 8\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, the length of the chord is 8
+            cm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A quadrilateral ABCD is drawn to circumscribe a circle. Prove that AB + CD = AD + BC.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzUwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjM1MCI+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5sYWJlbCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBDb29yZGluYXRlcyAtLT4NCiAgPCEtLSBDZW50ZXIgTyBhdCAoMjAwLCAxODApIC0tPg0KICA8IS0tIFJhZGl1cyBSID0gODAgLS0+DQogIDwhLS0gQ2FsY3VsYXRlZCBWZXJ0aWNlcyAtLT4NCiAgPCEtLSBBKDEwOCwgMjQ1KSAtLT4NCiAgPCEtLSBCKDI2NSwgMjcyKSAtLT4NCiAgPCEtLSBDKDI5MiwgMTE1KSAtLT4NCiAgPCEtLSBEKDEzNSwgODgpIC0tPg0KICANCiAgPCEtLSBDYWxjdWxhdGVkIENvbnRhY3QgUG9pbnRzIC0tPg0KICA8IS0tIFAoMTg2LCAyNTkpIG9uIEFCIC0tPg0KICA8IS0tIFEoMjc5LCAxOTQpIG9uIEJDIC0tPg0KICA8IS0tIFIoMjE0LCAxMDEpIG9uIENEIC0tPg0KICA8IS0tIFMoMTIxLCAxNjYpIG9uIERBIC0tPg0KDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENvbG9yOiBCbHVlICMxOTc2RDIgLS0+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iODAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBRdWFkcmlsYXRlcmFsIFNpZGVzIC0tPg0KICA8IS0tIEFCIChCb3R0b20pIC0gUmVkIC0tPg0KICA8bGluZSB4MT0iMTA4IiB5MT0iMjQ1IiB4Mj0iMjY1IiB5Mj0iMjcyIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICANCiAgPCEtLSBCQyAoUmlnaHQpIC0gR3JlZW4gLS0+DQogIDxsaW5lIHgxPSIyNjUiIHkxPSIyNzIiIHgyPSIyOTIiIHkyPSIxMTUiIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIENEIChUb3ApIC0gT3JhbmdlIC0tPg0KICA8bGluZSB4MT0iMjkyIiB5MT0iMTE1IiB4Mj0iMTM1IiB5Mj0iODgiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIERBIChMZWZ0KSAtIFB1cnBsZSAtLT4NCiAgPGxpbmUgeDE9IjEzNSIgeTE9Ijg4IiB4Mj0iMTA4IiB5Mj0iMjQ1IiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KDQogIDwhLS0gUG9pbnRzIChWZXJ0aWNlcykgLS0+DQogIDwhLS0gQSAtLT4NCiAgPGNpcmNsZSBjeD0iMTA4IiBjeT0iMjQ1IiByPSIzIiBmaWxsPSJibGFjayIgLz4NCiAgPHRleHQgeD0iOTAiIHk9IjI2MCIgY2xhc3M9ImxhYmVsIj5BPC90ZXh0Pg0KICANCiAgPCEtLSBCIC0tPg0KICA8Y2lyY2xlIGN4PSIyNjUiIGN5PSIyNzIiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPg0KICA8dGV4dCB4PSIyODAiIHk9IjI4NSIgY2xhc3M9ImxhYmVsIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBDIC0tPg0KICA8Y2lyY2xlIGN4PSIyOTIiIGN5PSIxMTUiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPg0KICA8dGV4dCB4PSIzMDAiIHk9IjExMCIgY2xhc3M9ImxhYmVsIj5DPC90ZXh0Pg0KICANCiAgPCEtLSBEIC0tPg0KICA8Y2lyY2xlIGN4PSIxMzUiIGN5PSI4OCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+DQogIDx0ZXh0IHg9IjEyMCIgeT0iODAiIGNsYXNzPSJsYWJlbCI+RDwvdGV4dD4NCg0KICA8IS0tIFBvaW50cyAoQ29udGFjdHMpIC0tPg0KICA8IS0tIFAgLS0+DQogIDxjaXJjbGUgY3g9IjE4NiIgY3k9IjI1OSIgcj0iNCIgZmlsbD0iIzE5NzZEMiIgLz4NCiAgPHRleHQgeD0iMTgwIiB5PSIyODAiIGNsYXNzPSJsYWJlbCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjc5IiBjeT0iMTk0IiByPSI0IiBmaWxsPSIjMTk3NkQyIiAvPg0KICA8dGV4dCB4PSIyOTUiIHk9IjIwMCIgY2xhc3M9ImxhYmVsIj5RPC90ZXh0Pg0KICANCiAgPCEtLSBSIC0tPg0KICA8Y2lyY2xlIGN4PSIyMTQiIGN5PSIxMDEiIHI9IjQiIGZpbGw9IiMxOTc2RDIiIC8+DQogIDx0ZXh0IHg9IjIxMCIgeT0iOTUiIGNsYXNzPSJsYWJlbCI+UjwvdGV4dD4NCiAgDQogIDwhLS0gUyAtLT4NCiAgPGNpcmNsZSBjeD0iMTIxIiBjeT0iMTY2IiByPSI0IiBmaWxsPSIjMTk3NkQyIiAvPg0KICA8dGV4dCB4PSIxMDAiIHk9IjE3MCIgY2xhc3M9ImxhYmVsIj5TPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Circumscribing Quad">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> A quadrilateral ABCD circumscribing a circle.
+            Points of contact P, Q, R, S on sides AB, BC, CD, DA respectively.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> \(AB + CD = AD + BC\).</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">We know tangent lengths from an external point are equal (<strong
+                style="color: #D32F2F;">Theorem 10.2</strong>).</div>
+        <div class="step">Tangents from A: \(AP = AS\) ... (i)</div>
+        <div class="step">Tangents from B: \(BP = BQ\) ... (ii)</div>
+        <div class="step">Tangents from C: \(CR = CQ\) ... (iii)</div>
+        <div class="step">Tangents from D: \(DR = DS\) ... (iv)</div>
+        <div class="step">Add equations (i), (ii), (iii), and (iv):</div>
+        <div class="step">\((AP + BP) + (CR + DR) = (AS + DS) + (BQ + CQ)\).</div>
+        <div class="step">From the figure: \(AP + BP = AB\) and \(CR + DR = CD\).</div>
+        <div class="step">Also: \(AS + DS = AD\) and \(BQ + CQ = BC\).</div>
+        <div class="step">Substituting these values: \(AB + CD = AD + BC\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. In Fig., XY and X'Y' are two parallel tangents... Prove that ∠AOB = 90°.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTUwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBEZWZpbml0aW9ucyBmb3IgbWFya2VycyAtLT4NCiAgPGRlZnM+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctYmx1ZSIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjMTk3NkQyIiAvPg0KICAgIDwvbWFya2VyPg0KICAgIDxtYXJrZXIgaWQ9ImFycm93LXN0YXJ0LWJsdWUiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iMSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPg0KICAgICAgPHBhdGggZD0iTTksMCBMOSw2IEwwLDMgeiIgZmlsbD0iIzE5NzZEMiIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KDQogIDwhLS0gUGFyYWxsZWwgVGFuZ2VudHMgKEJsdWUpIC0tPg0KICA8IS0tIEV4dGVuZGVkIHRvIHRoZSByaWdodCB0byBzZXBhcmF0ZSBBIGZyb20gWSAtLT4NCiAgPGxpbmUgeDE9IjQwIiB5MT0iNzUiIHgyPSI1MTAiIHkyPSI3NSIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdy1ibHVlKSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93LXN0YXJ0LWJsdWUpIiAvPg0KICA8dGV4dCB4PSI1MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlg8L3RleHQ+DQogIDx0ZXh0IHg9IjUwMCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlk8L3RleHQ+DQoNCiAgPGxpbmUgeDE9IjQwIiB5MT0iMjc1IiB4Mj0iNTEwIiB5Mj0iMjc1IiBzdHJva2U9IiMxOTc2RDIiIHN0cm9rZS13aWR0aD0iMi41IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93LWJsdWUpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3ctc3RhcnQtYmx1ZSkiIC8+DQogIDx0ZXh0IHg9IjUwIiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPlgnPC90ZXh0Pg0KICA8dGV4dCB4PSI1MDAiIHk9IjMwMCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMTk3NkQyIiBmb250LXdlaWdodD0iYm9sZCI+WSc8L3RleHQ+DQoNCiAgPCEtLSBDaXJjbGUgKERhcmsgR3JleSkgLS0+DQogIDxjaXJjbGUgY3g9IjIyNSIgY3k9IjE3NSIgcj0iMTAwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgLz4NCiAgPGNpcmNsZSBjeD0iMjI1IiBjeT0iMTc1IiByPSI0IiBmaWxsPSIjMzMzIiAvPg0KICA8dGV4dCB4PSIyMTAiIHk9IjE4MCIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSJibGFjayIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQoNCiAgPCEtLSBEaWFtZXRlciBQUSAoQmxhY2spIC0tPg0KICA8bGluZSB4MT0iMjI1IiB5MT0iNzUiIHgyPSIyMjUiIHkyPSIyNzUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8dGV4dCB4PSIyMjAiIHk9IjY1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9ImJsYWNrIiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgPHRleHQgeD0iMjIwIiB5PSIzMDAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iYmxhY2siIGZvbnQtd2VpZ2h0PSJib2xkIj5RPC90ZXh0Pg0KDQogIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VycyAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjEwLDc1IDIxMCw5MCAyMjUsOTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogIDxwb2x5bGluZSBwb2ludHM9IjIxMCwyNzUgMjEwLDI2MCAyMjUsMjYwIiBmaWxsPSJub25lIiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gQ29uc3RydWN0aW9uOiBUYW5nZW50IEFCIChQdXJwbGUpIC0tPg0KICA8IS0tIENvb3JkaW5hdGVzIHByZXNlcnZlZDogQSgzOTgsIDc1KSwgQigyODMsIDI3NSksIEMoMzEyLCAyMjUpIC0tPg0KICA8bGluZSB4MT0iMzk4IiB5MT0iNzUiIHgyPSIyODMiIHkyPSIyNzUiIHN0cm9rZT0iIzlDMjdCMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFBvaW50IEEgb24gdG9wIGxpbmUgLS0+DQogIDxjaXJjbGUgY3g9IjM5OCIgY3k9Ijc1IiByPSI0IiBmaWxsPSIjOUMyN0IwIiAvPg0KICA8dGV4dCB4PSIzOTAiIHk9IjY1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5QzI3QjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5BPC90ZXh0Pg0KICANCiAgPCEtLSBQb2ludCBCIG9uIGJvdHRvbSBsaW5lIC0tPg0KICA8Y2lyY2xlIGN4PSIyODMiIGN5PSIyNzUiIHI9IjQiIGZpbGw9IiM5QzI3QjAiIC8+DQogIDx0ZXh0IHg9IjI4NSIgeT0iMzAwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiM5QzI3QjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KDQogIDwhLS0gUG9pbnQgQyBvbiBjaXJjbGUgLS0+DQogIDxjaXJjbGUgY3g9IjMxMiIgY3k9IjIyNSIgcj0iNCIgZmlsbD0iIzlDMjdCMCIgLz4NCiAgPHRleHQgeD0iMzIwIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzlDMjdCMCIgZm9udC13ZWlnaHQ9ImJvbGQiPkM8L3RleHQ+DQoNCiAgPCEtLSBSYWRpaSB0byBBLCBCLCBDIChHcmVlbikgLS0+DQogIDxsaW5lIHgxPSIyMjUiIHkxPSIxNzUiIHgyPSIzOTgiIHkyPSI3NSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyMjUiIHkxPSIxNzUiIHgyPSIyODMiIHkyPSIyNzUiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8bGluZSB4MT0iMjI1IiB5MT0iMTc1IiB4Mj0iMzEyIiB5Mj0iMjI1IiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICANCjwvc3ZnPg==" alt="AOB 90 Degree Proof">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Parallel tangents XY and X'Y'. Tangent AB
+            intersecting XY at A and X'Y' at B.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> \(\angle AOB = 90^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join OC.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">In \(\triangle OPA\) and \(\triangle OCA\):</div>
+        <div class="step">\(OP = OC\) (Radii of same circle).</div>
+        <div class="step">\(AP = AC\) (Tangents from external point A).</div>
+        <div class="step">\(OA = OA\) (Common side).</div>
+        <div class="step">By SSS Congruence Rule: \(\triangle OPA \cong \triangle OCA\).</div>
+        <div class="step">Therefore, \(\angle POA = \angle COA\). Let them be \(x\).</div>
+        <div class="step">Similarly, \(\triangle OQB \cong \triangle OCB\).</div>
+        <div class="step">Therefore, \(\angle QOB = \angle COB\). Let them be \(y\).</div>
+        <div class="step">Since XY || X'Y', POQ is a diameter (straight line).</div>
+        <div class="step">Sum of angles on a straight line is \(180^\circ\).</div>
+        <div class="step">\(\angle POA + \angle COA + \angle COB + \angle QOB = 180^\circ\).</div>
+        <div class="step">\(x + x + y + y = 180^\circ\).</div>
+        <div class="step">\(2(x + y) = 180^\circ \Rightarrow x + y = 90^\circ\).</div>
+        <div class="step">From figure, \(\angle AOB = \angle COA + \angle COB = x + y\).</div>
+        <div class="step">Therefore, \(\angle AOB = 90^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">10. Prove that the angle between the two tangents drawn from an external point to a circle
+            is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8dGV4dCB4PSIxMzUiIHk9IjE1NSIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDx0ZXh0IHg9IjMxMCIgeT0iMTU1IiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudHMgdG8gUCAtLT4NCiAgPCEtLSBBKDE4MCwgOTgpLCBCKDE4MCwgMjAyKSBhcHByb3ggLS0+DQogIDxsaW5lIHgxPSIzMDAiIHkxPSIxNTAiIHgyPSIxODAiIHkyPSI5OCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMzAwIiB5MT0iMTUwIiB4Mj0iMTgwIiB5Mj0iMjAyIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8Y2lyY2xlIGN4PSIxODAiIGN5PSI5OCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMTc1IiB5PSI5MCIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDxjaXJjbGUgY3g9IjE4MCIgY3k9IjIwMiIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMTc1IiB5PSIyMjAiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpaSAtLT4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE4MCIgeTI9Ijk4IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgPGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE4MCIgeTI9IjIwMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KICA8IS0tIEFuZ2xlIEFyY3MgLS0+DQogIDxwYXRoIGQ9Ik0xNzAsMTQwIEEgMjAgMjAgMCAwIDEgMTcwIDE2MCIgc3Ryb2tlPSJibHVlIiBmaWxsPSJub25lIi8+DQogIDx0ZXh0IHg9IjExMCIgeT0iMTU1IiBmb250LXNpemU9IjEyIiBmaWxsPSJibHVlIj7iiKBPPC90ZXh0Pg0KICANCiAgPHBhdGggZD0iTTI4MCwxNDUgQSAyMCAyMCAwIDAgMCAyODAgMTU1IiBzdHJva2U9ImJsdWUiIGZpbGw9Im5vbmUiLz4NCiAgPHRleHQgeD0iMzEwIiB5PSIxMzAiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsdWUiPuKIoFA8L3RleHQ+DQogIA0KICA8dGV4dCB4PSIxODAiIHk9IjUwIiBmb250LXNpemU9IjE0Ij7iiKBPICsg4oigUCA9IDE4MMKwPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Supplementary Angles Proof">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> External point P. Tangents PA and PB.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Angle between tangents (\(\angle APB\)) +
+            Angle at center (\(\angle AOB\)) = \(180^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">We know radius is perpendicular to tangent at point of contact (<strong
+                style="color: #D32F2F;">Theorem 10.1</strong>).</div>
+        <div class="step">So, \(\angle OAP = 90^\circ\) and \(\angle OBP = 90^\circ\).</div>
+        <div class="step">Consider quadrilateral OAPB.</div>
+        <div class="step">Sum of all interior angles of a quadrilateral is \(360^\circ\).</div>
+        <div class="step">\(\angle APB + \angle AOB + \angle OAP + \angle OBP = 360^\circ\).</div>
+        <div class="step">Substitute the values: \(\angle APB + \angle AOB + 90^\circ + 90^\circ = 360^\circ\).</div>
+        <div class="step">\(\angle APB + \angle AOB + 180^\circ = 360^\circ\).</div>
+        <div class="step">\(\angle APB + \angle AOB = 360^\circ - 180^\circ = 180^\circ\).</div>
+        <div class="step">Since sum is \(180^\circ\), the angles are supplementary.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">11. Prove that the parallelogram circumscribing a circle is a rhombus.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBDaXJjbGUgKENlbnRlciAyNTAsIDIwMCwgUmFkaXVzIDgwKSAtIERhcmsgR3JleSAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMjAwIiByPSI4MCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiIC8+DQogIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iNCIgZmlsbD0iIzMzMyIgLz4NCiAgPHRleHQgeD0iMjYwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iYmxhY2siIGZvbnQtd2VpZ2h0PSJib2xkIj5PPC90ZXh0Pg0KDQogIDwhLS0gUmhvbWJ1cyBBQkNEIChCcmlnaHQgQmx1ZSkgLS0+DQogIDwhLS0gQ2FsY3VsYXRlZCBDb29yZGluYXRlczogQSgxOTUsIDEyMCksIEIoMzY2LCAxMjApLCBDKDMwNiwgMjgwKSwgRCgxMzUsIDI4MCkgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iMTk1LDEyMCAzNjYsMTIwIDMwNiwyODAgMTM1LDI4MCIgc3Ryb2tlPSIjMTk3NkQyIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgLz4NCg0KICA8IS0tIFJhZGlpIHRvIGNvbnRhY3QgcG9pbnRzIChHcmVlbiBkYXNoZWQgLSBvcHRpb25hbCBidXQgYWRkcyBjb2xvci9jb250ZXh0KSAtLT4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIwMCIgeDI9IjI1MCIgeTI9IjEyMCIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjAwIiB4Mj0iMzI1IiB5Mj0iMjI5IiBzdHJva2U9IiMzODhFM0MiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMDAiIHgyPSIyNTAiIHkyPSIyODAiIHN0cm9rZT0iIzM4OEUzQyIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIwMCIgeDI9IjE3NSIgeTI9IjE3MSIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KDQogIDwhLS0gUG9pbnRzIG9mIENvbnRhY3QgKFJlZC9PcmFuZ2UpIC0tPg0KICA8IS0tIFAoMjUwLCAxMjApIG9uIEFCIC0tPg0KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIxMjAiIHI9IjUiIGZpbGw9IiNEMzJGMkYiIC8+DQogIDx0ZXh0IHg9IjI1MCIgeT0iMTEwIiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNEMzJGMkYiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QPC90ZXh0Pg0KDQogIDwhLS0gUSgzMjUsIDIyOSkgb24gQkMgLS0+DQogIDxjaXJjbGUgY3g9IjMyNSIgY3k9IjIyOSIgcj0iNSIgZmlsbD0iI0QzMkYyRiIgLz4NCiAgPHRleHQgeD0iMzM1IiB5PSIyMzUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iI0QzMkYyRiIgZm9udC13ZWlnaHQ9ImJvbGQiPlE8L3RleHQ+DQoNCiAgPCEtLSBSKDI1MCwgMjgwKSBvbiBDRCAtLT4NCiAgPGNpcmNsZSBjeD0iMjUwIiBjeT0iMjgwIiByPSI1IiBmaWxsPSIjRDMyRjJGIiAvPg0KICA8dGV4dCB4PSIyNTAiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjRDMyRjJGIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UjwvdGV4dD4NCg0KICA8IS0tIFMoMTc1LCAxNzEpIG9uIEFEIC0tPg0KICA8Y2lyY2xlIGN4PSIxNzUiIGN5PSIxNzEiIHI9IjUiIGZpbGw9IiNEMzJGMkYiIC8+DQogIDx0ZXh0IHg9IjE1NSIgeT0iMTc1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiNEMzJGMkYiIGZvbnQtd2VpZ2h0PSJib2xkIj5TPC90ZXh0Pg0KDQogIDwhLS0gVmVydGljZXMgTGFiZWxzIChCbHVlKSAtLT4NCiAgPHRleHQgeD0iMTg1IiB5PSIxMTUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjM3NSIgeT0iMTE1IiBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IiMxOTc2RDIiIGZvbnQtd2VpZ2h0PSJib2xkIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMTUiIHk9IjI5NSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjE4IiBmaWxsPSIjMTk3NkQyIiBmb250LXdlaWdodD0iYm9sZCI+QzwvdGV4dD4NCiAgPHRleHQgeD0iMTIwIiB5PSIyOTUiIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzE5NzZEMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkQ8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Rhombus Proof">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Parallelogram ABCD circumscribing a circle.
+        </div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> ABCD is a rhombus.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">Since ABCD is a parallelogram, opposite sides are equal.</div>
+        <div class="step">\(AB = CD\) and \(AD = BC\) ... (Equation 1).</div>
+        <div class="step">We know that for any quadrilateral circumscribing a circle (from Q8):</div>
+        <div class="step">\(AB + CD = AD + BC\).</div>
+        <div class="step">Substitute values from Equation 1:</div>
+        <div class="step">\(AB + AB = AD + AD\).</div>
+        <div class="step">\(2AB = 2AD\).</div>
+        <div class="step">\(AB = AD\).</div>
+        <div class="step">Since adjacent sides AB and AD are equal, all sides of the parallelogram are equal.</div>
+        <div class="step">A parallelogram with equal sides is a rhombus.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, ABCD is a rhombus.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">12. A triangle ABC is drawn to circumscribe a circle of radius 4 cm... Find the sides AB
+            and AC.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUwIiBoZWlnaHQ9IjQyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC5tYWluLXN0cm9rZSB7IHN0cm9rZTogIzAwQUNDMTsgc3Ryb2tlLXdpZHRoOiAyLjU7IGZpbGw6IG5vbmU7IH0NCiAgICAgIC5kYXNoZWQtc3Ryb2tlIHsgc3Ryb2tlOiAjMDBBQ0MxOyBzdHJva2Utd2lkdGg6IDEuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogNSw1OyB9DQogICAgICAudGV4dC1sYWJlbCB7IGZvbnQtZmFtaWx5OiBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5kaW0tbGFiZWwgeyBmb250LWZhbWlseTogc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNnB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5tYXJrZXItbGluZSB7IHN0cm9rZTogYmxhY2s7IHN0cm9rZS13aWR0aDogMTsgfQ0KICAgIDwvc3R5bGU+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctc3RhcnQiIG1hcmtlcldpZHRoPSIxMCIgbWFya2VySGVpZ2h0PSIxMCIgcmVmWD0iMSIgcmVmWT0iMyIgb3JpZW50PSJhdXRvIj4NCiAgICAgIDxwYXRoIGQ9Ik05LDAgTDksNiBMMCwzIHoiIGZpbGw9IiMwMEFDQzEiIC8+DQogICAgPC9tYXJrZXI+DQogICAgPG1hcmtlciBpZD0iYXJyb3ctZW5kIiBtYXJrZXJXaWR0aD0iMTAiIG1hcmtlckhlaWdodD0iMTAiIHJlZlg9IjkiIHJlZlk9IjMiIG9yaWVudD0iYXV0byI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSIjMDBBQ0MxIiAvPg0KICAgIDwvbWFya2VyPg0KICA8L2RlZnM+DQoNCiAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogIDwhLS0gQSgxNTAsIDExMCksIEIoMzMwLCAzNTApLCBDKDUwLCAzNTApIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjE1MCwxMTAgMzMwLDM1MCA1MCwzNTAiIGNsYXNzPSJtYWluLXN0cm9rZSIgLz4NCg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPCEtLSBDZW50ZXIgTygxNzAsIDI3MCksIFJhZGl1cyA4MCAtLT4NCiAgPGNpcmNsZSBjeD0iMTcwIiBjeT0iMjcwIiByPSI4MCIgY2xhc3M9Im1haW4tc3Ryb2tlIiAvPg0KICA8Y2lyY2xlIGN4PSIxNzAiIGN5PSIyNzAiIHI9IjQiIGZpbGw9IiMwMEFDQzEiIC8+DQogIDx0ZXh0IHg9IjE3NSIgeT0iMjk1IiBjbGFzcz0idGV4dC1sYWJlbCIgc3R5bGU9ImZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyI+TzwvdGV4dD4NCg0KICA8IS0tIFJhZGlpIHRvIGNvbnRhY3QgcG9pbnRzIChEYXNoZWQpIC0tPg0KICA8IS0tIEQoMTcwLCAzNTApIG9uIEJDIC0tPg0KICA8IS0tIExlZnQgUG9pbnQgKE5vdyBFKSAoOTYsIDIzOSkgb24gQUMgLS0+DQogIDwhLS0gUmlnaHQgUG9pbnQgKE5vdyBGKSAoMjM0LCAyMjIpIG9uIEFCIC0tPg0KICA8bGluZSB4MT0iMTcwIiB5MT0iMjcwIiB4Mj0iMTcwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9Ijk2IiB5Mj0iMjM5IiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9IjIzNCIgeTI9IjIyMiIgY2xhc3M9ImRhc2hlZC1zdHJva2UiIC8+DQoNCiAgPCEtLSBBbmdsZSBCaXNlY3RvcnMgKERhc2hlZCkgLS0+DQogIDxsaW5lIHgxPSIxNzAiIHkxPSIyNzAiIHgyPSIxNTAiIHkyPSIxMTAiIGNsYXNzPSJkYXNoZWQtc3Ryb2tlIiAvPg0KICA8bGluZSB4MT0iMTcwIiB5MT0iMjcwIiB4Mj0iMzMwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCiAgPGxpbmUgeDE9IjE3MCIgeTE9IjI3MCIgeDI9IjUwIiB5Mj0iMzUwIiBjbGFzcz0iZGFzaGVkLXN0cm9rZSIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIE1hcmtlcnMgLS0+DQogIDwhLS0gRCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTYwLDM1MCAxNjAsMzQwIDE3MCwzNDAiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIC8+DQogIDxwb2x5bGluZSBwb2ludHM9IjE4MCwzNTAgMTgwLDM0MCAxNzAsMzQwIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiAvPg0KICANCiAgPCEtLSBMZWZ0IFBvaW50IEUgKGFwcHJveCByb3RhdGlvbikgLS0+DQogIDxwb2x5Z29uIHBvaW50cz0iOTYsMjM5IDEwNCwyNDIgMTA3LDIzNCAxMDAsMjMxIiBzdHJva2U9IiMwMEFDQzEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiAvPg0KICANCiAgPCEtLSBSaWdodCBQb2ludCBGIChhcHByb3ggcm90YXRpb24pIC0tPg0KICA8cG9seWdvbiBwb2ludHM9IjIzNCwyMjIgMjI2LDIyNSAyMjQsMjE3IDIzMSwyMTQiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIC8+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE0NSIgeT0iMTAwIiBjbGFzcz0idGV4dC1sYWJlbCI+QTwvdGV4dD4NCiAgPHRleHQgeD0iMzQwIiB5PSIzNjAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj5CPC90ZXh0Pg0KICA8dGV4dCB4PSIzMCIgeT0iMzYwIiBjbGFzcz0idGV4dC1sYWJlbCI+QzwvdGV4dD4NCiAgDQogIDx0ZXh0IHg9IjE2NSIgeT0iMzcwIiBjbGFzcz0idGV4dC1sYWJlbCI+RDwvdGV4dD4NCiAgPCEtLSBTd2FwcGVkIEUgYW5kIEYgLS0+DQogIDx0ZXh0IHg9IjI0MCIgeT0iMjI1IiBjbGFzcz0idGV4dC1sYWJlbCI+RjwvdGV4dD4gPCEtLSBXYXMgRSwgbm93IEYgKFJpZ2h0KSAtLT4NCiAgPHRleHQgeD0iNzUiIHk9IjIzNSIgY2xhc3M9InRleHQtbGFiZWwiPkU8L3RleHQ+IDwhLS0gV2FzIEYsIG5vdyBFIChMZWZ0KSAtLT4NCg0KICA8IS0tIERpbWVuc2lvbnMgb24gc2lkZXMgLS0+DQogIDwhLS0gQUYgPSB4IC0tPg0KICA8dGV4dCB4PSIxMTAiIHk9IjE3MCIgY2xhc3M9ImRpbS1sYWJlbCIgZm9udC1zdHlsZT0iaXRhbGljIj54PC90ZXh0Pg0KICA8IS0tIEFFID0geCAtLT4NCiAgPHRleHQgeD0iMjAwIiB5PSIxNzAiIGNsYXNzPSJkaW0tbGFiZWwiIGZvbnQtc3R5bGU9Iml0YWxpYyI+eDwvdGV4dD4NCiAgPCEtLSBDRiA9IDYgY20gLS0+DQogIDx0ZXh0IHg9IjUwIiB5PSIyODAiIGNsYXNzPSJkaW0tbGFiZWwiPjYgY208L3RleHQ+DQogIDwhLS0gQkUgPSA4IGNtIC0tPg0KICA8dGV4dCB4PSIyOTAiIHk9IjI4MCIgY2xhc3M9ImRpbS1sYWJlbCI+OCBjbTwvdGV4dD4NCg0KICA8IS0tIEJvdHRvbSBEaW1lbnNpb25zIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIzODAiIHgyPSIxNjUiIHkyPSIzODAiIHN0cm9rZT0iIzAwQUNDMSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3ctc3RhcnQpIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93LWVuZCkiIC8+DQogIDx0ZXh0IHg9IjkwIiB5PSI0MDAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj42IGNtPC90ZXh0Pg0KICANCiAgPGxpbmUgeDE9IjE3NSIgeTE9IjM4MCIgeDI9IjMzMCIgeTI9IjM4MCIgc3Ryb2tlPSIjMDBBQ0MxIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1zdGFydD0idXJsKCNhcnJvdy1zdGFydCkiIG1hcmtlci1lbmQ9InVybCgjYXJyb3ctZW5kKSIgLz4NCiAgPHRleHQgeD0iMjQwIiB5PSI0MDAiIGNsYXNzPSJ0ZXh0LWxhYmVsIj44PC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Triangle Sides Calculation">
+        <div class="solution-header">Solution:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> \(\triangle ABC\) circumscribing a circle.
+            Radius \(r = 4\) cm. \(BD = 8\) cm, \(CD = 6\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">To Find:</strong> Lengths of sides AB and AC.</div>
+        <div class="step"><strong style="color: #1565C0;">Solution:</strong></div>
+        <div class="step">Let tangent points be D, E, F on sides BC, AC, AB.</div>
+        <div class="step">We have \(BD = 8\) cm and \(CD = 6\) cm.</div>
+        <div class="step">Tangents from external point are equal (<strong style="color: #D32F2F;">Theorem
+                10.2</strong>).</div>
+        <div class="step">\(BF = BD = 8\) cm and \(CE = CD = 6\) cm.</div>
+        <div class="step">Let \(AF = AE = x\) cm.</div>
+        <div class="step">Sides of triangle: \(a = 14\), \(b = x+6\), \(c = x+8\).</div>
+        <div class="step">Semiperimeter \(s = \frac{14 + x+6 + x+8}{2} = x + 14\).</div>
+        <div class="step">Area of \(\triangle ABC = \sqrt{s(s-a)(s-b)(s-c)}\) (Heron's Formula).</div>
+        <div class="step">Area \(= \sqrt{(x+14)(x)(8)(6)} = \sqrt{48x(x+14)}\).</div>
+        <div class="step">Also, Area \(= \frac{1}{2}r(Perimeter) = \frac{1}{2}(4)(2x+28) = 2(2x+28) = 4(x+14)\).</div>
+        <div class="step">Equating both areas: \(\sqrt{48x(x+14)} = 4(x+14)\).</div>
+        <div class="step">Squaring both sides: \(48x(x+14) = 16(x+14)^2\).</div>
+        <div class="step">Divide by \(16(x+14)\): \(3x = x + 14\).</div>
+        <div class="step">\(2x = 14 \Rightarrow x = 7\).</div>
+        <div class="step">Side \(AB = x + 8 = 7 + 8 = 15\) cm.</div>
+        <div class="step">Side \(AC = x + 6 = 7 + 6 = 13\) cm.</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, AB = 15 cm and AC = 13 cm.
+        </div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">13. Prove that opposite sides of a quadrilateral circumscribing a circle subtend
+            supplementary angles at the centre of the circle.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTUwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7Ij4NCiAgPCEtLSBTdHlsZXMgLS0+DQogIDxkZWZzPg0KICAgIDxzdHlsZT4NCiAgICAgIC52ZXJ0ZXgtdGV4dCB7IGZvbnQtZmFtaWx5OiBzZXJpZjsgZm9udC1zaXplOiAxOHB4OyBmb250LXdlaWdodDogYm9sZDsgZmlsbDogIzE5NzZEMjsgfQ0KICAgICAgLmNvbnRhY3QtdGV4dCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyBmb250LXNpemU6IDE0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjRDMyRjJGOyB9DQogICAgICAuYW5nbGUtdGV4dCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgICAgLmNlbnRlci10ZXh0IHsgZm9udC1mYW1pbHk6IHNlcmlmOyBmb250LXNpemU6IDE2cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiBibGFjazsgfQ0KICAgIDwvc3R5bGU+DQogIDwvZGVmcz4NCg0KICA8IS0tIENlbnRlciBPIC0tPg0KICA8Y2lyY2xlIGN4PSIyNTAiIGN5PSIyMjUiIHI9IjMiIGZpbGw9IiMzMzMiIC8+DQogIDx0ZXh0IHg9IjI2MCIgeT0iMjMwIiBjbGFzcz0iY2VudGVyLXRleHQiPk88L3RleHQ+DQoNCiAgPCEtLSBDaXJjbGUgKFJhZGl1cyA4MCkgLS0+DQogIDxjaXJjbGUgY3g9IjI1MCIgY3k9IjIyNSIgcj0iODAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiAvPg0KDQogIDwhLS0gUXVhZHJpbGF0ZXJhbCBBQkNEIChCbHVlKSAtLT4NCiAgPCEtLSBDYWxjdWxhdGVkIFRhbmdlbnQgSW50ZXJzZWN0aW9uIFBvaW50cyAtLT4NCiAgPCEtLSBBKDE3MCwgMTU4KSwgQigzNDksIDEyNiksIEMoMzE3LCAzMDUpLCBEKDE3MCwgMzA1KSAtLT4NCiAgPHBvbHlnb24gcG9pbnRzPSIxNzAsMTU4IDM0OSwxMjYgMzE3LDMwNSAxNzAsMzA1IiBzdHJva2U9IiMxOTc2RDIiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiAvPg0KDQogIDwhLS0gUmFkaWkgdG8gY29udGFjdCBwb2ludHMgKEdyZWVuIFNvbGlkKSAtLT4NCiAgPCEtLSBQKDIzNiwgMTQ2KSBvbiBBQiAtLT4NCiAgPCEtLSBRKDMyOSwgMjM5KSBvbiBCQyAtLT4NCiAgPCEtLSBSKDI1MCwgMzA1KSBvbiBDRCAtLT4NCiAgPCEtLSBTKDE3MCwgMjI1KSBvbiBEQSAtLT4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjIzNiIgeTI9IjE0NiIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIzMjkiIHkyPSIyMzkiIHN0cm9rZT0iIzJFN0QzMiIgc3Ryb2tlLXdpZHRoPSIyIiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjI1IiB4Mj0iMjUwIiB5Mj0iMzA1IiBzdHJva2U9IiMyRTdEMzIiIHN0cm9rZS13aWR0aD0iMiIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjE3MCIgeTI9IjIyNSIgc3Ryb2tlPSIjMkU3RDMyIiBzdHJva2Utd2lkdGg9IjIiIC8+DQoNCiAgPCEtLSBMaW5lcyB0byBWZXJ0aWNlcyAoUHVycGxlIERhc2hlZCkgLS0+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIxNzAiIHkyPSIxNTgiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCiAgPGxpbmUgeDE9IjI1MCIgeTE9IjIyNSIgeDI9IjM0OSIgeTI9IjEyNiIgc3Ryb2tlPSIjN0IxRkEyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1IiAvPg0KICA8bGluZSB4MT0iMjUwIiB5MT0iMjI1IiB4Mj0iMzE3IiB5Mj0iMzA1IiBzdHJva2U9IiM3QjFGQTIiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtZGFzaGFycmF5PSI1LDUiIC8+DQogIDxsaW5lIHgxPSIyNTAiIHkxPSIyMjUiIHgyPSIxNzAiIHkyPSIzMDUiIHN0cm9rZT0iIzdCMUZBMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgLz4NCg0KICA8IS0tIFJpZ2h0IEFuZ2xlIE1hcmtlcnMgKEdyYXkpIC0tPg0KICA8IS0tIFAgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIzNiwxNDYgMjQwLDE1NSAyNDgsMTUzIiBmaWxsPSJub25lIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMSIgLz4NCiAgPCEtLSBRIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSIzMjksMjM5IDMyMCwyNDAgMzIyLDIzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNzc3IiBzdHJva2Utd2lkdGg9IjEiIC8+DQogIDwhLS0gUiAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjUwLDMwNSAyNjAsMzA1IDI2MCwyOTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzc3NyIgc3Ryb2tlLXdpZHRoPSIxIiAvPg0KICA8IS0tIFMgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjE3MCwyMjUgMTgwLDIyNSAxODAsMjM1IiBmaWxsPSJub25lIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMSIgLz4NCg0KICA8IS0tIEFuZ2xlIE51bWJlcnMgMS04IC0tPg0KICA8IS0tIDE6IEFPUCAoVG9wIExlZnQpIC0tPiA8dGV4dCB4PSIyMTUiIHk9IjE5NSIgY2xhc3M9ImFuZ2xlLXRleHQiPjE8L3RleHQ+DQogIDwhLS0gMjogUE9CIChUb3AgUmlnaHQpIC0tPiA8dGV4dCB4PSIyNTUiIHk9IjE5MCIgY2xhc3M9ImFuZ2xlLXRleHQiPjI8L3RleHQ+DQogIDwhLS0gMzogQk9RIChNaWQgUmlnaHQgVXBwZXIpIC0tPiA8dGV4dCB4PSIyNzUiIHk9IjIxNSIgY2xhc3M9ImFuZ2xlLXRleHQiPjM8L3RleHQ+DQogIDwhLS0gNDogUU9DIChNaWQgUmlnaHQgTG93ZXIpIC0tPiA8dGV4dCB4PSIyNzUiIHk9IjI1MCIgY2xhc3M9ImFuZ2xlLXRleHQiPjQ8L3RleHQ+DQogIDwhLS0gNTogQ09SIChCb3R0b20gUmlnaHQpIC0tPiA8dGV4dCB4PSIyNjAiIHk9IjI3NSIgY2xhc3M9ImFuZ2xlLXRleHQiPjU8L3RleHQ+DQogIDwhLS0gNjogUk9EIChCb3R0b20gTGVmdCkgLS0+IDx0ZXh0IHg9IjIyNSIgeT0iMjc1IiBjbGFzcz0iYW5nbGUtdGV4dCI+NjwvdGV4dD4NCiAgPCEtLSA3OiBET1MgKE1pZCBMZWZ0IExvd2VyKSAtLT4gPHRleHQgeD0iMjEwIiB5PSIyNTAiIGNsYXNzPSJhbmdsZS10ZXh0Ij43PC90ZXh0Pg0KICA8IS0tIDg6IFNPQSAoTWlkIExlZnQgVXBwZXIpIC0tPiA8dGV4dCB4PSIyMTAiIHk9IjIxNSIgY2xhc3M9ImFuZ2xlLXRleHQiPjg8L3RleHQ+DQoNCiAgPCEtLSBMYWJlbHMgLS0+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBjbGFzcz0idmVydGV4LXRleHQiPkE8L3RleHQ+DQogIDx0ZXh0IHg9IjM2MCIgeT0iMTIwIiBjbGFzcz0idmVydGV4LXRleHQiPkI8L3RleHQ+DQogIDx0ZXh0IHg9IjMyNSIgeT0iMzI1IiBjbGFzcz0idmVydGV4LXRleHQiPkM8L3RleHQ+DQogIDx0ZXh0IHg9IjE1MCIgeT0iMzI1IiBjbGFzcz0idmVydGV4LXRleHQiPkQ8L3RleHQ+DQoNCiAgPHRleHQgeD0iMjMwIiB5PSIxMzUiIGNsYXNzPSJjb250YWN0LXRleHQiPlA8L3RleHQ+DQogIDx0ZXh0IHg9IjM0MCIgeT0iMjQwIiBjbGFzcz0iY29udGFjdC10ZXh0Ij5RPC90ZXh0Pg0KICA8dGV4dCB4PSIyNDUiIHk9IjMyNSIgY2xhc3M9ImNvbnRhY3QtdGV4dCI+UjwvdGV4dD4NCiAgPHRleHQgeD0iMTUwIiB5PSIyMzAiIGNsYXNzPSJjb250YWN0LXRleHQiPlM8L3RleHQ+DQoNCjwvc3ZnPg==" alt="Opposite Quad Sides Proof">
+        <div class="solution-header">Proof:</div>
+        <div class="step"><strong style="color: #1565C0;">Given:</strong> Quadrilateral ABCD circumscribing a circle
+            with center O.</div>
+        <div class="step"><strong style="color: #1565C0;">To Prove:</strong> Opposite sides subtend supplementary angles
+            at center (\(\angle AOB + \angle COD = 180^\circ\)).</div>
+        <div class="step"><strong style="color: #1565C0;">Construction:</strong> Join the center O to points of contact
+            P, Q, R, S.</div>
+        <div class="step"><strong style="color: #1565C0;">Proof:</strong></div>
+        <div class="step">Consider \(\triangle AOP\) and \(\triangle AOS\).</div>
+        <div class="step">\(AP = AS\) (Tangents from A).</div>
+        <div class="step">\(OP = OS\) (Radii).</div>
+        <div class="step">\(OA = OA\) (Common).</div>
+        <div class="step">By SSS Congruence Rule: \(\triangle AOP \cong \triangle AOS\).</div>
+        <div class="step">Therefore, \(\angle 1 = \angle 8\) (By CPCT).</div>
+        <div class="step">Similarly, \(\angle 2 = \angle 3\), \(\angle 4 = \angle 5\), \(\angle 6 = \angle 7\).</div>
+        <div class="step">Sum of all angles at center O is \(360^\circ\).</div>
+        <div class="step">\(\angle 1 + \angle 2 + \angle 3 + \angle 4 +5 + \angle 6 + \angle 7 + \angle 8 = 360^\circ\).
+        </div>
+        <div class="step">Grouping equal angles: \(2(\angle 1 + \angle 2) + 2(\angle 5 + \angle 6) = 360^\circ\).</div>
+        <div class="step">\(\angle 1 + \angle 2 + \angle 5 + \angle 6 = 180^\circ\).</div>
+        <div class="step">From figure, \(\angle AOB = \angle 1 + \angle 2\) and \(\angle COD = \angle 5 + \angle 6\).
+        </div>
+        <div class="step">Therefore, \(\angle AOB + \angle COD = 180^\circ\).</div>
+        <div class="step"><strong style="color: #1565C0;">Final Conclusion:</strong> Hence, opposite sides subtend
+            supplementary angles at the center.</div>
+    </div>
+
+</body>
+
+</html>

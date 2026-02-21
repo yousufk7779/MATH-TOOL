@@ -1,4 +1,14 @@
-import { Question } from "./chapterContent";
+
+export interface Question {
+    id: string;
+    number: string;
+    question: string;
+    solution?: string[];
+    answer?: string;
+    options?: string[];
+    correctAnswer?: string;
+    image?: string;
+}
 
 export interface PYQSet {
     year: string; // "2023", "2022 TS", "2021 AP"
@@ -21,7 +31,6 @@ export const getAllPYQYears = (): string[] => {
     Object.values(chapterPYQs).forEach(chapter => {
         chapter.sets.forEach(set => years.add(set.year));
     });
-    // Sort descending (2023, 2022...)
     return Array.from(years).sort().reverse();
 };
 

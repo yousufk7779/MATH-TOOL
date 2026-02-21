@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles - Theorems</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .theorem-title {
+            color: #D32F2F;
+            font-weight: 700;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+            clear: none;
+        }
+
+        .sub-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            /* text-decoration: underline; Removed */
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .reason {
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            padding-top: 5px;
+            border-top: 1px dashed #ddd;
+            display: block;
+            clear: none;
+        }
+
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="theorem-title">Theorem 6.1: Basic Proportionality Theorem (BPT)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDI7IGZpbGw6IG5vbmU7IHN0cm9rZS1kYXNoYXJyYXk6IDYsNDsgfQ0KICAgICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAiVGltZXMgTmV3IFJvbWFuIiwgc2VyaWY7IGZvbnQtc2l6ZTogMjBweDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZpbGw6ICMwMDA7IH0NCiAgICAgICAgLmFuZ2xlLW1hcmsgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMS41OyBmaWxsOiBub25lOyB9DQogICAgPC9zdHlsZT4NCg0KICAgIDwhLS0gQ29vcmRpbmF0ZXM6IEEoMjUwLCA1MCksIEIoMTAwLCAzMDApLCBDKDQwMCwgMzAwKSAtLT4NCiAgICA8IS0tIEQoMTkwLCAxNTApLCBFKDMxMCwgMTUwKSAtLT4NCiAgICA8IS0tIE4oMjIyLCA5NyksIE0oMjc4LCA5NykgLS0+DQoNCiAgICA8IS0tIE1haW4gVHJpYW5nbGUgQUJDIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjUwLDUwIEwgMTAwLDMwMCBMIDQwMCwzMDAgWiIgY2xhc3M9Im1haW4tbGluZSIgLz4NCg0KICAgIDwhLS0gTGluZSBERSAtLT4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KDQogICAgPCEtLSBEYXNoZWQgTGluZXM6IEJFIGFuZCBDRCAtLT4NCiAgICA8bGluZSB4MT0iMTAwIiB5MT0iMzAwIiB4Mj0iMzEwIiB5Mj0iMTUwIiBjbGFzcz0iZGFzaGVkLWxpbmUiIC8+DQogICAgPGxpbmUgeDE9IjQwMCIgeTE9IjMwMCIgeDI9IjE5MCIgeTI9IjE1MCIgY2xhc3M9ImRhc2hlZC1saW5lIiAvPg0KDQogICAgPCEtLSBQZXJwZW5kaWN1bGFyczogRU4gKEUgdG8gQUIpIGFuZCBETSAoRCB0byBBQykgLS0+DQogICAgPCEtLSBOIGlzIG9uIEFCLiBNIGlzIG9uIEFDLiAtLT4NCiAgICA8bGluZSB4MT0iMzEwIiB5MT0iMTUwIiB4Mj0iMjIyIiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTUwIiB4Mj0iMjc4IiB5Mj0iOTciIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCg0KICAgIDwhLS0gUmlnaHQgQW5nbGUgTWFya2VycyAtLT4NCiAgICA8IS0tIEF0IE4oMjIyLCA5Nykgb24gQUIuIEFCIHNsb3BlIGlzIC01LzMuIE5vcm1hbCBzbG9wZSBpcyAzLzUuIC0tPg0KICAgIDwhLS0gVmVjdG9yIGFsb25nIEFCIGFwcHJveCAoLTMsIDUpLiBWZWN0b3IgYWxvbmcgTkUgYXBwcm94ICgtMSwgLTAuNikgLS0+DQogICAgPCEtLSBKdXN0IGRyYXcgc21hbGwgc3F1YXJlcyByb3RhdGVkIGFwcHJvcHJpYXRlbHkgLS0+DQogICAgPCEtLSBOIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjIyLDk3IEwgMjI3LDEwNSBMIDIzNSwxMDAiIGNsYXNzPSJhbmdsZS1tYXJrIiBmaWxsPSJub25lIi8+IA0KICAgIDwhLS0gU2ltcGxpZmllZCByaWdodCBhbmdsZSBtYXJrIG9yIHJvdGF0ZSBhIHJlY3QgLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoLTU5IDIyMiA5NykiPg0KICAgICAgICA8cmVjdCB4PSIyMjIiIHk9Ijk3IiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KICAgIDwvZz4NCiAgICANCiAgICA8IS0tIE0gLS0+DQogICAgPGcgdHJhbnNmb3JtPSJyb3RhdGUoNTkgMjc4IDk3KSI+DQogICAgICAgIDxyZWN0IHg9IjI2OCIgeT0iOTciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjUiIC8+DQogICAgPC9nPg0KICAgIDwhLS0gVGhlIHJvdGF0aW9uIG1pZ2h0IG5lZWQgZmluZSB0dW5pbmcsIGJ1dCA1OSBkZWcgaXMgYXBwcm94IHNsb3BlIGFuZ2xlICh0YW4gNS8zID0gNTkgZGVnKSAtLT4NCiAgICA8IS0tIEZvciBNIChvbiBBQyksIHNsb3BlIGlzIDUvMy4gQW5nbGUgaXMgNTkgZGVnLiBUaGUgcmVjdCBzaG91bGQgYWxpZ24gd2l0aCBsaW5lIEFDLg0KICAgICAgICAgUmVjdCBhdCAoMjc4LDk3KS4gVGhlIGxpbmUgZ29lcyAnZG93bi1yaWdodCcuIFNvIHdlIHdhbnQgdGhlIHJlY3QgJ2luc2lkZScgdG93YXJkcyBEPw0KICAgICAgICAgRCBpcyB0byB0aGUgbGVmdC4NCiAgICAgICAgIExldCdzIGp1c3QgdXNlIG1hbnVhbCBwYXRoIGZvciBiZXR0ZXIgY29udHJvbCBpZiB1bnN1cmUgb2Ygcm90YXRpb24gb3JpZ2luLiAtLT4NCiAgICAgICAgIA0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9IjI1MCIgeT0iNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjkwIiB5PSIzMTAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjQxMCIgeT0iMzEwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5DPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE4MCIgeT0iMTUwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+RDwvdGV4dD4NCiAgICA8dGV4dCB4PSIzMjAiIHk9IjE1MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+RTwvdGV4dD4NCiAgICA8dGV4dCB4PSIyMTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+TjwvdGV4dD4NCiAgICA8dGV4dCB4PSIyOTAiIHk9Ijk1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5NPC90ZXh0Pg0KDQo8L3N2Zz4=" alt="BPT Figure">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If a line is drawn parallel to one side of a triangle to intersect the other two sides in
+            distinct points, the other two sides are divided in the same ratio.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">A triangle ABC in which a line parallel to side BC intersects other two sides AB and AC at D
+            and E respectively.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+
+        <div class="sub-header">Construction:</div>
+        <div class="step">Join BE and CD and draw DM ⊥ AC and EN ⊥ AB.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Area of triangle = \(\frac{1}{2}\) × base × height</div>
+        <div class="step">Area(ADE) = \(\frac{1}{2}\) × AD × EN</div>
+        <div class="step">Area(BDE) = \(\frac{1}{2}\) × DB × EN</div>
+        <div class="step">So, \(\frac{ar(ADE)}{ar(BDE)}\) = \(\frac{1}{2}\) AD ×
+                    EN</span><span class="denominator">\(\frac{1}{2}\) DB × EN</span></span> = \(\frac{AD}{DB}\) <span
+                class="reason">...(1)</span></div>
+        <div class="step">Similarly, Area(ADE) = \(\frac{1}{2}\) × AE × DM and Area(DEC) = \(\frac{1}{2}\) × EC × DM</div>
+        <div class="step">So, \(\frac{ar(ADE)}{ar(DEC)}\) = \(\frac{1}{2}\) AE ×
+                    DM</span><span class="denominator">\(\frac{1}{2}\) EC × DM</span></span> = \(\frac{AE}{EC}\) <span
+                class="reason">...(2)</span></div>
+        <div class="step">But, ∆BDE and ∆DEC are on the same base DE and between the same parallels BC and DE.</div>
+        <div class="step">Therefore, ar(BDE) = ar(DEC)</div>
+        <div class="step">From (1) and (2), we get:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE}{EC}\)</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="theorem-title">Theorem 6.2: Converse of BPT</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogOCw1OyBzdHJva2UtbGluZWNhcDogcm91bmQ7IH0NCiAgICAgICAgLnRleHQgeyBmb250LWZhbWlseTogIlRpbWVzIE5ldyBSb21hbiIsIHNlcmlmOyBmb250LXNpemU6IDI0cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgPC9zdHlsZT4NCg0KICAgIDwhLS0gQ29vcmRpbmF0ZXM6IEEoMjUwLCA1MCksIEIoMTAwLCAzMDApLCBDKDQwMCwgMzAwKSAtLT4NCiAgICA8IS0tIEQoMTcyLCAxODApLCBFKDMyOCwgMTgwKSAtIEhvcml6b250YWwgbGluZSBELUUgLS0+DQogICAgPCEtLSBFJygzMDQsIDE0MCkgLSBQb2ludCBoaWdoZXIgdXAgb24gQUMgLS0+DQogICAgDQogICAgPCEtLSBUcmlhbmdsZSBBQkMgLS0+DQogICAgPHBhdGggZD0iTSAyNTAsNTAgTCAxMDAsMzAwIEwgNDAwLDMwMCBaIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KDQogICAgPCEtLSBMaW5lIERFIChTb2xpZCkgLS0+DQogICAgPGxpbmUgeDE9IjE3MiIgeTE9IjE4MCIgeDI9IjMyOCIgeTI9IjE4MCIgY2xhc3M9Im1haW4tbGluZSIgLz4NCg0KICAgIDwhLS0gTGluZSBERScgKERhc2hlZCkgLS0+DQogICAgPGxpbmUgeDE9IjE3MiIgeTE9IjE4MCIgeDI9IjMwNCIgeTI9IjE0MCIgY2xhc3M9ImRhc2hlZC1saW5lIiAvPg0KDQogICAgPCEtLSBMYWJlbHMgLS0+DQogICAgPHRleHQgeD0iMjUwIiB5PSI0MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+DQogICAgPHRleHQgeD0iOTAiIHk9IjMxNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkI8L3RleHQ+DQogICAgPHRleHQgeD0iNDEwIiB5PSIzMTUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkM8L3RleHQ+DQogICAgPHRleHQgeD0iMTYwIiB5PSIxODUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5EPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjMzOCIgeT0iMTg1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5FPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjMxNSIgeT0iMTQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5FJzwvdGV4dD4NCg0KPC9zdmc+DQo=" alt="Converse BPT Figure">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If a line divides any two sides of a triangle in the same ratio, then the line is parallel to
+            the third side.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">A triangle ABC and a line DE intersecting AB at D and AC at E such that \(\frac{AD}{DB}\) = \(\frac{AE}{EC}\).</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">DE || BC.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Let us assume that DE is not parallel to BC.</div>
+        <div class="step">Then, draw a line DE' parallel to BC.</div>
+        <div class="step">By BPT, since DE' || BC:</div>
+        <div class="step">\(\frac{AD}{DB}\) = \(\frac{AE'}{E'C}\) <span
+                class="reason">...(1)</span></div>
+        <div class="step">But given: \(\frac{AD}{DB}\) = \(\frac{AE}{EC}\) <span class="reason">...(2)</span></div>
+        <div class="step">From (1) and (2):</div>
+        <div class="step">\(\frac{AE'}{E'C}\) = \(\frac{AE}{EC}\)</div>
+        <div class="step">Adding 1 to both sides:</div>
+        <div class="step">\(\frac{AE'}{E'C}\) + 1 = \(\frac{AE}{EC}\) + 1</div>
+        <div class="step">\(\frac{AE' + E'C}{E'C}\) = \(\frac{AE +
+                    EC}{EC}\)</div>
+        <div class="step">\(\frac{AC}{E'C}\) = \(\frac{AC}{EC}\)</div>
+        <div class="step">This implies E'C = EC.</div>
+        <div class="step">This is only possible if E and E' coincide.</div>
+        <div class="step">So, DE coincides with DE'.</div>
+        <div class="step">Therefore, DE || BC.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="theorem-title">Theorem 6.3: AAA Similarity Criterion</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogNiw0OyBzdHJva2UtbGluZWNhcDogcm91bmQ7IH0NCiAgICAgICAgLnRleHQgeyBmb250LWZhbWlseTogIlRpbWVzIE5ldyBSb21hbiIsIHNlcmlmOyBmb250LXNpemU6IDIwcHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5kb3QgeyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5hbmdsZS1hcmMgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMS41OyBmaWxsOiBub25lOyB9DQogICAgPC9zdHlsZT4NCg0KICAgIDwhLS0gVHJpYW5nbGUgQUJDIChTbWFsbGVyKSAtLT4NCiAgICA8IS0tIEEoMTAwLCA1MCksIEIoNjAsIDE4MCksIEMoMTQwLCAxODApIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMTAwLDUwIEwgNjAsMTgwIEwgMTQwLDE4MCBaIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KICAgIA0KICAgIDwhLS0gVHJpYW5nbGUgREVGIChMYXJnZXIpIC0tPg0KICAgIDwhLS0gRCgzNTAsIDIwKSwgRSgyNTAsIDIyMCksIEYoNDUwLCAyMjApIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMzUwLDIwIEwgMjUwLDIyMCBMIDQ1MCwyMjAgWiIgY2xhc3M9Im1haW4tbGluZSIgLz4NCg0KICAgIDwhLS0gUG9pbnRzIFAgYW5kIFEgb24gREUgYW5kIERGIC0tPg0KICAgIDwhLS0gTGluZSBQUSAoRGFzaGVkKSAtLT4NCiAgICA8bGluZSB4MT0iMzAwIiB5MT0iMTIwIiB4Mj0iNDAwIiB5Mj0iMTIwIiBjbGFzcz0iZGFzaGVkLWxpbmUiIC8+DQogICAgDQogICAgPCEtLSBEb3RzIGF0IFAgYW5kIFEgLS0+DQogICAgPGNpcmNsZSBjeD0iMzAwIiBjeT0iMTIwIiByPSI1IiBjbGFzcz0iZG90IiAvPg0KICAgIDxjaXJjbGUgY3g9IjQwMCIgY3k9IjEyMCIgcj0iNSIgY2xhc3M9ImRvdCIgLz4NCg0KICAgIDwhLS0gQW5nbGUgQXJjcyAtLT4NCiAgICA8IS0tIEFuZ2xlIEIgaW4gQUJDOiBWZXJ0ZXggQig2MCwgMTgwKS4gTGVncyB0byBBKDEwMCwgNTApIGFuZCBDKDE0MCwgMTgwKS4gLS0+DQogICAgPCEtLSBWZWN0b3IgQkE6ICg0MCwgLTEzMCkuIFZlY3RvciBCQzogKDgwLCAwKS4gLS0+DQogICAgPCEtLSBBcmMgc3RhcnQgb24gQkM6ICg3NSwgMTgwKS4gRW5kIG9uIEJBLiAtLT4NCiAgICA8cGF0aCBkPSJNIDc1LDE4MCBBIDE1LDE1IDAgMCwwIDY2LDE2OCIgY2xhc3M9ImFuZ2xlLWFyYyIgZmlsbD0ibm9uZSIvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgRSBpbiBERUY6IFZlcnRleCBFKDI1MCwgMjIwKS4gTGVncyB0byBEKDM1MCwgMjApIGFuZCBGKDQ1MCwgMjIwKS4gLS0+DQogICAgPCEtLSBWZWN0b3IgRUQ6ICgxMDAsIC0yMDApLiBWZWN0b3IgRUY6ICgyMDAsIDApLiAtLT4NCiAgICA8IS0tIEFyYyBzdGFydCBvbiBFRjogKDI3MCwgMjIwKS4gRW5kIG9uIEVELiAtLT4NCiAgICA8cGF0aCBkPSJNIDI3MCwyMjAgQSAyMCwyMCAwIDAsMCAyNTgsMjA0IiBjbGFzcz0iYW5nbGUtYXJjIiBmaWxsPSJub25lIi8+DQogICAgDQogICAgPCEtLSBBbmdsZSBQIGluIERQUTogVmVydGV4IFAoMzAwLCAxMjApLiBMZWdzIHRvIEQoMzUwLCAyMCkgYW5kIFEoNDAwLCAxMjApLiAtLT4NCiAgICA8IS0tIFZlY3RvciBQRDogKDUwLCAtMTAwKS4gVmVjdG9yIFBROiAoMTAwLCAwKS4gLS0+DQogICAgPCEtLSBBcmMgc3RhcnQgb24gUFE6ICgzMTUsIDEyMCkgLS0+DQogICAgPHBhdGggZD0iTSAzMTUsMTIwIEEgMTUsMTUgMCAwLDAgMzA3LDEwOCIgY2xhc3M9ImFuZ2xlLWFyYyIgZmlsbD0ibm9uZSIvPg0KDQogICAgPCEtLSBMYWJlbHMgLS0+DQogICAgPHRleHQgeD0iMTAwIiB5PSI0MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+DQogICAgPHRleHQgeD0iNTAiIHk9IjIwMCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkI8L3RleHQ+DQogICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkM8L3RleHQ+DQogICAgDQogICAgPHRleHQgeD0iMzUwIiB5PSIxNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+DQogICAgPHRleHQgeD0iMjQwIiB5PSIyNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5FPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjQ2MCIgeT0iMjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5GPC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjI5MCIgeT0iMTI1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+UDwvdGV4dD4NCiAgICA8dGV4dCB4PSI0MTAiIHk9IjEyNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+UTwvdGV4dD4NCg0KPC9zdmc+" alt="AAA Proof Figure">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If in two triangles, corresponding angles are equal, then their corresponding sides are in the
+            same ratio (or proportion) and hence the two triangles are similar.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Two triangles ABC and DEF such that ∠A = ∠D, ∠B = ∠E and ∠C = ∠F.</div>
+
+        <div class="sub-header">Construction:</div>
+        <div class="step">Cut DP = AB and DQ = AC and join PQ.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">In ∆ABC and ∆DPQ:</div>
+        <div class="step">AB = DP <span class="reason">(Construction)</span></div>
+        <div class="step">∠A = ∠D <span class="reason">(Given)</span></div>
+        <div class="step">AC = DQ <span class="reason">(Construction)</span></div>
+        <div class="step">So, ∆ABC ≅ ∆DPQ <span class="reason">(SAS Congruence rule)</span></div>
+        <div class="step">This gives ∠B = ∠P <span class="reason">(CPCT)</span></div>
+        <div class="step">But ∠B = ∠E <span class="reason">(Given)</span></div>
+        <div class="step">So, ∠P = ∠E.</div>
+        <div class="step">Since corresponding angles are equal, PQ || EF.</div>
+        <div class="step">By BPT: \(\frac{DP}{PE}\) = \(\frac{DQ}{QF}\)</div>
+        <div class="step">From this (by adding 1 to distinct ratios etc.), we get:</div>
+        <div class="step">\(\frac{DP}{DE}\) = \(\frac{DQ}{DF}\)</div>
+        <div class="step">Since DP = AB and DQ = AC:</div>
+        <div class="step">\(\frac{AB}{DE}\) = \(\frac{AC}{DF}\)</div>
+        <div class="step">Similarly, we can prove \(\frac{AB}{DE}\) = \(\frac{BC}{EF}\).</div>
+        <div class="step">Therefore, \(\frac{AB}{DE}\) = \(\frac{AC}{DF}\) = \(\frac{BC}{EF}\).</div>
+        <div class="step">Since ratio of sides is same, triangles are similar.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="theorem-title">Theorem 6.4: SSS Similarity Criterion</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogNiw0OyBzdHJva2UtbGluZWNhcDogcm91bmQ7IH0NCiAgICAgICAgLnRleHQgeyBmb250LWZhbWlseTogIlRpbWVzIE5ldyBSb21hbiIsIHNlcmlmOyBmb250LXNpemU6IDIwcHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5kb3QgeyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5hbmdsZS1hcmMgeyBzdHJva2U6ICM0NjgyQjQ7IHN0cm9rZS13aWR0aDogMjsgZmlsbDogbm9uZTsgfSAvKiBTdGVlbEJsdWUgY29sb3IgZGlzdGluY3QgZnJvbSBibGFjayBsaW5lcyAqLw0KICAgIDwvc3R5bGU+DQoNCiAgICA8IS0tIFRyaWFuZ2xlIEFCQyAoU21hbGxlcikgLS0+DQogICAgPCEtLSBBKDEwMCwgNTApLCBCKDYwLCAxODApLCBDKDE0MCwgMTgwKSAtLT4NCiAgICA8cGF0aCBkPSJNIDEwMCw1MCBMIDYwLDE4MCBMIDE0MCwxODAgWiIgY2xhc3M9Im1haW4tbGluZSIgLz4NCiAgICANCiAgICA8IS0tIFRyaWFuZ2xlIERFRiAoTGFyZ2VyKSAtLT4NCiAgICA8IS0tIEQoMzUwLCAyMCksIEUoMjUwLCAyMjApLCBGKDQ1MCwgMjIwKSAtLT4NCiAgICA8cGF0aCBkPSJNIDM1MCwyMCBMIDI1MCwyMjAgTCA0NTAsMjIwIFoiIGNsYXNzPSJtYWluLWxpbmUiIC8+DQoNCiAgICA8IS0tIFBvaW50cyBQIGFuZCBRIG9uIERFIGFuZCBERiAtLT4NCiAgICA8IS0tIExpbmUgUFEgKERhc2hlZCkgLS0+DQogICAgPGxpbmUgeDE9IjMwMCIgeTE9IjEyMCIgeDI9IjQwMCIgeTI9IjEyMCIgY2xhc3M9ImRhc2hlZC1saW5lIiAvPg0KICAgIA0KICAgIDwhLS0gRG90cyBhdCBQIGFuZCBRIC0tPg0KICAgIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjEyMCIgcj0iNSIgY2xhc3M9ImRvdCIgLz4NCiAgICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIxMjAiIHI9IjUiIGNsYXNzPSJkb3QiIC8+DQoNCiAgICA8IS0tIEFuZ2xlIEFyY3MgLS0+DQogICAgDQogICAgPCEtLSBBbmdsZSBCIGluIEFCQyAtLT4NCiAgICA8IS0tIFZlcnRleCBCKDYwLCAxODApLiBMZWdzIHRvIEEoMTAwLCA1MCkgYW5kIEMoMTQwLCAxODApLiAtLT4NCiAgICA8IS0tIFZlY3RvciBCQTogKDQwLCAtMTMwKS4gVmVjdG9yIEJDOiAoODAsIDApLiAtLT4NCiAgICA8IS0tIEFyYyBzdGFydCBvbiBCQzogKDc1LCAxODApLiBFbmQgb24gQkEuIC0tPg0KICAgIDxwYXRoIGQ9Ik0gNzUsMTgwIEEgMTUsMTUgMCAwLDAgNjYsMTY4IiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgQyBpbiBBQkMgLS0+DQogICAgPCEtLSBWZXJ0ZXggQygxNDAsIDE4MCkuIExlZ3MgdG8gQSgxMDAsIDUwKSBhbmQgQig2MCwgMTgwKS4gLS0+DQogICAgPCEtLSBWZWN0b3IgQ0E6ICgtNDAsIC0xMzApLiBWZWN0b3IgQ0I6ICgtODAsIDApLiAtLT4NCiAgICA8IS0tIEFyYyBzdGFydCBvbiBDQjogKDEyNSwgMTgwKS4gRW5kIG9uIENBLiAtLT4NCiAgICA8cGF0aCBkPSJNIDEyNSwxODAgQSAxNSwxNSAwIDAsMCAxMzQsMTY4IiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgUCBpbiBEUFEgLS0+DQogICAgPCEtLSBWZXJ0ZXggUCgzMDAsIDEyMCkuIExlZ3MgUEQsIFBRLiAtLT4NCiAgICA8cGF0aCBkPSJNIDMxNSwxMjAgQSAxNSwxNSAwIDAsMCAzMDcsMTA4IiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgUSBpbiBEUFEgLS0+DQogICAgPCEtLSBWZXJ0ZXggUSg0MDAsIDEyMCkuIExlZ3MgUUQsIFFQLiAtLT4NCiAgICA8cGF0aCBkPSJNIDM4NSwxMjAgQSAxNSwxNSAwIDAsMCAzOTMsMTA4IiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgRSBpbiBERUYgLS0+DQogICAgPCEtLSBWZXJ0ZXggRSgyNTAsIDIyMCkuIC0tPg0KICAgIDxwYXRoIGQ9Ik0gMjcwLDIyMCBBIDIwLDIwIDAgMCwwIDI1OCwyMDQiIGNsYXNzPSJhbmdsZS1hcmMiIC8+DQoNCiAgICA8IS0tIEFuZ2xlIEYgaW4gREVGIC0tPg0KICAgIDwhLS0gVmVydGV4IEYoNDUwLCAyMjApLiAtLT4NCiAgICA8cGF0aCBkPSJNIDQzMCwyMjAgQSAyMCwyMCAwIDAsMCA0NDIsMjA0IiBjbGFzcz0iYW5nbGUtYXJjIiAvPg0KDQogICAgPCEtLSBMYWJlbHMgLS0+DQogICAgPHRleHQgeD0iMTAwIiB5PSI0MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkE8L3RleHQ+DQogICAgPHRleHQgeD0iNTAiIHk9IjIwMCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPkI8L3RleHQ+DQogICAgPHRleHQgeD0iMTUwIiB5PSIyMDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkM8L3RleHQ+DQogICAgDQogICAgPHRleHQgeD0iMzUwIiB5PSIxNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkQ8L3RleHQ+DQogICAgPHRleHQgeD0iMjQwIiB5PSIyNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5FPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjQ2MCIgeT0iMjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5GPC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjI5MCIgeT0iMTI1IiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+UDwvdGV4dD4NCiAgICA8dGV4dCB4PSI0MTAiIHk9IjEyNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+UTwvdGV4dD4NCg0KPC9zdmc+" alt="SSS Proof Figure">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If in two triangles, sides of one triangle are proportional to (i.e., in the same ratio of )
+            the sides of the other triangle, then their corresponding angles are equal and hence the two triangles are
+            similar.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Two triangles ABC and DEF such that \(\frac{AB}{DE}\) = \(\frac{AC}{DF}\) = \(\frac{BC}{EF}\).</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">We cut DP = AB and DQ = AC. Join PQ.</div>
+        <div class="step">Then \(\frac{DP}{DE}\) = \(\frac{DQ}{DF}\)</div>
+        <div class="step">So PQ || EF <span class="reason">(Converse of BPT)</span></div>
+        <div class="step">So ∠P = ∠E and ∠Q = ∠F.</div>
+        <div class="step">Thus ∆DPQ ~ ∆DEF <span class="reason">(AAA)</span></div>
+        <div class="step">Therefore: \(\frac{DP}{DE}\) = \(\frac{PQ}{EF}\)</div>
+        <div class="step">But given \(\frac{AB}{DE}\) = \(\frac{BC}{EF}\)</div>
+        <div class="step">Since DP = AB, we get PQ = BC.</div>
+        <div class="step">So ∆ABC ≅ ∆DPQ <span class="reason">(SSS Congruence)</span></div>
+        <div class="step">So ∠A = ∠D, ∠B = ∠E, ∠C = ∠F.</div>
+        <div class="step">Thus, triangles are similar.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="theorem-title">Theorem 6.5: SAS Similarity Criterion</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8IS0tIFN0eWxlcyAtLT4NCiAgICA8c3R5bGU+DQogICAgICAgIC5tYWluLWxpbmUgeyBzdHJva2U6ICMwMDA7IHN0cm9rZS13aWR0aDogMi41OyBmaWxsOiBub25lOyBzdHJva2UtbGluZWNhcDogcm91bmQ7IHN0cm9rZS1saW5lam9pbjogcm91bmQ7IH0NCiAgICAgICAgLmRhc2hlZC1saW5lIHsgc3Ryb2tlOiAjMDAwOyBzdHJva2Utd2lkdGg6IDIuNTsgZmlsbDogbm9uZTsgc3Ryb2tlLWRhc2hhcnJheTogNiw0OyBzdHJva2UtbGluZWNhcDogcm91bmQ7IH0NCiAgICAgICAgLnRleHQgeyBmb250LWZhbWlseTogIlRpbWVzIE5ldyBSb21hbiIsIHNlcmlmOyBmb250LXNpemU6IDIwcHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5kb3QgeyBmaWxsOiAjMDAwOyB9DQogICAgICAgIC5hbmdsZS1hcmMgeyBzdHJva2U6ICM0NjgyQjQ7IHN0cm9rZS13aWR0aDogMjsgZmlsbDogbm9uZTsgfSAvKiBTdGVlbEJsdWUgKi8NCiAgICA8L3N0eWxlPg0KDQogICAgPCEtLSBUcmlhbmdsZSBBQkMgKFNtYWxsZXIpIC0tPg0KICAgIDwhLS0gQSgxMDAsIDUwKSwgQig2MCwgMTgwKSwgQygxNDAsIDE4MCkgLS0+DQogICAgPHBhdGggZD0iTSAxMDAsNTAgTCA2MCwxODAgTCAxNDAsMTgwIFoiIGNsYXNzPSJtYWluLWxpbmUiIC8+DQogICAgDQogICAgPCEtLSBUcmlhbmdsZSBERUYgKExhcmdlcikgLS0+DQogICAgPCEtLSBEKDM1MCwgMjApLCBFKDI1MCwgMjIwKSwgRig0NTAsIDIyMCkgLS0+DQogICAgPHBhdGggZD0iTSAzNTAsMjAgTCAyNTAsMjIwIEwgNDUwLDIyMCBaIiBjbGFzcz0ibWFpbi1saW5lIiAvPg0KDQogICAgPCEtLSBQb2ludHMgUCBhbmQgUSBvbiBERSBhbmQgREYgLS0+DQogICAgPCEtLSBMaW5lIFBRIChEYXNoZWQpIC0tPg0KICAgIDxsaW5lIHgxPSIzMDAiIHkxPSIxMjAiIHgyPSI0MDAiIHkyPSIxMjAiIGNsYXNzPSJkYXNoZWQtbGluZSIgLz4NCiAgICANCiAgICA8IS0tIERvdHMgYXQgUCBhbmQgUSAtLT4NCiAgICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxMjAiIHI9IjUiIGNsYXNzPSJkb3QiIC8+DQogICAgPGNpcmNsZSBjeD0iNDAwIiBjeT0iMTIwIiByPSI1IiBjbGFzcz0iZG90IiAvPg0KDQogICAgPCEtLSBBbmdsZSBBcmNzIC0tPg0KICAgIA0KICAgIDwhLS0gQW5nbGUgQSBpbiBBQkMgLS0+DQogICAgPCEtLSBWZXJ0ZXggQSgxMDAsIDUwKS4gTGVncyB0byBCKDYwLCAxODApIGFuZCBDKDE0MCwgMTgwKS4gLS0+DQogICAgPCEtLSBEcmF3IGEgc2ltcGxlIGFyYyBuZWFyIEEgLS0+DQogICAgPHBhdGggZD0iTSA5NCw3MCBBIDIwLDIwIDAgMCwwIDEwNiw3MCIgY2xhc3M9ImFuZ2xlLWFyYyIgLz4NCiAgICANCiAgICA8IS0tIEFuZ2xlIEQgaW4gREVGIC0tPg0KICAgIDwhLS0gVmVydGV4IEQoMzUwLCAyMCkuIExlZ3MgdG8gRSgyNTAsIDIyMCkgYW5kIEYoNDUwLCAyMjApLiAtLT4NCiAgICA8cGF0aCBkPSJNIDM0MCw0NSBBIDI1LDI1IDAgMCwwIDM2MCw0NSIgY2xhc3M9ImFuZ2xlLWFyYyIgLz4NCg0KICAgIDwhLS0gTGFiZWxzIC0tPg0KICAgIDx0ZXh0IHg9IjEwMCIgeT0iNDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjUwIiB5PSIyMDAiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0iZW5kIj5CPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjE1MCIgeT0iMjAwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9InN0YXJ0Ij5DPC90ZXh0Pg0KICAgIA0KICAgIDx0ZXh0IHg9IjM1MCIgeT0iMTUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EPC90ZXh0Pg0KICAgIDx0ZXh0IHg9IjI0MCIgeT0iMjQwIiBjbGFzcz0idGV4dCIgdGV4dC1hbmNob3I9ImVuZCI+RTwvdGV4dD4NCiAgICA8dGV4dCB4PSI0NjAiIHk9IjI0MCIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJzdGFydCI+RjwvdGV4dD4NCiAgICANCiAgICA8dGV4dCB4PSIyOTAiIHk9IjEyNSIgY2xhc3M9InRleHQiIHRleHQtYW5jaG9yPSJlbmQiPlA8L3RleHQ+DQogICAgPHRleHQgeD0iNDEwIiB5PSIxMjUiIGNsYXNzPSJ0ZXh0IiB0ZXh0LWFuY2hvcj0ic3RhcnQiPlE8L3RleHQ+DQoNCjwvc3ZnPg==" alt="SAS Proof Figure">
+        <div class="sub-header">Statement:</div>
+        <div class="step">If one angle of a triangle is equal to one angle of the other triangle and the sides including
+            these angles are proportional, then the two triangles are similar.</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Two triangles ABC and DEF such that \(\frac{AB}{DE}\) = \(\frac{AC}{DF}\) and ∠A = ∠D.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Cut DP = AB and DQ = AC. Join PQ.</div>
+        <div class="step">Then \(\frac{DP}{DE}\) = \(\frac{DQ}{DF}\) ⇒ PQ || EF.</div>
+        <div class="step">So ∠P = ∠E and ∠Q = ∠F.</div>
+        <div class="step">So ∆DPQ ~ ∆DEF.</div>
+        <div class="step">Also ∆ABC ≅ ∆DPQ <span class="reason">(SAS Congruence, as ∠A=∠D, AB=DP, AC=DQ).</span></div>
+        <div class="step">So ∆ABC ~ ∆DEF.</div>
+        <div class="final-answer">Hence Proved.</div>
+    </div>
+
+</body>
+
+</html>
