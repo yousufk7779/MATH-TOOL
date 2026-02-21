@@ -22,6 +22,11 @@ import { sciBio2 } from "./content/sci-bio-2";
 import { sciBio3 } from "./content/sci-bio-3";
 import { sciBio4 } from "./content/sci-bio-4";
 import { sciBio5 } from "./content/sci-bio-5";
+import { sstHis1 } from "./content/sst-his-1";
+import { sstHis2 } from "./content/sst-his-2";
+import { sstHis3 } from "./content/sst-his-3";
+import { sstHis4 } from "./content/sst-his-4";
+import { sstHis5 } from "./content/sst-his-5";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "sci-phy-1": sciPhy1,
@@ -37,6 +42,11 @@ export const chapterContents: Record<string, ChapterContent> = {
   "sci-bio-3": sciBio3,
   "sci-bio-4": sciBio4,
   "sci-bio-5": sciBio5,
+  "sst-his-1": sstHis1,
+  "sst-his-2": sstHis2,
+  "sst-his-3": sstHis3,
+  "sst-his-4": sstHis4,
+  "sst-his-5": sstHis5,
 };
 
 export const isChapterAvailable = (chapterId: string): boolean => {
