@@ -11,14 +11,32 @@ export interface ChapterContent { id: string; number: number; title: string; int
 
 import { sciPhy1 } from "./content/sci-phy-1";
 import { sciPhy2 } from "./content/sci-phy-2";
+import { sciPhy3 } from "./content/sci-phy-3";
+import { sciPhy4 } from "./content/sci-phy-4";
 import { sciChem1 } from "./content/sci-chem-1";
+import { sciChem2 } from "./content/sci-chem-2";
+import { sciChem3 } from "./content/sci-chem-3";
+import { sciChem4 } from "./content/sci-chem-4";
 import { sciBio1 } from "./content/sci-bio-1";
+import { sciBio2 } from "./content/sci-bio-2";
+import { sciBio3 } from "./content/sci-bio-3";
+import { sciBio4 } from "./content/sci-bio-4";
+import { sciBio5 } from "./content/sci-bio-5";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "sci-phy-1": sciPhy1,
   "sci-phy-2": sciPhy2,
+  "sci-phy-3": sciPhy3,
+  "sci-phy-4": sciPhy4,
   "sci-chem-1": sciChem1,
+  "sci-chem-2": sciChem2,
+  "sci-chem-3": sciChem3,
+  "sci-chem-4": sciChem4,
   "sci-bio-1": sciBio1,
+  "sci-bio-2": sciBio2,
+  "sci-bio-3": sciBio3,
+  "sci-bio-4": sciBio4,
+  "sci-bio-5": sciBio5,
 };
 
 export const isChapterAvailable = (chapterId: string): boolean => {
