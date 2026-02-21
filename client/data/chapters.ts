@@ -64,11 +64,18 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "sst-geo-7", number: 7, name: "Lifelines of National Economy", color: "#2196F3" },
     ],
     "Political Science": [
-      { id: "sst-pol-1", number: 1, name: "Power Sharing", color: "#9C27B0" },
-      { id: "sst-pol-2", number: 2, name: "Federalism", color: "#9C27B0" },
-      { id: "sst-pol-3", number: 3, name: "Gender, Religion and Caste", color: "#9C27B0" },
-      { id: "sst-pol-4", number: 4, name: "Political Parties", color: "#9C27B0" },
-      { id: "sst-pol-5", number: 5, name: "Outcomes of Democracy", color: "#9C27B0" },
+      { id: "sst-civ-1", number: 1, name: "Power Sharing", color: "#9C27B0" },
+      { id: "sst-civ-2", number: 2, name: "Federalism", color: "#9C27B0" },
+      { id: "sst-civ-3", number: 3, name: "Gender, Religion and Caste", color: "#9C27B0" },
+      { id: "sst-civ-4", number: 4, name: "Political Parties", color: "#9C27B0" },
+      { id: "sst-civ-5", number: 5, name: "Outcomes of Democracy", color: "#9C27B0" },
+    ],
+    "Economics": [
+      { id: "sst-eco-1", number: 1, name: "Development", color: "#4CAF50" },
+      { id: "sst-eco-2", number: 2, name: "Sectors of the Indian Economy", color: "#4CAF50" },
+      { id: "sst-eco-3", number: 3, name: "Money and Credit", color: "#4CAF50" },
+      { id: "sst-eco-4", number: 4, name: "Globalization and the Indian Economy", color: "#4CAF50" },
+      { id: "sst-eco-5", number: 5, name: "Consumer Rights", color: "#4CAF50" },
     ],
     "Disaster Management": [
       { id: "sst-dis-1", number: 1, name: "Protecting Ourselves from Disasters", color: "#FF9800" },
