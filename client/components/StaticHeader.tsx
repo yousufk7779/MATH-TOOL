@@ -3,6 +3,7 @@ import { StyleSheet, View, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { JiguuLogo } from "@/components/JiguuLogo";
+import { GlobalSearchBar } from "@/components/GlobalSearchBar";
 import { Spacing, JiguuColors } from "@/constants/theme";
 
 export const StaticHeader = memo(function StaticHeader() {
@@ -24,6 +25,9 @@ export const StaticHeader = memo(function StaticHeader() {
     ]}>
       <View style={styles.logoContainer}>
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
+      </View>
+      <View style={styles.searchContainer}>
+        <GlobalSearchBar />
       </View>
     </View>
   );
