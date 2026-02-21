@@ -137,16 +137,26 @@
             }
         }
     </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 6: Exercise 6.1</div>
-    </div>
-
-    <!-- Question 1 -->
+<!-- Question 1 -->
     <div class="content-box">
         <div class="question">1. Fill in the blanks using the correct word given in brackets:</div>
 
@@ -193,7 +203,7 @@
 
     <!-- Question 3 -->
     <div class="content-box">
-        <img src="ex6_1_q3.svg" alt="Rhombus and Square">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMjAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwb2x5Z29uIHBvaW50cz0iNjAsNjAgMTIwLDYwIDEwMCwxMjAgNDAsMTIwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cmVjdCB4PSIxODAiIHk9IjQwIiB3aWR0aD0iODAiIGhlaWdodD0iODAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjgwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MS41PC90ZXh0Pjx0ZXh0IHg9IjEzMCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEuNTwvdGV4dD48dGV4dCB4PSIyMjAiIHk9IjMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zPC90ZXh0Pjx0ZXh0IHg9IjI3MCIgeT0iODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjM8L3RleHQ+PHRleHQgeD0iODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UCBRIFIgUzwvdGV4dD48dGV4dCB4PSIyMjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QSBCIEMgRDwvdGV4dD48L3N2Zz4=" alt="Rhombus and Square">
         <div class="question">3. State whether the following quadrilaterals are similar or not:</div>
 
         <div class="sub-header">Given:</div>
@@ -205,22 +215,10 @@
 
         <div class="sub-header">Proof:</div>
         <div class="step">Comparing corresponding sides:</div>
-        <div class="step"><span class="fraction"><span class="numerator">PQ</span><span
-                    class="denominator">AB</span></span> = <span class="fraction"><span
-                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
-                    class="numerator">1</span><span class="denominator">2</span></span></div>
-        <div class="step"><span class="fraction"><span class="numerator">QR</span><span
-                    class="denominator">BC</span></span> = <span class="fraction"><span
-                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
-                    class="numerator">1</span><span class="denominator">2</span></span></div>
-        <div class="step"><span class="fraction"><span class="numerator">RS</span><span
-                    class="denominator">CD</span></span> = <span class="fraction"><span
-                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
-                    class="numerator">1</span><span class="denominator">2</span></span></div>
-        <div class="step"><span class="fraction"><span class="numerator">SP</span><span
-                    class="denominator">DA</span></span> = <span class="fraction"><span
-                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
-                    class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step">\(\frac{PQ}{AB}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{QR}{BC}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{RS}{CD}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
+        <div class="step">\(\frac{SP}{DA}\) = \(\frac{1.5}{3}\) = \(\frac{1}{2}\)</div>
         <div class="step">Sides are proportional.</div>
         <div class="step">Comparing corresponding angles:</div>
         <div class="step">Angles of ABCD are 90°.</div>

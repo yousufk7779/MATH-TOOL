@@ -42,28 +42,7 @@ function ChapterListScreen() {
     );
   }, [navigation]);
 
-  const renderHeader = useCallback(() => (
-    <View style={styles.header}>
-      <View style={styles.actionButtons}>
-        <View style={styles.actionButtonWrapper}>
-          <ColorButton
-            testID="button-bookmarks"
-            title="BOOKMARKS"
-            color={JiguuColors.accent1}
-            onPress={() => navigation.navigate("Bookmarks")}
-          />
-        </View>
-        <View style={styles.actionButtonWrapper}>
-          <ColorButton
-            testID="button-important"
-            title="IMPORTANT"
-            color="#FFAB00"
-            onPress={() => navigation.navigate("ImportantQuestions")}
-          />
-        </View>
-      </View>
-    </View>
-  ), [navigation]);
+
 
   const renderEmptyState = useCallback(() => (
     <EmptyState
@@ -84,7 +63,6 @@ function ChapterListScreen() {
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
-        ListHeaderComponent={renderHeader}
         ListEmptyComponent={renderEmptyState}
       />
     </ScreenWrapper>

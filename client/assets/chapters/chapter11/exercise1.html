@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas Related to Circles - Exercise 11.1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 2px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">1. Find the area of a sector of a circle with radius 6 cm if angle of the sector is 60°.
+        </div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRncmVlbiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTgwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYwwrA8L3RleHQ+PHRleHQgeD0iMjEwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjZjbTwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFyZWEgb2YgU2VjdG9yPzwvdGV4dD48L3N2Zz4=" alt="Sector Area Calculation">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 6 cm. Angle θ = 60°.</div>
+        <div class="step">Area of sector = (θ/360) × πr²</div>
+        <div class="step">= (\(\frac{60}{360}\)) × (\(\frac{22}{7}\)) × 6 × 6</div>
+        <div class="step">= (\(\frac{1}{6}\)) × (\(\frac{22}{7}\)) × 36</div>
+        <div class="step">= 1 × (\(\frac{22}{7}\)) × 6</div>
+        <div class="step">= \(\frac{132}{7}\) cm².</div>
+        <div class="final-answer">Area = \(\frac{132}{7}\) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. Find the area of a quadrant of a circle whose circumference is 22 cm.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDE0OS45OTk5OTk5OTk5OTk5NyA1MC4wIEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRibHVlIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OTDCsDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjI2MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q2lyY3VtZmVyZW5jZSA9IDIyY208L3RleHQ+PC9zdmc+" alt="Quadrant Area">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Circumference = 2πr = 22 cm.</div>
+        <div class="step">2 × (\(\frac{22}{7}\)) × r = 22</div>
+        <div class="step">r = \(\frac{7}{2}\) = 3.5 cm.</div>
+        <div class="step">Quadrant is \(\frac{1}{4}\) of a circle (θ = 90°).</div>
+        <div class="step">Area = (\(\frac{1}{4}\))πr²</div>
+        <div class="step">= (\(\frac{1}{4}\)) × (\(\frac{22}{7}\)) × (\(\frac{7}{2}\)) × (\(\frac{7}{2}\))</div>
+        <div class="step">= (\(\frac{1}{4}\)) × 22 × (\(\frac{1}{2}\)) × (\(\frac{7}{2}\))</div>
+        <div class="step">= \(\frac{77}{8}\) cm².</div>
+        <div class="final-answer">Area = \(\frac{77}{8}\) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. The length of the minute hand of a clock is 14 cm. Find the area swept by the minute
+            hand in 5 minutes.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTIwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDE0OS45OTk5OTk5OTk5OTk5NyA0MC4wIEEgMTEwIDExMCAwIDAgMSAyMDUuMCA1NC43MzcyMDU1ODM3MTE3NTYgWiIgZmlsbD0icGluayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTRjbTwvdGV4dD48dGV4dCB4PSIxODAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IG1pbjwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMjwvdGV4dD48dGV4dCB4PSIyMDUiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjI1MCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgeD0iMjc1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjM8L3RleHQ+PC9zdmc+" alt="Clock Area">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 14 cm.</div>
+        <div class="step">Angle in 60 mins = 360°. So in 5 mins = (\(\frac{360}{60}\)) × 5 = 30°.</div>
+        <div class="step">Area swept = Area of sector with θ = 30°.</div>
+        <div class="step">= (\(\frac{30}{360}\)) × (\(\frac{22}{7}\)) × 14 × 14</div>
+        <div class="step">= (\(\frac{1}{12}\)) × 22 × 2 × 14</div>
+        <div class="step">= (\(\frac{1}{6}\)) × 22 × 14</div>
+        <div class="step">= (\(\frac{1}{3}\)) × 11 × 14 = \(\frac{154}{3}\) cm².</div>
+        <div class="final-answer">Area = \(\frac{154}{3}\) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. A chord of a circle of radius 10 cm subtends a right angle at the centre. Find the area
+            of the corresponding: (i) minor segment (ii) major sector. (Use π = 3.14)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyNTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjI1MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjUwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAyNTAgQSAxMDAgMTAwIDAgMCAwIDI1MCAxNTAgTCAxNTAgMjUwIFoiIGZpbGw9Im9yYW5nZSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iMTcwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjkwwrA8L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwY208L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1pbm9yIFNlZ21lbnQ8L3RleHQ+PHRleHQgeD0iMTAwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1ham9yIFNlY3RvcjwvdGV4dD48L3N2Zz4=" alt="Chord 90 Degrees">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Radius r = 10 cm. θ = 90°.</div>
+        <div class="step">(i) Area of Minor Sector = (\(\frac{90}{360}\)) × 3.14 × 100 = (\(\frac{1}{4}\)) × 314 = 78.5 cm².</div>
+        <div class="step">Area of Triangle = (\(\frac{1}{2}\)) × base × height = (\(\frac{1}{2}\)) × 10 × 10 = 50 cm².</div>
+        <div class="step">Area of Minor Segment = Area Sector - Area Triangle = 78.5 - 50 = 28.5 cm².</div>
+        <div class="step">(ii) Area of Major Sector = Area of Circle - Area of Minor Sector</div>
+        <div class="step">= 314 - 78.5 = 235.5 cm². (Or use θ = 270°).</div>
+        <div class="final-answer">Minor Segment: 28.5 cm², Major Sector: 235.5 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. In a circle of radius 21 cm, an arc subtends an angle of 60° at the centre. Find:
+            (i) the length of the arc
+            (ii) area of the sector formed by the arc
+            (iii) area of the segment formed by the corresponding chord</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgTCAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBaIiBmaWxsPSJjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjDCsDwvdGV4dD48dGV4dCB4PSIyMTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjFjbTwvdGV4dD48L3N2Zz4=" alt="Circle 60 Degrees">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 21 cm. θ = 60°.</div>
+        <div class="step">(i) Length of arc = (θ/360) × 2πr = (\(\frac{60}{360}\)) × 2 × (\(\frac{22}{7}\)) × 21</div>
+        <div class="step">= (\(\frac{1}{6}\)) × 2 × 22 × 3 = 22 cm.</div>
+        <div class="step">(ii) Area of sector = (θ/360) × πr² = (\(\frac{1}{6}\)) × (\(\frac{22}{7}\)) × 21 × 21</div>
+        <div class="step">= 11 × 21 = 231 cm².</div>
+        <div class="step">(iii) Area of segment = Area Sector - Area Triangle.</div>
+        <div class="step">For θ=60°, triangle is equilateral. Area = (√\(\frac{3}{4}\))r² = (√\(\frac{3}{4}\)) × 441.</div>
+        <div class="step">= 441√\(\frac{3}{4}\) cm².</div>
+        <div class="step">Area Segment = (231 - 441√\(\frac{3}{4}\)) cm².</div>
+        <div class="final-answer">Length: 22 cm; Sector: 231 cm²; Segment: (231 - 441√\(\frac{3}{4}\)) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. A chord of a circle of radius 15 cm subtends an angle of 60° at the centre. Find the
+            areas of the corresponding minor and major segments of the circle. (Use π = 3.14 and √3 = 1.73)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyMzYuNjAyNTQwMzc4NDQzODUiIHkyPSI5OS45OTk5OTk5OTk5OTk5NiIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMjM2LjYwMjU0MDM3ODQ0Mzg4IiB5Mj0iMjAwLjAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjIzNi42MDI1NDAzNzg0NDM4NSIgeTE9Ijk5Ljk5OTk5OTk5OTk5OTk2IiB4Mj0iMjM2LjYwMjU0MDM3ODQ0Mzg4IiB5Mj0iMjAwLjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMjM2LjYwMjU0MDM3ODQ0Mzg1IDk5Ljk5OTk5OTk5OTk5OTk2IEEgMTAwIDEwMCAwIDAgMSAyMzYuNjAyNTQwMzc4NDQzODggMjAwLjAgTCAyMzYuNjAyNTQwMzc4NDQzODUgOTkuOTk5OTk5OTk5OTk5OTYgWiIgZmlsbD0iZ3JheSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iMjQwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjE1Y208L3RleHQ+PHRleHQgeD0iMTgwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYwwrA8L3RleHQ+PC9zdmc+" alt="Chord 60 Segments">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 15 cm. θ = 60°.</div>
+        <div class="step">Area of Minor Sector = (\(\frac{60}{360}\)) × 3.14 × 225 = (\(\frac{1}{6}\)) × 706.5 = 117.75 cm².</div>
+        <div class="step">Area of Triangle (Equilateral) = (√\(\frac{3}{4}\)) × 15² = (1.\(\frac{73}{4}\)) × 225 = 97.3125 cm².</div>
+        <div class="step">Area of Minor Segment = 117.75 - 97.3125 = 20.4375 cm².</div>
+        <div class="step">Area of Major Segment = Area Circle - Area Minor Segment</div>
+        <div class="step">= 706.5 - 20.4375 = 686.0625 cm².</div>
+        <div class="final-answer">Minor Segment: 20.4375 cm²; Major Segment: 686.0625 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. A chord of a circle of radius 12 cm subtends an angle of 120° at the centre. Find the
+            area of the corresponding segment of the circle. (Use π = 3.14 and √3 = 1.73)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSI2My4zOTc0NTk2MjE1NTYxNCIgeTE9Ijk5Ljk5OTk5OTk5OTk5OTk5IiB4Mj0iMjM2LjYwMjU0MDM3ODQ0Mzg1IiB5Mj0iOTkuOTk5OTk5OTk5OTk5OTYiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gNjMuMzk3NDU5NjIxNTU2MTQgOTkuOTk5OTk5OTk5OTk5OTkgQSAxMDAgMTAwIDAgMCAwIDIzNi42MDI1NDAzNzg0NDM4NSA5OS45OTk5OTk5OTk5OTk5NiBMIDYzLjM5NzQ1OTYyMTU1NjE0IDk5Ljk5OTk5OTk5OTk5OTk5IFoiIGZpbGw9InB1cnBsZSIgb3BhY2l0eT0iMC4zIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjYzLjM5NzQ1OTYyMTU1NjE0IiB5Mj0iOTkuOTk5OTk5OTk5OTk5OTkiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjIzNi42MDI1NDAzNzg0NDM4NSIgeTI9Ijk5Ljk5OTk5OTk5OTk5OTk2IiBzdHJva2U9ImdyYXkiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWRhc2hhcnJheT0iNCIgZmlsbD0ibm9uZSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMjDCsDwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTJjbTwvdGV4dD48L3N2Zz4=" alt="Chord 120 Segments">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 12 cm. θ = 120°.</div>
+        <div class="step">Area of Sector = (\(\frac{120}{360}\)) × 3.14 × 144 = (\(\frac{1}{3}\)) × 452.16 = 150.72 cm².</div>
+        <div class="step">Area of Triangle = r² sin(θ/2) cos(θ/2) = 144 sin 60° cos 60°.</div>
+        <div class="step">= 144 × (√\(\frac{3}{2}\)) × (\(\frac{1}{2}\)) = 36√3 = 36 × 1.73 = 62.28 cm².</div>
+        <div class="step">Area of Segment = 150.72 - 62.28 = 88.44 cm².</div>
+        <div class="final-answer">Area of Segment = 88.44 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">8. A horse is tied to a peg at one corner of a square shaped grass field of side 15 m by
+            means of a 5 m long rope. Find (i) the area of that part of the field in which the horse can graze. (ii) the
+            increase in the grazing area if the rope were 10 m long instead of 5 m. (Use π = 3.14)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9ImxpZ2h0Z3JlZW4iIHN0cm9rZT0iZ3JlZW4iLz48cGF0aCBkPSJNIDIwIDIwIEwgMjAgMTAwIEEgODAgODAgMCAwIDAgMTAwIDIwIFoiIGZpbGw9IndoaXRlIiBzdHJva2U9ImJsYWNrIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSIzMCIgcj0iNSIgZmlsbD0iYnJvd24iLz48dGV4dCB4PSI1MCIgeT0iNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdyYXppbmcgQXJlYTwvdGV4dD48dGV4dCB4PSIxMjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R3Jhc3MgRmllbGQ8L3RleHQ+PC9zdmc+" alt="Horse Grazing">
+        <div class="solution-header">Solution:</div>
+        <div class="step">(i) r = 5 m. θ = 90° (corner of square).</div>
+        <div class="step">Area = (\(\frac{90}{360}\)) × 3.14 × 25 = (\(\frac{1}{4}\)) × 78.5 = 19.625 m².</div>
+        <div class="step">(ii) r = 10 m.</div>
+        <div class="step">New Area = (\(\frac{1}{4}\)) × 3.14 × 100 = (\(\frac{1}{4}\)) × 314 = 78.5 m².</div>
+        <div class="step">Increase = 78.5 - 19.625 = 58.875 m².</div>
+        <div class="final-answer">Area: 19.625 m²; Increase: 58.875 m².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">9. A brooch is made with silver wire in the form of a circle with diameter 35 mm. The wire
+            is also used in making 5 diameters which divide the circle into 10 equal sectors. Find: (i) the total length
+            of the silver wire required. (ii) the area of each sector of the brooch.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyNTAuMCIgeTE9IjE1MC4wIiB4Mj0iNTAuMCIgeTI9IjE1MC4wIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjMwLjkwMTY5OTQzNzQ5NDc2IiB5MT0iMjA4Ljc3ODUyNTIyOTI0NzMyIiB4Mj0iNjkuMDk4MzAwNTYyNTA1MjYiIHkyPSI5MS4yMjE0NzQ3NzA3NTI2OCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE4MC45MDE2OTk0Mzc0OTQ3NiIgeTE9IjI0NS4xMDU2NTE2Mjk1MTUzNiIgeDI9IjExOS4wOTgzMDA1NjI1MDUyNiIgeTI9IjU0Ljg5NDM0ODM3MDQ4NDY1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMTE5LjA5ODMwMDU2MjUwNTI3IiB5MT0iMjQ1LjEwNTY1MTYyOTUxNTM2IiB4Mj0iMTgwLjkwMTY5OTQzNzQ5NDczIiB5Mj0iNTQuODk0MzQ4MzcwNDg0NjM2IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iNjkuMDk4MzAwNTYyNTA1MjciIHkxPSIyMDguNzc4NTI1MjI5MjQ3MzIiIHgyPSIyMzAuOTAxNjk5NDM3NDk0NzMiIHkyPSI5MS4yMjE0NzQ3NzA3NTI2OCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PHRleHQgeD0iMTUwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIFNlY3RvcnM8L3RleHQ+PHRleHQgeD0iMTUwIiB5PSIzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ZCA9IDM1bW08L3RleHQ+PC9zdmc+" alt="Brooch Design">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter d = 35 mm. r = \(\frac{35}{2}\) mm.</div>
+        <div class="step">(i) Length = Circumference + 5 × Diameter.</div>
+        <div class="step">= πd + 5d = (\(\frac{22}{7}\)) × 35 + 5 × 35 = 110 + 175 = 285 mm.</div>
+        <div class="step">(ii) Each sector angle θ = \(\frac{360}{10}\) = 36°.</div>
+        <div class="step">Area = (\(\frac{36}{360}\)) × (\(\frac{22}{7}\)) × (\(\frac{35}{2}\)) × (\(\frac{35}{2}\))</div>
+        <div class="step">= (\(\frac{1}{10}\)) × 11 × 5 × (\(\frac{35}{2}\))</div>
+        <div class="step">= (\(\frac{1}{2}\)) × 11 × (\(\frac{35}{2}\)) = \(\frac{385}{4}\) = 96.25 mm².</div>
+        <div class="final-answer">Length: 285 mm; Area: \(\frac{385}{4}\) mm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">10. An umbrella has 8 ribs which are equally spaced. Assuming umbrella to be a flat circle
+            of radius 45 cm, find the area between the two consecutive ribs of the umbrella.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIyNTAuMCIgeTE9IjE1MC4wIiB4Mj0iNTAuMCIgeTI9IjE1MC4wIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjIwLjcxMDY3ODExODY1NDc2IiB5MT0iMjIwLjcxMDY3ODExODY1NDc2IiB4Mj0iNzkuMjg5MzIxODgxMzQ1MjQiIHkyPSI3OS4yODkzMjE4ODEzNDUyNCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MC4wIiB5MT0iMjUwLjAiIHgyPSIxNTAuMCIgeTI9IjUwLjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSI3OS4yODkzMjE4ODEzNDUyNiIgeTE9IjIyMC43MTA2NzgxMTg2NTQ3NiIgeDI9IjIyMC43MTA2NzgxMTg2NTQ3NiIgeTI9Ijc5LjI4OTMyMTg4MTM0NTI0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+OCBSaWJzPC90ZXh0Pjx0ZXh0IHg9IjE1MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPnIgPSA0NWNtPC90ZXh0Pjwvc3ZnPg==" alt="Umbrella Ribs">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 45 cm. 8 ribs form 8 sectors.</div>
+        <div class="step">Angle θ = \(\frac{360}{8}\) = 45°.</div>
+        <div class="step">Area = (\(\frac{45}{360}\)) × (\(\frac{22}{7}\)) × 45 × 45</div>
+        <div class="step">= (\(\frac{1}{8}\)) × (\(\frac{22}{7}\)) × 2025</div>
+        <div class="step">= \(\frac{22275}{28}\) cm².</div>
+        <div class="final-answer">Area = \(\frac{22275}{28}\) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">11. A car has two wipers which do not overlap. Each wiper has a blade of length 25 cm
+            sweeping through an angle of 115°. Find the total area cleaned at each sweep of the blades.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTAwIDIwMCBMIDM4LjcxNjQ0NDU1MDQ4MTc2IDE0OC41NzY5OTEyMjUwNzY4NSBBIDgwIDgwIDAgMCAxIDE3Mi41MDQ2MjI5NjI5MzIgMTY2LjE5MDUzOTA2MDc0NDA3IFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSAyMjAgMjAwIEwgMTQ3LjQ5NTM3NzAzNzA2OCAxNjYuMTkwNTM5MDYwNzQ0MDcgQSA4MCA4MCAwIDAgMSAyODEuMjgzNTU1NDQ5NTE4MjUgMTQ4LjU3Njk5MTIyNTA3NjgyIFoiIGZpbGw9ImxpZ2h0Ymx1ZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTYwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPlR3byBXaXBlcnM8L3RleHQ+PHRleHQgeD0iMTAwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjExNcKwPC90ZXh0Pjx0ZXh0IHg9IjIyMCIgeT0iMTgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTAiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMTXCsDwvdGV4dD48L3N2Zz4=" alt="Wipers Problem">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 25 cm. θ = 115°. Two wipers.</div>
+        <div class="step">Total Area = 2 × (\(\frac{115}{360}\)) × (\(\frac{22}{7}\)) × 25 × 25</div>
+        <div class="step">= 2 × (\(\frac{23}{72}\)) × (\(\frac{22}{7}\)) × 625</div>
+        <div class="step">= (\(\frac{23}{36}\)) × (\(\frac{22}{7}\)) × 625</div>
+        <div class="step">= (23 × 11 × 625) / (18 × 7)</div>
+        <div class="step">= \(\frac{158125}{126}\) cm².</div>
+        <div class="final-answer">Total Area = \(\frac{158125}{126}\) cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">12. To warn ships for underwater rocks, a lighthouse spreads a red coloured light over a
+            sector of angle 80° to a distance of 16.5 km. Find the area of the sea over which the ships are warned. (Use
+            π = 3.14)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZTBmN2ZhIi8+PHBhdGggZD0iTSAxNTAgMjUwIEwgNTguMDc0NjY2ODI1NzIyNjQ1IDE3Mi44NjU0ODY4Mzc2MTUzIEEgMTIwIDEyMCAwIDAgMSAyMTAuMCAxNDYuMDc2OTUxNTQ1ODY3MzYgWiIgZmlsbD0icmVkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMTUwIDI1MCBMIDU4LjA3NDY2NjgyNTcyMjY0NSAxNzIuODY1NDg2ODM3NjE1MyBBIDEyMCAxMjAgMCAwIDEgMjEwLjAgMTQ2LjA3Njk1MTU0NTg2NzM2IFoiIGZpbGw9InJlZCIgb3BhY2l0eT0iMC4zIi8+PHJlY3QgeD0iMTQwIiB5PSIyNDAiIHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iZ3JheSIvPjx0ZXh0IHg9IjE1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj44MMKwIFNlY3RvcjwvdGV4dD48L3N2Zz4=" alt="Lighthouse Sector">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 16.5 km. θ = 80°.</div>
+        <div class="step">Area = (\(\frac{80}{360}\)) × 3.14 × 16.5 × 16.5</div>
+        <div class="step">= (\(\frac{2}{9}\)) × 3.14 × 272.25</div>
+        <div class="step">= 189.97 km².</div>
+        <div class="final-answer">Area = 189.97 km².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">13. A round table cover has six equal designs as shown in Fig. If the radius of the cover
+            is 28 cm, find the cost of making the designs at the rate of ₹ 0.35 per cm². (Use √3 = 1.7)</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMjUwLjAgMTUwLjAgQSAxMDAgMTAwIDAgMCAxIDIwMC4wIDIzNi42MDI1NDAzNzg0NDM4NSBMIDI1MC4wIDE1MC4wIFoiIGZpbGw9ImJyb3duIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMjAwLjAgMjM2LjYwMjU0MDM3ODQ0Mzg1IEEgMTAwIDEwMCAwIDAgMSAxMDAuMDAwMDAwMDAwMDAwMDMgMjM2LjYwMjU0MDM3ODQ0Mzg4IEwgMjAwLjAgMjM2LjYwMjU0MDM3ODQ0Mzg1IFoiIGZpbGw9ImJyb3duIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMTAwLjAwMDAwMDAwMDAwMDAzIDIzNi42MDI1NDAzNzg0NDM4OCBBIDEwMCAxMDAgMCAwIDEgNTAuMCAxNTAuMCBMIDEwMC4wMDAwMDAwMDAwMDAwMyAyMzYuNjAyNTQwMzc4NDQzODggWiIgZmlsbD0iYnJvd24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSA1MC4wIDE1MC4wIEEgMTAwIDEwMCAwIDAgMSA5OS45OTk5OTk5OTk5OTk5NiA2My4zOTc0NTk2MjE1NTYxNSBMIDUwLjAgMTUwLjAgWiIgZmlsbD0iYnJvd24iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHBhdGggZD0iTSA5OS45OTk5OTk5OTk5OTk5NiA2My4zOTc0NTk2MjE1NTYxNSBBIDEwMCAxMDAgMCAwIDEgMjAwLjAgNjMuMzk3NDU5NjIxNTU2MTQgTCA5OS45OTk5OTk5OTk5OTk5NiA2My4zOTc0NTk2MjE1NTYxNSBaIiBmaWxsPSJicm93biIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgTCAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBaIiBmaWxsPSJicm93biIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjIiLz48cG9seWdvbiBwb2ludHM9IjI1MC4wLDE1MC4wIDIwMC4wLDIzNi42MDI1NDAzNzg0NDM4NSAxMDAuMDAwMDAwMDAwMDAwMDMsMjM2LjYwMjU0MDM3ODQ0Mzg4IDUwLjAsMTUwLjAgOTkuOTk5OTk5OTk5OTk5OTYsNjMuMzk3NDU5NjIxNTU2MTUgMjAwLjAsNjMuMzk3NDU5NjIxNTU2MTQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siLz48dGV4dCB4PSIxNTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGVzaWduIEFyZWFzPC90ZXh0Pjwvc3ZnPg==" alt="Round Table Design">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 28 cm. 6 segments. Each angle = \(\frac{360}{6}\) = 60°.</div>
+        <div class="step">Area of one segment = Area Sector - Area Triangle.</div>
+        <div class="step">Sector Area = (\(\frac{60}{360}\)) × (\(\frac{22}{7}\)) × 28 × 28 = (\(\frac{1}{6}\)) × 22 × 4 × 28 = \(\frac{1232}{3}\) = 410.67 cm².</div>
+        <div class="step">Triangle Area (Equilateral) = (√\(\frac{3}{4}\)) × 28² = (1.\(\frac{7}{4}\)) × 784 = 1.7 × 196 = 333.2 cm².</div>
+        <div class="step">Area of one design = 410.67 - 333.2 = 77.47 cm².</div>
+        <div class="step">Total Area = 6 × 77.47 = 464.82 cm².</div>
+        <div class="step">Cost = 464.82 × 0.35 = ₹ 162.68.</div>
+        <div class="final-answer">Cost = ₹ 162.68 approx.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">14. Tick the correct answer in the following: Area of a sector of angle p (in degrees) of
+            a circle with radius R is:</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRncmV5IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxNTAiIHk9IjI3MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QW5nbGUgcCwgUmFkaXVzIFI8L3RleHQ+PC9zdmc+" alt="Formula Check">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Formula is (\(\frac{p}{360}\)) × πR².</div>
+        <div class="step">Check options. (D) (\(\frac{p}{720}\)) × 2πR² = (\(\frac{p}{360}\)) × πR². This matches.</div>
+        <div class="final-answer">Option (D).</div>
+    </div>
+
+
+
+</body></html>

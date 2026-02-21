@@ -29,7 +29,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
       </View>
       <View style={styles.textContainer}>
         <ThemedText style={[styles.name, isLandscape && styles.nameLandscape]}>Sameer Khan</ThemedText>
-        {!isLandscape ? <ThemedText style={styles.title}>Educator</ThemedText> : null}
+        <ThemedText style={[styles.title, isLandscape && { fontSize: 10, lineHeight: 12 }]}>Founder & Educator</ThemedText>
       </View>
     </View>
   );

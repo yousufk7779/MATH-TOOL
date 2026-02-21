@@ -27,13 +27,21 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
             html, body {
                 background-color: #1A1A2E !important; 
                 margin: 0; padding: 0;
+                overflow-x: hidden !important;
+                max-width: 100vw !important;
             }
-            * { color: #E0E0E0 !important; }
+            * { 
+                color: #E0E0E0 !important; 
+                max-width: 100% !important;
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
 
             body { 
                 font-family: 'Kalam', cursive, sans-serif !important; 
                 font-size: 18px;
                 padding: 10px;
+                box-sizing: border-box !important;
             }
 
             /* Hide original containers/cards styling */
@@ -71,6 +79,7 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
             }
             .step { 
                 background: #16213E !important; 
+                color: #E0E0E0 !important;
                 padding: 15px; 
                 border-radius: 12px; 
                 border-left: 5px solid #E94560; 
@@ -80,7 +89,58 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
             .solution-header { color: #4CAF50 !important; font-weight: bold; margin-top: 10px; font-size: 1.1em; }
             .final-answer { color: #4CAF50 !important; font-weight: bold; margin-top: 15px; font-size: 1.1em; }
             .mjx-chtml { color: #FFFFFF !important; font-size: 110% !important; }
-            img { background: #fff; padding: 8px; border-radius: 8px; max-width: 100%; margin: 10px 0; }
+            mjx-container { color: #FFFFFF !important; font-size: 110% !important; }
+            mjx-container svg { fill: #FFFFFF !important; }
+            img { 
+                background: #FFFFFF !important; 
+                padding: 10px; 
+                border-radius: 10px; 
+                width: 100%; 
+                max-width: 320px; 
+                height: 180px !important; 
+                object-fit: contain; 
+                margin: 15px auto; 
+                display: block; 
+                cursor: pointer; 
+                box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            }
+            
+            /* Tables */
+            table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin-bottom: 15px; 
+                background: transparent !important; 
+                table-layout: fixed !important; 
+                word-wrap: break-word !important; 
+            }
+            th, td { 
+                border: 1px solid #555 !important; 
+                padding: 4px; 
+                text-align: center; 
+                color: #E0E0E0 !important; 
+                background: transparent !important; 
+                word-wrap: break-word !important;
+                overflow-wrap: break-word !important;
+            }
+            th { background-color: #16213E !important; font-weight: bold; }
+            
+            /* Zoomable Image Modal */
+            #image-modal {
+                display: none; position: fixed; z-index: 9999; left: 0; top: 0;
+                width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);
+                align-items: center; justify-content: center;
+            }
+            #modal-img {
+                max-width: 95vw; max-height: 90vh; object-fit: contain;
+                background: #fff; padding: 15px; border-radius: 12px;
+                animation: zoom 0.3s ease;
+            }
+            @keyframes zoom { from {transform:scale(0.8); opacity:0;} to {transform:scale(1); opacity:1;} }
+            #modal-close {
+                position: absolute; top: 15px; right: 25px; color: #f1f1f1;
+                font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10000;
+            }
         \`;
         document.head.appendChild(style);
 
@@ -112,16 +172,72 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
                  });
             }
             
+            // Add Modal HTML if not exists
+            if (!document.getElementById('image-modal')) {
+                var modal = document.createElement('div');
+                modal.id = 'image-modal';
+                modal.innerHTML = '<span id="modal-close">&times;</span><img id="modal-img">';
+                document.body.appendChild(modal);
+                
+                modal.onclick = function() {
+                    modal.style.display = 'none';
+                };
+            }
+
+            // Attach zoom click handlers to all images
+            var images = document.getElementsByTagName('img');
+            for(var i=0; i<images.length; i++) {
+                if(images[i].id === 'modal-img') continue;
+                images[i].onclick = function() {
+                    var m = document.getElementById('image-modal');
+                    var mImg = document.getElementById('modal-img');
+                    m.style.display = 'flex';
+                    mImg.src = this.src;
+                }
+            }
+            
             setTimeout(function() {
                 window.ReactNativeWebView.postMessage(JSON.stringify({type: 'contentSize', height: document.body.scrollHeight}));
             }, 100);
         }
+
+        function handleMathJaxAndShow() {
+            showContent();
+            if (!window.MathJax) {
+                window.MathJax = {
+                    tex: {
+                        inlineMath: [['\\\\(', '\\\\)'], ['$', '$']],
+                        displayMath: [['\\\\[', '\\\\]'], ['$$', '$$']]
+                    },
+                    svg: { fontCache: 'global' },
+                    startup: {
+                        pageReady: function() {
+                            return MathJax.startup.defaultPageReady().then(function() {
+                                setTimeout(function() {
+                                    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'contentSize', height: document.body.scrollHeight}));
+                                }, 500);
+                            });
+                        }
+                    }
+                };
+                var script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+                script.async = true;
+                document.head.appendChild(script);
+            } else {
+                MathJax.typesetPromise().then(function() {
+                    setTimeout(function() {
+                        window.ReactNativeWebView.postMessage(JSON.stringify({type: 'contentSize', height: document.body.scrollHeight}));
+                    }, 500);
+                });
+            }
+        }
         
         // Run immediately or on load
         if (document.readyState === 'complete') {
-            showContent();
+            handleMathJaxAndShow();
         } else {
-            window.addEventListener('load', showContent);
+            window.addEventListener('load', handleMathJaxAndShow);
         }
     })();
     true;
@@ -161,6 +277,14 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
                 style={styles.webview}
                 scrollEnabled={false}
                 androidLayerType="hardware"
+                cacheEnabled={true}
+                cacheMode="LOAD_CACHE_ELSE_NETWORK"
+                showsVerticalScrollIndicator={false}
+                showsHorizontalScrollIndicator={false}
+                javaScriptEnabled={true}
+                domStorageEnabled={true}
+                bounces={false}
+                overScrollMode="never"
             // Key prop to force reload on target change if needed, 
             // though injectJavaScript handles updates better.
             // key={targetId} 

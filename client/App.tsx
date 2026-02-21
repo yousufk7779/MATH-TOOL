@@ -50,8 +50,12 @@ export default function App() {
 
   useEffect(() => {
     if ((fontsLoaded && kalamLoaded) || fontError) {
-      SplashScreen.hideAsync();
+      SplashScreen.hideAsync().catch(() => { });
     }
+    const timer = setTimeout(() => {
+      SplashScreen.hideAsync().catch(() => { });
+    }, 2500); // Fail-safe to ensure splash screen hides
+    return () => clearTimeout(timer);
   }, [fontsLoaded, kalamLoaded, fontError]);
 
   if ((!fontsLoaded || !kalamLoaded) && !fontError) {

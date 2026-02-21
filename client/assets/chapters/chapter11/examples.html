@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas Related to Circles - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 2px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+
+<body>
+<div class="content-box">
+        <div class="question">Example 1. Find the area of the sector of a circle with radius 4 cm and of angle 30°.
+            Also, find the area of the corresponding major sector (Use π = 3.14).</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTIwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDE0OS45OTk5OTk5OTk5OTk5NyA0MC4wIEEgMTEwIDExMCAwIDAgMSAyMDUuMCA1NC43MzcyMDU1ODM3MTE3NTYgWiIgZmlsbD0icGluayIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjQwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48dGV4dCB4PSIxNDAiIHk9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MTRjbTwvdGV4dD48dGV4dCB4PSIxODAiIHk9IjgwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IG1pbjwvdGV4dD48dGV4dCB4PSIxNTAiIHk9IjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xMjwvdGV4dD48dGV4dCB4PSIyMDUiIHk9IjQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xPC90ZXh0Pjx0ZXh0IHg9IjI1MCIgeT0iOTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjI8L3RleHQ+PHRleHQgeD0iMjc1IiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjM8L3RleHQ+PC9zdmc+" alt="Sector Area Example">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 4 cm. θ = 30°.</div>
+        <div class="step">Area of Sector = (θ/360) × πr²</div>
+        <div class="step">= (\(\frac{30}{360}\)) × 3.14 × 16</div>
+        <div class="step">= (\(\frac{1}{12}\)) × 3.14 × 16</div>
+        <div class="step">= 4.19 cm².</div>
+        <div class="step">Major Sector Area = Area Circle - Area Minor Sector</div>
+        <div class="step">= 3.14 × 16 - 4.19</div>
+        <div class="step">= 50.24 - 4.19 = 46.05 cm².</div>
+        <div class="final-answer">Sector: 4.19 cm²; Major Sector: 46.05 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 2. Find the area of the segment AYB shown in Fig., if radius of the circle is 21
+            cm and ∠AOB = 120°. (Use π = \(\frac{22}{7}\))</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMTAwIiBzdHJva2U9InN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPjxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIyNTAiIHkyPSIxNTAiIHN0cm9rZT0iZ3JheSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtZGFzaGFycmF5PSI0IiBmaWxsPSJub25lIi8+PGxpbmUgeDE9IjE1MCIgeTE9IjE1MCIgeDI9IjE1MCIgeTI9IjI1MCIgc3Ryb2tlPSJncmF5IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1kYXNoYXJyYXk9IjQiIGZpbGw9Im5vbmUiLz48bGluZSB4MT0iMjUwIiB5MT0iMTUwIiB4Mj0iMTUwIiB5Mj0iMjUwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAyNTAgQSAxMDAgMTAwIDAgMCAwIDI1MCAxNTAgTCAxNTAgMjUwIFoiIGZpbGw9Im9yYW5nZSIgb3BhY2l0eT0iMC41Ii8+PHRleHQgeD0iMTcwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjkwwrA8L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwY208L3RleHQ+PHRleHQgeD0iMjAwIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1pbm9yIFNlZ21lbnQ8L3RleHQ+PHRleHQgeD0iMTAwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1ham9yIFNlY3RvcjwvdGV4dD48L3N2Zz4=" alt="Segment Area Example">
+        <div class="solution-header">Solution:</div>
+        <div class="step">r = 21 cm. θ = 120°.</div>
+        <div class="step">Area of Sector OAYB = (\(\frac{120}{360}\)) × (\(\frac{22}{7}\)) × 21 × 21</div>
+        <div class="step">= (\(\frac{1}{3}\)) × 22 × 3 × 21 = 462 cm².</div>
+        <div class="step">Area of Triangle OAB. Draw OM perpendicular to AB.</div>
+        <div class="step">In right ∆ OMA, ∠AOM = 60°.</div>
+        <div class="step">OM = 21 cos 60 = \(\frac{21}{2}\). AM = 21 sin 60 = 21√\(\frac{3}{2}\).</div>
+        <div class="step">Base AB = 2AM = 21√3.</div>
+        <div class="step">Area ∆ OAB = (\(\frac{1}{2}\)) × 21√3 × (\(\frac{21}{2}\)) = (\(\frac{441}{4}\))√3 cm².</div>
+        <div class="step">Area of Segment = 462 - (\(\frac{441}{4}\))√3 cm².</div>
+        <div class="step">Using √3 = 1.73, Area = 462 - 190.95 = 271.05 cm².</div>
+        <div class="final-answer">Area = 271.05 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 3. Find the area of the shaded region in Fig., where ABCD is a square of side 14
+            cm and APD and BPC are semicircles.</div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxwYXRoIGQ9Ik0gMTUwIDE1MCBMIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgWiIgZmlsbD0ibGlnaHRjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNIDIwMC4wIDYzLjM5NzQ1OTYyMTU1NjE0IEEgMTAwIDEwMCAwIDAgMSAyNTAuMCAxNDkuOTk5OTk5OTk5OTk5OTcgTCAyMDAuMCA2My4zOTc0NTk2MjE1NTYxNCBaIiBmaWxsPSJjeWFuIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NjDCsDwvdGV4dD48dGV4dCB4PSIyMTAiIHk9IjEzMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MjFjbTwvdGV4dD48L3N2Zz4=" alt="Semicircles in Square">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Side of square = 14 cm. Radius of semicircle = \(\frac{14}{2}\) = 7 cm.</div>
+        <div class="step">Area of Square = 14 × 14 = 196 cm².</div>
+        <div class="step">Area of 2 Semicircles = 2 × (\(\frac{1}{2}\))πr² = πr².</div>
+        <div class="step">= (\(\frac{22}{7}\)) × 7 × 7 = 154 cm².</div>
+        <div class="step">Area of Shaded = Area Square - Area 2 Semicircles.</div>
+        <div class="step">= 196 - 154 = 42 cm².</div>
+        <div class="final-answer">Area = 42 cm².</div>
+    </div>
+
+
+
+</body></html>

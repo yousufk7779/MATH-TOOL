@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangles - Overview</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
         body {
             font-family: 'Kalam', cursive;
             margin: 0;
@@ -15,21 +11,18 @@
             background: #fff;
             color: #333;
         }
-
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
+            border-bottom: 2px solid #C6FF00;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
-
         .logo {
-            color: #6C63FF;
+            color: #C6FF00;
             font-size: 24px;
             font-weight: 800;
         }
-
         .chapter-title {
             text-align: center;
             color: #333;
@@ -38,139 +31,71 @@
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
         .section-title {
-            color: #2E7D32;
+            font-family: 'Nunito', sans-serif;
             font-weight: 700;
-            font-size: 1.2em;
+            color: #C6FF00;
+            margin-top: 25px;
             margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
+            font-size: 1.2em;
+            border-bottom: 2px dashed #C6FF00;
             padding-bottom: 5px;
         }
-
-        .step {
-            margin-bottom: 8px;
+        .content-text {
             font-size: 1.1em;
-            color: #000;
             line-height: 1.6;
-        }
-
-        .key-point {
-            background: #e8f5e9;
-            padding: 10px;
-            border-left: 4px solid #2E7D32;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .sub-header {
-            color: #E65100;
-            font-weight: 700;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        img {
-            float: right;
-            margin-left: 20px;
             margin-bottom: 15px;
-            max-width: 150px;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 5px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 12px;
+            border-left: 4px solid #C6FF00;
+            background-color: rgba(198, 255, 0, 0.03);
+            border-radius: 0 8px 8px 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            color: #333;
         }
-
-        @media (max-width: 600px) {
-            img {
-                float: none;
-                display: block;
-                margin: 10px auto;
-                max-width: 100%;
-            }
+        .highlight-text {
+            font-weight: 700;
+            color: #C6FF00;
+        }
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
     </style>
 </head>
-
 <body>
+<div class="section-title">Basic Introductions</div>
+    <div class="content-text"><span class="highlight-text">»</span> A triangle is a closed shape with three angles.</div>
+<div class="content-text"><span class="highlight-text">»</span> This chapter dives beyond basic properties into the fascinating world of geometric similarity.</div>
 
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 6: Triangles (Overview)</div>
-    </div>
 
-    <div class="content-box">
-        <div class="section-title">1. Similar Figures</div>
+    <div class="section-title">Definitions</div>
+    <div class="content-text"><span class="highlight-text">»</span> Similar Figures: Same shape but not necessarily the same size.</div>
+<div class="content-text"><span class="highlight-text">»</span> Congruent Figures: Exactly the same shape and size.</div>
+<div class="content-text"><span class="highlight-text">»</span> Equiangular Triangles: Corresponding angles are equal.</div>
 
-        <div class="step">Two figures having the same shape but not necessarily the same size are called similar
-            figures.</div>
-        <div class="step">Example: All circles are similar. All squares are similar.</div>
-        <div class="key-point">Note: Congruent figures are always similar, but similar figures need not be congruent.
-        </div>
-    </div>
 
-    <div class="content-box">
-        <div class="section-title">2. Similarity of Polygons</div>
-        <div class="step">Two polygons of the same number of sides are similar, if:</div>
-        <div class="step">(i) their corresponding angles are equal, and</div>
-        <div class="step">(ii) their corresponding sides are in the same ratio (or proportion).</div>
-    </div>
+    <div class="section-title">Key points</div>
+    <div class="content-text"><span class="highlight-text">»</span> Basic Proportionality Theorem (\(\frac{BPT}{Thales}\) Theorem): A line parallel to one side dividing the other two sides divides them in the same ratio.</div>
+<div class="content-text"><span class="highlight-text">»</span> Similarity criteria: AA, SAS, SSS.</div>
 
-    <div class="content-box">
-        <div class="section-title">3. Similarity of Triangles</div>
 
-        <div class="step">Two triangles are similar if:</div>
-        <div class="step">(i) their corresponding angles are equal.</div>
-        <div class="step">(ii) their corresponding sides are in the same ratio.</div>
-        <div class="key-point">If corresponding angles of two triangles are equal, then they are known as equiangular
-            triangles.</div>
-    </div>
+    <div class="section-title">Crux</div>
+    <div class="content-text"><span class="highlight-text">»</span> When triangles are similar, their corresponding angles are equal, and the ratio of their corresponding sides is perfectly constant.</div>
 
-    <div class="content-box">
-        <div class="section-title">4. Important Theorems</div>
+    <div class="section-title">Summary</div>
+    <div class="content-text"><span class="highlight-text">»</span> Similarity forms the bedrock of trigonometry and scaling.</div>
+<div class="content-text"><span class="highlight-text">»</span> It distinguishes exactness (congruence) from scaled replicas (similarity).</div>
 
-        <div class="sub-header">Basic Proportionality Theorem (Thales Theorem):</div>
 
-        <div class="step">If a line is drawn parallel to one side of a triangle to intersect the other two sides in
-            distinct points, the other two sides are divided in the same ratio.</div>
-
-        <div class="sub-header">Converse of BPT:</div>
-        <div class="step">If a line divides any two sides of a triangle in the same ratio, then the line is parallel to
-            the third side.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="section-title">5. Criteria for Similarity of Triangles</div>
-
-        <div class="sub-header">AAA (Angle-Angle-Angle) Similarity:</div>
-        <div class="step">If in two triangles, corresponding angles are equal, then their corresponding sides are in the
-            same ratio (or proportion) and hence the two triangles are similar.</div>
-        <div class="key-point">AA Similarity: If two angles of one triangle are respectively equal to two angles of
-            another triangle, then the two triangles are similar.</div>
-
-        <div class="sub-header">SSS (Side-Side-Side) Similarity:</div>
-        <div class="step">If in two triangles, sides of one triangle are proportional to (i.e., in the same ratio of)
-            the sides of the other triangle, then their corresponding angles are equal and hence the two triangles are
-            similar.</div>
-
-        <div class="sub-header">SAS (Side-Angle-Side) Similarity:</div>
-        <div class="step">If one angle of a triangle is equal to one angle of the other triangle and the sides including
-            these angles are proportional, then the two triangles are similar.</div>
-    </div>
-
-</body>
-
-</html>
+</body></html>

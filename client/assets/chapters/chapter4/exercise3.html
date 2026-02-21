@@ -123,16 +123,26 @@
             }
         }
     </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 4: Exercise 4.3</div>
-    </div>
-
-    <!-- Question 1 -->
+<!-- Question 1 -->
     <div class="content-box">
         <div class="question">1. Find the nature of the roots of the following quadratic equations. If the real roots
             exist, find them:</div>
@@ -155,17 +165,11 @@
                 <div class="step">D = 16(3) - 48</div>
                 <div class="step">D = 48 - 48 = 0</div>
                 <div class="step">Since D = 0, two equal, real roots exist.</div>
-                <div class="step">Roots are given by x = <span class="fraction"><span class="numerator">-b</span><span
-                            class="denominator">2a</span></span></div>
-                <div class="step">x = <span class="fraction"><span class="numerator">-(-4√3)</span><span
-                            class="denominator">2(3)</span></span></div>
-                <div class="step">x = <span class="fraction"><span class="numerator">4√3</span><span
-                            class="denominator">6</span></span></div>
-                <div class="step">Simplifying: x = <span class="fraction"><span class="numerator">2√3</span><span
-                            class="denominator">3</span></span></div>
-                <div class="final-answer">Roots are <span class="fraction"><span class="numerator">2√3</span><span
-                            class="denominator">3</span></span>, <span class="fraction"><span
-                            class="numerator">2√3</span><span class="denominator">3</span></span>.</div>
+                <div class="step">Roots are given by x = \(\frac{-b}{2a}\)</div>
+                <div class="step">x = \(\frac{-(-4√3)}{2(3)}\)</div>
+                <div class="step">x = \(\frac{4√3}{6}\)</div>
+                <div class="step">Simplifying: x = \(\frac{2√3}{3}\)</div>
+                <div class="final-answer">Roots are \(\frac{2√3}{3}\), \(\frac{2√3}{3}\).</div>
 
                 <div class="sub-question">(iii) 2x² – 6x + 3 = 0</div>
                 <div class="solution-header">Solution:</div>
@@ -174,18 +178,13 @@
                 <div class="step">D = (-6)² - 4(2)(3)</div>
                 <div class="step">D = 36 - 24 = 12</div>
                 <div class="step">Since D > 0, two distinct real roots exist.</div>
-                <div class="step">Roots x = <span class="fraction"><span class="numerator">-b ± √D</span><span
-                            class="denominator">2a</span></span></div>
-                <div class="step">x = <span class="fraction"><span class="numerator">-(-6) ± √12</span><span
-                            class="denominator">2(2)</span></span></div>
-                <div class="step">x = <span class="fraction"><span class="numerator">6 ± 2√3</span><span
-                            class="denominator">4</span></span></div>
+                <div class="step">Roots x = \(\frac{-b ± √D}{2a}\)</div>
+                <div class="step">x = \(\frac{-(-6) ± √12}{2(2)}\)</div>
+                <div class="step">x = \(\frac{6 ± 2√3}{4}\)</div>
                 <div class="step">Divide numerator and denominator by 2:</div>
-                <div class="step">x = <span class="fraction"><span class="numerator">3 ± √3</span><span
-                            class="denominator">2</span></span></div>
-                <div class="final-answer">Roots are <span class="fraction"><span class="numerator">3 + √3</span><span
-                            class="denominator">2</span></span> and <span class="fraction"><span class="numerator">3 -
-                            √3</span><span class="denominator">2</span></span>.</div>
+                <div class="step">x = \(\frac{3 ± √3}{2}\)</div>
+                <div class="final-answer">Roots are \(\frac{3 + √3}{2}\) and \(\frac{3 -
+                            √3}{2}\).</div>
         </div>
 
         <!-- Question 2 -->
@@ -224,7 +223,7 @@
         <div class="content-box">
             <div class="question">3. Is it possible to design a rectangular mango grove whose length is twice its
                 breadth, and the area is 800 m²? If so, find its length and breadth.</div>
-            <img src="ex4_3_q3.svg" alt="Mango Grove">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjYwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI2MCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjQwIiB5PSI4MCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIxMjAiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE2MCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MZW5ndGggPSAyeDwvdGV4dD48dGV4dCB4PSIyOTAiIHk9IjE1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9InN0YXJ0Ij5CID0geDwvdGV4dD48dGV4dCB4PSIxNjAiIHk9IjE0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJncmVlbiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXJlYSA9IDgwMCBtwrI8L3RleHQ+PHRleHQgeD0iMTYwIiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFuZ28gR3JvdmU8L3RleHQ+PC9zdmc+" alt="Mango Grove">
             <div class="solution-header">Given:</div>
             <div class="step">Length (l) = 2 × Breadth (b)</div>
             <div class="step">Area = 800 m²</div>
@@ -272,7 +271,7 @@
             <div class="content-box">
                 <div class="question">5. Is it possible to design a rectangular park of perimeter 80 m and area 400 m²?
                     If so, find its length and breadth.</div>
-                <img src="ex4_3_q5.svg" alt="Rectangular Park">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjYwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI2MCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPjxyZWN0IHg9IjYwIiB5PSI2MCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNlMWJlZTciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjEzNSIgeT0iMjM1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MZW5ndGggPSB4PC90ZXh0Pjx0ZXh0IHg9IjIyMCIgeT0iMTQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ic3RhcnQiPkJyZWFkdGggPSA0MC14PC90ZXh0Pjx0ZXh0IHg9IjEzNSIgeT0iMTQ1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9InB1cnBsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXJlYSA9IDQwMCBtwrI8L3RleHQ+PHRleHQgeD0iMTM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UGVyaW1ldGVyID0gODAgbTwvdGV4dD48L3N2Zz4=" alt="Rectangular Park">
                 <div class="solution-header">Solution:</div>
                 <div class="step">Let length = l and breadth = b.</div>
                 <div class="step">Perimeter = 2(l + b) = 80</div>
@@ -285,9 +284,7 @@
                 <div class="step">D = (-40)² - 4(1)(400)</div>
                 <div class="step">D = 1600 - 1600 = 0</div>
                 <div class="step">Since D = 0, equal real roots exist.</div>
-                <div class="step">l = <span class="fraction"><span class="numerator">-b</span><span
-                            class="denominator">2a</span></span> = <span class="fraction"><span
-                            class="numerator">40</span><span class="denominator">2</span></span> = 20</div>
+                <div class="step">l = \(\frac{-b}{2a}\) = \(\frac{40}{2}\) = 20</div>
                 <div class="step">Length = 20 m.</div>
                 <div class="step">Breadth = 40 - 20 = 20 m.</div>
                 <div class="final-answer">Yes, possible. Length = 20 m, Breadth = 20 m.</div>

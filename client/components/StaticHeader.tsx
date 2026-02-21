@@ -2,8 +2,6 @@ import React, { memo } from "react";
 import { StyleSheet, View, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-import { GlobalSearchBar } from "@/components/GlobalSearchBar";
-import { SearchResults } from "@/components/SearchResults";
 import { JiguuLogo } from "@/components/JiguuLogo";
 import { Spacing, JiguuColors } from "@/constants/theme";
 
@@ -20,19 +18,12 @@ export const StaticHeader = memo(function StaticHeader() {
         paddingBottom: isLandscape ? 5 : Spacing.md,
         height: isLandscape ? 100 : undefined, // Increase height to fit logo
         flexDirection: isLandscape ? "row" : "column",
-        justifyContent: isLandscape ? "space-between" : "flex-start", // Fix: Align top in portrait
+        justifyContent: isLandscape ? "space-between" : "center", // Fix: Align center in portrait
         alignItems: "center",
       }
     ]}>
       <View style={styles.logoContainer}>
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
-      </View>
-      <View style={[
-        styles.searchContainer,
-        isLandscape && { flex: 1, marginLeft: Spacing.md }
-      ]}>
-        <GlobalSearchBar />
-        <SearchResults />
       </View>
     </View>
   );

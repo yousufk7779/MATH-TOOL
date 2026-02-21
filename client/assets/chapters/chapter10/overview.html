@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circles - Overview</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-
         body {
             font-family: 'Kalam', cursive;
             margin: 0;
@@ -15,21 +11,18 @@
             background: #fff;
             color: #333;
         }
-
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #6C63FF;
+            border-bottom: 2px solid #FFD600;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
-
         .logo {
-            color: #6C63FF;
+            color: #FFD600;
             font-size: 24px;
             font-weight: 800;
         }
-
         .chapter-title {
             text-align: center;
             color: #333;
@@ -38,106 +31,71 @@
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
-
-        .content-box {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            display: flow-root;
-            transition: transform 0.2s ease;
-        }
-
         .section-title {
-            color: #D32F2F;
+            font-family: 'Nunito', sans-serif;
             font-weight: 700;
-            font-size: 1.2em;
+            color: #FFD600;
+            margin-top: 25px;
             margin-bottom: 10px;
-            border-bottom: 1px solid #ddd;
+            font-size: 1.2em;
+            border-bottom: 2px dashed #FFD600;
             padding-bottom: 5px;
         }
-
-        .sub-header {
-            color: #2E7D32;
+        .content-text {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            border-left: 4px solid #FFD600;
+            background-color: rgba(255, 214, 0, 0.03);
+            border-radius: 0 8px 8px 0;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            color: #333;
+        }
+        .highlight-text {
             font-weight: 700;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 1.1em;
+            color: #FFD600;
         }
-
-        .formula-box {
-            background: #E8F5E9;
-            border-left: 4px solid #4CAF50;
+        img {
+            background: #FFFFFF;
             padding: 10px;
-            margin: 10px 0;
-            font-family: 'Nunito', sans-serif;
-        }
-
-        .step {
-            margin-bottom: 8px;
-            font-size: 1.1em;
-            color: #000;
-            line-height: 1.5;
-        }
-
-        strong {
-            color: #E65100;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
     </style>
 </head>
-
 <body>
+<div class="section-title">Basic Introductions</div>
+    <div class="content-text"><span class="highlight-text">»</span> A circle is the locus of all points in a plane equidistant from a fixed center.</div>
+<div class="content-text"><span class="highlight-text">»</span> This chapter predominantly examines the properties of lines touching circles.</div>
 
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 10: Circles Overview</div>
-    </div>
 
-    <div class="content-box">
-        <div class="section-title">1. Basic Introduction & Definitions</div>
-        <div class="step"><strong>Circle:</strong> A circle is a collection of all points in a plane which are at a
-            constant distance (radius) from a fixed point (center).</div>
-        <div class="step"><strong>Center:</strong> The fixed point from which all points on the circle are equidistant.
-        </div>
-        <div class="step"><strong>Radius:</strong> The constant distance between the center and any point on the circle.
-        </div>
-        <div class="step"><strong>Chord:</strong> A line segment joining any two points on the circumference of the
-            circle.</div>
-        <div class="step"><strong>Diameter:</strong> The longest chord which passes through the center of the circle.
-            Length of diameter is twice the radius (d = 2r).</div>
-        <div class="step"><strong>Secant:</strong> A line that intersects the circle at two distinct points.</div>
-        <div class="step"><strong>Tangent:</strong> A line that intersects the circle at exactly one point. This point
-            is called the Point of Contact.</div>
-    </div>
+    <div class="section-title">Definitions</div>
+    <div class="content-text"><span class="highlight-text">»</span> Tangent: A straight line that touches the circle at exactly one point.</div>
+<div class="content-text"><span class="highlight-text">»</span> Secant: A line that intersects the circle at two distinct points.</div>
+<div class="content-text"><span class="highlight-text">»</span> Point of Contact: Where the tangent touches the circle.</div>
 
-    <div class="content-box">
-        <div class="section-title">2. Theorems</div>
-        <div class="sub-header">Theorem 10.1</div>
-        <div class="step">The tangent at any point of a circle is perpendicular to the radius through the point of
-            contact.</div>
-        <div class="formula-box">
-            OP ⊥ XY (Radius is perpendicular to Tangent)
-        </div>
 
-        <div class="sub-header">Theorem 10.2</div>
-        <div class="step">The lengths of tangents drawn from an external point to a circle are equal.</div>
-        <div class="formula-box">
-            PQ = PR (Tangents from external point P)
-        </div>
-    </div>
+    <div class="section-title">Key points</div>
+    <div class="content-text"><span class="highlight-text">»</span> A tangent to a circle is strictly perpendicular to the radius right at the point of contact.</div>
+<div class="content-text"><span class="highlight-text">»</span> Furthermore, lengths of the two tangents drawn from an external point are always equal.</div>
 
-    <div class="content-box">
-        <div class="section-title">3. Key Points</div>
-        <div class="step">• There is no tangent to a circle passing through a point lying inside the circle.</div>
-        <div class="step">• There is one and only one tangent to a circle passing through a point lying on the circle.
-        </div>
-        <div class="step">• There are exactly two tangents to a circle through a point lying outside the circle.</div>
-        <div class="step">• The common point of the tangent and the circle is called the point of contact.</div>
-        <div class="step">• The line containing the radius through the point of contact is also sometimes called the
-            'normal' to the circle at the point.</div>
-    </div>
 
-</body>
+    <div class="section-title">Crux</div>
+    <div class="content-text"><span class="highlight-text">»</span> The symmetrical, equal tangent properties heavily assist in unraveling seemingly complex polygon-circle circumscription configurations.</div>
 
-</html>
+    <div class="section-title">Summary</div>
+    <div class="content-text"><span class="highlight-text">»</span> Circles represent flawless symmetry.</div>
+<div class="content-text"><span class="highlight-text">»</span> Their interacting tangents shape gears, belts, and wheels in fundamental mechanical physics.</div>
+
+
+</body></html>

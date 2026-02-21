@@ -52,15 +52,6 @@ function HomeScreen() {
 
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-news"
-              title="NEWS & EVENTS"
-              color="#AA00FF"
-              onPress={() => navigation.navigate("NewsEvents")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
               testID="button-quiz"
               title="PRACTICE QUIZ"
               color={JiguuColors.accent2}

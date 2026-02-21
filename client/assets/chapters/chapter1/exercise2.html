@@ -152,15 +152,25 @@
             img { float: none; display: block; margin: 10px auto; max-width: 100%; } 
         }
     </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 <body>
-
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 1: Real Numbers - Exercise 1.2</div>
-    </div>
-
-    <!-- Question 1 -->
+<!-- Question 1 -->
     <div class="content-box">
         <div class="question">1. Prove that √5 is irrational.</div>
         
@@ -174,7 +184,7 @@
         <div class="step">Let us assume, to the contrary, that √5 is rational.</div>
         <div class="step">This means we can find integers <i>a</i> and <i>b</i> (where <i>b</i> ≠ 0) such that:</div>
         <div class="step">
-            √5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+            √5 = \(\frac{<i>a</i>}{<i>b</i>}\)
         </div>
         <div class="step">Suppose <i>a</i> and <i>b</i> have a common factor other than 1. Can divide by the common factor to assume <i>a</i> and <i>b</i> are co-prime.</div>
         <div class="step">So, <i>a</i> and <i>b</i> are co-prime.</div>
@@ -216,23 +226,23 @@
         <div class="step">Let us assume, to the contrary, that 3 + 2√5 is rational.</div>
         <div class="step">That is, we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
         <div class="step">
-            3 + 2√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+            3 + 2√5 = \(\frac{<i>a</i>}{<i>b</i>}\)
         </div>
         <div class="step">Rearranging the equation to isolate √5:</div>
         <div class="step">
-            2√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> - 3
+            2√5 = \(\frac{<i>a</i>}{<i>b</i>}\) - 3
         </div>
         <div class="step">Taking LCM on RHS:</div>
         <div class="step">
-            2√5 = <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator"><i>b</i></span></span>
+            2√5 = \(\frac{<i>a</i> - 3<i>b</i>}{<i>b</i>}\)
         </div>
         <div class="step">Dividing by 2:</div>
         <div class="step">
-            <span class="formula">√5 = <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator">2<i>b</i></span></span></span>
+            <span class="formula">√5 = \(\frac{<i>a</i> - 3<i>b</i>}{2<i>b</i>}\)</span>
         </div>
         <div class="step">Since <i>a</i> and <i>b</i> are integers, (<i>a</i> - 3<i>b</i>) and 2<i>b</i> are also integers.</div>
         <div class="step">
-            Thus, <span class="fraction"><span class="numerator"><i>a</i> - 3<i>b</i></span><span class="denominator">2<i>b</i></span></span> is a rational number.
+            Thus, \(\frac{<i>a</i> - 3<i>b</i>}{2<i>b</i>}\) is a rational number.
         </div>
         <div class="step">Therefore, √5 should be rational.</div>
         <div class="step">But this contradicts the fact that √5 is irrational.</div>
@@ -246,36 +256,36 @@
         <div class="question">3. Prove that the following are irrationals:</div>
         
         <!-- Part (i) -->
-        <div class="sub-question">(i) <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span></div>
+        <div class="sub-question">(i) \(\frac{1}{√2}\)</div>
         
         <div class="section-title">Proof:</div>
         <div class="step">Let us assume 
-            <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> is rational.
+            \(\frac{1}{√2}\) is rational.
         </div>
         <div class="step">Then we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
         <div class="step">
-            <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span>
+            \(\frac{1}{√2}\) = \(\frac{<i>a</i>}{<i>b</i>}\)
         </div>
         <div class="step">Reciprocating both sides (or cross-multiplying):</div>
         <div class="step">
-            √2 = <span class="fraction"><span class="numerator"><i>b</i></span><span class="denominator"><i>a</i></span></span>
+            √2 = \(\frac{<i>b</i>}{<i>a</i>}\)
         </div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>b</i></span><span class="denominator"><i>a</i></span></span> is rational.</div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \(\frac{<i>b</i>}{<i>a</i>}\) is rational.</div>
         <div class="step">This implies √2 is rational.</div>
         <div class="step">But this contradicts the fact that √2 is irrational.</div>
-        <div class="final-answer">Hence, <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> is irrational.</div>
+        <div class="final-answer">Hence, \(\frac{1}{√2}\) is irrational.</div>
 
         <!-- Part (ii) -->
         <div class="sub-question">(ii) 7√5</div>
 
         <div class="section-title">Proof:</div>
         <div class="step">Let us assume 7√5 is rational.</div>
-        <div class="step">So, 7√5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">So, 7√5 = \(\frac{<i>a</i>}{<i>b</i>}\) (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
         <div class="step">Rearranging:</div>
         <div class="step">
-            √5 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator">7<i>b</i></span></span>
+            √5 = \(\frac{<i>a</i>}{7<i>b</i>}\)
         </div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator">7<i>b</i></span></span> is rational.</div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \(\frac{<i>a</i>}{7<i>b</i>}\) is rational.</div>
         <div class="step">This implies √5 is rational.</div>
         <div class="step">But this contradicts the fact that √5 is irrational.</div>
         <div class="final-answer">Hence, 7√5 is irrational.</div>
@@ -285,15 +295,15 @@
 
         <div class="section-title">Proof:</div>
         <div class="step">Let us assume 6 + √2 is rational.</div>
-        <div class="step">So, 6 + √2 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">So, 6 + √2 = \(\frac{<i>a</i>}{<i>b</i>}\) (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
         <div class="step">Transposing 6 to the RHS:</div>
         <div class="step">
-            √2 = <span class="fraction"><span class="numerator"><i>a</i></span><span class="denominator"><i>b</i></span></span> - 6
+            √2 = \(\frac{<i>a</i>}{<i>b</i>}\) - 6
         </div>
         <div class="step">
-            √2 = <span class="fraction"><span class="numerator"><i>a</i> - 6<i>b</i></span><span class="denominator"><i>b</i></span></span>
+            √2 = \(\frac{<i>a</i> - 6<i>b</i>}{<i>b</i>}\)
         </div>
-        <div class="step">Since <i>a</i> and <i>b</i> are integers, <span class="fraction"><span class="numerator"><i>a</i> - 6<i>b</i></span><span class="denominator"><i>b</i></span></span> is rational.</div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \(\frac{<i>a</i> - 6<i>b</i>}{<i>b</i>}\) is rational.</div>
         <div class="step">This implies √2 is rational.</div>
         <div class="step">But this contradicts the fact that √2 is irrational.</div>
         <div class="final-answer">Hence, 6 + √2 is irrational.</div>

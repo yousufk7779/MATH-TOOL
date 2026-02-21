@@ -5,9 +5,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/pyqData";
 
-import { Feather } from "@expo/vector-icons";
-import { Pressable } from "react-native";
-import { useSavedItems } from "@/context/SavedItemsContext";
+
 
 import { MathRender } from "@/components/MathRender";
 
@@ -23,26 +21,6 @@ interface QuestionCardProps {
 }
 
 function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
-  const { isBookmarked, isImportant, toggleBookmark, toggleImportant } = useSavedItems();
-
-  const bookmarked = isBookmarked(question.id);
-  const important = isImportant(question.id);
-
-  const handleBookmark = () => {
-    toggleBookmark({
-      id: question.id,
-      type: "question",
-      chapterId: chapterId,
-    });
-  };
-
-  const handleImportant = () => {
-    toggleImportant({
-      id: question.id,
-      type: "question",
-      chapterId: chapterId,
-    });
-  };
   return (
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
@@ -50,22 +28,6 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           <ThemedText style={[styles.questionNumber, { color: accentColor }, titleStyle]}>
             {question.number}
           </ThemedText>
-          <View style={styles.actionsContainer}>
-            <Pressable onPress={handleBookmark} style={styles.actionButton}>
-              <Feather
-                name="bookmark"
-                size={20}
-                color={bookmarked ? JiguuColors.accent1 : JiguuColors.textSecondary}
-              />
-            </Pressable>
-            <Pressable onPress={handleImportant} style={styles.actionButton}>
-              <Feather
-                name="star"
-                size={20}
-                color={important ? "#FFAB00" : JiguuColors.textSecondary}
-              />
-            </Pressable>
-          </View>
         </View>
         <View style={styles.questionTextContainer}>
           <MathRender

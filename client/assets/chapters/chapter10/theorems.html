@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circles - Theorms</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
 
@@ -121,19 +121,29 @@
             }
         }
     </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 10: Theorems</div>
-    </div>
-
-    <div class="content-box">
+<div class="content-box">
         <div class="question">Theorem 10.1: The tangent at any point of a circle is perpendicular to the radius through
             the point of contact.</div>
-        <img src="images/theorem_10_1.svg" alt="Theorem 10.1 Diagram">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTkwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjIwMCIgeTI9IjIzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIzMCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBQb2ludCBQIC0tPg0KICA8dGV4dCB4PSIyMTAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBYWSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjMwIiB4Mj0iMzUwIiB5Mj0iMjMwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5YPC90ZXh0Pg0KICA8dGV4dCB4PSIzNDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+WTwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjgwIiBjeT0iMjMwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIyODUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gTGluZSBPUSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjI4MCIgeTI9IjIzMCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2wgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIwMCwyMjAgMjEwLDIyMCAyMTAsMjMwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Theorem 10.1 Diagram">
         <div class="solution-header">Proof:</div>
         <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O and a tangent XY at a
             point P.</div>
@@ -157,7 +167,7 @@
     <div class="content-box">
         <div class="question">Theorem 10.2: The lengths of tangents drawn from an external point to a circle are equal.
         </div>
-        <img src="images/theorem_10_2.svg" alt="Theorem 10.2 Diagram">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTUwIiByPSI2MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjE1MCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTQwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIEV4dGVybmFsIFBvaW50IFAgLS0+DQogIDxjaXJjbGUgY3g9IjMyMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMzMwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPlA8L3RleHQ+DQogIA0KICA8IS0tIFRhbmdlbnQgUG9pbnRzIFEgYW5kIFIgY2FsY3VsYXRlZCAtLT4NCiAgPCEtLSBUYW5nZW50IGNvbnRhY3QgcG9pbnRzIGZvciBjaXJjbGUgKDE1MCwxNTApIHI9NjAgZnJvbSBQKDMyMCwxNTApIC0tPg0KICA8IS0tIGRpc3RhbmNlIE9QID0gMTcwLiBhbmdsZSA9IGFjb3MoNjAvMTcwKSA9IDY5LjMgZGVnIC0tPg0KICA8IS0tIFEgaXMgYXQgYW5nbGUgLTY5LjMsIFIgYXQgKzY5LjMgcmVsYXRpdmUgdG8gT1AgbGluZT8gTm8sIE9QIGlzIGhvcml6b250YWwgLS0+DQogIDwhLS0gV2FpdCwgYW5nbGUgaXMgYWNvcyhyL2QpLiBRKHgseSkgPSAoMTUwICsgNjAqY29zKGEpLCAxNTAgLSA2MCpzaW4oYSkpIC0tPg0KICA8IS0tIEFjdHVhbGx5IGJhc2ljIGdlb21ldHJ5OiBRIGlzICgxNTAgKyA2MCo2MC8xNzAsIDE1MCAtIDYwKnNxcnQoMTcwXjItNjBeMikvMTcwKSBhcHByb3ggLS0+DQogIDwhLS0gTGV0J3MgbWF4aW1pemUgY2xhcml0eSB2aXN1YWxseS4gUSBhcHByb3ggYXQgKDE3MSwgOTMpLCBSIGF0ICgxNzEsIDIwNykgLS0+DQogIA0KICA8IS0tIFRhbmdlbnQgUFEgLS0+DQogIDxsaW5lIHgxPSIzMjAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSI5MyIgcj0iMyIgZmlsbD0iYmxhY2siLz4NCiAgPHRleHQgeD0iMTcwIiB5PSI4NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBQUiAtLT4NCiAgPGxpbmUgeDE9IjMyMCIgeTE9IjE1MCIgeDI9IjE3MSIgeTI9IjIwNyIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8Y2lyY2xlIGN4PSIxNzEiIGN5PSIyMDciIHI9IjMiIGZpbGw9ImJsYWNrIi8+DQogIDx0ZXh0IHg9IjE3MCIgeT0iMjI1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5SPC90ZXh0Pg0KICANCiAgPCEtLSBSYWRpaSBPUSBhbmQgT1IgLS0+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSI5MyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxsaW5lIHgxPSIxNTAiIHkxPSIxNTAiIHgyPSIxNzEiIHkyPSIyMDciIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPg0KICANCiAgPCEtLSBMaW5lIE9QIC0tPg0KICA8bGluZSB4MT0iMTUwIiB5MT0iMTUwIiB4Mj0iMzIwIiB5Mj0iMTUwIiBzdHJva2U9ImJsdWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNSw1Ii8+DQogIA0KICA8IS0tIFJpZ2h0IEFuZ2xlIFN5bWJvbHMgLS0+DQogIDwhLS0gQXBwcm94aW1hdGUgcHJvamVjdGlvbiBmb3Igc3ltYm9sIC0tPg0KICA8cG9seWxpbmUgcG9pbnRzPSIxNjUsMTA3IDE3OCwxMTIgMTg0LDk4IiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMTY1LDE5MyAxNzgsMTg4IDE4NCwyMDIiIHN0cm9rZT0iYmxhY2siIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIvPg0KICANCiAgPCEtLSBFcXVhbGl0eSBNYXJrcyAtLT4NCiAgPGxpbmUgeDE9IjI0MCIgeTE9IjExNSIgeDI9IjI1MCIgeTI9IjEyNSIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICA8bGluZSB4MT0iMjQwIiB5MT0iMTg1IiB4Mj0iMjUwIiB5Mj0iMTc1IiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIA0KPC9zdmc+" alt="Theorem 10.2 Diagram">
         <div class="solution-header">Proof:</div>
         <div class="step"><strong style="color: #1565C0;">Given:</strong> A circle with center O. An external point P.
             Two tangents PQ and PR drawn from P to the circle.</div>

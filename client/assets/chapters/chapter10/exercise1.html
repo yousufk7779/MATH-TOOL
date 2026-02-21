@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circles - Exercise 10.1</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
 
@@ -128,18 +128,28 @@
             }
         }
     </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="header">
-        <div class="logo">JIGUU</div>
-        <div class="chapter-title">Chapter 10: Exercise 10.1</div>
-    </div>
-
-    <div class="content-box">
+<div class="content-box">
         <div class="question">1. How many tangents can a circle have?</div>
-        <img src="images/ex10_1_q1.svg" alt="Infinite Tangents">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI2MCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSIzIiBmaWxsPSIjMDAwIi8+IDx0ZXh0IHg9IjE5MCIgeT0iMTQwIiBmb250LXdlaWdodD0iYm9sZCI+TzwvdGV4dD4NCg0KICA8IS0tIEV4dGVybmFsIFBvaW50IC0tPg0KICA8Y2lyY2xlIGN4PSIzNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9IiMwMDAiLz4gPHRleHQgeD0iMzYwIiB5PSIxNTAiIGZvbnQtd2VpZ2h0PSJib2xkIj5QPC90ZXh0Pg0KICANCiAgPCEtLSBUYW5nZW50cyBmcm9tIHBvaW50IGluc2lkZT8gTm8sIFExIHNheXMgaW5maW5pdGUuIC0tPg0KICA8dGV4dCB4PSIyMDAiIHk9IjI1MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNCI+SW5maW5pdGUgcG9pbnRzIG9uIGNpcmNsZSAtPiBJbmZpbml0ZSB0YW5nZW50czwvdGV4dD4NCiAgDQogIDwhLS0gU2hvdyBhIGZldyB0YW5nZW50cyAtLT4NCiAgPGxpbmUgeDE9IjE0MCIgeTE9IjE1MCIgeDI9IjE0MCIgeTI9IjI1MCIgc3Ryb2tlPSJyZWQiIHN0cm9rZS13aWR0aD0iMSIvPg0KICA8bGluZSB4MT0iMjYwIiB5MT0iMTUwIiB4Mj0iMjYwIiB5Mj0iNTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjkwIiB4Mj0iMzAwIiB5Mj0iOTAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjEiLz4NCjwvc3ZnPg==" alt="Infinite Tangents">
         <div class="solution-header">Solution:</div>
         <div class="step"><strong style="color: #1565C0;">Answer:</strong> Infinitely many.</div>
         <div class="step"><strong style="color: #1565C0;">Explanation:</strong></div>
@@ -152,7 +162,7 @@
     <div class="content-box">
         <div class="question">2. Fill in the blanks:</div>
             here]</div>
-        <img src="images/ex10_1_q2.svg" alt="Secant vs Tangent">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIA0KICA8IS0tIExpbmUgMTogU2VjYW50IC0gSW50ZXJzZWN0cyBhdCB0d28gcG9pbnRzIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIxMjAiIHgyPSIzNTAiIHkyPSIxMjAiIHN0cm9rZT0iYmx1ZSIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMTEwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPlNlY2FudDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMTM3IiBjeT0iMTIwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8Y2lyY2xlIGN4PSIyNjMiIGN5PSIxMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+DQogIA0KICA8IS0tIExpbmUgMjogVGFuZ2VudCAtIFRvdWNoZXMgYXQgb25lIHBvaW50IC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMjAiIHgyPSIzNTAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+VGFuZ2VudDwvdGV4dD4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMjIwIiByPSIzIiBmaWxsPSJibGFjayIvPiA8IS0tIFBvaW50IG9mIGNvbnRhY3QgLS0+DQogIDx0ZXh0IHg9IjIwMCIgeT0iMjQwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Qb2ludCBvZiBDb250YWN0PC90ZXh0Pg0KDQo8L3N2Zz4=" alt="Secant vs Tangent">
         <div class="solution-header">Solution:</div>
         <div class="sub-question">(i) A tangent to a circle intersects it in _____ point(s).</div>
         <div class="step"><strong style="color: #2E7D32;">Answer:</strong> One</div>
@@ -170,7 +180,7 @@
     <div class="content-box">
         <div class="question">3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O
             at a point Q so that OQ = 12 cm. Length PQ is:</div>
-        <img src="images/ex10_1_q3.svg" alt="Tangent PQ Calculation">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTAgMjUwIiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjI1MCI+DQogIDwhLS0gU3R5bGVzIC0tPg0KICA8ZGVmcz4NCiAgICA8c3R5bGU+DQogICAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiAnVGltZXMgTmV3IFJvbWFuJywgc2VyaWY7IGZvbnQtc2l6ZTogMThweDsgZmlsbDogYmxhY2s7IH0NCiAgICAgIC5sYWJlbCB7IGZvbnQtd2VpZ2h0OiBib2xkOyB9DQogICAgPC9zdHlsZT4NCiAgPC9kZWZzPg0KDQogIDwhLS0gQ29vcmRpbmF0ZXM6IE8oMjMwLCAxODApLCBSYWRpdXM9NjAgKHNjYWxlZCkgLT4gUCgyMzAsIDEyMCkgLS0+DQogIDwhLS0gUSBpcyBhdCB4PTk5LCB5PTEyMCAtLT4NCiAgDQogIDwhLS0gQ2lyY2xlIC0tPg0KICA8IS0tIENvbG9yOiBCbHVlICMxOTc2RDIgLS0+DQogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE4MCIgcj0iNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE5NzZEMiIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQogIA0KICA8IS0tIFRyaWFuZ2xlIE9QUSAtLT4NCiAgPCEtLSBPIHRvIFAgKFJhZGl1cykgLS0+DQogIDwhLS0gQ29sb3I6IFJlZCAjRDMyRjJGIC0tPg0KICA8bGluZSB4MT0iMjMwIiB5MT0iMTgwIiB4Mj0iMjMwIiB5Mj0iMTIwIiBzdHJva2U9IiNEMzJGMkYiIHN0cm9rZS13aWR0aD0iMi41IiAvPg0KICANCiAgPCEtLSBQIHRvIFEgKFRhbmdlbnQpIC0tPg0KICA8IS0tIENvbG9yOiBHcmVlbiAjMzg4RTNDIC0tPg0KICA8IS0tIFN0b3BzIGV4YWN0bHkgYXQgUSAoeD05OSkgLS0+DQogIDxsaW5lIHgxPSIyMzAiIHkxPSIxMjAiIHgyPSI5OSIgeTI9IjEyMCIgc3Ryb2tlPSIjMzg4RTNDIiBzdHJva2Utd2lkdGg9IjIuNSIgLz4NCg0KICA8IS0tIE8gdG8gUSAoSHlwb3RlbnVzZSkgLS0+DQogIDwhLS0gQ29sb3I6IE9yYW5nZSAjRjU3QzAwIC0tPg0KICA8bGluZSB4MT0iMjMwIiB5MT0iMTgwIiB4Mj0iOTkiIHkyPSIxMjAiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIC8+DQoNCiAgPCEtLSBSaWdodCBhbmdsZSBtYXJrZXIgYXQgUCAtLT4NCiAgPHBvbHlsaW5lIHBvaW50cz0iMjMwLDEzNSAyMTUsMTM1IDIxNSwxMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS41IiAvPg0KDQogIDwhLS0gUG9pbnRzIC0tPg0KICA8Y2lyY2xlIGN4PSIyMzAiIGN5PSIxODAiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPiA8IS0tIE8gLS0+DQogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjEyMCIgcj0iMyIgZmlsbD0iYmxhY2siIC8+IDwhLS0gUCAtLT4NCiAgPGNpcmNsZSBjeD0iOTkiIGN5PSIxMjAiIHI9IjMiIGZpbGw9ImJsYWNrIiAvPiAgPCEtLSBRIC0tPg0KDQogIDwhLS0gUG9pbnRzIGFuZCBMYWJlbHMgLS0+DQogIDwhLS0gTyAtLT4NCiAgPHRleHQgeD0iMjMwIiB5PSIyMDUiIGNsYXNzPSJ0ZXh0IGxhYmVsIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5PPC90ZXh0Pg0KICA8IS0tIFAgLS0+DQogIDx0ZXh0IHg9IjIzMCIgeT0iMTEwIiBjbGFzcz0idGV4dCBsYWJlbCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UDwvdGV4dD4NCiAgPCEtLSBRIC0tPg0KICA8dGV4dCB4PSI5MCIgeT0iMTI1IiBjbGFzcz0idGV4dCBsYWJlbCIgdGV4dC1hbmNob3I9ImVuZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gRGltZW5zaW9uIExhYmVscyAtLT4NCiAgPCEtLSA1IGNtIChSYWRpdXMpIC0tPg0KICA8dGV4dCB4PSIyNDAiIHk9IjE1NSIgY2xhc3M9InRleHQiPjUgY208L3RleHQ+DQogIA0KICA8IS0tIDEyIGNtIChIeXBvdGVudXNlIE9RKSAtLT4NCiAgPHRleHQgeD0iMTMwIiB5PSIxNzAiIGNsYXNzPSJ0ZXh0Ij4xMiBjbTwvdGV4dD4NCg0KPC9zdmc+" alt="Tangent PQ Calculation">
         <div class="solution-header">Solution:</div>
         <div class="step"><strong style="color: #1565C0;">Given:</strong> Radius OP = 5 cm. Distance OQ = 12 cm. PQ is a
             tangent at P.</div>
@@ -194,7 +204,7 @@
     <div class="content-box">
         <div class="question">4. Draw a circle and two lines parallel to a given line such that one is a tangent and the
             other, a secant to the circle.</div>
-        <img src="images/ex10_1_q4.svg" alt="Parallel Lines Diagram">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI3MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPHRleHQgeD0iMjEwIiB5PSIxNDUiIGZvbnQtc2l6ZT0iMTQiPk88L3RleHQ+DQoNCiAgPCEtLSBHaXZlbiBMaW5lIChPdXRzaWRlKSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjYwIiB4Mj0iMzUwIiB5Mj0iMjYwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCI+R2l2ZW4gTGluZTwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCAoUGFyYWxsZWwpIC0tPg0KICA8bGluZSB4MT0iNTAiIHkxPSIyMjAiIHgyPSIzNTAiIHkyPSIyMjAiIHN0cm9rZT0icmVkIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIyMTAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0icmVkIj5UYW5nZW50PC90ZXh0Pg0KICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSIyMjAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+IDwhLS0gQ29udGFjdCAtLT4NCiAgDQogIDwhLS0gU2VjYW50IChQYXJhbGxlbCkgLS0+DQogIDxsaW5lIHgxPSI1MCIgeTE9IjE4MCIgeDI9IjM1MCIgeTI9IjE4MCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBtYXJrZXItc3RhcnQ9InVybCgjYXJyb3cpIi8+DQogIDx0ZXh0IHg9IjYwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmx1ZSI+U2VjYW50PC90ZXh0Pg0KICANCiAgPCEtLSBQYXJhbGxlbCBtYXJrZXJzIC0tPg0KICA8cGF0aCBkPSJNMTkwLDI2MCBMMjAwLDI1MCBNMTk1LDI2MCBMMjA1LDI1MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxIi8+DQogIDxwYXRoIGQ9Ik0xOTAsMjIwIEwyMDAsMjEwIE0xOTUsMjIwIEwyMDUsMjEwIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgPHBhdGggZD0iTTE5MCwxODAgTDIwMCwxNzAgTTE5NSwxODAgTDIwNSwxNzAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMSIvPg0KPC9zdmc+" alt="Parallel Lines Diagram">
         <div class="solution-header">Solution:</div>
         <div class="step"><strong style="color: #1565C0;">To Do:</strong> Draw a circle and lines parallel to a given
             line (one tangent, one secant).</div>
