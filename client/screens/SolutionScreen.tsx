@@ -193,6 +193,24 @@ function SolutionScreen() {
 
 
 
+  let tab1Title = "Overview";
+  let tab2Title = "Exercises";
+  const tab3Title = "MCQs";
+
+  if (chapterId.startsWith("sci-")) {
+    tab1Title = "Quick Revision";
+    tab2Title = "NCERT Solutions";
+  } else if (chapterId.startsWith("sst-")) {
+    tab1Title = "Key Concepts";
+    tab2Title = "Q & A";
+  } else if (chapterId.startsWith("eng-gra-")) {
+    tab1Title = "Rules & Formats";
+    tab2Title = "Practice Sets";
+  } else if (chapterId.startsWith("eng-")) {
+    tab1Title = "Summary";
+    tab2Title = "Q & A";
+  }
+
   return (
     <ScreenWrapper showBackButton>
       <View style={[styles.staticContainer, ch5Background]}>
@@ -207,26 +225,21 @@ function SolutionScreen() {
 
         <View style={styles.tabContainer}>
           <TabButton
-            title="Overview"
+            title={tab1Title}
             isActive={activeSection === "overview"}
             onPress={() => handleSectionChange("overview")}
             color={accentColor}
             textStyle={hwTitleStyle}
           />
           <TabButton
-            title={
-              chapterId.startsWith("sci-") ? "Solutions" :
-                chapterId.startsWith("sst-") ? "Solutions" :
-                  chapterId.startsWith("eng-") ? "Q & A" :
-                    "Exercises"
-            }
+            title={tab2Title}
             isActive={activeSection === "exercises"}
             onPress={() => handleSectionChange("exercises")}
             color={accentColor}
             textStyle={hwTitleStyle}
           />
           <TabButton
-            title="MCQs"
+            title={tab3Title}
             isActive={activeSection === "mcq"}
             onPress={() => handleSectionChange("mcq")}
             color={accentColor}
