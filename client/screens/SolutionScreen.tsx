@@ -340,6 +340,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     gap: Spacing.sm,
     alignItems: "center",
+    justifyContent: "center",
+    flexGrow: 1,
   },
   subTabButton: {
     paddingVertical: 6,

@@ -69,6 +69,48 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
             }
 
             /* Specific component styling */
+            .section-title {
+                color: #FFD700 !important;
+                font-family: 'Kalam', cursive, sans-serif !important;
+                font-size: 1.5em !important;
+                font-weight: 700 !important;
+                border-bottom: 2px dashed #FFD700 !important;
+                margin-top: 25px !important;
+                margin-bottom: 10px !important;
+                text-decoration: none !important;
+            }
+            .content-text {
+                font-size: 1.1em !important;
+                line-height: 1.6 !important;
+                margin-bottom: 15px !important;
+                padding-left: 12px !important;
+                border-left: 4px solid #FFD700 !important;
+                background-color: transparent !important;
+                color: #E0E0E0 !important;
+            }
+            .highlight-text {
+                color: #FFD700 !important;
+                font-weight: 700 !important;
+            }
+            .formula {
+                background: transparent !important;
+                border: none !important;
+                color: #FFD700 !important; /* Theme highlight color */
+                font-weight: 700 !important;
+                padding: 0 !important;
+                display: inline !important;
+            }
+            .formula-block {
+                background: transparent !important;
+                border: none !important;
+                text-align: center;
+                margin: 10px 0;
+            }
+            mark, .highlight {
+                background: transparent !important;
+                color: #FFD700 !important;
+                font-weight: 700 !important;
+            }
             .question { 
                 color: #FFFFFF !important; 
                 font-weight: 700; 
