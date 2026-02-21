@@ -15,43 +15,7 @@ import { useSavedItems } from "@/context/SavedItemsContext";
 
 import { ParsedText } from "@/components/ParsedText";
 
-const graphImages: Record<string, any> = {
-  "graph_ex2_1_q1_a": require("@/assets/images/polynomials/graph_ex2_1_q1_a.jpg"),
-  "graph_ex2_1_q1_b": require("@/assets/images/polynomials/graph_ex2_1_q1_b.jpg"),
-  "graph_ex2_1_q1_c": require("@/assets/images/polynomials/graph_ex2_1_q1_c.jpg"),
-  "graph_ex2_1_q1_d": require("@/assets/images/polynomials/graph_ex2_1_q1_d.jpg"),
-  "graph_ex2_1_q1_e": require("@/assets/images/polynomials/graph_ex2_1_q1_e.jpg"),
-  "graph_ex2_1_q1_f": require("@/assets/images/polynomials/graph_ex2_1_q1_f.jpg"),
-  "ap_spiral": require("@/assets/chapter5/images/fig_5_4.png"),
-  "ap_logs": require("@/assets/chapter5/images/fig_5_5.png"),
-  "ap_potato_race": require("@/assets/chapter5/images/fig_5_6.png"),
-  // Chapter 3 Images
-  "fig_ex3_1_q1_aftab.svg": require("@/assets/chapter3/images/fig_ex3_1_q1_aftab.svg"),
-  "fig_ex3_1_q2_cricket.svg": require("@/assets/chapter3/images/fig_ex3_1_q2_cricket.svg"),
-  "fig_ex3_1_q3_grapes.svg": require("@/assets/chapter3/images/fig_ex3_1_q3_grapes.svg"),
-  "fig_ex3_2_q1_i.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_i.svg"),
-  "fig_ex3_2_q1_ii.svg": require("@/assets/chapter3/images/fig_ex3_2_q1_ii.svg"),
-  "fig_ex3_2_q4_iii.svg": require("@/assets/chapter3/images/fig_ex3_2_q4_iii.svg"),
-  "fig_ex3_2_q5.svg": require("@/assets/chapter3/images/fig_ex3_2_q5.svg"),
-  "fig_ex3_2_q7.svg": require("@/assets/chapter3/images/fig_ex3_2_q7.svg"),
-  "fig_ex3_new_q4_i.svg": require("@/assets/chapter3/images/fig_ex3_new_q4_i.svg"),
-  "fig_example_1.svg": require("@/assets/chapter3/images/fig_example_1.svg"),
-  "fig_example_2.svg": require("@/assets/chapter3/images/fig_example_2.svg"),
-  "fig_example_3.svg": require("@/assets/chapter3/images/fig_example_3.svg"),
-  "fig_example_7.svg": require("@/assets/chapter3/images/fig_example_7.svg"),
-  "mcq_k_value.svg": require("@/assets/chapter3/images/mcq_k_value.svg"),
-  "mcq_ratios.svg": require("@/assets/chapter3/images/mcq_ratios.svg"),
-  "mcq_solutions.svg": require("@/assets/chapter3/images/mcq_solutions.svg"),
-  // Chapter 5 Images
-  "fig_5_4.png": require("@/assets/chapter5/images/fig_5_4.png"),
-  "fig_5_5.png": require("@/assets/chapter5/images/fig_5_5.png"),
-  "fig_5_6.png": require("@/assets/chapter5/images/fig_5_6.png"),
-  // Chapter 4 Images
-  "ex4_1_q2_i.svg": require("@/assets/chapter4/images/ex4_1_q2_i.svg"),
-  "ex4_2_q5.svg": require("@/assets/chapter4/images/ex4_2_q5.svg"),
-  "ex4_3_q3.svg": require("@/assets/chapter4/images/ex4_3_q3.svg"),
-  "ex4_3_q5.svg": require("@/assets/chapter4/images/ex4_3_q5.svg"),
-};
+const graphImages: Record<string, any> = {};
 
 interface QuestionCardProps {
   question: Question;
