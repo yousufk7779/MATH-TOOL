@@ -159,6 +159,10 @@ function SolutionScreen() {
     }
   }, [activeSection, exerciseSubSections]);
 
+  const [contentScale, setContentScale] = useState<number>(1);
+  const zoomIn = useCallback(() => setContentScale(prev => Math.min(prev + 0.2, 2.5)), []);
+  const zoomOut = useCallback(() => setContentScale(prev => Math.max(prev - 0.2, 0.8)), []);
+
   const renderSectionContent = useCallback(() => {
     let sectionToFetch = activeSection as string;
     if (activeSection === "exercises") {
@@ -175,14 +179,84 @@ function SolutionScreen() {
       );
     }
 
+    const scaledBody = { ...Typography.body, fontSize: (Typography.body.fontSize || 16) * contentScale };
+    const scaledH4 = { ...Typography.h4, fontSize: (Typography.h4.fontSize || 20) * contentScale };
+    const scaledSmall = { ...Typography.small, fontSize: (Typography.small.fontSize || 14) * contentScale };
+
     return (
-      <View style={{ padding: Spacing.md }}>
-        <ThemedText style={{ textAlign: 'center', color: JiguuColors.textSecondary }}>
-          Pure Native UI data block for {sectionToFetch} will render here via chapterData.
-        </ThemedText>
+      <View style={{ padding: Spacing.md, paddingBottom: 60 }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'flex-end', marginBottom: Spacing.sm, gap: Spacing.sm }}>
+          <Pressable onPress={zoomIn} style={{ padding: 8, backgroundColor: JiguuColors.surfaceLight, borderRadius: 8 }}>
+            <Feather name="zoom-in" size={20} color={JiguuColors.textPrimary} />
+          </Pressable>
+          <Pressable onPress={zoomOut} style={{ padding: 8, backgroundColor: JiguuColors.surfaceLight, borderRadius: 8 }}>
+            <Feather name="zoom-out" size={20} color={JiguuColors.textPrimary} />
+          </Pressable>
+        </View>
+
+        {activeSection === "overview" && (
+          <View style={{ gap: Spacing.md }}>
+            <ThemedText style={[scaledBody, { color: JiguuColors.textPrimary }]}>{chapterData.introduction}</ThemedText>
+
+            {chapterData.definitions && chapterData.definitions.length > 0 && (
+              <View style={{ marginTop: Spacing.md, backgroundColor: JiguuColors.surface, padding: Spacing.md, borderRadius: BorderRadius.md }}>
+                <ThemedText style={[scaledH4, { color: accentColor, marginBottom: Spacing.sm }]}>Key Definitions</ThemedText>
+                {chapterData.definitions.map((def, idx) => (
+                  <View key={idx} style={{ marginBottom: Spacing.sm }}>
+                    <ThemedText style={[scaledBody, { fontFamily: "Nunito_700Bold", color: JiguuColors.textPrimary }]}>{def.term}:</ThemedText>
+                    <ThemedText style={[scaledSmall, { color: JiguuColors.textSecondary }]}>{def.description}</ThemedText>
+                  </View>
+                ))}
+              </View>
+            )}
+
+            {chapterData.keyPoints && chapterData.keyPoints.length > 0 && (
+              <View style={{ marginTop: Spacing.md }}>
+                <ThemedText style={[scaledH4, { color: accentColor, marginBottom: Spacing.sm }]}>Important Points</ThemedText>
+                {chapterData.keyPoints.map((kp, idx) => (
+                  <View key={idx} style={{ flexDirection: 'row', marginBottom: Spacing.xs }}>
+                    <View style={{ width: 8, height: 8, borderRadius: 4, backgroundColor: accentColor, marginTop: 8, marginRight: 8 }} />
+                    <ThemedText style={[scaledBody, { color: JiguuColors.textPrimary, flex: 1 }]}>{kp}</ThemedText>
+                  </View>
+                ))}
+              </View>
+            )}
+          </View>
+        )}
+
+        {activeSection === "exercises" && (
+          <View style={{ gap: Spacing.lg }}>
+            {chapterData.exercises?.find((ex: any) => ex.id === sectionToFetch)?.questions?.map((q: any) => (
+              <View key={q.id} style={{ backgroundColor: JiguuColors.surface, padding: Spacing.md, borderRadius: BorderRadius.md }}>
+                <ThemedText style={[scaledH4, { color: accentColor, marginBottom: Spacing.sm }]}>Q{q.number}. {q.question}</ThemedText>
+                <View style={{ marginTop: Spacing.sm, paddingLeft: Spacing.sm, borderLeftWidth: 2, borderLeftColor: JiguuColors.border }}>
+                  {q.solution.map((step: string, sIdx: number) => (
+                    <ThemedText key={sIdx} style={[scaledBody, { color: JiguuColors.textSecondary, marginBottom: Spacing.xs }]}>{step}</ThemedText>
+                  ))}
+                </View>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {activeSection === "mcq" && (
+          <View style={{ gap: Spacing.lg }}>
+            {chapterData.mcqs?.map((mcq: any, idx: number) => (
+              <View key={mcq.id} style={{ backgroundColor: JiguuColors.surface, padding: Spacing.md, borderRadius: BorderRadius.md }}>
+                <ThemedText style={[scaledH4, { color: accentColor, marginBottom: Spacing.md }]}>Q{idx + 1}. {mcq.question}</ThemedText>
+                {mcq.options.map((opt: string, oIdx: number) => (
+                  <View key={oIdx} style={{ padding: Spacing.sm, borderWidth: 1, borderColor: JiguuColors.border, borderRadius: BorderRadius.sm, marginBottom: Spacing.xs }}>
+                    <ThemedText style={[scaledBody, { color: JiguuColors.textSecondary }]}>{opt}</ThemedText>
+                  </View>
+                ))}
+              </View>
+            ))}
+          </View>
+        )}
+
       </View>
     );
-  }, [chapterData, activeSection, activeSubSection]);
+  }, [chapterData, activeSection, activeSubSection, contentScale, accentColor]);
 
 
 
