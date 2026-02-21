@@ -25,7 +25,7 @@ export type RootStackParamList = {
   ScienceTopics: undefined;
   SocialScienceTopics: undefined;
   EnglishTopics: undefined;
-  ChapterList: undefined;
+  ChapterList: { subject?: string; topic?: string } | undefined;
   Solution: {
     chapterId: string;
     chapterName: string;

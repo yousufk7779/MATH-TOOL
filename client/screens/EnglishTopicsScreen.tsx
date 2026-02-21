@@ -16,7 +16,7 @@ function EnglishTopicsScreen() {
     const isLandscape = width > height;
 
     return (
-        <ScreenWrapper>
+        <ScreenWrapper showBackButton>
             <ScrollView
                 style={styles.scrollView}
                 contentContainerStyle={[
@@ -37,7 +37,7 @@ function EnglishTopicsScreen() {
                             testID="button-prose"
                             title="PROSE"
                             color="#3F51B5"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "English", topic: "Prose" })}
                         />
                     </View>
 
@@ -46,7 +46,7 @@ function EnglishTopicsScreen() {
                             testID="button-poetry"
                             title="POETRY"
                             color="#E91E63"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "English", topic: "Poetry" })}
                         />
                     </View>
 
@@ -55,7 +55,7 @@ function EnglishTopicsScreen() {
                             testID="button-short-stories"
                             title="SHORT STORIES"
                             color="#009688"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "English", topic: "Short Stories" })}
                         />
                     </View>
 
@@ -64,7 +64,7 @@ function EnglishTopicsScreen() {
                             testID="button-grammar"
                             title="GRAMMER"
                             color="#FF5722"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "English", topic: "Grammer" })}
                         />
                     </View>
                 </View>

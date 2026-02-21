@@ -1,6 +1,6 @@
 import React, { memo, useCallback } from "react";
 import { StyleSheet, FlatList, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
@@ -18,6 +18,13 @@ const Separator = memo(() => <View style={styles.separator} />);
 
 function ChapterListScreen() {
   const navigation = useNavigation<NavigationProp>();
+  const route = useRoute<RouteProp<RootStackParamList, "ChapterList">>();
+
+  const subject = route.params?.subject || "Mathematics";
+  const topic = route.params?.topic || "";
+
+  // Only show Mathematics chapters right now
+  const displayChapters = subject === "Mathematics" ? class10Chapters : [];
 
   const renderItem = useCallback(({ item }: { item: Chapter }) => {
     // Assuming all chapters in the list are available if they are in the registry/list.
@@ -46,15 +53,15 @@ function ChapterListScreen() {
 
   const renderEmptyState = useCallback(() => (
     <EmptyState
-      title="No Chapters Found"
-      message="No chapters available yet."
+      title={topic ? `${topic} Chapters` : `${subject} Chapters`}
+      message="Content for this subject is coming incredibly soon in beautiful JSON format!"
     />
-  ), []);
+  ), [subject, topic]);
 
   return (
     <ScreenWrapper showBackButton>
       <FlatList
-        data={class10Chapters}
+        data={displayChapters}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         contentContainerStyle={[

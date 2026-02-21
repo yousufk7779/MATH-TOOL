@@ -50,7 +50,12 @@ export const ColorButton = memo(function ColorButton({
         style,
       ]}
     >
-      <ThemedText style={styles.buttonText}>
+      <ThemedText
+        style={[styles.buttonText, title.length > 12 && { fontSize: 13 }]}
+        numberOfLines={1}
+        adjustsFontSizeToFit={true}
+        minimumFontScale={0.5}
+      >
         {title}
       </ThemedText>
     </Pressable>
@@ -74,5 +79,7 @@ const styles = StyleSheet.create({
     fontFamily: "Kalam_700Bold",
     color: JiguuColors.textOnColor,
     fontSize: 18, // Slightly larger for readability
+    textAlign: "center",
+    paddingHorizontal: Spacing.xs,
   },
 });

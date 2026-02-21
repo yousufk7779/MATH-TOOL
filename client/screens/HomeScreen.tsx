@@ -37,7 +37,7 @@ function HomeScreen() {
               testID="button-math"
               title="MATHEMATICS"
               color="#2962FF"
-              onPress={() => navigation.navigate("ChapterList")}
+              onPress={() => navigation.navigate("ChapterList", { subject: "Mathematics" })}
             />
           </View>
 

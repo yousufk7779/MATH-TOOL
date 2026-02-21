@@ -16,7 +16,7 @@ function SocialScienceTopicsScreen() {
     const isLandscape = width > height;
 
     return (
-        <ScreenWrapper>
+        <ScreenWrapper showBackButton>
             <ScrollView
                 style={styles.scrollView}
                 contentContainerStyle={[
@@ -37,7 +37,7 @@ function SocialScienceTopicsScreen() {
                             testID="button-history"
                             title="HISTORY"
                             color="#F44336"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Social Science", topic: "History" })}
                         />
                     </View>
 
@@ -46,7 +46,7 @@ function SocialScienceTopicsScreen() {
                             testID="button-geography"
                             title="GEOGRAPHY"
                             color="#2196F3"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Social Science", topic: "Geography" })}
                         />
                     </View>
 
@@ -55,7 +55,7 @@ function SocialScienceTopicsScreen() {
                             testID="button-political-science"
                             title="POLITICAL SCIENCE"
                             color="#9C27B0"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Social Science", topic: "Political Science" })}
                         />
                     </View>
 
@@ -64,7 +64,7 @@ function SocialScienceTopicsScreen() {
                             testID="button-disaster-management"
                             title="DISASTER MANAGEMENT"
                             color="#FF9800"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Social Science", topic: "Disaster Management" })}
                         />
                     </View>
 
@@ -73,7 +73,7 @@ function SocialScienceTopicsScreen() {
                             testID="button-road-safety"
                             title="ROAD SAFETY"
                             color="#607D8B"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Social Science", topic: "Road Safety" })}
                         />
                     </View>
                 </View>

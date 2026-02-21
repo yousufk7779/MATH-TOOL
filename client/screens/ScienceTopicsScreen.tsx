@@ -16,7 +16,7 @@ function ScienceTopicsScreen() {
     const isLandscape = width > height;
 
     return (
-        <ScreenWrapper>
+        <ScreenWrapper showBackButton>
             <ScrollView
                 style={styles.scrollView}
                 contentContainerStyle={[
@@ -37,7 +37,7 @@ function ScienceTopicsScreen() {
                             testID="button-physics"
                             title="PHYSICS"
                             color="#E91E63"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Physics" })}
                         />
                     </View>
 
@@ -46,7 +46,7 @@ function ScienceTopicsScreen() {
                             testID="button-chemistry"
                             title="CHEMISTRY"
                             color="#9C27B0"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Chemistry" })}
                         />
                     </View>
 
@@ -55,7 +55,7 @@ function ScienceTopicsScreen() {
                             testID="button-biology"
                             title="BIOLOGY"
                             color="#4CAF50"
-                            onPress={() => navigation.navigate("ChapterList")} // Placeholder for now
+                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Biology" })}
                         />
                     </View>
                 </View>
