@@ -34,10 +34,37 @@ function HomeScreen() {
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-chapters"
-              title="ALL CHAPTERS"
-              color="#00C853"
+              testID="button-math"
+              title="MATHEMATICS"
+              color="#2962FF"
               onPress={() => navigation.navigate("ChapterList")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-science"
+              title="SCIENCE"
+              color="#00C853"
+              onPress={() => navigation.navigate("ScienceTopics")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-social-science"
+              title="SOCIAL SCIENCE"
+              color="#FFAB00"
+              onPress={() => navigation.navigate("SocialScienceTopics")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-english"
+              title="ENGLISH"
+              color="#AA00FF"
+              onPress={() => navigation.navigate("EnglishTopics")}
             />
           </View>
 
@@ -45,17 +72,8 @@ function HomeScreen() {
             <ColorButton
               testID="button-quick-notes"
               title="QUICK NOTES"
-              color="#FFAB00"
+              color={JiguuColors.accent2}
               onPress={() => navigation.navigate("QuickNotes")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-news"
-              title="NEWS & EVENTS"
-              color="#AA00FF"
-              onPress={() => navigation.navigate("NewsEvents")}
             />
           </View>
 
@@ -63,17 +81,8 @@ function HomeScreen() {
             <ColorButton
               testID="button-quiz"
               title="PRACTICE QUIZ"
-              color={JiguuColors.accent2}
-              onPress={() => navigation.navigate("Quiz")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-pyq"
-              title="PREVIOUS YEAR PAPERS"
               color={JiguuColors.accent3}
-              onPress={() => navigation.navigate("GlobalPYQ")}
+              onPress={() => navigation.navigate("Quiz")}
             />
           </View>
 

@@ -18,7 +18,7 @@ app.get("/", (_, res) => {
   res.sendFile(path.join(process.cwd(), "server/templates/landing-page.html"));
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = parseInt(process.env.PORT || "5000", 10);
 server.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
