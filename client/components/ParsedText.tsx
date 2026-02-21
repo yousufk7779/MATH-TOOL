@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, useWindowDimensions, ViewStyle, TextStyle } from 'react-native';
-import RenderHtml from 'react-native-render-html';
+import RenderHtml, { defaultSystemFonts } from 'react-native-render-html';
 import { JiguuColors } from '@/constants/theme';
 
 interface ParsedTextProps {
@@ -76,6 +76,9 @@ export const ParsedText = ({ children, style, Component, accentColor, classesSty
     // Wrap in a div to ensure body styles apply if content is just text
     const htmlContent = `<body>${children}</body>`;
 
+    // Add custom fonts to system fonts so RenderHtml doesn't strip them
+    const systemFonts = [...defaultSystemFonts, 'Kalam_400Regular', 'Kalam_700Bold'];
+
     return (
         <RenderHtml
             contentWidth={width - 48}
@@ -84,6 +87,7 @@ export const ParsedText = ({ children, style, Component, accentColor, classesSty
             classesStyles={dynamicClassesStyles as any}
             baseStyle={flattenedStyle as any}
             enableExperimentalMarginCollapsing={true}
+            systemFonts={systemFonts}
             {...rest}
         />
     );

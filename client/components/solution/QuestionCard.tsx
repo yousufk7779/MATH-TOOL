@@ -61,7 +61,6 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
                   lineHeight: 28,
                   textAlign: "justify",
                   fontFamily: isFormula ? "Kalam_700Bold" : undefined,
-                  fontWeight: isFormula ? "bold" : undefined,
                   ...contentStyle
                 }}
               >
