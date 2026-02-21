@@ -9,7 +9,11 @@ export interface Example { id: string; number: string; question: string; solutio
 export interface Theorem { id: string; number: string; name: string; statement: string; proof?: string[]; example?: string; }
 export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; }
 
-export const chapterContents: Record<string, ChapterContent> = {};
+import { sciPhy1 } from "./content/sci-phy-1";
+
+export const chapterContents: Record<string, ChapterContent> = {
+  "sci-phy-1": sciPhy1,
+};
 
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
