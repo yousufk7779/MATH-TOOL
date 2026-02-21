@@ -11,8 +11,7 @@ import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter } from "@/data/chapters";
-import { ContentService } from "@/services/ContentService";
-import { HTMLPanelRenderer } from "@/components/HTMLPanelRenderer";
+import { getChapterContent } from "@/data/chapterContent";
 
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
@@ -143,14 +142,12 @@ function SolutionScreen() {
     setActiveSection(section);
   }, []);
 
-  const availableSections = ContentService.getAvailableSections(chapterId);
+  const chapterData = getChapterContent(chapterId);
+
   const exerciseSubSections = React.useMemo(() => {
-    return [
-      ...availableSections.filter(s => s.startsWith('exercise') && s !== 'exercises').sort(),
-      availableSections.includes('examples') ? 'examples' : null,
-      availableSections.includes('theorems') ? 'theorems' : null,
-    ].filter(Boolean) as string[];
-  }, [chapterId]);
+    if (!chapterData || !chapterData.exercises) return [];
+    return chapterData.exercises.map((ex: any) => ex.id);
+  }, [chapterData]);
 
   const [activeSubSection, setActiveSubSection] = useState<string>("");
 
@@ -164,30 +161,28 @@ function SolutionScreen() {
 
   const renderSectionContent = useCallback(() => {
     let sectionToFetch = activeSection as string;
-
     if (activeSection === "exercises") {
       sectionToFetch = activeSubSection || "exercises";
     }
 
-    const uri = ContentService.getSectionUri(chapterId, sectionToFetch);
-
-    if (!uri) {
+    if (!chapterData) {
       return (
         <EmptyState
-          title="Content Not Found"
-          message={`The ${sectionToFetch} content for this chapter is missing or being updated.`}
-          icon="alert-circle"
+          title="Content Update in Progress"
+          message={`Premium JSON structured content for this chapter is currently being migrated and will be available very soon.`}
+          icon="clock"
         />
       );
     }
 
     return (
-      <HTMLPanelRenderer
-        htmlUri={uri}
-        targetId=""
-      />
+      <View style={{ padding: Spacing.md }}>
+        <ThemedText style={{ textAlign: 'center', color: JiguuColors.textSecondary }}>
+          Pure Native UI data block for {sectionToFetch} will render here via chapterData.
+        </ThemedText>
+      </View>
     );
-  }, [chapterId, activeSection, activeSubSection]);
+  }, [chapterData, activeSection, activeSubSection]);
 
 
 
@@ -255,7 +250,7 @@ function SolutionScreen() {
               style={styles.subTabScroll}
               contentContainerStyle={styles.subTabContainer}
             >
-              {exerciseSubSections.map((sub, index) => {
+              {exerciseSubSections.map((sub: string, index: number) => {
                 const title = sub === 'examples' ? 'Examples' :
                   sub === 'theorems' ? 'Theorems' :
                     sub.replace('exercise', 'Exercise ');

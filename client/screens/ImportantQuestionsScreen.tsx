@@ -7,40 +7,10 @@ import { Feather } from "@expo/vector-icons";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import { HTMLPanelRenderer } from "@/components/HTMLPanelRenderer";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { useSavedItems } from "@/context/SavedItemsContext";
-import { ContentService } from "@/services/ContentService";
 
-// Helper component (duplicate of BookmarksScreen one for now)
 const SavedItemCard = memo(({ item }: { item: any }) => {
-    const [htmlUri, setHtmlUri] = useState<string | null>(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const loadContent = async () => {
-            let exerciseId = null;
-            const parts = item.id.split('_');
-            if (parts.length >= 2) {
-                exerciseId = parts[1];
-            }
-
-            if (exerciseId && item.chapterId) {
-                let chId = item.chapterId;
-                if (chId.includes('-')) {
-                    chId = chId.split('-')[0];
-                }
-                const uri = ContentService.getSectionUri(chId, 'exercises');
-                setHtmlUri(uri);
-            }
-            setLoading(false);
-        };
-        loadContent();
-    }, [item.id, item.chapterId]);
-
-    if (loading) return <ActivityIndicator size="small" />;
-    if (!htmlUri) return <ThemedText>Content not found</ThemedText>;
-
     return (
         <View style={styles.itemContainer}>
             <View style={styles.itemHeader}>
@@ -50,10 +20,9 @@ const SavedItemCard = memo(({ item }: { item: any }) => {
                 </View>
             </View>
             <View style={styles.panelContainer}>
-                <HTMLPanelRenderer
-                    htmlUri={htmlUri}
-                    targetId={item.id}
-                />
+                <ThemedText style={{ padding: Spacing.md, textAlign: "center" }}>
+                    Content is currently being migrated to JSON format.
+                </ThemedText>
             </View>
         </View>
     );
