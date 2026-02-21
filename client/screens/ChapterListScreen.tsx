@@ -62,6 +62,27 @@ function ChapterListScreen() {
     />
   ), [subject, topic]);
 
+  const renderHeader = useCallback(() => (
+    <View style={styles.actionButtons}>
+      <View style={styles.actionButtonWrapper}>
+        <ColorButton
+          testID="button-bookmarks"
+          title="BOOKMARKS"
+          color={JiguuColors.accent2}
+          onPress={() => navigation.navigate("Bookmarks")}
+        />
+      </View>
+      <View style={styles.actionButtonWrapper}>
+        <ColorButton
+          testID="button-important"
+          title="IMPORTANT"
+          color={JiguuColors.accent3}
+          onPress={() => navigation.navigate("ImportantQuestions")}
+        />
+      </View>
+    </View>
+  ), [navigation]);
+
   return (
     <ScreenWrapper showBackButton>
       <FlatList
@@ -75,6 +96,7 @@ function ChapterListScreen() {
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
         ListEmptyComponent={renderEmptyState}
+        ListHeaderComponent={renderHeader}
       />
     </ScreenWrapper>
   );

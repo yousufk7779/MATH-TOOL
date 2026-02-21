@@ -32,6 +32,24 @@ function EnglishTopicsScreen() {
                 showsVerticalScrollIndicator={false}
             >
                 <View style={styles.buttonsContainer}>
+                    <View style={styles.actionButtons}>
+                        <View style={styles.actionButtonWrapper}>
+                            <ColorButton
+                                testID="button-bookmarks"
+                                title="BOOKMARKS"
+                                color={JiguuColors.accent2}
+                                onPress={() => navigation.navigate("Bookmarks")}
+                            />
+                        </View>
+                        <View style={styles.actionButtonWrapper}>
+                            <ColorButton
+                                testID="button-important"
+                                title="IMPORTANT"
+                                color={JiguuColors.accent3}
+                                onPress={() => navigation.navigate("ImportantQuestions")}
+                            />
+                        </View>
+                    </View>
                     <View style={styles.buttonWrapper}>
                         <ColorButton
                             testID="button-prose"
@@ -87,5 +105,12 @@ const styles = StyleSheet.create({
     },
     buttonWrapper: {
         width: "100%",
+    },
+    actionButtons: {
+        flexDirection: "row",
+        gap: Spacing.md,
+    },
+    actionButtonWrapper: {
+        flex: 1,
     },
 });
