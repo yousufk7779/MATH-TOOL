@@ -48,6 +48,26 @@ const TabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButto
   </Pressable>
 ));
 
+const SubTabButton = memo(({ title, isActive, onPress, color, textStyle }: TabButtonProps) => (
+  <Pressable
+    style={[
+      styles.subTabButton,
+      isActive && { backgroundColor: color, borderColor: color },
+    ]}
+    onPress={onPress}
+  >
+    <ThemedText
+      style={[
+        styles.tabText,
+        isActive && styles.tabTextActive,
+        textStyle,
+      ]}
+    >
+      {title}
+    </ThemedText>
+  </Pressable>
+));
+
 interface NavigationButtonProps {
   title: string;
   color: string;
@@ -123,14 +143,39 @@ function SolutionScreen() {
     setActiveSection(section);
   }, []);
 
+  const availableSections = ContentService.getAvailableSections(chapterId);
+  const exerciseSubSections = React.useMemo(() => {
+    return [
+      ...availableSections.filter(s => s.startsWith('exercise') && s !== 'exercises').sort(),
+      availableSections.includes('examples') ? 'examples' : null,
+      availableSections.includes('theorems') ? 'theorems' : null,
+    ].filter(Boolean) as string[];
+  }, [chapterId]);
+
+  const [activeSubSection, setActiveSubSection] = useState<string>("");
+
+  useEffect(() => {
+    if (activeSection === "exercises" && exerciseSubSections.length > 0) {
+      if (!activeSubSection || !exerciseSubSections.includes(activeSubSection)) {
+        setActiveSubSection(exerciseSubSections[0]);
+      }
+    }
+  }, [activeSection, exerciseSubSections]);
+
   const renderSectionContent = useCallback(() => {
-    const uri = ContentService.getSectionUri(chapterId, activeSection);
+    let sectionToFetch = activeSection as string;
+
+    if (activeSection === "exercises") {
+      sectionToFetch = activeSubSection || "exercises";
+    }
+
+    const uri = ContentService.getSectionUri(chapterId, sectionToFetch);
 
     if (!uri) {
       return (
         <EmptyState
           title="Content Not Found"
-          message={`The ${activeSection} content for this chapter is missing or being updated.`}
+          message={`The ${sectionToFetch} content for this chapter is missing or being updated.`}
           icon="alert-circle"
         />
       );
@@ -142,7 +187,7 @@ function SolutionScreen() {
         targetId=""
       />
     );
-  }, [chapterId, activeSection]);
+  }, [chapterId, activeSection, activeSubSection]);
 
 
 
@@ -183,6 +228,33 @@ function SolutionScreen() {
             textStyle={hwTitleStyle}
           />
         </View>
+
+        {activeSection === "exercises" && exerciseSubSections.length > 0 && (
+          <View style={{ height: 42, marginBottom: Spacing.sm }}>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              style={styles.subTabScroll}
+              contentContainerStyle={styles.subTabContainer}
+            >
+              {exerciseSubSections.map((sub, index) => {
+                const title = sub === 'examples' ? 'Examples' :
+                  sub === 'theorems' ? 'Theorems' :
+                    sub.replace('exercise', 'Exercise ');
+                return (
+                  <SubTabButton
+                    key={sub}
+                    title={title}
+                    isActive={activeSubSection === sub}
+                    onPress={() => setActiveSubSection(sub)}
+                    color={accentColor}
+                    textStyle={hwTitleStyle}
+                  />
+                );
+              })}
+            </ScrollView>
+          </View>
+        )}
 
         <ScrollView
           style={styles.scrollView}
@@ -260,6 +332,23 @@ const styles = StyleSheet.create({
   },
   tabTextActive: {
     color: "#fff",
+  },
+  subTabScroll: {
+    flex: 1,
+  },
+  subTabContainer: {
+    paddingHorizontal: Spacing.lg,
+    gap: Spacing.sm,
+    alignItems: "center",
+  },
+  subTabButton: {
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    alignItems: "center",
+    borderRadius: BorderRadius.md,
+    borderWidth: 1,
+    borderColor: "transparent",
+    backgroundColor: JiguuColors.surface, // Provide a default background
   },
   introText: {
     ...Typography.body,

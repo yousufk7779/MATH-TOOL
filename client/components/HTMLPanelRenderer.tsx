@@ -18,6 +18,12 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
     (function() {
         var targetId = "${targetId}";
         
+        // Ensure Viewport allows zooming
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes';
+        document.head.appendChild(meta);
+        
         // Style injection for Dark Mode + Kalam Font
         var style = document.createElement('style');
         style.innerHTML = \`
@@ -27,14 +33,14 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
             html, body {
                 background-color: #1A1A2E !important; 
                 margin: 0; padding: 0;
-                overflow-x: hidden !important;
-                max-width: 100vw !important;
+                /* allow horizontal overflow for zooming */
             }
             * { 
                 color: #E0E0E0 !important; 
                 max-width: 100% !important;
                 word-wrap: break-word !important;
                 overflow-wrap: break-word !important;
+                text-align: justify !important;
             }
 
             body { 
@@ -42,6 +48,7 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
                 font-size: 18px;
                 padding: 10px;
                 box-sizing: border-box !important;
+                text-align: justify !important;
             }
 
             /* Hide original containers/cards styling */
@@ -245,11 +252,16 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
 
     // Construct source object
     const source = React.useMemo(() => {
+        let metaTag = '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">';
         if (htmlContent) {
             let content = htmlContent;
             // Ensure base format for string content
             if (!content.includes('<html>')) {
-                content = `<html><head></head><body>${content}</body></html>`;
+                content = `<html><head>${metaTag}</head><body>${content}</body></html>`;
+            } else if (content.includes('<head>')) {
+                content = content.replace('<head>', `<head>${metaTag}`);
+            } else {
+                content = content.replace('<html>', `<html><head>${metaTag}</head>`);
             }
             return { html: content, baseUrl: 'file:///' };
         }
@@ -275,7 +287,8 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
                     } catch (e) { }
                 }}
                 style={styles.webview}
-                scrollEnabled={false}
+                scrollEnabled={true}
+                nestedScrollEnabled={true}
                 androidLayerType="hardware"
                 cacheEnabled={true}
                 cacheMode="LOAD_CACHE_ELSE_NETWORK"
@@ -285,6 +298,10 @@ export const HTMLPanelRenderer = memo(({ htmlUri, htmlContent, targetId, style }
                 domStorageEnabled={true}
                 bounces={false}
                 overScrollMode="never"
+                scalesPageToFit={true}
+                setBuiltInZoomControls={true}
+                setDisplayZoomControls={false}
+                textZoom={100}
             // Key prop to force reload on target change if needed, 
             // though injectJavaScript handles updates better.
             // key={targetId} 
