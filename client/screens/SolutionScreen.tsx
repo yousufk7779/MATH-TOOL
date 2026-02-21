@@ -214,7 +214,12 @@ function SolutionScreen() {
             textStyle={hwTitleStyle}
           />
           <TabButton
-            title="Exercises"
+            title={
+              chapterId.startsWith("sci-") ? "Solutions" :
+                chapterId.startsWith("sst-") ? "Solutions" :
+                  chapterId.startsWith("eng-") ? "Q & A" :
+                    "Exercises"
+            }
             isActive={activeSection === "exercises"}
             onPress={() => handleSectionChange("exercises")}
             color={accentColor}
