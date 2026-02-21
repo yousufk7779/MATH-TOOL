@@ -5,10 +5,6 @@ import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
 import { Question } from "@/data/pyqData";
 
-
-
-import { MathRender } from "@/components/MathRender";
-
 // Placeholder for future image handling - currently empty to avoid missing asset errors
 const graphImages: Record<string, any> = {};
 
@@ -30,20 +26,17 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </ThemedText>
         </View>
         <View style={styles.questionTextContainer}>
-          <MathRender
-            html={question.question}
-            baseStyle={{
+          <ThemedText
+            style={{
               ...Typography.body,
               color: JiguuColors.textPrimary,
               lineHeight: 24,
               textAlign: "justify",
               ...contentStyle
             }}
-            classesStyles={{
-              'sub-question': { fontFamily: "Nunito_700Bold", color: accentColor, marginTop: 4 }
-            }}
-            ignoredTags={['img']}
-          />
+          >
+            {question.question}
+          </ThemedText>
         </View>
       </View>
 
@@ -61,9 +54,8 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
           return (
             <View key={index} style={styles.stepRow}>
-              <MathRender
-                html={displayStep}
-                baseStyle={{
+              <ThemedText
+                style={{
                   ...Typography.small,
                   color: isFormula ? "#FF7043" : JiguuColors.textSecondary,
                   lineHeight: 28,
@@ -72,18 +64,19 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
                   fontWeight: isFormula ? "bold" : undefined,
                   ...contentStyle
                 }}
-                ignoredTags={['img']}
-              />
+              >
+                {displayStep}
+              </ThemedText>
             </View>
           );
         })}
         {question.answer && (
           <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
-            <MathRender
-              html={question.answer}
-              baseStyle={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
-              ignoredTags={['img']}
-            />
+            <ThemedText
+              style={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
+            >
+              {question.answer}
+            </ThemedText>
           </View>
         )}
       </View>
