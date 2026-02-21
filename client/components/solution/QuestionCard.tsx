@@ -73,7 +73,7 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         {question.answer && (
           <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
             <ThemedText
-              style={{ ...Typography.body, fontFamily: "Nunito_700Bold", color: "#4CAF50", textAlign: "justify" }}
+              style={{ ...Typography.body, fontFamily: "Kalam_700Bold", color: "#4CAF50", textAlign: "justify" }}
             >
               {question.answer}
             </ThemedText>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
   },
   questionNumber: {
     ...Typography.small,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     marginBottom: Spacing.xs,
   },
   headerRow: {
@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
   },
   solutionLabel: {
     ...Typography.small,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     color: "#4CAF50",
     marginBottom: Spacing.sm,
     marginTop: Spacing.sm,
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   answerText: {
     ...Typography.body,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     color: "#4CAF50",
     textAlign: "justify",
   },

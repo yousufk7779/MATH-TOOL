@@ -16,7 +16,7 @@ function DefinitionItem({ term, description, termStyle, descriptionStyle }: Defi
       <ThemedText
         style={{
           ...Typography.body,
-          fontFamily: "Nunito_700Bold",
+          fontFamily: "Kalam_700Bold",
           color: "#4CAF50",
           marginBottom: 2,
           ...termStyle
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   },
   term: {
     ...Typography.body,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     color: "#4CAF50",
     marginBottom: 2,
   },

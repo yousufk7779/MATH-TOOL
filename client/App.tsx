@@ -8,12 +8,6 @@ import { StatusBar } from "expo-status-bar";
 import * as SplashScreen from "expo-splash-screen";
 import {
   useFonts,
-  Nunito_400Regular,
-  Nunito_600SemiBold,
-  Nunito_700Bold,
-} from "@expo-google-fonts/nunito";
-import {
-  useFonts as useKalamFonts,
   Kalam_400Regular,
   Kalam_700Bold,
 } from "@expo-google-fonts/kalam";
@@ -39,26 +33,21 @@ const navTheme = {
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
-    Nunito_400Regular,
-    Nunito_600SemiBold,
-    Nunito_700Bold,
-  });
-  const [kalamLoaded] = useKalamFonts({
     Kalam_400Regular,
     Kalam_700Bold,
   });
 
   useEffect(() => {
-    if ((fontsLoaded && kalamLoaded) || fontError) {
+    if (fontsLoaded || fontError) {
       SplashScreen.hideAsync().catch(() => { });
     }
     const timer = setTimeout(() => {
       SplashScreen.hideAsync().catch(() => { });
     }, 2500); // Fail-safe to ensure splash screen hides
     return () => clearTimeout(timer);
-  }, [fontsLoaded, kalamLoaded, fontError]);
+  }, [fontsLoaded, fontError]);
 
-  if ((!fontsLoaded || !kalamLoaded) && !fontError) {
+  if (!fontsLoaded && !fontError) {
     return <View style={styles.loading} />;
   }
 

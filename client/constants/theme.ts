@@ -5,7 +5,7 @@ export const JiguuColors = {
   surface: "#252538",
   surfaceLight: "#303045",
   border: "#3B3B52",
-  
+
   realNumbers: "#FF6B6B",
   polynomials: "#FFA726",
   linearEquations: "#00BCD4",
@@ -19,17 +19,17 @@ export const JiguuColors = {
   surfaceVolume: "#607D8B",
   statistics: "#3F51B5",
   probability: "#009688",
-  
+
   newsEvents: "#7C4DFF",
   quickNotes: "#26A69A",
-  
+
   accent1: "#00D4FF",
   accent2: "#FF6B9D",
   accent3: "#7C4DFF",
   accent4: "#00E676",
-  
+
   textPrimary: "#FFFFFF",
-  textSecondary: "#A0A0B0",
+  textSecondary: "#F5F5F5",
   textOnColor: "#FFFFFF",
 };
 
@@ -91,81 +91,81 @@ export const Typography = {
     fontSize: 28,
     lineHeight: 36,
     fontWeight: "700" as const,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   h1: {
     fontSize: 32,
     lineHeight: 40,
     fontWeight: "700" as const,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   h2: {
     fontSize: 28,
     lineHeight: 36,
     fontWeight: "700" as const,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   h3: {
     fontSize: 24,
     lineHeight: 32,
-    fontWeight: "600" as const,
-    fontFamily: "Nunito_600SemiBold",
+    fontWeight: "700" as const,
+    fontFamily: "Kalam_700Bold",
   },
   h4: {
     fontSize: 20,
     lineHeight: 28,
-    fontWeight: "600" as const,
-    fontFamily: "Nunito_600SemiBold",
+    fontWeight: "700" as const,
+    fontFamily: "Kalam_700Bold",
   },
   button: {
     fontSize: 18,
     lineHeight: 24,
-    fontWeight: "600" as const,
-    fontFamily: "Nunito_600SemiBold",
+    fontWeight: "700" as const,
+    fontFamily: "Kalam_700Bold",
   },
   body: {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "400" as const,
-    fontFamily: "Nunito_400Regular",
+    fontFamily: "Kalam_400Regular",
   },
   small: {
     fontSize: 14,
     lineHeight: 20,
     fontWeight: "400" as const,
-    fontFamily: "Nunito_400Regular",
+    fontFamily: "Kalam_400Regular",
   },
   caption: {
     fontSize: 12,
     lineHeight: 16,
     fontWeight: "400" as const,
-    fontFamily: "Nunito_400Regular",
+    fontFamily: "Kalam_400Regular",
   },
   link: {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: "400" as const,
-    fontFamily: "Nunito_400Regular",
+    fontFamily: "Kalam_400Regular",
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
-    sans: "Nunito_400Regular",
+    sans: "Kalam_400Regular",
     serif: "ui-serif",
-    rounded: "Nunito_400Regular",
+    rounded: "Kalam_400Regular",
     mono: "ui-monospace",
   },
   default: {
-    sans: "Nunito_400Regular",
+    sans: "Kalam_400Regular",
     serif: "serif",
-    rounded: "Nunito_400Regular",
+    rounded: "Kalam_400Regular",
     mono: "monospace",
   },
   web: {
-    sans: "Nunito_400Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    sans: "Kalam_400Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded: "Nunito_400Regular, 'SF Pro Rounded', sans-serif",
+    rounded: "Kalam_400Regular, 'SF Pro Rounded', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });

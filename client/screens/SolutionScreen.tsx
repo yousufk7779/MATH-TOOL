@@ -203,7 +203,7 @@ function SolutionScreen() {
                 <ThemedText style={[scaledH4, { color: accentColor, marginBottom: Spacing.sm }]}>Key Definitions</ThemedText>
                 {chapterData.definitions.map((def, idx) => (
                   <View key={idx} style={{ marginBottom: Spacing.sm }}>
-                    <ThemedText style={[scaledBody, { fontFamily: "Nunito_700Bold", color: JiguuColors.textPrimary }]}>{def.term}:</ThemedText>
+                    <ThemedText style={[scaledBody, { fontFamily: "Kalam_700Bold", color: JiguuColors.textPrimary }]}>{def.term}:</ThemedText>
                     <ThemedText style={[scaledSmall, { color: JiguuColors.textSecondary }]}>{def.description}</ThemedText>
                   </View>
                 ))}
@@ -388,7 +388,7 @@ const styles = StyleSheet.create({
   chapterIconText: {
     color: "#fff",
     fontSize: 14,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   title: {
     ...Typography.h4,
@@ -414,7 +414,7 @@ const styles = StyleSheet.create({
   },
   tabText: {
     ...Typography.small,
-    fontFamily: "Nunito_600SemiBold",
+    fontFamily: "Kalam_400Regular",
     color: JiguuColors.textSecondary,
   },
   tabTextActive: {
@@ -480,7 +480,7 @@ const styles = StyleSheet.create({
   cruxNumberText: {
     ...Typography.caption,
     color: "#fff",
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   cruxText: {
     ...Typography.small,
@@ -497,7 +497,7 @@ const styles = StyleSheet.create({
   summaryNumber: {
     ...Typography.body,
     color: "#1565C0",
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     marginRight: Spacing.sm,
     width: 24,
   },
@@ -538,7 +538,7 @@ const styles = StyleSheet.create({
   },
   backButtonText: {
     ...Typography.small,
-    fontFamily: "Nunito_600SemiBold",
+    fontFamily: "Kalam_400Regular",
     marginLeft: Spacing.xs,
   },
   exerciseHeader: {
@@ -576,7 +576,7 @@ const styles = StyleSheet.create({
   },
   questionButtonText: {
     ...Typography.small,
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
   },
   questionContent: {
     marginTop: Spacing.md,
@@ -595,7 +595,7 @@ const styles = StyleSheet.create({
   theoremNumber: {
     ...Typography.small,
     color: "#9C27B0",
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     marginBottom: Spacing.xs,
   },
   theoremName: {
@@ -608,7 +608,7 @@ const styles = StyleSheet.create({
   theoremLabel: {
     ...Typography.small,
     color: "#9C27B0",
-    fontFamily: "Nunito_700Bold",
+    fontFamily: "Kalam_700Bold",
     marginBottom: Spacing.xs,
   },
   theoremStatement: {
