@@ -44,6 +44,18 @@ import { sstEco2 } from "./content/sst-eco-2";
 import { sstEco3 } from "./content/sst-eco-3";
 import { sstEco4 } from "./content/sst-eco-4";
 import { sstEco5 } from "./content/sst-eco-5";
+import { engPro1 } from "./content/eng-pro-1";
+import { engPro2 } from "./content/eng-pro-2";
+import { engPro3 } from "./content/eng-pro-3";
+import { engPro4 } from "./content/eng-pro-4";
+import { engPro5 } from "./content/eng-pro-5";
+import { engPro6 } from "./content/eng-pro-6";
+import { engPoe1 } from "./content/eng-poe-1";
+import { engPoe2 } from "./content/eng-poe-2";
+import { engPoe3 } from "./content/eng-poe-3";
+import { engPoe4 } from "./content/eng-poe-4";
+import { engPoe5 } from "./content/eng-poe-5";
+import { engPoe6 } from "./content/eng-poe-6";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "sci-phy-1": sciPhy1,
@@ -81,6 +93,18 @@ export const chapterContents: Record<string, ChapterContent> = {
   "sst-eco-3": sstEco3,
   "sst-eco-4": sstEco4,
   "sst-eco-5": sstEco5,
+  "eng-pro-1": engPro1,
+  "eng-pro-2": engPro2,
+  "eng-pro-3": engPro3,
+  "eng-pro-4": engPro4,
+  "eng-pro-5": engPro5,
+  "eng-pro-6": engPro6,
+  "eng-poe-1": engPoe1,
+  "eng-poe-2": engPoe2,
+  "eng-poe-3": engPoe3,
+  "eng-poe-4": engPoe4,
+  "eng-poe-5": engPoe5,
+  "eng-poe-6": engPoe6,
 };
 
 export const isChapterAvailable = (chapterId: string): boolean => {
