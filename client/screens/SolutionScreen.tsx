@@ -549,8 +549,8 @@ function SolutionScreen() {
                   </>
                 );
               })()}
-              <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: accentColor, paddingHorizontal: Spacing.xl, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center', marginBottom: Spacing.sm }} onPress={() => resetMCQs()}>
-                <ThemedText style={[scaledButton, { color: '#fff' }]}>Retake Quiz</ThemedText>
+              <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: accentColor, paddingHorizontal: Spacing.sm, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center', marginBottom: Spacing.sm }} onPress={() => resetMCQs()}>
+                <ThemedText numberOfLines={1} style={[scaledButton, { color: '#fff' }]}>Retake Quiz</ThemedText>
               </TouchableOpacity>
               <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: JiguuColors.surfaceLight, paddingHorizontal: Spacing.xl, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center' }} onPress={() => resetMCQs()}>
                 <ThemedText style={[scaledButton, { color: JiguuColors.textSecondary }]}>Close</ThemedText>

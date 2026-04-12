@@ -107,9 +107,9 @@ export default function QuizScreen() {
     const renderMenu = () => (
         <View style={styles.menuContainer}>
             <View style={styles.menuHeader}>
-                <ThemedText style={styles.title}>Practice Quiz</ThemedText>
+                <ThemedText style={styles.subtitle}>Practice Quiz</ThemedText>
                 <ThemedText style={styles.subtitle}>
-                    Test your knowledge with random questions from all chapters.
+                   
                 </ThemedText>
             </View>
 
@@ -138,7 +138,7 @@ export default function QuizScreen() {
             </View>
 
             <View style={styles.historyContainer}>
-                <ThemedText style={styles.historyTitle}>Recent Performance</ThemedText>
+                <ThemedText style={styles.subtitle}>Recent Performance</ThemedText>
                 {history.length === 0 ? (
                     <ThemedText style={styles.emptyText}>No quizzes taken yet.</ThemedText>
                 ) : (
