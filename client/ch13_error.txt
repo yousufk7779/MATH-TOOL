@@ -1,0 +1,55 @@
+node : D:\All NCERT SOLUTI
+ONS\client\generate_ch13.j
+s:259
+At line:1 char:1
++ node generate_ch13.js 
+2>&1 | Out-File -Encoding 
+ASCII ch13_error.txt  ...
++ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (D  
+  :\All NCERT SO...ate_   
+ ch13.js:259:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+    html = 
+html.replace(/<div class="
+header">[\\s\\S]*?<div cla
+ss="chapter-title">[^<]*<\
+\/div>\\s*<\\/div>/gi, 
+'');
+                          
+                          
+                          
+                 ^
+
+SyntaxError: Invalid or 
+unexpected token
+    at wrapSafe (node:inte
+rnal/modules/cjs/loader:14
+64:18)
+    at Module._compile (no
+de:internal/modules/cjs/lo
+ader:1495:20)
+    at 
+Module._extensions..js (no
+de:internal/modules/cjs/lo
+ader:1623:10)
+    at Module.load (node:i
+nternal/modules/cjs/loader
+:1266:32)
+    at Module._load (node:
+internal/modules/cjs/loade
+r:1091:12)
+    at Function.executeUse
+rEntryPoint [as runMain] (
+node:internal/modules/run_
+main:164:12)
+    at node:internal/main/
+run_main_module:28:49
+
+Node.js v20.20.0

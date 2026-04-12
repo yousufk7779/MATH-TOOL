@@ -1,10 +1,27 @@
 import { Platform } from "react-native";
 
 export const JiguuColors = {
-  background: "#1A1A2E",
-  surface: "#252538",
-  surfaceLight: "#303045",
+  background: "#0B0F1A", // Darkest navy for seamless splash handoff
+  surface: "#1E1E2E",    // Slightly lighter dark surface
+  surfaceLight: "#2A2A3C",
   border: "#3B3B52",
+
+  // Vibrant Gradients
+  primaryGradient: ["#304FFE", "#8E24AA", "#E91E63"], // Blue -> Purple -> Pink
+  successGradient: ["#4CAF50", "#1B5E20"],           // Green gradient for completed solutions
+
+  // Multi-color Button Gradients (from SS)
+  gradients: {
+    orange: ["#FFB74D", "#FF9800", "#F44336"],
+    pink: ["#FF4081", "#D81B60", "#880E4F"],
+    purple: ["#AB47BC", "#8E24AA", "#4A148C"],
+    blue: ["#42A5F5", "#2196F3", "#0D47A1"],
+    green: ["#66BB6A", "#43A047", "#1B5E20"],
+    teal: ["#26C6DA", "#00ACC1", "#006064"],
+    indigo: ["#7986CB", "#3F51B5", "#1A237E"],
+    deepOrange: ["#FF8A65", "#F4511E", "#BF360C"],
+    brightBlue: ["#00C6FF", "#0072FF"],
+  },
 
   realNumbers: "#FF6B6B",
   polynomials: "#FFA726",
@@ -29,7 +46,7 @@ export const JiguuColors = {
   accent4: "#00E676",
 
   textPrimary: "#FFFFFF",
-  textSecondary: "#F5F5F5",
+  textSecondary: "#E0E0E0", // Brighter secondary text for better contrast on dark
   textOnColor: "#FFFFFF",
 };
 
@@ -90,72 +107,73 @@ export const Typography = {
   logo: {
     fontSize: 28,
     lineHeight: 36,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   h1: {
     fontSize: 32,
     lineHeight: 40,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   h2: {
     fontSize: 28,
     lineHeight: 36,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   h3: {
     fontSize: 24,
     lineHeight: 32,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   h4: {
     fontSize: 20,
     lineHeight: 28,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   button: {
-    fontSize: 18,
+    fontSize: 20,
     lineHeight: 24,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_700Bold",
+    letterSpacing: 0.8,
   },
   body: {
     fontSize: 16,
     lineHeight: 24,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
   small: {
     fontSize: 14,
     lineHeight: 20,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
   caption: {
     fontSize: 12,
     lineHeight: 16,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
   link: {
     fontSize: 16,
     lineHeight: 24,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
 };
 
 export const Fonts = Platform.select({
   ios: {
-    sans: "Kalam_400Regular",
+    sans: "NotoSans_400Regular",
     serif: "ui-serif",
-    rounded: "Kalam_400Regular",
+    rounded: "NotoSans_400Regular",
     mono: "ui-monospace",
   },
   default: {
-    sans: "Kalam_400Regular",
+    sans: "NotoSans_400Regular",
     serif: "serif",
-    rounded: "Kalam_400Regular",
+    rounded: "NotoSans_400Regular",
     mono: "monospace",
   },
   web: {
-    sans: "Kalam_400Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    sans: "NotoSans_400Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
-    rounded: "Kalam_400Regular, 'SF Pro Rounded', sans-serif",
+    rounded: "NotoSans_400Regular, 'SF Pro Rounded', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });

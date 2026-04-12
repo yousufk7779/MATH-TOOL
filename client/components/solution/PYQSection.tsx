@@ -69,16 +69,19 @@ function PYQSection({ chapterId, accentColor = JiguuColors.accent3, initialYear,
                     </View>
                 </View>
 
-                {selectedSet.questions.map((q) => (
-                    <QuestionCard
-                        key={q.id}
-                        question={q}
-                        accentColor={accentColor}
-                        chapterId={chapterId}
-                        titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
-                        contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
-                    />
-                ))}
+                {selectedSet.questions.map((q) => {
+                    const isCh7 = chapterId === "ch7";
+                    return (
+                        <QuestionCard
+                            key={q.id}
+                            question={q}
+                            accentColor={accentColor}
+                            chapterId={chapterId}
+                            titleStyle={{ fontFamily: "NotoSans_400Regular", color: "#fff" }}
+                            contentStyle={{ fontFamily: "NotoSans_400Regular", color: "#fff" }}
+                        />
+                    );
+                })}
             </View>
         );
     }

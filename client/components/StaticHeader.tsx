@@ -3,7 +3,6 @@ import { StyleSheet, View, useWindowDimensions } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { JiguuLogo } from "@/components/JiguuLogo";
-import { GlobalSearchBar } from "@/components/GlobalSearchBar";
 import { Spacing, JiguuColors } from "@/constants/theme";
 
 export const StaticHeader = memo(function StaticHeader() {
@@ -16,18 +15,15 @@ export const StaticHeader = memo(function StaticHeader() {
       styles.container,
       {
         paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.md,
-        paddingBottom: isLandscape ? 5 : Spacing.md,
-        height: isLandscape ? 100 : undefined, // Increase height to fit logo
+        paddingBottom: isLandscape ? 5 : 4,
+        height: isLandscape ? 100 : undefined,
         flexDirection: isLandscape ? "row" : "column",
-        justifyContent: isLandscape ? "space-between" : "center", // Fix: Align center in portrait
+        justifyContent: isLandscape ? "space-between" : "center",
         alignItems: "center",
       }
     ]}>
       <View style={styles.logoContainer}>
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
-      </View>
-      <View style={styles.searchContainer}>
-        <GlobalSearchBar />
       </View>
     </View>
   );
@@ -38,16 +34,11 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.background,
     paddingHorizontal: Spacing.lg,
     alignItems: "center",
-    // justifyContent: "flex-end", // Removed to prevent layout issues
     borderBottomWidth: 1,
     borderBottomColor: JiguuColors.border,
-    zIndex: 100, // Ensure header is above content
+    zIndex: 100,
   },
   logoContainer: {
-    marginBottom: Spacing.md,
+    marginBottom: 0,
   },
-  searchContainer: {
-    width: "100%",
-    maxWidth: 500,
-  }
 });

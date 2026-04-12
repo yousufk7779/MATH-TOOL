@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Exercise 13.3 (Median)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        table { width: auto; min-width: 60%; margin: 15px auto; border-collapse: collapse; font-family: 'Nunito', sans-serif; font-size: 0.9em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); background: white; border-radius: 4px; overflow: hidden; }
+
+        th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
+
+        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 13: Exercise 13.3 (Median)</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">1. The following frequency distribution gives the monthly consumption of electricity of 68
+            consumers... Find the median, mean and mode of the data and compare them.</div>
+        <img src="ex13_3_q1.svg" alt="Cumulative Frequency Curve">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Median:</div>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Freq (f)</th>
+                <th>Cum. Freq (cf)</th>
+            </tr>
+            <tr>
+                <td>65-85</td>
+                <td>4</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>85-105</td>
+                <td>5</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>105-125</td>
+                <td>13</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>125-145</td>
+                <td>20</td>
+                <td>42</td>
+            </tr>
+            <tr>
+                <td>145-165</td>
+                <td>14</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>165-185</td>
+                <td>8</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td>185-205</td>
+                <td>4</td>
+                <td>68</td>
+            </tr>
+        </table>
+        <div class="step">n = 68 => n/2 = 34.</div>
+        <div class="step">Class containing cf=34 is 125-145 (since 42 > 34).</div>
+        <div class="step">l = 125, cf = 22, f = 20, h = 20.</div>
+        <div class="step">Median = 125 + [(34-22)/20] × 20</div>
+        <div class="step">= 125 + 12 = 137 units.</div>
+        <div class="step">Mean = 137.05 units. Mode = 135.76 units.</div>
+        <div class="final-answer">Median = 137, Mean = 137.05, Mode = 135.76.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">2. If the median of the distribution given below is 28.5, find the values of x and y.
+        </div>
+        <img src="ex13_3_q2.svg" alt="Table Visual">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Total n = 60.</div>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Freq</th>
+                <th>cf</th>
+            </tr>
+            <tr>
+                <td>0-10</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>10-20</td>
+                <td>x</td>
+                <td>5+x</td>
+            </tr>
+            <tr>
+                <td>20-30</td>
+                <td>20</td>
+                <td>25+x</td>
+            </tr>
+            <tr>
+                <td>30-40</td>
+                <td>15</td>
+                <td>40+x</td>
+            </tr>
+            <tr>
+                <td>40-50</td>
+                <td>y</td>
+                <td>40+x+y</td>
+            </tr>
+            <tr>
+                <td>50-60</td>
+                <td>5</td>
+                <td>45+x+y</td>
+            </tr>
+        </table>
+        <div class="step">45+x+y = 60 => x+y = 15.</div>
+        <div class="step">Median = 28.5. So Median Class is 20-30.</div>
+        <div class="step">l = 20, f = 20, cf = 5+x, h = 10, n/2 = 30.</div>
+        <div class="step">28.5 = 20 + [(30 - (5+x))/20] × 10</div>
+        <div class="step">8.5 = (25-x)/2</div>
+        <div class="step">17 = 25 - x => x = 8.</div>
+        <div class="step">x+y = 15 => 8+y=15 => y = 7.</div>
+        <div class="final-answer">x = 8, y = 7.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">3. A life insurance agent found the following data for distribution of ages... Calculate
+            the median age.</div>
+        <img src="ex13_3_q3.svg" alt="Cumulative Frequency">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Values are "Below x". Convert to frequency distribution.</div>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Below cf</th>
+                <th>Freq (f)</th>
+            </tr>
+            <tr>
+                <td>15-20</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>20-25</td>
+                <td>6</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>25-30</td>
+                <td>24</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>30-35</td>
+                <td>45</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>35-40</td>
+                <td>78</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>40-45</td>
+                <td>89</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>45-50</td>
+                <td>92</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>50-55</td>
+                <td>98</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>55-60</td>
+                <td>100</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <div class="step">n = 100, n/2 = 50.</div>
+        <div class="step">Median Class (cf > 50) is 35-40.</div>
+        <div class="step">l = 35, cf = 45, f = 33, h = 5.</div>
+        <div class="step">Median = 35 + [(50-45)/33] × 5</div>
+        <div class="step">= 35 + (5/33) × 5 = 35 + 25/33 = 35 + 0.76.</div>
+        <div class="final-answer">Median Age = 35.76 years.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">4. The lengths of 40 leaves of a plant are measured correct to the nearest millimetre...
+            Find the median length of the leaves.</div>
+        <img src="ex13_3_q4.svg" alt="Leaves Data">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Convert to continuous: 117.5-126.5 etc.</div>
+        <div class="step">n = 40, n/2 = 20.</div>
+        <div class="step">Median Class (144.5-153.5). cf = 17, f = 12. l = 144.5. h=9.</div>
+        <div class="step">Median = 144.5 + [(20-17)/12] × 9</div>
+        <div class="step">= 144.5 + (3/12) × 9 = 144.5 + 2.25 = 146.75.</div>
+        <div class="final-answer">Median Length = 146.75 mm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. The following table gives the distribution of the life time of 400 neon lamps... Find
+            the median life time of a lamp.</div>
+        <img src="ex13_3_q5.svg" alt="Lamps Data">
+        <div class="solution-header">Solution:</div>
+        <div class="step">n = 400, n/2 = 200.</div>
+        <div class="step">Median Class 3000-3500. cf = 130, f = 86, l = 3000, h = 500.</div>
+        <div class="step">Median = 3000 + [(200-130)/86] × 500</div>
+        <div class="step">= 3000 + (70/86) × 500 = 3000 + 406.98.</div>
+        <div class="final-answer">Median Lifetime = 3406.98 hours.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">6. 100 surnames were randomly picked from a local telephone directory... Determine the
+            median number of letters in the surnames. Find the mean number of letters in the surnames? Also, find the
+            modal size of the surnames.</div>
+        <img src="ex13_3_q6.svg" alt="Surnames Data">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Median: n=100, n/2=50. Class 7-10 (cf=76, f=40). Median = 8.05.</div>
+        <div class="step">Mean = 8.32.</div>
+        <div class="step">Mode: Class 7-10 (f=40). Mode = 7.88.</div>
+        <div class="final-answer">Median = 8.05, Mean = 8.32, Mode = 7.88.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">7. The distribution below gives the weights of 30 students of a class. Find the median
+            weight of the students.</div>
+        <img src="ex13_3_q7.svg" alt="Weight Data">
+        <div class="solution-header">Solution:</div>
+        <div class="step">n=30, n/2=15.</div>
+        <div class="step">Median Class 55-60. cf=13, f=6, l=55, h=5.</div>
+        <div class="step">Median = 55 + [(15-13)/6] × 5</div>
+        <div class="step">= 55 + (2/6) × 5 = 55 + 1.666 = 56.67.</div>
+        <div class="final-answer">Median Weight = 56.67 kg.</div>
+    </div>
+
+</body>
+
+</html>

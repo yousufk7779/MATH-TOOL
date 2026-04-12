@@ -1,0 +1,140 @@
+--- P51 --- [HAS 1 IMAGES]
+TEXT: The change in the current can be determined using Ohm’s law as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYA...
+
+--- P60 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA3kA...
+
+--- P76 --- [HAS 1 IMAGES]
+TEXT: A battery of three cells of 2 V each equals to battery of potential 6 V. The circuit diagram below shows three resistors of resistance 12 Ω, 8 Ω and 5 Ω connected in series along with a battery of potential 6 V.
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P81 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P97 --- [HAS 1 IMAGES]
+TEXT: When 1 Ω and 106 are connected in parallel, the equivalent resistance is given by
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAA...
+
+--- P100 --- [HAS 1 IMAGES]
+TEXT: When 1 Ω, 103 Ω, and 106 Ω are connected in parallel, the equivalent resistance is given by
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQYA...
+
+--- P106 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P110 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjEA...
+
+--- P144 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P145 --- [HAS 1 IMAGES]
+TEXT: From the circuit above, it is understood that 3 Ω and 6 Ω are connected in parallel. Hence, their equivalent resistance is given by
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4A...
+
+--- P148 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwA...
+
+--- P154 --- [HAS 1 IMAGES]
+TEXT: (b) The circuit diagram below, shows the connection of three resistors.
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P156 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO0A...
+
+--- P164 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4A...
+
+--- P182 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR0A...
+
+--- P221 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATwA...
+
+--- P268 --- [HAS 1 IMAGES]
+TEXT: Let Rs and Rp be the equivalent resistance of the wires when connected in series and parallel respectively. For the same potential difference V, the ratio of the heat produced in the circuit is given by
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeIA...
+
+--- P282 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfsA...
+
+--- P288 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABIsA...
+
+--- P293 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P302 --- [HAS 1 IMAGES]
+TEXT: The value of the resistor can be calculated using Ohm’s Law as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ8A...
+
+--- P310 --- [HAS 1 IMAGES]
+TEXT: Now, using Ohm’s law,
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEA...
+
+--- P316 --- [HAS 1 IMAGES]
+TEXT: The equivalent resistance of the parallel combination of resistor R is given by
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIA...
+
+--- P322 --- [HAS 1 IMAGES]
+TEXT: If we connect all the three resistors in series, their equivalent resistor would 6 Ω + 6 Ω + 6 Ω =18 Ω, which is not the desired value. Similarly, if we connect all the three resistors in parallel, their equivalent resistor would be
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0A...
+
+--- P327 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P328 --- [HAS 1 IMAGES]
+TEXT: If two resistors are connected in parallel, then their equivalent resistance is
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAA...
+
+--- P332 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P335 --- [HAS 1 IMAGES]
+TEXT: The third resistor is connected in parallel with 12 Ω. Hence the equivalent resistance is calculated as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwA...
+
+--- P342 --- [HAS 1 IMAGES]
+TEXT: 
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZEA...
+
+--- P350 --- [HAS 1 IMAGES]
+TEXT: Using Ohm’s law, we can find the current flowing through each coil as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQA...
+
+--- P356 --- [HAS 1 IMAGES]
+TEXT: The current flowing through the series circuit is calculated as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYA...
+
+--- P360 --- [HAS 1 IMAGES]
+TEXT: When the coils are connected in parallel, the equivalent resistance is calculated as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIA...
+
+--- P365 --- [HAS 1 IMAGES]
+TEXT: The potential difference is 6 V and the resistors 1 Ω and 2 Ω are connected in series, hence their equivalent resistance is given by 1 Ω + 2 Ω = 3 Ω. The current in the circuit can be calculated using the Ohm’s law as follows:
+  IMAGE 0: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...
+
+--- P368 --- [HAS 1 IMAGES]
+TEXT: When 12 Ω and 2 Ω resistors are connected in parallel, the voltage across the resistors remains the same. Knowing that the voltage across 2 Ω resistor is 4 V, we can calculate the power consumed by the resistor as follows:
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwA...
+
+--- P377 --- [HAS 1 IMAGES]
+TEXT: Similarly, the current drawn by the bulb of rating 60 W can be calculated as follows: I = 60 W/220 V = 60/220 A
+  IMAGE 0: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoA...
+

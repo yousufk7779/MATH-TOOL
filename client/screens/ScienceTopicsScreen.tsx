@@ -32,29 +32,12 @@ function ScienceTopicsScreen() {
                 showsVerticalScrollIndicator={false}
             >
                 <View style={styles.buttonsContainer}>
-                    <View style={styles.actionButtons}>
-                        <View style={styles.actionButtonWrapper}>
-                            <ColorButton
-                                testID="button-bookmarks"
-                                title="BOOKMARKS"
-                                color={JiguuColors.accent2}
-                                onPress={() => navigation.navigate("Bookmarks")}
-                            />
-                        </View>
-                        <View style={styles.actionButtonWrapper}>
-                            <ColorButton
-                                testID="button-important"
-                                title="IMPORTANT"
-                                color={JiguuColors.accent3}
-                                onPress={() => navigation.navigate("ImportantQuestions")}
-                            />
-                        </View>
-                    </View>
+
                     <View style={styles.buttonWrapper}>
                         <ColorButton
                             testID="button-physics"
                             title="PHYSICS"
-                            color="#E91E63"
+                            colors={JiguuColors.gradients.deepOrange}
                             onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Physics" })}
                         />
                     </View>
@@ -63,7 +46,7 @@ function ScienceTopicsScreen() {
                         <ColorButton
                             testID="button-chemistry"
                             title="CHEMISTRY"
-                            color="#9C27B0"
+                            colors={JiguuColors.gradients.purple}
                             onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Chemistry" })}
                         />
                     </View>
@@ -71,8 +54,8 @@ function ScienceTopicsScreen() {
                     <View style={styles.buttonWrapper}>
                         <ColorButton
                             testID="button-biology"
-                            title="BIOLOGY"
-                            color="#4CAF50"
+                            title="LIFE SCIENCE"
+                            colors={JiguuColors.gradients.green}
                             onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Biology" })}
                         />
                     </View>
@@ -97,11 +80,5 @@ const styles = StyleSheet.create({
     buttonWrapper: {
         width: "100%",
     },
-    actionButtons: {
-        flexDirection: "row",
-        gap: Spacing.md,
-    },
-    actionButtonWrapper: {
-        flex: 1,
-    },
+
 });

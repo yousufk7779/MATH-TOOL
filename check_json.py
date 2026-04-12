@@ -1,0 +1,10 @@
+
+import json
+
+with open(r"d:\All NCERT SOLUTIONS\full_images.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+for p_id in ["P50", "P75", "P80"]:
+    if p_id in data:
+        img = data[p_id]["images"][0]
+        print(f"{p_id} (len {len(img)}): {img[:50]}...{img[-50:]}")

@@ -1,0 +1,358 @@
+﻿client/data/content/math-ch3.ts(43,850824): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850832): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850852): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850858): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850867): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850887): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850892): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,850898): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850904): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850923): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850924): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850924): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,850929): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,850936): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850942): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850961): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850973): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,850977): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,850982): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,851002): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,851006): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,851016): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,851038): error TS1005: '{' expected.
+client/data/content/math-ch3.ts(43,851047): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,851048): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,851072): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,851077): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,851078): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,851477): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,851513): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,851544): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,851604): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852033): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852114): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852216): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852273): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852358): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,852362): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852385): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,852388): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852413): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,852579): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852621): error TS1181: Array element destructuring pattern expected.
+client/data/content/math-ch3.ts(43,852698): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852717): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,852872): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,1682824): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,1682832): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,1682852): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,1682858): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,1682868): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,1682887): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,1682888): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,1682888): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1682890): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,1682893): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1682899): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1682903): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1682909): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1682928): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1682929): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1682929): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1683001): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683005): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683011): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683030): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683052): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683055): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683067): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683071): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683091): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683093): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683093): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1683099): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1683105): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683108): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683127): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683134): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683138): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683158): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683159): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683159): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1683164): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,1683170): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683174): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683180): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683199): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683212): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683220): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683224): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683233): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,1683252): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683322): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683356): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683359): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683412): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683448): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683451): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683504): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683538): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,1683541): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683560): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683566): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683573): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683590): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683605): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,1683637): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683652): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,1683682): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683692): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683703): error TS1435: Unknown keyword or identifier. Did you mean 'any'?
+client/data/content/math-ch3.ts(43,1683718): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,1683751): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683757): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683774): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683784): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683785): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683800): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683818): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683824): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,1683985): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1683989): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683996): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1683999): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684006): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+client/data/content/math-ch3.ts(43,1684009): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684013): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684018): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684023): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684029): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684033): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684040): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684043): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684069): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,1684076): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684079): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684086): error TS1228: A type predicate is only allowed in return type position for functions and methods.
+client/data/content/math-ch3.ts(43,1684089): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+client/data/content/math-ch3.ts(43,1684094): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684099): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684104): error TS1435: Unknown keyword or identifier. Did you mean 'for'?
+client/data/content/math-ch3.ts(43,1684109): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684115): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684119): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684126): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684129): error TS1434: Unexpected keyword or identifier.
+client/data/content/math-ch3.ts(43,1684144): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,1684145): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,1684245): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,2558987): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2558995): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559015): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559019): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559026): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559029): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559039): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559058): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559062): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559069): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559072): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559083): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559102): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559112): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559113): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559122): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559125): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559127): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559132): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559137): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559143): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559149): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559168): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559173): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559179): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559185): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559204): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559214): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559215): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559224): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559227): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559229): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559234): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559239): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559241): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559247): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559253): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559272): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559277): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559283): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559289): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559308): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559319): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559325): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559328): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559330): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559339): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559347): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559367): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559368): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559368): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559374): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559377): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559382): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559401): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559407): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559410): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559415): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559416): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559435): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559440): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,2559441): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559460): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559465): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559484): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559488): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559500): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559520): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559533): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559536): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559564): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559571): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559573): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559578): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559582): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559584): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559591): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559621): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559627): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559631): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559638): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559645): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559647): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559652): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559656): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559658): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559665): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,2559698): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559700): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559704): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559706): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559721): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559727): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559731): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559732): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559747): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559755): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559765): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2559771): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,2559888): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2560897): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2560985): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561136): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561142): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561148): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561155): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561159): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561165): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561171): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561174): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561178): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561181): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561185): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561190): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561194): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561207): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561213): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561218): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561225): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561231): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561234): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561240): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561246): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561249): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561253): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561256): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561260): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561265): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561267): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,2561268): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,2561269): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,2561342): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(43,3467006): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467014): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467034): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467043): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467044): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467051): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,3467057): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467060): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467079): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467088): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467089): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467092): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,3467097): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,3467104): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467107): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467126): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467133): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467142): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467144): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467147): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467148): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467168): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467173): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/math-ch3.ts(43,3467179): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467182): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467201): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467209): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467221): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467275): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467361): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467395): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467481): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467518): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467604): error TS1109: Expression expected.
+client/data/content/math-ch3.ts(43,3467640): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,3467694): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467698): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467704): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467708): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467717): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,3467746): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467752): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467757): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467761): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467767): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467772): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467778): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,3467808): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467814): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467818): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467826): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467832): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467837): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467841): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467847): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467852): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467858): error TS1003: Identifier expected.
+client/data/content/math-ch3.ts(43,3467891): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467893): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467897): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467899): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467914): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467920): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467924): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467925): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467940): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467948): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467958): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3467964): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(43,3468189): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3468978): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3469036): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(43,3471165): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(43,3471560): error TS1161: Unterminated regular expression literal.
+client/data/content/math-ch3.ts(45,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(776,11): error TS1005: ';' expected.
+client/data/content/math-ch3.ts(888,1): error TS1128: Declaration or statement expected.

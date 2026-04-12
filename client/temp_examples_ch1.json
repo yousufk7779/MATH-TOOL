@@ -1,0 +1,147 @@
+[
+  {
+    "id": "q1",
+    "number": "1",
+    "question": "Check whether 4ⁿ can end with the digit 0 for any natural number n.",
+    "solution": [
+      "Factor Tree Diagram Placeholder",
+      "**Solution:**",
+      "For any number to end with the digit 0, it must be divisible by 10.",
+      "This implies that its prime factorization must include the prime numbers 2 and 5.",
+      "4ⁿ = (2²)ⁿ = 2²ⁿ",
+      "The prime factorization of 4ⁿ contains only the prime 2.",
+      "There is no factor 5 in it.",
+      "The Fundamental Theorem of Arithmetic guarantees the uniqueness of this factorization.",
+      "So, there is no natural number n for which 4ⁿ ends with the digit 0.",
+      "**Hence, 4ⁿ cannot end with digit 0.**"
+    ],
+    "answer": "Hence, 4ⁿ cannot end with digit 0."
+  },
+  {
+    "id": "q2",
+    "number": "2",
+    "question": "Find the LCM and HCF of 6 and 20 by the prime factorisation method.",
+    "solution": [
+      "Factor Trees for 6 and 20",
+      "**Solution:**",
+      "Prime factorization:",
+      "6 = 2 × 3",
+      "20 = 2 × 2 × 5 = 2² × 5",
+      "To find HCF:",
+      "The common prime factor is 2.",
+      "The smallest power of the common factor 2 is 2¹.",
+      "HCF(6, 20) = 2",
+      "To find LCM:",
+      "The prime factors involved are 2, 3, and 5.",
+      "The greatest power of each prime factor involved:",
+      "2² (for 2), 3¹ (for 3), 5¹ (for 5).",
+      "LCM(6, 20) = 2² × 3 × 5 = 4 × 3 × 5 = 60",
+      "**HCF(6, 20) = 2, LCM(6, 20) = 60**"
+    ],
+    "answer": "HCF(6, 20) = 2, LCM(6, 20) = 60"
+  },
+  {
+    "id": "q3",
+    "number": "3",
+    "question": "Find the HCF of 96 and 404 by the prime factorisation method. Hence, find their<br/>LCM.",
+    "solution": [
+      "**Solution:**",
+      "Prime factorization:",
+      "96 = 2 × 2 × 2 × 2 × 2 × 3 = 2⁵ × 3",
+      "404 = 2 × 2 × 101 = 2² × 101",
+      "The common prime factor is 2. The smallest power is 2².",
+      "HCF(96, 404) = 2² = 4",
+      "**Finding LCM:**",
+      "We know the relationship:",
+      "LCM × HCF = Product of the two numbers",
+      "LCM × 4 = 96 × 404",
+      "LCM = <sup>96 × 404</sup>&frasl;<sub>4</sub>",
+      "LCM = 24 × 404",
+      "LCM = 9696",
+      "**HCF = 4, LCM = 9696**"
+    ],
+    "answer": "HCF = 4, LCM = 9696"
+  },
+  {
+    "id": "q4",
+    "number": "4",
+    "question": "Find the HCF and LCM of 6, 72 and 120, using the prime factorisation method.",
+    "solution": [
+      "**Solution:**",
+      "Prime factorization:",
+      "6 = 2 × 3",
+      "72 = 2³ × 3²",
+      "120 = 2³ × 3 × 5",
+      "HCF: Common factors are 2 and 3. Smallest powers are 2¹ and 3¹.",
+      "HCF = 2 × 3 = 6",
+      "LCM: Greatest powers are 2³, 3² and 5¹.",
+      "LCM = 2³ × 3² × 5 = 8 × 9 × 5 = 360",
+      "**HCF = 6, LCM = 360**"
+    ],
+    "answer": "HCF = 6, LCM = 360"
+  },
+  {
+    "id": "q5",
+    "number": "5",
+    "question": "Prove that √3 is irrational.",
+    "solution": [
+      "**Proof:**",
+      "Let us assume, to the contrary, that √3 is rational.",
+      "Therefore, we can find integers a and b (b ≠ 0) such that:",
+      "√3 = <sup>a</sup>&frasl;<sub>b</sub>",
+      "Assume a and b are co-prime.",
+      "Squaring both sides:",
+      "3b² = a²",
+      "Therefore, 3 divides a².",
+      "Theorem 1.3: If a prime p divides a², then p divides\na.",
+      "So, 3 divides a.",
+      "Let a = 3c for some integer c.",
+      "substituting a = 3c, we get:",
+      "3b² = (3c)² = 9c²",
+      "b² = 3c²",
+      "This means 3 divides b², and so 3 divides b.",
+      "Thus, a and b have at least 3 as a common factor.",
+      "But this contradicts the fact that a and b are co-prime.",
+      "This contradiction arises because of our incorrect assumption that √3 is rational.",
+      "**Hence, √3 is irrational.**"
+    ],
+    "answer": "Hence, √3 is irrational."
+  },
+  {
+    "id": "q6",
+    "number": "6",
+    "question": "Show that 5 - √3 is irrational.",
+    "solution": [
+      "**Proof:**",
+      "Let us assume that 5 - √3 is rational.",
+      "So we can write:",
+      "5 - √3 = <sup>a</sup>&frasl;<sub>b</sub> (where a, b are co-prime integers, b ≠ 0)",
+      "Rearranging to isolate √3:",
+      "5 - <sup>a</sup>&frasl;<sub>b</sub> = √3",
+      "√3 = <sup>5b - a</sup>&frasl;<sub>b</sub>",
+      "Since a and b are integers, the RHS <sup>5b - a</sup>&frasl;<sub>b</sub> is\nrational.",
+      "This implies √3 is rational.",
+      "But this contradicts the fact that √3 is irrational.",
+      "**Hence, 5 - √3 is irrational.**"
+    ],
+    "answer": "Hence, 5 - √3 is irrational."
+  },
+  {
+    "id": "q7",
+    "number": "7",
+    "question": "Show that 3√2 is irrational.",
+    "solution": [
+      "**Proof:**",
+      "Let us assume that 3√2 is rational.",
+      "So we can find co-prime integers a and b (b ≠ 0) such that:",
+      "3√2 = <sup>a</sup>&frasl;<sub>b</sub>",
+      "Rearranging:",
+      "√2 = <sup>a</sup>&frasl;<sub>3b</sub>",
+      "Since 3, a, and b are integers, <sup>a</sup>&frasl;<sub>3b</sub> is rational.",
+      "This implies √2 is rational.",
+      "But this contradicts the fact that √2 is irrational.",
+      "**Hence, 3√2 is irrational.**"
+    ],
+    "answer": "Hence, 3√2 is irrational."
+  }
+]

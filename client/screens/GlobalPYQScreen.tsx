@@ -1,12 +1,6 @@
 import React, { memo, useState, useCallback, useMemo } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import {
-    useFonts,
-    Kalam_400Regular,
-    Kalam_700Bold,
-} from "@expo-google-fonts/kalam";
-
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { ColorButton } from "@/components/ColorButton";
@@ -16,10 +10,6 @@ import { getAllPYQYears, getQuestionsForYear, AggregatedQuestion } from "@/data/
 import { class10Chapters as chapters } from "@/data/chapters";
 
 export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
-    const [fontsLoaded] = useFonts({
-        Kalam_400Regular,
-        Kalam_700Bold,
-    });
 
     const [selectedYear, setSelectedYear] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<string>(JiguuColors.accent3); // Default color
@@ -43,7 +33,6 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     };
 
     // Render Year Selection Grid
-    if (!fontsLoaded) return null;
 
     if (!selectedYear) {
         return (
@@ -95,16 +84,19 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
                 {questions.length === 0 ? (
                     <ThemedText style={styles.emptyText}>No questions found for this year.</ThemedText>
                 ) : (
-                    questions.map((item) => (
-                        <QuestionCard
-                            key={item.question.id}
-                            question={item.question}
-                            chapterId={item.chapterId}
-                            accentColor={selectedColor}
-                            titleStyle={{ fontFamily: "Kalam_700Bold", color: "#fff" }}
-                            contentStyle={{ fontFamily: "Kalam_400Regular", color: "#fff" }}
-                        />
-                    ))
+                    questions.map((item) => {
+                        const isCh7 = item.chapterId === "ch7";
+                        return (
+                            <QuestionCard
+                                key={item.question.id}
+                                question={item.question}
+                                chapterId={item.chapterId}
+                                accentColor={selectedColor}
+                                titleStyle={{ fontFamily: isCh7 ? "NotoSans_400Regular" : "NotoSans_400Regular", color: "#fff" }}
+                                contentStyle={{ fontFamily: isCh7 ? "NotoSans_400Regular" : "NotoSans_400Regular", color: "#fff" }}
+                            />
+                        );
+                    })
                 )}
             </ScrollView>
         </ScreenWrapper>
@@ -125,13 +117,13 @@ const styles = StyleSheet.create({
         color: JiguuColors.textPrimary,
         marginBottom: Spacing.xs,
         textAlign: "center",
-        fontFamily: "Kalam_700Bold",
+        fontFamily: "NotoSans_400Regular",
     },
     subTitle: {
         ...Typography.body,
         color: JiguuColors.textSecondary,
         marginBottom: Spacing.xl,
-        fontFamily: "Kalam_400Regular",
+        fontFamily: "NotoSans_400Regular",
     },
     grid: {
         flexDirection: "column", // Stack vertically
@@ -164,12 +156,12 @@ const styles = StyleSheet.create({
     yearText: {
         ...Typography.h4,
         color: "#fff",
-        fontFamily: "Kalam_700Bold",
+        fontFamily: "NotoSans_400Regular",
     },
     emptyText: {
         textAlign: "center",
         marginTop: Spacing.xl,
         color: JiguuColors.textSecondary,
-        fontFamily: "Kalam_400Regular",
+        fontFamily: "NotoSans_400Regular",
     }
 });

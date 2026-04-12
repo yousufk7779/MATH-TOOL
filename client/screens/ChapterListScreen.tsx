@@ -10,7 +10,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
-import { class10Chapters, Chapter, otherSubjectsData } from "@/data/chapters";
+import { class10Chapters, Chapter, otherSubjectsData, getChapterGradient } from "@/data/chapters";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -31,16 +31,15 @@ function ChapterListScreen() {
   }
 
   const renderItem = useCallback(({ item }: { item: Chapter }) => {
-    // Assuming all chapters in the list are available if they are in the registry/list.
-    // Or we can check if they are in chapterRegistry?
-    // For now, let's assume available.
     const available = !item.locked;
+    const chapterGradient = getChapterGradient(item.id);
+
     return (
       <ChapterCard
         testID={`chapter-card-${item.id}`}
         number={item.number}
         name={item.name}
-        color={item.color}
+        colors={chapterGradient}
         isAvailable={available}
         onPress={() => {
           console.log("Chapter clicked:", item.id);
@@ -62,26 +61,7 @@ function ChapterListScreen() {
     />
   ), [subject, topic]);
 
-  const renderHeader = useCallback(() => (
-    <View style={styles.actionButtons}>
-      <View style={styles.actionButtonWrapper}>
-        <ColorButton
-          testID="button-bookmarks"
-          title="BOOKMARKS"
-          color={JiguuColors.accent2}
-          onPress={() => navigation.navigate("Bookmarks")}
-        />
-      </View>
-      <View style={styles.actionButtonWrapper}>
-        <ColorButton
-          testID="button-important"
-          title="IMPORTANT"
-          color={JiguuColors.accent3}
-          onPress={() => navigation.navigate("ImportantQuestions")}
-        />
-      </View>
-    </View>
-  ), [navigation]);
+
 
   return (
     <ScreenWrapper showBackButton>
@@ -92,11 +72,11 @@ function ChapterListScreen() {
         contentContainerStyle={[
           styles.listContent,
           displayChapters.length === 0 ? styles.emptyContent : null,
+          displayChapters.length > 0 && displayChapters.length < 7 ? styles.centeredContent : null,
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
         ListEmptyComponent={renderEmptyState}
-        ListHeaderComponent={renderHeader}
       />
     </ScreenWrapper>
   );
@@ -108,7 +88,11 @@ const styles = StyleSheet.create({
   listContent: {
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.lg,
-    paddingBottom: 120,
+    paddingBottom: 80,
+    flexGrow: 1,
+  },
+  centeredContent: {
+    justifyContent: 'center',
   },
   emptyContent: {
     flex: 1,
@@ -117,14 +101,7 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: Spacing.md,
   },
-  actionButtons: {
-    flexDirection: "row",
-    gap: Spacing.md,
-    marginBottom: Spacing.md,
-  },
-  actionButtonWrapper: {
-    flex: 1,
-  },
+
   separator: {
     height: Spacing.md,
   },

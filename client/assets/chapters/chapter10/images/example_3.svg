@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
-  <circle cx="150" cy="150" r="50" stroke="black" stroke-width="2" fill="none"/> <!-- r=5 -->
-  <circle cx="150" cy="150" r="3" fill="black"/> <text x="140" y="150" font-weight="bold">O</text>
+  <circle cx="150" cy="150" r="50" stroke="red" stroke-width="2" fill="none"/> <!-- r=5 -->
+  <circle cx="150" cy="150" r="3" fill="red"/> <text x="140" y="150" font-weight="bold" fill="red">O</text>
   
   <!-- Chord PQ length 8cm -->
   <!-- Dist from center = sqrt(25 - 16) = 3cm. -->
@@ -8,9 +8,9 @@
   <!-- Chord vertical x = 150 + 30 = 180. -->
   <!-- P(180, 150-40) = (180, 110). Q(180, 190). -->
   
-  <line x1="180" y1="110" x2="180" y2="190" stroke="black" stroke-width="2"/>
-  <circle cx="180" cy="110" r="3" fill="black"/> <text x="175" y="100" font-weight="bold">P</text>
-  <circle cx="180" cy="190" r="3" fill="black"/> <text x="175" y="210" font-weight="bold">Q</text>
+  <line x1="180" y1="110" x2="180" y2="190" stroke="red" stroke-width="2"/>
+  <circle cx="180" cy="110" r="3" fill="red"/> <text x="175" y="100" font-weight="bold" fill="red">P</text>
+  <circle cx="180" cy="190" r="3" fill="red"/> <text x="175" y="210" font-weight="bold" fill="red">Q</text>
   
   <!-- Tangents intersect at T -->
   <!-- TP perp to OP. Gradient OP = (180-150)/(110-150) = 30/-40 = -0.75. -->
@@ -26,11 +26,17 @@
   <!-- Scale 10x => OT = 83.3 units. -->
   <!-- T is at x = 150 + 83.3 = 233.3. y = 150. -->
   
-  <circle cx="233" cy="150" r="3" fill="black"/> <text x="240" y="150" font-weight="bold">T</text>
+  <circle cx="233" cy="150" r="3" fill="red"/> <text x="240" y="150" font-weight="bold" fill="red">T</text>
   
   <line x1="180" y1="110" x2="233" y2="150" stroke="red" stroke-width="2"/>
   <line x1="180" y1="190" x2="233" y2="150" stroke="red" stroke-width="2"/>
   
   <line x1="150" y1="150" x2="233" y2="150" stroke="blue" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+
+<style> text, tspan { fill: red !important; } </style>
+
+
+
 
 </svg>

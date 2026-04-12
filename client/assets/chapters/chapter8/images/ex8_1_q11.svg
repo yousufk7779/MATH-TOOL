@@ -3,9 +3,15 @@
 <line x1="80" y1="250" x2="220" y2="250" stroke="#2E7D32" stroke-width="2"/>
 <line x1="80" y1="50" x2="220" y2="250" stroke="#2E7D32" stroke-width="2"/>
 <polyline points="80,230 100,230 100,250" stroke="#2E7D32" fill="none"/>
-<text x="70" y="45" font-family="Arial" font-size="16" fill="black">C</text>
-<text x="70" y="275" font-family="Arial" font-size="16" fill="black">B</text>
-<text x="230" y="275" font-family="Arial" font-size="16" fill="black">A</text>
-<text x="20" y="150" font-family="Arial" font-size="16" fill="black">12k</text>
-<text x="140" y="275" font-family="Arial" font-size="16" fill="black">5k</text>
+<text x="70" y="45" font-family="Arial" font-size="16" fill="#2e7d32">C</text>
+<text x="70" y="275" font-family="Arial" font-size="16" fill="#2e7d32">B</text>
+<text x="230" y="275" font-family="Arial" font-size="16" fill="#2e7d32">A</text>
+<text x="20" y="150" font-family="Arial" font-size="16" fill="#2e7d32">12k</text>
+<text x="140" y="275" font-family="Arial" font-size="16" fill="#2e7d32">5k</text>
+
+<style> text, tspan { fill: #2e7d32 !important; } </style>
+
+
+
+
 </svg>

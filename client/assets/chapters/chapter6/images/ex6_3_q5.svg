@@ -3,8 +3,8 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
-      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
+      .angle-arc { fill: none; stroke: #00bfff; stroke-width: 1; }
     </style>
   </defs>
 
@@ -14,7 +14,7 @@
   <!-- Q: Bottom Right (350, 250) -->
   
   <!-- Triangle PQR -->
-  <path d="M200 50 L50 300 L350 250 Z" class="line" />
+  <path d="M200 50 L50 300 L350 250 Z" class="line"/>
 
   <!-- Points S and T -->
   <!-- S on RP. Let's place it somewhat down from R. -->
@@ -26,18 +26,18 @@
   <!-- T approx (282, 160) -->
   
   <!-- Line ST -->
-  <line x1="132.5" y1="162.5" x2="282.5" y2="160" class="inner-line" />
+  <line x1="132.5" y1="162.5" x2="282.5" y2="160" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="195" y="40" class="text">R</text>
-  <text x="30" y="310" class="text">P</text>
-  <text x="360" y="260" class="text">Q</text>
-  <text x="110" y="165" class="text">S</text>
-  <text x="290" y="165" class="text">T</text>
+  <text x="195" y="40" class="text" fill="#00bfff">R</text>
+  <text x="30" y="310" class="text" fill="#00bfff">P</text>
+  <text x="360" y="260" class="text" fill="#00bfff">Q</text>
+  <text x="110" y="165" class="text" fill="#00bfff">S</text>
+  <text x="290" y="165" class="text" fill="#00bfff">T</text>
 
   <!-- Angle P (angle RPQ) -->
   <!-- Center P(50,300). From PR to PQ. -->
-  <path d="M65 275 A 30 30 0 0 1 80 290" class="angle-arc" />
+  <path d="M65 275 A 30 30 0 0 1 80 290" class="angle-arc" stroke="#00bfff" fill="none"/>
 
   <!-- Angle RTS -->
   <!-- Center T(282.5, 160). From TR to TS. -->
@@ -45,6 +45,12 @@
   <!-- Vector TS goes left to S(132.5, 162.5). Vector (-150, 2.5). Angle approx 180 deg. -->
   
   <!-- Drawing arc at T visually inside triangle R-S-T -->
-  <path d="M272 148 A 20 20 0 0 0 262 160" class="angle-arc" />
+  <path d="M272 148 A 20 20 0 0 0 262 160" class="angle-arc" stroke="#00bfff" fill="none"/>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
+  <!-- Circle -->
+  <circle cx="150" cy="150" r="70" stroke="black" stroke-width="2" fill="none"/>
+  <circle cx="150" cy="150" r="3" fill="black"/>
+  <text x="130" y="155" font-family="Arial" font-size="16" font-weight="bold">O</text>
+  
+  <!-- Points P and Q on circle -->
+  <!-- Angle POQ = 110 deg. -->
+  
+  <!-- Radius OP -->
+  <line x1="150" y1="150" x2="190" y2="93" stroke="black" stroke-width="2"/>
+  <circle cx="190" cy="93" r="3" fill="black"/>
+  <text x="180" y="85" font-family="Arial" font-size="16" font-weight="bold">P</text>
+  
+  <!-- Radius OQ -->
+  <line x1="150" y1="150" x2="190" y2="207" stroke="black" stroke-width="2"/>
+  <circle cx="190" cy="207" r="3" fill="black"/>
+  <text x="180" y="225" font-family="Arial" font-size="16" font-weight="bold">Q</text>
+  
+  <!-- Tangents lines T to P and Q -->
+  <!-- T is at (272, 150) -->
+  <line x1="272" y1="150" x2="190" y2="93" stroke="red" stroke-width="2"/>
+  <line x1="272" y1="150" x2="190" y2="207" stroke="red" stroke-width="2"/>
+  
+  <circle cx="272" cy="150" r="3" fill="black"/>
+  <text x="280" y="155" font-family="Arial" font-size="16" font-weight="bold">T</text>
+  
+  <!-- Right Angle Symbols -->
+  <polyline points="183,100 195,108 202,100" stroke="black" fill="none" stroke-width="1"/>
+  <polyline points="183,200 195,192 202,200" stroke="black" fill="none" stroke-width="1"/>
+  
+  <!-- Angle Arc at O -->
+  <path d="M165,129 A 30 30 0 0 1 165 171" stroke="black" fill="none"/>
+  <!-- Moved 110 deg text to the right, inside the angle -->
+  <text x="175" y="155" font-family="Arial" font-size="14">110°</text>
+  
+</svg>

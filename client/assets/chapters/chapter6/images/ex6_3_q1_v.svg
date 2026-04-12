@@ -2,9 +2,9 @@
   <defs>
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; }
       .label { font-size: 20px; font-weight: bold; }
-      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+      .angle-arc { fill: none; stroke: #00bfff; stroke-width: 1; }
     </style>
   </defs>
 
@@ -23,20 +23,20 @@
   <!-- B=(36, 126) -> AB len ~ 100 -->
   <!-- C=(155, 116) -> AC len ~ 86. BC len = dist(36,126 to 155,116) = sqrt(119^2 + 10^2) = 119 ~ 120 (3*40). Good. -->
   
-  <path d="M100 50 L36 126 L155 116 Z" class="line" />
+  <path d="M100 50 L36 126 L155 116 Z" class="line"/>
 
   <!-- Labels ABC -->
-  <text x="95" y="40" class="text label">A</text>
-  <text x="20" y="140" class="text label">B</text>
-  <text x="165" y="130" class="text label">C</text>
+  <text x="95" y="40" class="text label" fill="#00bfff">A</text>
+  <text x="20" y="140" class="text label" fill="#00bfff">B</text>
+  <text x="165" y="130" class="text label" fill="#00bfff">C</text>
 
   <!-- Values ABC -->
-  <text x="45" y="90" class="text">2.5</text>
-  <text x="90" y="135" class="text">3</text>
-  <text x="90" y="85" class="text">80°</text>
+  <text x="45" y="90" class="text" fill="#00bfff">2.5</text>
+  <text x="90" y="135" class="text" fill="#00bfff">3</text>
+  <text x="90" y="85" class="text" fill="#00bfff">80°</text>
 
   <!-- Arc A -->
-  <path d="M92 68 A 20 20 0 0 0 110 65" class="angle-arc" />
+  <path d="M92 68 A 20 20 0 0 0 110 65" class="angle-arc" stroke="#00bfff" fill="none"/>
 
 
   <!-- Triangle DEF -->
@@ -44,19 +44,25 @@
   <!-- Scale 40. DF=200. EF=240. -->
   <!-- F(500, 250). E(260, 250). D(466, 54). -->
 
-  <path d="M466 54 L260 250 L500 250 Z" class="line" />
+  <path d="M466 54 L260 250 L500 250 Z" class="line"/>
 
   <!-- Labels DEF -->
-  <text x="460" y="45" class="text label">D</text>
-  <text x="245" y="265" class="text label">E</text>
-  <text x="510" y="265" class="text label">F</text>
+  <text x="460" y="45" class="text label" fill="#00bfff">D</text>
+  <text x="245" y="265" class="text label" fill="#00bfff">E</text>
+  <text x="510" y="265" class="text label" fill="#00bfff">F</text>
 
   <!-- Values DEF -->
-  <text x="475" y="150" class="text">5</text>
-  <text x="380" y="270" class="text">6</text>
-  <text x="455" y="235" class="text">80°</text>
+  <text x="475" y="150" class="text" fill="#00bfff">5</text>
+  <text x="380" y="270" class="text" fill="#00bfff">6</text>
+  <text x="455" y="235" class="text" fill="#00bfff">80°</text>
 
   <!-- Arc F -->
-  <path d="M480 250 A 30 30 0 0 0 492 221" class="angle-arc" />
+  <path d="M480 250 A 30 30 0 0 0 492 221" class="angle-arc" stroke="#00bfff" fill="none"/>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

@@ -3,7 +3,7 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
     </style>
   </defs>
 
@@ -17,26 +17,32 @@
   <!-- F: (267.5, 166) -->
 
   <!-- Outer Triangle PQR -->
-  <path d="M200 40 L50 320 L350 320 Z" class="line" />
+  <path d="M200 40 L50 320 L350 320 Z" class="line"/>
 
   <!-- Inner Lines to O -->
-  <line x1="200" y1="40" x2="200" y2="240" class="inner-line" /> <!-- PO -->
-  <line x1="50" y1="320" x2="200" y2="240" class="inner-line" /> <!-- QO -->
-  <line x1="350" y1="320" x2="200" y2="240" class="inner-line" /> <!-- RO -->
+  <line x1="200" y1="40" x2="200" y2="240" class="inner-line"/> <!-- PO -->
+  <line x1="50" y1="320" x2="200" y2="240" class="inner-line"/> <!-- QO -->
+  <line x1="350" y1="320" x2="200" y2="240" class="inner-line"/> <!-- RO -->
 
   <!-- Parallel Segments -->
-  <line x1="132.5" y1="166" x2="200" y2="130" class="inner-line" /> <!-- DE -->
-  <line x1="200" y1="130" x2="267.5" y2="166" class="inner-line" /> <!-- DF -->
-  <line x1="132.5" y1="166" x2="267.5" y2="166" class="inner-line" /> <!-- EF -->
+  <line x1="132.5" y1="166" x2="200" y2="130" class="inner-line"/> <!-- DE -->
+  <line x1="200" y1="130" x2="267.5" y2="166" class="inner-line"/> <!-- DF -->
+  <line x1="132.5" y1="166" x2="267.5" y2="166" class="inner-line"/> <!-- EF -->
 
   <!-- Labels -->
-  <text x="195" y="30" class="text">P</text>
-  <text x="30" y="325" class="text">Q</text>
-  <text x="360" y="325" class="text">R</text>
-  <text x="190" y="260" class="text">O</text>
+  <text x="195" y="30" class="text" fill="#00bfff">P</text>
+  <text x="30" y="325" class="text" fill="#00bfff">Q</text>
+  <text x="360" y="325" class="text" fill="#00bfff">R</text>
+  <text x="190" y="260" class="text" fill="#00bfff">O</text>
   
-  <text x="205" y="130" class="text">D</text>
-  <text x="110" y="165" class="text">E</text>
-  <text x="275" y="165" class="text">F</text>
+  <text x="205" y="130" class="text" fill="#00bfff">D</text>
+  <text x="110" y="165" class="text" fill="#00bfff">E</text>
+  <text x="275" y="165" class="text" fill="#00bfff">F</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

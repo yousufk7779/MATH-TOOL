@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150" style="background-color:white; border:1px solid #ddd;">
+  <!-- Rhombus (imperfect square look) -->
+  <polygon points="40,30 20,90 80,90 100,30" fill="none" stroke="purple" stroke-width="2"/>
+  <text x="40" y="110" font-family="Arial" font-size="10">Rhombus (1.5cm)</text>
+  
+  <!-- Square -->
+  <rect x="130" y="30" width="50" height="50" fill="none" stroke="purple" stroke-width="2"/>
+  <text x="130" y="100" font-family="Arial" font-size="10">Square (3cm)</text>
+</svg>

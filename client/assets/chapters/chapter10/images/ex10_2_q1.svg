@@ -23,38 +23,44 @@
 
   <!-- Circle -->
   <!-- Color: Blue #1976D2 -->
-  <circle cx="100" cy="80" r="56" fill="none" stroke="#1976D2" stroke-width="2.5" />
+  <circle cx="100" cy="80" r="56" fill="none" stroke="#1976D2" stroke-width="2.5"/>
   
   <!-- Radius OP -->
   <!-- Color: Red #D32F2F -->
-  <line x1="100" y1="80" x2="100" y2="136" stroke="#D32F2F" stroke-width="2.5" />
+  <line x1="100" y1="80" x2="100" y2="136" stroke="#D32F2F" stroke-width="2.5"/>
   
   <!-- Tangent PQ -->
   <!-- Color: Green #388E3C -->
-  <line x1="100" y1="136" x2="292" y2="136" stroke="#388E3C" stroke-width="2.5" />
+  <line x1="100" y1="136" x2="292" y2="136" stroke="#388E3C" stroke-width="2.5"/>
 
   <!-- Hypotenuse OQ -->
   <!-- Color: Orange #F57C00 -->
-  <line x1="100" y1="80" x2="292" y2="136" stroke="#F57C00" stroke-width="2.5" />
+  <line x1="100" y1="80" x2="292" y2="136" stroke="#F57C00" stroke-width="2.5"/>
 
   <!-- Points -->
-  <circle cx="100" cy="80" r="3" fill="black" />
-  <circle cx="100" cy="136" r="3" fill="black" />
-  <circle cx="292" cy="136" r="3" fill="black" />
+  <circle cx="100" cy="80" r="3" fill="#f57c00"/>
+  <circle cx="100" cy="136" r="3" fill="#f57c00"/>
+  <circle cx="292" cy="136" r="3" fill="#f57c00"/>
 
   <!-- Right Angle Symbol -->
-  <polyline points="100,126 110,126 110,136" fill="none" stroke="black" stroke-width="1" />
+  <polyline points="100,126 110,126 110,136" fill="none" stroke="#f57c00" stroke-width="1"/>
 
   <!-- Labels -->
-  <text x="90" y="75" class="label">O</text>
-  <text x="90" y="155" class="label">P</text>
-  <text x="300" y="140" class="label">Q</text>
+  <text x="90" y="75" class="label" fill="#f57c00">O</text>
+  <text x="90" y="155" class="label" fill="#f57c00">P</text>
+  <text x="300" y="140" class="label" fill="#f57c00">Q</text>
 
   <!-- Dimensions -->
   <!-- 25 cm on OQ -->
-  <text x="200" y="100" class="dim" fill="black" transform="rotate(16, 200, 100)">25 cm</text>
+  <text x="200" y="100" class="dim" fill="#f57c00" transform="rotate(16, 200, 100)">25 cm</text>
   
   <!-- 24 cm on PQ -->
-  <text x="190" y="160" class="dim" fill="black">24 cm</text>
+  <text x="190" y="160" class="dim" fill="#f57c00">24 cm</text>
+
+
+<style> text, tspan { fill: #f57c00 !important; } </style>
+
+
+
 
 </svg>

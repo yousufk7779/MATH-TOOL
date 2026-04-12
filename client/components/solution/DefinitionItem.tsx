@@ -16,7 +16,7 @@ function DefinitionItem({ term, description, termStyle, descriptionStyle }: Defi
       <ThemedText
         style={{
           ...Typography.body,
-          fontFamily: "Kalam_700Bold",
+          fontFamily: "NotoSans_400Regular",
           color: "#4CAF50",
           marginBottom: 2,
           ...termStyle
@@ -48,14 +48,15 @@ const styles = StyleSheet.create({
     borderBottomColor: JiguuColors.border + "40",
   },
   term: {
-    ...Typography.body,
-    fontFamily: "Kalam_700Bold",
+    ...Typography.h4,
     color: "#4CAF50",
-    marginBottom: 2,
+    marginBottom: Spacing.xs,
+    fontFamily: "NotoSans_400Regular",
   },
   description: {
-    ...Typography.small,
+    ...Typography.body,
     color: JiguuColors.textSecondary,
-    lineHeight: 22,
+    lineHeight: 24,
+    fontFamily: "NotoSans_400Regular",
   },
 });

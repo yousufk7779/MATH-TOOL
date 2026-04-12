@@ -3,7 +3,7 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
     </style>
   </defs>
 
@@ -23,23 +23,29 @@
   <!-- E = (252.5, 124) -->
 
   <!-- Main Triangle ABC -->
-  <path d="M200 40 L50 280 L350 280 Z" class="line" />
+  <path d="M200 40 L50 280 L350 280 Z" class="line"/>
 
   <!-- Inner Lines -->
   <!-- Line DE -->
-  <line x1="147.5" y1="124" x2="252.5" y2="124" class="inner-line" />
+  <line x1="147.5" y1="124" x2="252.5" y2="124" class="inner-line"/>
   
   <!-- Line BE -->
-  <line x1="50" y1="280" x2="252.5" y2="124" class="inner-line" />
+  <line x1="50" y1="280" x2="252.5" y2="124" class="inner-line"/>
   
   <!-- Line CD -->
-  <line x1="350" y1="280" x2="147.5" y2="124" class="inner-line" />
+  <line x1="350" y1="280" x2="147.5" y2="124" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="195" y="30" class="text">A</text>
-  <text x="30" y="290" class="text">B</text>
-  <text x="360" y="290" class="text">C</text>
-  <text x="125" y="125" class="text">D</text>
-  <text x="260" y="125" class="text">E</text>
+  <text x="195" y="30" class="text" fill="#00bfff">A</text>
+  <text x="30" y="290" class="text" fill="#00bfff">B</text>
+  <text x="360" y="290" class="text" fill="#00bfff">C</text>
+  <text x="125" y="125" class="text" fill="#00bfff">D</text>
+  <text x="260" y="125" class="text" fill="#00bfff">E</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

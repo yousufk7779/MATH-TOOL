@@ -1,0 +1,16 @@
+FOUND QUESTION AT P140
+P140 : How can three resistors of resistances 2 Ω, 3 Ω, and 6 Ω be connected to give a total resistance of (a) 4 Ω,
+P141 : (b) 1 Ω?
+P142 : Solution:
+P143 : (a) The circuit diagram below shows the connection of three resistors
+P144 [1 imgs]: 
+P145 [1 imgs]: From the circuit above, it is understood that 3 Ω and 6 Ω are connected in parallel. Hence, their equivalent resistance is given by
+P148 [1 imgs]: 
+P149 : The equivalent resistor 2 Ω is in series with the 2 Ω resistor. Now the equivalent resistance can be calculated as follows:
+P151 : Req= 2 Ω +2 Ω = 4 Ω
+P152 : Hence, the total resistance of the circuit is 4 Ω.
+P154 [1 imgs]: (b) The circuit diagram below, shows the connection of three resistors.
+P155 : From the circuit, it is understood that all the resistors are connected in parallel. Therefore, their equivalent resistance can be calculated as follows:
+P156 [1 imgs]: 
+P157 : The total resistance of the circuit is 1 Ω.
+P159 : What is (a) the highest, (b) the lowest total resistance that can be secured by combinations of four coils of

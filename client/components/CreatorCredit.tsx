@@ -16,8 +16,8 @@ export const CreatorCredit = memo(function CreatorCredit() {
     <View style={[
       styles.container,
       {
-        paddingBottom: insets.bottom + Spacing.sm,
-        paddingTop: isLandscape ? 4 : Spacing.md,
+        paddingBottom: insets.bottom + Spacing.sm - 6,
+        paddingTop: isLandscape ? 4 : Spacing.md - 4,
       }
     ]}>
       <View style={[styles.photoWrapper, isLandscape && styles.photoWrapperLandscape]}>
@@ -37,12 +37,6 @@ export const CreatorCredit = memo(function CreatorCredit() {
 
 const styles = StyleSheet.create({
   container: {
-    position: "absolute",
-    bottom: 0,
-    right: 0,
-    left: 0,
-    zIndex: 10,
-    elevation: 10,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-end",
@@ -78,20 +72,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   name: {
-    ...Typography.small,
-    ...Typography.small,
+    fontSize: 14,
     color: JiguuColors.textPrimary,
     lineHeight: 18,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
+    letterSpacing: 0.5,
   },
   nameLandscape: {
     fontSize: 12,
     lineHeight: 14,
   },
   title: {
-    ...Typography.caption,
+    fontSize: 12,
     color: JiguuColors.accent2,
     lineHeight: 16,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_600SemiBold",
+    marginTop: 2,
   },
 });

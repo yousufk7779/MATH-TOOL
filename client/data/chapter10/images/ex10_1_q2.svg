@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+  </defs>
+  <!-- Circle -->
+  <circle cx="200" cy="150" r="70" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Line 1: Secant - Intersects at two points -->
+  <line x1="50" y1="120" x2="350" y2="120" stroke="blue" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="60" y="110" font-family="Arial" font-size="14">Secant</text>
+  <circle cx="137" cy="120" r="3" fill="black"/>
+  <circle cx="263" cy="120" r="3" fill="black"/>
+  
+  <!-- Line 2: Tangent - Touches at one point -->
+  <line x1="50" y1="220" x2="350" y2="220" stroke="red" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="60" y="210" font-family="Arial" font-size="14">Tangent</text>
+  <circle cx="200" cy="220" r="3" fill="black"/> <!-- Point of contact -->
+  <text x="200" y="240" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle">Point of Contact</text>
+
+</svg>

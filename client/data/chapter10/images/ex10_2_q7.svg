@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
+  <circle cx="200" cy="150" r="100" stroke="black" stroke-width="2" fill="none"/> <!-- 5cm -->
+  <circle cx="200" cy="150" r="60" stroke="black" stroke-width="2" fill="none"/> <!-- 3cm -->
+  <circle cx="200" cy="150" r="3" fill="black"/> <text x="200" y="135" font-size="16" font-weight="bold">O</text>
+  
+  <!-- Chord AB touching smaller circle at top point P(200, 90) -->
+  <line x1="120" y1="90" x2="280" y2="90" stroke="red" stroke-width="2"/>
+  <text x="110" y="90" font-size="16" font-weight="bold">A</text>
+  <text x="290" y="90" font-size="16" font-weight="bold">B</text>
+  
+  <circle cx="200" cy="90" r="3" fill="black"/> <text x="205" y="80" font-size="16" font-weight="bold">P</text>
+  
+  <!-- Radius OP -->
+  <line x1="200" y1="150" x2="200" y2="90" stroke="black" stroke-width="2"/>
+  
+  <!-- Radius OA -->
+  <line x1="200" y1="150" x2="120" y2="90" stroke="blue" stroke-width="2"/>
+  
+  <!-- Right Angle -->
+  <polyline points="200,100 190,100 190,90" stroke="black" fill="none"/>
+  
+  <text x="210" y="120" font-size="14">3</text>
+  <text x="150" y="130" font-size="14">5</text>
+</svg>

@@ -1,5 +1,5 @@
 import React, { memo, useMemo } from "react";
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Image, Text, Platform } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Typography } from "@/constants/theme";
@@ -13,8 +13,8 @@ interface JiguuLogoProps {
 
 export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = "medium" }: JiguuLogoProps) {
   const { logoWidth, logoHeight } = useMemo(() => ({
-    logoWidth: size === "small" ? 160 : size === "medium" ? 200 : 240,
-    logoHeight: size === "small" ? 64 : size === "medium" ? 80 : 96,
+    logoWidth: size === "small" ? 160 : size === "medium" ? 200 : 250,
+    logoHeight: size === "small" ? 48 : size === "medium" ? 60 : 75,
   }), [size]);
 
   return (
@@ -25,7 +25,10 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
         resizeMode="contain"
       />
       {showSubtitle ? (
-        <ThemedText style={styles.subtitle}>Math Solutions - Class 10</ThemedText>
+        <Text style={styles.subtitle}>
+          <Text style={styles.subtitleGray}>Learn Smart</Text>
+          <Text style={styles.subtitlePink}> • Class 10</Text>
+        </Text>
       ) : null}
     </View>
   );
@@ -37,13 +40,26 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   logo: {
-    marginBottom: -16,
+    marginBottom: 0,
+    paddingBottom: 0,
   },
   subtitle: {
-    ...Typography.body,
-    color: JiguuColors.textSecondary,
     fontSize: 15,
-    marginTop: -6,
-    fontFamily: "Kalam_700Bold",
+    letterSpacing: 1,
+    // Maintaining extra tight gap
+    transform: [{ translateY: -18 }],
+    marginBottom: -18, 
+    includeFontPadding: false,
+    textAlignVertical: "center",
+  },
+  subtitleGray: {
+    color: "#E0E0E0",
+    fontFamily: "NotoSans_600SemiBold",
+    fontWeight: "600",
+  },
+  subtitlePink: {
+    color: JiguuColors.accent2,
+    fontFamily: "NotoSans_500Medium",
+    fontWeight: "500",
   },
 });

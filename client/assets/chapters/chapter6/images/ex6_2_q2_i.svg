@@ -2,7 +2,7 @@
   <defs>
     <style>
       .line { fill: none; stroke: #0099CC; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; text-anchor: middle; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #0099cc; text-anchor: middle; }
       .label { font-size: 20px; font-weight: bold; }
     </style>
   </defs>
@@ -19,29 +19,35 @@
   <!-- F = (250, 148) -->
 
   <!-- Triangle PQR -->
-  <path d="M175 40 L80 260 L300 220 Z" class="line" />
+  <path d="M175 40 L80 260 L300 220 Z" class="line"/>
 
   <!-- Line EF -->
-  <line x1="121.4" y1="164.3" x2="250" y2="148" class="line" />
+  <line x1="121.4" y1="164.3" x2="250" y2="148" class="line"/>
 
   <!-- Vertex Labels -->
-  <text x="175" y="30" class="text label">P</text>
-  <text x="65" y="275" class="text label">Q</text>
-  <text x="315" y="235" class="text label">R</text>
-  <text x="105" y="170" class="text label">E</text>
-  <text x="265" y="155" class="text label">F</text>
+  <text x="175" y="30" class="text label" fill="#0099cc">P</text>
+  <text x="65" y="275" class="text label" fill="#0099cc">Q</text>
+  <text x="315" y="235" class="text label" fill="#0099cc">R</text>
+  <text x="105" y="170" class="text label" fill="#0099cc">E</text>
+  <text x="265" y="155" class="text label" fill="#0099cc">F</text>
 
   <!-- Length Labels -->
   <!-- PE = 3.9 cm -->
-  <text x="130" y="110" class="text">3.9 cm</text>
+  <text x="130" y="110" class="text" fill="#0099cc">3.9 cm</text>
   
   <!-- EQ = 3 cm -->
-  <text x="80" y="220" class="text">3 cm</text>
+  <text x="80" y="220" class="text" fill="#0099cc">3 cm</text>
   
   <!-- PF = 3.6 cm -->
-  <text x="235" y="100" class="text">3.6 cm</text>
+  <text x="235" y="100" class="text" fill="#0099cc">3.6 cm</text>
   
   <!-- FR = 2.4 cm -->
-  <text x="290" y="190" class="text">2.4 cm</text>
+  <text x="290" y="190" class="text" fill="#0099cc">2.4 cm</text>
+
+
+<style> text, tspan { fill: #0099cc !important; } </style>
+
+
+
 
 </svg>

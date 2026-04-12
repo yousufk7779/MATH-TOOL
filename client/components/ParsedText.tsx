@@ -17,34 +17,34 @@ const defaultTagsStyles = {
     body: {
         fontSize: 18,
         color: JiguuColors.textPrimary,
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
         lineHeight: 28,
     },
     p: {
         marginBottom: 8,
         marginTop: 0,
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
     },
     b: {
-        fontFamily: 'Kalam_700Bold',
+        fontFamily: 'NotoSans_400Regular',
     },
     strong: {
-        fontFamily: 'Kalam_700Bold',
+        fontFamily: 'NotoSans_400Regular',
     },
     i: {
         fontStyle: 'italic',
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
     },
     em: {
         fontStyle: 'italic',
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
     },
     div: {
         marginBottom: 4,
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
     },
     span: {
-        fontFamily: 'Kalam_400Regular',
+        fontFamily: 'NotoSans_400Regular',
     }
 };
 
@@ -77,7 +77,7 @@ export const ParsedText = ({ children, style, Component, accentColor, classesSty
     const htmlContent = `<body>${children}</body>`;
 
     // Add custom fonts to system fonts so RenderHtml doesn't strip them
-    const systemFonts = [...defaultSystemFonts, 'Kalam_400Regular', 'Kalam_700Bold'];
+    const systemFonts = [...defaultSystemFonts, 'NotoSans_400Regular', 'NotoSans_400Regular'];
 
     return (
         <RenderHtml

@@ -1,29 +1,14 @@
 import React, { memo } from "react";
 import { StyleSheet, View, ScrollView, Image } from "react-native";
-import {
-  useFonts,
-  Kalam_400Regular,
-  Kalam_700Bold,
-} from "@expo-google-fonts/kalam";
-
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 
 // @ts-ignore
-import sameerPhoto from "../../assets/images/sameer-photo.jpg"; // Keeping import, but handling potential missing file gracefully in UI if needed
-import { JiguuLogo } from "@/components/JiguuLogo"; // Assuming this exists based on header use
+import sameerPhoto from "../../assets/images/sameer-photo.jpg"; 
+import { JiguuLogo } from "@/components/JiguuLogo";
 
 function AboutEducatorScreen() {
-  const [fontsLoaded] = useFonts({
-    Kalam_400Regular,
-    Kalam_700Bold,
-  });
-
-  if (!fontsLoaded) {
-    return null;
-  }
-
   return (
     <ScreenWrapper showBackButton>
       <ScrollView
@@ -33,9 +18,8 @@ function AboutEducatorScreen() {
       >
         <View style={styles.section}>
           <ThemedText style={styles.sectionHeader}>About Educator</ThemedText>
-          <View style={styles.educatorContainer}>
+          <View style={styles.card}>
             <View style={styles.photoContainer}>
-              {/* Using Image if available, or a fallback icon/view */}
               <Image
                 source={sameerPhoto}
                 style={styles.photo}
@@ -44,43 +28,48 @@ function AboutEducatorScreen() {
             </View>
             <ThemedText style={styles.name}>Sameer Khan</ThemedText>
             <ThemedText style={styles.role}>Educator (MCA, B.Ed)</ThemedText>
-            <ThemedText style={styles.bio}>
-              "Mathematics is not just about numbers, it's about logic and understanding."
-              With over 10 years of experience, Sameer Sir has helped thousands of students master NCERT concepts with ease.
+            <ThemedText style={styles.bodyText}>
+              Sameer Khan is a dedicated educator with a strong academic background (MCA, B.Ed) and over a decade of teaching experience. He focuses on simplifying complex concepts and helping students build clarity, confidence, and strong fundamentals.
+            </ThemedText>
+            <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
+              His approach is based on step-by-step learning, making even difficult topics easy to understand and apply in exams.
             </ThemedText>
           </View>
         </View>
 
         <View style={styles.section}>
           <ThemedText style={styles.sectionHeader}>About Jiguu</ThemedText>
-          <View style={styles.aboutContainer}>
-            <JiguuLogo size="medium" showSubtitle={false} />
-            <ThemedText style={styles.aboutText}>
-              JIGUU is your personal math companion designed to simplify learning.
-              It bridges the gap between complex textbook problems and understandable solutions.
+          <View style={styles.card}>
+            <View style={styles.logoCenter}>
+              <JiguuLogo size="medium" showSubtitle={false} />
+            </View>
+            <ThemedText style={styles.bodyText}>
+              JIGUU is a smart learning platform designed to simplify education across multiple subjects. From Mathematics to Science and beyond, it provides structured solutions, quick revision tools, and practice support to help students learn effectively.
+            </ThemedText>
+            <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
+              Built with a focus on clarity and consistency, JIGUU turns complex concepts into simple, understandable learning.
             </ThemedText>
           </View>
         </View>
 
         <View style={styles.section}>
           <ThemedText style={styles.sectionHeader}>Why Jiguu?</ThemedText>
-          <View style={styles.featuresGrid}>
-            <FeatureItem icon="check" text="Step-by-step NCERT Solutions" />
-            <FeatureItem icon="clock" text="Quick Notes for Revision" />
-            <FeatureItem icon="wifi-off" text="Works Offline" />
-            <FeatureItem icon="search" text="Global Search with Voice" />
+          <View style={styles.card}>
+            <FeatureItem text="Step-by-step NCERT Solutions" />
+            <FeatureItem text="Quick Revision Notes" />
+            <FeatureItem text="Interactive Practice & Quizzes" />
+            <FeatureItem text="Clean, Distraction-Free Learning" />
+            <FeatureItem text="Works Offline" />
           </View>
         </View>
 
         <View style={styles.section}>
           <ThemedText style={styles.sectionHeader}>Note of Thanks</ThemedText>
-          <View style={styles.thanksContainer}>
-            <ThemedText style={styles.thanksText}>
-              "I am deeply grateful to all my students for their trust and dedication.
-              This app is a small effort to support your journey towards excellence.
-              Keep practicing, stay curious, and never give up!"
+          <View style={styles.card}>
+            <ThemedText style={styles.quoteText}>
+              "I am sincerely grateful to all my students for their trust and dedication. This platform is created to support your journey towards better understanding and academic success. Keep learning, stay curious, and give your best every day."
             </ThemedText>
-            <ThemedText style={styles.signature}>- Sameer Khan</ThemedText>
+            <ThemedText style={styles.signature}>– Sameer Khan</ThemedText>
           </View>
         </View>
 
@@ -89,7 +78,7 @@ function AboutEducatorScreen() {
   );
 }
 
-const FeatureItem = ({ icon, text }: { icon: string, text: string }) => (
+const FeatureItem = ({ text }: { text: string }) => (
   <View style={styles.featureItem}>
     <View style={styles.featureBullet} />
     <ThemedText style={styles.featureText}>{text}</ThemedText>
@@ -105,121 +94,102 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.lg,
-    paddingBottom: 120,
+    paddingBottom: 100,
   },
   section: {
     marginBottom: Spacing["2xl"],
   },
   sectionHeader: {
-    ...Typography.h3,
+    ...Typography.h4,
     color: JiguuColors.textPrimary,
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.lg,
     textAlign: 'center',
     textTransform: 'uppercase',
-    letterSpacing: 1,
-    fontFamily: "Kalam_700Bold",
+    letterSpacing: 2,
+    fontFamily: "NotoSans_400Regular",
   },
-  educatorContainer: {
-    alignItems: "center",
+  card: {
     backgroundColor: JiguuColors.surface,
     padding: Spacing.xl,
     borderRadius: BorderRadius.lg,
-    borderTopWidth: 4,
-    borderTopColor: JiguuColors.accent1,
+    borderLeftWidth: 4,
+    borderLeftColor: JiguuColors.accent1,
+    elevation: 2,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
   },
   photoContainer: {
-    width: 140,
-    height: 140,
-    borderRadius: 70,
+    width: 120,
+    height: 120,
+    borderRadius: 60,
     overflow: "hidden",
-    marginTop: Spacing.md, // Move photo down
+    alignSelf: "center",
     marginBottom: Spacing.md,
-    borderWidth: 4,
+    borderWidth: 3,
     borderColor: JiguuColors.accent1,
-    elevation: 4,
   },
   photo: {
     width: "100%",
     height: "100%",
   },
+  logoCenter: {
+    alignItems: 'center',
+    marginBottom: Spacing.lg,
+  },
   name: {
-    ...Typography.h2,
+    ...Typography.h3,
     color: JiguuColors.textPrimary,
+    textAlign: "center",
     marginBottom: Spacing.xs,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   role: {
     ...Typography.body,
     color: JiguuColors.accent1,
-    marginBottom: Spacing.md,
-    fontFamily: "Kalam_700Bold",
+    textAlign: "center",
+    marginBottom: Spacing.lg,
+    fontFamily: "NotoSans_400Regular",
   },
-  bio: {
+  bodyText: {
     ...Typography.body,
     color: JiguuColors.textSecondary,
-    textAlign: "center",
-    lineHeight: 24,
-    fontFamily: "Kalam_400Regular",
-  },
-  aboutContainer: {
-    alignItems: "center",
-    backgroundColor: JiguuColors.surface,
-    padding: Spacing.xl,
-    borderRadius: BorderRadius.lg,
-    borderTopWidth: 4,
-    borderTopColor: JiguuColors.accent2,
-  },
-  aboutText: {
-    ...Typography.body,
-    color: JiguuColors.textSecondary,
-    textAlign: "center",
-    marginTop: Spacing.md,
-    lineHeight: 24,
-    fontFamily: "Kalam_400Regular",
-  },
-  featuresGrid: {
-    backgroundColor: JiguuColors.surface,
-    padding: Spacing.xl,
-    borderRadius: BorderRadius.lg,
-    borderTopWidth: 4,
-    borderTopColor: JiguuColors.newsEvents,
+    textAlign: "justify",
+    lineHeight: 26,
+    fontFamily: "NotoSans_400Regular",
   },
   featureItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: Spacing.sm,
+    marginBottom: Spacing.md,
   },
   featureBullet: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: JiguuColors.newsEvents,
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: JiguuColors.accent1,
     marginRight: Spacing.md,
   },
   featureText: {
     ...Typography.body,
     color: JiguuColors.textPrimary,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
-  thanksContainer: {
-    backgroundColor: JiguuColors.surface,
-    padding: Spacing.xl,
-    borderRadius: BorderRadius.lg,
-    borderTopWidth: 4,
-    borderTopColor: JiguuColors.accent3,
-  },
-  thanksText: {
+  quoteText: {
     ...Typography.body,
     color: JiguuColors.textSecondary,
-    textAlign: "center",
-    lineHeight: 26,
-    marginBottom: Spacing.md,
-    fontFamily: "Kalam_400Regular",
+    textAlign: "justify",
+    fontStyle: "italic",
+    lineHeight: 28,
+    opacity: 0.85,
+    marginBottom: Spacing.lg,
+    fontFamily: "NotoSans_400Regular",
   },
   signature: {
     ...Typography.h4,
     color: JiguuColors.textPrimary,
     textAlign: 'right',
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   }
 });

@@ -1,0 +1,82 @@
+﻿client/data/content/math-ch3.ts(43,850807): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(44,17): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(70,829935): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(71,17): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,199): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,203): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,210): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,213): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,220): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,223): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,227): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,232): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,237): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,243): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,247): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,254): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,257): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,263): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,272): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,283): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,290): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,293): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,300): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,303): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,308): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,313): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,318): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,323): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,329): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,333): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,340): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,343): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,349): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(92,358): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(92,359): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(92,436): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(94,874723): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(95,17): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,92): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,98): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,104): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,111): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,115): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,121): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,127): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,130): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,134): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,137): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,141): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,146): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,150): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,163): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,169): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,174): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,181): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,187): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,190): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,196): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,202): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,205): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,209): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,212): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,216): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,221): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,223): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(144,224): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(144,225): error TS1127: Invalid character.
+client/data/content/math-ch3.ts(144,298): error TS1005: ':' expected.
+client/data/content/math-ch3.ts(198,903255): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(199,17): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(298,1079647): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(299,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(321,1097091): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(322,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(426,949663): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(427,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(441,1064143): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(442,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(464,1223939): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(465,25): error TS1005: ',' expected.
+client/data/content/math-ch3.ts(506,1153567): error TS1002: Unterminated string literal.
+client/data/content/math-ch3.ts(507,25): error TS1005: ',' expected.

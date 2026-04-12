@@ -17,24 +17,24 @@ interface QuestionCardProps {
 }
 
 function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
+  const isScience = chapterId.startsWith("sci-");
+  const isJustifySec = !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
+
   return (
     <View style={styles.container}>
       <View style={[styles.questionBox, { borderLeftColor: accentColor }]}>
-        <View style={styles.headerRow}>
-          <ThemedText style={[styles.questionNumber, { color: accentColor }, titleStyle]}>
-            {question.number}
-          </ThemedText>
-        </View>
         <View style={styles.questionTextContainer}>
           <ThemedText
             style={{
               ...Typography.body,
               color: JiguuColors.textPrimary,
-              lineHeight: 24,
-              textAlign: "justify",
-              ...contentStyle
+              lineHeight: isJustifySec ? 26 : 24,
+              textAlign: isJustifySec ? "justify" : "left",
+              ...StyleSheet.flatten(contentStyle),
+              fontFamily: isScience ? "NotoSans_400Regular" : "NotoSans_400Regular",
             }}
           >
+            <ThemedText style={{ color: accentColor, fontFamily: "NotoSans_400Regular" }}>{question.number} </ThemedText>
             {question.question}
           </ThemedText>
         </View>
@@ -48,9 +48,26 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         ) : null}
 
-        <ThemedText style={[styles.solutionLabel, titleStyle]}>Solution:</ThemedText>
+        <ThemedText style={[styles.solutionLabel, StyleSheet.flatten(titleStyle), { fontFamily: "NotoSans_400Regular" }]}>Solution:</ThemedText>
         {question.solution && question.solution.map((step, index) => {
           const isFormula = step.startsWith("[Formula]");
+          const isImage = step.trim().startsWith("<img") && step.includes("src=");
+
+          if (isImage) {
+            const srcMatch = step.match(/src=["']([^"']+)["']/);
+            const src = srcMatch ? srcMatch[1] : null;
+            if (src) {
+              return (
+                <View key={index} style={styles.imageContainer}>
+                  <Image
+                    source={{ uri: src }}
+                    style={styles.graphImage}
+                  />
+                </View>
+              );
+            }
+          }
+
           const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
           return (
             <View key={index} style={styles.stepRow}>
@@ -58,10 +75,10 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
                 style={{
                   ...Typography.small,
                   color: isFormula ? "#FF7043" : JiguuColors.textSecondary,
-                  lineHeight: 28,
-                  textAlign: "justify",
-                  fontFamily: isFormula ? "Kalam_700Bold" : undefined,
-                  ...contentStyle
+                  lineHeight: isJustifySec ? 26 : 28,
+                  textAlign: isJustifySec ? "justify" : "left",
+                  fontFamily: "NotoSans_400Regular",
+                  ...StyleSheet.flatten(contentStyle)
                 }}
               >
                 {displayStep}
@@ -72,7 +89,13 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
         {question.answer && (
           <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
             <ThemedText
-              style={{ ...Typography.body, fontFamily: "Kalam_700Bold", color: "#4CAF50", textAlign: "justify" }}
+              style={{ 
+                ...Typography.body, 
+                fontFamily: "NotoSans_400Regular", 
+                color: "#4CAF50", 
+                textAlign: isJustifySec ? "justify" : "left",
+                lineHeight: isJustifySec ? 26 : 24 
+              }}
             >
               {question.answer}
             </ThemedText>
@@ -98,7 +121,7 @@ const styles = StyleSheet.create({
   },
   questionNumber: {
     ...Typography.small,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
     marginBottom: Spacing.xs,
   },
   headerRow: {
@@ -128,7 +151,7 @@ const styles = StyleSheet.create({
   },
   solutionLabel: {
     ...Typography.small,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
     color: "#4CAF50",
     marginBottom: Spacing.sm,
     marginTop: Spacing.sm,
@@ -150,7 +173,7 @@ const styles = StyleSheet.create({
   },
   answerText: {
     ...Typography.body,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
     color: "#4CAF50",
     textAlign: "justify",
   },
@@ -163,11 +186,12 @@ const styles = StyleSheet.create({
     padding: Spacing.sm,
   },
   graphImage: {
-    width: "90%",
-    height: 150,
+    width: "100%", // Responsive width
+    height: 180, // Base height
     borderRadius: BorderRadius.xs,
     alignSelf: 'center',
-    resizeMode: 'contain',
+    resizeMode: 'contain', // Proportional scaling
+    marginVertical: Spacing.sm,
   },
   questionTextContainer: {},
 });

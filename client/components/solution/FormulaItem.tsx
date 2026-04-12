@@ -18,7 +18,7 @@ function FormulaItem({ name, formula, textStyle }: FormulaItemProps) {
         <ThemedText
           style={{
             ...Typography.body,
-            fontFamily: "Kalam_400Regular",
+            fontFamily: "NotoSans_400Regular",
             color: JiguuColors.textPrimary,
             lineHeight: 24,
             ...textStyle
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   },
   name: {
     ...Typography.small,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
     color: "#9C27B0",
     marginBottom: Spacing.xs,
   },
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
   formula: {
     ...Typography.body,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
     color: JiguuColors.textPrimary,
     lineHeight: 24,
   },

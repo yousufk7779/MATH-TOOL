@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Areas and Volumes - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        
+
+        .solution-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    
+
+
+img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; height: auto; border: 1px solid #ddd; border-radius: 6px; padding: 5px; background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+@media (max-width: 600px) { img { float: none; display: block; margin: 10px auto; max-width: 100%; } }
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 12: Solved Examples</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 1. Rasheed got a playing top (lattu) as his birthday present, which surprisingly
+            had no colour on it. He wanted to colour it with his crayons. The top is shaped like a cone surmounted by a
+            hemisphere. The total height of the top is 5 cm and the diameter of the top is 3.5 cm. Find the area he has
+            to colour. (Use π = 22/7)</div>
+        <img src="example_1.svg" alt="Toy Top">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Diameter d = 3.5 cm -> r = 1.75 cm.</div>
+        <div class="step">Total height = 5 cm. Height of cone h = 5 - 1.75 = 3.25 cm.</div>
+        <div class="step">Slant height l = √(h² + r²) = √(3.25² + 1.75²) ≈ 3.7 cm.</div>
+        <div class="step">Area = CSA Hemisphere + CSA Cone.</div>
+        <div class="step">= 2πr² + πrl</div>
+        <div class="step">= πr(2r + l)</div>
+        <div class="step">= (22/7) × 1.75 × (3.5 + 3.7)</div>
+        <div class="step">= 5.5 × 7.2 = 39.6 cm².</div>
+        <div class="final-answer">Area to colour ≈ 39.6 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 2. The decorative block shown in Fig. is made of two solids — a cube and a
+            hemisphere. The base of the block is a cube with edge 5 cm, and the hemisphere fixed on the top has a
+            diameter of 4.2 cm. Find the total surface area of the block. (Use π = 22/7)</div>
+        <img src="example_2.svg" alt="Block Diagram">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Cube edge a = 5 cm. Hemisphere d = 4.2 cm -> r = 2.1 cm.</div>
+        <div class="step">TSA = TSA of Cube - Base of Hemisphere + CSA Hemisphere.</div>
+        <div class="step">= 6a² - πr² + 2πr²</div>
+        <div class="step">= 6(25) + π(2.1)²</div>
+        <div class="step">= 150 + (22/7) × 4.41</div>
+        <div class="step">= 150 + 13.86 = 163.86 cm².</div>
+        <div class="final-answer">Total Surface Area = 163.86 cm².</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">Example 3. A wooden toy rocket is in the shape of a cone mounted on a cylinder, as shown
+            in Fig. The height of the entire rocket is 26 cm, while the height of the conical part is 6 cm. The base of
+            the conical portion has a diameter of 5 cm, while the base diameter of the cylindrical portion is 3 cm. If
+            the conical portion is to be painted orange and the cylindrical portion yellow, find the area of the rocket
+            painted with each of these colours. (Use π = 3.14)</div>
+        <img src="example_3_rocket.svg" alt="Toy Rocket">
+        <div class="solution-header">Solution:</div>
+        <div class="step">Cone: h = 6 cm, r = 2.5 cm. l = √(36 + 6.25) = 6.5 cm.</div>
+        <div class="step">Cylinder: h = 26 - 6 = 20 cm, r = 1.5 cm.</div>
+        <div class="step">Orange Area (Cone) = CSA + Base Ring Area (Cone base - Cylinder base).</div>
+        <div class="step">= π(2.5)(6.5) + π(2.5² - 1.5²)</div>
+        <div class="step">= 3.14 (16.25 + 4) = 63.585 cm².</div>
+        <div class="step">Yellow Area (Cylinder) = CSA + Base Area.</div>
+        <div class="step">= 2π(1.5)(20) + π(1.5)²</div>
+        <div class="step">= 3.14 (60 + 2.25) = 195.465 cm².</div>
+        <div class="final-answer">Orange: 63.585 cm²; Yellow: 195.465 cm².</div>
+    </div>
+
+</body>
+
+</html>

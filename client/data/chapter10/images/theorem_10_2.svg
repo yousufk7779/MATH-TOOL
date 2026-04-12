@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
+  <!-- Circle -->
+  <circle cx="150" cy="150" r="60" stroke="black" stroke-width="2" fill="none"/>
+  <circle cx="150" cy="150" r="3" fill="black"/> <!-- Center O -->
+  <text x="140" y="140" font-family="Arial" font-size="16" font-weight="bold">O</text>
+  
+  <!-- External Point P -->
+  <circle cx="320" cy="150" r="3" fill="black"/>
+  <text x="330" y="155" font-family="Arial" font-size="16" font-weight="bold">P</text>
+  
+  <!-- Tangent Points Q and R calculated -->
+  <!-- Tangent contact points for circle (150,150) r=60 from P(320,150) -->
+  <!-- distance OP = 170. angle = acos(60/170) = 69.3 deg -->
+  <!-- Q is at angle -69.3, R at +69.3 relative to OP line? No, OP is horizontal -->
+  <!-- Wait, angle is acos(r/d). Q(x,y) = (150 + 60*cos(a), 150 - 60*sin(a)) -->
+  <!-- Actually basic geometry: Q is (150 + 60*60/170, 150 - 60*sqrt(170^2-60^2)/170) approx -->
+  <!-- Let's maximize clarity visually. Q approx at (171, 93), R at (171, 207) -->
+  
+  <!-- Tangent PQ -->
+  <line x1="320" y1="150" x2="171" y2="93" stroke="red" stroke-width="2"/>
+  <circle cx="171" cy="93" r="3" fill="black"/>
+  <text x="170" y="85" font-family="Arial" font-size="16" font-weight="bold">Q</text>
+  
+  <!-- Tangent PR -->
+  <line x1="320" y1="150" x2="171" y2="207" stroke="red" stroke-width="2"/>
+  <circle cx="171" cy="207" r="3" fill="black"/>
+  <text x="170" y="225" font-family="Arial" font-size="16" font-weight="bold">R</text>
+  
+  <!-- Radii OQ and OR -->
+  <line x1="150" y1="150" x2="171" y2="93" stroke="black" stroke-width="2"/>
+  <line x1="150" y1="150" x2="171" y2="207" stroke="black" stroke-width="2"/>
+  
+  <!-- Line OP -->
+  <line x1="150" y1="150" x2="320" y2="150" stroke="blue" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Right Angle Symbols -->
+  <!-- Approximate projection for symbol -->
+  <polyline points="165,107 178,112 184,98" stroke="black" fill="none" stroke-width="1"/>
+  <polyline points="165,193 178,188 184,202" stroke="black" fill="none" stroke-width="1"/>
+  
+  <!-- Equality Marks -->
+  <line x1="240" y1="115" x2="250" y2="125" stroke="red" stroke-width="2"/>
+  <line x1="240" y1="185" x2="250" y2="175" stroke="red" stroke-width="2"/>
+  
+</svg>

@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...Typography.h2,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   newsCard: {
     backgroundColor: JiguuColors.surface,
@@ -100,22 +100,22 @@ const styles = StyleSheet.create({
   newsType: {
     ...Typography.caption,
     color: JiguuColors.newsEvents,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   newsDate: {
     ...Typography.caption,
     color: JiguuColors.textSecondary,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
   newsTitle: {
     ...Typography.h4,
     color: JiguuColors.textPrimary,
     marginBottom: Spacing.xs,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   newsSummary: {
     ...Typography.body,
     color: JiguuColors.textSecondary,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
 });

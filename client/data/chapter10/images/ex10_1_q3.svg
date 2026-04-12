@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 250" width="350" height="250">
+  <!-- Styles -->
+  <defs>
+    <style>
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .label { font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Coordinates: O(230, 180), Radius=60 (scaled) -> P(230, 120) -->
+  <!-- Q is at x=99, y=120 -->
+  
+  <!-- Circle -->
+  <!-- Color: Blue #1976D2 -->
+  <circle cx="230" cy="180" r="60" fill="none" stroke="#1976D2" stroke-width="2.5" />
+  
+  <!-- Triangle OPQ -->
+  <!-- O to P (Radius) -->
+  <!-- Color: Red #D32F2F -->
+  <line x1="230" y1="180" x2="230" y2="120" stroke="#D32F2F" stroke-width="2.5" />
+  
+  <!-- P to Q (Tangent) -->
+  <!-- Color: Green #388E3C -->
+  <!-- Stops exactly at Q (x=99) -->
+  <line x1="230" y1="120" x2="99" y2="120" stroke="#388E3C" stroke-width="2.5" />
+
+  <!-- O to Q (Hypotenuse) -->
+  <!-- Color: Orange #F57C00 -->
+  <line x1="230" y1="180" x2="99" y2="120" stroke="#F57C00" stroke-width="2.5" />
+
+  <!-- Right angle marker at P -->
+  <polyline points="230,135 215,135 215,120" fill="none" stroke="black" stroke-width="1.5" />
+
+  <!-- Points -->
+  <circle cx="230" cy="180" r="3" fill="black" /> <!-- O -->
+  <circle cx="230" cy="120" r="3" fill="black" /> <!-- P -->
+  <circle cx="99" cy="120" r="3" fill="black" />  <!-- Q -->
+
+  <!-- Points and Labels -->
+  <!-- O -->
+  <text x="230" y="205" class="text label" text-anchor="middle">O</text>
+  <!-- P -->
+  <text x="230" y="110" class="text label" text-anchor="middle">P</text>
+  <!-- Q -->
+  <text x="90" y="125" class="text label" text-anchor="end">Q</text>
+  
+  <!-- Dimension Labels -->
+  <!-- 5 cm (Radius) -->
+  <text x="240" y="155" class="text">5 cm</text>
+  
+  <!-- 12 cm (Hypotenuse OQ) -->
+  <text x="130" y="170" class="text">12 cm</text>
+
+</svg>

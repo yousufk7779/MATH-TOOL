@@ -7,8 +7,22 @@ export interface Exercise { id: string; name: string; questions: Question[]; }
 export interface MCQ { id: string; question: string; options: string[]; correctAnswer: string; }
 export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }
 export interface Theorem { id: string; number: string; name: string; statement: string; proof?: string[]; example?: string; }
-export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; }
+export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; isHtmlView?: boolean; htmlOverview?: string; htmlExercises?: Record<string, string>; htmlMcqs?: string; }
 
+import { mathCh1 } from "./content/math-ch1";
+import { mathCh2 } from "./content/math-ch2";
+import { mathCh3 } from "./content/math-ch3";
+import { mathCh4 } from "./content/math-ch4";
+import { mathCh5 } from "./content/math-ch5";
+import { mathCh6 } from "./content/math-ch6";
+import { mathCh7 } from "./content/math-ch7";
+import { mathCh8 } from "./content/math-ch8";
+import { mathCh9 } from "./content/math-ch9";
+import { mathCh10 } from "./content/math-ch10";
+import { mathCh11 } from "./content/math-ch11";
+import { mathCh12 } from "./content/math-ch12";
+import { mathCh13 } from "./content/math-ch13";
+import { mathCh14 } from "./content/math-ch14";
 import { sciPhy1 } from "./content/sci-phy-1";
 import { sciPhy2 } from "./content/sci-phy-2";
 import { sciPhy3 } from "./content/sci-phy-3";
@@ -69,6 +83,20 @@ import { engGra4 } from "./content/eng-gra-4";
 import { engGra5 } from "./content/eng-gra-5";
 
 export const chapterContents: Record<string, ChapterContent> = {
+  "ch1": mathCh1,
+  "ch2": mathCh2,
+  "ch3": mathCh3,
+  "ch4": mathCh4,
+  "ch5": mathCh5,
+  "ch6": mathCh6,
+  "ch7": mathCh7,
+  "ch8": mathCh8,
+  "ch9": mathCh9,
+  "ch10": mathCh10,
+  "ch11": mathCh11,
+  "ch12": mathCh12,
+  "ch13": mathCh13,
+  "ch14": mathCh14,
   "sci-phy-1": sciPhy1,
   "sci-phy-2": sciPhy2,
   "sci-phy-3": sciPhy3,

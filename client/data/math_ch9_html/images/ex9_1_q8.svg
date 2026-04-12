@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 350">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <line x1="20" y1="300" x2="350" y2="300" stroke="#7B1FA2" stroke-width="2" />
+
+  <!-- Vertical Line C-A-B -->
+  <line x1="300" y1="300" x2="300" y2="50" stroke="#7B1FA2" stroke-width="2" />
+
+  <text x="305" y="300" font-family="Arial" font-size="18" font-weight="bold">B</text>
+  <text x="305" y="150" font-family="Arial" font-size="18" font-weight="bold">A</text>
+  <text x="305" y="50" font-family="Arial" font-size="18" font-weight="bold">C</text>
+  
+  <text x="315" y="100" font-family="Arial" font-size="18">1.6 m</text>
+  <text x="315" y="225" font-family="Arial" font-size="20" font-weight="bold">?</text>
+
+  <!-- Point P -->
+  <circle cx="50" cy="300" r="3" fill="#333" />
+  <text x="40" y="325" font-family="Arial" font-size="18" font-weight="bold">P</text>
+
+  <!-- Sight Lines -->
+  <line x1="50" y1="300" x2="300" y2="150" stroke="#7B1FA2" stroke-width="2"/>
+  <line x1="50" y1="300" x2="300" y2="50" stroke="#7B1FA2" stroke-width="2"/>
+
+  <!-- 45 to A(300, 150). dx 250 dy -150. Unit (0.85, -0.51). End (84, 280) -->
+  <path d="M 90 300 A 40 40 0 0 0 84 280" fill="none" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="110" y="260" font-family="Arial" font-size="14" fill="#333">45°</text>
+
+  <!-- 60 to C(300, 50). End (78, 272) -->
+  <path d="M 90 300 A 40 40 0 0 0 78 272" fill="none" stroke="#7B1FA2" stroke-width="2"/>
+  <text x="75" y="235" font-family="Arial" font-size="14" fill="#333">60°</text>
+
+</svg>

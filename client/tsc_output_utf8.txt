@@ -1,0 +1,10 @@
+﻿data/content/math-ch2.ts(448,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(460,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(472,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(484,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(496,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(508,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(520,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(532,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(544,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.
+data/content/math-ch2.ts(556,13): error TS2353: Object literal may only specify known properties, and '"explanation"' does not exist in type 'MCQ'.

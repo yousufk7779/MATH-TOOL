@@ -4,9 +4,9 @@
     <style>
       .main-stroke { stroke: #00BCD4; stroke-width: 2.5; fill: none; }
       .dashed-stroke { stroke: #00BCD4; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
-      .label-text { font-family: serif; font-size: 20px; font-weight: bold; fill: black; }
-      .dim-text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: black; }
-      .black-dot { fill: black; }
+      .label-text { font-family: serif; font-size: 20px; font-weight: bold; fill: #00bcd4; }
+      .dim-text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #00bcd4; }
+      .black-dot { fill: #00bcd4; }
     </style>
   </defs>
   
@@ -24,50 +24,56 @@
   -->
 
   <!-- Circle (Center O) -->
-  <circle cx="350" cy="200" r="125" class="main-stroke" />
-  <circle cx="350" cy="200" r="4" class="black-dot" />
-  <text x="360" y="205" class="label-text">O</text>
+  <circle cx="350" cy="200" r="125" class="main-stroke"/>
+  <circle cx="350" cy="200" r="4" class="black-dot"/>
+  <text x="360" y="205" class="label-text" fill="#00bcd4">O</text>
 
   <!-- Tangents TP and TQ -->
-  <line x1="141.67" y1="200" x2="275" y2="100" class="main-stroke" />
-  <line x1="141.67" y1="200" x2="275" y2="300" class="main-stroke" />
+  <line x1="141.67" y1="200" x2="275" y2="100" class="main-stroke"/>
+  <line x1="141.67" y1="200" x2="275" y2="300" class="main-stroke"/>
 
   <!-- Chord PQ -->
-  <line x1="275" y1="100" x2="275" y2="300" class="main-stroke" />
+  <line x1="275" y1="100" x2="275" y2="300" class="main-stroke"/>
   
   <!-- Radius OP -->
-  <line x1="350" y1="200" x2="275" y2="100" class="main-stroke" />
+  <line x1="350" y1="200" x2="275" y2="100" class="main-stroke"/>
 
   <!-- Line TO (Dashed) -->
-  <line x1="141.67" y1="200" x2="350" y2="200" class="dashed-stroke" />
+  <line x1="141.67" y1="200" x2="350" y2="200" class="dashed-stroke"/>
 
   <!-- Points -->
   <!-- T -->
-  <circle cx="141.67" cy="200" r="4" class="black-dot" />
-  <text x="120" y="205" class="label-text">T</text>
+  <circle cx="141.67" cy="200" r="4" class="black-dot"/>
+  <text x="120" y="205" class="label-text" fill="#00bcd4">T</text>
   
   <!-- P -->
-  <circle cx="275" cy="100" r="4" class="black-dot" />
-  <text x="270" y="90" class="label-text">P</text>
+  <circle cx="275" cy="100" r="4" class="black-dot"/>
+  <text x="270" y="90" class="label-text" fill="#00bcd4">P</text>
   
   <!-- Q -->
-  <circle cx="275" cy="300" r="4" class="black-dot" />
-  <text x="270" y="325" class="label-text">Q</text>
+  <circle cx="275" cy="300" r="4" class="black-dot"/>
+  <text x="270" y="325" class="label-text" fill="#00bcd4">Q</text>
   
   <!-- R -->
-  <circle cx="275" cy="200" r="4" class="black-dot" />
-  <text x="280" y="215" class="label-text">R</text>
+  <circle cx="275" cy="200" r="4" class="black-dot"/>
+  <text x="280" y="215" class="label-text" fill="#00bcd4">R</text>
 
   <!-- Right Angle Marker at R -->
   <!-- Upper Left Quadrant of intersection -->
-  <polyline points="275,190 265,190 265,200" fill="none" stroke="black" stroke-width="1.5" />
+  <polyline points="275,190 265,190 265,200" fill="none" stroke="#00bcd4" stroke-width="1.5"/>
 
   <!-- Dimensions -->
   <!-- 5 cm (Radius) -->
-  <text x="320" y="140" class="dim-text">5 cm</text>
+  <text x="320" y="140" class="dim-text" fill="#00bcd4">5 cm</text>
   
   <!-- 8 cm (Chord - Label near R, indicating full length logic or half) -->
   <!-- The image usually puts '8 cm' near the chord. -->
-  <text x="220" y="180" class="dim-text">8 cm</text>
+  <text x="220" y="180" class="dim-text" fill="#00bcd4">8 cm</text>
   
+
+<style> text, tspan { fill: #00bcd4 !important; } </style>
+
+
+
+
 </svg>

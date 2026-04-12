@@ -2,11 +2,11 @@
   <defs>
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
       .arrow { fill: #00BFFF; }
     </style>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-      <path d="M0,0 L10,5 L0,10" class="arrow" />
+      <path d="M0,0 L10,5 L0,10" class="arrow"/>
     </marker>
   </defs>
 
@@ -14,7 +14,7 @@
   <!-- A(225, 30) -->
   <!-- B(50, 300) -->
   <!-- C(400, 300) -->
-  <path d="M225 30 L50 300 L400 300 Z" class="line" />
+  <path d="M225 30 L50 300 L400 300 Z" class="line"/>
 
   <!-- Line DE Parallel to BC -->
   <!-- D on AB. E on AC. -->
@@ -28,20 +28,26 @@
   <!-- x = 225 + (5/9)*(175) = 225 + 97.2 = 322.2 -->
   <!-- E (322, 180) -->
 
-  <line x1="128" y1="180" x2="322" y2="180" class="line" />
+  <line x1="128" y1="180" x2="322" y2="180" class="line"/>
 
   <!-- Parallel Markers (Arrows) -->
   <!-- On DE -->
-  <path d="M225 180 L235 175 L225 170" fill="none" stroke="#00BFFF" stroke-width="2" />
+  <path d="M225 180 L235 175 L225 170" fill="none" stroke="#00BFFF" stroke-width="2"/>
   
   <!-- On BC -->
-  <path d="M225 300 L235 295 L225 290" fill="none" stroke="#00BFFF" stroke-width="2" />
+  <path d="M225 300 L235 295 L225 290" fill="none" stroke="#00BFFF" stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="220" y="25" class="text">A</text>
-  <text x="35" y="310" class="text">B</text>
-  <text x="410" y="310" class="text">C</text>
-  <text x="110" y="185" class="text">D</text>
-  <text x="330" y="185" class="text">E</text>
+  <text x="220" y="25" class="text" fill="#00bfff">A</text>
+  <text x="35" y="310" class="text" fill="#00bfff">B</text>
+  <text x="410" y="310" class="text" fill="#00bfff">C</text>
+  <text x="110" y="185" class="text" fill="#00bfff">D</text>
+  <text x="330" y="185" class="text" fill="#00bfff">E</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

@@ -2,8 +2,8 @@
   <defs>
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
-      .dim-text { font-family: 'Times New Roman', serif; font-size: 16px; fill: black; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
+      .dim-text { font-family: 'Times New Roman', serif; font-size: 16px; fill: #00bfff; }
       .mark { fill: none; stroke: #00BFFF; stroke-width: 1.5; }
     </style>
   </defs>
@@ -12,19 +12,19 @@
   <!-- D (80, 250), F (140, 250) -> Base 60px -->
   <!-- C (80, 160) -> Height 90px -->
   <!-- Ratio 90/60 = 1.5. Matches 6/4. -->
-  <path d="M80 160 L80 250 L140 250 Z" class="line" />
+  <path d="M80 160 L80 250 L140 250 Z" class="line"/>
 
   <!-- Labels CDF -->
-  <text x="75" y="150" class="text">C</text>
-  <text x="60" y="265" class="text">D</text>
-  <text x="145" y="265" class="text">F</text>
+  <text x="75" y="150" class="text" fill="#00bfff">C</text>
+  <text x="60" y="265" class="text" fill="#00bfff">D</text>
+  <text x="145" y="265" class="text" fill="#00bfff">F</text>
   
   <!-- Dimensions CDF -->
-  <text x="35" y="210" class="dim-text">6 m</text>
-  <text x="95" y="270" class="dim-text">4 m</text>
+  <text x="35" y="210" class="dim-text" fill="#00bfff">6 m</text>
+  <text x="95" y="270" class="dim-text" fill="#00bfff">4 m</text>
 
   <!-- Right Angle D -->
-  <polyline points="80,240 90,240 90,250" class="mark" />
+  <polyline points="80,240 90,240 90,250" class="mark"/>
 
 
   <!-- Triangle ABE (Larger) -->
@@ -33,17 +33,23 @@
   <!-- Base 28 * 7 = 196px. E at 300+196 = 496. -->
   <!-- Height 42 * 7 = 294px. A at 320-294 = 26. -->
   <!-- B (300, 320), E (496, 320), A (300, 26) -->
-  <path d="M300 26 L300 320 L496 320 Z" class="line" />
+  <path d="M300 26 L300 320 L496 320 Z" class="line"/>
 
   <!-- Labels ABE -->
-  <text x="295" y="20" class="text">A</text>
-  <text x="280" y="335" class="text">B</text>
-  <text x="500" y="335" class="text">E</text>
+  <text x="295" y="20" class="text" fill="#00bfff">A</text>
+  <text x="280" y="335" class="text" fill="#00bfff">B</text>
+  <text x="500" y="335" class="text" fill="#00bfff">E</text>
   
   <!-- Dimensions ABE -->
-  <text x="380" y="340" class="dim-text">28 m</text>
+  <text x="380" y="340" class="dim-text" fill="#00bfff">28 m</text>
 
   <!-- Right Angle B -->
-  <polyline points="300,310 310,310 310,320" class="mark" />
+  <polyline points="300,310 310,310 310,320" class="mark"/>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

@@ -1,0 +1,816 @@
+﻿ M app.json
+ M client/App.tsx
+ M client/assets/chapter1/exercise2.html
+ M client/assets/chapter1/overview.html
+ M client/assets/chapters/chapter1/examples.html
+ M client/assets/chapters/chapter1/exercise1.html
+ M client/assets/chapters/chapter1/exercise2.html
+ M client/assets/chapters/chapter1/exercises.html
+ M client/assets/chapters/chapter1/mcqs.html
+ M client/assets/chapters/chapter1/overview.html
+ M client/assets/chapters/chapter10/examples.html
+ M client/assets/chapters/chapter10/exercise1.html
+ M client/assets/chapters/chapter10/exercise2.html
+ M client/assets/chapters/chapter10/exercises.html
+ M client/assets/chapters/chapter10/images/ex10_1_q1.svg
+ M client/assets/chapters/chapter10/images/ex10_1_q2.svg
+ M client/assets/chapters/chapter10/images/ex10_1_q3.svg
+ M client/assets/chapters/chapter10/images/ex10_1_q4.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q1.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q10.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q11.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q12.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q13.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q2.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q3.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q4.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q5.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q6.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q7.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q8.svg
+ M client/assets/chapters/chapter10/images/ex10_2_q9.svg
+ M client/assets/chapters/chapter10/images/example_1.svg
+ M client/assets/chapters/chapter10/images/example_1_concentric.svg
+ M client/assets/chapters/chapter10/images/example_2.svg
+ M client/assets/chapters/chapter10/images/example_3.svg
+ M client/assets/chapters/chapter10/images/example_3_tangents.svg
+ M client/assets/chapters/chapter10/images/tangent_concept.svg
+ M client/assets/chapters/chapter10/images/theorem_10_1.svg
+ M client/assets/chapters/chapter10/images/theorem_10_2.svg
+ M client/assets/chapters/chapter10/mcqs.html
+ M client/assets/chapters/chapter10/overview.html
+ M client/assets/chapters/chapter10/theorems.html
+ M client/assets/chapters/chapter11/ex11_1_q1.svg
+ M client/assets/chapters/chapter11/ex11_1_q10.svg
+ M client/assets/chapters/chapter11/ex11_1_q11.svg
+ M client/assets/chapters/chapter11/ex11_1_q12.svg
+ M client/assets/chapters/chapter11/ex11_1_q13.svg
+ M client/assets/chapters/chapter11/ex11_1_q14.svg
+ M client/assets/chapters/chapter11/ex11_1_q2.svg
+ M client/assets/chapters/chapter11/ex11_1_q3.svg
+ M client/assets/chapters/chapter11/ex11_1_q4.svg
+ M client/assets/chapters/chapter11/ex11_1_q5.svg
+ M client/assets/chapters/chapter11/ex11_1_q6.svg
+ M client/assets/chapters/chapter11/ex11_1_q7.svg
+ M client/assets/chapters/chapter11/ex11_1_q8.svg
+ M client/assets/chapters/chapter11/ex11_1_q9.svg
+ M client/assets/chapters/chapter11/example_1.svg
+ M client/assets/chapters/chapter11/example_2.svg
+ M client/assets/chapters/chapter11/example_3.svg
+ M client/assets/chapters/chapter11/examples.html
+ M client/assets/chapters/chapter11/exercise1.html
+ M client/assets/chapters/chapter11/exercises.html
+ M client/assets/chapters/chapter11/intro_visual.svg
+ M client/assets/chapters/chapter11/mcqs.html
+ M client/assets/chapters/chapter11/overview.html
+ M client/assets/chapters/chapter12/ex12_1_q1.svg
+ M client/assets/chapters/chapter12/ex12_1_q2.svg
+ M client/assets/chapters/chapter12/ex12_1_q3.svg
+ M client/assets/chapters/chapter12/ex12_1_q4.svg
+ M client/assets/chapters/chapter12/ex12_1_q5.svg
+ M client/assets/chapters/chapter12/ex12_1_q6.svg
+ M client/assets/chapters/chapter12/ex12_1_q7.svg
+ M client/assets/chapters/chapter12/ex12_1_q8.svg
+ M client/assets/chapters/chapter12/ex12_1_q9.svg
+ M client/assets/chapters/chapter12/ex12_2_q1.svg
+ M client/assets/chapters/chapter12/ex12_2_q2.svg
+ M client/assets/chapters/chapter12/ex12_2_q3.svg
+ M client/assets/chapters/chapter12/ex12_2_q4.svg
+ M client/assets/chapters/chapter12/ex12_2_q5.svg
+ M client/assets/chapters/chapter12/ex12_2_q6.svg
+ M client/assets/chapters/chapter12/ex12_2_q7.svg
+ M client/assets/chapters/chapter12/ex12_2_q8.svg
+ M client/assets/chapters/chapter12/example_1.svg
+ M client/assets/chapters/chapter12/example_2.svg
+ M client/assets/chapters/chapter12/example_3.svg
+ M client/assets/chapters/chapter12/example_3_rocket.svg
+ M client/assets/chapters/chapter12/examples.html
+ M client/assets/chapters/chapter12/exercise1.html
+ M client/assets/chapters/chapter12/exercise2.html
+ M client/assets/chapters/chapter12/exercises.html
+ M client/assets/chapters/chapter12/mcqs.html
+ M client/assets/chapters/chapter12/overview.html
+ M client/assets/chapters/chapter12/overview_solids.svg
+ M client/assets/chapters/chapter13/ex13_1_q1.svg
+ M client/assets/chapters/chapter13/ex13_1_q2.svg
+ M client/assets/chapters/chapter13/ex13_1_q3.svg
+ M client/assets/chapters/chapter13/ex13_1_q4.svg
+ M client/assets/chapters/chapter13/ex13_1_q5.svg
+ M client/assets/chapters/chapter13/ex13_1_q6.svg
+ M client/assets/chapters/chapter13/ex13_1_q7.svg
+ M client/assets/chapters/chapter13/ex13_1_q8.svg
+ M client/assets/chapters/chapter13/ex13_1_q9.svg
+ M client/assets/chapters/chapter13/ex13_2_q1.svg
+ M client/assets/chapters/chapter13/ex13_2_q2.svg
+ M client/assets/chapters/chapter13/ex13_2_q3.svg
+ M client/assets/chapters/chapter13/ex13_2_q4.svg
+ M client/assets/chapters/chapter13/ex13_2_q5.svg
+ M client/assets/chapters/chapter13/ex13_2_q6.svg
+ M client/assets/chapters/chapter13/ex13_3_q1.svg
+ M client/assets/chapters/chapter13/ex13_3_q2.svg
+ M client/assets/chapters/chapter13/ex13_3_q3.svg
+ M client/assets/chapters/chapter13/ex13_3_q4.svg
+ M client/assets/chapters/chapter13/ex13_3_q5.svg
+ M client/assets/chapters/chapter13/ex13_3_q6.svg
+ M client/assets/chapters/chapter13/ex13_3_q7.svg
+ M client/assets/chapters/chapter13/example_1.svg
+ M client/assets/chapters/chapter13/example_2.svg
+ M client/assets/chapters/chapter13/example_3.svg
+ M client/assets/chapters/chapter13/examples.html
+ M client/assets/chapters/chapter13/exercise1.html
+ M client/assets/chapters/chapter13/exercise2.html
+ M client/assets/chapters/chapter13/exercise3.html
+ M client/assets/chapters/chapter13/exercises.html
+ M client/assets/chapters/chapter13/mcqs.html
+ M client/assets/chapters/chapter13/overview.html
+ M client/assets/chapters/chapter13/stats_overview.svg
+ M client/assets/chapters/chapter14/ex14_1_q1.svg
+ M client/assets/chapters/chapter14/ex14_1_q10.svg
+ M client/assets/chapters/chapter14/ex14_1_q11.svg
+ M client/assets/chapters/chapter14/ex14_1_q12.svg
+ M client/assets/chapters/chapter14/ex14_1_q13.svg
+ M client/assets/chapters/chapter14/ex14_1_q14.svg
+ M client/assets/chapters/chapter14/ex14_1_q15.svg
+ M client/assets/chapters/chapter14/ex14_1_q16.svg
+ M client/assets/chapters/chapter14/ex14_1_q17.svg
+ M client/assets/chapters/chapter14/ex14_1_q18.svg
+ M client/assets/chapters/chapter14/ex14_1_q19.svg
+ M client/assets/chapters/chapter14/ex14_1_q2.svg
+ M client/assets/chapters/chapter14/ex14_1_q20.svg
+ M client/assets/chapters/chapter14/ex14_1_q21.svg
+ M client/assets/chapters/chapter14/ex14_1_q22.svg
+ M client/assets/chapters/chapter14/ex14_1_q23.svg
+ M client/assets/chapters/chapter14/ex14_1_q24.svg
+ M client/assets/chapters/chapter14/ex14_1_q25.svg
+ M client/assets/chapters/chapter14/ex14_1_q3.svg
+ M client/assets/chapters/chapter14/ex14_1_q4.svg
+ M client/assets/chapters/chapter14/ex14_1_q5.svg
+ M client/assets/chapters/chapter14/ex14_1_q6.svg
+ M client/assets/chapters/chapter14/ex14_1_q7.svg
+ M client/assets/chapters/chapter14/ex14_1_q8.svg
+ M client/assets/chapters/chapter14/ex14_1_q9.svg
+ M client/assets/chapters/chapter14/example_1.svg
+ M client/assets/chapters/chapter14/example_2.svg
+ M client/assets/chapters/chapter14/example_3.svg
+ M client/assets/chapters/chapter14/examples.html
+ M client/assets/chapters/chapter14/exercise1.html
+ M client/assets/chapters/chapter14/exercises.html
+ M client/assets/chapters/chapter14/mcqs.html
+ M client/assets/chapters/chapter14/overview.html
+ M client/assets/chapters/chapter14/overview_prob.svg
+ M client/assets/chapters/chapter2/examples.html
+ M client/assets/chapters/chapter2/exercise1.html
+ M client/assets/chapters/chapter2/exercise2.html
+ M client/assets/chapters/chapter2/exercises.html
+ M client/assets/chapters/chapter2/mcqs.html
+ M client/assets/chapters/chapter2/overview.html
+ M client/assets/chapters/chapter3/examples.html
+ M client/assets/chapters/chapter3/exercise1.html
+ M client/assets/chapters/chapter3/exercise2.html
+ M client/assets/chapters/chapter3/exercise3.html
+ M client/assets/chapters/chapter3/exercises.html
+ M client/assets/chapters/chapter3/images/fig_ex3_1_q1_aftab.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_1_q2_cricket.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_1_q3_grapes.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_2_q1_i.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_2_q1_ii.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_2_q4_iii.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_2_q5.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_2_q7.svg
+ M client/assets/chapters/chapter3/images/fig_ex3_new_q4_i.svg
+ M client/assets/chapters/chapter3/images/fig_example_1.svg
+ M client/assets/chapters/chapter3/images/fig_example_2.svg
+ M client/assets/chapters/chapter3/images/fig_example_3.svg
+ M client/assets/chapters/chapter3/images/fig_example_7.svg
+ M client/assets/chapters/chapter3/images/mcq_k_value.svg
+ M client/assets/chapters/chapter3/images/mcq_ratios.svg
+ M client/assets/chapters/chapter3/images/mcq_solutions.svg
+ M client/assets/chapters/chapter3/mcqs.html
+ M client/assets/chapters/chapter3/overview.html
+ M client/assets/chapters/chapter4/examples.html
+ M client/assets/chapters/chapter4/exercise1.html
+ M client/assets/chapters/chapter4/exercise2.html
+ M client/assets/chapters/chapter4/exercise3.html
+ M client/assets/chapters/chapter4/exercises.html
+ M client/assets/chapters/chapter4/images/ex4_1_q2_i.svg
+ M client/assets/chapters/chapter4/images/ex4_2_q5.svg
+ M client/assets/chapters/chapter4/images/ex4_3_q3.svg
+ M client/assets/chapters/chapter4/images/ex4_3_q5.svg
+ M client/assets/chapters/chapter4/mcqs.html
+ M client/assets/chapters/chapter4/overview.html
+ M client/assets/chapters/chapter5/examples.html
+ M client/assets/chapters/chapter5/exercise1.html
+ M client/assets/chapters/chapter5/exercise2.html
+ M client/assets/chapters/chapter5/exercise3.html
+ M client/assets/chapters/chapter5/exercises.html
+ M client/assets/chapters/chapter5/mcqs.html
+ M client/assets/chapters/chapter5/overview.html
+ M client/assets/chapters/chapter6/examples.html
+ M client/assets/chapters/chapter6/exercise1.html
+ M client/assets/chapters/chapter6/exercise2.html
+ M client/assets/chapters/chapter6/exercise3.html
+ M client/assets/chapters/chapter6/exercises.html
+ M client/assets/chapters/chapter6/images/circles.svg
+ M client/assets/chapters/chapter6/images/ex6_1_q1.svg
+ M client/assets/chapters/chapter6/images/ex6_1_q2_nonsim.svg
+ M client/assets/chapters/chapter6/images/ex6_1_q2_sim.svg
+ M client/assets/chapters/chapter6/images/ex6_1_q3.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q1.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q1_i.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q1_ii.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q2_i.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q2_ii.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q2_iii.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q3.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q4.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q5.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q6.svg
+ M client/assets/chapters/chapter6/images/ex6_2_q9.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q10.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q11.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q12.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q13.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q14.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q15.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q16.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_i.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_ii.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_iii.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_iv.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_v.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q1_vi.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q2.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q3.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q4.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q5.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q6.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q7.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q8.svg
+ M client/assets/chapters/chapter6/images/ex6_3_q9.svg
+ M client/assets/chapters/chapter6/images/example_1.svg
+ M client/assets/chapters/chapter6/images/example_2.svg
+ M client/assets/chapters/chapter6/images/example_3.svg
+ M client/assets/chapters/chapter6/images/example_4.svg
+ M client/assets/chapters/chapter6/images/example_5.svg
+ M client/assets/chapters/chapter6/images/example_6.svg
+ M client/assets/chapters/chapter6/images/example_7.svg
+ M client/assets/chapters/chapter6/images/example_8.svg
+ M client/assets/chapters/chapter6/images/generic_triangle.svg
+ M client/assets/chapters/chapter6/images/q3_quads.svg
+ M client/assets/chapters/chapter6/images/similar_triangles.svg
+ M client/assets/chapters/chapter6/images/squares.svg
+ M client/assets/chapters/chapter6/images/thales.svg
+ M client/assets/chapters/chapter6/images/theo_6_1.svg
+ M client/assets/chapters/chapter6/images/theo_6_2.svg
+ M client/assets/chapters/chapter6/images/theo_6_3.svg
+ M client/assets/chapters/chapter6/images/theo_6_4.svg
+ M client/assets/chapters/chapter6/images/theo_6_5.svg
+ M client/assets/chapters/chapter6/images/theorem_6_3.svg
+ M client/assets/chapters/chapter6/images/theorem_6_4.svg
+ M client/assets/chapters/chapter6/images/theorem_6_5.svg
+ M client/assets/chapters/chapter6/images/triangle_abc.svg
+ M client/assets/chapters/chapter6/mcqs.html
+ M client/assets/chapters/chapter6/overview.html
+ M client/assets/chapters/chapter6/theorems.html
+ M client/assets/chapters/chapter7/examples.html
+ M client/assets/chapters/chapter7/exercise1.html
+ M client/assets/chapters/chapter7/exercise2.html
+ D client/assets/chapters/chapter7/exercises.html
+ M client/assets/chapters/chapter7/images/distance_formula.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q10.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q1_i.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q1_ii.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q1_iii.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q2.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q3.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q4.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q5.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q6_i.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q6_ii.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q6_iii.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q7.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q8.svg
+ M client/assets/chapters/chapter7/images/ex7_1_q9.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q1.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q10.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q2.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q3.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q4.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q5.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q6.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q7.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q8.svg
+ M client/assets/chapters/chapter7/images/ex7_2_q9.svg
+ M client/assets/chapters/chapter7/images/ex7_eg10.svg
+ M client/assets/chapters/chapter7/images/ex7_eg3.svg
+ M client/assets/chapters/chapter7/images/ex7_eg4.svg
+ M client/assets/chapters/chapter7/images/ex7_eg5.svg
+ M client/assets/chapters/chapter7/images/ex7_eg6.svg
+ M client/assets/chapters/chapter7/images/ex7_eg7.svg
+ M client/assets/chapters/chapter7/images/ex7_eg8.svg
+ M client/assets/chapters/chapter7/images/ex7_eg9.svg
+ M client/assets/chapters/chapter7/images/section_formula.svg
+ M client/assets/chapters/chapter7/mcqs.html
+ M client/assets/chapters/chapter7/overview.html
+ M client/assets/chapters/chapter8/examples.html
+ M client/assets/chapters/chapter8/exercise1.html
+ M client/assets/chapters/chapter8/exercise2.html
+ M client/assets/chapters/chapter8/exercise3.html
+ M client/assets/chapters/chapter8/exercises.html
+ M client/assets/chapters/chapter8/images/angle_30_60.svg
+ M client/assets/chapters/chapter8/images/angle_45.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q1.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q10.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q11.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q2.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q3.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q3_fixed.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q4.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q5.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q6.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q6_simple.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q7.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q8.svg
+ M client/assets/chapters/chapter8/images/ex8_1_q9.svg
+ M client/assets/chapters/chapter8/images/ex8_2_q1.svg
+ M client/assets/chapters/chapter8/images/ex8_2_q2.svg
+ M client/assets/chapters/chapter8/images/ex8_2_q3.svg
+ M client/assets/chapters/chapter8/images/ex8_3_q1.svg
+ M client/assets/chapters/chapter8/images/ex8_3_q2.svg
+ M client/assets/chapters/chapter8/images/ex8_3_q3.svg
+ M client/assets/chapters/chapter8/images/ex8_3_q4.svg
+ M client/assets/chapters/chapter8/images/ex8_3_q5.svg
+ M client/assets/chapters/chapter8/images/ex8_eg6.svg
+ M client/assets/chapters/chapter8/images/ex8_eg7.svg
+ M client/assets/chapters/chapter8/images/example_1.svg
+ M client/assets/chapters/chapter8/images/example_2.svg
+ M client/assets/chapters/chapter8/images/example_3.svg
+ M client/assets/chapters/chapter8/images/example_3_fixed.svg
+ M client/assets/chapters/chapter8/images/example_4.svg
+ M client/assets/chapters/chapter8/images/example_5.svg
+ M client/assets/chapters/chapter8/images/identity_proof.svg
+ M client/assets/chapters/chapter8/images/trig_ratios.svg
+ M client/assets/chapters/chapter8/mcqs.html
+ M client/assets/chapters/chapter8/overview.html
+ M client/assets/chapters/chapter9/examples.html
+ M client/assets/chapters/chapter9/exercise1.html
+ M client/assets/chapters/chapter9/exercises.html
+ M client/assets/chapters/chapter9/images/ex9_1_q1.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q10.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q11.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q12.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q13.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q14.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q15.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q16.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q2.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q3.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q4.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q5.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q6.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q7.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q8.svg
+ M client/assets/chapters/chapter9/images/ex9_1_q9.svg
+ M client/assets/chapters/chapter9/images/example_1.svg
+ M client/assets/chapters/chapter9/images/example_2.svg
+ M client/assets/chapters/chapter9/images/example_3.svg
+ M client/assets/chapters/chapter9/images/example_4.svg
+ M client/assets/chapters/chapter9/images/example_5.svg
+ M client/assets/chapters/chapter9/images/example_6.svg
+ M client/assets/chapters/chapter9/images/example_7.svg
+ M client/assets/chapters/chapter9/images/overview_angles.svg
+ M client/assets/chapters/chapter9/mcqs.html
+ M client/assets/chapters/chapter9/overview.html
+ M client/components/ChapterCard.tsx
+ M client/components/ColorButton.tsx
+ M client/components/CreatorCredit.tsx
+ D client/components/GlobalSearchBar.tsx
+ M client/components/JiguuLogo.tsx
+ M client/components/NavigationButtons.tsx
+ M client/components/ParsedText.tsx
+ M client/components/ScreenWrapper.tsx
+ D client/components/SearchResults.tsx
+ M client/components/StaticHeader.tsx
+ M client/components/solution/DefinitionItem.tsx
+ M client/components/solution/FormulaItem.tsx
+ M client/components/solution/PYQSection.tsx
+ M client/components/solution/QuestionCard.tsx
+ M client/constants/theme.ts
+ D client/context/SavedItemsContext.tsx
+ D client/context/SearchContext.tsx
+ M client/data/chapterContent.ts
+ M client/data/chapters.ts
+ M client/data/content/sci-bio-1.ts
+ M client/data/content/sci-bio-2.ts
+ M client/data/content/sci-bio-4.ts
+ M client/data/content/sci-bio-5.ts
+ M client/data/content/sci-chem-1.ts
+ M client/data/content/sci-chem-2.ts
+ M client/data/content/sci-chem-3.ts
+ M client/data/content/sci-chem-4.ts
+ M client/data/content/sci-phy-1.ts
+ M client/data/content/sci-phy-2.ts
+ M client/data/content/sci-phy-3.ts
+ M client/data/content/sci-phy-4.ts
+ M client/navigation/RootStackNavigator.tsx
+ M client/screens/AboutEducatorScreen.tsx
+ D client/screens/BookmarksScreen.tsx
+ M client/screens/ChapterListScreen.tsx
+ D client/screens/EnglishTopicsScreen.tsx
+ M client/screens/GlobalPYQScreen.tsx
+ M client/screens/HomeScreen.tsx
+ D client/screens/ImportantQuestionsScreen.tsx
+ M client/screens/NewsEventsScreen.tsx
+ M client/screens/QuickNotesScreen.tsx
+ M client/screens/QuizScreen.tsx
+ M client/screens/ScienceTopicsScreen.tsx
+ D client/screens/SocialScienceTopicsScreen.tsx
+ M client/screens/SolutionScreen.tsx
+ D client/utils/search-engine.ts
+ M package-lock.json
+ M package.json
+?? add_intext2.py
+?? all_image_contexts.py
+?? apply_final.py
+?? apply_final_v3.py
+?? apply_final_v4.py
+?? apply_final_v5.py
+?? apply_final_v7.py
+?? apply_final_v8.py
+?? apply_final_v9.py
+?? apply_fix.py
+?? apply_fixes.py
+?? apply_fixes_final.py
+?? apply_fixes_v2.py
+?? apply_fixes_v4.py
+?? apply_images_1.py
+?? apply_images_2.py
+?? apply_images_3.py
+?? apply_log.txt
+?? apply_robust.py
+?? auto_fix_ch3.js
+?? b64_ascii.txt
+?? b64_output.txt
+?? base64_images.txt
+?? chapter3_text.txt
+?? check_all_lengths.py
+?? check_extraction.py
+?? check_json.py
+?? check_line.py
+?? check_missing_pids.py
+?? check_output.txt
+?? check_p50_match.py
+?? check_p50_match_v2.py
+?? check_p59.py
+?? check_paths.py
+?? check_sci_phy_3.py
+?? clean_ch3.js
+?? clean_duplicates.py
+?? clean_tsc_errors.txt
+?? cleanup_syntax.py
+?? client/assets/chapters/chapter6/images/circles.png
+?? client/assets/chapters/chapter6/images/ex6_1_q1.png
+?? client/assets/chapters/chapter6/images/ex6_1_q2_nonsim.png
+?? client/assets/chapters/chapter6/images/ex6_1_q2_sim.png
+?? client/assets/chapters/chapter6/images/ex6_1_q3.png
+?? client/assets/chapters/chapter6/images/ex6_2_q1.png
+?? client/assets/chapters/chapter6/images/ex6_2_q1_i.png
+?? client/assets/chapters/chapter6/images/ex6_2_q1_ii.png
+?? client/assets/chapters/chapter6/images/ex6_2_q2_i.png
+?? client/assets/chapters/chapter6/images/ex6_2_q2_ii.png
+?? client/assets/chapters/chapter6/images/ex6_2_q2_iii.png
+?? client/assets/chapters/chapter6/images/ex6_2_q3.png
+?? client/assets/chapters/chapter6/images/ex6_2_q4.png
+?? client/assets/chapters/chapter6/images/ex6_2_q5.png
+?? client/assets/chapters/chapter6/images/ex6_2_q6.png
+?? client/assets/chapters/chapter6/images/ex6_2_q9.png
+?? client/assets/chapters/chapter6/images/ex6_3_q10.png
+?? client/assets/chapters/chapter6/images/ex6_3_q11.png
+?? client/assets/chapters/chapter6/images/ex6_3_q12.png
+?? client/assets/chapters/chapter6/images/ex6_3_q13.png
+?? client/assets/chapters/chapter6/images/ex6_3_q14.png
+?? client/assets/chapters/chapter6/images/ex6_3_q15.png
+?? client/assets/chapters/chapter6/images/ex6_3_q16.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_i.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_ii.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_iii.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_iv.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_v.png
+?? client/assets/chapters/chapter6/images/ex6_3_q1_vi.png
+?? client/assets/chapters/chapter6/images/ex6_3_q2.png
+?? client/assets/chapters/chapter6/images/ex6_3_q3.png
+?? client/assets/chapters/chapter6/images/ex6_3_q4.png
+?? client/assets/chapters/chapter6/images/ex6_3_q5.png
+?? client/assets/chapters/chapter6/images/ex6_3_q6.png
+?? client/assets/chapters/chapter6/images/ex6_3_q7.png
+?? client/assets/chapters/chapter6/images/ex6_3_q8.png
+?? client/assets/chapters/chapter6/images/ex6_3_q9.png
+?? client/assets/chapters/chapter6/images/example_1.png
+?? client/assets/chapters/chapter6/images/example_2.png
+?? client/assets/chapters/chapter6/images/example_3.png
+?? client/assets/chapters/chapter6/images/example_4.png
+?? client/assets/chapters/chapter6/images/example_5.png
+?? client/assets/chapters/chapter6/images/example_6.png
+?? client/assets/chapters/chapter6/images/example_7.png
+?? client/assets/chapters/chapter6/images/example_8.png
+?? client/assets/chapters/chapter6/images/generic_triangle.png
+?? client/assets/chapters/chapter6/images/q3_quads.png
+?? client/assets/chapters/chapter6/images/similar_triangles.png
+?? client/assets/chapters/chapter6/images/squares.png
+?? client/assets/chapters/chapter6/images/thales.png
+?? client/assets/chapters/chapter6/images/theo_6_1.png
+?? client/assets/chapters/chapter6/images/theo_6_2.png
+?? client/assets/chapters/chapter6/images/theo_6_3.png
+?? client/assets/chapters/chapter6/images/theo_6_4.png
+?? client/assets/chapters/chapter6/images/theo_6_5.png
+?? client/assets/chapters/chapter6/images/theorem_6_3.png
+?? client/assets/chapters/chapter6/images/theorem_6_4.png
+?? client/assets/chapters/chapter6/images/theorem_6_5.png
+?? client/assets/chapters/chapter6/images/triangle_abc.png
+?? client/ch13_error.txt
+?? client/check_b64_v2.py
+?? client/check_syntax.js
+?? client/clean_garbage.js
+?? client/components/ZoomableScrollView.tsx
+?? client/create_ch13.py
+?? client/create_ch14.py
+?? client/create_ch3.py
+?? client/data/chapter10/
+?? client/data/chapter11/
+?? client/data/chapter12/
+?? client/data/chapter13/
+?? client/data/chapter14/
+?? client/data/chapter3/
+?? client/data/content/fix_it2_diagrams.py
+?? client/data/content/fix_mcqs_sb2.py
+?? client/data/content/fix_q1_image.py
+?? client/data/content/fix_q2_diagram.py
+?? client/data/content/it3_base64.txt
+?? client/data/content/math-ch1.ts
+?? client/data/content/math-ch10.ts
+?? client/data/content/math-ch11.ts
+?? client/data/content/math-ch12.ts
+?? client/data/content/math-ch13.ts
+?? client/data/content/math-ch14.ts
+?? client/data/content/math-ch2.ts
+?? client/data/content/math-ch3.ts
+?? client/data/content/math-ch4.ts
+?? client/data/content/math-ch5.ts
+?? client/data/content/math-ch6.ts
+?? client/data/content/math-ch7.ts
+?? client/data/content/math-ch8.ts
+?? client/data/content/math-ch9.ts
+?? client/data/content/neuron_base64.txt
+?? client/data/content/sst-dis-1.ts
+?? client/data/content/sst-road-1.ts
+?? client/data/content/synapse_base64.txt
+?? client/data/content/update_exercise.py
+?? client/data/content/update_it3.py
+?? client/data/content/update_mcqs_sb2.py
+?? client/data/math_ch11_html/
+?? client/data/math_ch8_html/
+?? client/data/math_ch9_html/
+?? client/debug.js
+?? client/diag.js
+?? client/diffusion_final.txt
+?? client/error.log
+?? client/exhaustive_fix.js
+?? client/extract_mcqs.js
+?? client/failed.json
+?? client/final_fix_ch3.js
+?? client/final_font_fix.js
+?? client/final_normalize.js
+?? client/final_polish.js
+?? client/final_push_fix.js
+?? client/find_backslashes.js
+?? client/find_carets.py
+?? client/fix-ch3-all.js
+?? client/fix.js
+?? client/fix42.js
+?? client/fix94.js
+?? client/fix_all_mcqs.js
+?? client/fix_all_mcqs.py
+?? client/fix_all_mcqs_robust.js
+?? client/fix_all_mcqs_robust_v2.py
+?? client/fix_ch8.js
+?? client/fix_latex_error.log
+?? client/fix_malformed.js
+?? client/fix_math_ch8_ex8_2.js
+?? client/fix_math_ch8_ex8_3.js
+?? client/fix_quotes_math8.js
+?? client/fix_svgs.js
+?? client/foolproof_fix.js
+?? client/format_math_ch8.js
+?? client/full_tsc.txt
+?? client/generate_ch10.js
+?? client/generate_ch11.js
+?? client/generate_ch11_v2.js
+?? client/generate_ch12.js
+?? client/generate_ch13.js
+?? client/generate_ch14.js
+?? client/generate_ch3.js
+?? client/generate_ch8.js
+?? client/generate_ch9.js
+?? client/generator_template.js
+?? client/get_tsc_errors.js
+?? client/glucose_b64.txt
+?? client/literal_src_fix.js
+?? client/mcqs_extracted.json
+?? client/normalize_images.js
+?? client/out.log
+?? client/out.txt
+?? client/precise_fix_ch3.js
+?? client/purge_all_fonts.js
+?? client/replace.js
+?? client/restore_ch8.js
+?? client/revert_ch3_style.py
+?? client/robust_fix_ch3.js
+?? client/robust_replace.js
+?? client/scripts/
+?? client/search_err.js
+?? client/split_join_fix.js
+?? client/surgical_restore.js
+?? client/temp_examples_ch1.json
+?? client/test.ts
+?? client/tsc_errors.log
+?? client/tsc_errors.txt
+?? client/tsc_errors_utf8.log
+?? client/tsc_math3.log
+?? client/tsc_mcq_check.txt
+?? client/tsc_out.txt
+?? client/tsc_out2.txt
+?? client/tsc_out3.txt
+?? client/tsc_out_utf8.txt
+?? client/tsc_output.txt
+?? client/tsc_output_math8.log
+?? client/tsc_output_utf8.txt
+?? client/typescript_errors.log
+?? client/update_ch3_style.py
+?? client/update_math_ch8.js
+?? client/update_math_ch8_ex8_2.js
+?? client/villi_fresh.txt
+?? client/villi_source.txt
+?? debug.jpg
+?? debug_docx.py
+?? debug_img.jpg
+?? debug_intext1.txt
+?? debug_norm.py
+?? debug_p60.py
+?? debug_p60_v2.py
+?? debug_svg.xml
+?? detailed_extract.py
+?? diagnose.js
+?? diagnose_broken.js
+?? docx_summary.txt
+?? exercises_content.json
+?? extract_details.py
+?? extract_docx.py
+?? extract_full_content.py
+?? extract_images.py
+?? extract_images_final.py
+?? extract_images_final_v2.py
+?? extract_images_v2.py
+?? extracted_base64.txt
+?? extracted_images.txt
+?? extracted_targets.json
+?? filter_paragraphs.py
+?? find_images.py
+?? find_insertion_points.py
+?? find_next_image.py
+?? find_q5.py
+?? find_real_frags.py
+?? fix-ch3-svgs.js
+?? fix-ch3-tables.js
+?? fix-ch4-svgs.js
+?? fix-ch5-svgs.js
+?? fix_all_strings.py
+?? fix_broken_strings.py
+?? fix_commas.py
+?? fix_commas_final.py
+?? fix_escapes_v2.js
+?? fix_ex_options.py
+?? fix_final_formatting.py
+?? fix_images.py
+?? fix_lines.py
+?? fix_newlines.js
+?? fix_newlines.py
+?? fix_q16.py
+?? fix_syntax.py
+?? fix_syntax_final.py
+?? fix_syntax_v2.js
+?? frags_found.txt
+?? full_fragments.txt
+?? full_image_details.txt
+?? full_images.json
+?? full_scan.py
+?? full_scan_output.txt
+?? full_scan_report.txt
+?? full_scan_to_file.py
+?? full_scan_utf8.py
+?? gen_html_blocks.py
+?? gen_summary.py
+?? get_b64.py
+?? get_base64.py
+?? git_status.txt
+?? gs.txt
+?? gs_utf8.txt
+?? ids.txt
+?? ids_with_lines.txt
+?? image2_base64.txt
+?? image2_base64_v2.txt
+?? image_html_blocks.txt
+?? image_paragraphs.txt
+?? image_summary.txt
+?? images_report.py
+?? images_report.txt
+?? insertion_output.txt
+?? inspect_docx.py
+?? inspect_docx_q4.py
+?? inspect_images.py
+?? inspect_images_v2.py
+?? inspect_images_v3.py
+?? intext2.html
+?? intext3.html
+?? line92.txt
+?? lint_output_v2.txt
+?? list_images.py
+?? list_images_v2.py
+?? list_ts_images.py
+?? loop_b64.txt
+?? magnet_b64.txt
+?? map_image.py
+?? map_p_to_id.py
+?? map_p_to_id_v2.py
+?? map_paragraphs.py
+?? missing_results.txt
+?? p_map.json
+?? parse_tsc.js
+?? patch_plan.py
+?? patch_results.txt
+?? patch_results_final.txt
+?? patch_v5_stats.txt
+?? prepare_content.py
+?? prettier_err.txt
+?? print_imgs.py
+?? print_imgs_v2.py
+?? print_missing_pids.py
+?? project_tsc_check.txt
+?? q4_output.txt
+?? read_log.py
+?? rebuild_exercises.py
+?? remove_line192.py
+?? repair_ch3.js
+?? repair_ch3_v2.js
+?? repair_structure.js
+?? restore_and_fix.py
+?? restore_commas.py
+?? result.txt
+?? rewrite_full_file.py
+?? search_fragments.py
+?? search_lines.py
+?? search_output.txt
+?? search_results.json
+?? source_docs/
+?? status.txt
+?? status_utf8.txt
+?? stray_cleaner.js
+?? summarize_images.py
+?? summarize_search.py
+?? summarize_search_results.py
+?? summary.txt
+?? temp_log.txt
+?? temp_log2.txt
+?? test3.svg
+?? test_p60.py
+?? trace_images.py
+?? ts_errors.log
+?? ts_errors_utf8.txt
+?? ts_new.log
+?? ts_new_utf8.txt
+?? ts_qa.txt
+?? tsc_check.txt
+?? tsc_check_utf8.txt
+?? tsc_errors.log
+?? tsc_errors_new.txt
+?? tsc_errors_utf8.log
+?? tsc_errors_utf8.txt
+?? tsc_errors_v3.txt
+?? tsc_errors_v4.txt
+?? tsc_final.txt
+?? tsc_final_utf8.txt
+?? tsc_full_check.txt
+?? tsc_full_check_v2.txt
+?? tsc_out.txt
+?? tsc_repair.txt
+?? tsc_repair_utf8.txt
+?? uniform_b64.txt
+?? update_content.js
+?? update_content_v2.js
+?? update_ex_ch4.py
+?? update_it1.py
+?? update_it4.py
+?? update_it5.py
+?? update_it6.py
+?? update_phy.py
+?? validate_syntax.js
+?? write_fragments.py

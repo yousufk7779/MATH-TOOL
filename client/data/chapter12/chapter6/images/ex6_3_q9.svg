@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 320" width="450" height="320">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .mark { fill: none; stroke: #00BFFF; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Coordinates -->
+  <!-- A: (50, 250) -->
+  <!-- B: (200, 250) -->
+  <!-- C: (200, 50) -->
+  <!-- P: (350, 250) -->
+  <!-- M: (158, 106) Calculated as projection of P on AC -->
+
+  <!-- Triangle ABC -->
+  <path d="M50 250 L200 250 L200 50 Z" class="line" />
+  
+  <!-- Triangle AMP -->
+  <!-- A(50,250) to P(350,250) is base line -->
+  <line x1="200" y1="250" x2="350" y2="250" class="line" /> <!-- BP segment -->
+  
+  <!-- MP segment -->
+  <line x1="350" y1="250" x2="158" y2="106" class="line" />
+
+  <!-- Labels -->
+  <text x="35" y="250" class="text">A</text>
+  <text x="195" y="275" class="text">B</text>
+  <text x="200" y="40" class="text">C</text>
+  <text x="360" y="260" class="text">P</text>
+  <text x="145" y="100" class="text">M</text>
+
+  <!-- Right Angle at B -->
+  <polyline points="190,250 190,240 200,240" class="mark" />
+
+  <!-- Right Angle at M -->
+  <!-- Vectors calculate in thought trace: (-9, 12) and (12, 9) from M -->
+  <!-- M=(158, 106). Pt1=(149, 118). Pt2=(170, 115). Corner=(161, 127) -->
+  <polyline points="149,118 161,127 170,115" class="mark" />
+
+</svg>

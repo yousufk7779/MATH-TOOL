@@ -3,7 +3,7 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
     </style>
   </defs>
 
@@ -16,22 +16,28 @@
   <!-- E: (80, 130) Point on AD parallel to AB/DC through O -->
 
   <!-- Trapezium ABCD -->
-  <path d="M100 50 L300 50 L350 250 L50 250 Z" class="line" />
+  <path d="M100 50 L300 50 L350 250 L50 250 Z" class="line"/>
 
   <!-- Diagonals -->
-  <line x1="100" y1="50" x2="350" y2="250" class="inner-line" /> <!-- AC -->
-  <line x1="300" y1="50" x2="50" y2="250" class="inner-line" /> <!-- BD -->
+  <line x1="100" y1="50" x2="350" y2="250" class="inner-line"/> <!-- AC -->
+  <line x1="300" y1="50" x2="50" y2="250" class="inner-line"/> <!-- BD -->
 
   <!-- Parallel Line OE -->
-  <line x1="80" y1="130" x2="200" y2="130" class="inner-line" />
+  <line x1="80" y1="130" x2="200" y2="130" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="85" y="40" class="text">A</text>
-  <text x="300" y="40" class="text">B</text>
-  <text x="360" y="270" class="text">C</text>
-  <text x="35" y="270" class="text">D</text>
+  <text x="85" y="40" class="text" fill="#00bfff">A</text>
+  <text x="300" y="40" class="text" fill="#00bfff">B</text>
+  <text x="360" y="270" class="text" fill="#00bfff">C</text>
+  <text x="35" y="270" class="text" fill="#00bfff">D</text>
   
-  <text x="195" y="160" class="text">O</text>
-  <text x="60" y="135" class="text">E</text>
+  <text x="195" y="160" class="text" fill="#00bfff">O</text>
+  <text x="60" y="135" class="text" fill="#00bfff">E</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

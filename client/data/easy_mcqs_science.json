@@ -1,0 +1,842 @@
+[
+  {
+    "id": "es-1",
+    "question": "Which gas is released during photosynthesis?",
+    "options": [
+      "(A) Oxygen",
+      "(B) Carbon Dioxide",
+      "(C) Nitrogen",
+      "(D) Hydrogen"
+    ],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-2",
+    "question": "The powerhouse of the cell is:",
+    "options": [
+      "(A) Nucleus",
+      "(B) Mitochondria",
+      "(C) Ribosome",
+      "(D) Cell Wall"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-3",
+    "question": "Which acid is present in curd?",
+    "options": [
+      "(A) Citric Acid",
+      "(B) Lactic Acid",
+      "(C) Oxalic Acid",
+      "(D) Acetic Acid"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-4",
+    "question": "What is the pH value of pure water?",
+    "options": [
+      "(A) 0",
+      "(B) 7",
+      "(C) 14",
+      "(D) 1"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-5",
+    "question": "The SI unit of electric current is:",
+    "options": [
+      "(A) Volt",
+      "(B) Ohm",
+      "(C) Ampere",
+      "(D) Watt"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-6",
+    "question": "Which mirror is used as a rear-view mirror in vehicles?",
+    "options": [
+      "(A) Plane Mirror",
+      "(B) Concave Mirror",
+      "(C) Convex Mirror",
+      "(D) None"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-7",
+    "question": "What is the chemical formula of common salt?",
+    "options": [
+      "(A) NaCl",
+      "(B) KCl",
+      "(C) MgCl2",
+      "(D) CaCl2"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-8",
+    "question": "The normal human body temperature is around:",
+    "options": [
+      "(A) 30\u00b0C",
+      "(B) 37\u00b0C",
+      "(C) 40\u00b0C",
+      "(D) 98\u00b0C"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-9",
+    "question": "Which organ filters blood in the human body?",
+    "options": [
+      "(A) Heart",
+      "(B) Lungs",
+      "(C) Kidneys",
+      "(D) Liver"
+    ],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-10",
+    "question": "Ohm's law relates voltage, current and:",
+    "options": [
+      "(A) Power",
+      "(B) Resistance",
+      "(C) Energy",
+      "(D) Capacitance"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-11",
+    "question": "Which part of the plant absorbs water?",
+    "options": [
+      "(A) Leaves",
+      "(B) Roots",
+      "(C) Stem",
+      "(D) Flower"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-12",
+    "question": "The speed of light in vacuum is approx:",
+    "options": [
+      "(A) 3 x 10^8 m/s",
+      "(B) 3 x 10^5 m/s",
+      "(C) 150,000 m/s",
+      "(D) 300 m/s"
+    ],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-13",
+    "question": "Which element is common to all acids?",
+    "options": [
+      "(A) Oxygen",
+      "(B) Hydrogen",
+      "(C) Nitrogen",
+      "(D) Chlorine"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-14",
+    "question": "The process of rusting of iron is:",
+    "options": [
+      "(A) Physical change",
+      "(B) Chemical change",
+      "(C) Biological change",
+      "(D) None"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-15",
+    "question": "Blue litmus paper turns red in:",
+    "options": [
+      "(A) Acid",
+      "(B) Base",
+      "(C) Water",
+      "(D) Salt"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-16",
+    "question": "Which component of blood carries oxygen?",
+    "options": [
+      "(A) WBC",
+      "(B) RBC",
+      "(C) Platelets",
+      "(D) Plasma"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-17",
+    "question": "The least distance of distinct vision for a normal eye is:",
+    "options": [
+      "(A) 25 m",
+      "(B) 25 cm",
+      "(C) 5 cm",
+      "(D) Infinite"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-18",
+    "question": "Which vitamin is synthesized by our skin in sunlight?",
+    "options": [
+      "(A) Vitamin A",
+      "(B) Vitamin B",
+      "(C) Vitamin C",
+      "(D) Vitamin D"
+    ],
+    "correctAnswer": "D",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-19",
+    "question": "Electric bulb filament is made of:",
+    "options": [
+      "(A) Copper",
+      "(B) Aluminum",
+      "(C) Tungsten",
+      "(D) Iron"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-20",
+    "question": "Which gas is used in fire extinguishers?",
+    "options": [
+      "(A) Oxygen",
+      "(B) Nitrogen",
+      "(C) Carbon Dioxide",
+      "(D) Hydrogen"
+    ],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-21",
+    "question": "The unit of power of a lens is:",
+    "options": [
+      "(A) Metre",
+      "(B) Dioptre",
+      "(C) Watt",
+      "(D) Lumen"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-22",
+    "question": "Which acid is released in our stomach?",
+    "options": [
+      "(A) H2SO4",
+      "(B) HNO3",
+      "(C) HCl",
+      "(D) Acetic acid"
+    ],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-23",
+    "question": "How many chromosomes are there in human cells?",
+    "options": [
+      "(A) 23",
+      "(B) 46",
+      "(C) 22",
+      "(D) 44"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-24",
+    "question": "Force = Mass x ________:",
+    "options": [
+      "(A) Velocity",
+      "(B) Acceleration",
+      "(C) Distance",
+      "(D) Time"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-25",
+    "question": "Which metal is liquid at room temperature?",
+    "options": [
+      "(A) Iron",
+      "(B) Sodium",
+      "(C) Mercury",
+      "(D) Gold"
+    ],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-26",
+    "question": "The splitting of white light into its component colors is:",
+    "options": [
+      "(A) Reflection",
+      "(B) Refraction",
+      "(C) Dispersion",
+      "(D) Scattering"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-27",
+    "question": "Which non-metal is a good conductor of electricity?",
+    "options": [
+      "(A) Diamond",
+      "(B) Graphite",
+      "(C) Sulfur",
+      "(D) Phosphorus"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-28",
+    "question": "What is the basic unit of heredity?",
+    "options": [
+      "(A) Cell",
+      "(B) DNA",
+      "(C) Gene",
+      "(D) Proteins"
+    ],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-29",
+    "question": "Energy possessed by a body due to its motion is:",
+    "options": [
+      "(A) Potential Energy",
+      "(B) Kinetic Energy",
+      "(C) Chemical Energy",
+      "(D) Heat Energy"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-30",
+    "question": "Plants lose water through pores called:",
+    "options": [
+      "(A) Stomata",
+      "(B) Xylem",
+      "(C) Phloem",
+      "(D) Cells"
+    ],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-31",
+    "question": "Which planet is known as the Red Planet?",
+    "options": [
+      "(A) Venus",
+      "(B) Mars",
+      "(C) Jupiter",
+      "(D) Saturn"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-32",
+    "question": "Chemical name of Baking Soda is:",
+    "options": [
+      "(A) Sodium Carbonate",
+      "(B) Sodium Bicarbonate",
+      "(C) Calcium Chloride",
+      "(D) Sodium Hydroxide"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-33",
+    "question": "Our heart has how many chambers?",
+    "options": [
+      "(A) 2",
+      "(B) 3",
+      "(C) 4",
+      "(D) 5"
+    ],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-34",
+    "question": "The human ear is sensitive to frequencies between:",
+    "options": [
+      "(A) 2Hz-200Hz",
+      "(B) 20Hz-20,000Hz",
+      "(C) 2k-20kHz",
+      "(D) None"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-35",
+    "question": "Which gas is known as Laughing Gas?",
+    "options": [
+      "(A) NO2",
+      "(B) N2O",
+      "(C) NO",
+      "(D) NH3"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-36",
+    "question": "The largest gland in the human body is:",
+    "options": [
+      "(A) Pancreas",
+      "(B) Liver",
+      "(C) Thyroid",
+      "(D) Adrenal"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-37",
+    "question": "Refractive index of water is approx:",
+    "options": [
+      "(A) 1.0",
+      "(B) 1.33",
+      "(C) 1.50",
+      "(D) 2.42"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-38",
+    "question": "Solder is an alloy of:",
+    "options": [
+      "(A) Tin and Lead",
+      "(B) Copper and Tin",
+      "(C) Zinc and Iron",
+      "(D) Aluminum"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-39",
+    "question": "Which blood group is called universal donor?",
+    "options": [
+      "(A) A",
+      "(B) B",
+      "(C) AB",
+      "(D) O"
+    ],
+    "correctAnswer": "D",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-40",
+    "question": "The sky appears blue due to:",
+    "options": [
+      "(A) Reflections",
+      "(B) Refraction",
+      "(C) Scattering of light",
+      "(D) Diffraction"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-41",
+    "question": "An example of a balanced diet component:",
+    "options": [
+      "(A) Proteins",
+      "(B) Sugar only",
+      "(C) Oil only",
+      "(D) Water only"
+    ],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-42",
+    "question": "Which instrument measures electric potential difference?",
+    "options": [
+      "(A) Ammeter",
+      "(B) Voltmeter",
+      "(C) Galvanometer",
+      "(D) Thermometer"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-43",
+    "question": "Acid used in car batteries:",
+    "options": [
+      "(A) HCl",
+      "(B) HNO3",
+      "(C) H2SO4",
+      "(D) Citric acid"
+    ],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-44",
+    "question": "Pollen grains are produced in:",
+    "options": [
+      "(A) Stigma",
+      "(B) Anther",
+      "(C) Ovary",
+      "(D) Style"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-45",
+    "question": "Shortsightedness is also called:",
+    "options": [
+      "(A) Myopia",
+      "(B) Hypermetropia",
+      "(C) Presbyopia",
+      "(D) Cataract"
+    ],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-46",
+    "question": "What is the chemical name of Vitamin C?",
+    "options": [
+      "(A) Citric acid",
+      "(B) Ascorbic acid",
+      "(C) Folic acid",
+      "(D) Retinol"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-47",
+    "question": "The percentage of nitrogen in air is around:",
+    "options": [
+      "(A) 21%",
+      "(B) 78%",
+      "(C) 0.03%",
+      "(D) 1%"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-48",
+    "question": "A group of tissues working together forms:",
+    "options": [
+      "(A) Cell",
+      "(B) Organ",
+      "(C) System",
+      "(D) Organism"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-49",
+    "question": "Unit of heat energy is:",
+    "options": [
+      "(A) Watt",
+      "(B) Joule",
+      "(C) Pascal",
+      "(D) Newton"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-50",
+    "question": "Which gas is produced in fermentation?",
+    "options": [
+      "(A) CO2",
+      "(B) O2",
+      "(C) N2",
+      "(D) H2"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-51",
+    "question": "The male reproductive part of a flower is:",
+    "options": [
+      "(A) Pistil",
+      "(B) Stamen",
+      "(C) Petal",
+      "(D) Sepal"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-52",
+    "question": "Sound cannot travel through:",
+    "options": [
+      "(A) Solid",
+      "(B) Liquid",
+      "(C) Gas",
+      "(D) Vacuum"
+    ],
+    "correctAnswer": "D",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-53",
+    "question": "Which of these is a noble gas?",
+    "options": [
+      "(A) Oxygen",
+      "(B) Helium",
+      "(C) Hydrogen",
+      "(D) Nitrogen"
+    ],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-54",
+    "question": "What is the lifespan of RBCs (approx)?",
+    "options": [
+      "(A) 120 days",
+      "(B) 10 days",
+      "(C) Year",
+      "(D) Month"
+    ],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-55",
+    "question": "The device used to store charge is:",
+    "options": [
+      "(A) Resistor",
+      "(B) Inductor",
+      "(C) Capacitor",
+      "(D) Battery"
+    ],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-56",
+    "question": "Calcium Carbonate formula:",
+    "options": [
+      "(A) CaCO3",
+      "(B) CaO",
+      "(C) Ca(OH)2",
+      "(D) CaSO4"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-57",
+    "question": "Digestion of protein starts in:",
+    "options": [
+      "(A) Mouth",
+      "(B) Stomach",
+      "(C) Intestine",
+      "(D) Esophagus"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-58",
+    "question": "Light year is a unit of:",
+    "options": [
+      "(A) Time",
+      "(B) Distance",
+      "(C) Brightness",
+      "(D) Speed"
+    ],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-59",
+    "question": "Zinc coated iron is called:",
+    "options": [
+      "(A) Galvanized iron",
+      "(B) Alloy",
+      "(C) Rust",
+      "(D) Brass"
+    ],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  },
+  {
+    "id": "es-60",
+    "question": "Study of plants is called:",
+    "options": [
+      "(A) Zoology",
+      "(B) Botany",
+      "(C) Ecology",
+      "(D) Microbiology"
+    ],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "easy-science",
+    "chapterTitle": "Science Basics"
+  }
+]

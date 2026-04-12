@@ -3,8 +3,8 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
-      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
+      .angle-arc { fill: none; stroke: #00bfff; stroke-width: 1; }
     </style>
   </defs>
 
@@ -19,30 +19,36 @@
   <!-- S approx (320, 300) -->
 
   <!-- Main Triangle TQR -->
-  <path d="M300 50 L50 300 L450 300 Z" class="line" />
+  <path d="M300 50 L50 300 L450 300 Z" class="line"/>
 
   <!-- Inner Lines -->
   <!-- P to S -->
-  <line x1="175" y1="175" x2="320" y2="300" class="inner-line" />
+  <line x1="175" y1="175" x2="320" y2="300" class="inner-line"/>
   
   <!-- P to R -->
-  <line x1="175" y1="175" x2="450" y2="300" class="inner-line" />
+  <line x1="175" y1="175" x2="450" y2="300" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="290" y="40" class="text">T</text>
-  <text x="30" y="310" class="text">Q</text>
-  <text x="460" y="310" class="text">R</text>
-  <text x="155" y="170" class="text">P</text>
-  <text x="315" y="320" class="text">S</text>
+  <text x="290" y="40" class="text" fill="#00bfff">T</text>
+  <text x="30" y="310" class="text" fill="#00bfff">Q</text>
+  <text x="460" y="310" class="text" fill="#00bfff">R</text>
+  <text x="155" y="170" class="text" fill="#00bfff">P</text>
+  <text x="315" y="320" class="text" fill="#00bfff">S</text>
 
   <!-- Angle 1 at Q -->
-  <path d="M80 300 A 30 30 0 0 0 73 277" class="angle-arc" />
-  <text x="85" y="290" class="text">1</text>
+  <path d="M80 300 A 30 30 0 0 0 73 277" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <text x="85" y="290" class="text" fill="#00bfff">1</text>
 
   <!-- Angle 2 at R (Angle PRQ) -->
   <!-- From line RQ (180 deg) to line RP -->
   <!-- RP vector: (175-450, 175-300) = (-275, -125). Angle approx 155 deg. -->
-  <path d="M420 300 A 30 30 0 0 1 424 288" class="angle-arc" />
-  <text x="400" y="290" class="text">2</text>
+  <path d="M420 300 A 30 30 0 0 1 424 288" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <text x="400" y="290" class="text" fill="#00bfff">2</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

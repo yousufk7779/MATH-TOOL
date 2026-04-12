@@ -1,0 +1,1 @@
+const x = {             "question": "<span style=\"font-weight: normal;\">Check whether 4ⁿ can end with the digit 0 for any natural number n.</span>", };

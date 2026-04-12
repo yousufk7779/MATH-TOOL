@@ -3,8 +3,8 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
-      .angle-arc { fill: none; stroke: #555; stroke-width: 1; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
+      .angle-arc { fill: none; stroke: #00bfff; stroke-width: 1; }
     </style>
   </defs>
 
@@ -21,40 +21,46 @@
   <!-- O approx (225, 131) -->
 
   <!-- Trapezium ABCD -->
-  <path d="M120 50 L330 50 L380 250 L70 250 Z" class="line" />
+  <path d="M120 50 L330 50 L380 250 L70 250 Z" class="line"/>
 
   <!-- Diagonals -->
-  <line x1="120" y1="50" x2="380" y2="250" class="inner-line" /> <!-- AC -->
-  <line x1="330" y1="50" x2="70" y2="250" class="inner-line" /> <!-- BD -->
+  <line x1="120" y1="50" x2="380" y2="250" class="inner-line"/> <!-- AC -->
+  <line x1="330" y1="50" x2="70" y2="250" class="inner-line"/> <!-- BD -->
 
   <!-- Labels -->
-  <text x="105" y="45" class="text">A</text>
-  <text x="335" y="45" class="text">B</text>
-  <text x="390" y="260" class="text">C</text>
-  <text x="50" y="260" class="text">D</text>
-  <text x="215" y="125" class="text">O</text>
+  <text x="105" y="45" class="text" fill="#00bfff">A</text>
+  <text x="335" y="45" class="text" fill="#00bfff">B</text>
+  <text x="390" y="260" class="text" fill="#00bfff">C</text>
+  <text x="50" y="260" class="text" fill="#00bfff">D</text>
+  <text x="215" y="125" class="text" fill="#00bfff">O</text>
 
   <!-- Alternate Interior Angles (Parallel Lines) -->
   <!-- Angle OAB (at A) -->
-  <path d="M140 50 A 20 20 0 0 1 135 62" class="angle-arc" />
-  <path d="M145 50 A 25 25 0 0 1 139 65" class="angle-arc" />
+  <path d="M140 50 A 20 20 0 0 1 135 62" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M145 50 A 25 25 0 0 1 139 65" class="angle-arc" stroke="#00bfff" fill="none"/>
   
   <!-- Angle OCD (at C) matches OAB -->
-  <path d="M360 250 A 20 20 0 0 0 365 238" class="angle-arc" />
-  <path d="M355 250 A 25 25 0 0 0 361 235" class="angle-arc" />
+  <path d="M360 250 A 20 20 0 0 0 365 238" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M355 250 A 25 25 0 0 0 361 235" class="angle-arc" stroke="#00bfff" fill="none"/>
 
   <!-- Angle OBA (at B) -->
-  <path d="M310 50 A 20 20 0 0 0 315 62" class="angle-arc" />
-  <path d="M305 50 A 25 25 0 0 0 311 65" class="angle-arc" />
-  <path d="M300 50 A 30 30 0 0 0 307 68" class="angle-arc" />
+  <path d="M310 50 A 20 20 0 0 0 315 62" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M305 50 A 25 25 0 0 0 311 65" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M300 50 A 30 30 0 0 0 307 68" class="angle-arc" stroke="#00bfff" fill="none"/>
 
   <!-- Angle ODC (at D) matches OBA -->
-  <path d="M90 250 A 20 20 0 0 1 85 238" class="angle-arc" />
-  <path d="M95 250 A 25 25 0 0 1 89 235" class="angle-arc" />
-  <path d="M100 250 A 30 30 0 0 1 93 232" class="angle-arc" />
+  <path d="M90 250 A 20 20 0 0 1 85 238" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M95 250 A 25 25 0 0 1 89 235" class="angle-arc" stroke="#00bfff" fill="none"/>
+  <path d="M100 250 A 30 30 0 0 1 93 232" class="angle-arc" stroke="#00bfff" fill="none"/>
   
   <!-- Vertically Opposite Angles at O -->
-  <path d="M215 139 A 15 15 0 0 0 235 139" class="angle-arc" /> <!-- Bottom -->
-  <path d="M215 123 A 15 15 0 0 1 235 123" class="angle-arc" /> <!-- Top -->
+  <path d="M215 139 A 15 15 0 0 0 235 139" class="angle-arc" stroke="#00bfff" fill="none"/> <!-- Bottom -->
+  <path d="M215 123 A 15 15 0 0 1 235 123" class="angle-arc" stroke="#00bfff" fill="none"/> <!-- Top -->
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

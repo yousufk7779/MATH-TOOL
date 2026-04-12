@@ -65,7 +65,7 @@ function QuickNotesScreen() {
     <ScreenWrapper showBackButton>
       <View style={styles.container}>
         <View style={styles.header}>
-          <ThemedText style={[styles.title, { color: JiguuColors.quickNotes }]}>
+          <ThemedText style={[styles.title, { color: JiguuColors.accent1 }]}>
             Quick Notes
           </ThemedText>
         </View>
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: Spacing.xl,
     paddingTop: Spacing.lg,
-    paddingBottom: 120,
+    paddingBottom: 80,
     flexGrow: 1,
   },
   header: {
@@ -151,7 +151,8 @@ const styles = StyleSheet.create({
   },
   title: {
     ...Typography.h2,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
+    letterSpacing: 0.5,
   },
   notesGrid: {
     gap: Spacing.md,
@@ -178,14 +179,14 @@ const styles = StyleSheet.create({
     color: JiguuColors.textPrimary,
     marginBottom: 2,
     paddingLeft: Spacing.sm,
-    fontFamily: "Kalam_700Bold",
+    fontFamily: "NotoSans_400Regular",
   },
   notePreview: {
     ...Typography.small,
     color: JiguuColors.textSecondary,
     marginBottom: Spacing.xs,
     paddingLeft: Spacing.sm,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
     // flex: 1, // removed to allow compact height
   },
   noteDate: {
@@ -194,11 +195,11 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     opacity: 0.7,
     marginRight: Spacing.xs,
-    fontFamily: "Kalam_400Regular",
+    fontFamily: "NotoSans_400Regular",
   },
   fab: {
     position: "absolute",
-    bottom: 150, // Raised to avoid CreatorCredit
+    bottom: 40, 
     right: 24,
     width: 56,
     height: 56,

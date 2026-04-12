@@ -1,0 +1,138 @@
+{
+  "P50": {
+    "text": "Let the new resistance be R\u2019 = R and the new amount of current be I\u2019.",
+    "images": []
+  },
+  "P59": {
+    "text": "",
+    "images": []
+  },
+  "P80": {
+    "text": "An ammeter should always be connected in series with resistors while the voltmeter should be connected in parallel to the resistor to measure the potential difference as shown in the figure below.",
+    "images": []
+  },
+  "P96": {
+    "text": "Solution:",
+    "images": []
+  },
+  "P99": {
+    "text": "",
+    "images": []
+  },
+  "P105": {
+    "text": "The electric lamp, the toaster and the water filter connected in parallel to a 220 V source can be shown as using a circuit diagram as follows:",
+    "images": []
+  },
+  "P109": {
+    "text": "",
+    "images": []
+  },
+  "P143": {
+    "text": "(a) The circuit diagram below shows the connection of three resistors",
+    "images": []
+  },
+  "P144": {
+    "text": "",
+    "images": []
+  },
+  "P147": {
+    "text": "",
+    "images": []
+  },
+  "P153": {
+    "text": "",
+    "images": []
+  },
+  "P155": {
+    "text": "From the circuit, it is understood that all the resistors are connected in parallel. Therefore, their equivalent resistance can be calculated as follows:",
+    "images": []
+  },
+  "P163": {
+    "text": "If the resistors are connected in parallel, then their equivalent resistances will be the lowest. Their equivalent resistance connected in parallel is",
+    "images": []
+  },
+  "P181": {
+    "text": "t is the time in seconds, 1 hour = 3600 seconds The amount of current can be calculated as follows:",
+    "images": []
+  },
+  "P220": {
+    "text": "We know that each part is connected to each other in parallel, hence the equivalent resistance can be calculated as follows:",
+    "images": []
+  },
+  "P267": {
+    "text": "Solution:",
+    "images": []
+  },
+  "P281": {
+    "text": "",
+    "images": []
+  },
+  "P287": {
+    "text": "",
+    "images": []
+  },
+  "P292": {
+    "text": "The plot between voltage and current is known as IV characteristic. The current is plotted in the y-axis while the voltage is plotted in the x-axis. The different values of current for different values of voltage are given in the table. The I V characteristics for the given resistor is shown below.",
+    "images": []
+  },
+  "P301": {
+    "text": "Solution:",
+    "images": []
+  },
+  "P309": {
+    "text": "R = 0.2 \u2126 + 0.3 \u2126 + 0.4 \u2126 + 0.5 \u2126 + 12 \u2126 = 13.4 \u2126",
+    "images": []
+  },
+  "P315": {
+    "text": "Let us consider the number of resistors required as \u2018x.\u2019",
+    "images": []
+  },
+  "P321": {
+    "text": "Solution:",
+    "images": []
+  },
+  "P326": {
+    "text": "Case (i)",
+    "images": []
+  },
+  "P327": {
+    "text": "",
+    "images": []
+  },
+  "P331": {
+    "text": "Case (ii)",
+    "images": []
+  },
+  "P334": {
+    "text": "R = 6 \u2126 + 6 \u2126 = 12 \u2126",
+    "images": []
+  },
+  "P341": {
+    "text": "Substituting the values, we get",
+    "images": []
+  },
+  "P349": {
+    "text": "Case (i) When coils are used separately",
+    "images": []
+  },
+  "P355": {
+    "text": "The total resistance in the series circuit is 24 \u2126 + 24 \u2126 = 48 \u2126",
+    "images": []
+  },
+  "P359": {
+    "text": "Case (iii) When coils connected in parallel",
+    "images": []
+  },
+  "P364": {
+    "text": "Solution:",
+    "images": []
+  },
+  "P367": {
+    "text": "",
+    "images": []
+  },
+  "P376": {
+    "text": "Substituting the values in the equation, we get I = 100 W/220 V = 100/220 A",
+    "images": []
+  }
+}

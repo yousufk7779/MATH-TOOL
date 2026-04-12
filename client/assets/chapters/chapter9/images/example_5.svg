@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 350">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+      <path d="M0,0 L0,6 L9,3 z" fill="#e65100"/>
     </marker>
   </defs>
 
@@ -9,16 +9,16 @@
 
   <!-- Tower AB. A(400, 196). B(400, 300). -->
   <line x1="400" y1="300" x2="400" y2="196" stroke="#E65100" stroke-width="2"/>
-  <text x="405" y="190" font-family="Arial" font-size="18" font-weight="bold">A</text>
-  <text x="405" y="320" font-family="Arial" font-size="18" font-weight="bold">B</text>
-  <text x="410" y="250" font-family="Arial" font-size="20" fill="#333" font-weight="bold">h</text>
+  <text x="405" y="190" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">A</text>
+  <text x="405" y="320" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">B</text>
+  <text x="410" y="250" font-family="Arial" font-size="20" fill="#e65100" font-weight="bold">h</text>
 
   <!-- Points C(340, 300) and D(220, 300) -->
-  <circle cx="340" cy="300" r="3" fill="#333"/>
-  <text x="335" y="325" font-family="Arial" font-size="18" font-weight="bold">C</text>
+  <circle cx="340" cy="300" r="3" fill="#e65100"/>
+  <text x="335" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">C</text>
 
-  <circle cx="220" cy="300" r="3" fill="#333"/>
-  <text x="215" y="325" font-family="Arial" font-size="18" font-weight="bold">D</text>
+  <circle cx="220" cy="300" r="3" fill="#e65100"/>
+  <text x="215" y="325" font-family="Arial" font-size="18" font-weight="bold" fill="#e65100">D</text>
 
   <!-- Sight Lines -->
   <line x1="340" y1="300" x2="400" y2="196" stroke="#E65100" stroke-width="2"/>
@@ -26,14 +26,20 @@
 
   <!-- Angle 60 at C(340). dx 60 dy -104. Unit(0.5, -0.86). End (360, 265) -->
   <path d="M 380 300 A 40 40 0 0 0 360 265" fill="none" stroke="#E65100" stroke-width="2"/>
-  <text x="375" y="280" font-family="Arial" font-size="16" fill="#333">60°</text>
+  <text x="375" y="280" font-family="Arial" font-size="16" fill="#e65100">60°</text>
 
   <!-- Angle 30 at D(220). dx 180 dy -104. Unit(0.86, -0.5). End (254, 280) -->
   <path d="M 260 300 A 40 40 0 0 0 254 280" fill="none" stroke="#E65100" stroke-width="2"/>
-  <text x="270" y="290" font-family="Arial" font-size="16" fill="#333">30°</text>
+  <text x="270" y="290" font-family="Arial" font-size="16" fill="#e65100">30°</text>
 
   <!-- Distance 40m -->
-  <line x1="220" y1="330" x2="340" y2="330" stroke="#333" marker-start="url(#arrow)" marker-end="url(#arrow)" />
-  <text x="260" y="350" font-family="Arial" font-size="18" fill="#333">40 m</text>
+  <line x1="220" y1="330" x2="340" y2="330" stroke="#e65100" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="260" y="350" font-family="Arial" font-size="18" fill="#e65100">40 m</text>
+
+
+<style> text, tspan { fill: #e65100 !important; } </style>
+
+
+
 
 </svg>

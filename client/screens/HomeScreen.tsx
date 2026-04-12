@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { StyleSheet, View, ScrollView, useWindowDimensions } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
@@ -8,12 +8,10 @@ import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
+type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
 
 function HomeScreen() {
-  const navigation = useNavigation<NavigationProp>();
-  const { width, height } = useWindowDimensions();
-  const isLandscape = width > height;
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
     <ScreenWrapper>
@@ -21,13 +19,7 @@ function HomeScreen() {
         style={styles.scrollView}
         contentContainerStyle={[
           styles.content,
-          {
-            paddingTop: isLandscape ? Spacing.md : 0,
-            paddingBottom: isLandscape ? 100 : 100,
-            marginTop: isLandscape ? 0 : -20,
-            justifyContent: isLandscape ? "flex-start" : "center",
-            flexGrow: isLandscape ? 0 : 1,
-          }
+          styles.centeredContent,
         ]}
         showsVerticalScrollIndicator={false}
       >
@@ -36,7 +28,8 @@ function HomeScreen() {
             <ColorButton
               testID="button-math"
               title="MATHEMATICS"
-              color="#2962FF"
+              icon="📘"
+              colors={JiguuColors.gradients.pink}
               onPress={() => navigation.navigate("ChapterList", { subject: "Mathematics" })}
             />
           </View>
@@ -45,52 +38,38 @@ function HomeScreen() {
             <ColorButton
               testID="button-science"
               title="SCIENCE"
-              color="#00C853"
+              icon="🔬"
+              colors={JiguuColors.gradients.purple}
               onPress={() => navigation.navigate("ScienceTopics")}
             />
           </View>
 
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-social-science"
-              title="SOCIAL SCIENCE"
-              color="#FFAB00"
-              onPress={() => navigation.navigate("SocialScienceTopics")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-english"
-              title="ENGLISH"
-              color="#AA00FF"
-              onPress={() => navigation.navigate("EnglishTopics")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-quick-notes"
-              title="QUICK NOTES"
-              color={JiguuColors.accent2}
-              onPress={() => navigation.navigate("QuickNotes")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
               testID="button-quiz"
-              title="PRACTICE QUIZ"
-              color={JiguuColors.accent3}
+              title="START QUIZ"
+              icon="🎯"
+              colors={JiguuColors.gradients.brightBlue}
               onPress={() => navigation.navigate("Quiz")}
             />
           </View>
 
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-about-educator"
-              title="ABOUT THE EDUCATOR"
-              color={JiguuColors.accent1}
+              testID="button-notes"
+              title="NOTES"
+              icon="📝"
+              colors={JiguuColors.gradients.green}
+              onPress={() => navigation.navigate("QuickNotes")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-about"
+              title="ABOUT"
+              icon="👤"
+              colors={JiguuColors.gradients.deepOrange}
               onPress={() => navigation.navigate("AboutEducator")}
             />
           </View>
@@ -107,10 +86,15 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   content: {
-    paddingHorizontal: Spacing["2xl"],
+    paddingHorizontal: Spacing.xl,
+    paddingVertical: Spacing.xl, // Perfectly symmetric for true centering
+    flexGrow: 1,
+  },
+  centeredContent: {
+    justifyContent: "center",
   },
   buttonsContainer: {
-    gap: Spacing.md,
+    gap: Spacing.xl,
   },
   buttonWrapper: {
     width: "100%",

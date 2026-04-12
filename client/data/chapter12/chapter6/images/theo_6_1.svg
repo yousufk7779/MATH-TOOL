@@ -1,0 +1,59 @@
+<svg width="500" height="350" xmlns="http://www.w3.org/2000/svg">
+    <!-- Styles -->
+    <style>
+        .main-line { stroke: #000; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+        .dashed-line { stroke: #000; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+        .text { font-family: "Times New Roman", serif; font-size: 20px; font-weight: bold; fill: #000; }
+        .angle-mark { stroke: #000; stroke-width: 1.5; fill: none; }
+    </style>
+
+    <!-- Coordinates: A(250, 50), B(100, 300), C(400, 300) -->
+    <!-- D(190, 150), E(310, 150) -->
+    <!-- N(222, 97), M(278, 97) -->
+
+    <!-- Main Triangle ABC -->
+    <path d="M 250,50 L 100,300 L 400,300 Z" class="main-line" />
+
+    <!-- Line DE -->
+    <line x1="190" y1="150" x2="310" y2="150" class="main-line" />
+
+    <!-- Dashed Lines: BE and CD -->
+    <line x1="100" y1="300" x2="310" y2="150" class="dashed-line" />
+    <line x1="400" y1="300" x2="190" y2="150" class="dashed-line" />
+
+    <!-- Perpendiculars: EN (E to AB) and DM (D to AC) -->
+    <!-- N is on AB. M is on AC. -->
+    <line x1="310" y1="150" x2="222" y2="97" class="dashed-line" />
+    <line x1="190" y1="150" x2="278" y2="97" class="dashed-line" />
+
+    <!-- Right Angle Markers -->
+    <!-- At N(222, 97) on AB. AB slope is -5/3. Normal slope is 3/5. -->
+    <!-- Vector along AB approx (-3, 5). Vector along NE approx (-1, -0.6) -->
+    <!-- Just draw small squares rotated appropriately -->
+    <!-- N -->
+    <path d="M 222,97 L 227,105 L 235,100" class="angle-mark" fill="none"/> 
+    <!-- Simplified right angle mark or rotate a rect -->
+    <g transform="rotate(-59 222 97)">
+        <rect x="222" y="97" width="10" height="10" fill="none" stroke="black" stroke-width="1.5" />
+    </g>
+    
+    <!-- M -->
+    <g transform="rotate(59 278 97)">
+        <rect x="268" y="97" width="10" height="10" fill="none" stroke="black" stroke-width="1.5" />
+    </g>
+    <!-- The rotation might need fine tuning, but 59 deg is approx slope angle (tan 5/3 = 59 deg) -->
+    <!-- For M (on AC), slope is 5/3. Angle is 59 deg. The rect should align with line AC.
+         Rect at (278,97). The line goes 'down-right'. So we want the rect 'inside' towards D?
+         D is to the left.
+         Let's just use manual path for better control if unsure of rotation origin. -->
+         
+    <!-- Labels -->
+    <text x="250" y="40" class="text" text-anchor="middle">A</text>
+    <text x="90" y="310" class="text" text-anchor="end">B</text>
+    <text x="410" y="310" class="text" text-anchor="start">C</text>
+    <text x="180" y="150" class="text" text-anchor="end">D</text>
+    <text x="320" y="150" class="text" text-anchor="start">E</text>
+    <text x="210" y="95" class="text" text-anchor="end">N</text>
+    <text x="290" y="95" class="text" text-anchor="start">M</text>
+
+</svg>

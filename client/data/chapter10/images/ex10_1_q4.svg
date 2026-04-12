@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" style="background-color:white; border:1px solid #ddd;">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="black" />
+    </marker>
+  </defs>
+  <!-- Circle -->
+  <circle cx="200" cy="150" r="70" stroke="black" stroke-width="2" fill="none"/>
+  <circle cx="200" cy="150" r="3" fill="black"/> <text x="210" y="145" font-size="14">O</text>
+
+  <!-- Given Line (Outside) -->
+  <line x1="50" y1="260" x2="350" y2="260" stroke="black" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="60" y="250" font-family="Arial" font-size="14">Given Line</text>
+  
+  <!-- Tangent (Parallel) -->
+  <line x1="50" y1="220" x2="350" y2="220" stroke="red" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="60" y="210" font-family="Arial" font-size="14" fill="red">Tangent</text>
+  <circle cx="200" cy="220" r="3" fill="black"/> <!-- Contact -->
+  
+  <!-- Secant (Parallel) -->
+  <line x1="50" y1="180" x2="350" y2="180" stroke="blue" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <text x="60" y="170" font-family="Arial" font-size="14" fill="blue">Secant</text>
+  
+  <!-- Parallel markers -->
+  <path d="M190,260 L200,250 M195,260 L205,250" stroke="black" stroke-width="1"/>
+  <path d="M190,220 L200,210 M195,220 L205,210" stroke="black" stroke-width="1"/>
+  <path d="M190,180 L200,170 M195,180 L205,170" stroke="black" stroke-width="1"/>
+</svg>

@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "em-1",
+    "question": "What is the HCF of two co-prime numbers?",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) 2",
+      "(D) Depends on the numbers"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-2",
+    "question": "A quadratic polynomial has at most how many zeros?",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 3",
+      "(D) Infinite"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-3",
+    "question": "If the sum of zeros of ax\u00b2 + bx + c is 0, then b is:",
+    "options": [
+      "(A) 1",
+      "(B) -1",
+      "(C) 0",
+      "(D) a"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-4",
+    "question": "The pair of equations x = 0 and x = 5 has how many solutions?",
+    "options": [
+      "(A) One",
+      "(B) Two",
+      "(C) Infinite",
+      "(D) No solution"
+    ],
+    "correctAnswer": "D",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-5",
+    "question": "The value of sin 30\u00b0 is:",
+    "options": [
+      "(A) 1",
+      "(B) 0",
+      "(C) 1/2",
+      "(D) \u221a3/2"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-6",
+    "question": "The value of cos 0\u00b0 is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) 1/2",
+      "(D) Not defined"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-7",
+    "question": "The probability of a sure event is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) 0.5",
+      "(D) More than 1"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-8",
+    "question": "The probability of an impossible event is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) 0.5",
+      "(D) Less than 0"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-9",
+    "question": "In an Arithmetic Progression, a = 5, d = 2. What is the 3rd term?",
+    "options": [
+      "(A) 7",
+      "(B) 9",
+      "(C) 5",
+      "(D) 11"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-10",
+    "question": "The distance of point (3, 4) from the origin is:",
+    "options": [
+      "(A) 3",
+      "(B) 4",
+      "(C) 5",
+      "(D) 7"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-11",
+    "question": "Tan 45\u00b0 is equal to:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) \u221a3",
+      "(D) 1/\u221a3"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-12",
+    "question": "Which of the following is a prime number?",
+    "options": [
+      "(A) 1",
+      "(B) 4",
+      "(C) 2",
+      "(D) 6"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-13",
+    "question": "The total surface area of a cube with side 'a' is:",
+    "options": [
+      "(A) 4a\u00b2",
+      "(B) 6a\u00b2",
+      "(C) a\u00b3",
+      "(D) 12a"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-14",
+    "question": "The volume of a sphere with radius 'r' is:",
+    "options": [
+      "(A) 4\u03c0r\u00b2",
+      "(B) 2/3 \u03c0r\u00b3",
+      "(C) 4/3 \u03c0r\u00b3",
+      "(D) \u03c0r\u00b2h"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-15",
+    "question": "What is the mode of data: 1, 2, 2, 3, 4?",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 3",
+      "(D) 4"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-16",
+    "question": "A line intersecting a circle in two points is called a:",
+    "options": [
+      "(A) Tangent",
+      "(B) Secant",
+      "(C) Radius",
+      "(D) Diameter"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-17",
+    "question": "How many tangents can a circle have at most?",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) Infinite",
+      "(D) 0"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-18",
+    "question": "If P(E) = 0.05, what is the probability of 'not E'?",
+    "options": [
+      "(A) 0.95",
+      "(B) 0.05",
+      "(C) 1.05",
+      "(D) 0"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-19",
+    "question": "The coordinates of the origin are:",
+    "options": [
+      "(A) (1, 1)",
+      "(B) (0, 1)",
+      "(C) (0, 0)",
+      "(D) (1, 0)"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-20",
+    "question": "Area of a circle with radius 'r' is:",
+    "options": [
+      "(A) 2\u03c0r",
+      "(B) \u03c0r\u00b2",
+      "(C) 4\u03c0r\u00b2",
+      "(D) \u03c0d"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-21",
+    "question": "An equation of the form ax + by + c = 0 represents a:",
+    "options": [
+      "(A) Circle",
+      "(B) Straight line",
+      "(C) Parabola",
+      "(D) Point"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-22",
+    "question": "If the discriminant of a quadratic equation is D > 0, the roots are:",
+    "options": [
+      "(A) Real and equal",
+      "(B) Real and distinct",
+      "(C) No real roots",
+      "(D) Imaginary"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-23",
+    "question": "The 10th term of the AP: 2, 7, 12, ... is:",
+    "options": [
+      "(A) 45",
+      "(B) 47",
+      "(C) 50",
+      "(D) 52"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-24",
+    "question": "Sum of first n natural numbers is:",
+    "options": [
+      "(A) n(n+1)/2",
+      "(B) n\u00b2/2",
+      "(C) n(n-1)/2",
+      "(D) 2n"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-25",
+    "question": "The value of sin\u00b2\u03b8 + cos\u00b2\u03b8 is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) -1",
+      "(D) sin \u03b8"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-26",
+    "question": "Which is the smallest natural number?",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) -1",
+      "(D) None"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-27",
+    "question": "A triangle with all three sides equal is called:",
+    "options": [
+      "(A) Scalene",
+      "(B) Isosceles",
+      "(C) Equilateral",
+      "(D) Right-angled"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-28",
+    "question": "The sum of angles in a triangle is:",
+    "options": [
+      "(A) 90\u00b0",
+      "(B) 180\u00b0",
+      "(C) 270\u00b0",
+      "(D) 360\u00b0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-29",
+    "question": "A circle can have how many parallel tangents at most?",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) Infinite",
+      "(D) 0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-30",
+    "question": "The point of intersection of the coordinate axes is called:",
+    "options": [
+      "(A) Abscissa",
+      "(B) Ordinate",
+      "(C) Origin",
+      "(D) Quadrant"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-31",
+    "question": "The ratio of circumference to diameter of any circle is:",
+    "options": [
+      "(A) \u03c0",
+      "(B) 2\u03c0",
+      "(C) 1/\u03c0",
+      "(D) 4"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-32",
+    "question": "If radius is doubled, the area of circle becomes:",
+    "options": [
+      "(A) Double",
+      "(B) Triple",
+      "(C) 4 times",
+      "(D) Same"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-33",
+    "question": "The empirical relation between Mean, Median, Mode is:",
+    "options": [
+      "(A) Mode = 3 Median - 2 Mean",
+      "(B) Median = 3 Mode - 2 Mean",
+      "(C) Mean = 3 Median - 2 Mode",
+      "(D) None"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-34",
+    "question": "What is the HCF of 12 and 18?",
+    "options": [
+      "(A) 2",
+      "(B) 3",
+      "(C) 6",
+      "(D) 12"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-35",
+    "question": "Which of the following is an irrational number?",
+    "options": [
+      "(A) \u221a4",
+      "(B) \u221a9",
+      "(C) \u221a5",
+      "(D) \u221a16"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-36",
+    "question": "The product of a rational and irrational number is always:",
+    "options": [
+      "(A) Rational",
+      "(B) Irrational",
+      "(C) Zero",
+      "(D) One"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-37",
+    "question": "In a right triangle, sin \u03b8 is:",
+    "options": [
+      "(A) Base/Hypotenuse",
+      "(B) Perp/Hypotenuse",
+      "(C) Perp/Base",
+      "(D) Base/Perp"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-38",
+    "question": "The value of sec\u00b2\u03b8 - tan\u00b2\u03b8 is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) -1",
+      "(D) sin \u03b8"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-39",
+    "question": "What is the sum of first 5 odd numbers?",
+    "options": [
+      "(A) 15",
+      "(B) 20",
+      "(C) 25",
+      "(D) 30"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-40",
+    "question": "If sin A = cos A, what is the value of A?",
+    "options": [
+      "(A) 30\u00b0",
+      "(B) 45\u00b0",
+      "(C) 60\u00b0",
+      "(D) 90\u00b0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-41",
+    "question": "Which number is neither prime nor composite?",
+    "options": [
+      "(A) 2",
+      "(B) 1",
+      "(C) 3",
+      "(D) 0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-42",
+    "question": "The decimal expansion of 1/3 is:",
+    "options": [
+      "(A) Terminating",
+      "(B) Non-terminating repeating",
+      "(C) Non-terminating non-repeating",
+      "(D) None"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-43",
+    "question": "Perimeter of a square with side 's' is:",
+    "options": [
+      "(A) s\u00b2",
+      "(B) 2s",
+      "(C) 4s",
+      "(D) s/4"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-44",
+    "question": "Area of a rectangle is:",
+    "options": [
+      "(A) Side \u00d7 Side",
+      "(B) 2(Length + Breadth)",
+      "(C) Length \u00d7 Breadth",
+      "(D) 1/2 base \u00d7 height"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-45",
+    "question": "Highest power of variable in a polynomial is called:",
+    "options": [
+      "(A) Root",
+      "(B) Zero",
+      "(C) Degree",
+      "(D) Factor"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-46",
+    "question": "A cubic polynomial has degree:",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 3",
+      "(D) 4"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-47",
+    "question": "Which axis is called abscissa?",
+    "options": [
+      "(A) X-axis",
+      "(B) Y-axis",
+      "(C) Z-axis",
+      "(D) None"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-48",
+    "question": "What is the common difference of AP: 5, 8, 11, ...?",
+    "options": [
+      "(A) 2",
+      "(B) 3",
+      "(C) 4",
+      "(D) 5"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-49",
+    "question": "Sin (90 - \u03b8) is equal to:",
+    "options": [
+      "(A) cos \u03b8",
+      "(B) sin \u03b8",
+      "(C) tan \u03b8",
+      "(D) sec \u03b8"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-50",
+    "question": "Sum of two even numbers is always:",
+    "options": [
+      "(A) Odd",
+      "(B) Even",
+      "(C) Prime",
+      "(D) Zero"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-51",
+    "question": "What is 20% of 100?",
+    "options": [
+      "(A) 10",
+      "(B) 20",
+      "(C) 50",
+      "(D) 5"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-52",
+    "question": "A coin is tossed. Probability of getting a Head is:",
+    "options": [
+      "(A) 1",
+      "(B) 0",
+      "(C) 1/2",
+      "(D) 1/4"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-53",
+    "question": "A dice is thrown. Probability of getting 7 is:",
+    "options": [
+      "(A) 1/6",
+      "(B) 1",
+      "(C) 0",
+      "(D) 1/2"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-54",
+    "question": "Volume of a cylinder is:",
+    "options": [
+      "(A) \u03c0r\u00b2h",
+      "(B) 1/3 \u03c0r\u00b2h",
+      "(C) 2\u03c0rh",
+      "(D) 4/3 \u03c0r\u00b3"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-55",
+    "question": "Number of faces in a cube is:",
+    "options": [
+      "(A) 4",
+      "(B) 6",
+      "(C) 8",
+      "(D) 12"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-56",
+    "question": "Mid-point of line segment joining (0,0) and (2,2) is:",
+    "options": [
+      "(A) (0,0)",
+      "(B) (1,1)",
+      "(C) (2,2)",
+      "(D) (1,0)"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-57",
+    "question": "The constant term in 2x\u00b2 + 5x + 7 is:",
+    "options": [
+      "(A) 2",
+      "(B) 5",
+      "(C) 7",
+      "(D) x"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-58",
+    "question": "If n=1, the 1st term of AP with an = 3n + 2 is:",
+    "options": [
+      "(A) 3",
+      "(B) 2",
+      "(C) 5",
+      "(D) 1"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-59",
+    "question": "An angle greater than 90\u00b0 and less than 180\u00b0 is:",
+    "options": [
+      "(A) Acute",
+      "(B) Obtuse",
+      "(C) Right",
+      "(D) Reflex"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-60",
+    "question": "Formula for the area of a triangle:",
+    "options": [
+      "(A) Base \u00d7 Height",
+      "(B) 1/2 \u00d7 Base \u00d7 Height",
+      "(C) Side\u00b2",
+      "(D) \u03c0r\u00b2"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-61",
+    "question": "Root of the equation x - 5 = 0 is:",
+    "options": [
+      "(A) 5",
+      "(B) -5",
+      "(C) 0",
+      "(D) 1"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-62",
+    "question": "Is 7 a prime number?",
+    "options": [
+      "(A) Yes",
+      "(B) No",
+      "(C) Maybe",
+      "(D) Not a number"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-63",
+    "question": "What is 10\u00b2?",
+    "options": [
+      "(A) 20",
+      "(B) 50",
+      "(C) 100",
+      "(D) 200"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-64",
+    "question": "Square root of 81 is:",
+    "options": [
+      "(A) 7",
+      "(B) 8",
+      "(C) 9",
+      "(D) 10"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-65",
+    "question": "Number of real roots of x\u00b2 + 1 = 0 is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) 2",
+      "(D) Infinite"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-66",
+    "question": "If x + y = 10 and x - y = 2, then x is:",
+    "options": [
+      "(A) 4",
+      "(B) 5",
+      "(C) 6",
+      "(D) 8"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-67",
+    "question": "Which of these is a composite number?",
+    "options": [
+      "(A) 2",
+      "(B) 3",
+      "(C) 4",
+      "(D) 5"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-68",
+    "question": "What is the next term in AP: 10, 20, 30...?",
+    "options": [
+      "(A) 35",
+      "(B) 40",
+      "(C) 50",
+      "(D) 45"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-69",
+    "question": "Value of cos 90\u00b0 is:",
+    "options": [
+      "(A) 1",
+      "(B) 0",
+      "(C) 1/2",
+      "(D) Undefined"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-70",
+    "question": "Value of tan 0\u00b0 is:",
+    "options": [
+      "(A) 0",
+      "(B) 1",
+      "(C) Infinite",
+      "(D) 1/2"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-71",
+    "question": "Surface area of a sphere with radius 'r':",
+    "options": [
+      "(A) 2\u03c0r\u00b2",
+      "(B) 3\u03c0r\u00b2",
+      "(C) 4\u03c0r\u00b2",
+      "(D) \u03c0r\u00b2"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-72",
+    "question": "LCM of 5 and 7 is:",
+    "options": [
+      "(A) 5",
+      "(B) 7",
+      "(C) 35",
+      "(D) 1"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-73",
+    "question": "If circumference is 44cm, diameter is (take \u03c0=22/7):",
+    "options": [
+      "(A) 7cm",
+      "(B) 14cm",
+      "(C) 21cm",
+      "(D) 22cm"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-74",
+    "question": "Total surface area of a cylinder is:",
+    "options": [
+      "(A) 2\u03c0rh",
+      "(B) \u03c0r\u00b2h",
+      "(C) 2\u03c0r(r+h)",
+      "(D) \u03c0r(r+l)"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-75",
+    "question": "Which quadrant has both coordinates negative?",
+    "options": [
+      "(A) 1st",
+      "(B) 2nd",
+      "(C) 3rd",
+      "(D) 4th"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-76",
+    "question": "Ordinate of a point (x, y) is:",
+    "options": [
+      "(A) x",
+      "(B) y",
+      "(C) x+y",
+      "(D) 0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-77",
+    "question": "Average of 10, 20, 30 is:",
+    "options": [
+      "(A) 10",
+      "(B) 20",
+      "(C) 30",
+      "(D) 15"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-78",
+    "question": "A card is drawn from deck of 52 cards. Probability of an Ace is:",
+    "options": [
+      "(A) 1/13",
+      "(B) 1/52",
+      "(C) 4/13",
+      "(D) 1/4"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-79",
+    "question": "Is 0 a rational number?",
+    "options": [
+      "(A) Yes",
+      "(B) No",
+      "(C) Cant say",
+      "(D) Only if divided by 1"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-80",
+    "question": "In ax\u00b2 + bx + c = 0, if D = 0, the roots are:",
+    "options": [
+      "(A) Equal",
+      "(B) Unequal",
+      "(C) Imaginary",
+      "(D) None"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-81",
+    "question": "1/2 + 1/2 is equal to:",
+    "options": [
+      "(A) 1/4",
+      "(B) 1",
+      "(C) 1/2",
+      "(D) 2"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-82",
+    "question": "A polygon with 5 sides is called:",
+    "options": [
+      "(A) Hexagon",
+      "(B) Pentagon",
+      "(C) Square",
+      "(D) Triangle"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-83",
+    "question": "Angle of a semicircle is:",
+    "options": [
+      "(A) 45\u00b0",
+      "(B) 90\u00b0",
+      "(C) 180\u00b0",
+      "(D) 360\u00b0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-84",
+    "question": "Range of probability is:",
+    "options": [
+      "(A) -1 to 1",
+      "(B) 0 to 1",
+      "(C) 1 to 100",
+      "(D) 0 to 100"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-85",
+    "question": "Formula: (a+b)\u00b2 = ",
+    "options": [
+      "(A) a\u00b2+b\u00b2",
+      "(B) a\u00b2+2ab+b\u00b2",
+      "(C) a\u00b2-b\u00b2",
+      "(D) a-b"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-86",
+    "question": "What is 7 * 8?",
+    "options": [
+      "(A) 49",
+      "(B) 56",
+      "(C) 64",
+      "(D) 54"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-87",
+    "question": "Sum of first 10 whole numbers is:",
+    "options": [
+      "(A) 45",
+      "(B) 55",
+      "(C) 50",
+      "(D) 100"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-88",
+    "question": "Diameter is equal to:",
+    "options": [
+      "(A) R\u00b2",
+      "(B) 2R",
+      "(C) R/2",
+      "(D) \u03c0R"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-89",
+    "question": "Curved surface area of a cone is:",
+    "options": [
+      "(A) \u03c0rl",
+      "(B) \u03c0r\u00b2",
+      "(C) 2\u03c0rl",
+      "(D) 1/3 \u03c0rl"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-90",
+    "question": "Smallest odd prime number is:",
+    "options": [
+      "(A) 1",
+      "(B) 3",
+      "(C) 5",
+      "(D) 7"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-91",
+    "question": "Value of sin\u00b230 + cos\u00b230 is:",
+    "options": [
+      "(A) 1/2",
+      "(B) 1",
+      "(C) 1/4",
+      "(D) 0"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-92",
+    "question": "Which number is even and prime?",
+    "options": [
+      "(A) 2",
+      "(B) 4",
+      "(C) 6",
+      "(D) 0"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-93",
+    "question": "Two circles are congruent if they have same:",
+    "options": [
+      "(A) Center",
+      "(B) Radius",
+      "(C) Color",
+      "(D) Chord"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-94",
+    "question": "Number of quadrants in a coordinate plane is:",
+    "options": [
+      "(A) 1",
+      "(B) 2",
+      "(C) 3",
+      "(D) 4"
+    ],
+    "correctAnswer": "D",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-95",
+    "question": "Is 3.14 a rational number?",
+    "options": [
+      "(A) Yes",
+      "(B) No",
+      "(C) Cant say",
+      "(D) Only if it is Pi"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-96",
+    "question": "A die has how many faces?",
+    "options": [
+      "(A) 4",
+      "(B) 6",
+      "(C) 8",
+      "(D) 5"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-97",
+    "question": "Probability of getting an even number in a die throw:",
+    "options": [
+      "(A) 1/2",
+      "(B) 1/3",
+      "(C) 1/6",
+      "(D) 1"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-98",
+    "question": "Product of roots of x\u00b2 - 5x + 6 = 0:",
+    "options": [
+      "(A) 5",
+      "(B) -5",
+      "(C) 6",
+      "(D) 1"
+    ],
+    "correctAnswer": "C",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-99",
+    "question": "Sum of roots of x\u00b2 - 5x + 6 = 0:",
+    "options": [
+      "(A) 5",
+      "(B) -5",
+      "(C) 6",
+      "(D) 1"
+    ],
+    "correctAnswer": "A",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  },
+  {
+    "id": "em-100",
+    "question": "What is the degree of a constant polynomial?",
+    "options": [
+      "(A) 1",
+      "(B) 0",
+      "(C) Not defined",
+      "(D) Infinite"
+    ],
+    "correctAnswer": "B",
+    "chapterId": "easy",
+    "chapterTitle": "Maths Basics"
+  }
+]

@@ -35,45 +35,51 @@
 
   <!-- Circle -->
   <!-- Color: Blue #1976D2 -->
-  <circle cx="200" cy="180" r="80" fill="none" stroke="#1976D2" stroke-width="2.5" />
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#1976D2" stroke-width="2.5"/>
   
   <!-- Radii OA and OB -->
   <!-- Color: Red #D32F2F -->
-  <line x1="200" y1="180" x2="207" y2="100" stroke="#D32F2F" stroke-width="2.5" />
-  <line x1="200" y1="180" x2="120" y2="187" stroke="#D32F2F" stroke-width="2.5" />
+  <line x1="200" y1="180" x2="207" y2="100" stroke="#D32F2F" stroke-width="2.5"/>
+  <line x1="200" y1="180" x2="120" y2="187" stroke="#D32F2F" stroke-width="2.5"/>
 
   <!-- Tangents PA and PB -->
   <!-- Color: Green #388E3C -->
-  <line x1="112" y1="92" x2="207" y2="100" stroke="#388E3C" stroke-width="2.5" />
-  <line x1="112" y1="92" x2="120" y2="187" stroke="#388E3C" stroke-width="2.5" />
+  <line x1="112" y1="92" x2="207" y2="100" stroke="#388E3C" stroke-width="2.5"/>
+  <line x1="112" y1="92" x2="120" y2="187" stroke="#388E3C" stroke-width="2.5"/>
 
   <!-- Line PO (Dashed) -->
   <!-- Color: Grey #555 -->
-  <line x1="112" y1="92" x2="200" y2="180" stroke="#555" stroke-width="2" class="dashed" />
+  <line x1="112" y1="92" x2="200" y2="180" stroke="#388e3c" stroke-width="2" class="dashed"/>
 
   <!-- Right Angle Symbols -->
   <!-- At A: vector P->A and O->A are perp. -->
   <!-- Just approximate small square rotated appropriately. -->
   <!-- Vector OA is at 275 deg. Perpendicular is 185 deg (towards P). -->
-  <path d="M 207 100 L 202 108 L 195 106" stroke="black" fill="none" stroke-width="1.5" />
+  <path d="M 207 100 L 202 108 L 195 106" stroke="#388e3c" fill="none" stroke-width="1.5"/>
   
   <!-- At B: vector OB is at 175 deg. Perp is 85 deg (towards P). -->
-  <path d="M 120 187 L 122 178 L 112 178" stroke="black" fill="none" stroke-width="1.5" />
+  <path d="M 120 187 L 122 178 L 112 178" stroke="#388e3c" fill="none" stroke-width="1.5"/>
 
   <!-- Angle Arc at P (80 deg) -->
-  <path d="M 134 94 Q 140 110 120 125" stroke="black" fill="none" stroke-dasharray="2,2" stroke-width="1.5" />
-  <text x="140" y="105" class="dim">80°</text>
+  <path d="M 134 94 Q 140 110 120 125" stroke="#388e3c" fill="none" stroke-dasharray="2,2" stroke-width="1.5"/>
+  <text x="140" y="105" class="dim" fill="#388e3c">80°</text>
 
   <!-- Labels -->
-  <text x="100" y="85" class="label">P</text>
-  <text x="215" y="95" class="label">A</text>
-  <text x="95" y="200" class="label">B</text>
-  <text x="210" y="200" class="label">O</text>
+  <text x="100" y="85" class="label" fill="#388e3c">P</text>
+  <text x="215" y="95" class="label" fill="#388e3c">A</text>
+  <text x="95" y="200" class="label" fill="#388e3c">B</text>
+  <text x="210" y="200" class="label" fill="#388e3c">O</text>
 
   <!-- Points -->
-  <circle cx="200" cy="180" r="3" fill="black" />
-  <circle cx="112" cy="92" r="3" fill="black" />
-  <circle cx="207" cy="100" r="3" fill="black" />
-  <circle cx="120" cy="187" r="3" fill="black" />
+  <circle cx="200" cy="180" r="3" fill="#388e3c"/>
+  <circle cx="112" cy="92" r="3" fill="#388e3c"/>
+  <circle cx="207" cy="100" r="3" fill="#388e3c"/>
+  <circle cx="120" cy="187" r="3" fill="#388e3c"/>
+
+
+<style> text, tspan { fill: #388e3c !important; } </style>
+
+
+
 
 </svg>

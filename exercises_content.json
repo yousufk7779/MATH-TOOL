@@ -1,0 +1,425 @@
+[
+    {
+        "id": "sp3-it-1",
+        "name": "In-Text-1",
+        "questions": [
+            {
+                "id": "sp3-it-1-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">Name a device that helps to maintain a potential difference across a conductor.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Battery consisting of one or more electric cells is one of the devices that help to maintain a potential difference across a conductor.</div>"
+                ],
+                "answer": "Battery consisting of one or more electric cells is one of the devices that help to maintain a potential difference across a conductor."
+            },
+            {
+                "id": "sp3-it-1-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">What is meant by saying that the potential difference between two points is 1 V?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: When 1 J of work is done to move a charge of 1 C from one point to another, it is said that the potential difference between two points is 1 V.</div>"
+                ],
+                "answer": "When 1 J of work is done to move a charge of 1 C from one point to another, it is said that the potential difference between two points is 1 V."
+            },
+            {
+                "id": "sp3-it-1-3",
+                "number": "3",
+                "question": "<div style=\"text-align: justify;\">How much energy is given to each coulomb of charge passing through a 6 V battery?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: We know that the potential difference between two points is given by the equation, V = W/Q, where,</div>",
+                    "<div style=\"text-align: justify;\">W is the work done in moving the charge from one point to another</div>",
+                    "<div style=\"text-align: justify;\">Q is the charge</div>",
+                    "<div style=\"text-align: justify;\">From the above equation, we can find the energy given to each coulomb as follows: W = V &times; Q</div>",
+                    "<div style=\"text-align: justify;\">Substituting the values in the equation, we get W = 6V &times; 1C = 6 J</div>",
+                    "<div style=\"text-align: justify;\">Hence, 6 J of energy is given to each coulomb of charge passing through a 6 V of battery.</div>"
+                ],
+                "answer": "We know that the potential difference between two points is given by the equation, V = W/Q, where,"
+            }
+        ]
+    },
+    {
+        "id": "sp3-it-2",
+        "name": "In-Text-2",
+        "questions": [
+            {
+                "id": "sp3-it-2-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">On what factors does the resistance of a conductor depend?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The resistance of the conductor depends on the following factors:</div>",
+                    "<div style=\"text-align: justify;\">1. Temperature of the conductor</div>",
+                    "<div style=\"text-align: justify;\">2. Cross-sectional area of the conductor</div>",
+                    "<div style=\"text-align: justify;\">3. Length of the conductor</div>",
+                    "<div style=\"text-align: justify;\">4. Nature of the material of the conductor</div>"
+                ],
+                "answer": "The resistance of the conductor depends on the following factors:"
+            },
+            {
+                "id": "sp3-it-2-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">Will current flow more easily through a thick wire or a thin wire of the same material, when connected to the same source? Why?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Resistance is given by the equation, R = &rho; l/A where, &rho; is the resistivity of the material of the wire, l is the length of the wire and A is the area of the cross-section of the wire.</div>",
+                    "<div style=\"text-align: justify;\">From the equation, it is evident that the area of the cross-section of wire is inversely proportional to the resistance. Therefore, thinner the wire, more the resistance and vice versa. Hence, current flows more easily through a thick wire than a thin wire.</div>"
+                ],
+                "answer": "Resistance is given by the equation, R = &rho; l/A where, &rho; is the resistivity of the material of the wire, l is the length of the wire and A is the area of the cross-section of the wire."
+            },
+            {
+                "id": "sp3-it-2-3",
+                "number": "3",
+                "question": "<div style=\"text-align: justify;\">Let the resistance of an electrical component remain constant while the potential difference across the two ends of the component decreases to half of its former value. What change will occur in the current through it?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The change in the current flowing through the electrical component can be determined by Ohm\u2019s Law. According to Ohm\u2019s Law, the current is given by I = V/R.</div>",
+                    "<div style=\"text-align: justify;\">Now, the potential difference is reduced to half keeping the resistance constant. Let the new voltage be V\u2019 = V/2. Let the new resistance be R\u2019 = R and the new amount of current be I\u2019.</div>",
+                    "<div style=\"text-align: justify;\">The change in the current can be determined using Ohm\u2019s law as follows: I' = V'/R' = (V/2)/R = 1/2 (V/R) = I/2. Therefore, the current flowing the electrical component is reduced by half.</div>"
+                ],
+                "answer": "The change in the current flowing through the electrical component can be determined by Ohm\u2019s Law. According to Ohm\u2019s Law, the current is given by I = V/R."
+            },
+            {
+                "id": "sp3-it-2-4",
+                "number": "4",
+                "question": "<div style=\"text-align: justify;\">Why are coils of electric toasters and electric irons made of an alloy rather than a pure metal?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The melting point of an alloy is much higher than a pure metal because of its high resistivity. At high temperatures, alloys do not melt readily. Therefore, alloys are used in heating appliances such as electric toasters and electric irons.</div>"
+                ],
+                "answer": "The melting point of an alloy is much higher than a pure metal because of its high resistivity. At high temperatures, alloys do not melt readily. Therefore, alloys are used in heating appliances such as electric toasters and electric irons."
+            },
+            {
+                "id": "sp3-it-2-5",
+                "number": "5",
+                "question": "<div style=\"text-align: justify;\">Use the data in Table 12.2 and answer the following questions: (a) Which among iron and mercury is a better conductor? (b) Which material is the best conductor?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (a) Iron is a better conductor than mercury because the resistivity of mercury is more than the resistivity of iron (Resistivity of iron = 10.0 &times; 10&ndash;8 &Omega; m; Resistivity of mercury = 94.0 &times; 10&ndash;8 &Omega; m).</div>",
+                    "<div style=\"text-align: justify;\">(b) Among all the materials listed in the table, silver is the best conductor because the resistivity of silver is lowest among all, i.e., 1.60 &times; 10<sup>-8</sup> &Omega; m.</div>"
+                ],
+                "answer": "(a) Iron is a better conductor than mercury because the resistivity of mercury is more than the resistivity of iron (Resistivity of iron = 10.0 &times; 10&ndash;8 &Omega; m; Resistivity of mercury = 94.0 &times; 10&ndash;8 &Omega; m)."
+            }
+        ]
+    },
+    {
+        "id": "sp3-it-3",
+        "name": "In-Text-3",
+        "questions": [
+            {
+                "id": "sp3-it-3-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">Draw a schematic diagram of a circuit consisting of a battery of three cells of 2 V each, a 5 &Omega; resistor, an 8 &Omega; resistor, and a 12 &Omega; resistor, and a plug key, all connected in series.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: A battery of three cells of 2 V each equals to battery of potential 6 V. The circuit diagram below shows three resistors of resistance 12 &Omega;, 8 &Omega; and 5 &Omega; connected in series along with a battery of potential 6 V.</div>"
+                ],
+                "answer": "A battery of three cells of 2 V each equals to battery of potential 6 V. The circuit diagram below shows three resistors of resistance 12 &Omega;, 8 &Omega; and 5 &Omega; connected in series along with a battery of potential 6 V."
+            },
+            {
+                "id": "sp3-it-3-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">Redraw the circuit of Question 1, putting in an ammeter to measure the current through the resistors and a voltmeter to measure the potential difference across the 12 &Omega; resistor. What would be the readings in the ammeter and the voltmeter?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: An ammeter should always be connected in series with resistors while the voltmeter should be connected in parallel to the resistor to measure the potential difference.</div>",
+                    "<div style=\"text-align: justify;\">Using Ohm\u2019s Law, we can obtain the reading of the ammeter and the voltmeter. The total resistance of the circuit is 5 &Omega; + 8 &Omega; + 12 &Omega; = 25 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">We know that the potential difference of the circuit is 6 V, hence the current flowing through the circuit can be calculated as follows: I = V/R = 6/25 = 0.24 A.</div>",
+                    "<div style=\"text-align: justify;\">Let the potential difference across the 12 &Omega; resistor be V1. V1 can be calculated as follows: V1 = I &times; R_12 = 0.24A &times; 12 &Omega; = 2.88 V.</div>",
+                    "<div style=\"text-align: justify;\">Therefore, the ammeter reading will be 0.24 A and the voltmeter reading be 2.88 V.</div>"
+                ],
+                "answer": "An ammeter should always be connected in series with resistors while the voltmeter should be connected in parallel to the resistor to measure the potential difference."
+            }
+        ]
+    },
+    {
+        "id": "sp3-it-4",
+        "name": "In-Text-4",
+        "questions": [
+            {
+                "id": "sp3-it-4-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">Judge the equivalent resistance when the following are connected in parallel &ndash; (a) 1 &Omega; and 10<sup>6</sup> &Omega;, (b) 1 &Omega;, 10<sup>3</sup> &Omega;, and 10<sup>6</sup> &Omega;.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (a) When 1 &Omega; and 10<sup>6</sup> &Omega; are connected in parallel, the equivalent resistance R_eq is given by 1/R_eq = 1/1 + 1/10<sup>6</sup>. Since 1/10<sup>6</sup> is very small, 1/R_eq &ap; 1, so R_eq &ap; 1 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">(b) When 1 &Omega;, 10<sup>3</sup> &Omega;, and 10<sup>6</sup> &Omega; are connected in parallel, 1/R_eq = 1/1 + 1/10<sup>3</sup> + 1/10<sup>6</sup> = 1 + 0.001 + 0.000001 = 1.001001. Therefore, R_eq = 1/1.001001 = 0.999 &Omega;.</div>"
+                ],
+                "answer": "(a) When 1 &Omega; and 10<sup>6</sup> &Omega; are connected in parallel, the equivalent resistance R_eq is given by 1/R_eq = 1/1 + 1/10<sup>6</sup>. Since 1/10<sup>6</sup> is very small, 1/R_eq &ap; 1, so R_eq &ap; 1 &Omega;."
+            },
+            {
+                "id": "sp3-it-4-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">An electric lamp of 100 &Omega;, a toaster of resistance 50 &Omega;, and a water filter of resistance 500 &Omega; are connected in parallel to a 220 V source. What is the resistance of an electric iron connected to the same source that takes as much current as all three appliances, and what is the current through it?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The equivalent resistance R_eq of the resistors in parallel is 1/R_eq = 1/100 + 1/50 + 1/500 = (5+10+1)/500 = 16/500. So, R_eq = 500/16 = 31.25 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">The current through all three appliances is I = V/R_eq = 220 / 31.25 = 7.04 A.</div>",
+                    "<div style=\"text-align: justify;\">Since the electric iron takes as much current as all three, its resistance must be equal to their equivalent resistance, i.e., 31.25 &Omega;, and the current through it is 7.04 A.</div>"
+                ],
+                "answer": "The equivalent resistance R_eq of the resistors in parallel is 1/R_eq = 1/100 + 1/50 + 1/500 = (5+10+1)/500 = 16/500. So, R_eq = 500/16 = 31.25 &Omega;."
+            },
+            {
+                "id": "sp3-it-4-3",
+                "number": "3",
+                "question": "<div style=\"text-align: justify;\">What are the advantages of connecting electrical devices in parallel with the battery instead of connecting them in series?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: When the electrical devices are connected in parallel, there is no division of voltage among the appliances. The potential difference across the devices is equal to the supply voltage. If one component fails, the others continue to work. Parallel connection also reduces the effective resistance of the circuit.</div>"
+                ],
+                "answer": "When the electrical devices are connected in parallel, there is no division of voltage among the appliances. The potential difference across the devices is equal to the supply voltage. If one component fails, the others continue to work. Parallel connection also reduces the effective resistance of the circuit."
+            },
+            {
+                "id": "sp3-it-4-4",
+                "number": "4",
+                "question": "<div style=\"text-align: justify;\">How can three resistors of resistances 2 &Omega;, 3 &Omega;, and 6 &Omega; be connected to give a total resistance of (a) 4 &Omega;, (b) 1 &Omega;?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (a) To get 4 &Omega;, connect 3 &Omega; and 6 &Omega; resistors in parallel and this combination in series with 2 &Omega; resistor. Equivalent resistance of 3 &Omega; and 6 &Omega; in parallel is (3&times;6)/(3+6) = 18/9 = 2 &Omega;. Total resistance = 2 &Omega; + 2 &Omega; = 4 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">(b) To get 1 &Omega;, connect all three resistors in parallel. 1/R_eq = 1/2 + 1/3 + 1/6 = (3+2+1)/6 = 6/6 = 1 &Omega;. So, R_eq = 1 &Omega;.</div>"
+                ],
+                "answer": "(a) To get 4 &Omega;, connect 3 &Omega; and 6 &Omega; resistors in parallel and this combination in series with 2 &Omega; resistor. Equivalent resistance of 3 &Omega; and 6 &Omega; in parallel is (3&times;6)/(3+6) = 18/9 = 2 &Omega;. Total resistance = 2 &Omega; + 2 &Omega; = 4 &Omega;."
+            },
+            {
+                "id": "sp3-it-4-5",
+                "number": "5",
+                "question": "<div style=\"text-align: justify;\">What is (a) the highest, (b) the lowest total resistance that can be secured by combinations of four coils of resistance 4 &Omega;, 8 &Omega;, 12 &Omega;, 24 &Omega;?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (a) The highest resistance is obtained by connecting them in series: R = 4 + 8 + 12 + 24 = 48 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">(b) The lowest resistance is obtained by connecting them in parallel: 1/R = 1/4 + 1/8 + 1/12 + 1/24 = (6+3+2+1)/24 = 12/24 = 1/2. So, lowest resistance = 2 &Omega;.</div>"
+                ],
+                "answer": "(a) The highest resistance is obtained by connecting them in series: R = 4 + 8 + 12 + 24 = 48 &Omega;."
+            }
+        ]
+    },
+    {
+        "id": "sp3-it-5",
+        "name": "In-Text-5",
+        "questions": [
+            {
+                "id": "sp3-it-5-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">Why does the cord of an electric heater not glow while the heating element does?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The heating element of an electric heater is made of an alloy which has a high resistance. When current flows, it generates a large amount of heat and glows red. The cord is usually made of copper or aluminum which has very low resistance, so it does not heat up much and does not glow.</div>"
+                ],
+                "answer": "The heating element of an electric heater is made of an alloy which has a high resistance. When current flows, it generates a large amount of heat and glows red. The cord is usually made of copper or aluminum which has very low resistance, so it does not heat up much and does not glow."
+            },
+            {
+                "id": "sp3-it-5-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">Compute the heat generated while transferring 96000 coulomb of charge in one hour through a potential difference of 50 V.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The heat generated can be computed by the formula H = V &times; Q. Given Q = 96000 C and V = 50 V.</div>",
+                    "<div style=\"text-align: justify;\">H = 50 V &times; 96000 C = 4.8 &times; 10<sup>6</sup> J.</div>"
+                ],
+                "answer": "The heat generated can be computed by the formula H = V &times; Q. Given Q = 96000 C and V = 50 V."
+            },
+            {
+                "id": "sp3-it-5-3",
+                "number": "3",
+                "question": "<div style=\"text-align: justify;\">An electric iron of resistance 20 &Omega; takes a current of 5 A. Calculate the heat developed in 30 s.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Heat developed is given by Joule's law of heating: H = I<sup>2</sup> R t. Given I = 5 A, R = 20 &Omega;, and t = 30 s.</div>",
+                    "<div style=\"text-align: justify;\">H = (5)<sup>2</sup> &times; 20 &times; 30 = 25 &times; 600 = 15000 J = 1.5 &times; 10<sup>4</sup> J.</div>"
+                ],
+                "answer": "Heat developed is given by Joule's law of heating: H = I<sup>2</sup> R t. Given I = 5 A, R = 20 &Omega;, and t = 30 s."
+            }
+        ]
+    },
+    {
+        "id": "sp3-it-6",
+        "name": "In-Text-6",
+        "questions": [
+            {
+                "id": "sp3-it-6-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">What determines the rate at which energy is delivered by a current?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: The rate at which energy is delivered by a current is determined by the power of the appliance.</div>"
+                ],
+                "answer": "The rate at which energy is delivered by a current is determined by the power of the appliance."
+            },
+            {
+                "id": "sp3-it-6-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">An electric motor takes 5 A from a 220 V line. Determine the power of the motor and the energy consumed in 2 h.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Power P = V &times; I = 220 V &times; 5 A = 1100 W.</div>",
+                    "<div style=\"text-align: justify;\">Energy consumed E = P &times; t. Time t = 2 h = 2 &times; 3600 s = 7200 s.</div>",
+                    "<div style=\"text-align: justify;\">E = 1100 W &times; 7200 s = 7.92 &times; 10<sup>6</sup> J.</div>"
+                ],
+                "answer": "Power P = V &times; I = 220 V &times; 5 A = 1100 W."
+            }
+        ]
+    },
+    {
+        "id": "sp3-ex",
+        "name": "Exercise",
+        "questions": [
+            {
+                "id": "sp3-ex-1",
+                "number": "1",
+                "question": "<div style=\"text-align: justify;\">A piece of wire of resistance R is cut into five equal parts. These parts are then connected in parallel. If the equivalent resistance of this combination is R\u2032, then the ratio R/R\u2032 is \u2014 (a) 1/25 (b) 1/5 (c) 5 (d) 25</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (d) 25</div>",
+                    "<div style=\"text-align: justify;\">Explanation: The resistance of each part is R/5. When connected in parallel, 1/R' = 1/(R/5) + 1/(R/5) + 1/(R/5) + 1/(R/5) + 1/(R/5) = 5/R + 5/R + 5/R + 5/R + 5/R = 25/R. Therefore, R/R' = 25.</div>"
+                ],
+                "answer": "Answer: (d) 25"
+            },
+            {
+                "id": "sp3-ex-2",
+                "number": "2",
+                "question": "<div style=\"text-align: justify;\">Which of the following does not represent electrical power in a circuit? (a) I<sup>2</sup>R (b) IR<sup>2</sup> (c) VI (d) V<sup>2</sup>/R</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (b) IR<sup>2</sup></div>",
+                    "<div style=\"text-align: justify;\">Explanation: Power P = VI. From Ohm's law, V = IR, so P = I<sup>2</sup>R. Also I = V/R, so P = V<sup>2</sup>/R. Thus, IR<sup>2</sup> is incorrect.</div>"
+                ],
+                "answer": "Answer: (b) IR<sup>2</sup>"
+            },
+            {
+                "id": "sp3-ex-3",
+                "number": "3",
+                "question": "<div style=\"text-align: justify;\">An electric bulb is rated 220 V and 100 W. When it is operated on 110 V, the power consumed will be \u2014 (a) 100 W (b) 75 W (c) 50 W (d) 25 W</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (d) 25 W</div>",
+                    "<div style=\"text-align: justify;\">Explanation: Resistance R = V<sup>2</sup>/P = (220)<sup>2</sup>/100 = 484 &Omega;. Power at 110 V = V'<sup>2</sup>/R = (110)<sup>2</sup>/484 = 12100/484 = 25 W.</div>"
+                ],
+                "answer": "Answer: (d) 25 W"
+            },
+            {
+                "id": "sp3-ex-4",
+                "number": "4",
+                "question": "<div style=\"text-align: justify;\">Two conducting wires of the same material and of equal lengths and equal diameters are first connected in series and then parallel in a circuit across the same potential difference. The ratio of heat produced in series and parallel combinations would be \u2014 (a) 1:2 (b) 2:1 (c) 1:4 (d) 4:1</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (c) 1:4</div>",
+                    "<div style=\"text-align: justify;\">Explanation: Let resistance of each be r. In series, R_s = 2r, so H_s = V<sup>2</sup>/2r. In parallel, R_p = r/2, so H_p = V<sup>2</sup>/(r/2) = 2V<sup>2</sup>/r. Ratio H_s/H_p = (V<sup>2</sup>/2r) / (2V<sup>2</sup>/r) = 1/4.</div>"
+                ],
+                "answer": "Answer: (c) 1:4"
+            },
+            {
+                "id": "sp3-ex-5",
+                "number": "5",
+                "question": "<div style=\"text-align: justify;\">How is a voltmeter connected in the circuit to measure the potential difference between two points?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: To measure the potential difference between any two points, the voltmeter should be connected in parallel between those two points.</div>"
+                ],
+                "answer": "To measure the potential difference between any two points, the voltmeter should be connected in parallel between those two points."
+            },
+            {
+                "id": "sp3-ex-6",
+                "number": "6",
+                "question": "<div style=\"text-align: justify;\">A copper wire has diameter 0.5 mm and resistivity of 1.6 &times; 10&ndash;8 &Omega; m. What will be the length of this wire to make its resistance 10 &Omega;? How much does the resistance change if the diameter is doubled?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Area A = &pi; (d/2)<sup>2</sup> = &pi; (0.0005/2)<sup>2</sup> = 1.9635 &times; 10<sup>-7</sup> m<sup>2</sup>. Length l = RA/&rho; = 10 &times; 1.9635 &times; 10<sup>-7</sup> / 1.6 &times; 10<sup>-8</sup> = 122.72 m.</div>",
+                    "<div style=\"text-align: justify;\">If diameter is doubled, area becomes 4 times, so resistance becomes 1/4th. New resistance = 10/4 = 2.5 &Omega;. Change = 10 - 2.5 = 7.5 &Omega;.</div>"
+                ],
+                "answer": "Area A = &pi; (d/2)<sup>2</sup> = &pi; (0.0005/2)<sup>2</sup> = 1.9635 &times; 10<sup>-7</sup> m<sup>2</sup>. Length l = RA/&rho; = 10 &times; 1.9635 &times; 10<sup>-7</sup> / 1.6 &times; 10<sup>-8</sup> = 122.72 m."
+            },
+            {
+                "id": "sp3-ex-7",
+                "number": "7",
+                "question": "<div style=\"text-align: justify;\">The values of current I flowing in a given resistor for the corresponding values of potential difference V across the resistor are given below \u2014 I (Ampere): 0.5, 1.0, 2.0, 3.0, 4.0; V (Volts): 1.6, 3.4, 6.7, 10.2, 13.2. Plot a graph between V and I and calculate the resistance of that resistor.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Plotting the values on a graph with V on x-axis and I on y-axis gives a straight line. The resistance R = V/I. Taking an average or slope: e.g., R = 13.2 / 4.0 = 3.3 &Omega; or R = (10.2-6.7)/(3-2) = 3.5 &Omega;. The average resistance is approx 3.4 &Omega;.</div>"
+                ],
+                "answer": "Plotting the values on a graph with V on x-axis and I on y-axis gives a straight line. The resistance R = V/I. Taking an average or slope: e.g., R = 13.2 / 4.0 = 3.3 &Omega; or R = (10.2-6.7)/(3-2) = 3.5 &Omega;. The average resistance is approx 3.4 &Omega;."
+            },
+            {
+                "id": "sp3-ex-8",
+                "number": "8",
+                "question": "<div style=\"text-align: justify;\">When a 12 V battery is connected across an unknown resistor, there is a current of 2.5 mA in the circuit. Find the value of the resistance of the resistor.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: R = V/I = 12 V / (2.5 &times; 10<sup>-3</sup> A) = 4800 &Omega; = 4.8 k&Omega;.</div>"
+                ],
+                "answer": "R = V/I = 12 V / (2.5 &times; 10<sup>-3</sup> A) = 4800 &Omega; = 4.8 k&Omega;."
+            },
+            {
+                "id": "sp3-ex-9",
+                "number": "9",
+                "question": "<div style=\"text-align: justify;\">A battery of 9 V is connected in series with resistors of 0.2 &Omega;, 0.3 &Omega;, 0.4 &Omega;, 0.5 &Omega; and 12 &Omega;, respectively. How much current would flow through the 12 &Omega; resistor?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Total resistance R = 0.2 + 0.3 + 0.4 + 0.5 + 12 = 13.4 &Omega;. In series, current is same everywhere. I = V/R = 9 / 13.4 = 0.67 A. Current through 12 &Omega; resistor is 0.67 A.</div>"
+                ],
+                "answer": "Total resistance R = 0.2 + 0.3 + 0.4 + 0.5 + 12 = 13.4 &Omega;. In series, current is same everywhere. I = V/R = 9 / 13.4 = 0.67 A. Current through 12 &Omega; resistor is 0.67 A."
+            },
+            {
+                "id": "sp3-ex-10",
+                "number": "10",
+                "question": "<div style=\"text-align: justify;\">How many 176 &Omega; resistors (in parallel) are required to carry 5 A on a 220 V line?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: For 5 A at 220 V, effective resistance R_eq = V/I = 220/5 = 44 &Omega;. Let n be current number of resistors. 1/44 = n/176. n = 176/44 = 4 resistors.</div>"
+                ],
+                "answer": "For 5 A at 220 V, effective resistance R_eq = V/I = 220/5 = 44 &Omega;. Let n be current number of resistors. 1/44 = n/176. n = 176/44 = 4 resistors."
+            },
+            {
+                "id": "sp3-ex-11",
+                "number": "11",
+                "question": "<div style=\"text-align: justify;\">Show how you would connect three resistors, each of resistance 6 &Omega;, so that the combination has a resistance of (i) 9 &Omega;, (ii) 4 &Omega;.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (i) To get 9 &Omega;, connect two 6 &Omega; resistors in parallel and the third in series with them: (6&times;6)/(6+6) + 6 = 3 + 6 = 9 &Omega;.</div>",
+                    "<div style=\"text-align: justify;\">(ii) To get 4 &Omega;, connect two 6 &Omega; resistors in series and the third in parallel with them: (12 &times; 6)/(12 + 6) = 72/18 = 4 &Omega;.</div>"
+                ],
+                "answer": "(i) To get 9 &Omega;, connect two 6 &Omega; resistors in parallel and the third in series with them: (6&times;6)/(6+6) + 6 = 3 + 6 = 9 &Omega;."
+            },
+            {
+                "id": "sp3-ex-12",
+                "number": "12",
+                "question": "<div style=\"text-align: justify;\">Several electric bulbs designed to be used on a 220 V electric supply line, are rated 10 W. How many lamps can be connected in parallel with each other across the two wires of 220 V line if the maximum allowable current is 5 A?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Total allowed power P = V &times; I = 220 V &times; 5 A = 1100 W. Each bulb is 10 W. Number of bulbs = 1100 / 10 = 110 bulbs.</div>"
+                ],
+                "answer": "Total allowed power P = V &times; I = 220 V &times; 5 A = 1100 W. Each bulb is 10 W. Number of bulbs = 1100 / 10 = 110 bulbs."
+            },
+            {
+                "id": "sp3-ex-13",
+                "number": "13",
+                "question": "<div style=\"text-align: justify;\">A hot plate of an electric oven connected to a 220 V line has two resistance coils A and B, each of 24 &Omega; resistance, which may be used separately, in series, or in parallel. What are the currents in the three cases?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (i) Separately: I = V/R = 220/24 = 9.17 A.</div>",
+                    "<div style=\"text-align: justify;\">(ii) Series: R_s = 48 &Omega;, I = 220/48 = 4.58 A.</div>",
+                    "<div style=\"text-align: justify;\">(iii) Parallel: R_p = 12 &Omega;, I = 220/12 = 18.33 A.</div>"
+                ],
+                "answer": "(i) Separately: I = V/R = 220/24 = 9.17 A."
+            },
+            {
+                "id": "sp3-ex-14",
+                "number": "14",
+                "question": "<div style=\"text-align: justify;\">Compare the power used in the 2 &Omega; resistor in each of the following circuits: (i) a 6 V battery in series with 1 &Omega; and 2 &Omega; resistors, and (ii) a 4 V battery in parallel with 12 &Omega; and 2 &Omega; resistors.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (i) In series, R = 3 &Omega;, I = 6/3 = 2 A. Power in 2 &Omega; = I<sup>2</sup>R = (2)<sup>2</sup> &times; 2 = 8 W.</div>",
+                    "<div style=\"text-align: justify;\">(ii) In parallel, voltage across 2 &Omega; is 4 V. Power in 2 &Omega; = V<sup>2</sup>/R = (4)<sup>2</sup>/2 = 16/2 = 8 W. Both use same power.</div>"
+                ],
+                "answer": "(i) In series, R = 3 &Omega;, I = 6/3 = 2 A. Power in 2 &Omega; = I<sup>2</sup>R = (2)<sup>2</sup> &times; 2 = 8 W."
+            },
+            {
+                "id": "sp3-ex-15",
+                "number": "15",
+                "question": "<div style=\"text-align: justify;\">Two lamps, one rated 100 W at 220 V, and the other 60 W at 220 V, are connected in parallel to electric mains supply. What current is drawn from the line if the supply voltage is 220 V?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Current through 100 W lamp I1 = 100/220 = 0.45 A. Current through 60 W lamp I<sup>2</sup> = 60/220 = 0.27 A. Total current = 0.45 + 0.27 = 0.72 A approx (more precisely 160/220 &ap; 0.73 A).</div>"
+                ],
+                "answer": "Current through 100 W lamp I1 = 100/220 = 0.45 A. Current through 60 W lamp I2 = 60/220 = 0.27 A. Total current = 0.45 + 0.27 = 0.72 A approx (more precisely 160/220 &ap; 0.73 A)."
+            },
+            {
+                "id": "sp3-ex-16",
+                "number": "16",
+                "question": "<div style=\"text-align: justify;\">Which uses more energy, a 250 W TV set in 1 hr, or a 1200 W toaster in 10 minutes?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Energy = P &times; t. For TV: E = 250 W &times; 3600 s = 9 &times; 10<sup>5</sup> J. For toaster: E = 1200 W &times; 600 s = 7.2 &times; 10<sup>5</sup> J. TV uses more energy.</div>"
+                ],
+                "answer": "Energy = P &times; t. For TV: E = 250 W &times; 3600 s = 9 &times; 10<sup>5</sup> J. For toaster: E = 1200 W &times; 600 s = 7.2 &times; 10<sup>5</sup> J. TV uses more energy."
+            },
+            {
+                "id": "sp3-ex-17",
+                "number": "17",
+                "question": "<div style=\"text-align: justify;\">An electric heater of resistance 8 &Omega; draws 15 A from the service mains 2 hours. Calculate the rate at which heat is developed in the heater.</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: Rate of heat development is Power P = I<sup>2</sup>R = (15)<sup>2</sup> &times; 8 = 225 &times; 8 = 1800 W (or J/s).</div>"
+                ],
+                "answer": "Rate of heat development is Power P = I<sup>2</sup>R = (15)<sup>2</sup> &times; 8 = 225 &times; 8 = 1800 W (or J/s)."
+            },
+            {
+                "id": "sp3-ex-18",
+                "number": "18",
+                "question": "<div style=\"text-align: justify;\">Explain the following: (a) Why is the tungsten used almost exclusively for filament of electric lamps? (b) Why are the conductors of electric heating devices, such as bread-toasters and electric irons, made of an alloy rather than a pure metal? (c) Why is the series arrangement not used for domestic circuits? (d) How does the resistance of a wire vary with its area of cross-section? (e) Why copper and aluminium wires are usually employed for electricity transmission?</div>",
+                "solution": [
+                    "<div style=\"text-align: justify;\">Answer: (a) Tungsten has a very high melting point and high resistivity, preventing it from melting or burning easily at the high temperatures needed to produce light.</div>",
+                    "<div style=\"text-align: justify;\">(b) Alloys have higher resistivity than pure metals and do not oxidize (burn) easily at high temperatures.</div>",
+                    "<div style=\"text-align: justify;\">(c) In series, if one device fails, the whole circuit breaks. Also, devices would not get the full voltage and cannot be operated independently.</div>",
+                    "<div style=\"text-align: justify;\">(d) Resistance is inversely proportional to the area of cross-section (R &prop; 1/A).</div>",
+                    "<div style=\"text-align: justify;\">(e) They are good conductors with low resistivity, minimizing energy loss as heat during transmission.</div>"
+                ],
+                "answer": "(a) Tungsten has a very high melting point and high resistivity, preventing it from melting or burning easily at the high temperatures needed to produce light."
+            }
+        ]
+    }
+]

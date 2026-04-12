@@ -3,7 +3,7 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
       .mark { fill: none; stroke: #00BFFF; stroke-width: 1.5; }
     </style>
   </defs>
@@ -27,32 +27,38 @@
   <!-- F = (293, 169) -->
 
   <!-- Base Line EC -->
-  <line x1="50" y1="250" x2="320" y2="250" class="line" />
+  <line x1="50" y1="250" x2="320" y2="250" class="line"/>
 
   <!-- Triangle Sides AB, AC -->
-  <line x1="180" y1="250" x2="250" y2="40" class="line" />
-  <line x1="320" y1="250" x2="250" y2="40" class="line" />
+  <line x1="180" y1="250" x2="250" y2="40" class="line"/>
+  <line x1="320" y1="250" x2="250" y2="40" class="line"/>
   
   <!-- Line EF -->
-  <line x1="50" y1="250" x2="293" y2="169" class="inner-line" />
+  <line x1="50" y1="250" x2="293" y2="169" class="inner-line"/>
 
   <!-- Altitude AD -->
-  <line x1="250" y1="40" x2="250" y2="250" class="inner-line" />
+  <line x1="250" y1="40" x2="250" y2="250" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="245" y="30" class="text">A</text>
-  <text x="175" y="270" class="text">B</text>
-  <text x="330" y="270" class="text">C</text>
-  <text x="245" y="270" class="text">D</text>
-  <text x="35" y="270" class="text">E</text>
-  <text x="300" y="165" class="text">F</text>
+  <text x="245" y="30" class="text" fill="#00bfff">A</text>
+  <text x="175" y="270" class="text" fill="#00bfff">B</text>
+  <text x="330" y="270" class="text" fill="#00bfff">C</text>
+  <text x="245" y="270" class="text" fill="#00bfff">D</text>
+  <text x="35" y="270" class="text" fill="#00bfff">E</text>
+  <text x="300" y="165" class="text" fill="#00bfff">F</text>
 
   <!-- Right Angle D -->
-  <polyline points="240,250 240,240 250,240" class="mark" />
+  <polyline points="240,250 240,240 250,240" class="mark"/>
 
   <!-- Right Angle F -->
   <!-- Vector FE approx (243, 81). Vector FA approx (-43, -129) -->
-  <polyline points="286,176 295,183 301,176" class="mark" fill="none" /> 
+  <polyline points="286,176 295,183 301,176" class="mark" fill="none"/> 
   <!-- Crude approximation drawing a small square rotated -->
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

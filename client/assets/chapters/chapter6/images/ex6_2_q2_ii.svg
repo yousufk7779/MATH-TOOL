@@ -2,7 +2,7 @@
   <defs>
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; }
       .label { font-size: 20px; font-weight: bold; }
     </style>
   </defs>
@@ -26,29 +26,35 @@
   <!-- Fy = 40 + 0.47 * (320 - 40) = 40 + 131.6 = 171.6 -->
 
   <!-- Triangle PQR -->
-  <path d="M140 40 L60 220 L350 320 Z" class="line" />
+  <path d="M140 40 L60 220 L350 320 Z" class="line"/>
 
   <!-- Line EF -->
-  <line x1="102.4" y1="124.6" x2="238.7" y2="171.6" class="line" />
+  <line x1="102.4" y1="124.6" x2="238.7" y2="171.6" class="line"/>
 
   <!-- Vertex Labels -->
-  <text x="135" y="30" class="text label">P</text>
-  <text x="40" y="230" class="text label">Q</text>
-  <text x="360" y="330" class="text label">R</text>
-  <text x="85" y="125" class="text label">E</text>
-  <text x="245" y="170" class="text label">F</text>
+  <text x="135" y="30" class="text label" fill="#00bfff">P</text>
+  <text x="40" y="230" class="text label" fill="#00bfff">Q</text>
+  <text x="360" y="330" class="text label" fill="#00bfff">R</text>
+  <text x="85" y="125" class="text label" fill="#00bfff">E</text>
+  <text x="245" y="170" class="text label" fill="#00bfff">F</text>
 
   <!-- Length Labels -->
   <!-- PE = 4 cm -->
-  <text x="80" y="70" class="text">4 cm</text>
+  <text x="80" y="70" class="text" fill="#00bfff">4 cm</text>
   
   <!-- QE = 4.5 cm -->
-  <text x="40" y="170" class="text">4.5 cm</text>
+  <text x="40" y="170" class="text" fill="#00bfff">4.5 cm</text>
   
   <!-- PF = 8 cm -->
-  <text x="200" y="100" class="text">8 cm</text>
+  <text x="200" y="100" class="text" fill="#00bfff">8 cm</text>
   
   <!-- RF = 9 cm -->
-  <text x="300" y="240" class="text">9 cm</text>
+  <text x="300" y="240" class="text" fill="#00bfff">9 cm</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>

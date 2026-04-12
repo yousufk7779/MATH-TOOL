@@ -1,0 +1,558 @@
+client/data/content/sci-bio-3.ts(162,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(162,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(162,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(162,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(162,669): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(163,79): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(163,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,97): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,109): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,112): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,113): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(163,114): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(163,168): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(163,172): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,178): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,182): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,190): error TS1136: Property assignment expected.
+client/data/content/sci-bio-3.ts(163,192): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,195): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,959): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,980): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,982): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,982): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,1249): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,1796): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,1798): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,1798): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,1806): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,3213): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,3215): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,3215): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,3443): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,3975): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,4301): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,4302): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,4302): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,4534): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,4718): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,5125): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,5863): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,5866): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,6034): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,6202): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,6357): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,6813): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,7004): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,7038): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,7422): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,7609): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,7847): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,8057): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,8200): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,8421): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9011): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,9013): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,9013): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9021): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9326): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9340): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9501): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9665): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9785): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9859): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,9893): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,10101): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,10237): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,10460): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,10669): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,10905): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11426): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,11427): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(163,11427): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11600): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11716): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11727): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11836): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11899): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(163,11921): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(168,25): error TS1003: Identifier expected.
+client/data/content/sci-bio-3.ts(168,38): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(169,29): error TS1003: Identifier expected.
+client/data/content/sci-bio-3.ts(169,32): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(170,31): error TS1003: Identifier expected.
+client/data/content/sci-bio-3.ts(170,155): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(172,25): error TS1181: Array element destructuring pattern expected.
+client/data/content/sci-bio-3.ts(172,79): error TS1005: ':' expected.
+client/data/content/sci-bio-3.ts(172,83): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(172,89): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(172,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(173,21): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(173,22): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(175,17): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(176,13): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(177,9): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(177,10): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(180,17): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(181,22): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(187,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(187,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(187,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(187,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(188,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,97): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,105): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,109): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,112): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,113): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,114): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(188,168): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,172): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,182): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,959): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,1798): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,2179): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,2371): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,2497): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,3029): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,3661): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,3980): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4030): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4058): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4426): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4489): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4554): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4684): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,4751): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,5046): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,5545): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,5614): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,5631): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,6035): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,6134): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,6179): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,6649): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,6814): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,7443): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,7609): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,7973): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,8026): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,8029): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,8099): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,8115): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,8267): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,9236): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,9650): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,10011): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,10059): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,10066): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,10130): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,10295): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,10993): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11013): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11152): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11240): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11303): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11318): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11557): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,11561): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,11639): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11732): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11760): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11829): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11881): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,11887): error TS1121: Octal literals are not allowed. Use the syntax '0o6'.
+client/data/content/sci-bio-3.ts(188,11889): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,12005): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,12340): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,12605): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,12831): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,12832): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,12832): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,12995): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,13030): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,13114): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,13137): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,13162): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,13264): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,14489): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,14543): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,15378): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,15453): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,15525): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,16589): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,17189): error TS1121: Octal literals are not allowed. Use the syntax '0o3'.
+client/data/content/sci-bio-3.ts(188,17191): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,17506): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,18056): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,18245): error TS1178: Octal digit expected.
+client/data/content/sci-bio-3.ts(188,18470): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,18827): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,18905): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,19207): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,19509): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,20299): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,20318): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,20847): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,21133): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,21466): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,21492): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,23365): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,23391): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,23450): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,24200): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,25329): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,25455): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,25456): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,25456): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,25462): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,25507): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,26167): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,26459): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,26907): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,26925): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,27016): error TS1124: Digit expected.
+client/data/content/sci-bio-3.ts(188,27041): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,27475): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,27647): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,28111): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,28647): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,28834): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,28950): error TS1124: Digit expected.
+client/data/content/sci-bio-3.ts(188,29117): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,29130): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,30385): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,30509): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,31222): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,31436): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,31685): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,32213): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,32529): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,32912): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,32930): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,33225): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,33316): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,33366): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,33747): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,33970): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,34972): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35239): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35319): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35547): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35720): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35763): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,35764): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,35764): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,35948): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,36248): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,37286): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,37497): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,37668): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,37695): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,38072): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,38307): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,38636): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39090): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39251): error TS1121: Octal literals are not allowed. Use the syntax '0o4'.
+client/data/content/sci-bio-3.ts(188,39253): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,39334): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39375): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39582): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39626): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39809): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39828): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,39983): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,40179): error TS1124: Digit expected.
+client/data/content/sci-bio-3.ts(188,40287): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,40465): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,41356): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,41522): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,41819): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,42005): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,42072): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,42398): error TS1124: Digit expected.
+client/data/content/sci-bio-3.ts(188,42837): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,43365): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,43638): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,43666): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,44362): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,44649): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,45983): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,46174): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,46189): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,46353): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,46567): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,46634): error TS1121: Octal literals are not allowed. Use the syntax '0o1'.
+client/data/content/sci-bio-3.ts(188,46636): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,46788): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,47133): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,47152): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,47770): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,47851): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,47935): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,48001): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,48215): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,48504): error TS1125: Hexadecimal digit expected.
+client/data/content/sci-bio-3.ts(188,48783): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,49190): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,49511): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,49605): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,49707): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,49989): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,50986): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,51998): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,52406): error TS1121: Octal literals are not allowed. Use the syntax '0o22'.
+client/data/content/sci-bio-3.ts(188,52409): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,52617): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,52691): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,52778): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,53292): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,53698): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,53801): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,54309): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,54775): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(188,54830): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55052): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55086): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55250): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55860): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55873): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(188,55983): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(189,21): error TS1109: Expression expected.
+client/data/content/sci-bio-3.ts(197,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(197,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(197,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(197,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(206,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(206,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(206,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(206,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(215,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(215,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(215,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(215,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(224,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(224,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(224,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(224,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(229,10): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(232,17): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(233,22): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(239,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(239,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(239,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(239,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(240,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,97): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,105): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,109): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,112): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,113): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,114): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(240,168): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,172): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,182): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(240,959): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,1673): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,1693): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,1713): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,2189): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,2549): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,2791): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,2814): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,2857): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(240,3260): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(249,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(249,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(249,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(249,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(254,10): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(257,17): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(258,22): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(262,85): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(262,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(262,95): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(262,104): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(262,105): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(263,29): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(264,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(264,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(264,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(264,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(266,27): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(267,17): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(267,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(270,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(271,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(271,85): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(271,95): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(271,105): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(272,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(273,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(273,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(273,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(273,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(275,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(276,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(279,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(280,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(280,85): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(280,95): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(280,105): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(281,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(282,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(282,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(282,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(282,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(284,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(285,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(288,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(289,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(290,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(291,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(291,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(291,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(291,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(293,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(294,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(297,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(298,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(299,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(300,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(300,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(300,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(300,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(302,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(303,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(306,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(307,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(308,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(309,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(309,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(309,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(309,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(311,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(312,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(315,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(316,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(317,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(318,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(318,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(318,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(318,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(319,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,97): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,105): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,109): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,112): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,113): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,114): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(319,168): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,172): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,182): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,959): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,2991): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3334): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3357): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3447): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3578): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3683): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3686): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3774): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,3879): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(319,3986): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4025): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4255): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4286): error TS1177: Binary digit expected.
+client/data/content/sci-bio-3.ts(319,4354): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4397): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4421): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4463): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4493): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4532): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4535): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4593): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4620): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4623): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4666): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4689): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4710): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,4818): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,5024): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,5385): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,5633): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,5971): error TS1124: Digit expected.
+client/data/content/sci-bio-3.ts(319,6087): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,6436): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,6585): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,6671): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7110): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7215): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7439): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7477): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7629): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7645): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,7911): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,8009): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,8096): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,8150): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,9101): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,9359): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,9381): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,9701): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,9957): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,10325): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,10569): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,10863): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11023): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11033): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11070): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11085): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11091): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11101): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11137): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11217): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11281): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11367): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11473): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11561): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11585): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11761): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11856): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(319,11860): error TS1351: An identifier or keyword cannot immediately follow a numeric literal.
+client/data/content/sci-bio-3.ts(321,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(322,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(325,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(326,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(327,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(328,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(328,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(328,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(328,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(330,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(331,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(334,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(335,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(336,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(337,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(337,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(337,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(337,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(339,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(340,18): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(343,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(344,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(345,29): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(346,79): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(346,89): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(346,98): error TS1005: ',' expected.
+client/data/content/sci-bio-3.ts(346,99): error TS1127: Invalid character.
+client/data/content/sci-bio-3.ts(348,27): error TS1005: ';' expected.
+client/data/content/sci-bio-3.ts(350,13): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(351,9): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(352,5): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(352,6): error TS1128: Declaration or statement expected.
+client/data/content/sci-bio-3.ts(354,1): error TS1128: Declaration or statement expected.

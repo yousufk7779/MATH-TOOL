@@ -22,53 +22,59 @@
 
   <!-- Circle -->
   <!-- Color: Blue #1976D2 -->
-  <circle cx="200" cy="180" r="80" fill="none" stroke="#1976D2" stroke-width="2.5" />
+  <circle cx="200" cy="180" r="80" fill="none" stroke="#1976D2" stroke-width="2.5"/>
 
   <!-- Quadrilateral Sides -->
   <!-- AB (Bottom) - Red -->
-  <line x1="108" y1="245" x2="265" y2="272" stroke="#D32F2F" stroke-width="2.5" />
+  <line x1="108" y1="245" x2="265" y2="272" stroke="#D32F2F" stroke-width="2.5"/>
   
   <!-- BC (Right) - Green -->
-  <line x1="265" y1="272" x2="292" y2="115" stroke="#388E3C" stroke-width="2.5" />
+  <line x1="265" y1="272" x2="292" y2="115" stroke="#388E3C" stroke-width="2.5"/>
   
   <!-- CD (Top) - Orange -->
-  <line x1="292" y1="115" x2="135" y2="88" stroke="#F57C00" stroke-width="2.5" />
+  <line x1="292" y1="115" x2="135" y2="88" stroke="#F57C00" stroke-width="2.5"/>
   
   <!-- DA (Left) - Purple -->
-  <line x1="135" y1="88" x2="108" y2="245" stroke="#7B1FA2" stroke-width="2.5" />
+  <line x1="135" y1="88" x2="108" y2="245" stroke="#7B1FA2" stroke-width="2.5"/>
 
   <!-- Points (Vertices) -->
   <!-- A -->
-  <circle cx="108" cy="245" r="3" fill="black" />
-  <text x="90" y="260" class="label">A</text>
+  <circle cx="108" cy="245" r="3" fill="#1976d2"/>
+  <text x="90" y="260" class="label" fill="#1976d2">A</text>
   
   <!-- B -->
-  <circle cx="265" cy="272" r="3" fill="black" />
-  <text x="280" y="285" class="label">B</text>
+  <circle cx="265" cy="272" r="3" fill="#1976d2"/>
+  <text x="280" y="285" class="label" fill="#1976d2">B</text>
   
   <!-- C -->
-  <circle cx="292" cy="115" r="3" fill="black" />
-  <text x="300" y="110" class="label">C</text>
+  <circle cx="292" cy="115" r="3" fill="#1976d2"/>
+  <text x="300" y="110" class="label" fill="#1976d2">C</text>
   
   <!-- D -->
-  <circle cx="135" cy="88" r="3" fill="black" />
-  <text x="120" y="80" class="label">D</text>
+  <circle cx="135" cy="88" r="3" fill="#1976d2"/>
+  <text x="120" y="80" class="label" fill="#1976d2">D</text>
 
   <!-- Points (Contacts) -->
   <!-- P -->
-  <circle cx="186" cy="259" r="4" fill="#1976D2" />
-  <text x="180" y="280" class="label">P</text>
+  <circle cx="186" cy="259" r="4" fill="#1976D2"/>
+  <text x="180" y="280" class="label" fill="#1976d2">P</text>
   
   <!-- Q -->
-  <circle cx="279" cy="194" r="4" fill="#1976D2" />
-  <text x="295" y="200" class="label">Q</text>
+  <circle cx="279" cy="194" r="4" fill="#1976D2"/>
+  <text x="295" y="200" class="label" fill="#1976d2">Q</text>
   
   <!-- R -->
-  <circle cx="214" cy="101" r="4" fill="#1976D2" />
-  <text x="210" y="95" class="label">R</text>
+  <circle cx="214" cy="101" r="4" fill="#1976D2"/>
+  <text x="210" y="95" class="label" fill="#1976d2">R</text>
   
   <!-- S -->
-  <circle cx="121" cy="166" r="4" fill="#1976D2" />
-  <text x="100" y="170" class="label">S</text>
+  <circle cx="121" cy="166" r="4" fill="#1976D2"/>
+  <text x="100" y="170" class="label" fill="#1976d2">S</text>
+
+
+<style> text, tspan { fill: #1976d2 !important; } </style>
+
+
+
 
 </svg>

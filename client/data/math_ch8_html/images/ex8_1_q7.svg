@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" style="background-color:white; border:1px solid #ddd;">
+<line x1="80" y1="50" x2="80" y2="250" stroke="#2E7D32" stroke-width="2"/>
+<line x1="80" y1="250" x2="220" y2="250" stroke="#2E7D32" stroke-width="2"/>
+<line x1="80" y1="50" x2="220" y2="250" stroke="#2E7D32" stroke-width="2"/>
+<text x="70" y="45" font-family="Arial" font-size="16" fill="black">A</text>
+<text x="60" y="270" font-family="Arial" font-size="16" fill="black">B</text>
+<text x="230" y="270" font-family="Arial" font-size="16" fill="black">C</text>
+<text x="30" y="150" font-family="Arial" font-size="16" fill="black">8k</text>
+<text x="140" y="275" font-family="Arial" font-size="16" fill="black">7k</text>
+<text x="180" y="240" font-family="Arial" font-size="16" fill="black">θ</text>
+</svg>

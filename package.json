@@ -20,7 +20,9 @@
     "sync": "node scripts/compileContent.js"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.4.1",
     "@expo-google-fonts/kalam": "^0.4.1",
+    "@expo-google-fonts/noto-sans": "^0.4.2",
     "@expo-google-fonts/nunito": "^0.4.2",
     "@expo/vector-icons": "^15.0.3",
     "@react-native-async-storage/async-storage": "^2.2.0",
@@ -53,6 +55,7 @@
     "express": "^5.0.1",
     "http-proxy-middleware": "^3.0.5",
     "katex": "^0.16.28",
+    "mathjax-full": "^3.2.1",
     "openai": "^6.16.0",
     "p-limit": "^7.2.0",
     "p-retry": "^7.1.1",
@@ -68,7 +71,9 @@
     "react-native-screens": "~4.16.0",
     "react-native-svg": "^15.15.1",
     "react-native-web": "~0.21.0",
+    "react-native-webview": "^13.16.1",
     "react-native-worklets": "0.5.1",
+    "sharp": "^0.34.5",
     "tsx": "^4.20.6",
     "ws": "^8.18.0",
     "zod": "^3.25.76",

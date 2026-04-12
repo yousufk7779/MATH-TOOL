@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Coordinates calculated for parallel lines -->
+  <!-- A=(40, 150) -->
+  <!-- B=(260, 40) -->
+  <!-- C=(360, 150) -->
+  <!-- D=(280, 260) -->
+  <!-- L=(184, 150) -->
+  <!-- M=(139, 100.5) -->
+  <!-- N=(148, 199.5) -->
+
+  <!-- Main Quadrilateral and Diagonal -->
+  <!-- Path A -> B -> C -> D -> A -->
+  <path d="M40 150 L260 40 L360 150 L280 260 Z" class="line" />
+  
+  <!-- Diagonal AC -->
+  <line x1="40" y1="150" x2="360" y2="150" class="line" />
+
+  <!-- Parallel Lines segments -->
+  <!-- LM -->
+  <line x1="184" y1="150" x2="139" y2="100.5" class="line" />
+  
+  <!-- LN -->
+  <line x1="184" y1="150" x2="148" y2="199.5" class="line" />
+
+  <!-- Labels -->
+  <!-- A - Left -->
+  <text x="20" y="155" class="text">A</text>
+  
+  <!-- B - Top -->
+  <text x="260" y="30" class="text">B</text>
+  
+  <!-- C - Right -->
+  <text x="370" y="155" class="text">C</text>
+  
+  <!-- D - Bottom -->
+  <text x="280" y="280" class="text">D</text>
+  
+  <!-- M - On AB -->
+  <text x="125" y="90" class="text">M</text>
+  
+  <!-- N - On AD -->
+  <text x="130" y="215" class="text">N</text>
+  
+  <!-- L - On AC -->
+  <text x="185" y="140" class="text">L</text>
+
+</svg>

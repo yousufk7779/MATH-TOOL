@@ -1,0 +1,35 @@
+P50 (1 images): The change in the current can be determined using Ohm’s law as follows:
+P59 (1 images): 
+P75 (1 images): A battery of three cells of 2 V each equals to battery of potential 6 V. The circuit diagram below shows three resistors of resistance 12 Ω, 8 Ω and 5 Ω connected in series along with a battery of pot
+P80 (1 images): 
+P96 (1 images): When 1 Ω and 106 are connected in parallel, the equivalent resistance is given by
+P99 (1 images): When 1 Ω, 103 Ω, and 106 Ω are connected in parallel, the equivalent resistance is given by
+P105 (1 images): 
+P109 (1 images): 
+P143 (1 images): 
+P144 (1 images): From the circuit above, it is understood that 3 Ω and 6 Ω are connected in parallel. Hence, their equivalent resistance is given by
+P147 (1 images): 
+P153 (1 images): (b) The circuit diagram below, shows the connection of three resistors.
+P155 (1 images): 
+P163 (1 images): 
+P181 (1 images): 
+P220 (1 images): 
+P267 (1 images): Let Rs and Rp be the equivalent resistance of the wires when connected in series and parallel respectively. For the same potential difference V, the ratio of the heat produced in the circuit is given
+P281 (1 images): 
+P287 (1 images): 
+P292 (1 images): 
+P301 (1 images): The value of the resistor can be calculated using Ohm’s Law as follows:
+P309 (1 images): Now, using Ohm’s law,
+P315 (1 images): The equivalent resistance of the parallel combination of resistor R is given by
+P321 (1 images): If we connect all the three resistors in series, their equivalent resistor would 6 Ω + 6 Ω + 6 Ω =18 Ω, which is not the desired value. Similarly, if we connect all the three resistors in parallel, th
+P326 (1 images): 
+P327 (1 images): If two resistors are connected in parallel, then their equivalent resistance is
+P331 (1 images): 
+P334 (1 images): The third resistor is connected in parallel with 12 Ω. Hence the equivalent resistance is calculated as follows:
+P341 (1 images): 
+P349 (1 images): Using Ohm’s law, we can find the current flowing through each coil as follows:
+P355 (1 images): The current flowing through the series circuit is calculated as follows:
+P359 (1 images): When the coils are connected in parallel, the equivalent resistance is calculated as follows:
+P364 (1 images): The potential difference is 6 V and the resistors 1 Ω and 2 Ω are connected in series, hence their equivalent resistance is given by 1 Ω + 2 Ω = 3 Ω. The current in the circuit can be calculated using
+P367 (1 images): When 12 Ω and 2 Ω resistors are connected in parallel, the voltage across the resistors remains the same. Knowing that the voltage across 2 Ω resistor is 4 V, we can calculate the power consumed by th
+P376 (1 images): Similarly, the current drawn by the bulb of rating 60 W can be calculated as follows: I = 60 W/220 V = 60/220 A

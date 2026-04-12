@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles - Exercise 6.1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Kalam', cursive;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Kalam', cursive;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            color: #444;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .sub-header {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.2em;
+            padding-top: 5px;
+            border-top: 1px dashed #ddd;
+            display: block;
+        }
+
+        .reason {
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        /* Float images to the right */
+        img {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            max-width: 280px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">JIGUU</div>
+        <div class="chapter-title">Chapter 6: Exercise 6.1</div>
+    </div>
+
+    <!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. Fill in the blanks using the correct word given in brackets:</div>
+
+        <div class="sub-question">(i) All circles are ___ (congruent, similar)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">All circles have the same shape but different sizes.</div>
+        <div class="final-answer">All circles are similar.</div>
+
+        <div class="sub-question">(ii) All squares are ___ (similar, congruent)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">All squares have equal angles <span class="reason">(90°)</span> and proportional sides.</div>
+        <div class="final-answer">All squares are similar.</div>
+
+        <div class="sub-question">(iii) All ___ triangles are similar. (isosceles, equilateral)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">Equilateral triangles always have angles of 60°.</div>
+        <div class="final-answer">All equilateral triangles are similar.</div>
+
+        <div class="sub-question">(iv) Two polygons of the same number of sides are similar, if (a) their corresponding
+            angles are ___ as and (b) their corresponding sides are ___. (equal, proportional)</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">For similarity, angles must be equal and sides must be proportional.</div>
+        <div class="final-answer">Two polygons are similar if corresponding angles are equal and corresponding sides are
+            proportional.</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <div class="question">2. Give two different examples of pair of:</div>
+
+        <div class="sub-question">(i) Similar figures</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">1. Two equilateral triangles of sides 2 cm and 5 cm.</div>
+        <div class="step">2. Two squares of sides 3 cm and 4 cm.</div>
+        <div class="final-answer">Any two circles, any two squares.</div>
+
+        <div class="sub-question">(ii) Non-similar figures</div>
+        <div class="sub-header">Proof:</div>
+        <div class="step">1. A square and a rectangle <span class="reason">(Angles are 90°, but sides may not be
+                proportional)</span>.</div>
+        <div class="step">2. A triangle and a trapezium <span class="reason">(Different shapes)</span>.</div>
+        <div class="final-answer">A square and a rhombus; A circle and a triangle.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <img src="ex6_1_q3.svg" alt="Rhombus and Square">
+        <div class="question">3. State whether the following quadrilaterals are similar or not:</div>
+
+        <div class="sub-header">Given:</div>
+        <div class="step">Quadrilateral PQRS <span class="reason">(Rhombus with side 1.5 cm)</span>.</div>
+        <div class="step">Quadrilateral ABCD <span class="reason">(Square with side 3 cm)</span>.</div>
+
+        <div class="sub-header">To Prove:</div>
+        <div class="step">Whether PQRS ~ ABCD.</div>
+
+        <div class="sub-header">Proof:</div>
+        <div class="step">Comparing corresponding sides:</div>
+        <div class="step"><span class="fraction"><span class="numerator">PQ</span><span
+                    class="denominator">AB</span></span> = <span class="fraction"><span
+                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
+                    class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">QR</span><span
+                    class="denominator">BC</span></span> = <span class="fraction"><span
+                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
+                    class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">RS</span><span
+                    class="denominator">CD</span></span> = <span class="fraction"><span
+                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
+                    class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step"><span class="fraction"><span class="numerator">SP</span><span
+                    class="denominator">DA</span></span> = <span class="fraction"><span
+                    class="numerator">1.5</span><span class="denominator">3</span></span> = <span class="fraction"><span
+                    class="numerator">1</span><span class="denominator">2</span></span></div>
+        <div class="step">Sides are proportional.</div>
+        <div class="step">Comparing corresponding angles:</div>
+        <div class="step">Angles of ABCD are 90°.</div>
+        <div class="step">Angles of PQRS are NOT 90°.</div>
+        <div class="step">Corresponding angles are not equal.</div>
+        <div class="final-answer">No, the quadrilaterals are not similar.</div>
+    </div>
+
+</body>
+
+</html>

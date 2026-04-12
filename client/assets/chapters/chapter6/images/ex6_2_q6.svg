@@ -3,7 +3,7 @@
     <style>
       .line { fill: none; stroke: #00BFFF; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
       .inner-line { fill: none; stroke: #00BFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: black; font-weight: bold; }
+      .text { font-family: 'Times New Roman', serif; font-size: 18px; fill: #00bfff; font-weight: bold; }
     </style>
   </defs>
 
@@ -19,24 +19,30 @@
   <!-- C = O + 0.55 * (R-O) = (200, 190) + 0.55*(140, 110) = (200+77, 190+60.5) = (277, 250.5) -->
   
   <!-- Outer Triangle PQR -->
-  <path d="M200 40 L60 300 L340 300 Z" class="line" />
+  <path d="M200 40 L60 300 L340 300 Z" class="line"/>
 
   <!-- Connecting Lines from Vertices to O -->
-  <line x1="200" y1="40" x2="200" y2="190" class="inner-line" /> <!-- PO -->
-  <line x1="60" y1="300" x2="200" y2="190" class="inner-line" /> <!-- QO -->
-  <line x1="340" y1="300" x2="200" y2="190" class="inner-line" /> <!-- RO -->
+  <line x1="200" y1="40" x2="200" y2="190" class="inner-line"/> <!-- PO -->
+  <line x1="60" y1="300" x2="200" y2="190" class="inner-line"/> <!-- QO -->
+  <line x1="340" y1="300" x2="200" y2="190" class="inner-line"/> <!-- RO -->
 
   <!-- Inner Triangle ABC -->
-  <path d="M200 107.5 L123 250.5 L277 250.5 Z" class="inner-line" />
+  <path d="M200 107.5 L123 250.5 L277 250.5 Z" class="inner-line"/>
 
   <!-- Labels -->
-  <text x="190" y="30" class="text">P</text>
-  <text x="40" y="310" class="text">Q</text>
-  <text x="350" y="310" class="text">R</text>
-  <text x="205" y="210" class="text">O</text>
+  <text x="190" y="30" class="text" fill="#00bfff">P</text>
+  <text x="40" y="310" class="text" fill="#00bfff">Q</text>
+  <text x="350" y="310" class="text" fill="#00bfff">R</text>
+  <text x="205" y="210" class="text" fill="#00bfff">O</text>
   
-  <text x="180" y="110" class="text">A</text>
-  <text x="105" y="245" class="text">B</text>
-  <text x="285" y="245" class="text">C</text>
+  <text x="180" y="110" class="text" fill="#00bfff">A</text>
+  <text x="105" y="245" class="text" fill="#00bfff">B</text>
+  <text x="285" y="245" class="text" fill="#00bfff">C</text>
+
+
+<style> text, tspan { fill: #00bfff !important; } </style>
+
+
+
 
 </svg>
