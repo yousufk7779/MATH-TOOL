@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ch11-m1",
+    "question": "The area of a circle with radius 'r' is given by:",
+    "options": [
+      "(A) 2πr",
+      "(B) πr²",
+      "(C) 4πr²",
+      "(D) πr"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ch11-m2",
+    "question": "The circumference of a circle with diameter 'd' is:",
+    "options": [
+      "(A) πd",
+      "(B) 2πd",
+      "(C) πd²/4",
+      "(D) πr²"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ch11-m3",
+    "question": "Area of a sector of angle θ is:",
+    "options": [
+      "(A) (θ/360) × 2πr",
+      "(B) (θ/180) × πr²",
+      "(C) (θ/360) × πr²",
+      "(D) (θ/720) × πr²"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ch11-m4",
+    "question": "The length of an arc of a sector with angle θ is:",
+    "options": [
+      "(A) (θ/360) × πr²",
+      "(B) (θ/360) × 2πr",
+      "(C) (θ/180) × 2πr",
+      "(D) (θ/90) × πr"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ch11-m5",
+    "question": "If the radius of a circle is 7 cm, its area is (take π = 22/7):",
+    "options": [
+      "(A) 44 cm²",
+      "(B) 154 cm²",
+      "(C) 308 cm²",
+      "(D) 77 cm²"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "ch11-m6",
+    "question": "The ratio of the circumference to the diameter of a circle is:",
+    "options": [
+      "(A) π : 1",
+      "(B) 2 : 1",
+      "(C) 1 : π",
+      "(D) 2π : 1"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ch11-m7",
+    "question": "If the perimeter and the area of a circle are numerically equal, then the radius of the circle is:",
+    "options": [
+      "(A) 2 units",
+      "(B) π units",
+      "(C) 4 units",
+      "(D) 7 units"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "ch11-m8",
+    "question": "Distance moved by a wheel in one revolution is equal to its:",
+    "options": [
+      "(A) Area",
+      "(B) Radius",
+      "(C) Circumference",
+      "(D) Diameter"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ch11-m9",
+    "question": "Area of a quadrant of a circle of radius 'r' is:",
+    "options": [
+      "(A) πr²/2",
+      "(B) πr²/3",
+      "(C) πr²/4",
+      "(D) πr²/8"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "ch11-m10",
+    "question": "Area of a semicircle of radius 'r' is:",
+    "options": [
+      "(A) πr²",
+      "(B) 1/2 πr²",
+      "(C) 2πr²",
+      "(D) 1/4 πr²"
+    ],
+    "correctAnswer": "B"
+  }
+]

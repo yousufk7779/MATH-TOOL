@@ -1,4 +1,5 @@
 import { ChapterContent } from "../chapterContent";
+import easyMcqsCh11 from "../easy_mcqs_ch11.json";
 
 export const mathCh11: ChapterContent = {
     id: "ch11",
@@ -30,7 +31,8 @@ export const mathCh11: ChapterContent = {
         { id: "examples", name: "Examples", questions: [] }
     ],
     theorems: [],
-    mcqs: [], // KEEP MCQs SECTION AS IS (currently empty following reset)
+    mcqs: easyMcqsCh11 as any, // Integrated easy MCQs
+
     summary: [
         "We learned to calculate area and perimeter of circles and their parts.",
         "Applied these concepts to solve real-world problems like clock hands and brooch designs."
