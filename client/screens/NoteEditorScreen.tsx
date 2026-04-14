@@ -54,13 +54,14 @@ export default function NoteEditorScreen() {
                 style={styles.container}
             >
                 <View style={styles.header}>
-                    <Pressable onPress={() => navigation.goBack()} style={styles.iconButton}>
+                    <Pressable delayPressIn={0} onPress={() => navigation.goBack()} style={styles.iconButton}>
                         <Feather name="x" size={24} color={JiguuColors.textSecondary} />
                     </Pressable>
                     <ThemedText style={styles.headerTitle}>
                         {existingNote ? "Edit Note" : "New Note"}
                     </ThemedText>
                     <Pressable
+                        delayPressIn={0}
                         onPress={handleSave}
                         disabled={isSaving || (!title.trim() && !content.trim())}
                         style={[styles.iconButton, (!title.trim() && !content.trim()) && styles.disabledButton]}

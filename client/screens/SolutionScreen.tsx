@@ -89,6 +89,7 @@ interface TabButtonProps {
 
 const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabButtonProps) => (
   <Pressable
+    delayPressIn={0}
     style={({ pressed }) => [
       styles.tabButton,
       pressed && { opacity: 0.8 },
@@ -124,6 +125,7 @@ interface SubTabButtonProps {
 
 const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => (
   <Pressable
+    delayPressIn={0}
     style={({ pressed }) => [
       styles.subTabButton,
       pressed && { opacity: 0.8 },
@@ -171,9 +173,9 @@ function SolutionScreen() {
   const [showResultDialog, setShowResultDialog] = useState(false);
   const [quizId, setQuizId] = useState(0);
 
-  const chapter = getChapter(chapterId);
-  const chapterData = getChapterContent(chapterId);
-  const chapterGradient = getChapterGradient(chapterId);
+  const chapter = React.useMemo(() => getChapter(chapterId), [chapterId]);
+  const chapterData = React.useMemo(() => getChapterContent(chapterId), [chapterId]);
+  const chapterGradient = React.useMemo(() => getChapterGradient(chapterId), [chapterId]);
   const accentColor = chapterGradient[0]; 
 
   const isScienceSection = chapterId.startsWith("sci-");
@@ -442,7 +444,7 @@ function SolutionScreen() {
                     }
                     const isTallMathChapter = ['ch8', 'ch9', 'ch10', 'ch11', 'ch12', 'ch13', 'ch14'].includes(chapterId);
                     return (
-                      <TouchableOpacity activeOpacity={0.7} key={oIdx} onPress={() => {
+                      <TouchableOpacity delayPressIn={0} activeOpacity={0.7} key={oIdx} onPress={() => {
                         if (!isSubmitted) {
                           setMcqAnswers(prev => ({ ...prev, [mcq.id]: opt }));
                           if (opt !== correctOptionText) {
@@ -552,10 +554,10 @@ function SolutionScreen() {
                   </>
                 );
               })()}
-              <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: accentColor, paddingHorizontal: Spacing.sm, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center', marginBottom: Spacing.sm }} onPress={() => resetMCQs()}>
+              <TouchableOpacity delayPressIn={0} activeOpacity={0.7} style={{ backgroundColor: accentColor, paddingHorizontal: Spacing.sm, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center', marginBottom: Spacing.sm }} onPress={() => resetMCQs()}>
                 <ThemedText numberOfLines={1} style={[scaledButton, { color: '#fff' }]}>Retake Quiz</ThemedText>
               </TouchableOpacity>
-              <TouchableOpacity activeOpacity={0.7} style={{ backgroundColor: JiguuColors.surfaceLight, paddingHorizontal: Spacing.xl, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center' }} onPress={() => resetMCQs()}>
+              <TouchableOpacity delayPressIn={0} activeOpacity={0.7} style={{ backgroundColor: JiguuColors.surfaceLight, paddingHorizontal: Spacing.xl, paddingVertical: Spacing.sm, borderRadius: BorderRadius.md, width: '100%', alignItems: 'center' }} onPress={() => resetMCQs()}>
                 <ThemedText style={[scaledButton, { color: JiguuColors.textSecondary }]}>Close</ThemedText>
               </TouchableOpacity>
             </View>

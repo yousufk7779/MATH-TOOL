@@ -40,6 +40,7 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
   return (
     <Pressable
       testID={testID}
+      delayPressIn={0}
       onPress={isAvailable ? handlePress : undefined}
       onPressIn={isAvailable ? handlePressIn : undefined}
       onPressOut={isAvailable ? handlePressOut : undefined}
