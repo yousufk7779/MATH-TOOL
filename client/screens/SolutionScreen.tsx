@@ -227,14 +227,17 @@ function SolutionScreen() {
     const newShuffled: Record<string, string[]> = {};
     chapterData.mcqs.forEach((mcq: any) => {
       const options = [...mcq.options];
-      for (let i = options.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [options[i], options[j]] = [options[j], options[i]];
+      // ONLY shuffle options if it is NOT a Maths chapter
+      if (!isMathSection) {
+        for (let i = options.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [options[i], options[j]] = [options[j], options[i]];
+        }
       }
       newShuffled[mcq.id] = options;
     });
     setShuffledOptions(newShuffled);
-  }, [chapterData]);
+  }, [chapterData, isMathSection]);
 
   const resetMCQs = useCallback(() => {
     setQuizId((prev) => prev + 1);
