@@ -49,7 +49,7 @@ export const mathCh1: ChapterContent = {
             "number": "1",
             "question": "<span style=\"font-weight: normal;\">Check whether 4ⁿ can end with the digit 0 for any natural number n.</span>",
             "solution": [
-                "Factor Tree Diagram Placeholder",
+              
                 "<span style=\"font-weight: normal;\">Solution:</span>",
                 "For any number to end with the digit 0, it must be divisible by 10.",
                 "This implies that its prime factorization must include the prime numbers 2 and 5.",
@@ -195,14 +195,14 @@ export const mathCh1: ChapterContent = {
     "exercises": [
         {
             "id": "exercise1",
-            "name": "Exercise 2.1",
+            "name": "Exercise 1.1",
             "questions": [
                 {
                     "id": "q1",
                     "number": "1",
                     "question": "<span style=\"font-weight: normal;\">Express each number as a product of its prime factors:</span>",
                     "solution": [
-                        "<span style=\"font-weight: normal;\">(i) 140</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(i) 140</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization of 140:",
                         "140 = 2 × 70",
@@ -210,7 +210,7 @@ export const mathCh1: ChapterContent = {
                         "= 2 × 2 × 5 × 7",
                         "140 = 2² × 5 × 7",
                         "",
-                        "<span style=\"font-weight: normal;\">(ii) 156</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(ii) 156</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization of 156:",
                         "156 = 2 × 78",
@@ -218,7 +218,7 @@ export const mathCh1: ChapterContent = {
                         "= 2 × 2 × 3 × 13",
                         "156 = 2² × 3 × 13",
                         "",
-                        "<span style=\"font-weight: normal;\">(iii) 3825</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(iii) 3825</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization of 3825:",
                         "3825 = 3 × 1275",
@@ -227,7 +227,7 @@ export const mathCh1: ChapterContent = {
                         "= 3 × 3 × 5 × 5 × 17",
                         "3825 = 3² × 5² × 17",
                         "",
-                        "<span style=\"font-weight: normal;\">(iv) 5005</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(iv) 5005</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization of 5005:",
                         "5005 = 5 × 1001",
@@ -235,7 +235,7 @@ export const mathCh1: ChapterContent = {
                         "= 5 × 7 × 11 × 13",
                         "5005 = 5 × 7 × 11 × 13",
                         "",
-                        "<span style=\"font-weight: normal;\">(v) 7429</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(v) 7429</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization of 7429:",
                         "7429 = 17 × 437",
@@ -249,7 +249,7 @@ export const mathCh1: ChapterContent = {
                     "number": "2",
                     "question": "<span style=\"font-weight: normal;\">Find the LCM and HCF of the following pairs of integers and verify that LCM × HCF =<br/>product of the two numbers.</span>",
                     "solution": [
-                        "<span style=\"font-weight: normal;\">(i) 26 and 91</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(i) 26 and 91</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "Prime factorization:",
                         "26 = 2 × 13",
@@ -262,7 +262,7 @@ export const mathCh1: ChapterContent = {
                         "RHS = Product = 26 × 91 = 2366",
                         "LHS = RHS. Hence Verified.",
                         "",
-                        "<span style=\"font-weight: normal;\">(ii) 510 and 92</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(ii) 510 and 92</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "510 = 2 × 3 × 5 × 17",
                         "92 = 2 × 2 × 23 = 2² × 23",
@@ -273,7 +273,7 @@ export const mathCh1: ChapterContent = {
                         "RHS = Product = 510 × 92 = 46920",
                         "LHS = RHS. Hence Verified.",
                         "",
-                        "<span style=\"font-weight: normal;\">(iii) 336 and 54</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(iii) 336 and 54</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "336 = 2 × 2 × 2 × 2 × 3 × 7 = 2⁴ × 3 × 7",
                         "54 = 2 × 3 × 3 × 3 = 2 × 3³",
@@ -291,7 +291,7 @@ export const mathCh1: ChapterContent = {
                     "number": "3",
                     "question": "<span style=\"font-weight: normal;\">Find the LCM and HCF of the following integers by applying the prime factorisation<br/>method.</span>",
                     "solution": [
-                        "<span style=\"font-weight: normal;\">(i) 12, 15 and 21</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(i) 12, 15 and 21</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "12 = 2 × 2 × 3 = 2² × 3",
                         "15 = 3 × 5",
@@ -300,7 +300,7 @@ export const mathCh1: ChapterContent = {
                         "LCM = 2² × 3 × 5 × 7 = 420",
                         "HCF = 3, LCM = 420",
                         "",
-                        "<span style=\"font-weight: normal;\">(ii) 17, 23 and 29</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(ii) 17, 23 and 29</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "17, 23, and 29 are prime numbers.",
                         "17 = 1 × 17",
@@ -310,7 +310,7 @@ export const mathCh1: ChapterContent = {
                         "LCM = 17 × 23 × 29 = 11339",
                         "HCF = 1, LCM = 11339",
                         "",
-                        "<span style=\"font-weight: normal;\">(iii) 8, 9 and 25</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(iii) 8, 9 and 25</strong>",
                         "<span style=\"font-weight: normal;\">Solution:</span>",
                         "8 = 2 × 2 × 2 = 2³",
                         "9 = 3 × 3 = 3²",
@@ -387,7 +387,7 @@ export const mathCh1: ChapterContent = {
                 {
                     "id": "q7",
                     "number": "7",
-                    "question": "<span style=\"font-weight: normal;\">There is a circular path around a sports field. Sonia takes 18 minutes to drive one<br/>round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and<br/>at the same time, and go in the same direction. After how many minutes will they meet again at the starting<br/>point?</span>",
+                    "question": "<span style=\"font-weight: normal;\">There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point?</span>",
                     "solution": [
                         "<span style=\"font-weight: normal;\">Given:</span>",
                         "Time taken by Sonia = 18 minutes",
@@ -412,7 +412,7 @@ export const mathCh1: ChapterContent = {
         },
         {
             "id": "exercise2",
-            "name": "Exercise 2.2",
+            "name": "Exercise 1.2",
             "questions": [
                 {
                     "id": "q1",
@@ -484,7 +484,7 @@ export const mathCh1: ChapterContent = {
                     "number": "3",
                     "question": "<span style=\"font-weight: normal;\">Prove that the following are irrationals:</span>",
                     "solution": [
-                        "<span style=\"font-weight: normal;\">(i) <sup>1</sup>&frasl;<sub>√2</sub></span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(i) <sup>1</sup>&frasl;<sub>√2</sub></strong>",
                         "<span style=\"font-weight: normal;\">Proof:</span>",
                         "Let us assume",
                         "<sup>1</sup>&frasl;<sub>√2</sub> is rational.",
@@ -497,7 +497,7 @@ export const mathCh1: ChapterContent = {
                         "But this contradicts the fact that √2 is irrational.",
                         "Hence, <sup>1</sup>&frasl;<sub>√2</sub> is irrational.",
                         "",
-                        "<span style=\"font-weight: normal;\">(ii) 7√5</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(ii) 7√5</strong>",
                         "<span style=\"font-weight: normal;\">Proof:</span>",
                         "Let us assume 7√5 is rational.",
                         "So, 7√5 = <sup>a</sup>&frasl;<sub>b</sub> (where a, b are co-prime integers, b ≠ 0).",
@@ -508,7 +508,7 @@ export const mathCh1: ChapterContent = {
                         "But this contradicts the fact that √5 is irrational.",
                         "Hence, 7√5 is irrational.",
                         "",
-                        "<span style=\"font-weight: normal;\">(iii) 6 + √2</span>",
+                        "<strong style=\"color: #FF6B6B; font-weight: normal;\">(iii) 6 + √2</strong>",
                         "<span style=\"font-weight: normal;\">Proof:</span>",
                         "Let us assume 6 + √2 is rational.",
                         "So, 6 + √2 = <sup>a</sup>&frasl;<sub>b</sub> (where a, b are co-prime integers, b ≠ 0).",
