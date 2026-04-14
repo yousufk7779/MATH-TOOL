@@ -64,7 +64,7 @@ export const mathCh11: ChapterContent = {
     <div class="content-box">
         <div class="section-title">1. Introduction</div>
         <div class="step">We are familiar with the area and circumference of a circle. In this chapter, we explore areas of two special parts of a circular region: Sector and Segment.</div>
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQ6dHJhbnNwYXJlbnQ7Ij48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjEwMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNIDE1MCAxNTAgTCAxNDkuOTk5OTk5OTk5OTk5OTcgNTAuMCBBIDEwMCAxMDAgMCAwIDEgMjM2LjYwMjU0MDM3ODQ0Mzg1IDk5Ljk5OTk5OTk5OTk5OTk2IFoiIGZpbGw9IiNlMGY3ZmEiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjxwYXRoIGQ9Ik0gMTAwLjAwMDAwMDAwMDAwMDAzIDIzNi42MDI1NDAzNzg0NDM4OCBBIDEwMCAxMDAgMCAwIDEgNjMuMzk3NDU5NjIxNTU2MTQgOTkuOTk5OTk5OTk5OTk5OTkgTCAxMDAuMDAwMDAwMDAwMDAwMDMgMjM2LjYwMjU0MDM3ODQ0Mzg4IFoiIGZpbGw9IiNmZmNjYmMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE4MCIgeT0iMTIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9ImJsYWNrIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NaW5vciBTZWN0b3I8L3RleHQ+PHRleHQgeD0iOTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJibGFjayIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2VnbWVudDwvdGV4dD48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjMiIGZpbGw9ImJsYWNrIi8+PHRleHQgeD0iMTQwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iYmxhY2siIHRleHQtYW5jaG9yPSJtaWRkbGUiPk88L3RleHQ+PC9zdmc+" alt="Sector and Segment Visual">
+       
     </div>
 
     <div class="content-box">

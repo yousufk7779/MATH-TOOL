@@ -9,8 +9,6 @@
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
       "backgroundColor": "#0B0F1A"
     },
     "ios": {
@@ -31,25 +29,16 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/splash.png",
-          "resizeMode": "contain",
-          "backgroundColor": "#0B0F1A",
-          "light": {
-            "backgroundColor": "#0B0F1A"
-          },
-          "dark": {
-            "backgroundColor": "#0B0F1A"
-          }
-        }
-      ],
       "expo-web-browser",
       "expo-asset"
     ],
     "experiments": {
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4d41feaa-1a22-40a1-8940-88a1a551f8c1"
+      }
     }
   }
 }

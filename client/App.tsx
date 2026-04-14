@@ -118,23 +118,17 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if ((fontsLoaded || fontError) && animationReady) {
-      // JS UI is fully ready (fonts, assets, and fade-in animation)
-      const startTransition = async () => {
-        // Small delay to ensure the native-to-JS transition is pixel perfect
-        // We hide native splash early to show the animated loading bar
-        setTimeout(async () => {
-          await SplashScreen.hideAsync().catch(() => {});
-        }, 100);
-
-        // Add 3500ms delay as requested before showing home screen
-        setTimeout(() => {
-          setAppIsReady(true);
-        }, 3500);
-      };
-      startTransition();
+    if (fontsLoaded || fontError) {
+      // JS UI is fully ready (fonts and assets)
+      // Hide native splash immediately since background colors match
+      SplashScreen.hideAsync().catch(() => {});
+      
+      const timer = setTimeout(() => {
+        setAppIsReady(true);
+      }, 3500);
+      return () => clearTimeout(timer);
     }
-  }, [fontsLoaded, fontError, animationReady]);
+  }, [fontsLoaded, fontError]);
 
   const onLoadingScreenReady = useCallback(() => {
     setAnimationReady(true);
