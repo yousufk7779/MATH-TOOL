@@ -129,7 +129,6 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
                         fontFamily: Fonts?.mono || "monospace",
                       },
                     ]}
-                    selectable
                   >
                     {formatErrorDetails()}
                   </Text>

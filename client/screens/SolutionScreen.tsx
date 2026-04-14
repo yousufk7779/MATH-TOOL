@@ -65,7 +65,7 @@ const HtmlText = memo(({ html, style, chapterId }: { html: string; style?: any, 
         padding: 0,
       }}
       systemFonts={systemFonts}
-      defaultTextProps={{ selectable: !isMath }}
+      defaultTextProps={{ selectable: false }}
       tagsStyles={tagsStyles}
       renderersProps={{
         img: {
@@ -227,8 +227,8 @@ function SolutionScreen() {
     const newShuffled: Record<string, string[]> = {};
     chapterData.mcqs.forEach((mcq: any) => {
       const options = [...mcq.options];
-      // ONLY shuffle options if it is NOT a Maths chapter
-      if (!isMathSection) {
+      // ONLY shuffle options if it is NOT a Maths chapter AND NOT a Science chapter
+      if (!isMathSection && !isScienceSection) {
         for (let i = options.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [options[i], options[j]] = [options[j], options[i]];

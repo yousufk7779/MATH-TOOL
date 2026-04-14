@@ -76,6 +76,8 @@ export default function NoteEditorScreen() {
                     value={title}
                     onChangeText={setTitle}
                     maxLength={50}
+                    contextMenuHidden={true}
+                    selectTextOnFocus={false}
                 />
 
                 <TextInput
@@ -86,6 +88,8 @@ export default function NoteEditorScreen() {
                     onChangeText={setContent}
                     multiline
                     textAlignVertical="top"
+                    contextMenuHidden={true}
+                    selectTextOnFocus={false}
                 />
             </KeyboardAvoidingView>
         </ScreenWrapper>

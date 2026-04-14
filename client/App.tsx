@@ -127,10 +127,10 @@ export default function App() {
           await SplashScreen.hideAsync().catch(() => {});
         }, 100);
 
-        // Add 2500ms delay as requested before showing home screen
+        // Add 3500ms delay as requested before showing home screen
         setTimeout(() => {
           setAppIsReady(true);
-        }, 2500);
+        }, 3500);
       };
       startTransition();
     }
@@ -170,6 +170,8 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: JiguuColors.background,
+    // @ts-ignore - Web only property to disable selection globally
+    userSelect: "none",
   },
   safeArea: {
     flex: 1,
