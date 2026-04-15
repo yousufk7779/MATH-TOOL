@@ -120,8 +120,7 @@ export default function App() {
   useEffect(() => {
     if (fontsLoaded || fontError) {
       // JS UI is fully ready (fonts and assets)
-      // Hide native splash immediately since background colors match
-      SplashScreen.hideAsync().catch(() => {});
+      // We will hide the splash screen once the loading screen animation is ready to avoid any flicker
       
       const timer = setTimeout(() => {
         setAppIsReady(true);
@@ -132,6 +131,8 @@ export default function App() {
 
   const onLoadingScreenReady = useCallback(() => {
     setAnimationReady(true);
+    // Hide native splash now that the loading screen has finished its initial fade-in
+    SplashScreen.hideAsync().catch(() => {});
   }, []);
 
   if (!appIsReady) {
