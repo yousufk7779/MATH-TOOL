@@ -1,6 +1,6 @@
 import React, { memo, useState, useCallback } from "react";
 import { StyleSheet, View, ScrollView, Pressable, RefreshControl, Alert } from "react-native";
-import { useNavigation, useFocusEffect } from "@react-navigation/native";
+import { useNavigation, useFocusEffect, useRoute, RouteProp } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
@@ -23,6 +23,8 @@ const NOTE_GRADIENTS = [
 
 function QuickNotesScreen() {
   const navigation = useNavigation<QuickNotesNavigationProp>();
+  const route = useRoute<RouteProp<RootStackParamList, "QuickNotes">>();
+  const className = route.params?.className;
   const [notes, setNotes] = useState<Note[]>([]);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -62,7 +64,7 @@ function QuickNotesScreen() {
   }, [loadNotes]);
 
   return (
-    <ScreenWrapper showBackButton>
+    <ScreenWrapper showBackButton hideHomeButton>
       <View style={styles.container}>
         <View style={styles.header}>
           <ThemedText style={[styles.title, { color: JiguuColors.accent1 }]}>
@@ -97,7 +99,7 @@ function QuickNotesScreen() {
                       borderColor: NOTE_GRADIENTS[note.gradientIndex % NOTE_GRADIENTS.length][1]
                     }
                   ]}
-                  onPress={() => navigation.navigate("NoteEditor", { note })}
+                  onPress={() => navigation.navigate("NoteEditor", { note, className })}
                   onLongPress={() => handleDelete(note.id)}
                 >
                   <View style={[
@@ -122,7 +124,7 @@ function QuickNotesScreen() {
         <Pressable
           delayPressIn={0}
           style={styles.fab}
-          onPress={() => navigation.navigate("NoteEditor")}
+          onPress={() => navigation.navigate("NoteEditor", { className })}
         >
           <Feather name="plus" size={24} color="#FFF" />
         </Pressable>

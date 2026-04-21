@@ -9,15 +9,16 @@ import { JiguuColors } from "@/constants/theme";
 interface ScreenWrapperProps {
   children: ReactNode;
   showBackButton?: boolean;
+  hideHomeButton?: boolean;
   title?: string;
   titleColor?: string;
 }
 
-export const ScreenWrapper = memo(function ScreenWrapper({ children, showBackButton = false, title, titleColor }: ScreenWrapperProps) {
+export const ScreenWrapper = memo(function ScreenWrapper({ children, showBackButton = false, hideHomeButton = false, title, titleColor }: ScreenWrapperProps) {
   return (
     <View style={styles.container}>
       <StaticHeader />
-      {showBackButton ? <NavigationButtons title={title} titleColor={titleColor} /> : null}
+      {showBackButton ? <NavigationButtons title={title} titleColor={titleColor} hideHomeButton={hideHomeButton} /> : null}
       <View style={styles.content}>{children}</View>
       <CreatorCredit />
     </View>

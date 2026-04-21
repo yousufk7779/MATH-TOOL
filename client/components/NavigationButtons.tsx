@@ -15,9 +15,10 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 interface NavigationButtonsProps {
   title?: string;
   titleColor?: string;
+  hideHomeButton?: boolean;
 }
 
-export const NavigationButtons = memo(function NavigationButtons({ title, titleColor }: NavigationButtonsProps) {
+export const NavigationButtons = memo(function NavigationButtons({ title, titleColor, hideHomeButton }: NavigationButtonsProps) {
   const navigation = useNavigation<NavigationProp>();
 
   const handleBack = useCallback(() => {
@@ -31,7 +32,10 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
     if (Platform.OS !== "web") {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
     }
-    navigation.navigate("Home");
+    navigation.reset({
+      index: 1,
+      routes: [{ name: "ClassSelector" }, { name: "Home" }],
+    });
   }, [navigation]);
 
   return (
@@ -70,24 +74,26 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
         </View>
       )}
 
-      <Pressable
-        testID="button-home"
-        delayPressIn={0}
-        style={({ pressed }) => [styles.buttonContainer, pressed && styles.cardPressed]}
-        onPress={handleHome}
-      >
-        <LinearGradient
-          colors={[JiguuColors.surfaceLight, JiguuColors.surface] as any}
-          start={{ x: 0, y: 0 }}
-          end={{ x: 1, y: 0 }}
-          style={styles.gradient}
+      {!hideHomeButton && (
+        <Pressable
+          testID="button-home"
+          delayPressIn={0}
+          style={({ pressed }) => [styles.buttonContainer, pressed && styles.cardPressed]}
+          onPress={handleHome}
         >
-          <View style={styles.borderInner}>
-            <Feather name="home" size={16} color={JiguuColors.textPrimary} />
-            <ThemedText style={styles.text}>Home</ThemedText>
-          </View>
-        </LinearGradient>
-      </Pressable>
+          <LinearGradient
+            colors={[JiguuColors.surfaceLight, JiguuColors.surface] as any}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0 }}
+            style={styles.gradient}
+          >
+            <View style={styles.borderInner}>
+              <Feather name="home" size={16} color={JiguuColors.textPrimary} />
+              <ThemedText style={styles.text}>Home</ThemedText>
+            </View>
+          </LinearGradient>
+        </Pressable>
+      )}
     </View>
   );
 });

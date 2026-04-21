@@ -1,5 +1,6 @@
 import React, { memo, useMemo } from "react";
 import { StyleSheet, View, Image, Text, Platform } from "react-native";
+import { useRoute } from "@react-navigation/native";
 
 import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Typography } from "@/constants/theme";
@@ -12,10 +13,17 @@ interface JiguuLogoProps {
 }
 
 export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = "medium" }: JiguuLogoProps) {
+  const route = useRoute();
   const { logoWidth, logoHeight } = useMemo(() => ({
     logoWidth: size === "small" ? 160 : size === "medium" ? 200 : 250,
     logoHeight: size === "small" ? 48 : size === "medium" ? 60 : 75,
   }), [size]);
+
+  let subtitleSuffix = "Class 10";
+  const params = route.params as any;
+  if (route.name === "Class9" || params?.className === "Class 9" || params?.subject === "Class 9") subtitleSuffix = "Class 9";
+  else if (route.name === "Class8" || params?.className === "Class 8" || params?.subject === "Class 8") subtitleSuffix = "Class 8";
+  else if (route.name === "Class7" || params?.className === "Class 7" || params?.subject === "Class 7") subtitleSuffix = "Class 7";
 
   return (
     <View style={styles.container}>
@@ -27,7 +35,7 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
       {showSubtitle ? (
         <Text style={styles.subtitle}>
           <Text style={styles.subtitleGray}>Learn Smart</Text>
-          <Text style={styles.subtitlePink}> • Class 10</Text>
+          <Text style={styles.subtitlePink}> • {subtitleSuffix}</Text>
         </Text>
       ) : null}
     </View>

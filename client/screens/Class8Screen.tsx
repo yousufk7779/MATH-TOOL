@@ -8,10 +8,10 @@ import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
+type Class8ScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Class8">;
 
-function HomeScreen() {
-  const navigation = useNavigation<HomeScreenNavigationProp>();
+function Class8Screen() {
+  const navigation = useNavigation<Class8ScreenNavigationProp>();
 
   return (
     <ScreenWrapper showBackButton hideHomeButton>
@@ -30,7 +30,7 @@ function HomeScreen() {
               title="MATHEMATICS"
               icon="📘"
               colors={JiguuColors.gradients.pink}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Mathematics" })}
+              onPress={() => navigation.navigate("ChapterList", { subject: "Class 8", topic: "Mathematics" })}
             />
           </View>
 
@@ -40,7 +40,7 @@ function HomeScreen() {
               title="SCIENCE"
               icon="🔬"
               colors={JiguuColors.gradients.purple}
-              onPress={() => navigation.navigate("ScienceTopics")}
+              onPress={() => navigation.navigate("ChapterList", { subject: "Class 8", topic: "Science" })}
             />
           </View>
 
@@ -50,7 +50,7 @@ function HomeScreen() {
               title="START QUIZ"
               icon="🎯"
               colors={JiguuColors.gradients.brightBlue}
-              onPress={() => navigation.navigate("Quiz")}
+              onPress={() => navigation.navigate("Quiz", { className: "Class 8" })}
             />
           </View>
 
@@ -60,17 +60,7 @@ function HomeScreen() {
               title="NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
-              onPress={() => navigation.navigate("QuickNotes")}
-            />
-          </View>
-
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-about"
-              title="ABOUT"
-              icon="👤"
-              colors={JiguuColors.gradients.deepOrange}
-              onPress={() => navigation.navigate("AboutEducator")}
+              onPress={() => navigation.navigate("QuickNotes", { className: "Class 8" })}
             />
           </View>
         </View>
@@ -79,7 +69,7 @@ function HomeScreen() {
   );
 }
 
-export default memo(HomeScreen);
+export default memo(Class8Screen);
 
 const styles = StyleSheet.create({
   scrollView: {

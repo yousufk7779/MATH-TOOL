@@ -10,7 +10,7 @@ import { JiguuLogo } from "@/components/JiguuLogo";
 
 function AboutEducatorScreen() {
   return (
-    <ScreenWrapper showBackButton>
+    <ScreenWrapper showBackButton hideHomeButton>
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.content}

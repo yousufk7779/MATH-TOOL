@@ -64,7 +64,7 @@ function ChapterListScreen() {
 
 
   return (
-    <ScreenWrapper showBackButton>
+    <ScreenWrapper showBackButton hideHomeButton>
       <FlatList
         data={displayChapters}
         renderItem={renderItem}

@@ -2,7 +2,7 @@
   "expo": {
     "name": "Learn Smart 10",
     "slug": "jiguu-math-solutions",
-    "version": "1.0.2",
+    "version": "1.0.7",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "jiguu-solutions",
@@ -15,16 +15,17 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.jiguu.mathsolutions"
+      "bundleIdentifier": "com.jiguu.mathtool"
     },
     "android": {
+      "versionCode": 7,
       "adaptiveIcon": {
         "backgroundColor": "#0B0F1A",
         "foregroundImage": "./assets/images/icon.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.jiguu.mathsolutions"
+      "package": "com.jiguu.mathtool"
     },
     "web": {
       "output": "single",
@@ -39,8 +40,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "4d41feaa-1a22-40a1-8940-88a1a551f8c1"
+        "projectId": "115d4047-b7ae-4d07-9c98-6d4a09fff8ab"
       }
-    }
+    },
+    "owner": "sameerk1379"
   }
 }

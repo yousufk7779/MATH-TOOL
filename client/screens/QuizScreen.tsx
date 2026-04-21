@@ -1,6 +1,6 @@
 import React, { memo, useState, useCallback, useEffect } from "react";
 import { StyleSheet, View, ScrollView, Pressable, Alert, Modal } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -15,6 +15,9 @@ type QuizState = "menu" | "active" | "result";
 
 export default function QuizScreen() {
     const navigation = useNavigation();
+    const route = useRoute<RouteProp<RootStackParamList, "Quiz">>();
+    const className = route.params?.className;
+
     const [viewState, setViewState] = useState<QuizState>("menu");
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -35,6 +38,11 @@ export default function QuizScreen() {
     };
 
     const startQuiz = useCallback(async (subject: string = "Mathematics") => {
+        if (className && className !== "Class 10") {
+            Alert.alert("Quiz Coming Soon", `Quiz content for ${className} is coming soon!`);
+            return;
+        }
+
         setLoading(true);
         try {
             const newQuestions = await generateQuizAsync(10, subject); // Generate 10 random questions
@@ -273,7 +281,7 @@ export default function QuizScreen() {
     };
 
     return (
-        <ScreenWrapper showBackButton={viewState !== "active"}>
+        <ScreenWrapper showBackButton={viewState !== "active"} hideHomeButton>
             <ScrollView contentContainerStyle={styles.scrollView} showsVerticalScrollIndicator={false}>
                 {viewState === "menu" && renderMenu()}
                 {viewState === "active" && renderActiveQuiz()}

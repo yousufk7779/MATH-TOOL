@@ -47,17 +47,32 @@ export default function App() {
     NotoSans_700Bold,
   });
 
-
-
   useEffect(() => {
     if (fontsLoaded || fontError) {
       setAppIsReady(true);
     }
+
+    // Robust fallback: Force app readiness after 3 seconds to prevent splash screen hang
+    const timeout = setTimeout(() => {
+      setAppIsReady(true);
+    }, 3000);
+    
+    return () => clearTimeout(timeout);
   }, [fontsLoaded, fontError]);
 
   const onLayoutRootView = useCallback(async () => {
     if (appIsReady) {
       await SplashScreen.hideAsync().catch(() => {});
+    }
+  }, [appIsReady]);
+
+  // Fallback to hide splash screen in case onLayoutRootView is delayed or fails on Android
+  useEffect(() => {
+    if (appIsReady) {
+      const splashTimeout = setTimeout(async () => {
+        await SplashScreen.hideAsync().catch(() => {});
+      }, 1000);
+      return () => clearTimeout(splashTimeout);
     }
   }, [appIsReady]);
 

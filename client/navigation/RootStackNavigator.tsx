@@ -17,10 +17,18 @@ import NoteEditorScreen from "@/screens/NoteEditorScreen";
 import QuizScreen from "@/screens/QuizScreen";
 
 
-export type RootStackParamList = {
-  Home: undefined;
-  ScienceTopics: undefined;
+import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
+import Class9Screen from "@/screens/Class9Screen";
+import Class8Screen from "@/screens/Class8Screen";
+import Class7Screen from "@/screens/Class7Screen";
 
+export type RootStackParamList = {
+  ClassSelector: undefined;
+  Home: undefined;
+  Class9: undefined;
+  Class8: undefined;
+  Class7: undefined;
+  ScienceTopics: undefined;
   ChapterList: { subject?: string; topic?: string } | undefined;
   Solution: {
     chapterId: string;
@@ -28,9 +36,9 @@ export type RootStackParamList = {
     exerciseId?: string;
     questionId?: string;
   };
-  QuickNotes: undefined;
-  NoteEditor: { note?: Note } | undefined;
-  Quiz: undefined;
+  QuickNotes: { className?: string } | undefined;
+  NoteEditor: { note?: Note; className?: string } | undefined;
+  Quiz: { className?: string } | undefined;
   NewsEvents: undefined;
   AboutEducator: undefined;
   GlobalPYQ: undefined;
@@ -47,7 +55,11 @@ export default function RootStackNavigator() {
         contentStyle: { backgroundColor: JiguuColors.background },
       }}
     >
+      <Stack.Screen name="ClassSelector" component={ClassSelectorScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Class9" component={Class9Screen} />
+      <Stack.Screen name="Class8" component={Class8Screen} />
+      <Stack.Screen name="Class7" component={Class7Screen} />
       <Stack.Screen name="ScienceTopics" component={ScienceTopicsScreen} />
 
       <Stack.Screen name="ChapterList" component={ChapterListScreen} />

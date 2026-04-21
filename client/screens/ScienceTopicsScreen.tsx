@@ -16,7 +16,7 @@ function ScienceTopicsScreen() {
     const isLandscape = width > height;
 
     return (
-        <ScreenWrapper showBackButton>
+        <ScreenWrapper showBackButton hideHomeButton>
             <ScrollView
                 style={styles.scrollView}
                 contentContainerStyle={[
