@@ -21,9 +21,28 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
 
   let subtitleSuffix = "Class 10";
   const params = route.params as any;
-  if (route.name === "Class9" || params?.className === "Class 9" || params?.subject === "Class 9") subtitleSuffix = "Class 9";
-  else if (route.name === "Class8" || params?.className === "Class 8" || params?.subject === "Class 8") subtitleSuffix = "Class 8";
-  else if (route.name === "Class7" || params?.className === "Class 7" || params?.subject === "Class 7") subtitleSuffix = "Class 7";
+
+  const isClass9 = 
+    route.name === "Class9" || 
+    params?.className === "Class 9" || 
+    (typeof params?.subject === "string" && params.subject.includes("Class 9")) || 
+    (typeof params?.chapterId === "string" && params.chapterId.startsWith("c9-"));
+
+  const isClass8 = 
+    route.name === "Class8" || 
+    params?.className === "Class 8" || 
+    (typeof params?.subject === "string" && params.subject.includes("Class 8")) || 
+    (typeof params?.chapterId === "string" && params.chapterId.startsWith("c8-"));
+
+  const isClass7 = 
+    route.name === "Class7" || 
+    params?.className === "Class 7" || 
+    (typeof params?.subject === "string" && params.subject.includes("Class 7")) || 
+    (typeof params?.chapterId === "string" && params.chapterId.startsWith("c7-"));
+
+  if (isClass9) subtitleSuffix = "Class 9";
+  else if (isClass8) subtitleSuffix = "Class 8";
+  else if (isClass7) subtitleSuffix = "Class 7";
 
   return (
     <View style={styles.container}>

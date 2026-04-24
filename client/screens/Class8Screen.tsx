@@ -40,7 +40,7 @@ function Class8Screen() {
               title="SCIENCE"
               icon="🔬"
               colors={JiguuColors.gradients.purple}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Class 8", topic: "Science" })}
+              onPress={() => navigation.navigate("ScienceTopics", { className: "Class 8" })}
             />
           </View>
 

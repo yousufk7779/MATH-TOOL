@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { StyleSheet, View, ScrollView, useWindowDimensions } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
@@ -12,8 +12,12 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 function ScienceTopicsScreen() {
     const navigation = useNavigation<NavigationProp>();
+    const route = useRoute<RouteProp<RootStackParamList, "ScienceTopics">>();
     const { width, height } = useWindowDimensions();
     const isLandscape = width > height;
+
+    const className = route.params?.className;
+    const subjectName = className ? `${className} Science` : "Science";
 
     return (
         <ScreenWrapper showBackButton hideHomeButton>
@@ -38,7 +42,7 @@ function ScienceTopicsScreen() {
                             testID="button-physics"
                             title="PHYSICS"
                             colors={JiguuColors.gradients.deepOrange}
-                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Physics" })}
+                            onPress={() => navigation.navigate("ChapterList", { subject: subjectName, topic: "Physics" })}
                         />
                     </View>
 
@@ -47,7 +51,7 @@ function ScienceTopicsScreen() {
                             testID="button-chemistry"
                             title="CHEMISTRY"
                             colors={JiguuColors.gradients.purple}
-                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Chemistry" })}
+                            onPress={() => navigation.navigate("ChapterList", { subject: subjectName, topic: "Chemistry" })}
                         />
                     </View>
 
@@ -56,7 +60,7 @@ function ScienceTopicsScreen() {
                             testID="button-biology"
                             title="LIFE SCIENCE"
                             colors={JiguuColors.gradients.green}
-                            onPress={() => navigation.navigate("ChapterList", { subject: "Science", topic: "Biology" })}
+                            onPress={() => navigation.navigate("ChapterList", { subject: subjectName, topic: "Biology" })}
                         />
                     </View>
                 </View>

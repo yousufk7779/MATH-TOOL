@@ -486,6 +486,8 @@ function SolutionScreen() {
   } else if (chapterId.startsWith("eng-")) {
     tab1Title = "Summary";
     tab2Title = "Q & A";
+  } else if (chapterId.startsWith("c9-sci-")) {
+    tab2Title = "NCERT Solutions";
   }
 
   return (

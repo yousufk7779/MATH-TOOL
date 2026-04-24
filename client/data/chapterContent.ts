@@ -81,6 +81,7 @@ import { engGra2 } from "./content/eng-gra-2";
 import { engGra3 } from "./content/eng-gra-3";
 import { engGra4 } from "./content/eng-gra-4";
 import { engGra5 } from "./content/eng-gra-5";
+import { c9SciPhy1 } from "./content/c9-sci-phy-1";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "ch1": mathCh1,
@@ -155,7 +156,43 @@ export const chapterContents: Record<string, ChapterContent> = {
   "eng-gra-3": engGra3,
   "eng-gra-4": engGra4,
   "eng-gra-5": engGra5,
+  "c9-sci-phy-1": c9SciPhy1,
 };
+
+const createEmptyContent = (id: string, num: number, title: string): ChapterContent => ({
+  id,
+  number: num,
+  title,
+  introduction: "",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  exercises: [],
+  examples: [],
+  mcqs: [],
+  summary: []
+});
+
+const emptyChapters: string[] = [];
+[9, 8, 7].forEach(c => {
+  for (let i = 1; i <= 14; i++) {
+    emptyChapters.push(`c${c}-math-${i}`);
+  }
+  for (let i = 1; i <= 3; i++) {
+    emptyChapters.push(`c${c}-sci-phy-${i}`);
+    emptyChapters.push(`c${c}-sci-chem-${i}`);
+    emptyChapters.push(`c${c}-sci-bio-${i}`);
+  }
+});
+
+emptyChapters.forEach(id => {
+  if (!chapterContents[id]) {
+    const num = parseInt(id.split("-").pop() || "1");
+    chapterContents[id] = createEmptyContent(id, num, `Chapter ${num}`);
+  }
+});
+
 
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
