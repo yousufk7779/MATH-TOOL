@@ -386,7 +386,11 @@ function SolutionScreen() {
                 <View key={sub} style={{ display: isActiveSub ? 'flex' : 'none', gap: Spacing.lg, width: "100%" }}>
                   {questions?.map((q: any) => (
                     <View key={q.id} style={{ backgroundColor: JiguuColors.surface, padding: Spacing.md, borderRadius: BorderRadius.md }}>
-                      <HtmlText chapterId={chapterId} html={sub === 'theorems' ? `Theorem ${q.number}:<br/>${q.question}` : `Q${q.number}. ${q.question}`} style={[scaledQuestionTitle, { color: accentColor, marginBottom: Spacing.sm }]} />
+                      <HtmlText 
+                        chapterId={chapterId} 
+                        html={sub === 'theorems' ? `Theorem ${q.number}:<br/>${q.question}` : (q.number ? `Q${q.number}. ${q.question}` : q.question)} 
+                        style={[scaledQuestionTitle, { color: accentColor, marginBottom: Spacing.sm }]} 
+                      />
                       <View style={{ marginTop: Spacing.sm, paddingLeft: Spacing.sm, borderLeftWidth: 2, borderLeftColor: JiguuColors.border }}>
                         {q.solution?.map((step: string, sIdx: number) => (
                           <View key={sIdx} style={{ marginBottom: Spacing.xs }}>
