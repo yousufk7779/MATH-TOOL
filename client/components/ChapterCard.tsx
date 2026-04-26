@@ -37,6 +37,8 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
 
   const backgroundColors = colors || (isAvailable ? [color, color + '99'] : [JiguuColors.surface, JiguuColors.surface]);
 
+  const isGlossy = backgroundColors[0] === "#FFA726";
+
   return (
     <Pressable
       testID={testID}
@@ -48,35 +50,44 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
         styles.cardContainer,
         !isAvailable && styles.cardDisabled,
         pressed && styles.cardPressed,
+        isGlossy && {
+          shadowColor: "#FFA726",
+          shadowOpacity: 0.8,
+          shadowRadius: 15,
+          elevation: 15,
+        }
       ]}
     >
-      <LinearGradient
-        colors={backgroundColors as any}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.card}
-      >
-        <View style={styles.borderInner}>
-          <View style={styles.numberContainer}>
-            <ThemedText style={styles.number}>{number}</ThemedText>
-          </View>
-          <View style={styles.nameContainer}>
-            <ThemedText style={styles.name} numberOfLines={2}>
-              {name}
-            </ThemedText>
-          </View>
-          {isAvailable ? (
-            <View style={styles.chevronIcon}>
-              <View style={styles.chevronTop} />
-              <View style={styles.chevronBottom} />
+      <View style={styles.cardWrapper}>
+        <LinearGradient
+          colors={backgroundColors as any}
+          start={{ x: 0.5, y: 0 }}
+          end={{ x: 0.5, y: 1 }}
+          style={styles.card}
+        >
+          <View style={styles.borderInner}>
+            <View style={styles.numberContainer}>
+              <ThemedText style={styles.number}>{number}</ThemedText>
             </View>
-          ) : (
-            <View style={styles.chevronIcon}>
-              <Feather name="lock" size={20} color="rgba(255,255,255,0.6)" />
+            <View style={styles.nameContainer}>
+              <ThemedText style={styles.name} numberOfLines={2}>
+                {name}
+              </ThemedText>
             </View>
-          )}
-        </View>
-      </LinearGradient>
+            {isAvailable ? (
+              <View style={styles.chevronIcon}>
+                <View style={styles.chevronTop} />
+                <View style={styles.chevronBottom} />
+              </View>
+            ) : (
+              <View style={styles.chevronIcon}>
+                <Feather name="lock" size={20} color="rgba(255,255,255,0.6)" />
+              </View>
+            )}
+          </View>
+        </LinearGradient>
+        {isGlossy && <View style={styles.glossOverlay} />}
+      </View>
     </Pressable>
   );
 });
@@ -162,5 +173,18 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderRadius: 2,
     transform: [{ rotate: "-45deg" }],
+  },
+  cardWrapper: {
+    flex: 1,
+    borderRadius: BorderRadius.xl,
+    overflow: 'hidden',
+  },
+  glossOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
   },
 });

@@ -87,33 +87,39 @@ interface TabButtonProps {
   textStyle?: any;
 }
 
-const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabButtonProps) => (
-  <Pressable
-    delayPressIn={0}
-    style={({ pressed }) => [
-      styles.tabButton,
-      pressed && { opacity: 0.8 },
-    ]}
-    onPress={onPress}
-  >
-    {isActive ? (
-      <LinearGradient
-        colors={gradient as any}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.tabButtonGradient}
-      >
-        <ThemedText style={[styles.tabText, styles.tabTextActive, textStyle]}>
+const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabButtonProps) => {
+  const isGlossy = gradient[0] === "#FFA726";
+  return (
+    <Pressable
+      delayPressIn={0}
+      style={({ pressed }) => [
+        styles.tabButton,
+        pressed && { opacity: 0.8 },
+      ]}
+      onPress={onPress}
+    >
+      {isActive ? (
+        <View style={styles.tabButtonWrapper}>
+          <LinearGradient
+            colors={gradient as any}
+            start={{ x: 0.5, y: 0 }}
+            end={{ x: 0.5, y: 1 }}
+            style={styles.tabButtonGradient}
+          >
+            <ThemedText style={[styles.tabText, styles.tabTextActive, textStyle]}>
+              {title}
+            </ThemedText>
+          </LinearGradient>
+          {isGlossy && <View style={styles.glossOverlay} />}
+        </View>
+      ) : (
+        <ThemedText style={[styles.tabText, textStyle]}>
           {title}
         </ThemedText>
-      </LinearGradient>
-    ) : (
-      <ThemedText style={[styles.tabText, textStyle]}>
-        {title}
-      </ThemedText>
-    )}
-  </Pressable>
-));
+      )}
+    </Pressable>
+  );
+});
 
 interface SubTabButtonProps {
   title: string;
@@ -123,33 +129,39 @@ interface SubTabButtonProps {
   textStyle?: any;
 }
 
-const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => (
-  <Pressable
-    delayPressIn={0}
-    style={({ pressed }) => [
-      styles.subTabButton,
-      pressed && { opacity: 0.8 },
-    ]}
-    onPress={onPress}
-  >
-    {isActive ? (
-      <LinearGradient
-        colors={gradient as any}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.tabButtonGradient}
-      >
-        <ThemedText style={[styles.tabText, styles.tabTextActive, textStyle]}>
+const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => {
+  const isGlossy = gradient[0] === "#FFA726";
+  return (
+    <Pressable
+      delayPressIn={0}
+      style={({ pressed }) => [
+        styles.subTabButton,
+        pressed && { opacity: 0.8 },
+      ]}
+      onPress={onPress}
+    >
+      {isActive ? (
+        <View style={styles.tabButtonWrapper}>
+          <LinearGradient
+            colors={gradient as any}
+            start={{ x: 0.5, y: 0 }}
+            end={{ x: 0.5, y: 1 }}
+            style={styles.tabButtonGradient}
+          >
+            <ThemedText style={[styles.tabText, styles.tabTextActive, textStyle]}>
+              {title}
+            </ThemedText>
+          </LinearGradient>
+          {isGlossy && <View style={styles.glossOverlay} />}
+        </View>
+      ) : (
+        <ThemedText style={[styles.tabText, textStyle]}>
           {title}
         </ThemedText>
-      </LinearGradient>
-    ) : (
-      <ThemedText style={[styles.tabText, textStyle]}>
-        {title}
-      </ThemedText>
-    )}
-  </Pressable>
-));
+      )}
+    </Pressable>
+  );
+});
 
 interface SubSectionProps {
   title: string;
@@ -677,4 +689,13 @@ const styles = StyleSheet.create({
   subTabContainer: { paddingHorizontal: Spacing.lg, gap: Spacing.sm, alignItems: "center", justifyContent: "center", flexGrow: 1 },
   subTabButton: { paddingVertical: 6, paddingHorizontal: 16, alignItems: "center", borderRadius: BorderRadius.full, borderWidth: 1.5, borderColor: 'rgba(255,255,255,0.2)', backgroundColor: JiguuColors.surface, overflow: 'hidden' },
   subTabButtonActive: { borderColor: "transparent" },
+  tabButtonWrapper: { width: '100%', height: '100%', borderRadius: BorderRadius.full, overflow: 'hidden' },
+  glossOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+  },
 });

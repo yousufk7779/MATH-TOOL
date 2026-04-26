@@ -158,6 +158,35 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
 
 export function getChapterGradient(chapter: Chapter | string): string[] {
   const chapterId = typeof chapter === "string" ? chapter : chapter.id;
+  
+  // Targeted theme color replacement for Chemistry Chapter 2 and Math Chapter 7
+  const cyanTargetedIds = [
+    "sci-chem-2", "c9-sci-chem-2", "c8-sci-chem-2", "c7-sci-chem-2",
+    "ch7", "c9-math-7", "c8-math-7", "c7-math-7"
+  ];
+  
+  if (cyanTargetedIds.includes(chapterId)) {
+    return ["#00E5FF", "#0099CC"];
+  }
+
+  // Targeted theme color replacement for Math Chapter 6 (Pink)
+  const pinkTargetedIds = [
+    "ch6", "c9-math-6", "c8-math-6", "c7-math-6"
+  ];
+
+  if (pinkTargetedIds.includes(chapterId)) {
+    return ["#FF6CAB", "#D61A8D"];
+  }
+
+  // Targeted theme color replacement for Chemistry Chapter 4 (Green-Cyan)
+  const greenCyanTargetedIds = [
+    "sci-chem-4", "c9-sci-chem-4", "c8-sci-chem-4", "c7-sci-chem-4"
+  ];
+
+  if (greenCyanTargetedIds.includes(chapterId)) {
+    return ["#FFA726", "#FB8C00"];
+  }
+
   const gradientList = Object.values(JiguuColors.gradients) as string[][];
   
   // Deterministic mapping for consistency between list and screen

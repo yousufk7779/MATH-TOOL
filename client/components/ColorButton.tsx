@@ -47,6 +47,8 @@ export const ColorButton = memo(function ColorButton({
   const backgroundColors = (colors || (color ? [color, color] : JiguuColors.primaryGradient)) as any;
   const shadowColor = backgroundColors[0] || "#000";
 
+  const isGlossy = backgroundColors[0] === "#FFA726";
+
   return (
     <Pressable
       testID={testID}
@@ -57,35 +59,38 @@ export const ColorButton = memo(function ColorButton({
       style={({ pressed }) => [
         styles.buttonContainer,
         {
-          shadowColor: glow ? shadowColor : "#000",
-          shadowOpacity: glow ? 0.6 : 0.25,
-          shadowRadius: glow ? 10 : 3.84,
-          elevation: glow ? 12 : 4,
+          shadowColor: isGlossy ? "#FFA726" : (glow ? shadowColor : "#000"),
+          shadowOpacity: isGlossy ? 0.8 : (glow ? 0.6 : 0.25),
+          shadowRadius: isGlossy ? 15 : (glow ? 10 : 3.84),
+          elevation: isGlossy ? 15 : (glow ? 12 : 4),
           transform: [{ scale: pressed ? 0.95 : 1 }],
         },
         style,
       ]}
     >
-      <LinearGradient
-        colors={backgroundColors}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.gradient}
-      >
-        <View style={styles.borderInner}>
-          {icon ? (
-            <View style={styles.iconWrapper}>
-              <ThemedText style={styles.iconText}>{icon}</ThemedText>
-            </View>
-          ) : null}
-          <ThemedText
-            style={styles.buttonText}
-            numberOfLines={1}
-          >
-            {title.replace(/ /g, '\u00A0')}
-          </ThemedText>
-        </View>
-      </LinearGradient>
+      <View style={styles.buttonWrapper}>
+        <LinearGradient
+          colors={backgroundColors}
+          start={{ x: 0.5, y: 0 }}
+          end={{ x: 0.5, y: 1 }}
+          style={styles.gradient}
+        >
+          <View style={styles.borderInner}>
+            {icon ? (
+              <View style={styles.iconWrapper}>
+                <ThemedText style={styles.iconText}>{icon}</ThemedText>
+              </View>
+            ) : null}
+            <ThemedText
+              style={styles.buttonText}
+              numberOfLines={1}
+            >
+              {title.replace(/ /g, '\u00A0')}
+            </ThemedText>
+          </View>
+        </LinearGradient>
+        {isGlossy && <View style={styles.glossOverlay} />}
+      </View>
     </Pressable>
   );
 });
@@ -130,5 +135,18 @@ const styles = StyleSheet.create({
     width: '100%',
     textAlign: "center",
     textTransform: 'uppercase',
+  },
+  buttonWrapper: {
+    flex: 1,
+    borderRadius: BorderRadius.xl,
+    overflow: 'hidden',
+  },
+  glossOverlay: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    height: '50%',
+    backgroundColor: 'rgba(255, 255, 255, 0.3)',
   },
 });
