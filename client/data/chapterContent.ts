@@ -90,6 +90,7 @@ import { c9SciPhy6 } from "./content/c9-sci-phy-6";
 import { c9SciChem1 } from "./content/c9-sci-chem-1";
 import { c9SciChem2 } from "./content/c9-sci-chem-2";
 import { c9SciChem3 } from "./content/c9-sci-chem-3";
+import { c9SciChem4 } from "./content/c9-sci-chem-4";
 
 export const chapterContents: Record<string, ChapterContent> = {
   "ch1": mathCh1,
@@ -173,6 +174,7 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c9-sci-chem-1": c9SciChem1,
   "c9-sci-chem-2": c9SciChem2,
   "c9-sci-chem-3": c9SciChem3,
+  "c9-sci-chem-4": c9SciChem4,
 };
 
 const createEmptyContent = (id: string, num: number, title: string): ChapterContent => ({

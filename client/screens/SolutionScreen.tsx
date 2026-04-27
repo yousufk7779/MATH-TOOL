@@ -51,8 +51,59 @@ const HtmlText = memo(({ html, style, chapterId }: { html: string; style?: any, 
     span: { fontFamily: 'NotoSans_400Regular', textAlign: isJustified ? 'justify' : 'left' },
     sup: { fontSize: 12, lineHeight: 16 },
     sub: { fontSize: 12, lineHeight: 16 },
-    img: { alignSelf: 'center', marginVertical: 10, maxWidth: width - 32 },
-    table: { maxWidth: width - 32 },
+    View: { flexDirection: 'column' },
+    Text: { color: JiguuColors.textPrimary, fontFamily: 'NotoSans_400Regular' },
+    webview: { flex: 1, height: 250, marginVertical: 10 },
+  };
+
+  const renderers = {
+    webview: ({ tnode }: any) => {
+      // Extract inner HTML from the custom tag
+      const htmlContent = tnode.init.domNode.children[0]?.data || "";
+      return (
+        <View style={{ height: 250, width: width - 32, marginVertical: 10, borderRadius: 8, overflow: 'hidden' }}>
+          <WebView
+            originWhitelist={['*']}
+            source={{ 
+              html: `
+                <html>
+                  <head>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <style>
+                      body { 
+                        background-color: transparent; 
+                        color: white; 
+                        font-family: sans-serif; 
+                        margin: 0; 
+                        padding: 10px;
+                      }
+                      table { 
+                        width: 100%; 
+                        border-collapse: collapse; 
+                        border: 1px solid white; 
+                      }
+                      th, td { 
+                        border: 1px solid white; 
+                        padding: 8px; 
+                        text-align: center; 
+                        font-size: 12px;
+                      }
+                      th { 
+                        background-color: #FFA726; 
+                        color: black; 
+                      }
+                    </style>
+                  </head>
+                  <body>${htmlContent}</body>
+                </html>
+              ` 
+            }}
+            style={{ backgroundColor: 'transparent' }}
+            scrollEnabled={true}
+          />
+        </View>
+      );
+    }
   };
 
   return (
@@ -67,6 +118,7 @@ const HtmlText = memo(({ html, style, chapterId }: { html: string; style?: any, 
       systemFonts={systemFonts}
       defaultTextProps={{ selectable: false }}
       tagsStyles={tagsStyles}
+      renderers={renderers as any}
       renderersProps={{
         img: {
           enableExperimentalPercentWidth: true,
