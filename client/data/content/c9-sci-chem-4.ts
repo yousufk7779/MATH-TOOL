@@ -151,7 +151,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-1-h1",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part I</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part I</div>",
                     solution: [],
                     answer: ""
                 },
@@ -178,7 +178,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-1-h2",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part II</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part II</div>",
                     solution: [],
                     answer: ""
                 },
@@ -231,7 +231,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-2-h1",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part I</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part I</div>",
                     solution: [],
                     answer: ""
                 },
@@ -258,7 +258,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-2-h2",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part II</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part II</div>",
                     solution: [],
                     answer: ""
                 },
@@ -291,7 +291,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-3-h1",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part I</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part I</div>",
                     solution: [],
                     answer: ""
                 },
@@ -328,7 +328,7 @@ export const c9SciChem4: ChapterContent = {
                 {
                     id: "c9-sci-chem-4-it-3-h2",
                     number: "",
-                    question: "<div style='text-align: center; color: #FFA726;'>Part II</div>",
+                    question: "<div style='text-align: center; width: 100%; display: block; margin-top: 10px; margin-bottom: 10px; color: #FFA726;'>Part II</div>",
                     solution: [],
                     answer: ""
                 },
