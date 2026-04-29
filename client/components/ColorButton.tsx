@@ -47,7 +47,7 @@ export const ColorButton = memo(function ColorButton({
   const backgroundColors = (colors || (color ? [color, color] : JiguuColors.primaryGradient)) as any;
   const shadowColor = backgroundColors[0] || "#000";
 
-  const isGlossy = backgroundColors[0] === "#FFA726";
+  const isGlossy = backgroundColors[0] === "#FFA726" || backgroundColors[0] === "#7CFF00" || backgroundColors[0] === "#FF4DA6";
 
   return (
     <Pressable

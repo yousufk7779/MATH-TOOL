@@ -140,7 +140,7 @@ interface TabButtonProps {
 }
 
 const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabButtonProps) => {
-  const isGlossy = gradient[0] === "#FFA726";
+  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6";
   return (
     <Pressable
       delayPressIn={0}
@@ -182,7 +182,7 @@ interface SubTabButtonProps {
 }
 
 const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => {
-  const isGlossy = gradient[0] === "#FFA726";
+  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6";
   return (
     <Pressable
       delayPressIn={0}

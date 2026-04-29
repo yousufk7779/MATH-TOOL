@@ -1,5 +1,6 @@
 import easyMathsMcqs from "../data/easy_mcqs_maths.json";
 import easyScienceMcqs from "../data/easy_mcqs_science.json";
+import easyScienceC9Mcqs from "../data/easy_mcqs_science_c9.json";
 
 export interface QuizQuestion {
     id: string;
@@ -20,7 +21,32 @@ const shuffleArray = <T>(array: T[]): T[] => {
     return shuffled;
 };
 
-export const generateQuizAsync = async (questionCount: number = 10, subject: string = "Mathematics"): Promise<QuizQuestion[]> => {
+export const generateQuizAsync = async (questionCount: number = 10, subject: string = "Mathematics", className: string = "Class 10"): Promise<QuizQuestion[]> => {
+    if (className === "Class 9") {
+        if (subject === "Science") {
+            const scienceMcqs = easyScienceC9Mcqs as QuizQuestion[];
+            const physics = scienceMcqs.filter(q => q.subject === "physics");
+            const chemistry = scienceMcqs.filter(q => q.subject === "chemistry");
+            const life = scienceMcqs.filter(q => q.subject === "life");
+
+            // Pick 3 from each category (total 9) to ensure balance in C9
+            const p3 = shuffleArray(physics).slice(0, 3);
+            const c3 = shuffleArray(chemistry).slice(0, 3);
+            const l3 = shuffleArray(life).slice(0, 3);
+
+            const selectedIds = new Set([...p3, ...c3, ...l3].map(q => q.id));
+            const remaining = scienceMcqs.filter(q => !selectedIds.has(q.id));
+            
+            // Pick remaining 1 randomly to make it 10
+            const r1 = shuffleArray(remaining).slice(0, questionCount - selectedIds.size);
+            
+            const finalSet = [...p3, ...c3, ...l3, ...r1];
+            return shuffleArray(finalSet);
+        }
+        // Fallback for Maths C9 if ever needed
+        return [];
+    }
+
     if (subject === "Mathematics") {
         return shuffleArray(easyMathsMcqs as QuizQuestion[]).slice(0, questionCount);
     }
@@ -52,3 +78,4 @@ export const generateQuizAsync = async (questionCount: number = 10, subject: str
 export const generateQuiz = (questionCount: number = 10): QuizQuestion[] => {
     return [];
 };
+

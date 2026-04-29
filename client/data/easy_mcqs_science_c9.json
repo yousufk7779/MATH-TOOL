@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "c9-s-1",
+    "question": "What is the SI unit of distance?",
+    "options": ["(A) Centimetre", "(B) Metre", "(C) Kilometre", "(D) Millimetre"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-2",
+    "question": "The rate of change of displacement is called:",
+    "options": ["(A) Speed", "(B) Velocity", "(C) Acceleration", "(D) Force"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-3",
+    "question": "Which of the following is a vector quantity?",
+    "options": ["(A) Mass", "(B) Distance", "(C) Velocity", "(D) Time"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-4",
+    "question": "A body moving in a circular path with constant speed has:",
+    "options": ["(A) Constant velocity", "(B) Variable speed", "(C) Acceleration", "(D) No acceleration"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-5",
+    "question": "The slope of a distance-time graph represents:",
+    "options": ["(A) Speed", "(B) Acceleration", "(C) Force", "(D) Distance"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-6",
+    "question": "Newton's first law of motion is also called the law of:",
+    "options": ["(A) Force", "(B) Inertia", "(C) Momentum", "(D) Acceleration"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-7",
+    "question": "The SI unit of force is:",
+    "options": ["(A) Joule", "(B) Watt", "(C) Newton", "(D) Pascal"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-8",
+    "question": "Momentum is the product of mass and:",
+    "options": ["(A) Acceleration", "(B) Velocity", "(C) Force", "(D) Distance"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-9",
+    "question": "The action and reaction forces act on:",
+    "options": ["(A) Same body", "(B) Different bodies", "(C) Any body", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-10",
+    "question": "Inertia of an object depends on its:",
+    "options": ["(A) Velocity", "(B) Acceleration", "(C) Mass", "(D) Shape"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-11",
+    "question": "The value of acceleration due to gravity (g) on Earth is approx:",
+    "options": ["(A) 9.8 m/s²", "(B) 8.9 m/s²", "(C) 10 m/s²", "(D) 5 m/s²"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-12",
+    "question": "Universal law of gravitation was given by:",
+    "options": ["(A) Einstein", "(B) Newton", "(C) Galileo", "(D) Kepler"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-13",
+    "question": "The weight of an object on the moon is ________ its weight on Earth.",
+    "options": ["(A) Equal to", "(B) 1/6th of", "(C) 6 times", "(D) 1/2 of"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-14",
+    "question": "Density is defined as:",
+    "options": ["(A) Mass / Volume", "(B) Volume / Mass", "(C) Mass x Volume", "(D) Mass + Volume"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-15",
+    "question": "The upward force exerted by a liquid on an object is called:",
+    "options": ["(A) Gravitational force", "(B) Buoyant force", "(C) Frictional force", "(D) Magnetic force"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-16",
+    "question": "Work done is zero when the angle between force and displacement is:",
+    "options": ["(A) 0°", "(B) 45°", "(C) 90°", "(D) 180°"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-17",
+    "question": "The SI unit of energy is:",
+    "options": ["(A) Watt", "(B) Joule", "(C) Newton", "(D) Pascal"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-18",
+    "question": "Power is defined as the rate of doing:",
+    "options": ["(A) Force", "(B) Energy", "(C) Work", "(D) Motion"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-19",
+    "question": "1 kilowatt-hour (kWh) is equal to:",
+    "options": ["(A) 3.6 x 10⁶ J", "(B) 3600 J", "(C) 1000 J", "(D) 1 J"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-20",
+    "question": "Energy possessed by a stretched rubber band is:",
+    "options": ["(A) Kinetic energy", "(B) Potential energy", "(C) Heat energy", "(D) Light energy"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-21",
+    "question": "Sound is a ________ wave.",
+    "options": ["(A) Transverse", "(B) Longitudinal", "(C) Electromagnetic", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-22",
+    "question": "The number of oscillations per unit time is called:",
+    "options": ["(A) Amplitude", "(B) Wavelength", "(C) Frequency", "(D) Speed"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-23",
+    "question": "The speed of sound is maximum in:",
+    "options": ["(A) Solids", "(B) Liquids", "(C) Gases", "(D) Vacuum"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-24",
+    "question": "The human ear can hear sounds in the range:",
+    "options": ["(A) 0-20 Hz", "(B) 20-20,000 Hz", "(C) Above 20,000 Hz", "(D) 100-1000 Hz"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-25",
+    "question": "Distance between two consecutive compressions is:",
+    "options": ["(A) Amplitude", "(B) Wavelength", "(C) Frequency", "(D) Time period"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-26",
+    "question": "Anything that occupies space and has mass is called:",
+    "options": ["(A) Energy", "(B) Matter", "(C) Force", "(D) Light"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-27",
+    "question": "The process of change of state from solid to liquid is called:",
+    "options": ["(A) Fusion", "(B) Solidification", "(C) Vaporization", "(D) Sublimation"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-28",
+    "question": "Which of the following has the strongest intermolecular forces?",
+    "options": ["(A) Solid", "(B) Liquid", "(C) Gas", "(D) Plasma"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-29",
+    "question": "The boiling point of water in Kelvin is:",
+    "options": ["(A) 273 K", "(B) 373 K", "(C) 100 K", "(D) 0 K"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-30",
+    "question": "Evaporation causes ________ effect.",
+    "options": ["(A) Heating", "(B) Cooling", "(C) No change", "(D) Lighting"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-31",
+    "question": "A mixture of salt and water is a ________ mixture.",
+    "options": ["(A) Homogeneous", "(B) Heterogeneous", "(C) Pure", "(D) Compound"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-32",
+    "question": "The substance in which a solute is dissolved is called:",
+    "options": ["(A) Solution", "(B) Solvent", "(C) Mixture", "(D) Compound"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-33",
+    "question": "Tyndall effect is shown by:",
+    "options": ["(A) True solution", "(B) Colloidal solution", "(C) Suspensions", "(D) Both B and C"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-34",
+    "question": "Which of the following is a physical change?",
+    "options": ["(A) Rusting of iron", "(B) Burning of wood", "(C) Melting of ice", "(D) Cooking of food"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-35",
+    "question": "A pure substance made of only one type of atom is:",
+    "options": ["(A) Element", "(B) Compound", "(C) Mixture", "(D) Alloy"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-36",
+    "question": "The law of conservation of mass was given by:",
+    "options": ["(A) Proust", "(B) Lavoisier", "(C) Dalton", "(D) Avogadro"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-37",
+    "question": "Who discovered the nucleus of an atom?",
+    "options": ["(A) J.J. Thomson", "(B) Rutherford", "(C) Bohr", "(D) Chadwick"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-38",
+    "question": "The atomic number of an element is equal to number of:",
+    "options": ["(A) Neutrons", "(B) Electrons", "(C) Protons", "(D) Both B and C"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-39",
+    "question": "Isotopes have the same atomic number but different ________ number.",
+    "options": ["(A) Electron", "(B) Proton", "(C) Mass", "(D) Valency"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-40",
+    "question": "Valency of Helium is:",
+    "options": ["(A) 0", "(B) 1", "(C) 2", "(D) 8"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-41",
+    "question": "The fundamental unit of life is:",
+    "options": ["(A) Tissue", "(B) Cell", "(C) Organ", "(D) Organism"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-42",
+    "question": "Who discovered the cell for the first time?",
+    "options": ["(A) Robert Brown", "(B) Robert Hooke", "(C) Purkinje", "(D) Virchow"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-43",
+    "question": "The powerhouse of the cell is:",
+    "options": ["(A) Nucleus", "(B) Ribosome", "(C) Mitochondria", "(D) Golgi apparatus"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-44",
+    "question": "Suicidal bags of the cell are:",
+    "options": ["(A) Lysosomes", "(B) Plastids", "(C) Vacuoles", "(D) Ribosomes"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-45",
+    "question": "Kitchen of the cell is:",
+    "options": ["(A) Mitochondria", "(B) Chloroplast", "(C) Nucleus", "(D) Cell wall"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-46",
+    "question": "A group of cells having similar structure and function is:",
+    "options": ["(A) Organ", "(B) Organ system", "(C) Tissue", "(D) Organism"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-47",
+    "question": "Which tissue transports water in plants?",
+    "options": ["(A) Phloem", "(B) Xylem", "(C) Parenchyma", "(D) Sclerenchyma"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-48",
+    "question": "The only liquid connective tissue is:",
+    "options": ["(A) Bone", "(B) Cartilage", "(C) Blood", "(D) Muscle"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-49",
+    "question": "Nervous tissue is made up of cells called:",
+    "options": ["(A) Neurons", "(B) Nephrons", "(C) Osteocytes", "(D) Myocytes"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-50",
+    "question": "Cereals provide us with:",
+    "options": ["(A) Proteins", "(B) Fats", "(C) Carbohydrates", "(D) Vitamins"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-51",
+    "question": "Which of the following is an example of an STD?",
+    "options": ["(A) Malaria", "(B) AIDS", "(C) Typhoid", "(D) Cholera"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-52",
+    "question": "Full form of HIV is:",
+    "options": ["(A) Human Immune Virus", "(B) Human Immunodeficiency Virus", "(C) Healthy Immune Virus", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-53",
+    "question": "Drugs that slow down brain activity are:",
+    "options": ["(A) Stimulants", "(B) Depressants", "(C) Narcotics", "(D) Hallucinogens"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-54",
+    "question": "Adolescence is a period of:",
+    "options": ["(A) No change", "(B) Rapid growth", "(C) Only mental change", "(D) Only physical change"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-55",
+    "question": "Which organ is most affected by alcohol?",
+    "options": ["(A) Heart", "(B) Liver", "(C) Lungs", "(D) Kidneys"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-56",
+    "question": "What is the formula of momentum?",
+    "options": ["(A) m + v", "(B) m - v", "(C) m * v", "(D) m / v"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-57",
+    "question": "Acceleration is ________ per unit time.",
+    "options": ["(A) Velocity change", "(B) Distance change", "(C) Displacement change", "(D) Speed change"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-58",
+    "question": "Unit of acceleration is:",
+    "options": ["(A) m/s", "(B) m/s²", "(C) m*s", "(D) s/m"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-59",
+    "question": "If displacement is zero, work done is:",
+    "options": ["(A) Maximum", "(B) Minimum", "(C) Zero", "(D) Infinite"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-60",
+    "question": "Kinetic energy formula is:",
+    "options": ["(A) mgh", "(B) 1/2 mv²", "(C) mv", "(D) F * s"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-61",
+    "question": "Potential energy formula is:",
+    "options": ["(A) 1/2 mv²", "(B) mgh", "(C) mv", "(D) P * t"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-62",
+    "question": "Sound travels fastest in ________.",
+    "options": ["(A) Air", "(B) Water", "(C) Iron", "(D) Vacuum"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-63",
+    "question": "Frequency is measured in:",
+    "options": ["(A) Seconds", "(B) Hertz", "(C) Metres", "(D) Watts"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-64",
+    "question": "An echo is heard if the distance is at least:",
+    "options": ["(A) 10m", "(B) 17.2m", "(C) 25m", "(D) 50m"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-65",
+    "question": "Which gas is used as a coolant in refrigerators?",
+    "options": ["(A) Oxygen", "(B) Nitrogen", "(C) CFCs", "(D) CO2"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-66",
+    "question": "The melting point of ice is ________ K.",
+    "options": ["(A) 0", "(B) 100", "(C) 273", "(D) 373"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-67",
+    "question": "Which of these is a liquid non-metal?",
+    "options": ["(A) Mercury", "(B) Bromine", "(C) Iodine", "(D) Carbon"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-68",
+    "question": "Tincture of iodine is a solution of iodine in:",
+    "options": ["(A) Water", "(B) Alcohol", "(C) Oil", "(D) Ether"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-69",
+    "question": "Chemical formula of magnesium chloride is:",
+    "options": ["(A) MgCl", "(B) MgCl2", "(C) Mg2Cl", "(D) MgCl3"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-70",
+    "question": "Atomic mass of Carbon is:",
+    "options": ["(A) 6", "(B) 12", "(C) 14", "(D) 16"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-71",
+    "question": "Number of valence electrons in Chlorine is:",
+    "options": ["(A) 1", "(B) 7", "(C) 8", "(D) 17"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-72",
+    "question": "Who discovered electrons?",
+    "options": ["(A) Goldstein", "(B) J.J. Thomson", "(C) Bohr", "(D) Dalton"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-73",
+    "question": "An alpha particle is a helium ________.",
+    "options": ["(A) Atom", "(B) Ion", "(C) Molecule", "(D) Electron"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-74",
+    "question": "Rough ER is site for ________ synthesis.",
+    "options": ["(A) Lipid", "(B) Protein", "(C) Carbohydrate", "(D) ATP"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-75",
+    "question": "Cell wall of plants is made of:",
+    "options": ["(A) Chitin", "(B) Cellulose", "(C) Proteins", "(D) Lipids"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-76",
+    "question": "Plasma membrane is made of:",
+    "options": ["(A) Lipids and Proteins", "(B) Cellulose", "(C) Starch", "(D) Glucose"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-77",
+    "question": "Muscular tissue responsible for movement is:",
+    "options": ["(A) Striated", "(B) Smooth", "(C) Cardiac", "(D) All of these"],
+    "correctAnswer": "D",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-78",
+    "question": "Ligament connects ________ to ________.",
+    "options": ["(A) Bone to Bone", "(B) Muscle to Bone", "(C) Muscle to Muscle", "(D) None"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-79",
+    "question": "Tendon connects ________ to ________.",
+    "options": ["(A) Bone to Bone", "(B) Muscle to Bone", "(C) Muscle to Muscle", "(D) Skin to Bone"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-80",
+    "question": "Milk producing animals are called ________ animals.",
+    "options": ["(A) Draught", "(B) Milch", "(C) Wild", "(D) Poultry"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-81",
+    "question": "Honey bees are kept in:",
+    "options": ["(A) Aquarium", "(B) Apiary", "(C) Aviary", "(D) Kennel"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-82",
+    "question": "Poultry farming is for production of:",
+    "options": ["(A) Milk", "(B) Eggs and Meat", "(C) Honey", "(D) Fish"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-83",
+    "question": "The displacement of an object is its ________ distance.",
+    "options": ["(A) Shortest", "(B) Longest", "(C) Total", "(D) Path"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-84",
+    "question": "1 m/s is equal to ________ km/h.",
+    "options": ["(A) 5/18", "(B) 18/5", "(C) 3.6", "(D) Both B and C"],
+    "correctAnswer": "D",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-1",
+    "chapterTitle": "Motion"
+  },
+  {
+    "id": "c9-s-85",
+    "question": "In vacuum, all bodies fall with same:",
+    "options": ["(A) Speed", "(B) Velocity", "(C) Acceleration", "(D) Momentum"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-86",
+    "question": "Pressure is ________ per unit area.",
+    "options": ["(A) Force", "(B) Thrust", "(C) Weight", "(D) Both A and B"],
+    "correctAnswer": "D",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-87",
+    "question": "Unit of pressure is:",
+    "options": ["(A) Newton", "(B) Pascal", "(C) Joule", "(D) Watt"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-88",
+    "question": "Relative density has ________ unit.",
+    "options": ["(A) g/cm³", "(B) kg/m³", "(C) No", "(D) m/s"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-89",
+    "question": "Energy can neither be created nor ________.",
+    "options": ["(A) Seen", "(B) Destroyed", "(C) Moved", "(D) Measured"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-90",
+    "question": "A fruit falling from a tree has ________ energy.",
+    "options": ["(A) Kinetic", "(B) Potential", "(C) Mechanical", "(D) All of these"],
+    "correctAnswer": "D",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-91",
+    "question": "SONAR uses ________ waves.",
+    "options": ["(A) Infrasonic", "(B) Ultrasonic", "(C) Audible", "(D) Light"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-92",
+    "question": "Stethoscope works on the principle of ________.",
+    "options": ["(A) Refraction", "(B) Multiple reflection", "(C) Dispersion", "(D) Diffraction"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-93",
+    "question": "Humidity ________ the rate of evaporation.",
+    "options": ["(A) Increases", "(B) Decreases", "(C) Does not change", "(D) Stops"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-94",
+    "question": "Which of these is a metalloid?",
+    "options": ["(A) Boron", "(B) Silicon", "(C) Germanium", "(D) All of these"],
+    "correctAnswer": "D",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-95",
+    "question": "Fog is an example of:",
+    "options": ["(A) Aerosol", "(B) Foam", "(C) Emulsion", "(D) Gel"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-96",
+    "question": "The symbol of Gold is:",
+    "options": ["(A) Gd", "(B) Ag", "(C) Au", "(D) Fe"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-97",
+    "question": "Formula of water is:",
+    "options": ["(A) HO", "(B) H2O", "(C) HO2", "(D) H2O2"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-98",
+    "question": "Valency of Sodium is:",
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-99",
+    "question": "Neutrons were discovered by:",
+    "options": ["(A) Dalton", "(B) Chadwick", "(C) Bohr", "(D) Thomson"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-100",
+    "question": "Maximum number of electrons in K shell is:",
+    "options": ["(A) 2", "(B) 8", "(C) 18", "(D) 32"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-101",
+    "question": "Unit of force is Newton, which is also:",
+    "options": ["(A) kg m/s", "(B) kg m/s²", "(C) kg m²/s", "(D) m/s²"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-102",
+    "question": "When we stop pedaling a bicycle, it slows down due to:",
+    "options": ["(A) Inertia", "(B) Friction", "(C) Gravity", "(D) Applied force"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-103",
+    "question": "To every action, there is an ________ and ________ reaction.",
+    "options": ["(A) Equal, Same", "(B) Equal, Opposite", "(C) Unequal, Opposite", "(D) Small, Large"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-2",
+    "chapterTitle": "Force and Laws of Motion"
+  },
+  {
+    "id": "c9-s-104",
+    "question": "The G in universal law of gravitation is called ________ constant.",
+    "options": ["(A) Gravitational", "(B) Global", "(C) General", "(D) Great"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-105",
+    "question": "The value of G is:",
+    "options": ["(A) 6.67 x 10⁻¹¹", "(B) 9.8", "(C) 6.4 x 10⁶", "(D) 1"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-106",
+    "question": "The mass of an object is ________ everywhere.",
+    "options": ["(A) Variable", "(B) Constant", "(C) Zero", "(D) Infinite"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-107",
+    "question": "Archimedes' principle is used in designing:",
+    "options": ["(A) Ships", "(B) Submarines", "(C) Lactometers", "(D) All of these"],
+    "correctAnswer": "D",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-108",
+    "question": "A needle sinks in water but a ship floats due to ________.",
+    "options": ["(A) Mass", "(B) Volume", "(C) Buoyancy", "(D) Gravity"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-5",
+    "chapterTitle": "Floatation"
+  },
+  {
+    "id": "c9-s-109",
+    "question": "1 Watt is equal to:",
+    "options": ["(A) 1 J/s", "(B) 1 J*s", "(C) 1 N/m", "(D) 1 kg m/s"],
+    "correctAnswer": "A",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-110",
+    "question": "Commercial unit of energy is:",
+    "options": ["(A) Joule", "(B) Watt", "(C) kWh", "(D) Newton"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-111",
+    "question": "Loudness of sound depends on its ________.",
+    "options": ["(A) Frequency", "(B) Wavelength", "(C) Amplitude", "(D) Speed"],
+    "correctAnswer": "C",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-112",
+    "question": "Pitch of sound depends on its ________.",
+    "options": ["(A) Amplitude", "(B) Frequency", "(C) Speed", "(D) Path"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-113",
+    "question": "LPG stands for:",
+    "options": ["(A) Liquid Petroleum Gas", "(B) Liquefied Petroleum Gas", "(C) Low Petroleum Gas", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-114",
+    "question": "CNG stands for:",
+    "options": ["(A) Compressed Natural Gas", "(B) Complex Natural Gas", "(C) Common Natural Gas", "(D) None"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-115",
+    "question": "Brass is an alloy of:",
+    "options": ["(A) Copper and Zinc", "(B) Copper and Tin", "(C) Zinc and Iron", "(D) Lead and Tin"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-116",
+    "question": "Air is a mixture of ________ in ________.",
+    "options": ["(A) Gas, Gas", "(B) Gas, Liquid", "(C) Liquid, Gas", "(D) Solid, Gas"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-2",
+    "chapterTitle": "Is Matter Around Us Pure?"
+  },
+  {
+    "id": "c9-s-117",
+    "question": "Atomicity of Oxygen molecule is:",
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-118",
+    "question": "1 mole is equal to ________ particles.",
+    "options": ["(A) 6.022 x 10²³", "(B) 6.022 x 10²²", "(C) 1.6 x 10⁻¹⁹", "(D) 9.1 x 10⁻³¹"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-119",
+    "question": "Anions are ________ charged ions.",
+    "options": ["(A) Positively", "(B) Negatively", "(C) Neutral", "(D) Both A and B"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-120",
+    "question": "Cations are ________ charged ions.",
+    "options": ["(A) Positively", "(B) Negatively", "(C) Neutral", "(D) Both A and B"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-121",
+    "question": "Valency of Carbon is:",
+    "options": ["(A) 2", "(B) 4", "(C) 6", "(D) 8"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-122",
+    "question": "Mass number is sum of protons and ________.",
+    "options": ["(A) Electrons", "(B) Neutrons", "(C) Both", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-123",
+    "question": "Movement of water across plasma membrane is:",
+    "options": ["(A) Diffusion", "(B) Osmosis", "(C) Absorption", "(D) Transpiration"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-124",
+    "question": "Ribosomes are site of ________ synthesis.",
+    "options": ["(A) Fat", "(B) Protein", "(C) Sugar", "(D) ATP"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-125",
+    "question": "Chromosomes are made of DNA and ________.",
+    "options": ["(A) Proteins", "(B) Lipids", "(C) Sugars", "(D) RNA"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-126",
+    "question": "Bark of tree contains a chemical called:",
+    "options": ["(A) Lignin", "(B) Suberin", "(C) Cutin", "(D) Pectin"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-127",
+    "question": "Hardness of coconut shell is due to ________ tissue.",
+    "options": ["(A) Parenchyma", "(B) Collenchyma", "(C) Sclerenchyma", "(D) Aerenchyma"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-128",
+    "question": "Glandular epithelium is found in:",
+    "options": ["(A) Skin", "(B) Glands", "(C) Stomach", "(D) Intestine"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-129",
+    "question": "Rabi crops are grown in ________ season.",
+    "options": ["(A) Summer", "(B) Rainy", "(C) Winter", "(D) All"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-130",
+    "question": "Kharif crops are grown in ________ season.",
+    "options": ["(A) Summer", "(B) Rainy", "(C) Winter", "(D) Spring"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-131",
+    "question": "Fish culture in seawater is:",
+    "options": ["(A) Mariculture", "(B) Aquaculture", "(C) Apiculture", "(D) Sericulture"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-132",
+    "question": "A drug is a ________ substance.",
+    "options": ["(A) Physical", "(B) Chemical", "(C) Biological", "(D) Mechanical"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-133",
+    "question": "Addiction leads to ________ on drugs.",
+    "options": ["(A) Interest", "(B) Dependence", "(C) Hatred", "(D) None"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-134",
+    "question": "Which of these is a symptom of drug abuse?",
+    "options": ["(A) High energy", "(B) Mood swings", "(C) Good grades", "(D) Active social life"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-135",
+    "question": "AIDS is caused by a ________.",
+    "options": ["(A) Bacteria", "(B) Virus", "(C) Fungus", "(D) Protozoa"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-4",
+    "chapterTitle": "Prevention of Drug Abuse and Sexually Transmitted Diseases"
+  },
+  {
+    "id": "c9-s-136",
+    "question": "Which gas was responsible for Bhopal Gas Tragedy?",
+    "options": ["(A) CO", "(B) CO2", "(C) Methyl Isocyanate", "(D) SO2"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-1",
+    "chapterTitle": "Matter in Our Surroundings"
+  },
+  {
+    "id": "c9-s-137",
+    "question": "The constant 'g' is acceleration due to ________.",
+    "options": ["(A) Motion", "(B) Gravity", "(C) Force", "(D) Time"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-4",
+    "chapterTitle": "Gravitation"
+  },
+  {
+    "id": "c9-s-138",
+    "question": "Work = Force x ________.",
+    "options": ["(A) Speed", "(B) Displacement", "(C) Acceleration", "(D) Time"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-3",
+    "chapterTitle": "Work, Energy and Power"
+  },
+  {
+    "id": "c9-s-139",
+    "question": "Sound travels in the form of ________.",
+    "options": ["(A) Light", "(B) Waves", "(C) Rays", "(D) Particles"],
+    "correctAnswer": "B",
+    "subject": "physics",
+    "chapterId": "c9-sci-phy-6",
+    "chapterTitle": "Sound"
+  },
+  {
+    "id": "c9-s-140",
+    "question": "Bohr's model explains ________ of an atom.",
+    "options": ["(A) Shape", "(B) Color", "(C) Stability", "(D) Mass"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-141",
+    "question": "Atomic number of Oxygen is:",
+    "options": ["(A) 6", "(B) 8", "(C) 12", "(D) 16"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-142",
+    "question": "Atomic number of Carbon is:",
+    "options": ["(A) 4", "(B) 6", "(C) 12", "(D) 14"],
+    "correctAnswer": "B",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-4",
+    "chapterTitle": "Structure of the Atom"
+  },
+  {
+    "id": "c9-s-143",
+    "question": "Formula of Sodium Chloride is:",
+    "options": ["(A) NaCl", "(B) NaCl2", "(C) Na2Cl", "(D) Na2Cl2"],
+    "correctAnswer": "A",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-144",
+    "question": "Molecule of sulfur is ________.",
+    "options": ["(A) S2", "(B) S4", "(C) S8", "(D) S10"],
+    "correctAnswer": "C",
+    "subject": "chemistry",
+    "chapterId": "c9-sci-chem-3",
+    "chapterTitle": "Atoms and Molecules"
+  },
+  {
+    "id": "c9-s-145",
+    "question": "Which tissue stores fat in our body?",
+    "options": ["(A) Areolar", "(B) Adipose", "(C) Epithelial", "(D) Nervous"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-2",
+    "chapterTitle": "Tissues"
+  },
+  {
+    "id": "c9-s-146",
+    "question": "Chlorophyll is present in:",
+    "options": ["(A) Mitochondria", "(B) Ribosomes", "(C) Chloroplasts", "(D) Lysosomes"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-147",
+    "question": "DNA full form:",
+    "options": ["(A) Deoxyribonucleic Acid", "(B) Deoxyribonitric Acid", "(C) Denitroribonucleic Acid", "(D) None"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-1",
+    "chapterTitle": "The Fundamental Unit of Life"
+  },
+  {
+    "id": "c9-s-148",
+    "question": "In-situ conservation example:",
+    "options": ["(A) Zoo", "(B) Botanical garden", "(C) National park", "(D) Aquarium"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-149",
+    "question": "Vermicompost is prepared using:",
+    "options": ["(A) Bacteria", "(B) Fungi", "(C) Earthworms", "(D) Insects"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  },
+  {
+    "id": "c9-s-150",
+    "question": "Which of these is a cereal crop?",
+    "options": ["(A) Gram", "(B) Pea", "(C) Wheat", "(D) Mustard"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c9-sci-bio-3",
+    "chapterTitle": "Improvement in Food Resources"
+  }
+]

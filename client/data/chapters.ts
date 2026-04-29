@@ -134,7 +134,8 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     "Biology": [
       { id: "c8-sci-bio-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
       { id: "c8-sci-bio-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
-      { id: "c8-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" }
+      { id: "c8-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
+      { id: "c8-sci-bio-4", number: 4, name: "Prevention of Drug Abuse and Sexually Transmitted Diseases", color: "#4CAF50" }
     ]
   },
   "Class 7 Science": {
@@ -151,7 +152,8 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     "Biology": [
       { id: "c7-sci-bio-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
       { id: "c7-sci-bio-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
-      { id: "c7-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" }
+      { id: "c7-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
+      { id: "c7-sci-bio-4", number: 4, name: "Prevention of Drug Abuse and Sexually Transmitted Diseases", color: "#4CAF50" }
     ]
   }
 };
@@ -185,6 +187,15 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   if (greenCyanTargetedIds.includes(chapterId)) {
     return ["#FFA726", "#FB8C00"];
+  }
+  
+  // Targeted theme color replacement for Biology Chapter 4 (Pink -> Orange Glossy)
+  const pinkOrangeTargetedIds = [
+    "sci-bio-4", "c9-sci-bio-4", "c8-sci-bio-4", "c7-sci-bio-4", "c6-sci-bio-4"
+  ];
+
+  if (pinkOrangeTargetedIds.includes(chapterId)) {
+    return JiguuColors.gradients.pinkOrange;
   }
 
   const gradientList = Object.values(JiguuColors.gradients) as string[][];

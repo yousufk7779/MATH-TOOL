@@ -21,6 +21,8 @@ export const JiguuColors = {
     indigo: ["#7986CB", "#3F51B5", "#1A237E"],
     deepOrange: ["#FF8A65", "#F4511E", "#BF360C"],
     brightBlue: ["#00C6FF", "#0072FF"],
+    neonGreen: ["#7CFF00", "#DFFF00"],
+    pinkOrange: ["#FF4DA6", "#FFA64D"],
   },
 
   realNumbers: "#FF6B6B",

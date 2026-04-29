@@ -38,14 +38,19 @@ export default function QuizScreen() {
     };
 
     const startQuiz = useCallback(async (subject: string = "Mathematics") => {
-        if (className && className !== "Class 10") {
+        if (className === "Class 9" && subject === "Mathematics") {
+            Alert.alert("Coming Soon", "Mathematics quiz for Class 9 is coming soon!");
+            return;
+        }
+
+        if (className && className !== "Class 10" && className !== "Class 9") {
             Alert.alert("Quiz Coming Soon", `Quiz content for ${className} is coming soon!`);
             return;
         }
 
         setLoading(true);
         try {
-            const newQuestions = await generateQuizAsync(10, subject); // Generate 10 random questions
+            const newQuestions = await generateQuizAsync(10, subject, className || "Class 10"); // Generate 10 random questions
             if (newQuestions.length === 0) {
                 Alert.alert("Error", "No questions available to generate a quiz.");
                 return;
@@ -62,7 +67,7 @@ export default function QuizScreen() {
         } finally {
             setLoading(false);
         }
-    }, []);
+    }, [className]);
 
     const handleOptionSelect = (optionIndex: number) => {
         if (showAnswer) return;
