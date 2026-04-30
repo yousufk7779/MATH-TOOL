@@ -29,7 +29,7 @@ const HtmlText = memo(({ html, style, chapterId }: { html: string; style?: any, 
   const isJustified = stylesArr.some(s => s?.textAlign === 'justify');
 
   const cid = chapterId || "";
-  const isMath = !cid.startsWith('sci-') && !cid.startsWith('sst-') && !cid.startsWith('eng-');
+  const isMath = !cid.startsWith('sci-') && !cid.match(/^c[789]-sci-/) && !cid.startsWith('sst-') && !cid.startsWith('eng-');
 
   const baseStyle = {
     ...Typography.body,
@@ -242,8 +242,8 @@ function SolutionScreen() {
   const chapterGradient = React.useMemo(() => getChapterGradient(chapterId), [chapterId]);
   const accentColor = chapterGradient[0]; 
 
-  const isScienceSection = chapterId.startsWith("sci-");
-  const isMathSection = !chapterId.startsWith("sci-") && !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
+  const isScienceSection = chapterId.startsWith("sci-") || !!chapterId.match(/^c[789]-sci-/);
+  const isMathSection = !isScienceSection && !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
   
   const hwTitleStyle = { fontFamily: "NotoSans_700Bold", color: "#fff" };
 
@@ -554,7 +554,7 @@ function SolutionScreen() {
   } else if (chapterId.startsWith("eng-")) {
     tab1Title = "Summary";
     tab2Title = "Q & A";
-  } else if (chapterId.startsWith("c9-sci-")) {
+  } else if (chapterId.match(/^c[789]-sci-/)) {
     tab2Title = "NCERT Solutions";
   }
 
@@ -567,7 +567,7 @@ function SolutionScreen() {
           <TabButton title={tab3Title} isActive={activeSection === "mcq"} onPress={() => handleSectionChange("mcq")} gradient={chapterGradient} textStyle={hwTitleStyle} />
         </View>
 
-        {activeSection === "exercises" && exerciseSubSections.length > 0 && (
+        {activeSection === "exercises" && exerciseSubSections.length > 1 && (
           <View style={{ height: 42, marginBottom: Spacing.sm }}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.subTabScroll} contentContainerStyle={styles.subTabContainer}>
               {exerciseSubSections.map((sub: string) => {

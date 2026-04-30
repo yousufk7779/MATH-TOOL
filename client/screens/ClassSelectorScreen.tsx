@@ -28,25 +28,7 @@ function ClassSelectorScreen() {
       >
         <View style={styles.headerContainer}>
           <View style={styles.titleRow}>
-            <ThemedText style={styles.titleWhite}>Select Your </ThemedText>
-            <Svg height="26" width="52" style={{ transform: [{ translateY: 1 }] }}>
-              <Defs>
-                <SvgLinearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
-                  <Stop offset="0" stopColor="#4FC3F7" />
-                  <Stop offset="1" stopColor="#FF4FA3" />
-                </SvgLinearGradient>
-              </Defs>
-              <SvgText
-                fill="url(#textGrad)"
-                fontSize="20"
-                fontFamily="NotoSans_600SemiBold"
-                fontWeight="600"
-                x="0"
-                y="20"
-              >
-                Class
-              </SvgText>
-            </Svg>
+            <ThemedText style={styles.titleWhite}>Select Your Class</ThemedText>
           </View>
           
           <View style={styles.decorationContainer}>
@@ -138,7 +120,7 @@ const styles = StyleSheet.create({
   },
   titleWhite: {
     color: '#FFFFFF',
-    fontSize: 20,
+    fontSize: 15,
     fontFamily: "NotoSans_600SemiBold",
     letterSpacing: 0.5,
   },

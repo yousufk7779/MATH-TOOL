@@ -121,39 +121,37 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     ]
   },
   "Class 8 Science": {
-    "Physics": [
-      { id: "c8-sci-phy-1", number: 1, name: "Chapter 1", color: "#E91E63" },
-      { id: "c8-sci-phy-2", number: 2, name: "Chapter 2", color: "#E91E63" },
-      { id: "c8-sci-phy-3", number: 3, name: "Chapter 3", color: "#E91E63" }
-    ],
-    "Chemistry": [
-      { id: "c8-sci-chem-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
-      { id: "c8-sci-chem-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
-      { id: "c8-sci-chem-3", number: 3, name: "Chapter 3", color: "#9C27B0" }
-    ],
-    "Biology": [
-      { id: "c8-sci-bio-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
-      { id: "c8-sci-bio-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
-      { id: "c8-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
-      { id: "c8-sci-bio-4", number: 4, name: "Prevention of Drug Abuse and Sexually Transmitted Diseases", color: "#4CAF50" }
+    "Science": [
+      { id: "c8-sci-1", number: 1, name: "Crop Production and Management", color: "#E91E63" },
+      { id: "c8-sci-2", number: 2, name: "Microorganisms: Friend and Foe", color: "#E91E63" },
+      { id: "c8-sci-3", number: 3, name: "Coal and Petroleum", color: "#E91E63" },
+      { id: "c8-sci-4", number: 4, name: "Combustion and Flame", color: "#E91E63" },
+      { id: "c8-sci-5", number: 5, name: "Conservation of Plants and Animals", color: "#E91E63" },
+      { id: "c8-sci-6", number: 6, name: "Reproduction in Animals", color: "#E91E63" },
+      { id: "c8-sci-7", number: 7, name: "Reaching the Age of Adolescence", color: "#E91E63" },
+      { id: "c8-sci-8", number: 8, name: "Force and Pressure", color: "#E91E63" },
+      { id: "c8-sci-9", number: 9, name: "Friction", color: "#E91E63" },
+      { id: "c8-sci-10", number: 10, name: "Sound", color: "#E91E63" },
+      { id: "c8-sci-11", number: 11, name: "Chemical Effects of Electric Current", color: "#E91E63" },
+      { id: "c8-sci-12", number: 12, name: "Some Natural Phenomena", color: "#E91E63" },
+      { id: "c8-sci-13", number: 13, name: "Light", color: "#E91E63" }
     ]
   },
   "Class 7 Science": {
-    "Physics": [
-      { id: "c7-sci-phy-1", number: 1, name: "Chapter 1", color: "#E91E63" },
-      { id: "c7-sci-phy-2", number: 2, name: "Chapter 2", color: "#E91E63" },
-      { id: "c7-sci-phy-3", number: 3, name: "Chapter 3", color: "#E91E63" }
-    ],
-    "Chemistry": [
-      { id: "c7-sci-chem-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
-      { id: "c7-sci-chem-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
-      { id: "c7-sci-chem-3", number: 3, name: "Chapter 3", color: "#9C27B0" }
-    ],
-    "Biology": [
-      { id: "c7-sci-bio-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
-      { id: "c7-sci-bio-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
-      { id: "c7-sci-bio-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
-      { id: "c7-sci-bio-4", number: 4, name: "Prevention of Drug Abuse and Sexually Transmitted Diseases", color: "#4CAF50" }
+    "Science": [
+      { id: "c7-sci-1", number: 1, name: "Nutrition in Plants", color: "#E91E63" },
+      { id: "c7-sci-2", number: 2, name: "Nutrition in Animals", color: "#E91E63" },
+      { id: "c7-sci-3", number: 3, name: "Heat", color: "#E91E63" },
+      { id: "c7-sci-4", number: 4, name: "Acids, Bases and Salts", color: "#E91E63" },
+      { id: "c7-sci-5", number: 5, name: "Physical and Chemical Changes", color: "#E91E63" },
+      { id: "c7-sci-6", number: 6, name: "Respiration in Organisms", color: "#E91E63" },
+      { id: "c7-sci-7", number: 7, name: "Transportation in Animals and Plants", color: "#E91E63" },
+      { id: "c7-sci-8", number: 8, name: "Reproduction in Plants", color: "#E91E63" },
+      { id: "c7-sci-9", number: 9, name: "Motion and Time", color: "#E91E63" },
+      { id: "c7-sci-10", number: 10, name: "Electric Current and its Effects", color: "#E91E63" },
+      { id: "c7-sci-11", number: 11, name: "Light", color: "#E91E63" },
+      { id: "c7-sci-12", number: 12, name: "Forests: Our Lifeline", color: "#E91E63" },
+      { id: "c7-sci-13", number: 13, name: "Wastewater Story", color: "#E91E63" }
     ]
   }
 };
@@ -244,6 +242,20 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const bioGradients = [gradientList[4], gradientList[5], gradientList[18] ? gradientList[18] : gradientList[3]];
     return bioGradients[(num - 1) % bioGradients.length];
+  }
+
+  if (chapterId.match(/^c[789]-sci-\d+$/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    // Science chapters get a variety of gradients
+    const sciGradients = [
+      gradientList[2], // Purple
+      gradientList[4], // Green
+      gradientList[7], // Orange
+      gradientList[0], // Pink
+      gradientList[6], // Indigo
+      gradientList[5], // Teal
+    ];
+    return sciGradients[(num - 1) % sciGradients.length];
   }
 
   return JiguuColors.primaryGradient;
