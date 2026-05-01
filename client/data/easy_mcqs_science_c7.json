@@ -1,0 +1,92 @@
+[
+  {
+    "id": "c7-s-1",
+    "question": "The process of breaking down complex food into simpler substances is called:",
+    "options": ["(A) Ingestion", "(B) Digestion", "(C) Absorption", "(D) Assimilation"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-2",
+    "question": "Which organ is responsible for the complete digestion of food?",
+    "options": ["(A) Stomach", "(B) Mouth", "(C) Small intestine", "(D) Large intestine"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-3",
+    "question": "The largest gland in the human body is:",
+    "options": ["(A) Pancreas", "(B) Liver", "(C) Salivary gland", "(D) Thyroid"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-4",
+    "question": "Bile juice is stored in a sac called:",
+    "options": ["(A) Gall bladder", "(B) Liver", "(C) Stomach", "(D) Pancreas"],
+    "correctAnswer": "A",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-5",
+    "question": "Finger-like projections called villi are present in:",
+    "options": ["(A) Large intestine", "(B) Small intestine", "(C) Stomach", "(D) Oesophagus"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-6",
+    "question": "Water from undigested food is mainly absorbed in:",
+    "options": ["(A) Small intestine", "(B) Stomach", "(C) Large intestine", "(D) Food pipe"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-7",
+    "question": "The process of taking food into the body is called:",
+    "options": ["(A) Digestion", "(B) Ingestion", "(C) Absorption", "(D) Egestion"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-8",
+    "question": "Amoeba digests its food in the:",
+    "options": ["(A) Nucleus", "(B) Pseudopodia", "(C) Food vacuole", "(D) Cytoplasm"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-9",
+    "question": "Which of these is a ruminant?",
+    "options": ["(A) Human", "(B) Cow", "(C) Amoeba", "(D) Fish"],
+    "correctAnswer": "B",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  },
+  {
+    "id": "c7-s-10",
+    "question": "The acid produced in our stomach for killing bacteria is:",
+    "options": ["(A) Sulphuric acid", "(B) Nitric acid", "(C) Hydrochloric acid", "(D) Acetic acid"],
+    "correctAnswer": "C",
+    "subject": "life",
+    "chapterId": "c7-sci-2",
+    "chapterTitle": "Nutrition in Animals"
+  }
+]

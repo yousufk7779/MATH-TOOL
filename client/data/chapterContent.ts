@@ -96,6 +96,25 @@ import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
 import { c7Sci1 } from "./content/c7-sci-1";
+import { c7Sci2 } from "./content/c7-sci-2";
+import { c7Sci3 } from "./content/c7-sci-3";
+import { c7Sci4 } from "./content/c7-sci-4";
+import { c7Sci5 } from "./content/c7-sci-5";
+import { c7Sci6 } from "./content/c7-sci-6";
+import { c7Sci7 } from "./content/c7-sci-7";
+import { c7Sci8 } from "./content/c7-sci-8";
+import { c7Sci9 } from "./content/c7-sci-9";
+import { c7Sci10 } from "./content/c7-sci-10";
+import { c7Sci11 } from "./content/c7-sci-11";
+import { c7Sci12 } from "./content/c7-sci-12";
+import { c7Sci13 } from "./content/c7-sci-13";
+
+
+
+
+
+
+
 
 export const chapterContents: Record<string, ChapterContent> = {
   "ch1": mathCh1,
@@ -185,7 +204,26 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c9-sci-bio-3": c9SciBio3,
   "c9-sci-bio-4": c9SciBio4,
   "c7-sci-1": c7Sci1,
+  "c7-sci-2": c7Sci2,
+  "c7-sci-3": c7Sci3,
+  "c7-sci-4": c7Sci4,
+  "c7-sci-5": c7Sci5,
+  "c7-sci-6": c7Sci6,
+  "c7-sci-7": c7Sci7,
+  "c7-sci-8": c7Sci8,
+  "c7-sci-9": c7Sci9,
+  "c7-sci-10": c7Sci10,
+  "c7-sci-11": c7Sci11,
+  "c7-sci-12": c7Sci12,
+  "c7-sci-13": c7Sci13,
 };
+
+
+
+
+
+
+
 
 const createEmptyContent = (id: string, num: number, title: string): ChapterContent => ({
   id,

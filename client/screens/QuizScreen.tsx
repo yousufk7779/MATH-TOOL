@@ -43,7 +43,7 @@ export default function QuizScreen() {
             return;
         }
 
-        if (className && className !== "Class 10" && className !== "Class 9") {
+        if (className && className !== "Class 10" && className !== "Class 9" && className !== "Class 7") {
             Alert.alert("Quiz Coming Soon", `Quiz content for ${className} is coming soon!`);
             return;
         }

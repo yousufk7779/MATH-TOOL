@@ -1,10 +1,7 @@
 import React, { memo, useMemo } from "react";
-import { StyleSheet, View, Image, Text, Platform } from "react-native";
+import { StyleSheet, View, Image, Text } from "react-native";
 import { useRoute } from "@react-navigation/native";
-import { LinearGradient } from "expo-linear-gradient";
-import Svg, { Defs, LinearGradient as SvgLinearGradient, Stop, Text as SvgText } from "react-native-svg";
 
-import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Typography } from "@/constants/theme";
 
 const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
@@ -49,19 +46,14 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
   else if (isClass7) subtitleSuffix = "Class 7";
   else if (isClassSelector) subtitleSuffix = "Classes";
 
-  const subtitleStyle = useMemo(() => [
-    styles.subtitle,
+  const subtitleTextStyle = useMemo(() => [
+    styles.subtitleText,
     isClassSelector && styles.subtitleTitleMatch
   ], [isClassSelector]);
 
-  const subtitleTextStyle = useMemo(() => [
-    styles.subtitleGray,
-    isClassSelector && styles.subtitleTitleMatchText
-  ], [isClassSelector]);
-
-  const subtitleSuffixStyle = useMemo(() => [
-    styles.subtitlePink,
-    isClassSelector && styles.subtitleTitleMatchText
+  const suffixStyle = useMemo(() => [
+    styles.subtitleSuffixText,
+    isClassSelector && { color: JiguuColors.accent2 }
   ], [isClassSelector]);
 
   return (
@@ -72,29 +64,10 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
         resizeMode="contain"
       />
       {showSubtitle ? (
-        <View style={styles.subtitleRow}>
-          <Text style={[subtitleStyle, subtitleTextStyle, { marginBottom: 0, transform: [] }]}>
-            Learn Smart
-            <Text style={{ transform: [{ translateY: -2 }] }}> .</Text>
+        <View style={styles.subtitleWrapper}>
+          <Text style={subtitleTextStyle}>
+            Learn Smart . <Text style={suffixStyle}>{subtitleSuffix}</Text>
           </Text>
-          <Svg height="22" width="85" style={{ marginLeft: 5 }}>
-            <Defs>
-              <SvgLinearGradient id="subtitleGrad" x1="0" y1="0" x2="1" y2="0">
-                <Stop offset="0" stopColor="#4FC3F7" />
-                <Stop offset="1" stopColor="#FF4FA3" />
-              </SvgLinearGradient>
-            </Defs>
-            <SvgText
-              fill="url(#subtitleGrad)"
-              fontSize={isClassSelector ? 17 : 15}
-              fontFamily="NotoSans_600SemiBold"
-              fontWeight="600"
-              x="0"
-              y={isClassSelector ? 17 : 15}
-            >
-              {subtitleSuffix}
-            </SvgText>
-          </Svg>
         </View>
       ) : null}
     </View>
@@ -110,38 +83,28 @@ const styles = StyleSheet.create({
     marginBottom: 0,
     paddingBottom: 0,
   },
-  subtitle: {
+  subtitleWrapper: {
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: -18,
+    paddingHorizontal: 20,
+  },
+  subtitleText: {
+    width: "100%",
+    textAlign: "center",
     fontSize: 15,
-    letterSpacing: 1,
-    // Maintaining extra tight gap
-    transform: [{ translateY: -18 }],
-    marginBottom: -18, 
-    includeFontPadding: false,
-    textAlignVertical: "center",
-  },
-  subtitleGray: {
-    color: "#E0E0E0",
     fontFamily: "NotoSans_600SemiBold",
-    fontWeight: "600",
+    color: "#E0E0E0",
+    letterSpacing: 1,
   },
-  subtitlePink: {
+  subtitleSuffixText: {
     color: JiguuColors.accent2,
-    fontFamily: "NotoSans_500Medium",
-    fontWeight: "500",
+    fontWeight: "700",
   },
   subtitleTitleMatch: {
     fontSize: 17,
-    letterSpacing: 0.5,
-  },
-  subtitleTitleMatchText: {
     color: '#FFFFFF',
-    fontFamily: "NotoSans_600SemiBold",
-    fontWeight: "600",
-  },
-  subtitleRow: {
-    flexDirection: 'row', 
-    alignItems: 'center',
-    transform: [{ translateY: -18 }],
-    marginBottom: -18,
+    letterSpacing: 0.5,
   }
 });
