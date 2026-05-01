@@ -4,9 +4,17 @@ export const c7Sci3: ChapterContent = {
   id: "c7-sci-3",
   number: 3,
   title: "Heat",
-  introduction: "<div style=\"text-align: justify; color: #FFFFFF;\">Heat is a form of energy that flows from a hotter object to a colder object. The degree of hotness or coldness of a body is called temperature. Temperature is measured using a thermometer.<br/><br/>Heat can be transferred in three ways: conduction, convection and radiation. Materials that allow heat to pass through them are called conductors, while those that do not allow heat to pass easily are called insulators.<br/><br/>In daily life, we use this knowledge in cooking, clothing and many other activities to keep ourselves comfortable.</div>",
-  definitions: [],
-  keyPoints: [],
+  introduction: "<span style=\"color: #FFFFFF;\">Heat is the energy that flows from a hot object to a cold object. Temperature measures the degree of hotness. Heat is transferred by conduction, convection, and radiation.</span>",
+  definitions: [
+    { term: "Basic Concepts", description: "<span style=\"color: #FFFFFF;\">Temperature is measured with thermometers. Conductors allow heat flow, while insulators do not. Sea breeze and land breeze are caused by convection.</span>" }
+  ],
+  keyPoints: [
+    "<span style=\"color: #FFFFFF;\">Heat flows from higher temperature to lower temperature.</span>",
+    "<span style=\"color: #FFFFFF;\">Clinical thermometers are used for body temperature.</span>",
+    "<span style=\"color: #FFFFFF;\">In solids, heat is transferred by conduction.</span>",
+    "<span style=\"color: #FFFFFF;\">In liquids and gases, heat is transferred by convection.</span>",
+    "<span style=\"color: #FFFFFF;\">Radiation does not require any medium for heat transfer.</span>"
+  ],
   formulas: [],
   crux: [],
   exercises: [
@@ -80,36 +88,36 @@ export const c7Sci3: ChapterContent = {
         {
           id: "q8",
           number: "8",
-          question: "One litre of water at 30°C is mixed with one litre of water at 50°C. The temperature of mixture will be\n\n(a) 80°C\n(b) more than 50°C but less than 80°C\n(c) 20°C\n(d) between 30°C and 50°C",
+          question: "One litre of water at 30°C is mixed with one litre of water at 50°C. The temperature of mixture will be\n(a) 80°C\n(b) more than 50°C but less than 80°C\n(c) 20°C\n(d) between 30°C and 50°C",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Answer: between 30°C and 50°C</div>"
+            "<span style=\"color: #FFFFFF;\">Answer: (d) between 30°C and 50°C</span>"
           ],
           answer: ""
         },
         {
           id: "q9",
           number: "9",
-          question: "An iron ball at 40°C is dropped in a mug containing water at 40°C. The heat will\n\n(a) flow from iron ball to water\n(b) not flow from iron ball to water or from water to iron ball\n(c) flow from water to iron ball\n(d) increase the temperature of both",
+          question: "An iron ball at 40°C is dropped in a mug containing water at 40°C. The heat will\n(a) flow from iron ball to water\n(b) not flow from iron ball to water or from water to iron ball\n(c) flow from water to iron ball\n(d) increase the temperature of both",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Answer: not flow from iron ball to water or from water to iron ball</div>"
+            "<span style=\"color: #FFFFFF;\">Answer: (b) not flow from iron ball to water or from water to iron ball</span>"
           ],
           answer: ""
         },
         {
           id: "q10",
           number: "10",
-          question: "A wooden spoon is dipped in a cup of ice cream. Its other end\n\n(a) becomes cold by the process of conduction\n(b) becomes cold by the process of convection\n(c) becomes cold by the process of radiation\n(d) does not become cold",
+          question: "A wooden spoon is dipped in a cup of ice cream. Its other end\n(a) becomes cold by the process of conduction\n(b) becomes cold by the process of convection\n(c) becomes cold by the process of radiation\n(d) does not become cold",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Answer: does not become cold</div>"
+            "<span style=\"color: #FFFFFF;\">Answer: (d) does not become cold</span>"
           ],
           answer: ""
         },
         {
           id: "q11",
           number: "11",
-          question: "Stainless steel pans are usually provided with copper bottoms. The reason for this could be that\n\n(a) copper bottom makes the pan more durable\n(b) such pans appear colourful\n(c) copper is a better conductor of heat than the stainless steel\n(d) copper is easier to clean than the stainless steel",
+          question: "Stainless steel pans are usually provided with copper bottoms. The reason for this could be that\n(a) copper bottom makes the pan more durable\n(b) such pans appear colourful\n(c) copper is a better conductor of heat than the stainless steel\n(d) copper is easier to clean than the stainless steel",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Answer: copper is a better conductor of heat than the stainless steel</div>"
+            "<span style=\"color: #FFFFFF;\">Answer: (c) copper is a better conductor of heat than the stainless steel</span>"
           ],
           answer: ""
         }
@@ -119,62 +127,62 @@ export const c7Sci3: ChapterContent = {
   mcqs: [
     {
       id: "c7-sci-3-mcq-1",
-      question: "<div style='text-align: justify;'>Heat always flows from:</div>",
-      options: ["<div style='text-align: justify;'>(a) A colder object to a hotter object</div>", "<div style='text-align: justify;'>(b) A hotter object to a colder object</div>", "<div style='text-align: justify;'>(c) An object at the same temperature</div>", "<div style='text-align: justify;'>(d) None of these</div>"],
+      question: "Heat always flows from:",
+      options: ["(a) A colder object to a hotter object", "(b) A hotter object to a colder object", "(c) An object at the same temperature", "(d) None of these"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-3-mcq-2",
-      question: "<div style='text-align: justify;'>The degree of hotness or coldness of an object is called:</div>",
-      options: ["<div style='text-align: justify;'>(a) Heat</div>", "<div style='text-align: justify;'>(b) Temperature</div>", "<div style='text-align: justify;'>(c) Energy</div>", "<div style='text-align: justify;'>(d) Radiation</div>"],
+      question: "The degree of hotness or coldness of an object is called:",
+      options: ["(a) Heat", "(b) Temperature", "(c) Energy", "(d) Radiation"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-3-mcq-3",
-      question: "<div style='text-align: justify;'>A clinical thermometer measures temperature from:</div>",
-      options: ["<div style='text-align: justify;'>(a) 35°C to 42°C</div>", "<div style='text-align: justify;'>(b) 0°C to 100°C</div>", "<div style='text-align: justify;'>(c) 32°C to 42°C</div>", "<div style='text-align: justify;'>(d) 10°C to 110°C</div>"],
+      question: "A clinical thermometer measures temperature from:",
+      options: ["(a) 35°C to 42°C", "(b) 0°C to 100°C", "(c) 32°C to 42°C", "(d) 10°C to 110°C"],
       correctAnswer: "a"
     },
     {
       id: "c7-sci-3-mcq-4",
-      question: "<div style='text-align: justify;'>The normal temperature of the human body is:</div>",
-      options: ["<div style='text-align: justify;'>(a) 35°C</div>", "<div style='text-align: justify;'>(b) 37°C</div>", "<div style='text-align: justify;'>(c) 40°C</div>", "<div style='text-align: justify;'>(d) 42°C</div>"],
+      question: "The normal temperature of the human body is:",
+      options: ["(a) 35°C", "(b) 37°C", "(c) 40°C", "(d) 42°C"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-3-mcq-5",
-      question: "<div style='text-align: justify;'>Heat transfer by conduction takes place in:</div>",
-      options: ["<div style='text-align: justify;'>(a) Solids only</div>", "<div style='text-align: justify;'>(b) Liquids only</div>", "<div style='text-align: justify;'>(c) Gases only</div>", "<div style='text-align: justify;'>(d) Vacuum</div>"],
+      question: "Heat transfer by conduction takes place in:",
+      options: ["(a) Solids only", "(b) Liquids only", "(c) Gases only", "(d) Vacuum"],
       correctAnswer: "a"
     },
     {
       id: "c7-sci-3-mcq-6",
-      question: "<div style='text-align: justify;'>Which of the following is an insulator of heat?</div>",
-      options: ["<div style='text-align: justify;'>(a) Iron</div>", "<div style='text-align: justify;'>(b) Copper</div>", "<div style='text-align: justify;'>(c) Plastic</div>", "<div style='text-align: justify;'>(d) Aluminium</div>"],
+      question: "Which of the following is an insulator of heat?",
+      options: ["(a) Iron", "(b) Copper", "(c) Plastic", "(d) Aluminium"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-3-mcq-7",
-      question: "<div style='text-align: justify;'>The transfer of heat in liquids and gases takes place by:</div>",
-      options: ["<div style='text-align: justify;'>(a) Conduction</div>", "<div style='text-align: justify;'>(b) Convection</div>", "<div style='text-align: justify;'>(c) Radiation</div>", "<div style='text-align: justify;'>(d) Insulation</div>"],
+      question: "The transfer of heat in liquids and gases takes place by:",
+      options: ["(a) Conduction", "(b) Convection", "(c) Radiation", "(d) Insulation"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-3-mcq-8",
-      question: "<div style='text-align: justify;'>Land breeze blows during:</div>",
-      options: ["<div style='text-align: justify;'>(a) Day</div>", "<div style='text-align: justify;'>(b) Night</div>", "<div style='text-align: justify;'>(c) Afternoon</div>", "<div style='text-align: justify;'>(d) None of these</div>"],
+      question: "Land breeze blows during:",
+      options: ["(a) Day", "(b) Night", "(c) Afternoon", "(d) None of these"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-3-mcq-9",
-      question: "<div style='text-align: justify;'>We receive heat from the sun by the process of:</div>",
-      options: ["<div style='text-align: justify;'>(a) Conduction</div>", "<div style='text-align: justify;'>(b) Convection</div>", "<div style='text-align: justify;'>(c) Radiation</div>", "<div style='text-align: justify;'>(d) Contact</div>"],
+      question: "We receive heat from the sun by the process of:",
+      options: ["(a) Conduction", "(b) Convection", "(c) Radiation", "(d) Contact"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-3-mcq-10",
-      question: "<div style='text-align: justify;'>Dark coloured clothes are preferred during:</div>",
-      options: ["<div style='text-align: justify;'>(a) Summer</div>", "<div style='text-align: justify;'>(b) Winter</div>", "<div style='text-align: justify;'>(c) Rainy season</div>", "<div style='text-align: justify;'>(d) Autumn</div>"],
+      question: "Dark coloured clothes are preferred during:",
+      options: ["(a) Summer", "(b) Winter", "(c) Rainy season", "(d) Autumn"],
       correctAnswer: "b"
     }
   ],

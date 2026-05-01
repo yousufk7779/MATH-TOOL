@@ -4,9 +4,16 @@ export const c7Sci8: ChapterContent = {
   id: "c7-sci-8",
   number: 8,
   title: "Reproduction in Plants",
-  introduction: "<div style=\"text-align: justify; color: #FFFFFF;\">Reproduction is the process by which living organisms produce new individuals of their own kind. It is essential for the survival of species. Plants reproduce both asexually and sexually. Asexual reproduction involves production of new plants without seeds, through methods like vegetative propagation, budding, fragmentation, and spore formation. Sexual reproduction involves the fusion of male and female gametes. Flowers are the reproductive parts of a plant. Stamen is the male reproductive part, and pistil is the female reproductive part. Pollination is the transfer of pollen grains from the anther to the stigma. Fertilization is the fusion of gametes to form a zygote, which develops into an embryo. Fruits are developed from ovaries, and seeds contain the embryo.</div>",
-  definitions: [],
-  keyPoints: [],
+  introduction: "<span style=\"color: #FFFFFF;\">Reproduction is the process by which living organisms produce new individuals of their own kind. In plants, reproduction can be asexual (without seeds) or sexual (with seeds).</span>",
+  definitions: [
+    { term: "Basic Concepts", description: "<span style=\"color: #FFFFFF;\">Asexual reproduction methods include budding, fragmentation, and spore formation. Sexual reproduction involves the fusion of male and female gametes in flowers.</span>" }
+  ],
+  keyPoints: [
+    "<span style=\"color: #FFFFFF;\">Flowers are the reproductive parts of a plant.</span>",
+    "<span style=\"color: #FFFFFF;\">Pollination is the transfer of pollen from anther to stigma.</span>",
+    "<span style=\"color: #FFFFFF;\">Fertilization produces a zygote which develops into an embryo.</span>",
+    "<span style=\"color: #FFFFFF;\">Fruits develop from the ovary after fertilization.</span>"
+  ],
   formulas: [],
   crux: [],
   exercises: [
@@ -17,9 +24,9 @@ export const c7Sci8: ChapterContent = {
         {
           id: "q1",
           number: "1",
-          question: "Fill in the blanks:\n(a) Production of new individuals from the vegetative part of parent is called __________.\n(b) A flower may have either male or female reproductive parts. Such a flower is called __________.\n(c) The transfer of pollen grains from the anther to the stigma of the same or of another flower of the same kind is known as __________.\n(d) The fusion of male and female gametes is termed as __________.\n(e) Seed dispersal takes place by means of __________, __________ and __________.",
+          question: "Fill in the blanks:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) vegetative propagation<br/>(b) unisexual flower<br/>(c) pollination<br/>(d) fertilisation<br/>(e) wind, water, animals</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) vegetative propagation, (b) unisexual flower, (c) pollination, (d) fertilisation, (e) wind, water, animals</span>"
           ],
           answer: ""
         },
@@ -28,7 +35,7 @@ export const c7Sci8: ChapterContent = {
           number: "2",
           question: "Describe the different methods of asexual reproduction. Give examples.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">1. <b>Vegetative Propagation:</b> New plants are produced from roots, stems, leaves, or buds. Example: Rose (stem), Potato (eye/bud).<br/><br/>2. <b>Budding:</b> A small bulb-like projection (bud) grows and detaches from the parent cell. Example: Yeast.<br/><br/>3. <b>Fragmentation:</b> The parent body breaks into two or more fragments, which grow into new individuals. Example: Spirogyra (algae).<br/><br/>4. <b>Spore Formation:</b> Fungi produce spores that germinate into new individuals under favorable conditions. Example: Bread mould.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>1. Vegetative Propagation (Rose), 2. Budding (Yeast), 3. Fragmentation (Spirogyra), 4. Spore Formation (Bread mould).</span>"
           ],
           answer: ""
         },
@@ -37,7 +44,7 @@ export const c7Sci8: ChapterContent = {
           number: "3",
           question: "Explain what you understand by sexual reproduction.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Sexual reproduction is the process of producing new individuals through the fusion of male and female gametes. It involves two parents (usually) and results in offspring with genetic variation. In plants, this happens in the flower where the male gamete (from pollen) fuses with the female gamete (in the ovule).</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>It is the production of new offspring through the fusion of male and female gametes, typically involving two parents.</span>"
           ],
           answer: ""
         },
@@ -46,7 +53,7 @@ export const c7Sci8: ChapterContent = {
           number: "4",
           question: "State the main difference between asexual and sexual reproduction.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\"><b>Asexual Reproduction:</b><br/>- Single parent involved.<br/>- No seeds are produced.<br/>- Offspring are identical to the parent.<br/><br/><b>Sexual Reproduction:</b><br/>- Two parents involved.<br/>- Seeds are produced.<br/>- Offspring show variations.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Asexual reproduction involves one parent and no seeds, while sexual reproduction involves two parents and seed formation.</span>"
           ],
           answer: ""
         },
@@ -55,7 +62,7 @@ export const c7Sci8: ChapterContent = {
           number: "5",
           question: "Sketch the reproductive parts of a flower.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(Image will be added in next update)</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(Refer to textbook diagrams for Stamen and Pistil)</span>"
           ],
           answer: ""
         },
@@ -64,7 +71,7 @@ export const c7Sci8: ChapterContent = {
           number: "6",
           question: "Explain the difference between self-pollination and cross-pollination.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\"><b>Self-pollination:</b> Pollen grains are transferred from the anther to the stigma of the same flower or another flower on the same plant.<br/><br/><b>Cross-pollination:</b> Pollen grains are transferred from the anther of one flower to the stigma of a flower on a different plant of the same species.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Self-pollination occurs in the same flower or plant. Cross-pollination occurs between different plants of the same species.</span>"
           ],
           answer: ""
         },
@@ -73,7 +80,7 @@ export const c7Sci8: ChapterContent = {
           number: "7",
           question: "How does the process of fertilisation take place in flowers?",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">When a pollen grain lands on the stigma, it germinates and produces a pollen tube that grows down through the style to the ovary. The male gamete travels through this tube and reaches the ovule, where it fuses with the egg (female gamete) to form a zygote. This process is called fertilisation.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Pollen produces a tube reaching the ovule. The male gamete fuses with the egg to form a zygote.</span>"
           ],
           answer: ""
         },
@@ -82,25 +89,25 @@ export const c7Sci8: ChapterContent = {
           number: "8",
           question: "Describe the various ways by which seeds are dispersed.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">1. <b>Wind:</b> Light seeds (e.g., drumstick, maple) or hairy seeds (e.g., sunflower) are carried by wind.<br/><br/>2. <b>Water:</b> Seeds of aquatic plants or plants near water (e.g., coconut) float and are carried by water.<br/><br/>3. <b>Animals:</b> Spiny seeds with hooks (e.g., Xanthium) attach to animal bodies.<br/><br/>4. <b>Explosion:</b> Some fruits burst open with a jerk, scattering seeds (e.g., castor, balsam).</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Seeds are dispersed by wind (maple), water (coconut), animals (Xanthium), and sudden explosions of fruits (castor).</span>"
           ],
           answer: ""
         },
         {
           id: "q9",
           number: "9",
-          question: "Match items in Column I with those in Column II:\n(a) Bud | (i) Maple\n(b) Eyes | (ii) Spirogyra\n(c) Fragmentation | (iii) Yeast\n(d) Wings | (iv) Bread mould\n(e) Spores | (v) Potato",
+          question: "Match items in Column I with those in Column II:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) - (iii) Yeast<br/>(b) - (v) Potato<br/>(c) - (ii) Spirogyra<br/>(d) - (i) Maple<br/>(e) - (iv) Bread mould</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) - (iii), (b) - (v), (c) - (ii), (d) - (i), (e) - (iv)</span>"
           ],
           answer: ""
         },
         {
           id: "q10",
           number: "10",
-          question: "Tick the correct answer:\n(a) The reproductive part of a plant is the\n(i) leaf (ii) stem (iii) root (iv) flower\n(b) The process of fusion of the male and the female gametes is called\n(i) fertilisation (ii) pollination (iii) reproduction (iv) seed formation",
+          question: "Tick the correct answer:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) (iv) flower<br/>(b) (i) fertilisation<br/>(c) (iv) fruit<br/>(d) (ii) bread mould<br/>(e) (ii) leaves</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) (iv) flower, (b) (i) fertilisation, (c) (iv) fruit, (d) (ii) bread mould, (e) (ii) leaves</span>"
           ],
           answer: ""
         }
@@ -111,62 +118,62 @@ export const c7Sci8: ChapterContent = {
   mcqs: [
     {
       id: "c7-sci-8-mcq-1",
-      question: "<div style='text-align: justify;'>Which of the following is a method of vegetative propagation?</div>",
-      options: ["<div style='text-align: justify;'>(a) Budding</div>", "<div style='text-align: justify;'>(b) Fragmentation</div>", "<div style='text-align: justify;'>(c) Cutting</div>", "<div style='text-align: justify;'>(d) Spore formation</div>"],
+      question: "Which of the following is a method of vegetative propagation?",
+      options: ["(a) Budding", "(b) Fragmentation", "(c) Cutting", "(d) Spore formation"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-8-mcq-2",
-      question: "<div style='text-align: justify;'>Yeast reproduces by:</div>",
-      options: ["<div style='text-align: justify;'>(a) Fragmentation</div>", "<div style='text-align: justify;'>(b) Budding</div>", "<div style='text-align: justify;'>(c) Binary fission</div>", "<div style='text-align: justify;'>(d) Spore formation</div>"],
+      question: "Yeast reproduces by:",
+      options: ["(a) Fragmentation", "(b) Budding", "(c) Binary fission", "(d) Spore formation"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-8-mcq-3",
-      question: "<div style='text-align: justify;'>The male reproductive part of a flower is:</div>",
-      options: ["<div style='text-align: justify;'>(a) Pistil</div>", "<div style='text-align: justify;'>(b) Stamen</div>", "<div style='text-align: justify;'>(c) Sepal</div>", "<div style='text-align: justify;'>(d) Petal</div>"],
+      question: "The male reproductive part of a flower is:",
+      options: ["(a) Pistil", "(b) Stamen", "(c) Sepal", "(d) Petal"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-8-mcq-4",
-      question: "<div style='text-align: justify;'>The ovary of a flower develops into a:</div>",
-      options: ["<div style='text-align: justify;'>(a) Seed</div>", "<div style='text-align: justify;'>(b) Fruit</div>", "<div style='text-align: justify;'>(c) Flower</div>", "<div style='text-align: justify;'>(d) Leaf</div>"],
+      question: "The ovary of a flower develops into a:",
+      options: ["(a) Seed", "(b) Fruit", "(c) Flower", "(d) Leaf"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-8-mcq-5",
-      question: "<div style='text-align: justify;'>Seed dispersal in Xanthium occurs by:</div>",
-      options: ["<div style='text-align: justify;'>(a) Wind</div>", "<div style='text-align: justify;'>(b) Water</div>", "<div style='text-align: justify;'>(c) Animals</div>", "<div style='text-align: justify;'>(d) Explosion</div>"],
+      question: "Seed dispersal in Xanthium occurs by:",
+      options: ["(a) Wind", "(b) Water", "(c) Animals", "(d) Explosion"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-8-mcq-6",
-      question: "<div style='text-align: justify;'>Spirogyra reproduces asexually by:</div>",
-      options: ["<div style='text-align: justify;'>(a) Budding</div>", "<div style='text-align: justify;'>(b) Fragmentation</div>", "<div style='text-align: justify;'>(c) Spore formation</div>", "<div style='text-align: justify;'>(d) Cutting</div>"],
+      question: "Spirogyra reproduces asexually by:",
+      options: ["(a) Budding", "(b) Fragmentation", "(c) Spore formation", "(d) Cutting"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-8-mcq-7",
-      question: "<div style='text-align: justify;'>Pollen grains contain:</div>",
-      options: ["<div style='text-align: justify;'>(a) Male gametes</div>", "<div style='text-align: justify;'>(b) Female gametes</div>", "<div style='text-align: justify;'>(c) Zygote</div>", "<div style='text-align: justify;'>(d) Embryo</div>"],
+      question: "Pollen grains contain:",
+      options: ["(a) Male gametes", "(b) Female gametes", "(c) Zygote", "(d) Embryo"],
       correctAnswer: "a"
     },
     {
       id: "c7-sci-8-mcq-8",
-      question: "<div style='text-align: justify;'>Which of the following has unisexual flowers?</div>",
-      options: ["<div style='text-align: justify;'>(a) Corn</div>", "<div style='text-align: justify;'>(b) Mustard</div>", "<div style='text-align: justify;'>(c) Rose</div>", "<div style='text-align: justify;'>(d) Petunia</div>"],
+      question: "Which of the following has unisexual flowers?",
+      options: ["(a) Corn", "(b) Mustard", "(c) Rose", "(d) Petunia"],
       correctAnswer: "a"
     },
     {
       id: "c7-sci-8-mcq-9",
-      question: "<div style='text-align: justify;'>After fertilisation, the zygote develops into:</div>",
-      options: ["<div style='text-align: justify;'>(a) Fruit</div>", "<div style='text-align: justify;'>(b) Seed</div>", "<div style='text-align: justify;'>(c) Embryo</div>", "<div style='text-align: justify;'>(d) Flower</div>"],
+      question: "After fertilisation, the zygote develops into:",
+      options: ["(a) Fruit", "(b) Seed", "(c) Embryo", "(d) Flower"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-8-mcq-10",
-      question: "<div style='text-align: justify;'>Winged seeds are found in:</div>",
-      options: ["<div style='text-align: justify;'>(a) Drumstick</div>", "<div style='text-align: justify;'>(b) Sunflower</div>", "<div style='text-align: justify;'>(c) Maple</div>", "<div style='text-align: justify;'>(d) Both a and c</div>"],
+      question: "Winged seeds are found in:",
+      options: ["(a) Drumstick", "(b) Sunflower", "(c) Maple", "(d) Both a and c"],
       correctAnswer: "d"
     }
   ],

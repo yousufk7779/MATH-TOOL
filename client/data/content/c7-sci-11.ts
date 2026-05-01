@@ -4,9 +4,16 @@ export const c7Sci11: ChapterContent = {
   id: "c7-sci-11",
   number: 11,
   title: "Light",
-  introduction: "<div style=\"text-align: justify; color: #FFFFFF;\">Light is a form of energy that enables us to see things. It travels in a straight line. Reflection of light is the bouncing back of light when it hits a surface. Mirrors and lenses are used to manipulate light and form images. There are two types of spherical mirrors: concave and convex. Similarly, there are two types of lenses: convex (converging) and concave (diverging). Sunlight consists of seven colors, which can be seen in a rainbow or by using a prism.</div>",
-  definitions: [],
-  keyPoints: [],
+  introduction: "<span style=\"color: #FFFFFF;\">Light is a form of energy that enables us to see objects. It travels in a straight line. Reflection is the bouncing back of light from a surface. Mirrors and lenses are used to form images.</span>",
+  definitions: [
+    { term: "Basic Concepts", description: "<span style=\"color: #FFFFFF;\">Plane mirrors form erect and same-sized images. Concave mirrors can form real or virtual images. Convex lenses are used as magnifying glasses.</span>" }
+  ],
+  keyPoints: [
+    "<span style=\"color: #FFFFFF;\">Light travels along a straight line.</span>",
+    "<span style=\"color: #FFFFFF;\">Reflection occurs when light hits a polished surface.</span>",
+    "<span style=\"color: #FFFFFF;\">Real images can be caught on a screen, while virtual images cannot.</span>",
+    "<span style=\"color: #FFFFFF;\">White light is composed of seven colors.</span>"
+  ],
   formulas: [],
   crux: [],
   exercises: [
@@ -17,27 +24,27 @@ export const c7Sci11: ChapterContent = {
         {
           id: "q1",
           number: "1",
-          question: "Fill in the blanks:\n(a) An image that cannot be obtained on a screen is called __________.\n(b) Image formed by a convex __________ is always virtual and smaller in size.\n(c) An image formed by a __________ mirror is always of the same size as that of the object.\n(d) An image which can be obtained on a screen is called a __________ image.\n(e) An image formed by a concave __________ cannot be obtained on a screen.",
+          question: "Fill in the blanks:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) virtual image<br/>(b) mirror<br/>(c) plane<br/>(d) real<br/>(e) lens (when object is very close)</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) virtual image, (b) mirror, (c) plane, (d) real, (e) lens</span>"
           ],
           answer: ""
         },
         {
           id: "q2",
           number: "2",
-          question: "Mark ‘T’ if the statement is true and ‘F’ if it is false:\n(a) We can obtain a magnified and erect image by a convex mirror.\n(b) A concave lens always forms a virtual image.\n(c) We can obtain a real, magnified and inverted image by a concave mirror.\n(d) A real image cannot be obtained on a screen.\n(e) A concave mirror always forms a real image.",
+          question: "Mark ‘T’ if the statement is true and ‘F’ if it is false:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) False (F)<br/>(b) True (T)<br/>(c) True (T)<br/>(d) False (F)<br/>(e) False (F)</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) F, (b) T, (c) T, (d) F, (e) F</span>"
           ],
           answer: ""
         },
         {
           id: "q3",
           number: "3",
-          question: "Match the items given in Column I with one or more items of Column II.\nColumn I | Column II\n(a) A plane mirror | (i) used as a magnifying glass\n(b) A convex mirror | (ii) can form image of objects spread over a large area\n(c) A convex lens | (iii) used by dentists to see enlarged image of teeth\n(d) A concave mirror | (iv) the image is always erect and of the same size as the object\n(e) A concave lens | (v) the image is erect and smaller in size than the object",
+          question: "Match items in Column I with those in Column II:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(a) - (iv)<br/>(b) - (ii), (v)<br/>(c) - (i)<br/>(d) - (iii)<br/>(e) - (v)</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(a) - (iv), (b) - (ii), (c) - (i), (d) - (iii), (e) - (v)</span>"
           ],
           answer: ""
         },
@@ -46,16 +53,16 @@ export const c7Sci11: ChapterContent = {
           number: "4",
           question: "State the characteristics of the image formed by a plane mirror.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">1. The image is virtual and erect.<br/>2. The image is of the same size as the object.<br/>3. The image is formed at the same distance behind the mirror as the object is in front of it.<br/>4. The image is laterally inverted (left appears right and vice-versa).</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>The image is virtual, erect, same-sized, and at the same distance behind the mirror. It is laterally inverted.</span>"
           ],
           answer: ""
         },
         {
           id: "q6",
           number: "6",
-          question: "What is a virtual image? Give one situation where a virtual image is formed.",
+          question: "What is a virtual image? Give one situation where it is formed.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">An image that cannot be obtained on a screen is called a virtual image. Example: Image formed by a plane mirror or a magnifying glass (convex lens) when the object is very close.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>An image that cannot be caught on a screen. Example: Image in a plane mirror.</span>"
           ],
           answer: ""
         },
@@ -64,7 +71,7 @@ export const c7Sci11: ChapterContent = {
           number: "7",
           question: "State two differences between a convex and a concave lens.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\"><b>Convex Lens:</b> Thicker in the middle than at the edges; it converges light rays.<br/><b>Concave Lens:</b> Thinner in the middle than at the edges; it diverges light rays.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Convex lens is thicker in the middle and converges light. Concave lens is thinner in the middle and diverges light.</span>"
           ],
           answer: ""
         },
@@ -73,7 +80,7 @@ export const c7Sci11: ChapterContent = {
           number: "8",
           question: "Give one use each of a concave and a convex mirror.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\"><b>Concave mirror:</b> Used by dentists to see an enlarged image of teeth.<br/><b>Convex mirror:</b> Used as a side-view mirror in vehicles to see traffic over a large area.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Concave mirror: Used by dentists. Convex mirror: Used as side-view mirrors in cars.</span>"
           ],
           answer: ""
         },
@@ -82,7 +89,7 @@ export const c7Sci11: ChapterContent = {
           number: "9",
           question: "Which type of mirror can form a real image?",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Concave mirror.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Concave mirror.</span>"
           ],
           answer: ""
         },
@@ -91,16 +98,16 @@ export const c7Sci11: ChapterContent = {
           number: "10",
           question: "Which type of lens forms always a virtual image?",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">Concave lens.</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>Concave lens.</span>"
           ],
           answer: ""
         },
         {
           id: "q11",
           number: "11",
-          question: "A virtual image larger than the object can be produced by a\n(i) concave lens (ii) concave mirror (iii) convex mirror (iv) plane mirror",
+          question: "A virtual image larger than the object can be produced by a:",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\">(ii) concave mirror</div>"
+            "<span style=\"color: #FFFFFF;\">Answer:<br/>(ii) concave mirror</span>"
           ],
           answer: ""
         }
@@ -111,62 +118,62 @@ export const c7Sci11: ChapterContent = {
   mcqs: [
     {
       id: "c7-sci-11-mcq-1",
-      question: "<div style='text-align: justify;'>Light travels in:</div>",
-      options: ["<div style='text-align: justify;'>(a) Curved lines</div>", "<div style='text-align: justify;'>(b) Straight lines</div>", "<div style='text-align: justify;'>(c) Zig-zag lines</div>", "<div style='text-align: justify;'>(d) Randomly</div>"],
+      question: "Light travels in:",
+      options: ["(a) Curved lines", "(b) Straight lines", "(c) Zig-zag lines", "(d) Randomly"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-11-mcq-2",
-      question: "<div style='text-align: justify;'>The bouncing back of light from a polished surface is called:</div>",
-      options: ["<div style='text-align: justify;'>(a) Refraction</div>", "<div style='text-align: justify;'>(b) Reflection</div>", "<div style='text-align: justify;'>(c) Dispersion</div>", "<div style='text-align: justify;'>(d) Absorption</div>"],
+      question: "The bouncing back of light from a polished surface is called:",
+      options: ["(a) Refraction", "(b) Reflection", "(c) Dispersion", "(d) Absorption"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-11-mcq-3",
-      question: "<div style='text-align: justify;'>A mirror with a bulging reflecting surface is a:</div>",
-      options: ["<div style='text-align: justify;'>(a) Concave mirror</div>", "<div style='text-align: justify;'>(b) Convex mirror</div>", "<div style='text-align: justify;'>(c) Plane mirror</div>", "<div style='text-align: justify;'>(d) None</div>"],
+      question: "A mirror with a bulging reflecting surface is a:",
+      options: ["(a) Concave mirror", "(b) Convex mirror", "(c) Plane mirror", "(d) None"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-11-mcq-4",
-      question: "<div style='text-align: justify;'>White light consists of ______ colors.</div>",
-      options: ["<div style='text-align: justify;'>(a) Five</div>", "<div style='text-align: justify;'>(b) Six</div>", "<div style='text-align: justify;'>(c) Seven</div>", "<div style='text-align: justify;'>(d) Eight</div>"],
+      question: "White light consists of ______ colors.",
+      options: ["(a) Five", "(b) Six", "(c) Seven", "(d) Eight"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-11-mcq-5",
-      question: "<div style='text-align: justify;'>Which lens is used as a magnifying glass?</div>",
-      options: ["<div style='text-align: justify;'>(a) Concave lens</div>", "<div style='text-align: justify;'>(b) Convex lens</div>", "<div style='text-align: justify;'>(c) Plane lens</div>", "<div style='text-align: justify;'>(d) None</div>"],
+      question: "Which lens is used as a magnifying glass?",
+      options: ["(a) Concave lens", "(b) Convex lens", "(c) Plane lens", "(d) None"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-11-mcq-6",
-      question: "<div style='text-align: justify;'>The splitting of white light into its component colors is called:</div>",
-      options: ["<div style='text-align: justify;'>(a) Reflection</div>", "<div style='text-align: justify;'>(b) Refraction</div>", "<div style='text-align: justify;'>(c) Dispersion</div>", "<div style='text-align: justify;'>(d) Deviation</div>"],
+      question: "The splitting of white light into its component colors is called:",
+      options: ["(a) Reflection", "(b) Refraction", "(c) Dispersion", "(d) Deviation"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-11-mcq-7",
-      question: "<div style='text-align: justify;'>Side-view mirrors in cars are:</div>",
-      options: ["<div style='text-align: justify;'>(a) Concave</div>", "<div style='text-align: justify;'>(b) Convex</div>", "<div style='text-align: justify;'>(c) Plane</div>", "<div style='text-align: justify;'>(d) Parabolic</div>"],
+      question: "Side-view mirrors in cars are:",
+      options: ["(a) Concave", "(b) Convex", "(c) Plane", "(d) Parabolic"],
       correctAnswer: "b"
     },
     {
       id: "c7-sci-11-mcq-8",
-      question: "<div style='text-align: justify;'>An image formed by a plane mirror is:</div>",
-      options: ["<div style='text-align: justify;'>(a) Real and erect</div>", "<div style='text-align: justify;'>(b) Virtual and inverted</div>", "<div style='text-align: justify;'>(c) Virtual and erect</div>", "<div style='text-align: justify;'>(d) Real and inverted</div>"],
+      question: "An image formed by a plane mirror is:",
+      options: ["(a) Real and erect", "(b) Virtual and inverted", "(c) Virtual and erect", "(d) Real and inverted"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-11-mcq-9",
-      question: "<div style='text-align: justify;'>Which of the following can form a real image?</div>",
-      options: ["<div style='text-align: justify;'>(a) Plane mirror</div>", "<div style='text-align: justify;'>(b) Convex mirror</div>", "<div style='text-align: justify;'>(c) Concave mirror</div>", "<div style='text-align: justify;'>(d) Concave lens</div>"],
+      question: "Which of the following can form a real image?",
+      options: ["(a) Plane mirror", "(b) Convex mirror", "(c) Concave mirror", "(d) Concave lens"],
       correctAnswer: "c"
     },
     {
       id: "c7-sci-11-mcq-10",
-      question: "<div style='text-align: justify;'>A prism can split sunlight into a band of colors called:</div>",
-      options: ["<div style='text-align: justify;'>(a) Spectrum</div>", "<div style='text-align: justify;'>(b) Rainbow</div>", "<div style='text-align: justify;'>(c) Beam</div>", "<div style='text-align: justify;'>(d) Ray</div>"],
+      question: "A prism can split sunlight into a band of colors called:",
+      options: ["(a) Spectrum", "(b) Rainbow", "(c) Beam", "(d) Ray"],
       correctAnswer: "a"
     }
   ],
