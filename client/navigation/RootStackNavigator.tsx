@@ -29,19 +29,20 @@ export type RootStackParamList = {
   Class8: undefined;
   Class7: undefined;
   ScienceTopics: { className?: string } | undefined;
-  ChapterList: { subject?: string; topic?: string } | undefined;
+  ChapterList: { subject?: string; topic?: string; className?: string } | undefined;
   Solution: {
     chapterId: string;
     chapterName: string;
     exerciseId?: string;
     questionId?: string;
+    className?: string;
   };
   QuickNotes: { className?: string } | undefined;
   NoteEditor: { note?: Note; className?: string } | undefined;
   Quiz: { className?: string } | undefined;
-  NewsEvents: undefined;
-  AboutEducator: undefined;
-  GlobalPYQ: undefined;
+  NewsEvents: { className?: string } | undefined;
+  AboutEducator: { className?: string } | undefined;
+  GlobalPYQ: { className?: string } | undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();

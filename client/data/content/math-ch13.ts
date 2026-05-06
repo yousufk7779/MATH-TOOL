@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh13: ChapterContent = {
     id: "ch13",
@@ -244,10 +244,10 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
@@ -422,10 +422,10 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
@@ -1138,10 +1138,10 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
@@ -1339,10 +1339,10 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
@@ -1689,10 +1689,10 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }

@@ -7,6 +7,7 @@ import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
+import { getHomeRoute } from "@/utils/navigation-utils";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -19,8 +20,10 @@ function ScienceTopicsScreen() {
     const className = route.params?.className;
     const subjectName = className ? `${className} Science` : "Science";
 
+    const homeRoute = getHomeRoute(className);
+
     return (
-        <ScreenWrapper showBackButton hideHomeButton>
+        <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
             <ScrollView
                 style={styles.scrollView}
                 contentContainerStyle={[

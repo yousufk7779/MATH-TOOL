@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const c7Sci3: ChapterContent = {
   id: "c7-sci-3",
@@ -27,7 +27,7 @@ export const c7Sci3: ChapterContent = {
           number: "1",
           question: "State similarities and differences between the laboratory thermometer and the clinical thermometer.",
           solution: [
-            "<div style=\"text-align: justify; color: #FFFFFF;\"><span style=\"color: #FFFF00;\">Similarity:</span> Both are used to measure temperature and have a glass tube with a bulb and a scale.<br/><br/><span style=\"color: #FFFF00;\">Difference:</span><br/>Laboratory thermometer is used to measure temperature of different objects and has a wide range. Clinical thermometer is used to measure human body temperature and has a narrow range and a kink.</div>"
+            "<div style=\"text-align: justify; color: #FFFFFF;\"><span style=\"color: #FFFF00;\">Similarity:</span><br\> Both are used to measure temperature and have a glass tube with a bulb and a scale.<br/><br/><span style=\"color: #FFFF00;\">Difference:</span><br/>Laboratory thermometer is used to measure temperature of different objects and has a wide range. Clinical thermometer is used to measure human body temperature and has a narrow range and a kink.</div>"
           ],
           answer: ""
         },
@@ -80,7 +80,9 @@ export const c7Sci3: ChapterContent = {
           id: "q7",
           number: "7",
           question: "In places of hot climate it is advised that the outer walls of houses be painted white. Explain.",
-          solution: [
+	
+
+          solution: ["<span style=\"color: #FFFFFF;\">Answer: </span>",
             "<div style=\"text-align: justify; color: #FFFFFF;\">White colour reflects most of the heat falling on it. Therefore, painting the outer walls white helps in keeping the house cool in hot climates.</div>"
           ],
           answer: ""
@@ -88,7 +90,7 @@ export const c7Sci3: ChapterContent = {
         {
           id: "q8",
           number: "8",
-          question: "One litre of water at 30°C is mixed with one litre of water at 50°C. The temperature of mixture will be\n(a) 80°C\n(b) more than 50°C but less than 80°C\n(c) 20°C\n(d) between 30°C and 50°C",
+          question:  "One litre of water at 30°C is mixed with one litre of water at 50°C. The temperature of mixture will be (a) 80°C <br\> (b) more than 50°C but less than 80°C <br\>(c) 20°C <br\>(d) between 30°C and 50°C",
           solution: [
             "<span style=\"color: #FFFFFF;\">Answer: (d) between 30°C and 50°C</span>"
           ],
@@ -97,7 +99,7 @@ export const c7Sci3: ChapterContent = {
         {
           id: "q9",
           number: "9",
-          question: "An iron ball at 40°C is dropped in a mug containing water at 40°C. The heat will\n(a) flow from iron ball to water\n(b) not flow from iron ball to water or from water to iron ball\n(c) flow from water to iron ball\n(d) increase the temperature of both",
+          question: "An iron ball at 40°C is dropped in a mug containing water at 40°C. The heat will <br\>(a) flow from iron ball to water <br\>(b) not flow from iron ball to water or from water to iron ball <br\>(c) flow from water to iron ball <br\>(d) increase the temperature of both",
           solution: [
             "<span style=\"color: #FFFFFF;\">Answer: (b) not flow from iron ball to water or from water to iron ball</span>"
           ],
@@ -106,7 +108,7 @@ export const c7Sci3: ChapterContent = {
         {
           id: "q10",
           number: "10",
-          question: "A wooden spoon is dipped in a cup of ice cream. Its other end\n(a) becomes cold by the process of conduction\n(b) becomes cold by the process of convection\n(c) becomes cold by the process of radiation\n(d) does not become cold",
+          question: "A wooden spoon is dipped in a cup of ice cream. Its other end <br\>(a) becomes cold by the process of conduction <br\>(b) becomes cold by the process of convection <br\>(c) becomes cold by the process of radiation <br\>(d) does not become cold",
           solution: [
             "<span style=\"color: #FFFFFF;\">Answer: (d) does not become cold</span>"
           ],
@@ -115,7 +117,7 @@ export const c7Sci3: ChapterContent = {
         {
           id: "q11",
           number: "11",
-          question: "Stainless steel pans are usually provided with copper bottoms. The reason for this could be that\n(a) copper bottom makes the pan more durable\n(b) such pans appear colourful\n(c) copper is a better conductor of heat than the stainless steel\n(d) copper is easier to clean than the stainless steel",
+          question: "Stainless steel pans are usually provided with copper bottoms. The reason for this could be that <br\>(a) copper bottom makes the pan more durable <br\>(b) such pans appear colourful <br\>(c) copper is a better conductor of heat than the stainless steel <br\>(d) copper is easier to clean than the stainless steel",
           solution: [
             "<span style=\"color: #FFFFFF;\">Answer: (c) copper is a better conductor of heat than the stainless steel</span>"
           ],

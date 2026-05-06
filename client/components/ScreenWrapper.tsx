@@ -12,13 +12,14 @@ interface ScreenWrapperProps {
   hideHomeButton?: boolean;
   title?: string;
   titleColor?: string;
+  homeRoute?: any;
 }
 
-export const ScreenWrapper = memo(function ScreenWrapper({ children, showBackButton = false, hideHomeButton = false, title, titleColor }: ScreenWrapperProps) {
+export const ScreenWrapper = memo(function ScreenWrapper({ children, showBackButton = false, hideHomeButton = false, title, titleColor, homeRoute }: ScreenWrapperProps) {
   return (
     <View style={styles.container}>
       <StaticHeader />
-      {showBackButton ? <NavigationButtons title={title} titleColor={titleColor} hideHomeButton={hideHomeButton} /> : null}
+      {showBackButton ? <NavigationButtons title={title} titleColor={titleColor} hideHomeButton={hideHomeButton} homeRoute={homeRoute} /> : null}
       <View style={styles.content}>{children}</View>
       <CreatorCredit />
     </View>

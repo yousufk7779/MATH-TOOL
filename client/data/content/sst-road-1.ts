@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const sstRoad1: ChapterContent = {
     id: "sst-road-1",

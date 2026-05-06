@@ -1,13 +1,8 @@
 import { ChapterHTMLs } from "./chapterHTMLs";
+import { Definition, Formula, Question, Exercise, MCQ, Example, Theorem, ChapterContent } from "./types";
 
-export interface Definition { term: string; description: string; }
-export interface Formula { name: string; formula: string; }
-export interface Question { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }
-export interface Exercise { id: string; name: string; questions: Question[]; }
-export interface MCQ { id: string; question: string; options: string[]; correctAnswer: string; }
-export interface Example { id: string; number: string; question: string; solution: string[]; answer: string; image?: string; }
-export interface Theorem { id: string; number: string; name: string; statement: string; proof?: string[]; example?: string; }
-export interface ChapterContent { id: string; number: number; title: string; introduction: string; definitions: Definition[]; keyPoints: string[]; formulas: Formula[]; crux: string[]; exercises: Exercise[]; examples: Example[]; theorems?: Theorem[]; mcqs: MCQ[]; summary: string[]; isHtmlView?: boolean; htmlOverview?: string; htmlExercises?: Record<string, string>; htmlMcqs?: string; }
+export type { Definition, Formula, Question, Exercise, MCQ, Example, Theorem, ChapterContent };
+
 
 import { mathCh1 } from "./content/math-ch1";
 import { mathCh2 } from "./content/math-ch2";
@@ -108,21 +103,61 @@ import { c7Sci10 } from "./content/c7-sci-10";
 import { c7Sci11 } from "./content/c7-sci-11";
 import { c7Sci12 } from "./content/c7-sci-12";
 import { c7Sci13 } from "./content/c7-sci-13";
+import { c8Sci1 } from "./content/c8-sci-1";
+import { c8Sci2 } from "./content/c8-sci-2";
+import { c8Sci3 } from "./content/c8-sci-3";
+import { c8Sci4 } from "./content/c8-sci-4";
+import { c8Sci5 } from "./content/c8-sci-5";
+import { c8Sci6 } from "./content/c8-sci-6";
+import { c8Sci7 } from "./content/c8-sci-7";
+import { c8Sci8 } from "./content/c8-sci-8";
+import { c8Sci9 } from "./content/c8-sci-9";
+import { c8Sci10 } from "./content/c8-sci-10";
+import { c8Sci11 } from "./content/c8-sci-11";
+import { c8Sci12 } from "./content/c8-sci-12";
+import { c8Sci13 } from "./content/c8-sci-13";
 
 
 
 
 
+
+
+
+import { c9Math1 } from "./content/c9-math-1";
+import { c9Math2 } from "./content/c9-math-2";
+import { c9Math3 } from "./content/c9-math-3";
+import { c9Math4 } from "./content/c9-math-4";
+import { c9Math5 } from "./content/c9-math-5";
+import { c9Math6 } from "./content/c9-math-6";
+import { c9Math7 } from "./content/c9-math-7";
+import { c9Math8 } from "./content/c9-math-8";
+import { c9Math9 } from "./content/c9-math-9";
+import { c9Math10 } from "./content/c9-math-10";
+import { c9Math11 } from "./content/c9-math-11";
 
 
 
 export const chapterContents: Record<string, ChapterContent> = {
+  "c9-math-1": c9Math1,
+  "c9-math-2": c9Math2,
+  "c9-math-3": c9Math3,
+  "c9-math-4": c9Math4,
+  "c9-math-5": c9Math5,
+  "c9-math-6": c9Math6,
+  "c9-math-7": c9Math7,
+  "c9-math-8": c9Math8,
+  "c9-math-9": c9Math9,
+  "c9-math-10": c9Math10,
+  "c9-math-11": c9Math11,
+
+
   "ch1": mathCh1,
   "ch2": mathCh2,
   "ch3": mathCh3,
   "ch4": mathCh4,
   "ch5": mathCh5,
-  "ch6": mathCh6,
+  "ch6": c9Math6,
   "ch7": mathCh7,
   "ch8": mathCh8,
   "ch9": mathCh9,
@@ -216,6 +251,19 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c7-sci-11": c7Sci11,
   "c7-sci-12": c7Sci12,
   "c7-sci-13": c7Sci13,
+  "c8-sci-1": c8Sci1,
+  "c8-sci-2": c8Sci2,
+  "c8-sci-3": c8Sci3,
+  "c8-sci-4": c8Sci4,
+  "c8-sci-5": c8Sci5,
+  "c8-sci-6": c8Sci6,
+  "c8-sci-7": c8Sci7,
+  "c8-sci-8": c8Sci8,
+  "c8-sci-9": c8Sci9,
+  "c8-sci-10": c8Sci10,
+  "c8-sci-11": c8Sci11,
+  "c8-sci-12": c8Sci12,
+  "c8-sci-13": c8Sci13,
 };
 
 

@@ -9,6 +9,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { ParsedText } from "@/components/ParsedText";
 import { generateQuizAsync, QuizQuestion } from "@/utils/quiz-engine";
+import { getHomeRoute } from "@/utils/navigation-utils";
 import { saveQuizResult, getQuizHistory, QuizResult } from "@/utils/quiz-storage";
 
 type QuizState = "menu" | "active" | "result";
@@ -38,12 +39,9 @@ export default function QuizScreen() {
     };
 
     const startQuiz = useCallback(async (subject: string = "Mathematics") => {
-        if (className === "Class 9" && subject === "Mathematics") {
-            Alert.alert("Coming Soon", "Mathematics quiz for Class 9 is coming soon!");
-            return;
-        }
+        // Mathematics for Class 9 is now available
 
-        if (className && className !== "Class 10" && className !== "Class 9" && className !== "Class 7") {
+        if (className && className !== "Class 10" && className !== "Class 9" && className !== "Class 8" && className !== "Class 7") {
             Alert.alert("Quiz Coming Soon", `Quiz content for ${className} is coming soon!`);
             return;
         }
@@ -285,8 +283,10 @@ export default function QuizScreen() {
         );
     };
 
+    const homeRoute = getHomeRoute(className);
+
     return (
-        <ScreenWrapper showBackButton={viewState !== "active"} hideHomeButton>
+        <ScreenWrapper showBackButton={viewState !== "active"} hideHomeButton homeRoute={homeRoute}>
             <ScrollView contentContainerStyle={styles.scrollView} showsVerticalScrollIndicator={false}>
                 {viewState === "menu" && renderMenu()}
                 {viewState === "active" && renderActiveQuiz()}

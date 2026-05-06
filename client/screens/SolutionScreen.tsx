@@ -15,6 +15,7 @@ import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/them
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter, getChapterGradient } from "@/data/chapters";
 import { getChapterContent } from "@/data/chapterContent";
+import { getHomeRoute } from "@/utils/navigation-utils";
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
 
@@ -140,7 +141,7 @@ interface TabButtonProps {
 }
 
 const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabButtonProps) => {
-  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6";
+  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6" || gradient[0] === "#FF1744" || gradient[0] === "#43A047";
   return (
     <Pressable
       delayPressIn={0}
@@ -182,7 +183,7 @@ interface SubTabButtonProps {
 }
 
 const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: SubTabButtonProps) => {
-  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6";
+  const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6" || gradient[0] === "#FF1744" || gradient[0] === "#43A047";
   return (
     <Pressable
       delayPressIn={0}
@@ -223,7 +224,7 @@ interface SubSectionProps {
 
 function SolutionScreen() {
   const route = useRoute<SolutionRouteProp>();
-  const { chapterId } = route.params;
+  const { chapterId, className } = route.params;
   const scrollViewRef = useRef<any>(null);
   const shakeAnimRefs = useRef<Record<string, Animated.Value>>({});
 
@@ -558,8 +559,10 @@ function SolutionScreen() {
     tab2Title = "NCERT Solutions";
   }
 
+  const homeRoute = getHomeRoute(className, chapterId);
+
   return (
-    <ScreenWrapper showBackButton title={chapter ? `Chapter ${chapter.number}` : ""} titleColor={accentColor}>
+    <ScreenWrapper showBackButton title={chapter ? `Chapter ${chapter.number}` : ""} titleColor={accentColor} homeRoute={homeRoute}>
       <View style={styles.staticContainer}>
         <View style={styles.tabContainer}>
           <TabButton title={tab1Title} isActive={activeSection === "overview"} onPress={() => handleSectionChange("overview")} gradient={chapterGradient} textStyle={hwTitleStyle} />
@@ -648,6 +651,30 @@ const MathWebView = memo(({ chapterData, activeSection, activeSubSection, onScro
   else if (activeSection === "exercises") htmlContent = chapterData.htmlExercises?.[activeSubSection] || "";
   else if (activeSection === "mcq") htmlContent = chapterData.htmlMcqs || "";
 
+  const fullHtml = `
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <style>
+          body { 
+            margin: 0; 
+            padding: 5px; 
+            color: white; 
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            font-size: 19px; 
+            line-height: 1.6;
+            background-color: transparent;
+          }
+          * { box-sizing: border-box; }
+        </style>
+      </head>
+      <body>
+        ${htmlContent}
+      </body>
+    </html>
+  `;
+
   const injectedJS = `
     const style = document.createElement('style');
     style.innerHTML = \`
@@ -701,7 +728,7 @@ const MathWebView = memo(({ chapterData, activeSection, activeSubSection, onScro
     <View style={{ height: Math.max(height + 80, 500), width: '100%', paddingBottom: 20 }}>
       <WebView
         originWhitelist={['*']}
-        source={{ html: htmlContent, baseUrl: '' }}
+        source={{ html: fullHtml, baseUrl: '' }}
         injectedJavaScript={injectedJS}
         onMessage={(event) => {
           if (event.nativeEvent.data) {

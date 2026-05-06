@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh8: ChapterContent = {
     id: "ch8",
@@ -244,7 +244,7 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
   .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
@@ -569,7 +569,7 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
   .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
@@ -976,7 +976,7 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
   .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
@@ -1295,7 +1295,7 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
   .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
@@ -1673,7 +1673,7 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
   .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }

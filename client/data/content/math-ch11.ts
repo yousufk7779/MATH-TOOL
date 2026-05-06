@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 import easyMcqsCh11 from "../easy_mcqs_ch11.json";
 
 export const mathCh11: ChapterContent = {
@@ -51,7 +51,7 @@ export const mathCh11: ChapterContent = {
         .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #AB47BC; padding-bottom: 10px; font-family: 'Nunito', sans-serif; }
         .logo { color: #AB47BC; font-size: 24px; font-weight: normal; }
         .chapter-title { text-align: center; color: #fff; font-size: 20px; font-weight: normal; margin: 10px 0; font-family: 'Noto Sans', sans-serif; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; }
+        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(171, 71, 188, 0.2) !important; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; }
         .section-title { color: #AB47BC !important; font-weight: normal; font-size: 1.2em; margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1) !important; padding-bottom: 5px; }
         .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #AB47BC !important; padding: 10px; margin: 10px 0; font-family: 'Nunito', sans-serif; color: #fff !important; }
         .step { margin-bottom: 8px; font-size: 1.1em; color: #ccc !important; line-height: 1.5; }
@@ -104,7 +104,7 @@ export const mathCh11: ChapterContent = {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
         body { font-family: 'Noto Sans', sans-serif !important; margin: 0; padding: 15px; background: transparent !important; color: #fff !important; text-align: justify !important; width: 100%; overflow-x: hidden; padding-bottom: 150px !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flow-root; }
+        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(171, 71, 188, 0.2) !important; border-radius: 8px; padding: 15px; margin-bottom: 20px; display: flow-root; }
         .question { color: #AB47BC !important; font-weight: normal; margin-bottom: 15px; font-size: 1.1em; line-height: 1.6; }
         .solution-header { color: #AB47BC !important; font-weight: normal; margin-bottom: 8px; font-size: 1em; }
         .step { margin-bottom: 8px; font-size: 1em; color: #ccc !important; line-height: 1.6; }
@@ -168,7 +168,7 @@ export const mathCh11: ChapterContent = {
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
         body { font-family: 'Noto Sans', sans-serif !important; margin: 0; padding: 15px; background: transparent !important; color: #fff !important; text-align: justify !important; width: 100%; overflow-x: hidden; padding-bottom: 150px !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; border-radius: 8px; padding: 15px; margin-bottom: 25px; display: flow-root; }
+        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(171, 71, 188, 0.2) !important; border-radius: 8px; padding: 15px; margin-bottom: 25px; display: flow-root; }
         .question { color: #AB47BC !important; font-weight: normal; margin-bottom: 15px; font-size: 1.1em; line-height: 1.6; }
         .solution-header { color: #AB47BC !important; font-weight: normal; margin-bottom: 8px; font-size: 1em; }
         .step { margin-bottom: 8px; font-size: 1em; color: #ccc !important; line-height: 1.6; }

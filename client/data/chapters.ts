@@ -122,19 +122,19 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   },
   "Class 8 Science": {
     "Science": [
-      { id: "c8-sci-1", number: 1, name: "Crop Production and Management", color: "#E91E63" },
-      { id: "c8-sci-2", number: 2, name: "Microorganisms: Friend and Foe", color: "#E91E63" },
-      { id: "c8-sci-3", number: 3, name: "Coal and Petroleum", color: "#E91E63" },
-      { id: "c8-sci-4", number: 4, name: "Combustion and Flame", color: "#E91E63" },
-      { id: "c8-sci-5", number: 5, name: "Conservation of Plants and Animals", color: "#E91E63" },
-      { id: "c8-sci-6", number: 6, name: "Reproduction in Animals", color: "#E91E63" },
-      { id: "c8-sci-7", number: 7, name: "Reaching the Age of Adolescence", color: "#E91E63" },
-      { id: "c8-sci-8", number: 8, name: "Force and Pressure", color: "#E91E63" },
-      { id: "c8-sci-9", number: 9, name: "Friction", color: "#E91E63" },
-      { id: "c8-sci-10", number: 10, name: "Sound", color: "#E91E63" },
-      { id: "c8-sci-11", number: 11, name: "Chemical Effects of Electric Current", color: "#E91E63" },
-      { id: "c8-sci-12", number: 12, name: "Some Natural Phenomena", color: "#E91E63" },
-      { id: "c8-sci-13", number: 13, name: "Light", color: "#E91E63" }
+      { id: "c8-sci-1", number: 1, name: "Micro-Organisms: Friend and Foe", color: "#E91E63" },
+      { id: "c8-sci-2", number: 2, name: "Coal and Petroleum", color: "#E91E63" },
+      { id: "c8-sci-3", number: 3, name: "Conservation of Plants and Animals", color: "#E91E63" },
+      { id: "c8-sci-4", number: 4, name: "Reproduction in Animals", color: "#E91E63" },
+      { id: "c8-sci-5", number: 5, name: "Sound", color: "#E91E63" },
+      { id: "c8-sci-6", number: 6, name: "Food Production and Management", color: "#E91E63" },
+      { id: "c8-sci-7", number: 7, name: "Combustion and Flame", color: "#E91E63" },
+      { id: "c8-sci-8", number: 8, name: "Chemical Effects of Electric Current", color: "#E91E63" },
+      { id: "c8-sci-9", number: 9, name: "Force and Pressure", color: "#E91E63" },
+      { id: "c8-sci-10", number: 10, name: "Reaching the Age of Adolescence", color: "#E91E63" },
+      { id: "c8-sci-11", number: 11, name: "Light", color: "#E91E63" },
+      { id: "c8-sci-12", number: 12, name: "Friction", color: "#E91E63" },
+      { id: "c8-sci-13", number: 13, name: "Some Natural Phenomenon", color: "#E91E63" }
     ]
   },
   "Class 7 Science": {
@@ -194,6 +194,15 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   if (pinkOrangeTargetedIds.includes(chapterId)) {
     return JiguuColors.gradients.pinkOrange;
+  }
+  
+  // Targeted theme color replacement for Chapter 10 (Red-Orange Gradient)
+  const redTargetedIds = [
+    "ch10", "c9-math-10", "c8-math-10", "c7-math-10"
+  ];
+  
+  if (redTargetedIds.includes(chapterId)) {
+    return JiguuColors.gradients.premiumGreen as string[];
   }
 
   const gradientList = Object.values(JiguuColors.gradients) as string[][];

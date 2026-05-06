@@ -1,7 +1,9 @@
 import React, { memo, useState, useCallback, useMemo } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute, RouteProp } from "@react-navigation/native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
+import { getHomeRoute } from "@/utils/navigation-utils";
+import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { ThemedText } from "@/components/ThemedText";
 import { ColorButton } from "@/components/ColorButton";
 import QuestionCard from "@/components/solution/QuestionCard";
@@ -11,6 +13,8 @@ import { class10Chapters as chapters } from "@/data/chapters";
 
 export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
 
+    const route = useRoute<RouteProp<RootStackParamList, "GlobalPYQ">>();
+    const className = route.params?.className;
     const [selectedYear, setSelectedYear] = useState<string | null>(null);
     const [selectedColor, setSelectedColor] = useState<string>(JiguuColors.accent3); // Default color
     const [selectedChapterId, setSelectedChapterId] = useState<string | null>(null);
@@ -35,8 +39,9 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     // Render Year Selection Grid
 
     if (!selectedYear) {
+        const homeRoute = getHomeRoute(className);
         return (
-            <ScreenWrapper showBackButton={true}>
+            <ScreenWrapper showBackButton={true} homeRoute={homeRoute}>
                 <ScrollView contentContainerStyle={styles.content}>
                     <ThemedText style={styles.headerTitle}>Previous Year Papers</ThemedText>
                     <ThemedText style={styles.subTitle}>JKBOSE</ThemedText>
@@ -70,8 +75,9 @@ export const GlobalPYQScreen = memo(function GlobalPYQScreen() {
     }
 
     // Render Question List
+    const homeRoute = getHomeRoute(className);
     return (
-        <ScreenWrapper showBackButton={true}>
+        <ScreenWrapper showBackButton={true} homeRoute={homeRoute}>
             <View style={styles.headerContainer}>
                 <View style={[styles.yearBadge, { backgroundColor: selectedColor }]}>
                     <ThemedText style={styles.yearText}>{selectedYear}</ThemedText>

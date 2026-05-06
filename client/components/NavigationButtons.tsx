@@ -16,9 +16,10 @@ interface NavigationButtonsProps {
   title?: string;
   titleColor?: string;
   hideHomeButton?: boolean;
+  homeRoute?: keyof RootStackParamList;
 }
 
-export const NavigationButtons = memo(function NavigationButtons({ title, titleColor, hideHomeButton }: NavigationButtonsProps) {
+export const NavigationButtons = memo(function NavigationButtons({ title, titleColor, hideHomeButton, homeRoute = "Home" }: NavigationButtonsProps) {
   const navigation = useNavigation<NavigationProp>();
 
   const handleBack = useCallback(() => {
@@ -34,9 +35,9 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
     }
     navigation.reset({
       index: 1,
-      routes: [{ name: "ClassSelector" }, { name: "Home" }],
+      routes: [{ name: "ClassSelector" }, { name: homeRoute as any }],
     });
-  }, [navigation]);
+  }, [navigation, homeRoute]);
 
   return (
     <View style={styles.container}>

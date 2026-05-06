@@ -1,7 +1,10 @@
 import React, { memo } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 
+import { useRoute, RouteProp } from "@react-navigation/native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
+import { RootStackParamList } from "@/navigation/RootStackNavigator";
+import { getHomeRoute } from "@/utils/navigation-utils";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
@@ -31,8 +34,12 @@ const NEWS_DATA = [
 ];
 
 function NewsEventsScreen() {
+  const route = useRoute<RouteProp<RootStackParamList, "NewsEvents">>();
+  const className = route.params?.className;
+  const homeRoute = getHomeRoute(className);
+
   return (
-    <ScreenWrapper showBackButton>
+    <ScreenWrapper showBackButton homeRoute={homeRoute}>
       <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.content}

@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const sstGeo7: ChapterContent = {
     id: "sst-geo-7",

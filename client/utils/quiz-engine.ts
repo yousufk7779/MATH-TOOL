@@ -1,7 +1,9 @@
 import easyMathsMcqs from "../data/easy_mcqs_maths.json";
 import easyScienceMcqs from "../data/easy_mcqs_science.json";
 import easyScienceC9Mcqs from "../data/easy_mcqs_science_c9.json";
+import easyScienceC8Mcqs from "../data/easy_mcqs_science_c8.json";
 import easyScienceC7Mcqs from "../data/easy_mcqs_science_c7.json";
+import easyMathC9Mcqs from "../data/easy_mcqs_math_c9.json";
 
 export interface QuizQuestion {
     id: string;
@@ -31,7 +33,36 @@ export const generateQuizAsync = async (questionCount: number = 10, subject: str
         return [];
     }
 
+    if (className === "Class 8") {
+        if (subject === "Science") {
+            const scienceMcqs = easyScienceC8Mcqs as QuizQuestion[];
+            const physics = scienceMcqs.filter(q => q.subject === "physics");
+            const chemistry = scienceMcqs.filter(q => q.subject === "chemistry");
+            const life = scienceMcqs.filter(q => q.subject === "life");
+
+            // Pick 3 from each category (total 9) to ensure balance
+            const p3 = shuffleArray(physics).slice(0, 3);
+            const c3 = shuffleArray(chemistry).slice(0, 3);
+            const l3 = shuffleArray(life).slice(0, 3);
+
+            const selectedIds = new Set([...p3, ...c3, ...l3].map(q => q.id));
+            const remaining = scienceMcqs.filter(q => !selectedIds.has(q.id));
+            
+            // Pick remaining 1 randomly to make it 10
+            const r1 = shuffleArray(remaining).slice(0, questionCount - selectedIds.size);
+            
+            const finalSet = [...p3, ...c3, ...l3, ...r1];
+            return shuffleArray(finalSet);
+        }
+        return [];
+    }
+
     if (className === "Class 9") {
+        if (subject === "Mathematics") {
+            const mathMcqs = easyMathC9Mcqs as QuizQuestion[];
+            return shuffleArray(mathMcqs).slice(0, questionCount);
+        }
+        // Fallback for Science C9
         if (subject === "Science") {
             const scienceMcqs = easyScienceC9Mcqs as QuizQuestion[];
             const physics = scienceMcqs.filter(q => q.subject === "physics");

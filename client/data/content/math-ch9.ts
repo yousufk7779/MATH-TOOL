@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const mathCh9: ChapterContent = {
     id: "ch9",
@@ -248,10 +248,10 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 183, 77, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }
@@ -508,10 +508,10 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 183, 77, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }
@@ -926,10 +926,10 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 183, 77, 0.2) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }

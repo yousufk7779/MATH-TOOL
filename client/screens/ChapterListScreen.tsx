@@ -11,6 +11,7 @@ import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { class10Chapters, Chapter, otherSubjectsData, getChapterGradient } from "@/data/chapters";
+import { getHomeRoute } from "@/utils/navigation-utils";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
@@ -22,6 +23,7 @@ function ChapterListScreen() {
 
   const subject = route.params?.subject || "Mathematics";
   const topic = route.params?.topic || "";
+  const className = route.params?.className || (subject.includes("Class") ? `Class ${subject.split(" ")[1]}` : "Class 10");
 
   let displayChapters: Chapter[] = [];
   if (subject === "Mathematics") {
@@ -46,11 +48,12 @@ function ChapterListScreen() {
           navigation.navigate("Solution", {
             chapterId: item.id,
             chapterName: item.name,
+            className: className
           });
         }}
       />
     );
-  }, [navigation]);
+  }, [navigation, subject]);
 
 
 
@@ -63,8 +66,10 @@ function ChapterListScreen() {
 
 
 
+  const homeRoute = getHomeRoute(className);
+
   return (
-    <ScreenWrapper showBackButton hideHomeButton>
+    <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
       <FlatList
         data={displayChapters}
         renderItem={renderItem}

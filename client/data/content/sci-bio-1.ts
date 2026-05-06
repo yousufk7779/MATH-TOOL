@@ -1,4 +1,4 @@
-import { ChapterContent } from "../chapterContent";
+import { ChapterContent } from "../types";
 
 export const sciBio1: ChapterContent = {
     id: "sci-bio-1",

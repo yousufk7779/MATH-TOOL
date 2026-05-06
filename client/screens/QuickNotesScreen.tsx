@@ -9,6 +9,7 @@ import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
+import { getHomeRoute } from "@/utils/navigation-utils";
 import { getNotes, deleteNote, Note } from "@/utils/storage";
 
 type QuickNotesNavigationProp = NativeStackNavigationProp<RootStackParamList, "QuickNotes">;
@@ -63,8 +64,10 @@ function QuickNotesScreen() {
     );
   }, [loadNotes]);
 
+  const homeRoute = getHomeRoute(className);
+
   return (
-    <ScreenWrapper showBackButton hideHomeButton>
+    <ScreenWrapper showBackButton hideHomeButton homeRoute={homeRoute}>
       <View style={styles.container}>
         <View style={styles.header}>
           <ThemedText style={[styles.title, { color: JiguuColors.accent1 }]}>

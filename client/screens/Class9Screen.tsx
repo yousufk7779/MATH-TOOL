@@ -57,7 +57,7 @@ function Class9Screen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-notes"
-              title="NOTES"
+              title="QUICK NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
               onPress={() => navigation.navigate("QuickNotes", { className: "Class 9" })}
