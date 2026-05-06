@@ -161,8 +161,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   
   // Targeted theme color replacement for Chemistry Chapter 2 and Math Chapter 7
   const cyanTargetedIds = [
-    "sci-chem-2", "c9-sci-chem-2", "c8-sci-chem-2", "c7-sci-chem-2",
-    "ch7", "c9-math-7", "c8-math-7", "c7-math-7"
+    "sci-chem-2", "c9-sci-chem-2", "c8-sci-chem-2", "c7-sci-chem-2"
   ];
   
   if (cyanTargetedIds.includes(chapterId)) {
@@ -198,11 +197,12 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   
   // Targeted theme color replacement for Chapter 10 (Red-Orange Gradient)
   const redTargetedIds = [
-    "ch10", "c9-math-10", "c8-math-10", "c7-math-10"
+    "ch10", "c9-math-10", "c8-math-10", "c7-math-10",
+    "ch7", "c9-math-7", "c8-math-7", "c7-math-7"
   ];
   
   if (redTargetedIds.includes(chapterId)) {
-    return JiguuColors.gradients.premiumGreen as string[];
+    return JiguuColors.gradients.premiumOrange as string[];
   }
 
   const gradientList = Object.values(JiguuColors.gradients) as string[][];

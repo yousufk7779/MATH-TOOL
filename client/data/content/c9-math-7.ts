@@ -1,4 +1,4 @@
-import { ChapterContent } from "../types";
+﻿import { ChapterContent } from "../types";
 
 export const c9Math7: ChapterContent = {
   id: "c9-math-7",
@@ -13,21 +13,21 @@ export const c9Math7: ChapterContent = {
   htmlOverview: `
     <style>
       .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #f0f0f0; padding: 20px; text-align: justify; }
-      .ch-content h2 { color: #00E5FF; border-bottom: 2px solid #6200EA; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
-      .ch-content h3 { color: #00E5FF; margin-top: 20px; font-size: 1.2rem; }
-      .highlight { color: #00E5FF; font-weight: bold; }
+      .ch-content h2 { color: #FB8C00; border-bottom: 2px solid #FB8C00; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
+      .ch-content h3 { color: #FB8C00; margin-top: 20px; font-size: 1.2rem; }
+      .highlight { color: #FB8C00; font-weight: bold; }
       .step { margin-bottom: 12px; display: block; }
     </style>
     <div class="ch-content">
       <h2>Chapter Overview</h2>
       <div class="step">A <span class="highlight">Quadrilateral</span> is a polygon with four sides, four angles, and four vertices.</div>
-      <div class="step">The sum of the angles of a quadrilateral is <span class="highlight">360°</span>.</div>
+      <div class="step">The sum of the angles of a quadrilateral is <span class="highlight">360Â°</span>.</div>
       
       <h3>Types of Quadrilaterals:</h3>
       <div class="step">1. <strong>Parallelogram:</strong> Opposite sides are parallel and equal. Diagonals bisect each other.</div>
-      <div class="step">2. <strong>Rectangle:</strong> A parallelogram with one angle of 90°. Diagonals are equal.</div>
-      <div class="step">3. <strong>Rhombus:</strong> A parallelogram with all sides equal. Diagonals bisect at 90°.</div>
-      <div class="step">4. <strong>Square:</strong> A parallelogram with all sides equal and each angle 90°.</div>
+      <div class="step">2. <strong>Rectangle:</strong> A parallelogram with one angle of 90Â°. Diagonals are equal.</div>
+      <div class="step">3. <strong>Rhombus:</strong> A parallelogram with all sides equal. Diagonals bisect at 90Â°.</div>
+      <div class="step">4. <strong>Square:</strong> A parallelogram with all sides equal and each angle 90Â°.</div>
       <div class="step">5. <strong>Trapezium:</strong> Only one pair of opposite sides is parallel.</div>
       
       <h3>Important Theorems:</h3>
@@ -39,11 +39,11 @@ export const c9Math7: ChapterContent = {
     "ex7-1": `
       <style>
         .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(0, 229, 255, 0.1); border-left: 4px solid #00E5FF; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #00E5FF; }
+        .question { background: rgba(251, 140, 0, 0.1); border-left: 4px solid #FB8C00; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FB8C00; }
         .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #00E5FF; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(0, 229, 255, 0.2); border-radius: 12px; }
-        .highlight { color: #00E5FF; font-weight: bold; }
+        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FB8C00; border-radius: 4px; display: block; }
+        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(251, 140, 0, 0.2); border-radius: 12px; }
+        .highlight { color: #FB8C00; font-weight: bold; }
         text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
       </style>
       <div class="ch-content">
@@ -62,8 +62,8 @@ export const c9Math7: ChapterContent = {
         <div class="question">2. If the diagonals of a parallelogram are equal, then show that it is a rectangle.</div>
         <svg viewBox="0 0 240 140" class="ex-img">
           <path d="M40,110 L180,110 L200,40 L60,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="40" y1="110" x2="200" y2="40" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <line x1="60" y1="40" x2="180" y2="110" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="5,3"/>
+          <line x1="40" y1="110" x2="200" y2="40" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="5,3"/>
+          <line x1="60" y1="40" x2="180" y2="110" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="5,3"/>
           <text x="25" y="125" font-size="14">A</text>
           <text x="185" y="125" font-size="14">B</text>
           <text x="205" y="35" font-size="14">C</text>
@@ -83,14 +83,14 @@ export const c9Math7: ChapterContent = {
         <div class="question">3. Show that if the diagonals of a quadrilateral bisect each other at right angles, then it is a rhombus.</div>
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M120,20 L40,90 L120,160 L200,90 Z" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="40" y1="90" x2="200" y2="90" stroke="#00E5FF" stroke-width="2"/>
-          <line x1="120" y1="20" x2="120" y2="160" stroke="#00E5FF" stroke-width="2"/>
+          <line x1="40" y1="90" x2="200" y2="90" stroke="#FB8C00" stroke-width="2"/>
+          <line x1="120" y1="20" x2="120" y2="160" stroke="#FB8C00" stroke-width="2"/>
           <text x="115" y="15" font-size="14">A</text>
           <text x="25" y="95" font-size="14">B</text>
           <text x="115" y="175" font-size="14">C</text>
           <text x="205" y="95" font-size="14">D</text>
-          <text x="125" y="85" font-size="14" fill="#00E5FF">O</text>
-          <rect x="120" y="90" width="10" height="10" fill="none" stroke="#00E5FF" stroke-width="1"/>
+          <text x="125" y="85" font-size="14" fill="#FB8C00">O</text>
+          <rect x="120" y="90" width="10" height="10" fill="none" stroke="#FB8C00" stroke-width="1"/>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> In &Delta;AOB and &Delta;AOD, AO = AO (Common).</div>
@@ -105,8 +105,8 @@ export const c9Math7: ChapterContent = {
         <div class="question">4. Show that the diagonals of a square are equal and bisect each other at right angles.</div>
         <svg viewBox="0 0 200 180" class="ex-img">
           <rect x="50" y="30" width="100" height="100" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="50" y1="30" x2="150" y2="130" stroke="#00E5FF" stroke-width="1.5"/>
-          <line x1="150" y1="30" x2="50" y2="130" stroke="#00E5FF" stroke-width="1.5"/>
+          <line x1="50" y1="30" x2="150" y2="130" stroke="#FB8C00" stroke-width="1.5"/>
+          <line x1="150" y1="30" x2="50" y2="130" stroke="#FB8C00" stroke-width="1.5"/>
           <text x="35" y="145" font-size="14">A</text>
           <text x="155" y="145" font-size="14">B</text>
           <text x="155" y="25" font-size="14">C</text>
@@ -132,7 +132,7 @@ export const c9Math7: ChapterContent = {
         <div class="question">6. Diagonal AC of a parallelogram     ABCD bisects &ang;A. Show that </br> (i) it bisects &ang;C also, </br>(ii) ABCD is a rhombus.</div>
         <svg viewBox="0 0 240 140" class="ex-img">
           <path d="M40,110 L180,110 L200,40 L60,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="40" y1="110" x2="200" y2="40" stroke="#00E5FF" stroke-width="2.5"/>
+          <line x1="40" y1="110" x2="200" y2="40" stroke="#FB8C00" stroke-width="2.5"/>
           <text x="25" y="125" font-size="14">A</text>
           <text x="185" y="125" font-size="14">B</text>
           <text x="205" y="35" font-size="14">C</text>
@@ -168,13 +168,13 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 150" class="ex-img">
           <path d="M60,40 L40,110 L180,110 L200,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <line x1="40" y1="110" x2="200" y2="40" stroke="white" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <path d="M60,40 L172.5,52 L180,110 L67.5,98 Z" fill="none" stroke="#00E5FF" stroke-width="2"/>
+          <path d="M60,40 L172.5,52 L180,110 L67.5,98 Z" fill="none" stroke="#FB8C00" stroke-width="2"/>
           <text x="50" y="35" font-size="14">A</text>
           <text x="25" y="125" font-size="14">B</text>
           <text x="185" y="125" font-size="14">C</text>
           <text x="205" y="35" font-size="14">D</text>
-          <text x="175" y="48" font-size="14" fill="#00E5FF">P</text>
-          <text x="55" y="102" font-size="14" fill="#00E5FF">Q</text>
+          <text x="175" y="48" font-size="14" fill="#FB8C00">P</text>
+          <text x="55" y="102" font-size="14" fill="#FB8C00">Q</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> (i) In &Delta;APD and &Delta;CQB, AD = BC (Opp. sides of parallelogram), &ang;ADP = &ang;CBQ (Alt. Interior angles), and DP = BQ (Given). By SAS, &Delta;APD &cong; &Delta;CQB.</div>
@@ -188,14 +188,14 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 150" class="ex-img">
           <path d="M60,40 L40,110 L180,110 L200,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <line x1="40" y1="110" x2="200" y2="40" stroke="white" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <line x1="60" y1="40" x2="82" y2="91" stroke="#00E5FF" stroke-width="2" stroke-dasharray="3,2"/>
-          <line x1="180" y1="110" x2="157" y2="58" stroke="#00E5FF" stroke-width="2" stroke-dasharray="3,2"/>
+          <line x1="60" y1="40" x2="82" y2="91" stroke="#FB8C00" stroke-width="2" stroke-dasharray="3,2"/>
+          <line x1="180" y1="110" x2="157" y2="58" stroke="#FB8C00" stroke-width="2" stroke-dasharray="3,2"/>
           <text x="50" y="35" font-size="14">A</text>
           <text x="25" y="125" font-size="14">B</text>
           <text x="185" y="125" font-size="14">C</text>
           <text x="205" y="35" font-size="14">D</text>
-          <text x="85" y="95" font-size="14" fill="#00E5FF">P</text>
-          <text x="145" y="55" font-size="14" fill="#00E5FF">Q</text>
+          <text x="85" y="95" font-size="14" fill="#FB8C00">P</text>
+          <text x="145" y="55" font-size="14" fill="#FB8C00">Q</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> (i) In &Delta;APB and &Delta;CQD, &ang;APB = &ang;CQD = 90&deg; (Given), AB = CD (Opp. sides), and &ang;ABP = &ang;CDQ (Alt. Int. angles). By AAS Rule, &Delta;APB &cong; &Delta;CQD.</div>
@@ -206,9 +206,9 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M60,40 L20,110 L100,110 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <path d="M160,60 L120,130 L200,130 Z" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="60" y1="40" x2="160" y2="60" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="4,2"/>
-          <line x1="20" y1="110" x2="120" y2="130" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="4,2"/>
-          <line x1="100" y1="110" x2="200" y2="130" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <line x1="60" y1="40" x2="160" y2="60" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <line x1="20" y1="110" x2="120" y2="130" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="4,2"/>
+          <line x1="100" y1="110" x2="200" y2="130" stroke="#FB8C00" stroke-width="1.5" stroke-dasharray="4,2"/>
           <text x="55" y="35" font-size="14">A</text>
           <text x="5" y="115" font-size="14">B</text>
           <text x="105" y="115" font-size="14">C</text>
@@ -229,11 +229,11 @@ export const c9Math7: ChapterContent = {
     "ex7-2": `
       <style>
         .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(0, 229, 255, 0.1); border-left: 4px solid #00E5FF; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #00E5FF; }
+        .question { background: rgba(251, 140, 0, 0.1); border-left: 4px solid #FB8C00; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FB8C00; }
         .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #00E5FF; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(0, 229, 255, 0.2); border-radius: 12px; }
-        .highlight { color: #00E5FF; font-weight: bold; }
+        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FB8C00; border-radius: 4px; display: block; }
+        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(251, 140, 0, 0.2); border-radius: 12px; }
+        .highlight { color: #FB8C00; font-weight: bold; }
         text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
       </style>
       <div class="ch-content">
@@ -241,15 +241,15 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M40,140 L100,20 L200,40 L180,160 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <line x1="40" y1="140" x2="200" y2="40" stroke="white" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <path d="M70,80 L150,30 L190,100 L110,150 Z" fill="none" stroke="#00E5FF" stroke-width="2"/>
+          <path d="M70,80 L150,30 L190,100 L110,150 Z" fill="none" stroke="#FB8C00" stroke-width="2"/>
           <text x="25" y="155" font-size="14">A</text>
           <text x="95" y="15" font-size="14">D</text>
           <text x="205" y="35" font-size="14">C</text>
           <text x="185" y="175" font-size="14">B</text>
-          <text x="145" y="25" font-size="14" fill="#00E5FF">R</text>
-          <text x="55" y="75" font-size="14" fill="#00E5FF">S</text>
-          <text x="100" y="165" font-size="14" fill="#00E5FF">P</text>
-          <text x="195" y="105" font-size="14" fill="#00E5FF">Q</text>
+          <text x="145" y="25" font-size="14" fill="#FB8C00">R</text>
+          <text x="55" y="75" font-size="14" fill="#FB8C00">S</text>
+          <text x="100" y="165" font-size="14" fill="#FB8C00">P</text>
+          <text x="195" y="105" font-size="14" fill="#FB8C00">Q</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> (i) In &Delta;ADC, S and R are mid-points of AD and DC.</div>
@@ -284,14 +284,14 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 140" class="ex-img">
           <path d="M40,110 L200,110 L160,40 L80,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <line x1="80" y1="40" x2="200" y2="110" stroke="white" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <line x1="60" y1="75" x2="180" y2="75" stroke="#00E5FF" stroke-width="2.5"/>
+          <line x1="60" y1="75" x2="180" y2="75" stroke="#FB8C00" stroke-width="2.5"/>
           <text x="25" y="125" font-size="14">A</text>
           <text x="205" y="125" font-size="14">B</text>
           <text x="165" y="35" font-size="14">C</text>
           <text x="70" y="35" font-size="14">D</text>
-          <text x="45" y="80" font-size="14" fill="#00E5FF">E</text>
-          <text x="185" y="80" font-size="14" fill="#00E5FF">F</text>
-          <text x="140" y="95" font-size="14" fill="#00E5FF">G</text>
+          <text x="45" y="80" font-size="14" fill="#FB8C00">E</text>
+          <text x="185" y="80" font-size="14" fill="#FB8C00">F</text>
+          <text x="140" y="95" font-size="14" fill="#FB8C00">G</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> Let diagonal BD intersect EF at G. In &Delta;ABD, E is mid-point of AD and EG || AB.</div>
@@ -304,16 +304,16 @@ export const c9Math7: ChapterContent = {
         <svg viewBox="0 0 240 140" class="ex-img">
           <path d="M40,110 L180,110 L200,40 L60,40 Z" fill="none" stroke="white" stroke-width="2.5"/>
           <line x1="60" y1="40" x2="180" y2="110" stroke="white" stroke-width="1.5" stroke-dasharray="5,3"/>
-          <line x1="40" y1="110" x2="130" y2="40" stroke="#00E5FF" stroke-width="2"/>
-          <line x1="110" y1="110" x2="200" y2="40" stroke="#00E5FF" stroke-width="2"/>
+          <line x1="40" y1="110" x2="130" y2="40" stroke="#FB8C00" stroke-width="2"/>
+          <line x1="110" y1="110" x2="200" y2="40" stroke="#FB8C00" stroke-width="2"/>
           <text x="25" y="125" font-size="14">A</text>
           <text x="185" y="125" font-size="14">B</text>
           <text x="205" y="35" font-size="14">C</text>
           <text x="45" y="35" font-size="14">D</text>
-          <text x="100" y="125" font-size="14" fill="#00E5FF">E</text>
-          <text x="120" y="35" font-size="14" fill="#00E5FF">F</text>
-          <text x="100" y="65" font-size="14" fill="#00E5FF">P</text>
-          <text x="140" y="90" font-size="14" fill="#00E5FF">Q</text>
+          <text x="100" y="125" font-size="14" fill="#FB8C00">E</text>
+          <text x="120" y="35" font-size="14" fill="#FB8C00">F</text>
+          <text x="100" y="65" font-size="14" fill="#FB8C00">P</text>
+          <text x="140" y="90" font-size="14" fill="#FB8C00">Q</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> AE = FC and AE || FC, so AECF is a parallelogram &rArr; AF || EC.</div>
@@ -334,12 +334,12 @@ export const c9Math7: ChapterContent = {
         <div class="question">7. ABC is a triangle right angled at C. A line through the mid-point M of hypotenuse AB and parallel to BC intersects AC at D. Show that </br> (i) D is the mid-point of AC </br> (ii) MD &perp; AC </br> (iii) CM = MA = 1/2 AB.</div>
         <svg viewBox="0 0 200 160" class="ex-img">
           <path d="M60,30 L60,130 L160,130 Z" fill="none" stroke="white" stroke-width="2.5"/>
-          <line x1="110" y1="80" x2="110" y2="130" stroke="#00E5FF" stroke-width="2.5"/>
+          <line x1="110" y1="80" x2="110" y2="130" stroke="#FB8C00" stroke-width="2.5"/>
           <text x="55" y="25" font-size="14">B</text>
           <text x="55" y="145" font-size="14">C</text>
           <text x="165" y="145" font-size="14">A</text>
-          <text x="110" y="75" font-size="14" fill="#00E5FF">M</text>
-          <text x="105" y="145" font-size="14" fill="#00E5FF">D</text>
+          <text x="110" y="75" font-size="14" fill="#FB8C00">M</text>
+          <text x="105" y="145" font-size="14" fill="#FB8C00">D</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> (i) In &Delta;ABC, M is mid-point of AB and MD || BC. By Converse Mid-point Theorem, D is mid-point of AC.</div>
@@ -352,15 +352,15 @@ export const c9Math7: ChapterContent = {
     `
   },
   mcqs: [
-    { id: "m1", question: "The sum of all angles of a quadrilateral is:", options: ["180°", "270°", "360°", "400°"], correctAnswer: "C" },
+    { id: "m1", question: "The sum of all angles of a quadrilateral is:", options: ["180Â°", "270Â°", "360Â°", "400Â°"], correctAnswer: "C" },
     { id: "m2", question: "If the diagonals of a quadrilateral bisect each other, then it is a:", options: ["Trapezium", "Parallelogram", "Kite", "None"], correctAnswer: "B" },
-    { id: "m3", question: "A quadrilateral with all sides equal and one angle 90° is a:", options: ["Rhombus", "Rectangle", "Square", "Trapezium"], correctAnswer: "C" },
-    { id: "m4", question: "The diagonals of a rhombus bisect each other at:", options: ["30°", "45°", "60°", "90°"], correctAnswer: "D" },
-    { id: "m5", question: "If three angles of a quadrilateral are 75°, 90°, and 75°, the fourth angle is:", options: ["90°", "95°", "105°", "120°"], correctAnswer: "D" },
+    { id: "m3", question: "A quadrilateral with all sides equal and one angle 90Â° is a:", options: ["Rhombus", "Rectangle", "Square", "Trapezium"], correctAnswer: "C" },
+    { id: "m4", question: "The diagonals of a rhombus bisect each other at:", options: ["30Â°", "45Â°", "60Â°", "90Â°"], correctAnswer: "D" },
+    { id: "m5", question: "If three angles of a quadrilateral are 75Â°, 90Â°, and 75Â°, the fourth angle is:", options: ["90Â°", "95Â°", "105Â°", "120Â°"], correctAnswer: "D" },
     { id: "m6", question: "The line joining the mid-points of two sides of a triangle is:", options: ["Parallel to third side", "Half of third side", "Both A and B", "None"], correctAnswer: "C" },
     { id: "m7", question: "Diagonals of which quadrilateral are always equal?", options: ["Parallelogram", "Rhombus", "Rectangle", "Trapezium"], correctAnswer: "C" },
     { id: "m8", question: "A diagonal of a parallelogram divides it into two:", options: ["Similar triangles", "Congruent triangles", "Equilateral triangles", "Right triangles"], correctAnswer: "B" },
-    { id: "m9", question: "In a parallelogram ABCD, if ∠A = 100°, then ∠B is:", options: ["80°", "100°", "90°", "180°"], correctAnswer: "A" },
+    { id: "m9", question: "In a parallelogram ABCD, if âˆ A = 100Â°, then âˆ B is:", options: ["80Â°", "100Â°", "90Â°", "180Â°"], correctAnswer: "A" },
     { id: "m10", question: "Every square is a:", options: ["Rhombus", "Rectangle", "Parallelogram", "All of these"], correctAnswer: "D" }
   ]
 };
