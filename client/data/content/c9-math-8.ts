@@ -14,14 +14,33 @@ export const c9Math8: ChapterContent = {
     { id: "ex8-5", name: "Exercise 8.5", questions: [] }
   ],
   htmlOverview: `
-    <style>
-      .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #f0f0f0; padding: 20px; text-align: justify; }
-      .ch-content h2 { color: #FF8A65; border-bottom: 2px solid #F4511E; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
-      .ch-content h3 { color: #FF8A65; margin-top: 20px; font-size: 1.2rem; }
-      .highlight { color: #FF8A65; font-weight: bold; }
-      .step { margin-bottom: 12px; display: block; }
-    </style>
-    <div class="ch-content">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="ch-content">
       <h2>Chapter Overview</h2>
       <div class="step">A <span class="highlight">Circle</span> is a collection of all points in a plane which are at a constant distance (radius) from a fixed point (centre).</div>
       
@@ -39,17 +58,36 @@ export const c9Math8: ChapterContent = {
       <div class="step">5. Angles in the same segment of a circle are equal.</div>
       <div class="step">6. The sum of either pair of opposite angles of a cyclic quadrilateral is 180&deg;.</div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex8-1": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF8A65; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF8A65; border-radius: 4px; display: block; }
-        .highlight { color: #FF8A65; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. Fill in the blanks:</div>
         <div class="solution">
           <div class="sol-step">(i) The centre of a circle lies in <span class="highlight">interior</span> of the circle.</div>
@@ -70,17 +108,35 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step">(vi) A circle is a plane figure. <span class="highlight">True</span></div>
         </div>
       </div>
-    `,
+`,
     "ex8-2": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF8A65; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF8A65; border-radius: 4px; display: block; }
-        .highlight { color: #FF8A65; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 12px; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. Prove that equal chords of congruent circles subtend equal angles at their centres.</div>
         <svg viewBox="0 -10 300 150" class="ex-img">
           <circle cx="70" cy="70" r="50" fill="none" stroke="white" stroke-width="2"/>
@@ -112,17 +168,35 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 5:</span> Therefore, AB = CD (by CPCT). Hence proved.</div>
         </div>
       </div>
-    `,
+`,
     "ex8-3": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF8A65; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF8A65; border-radius: 4px; display: block; }
-        .highlight { color: #FF8A65; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 12px; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. Draw different pairs of circles. How many points does each pair have in common? What is the maximum number of common points?</div>
         <div class="solution">
           <div class="sol-step">(i) Non-intersecting: 0 points.</div>
@@ -183,17 +257,35 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step"><span class="highlight">Conclusion:</span> OO' is the perpendicular bisector of AB.</div>
         </div>
       </div>
-    `,
+`,
     "ex8-4": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF8A65; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF8A65; border-radius: 4px; display: block; }
-        .highlight { color: #FF8A65; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 12px; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. Two circles of radii 5 cm and 3 cm intersect at two points and the distance between their centres is 4 cm. Find the length of the common chord.</div>
         <svg viewBox="0 -10 240 190" class="ex-img">
           <circle cx="80" cy="90" r="50" fill="none" stroke="white" stroke-width="2"/>
@@ -203,8 +295,8 @@ export const c9Math8: ChapterContent = {
           <text x="65" y="95" fill="white">O</text>
           <text x="125" y="105" fill="white">O'</text>
           <text x="115" y="55" fill="white">A</text>
-          <text x="95" y="70" fill="#FF8A65" font-size="10">5 cm</text>
-          <text x="125" y="80" fill="#FF8A65" font-size="10">3 cm</text>
+          <text x="85" y="65" fill="#FF8A65" font-size="10">5 cm</text>
+          <text x="135" y="85" fill="#FF8A65" font-size="10">3 cm</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> Let radii r1=5, r2=3 and distance d=4.</div>
@@ -306,18 +398,35 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step"><span class="highlight">Conclusion:</span> String length is 20&radic;3 m &approx; 34.64 m.</div>
         </div>
       </div>
-    `,
+`,
     "ex8-5": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF8A65; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF8A65; border-radius: 4px; display: block; }
-        .highlight { color: #FF8A65; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 138, 101, 0.2); border-radius: 12px; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #9575CD; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #9575CD; padding-left: 15px; margin-top: 15px; background: rgba(149, 117, 205, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #9575CD !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #9575CD !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(149, 117, 205, 0.05) !important; border-left: 4px solid #9575CD !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #9575CD !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #9575CD !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #9575CD !important; font-weight: 700; }
+        strong { color: #9575CD !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #9575CD; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. In Fig. 8.36, &ang;BOC = 30&deg; and &ang;AOB = 60&deg;. Find &ang;ADC.</div>
         <svg viewBox="0 -10 240 190" class="ex-img">
           <circle cx="120" cy="90" r="70" fill="none" stroke="white" stroke-width="2.5"/>
@@ -448,7 +557,7 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step"><span class="highlight">Conclusion:</span> Therefore, &ang;ACP = &ang;QCD. Hence proved.</div>
         </div>
       </div>
-    `
+`
   },
   mcqs: [
     { id: "m1", question: "The longest chord of a circle is its:", options: ["Radius", "Secant", "Diameter", "Tangent"], correctAnswer: "C" },

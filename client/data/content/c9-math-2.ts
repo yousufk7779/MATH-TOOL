@@ -105,68 +105,33 @@ export const c9Math2: ChapterContent = {
     "The Remainder Theorem and Factor Theorem are used to find remainders and check for factors easily."
   ],
   isHtmlView: true,
-  htmlOverview: `<style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
-    
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans', sans-serif !important; }
-
-    .main-wrapper {
-        padding: 15px;
-        width: 100%;
-        color: #fff !important;
-        font-size: 18px !important;
-        background: transparent !important;
-    }
-
-    .content-box { 
-        background: rgba(255,255,255,0.03) !important; 
-        border: 1px solid rgba(255, 64, 129, 0.2) !important; 
-        border-radius: 12px; 
-        padding: 20px; 
-        margin-bottom: 20px; 
-    }
-
-    .section-title { 
-        color: #D81B60 !important; 
-        font-weight: 600; 
-        font-size: 1.3em; 
-        margin-bottom: 15px; 
-        border-bottom: 1px solid rgba(255,255,255,0.1); 
-        padding-bottom: 8px; 
-        font-family: 'Nunito', sans-serif !important;
-    }
-
-    .sub-header { 
-        color: #D81B60 !important; 
-        font-weight: 600; 
-        margin-top: 15px; 
-        margin-bottom: 8px; 
-        font-size: 1.1em; 
-    }
-
-    .formula-box { 
-        background: rgba(216, 27, 96, 0.1) !important; 
-        border-left: 4px solid #D81B60 !important; 
-        padding: 15px; 
-        margin: 15px 0; 
-        border-radius: 0 8px 8px 0;
-        font-family: 'Nunito', sans-serif !important; 
-    }
-
-    .step { 
-        margin-bottom: 12px; 
-        font-size: 1em; 
-        color: #e0e0e0 !important; 
-        line-height: 1.6; 
-        text-align: justify;
-    }
-
-    strong { 
-        color: #D81B60 !important; 
-        font-weight: 600;
-    }
-</style>
-
+  htmlOverview: `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
@@ -228,17 +193,37 @@ export const c9Math2: ChapterContent = {
         </div>
     </div>
 
-</div>`,
+</div>
+`,
   htmlExercises: {
     "ex2-1": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .question { color: #FF4081; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #D81B60; font-weight: bold; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">Q1. Which of the following expressions are polynomials in one variable and which are not? State reasons for your answer.</div>
         <div class="solution">
           <span class="subpart">(i)</span> 4x² - 3x + 7 : It is a polynomial in one variable 'x' because the powers of x are whole numbers.<br/><br/>
@@ -281,16 +266,35 @@ export const c9Math2: ChapterContent = {
           <span class="subpart">(vii)</span> 7x³ : Cubic
         </div>
       </div>
-    `,
+`,
     "ex2-2": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .question { color: #FF4081; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #D81B60; font-weight: bold; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">Q1. Find the value of the polynomial 5x - 4x² + 3 at:</div>
         <div class="solution">
           <span class="subpart">(i) x = 0 :</span><br/>
@@ -373,19 +377,35 @@ export const c9Math2: ChapterContent = {
           cx + d = 0 ⇒ x = -d/c
         </div>
       </div>
-    `,
+`,
     "ex2-3": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .question { color: #FF4081; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #D81B60; font-weight: bold; }
-        .fraction { display: inline-block; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 0 3px; line-height: 1; padding: 6px 0; }
-        .fraction > span { display: block; padding: 0 2px; }
-        .fraction .numerator { border-bottom: 1px solid white; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">Q1. Find the remainder when x³ + 3x² + 3x + 1 is divided by:</div>
         <div class="solution">
           Let p(x) = x³ + 3x² + 3x + 1<br/><br/>
@@ -432,16 +452,35 @@ export const c9Math2: ChapterContent = {
           Since p(-7/3) ≠ 0, 7 + 3x is not a factor of 3x³ + 7x.
         </div>
       </div>
-    `,
+`,
     "ex2-4": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .question { color: #FF4081; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #D81B60; font-weight: bold; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">Q1. Determine which of the following polynomials has (x + 1) a factor:</div>
         <div class="solution">
           Let p(x) be the given polynomials. (x + 1) is a factor if p(-1) = 0.<br/><br/>
@@ -534,16 +573,35 @@ export const c9Math2: ChapterContent = {
           = (y-1)(2y+1)(y+1)
         </div>
       </div>
-    `,
+`,
     "ex2-5": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .question { color: #FF4081; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #D81B60; font-weight: bold; }
+        
+        .question { color: #4DD0E1; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DD0E1; padding-left: 15px; margin-top: 15px; background: rgba(77, 208, 225, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DD0E1 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DD0E1 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 208, 225, 0.05) !important; border-left: 4px solid #4DD0E1 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DD0E1 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DD0E1 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DD0E1 !important; font-weight: 700; }
+        strong { color: #4DD0E1 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DD0E1; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">Q1. Use suitable identities to find the following products:</div>
         <div class="solution">
           <span class="subpart">(i) (x + 4)(x + 10) :</span><br/>
@@ -747,6 +805,6 @@ export const c9Math2: ChapterContent = {
           Dimensions: 4k, (y-1), (3y+5).
         </div>
       </div>
-    `,
+`,
   }
 };

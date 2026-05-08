@@ -45,6 +45,16 @@ const defaultTagsStyles = {
     },
     span: {
         fontFamily: 'NotoSans_400Regular',
+    },
+    sup: {
+        textAlignVertical: 'top',
+        fontSize: 12,
+        lineHeight: 18,
+    },
+    sub: {
+        textAlignVertical: 'bottom',
+        fontSize: 12,
+        lineHeight: 18,
     }
 };
 

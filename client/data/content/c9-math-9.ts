@@ -11,15 +11,33 @@ export const c9Math9: ChapterContent = {
     { id: "ex9-2", name: "Exercise 9.2", questions: [] }
   ],
   htmlOverview: `
-    <style>
-      .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #f0f0f0; padding: 20px; text-align: justify; }
-      .ch-content h2 { color: #00C6FF; border-bottom: 2px solid #0072FF; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
-      .ch-content h3 { color: #00C6FF; margin-top: 20px; font-size: 1.2rem; }
-      .highlight { color: #00C6FF; font-weight: bold; }
-      .step { margin-bottom: 12px; display: block; }
-      .formula-box { background: rgba(0, 198, 255, 0.1); border: 1px solid #00C6FF; padding: 15px; border-radius: 8px; margin: 15px 0; text-align: center; }
-    </style>
-    <div class="ch-content">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #4DB6AC; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DB6AC; padding-left: 15px; margin-top: 15px; background: rgba(77, 182, 172, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DB6AC !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DB6AC !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 182, 172, 0.05) !important; border-left: 4px solid #4DB6AC !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DB6AC !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DB6AC !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DB6AC !important; font-weight: 700; }
+        strong { color: #4DB6AC !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DB6AC; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="ch-content">
       <h2>Chapter Overview</h2>
       <div class="step">For a triangle with sides <span class="highlight">a, b, and c</span>:</div>
       
@@ -33,19 +51,36 @@ export const c9Math9: ChapterContent = {
       <div class="step">1. Finding the area of any triangle when height is not given.</div>
       <div class="step">2. Finding the area of quadrilaterals by dividing them into two triangles.</div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex9-1": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(0, 198, 255, 0.1); border-left: 4px solid #00C6FF; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #00C6FF; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #00C6FF; border-radius: 4px; display: block; }
-        .highlight { color: #00C6FF; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(0, 198, 255, 0.2); border-radius: 12px; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #4DB6AC; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DB6AC; padding-left: 15px; margin-top: 15px; background: rgba(77, 182, 172, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DB6AC !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DB6AC !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 182, 172, 0.05) !important; border-left: 4px solid #4DB6AC !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DB6AC !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DB6AC !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DB6AC !important; font-weight: 700; }
+        strong { color: #4DB6AC !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DB6AC; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. A traffic signal board, indicating 'SCHOOL AHEAD', is an equilateral triangle with side 'a'. Find the area of the signal board, using Heron's formula. If its perimeter is 180 cm, what will be the area?</div>
         <svg viewBox="0 -10 240 190" class="ex-img">
           <path d="M120,20 L40,160 L200,160 Z" fill="rgba(0,198,255,0.1)" stroke="#00C6FF" stroke-width="2.5"/>
@@ -84,7 +119,7 @@ export const c9Math9: ChapterContent = {
           <text x="120" y="95" fill="white" font-size="12">15 m</text>
           <text x="205" y="55" fill="white" font-size="12">6 m</text>
           <text x="80" y="45" fill="white" font-size="12">11 m</text>
-          <text x="55" y="70" font-size="10" fill="#00C6FF">KEEP THE PARK GREEN AND CLEAN</text>
+          <text x="55" y="60" font-size="10" fill="#00C6FF">KEEP THE PARK GREEN AND CLEAN</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> a=15, b=11, c=6. s = (15+11+6)/2 = 32/2 = 16m.</div>
@@ -95,9 +130,9 @@ export const c9Math9: ChapterContent = {
         <div class="question">4. Find the area of a triangle two sides of which are 18cm and 10cm and the perimeter is 42cm.</div>
         <svg viewBox="0 -10 240 150" class="ex-img">
           <path d="M40,120 L200,120 L130,30 Z" fill="none" stroke="#00C6FF" stroke-width="2"/>
-          <text x="110" y="135" fill="white">14 cm</text>
-          <text x="165" y="80" fill="white">10 cm</text>
-          <text x="60" y="80" fill="white">18 cm</text>
+          <text x="110" y="140" fill="white">14 cm</text>
+          <text x="175" y="75" fill="white">10 cm</text>
+          <text x="50" y="75" fill="white">18 cm</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> a=18, b=10. c = Perimeter - (a+b) = 42 - 28 = 14cm.</div>
@@ -133,18 +168,35 @@ export const c9Math9: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 3:</span> &radic;[15 &times; 81] = <span class="highlight">9&radic;15 cm&sup2;</span>.</div>
         </div>
       </div>
-    `,
+`,
     "ex9-2": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(0, 198, 255, 0.1); border-left: 4px solid #00C6FF; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #00C6FF; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #00C6FF; border-radius: 4px; display: block; }
-        .highlight { color: #00C6FF; font-weight: bold; }
-        .ex-img { max-width: 100%; height: auto; margin: 20px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(0, 198, 255, 0.2); border-radius: 12px; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #4DB6AC; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #4DB6AC; padding-left: 15px; margin-top: 15px; background: rgba(77, 182, 172, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #4DB6AC !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #4DB6AC !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(77, 182, 172, 0.05) !important; border-left: 4px solid #4DB6AC !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #4DB6AC !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #4DB6AC !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #4DB6AC !important; font-weight: 700; }
+        strong { color: #4DB6AC !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #4DB6AC; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. A park in the shape of a quadrilateral ABCD has &ang;C = 90&deg;, AB=9m, BC=12m, CD=5m, AD=8m. Area?</div>
         <svg viewBox="0 -10 240 190" class="ex-img">
           <path d="M50,150 L170,150 L170,100 L70,30 Z" fill="none" stroke="#00C6FF" stroke-width="2"/>
@@ -262,7 +314,7 @@ export const c9Math9: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 5:</span> Area Trapezium = 1/2 &times; (Sum of parallel sides) &times; h = 1/2 &times; (10 + 25) &times; 11.2 = 35 &times; 5.6 = <span class="highlight">196 m&sup2;</span>.</div>
         </div>
       </div>
-    `
+`
   },
   mcqs: [
     { id: "m1", question: "Heron's Formula for area of a triangle is:", options: ["1/2 × b × h", "√[s(s-a)(s-b)(s-c)]", "a + b + c", "None of these"], correctAnswer: "B" },

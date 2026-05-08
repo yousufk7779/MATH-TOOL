@@ -116,8 +116,19 @@ import { c8Sci10 } from "./content/c8-sci-10";
 import { c8Sci11 } from "./content/c8-sci-11";
 import { c8Sci12 } from "./content/c8-sci-12";
 import { c8Sci13 } from "./content/c8-sci-13";
-
-
+import { c8Math1 } from "./content/c8-math-1";
+import { c8Math2 } from "./content/c8-math-2";
+import { c8Math3 } from "./content/c8-math-3";
+import { c8Math4 } from "./content/c8-math-4";
+import { c8Math5 } from "./content/c8-math-5";
+import { c8Math6 } from "./content/c8-math-6";
+import { c8Math7 } from "./content/c8-math-7";
+import { c8Math8 } from "./content/c8-math-8";
+import { c8Math9 } from "./content/c8-math-9";
+import { c8Math10 } from "./content/c8-math-10";
+import { c8Math11 } from "./content/c8-math-11";
+import { c8Math12 } from "./content/c8-math-12";
+import { c8Math13 } from "./content/c8-math-13";
 
 
 
@@ -150,6 +161,9 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c9-math-9": c9Math9,
   "c9-math-10": c9Math10,
   "c9-math-11": c9Math11,
+  "c8-math-1": c8Math1,
+  "c8-math-2": c8Math2,
+  "c8-math-3": c8Math3,
 
 
   "ch1": mathCh1,
@@ -306,6 +320,17 @@ emptyChapters.forEach(id => {
     chapterContents[id] = createEmptyContent(id, num, `Chapter ${num}`);
   }
 });
+
+chapterContents["c8-math-4"] = c8Math4;
+chapterContents["c8-math-5"] = c8Math5;
+chapterContents["c8-math-6"] = c8Math6;
+chapterContents["c8-math-7"] = c8Math7;
+chapterContents["c8-math-8"] = c8Math8;
+chapterContents["c8-math-9"] = c8Math9;
+chapterContents["c8-math-10"] = c8Math10;
+chapterContents["c8-math-11"] = c8Math11;
+chapterContents["c8-math-12"] = c8Math12;
+chapterContents["c8-math-13"] = c8Math13;
 
 
 export const isChapterAvailable = (chapterId: string): boolean => {

@@ -1,4 +1,4 @@
-﻿import { ChapterContent } from "../types";
+import { ChapterContent } from "../types";
 
 export const c9Math7: ChapterContent = {
   id: "c9-math-7",
@@ -11,14 +11,33 @@ export const c9Math7: ChapterContent = {
     { id: "ex7-2", name: "Exercise 7.2", questions: [] }
   ],
   htmlOverview: `
-    <style>
-      .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #f0f0f0; padding: 20px; text-align: justify; }
-      .ch-content h2 { color: #FB8C00; border-bottom: 2px solid #FB8C00; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
-      .ch-content h3 { color: #FB8C00; margin-top: 20px; font-size: 1.2rem; }
-      .highlight { color: #FB8C00; font-weight: bold; }
-      .step { margin-bottom: 12px; display: block; }
-    </style>
-    <div class="ch-content">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF8A65 !important; font-weight: 700; }
+        strong { color: #FF8A65 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="ch-content">
       <h2>Chapter Overview</h2>
       <div class="step">A <span class="highlight">Quadrilateral</span> is a polygon with four sides, four angles, and four vertices.</div>
       <div class="step">The sum of the angles of a quadrilateral is <span class="highlight">360Â°</span>.</div>
@@ -34,19 +53,36 @@ export const c9Math7: ChapterContent = {
       <div class="step">1. <strong>Mid-point Theorem:</strong> The line segment joining the mid-points of two sides of a triangle is parallel to the third side and half of it.</div>
       <div class="step">2. A diagonal of a parallelogram divides it into two congruent triangles.</div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex7-1": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(251, 140, 0, 0.1); border-left: 4px solid #FB8C00; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FB8C00; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FB8C00; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(251, 140, 0, 0.2); border-radius: 12px; }
-        .highlight { color: #FB8C00; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF8A65 !important; font-weight: 700; }
+        strong { color: #FF8A65 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. The angles of a quadrilateral are in the ratio 3 : 5 : 9 : 13. Find all the angles of the quadrilateral.</div>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> Let the angles be 3x, 5x, 9x, and 13x.</div>
@@ -194,8 +230,8 @@ export const c9Math7: ChapterContent = {
           <text x="25" y="125" font-size="14">B</text>
           <text x="185" y="125" font-size="14">C</text>
           <text x="205" y="35" font-size="14">D</text>
-          <text x="85" y="95" font-size="14" fill="#FB8C00">P</text>
-          <text x="145" y="55" font-size="14" fill="#FB8C00">Q</text>
+          <text x="70" y="105" font-size="14" fill="#FB8C00">P</text>
+          <text x="165" y="50" font-size="14" fill="#FB8C00">Q</text>
         </svg>
         <div class="solution">
           <div class="sol-step"><span class="highlight">Step 1:</span> (i) In &Delta;APB and &Delta;CQD, &ang;APB = &ang;CQD = 90&deg; (Given), AB = CD (Opp. sides), and &ang;ABP = &ang;CDQ (Alt. Int. angles). By AAS Rule, &Delta;APB &cong; &Delta;CQD.</div>
@@ -225,18 +261,35 @@ export const c9Math7: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 6:</span> (vi) In &Delta;ABC and &Delta;DEF, AB = DE, BC = EF, and AC = DF. By SSS Rule, &Delta;ABC &cong; &Delta;DEF.</div>
         </div>
       </div>
-    `,
+`,
     "ex7-2": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(251, 140, 0, 0.1); border-left: 4px solid #FB8C00; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FB8C00; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FB8C00; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(251, 140, 0, 0.2); border-radius: 12px; }
-        .highlight { color: #FB8C00; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF8A65 !important; font-weight: 700; }
+        strong { color: #FF8A65 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. ABCD is a quadrilateral in which P, Q, R and S are mid-points of the sides AB, BC, CD and DA. AC is a diagonal. Show that : </br> (i) SR || AC and SR = 1/2 AC </br> (ii) PQ = SR  </br>(iii) PQRS is a parallelogram.</div>
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M40,140 L100,20 L200,40 L180,160 Z" fill="none" stroke="white" stroke-width="2.5"/>
@@ -349,7 +402,7 @@ export const c9Math7: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 5:</span> Since M is mid-point of AB, MA = 1/2 AB. So CM = MA = 1/2 AB.</div>
         </div>
       </div>
-    `
+`
   },
   mcqs: [
     { id: "m1", question: "The sum of all angles of a quadrilateral is:", options: ["180Â°", "270Â°", "360Â°", "400Â°"], correctAnswer: "C" },

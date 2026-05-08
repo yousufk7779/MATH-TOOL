@@ -98,15 +98,33 @@ export const c9Math5: ChapterContent = {
   ],
   isHtmlView: true,
   htmlOverview: `
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-      .main-wrapper { padding: 15px; width: 100%; color: #fff !important; font-size: 18px !important; background: transparent !important; }
-      .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
-      .section-title { color: #66BB6A !important; font-weight: 600; font-size: 1.3em; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-family: 'Nunito', sans-serif !important; }
-      .step { margin-bottom: 12px; font-size: 1em; color: #e0e0e0 !important; line-height: 1.6; text-align: justify; }
-      strong { color: #66BB6A !important; font-weight: 600; }
-    </style>
-    <div class="main-wrapper">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FFD54F; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFD54F; padding-left: 15px; margin-top: 15px; background: rgba(255, 213, 79, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FFD54F !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFD54F !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 213, 79, 0.05) !important; border-left: 4px solid #FFD54F !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFD54F !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFD54F !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFD54F !important; font-weight: 700; }
+        strong { color: #FFD54F !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FFD54F; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="main-wrapper">
       <div class="content-box">
         <div class="section-title">1. Basic Terms</div>
         <p class="step"><strong>Line Segment:</strong> A part of a line with two end points. It is denoted by AB.</p>
@@ -128,18 +146,36 @@ export const c9Math5: ChapterContent = {
         <p class="step">Lines which cross each other at a point are <strong>intersecting lines</strong>. Lines which never meet, even if extended indefinitely, are <strong>parallel lines</strong>.</p>
       </div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex5-1": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #66BB6A; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #66BB6A; font-weight: bold; }
-        .ex-img { max-width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(102, 187, 106, 0.2); background: rgba(255,255,255,0.05); padding: 10px; }
-        strong { color: #66BB6A !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FFD54F; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFD54F; padding-left: 15px; margin-top: 15px; background: rgba(255, 213, 79, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FFD54F !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFD54F !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 213, 79, 0.05) !important; border-left: 4px solid #FFD54F !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFD54F !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFD54F !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFD54F !important; font-weight: 700; }
+        strong { color: #FFD54F !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FFD54F; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. In Fig. 5.23, lines AB and CD intersect at O. If &ang;AOC + &ang;BOE = 70&deg; and &ang;BOD = 40&deg;, find &ang;BOE and reflex &ang;COE.</div>
         <svg viewBox="0 0 200 120" class="ex-img">
           <line x1="20" y1="60" x2="180" y2="60" stroke="white" stroke-width="2" />
@@ -214,7 +250,7 @@ export const c9Math5: ChapterContent = {
           <text x="165" y="25" fill="white" font-size="12">B</text>
           <text x="45" y="35" fill="white" font-size="12">C</text>
           <text x="155" y="140" fill="white" font-size="12">D</text>
-          <text x="105" y="80" fill="white" font-size="12">O</text>
+          <text x="110" y="90" fill="white" font-size="12">O</text>
           <text x="80" y="55" fill="#66BB6A" font-size="12">x</text>
           <text x="70" y="80" fill="#66BB6A" font-size="12">y</text>
           <text x="110" y="105" fill="#66BB6A" font-size="12">z</text>
@@ -272,17 +308,35 @@ export const c9Math5: ChapterContent = {
           Reflex &ang;QYP = 360&deg; - 58&deg; = <strong>302&deg;</strong>.
         </div>
       </div>
-    `,
+`,
     "ex5-2": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #66BB6A; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #66BB6A; font-weight: bold; }
-        .ex-img { max-width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(102, 187, 106, 0.2); background: rgba(255,255,255,0.05); padding: 10px; }
-        strong { color: #66BB6A !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FFD54F; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFD54F; padding-left: 15px; margin-top: 15px; background: rgba(255, 213, 79, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FFD54F !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFD54F !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 213, 79, 0.05) !important; border-left: 4px solid #FFD54F !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFD54F !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFD54F !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFD54F !important; font-weight: 700; }
+        strong { color: #FFD54F !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FFD54F; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. In Fig. 5.38, find the values of x and y and then show that AB || CD.</div>
         <svg viewBox="0 0 200 120" class="ex-img">
           <line x1="20" y1="40" x2="180" y2="40" stroke="white" stroke-width="2" />
@@ -402,17 +456,35 @@ export const c9Math5: ChapterContent = {
           Since alternate interior angles are equal, <strong>AB || CD</strong>.
         </div>
       </div>
-    `,
+`,
     "ex5-3": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #66BB6A; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #66BB6A; font-weight: bold; }
-        .ex-img { max-width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(102, 187, 106, 0.2); background: rgba(255,255,255,0.05); padding: 10px; }
-        strong { color: #66BB6A !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #FFD54F; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFD54F; padding-left: 15px; margin-top: 15px; background: rgba(255, 213, 79, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #FFD54F !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFD54F !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 213, 79, 0.05) !important; border-left: 4px solid #FFD54F !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFD54F !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFD54F !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFD54F !important; font-weight: 700; }
+        strong { color: #FFD54F !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #FFD54F; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. In Fig. 5.49, sides QP and RQ of ∆ PQR are produced to points S and T respectively. If &ang;SPR = 135&deg; and &ang;PQT = 110&deg;, find &ang;PRQ.</div>
         <svg viewBox="0 0 200 120" class="ex-img">
           <line x1="50" y1="100" x2="150" y2="100" stroke="white" stroke-width="2" />
@@ -518,6 +590,6 @@ export const c9Math5: ChapterContent = {
           So, &ang;TQR + &ang;QTR = &ang;TQR + 1/2 &ang;QPR &rArr; <strong>&ang;QTR = 1/2 &ang;QPR</strong>.
         </div>
       </div>
-    `
+`
   }
 };

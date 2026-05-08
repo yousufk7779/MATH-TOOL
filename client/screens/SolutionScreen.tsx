@@ -399,6 +399,7 @@ function SolutionScreen() {
 
     return (
       <View style={{ flex: 1, padding: Spacing.lg }}>
+        <View style={{ gap: Spacing.xl }}>
         {mountedSections.overview && (
           <View style={{ display: activeSection === "overview" ? "flex" : "none", gap: Spacing.lg, width: "100%" }}>
             <HtmlText html={chapterData.introduction} style={[scaledBody, { color: JiguuColors.textPrimary }]} />
@@ -531,10 +532,11 @@ function SolutionScreen() {
                     );
                   })}
                 </Animated.View>
-              )
+              );
             })}
           </View>
         )}
+        </View>
       </View>
     );
   }, [chapterId, chapterData, activeSection, activeSubSection, accentColor, mcqAnswers, shuffledOptions, mountedSections, mountedSubSections, exerciseSubSections, scaledBody, scaledQuestionTitle, scaledSmall]);
@@ -592,7 +594,7 @@ function SolutionScreen() {
           </View>
         )}
 
-        <ZoomableScrollView key={`${chapterId}-${quizId}`} ref={scrollViewRef} contentContainerStyle={{ paddingBottom: 100 }}>
+        <ZoomableScrollView key={`${chapterId}-${quizId}`} ref={scrollViewRef} contentContainerStyle={{ paddingBottom: 40 }}>
           {renderSectionContent()}
         </ZoomableScrollView>
 
@@ -711,11 +713,11 @@ const MathWebView = memo(({ chapterData, activeSection, activeSubSection, onScro
     document.head.appendChild(style);
     
     setTimeout(function() {
-      var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      var h = document.body.offsetHeight || document.documentElement.offsetHeight || document.body.scrollHeight;
       window.ReactNativeWebView.postMessage(h.toString());
     }, 500);
     const observer = new MutationObserver(function() {
-      var h = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+      var h = document.body.offsetHeight || document.documentElement.offsetHeight || document.body.scrollHeight;
       window.ReactNativeWebView.postMessage(h.toString());
     });
     observer.observe(document.body, { attributes: true, childList: true, subtree: true });
@@ -725,7 +727,7 @@ const MathWebView = memo(({ chapterData, activeSection, activeSubSection, onScro
   if (!htmlContent) return <EmptyState title="No Content" message="Coming soon..." icon="clock" />;
 
   return (
-    <View style={{ height: Math.max(height + 80, 500), width: '100%', paddingBottom: 20 }}>
+    <View style={{ height: Math.max(height + 10, 100), width: '100%', paddingBottom: 10 }}>
       <WebView
         originWhitelist={['*']}
         source={{ html: fullHtml, baseUrl: '' }}

@@ -13,14 +13,33 @@ export const c9Math6: ChapterContent = {
     { id: "ex6-4", name: "Exercise 6.4", questions: [] }
   ],
   htmlOverview: `
-    <style>
-      .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #f0f0f0; padding: 20px; text-align: justify; }
-      .ch-content h2 { color: #FF6CAB; border-bottom: 2px solid #F06292; padding-bottom: 5px; margin-top: 25px; font-size: 1.4rem; }
-      .ch-content h3 { color: #FF6CAB; margin-top: 20px; font-size: 1.2rem; }
-      .highlight { color: #FF6CAB; font-weight: bold; }
-      .step { margin-bottom: 12px; display: block; }
-    </style>
-    <div class="ch-content">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #81C784; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #81C784; padding-left: 15px; margin-top: 15px; background: rgba(129, 199, 132, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #81C784 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #81C784 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(129, 199, 132, 0.05) !important; border-left: 4px solid #81C784 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #81C784 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #81C784 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #81C784 !important; font-weight: 700; }
+        strong { color: #81C784 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #81C784; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="ch-content">
       <h2>Chapter Overview</h2>
       <div class="step">A triangle is a closed shape with three sides and three angles.</div>
       <div class="step">This chapter focuses on the <span class="highlight">Congruence of Triangles</span>.</div>
@@ -32,19 +51,36 @@ export const c9Math6: ChapterContent = {
       <div class="step">3. <strong>SSS (Side-Side-Side):</strong> All three sides are equal.</div>
       <div class="step">4. <strong>RHS (Right Angle-Hypotenuse-Side):</strong> In right triangles, the hypotenuse and one side are equal.</div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex6-1": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 108, 171, 0.1); border-left: 4px solid #FF6CAB; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF6CAB; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF6CAB; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 108, 171, 0.2); border-radius: 12px; }
-        .highlight { color: #FF6CAB; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #81C784; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #81C784; padding-left: 15px; margin-top: 15px; background: rgba(129, 199, 132, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #81C784 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #81C784 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(129, 199, 132, 0.05) !important; border-left: 4px solid #81C784 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #81C784 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #81C784 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #81C784 !important; font-weight: 700; }
+        strong { color: #81C784 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #81C784; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. In quadrilateral ACBD, AC = AD and AB bisects &ang;A. Show that &Delta;ABC &cong; &Delta;ABD. What can you say about BC and BD?</div>
         <svg viewBox="0 0 240 140" class="ex-img">
           <path d="M40,70 L120,20 L200,70 L120,120 Z" fill="none" stroke="white" stroke-width="2.5"/>
@@ -203,18 +239,35 @@ export const c9Math6: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 4:</span> (iv) Since &Delta;DBC &cong; &Delta;ACB, CD=AB (CPCT). CM=1/2 CD, so CM=1/2 AB.</div>
         </div>
       </div>
-    `,
+`,
     "ex6-2": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 108, 171, 0.1); border-left: 4px solid #FF6CAB; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF6CAB; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF6CAB; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 108, 171, 0.2); border-radius: 12px; }
-        .highlight { color: #FF6CAB; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #81C784; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #81C784; padding-left: 15px; margin-top: 15px; background: rgba(129, 199, 132, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #81C784 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #81C784 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(129, 199, 132, 0.05) !important; border-left: 4px solid #81C784 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #81C784 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #81C784 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #81C784 !important; font-weight: 700; }
+        strong { color: #81C784 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #81C784; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. In an isosceles triangle ABC, with AB = AC, the bisectors of &ang;B and &ang;C intersect each other at O. Join A to O. Show that: (i) OB = OC (ii) AO bisects &ang;A</div>
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M120,30 L60,150 L180,150 Z" fill="none" stroke="white" stroke-width="2.5"/>
@@ -345,18 +398,35 @@ export const c9Math6: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 3:</span> 3 &ang;A = 180&deg; &rarr; &ang;A = 60&deg;. Each angle is 60&deg;.</div>
         </div>
       </div>
-    `,
+`,
     "ex6-3": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 108, 171, 0.1); border-left: 4px solid #FF6CAB; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF6CAB; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF6CAB; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 108, 171, 0.2); border-radius: 12px; }
-        .highlight { color: #FF6CAB; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #81C784; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #81C784; padding-left: 15px; margin-top: 15px; background: rgba(129, 199, 132, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #81C784 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #81C784 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(129, 199, 132, 0.05) !important; border-left: 4px solid #81C784 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #81C784 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #81C784 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #81C784 !important; font-weight: 700; }
+        strong { color: #81C784 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #81C784; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. &Delta;ABC and &Delta;DBC are two isosceles triangles on the same base BC and vertices A and D are on the same side of BC. If AD is extended to intersect BC at P, show that: (i) &Delta;ABD &cong; &Delta;ACD (ii) &Delta;ABP &cong; &Delta;ACP (iii) AP bisects &ang;A as well as &ang;D (iv) AP is the perpendicular bisector of BC.</div>
         <svg viewBox="0 0 240 180" class="ex-img">
           <path d="M120,20 L60,150 L180,150 Z" fill="none" stroke="white" stroke-width="2.5"/>
@@ -456,18 +526,35 @@ export const c9Math6: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 4:</span> From (1) and (2), &ang;TQR + &ang;QTR = 1/2 &ang;QPR + &ang;TQR &rarr; &ang;QTR = 1/2 &ang;QPR.</div>
         </div>
       </div>
-    `,
+`,
     "ex6-4": `
       <style>
-        .ch-content { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #f0f0f0; padding: 20px; text-align: justify; }
-        .question { background: rgba(255, 108, 171, 0.1); border-left: 4px solid #FF6CAB; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; font-weight: 500; color: #FF6CAB; }
-        .solution { padding: 5px 0; margin-bottom: 40px; }
-        .sol-step { background: rgba(255, 255, 255, 0.03); padding: 10px 15px; margin-bottom: 6px; border-left: 3px solid #FF6CAB; border-radius: 4px; display: block; }
-        .ex-img { max-width: 100%; height: auto; margin: 25px auto; display: block; background: rgba(255,255,255,0.02); padding: 15px; border: 1px solid rgba(255, 108, 171, 0.2); border-radius: 12px; }
-        .highlight { color: #FF6CAB; font-weight: bold; }
-        text { fill: #ffffff; font-weight: bold; font-family: sans-serif; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #81C784; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #81C784; padding-left: 15px; margin-top: 15px; background: rgba(129, 199, 132, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #81C784 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #81C784 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(129, 199, 132, 0.05) !important; border-left: 4px solid #81C784 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #81C784 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #81C784 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #81C784 !important; font-weight: 700; }
+        strong { color: #81C784 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #81C784; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="ch-content">
+<div class="ch-content">
         <div class="question">1. Show that in a right angled triangle, the hypotenuse is the longest side.</div>
         <svg viewBox="0 0 200 160" class="ex-img">
           <path d="M60,30 L60,130 L160,130 Z" fill="none" stroke="white" stroke-width="2.5"/>
@@ -559,7 +646,7 @@ export const c9Math6: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 4:</span> Side opposite larger angle is longer &rarr; PN > PM. Perpendicular is shortest.</div>
         </div>
       </div>
-    `
+`
   },
   mcqs: [
     { id: "m1", question: "If two sides and the included angle of one triangle are equal to those of another, the rule is:", options: ["SSS", "SAS", "ASA", "RHS"], correctAnswer: "B" },

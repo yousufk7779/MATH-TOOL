@@ -83,17 +83,37 @@ export const c9Math11: ChapterContent = {
     ],
 
     isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+    htmlOverview: `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #DCE775 !important; font-weight: 700; }
+        strong { color: #DCE775 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 100px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 64, 129, 0.2) !important; color: #fff !important; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
-        .formula-box { background: rgba(255, 64, 129, 0.1) !important; border-left: 4px solid #FF4081 !important; padding: 10px; margin: 10px 0; color: #fff !important; }
-        .section-title { color: #FF4081 !important; font-size: 1.3em; border-bottom: 1px solid rgba(255,64,129,0.2); padding-bottom: 5px; margin-bottom: 15px; }
-        .step { color: #ccc !important; line-height: 1.6; margin-bottom: 10px; }
-        b { color: #FF4081 !important; font-weight: normal; }
-    </style>
+    
 </head>
 <body>
     <div class="content-box">
@@ -114,22 +134,40 @@ export const c9Math11: ChapterContent = {
         <div class="step">Data can be visualized using <b>Bar Graphs</b>, <b>Histograms</b> (for continuous classes), and <b>Frequency Polygons</b>.</div>
     </div>
 </body>
-</html>`,
+</html>
+`,
     htmlExercises: {
-        "ex11.1": `<!DOCTYPE html>
+        "ex11.1": `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #DCE775 !important; font-weight: 700; }
+        strong { color: #DCE775 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 64, 129, 0.2) !important; color: #fff !important; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        .question { color: #F48FB1 !important; font-weight: normal; margin-bottom: 15px; }
-        .solution-header { color: #FF4081 !important; margin-bottom: 10px; font-size: 1.1em; }
-        .step { color: #ccc !important; line-height: 1.6; margin-bottom: 8px; }
-        .final-answer { color: #FF4081 !important; font-weight: normal; margin-top: 10px; }
-        table { margin: 20px auto !important; border-collapse: collapse; background: rgba(0,0,0,0.2); width: auto; min-width: 280px; }
-        th, td { border: 1px solid rgba(255, 64, 129, 0.3); padding: 10px; text-align: center; color: #fff; }
-        th { background: rgba(255, 64, 129, 0.2); color: #FF4081; }
-    </style>
+    
 </head>
 <body>
     <div class="content-box">
@@ -151,21 +189,39 @@ export const c9Math11: ChapterContent = {
         <div class="step"><b>Secondary Data:</b> Examples 4 and 5 (obtained from an external source).</div>
     </div>
 </body>
-</html>`,
-        "ex11.2": `<!DOCTYPE html>
+</html>
+`,
+        "ex11.2": `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #DCE775 !important; font-weight: 700; }
+        strong { color: #DCE775 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 64, 129, 0.2) !important; color: #fff !important; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        .question { color: #F48FB1 !important; font-weight: normal; margin-bottom: 15px; }
-        .solution-header { color: #FF4081 !important; margin-bottom: 10px; font-size: 1.1em; }
-        .step { color: #ccc !important; line-height: 1.6; margin-bottom: 8px; }
-        .final-answer { color: #FF4081 !important; font-weight: normal; margin-top: 10px; }
-        table { display: table !important; margin-left: auto !important; margin-right: auto !important; border-collapse: collapse; background: rgba(0,0,0,0.2); width: auto; min-width: 260px; max-width: 100%; }
-        th, td { border: 1px solid rgba(255, 64, 129, 0.3); padding: 10px; text-align: center; color: #fff; }
-        th { background: rgba(255, 64, 129, 0.2); color: #FF4081; }
-    </style>
+    
 </head>
 <body>
     <div class="content-box">
@@ -306,21 +362,39 @@ export const c9Math11: ChapterContent = {
         </table>
     </div>
 </body>
-</html>`,
-        "ex11.3": `<!DOCTYPE html>
+</html>
+`,
+        "ex11.3": `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #DCE775 !important; font-weight: 700; }
+        strong { color: #DCE775 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 64, 129, 0.2) !important; color: #fff !important; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        .question { color: #F48FB1 !important; font-weight: normal; margin-bottom: 15px; }
-        .solution-header { color: #FF4081 !important; margin-bottom: 10px; font-size: 1.1em; }
-        .step { color: #ccc !important; line-height: 1.6; margin-bottom: 8px; }
-        .chart-container { margin: 20px 0; background: rgba(0,0,0,0.1); padding: 10px; border-radius: 5px; }
-        table { display: table !important; margin-left: auto !important; margin-right: auto !important; border-collapse: collapse; background: rgba(0,0,0,0.2); width: auto; min-width: 260px; max-width: 100%; }
-        th, td { border: 1px solid rgba(255, 64, 129, 0.3); padding: 8px; text-align: center; color: #fff; font-size: 0.9em; }
-        th { background: rgba(255, 64, 129, 0.2); color: #FF4081; }
-    </style>
+    
 </head>
 <body>
     <div class="content-box">
@@ -465,21 +539,39 @@ export const c9Math11: ChapterContent = {
         </div>
     </div>
 </body>
-</html>`,
-        "ex11.4": `<!DOCTYPE html>
+</html>
+`,
+        "ex11.4": `
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #DCE775 !important; font-weight: 700; }
+        strong { color: #DCE775 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-        .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 64, 129, 0.2) !important; color: #fff !important; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        .question { color: #F48FB1 !important; font-weight: normal; margin-bottom: 15px; }
-        .solution-header { color: #FF4081 !important; margin-bottom: 10px; font-size: 1.1em; }
-        .step { color: #ccc !important; line-height: 1.6; margin-bottom: 8px; }
-        .final-answer { color: #FF4081 !important; font-weight: normal; margin-top: 10px; }
-        table { display: table !important; margin-left: auto !important; margin-right: auto !important; border-collapse: collapse; background: rgba(0,0,0,0.2); width: auto; min-width: 260px; max-width: 100%; }
-        th, td { border: 1px solid rgba(255, 64, 129, 0.3); padding: 10px; text-align: center; color: #fff; }
-        th { background: rgba(255, 64, 129, 0.2); color: #FF4081; }
-    </style>
+    
 </head>
 <body>
     <div class="content-box">
@@ -535,6 +627,7 @@ export const c9Math11: ChapterContent = {
         <div class="step">(ii) <b>Median is appropriate:</b> Salary of employees in a company where a few top executives earn very high salaries (outliers) which would skew the mean.</div>
     </div>
 </body>
-</html>`
+</html>
+`
     }
 };

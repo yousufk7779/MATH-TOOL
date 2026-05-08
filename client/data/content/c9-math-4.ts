@@ -95,15 +95,33 @@ export const c9Math4: ChapterContent = {
   ],
   isHtmlView: true,
   htmlOverview: `
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
-      .main-wrapper { padding: 15px; width: 100%; color: #fff !important; font-size: 18px !important; background: transparent !important; }
-      .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(66, 165, 245, 0.2) !important; border-radius: 12px; padding: 20px; margin-bottom: 20px; }
-      .section-title { color: #42A5F5 !important; font-weight: 600; font-size: 1.3em; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-family: 'Nunito', sans-serif !important; }
-      .step { margin-bottom: 12px; font-size: 1em; color: #e0e0e0 !important; line-height: 1.6; text-align: justify; }
-      strong { color: #42A5F5 !important; font-weight: 600; }
-    </style>
-    <div class="main-wrapper">
+      <style>
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #F06292; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #F06292; padding-left: 15px; margin-top: 15px; background: rgba(240, 98, 146, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #F06292 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #F06292 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(240, 98, 146, 0.05) !important; border-left: 4px solid #F06292 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #F06292 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #F06292 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #F06292 !important; font-weight: 700; }
+        strong { color: #F06292 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #F06292; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+      </style>
+<div class="main-wrapper">
       <div class="content-box">
         <div class="section-title">1. Introduction</div>
         <p class="step">You have already studied how to locate a point on a number line. In this chapter, you will learn how to describe the position of a point in a plane using the <strong>Cartesian System</strong>. This concept was developed by the French mathematician <strong>R&eacute;n&eacute; Descartes</strong>.</p>
@@ -124,17 +142,36 @@ export const c9Math4: ChapterContent = {
         </ul>
       </div>
     </div>
-  `,
+`,
   htmlExercises: {
     "ex4-1": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #42A5F5; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #42A5F5; font-weight: bold; }
-        strong { color: #42A5F5 !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #F06292; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #F06292; padding-left: 15px; margin-top: 15px; background: rgba(240, 98, 146, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #F06292 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #F06292 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(240, 98, 146, 0.05) !important; border-left: 4px solid #F06292 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #F06292 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #F06292 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #F06292 !important; font-weight: 700; }
+        strong { color: #F06292 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #F06292; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. How will you describe the position of a table lamp on your study table to another person?</div>
         <div class="solution">
           To describe the position, consider the table as a plane. Choose two perpendicular edges of the table as the axes. Let the lamp be at a point. Measure its distance from the shorter edge (say x cm) and the longer edge (say y cm). The position of the lamp can then be written as <strong>(x, y)</strong>.
@@ -148,17 +185,35 @@ export const c9Math4: ChapterContent = {
           Only <strong>one</strong> cross-street can be referred to as (3, 4).
         </div>
       </div>
-    `,
+`,
     "ex4-2": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #42A5F5; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #42A5F5; font-weight: bold; }
-        .ex-img { max-width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(66, 165, 245, 0.2); }
-        strong { color: #42A5F5 !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #F06292; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #F06292; padding-left: 15px; margin-top: 15px; background: rgba(240, 98, 146, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #F06292 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #F06292 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(240, 98, 146, 0.05) !important; border-left: 4px solid #F06292 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #F06292 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #F06292 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #F06292 !important; font-weight: 700; }
+        strong { color: #F06292 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #F06292; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. Write the answer of each of the following questions:</div>
         <div class="solution">
           <span class="subpart">(i) What is the name of horizontal and the vertical lines drawn to determine the position of any point in the Cartesian plane?</span><br/>
@@ -183,17 +238,35 @@ export const c9Math4: ChapterContent = {
           <span class="subpart">(viii) The coordinates of the point M.</span> -> <strong>(-3, 0)</strong>
         </div>
       </div>
-    `,
+`,
     "ex4-3": `
       <style>
-        .container { padding: 15px; color: white; font-family: 'Noto Sans', sans-serif; font-size: 18px; line-height: 1.7; display: block; background: transparent; }
-        .question { color: #42A5F5; font-weight: bold; margin-top: 30px; text-align: justify; }
-        .solution { margin-top: 15px; padding-left: 12px; border-left: 2px solid #3B3B52; text-align: justify; }
-        .subpart { color: #42A5F5; font-weight: bold; }
-        .ex-img { max-width: 100%; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(66, 165, 245, 0.2); }
-        strong { color: #42A5F5 !important; font-weight: bold; }
+        .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
+        .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .frac .den { padding: 0 2px; }
+        .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        .question { color: #F06292; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #F06292; padding-left: 15px; margin-top: 15px; background: rgba(240, 98, 146, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
+        
+        /* Overview styles */
+        .section-title { color: #F06292 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #F06292 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(240, 98, 146, 0.05) !important; border-left: 4px solid #F06292 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #F06292 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #F06292 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #F06292 !important; font-weight: 700; }
+        strong { color: #F06292 !important; font-weight: 600; }
+        
+        /* Utility classes for step-by-step */
+        .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
+        .ans-highlight { color: #F06292; font-weight: 700; }
+        .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
       </style>
-      <div class="container">
+<div class="container">
         <div class="question">1. In which quadrant or on which axis do each of the points (- 2, 4), (3, - 1), (- 1, 0), (1, 2) and (- 3, - 5) lie? Verify your answer by locating them on the Cartesian plane.</div>
         <div class="solution">
           <span class="subpart">Location:</span><br/>
@@ -232,6 +305,6 @@ export const c9Math4: ChapterContent = {
           - Continue for all points.
         </div>
       </div>
-    `
+`
   }
 };
