@@ -15,9 +15,10 @@ const ex131Content = `
     .sol-step { margin-bottom: 8px; }
     .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
     .fig-container { display: flex; justify-content: center; margin: 15px 0; background: rgba(255,255,255,0.02); padding: 10px; border-radius: 8px; }
-    .prop-table { width: 100%; border-collapse: collapse; margin: 10px 0; background: rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; }
-    .prop-table th, .prop-table td { padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: center; }
-    .prop-table th { background: rgba(224, 64, 251, 0.2); color: #E040FB; }
+    .prop-table { width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; }
+    .prop-table th, .prop-table td { padding: 12px 6px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; }
+    .prop-table th { background: rgba(224, 64, 251, 0.2); color: #E040FB; font-weight: 600; width: 1%; white-space: nowrap; }
+    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 15px 0; }
   </style>
   <div class="ex-container">
     <div class="q-card">
@@ -154,10 +155,12 @@ const ex131Content = `
     <div class="q-card">
       <div class="q-text">5. Use the tables below to draw linear graphs.</div>
       <div class="q-subtext">(a) The number of days a hillside city received snow in different years.</div>
-      <table class="prop-table">
-        <tr><th>Year</th><td>2003</td><td>2004</td><td>2005</td><td>2006</td></tr>
-        <tr><th>Days</th><td>8</td><td>10</td><td>5</td><td>12</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Year</th><td>2003</td><td>2004</td><td>2005</td><td>2006</td></tr>
+          <tr><th>Days</th><td>8</td><td>10</td><td>5</td><td>12</td></tr>
+        </table>
+      </div>
       <div class="fig-container">
         <svg width="250" height="150" viewBox="0 0 250 150">
           <line x1="30" y1="130" x2="230" y2="130" stroke="#e0e0e0"/>
@@ -170,11 +173,13 @@ const ex131Content = `
         </svg>
       </div>
       <div class="q-subtext">(b) Population (in thousands) of men and women in a village in different years.</div>
-      <table class="prop-table">
-        <tr><th>Year</th><td>2003</td><td>2004</td><td>2005</td><td>2006</td><td>2007</td></tr>
-        <tr><th>Men</th><td>12</td><td>12.5</td><td>13</td><td>13.2</td><td>13.5</td></tr>
-        <tr><th>Women</th><td>11.3</td><td>11.9</td><td>13</td><td>13.6</td><td>12.8</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Year</th><td>2003</td><td>2004</td><td>2005</td><td>2006</td><td>2007</td></tr>
+          <tr><th>Men</th><td>12</td><td>12.5</td><td>13</td><td>13.2</td><td>13.5</td></tr>
+          <tr><th>Women</th><td>11.3</td><td>11.9</td><td>13</td><td>13.6</td><td>12.8</td></tr>
+        </table>
+      </div>
       <div class="fig-container">
         <svg width="250" height="150" viewBox="0 0 250 150">
           <line x1="30" y1="130" x2="230" y2="130" stroke="#e0e0e0"/>
@@ -279,18 +284,21 @@ const ex132Content = `
     .sol-step { margin-bottom: 8px; }
     .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
     .fig-container { display: flex; justify-content: center; margin: 15px 0; background: rgba(255,255,255,0.02); padding: 10px; border-radius: 8px; }
-    .prop-table { width: 100%; border-collapse: collapse; margin: 10px 0; background: rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; }
-    .prop-table th, .prop-table td { padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; }
-    .prop-table th { background: rgba(224, 64, 251, 0.2); color: #E040FB; }
+    .prop-table { width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; }
+    .prop-table th, .prop-table td { padding: 12px 6px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; }
+    .prop-table th { background: rgba(224, 64, 251, 0.2); color: #E040FB; font-weight: 600; width: 1%; white-space: nowrap; }
+    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 15px 0; }
   </style>
   <div class="ex-container">
     <div class="q-card">
       <div class="q-text">1. Draw the graphs for the following tables of values, with suitable scales on the axes.</div>
       <div class="q-subtext">(a) Cost of apples</div>
-      <table class="prop-table">
-        <tr><th>Number of apples</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-        <tr><th>Cost (in Rs)</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Number of apples</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+          <tr><th>Cost (in Rs)</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
+        </table>
+      </div>
       <div class="fig-container">
         <svg width="250" height="150" viewBox="0 0 250 150">
           <line x1="30" y1="130" x2="230" y2="130" stroke="#e0e0e0"/>
@@ -307,10 +315,12 @@ const ex132Content = `
         </svg>
       </div>
       <div class="q-subtext">(b) Distance travelled by a car</div>
-      <table class="prop-table">
-        <tr><th>Time (in hours)</th><td>6 a.m.</td><td>7 a.m.</td><td>8 a.m.</td><td>9 a.m.</td></tr>
-        <tr><th>Distances (in km)</th><td>40</td><td>80</td><td>120</td><td>160</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Time (in hours)</th><td>6 a.m.</td><td>7 a.m.</td><td>8 a.m.</td><td>9 a.m.</td></tr>
+          <tr><th>Distances (in km)</th><td>40</td><td>80</td><td>120</td><td>160</td></tr>
+        </table>
+      </div>
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">(i)</span> How much distance did the car cover during the period 7.30 a.m. to 8 a.m?</div>
         <div class="sol-step"><span class="step-label">(ii)</span> What was the time when the car had covered a distance of 100 km since its start?</div>
@@ -323,18 +333,22 @@ const ex132Content = `
     <div class="q-card">
       <div class="q-text">2. Draw a graph for the following.</div>
       <div class="q-subtext">(i) Side of square vs Perimeter</div>
-      <table class="prop-table">
-        <tr><th>Side (cm)</th><td>2</td><td>3</td><td>3.5</td><td>5</td><td>6</td></tr>
-        <tr><th>Perimeter (cm)</th><td>8</td><td>12</td><td>14</td><td>20</td><td>24</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Side (cm)</th><td>2</td><td>3</td><td>3.5</td><td>5</td><td>6</td></tr>
+          <tr><th>Perimeter (cm)</th><td>8</td><td>12</td><td>14</td><td>20</td><td>24</td></tr>
+        </table>
+      </div>
       <div class="sol-box">
         <div class="sol-step">Is it a linear graph? <span class="ans-highlight">Yes</span>, it is a linear graph because all the points lie on a straight line passing through the origin.</div>
       </div>
       <div class="q-subtext">(ii) Side of square vs Area</div>
-      <table class="prop-table">
-        <tr><th>Side (cm)</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
-        <tr><th>Area (cm²)</th><td>4</td><td>9</td><td>16</td><td>25</td><td>36</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Side (cm)</th><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+          <tr><th>Area (cm²)</th><td>4</td><td>9</td><td>16</td><td>25</td><td>36</td></tr>
+        </table>
+      </div>
       <div class="fig-container">
         <svg width="250" height="150" viewBox="0 0 250 150">
           <line x1="30" y1="130" x2="230" y2="130" stroke="#e0e0e0"/>
@@ -420,10 +434,10 @@ export const c8Math13: ChapterContent = {
       .prop-table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;
         background: rgba(0,0,0,0.2);
-        border-radius: 12px;
         overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 12px;
       }
 
       .prop-table th, .prop-table td {
@@ -437,7 +451,9 @@ export const c8Math13: ChapterContent = {
         background: rgba(255,255,255,0.1);
         color: #EA80FC;
         font-weight: 700;
+        width: 22%;
       }
+      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 10px; }
 
       .highlight { color: #EA80FC; font-weight: 600; }
       
@@ -458,6 +474,7 @@ export const c8Math13: ChapterContent = {
       </div>
       <div class="section-box">
         <div class="section-header"><span>✦</span> Types of Graphs</div>
+      <div class="table-container">
         <table class="prop-table">
           <tr>
             <th>Graph Type</th>
@@ -480,6 +497,7 @@ export const c8Math13: ChapterContent = {
             <td>Changes continuously over time</td>
           </tr>
         </table>
+      </div>
       </div>
     </div>
   `,

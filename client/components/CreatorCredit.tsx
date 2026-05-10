@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 12,
-    color: JiguuColors.accent2,
+    color: "#e64da8",
     lineHeight: 16,
     fontFamily: "NotoSans_600SemiBold",
     marginTop: 2,

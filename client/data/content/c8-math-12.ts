@@ -366,14 +366,13 @@ export const c8Math12: ChapterContent = {
       .prop-table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;
         background: rgba(0,0,0,0.2);
-        border-radius: 12px;
         overflow: hidden;
+        min-width: 300px;
       }
 
       .prop-table th, .prop-table td {
-        padding: 12px;
+        padding: 10px;
         border: 1px solid rgba(255,255,255,0.1);
         text-align: left;
         font-size: 15px;
@@ -384,6 +383,8 @@ export const c8Math12: ChapterContent = {
         color: #4DB6AC;
         font-weight: 700;
       }
+
+      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
 
       .highlight { color: #4DB6AC; font-weight: 600; }
       
@@ -404,6 +405,7 @@ export const c8Math12: ChapterContent = {
       </div>
       <div class="section-box">
         <div class="section-header"><span>✦</span> Key Identities</div>
+      <div class="table-container">
         <table class="prop-table">
           <tr>
             <th>Identity Name</th>
@@ -426,6 +428,7 @@ export const c8Math12: ChapterContent = {
             <td><span class="highlight">(x + a)(x + b) = x² + (a+b)x + ab</span></td>
           </tr>
         </table>
+      </div>
       </div>
     </div>
   `,

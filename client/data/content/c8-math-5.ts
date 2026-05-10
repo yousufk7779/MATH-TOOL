@@ -692,14 +692,13 @@ export const c8Math5: ChapterContent = {
       .prop-table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;
         background: rgba(0,0,0,0.2);
-        border-radius: 12px;
         overflow: hidden;
+        min-width: 300px;
       }
 
       .prop-table th, .prop-table td {
-        padding: 12px;
+        padding: 10px;
         border: 1px solid rgba(255,255,255,0.1);
         text-align: left;
         font-size: 15px;
@@ -710,6 +709,8 @@ export const c8Math5: ChapterContent = {
         color: #81C784;
         font-weight: 700;
       }
+
+      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
 
       .highlight { color: #81C784; font-weight: 600; }
       
@@ -743,6 +744,7 @@ export const c8Math5: ChapterContent = {
 
       <div class="section-box">
         <div class="section-header"><span>✦</span> Key Concepts & Properties</div>
+      <div class="table-container">
         <table class="prop-table">
           <tr>
             <th>Concept</th>
@@ -770,6 +772,7 @@ export const c8Math5: ChapterContent = {
             </td>
           </tr>
         </table>
+      </div>
       </div>
     </div>
   `,

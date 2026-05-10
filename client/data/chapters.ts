@@ -152,6 +152,39 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c7-sci-12", number: 12, name: "Forests: Our Lifeline", color: "#E91E63" },
       { id: "c7-sci-13", number: 13, name: "Wastewater Story", color: "#E91E63" }
     ]
+  },
+  "Class 7 Social Science": {
+    "History": [
+      { id: "c7-hist-1", number: 1, name: "Tracing Changes Through A Thousand Years", color: "#FF5722" },
+      { id: "c7-hist-2", number: 2, name: "New Kings And Kingdoms", color: "#FF5722" },
+      { id: "c7-hist-3", number: 3, name: "The Delhi Sultans", color: "#FF5722" },
+      { id: "c7-hist-4", number: 4, name: "The Mughal Empire", color: "#FF5722" },
+      { id: "c7-hist-5", number: 5, name: "Tribes, Nomads And Settled Communities", color: "#FF5722" },
+      { id: "c7-hist-6", number: 6, name: "Devotional Paths To The Divine", color: "#FF5722" },
+      { id: "c7-hist-7", number: 7, name: "The Making Of Regional Cultures", color: "#FF5722" },
+      { id: "c7-hist-8", number: 8, name: "Eighteenth-Century Political Formations", color: "#FF5722" }
+    ],
+    "Geography": [
+      { id: "c7-geo-1", number: 1, name: "Environment", color: "#4CAF50" },
+      { id: "c7-geo-2", number: 2, name: "Inside Our Earth", color: "#4CAF50" },
+      { id: "c7-geo-3", number: 3, name: "Our Changing Earth", color: "#4CAF50" },
+      { id: "c7-geo-4", number: 4, name: "Air", color: "#4CAF50" },
+      { id: "c7-geo-5", number: 5, name: "Water", color: "#4CAF50" },
+      { id: "c7-geo-6", number: 6, name: "Human Environment Interactions – The Tropical and the Subtropical Region", color: "#4CAF50" },
+      { id: "c7-geo-7", number: 7, name: "Life in the Deserts", color: "#4CAF50" },
+      { id: "c7-geo-8", number: 8, name: "Jammu & Kashmir - Life and People", color: "#4CAF50" }
+    ],
+    "Civics": [
+      { id: "c7-civ-1", number: 1, name: "On Equality", color: "#9C27B0" },
+      { id: "c7-civ-2", number: 2, name: "Role of the Government in Health", color: "#9C27B0" },
+      { id: "c7-civ-3", number: 3, name: "How the State Government Works", color: "#9C27B0" },
+      { id: "c7-civ-4", number: 4, name: "Growing up as Boys and Girls", color: "#9C27B0" },
+      { id: "c7-civ-5", number: 5, name: "Women Change the World", color: "#9C27B0" },
+      { id: "c7-civ-6", number: 6, name: "Understanding Media", color: "#9C27B0" },
+      { id: "c7-civ-7", number: 7, name: "Markets Around Us", color: "#9C27B0" },
+      { id: "c7-civ-8", number: 8, name: "A Shirt in the Market", color: "#9C27B0" },
+      { id: "c7-civ-9", number: 9, name: "Structures of the Governance in J&K and Ladakh", color: "#9C27B0" }
+    ]
   }
 };
 
@@ -250,6 +283,52 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const bioGradients = [gradientList[4], gradientList[5], gradientList[18] ? gradientList[18] : gradientList[3]];
     return bioGradients[(num - 1) % bioGradients.length];
+  }
+
+  if (chapterId.match(/^c[789]-hist/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const histPool = [
+      JiguuColors.gradients.deepOrange, 
+      JiguuColors.gradients.pink, 
+      JiguuColors.gradients.premiumOrange,
+      JiguuColors.gradients.pinkOrange,
+      JiguuColors.gradients.premiumRed,
+      JiguuColors.gradients.gold,
+      JiguuColors.gradients.rose,
+      JiguuColors.gradients.orange
+    ];
+    return histPool[(num - 1) % histPool.length] as string[];
+  }
+
+  if (chapterId.match(/^c[789]-geo/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const geoPool = [
+      JiguuColors.gradients.green,
+      JiguuColors.gradients.teal,
+      JiguuColors.gradients.brightBlue,
+      JiguuColors.gradients.premiumGreen,
+      JiguuColors.gradients.blue, // Chapter 5: Water -> Blue
+      JiguuColors.gradients.cyan,
+      JiguuColors.gradients.mint,
+      JiguuColors.gradients.sky
+    ];
+    return geoPool[(num - 1) % geoPool.length] as string[];
+  }
+
+  if (chapterId.match(/^c[789]-civ/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const civPool = [
+      JiguuColors.gradients.purple,
+      JiguuColors.gradients.indigo,
+      JiguuColors.gradients.blue,
+      JiguuColors.gradients.violet,
+      JiguuColors.gradients.magenta,
+      JiguuColors.gradients.brightBlue,
+      JiguuColors.gradients.premiumRed, // Switching to something bold for variety
+      JiguuColors.gradients.pinkOrange,
+      JiguuColors.gradients.gold
+    ];
+    return civPool[(num - 1) % civPool.length] as string[];
   }
 
   if (chapterId.match(/^c[789]-sci-\d+$/)) {

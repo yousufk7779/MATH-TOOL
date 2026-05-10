@@ -35,6 +35,7 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
 
   const isClass7 = 
     route.name === "Class7" || 
+    route.name === "Class7SocialScience" || 
     params?.className === "Class 7" || 
     (typeof params?.subject === "string" && params.subject.includes("Class 7")) || 
     (typeof params?.chapterId === "string" && params.chapterId.startsWith("c7-"));
@@ -44,17 +45,17 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
   if (isClass9) subtitleSuffix = "Class 9";
   else if (isClass8) subtitleSuffix = "Class 8";
   else if (isClass7) subtitleSuffix = "Class 7";
-  else if (isClassSelector) subtitleSuffix = "Classes";
+  else if (isClassSelector) subtitleSuffix = "Study Smarter";
 
   const subtitleTextStyle = useMemo(() => [
     styles.subtitleText,
-    isClassSelector && styles.subtitleTitleMatch
-  ], [isClassSelector]);
+    styles.subtitleTitleMatch
+  ], []);
 
   const suffixStyle = useMemo(() => [
     styles.subtitleSuffixText,
-    isClassSelector && { color: JiguuColors.accent2 }
-  ], [isClassSelector]);
+    { color: "#e64da8" }
+  ], []);
 
   return (
     <View style={styles.container}>
@@ -66,7 +67,7 @@ export const JiguuLogo = memo(function JiguuLogo({ showSubtitle = false, size = 
       {showSubtitle ? (
         <View style={styles.subtitleWrapper}>
           <Text style={subtitleTextStyle}>
-            Learn Smart . <Text style={suffixStyle}>{subtitleSuffix}</Text>
+            Learn Smart <Text style={styles.dot}>.</Text> <Text style={suffixStyle}>{subtitleSuffix}</Text>
           </Text>
         </View>
       ) : null}
@@ -84,6 +85,7 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
   },
   subtitleWrapper: {
+    height: 32,
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
@@ -97,14 +99,27 @@ const styles = StyleSheet.create({
     fontFamily: "NotoSans_600SemiBold",
     color: "#E0E0E0",
     letterSpacing: 1,
+    includeFontPadding: false,
+    lineHeight: 22,
   },
   subtitleSuffixText: {
     color: JiguuColors.accent2,
     fontWeight: "700",
+    includeFontPadding: false,
+    lineHeight: 22,
   },
   subtitleTitleMatch: {
     fontSize: 17,
     color: '#FFFFFF',
     letterSpacing: 0.5,
+    includeFontPadding: false,
+    lineHeight: 22,
+  },
+  dot: {
+    fontSize: 22,
+    fontWeight: '900',
+    color: '#FFFFFF',
+    position: 'relative',
+    top: -1,
   }
 });

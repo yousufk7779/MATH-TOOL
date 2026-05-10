@@ -21,6 +21,7 @@ import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
 import Class9Screen from "@/screens/Class9Screen";
 import Class8Screen from "@/screens/Class8Screen";
 import Class7Screen from "@/screens/Class7Screen";
+import Class7SocialScienceScreen from "@/screens/Class7SocialScienceScreen";
 
 export type RootStackParamList = {
   ClassSelector: undefined;
@@ -28,6 +29,7 @@ export type RootStackParamList = {
   Class9: undefined;
   Class8: undefined;
   Class7: undefined;
+  Class7SocialScience: { className?: string } | undefined;
   ScienceTopics: { className?: string } | undefined;
   ChapterList: { subject?: string; topic?: string; className?: string } | undefined;
   Solution: {
@@ -61,6 +63,7 @@ export default function RootStackNavigator() {
       <Stack.Screen name="Class9" component={Class9Screen} />
       <Stack.Screen name="Class8" component={Class8Screen} />
       <Stack.Screen name="Class7" component={Class7Screen} />
+      <Stack.Screen name="Class7SocialScience" component={Class7SocialScienceScreen} />
       <Stack.Screen name="ScienceTopics" component={ScienceTopicsScreen} />
 
       <Stack.Screen name="ChapterList" component={ChapterListScreen} />

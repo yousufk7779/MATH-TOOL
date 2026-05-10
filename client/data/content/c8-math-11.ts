@@ -15,9 +15,10 @@ const ex111Content = `
     .sol-step { margin-bottom: 8px; }
     .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
     .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-    .prop-table { width: 100%; border-collapse: collapse; margin: 10px 0; background: rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; }
-    .prop-table th, .prop-table td { padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+    .prop-table { width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); overflow: hidden; min-width: 350px; }
+    .prop-table th, .prop-table td { padding: 8px 4px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; }
     .prop-table th { background: rgba(0, 212, 255, 0.2); color: #00D4FF; }
+    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(255,255,255,0.1); }
   </style>
   <div class="ex-container">
     <div class="q-card">
@@ -41,10 +42,12 @@ const ex111Content = `
 
     <div class="q-card">
       <div class="q-text">2. A mixture of paint is prepared by mixing 1 part of red pigments with 8 parts of base. In the following table, find the parts of base that need to be added.</div>
-      <table class="prop-table">
-        <tr><th>Parts of red pigment</th><td>1</td><td>4</td><td>7</td><td>12</td><td>20</td></tr>
-        <tr><th>Parts of base</th><td>8</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Parts of red pigment</th><td>1</td><td>4</td><td>7</td><td>12</td><td>20</td></tr>
+          <tr><th>Parts of base</th><td>8</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        </table>
+      </div>
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Let red pigment be x and base be y. Ratio x/y = 1/8.</div>
@@ -60,10 +63,12 @@ const ex111Content = `
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Let the red pigment required be x.</div>
-        <table class="prop-table">
-          <tr><th>Red pigment (parts)</th><td>1</td><td>x</td></tr>
-          <tr><th>Base (mL)</th><td>75</td><td>1800</td></tr>
-        </table>
+        <div class="table-container">
+          <table class="prop-table">
+            <tr><th>Red pigment (parts)</th><td>1</td><td>x</td></tr>
+            <tr><th>Base (mL)</th><td>75</td><td>1800</td></tr>
+          </table>
+        </div>
         <div class="sol-step">Ratio = 1/75 = x/1800</div>
         <div class="sol-step">x = 1800 / 75</div>
         <div class="sol-step">x = <span class="ans-highlight">24 parts</span></div>
@@ -75,10 +80,12 @@ const ex111Content = `
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Let the number of bottles be x.</div>
-        <table class="prop-table">
-          <tr><th>Hours</th><td>6</td><td>5</td></tr>
-          <tr><th>Bottles</th><td>840</td><td>x</td></tr>
-        </table>
+        <div class="table-container">
+          <table class="prop-table">
+            <tr><th>Hours</th><td>6</td><td>5</td></tr>
+            <tr><th>Bottles</th><td>840</td><td>x</td></tr>
+          </table>
+        </div>
         <div class="sol-step">Since time and bottles are in direct proportion:</div>
         <div class="sol-step">840/6 = x/5</div>
         <div class="sol-step">140 = x/5</div>
@@ -120,11 +127,13 @@ const ex111Content = `
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Let the length of model ship be x.</div>
-        <table class="prop-table">
-          <tr><th></th><th>Actual Ship</th><th>Model Ship</th></tr>
-          <tr><th>Mast Height</th><td>12 m</td><td>9 cm</td></tr>
-          <tr><th>Ship Length</th><td>28 m</td><td>x cm</td></tr>
-        </table>
+        <div class="table-container">
+          <table class="prop-table">
+            <tr><th></th><th>Actual Ship</th><th>Model Ship</th></tr>
+            <tr><th>Mast Height</th><td>12 m</td><td>9 cm</td></tr>
+            <tr><th>Ship Length</th><td>28 m</td><td>x cm</td></tr>
+          </table>
+        </div>
         <div class="sol-step">Ratio = 12/9 = 28/x</div>
         <div class="sol-step">x = (28 × 9) / 12</div>
         <div class="sol-step">x = 7 × 3 = <span class="ans-highlight">21 cm</span></div>
@@ -191,9 +200,10 @@ const ex112Content = `
     .sol-step { margin-bottom: 8px; }
     .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; line-height: 1.8; }
     .fig-container { display: flex; justify-content: center; margin: 15px 0; }
-    .prop-table { width: 100%; border-collapse: collapse; margin: 10px 0; background: rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden; }
-    .prop-table th, .prop-table td { padding: 10px; border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+    .prop-table { width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.2); overflow: hidden; min-width: 400px; }
+    .prop-table th, .prop-table td { padding: 8px 4px; border: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 14px; }
     .prop-table th { background: rgba(0, 212, 255, 0.2); color: #00D4FF; }
+    .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; margin: 15px 0; border: 1px solid rgba(255,255,255,0.1); }
   </style>
   <div class="ex-container">
     <div class="q-card">
@@ -211,10 +221,12 @@ const ex112Content = `
 
     <div class="q-card">
       <div class="q-text">2. In a Television game show, the prize money of Rs 1,00,000 is to be divided equally amongst the winners. Complete the following table and find whether the prize money given to an individual winner is directly or inversely proportional to the number of winners?</div>
-      <table class="prop-table">
-        <tr><th>Number of winners</th><td>1</td><td>2</td><td>4</td><td>5</td><td>8</td><td>10</td><td>20</td></tr>
-        <tr><th>Prize (Rs)</th><td>1,00,000</td><td>50,000</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Number of winners</th><td>1</td><td>2</td><td>4</td><td>5</td><td>8</td><td>10</td><td>20</td></tr>
+          <tr><th>Prize (Rs)</th><td>1,00,000</td><td>50,000</td><td>...</td><td>...</td><td>...</td><td>...</td><td>...</td></tr>
+        </table>
+      </div>
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Total Prize = Rs 1,00,000 (Constant). Product = x × y. This is <span class="ans-highlight">Inverse Proportion</span>.</div>
@@ -239,10 +251,12 @@ const ex112Content = `
           <line x1="152" y1="22" x2="188" y2="58" stroke="#00D4FF"/><line x1="152" y1="58" x2="188" y2="22" stroke="#00D4FF"/>
         </svg>
       </div>
-      <table class="prop-table">
-        <tr><th>Number of spokes</th><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td></tr>
-        <tr><th>Angle between spokes</th><td>90°</td><td>60°</td><td>...</td><td>...</td><td>...</td></tr>
-      </table>
+      <div class="table-container">
+        <table class="prop-table">
+          <tr><th>Number of spokes</th><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td></tr>
+          <tr><th>Angle between spokes</th><td>90°</td><td>60°</td><td>...</td><td>...</td><td>...</td></tr>
+        </table>
+      </div>
       <div class="sol-box">
         <div class="sol-step"><span class="step-label">Solution:</span></div>
         <div class="sol-step">Total angle = 360° (Constant). Spokes × Angle = 360°. (Inverse Proportion).</div>
@@ -418,14 +432,13 @@ export const c8Math11: ChapterContent = {
       .prop-table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 10px;
         background: rgba(0,0,0,0.2);
-        border-radius: 12px;
         overflow: hidden;
+        min-width: 300px;
       }
 
       .prop-table th, .prop-table td {
-        padding: 12px;
+        padding: 10px;
         border: 1px solid rgba(255,255,255,0.1);
         text-align: left;
         font-size: 15px;
@@ -436,6 +449,8 @@ export const c8Math11: ChapterContent = {
         color: #40C4FF;
         font-weight: 700;
       }
+
+      .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); }
 
       .highlight { color: #40C4FF; font-weight: 600; }
       
@@ -456,6 +471,7 @@ export const c8Math11: ChapterContent = {
       </div>
       <div class="section-box">
         <div class="section-header"><span>✦</span> Proportion Types</div>
+      <div class="table-container">
         <table class="prop-table">
           <tr>
             <th>Type</th>
@@ -473,6 +489,7 @@ export const c8Math11: ChapterContent = {
             <td><span class="highlight">x × y = k</span></td>
           </tr>
         </table>
+      </div>
       </div>
     </div>
   `,

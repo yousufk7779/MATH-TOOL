@@ -17,11 +17,11 @@ export const StaticHeader = memo(function StaticHeader() {
     <View style={[
       styles.container,
       {
-        paddingTop: isLandscape ? insets.top + 5 : insets.top + (isClassSelector ? Spacing.sm : Spacing.md),
-        paddingBottom: isLandscape ? 5 : 4,
-        height: isLandscape ? 100 : undefined,
+        paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.sm,
+        paddingBottom: isLandscape ? 2 : 0,
+        height: isLandscape ? 100 : insets.top + 105,
         flexDirection: isLandscape ? "row" : "column",
-        justifyContent: isLandscape ? "space-between" : "center",
+        justifyContent: "center",
         alignItems: "center",
       }
     ]}>
@@ -37,11 +37,15 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.background,
     paddingHorizontal: Spacing.lg,
     alignItems: "center",
+    justifyContent: "flex-end",
     borderBottomWidth: 1,
     borderBottomColor: JiguuColors.border,
     zIndex: 100,
   },
   logoContainer: {
-    marginBottom: 0,
+    height: 90,
+    justifyContent: "flex-end",
+    alignItems: "center",
+    paddingBottom: 2,
   },
 });
