@@ -106,6 +106,23 @@ import { c7Hist5 } from "./content/c7-hist-5";
 import { c7Hist6 } from "./content/c7-hist-6";
 import { c7Hist7 } from "./content/c7-hist-7";
 import { c7Hist8 } from "./content/c7-hist-8";
+import { c7Geo1 } from "./content/c7-geo-1";
+import { c7Geo2 } from "./content/c7-geo-2";
+import { c7Geo3 } from "./content/c7-geo-3";
+import { c7Geo4 } from "./content/c7-geo-4";
+import { c7Geo5 } from "./content/c7-geo-5";
+import { c7Geo6 } from "./content/c7-geo-6";
+import { c7Geo7 } from "./content/c7-geo-7";
+import { c7Geo8 } from "./content/c7-geo-8";
+import { c7Civ1 } from "./content/c7-civ-1";
+import { c7Civ2 } from "./content/c7-civ-2";
+import { c7Civ3 } from "./content/c7-civ-3";
+import { c7Civ4 } from "./content/c7-civ-4";
+import { c7Civ5 } from "./content/c7-civ-5";
+import { c7Civ6 } from "./content/c7-civ-6";
+import { c7Civ7 } from "./content/c7-civ-7";
+import { c7Civ8 } from "./content/c7-civ-8";
+import { c7Civ9 } from "./content/c7-civ-9";
 import { c7Sci9 } from "./content/c7-sci-9";
 import { c7Sci10 } from "./content/c7-sci-10";
 import { c7Sci11 } from "./content/c7-sci-11";
@@ -276,6 +293,23 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c7-hist-6": c7Hist6,
   "c7-hist-7": c7Hist7,
   "c7-hist-8": c7Hist8,
+  "c7-geo-1": c7Geo1,
+  "c7-geo-2": c7Geo2,
+  "c7-geo-3": c7Geo3,
+  "c7-geo-4": c7Geo4,
+  "c7-geo-5": c7Geo5,
+  "c7-geo-6": c7Geo6,
+  "c7-geo-7": c7Geo7,
+  "c7-geo-8": c7Geo8,
+  "c7-civ-1": c7Civ1,
+  "c7-civ-2": c7Civ2,
+  "c7-civ-3": c7Civ3,
+  "c7-civ-4": c7Civ4,
+  "c7-civ-5": c7Civ5,
+  "c7-civ-6": c7Civ6,
+  "c7-civ-7": c7Civ7,
+  "c7-civ-8": c7Civ8,
+  "c7-civ-9": c7Civ9,
   "c7-sci-9": c7Sci9,
   "c7-sci-10": c7Sci10,
   "c7-sci-11": c7Sci11,

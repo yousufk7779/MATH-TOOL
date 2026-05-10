@@ -146,6 +146,19 @@ export default function QuizScreen() {
                         <ThemedText style={styles.startButtonText}>Science Quiz</ThemedText>
                     </LinearGradient>
                 </Pressable>
+
+                {className === "Class 7" && (
+                    <Pressable delayPressIn={0} style={styles.subjectButton} onPress={() => startQuiz("Social Science")}>
+                        <LinearGradient
+                            colors={JiguuColors.gradients.purple as any}
+                            start={{ x: 0, y: 0 }}
+                            end={{ x: 1, y: 0 }}
+                            style={styles.startButton}
+                        >
+                            <ThemedText style={styles.startButtonText}>Social Science Quiz</ThemedText>
+                        </LinearGradient>
+                    </Pressable>
+                )}
             </View>
 
             <View style={styles.historyContainer}>

@@ -5,6 +5,7 @@ import easyScienceC8Mcqs from "../data/easy_mcqs_science_c8.json";
 import easyScienceC7Mcqs from "../data/easy_mcqs_science_c7.json";
 import easyMathC9Mcqs from "../data/easy_mcqs_math_c9.json";
 import easyMathC8Mcqs from "../data/easy_mcqs_math_c8.json";
+import easySstC7Mcqs from "../data/easy_mcqs_sst_c7.json";
 
 export interface QuizQuestion {
     id: string;
@@ -30,6 +31,10 @@ export const generateQuizAsync = async (questionCount: number = 10, subject: str
         if (subject === "Science") {
             const scienceMcqs = easyScienceC7Mcqs as QuizQuestion[];
             return shuffleArray(scienceMcqs).slice(0, questionCount);
+        }
+        if (subject === "Social Science") {
+            const sstMcqs = easySstC7Mcqs as QuizQuestion[];
+            return shuffleArray(sstMcqs).slice(0, questionCount);
         }
         return [];
     }
