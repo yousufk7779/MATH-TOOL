@@ -11,6 +11,7 @@ import { ParsedText } from "@/components/ParsedText";
 import { generateQuizAsync, QuizQuestion } from "@/utils/quiz-engine";
 import { getHomeRoute } from "@/utils/navigation-utils";
 import { saveQuizResult, getQuizHistory, QuizResult } from "@/utils/quiz-storage";
+import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
 type QuizState = "menu" | "active" | "result";
 
@@ -125,7 +126,7 @@ export default function QuizScreen() {
             </View>
 
             <View style={styles.subjectButtonsContainer}>
-                <Pressable delayPressIn={0} style={styles.subjectButton} onPress={() => startQuiz("Mathematics")}>
+                <Pressable style={styles.subjectButton} onPress={() => startQuiz("Mathematics")}>
                     <LinearGradient
                         colors={JiguuColors.gradients.pink as any}
                         start={{ x: 0, y: 0 }}
@@ -136,7 +137,7 @@ export default function QuizScreen() {
                     </LinearGradient>
                 </Pressable>
 
-                <Pressable delayPressIn={0} style={styles.subjectButton} onPress={() => startQuiz("Science")}>
+                <Pressable style={styles.subjectButton} onPress={() => startQuiz("Science")}>
                     <LinearGradient
                         colors={JiguuColors.gradients.blue as any}
                         start={{ x: 0, y: 0 }}
@@ -148,7 +149,7 @@ export default function QuizScreen() {
                 </Pressable>
 
                 {className === "Class 7" && (
-                    <Pressable delayPressIn={0} style={styles.subjectButton} onPress={() => startQuiz("Social Science")}>
+                    <Pressable style={styles.subjectButton} onPress={() => startQuiz("Social Science")}>
                         <LinearGradient
                             colors={JiguuColors.gradients.purple as any}
                             start={{ x: 0, y: 0 }}
@@ -199,7 +200,7 @@ export default function QuizScreen() {
                     <ThemedText style={styles.progressText}>
                         Question {currentQuestionIndex + 1}/{questions.length}
                     </ThemedText>
-                    <Pressable delayPressIn={0} onPress={handleQuitQuiz} style={styles.quitButton}>
+                    <Pressable onPress={handleQuitQuiz} style={styles.quitButton}>
                         <Feather name="x-circle" size={24} color={JiguuColors.triangles} />
                     </Pressable>
                 </View>
@@ -217,7 +218,6 @@ export default function QuizScreen() {
                         return (
                             <Pressable
                                 key={index}
-                                delayPressIn={0}
                                 style={[
                                     styles.optionButton,
                                     isSelected && styles.optionSelected,
@@ -286,7 +286,7 @@ export default function QuizScreen() {
 
                         <ThemedText style={styles.resultFeedback}>{feedback}</ThemedText>
 
-                        <Pressable delayPressIn={0} style={[styles.startButton, { backgroundColor: JiguuColors.accent2, width: '100%', borderRadius: BorderRadius.md }]} onPress={resetQuiz}>
+                        <Pressable style={[styles.startButton, { backgroundColor: JiguuColors.accent2, width: '100%', borderRadius: BorderRadius.md }]} onPress={resetQuiz}>
                             <Feather name="refresh-cw" size={20} color="#FFF" style={{ marginRight: 8 }} />
                             <ThemedText style={styles.startButtonText}>Try Again</ThemedText>
                         </Pressable>

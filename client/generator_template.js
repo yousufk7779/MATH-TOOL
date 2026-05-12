@@ -62,12 +62,12 @@ const mcqQuizScript = `
 <div id="quiz-modal" style="display:none; position:absolute; left:0; width:100%; z-index:9999; justify-content:center; align-items:center; padding-bottom: 50px;">
    <div style="background: linear-gradient(135deg, #2b2b36, #1a1a2e); padding: 20px; border-radius: 16px; border: 2px solid #6C63FF; text-align: center; color: white; width: 80%; max-width: 350px; box-shadow: 0 5px 20px rgba(0,0,0,0.8);">
       <h2 style="margin:0; font-family:'Nunito',sans-serif; color: #4CAF50; font-size: 22px;">🎉 Quiz Completed!</h2>
-      <p id="quiz-score" style="font-size: 22px; font-weight: bold; margin: 5px 0; color: #fff;"></p>
+      <p id="quiz-score" style="font-size: 22px; font-weight: normal; margin: 5px 0; color: #fff;"></p>
       <div style="display:flex; justify-content:space-around; margin: 10px 0;">
-         <div style="color:#4CAF50; font-weight:bold; font-size: 14px;">✅ Correct<br><span id="quiz-correct" style="font-size:18px;">0</span></div>
-         <div style="color:#F44336; font-weight:bold; font-size: 14px;">❌ Wrong<br><span id="quiz-wrong" style="font-size:18px;">0</span></div>
+         <div style="color:#4CAF50; font-weight:normal; font-size: 14px;">✅ Correct<br><span id="quiz-correct" style="font-size:18px;">0</span></div>
+         <div style="color:#F44336; font-weight:normal; font-size: 14px;">❌ Wrong<br><span id="quiz-wrong" style="font-size:18px;">0</span></div>
       </div>
-      <button id="quiz-close" style="margin-top: 5px; padding: 10px 24px; border: none; border-radius: 8px; background: #6C63FF; color: white; font-weight: bold; font-size: 14px; cursor: pointer;">Play Again 🔄</button>
+      <button id="quiz-close" style="margin-top: 5px; padding: 10px 24px; border: none; border-radius: 8px; background: #6C63FF; color: white; font-weight: normal; font-size: 14px; cursor: pointer;">Play Again 🔄</button>
    </div>
 </div>
 <script>

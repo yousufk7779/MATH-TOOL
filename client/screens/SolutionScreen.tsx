@@ -144,7 +144,6 @@ const TabButton = memo(({ title, isActive, onPress, gradient, textStyle }: TabBu
   const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6" || gradient[0] === "#FF1744" || gradient[0] === "#43A047";
   return (
     <Pressable
-      delayPressIn={0}
       style={({ pressed }) => [
         styles.tabButton,
         pressed && { opacity: 0.8 },
@@ -186,7 +185,6 @@ const SubTabButton = memo(({ title, isActive, onPress, gradient, textStyle }: Su
   const isGlossy = gradient[0] === "#FFA726" || gradient[0] === "#7CFF00" || gradient[0] === "#FF4DA6" || gradient[0] === "#FF1744" || gradient[0] === "#43A047";
   return (
     <Pressable
-      delayPressIn={0}
       style={({ pressed }) => [
         styles.subTabButton,
         pressed && { opacity: 0.8 },
@@ -246,7 +244,7 @@ function SolutionScreen() {
   const isScienceSection = chapterId.startsWith("sci-") || !!chapterId.match(/^c[789]-sci-/);
   const isMathSection = !isScienceSection && !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
   
-  const hwTitleStyle = { fontFamily: "NotoSans_700Bold", color: "#fff" };
+  const hwTitleStyle = { fontFamily: "NotoSans_400Regular", color: "#fff" };
 
   const scaledBody = { 
     ...Typography.body, 
@@ -321,11 +319,9 @@ function SolutionScreen() {
     setMountedSections(prev => prev[section] ? prev : { ...prev, [section]: true });
 
     if (section === "exercises" && exerciseSubSections.length > 0) {
-      if (!activeSubSection || !exerciseSubSections.includes(activeSubSection)) {
-        const first = exerciseSubSections[0];
-        setActiveSubSection(first);
-        setMountedSubSections(prev => prev[first] ? prev : { ...prev, [first]: true });
-      }
+      const first = exerciseSubSections[0];
+      setActiveSubSection(first);
+      setMountedSubSections(prev => prev[first] ? prev : { ...prev, [first]: true });
     }
 
     if (section === "mcq") {
@@ -764,7 +760,7 @@ const styles = StyleSheet.create({
   tabContainer: { flexDirection: "row", marginBottom: Spacing.sm, marginHorizontal: Spacing.lg, backgroundColor: JiguuColors.surface, borderRadius: BorderRadius.full, padding: Spacing.xs, gap: Spacing.xs },
   tabButton: { flex: 1, height: 36, alignItems: "center", justifyContent: "center", borderRadius: BorderRadius.full, borderWidth: 1, borderColor: "transparent", overflow: 'hidden' },
   tabButtonGradient: { width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', borderRadius: BorderRadius.full },
-  tabText: { ...Typography.small, fontSize: 13, fontFamily: "NotoSans_700Bold", color: JiguuColors.textSecondary },
+  tabText: { ...Typography.small, fontSize: 13, fontFamily: "NotoSans_400Regular", color: JiguuColors.textSecondary },
   tabTextActive: { color: "#fff" },
   subTabScroll: { flex: 1 },
   subTabContainer: { paddingHorizontal: Spacing.lg, gap: Spacing.sm, alignItems: "center", justifyContent: "center", flexGrow: 1 },

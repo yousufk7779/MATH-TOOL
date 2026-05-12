@@ -171,6 +171,20 @@ import { c9Math8 } from "./content/c9-math-8";
 import { c9Math9 } from "./content/c9-math-9";
 import { c9Math10 } from "./content/c9-math-10";
 import { c9Math11 } from "./content/c9-math-11";
+import { c7Math1 } from "./content/c7-math-1";
+import { c7Math2 } from "./content/c7-math-2";
+import { c7Math3 } from "./content/c7-math-3";
+import { c7Math4 } from "./content/c7-math-4";
+import { c7Math5 } from "./content/c7-math-5";
+import { c7Math6 } from "./content/c7-math-6";
+import { c7Math7 } from "./content/c7-math-7";
+import { c7Math8 } from "./content/c7-math-8";
+import { c7Math9 } from "./content/c7-math-9";
+import { c7Math10 } from "./content/c7-math-10";
+import { c7Math11 } from "./content/c7-math-11";
+import { c7Math12 } from "./content/c7-math-12";
+import { c7Math13 } from "./content/c7-math-13";
+
 
 
 
@@ -189,6 +203,20 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c8-math-1": c8Math1,
   "c8-math-2": c8Math2,
   "c8-math-3": c8Math3,
+  "c7-math-1": c7Math1,
+  "c7-math-2": c7Math2,
+  "c7-math-3": c7Math3,
+  "c7-math-4": c7Math4,
+  "c7-math-5": c7Math5,
+  "c7-math-6": c7Math6,
+  "c7-math-7": c7Math7,
+  "c7-math-8": c7Math8,
+  "c7-math-9": c7Math9,
+  "c7-math-10": c7Math10,
+  "c7-math-11": c7Math11,
+  "c7-math-12": c7Math12,
+  "c7-math-13": c7Math13,
+
 
 
   "ch1": mathCh1,

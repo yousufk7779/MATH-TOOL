@@ -145,7 +145,7 @@ export const Typography = {
   button: {
     fontSize: 20,
     lineHeight: 24,
-    fontFamily: "NotoSans_700Bold",
+    fontFamily: "NotoSans_400Regular",
     letterSpacing: 0.8,
   },
   body: {

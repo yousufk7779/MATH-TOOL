@@ -29,9 +29,7 @@ export const mathCh3: ChapterContent = {
         { id: "exercise2", name: "Exercise 3.2", questions: [] },
         { id: "exercise3", name: "Exercise 3.3", questions: [] }
     ],
-    examples: [
-        { id: "examples", name: "Examples", questions: [] }
-    ],
+    examples: [],
     theorems: [],
 
     summary: [

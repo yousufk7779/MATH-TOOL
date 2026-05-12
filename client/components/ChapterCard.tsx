@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
   },
   number: {
     ...Typography.body,
-    fontFamily: "NotoSans_700Bold",
+    fontFamily: "NotoSans_400Regular",
     color: "#fff",
     fontSize: 16,
   },
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
   name: {
     ...Typography.body,
     color: "#fff",
-    fontFamily: "NotoSans_700Bold",
+    fontFamily: "NotoSans_400Regular",
     fontSize: 15,
     textTransform: 'uppercase', // Match SS style
   },

@@ -94,7 +94,6 @@ function QuickNotesScreen() {
               {notes.map((note) => (
                 <Pressable
                   key={note.id}
-                  delayPressIn={0}
                   style={[
                     styles.noteCard,
                     {
@@ -125,7 +124,6 @@ function QuickNotesScreen() {
         </ScrollView>
 
         <Pressable
-          delayPressIn={0}
           style={styles.fab}
           onPress={() => navigation.navigate("NoteEditor", { className })}
         >

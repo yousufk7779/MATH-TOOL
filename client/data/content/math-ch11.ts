@@ -27,9 +27,7 @@ export const mathCh11: ChapterContent = {
     exercises: [
         { id: "exercise1", name: "Exercise 11.1", questions: [] }
     ],
-    examples: [
-        { id: "examples", name: "Examples", questions: [] }
-    ],
+    examples: [],
     theorems: [],
     mcqs: easyMcqsCh11 as any, // Integrated easy MCQs
 
