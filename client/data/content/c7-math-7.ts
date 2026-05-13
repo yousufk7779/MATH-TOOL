@@ -131,6 +131,104 @@ export const c7Math7: ChapterContent = {
         </style>
         <div class="container">
             <div class="sol-card">
+                <div class="question-header">1. Convert the given fractional numbers to percents. <br/>(a) <span class="frac"><span class="num">1</span><span class="den">8</span></span> (b) <span class="frac"><span class="num">5</span><span class="den">4</span></span> (c) <span class="frac"><span class="num">3</span><span class="den">40</span></span> (d) <span class="frac"><span class="num">2</span><span class="den">7</span></span></div>
+                <div class="sol-body">
+                    <div class="sol-step"><b>(a) <span class="frac"><span class="num">1</span><span class="den">8</span></span></b></div>
+                    <div class="sol-step">=> <span class="frac"><span class="num">1</span><span class="den">8</span></span> &times; 100% = <span class="frac"><span class="num">100</span><span class="den">8</span></span>%</div>
+                    <div class="sol-step">= 12.5%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">12.5%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(b) <span class="frac"><span class="num">5</span><span class="den">4</span></span></b></div>
+                    <div class="sol-step">=> <span class="frac"><span class="num">5</span><span class="den">4</span></span> &times; 100% = 5 &times; 25%</div>
+                    <div class="sol-step">= 125%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">125%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(c) <span class="frac"><span class="num">3</span><span class="den">40</span></span></b></div>
+                    <div class="sol-step">=> <span class="frac"><span class="num">3</span><span class="den">40</span></span> &times; 100% = <span class="frac"><span class="num">300</span><span class="den">40</span></span>%</div>
+                    <div class="sol-step">=> <span class="frac"><span class="num">30</span><span class="den">4</span></span>% = 7.5%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">7.5%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(d) <span class="frac"><span class="num">2</span><span class="den">7</span></span></b></div>
+                    <div class="sol-step">=> <span class="frac"><span class="num">2</span><span class="den">7</span></span> &times; 100% = <span class="frac"><span class="num">200</span><span class="den">7</span></span>%</div>
+                    <div class="sol-step">= 28<span class="frac"><span class="num">4</span><span class="den">7</span></span>%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">28.57% (approx)</span></div>
+                </div>
+            </div>
+
+            <div class="sol-card">
+                <div class="question-header">2. Convert the given decimal fractions to per cents. <br/>(a) 0.65 (b) 2.1 (c) 0.02 (d) 12.35</div>
+                <div class="sol-body">
+                    <div class="sol-step"><b>(a) 0.65</b></div>
+                    <div class="sol-step">=> 0.65 &times; 100% = 65%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">65%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(b) 2.1</b></div>
+                    <div class="sol-step">=> 2.1 &times; 100% = 210%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">210%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(c) 0.02</b></div>
+                    <div class="sol-step">=> 0.02 &times; 100% = 2%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">2%</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b>(d) 12.35</b></div>
+                    <div class="sol-step">=> 12.35 &times; 100% = 1235%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">1235%</span></div>
+                </div>
+            </div>
+
+            <div class="sol-card">
+                <div class="question-header">3. Estimate what part of the figures is coloured and hence find the per cent which is coloured.</div>
+                <div class="sol-body">
+                    <div class="sol-step"><b>(i) Figure (i):</b></div>
+                    <div class="diagram-container">
+                        <svg width="100%" height="200" viewBox="0 0 300 200">
+                            <circle cx="150" cy="100" r="70" fill="none" stroke="#fff" stroke-width="2" />
+                            <path d="M 150 100 L 150 30 A 70 70 0 0 1 220 100 Z" fill="#FFA726" opacity="0.8" />
+                            <line x1="150" y1="30" x2="150" y2="170" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <line x1="80" y1="100" x2="220" y2="100" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <text x="150" y="190" fill="#FFA726" font-size="14" font-weight="bold" text-anchor="middle">(i)</text>
+                        </svg>
+                    </div>
+                    <div class="sol-step">=> Coloured part = <span class="frac"><span class="num">1</span><span class="den">4</span></span></div>
+                    <div class="sol-step">=> Percentage = <span class="frac"><span class="num">1</span><span class="den">4</span></span> &times; 100% = 25%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">25%</span></div>
+
+                    <div class="sol-step" style="margin-top: 25px;"><b>(ii) Figure (ii):</b></div>
+                    <div class="diagram-container">
+                        <svg width="100%" height="200" viewBox="0 0 300 200">
+                            <circle cx="150" cy="100" r="70" fill="none" stroke="#fff" stroke-width="2" />
+                            <path d="M 150 100 L 150 30 A 70 70 0 1 1 108.8 156.6 Z" fill="#FFA726" opacity="0.8" />
+                            <line x1="150" y1="100" x2="150" y2="30" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <line x1="150" y1="100" x2="216.6" y2="78.4" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <line x1="150" y1="100" x2="191.1" y2="156.6" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <line x1="150" y1="100" x2="108.8" y2="156.6" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <line x1="150" y1="100" x2="83.4" y2="78.4" stroke="#fff" stroke-width="1" stroke-dasharray="4" />
+                            <text x="150" y="190" fill="#FFA726" font-size="14" font-weight="bold" text-anchor="middle">(ii)</text>
+                        </svg>
+                    </div>
+                    <div class="sol-step">=> Coloured part = <span class="frac"><span class="num">3</span><span class="den">5</span></span></div>
+                    <div class="sol-step">=> Percentage = <span class="frac"><span class="num">3</span><span class="den">5</span></span> &times; 100% = 3 &times; 20% = 60%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">60%</span></div>
+
+                    <div class="sol-step" style="margin-top: 25px;"><b>(iii) Figure (iii):</b></div>
+                    <div class="diagram-container">
+                        <svg width="100%" height="200" viewBox="0 0 300 200">
+                            <circle cx="150" cy="100" r="70" fill="none" stroke="#fff" stroke-width="2" />
+                            <path d="M 150 100 L 150 30 A 70 70 0 0 1 199.5 149.5 L 150 100 Z" fill="#FFA726" opacity="0.8" />
+                            <line x1="150" y1="30" x2="150" y2="170" stroke="#fff" stroke-width="1" stroke-dasharray="2" />
+                            <line x1="80" y1="100" x2="220" y2="100" stroke="#fff" stroke-width="1" stroke-dasharray="2" />
+                            <line x1="100.5" y1="50.5" x2="199.5" y2="149.5" stroke="#fff" stroke-width="1" stroke-dasharray="2" />
+                            <line x1="199.5" y1="50.5" x2="100.5" y2="149.5" stroke="#fff" stroke-width="1" stroke-dasharray="2" />
+                            <text x="150" y="190" fill="#FFA726" font-size="14" font-weight="bold" text-anchor="middle">(iii)</text>
+                        </svg>
+                    </div>
+                    <div class="sol-step">=> Coloured part = <span class="frac"><span class="num">3</span><span class="den">8</span></span></div>
+                    <div class="sol-step">=> Percentage = <span class="frac"><span class="num">3</span><span class="den">8</span></span> &times; 100% = <span class="frac"><span class="num">300</span><span class="den">8</span></span>% = 37.5%</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">37.5%</span></div>
+                </div>
+            </div>
+
+            <div class="sol-card">
                 <div class="question-header">4. Find: <br/>(a) 15% of 250 <br/>(b) 1% of 1 hour <br/>(c) 20% of Rs 2500 <br/>(d) 75% of 1 kg</div>
                 <div class="sol-body">
                     <div class="sol-step">(a) 15% of 250 = (<span class="frac"><span class="num">15</span><span class="den">100</span></span>) &times; 250 = 37.5</div>
@@ -181,7 +279,7 @@ export const c7Math7: ChapterContent = {
             </div>
 
             <div class="sol-card">
-                <div class="question-header">9. Meeta saves ₹ 400 from her salary. If this is 10% of her salary. What is her salary?</div>
+                <div class="question-header">9. Sarita saves ₹ 400 from her salary. If this is 10% of her salary. What is her salary?</div>
                 <div class="sol-body">
                     <div class="sol-step">=> 10% of Salary = Rs 400</div>
                     <div class="sol-step">=> Salary = <span class="frac"><span class="num">400 &times; 100</span><span class="den">10</span></span> = Rs 4000</div>
@@ -271,9 +369,20 @@ export const c7Math7: ChapterContent = {
             <div class="sol-card">
                 <div class="question-header">7. (i) Chalk contains calcium, carbon and oxygen in the ratio 10 : 3 : 12. Find the percentage of carbon in chalk. <br/>(ii) If in a stick of chalk, carbon is 3g, what is the weight of the chalk stick?</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(i) Percentage of Carbon:</b> Total parts = 25. Percentage = (<span class="frac"><span class="num">3</span><span class="den">25</span></span>) &times; 100 = 12%</div>
+                    <div class="sol-step"><b>(i) Percentage of Carbon:</b> Total parts = 10 + 3 + 12 = 25. Percentage = (<span class="frac"><span class="num">3</span><span class="den">25</span></span>) &times; 100 = 12%</div>
                     <div class="sol-step"><b>(ii) Weight of chalk stick:</b> 12% = 3g. Weight = <span class="frac"><span class="num">3 &times; 100</span><span class="den">12</span></span> = 25g</div>
                     <div class="sol-step">Result: <span class="ans-highlight">(i) 12%, (ii) 25g</span></div>
+                </div>
+            </div>
+
+            <div class="sol-card">
+                <div class="question-header">8. Amina buys a book for ₹ 275 and sells it at a loss of 15%. How much does she sell it for?</div>
+                <div class="sol-body">
+                    <div class="sol-step">=> Cost Price (CP) = ₹ 275</div>
+                    <div class="sol-step">=> Loss Percentage = 15%</div>
+                    <div class="sol-step">=> Loss Amount = 15% of 275 = <span class="frac"><span class="num">15 &times; 275</span><span class="den">100</span></span> = ₹ 41.25</div>
+                    <div class="sol-step">=> Selling Price (SP) = CP - Loss = 275 - 41.25 = ₹ 233.75</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">₹ 233.75</span></div>
                 </div>
             </div>
 
@@ -300,6 +409,19 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">=> SI = 45, T = 1, R = 9%</div>
                     <div class="sol-step">=> Principal (P) = <span class="frac"><span class="num">SI &times; 100</span><span class="den">R &times; T</span></span> = <span class="frac"><span class="num">45 &times; 100</span><span class="den">9 &times; 1</span></span> = ₹500</div>
                     <div class="sol-step">Result: <span class="ans-highlight">₹500</span></div>
+                </div>
+            </div>
+
+            <div class="sol-card">
+                <div class="question-header">12. Aamina got a toy from the market of Rs. 340 and she sell it to her friend for Rs 450. How much did she gain and what percent?</div>
+                <div class="sol-body">
+                    <div class="sol-step">=> Cost Price (CP) = Rs 340</div>
+                    <div class="sol-step">=> Selling Price (SP) = Rs 450</div>
+                    <div class="sol-step">=> Gain = SP - CP = 450 - 340 = Rs 110</div>
+                    <div class="sol-step">=> Gain Percentage = (<span class="frac"><span class="num">Gain</span><span class="den">CP</span></span>) &times; 100</div>
+                    <div class="sol-step">=> (<span class="frac"><span class="num">110</span><span class="den">340</span></span>) &times; 100 = <span class="frac"><span class="num">1100</span><span class="den">34</span></span>%</div>
+                    <div class="sol-step">=> 32.35% (approx)</div>
+                    <div class="sol-step">Result: <span class="ans-highlight">Gain: Rs 110, Percentage: 32.35%</span></div>
                 </div>
             </div>
         </div>

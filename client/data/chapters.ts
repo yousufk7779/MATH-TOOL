@@ -89,7 +89,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c7-math-6", number: 6, name: "The Triangle and its Properties", color: "#F06292" },
       { id: "c7-math-7", number: 7, name: "Comparing Quantities", color: "#FFA726" },
       { id: "c7-math-8", number: 8, name: "Rational Numbers", color: "#FF6D00" },
-      { id: "c7-math-9", number: 9, name: "Perimeter and Area", color: "#0091EA" },
+      { id: "c7-math-9", number: 9, name: "Perimeter and Area", color: "#D81B60" },
       { id: "c7-math-10", number: 10, name: "Algebraic Expressions", color: "#FFD600" },
       { id: "c7-math-11", number: 11, name: "Exponents and Powers", color: "#00D4FF" },
       { id: "c7-math-12", number: 12, name: "Symmetry", color: "#00BFA5" },
