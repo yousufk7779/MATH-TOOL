@@ -91,7 +91,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c7-math-8", number: 8, name: "Rational Numbers", color: "#FF6D00" },
       { id: "c7-math-9", number: 9, name: "Perimeter and Area", color: "#D81B60" },
       { id: "c7-math-10", number: 10, name: "Algebraic Expressions", color: "#FFD600" },
-      { id: "c7-math-11", number: 11, name: "Exponents and Powers", color: "#00D4FF" },
+      { id: "c7-math-11", number: 11, name: "Exponents and Powers", color: "#FF4081" },
       { id: "c7-math-12", number: 12, name: "Symmetry", color: "#00BFA5" },
       { id: "c7-math-13", number: 13, name: "Visualising Solid Shapes", color: "#E040FB" },
     ]
@@ -235,6 +235,12 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (redTargetedIds.includes(chapterId)) {
     return JiguuColors.gradients.premiumOrange as string[];
   }
+
+  // Targeted theme color replacement for Class 7 Math Chapters 10-13
+  if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
+  if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
+  if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;
+  if (chapterId === "c7-math-13") return JiguuColors.gradients.magenta;
 
   const gradientList = Object.values(JiguuColors.gradients) as string[][];
   

@@ -34,7 +34,6 @@ export const c7Math13: ChapterContent = {
             .point-item::before { content: '•'; color: #E040FB; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 13: Visualising Solids Overview</h2>
             <p class="content-text">Bridge the gap between 2D drawings and 3D reality through visualization and geometry.</p>
             <div class="point-box">
                 <div class="point-item">Faces, Edges, and Vertices are the building blocks.</div>
@@ -47,76 +46,172 @@ export const c7Math13: ChapterContent = {
         "ex13-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(224, 64, 251, 0.1); color: #F8BBD0; padding: 12px; border-radius: 8px; border-left: 6px solid #E040FB; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #E040FB; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #E040FB; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(224, 64, 251, 0.08); padding: 20px; border-bottom: 1px solid rgba(224, 64, 251, 0.2); border-left: 4px solid #E040FB; color: #E040FB; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
+            .sol-body { padding: 20px; background: #000; text-align: left; }
+            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #E040FB; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #E040FB; font-weight: bold; }
+            .ans-highlight { color: #F48FB1; font-weight: bold; }
         </style>
         <div class="container">
-            <div class="question">1. Identify the nets which can be used to make cubes (cut out copies of the nets and try it).</div>
-            <div class="solution">
-                <div class="sol-step">=> A net that can form a cube must have exactly 6 square faces.</div>
-                <div class="sol-step">=> When folded, no two faces should overlap.</div>
-                <div class="sol-step">=> Every face must have an opposite face.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Nets with 1-4-1 or 2-3-1 patterns are valid.</span></div>
+
+            <!-- Q1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Identify the nets which can be used to make cubes (cut out copies of the nets and try it):</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (i) Two squares on one side will overlap. <span class="ans-highlight">No</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (ii) Staggered 3-3 net. <span class="ans-highlight">Yes</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (iii) 2-2-2 Staircase net. <span class="ans-highlight">Yes</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (iv) 1-4-1 Cross net variation. <span class="ans-highlight">Yes</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (v) Two squares on same side will overlap. <span class="ans-highlight">No</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (vi) 2-3-1 net. <span class="ans-highlight">Yes</span></div>
+                </div>
             </div>
 
-            <div class="question">2. Dice are cubes where the numbers on the opposite faces must total 7. Fill in the missing dots on the net.</div>
-            <div class="solution">
-                <div class="sol-step">=> Property: Sum of dots on opposite faces = 7</div>
-                <div class="sol-step">=> If one face is 1, opposite face = 7 - 1 = 6</div>
-                <div class="sol-step">=> If one face is 2, opposite face = 7 - 2 = 5</div>
-                <div class="sol-step">=> If one face is 3, opposite face = 7 - 3 = 4</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Opposite pairs are (1,6), (2,5), and (3,4).</span></div>
+            <!-- Q2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Dice numbers on opposite faces must total 7. Fill in the blanks:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> <b>Net 1:</b> Blanks are <span class="ans-highlight">3</span> (opposite 4), <span class="ans-highlight">2</span> (opposite 5), and <span class="ans-highlight">1</span> (opposite 6).</div>
+                    <div class="sol-step"><span class="step-marker">=></span> <b>Net 2:</b> Blanks are <span class="ans-highlight">6</span> (opposite 1), <span class="ans-highlight">5</span> (opposite 2), and <span class="ans-highlight">4</span> (opposite 3).</div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Can this be a net for a die? (1,2,3,4,5,6 in staircase)</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> <span class="ans-highlight">No</span>. Opposites are (1,4) sum 5, and (3,6) sum 9. Only (2,5) totals 7.</div>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Complete the net in two ways (Given: 3 squares in a row):</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> Way 1: Make a <span class="ans-highlight">T-shape (1-4-1)</span>.</div>
+                    <div class="sol-step"><span class="step-marker">=></span> Way 2: Make a <span class="ans-highlight">Staircase (3-3)</span>.</div>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Match the nets with solids:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (a) Cube: <span class="ans-highlight">(ii)</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (b) Cylinder: <span class="ans-highlight">(iii)</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (c) Cone: <span class="ans-highlight">(iv)</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (d) Pyramid: <span class="ans-highlight">(i)</span></div>
+                </div>
+            </div>
+        </div>
+        `,
+        "ex13-2": `
+        <style>
+            .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(224, 64, 251, 0.08); padding: 20px; border-bottom: 1px solid rgba(224, 64, 251, 0.2); border-left: 4px solid #E040FB; color: #E040FB; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
+            .sol-body { padding: 20px; background: #000; text-align: left; }
+            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #E040FB; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #E040FB; font-weight: bold; }
+            .ans-highlight { color: #F48FB1; font-weight: bold; }
+        </style>
+        <div class="container">
+            <!-- Q1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Make isometric sketches:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> Draw edges on dot paper at <span class="ans-highlight">30° angles</span> for depth and horizontal lines.</div>
+                </div>
+            </div>
+            <!-- Q2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Three isometric sketches of cuboid 5x3x2:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> Change orientations: <span class="ans-highlight">(5L, 3W, 2H), (3L, 2W, 5H), or (2L, 5W, 3H)</span>.</div>
+                </div>
+            </div>
+            <!-- Q3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Three cubes of 2cm side by side:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> Result is a cuboid of <span class="ans-highlight">6cm x 2cm x 2cm</span>.</div>
+                </div>
+            </div>
+            <!-- Q4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Oblique sketches for isometric shapes:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> Draw the <span class="ans-highlight">front face as a square/rectangle</span> and depth at 45°.</div>
+                </div>
             </div>
         </div>
         `,
         "ex13-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(224, 64, 251, 0.1); color: #F8BBD0; padding: 12px; border-radius: 8px; border-left: 6px solid #E040FB; font-weight: bold; margin-top: 25px; margin-bottom: 15px; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #E040FB; margin-bottom: 25px; }
-            .ans-highlight { color: #E040FB; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(224, 64, 251, 0.08); padding: 20px; border-bottom: 1px solid rgba(224, 64, 251, 0.2); border-left: 4px solid #E040FB; color: #E040FB; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
+            .sol-body { padding: 20px; background: #000; text-align: left; }
+            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #E040FB; font-weight: bold; font-size: 1.1em; }
+            .ans-highlight { color: #F48FB1; font-weight: bold; }
         </style>
         <div class="container">
-            <div class="question">1. What cross-section do you get when you give a (a) vertical cut (b) horizontal cut to the following solids? <br/>(i) A brick (ii) A round apple (iii) A circular pipe</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) A brick</b></div>
-                <div class="sol-step">=> Vertical cut: Rectangle</div>
-                <div class="sol-step">=> Horizontal cut: Rectangle</div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) A round apple</b></div>
-                <div class="sol-step">=> Vertical cut: Circle</div>
-                <div class="sol-step">=> Horizontal cut: Circle</div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) A circular pipe</b></div>
-                <div class="sol-step">=> Vertical cut: Rectangle (along the length)</div>
-                <div class="sol-step">=> Horizontal cut: Circle</div>
-                <div class="sol-step">Result: <span class="ans-highlight">See details above</span></div>
+            <div class="sol-card">
+                <div class="question-header">1. Vertical and Horizontal cross-sections:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (a) Brick: <span class="ans-highlight">Rectangle, Rectangle</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (b) Apple: <span class="ans-highlight">Circle, Circle</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (c) Die: <span class="ans-highlight">Square, Square</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (d) Pipe: <span class="ans-highlight">Rectangle, Circle</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (e) Cone: <span class="ans-highlight">Triangle, Circle</span></div>
+                </div>
             </div>
         </div>
         `,
         "ex13-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(224, 64, 251, 0.1); color: #F8BBD0; padding: 12px; border-radius: 8px; border-left: 6px solid #E040FB; font-weight: bold; margin-top: 25px; margin-bottom: 15px; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #E040FB; margin-bottom: 25px; }
-            .ans-highlight { color: #E040FB; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(224, 64, 251, 0.08); padding: 20px; border-bottom: 1px solid rgba(224, 64, 251, 0.2); border-left: 4px solid #E040FB; color: #E040FB; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
+            .sol-body { padding: 20px; background: #000; text-align: left; }
+            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #E040FB; font-weight: bold; font-size: 1.1em; }
+            .ans-highlight { color: #F48FB1; font-weight: bold; }
         </style>
         <div class="container">
-            <div class="question">1. A bulb is kept burning just right above the following solids. Name the shape of the shadows obtained in each case. <br/>(i) A ball (ii) A cylindrical pipe (iii) A book</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) A ball</b></div>
-                <div class="sol-step">=> Light from top project a circular boundary.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Circle</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) A cylindrical pipe</b></div>
-                <div class="sol-step">=> Light from top projects its side view.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Rectangle (or Line)</span></div>
+            <!-- Q1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Shadow shape with bulb above:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (i) Ball: <span class="ans-highlight">Circle</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (ii) Pipe: <span class="ans-highlight">Rectangle</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (iii) Book: <span class="ans-highlight">Rectangle</span></div>
+                </div>
+            </div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) A book</b></div>
-                <div class="sol-step">=> Light from top projects its rectangular cover.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Rectangle</span></div>
+            <!-- Q2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Solids matching each shadow:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (i) Circle: <span class="ans-highlight">Football, Plate, Sphere</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (ii) Square: <span class="ans-highlight">Die, Cube</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (iii) Triangle: <span class="ans-highlight">Ice-cream cone, Pyramid</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (iv) Rectangle: <span class="ans-highlight">Brick, Duster, Book</span></div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="sol-card">
+                <div class="question-header">3. True or False:</div>
+                <div class="sol-body">
+                    <div class="sol-step"><span class="step-marker">=></span> (i) Cube can cast a rectangular shadow: <span class="ans-highlight">True</span></div>
+                    <div class="sol-step"><span class="step-marker">=></span> (ii) Cube can cast a hexagonal shadow: <span class="ans-highlight">True</span></div>
+                </div>
             </div>
         </div>
         `

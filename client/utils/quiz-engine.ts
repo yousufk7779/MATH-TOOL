@@ -5,6 +5,7 @@ import easyScienceC8Mcqs from "../data/easy_mcqs_science_c8.json";
 import easyScienceC7Mcqs from "../data/easy_mcqs_science_c7.json";
 import easyMathC9Mcqs from "../data/easy_mcqs_math_c9.json";
 import easyMathC8Mcqs from "../data/easy_mcqs_math_c8.json";
+import easyMathC7Mcqs from "../data/easy_mcqs_math_c7.json";
 import easySstC7Mcqs from "../data/easy_mcqs_sst_c7.json";
 
 export interface QuizQuestion {
@@ -28,6 +29,10 @@ const shuffleArray = <T>(array: T[]): T[] => {
 
 export const generateQuizAsync = async (questionCount: number = 10, subject: string = "Mathematics", className: string = "Class 10"): Promise<QuizQuestion[]> => {
     if (className === "Class 7") {
+        if (subject === "Mathematics") {
+            const mathMcqs = easyMathC7Mcqs as QuizQuestion[];
+            return shuffleArray(mathMcqs).slice(0, questionCount);
+        }
         if (subject === "Science") {
             const scienceMcqs = easyScienceC7Mcqs as QuizQuestion[];
             return shuffleArray(scienceMcqs).slice(0, questionCount);

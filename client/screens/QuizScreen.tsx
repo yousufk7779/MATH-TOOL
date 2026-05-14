@@ -10,7 +10,7 @@ import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/them
 import { ParsedText } from "@/components/ParsedText";
 import { generateQuizAsync, QuizQuestion } from "@/utils/quiz-engine";
 import { getHomeRoute } from "@/utils/navigation-utils";
-import { saveQuizResult, getQuizHistory, QuizResult } from "@/utils/quiz-storage";
+import { saveQuizResult } from "@/utils/quiz-storage";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
 type QuizState = "menu" | "active" | "result";
@@ -24,20 +24,9 @@ export default function QuizScreen() {
     const [questions, setQuestions] = useState<QuizQuestion[]>([]);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
-    const [history, setHistory] = useState<QuizResult[]>([]);
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     const [showAnswer, setShowAnswer] = useState(false);
     const [loading, setLoading] = useState(false);
-
-    // Load history on mount
-    useEffect(() => {
-        loadHistory();
-    }, []);
-
-    const loadHistory = async () => {
-        const data = await getQuizHistory();
-        setHistory(data);
-    };
 
     const startQuiz = useCallback(async (subject: string = "Mathematics") => {
         // Mathematics for Class 9 is now available
@@ -101,7 +90,6 @@ export default function QuizScreen() {
     const finishQuiz = async (finalScoreValue?: number) => {
         const finalScore = finalScoreValue !== undefined ? finalScoreValue : score;
         await saveQuizResult(finalScore, questions.length);
-        await loadHistory();
         setViewState("result");
     };
 
@@ -162,32 +150,7 @@ export default function QuizScreen() {
                 )}
             </View>
 
-            <View style={styles.historyContainer}>
-                <ThemedText style={styles.subtitle}>Recent Performance</ThemedText>
-                {history.length === 0 ? (
-                    <ThemedText style={styles.emptyText}>No quizzes taken yet.</ThemedText>
-                ) : (
-                    history.slice(0, 5).map((item) => (
-                        <View key={item.id} style={styles.historyItem}>
-                            <View>
-                                <ThemedText style={styles.historyScore}>
-                                    {item.score}/{item.totalQuestions}
-                                </ThemedText>
-                                <ThemedText style={styles.historyDate}>
-                                    {new Date(item.date).toLocaleDateString()}
-                                </ThemedText>
-                            </View>
-                            <View style={[
-                                styles.percentageBadge,
-                                { backgroundColor: item.percentage >= 70 ? JiguuColors.arithmetic : item.percentage >= 40 ? JiguuColors.polynomials : JiguuColors.triangles }
-                            ]}>
-                                <ThemedText style={styles.percentageText}>{item.percentage}%</ThemedText>
-                            </View>
-                        </View>
-                    ))
-                )}
             </View>
-        </View>
     );
 
     const renderActiveQuiz = () => {
@@ -361,54 +324,6 @@ const styles = StyleSheet.create({
         color: "#FFF",
         fontFamily: "NotoSans_400Regular",
     },
-    historyContainer: {
-        backgroundColor: JiguuColors.surface,
-        borderRadius: BorderRadius.md,
-        padding: Spacing.lg,
-    },
-    historyTitle: {
-        ...Typography.h4,
-        marginBottom: Spacing.lg,
-        color: JiguuColors.textPrimary,
-        fontFamily: "NotoSans_400Regular",
-    },
-    historyItem: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-        paddingVertical: Spacing.md,
-        borderBottomWidth: 1,
-        borderBottomColor: JiguuColors.border,
-    },
-    historyScore: {
-        ...Typography.h4,
-        color: JiguuColors.textPrimary,
-        fontFamily: "NotoSans_400Regular",
-    },
-    historyDate: {
-        ...Typography.caption,
-        color: JiguuColors.textSecondary,
-        fontFamily: "NotoSans_400Regular",
-    },
-    percentageBadge: {
-        paddingVertical: 4,
-        paddingHorizontal: 8,
-        borderRadius: 12,
-    },
-    percentageText: {
-        ...Typography.caption,
-        color: "#FFF",
-        fontFamily: "NotoSans_400Regular",
-    },
-    emptyText: {
-        ...Typography.body,
-        color: JiguuColors.textSecondary,
-        textAlign: "center",
-        fontStyle: "italic",
-        paddingVertical: Spacing.lg,
-        fontFamily: "NotoSans_400Regular",
-    },
-
     // Active Quiz Styles
     quizContainer: {
         flex: 1,

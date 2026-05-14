@@ -32,14 +32,13 @@ export const c7Math11: ChapterContent = {
     htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .section-title { color: #FF5722; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+            .section-title { color: #FF4081; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
             .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; }
-            .point-box { background: rgba(255, 87, 34, 0.05); border-left: 4px solid #FF5722; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
+            .point-box { background: rgba(255, 64, 129, 0.05); border-left: 4px solid #FF4081; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
             .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; }
-            .point-item::before { content: '•'; color: #FF5722; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
+            .point-item::before { content: '•'; color: #FF4081; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 11: Exponents Overview</h2>
             <p class="content-text">Master the language of large numbers and simplify complex expressions using exponential laws.</p>
             <div class="point-box">
                 <div class="point-item">Base and Exponent are the core components.</div>
@@ -52,13 +51,13 @@ export const c7Math11: ChapterContent = {
         "ex11-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 87, 34, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(255, 87, 34, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 64, 129, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 64, 129, 0.2); border-left: 4px solid #FF4081; color: #FF4081; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #FF5722; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #FF5722; font-weight: bold; }
-            .ans-highlight { color: #FFAB91; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FF4081; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FF4081; font-weight: bold; }
+            .ans-highlight { color: #F06292; font-weight: bold; }
         </style>
         <div class="container">
             <!-- Q1 -->
@@ -158,13 +157,13 @@ export const c7Math11: ChapterContent = {
         "ex11-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 87, 34, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(255, 87, 34, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 64, 129, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 64, 129, 0.2); border-left: 4px solid #FF4081; color: #FF4081; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #FF5722; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #FF5722; font-weight: bold; }
-            .ans-highlight { color: #FFAB91; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FF4081; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FF4081; font-weight: bold; }
+            .ans-highlight { color: #F06292; font-weight: bold; }
             .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 2px; }
             .frac > span { display: block; padding: 0 2px; }
             .frac span.top { border-bottom: 1px solid #fff; }
@@ -243,13 +242,13 @@ export const c7Math11: ChapterContent = {
         "ex11-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 87, 34, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(255, 87, 34, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 64, 129, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 64, 129, 0.2); border-left: 4px solid #FF4081; color: #FF4081; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #FF5722; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #FF5722; font-weight: bold; }
-            .ans-highlight { color: #FFAB91; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FF4081; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FF4081; font-weight: bold; }
+            .ans-highlight { color: #F06292; font-weight: bold; }
         </style>
         <div class="container">
             <!-- Q1 -->

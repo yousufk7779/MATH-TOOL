@@ -1,0 +1,522 @@
+[
+  {
+    "id": "mq7-1",
+    "question": "The sum of two negative integers is always:",
+    "options": ["(A) Positive", "(B) Negative", "(C) Zero", "(D) 1"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Integers"
+  },
+  {
+    "id": "mq7-2",
+    "question": "What is -10 + 10 equal to?",
+    "options": ["(A) 20", "(B) -20", "(C) 0", "(D) 1"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Integers"
+  },
+  {
+    "id": "mq7-3",
+    "question": "The additive inverse of -5 is:",
+    "options": ["(A) -5", "(B) 5", "(C) 0", "(D) 1"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Integers"
+  },
+  {
+    "id": "mq7-4",
+    "question": "Product of -3 and -4 is:",
+    "options": ["(A) -12", "(B) 12", "(C) -7", "(D) 7"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Integers"
+  },
+  {
+    "id": "mq7-5",
+    "question": "Which of the following is the identity for addition of integers?",
+    "options": ["(A) 1", "(B) 0", "(C) -1", "(D) None"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Integers"
+  },
+  {
+    "id": "mq7-6",
+    "question": "What is 1/2 of 10?",
+    "options": ["(A) 2", "(B) 5", "(C) 10", "(D) 20"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Fractions and Decimals"
+  },
+  {
+    "id": "mq7-7",
+    "question": "The reciprocal of 2/3 is:",
+    "options": ["(A) 3/2", "(B) -2/3", "(C) 1", "(D) 0"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Fractions and Decimals"
+  },
+  {
+    "id": "mq7-8",
+    "question": "0.1 x 0.1 is equal to:",
+    "options": ["(A) 0.1", "(B) 0.01", "(C) 1.1", "(D) 0.11"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Fractions and Decimals"
+  },
+  {
+    "id": "mq7-9",
+    "question": "Which is greater, 0.5 or 0.05?",
+    "options": ["(A) 0.5", "(B) 0.05", "(C) Both equal", "(D) None"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Fractions and Decimals"
+  },
+  {
+    "id": "mq7-10",
+    "question": "2/5 + 1/5 is equal to:",
+    "options": ["(A) 3/10", "(B) 3/5", "(C) 2/25", "(D) 1/5"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Fractions and Decimals"
+  },
+  {
+    "id": "mq7-11",
+    "question": "The difference between the highest and lowest observation is called:",
+    "options": ["(A) Mean", "(B) Median", "(C) Mode", "(D) Range"],
+    "correctAnswer": "D",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Data Handling"
+  },
+  {
+    "id": "mq7-12",
+    "question": "The most frequent observation in a data set is:",
+    "options": ["(A) Mean", "(B) Median", "(C) Mode", "(D) Range"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Data Handling"
+  },
+  {
+    "id": "mq7-13",
+    "question": "The middle value of a data set arranged in order is:",
+    "options": ["(A) Mean", "(B) Median", "(C) Mode", "(D) Range"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Data Handling"
+  },
+  {
+    "id": "mq7-14",
+    "question": "Probability of an impossible event is:",
+    "options": ["(A) 1", "(B) 0", "(C) 1/2", "(D) Infinite"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Data Handling"
+  },
+  {
+    "id": "mq7-15",
+    "question": "A coin is tossed. What is the probability of getting a Head?",
+    "options": ["(A) 1", "(B) 0", "(C) 1/2", "(D) 1/4"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Data Handling"
+  },
+  {
+    "id": "mq7-16",
+    "question": "If x + 3 = 10, then x is:",
+    "options": ["(A) 13", "(B) 7", "(C) 30", "(D) 3"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Simple Equations"
+  },
+  {
+    "id": "mq7-17",
+    "question": "The solution of 2m = 10 is:",
+    "options": ["(A) 5", "(B) 20", "(C) 12", "(D) 8"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Simple Equations"
+  },
+  {
+    "id": "mq7-18",
+    "question": "Value of p in p/4 = 5 is:",
+    "options": ["(A) 1.25", "(B) 20", "(C) 9", "(D) 1"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Simple Equations"
+  },
+  {
+    "id": "mq7-19",
+    "question": "If 3n - 2 = 46, then n is:",
+    "options": ["(A) 14", "(B) 15", "(C) 16", "(D) 18"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Simple Equations"
+  },
+  {
+    "id": "mq7-20",
+    "question": "Which is a linear equation in one variable?",
+    "options": ["(A) x + y = 5", "(B) x\u00b2 + 1 = 2", "(C) 2x + 3 = 7", "(D) x + y + z = 0"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Simple Equations"
+  },
+  {
+    "id": "mq7-21",
+    "question": "An angle which is exactly 90\u00b0 is called:",
+    "options": ["(A) Acute", "(B) Obtuse", "(C) Right", "(D) Reflex"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Lines and Angles"
+  },
+  {
+    "id": "mq7-22",
+    "question": "Two angles are supplementary if their sum is:",
+    "options": ["(A) 90\u00b0", "(B) 180\u00b0", "(C) 270\u00b0", "(D) 360\u00b0"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Lines and Angles"
+  },
+  {
+    "id": "mq7-23",
+    "question": "Complement of 30\u00b0 is:",
+    "options": ["(A) 60\u00b0", "(B) 150\u00b0", "(C) 90\u00b0", "(D) 30\u00b0"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Lines and Angles"
+  },
+  {
+    "id": "mq7-24",
+    "question": "A line that intersects two or more lines at distinct points is:",
+    "options": ["(A) Parallel", "(B) Transversal", "(C) Vertical", "(D) Perpendicular"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Lines and Angles"
+  },
+  {
+    "id": "mq7-25",
+    "question": "Vertically opposite angles are always:",
+    "options": ["(A) Equal", "(B) Complementary", "(C) Supplementary", "(D) 90\u00b0"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Lines and Angles"
+  },
+  {
+    "id": "mq7-26",
+    "question": "Sum of three angles of a triangle is:",
+    "options": ["(A) 90\u00b0", "(B) 180\u00b0", "(C) 270\u00b0", "(D) 360\u00b0"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "The Triangle and its Properties"
+  },
+  {
+    "id": "mq7-27",
+    "question": "A triangle with all three sides equal is:",
+    "options": ["(A) Isosceles", "(B) Equilateral", "(C) Scalene", "(D) Right angled"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "The Triangle and its Properties"
+  },
+  {
+    "id": "mq7-28",
+    "question": "In a right triangle, the longest side is:",
+    "options": ["(A) Base", "(B) Perpendicular", "(C) Hypotenuse", "(D) Median"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "The Triangle and its Properties"
+  },
+  {
+    "id": "mq7-29",
+    "question": "How many medians can a triangle have?",
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) Infinite"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "The Triangle and its Properties"
+  },
+  {
+    "id": "mq7-30",
+    "question": "Pythagoras property is applicable only to ______ triangles.",
+    "options": ["(A) Acute", "(B) Obtuse", "(C) Right", "(D) Equilateral"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "The Triangle and its Properties"
+  },
+  {
+    "id": "mq7-31",
+    "question": "Ratio of 3 km to 300 m is:",
+    "options": ["(A) 1:10", "(B) 10:1", "(C) 1:100", "(D) 100:1"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Comparing Quantities"
+  },
+  {
+    "id": "mq7-32",
+    "question": "Convert 1/4 into percentage:",
+    "options": ["(A) 25%", "(B) 50%", "(C) 75%", "(D) 10%"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Comparing Quantities"
+  },
+  {
+    "id": "mq7-33",
+    "question": "0.75 as a percentage is:",
+    "options": ["(A) 7.5%", "(B) 75%", "(C) 0.75%", "(D) 750%"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Comparing Quantities"
+  },
+  {
+    "id": "mq7-34",
+    "question": "Profit = Selling Price - ______.",
+    "options": ["(A) Loss", "(B) Cost Price", "(C) Discount", "(D) Principal"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Comparing Quantities"
+  },
+  {
+    "id": "mq7-35",
+    "question": "Simple Interest formula is:",
+    "options": ["(A) P+R+T", "(B) PRT/100", "(C) P(1+R/100)", "(D) PRT"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Comparing Quantities"
+  },
+  {
+    "id": "mq7-36",
+    "question": "Which of these is a rational number?",
+    "options": ["(A) 0", "(B) 5", "(C) -3/4", "(D) All of these"],
+    "correctAnswer": "D",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Rational Numbers"
+  },
+  {
+    "id": "mq7-37",
+    "question": "The additive inverse of 2/3 is:",
+    "options": ["(A) 3/2", "(B) -2/3", "(C) 1", "(D) 0"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Rational Numbers"
+  },
+  {
+    "id": "mq7-38",
+    "question": "Standard form of -18/45 is:",
+    "options": ["(A) -2/5", "(B) -9/15", "(C) 2/5", "(D) -6/15"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Rational Numbers"
+  },
+  {
+    "id": "mq7-39",
+    "question": "Every integer is also a ______ number.",
+    "options": ["(A) Natural", "(B) Whole", "(C) Rational", "(D) None"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Rational Numbers"
+  },
+  {
+    "id": "mq7-40",
+    "question": "Product of 2/3 and -3/2 is:",
+    "options": ["(A) 1", "(B) -1", "(C) 0", "(D) 4/9"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Rational Numbers"
+  },
+  {
+    "id": "mq7-41",
+    "question": "Area of a rectangle is:",
+    "options": ["(A) Side x Side", "(B) Length x Breadth", "(C) 2(L+B)", "(D) 1/2 x B x H"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Perimeter and Area"
+  },
+  {
+    "id": "mq7-42",
+    "question": "Circumference of a circle is:",
+    "options": ["(A) \u03c0r\u00b2", "(B) 2\u03c0r", "(C) \u03c0d\u00b2", "(D) 2\u03c0r\u00b2"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Perimeter and Area"
+  },
+  {
+    "id": "mq7-43",
+    "question": "Area of a triangle with base 'b' and height 'h' is:",
+    "options": ["(A) bh", "(B) 1/2 bh", "(C) 2bh", "(D) b+h"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Perimeter and Area"
+  },
+  {
+    "id": "mq7-44",
+    "question": "1 m\u00b2 is equal to ______ cm\u00b2.",
+    "options": ["(A) 100", "(B) 1000", "(C) 10000", "(D) 10"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Perimeter and Area"
+  },
+  {
+    "id": "mq7-45",
+    "question": "Perimeter of a square of side 5 cm is:",
+    "options": ["(A) 25 cm", "(B) 20 cm", "(C) 10 cm", "(D) 15 cm"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Perimeter and Area"
+  },
+  {
+    "id": "mq7-46",
+    "question": "Value of 2x + 5 when x = 3 is:",
+    "options": ["(A) 10", "(B) 11", "(C) 13", "(D) 8"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Algebraic Expressions"
+  },
+  {
+    "id": "mq7-47",
+    "question": "In 5x\u00b2y, the coefficient of x\u00b2y is:",
+    "options": ["(A) x\u00b2", "(B) y", "(C) 5", "(D) 5x"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Algebraic Expressions"
+  },
+  {
+    "id": "mq7-48",
+    "question": "An expression with three terms is called:",
+    "options": ["(A) Monomial", "(B) Binomial", "(C) Trinomial", "(D) Polynomial"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Algebraic Expressions"
+  },
+  {
+    "id": "mq7-49",
+    "question": "Like terms have the same ______.",
+    "options": ["(A) Coefficients", "(B) Numerical values", "(C) Algebraic factors", "(D) Signs"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Algebraic Expressions"
+  },
+  {
+    "id": "mq7-50",
+    "question": "Sum of x and y is written as:",
+    "options": ["(A) xy", "(B) x-y", "(C) x+y", "(D) x/y"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Algebraic Expressions"
+  },
+  {
+    "id": "mq7-51",
+    "question": "Value of 2\u2075 is:",
+    "options": ["(A) 10", "(B) 32", "(C) 16", "(D) 25"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Exponents and Powers"
+  },
+  {
+    "id": "mq7-52",
+    "question": "Any non-zero number raised to power 0 is:",
+    "options": ["(A) 0", "(B) 1", "(C) The number itself", "(D) Infinite"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Exponents and Powers"
+  },
+  {
+    "id": "mq7-53",
+    "question": "a\u1d50 x a\u207f is equal to:",
+    "options": ["(A) a\u1d50\u207f", "(B) a\u1d50\u207a\u207f", "(C) a\u1d50\u207b\u207f", "(D) (ab)\u1d50\u207a\u207f"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Exponents and Powers"
+  },
+  {
+    "id": "mq7-54",
+    "question": "Standard form of 5000 is:",
+    "options": ["(A) 5 x 10\u00b3", "(B) 50 x 10\u00b2", "(C) 0.5 x 10\u2074", "(D) 500 x 10\u00b9"],
+    "correctAnswer": "A",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Exponents and Powers"
+  },
+  {
+    "id": "mq7-55",
+    "question": "Which is greater, 2\u00b3 or 3\u00b2?",
+    "options": ["(A) 2\u00b3", "(B) 3\u00b2", "(C) Both equal", "(D) None"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Exponents and Powers"
+  },
+  {
+    "id": "mq7-56",
+    "question": "A rectangle has how many lines of symmetry?",
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Symmetry"
+  },
+  {
+    "id": "mq7-57",
+    "question": "Order of rotational symmetry of a square is:",
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
+    "correctAnswer": "D",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Symmetry"
+  },
+  {
+    "id": "mq7-58",
+    "question": "Which letter has rotational symmetry of order 2?",
+    "options": ["(A) A", "(B) H", "(C) C", "(D) E"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Symmetry"
+  },
+  {
+    "id": "mq7-59",
+    "question": "Angle of rotation for a regular hexagon is:",
+    "options": ["(A) 90\u00b0", "(B) 60\u00b0", "(C) 45\u00b0", "(D) 120\u00b0"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Symmetry"
+  },
+  {
+    "id": "mq7-60",
+    "question": "A circle has ______ lines of symmetry.",
+    "options": ["(A) 0", "(B) 1", "(C) 10", "(D) Infinite"],
+    "correctAnswer": "D",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Symmetry"
+  },
+  {
+    "id": "mq7-61",
+    "question": "Number of faces in a cube is:",
+    "options": ["(A) 4", "(B) 6", "(C) 8", "(D) 12"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Visualising Solid Shapes"
+  },
+  {
+    "id": "mq7-62",
+    "question": "Which of these is a 2D shape?",
+    "options": ["(A) Sphere", "(B) Cylinder", "(C) Circle", "(D) Cone"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Visualising Solid Shapes"
+  },
+  {
+    "id": "mq7-63",
+    "question": "A pyramid with a square base has how many vertices?",
+    "options": ["(A) 4", "(B) 5", "(C) 6", "(D) 8"],
+    "correctAnswer": "B",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Visualising Solid Shapes"
+  },
+  {
+    "id": "mq7-64",
+    "question": "The shadow of a ball when light is above it is a:",
+    "options": ["(A) Square", "(B) Triangle", "(C) Circle", "(D) Rectangle"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Visualising Solid Shapes"
+  },
+  {
+    "id": "mq7-65",
+    "question": "Euler's formula is F + V - E = ______.",
+    "options": ["(A) 0", "(B) 1", "(C) 2", "(D) -1"],
+    "correctAnswer": "C",
+    "chapterId": "math7-mix",
+    "chapterTitle": "Visualising Solid Shapes"
+  }
+]

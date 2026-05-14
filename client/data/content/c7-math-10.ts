@@ -29,11 +29,11 @@ export const c7Math10: ChapterContent = {
     htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .section-title { color: #D1C4E9; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+            .section-title { color: #FFD600; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
             .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; }
-            .point-box { background: rgba(103, 58, 183, 0.05); border-left: 4px solid #673AB7; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
+            .point-box { background: rgba(255, 214, 0, 0.05); border-left: 4px solid #FFD600; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
             .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; }
-            .point-item::before { content: '•'; color: #673AB7; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
+            .point-item::before { content: '•'; color: #FFD600; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
             <p class="content-text">Learn how to manipulate mathematical symbols to represent and solve generalized problems.</p>
@@ -48,20 +48,20 @@ export const c7Math10: ChapterContent = {
         "ex10-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(103, 58, 183, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(103, 58, 183, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 214, 0, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); border-left: 4px solid #FFD600; color: #FFD600; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #673AB7; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #673AB7; font-weight: bold; }
-            .ans-highlight { color: #B39DDB; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FFD600; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FFD600; font-weight: bold; }
+            .ans-highlight { color: #FFF176; font-weight: bold; }
             .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
             .frac .den { display: block; padding: 0 2px; }
-            .diagram-container { background: #1a1a2e; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid rgba(103, 58, 183, 0.4); text-align: center; }
+            .diagram-container { background: #1a1a2e; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid rgba(255, 214, 0, 0.4); text-align: center; }
             table { width: 100%; border-collapse: collapse; margin: 10px 0; background: #161625; }
-            th, td { border: 1px solid rgba(103, 58, 183, 0.3); padding: 10px; text-align: left; color: #e0e0e0; }
-            th { background: rgba(103, 58, 183, 0.1); color: #B39DDB; }
+            th, td { border: 1px solid rgba(255, 214, 0, 0.3); padding: 10px; text-align: left; color: #e0e0e0; }
+            th { background: rgba(255, 214, 0, 0.1); color: #FFF176; }
         </style>
         <div class="container">
             <!-- Q1 -->
@@ -89,10 +89,10 @@ export const c7Math10: ChapterContent = {
                     <div class="diagram-container">
                         <svg width="150" height="80" viewBox="0 0 150 80">
                             <text x="75" y="20" fill="#fff" font-weight="bold" text-anchor="middle">x - 3</text>
-                            <line x1="75" y1="25" x2="40" y2="50" stroke="#673AB7" stroke-width="1.5" />
-                            <line x1="75" y1="25" x2="110" y2="50" stroke="#673AB7" stroke-width="1.5" />
-                            <text x="40" y="70" fill="#B39DDB" text-anchor="middle" font-size="12">x</text>
-                            <text x="110" y="70" fill="#B39DDB" text-anchor="middle" font-size="12">-3</text>
+                            <line x1="75" y1="25" x2="40" y2="50" stroke="#FFD600" stroke-width="1.5" />
+                            <line x1="75" y1="25" x2="110" y2="50" stroke="#FFD600" stroke-width="1.5" />
+                            <text x="40" y="70" fill="#FFF176" text-anchor="middle" font-size="12">x</text>
+                            <text x="110" y="70" fill="#FFF176" text-anchor="middle" font-size="12">-3</text>
                         </svg>
                     </div>
 
@@ -293,13 +293,13 @@ export const c7Math10: ChapterContent = {
         "ex10-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(103, 58, 183, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(103, 58, 183, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 214, 0, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); border-left: 4px solid #FFD600; color: #FFD600; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #673AB7; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #673AB7; font-weight: bold; }
-            .ans-highlight { color: #B39DDB; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FFD600; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FFD600; font-weight: bold; }
+            .ans-highlight { color: #FFF176; font-weight: bold; }
         </style>
         <div class="container">
             <!-- Q1 -->
@@ -406,13 +406,13 @@ export const c7Math10: ChapterContent = {
         "ex10-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(103, 58, 183, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(103, 58, 183, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 214, 0, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); border-left: 4px solid #FFD600; color: #FFD600; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #673AB7; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #673AB7; font-weight: bold; }
-            .ans-highlight { color: #B39DDB; font-weight: bold; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FFD600; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FFD600; font-weight: bold; }
+            .ans-highlight { color: #FFF176; font-weight: bold; }
             .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
             .frac .den { display: block; padding: 0 2px; }
@@ -547,26 +547,26 @@ export const c7Math10: ChapterContent = {
         "ex10-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(103, 58, 183, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: transparent; padding: 20px; border-bottom: 1px solid rgba(103, 58, 183, 0.2); color: #fff; font-size: 1.15em; font-weight: 600; line-height: 1.5; text-align: justify; }
+            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .question-header { background: rgba(255, 214, 0, 0.08); padding: 20px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); border-left: 4px solid #FFD600; color: #FFD600; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
             .sol-body { padding: 20px; background: #000; text-align: left; }
             .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #673AB7; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #673AB7; font-weight: bold; }
-            .ans-highlight { color: #B39DDB; font-weight: bold; }
-            .diagram-container { background: #1a1a2e; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid rgba(103, 58, 183, 0.4); text-align: center; }
+            .step-marker { position: absolute; left: 0; top: 0; color: #FFD600; font-weight: bold; font-size: 1.1em; }
+            .label-theme { color: #FFD600; font-weight: bold; }
+            .ans-highlight { color: #FFF176; font-weight: bold; }
+            .diagram-container { background: #1a1a2e; padding: 15px; border-radius: 12px; margin: 15px 0; border: 1px solid rgba(255, 214, 0, 0.4); text-align: center; }
             
             /* Enhanced Scroll Table Styles */
-            .table-container { width: 100%; overflow-x: scroll !important; -webkit-overflow-scrolling: touch; margin: 10px 0; border-radius: 8px; border: 1px solid rgba(103, 58, 183, 0.2); touch-action: pan-x; }
+            .table-container { width: 100%; overflow-x: scroll !important; -webkit-overflow-scrolling: touch; margin: 10px 0; border-radius: 8px; border: 1px solid rgba(255, 214, 0, 0.2); touch-action: pan-x; }
             .scroll-table { width: 100%; min-width: 700px; border-collapse: collapse; }
-            .scroll-table th, .scroll-table td { border: 1px solid rgba(103, 58, 183, 0.3); padding: 12px 8px; text-align: center; color: #e0e0e0; font-size: 0.9em; }
-            .scroll-table th { background: rgba(103, 58, 183, 0.15); color: #B39DDB; }
+            .scroll-table th, .scroll-table td { border: 1px solid rgba(255, 214, 0, 0.3); padding: 12px 8px; text-align: center; color: #e0e0e0; font-size: 0.9em; }
+            .scroll-table th { background: rgba(255, 214, 0, 0.15); color: #FFF176; }
             
             @keyframes bounceHint {
                 0%, 100% { transform: translateX(0); }
                 50% { transform: translateX(-10px); }
             }
-            .scroll-hint { text-align: center; font-size: 0.85em; color: #B39DDB; margin-top: 10px; font-weight: 500; animation: bounceHint 2s infinite; }
+            .scroll-hint { text-align: center; font-size: 0.85em; color: #FFF176; margin-top: 10px; font-weight: 500; animation: bounceHint 2s infinite; }
         </style>
         <div class="container">
             <!-- Q1 -->
@@ -596,7 +596,7 @@ export const c7Math10: ChapterContent = {
                 <div class="sol-body" style="background: #000; padding: 5px;">
                     
                     <style>
-                        .compact-table { width: 100%; border-collapse: collapse; background: #161625; table-layout: fixed; margin: 0; box-sizing: border-box; border: 1px solid rgba(103, 58, 183, 0.4); }
+                        .compact-table { width: 100%; border-collapse: collapse; background: #161625; table-layout: fixed; margin: 0; box-sizing: border-box; border: 1px solid rgba(255, 214, 0, 0.4); }
                         .compact-table th, .compact-table td { border: 1px solid rgba(103, 58, 183, 0.3); padding: 8px 1px; text-align: center; color: #fff; font-size: 10px; overflow: hidden; white-space: nowrap; }
                         .compact-table th { background: rgba(103, 58, 183, 0.2); color: #B39DDB; font-weight: bold; font-size: 9px; }
                         .col-sno { width: 9%; }
