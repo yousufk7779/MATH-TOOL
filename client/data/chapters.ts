@@ -201,11 +201,11 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
 
   // Targeted theme color replacement for Math Chapter 6 (Pink)
   const pinkTargetedIds = [
-    "ch6", "c9-math-6", "c8-math-6", "c7-math-6"
+    "ch6", "c9-math-6", "c8-math-6", "c7-math-6", "c7-math-9"
   ];
 
   if (pinkTargetedIds.includes(chapterId)) {
-    return ["#FF6CAB", "#D61A8D"];
+    return ["#FF4081", "#D81B60"];
   }
 
   // Targeted theme color replacement for Chemistry Chapter 4 (Green-Cyan)
