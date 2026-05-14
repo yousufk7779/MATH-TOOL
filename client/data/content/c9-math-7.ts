@@ -18,27 +18,35 @@ export const c9Math7: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FFA726; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFA726; padding-left: 15px; margin-top: 15px; background: rgba(255, 167, 38, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF8A65 !important; font-weight: 700; }
-        strong { color: #FF8A65 !important; font-weight: 600; }
+        .section-title { color: #FFA726 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFA726 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 167, 38, 0.05) !important; border-left: 4px solid #FFA726 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFA726 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFA726 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFA726 !important; font-weight: 700; }
+        strong { color: #FFA726 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .ans-highlight { color: #FFA726; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 167, 38, 0.05); color: #FFA726; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="ch-content">
-      <h2>Chapter Overview</h2>
+
       <div class="step">A <span class="highlight">Quadrilateral</span> is a polygon with four sides, four angles, and four vertices.</div>
       <div class="step">The sum of the angles of a quadrilateral is <span class="highlight">360Â°</span>.</div>
       
@@ -63,24 +71,32 @@ export const c9Math7: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FFA726; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFA726; padding-left: 15px; margin-top: 15px; background: rgba(255, 167, 38, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF8A65 !important; font-weight: 700; }
-        strong { color: #FF8A65 !important; font-weight: 600; }
+        .section-title { color: #FFA726 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFA726 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 167, 38, 0.05) !important; border-left: 4px solid #FFA726 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFA726 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFA726 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFA726 !important; font-weight: 700; }
+        strong { color: #FFA726 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .ans-highlight { color: #FFA726; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 167, 38, 0.05); color: #FFA726; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="ch-content">
         <div class="question">1. The angles of a quadrilateral are in the ratio 3 : 5 : 9 : 13. Find all the angles of the quadrilateral.</div>
@@ -270,24 +286,32 @@ export const c9Math7: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #FF8A65; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #FF8A65; padding-left: 15px; margin-top: 15px; background: rgba(255, 138, 101, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FFA726; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FFA726; padding-left: 15px; margin-top: 15px; background: rgba(255, 167, 38, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #FF8A65 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #FF8A65 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(255, 138, 101, 0.05) !important; border-left: 4px solid #FF8A65 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #FF8A65 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #FF8A65 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #FF8A65 !important; font-weight: 700; }
-        strong { color: #FF8A65 !important; font-weight: 600; }
+        .section-title { color: #FFA726 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FFA726 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 167, 38, 0.05) !important; border-left: 4px solid #FFA726 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FFA726 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FFA726 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FFA726 !important; font-weight: 700; }
+        strong { color: #FFA726 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #FF8A65; font-weight: 700; }
+        .ans-highlight { color: #FFA726; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 167, 38, 0.05); color: #FFA726; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="ch-content">
         <div class="question">1. ABCD is a quadrilateral in which P, Q, R and S are mid-points of the sides AB, BC, CD and DA. AC is a diagonal. Show that : </br> (i) SR || AC and SR = 1/2 AC </br> (ii) PQ = SR  </br>(iii) PQRS is a parallelogram.</div>

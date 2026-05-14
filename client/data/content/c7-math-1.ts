@@ -30,7 +30,6 @@ export const c7Math1: ChapterContent = {
             .point-item::before { content: '•'; color: #FF9800; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 1: Integers Overview</h2>
             <p class="content-text">In this chapter, we explore the world of integers beyond what we learned in Class VI.</p>
             <div class="point-box">
                 <div class="point-item">Integers include positive numbers, negative numbers, and zero.</div>

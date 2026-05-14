@@ -120,6 +120,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
@@ -210,6 +218,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. Is zero a rational number? Can you write it in the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span>, where p and q are integers and q ≠ 0?</div>
@@ -273,6 +289,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. State whether the following statements are true or false. Justify your answers.</div>
@@ -342,6 +366,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. Write the following in decimal form and say what kind of decimal expansion each has:</div>
@@ -433,6 +465,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. Visualise 3.765 on the number line, using successive magnification.</div>
@@ -479,6 +519,14 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. Classify the following numbers as rational or irrational:</div>
@@ -567,19 +615,27 @@ export const c9Math1: ChapterContent = {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: #FFB74D; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 183, 77, 0.05); color: #FFB74D; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <div class="container">
         <div class="question">Q1. Find:</div>
         <div class="solution">
           (i) 64<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>2</span></span></sup> = (8<sup>2</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>2</span></span></sup> = 8<br/>
-          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>5</span></span></sup> = (2<sup>5</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>5</span></span></sup> = 2<br/>
-          (iii) 125<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>3</span></span></sup> = (5<sup>3</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>3</span></span></sup> = 5
+          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>5</span></span></sup> = (2<sup>5</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>5</span></span></sup> = 2<br/>
+          (iii) 125<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>3</span></span></sup> = (5<sup>3</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span class='den'>3</span></span></sup> = 5
         </div>
 
         <div class="question">Q2. Find:</div>
         <div class="solution">
-          (i) 9<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span>2</span></span></sup> = (3<sup>2</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span>2</span></span></sup> = 3<sup>3</sup> = 27<br/>
-          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span>5</span></span></sup> = (2<sup>5</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span>5</span></span></sup> = 2<sup>2</sup> = 4<br/>
+          (i) 9<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span class='den'>2</span></span></sup> = (3<sup>2</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span class='den'>2</span></span></sup> = 3<sup>3</sup> = 27<br/>
+          (ii) 32<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span class='den'>5</span></span></sup> = (2<sup>5</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>2</span><span>5</span></span></sup> = 2<sup>2</sup> = 4<br/>
           (iii) 16<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span>4</span></span></sup> = (2<sup>4</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>3</span><span>4</span></span></sup> = 2<sup>3</sup> = 8<br/>
           (iv) 125<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>-1</span><span>3</span></span></sup> = (5<sup>3</sup>)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>-1</span><span>3</span></span></sup> = 5<sup>-1</sup> = <span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>5</span></span>
         </div>

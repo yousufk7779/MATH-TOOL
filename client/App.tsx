@@ -20,6 +20,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/lib/query-client";
 
 import RootStackNavigator from "@/navigation/RootStackNavigator";
+import { useUpdateCheck } from "@/hooks/useUpdateCheck";
 
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
@@ -38,6 +39,7 @@ const navTheme = {
 
 
 export default function App() {
+  useUpdateCheck();
   const [appIsReady, setAppIsReady] = React.useState(false);
   
   const [fontsLoaded, fontError] = useFonts({

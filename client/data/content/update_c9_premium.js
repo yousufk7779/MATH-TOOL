@@ -3,16 +3,16 @@ const path = require('path');
 
 const THEMES = {
     "c9-math-1": "#FFB74D",
-    "c9-math-2": "#4DD0E1",
-    "c9-math-3": "#BA68C8",
-    "c9-math-4": "#F06292",
-    "c9-math-5": "#FFD54F",
-    "c9-math-6": "#81C784",
-    "c9-math-7": "#FF8A65",
-    "c9-math-8": "#9575CD",
-    "c9-math-9": "#4DB6AC",
-    "c9-math-10": "#64B5F6",
-    "c9-math-11": "#DCE775",
+    "c9-math-2": "#FF4081",
+    "c9-math-3": "#AB47BC",
+    "c9-math-4": "#42A5F5",
+    "c9-math-5": "#66BB6A",
+    "c9-math-6": "#FF4081",
+    "c9-math-7": "#FFA726",
+    "c9-math-8": "#FF8A65",
+    "c9-math-9": "#00C6FF",
+    "c9-math-10": "#FFA726",
+    "c9-math-11": "#FF4DA6",
 };
 
 function hexToRgba(hex, alpha) {
@@ -64,6 +64,14 @@ function processHtml(html, themeColor) {
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .ans-highlight { color: ${themeColor}; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: ${bgColor}; color: ${themeColor}; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>`;
 
     // Remove old style blocks

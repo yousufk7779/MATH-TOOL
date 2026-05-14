@@ -33,7 +33,6 @@ export const c7Math5: ChapterContent = {
             .point-item::before { content: '•'; color: #43A047; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 5: Lines and Angles Overview</h2>
             <p class="content-text">Explore the fundamental relationships between lines and the angles they form when they meet or cross.</p>
             <div class="point-box">
                 <div class="point-item">Complementary = 90°, Supplementary = 180°.</div>

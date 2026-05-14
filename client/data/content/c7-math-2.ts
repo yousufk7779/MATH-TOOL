@@ -36,7 +36,6 @@ export const c7Math2: ChapterContent = {
             .point-item::before { content: '•'; color: #FF4081; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 2: Fractions and Decimals Overview</h2>
             <p class="content-text">This chapter deepens our understanding of fractional parts and decimal representations, focusing on precision in arithmetic operations.</p>
             <div class="point-box">
                 <div class="point-item">Multiplication of fractions: Product of Numerators / Product of Denominators.</div>

@@ -49,23 +49,23 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   },
   "Class 9": {
     "Mathematics": [
-      { id: "c9-math-1", number: 1, name: "Number Systems", color: "#E91E63" },
-      { id: "c9-math-2", number: 2, name: "Polynomials", color: "#00C853" },
-      { id: "c9-math-3", number: 3, name: "Linear Equations in Two Variables", color: "#FFAB00" },
-      { id: "c9-math-4", number: 4, name: "Coordinate Geometry", color: "#AA00FF" },
-      { id: "c9-math-5", number: 5, name: "Lines and Angles", color: "#00B8D4" },
-      { id: "c9-math-6", number: 6, name: "Triangles", color: "#F06292" },
-      { id: "c9-math-7", number: 7, name: "Quadrilaterals", color: "#6200EA" },
-      { id: "c9-math-8", number: 8, name: "Circles", color: "#FF6D00" },
-      { id: "c9-math-9", number: 9, name: "Heron’s Formula", color: "#0091EA" },
-      { id: "c9-math-10", number: 10, name: "Surface Area and Volumes", color: "#FFD600" },
-      { id: "c9-math-11", number: 11, name: "Statistics", color: "#00D4FF" }
+      { id: "c9-math-1", number: 1, name: "Number Systems", color: "#FFB74D" },
+      { id: "c9-math-2", number: 2, name: "Polynomials", color: "#FF4081" },
+      { id: "c9-math-3", number: 3, name: "Linear Equations in Two Variables", color: "#AB47BC" },
+      { id: "c9-math-4", number: 4, name: "Coordinate Geometry", color: "#42A5F5" },
+      { id: "c9-math-5", number: 5, name: "Lines and Angles", color: "#66BB6A" },
+      { id: "c9-math-6", number: 6, name: "Triangles", color: "#FF4081" },
+      { id: "c9-math-7", number: 7, name: "Quadrilaterals", color: "#FFA726" },
+      { id: "c9-math-8", number: 8, name: "Circles", color: "#FF8A65" },
+      { id: "c9-math-9", number: 9, name: "Heron’s Formula", color: "#00C6FF" },
+      { id: "c9-math-10", number: 10, name: "Surface Area and Volumes", color: "#FFA726" },
+      { id: "c9-math-11", number: 11, name: "Statistics", color: "#FF4DA6" }
     ]
   },
   "Class 8": {
     "Mathematics": [
       { id: "c8-math-1", number: 1, name: "Rational Numbers", color: "#E91E63" },
-      { id: "c8-math-2", number: 2, name: "Linear Equations in One Variable", color: "#00C853" },
+      { id: "c8-math-2", number: 2, name: "Linear Equations in One Variable", color: "#D81B60" },
       { id: "c8-math-3", number: 3, name: "Understanding Quadrilaterals", color: "#FFAB00" },
       { id: "c8-math-4", number: 4, name: "Data Handling", color: "#AA00FF" },
       { id: "c8-math-5", number: 5, name: "Squares and Square Roots", color: "#00B8D4" },

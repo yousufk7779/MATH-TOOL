@@ -74,12 +74,7 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
                 {name}
               </ThemedText>
             </View>
-            {isAvailable ? (
-              <View style={styles.chevronIcon}>
-                <View style={styles.chevronTop} />
-                <View style={styles.chevronBottom} />
-              </View>
-            ) : (
+            {!isAvailable && (
               <View style={styles.chevronIcon}>
                 <Feather name="lock" size={20} color="rgba(255,255,255,0.6)" />
               </View>

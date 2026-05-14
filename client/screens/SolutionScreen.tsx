@@ -697,9 +697,12 @@ const MathWebView = memo(({ chapterData, activeSection, activeSubSection, onScro
       table { 
         width: 100% !important; 
         max-width: 100% !important; 
-        display: block !important; 
-        overflow-x: auto !important; 
+        display: table !important; 
+        margin: 15px auto !important; 
         border-collapse: collapse !important;
+      }
+      th, td {
+        text-align: center !important;
       }
       pre, code { 
         white-space: pre-wrap !important; 

@@ -35,7 +35,6 @@ export const c7Math3: ChapterContent = {
             .point-item::before { content: '•'; color: #AB47BC; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 3: Data Handling Overview</h2>
             <p class="content-text">This chapter introduces the concept of data organization and central tendencies to interpret information effectively.</p>
             <div class="point-box">
                 <div class="point-item">Mean: The sum of observations divided by their count.</div>

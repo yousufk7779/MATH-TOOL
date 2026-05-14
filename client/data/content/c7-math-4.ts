@@ -33,7 +33,6 @@ export const c7Math4: ChapterContent = {
             .point-item::before { content: '•'; color: #2196F3; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <h2 class="section-title">Chapter 4: Simple Equations Overview</h2>
             <p class="content-text">Simple Equations allow us to solve for unknowns by maintaining a mathematical balance between two sides.</p>
             <div class="point-box">
                 <div class="point-item">Equations contain an equality sign (=).</div>

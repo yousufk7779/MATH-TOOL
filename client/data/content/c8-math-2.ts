@@ -108,23 +108,6 @@ export const c8Math2: ChapterContent = {
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
       }
 
-      .hero-card {
-        background: linear-gradient(90deg, #FF8C00, #F44336);
-        padding: 25px;
-        border-radius: 15px;
-        margin-bottom: 25px;
-        text-align: center;
-        box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);
-      }
-
-      .hero-title {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
       .section-box {
         background: rgba(255, 255, 255, 0.05);
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -135,7 +118,7 @@ export const c8Math2: ChapterContent = {
       }
 
       .section-header {
-        color: #FFB74D;
+        color: #D81B60;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 15px;
@@ -154,13 +137,13 @@ export const c8Math2: ChapterContent = {
       }
 
       .bullet {
-        color: #FF8C00;
+        color: #D81B60;
         font-size: 20px;
         line-height: 1;
       }
 
       .highlight {
-        color: #FFD54F;
+        color: #D81B60;
         font-weight: 600;
       }
 
@@ -174,10 +157,6 @@ export const c8Math2: ChapterContent = {
   </style>
 
     <div class="premium-container">
-      <div class="hero-card">
-        <div class="hero-title">Linear Equations in One Variable</div>
-        <div style="opacity: 0.9; font-size: 16px;">Class 8 Mathematics • Chapter 2</div>
-      </div>
 
       <div class="section-box">
         <div class="section-header"><span>✦</span> Introduction</div>
@@ -229,11 +208,11 @@ export const c8Math2: ChapterContent = {
     .frac .den { padding: 0 2px; }
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif !important; background: transparent; }
-        .q-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 140, 0, 0.2); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
-        .q-text { color: #FFB74D; font-weight: 600; margin-bottom: 12px; }
-        .sol-box { border-left: 3px solid #FF8C00; padding-left: 15px; margin-top: 10px; }
+        .q-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(216, 27, 96, 0.2); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
+        .q-text { color: #D81B60; font-weight: 600; margin-bottom: 12px; }
+        .sol-box { border-left: 3px solid #D81B60; padding-left: 15px; margin-top: 10px; }
         .sol-line { font-size: 16px; margin-bottom: 8px; }
-        .ans-tag { color: #FF8C00; font-weight: bold; margin-right: 8px; }
+        .ans-tag { color: #D81B60; font-weight: bold; margin-right: 8px; }
         .fraction { display: inline-block; vertical-align: middle; text-align: center; margin: 0 4px; }
         .numerator { display: block; border-bottom: 1px solid #fff; padding: 0 2px; }
         .denominator { display: block; padding: 0 2px; }
@@ -260,11 +239,11 @@ export const c8Math2: ChapterContent = {
     .frac .den { padding: 0 2px; }
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
         .ex-container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif !important; background: transparent; }
-        .q-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(79, 195, 247, 0.2); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
-        .q-text { color: #4fc3f7; font-weight: 600; margin-bottom: 12px; }
-        .sol-box { border-left: 3px solid #00c6ff; padding-left: 15px; margin-top: 10px; }
+        .q-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(216, 27, 96, 0.2); border-radius: 12px; padding: 18px; margin-bottom: 20px; }
+        .q-text { color: #D81B60; font-weight: 600; margin-bottom: 12px; }
+        .sol-box { border-left: 3px solid #D81B60; padding-left: 15px; margin-top: 10px; }
         .sol-line { font-size: 16px; margin-bottom: 8px; }
-        .ans-tag { color: #00c6ff; font-weight: bold; margin-right: 8px; }
+        .ans-tag { color: #D81B60; font-weight: bold; margin-right: 8px; }
           .q-text, .q-subtext, .sol-step, .sol-box { font-size: 16px; }
   </style>
 

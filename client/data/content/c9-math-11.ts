@@ -91,24 +91,32 @@ export const c9Math11: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #DCE775 !important; font-weight: 700; }
-        strong { color: #DCE775 !important; font-weight: 600; }
+        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF4DA6 !important; font-weight: 700; }
+        strong { color: #FF4DA6 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .ans-highlight { color: #FF4DA6; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,7 +125,7 @@ export const c9Math11: ChapterContent = {
 </head>
 <body>
     <div class="content-box">
-        <div class="section-title">Chapter Overview: Statistics</div>
+
         <div class="step">Statistics is the branch of mathematics that deals with the <b>collection</b>, <b>presentation</b>, <b>analysis</b>, and <b>interpretation</b> of numerical data.</div>
         
         <div class="step"><b>1. Collection of Data:</b></div>
@@ -145,24 +153,32 @@ export const c9Math11: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #DCE775 !important; font-weight: 700; }
-        strong { color: #DCE775 !important; font-weight: 600; }
+        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF4DA6 !important; font-weight: 700; }
+        strong { color: #FF4DA6 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .ans-highlight { color: #FF4DA6; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -199,24 +215,32 @@ export const c9Math11: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #DCE775 !important; font-weight: 700; }
-        strong { color: #DCE775 !important; font-weight: 600; }
+        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF4DA6 !important; font-weight: 700; }
+        strong { color: #FF4DA6 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .ans-highlight { color: #FF4DA6; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -256,23 +280,13 @@ export const c9Math11: ChapterContent = {
     </div>
 
     <div class="content-box">
-        <div class="question">5. A study was conducted to find out the concentration of sulphur dioxide in the air in parts per million (ppm) of a certain city. The data obtained for 30 days is as follows:<br/>0.03, 0.08, 0.08, 0.09, 0.04, 0.17, 0.16, 0.05, 0.02, 0.06, 0.18, 0.20, 0.11, 0.08, 0.12, 0.13, 0.22, 0.07, 0.08, 0.01, 0.10, 0.06, 0.09, 0.18, 0.11, 0.07, 0.05, 0.07, 0.01, 0.04.</div>
-        <div class="solution-header">Solution:</div>
-        <table align="center">
-            <tr><th>Conc. of SO₂ (ppm)</th><th>Frequency</th></tr>
-            <tr><td>0.00 - 0.04</td><td>4</td></tr>
-            <tr><td>0.04 - 0.08</td><td>9</td></tr>
-            <tr><td>0.08 - 0.12</td><td>9</td></tr>
-            <tr><td>0.12 - 0.16</td><td>2</td></tr>
-            <tr><td>0.16 - 0.20</td><td>4</td></tr>
-            <tr><td>0.20 - 0.24</td><td>2</td></tr>
-            <tr><th>Total</th><th>30</th></tr>
-        </table>
-        <div class="step">Days with concentration > 0.11 ppm: 2+4+2 = <b>8 days</b>.</div>
-    </div>
-
-    <div class="content-box">
-        <div class="question">3. The relative humidity...</div>
+        <div class="question">3. The relative humidity (in %) of a certain city for a month of 30 days was as follows:<br/>
+98.1 &nbsp; 98.6 &nbsp; 99.2 &nbsp; 90.3 &nbsp; 86.5 &nbsp; 95.3 &nbsp; 92.9 &nbsp; 96.3 &nbsp; 94.2 &nbsp; 95.1<br/>
+89.2 &nbsp; 92.3 &nbsp; 97.1 &nbsp; 93.5 &nbsp; 92.7 &nbsp; 95.1 &nbsp; 97.2 &nbsp; 93.3 &nbsp; 95.2 &nbsp; 97.3<br/>
+96.2 &nbsp; 92.1 &nbsp; 84.9 &nbsp; 90.2 &nbsp; 95.7 &nbsp; 98.3 &nbsp; 97.3 &nbsp; 96.1 &nbsp; 92.1 &nbsp; 89<br/><br/>
+(i) Construct a grouped frequency distribution table with classes 84 - 86, 86 - 88, etc.<br/>
+(ii) Which month or season do you think this data is about?<br/>
+(iii) What is the range of this data?</div>
         <div class="solution-header">Solution:</div>
         <table align="center">
             <tr><th>Humidity (%)</th><th>Frequency</th></tr>
@@ -291,7 +305,14 @@ export const c9Math11: ChapterContent = {
     </div>
 
     <div class="content-box">
-        <div class="question">4. The heights of 50 students, measured to the nearest centimetres, have been found to be as follows:<br/>161, 150, 154, 165, 168, 161, 154, 162, 150, 151, 162, 164, 171, 165, 158, 154, 156, 172, 160, 170, 153, 159, 161, 170, 162, 165, 166, 168, 165, 164, 154, 152, 153, 156, 158, 162, 160, 161, 173, 166, 161, 159, 162, 167, 168, 159, 158, 153, 154, 159.<br/>(i) Represent in grouped frequency table (ii) Conclusion?</div>
+        <div class="question">4. The heights of 50 students, measured to the nearest centimetres, have been found to be as follows:<br/>
+161 &nbsp; 150 &nbsp; 154 &nbsp; 165 &nbsp; 168 &nbsp; 161 &nbsp; 154 &nbsp; 162 &nbsp; 150 &nbsp; 151<br/>
+162 &nbsp; 164 &nbsp; 171 &nbsp; 165 &nbsp; 158 &nbsp; 154 &nbsp; 156 &nbsp; 172 &nbsp; 160 &nbsp; 170<br/>
+153 &nbsp; 159 &nbsp; 161 &nbsp; 170 &nbsp; 162 &nbsp; 165 &nbsp; 166 &nbsp; 168 &nbsp; 165 &nbsp; 164<br/>
+154 &nbsp; 152 &nbsp; 153 &nbsp; 156 &nbsp; 158 &nbsp; 162 &nbsp; 160 &nbsp; 161 &nbsp; 173 &nbsp; 166<br/>
+161 &nbsp; 159 &nbsp; 162 &nbsp; 167 &nbsp; 168 &nbsp; 159 &nbsp; 158 &nbsp; 153 &nbsp; 154 &nbsp; 159<br/><br/>
+(i) Represent the data given above by a grouped frequency distribution table, taking the class intervals as 160 - 165, 165 - 170, etc.<br/>
+(ii) What can you conclude about their heights from the table?</div>
         <div class="solution-header">Solution:</div>
         <table align="center">
             <tr><th>Height (cm)</th><th>Frequency</th></tr>
@@ -303,6 +324,27 @@ export const c9Math11: ChapterContent = {
             <tr><th>Total</th><th>50</th></tr>
         </table>
         <div class="step">(ii) <b>Conclusion:</b> More than 50% of students are shorter than 165 cm.</div>
+    </div>
+
+    <div class="content-box">
+        <div class="question">5. A study was conducted to find out the concentration of sulphur dioxide in the air in parts per million (ppm) of a certain city. The data obtained for 30 days is as follows:<br/>
+0.03 &nbsp; 0.08 &nbsp; 0.08 &nbsp; 0.09 &nbsp; 0.04 &nbsp; 0.17 &nbsp; 0.16 &nbsp; 0.05 &nbsp; 0.02 &nbsp; 0.06<br/>
+0.18 &nbsp; 0.20 &nbsp; 0.11 &nbsp; 0.08 &nbsp; 0.12 &nbsp; 0.13 &nbsp; 0.22 &nbsp; 0.07 &nbsp; 0.08 &nbsp; 0.01<br/>
+0.10 &nbsp; 0.06 &nbsp; 0.09 &nbsp; 0.18 &nbsp; 0.11 &nbsp; 0.07 &nbsp; 0.05 &nbsp; 0.07 &nbsp; 0.01 &nbsp; 0.04<br/><br/>
+(i) Make a grouped frequency distribution table for this data with class intervals as 0.00 - 0.04, 0.04 - 0.08, and so on.<br/>
+(ii) For how many days, was the concentration of sulphur dioxide more than 0.11 ppm?</div>
+        <div class="solution-header">Solution:</div>
+        <table align="center">
+            <tr><th>Conc. of SO₂ (ppm)</th><th>Frequency</th></tr>
+            <tr><td>0.00 - 0.04</td><td>4</td></tr>
+            <tr><td>0.04 - 0.08</td><td>9</td></tr>
+            <tr><td>0.08 - 0.12</td><td>9</td></tr>
+            <tr><td>0.12 - 0.16</td><td>2</td></tr>
+            <tr><td>0.16 - 0.20</td><td>4</td></tr>
+            <tr><td>0.20 - 0.24</td><td>2</td></tr>
+            <tr><th>Total</th><th>30</th></tr>
+        </table>
+        <div class="step">Days with concentration > 0.11 ppm: 2+4+2 = <b>8 days</b>.</div>
     </div>
 
     <div class="content-box">
@@ -372,24 +414,32 @@ export const c9Math11: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #DCE775 !important; font-weight: 700; }
-        strong { color: #DCE775 !important; font-weight: 600; }
+        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF4DA6 !important; font-weight: 700; }
+        strong { color: #FF4DA6 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .ans-highlight { color: #FF4DA6; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -549,24 +599,32 @@ export const c9Math11: ChapterContent = {
         .container { padding: 15px; color: #e0e0e0; font-family: 'Inter', sans-serif; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        .question { color: #DCE775; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
-        .solution { border-left: 3px solid #DCE775; padding-left: 15px; margin-top: 15px; background: rgba(220, 231, 117, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+        .question { color: #FF4DA6; font-weight: 600; margin-top: 25px; margin-bottom: 12px; text-align: justify; font-size: 16px; line-height: 1.8; }
+        .solution { border-left: 3px solid #FF4DA6; padding-left: 15px; margin-top: 15px; background: rgba(255, 77, 166, 0.05); padding: 10px 15px; border-radius: 0 8px 8px 0; text-align: justify; font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
         .subpart { color: #e0e0e0; margin-top: 10px; margin-bottom: 5px; font-size: 16px; line-height: 1.8; margin-left: 10px; }
         
         /* Overview styles */
-        .section-title { color: #DCE775 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
-        .sub-header { color: #DCE775 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
-        .formula-box { background: rgba(220, 231, 117, 0.05) !important; border-left: 4px solid #DCE775 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
-        h2 { color: #DCE775 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
-        h3 { color: #DCE775 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
-        .highlight { color: #DCE775 !important; font-weight: 700; }
-        strong { color: #DCE775 !important; font-weight: 600; }
+        .section-title { color: #FF4DA6 !important; font-weight: 600; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        .sub-header { color: #FF4DA6 !important; font-weight: 600; margin-top: 15px; margin-bottom: 8px; font-size: 16px; }
+        .formula-box { background: rgba(255, 77, 166, 0.05) !important; border-left: 4px solid #FF4DA6 !important; padding: 15px; margin: 15px 0; border-radius: 0 8px 8px 0; font-size: 16px; line-height: 1.8; }
+        h2 { color: #FF4DA6 !important; font-size: 18px; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; font-weight: 600; }
+        h3 { color: #FF4DA6 !important; font-size: 16px; margin-top: 15px; margin-bottom: 8px; font-weight: 600; }
+        .highlight { color: #FF4DA6 !important; font-weight: 700; }
+        strong { color: #FF4DA6 !important; font-weight: 600; }
         
         /* Utility classes for step-by-step */
         .step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
         .sol-step { margin-bottom: 8px; font-size: 16px; line-height: 1.8; }
-        .ans-highlight { color: #DCE775; font-weight: 700; }
+        .ans-highlight { color: #FF4DA6; font-weight: 700; }
         .svg-container { display: flex; justify-content: center; margin: 15px 0; width: 100%; }
+        
+        /* Table styles */
+        table { width: 100%; border-collapse: collapse; margin: 15px auto; font-size: 15px; color: #e0e0e0; text-align: center; }
+        th { background: rgba(255, 77, 166, 0.05); color: #FF4DA6; font-weight: 600; padding: 10px 8px; border: 1px solid rgba(255, 255, 255, 0.15); text-align: center; }
+        td { padding: 8px; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; }
+        
+        /* Bar graph styles */
+        svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>
 <!DOCTYPE html>
 <html lang="en">

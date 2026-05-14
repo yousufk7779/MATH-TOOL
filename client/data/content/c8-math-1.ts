@@ -176,10 +176,6 @@ export const c8Math1: ChapterContent = {
   </style>
 
     <div class="premium-container">
-      <div class="hero-card">
-        <div class="hero-title">Rational Numbers</div>
-        <div style="opacity: 0.9; font-size: 16px;">Class 8 Mathematics • Chapter 1</div>
-      </div>
 
       <div class="section-box">
         <div class="section-header"><span>✦</span> Introduction</div>
