@@ -46,6 +46,16 @@ function HomeScreen() {
 
           <View style={styles.buttonWrapper}>
             <ColorButton
+              testID="button-social-science"
+              title="SOCIAL SCIENCE"
+              icon="🌍"
+              colors={JiguuColors.gradients.deepOrange}
+              onPress={() => navigation.navigate("Class10SocialScience")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
               testID="button-quiz"
               title="START QUIZ"
               icon="🎯"

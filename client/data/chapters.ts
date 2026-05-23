@@ -26,6 +26,40 @@ export const class10Chapters: Chapter[] = [
 ];
 
 export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
+  "Class 10 Social Science": {
+    "History": [
+      { id: "sst-10-hist-1", number: 1, name: "Chapter 1", color: "#FF8A65" },
+      { id: "sst-10-hist-2", number: 2, name: "Chapter 2", color: "#FF8A65" },
+      { id: "sst-10-hist-3", number: 3, name: "Chapter 3", color: "#FF8A65" },
+      { id: "sst-10-hist-4", number: 4, name: "Chapter 4", color: "#FF8A65" },
+      { id: "sst-10-hist-5", number: 5, name: "Chapter 5", color: "#FF8A65" },
+      { id: "sst-10-hist-6", number: 6, name: "Chapter 6", color: "#FF8A65" }
+    ],
+    "Geography": [
+      { id: "sst-10-geo-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
+      { id: "sst-10-geo-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
+      { id: "sst-10-geo-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
+      { id: "sst-10-geo-4", number: 4, name: "Chapter 4", color: "#4CAF50" },
+      { id: "sst-10-geo-5", number: 5, name: "Chapter 5", color: "#4CAF50" },
+      { id: "sst-10-geo-6", number: 6, name: "Chapter 6", color: "#4CAF50" }
+    ],
+    "Civics": [
+      { id: "sst-10-civ-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
+      { id: "sst-10-civ-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
+      { id: "sst-10-civ-3", number: 3, name: "Chapter 3", color: "#9C27B0" },
+      { id: "sst-10-civ-4", number: 4, name: "Chapter 4", color: "#9C27B0" },
+      { id: "sst-10-civ-5", number: 5, name: "Chapter 5", color: "#9C27B0" },
+      { id: "sst-10-civ-6", number: 6, name: "Chapter 6", color: "#9C27B0" }
+    ],
+    "Economics": [
+      { id: "sst-10-eco-1", number: 1, name: "Chapter 1", color: "#FFD600" },
+      { id: "sst-10-eco-2", number: 2, name: "Chapter 2", color: "#FFD600" },
+      { id: "sst-10-eco-3", number: 3, name: "Chapter 3", color: "#FFD600" },
+      { id: "sst-10-eco-4", number: 4, name: "Chapter 4", color: "#FFD600" },
+      { id: "sst-10-eco-5", number: 5, name: "Chapter 5", color: "#FFD600" },
+      { id: "sst-10-eco-6", number: 6, name: "Chapter 6", color: "#FFD600" }
+    ]
+  },
   "Science": {
     "Physics": [
       { id: "sci-phy-1", number: 1, name: "Light - Reflection and Refraction", color: "#E91E63" },
@@ -290,7 +324,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     return bioGradients[(num - 1) % bioGradients.length];
   }
 
-  if (chapterId.match(/^c[789]-hist/)) {
+  if (chapterId.match(/^sst-10-hist/) || chapterId.match(/^c[789]-hist/)) {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const histPool = [
       JiguuColors.gradients.deepOrange, 
@@ -305,7 +339,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     return histPool[(num - 1) % histPool.length] as string[];
   }
 
-  if (chapterId.match(/^c[789]-geo/)) {
+  if (chapterId.match(/^sst-10-geo/) || chapterId.match(/^c[789]-geo/)) {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const geoPool = [
       JiguuColors.gradients.green,
@@ -320,7 +354,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     return geoPool[(num - 1) % geoPool.length] as string[];
   }
 
-  if (chapterId.match(/^c[789]-civ/)) {
+  if (chapterId.match(/^sst-10-civ/) || chapterId.match(/^c[789]-civ/)) {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const civPool = [
       JiguuColors.gradients.purple,
@@ -334,6 +368,19 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
       JiguuColors.gradients.gold
     ];
     return civPool[(num - 1) % civPool.length] as string[];
+  }
+
+  if (chapterId.match(/^sst-10-eco/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const ecoPool = [
+      JiguuColors.gradients.gold,
+      JiguuColors.gradients.pinkOrange,
+      JiguuColors.gradients.orange,
+      JiguuColors.gradients.deepOrange,
+      JiguuColors.gradients.violet,
+      JiguuColors.gradients.teal
+    ];
+    return ecoPool[(num - 1) % ecoPool.length] as string[];
   }
 
   if (chapterId.match(/^c[789]-sci-\d+$/)) {

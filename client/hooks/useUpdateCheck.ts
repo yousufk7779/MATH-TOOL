@@ -1,45 +1,48 @@
 import { useEffect } from 'react';
 import { Alert, Linking, Platform } from 'react-native';
 import Constants from 'expo-constants';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getApiUrl } from '@/lib/query-client';
 
-const UPDATE_CHECK_KEY = '@last_update_check_time';
 const PACKAGE_NAME = 'com.jiguu.mathtool';
 
 export const useUpdateCheck = () => {
   useEffect(() => {
     const checkVersion = async () => {
       try {
-        // 1. Throttle check (once every 24 hours)
-        const lastCheck = await AsyncStorage.getItem(UPDATE_CHECK_KEY);
-        const now = Date.now();
-        const oneDay = 24 * 60 * 60 * 1000;
-        
-        if (lastCheck && now - parseInt(lastCheck, 10) < oneDay) {
-          return;
+        // 1. Get current version
+        const currentVersion = Constants.expoConfig?.version || '1.0.0';
+        let latestVersion: string | null = null;
+
+        // 2. Try fetching from the backend server first (Fast & Robust)
+        try {
+          const baseUrl = getApiUrl();
+          const response = await fetch(`${baseUrl}api/latest-version`);
+          if (response.ok) {
+            const data = await response.json();
+            latestVersion = data.latestVersion || null;
+          }
+        } catch (serverError) {
+          console.log('Server update check failed, falling back to Play Store:', serverError);
         }
 
-        // 2. Get current version
-        const currentVersion = Constants.expoConfig?.version || '1.0.0';
-
-        // 3. Fetch latest version from Play Store (Android)
-        // Note: For iOS, you would check the App Store. 
-        // This is a robust manual implementation to avoid buggy libraries.
-        if (Platform.OS === 'android') {
-          const response = await fetch(`https://play.google.com/store/apps/details?id=${PACKAGE_NAME}&hl=en`);
-          const text = await response.text();
-          
-          // Match version pattern in Play Store HTML (this is a common reliable regex)
-          const match = text.match(/\[\[\["(\d+\.\d+\.\d+)"\]\]/);
-          const latestVersion = match ? match[1] : null;
-
-          if (latestVersion && isVersionNewer(currentVersion, latestVersion)) {
-            showUpdateAlert(latestVersion);
+        // 3. Fallback: Parse Google Play Store HTML directly (Android only)
+        if (!latestVersion && Platform.OS === 'android') {
+          try {
+            const response = await fetch(`https://play.google.com/store/apps/details?id=${PACKAGE_NAME}&hl=en`);
+            const text = await response.text();
+            
+            // Match version pattern in Play Store HTML
+            const match = text.match(/\[\[\["(\d+\.\d+\.\d+)"\]\]/);
+            latestVersion = match ? match[1] : null;
+          } catch (scrapeError) {
+            console.log('Play Store scraping check failed:', scrapeError);
           }
         }
 
-        // Update last check time
-        await AsyncStorage.setItem(UPDATE_CHECK_KEY, now.toString());
+        // 4. If newer version exists, show the update alert
+        if (latestVersion && isVersionNewer(currentVersion, latestVersion)) {
+          showUpdateAlert(latestVersion);
+        }
       } catch (error) {
         console.log('Update check failed:', error);
       }

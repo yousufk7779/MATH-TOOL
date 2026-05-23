@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { StyleSheet, View, Image, useWindowDimensions, Pressable } from "react-native";
+import { StyleSheet, View, Image, useWindowDimensions, Pressable, Share } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -19,6 +19,16 @@ export const CreatorCredit = memo(function CreatorCredit() {
   const isLandscape = width > height;
   const navigation = useNavigation<NavigationProp>();
 
+  const handleShare = async () => {
+    try {
+      await Share.share({
+        message: "Download JIGUU NCERT Solutions here:\nhttps://play.google.com/store/apps/details?id=com.jiguu.mathtool",
+      });
+    } catch (error: any) {
+      console.log("Error sharing app: ", error.message);
+    }
+  };
+
   return (
     <View style={[
       styles.container,
@@ -27,14 +37,25 @@ export const CreatorCredit = memo(function CreatorCredit() {
         paddingTop: isLandscape ? 4 : Spacing.md - 4,
       }
     ]}>
-      <Pressable 
-        style={styles.aboutLink} 
-        onPress={() => navigation.navigate("AboutEducator")}
-        hitSlop={10}
-      >
-        <Feather name="info" size={14} color={JiguuColors.textPrimary} style={styles.aboutIcon} />
-        <ThemedText style={styles.aboutText}>About</ThemedText>
-      </Pressable>
+      <View style={styles.linksContainer}>
+        <Pressable 
+          style={styles.aboutLink} 
+          onPress={() => navigation.navigate("AboutEducator")}
+          hitSlop={10}
+        >
+          <Feather name="info" size={14} color={JiguuColors.textPrimary} style={styles.aboutIcon} />
+          <ThemedText style={styles.aboutText}>About</ThemedText>
+        </Pressable>
+
+        <Pressable 
+          style={styles.shareLink} 
+          onPress={handleShare}
+          hitSlop={10}
+        >
+          <Feather name="share-2" size={14} color={JiguuColors.textPrimary} style={styles.shareIcon} />
+          <ThemedText style={styles.shareText}>Share</ThemedText>
+        </Pressable>
+      </View>
 
       <View style={styles.creatorInfo}>
         <Pressable 
@@ -66,6 +87,11 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: JiguuColors.border,
   },
+  linksContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: Spacing.md,
+  },
   creatorInfo: {
     flexDirection: "row",
     alignItems: "center",
@@ -80,6 +106,20 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   aboutText: {
+    fontSize: 13,
+    fontFamily: "NotoSans_400Regular",
+    color: JiguuColors.textPrimary,
+  },
+  shareLink: {
+    flexDirection: "row",
+    alignItems: "center",
+    opacity: 0.6,
+    paddingVertical: Spacing.xs,
+  },
+  shareIcon: {
+    marginRight: 6,
+  },
+  shareText: {
     fontSize: 13,
     fontFamily: "NotoSans_400Regular",
     color: JiguuColors.textPrimary,
