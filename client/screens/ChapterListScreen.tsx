@@ -10,7 +10,12 @@ import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
 import { JiguuColors, Spacing, Typography } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
-import { class10Chapters, Chapter, otherSubjectsData, getChapterGradient } from "@/data/chapters";
+import {
+  class10Chapters,
+  Chapter,
+  otherSubjectsData,
+  getChapterGradient,
+} from "@/data/chapters";
 import { getHomeRoute } from "@/utils/navigation-utils";
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -23,48 +28,60 @@ function ChapterListScreen() {
 
   const subject = route.params?.subject || "Mathematics";
   const topic = route.params?.topic || "";
-  const className = route.params?.className || (subject.includes("Class") ? `Class ${subject.split(" ")[1]}` : "Class 10");
+  const className =
+    route.params?.className ||
+    (subject.includes("Class") ? `Class ${subject.split(" ")[1]}` : "Class 10");
 
   let displayChapters: Chapter[] = [];
   if (subject === "Mathematics") {
     displayChapters = class10Chapters;
-  } else if (subject && topic && otherSubjectsData[subject] && otherSubjectsData[subject][topic]) {
+  } else if (
+    subject &&
+    topic &&
+    otherSubjectsData[subject] &&
+    otherSubjectsData[subject][topic]
+  ) {
     displayChapters = otherSubjectsData[subject][topic];
   }
 
-  const renderItem = useCallback(({ item }: { item: Chapter }) => {
-    const available = !item.locked;
-    const chapterGradient = getChapterGradient(item.id);
+  const renderItem = useCallback(
+    ({ item }: { item: Chapter }) => {
+      const available = !item.locked;
+      const chapterGradient = getChapterGradient(item.id);
 
-    return (
-      <ChapterCard
-        testID={`chapter-card-${item.id}`}
-        number={item.number}
-        name={item.name}
-        colors={chapterGradient}
-        isAvailable={available}
-        onPress={() => {
-          console.log("Chapter clicked:", item.id);
-          navigation.navigate("Solution", {
-            chapterId: item.id,
-            chapterName: item.name,
-            className: className
-          });
-        }}
+      return (
+        <ChapterCard
+          testID={`chapter-card-${item.id}`}
+          number={item.number}
+          name={item.name}
+          colors={chapterGradient}
+          isAvailable={available}
+          onPress={() => {
+            console.log("Chapter clicked:", item.id);
+            navigation.navigate("Solution", {
+              chapterId: item.id,
+              chapterName: item.name,
+              className: className,
+            });
+          }}
+        />
+      );
+    },
+    [navigation, subject],
+  );
+
+  const displayTopic =
+    topic === "Civics" && className === "Class 10" ? "Political Science" : topic;
+
+  const renderEmptyState = useCallback(
+    () => (
+      <EmptyState
+        title={displayTopic ? `${displayTopic} Chapters` : `${subject} Chapters`}
+        message="Content for this subject is coming incredibly soon in beautiful JSON format!"
       />
-    );
-  }, [navigation, subject]);
-
-
-
-  const renderEmptyState = useCallback(() => (
-    <EmptyState
-      title={topic ? `${topic} Chapters` : `${subject} Chapters`}
-      message="Content for this subject is coming incredibly soon in beautiful JSON format!"
-    />
-  ), [subject, topic]);
-
-
+    ),
+    [subject, displayTopic],
+  );
 
   const homeRoute = getHomeRoute(className);
 
@@ -77,7 +94,9 @@ function ChapterListScreen() {
         contentContainerStyle={[
           styles.listContent,
           displayChapters.length === 0 ? styles.emptyContent : null,
-          displayChapters.length > 0 && displayChapters.length < 7 ? styles.centeredContent : null,
+          displayChapters.length > 0 && displayChapters.length < 7
+            ? styles.centeredContent
+            : null,
         ]}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={Separator}
@@ -97,7 +116,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   centeredContent: {
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   emptyContent: {
     flex: 1,
