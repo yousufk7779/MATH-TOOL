@@ -1,8 +1,25 @@
 import { ChapterHTMLs } from "./chapterHTMLs";
-import { Definition, Formula, Question, Exercise, MCQ, Example, Theorem, ChapterContent } from "./types";
+import {
+  Definition,
+  Formula,
+  Question,
+  Exercise,
+  MCQ,
+  Example,
+  Theorem,
+  ChapterContent,
+} from "./types";
 
-export type { Definition, Formula, Question, Exercise, MCQ, Example, Theorem, ChapterContent };
-
+export type {
+  Definition,
+  Formula,
+  Question,
+  Exercise,
+  MCQ,
+  Example,
+  Theorem,
+  ChapterContent,
+};
 
 import { mathCh1 } from "./content/math-ch1";
 import { mathCh2 } from "./content/math-ch2";
@@ -36,6 +53,7 @@ import { sstHis2 } from "./content/sst-his-2";
 import { sstHis3 } from "./content/sst-his-3";
 import { sstHis4 } from "./content/sst-his-4";
 import { sstHis5 } from "./content/sst-his-5";
+import { sstHis6 } from "./content/sst-his-6";
 import { sstGeo1 } from "./content/sst-geo-1";
 import { sstGeo2 } from "./content/sst-geo-2";
 import { sstGeo3 } from "./content/sst-geo-3";
@@ -155,11 +173,6 @@ import { c8Math11 } from "./content/c8-math-11";
 import { c8Math12 } from "./content/c8-math-12";
 import { c8Math13 } from "./content/c8-math-13";
 
-
-
-
-
-
 import { c9Math1 } from "./content/c9-math-1";
 import { c9Math2 } from "./content/c9-math-2";
 import { c9Math3 } from "./content/c9-math-3";
@@ -184,9 +197,6 @@ import { c7Math10 } from "./content/c7-math-10";
 import { c7Math11 } from "./content/c7-math-11";
 import { c7Math12 } from "./content/c7-math-12";
 import { c7Math13 } from "./content/c7-math-13";
-
-
-
 
 export const chapterContents: Record<string, ChapterContent> = {
   "c9-math-1": c9Math1,
@@ -217,22 +227,20 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c7-math-12": c7Math12,
   "c7-math-13": c7Math13,
 
-
-
-  "ch1": mathCh1,
-  "ch2": mathCh2,
-  "ch3": mathCh3,
-  "ch4": mathCh4,
-  "ch5": mathCh5,
-  "ch6": c9Math6,
-  "ch7": mathCh7,
-  "ch8": mathCh8,
-  "ch9": mathCh9,
-  "ch10": mathCh10,
-  "ch11": mathCh11,
-  "ch12": mathCh12,
-  "ch13": mathCh13,
-  "ch14": mathCh14,
+  ch1: mathCh1,
+  ch2: mathCh2,
+  ch3: mathCh3,
+  ch4: mathCh4,
+  ch5: mathCh5,
+  ch6: c9Math6,
+  ch7: mathCh7,
+  ch8: mathCh8,
+  ch9: mathCh9,
+  ch10: mathCh10,
+  ch11: mathCh11,
+  ch12: mathCh12,
+  ch13: mathCh13,
+  ch14: mathCh14,
   "sci-phy-1": sciPhy1,
   "sci-phy-2": sciPhy2,
   "sci-phy-3": sciPhy3,
@@ -251,6 +259,7 @@ export const chapterContents: Record<string, ChapterContent> = {
   "sst-his-3": sstHis3,
   "sst-his-4": sstHis4,
   "sst-his-5": sstHis5,
+  "sst-his-6": sstHis6,
   "sst-geo-1": sstGeo1,
   "sst-geo-2": sstGeo2,
   "sst-geo-3": sstGeo3,
@@ -358,14 +367,11 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c8-sci-13": c8Sci13,
 };
 
-
-
-
-
-
-
-
-const createEmptyContent = (id: string, num: number, title: string): ChapterContent => ({
+const createEmptyContent = (
+  id: string,
+  num: number,
+  title: string,
+): ChapterContent => ({
   id,
   number: num,
   title,
@@ -377,11 +383,11 @@ const createEmptyContent = (id: string, num: number, title: string): ChapterCont
   exercises: [],
   examples: [],
   mcqs: [],
-  summary: []
+  summary: [],
 });
 
 const emptyChapters: string[] = [];
-[9, 8, 7].forEach(c => {
+[9, 8, 7].forEach((c) => {
   for (let i = 1; i <= 14; i++) {
     emptyChapters.push(`c${c}-math-${i}`);
   }
@@ -392,7 +398,7 @@ const emptyChapters: string[] = [];
   }
 });
 
-emptyChapters.forEach(id => {
+emptyChapters.forEach((id) => {
   if (!chapterContents[id]) {
     const num = parseInt(id.split("-").pop() || "1");
     chapterContents[id] = createEmptyContent(id, num, `Chapter ${num}`);
@@ -410,11 +416,12 @@ chapterContents["c8-math-11"] = c8Math11;
 chapterContents["c8-math-12"] = c8Math12;
 chapterContents["c8-math-13"] = c8Math13;
 
-
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };
 
-export const getChapterContent = (chapterId: string): ChapterContent | undefined => {
+export const getChapterContent = (
+  chapterId: string,
+): ChapterContent | undefined => {
   return chapterContents[chapterId];
 };
