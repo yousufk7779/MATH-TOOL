@@ -44,12 +44,7 @@
   {
     "id": "es-4",
     "question": "What is the pH value of pure water?",
-    "options": [
-      "(A) 0",
-      "(B) 7",
-      "(C) 14",
-      "(D) 1"
-    ],
+    "options": ["(A) 0", "(B) 7", "(C) 14", "(D) 1"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -58,12 +53,7 @@
   {
     "id": "es-5",
     "question": "The SI unit of electric current is:",
-    "options": [
-      "(A) Volt",
-      "(B) Ohm",
-      "(C) Ampere",
-      "(D) Watt"
-    ],
+    "options": ["(A) Volt", "(B) Ohm", "(C) Ampere", "(D) Watt"],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -86,12 +76,7 @@
   {
     "id": "es-7",
     "question": "What is the chemical formula of common salt?",
-    "options": [
-      "(A) NaCl",
-      "(B) KCl",
-      "(C) MgCl2",
-      "(D) CaCl2"
-    ],
+    "options": ["(A) NaCl", "(B) KCl", "(C) MgCl2", "(D) CaCl2"],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -114,12 +99,7 @@
   {
     "id": "es-9",
     "question": "Which organ filters blood in the human body?",
-    "options": [
-      "(A) Heart",
-      "(B) Lungs",
-      "(C) Kidneys",
-      "(D) Liver"
-    ],
+    "options": ["(A) Heart", "(B) Lungs", "(C) Kidneys", "(D) Liver"],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "easy-science",
@@ -128,12 +108,7 @@
   {
     "id": "es-10",
     "question": "Ohm's law relates voltage, current and:",
-    "options": [
-      "(A) Power",
-      "(B) Resistance",
-      "(C) Energy",
-      "(D) Capacitance"
-    ],
+    "options": ["(A) Power", "(B) Resistance", "(C) Energy", "(D) Capacitance"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -142,12 +117,7 @@
   {
     "id": "es-11",
     "question": "Which part of the plant absorbs water?",
-    "options": [
-      "(A) Leaves",
-      "(B) Roots",
-      "(C) Stem",
-      "(D) Flower"
-    ],
+    "options": ["(A) Leaves", "(B) Roots", "(C) Stem", "(D) Flower"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -170,12 +140,7 @@
   {
     "id": "es-13",
     "question": "Which element is common to all acids?",
-    "options": [
-      "(A) Oxygen",
-      "(B) Hydrogen",
-      "(C) Nitrogen",
-      "(D) Chlorine"
-    ],
+    "options": ["(A) Oxygen", "(B) Hydrogen", "(C) Nitrogen", "(D) Chlorine"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -198,12 +163,7 @@
   {
     "id": "es-15",
     "question": "Blue litmus paper turns red in:",
-    "options": [
-      "(A) Acid",
-      "(B) Base",
-      "(C) Water",
-      "(D) Salt"
-    ],
+    "options": ["(A) Acid", "(B) Base", "(C) Water", "(D) Salt"],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -212,12 +172,7 @@
   {
     "id": "es-16",
     "question": "Which component of blood carries oxygen?",
-    "options": [
-      "(A) WBC",
-      "(B) RBC",
-      "(C) Platelets",
-      "(D) Plasma"
-    ],
+    "options": ["(A) WBC", "(B) RBC", "(C) Platelets", "(D) Plasma"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -226,12 +181,7 @@
   {
     "id": "es-17",
     "question": "The least distance of distinct vision for a normal eye is:",
-    "options": [
-      "(A) 25 m",
-      "(B) 25 cm",
-      "(C) 5 cm",
-      "(D) Infinite"
-    ],
+    "options": ["(A) 25 m", "(B) 25 cm", "(C) 5 cm", "(D) Infinite"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -254,12 +204,7 @@
   {
     "id": "es-19",
     "question": "Electric bulb filament is made of:",
-    "options": [
-      "(A) Copper",
-      "(B) Aluminum",
-      "(C) Tungsten",
-      "(D) Iron"
-    ],
+    "options": ["(A) Copper", "(B) Aluminum", "(C) Tungsten", "(D) Iron"],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -282,12 +227,7 @@
   {
     "id": "es-21",
     "question": "The unit of power of a lens is:",
-    "options": [
-      "(A) Metre",
-      "(B) Dioptre",
-      "(C) Watt",
-      "(D) Lumen"
-    ],
+    "options": ["(A) Metre", "(B) Dioptre", "(C) Watt", "(D) Lumen"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -296,12 +236,7 @@
   {
     "id": "es-22",
     "question": "Which acid is released in our stomach?",
-    "options": [
-      "(A) H2SO4",
-      "(B) HNO3",
-      "(C) HCl",
-      "(D) Acetic acid"
-    ],
+    "options": ["(A) H2SO4", "(B) HNO3", "(C) HCl", "(D) Acetic acid"],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -310,12 +245,7 @@
   {
     "id": "es-23",
     "question": "How many chromosomes are there in human cells?",
-    "options": [
-      "(A) 23",
-      "(B) 46",
-      "(C) 22",
-      "(D) 44"
-    ],
+    "options": ["(A) 23", "(B) 46", "(C) 22", "(D) 44"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -324,12 +254,7 @@
   {
     "id": "es-24",
     "question": "Force = Mass x ________:",
-    "options": [
-      "(A) Velocity",
-      "(B) Acceleration",
-      "(C) Distance",
-      "(D) Time"
-    ],
+    "options": ["(A) Velocity", "(B) Acceleration", "(C) Distance", "(D) Time"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -338,12 +263,7 @@
   {
     "id": "es-25",
     "question": "Which metal is liquid at room temperature?",
-    "options": [
-      "(A) Iron",
-      "(B) Sodium",
-      "(C) Mercury",
-      "(D) Gold"
-    ],
+    "options": ["(A) Iron", "(B) Sodium", "(C) Mercury", "(D) Gold"],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -366,12 +286,7 @@
   {
     "id": "es-27",
     "question": "Which non-metal is a good conductor of electricity?",
-    "options": [
-      "(A) Diamond",
-      "(B) Graphite",
-      "(C) Sulfur",
-      "(D) Phosphorus"
-    ],
+    "options": ["(A) Diamond", "(B) Graphite", "(C) Sulfur", "(D) Phosphorus"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -380,12 +295,7 @@
   {
     "id": "es-28",
     "question": "What is the basic unit of heredity?",
-    "options": [
-      "(A) Cell",
-      "(B) DNA",
-      "(C) Gene",
-      "(D) Proteins"
-    ],
+    "options": ["(A) Cell", "(B) DNA", "(C) Gene", "(D) Proteins"],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "easy-science",
@@ -408,12 +318,7 @@
   {
     "id": "es-30",
     "question": "Plants lose water through pores called:",
-    "options": [
-      "(A) Stomata",
-      "(B) Xylem",
-      "(C) Phloem",
-      "(D) Cells"
-    ],
+    "options": ["(A) Stomata", "(B) Xylem", "(C) Phloem", "(D) Cells"],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "easy-science",
@@ -422,12 +327,7 @@
   {
     "id": "es-31",
     "question": "Which planet is known as the Red Planet?",
-    "options": [
-      "(A) Venus",
-      "(B) Mars",
-      "(C) Jupiter",
-      "(D) Saturn"
-    ],
+    "options": ["(A) Venus", "(B) Mars", "(C) Jupiter", "(D) Saturn"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -450,12 +350,7 @@
   {
     "id": "es-33",
     "question": "Our heart has how many chambers?",
-    "options": [
-      "(A) 2",
-      "(B) 3",
-      "(C) 4",
-      "(D) 5"
-    ],
+    "options": ["(A) 2", "(B) 3", "(C) 4", "(D) 5"],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "easy-science",
@@ -478,12 +373,7 @@
   {
     "id": "es-35",
     "question": "Which gas is known as Laughing Gas?",
-    "options": [
-      "(A) NO2",
-      "(B) N2O",
-      "(C) NO",
-      "(D) NH3"
-    ],
+    "options": ["(A) NO2", "(B) N2O", "(C) NO", "(D) NH3"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -492,12 +382,7 @@
   {
     "id": "es-36",
     "question": "The largest gland in the human body is:",
-    "options": [
-      "(A) Pancreas",
-      "(B) Liver",
-      "(C) Thyroid",
-      "(D) Adrenal"
-    ],
+    "options": ["(A) Pancreas", "(B) Liver", "(C) Thyroid", "(D) Adrenal"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -506,12 +391,7 @@
   {
     "id": "es-37",
     "question": "Refractive index of water is approx:",
-    "options": [
-      "(A) 1.0",
-      "(B) 1.33",
-      "(C) 1.50",
-      "(D) 2.42"
-    ],
+    "options": ["(A) 1.0", "(B) 1.33", "(C) 1.50", "(D) 2.42"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -534,12 +414,7 @@
   {
     "id": "es-39",
     "question": "Which blood group is called universal donor?",
-    "options": [
-      "(A) A",
-      "(B) B",
-      "(C) AB",
-      "(D) O"
-    ],
+    "options": ["(A) A", "(B) B", "(C) AB", "(D) O"],
     "correctAnswer": "D",
     "subject": "life",
     "chapterId": "easy-science",
@@ -590,12 +465,7 @@
   {
     "id": "es-43",
     "question": "Acid used in car batteries:",
-    "options": [
-      "(A) HCl",
-      "(B) HNO3",
-      "(C) H2SO4",
-      "(D) Citric acid"
-    ],
+    "options": ["(A) HCl", "(B) HNO3", "(C) H2SO4", "(D) Citric acid"],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -604,12 +474,7 @@
   {
     "id": "es-44",
     "question": "Pollen grains are produced in:",
-    "options": [
-      "(A) Stigma",
-      "(B) Anther",
-      "(C) Ovary",
-      "(D) Style"
-    ],
+    "options": ["(A) Stigma", "(B) Anther", "(C) Ovary", "(D) Style"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -646,12 +511,7 @@
   {
     "id": "es-47",
     "question": "The percentage of nitrogen in air is around:",
-    "options": [
-      "(A) 21%",
-      "(B) 78%",
-      "(C) 0.03%",
-      "(D) 1%"
-    ],
+    "options": ["(A) 21%", "(B) 78%", "(C) 0.03%", "(D) 1%"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -660,12 +520,7 @@
   {
     "id": "es-48",
     "question": "A group of tissues working together forms:",
-    "options": [
-      "(A) Cell",
-      "(B) Organ",
-      "(C) System",
-      "(D) Organism"
-    ],
+    "options": ["(A) Cell", "(B) Organ", "(C) System", "(D) Organism"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -674,12 +529,7 @@
   {
     "id": "es-49",
     "question": "Unit of heat energy is:",
-    "options": [
-      "(A) Watt",
-      "(B) Joule",
-      "(C) Pascal",
-      "(D) Newton"
-    ],
+    "options": ["(A) Watt", "(B) Joule", "(C) Pascal", "(D) Newton"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -688,12 +538,7 @@
   {
     "id": "es-50",
     "question": "Which gas is produced in fermentation?",
-    "options": [
-      "(A) CO2",
-      "(B) O2",
-      "(C) N2",
-      "(D) H2"
-    ],
+    "options": ["(A) CO2", "(B) O2", "(C) N2", "(D) H2"],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -702,12 +547,7 @@
   {
     "id": "es-51",
     "question": "The male reproductive part of a flower is:",
-    "options": [
-      "(A) Pistil",
-      "(B) Stamen",
-      "(C) Petal",
-      "(D) Sepal"
-    ],
+    "options": ["(A) Pistil", "(B) Stamen", "(C) Petal", "(D) Sepal"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -716,12 +556,7 @@
   {
     "id": "es-52",
     "question": "Sound cannot travel through:",
-    "options": [
-      "(A) Solid",
-      "(B) Liquid",
-      "(C) Gas",
-      "(D) Vacuum"
-    ],
+    "options": ["(A) Solid", "(B) Liquid", "(C) Gas", "(D) Vacuum"],
     "correctAnswer": "D",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -730,12 +565,7 @@
   {
     "id": "es-53",
     "question": "Which of these is a noble gas?",
-    "options": [
-      "(A) Oxygen",
-      "(B) Helium",
-      "(C) Hydrogen",
-      "(D) Nitrogen"
-    ],
+    "options": ["(A) Oxygen", "(B) Helium", "(C) Hydrogen", "(D) Nitrogen"],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -744,12 +574,7 @@
   {
     "id": "es-54",
     "question": "What is the lifespan of RBCs (approx)?",
-    "options": [
-      "(A) 120 days",
-      "(B) 10 days",
-      "(C) Year",
-      "(D) Month"
-    ],
+    "options": ["(A) 120 days", "(B) 10 days", "(C) Year", "(D) Month"],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "easy-science",
@@ -758,12 +583,7 @@
   {
     "id": "es-55",
     "question": "The device used to store charge is:",
-    "options": [
-      "(A) Resistor",
-      "(B) Inductor",
-      "(C) Capacitor",
-      "(D) Battery"
-    ],
+    "options": ["(A) Resistor", "(B) Inductor", "(C) Capacitor", "(D) Battery"],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -772,12 +592,7 @@
   {
     "id": "es-56",
     "question": "Calcium Carbonate formula:",
-    "options": [
-      "(A) CaCO3",
-      "(B) CaO",
-      "(C) Ca(OH)2",
-      "(D) CaSO4"
-    ],
+    "options": ["(A) CaCO3", "(B) CaO", "(C) Ca(OH)2", "(D) CaSO4"],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -786,12 +601,7 @@
   {
     "id": "es-57",
     "question": "Digestion of protein starts in:",
-    "options": [
-      "(A) Mouth",
-      "(B) Stomach",
-      "(C) Intestine",
-      "(D) Esophagus"
-    ],
+    "options": ["(A) Mouth", "(B) Stomach", "(C) Intestine", "(D) Esophagus"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",
@@ -800,12 +610,7 @@
   {
     "id": "es-58",
     "question": "Light year is a unit of:",
-    "options": [
-      "(A) Time",
-      "(B) Distance",
-      "(C) Brightness",
-      "(D) Speed"
-    ],
+    "options": ["(A) Time", "(B) Distance", "(C) Brightness", "(D) Speed"],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "easy-science",
@@ -814,12 +619,7 @@
   {
     "id": "es-59",
     "question": "Zinc coated iron is called:",
-    "options": [
-      "(A) Galvanized iron",
-      "(B) Alloy",
-      "(C) Rust",
-      "(D) Brass"
-    ],
+    "options": ["(A) Galvanized iron", "(B) Alloy", "(C) Rust", "(D) Brass"],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "easy-science",
@@ -828,12 +628,7 @@
   {
     "id": "es-60",
     "question": "Study of plants is called:",
-    "options": [
-      "(A) Zoology",
-      "(B) Botany",
-      "(C) Ecology",
-      "(D) Microbiology"
-    ],
+    "options": ["(A) Zoology", "(B) Botany", "(C) Ecology", "(D) Microbiology"],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "easy-science",

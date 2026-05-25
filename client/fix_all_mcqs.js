@@ -1,12 +1,12 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 const files = [
-    "generate_ch8.js",
-    "generate_ch9.js",
-    "generate_ch10.js",
-    "generate_ch11.js",
-    "generate_ch12.js"
+  "generate_ch8.js",
+  "generate_ch9.js",
+  "generate_ch10.js",
+  "generate_ch11.js",
+  "generate_ch12.js",
 ];
 
 const NEW_SCRIPT = `const mcqQuizScript = \`
@@ -199,18 +199,18 @@ const NEW_SCRIPT = `const mcqQuizScript = \`
 </script>
 \`;`;
 
-files.forEach(file => {
-    const fullPath = path.join(__dirname, file);
-    if (fs.existsSync(fullPath)) {
-        let content = fs.readFileSync(fullPath, 'utf8');
-        const regex = /const mcqQuizScript = \`[\s\S]*?<\/script>\n\`;/;
-        
-        if (regex.test(content)) {
-            content = content.replace(regex, NEW_SCRIPT);
-            fs.writeFileSync(fullPath, content);
-            console.log("Updated " + file);
-        } else {
-            console.log("Regex did not match for " + file);
-        }
+files.forEach((file) => {
+  const fullPath = path.join(__dirname, file);
+  if (fs.existsSync(fullPath)) {
+    let content = fs.readFileSync(fullPath, "utf8");
+    const regex = /const mcqQuizScript = \`[\s\S]*?<\/script>\n\`;/;
+
+    if (regex.test(content)) {
+      content = content.replace(regex, NEW_SCRIPT);
+      fs.writeFileSync(fullPath, content);
+      console.log("Updated " + file);
+    } else {
+      console.log("Regex did not match for " + file);
     }
+  }
 });

@@ -4,97 +4,114 @@ export const c9Math5: ChapterContent = {
   id: "c9-math-5",
   number: 5,
   title: "Lines and Angles",
-  introduction: "In this chapter, we will study the properties of the angles formed when two lines intersect each other, and also the properties of the angles formed when a line intersects two or more parallel lines at distinct points.",
+  introduction:
+    "In this chapter, we will study the properties of the angles formed when two lines intersect each other, and also the properties of the angles formed when a line intersects two or more parallel lines at distinct points.",
   definitions: [
-    { term: "Line Segment", description: "A part of a line with two end points." },
+    {
+      term: "Line Segment",
+      description: "A part of a line with two end points.",
+    },
     { term: "Ray", description: "A part of a line with one end point." },
-    { term: "Collinear points", description: "Three or more points lying on the same line." },
-    { term: "Angle", description: "Formed when two rays originate from the same end point." }
+    {
+      term: "Collinear points",
+      description: "Three or more points lying on the same line.",
+    },
+    {
+      term: "Angle",
+      description: "Formed when two rays originate from the same end point.",
+    },
   ],
   keyPoints: [
     "An acute angle measures between 0° and 90°.",
     "A right angle is exactly 90°.",
     "An obtuse angle is greater than 90° but less than 180°.",
     "A straight angle is exactly 180°.",
-    "A reflex angle is greater than 180° but less than 360°."
+    "A reflex angle is greater than 180° but less than 360°.",
   ],
   formulas: [],
   crux: [
     "If a ray stands on a line, then the sum of two adjacent angles so formed is 180° (Linear Pair Axiom).",
-    "If two lines intersect each other, then the vertically opposite angles are equal."
+    "If two lines intersect each other, then the vertically opposite angles are equal.",
   ],
   exercises: [
     { id: "ex5-1", name: "Exercise 5.1", questions: [] },
     { id: "ex5-2", name: "Exercise 5.2", questions: [] },
-    { id: "ex5-3", name: "Exercise 5.3", questions: [] }
+    { id: "ex5-3", name: "Exercise 5.3", questions: [] },
   ],
   examples: [],
   mcqs: [
     {
       id: "m1",
-      question: "The measure of an angle which is four times its supplement is:",
+      question:
+        "The measure of an angle which is four times its supplement is:",
       options: ["36°", "144°", "120°", "100°"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m2",
-      question: "If two interior angles on the same side of a transversal intersecting two parallel lines are in the ratio 2:3, then the greater of the two angles is:",
+      question:
+        "If two interior angles on the same side of a transversal intersecting two parallel lines are in the ratio 2:3, then the greater of the two angles is:",
       options: ["72°", "108°", "54°", "120°"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m3",
       question: "An angle is 20° less than its complement. The angle is:",
       options: ["35°", "55°", "45°", "25°"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m4",
-      question: "If one angle of a linear pair is acute, then the other angle is:",
+      question:
+        "If one angle of a linear pair is acute, then the other angle is:",
       options: ["Acute", "Obtuse", "Right", "Reflex"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m5",
       question: "The sum of all angles around a point is:",
       options: ["90°", "180°", "270°", "360°"],
-      correctAnswer: "D"
+      correctAnswer: "D",
     },
     {
       id: "m6",
       question: "The complement of 52° is:",
       options: ["38°", "48°", "128°", "148°"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m7",
-      question: "If two parallel lines are intersected by a transversal, then the bisectors of any two corresponding angles are:",
+      question:
+        "If two parallel lines are intersected by a transversal, then the bisectors of any two corresponding angles are:",
       options: ["Perpendicular", "Parallel", "Intersecting", "None of these"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m8",
-      question: "Angles of a triangle are in the ratio 2:4:3. The smallest angle of the triangle is:",
+      question:
+        "Angles of a triangle are in the ratio 2:4:3. The smallest angle of the triangle is:",
       options: ["60°", "40°", "80°", "20°"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m9",
-      question: "An exterior angle of a triangle is 105° and its two interior opposite angles are equal. Each of these equal angles is:",
+      question:
+        "An exterior angle of a triangle is 105° and its two interior opposite angles are equal. Each of these equal angles is:",
       options: ["37.5°", "52.5°", "72.5°", "75°"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m10",
-      question: "If two lines intersect, the vertically opposite angles are always:",
+      question:
+        "If two lines intersect, the vertically opposite angles are always:",
       options: ["Supplementary", "Complementary", "Equal", "Unequal"],
-      correctAnswer: "C"
-    }
+      correctAnswer: "C",
+    },
   ],
   summary: [
     "Adjacent angles with a common arm and non-common arms forming a line are called linear pairs.",
     "Parallel lines never intersect and the distance between them remains constant.",
-    "The sum of angles of a triangle is 180°."
+    "The sum of angles of a triangle is 180°.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -622,6 +639,6 @@ export const c9Math5: ChapterContent = {
           So, &ang;TQR + &ang;QTR = &ang;TQR + 1/2 &ang;QPR &rArr; <strong>&ang;QTR = 1/2 &ang;QPR</strong>.
         </div>
       </div>
-`
-  }
+`,
+  },
 };

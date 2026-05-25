@@ -4,26 +4,38 @@ export const c9Math4: ChapterContent = {
   id: "c9-math-4",
   number: 4,
   title: "Coordinate Geometry",
-  introduction: "In this chapter, we will learn how to locate the position of a point in a plane using two perpendicular lines. This system is known as the Cartesian system, named after Rene Descartes.",
+  introduction:
+    "In this chapter, we will learn how to locate the position of a point in a plane using two perpendicular lines. This system is known as the Cartesian system, named after Rene Descartes.",
   definitions: [
-    { term: "Abscissa", description: "The x-coordinate of a point, representing its distance from the y-axis." },
-    { term: "Ordinate", description: "The y-coordinate of a point, representing its distance from the x-axis." },
-    { term: "Origin", description: "The intersection of the x and y axes, coordinates (0, 0)." }
+    {
+      term: "Abscissa",
+      description:
+        "The x-coordinate of a point, representing its distance from the y-axis.",
+    },
+    {
+      term: "Ordinate",
+      description:
+        "The y-coordinate of a point, representing its distance from the x-axis.",
+    },
+    {
+      term: "Origin",
+      description: "The intersection of the x and y axes, coordinates (0, 0).",
+    },
   ],
   keyPoints: [
     "The horizontal line is the x-axis and the vertical line is the y-axis.",
     "The coordinate axes divide the plane into four quadrants.",
     "The coordinates of a point on the x-axis are of the form (x, 0).",
-    "The coordinates of a point on the y-axis are of the form (0, y)."
+    "The coordinates of a point on the y-axis are of the form (0, y).",
   ],
   formulas: [],
   crux: [
-    "Quadrant I: (+, +), Quadrant II: (-, +), Quadrant III: (-, -), Quadrant IV: (+, -)."
+    "Quadrant I: (+, +), Quadrant II: (-, +), Quadrant III: (-, -), Quadrant IV: (+, -).",
   ],
   exercises: [
     { id: "ex4-1", name: "Exercise 4.1", questions: [] },
     { id: "ex4-2", name: "Exercise 4.2", questions: [] },
-    { id: "ex4-3", name: "Exercise 4.3", questions: [] }
+    { id: "ex4-3", name: "Exercise 4.3", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -31,67 +43,78 @@ export const c9Math4: ChapterContent = {
       id: "m1",
       question: "The point (-3, 5) lies in which quadrant?",
       options: ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m2",
       question: "The distance of the point (4, 3) from the x-axis is:",
       options: ["4 units", "3 units", "7 units", "5 units"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m3",
       question: "The coordinates of the origin are:",
       options: ["(1, 1)", "(1, 0)", "(0, 1)", "(0, 0)"],
-      correctAnswer: "D"
+      correctAnswer: "D",
     },
     {
       id: "m4",
       question: "Abscissa of a point is positive in:",
-      options: ["Quadrants I and II", "Quadrants I and IV", "Quadrant I only", "Quadrant II only"],
-      correctAnswer: "B"
+      options: [
+        "Quadrants I and II",
+        "Quadrants I and IV",
+        "Quadrant I only",
+        "Quadrant II only",
+      ],
+      correctAnswer: "B",
     },
     {
       id: "m5",
       question: "The point (0, -7) lies on:",
       options: ["x-axis", "y-axis", "Quadrant III", "Quadrant IV"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m6",
       question: "Ordinate of all points on the x-axis is:",
       options: ["0", "1", "Any number", "-1"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m7",
       question: "The points (-5, 2) and (2, -5) lie in:",
-      options: ["Same quadrant", "II and III quadrants respectively", "II and IV quadrants respectively", "IV and II quadrants respectively"],
-      correctAnswer: "C"
+      options: [
+        "Same quadrant",
+        "II and III quadrants respectively",
+        "II and IV quadrants respectively",
+        "IV and II quadrants respectively",
+      ],
+      correctAnswer: "C",
     },
     {
       id: "m8",
       question: "The distance of the point (0, 8) from the origin is:",
       options: ["0 units", "8 units", "4 units", "64 units"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m9",
       question: "Which point lies to the left of the y-axis?",
       options: ["(2, 0)", "(-2, 0)", "(0, 2)", "(0, -2)"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m10",
-      question: "The perpendicular distance of the point P(3, 4) from the y-axis is:",
+      question:
+        "The perpendicular distance of the point P(3, 4) from the y-axis is:",
       options: ["3", "4", "5", "7"],
-      correctAnswer: "A"
-    }
+      correctAnswer: "A",
+    },
   ],
   summary: [
     "The Cartesian plane is formed by two perpendicular lines.",
     "Every point is represented by (x, y).",
-    "Signs in quadrants: I(+,+), II(-,+), III(-,-), IV(+,-)."
+    "Signs in quadrants: I(+,+), II(-,+), III(-,-), IV(+,-).",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -230,6 +253,6 @@ export const c9Math4: ChapterContent = {
           - Continue for all points.
         </div>
       </div>
-    `
-  }
+    `,
+  },
 };

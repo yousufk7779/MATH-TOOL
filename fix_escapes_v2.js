@@ -1,6 +1,6 @@
-const fs = require('fs');
-const path = 'd:/All NCERT SOLUTIONS/client/data/content/math-ch3.ts';
-let content = fs.readFileSync(path, 'utf8');
+const fs = require("fs");
+const path = "d:/All NCERT SOLUTIONS/client/data/content/math-ch3.ts";
+let content = fs.readFileSync(path, "utf8");
 
 // Fix the "backslash-over-kill" quotes.
 // Any sequence like \\" or \\\" that precedes a quote intended to be INSIDE the string
@@ -13,8 +13,8 @@ content = content.replace(/\\\\+\"/g, '\\"');
 
 // Also check for literal newlines again just in case
 content = content.replace(/"([^"\\]*(?:\\.[^"\\]*)*)"/gs, (match) => {
-    return match.replace(/\r?\n/g, ' ');
+  return match.replace(/\r?\n/g, " ");
 });
 
-fs.writeFileSync(path, content, 'utf8');
+fs.writeFileSync(path, content, "utf8");
 console.log("Done.");

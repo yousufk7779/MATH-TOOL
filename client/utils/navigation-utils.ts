@@ -3,7 +3,10 @@ import { RootStackParamList } from "@/navigation/RootStackNavigator";
 /**
  * Determines the home route based on the class name or chapter ID.
  */
-export const getHomeRoute = (className?: string, chapterId?: string): keyof RootStackParamList => {
+export const getHomeRoute = (
+  className?: string,
+  chapterId?: string,
+): keyof RootStackParamList => {
   if (className) {
     if (className.includes("Class 9")) return "Class9";
     if (className.includes("Class 8")) return "Class8";

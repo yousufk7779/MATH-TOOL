@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist8: ChapterContent = {
-    id: "c7-hist-8",
-    number: 8,
-    title: "Eighteenth-Century Political Formations",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-8",
+  number: 8,
+  title: "Eighteenth-Century Political Formations",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>The eighteenth century was a period of massive political change in the Indian subcontinent. As the Mughal Empire declined after the death of Aurangzeb, many new independent kingdoms emerged. This chapter explores how regional powers like the Marathas, Sikhs, and the Nawabs of Awadh, Bengal, and Hyderabad rose to prominence.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist8: ChapterContent = {
             <p>The 18th century was not just a period of decline but also of new beginnings. Regional states developed their own administrative and revenue systems, often being more efficient than the Mughals. While this fragmentation led to the eventual rise of British power, it also allowed regional cultures and political identities to flourish across India.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h8-ex-all": `
+  htmlExercises: {
+    "c7h8-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -114,82 +114,84 @@ export const c7Hist8: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Yes, the states of Jammu (Ranjit Dev) and Ladakh (Nima Namgyal) developed here. In the 18th century, life revolved around local kings and forts, whereas today we live in a democratic society with modern technology and schools.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "The eighteenth century was a period of massive political change in the Indian subcontinent.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h8-mcq-1",
+      question: "Who founded the state of Hyderabad in 1724?",
+      options: ["Sa'adat Khan", "Asaf Jah", "Murshid Quli Khan", "Tipu Sultan"],
+      correctAnswer: "b",
     },
-    introduction: "The eighteenth century was a period of massive political change in the Indian subcontinent.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h8-mcq-1",
-            question: "Who founded the state of Hyderabad in 1724?",
-            options: ["Sa'adat Khan", "Asaf Jah", "Murshid Quli Khan", "Tipu Sultan"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h8-mcq-2",
-            question: "What was the 25% land revenue tax claimed by Marathas called?",
-            options: ["Zakat", "Chauth", "Sardeshmukhi", "Jizya"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h8-mcq-3",
-            question: "Under which ruler was Jammu called 'Dar-ul-Aman'?",
-            options: ["Ranjit Dev", "Nima Namgyal", "Gulab Singh", "Hari Singh"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-4",
-            question: "Who was the founder of the Awadh state?",
-            options: ["Sa'adat Khan", "Asaf Jah", "Nadir Shah", "Ahmad Shah Abdali"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-5",
-            question: "The combined army of the Sikhs was known as:",
-            options: ["Dal Khalsa", "Khalsa Panth", "Misl", "Jatha"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-6",
-            question: "Who was the founder of the Maratha kingdom?",
-            options: ["Shivaji", "Baji Rao I", "Balaji Vishwanath", "Nana Saheb"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-7",
-            question: "Nadir Shah invaded Delhi in which year?",
-            options: ["1739", "1761", "1526", "1707"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-8",
-            question: "What was the name of the Maratha peasant warriors?",
-            options: ["Kunbis", "Paiks", "Misls", "Jathas"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-9",
-            question: "Who was the famous ruler of Ladakh in the 18th century?",
-            options: ["Nima Namgyal", "Ranjit Dev", "Gulab Singh", "Zorawar Singh"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h8-mcq-10",
-            question: "The office of the provincial governor under Mughals was called:",
-            options: ["Subadar", "Faujdar", "Ijaradar", "Umara"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h8-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h8-mcq-2",
+      question: "What was the 25% land revenue tax claimed by Marathas called?",
+      options: ["Zakat", "Chauth", "Sardeshmukhi", "Jizya"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h8-mcq-3",
+      question: "Under which ruler was Jammu called 'Dar-ul-Aman'?",
+      options: ["Ranjit Dev", "Nima Namgyal", "Gulab Singh", "Hari Singh"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-4",
+      question: "Who was the founder of the Awadh state?",
+      options: ["Sa'adat Khan", "Asaf Jah", "Nadir Shah", "Ahmad Shah Abdali"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-5",
+      question: "The combined army of the Sikhs was known as:",
+      options: ["Dal Khalsa", "Khalsa Panth", "Misl", "Jatha"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-6",
+      question: "Who was the founder of the Maratha kingdom?",
+      options: ["Shivaji", "Baji Rao I", "Balaji Vishwanath", "Nana Saheb"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-7",
+      question: "Nadir Shah invaded Delhi in which year?",
+      options: ["1739", "1761", "1526", "1707"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-8",
+      question: "What was the name of the Maratha peasant warriors?",
+      options: ["Kunbis", "Paiks", "Misls", "Jathas"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-9",
+      question: "Who was the famous ruler of Ladakh in the 18th century?",
+      options: ["Nima Namgyal", "Ranjit Dev", "Gulab Singh", "Zorawar Singh"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h8-mcq-10",
+      question:
+        "The office of the provincial governor under Mughals was called:",
+      options: ["Subadar", "Faujdar", "Ijaradar", "Umara"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h8-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

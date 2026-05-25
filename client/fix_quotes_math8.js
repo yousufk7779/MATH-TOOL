@@ -1,13 +1,13 @@
-const fs = require('fs');
-let c = fs.readFileSync('data/content/math-ch8.ts', 'utf8');
+const fs = require("fs");
+let c = fs.readFileSync("data/content/math-ch8.ts", "utf8");
 
 // Fix unescaped "n causing string breakout
-c = c.replace(/="n12 ÷ 13/g, '= 12 ÷ 13');
-c = c.replace(/="n12 ÷ 5/g, '= 12 ÷ 5');
-c = c.replace(/="n<sup>12<\/sup>\/<sub>13<\/sub>/g, '= 12 ÷ 13');
-c = c.replace(/=\\"n<sup>12<\/sup>\/<sub>5<\/sub>/g, '= 12 ÷ 5');
-c = c.replace(/="n3 ÷ √7/g, '= 3 ÷ √7');
-c = c.replace(/="n<sup>3<\/sup>\/<sub>√7<\/sub>/g, '= 3 ÷ √7');
+c = c.replace(/="n12 ÷ 13/g, "= 12 ÷ 13");
+c = c.replace(/="n12 ÷ 5/g, "= 12 ÷ 5");
+c = c.replace(/="n<sup>12<\/sup>\/<sub>13<\/sub>/g, "= 12 ÷ 13");
+c = c.replace(/=\\"n<sup>12<\/sup>\/<sub>5<\/sub>/g, "= 12 ÷ 5");
+c = c.replace(/="n3 ÷ √7/g, "= 3 ÷ √7");
+c = c.replace(/="n<sup>3<\/sup>\/<sub>√7<\/sub>/g, "= 3 ÷ √7");
 
 // Fix the nested sup problems that resulted in () ÷ ()) etc. in EX 8.3
 const q1Target = `                {
@@ -63,7 +63,7 @@ let q3I = c.indexOf('"id": "q3"', ex3Index);
 
 let ex3pre = c.substring(0, q1I - 17);
 let ex3post = c.substring(q3I - 17);
-c = ex3pre + q1Target + ',\n' + q2Target + ',\n' + ex3post;
+c = ex3pre + q1Target + ",\n" + q2Target + ",\n" + ex3post;
 
-fs.writeFileSync('data/content/math-ch8.ts', c, 'utf8');
-console.log('Fixed quotes and corrupt structures!');
+fs.writeFileSync("data/content/math-ch8.ts", c, "utf8");
+console.log("Fixed quotes and corrupt structures!");

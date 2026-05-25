@@ -1,7 +1,8 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const imagePath = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\gold_leaf_electroscope_diagram_1777804282130.png';
-const b64 = fs.readFileSync(imagePath).toString('base64');
+const imagePath =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\gold_leaf_electroscope_diagram_1777804282130.png";
+const b64 = fs.readFileSync(imagePath).toString("base64");
 
 const content = `import { ChapterContent } from "../chapterContent";
 
@@ -187,5 +188,7 @@ export const c8Sci13: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-13.ts', content, 'utf8');
-console.log('Successfully updated Chapter 13 content with Electroscope diagram.');
+fs.writeFileSync("client/data/content/c8-sci-13.ts", content, "utf8");
+console.log(
+  "Successfully updated Chapter 13 content with Electroscope diagram.",
+);

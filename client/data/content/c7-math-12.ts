@@ -1,29 +1,42 @@
 import { ChapterContent } from "../types";
 
 export const c7Math12: ChapterContent = {
-    id: "c7-math-12",
-    number: 12,
-    title: "Symmetry",
-    isHtmlView: true,
-    introduction: "Symmetry is a balanced and proportionate similarity that is found in nature and man-made structures. In geometry, we study line symmetry and rotational symmetry.",
-    definitions: [
-        { term: "Line Symmetry", definition: "A figure has line symmetry if it can be folded along a line so that the two parts coincide." },
-        { term: "Rotational Symmetry", definition: "A figure has rotational symmetry if it looks the same after a rotation of less than 360°." },
-        { term: "Order of Rotation", definition: "The number of times a figure fits onto itself during a full 360° rotation." }
-    ],
-    keyPoints: [
-        "A square has 4 lines of symmetry and rotational symmetry of order 4.",
-        "A circle has infinite lines of symmetry and every angle is an angle of rotation.",
-        "Regular polygons have the same number of lines of symmetry as their number of sides."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex12-1", name: "Exercise 12.1", questions: [] },
-        { id: "ex12-2", name: "Exercise 12.2", questions: [] },
-        { id: "ex12-3", name: "Exercise 12.3", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-12",
+  number: 12,
+  title: "Symmetry",
+  isHtmlView: true,
+  introduction:
+    "Symmetry is a balanced and proportionate similarity that is found in nature and man-made structures. In geometry, we study line symmetry and rotational symmetry.",
+  definitions: [
+    {
+      term: "Line Symmetry",
+      definition:
+        "A figure has line symmetry if it can be folded along a line so that the two parts coincide.",
+    },
+    {
+      term: "Rotational Symmetry",
+      definition:
+        "A figure has rotational symmetry if it looks the same after a rotation of less than 360°.",
+    },
+    {
+      term: "Order of Rotation",
+      definition:
+        "The number of times a figure fits onto itself during a full 360° rotation.",
+    },
+  ],
+  keyPoints: [
+    "A square has 4 lines of symmetry and rotational symmetry of order 4.",
+    "A circle has infinite lines of symmetry and every angle is an angle of rotation.",
+    "Regular polygons have the same number of lines of symmetry as their number of sides.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex12-1", name: "Exercise 12.1", questions: [] },
+    { id: "ex12-2", name: "Exercise 12.2", questions: [] },
+    { id: "ex12-3", name: "Exercise 12.3", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #00BFA5; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -41,8 +54,8 @@ export const c7Math12: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex12-1": `
+  htmlExercises: {
+    "ex12-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -183,7 +196,7 @@ export const c7Math12: ChapterContent = {
             </div>
         </div>
         `,
-        "ex12-2": `
+    "ex12-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -225,7 +238,7 @@ export const c7Math12: ChapterContent = {
             </div>
         </div>
         `,
-        "ex12-3": `
+    "ex12-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -308,20 +321,70 @@ export const c7Math12: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "A rectangle has ______ lines of symmetry.",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "A rectangle has ______ lines of symmetry.", options: ["1", "2", "3", "4"], correctAnswer: "B" },
-        { id: "m2", question: "Order of rotational symmetry of a square is:", options: ["1", "2", "3", "4"], correctAnswer: "D" },
-        { id: "m3", question: "A circle has ______ lines of symmetry.", options: ["0", "1", "10", "Infinite"], correctAnswer: "D" },
-        { id: "m4", question: "Which letter has no lines of symmetry?", options: ["A", "B", "C", "Q"], correctAnswer: "D" },
-        { id: "m5", question: "Regular hexagon has ______ lines of symmetry.", options: ["3", "4", "5", "6"], correctAnswer: "D" },
-        { id: "m6", question: "Angle of rotation for order 3 is:", options: ["120°", "90°", "60°", "180°"], correctAnswer: "A" },
-        { id: "m7", question: "Does a parallelogram have line symmetry?", options: ["Yes", "No", "Only if square", "Only if rectangle"], correctAnswer: "B" },
-        { id: "m8", question: "Order of rotation for letter 'S' is:", options: ["1", "2", "3", "4"], correctAnswer: "B" },
-        { id: "m9", question: "A regular pentagon has symmetry of order:", options: ["1", "3", "5", "10"], correctAnswer: "C" },
-        { id: "m10", question: "The smallest angle of rotation of a square is:", options: ["45°", "90°", "180°", "360°"], correctAnswer: "B" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Order of rotational symmetry of a square is:",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m3",
+      question: "A circle has ______ lines of symmetry.",
+      options: ["0", "1", "10", "Infinite"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m4",
+      question: "Which letter has no lines of symmetry?",
+      options: ["A", "B", "C", "Q"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m5",
+      question: "Regular hexagon has ______ lines of symmetry.",
+      options: ["3", "4", "5", "6"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m6",
+      question: "Angle of rotation for order 3 is:",
+      options: ["120°", "90°", "60°", "180°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question: "Does a parallelogram have line symmetry?",
+      options: ["Yes", "No", "Only if square", "Only if rectangle"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "Order of rotation for letter 'S' is:",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "A regular pentagon has symmetry of order:",
+      options: ["1", "3", "5", "10"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "The smallest angle of rotation of a square is:",
+      options: ["45°", "90°", "180°", "360°"],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [],
 };

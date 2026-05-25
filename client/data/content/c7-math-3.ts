@@ -1,31 +1,35 @@
 import { ChapterContent } from "../types";
 
 export const c7Math3: ChapterContent = {
-    id: "c7-math-3",
-    number: 3,
-    title: "Data Handling",
-    isHtmlView: true,
-    introduction: "In this chapter, we will learn how to collect, organize and represent data using various methods like Mean, Median, Mode and Bar Graphs. Data handling helps us make sense of large amounts of information.",
-    definitions: [],
-    keyPoints: [
-        "Arithmetic Mean is the average of all observations.",
-        "Range is the difference between the highest and lowest values.",
-        "Mode is the value that appears most often in a dataset.",
-        "Median is the middle value when data is sorted.",
-        "Bar graphs provide a visual comparison of different categories."
-    ],
-    formulas: [
-        { name: "Arithmetic Mean", formula: "Sum of all observations / Number of observations" },
-        { name: "Range", formula: "Highest Observation - Lowest Observation" }
-    ],
-    crux: [],
-    exercises: [
-        { id: "ex3-1", name: "Exercise 3.1", questions: [] },
-        { id: "ex3-2", name: "Exercise 3.2", questions: [] },
-        { id: "ex3-3", name: "Exercise 3.3", questions: [] },
-        { id: "ex3-4", name: "Exercise 3.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-3",
+  number: 3,
+  title: "Data Handling",
+  isHtmlView: true,
+  introduction:
+    "In this chapter, we will learn how to collect, organize and represent data using various methods like Mean, Median, Mode and Bar Graphs. Data handling helps us make sense of large amounts of information.",
+  definitions: [],
+  keyPoints: [
+    "Arithmetic Mean is the average of all observations.",
+    "Range is the difference between the highest and lowest values.",
+    "Mode is the value that appears most often in a dataset.",
+    "Median is the middle value when data is sorted.",
+    "Bar graphs provide a visual comparison of different categories.",
+  ],
+  formulas: [
+    {
+      name: "Arithmetic Mean",
+      formula: "Sum of all observations / Number of observations",
+    },
+    { name: "Range", formula: "Highest Observation - Lowest Observation" },
+  ],
+  crux: [],
+  exercises: [
+    { id: "ex3-1", name: "Exercise 3.1", questions: [] },
+    { id: "ex3-2", name: "Exercise 3.2", questions: [] },
+    { id: "ex3-3", name: "Exercise 3.3", questions: [] },
+    { id: "ex3-4", name: "Exercise 3.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #AB47BC; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -44,8 +48,8 @@ export const c7Math3: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex3-1": `
+  htmlExercises: {
+    "ex3-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(171, 71, 188, 0.1); color: #AB47BC; padding: 12px; border-radius: 8px; border-left: 6px solid #AB47BC; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -231,7 +235,7 @@ export const c7Math3: ChapterContent = {
             </div>
         </div>
         `,
-        "ex3-2": `
+    "ex3-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(171, 71, 188, 0.1); color: #AB47BC; padding: 12px; border-radius: 8px; border-left: 6px solid #AB47BC; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -336,7 +340,7 @@ export const c7Math3: ChapterContent = {
             </div>
         </div>
         `,
-        "ex3-3": `
+    "ex3-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(171, 71, 188, 0.1); color: #AB47BC; padding: 12px; border-radius: 8px; border-left: 6px solid #AB47BC; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -606,7 +610,7 @@ export const c7Math3: ChapterContent = {
             </div>
         </div>
         `,
-        "ex3-4": `
+    "ex3-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(171, 71, 188, 0.1); color: #AB47BC; padding: 12px; border-radius: 8px; border-left: 6px solid #AB47BC; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -674,20 +678,70 @@ export const c7Math3: ChapterContent = {
             </div>
         </div>
         `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "The average of 4, 6, 8, 10 is:",
+      options: ["6", "7", "8", "9"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "The average of 4, 6, 8, 10 is:", options: ["6", "7", "8", "9"], correctAnswer: "B" },
-        { id: "m2", question: "Range of data: 12, 10, 15, 18, 5 is:", options: ["10", "13", "18", "5"], correctAnswer: "B" },
-        { id: "m3", question: "The mode of 1, 2, 2, 3, 4 is:", options: ["1", "2", "3", "4"], correctAnswer: "B" },
-        { id: "m4", question: "Median of 3, 1, 5 is:", options: ["1", "3", "5", "4"], correctAnswer: "B" },
-        { id: "m5", question: "Probability of an impossible event is:", options: ["0", "1", "1/2", "Undefined"], correctAnswer: "A" },
-        { id: "m6", question: "The sum of probabilities of all possible outcomes is:", options: ["0", "0.5", "1", "2"], correctAnswer: "C" },
-        { id: "m7", question: "A die is thrown. Probability of getting a prime number is:", options: ["1/2", "1/3", "1/6", "2/3"], correctAnswer: "A" },
-        { id: "m8", question: "Data in ascending order: 10, 12, x, 18, 20. If median is 15, then x is:", options: ["14", "15", "16", "17"], correctAnswer: "B" },
-        { id: "m9", question: "Which of the following cannot be a probability?", options: ["0", "1", "0.5", "1.5"], correctAnswer: "D" },
-        { id: "m10", question: "Mean of first 3 natural numbers is:", options: ["1", "2", "3", "4"], correctAnswer: "B" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Range of data: 12, 10, 15, 18, 5 is:",
+      options: ["10", "13", "18", "5"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "The mode of 1, 2, 2, 3, 4 is:",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Median of 3, 1, 5 is:",
+      options: ["1", "3", "5", "4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "Probability of an impossible event is:",
+      options: ["0", "1", "1/2", "Undefined"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "The sum of probabilities of all possible outcomes is:",
+      options: ["0", "0.5", "1", "2"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m7",
+      question: "A die is thrown. Probability of getting a prime number is:",
+      options: ["1/2", "1/3", "1/6", "2/3"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m8",
+      question:
+        "Data in ascending order: 10, 12, x, 18, 20. If median is 15, then x is:",
+      options: ["14", "15", "16", "17"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "Which of the following cannot be a probability?",
+      options: ["0", "1", "0.5", "1.5"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m10",
+      question: "Mean of first 3 natural numbers is:",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [],
 };
-

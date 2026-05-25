@@ -2,10 +2,15 @@ import React, { memo } from "react";
 import { StyleSheet, View, ScrollView, Image } from "react-native";
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
-import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  Typography,
+  BorderRadius,
+} from "@/constants/theme";
 
 // @ts-ignore
-import sameerPhoto from "../../assets/images/sameer-photo.jpg"; 
+import sameerPhoto from "../../assets/images/sameer-photo.jpg";
 import { JiguuLogo } from "@/components/JiguuLogo";
 
 function AboutEducatorScreen() {
@@ -29,10 +34,14 @@ function AboutEducatorScreen() {
             <ThemedText style={styles.name}>Sameer Khan</ThemedText>
             <ThemedText style={styles.role}>Educator (MCA, B.Ed)</ThemedText>
             <ThemedText style={styles.bodyText}>
-              Sameer Khan is a dedicated educator with a strong academic background (MCA, B.Ed) and over a decade of teaching experience. He focuses on simplifying complex concepts and helping students build clarity, confidence, and strong fundamentals.
+              Sameer Khan is a dedicated educator with a strong academic
+              background (MCA, B.Ed) and over a decade of teaching experience.
+              He focuses on simplifying complex concepts and helping students
+              build clarity, confidence, and strong fundamentals.
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
-              His approach is based on step-by-step learning, making even difficult topics easy to understand and apply in exams.
+              His approach is based on step-by-step learning, making even
+              difficult topics easy to understand and apply in exams.
             </ThemedText>
           </View>
         </View>
@@ -44,10 +53,14 @@ function AboutEducatorScreen() {
               <JiguuLogo size="medium" showSubtitle={false} />
             </View>
             <ThemedText style={styles.bodyText}>
-              JIGUU is a smart learning platform designed to simplify education across multiple subjects. From Mathematics to Science and beyond, it provides structured solutions, quick revision tools, and practice support to help students learn effectively.
+              JIGUU is a smart learning platform designed to simplify education
+              across multiple subjects. From Mathematics to Science and beyond,
+              it provides structured solutions, quick revision tools, and
+              practice support to help students learn effectively.
             </ThemedText>
             <ThemedText style={[styles.bodyText, { marginTop: Spacing.md }]}>
-              Built with a focus on clarity and consistency, JIGUU turns complex concepts into simple, understandable learning.
+              Built with a focus on clarity and consistency, JIGUU turns complex
+              concepts into simple, understandable learning.
             </ThemedText>
           </View>
         </View>
@@ -67,12 +80,14 @@ function AboutEducatorScreen() {
           <ThemedText style={styles.sectionHeader}>Note of Thanks</ThemedText>
           <View style={styles.card}>
             <ThemedText style={styles.quoteText}>
-              "I am sincerely grateful to all my students for their trust and dedication. This platform is created to support your journey towards better understanding and academic success. Keep learning, stay curious, and give your best every day."
+              "I am sincerely grateful to all my students for their trust and
+              dedication. This platform is created to support your journey
+              towards better understanding and academic success. Keep learning,
+              stay curious, and give your best every day."
             </ThemedText>
             <ThemedText style={styles.signature}>– Sameer Khan</ThemedText>
           </View>
         </View>
-
       </ScrollView>
     </ScreenWrapper>
   );
@@ -83,7 +98,7 @@ const FeatureItem = ({ text }: { text: string }) => (
     <View style={styles.featureBullet} />
     <ThemedText style={styles.featureText}>{text}</ThemedText>
   </View>
-)
+);
 
 export default memo(AboutEducatorScreen);
 
@@ -103,8 +118,8 @@ const styles = StyleSheet.create({
     ...Typography.h4,
     color: JiguuColors.textPrimary,
     marginBottom: Spacing.lg,
-    textAlign: 'center',
-    textTransform: 'uppercase',
+    textAlign: "center",
+    textTransform: "uppercase",
     letterSpacing: 2,
     fontFamily: "NotoSans_400Regular",
   },
@@ -135,7 +150,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   logoCenter: {
-    alignItems: 'center',
+    alignItems: "center",
     marginBottom: Spacing.lg,
   },
   name: {
@@ -160,8 +175,8 @@ const styles = StyleSheet.create({
     fontFamily: "NotoSans_400Regular",
   },
   featureItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: Spacing.md,
   },
   featureBullet: {
@@ -189,7 +204,7 @@ const styles = StyleSheet.create({
   signature: {
     ...Typography.h4,
     color: JiguuColors.textPrimary,
-    textAlign: 'right',
+    textAlign: "right",
     fontFamily: "NotoSans_400Regular",
-  }
+  },
 });

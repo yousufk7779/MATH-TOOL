@@ -302,29 +302,80 @@ export const c8Math12: ChapterContent = {
   id: "c8-math-12",
   number: 12,
   title: "Factorisation",
-  introduction: "Factorisation is the reverse process of multiplication. It involves breaking down a number or an algebraic expression into a product of simpler terms or 'factors'. This chapter explores various methods of factorisation including common factors, grouping, and identities.",
+  introduction:
+    "Factorisation is the reverse process of multiplication. It involves breaking down a number or an algebraic expression into a product of simpler terms or 'factors'. This chapter explores various methods of factorisation including common factors, grouping, and identities.",
   mcqs: [
-    { id: "m1", question: "The common factor of 2y and 22xy is:", options: ["2", "y", "2y", "22"], correctAnswer: "C" },
-    { id: "m2", question: "Factorisation of x² + xy is:", options: ["x(x+y)", "y(x+y)", "xy(x+1)", "x+y"], correctAnswer: "A" },
-    { id: "m3", question: "(a+b)² is equal to:", options: ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + ab + b²"], correctAnswer: "B" },
-    { id: "m4", question: "a² - b² is equal to:", options: ["(a-b)²", "(a+b)²", "(a-b)(a+b)", "a² + b²"], correctAnswer: "C" },
-    { id: "m5", question: "Factors of x² + 5x + 6 are:", options: ["(x+1)(x+6)", "(x+2)(x+3)", "(x-2)(x-3)", "(x+5)(x+1)"], correctAnswer: "B" },
-    { id: "m6", question: "Common factor of 12x and 36 is:", options: ["12", "x", "3", "6"], correctAnswer: "A" },
-    { id: "m7", question: "Factorisation of 7x - 42 is:", options: ["7(x-42)", "7(x-6)", "x(7-42)", "42(x-7)"], correctAnswer: "B" },
-    { id: "m8", question: "Divide 10x by 5, the result is:", options: ["2x", "5x", "x/2", "2"], correctAnswer: "A" },
-    { id: "m9", question: "The value of 101² - 99² is:", options: ["400", "200", "401", "399"], correctAnswer: "A" },
-    { id: "m10", question: "Which of the following is a factor of x² - 4?", options: ["x-4", "x+4", "x-2", "x+1"], correctAnswer: "C" }
+    {
+      id: "m1",
+      question: "The common factor of 2y and 22xy is:",
+      options: ["2", "y", "2y", "22"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m2",
+      question: "Factorisation of x² + xy is:",
+      options: ["x(x+y)", "y(x+y)", "xy(x+1)", "x+y"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "(a+b)² is equal to:",
+      options: ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "a² + ab + b²"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "a² - b² is equal to:",
+      options: ["(a-b)²", "(a+b)²", "(a-b)(a+b)", "a² + b²"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m5",
+      question: "Factors of x² + 5x + 6 are:",
+      options: ["(x+1)(x+6)", "(x+2)(x+3)", "(x-2)(x-3)", "(x+5)(x+1)"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "Common factor of 12x and 36 is:",
+      options: ["12", "x", "3", "6"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question: "Factorisation of 7x - 42 is:",
+      options: ["7(x-42)", "7(x-6)", "x(7-42)", "42(x-7)"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "Divide 10x by 5, the result is:",
+      options: ["2x", "5x", "x/2", "2"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "The value of 101² - 99² is:",
+      options: ["400", "200", "401", "399"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question: "Which of the following is a factor of x² - 4?",
+      options: ["x-4", "x+4", "x-2", "x+1"],
+      correctAnswer: "C",
+    },
   ],
   summary: [
     "When we factorise an algebraic expression, we write it as a product of factors. These factors may be numbers, algebraic variables or algebraic expressions.",
     "Methods of factorisation: Common factors, Regrouping terms, Using Identities.",
     "Important Identities: (a+b)² = a² + 2ab + b², (a-b)² = a² - 2ab + b², a² - b² = (a-b)(a+b).",
-    "Division of expressions: Polynomial ÷ Monomial and Polynomial ÷ Polynomial."
+    "Division of expressions: Polynomial ÷ Monomial and Polynomial ÷ Polynomial.",
   ],
   exercises: [
     { id: "ex12-1", name: "Exercise 12.1", questions: [] },
     { id: "ex12-2", name: "Exercise 12.2", questions: [] },
-    { id: "ex12-3", name: "Exercise 12.3", questions: [] }
+    { id: "ex12-3", name: "Exercise 12.3", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -435,6 +486,6 @@ export const c8Math12: ChapterContent = {
   htmlExercises: {
     "ex12-1": ex121Content,
     "ex12-2": ex122Content,
-    "ex12-3": ex123Content
-  }
+    "ex12-3": ex123Content,
+  },
 };

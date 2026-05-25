@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const HTML_DIR = path.join(__dirname, 'data', 'chapter14');
-const OUTPUT_FILE = path.join(__dirname, 'data', 'content', 'math-ch14.ts');
+const HTML_DIR = path.join(__dirname, "data", "chapter14");
+const OUTPUT_FILE = path.join(__dirname, "data", "content", "math-ch14.ts");
 
 function encodeImage(imgPath) {
-    if (!fs.existsSync(imgPath)) return "";
-    const b64 = fs.readFileSync(imgPath).toString('base64');
-    if (imgPath.endsWith('.svg')) return `data:image/svg+xml;base64,${b64}`;
-    if (imgPath.endsWith('.png')) return `data:image/png;base64,${b64}`;
-    if (imgPath.endsWith('.jpg') || imgPath.endsWith('.jpeg')) return `data:image/jpeg;base64,${b64}`;
-    return `data:image/png;base64,${b64}`;
+  if (!fs.existsSync(imgPath)) return "";
+  const b64 = fs.readFileSync(imgPath).toString("base64");
+  if (imgPath.endsWith(".svg")) return `data:image/svg+xml;base64,${b64}`;
+  if (imgPath.endsWith(".png")) return `data:image/png;base64,${b64}`;
+  if (imgPath.endsWith(".jpg") || imgPath.endsWith(".jpeg"))
+    return `data:image/jpeg;base64,${b64}`;
+  return `data:image/png;base64,${b64}`;
 }
 
 const overrideCSS = `
@@ -52,95 +53,121 @@ const katexScripts = `
 `;
 
 function readHtml(filename) {
-    const filepath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filepath)) return "";
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    html = html.replace(/<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi, '');
-    html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, '');
-    html = html.replace(/<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi, '');
-    html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+  const filepath = path.join(HTML_DIR, filename);
+  if (!fs.existsSync(filepath)) return "";
+  let html = fs.readFileSync(filepath, "utf-8");
 
-    html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
-        const fullImgPath = path.join(HTML_DIR, p1);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return `src="${b64Src}"`;
-        return match;
-    });
-    
-    return html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  html = html.replace(
+    /<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi,
+    "",
+  );
+  html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, "");
+  html = html.replace(
+    /<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi,
+    "",
+  );
+  html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+
+  html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
+    const fullImgPath = path.join(HTML_DIR, p1);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
 function parseMcqs() {
-    const filepath = path.join(HTML_DIR, "Probability_MCQs.html");
-    if (!fs.existsSync(filepath)) return [];
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    const mcqs = [];
-    const boxes = html.split('<div class="content-box">').slice(1);
-    
-    boxes.forEach((boxContent, idx) => {
-        const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
-        const optMatch = [...boxContent.matchAll(/<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g)];
-        const ansMatch = boxContent.match(/<(?:div|span) class="(?:final-answer|correct-answer|answer)">([\s\S]*?)<\/(?:div|span)>/);
+  const filepath = path.join(HTML_DIR, "Probability_MCQs.html");
+  if (!fs.existsSync(filepath)) return [];
+  let html = fs.readFileSync(filepath, "utf-8");
 
-        if (qMatch && optMatch.length >= 4 && ansMatch) {
-            let questionText = qMatch[1].replace(/^\d+\.\s*/, '').replace(/\s+/g, ' ').trim();
-            
-            questionText = questionText.replace(/\\(sqrt|text|circ|theta|frac|pi|bar|sum|mu|sigma|alpha|beta|gamma)/g, (match, p1) => {
-                if (p1 === 'sqrt') return '√';
-                if (p1 === 'text') return '';
-                if (p1 === 'circ') return '°';
-                if (p1 === 'theta') return 'θ';
-                if (p1 === 'pi') return 'π';
-                if (p1 === 'bar') return '̄';
-                if (p1 === 'sum') return 'Σ';
-                if (p1 === 'sigma') return 'σ';
-                return match;
-            });
-            questionText = questionText.replace(/\{([^\}]+)\}/g, '$1').replace(/[\{\}]/g, '');
+  const mcqs = [];
+  const boxes = html.split('<div class="content-box">').slice(1);
 
-            const options = optMatch.map(m => {
-                let text = m[1].replace(/^\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, '').trim();
-                text = text.replace(/\\sqrt\{(\d+)\}/g, '√$1');
-                text = text.replace(/\\frac\{([^\}]+)\}\{([^\}]+)\}/g, '<sup>$1</sup>&frasl;<sub>$2</sub>');
-                text = text.replace(/\\circ/g, '°');
-                text = text.replace(/\\theta/g, 'θ');
-                text = text.replace(/\\pi/g, 'π');
-                text = text.replace(/\\text\{([^\}]+)\}/g, '$1');
-                text = text.replace(/\{([^\}]+)\}/g, '$1');
-                if (!text.includes('sup') && text.match(/^\d+\/\d+$/)) {
-                    text = text.replace(/(\d+)\/(\d+)/, '<sup>$1</sup>&frasl;<sub>$2</sub>');
-                }
-                return text;
-            });
+  boxes.forEach((boxContent, idx) => {
+    const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
+    const optMatch = [
+      ...boxContent.matchAll(
+        /<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g,
+      ),
+    ];
+    const ansMatch = boxContent.match(
+      /<(?:div|span) class="(?:final-answer|correct-answer|answer)">([\s\S]*?)<\/(?:div|span)>/,
+    );
 
-            const ansRaw = ansMatch[1].toUpperCase();
-            let correctLetter = "";
-            const letterMatch = ansRaw.match(/\(([A-D])\)/);
-            if (letterMatch) {
-                correctLetter = letterMatch[1];
-            } else {
-                const altMatch = ansRaw.match(/\b([A-D])\b/);
-                if (altMatch) correctLetter = altMatch[1];
-            }
+    if (qMatch && optMatch.length >= 4 && ansMatch) {
+      let questionText = qMatch[1]
+        .replace(/^\d+\.\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim();
 
-            let correctAnswer = "";
-            if (correctLetter) {
-                const cIdx = correctLetter.charCodeAt(0) - 65;
-                correctAnswer = options[cIdx] || "";
-            }
+      questionText = questionText.replace(
+        /\\(sqrt|text|circ|theta|frac|pi|bar|sum|mu|sigma|alpha|beta|gamma)/g,
+        (match, p1) => {
+          if (p1 === "sqrt") return "√";
+          if (p1 === "text") return "";
+          if (p1 === "circ") return "°";
+          if (p1 === "theta") return "θ";
+          if (p1 === "pi") return "π";
+          if (p1 === "bar") return "̄";
+          if (p1 === "sum") return "Σ";
+          if (p1 === "sigma") return "σ";
+          return match;
+        },
+      );
+      questionText = questionText
+        .replace(/\{([^\}]+)\}/g, "$1")
+        .replace(/[\{\}]/g, "");
 
-            mcqs.push({
-                id: `mcq${idx + 1}`,
-                question: `<span style="font-weight: normal;">${questionText}</span>`,
-                options: options,
-                correctAnswer: correctAnswer
-            });
+      const options = optMatch.map((m) => {
+        let text = m[1].replace(/^\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, "").trim();
+        text = text.replace(/\\sqrt\{(\d+)\}/g, "√$1");
+        text = text.replace(
+          /\\frac\{([^\}]+)\}\{([^\}]+)\}/g,
+          "<sup>$1</sup>&frasl;<sub>$2</sub>",
+        );
+        text = text.replace(/\\circ/g, "°");
+        text = text.replace(/\\theta/g, "θ");
+        text = text.replace(/\\pi/g, "π");
+        text = text.replace(/\\text\{([^\}]+)\}/g, "$1");
+        text = text.replace(/\{([^\}]+)\}/g, "$1");
+        if (!text.includes("sup") && text.match(/^\d+\/\d+$/)) {
+          text = text.replace(
+            /(\d+)\/(\d+)/,
+            "<sup>$1</sup>&frasl;<sub>$2</sub>",
+          );
         }
-    });
+        return text;
+      });
 
-    return mcqs;
+      const ansRaw = ansMatch[1].toUpperCase();
+      let correctLetter = "";
+      const letterMatch = ansRaw.match(/\(([A-D])\)/);
+      if (letterMatch) {
+        correctLetter = letterMatch[1];
+      } else {
+        const altMatch = ansRaw.match(/\b([A-D])\b/);
+        if (altMatch) correctLetter = altMatch[1];
+      }
+
+      let correctAnswer = "";
+      if (correctLetter) {
+        const cIdx = correctLetter.charCodeAt(0) - 65;
+        correctAnswer = options[cIdx] || "";
+      }
+
+      mcqs.push({
+        id: `mcq${idx + 1}`,
+        question: `<span style="font-weight: normal;">${questionText}</span>`,
+        options: options,
+        correctAnswer: correctAnswer,
+      });
+    }
+  });
+
+  return mcqs;
 }
 
 const overview = readHtml("Probability_Overview.html");
@@ -181,7 +208,7 @@ export const mathCh14: ChapterContent = {
         { id: "examples", name: "Examples", questions: [] }
     ],
     theorems: [],
-    mcqs: ${JSON.stringify(mcqArray, null, '\t\t')},
+    mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [
         "Mastered the basic definition and calculation of theoretical probability.",
         "Learned to handle complementary, sure, and impossible events.",
@@ -197,5 +224,7 @@ export const mathCh14: ChapterContent = {
 };
 `;
 
-fs.writeFileSync(OUTPUT_FILE, tsCode, 'utf-8');
-console.log("math-ch14.ts generated successfully with Native MCQ Quiz support!");
+fs.writeFileSync(OUTPUT_FILE, tsCode, "utf-8");
+console.log(
+  "math-ch14.ts generated successfully with Native MCQ Quiz support!",
+);

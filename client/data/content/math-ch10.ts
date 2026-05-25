@@ -1,157 +1,127 @@
 import { ChapterContent } from "../types";
 
 export const mathCh10: ChapterContent = {
-    id: "ch10",
-    number: 10,
-    title: "Circles",
-    introduction: "In this chapter, we explore the properties of circles, focus on the geometry of tangents, and prove fundamental theorems about the relationship between a circle and its tangent lines.",
-    definitions: [
-        { term: "Tangent", description: "A line that touches a circle at exactly one point." },
-        { term: "Secant", description: "A line that intersects a circle at two distinct points." },
-        { term: "Point of Contact", description: "The single point where a tangent touches the circle." }
-    ],
-    keyPoints: [
-        "A tangent is perpendicular to the radius at the point of contact.",
-        "The lengths of tangents drawn from an external point to a circle are equal.",
-        "There is only one tangent at any point on a circle."
-    ],
-    formulas: [
-        { name: "Tangent-Radius Relation", formula: "OP ÃƒÂ¢Ã…Â Ã‚Â¥ XY" },
-        { name: "External Tangents", formula: "PQ = PR" }
-    ],
-    crux: [
-        "Always draw the radius to the point of contact for right-angle properties.",
-        "Use Pythagoras theorem in problems involving tangent lengths and radii.",
-        "Remember that tangents from an external point form an isosceles triangle with the chord of contact."
-    ],
-    exercises: [
-        { id: "theorems", name: "Theorems", questions: [] },
-        { id: "examples", name: "Examples", questions: [] },
-        { id: "exercise1", name: "Exercise 10.1", questions: [] },
-        { id: "exercise2", name: "Exercise 10.2", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Length PQ is :</span>",
-            "options": [
-                "(A) 12 cm",
-                "(B) 13 cm",
-                "(C) 8.5 cm",
-                "(D) √119 cm"
-            ],
-            "correctAnswer": "D"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is :</span>",
-            "options": [
-                "(A) 7 cm",
-                "(B) 12 cm",
-                "(C) 15 cm",
-                "(D) 24.5 cm"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80°, then ∠ POA is equal to :</span>",
-            "options": [
-                "(A) 50°",
-                "(B) 60°",
-                "(C) 70°",
-                "(D) 80°"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">If TP and TQ are the two tangents to a circle with centre O so that ∠ POQ = 110°, then ∠ PTQ is equal to :</span>",
-            "options": [
-                "(A) 60°",
-                "(B) 70°",
-                "(C) 80°",
-                "(D) 90°"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4 cm. The radius of the circle is:</span>",
-            "options": [
-                "(A) 3 cm",
-                "(B) 5 cm",
-                "(C) 7 cm",
-                "(D) 3.5 cm"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">Two concentric circles are of radii 5 cm and 3 cm. The length of the chord of the larger circle which touches the smaller circle is:</span>",
-            "options": [
-                "(A) 8 cm",
-                "(B) 10 cm",
-                "(C) 12 cm",
-                "(D) 18 cm"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">A parallelogram circumscribing a circle is a:</span>",
-            "options": [
-                "(A) Square",
-                "(B) Rectangle",
-                "(C) Rhombus",
-                "(D) Trapezium"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">The angle between two radii of a circle is 130°, the angle between the tangents at the ends of the radii is:</span>",
-            "options": [
-                "(A) 90°",
-                "(B) 50°",
-                "(C) 70°",
-                "(D) 40°"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">If PQR is a tangent to a circle at Q whose centre is O, AB is a chord parallel to PR and ∠ BQR = 70°, then ∠ AQB is equal to:</span>",
-            "options": [
-                "(A) 20°",
-                "(B) 40°",
-                "(C) 35°",
-                "(D) 45°"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">At one end A of a diameter AB of a circle of radius 5 cm, tangent XAY is drawn to the circle. The length of the chord CD parallel to XY and at a distance 8 cm from A is:</span>",
-            "options": [
-                "(A) 4 cm",
-                "(B) 5 cm",
-                "(C) 6 cm",
-                "(D) 8 cm"
-            ],
-            "correctAnswer": "D"
-        }
-    ],
-    summary: [
-        "Learned that tangents are perpendicular to the radius at the point of contact.",
-        "Proved that tangents from an external point are equal in length.",
-        "Solved various problems using these properties."
-    ],
+  id: "ch10",
+  number: 10,
+  title: "Circles",
+  introduction:
+    "In this chapter, we explore the properties of circles, focus on the geometry of tangents, and prove fundamental theorems about the relationship between a circle and its tangent lines.",
+  definitions: [
+    {
+      term: "Tangent",
+      description: "A line that touches a circle at exactly one point.",
+    },
+    {
+      term: "Secant",
+      description: "A line that intersects a circle at two distinct points.",
+    },
+    {
+      term: "Point of Contact",
+      description: "The single point where a tangent touches the circle.",
+    },
+  ],
+  keyPoints: [
+    "A tangent is perpendicular to the radius at the point of contact.",
+    "The lengths of tangents drawn from an external point to a circle are equal.",
+    "There is only one tangent at any point on a circle.",
+  ],
+  formulas: [
+    { name: "Tangent-Radius Relation", formula: "OP ÃƒÂ¢Ã…Â Ã‚Â¥ XY" },
+    { name: "External Tangents", formula: "PQ = PR" },
+  ],
+  crux: [
+    "Always draw the radius to the point of contact for right-angle properties.",
+    "Use Pythagoras theorem in problems involving tangent lengths and radii.",
+    "Remember that tangents from an external point form an isosceles triangle with the chord of contact.",
+  ],
+  exercises: [
+    { id: "theorems", name: "Theorems", questions: [] },
+    { id: "examples", name: "Examples", questions: [] },
+    { id: "exercise1", name: "Exercise 10.1", questions: [] },
+    { id: "exercise2", name: "Exercise 10.2", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Length PQ is :</span>',
+      options: ["(A) 12 cm", "(B) 13 cm", "(C) 8.5 cm", "(D) √119 cm"],
+      correctAnswer: "D",
+    },
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">From a point Q, the length of the tangent to a circle is 24 cm and the distance of Q from the centre is 25 cm. The radius of the circle is :</span>',
+      options: ["(A) 7 cm", "(B) 12 cm", "(C) 15 cm", "(D) 24.5 cm"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">If tangents PA and PB from a point P to a circle with centre O are inclined to each other at angle of 80°, then ∠ POA is equal to :</span>',
+      options: ["(A) 50°", "(B) 60°", "(C) 70°", "(D) 80°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">If TP and TQ are the two tangents to a circle with centre O so that ∠ POQ = 110°, then ∠ PTQ is equal to :</span>',
+      options: ["(A) 60°", "(B) 70°", "(C) 80°", "(D) 90°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">The length of a tangent from a point A at distance 5 cm from the centre of the circle is 4 cm. The radius of the circle is:</span>',
+      options: ["(A) 3 cm", "(B) 5 cm", "(C) 7 cm", "(D) 3.5 cm"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">Two concentric circles are of radii 5 cm and 3 cm. The length of the chord of the larger circle which touches the smaller circle is:</span>',
+      options: ["(A) 8 cm", "(B) 10 cm", "(C) 12 cm", "(D) 18 cm"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">A parallelogram circumscribing a circle is a:</span>',
+      options: ["(A) Square", "(B) Rectangle", "(C) Rhombus", "(D) Trapezium"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">The angle between two radii of a circle is 130°, the angle between the tangents at the ends of the radii is:</span>',
+      options: ["(A) 90°", "(B) 50°", "(C) 70°", "(D) 40°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">If PQR is a tangent to a circle at Q whose centre is O, AB is a chord parallel to PR and ∠ BQR = 70°, then ∠ AQB is equal to:</span>',
+      options: ["(A) 20°", "(B) 40°", "(C) 35°", "(D) 45°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">At one end A of a diameter AB of a circle of radius 5 cm, tangent XAY is drawn to the circle. The length of the chord CD parallel to XY and at a distance 8 cm from A is:</span>',
+      options: ["(A) 4 cm", "(B) 5 cm", "(C) 6 cm", "(D) 8 cm"],
+      correctAnswer: "D",
+    },
+  ],
+  summary: [
+    "Learned that tangents are perpendicular to the radius at the point of contact.",
+    "Proved that tangents from an external point are equal in length.",
+    "Solved various problems using these properties.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -325,8 +295,8 @@ export const mathCh10: ChapterContent = {
 </body>
 
 </html>`,
-    htmlExercises: {
-        theorems: `<!DOCTYPE html>
+  htmlExercises: {
+    theorems: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -543,7 +513,7 @@ export const mathCh10: ChapterContent = {
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -800,7 +770,7 @@ export const mathCh10: ChapterContent = {
 </body>
 
 </html>`,
-        exercise1: `<!DOCTYPE html>
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1048,7 +1018,7 @@ export const mathCh10: ChapterContent = {
 </body>
 
 </html>`,
-        exercise2: `<!DOCTYPE html>
+    exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1536,6 +1506,6 @@ export const mathCh10: ChapterContent = {
 
 </body>
 
-</html>`
-    }
+</html>`,
+  },
 };

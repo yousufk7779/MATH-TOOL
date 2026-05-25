@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const HTML_DIR = path.join(__dirname, 'data', 'math_ch8_html');
-const OUTPUT_FILE = path.join(__dirname, 'data', 'content', 'math-ch8.ts');
+const HTML_DIR = path.join(__dirname, "data", "math_ch8_html");
+const OUTPUT_FILE = path.join(__dirname, "data", "content", "math-ch8.ts");
 
 function encodeImage(imgPath) {
-    if (!fs.existsSync(imgPath)) return "";
-    const b64 = fs.readFileSync(imgPath).toString('base64');
-    if (imgPath.endsWith('.svg')) return `data:image/svg+xml;base64,${b64}`;
-    if (imgPath.endsWith('.png')) return `data:image/png;base64,${b64}`;
-    if (imgPath.endsWith('.jpg') || imgPath.endsWith('.jpeg')) return `data:image/jpeg;base64,${b64}`;
-    return `data:image/png;base64,${b64}`;
+  if (!fs.existsSync(imgPath)) return "";
+  const b64 = fs.readFileSync(imgPath).toString("base64");
+  if (imgPath.endsWith(".svg")) return `data:image/svg+xml;base64,${b64}`;
+  if (imgPath.endsWith(".png")) return `data:image/png;base64,${b64}`;
+  if (imgPath.endsWith(".jpg") || imgPath.endsWith(".jpeg"))
+    return `data:image/jpeg;base64,${b64}`;
+  return `data:image/png;base64,${b64}`;
 }
 
 const overrideCSS = `
@@ -46,7 +47,6 @@ const katexScripts = `
   });
 </script>
 `;
-
 
 const mcqQuizScript = `
 <style>
@@ -175,35 +175,41 @@ const mcqQuizScript = `
 `;
 
 function readHtml(filename) {
-    const filepath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filepath)) return "";
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    // 1. Remove the header section with "JIGUU" and Chapter name
-    html = html.replace(/<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi, '');
+  const filepath = path.join(HTML_DIR, filename);
+  if (!fs.existsSync(filepath)) return "";
+  let html = fs.readFileSync(filepath, "utf-8");
 
-    // 2. Remove slow MathJax script
-    html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, '');
-    html = html.replace(/<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi, '');
+  // 1. Remove the header section with "JIGUU" and Chapter name
+  html = html.replace(
+    /<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi,
+    "",
+  );
 
-    // 3. Inject Fast KaTeX scripts and Dark Mode Overrides right before </head>
-    html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+  // 2. Remove slow MathJax script
+  html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, "");
+  html = html.replace(
+    /<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi,
+    "",
+  );
 
-    // Append interactive quiz logic ONLY to mcqs.html
-    if (filename === "mcqs.html") {
-        html = html.replace(/<\/body>/i, mcqQuizScript + "</body>");
-    }
+  // 3. Inject Fast KaTeX scripts and Dark Mode Overrides right before </head>
+  html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
 
-    // 4. Base64 encode images to prevent flickering or loading issues
-    html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
-        const fullImgPath = path.join(HTML_DIR, p1);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return `src="${b64Src}"`;
-        return match;
-    });
-    
-    // Escape for embedded string
-    return html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  // Append interactive quiz logic ONLY to mcqs.html
+  if (filename === "mcqs.html") {
+    html = html.replace(/<\/body>/i, mcqQuizScript + "</body>");
+  }
+
+  // 4. Base64 encode images to prevent flickering or loading issues
+  html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
+    const fullImgPath = path.join(HTML_DIR, p1);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  // Escape for embedded string
+  return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
 const overview = readHtml("overview.html");
@@ -246,5 +252,7 @@ export const mathCh8: ChapterContent = {
 };
 `;
 
-fs.writeFileSync(OUTPUT_FILE, tsCode, 'utf-8');
-console.log("math-ch8.ts regenerated safely with dark mode, fast loading, and removed headers!");
+fs.writeFileSync(OUTPUT_FILE, tsCode, "utf-8");
+console.log(
+  "math-ch8.ts regenerated safely with dark mode, fast loading, and removed headers!",
+);

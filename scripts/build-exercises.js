@@ -1,12 +1,12 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const srcDir = path.join(__dirname, '../client/assets/chapters');
+const srcDir = path.join(__dirname, "../client/assets/chapters");
 
 for (let i = 1; i <= 14; i++) {
-    const chapterDir = path.join(srcDir, `chapter${i}`);
-    if (fs.existsSync(chapterDir)) {
-        let combinedHtml = `<!DOCTYPE html>
+  const chapterDir = path.join(srcDir, `chapter${i}`);
+  if (fs.existsSync(chapterDir)) {
+    let combinedHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,27 +25,37 @@ for (let i = 1; i <= 14; i++) {
 </head>
 <body>
 `;
-        const files = fs.readdirSync(chapterDir);
-        const exerciseFiles = files.filter(f => f.startsWith('exercise') && f !== 'exercises.html').sort();
-        const exampleFiles = files.filter(f => f.startsWith('example') && f.endsWith('.html')).sort();
+    const files = fs.readdirSync(chapterDir);
+    const exerciseFiles = files
+      .filter((f) => f.startsWith("exercise") && f !== "exercises.html")
+      .sort();
+    const exampleFiles = files
+      .filter((f) => f.startsWith("example") && f.endsWith(".html"))
+      .sort();
 
-        const allContentFiles = [...exerciseFiles, ...exampleFiles];
+    const allContentFiles = [...exerciseFiles, ...exampleFiles];
 
-        for (const file of allContentFiles) {
-            const content = fs.readFileSync(path.join(chapterDir, file), 'utf-8');
-            // Extract the body content of these HTML files
-            const bodyMatch = content.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+    for (const file of allContentFiles) {
+      const content = fs.readFileSync(path.join(chapterDir, file), "utf-8");
+      // Extract the body content of these HTML files
+      const bodyMatch = content.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
 
-            let htmlToAppend = bodyMatch ? bodyMatch[1] : content;
+      let htmlToAppend = bodyMatch ? bodyMatch[1] : content;
 
-            // Remove the Jiguu logo headers from the sub-files so they don't repeat
-            htmlToAppend = htmlToAppend.replace(/<div class="header">([\s\S]*?)<\/div>/ig, '');
+      // Remove the Jiguu logo headers from the sub-files so they don't repeat
+      htmlToAppend = htmlToAppend.replace(
+        /<div class="header">([\s\S]*?)<\/div>/gi,
+        "",
+      );
 
-            combinedHtml += `<div class="exercise-title">${file.replace('.html', '').toUpperCase()}</div>\n` + htmlToAppend + `<hr/>\n`;
-        }
-
-        combinedHtml += `</body>\n</html>`;
-        fs.writeFileSync(path.join(chapterDir, `exercises.html`), combinedHtml);
-        console.log(`Generated exercises.html for chapter${i}`);
+      combinedHtml +=
+        `<div class="exercise-title">${file.replace(".html", "").toUpperCase()}</div>\n` +
+        htmlToAppend +
+        `<hr/>\n`;
     }
+
+    combinedHtml += `</body>\n</html>`;
+    fs.writeFileSync(path.join(chapterDir, `exercises.html`), combinedHtml);
+    console.log(`Generated exercises.html for chapter${i}`);
+  }
 }

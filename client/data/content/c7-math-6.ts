@@ -1,35 +1,50 @@
 import { ChapterContent } from "../types";
 
 export const c7Math6: ChapterContent = {
-    id: "c7-math-6",
-    number: 6,
-    title: "The Triangle and its Properties",
-    isHtmlView: true,
-    introduction: "Triangles are three-sided polygons with unique properties. In this chapter, we explore medians, altitudes, and fundamental theorems like the Angle Sum Property and Pythagoras Theorem.",
-    definitions: [
-        { term: "Median", definition: "A line segment connecting a vertex to the midpoint of the opposite side." },
-        { term: "Altitude", definition: "A perpendicular line segment from a vertex to the opposite side." },
-        { term: "Right-angled Triangle", definition: "A triangle where one angle is exactly 90°." }
-    ],
-    keyPoints: [
-        "The exterior angle of a triangle is equal to the sum of its interior opposite angles.",
-        "The sum of all three interior angles of a triangle is 180°.",
-        "The sum of the lengths of any two sides of a triangle is greater than the third side.",
-        "Pythagoras Theorem: In a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides."
-    ],
-    formulas: [
-        { name: "Pythagoras Theorem", formula: "a² + b² = c² (where c is hypotenuse)" },
-        { name: "Angle Sum Property", formula: "∠A + ∠B + ∠C = 180°" }
-    ],
-    crux: [],
-    exercises: [
-        { id: "ex6-1", name: "Exercise 6.1", questions: [] },
-        { id: "ex6-2", name: "Exercise 6.2", questions: [] },
-        { id: "ex6-3", name: "Exercise 6.3", questions: [] },
-        { id: "ex6-4", name: "Exercise 6.4", questions: [] },
-        { id: "ex6-5", name: "Exercise 6.5", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-6",
+  number: 6,
+  title: "The Triangle and its Properties",
+  isHtmlView: true,
+  introduction:
+    "Triangles are three-sided polygons with unique properties. In this chapter, we explore medians, altitudes, and fundamental theorems like the Angle Sum Property and Pythagoras Theorem.",
+  definitions: [
+    {
+      term: "Median",
+      definition:
+        "A line segment connecting a vertex to the midpoint of the opposite side.",
+    },
+    {
+      term: "Altitude",
+      definition:
+        "A perpendicular line segment from a vertex to the opposite side.",
+    },
+    {
+      term: "Right-angled Triangle",
+      definition: "A triangle where one angle is exactly 90°.",
+    },
+  ],
+  keyPoints: [
+    "The exterior angle of a triangle is equal to the sum of its interior opposite angles.",
+    "The sum of all three interior angles of a triangle is 180°.",
+    "The sum of the lengths of any two sides of a triangle is greater than the third side.",
+    "Pythagoras Theorem: In a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides.",
+  ],
+  formulas: [
+    {
+      name: "Pythagoras Theorem",
+      formula: "a² + b² = c² (where c is hypotenuse)",
+    },
+    { name: "Angle Sum Property", formula: "∠A + ∠B + ∠C = 180°" },
+  ],
+  crux: [],
+  exercises: [
+    { id: "ex6-1", name: "Exercise 6.1", questions: [] },
+    { id: "ex6-2", name: "Exercise 6.2", questions: [] },
+    { id: "ex6-3", name: "Exercise 6.3", questions: [] },
+    { id: "ex6-4", name: "Exercise 6.4", questions: [] },
+    { id: "ex6-5", name: "Exercise 6.5", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #F06292; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -47,8 +62,8 @@ export const c7Math6: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex6-1": `
+  htmlExercises: {
+    "ex6-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(240, 98, 146, 0.1); color: #F06292; padding: 12px; border-radius: 8px; border-left: 6px solid #F06292; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; text-align: justify; }
@@ -162,7 +177,7 @@ export const c7Math6: ChapterContent = {
             </div>
         </div>
         `,
-        "ex6-2": `
+    "ex6-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(240, 98, 146, 0.1); color: #F06292; padding: 12px; border-radius: 8px; border-left: 6px solid #F06292; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; text-align: justify; }
@@ -351,7 +366,7 @@ export const c7Math6: ChapterContent = {
             </div>
         </div>
         `,
-        "ex6-3": `
+    "ex6-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(240, 98, 146, 0.1); color: #F06292; padding: 12px; border-radius: 8px; border-left: 6px solid #F06292; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; text-align: justify; }
@@ -520,7 +535,7 @@ export const c7Math6: ChapterContent = {
             </div>
         </div>
         `,
-        "ex6-4": `
+    "ex6-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(240, 98, 146, 0.1); color: #F06292; padding: 12px; border-radius: 8px; border-left: 6px solid #F06292; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; text-align: justify; }
@@ -637,7 +652,7 @@ export const c7Math6: ChapterContent = {
             </div>
         </div>
         `,
-        "ex6-5": `
+    "ex6-5": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(240, 98, 146, 0.1); color: #F06292; padding: 12px; border-radius: 8px; border-left: 6px solid #F06292; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; text-align: justify; }
@@ -785,20 +800,71 @@ export const c7Math6: ChapterContent = {
                 <div class="sol-step">Result: <span class="ans-highlight">68 cm</span></div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Sum of angles of a triangle is:",
+      options: ["90°", "180°", "360°", "270°"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Sum of angles of a triangle is:", options: ["90°", "180°", "360°", "270°"], correctAnswer: "B" },
-        { id: "m2", question: "An exterior angle equals sum of ______ interior opposite angles.", options: ["Two", "Three", "One", "All"], correctAnswer: "A" },
-        { id: "m3", question: "The longest side in a right triangle is:", options: ["Base", "Altitude", "Hypotenuse", "Median"], correctAnswer: "C" },
-        { id: "m4", question: "If two sides are equal, the triangle is:", options: ["Scalene", "Isosceles", "Equilateral", "Right"], correctAnswer: "B" },
-        { id: "m5", question: "In ΔABC, if ∠A=50° and ∠B=60°, then ∠C is:", options: ["70°", "180°", "110°", "90°"], correctAnswer: "A" },
-        { id: "m6", question: "Altitude is always ______ to the opposite side.", options: ["Parallel", "Perpendicular", "Adjacent", "Equal"], correctAnswer: "B" },
-        { id: "m7", question: "A triangle with all angles less than 90° is:", options: ["Obtuse", "Acute", "Right", "Straight"], correctAnswer: "B" },
-        { id: "m8", question: "Can a triangle have two obtuse angles?", options: ["Yes", "No", "Only if isosceles", "Only if equilateral"], correctAnswer: "B" },
-        { id: "m9", question: "Median divides the opposite side into ______ parts.", options: ["Equal", "Unequal", "Perpendicular", "Triple"], correctAnswer: "A" },
-        { id: "m10", question: "In a right triangle, if legs are 3 and 4, hypotenuse is:", options: ["5", "7", "25", "12"], correctAnswer: "A" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question:
+        "An exterior angle equals sum of ______ interior opposite angles.",
+      options: ["Two", "Three", "One", "All"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "The longest side in a right triangle is:",
+      options: ["Base", "Altitude", "Hypotenuse", "Median"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m4",
+      question: "If two sides are equal, the triangle is:",
+      options: ["Scalene", "Isosceles", "Equilateral", "Right"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "In ΔABC, if ∠A=50° and ∠B=60°, then ∠C is:",
+      options: ["70°", "180°", "110°", "90°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "Altitude is always ______ to the opposite side.",
+      options: ["Parallel", "Perpendicular", "Adjacent", "Equal"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "A triangle with all angles less than 90° is:",
+      options: ["Obtuse", "Acute", "Right", "Straight"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "Can a triangle have two obtuse angles?",
+      options: ["Yes", "No", "Only if isosceles", "Only if equilateral"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "Median divides the opposite side into ______ parts.",
+      options: ["Equal", "Unequal", "Perpendicular", "Triple"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question: "In a right triangle, if legs are 3 and 4, hypotenuse is:",
+      options: ["5", "7", "25", "12"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [],
 };

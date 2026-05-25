@@ -11,10 +11,10 @@ interface EmptyStateProps {
   icon?: keyof typeof Feather.glyphMap;
 }
 
-export const EmptyState = memo(function EmptyState({ 
-  title, 
-  message, 
-  icon = "inbox" 
+export const EmptyState = memo(function EmptyState({
+  title,
+  message,
+  icon = "inbox",
 }: EmptyStateProps) {
   return (
     <View style={styles.container}>

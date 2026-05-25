@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#4CAF50"; // Green for Geography
 
 export const c7Geo1: ChapterContent = {
-    id: "c7-geo-1",
-    number: 1,
-    title: "Environment",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-1",
+  number: 1,
+  title: "Environment",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Environment is our basic life support system. It provides the air we breathe, the water we drink, the food we eat, and the land where we live. It is a combination of natural and human-made phenomena. While the natural environment refers to both biotic and abiotic conditions existing on the earth, the human environment reveals the activities, creations, and interactions among human beings.</p>
             
@@ -30,8 +30,8 @@ export const c7Geo1: ChapterContent = {
             <p><b style="color: ${themeColor};">Abiotic:</b> The world of non-living elements (e.g., land).</p>
         </div>
     `,
-    htmlExercises: {
-        "c7g1-ex-all": `
+  htmlExercises: {
+    "c7g1-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -136,82 +136,98 @@ export const c7Geo1: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction: "Environment is our basic life support system.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g1-mcq-1",
+      question: "Which is not a natural ecosystem?",
+      options: ["Desert", "Aquarium", "Forest", "Pond"],
+      correctAnswer: "b",
     },
-    introduction: "Environment is our basic life support system.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g1-mcq-1",
-            question: "Which is not a natural ecosystem?",
-            options: ["Desert", "Aquarium", "Forest", "Pond"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g1-mcq-2",
-            question: "Which is not a component of human environment?",
-            options: ["Land", "Religion", "Community", "Family"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g1-mcq-3",
-            question: "Which is a human-made environment?",
-            options: ["Mountain", "Sea", "Road", "Forest"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g1-mcq-4",
-            question: "Which is a threat to the environment?",
-            options: ["Growing plant", "Growing population", "Growing crops", "None of these"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g1-mcq-5",
-            question: "The domain of water is called:",
-            options: ["Atmosphere", "Hydrosphere", "Lithosphere", "Biosphere"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g1-mcq-6",
-            question: "A thin layer of air that surrounds the earth is:",
-            options: ["Biosphere", "Hydrosphere", "Atmosphere", "Lithosphere"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g1-mcq-7",
-            question: "Biotic environment refers to:",
-            options: ["World of non-living things", "World of living organisms", "World of air", "World of rocks"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g1-mcq-8",
-            question: "Abiotic environment refers to:",
-            options: ["World of non-living elements", "World of living organisms", "World of plants", "World of animals"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g1-mcq-9",
-            question: "Which is the narrow zone where land, water and air interact to support life?",
-            options: ["Lithosphere", "Atmosphere", "Hydrosphere", "Biosphere"],
-            correctAnswer: "d"
-        },
-        {
-            id: "c7g1-mcq-10",
-            question: "The word 'Environment' is derived from which language?",
-            options: ["French", "Latin", "Greek", "Spanish"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g1-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g1-mcq-2",
+      question: "Which is not a component of human environment?",
+      options: ["Land", "Religion", "Community", "Family"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g1-mcq-3",
+      question: "Which is a human-made environment?",
+      options: ["Mountain", "Sea", "Road", "Forest"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g1-mcq-4",
+      question: "Which is a threat to the environment?",
+      options: [
+        "Growing plant",
+        "Growing population",
+        "Growing crops",
+        "None of these",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g1-mcq-5",
+      question: "The domain of water is called:",
+      options: ["Atmosphere", "Hydrosphere", "Lithosphere", "Biosphere"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g1-mcq-6",
+      question: "A thin layer of air that surrounds the earth is:",
+      options: ["Biosphere", "Hydrosphere", "Atmosphere", "Lithosphere"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g1-mcq-7",
+      question: "Biotic environment refers to:",
+      options: [
+        "World of non-living things",
+        "World of living organisms",
+        "World of air",
+        "World of rocks",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g1-mcq-8",
+      question: "Abiotic environment refers to:",
+      options: [
+        "World of non-living elements",
+        "World of living organisms",
+        "World of plants",
+        "World of animals",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g1-mcq-9",
+      question:
+        "Which is the narrow zone where land, water and air interact to support life?",
+      options: ["Lithosphere", "Atmosphere", "Hydrosphere", "Biosphere"],
+      correctAnswer: "d",
+    },
+    {
+      id: "c7g1-mcq-10",
+      question: "The word 'Environment' is derived from which language?",
+      options: ["French", "Latin", "Greek", "Spanish"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g1-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

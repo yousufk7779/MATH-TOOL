@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FDC830"; // Chapter 9 theme (Gold)
 
 export const c7Civ9: ChapterContent = {
-    id: "c7-civ-9",
-    number: 9,
-    title: "Administration in the Union Territory",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-civ-9",
+  number: 9,
+  title: "Administration in the Union Territory",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>India is a vast country divided into States and Union Territories (UTs). While States have their own elected governments, Union Territories are administered differently, often directly by the Central Government through an appointed head.</p>
             
@@ -24,8 +24,8 @@ export const c7Civ9: ChapterContent = {
             <p>A district is further divided into Sub-divisions, Tehsils (or Blocks), and Panchayats. Each level has its own administrative head, such as the SDM at the Sub-division level and the Tehsildar at the Tehsil level.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7c9-ex-all": `
+  htmlExercises: {
+    "c7c9-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 30px;">
                     <div style="margin-bottom: 18px;">
@@ -58,82 +58,109 @@ export const c7Civ9: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction: "India is divided into 28 States and 8 Union Territories.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7c9-mcq-1",
+      question: "How many States are there in India currently?",
+      options: ["25", "27", "28", "29"],
+      correctAnswer: "c",
     },
-    introduction: "India is divided into 28 States and 8 Union Territories.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7c9-mcq-1",
-            question: "How many States are there in India currently?",
-            options: ["25", "27", "28", "29"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c9-mcq-2",
-            question: "How many Union Territories (UTs) are there in India?",
-            options: ["7", "8", "9", "10"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c9-mcq-3",
-            question: "Who is the head of a Union Territory like Jammu and Kashmir?",
-            options: ["Chief Minister", "Governor", "Lieutenant Governor", "Prime Minister"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c9-mcq-4",
-            question: "Who appoints the Lieutenant Governor (LG) of a Union Territory?",
-            options: ["Chief Minister", "The President of India", "Parliament", "Supreme Court"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c9-mcq-5",
-            question: "Which of these is a function of the Lieutenant Governor?",
-            options: ["Act as representative of President", "Oversee administration", "Maintain law and order", "All of these"],
-            correctAnswer: "d"
-        },
-        {
-            id: "c7c9-mcq-6",
-            question: "Who is the head of the district administration?",
-            options: ["Tehsildar", "SDM", "District Collector", "MLA"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c9-mcq-7",
-            question: "Which official is responsible for collecting land revenue at the district level?",
-            options: ["Police Commissioner", "District Collector", "Education Officer", "None of these"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c9-mcq-8",
-            question: "Who is the head of administration at the Tehsil level?",
-            options: ["Naib Tehsildar", "Tehsildar", "SDM", "BDO"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c9-mcq-9",
-            question: "A Sub-division of a district is headed by which official?",
-            options: ["Tehsildar", "SDM", "Collector", "Governor"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c9-mcq-10",
-            question: "Union Territories are governed directly by which government?",
-            options: ["State Government", "Central Government", "Local Government", "None of these"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7c9-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7c9-mcq-2",
+      question: "How many Union Territories (UTs) are there in India?",
+      options: ["7", "8", "9", "10"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c9-mcq-3",
+      question: "Who is the head of a Union Territory like Jammu and Kashmir?",
+      options: [
+        "Chief Minister",
+        "Governor",
+        "Lieutenant Governor",
+        "Prime Minister",
+      ],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c9-mcq-4",
+      question:
+        "Who appoints the Lieutenant Governor (LG) of a Union Territory?",
+      options: [
+        "Chief Minister",
+        "The President of India",
+        "Parliament",
+        "Supreme Court",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c9-mcq-5",
+      question: "Which of these is a function of the Lieutenant Governor?",
+      options: [
+        "Act as representative of President",
+        "Oversee administration",
+        "Maintain law and order",
+        "All of these",
+      ],
+      correctAnswer: "d",
+    },
+    {
+      id: "c7c9-mcq-6",
+      question: "Who is the head of the district administration?",
+      options: ["Tehsildar", "SDM", "District Collector", "MLA"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c9-mcq-7",
+      question:
+        "Which official is responsible for collecting land revenue at the district level?",
+      options: [
+        "Police Commissioner",
+        "District Collector",
+        "Education Officer",
+        "None of these",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c9-mcq-8",
+      question: "Who is the head of administration at the Tehsil level?",
+      options: ["Naib Tehsildar", "Tehsildar", "SDM", "BDO"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c9-mcq-9",
+      question: "A Sub-division of a district is headed by which official?",
+      options: ["Tehsildar", "SDM", "Collector", "Governor"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c9-mcq-10",
+      question: "Union Territories are governed directly by which government?",
+      options: [
+        "State Government",
+        "Central Government",
+        "Local Government",
+        "None of these",
+      ],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7c9-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

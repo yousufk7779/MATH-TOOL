@@ -2,13 +2,13 @@ import { Platform } from "react-native";
 
 export const JiguuColors = {
   background: "#0B0F1A", // Darkest navy for seamless splash handoff
-  surface: "#1E1E2E",    // Slightly lighter dark surface
+  surface: "#1E1E2E", // Slightly lighter dark surface
   surfaceLight: "#2A2A3C",
   border: "#3B3B52",
 
   // Vibrant Gradients
   primaryGradient: ["#304FFE", "#8E24AA", "#E91E63"], // Blue -> Purple -> Pink
-  successGradient: ["#4CAF50", "#1B5E20"],           // Green gradient for completed solutions
+  successGradient: ["#4CAF50", "#1B5E20"], // Green gradient for completed solutions
 
   // Multi-color Button Gradients (from SS)
   gradients: {

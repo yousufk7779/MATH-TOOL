@@ -1,157 +1,152 @@
 import { ChapterContent } from "../types";
 
 export const mathCh13: ChapterContent = {
-    id: "ch13",
-    number: 13,
-    title: "Statistics",
-    introduction: "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean, Mode, and Median for grouped data using various mathematical techniques.",
-    definitions: [
-        { term: "Mean", description: "The average value of a data set, calculated as the sum of all values divided by the total number of values." },
-        { term: "Mode", description: "The value that appears most frequently in a data set." },
-        { term: "Median", description: "The middle value in a distribution when data is arranged in ascending or descending order." }
-    ],
-    keyPoints: [
-        "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
-        "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
-        "Cumulative frequency (cf) is essential for calculating the Median of grouped data."
-    ],
-    formulas: [
-        { name: "Direct Mean", formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)" },
-        { name: "Mode (Grouped)", formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h" },
-        { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" }
-    ],
-    crux: [
-        "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
-        "Step-deviation method is preferred when class intervals (h) are large to simplify arithmetic.",
-        "Remember that the Mode is a position-based average, while Mean is a value-based average."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 13.1", questions: [] },
-        { id: "exercise2", name: "Exercise 13.2", questions: [] },
-        { id: "exercise3", name: "Exercise 13.3", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">The relationship between Mean, Median and Mode for a moderately skewed distribution is:</span>",
-            "options": [
-                "(A) Mode = 2 Median - 3 Mean",
-                "(B) Mode = Median - 2 Mean",
-                "(C) Mode = 3 Median - 2 Mean",
-                "(D) Mode = 2 Mean - 3 Median"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">The mode of the following data: 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:</span>",
-            "options": [
-                "(A) 2",
-                "(B) 3",
-                "(C) 4",
-                "(D) 5"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">If the mean of the following distribution is 6, find the value of p: x: 2 4 6 10 p+5; f: 3 2 3 1 2</span>",
-            "options": [
-                "(A) 6",
-                "(B) 7",
-                "(C) 5",
-                "(D) 4"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">The algebraic sum of deviations of a frequency distribution from its mean is:</span>",
-            "options": [
-                "(A) Always positive",
-                "(B) Always negative",
-                "(C) Zero",
-                "(D) Non-zero"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">In the formula x̄ = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>",
-            "options": [
-                "(A) xᵢ - a",
-                "(B) (xᵢ - a) / h",
-                "(C) (a - xᵢ) / h",
-                "(D) h(xᵢ - a)"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">While computing mean of grouped data, we assume that the frequencies are:</span>",
-            "options": [
-                "(A) centred at the upper limits of the classes",
-                "(B) centred at the lower limits of the classes",
-                "(C) centred at the classmarks of the classes",
-                "(D) evenly distributed"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">Construction of a cumulative frequency table is useful in determining the:</span>",
-            "options": [
-                "(A) Mean",
-                "(B) Median",
-                "(C) Mode",
-                "(D) All of these"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">Which of the following cannot be determined graphically?</span>",
-            "options": [
-                "(A) Mean",
-                "(B) Median",
-                "(C) Mode",
-                "(D) None of these"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its:</span>",
-            "options": [
-                "(A) Mean",
-                "(B) Median",
-                "(C) Mode",
-                "(D) Range"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">If the mean of first n natural numbers is 5n/9, then n = ?</span>",
-            "options": [
-                "(A) 9",
-                "(B) 10",
-                "(C) 11",
-                "(D) 12"
-            ],
-            "correctAnswer": "A"
-        }
-    ],
-    summary: [
-        "Mastered the calculation of Mean using multiple methods.",
-        "Learned to identify the Modal and Median class for grouped frequency distributions.",
-        "Understood the relationship between Mean, Median, and Mode."
-    ],
+  id: "ch13",
+  number: 13,
+  title: "Statistics",
+  introduction:
+    "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean, Mode, and Median for grouped data using various mathematical techniques.",
+  definitions: [
+    {
+      term: "Mean",
+      description:
+        "The average value of a data set, calculated as the sum of all values divided by the total number of values.",
+    },
+    {
+      term: "Mode",
+      description: "The value that appears most frequently in a data set.",
+    },
+    {
+      term: "Median",
+      description:
+        "The middle value in a distribution when data is arranged in ascending or descending order.",
+    },
+  ],
+  keyPoints: [
+    "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
+    "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
+    "Cumulative frequency (cf) is essential for calculating the Median of grouped data.",
+  ],
+  formulas: [
+    { name: "Direct Mean", formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)" },
+    {
+      name: "Mode (Grouped)",
+      formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h",
+    },
+    { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" },
+  ],
+  crux: [
+    "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
+    "Step-deviation method is preferred when class intervals (h) are large to simplify arithmetic.",
+    "Remember that the Mode is a position-based average, while Mean is a value-based average.",
+  ],
+  exercises: [
+    { id: "exercise1", name: "Exercise 13.1", questions: [] },
+    { id: "exercise2", name: "Exercise 13.2", questions: [] },
+    { id: "exercise3", name: "Exercise 13.3", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">The relationship between Mean, Median and Mode for a moderately skewed distribution is:</span>',
+      options: [
+        "(A) Mode = 2 Median - 3 Mean",
+        "(B) Mode = Median - 2 Mean",
+        "(C) Mode = 3 Median - 2 Mean",
+        "(D) Mode = 2 Mean - 3 Median",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">The mode of the following data: 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:</span>',
+      options: ["(A) 2", "(B) 3", "(C) 4", "(D) 5"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">If the mean of the following distribution is 6, find the value of p: x: 2 4 6 10 p+5; f: 3 2 3 1 2</span>',
+      options: ["(A) 6", "(B) 7", "(C) 5", "(D) 4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">The algebraic sum of deviations of a frequency distribution from its mean is:</span>',
+      options: [
+        "(A) Always positive",
+        "(B) Always negative",
+        "(C) Zero",
+        "(D) Non-zero",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">In the formula x̄ = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>',
+      options: [
+        "(A) xᵢ - a",
+        "(B) (xᵢ - a) / h",
+        "(C) (a - xᵢ) / h",
+        "(D) h(xᵢ - a)",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">While computing mean of grouped data, we assume that the frequencies are:</span>',
+      options: [
+        "(A) centred at the upper limits of the classes",
+        "(B) centred at the lower limits of the classes",
+        "(C) centred at the classmarks of the classes",
+        "(D) evenly distributed",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">Construction of a cumulative frequency table is useful in determining the:</span>',
+      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) All of these"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">Which of the following cannot be determined graphically?</span>',
+      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) None of these"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its:</span>',
+      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) Range"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">If the mean of first n natural numbers is 5n/9, then n = ?</span>',
+      options: ["(A) 9", "(B) 10", "(C) 11", "(D) 12"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [
+    "Mastered the calculation of Mean using multiple methods.",
+    "Learned to identify the Modal and Median class for grouped frequency distributions.",
+    "Understood the relationship between Mean, Median, and Mode.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -320,8 +315,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1035,7 +1030,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        exercise2: `<!DOCTYPE html>
+    exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1238,7 +1233,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        exercise3: `<!DOCTYPE html>
+    exercise3: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1588,7 +1583,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1749,6 +1744,6 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`
-    }
+</html>`,
+  },
 };

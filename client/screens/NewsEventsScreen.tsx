@@ -7,29 +7,37 @@ import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getHomeRoute } from "@/utils/navigation-utils";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  Typography,
+  BorderRadius,
+} from "@/constants/theme";
 
 const NEWS_DATA = [
   {
     id: "1",
     title: "CBSE Class 10 Datesheet Released",
     date: "Feb 5, 2026",
-    summary: "The final datesheet for Class 10 board exams has been announced. Mathematics exam is scheduled for March 12th.",
-    type: "news"
+    summary:
+      "The final datesheet for Class 10 board exams has been announced. Mathematics exam is scheduled for March 12th.",
+    type: "news",
   },
   {
     id: "2",
     title: "New Chapter Added: Statistics",
     date: "Feb 1, 2026",
-    summary: "We have updated the app with complete solutions and practice questions for the Statistics chapter.",
-    type: "update"
+    summary:
+      "We have updated the app with complete solutions and practice questions for the Statistics chapter.",
+    type: "update",
   },
   {
     id: "3",
     title: "Math Olympiad Registration",
     date: "Jan 25, 2026",
-    summary: "Registration for the National Math Olympiad is now open. Check the official website for details.",
-    type: "event"
+    summary:
+      "Registration for the National Math Olympiad is now open. Check the official website for details.",
+    type: "event",
   },
 ];
 
@@ -54,7 +62,9 @@ function NewsEventsScreen() {
         {NEWS_DATA.map((item) => (
           <View key={item.id} style={styles.newsCard}>
             <View style={styles.cardHeader}>
-              <ThemedText style={styles.newsType}>{item.type.toUpperCase()}</ThemedText>
+              <ThemedText style={styles.newsType}>
+                {item.type.toUpperCase()}
+              </ThemedText>
               <ThemedText style={styles.newsDate}>{item.date}</ThemedText>
             </View>
             <ThemedText style={styles.newsTitle}>{item.title}</ThemedText>

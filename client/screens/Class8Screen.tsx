@@ -8,7 +8,10 @@ import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type Class8ScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Class8">;
+type Class8ScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "Class8"
+>;
 
 function Class8Screen() {
   const navigation = useNavigation<Class8ScreenNavigationProp>();
@@ -17,10 +20,7 @@ function Class8Screen() {
     <ScreenWrapper showBackButton hideHomeButton>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[
-          styles.content,
-          styles.centeredContent,
-        ]}
+        contentContainerStyle={[styles.content, styles.centeredContent]}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
@@ -30,7 +30,12 @@ function Class8Screen() {
               title="MATHEMATICS"
               icon="📘"
               colors={JiguuColors.gradients.pink}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Class 8", topic: "Mathematics" })}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 8",
+                  topic: "Mathematics",
+                })
+              }
             />
           </View>
 
@@ -40,7 +45,12 @@ function Class8Screen() {
               title="SCIENCE"
               icon="🔬"
               colors={JiguuColors.gradients.purple}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Class 8 Science", topic: "Science" })}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 8 Science",
+                  topic: "Science",
+                })
+              }
             />
           </View>
 
@@ -50,7 +60,9 @@ function Class8Screen() {
               title="START QUIZ"
               icon="🎯"
               colors={JiguuColors.gradients.brightBlue}
-              onPress={() => navigation.navigate("Quiz", { className: "Class 8" })}
+              onPress={() =>
+                navigation.navigate("Quiz", { className: "Class 8" })
+              }
             />
           </View>
 
@@ -60,7 +72,9 @@ function Class8Screen() {
               title="QUICK NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
-              onPress={() => navigation.navigate("QuickNotes", { className: "Class 8" })}
+              onPress={() =>
+                navigation.navigate("QuickNotes", { className: "Class 8" })
+              }
             />
           </View>
         </View>

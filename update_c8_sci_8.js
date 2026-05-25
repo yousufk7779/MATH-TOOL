@@ -1,10 +1,12 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const path8_9 = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\magnetic_needle_tester_diagram_1777803352734.png';
-const b64_8_9 = fs.readFileSync(path8_9).toString('base64');
+const path8_9 =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\magnetic_needle_tester_diagram_1777803352734.png";
+const b64_8_9 = fs.readFileSync(path8_9).toString("base64");
 
-const path8_10 = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\bulb_tester_no_glow_diagram_1777803382636.png';
-const b64_8_10 = fs.readFileSync(path8_10).toString('base64');
+const path8_10 =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\bulb_tester_no_glow_diagram_1777803382636.png";
+const b64_8_10 = fs.readFileSync(path8_10).toString("base64");
 
 const content = `import { ChapterContent } from "../chapterContent";
 
@@ -189,5 +191,5 @@ export const c8Sci8: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-8.ts', content, 'utf8');
-console.log('Successfully updated Chapter 8 content with diagrams.');
+fs.writeFileSync("client/data/content/c8-sci-8.ts", content, "utf8");
+console.log("Successfully updated Chapter 8 content with diagrams.");

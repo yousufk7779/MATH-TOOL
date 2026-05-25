@@ -1,45 +1,56 @@
 import { ChapterContent } from "../types";
 
 export const mathCh3: ChapterContent = {
-    id: "ch3",
-    number: 3,
-    title: "Pair of Linear Equations",
-    introduction: "In this chapter, we explore systems of two linear equations with two variables. We learn to represent them graphically and algebraically, identifying whether they have a unique solution, infinitely many solutions, or no solution at all.",
-    definitions: [
-        { term: "Linear Equation", description: "An equation of the form ax + by + c = 0, where a and b are not both zero." },
-        { term: "Consistent System", description: "A pair of equations that has at least one common solution." },
-        { term: "Inconsistent System", description: "A pair of equations that has no common solution." }
-    ],
-    keyPoints: [
-        "Intersecting lines have a unique solution.",
-        "Parallel lines have no solution.",
-        "Coincident lines have infinitely many solutions."
-    ],
-    formulas: [
-        { name: "Unique Solution Condition", formula: "a1/a2 ≠ b1/b2" },
-        { name: "No Solution", formula: "a1/a2 = b1/b2 ≠ c1/c2" },
-        { name: "Infinite Solutions", formula: "a1/a2 = b1/b2 = c1/c2" }
-    ],
-    crux: [
-        "Algebraic methods: Substitution, Elimination, and Cross-multiplication.",
-        "Graphical interpretation of consistency and dependence."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 3.1", questions: [] },
-        { id: "exercise2", name: "Exercise 3.2", questions: [] },
-        { id: "exercise3", name: "Exercise 3.3", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
+  id: "ch3",
+  number: 3,
+  title: "Pair of Linear Equations",
+  introduction:
+    "In this chapter, we explore systems of two linear equations with two variables. We learn to represent them graphically and algebraically, identifying whether they have a unique solution, infinitely many solutions, or no solution at all.",
+  definitions: [
+    {
+      term: "Linear Equation",
+      description:
+        "An equation of the form ax + by + c = 0, where a and b are not both zero.",
+    },
+    {
+      term: "Consistent System",
+      description: "A pair of equations that has at least one common solution.",
+    },
+    {
+      term: "Inconsistent System",
+      description: "A pair of equations that has no common solution.",
+    },
+  ],
+  keyPoints: [
+    "Intersecting lines have a unique solution.",
+    "Parallel lines have no solution.",
+    "Coincident lines have infinitely many solutions.",
+  ],
+  formulas: [
+    { name: "Unique Solution Condition", formula: "a1/a2 ≠ b1/b2" },
+    { name: "No Solution", formula: "a1/a2 = b1/b2 ≠ c1/c2" },
+    { name: "Infinite Solutions", formula: "a1/a2 = b1/b2 = c1/c2" },
+  ],
+  crux: [
+    "Algebraic methods: Substitution, Elimination, and Cross-multiplication.",
+    "Graphical interpretation of consistency and dependence.",
+  ],
+  exercises: [
+    { id: "exercise1", name: "Exercise 3.1", questions: [] },
+    { id: "exercise2", name: "Exercise 3.2", questions: [] },
+    { id: "exercise3", name: "Exercise 3.3", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
 
-    summary: [
-        "Understood the graphical representation of linear pairs.",
-        "Mastered the conditions for consistency and inconsistency.",
-        "Learned efficient algebraic techniques for solving systems of equations."
-    ],
+  summary: [
+    "Understood the graphical representation of linear pairs.",
+    "Mastered the conditions for consistency and inconsistency.",
+    "Learned efficient algebraic techniques for solving systems of equations.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -244,8 +255,8 @@ export const mathCh3: ChapterContent = {
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -880,7 +891,7 @@ export const mathCh3: ChapterContent = {
 </body>
 
 </html>`,
-        exercise2: `<!DOCTYPE html>
+    exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1421,7 +1432,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        exercise3: `<!DOCTYPE html>
+    exercise3: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1780,7 +1791,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -2312,118 +2323,113 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`
+</html>`,
+  },
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">The general form of a linear equation in two variables is:</span>',
+      options: [
+        "(A) ax + by + c = 0",
+        "(B) ax² + by + c = 0",
+        "(C) ax + b = 0",
+        "(D) None of these",
+      ],
+      correctAnswer: "A",
     },
-    "mcqs": [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">The general form of a linear equation in two variables is:</span>",
-            "options": [
-                "(A) ax + by + c = 0",
-                "(B) ax² + by + c = 0",
-                "(C) ax + b = 0",
-                "(D) None of these"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">The graph of a linear equation in two variables is always a:</span>",
-            "options": [
-                "(A) Circle",
-                "(B) Straight line",
-                "(C) Curve",
-                "(D) Point"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">If a₁/a₂ ≠ b₁/b₂, then the pair of linear equations has:</span>",
-            "options": [
-                "(A) Unique solution",
-                "(B) No solution",
-                "(C) Infinitely many solutions",
-                "(D) Two solutions"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">If a₁/a₂ = b₁/b₂ = c₁/c₂, then the lines are:</span>",
-            "options": [
-                "(A) Intersecting",
-                "(B) Parallel",
-                "(C) Coincident",
-                "(D) Perpendicular"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">If a₁/a₂ = b₁/b₂ ≠ c₁/c₂, then the system of equations is:</span>",
-            "options": [
-                "(A) Consistent",
-                "(B) Inconsistent",
-                "(C) Dependent",
-                "(D) None of these"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">The solution of x + y = 5 and x - y = 1 is:</span>",
-            "options": [
-                "(A) (3, 2)",
-                "(B) (2, 3)",
-                "(C) (4, 1)",
-                "(D) (1, 4)"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">A pair of linear equations which has no solution is called:</span>",
-            "options": [
-                "(A) Consistent",
-                "(B) Inconsistent",
-                "(C) Convergent",
-                "(D) Divergent"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">The value of k for which x + 2y = 3 and 5x + ky + 7 = 0 has a unique solution is:</span>",
-            "options": [
-                "(A) k = 10",
-                "(B) k ≠ 10",
-                "(C) k = 5",
-                "(D) k ≠ 5"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">If the lines representing the equations are coincident, then they have:</span>",
-            "options": [
-                "(A) Only one solution",
-                "(B) No solution",
-                "(C) Infinitely many solutions",
-                "(D) Exactly two solutions"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">The point (2, 3) lies on the line:</span>",
-            "options": [
-                "(A) x + y = 5",
-                "(B) x - y = 5",
-                "(C) 2x + y = 10",
-                "(D) x + 2y = 10"
-            ],
-            "correctAnswer": "A"
-        }
-    ]
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">The graph of a linear equation in two variables is always a:</span>',
+      options: ["(A) Circle", "(B) Straight line", "(C) Curve", "(D) Point"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">If a₁/a₂ ≠ b₁/b₂, then the pair of linear equations has:</span>',
+      options: [
+        "(A) Unique solution",
+        "(B) No solution",
+        "(C) Infinitely many solutions",
+        "(D) Two solutions",
+      ],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">If a₁/a₂ = b₁/b₂ = c₁/c₂, then the lines are:</span>',
+      options: [
+        "(A) Intersecting",
+        "(B) Parallel",
+        "(C) Coincident",
+        "(D) Perpendicular",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">If a₁/a₂ = b₁/b₂ ≠ c₁/c₂, then the system of equations is:</span>',
+      options: [
+        "(A) Consistent",
+        "(B) Inconsistent",
+        "(C) Dependent",
+        "(D) None of these",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">The solution of x + y = 5 and x - y = 1 is:</span>',
+      options: ["(A) (3, 2)", "(B) (2, 3)", "(C) (4, 1)", "(D) (1, 4)"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">A pair of linear equations which has no solution is called:</span>',
+      options: [
+        "(A) Consistent",
+        "(B) Inconsistent",
+        "(C) Convergent",
+        "(D) Divergent",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">The value of k for which x + 2y = 3 and 5x + ky + 7 = 0 has a unique solution is:</span>',
+      options: ["(A) k = 10", "(B) k ≠ 10", "(C) k = 5", "(D) k ≠ 5"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">If the lines representing the equations are coincident, then they have:</span>',
+      options: [
+        "(A) Only one solution",
+        "(B) No solution",
+        "(C) Infinitely many solutions",
+        "(D) Exactly two solutions",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">The point (2, 3) lies on the line:</span>',
+      options: [
+        "(A) x + y = 5",
+        "(B) x - y = 5",
+        "(C) 2x + y = 10",
+        "(D) x + 2y = 10",
+      ],
+      correctAnswer: "A",
+    },
+  ],
 };

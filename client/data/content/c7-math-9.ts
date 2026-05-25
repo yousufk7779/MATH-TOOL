@@ -1,37 +1,44 @@
 import { ChapterContent } from "../types";
 
 export const c7Math9: ChapterContent = {
-    id: "c7-math-9",
-    number: 9,
-    title: "Perimeter and Area",
-    isHtmlView: true,
-    introduction: "Perimeter is the distance around a closed figure, while area is the region occupied by it. In this chapter, we learn how to calculate these for squares, rectangles, parallelograms, triangles, and circles.",
-    definitions: [
-        { term: "Perimeter", definition: "The total length of the boundary of a closed figure." },
-        { term: "Area", definition: "The measure of the region inside a closed figure." },
-        { term: "Circumference", definition: "The perimeter of a circle." }
-    ],
-    keyPoints: [
-        "Area of a parallelogram = base × height.",
-        "Area of a triangle = 1/2 × base × height.",
-        "Circumference of a circle = 2πr (where r is the radius).",
-        "Area of a circle = πr².",
-        "1 cm² = 100 mm²; 1 m² = 10,000 cm²."
-    ],
-    formulas: [
-        { name: "Area of Parallelogram", formula: "Base × Height" },
-        { name: "Area of Triangle", formula: "1/2 × Base × Height" },
-        { name: "Circumference of Circle", formula: "2πr" },
-        { name: "Area of Circle", formula: "πr²" }
-    ],
-    crux: [],
-    exercises: [
-         { id: "ex9-1", name: "Exercise 9.1", questions: [] },
-        { id: "ex9-2", name: "Exercise 9.2", questions: [] },
-        { id: "ex9-3", name: "Exercise 9.3", questions: [] },
-        { id: "ex9-4", name: "Exercise 9.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-9",
+  number: 9,
+  title: "Perimeter and Area",
+  isHtmlView: true,
+  introduction:
+    "Perimeter is the distance around a closed figure, while area is the region occupied by it. In this chapter, we learn how to calculate these for squares, rectangles, parallelograms, triangles, and circles.",
+  definitions: [
+    {
+      term: "Perimeter",
+      definition: "The total length of the boundary of a closed figure.",
+    },
+    {
+      term: "Area",
+      definition: "The measure of the region inside a closed figure.",
+    },
+    { term: "Circumference", definition: "The perimeter of a circle." },
+  ],
+  keyPoints: [
+    "Area of a parallelogram = base × height.",
+    "Area of a triangle = 1/2 × base × height.",
+    "Circumference of a circle = 2πr (where r is the radius).",
+    "Area of a circle = πr².",
+    "1 cm² = 100 mm²; 1 m² = 10,000 cm².",
+  ],
+  formulas: [
+    { name: "Area of Parallelogram", formula: "Base × Height" },
+    { name: "Area of Triangle", formula: "1/2 × Base × Height" },
+    { name: "Circumference of Circle", formula: "2πr" },
+    { name: "Area of Circle", formula: "πr²" },
+  ],
+  crux: [],
+  exercises: [
+    { id: "ex9-1", name: "Exercise 9.1", questions: [] },
+    { id: "ex9-2", name: "Exercise 9.2", questions: [] },
+    { id: "ex9-3", name: "Exercise 9.3", questions: [] },
+    { id: "ex9-4", name: "Exercise 9.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #D81B60; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -49,8 +56,8 @@ export const c7Math9: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex9-1": `
+  htmlExercises: {
+    "ex9-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #D81B60; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -162,7 +169,7 @@ export const c7Math9: ChapterContent = {
             </div>
         </div>
         `,
-        "ex9-2": `
+    "ex9-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #D81B60; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -428,7 +435,7 @@ export const c7Math9: ChapterContent = {
             </div>
         </div>
         `,
-        "ex9-3": `
+    "ex9-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #D81B60; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -653,7 +660,7 @@ export const c7Math9: ChapterContent = {
             </div>
         </div>
         `,
-        "ex9-4": `
+    "ex9-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #D81B60; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -906,20 +913,77 @@ export const c7Math9: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question:
+        "<span style='color: #D81B60'>Area of a parallelogram is:</span>",
+      options: ["Base × Height", "1/2 × B × H", "Side²", "Length × Breadth"],
+      correctAnswer: "A",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "<span style='color: #D81B60'>Area of a parallelogram is:</span>", options: ["Base × Height", "1/2 × B × H", "Side²", "Length × Breadth"], correctAnswer: "A" },
-        { id: "m2", question: "<span style='color: #D81B60'>Area of a triangle is:</span>", options: ["Base × Height", "1/2 × B × H", "2 × B × H", "B + H"], correctAnswer: "B" },
-        { id: "m3", question: "<span style='color: #D81B60'>Circumference of a circle is:</span>", options: ["πr²", "2πr", "πd", "Both B and C"], correctAnswer: "D" },
-        { id: "m4", question: "<span style='color: #D81B60'>Area of a circle is:</span>", options: ["πr²", "2πr", "πd", "πr"], correctAnswer: "A" },
-        { id: "m5", question: "<span style='color: #D81B60'>1 m² is equal to:</span>", options: ["100 cm²", "1000 cm²", "10,000 cm²", "1,000,000 cm²"], correctAnswer: "C" },
-        { id: "m6", question: "<span style='color: #D81B60'>Perimeter of a square with side 5 cm is:</span>", options: ["20 cm", "25 cm", "10 cm", "15 cm"], correctAnswer: "A" },
-        { id: "m7", question: "<span style='color: #D81B60'>If radius is 7 cm, circumference is (π=22/7):</span>", options: ["44 cm", "154 cm", "22 cm", "11 cm"], correctAnswer: "A" },
-        { id: "m8", question: "<span style='color: #D81B60'>If radius is 7 cm, area is:</span>", options: ["44 cm²", "154 cm²", "77 cm²", "14 cm²"], correctAnswer: "B" },
-        { id: "m9", question: "<span style='color: #D81B60'>A triangle with base 10 and height 5 has area:</span>", options: ["50", "25", "15", "10"], correctAnswer: "B" },
-        { id: "m10", question: "<span style='color: #D81B60'>The distance around a circle is called:</span>", options: ["Area", "Diameter", "Circumference", "Volume"], correctAnswer: "C" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "<span style='color: #D81B60'>Area of a triangle is:</span>",
+      options: ["Base × Height", "1/2 × B × H", "2 × B × H", "B + H"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question:
+        "<span style='color: #D81B60'>Circumference of a circle is:</span>",
+      options: ["πr²", "2πr", "πd", "Both B and C"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m4",
+      question: "<span style='color: #D81B60'>Area of a circle is:</span>",
+      options: ["πr²", "2πr", "πd", "πr"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "<span style='color: #D81B60'>1 m² is equal to:</span>",
+      options: ["100 cm²", "1000 cm²", "10,000 cm²", "1,000,000 cm²"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m6",
+      question:
+        "<span style='color: #D81B60'>Perimeter of a square with side 5 cm is:</span>",
+      options: ["20 cm", "25 cm", "10 cm", "15 cm"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question:
+        "<span style='color: #D81B60'>If radius is 7 cm, circumference is (π=22/7):</span>",
+      options: ["44 cm", "154 cm", "22 cm", "11 cm"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m8",
+      question:
+        "<span style='color: #D81B60'>If radius is 7 cm, area is:</span>",
+      options: ["44 cm²", "154 cm²", "77 cm²", "14 cm²"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question:
+        "<span style='color: #D81B60'>A triangle with base 10 and height 5 has area:</span>",
+      options: ["50", "25", "15", "10"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question:
+        "<span style='color: #D81B60'>The distance around a circle is called:</span>",
+      options: ["Area", "Diameter", "Circumference", "Volume"],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [],
 };

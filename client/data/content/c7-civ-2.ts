@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#7986CB"; // Chapter 2 theme (Indigo)
 
 export const c7Civ2: ChapterContent = {
-    id: "c7-civ-2",
-    number: 2,
-    title: "Role of the Government in Health",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-civ-2",
+  number: 2,
+  title: "Role of the Government in Health",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>In a democracy, people expect the government to work for their welfare. This can be through the provision of education, health, employment, housing or the development of roads, electricity etc. In this chapter we shall examine the meanings and problems related to health.</p>
             
@@ -25,8 +25,8 @@ export const c7Civ2: ChapterContent = {
             <p>Private services are often expensive and mostly concentrated in urban areas. This creates a situation where many people cannot afford proper treatment.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7c2-ex-all": `
+  htmlExercises: {
+    "c7c2-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 30px;">
                     <div style="margin-bottom: 18px;">
@@ -74,82 +74,108 @@ export const c7Civ2: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "In a democracy, people expect the government to work for their welfare.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7c2-mcq-1",
+      question: "What is the full form of PHC?",
+      options: [
+        "Private Health Centre",
+        "Primary Health Centre",
+        "Public Health Clinic",
+        "Primary Help Centre",
+      ],
+      correctAnswer: "b",
     },
-    introduction: "In a democracy, people expect the government to work for their welfare.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7c2-mcq-1",
-            question: "What is the full form of PHC?",
-            options: ["Private Health Centre", "Primary Health Centre", "Public Health Clinic", "Primary Help Centre"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c2-mcq-2",
-            question: "Who runs the Public Health Services in India?",
-            options: ["Private Doctors", "Government", "NGOs", "Foreign Companies"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c2-mcq-3",
-            question: "India is the ____ largest producer of medicines in the world.",
-            options: ["1st", "2nd", "3rd", "4th"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c2-mcq-4",
-            question: "Which country in South America is considered the healthiest?",
-            options: ["Brazil", "Argentina", "Costa Rica", "Peru"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c2-mcq-5",
-            question: "What is the main cause of many communicable diseases?",
-            options: ["Lack of exercise", "Contaminated water", "Excessive sleep", "Eating fruits"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c2-mcq-6",
-            question: "Right to Health is a part of which fundamental right?",
-            options: ["Right to Equality", "Right to Life", "Right against Exploitation", "Right to Education"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c2-mcq-7",
-            question: "RMP stands for:",
-            options: ["Regional Medical Personnel", "Registered Medical Practitioners", "Real Medical Professional", "Rural Medical Plan"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c2-mcq-8",
-            question: "OPD stands for:",
-            options: ["Out Patient Department", "Over Patient Duty", "On Patient Doctor", "Outside Patient Division"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7c2-mcq-9",
-            question: "Communicable diseases spread through:",
-            options: ["Water", "Food", "Air", "All of these"],
-            correctAnswer: "d"
-        },
-        {
-            id: "c7c2-mcq-10",
-            question: "Private health services are mostly found in:",
-            options: ["Villages", "Remote areas", "Urban areas", "Forests"],
-            correctAnswer: "c"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7c2-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7c2-mcq-2",
+      question: "Who runs the Public Health Services in India?",
+      options: ["Private Doctors", "Government", "NGOs", "Foreign Companies"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c2-mcq-3",
+      question: "India is the ____ largest producer of medicines in the world.",
+      options: ["1st", "2nd", "3rd", "4th"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c2-mcq-4",
+      question: "Which country in South America is considered the healthiest?",
+      options: ["Brazil", "Argentina", "Costa Rica", "Peru"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c2-mcq-5",
+      question: "What is the main cause of many communicable diseases?",
+      options: [
+        "Lack of exercise",
+        "Contaminated water",
+        "Excessive sleep",
+        "Eating fruits",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c2-mcq-6",
+      question: "Right to Health is a part of which fundamental right?",
+      options: [
+        "Right to Equality",
+        "Right to Life",
+        "Right against Exploitation",
+        "Right to Education",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c2-mcq-7",
+      question: "RMP stands for:",
+      options: [
+        "Regional Medical Personnel",
+        "Registered Medical Practitioners",
+        "Real Medical Professional",
+        "Rural Medical Plan",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c2-mcq-8",
+      question: "OPD stands for:",
+      options: [
+        "Out Patient Department",
+        "Over Patient Duty",
+        "On Patient Doctor",
+        "Outside Patient Division",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7c2-mcq-9",
+      question: "Communicable diseases spread through:",
+      options: ["Water", "Food", "Air", "All of these"],
+      correctAnswer: "d",
+    },
+    {
+      id: "c7c2-mcq-10",
+      question: "Private health services are mostly found in:",
+      options: ["Villages", "Remote areas", "Urban areas", "Forests"],
+      correctAnswer: "c",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7c2-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

@@ -1,157 +1,158 @@
 import { ChapterContent } from "../types";
 
 export const mathCh12: ChapterContent = {
-    id: "ch12",
-    number: 12,
-    title: "Surface Areas and Volumes",
-    introduction: "In this chapter, we explore the properties of three-dimensional figures formed by combining basic solids. We focus on calculating their total surface areas and total volumes using established geometric principles.",
-    definitions: [
-        { term: "Surface Area", description: "The total area that the surface of an object occupies." },
-        { term: "Volume", description: "The amount of space that a substance or object occupies." },
-        { term: "Combination of Solids", description: "A new solid figure formed by joining two or more basic three-dimensional objects." }
-    ],
-    keyPoints: [
-        "The total surface area of a combination is the sum of the curved surface areas of visible parts.",
-        "The total volume of a combination is the algebraic sum of the individual volumes.",
-        "When solids are joined, the surfaces that touch are no longer part of the total surface area."
-    ],
-    formulas: [
-        { name: "Cone CSA", formula: "πrl" },
-        { name: "Cylinder TSA", formula: "2πr(r + h)" },
-        { name: "Sphere Volume", formula: "(4/3)πr³" },
-        { name: "Hemisphere TSA", formula: "3πr²" }
-    ],
-    crux: [
-        "Identify which surfaces are 'joined' to exclude them from surface area calculations.",
-        "Always check if units are consistent (cm, m, mm) before starting calculations.",
-        "For volume, simply add or subtract the individual solid volumes as per the problem description."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 12.1", questions: [] },
-        { id: "exercise2", name: "Exercise 12.2", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">A solid is in the shape of a cone standing on a hemisphere with both their radii being equal to 1 cm and the height of the cone is equal to its radius. The volume of the solid is:</span>",
-            "options": [
-                "(A) π cm³",
-                "(B) 2π cm³",
-                "(C) 3π cm³",
-                "(D) 4π cm³"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">Combining two cubes of side 'a' end to end results in a cuboid with surface area:</span>",
-            "options": [
-                "(A) 12a²",
-                "(B) 10a²",
-                "(C) 8a²",
-                "(D) 6a²"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">A cylindrical pencil sharpened at one end is combination of:</span>",
-            "options": [
-                "(A) a cone and a cylinder",
-                "(B) frustum of a cone and a cylinder",
-                "(C) a hemisphere and a cylinder",
-                "(D) two cylinders"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">A surahi is the combination of:</span>",
-            "options": [
-                "(A) a sphere and a cylinder",
-                "(B) a hemisphere and a cylinder",
-                "(C) two hemispheres",
-                "(D) a cylinder and a cone"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">A plumbline (sahul) is the combination of:</span>",
-            "options": [
-                "(A) a cone and a cylinder",
-                "(B) a hemisphere and a cone",
-                "(C) frustum of a cone and a cylinder",
-                "(D) sphere and cylinder"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">The shape of a gilli, in the gilli-danda game, is a combination of:</span>",
-            "options": [
-                "(A) two cylinders",
-                "(B) a cone and a cylinder",
-                "(C) two cones and a cylinder",
-                "(D) two cylinders and a cone"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">A shuttle cock used for playing badminton has the shape of the combination of:</span>",
-            "options": [
-                "(A) a cylinder and a sphere",
-                "(B) a sphere and a cone",
-                "(C) a cylinder and a hemisphere",
-                "(D) frustum of cone and a hemisphere"
-            ],
-            "correctAnswer": "D"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">A medicine capsule is in the shape of a cylinder of diameter 0.5 cm with two hemispheres stuck to each of its ends. The length of entire capsule is 2 cm. The capacity of the capsule is:</span>",
-            "options": [
-                "(A) 0.36 cm³",
-                "(B) 0.35 cm³",
-                "(C) 0.34 cm³",
-                "(D) 0.33 cm³"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is:</span>",
-            "options": [
-                "(A) 4πr²",
-                "(B) 6πr²",
-                "(C) 3πr²",
-                "(D) 8πr²"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">Volume of a bird-bath which consists of a cylinder with a hemispherical depression at one end, with height h and radius r, is:</span>",
-            "options": [
-                "(A) πr²h + (2/3)πr³",
-                "(B) πr²h - (2/3)πr³",
-                "(C) πr²h - (4/3)πr³",
-                "(D) None of these"
-            ],
-            "correctAnswer": "B"
-        }
-    ],
-    summary: [
-        "Mastered the calculation of surface areas for complex combined solids.",
-        "Learned to compute the volume of air or material inside combined shapes.",
-        "Applied formulas to real-world objects like medicine capsules, tents, and decorative items."
-    ],
+  id: "ch12",
+  number: 12,
+  title: "Surface Areas and Volumes",
+  introduction:
+    "In this chapter, we explore the properties of three-dimensional figures formed by combining basic solids. We focus on calculating their total surface areas and total volumes using established geometric principles.",
+  definitions: [
+    {
+      term: "Surface Area",
+      description: "The total area that the surface of an object occupies.",
+    },
+    {
+      term: "Volume",
+      description: "The amount of space that a substance or object occupies.",
+    },
+    {
+      term: "Combination of Solids",
+      description:
+        "A new solid figure formed by joining two or more basic three-dimensional objects.",
+    },
+  ],
+  keyPoints: [
+    "The total surface area of a combination is the sum of the curved surface areas of visible parts.",
+    "The total volume of a combination is the algebraic sum of the individual volumes.",
+    "When solids are joined, the surfaces that touch are no longer part of the total surface area.",
+  ],
+  formulas: [
+    { name: "Cone CSA", formula: "πrl" },
+    { name: "Cylinder TSA", formula: "2πr(r + h)" },
+    { name: "Sphere Volume", formula: "(4/3)πr³" },
+    { name: "Hemisphere TSA", formula: "3πr²" },
+  ],
+  crux: [
+    "Identify which surfaces are 'joined' to exclude them from surface area calculations.",
+    "Always check if units are consistent (cm, m, mm) before starting calculations.",
+    "For volume, simply add or subtract the individual solid volumes as per the problem description.",
+  ],
+  exercises: [
+    { id: "exercise1", name: "Exercise 12.1", questions: [] },
+    { id: "exercise2", name: "Exercise 12.2", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">A solid is in the shape of a cone standing on a hemisphere with both their radii being equal to 1 cm and the height of the cone is equal to its radius. The volume of the solid is:</span>',
+      options: ["(A) π cm³", "(B) 2π cm³", "(C) 3π cm³", "(D) 4π cm³"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq2",
+      question:
+        "<span style=\"font-weight: normal;\">Combining two cubes of side 'a' end to end results in a cuboid with surface area:</span>",
+      options: ["(A) 12a²", "(B) 10a²", "(C) 8a²", "(D) 6a²"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">A cylindrical pencil sharpened at one end is combination of:</span>',
+      options: [
+        "(A) a cone and a cylinder",
+        "(B) frustum of a cone and a cylinder",
+        "(C) a hemisphere and a cylinder",
+        "(D) two cylinders",
+      ],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">A surahi is the combination of:</span>',
+      options: [
+        "(A) a sphere and a cylinder",
+        "(B) a hemisphere and a cylinder",
+        "(C) two hemispheres",
+        "(D) a cylinder and a cone",
+      ],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">A plumbline (sahul) is the combination of:</span>',
+      options: [
+        "(A) a cone and a cylinder",
+        "(B) a hemisphere and a cone",
+        "(C) frustum of a cone and a cylinder",
+        "(D) sphere and cylinder",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">The shape of a gilli, in the gilli-danda game, is a combination of:</span>',
+      options: [
+        "(A) two cylinders",
+        "(B) a cone and a cylinder",
+        "(C) two cones and a cylinder",
+        "(D) two cylinders and a cone",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">A shuttle cock used for playing badminton has the shape of the combination of:</span>',
+      options: [
+        "(A) a cylinder and a sphere",
+        "(B) a sphere and a cone",
+        "(C) a cylinder and a hemisphere",
+        "(D) frustum of cone and a hemisphere",
+      ],
+      correctAnswer: "D",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">A medicine capsule is in the shape of a cylinder of diameter 0.5 cm with two hemispheres stuck to each of its ends. The length of entire capsule is 2 cm. The capacity of the capsule is:</span>',
+      options: ["(A) 0.36 cm³", "(B) 0.35 cm³", "(C) 0.34 cm³", "(D) 0.33 cm³"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">If two solid hemispheres of same base radius r are joined together along their bases, then curved surface area of this new solid is:</span>',
+      options: ["(A) 4πr²", "(B) 6πr²", "(C) 3πr²", "(D) 8πr²"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">Volume of a bird-bath which consists of a cylinder with a hemispherical depression at one end, with height h and radius r, is:</span>',
+      options: [
+        "(A) πr²h + (2/3)πr³",
+        "(B) πr²h - (2/3)πr³",
+        "(C) πr²h - (4/3)πr³",
+        "(D) None of these",
+      ],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [
+    "Mastered the calculation of surface areas for complex combined solids.",
+    "Learned to compute the volume of air or material inside combined shapes.",
+    "Applied formulas to real-world objects like medicine capsules, tents, and decorative items.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -315,8 +316,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -583,7 +584,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        exercise2: `<!DOCTYPE html>
+    exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -835,7 +836,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1005,6 +1006,6 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`
-    }
+</html>`,
+  },
 };

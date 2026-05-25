@@ -1,26 +1,27 @@
 import { ChapterContent } from "../types";
 
 export const c7Math1: ChapterContent = {
-    id: "c7-math-1",
-    number: 1,
-    title: "Integers",
-    isHtmlView: true,
-    introduction: "We have already learnt about whole numbers and integers in Class VI. We know that integers form a bigger collection of numbers which contains whole numbers and negative numbers.",
-    definitions: [],
-    keyPoints: [
-        "Integers are a collection of whole numbers and negative numbers.",
-        "On a number line, positive integers are to the right of zero and negative integers are to the left.",
-        "The absolute value of an integer is its distance from zero."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex1-1", name: "Exercise 1.1", questions: [] },
-        { id: "ex1-2", name: "Exercise 1.2", questions: [] },
-        { id: "ex1-3", name: "Exercise 1.3", questions: [] },
-        { id: "ex1-4", name: "Exercise 1.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-1",
+  number: 1,
+  title: "Integers",
+  isHtmlView: true,
+  introduction:
+    "We have already learnt about whole numbers and integers in Class VI. We know that integers form a bigger collection of numbers which contains whole numbers and negative numbers.",
+  definitions: [],
+  keyPoints: [
+    "Integers are a collection of whole numbers and negative numbers.",
+    "On a number line, positive integers are to the right of zero and negative integers are to the left.",
+    "The absolute value of an integer is its distance from zero.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex1-1", name: "Exercise 1.1", questions: [] },
+    { id: "ex1-2", name: "Exercise 1.2", questions: [] },
+    { id: "ex1-3", name: "Exercise 1.3", questions: [] },
+    { id: "ex1-4", name: "Exercise 1.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FF9800; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -38,8 +39,8 @@ export const c7Math1: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex1-1": `
+  htmlExercises: {
+    "ex1-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { 
@@ -190,7 +191,7 @@ export const c7Math1: ChapterContent = {
             </div>
         </div>
         `,
-        "ex1-2": `
+    "ex1-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { 
@@ -252,7 +253,7 @@ export const c7Math1: ChapterContent = {
             </div>
         </div>
         `,
-        "ex1-3": `
+    "ex1-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { 
@@ -348,7 +349,7 @@ export const c7Math1: ChapterContent = {
             </div>
         </div>
         `,
-        "ex1-4": `
+    "ex1-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { 
@@ -458,20 +459,70 @@ export const c7Math1: ChapterContent = {
                 <div class="sol-step">=> <span class="ans-highlight">1 hour</span></div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "The sum of two negative integers is always:",
+      options: ["Positive", "Negative", "Zero", "None"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "The sum of two negative integers is always:", options: ["Positive", "Negative", "Zero", "None"], correctAnswer: "B" },
-        { id: "m2", question: "What is -5 + 5 equal to?", options: ["10", "-10", "0", "1"], correctAnswer: "C" },
-        { id: "m3", question: "The additive inverse of -8 is:", options: ["-8", "8", "0", "1"], correctAnswer: "B" },
-        { id: "m4", question: "Which is the greatest negative integer?", options: ["-100", "-1", "0", "-10"], correctAnswer: "B" },
-        { id: "m5", question: "The successor of -1 is:", options: ["-2", "0", "1", "None"], correctAnswer: "B" },
-        { id: "m6", question: "What is -3 x (-4) equal to?", options: ["-12", "12", "7", "-7"], correctAnswer: "B" },
-        { id: "m7", question: "What is -15 / 3 equal to?", options: ["5", "-5", "3", "-3"], correctAnswer: "B" },
-        { id: "m8", question: "The value of |-10| is:", options: ["-10", "10", "0", "1"], correctAnswer: "B" },
-        { id: "m9", question: "The predecessor of -5 is:", options: ["-4", "-6", "5", "6"], correctAnswer: "B" },
-        { id: "m10", question: "Which of the following is neither positive nor negative?", options: ["1", "-1", "0", "10"], correctAnswer: "C" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "What is -5 + 5 equal to?",
+      options: ["10", "-10", "0", "1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question: "The additive inverse of -8 is:",
+      options: ["-8", "8", "0", "1"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Which is the greatest negative integer?",
+      options: ["-100", "-1", "0", "-10"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "The successor of -1 is:",
+      options: ["-2", "0", "1", "None"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "What is -3 x (-4) equal to?",
+      options: ["-12", "12", "7", "-7"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "What is -15 / 3 equal to?",
+      options: ["5", "-5", "3", "-3"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "The value of |-10| is:",
+      options: ["-10", "10", "0", "1"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "The predecessor of -5 is:",
+      options: ["-4", "-6", "5", "6"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "Which of the following is neither positive nor negative?",
+      options: ["1", "-1", "0", "10"],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [],
 };

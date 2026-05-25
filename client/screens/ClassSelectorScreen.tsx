@@ -3,7 +3,12 @@ import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { LinearGradient } from "expo-linear-gradient";
-import Svg, { Defs, LinearGradient as SvgLinearGradient, Stop, Text as SvgText } from "react-native-svg";
+import Svg, {
+  Defs,
+  LinearGradient as SvgLinearGradient,
+  Stop,
+  Text as SvgText,
+} from "react-native-svg";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ColorButton } from "@/components/ColorButton";
@@ -11,7 +16,10 @@ import { ThemedText } from "@/components/ThemedText";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type ClassSelectorNavigationProp = NativeStackNavigationProp<RootStackParamList, "ClassSelector">;
+type ClassSelectorNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "ClassSelector"
+>;
 
 function ClassSelectorScreen() {
   const navigation = useNavigation<ClassSelectorNavigationProp>();
@@ -20,32 +28,29 @@ function ClassSelectorScreen() {
     <ScreenWrapper>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[
-          styles.content,
-          styles.centeredContent,
-        ]}
+        contentContainerStyle={[styles.content, styles.centeredContent]}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.headerContainer}>
           <View style={styles.titleRow}>
             <ThemedText style={styles.titleWhite}>Select Your Class</ThemedText>
           </View>
-          
+
           <View style={styles.decorationContainer}>
             <LinearGradient
-              colors={['#4FC3F7', '#A089CC']}
+              colors={["#4FC3F7", "#A089CC"]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={styles.decLine}
             />
             <LinearGradient
-              colors={['#A089CC', '#C26CC1']}
+              colors={["#A089CC", "#C26CC1"]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={styles.decDot}
             />
             <LinearGradient
-              colors={['#C26CC1', '#FF4FA3']}
+              colors={["#C26CC1", "#FF4FA3"]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
               style={styles.decLine}
@@ -114,20 +119,20 @@ const styles = StyleSheet.create({
     marginBottom: Spacing["3xl"],
   },
   titleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
   },
   titleWhite: {
-    color: '#FFFFFF',
+    color: "#FFFFFF",
     fontSize: 15,
     fontFamily: "NotoSans_600SemiBold",
     letterSpacing: 0.5,
   },
   decorationContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     marginTop: 8,
     gap: 4,
   },

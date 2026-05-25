@@ -1,89 +1,94 @@
 import { ChapterContent } from "../chapterContent";
 
 export const c9Math11: ChapterContent = {
-    id: "c9-math-11",
-    chapterNumber: 11,
-    title: "Statistics",
-    subject: "Mathematics",
-    class: "9th",
-    exercises: [
-        { id: "ex11.1", name: "Exercise 11.1", questions: [] },
-        { id: "ex11.2", name: "Exercise 11.2", questions: [] },
-        { id: "ex11.3", name: "Exercise 11.3", questions: [] },
-        { id: "ex11.4", name: "Exercise 11.4", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            id: "m1",
-            question: "The range of the data: 25, 18, 20, 22, 16, 6, 17, 15, 12, 30, 32, 10, 19, 8, 11, 20 is:",
-            options: ["10", "15", "18", "26"],
-            correctAnswer: "D"
-        },
-        {
-            id: "m2",
-            question: "In a frequency distribution, the mid value of a class is 10 and the width of the class is 6. The lower limit of the class is:",
-            options: ["6", "7", "8", "12"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m3",
-            question: "The mean of five numbers is 30. If one number is excluded, their mean becomes 28. The excluded number is:",
-            options: ["28", "30", "35", "38"],
-            correctAnswer: "D"
-        },
-        {
-            id: "m4",
-            question: "Data collected by the investigator with a definite objective in mind is called:",
-            options: ["Primary Data", "Secondary Data", "Raw Data", "None"],
-            correctAnswer: "A"
-        },
-        {
-            id: "m5",
-            question: "The class mark of the class 90-120 is:",
-            options: ["90", "105", "115", "120"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m6",
-            question: "The range of the data: 10, 20, 30, 40, 50 is:",
-            options: ["10", "40", "50", "60"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m7",
-            question: "Which of the following is NOT a measure of central tendency?",
-            options: ["Mean", "Median", "Mode", "Range"],
-            correctAnswer: "D"
-        },
-        {
-            id: "m8",
-            question: "The mode of the data: 2, 2, 3, 4, 4, 4, 5 is:",
-            options: ["2", "3", "4", "5"],
-            correctAnswer: "C"
-        },
-        {
-            id: "m9",
-            question: "The value of the observation which occurs most frequently is called:",
-            options: ["Mean", "Median", "Mode", "Range"],
-            correctAnswer: "C"
-        },
-        {
-            id: "m10",
-            question: "The mid-point of a class interval is called:",
-            options: ["Class limit", "Class mark", "Class size", "Range"],
-            correctAnswer: "B"
-        }
-    ],
-    summary: [
-        "Statistics deals with the collection, organization, analysis, and interpretation of data.",
-        "Data can be presented in the form of frequency distribution tables, bar graphs, histograms, and frequency polygons.",
-        "Measures of central tendency include Mean, Median, and Mode."
-    ],
+  id: "c9-math-11",
+  chapterNumber: 11,
+  title: "Statistics",
+  subject: "Mathematics",
+  class: "9th",
+  exercises: [
+    { id: "ex11.1", name: "Exercise 11.1", questions: [] },
+    { id: "ex11.2", name: "Exercise 11.2", questions: [] },
+    { id: "ex11.3", name: "Exercise 11.3", questions: [] },
+    { id: "ex11.4", name: "Exercise 11.4", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "m1",
+      question:
+        "The range of the data: 25, 18, 20, 22, 16, 6, 17, 15, 12, 30, 32, 10, 19, 8, 11, 20 is:",
+      options: ["10", "15", "18", "26"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m2",
+      question:
+        "In a frequency distribution, the mid value of a class is 10 and the width of the class is 6. The lower limit of the class is:",
+      options: ["6", "7", "8", "12"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question:
+        "The mean of five numbers is 30. If one number is excluded, their mean becomes 28. The excluded number is:",
+      options: ["28", "30", "35", "38"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m4",
+      question:
+        "Data collected by the investigator with a definite objective in mind is called:",
+      options: ["Primary Data", "Secondary Data", "Raw Data", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "The class mark of the class 90-120 is:",
+      options: ["90", "105", "115", "120"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "The range of the data: 10, 20, 30, 40, 50 is:",
+      options: ["10", "40", "50", "60"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "Which of the following is NOT a measure of central tendency?",
+      options: ["Mean", "Median", "Mode", "Range"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m8",
+      question: "The mode of the data: 2, 2, 3, 4, 4, 4, 5 is:",
+      options: ["2", "3", "4", "5"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m9",
+      question:
+        "The value of the observation which occurs most frequently is called:",
+      options: ["Mean", "Median", "Mode", "Range"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "The mid-point of a class interval is called:",
+      options: ["Class limit", "Class mark", "Class size", "Range"],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [
+    "Statistics deals with the collection, organization, analysis, and interpretation of data.",
+    "Data can be presented in the form of frequency distribution tables, bar graphs, histograms, and frequency polygons.",
+    "Measures of central tendency include Mean, Median, and Mode.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `
+  isHtmlView: true,
+  htmlOverview: `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -144,8 +149,8 @@ export const c9Math11: ChapterContent = {
 </body>
 </html>
 `,
-    htmlExercises: {
-        "ex11.1": `
+  htmlExercises: {
+    "ex11.1": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -207,7 +212,7 @@ export const c9Math11: ChapterContent = {
 </body>
 </html>
 `,
-        "ex11.2": `
+    "ex11.2": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -406,7 +411,7 @@ export const c9Math11: ChapterContent = {
 </body>
 </html>
 `,
-        "ex11.3": `
+    "ex11.3": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -591,7 +596,7 @@ export const c9Math11: ChapterContent = {
 </body>
 </html>
 `,
-        "ex11.4": `
+    "ex11.4": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -686,6 +691,6 @@ export const c9Math11: ChapterContent = {
     </div>
 </body>
 </html>
-`
-    }
+`,
+  },
 };

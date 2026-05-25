@@ -11,11 +11,9 @@ import AboutEducatorScreen from "@/screens/AboutEducatorScreen";
 import { GlobalPYQScreen } from "@/screens/GlobalPYQScreen";
 import ScienceTopicsScreen from "@/screens/ScienceTopicsScreen";
 
-
 import { Note } from "@/utils/storage";
 import NoteEditorScreen from "@/screens/NoteEditorScreen";
 import QuizScreen from "@/screens/QuizScreen";
-
 
 import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
 import Class9Screen from "@/screens/Class9Screen";
@@ -33,7 +31,9 @@ export type RootStackParamList = {
   Class7SocialScience: { className?: string } | undefined;
   Class10SocialScience: { className?: string } | undefined;
   ScienceTopics: { className?: string } | undefined;
-  ChapterList: { subject?: string; topic?: string; className?: string } | undefined;
+  ChapterList:
+    | { subject?: string; topic?: string; className?: string }
+    | undefined;
   Solution: {
     chapterId: string;
     chapterName: string;
@@ -65,8 +65,14 @@ export default function RootStackNavigator() {
       <Stack.Screen name="Class9" component={Class9Screen} />
       <Stack.Screen name="Class8" component={Class8Screen} />
       <Stack.Screen name="Class7" component={Class7Screen} />
-      <Stack.Screen name="Class7SocialScience" component={Class7SocialScienceScreen} />
-      <Stack.Screen name="Class10SocialScience" component={Class10SocialScienceScreen} />
+      <Stack.Screen
+        name="Class7SocialScience"
+        component={Class7SocialScienceScreen}
+      />
+      <Stack.Screen
+        name="Class10SocialScience"
+        component={Class10SocialScienceScreen}
+      />
       <Stack.Screen name="ScienceTopics" component={ScienceTopicsScreen} />
 
       <Stack.Screen name="ChapterList" component={ChapterListScreen} />
@@ -78,7 +84,7 @@ export default function RootStackNavigator() {
         component={NoteEditorScreen}
         options={{
           presentation: "modal",
-          animation: "slide_from_bottom"
+          animation: "slide_from_bottom",
         }}
       />
       <Stack.Screen name="NewsEvents" component={NewsEventsScreen} />

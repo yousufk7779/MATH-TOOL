@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const HTML_DIR = path.join(__dirname, 'data', 'math_ch9_html');
-const OUTPUT_FILE = path.join(__dirname, 'data', 'content', 'math-ch9.ts');
+const HTML_DIR = path.join(__dirname, "data", "math_ch9_html");
+const OUTPUT_FILE = path.join(__dirname, "data", "content", "math-ch9.ts");
 
 function encodeImage(imgPath) {
-    if (!fs.existsSync(imgPath)) return "";
-    const b64 = fs.readFileSync(imgPath).toString('base64');
-    if (imgPath.endsWith('.svg')) return `data:image/svg+xml;base64,${b64}`;
-    if (imgPath.endsWith('.png')) return `data:image/png;base64,${b64}`;
-    if (imgPath.endsWith('.jpg') || imgPath.endsWith('.jpeg')) return `data:image/jpeg;base64,${b64}`;
-    return `data:image/png;base64,${b64}`;
+  if (!fs.existsSync(imgPath)) return "";
+  const b64 = fs.readFileSync(imgPath).toString("base64");
+  if (imgPath.endsWith(".svg")) return `data:image/svg+xml;base64,${b64}`;
+  if (imgPath.endsWith(".png")) return `data:image/png;base64,${b64}`;
+  if (imgPath.endsWith(".jpg") || imgPath.endsWith(".jpeg"))
+    return `data:image/jpeg;base64,${b64}`;
+  return `data:image/png;base64,${b64}`;
 }
 
 const overrideCSS = `
@@ -52,106 +53,132 @@ const katexScripts = `
 `;
 
 function readHtml(filename) {
-    const filepath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filepath)) return "";
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    // 1. Remove the header section with "JIGUU" and Chapter name
-    html = html.replace(/<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi, '');
+  const filepath = path.join(HTML_DIR, filename);
+  if (!fs.existsSync(filepath)) return "";
+  let html = fs.readFileSync(filepath, "utf-8");
 
-    // 2. Remove slow MathJax script
-    html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, '');
-    html = html.replace(/<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi, '');
+  // 1. Remove the header section with "JIGUU" and Chapter name
+  html = html.replace(
+    /<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi,
+    "",
+  );
 
-    // 3. Inject Fast KaTeX scripts and Dark Mode Overrides right before </head>
-    html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+  // 2. Remove slow MathJax script
+  html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, "");
+  html = html.replace(
+    /<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi,
+    "",
+  );
 
-    // 4. Base64 encode images
-    html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
-        const fullImgPath = path.join(HTML_DIR, p1);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return `src="${b64Src}"`;
-        return match;
-    });
-    
-    // Escape for embedded string
-    return html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  // 3. Inject Fast KaTeX scripts and Dark Mode Overrides right before </head>
+  html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+
+  // 4. Base64 encode images
+  html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
+    const fullImgPath = path.join(HTML_DIR, p1);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  // Escape for embedded string
+  return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
 function parseMcqs() {
-    const filepath = path.join(HTML_DIR, "mcqs.html");
-    if (!fs.existsSync(filepath)) return [];
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    const mcqs = [];
-    // Using a simpler, more robust separator
-    const boxes = html.split('<div class="content-box">').slice(1);
-    
-    boxes.forEach((boxContent, idx) => {
-        const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
-        const optMatch = [...boxContent.matchAll(/<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g)];
-        const ansMatch = boxContent.match(/<(?:div|span) class="(?:final-answer|correct-answer)">([\s\S]*?)<\/(?:div|span)>/);
+  const filepath = path.join(HTML_DIR, "mcqs.html");
+  if (!fs.existsSync(filepath)) return [];
+  let html = fs.readFileSync(filepath, "utf-8");
 
-        if (qMatch && optMatch.length >= 4 && ansMatch) {
-            let questionText = qMatch[1].replace(/^\d+\.\s*/, '').replace(/\s+/g, ' ').trim();
-            
-            // Clean up math in question
-            questionText = questionText.replace(/\\(sqrt|text|circ|theta|frac)/g, (match, p1) => {
-                if (p1 === 'sqrt') return '√';
-                if (p1 === 'text') return '';
-                if (p1 === 'circ') return '°';
-                if (p1 === 'theta') return 'θ';
-                return match;
-            });
-            // Final cleanup of extra braces from LaTeX
-            questionText = questionText.replace(/\{(\d+)\}/g, '$1').replace(/[\{\}]/g, '');
+  const mcqs = [];
+  // Using a simpler, more robust separator
+  const boxes = html.split('<div class="content-box">').slice(1);
 
-            const options = optMatch.map(m => {
-                let text = m[1].replace(/^\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, '').trim();
-                // Clean up LateX
-                text = text.replace(/\\sqrt\{(\d+)\}/g, '√$1');
-                text = text.replace(/\\frac\{([^\}]+)\}\{([^\}]+)\}/g, '<sup>$1</sup>&frasl;<sub>$2</sub>');
-                text = text.replace(/\\circ/g, '°');
-                text = text.replace(/\\theta/g, 'θ');
-                text = text.replace(/\\text\{([^\}]+)\}/g, '$1');
-                // Clean up leftovers
-                text = text.replace(/\{([^\}]+)\}/g, '$1');
-                
-                // Fallback for simple fractions like 20/3
-                if (!text.includes('sup') && text.match(/^\d+\/\d+$/)) {
-                    text = text.replace(/(\d+)\/(\d+)/, '<sup>$1</sup>&frasl;<sub>$2</sub>');
-                }
-                return text;
-            });
+  boxes.forEach((boxContent, idx) => {
+    const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
+    const optMatch = [
+      ...boxContent.matchAll(
+        /<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g,
+      ),
+    ];
+    const ansMatch = boxContent.match(
+      /<(?:div|span) class="(?:final-answer|correct-answer)">([\s\S]*?)<\/(?:div|span)>/,
+    );
 
-            // Extract correct answer
-            const ansRaw = ansMatch[1].toUpperCase();
-            let correctLetter = "";
-            const letterMatch = ansRaw.match(/\(([A-D])\)/);
-            if (letterMatch) {
-                correctLetter = letterMatch[1];
-            } else {
-                // Try and find A, B, C or D alone
-                const altMatch = ansRaw.match(/\b([A-D])\b/);
-                if (altMatch) correctLetter = altMatch[1];
-            }
+    if (qMatch && optMatch.length >= 4 && ansMatch) {
+      let questionText = qMatch[1]
+        .replace(/^\d+\.\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim();
 
-            let correctAnswer = "";
-            if (correctLetter) {
-                const cIdx = correctLetter.charCodeAt(0) - 65;
-                correctAnswer = options[cIdx] || "";
-            }
+      // Clean up math in question
+      questionText = questionText.replace(
+        /\\(sqrt|text|circ|theta|frac)/g,
+        (match, p1) => {
+          if (p1 === "sqrt") return "√";
+          if (p1 === "text") return "";
+          if (p1 === "circ") return "°";
+          if (p1 === "theta") return "θ";
+          return match;
+        },
+      );
+      // Final cleanup of extra braces from LaTeX
+      questionText = questionText
+        .replace(/\{(\d+)\}/g, "$1")
+        .replace(/[\{\}]/g, "");
 
-            mcqs.push({
-                id: `mcq${idx + 1}`,
-                question: `<span style="font-weight: normal;">${questionText}</span>`,
-                options: options,
-                correctAnswer: correctAnswer
-            });
+      const options = optMatch.map((m) => {
+        let text = m[1].replace(/^\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, "").trim();
+        // Clean up LateX
+        text = text.replace(/\\sqrt\{(\d+)\}/g, "√$1");
+        text = text.replace(
+          /\\frac\{([^\}]+)\}\{([^\}]+)\}/g,
+          "<sup>$1</sup>&frasl;<sub>$2</sub>",
+        );
+        text = text.replace(/\\circ/g, "°");
+        text = text.replace(/\\theta/g, "θ");
+        text = text.replace(/\\text\{([^\}]+)\}/g, "$1");
+        // Clean up leftovers
+        text = text.replace(/\{([^\}]+)\}/g, "$1");
+
+        // Fallback for simple fractions like 20/3
+        if (!text.includes("sup") && text.match(/^\d+\/\d+$/)) {
+          text = text.replace(
+            /(\d+)\/(\d+)/,
+            "<sup>$1</sup>&frasl;<sub>$2</sub>",
+          );
         }
-    });
+        return text;
+      });
 
-    return mcqs;
+      // Extract correct answer
+      const ansRaw = ansMatch[1].toUpperCase();
+      let correctLetter = "";
+      const letterMatch = ansRaw.match(/\(([A-D])\)/);
+      if (letterMatch) {
+        correctLetter = letterMatch[1];
+      } else {
+        // Try and find A, B, C or D alone
+        const altMatch = ansRaw.match(/\b([A-D])\b/);
+        if (altMatch) correctLetter = altMatch[1];
+      }
+
+      let correctAnswer = "";
+      if (correctLetter) {
+        const cIdx = correctLetter.charCodeAt(0) - 65;
+        correctAnswer = options[cIdx] || "";
+      }
+
+      mcqs.push({
+        id: `mcq${idx + 1}`,
+        question: `<span style="font-weight: normal;">${questionText}</span>`,
+        options: options,
+        correctAnswer: correctAnswer,
+      });
+    }
+  });
+
+  return mcqs;
 }
 
 const overview = readHtml("overview.html");
@@ -188,7 +215,7 @@ export const mathCh9: ChapterContent = {
     ],
     examples: [],
     theorems: [],
-    mcqs: ${JSON.stringify(mcqArray, null, '\t\t')},
+    mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [
         "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
         "Understood the concepts of angle of elevation and depression."
@@ -205,5 +232,7 @@ export const mathCh9: ChapterContent = {
 };
 `;
 
-fs.writeFileSync(OUTPUT_FILE, tsCode, 'utf-8');
-console.log("math-ch9.ts generated matching Chapter 8 strategy (Native MCQ Quiz)!");
+fs.writeFileSync(OUTPUT_FILE, tsCode, "utf-8");
+console.log(
+  "math-ch9.ts generated matching Chapter 8 strategy (Native MCQ Quiz)!",
+);

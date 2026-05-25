@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist6: ChapterContent = {
-    id: "c7-hist-6",
-    number: 6,
-    title: "Devotional Paths to the Divine",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-6",
+  number: 6,
+  title: "Devotional Paths to the Divine",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>From the eighth century onwards, various religious movements emerged in India. People began to turn to the idea of a Supreme God who could be reached through devotion (Bhakti). This chapter explores the Bhakti movement, Sufism, and the teachings of great saints like Kabir, Baba Guru Nanak, and Mirabai.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist6: ChapterContent = {
             <p>The medieval period saw a shift from complex rituals to simple devotion. Saints from all backgrounds preached equality, love, and compassion. These movements not only changed religious practices but also had a deep impact on the social structure of the Indian subcontinent, bringing people of different castes and religions closer together.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h6-ex-all": `
+  htmlExercises: {
+    "c7h6-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -103,82 +103,95 @@ export const c7Hist6: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> People loved Mirabai because she was a princess who chose simple devotion over royalty. Her songs showed that God's love is open to everyone, regardless of their caste or background.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "From the eighth century onwards, various religious movements emerged in India.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h6-mcq-1",
+      question: "Who preached the doctrine of Advaita?",
+      options: ["Ramanuja", "Shankara", "Basavanna", "Kabir"],
+      correctAnswer: "b",
     },
-    introduction: "From the eighth century onwards, various religious movements emerged in India.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h6-mcq-1",
-            question: "Who preached the doctrine of Advaita?",
-            options: ["Ramanuja", "Shankara", "Basavanna", "Kabir"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h6-mcq-2",
-            question: "The Nayanars were devotees of which God?",
-            options: ["Vishnu", "Shiva", "Krishna", "Durga"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h6-mcq-3",
-            question: "The Alvars were devotees of which God?",
-            options: ["Vishnu", "Shiva", "Ganesha", "Surya"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h6-mcq-4",
-            question: "Where is the famous Vitthala temple located?",
-            options: ["Ajmer", "Pandharpur", "Kashmir", "Tanjavur"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h6-mcq-5",
-            question: "Which saint was a Rajput princess of Mewar?",
-            options: ["Mirabai", "Akka Mahadevi", "Lal Ded", "Rani Durgawati"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h6-mcq-6",
-            question: "Who founded the Khalsa Panth in 1699?",
-            options: ["Guru Nanak", "Guru Angad", "Guru Gobind Singh", "Guru Tegh Bahadur"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7h6-mcq-7",
-            question: "Kabir's verses and ideas are found in which of these?",
-            options: ["Bijak", "Akbar Nama", "Ramayana", "Vedas"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h6-mcq-8",
-            question: "Who is the famous Rishi saint of Kashmir mentioned in this chapter?",
-            options: ["Nund Rishi", "Nizamuddin Auliya", "Baba Farid", "Moinuddin Chishti"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h6-mcq-9",
-            question: "The Sufi masters held their assemblies in their hospices called:",
-            options: ["Khanqahs", "Temples", "Mosques", "Gurudwaras"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h6-mcq-10",
-            question: "Who was the first Guru of the Sikhs?",
-            options: ["Guru Nanak", "Guru Arjan", "Guru Gobind Singh", "Guru Angad"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h6-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h6-mcq-2",
+      question: "The Nayanars were devotees of which God?",
+      options: ["Vishnu", "Shiva", "Krishna", "Durga"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h6-mcq-3",
+      question: "The Alvars were devotees of which God?",
+      options: ["Vishnu", "Shiva", "Ganesha", "Surya"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h6-mcq-4",
+      question: "Where is the famous Vitthala temple located?",
+      options: ["Ajmer", "Pandharpur", "Kashmir", "Tanjavur"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h6-mcq-5",
+      question: "Which saint was a Rajput princess of Mewar?",
+      options: ["Mirabai", "Akka Mahadevi", "Lal Ded", "Rani Durgawati"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h6-mcq-6",
+      question: "Who founded the Khalsa Panth in 1699?",
+      options: [
+        "Guru Nanak",
+        "Guru Angad",
+        "Guru Gobind Singh",
+        "Guru Tegh Bahadur",
+      ],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7h6-mcq-7",
+      question: "Kabir's verses and ideas are found in which of these?",
+      options: ["Bijak", "Akbar Nama", "Ramayana", "Vedas"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h6-mcq-8",
+      question:
+        "Who is the famous Rishi saint of Kashmir mentioned in this chapter?",
+      options: [
+        "Nund Rishi",
+        "Nizamuddin Auliya",
+        "Baba Farid",
+        "Moinuddin Chishti",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h6-mcq-9",
+      question:
+        "The Sufi masters held their assemblies in their hospices called:",
+      options: ["Khanqahs", "Temples", "Mosques", "Gurudwaras"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h6-mcq-10",
+      question: "Who was the first Guru of the Sikhs?",
+      options: ["Guru Nanak", "Guru Arjan", "Guru Gobind Singh", "Guru Angad"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h6-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

@@ -1,22 +1,27 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const CHAPTER_NAME = 'chapter11';
-const HTML_DIR = path.join(__dirname, 'data', CHAPTER_NAME);
-const OUTPUT_FILE = path.join(__dirname, 'data', 'content', 'math-ch11.ts');
+const CHAPTER_NAME = "chapter11";
+const HTML_DIR = path.join(__dirname, "data", CHAPTER_NAME);
+const OUTPUT_FILE = path.join(__dirname, "data", "content", "math-ch11.ts");
 
 function encodeImage(imgPath) {
-    if (!fs.existsSync(imgPath)) {
-        // Try in images subdirectory
-        const altPath = path.join(path.dirname(imgPath), 'images', path.basename(imgPath));
-        if (fs.existsSync(altPath)) imgPath = altPath;
-        else return "";
-    }
-    const b64 = fs.readFileSync(imgPath).toString('base64');
-    if (imgPath.endsWith('.svg')) return `data:image/svg+xml;base64,${b64}`;
-    if (imgPath.endsWith('.png')) return `data:image/png;base64,${b64}`;
-    if (imgPath.endsWith('.jpg') || imgPath.endsWith('.jpeg')) return `data:image/jpeg;base64,${b64}`;
-    return `data:image/png;base64,${b64}`;
+  if (!fs.existsSync(imgPath)) {
+    // Try in images subdirectory
+    const altPath = path.join(
+      path.dirname(imgPath),
+      "images",
+      path.basename(imgPath),
+    );
+    if (fs.existsSync(altPath)) imgPath = altPath;
+    else return "";
+  }
+  const b64 = fs.readFileSync(imgPath).toString("base64");
+  if (imgPath.endsWith(".svg")) return `data:image/svg+xml;base64,${b64}`;
+  if (imgPath.endsWith(".png")) return `data:image/png;base64,${b64}`;
+  if (imgPath.endsWith(".jpg") || imgPath.endsWith(".jpeg"))
+    return `data:image/jpeg;base64,${b64}`;
+  return `data:image/png;base64,${b64}`;
 }
 
 const overrideCSS = `
@@ -58,99 +63,124 @@ const katexScripts = `
 `;
 
 function readHtml(filename) {
-    const filepath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filepath)) return "";
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    html = html.replace(/<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi, '');
-    html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, '');
-    html = html.replace(/<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi, '');
-    html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+  const filepath = path.join(HTML_DIR, filename);
+  if (!fs.existsSync(filepath)) return "";
+  let html = fs.readFileSync(filepath, "utf-8");
 
-    html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
-        const fullImgPath = path.join(HTML_DIR, p1);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return `src="${b64Src}"`;
-        return match;
-    });
+  html = html.replace(
+    /<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi,
+    "",
+  );
+  html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, "");
+  html = html.replace(
+    /<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi,
+    "",
+  );
+  html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
 
-    html = html.replace(/src="([^"]+\.(?:svg|png|jpg|jpeg))"/gi, (match, p1) => {
-        if (p1.startsWith('data:') || p1.startsWith('http')) return match;
-        const filenamePath = path.basename(p1);
-        const fullImgPath = path.join(HTML_DIR, 'images', filenamePath);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return 'src="' + b64Src + '"';
-        return match;
-    });
-    
-    return html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
+    const fullImgPath = path.join(HTML_DIR, p1);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  html = html.replace(/src="([^"]+\.(?:svg|png|jpg|jpeg))"/gi, (match, p1) => {
+    if (p1.startsWith("data:") || p1.startsWith("http")) return match;
+    const filenamePath = path.basename(p1);
+    const fullImgPath = path.join(HTML_DIR, "images", filenamePath);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return 'src="' + b64Src + '"';
+    return match;
+  });
+
+  return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
 function parseMcqs() {
-    const filepath = path.join(HTML_DIR, "Areas_Related_to_Circles_MCQs.html");
-    if (!fs.existsSync(filepath)) return [];
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    const mcqs = [];
-    const boxes = html.split('<div class="content-box">').slice(1);
-    
-    boxes.forEach((boxContent, idx) => {
-        const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
-        const optMatch = [...boxContent.matchAll(/<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g)];
-        const ansMatch = boxContent.match(/<(?:div|span) class="(?:final-answer|correct-answer|answer)">([\s\S]*?)<\/(?:div|span)>/);
+  const filepath = path.join(HTML_DIR, "Areas_Related_to_Circles_MCQs.html");
+  if (!fs.existsSync(filepath)) return [];
+  let html = fs.readFileSync(filepath, "utf-8");
 
-        if (qMatch && optMatch.length >= 4 && ansMatch) {
-            let questionText = qMatch[1].replace(/^\d+\.\s*/, '').replace(/\s+/g, ' ').trim();
-            
-            // Basic math cleaning
-            questionText = questionText.replace(/\\(sqrt|text|circ|theta|frac|pi|bar|sum|mu|sigma|alpha|beta|gamma)/g, (match, p1) => {
-                if (p1 === 'sqrt') return '√';
-                if (p1 === 'text') return '';
-                if (p1 === 'circ') return '°';
-                return match;
-            });
-            questionText = questionText.replace(/\{([^\}]+)\}/g, '$1').replace(/[\{\}]/g, '');
+  const mcqs = [];
+  const boxes = html.split('<div class="content-box">').slice(1);
 
-            const options = optMatch.map(m => {
-                let text = m[1].replace(/^\s*\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, '').trim();
-                
-                // Final LaTeX cleaning for options
-                text = text.replace(/\\sqrt\{(\d+)\}/g, '√$1');
-                text = text.replace(/\\frac\{([^\}]+)\}\{([^\}]+)\}/g, '<sup>$1</sup>&frasl;<sub>$2</sub>');
-                text = text.replace(/\\circ/g, '°');
-                text = text.replace(/\\text\{([^\}]+)\}/g, '$1');
-                text = text.replace(/\{([^\}]+)\}/g, '$1');
+  boxes.forEach((boxContent, idx) => {
+    const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
+    const optMatch = [
+      ...boxContent.matchAll(
+        /<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g,
+      ),
+    ];
+    const ansMatch = boxContent.match(
+      /<(?:div|span) class="(?:final-answer|correct-answer|answer)">([\s\S]*?)<\/(?:div|span)>/,
+    );
 
-                // Large padding and line-height for a professional MCQ section
-                return `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text.trim()}</div>`;
-            });
+    if (qMatch && optMatch.length >= 4 && ansMatch) {
+      let questionText = qMatch[1]
+        .replace(/^\d+\.\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim();
 
-            const ansRaw = ansMatch[1].toUpperCase();
-            let correctLetter = "";
-            const letterMatch = ansRaw.match(/\(([A-D])\)/);
-            if (letterMatch) {
-                correctLetter = letterMatch[1];
-            } else {
-                const altMatch = ansRaw.match(/\b([A-D])\b/);
-                if (altMatch) correctLetter = altMatch[1];
-            }
+      // Basic math cleaning
+      questionText = questionText.replace(
+        /\\(sqrt|text|circ|theta|frac|pi|bar|sum|mu|sigma|alpha|beta|gamma)/g,
+        (match, p1) => {
+          if (p1 === "sqrt") return "√";
+          if (p1 === "text") return "";
+          if (p1 === "circ") return "°";
+          return match;
+        },
+      );
+      questionText = questionText
+        .replace(/\{([^\}]+)\}/g, "$1")
+        .replace(/[\{\}]/g, "");
 
-            let correctAnswer = "";
-            if (correctLetter) {
-                const cIdx = correctLetter.charCodeAt(0) - 65;
-                correctAnswer = options[cIdx] || "";
-            }
+      const options = optMatch.map((m) => {
+        let text = m[1]
+          .replace(/^\s*\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, "")
+          .trim();
 
-            mcqs.push({
-                id: `mcq${idx + 1}`,
-                question: `<span style="font-weight: normal;">${questionText}</span>`,
-                options: options,
-                correctAnswer: correctAnswer
-            });
-        }
-    });
+        // Final LaTeX cleaning for options
+        text = text.replace(/\\sqrt\{(\d+)\}/g, "√$1");
+        text = text.replace(
+          /\\frac\{([^\}]+)\}\{([^\}]+)\}/g,
+          "<sup>$1</sup>&frasl;<sub>$2</sub>",
+        );
+        text = text.replace(/\\circ/g, "°");
+        text = text.replace(/\\text\{([^\}]+)\}/g, "$1");
+        text = text.replace(/\{([^\}]+)\}/g, "$1");
 
-    return mcqs;
+        // Large padding and line-height for a professional MCQ section
+        return `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text.trim()}</div>`;
+      });
+
+      const ansRaw = ansMatch[1].toUpperCase();
+      let correctLetter = "";
+      const letterMatch = ansRaw.match(/\(([A-D])\)/);
+      if (letterMatch) {
+        correctLetter = letterMatch[1];
+      } else {
+        const altMatch = ansRaw.match(/\b([A-D])\b/);
+        if (altMatch) correctLetter = altMatch[1];
+      }
+
+      let correctAnswer = "";
+      if (correctLetter) {
+        const cIdx = correctLetter.charCodeAt(0) - 65;
+        correctAnswer = options[cIdx] || "";
+      }
+
+      mcqs.push({
+        id: `mcq${idx + 1}`,
+        question: `<span style="font-weight: normal;">${questionText}</span>`,
+        options: options,
+        correctAnswer: correctAnswer,
+      });
+    }
+  });
+
+  return mcqs;
 }
 
 const overview = readHtml("Areas_Related_to_Circles_Overview.html");
@@ -192,7 +222,7 @@ export const mathCh11: ChapterContent = {
         { id: "examples", name: "Examples", questions: [] }
     ],
     theorems: [],
-    mcqs: ${JSON.stringify(mcqArray, null, '\t\t')},
+    mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [
         "We learned to calculate area and perimeter of circles and their parts.",
         "Applied these concepts to solve real-world problems like clock hands and brooch designs."
@@ -207,5 +237,7 @@ export const mathCh11: ChapterContent = {
 };
 `;
 
-fs.writeFileSync(OUTPUT_FILE, tsCode, 'utf-8');
-console.log("math-ch11.ts generated successfully with standard Native MCQs and height fix!");
+fs.writeFileSync(OUTPUT_FILE, tsCode, "utf-8");
+console.log(
+  "math-ch11.ts generated successfully with standard Native MCQs and height fix!",
+);

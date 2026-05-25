@@ -370,29 +370,86 @@ export const c8Math13: ChapterContent = {
   id: "c8-math-13",
   number: 13,
   title: "Introduction to Graphs",
-  introduction: "Graphs are visual representations of numerical data. They help us understand patterns, trends, and relationships between different variables at a single glance. This chapter introduces you to various types of graphs such as bar graphs, pie graphs, and line graphs.",
+  introduction:
+    "Graphs are visual representations of numerical data. They help us understand patterns, trends, and relationships between different variables at a single glance. This chapter introduces you to various types of graphs such as bar graphs, pie graphs, and line graphs.",
   mcqs: [
-    { id: "m1", question: "A graph that displays data that changes continuously over periods of time is:", options: ["Bar graph", "Pie graph", "Line graph", "Histogram"], correctAnswer: "C" },
-    { id: "m2", question: "In a line graph, the horizontal axis is usually called:", options: ["Y-axis", "X-axis", "Origin", "Scale"], correctAnswer: "B" },
-    { id: "m3", question: "The coordinates of the origin are:", options: ["(1, 1)", "(0, 1)", "(1, 0)", "(0, 0)"], correctAnswer: "D" },
-    { id: "m4", question: "The point (0, 5) lies on:", options: ["X-axis", "Y-axis", "Origin", "Quadrant I"], correctAnswer: "B" },
-    { id: "m5", question: "The point (5, 0) lies on:", options: ["X-axis", "Y-axis", "Origin", "Quadrant II"], correctAnswer: "A" },
-    { id: "m6", question: "A bar graph is used to:", options: ["Show parts of a whole", "Compare data among categories", "Show trends over time", "Represent frequency"], correctAnswer: "B" },
-    { id: "m7", question: "In the point (3, 4), the Y-coordinate is:", options: ["3", "4", "7", "12"], correctAnswer: "B" },
-    { id: "m8", question: "The independent variable is usually plotted on the:", options: ["X-axis", "Y-axis", "Any axis", "None"], correctAnswer: "A" },
-    { id: "m9", question: "Which graph is circular in shape?", options: ["Line graph", "Bar graph", "Pie graph", "Histogram"], correctAnswer: "C" },
-    { id: "m10", question: "If the Y-coordinate of a point is 0, it always lies on the:", options: ["Y-axis", "X-axis", "Origin", "None"], correctAnswer: "B" }
+    {
+      id: "m1",
+      question:
+        "A graph that displays data that changes continuously over periods of time is:",
+      options: ["Bar graph", "Pie graph", "Line graph", "Histogram"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m2",
+      question: "In a line graph, the horizontal axis is usually called:",
+      options: ["Y-axis", "X-axis", "Origin", "Scale"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "The coordinates of the origin are:",
+      options: ["(1, 1)", "(0, 1)", "(1, 0)", "(0, 0)"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m4",
+      question: "The point (0, 5) lies on:",
+      options: ["X-axis", "Y-axis", "Origin", "Quadrant I"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "The point (5, 0) lies on:",
+      options: ["X-axis", "Y-axis", "Origin", "Quadrant II"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "A bar graph is used to:",
+      options: [
+        "Show parts of a whole",
+        "Compare data among categories",
+        "Show trends over time",
+        "Represent frequency",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "In the point (3, 4), the Y-coordinate is:",
+      options: ["3", "4", "7", "12"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "The independent variable is usually plotted on the:",
+      options: ["X-axis", "Y-axis", "Any axis", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "Which graph is circular in shape?",
+      options: ["Line graph", "Bar graph", "Pie graph", "Histogram"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "If the Y-coordinate of a point is 0, it always lies on the:",
+      options: ["Y-axis", "X-axis", "Origin", "None"],
+      correctAnswer: "B",
+    },
   ],
   summary: [
     "A graph is a visual representation of data. Types include Bar graph, Pie chart, Histogram, and Line graph.",
     "A line graph displays data that changes continuously over time.",
     "A coordinate system consists of two perpendicular lines: the horizontal X-axis and the vertical Y-axis.",
     "Every point is represented by coordinates (x, y).",
-    "Independent variables are plotted on the X-axis and dependent variables on the Y-axis."
+    "Independent variables are plotted on the X-axis and dependent variables on the Y-axis.",
   ],
   exercises: [
     { id: "ex13-1", name: "Exercise 13.1", questions: [] },
-    { id: "ex13-2", name: "Exercise 13.2", questions: [] }
+    { id: "ex13-2", name: "Exercise 13.2", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -503,7 +560,6 @@ export const c8Math13: ChapterContent = {
   `,
   htmlExercises: {
     "ex13-1": ex131Content,
-    "ex13-2": ex132Content
-  }
+    "ex13-2": ex132Content,
+  },
 };
-

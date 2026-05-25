@@ -4,16 +4,25 @@ export const c9Math1: ChapterContent = {
   id: "c9-math-1",
   number: 1,
   title: "Number Systems",
-  introduction: "In your earlier classes, you have learnt about the number line and how to represent various types of numbers on it. In this chapter, we will explore rational numbers, irrational numbers, and their decimal expansions.",
+  introduction:
+    "In your earlier classes, you have learnt about the number line and how to represent various types of numbers on it. In this chapter, we will explore rational numbers, irrational numbers, and their decimal expansions.",
   definitions: [
-    { term: "Rational Number", description: "A number which can be written in the form p/q, where p and q are integers and q ≠ 0." },
-    { term: "Irrational Number", description: "A number which cannot be written in the form p/q, where p and q are integers and q ≠ 0." }
+    {
+      term: "Rational Number",
+      description:
+        "A number which can be written in the form p/q, where p and q are integers and q ≠ 0.",
+    },
+    {
+      term: "Irrational Number",
+      description:
+        "A number which cannot be written in the form p/q, where p and q are integers and q ≠ 0.",
+    },
   ],
   keyPoints: [
     "Every rational number is a real number.",
     "Every irrational number is a real number.",
     "The sum or difference of a rational number and an irrational number is irrational.",
-    "The product or quotient of a non-zero rational number with an irrational number is irrational."
+    "The product or quotient of a non-zero rational number with an irrational number is irrational.",
   ],
   formulas: [],
   crux: [],
@@ -23,7 +32,7 @@ export const c9Math1: ChapterContent = {
     { id: "ex1-3", name: "Exercise 1.3", questions: [] },
     { id: "ex1-4", name: "Exercise 1.4", questions: [] },
     { id: "ex1-5", name: "Exercise 1.5", questions: [] },
-    { id: "ex1-6", name: "Exercise 1.6", questions: [] }
+    { id: "ex1-6", name: "Exercise 1.6", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -31,67 +40,84 @@ export const c9Math1: ChapterContent = {
       id: "c9-m1-q1",
       question: "Which of the following is an irrational number?",
       options: ["√4", "√9", "√7", "0.25"],
-      correctAnswer: "√7"
+      correctAnswer: "√7",
     },
     {
       id: "c9-m1-q2",
-      question: "The decimal expansion of a rational number is either ________ or ________.",
-      options: ["terminating, non-repeating", "terminating, repeating", "non-terminating, non-repeating", "None of these"],
-      correctAnswer: "terminating, repeating"
+      question:
+        "The decimal expansion of a rational number is either ________ or ________.",
+      options: [
+        "terminating, non-repeating",
+        "terminating, repeating",
+        "non-terminating, non-repeating",
+        "None of these",
+      ],
+      correctAnswer: "terminating, repeating",
     },
     {
       id: "c9-m1-q3",
       question: "Every whole number is a natural number.",
       options: ["True", "False"],
-      correctAnswer: "False"
+      correctAnswer: "False",
     },
     {
       id: "c9-m1-q4",
       question: "The product of any two irrational numbers is:",
-      options: ["Always irrational", "Always rational", "Always an integer", "Sometimes rational, sometimes irrational"],
-      correctAnswer: "Sometimes rational, sometimes irrational"
+      options: [
+        "Always irrational",
+        "Always rational",
+        "Always an integer",
+        "Sometimes rational, sometimes irrational",
+      ],
+      correctAnswer: "Sometimes rational, sometimes irrational",
     },
     {
       id: "c9-m1-q5",
       question: "The value of 125^(1/3) is:",
       options: ["5", "25", "1", "15"],
-      correctAnswer: "5"
+      correctAnswer: "5",
     },
     {
-        id: "c9-m1-q6",
-        question: "Is zero a rational number?",
-        options: ["Yes", "No"],
-        correctAnswer: "Yes"
+      id: "c9-m1-q6",
+      question: "Is zero a rational number?",
+      options: ["Yes", "No"],
+      correctAnswer: "Yes",
     },
     {
-        id: "c9-m1-q7",
-        question: "The decimal expansion of √2 is:",
-        options: ["Terminating", "Non-terminating repeating", "Non-terminating non-repeating", "None of these"],
-        correctAnswer: "Non-terminating non-repeating"
+      id: "c9-m1-q7",
+      question: "The decimal expansion of √2 is:",
+      options: [
+        "Terminating",
+        "Non-terminating repeating",
+        "Non-terminating non-repeating",
+        "None of these",
+      ],
+      correctAnswer: "Non-terminating non-repeating",
     },
     {
-        id: "c9-m1-q8",
-        question: "Between two rational numbers, there are ________ rational numbers.",
-        options: ["One", "Finite", "Infinitely many", "Zero"],
-        correctAnswer: "Infinitely many"
+      id: "c9-m1-q8",
+      question:
+        "Between two rational numbers, there are ________ rational numbers.",
+      options: ["One", "Finite", "Infinitely many", "Zero"],
+      correctAnswer: "Infinitely many",
     },
     {
-        id: "c9-m1-q9",
-        question: "π (Pi) is an ________ number.",
-        options: ["Rational", "Irrational", "Integer", "Whole"],
-        correctAnswer: "Irrational"
+      id: "c9-m1-q9",
+      question: "π (Pi) is an ________ number.",
+      options: ["Rational", "Irrational", "Integer", "Whole"],
+      correctAnswer: "Irrational",
     },
     {
-        id: "c9-m1-q10",
-        question: "The rationalised form of 1/√2 is:",
-        options: ["√2", "√2/2", "2", "1/2"],
-        correctAnswer: "√2/2"
-    }
+      id: "c9-m1-q10",
+      question: "The rationalised form of 1/√2 is:",
+      options: ["√2", "√2/2", "2", "1/2"],
+      correctAnswer: "√2/2",
+    },
   ],
   summary: [
     "A number is rational if its decimal expansion is terminating or non-terminating recurring.",
     "A number is irrational if its decimal expansion is non-terminating non-recurring.",
-    "All rational and irrational numbers together make up the collection of real numbers."
+    "All rational and irrational numbers together make up the collection of real numbers.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -651,6 +677,6 @@ export const c9Math1: ChapterContent = {
           (iv) 7<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup> × 8<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup> = (7 × 8)<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup> = 56<sup><span class='frac' style="padding:0; margin:0;"><span class='num'>1</span><span>2</span></span></sup>
         </div>
       </div>
-`
-  }
+`,
+  },
 };

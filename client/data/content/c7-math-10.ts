@@ -1,32 +1,42 @@
 import { ChapterContent } from "../types";
 
 export const c7Math10: ChapterContent = {
-    id: "c7-math-10",
-    number: 10,
-    title: "Algebraic Expressions",
-    isHtmlView: true,
-    introduction: "Algebraic expressions are formed from variables and constants. We use operations like addition, subtraction, multiplication, and division to combine them and solve real-world problems.",
-    definitions: [
-        { term: "Variable", definition: "A symbol that can take various numerical values." },
-        { term: "Constant", definition: "A symbol that has a fixed numerical value." },
-        { term: "Term", definition: "A part of an expression separated by '+' or '-' signs." },
-        { term: "Coefficient", definition: "The numerical factor in a term." }
-    ],
-    keyPoints: [
-        "Like terms have the same algebraic factors.",
-        "Only like terms can be added or subtracted.",
-        "Monomial has one term, Binomial has two, Trinomial has three.",
-        "Value of an expression depends on the values of the variables it contains."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex10-1", name: "Exercise 10.1", questions: [] },
-        { id: "ex10-2", name: "Exercise 10.2", questions: [] },
-        { id: "ex10-3", name: "Exercise 10.3", questions: [] },
-        { id: "ex10-4", name: "Exercise 10.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-10",
+  number: 10,
+  title: "Algebraic Expressions",
+  isHtmlView: true,
+  introduction:
+    "Algebraic expressions are formed from variables and constants. We use operations like addition, subtraction, multiplication, and division to combine them and solve real-world problems.",
+  definitions: [
+    {
+      term: "Variable",
+      definition: "A symbol that can take various numerical values.",
+    },
+    {
+      term: "Constant",
+      definition: "A symbol that has a fixed numerical value.",
+    },
+    {
+      term: "Term",
+      definition: "A part of an expression separated by '+' or '-' signs.",
+    },
+    { term: "Coefficient", definition: "The numerical factor in a term." },
+  ],
+  keyPoints: [
+    "Like terms have the same algebraic factors.",
+    "Only like terms can be added or subtracted.",
+    "Monomial has one term, Binomial has two, Trinomial has three.",
+    "Value of an expression depends on the values of the variables it contains.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex10-1", name: "Exercise 10.1", questions: [] },
+    { id: "ex10-2", name: "Exercise 10.2", questions: [] },
+    { id: "ex10-3", name: "Exercise 10.3", questions: [] },
+    { id: "ex10-4", name: "Exercise 10.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FFD600; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -44,8 +54,8 @@ export const c7Math10: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex10-1": `
+  htmlExercises: {
+    "ex10-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -290,7 +300,7 @@ export const c7Math10: ChapterContent = {
             </div>
         </div>
         `,
-        "ex10-2": `
+    "ex10-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -403,7 +413,7 @@ export const c7Math10: ChapterContent = {
             </div>
         </div>
         `,
-        "ex10-3": `
+    "ex10-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -544,7 +554,7 @@ export const c7Math10: ChapterContent = {
             </div>
         </div>
         `,
-        "ex10-4": `
+    "ex10-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 214, 0, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -686,20 +696,70 @@ export const c7Math10: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Coefficient of x in 5xy² is:",
+      options: ["5", "y²", "5y²", "x"],
+      correctAnswer: "C",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Coefficient of x in 5xy² is:", options: ["5", "y²", "5y²", "x"], correctAnswer: "C" },
-        { id: "m2", question: "Like terms are those with same:", options: ["Coefficients", "Variables", "Algebraic factors", "Constants"], correctAnswer: "C" },
-        { id: "m3", question: "An expression with 3 terms is:", options: ["Monomial", "Binomial", "Trinomial", "Polynomial"], correctAnswer: "C" },
-        { id: "m4", question: "Value of x² - 1 when x = 2 is:", options: ["1", "3", "4", "2"], correctAnswer: "B" },
-        { id: "m5", question: "Sum of 3x and 4x is:", options: ["7x", "12x", "x", "7x²"], correctAnswer: "A" },
-        { id: "m6", question: "Difference between 10y and 4y is:", options: ["6", "6y", "14y", "y"], correctAnswer: "B" },
-        { id: "m7", question: "Expression for 'z multiplied by itself':", options: ["2z", "z+z", "z²", "z³"], correctAnswer: "C" },
-        { id: "m8", question: "Coefficient of y² in 8 - xy² is:", options: ["8", "x", "-x", "-1"], correctAnswer: "C" },
-        { id: "m9", question: "If a=1, b=2, then a+b is:", options: ["1", "2", "3", "0"], correctAnswer: "C" },
-        { id: "m10", question: "A constant term in 5x + 3 is:", options: ["5", "x", "3", "5x"], correctAnswer: "C" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Like terms are those with same:",
+      options: ["Coefficients", "Variables", "Algebraic factors", "Constants"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question: "An expression with 3 terms is:",
+      options: ["Monomial", "Binomial", "Trinomial", "Polynomial"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m4",
+      question: "Value of x² - 1 when x = 2 is:",
+      options: ["1", "3", "4", "2"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "Sum of 3x and 4x is:",
+      options: ["7x", "12x", "x", "7x²"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "Difference between 10y and 4y is:",
+      options: ["6", "6y", "14y", "y"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "Expression for 'z multiplied by itself':",
+      options: ["2z", "z+z", "z²", "z³"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "Coefficient of y² in 8 - xy² is:",
+      options: ["8", "x", "-x", "-1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m9",
+      question: "If a=1, b=2, then a+b is:",
+      options: ["1", "2", "3", "0"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "A constant term in 5x + 3 is:",
+      options: ["5", "x", "3", "5x"],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [],
 };

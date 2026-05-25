@@ -5,10 +5,11 @@ export const c9Math9: ChapterContent = {
   number: 9,
   title: "Heron's Formula",
   isHtmlView: true,
-  introduction: "Heron's formula is used to calculate the area of a triangle when the lengths of all three sides are known. Unlike the standard formula (1/2 × base × height), Heron's formula does not require the height of the triangle, making it extremely useful for any triangle with given side lengths.",
+  introduction:
+    "Heron's formula is used to calculate the area of a triangle when the lengths of all three sides are known. Unlike the standard formula (1/2 × base × height), Heron's formula does not require the height of the triangle, making it extremely useful for any triangle with given side lengths.",
   exercises: [
     { id: "ex9-1", name: "Exercise 9.1", questions: [] },
-    { id: "ex9-2", name: "Exercise 9.2", questions: [] }
+    { id: "ex9-2", name: "Exercise 9.2", questions: [] },
   ],
   htmlOverview: `
       <style>
@@ -338,18 +339,81 @@ export const c9Math9: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 5:</span> Area Trapezium = 1/2 &times; (Sum of parallel sides) &times; h = 1/2 &times; (10 + 25) &times; 11.2 = 35 &times; 5.6 = <span class="highlight">196 m&sup2;</span>.</div>
         </div>
       </div>
-`
+`,
   },
   mcqs: [
-    { id: "m1", question: "Heron's Formula for area of a triangle is:", options: ["1/2 × b × h", "√[s(s-a)(s-b)(s-c)]", "a + b + c", "None of these"], correctAnswer: "B" },
-    { id: "m2", question: "If the perimeter of an equilateral triangle is 60cm, then its side is:", options: ["10cm", "20cm", "30cm", "60cm"], correctAnswer: "B" },
-    { id: "m3", question: "Semi-perimeter 's' is equal to:", options: ["a + b + c", "(a+b+c)/2", "(a+b+c)/3", "2(a+b+c)"], correctAnswer: "B" },
-    { id: "m4", question: "Area of an equilateral triangle with side 'a' is:", options: ["(√3/4)a²", "(√3/2)a²", "a²/4", "√3a²"], correctAnswer: "A" },
-    { id: "m5", question: "If sides of a triangle are 3cm, 4cm, 5cm, its area is:", options: ["6 cm²", "12 cm²", "15 cm²", "20 cm²"], correctAnswer: "A" },
-    { id: "m6", question: "Heron's formula is particularly useful when:", options: ["Height is given", "All three sides are given", "Base is given", "Angle is given"], correctAnswer: "B" },
-    { id: "m7", question: "If semi-perimeter is 15 and sides are 10, 10, 10, then area is:", options: ["√[15×5×5×5]", "15√5", "25√15", "None"], correctAnswer: "A" },
-    { id: "m8", question: "The unit of area in Heron's formula will be:", options: ["cm", "cm²", "cm³", "Any of these"], correctAnswer: "B" },
-    { id: "m9", question: "If a=b=c, then s-a is:", options: ["a/2", "s/3", "0", "a"], correctAnswer: "A" },
-    { id: "m10", question: "A quadrilateral can be divided into _____ triangles to find its area using Heron's formula.", options: ["Two", "Three", "Four", "One"], correctAnswer: "A" }
-  ]
+    {
+      id: "m1",
+      question: "Heron's Formula for area of a triangle is:",
+      options: [
+        "1/2 × b × h",
+        "√[s(s-a)(s-b)(s-c)]",
+        "a + b + c",
+        "None of these",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m2",
+      question:
+        "If the perimeter of an equilateral triangle is 60cm, then its side is:",
+      options: ["10cm", "20cm", "30cm", "60cm"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "Semi-perimeter 's' is equal to:",
+      options: ["a + b + c", "(a+b+c)/2", "(a+b+c)/3", "2(a+b+c)"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Area of an equilateral triangle with side 'a' is:",
+      options: ["(√3/4)a²", "(√3/2)a²", "a²/4", "√3a²"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "If sides of a triangle are 3cm, 4cm, 5cm, its area is:",
+      options: ["6 cm²", "12 cm²", "15 cm²", "20 cm²"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "Heron's formula is particularly useful when:",
+      options: [
+        "Height is given",
+        "All three sides are given",
+        "Base is given",
+        "Angle is given",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question:
+        "If semi-perimeter is 15 and sides are 10, 10, 10, then area is:",
+      options: ["√[15×5×5×5]", "15√5", "25√15", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m8",
+      question: "The unit of area in Heron's formula will be:",
+      options: ["cm", "cm²", "cm³", "Any of these"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "If a=b=c, then s-a is:",
+      options: ["a/2", "s/3", "0", "a"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question:
+        "A quadrilateral can be divided into _____ triangles to find its area using Heron's formula.",
+      options: ["Two", "Three", "Four", "One"],
+      correctAnswer: "A",
+    },
+  ],
 };

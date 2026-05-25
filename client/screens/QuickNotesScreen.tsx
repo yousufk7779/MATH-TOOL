@@ -1,18 +1,38 @@
 import React, { memo, useState, useCallback } from "react";
-import { StyleSheet, View, ScrollView, Pressable, RefreshControl, Alert } from "react-native";
-import { useNavigation, useFocusEffect, useRoute, RouteProp } from "@react-navigation/native";
+import {
+  StyleSheet,
+  View,
+  ScrollView,
+  Pressable,
+  RefreshControl,
+  Alert,
+} from "react-native";
+import {
+  useNavigation,
+  useFocusEffect,
+  useRoute,
+  RouteProp,
+} from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ThemedText } from "@/components/ThemedText";
 import { EmptyState } from "@/components/EmptyState";
-import { JiguuColors, Spacing, Typography, BorderRadius } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  Typography,
+  BorderRadius,
+} from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getHomeRoute } from "@/utils/navigation-utils";
 import { getNotes, deleteNote, Note } from "@/utils/storage";
 
-type QuickNotesNavigationProp = NativeStackNavigationProp<RootStackParamList, "QuickNotes">;
+type QuickNotesNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "QuickNotes"
+>;
 
 const NOTE_GRADIENTS = [
   ["#FF6B6B20", "#FF6B6B"], // Red
@@ -37,7 +57,7 @@ function QuickNotesScreen() {
   useFocusEffect(
     useCallback(() => {
       loadNotes();
-    }, [loadNotes])
+    }, [loadNotes]),
   );
 
   const onRefresh = useCallback(async () => {
@@ -46,11 +66,9 @@ function QuickNotesScreen() {
     setRefreshing(false);
   }, [loadNotes]);
 
-  const handleDelete = useCallback((id: string) => {
-    Alert.alert(
-      "Delete Note",
-      "Are you sure you want to delete this note?",
-      [
+  const handleDelete = useCallback(
+    (id: string) => {
+      Alert.alert("Delete Note", "Are you sure you want to delete this note?", [
         { text: "Cancel", style: "cancel" },
         {
           text: "Delete",
@@ -58,11 +76,12 @@ function QuickNotesScreen() {
           onPress: async () => {
             await deleteNote(id);
             loadNotes();
-          }
-        }
-      ]
-    );
-  }, [loadNotes]);
+          },
+        },
+      ]);
+    },
+    [loadNotes],
+  );
 
   const homeRoute = getHomeRoute(className);
 
@@ -80,7 +99,11 @@ function QuickNotesScreen() {
           contentContainerStyle={styles.content}
           showsVerticalScrollIndicator={false}
           refreshControl={
-            <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={JiguuColors.textSecondary} />
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+              tintColor={JiguuColors.textSecondary}
+            />
           }
         >
           {notes.length === 0 ? (
@@ -98,16 +121,28 @@ function QuickNotesScreen() {
                     styles.noteCard,
                     {
                       backgroundColor: JiguuColors.surface,
-                      borderColor: NOTE_GRADIENTS[note.gradientIndex % NOTE_GRADIENTS.length][1]
-                    }
+                      borderColor:
+                        NOTE_GRADIENTS[
+                          note.gradientIndex % NOTE_GRADIENTS.length
+                        ][1],
+                    },
                   ]}
-                  onPress={() => navigation.navigate("NoteEditor", { note, className })}
+                  onPress={() =>
+                    navigation.navigate("NoteEditor", { note, className })
+                  }
                   onLongPress={() => handleDelete(note.id)}
                 >
-                  <View style={[
-                    styles.accentStrip,
-                    { backgroundColor: NOTE_GRADIENTS[note.gradientIndex % NOTE_GRADIENTS.length][1] }
-                  ]} />
+                  <View
+                    style={[
+                      styles.accentStrip,
+                      {
+                        backgroundColor:
+                          NOTE_GRADIENTS[
+                            note.gradientIndex % NOTE_GRADIENTS.length
+                          ][1],
+                      },
+                    ]}
+                  />
                   <ThemedText style={styles.noteTitle} numberOfLines={2}>
                     {note.title}
                   </ThemedText>
@@ -169,8 +204,8 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     position: "relative",
     overflow: "hidden",
-    flexDirection: 'column',
-    justifyContent: 'center',
+    flexDirection: "column",
+    justifyContent: "center",
   },
   accentStrip: {
     position: "absolute",
@@ -204,7 +239,7 @@ const styles = StyleSheet.create({
   },
   fab: {
     position: "absolute",
-    bottom: 40, 
+    bottom: 40,
     right: 24,
     width: 56,
     height: 56,

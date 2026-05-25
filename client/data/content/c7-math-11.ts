@@ -1,35 +1,46 @@
 import { ChapterContent } from "../types";
 
 export const c7Math11: ChapterContent = {
-    id: "c7-math-11",
-    number: 11,
-    title: "Exponents and Powers",
-    isHtmlView: true,
-    introduction: "Exponents and powers allow us to express very large or very small numbers in a compact and readable way. They follow specific mathematical laws that simplify calculation.",
-    definitions: [
-        { term: "Base", definition: "The number that is being multiplied by itself." },
-        { term: "Exponent", definition: "The number of times the base is multiplied by itself." },
-        { term: "Standard Form", definition: "A way to write very large numbers as a product of a number between 1 and 10 and a power of 10." }
-    ],
-    keyPoints: [
-        "a^m × a^n = a^(m+n)",
-        "a^m ÷ a^n = a^(m-n)",
-        "(a^m)^n = a^(mn)",
-        "a^m × b^m = (ab)^m",
-        "a^0 = 1 (for any non-zero a)."
-    ],
-    formulas: [
-        { name: "Product Law", formula: "a^m × a^n = a^(m+n)" },
-        { name: "Quotient Law", formula: "a^m ÷ a^n = a^(m-n)" },
-        { name: "Power of a Power", formula: "(a^m)^n = a^(mn)" }
-    ],
-    crux: [],
-    exercises: [
-        { id: "ex11-1", name: "Exercise 11.1", questions: [] },
-        { id: "ex11-2", name: "Exercise 11.2", questions: [] },
-        { id: "ex11-3", name: "Exercise 11.3", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-11",
+  number: 11,
+  title: "Exponents and Powers",
+  isHtmlView: true,
+  introduction:
+    "Exponents and powers allow us to express very large or very small numbers in a compact and readable way. They follow specific mathematical laws that simplify calculation.",
+  definitions: [
+    {
+      term: "Base",
+      definition: "The number that is being multiplied by itself.",
+    },
+    {
+      term: "Exponent",
+      definition: "The number of times the base is multiplied by itself.",
+    },
+    {
+      term: "Standard Form",
+      definition:
+        "A way to write very large numbers as a product of a number between 1 and 10 and a power of 10.",
+    },
+  ],
+  keyPoints: [
+    "a^m × a^n = a^(m+n)",
+    "a^m ÷ a^n = a^(m-n)",
+    "(a^m)^n = a^(mn)",
+    "a^m × b^m = (ab)^m",
+    "a^0 = 1 (for any non-zero a).",
+  ],
+  formulas: [
+    { name: "Product Law", formula: "a^m × a^n = a^(m+n)" },
+    { name: "Quotient Law", formula: "a^m ÷ a^n = a^(m-n)" },
+    { name: "Power of a Power", formula: "(a^m)^n = a^(mn)" },
+  ],
+  crux: [],
+  exercises: [
+    { id: "ex11-1", name: "Exercise 11.1", questions: [] },
+    { id: "ex11-2", name: "Exercise 11.2", questions: [] },
+    { id: "ex11-3", name: "Exercise 11.3", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FF4081; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -47,8 +58,8 @@ export const c7Math11: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex11-1": `
+  htmlExercises: {
+    "ex11-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -154,7 +165,7 @@ export const c7Math11: ChapterContent = {
             </div>
         </div>
         `,
-        "ex11-2": `
+    "ex11-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -239,7 +250,7 @@ export const c7Math11: ChapterContent = {
             </div>
         </div>
         `,
-        "ex11-3": `
+    "ex11-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(255, 64, 129, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -304,20 +315,75 @@ export const c7Math11: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Value of 2³ is:",
+      options: ["6", "8", "5", "9"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Value of 2³ is:", options: ["6", "8", "5", "9"], correctAnswer: "B" },
-        { id: "m2", question: "a^m × a^n is equal to:", options: ["a^mn", "a^m+n", "a^m-n", "a^m/n"], correctAnswer: "B" },
-        { id: "m3", question: "Value of (5²)^3 is:", options: ["5^5", "5^6", "5^1", "5^8"], correctAnswer: "B" },
-        { id: "m4", question: "Any non-zero number to power 0 is:", options: ["0", "1", "Itself", "Undefined"], correctAnswer: "B" },
-        { id: "m5", question: "1000 in exponential form (base 10) is:", options: ["10²", "10³", "10⁴", "10⁵"], correctAnswer: "B" },
-        { id: "m6", question: "Standard form of 12345 is:", options: ["12.345 × 10³", "1.2345 × 10⁴", "123.45 × 10²", "0.12345 × 10⁵"], correctAnswer: "B" },
-        { id: "m7", question: "(-1)^odd number is:", options: ["1", "-1", "0", "Undefined"], correctAnswer: "B" },
-        { id: "m8", question: "(-1)^even number is:", options: ["1", "-1", "0", "Undefined"], correctAnswer: "A" },
-        { id: "m9", question: "2³ × 3³ is equal to:", options: ["5³", "6³", "6⁶", "5⁶"], correctAnswer: "B" },
-        { id: "m10", question: "a^m ÷ a^n is:", options: ["a^m-n", "a^m+n", "a^m/n", "a^mn"], correctAnswer: "A" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "a^m × a^n is equal to:",
+      options: ["a^mn", "a^m+n", "a^m-n", "a^m/n"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "Value of (5²)^3 is:",
+      options: ["5^5", "5^6", "5^1", "5^8"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Any non-zero number to power 0 is:",
+      options: ["0", "1", "Itself", "Undefined"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "1000 in exponential form (base 10) is:",
+      options: ["10²", "10³", "10⁴", "10⁵"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "Standard form of 12345 is:",
+      options: [
+        "12.345 × 10³",
+        "1.2345 × 10⁴",
+        "123.45 × 10²",
+        "0.12345 × 10⁵",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "(-1)^odd number is:",
+      options: ["1", "-1", "0", "Undefined"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "(-1)^even number is:",
+      options: ["1", "-1", "0", "Undefined"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "2³ × 3³ is equal to:",
+      options: ["5³", "6³", "6⁶", "5⁶"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "a^m ÷ a^n is:",
+      options: ["a^m-n", "a^m+n", "a^m/n", "a^mn"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [],
 };

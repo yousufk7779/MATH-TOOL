@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#2196F3"; // Blue for Geography Chapter 5
 
 export const c7Geo5: ChapterContent = {
-    id: "c7-geo-5",
-    number: 5,
-    title: "Water",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-5",
+  number: 5,
+  title: "Water",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Water is a vital resource. The sun’s heat causes evaporation of water into vapour. When the water vapour cools down, it condenses and forms clouds. From there it may fall on the land or sea in the form of rain, snow or sleet. The process by which water continually changes its form and circulates between oceans, atmosphere and land is known as the <b>water cycle</b>.</p>
             
@@ -23,8 +23,8 @@ export const c7Geo5: ChapterContent = {
             </ul>
         </div>
     `,
-    htmlExercises: {
-        "c7g5-ex-all": `
+  htmlExercises: {
+    "c7g5-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -119,82 +119,94 @@ export const c7Geo5: ChapterContent = {
                     </table>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction: "Water is a vital resource.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g5-mcq-1",
+      question: "The process by which water continually changes its form is:",
+      options: ["Water cycle", "Tide", "Ocean current", "Precipitation"],
+      correctAnswer: "a",
     },
-    introduction: "Water is a vital resource.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g5-mcq-1",
-            question: "The process by which water continually changes its form is:",
-            options: ["Water cycle", "Tide", "Ocean current", "Precipitation"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g5-mcq-2",
-            question: "Generally, warm ocean currents originate near the:",
-            options: ["Poles", "Equator", "Tropic of Cancer", "None of these"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g5-mcq-3",
-            question: "The rhythmic rise and fall of ocean water twice a day is called:",
-            options: ["Wave", "Tide", "Ocean current", "Tsunami"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g5-mcq-4",
-            question: "Which is the largest lake in the world?",
-            options: ["Victoria Lake", "Superior Lake", "Caspian Sea", "Dead Sea"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g5-mcq-5",
-            question: "The Dead Sea is located in which country?",
-            options: ["India", "Israel", "USA", "Egypt"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g5-mcq-6",
-            question: "Tsunami is a Japanese word that means:",
-            options: ["Big Wave", "Harbour waves", "Stormy water", "Volcanic wave"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g5-mcq-7",
-            question: "Salinity is the amount of salt in grams present in ____ grams of water.",
-            options: ["100", "500", "1000", "2000"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g5-mcq-8",
-            question: "High tides are helpful for which of these?",
-            options: ["Navigation", "Fishing", "Electricity generation", "All of these"],
-            correctAnswer: "d"
-        },
-        {
-            id: "c7g5-mcq-9",
-            question: "The Labrador Ocean current is a:",
-            options: ["Warm current", "Cold current", "Neutral current", "None of these"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g5-mcq-10",
-            question: "The Gulf Stream is a famous example of a:",
-            options: ["Cold current", "Warm current", "Tsunami", "Tide"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g5-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g5-mcq-2",
+      question: "Generally, warm ocean currents originate near the:",
+      options: ["Poles", "Equator", "Tropic of Cancer", "None of these"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g5-mcq-3",
+      question:
+        "The rhythmic rise and fall of ocean water twice a day is called:",
+      options: ["Wave", "Tide", "Ocean current", "Tsunami"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g5-mcq-4",
+      question: "Which is the largest lake in the world?",
+      options: ["Victoria Lake", "Superior Lake", "Caspian Sea", "Dead Sea"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g5-mcq-5",
+      question: "The Dead Sea is located in which country?",
+      options: ["India", "Israel", "USA", "Egypt"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g5-mcq-6",
+      question: "Tsunami is a Japanese word that means:",
+      options: ["Big Wave", "Harbour waves", "Stormy water", "Volcanic wave"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g5-mcq-7",
+      question:
+        "Salinity is the amount of salt in grams present in ____ grams of water.",
+      options: ["100", "500", "1000", "2000"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g5-mcq-8",
+      question: "High tides are helpful for which of these?",
+      options: [
+        "Navigation",
+        "Fishing",
+        "Electricity generation",
+        "All of these",
+      ],
+      correctAnswer: "d",
+    },
+    {
+      id: "c7g5-mcq-9",
+      question: "The Labrador Ocean current is a:",
+      options: [
+        "Warm current",
+        "Cold current",
+        "Neutral current",
+        "None of these",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g5-mcq-10",
+      question: "The Gulf Stream is a famous example of a:",
+      options: ["Cold current", "Warm current", "Tsunami", "Tide"],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g5-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

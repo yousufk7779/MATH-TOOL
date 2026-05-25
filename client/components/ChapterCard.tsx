@@ -5,7 +5,12 @@ import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ThemedText } from "@/components/ThemedText";
-import { BorderRadius, Spacing, JiguuColors, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Spacing,
+  JiguuColors,
+  Typography,
+} from "@/constants/theme";
 
 interface ChapterCardProps {
   number: number;
@@ -17,7 +22,15 @@ interface ChapterCardProps {
   isAvailable?: boolean;
 }
 
-export const ChapterCard = memo(function ChapterCard({ number, name, color = JiguuColors.realNumbers, colors, onPress, testID, isAvailable = true }: ChapterCardProps) {
+export const ChapterCard = memo(function ChapterCard({
+  number,
+  name,
+  color = JiguuColors.realNumbers,
+  colors,
+  onPress,
+  testID,
+  isAvailable = true,
+}: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
 
   const handlePressIn = useCallback(() => {
@@ -35,7 +48,11 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
     onPress?.();
   }, [onPress]);
 
-  const backgroundColors = colors || (isAvailable ? [color, color + '99'] : [JiguuColors.surface, JiguuColors.surface]);
+  const backgroundColors =
+    colors ||
+    (isAvailable
+      ? [color, color + "99"]
+      : [JiguuColors.surface, JiguuColors.surface]);
 
   const isGlossy = backgroundColors[0] === "#FFA726";
 
@@ -55,7 +72,7 @@ export const ChapterCard = memo(function ChapterCard({ number, name, color = Jig
           shadowOpacity: 0.8,
           shadowRadius: 15,
           elevation: 15,
-        }
+        },
       ]}
     >
       <View style={styles.cardWrapper}>
@@ -110,7 +127,7 @@ const styles = StyleSheet.create({
     minHeight: 60,
     borderRadius: BorderRadius.xl - 2,
     borderWidth: 1.5,
-    borderColor: 'rgba(255,255,255,0.3)', // Subtle white inner border like SS
+    borderColor: "rgba(255,255,255,0.3)", // Subtle white inner border like SS
   },
   cardPressed: {
     opacity: 0.9,
@@ -142,7 +159,7 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontFamily: "NotoSans_400Regular",
     fontSize: 15,
-    textTransform: 'uppercase', // Match SS style
+    textTransform: "uppercase", // Match SS style
   },
   chevronIcon: {
     width: 24,
@@ -172,14 +189,14 @@ const styles = StyleSheet.create({
   cardWrapper: {
     flex: 1,
     borderRadius: BorderRadius.xl,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   glossOverlay: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
-    height: '50%',
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    height: "50%",
+    backgroundColor: "rgba(255, 255, 255, 0.3)",
   },
 });

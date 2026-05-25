@@ -1,151 +1,122 @@
 import { ChapterContent } from "../types";
 
 export const mathCh9: ChapterContent = {
-    id: "ch9",
-    number: 9,
-    title: "Some Applications of Trigonometry",
-    introduction: "In this chapter, we explore how trigonometry is used in practical situations, such as finding the heights of buildings or the distances between objects, using angles of elevation and depression.",
-    definitions: [],
-    keyPoints: [
-        "Angle of Elevation: The angle formed by the line of sight with the horizontal line when the object is above the horizontal line.",
-        "Angle of Depression: The angle formed by the line of sight with the horizontal line when the object is below the horizontal line.",
-        "Trigonometric ratios (sin, cos, tan) are used to find lengths and angles in right-angled triangles."
-    ],
-    formulas: [
-        { name: "tan θ", formula: "Opposite / Adjacent" },
-        { name: "sin θ", formula: "Opposite / Hypotenuse" },
-        { name: "cos θ", formula: "Adjacent / Hypotenuse" }
-    ],
-    crux: [
-        "Draw a clear diagram based on the problem description.",
-        "Identify the knowns (height, distance, or angle) and the unknown.",
-        "Select the appropriate trigonometric ratio (usually 'tan' for height/distance problems)."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 9.1", questions: [] },
-        { id: "examples", name: "Examples", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:</span>",
-            "options": [
-                "(A) 10√3 m",
-                "(B) 10 m",
-                "(C) 30√3 m",
-                "(D) 10√2 m"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. The length of the string is:</span>",
-            "options": [
-                "(A) 40√3 m",
-                "(B) 30√3 m",
-                "(C) 60√3 m",
-                "(D) 120√3 m"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">A tower is 100√3 m high. Find the angle of elevation if its top from a point 100 m away from its foot.</span>",
-            "options": [
-                "(A) 30°",
-                "(B) 45°",
-                "(C) 60°",
-                "(D) 90°"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">The shadow of a tower is equal to its height at 10:45 AM. The sun's altitude is:</span>",
-            "options": [
-                "(A) 30°",
-                "(B) 45°",
-                "(C) 60°",
-                "(D) 90°"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">If the angle of depression of an object from a 75 m high tower is 30°, the distance of the object from the tower is:</span>",
-            "options": [
-                "(A) 75√3 m",
-                "(B) 75 m",
-                "(C) 25√3 m",
-                "(D) 50 m"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">A pole 6 m high casts a shadow 2√3 m long on the ground, then the sun's elevation is:</span>",
-            "options": [
-                "(A) 60°",
-                "(B) 30°",
-                "(C) 45°",
-                "(D) 90°"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. The height of the tower is:</span>",
-            "options": [
-                "(A) 20(√3 - 1) m",
-                "(B) 20√3 m",
-                "(C) 20 m",
-                "(D) 10√3 m"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from two points distant s and t from its foot are complementary. Then the height of the tower is:</span>",
-            "options": [
-                "(A) st",
-                "(B) s²t²",
-                "(C) √st",
-                "(D) s/t"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">If the length of the shadow of a tower is increasing, then the angle of elevation of the sun is:</span>",
-            "options": [
-                "(A) Increasing",
-                "(B) Decreasing",
-                "(C) Constant",
-                "(D) None of these"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:</span>",
-            "options": [
-                "(A) 15√3 m",
-                "(B) <sup>15√3</sup>&frasl;<sub>2</sub> m",
-                "(C) 7.5 m",
-                "(D) 15 m"
-            ],
-            "correctAnswer": "C"
-        }
-    ],
-    summary: [
-        "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
-        "Understood the concepts of angle of elevation and depression."
-    ],
+  id: "ch9",
+  number: 9,
+  title: "Some Applications of Trigonometry",
+  introduction:
+    "In this chapter, we explore how trigonometry is used in practical situations, such as finding the heights of buildings or the distances between objects, using angles of elevation and depression.",
+  definitions: [],
+  keyPoints: [
+    "Angle of Elevation: The angle formed by the line of sight with the horizontal line when the object is above the horizontal line.",
+    "Angle of Depression: The angle formed by the line of sight with the horizontal line when the object is below the horizontal line.",
+    "Trigonometric ratios (sin, cos, tan) are used to find lengths and angles in right-angled triangles.",
+  ],
+  formulas: [
+    { name: "tan θ", formula: "Opposite / Adjacent" },
+    { name: "sin θ", formula: "Opposite / Hypotenuse" },
+    { name: "cos θ", formula: "Adjacent / Hypotenuse" },
+  ],
+  crux: [
+    "Draw a clear diagram based on the problem description.",
+    "Identify the knowns (height, distance, or angle) and the unknown.",
+    "Select the appropriate trigonometric ratio (usually 'tan' for height/distance problems).",
+  ],
+  exercises: [
+    { id: "exercise1", name: "Exercise 9.1", questions: [] },
+    { id: "examples", name: "Examples", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:</span>',
+      options: ["(A) 10√3 m", "(B) 10 m", "(C) 30√3 m", "(D) 10√2 m"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. The length of the string is:</span>',
+      options: ["(A) 40√3 m", "(B) 30√3 m", "(C) 60√3 m", "(D) 120√3 m"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">A tower is 100√3 m high. Find the angle of elevation if its top from a point 100 m away from its foot.</span>',
+      options: ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">The shadow of a tower is equal to its height at 10:45 AM. The sun\'s altitude is:</span>',
+      options: ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">If the angle of depression of an object from a 75 m high tower is 30°, the distance of the object from the tower is:</span>',
+      options: ["(A) 75√3 m", "(B) 75 m", "(C) 25√3 m", "(D) 50 m"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">A pole 6 m high casts a shadow 2√3 m long on the ground, then the sun\'s elevation is:</span>',
+      options: ["(A) 60°", "(B) 30°", "(C) 45°", "(D) 90°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. The height of the tower is:</span>',
+      options: ["(A) 20(√3 - 1) m", "(B) 20√3 m", "(C) 20 m", "(D) 10√3 m"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">The angle of elevation of the top of a tower from two points distant s and t from its foot are complementary. Then the height of the tower is:</span>',
+      options: ["(A) st", "(B) s²t²", "(C) √st", "(D) s/t"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">If the length of the shadow of a tower is increasing, then the angle of elevation of the sun is:</span>',
+      options: [
+        "(A) Increasing",
+        "(B) Decreasing",
+        "(C) Constant",
+        "(D) None of these",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:</span>',
+      options: [
+        "(A) 15√3 m",
+        "(B) <sup>15√3</sup>&frasl;<sub>2</sub> m",
+        "(C) 7.5 m",
+        "(D) 15 m",
+      ],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [
+    "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
+    "Understood the concepts of angle of elevation and depression.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -367,8 +338,8 @@ export const mathCh9: ChapterContent = {
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -786,7 +757,7 @@ export const mathCh9: ChapterContent = {
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1070,8 +1041,8 @@ export const mathCh9: ChapterContent = {
 
 </body>
 
-</html>`
-    }
-    // Chapter 9 follows Chapter 8 Strategy: No htmlMcqs property here.
-    // The interactive quiz is rendered natively from the 'mcqs' array.
+</html>`,
+  },
+  // Chapter 9 follows Chapter 8 Strategy: No htmlMcqs property here.
+  // The interactive quiz is rendered natively from the 'mcqs' array.
 };

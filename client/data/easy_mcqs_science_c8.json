@@ -47,7 +47,12 @@
   {
     "id": "c8-s-6",
     "question": "The process of separating grain seeds from the chaff is called:",
-    "options": ["(A) Threshing", "(B) Winnowing", "(C) Harvesting", "(D) Sowing"],
+    "options": [
+      "(A) Threshing",
+      "(B) Winnowing",
+      "(C) Harvesting",
+      "(D) Sowing"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -65,7 +70,12 @@
   {
     "id": "c8-s-8",
     "question": "Rhizobium bacteria are found in the root nodules of:",
-    "options": ["(A) Cereal crops", "(B) Leguminous crops", "(C) Fiber crops", "(D) Oil crops"],
+    "options": [
+      "(A) Cereal crops",
+      "(B) Leguminous crops",
+      "(C) Fiber crops",
+      "(D) Oil crops"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -74,7 +84,12 @@
   {
     "id": "c8-s-9",
     "question": "Which of the following is a traditional method of irrigation?",
-    "options": ["(A) Drip system", "(B) Sprinkler system", "(C) Moat", "(D) None of these"],
+    "options": [
+      "(A) Drip system",
+      "(B) Sprinkler system",
+      "(C) Moat",
+      "(D) None of these"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -101,7 +116,12 @@
   {
     "id": "c8-s-12",
     "question": "The process of putting seeds into the soil is called:",
-    "options": ["(A) Tilling", "(B) Sowing", "(C) Irrigation", "(D) Harvesting"],
+    "options": [
+      "(A) Tilling",
+      "(B) Sowing",
+      "(C) Irrigation",
+      "(D) Harvesting"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -110,7 +130,12 @@
   {
     "id": "c8-s-13",
     "question": "2,4-D is a common:",
-    "options": ["(A) Pesticide", "(B) Weedicide", "(C) Fertilizer", "(D) Manure"],
+    "options": [
+      "(A) Pesticide",
+      "(B) Weedicide",
+      "(C) Fertilizer",
+      "(D) Manure"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -119,7 +144,12 @@
   {
     "id": "c8-s-14",
     "question": "Animal husbandry refers to:",
-    "options": ["(A) Growing crops", "(B) Rearing animals", "(C) Forest management", "(D) Water storage"],
+    "options": [
+      "(A) Growing crops",
+      "(B) Rearing animals",
+      "(C) Forest management",
+      "(D) Water storage"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -128,7 +158,12 @@
   {
     "id": "c8-s-15",
     "question": "The cutting of crop after it is mature is called:",
-    "options": ["(A) Threshing", "(B) Winnowing", "(C) Harvesting", "(D) Sowing"],
+    "options": [
+      "(A) Threshing",
+      "(B) Winnowing",
+      "(C) Harvesting",
+      "(D) Sowing"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-1",
@@ -146,7 +181,12 @@
   {
     "id": "c8-s-17",
     "question": "Microorganisms that cause diseases are called:",
-    "options": ["(A) Antibodies", "(B) Pathogens", "(C) Antigens", "(D) Vaccinations"],
+    "options": [
+      "(A) Antibodies",
+      "(B) Pathogens",
+      "(C) Antigens",
+      "(D) Vaccinations"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -155,7 +195,12 @@
   {
     "id": "c8-s-18",
     "question": "Yeast is used in the production of:",
-    "options": ["(A) Sugar", "(B) Alcohol", "(C) Hydrochloric acid", "(D) Oxygen"],
+    "options": [
+      "(A) Sugar",
+      "(B) Alcohol",
+      "(C) Hydrochloric acid",
+      "(D) Oxygen"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -164,7 +209,12 @@
   {
     "id": "c8-s-19",
     "question": "Which of the following is an antibiotic?",
-    "options": ["(A) Sodium bicarbonate", "(B) Streptomycin", "(C) Alcohol", "(D) Yeast"],
+    "options": [
+      "(A) Sodium bicarbonate",
+      "(B) Streptomycin",
+      "(C) Alcohol",
+      "(D) Yeast"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -173,7 +223,12 @@
   {
     "id": "c8-s-20",
     "question": "Carrier of malaria-causing protozoan is:",
-    "options": ["(A) Female Anopheles mosquito", "(B) Cockroach", "(C) Housefly", "(D) Butterfly"],
+    "options": [
+      "(A) Female Anopheles mosquito",
+      "(B) Cockroach",
+      "(C) Housefly",
+      "(D) Butterfly"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -191,7 +246,12 @@
   {
     "id": "c8-s-22",
     "question": "The bread or idli dough rises because of:",
-    "options": ["(A) Heat", "(B) Grinding", "(C) Growth of yeast cells", "(D) Kneading"],
+    "options": [
+      "(A) Heat",
+      "(B) Grinding",
+      "(C) Growth of yeast cells",
+      "(D) Kneading"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -200,7 +260,12 @@
   {
     "id": "c8-s-23",
     "question": "The process of conversion of sugar into alcohol is called:",
-    "options": ["(A) Nitrogen fixation", "(B) Moulding", "(C) Fermentation", "(D) Infection"],
+    "options": [
+      "(A) Nitrogen fixation",
+      "(B) Moulding",
+      "(C) Fermentation",
+      "(D) Infection"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -227,7 +292,12 @@
   {
     "id": "c8-s-26",
     "question": "Who discovered the vaccine for smallpox?",
-    "options": ["(A) Louis Pasteur", "(B) Robert Koch", "(C) Edward Jenner", "(D) Alexander Fleming"],
+    "options": [
+      "(A) Louis Pasteur",
+      "(B) Robert Koch",
+      "(C) Edward Jenner",
+      "(D) Alexander Fleming"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -263,7 +333,12 @@
   {
     "id": "c8-s-30",
     "question": "Which was the first antibiotic to be discovered?",
-    "options": ["(A) Streptomycin", "(B) Tetracycline", "(C) Penicillin", "(D) Erythromycin"],
+    "options": [
+      "(A) Streptomycin",
+      "(B) Tetracycline",
+      "(C) Penicillin",
+      "(D) Erythromycin"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-2",
@@ -290,7 +365,12 @@
   {
     "id": "c8-s-33",
     "question": "Petroleum is also called:",
-    "options": ["(A) Black Gold", "(B) White Gold", "(C) Liquid Silver", "(D) Brown Rock"],
+    "options": [
+      "(A) Black Gold",
+      "(B) White Gold",
+      "(C) Liquid Silver",
+      "(D) Brown Rock"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -308,7 +388,12 @@
   {
     "id": "c8-s-35",
     "question": "Coal is formed from the remains of:",
-    "options": ["(A) Dead animals", "(B) Vegetation", "(C) Rocks", "(D) Both A and B"],
+    "options": [
+      "(A) Dead animals",
+      "(B) Vegetation",
+      "(C) Rocks",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -335,7 +420,12 @@
   {
     "id": "c8-s-38",
     "question": "The process of separating various constituents of petroleum is called:",
-    "options": ["(A) Carbonization", "(B) Refining", "(C) Distillation", "(D) Purification"],
+    "options": [
+      "(A) Carbonization",
+      "(B) Refining",
+      "(C) Distillation",
+      "(D) Purification"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -344,7 +434,12 @@
   {
     "id": "c8-s-39",
     "question": "CNG stands for:",
-    "options": ["(A) Combined Natural Gas", "(B) Compressed Natural Gas", "(C) Complex Natural Gas", "(D) Clean Natural Gas"],
+    "options": [
+      "(A) Combined Natural Gas",
+      "(B) Compressed Natural Gas",
+      "(C) Complex Natural Gas",
+      "(D) Clean Natural Gas"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -362,7 +457,12 @@
   {
     "id": "c8-s-41",
     "question": "PCRA stands for:",
-    "options": ["(A) Public Conservation Research Association", "(B) Petroleum Conservation Research Association", "(C) Private Conservation Research Association", "(D) None"],
+    "options": [
+      "(A) Public Conservation Research Association",
+      "(B) Petroleum Conservation Research Association",
+      "(C) Private Conservation Research Association",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -380,7 +480,12 @@
   {
     "id": "c8-s-43",
     "question": "Bitumen is used in:",
-    "options": ["(A) Road surfacing", "(B) Paints", "(C) Fuel", "(D) Both A and B"],
+    "options": [
+      "(A) Road surfacing",
+      "(B) Paints",
+      "(C) Fuel",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "D",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -416,7 +521,12 @@
   {
     "id": "c8-s-47",
     "question": "Naphthalene balls are obtained from:",
-    "options": ["(A) Coal Tar", "(B) Coke", "(C) Petroleum", "(D) Paraffin Wax"],
+    "options": [
+      "(A) Coal Tar",
+      "(B) Coke",
+      "(C) Petroleum",
+      "(D) Paraffin Wax"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c8-sci-3",
@@ -434,7 +544,12 @@
   {
     "id": "c8-s-49",
     "question": "Which of the following is essential for combustion?",
-    "options": ["(A) Carbon dioxide", "(B) Nitrogen", "(C) Oxygen", "(D) Hydrogen"],
+    "options": [
+      "(A) Carbon dioxide",
+      "(B) Nitrogen",
+      "(C) Oxygen",
+      "(D) Hydrogen"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -443,7 +558,12 @@
   {
     "id": "c8-s-50",
     "question": "The lowest temperature at which a substance catches fire is called its:",
-    "options": ["(A) Boiling point", "(B) Melting point", "(C) Ignition temperature", "(D) Critical temperature"],
+    "options": [
+      "(A) Boiling point",
+      "(B) Melting point",
+      "(C) Ignition temperature",
+      "(D) Critical temperature"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -452,7 +572,12 @@
   {
     "id": "c8-s-51",
     "question": "The hottest part of a candle flame is the:",
-    "options": ["(A) Inner zone", "(B) Middle zone", "(C) Outer zone", "(D) Luminous zone"],
+    "options": [
+      "(A) Inner zone",
+      "(B) Middle zone",
+      "(C) Outer zone",
+      "(D) Luminous zone"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -470,7 +595,12 @@
   {
     "id": "c8-s-53",
     "question": "Which gas is used in fire extinguishers to control fire?",
-    "options": ["(A) Oxygen", "(B) Nitrogen", "(C) Carbon dioxide", "(D) Helium"],
+    "options": [
+      "(A) Oxygen",
+      "(B) Nitrogen",
+      "(C) Carbon dioxide",
+      "(D) Helium"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -497,7 +627,12 @@
   {
     "id": "c8-s-56",
     "question": "Rapid combustion is seen in:",
-    "options": ["(A) Burning of wood", "(B) Burning of LPG", "(C) Rusting of iron", "(D) Spontaneous fire"],
+    "options": [
+      "(A) Burning of wood",
+      "(B) Burning of LPG",
+      "(C) Rusting of iron",
+      "(D) Spontaneous fire"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -506,7 +641,12 @@
   {
     "id": "c8-s-57",
     "question": "Acid rain is caused by oxides of:",
-    "options": ["(A) Carbon and Hydrogen", "(B) Nitrogen and Sulphur", "(C) Oxygen and Helium", "(D) None"],
+    "options": [
+      "(A) Carbon and Hydrogen",
+      "(B) Nitrogen and Sulphur",
+      "(C) Oxygen and Helium",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -524,7 +664,12 @@
   {
     "id": "c8-s-59",
     "question": "Global warming is primarily due to increase in ________ gas.",
-    "options": ["(A) Oxygen", "(B) Carbon dioxide", "(C) Nitrogen", "(D) Argon"],
+    "options": [
+      "(A) Oxygen",
+      "(B) Carbon dioxide",
+      "(C) Nitrogen",
+      "(D) Argon"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -542,7 +687,12 @@
   {
     "id": "c8-s-61",
     "question": "Which zone of a flame does a goldsmith use for melting gold?",
-    "options": ["(A) Luminous", "(B) Non-luminous (outer)", "(C) Dark", "(D) Middle"],
+    "options": [
+      "(A) Luminous",
+      "(B) Non-luminous (outer)",
+      "(C) Dark",
+      "(D) Middle"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -551,7 +701,12 @@
   {
     "id": "c8-s-62",
     "question": "Incomplete combustion gives ________ gas.",
-    "options": ["(A) Carbon dioxide", "(B) Carbon monoxide", "(C) Oxygen", "(D) Nitrogen"],
+    "options": [
+      "(A) Carbon dioxide",
+      "(B) Carbon monoxide",
+      "(C) Oxygen",
+      "(D) Nitrogen"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -560,7 +715,12 @@
   {
     "id": "c8-s-63",
     "question": "Explosion occurs due to:",
-    "options": ["(A) Heat only", "(B) Light only", "(C) Rapid evolution of gas", "(D) Slow burning"],
+    "options": [
+      "(A) Heat only",
+      "(B) Light only",
+      "(C) Rapid evolution of gas",
+      "(D) Slow burning"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -569,7 +729,12 @@
   {
     "id": "c8-s-64",
     "question": "Burning of phosphorus at room temperature is an example of:",
-    "options": ["(A) Rapid combustion", "(B) Spontaneous combustion", "(C) Explosion", "(D) Slow oxidation"],
+    "options": [
+      "(A) Rapid combustion",
+      "(B) Spontaneous combustion",
+      "(C) Explosion",
+      "(D) Slow oxidation"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-4",
@@ -578,7 +743,12 @@
   {
     "id": "c8-s-65",
     "question": "Clearing of forests and using that land for other purposes is called:",
-    "options": ["(A) Afforestation", "(B) Deforestation", "(C) Reforestation", "(D) Desertification"],
+    "options": [
+      "(A) Afforestation",
+      "(B) Deforestation",
+      "(C) Reforestation",
+      "(D) Desertification"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -587,7 +757,12 @@
   {
     "id": "c8-s-66",
     "question": "Species found exclusively in a particular area are called:",
-    "options": ["(A) Endangered species", "(B) Migratory species", "(C) Endemic species", "(D) Exotic species"],
+    "options": [
+      "(A) Endangered species",
+      "(B) Migratory species",
+      "(C) Endemic species",
+      "(D) Exotic species"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -614,7 +789,12 @@
   {
     "id": "c8-s-69",
     "question": "Red Data Book keeps a record of all:",
-    "options": ["(A) Endemic species", "(B) Endangered species", "(C) Extinct species", "(D) Exotic species"],
+    "options": [
+      "(A) Endemic species",
+      "(B) Endangered species",
+      "(C) Extinct species",
+      "(D) Exotic species"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -623,7 +803,12 @@
   {
     "id": "c8-s-70",
     "question": "The movement of animals from one place to another for a short period is:",
-    "options": ["(A) Hibernation", "(B) Migration", "(C) Adaptation", "(D) Circulation"],
+    "options": [
+      "(A) Hibernation",
+      "(B) Migration",
+      "(C) Adaptation",
+      "(D) Circulation"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -632,7 +817,12 @@
   {
     "id": "c8-s-71",
     "question": "The first reserve forest of India is:",
-    "options": ["(A) Kaziranga", "(B) Satpura National Park", "(C) Jim Corbett", "(D) Gir Forest"],
+    "options": [
+      "(A) Kaziranga",
+      "(B) Satpura National Park",
+      "(C) Jim Corbett",
+      "(D) Gir Forest"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -641,7 +831,12 @@
   {
     "id": "c8-s-72",
     "question": "Deforestation leads to ________ in rainfall.",
-    "options": ["(A) Increase", "(B) Decrease", "(C) No change", "(D) Sudden floods"],
+    "options": [
+      "(A) Increase",
+      "(B) Decrease",
+      "(C) No change",
+      "(D) Sudden floods"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -650,7 +845,12 @@
   {
     "id": "c8-s-73",
     "question": "The variety of organisms existing on Earth is called:",
-    "options": ["(A) Population", "(B) Species", "(C) Biodiversity", "(D) Ecosystem"],
+    "options": [
+      "(A) Population",
+      "(B) Species",
+      "(C) Biodiversity",
+      "(D) Ecosystem"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -668,7 +868,12 @@
   {
     "id": "c8-s-75",
     "question": "The part of earth in which living organisms exist is called:",
-    "options": ["(A) Atmosphere", "(B) Lithosphere", "(C) Biosphere", "(D) Hydrosphere"],
+    "options": [
+      "(A) Atmosphere",
+      "(B) Lithosphere",
+      "(C) Biosphere",
+      "(D) Hydrosphere"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -677,7 +882,12 @@
   {
     "id": "c8-s-76",
     "question": "Pachmarhi Biosphere Reserve is located in:",
-    "options": ["(A) Gujarat", "(B) Madhya Pradesh", "(C) Rajasthan", "(D) Assam"],
+    "options": [
+      "(A) Gujarat",
+      "(B) Madhya Pradesh",
+      "(C) Rajasthan",
+      "(D) Assam"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -704,7 +914,12 @@
   {
     "id": "c8-s-79",
     "question": "Conversion of fertile land into deserts is called:",
-    "options": ["(A) Deforestation", "(B) Desertification", "(C) Erosion", "(D) Degradation"],
+    "options": [
+      "(A) Deforestation",
+      "(B) Desertification",
+      "(C) Erosion",
+      "(D) Degradation"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-5",
@@ -731,7 +946,12 @@
   {
     "id": "c8-s-82",
     "question": "The fusion of sperm and egg is called:",
-    "options": ["(A) Ovulation", "(B) Fertilization", "(C) Reproduction", "(D) Implantation"],
+    "options": [
+      "(A) Ovulation",
+      "(B) Fertilization",
+      "(C) Reproduction",
+      "(D) Implantation"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -740,7 +960,12 @@
   {
     "id": "c8-s-83",
     "question": "Animals which give birth to young ones are called:",
-    "options": ["(A) Oviparous", "(B) Viviparous", "(C) Parasites", "(D) Predators"],
+    "options": [
+      "(A) Oviparous",
+      "(B) Viviparous",
+      "(C) Parasites",
+      "(D) Predators"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -776,7 +1001,12 @@
   {
     "id": "c8-s-87",
     "question": "Internal fertilization occurs:",
-    "options": ["(A) In female body", "(B) Outside female body", "(C) In male body", "(D) In water"],
+    "options": [
+      "(A) In female body",
+      "(B) Outside female body",
+      "(C) In male body",
+      "(D) In water"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -785,7 +1015,12 @@
   {
     "id": "c8-s-88",
     "question": "A tadpole develops into an adult frog by the process of:",
-    "options": ["(A) Fertilization", "(B) Metamorphosis", "(C) Budding", "(D) Fission"],
+    "options": [
+      "(A) Fertilization",
+      "(B) Metamorphosis",
+      "(C) Budding",
+      "(D) Fission"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -803,7 +1038,12 @@
   {
     "id": "c8-s-90",
     "question": "Oviparous animals are those which:",
-    "options": ["(A) Give birth to young ones", "(B) Lay eggs", "(C) Do not reproduce", "(D) Live on land"],
+    "options": [
+      "(A) Give birth to young ones",
+      "(B) Lay eggs",
+      "(C) Do not reproduce",
+      "(D) Live on land"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -839,7 +1079,12 @@
   {
     "id": "c8-s-94",
     "question": "A zygote is formed after ________.",
-    "options": ["(A) Budding", "(B) Fertilization", "(C) Fission", "(D) Growth"],
+    "options": [
+      "(A) Budding",
+      "(B) Fertilization",
+      "(C) Fission",
+      "(D) Growth"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-6",
@@ -848,7 +1093,12 @@
   {
     "id": "c8-s-95",
     "question": "The period of life when the body undergoes changes leading to reproductive maturity is:",
-    "options": ["(A) Childhood", "(B) Adolescence", "(C) Old age", "(D) Infancy"],
+    "options": [
+      "(A) Childhood",
+      "(B) Adolescence",
+      "(C) Old age",
+      "(D) Infancy"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -875,7 +1125,12 @@
   {
     "id": "c8-s-98",
     "question": "Which hormone is responsible for secondary sexual characters in boys?",
-    "options": ["(A) Estrogen", "(B) Testosterone", "(C) Insulin", "(D) Adrenaline"],
+    "options": [
+      "(A) Estrogen",
+      "(B) Testosterone",
+      "(C) Insulin",
+      "(D) Adrenaline"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -884,7 +1139,12 @@
   {
     "id": "c8-s-99",
     "question": "The first menstrual flow at puberty is called:",
-    "options": ["(A) Menopause", "(B) Menarche", "(C) Ovulation", "(D) Fertilization"],
+    "options": [
+      "(A) Menopause",
+      "(B) Menarche",
+      "(C) Ovulation",
+      "(D) Fertilization"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -920,7 +1180,12 @@
   {
     "id": "c8-s-103",
     "question": "Hormones are chemical substances secreted by:",
-    "options": ["(A) Exocrine glands", "(B) Endocrine glands", "(C) Stomach", "(D) Liver"],
+    "options": [
+      "(A) Exocrine glands",
+      "(B) Endocrine glands",
+      "(C) Stomach",
+      "(D) Liver"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -956,7 +1221,12 @@
   {
     "id": "c8-s-107",
     "question": "Which hormone helps the body adjust to stress?",
-    "options": ["(A) Insulin", "(B) Thyroxine", "(C) Adrenaline", "(D) Estrogen"],
+    "options": [
+      "(A) Insulin",
+      "(B) Thyroxine",
+      "(C) Adrenaline",
+      "(D) Estrogen"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -974,7 +1244,12 @@
   {
     "id": "c8-s-109",
     "question": "Adolescents should take balanced diet because:",
-    "options": ["(A) They feel more hungry", "(B) Rapid growth occurs", "(C) To look beautiful", "(D) None"],
+    "options": [
+      "(A) They feel more hungry",
+      "(B) Rapid growth occurs",
+      "(C) To look beautiful",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c8-sci-7",
@@ -992,7 +1267,12 @@
   {
     "id": "c8-s-111",
     "question": "Force is a ________ or a ________.",
-    "options": ["(A) Speed, Motion", "(B) Push, Pull", "(C) Load, Weight", "(D) None"],
+    "options": [
+      "(A) Speed, Motion",
+      "(B) Push, Pull",
+      "(C) Load, Weight",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1010,7 +1290,12 @@
   {
     "id": "c8-s-113",
     "question": "Pressure is defined as:",
-    "options": ["(A) Force * Area", "(B) Force / Area", "(C) Area / Force", "(D) Mass / Volume"],
+    "options": [
+      "(A) Force * Area",
+      "(B) Force / Area",
+      "(C) Area / Force",
+      "(D) Mass / Volume"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1019,7 +1304,12 @@
   {
     "id": "c8-s-114",
     "question": "A contact force is:",
-    "options": ["(A) Magnetic force", "(B) Electrostatic force", "(C) Muscular force", "(D) Gravitational force"],
+    "options": [
+      "(A) Magnetic force",
+      "(B) Electrostatic force",
+      "(C) Muscular force",
+      "(D) Gravitational force"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1028,7 +1318,12 @@
   {
     "id": "c8-s-115",
     "question": "The force of attraction between two masses is:",
-    "options": ["(A) Magnetic", "(B) Electrostatic", "(C) Gravitational", "(D) Frictional"],
+    "options": [
+      "(A) Magnetic",
+      "(B) Electrostatic",
+      "(C) Gravitational",
+      "(D) Frictional"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1046,7 +1341,12 @@
   {
     "id": "c8-s-117",
     "question": "Atmospheric pressure is measured by:",
-    "options": ["(A) Thermometer", "(B) Barometer", "(C) Hydrometer", "(D) Ammeter"],
+    "options": [
+      "(A) Thermometer",
+      "(B) Barometer",
+      "(C) Hydrometer",
+      "(D) Ammeter"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1055,7 +1355,12 @@
   {
     "id": "c8-s-118",
     "question": "Which of the following is a non-contact force?",
-    "options": ["(A) Friction", "(B) Muscular force", "(C) Magnetic force", "(D) None"],
+    "options": [
+      "(A) Friction",
+      "(B) Muscular force",
+      "(C) Magnetic force",
+      "(D) None"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1064,7 +1369,12 @@
   {
     "id": "c8-s-119",
     "question": "As we go higher up, atmospheric pressure ________.",
-    "options": ["(A) Increases", "(B) Decreases", "(C) Remains same", "(D) Becomes zero"],
+    "options": [
+      "(A) Increases",
+      "(B) Decreases",
+      "(C) Remains same",
+      "(D) Becomes zero"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1073,7 +1383,12 @@
   {
     "id": "c8-s-120",
     "question": "Shoulder bags are provided with broad straps to:",
-    "options": ["(A) Look good", "(B) Increase pressure", "(C) Decrease pressure", "(D) Increase weight"],
+    "options": [
+      "(A) Look good",
+      "(B) Increase pressure",
+      "(C) Decrease pressure",
+      "(D) Increase weight"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1118,7 +1433,12 @@
   {
     "id": "c8-s-125",
     "question": "The state of motion of an object is described by its:",
-    "options": ["(A) Speed", "(B) Direction of motion", "(C) Both A and B", "(D) Weight"],
+    "options": [
+      "(A) Speed",
+      "(B) Direction of motion",
+      "(C) Both A and B",
+      "(D) Weight"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-8",
@@ -1172,7 +1492,12 @@
   {
     "id": "c8-s-131",
     "question": "Loudness of sound is determined by its:",
-    "options": ["(A) Frequency", "(B) Amplitude", "(C) Speed", "(D) Wavelength"],
+    "options": [
+      "(A) Frequency",
+      "(B) Amplitude",
+      "(C) Speed",
+      "(D) Wavelength"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-9",
@@ -1199,7 +1524,12 @@
   {
     "id": "c8-s-134",
     "question": "Audible range for human ear is:",
-    "options": ["(A) 20 Hz to 20,000 Hz", "(B) Above 20,000 Hz", "(C) Below 20 Hz", "(D) 10 Hz to 10,000 Hz"],
+    "options": [
+      "(A) 20 Hz to 20,000 Hz",
+      "(B) Above 20,000 Hz",
+      "(C) Below 20 Hz",
+      "(D) 10 Hz to 10,000 Hz"
+    ],
     "correctAnswer": "A",
     "subject": "physics",
     "chapterId": "c8-sci-9",
@@ -1226,7 +1556,12 @@
   {
     "id": "c8-s-137",
     "question": "Eardrum is a part of:",
-    "options": ["(A) Sound producing organ", "(B) Hearing organ", "(C) Muscular system", "(D) None"],
+    "options": [
+      "(A) Sound producing organ",
+      "(B) Hearing organ",
+      "(C) Muscular system",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-9",
@@ -1244,7 +1579,12 @@
   {
     "id": "c8-s-139",
     "question": "Which of these helps in controlling noise pollution?",
-    "options": ["(A) Plant trees", "(B) Use horn less", "(C) Silence zones", "(D) All of these"],
+    "options": [
+      "(A) Plant trees",
+      "(B) Use horn less",
+      "(C) Silence zones",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "physics",
     "chapterId": "c8-sci-9",
@@ -1253,7 +1593,12 @@
   {
     "id": "c8-s-140",
     "question": "Time taken for one oscillation is called:",
-    "options": ["(A) Frequency", "(B) Time period", "(C) Amplitude", "(D) Pitch"],
+    "options": [
+      "(A) Frequency",
+      "(B) Time period",
+      "(C) Amplitude",
+      "(D) Pitch"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-9",
@@ -1262,7 +1607,12 @@
   {
     "id": "c8-s-141",
     "question": "Which of the following is a good conductor of electricity?",
-    "options": ["(A) Distilled water", "(B) Tap water", "(C) Rubber", "(D) Plastic"],
+    "options": [
+      "(A) Distilled water",
+      "(B) Tap water",
+      "(C) Rubber",
+      "(D) Plastic"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1271,7 +1621,12 @@
   {
     "id": "c8-s-142",
     "question": "The process of depositing a layer of any desired metal on another material is:",
-    "options": ["(A) Electrolysis", "(B) Electroplating", "(C) Galvanization", "(D) Painting"],
+    "options": [
+      "(A) Electrolysis",
+      "(B) Electroplating",
+      "(C) Galvanization",
+      "(D) Painting"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1280,7 +1635,12 @@
   {
     "id": "c8-s-143",
     "question": "Which of these is an electrolyte?",
-    "options": ["(A) Sugar solution", "(B) Salt solution", "(C) Distilled water", "(D) Honey"],
+    "options": [
+      "(A) Sugar solution",
+      "(B) Salt solution",
+      "(C) Distilled water",
+      "(D) Honey"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1298,7 +1658,12 @@
   {
     "id": "c8-s-145",
     "question": "LED stands for:",
-    "options": ["(A) Light Earning Diode", "(B) Light Emitting Diode", "(C) Low Energy Diode", "(D) None"],
+    "options": [
+      "(A) Light Earning Diode",
+      "(B) Light Emitting Diode",
+      "(C) Low Energy Diode",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1307,7 +1672,12 @@
   {
     "id": "c8-s-146",
     "question": "During electrolysis, oxygen gas is evolved at ________ electrode.",
-    "options": ["(A) Positive (Anode)", "(B) Negative (Cathode)", "(C) Neutral", "(D) None"],
+    "options": [
+      "(A) Positive (Anode)",
+      "(B) Negative (Cathode)",
+      "(C) Neutral",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1334,7 +1704,12 @@
   {
     "id": "c8-s-149",
     "question": "A liquid that conducts electricity is called a/an:",
-    "options": ["(A) Insulator", "(B) Conductor", "(C) Electrolyte", "(D) Dielectric"],
+    "options": [
+      "(A) Insulator",
+      "(B) Conductor",
+      "(C) Electrolyte",
+      "(D) Dielectric"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1352,7 +1727,12 @@
   {
     "id": "c8-s-151",
     "question": "The longer lead of an LED is always connected to the:",
-    "options": ["(A) Negative terminal", "(B) Positive terminal", "(C) Ground", "(D) Switch"],
+    "options": [
+      "(A) Negative terminal",
+      "(B) Positive terminal",
+      "(C) Ground",
+      "(D) Switch"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1361,7 +1741,12 @@
   {
     "id": "c8-s-152",
     "question": "Which of the following does not conduct electricity?",
-    "options": ["(A) Vinegar", "(B) Lemon juice", "(C) Honey", "(D) Salt water"],
+    "options": [
+      "(A) Vinegar",
+      "(B) Lemon juice",
+      "(C) Honey",
+      "(D) Salt water"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1379,7 +1764,12 @@
   {
     "id": "c8-s-154",
     "question": "Pure water is a/an ________.",
-    "options": ["(A) Poor conductor", "(B) Good conductor", "(C) Electrolyte", "(D) Metal"],
+    "options": [
+      "(A) Poor conductor",
+      "(B) Good conductor",
+      "(C) Electrolyte",
+      "(D) Metal"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1388,7 +1778,12 @@
   {
     "id": "c8-s-155",
     "question": "Flow of electrons is called ________.",
-    "options": ["(A) Potential", "(B) Resistance", "(C) Current", "(D) Capacitance"],
+    "options": [
+      "(A) Potential",
+      "(B) Resistance",
+      "(C) Current",
+      "(D) Capacitance"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c8-sci-10",
@@ -1433,7 +1828,12 @@
   {
     "id": "c8-s-160",
     "question": "The splitting of white light into seven colors is called:",
-    "options": ["(A) Reflection", "(B) Refraction", "(C) Dispersion", "(D) Deviation"],
+    "options": [
+      "(A) Reflection",
+      "(B) Refraction",
+      "(C) Dispersion",
+      "(D) Deviation"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-11",
@@ -1451,7 +1851,12 @@
   {
     "id": "c8-s-162",
     "question": "The point in the eye where no vision is possible is:",
-    "options": ["(A) Dark spot", "(B) Blind spot", "(C) Yellow spot", "(D) Eye spot"],
+    "options": [
+      "(A) Dark spot",
+      "(B) Blind spot",
+      "(C) Yellow spot",
+      "(D) Eye spot"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-11",
@@ -1487,7 +1892,12 @@
   {
     "id": "c8-s-166",
     "question": "An instrument based on multiple reflections is:",
-    "options": ["(A) Microscope", "(B) Kaleidoscope", "(C) Telescope", "(D) Binoculars"],
+    "options": [
+      "(A) Microscope",
+      "(B) Kaleidoscope",
+      "(C) Telescope",
+      "(D) Binoculars"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-11",
@@ -1568,7 +1978,12 @@
   {
     "id": "c8-s-175",
     "question": "Substances that reduce friction are called:",
-    "options": ["(A) Adhesives", "(B) Lubricants", "(C) Abrasives", "(D) Insulators"],
+    "options": [
+      "(A) Adhesives",
+      "(B) Lubricants",
+      "(C) Abrasives",
+      "(D) Insulators"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-12",
@@ -1586,7 +2001,12 @@
   {
     "id": "c8-s-177",
     "question": "To reduce fluid friction, objects are given a ________ shape.",
-    "options": ["(A) Circular", "(B) Rectangular", "(C) Streamlined", "(D) Oval"],
+    "options": [
+      "(A) Circular",
+      "(B) Rectangular",
+      "(C) Streamlined",
+      "(D) Oval"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-12",
@@ -1604,7 +2024,12 @@
   {
     "id": "c8-s-179",
     "question": "Why are grooves made in tyres?",
-    "options": ["(A) To look good", "(B) To decrease friction", "(C) To increase friction", "(D) To reduce weight"],
+    "options": [
+      "(A) To look good",
+      "(B) To decrease friction",
+      "(C) To increase friction",
+      "(D) To reduce weight"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-12",
@@ -1649,7 +2074,12 @@
   {
     "id": "c8-s-184",
     "question": "Friction is a ________ force.",
-    "options": ["(A) Contact", "(B) Non-contact", "(C) Magnetic", "(D) Electrostatic"],
+    "options": [
+      "(A) Contact",
+      "(B) Non-contact",
+      "(C) Magnetic",
+      "(D) Electrostatic"
+    ],
     "correctAnswer": "A",
     "subject": "physics",
     "chapterId": "c8-sci-12",
@@ -1667,7 +2097,12 @@
   {
     "id": "c8-s-186",
     "question": "Which of the following cannot be charged easily by friction?",
-    "options": ["(A) Plastic scale", "(B) Copper rod", "(C) Inflated balloon", "(D) Woolen cloth"],
+    "options": [
+      "(A) Plastic scale",
+      "(B) Copper rod",
+      "(C) Inflated balloon",
+      "(D) Woolen cloth"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1685,7 +2120,12 @@
   {
     "id": "c8-s-188",
     "question": "Unlike charges ________ each other.",
-    "options": ["(A) Attract", "(B) Repel", "(C) Neutralize", "(D) Both A and B"],
+    "options": [
+      "(A) Attract",
+      "(B) Repel",
+      "(C) Neutralize",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "A",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1694,7 +2134,12 @@
   {
     "id": "c8-s-189",
     "question": "A device used to detect charge is called:",
-    "options": ["(A) Microscope", "(B) Electroscope", "(C) Seismograph", "(D) Barometer"],
+    "options": [
+      "(A) Microscope",
+      "(B) Electroscope",
+      "(C) Seismograph",
+      "(D) Barometer"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1712,7 +2157,12 @@
   {
     "id": "c8-s-191",
     "question": "The process of transferring charge from a charged body to earth is:",
-    "options": ["(A) Charging", "(B) Earthing", "(C) Induction", "(D) Friction"],
+    "options": [
+      "(A) Charging",
+      "(B) Earthing",
+      "(C) Induction",
+      "(D) Friction"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1730,7 +2180,12 @@
   {
     "id": "c8-s-193",
     "question": "The waves produced by tremors on the earth are:",
-    "options": ["(A) Sound waves", "(B) Seismic waves", "(C) Radio waves", "(D) Light waves"],
+    "options": [
+      "(A) Sound waves",
+      "(B) Seismic waves",
+      "(C) Radio waves",
+      "(D) Light waves"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1739,7 +2194,12 @@
   {
     "id": "c8-s-194",
     "question": "Instrument used to record seismic waves is:",
-    "options": ["(A) Barometer", "(B) Seismograph", "(C) Electroscope", "(D) Ammeter"],
+    "options": [
+      "(A) Barometer",
+      "(B) Seismograph",
+      "(C) Electroscope",
+      "(D) Ammeter"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1748,7 +2208,12 @@
   {
     "id": "c8-s-195",
     "question": "Which of the following is not a natural phenomenon?",
-    "options": ["(A) Earthquake", "(B) Lightning", "(C) Tsunami", "(D) Deforestation"],
+    "options": [
+      "(A) Earthquake",
+      "(B) Lightning",
+      "(C) Tsunami",
+      "(D) Deforestation"
+    ],
     "correctAnswer": "D",
     "subject": "physics",
     "chapterId": "c8-sci-13",
@@ -1757,7 +2222,12 @@
   {
     "id": "c8-s-196",
     "question": "During a thunderstorm, it is safest to be:",
-    "options": ["(A) Under a tree", "(B) In an open field", "(C) Inside a car", "(D) On a bicycle"],
+    "options": [
+      "(A) Under a tree",
+      "(B) In an open field",
+      "(C) Inside a car",
+      "(D) On a bicycle"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c8-sci-13",

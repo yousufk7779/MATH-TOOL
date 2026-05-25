@@ -1,32 +1,33 @@
 import { ChapterContent } from "../types";
 
 export const c7Math2: ChapterContent = {
-    id: "c7-math-2",
-    number: 2,
-    title: "Fractions and Decimals",
-    isHtmlView: true,
-    introduction: "In this chapter, we will learn about fractions and decimals including their addition, subtraction, multiplication and division. We will also explore how to represent them visually and solve real-life problems.",
-    definitions: [],
-    keyPoints: [
-        "A fraction represents a part of a whole.",
-        "Proper fractions have a numerator less than the denominator.",
-        "Improper fractions have a numerator greater than or equal to the denominator.",
-        "To multiply fractions, multiply the numerators together and the denominators together.",
-        "To divide by a fraction, multiply by its reciprocal.",
-        "Decimals are another way of expressing fractions with denominators as powers of 10."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex2-1", name: "Exercise 2.1", questions: [] },
-        { id: "ex2-2", name: "Exercise 2.2", questions: [] },
-        { id: "ex2-3", name: "Exercise 2.3", questions: [] },
-        { id: "ex2-4", name: "Exercise 2.4", questions: [] },
-        { id: "ex2-5", name: "Exercise 2.5", questions: [] },
-        { id: "ex2-6", name: "Exercise 2.6", questions: [] },
-        { id: "ex2-7", name: "Exercise 2.7", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-2",
+  number: 2,
+  title: "Fractions and Decimals",
+  isHtmlView: true,
+  introduction:
+    "In this chapter, we will learn about fractions and decimals including their addition, subtraction, multiplication and division. We will also explore how to represent them visually and solve real-life problems.",
+  definitions: [],
+  keyPoints: [
+    "A fraction represents a part of a whole.",
+    "Proper fractions have a numerator less than the denominator.",
+    "Improper fractions have a numerator greater than or equal to the denominator.",
+    "To multiply fractions, multiply the numerators together and the denominators together.",
+    "To divide by a fraction, multiply by its reciprocal.",
+    "Decimals are another way of expressing fractions with denominators as powers of 10.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex2-1", name: "Exercise 2.1", questions: [] },
+    { id: "ex2-2", name: "Exercise 2.2", questions: [] },
+    { id: "ex2-3", name: "Exercise 2.3", questions: [] },
+    { id: "ex2-4", name: "Exercise 2.4", questions: [] },
+    { id: "ex2-5", name: "Exercise 2.5", questions: [] },
+    { id: "ex2-6", name: "Exercise 2.6", questions: [] },
+    { id: "ex2-7", name: "Exercise 2.7", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FF4081; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -45,8 +46,8 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex2-1": `
+  htmlExercises: {
+    "ex2-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -304,7 +305,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-2": `
+    "ex2-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -551,7 +552,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-3": `
+    "ex2-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -766,7 +767,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-4": `
+    "ex2-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -945,7 +946,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-5": `
+    "ex2-5": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -1170,7 +1171,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-6": `
+    "ex2-6": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -1331,7 +1332,7 @@ export const c7Math2: ChapterContent = {
             </div>
         </div>
         `,
-        "ex2-7": `
+    "ex2-7": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -1505,20 +1506,75 @@ export const c7Math2: ChapterContent = {
                 <div class="sol-step">Result: <span class="ans-highlight">It will cover 18 km in one litre of petrol.</span></div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Which of the following is a proper fraction?",
+      options: ["7/4", "3/2", "2/3", "10/7"],
+      correctAnswer: "C",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Which of the following is a proper fraction?", options: ["7/4", "3/2", "2/3", "10/7"], correctAnswer: "C" },
-        { id: "m2", question: "What is 1/2 of 10?", options: ["2", "5", "10", "20"], correctAnswer: "B" },
-        { id: "m3", question: "The reciprocal of 2 is:", options: ["1/2", "2", "0", "1"], correctAnswer: "A" },
-        { id: "m4", question: "The value of 0.1 x 0.1 is:", options: ["0.1", "0.01", "0.001", "1.0"], correctAnswer: "B" },
-        { id: "m5", question: "Which is greater, 0.5 or 0.05?", options: ["0.5", "0.05", "Both equal", "None"], correctAnswer: "A" },
-        { id: "m6", question: "The reciprocal of an improper fraction is always a:", options: ["Proper fraction", "Improper fraction", "Whole number", "Mixed fraction"], correctAnswer: "A" },
-        { id: "m7", question: "What is 2/5 of 25?", options: ["5", "10", "15", "20"], correctAnswer: "B" },
-        { id: "m8", question: "The product of 0.03 x 100 is:", options: ["0.3", "3", "30", "300"], correctAnswer: "B" },
-        { id: "m9", question: "How many decimal places are in the product of 1.2 x 1.44?", options: ["1", "2", "3", "4"], correctAnswer: "C" },
-        { id: "m10", question: "The simplified form of 2/3 x 3/2 is:", options: ["0", "1", "4/9", "9/4"], correctAnswer: "B" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "What is 1/2 of 10?",
+      options: ["2", "5", "10", "20"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "The reciprocal of 2 is:",
+      options: ["1/2", "2", "0", "1"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m4",
+      question: "The value of 0.1 x 0.1 is:",
+      options: ["0.1", "0.01", "0.001", "1.0"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question: "Which is greater, 0.5 or 0.05?",
+      options: ["0.5", "0.05", "Both equal", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "The reciprocal of an improper fraction is always a:",
+      options: [
+        "Proper fraction",
+        "Improper fraction",
+        "Whole number",
+        "Mixed fraction",
+      ],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question: "What is 2/5 of 25?",
+      options: ["5", "10", "15", "20"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "The product of 0.03 x 100 is:",
+      options: ["0.3", "3", "30", "300"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "How many decimal places are in the product of 1.2 x 1.44?",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "The simplified form of 2/3 x 3/2 is:",
+      options: ["0", "1", "4/9", "9/4"],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [],
 };

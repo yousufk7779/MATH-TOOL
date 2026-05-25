@@ -37,7 +37,8 @@ export const c8Sci4: ChapterContent = {
   mcqs: [
     {
       id: "c8-sci-4-mcq-1",
-      question: "<div style='text-align: justify;'>Internal fertilization occurs:</div>",
+      question:
+        "<div style='text-align: justify;'>Internal fertilization occurs:</div>",
       options: [
         "<div style='text-align: justify;'>(a) in female body</div>",
         "<div style='text-align: justify;'>(b) outside female body</div>",
@@ -48,7 +49,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-2",
-      question: "<div style='text-align: justify;'>A tadpole develops into an adult frog by the process of:</div>",
+      question:
+        "<div style='text-align: justify;'>A tadpole develops into an adult frog by the process of:</div>",
       options: [
         "<div style='text-align: justify;'>(a) fertilization</div>",
         "<div style='text-align: justify;'>(b) metamorphosis</div>",
@@ -59,7 +61,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-3",
-      question: "<div style='text-align: justify;'>The number of nuclei present in a zygote is:</div>",
+      question:
+        "<div style='text-align: justify;'>The number of nuclei present in a zygote is:</div>",
       options: [
         "<div style='text-align: justify;'>(a) none</div>",
         "<div style='text-align: justify;'>(b) one</div>",
@@ -70,7 +73,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-4",
-      question: "<div style='text-align: justify;'>Which of the following animals undergo external fertilization?</div>",
+      question:
+        "<div style='text-align: justify;'>Which of the following animals undergo external fertilization?</div>",
       options: [
         "<div style='text-align: justify;'>(a) Frog</div>",
         "<div style='text-align: justify;'>(b) Hen</div>",
@@ -81,7 +85,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-5",
-      question: "<div style='text-align: justify;'>Asexual reproduction in which an animal divides into two individuals is called:</div>",
+      question:
+        "<div style='text-align: justify;'>Asexual reproduction in which an animal divides into two individuals is called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Budding</div>",
         "<div style='text-align: justify;'>(b) Fragmentation</div>",
@@ -92,7 +97,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-6",
-      question: "<div style='text-align: justify;'>Animals which give birth to young ones are called:</div>",
+      question:
+        "<div style='text-align: justify;'>Animals which give birth to young ones are called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Oviparous</div>",
         "<div style='text-align: justify;'>(b) Viviparous</div>",
@@ -103,7 +109,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-7",
-      question: "<div style='text-align: justify;'>Hydra reproduces asexually by the process of:</div>",
+      question:
+        "<div style='text-align: justify;'>Hydra reproduces asexually by the process of:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Binary fission</div>",
         "<div style='text-align: justify;'>(b) Budding</div>",
@@ -114,7 +121,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-8",
-      question: "<div style='text-align: justify;'>The process of the fusion of male and female gametes is called:</div>",
+      question:
+        "<div style='text-align: justify;'>The process of the fusion of male and female gametes is called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Reproduction</div>",
         "<div style='text-align: justify;'>(b) Pollination</div>",
@@ -125,7 +133,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-9",
-      question: "<div style='text-align: justify;'>The stage of the embryo in which all the body parts can be identified is called:</div>",
+      question:
+        "<div style='text-align: justify;'>The stage of the embryo in which all the body parts can be identified is called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Zygote</div>",
         "<div style='text-align: justify;'>(b) Foetus</div>",
@@ -136,7 +145,8 @@ export const c8Sci4: ChapterContent = {
     },
     {
       id: "c8-sci-4-mcq-10",
-      question: "<div style='text-align: justify;'>Egg-laying animals are known as:</div>",
+      question:
+        "<div style='text-align: justify;'>Egg-laying animals are known as:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Viviparous</div>",
         "<div style='text-align: justify;'>(b) Oviparous</div>",
@@ -161,7 +171,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q1",
           number: "1",
-          question: "<div style='text-align: justify;'>Explain the importance of reproduction in organisms.</div>",
+          question:
+            "<div style='text-align: justify;'>Explain the importance of reproduction in organisms.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Reproduction is essential for the following reasons:<br/>1. It ensures the continuation of a species generation after generation.<br/>2. It prevents the extinction of a species from the Earth.<br/>3. It maintains the stability in the population of various species.</div>",
           ],
@@ -170,7 +181,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q2",
           number: "2",
-          question: "<div style='text-align: justify;'>Describe the process of fertilization in human beings.</div>",
+          question:
+            "<div style='text-align: justify;'>Describe the process of fertilization in human beings.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>In human beings, sexual reproduction takes place. During this process, millions of sperms from the male are released into the female body. The sperms move towards the egg. When a sperm comes in contact with the egg, it may fuse with it. The fusion of the nucleus of the sperm with the nucleus of the egg to form a single nucleus is called fertilization. This results in the formation of a fertilized egg or zygote. Fertilization in humans is internal, as it takes place inside the female body.</div>",
           ],
@@ -179,7 +191,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q3",
           number: "3",
-          question: "<div style='text-align: justify;'>Choose the most appropriate answer (Already provided in MCQs section above).</div>",
+          question:
+            "<div style='text-align: justify;'>Choose the most appropriate answer (Already provided in MCQs section above).</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Please refer to the MCQs section for the detailed answers to this question.</div>",
           ],
@@ -188,7 +201,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q4",
           number: "4",
-          question: "<div style='text-align: justify;'>Indicate whether the following statements are True (T) or False (F):<br/>(a) Oviparous animals give birth to young ones. ( )<br/>(b) Each sperm is a single cell. ( )<br/>(c) External fertilization takes place in frog. ( )<br/>(d) A new human individual develops from a cell called gamete. ( )<br/>(e) Egg laid after fertilization is made up of a single cell. ( )<br/>(f) Amoeba reproduces by budding. ( )<br/>(g) Fertilization is necessary even in asexual reproduction. ( )<br/>(h) Binary fission is a method of asexual reproduction. ( )<br/>(i) A zygote is formed as a result of fertilization. ( )<br/>(j) An embryo is made up of a single cell. ( )</div>",
+          question:
+            "<div style='text-align: justify;'>Indicate whether the following statements are True (T) or False (F):<br/>(a) Oviparous animals give birth to young ones. ( )<br/>(b) Each sperm is a single cell. ( )<br/>(c) External fertilization takes place in frog. ( )<br/>(d) A new human individual develops from a cell called gamete. ( )<br/>(e) Egg laid after fertilization is made up of a single cell. ( )<br/>(f) Amoeba reproduces by budding. ( )<br/>(g) Fertilization is necessary even in asexual reproduction. ( )<br/>(h) Binary fission is a method of asexual reproduction. ( )<br/>(i) A zygote is formed as a result of fertilization. ( )<br/>(j) An embryo is made up of a single cell. ( )</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answers:<br/>(a) False<br/>(b) True<br/>(c) True<br/>(d) False<br/>(e) True<br/>(f) False<br/>(g) False<br/>(h) True<br/>(i) True<br/>(j) False</div>",
           ],
@@ -197,7 +211,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q5",
           number: "5",
-          question: "<div style='text-align: justify;'>Give two differences between a zygote and a foetus.</div>",
+          question:
+            "<div style='text-align: justify;'>Give two differences between a zygote and a foetus.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>1. <b>Zygote:</b> It is a single cell formed by the fusion of male and female gametes. <b>Foetus:</b> It is a multicellular stage of the embryo.<br/>2. <b>Zygote:</b> It is the earliest stage of development. <b>Foetus:</b> It is a later stage of development where all body parts can be identified.</div>",
           ],
@@ -206,7 +221,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q6",
           number: "6",
-          question: "<div style='text-align: justify;'>Define asexual reproduction. Describe two methods of asexual reproduction in animals.</div>",
+          question:
+            "<div style='text-align: justify;'>Define asexual reproduction. Describe two methods of asexual reproduction in animals.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Asexual reproduction is a mode of reproduction in which only a single parent is involved in producing new individuals.<br/><br/><b>Two methods:</b><br/>1. <b>Binary Fission:</b> In this method, a single-celled organism like Amoeba divides into two equal halves, each becoming a new individual.<br/>2. <b>Budding:</b> In organisms like Hydra, a small projection called a bud grows out from the parent body. This bud eventually detaches and develops into a new independent individual.</div>",
           ],
@@ -215,7 +231,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q7",
           number: "7",
-          question: "<div style='text-align: justify;'>In which female reproductive organ does the embryo get embedded?</div>",
+          question:
+            "<div style='text-align: justify;'>In which female reproductive organ does the embryo get embedded?</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>The embryo gets embedded in the wall of the <b>uterus</b>.</div>",
           ],
@@ -224,7 +241,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q8",
           number: "8",
-          question: "<div style='text-align: justify;'>What is metamorphosis? Give examples.</div>",
+          question:
+            "<div style='text-align: justify;'>What is metamorphosis? Give examples.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Metamorphosis is the biological process of transformation of a larva into an adult through drastic changes in body structure and function. It is commonly seen in insects and amphibians.<br/><br/><b>Examples:</b><br/>1. Transformation of a tadpole into a frog.<br/>2. Transformation of a caterpillar into a butterfly or silk moth.</div>",
           ],
@@ -233,7 +251,8 @@ export const c8Sci4: ChapterContent = {
         {
           id: "c8-sci-4-ex1-q9",
           number: "9",
-          question: "<div style='text-align: justify;'>Differentiate between internal fertilization and external fertilization.</div>",
+          question:
+            "<div style='text-align: justify;'>Differentiate between internal fertilization and external fertilization.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'><b>Internal Fertilization:</b> The fusion of male and female gametes takes place inside the female body. Examples: Humans, dogs, hens.<br/><b>External Fertilization:</b> The fusion of male and female gametes takes place outside the female body, usually in water. Examples: Frogs, fish, starfish.</div>",
           ],

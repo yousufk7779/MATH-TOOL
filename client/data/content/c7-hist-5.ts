@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist5: ChapterContent = {
-    id: "c7-hist-5",
-    number: 5,
-    title: "Tribes, Nomads and Settled Communities",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-5",
+  number: 5,
+  title: "Tribes, Nomads and Settled Communities",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>While big kingdoms rose and fell, new kinds of societies were also emerging in the subcontinent. Many societies did not follow the social rules and rituals prescribed by the Brahmanas. These were called tribes. This chapter explores how these tribal societies, nomads like Banjaras, and settled communities interacted and changed over time.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist5: ChapterContent = {
             <p>Tribal societies and nomads played a crucial role in the medieval Indian economy and social structure. Over time, many of these tribes established their own powerful states, like the Gonds and Ahoms. Through interaction with settled societies, tribal groups adopted many mainstream practices while still maintaining their unique cultural identities.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h5-ex-all": `
+  htmlExercises: {
+    "c7h5-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -97,82 +97,90 @@ export const c7Hist5: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Gonds used shifting cultivation, while Ahoms used advanced rice techniques. Both grew into powerful states, had centralized systems, and were eventually challenged by the Mughals.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "While big kingdoms rose and fell, new kinds of societies were also emerging in the subcontinent.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h5-mcq-1",
+      question: "What was the caravan of the Banjaras called?",
+      options: ["Paik", "Tanda", "Khel", "Garh"],
+      correctAnswer: "b",
     },
-    introduction: "While big kingdoms rose and fell, new kinds of societies were also emerging in the subcontinent.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h5-mcq-1",
-            question: "What was the caravan of the Banjaras called?",
-            options: ["Paik", "Tanda", "Khel", "Garh"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-2",
-            question: "Who were the forced laborers in the Ahom state?",
-            options: ["Paiks", "Zamindars", "Mansabdars", "Samantas"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h5-mcq-3",
-            question: "Who were the historical chronicles written by the Ahoms?",
-            options: ["Akbar Nama", "Buranjis", "Tawarikh", "Prashastis"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-4",
-            question: "Which tribe lived in the forested region of Gondwana?",
-            options: ["Ahoms", "Gonds", "Bhils", "Khokhars"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-5",
-            question: "Which famous Gond queen died fighting the Mughal forces?",
-            options: ["Rani Lakshmibai", "Rani Durgawati", "Raziyya Sultan", "Nur Jahan"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-6",
-            question: "The new castes emerging within varnas were called:",
-            options: ["Jatis", "Gotras", "Clans", "Tandas"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h5-mcq-7",
-            question: "The Ahoms migrated to the Brahmaputra valley from which country?",
-            options: ["Myanmar (Burma)", "China", "Nepal", "Sri Lanka"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h5-mcq-8",
-            question: "According to Akbar Nama, how many villages did Garha Katanga have?",
-            options: ["50,000", "70,000", "10,000", "1,00,000"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-9",
-            question: "Who were the most important trader-nomads in medieval India?",
-            options: ["Gonds", "Banjaras", "Ahoms", "Bhils"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h5-mcq-10",
-            question: "Tribal societies generally had rich _____ traditions.",
-            options: ["Written", "Oral", "Architectural", "Scientific"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h5-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h5-mcq-2",
+      question: "Who were the forced laborers in the Ahom state?",
+      options: ["Paiks", "Zamindars", "Mansabdars", "Samantas"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h5-mcq-3",
+      question: "Who were the historical chronicles written by the Ahoms?",
+      options: ["Akbar Nama", "Buranjis", "Tawarikh", "Prashastis"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h5-mcq-4",
+      question: "Which tribe lived in the forested region of Gondwana?",
+      options: ["Ahoms", "Gonds", "Bhils", "Khokhars"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h5-mcq-5",
+      question: "Which famous Gond queen died fighting the Mughal forces?",
+      options: [
+        "Rani Lakshmibai",
+        "Rani Durgawati",
+        "Raziyya Sultan",
+        "Nur Jahan",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h5-mcq-6",
+      question: "The new castes emerging within varnas were called:",
+      options: ["Jatis", "Gotras", "Clans", "Tandas"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h5-mcq-7",
+      question:
+        "The Ahoms migrated to the Brahmaputra valley from which country?",
+      options: ["Myanmar (Burma)", "China", "Nepal", "Sri Lanka"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h5-mcq-8",
+      question:
+        "According to Akbar Nama, how many villages did Garha Katanga have?",
+      options: ["50,000", "70,000", "10,000", "1,00,000"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h5-mcq-9",
+      question: "Who were the most important trader-nomads in medieval India?",
+      options: ["Gonds", "Banjaras", "Ahoms", "Bhils"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h5-mcq-10",
+      question: "Tribal societies generally had rich _____ traditions.",
+      options: ["Written", "Oral", "Architectural", "Scientific"],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h5-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

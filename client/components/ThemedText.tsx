@@ -53,7 +53,5 @@ export const ThemedText = memo(function ThemedText({
     }
   }, [type]);
 
-  return (
-    <Text style={[{ color }, typeStyle, style]} {...rest} />
-  );
+  return <Text style={[{ color }, typeStyle, style]} {...rest} />;
 });

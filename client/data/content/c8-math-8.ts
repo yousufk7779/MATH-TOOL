@@ -455,31 +455,82 @@ export const c8Math8: ChapterContent = {
   id: "c8-math-8",
   number: 8,
   title: "Algebraic Expressions and Identities",
-  introduction: "In this chapter, we explore algebraic expressions, their addition, subtraction, and multiplication. We also learn about standard identities and how to apply them.",
+  introduction:
+    "In this chapter, we explore algebraic expressions, their addition, subtraction, and multiplication. We also learn about standard identities and how to apply them.",
   mcqs: [
-    { id: "m1", question: "Which of the following is a binomial?", options: ["4x", "4x + 3", "4x² + 3x + 1", "7"], correctAnswer: "4x + 3" },
-    { id: "m2", question: "The coefficient of x in the term -5xy is:", options: ["-5", "-5y", "y", "5"], correctAnswer: "-5y" },
-    { id: "m3", question: "What is the product of 2x and 3y?", options: ["5xy", "6x", "6y", "6xy"], correctAnswer: "6xy" },
-    { id: "m4", question: "The value of a² - b² is equal to:", options: ["(a+b)(a-b)", "(a-b)²", "a² + b²", "None of these"], correctAnswer: "(a+b)(a-b)" },
-    { id: "m5", question: "Add 5x and 7x:", options: ["12x²", "12x", "35x", "35x²"], correctAnswer: "12x" },
-    { id: "m6", question: "Subtract 3a from 8a:", options: ["5", "5a", "11a", "24a"], correctAnswer: "5a" },
-    { id: "m7", question: "An algebraic expression containing three terms is called:", options: ["Monomial", "Binomial", "Trinomial", "Polynomial"], correctAnswer: "Trinomial" },
-    { id: "m8", question: "What is the square of (x + y)?", options: ["x² + y²", "x² + 2xy + y²", "x² - 2xy + y²", "x²y²"], correctAnswer: "x² + 2xy + y²" },
-    { id: "m9", question: "The product of a monomial and a binomial is a:", options: ["Monomial", "Binomial", "Trinomial", "None"], correctAnswer: "Binomial" },
-    { id: "m10", question: "What is the volume of a box with dimensions 2, 3x, and 4y?", options: ["24xy", "9xy", "24x²y", "14xy"], correctAnswer: "24xy" }
+    {
+      id: "m1",
+      question: "Which of the following is a binomial?",
+      options: ["4x", "4x + 3", "4x² + 3x + 1", "7"],
+      correctAnswer: "4x + 3",
+    },
+    {
+      id: "m2",
+      question: "The coefficient of x in the term -5xy is:",
+      options: ["-5", "-5y", "y", "5"],
+      correctAnswer: "-5y",
+    },
+    {
+      id: "m3",
+      question: "What is the product of 2x and 3y?",
+      options: ["5xy", "6x", "6y", "6xy"],
+      correctAnswer: "6xy",
+    },
+    {
+      id: "m4",
+      question: "The value of a² - b² is equal to:",
+      options: ["(a+b)(a-b)", "(a-b)²", "a² + b²", "None of these"],
+      correctAnswer: "(a+b)(a-b)",
+    },
+    {
+      id: "m5",
+      question: "Add 5x and 7x:",
+      options: ["12x²", "12x", "35x", "35x²"],
+      correctAnswer: "12x",
+    },
+    {
+      id: "m6",
+      question: "Subtract 3a from 8a:",
+      options: ["5", "5a", "11a", "24a"],
+      correctAnswer: "5a",
+    },
+    {
+      id: "m7",
+      question: "An algebraic expression containing three terms is called:",
+      options: ["Monomial", "Binomial", "Trinomial", "Polynomial"],
+      correctAnswer: "Trinomial",
+    },
+    {
+      id: "m8",
+      question: "What is the square of (x + y)?",
+      options: ["x² + y²", "x² + 2xy + y²", "x² - 2xy + y²", "x²y²"],
+      correctAnswer: "x² + 2xy + y²",
+    },
+    {
+      id: "m9",
+      question: "The product of a monomial and a binomial is a:",
+      options: ["Monomial", "Binomial", "Trinomial", "None"],
+      correctAnswer: "Binomial",
+    },
+    {
+      id: "m10",
+      question: "What is the volume of a box with dimensions 2, 3x, and 4y?",
+      options: ["24xy", "9xy", "24x²y", "14xy"],
+      correctAnswer: "24xy",
+    },
   ],
   summary: [
     "Expressions are formed from variables and constants.",
     "Terms are added to form expressions. Terms themselves are formed as product of factors.",
     "Expressions that contain exactly one, two and three terms are called monomials, binomials and trinomials respectively.",
     "While adding or subtracting polynomials, we add or subtract like terms.",
-    "An identity is an equality, which is true for all values of the variables in the equality."
+    "An identity is an equality, which is true for all values of the variables in the equality.",
   ],
   exercises: [
     { id: "ex8-1", name: "Exercise 8.1", questions: [] },
     { id: "ex8-2", name: "Exercise 8.2", questions: [] },
     { id: "ex8-3", name: "Exercise 8.3", questions: [] },
-    { id: "ex8-4", name: "Exercise 8.4", questions: [] }
+    { id: "ex8-4", name: "Exercise 8.4", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -609,6 +660,6 @@ export const c8Math8: ChapterContent = {
     "ex8-1": ex81Content,
     "ex8-2": ex82Content,
     "ex8-3": ex83Content,
-    "ex8-4": ex84Content
-  }
+    "ex8-4": ex84Content,
+  },
 };

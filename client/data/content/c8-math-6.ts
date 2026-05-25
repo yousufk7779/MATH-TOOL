@@ -224,28 +224,80 @@ export const c8Math6: ChapterContent = {
   id: "c8-math-6",
   number: 6,
   title: "Cubes and Cube Roots",
-  introduction: "In this chapter, we will learn about perfect cubes and the concept of cube roots. We will explore methods to find them, including prime factorisation and estimation.",
+  introduction:
+    "In this chapter, we will learn about perfect cubes and the concept of cube roots. We will explore methods to find them, including prime factorisation and estimation.",
   mcqs: [
-    { id: "m1", question: "Which of the following is a perfect cube?", options: ["100", "125", "150", "200"], correctAnswer: "125" },
-    { id: "m2", question: "The cube of an odd number is always:", options: ["Even", "Odd", "Prime", "Zero"], correctAnswer: "Odd" },
-    { id: "m3", question: "The cube root of 64 is:", options: ["2", "4", "6", "8"], correctAnswer: "4" },
-    { id: "m4", question: "If a number ends with 2, its cube will end with:", options: ["2", "4", "6", "8"], correctAnswer: "8" },
-    { id: "m5", question: "Which of the following numbers is not a perfect cube?", options: ["216", "343", "512", "600"], correctAnswer: "600" },
-    { id: "m6", question: "The cube of 10 is:", options: ["100", "1000", "10000", "10"], correctAnswer: "1000" },
-    { id: "m7", question: "Find the cube root of 27:", options: ["3", "9", "2", "6"], correctAnswer: "3" },
-    { id: "m8", question: "If a perfect cube ends in 0, how many zeroes must it end with at minimum?", options: ["1", "2", "3", "4"], correctAnswer: "3" },
-    { id: "m9", question: "What is the cube of 5?", options: ["25", "75", "100", "125"], correctAnswer: "125" },
-    { id: "m10", question: "The unit digit of the cube of 7 is:", options: ["1", "3", "7", "9"], correctAnswer: "3" }
+    {
+      id: "m1",
+      question: "Which of the following is a perfect cube?",
+      options: ["100", "125", "150", "200"],
+      correctAnswer: "125",
+    },
+    {
+      id: "m2",
+      question: "The cube of an odd number is always:",
+      options: ["Even", "Odd", "Prime", "Zero"],
+      correctAnswer: "Odd",
+    },
+    {
+      id: "m3",
+      question: "The cube root of 64 is:",
+      options: ["2", "4", "6", "8"],
+      correctAnswer: "4",
+    },
+    {
+      id: "m4",
+      question: "If a number ends with 2, its cube will end with:",
+      options: ["2", "4", "6", "8"],
+      correctAnswer: "8",
+    },
+    {
+      id: "m5",
+      question: "Which of the following numbers is not a perfect cube?",
+      options: ["216", "343", "512", "600"],
+      correctAnswer: "600",
+    },
+    {
+      id: "m6",
+      question: "The cube of 10 is:",
+      options: ["100", "1000", "10000", "10"],
+      correctAnswer: "1000",
+    },
+    {
+      id: "m7",
+      question: "Find the cube root of 27:",
+      options: ["3", "9", "2", "6"],
+      correctAnswer: "3",
+    },
+    {
+      id: "m8",
+      question:
+        "If a perfect cube ends in 0, how many zeroes must it end with at minimum?",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "3",
+    },
+    {
+      id: "m9",
+      question: "What is the cube of 5?",
+      options: ["25", "75", "100", "125"],
+      correctAnswer: "125",
+    },
+    {
+      id: "m10",
+      question: "The unit digit of the cube of 7 is:",
+      options: ["1", "3", "7", "9"],
+      correctAnswer: "3",
+    },
   ],
   summary: [
     "Numbers obtained when a number is multiplied by itself three times are called cube numbers.",
     "The cube of an even number is always even, and the cube of an odd number is always odd.",
     "If a number ends in digits 1, 4, 5, 6 or 9, its cube also ends in the same digit.",
-    "A perfect cube ending in 0 must have zeroes in multiples of 3."
+    "A perfect cube ending in 0 must have zeroes in multiples of 3.",
   ],
   exercises: [
     { id: "ex6-1", name: "Exercise 6.1", questions: [] },
-    { id: "ex6-2", name: "Exercise 6.2", questions: [] }
+    { id: "ex6-2", name: "Exercise 6.2", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -370,6 +422,6 @@ export const c8Math6: ChapterContent = {
   `,
   htmlExercises: {
     "ex6-1": ex61Content,
-    "ex6-2": ex62Content
-  }
+    "ex6-2": ex62Content,
+  },
 };

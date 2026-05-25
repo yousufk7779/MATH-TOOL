@@ -4,28 +4,35 @@ export const c8Math3: ChapterContent = {
   id: "c8-math-3",
   number: 3,
   title: "Understanding Quadrilaterals",
-  introduction: "In this chapter, we explore the properties of polygons, especially quadrilaterals like parallelograms, rhombuses, rectangles, and squares.",
+  introduction:
+    "In this chapter, we explore the properties of polygons, especially quadrilaterals like parallelograms, rhombuses, rectangles, and squares.",
   definitions: [
-    { term: "Polygon", description: "A simple closed curve made up of only line segments." },
-    { term: "Regular Polygon", description: "A polygon which is both equiangular and equilateral." },
-    { term: "Quadrilateral", description: "A polygon with four sides." }
+    {
+      term: "Polygon",
+      description: "A simple closed curve made up of only line segments.",
+    },
+    {
+      term: "Regular Polygon",
+      description: "A polygon which is both equiangular and equilateral.",
+    },
+    { term: "Quadrilateral", description: "A polygon with four sides." },
   ],
   keyPoints: [
     "Sum of interior angles of a quadrilateral is 360°.",
     "Sum of exterior angles of any polygon is 360°.",
     "A parallelogram is a quadrilateral with opposite sides parallel.",
-    "Diagonals of a rhombus are perpendicular bisectors of each other."
+    "Diagonals of a rhombus are perpendicular bisectors of each other.",
   ],
   formulas: [
     { name: "Angle Sum Property", formula: "(n - 2) × 180°" },
-    { name: "Sum of Exterior Angles", formula: "360°" }
+    { name: "Sum of Exterior Angles", formula: "360°" },
   ],
   crux: [],
   exercises: [
     { id: "ex3-1", name: "Exercise 3.1", questions: [] },
     { id: "ex3-2", name: "Exercise 3.2", questions: [] },
     { id: "ex3-3", name: "Exercise 3.3", questions: [] },
-    { id: "ex3-4", name: "Exercise 3.4", questions: [] }
+    { id: "ex3-4", name: "Exercise 3.4", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -33,67 +40,67 @@ export const c8Math3: ChapterContent = {
       id: "c8-m3-q1",
       question: "The sum of all interior angles of a quadrilateral is:",
       options: ["180°", "360°", "540°", "90°"],
-      correctAnswer: "360°"
+      correctAnswer: "360°",
     },
     {
       id: "c8-m3-q2",
       question: "Which of these is a regular quadrilateral?",
       options: ["Rectangle", "Rhombus", "Square", "Parallelogram"],
-      correctAnswer: "Square"
+      correctAnswer: "Square",
     },
     {
       id: "c8-m3-q3",
       question: "The sum of exterior angles of any polygon is:",
       options: ["180°", "270°", "360°", "Depends on sides"],
-      correctAnswer: "360°"
+      correctAnswer: "360°",
     },
     {
       id: "c8-m3-q4",
       question: "A quadrilateral with all sides equal and all angles 90° is a:",
       options: ["Rectangle", "Rhombus", "Square", "Trapezium"],
-      correctAnswer: "Square"
+      correctAnswer: "Square",
     },
     {
       id: "c8-m3-q5",
       question: "In a parallelogram, opposite angles are:",
       options: ["Equal", "Supplementary", "90°", "Unequal"],
-      correctAnswer: "Equal"
+      correctAnswer: "Equal",
     },
     {
       id: "c8-m3-q6",
       question: "Diagonals of which quadrilateral bisect each other at 90°?",
       options: ["Rectangle", "Rhombus", "Parallelogram", "Trapezium"],
-      correctAnswer: "Rhombus"
+      correctAnswer: "Rhombus",
     },
     {
       id: "c8-m3-q7",
       question: "How many sides does a pentagon have?",
       options: ["4", "5", "6", "3"],
-      correctAnswer: "5"
+      correctAnswer: "5",
     },
     {
       id: "c8-m3-q8",
       question: "A quadrilateral with exactly one pair of parallel sides is a:",
       options: ["Parallelogram", "Kite", "Trapezium", "Rhombus"],
-      correctAnswer: "Trapezium"
+      correctAnswer: "Trapezium",
     },
     {
       id: "c8-m3-q9",
       question: "Minimum interior angle of a regular polygon is:",
       options: ["45°", "60°", "90°", "120°"],
-      correctAnswer: "60°"
+      correctAnswer: "60°",
     },
     {
       id: "c8-m3-q10",
       question: "Maximum exterior angle of a regular polygon is:",
       options: ["90°", "120°", "180°", "360°"],
-      correctAnswer: "120°"
-    }
+      correctAnswer: "120°",
+    },
   ],
   summary: [
     "Quadrilaterals are 4-sided polygons.",
     "Properties of diagonals are key to identifying special quadrilaterals.",
-    "Angle sum properties help in finding unknown angles."
+    "Angle sum properties help in finding unknown angles.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -809,6 +816,6 @@ export const c8Math3: ChapterContent = {
           </div>
         </div>
       </div>
-    `
-  }
+    `,
+  },
 };

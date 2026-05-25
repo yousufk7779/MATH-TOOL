@@ -19,7 +19,12 @@ interface NavigationButtonsProps {
   homeRoute?: keyof RootStackParamList;
 }
 
-export const NavigationButtons = memo(function NavigationButtons({ title, titleColor, hideHomeButton, homeRoute = "Home" }: NavigationButtonsProps) {
+export const NavigationButtons = memo(function NavigationButtons({
+  title,
+  titleColor,
+  hideHomeButton,
+  homeRoute = "Home",
+}: NavigationButtonsProps) {
   const navigation = useNavigation<NavigationProp>();
 
   const handleBack = useCallback(() => {
@@ -44,7 +49,10 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
       <Pressable
         testID="button-back"
         delayPressIn={0}
-        style={({ pressed }) => [styles.buttonContainer, pressed && styles.cardPressed]}
+        style={({ pressed }) => [
+          styles.buttonContainer,
+          pressed && styles.cardPressed,
+        ]}
         onPress={handleBack}
       >
         <LinearGradient
@@ -65,9 +73,12 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
 
       {title && (
         <View style={styles.headerTitleContainer} pointerEvents="none">
-          <ThemedText 
-            style={[styles.headerTitle, titleColor ? { color: titleColor } : null]} 
-            numberOfLines={1} 
+          <ThemedText
+            style={[
+              styles.headerTitle,
+              titleColor ? { color: titleColor } : null,
+            ]}
+            numberOfLines={1}
             ellipsizeMode="tail"
           >
             {title}
@@ -79,7 +90,10 @@ export const NavigationButtons = memo(function NavigationButtons({ title, titleC
         <Pressable
           testID="button-home"
           delayPressIn={0}
-          style={({ pressed }) => [styles.buttonContainer, pressed && styles.cardPressed]}
+          style={({ pressed }) => [
+            styles.buttonContainer,
+            pressed && styles.cardPressed,
+          ]}
           onPress={handleHome}
         >
           <LinearGradient
@@ -108,7 +122,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.sm,
   },
   buttonContainer: {
-    borderRadius: BorderRadius.xl, 
+    borderRadius: BorderRadius.xl,
     overflow: "hidden",
     elevation: 3,
     shadowColor: "#000",
@@ -126,8 +140,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     borderRadius: BorderRadius.xl - 1.5,
     borderWidth: 1.2,
-    borderColor: 'rgba(255,255,255,0.2)', 
-    backgroundColor: 'transparent',
+    borderColor: "rgba(255,255,255,0.2)",
+    backgroundColor: "transparent",
   },
   cardPressed: {
     opacity: 0.9,

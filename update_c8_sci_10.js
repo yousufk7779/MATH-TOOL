@@ -1,10 +1,12 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const pathTable = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\endocrine_glands_hormones_table_1777803695474.png';
-const b64Table = fs.readFileSync(pathTable).toString('base64');
+const pathTable =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\endocrine_glands_hormones_table_1777803695474.png";
+const b64Table = fs.readFileSync(pathTable).toString("base64");
 
-const pathSex = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\sex_determination_chromosomes_diagram_1777803722696.png';
-const b64Sex = fs.readFileSync(pathSex).toString('base64');
+const pathSex =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\sex_determination_chromosomes_diagram_1777803722696.png";
+const b64Sex = fs.readFileSync(pathSex).toString("base64");
 
 const content = `import { ChapterContent } from "../chapterContent";
 
@@ -155,5 +157,5 @@ export const c8Sci10: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-10.ts', content, 'utf8');
-console.log('Successfully updated Chapter 10 content with diagrams.');
+fs.writeFileSync("client/data/content/c8-sci-10.ts", content, "utf8");
+console.log("Successfully updated Chapter 10 content with diagrams.");

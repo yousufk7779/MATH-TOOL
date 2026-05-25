@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist7: ChapterContent = {
-    id: "c7-hist-7",
-    number: 7,
-    title: "The Making of Regional Cultures",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-7",
+  number: 7,
+  title: "The Making of Regional Cultures",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>One of the most common ways we describe people is in terms of the language they speak or the food they eat. Over time, different regions in India developed their own unique languages, dance forms, music, and painting styles. This chapter explores how regional cultures were formed through the blending of local traditions with ideas from other parts of the subcontinent.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist7: ChapterContent = {
             <p>Regional cultures in India are not static; they have evolved over centuries. By combining local folk traditions with classical influences from Sanskrit and the Mughal courts, regions like Kerala, Bengal, and the Hill states created distinct identities. These cultures are a testament to the diverse and vibrant heritage of the Indian subcontinent.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h7-ex-all": `
+  htmlExercises: {
+    "c7h7-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -97,82 +97,100 @@ export const c7Hist7: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Temples were built by wealthy individuals and groups to show their power and devotion, and to gain social status as the region's economy grew.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "One of the most common ways we describe people is in terms of the language they speak or the food they eat.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h7-mcq-1",
+      question: "Where is the temple of Jagannatha located?",
+      options: ["Puri", "Kargil", "Lucknow", "Bengal"],
+      correctAnswer: "a",
     },
-    introduction: "One of the most common ways we describe people is in terms of the language they speak or the food they eat.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h7-mcq-1",
-            question: "Where is the temple of Jagannatha located?",
-            options: ["Puri", "Kargil", "Lucknow", "Bengal"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-2",
-            question: "What does 'Miniature' refer to in art?",
-            options: ["Large sculptures", "Small-sized paintings", "Huge temples", "Wall murals"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h7-mcq-3",
-            question: "Which dance form originated as storytelling in temples?",
-            options: ["Kathak", "Kathakali", "Odissi", "Bharatnatyam"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-4",
-            question: "Lilatilakam was written in which language style?",
-            options: ["Bengali", "Manipravalam", "Dogri", "Urdu"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h7-mcq-5",
-            question: "Basohli style of painting developed in which region?",
-            options: ["Jammu", "Kerala", "Bengal", "Orissa"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-6",
-            question: "Which regional language grew under the patronage of the Cheras?",
-            options: ["Malayalam", "Tamil", "Bengali", "Dogri"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-7",
-            question: "Who were the 'Pirs' in medieval Bengal?",
-            options: ["Spiritual guides", "Tax collectors", "Warrior chiefs", "Temple builders"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-8",
-            question: "Manipravalam literally means:",
-            options: ["Gold and Silver", "Diamonds and Corals", "Flowers and Leaves", "Sun and Moon"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h7-mcq-9",
-            question: "Giant rock-cut Maitreya Buddha reliefs are found in:",
-            options: ["Mulbekh, Ladakh", "Puri, Orissa", "Tanjavur", "Ajmer"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h7-mcq-10",
-            question: "The Kangra school of painting was inspired by which tradition?",
-            options: ["Bhakti", "Sufi", "Buddhist", "Islamic"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h7-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h7-mcq-2",
+      question: "What does 'Miniature' refer to in art?",
+      options: [
+        "Large sculptures",
+        "Small-sized paintings",
+        "Huge temples",
+        "Wall murals",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h7-mcq-3",
+      question: "Which dance form originated as storytelling in temples?",
+      options: ["Kathak", "Kathakali", "Odissi", "Bharatnatyam"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h7-mcq-4",
+      question: "Lilatilakam was written in which language style?",
+      options: ["Bengali", "Manipravalam", "Dogri", "Urdu"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h7-mcq-5",
+      question: "Basohli style of painting developed in which region?",
+      options: ["Jammu", "Kerala", "Bengal", "Orissa"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h7-mcq-6",
+      question:
+        "Which regional language grew under the patronage of the Cheras?",
+      options: ["Malayalam", "Tamil", "Bengali", "Dogri"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h7-mcq-7",
+      question: "Who were the 'Pirs' in medieval Bengal?",
+      options: [
+        "Spiritual guides",
+        "Tax collectors",
+        "Warrior chiefs",
+        "Temple builders",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h7-mcq-8",
+      question: "Manipravalam literally means:",
+      options: [
+        "Gold and Silver",
+        "Diamonds and Corals",
+        "Flowers and Leaves",
+        "Sun and Moon",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h7-mcq-9",
+      question: "Giant rock-cut Maitreya Buddha reliefs are found in:",
+      options: ["Mulbekh, Ladakh", "Puri, Orissa", "Tanjavur", "Ajmer"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h7-mcq-10",
+      question:
+        "The Kangra school of painting was inspired by which tradition?",
+      options: ["Bhakti", "Sufi", "Buddhist", "Islamic"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h7-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

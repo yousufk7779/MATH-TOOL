@@ -1,30 +1,43 @@
 import { ChapterContent } from "../types";
 
 export const c7Math13: ChapterContent = {
-    id: "c7-math-13",
-    number: 13,
-    title: "Visualising Solid Shapes",
-    isHtmlView: true,
-    introduction: "In this chapter, we explore how to represent three-dimensional (3D) objects on a two-dimensional (2D) surface using nets, cross-sections, and shadows.",
-    definitions: [
-        { term: "Solid Shape", definition: "A 3D object that occupies space and has length, breadth, and height." },
-        { term: "Net", definition: "A 2D skeleton outline that can be folded to form a 3D solid." },
-        { term: "Cross-section", definition: "The shape obtained when a solid is cut vertically or horizontally." }
-    ],
-    keyPoints: [
-        "A cube has 6 faces, 12 edges, and 8 vertices.",
-        "A net for a cube consists of 6 squares.",
-        "Shadows of 3D objects change shape depending on the light source position."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex13-1", name: "Exercise 13.1", questions: [] },
-        { id: "ex13-2", name: "Exercise 13.2", questions: [] },
-        { id: "ex13-3", name: "Exercise 13.3", questions: [] },
-        { id: "ex13-4", name: "Exercise 13.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-13",
+  number: 13,
+  title: "Visualising Solid Shapes",
+  isHtmlView: true,
+  introduction:
+    "In this chapter, we explore how to represent three-dimensional (3D) objects on a two-dimensional (2D) surface using nets, cross-sections, and shadows.",
+  definitions: [
+    {
+      term: "Solid Shape",
+      definition:
+        "A 3D object that occupies space and has length, breadth, and height.",
+    },
+    {
+      term: "Net",
+      definition:
+        "A 2D skeleton outline that can be folded to form a 3D solid.",
+    },
+    {
+      term: "Cross-section",
+      definition:
+        "The shape obtained when a solid is cut vertically or horizontally.",
+    },
+  ],
+  keyPoints: [
+    "A cube has 6 faces, 12 edges, and 8 vertices.",
+    "A net for a cube consists of 6 squares.",
+    "Shadows of 3D objects change shape depending on the light source position.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex13-1", name: "Exercise 13.1", questions: [] },
+    { id: "ex13-2", name: "Exercise 13.2", questions: [] },
+    { id: "ex13-3", name: "Exercise 13.3", questions: [] },
+    { id: "ex13-4", name: "Exercise 13.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #E040FB; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -42,8 +55,8 @@ export const c7Math13: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex13-1": `
+  htmlExercises: {
+    "ex13-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -107,7 +120,7 @@ export const c7Math13: ChapterContent = {
             </div>
         </div>
         `,
-        "ex13-2": `
+    "ex13-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -149,7 +162,7 @@ export const c7Math13: ChapterContent = {
             </div>
         </div>
         `,
-        "ex13-3": `
+    "ex13-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -172,7 +185,7 @@ export const c7Math13: ChapterContent = {
             </div>
         </div>
         `,
-        "ex13-4": `
+    "ex13-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(224, 64, 251, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -214,20 +227,70 @@ export const c7Math13: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Number of faces in a cube is:",
+      options: ["4", "6", "8", "12"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Number of faces in a cube is:", options: ["4", "6", "8", "12"], correctAnswer: "B" },
-        { id: "m2", question: "Number of vertices in a cube is:", options: ["4", "6", "8", "12"], correctAnswer: "C" },
-        { id: "m3", question: "Number of edges in a cube is:", options: ["6", "8", "12", "16"], correctAnswer: "C" },
-        { id: "m4", question: "A sphere has ______ vertex.", options: ["0", "1", "2", "Infinite"], correctAnswer: "A" },
-        { id: "m5", question: "A cylinder has ______ flat faces.", options: ["0", "1", "2", "3"], correctAnswer: "C" },
-        { id: "m6", question: "Which shape has no vertex?", options: ["Cube", "Cone", "Sphere", "Cylinder"], correctAnswer: "C" },
-        { id: "m7", question: "Cross section of a cone cut parallel to base is:", options: ["Triangle", "Square", "Circle", "Rectangle"], correctAnswer: "C" },
-        { id: "m8", question: "Opposite faces of a die total to:", options: ["5", "6", "7", "8"], correctAnswer: "C" },
-        { id: "m9", question: "Number of faces in a triangular pyramid is:", options: ["3", "4", "5", "6"], correctAnswer: "B" },
-        { id: "m10", question: "A net of a cylinder has two circles and one ______.", options: ["Square", "Triangle", "Rectangle", "Oval"], correctAnswer: "C" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Number of vertices in a cube is:",
+      options: ["4", "6", "8", "12"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question: "Number of edges in a cube is:",
+      options: ["6", "8", "12", "16"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m4",
+      question: "A sphere has ______ vertex.",
+      options: ["0", "1", "2", "Infinite"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "A cylinder has ______ flat faces.",
+      options: ["0", "1", "2", "3"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m6",
+      question: "Which shape has no vertex?",
+      options: ["Cube", "Cone", "Sphere", "Cylinder"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m7",
+      question: "Cross section of a cone cut parallel to base is:",
+      options: ["Triangle", "Square", "Circle", "Rectangle"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "Opposite faces of a die total to:",
+      options: ["5", "6", "7", "8"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m9",
+      question: "Number of faces in a triangular pyramid is:",
+      options: ["3", "4", "5", "6"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "A net of a cylinder has two circles and one ______.",
+      options: ["Square", "Triangle", "Rectangle", "Oval"],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [],
 };

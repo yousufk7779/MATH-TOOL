@@ -4,36 +4,48 @@ export const c9Math2: ChapterContent = {
   id: "c9-math-2",
   number: 2,
   title: "Polynomials",
-  introduction: "In this chapter, we study a particular type of algebraic expression called a polynomial and the terminology related to it. We also explore the Remainder Theorem, Factor Theorem, and their use in the factorisation of polynomials.",
+  introduction:
+    "In this chapter, we study a particular type of algebraic expression called a polynomial and the terminology related to it. We also explore the Remainder Theorem, Factor Theorem, and their use in the factorisation of polynomials.",
   definitions: [
-    { term: "Polynomial", description: "An expression where the powers of variables are only whole numbers (0, 1, 2...)." },
-    { term: "Degree", description: "The highest power of the variable in a polynomial." },
-    { term: "Zero of a Polynomial", description: "A value that makes the polynomial equal to zero when substituted." }
+    {
+      term: "Polynomial",
+      description:
+        "An expression where the powers of variables are only whole numbers (0, 1, 2...).",
+    },
+    {
+      term: "Degree",
+      description: "The highest power of the variable in a polynomial.",
+    },
+    {
+      term: "Zero of a Polynomial",
+      description:
+        "A value that makes the polynomial equal to zero when substituted.",
+    },
   ],
   keyPoints: [
     "A polynomial of degree one is called a linear polynomial.",
     "A polynomial of degree two is called a quadratic polynomial.",
     "A polynomial of degree three is called a cubic polynomial.",
     "A non-zero constant polynomial has no zero.",
-    "Every real number is a zero of the zero polynomial."
+    "Every real number is a zero of the zero polynomial.",
   ],
   formulas: [
     { name: "Identity I", formula: "(x + y)² = x² + 2xy + y²" },
     { name: "Identity II", formula: "(x - y)² = x² - 2xy + y²" },
     { name: "Identity III", formula: "x² - y² = (x + y)(x - y)" },
-    { name: "Identity IV", formula: "(x + a)(x + b) = x² + (a + b)x + ab" }
+    { name: "Identity IV", formula: "(x + a)(x + b) = x² + (a + b)x + ab" },
   ],
   crux: [
     "Remainder Theorem: If p(x) is divided by (x - a), the remainder is p(a).",
     "Factor Theorem: (x - a) is a factor of p(x) if p(a) = 0.",
-    "Splitting the middle term is a key method for factorising quadratic polynomials."
+    "Splitting the middle term is a key method for factorising quadratic polynomials.",
   ],
   exercises: [
     { id: "ex2-1", name: "Exercise 2.1", questions: [] },
     { id: "ex2-2", name: "Exercise 2.2", questions: [] },
     { id: "ex2-3", name: "Exercise 2.3", questions: [] },
     { id: "ex2-4", name: "Exercise 2.4", questions: [] },
-    { id: "ex2-5", name: "Exercise 2.5", questions: [] }
+    { id: "ex2-5", name: "Exercise 2.5", questions: [] },
   ],
   examples: [],
   theorems: [],
@@ -42,67 +54,67 @@ export const c9Math2: ChapterContent = {
       id: "m1",
       question: "Which of the following is a polynomial?",
       options: ["x² + 2x + 1", "√x + 3", "x + 1/x", "x^(3/2) + 1"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m2",
       question: "The degree of the polynomial 4x⁴ + 0x³ + 0x⁵ + 5x + 7 is:",
       options: ["4", "5", "3", "7"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m3",
       question: "The zero of the polynomial p(x) = 2x + 5 is:",
       options: ["2/5", "5/2", "-5/2", "-2/5"],
-      correctAnswer: "C"
+      correctAnswer: "C",
     },
     {
       id: "m4",
       question: "The value of the polynomial 5x - 4x² + 3 at x = -1 is:",
       options: ["-6", "-3", "2", "-1"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m5",
       question: "If x + 1 is a factor of x² - k, then the value of k is:",
       options: ["1", "-1", "2", "0"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m6",
       question: "The factorisation of x² - 9 is:",
       options: ["(x-3)²", "(x+3)(x-3)", "(x+9)(x-9)", "(x+3)²"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m7",
       question: "The degree of a non-zero constant polynomial is:",
       options: ["0", "1", "Not defined", "Any natural number"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m8",
       question: "The coefficient of x² in 2 + x² + x is:",
       options: ["0", "1", "2", "-1"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m9",
       question: "A polynomial with one term is called a:",
       options: ["Binomial", "Trinomial", "Monomial", "None of these"],
-      correctAnswer: "C"
+      correctAnswer: "C",
     },
     {
       id: "m10",
       question: "The value of 102² using identity is:",
       options: ["10404", "10204", "10402", "10004"],
-      correctAnswer: "A"
-    }
+      correctAnswer: "A",
+    },
   ],
   summary: [
     "A polynomial is an algebraic expression where the powers of variables are whole numbers.",
     "Polynomials are classified as Monomials, Binomials, or Trinomials based on the number of terms.",
-    "The Remainder Theorem and Factor Theorem are used to find remainders and check for factors easily."
+    "The Remainder Theorem and Factor Theorem are used to find remainders and check for factors easily.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -854,5 +866,5 @@ export const c9Math2: ChapterContent = {
         </div>
       </div>
 `,
-  }
+  },
 };

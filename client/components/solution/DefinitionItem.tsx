@@ -10,7 +10,12 @@ interface DefinitionItemProps {
   descriptionStyle?: any;
 }
 
-function DefinitionItem({ term, description, termStyle, descriptionStyle }: DefinitionItemProps) {
+function DefinitionItem({
+  term,
+  description,
+  termStyle,
+  descriptionStyle,
+}: DefinitionItemProps) {
   return (
     <View style={styles.container}>
       <ThemedText
@@ -19,7 +24,7 @@ function DefinitionItem({ term, description, termStyle, descriptionStyle }: Defi
           fontFamily: "NotoSans_400Regular",
           color: "#4CAF50",
           marginBottom: 2,
-          ...termStyle
+          ...termStyle,
         }}
       >
         {`${term}:`}
@@ -29,7 +34,7 @@ function DefinitionItem({ term, description, termStyle, descriptionStyle }: Defi
           ...Typography.small,
           color: JiguuColors.textSecondary,
           lineHeight: 22,
-          ...descriptionStyle
+          ...descriptionStyle,
         }}
       >
         {description}

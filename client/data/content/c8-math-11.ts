@@ -369,28 +369,100 @@ export const c8Math11: ChapterContent = {
   id: "c8-math-11",
   number: 11,
   title: "Direct and Inverse Proportion",
-  introduction: "In our daily lives, we often encounter situations where a change in one quantity causes a corresponding change in another. This chapter explores how variables relate to each other through direct and inverse proportions, helping us solve real-world problems efficiently.",
+  introduction:
+    "In our daily lives, we often encounter situations where a change in one quantity causes a corresponding change in another. This chapter explores how variables relate to each other through direct and inverse proportions, helping us solve real-world problems efficiently.",
   mcqs: [
-    { id: "m1", question: "If x and y are in direct proportion, then which of the following is constant?", options: ["x + y", "x - y", "x / y", "x × y"], correctAnswer: "C" },
-    { id: "m2", question: "If x and y are in inverse proportion, then which of the following is constant?", options: ["x + y", "x / y", "x × y", "x - y"], correctAnswer: "C" },
-    { id: "m3", question: "If 10 m of cloth costs Rs 200, then the cost of 4 m of cloth is:", options: ["Rs 80", "Rs 100", "Rs 40", "Rs 50"], correctAnswer: "A" },
-    { id: "m4", question: "Which of the following is an example of inverse proportion?", options: ["Distance and time at uniform speed", "Speed and time taken for a fixed distance", "Quantity of goods and total cost", "Side of square and its area"], correctAnswer: "B" },
-    { id: "m5", question: "If 12 men can do a work in 8 days, then 16 men can do the same work in:", options: ["10 days", "6 days", "5 days", "12 days"], correctAnswer: "B" },
-    { id: "m6", question: "x and y are in direct proportion. If x = 2 and y = 10, then for x = 5, y will be:", options: ["20", "25", "15", "50"], correctAnswer: "B" },
-    { id: "m7", question: "x and y are in inverse proportion. If x = 4 and y = 6, then for x = 8, y will be:", options: ["12", "3", "4", "2"], correctAnswer: "B" },
-    { id: "m8", question: "The distance covered by a car and the petrol consumed are in:", options: ["Direct proportion", "Inverse proportion", "No proportion", "None of these"], correctAnswer: "A" },
-    { id: "m9", question: "If a map scale is 1:1000, then 5 cm on map represents:", options: ["5 m", "50 m", "500 m", "5 km"], correctAnswer: "B" },
-    { id: "m10", question: "Number of pipes and time taken to fill a tank are in:", options: ["Direct proportion", "Inverse proportion", "Linear proportion", "None"], correctAnswer: "B" }
+    {
+      id: "m1",
+      question:
+        "If x and y are in direct proportion, then which of the following is constant?",
+      options: ["x + y", "x - y", "x / y", "x × y"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m2",
+      question:
+        "If x and y are in inverse proportion, then which of the following is constant?",
+      options: ["x + y", "x / y", "x × y", "x - y"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question:
+        "If 10 m of cloth costs Rs 200, then the cost of 4 m of cloth is:",
+      options: ["Rs 80", "Rs 100", "Rs 40", "Rs 50"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m4",
+      question: "Which of the following is an example of inverse proportion?",
+      options: [
+        "Distance and time at uniform speed",
+        "Speed and time taken for a fixed distance",
+        "Quantity of goods and total cost",
+        "Side of square and its area",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m5",
+      question:
+        "If 12 men can do a work in 8 days, then 16 men can do the same work in:",
+      options: ["10 days", "6 days", "5 days", "12 days"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question:
+        "x and y are in direct proportion. If x = 2 and y = 10, then for x = 5, y will be:",
+      options: ["20", "25", "15", "50"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question:
+        "x and y are in inverse proportion. If x = 4 and y = 6, then for x = 8, y will be:",
+      options: ["12", "3", "4", "2"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "The distance covered by a car and the petrol consumed are in:",
+      options: [
+        "Direct proportion",
+        "Inverse proportion",
+        "No proportion",
+        "None of these",
+      ],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "If a map scale is 1:1000, then 5 cm on map represents:",
+      options: ["5 m", "50 m", "500 m", "5 km"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "Number of pipes and time taken to fill a tank are in:",
+      options: [
+        "Direct proportion",
+        "Inverse proportion",
+        "Linear proportion",
+        "None",
+      ],
+      correctAnswer: "B",
+    },
   ],
   summary: [
     "Two quantities x and y are said to be in direct proportion if they increase or decrease together such that x/y = k (constant).",
     "Two quantities x and y are said to be in inverse proportion if an increase in x causes a proportional decrease in y (and vice-versa) such that xy = k (constant).",
     "Direct proportion: x₁/y₁ = x₂/y₂.",
-    "Inverse proportion: x₁y₁ = x₂y₂."
+    "Inverse proportion: x₁y₁ = x₂y₂.",
   ],
   exercises: [
     { id: "ex11-1", name: "Exercise 11.1", questions: [] },
-    { id: "ex11-2", name: "Exercise 11.2", questions: [] }
+    { id: "ex11-2", name: "Exercise 11.2", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -495,6 +567,6 @@ export const c8Math11: ChapterContent = {
   `,
   htmlExercises: {
     "ex11-1": ex111Content,
-    "ex11-2": ex112Content
-  }
+    "ex11-2": ex112Content,
+  },
 };

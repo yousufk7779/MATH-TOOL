@@ -4,27 +4,40 @@ export const c9Math4: ChapterContent = {
   id: "c9-math-4",
   number: 4,
   title: "Coordinate Geometry",
-  introduction: "Coordinate Geometry is a branch of mathematics that uses a coordinate system to represent points, lines, and shapes in a plane. It was developed by Rene Descartes.",
+  introduction:
+    "Coordinate Geometry is a branch of mathematics that uses a coordinate system to represent points, lines, and shapes in a plane. It was developed by Rene Descartes.",
   definitions: [
-    { term: "Cartesian Plane", description: "A two-dimensional plane formed by the intersection of two perpendicular number lines (X-axis and Y-axis)." },
-    { term: "Origin", description: "The point where the X-axis and Y-axis intersect, represented as (0, 0)." },
-    { term: "Quadrants", description: "The four regions into which the Cartesian plane is divided by the axes." }
+    {
+      term: "Cartesian Plane",
+      description:
+        "A two-dimensional plane formed by the intersection of two perpendicular number lines (X-axis and Y-axis).",
+    },
+    {
+      term: "Origin",
+      description:
+        "The point where the X-axis and Y-axis intersect, represented as (0, 0).",
+    },
+    {
+      term: "Quadrants",
+      description:
+        "The four regions into which the Cartesian plane is divided by the axes.",
+    },
   ],
   keyPoints: [
     "The horizontal line is the X-axis and the vertical line is the Y-axis.",
     "The coordinates of a point are written as (x, y), where x is the abscissa and y is the ordinate.",
-    "The plane is divided into four quadrants: I (+, +), II (-, +), III (-, -), and IV (+, -)."
+    "The plane is divided into four quadrants: I (+, +), II (-, +), III (-, -), and IV (+, -).",
   ],
   formulas: [],
   crux: [
     "Location of a point in the plane is unique.",
     "Points on the X-axis have y-coordinate zero: (x, 0).",
-    "Points on the Y-axis have x-coordinate zero: (0, y)."
+    "Points on the Y-axis have x-coordinate zero: (0, y).",
   ],
   exercises: [
     { id: "ex4-1", name: "Exercise 4.1", questions: [] },
     { id: "ex4-2", name: "Exercise 4.2", questions: [] },
-    { id: "ex4-3", name: "Exercise 4.3", questions: [] }
+    { id: "ex4-3", name: "Exercise 4.3", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -32,67 +45,86 @@ export const c9Math4: ChapterContent = {
       question: "The point (-3, 5) lies in which quadrant?",
       options: ["Quadrant I", "Quadrant II", "Quadrant III", "Quadrant IV"],
       answer: "Quadrant II",
-      explanation: "In Quadrant II, x is negative and y is positive. Since -3 is negative and 5 is positive, the point is in Quadrant II."
+      explanation:
+        "In Quadrant II, x is negative and y is positive. Since -3 is negative and 5 is positive, the point is in Quadrant II.",
     },
     {
       question: "The distance of the point (4, 3) from the x-axis is:",
       options: ["4 units", "3 units", "7 units", "5 units"],
       answer: "3 units",
-      explanation: "The distance from the x-axis is given by the absolute value of the y-coordinate (ordinate). Here y = 3."
+      explanation:
+        "The distance from the x-axis is given by the absolute value of the y-coordinate (ordinate). Here y = 3.",
     },
     {
       question: "The coordinates of the origin are:",
       options: ["(1, 1)", "(1, 0)", "(0, 1)", "(0, 0)"],
       answer: "(0, 0)",
-      explanation: "The origin is the point of intersection of the x and y axes, where both coordinates are zero."
+      explanation:
+        "The origin is the point of intersection of the x and y axes, where both coordinates are zero.",
     },
     {
       question: "Abscissa of a point is positive in:",
-      options: ["Quadrants I and II", "Quadrants I and IV", "Quadrant I only", "Quadrant II only"],
+      options: [
+        "Quadrants I and II",
+        "Quadrants I and IV",
+        "Quadrant I only",
+        "Quadrant II only",
+      ],
       answer: "Quadrants I and IV",
-      explanation: "Abscissa (x-coordinate) is positive on the right side of the y-axis, which corresponds to Quadrants I and IV."
+      explanation:
+        "Abscissa (x-coordinate) is positive on the right side of the y-axis, which corresponds to Quadrants I and IV.",
     },
     {
       question: "The point (0, -7) lies on:",
       options: ["x-axis", "y-axis", "Quadrant III", "Quadrant IV"],
       answer: "y-axis",
-      explanation: "A point with x-coordinate zero always lies on the y-axis."
+      explanation: "A point with x-coordinate zero always lies on the y-axis.",
     },
     {
       question: "Ordinate of all points on the x-axis is:",
       options: ["0", "1", "Any number", "-1"],
       answer: "0",
-      explanation: "For any point on the x-axis, the vertical distance from the axis is zero, hence y = 0."
+      explanation:
+        "For any point on the x-axis, the vertical distance from the axis is zero, hence y = 0.",
     },
     {
       question: "The points (-5, 2) and (2, -5) lie in:",
-      options: ["Same quadrant", "II and III quadrants respectively", "II and IV quadrants respectively", "IV and II quadrants respectively"],
+      options: [
+        "Same quadrant",
+        "II and III quadrants respectively",
+        "II and IV quadrants respectively",
+        "IV and II quadrants respectively",
+      ],
       answer: "II and IV quadrants respectively",
-      explanation: "(-5, 2) is (-, +) which is Q II. (2, -5) is (+, -) which is Q IV."
+      explanation:
+        "(-5, 2) is (-, +) which is Q II. (2, -5) is (+, -) which is Q IV.",
     },
     {
       question: "The distance of the point (0, 8) from the origin is:",
       options: ["0 units", "8 units", "4 units", "64 units"],
       answer: "8 units",
-      explanation: "Distance = sqrt(x^2 + y^2) = sqrt(0^2 + 8^2) = 8."
+      explanation: "Distance = sqrt(x^2 + y^2) = sqrt(0^2 + 8^2) = 8.",
     },
     {
       question: "Which point lies to the left of the y-axis?",
       options: ["(2, 0)", "(-2, 0)", "(0, 2)", "(0, -2)"],
       answer: "(-2, 0)",
-      explanation: "Points to the left of the y-axis have negative x-coordinates."
+      explanation:
+        "Points to the left of the y-axis have negative x-coordinates.",
     },
     {
-      question: "The perpendicular distance of the point P(3, 4) from the y-axis is:",
+      question:
+        "The perpendicular distance of the point P(3, 4) from the y-axis is:",
       options: ["3", "4", "5", "7"],
       answer: "3",
-      explanation: "The perpendicular distance from the y-axis is the absolute value of the x-coordinate."
-    }
+      explanation:
+        "The perpendicular distance from the y-axis is the absolute value of the x-coordinate.",
+    },
   ],
   summary: [
     "The Cartesian plane consists of two perpendicular axes.",
     "Every point is uniquely identified by an ordered pair (x, y).",
-    "The axes divide the plane into four quadrants."
+    "The axes divide the plane into four quadrants.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -265,6 +297,6 @@ export const c9Math4: ChapterContent = {
           </div>
         </div>
       </div>
-    `
-  }
+    `,
+  },
 };

@@ -8,7 +8,10 @@ import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type Class9ScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Class9">;
+type Class9ScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "Class9"
+>;
 
 function Class9Screen() {
   const navigation = useNavigation<Class9ScreenNavigationProp>();
@@ -17,10 +20,7 @@ function Class9Screen() {
     <ScreenWrapper showBackButton hideHomeButton>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[
-          styles.content,
-          styles.centeredContent,
-        ]}
+        contentContainerStyle={[styles.content, styles.centeredContent]}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
@@ -30,7 +30,12 @@ function Class9Screen() {
               title="MATHEMATICS"
               icon="📘"
               colors={JiguuColors.gradients.pink}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Class 9", topic: "Mathematics" })}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 9",
+                  topic: "Mathematics",
+                })
+              }
             />
           </View>
 
@@ -40,7 +45,9 @@ function Class9Screen() {
               title="SCIENCE"
               icon="🔬"
               colors={JiguuColors.gradients.purple}
-              onPress={() => navigation.navigate("ScienceTopics", { className: "Class 9" })}
+              onPress={() =>
+                navigation.navigate("ScienceTopics", { className: "Class 9" })
+              }
             />
           </View>
 
@@ -50,7 +57,9 @@ function Class9Screen() {
               title="START QUIZ"
               icon="🎯"
               colors={JiguuColors.gradients.brightBlue}
-              onPress={() => navigation.navigate("Quiz", { className: "Class 9" })}
+              onPress={() =>
+                navigation.navigate("Quiz", { className: "Class 9" })
+              }
             />
           </View>
 
@@ -60,7 +69,9 @@ function Class9Screen() {
               title="QUICK NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
-              onPress={() => navigation.navigate("QuickNotes", { className: "Class 9" })}
+              onPress={() =>
+                navigation.navigate("QuickNotes", { className: "Class 9" })
+              }
             />
           </View>
         </View>

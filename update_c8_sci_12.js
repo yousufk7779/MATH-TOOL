@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 
 const content = `import { ChapterContent } from "../chapterContent";
 
@@ -104,5 +104,5 @@ export const c8Sci12: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-12.ts', content, 'utf8');
-console.log('Successfully updated Chapter 12 content.');
+fs.writeFileSync("client/data/content/c8-sci-12.ts", content, "utf8");
+console.log("Successfully updated Chapter 12 content.");

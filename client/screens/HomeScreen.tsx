@@ -8,7 +8,10 @@ import { ColorButton } from "@/components/ColorButton";
 import { JiguuColors, Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
-type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, "Home">;
+type HomeScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  "Home"
+>;
 
 function HomeScreen() {
   const navigation = useNavigation<HomeScreenNavigationProp>();
@@ -17,10 +20,7 @@ function HomeScreen() {
     <ScreenWrapper showBackButton hideHomeButton>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={[
-          styles.content,
-          styles.centeredContent,
-        ]}
+        contentContainerStyle={[styles.content, styles.centeredContent]}
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
@@ -30,7 +30,9 @@ function HomeScreen() {
               title="MATHEMATICS"
               icon="📘"
               colors={JiguuColors.gradients.pink}
-              onPress={() => navigation.navigate("ChapterList", { subject: "Mathematics" })}
+              onPress={() =>
+                navigation.navigate("ChapterList", { subject: "Mathematics" })
+              }
             />
           </View>
 
@@ -73,8 +75,6 @@ function HomeScreen() {
               onPress={() => navigation.navigate("QuickNotes")}
             />
           </View>
-
-
         </View>
       </ScrollView>
     </ScreenWrapper>

@@ -237,28 +237,85 @@ export const c8Math10: ChapterContent = {
   id: "c8-math-10",
   number: 10,
   title: "Exponents and Powers",
-  introduction: "In this chapter, we extend our knowledge of exponents by learning about numbers with negative exponents. We will also learn how to express very small and very large numbers in standard form.",
+  introduction:
+    "In this chapter, we extend our knowledge of exponents by learning about numbers with negative exponents. We will also learn how to express very small and very large numbers in standard form.",
   mcqs: [
-    { id: "m1", question: "aᵐ × aⁿ is equal to:", options: ["aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ⁺ⁿ", "aᵐ/ⁿ"], correctAnswer: "aᵐ⁺ⁿ" },
-    { id: "m2", question: "a⁰ (where a ≠ 0) is equal to:", options: ["0", "a", "1", "-1"], correctAnswer: "1" },
-    { id: "m3", question: "The value of 2⁻³ is:", options: ["-6", "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>", "-8", "8"], correctAnswer: "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>" },
-    { id: "m4", question: "Standard form of 0.000045 is:", options: ["45 × 10⁻⁶", "4.5 × 10⁻⁵", "4.5 × 10⁵", "0.45 × 10⁻⁴"], correctAnswer: "4.5 × 10⁻⁵" },
-    { id: "m5", question: "(3⁰ + 4⁰ + 5⁰) equals:", options: ["12", "0", "1", "3"], correctAnswer: "3" },
-    { id: "m6", question: "(aᵐ)ⁿ is equal to:", options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"], correctAnswer: "aᵐⁿ" },
-    { id: "m7", question: "Usual form of 3.02 × 10⁻⁴ is:", options: ["0.0302", "0.00302", "0.000302", "0.0000302"], correctAnswer: "0.000302" },
-    { id: "m8", question: "aᵐ ÷ aⁿ is equal to:", options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"], correctAnswer: "aᵐ⁻ⁿ" },
-    { id: "m9", question: "Multiplicative inverse of 10⁻¹⁰⁰ is:", options: ["10¹⁰", "-10¹⁰⁰", "10¹⁰⁰", "10⁻¹⁰"], correctAnswer: "10¹⁰⁰" },
-    { id: "m10", question: "Value of (1/2)⁻¹ is:", options: ["-2", "2", "1/2", "-1/2"], correctAnswer: "2" }
+    {
+      id: "m1",
+      question: "aᵐ × aⁿ is equal to:",
+      options: ["aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ⁺ⁿ", "aᵐ/ⁿ"],
+      correctAnswer: "aᵐ⁺ⁿ",
+    },
+    {
+      id: "m2",
+      question: "a⁰ (where a ≠ 0) is equal to:",
+      options: ["0", "a", "1", "-1"],
+      correctAnswer: "1",
+    },
+    {
+      id: "m3",
+      question: "The value of 2⁻³ is:",
+      options: [
+        "-6",
+        "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>",
+        "-8",
+        "8",
+      ],
+      correctAnswer:
+        "<span class='frac'><span class='num'>1</span><span class='den'>8</span></span>",
+    },
+    {
+      id: "m4",
+      question: "Standard form of 0.000045 is:",
+      options: ["45 × 10⁻⁶", "4.5 × 10⁻⁵", "4.5 × 10⁵", "0.45 × 10⁻⁴"],
+      correctAnswer: "4.5 × 10⁻⁵",
+    },
+    {
+      id: "m5",
+      question: "(3⁰ + 4⁰ + 5⁰) equals:",
+      options: ["12", "0", "1", "3"],
+      correctAnswer: "3",
+    },
+    {
+      id: "m6",
+      question: "(aᵐ)ⁿ is equal to:",
+      options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"],
+      correctAnswer: "aᵐⁿ",
+    },
+    {
+      id: "m7",
+      question: "Usual form of 3.02 × 10⁻⁴ is:",
+      options: ["0.0302", "0.00302", "0.000302", "0.0000302"],
+      correctAnswer: "0.000302",
+    },
+    {
+      id: "m8",
+      question: "aᵐ ÷ aⁿ is equal to:",
+      options: ["aᵐ⁺ⁿ", "aᵐ⁻ⁿ", "aᵐⁿ", "aᵐ/ⁿ"],
+      correctAnswer: "aᵐ⁻ⁿ",
+    },
+    {
+      id: "m9",
+      question: "Multiplicative inverse of 10⁻¹⁰⁰ is:",
+      options: ["10¹⁰", "-10¹⁰⁰", "10¹⁰⁰", "10⁻¹⁰"],
+      correctAnswer: "10¹⁰⁰",
+    },
+    {
+      id: "m10",
+      question: "Value of (1/2)⁻¹ is:",
+      options: ["-2", "2", "1/2", "-1/2"],
+      correctAnswer: "2",
+    },
   ],
   summary: [
     "Numbers with negative exponents obey the same laws of exponents as positive exponents.",
     "a<sup>-m</sup> = <span class='frac'><span class='num'>1</span><span class='den'>a<sup>m</sup></span></span>, for any non-zero integer a.",
     "Very small numbers can be expressed in standard form using negative exponents.",
-    "Standard form is represented as k × 10<sup>n</sup>, where 1 ≤ k < 10 and n is an integer."
+    "Standard form is represented as k × 10<sup>n</sup>, where 1 ≤ k < 10 and n is an integer.",
   ],
   exercises: [
     { id: "ex10-1", name: "Exercise 10.1", questions: [] },
-    { id: "ex10-2", name: "Exercise 10.2", questions: [] }
+    { id: "ex10-2", name: "Exercise 10.2", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -377,6 +434,6 @@ export const c8Math10: ChapterContent = {
   `,
   htmlExercises: {
     "ex10-1": ex101Content,
-    "ex10-2": ex102Content
-  }
+    "ex10-2": ex102Content,
+  },
 };

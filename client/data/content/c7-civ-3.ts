@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#42A5F5"; // Chapter 3 theme (Blue)
 
 export const c7Civ3: ChapterContent = {
-    id: "c7-civ-3",
-    number: 3,
-    title: "How the State Government Works",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-civ-3",
+  number: 3,
+  title: "How the State Government Works",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Every state in India has a Legislative Assembly. Each state is divided into different areas or constituencies. From each constituency, the people elect one representative who then becomes a Member of the Legislative Assembly (MLA).</p>
             
@@ -21,8 +21,8 @@ export const c7Civ3: ChapterContent = {
             <p>The Legislative Assembly is a place where all the MLAs, whether from the ruling party or from the opposition, meet to discuss various things. Hence, some MLAs have dual responsibilities: one as an MLA and the other as a minister.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7c3-ex-all": `
+  htmlExercises: {
+    "c7c3-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 30px;">
                     <div style="margin-bottom: 18px;">
@@ -78,82 +78,109 @@ export const c7Civ3: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "Every state in India has a Legislative Assembly divided into constituencies.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7c3-mcq-1",
+      question: "What is the full form of MLA?",
+      options: [
+        "Member of Local Assembly",
+        "Member of Legislative Assembly",
+        "Master of Legislative Authority",
+        "Member of Law Agency",
+      ],
+      correctAnswer: "b",
     },
-    introduction: "Every state in India has a Legislative Assembly divided into constituencies.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7c3-mcq-1",
-            question: "What is the full form of MLA?",
-            options: ["Member of Local Assembly", "Member of Legislative Assembly", "Master of Legislative Authority", "Member of Law Agency"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-2",
-            question: "Who is the formal head of the State?",
-            options: ["Chief Minister", "Governor", "President", "Prime Minister"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-3",
-            question: "Who appoints the Chief Minister of a state?",
-            options: ["The President", "The Governor", "The People", "The High Court"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-4",
-            question: "The political party that has the majority in the assembly is called:",
-            options: ["Opposition Party", "Ruling Party", "Local Party", "National Party"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-5",
-            question: "The place where all MLAs meet to discuss various issues is:",
-            options: ["Parliament", "Legislative Assembly", "Supreme Court", "Rajya Sabha"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-6",
-            question: "Who is the executive head of the ruling party in a state?",
-            options: ["Governor", "Chief Minister", "Speaker", "Mayor"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-7",
-            question: "What is the tenure of a Legislative Assembly in India?",
-            options: ["2 years", "4 years", "5 years", "6 years"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c3-mcq-8",
-            question: "Decisions of the cabinet must be approved by the:",
-            options: ["President", "MLAs", "Judges", "Police"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-9",
-            question: "In the chapter, Patalpuram was facing a severe shortage of:",
-            options: ["Food", "Clean water", "Electricity", "Internet"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c3-mcq-10",
-            question: "Who is responsible for the health department in a state?",
-            options: ["Governor", "Health Minister", "Education Minister", "Finance Minister"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7c3-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7c3-mcq-2",
+      question: "Who is the formal head of the State?",
+      options: ["Chief Minister", "Governor", "President", "Prime Minister"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-3",
+      question: "Who appoints the Chief Minister of a state?",
+      options: [
+        "The President",
+        "The Governor",
+        "The People",
+        "The High Court",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-4",
+      question:
+        "The political party that has the majority in the assembly is called:",
+      options: [
+        "Opposition Party",
+        "Ruling Party",
+        "Local Party",
+        "National Party",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-5",
+      question: "The place where all MLAs meet to discuss various issues is:",
+      options: [
+        "Parliament",
+        "Legislative Assembly",
+        "Supreme Court",
+        "Rajya Sabha",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-6",
+      question: "Who is the executive head of the ruling party in a state?",
+      options: ["Governor", "Chief Minister", "Speaker", "Mayor"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-7",
+      question: "What is the tenure of a Legislative Assembly in India?",
+      options: ["2 years", "4 years", "5 years", "6 years"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c3-mcq-8",
+      question: "Decisions of the cabinet must be approved by the:",
+      options: ["President", "MLAs", "Judges", "Police"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-9",
+      question: "In the chapter, Patalpuram was facing a severe shortage of:",
+      options: ["Food", "Clean water", "Electricity", "Internet"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c3-mcq-10",
+      question: "Who is responsible for the health department in a state?",
+      options: [
+        "Governor",
+        "Health Minister",
+        "Education Minister",
+        "Finance Minister",
+      ],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7c3-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

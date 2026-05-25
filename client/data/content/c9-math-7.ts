@@ -5,10 +5,11 @@ export const c9Math7: ChapterContent = {
   number: 7,
   title: "Quadrilaterals",
   isHtmlView: true,
-  introduction: "In this chapter, we study the properties of quadrilaterals, specifically parallelograms, and the Mid-point Theorem. We explore the conditions that make a quadrilateral a parallelogram, rectangle, rhombus, or square.",
+  introduction:
+    "In this chapter, we study the properties of quadrilaterals, specifically parallelograms, and the Mid-point Theorem. We explore the conditions that make a quadrilateral a parallelogram, rectangle, rhombus, or square.",
   exercises: [
     { id: "ex7-1", name: "Exercise 7.1", questions: [] },
-    { id: "ex7-2", name: "Exercise 7.2", questions: [] }
+    { id: "ex7-2", name: "Exercise 7.2", questions: [] },
   ],
   htmlOverview: `
       <style>
@@ -426,18 +427,81 @@ export const c9Math7: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 5:</span> Since M is mid-point of AB, MA = 1/2 AB. So CM = MA = 1/2 AB.</div>
         </div>
       </div>
-`
+`,
   },
   mcqs: [
-    { id: "m1", question: "The sum of all angles of a quadrilateral is:", options: ["180Â°", "270Â°", "360Â°", "400Â°"], correctAnswer: "C" },
-    { id: "m2", question: "If the diagonals of a quadrilateral bisect each other, then it is a:", options: ["Trapezium", "Parallelogram", "Kite", "None"], correctAnswer: "B" },
-    { id: "m3", question: "A quadrilateral with all sides equal and one angle 90Â° is a:", options: ["Rhombus", "Rectangle", "Square", "Trapezium"], correctAnswer: "C" },
-    { id: "m4", question: "The diagonals of a rhombus bisect each other at:", options: ["30Â°", "45Â°", "60Â°", "90Â°"], correctAnswer: "D" },
-    { id: "m5", question: "If three angles of a quadrilateral are 75Â°, 90Â°, and 75Â°, the fourth angle is:", options: ["90Â°", "95Â°", "105Â°", "120Â°"], correctAnswer: "D" },
-    { id: "m6", question: "The line joining the mid-points of two sides of a triangle is:", options: ["Parallel to third side", "Half of third side", "Both A and B", "None"], correctAnswer: "C" },
-    { id: "m7", question: "Diagonals of which quadrilateral are always equal?", options: ["Parallelogram", "Rhombus", "Rectangle", "Trapezium"], correctAnswer: "C" },
-    { id: "m8", question: "A diagonal of a parallelogram divides it into two:", options: ["Similar triangles", "Congruent triangles", "Equilateral triangles", "Right triangles"], correctAnswer: "B" },
-    { id: "m9", question: "In a parallelogram ABCD, if âˆ A = 100Â°, then âˆ B is:", options: ["80Â°", "100Â°", "90Â°", "180Â°"], correctAnswer: "A" },
-    { id: "m10", question: "Every square is a:", options: ["Rhombus", "Rectangle", "Parallelogram", "All of these"], correctAnswer: "D" }
-  ]
+    {
+      id: "m1",
+      question: "The sum of all angles of a quadrilateral is:",
+      options: ["180Â°", "270Â°", "360Â°", "400Â°"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m2",
+      question:
+        "If the diagonals of a quadrilateral bisect each other, then it is a:",
+      options: ["Trapezium", "Parallelogram", "Kite", "None"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m3",
+      question: "A quadrilateral with all sides equal and one angle 90Â° is a:",
+      options: ["Rhombus", "Rectangle", "Square", "Trapezium"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m4",
+      question: "The diagonals of a rhombus bisect each other at:",
+      options: ["30Â°", "45Â°", "60Â°", "90Â°"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m5",
+      question:
+        "If three angles of a quadrilateral are 75Â°, 90Â°, and 75Â°, the fourth angle is:",
+      options: ["90Â°", "95Â°", "105Â°", "120Â°"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m6",
+      question:
+        "The line joining the mid-points of two sides of a triangle is:",
+      options: [
+        "Parallel to third side",
+        "Half of third side",
+        "Both A and B",
+        "None",
+      ],
+      correctAnswer: "C",
+    },
+    {
+      id: "m7",
+      question: "Diagonals of which quadrilateral are always equal?",
+      options: ["Parallelogram", "Rhombus", "Rectangle", "Trapezium"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "A diagonal of a parallelogram divides it into two:",
+      options: [
+        "Similar triangles",
+        "Congruent triangles",
+        "Equilateral triangles",
+        "Right triangles",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "In a parallelogram ABCD, if âˆ A = 100Â°, then âˆ B is:",
+      options: ["80Â°", "100Â°", "90Â°", "180Â°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question: "Every square is a:",
+      options: ["Rhombus", "Rectangle", "Parallelogram", "All of these"],
+      correctAnswer: "D",
+    },
+  ],
 };

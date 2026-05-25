@@ -5,13 +5,14 @@ export const c9Math8: ChapterContent = {
   number: 8,
   title: "Circles",
   isHtmlView: true,
-  introduction: "In this chapter, we study the properties of circles, including chords, arcs, and the angles they subtend. We explore important theorems regarding perpendiculars from the centre to a chord, equal chords and their distances from the centre, and angles subtended by arcs of a circle.",
+  introduction:
+    "In this chapter, we study the properties of circles, including chords, arcs, and the angles they subtend. We explore important theorems regarding perpendiculars from the centre to a chord, equal chords and their distances from the centre, and angles subtended by arcs of a circle.",
   exercises: [
     { id: "ex8-1", name: "Exercise 8.1", questions: [] },
     { id: "ex8-2", name: "Exercise 8.2", questions: [] },
     { id: "ex8-3", name: "Exercise 8.3", questions: [] },
     { id: "ex8-4", name: "Exercise 8.4", questions: [] },
-    { id: "ex8-5", name: "Exercise 8.5", questions: [] }
+    { id: "ex8-5", name: "Exercise 8.5", questions: [] },
   ],
   htmlOverview: `
       <style>
@@ -605,18 +606,76 @@ export const c9Math8: ChapterContent = {
           <div class="sol-step"><span class="highlight">Conclusion:</span> Therefore, &ang;ACP = &ang;QCD. Hence proved.</div>
         </div>
       </div>
-`
+`,
   },
   mcqs: [
-    { id: "m1", question: "The longest chord of a circle is its:", options: ["Radius", "Secant", "Diameter", "Tangent"], correctAnswer: "C" },
-    { id: "m2", question: "Equal chords of a circle subtend _____ angles at the centre.", options: ["Equal", "Complementary", "Supplementary", "90°"], correctAnswer: "A" },
-    { id: "m3", question: "The perpendicular from the centre of a circle to a chord:", options: ["Trisects the chord", "Bisects the chord", "Is double the chord", "None"], correctAnswer: "B" },
-    { id: "m4", question: "Angles in the same segment of a circle are:", options: ["Supplementary", "Complementary", "Equal", "Unequal"], correctAnswer: "C" },
-    { id: "m5", question: "The angle subtended by a semicircle at the circumference is:", options: ["45°", "60°", "90°", "180°"], correctAnswer: "C" },
-    { id: "m6", question: "In a cyclic quadrilateral, the sum of opposite angles is:", options: ["90°", "180°", "270°", "360°"], correctAnswer: "B" },
-    { id: "m7", question: "If the radius of a circle is 5cm, the length of the diameter is:", options: ["2.5cm", "5cm", "10cm", "25cm"], correctAnswer: "C" },
-    { id: "m8", question: "The region between an arc and two radii is called a:", options: ["Segment", "Sector", "Chord", "Semicircle"], correctAnswer: "B" },
-    { id: "m9", question: "The number of circles passing through three non-collinear points is:", options: ["One", "Two", "Infinite", "None"], correctAnswer: "A" },
-    { id: "m10", question: "If <AOB = 100° is the angle at the centre, then the angle at the circumference is:", options: ["50°", "100°", "200°", "80°"], correctAnswer: "A" }
-  ]
+    {
+      id: "m1",
+      question: "The longest chord of a circle is its:",
+      options: ["Radius", "Secant", "Diameter", "Tangent"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m2",
+      question: "Equal chords of a circle subtend _____ angles at the centre.",
+      options: ["Equal", "Complementary", "Supplementary", "90°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "The perpendicular from the centre of a circle to a chord:",
+      options: [
+        "Trisects the chord",
+        "Bisects the chord",
+        "Is double the chord",
+        "None",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Angles in the same segment of a circle are:",
+      options: ["Supplementary", "Complementary", "Equal", "Unequal"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m5",
+      question: "The angle subtended by a semicircle at the circumference is:",
+      options: ["45°", "60°", "90°", "180°"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m6",
+      question: "In a cyclic quadrilateral, the sum of opposite angles is:",
+      options: ["90°", "180°", "270°", "360°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question:
+        "If the radius of a circle is 5cm, the length of the diameter is:",
+      options: ["2.5cm", "5cm", "10cm", "25cm"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "The region between an arc and two radii is called a:",
+      options: ["Segment", "Sector", "Chord", "Semicircle"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question:
+        "The number of circles passing through three non-collinear points is:",
+      options: ["One", "Two", "Infinite", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question:
+        "If <AOB = 100° is the angle at the centre, then the angle at the circumference is:",
+      options: ["50°", "100°", "200°", "80°"],
+      correctAnswer: "A",
+    },
+  ],
 };

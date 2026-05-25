@@ -605,18 +605,81 @@ export const c8Math9: ChapterContent = {
   id: "c8-math-9",
   number: 9,
   title: "Mensuration",
-  introduction: "In this chapter, we explore how to find the area of 2D shapes like parallelograms, triangles, trapeziums, and polygons. We will also learn to calculate the surface area and volume of 3D shapes like cubes, cuboids, and cylinders.",
+  introduction:
+    "In this chapter, we explore how to find the area of 2D shapes like parallelograms, triangles, trapeziums, and polygons. We will also learn to calculate the surface area and volume of 3D shapes like cubes, cuboids, and cylinders.",
   mcqs: [
-    { id: "m1", question: "The area of a rhombus is equal to:", options: ["Base × Height", "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d1 × d2", "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × Base × Height", "Both A and B"], correctAnswer: "Both A and B" },
-    { id: "m2", question: "1 m³ is equal to how many litres?", options: ["10", "100", "1000", "10000"], correctAnswer: "1000" },
-    { id: "m3", question: "The total surface area of a cube of side 'a' is:", options: ["4a²", "6a²", "a³", "2a²"], correctAnswer: "6a²" },
-    { id: "m4", question: "Area of a trapezium is:", options: ["<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h", "(a+b)h", "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>ab", "ah"], correctAnswer: "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h" },
-    { id: "m5", question: "The lateral surface area of a cylinder is:", options: ["2πr²", "πr²h", "2πrh", "2πr(r+h)"], correctAnswer: "2πrh" },
-    { id: "m6", question: "If the edge of a cube is doubled, its volume becomes:", options: ["2 times", "4 times", "8 times", "16 times"], correctAnswer: "8 times" },
-    { id: "m7", question: "The volume of a cuboid is given by:", options: ["l+b+h", "lbh", "2(lb+bh+hl)", "l²+b²+h²"], correctAnswer: "lbh" },
-    { id: "m8", question: "1 cm³ is equal to:", options: ["1 mL", "10 mL", "100 mL", "1 L"], correctAnswer: "1 mL" },
-    { id: "m9", question: "Area of a general quadrilateral can be found by splitting it into:", options: ["Two triangles", "Two rectangles", "Two squares", "A circle"], correctAnswer: "Two triangles" },
-    { id: "m10", question: "Surface area of a closed cylinder is:", options: ["2πrh", "2πr² + 2πrh", "πr²h", "πrh"], correctAnswer: "2πr² + 2πrh" }
+    {
+      id: "m1",
+      question: "The area of a rhombus is equal to:",
+      options: [
+        "Base × Height",
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × d1 × d2",
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span> × Base × Height",
+        "Both A and B",
+      ],
+      correctAnswer: "Both A and B",
+    },
+    {
+      id: "m2",
+      question: "1 m³ is equal to how many litres?",
+      options: ["10", "100", "1000", "10000"],
+      correctAnswer: "1000",
+    },
+    {
+      id: "m3",
+      question: "The total surface area of a cube of side 'a' is:",
+      options: ["4a²", "6a²", "a³", "2a²"],
+      correctAnswer: "6a²",
+    },
+    {
+      id: "m4",
+      question: "Area of a trapezium is:",
+      options: [
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h",
+        "(a+b)h",
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>ab",
+        "ah",
+      ],
+      correctAnswer:
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)h",
+    },
+    {
+      id: "m5",
+      question: "The lateral surface area of a cylinder is:",
+      options: ["2πr²", "πr²h", "2πrh", "2πr(r+h)"],
+      correctAnswer: "2πrh",
+    },
+    {
+      id: "m6",
+      question: "If the edge of a cube is doubled, its volume becomes:",
+      options: ["2 times", "4 times", "8 times", "16 times"],
+      correctAnswer: "8 times",
+    },
+    {
+      id: "m7",
+      question: "The volume of a cuboid is given by:",
+      options: ["l+b+h", "lbh", "2(lb+bh+hl)", "l²+b²+h²"],
+      correctAnswer: "lbh",
+    },
+    {
+      id: "m8",
+      question: "1 cm³ is equal to:",
+      options: ["1 mL", "10 mL", "100 mL", "1 L"],
+      correctAnswer: "1 mL",
+    },
+    {
+      id: "m9",
+      question:
+        "Area of a general quadrilateral can be found by splitting it into:",
+      options: ["Two triangles", "Two rectangles", "Two squares", "A circle"],
+      correctAnswer: "Two triangles",
+    },
+    {
+      id: "m10",
+      question: "Surface area of a closed cylinder is:",
+      options: ["2πrh", "2πr² + 2πrh", "πr²h", "πrh"],
+      correctAnswer: "2πr² + 2πrh",
+    },
   ],
   summary: [
     "Area of a trapezium = <span class='frac'><span class='num'>1</span><span class='den'>2</span></span>(a+b)×h, where a and b are parallel sides.",
@@ -624,12 +687,12 @@ export const c8Math9: ChapterContent = {
     "Surface area of a cuboid = 2(lb + bh + hl) and its volume = lbh.",
     "Surface area of a cube = 6a² and its volume = a³.",
     "Surface area of a cylinder = 2πr(r+h) and its volume = πr²h.",
-    "1 m³ = 1000 L, 1 L = 1000 cm³, and 1 cm³ = 1 mL."
+    "1 m³ = 1000 L, 1 L = 1000 cm³, and 1 cm³ = 1 mL.",
   ],
   exercises: [
     { id: "ex9-1", name: "Exercise 9.1", questions: [] },
     { id: "ex9-2", name: "Exercise 9.2", questions: [] },
-    { id: "ex9-3", name: "Exercise 9.3", questions: [] }
+    { id: "ex9-3", name: "Exercise 9.3", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -749,6 +812,6 @@ export const c8Math9: ChapterContent = {
   htmlExercises: {
     "ex9-1": ex91Content,
     "ex9-2": ex92Content,
-    "ex9-3": ex93Content
-  }
+    "ex9-3": ex93Content,
+  },
 };

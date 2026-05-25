@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#8BC34A"; // Light Green for Geography Chapter 7
 
 export const c7Geo7: ChapterContent = {
-    id: "c7-geo-7",
-    number: 7,
-    title: "Life in the Deserts",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-7",
+  number: 7,
+  title: "Life in the Deserts",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>A desert is an arid region characterized by extremely high or low temperatures and has scarce vegetation. Depending on the temperature, there can be hot deserts or cold deserts. This chapter explores life in the Sahara (Hot Desert) and Ladakh (Cold Desert).</p>
             
@@ -21,8 +21,8 @@ export const c7Geo7: ChapterContent = {
             <p>In Sahara, vegetation includes cactus, date palms and acacia. In Ladakh, because of high aridity, vegetation is sparse. There are scanty patches of grasses and shrubs for animals to graze.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7g7-ex-all": `
+  htmlExercises: {
+    "c7g7-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -136,82 +136,89 @@ export const c7Geo7: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "A desert is an arid region characterized by extremely high or low temperatures and has scarce vegetation.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g7-mcq-1",
+      question: "Sahara is located in which part of Africa?",
+      options: ["Eastern", "Northern", "Western", "Southern"],
+      correctAnswer: "b",
     },
-    introduction: "A desert is an arid region characterized by extremely high or low temperatures and has scarce vegetation.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g7-mcq-1",
-            question: "Sahara is located in which part of Africa?",
-            options: ["Eastern", "Northern", "Western", "Southern"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g7-mcq-2",
-            question: "Sahara is what type of desert?",
-            options: ["Cold", "Hot", "Mild", "Humid"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g7-mcq-3",
-            question: "The Ladakh desert is mainly inhabited by:",
-            options: ["Buddhists and Muslims", "Christians", "Hindus", "Jews"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g7-mcq-4",
-            question: "Deserts are characterised by:",
-            options: ["Heavy rainfall", "Scanty vegetation", "Lush forests", "High humidity"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g7-mcq-5",
-            question: "Hemis in Ladakh is a famous:",
-            options: ["Temple", "Monastery", "Mosque", "Church"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g7-mcq-6",
-            question: "Egypt is famous for growing which crop?",
-            options: ["Wheat", "Maize", "Cotton", "Tea"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g7-mcq-7",
-            question: "The finest cricket bats are made from the wood of ____ trees.",
-            options: ["Teak", "Willow", "Oak", "Pine"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g7-mcq-8",
-            question: "What is the other name of Ladakh?",
-            options: ["Khapa-chan", "Sahara", "Gobi", "Thar"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g7-mcq-9",
-            question: "Which animal provides milk for cheese and butter in Ladakh?",
-            options: ["Camel", "Cow", "Yak", "Goat"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g7-mcq-10",
-            question: "Dras, one of the coldest inhabited places on earth, is located in:",
-            options: ["Sahara", "Ladakh", "Siberia", "Alaska"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g7-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g7-mcq-2",
+      question: "Sahara is what type of desert?",
+      options: ["Cold", "Hot", "Mild", "Humid"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g7-mcq-3",
+      question: "The Ladakh desert is mainly inhabited by:",
+      options: ["Buddhists and Muslims", "Christians", "Hindus", "Jews"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g7-mcq-4",
+      question: "Deserts are characterised by:",
+      options: [
+        "Heavy rainfall",
+        "Scanty vegetation",
+        "Lush forests",
+        "High humidity",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g7-mcq-5",
+      question: "Hemis in Ladakh is a famous:",
+      options: ["Temple", "Monastery", "Mosque", "Church"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g7-mcq-6",
+      question: "Egypt is famous for growing which crop?",
+      options: ["Wheat", "Maize", "Cotton", "Tea"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g7-mcq-7",
+      question: "The finest cricket bats are made from the wood of ____ trees.",
+      options: ["Teak", "Willow", "Oak", "Pine"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g7-mcq-8",
+      question: "What is the other name of Ladakh?",
+      options: ["Khapa-chan", "Sahara", "Gobi", "Thar"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g7-mcq-9",
+      question: "Which animal provides milk for cheese and butter in Ladakh?",
+      options: ["Camel", "Cow", "Yak", "Goat"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g7-mcq-10",
+      question:
+        "Dras, one of the coldest inhabited places on earth, is located in:",
+      options: ["Sahara", "Ladakh", "Siberia", "Alaska"],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g7-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

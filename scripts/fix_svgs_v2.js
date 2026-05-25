@@ -1,6 +1,7 @@
-const fs = require('fs');
-const htmlFile = 'd:\\MATH-T-new\\client\\assets\\chapters\\chapter12\\exercise1.html';
-let content = fs.readFileSync(htmlFile, 'utf8');
+const fs = require("fs");
+const htmlFile =
+  "d:\\MATH-T-new\\client\\assets\\chapters\\chapter12\\exercise1.html";
+let content = fs.readFileSync(htmlFile, "utf8");
 
 const q4Svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" style="background-color:white;">
 <g transform="translate(130, 200)">
@@ -82,21 +83,29 @@ const q5Svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" wid
 </defs>
 </svg>`;
 
-const q4Base64 = Buffer.from(q4Svg).toString('base64');
-const q5Base64 = Buffer.from(q5Svg).toString('base64');
+const q4Base64 = Buffer.from(q4Svg).toString("base64");
+const q5Base64 = Buffer.from(q5Svg).toString("base64");
 
-const rxQ4 = /<img src="data:image\/svg\+xml;base64,[^"]+" alt="Cube with Hemisphere">/;
+const rxQ4 =
+  /<img src="data:image\/svg\+xml;base64,[^"]+" alt="Cube with Hemisphere">/;
 if (content.match(rxQ4)) {
-    content = content.replace(rxQ4, `<img src="data:image/svg+xml;base64,${q4Base64}" alt="Cube with Hemisphere">`);
+  content = content.replace(
+    rxQ4,
+    `<img src="data:image/svg+xml;base64,${q4Base64}" alt="Cube with Hemisphere">`,
+  );
 } else {
-    console.log("Q4 not found.");
+  console.log("Q4 not found.");
 }
 
-const rxQ5 = /<img src="data:image\/svg\+xml;base64,[^"]+" alt="Depression in Cube">/;
+const rxQ5 =
+  /<img src="data:image\/svg\+xml;base64,[^"]+" alt="Depression in Cube">/;
 if (content.match(rxQ5)) {
-    content = content.replace(rxQ5, `<img src="data:image/svg+xml;base64,${q5Base64}" alt="Depression in Cube">`);
+  content = content.replace(
+    rxQ5,
+    `<img src="data:image/svg+xml;base64,${q5Base64}" alt="Depression in Cube">`,
+  );
 } else {
-    console.log("Q5 not found.");
+  console.log("Q5 not found.");
 }
 
 fs.writeFileSync(htmlFile, content);

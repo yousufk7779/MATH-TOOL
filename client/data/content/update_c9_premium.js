@@ -1,45 +1,49 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 const THEMES = {
-    "c9-math-1": "#FFB74D",
-    "c9-math-2": "#FF4081",
-    "c9-math-3": "#AB47BC",
-    "c9-math-4": "#42A5F5",
-    "c9-math-5": "#66BB6A",
-    "c9-math-6": "#FF4081",
-    "c9-math-7": "#FFA726",
-    "c9-math-8": "#FF8A65",
-    "c9-math-9": "#00C6FF",
-    "c9-math-10": "#FFA726",
-    "c9-math-11": "#FF4DA6",
+  "c9-math-1": "#FFB74D",
+  "c9-math-2": "#FF4081",
+  "c9-math-3": "#AB47BC",
+  "c9-math-4": "#42A5F5",
+  "c9-math-5": "#66BB6A",
+  "c9-math-6": "#FF4081",
+  "c9-math-7": "#FFA726",
+  "c9-math-8": "#FF8A65",
+  "c9-math-9": "#00C6FF",
+  "c9-math-10": "#FFA726",
+  "c9-math-11": "#FF4DA6",
 };
 
 function hexToRgba(hex, alpha) {
-    hex = hex.replace('#', '');
-    if (hex.length === 6) {
-        const r = parseInt(hex.substring(0, 2), 16);
-        const g = parseInt(hex.substring(2, 4), 16);
-        const b = parseInt(hex.substring(4, 6), 16);
-        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-    }
-    return "rgba(255, 255, 255, 0.05)";
+  hex = hex.replace("#", "");
+  if (hex.length === 6) {
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  }
+  return "rgba(255, 255, 255, 0.05)";
 }
 
 function processHtml(html, themeColor) {
-    const bgColor = hexToRgba(themeColor, 0.05);
+  const bgColor = hexToRgba(themeColor, 0.05);
 
-    // 1. Fractions
-    let newHtml = html.replace(/class="fraction"/g, "class='frac'");
-    newHtml = newHtml.replace(/class='fraction'/g, "class='frac'");
-    newHtml = newHtml.replace(/class="numerator"/g, "class='num'");
-    newHtml = newHtml.replace(/class='numerator'/g, "class='num'");
-    
-    // Replace denominator spans
-    const fractionRegex = /<span class='frac'>\s*<span class='num'>(.*?)<\/span>\s*<span>(.*?)<\/span>\s*<\/span>/gs;
-    newHtml = newHtml.replace(fractionRegex, "<span class='frac'><span class='num'>$1</span><span class='den'>$2</span></span>");
+  // 1. Fractions
+  let newHtml = html.replace(/class="fraction"/g, "class='frac'");
+  newHtml = newHtml.replace(/class='fraction'/g, "class='frac'");
+  newHtml = newHtml.replace(/class="numerator"/g, "class='num'");
+  newHtml = newHtml.replace(/class='numerator'/g, "class='num'");
 
-    const cssTemplate = `      <style>
+  // Replace denominator spans
+  const fractionRegex =
+    /<span class='frac'>\s*<span class='num'>(.*?)<\/span>\s*<span>(.*?)<\/span>\s*<\/span>/gs;
+  newHtml = newHtml.replace(
+    fractionRegex,
+    "<span class='frac'><span class='num'>$1</span><span class='den'>$2</span></span>",
+  );
+
+  const cssTemplate = `      <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
         .frac .den { padding: 0 2px; }
@@ -74,55 +78,63 @@ function processHtml(html, themeColor) {
         svg rect { stroke: rgba(255, 255, 255, 0.8); stroke-width: 0.5px; }
       </style>`;
 
-    // Remove old style blocks
-    newHtml = newHtml.replace(/<style>[\s\S]*?<\/style>/g, '');
-    
-    // Insert new css template
-    newHtml = cssTemplate + "\n" + newHtml.trim();
-    
-    return newHtml;
+  // Remove old style blocks
+  newHtml = newHtml.replace(/<style>[\s\S]*?<\/style>/g, "");
+
+  // Insert new css template
+  newHtml = cssTemplate + "\n" + newHtml.trim();
+
+  return newHtml;
 }
 
 function processFile(filePath, themeColor) {
-    const content = fs.readFileSync(filePath, 'utf-8');
-    
-    // Process HTML inside backticks
-    const backtickRegex = /`([\s\S]*?)`/g;
-    let newContent = content.replace(backtickRegex, (match, p1) => {
-        if (p1.includes('<style>') || p1.includes('class="container"') || p1.includes('class="ex-container"')) {
-            return '`\n' + processHtml(p1, themeColor) + '\n`';
-        }
-        return match;
-    });
+  const content = fs.readFileSync(filePath, "utf-8");
 
-    // Also fix fractions that might be outside of standard backtick matches (e.g. inline strings)
-    newContent = newContent.replace(/class="fraction"/g, "class='frac'");
-    newContent = newContent.replace(/class='fraction'/g, "class='frac'");
-    newContent = newContent.replace(/class="numerator"/g, "class='num'");
-    newContent = newContent.replace(/class='numerator'/g, "class='num'");
-    const fallbackRegex = /<span class='frac'>\s*<span class='num'>(.*?)<\/span>\s*<span>(.*?)<\/span>\s*<\/span>/gs;
-    newContent = newContent.replace(fallbackRegex, "<span class='frac'><span class='num'>$1</span><span class='den'>$2</span></span>");
-
-    if (newContent !== content) {
-        fs.writeFileSync(filePath, newContent, 'utf-8');
-        return true;
+  // Process HTML inside backticks
+  const backtickRegex = /`([\s\S]*?)`/g;
+  let newContent = content.replace(backtickRegex, (match, p1) => {
+    if (
+      p1.includes("<style>") ||
+      p1.includes('class="container"') ||
+      p1.includes('class="ex-container"')
+    ) {
+      return "`\n" + processHtml(p1, themeColor) + "\n`";
     }
-    return false;
+    return match;
+  });
+
+  // Also fix fractions that might be outside of standard backtick matches (e.g. inline strings)
+  newContent = newContent.replace(/class="fraction"/g, "class='frac'");
+  newContent = newContent.replace(/class='fraction'/g, "class='frac'");
+  newContent = newContent.replace(/class="numerator"/g, "class='num'");
+  newContent = newContent.replace(/class='numerator'/g, "class='num'");
+  const fallbackRegex =
+    /<span class='frac'>\s*<span class='num'>(.*?)<\/span>\s*<span>(.*?)<\/span>\s*<\/span>/gs;
+  newContent = newContent.replace(
+    fallbackRegex,
+    "<span class='frac'><span class='num'>$1</span><span class='den'>$2</span></span>",
+  );
+
+  if (newContent !== content) {
+    fs.writeFileSync(filePath, newContent, "utf-8");
+    return true;
+  }
+  return false;
 }
 
 const dir = __dirname;
 const files = fs.readdirSync(dir);
 
 for (const file of files) {
-    if (file.startsWith("c9-math-") && file.endsWith(".ts")) {
-        const chapterId = file.replace('.ts', '');
-        if (THEMES[chapterId]) {
-            const filePath = path.join(dir, file);
-            console.log(`Processing ${file}...`);
-            const updated = processFile(filePath, THEMES[chapterId]);
-            if (updated) {
-                console.log(`  -> Updated ${file}`);
-            }
-        }
+  if (file.startsWith("c9-math-") && file.endsWith(".ts")) {
+    const chapterId = file.replace(".ts", "");
+    if (THEMES[chapterId]) {
+      const filePath = path.join(dir, file);
+      console.log(`Processing ${file}...`);
+      const updated = processFile(filePath, THEMES[chapterId]);
+      if (updated) {
+        console.log(`  -> Updated ${file}`);
+      }
     }
+  }
 }

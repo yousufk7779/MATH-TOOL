@@ -4,7 +4,12 @@ import * as Haptics from "expo-haptics";
 import { LinearGradient } from "expo-linear-gradient";
 
 import { ThemedText } from "@/components/ThemedText";
-import { BorderRadius, Spacing, JiguuColors, Typography } from "@/constants/theme";
+import {
+  BorderRadius,
+  Spacing,
+  JiguuColors,
+  Typography,
+} from "@/constants/theme";
 
 interface ColorButtonProps {
   title: string;
@@ -44,10 +49,16 @@ export const ColorButton = memo(function ColorButton({
     onPress?.();
   }, [onPress]);
 
-  const backgroundColors = (colors || (color ? [color, color] : JiguuColors.primaryGradient)) as any;
+  const backgroundColors = (colors ||
+    (color ? [color, color] : JiguuColors.primaryGradient)) as any;
   const shadowColor = backgroundColors[0] || "#000";
 
-  const isGlossy = backgroundColors[0] === "#FFA726" || backgroundColors[0] === "#7CFF00" || backgroundColors[0] === "#FF4DA6" || backgroundColors[0] === "#FF1744" || backgroundColors[0] === "#43A047";
+  const isGlossy =
+    backgroundColors[0] === "#FFA726" ||
+    backgroundColors[0] === "#7CFF00" ||
+    backgroundColors[0] === "#FF4DA6" ||
+    backgroundColors[0] === "#FF1744" ||
+    backgroundColors[0] === "#43A047";
 
   return (
     <Pressable
@@ -59,10 +70,14 @@ export const ColorButton = memo(function ColorButton({
       style={({ pressed }) => [
         styles.buttonContainer,
         {
-          shadowColor: isGlossy ? backgroundColors[0] : (glow ? shadowColor : "#000"),
-          shadowOpacity: isGlossy ? 0.8 : (glow ? 0.6 : 0.25),
-          shadowRadius: isGlossy ? 15 : (glow ? 10 : 3.84),
-          elevation: isGlossy ? 15 : (glow ? 12 : 4),
+          shadowColor: isGlossy
+            ? backgroundColors[0]
+            : glow
+              ? shadowColor
+              : "#000",
+          shadowOpacity: isGlossy ? 0.8 : glow ? 0.6 : 0.25,
+          shadowRadius: isGlossy ? 15 : glow ? 10 : 3.84,
+          elevation: isGlossy ? 15 : glow ? 12 : 4,
           transform: [{ scale: pressed ? 0.95 : 1 }],
         },
         style,
@@ -75,17 +90,23 @@ export const ColorButton = memo(function ColorButton({
           end={{ x: 0.5, y: 1 }}
           style={styles.gradient}
         >
-          <View style={[styles.borderInner, { borderColor: isGlossy ? 'rgba(255,255,255,0.8)' : 'rgba(255,255,255,0.3)' }]}>
+          <View
+            style={[
+              styles.borderInner,
+              {
+                borderColor: isGlossy
+                  ? "rgba(255,255,255,0.8)"
+                  : "rgba(255,255,255,0.3)",
+              },
+            ]}
+          >
             {icon ? (
               <View style={styles.iconWrapper}>
                 <ThemedText style={styles.iconText}>{icon}</ThemedText>
               </View>
             ) : null}
-            <ThemedText
-              style={styles.buttonText}
-              numberOfLines={1}
-            >
-              {title.replace(/ /g, '\u00A0')}
+            <ThemedText style={styles.buttonText} numberOfLines={1}>
+              {title.replace(/ /g, "\u00A0")}
             </ThemedText>
           </View>
         </LinearGradient>
@@ -99,13 +120,13 @@ const styles = StyleSheet.create({
   buttonContainer: {
     width: "100%",
     height: Spacing.buttonHeight + 4,
-    borderRadius: BorderRadius.xl, 
+    borderRadius: BorderRadius.xl,
     overflow: "hidden",
     shadowOffset: { width: 0, height: 4 },
   },
   gradient: {
     flex: 1,
-    padding: 2, 
+    padding: 2,
   },
   borderInner: {
     flex: 1,
@@ -114,7 +135,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderRadius: BorderRadius.xl - 2,
     borderWidth: 1.5,
-    borderColor: 'rgba(255,255,255,0.3)', 
+    borderColor: "rgba(255,255,255,0.3)",
     paddingHorizontal: 20,
   },
   iconWrapper: {
@@ -132,21 +153,21 @@ const styles = StyleSheet.create({
     ...Typography.button,
     color: JiguuColors.textOnColor,
     fontSize: 18,
-    width: '100%',
+    width: "100%",
     textAlign: "center",
-    textTransform: 'uppercase',
+    textTransform: "uppercase",
   },
   buttonWrapper: {
     flex: 1,
     borderRadius: BorderRadius.xl,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   glossOverlay: {
-    position: 'absolute',
+    position: "absolute",
     top: 0,
     left: 0,
     right: 0,
-    height: '50%',
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    height: "50%",
+    backgroundColor: "rgba(255, 255, 255, 0.3)",
   },
 });

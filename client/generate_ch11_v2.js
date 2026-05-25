@@ -1,59 +1,59 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const chDir = path.join(__dirname, 'assets', 'chapters', 'chapter11');
-const targetFile = path.join(__dirname, 'data', 'content', 'math-ch11.ts');
+const chDir = path.join(__dirname, "assets", "chapters", "chapter11");
+const targetFile = path.join(__dirname, "data", "content", "math-ch11.ts");
 
-const readFile = (name) => fs.readFileSync(path.join(chDir, name), 'utf8');
+const readFile = (name) => fs.readFileSync(path.join(chDir, name), "utf8");
 
-const overview = readFile('overview.html');
-const exercise1 = readFile('exercise1.html');
-const examples = readFile('examples.html');
-const mcqs = readFile('mcqs.html');
+const overview = readFile("overview.html");
+const exercise1 = readFile("exercise1.html");
+const examples = readFile("examples.html");
+const mcqs = readFile("mcqs.html");
 
 const cleanHtml = (html, isMcq = false) => {
-    // Remove headers/titles
-    html = html.replace(/<div class="header">[\s\S]*?<\/div>/g, '');
-    html = html.replace(/<div class="chapter-title">[\s\S]*?<\/div>/g, '');
-    html = html.replace(/<title>[\s\S]*?<\/title>/g, '');
-    
-    // Fix malformed SVGs before encoding local images (if any)
-    // The pattern is: stroke="stroke=" gray"="" or stroke="pink"=" "
-    // We'll normalize these weird forms.
-    html = html.replace(/stroke="stroke="?\s*([^"]+)"?\s*=""/g, 'stroke="$1"');
-    html = html.replace(/fill="fill="?\s*([^"]+)"?\s*=""/g, 'fill="$1"');
+  // Remove headers/titles
+  html = html.replace(/<div class="header">[\s\S]*?<\/div>/g, "");
+  html = html.replace(/<div class="chapter-title">[\s\S]*?<\/div>/g, "");
+  html = html.replace(/<title>[\s\S]*?<\/title>/g, "");
 
-    if (isMcq) {
-        // PER USER REQUEST: Remove images from MCQs
-        html = html.replace(/<img[^>]+>/g, '');
-    }
+  // Fix malformed SVGs before encoding local images (if any)
+  // The pattern is: stroke="stroke=" gray"="" or stroke="pink"=" "
+  // We'll normalize these weird forms.
+  html = html.replace(/stroke="stroke="?\s*([^"]+)"?\s*=""/g, 'stroke="$1"');
+  html = html.replace(/fill="fill="?\s*([^"]+)"?\s*=""/g, 'fill="$1"');
 
-    return html;
+  if (isMcq) {
+    // PER USER REQUEST: Remove images from MCQs
+    html = html.replace(/<img[^>]+>/g, "");
+  }
+
+  return html;
 };
 
-const encodeImages = (html, color = '#304FFE') => {
-    return html.replace(/<img[^>]+src="([^"]+)"[^>]*>/g, (match, src) => {
-        let updatedSvgBase64 = src;
-        
-        if (src.startsWith('data:image/svg+xml;base64,')) {
-            const base64Part = src.split(',')[1];
-            let decoded = Buffer.from(base64Part, 'base64').toString('utf8');
-            
-            // Fix malformed attributes inside the SVG
-            decoded = decoded
-                .replace(/stroke="stroke="?\s*([^"]+)"?\s*=""/g, 'stroke="$1"')
-                .replace(/fill="fill="?\s*([^"]+)"?\s*=""/g, 'fill="$1"');
-            
-            // Leave colors as they are so the CSS filter can handle them
-            updatedSvgBase64 = `data:image/svg+xml;base64,${Buffer.from(decoded).toString('base64')}`;
-        }
-        
-        return match.replace(src, updatedSvgBase64);
-    });
+const encodeImages = (html, color = "#304FFE") => {
+  return html.replace(/<img[^>]+src="([^"]+)"[^>]*>/g, (match, src) => {
+    let updatedSvgBase64 = src;
+
+    if (src.startsWith("data:image/svg+xml;base64,")) {
+      const base64Part = src.split(",")[1];
+      let decoded = Buffer.from(base64Part, "base64").toString("utf8");
+
+      // Fix malformed attributes inside the SVG
+      decoded = decoded
+        .replace(/stroke="stroke="?\s*([^"]+)"?\s*=""/g, 'stroke="$1"')
+        .replace(/fill="fill="?\s*([^"]+)"?\s*=""/g, 'fill="$1"');
+
+      // Leave colors as they are so the CSS filter can handle them
+      updatedSvgBase64 = `data:image/svg+xml;base64,${Buffer.from(decoded).toString("base64")}`;
+    }
+
+    return match.replace(src, updatedSvgBase64);
+  });
 };
 
 const injectStyles = (html) => {
-    const katex = `
+  const katex = `
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
@@ -72,7 +72,7 @@ const injectStyles = (html) => {
 </script>
 `;
 
-    const commonStyles = `
+  const commonStyles = `
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 200px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
@@ -88,13 +88,13 @@ const injectStyles = (html) => {
   .highlight-text { color: #304FFE !important; font-weight: bold !important; }
 </style>
 `;
-    // Head part
-    return html.replace(/<\/head>/, `${katex}${commonStyles}</head>`);
+  // Head part
+  return html.replace(/<\/head>/, `${katex}${commonStyles}</head>`);
 };
 
 // MCQ Logic injection remains the same but handles the missing images
 const injectMcqLogic = (html) => {
-    const mcqLogic = `
+  const mcqLogic = `
 <style>
     .options { display: flex; flex-direction: column; gap: 10px; margin: 15px 0; }
     .option { padding: 12px 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; cursor: pointer; color: #eee; transition: all 0.2s ease; }
@@ -169,7 +169,7 @@ const injectMcqLogic = (html) => {
     window.onload = initQuiz;
 </script>
 `;
-    return html.replace(/<\/body>/, `${mcqLogic}</body>`);
+  return html.replace(/<\/body>/, `${mcqLogic}</body>`);
 };
 
 const processedOverview = encodeImages(injectStyles(cleanHtml(overview)));
@@ -217,14 +217,16 @@ export const mathCh11: ChapterContent = {
     ],
 
     isHtmlView: true,
-    htmlOverview: \`${processedOverview.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`,
+    htmlOverview: \`${processedOverview.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`,
     htmlExercises: {
-        exercise1: \`${processedExercise1.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`,
-        examples: \`${processedExamples.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`
+        exercise1: \`${processedExercise1.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`,
+        examples: \`${processedExamples.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`
     },
-    htmlMcqs: \`${processedMcqs.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`
+    htmlMcqs: \`${processedMcqs.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`
 };
 `;
 
 fs.writeFileSync(targetFile, fileContent);
-console.log('Chapter 11 integrated successfully with fixed SVG and examples tab.');
+console.log(
+  "Chapter 11 integrated successfully with fixed SVG and examples tab.",
+);

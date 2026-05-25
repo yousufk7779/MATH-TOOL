@@ -1,12 +1,24 @@
 import React, { memo } from "react";
-import { StyleSheet, View, Image, useWindowDimensions, Pressable, Share } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Image,
+  useWindowDimensions,
+  Pressable,
+  Share,
+} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
-import { Spacing, JiguuColors, Typography, BorderRadius } from "@/constants/theme";
+import {
+  Spacing,
+  JiguuColors,
+  Typography,
+  BorderRadius,
+} from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
 const sameerPhoto = require("../../assets/images/sameer-photo.jpg");
@@ -22,7 +34,8 @@ export const CreatorCredit = memo(function CreatorCredit() {
   const handleShare = async () => {
     try {
       await Share.share({
-        message: "Download JIGUU NCERT Solutions here:\nhttps://play.google.com/store/apps/details?id=com.jiguu.mathtool",
+        message:
+          "Download JIGUU NCERT Solutions here:\nhttps://play.google.com/store/apps/details?id=com.jiguu.mathtool",
       });
     } catch (error: any) {
       console.log("Error sharing app: ", error.message);
@@ -30,36 +43,47 @@ export const CreatorCredit = memo(function CreatorCredit() {
   };
 
   return (
-    <View style={[
-      styles.container,
-      {
-        paddingBottom: insets.bottom + Spacing.sm - 6,
-        paddingTop: isLandscape ? 4 : Spacing.md - 4,
-      }
-    ]}>
+    <View
+      style={[
+        styles.container,
+        {
+          paddingBottom: insets.bottom + Spacing.sm - 6,
+          paddingTop: isLandscape ? 4 : Spacing.md - 4,
+        },
+      ]}
+    >
       <View style={styles.linksContainer}>
-        <Pressable 
-          style={styles.aboutLink} 
+        <Pressable
+          style={styles.aboutLink}
           onPress={() => navigation.navigate("AboutEducator")}
           hitSlop={10}
         >
-          <Feather name="info" size={14} color={JiguuColors.textPrimary} style={styles.aboutIcon} />
+          <Feather
+            name="info"
+            size={14}
+            color={JiguuColors.textPrimary}
+            style={styles.aboutIcon}
+          />
           <ThemedText style={styles.aboutText}>About</ThemedText>
         </Pressable>
 
-        <Pressable 
-          style={styles.shareLink} 
-          onPress={handleShare}
-          hitSlop={10}
-        >
-          <Feather name="share-2" size={14} color={JiguuColors.textPrimary} style={styles.shareIcon} />
+        <Pressable style={styles.shareLink} onPress={handleShare} hitSlop={10}>
+          <Feather
+            name="share-2"
+            size={14}
+            color={JiguuColors.textPrimary}
+            style={styles.shareIcon}
+          />
           <ThemedText style={styles.shareText}>Share</ThemedText>
         </Pressable>
       </View>
 
       <View style={styles.creatorInfo}>
-        <Pressable 
-          style={[styles.photoWrapper, isLandscape && styles.photoWrapperLandscape]}
+        <Pressable
+          style={[
+            styles.photoWrapper,
+            isLandscape && styles.photoWrapperLandscape,
+          ]}
           onPress={() => navigation.navigate("AboutEducator")}
         >
           <Image
@@ -69,8 +93,14 @@ export const CreatorCredit = memo(function CreatorCredit() {
           />
         </Pressable>
         <View style={styles.textContainer}>
-          <ThemedText style={[styles.name, isLandscape && styles.nameLandscape]}>Sameer Khan</ThemedText>
-          <ThemedText style={styles.title} numberOfLines={1}>Founder & Educator</ThemedText>
+          <ThemedText
+            style={[styles.name, isLandscape && styles.nameLandscape]}
+          >
+            Sameer Khan
+          </ThemedText>
+          <ThemedText style={styles.title} numberOfLines={1}>
+            Founder & Educator
+          </ThemedText>
         </View>
       </View>
     </View>

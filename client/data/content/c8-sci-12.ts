@@ -38,7 +38,8 @@ export const c8Sci12: ChapterContent = {
   mcqs: [
     {
       id: "c8-sci-12-mcq-1",
-      question: "<div style='text-align: justify;'>Which of the following is the correct order of friction types from strongest to weakest?</div>",
+      question:
+        "<div style='text-align: justify;'>Which of the following is the correct order of friction types from strongest to weakest?</div>",
       options: [
         "<div style='text-align: justify;'>(a) Rolling > Sliding > Static</div>",
         "<div style='text-align: justify;'>(b) Static > Sliding > Rolling</div>",
@@ -49,7 +50,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-2",
-      question: "<div style='text-align: justify;'>The special shape of boats and aeroplanes to reduce fluid friction is called:</div>",
+      question:
+        "<div style='text-align: justify;'>The special shape of boats and aeroplanes to reduce fluid friction is called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Circular</div>",
         "<div style='text-align: justify;'>(b) Rectangular</div>",
@@ -60,7 +62,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-3",
-      question: "<div style='text-align: justify;'>Friction is caused by which of the following factors?</div>",
+      question:
+        "<div style='text-align: justify;'>Friction is caused by which of the following factors?</div>",
       options: [
         "<div style='text-align: justify;'>(a) Smoothness of surfaces</div>",
         "<div style='text-align: justify;'>(b) Irregularities on surfaces</div>",
@@ -71,7 +74,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-4",
-      question: "<div style='text-align: justify;'>Substances that reduce friction when applied between surfaces are called:</div>",
+      question:
+        "<div style='text-align: justify;'>Substances that reduce friction when applied between surfaces are called:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Adhesives</div>",
         "<div style='text-align: justify;'>(b) Lubricants</div>",
@@ -82,7 +86,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-5",
-      question: "<div style='text-align: justify;'>Why are grooves made in the soles of our shoes?</div>",
+      question:
+        "<div style='text-align: justify;'>Why are grooves made in the soles of our shoes?</div>",
       options: [
         "<div style='text-align: justify;'>(a) To make them look better</div>",
         "<div style='text-align: justify;'>(b) To decrease friction</div>",
@@ -93,7 +98,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-6",
-      question: "<div style='text-align: justify;'>Which type of friction is the least among the following?</div>",
+      question:
+        "<div style='text-align: justify;'>Which type of friction is the least among the following?</div>",
       options: [
         "<div style='text-align: justify;'>(a) Static friction</div>",
         "<div style='text-align: justify;'>(b) Sliding friction</div>",
@@ -104,7 +110,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-7",
-      question: "<div style='text-align: justify;'>Fluid friction is also commonly known as:</div>",
+      question:
+        "<div style='text-align: justify;'>Fluid friction is also commonly known as:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Push</div>",
         "<div style='text-align: justify;'>(b) Pull</div>",
@@ -115,7 +122,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-8",
-      question: "<div style='text-align: justify;'>Friction between two surfaces increases if the:</div>",
+      question:
+        "<div style='text-align: justify;'>Friction between two surfaces increases if the:</div>",
       options: [
         "<div style='text-align: justify;'>(a) Surfaces are made smoother</div>",
         "<div style='text-align: justify;'>(b) Surfaces are pressed harder together</div>",
@@ -126,7 +134,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-9",
-      question: "<div style='text-align: justify;'>Friction always acts in the direction:</div>",
+      question:
+        "<div style='text-align: justify;'>Friction always acts in the direction:</div>",
       options: [
         "<div style='text-align: justify;'>(a) same as the direction of motion</div>",
         "<div style='text-align: justify;'>(b) opposite to the direction of motion</div>",
@@ -137,7 +146,8 @@ export const c8Sci12: ChapterContent = {
     },
     {
       id: "c8-sci-12-mcq-10",
-      question: "<div style='text-align: justify;'>Which of the following produces heat?</div>",
+      question:
+        "<div style='text-align: justify;'>Which of the following produces heat?</div>",
       options: [
         "<div style='text-align: justify;'>(a) Static friction</div>",
         "<div style='text-align: justify;'>(b) Friction in general</div>",
@@ -160,7 +170,8 @@ export const c8Sci12: ChapterContent = {
         {
           id: "c8-sci-12-ex1-q1",
           number: "1",
-          question: "<div style='text-align: justify;'>Answer the following questions:<br/>(i) Why are the worn out tyres discarded?<br/>(ii) Why do carom coins move faster on carom board when dusted with talcum powder?<br/>(iii) Why is the surface of conveyor belt made rough?<br/>(iv) Why is the sewing machine often oiled?<br/>(v) Why do new automobile tyres have deep grooves?<br/>(vi) Why does a ball rolling on the ground slow down?<br/>(vii) Why are the boats and aeroplane given special shape?<br/>(viii) Why do meteors burn on entering into the atmosphere?<br/>(ix) Why do painters use sand papers in polishing doors?<br/>(x) Why is it easier to tie a knot with cotton string as compared to silk string?</div>",
+          question:
+            "<div style='text-align: justify;'>Answer the following questions:<br/>(i) Why are the worn out tyres discarded?<br/>(ii) Why do carom coins move faster on carom board when dusted with talcum powder?<br/>(iii) Why is the surface of conveyor belt made rough?<br/>(iv) Why is the sewing machine often oiled?<br/>(v) Why do new automobile tyres have deep grooves?<br/>(vi) Why does a ball rolling on the ground slow down?<br/>(vii) Why are the boats and aeroplane given special shape?<br/>(viii) Why do meteors burn on entering into the atmosphere?<br/>(ix) Why do painters use sand papers in polishing doors?<br/>(x) Why is it easier to tie a knot with cotton string as compared to silk string?</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answers:<br/>(i) Worn out tyres lose their grooves, which reduces friction and makes them slippery and unsafe.<br/>(ii) Talcum powder fills the irregularities on the board, making it smooth and reducing friction.<br/>(iii) To increase friction so that objects placed on it do not slip.<br/>(iv) To reduce friction between its moving parts, ensuring smooth operation and less wear.<br/>(v) To increase friction (grip) with the road to prevent skidding.<br/>(vi) Due to the force of friction acting in the opposite direction to its motion.<br/>(vii) To reduce fluid friction (drag) as they move through water or air. This is called a streamlined shape.<br/>(viii) Due to high friction with the atmospheric air, which produces intense heat.<br/>(ix) To increase friction and effectively remove old paint, rust, or irregularities.<br/>(x) Cotton string has a rougher surface (higher friction) than silk, which prevents the knot from slipping.</div>",
           ],
@@ -169,7 +180,8 @@ export const c8Sci12: ChapterContent = {
         {
           id: "c8-sci-12-ex1-q2",
           number: "2",
-          question: "<div style='text-align: justify;'>Fill in the blank spaces by choosing words from the list given below: (movement, sliding, streamlined, static, opposite)<br/>(i) Friction always acts in the direction ________ to the direction of applied force.<br/>(ii) ________ friction is a self-adjusting force.<br/>(iii) Friction is very useful as it helps in the ________ of the bodies.<br/>(iv) The ________ friction is 10 times the rolling friction.<br/>(v) The boats and aero planes are ________ so as to reduce fluid friction.</div>",
+          question:
+            "<div style='text-align: justify;'>Fill in the blank spaces by choosing words from the list given below: (movement, sliding, streamlined, static, opposite)<br/>(i) Friction always acts in the direction ________ to the direction of applied force.<br/>(ii) ________ friction is a self-adjusting force.<br/>(iii) Friction is very useful as it helps in the ________ of the bodies.<br/>(iv) The ________ friction is 10 times the rolling friction.<br/>(v) The boats and aero planes are ________ so as to reduce fluid friction.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answers:<br/>(i) opposite<br/>(ii) static<br/>(iii) movement<br/>(iv) sliding<br/>(v) streamlined</div>",
           ],
@@ -178,7 +190,8 @@ export const c8Sci12: ChapterContent = {
         {
           id: "c8-sci-12-ex1-q3",
           number: "3",
-          question: "<div style='text-align: justify;'>Statements given below are incorrect. Write the correct statements.<br/>(i) Sliding friction is slightly more than the limiting friction.<br/>(ii) The conveyor belts are made rough, in order to decrease friction.<br/>(iii) The friction between two surfaces decreases with the increase in the weight of a body.<br/>(iv) The friction offered by the wheels is called sliding friction.<br/>(v) The friction increase with the increase in the area of contact at the two surfaces.</div>",
+          question:
+            "<div style='text-align: justify;'>Statements given below are incorrect. Write the correct statements.<br/>(i) Sliding friction is slightly more than the limiting friction.<br/>(ii) The conveyor belts are made rough, in order to decrease friction.<br/>(iii) The friction between two surfaces decreases with the increase in the weight of a body.<br/>(iv) The friction offered by the wheels is called sliding friction.<br/>(v) The friction increase with the increase in the area of contact at the two surfaces.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Corrected Statements:<br/>(i) Sliding friction is slightly <b>less</b> than the limiting friction.<br/>(ii) The conveyor belts are made rough, in order to <b>increase</b> friction.<br/>(iii) The friction between two surfaces <b>increases</b> with the increase in the weight of a body.<br/>(iv) The friction offered by the wheels is called <b>rolling</b> friction.<br/>(v) Friction <b>does not change</b> with the increase in the area of contact for a given load.</div>",
           ],

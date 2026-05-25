@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist3: ChapterContent = {
-    id: "c7-hist-3",
-    number: 3,
-    title: "Delhi: 12th to 15th Century",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-3",
+  number: 3,
+  title: "Delhi: 12th to 15th Century",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Delhi became an important city only in the twelfth century. It first became the capital of a kingdom under the Tomara Rajputs, who were defeated by the Chauhans. Under the Delhi Sultans, Delhi transformed into a capital that controlled vast areas of the subcontinent.</p>
             
@@ -31,8 +31,8 @@ export const c7Hist3: ChapterContent = {
             <p>From the 12th to the 15th century, Delhi rose as a powerful political center. The Sultans established a centralized administrative system using iqtas and tawarikh. While they successfully expanded their empire into South India, they also struggled against Mongol threats and internal rebellions from powerful governors.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h3-ex-all": `
+  htmlExercises: {
+    "c7h3-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Which ruler first established his or her capital at Delhi?</p>
@@ -94,82 +94,105 @@ export const c7Hist3: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Known as Bud Shah, he promoted religious peace, improved irrigation by building canals, and encouraged arts and crafts, which greatly boosted Kashmir's economy and culture.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "Delhi became an important city only in the twelfth century. It first became the capital of a kingdom under the Tomara Rajputs.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h3-mcq-1",
+      question: "Who first established their capital at Delhi?",
+      options: ["Tomaras", "Chauhans", "Khaljis", "Mughals"],
+      correctAnswer: "a",
     },
-    introduction: "Delhi became an important city only in the twelfth century. It first became the capital of a kingdom under the Tomara Rajputs.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h3-mcq-1",
-            question: "Who first established their capital at Delhi?",
-            options: ["Tomaras", "Chauhans", "Khaljis", "Mughals"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h3-mcq-2",
-            question: "In which Sultan's reign did the Sultanate reach its farthest extent?",
-            options: ["Alauddin Khalji", "Muhammad Tughluq", "Iltutmish", "Balban"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h3-mcq-3",
-            question: "Who was the first woman ruler of Delhi?",
-            options: ["Raziyya Sultan", "Nur Jahan", "Chand Bibi", "Rani Lakshmibai"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h3-mcq-4",
-            question: "What was the language of administration under the Delhi Sultans?",
-            options: ["Hindi", "Sanskrit", "Persian", "Urdu"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7h3-mcq-5",
-            question: "Ibn Battuta traveled to India from which country?",
-            options: ["Iran", "Morocco", "China", "Turkey"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h3-mcq-6",
-            question: "What were the 'Tawarikh' in the Sultanate period?",
-            options: ["Market places", "Histories written in Persian", "Military ranks", "Religious hymns"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h3-mcq-7",
-            question: "Who was the founder of the Slave dynasty?",
-            options: ["Iltutmish", "Qutbuddin Aybak", "Balban", "Raziyya Sultan"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h3-mcq-8",
-            question: "What was the 'Circle of Justice' related to?",
-            options: ["Trade routes", "Relationship between King and Peasants", "Religious assembly", "Court music"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h3-mcq-9",
-            question: "Which Sultan built the Siri Fort in Delhi?",
-            options: ["Alauddin Khalji", "Iltutmish", "Muhammad Tughluq", "Firoz Shah Tughluq"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h3-mcq-10",
-            question: "Who was the famous chronicler who wrote about Raziyya Sultan?",
-            options: ["Abul Fazl", "Minhaj-i-Siraj", "Ibn Battuta", "Ziyauddin Barani"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h3-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h3-mcq-2",
+      question:
+        "In which Sultan's reign did the Sultanate reach its farthest extent?",
+      options: ["Alauddin Khalji", "Muhammad Tughluq", "Iltutmish", "Balban"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h3-mcq-3",
+      question: "Who was the first woman ruler of Delhi?",
+      options: ["Raziyya Sultan", "Nur Jahan", "Chand Bibi", "Rani Lakshmibai"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h3-mcq-4",
+      question:
+        "What was the language of administration under the Delhi Sultans?",
+      options: ["Hindi", "Sanskrit", "Persian", "Urdu"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7h3-mcq-5",
+      question: "Ibn Battuta traveled to India from which country?",
+      options: ["Iran", "Morocco", "China", "Turkey"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h3-mcq-6",
+      question: "What were the 'Tawarikh' in the Sultanate period?",
+      options: [
+        "Market places",
+        "Histories written in Persian",
+        "Military ranks",
+        "Religious hymns",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h3-mcq-7",
+      question: "Who was the founder of the Slave dynasty?",
+      options: ["Iltutmish", "Qutbuddin Aybak", "Balban", "Raziyya Sultan"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h3-mcq-8",
+      question: "What was the 'Circle of Justice' related to?",
+      options: [
+        "Trade routes",
+        "Relationship between King and Peasants",
+        "Religious assembly",
+        "Court music",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h3-mcq-9",
+      question: "Which Sultan built the Siri Fort in Delhi?",
+      options: [
+        "Alauddin Khalji",
+        "Iltutmish",
+        "Muhammad Tughluq",
+        "Firoz Shah Tughluq",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h3-mcq-10",
+      question: "Who was the famous chronicler who wrote about Raziyya Sultan?",
+      options: [
+        "Abul Fazl",
+        "Minhaj-i-Siraj",
+        "Ibn Battuta",
+        "Ziyauddin Barani",
+      ],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h3-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

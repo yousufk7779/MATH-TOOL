@@ -2,7 +2,12 @@ import React, { memo } from "react";
 import { StyleSheet, View, Image } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
-import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  BorderRadius,
+  Typography,
+} from "@/constants/theme";
 import { Question } from "@/data/pyqData";
 
 // Placeholder for future image handling - currently empty to avoid missing asset errors
@@ -16,9 +21,16 @@ interface QuestionCardProps {
   contentStyle?: any;
 }
 
-function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, chapterId = "ch1-real-numbers", titleStyle, contentStyle }: QuestionCardProps) {
+function QuestionCard({
+  question,
+  accentColor = JiguuColors.quadraticEquations,
+  chapterId = "ch1-real-numbers",
+  titleStyle,
+  contentStyle,
+}: QuestionCardProps) {
   const isScience = chapterId.startsWith("sci-");
-  const isJustifySec = !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
+  const isJustifySec =
+    !chapterId.startsWith("sst-") && !chapterId.startsWith("eng-");
 
   return (
     <View style={styles.container}>
@@ -31,10 +43,16 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
               lineHeight: isJustifySec ? 26 : 24,
               textAlign: isJustifySec ? "justify" : "left",
               ...StyleSheet.flatten(contentStyle),
-              fontFamily: isScience ? "NotoSans_400Regular" : "NotoSans_400Regular",
+              fontFamily: isScience
+                ? "NotoSans_400Regular"
+                : "NotoSans_400Regular",
             }}
           >
-            <ThemedText style={{ color: accentColor, fontFamily: "NotoSans_400Regular" }}>{question.number} </ThemedText>
+            <ThemedText
+              style={{ color: accentColor, fontFamily: "NotoSans_400Regular" }}
+            >
+              {question.number}{" "}
+            </ThemedText>
             {question.question}
           </ThemedText>
         </View>
@@ -48,53 +66,67 @@ function QuestionCard({ question, accentColor = JiguuColors.quadraticEquations, 
           </View>
         ) : null}
 
-        <ThemedText style={[styles.solutionLabel, StyleSheet.flatten(titleStyle), { fontFamily: "NotoSans_400Regular" }]}>Solution:</ThemedText>
-        {question.solution && question.solution.map((step, index) => {
-          const isFormula = step.startsWith("[Formula]");
-          const isImage = step.trim().startsWith("<img") && step.includes("src=");
+        <ThemedText
+          style={[
+            styles.solutionLabel,
+            StyleSheet.flatten(titleStyle),
+            { fontFamily: "NotoSans_400Regular" },
+          ]}
+        >
+          Solution:
+        </ThemedText>
+        {question.solution &&
+          question.solution.map((step, index) => {
+            const isFormula = step.startsWith("[Formula]");
+            const isImage =
+              step.trim().startsWith("<img") && step.includes("src=");
 
-          if (isImage) {
-            const srcMatch = step.match(/src=["']([^"']+)["']/);
-            const src = srcMatch ? srcMatch[1] : null;
-            if (src) {
-              return (
-                <View key={index} style={styles.imageContainer}>
-                  <Image
-                    source={{ uri: src }}
-                    style={styles.graphImage}
-                  />
-                </View>
-              );
+            if (isImage) {
+              const srcMatch = step.match(/src=["']([^"']+)["']/);
+              const src = srcMatch ? srcMatch[1] : null;
+              if (src) {
+                return (
+                  <View key={index} style={styles.imageContainer}>
+                    <Image source={{ uri: src }} style={styles.graphImage} />
+                  </View>
+                );
+              }
             }
-          }
 
-          const displayStep = isFormula ? step.replace(/\[Formula\]\s?/, "") : step;
-          return (
-            <View key={index} style={styles.stepRow}>
-              <ThemedText
-                style={{
-                  ...Typography.small,
-                  color: isFormula ? "#FF7043" : JiguuColors.textSecondary,
-                  lineHeight: isJustifySec ? 26 : 28,
-                  textAlign: isJustifySec ? "justify" : "left",
-                  fontFamily: "NotoSans_400Regular",
-                  ...StyleSheet.flatten(contentStyle)
-                }}
-              >
-                {displayStep}
-              </ThemedText>
-            </View>
-          );
-        })}
+            const displayStep = isFormula
+              ? step.replace(/\[Formula\]\s?/, "")
+              : step;
+            return (
+              <View key={index} style={styles.stepRow}>
+                <ThemedText
+                  style={{
+                    ...Typography.small,
+                    color: isFormula ? "#FF7043" : JiguuColors.textSecondary,
+                    lineHeight: isJustifySec ? 26 : 28,
+                    textAlign: isJustifySec ? "justify" : "left",
+                    fontFamily: "NotoSans_400Regular",
+                    ...StyleSheet.flatten(contentStyle),
+                  }}
+                >
+                  {displayStep}
+                </ThemedText>
+              </View>
+            );
+          })}
         {question.answer && (
-          <View style={[styles.answerBox, { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" }]}>
+          <View
+            style={[
+              styles.answerBox,
+              { backgroundColor: "#4CAF50" + "15", borderColor: "#4CAF50" },
+            ]}
+          >
             <ThemedText
-              style={{ 
-                ...Typography.body, 
-                fontFamily: "NotoSans_400Regular", 
-                color: "#4CAF50", 
+              style={{
+                ...Typography.body,
+                fontFamily: "NotoSans_400Regular",
+                color: "#4CAF50",
                 textAlign: isJustifySec ? "justify" : "left",
-                lineHeight: isJustifySec ? 26 : 24 
+                lineHeight: isJustifySec ? 26 : 24,
               }}
             >
               {question.answer}
@@ -189,8 +221,8 @@ const styles = StyleSheet.create({
     width: "100%", // Responsive width
     height: 180, // Base height
     borderRadius: BorderRadius.xs,
-    alignSelf: 'center',
-    resizeMode: 'contain', // Proportional scaling
+    alignSelf: "center",
+    resizeMode: "contain", // Proportional scaling
     marginVertical: Spacing.sm,
   },
   questionTextContainer: {},

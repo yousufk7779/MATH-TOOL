@@ -1,7 +1,13 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const img1Base64 = fs.readFileSync('C:\\Users\\hp\\.gemini\\antigravity\\brain\\e228bb5c-816a-4e7e-b50b-5102bc40ebbd\\media__1777050379331.png', 'base64');
-const img2Base64 = fs.readFileSync('C:\\Users\\hp\\.gemini\\antigravity\\brain\\e228bb5c-816a-4e7e-b50b-5102bc40ebbd\\media__1777050379425.png', 'base64');
+const img1Base64 = fs.readFileSync(
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\e228bb5c-816a-4e7e-b50b-5102bc40ebbd\\media__1777050379331.png",
+  "base64",
+);
+const img2Base64 = fs.readFileSync(
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\e228bb5c-816a-4e7e-b50b-5102bc40ebbd\\media__1777050379425.png",
+  "base64",
+);
 
 const q6Img = `<img src="data:image/png;base64,${img1Base64}" style="filter: invert(0.8) sepia(1) hue-rotate(180deg) saturate(3) brightness(1.2); border-radius: 8px;" alt="Fig 8.11" />`;
 const q8Img = `<img src="data:image/png;base64,${img2Base64}" style="filter: invert(0.8) sepia(1) hue-rotate(280deg) saturate(3) brightness(1.2); border-radius: 8px;" alt="Fig 8.12" />`;
@@ -103,7 +109,16 @@ const exerciseObjStr = `    {
       ] 
     }`;
 
-let fileContent = fs.readFileSync('d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-1.ts', 'utf8');
-fileContent = fileContent.replace('{ id: "exercise", name: "Exercise", questions: [] }', exerciseObjStr);
-fs.writeFileSync('d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-1.ts', fileContent);
-console.log('Done!');
+let fileContent = fs.readFileSync(
+  "d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-1.ts",
+  "utf8",
+);
+fileContent = fileContent.replace(
+  '{ id: "exercise", name: "Exercise", questions: [] }',
+  exerciseObjStr,
+);
+fs.writeFileSync(
+  "d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-1.ts",
+  fileContent,
+);
+console.log("Done!");

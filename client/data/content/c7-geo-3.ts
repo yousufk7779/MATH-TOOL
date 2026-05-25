@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#03A9F4"; // Bright Blue for Geography Chapter 3
 
 export const c7Geo3: ChapterContent = {
-    id: "c7-geo-3",
-    number: 3,
-    title: "Our Changing Earth",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-3",
+  number: 3,
+  title: "Our Changing Earth",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>The lithosphere is broken into a number of plates known as the Lithospheric plates. These plates move around very slowly — just a few millimetres each year. This movement is caused by the molten magma inside the earth. The changes on the surface of the earth are produced by two types of forces: Endogenic forces (acting in the interior) and Exogenic forces (acting on the surface).</p>
             
@@ -28,8 +28,8 @@ export const c7Geo3: ChapterContent = {
             <p>When the Lithospheric plates move, the surface of the earth vibrates. These vibrations are called earthquakes. The place where the movement starts is the <b>focus</b>, and the place on the surface above it is the <b>epicentre</b>.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7g3-ex-all": `
+  htmlExercises: {
+    "c7g3-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -157,82 +157,84 @@ export const c7Geo3: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "The lithosphere is broken into a number of plates known as the Lithospheric plates.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g3-mcq-1",
+      question: "Which is not an erosional feature of sea waves?",
+      options: ["Sea Cave", "Beach", "Stack", "Sea Cliff"],
+      correctAnswer: "b",
     },
-    introduction: "The lithosphere is broken into a number of plates known as the Lithospheric plates.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g3-mcq-1",
-            question: "Which is not an erosional feature of sea waves?",
-            options: ["Sea Cave", "Beach", "Stack", "Sea Cliff"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g3-mcq-2",
-            question: "The depositional feature of a glacier is:",
-            options: ["Floodplain", "Beach", "Moraine", "Sand Dune"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g3-mcq-3",
-            question: "Which of these is caused by sudden movements of the earth?",
-            options: ["Volcano", "Folding", "Erosion", "Loess"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g3-mcq-4",
-            question: "Mushroom rocks are found in:",
-            options: ["Deserts", "River Valleys", "Glaciers", "Mountains"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g3-mcq-5",
-            question: "Ox-bow lakes are found in:",
-            options: ["Deserts", "River Valleys", "Glaciers", "Seashores"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g3-mcq-6",
-            question: "What is the instrument used to measure earthquakes?",
-            options: ["Barometer", "Thermometer", "Seismograph", "Anemometer"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g3-mcq-7",
-            question: "The place on the earth's surface directly above the focus is:",
-            options: ["Focus", "Epicentre", "Vent", "Crater"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g3-mcq-8",
-            question: "Sudden movements like earthquakes are caused by _____ forces.",
-            options: ["Exogenic", "Endogenic", "Gravitational", "Magnetic"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g3-mcq-9",
-            question: "Large deposits of loess are found in:",
-            options: ["India", "China", "Egypt", "USA"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g3-mcq-10",
-            question: "The steep rocky coast rising vertically above sea water is called:",
-            options: ["Sea Cliff", "Stack", "Beach", "Sea Arch"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g3-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g3-mcq-2",
+      question: "The depositional feature of a glacier is:",
+      options: ["Floodplain", "Beach", "Moraine", "Sand Dune"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g3-mcq-3",
+      question: "Which of these is caused by sudden movements of the earth?",
+      options: ["Volcano", "Folding", "Erosion", "Loess"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g3-mcq-4",
+      question: "Mushroom rocks are found in:",
+      options: ["Deserts", "River Valleys", "Glaciers", "Mountains"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g3-mcq-5",
+      question: "Ox-bow lakes are found in:",
+      options: ["Deserts", "River Valleys", "Glaciers", "Seashores"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g3-mcq-6",
+      question: "What is the instrument used to measure earthquakes?",
+      options: ["Barometer", "Thermometer", "Seismograph", "Anemometer"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g3-mcq-7",
+      question: "The place on the earth's surface directly above the focus is:",
+      options: ["Focus", "Epicentre", "Vent", "Crater"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g3-mcq-8",
+      question: "Sudden movements like earthquakes are caused by _____ forces.",
+      options: ["Exogenic", "Endogenic", "Gravitational", "Magnetic"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g3-mcq-9",
+      question: "Large deposits of loess are found in:",
+      options: ["India", "China", "Egypt", "USA"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g3-mcq-10",
+      question:
+        "The steep rocky coast rising vertically above sea water is called:",
+      options: ["Sea Cliff", "Stack", "Beach", "Sea Arch"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g3-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

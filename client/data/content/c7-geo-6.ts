@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#00BCD4"; // Cyan for Geography Chapter 6
 
 export const c7Geo6: ChapterContent = {
-    id: "c7-geo-6",
-    number: 6,
-    title: "Human Environment Interactions",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-6",
+  number: 6,
+  title: "Human Environment Interactions",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Humans interact with their environment and modify it according to their needs. This chapter explores life in two different regions: the Amazon Basin (Tropical) and the Ganga-Brahmaputra Basin (Subtropical).</p>
             
@@ -21,8 +21,8 @@ export const c7Geo6: ChapterContent = {
             <p>Tourism is an important activity. Places like the Taj Mahal on the banks of River Yamuna, Allahabad on the confluence of Ganga and Yamuna, and Buddhist stupas in Uttar Pradesh and Bihar attract many tourists.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7g6-ex-all": `
+  htmlExercises: {
+    "c7g6-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -126,82 +126,94 @@ export const c7Geo6: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "Humans interact with their environment and modify it according to their needs.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g6-mcq-1",
+      question: "Toucans are a type of:",
+      options: ["Animals", "Birds", "Crops", "Fishes"],
+      correctAnswer: "b",
     },
-    introduction: "Humans interact with their environment and modify it according to their needs.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g6-mcq-1",
-            question: "Toucans are a type of:",
-            options: ["Animals", "Birds", "Crops", "Fishes"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g6-mcq-2",
-            question: "Manioc is the staple food of:",
-            options: ["Ganga Basin", "Africa", "Amazon Basin", "Ladakh"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g6-mcq-3",
-            question: "Kolkata is located on the river:",
-            options: ["Hooghly", "Ganga", "Yamuna", "Brahmaputra"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g6-mcq-4",
-            question: "Deodars and firs are types of:",
-            options: ["Coniferous trees", "Deciduous trees", "Tropical trees", "Desert shrubs"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g6-mcq-5",
-            question: "Bengal tiger is found in:",
-            options: ["Mountains", "Amazon Basin", "Delta area", "Thar Desert"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g6-mcq-6",
-            question: "The Amazon Basin is located in which continent?",
-            options: ["North America", "South America", "Africa", "Australia"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g6-mcq-7",
-            question: "What is the main occupation of people in the Ganga-Brahmaputra basin?",
-            options: ["Mining", "Fishing", "Agriculture", "Hunting"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g6-mcq-8",
-            question: "What are 'Maloca'?",
-            options: ["Steep slanting roof houses", "Type of fish", "A bird", "A crop"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g6-mcq-9",
-            question: "Slash and burn is a type of:",
-            options: ["House", "Agriculture", "Animal", "River"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g6-mcq-10",
-            question: "The Brahmaputra is known as ____ in Tibet.",
-            options: ["Hooghly", "Hoang-Ho", "Tsangpo", "Dehang"],
-            correctAnswer: "c"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g6-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g6-mcq-2",
+      question: "Manioc is the staple food of:",
+      options: ["Ganga Basin", "Africa", "Amazon Basin", "Ladakh"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g6-mcq-3",
+      question: "Kolkata is located on the river:",
+      options: ["Hooghly", "Ganga", "Yamuna", "Brahmaputra"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g6-mcq-4",
+      question: "Deodars and firs are types of:",
+      options: [
+        "Coniferous trees",
+        "Deciduous trees",
+        "Tropical trees",
+        "Desert shrubs",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g6-mcq-5",
+      question: "Bengal tiger is found in:",
+      options: ["Mountains", "Amazon Basin", "Delta area", "Thar Desert"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g6-mcq-6",
+      question: "The Amazon Basin is located in which continent?",
+      options: ["North America", "South America", "Africa", "Australia"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g6-mcq-7",
+      question:
+        "What is the main occupation of people in the Ganga-Brahmaputra basin?",
+      options: ["Mining", "Fishing", "Agriculture", "Hunting"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g6-mcq-8",
+      question: "What are 'Maloca'?",
+      options: [
+        "Steep slanting roof houses",
+        "Type of fish",
+        "A bird",
+        "A crop",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g6-mcq-9",
+      question: "Slash and burn is a type of:",
+      options: ["House", "Agriculture", "Animal", "River"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g6-mcq-10",
+      question: "The Brahmaputra is known as ____ in Tibet.",
+      options: ["Hooghly", "Hoang-Ho", "Tsangpo", "Dehang"],
+      correctAnswer: "c",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g6-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

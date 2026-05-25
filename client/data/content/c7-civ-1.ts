@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#AB47BC"; // Chapter 1 theme (Purple)
 
 export const c7Civ1: ChapterContent = {
-    id: "c7-civ-1",
-    number: 1,
-    title: "On Equality",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-civ-1",
+  number: 1,
+  title: "On Equality",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>India is a democracy. The key elements of a democratic government include people’s participation, the resolution of conflict, and equality and justice. Equality is a key feature of democracy and influences all aspects of its functioning.</p>
             
@@ -21,8 +21,8 @@ export const c7Civ1: ChapterContent = {
             <p>The government tries to implement equality through laws and through government programs/schemes. One such example is the <b>Mid-day Meal Scheme</b>, first introduced in Tamil Nadu, which helps in increasing school attendance and reducing caste prejudices.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7c1-ex-all": `
+  htmlExercises: {
+    "c7c1-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 30px;">
                     <div style="margin-bottom: 18px;">
@@ -53,82 +53,91 @@ export const c7Civ1: ChapterContent = {
                     </div>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "Equality is a key feature of democracy and influences all aspects of its functioning.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7c1-mcq-1",
+      question: "Who is the author of the book 'Joothan'?",
+      options: ["B.R. Ambedkar", "Omprakash Valmiki", "Kanta", "Ansari"],
+      correctAnswer: "b",
     },
-    introduction: "Equality is a key feature of democracy and influences all aspects of its functioning.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7c1-mcq-1",
-            question: "Who is the author of the book 'Joothan'?",
-            options: ["B.R. Ambedkar", "Omprakash Valmiki", "Kanta", "Ansari"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-2",
-            question: "Which Article of the Indian Constitution prohibits discrimination?",
-            options: ["Article 14", "Article 15", "Article 21", "Article 32"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-3",
-            question: "What is the meaning of Universal Adult Franchise?",
-            options: ["Right to work", "Right to vote for all adults", "Right to education", "Right to property"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-4",
-            question: "Rosa Parks was an _____ woman.",
-            options: ["Indian", "African-American", "British", "French"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-5",
-            question: "The Civil Rights Act was passed in the USA in which year?",
-            options: ["1950", "1960", "1964", "1970"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c1-mcq-6",
-            question: "Which state in India first introduced the Mid-day Meal Scheme?",
-            options: ["Kerala", "Tamil Nadu", "Gujarat", "Punjab"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-7",
-            question: "Equality is a key feature of which form of government?",
-            options: ["Monarchy", "Dictatorship", "Democracy", "Military rule"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c1-mcq-8",
-            question: "The 'Rights of Persons with Disabilities Act' was passed in India in:",
-            options: ["2014", "2015", "2016", "2018"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7c1-mcq-9",
-            question: "The term 'Dalit' literally means:",
-            options: ["Lower caste", "Broken", "Untouchable", "Strong"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7c1-mcq-10",
-            question: "According to the Constitution, every person is:",
-            options: ["Unequal", "Equal", "Superior", "Inferior"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7c1-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7c1-mcq-2",
+      question:
+        "Which Article of the Indian Constitution prohibits discrimination?",
+      options: ["Article 14", "Article 15", "Article 21", "Article 32"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c1-mcq-3",
+      question: "What is the meaning of Universal Adult Franchise?",
+      options: [
+        "Right to work",
+        "Right to vote for all adults",
+        "Right to education",
+        "Right to property",
+      ],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c1-mcq-4",
+      question: "Rosa Parks was an _____ woman.",
+      options: ["Indian", "African-American", "British", "French"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c1-mcq-5",
+      question: "The Civil Rights Act was passed in the USA in which year?",
+      options: ["1950", "1960", "1964", "1970"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c1-mcq-6",
+      question:
+        "Which state in India first introduced the Mid-day Meal Scheme?",
+      options: ["Kerala", "Tamil Nadu", "Gujarat", "Punjab"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c1-mcq-7",
+      question: "Equality is a key feature of which form of government?",
+      options: ["Monarchy", "Dictatorship", "Democracy", "Military rule"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c1-mcq-8",
+      question:
+        "The 'Rights of Persons with Disabilities Act' was passed in India in:",
+      options: ["2014", "2015", "2016", "2018"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7c1-mcq-9",
+      question: "The term 'Dalit' literally means:",
+      options: ["Lower caste", "Broken", "Untouchable", "Strong"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7c1-mcq-10",
+      question: "According to the Constitution, every person is:",
+      options: ["Unequal", "Equal", "Superior", "Inferior"],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7c1-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

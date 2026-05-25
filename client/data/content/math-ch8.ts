@@ -1,137 +1,97 @@
 import { ChapterContent } from "../types";
 
 export const mathCh8: ChapterContent = {
-    id: "ch8",
-    number: 8,
-    title: "Introduction to Trigonometry",
-    introduction: "Loading Chapter 8...",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "exercise1", name: "Exercise 8.1", questions: [] },
-        { id: "exercise2", name: "Exercise 8.2", questions: [] },
-        { id: "exercise3", name: "Exercise 8.3", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">1. The value of 9 sec² A - 9 tan² A is:</span>",
-            "options": [
-                "(A) 1",
-                "(B) 9",
-                "(C) 8",
-                "(D) 0"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">2. The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:</span>",
-            "options": [
-                "(A) 0",
-                "(B) 1",
-                "(C) 2",
-                "(D) -1"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">3. (sec A + tan A)(1 - sin A) is equal to:</span>",
-            "options": [
-                "(A) sec A",
-                "(B) sin A",
-                "(C) cosec A",
-                "(D) cos A"
-            ],
-            "correctAnswer": "D"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">4. The value of (1 + tan² A) / (1 + cot² A) is:</span>",
-            "options": [
-                "(A) sec² A",
-                "(B) -1",
-                "(C) cot² A",
-                "(D) tan² A"
-            ],
-            "correctAnswer": "D"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">5. If sin A = 3/4, then cos A is:</span>",
-            "options": [
-                "(A) 4/3",
-                "(B) √7 / 4",
-                "(C) 3 / √7",
-                "(D) √7 / 3"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">6. If 4 tan A = 3, then the value of (4 sin θ - cos θ) / (4 sin θ + cos θ) is:</span>",
-            "options": [
-                "(A) 2/3",
-                "(B) 1/3",
-                "(C) 1/2",
-                "(D) 3/4"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">7. The value of sin 60° cos 30° + sin 30° cos 60° is:</span>",
-            "options": [
-                "(A) 0",
-                "(B) 1",
-                "(C) 2",
-                "(D) √3"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">8. If tan A = √3, then the value of sec A is:</span>",
-            "options": [
-                "(A) 2",
-                "(B) √3 / 2",
-                "(C) 1/2",
-                "(D) 1 / √3"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">9. The value of tan 45° is:</span>",
-            "options": [
-                "(A) 0",
-                "(B) 1",
-                "(C) √3",
-                "(D) 1 / √3"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">10. If cos 9α = sin α and 9α < 90°, then the value of tan 5α is:</span>",
-            "options": [
-                "(A) 1 / √3",
-                "(B) √3",
-                "(C) 1",
-                "(D) 0"
-            ],
-            "correctAnswer": "C"
-        }
-    ],
-    summary: [],
+  id: "ch8",
+  number: 8,
+  title: "Introduction to Trigonometry",
+  introduction: "Loading Chapter 8...",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "exercise1", name: "Exercise 8.1", questions: [] },
+    { id: "exercise2", name: "Exercise 8.2", questions: [] },
+    { id: "exercise3", name: "Exercise 8.3", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">1. The value of 9 sec² A - 9 tan² A is:</span>',
+      options: ["(A) 1", "(B) 9", "(C) 8", "(D) 0"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">2. The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:</span>',
+      options: ["(A) 0", "(B) 1", "(C) 2", "(D) -1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">3. (sec A + tan A)(1 - sin A) is equal to:</span>',
+      options: ["(A) sec A", "(B) sin A", "(C) cosec A", "(D) cos A"],
+      correctAnswer: "D",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">4. The value of (1 + tan² A) / (1 + cot² A) is:</span>',
+      options: ["(A) sec² A", "(B) -1", "(C) cot² A", "(D) tan² A"],
+      correctAnswer: "D",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">5. If sin A = 3/4, then cos A is:</span>',
+      options: ["(A) 4/3", "(B) √7 / 4", "(C) 3 / √7", "(D) √7 / 3"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">6. If 4 tan A = 3, then the value of (4 sin θ - cos θ) / (4 sin θ + cos θ) is:</span>',
+      options: ["(A) 2/3", "(B) 1/3", "(C) 1/2", "(D) 3/4"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">7. The value of sin 60° cos 30° + sin 30° cos 60° is:</span>',
+      options: ["(A) 0", "(B) 1", "(C) 2", "(D) √3"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">8. If tan A = √3, then the value of sec A is:</span>',
+      options: ["(A) 2", "(B) √3 / 2", "(C) 1/2", "(D) 1 / √3"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">9. The value of tan 45° is:</span>',
+      options: ["(A) 0", "(B) 1", "(C) √3", "(D) 1 / √3"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq10",
+      question:
+        '<span style="font-weight: normal;">10. If cos 9α = sin α and 9α < 90°, then the value of tan 5α is:</span>',
+      options: ["(A) 1 / √3", "(B) √3", "(C) 1", "(D) 0"],
+      correctAnswer: "C",
+    },
+  ],
+  summary: [],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -408,8 +368,8 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -829,7 +789,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-        exercise2: `<!DOCTYPE html>
+    exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1148,7 +1108,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-        exercise3: `<!DOCTYPE html>
+    exercise3: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1533,7 +1493,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1921,6 +1881,6 @@ export const mathCh8: ChapterContent = {
             <div class="final-answer">Hence Proved.</div>
         </div>
 
-</html>`
-    },
+</html>`,
+  },
 };

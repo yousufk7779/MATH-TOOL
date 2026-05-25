@@ -14,17 +14,19 @@ export const StaticHeader = memo(function StaticHeader() {
   const isClassSelector = route.name === "ClassSelector";
 
   return (
-    <View style={[
-      styles.container,
-      {
-        paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.sm,
-        paddingBottom: isLandscape ? 2 : 0,
-        height: isLandscape ? 100 : insets.top + 105,
-        flexDirection: isLandscape ? "row" : "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }
-    ]}>
+    <View
+      style={[
+        styles.container,
+        {
+          paddingTop: isLandscape ? insets.top + 5 : insets.top + Spacing.sm,
+          paddingBottom: isLandscape ? 2 : 0,
+          height: isLandscape ? 100 : insets.top + 105,
+          flexDirection: isLandscape ? "row" : "column",
+          justifyContent: "center",
+          alignItems: "center",
+        },
+      ]}
+    >
       <View style={styles.logoContainer}>
         <JiguuLogo size={isLandscape ? "small" : "large"} showSubtitle={true} />
       </View>

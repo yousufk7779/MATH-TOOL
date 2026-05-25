@@ -2,7 +2,12 @@
   {
     "id": "c9-s-1",
     "question": "What is the SI unit of distance?",
-    "options": ["(A) Centimetre", "(B) Metre", "(C) Kilometre", "(D) Millimetre"],
+    "options": [
+      "(A) Centimetre",
+      "(B) Metre",
+      "(C) Kilometre",
+      "(D) Millimetre"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-1",
@@ -29,7 +34,12 @@
   {
     "id": "c9-s-4",
     "question": "A body moving in a circular path with constant speed has:",
-    "options": ["(A) Constant velocity", "(B) Variable speed", "(C) Acceleration", "(D) No acceleration"],
+    "options": [
+      "(A) Constant velocity",
+      "(B) Variable speed",
+      "(C) Acceleration",
+      "(D) No acceleration"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c9-sci-phy-1",
@@ -65,7 +75,12 @@
   {
     "id": "c9-s-8",
     "question": "Momentum is the product of mass and:",
-    "options": ["(A) Acceleration", "(B) Velocity", "(C) Force", "(D) Distance"],
+    "options": [
+      "(A) Acceleration",
+      "(B) Velocity",
+      "(C) Force",
+      "(D) Distance"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-2",
@@ -74,7 +89,12 @@
   {
     "id": "c9-s-9",
     "question": "The action and reaction forces act on:",
-    "options": ["(A) Same body", "(B) Different bodies", "(C) Any body", "(D) None"],
+    "options": [
+      "(A) Same body",
+      "(B) Different bodies",
+      "(C) Any body",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-2",
@@ -119,7 +139,12 @@
   {
     "id": "c9-s-14",
     "question": "Density is defined as:",
-    "options": ["(A) Mass / Volume", "(B) Volume / Mass", "(C) Mass x Volume", "(D) Mass + Volume"],
+    "options": [
+      "(A) Mass / Volume",
+      "(B) Volume / Mass",
+      "(C) Mass x Volume",
+      "(D) Mass + Volume"
+    ],
     "correctAnswer": "A",
     "subject": "physics",
     "chapterId": "c9-sci-phy-5",
@@ -128,7 +153,12 @@
   {
     "id": "c9-s-15",
     "question": "The upward force exerted by a liquid on an object is called:",
-    "options": ["(A) Gravitational force", "(B) Buoyant force", "(C) Frictional force", "(D) Magnetic force"],
+    "options": [
+      "(A) Gravitational force",
+      "(B) Buoyant force",
+      "(C) Frictional force",
+      "(D) Magnetic force"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-5",
@@ -173,7 +203,12 @@
   {
     "id": "c9-s-20",
     "question": "Energy possessed by a stretched rubber band is:",
-    "options": ["(A) Kinetic energy", "(B) Potential energy", "(C) Heat energy", "(D) Light energy"],
+    "options": [
+      "(A) Kinetic energy",
+      "(B) Potential energy",
+      "(C) Heat energy",
+      "(D) Light energy"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-3",
@@ -182,7 +217,12 @@
   {
     "id": "c9-s-21",
     "question": "Sound is a ________ wave.",
-    "options": ["(A) Transverse", "(B) Longitudinal", "(C) Electromagnetic", "(D) None"],
+    "options": [
+      "(A) Transverse",
+      "(B) Longitudinal",
+      "(C) Electromagnetic",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -191,7 +231,12 @@
   {
     "id": "c9-s-22",
     "question": "The number of oscillations per unit time is called:",
-    "options": ["(A) Amplitude", "(B) Wavelength", "(C) Frequency", "(D) Speed"],
+    "options": [
+      "(A) Amplitude",
+      "(B) Wavelength",
+      "(C) Frequency",
+      "(D) Speed"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -209,7 +254,12 @@
   {
     "id": "c9-s-24",
     "question": "The human ear can hear sounds in the range:",
-    "options": ["(A) 0-20 Hz", "(B) 20-20,000 Hz", "(C) Above 20,000 Hz", "(D) 100-1000 Hz"],
+    "options": [
+      "(A) 0-20 Hz",
+      "(B) 20-20,000 Hz",
+      "(C) Above 20,000 Hz",
+      "(D) 100-1000 Hz"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -218,7 +268,12 @@
   {
     "id": "c9-s-25",
     "question": "Distance between two consecutive compressions is:",
-    "options": ["(A) Amplitude", "(B) Wavelength", "(C) Frequency", "(D) Time period"],
+    "options": [
+      "(A) Amplitude",
+      "(B) Wavelength",
+      "(C) Frequency",
+      "(D) Time period"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -236,7 +291,12 @@
   {
     "id": "c9-s-27",
     "question": "The process of change of state from solid to liquid is called:",
-    "options": ["(A) Fusion", "(B) Solidification", "(C) Vaporization", "(D) Sublimation"],
+    "options": [
+      "(A) Fusion",
+      "(B) Solidification",
+      "(C) Vaporization",
+      "(D) Sublimation"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-1",
@@ -272,7 +332,12 @@
   {
     "id": "c9-s-31",
     "question": "A mixture of salt and water is a ________ mixture.",
-    "options": ["(A) Homogeneous", "(B) Heterogeneous", "(C) Pure", "(D) Compound"],
+    "options": [
+      "(A) Homogeneous",
+      "(B) Heterogeneous",
+      "(C) Pure",
+      "(D) Compound"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -290,7 +355,12 @@
   {
     "id": "c9-s-33",
     "question": "Tyndall effect is shown by:",
-    "options": ["(A) True solution", "(B) Colloidal solution", "(C) Suspensions", "(D) Both B and C"],
+    "options": [
+      "(A) True solution",
+      "(B) Colloidal solution",
+      "(C) Suspensions",
+      "(D) Both B and C"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -299,7 +369,12 @@
   {
     "id": "c9-s-34",
     "question": "Which of the following is a physical change?",
-    "options": ["(A) Rusting of iron", "(B) Burning of wood", "(C) Melting of ice", "(D) Cooking of food"],
+    "options": [
+      "(A) Rusting of iron",
+      "(B) Burning of wood",
+      "(C) Melting of ice",
+      "(D) Cooking of food"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -326,7 +401,12 @@
   {
     "id": "c9-s-37",
     "question": "Who discovered the nucleus of an atom?",
-    "options": ["(A) J.J. Thomson", "(B) Rutherford", "(C) Bohr", "(D) Chadwick"],
+    "options": [
+      "(A) J.J. Thomson",
+      "(B) Rutherford",
+      "(C) Bohr",
+      "(D) Chadwick"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-4",
@@ -335,7 +415,12 @@
   {
     "id": "c9-s-38",
     "question": "The atomic number of an element is equal to number of:",
-    "options": ["(A) Neutrons", "(B) Electrons", "(C) Protons", "(D) Both B and C"],
+    "options": [
+      "(A) Neutrons",
+      "(B) Electrons",
+      "(C) Protons",
+      "(D) Both B and C"
+    ],
     "correctAnswer": "C",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-4",
@@ -371,7 +456,12 @@
   {
     "id": "c9-s-42",
     "question": "Who discovered the cell for the first time?",
-    "options": ["(A) Robert Brown", "(B) Robert Hooke", "(C) Purkinje", "(D) Virchow"],
+    "options": [
+      "(A) Robert Brown",
+      "(B) Robert Hooke",
+      "(C) Purkinje",
+      "(D) Virchow"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -380,7 +470,12 @@
   {
     "id": "c9-s-43",
     "question": "The powerhouse of the cell is:",
-    "options": ["(A) Nucleus", "(B) Ribosome", "(C) Mitochondria", "(D) Golgi apparatus"],
+    "options": [
+      "(A) Nucleus",
+      "(B) Ribosome",
+      "(C) Mitochondria",
+      "(D) Golgi apparatus"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -389,7 +484,12 @@
   {
     "id": "c9-s-44",
     "question": "Suicidal bags of the cell are:",
-    "options": ["(A) Lysosomes", "(B) Plastids", "(C) Vacuoles", "(D) Ribosomes"],
+    "options": [
+      "(A) Lysosomes",
+      "(B) Plastids",
+      "(C) Vacuoles",
+      "(D) Ribosomes"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -398,7 +498,12 @@
   {
     "id": "c9-s-45",
     "question": "Kitchen of the cell is:",
-    "options": ["(A) Mitochondria", "(B) Chloroplast", "(C) Nucleus", "(D) Cell wall"],
+    "options": [
+      "(A) Mitochondria",
+      "(B) Chloroplast",
+      "(C) Nucleus",
+      "(D) Cell wall"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -416,7 +521,12 @@
   {
     "id": "c9-s-47",
     "question": "Which tissue transports water in plants?",
-    "options": ["(A) Phloem", "(B) Xylem", "(C) Parenchyma", "(D) Sclerenchyma"],
+    "options": [
+      "(A) Phloem",
+      "(B) Xylem",
+      "(C) Parenchyma",
+      "(D) Sclerenchyma"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -434,7 +544,12 @@
   {
     "id": "c9-s-49",
     "question": "Nervous tissue is made up of cells called:",
-    "options": ["(A) Neurons", "(B) Nephrons", "(C) Osteocytes", "(D) Myocytes"],
+    "options": [
+      "(A) Neurons",
+      "(B) Nephrons",
+      "(C) Osteocytes",
+      "(D) Myocytes"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -443,7 +558,12 @@
   {
     "id": "c9-s-50",
     "question": "Cereals provide us with:",
-    "options": ["(A) Proteins", "(B) Fats", "(C) Carbohydrates", "(D) Vitamins"],
+    "options": [
+      "(A) Proteins",
+      "(B) Fats",
+      "(C) Carbohydrates",
+      "(D) Vitamins"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c9-sci-bio-3",
@@ -461,7 +581,12 @@
   {
     "id": "c9-s-52",
     "question": "Full form of HIV is:",
-    "options": ["(A) Human Immune Virus", "(B) Human Immunodeficiency Virus", "(C) Healthy Immune Virus", "(D) None"],
+    "options": [
+      "(A) Human Immune Virus",
+      "(B) Human Immunodeficiency Virus",
+      "(C) Healthy Immune Virus",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-4",
@@ -470,7 +595,12 @@
   {
     "id": "c9-s-53",
     "question": "Drugs that slow down brain activity are:",
-    "options": ["(A) Stimulants", "(B) Depressants", "(C) Narcotics", "(D) Hallucinogens"],
+    "options": [
+      "(A) Stimulants",
+      "(B) Depressants",
+      "(C) Narcotics",
+      "(D) Hallucinogens"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-4",
@@ -479,7 +609,12 @@
   {
     "id": "c9-s-54",
     "question": "Adolescence is a period of:",
-    "options": ["(A) No change", "(B) Rapid growth", "(C) Only mental change", "(D) Only physical change"],
+    "options": [
+      "(A) No change",
+      "(B) Rapid growth",
+      "(C) Only mental change",
+      "(D) Only physical change"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-4",
@@ -506,7 +641,12 @@
   {
     "id": "c9-s-57",
     "question": "Acceleration is ________ per unit time.",
-    "options": ["(A) Velocity change", "(B) Distance change", "(C) Displacement change", "(D) Speed change"],
+    "options": [
+      "(A) Velocity change",
+      "(B) Distance change",
+      "(C) Displacement change",
+      "(D) Speed change"
+    ],
     "correctAnswer": "A",
     "subject": "physics",
     "chapterId": "c9-sci-phy-1",
@@ -677,7 +817,12 @@
   {
     "id": "c9-s-76",
     "question": "Plasma membrane is made of:",
-    "options": ["(A) Lipids and Proteins", "(B) Cellulose", "(C) Starch", "(D) Glucose"],
+    "options": [
+      "(A) Lipids and Proteins",
+      "(B) Cellulose",
+      "(C) Starch",
+      "(D) Glucose"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -686,7 +831,12 @@
   {
     "id": "c9-s-77",
     "question": "Muscular tissue responsible for movement is:",
-    "options": ["(A) Striated", "(B) Smooth", "(C) Cardiac", "(D) All of these"],
+    "options": [
+      "(A) Striated",
+      "(B) Smooth",
+      "(C) Cardiac",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -695,7 +845,12 @@
   {
     "id": "c9-s-78",
     "question": "Ligament connects ________ to ________.",
-    "options": ["(A) Bone to Bone", "(B) Muscle to Bone", "(C) Muscle to Muscle", "(D) None"],
+    "options": [
+      "(A) Bone to Bone",
+      "(B) Muscle to Bone",
+      "(C) Muscle to Muscle",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -704,7 +859,12 @@
   {
     "id": "c9-s-79",
     "question": "Tendon connects ________ to ________.",
-    "options": ["(A) Bone to Bone", "(B) Muscle to Bone", "(C) Muscle to Muscle", "(D) Skin to Bone"],
+    "options": [
+      "(A) Bone to Bone",
+      "(B) Muscle to Bone",
+      "(C) Muscle to Muscle",
+      "(D) Skin to Bone"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -758,7 +918,12 @@
   {
     "id": "c9-s-85",
     "question": "In vacuum, all bodies fall with same:",
-    "options": ["(A) Speed", "(B) Velocity", "(C) Acceleration", "(D) Momentum"],
+    "options": [
+      "(A) Speed",
+      "(B) Velocity",
+      "(C) Acceleration",
+      "(D) Momentum"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c9-sci-phy-4",
@@ -803,7 +968,12 @@
   {
     "id": "c9-s-90",
     "question": "A fruit falling from a tree has ________ energy.",
-    "options": ["(A) Kinetic", "(B) Potential", "(C) Mechanical", "(D) All of these"],
+    "options": [
+      "(A) Kinetic",
+      "(B) Potential",
+      "(C) Mechanical",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "physics",
     "chapterId": "c9-sci-phy-3",
@@ -821,7 +991,12 @@
   {
     "id": "c9-s-92",
     "question": "Stethoscope works on the principle of ________.",
-    "options": ["(A) Refraction", "(B) Multiple reflection", "(C) Dispersion", "(D) Diffraction"],
+    "options": [
+      "(A) Refraction",
+      "(B) Multiple reflection",
+      "(C) Dispersion",
+      "(D) Diffraction"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -830,7 +1005,12 @@
   {
     "id": "c9-s-93",
     "question": "Humidity ________ the rate of evaporation.",
-    "options": ["(A) Increases", "(B) Decreases", "(C) Does not change", "(D) Stops"],
+    "options": [
+      "(A) Increases",
+      "(B) Decreases",
+      "(C) Does not change",
+      "(D) Stops"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-1",
@@ -839,7 +1019,12 @@
   {
     "id": "c9-s-94",
     "question": "Which of these is a metalloid?",
-    "options": ["(A) Boron", "(B) Silicon", "(C) Germanium", "(D) All of these"],
+    "options": [
+      "(A) Boron",
+      "(B) Silicon",
+      "(C) Germanium",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -911,7 +1096,12 @@
   {
     "id": "c9-s-102",
     "question": "When we stop pedaling a bicycle, it slows down due to:",
-    "options": ["(A) Inertia", "(B) Friction", "(C) Gravity", "(D) Applied force"],
+    "options": [
+      "(A) Inertia",
+      "(B) Friction",
+      "(C) Gravity",
+      "(D) Applied force"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-2",
@@ -920,7 +1110,12 @@
   {
     "id": "c9-s-103",
     "question": "To every action, there is an ________ and ________ reaction.",
-    "options": ["(A) Equal, Same", "(B) Equal, Opposite", "(C) Unequal, Opposite", "(D) Small, Large"],
+    "options": [
+      "(A) Equal, Same",
+      "(B) Equal, Opposite",
+      "(C) Unequal, Opposite",
+      "(D) Small, Large"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-2",
@@ -956,7 +1151,12 @@
   {
     "id": "c9-s-107",
     "question": "Archimedes' principle is used in designing:",
-    "options": ["(A) Ships", "(B) Submarines", "(C) Lactometers", "(D) All of these"],
+    "options": [
+      "(A) Ships",
+      "(B) Submarines",
+      "(C) Lactometers",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "physics",
     "chapterId": "c9-sci-phy-5",
@@ -992,7 +1192,12 @@
   {
     "id": "c9-s-111",
     "question": "Loudness of sound depends on its ________.",
-    "options": ["(A) Frequency", "(B) Wavelength", "(C) Amplitude", "(D) Speed"],
+    "options": [
+      "(A) Frequency",
+      "(B) Wavelength",
+      "(C) Amplitude",
+      "(D) Speed"
+    ],
     "correctAnswer": "C",
     "subject": "physics",
     "chapterId": "c9-sci-phy-6",
@@ -1010,7 +1215,12 @@
   {
     "id": "c9-s-113",
     "question": "LPG stands for:",
-    "options": ["(A) Liquid Petroleum Gas", "(B) Liquefied Petroleum Gas", "(C) Low Petroleum Gas", "(D) None"],
+    "options": [
+      "(A) Liquid Petroleum Gas",
+      "(B) Liquefied Petroleum Gas",
+      "(C) Low Petroleum Gas",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-1",
@@ -1019,7 +1229,12 @@
   {
     "id": "c9-s-114",
     "question": "CNG stands for:",
-    "options": ["(A) Compressed Natural Gas", "(B) Complex Natural Gas", "(C) Common Natural Gas", "(D) None"],
+    "options": [
+      "(A) Compressed Natural Gas",
+      "(B) Complex Natural Gas",
+      "(C) Common Natural Gas",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-1",
@@ -1028,7 +1243,12 @@
   {
     "id": "c9-s-115",
     "question": "Brass is an alloy of:",
-    "options": ["(A) Copper and Zinc", "(B) Copper and Tin", "(C) Zinc and Iron", "(D) Lead and Tin"],
+    "options": [
+      "(A) Copper and Zinc",
+      "(B) Copper and Tin",
+      "(C) Zinc and Iron",
+      "(D) Lead and Tin"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -1037,7 +1257,12 @@
   {
     "id": "c9-s-116",
     "question": "Air is a mixture of ________ in ________.",
-    "options": ["(A) Gas, Gas", "(B) Gas, Liquid", "(C) Liquid, Gas", "(D) Solid, Gas"],
+    "options": [
+      "(A) Gas, Gas",
+      "(B) Gas, Liquid",
+      "(C) Liquid, Gas",
+      "(D) Solid, Gas"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-2",
@@ -1055,7 +1280,12 @@
   {
     "id": "c9-s-118",
     "question": "1 mole is equal to ________ particles.",
-    "options": ["(A) 6.022 x 10²³", "(B) 6.022 x 10²²", "(C) 1.6 x 10⁻¹⁹", "(D) 9.1 x 10⁻³¹"],
+    "options": [
+      "(A) 6.022 x 10²³",
+      "(B) 6.022 x 10²²",
+      "(C) 1.6 x 10⁻¹⁹",
+      "(D) 9.1 x 10⁻³¹"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-3",
@@ -1064,7 +1294,12 @@
   {
     "id": "c9-s-119",
     "question": "Anions are ________ charged ions.",
-    "options": ["(A) Positively", "(B) Negatively", "(C) Neutral", "(D) Both A and B"],
+    "options": [
+      "(A) Positively",
+      "(B) Negatively",
+      "(C) Neutral",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "B",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-3",
@@ -1073,7 +1308,12 @@
   {
     "id": "c9-s-120",
     "question": "Cations are ________ charged ions.",
-    "options": ["(A) Positively", "(B) Negatively", "(C) Neutral", "(D) Both A and B"],
+    "options": [
+      "(A) Positively",
+      "(B) Negatively",
+      "(C) Neutral",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "A",
     "subject": "chemistry",
     "chapterId": "c9-sci-chem-3",
@@ -1100,7 +1340,12 @@
   {
     "id": "c9-s-123",
     "question": "Movement of water across plasma membrane is:",
-    "options": ["(A) Diffusion", "(B) Osmosis", "(C) Absorption", "(D) Transpiration"],
+    "options": [
+      "(A) Diffusion",
+      "(B) Osmosis",
+      "(C) Absorption",
+      "(D) Transpiration"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -1136,7 +1381,12 @@
   {
     "id": "c9-s-127",
     "question": "Hardness of coconut shell is due to ________ tissue.",
-    "options": ["(A) Parenchyma", "(B) Collenchyma", "(C) Sclerenchyma", "(D) Aerenchyma"],
+    "options": [
+      "(A) Parenchyma",
+      "(B) Collenchyma",
+      "(C) Sclerenchyma",
+      "(D) Aerenchyma"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c9-sci-bio-2",
@@ -1172,7 +1422,12 @@
   {
     "id": "c9-s-131",
     "question": "Fish culture in seawater is:",
-    "options": ["(A) Mariculture", "(B) Aquaculture", "(C) Apiculture", "(D) Sericulture"],
+    "options": [
+      "(A) Mariculture",
+      "(B) Aquaculture",
+      "(C) Apiculture",
+      "(D) Sericulture"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-3",
@@ -1181,7 +1436,12 @@
   {
     "id": "c9-s-132",
     "question": "A drug is a ________ substance.",
-    "options": ["(A) Physical", "(B) Chemical", "(C) Biological", "(D) Mechanical"],
+    "options": [
+      "(A) Physical",
+      "(B) Chemical",
+      "(C) Biological",
+      "(D) Mechanical"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-4",
@@ -1199,7 +1459,12 @@
   {
     "id": "c9-s-134",
     "question": "Which of these is a symptom of drug abuse?",
-    "options": ["(A) High energy", "(B) Mood swings", "(C) Good grades", "(D) Active social life"],
+    "options": [
+      "(A) High energy",
+      "(B) Mood swings",
+      "(C) Good grades",
+      "(D) Active social life"
+    ],
     "correctAnswer": "B",
     "subject": "life",
     "chapterId": "c9-sci-bio-4",
@@ -1235,7 +1500,12 @@
   {
     "id": "c9-s-138",
     "question": "Work = Force x ________.",
-    "options": ["(A) Speed", "(B) Displacement", "(C) Acceleration", "(D) Time"],
+    "options": [
+      "(A) Speed",
+      "(B) Displacement",
+      "(C) Acceleration",
+      "(D) Time"
+    ],
     "correctAnswer": "B",
     "subject": "physics",
     "chapterId": "c9-sci-phy-3",
@@ -1307,7 +1577,12 @@
   {
     "id": "c9-s-146",
     "question": "Chlorophyll is present in:",
-    "options": ["(A) Mitochondria", "(B) Ribosomes", "(C) Chloroplasts", "(D) Lysosomes"],
+    "options": [
+      "(A) Mitochondria",
+      "(B) Ribosomes",
+      "(C) Chloroplasts",
+      "(D) Lysosomes"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -1316,7 +1591,12 @@
   {
     "id": "c9-s-147",
     "question": "DNA full form:",
-    "options": ["(A) Deoxyribonucleic Acid", "(B) Deoxyribonitric Acid", "(C) Denitroribonucleic Acid", "(D) None"],
+    "options": [
+      "(A) Deoxyribonucleic Acid",
+      "(B) Deoxyribonitric Acid",
+      "(C) Denitroribonucleic Acid",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "life",
     "chapterId": "c9-sci-bio-1",
@@ -1325,7 +1605,12 @@
   {
     "id": "c9-s-148",
     "question": "In-situ conservation example:",
-    "options": ["(A) Zoo", "(B) Botanical garden", "(C) National park", "(D) Aquarium"],
+    "options": [
+      "(A) Zoo",
+      "(B) Botanical garden",
+      "(C) National park",
+      "(D) Aquarium"
+    ],
     "correctAnswer": "C",
     "subject": "life",
     "chapterId": "c9-sci-bio-3",

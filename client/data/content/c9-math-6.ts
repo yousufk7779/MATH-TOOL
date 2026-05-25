@@ -5,12 +5,13 @@ export const c9Math6: ChapterContent = {
   number: 6,
   title: "Triangles",
   isHtmlView: true,
-  introduction: "In this chapter, we explore the properties of triangles, specifically the congruence of triangles (SAS, ASA, SSS, RHS) and the inequalities in a triangle. Understanding these rules helps in proving geometric relationships accurately.",
+  introduction:
+    "In this chapter, we explore the properties of triangles, specifically the congruence of triangles (SAS, ASA, SSS, RHS) and the inequalities in a triangle. Understanding these rules helps in proving geometric relationships accurately.",
   exercises: [
     { id: "ex6-1", name: "Exercise 6.1", questions: [] },
     { id: "ex6-2", name: "Exercise 6.2", questions: [] },
     { id: "ex6-3", name: "Exercise 6.3", questions: [] },
-    { id: "ex6-4", name: "Exercise 6.4", questions: [] }
+    { id: "ex6-4", name: "Exercise 6.4", questions: [] },
   ],
   htmlOverview: `
       <style>
@@ -685,18 +686,75 @@ export const c9Math6: ChapterContent = {
           <div class="sol-step"><span class="highlight">Step 4:</span> Side opposite larger angle is longer &rarr; PN > PM. Perpendicular is shortest.</div>
         </div>
       </div>
-`
+`,
   },
   mcqs: [
-    { id: "m1", question: "If two sides and the included angle of one triangle are equal to those of another, the rule is:", options: ["SSS", "SAS", "ASA", "RHS"], correctAnswer: "B" },
-    { id: "m2", question: "In an isosceles triangle, angles opposite to equal sides are:", options: ["Equal", "Unequal", "Complementary", "Supplementary"], correctAnswer: "A" },
-    { id: "m3", question: "In a right triangle, the side opposite to the 90° angle is:", options: ["Base", "Altitude", "Hypotenuse", "Median"], correctAnswer: "C" },
-    { id: "m4", question: "Which side is the longest in a right angled triangle?", options: ["Perpendicular", "Base", "Hypotenuse", "None"], correctAnswer: "C" },
-    { id: "m5", question: "In ΔABC, if AB = AC and ∠A = 70°, then ∠B is:", options: ["70°", "55°", "40°", "110°"], correctAnswer: "B" },
-    { id: "m6", question: "The sum of any two sides of a triangle is:", options: ["Less than the third side", "Greater than the third side", "Equal to the third side", "None"], correctAnswer: "B" },
-    { id: "m7", question: "Which is NOT a congruence criterion?", options: ["SAS", "ASA", "SSA", "SSS"], correctAnswer: "C" },
-    { id: "m8", question: "In ΔPQR, if ∠R > ∠Q, then:", options: ["PQ > PR", "PQ < PR", "PQ = PR", "None"], correctAnswer: "A" },
-    { id: "m9", question: "Two triangles are congruent if all three sides are equal. This is:", options: ["SAS", "SSS", "ASA", "RHS"], correctAnswer: "B" },
-    { id: "m10", question: "In an equilateral triangle, each angle is:", options: ["30°", "45°", "60°", "90°"], correctAnswer: "C" }
-  ]
+    {
+      id: "m1",
+      question:
+        "If two sides and the included angle of one triangle are equal to those of another, the rule is:",
+      options: ["SSS", "SAS", "ASA", "RHS"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m2",
+      question: "In an isosceles triangle, angles opposite to equal sides are:",
+      options: ["Equal", "Unequal", "Complementary", "Supplementary"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "In a right triangle, the side opposite to the 90° angle is:",
+      options: ["Base", "Altitude", "Hypotenuse", "Median"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m4",
+      question: "Which side is the longest in a right angled triangle?",
+      options: ["Perpendicular", "Base", "Hypotenuse", "None"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m5",
+      question: "In ΔABC, if AB = AC and ∠A = 70°, then ∠B is:",
+      options: ["70°", "55°", "40°", "110°"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "The sum of any two sides of a triangle is:",
+      options: [
+        "Less than the third side",
+        "Greater than the third side",
+        "Equal to the third side",
+        "None",
+      ],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "Which is NOT a congruence criterion?",
+      options: ["SAS", "ASA", "SSA", "SSS"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "In ΔPQR, if ∠R > ∠Q, then:",
+      options: ["PQ > PR", "PQ < PR", "PQ = PR", "None"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question:
+        "Two triangles are congruent if all three sides are equal. This is:",
+      options: ["SAS", "SSS", "ASA", "RHS"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "In an equilateral triangle, each angle is:",
+      options: ["30°", "45°", "60°", "90°"],
+      correctAnswer: "C",
+    },
+  ],
 };

@@ -4,89 +4,101 @@ export const c8Math1: ChapterContent = {
   id: "c8-math-1",
   number: 1,
   title: "Rational Numbers",
-  introduction: "In this chapter, we will explore the properties of rational numbers, including closure, commutativity, and associativity under various operations.",
+  introduction:
+    "In this chapter, we will explore the properties of rational numbers, including closure, commutativity, and associativity under various operations.",
   definitions: [
-    { term: "Rational Number", description: "A number that can be expressed in the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span>, where p and q are integers and q ≠ 0." },
-    { term: "Additive Identity", description: "Zero (0) is the additive identity for rational numbers." },
-    { term: "Multiplicative Identity", description: "One (1) is the multiplicative identity for rational numbers." }
+    {
+      term: "Rational Number",
+      description:
+        "A number that can be expressed in the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span>, where p and q are integers and q ≠ 0.",
+    },
+    {
+      term: "Additive Identity",
+      description: "Zero (0) is the additive identity for rational numbers.",
+    },
+    {
+      term: "Multiplicative Identity",
+      description:
+        "One (1) is the multiplicative identity for rational numbers.",
+    },
   ],
   keyPoints: [
     "Rational numbers are closed under addition, subtraction, and multiplication.",
     "Addition and multiplication are commutative and associative for rational numbers.",
-    "The reciprocal of a non-zero rational number is its multiplicative inverse."
+    "The reciprocal of a non-zero rational number is its multiplicative inverse.",
   ],
   formulas: [],
   crux: [],
-  exercises: [
-    { id: "ex1-1", name: "Exercise 1.1", questions: [] }
-  ],
+  exercises: [{ id: "ex1-1", name: "Exercise 1.1", questions: [] }],
   examples: [],
   mcqs: [
     {
       id: "c8-m1-q1",
-      question: "Which number is the multiplicative identity for rational numbers?",
+      question:
+        "Which number is the multiplicative identity for rational numbers?",
       options: ["0", "1", "-1", "2"],
-      correctAnswer: "1"
+      correctAnswer: "1",
     },
     {
       id: "c8-m1-q2",
       question: "Which number is the additive identity for rational numbers?",
       options: ["1", "-1", "0", "None"],
-      correctAnswer: "0"
+      correctAnswer: "0",
     },
     {
       id: "c8-m1-q3",
       question: "What is the reciprocal of 1?",
       options: ["0", "1", "-1", "Not defined"],
-      correctAnswer: "1"
+      correctAnswer: "1",
     },
     {
       id: "c8-m1-q4",
       question: "What is the reciprocal of -1?",
       options: ["1", "0", "-1", "Not defined"],
-      correctAnswer: "-1"
+      correctAnswer: "-1",
     },
     {
       id: "c8-m1-q5",
       question: "The reciprocal of 0 is:",
       options: ["0", "1", "Not defined", "-1"],
-      correctAnswer: "Not defined"
+      correctAnswer: "Not defined",
     },
     {
       id: "c8-m1-q6",
       question: "The product of a rational number and its reciprocal is:",
       options: ["0", "1", "-1", "Depends on the number"],
-      correctAnswer: "1"
+      correctAnswer: "1",
     },
     {
       id: "c8-m1-q7",
       question: "Is zero (0) a rational number?",
       options: ["Yes", "No", "Sometimes", "Only if it's positive"],
-      correctAnswer: "Yes"
+      correctAnswer: "Yes",
     },
     {
       id: "c8-m1-q8",
-      question: "How many rational numbers are there between any two rational numbers?",
+      question:
+        "How many rational numbers are there between any two rational numbers?",
       options: ["Only one", "Ten", "Countless", "Zero"],
-      correctAnswer: "Countless"
+      correctAnswer: "Countless",
     },
     {
       id: "c8-m1-q9",
       question: "The property a(b + c) = ab + ac is called:",
       options: ["Commutative", "Associative", "Distributive", "Closure"],
-      correctAnswer: "Distributive"
+      correctAnswer: "Distributive",
     },
     {
       id: "c8-m1-q10",
       question: "The sum of a rational number and its additive inverse is:",
       options: ["1", "0", "-1", "The number itself"],
-      correctAnswer: "0"
-    }
+      correctAnswer: "0",
+    },
   ],
   summary: [
     "Rational numbers are numbers of the form <span class='frac'><span class='num'>p</span><span class='den'>q</span></span> where q ≠ 0.",
     "0 is the additive identity and 1 is the multiplicative identity.",
-    "Reciprocal of <span class='frac'><span class='num'>a</span><span class='den'>b</span></span> is <span class='frac'><span class='num'>b</span><span class='den'>a</span></span> if a ≠ 0."
+    "Reciprocal of <span class='frac'><span class='num'>a</span><span class='den'>b</span></span> is <span class='frac'><span class='num'>b</span><span class='den'>a</span></span> if a ≠ 0.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -345,6 +357,6 @@ export const c8Math1: ChapterContent = {
         </div>
 
       </div>
-    `
-  }
+    `,
+  },
 };

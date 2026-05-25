@@ -1,10 +1,12 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const pathEye = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\human_eye_labeled_final_v2_1777804736840.png';
-const b64Eye = fs.readFileSync(pathEye).toString('base64');
+const pathEye =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\human_eye_labeled_final_v2_1777804736840.png";
+const b64Eye = fs.readFileSync(pathEye).toString("base64");
 
-const pathMirrors = 'C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\two_mirrors_final_v2_1777804761093.png';
-const b64Mirrors = fs.readFileSync(pathMirrors).toString('base64');
+const pathMirrors =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\two_mirrors_final_v2_1777804761093.png";
+const b64Mirrors = fs.readFileSync(pathMirrors).toString("base64");
 
 const content = `import { ChapterContent } from "../chapterContent";
 
@@ -214,5 +216,7 @@ export const c8Sci11: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-11.ts', content, 'utf8');
-console.log('Successfully updated Chapter 11 with fresh diagrams and optimized image sizing.');
+fs.writeFileSync("client/data/content/c8-sci-11.ts", content, "utf8");
+console.log(
+  "Successfully updated Chapter 11 with fresh diagrams and optimized image sizing.",
+);

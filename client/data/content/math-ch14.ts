@@ -1,155 +1,130 @@
 import { ChapterContent } from "../types";
 
 export const mathCh14: ChapterContent = {
-    id: "ch14",
-    number: 14,
-    title: "Probability",
-    introduction: "In this concluding chapter, we explore the mathematics of chance. We focus on calculating the theoretical probability of events based on possible outcomes and favourable cases, applying these concepts to real-world scenarios like coin tosses, dice rolls, and card draws.",
-    definitions: [
-        { term: "Probability", description: "A numerical measure ranging from 0 to 1 that represents the likelihood of an event occurring." },
-        { term: "Sure Event", description: "An event that is certain to happen, with a probability of 1." },
-        { term: "Impossible Event", description: "An event that cannot happen, with a probability of 0." }
-    ],
-    keyPoints: [
-        "The sum of probabilities of all elementary events in an experiment is always 1.",
-        "Complementary events (P(E) and P(not E)) always satisfy: P(E) + P(not E) = 1.",
-        "Probability values are always within the range [0, 1]."
-    ],
-    formulas: [
-        { name: "Theoretical Prob.", formula: "P(E) = (Favourable Outcomes) / (Total Outcomes)" },
-        { name: "Complementary Event", formula: "P(not E) = 1 - P(E)" }
-    ],
-    crux: [
-        "Always calculate the Total Sample Space first before looking for favourable outcomes.",
-        "For complementary events, it's often easier to calculate 1 - P(Other Event).",
-        "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 14.1", questions: [] },
-        { id: "examples", name: "Examples", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            "id": "mcq1",
-            "question": "<span style=\"font-weight: normal;\">The probability of an impossible event is:</span>",
-            "options": [
-                "(A) 1",
-                "(B) 1/2",
-                "(C) 0",
-                "(D) Not defined"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq2",
-            "question": "<span style=\"font-weight: normal;\">Which of the following cannot be the probability of an event?</span>",
-            "options": [
-                "(A) 0.1",
-                "(B) 3%",
-                "(C) 17/16",
-                "(D) 0.001"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq3",
-            "question": "<span style=\"font-weight: normal;\">Two coins are tossed simultaneously. What is the probability of getting at most one head?</span>",
-            "options": [
-                "(A) 1/4",
-                "(B) 1/2",
-                "(C) 3/4",
-                "(D) 1"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq4",
-            "question": "<span style=\"font-weight: normal;\">A card is drawn from a pack of 52 cards. The probability that it is a face card is:</span>",
-            "options": [
-                "(A) 4/13",
-                "(B) 3/13",
-                "(C) 2/13",
-                "(D) 1/13"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq5",
-            "question": "<span style=\"font-weight: normal;\">If P(E) = 0.07, then P(not E) is:</span>",
-            "options": [
-                "(A) 0.93",
-                "(B) 0.03",
-                "(C) 0.97",
-                "(D) 0"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq6",
-            "question": "<span style=\"font-weight: normal;\">A die is thrown once. The probability of getting a number less than 3 is:</span>",
-            "options": [
-                "(A) 1/3",
-                "(B) 1/2",
-                "(C) 1/6",
-                "(D) 2/3"
-            ],
-            "correctAnswer": "A"
-        },
-        {
-            "id": "mcq7",
-            "question": "<span style=\"font-weight: normal;\">The probability of a certain event is:</span>",
-            "options": [
-                "(A) 0",
-                "(B) 1",
-                "(C) > 1",
-                "(D) < 1"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq8",
-            "question": "<span style=\"font-weight: normal;\">Which of the following can be probability of an event?</span>",
-            "options": [
-                "(A) -0.4",
-                "(B) 1.004",
-                "(C) 18/23",
-                "(D) 8/7"
-            ],
-            "correctAnswer": "C"
-        },
-        {
-            "id": "mcq9",
-            "question": "<span style=\"font-weight: normal;\">Three coins are tossed. Probability of getting exactly two tails is:</span>",
-            "options": [
-                "(A) 1/8",
-                "(B) 3/8",
-                "(C) 1/2",
-                "(D) 1/4"
-            ],
-            "correctAnswer": "B"
-        },
-        {
-            "id": "mcq10",
-            "question": "<span style=\"font-weight: normal;\">A letter is chosen at random from the word 'MATHEMATICS'. The probability that it is a vowel is:</span>",
-            "options": [
-                "(A) 4/11",
-                "(B) 3/11",
-                "(C) 5/11",
-                "(D) 2/11"
-            ],
-            "correctAnswer": "A"
-        }
-    ],
-    summary: [
-        "Mastered the basic definition and calculation of theoretical probability.",
-        "Learned to handle complementary, sure, and impossible events.",
-        "Applied probability to a wide variety of practical and theoretical experiments."
-    ],
+  id: "ch14",
+  number: 14,
+  title: "Probability",
+  introduction:
+    "In this concluding chapter, we explore the mathematics of chance. We focus on calculating the theoretical probability of events based on possible outcomes and favourable cases, applying these concepts to real-world scenarios like coin tosses, dice rolls, and card draws.",
+  definitions: [
+    {
+      term: "Probability",
+      description:
+        "A numerical measure ranging from 0 to 1 that represents the likelihood of an event occurring.",
+    },
+    {
+      term: "Sure Event",
+      description:
+        "An event that is certain to happen, with a probability of 1.",
+    },
+    {
+      term: "Impossible Event",
+      description: "An event that cannot happen, with a probability of 0.",
+    },
+  ],
+  keyPoints: [
+    "The sum of probabilities of all elementary events in an experiment is always 1.",
+    "Complementary events (P(E) and P(not E)) always satisfy: P(E) + P(not E) = 1.",
+    "Probability values are always within the range [0, 1].",
+  ],
+  formulas: [
+    {
+      name: "Theoretical Prob.",
+      formula: "P(E) = (Favourable Outcomes) / (Total Outcomes)",
+    },
+    { name: "Complementary Event", formula: "P(not E) = 1 - P(E)" },
+  ],
+  crux: [
+    "Always calculate the Total Sample Space first before looking for favourable outcomes.",
+    "For complementary events, it's often easier to calculate 1 - P(Other Event).",
+    "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes.",
+  ],
+  exercises: [
+    { id: "exercise1", name: "Exercise 14.1", questions: [] },
+    { id: "examples", name: "Examples", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "mcq1",
+      question:
+        '<span style="font-weight: normal;">The probability of an impossible event is:</span>',
+      options: ["(A) 1", "(B) 1/2", "(C) 0", "(D) Not defined"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq2",
+      question:
+        '<span style="font-weight: normal;">Which of the following cannot be the probability of an event?</span>',
+      options: ["(A) 0.1", "(B) 3%", "(C) 17/16", "(D) 0.001"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq3",
+      question:
+        '<span style="font-weight: normal;">Two coins are tossed simultaneously. What is the probability of getting at most one head?</span>',
+      options: ["(A) 1/4", "(B) 1/2", "(C) 3/4", "(D) 1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq4",
+      question:
+        '<span style="font-weight: normal;">A card is drawn from a pack of 52 cards. The probability that it is a face card is:</span>',
+      options: ["(A) 4/13", "(B) 3/13", "(C) 2/13", "(D) 1/13"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq5",
+      question:
+        '<span style="font-weight: normal;">If P(E) = 0.07, then P(not E) is:</span>',
+      options: ["(A) 0.93", "(B) 0.03", "(C) 0.97", "(D) 0"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq6",
+      question:
+        '<span style="font-weight: normal;">A die is thrown once. The probability of getting a number less than 3 is:</span>',
+      options: ["(A) 1/3", "(B) 1/2", "(C) 1/6", "(D) 2/3"],
+      correctAnswer: "A",
+    },
+    {
+      id: "mcq7",
+      question:
+        '<span style="font-weight: normal;">The probability of a certain event is:</span>',
+      options: ["(A) 0", "(B) 1", "(C) > 1", "(D) < 1"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq8",
+      question:
+        '<span style="font-weight: normal;">Which of the following can be probability of an event?</span>',
+      options: ["(A) -0.4", "(B) 1.004", "(C) 18/23", "(D) 8/7"],
+      correctAnswer: "C",
+    },
+    {
+      id: "mcq9",
+      question:
+        '<span style="font-weight: normal;">Three coins are tossed. Probability of getting exactly two tails is:</span>',
+      options: ["(A) 1/8", "(B) 3/8", "(C) 1/2", "(D) 1/4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "mcq10",
+      question:
+        "<span style=\"font-weight: normal;\">A letter is chosen at random from the word 'MATHEMATICS'. The probability that it is a vowel is:</span>",
+      options: ["(A) 4/11", "(B) 3/11", "(C) 5/11", "(D) 2/11"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [
+    "Mastered the basic definition and calculation of theoretical probability.",
+    "Learned to handle complementary, sure, and impossible events.",
+    "Applied probability to a wide variety of practical and theoretical experiments.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -298,8 +273,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    htmlExercises: {
-        exercise1: `<!DOCTYPE html>
+  htmlExercises: {
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -731,7 +706,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-        examples: `<!DOCTYPE html>
+    examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -884,6 +859,6 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`
-    }
+</html>`,
+  },
 };

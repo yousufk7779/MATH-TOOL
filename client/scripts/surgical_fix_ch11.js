@@ -1,7 +1,6 @@
-
-const fs = require('fs');
+const fs = require("fs");
 const p = "d:\\All NCERT SOLUTIONS\\client\\data\\content\\math-ch11.ts";
-let content = fs.readFileSync(p, 'utf8');
+let content = fs.readFileSync(p, "utf8");
 
 // Find the start of the MCQ section
 const mcqKey = "htmlMcqs: \`<!DOCTYPE";
@@ -10,9 +9,12 @@ const mcqEndKey = "</body></html>\`;";
 const startIdx = content.lastIndexOf(mcqKey);
 const endIdx = content.indexOf(mcqEndKey, startIdx);
 
-if (startIdx === -1 || (endIdx === -1 && content.indexOf("</body></html>`\r\n};") === -1)) {
-    console.log("MARKERS NOT FOUND");
-    process.exit(1);
+if (
+  startIdx === -1 ||
+  (endIdx === -1 && content.indexOf("</body></html>`\r\n};") === -1)
+) {
+  console.log("MARKERS NOT FOUND");
+  process.exit(1);
 }
 
 // Just replace the problematic JS logic with a clean one
@@ -113,6 +115,9 @@ const cleanScript = `
 </script>
 `;
 
-const finalContent = content.substring(0, scriptStart) + cleanScript + content.substring(scriptEnd + 9);
-fs.writeFileSync(p, finalContent, 'utf8');
-console.log('DONE REPAIR');
+const finalContent =
+  content.substring(0, scriptStart) +
+  cleanScript +
+  content.substring(scriptEnd + 9);
+fs.writeFileSync(p, finalContent, "utf8");
+console.log("DONE REPAIR");

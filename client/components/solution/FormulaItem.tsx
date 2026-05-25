@@ -2,7 +2,12 @@ import React, { memo } from "react";
 import { StyleSheet, View } from "react-native";
 
 import { ThemedText } from "@/components/ThemedText";
-import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  BorderRadius,
+  Typography,
+} from "@/constants/theme";
 
 interface FormulaItemProps {
   name: string;
@@ -21,7 +26,7 @@ function FormulaItem({ name, formula, textStyle }: FormulaItemProps) {
             fontFamily: "NotoSans_400Regular",
             color: JiguuColors.textPrimary,
             lineHeight: 24,
-            ...textStyle
+            ...textStyle,
           }}
         >
           {formula}

@@ -14,8 +14,6 @@ import {
   NotoSans_700Bold,
 } from "@expo-google-fonts/noto-sans";
 
-
-
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/lib/query-client";
 
@@ -37,11 +35,10 @@ const navTheme = {
   },
 };
 
-
 export default function App() {
   useUpdateCheck();
   const [appIsReady, setAppIsReady] = React.useState(false);
-  
+
   const [fontsLoaded, fontError] = useFonts({
     NotoSans_400Regular,
     NotoSans_500Medium,
@@ -58,7 +55,7 @@ export default function App() {
     const timeout = setTimeout(() => {
       setAppIsReady(true);
     }, 3000);
-    
+
     return () => clearTimeout(timeout);
   }, [fontsLoaded, fontError]);
 
@@ -86,14 +83,15 @@ export default function App() {
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
         <SafeAreaProvider style={styles.safeArea}>
-          <GestureHandlerRootView style={styles.root} onLayout={onLayoutRootView}>
+          <GestureHandlerRootView
+            style={styles.root}
+            onLayout={onLayoutRootView}
+          >
             <KeyboardProvider>
-
-                <NavigationContainer theme={navTheme}>
-                  <RootStackNavigator />
-                </NavigationContainer>
-                <StatusBar style="dark" />
-
+              <NavigationContainer theme={navTheme}>
+                <RootStackNavigator />
+              </NavigationContainer>
+              <StatusBar style="dark" />
             </KeyboardProvider>
           </GestureHandlerRootView>
         </SafeAreaProvider>
@@ -113,5 +111,4 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: JiguuColors.background,
   },
-
 });

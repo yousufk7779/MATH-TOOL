@@ -1,12 +1,14 @@
-const fs = require('fs');
+const fs = require("fs");
 
 function getBase64(path) {
-    const data = fs.readFileSync(path);
-    return data.toString('base64');
+  const data = fs.readFileSync(path);
+  return data.toString("base64");
 }
 
-const pathEye = "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\human_eye_labeled_final_v2_1777804736840.png";
-const pathMirrors = "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\two_mirrors_final_v2_1777804761093.png";
+const pathEye =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\human_eye_labeled_final_v2_1777804736840.png";
+const pathMirrors =
+  "C:\\Users\\hp\\.gemini\\antigravity\\brain\\03ee5b4a-e2c1-43ac-867b-0b6e5c8fd885\\two_mirrors_final_v2_1777804761093.png";
 
 const b64Eye = getBase64(pathEye);
 const b64Mirrors = getBase64(pathMirrors);
@@ -229,5 +231,5 @@ export const c8Sci11: ChapterContent = {
 };
 `;
 
-fs.writeFileSync('client/data/content/c8-sci-11.ts', template, 'utf8');
-console.log('Final fix: Clean Base64 injection complete.');
+fs.writeFileSync("client/data/content/c8-sci-11.ts", template, "utf8");
+console.log("Final fix: Clean Base64 injection complete.");

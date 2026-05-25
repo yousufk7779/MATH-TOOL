@@ -1,29 +1,44 @@
 import { ChapterContent } from "../types";
 
 export const c7Math5: ChapterContent = {
-    id: "c7-math-5",
-    number: 5,
-    title: "Lines and Angles",
-    isHtmlView: true,
-    introduction: "Lines and angles are the building blocks of geometry. Understanding their relationships is essential for solving complex geometric problems.",
-    definitions: [
-        { term: "Complementary Angles", definition: "Two angles whose sum is 90°." },
-        { term: "Supplementary Angles", definition: "Two angles whose sum is 180°." },
-        { term: "Adjacent Angles", definition: "Two angles with a common vertex and a common arm, but no common interior points." },
-        { term: "Linear Pair", definition: "A pair of adjacent angles whose non-common sides are opposite rays." }
-    ],
-    keyPoints: [
-        "Vertically opposite angles are equal.",
-        "Angles in a linear pair sum to 180°.",
-        "When two parallel lines are intersected by a transversal: (a) Corresponding angles are equal. (b) Alternate interior angles are equal. (c) Interior angles on the same side of the transversal are supplementary."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex5-1", name: "Exercise 5.1", questions: [] },
-        { id: "ex5-2", name: "Exercise 5.2", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-5",
+  number: 5,
+  title: "Lines and Angles",
+  isHtmlView: true,
+  introduction:
+    "Lines and angles are the building blocks of geometry. Understanding their relationships is essential for solving complex geometric problems.",
+  definitions: [
+    {
+      term: "Complementary Angles",
+      definition: "Two angles whose sum is 90°.",
+    },
+    {
+      term: "Supplementary Angles",
+      definition: "Two angles whose sum is 180°.",
+    },
+    {
+      term: "Adjacent Angles",
+      definition:
+        "Two angles with a common vertex and a common arm, but no common interior points.",
+    },
+    {
+      term: "Linear Pair",
+      definition:
+        "A pair of adjacent angles whose non-common sides are opposite rays.",
+    },
+  ],
+  keyPoints: [
+    "Vertically opposite angles are equal.",
+    "Angles in a linear pair sum to 180°.",
+    "When two parallel lines are intersected by a transversal: (a) Corresponding angles are equal. (b) Alternate interior angles are equal. (c) Interior angles on the same side of the transversal are supplementary.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex5-1", name: "Exercise 5.1", questions: [] },
+    { id: "ex5-2", name: "Exercise 5.2", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #43A047; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -41,8 +56,8 @@ export const c7Math5: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex5-1": `
+  htmlExercises: {
+    "ex5-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(67, 160, 71, 0.1); color: #43A047; padding: 12px; border-radius: 8px; border-left: 6px solid #43A047; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -228,7 +243,7 @@ export const c7Math5: ChapterContent = {
             </div>
         </div>
         `,
-        "ex5-2": `
+    "ex5-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(67, 160, 71, 0.1); color: #43A047; padding: 12px; border-radius: 8px; border-left: 6px solid #43A047; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -270,20 +285,70 @@ export const c7Math5: ChapterContent = {
                 <div class="sol-step">a = e = <span class="ans-highlight">55°</span> (Alternate interior)</div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Complement of 30° is:",
+      options: ["60°", "150°", "90°", "30°"],
+      correctAnswer: "A",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Complement of 30° is:", options: ["60°", "150°", "90°", "30°"], correctAnswer: "A" },
-        { id: "m2", question: "Supplement of 100° is:", options: ["80°", "100°", "180°", "90°"], correctAnswer: "A" },
-        { id: "m3", question: "Sum of complementary angles is:", options: ["90°", "180°", "360°", "45°"], correctAnswer: "A" },
-        { id: "m4", question: "Sum of supplementary angles is:", options: ["180°", "90°", "360°", "270°"], correctAnswer: "A" },
-        { id: "m5", question: "Vertically opposite angles are always:", options: ["Equal", "Supplementary", "Complementary", "Unequal"], correctAnswer: "A" },
-        { id: "m6", question: "If two lines intersect, the linear pair sum is:", options: ["180°", "90°", "360°", "0°"], correctAnswer: "A" },
-        { id: "m7", question: "Angles on a straight line sum to:", options: ["180°", "90°", "360°", "100°"], correctAnswer: "A" },
-        { id: "m8", question: "Parallel lines ______ intersect.", options: ["Never", "Always", "Sometimes", "Once"], correctAnswer: "A" },
-        { id: "m9", question: "If a || b, alternate interior angles are:", options: ["Equal", "Supplementary", "Complementary", "90°"], correctAnswer: "A" },
-        { id: "m10", question: "Interior angles on same side of transversal sum to:", options: ["180°", "90°", "360°", "0°"], correctAnswer: "A" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Supplement of 100° is:",
+      options: ["80°", "100°", "180°", "90°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "Sum of complementary angles is:",
+      options: ["90°", "180°", "360°", "45°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m4",
+      question: "Sum of supplementary angles is:",
+      options: ["180°", "90°", "360°", "270°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "Vertically opposite angles are always:",
+      options: ["Equal", "Supplementary", "Complementary", "Unequal"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m6",
+      question: "If two lines intersect, the linear pair sum is:",
+      options: ["180°", "90°", "360°", "0°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question: "Angles on a straight line sum to:",
+      options: ["180°", "90°", "360°", "100°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m8",
+      question: "Parallel lines ______ intersect.",
+      options: ["Never", "Always", "Sometimes", "Once"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "If a || b, alternate interior angles are:",
+      options: ["Equal", "Supplementary", "Complementary", "90°"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m10",
+      question: "Interior angles on same side of transversal sum to:",
+      options: ["180°", "90°", "360°", "0°"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [],
 };

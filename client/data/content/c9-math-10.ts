@@ -1,117 +1,137 @@
 import { ChapterContent } from "../types";
 
 export const c9Math10: ChapterContent = {
-    id: "c9-math-10",
-    number: 10,
-    title: "Surface Areas and Volumes",
-    introduction: "In this chapter, we explore the measurement of surface areas and volumes of various three-dimensional shapes like cuboids, cubes, cylinders, cones, and spheres. These calculations are vital for understanding space and materials in the world around us.",
-    definitions: [
-        { term: "Surface Area", definition: "The total area that the surface of a three-dimensional object occupies." },
-        { term: "Volume", definition: "The amount of space occupied by a three-dimensional object, often measured in cubic units." },
-        { term: "Lateral Surface Area", definition: "The area of all the sides of an object, excluding its top and base." }
-    ],
-    keyPoints: [
-        "Capacity is the volume of a substance that a container can hold.",
-        "1 m³ = 1000 litres; 1 litre = 1000 cm³.",
-        "The curved surface area of a cylinder excludes its two circular ends.",
-        "The total surface area includes all faces of the object."
-    ],
-    formulas: [
-        { name: "Cuboid TSA", formula: "2(lb + bh + hl)" },
-        { name: "Cube TSA", formula: "6a²" },
-        { name: "Cylinder CSA", formula: "2πrh" },
-        { name: "Cone CSA", formula: "πrl" },
-        { name: "Sphere Surface Area", formula: "4πr²" },
-        { name: "Volume of Cylinder", formula: "πr²h" },
-        { name: "Volume of Sphere", formula: "(4/3)πr³" }
-    ],
-    crux: [
-        "Check that all dimensions are in the same units before calculating.",
-        "For 'open top' boxes, subtract the top area (l × b) from the total surface area.",
-        "Remember that the volume of a cone is 1/3 that of a cylinder with the same base and height."
-    ],
-    exercises: [
-        { id: "ex10.1", name: "Exercise 10.1", questions: [] },
-        { id: "ex10.2", name: "Exercise 10.2", questions: [] },
-        { id: "ex10.3", name: "Exercise 10.3", questions: [] },
-        { id: "ex10.4", name: "Exercise 10.4", questions: [] },
-        { id: "ex10.5", name: "Exercise 10.5", questions: [] },
-        { id: "ex10.6", name: "Exercise 10.6", questions: [] },
-        { id: "ex10.7", name: "Exercise 10.7", questions: [] },
-        { id: "ex10.8", name: "Exercise 10.8", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: [
-        {
-            id: "m1",
-            question: "The lateral surface area of a cube is 256 cm². The volume of the cube is:",
-            options: ["64 cm³", "216 cm³", "256 cm³", "512 cm³"],
-            correctAnswer: "D"
-        },
-        {
-            id: "m2",
-            question: "If the radius of a cylinder is doubled and the height is halved, its curved surface area will:",
-            options: ["Be halved", "Be doubled", "Remain same", "Be four times"],
-            correctAnswer: "C"
-        },
-        {
-            id: "m3",
-            question: "The total surface area of a cone whose radius is r/2 and slant height 2l is:",
-            options: ["2πr(l + r)", "πr(l + r/4)", "πr(l + r)", "πr(l + r/2)"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m4",
-            question: "A hemispherical bowl is made of steel 0.25 cm thick. The inner radius is 5 cm. The outer curved surface area is:",
-            options: ["173.25 cm²", "183.25 cm²", "273.25 cm²", "None of these"],
-            correctAnswer: "A"
-        },
-        {
-            id: "m5",
-            question: "The volume of a sphere of radius 2r is:",
-            options: ["(4/3)πr³", "32/3 πr³", "8/3 πr³", "4/3 π(2r)³"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m6",
-            question: "If the base radius and height of a cylinder are 7 cm and 10 cm respectively, its volume is:",
-            options: ["1540 cm³", "154 cm³", "1450 cm³", "770 cm³"],
-            correctAnswer: "A"
-        },
-        {
-            id: "m7",
-            question: "The ratio of surface areas of two spheres is 4:9. The ratio of their volumes is:",
-            options: ["2:3", "4:9", "8:27", "16:81"],
-            correctAnswer: "C"
-        },
-        {
-            id: "m8",
-            question: "The edge of a cube is 10 cm. Its total surface area is:",
-            options: ["400 cm²", "600 cm²", "1000 cm²", "100 cm²"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m9",
-            question: "The radius of a sphere whose surface area is 154 cm² is:",
-            options: ["7 cm", "3.5 cm", "14 cm", "10.5 cm"],
-            correctAnswer: "B"
-        },
-        {
-            id: "m10",
-            question: "The capacity of a cuboidal tank of dimensions 6m × 5m × 4.5m in litres is:",
-            options: ["135000 L", "13500 L", "1350 L", "135 L"],
-            correctAnswer: "A"
-        }
-    ],
-    summary: [
-        "Mastered the surface area and volume of cuboids, cubes, cylinders, cones, and spheres.",
-        "Understood the conversion between cubic meters, cubic centimeters, and litres.",
-        "Solved complex problems involving thickness, cost estimation, and ratios."
-    ],
+  id: "c9-math-10",
+  number: 10,
+  title: "Surface Areas and Volumes",
+  introduction:
+    "In this chapter, we explore the measurement of surface areas and volumes of various three-dimensional shapes like cuboids, cubes, cylinders, cones, and spheres. These calculations are vital for understanding space and materials in the world around us.",
+  definitions: [
+    {
+      term: "Surface Area",
+      definition:
+        "The total area that the surface of a three-dimensional object occupies.",
+    },
+    {
+      term: "Volume",
+      definition:
+        "The amount of space occupied by a three-dimensional object, often measured in cubic units.",
+    },
+    {
+      term: "Lateral Surface Area",
+      definition:
+        "The area of all the sides of an object, excluding its top and base.",
+    },
+  ],
+  keyPoints: [
+    "Capacity is the volume of a substance that a container can hold.",
+    "1 m³ = 1000 litres; 1 litre = 1000 cm³.",
+    "The curved surface area of a cylinder excludes its two circular ends.",
+    "The total surface area includes all faces of the object.",
+  ],
+  formulas: [
+    { name: "Cuboid TSA", formula: "2(lb + bh + hl)" },
+    { name: "Cube TSA", formula: "6a²" },
+    { name: "Cylinder CSA", formula: "2πrh" },
+    { name: "Cone CSA", formula: "πrl" },
+    { name: "Sphere Surface Area", formula: "4πr²" },
+    { name: "Volume of Cylinder", formula: "πr²h" },
+    { name: "Volume of Sphere", formula: "(4/3)πr³" },
+  ],
+  crux: [
+    "Check that all dimensions are in the same units before calculating.",
+    "For 'open top' boxes, subtract the top area (l × b) from the total surface area.",
+    "Remember that the volume of a cone is 1/3 that of a cylinder with the same base and height.",
+  ],
+  exercises: [
+    { id: "ex10.1", name: "Exercise 10.1", questions: [] },
+    { id: "ex10.2", name: "Exercise 10.2", questions: [] },
+    { id: "ex10.3", name: "Exercise 10.3", questions: [] },
+    { id: "ex10.4", name: "Exercise 10.4", questions: [] },
+    { id: "ex10.5", name: "Exercise 10.5", questions: [] },
+    { id: "ex10.6", name: "Exercise 10.6", questions: [] },
+    { id: "ex10.7", name: "Exercise 10.7", questions: [] },
+    { id: "ex10.8", name: "Exercise 10.8", questions: [] },
+  ],
+  examples: [],
+  theorems: [],
+  mcqs: [
+    {
+      id: "m1",
+      question:
+        "The lateral surface area of a cube is 256 cm². The volume of the cube is:",
+      options: ["64 cm³", "216 cm³", "256 cm³", "512 cm³"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m2",
+      question:
+        "If the radius of a cylinder is doubled and the height is halved, its curved surface area will:",
+      options: ["Be halved", "Be doubled", "Remain same", "Be four times"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question:
+        "The total surface area of a cone whose radius is r/2 and slant height 2l is:",
+      options: ["2πr(l + r)", "πr(l + r/4)", "πr(l + r)", "πr(l + r/2)"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question:
+        "A hemispherical bowl is made of steel 0.25 cm thick. The inner radius is 5 cm. The outer curved surface area is:",
+      options: ["173.25 cm²", "183.25 cm²", "273.25 cm²", "None of these"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m5",
+      question: "The volume of a sphere of radius 2r is:",
+      options: ["(4/3)πr³", "32/3 πr³", "8/3 πr³", "4/3 π(2r)³"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question:
+        "If the base radius and height of a cylinder are 7 cm and 10 cm respectively, its volume is:",
+      options: ["1540 cm³", "154 cm³", "1450 cm³", "770 cm³"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question:
+        "The ratio of surface areas of two spheres is 4:9. The ratio of their volumes is:",
+      options: ["2:3", "4:9", "8:27", "16:81"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "The edge of a cube is 10 cm. Its total surface area is:",
+      options: ["400 cm²", "600 cm²", "1000 cm²", "100 cm²"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "The radius of a sphere whose surface area is 154 cm² is:",
+      options: ["7 cm", "3.5 cm", "14 cm", "10.5 cm"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question:
+        "The capacity of a cuboidal tank of dimensions 6m × 5m × 4.5m in litres is:",
+      options: ["135000 L", "13500 L", "1350 L", "135 L"],
+      correctAnswer: "A",
+    },
+  ],
+  summary: [
+    "Mastered the surface area and volume of cuboids, cubes, cylinders, cones, and spheres.",
+    "Understood the conversion between cubic meters, cubic centimeters, and litres.",
+    "Solved complex problems involving thickness, cost estimation, and ratios.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `
+  isHtmlView: true,
+  htmlOverview: `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -191,8 +211,8 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-    htmlExercises: {
-        "ex10.1": `
+  htmlExercises: {
+    "ex10.1": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -389,7 +409,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.2": `
+    "ex10.2": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -587,7 +607,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.3": `
+    "ex10.3": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -755,7 +775,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.4": `
+    "ex10.4": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -933,7 +953,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.5": `
+    "ex10.5": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -1109,7 +1129,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.6": `
+    "ex10.6": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -1297,7 +1317,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.7": `
+    "ex10.7": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -1473,7 +1493,7 @@ export const c9Math10: ChapterContent = {
 </body>
 </html>
 `,
-        "ex10.8": `
+    "ex10.8": `
       <style>
         .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.85em; margin: 6px 2px; line-height: 1.2; }
         .frac .num { border-bottom: 1px solid currentColor; padding: 0 2px; }
@@ -1665,6 +1685,6 @@ export const c9Math10: ChapterContent = {
     </div>
 </body>
 </html>
-`
-    }
+`,
+  },
 };

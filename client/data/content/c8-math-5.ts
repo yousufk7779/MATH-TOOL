@@ -628,29 +628,85 @@ export const c8Math5: ChapterContent = {
   id: "c8-math-5",
   number: 5,
   title: "Squares and Square Roots",
-  introduction: "In this chapter, we explore the properties of square numbers and learn how to find the square root of a number using different methods.",
+  introduction:
+    "In this chapter, we explore the properties of square numbers and learn how to find the square root of a number using different methods.",
   mcqs: [
-    { id: "m1", question: "The square of which of the following numbers would be an odd number?", options: ["431", "2826", "7770", "82004"], correctAnswer: "431" },
-    { id: "m2", question: "Which of the following is not a perfect square?", options: ["100", "169", "257", "400"], correctAnswer: "257" },
-    { id: "m3", question: "The unit digit of the square of 272 will be:", options: ["2", "4", "6", "8"], correctAnswer: "4" },
-    { id: "m4", question: "How many non-perfect square numbers lie between the squares of 12 and 13?", options: ["24", "25", "26", "144"], correctAnswer: "24" },
-    { id: "m5", question: "The sum of first n odd natural numbers is:", options: ["2n", "n²", "n+1", "n³"], correctAnswer: "n²" },
-    { id: "m6", question: "If one member of a Pythagorean triplet is 6, the other two members are:", options: ["8, 10", "7, 9", "10, 12", "12, 14"], correctAnswer: "8, 10" },
-    { id: "m7", question: "What will be the possible ones digit of the square root of 9801?", options: ["1 or 9", "2 or 8", "3 or 7", "4 or 6"], correctAnswer: "1 or 9" },
-    { id: "m8", question: "The square root of 441 is:", options: ["11", "21", "31", "41"], correctAnswer: "21" },
-    { id: "m9", question: "Which least number should be subtracted from 402 to make it a perfect square?", options: ["1", "2", "3", "4"], correctAnswer: "2" },
-    { id: "m10", question: "The number of digits in the square root of 390625 is:", options: ["2", "3", "4", "5"], correctAnswer: "3" }
+    {
+      id: "m1",
+      question:
+        "The square of which of the following numbers would be an odd number?",
+      options: ["431", "2826", "7770", "82004"],
+      correctAnswer: "431",
+    },
+    {
+      id: "m2",
+      question: "Which of the following is not a perfect square?",
+      options: ["100", "169", "257", "400"],
+      correctAnswer: "257",
+    },
+    {
+      id: "m3",
+      question: "The unit digit of the square of 272 will be:",
+      options: ["2", "4", "6", "8"],
+      correctAnswer: "4",
+    },
+    {
+      id: "m4",
+      question:
+        "How many non-perfect square numbers lie between the squares of 12 and 13?",
+      options: ["24", "25", "26", "144"],
+      correctAnswer: "24",
+    },
+    {
+      id: "m5",
+      question: "The sum of first n odd natural numbers is:",
+      options: ["2n", "n²", "n+1", "n³"],
+      correctAnswer: "n²",
+    },
+    {
+      id: "m6",
+      question:
+        "If one member of a Pythagorean triplet is 6, the other two members are:",
+      options: ["8, 10", "7, 9", "10, 12", "12, 14"],
+      correctAnswer: "8, 10",
+    },
+    {
+      id: "m7",
+      question:
+        "What will be the possible ones digit of the square root of 9801?",
+      options: ["1 or 9", "2 or 8", "3 or 7", "4 or 6"],
+      correctAnswer: "1 or 9",
+    },
+    {
+      id: "m8",
+      question: "The square root of 441 is:",
+      options: ["11", "21", "31", "41"],
+      correctAnswer: "21",
+    },
+    {
+      id: "m9",
+      question:
+        "Which least number should be subtracted from 402 to make it a perfect square?",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "2",
+    },
+    {
+      id: "m10",
+      question: "The number of digits in the square root of 390625 is:",
+      options: ["2", "3", "4", "5"],
+      correctAnswer: "3",
+    },
   ],
   summary: [
     "Numbers ending with 2, 3, 7 or 8 are never perfect squares.",
     "The square of an even number is even and the square of an odd number is odd.",
-    "There are 2n non-perfect square numbers between the squares of the numbers n and (n + 1)."
+    "There are 2n non-perfect square numbers between the squares of the numbers n and (n + 1).",
   ],
   exercises: [
     { id: "ex5-1", name: "Exercise 5.1", questions: [] },
     { id: "ex5-2", name: "Exercise 5.2", questions: [] },
     { id: "ex5-3", name: "Exercise 5.3", questions: [] },
-    { id: "ex5-4", name: "Exercise 5.4", questions: [] }
+    { id: "ex5-4", name: "Exercise 5.4", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -780,6 +836,6 @@ export const c8Math5: ChapterContent = {
     "ex5-1": ex51Content,
     "ex5-2": ex52Content,
     "ex5-3": ex53Content,
-    "ex5-4": ex54Content
-  }
+    "ex5-4": ex54Content,
+  },
 };

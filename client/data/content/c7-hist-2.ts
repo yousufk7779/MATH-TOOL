@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist2: ChapterContent = {
-    id: "c7-hist-2",
-    number: 2,
-    title: "New Kings and Kingdoms",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-2",
+  number: 2,
+  title: "New Kings and Kingdoms",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>This chapter explores the emergence of many new dynasties in different parts of the subcontinent between the seventh and twelfth centuries. We see how kings gained power, the importance of land grants, and the magnificent temples built by dynasties like the Cholas.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist2: ChapterContent = {
             <p>Between 700 and 1200 CE, the Indian political landscape saw the rise of powerful regional kingdoms. These kings used wealth from trade and agriculture to build massive temples and maintain large armies. The Chola empire in South India stands out for its excellent administration and highly developed irrigation systems.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h2-ex-all": `
+  htmlExercises: {
+    "c7h2-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -90,82 +90,100 @@ export const c7Hist2: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> In Uttaramerur, names were picked by a boy from an earthenware pot. Today, panchayat elections use a secret ballot system where every adult citizen can vote for their representative.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "This chapter explores the emergence of many new dynasties in different parts of the subcontinent between the seventh and twelfth centuries.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h2-mcq-1",
+      question: "Who performed the 'hiranya-garbha' ritual?",
+      options: [
+        "Dantidurga",
+        "Prithviraj Chauhan",
+        "Mahmud Ghazni",
+        "Rajaraja I",
+      ],
+      correctAnswer: "a",
     },
-    introduction: "This chapter explores the emergence of many new dynasties in different parts of the subcontinent between the seventh and twelfth centuries.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h2-mcq-1",
-            question: "Who performed the 'hiranya-garbha' ritual?",
-            options: ["Dantidurga", "Prithviraj Chauhan", "Mahmud Ghazni", "Rajaraja I"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-2",
-            question: "The 'tripartite struggle' was fought for control over which city?",
-            options: ["Delhi", "Kanauj", "Tanjavur", "Ajmer"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h2-mcq-3",
-            question: "Which dynasty is famous for its bronze images?",
-            options: ["Rashtrakutas", "Chahamanas", "Cholas", "Palas"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7h2-mcq-4",
-            question: "Who was the most powerful Chola ruler?",
-            options: ["Rajaraja I", "Dantidurga", "Muhammad Ghori", "Anantavarman"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-5",
-            question: "What was a 'Sabha' in the Chola empire?",
-            options: ["Assembly of Brahmanas", "Military camp", "Market place", "Village school"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-6",
-            question: "Who were the 'Samantas'?",
-            options: ["Priests", "Warrior chiefs", "Traders", "Peasants"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h2-mcq-7",
-            question: "Which famous temple was raided by Mahmud of Ghazni?",
-            options: ["Somnath", "Konark", "Meenakshi", "Brihadisvara"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-8",
-            question: "Who wrote the book 'Kitab-al-Hind'?",
-            options: ["Al-Biruni", "Ibn Battuta", "Ziyauddin Barani", "Abul Fazl"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-9",
-            question: "Who defeated Muhammad Ghori in the first battle of Tarain (1191)?",
-            options: ["Prithviraj Chauhan", "Rajaraja I", "Dantidurga", "Anantavarman"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h2-mcq-10",
-            question: "What was 'Vetti' in the Chola period?",
-            options: ["Land tax", "Forced labor tax", "House tax", "Trade tax"],
-            correctAnswer: "b"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h2-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h2-mcq-2",
+      question:
+        "The 'tripartite struggle' was fought for control over which city?",
+      options: ["Delhi", "Kanauj", "Tanjavur", "Ajmer"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h2-mcq-3",
+      question: "Which dynasty is famous for its bronze images?",
+      options: ["Rashtrakutas", "Chahamanas", "Cholas", "Palas"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7h2-mcq-4",
+      question: "Who was the most powerful Chola ruler?",
+      options: ["Rajaraja I", "Dantidurga", "Muhammad Ghori", "Anantavarman"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h2-mcq-5",
+      question: "What was a 'Sabha' in the Chola empire?",
+      options: [
+        "Assembly of Brahmanas",
+        "Military camp",
+        "Market place",
+        "Village school",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h2-mcq-6",
+      question: "Who were the 'Samantas'?",
+      options: ["Priests", "Warrior chiefs", "Traders", "Peasants"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h2-mcq-7",
+      question: "Which famous temple was raided by Mahmud of Ghazni?",
+      options: ["Somnath", "Konark", "Meenakshi", "Brihadisvara"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h2-mcq-8",
+      question: "Who wrote the book 'Kitab-al-Hind'?",
+      options: ["Al-Biruni", "Ibn Battuta", "Ziyauddin Barani", "Abul Fazl"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h2-mcq-9",
+      question:
+        "Who defeated Muhammad Ghori in the first battle of Tarain (1191)?",
+      options: [
+        "Prithviraj Chauhan",
+        "Rajaraja I",
+        "Dantidurga",
+        "Anantavarman",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h2-mcq-10",
+      question: "What was 'Vetti' in the Chola period?",
+      options: ["Land tax", "Forced labor tax", "House tax", "Trade tax"],
+      correctAnswer: "b",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h2-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

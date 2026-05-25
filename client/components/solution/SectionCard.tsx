@@ -3,7 +3,12 @@ import { StyleSheet, View, ViewStyle } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
-import { JiguuColors, Spacing, BorderRadius, Typography } from "@/constants/theme";
+import {
+  JiguuColors,
+  Spacing,
+  BorderRadius,
+  Typography,
+} from "@/constants/theme";
 
 interface SectionCardProps {
   title: string;
@@ -31,15 +36,21 @@ function SectionCard({
       style={[
         styles.container,
         { backgroundColor },
-        borderColor ? { borderLeftWidth: 3, borderLeftColor: borderColor } : null,
+        borderColor
+          ? { borderLeftWidth: 3, borderLeftColor: borderColor }
+          : null,
         style,
       ]}
     >
       <View style={styles.header}>
-        <View style={[styles.iconContainer, { backgroundColor: iconColor + "20" }]}>
+        <View
+          style={[styles.iconContainer, { backgroundColor: iconColor + "20" }]}
+        >
           <Feather name={icon} size={18} color={iconColor} />
         </View>
-        <ThemedText style={[styles.title, { color: iconColor }, titleStyle]}>{title}</ThemedText>
+        <ThemedText style={[styles.title, { color: iconColor }, titleStyle]}>
+          {title}
+        </ThemedText>
       </View>
       <View style={styles.content}>{children}</View>
     </View>

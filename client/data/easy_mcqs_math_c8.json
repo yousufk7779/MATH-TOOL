@@ -2,12 +2,7 @@
   {
     "id": "mq8-1",
     "question": "Which of the following is a rational number?",
-    "options": [
-      "(A) 0",
-      "(B) 1",
-      "(C) -5",
-      "(D) All of these"
-    ],
+    "options": ["(A) 0", "(B) 1", "(C) -5", "(D) All of these"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -15,12 +10,7 @@
   {
     "id": "mq8-2",
     "question": "The additive inverse of 2/8 is:",
-    "options": [
-      "(A) -2/8",
-      "(B) 8/2",
-      "(C) 0",
-      "(D) 1"
-    ],
+    "options": ["(A) -2/8", "(B) 8/2", "(C) 0", "(D) 1"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -28,12 +18,7 @@
   {
     "id": "mq8-3",
     "question": "The multiplicative inverse of -13 is:",
-    "options": [
-      "(A) 13",
-      "(B) 1/-13",
-      "(C) 1",
-      "(D) 0"
-    ],
+    "options": ["(A) 13", "(B) 1/-13", "(C) 1", "(D) 0"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -54,12 +39,7 @@
   {
     "id": "mq8-5",
     "question": "Zero has ______ reciprocal.",
-    "options": [
-      "(A) One",
-      "(B) Two",
-      "(C) No",
-      "(D) Many"
-    ],
+    "options": ["(A) One", "(B) Two", "(C) No", "(D) Many"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -67,12 +47,7 @@
   {
     "id": "mq8-6",
     "question": "The numbers ______ and ______ are their own reciprocals.",
-    "options": [
-      "(A) 0, 1",
-      "(B) 1, -1",
-      "(C) 0, -1",
-      "(D) 2, -2"
-    ],
+    "options": ["(A) 0, 1", "(B) 1, -1", "(C) 0, -1", "(D) 2, -2"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -80,12 +55,7 @@
   {
     "id": "mq8-7",
     "question": "The reciprocal of -5 is:",
-    "options": [
-      "(A) 5",
-      "(B) 1/5",
-      "(C) -1/5",
-      "(D) 0"
-    ],
+    "options": ["(A) 5", "(B) 1/5", "(C) -1/5", "(D) 0"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -93,12 +63,7 @@
   {
     "id": "mq8-8",
     "question": "Reciprocal of 1/x, where x ≠ 0 is:",
-    "options": [
-      "(A) 1",
-      "(B) x",
-      "(C) 0",
-      "(D) -x"
-    ],
+    "options": ["(A) 1", "(B) x", "(C) 0", "(D) -x"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -106,12 +71,7 @@
   {
     "id": "mq8-9",
     "question": "The product of a rational number and its reciprocal is:",
-    "options": [
-      "(A) 0",
-      "(B) 1",
-      "(C) -1",
-      "(D) None"
-    ],
+    "options": ["(A) 0", "(B) 1", "(C) -1", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -132,12 +92,7 @@
   {
     "id": "mq8-11",
     "question": "Which is the identity for addition of rational numbers?",
-    "options": [
-      "(A) 1",
-      "(B) 0",
-      "(C) -1",
-      "(D) None"
-    ],
+    "options": ["(A) 1", "(B) 0", "(C) -1", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -145,12 +100,7 @@
   {
     "id": "mq8-12",
     "question": "Which is the identity for multiplication of rational numbers?",
-    "options": [
-      "(A) 1",
-      "(B) 0",
-      "(C) -1",
-      "(D) None"
-    ],
+    "options": ["(A) 1", "(B) 0", "(C) -1", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -158,12 +108,7 @@
   {
     "id": "mq8-13",
     "question": "Is 0 a rational number?",
-    "options": [
-      "(A) Yes",
-      "(B) No",
-      "(C) Maybe",
-      "(D) None"
-    ],
+    "options": ["(A) Yes", "(B) No", "(C) Maybe", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -184,12 +129,7 @@
   {
     "id": "mq8-15",
     "question": "How many rational numbers are there between two rational numbers?",
-    "options": [
-      "(A) 0",
-      "(B) 1",
-      "(C) 10",
-      "(D) Infinite"
-    ],
+    "options": ["(A) 0", "(B) 1", "(C) 10", "(D) Infinite"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Rational Numbers"
@@ -197,12 +137,7 @@
   {
     "id": "mq8-16",
     "question": "The solution of 2x - 3 = 7 is:",
-    "options": [
-      "(A) 2",
-      "(B) 5",
-      "(C) 10",
-      "(D) 4"
-    ],
+    "options": ["(A) 2", "(B) 5", "(C) 10", "(D) 4"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -210,12 +145,7 @@
   {
     "id": "mq8-17",
     "question": "What is the degree of a linear equation?",
-    "options": [
-      "(A) 0",
-      "(B) 1",
-      "(C) 2",
-      "(D) 3"
-    ],
+    "options": ["(A) 0", "(B) 1", "(C) 2", "(D) 3"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -223,12 +153,7 @@
   {
     "id": "mq8-18",
     "question": "If x/3 + 1 = 7/15, then x is:",
-    "options": [
-      "(A) -8/5",
-      "(B) 8/5",
-      "(C) 5/8",
-      "(D) None"
-    ],
+    "options": ["(A) -8/5", "(B) 8/5", "(C) 5/8", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -236,12 +161,7 @@
   {
     "id": "mq8-19",
     "question": "The value of x in 3x = 2x + 18 is:",
-    "options": [
-      "(A) 18",
-      "(B) 9",
-      "(C) 36",
-      "(D) 0"
-    ],
+    "options": ["(A) 18", "(B) 9", "(C) 36", "(D) 0"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -249,12 +169,7 @@
   {
     "id": "mq8-20",
     "question": "Solution of 5x + 9 = 5 + 3x is:",
-    "options": [
-      "(A) 2",
-      "(B) -2",
-      "(C) 4",
-      "(D) -4"
-    ],
+    "options": ["(A) 2", "(B) -2", "(C) 4", "(D) -4"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -262,12 +177,7 @@
   {
     "id": "mq8-21",
     "question": "The perimeter of a rectangle is 13 cm and its width is 2¾ cm. Find its length.",
-    "options": [
-      "(A) 3¾",
-      "(B) 2¾",
-      "(C) 4¾",
-      "(D) None"
-    ],
+    "options": ["(A) 3¾", "(B) 2¾", "(C) 4¾", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -275,12 +185,7 @@
   {
     "id": "mq8-22",
     "question": "Two numbers are in ratio 5:3. If they differ by 18, the numbers are:",
-    "options": [
-      "(A) 45, 27",
-      "(B) 50, 32",
-      "(C) 40, 22",
-      "(D) None"
-    ],
+    "options": ["(A) 45, 27", "(B) 50, 32", "(C) 40, 22", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -288,12 +193,7 @@
   {
     "id": "mq8-23",
     "question": "Sum of three consecutive integers is 51. The middle integer is:",
-    "options": [
-      "(A) 16",
-      "(B) 17",
-      "(C) 18",
-      "(D) 15"
-    ],
+    "options": ["(A) 16", "(B) 17", "(C) 18", "(D) 15"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -301,12 +201,7 @@
   {
     "id": "mq8-24",
     "question": "The solution of y + 3 = 10 is:",
-    "options": [
-      "(A) 7",
-      "(B) 13",
-      "(C) 3",
-      "(D) 0"
-    ],
+    "options": ["(A) 7", "(B) 13", "(C) 3", "(D) 0"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -314,12 +209,7 @@
   {
     "id": "mq8-25",
     "question": "The solution of 6z = 12 is:",
-    "options": [
-      "(A) 2",
-      "(B) 6",
-      "(C) 12",
-      "(D) 0"
-    ],
+    "options": ["(A) 2", "(B) 6", "(C) 12", "(D) 0"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -327,12 +217,7 @@
   {
     "id": "mq8-26",
     "question": "The solution of t/5 = 10 is:",
-    "options": [
-      "(A) 2",
-      "(B) 50",
-      "(C) 5",
-      "(D) 10"
-    ],
+    "options": ["(A) 2", "(B) 50", "(C) 5", "(D) 10"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -340,12 +225,7 @@
   {
     "id": "mq8-27",
     "question": "If 2x/3 = 18, then x is:",
-    "options": [
-      "(A) 27",
-      "(B) 12",
-      "(C) 54",
-      "(D) 9"
-    ],
+    "options": ["(A) 27", "(B) 12", "(C) 54", "(D) 9"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -353,12 +233,7 @@
   {
     "id": "mq8-28",
     "question": "The solution of 7x - 9 = 16 is:",
-    "options": [
-      "(A) 25/7",
-      "(B) 7/25",
-      "(C) 16/7",
-      "(D) None"
-    ],
+    "options": ["(A) 25/7", "(B) 7/25", "(C) 16/7", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -366,12 +241,7 @@
   {
     "id": "mq8-29",
     "question": "Value of x in 1.6 = x/1.5 is:",
-    "options": [
-      "(A) 2.4",
-      "(B) 2.1",
-      "(C) 2.0",
-      "(D) None"
-    ],
+    "options": ["(A) 2.4", "(B) 2.1", "(C) 2.0", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -379,12 +249,7 @@
   {
     "id": "mq8-30",
     "question": "The value of p in 17 + 6p = 9 is:",
-    "options": [
-      "(A) -4/3",
-      "(B) 4/3",
-      "(C) 3/4",
-      "(D) -3/4"
-    ],
+    "options": ["(A) -4/3", "(B) 4/3", "(C) 3/4", "(D) -3/4"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Linear Equations"
@@ -405,12 +270,7 @@
   {
     "id": "mq8-32",
     "question": "Sum of interior angles of a quadrilateral is:",
-    "options": [
-      "(A) 180°",
-      "(B) 360°",
-      "(C) 540°",
-      "(D) 720°"
-    ],
+    "options": ["(A) 180°", "(B) 360°", "(C) 540°", "(D) 720°"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -418,12 +278,7 @@
   {
     "id": "mq8-33",
     "question": "A polygon with 5 sides is called:",
-    "options": [
-      "(A) Hexagon",
-      "(B) Pentagon",
-      "(C) Heptagon",
-      "(D) Octagon"
-    ],
+    "options": ["(A) Hexagon", "(B) Pentagon", "(C) Heptagon", "(D) Octagon"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -431,12 +286,7 @@
   {
     "id": "mq8-34",
     "question": "Each exterior angle of a regular polygon of 9 sides is:",
-    "options": [
-      "(A) 40°",
-      "(B) 50°",
-      "(C) 60°",
-      "(D) 30°"
-    ],
+    "options": ["(A) 40°", "(B) 50°", "(C) 60°", "(D) 30°"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -444,12 +294,7 @@
   {
     "id": "mq8-35",
     "question": "How many diagonals does a triangle have?",
-    "options": [
-      "(A) 0",
-      "(B) 1",
-      "(C) 2",
-      "(D) 3"
-    ],
+    "options": ["(A) 0", "(B) 1", "(C) 2", "(D) 3"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -457,12 +302,7 @@
   {
     "id": "mq8-36",
     "question": "The sum of exterior angles of any polygon is:",
-    "options": [
-      "(A) 180°",
-      "(B) 360°",
-      "(C) 540°",
-      "(D) None"
-    ],
+    "options": ["(A) 180°", "(B) 360°", "(C) 540°", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -496,12 +336,7 @@
   {
     "id": "mq8-39",
     "question": "A rhombus is a parallelogram with all ______ equal.",
-    "options": [
-      "(A) Angles",
-      "(B) Sides",
-      "(C) Diagonals",
-      "(D) None"
-    ],
+    "options": ["(A) Angles", "(B) Sides", "(C) Diagonals", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -509,12 +344,7 @@
   {
     "id": "mq8-40",
     "question": "Diagonals of a rectangle are:",
-    "options": [
-      "(A) Equal",
-      "(B) Unequal",
-      "(C) Perpendicular",
-      "(D) None"
-    ],
+    "options": ["(A) Equal", "(B) Unequal", "(C) Perpendicular", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -522,12 +352,7 @@
   {
     "id": "mq8-41",
     "question": "Diagonals of a square ______ each other at right angles.",
-    "options": [
-      "(A) Intersect",
-      "(B) Bisect",
-      "(C) Parallel",
-      "(D) None"
-    ],
+    "options": ["(A) Intersect", "(B) Bisect", "(C) Parallel", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -535,12 +360,7 @@
   {
     "id": "mq8-42",
     "question": "The number of sides of a regular polygon whose each interior angle is 165°:",
-    "options": [
-      "(A) 24",
-      "(B) 15",
-      "(C) 12",
-      "(D) 10"
-    ],
+    "options": ["(A) 24", "(B) 15", "(C) 12", "(D) 10"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -548,12 +368,7 @@
   {
     "id": "mq8-43",
     "question": "A polygon with 8 sides is called:",
-    "options": [
-      "(A) Octagon",
-      "(B) Nonagon",
-      "(C) Decagon",
-      "(D) Hexagon"
-    ],
+    "options": ["(A) Octagon", "(B) Nonagon", "(C) Decagon", "(D) Hexagon"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -574,12 +389,7 @@
   {
     "id": "mq8-45",
     "question": "Minimum number of sides to form a polygon is:",
-    "options": [
-      "(A) 1",
-      "(B) 2",
-      "(C) 3",
-      "(D) 4"
-    ],
+    "options": ["(A) 1", "(B) 2", "(C) 3", "(D) 4"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Understanding Quadrilaterals"
@@ -600,12 +410,7 @@
   {
     "id": "mq8-47",
     "question": "In a bar graph, the ______ of bars is same.",
-    "options": [
-      "(A) Height",
-      "(B) Width",
-      "(C) Area",
-      "(D) None"
-    ],
+    "options": ["(A) Height", "(B) Width", "(C) Area", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -652,12 +457,7 @@
   {
     "id": "mq8-51",
     "question": "Tally marks are used to find:",
-    "options": [
-      "(A) Class marks",
-      "(B) Frequency",
-      "(C) Range",
-      "(D) None"
-    ],
+    "options": ["(A) Class marks", "(B) Frequency", "(C) Range", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -665,12 +465,7 @@
   {
     "id": "mq8-52",
     "question": "Total angle in a pie chart is:",
-    "options": [
-      "(A) 90°",
-      "(B) 180°",
-      "(C) 270°",
-      "(D) 360°"
-    ],
+    "options": ["(A) 90°", "(B) 180°", "(C) 270°", "(D) 360°"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -678,12 +473,7 @@
   {
     "id": "mq8-53",
     "question": "Probability of getting head in a toss of coin is:",
-    "options": [
-      "(A) 1",
-      "(B) 0",
-      "(C) 1/2",
-      "(D) 1/4"
-    ],
+    "options": ["(A) 1", "(B) 0", "(C) 1/2", "(D) 1/4"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -691,12 +481,7 @@
   {
     "id": "mq8-54",
     "question": "Probability of an event always lies between:",
-    "options": [
-      "(A) 0 and 1",
-      "(B) 1 and 2",
-      "(C) -1 and 0",
-      "(D) None"
-    ],
+    "options": ["(A) 0 and 1", "(B) 1 and 2", "(C) -1 and 0", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -704,12 +489,7 @@
   {
     "id": "mq8-55",
     "question": "If a die is thrown, probability of getting 7 is:",
-    "options": [
-      "(A) 1",
-      "(B) 0",
-      "(C) 1/6",
-      "(D) 1/2"
-    ],
+    "options": ["(A) 1", "(B) 0", "(C) 1/6", "(D) 1/2"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Data Handling"
@@ -717,12 +497,7 @@
   {
     "id": "mq8-56",
     "question": "The square of 13 is:",
-    "options": [
-      "(A) 133",
-      "(B) 169",
-      "(C) 144",
-      "(D) 196"
-    ],
+    "options": ["(A) 133", "(B) 169", "(C) 144", "(D) 196"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -730,12 +505,7 @@
   {
     "id": "mq8-57",
     "question": "How many natural numbers lie between 9² and 10²?",
-    "options": [
-      "(A) 18",
-      "(B) 19",
-      "(C) 20",
-      "(D) 21"
-    ],
+    "options": ["(A) 18", "(B) 19", "(C) 20", "(D) 21"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -743,12 +513,7 @@
   {
     "id": "mq8-58",
     "question": "The unit digit of square of 23 is:",
-    "options": [
-      "(A) 3",
-      "(B) 6",
-      "(C) 9",
-      "(D) 1"
-    ],
+    "options": ["(A) 3", "(B) 6", "(C) 9", "(D) 1"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -756,12 +521,7 @@
   {
     "id": "mq8-59",
     "question": "Which is a perfect square?",
-    "options": [
-      "(A) 2",
-      "(B) 3",
-      "(C) 4",
-      "(D) 5"
-    ],
+    "options": ["(A) 2", "(B) 3", "(C) 4", "(D) 5"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -769,12 +529,7 @@
   {
     "id": "mq8-60",
     "question": "Square of an even number is always:",
-    "options": [
-      "(A) Odd",
-      "(B) Even",
-      "(C) Prime",
-      "(D) None"
-    ],
+    "options": ["(A) Odd", "(B) Even", "(C) Prime", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -782,12 +537,7 @@
   {
     "id": "mq8-61",
     "question": "Square of an odd number is always:",
-    "options": [
-      "(A) Odd",
-      "(B) Even",
-      "(C) Prime",
-      "(D) None"
-    ],
+    "options": ["(A) Odd", "(B) Even", "(C) Prime", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -795,12 +545,7 @@
   {
     "id": "mq8-62",
     "question": "The square root of 625 is:",
-    "options": [
-      "(A) 15",
-      "(B) 25",
-      "(C) 35",
-      "(D) 45"
-    ],
+    "options": ["(A) 15", "(B) 25", "(C) 35", "(D) 45"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -808,12 +553,7 @@
   {
     "id": "mq8-63",
     "question": "The square of 0.5 is:",
-    "options": [
-      "(A) 2.5",
-      "(B) 0.25",
-      "(C) 0.025",
-      "(D) 25"
-    ],
+    "options": ["(A) 2.5", "(B) 0.25", "(C) 0.025", "(D) 25"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -821,12 +561,7 @@
   {
     "id": "mq8-64",
     "question": "Number of zeroes in square of 100:",
-    "options": [
-      "(A) 2",
-      "(B) 3",
-      "(C) 4",
-      "(D) 1"
-    ],
+    "options": ["(A) 2", "(B) 3", "(C) 4", "(D) 1"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -834,12 +569,7 @@
   {
     "id": "mq8-65",
     "question": "A perfect square never ends with:",
-    "options": [
-      "(A) 1",
-      "(B) 4",
-      "(C) 2",
-      "(D) 9"
-    ],
+    "options": ["(A) 1", "(B) 4", "(C) 2", "(D) 9"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -847,12 +577,7 @@
   {
     "id": "mq8-66",
     "question": "Smallest 3 digit perfect square is:",
-    "options": [
-      "(A) 100",
-      "(B) 121",
-      "(C) 144",
-      "(D) 169"
-    ],
+    "options": ["(A) 100", "(B) 121", "(C) 144", "(D) 169"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -860,12 +585,7 @@
   {
     "id": "mq8-67",
     "question": "Square root of 1 is:",
-    "options": [
-      "(A) 1",
-      "(B) 0",
-      "(C) -1",
-      "(D) None"
-    ],
+    "options": ["(A) 1", "(B) 0", "(C) -1", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -873,12 +593,7 @@
   {
     "id": "mq8-68",
     "question": "Value of √1.21 is:",
-    "options": [
-      "(A) 1.1",
-      "(B) 11",
-      "(C) 0.11",
-      "(D) None"
-    ],
+    "options": ["(A) 1.1", "(B) 11", "(C) 0.11", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -886,12 +601,7 @@
   {
     "id": "mq8-69",
     "question": "Pythagorean triplet starting with 6 is:",
-    "options": [
-      "(A) 6, 8, 10",
-      "(B) 6, 7, 8",
-      "(C) 6, 9, 12",
-      "(D) None"
-    ],
+    "options": ["(A) 6, 8, 10", "(B) 6, 7, 8", "(C) 6, 9, 12", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -899,12 +609,7 @@
   {
     "id": "mq8-70",
     "question": "The square root of 10000 is:",
-    "options": [
-      "(A) 10",
-      "(B) 100",
-      "(C) 1000",
-      "(D) 1"
-    ],
+    "options": ["(A) 10", "(B) 100", "(C) 1000", "(D) 1"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Squares and Square Roots"
@@ -912,12 +617,7 @@
   {
     "id": "mq8-71",
     "question": "The cube of 5 is:",
-    "options": [
-      "(A) 25",
-      "(B) 125",
-      "(C) 75",
-      "(D) 100"
-    ],
+    "options": ["(A) 25", "(B) 125", "(C) 75", "(D) 100"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -925,12 +625,7 @@
   {
     "id": "mq8-72",
     "question": "Which is a perfect cube?",
-    "options": [
-      "(A) 1",
-      "(B) 8",
-      "(C) 27",
-      "(D) All"
-    ],
+    "options": ["(A) 1", "(B) 8", "(C) 27", "(D) All"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -938,12 +633,7 @@
   {
     "id": "mq8-73",
     "question": "The cube root of 64 is:",
-    "options": [
-      "(A) 2",
-      "(B) 4",
-      "(C) 8",
-      "(D) 16"
-    ],
+    "options": ["(A) 2", "(B) 4", "(C) 8", "(D) 16"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -951,12 +641,7 @@
   {
     "id": "mq8-74",
     "question": "The unit digit of cube of 3 is:",
-    "options": [
-      "(A) 9",
-      "(B) 7",
-      "(C) 1",
-      "(D) 3"
-    ],
+    "options": ["(A) 9", "(B) 7", "(C) 1", "(D) 3"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -964,12 +649,7 @@
   {
     "id": "mq8-75",
     "question": "The cube of an even number is:",
-    "options": [
-      "(A) Odd",
-      "(B) Even",
-      "(C) Prime",
-      "(D) None"
-    ],
+    "options": ["(A) Odd", "(B) Even", "(C) Prime", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -977,12 +657,7 @@
   {
     "id": "mq8-76",
     "question": "The cube of an odd number is:",
-    "options": [
-      "(A) Odd",
-      "(B) Even",
-      "(C) Prime",
-      "(D) None"
-    ],
+    "options": ["(A) Odd", "(B) Even", "(C) Prime", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -990,12 +665,7 @@
   {
     "id": "mq8-77",
     "question": "Smallest natural number by which 81 must be divided to get a perfect cube:",
-    "options": [
-      "(A) 3",
-      "(B) 9",
-      "(C) 27",
-      "(D) 1"
-    ],
+    "options": ["(A) 3", "(B) 9", "(C) 27", "(D) 1"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1003,12 +673,7 @@
   {
     "id": "mq8-78",
     "question": "Smallest natural number by which 3 must be multiplied to get a perfect cube:",
-    "options": [
-      "(A) 3",
-      "(B) 9",
-      "(C) 27",
-      "(D) 1"
-    ],
+    "options": ["(A) 3", "(B) 9", "(C) 27", "(D) 1"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1016,12 +681,7 @@
   {
     "id": "mq8-79",
     "question": "The cube root of 1000 is:",
-    "options": [
-      "(A) 10",
-      "(B) 100",
-      "(C) 1000",
-      "(D) 1"
-    ],
+    "options": ["(A) 10", "(B) 100", "(C) 1000", "(D) 1"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1029,12 +689,7 @@
   {
     "id": "mq8-80",
     "question": "The cube of 10 is:",
-    "options": [
-      "(A) 100",
-      "(B) 1000",
-      "(C) 10000",
-      "(D) 1"
-    ],
+    "options": ["(A) 100", "(B) 1000", "(C) 10000", "(D) 1"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1042,12 +697,7 @@
   {
     "id": "mq8-81",
     "question": "Cube root of 125 is:",
-    "options": [
-      "(A) 5",
-      "(B) 15",
-      "(C) 25",
-      "(D) 35"
-    ],
+    "options": ["(A) 5", "(B) 15", "(C) 25", "(D) 35"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1055,12 +705,7 @@
   {
     "id": "mq8-82",
     "question": "The value of 2³ is:",
-    "options": [
-      "(A) 4",
-      "(B) 6",
-      "(C) 8",
-      "(D) 2"
-    ],
+    "options": ["(A) 4", "(B) 6", "(C) 8", "(D) 2"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1068,12 +713,7 @@
   {
     "id": "mq8-83",
     "question": "How many digits are in the cube of a 1-digit number?",
-    "options": [
-      "(A) 1 to 3",
-      "(B) 2 to 4",
-      "(C) 3 to 5",
-      "(D) None"
-    ],
+    "options": ["(A) 1 to 3", "(B) 2 to 4", "(C) 3 to 5", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1081,12 +721,7 @@
   {
     "id": "mq8-84",
     "question": "Cube of -1 is:",
-    "options": [
-      "(A) 1",
-      "(B) -1",
-      "(C) 0",
-      "(D) None"
-    ],
+    "options": ["(A) 1", "(B) -1", "(C) 0", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1094,12 +729,7 @@
   {
     "id": "mq8-85",
     "question": "Cube root of 8000 is:",
-    "options": [
-      "(A) 20",
-      "(B) 200",
-      "(C) 2000",
-      "(D) 2"
-    ],
+    "options": ["(A) 20", "(B) 200", "(C) 2000", "(D) 2"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Cubes and Cube Roots"
@@ -1107,12 +737,7 @@
   {
     "id": "mq8-86",
     "question": "Ratio of 5m to 10km is:",
-    "options": [
-      "(A) 1:2",
-      "(B) 1:20",
-      "(C) 1:200",
-      "(D) 1:2000"
-    ],
+    "options": ["(A) 1:2", "(B) 1:20", "(C) 1:200", "(D) 1:2000"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1120,12 +745,7 @@
   {
     "id": "mq8-87",
     "question": "72% of 25 students are good in math. How many are NOT good?",
-    "options": [
-      "(A) 7",
-      "(B) 8",
-      "(C) 9",
-      "(D) 10"
-    ],
+    "options": ["(A) 7", "(B) 8", "(C) 9", "(D) 10"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1133,12 +753,7 @@
   {
     "id": "mq8-88",
     "question": "Convert 3:4 to percentage:",
-    "options": [
-      "(A) 75%",
-      "(B) 50%",
-      "(C) 25%",
-      "(D) 100%"
-    ],
+    "options": ["(A) 75%", "(B) 50%", "(C) 25%", "(D) 100%"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1146,12 +761,7 @@
   {
     "id": "mq8-89",
     "question": "Profit percentage is always calculated on:",
-    "options": [
-      "(A) SP",
-      "(B) CP",
-      "(C) MP",
-      "(D) None"
-    ],
+    "options": ["(A) SP", "(B) CP", "(C) MP", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1159,12 +769,7 @@
   {
     "id": "mq8-90",
     "question": "Discount = ______ - SP",
-    "options": [
-      "(A) CP",
-      "(B) MP",
-      "(C) Profit",
-      "(D) Loss"
-    ],
+    "options": ["(A) CP", "(B) MP", "(C) Profit", "(D) Loss"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1198,12 +803,7 @@
   {
     "id": "mq8-93",
     "question": "In A = P(1 + R/100)ⁿ, n stands for:",
-    "options": [
-      "(A) Principal",
-      "(B) Rate",
-      "(C) Time",
-      "(D) Amount"
-    ],
+    "options": ["(A) Principal", "(B) Rate", "(C) Time", "(D) Amount"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1211,12 +811,7 @@
   {
     "id": "mq8-94",
     "question": "If CP = 100, SP = 120, then profit is:",
-    "options": [
-      "(A) 20",
-      "(B) 10",
-      "(C) 30",
-      "(D) 0"
-    ],
+    "options": ["(A) 20", "(B) 10", "(C) 30", "(D) 0"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1224,12 +819,7 @@
   {
     "id": "mq8-95",
     "question": "Percentage of 1/4 is:",
-    "options": [
-      "(A) 25%",
-      "(B) 50%",
-      "(C) 75%",
-      "(D) 100%"
-    ],
+    "options": ["(A) 25%", "(B) 50%", "(C) 75%", "(D) 100%"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1237,12 +827,7 @@
   {
     "id": "mq8-96",
     "question": "Sales tax is charged by the ______.",
-    "options": [
-      "(A) Shopkeeper",
-      "(B) Customer",
-      "(C) Government",
-      "(D) None"
-    ],
+    "options": ["(A) Shopkeeper", "(B) Customer", "(C) Government", "(D) None"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1250,12 +835,7 @@
   {
     "id": "mq8-97",
     "question": "A cycle is bought for 1000 and sold for 1200. Profit % is:",
-    "options": [
-      "(A) 10%",
-      "(B) 20%",
-      "(C) 30%",
-      "(D) 25%"
-    ],
+    "options": ["(A) 10%", "(B) 20%", "(C) 30%", "(D) 25%"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1263,12 +843,7 @@
   {
     "id": "mq8-98",
     "question": "MP = 500, Discount = 10%. SP is:",
-    "options": [
-      "(A) 450",
-      "(B) 400",
-      "(C) 490",
-      "(D) None"
-    ],
+    "options": ["(A) 450", "(B) 400", "(C) 490", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1276,12 +851,7 @@
   {
     "id": "mq8-99",
     "question": "SI for P=100, R=10%, T=1yr is:",
-    "options": [
-      "(A) 10",
-      "(B) 1",
-      "(C) 100",
-      "(D) 20"
-    ],
+    "options": ["(A) 10", "(B) 1", "(C) 100", "(D) 20"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1289,12 +859,7 @@
   {
     "id": "mq8-100",
     "question": "GST stands for Goods and ______ Tax.",
-    "options": [
-      "(A) Service",
-      "(B) Super",
-      "(C) State",
-      "(D) Simple"
-    ],
+    "options": ["(A) Service", "(B) Super", "(C) State", "(D) Simple"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Comparing Quantities"
@@ -1302,12 +867,7 @@
   {
     "id": "mq8-101",
     "question": "Coefficient of x in 3x + 4 is:",
-    "options": [
-      "(A) 3",
-      "(B) 4",
-      "(C) x",
-      "(D) None"
-    ],
+    "options": ["(A) 3", "(B) 4", "(C) x", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1367,12 +927,7 @@
   {
     "id": "mq8-106",
     "question": "Product of 4x and 0 is:",
-    "options": [
-      "(A) 4x",
-      "(B) 0",
-      "(C) 4",
-      "(D) x"
-    ],
+    "options": ["(A) 4x", "(B) 0", "(C) 4", "(D) x"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1380,12 +935,7 @@
   {
     "id": "mq8-107",
     "question": "Value of (a+b)² is:",
-    "options": [
-      "(A) a²+b²",
-      "(B) a²+b²+2ab",
-      "(C) a²+b²-2ab",
-      "(D) None"
-    ],
+    "options": ["(A) a²+b²", "(B) a²+b²+2ab", "(C) a²+b²-2ab", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1393,12 +943,7 @@
   {
     "id": "mq8-108",
     "question": "Value of (a-b)² is:",
-    "options": [
-      "(A) a²+b²",
-      "(B) a²+b²+2ab",
-      "(C) a²+b²-2ab",
-      "(D) None"
-    ],
+    "options": ["(A) a²+b²", "(B) a²+b²+2ab", "(C) a²+b²-2ab", "(D) None"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1406,12 +951,7 @@
   {
     "id": "mq8-109",
     "question": "Value of (a+b)(a-b) is:",
-    "options": [
-      "(A) a²+b²",
-      "(B) a²-b²",
-      "(C) 2ab",
-      "(D) None"
-    ],
+    "options": ["(A) a²+b²", "(B) a²-b²", "(C) 2ab", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1419,12 +959,7 @@
   {
     "id": "mq8-110",
     "question": "Product of x and y is:",
-    "options": [
-      "(A) x+y",
-      "(B) xy",
-      "(C) x-y",
-      "(D) x/y"
-    ],
+    "options": ["(A) x+y", "(B) xy", "(C) x-y", "(D) x/y"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1432,12 +967,7 @@
   {
     "id": "mq8-111",
     "question": "What are the factors of 2xy?",
-    "options": [
-      "(A) 2, x, y",
-      "(B) 2x, y",
-      "(C) 2, xy",
-      "(D) All"
-    ],
+    "options": ["(A) 2, x, y", "(B) 2x, y", "(C) 2, xy", "(D) All"],
     "correctAnswer": "D",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1445,12 +975,7 @@
   {
     "id": "mq8-112",
     "question": "Add 7x² and 3x²:",
-    "options": [
-      "(A) 10x²",
-      "(B) 10x⁴",
-      "(C) 4x²",
-      "(D) None"
-    ],
+    "options": ["(A) 10x²", "(B) 10x⁴", "(C) 4x²", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1458,12 +983,7 @@
   {
     "id": "mq8-113",
     "question": "Subtract 2a from 5a:",
-    "options": [
-      "(A) 7a",
-      "(B) 3a",
-      "(C) -3a",
-      "(D) 0"
-    ],
+    "options": ["(A) 7a", "(B) 3a", "(C) -3a", "(D) 0"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1471,12 +991,7 @@
   {
     "id": "mq8-114",
     "question": "Product of (x+2) and (x+3) is:",
-    "options": [
-      "(A) x²+5x+6",
-      "(B) x²+6",
-      "(C) x²+5x",
-      "(D) None"
-    ],
+    "options": ["(A) x²+5x+6", "(B) x²+6", "(C) x²+5x", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1484,12 +999,7 @@
   {
     "id": "mq8-115",
     "question": "Identity (x+a)(x+b) = x² + (a+b)x + ______",
-    "options": [
-      "(A) ab",
-      "(B) a+b",
-      "(C) 2ab",
-      "(D) None"
-    ],
+    "options": ["(A) ab", "(B) a+b", "(C) 2ab", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -1497,12 +1007,7 @@
   {
     "id": "mq8-116",
     "question": "Area of a rectangle is:",
-    "options": [
-      "(A) l+b",
-      "(B) 2(l+b)",
-      "(C) l×b",
-      "(D) None"
-    ],
+    "options": ["(A) l+b", "(B) 2(l+b)", "(C) l×b", "(D) None"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1510,12 +1015,7 @@
   {
     "id": "mq8-117",
     "question": "Area of a square is:",
-    "options": [
-      "(A) side²",
-      "(B) 4×side",
-      "(C) 2×side",
-      "(D) None"
-    ],
+    "options": ["(A) side²", "(B) 4×side", "(C) 2×side", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1523,12 +1023,7 @@
   {
     "id": "mq8-118",
     "question": "Area of a triangle is:",
-    "options": [
-      "(A) bh",
-      "(B) ½bh",
-      "(C) l×b",
-      "(D) None"
-    ],
+    "options": ["(A) bh", "(B) ½bh", "(C) l×b", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1536,12 +1031,7 @@
   {
     "id": "mq8-119",
     "question": "Area of a circle is:",
-    "options": [
-      "(A) 2πr",
-      "(B) πr²",
-      "(C) πd",
-      "(D) None"
-    ],
+    "options": ["(A) 2πr", "(B) πr²", "(C) πd", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1549,12 +1039,7 @@
   {
     "id": "mq8-120",
     "question": "Circumference of a circle is:",
-    "options": [
-      "(A) 2πr",
-      "(B) πr²",
-      "(C) πd²",
-      "(D) None"
-    ],
+    "options": ["(A) 2πr", "(B) πr²", "(C) πd²", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1562,12 +1047,7 @@
   {
     "id": "mq8-121",
     "question": "Area of a trapezium is:",
-    "options": [
-      "(A) ½(a+b)h",
-      "(B) (a+b)h",
-      "(C) ½bh",
-      "(D) None"
-    ],
+    "options": ["(A) ½(a+b)h", "(B) (a+b)h", "(C) ½bh", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1575,12 +1055,7 @@
   {
     "id": "mq8-122",
     "question": "Area of a rhombus is:",
-    "options": [
-      "(A) ½d₁d₂",
-      "(B) d₁d₂",
-      "(C) side²",
-      "(D) None"
-    ],
+    "options": ["(A) ½d₁d₂", "(B) d₁d₂", "(C) side²", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1588,12 +1063,7 @@
   {
     "id": "mq8-123",
     "question": "Lateral surface area of a cube is:",
-    "options": [
-      "(A) 4a²",
-      "(B) 6a²",
-      "(C) a³",
-      "(D) None"
-    ],
+    "options": ["(A) 4a²", "(B) 6a²", "(C) a³", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1601,12 +1071,7 @@
   {
     "id": "mq8-124",
     "question": "Total surface area of a cube is:",
-    "options": [
-      "(A) 4a²",
-      "(B) 6a²",
-      "(C) a³",
-      "(D) None"
-    ],
+    "options": ["(A) 4a²", "(B) 6a²", "(C) a³", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1614,12 +1079,7 @@
   {
     "id": "mq8-125",
     "question": "Volume of a cube is:",
-    "options": [
-      "(A) 4a²",
-      "(B) 6a²",
-      "(C) a³",
-      "(D) None"
-    ],
+    "options": ["(A) 4a²", "(B) 6a²", "(C) a³", "(D) None"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1627,12 +1087,7 @@
   {
     "id": "mq8-126",
     "question": "Volume of a cuboid is:",
-    "options": [
-      "(A) l+b+h",
-      "(B) l×b×h",
-      "(C) 2(lb+bh+hl)",
-      "(D) None"
-    ],
+    "options": ["(A) l+b+h", "(B) l×b×h", "(C) 2(lb+bh+hl)", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1640,12 +1095,7 @@
   {
     "id": "mq8-127",
     "question": "Volume of a cylinder is:",
-    "options": [
-      "(A) πr²h",
-      "(B) 2πrh",
-      "(C) 2πr(r+h)",
-      "(D) None"
-    ],
+    "options": ["(A) πr²h", "(B) 2πrh", "(C) 2πr(r+h)", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1653,12 +1103,7 @@
   {
     "id": "mq8-128",
     "question": "1 Litre = ______ cm³",
-    "options": [
-      "(A) 10",
-      "(B) 100",
-      "(C) 1000",
-      "(D) 10000"
-    ],
+    "options": ["(A) 10", "(B) 100", "(C) 1000", "(D) 10000"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1666,12 +1111,7 @@
   {
     "id": "mq8-129",
     "question": "1 m³ = ______ Litres",
-    "options": [
-      "(A) 10",
-      "(B) 100",
-      "(C) 1000",
-      "(D) 10000"
-    ],
+    "options": ["(A) 10", "(B) 100", "(C) 1000", "(D) 10000"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1679,12 +1119,7 @@
   {
     "id": "mq8-130",
     "question": "Curved surface area of cylinder is:",
-    "options": [
-      "(A) πr²h",
-      "(B) 2πrh",
-      "(C) 2πr(r+h)",
-      "(D) None"
-    ],
+    "options": ["(A) πr²h", "(B) 2πrh", "(C) 2πr(r+h)", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Mensuration"
@@ -1692,12 +1127,7 @@
   {
     "id": "mq8-131",
     "question": "Value of 2⁰ is:",
-    "options": [
-      "(A) 2",
-      "(B) 1",
-      "(C) 0",
-      "(D) -1"
-    ],
+    "options": ["(A) 2", "(B) 1", "(C) 0", "(D) -1"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1705,12 +1135,7 @@
   {
     "id": "mq8-132",
     "question": "Value of 2⁻¹ is:",
-    "options": [
-      "(A) -2",
-      "(B) 1/2",
-      "(C) 2",
-      "(D) 0"
-    ],
+    "options": ["(A) -2", "(B) 1/2", "(C) 2", "(D) 0"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1718,12 +1143,7 @@
   {
     "id": "mq8-133",
     "question": "Multiplicative inverse of 10⁻⁵ is:",
-    "options": [
-      "(A) 10⁵",
-      "(B) 10⁻⁵",
-      "(C) 1/10⁵",
-      "(D) None"
-    ],
+    "options": ["(A) 10⁵", "(B) 10⁻⁵", "(C) 1/10⁵", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1731,12 +1151,7 @@
   {
     "id": "mq8-134",
     "question": "aᵐ × aⁿ is:",
-    "options": [
-      "(A) aᵐ⁺ⁿ",
-      "(B) aᵐ⁻ⁿ",
-      "(C) aᵐⁿ",
-      "(D) None"
-    ],
+    "options": ["(A) aᵐ⁺ⁿ", "(B) aᵐ⁻ⁿ", "(C) aᵐⁿ", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1744,12 +1159,7 @@
   {
     "id": "mq8-135",
     "question": "aᵐ ÷ aⁿ is:",
-    "options": [
-      "(A) aᵐ⁺ⁿ",
-      "(B) aᵐ⁻ⁿ",
-      "(C) aᵐⁿ",
-      "(D) None"
-    ],
+    "options": ["(A) aᵐ⁺ⁿ", "(B) aᵐ⁻ⁿ", "(C) aᵐⁿ", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1757,12 +1167,7 @@
   {
     "id": "mq8-136",
     "question": "(aᵐ)ⁿ is:",
-    "options": [
-      "(A) aᵐ⁺ⁿ",
-      "(B) aᵐ⁻ⁿ",
-      "(C) aᵐⁿ",
-      "(D) None"
-    ],
+    "options": ["(A) aᵐ⁺ⁿ", "(B) aᵐ⁻ⁿ", "(C) aᵐⁿ", "(D) None"],
     "correctAnswer": "C",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1770,12 +1175,7 @@
   {
     "id": "mq8-137",
     "question": "Value of (-1)¹⁰⁰ is:",
-    "options": [
-      "(A) 1",
-      "(B) -1",
-      "(C) 0",
-      "(D) 100"
-    ],
+    "options": ["(A) 1", "(B) -1", "(C) 0", "(D) 100"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1783,12 +1183,7 @@
   {
     "id": "mq8-138",
     "question": "Value of (-1)¹⁰¹ is:",
-    "options": [
-      "(A) 1",
-      "(B) -1",
-      "(C) 0",
-      "(D) 101"
-    ],
+    "options": ["(A) 1", "(B) -1", "(C) 0", "(D) 101"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1796,12 +1191,7 @@
   {
     "id": "mq8-139",
     "question": "Standard form of 0.000007 is:",
-    "options": [
-      "(A) 7×10⁻⁶",
-      "(B) 7×10⁶",
-      "(C) 7×10⁻⁵",
-      "(D) None"
-    ],
+    "options": ["(A) 7×10⁻⁶", "(B) 7×10⁶", "(C) 7×10⁻⁵", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1809,12 +1199,7 @@
   {
     "id": "mq8-140",
     "question": "Value of (2/3)⁻² is:",
-    "options": [
-      "(A) 4/9",
-      "(B) 9/4",
-      "(C) -4/9",
-      "(D) -9/4"
-    ],
+    "options": ["(A) 4/9", "(B) 9/4", "(C) -4/9", "(D) -9/4"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1822,12 +1207,7 @@
   {
     "id": "mq8-141",
     "question": "aᵐ × bᵐ is:",
-    "options": [
-      "(A) (ab)ᵐ",
-      "(B) aᵐ⁺ᵇ",
-      "(C) abᵐ",
-      "(D) None"
-    ],
+    "options": ["(A) (ab)ᵐ", "(B) aᵐ⁺ᵇ", "(C) abᵐ", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1835,12 +1215,7 @@
   {
     "id": "mq8-142",
     "question": "3⁻² is equal to:",
-    "options": [
-      "(A) 9",
-      "(B) 1/9",
-      "(C) -9",
-      "(D) -1/9"
-    ],
+    "options": ["(A) 9", "(B) 1/9", "(C) -9", "(D) -1/9"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1848,12 +1223,7 @@
   {
     "id": "mq8-143",
     "question": "0.000035 in standard form is:",
-    "options": [
-      "(A) 3.5×10⁻⁵",
-      "(B) 3.5×10⁵",
-      "(C) 35×10⁻⁶",
-      "(D) None"
-    ],
+    "options": ["(A) 3.5×10⁻⁵", "(B) 3.5×10⁵", "(C) 35×10⁻⁶", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1861,12 +1231,7 @@
   {
     "id": "mq8-144",
     "question": "Value of (1/2)⁻⁵ is:",
-    "options": [
-      "(A) 32",
-      "(B) 1/32",
-      "(C) -32",
-      "(D) 10"
-    ],
+    "options": ["(A) 32", "(B) 1/32", "(C) -32", "(D) 10"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1874,12 +1239,7 @@
   {
     "id": "mq8-145",
     "question": "Very small numbers can be expressed in standard form using ______ exponents.",
-    "options": [
-      "(A) Positive",
-      "(B) Negative",
-      "(C) Zero",
-      "(D) None"
-    ],
+    "options": ["(A) Positive", "(B) Negative", "(C) Zero", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Exponents and Powers"
@@ -1887,12 +1247,7 @@
   {
     "id": "mq8-146",
     "question": "If x and y are in direct proportion, then:",
-    "options": [
-      "(A) x/y = k",
-      "(B) xy = k",
-      "(C) x+y = k",
-      "(D) x-y = k"
-    ],
+    "options": ["(A) x/y = k", "(B) xy = k", "(C) x+y = k", "(D) x-y = k"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1900,12 +1255,7 @@
   {
     "id": "mq8-147",
     "question": "If x and y are in inverse proportion, then:",
-    "options": [
-      "(A) x/y = k",
-      "(B) xy = k",
-      "(C) x+y = k",
-      "(D) x-y = k"
-    ],
+    "options": ["(A) x/y = k", "(B) xy = k", "(C) x+y = k", "(D) x-y = k"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1913,12 +1263,7 @@
   {
     "id": "mq8-148",
     "question": "Cost of 5 pens is 50. Cost of 10 pens is:",
-    "options": [
-      "(A) 100",
-      "(B) 75",
-      "(C) 150",
-      "(D) 200"
-    ],
+    "options": ["(A) 100", "(B) 75", "(C) 150", "(D) 200"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1926,12 +1271,7 @@
   {
     "id": "mq8-149",
     "question": "If 10 men do a work in 4 days, 5 men will do it in:",
-    "options": [
-      "(A) 2 days",
-      "(B) 8 days",
-      "(C) 4 days",
-      "(D) 10 days"
-    ],
+    "options": ["(A) 2 days", "(B) 8 days", "(C) 4 days", "(D) 10 days"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1939,12 +1279,7 @@
   {
     "id": "mq8-150",
     "question": "Speed and time taken for a fixed distance are in ______ proportion.",
-    "options": [
-      "(A) Direct",
-      "(B) Inverse",
-      "(C) No",
-      "(D) None"
-    ],
+    "options": ["(A) Direct", "(B) Inverse", "(C) No", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1952,12 +1287,7 @@
   {
     "id": "mq8-151",
     "question": "Number of articles and their total cost are in ______ proportion.",
-    "options": [
-      "(A) Direct",
-      "(B) Inverse",
-      "(C) No",
-      "(D) None"
-    ],
+    "options": ["(A) Direct", "(B) Inverse", "(C) No", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1965,12 +1295,7 @@
   {
     "id": "mq8-152",
     "question": "If x₁/y₁ = x₂/y₂, then x and y are in:",
-    "options": [
-      "(A) Direct prop",
-      "(B) Inverse prop",
-      "(C) Both",
-      "(D) None"
-    ],
+    "options": ["(A) Direct prop", "(B) Inverse prop", "(C) Both", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1978,12 +1303,7 @@
   {
     "id": "mq8-153",
     "question": "If x₁y₁ = x₂y₂, then x and y are in:",
-    "options": [
-      "(A) Direct prop",
-      "(B) Inverse prop",
-      "(C) Both",
-      "(D) None"
-    ],
+    "options": ["(A) Direct prop", "(B) Inverse prop", "(C) Both", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -1991,12 +1311,7 @@
   {
     "id": "mq8-154",
     "question": "Distance and time for uniform speed are in:",
-    "options": [
-      "(A) Direct prop",
-      "(B) Inverse prop",
-      "(C) No",
-      "(D) None"
-    ],
+    "options": ["(A) Direct prop", "(B) Inverse prop", "(C) No", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2004,12 +1319,7 @@
   {
     "id": "mq8-155",
     "question": "If 1kg sugar costs 40, 3kg costs:",
-    "options": [
-      "(A) 80",
-      "(B) 120",
-      "(C) 160",
-      "(D) 200"
-    ],
+    "options": ["(A) 80", "(B) 120", "(C) 160", "(D) 200"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2017,12 +1327,7 @@
   {
     "id": "mq8-156",
     "question": "If 5 workers build a wall in 48 hours, 15 workers will take:",
-    "options": [
-      "(A) 16 hrs",
-      "(B) 144 hrs",
-      "(C) 24 hrs",
-      "(D) None"
-    ],
+    "options": ["(A) 16 hrs", "(B) 144 hrs", "(C) 24 hrs", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2030,12 +1335,7 @@
   {
     "id": "mq8-157",
     "question": "A car takes 2 hrs to reach a destination at 60 km/h. At 80 km/h it will take:",
-    "options": [
-      "(A) 1.5 hrs",
-      "(B) 2.5 hrs",
-      "(C) 3 hrs",
-      "(D) None"
-    ],
+    "options": ["(A) 1.5 hrs", "(B) 2.5 hrs", "(C) 3 hrs", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2043,12 +1343,7 @@
   {
     "id": "mq8-158",
     "question": "Area of land and its price are usually in:",
-    "options": [
-      "(A) Direct prop",
-      "(B) Inverse prop",
-      "(C) No",
-      "(D) None"
-    ],
+    "options": ["(A) Direct prop", "(B) Inverse prop", "(C) No", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2056,12 +1351,7 @@
   {
     "id": "mq8-159",
     "question": "More the workers, ______ the time to finish a job.",
-    "options": [
-      "(A) More",
-      "(B) Less",
-      "(C) Same",
-      "(D) None"
-    ],
+    "options": ["(A) More", "(B) Less", "(C) Same", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2069,12 +1359,7 @@
   {
     "id": "mq8-160",
     "question": "Weight of 12 sheets of paper is 40g. Sheets in 2500g is:",
-    "options": [
-      "(A) 750",
-      "(B) 800",
-      "(C) 850",
-      "(D) 900"
-    ],
+    "options": ["(A) 750", "(B) 800", "(C) 850", "(D) 900"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Direct and Inverse Proportions"
@@ -2082,12 +1367,7 @@
   {
     "id": "mq8-161",
     "question": "Common factor of 2x and 4 is:",
-    "options": [
-      "(A) 2",
-      "(B) x",
-      "(C) 4",
-      "(D) 2x"
-    ],
+    "options": ["(A) 2", "(B) x", "(C) 4", "(D) 2x"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2095,12 +1375,7 @@
   {
     "id": "mq8-162",
     "question": "Common factor of 12a²b and 15ab² is:",
-    "options": [
-      "(A) 3ab",
-      "(B) ab",
-      "(C) 3",
-      "(D) None"
-    ],
+    "options": ["(A) 3ab", "(B) ab", "(C) 3", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2108,12 +1383,7 @@
   {
     "id": "mq8-163",
     "question": "Factorised form of x² + xy is:",
-    "options": [
-      "(A) x(x+y)",
-      "(B) y(x+y)",
-      "(C) xy",
-      "(D) None"
-    ],
+    "options": ["(A) x(x+y)", "(B) y(x+y)", "(C) xy", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2160,12 +1430,7 @@
   {
     "id": "mq8-167",
     "question": "Factorise 10x - 25:",
-    "options": [
-      "(A) 5(2x-5)",
-      "(B) 2(5x-10)",
-      "(C) 10(x-2.5)",
-      "(D) None"
-    ],
+    "options": ["(A) 5(2x-5)", "(B) 2(5x-10)", "(C) 10(x-2.5)", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2186,12 +1451,7 @@
   {
     "id": "mq8-169",
     "question": "Divide 10x² by 2x:",
-    "options": [
-      "(A) 5x",
-      "(B) 5",
-      "(C) 10x",
-      "(D) 2"
-    ],
+    "options": ["(A) 5x", "(B) 5", "(C) 10x", "(D) 2"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2199,12 +1459,7 @@
   {
     "id": "mq8-170",
     "question": "Common factor of 7x and 21y is:",
-    "options": [
-      "(A) 7",
-      "(B) x",
-      "(C) y",
-      "(D) None"
-    ],
+    "options": ["(A) 7", "(B) x", "(C) y", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2225,12 +1480,7 @@
   {
     "id": "mq8-172",
     "question": "Is (x-1) a factor of x² - 1?",
-    "options": [
-      "(A) Yes",
-      "(B) No",
-      "(C) Maybe",
-      "(D) None"
-    ],
+    "options": ["(A) Yes", "(B) No", "(C) Maybe", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2251,12 +1501,7 @@
   {
     "id": "mq8-174",
     "question": "Common factor of 14pq and 28p²q² is:",
-    "options": [
-      "(A) 14pq",
-      "(B) 7pq",
-      "(C) 2pq",
-      "(D) None"
-    ],
+    "options": ["(A) 14pq", "(B) 7pq", "(C) 2pq", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Factorisation"
@@ -2277,12 +1522,7 @@
   {
     "id": "mq8-176",
     "question": "The horizontal axis is called:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2290,12 +1530,7 @@
   {
     "id": "mq8-177",
     "question": "The vertical axis is called:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2303,12 +1538,7 @@
   {
     "id": "mq8-178",
     "question": "The point of intersection of axes is:",
-    "options": [
-      "(A) (0,0)",
-      "(B) (1,1)",
-      "(C) (1,0)",
-      "(D) (0,1)"
-    ],
+    "options": ["(A) (0,0)", "(B) (1,1)", "(C) (1,0)", "(D) (0,1)"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2316,12 +1546,7 @@
   {
     "id": "mq8-179",
     "question": "The x-coordinate is also called:",
-    "options": [
-      "(A) Abscissa",
-      "(B) Ordinate",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) Abscissa", "(B) Ordinate", "(C) Origin", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2329,12 +1554,7 @@
   {
     "id": "mq8-180",
     "question": "The y-coordinate is also called:",
-    "options": [
-      "(A) Abscissa",
-      "(B) Ordinate",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) Abscissa", "(B) Ordinate", "(C) Origin", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2342,12 +1562,7 @@
   {
     "id": "mq8-181",
     "question": "A point with y-coordinate zero lies on:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2355,12 +1570,7 @@
   {
     "id": "mq8-182",
     "question": "A point with x-coordinate zero lies on:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2368,12 +1578,7 @@
   {
     "id": "mq8-183",
     "question": "Coordinates of origin are:",
-    "options": [
-      "(A) (0,0)",
-      "(B) (1,1)",
-      "(C) (0,1)",
-      "(D) (1,0)"
-    ],
+    "options": ["(A) (0,0)", "(B) (1,1)", "(C) (0,1)", "(D) (1,0)"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2394,12 +1599,7 @@
   {
     "id": "mq8-185",
     "question": "To plot (3, 4), we move 3 units on:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Both",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Both", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2407,12 +1607,7 @@
   {
     "id": "mq8-186",
     "question": "A line graph which is a whole unbroken line is called a ______ graph.",
-    "options": [
-      "(A) Linear",
-      "(B) Bar",
-      "(C) Circle",
-      "(D) Broken"
-    ],
+    "options": ["(A) Linear", "(B) Bar", "(C) Circle", "(D) Broken"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2420,12 +1615,7 @@
   {
     "id": "mq8-187",
     "question": "The point (5, 0) lies on:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2433,12 +1623,7 @@
   {
     "id": "mq8-188",
     "question": "The point (0, 7) lies on:",
-    "options": [
-      "(A) X-axis",
-      "(B) Y-axis",
-      "(C) Origin",
-      "(D) None"
-    ],
+    "options": ["(A) X-axis", "(B) Y-axis", "(C) Origin", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2446,12 +1631,7 @@
   {
     "id": "mq8-189",
     "question": "In (4, 3), the x-coordinate is:",
-    "options": [
-      "(A) 4",
-      "(B) 3",
-      "(C) 7",
-      "(D) 1"
-    ],
+    "options": ["(A) 4", "(B) 3", "(C) 7", "(D) 1"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2459,12 +1639,7 @@
   {
     "id": "mq8-190",
     "question": "In (2, 8), the y-coordinate is:",
-    "options": [
-      "(A) 2",
-      "(B) 8",
-      "(C) 10",
-      "(D) 6"
-    ],
+    "options": ["(A) 2", "(B) 8", "(C) 10", "(D) 6"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Introduction to Graphs"
@@ -2472,12 +1647,7 @@
   {
     "id": "mq8-191",
     "question": "A number divisible by 2 ends with:",
-    "options": [
-      "(A) 0,2,4,6,8",
-      "(B) 1,3,5,7,9",
-      "(C) 0,5",
-      "(D) None"
-    ],
+    "options": ["(A) 0,2,4,6,8", "(B) 1,3,5,7,9", "(C) 0,5", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2485,12 +1655,7 @@
   {
     "id": "mq8-192",
     "question": "A number divisible by 5 ends with:",
-    "options": [
-      "(A) 0 or 5",
-      "(B) 0 only",
-      "(C) 5 only",
-      "(D) None"
-    ],
+    "options": ["(A) 0 or 5", "(B) 0 only", "(C) 5 only", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2498,12 +1663,7 @@
   {
     "id": "mq8-193",
     "question": "Sum of digits of 123 is:",
-    "options": [
-      "(A) 6",
-      "(B) 5",
-      "(C) 3",
-      "(D) 1"
-    ],
+    "options": ["(A) 6", "(B) 5", "(C) 3", "(D) 1"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2511,12 +1671,7 @@
   {
     "id": "mq8-194",
     "question": "If sum of digits is divisible by 3, the number is divisible by:",
-    "options": [
-      "(A) 2",
-      "(B) 3",
-      "(C) 5",
-      "(D) 10"
-    ],
+    "options": ["(A) 2", "(B) 3", "(C) 5", "(D) 10"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2524,12 +1679,7 @@
   {
     "id": "mq8-195",
     "question": "General form of 2-digit number ab is:",
-    "options": [
-      "(A) 10a + b",
-      "(B) 10b + a",
-      "(C) a + b",
-      "(D) ab"
-    ],
+    "options": ["(A) 10a + b", "(B) 10b + a", "(C) a + b", "(D) ab"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2550,12 +1700,7 @@
   {
     "id": "mq8-197",
     "question": "Is 100 divisible by 10?",
-    "options": [
-      "(A) Yes",
-      "(B) No",
-      "(C) Maybe",
-      "(D) None"
-    ],
+    "options": ["(A) Yes", "(B) No", "(C) Maybe", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2563,12 +1708,7 @@
   {
     "id": "mq8-198",
     "question": "If a number is divisible by 9, it is also divisible by:",
-    "options": [
-      "(A) 2",
-      "(B) 3",
-      "(C) 5",
-      "(D) None"
-    ],
+    "options": ["(A) 2", "(B) 3", "(C) 5", "(D) None"],
     "correctAnswer": "B",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2576,12 +1716,7 @@
   {
     "id": "mq8-199",
     "question": "The units digit of an even number is always:",
-    "options": [
-      "(A) Even",
-      "(B) Odd",
-      "(C) Prime",
-      "(D) None"
-    ],
+    "options": ["(A) Even", "(B) Odd", "(C) Prime", "(D) None"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"
@@ -2589,12 +1724,7 @@
   {
     "id": "mq8-200",
     "question": "Reversed form of 27 is:",
-    "options": [
-      "(A) 72",
-      "(B) 27",
-      "(C) 9",
-      "(D) 14"
-    ],
+    "options": ["(A) 72", "(B) 27", "(C) 9", "(D) 14"],
     "correctAnswer": "A",
     "chapterId": "math8-mix",
     "chapterTitle": "Playing with Numbers"

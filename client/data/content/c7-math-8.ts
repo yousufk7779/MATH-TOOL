@@ -1,28 +1,40 @@
 import { ChapterContent } from "../types";
 
 export const c7Math8: ChapterContent = {
-    id: "c7-math-8",
-    number: 8,
-    title: "Rational Numbers",
-    isHtmlView: true,
-    introduction: "A rational number is any number that can be expressed as a fraction p/q, where p and q are integers and q is not zero. They include integers, fractions, and terminating decimals.",
-    definitions: [
-        { term: "Rational Number", definition: "A number that can be written in the form p/q where q ≠ 0." },
-        { term: "Positive Rational Number", definition: "A rational number where both numerator and denominator have the same sign." },
-        { term: "Negative Rational Number", definition: "A rational number where numerator and denominator have opposite signs." }
-    ],
-    keyPoints: [
-        "Every integer is a rational number.",
-        "A rational number is in standard form if the denominator is positive and there are no common factors between p and q.",
-        "Equivalent rational numbers are obtained by multiplying or dividing p and q by the same non-zero integer."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex8-1", name: "Exercise 8.1", questions: [] },
-        { id: "ex8-2", name: "Exercise 8.2", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-8",
+  number: 8,
+  title: "Rational Numbers",
+  isHtmlView: true,
+  introduction:
+    "A rational number is any number that can be expressed as a fraction p/q, where p and q are integers and q is not zero. They include integers, fractions, and terminating decimals.",
+  definitions: [
+    {
+      term: "Rational Number",
+      definition: "A number that can be written in the form p/q where q ≠ 0.",
+    },
+    {
+      term: "Positive Rational Number",
+      definition:
+        "A rational number where both numerator and denominator have the same sign.",
+    },
+    {
+      term: "Negative Rational Number",
+      definition:
+        "A rational number where numerator and denominator have opposite signs.",
+    },
+  ],
+  keyPoints: [
+    "Every integer is a rational number.",
+    "A rational number is in standard form if the denominator is positive and there are no common factors between p and q.",
+    "Equivalent rational numbers are obtained by multiplying or dividing p and q by the same non-zero integer.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex8-1", name: "Exercise 8.1", questions: [] },
+    { id: "ex8-2", name: "Exercise 8.2", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FF6D00; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -40,8 +52,8 @@ export const c7Math8: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex8-1": `
+  htmlExercises: {
+    "ex8-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF6D00; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -244,7 +256,7 @@ export const c7Math8: ChapterContent = {
         </div>
 </div>
         `,
-        "ex8-2": `
+    "ex8-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF6D00; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
@@ -352,20 +364,70 @@ export const c7Math8: ChapterContent = {
                 </div>
             </div>
         </div>
-        `
+        `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "Which is a rational number?",
+      options: ["5", "-2/3", "0", "All of these"],
+      correctAnswer: "D",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "Which is a rational number?", options: ["5", "-2/3", "0", "All of these"], correctAnswer: "D" },
-        { id: "m2", question: "In p/q, q cannot be:", options: ["1", "-1", "0", "10"], correctAnswer: "C" },
-        { id: "m3", question: "The standard form of -18/12 is:", options: ["-3/2", "3/-2", "-9/6", "1.5"], correctAnswer: "A" },
-        { id: "m4", question: "Reciprocal of -5/7 is:", options: ["5/7", "7/5", "-7/5", "1"], correctAnswer: "C" },
-        { id: "m5", question: "0 is ______ rational number.", options: ["Positive", "Negative", "Neither pos nor neg", "Undefined"], correctAnswer: "C" },
-        { id: "m6", question: "Which symbol fills -4/5 [ ] -5/7?", options: [">", "<", "=", "None"], correctAnswer: "B" },
-        { id: "m7", question: "Sum of a number and its additive inverse is:", options: ["1", "0", "-1", "2"], correctAnswer: "B" },
-        { id: "m8", question: "Rational number between 1/2 and 1/4 is:", options: ["3/8", "1/3", "3/4", "1/6"], correctAnswer: "A" },
-        { id: "m9", question: "Product of a number and its reciprocal is:", options: ["0", "1", "-1", "Number itself"], correctAnswer: "B" },
-        { id: "m10", question: "Smallest positive rational number is:", options: ["0", "1", "0.1", "Doesn't exist"], correctAnswer: "D" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "In p/q, q cannot be:",
+      options: ["1", "-1", "0", "10"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m3",
+      question: "The standard form of -18/12 is:",
+      options: ["-3/2", "3/-2", "-9/6", "1.5"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m4",
+      question: "Reciprocal of -5/7 is:",
+      options: ["5/7", "7/5", "-7/5", "1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m5",
+      question: "0 is ______ rational number.",
+      options: ["Positive", "Negative", "Neither pos nor neg", "Undefined"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m6",
+      question: "Which symbol fills -4/5 [ ] -5/7?",
+      options: [">", "<", "=", "None"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m7",
+      question: "Sum of a number and its additive inverse is:",
+      options: ["1", "0", "-1", "2"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m8",
+      question: "Rational number between 1/2 and 1/4 is:",
+      options: ["3/8", "1/3", "3/4", "1/6"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m9",
+      question: "Product of a number and its reciprocal is:",
+      options: ["0", "1", "-1", "Number itself"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m10",
+      question: "Smallest positive rational number is:",
+      options: ["0", "1", "0.1", "Doesn't exist"],
+      correctAnswer: "D",
+    },
+  ],
+  summary: [],
 };

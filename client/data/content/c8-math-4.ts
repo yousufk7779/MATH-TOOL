@@ -386,23 +386,95 @@ export const c8Math4: ChapterContent = {
   id: "c8-math-4",
   number: 4,
   title: "Data Handling",
-  introduction: "In this chapter, we explore tools like Frequency Distribution Tables, Pie Charts, and Probability.",
+  introduction:
+    "In this chapter, we explore tools like Frequency Distribution Tables, Pie Charts, and Probability.",
   mcqs: [
-    { id: "m1", question: "Central angle formula:", options: ["(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°", "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x180°", "Value x 360°", "<span class='frac'><span class='num'>Total</span><span class='den'>Value</span></span>"], correctAnswer: "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°" },
-    { id: "m2", question: "Sum of angles in pie chart:", options: ["180°", "360°", "90°", "270°"], correctAnswer: "360°" },
-    { id: "m3", question: "P(Impossible event):", options: ["1", "0", "0.5", "2"], correctAnswer: "0" },
-    { id: "m4", question: "P(Sure event):", options: ["0", "1", "0.5", "100"], correctAnswer: "1" },
-    { id: "m5", question: "Die faces are:", options: ["4", "6", "8", "12"], correctAnswer: "6" },
-    { id: "m6", question: "Outcome of tossing 1 coin:", options: ["1", "2", "3", "4"], correctAnswer: "2" },
-    { id: "m7", question: "P(Head) in coin toss:", options: ["1", "0", "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>", "<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>"], correctAnswer: "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>" },
-    { id: "m8", question: "Range = Max value - ?", options: ["Min value", "Total", "Mean", "Median"], correctAnswer: "Min value" },
-    { id: "m9", question: "Tally marks are in groups of:", options: ["4", "5", "10", "2"], correctAnswer: "5" },
-    { id: "m10", question: "P(Even number) in die:", options: ["<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>", "<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>", "<span class='frac'><span class='num'>1</span><span class='den'>6</span></span>", "1"], correctAnswer: "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>" }
+    {
+      id: "m1",
+      question: "Central angle formula:",
+      options: [
+        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°",
+        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x180°",
+        "Value x 360°",
+        "<span class='frac'><span class='num'>Total</span><span class='den'>Value</span></span>",
+      ],
+      correctAnswer:
+        "(<span class='frac'><span class='num'>Value</span><span class='den'>Total</span></span>)x360°",
+    },
+    {
+      id: "m2",
+      question: "Sum of angles in pie chart:",
+      options: ["180°", "360°", "90°", "270°"],
+      correctAnswer: "360°",
+    },
+    {
+      id: "m3",
+      question: "P(Impossible event):",
+      options: ["1", "0", "0.5", "2"],
+      correctAnswer: "0",
+    },
+    {
+      id: "m4",
+      question: "P(Sure event):",
+      options: ["0", "1", "0.5", "100"],
+      correctAnswer: "1",
+    },
+    {
+      id: "m5",
+      question: "Die faces are:",
+      options: ["4", "6", "8", "12"],
+      correctAnswer: "6",
+    },
+    {
+      id: "m6",
+      question: "Outcome of tossing 1 coin:",
+      options: ["1", "2", "3", "4"],
+      correctAnswer: "2",
+    },
+    {
+      id: "m7",
+      question: "P(Head) in coin toss:",
+      options: [
+        "1",
+        "0",
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
+        "<span class='frac'><span class='num'>1</span><span class='den'>4</span></span>",
+      ],
+      correctAnswer:
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
+    },
+    {
+      id: "m8",
+      question: "Range = Max value - ?",
+      options: ["Min value", "Total", "Mean", "Median"],
+      correctAnswer: "Min value",
+    },
+    {
+      id: "m9",
+      question: "Tally marks are in groups of:",
+      options: ["4", "5", "10", "2"],
+      correctAnswer: "5",
+    },
+    {
+      id: "m10",
+      question: "P(Even number) in die:",
+      options: [
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
+        "<span class='frac'><span class='num'>1</span><span class='den'>3</span></span>",
+        "<span class='frac'><span class='num'>1</span><span class='den'>6</span></span>",
+        "1",
+      ],
+      correctAnswer:
+        "<span class='frac'><span class='num'>1</span><span class='den'>2</span></span>",
+    },
   ],
-  summary: ["Pie charts represent relationship of parts to a whole.", "Probability = Fav <span class='frac'><span class='num'>outcomes</span><span class='den'>Total</span></span> outcomes."],
+  summary: [
+    "Pie charts represent relationship of parts to a whole.",
+    "Probability = Fav <span class='frac'><span class='num'>outcomes</span><span class='den'>Total</span></span> outcomes.",
+  ],
   exercises: [
     { id: "ex4-1", name: "Exercise 4.1", questions: [] },
-    { id: "ex4-2", name: "Exercise 4.2", questions: [] }
+    { id: "ex4-2", name: "Exercise 4.2", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -522,6 +594,6 @@ export const c8Math4: ChapterContent = {
   `,
   htmlExercises: {
     "ex4-1": ex41Content,
-    "ex4-2": ex42Content
-  }
+    "ex4-2": ex42Content,
+  },
 };

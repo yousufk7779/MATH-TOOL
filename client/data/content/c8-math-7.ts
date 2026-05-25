@@ -249,30 +249,95 @@ export const c8Math7: ChapterContent = {
   id: "c8-math-7",
   number: 7,
   title: "Comparing Quantities",
-  introduction: "In this chapter, we will learn about ratios, percentages, and their applications in real-life scenarios like discounts, taxes, and compound interest.",
+  introduction:
+    "In this chapter, we will learn about ratios, percentages, and their applications in real-life scenarios like discounts, taxes, and compound interest.",
   mcqs: [
-    { id: "m1", question: "The ratio 3:4 expressed as a percentage is:", options: ["40%", "60%", "75%", "80%"], correctAnswer: "75%" },
-    { id: "m2", question: "If 50% of students like apples out of 40 students, how many like apples?", options: ["10", "20", "30", "40"], correctAnswer: "20" },
-    { id: "m3", question: "The price of an item is Rs 100. If 10% tax is added, what is the final price?", options: ["Rs 90", "Rs 100", "Rs 110", "Rs 120"], correctAnswer: "Rs 110" },
-    { id: "m4", question: "Discount is always calculated on which price?", options: ["Selling Price", "Cost Price", "Marked Price", "None of these"], correctAnswer: "Marked Price" },
-    { id: "m5", question: "What is 20% of 50?", options: ["10", "20", "25", "5"], correctAnswer: "10" },
-    { id: "m6", question: "If an item of Rs 500 is sold at 10% discount, the selling price is:", options: ["Rs 400", "Rs 450", "Rs 490", "Rs 550"], correctAnswer: "Rs 450" },
-    { id: "m7", question: "Which formula calculates compound amount?", options: ["A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)", "A = P(1-<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)", "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ", "A = P×R×<span class='frac'><span class='num'>T</span><span class='den'>100</span></span>"], correctAnswer: "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ" },
-    { id: "m8", question: "1 km is equal to how many meters?", options: ["10", "100", "1000", "10000"], correctAnswer: "1000" },
-    { id: "m9", question: "Depreciation means:", options: ["Increase in value", "Decrease in value", "No change in value", "Double the value"], correctAnswer: "Decrease in value" },
-    { id: "m10", question: "The ratio of 50 paise to Rs 1 is:", options: ["1:2", "2:1", "1:1", "50:1"], correctAnswer: "1:2" }
+    {
+      id: "m1",
+      question: "The ratio 3:4 expressed as a percentage is:",
+      options: ["40%", "60%", "75%", "80%"],
+      correctAnswer: "75%",
+    },
+    {
+      id: "m2",
+      question:
+        "If 50% of students like apples out of 40 students, how many like apples?",
+      options: ["10", "20", "30", "40"],
+      correctAnswer: "20",
+    },
+    {
+      id: "m3",
+      question:
+        "The price of an item is Rs 100. If 10% tax is added, what is the final price?",
+      options: ["Rs 90", "Rs 100", "Rs 110", "Rs 120"],
+      correctAnswer: "Rs 110",
+    },
+    {
+      id: "m4",
+      question: "Discount is always calculated on which price?",
+      options: ["Selling Price", "Cost Price", "Marked Price", "None of these"],
+      correctAnswer: "Marked Price",
+    },
+    {
+      id: "m5",
+      question: "What is 20% of 50?",
+      options: ["10", "20", "25", "5"],
+      correctAnswer: "10",
+    },
+    {
+      id: "m6",
+      question:
+        "If an item of Rs 500 is sold at 10% discount, the selling price is:",
+      options: ["Rs 400", "Rs 450", "Rs 490", "Rs 550"],
+      correctAnswer: "Rs 450",
+    },
+    {
+      id: "m7",
+      question: "Which formula calculates compound amount?",
+      options: [
+        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)",
+        "A = P(1-<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)",
+        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ",
+        "A = P×R×<span class='frac'><span class='num'>T</span><span class='den'>100</span></span>",
+      ],
+      correctAnswer:
+        "A = P(1+<span class='frac'><span class='num'>R</span><span class='den'>100</span></span>)ⁿ",
+    },
+    {
+      id: "m8",
+      question: "1 km is equal to how many meters?",
+      options: ["10", "100", "1000", "10000"],
+      correctAnswer: "1000",
+    },
+    {
+      id: "m9",
+      question: "Depreciation means:",
+      options: [
+        "Increase in value",
+        "Decrease in value",
+        "No change in value",
+        "Double the value",
+      ],
+      correctAnswer: "Decrease in value",
+    },
+    {
+      id: "m10",
+      question: "The ratio of 50 paise to Rs 1 is:",
+      options: ["1:2", "2:1", "1:1", "50:1"],
+      correctAnswer: "1:2",
+    },
   ],
   summary: [
     "A ratio is a comparison of two quantities using division.",
     "Percentages are ratios expressed as a fraction of 100.",
     "Discount is a reduction given on the Marked Price (MP) of an article.",
     "Sales tax and Value Added Tax (VAT) are charged on the sale of an item and are added to the bill amount.",
-    "Compound interest calculates interest on the initial principal and also on the accumulated interest of previous periods."
+    "Compound interest calculates interest on the initial principal and also on the accumulated interest of previous periods.",
   ],
   exercises: [
     { id: "ex7-1", name: "Exercise 7.1", questions: [] },
     { id: "ex7-2", name: "Exercise 7.2", questions: [] },
-    { id: "ex7-3", name: "Exercise 7.3", questions: [] }
+    { id: "ex7-3", name: "Exercise 7.3", questions: [] },
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -396,6 +461,6 @@ export const c8Math7: ChapterContent = {
   htmlExercises: {
     "ex7-1": ex71Content,
     "ex7-2": ex72Content,
-    "ex7-3": ex73Content
-  }
+    "ex7-3": ex73Content,
+  },
 };

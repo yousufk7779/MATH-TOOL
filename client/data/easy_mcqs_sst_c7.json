@@ -2,7 +2,12 @@
   {
     "id": "c7-sst-1",
     "question": "Which century marked the beginning of the Medieval period in India?",
-    "options": ["(A) 5th Century", "(B) 8th Century", "(C) 12th Century", "(D) 15th Century"],
+    "options": [
+      "(A) 5th Century",
+      "(B) 8th Century",
+      "(C) 12th Century",
+      "(D) 15th Century"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-1",
@@ -20,7 +25,12 @@
   {
     "id": "c7-sst-3",
     "question": "World Environment Day is celebrated on:",
-    "options": ["(A) 5th June", "(B) 2nd October", "(C) 15th August", "(D) 26th January"],
+    "options": [
+      "(A) 5th June",
+      "(B) 2nd October",
+      "(C) 15th August",
+      "(D) 26th January"
+    ],
     "correctAnswer": "A",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -29,7 +39,12 @@
   {
     "id": "c7-sst-4",
     "question": "The thin layer of air that surrounds the earth is:",
-    "options": ["(A) Hydrosphere", "(B) Atmosphere", "(C) Biosphere", "(D) Lithosphere"],
+    "options": [
+      "(A) Hydrosphere",
+      "(B) Atmosphere",
+      "(C) Biosphere",
+      "(D) Lithosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -74,7 +89,12 @@
   {
     "id": "c7-sst-9",
     "question": "Who was the first Sultan of Delhi?",
-    "options": ["(A) Iltutmish", "(B) Qutbuddin Aybak", "(C) Balban", "(D) Akbar"],
+    "options": [
+      "(A) Iltutmish",
+      "(B) Qutbuddin Aybak",
+      "(C) Balban",
+      "(D) Akbar"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-3",
@@ -83,7 +103,12 @@
   {
     "id": "c7-sst-10",
     "question": "Who was the revenue minister of Akbar?",
-    "options": ["(A) Birbal", "(B) Raja Todar Mal", "(C) Abul Fazl", "(D) Tansen"],
+    "options": [
+      "(A) Birbal",
+      "(B) Raja Todar Mal",
+      "(C) Abul Fazl",
+      "(D) Tansen"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-4",
@@ -92,7 +117,12 @@
   {
     "id": "c7-sst-11",
     "question": "PHC stands for:",
-    "options": ["(A) Private Health Centre", "(B) Primary Health Centre", "(C) Public Health Clinic", "(D) None"],
+    "options": [
+      "(A) Private Health Centre",
+      "(B) Primary Health Centre",
+      "(C) Public Health Clinic",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-2",
@@ -101,7 +131,12 @@
   {
     "id": "c7-sst-12",
     "question": "The full form of MLA is:",
-    "options": ["(A) Member of Law Assembly", "(B) Member of Legislative Assembly", "(C) Master of Law", "(D) None"],
+    "options": [
+      "(A) Member of Law Assembly",
+      "(B) Member of Legislative Assembly",
+      "(C) Master of Law",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-3",
@@ -110,7 +145,12 @@
   {
     "id": "c7-sst-13",
     "question": "Mushroom rocks are found in:",
-    "options": ["(A) Deserts", "(B) River valleys", "(C) Glaciers", "(D) Oceans"],
+    "options": [
+      "(A) Deserts",
+      "(B) River valleys",
+      "(C) Glaciers",
+      "(D) Oceans"
+    ],
     "correctAnswer": "A",
     "subject": "geography",
     "chapterId": "c7-geo-3",
@@ -155,7 +195,12 @@
   {
     "id": "c7-sst-18",
     "question": "International Women's Day is celebrated on:",
-    "options": ["(A) 8th March", "(B) 5th June", "(C) 1st May", "(D) 15th August"],
+    "options": [
+      "(A) 8th March",
+      "(B) 5th June",
+      "(C) 1st May",
+      "(D) 15th August"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-5",
@@ -191,7 +236,12 @@
   {
     "id": "c7-sst-22",
     "question": "The holy book of the Sikhs is:",
-    "options": ["(A) Ramayana", "(B) Guru Granth Sahib", "(C) Bible", "(D) Quran"],
+    "options": [
+      "(A) Ramayana",
+      "(B) Guru Granth Sahib",
+      "(C) Bible",
+      "(D) Quran"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -209,7 +259,12 @@
   {
     "id": "c7-sst-24",
     "question": "Who appoints the Lieutenant Governor of a Union Territory?",
-    "options": ["(A) Prime Minister", "(B) President of India", "(C) Chief Minister", "(D) Mayor"],
+    "options": [
+      "(A) Prime Minister",
+      "(B) President of India",
+      "(C) Chief Minister",
+      "(D) Mayor"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-9",
@@ -218,7 +273,12 @@
   {
     "id": "c7-sst-25",
     "question": "Which layer of the earth is made up of rocks and minerals?",
-    "options": ["(A) Hydrosphere", "(B) Lithosphere", "(C) Atmosphere", "(D) Biosphere"],
+    "options": [
+      "(A) Hydrosphere",
+      "(B) Lithosphere",
+      "(C) Atmosphere",
+      "(D) Biosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -236,7 +296,12 @@
   {
     "id": "c7-sst-27",
     "question": "Weekly markets are held on:",
-    "options": ["(A) Every day", "(B) A specific day of the week", "(C) Only on Sundays", "(D) At night"],
+    "options": [
+      "(A) Every day",
+      "(B) A specific day of the week",
+      "(C) Only on Sundays",
+      "(D) At night"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-7",
@@ -299,7 +364,12 @@
   {
     "id": "c7-sst-34",
     "question": "Who was the leader of the Civil Rights Movement in USA?",
-    "options": ["(A) Rosa Parks", "(B) Martin Luther King Jr.", "(C) Nelson Mandela", "(D) Both A and B"],
+    "options": [
+      "(A) Rosa Parks",
+      "(B) Martin Luther King Jr.",
+      "(C) Nelson Mandela",
+      "(D) Both A and B"
+    ],
     "correctAnswer": "D",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -308,7 +378,12 @@
   {
     "id": "c7-sst-35",
     "question": "The process of cleaning cotton is done in a:",
-    "options": ["(A) Sugar mill", "(B) Ginning mill", "(C) Spinning mill", "(D) Paper mill"],
+    "options": [
+      "(A) Sugar mill",
+      "(B) Ginning mill",
+      "(C) Spinning mill",
+      "(D) Paper mill"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-8",
@@ -317,7 +392,12 @@
   {
     "id": "c7-sst-36",
     "question": "Who founded the state of Hyderabad?",
-    "options": ["(A) Sa'adat Khan", "(B) Nizam-ul-Mulk Asaf Jah", "(C) Murshid Quli Khan", "(D) Tipu Sultan"],
+    "options": [
+      "(A) Sa'adat Khan",
+      "(B) Nizam-ul-Mulk Asaf Jah",
+      "(C) Murshid Quli Khan",
+      "(D) Tipu Sultan"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-10",
@@ -362,7 +442,12 @@
   {
     "id": "c7-sst-41",
     "question": "Rocks which contain fossils are:",
-    "options": ["(A) Igneous", "(B) Sedimentary", "(C) Metamorphic", "(D) None"],
+    "options": [
+      "(A) Igneous",
+      "(B) Sedimentary",
+      "(C) Metamorphic",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-2",
@@ -380,7 +465,12 @@
   {
     "id": "c7-sst-43",
     "question": "Who wrote 'Joothan'?",
-    "options": ["(A) B.R. Ambedkar", "(B) Omprakash Valmiki", "(C) Kanta", "(D) Ansari"],
+    "options": [
+      "(A) B.R. Ambedkar",
+      "(B) Omprakash Valmiki",
+      "(C) Kanta",
+      "(D) Ansari"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -398,7 +488,12 @@
   {
     "id": "c7-sst-45",
     "question": "The Battle of Panipat (1526) was between Babur and:",
-    "options": ["(A) Hemu", "(B) Ibrahim Lodi", "(C) Rana Sanga", "(D) Sher Shah"],
+    "options": [
+      "(A) Hemu",
+      "(B) Ibrahim Lodi",
+      "(C) Rana Sanga",
+      "(D) Sher Shah"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-4",
@@ -407,7 +502,12 @@
   {
     "id": "c7-sst-46",
     "question": "Which gas is most abundant in the atmosphere?",
-    "options": ["(A) Oxygen", "(B) Nitrogen", "(C) Carbon dioxide", "(D) Argon"],
+    "options": [
+      "(A) Oxygen",
+      "(B) Nitrogen",
+      "(C) Carbon dioxide",
+      "(D) Argon"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -425,7 +525,12 @@
   {
     "id": "c7-sst-48",
     "question": "Who were the Banjaras?",
-    "options": ["(A) Soldiers", "(B) Traders-nomads", "(C) Farmers", "(D) Kings"],
+    "options": [
+      "(A) Soldiers",
+      "(B) Traders-nomads",
+      "(C) Farmers",
+      "(D) Kings"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-7",
@@ -434,7 +539,12 @@
   {
     "id": "c7-sst-49",
     "question": "Which is the most important layer for weather?",
-    "options": ["(A) Stratosphere", "(B) Troposphere", "(C) Mesosphere", "(D) Exosphere"],
+    "options": [
+      "(A) Stratosphere",
+      "(B) Troposphere",
+      "(C) Mesosphere",
+      "(D) Exosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -452,7 +562,12 @@
   {
     "id": "c7-sst-51",
     "question": "Which century is the 13th century?",
-    "options": ["(A) 1201-1300", "(B) 1301-1400", "(C) 1101-1200", "(D) 1401-1500"],
+    "options": [
+      "(A) 1201-1300",
+      "(B) 1301-1400",
+      "(C) 1101-1200",
+      "(D) 1401-1500"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-1",
@@ -461,7 +576,12 @@
   {
     "id": "c7-sst-52",
     "question": "Who wrote 'Amar Jiban'?",
-    "options": ["(A) Pandita Ramabai", "(B) Rashsundari Devi", "(C) Rokeya Sakhawat", "(D) Sarojini Naidu"],
+    "options": [
+      "(A) Pandita Ramabai",
+      "(B) Rashsundari Devi",
+      "(C) Rokeya Sakhawat",
+      "(D) Sarojini Naidu"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-5",
@@ -488,7 +608,12 @@
   {
     "id": "c7-sst-55",
     "question": "Which of these is a means of transport?",
-    "options": ["(A) Roadways", "(B) Railways", "(C) Waterways", "(D) All of these"],
+    "options": [
+      "(A) Roadways",
+      "(B) Railways",
+      "(C) Waterways",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "geography",
     "chapterId": "c7-geo-7",
@@ -506,7 +631,12 @@
   {
     "id": "c7-sst-57",
     "question": "Who founded the Sikh religion?",
-    "options": ["(A) Guru Nanak", "(B) Guru Gobind Singh", "(C) Guru Arjan", "(D) Guru Tegh Bahadur"],
+    "options": [
+      "(A) Guru Nanak",
+      "(B) Guru Gobind Singh",
+      "(C) Guru Arjan",
+      "(D) Guru Tegh Bahadur"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -533,7 +663,12 @@
   {
     "id": "c7-sst-60",
     "question": "Who is the formal head of a State?",
-    "options": ["(A) Chief Minister", "(B) Governor", "(C) President", "(D) Speaker"],
+    "options": [
+      "(A) Chief Minister",
+      "(B) Governor",
+      "(C) President",
+      "(D) Speaker"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-3",
@@ -542,7 +677,12 @@
   {
     "id": "c7-sst-61",
     "question": "What is the primary unit of administration in a district?",
-    "options": ["(A) Tehsil", "(B) District", "(C) Sub-division", "(D) Panchayat"],
+    "options": [
+      "(A) Tehsil",
+      "(B) District",
+      "(C) Sub-division",
+      "(D) Panchayat"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-9",
@@ -551,7 +691,12 @@
   {
     "id": "c7-sst-62",
     "question": "Who was the founder of the Chola Empire?",
-    "options": ["(A) Rajaraja", "(B) Rajendra", "(C) Vijayalaya", "(D) Dantidurga"],
+    "options": [
+      "(A) Rajaraja",
+      "(B) Rajendra",
+      "(C) Vijayalaya",
+      "(D) Dantidurga"
+    ],
     "correctAnswer": "C",
     "subject": "history",
     "chapterId": "c7-hist-2",
@@ -569,7 +714,12 @@
   {
     "id": "c7-sst-64",
     "question": "Which rock is also called 'Primary Rock'?",
-    "options": ["(A) Igneous", "(B) Sedimentary", "(C) Metamorphic", "(D) None"],
+    "options": [
+      "(A) Igneous",
+      "(B) Sedimentary",
+      "(C) Metamorphic",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "geography",
     "chapterId": "c7-geo-2",
@@ -578,7 +728,12 @@
   {
     "id": "c7-sst-65",
     "question": "What is the hard top layer of the earth?",
-    "options": ["(A) Hydrosphere", "(B) Lithosphere", "(C) Atmosphere", "(D) Biosphere"],
+    "options": [
+      "(A) Hydrosphere",
+      "(B) Lithosphere",
+      "(C) Atmosphere",
+      "(D) Biosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -587,7 +742,12 @@
   {
     "id": "c7-sst-66",
     "question": "Who was the 10th Guru of the Sikhs?",
-    "options": ["(A) Guru Nanak", "(B) Guru Gobind Singh", "(C) Guru Arjan", "(D) Guru Angad"],
+    "options": [
+      "(A) Guru Nanak",
+      "(B) Guru Gobind Singh",
+      "(C) Guru Arjan",
+      "(D) Guru Angad"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -605,7 +765,12 @@
   {
     "id": "c7-sst-68",
     "question": "In which state is Hampi located?",
-    "options": ["(A) Andhra Pradesh", "(B) Karnataka", "(C) Tamil Nadu", "(D) Kerala"],
+    "options": [
+      "(A) Andhra Pradesh",
+      "(B) Karnataka",
+      "(C) Tamil Nadu",
+      "(D) Kerala"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-6",
@@ -623,7 +788,12 @@
   {
     "id": "c7-sst-70",
     "question": "Who was the author of the book 'Joothan'?",
-    "options": ["(A) B.R. Ambedkar", "(B) Omprakash Valmiki", "(C) Kanta", "(D) Ansari"],
+    "options": [
+      "(A) B.R. Ambedkar",
+      "(B) Omprakash Valmiki",
+      "(C) Kanta",
+      "(D) Ansari"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -632,7 +802,12 @@
   {
     "id": "c7-sst-71",
     "question": "Which layer of the atmosphere is free from clouds?",
-    "options": ["(A) Troposphere", "(B) Stratosphere", "(C) Mesosphere", "(D) Exosphere"],
+    "options": [
+      "(A) Troposphere",
+      "(B) Stratosphere",
+      "(C) Mesosphere",
+      "(D) Exosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -668,7 +843,12 @@
   {
     "id": "c7-sst-75",
     "question": "Who wrote 'Sultana's Dream'?",
-    "options": ["(A) Rashsundari Devi", "(B) Rokeya Sakhawat Hossain", "(C) Ramabai", "(D) Sarojini Naidu"],
+    "options": [
+      "(A) Rashsundari Devi",
+      "(B) Rokeya Sakhawat Hossain",
+      "(C) Ramabai",
+      "(D) Sarojini Naidu"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-5",
@@ -677,7 +857,12 @@
   {
     "id": "c7-sst-76",
     "question": "The Gonds lived in a region called:",
-    "options": ["(A) Gondwana", "(B) Garha Katanga", "(C) Bastar", "(D) Chota Nagpur"],
+    "options": [
+      "(A) Gondwana",
+      "(B) Garha Katanga",
+      "(C) Bastar",
+      "(D) Chota Nagpur"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-7",
@@ -713,7 +898,12 @@
   {
     "id": "c7-sst-80",
     "question": "What is the full form of MLA?",
-    "options": ["(A) Member of Law Assembly", "(B) Member of Legislative Assembly", "(C) Master of Law", "(D) None"],
+    "options": [
+      "(A) Member of Law Assembly",
+      "(B) Member of Legislative Assembly",
+      "(C) Master of Law",
+      "(D) None"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-3",
@@ -749,7 +939,12 @@
   {
     "id": "c7-sst-84",
     "question": "Who was the first woman engine driver for Northern Railways?",
-    "options": ["(A) Laxmi Lakra", "(B) Pratibha Patil", "(C) Kiran Bedi", "(D) Sunita Williams"],
+    "options": [
+      "(A) Laxmi Lakra",
+      "(B) Pratibha Patil",
+      "(C) Kiran Bedi",
+      "(D) Sunita Williams"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-5",
@@ -758,7 +953,12 @@
   {
     "id": "c7-sst-85",
     "question": "Mass media earns money mainly through:",
-    "options": ["(A) Taxes", "(B) Advertisements", "(C) Donations", "(D) Government"],
+    "options": [
+      "(A) Taxes",
+      "(B) Advertisements",
+      "(C) Donations",
+      "(D) Government"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -848,7 +1048,12 @@
   {
     "id": "c7-sst-95",
     "question": "Which is the most important gas for life?",
-    "options": ["(A) Nitrogen", "(B) Oxygen", "(C) Carbon dioxide", "(D) Helium"],
+    "options": [
+      "(A) Nitrogen",
+      "(B) Oxygen",
+      "(C) Carbon dioxide",
+      "(D) Helium"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -857,7 +1062,12 @@
   {
     "id": "c7-sst-96",
     "question": "What is the name of the layer above Troposphere?",
-    "options": ["(A) Mesosphere", "(B) Stratosphere", "(C) Exosphere", "(D) Thermosphere"],
+    "options": [
+      "(A) Mesosphere",
+      "(B) Stratosphere",
+      "(C) Exosphere",
+      "(D) Thermosphere"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -875,7 +1085,12 @@
   {
     "id": "c7-sst-98",
     "question": "Who is the head of a Union Territory?",
-    "options": ["(A) Chief Minister", "(B) Lieutenant Governor", "(C) Governor", "(D) Prime Minister"],
+    "options": [
+      "(A) Chief Minister",
+      "(B) Lieutenant Governor",
+      "(C) Governor",
+      "(D) Prime Minister"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-9",
@@ -902,7 +1117,12 @@
   {
     "id": "c7-sst-101",
     "question": "Which century was the 18th century?",
-    "options": ["(A) 1701-1800", "(B) 1801-1900", "(C) 1601-1700", "(D) 1901-2000"],
+    "options": [
+      "(A) 1701-1800",
+      "(B) 1801-1900",
+      "(C) 1601-1700",
+      "(D) 1901-2000"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-10",
@@ -911,7 +1131,12 @@
   {
     "id": "c7-sst-102",
     "question": "The Taj Mahal is made of:",
-    "options": ["(A) Red sandstone", "(B) White marble", "(C) Granite", "(D) Brick"],
+    "options": [
+      "(A) Red sandstone",
+      "(B) White marble",
+      "(C) Granite",
+      "(D) Brick"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-5",
@@ -929,7 +1154,12 @@
   {
     "id": "c7-sst-104",
     "question": "Which gas is used by plants for photosynthesis?",
-    "options": ["(A) Oxygen", "(B) Carbon dioxide", "(C) Nitrogen", "(D) Argon"],
+    "options": [
+      "(A) Oxygen",
+      "(B) Carbon dioxide",
+      "(C) Nitrogen",
+      "(D) Argon"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -947,7 +1177,12 @@
   {
     "id": "c7-sst-106",
     "question": "The Right to Education is a:",
-    "options": ["(A) Fundamental Right", "(B) Legal Right", "(C) Political Right", "(D) None"],
+    "options": [
+      "(A) Fundamental Right",
+      "(B) Legal Right",
+      "(C) Political Right",
+      "(D) None"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -983,7 +1218,12 @@
   {
     "id": "c7-sst-110",
     "question": "The battle of Kanwa was fought between Babur and:",
-    "options": ["(A) Rana Sanga", "(B) Ibrahim Lodi", "(C) Hemu", "(D) Sher Shah"],
+    "options": [
+      "(A) Rana Sanga",
+      "(B) Ibrahim Lodi",
+      "(C) Hemu",
+      "(D) Sher Shah"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-4",
@@ -1019,7 +1259,12 @@
   {
     "id": "c7-sst-114",
     "question": "Which of these is a classical dance of Kerala?",
-    "options": ["(A) Kathak", "(B) Kathakali", "(C) Bharatanatyam", "(D) Odissi"],
+    "options": [
+      "(A) Kathak",
+      "(B) Kathakali",
+      "(C) Bharatanatyam",
+      "(D) Odissi"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-9",
@@ -1028,7 +1273,12 @@
   {
     "id": "c7-sst-115",
     "question": "The first newspaper published in India was:",
-    "options": ["(A) Times of India", "(B) Bengal Gazette", "(C) The Hindu", "(D) Statesman"],
+    "options": [
+      "(A) Times of India",
+      "(B) Bengal Gazette",
+      "(C) The Hindu",
+      "(D) Statesman"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -1055,7 +1305,12 @@
   {
     "id": "c7-sst-118",
     "question": "The head of a district is known as:",
-    "options": ["(A) Tehsildar", "(B) District Collector", "(C) MLA", "(D) Mayor"],
+    "options": [
+      "(A) Tehsildar",
+      "(B) District Collector",
+      "(C) MLA",
+      "(D) Mayor"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-9",
@@ -1064,7 +1319,12 @@
   {
     "id": "c7-sst-119",
     "question": "Which is the highest peak in the world?",
-    "options": ["(A) K2", "(B) Mount Everest", "(C) Kanchenjunga", "(D) Nanda Devi"],
+    "options": [
+      "(A) K2",
+      "(B) Mount Everest",
+      "(C) Kanchenjunga",
+      "(D) Nanda Devi"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1073,7 +1333,12 @@
   {
     "id": "c7-sst-120",
     "question": "Who was the founder of the Maratha Empire?",
-    "options": ["(A) Shivaji", "(B) Sambhaji", "(C) Shahji", "(D) Balaji Vishwanath"],
+    "options": [
+      "(A) Shivaji",
+      "(B) Sambhaji",
+      "(C) Shahji",
+      "(D) Balaji Vishwanath"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-10",
@@ -1100,7 +1365,12 @@
   {
     "id": "c7-sst-123",
     "question": "Who was the Mughal Emperor during the 1857 revolt?",
-    "options": ["(A) Akbar", "(B) Shah Jahan", "(C) Bahadur Shah Zafar", "(D) Aurangzeb"],
+    "options": [
+      "(A) Akbar",
+      "(B) Shah Jahan",
+      "(C) Bahadur Shah Zafar",
+      "(D) Aurangzeb"
+    ],
     "correctAnswer": "C",
     "subject": "history",
     "chapterId": "c7-hist-4",
@@ -1127,7 +1397,12 @@
   {
     "id": "c7-sst-126",
     "question": "Who was the guru of Kabir?",
-    "options": ["(A) Ramananda", "(B) Ravidas", "(C) Tulsidas", "(D) Guru Nanak"],
+    "options": [
+      "(A) Ramananda",
+      "(B) Ravidas",
+      "(C) Tulsidas",
+      "(D) Guru Nanak"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -1136,7 +1411,12 @@
   {
     "id": "c7-sst-127",
     "question": "Which of these is a social media platform?",
-    "options": ["(A) WhatsApp", "(B) Facebook", "(C) Instagram", "(D) All of these"],
+    "options": [
+      "(A) WhatsApp",
+      "(B) Facebook",
+      "(C) Instagram",
+      "(D) All of these"
+    ],
     "correctAnswer": "D",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -1199,7 +1479,12 @@
   {
     "id": "c7-sst-134",
     "question": "Who is the Prime Minister of India? (Current)",
-    "options": ["(A) Narendra Modi", "(B) Rahul Gandhi", "(C) Amit Shah", "(D) Draupadi Murmu"],
+    "options": [
+      "(A) Narendra Modi",
+      "(B) Rahul Gandhi",
+      "(C) Amit Shah",
+      "(D) Draupadi Murmu"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1217,7 +1502,12 @@
   {
     "id": "c7-sst-136",
     "question": "Which is the largest state in India by area?",
-    "options": ["(A) Uttar Pradesh", "(B) Rajasthan", "(C) Maharashtra", "(D) Madhya Pradesh"],
+    "options": [
+      "(A) Uttar Pradesh",
+      "(B) Rajasthan",
+      "(C) Maharashtra",
+      "(D) Madhya Pradesh"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1226,7 +1516,12 @@
   {
     "id": "c7-sst-137",
     "question": "Who was the last Mughal Emperor?",
-    "options": ["(A) Akbar II", "(B) Bahadur Shah Zafar", "(C) Aurangzeb", "(D) Shah Alam II"],
+    "options": [
+      "(A) Akbar II",
+      "(B) Bahadur Shah Zafar",
+      "(C) Aurangzeb",
+      "(D) Shah Alam II"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-4",
@@ -1235,7 +1530,12 @@
   {
     "id": "c7-sst-138",
     "question": "What is the full form of ATM?",
-    "options": ["(A) Any Time Money", "(B) Automated Teller Machine", "(C) All Time Money", "(D) Auto Teller Money"],
+    "options": [
+      "(A) Any Time Money",
+      "(B) Automated Teller Machine",
+      "(C) All Time Money",
+      "(D) Auto Teller Money"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -1253,7 +1553,12 @@
   {
     "id": "c7-sst-140",
     "question": "Who discovered India?",
-    "options": ["(A) Columbus", "(B) Vasco da Gama", "(C) Magellan", "(D) Captain Cook"],
+    "options": [
+      "(A) Columbus",
+      "(B) Vasco da Gama",
+      "(C) Magellan",
+      "(D) Captain Cook"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-1",
@@ -1280,7 +1585,12 @@
   {
     "id": "c7-sst-143",
     "question": "Who was the first President of India?",
-    "options": ["(A) Dr. Rajendra Prasad", "(B) Dr. S. Radhakrishnan", "(C) J.L. Nehru", "(D) Sardar Patel"],
+    "options": [
+      "(A) Dr. Rajendra Prasad",
+      "(B) Dr. S. Radhakrishnan",
+      "(C) J.L. Nehru",
+      "(D) Sardar Patel"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1307,7 +1617,12 @@
   {
     "id": "c7-sst-146",
     "question": "Who wrote the National Anthem of India?",
-    "options": ["(A) Bankim Chandra", "(B) Rabindranath Tagore", "(C) Sarojini Naidu", "(D) Iqbal"],
+    "options": [
+      "(A) Bankim Chandra",
+      "(B) Rabindranath Tagore",
+      "(C) Sarojini Naidu",
+      "(D) Iqbal"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1334,7 +1649,12 @@
   {
     "id": "c7-sst-149",
     "question": "Who is the father of the Indian Constitution?",
-    "options": ["(A) Mahatma Gandhi", "(B) Dr. B.R. Ambedkar", "(C) J.L. Nehru", "(D) Vallabhbhai Patel"],
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) Dr. B.R. Ambedkar",
+      "(C) J.L. Nehru",
+      "(D) Vallabhbhai Patel"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1352,7 +1672,12 @@
   {
     "id": "c7-sst-151",
     "question": "What is the capital of Punjab?",
-    "options": ["(A) Amritsar", "(B) Chandigarh", "(C) Ludhiana", "(D) Patiala"],
+    "options": [
+      "(A) Amritsar",
+      "(B) Chandigarh",
+      "(C) Ludhiana",
+      "(D) Patiala"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1361,7 +1686,12 @@
   {
     "id": "c7-sst-152",
     "question": "Who was the first woman Prime Minister of India?",
-    "options": ["(A) Indira Gandhi", "(B) Sonia Gandhi", "(C) Pratibha Patil", "(D) Sarojini Naidu"],
+    "options": [
+      "(A) Indira Gandhi",
+      "(B) Sonia Gandhi",
+      "(C) Pratibha Patil",
+      "(D) Sarojini Naidu"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1370,7 +1700,12 @@
   {
     "id": "c7-sst-153",
     "question": "Which is the largest lake in the world?",
-    "options": ["(A) Superior", "(B) Caspian Sea", "(C) Baikal", "(D) Victoria"],
+    "options": [
+      "(A) Superior",
+      "(B) Caspian Sea",
+      "(C) Baikal",
+      "(D) Victoria"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-5",
@@ -1406,7 +1741,12 @@
   {
     "id": "c7-sst-157",
     "question": "Who was the founder of the Brahmo Samaj?",
-    "options": ["(A) Raja Ram Mohan Roy", "(B) Dayanand Saraswati", "(C) Vivekananda", "(D) Jyotiba Phule"],
+    "options": [
+      "(A) Raja Ram Mohan Roy",
+      "(B) Dayanand Saraswati",
+      "(C) Vivekananda",
+      "(D) Jyotiba Phule"
+    ],
     "correctAnswer": "A",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -1433,7 +1773,12 @@
   {
     "id": "c7-sst-160",
     "question": "Who was the first Indian to win a Nobel Prize?",
-    "options": ["(A) C.V. Raman", "(B) Rabindranath Tagore", "(C) Amartya Sen", "(D) Mother Teresa"],
+    "options": [
+      "(A) C.V. Raman",
+      "(B) Rabindranath Tagore",
+      "(C) Amartya Sen",
+      "(D) Mother Teresa"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-9",
@@ -1442,7 +1787,12 @@
   {
     "id": "c7-sst-161",
     "question": "Which is the tallest building in the world?",
-    "options": ["(A) Empire State", "(B) Burj Khalifa", "(C) Eiffel Tower", "(D) Burj Al Arab"],
+    "options": [
+      "(A) Empire State",
+      "(B) Burj Khalifa",
+      "(C) Eiffel Tower",
+      "(D) Burj Al Arab"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1460,7 +1810,12 @@
   {
     "id": "c7-sst-163",
     "question": "Who invented the telephone?",
-    "options": ["(A) Newton", "(B) Alexander Graham Bell", "(C) Edison", "(D) Marconi"],
+    "options": [
+      "(A) Newton",
+      "(B) Alexander Graham Bell",
+      "(C) Edison",
+      "(D) Marconi"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-7",
@@ -1487,7 +1842,12 @@
   {
     "id": "c7-sst-166",
     "question": "Who was the first woman to go into space?",
-    "options": ["(A) Sunita Williams", "(B) Valentina Tereshkova", "(C) Kalpana Chawla", "(D) Sally Ride"],
+    "options": [
+      "(A) Sunita Williams",
+      "(B) Valentina Tereshkova",
+      "(C) Kalpana Chawla",
+      "(D) Sally Ride"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1514,7 +1874,12 @@
   {
     "id": "c7-sst-169",
     "question": "Who is known as the 'Iron Man of India'?",
-    "options": ["(A) Sardar Patel", "(B) B.R. Ambedkar", "(C) J.L. Nehru", "(D) Subhas Chandra Bose"],
+    "options": [
+      "(A) Sardar Patel",
+      "(B) B.R. Ambedkar",
+      "(C) J.L. Nehru",
+      "(D) Subhas Chandra Bose"
+    ],
     "correctAnswer": "A",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1559,7 +1924,12 @@
   {
     "id": "c7-sst-174",
     "question": "What is the capital of Kerala?",
-    "options": ["(A) Kochi", "(B) Thiruvananthapuram", "(C) Kozhikode", "(D) Palakkad"],
+    "options": [
+      "(A) Kochi",
+      "(B) Thiruvananthapuram",
+      "(C) Kozhikode",
+      "(D) Palakkad"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1568,7 +1938,12 @@
   {
     "id": "c7-sst-175",
     "question": "Who is the author of 'Harry Potter'?",
-    "options": ["(A) Enid Blyton", "(B) J.K. Rowling", "(C) Roald Dahl", "(D) Ruskin Bond"],
+    "options": [
+      "(A) Enid Blyton",
+      "(B) J.K. Rowling",
+      "(C) Roald Dahl",
+      "(D) Ruskin Bond"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -1577,7 +1952,12 @@
   {
     "id": "c7-sst-176",
     "question": "Which is the nearest star to the Earth?",
-    "options": ["(A) Proxima Centauri", "(B) Sun", "(C) Sirius", "(D) North Star"],
+    "options": [
+      "(A) Proxima Centauri",
+      "(B) Sun",
+      "(C) Sirius",
+      "(D) North Star"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-4",
@@ -1595,7 +1975,12 @@
   {
     "id": "c7-sst-178",
     "question": "Who was the first man to walk on the moon?",
-    "options": ["(A) Yuri Gagarin", "(B) Neil Armstrong", "(C) Buzz Aldrin", "(D) John Glenn"],
+    "options": [
+      "(A) Yuri Gagarin",
+      "(B) Neil Armstrong",
+      "(C) Buzz Aldrin",
+      "(D) John Glenn"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1622,7 +2007,12 @@
   {
     "id": "c7-sst-181",
     "question": "Who wrote 'Panchatantra'?",
-    "options": ["(A) Kalidasa", "(B) Vishnu Sharma", "(C) Tulsi Das", "(D) Kabir"],
+    "options": [
+      "(A) Kalidasa",
+      "(B) Vishnu Sharma",
+      "(C) Tulsi Das",
+      "(D) Kabir"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-8",
@@ -1649,7 +2039,12 @@
   {
     "id": "c7-sst-184",
     "question": "Who is known as the 'Missile Man of India'?",
-    "options": ["(A) Homi Bhabha", "(B) A.P.J. Abdul Kalam", "(C) Vikram Sarabhai", "(D) Satish Dhawan"],
+    "options": [
+      "(A) Homi Bhabha",
+      "(B) A.P.J. Abdul Kalam",
+      "(C) Vikram Sarabhai",
+      "(D) Satish Dhawan"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",
@@ -1658,7 +2053,12 @@
   {
     "id": "c7-sst-185",
     "question": "Which is the largest library in the world?",
-    "options": ["(A) British Library", "(B) Library of Congress", "(C) Vatican Library", "(D) NY Public Library"],
+    "options": [
+      "(A) British Library",
+      "(B) Library of Congress",
+      "(C) Vatican Library",
+      "(D) NY Public Library"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-6",
@@ -1676,7 +2076,12 @@
   {
     "id": "c7-sst-187",
     "question": "Who founded the Sikh Empire?",
-    "options": ["(A) Guru Gobind Singh", "(B) Maharaja Ranjit Singh", "(C) Banda Bahadur", "(D) Gulab Singh"],
+    "options": [
+      "(A) Guru Gobind Singh",
+      "(B) Maharaja Ranjit Singh",
+      "(C) Banda Bahadur",
+      "(D) Gulab Singh"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-10",
@@ -1694,7 +2099,12 @@
   {
     "id": "c7-sst-189",
     "question": "What is the capital of South Africa?",
-    "options": ["(A) Johannesburg", "(B) Cape Town", "(C) Pretoria", "(D) Both B and C"],
+    "options": [
+      "(A) Johannesburg",
+      "(B) Cape Town",
+      "(C) Pretoria",
+      "(D) Both B and C"
+    ],
     "correctAnswer": "D",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1730,7 +2140,12 @@
   {
     "id": "c7-sst-193",
     "question": "Who wrote 'Discovery of India'?",
-    "options": ["(A) Mahatma Gandhi", "(B) J.L. Nehru", "(C) Sardar Patel", "(D) Abul Kalam Azad"],
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) J.L. Nehru",
+      "(C) Sardar Patel",
+      "(D) Abul Kalam Azad"
+    ],
     "correctAnswer": "B",
     "subject": "history",
     "chapterId": "c7-hist-1",
@@ -1757,7 +2172,12 @@
   {
     "id": "c7-sst-196",
     "question": "Who was the first woman to climb Mount Everest?",
-    "options": ["(A) Bachendri Pal", "(B) Junko Tabei", "(C) Santosh Yadav", "(D) Arunima Sinha"],
+    "options": [
+      "(A) Bachendri Pal",
+      "(B) Junko Tabei",
+      "(C) Santosh Yadav",
+      "(D) Arunima Sinha"
+    ],
     "correctAnswer": "B",
     "subject": "geography",
     "chapterId": "c7-geo-1",
@@ -1775,7 +2195,12 @@
   {
     "id": "c7-sst-198",
     "question": "Who is the 'Father of the Nation' in India?",
-    "options": ["(A) J.L. Nehru", "(B) Mahatma Gandhi", "(C) Subhas Chandra Bose", "(D) Sardar Patel"],
+    "options": [
+      "(A) J.L. Nehru",
+      "(B) Mahatma Gandhi",
+      "(C) Subhas Chandra Bose",
+      "(D) Sardar Patel"
+    ],
     "correctAnswer": "B",
     "subject": "civics",
     "chapterId": "c7-civ-1",

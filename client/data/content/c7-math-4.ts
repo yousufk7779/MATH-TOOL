@@ -1,29 +1,38 @@
 import { ChapterContent } from "../types";
 
 export const c7Math4: ChapterContent = {
-    id: "c7-math-4",
-    number: 4,
-    title: "Simple Equations",
-    isHtmlView: true,
-    introduction: "An equation is a condition on a variable where two expressions are set equal. Solving an equation means finding the value of the variable that makes the equation true.",
-    definitions: [
-        { term: "Variable", definition: "A symbol (usually a letter) that represents an unknown number." },
-        { term: "Equation", definition: "A mathematical statement that asserts the equality of two expressions." }
-    ],
-    keyPoints: [
-        "LHS (Left Hand Side) must equal RHS (Right Hand Side).",
-        "If we add/subtract/multiply/divide the same number on both sides, the equality remains unchanged.",
-        "Transposing a number means moving it to the other side with its sign changed."
-    ],
-    formulas: [],
-    crux: [],
-    exercises: [
-        { id: "ex4-1", name: "Exercise 4.1", questions: [] },
-        { id: "ex4-2", name: "Exercise 4.2", questions: [] },
-        { id: "ex4-3", name: "Exercise 4.3", questions: [] },
-        { id: "ex4-4", name: "Exercise 4.4", questions: [] }
-    ],
-    htmlOverview: `
+  id: "c7-math-4",
+  number: 4,
+  title: "Simple Equations",
+  isHtmlView: true,
+  introduction:
+    "An equation is a condition on a variable where two expressions are set equal. Solving an equation means finding the value of the variable that makes the equation true.",
+  definitions: [
+    {
+      term: "Variable",
+      definition:
+        "A symbol (usually a letter) that represents an unknown number.",
+    },
+    {
+      term: "Equation",
+      definition:
+        "A mathematical statement that asserts the equality of two expressions.",
+    },
+  ],
+  keyPoints: [
+    "LHS (Left Hand Side) must equal RHS (Right Hand Side).",
+    "If we add/subtract/multiply/divide the same number on both sides, the equality remains unchanged.",
+    "Transposing a number means moving it to the other side with its sign changed.",
+  ],
+  formulas: [],
+  crux: [],
+  exercises: [
+    { id: "ex4-1", name: "Exercise 4.1", questions: [] },
+    { id: "ex4-2", name: "Exercise 4.2", questions: [] },
+    { id: "ex4-3", name: "Exercise 4.3", questions: [] },
+    { id: "ex4-4", name: "Exercise 4.4", questions: [] },
+  ],
+  htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #2196F3; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
@@ -41,8 +50,8 @@ export const c7Math4: ChapterContent = {
             </div>
         </div>
     `,
-    htmlExercises: {
-        "ex4-1": `
+  htmlExercises: {
+    "ex4-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(33, 150, 243, 0.1); color: #2196F3; padding: 12px; border-radius: 8px; border-left: 6px solid #2196F3; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -196,7 +205,7 @@ export const c7Math4: ChapterContent = {
             </div>
         </div>
         `,
-        "ex4-2": `
+    "ex4-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(33, 150, 243, 0.1); color: #2196F3; padding: 12px; border-radius: 8px; border-left: 6px solid #2196F3; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -398,7 +407,7 @@ export const c7Math4: ChapterContent = {
             </div>
         </div>
         `,
-        "ex4-3": `
+    "ex4-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(33, 150, 243, 0.1); color: #2196F3; padding: 12px; border-radius: 8px; border-left: 6px solid #2196F3; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -545,7 +554,7 @@ export const c7Math4: ChapterContent = {
             </div>
         </div>
         `,
-        "ex4-4": `
+    "ex4-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .question { background: rgba(33, 150, 243, 0.1); color: #2196F3; padding: 12px; border-radius: 8px; border-left: 6px solid #2196F3; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
@@ -709,19 +718,69 @@ export const c7Math4: ChapterContent = {
             </div>
         </div>
         `,
+  },
+  examples: [],
+  mcqs: [
+    {
+      id: "m1",
+      question: "If x - 3 = 5, then x is:",
+      options: ["2", "8", "-2", "15"],
+      correctAnswer: "B",
     },
-    examples: [],
-    mcqs: [
-        { id: "m1", question: "If x - 3 = 5, then x is:", options: ["2", "8", "-2", "15"], correctAnswer: "B" },
-        { id: "m2", question: "Solution of 3n = 12 is:", options: ["4", "36", "9", "15"], correctAnswer: "A" },
-        { id: "m3", question: "If 2p + 1 = 7, then p is:", options: ["4", "3", "6", "2"], correctAnswer: "B" },
-        { id: "m4", question: "Variable in 5y + 2 = 10 is:", options: ["5", "2", "10", "y"], correctAnswer: "D" },
-        { id: "m5", question: "Equation for 'Twice m is 10':", options: ["m+2=10", "2m=10", "m/2=10", "m-2=10"], correctAnswer: "B" },
-        { id: "m6", question: "If a/5 = 3, then a is:", options: ["15", "8", "3/5", "5/3"], correctAnswer: "A" },
-        { id: "m7", question: "Solution of x + 10 = 0 is:", options: ["10", "0", "-10", "1"], correctAnswer: "C" },
-        { id: "m8", question: "If 4(x - 1) = 8, then x is:", options: ["2", "3", "1", "4"], correctAnswer: "B" },
-        { id: "m9", question: "Which is a simple equation?", options: ["x+2>5", "x+y=10", "2x+1=5", "x²=4"], correctAnswer: "C" },
-        { id: "m10", question: "If 10 - y = 6, then y is:", options: ["16", "4", "-4", "6"], correctAnswer: "B" }
-    ],
-    summary: []
+    {
+      id: "m2",
+      question: "Solution of 3n = 12 is:",
+      options: ["4", "36", "9", "15"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m3",
+      question: "If 2p + 1 = 7, then p is:",
+      options: ["4", "3", "6", "2"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m4",
+      question: "Variable in 5y + 2 = 10 is:",
+      options: ["5", "2", "10", "y"],
+      correctAnswer: "D",
+    },
+    {
+      id: "m5",
+      question: "Equation for 'Twice m is 10':",
+      options: ["m+2=10", "2m=10", "m/2=10", "m-2=10"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m6",
+      question: "If a/5 = 3, then a is:",
+      options: ["15", "8", "3/5", "5/3"],
+      correctAnswer: "A",
+    },
+    {
+      id: "m7",
+      question: "Solution of x + 10 = 0 is:",
+      options: ["10", "0", "-10", "1"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m8",
+      question: "If 4(x - 1) = 8, then x is:",
+      options: ["2", "3", "1", "4"],
+      correctAnswer: "B",
+    },
+    {
+      id: "m9",
+      question: "Which is a simple equation?",
+      options: ["x+2>5", "x+y=10", "2x+1=5", "x²=4"],
+      correctAnswer: "C",
+    },
+    {
+      id: "m10",
+      question: "If 10 - y = 6, then y is:",
+      options: ["16", "4", "-4", "6"],
+      correctAnswer: "B",
+    },
+  ],
+  summary: [],
 };

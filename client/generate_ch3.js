@@ -1,16 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
-const HTML_DIR = path.join(__dirname, 'data', 'chapter3');
-const OUTPUT_FILE = path.join(__dirname, 'data', 'content', 'math-ch3.ts');
+const HTML_DIR = path.join(__dirname, "data", "chapter3");
+const OUTPUT_FILE = path.join(__dirname, "data", "content", "math-ch3.ts");
 
 function encodeImage(imgPath) {
-    if (!fs.existsSync(imgPath)) return "";
-    const b64 = fs.readFileSync(imgPath).toString('base64');
-    if (imgPath.endsWith('.svg')) return `data:image/svg+xml;base64,${b64}`;
-    if (imgPath.endsWith('.png')) return `data:image/png;base64,${b64}`;
-    if (imgPath.endsWith('.jpg') || imgPath.endsWith('.jpeg')) return `data:image/jpeg;base64,${b64}`;
-    return `data:image/png;base64,${b64}`;
+  if (!fs.existsSync(imgPath)) return "";
+  const b64 = fs.readFileSync(imgPath).toString("base64");
+  if (imgPath.endsWith(".svg")) return `data:image/svg+xml;base64,${b64}`;
+  if (imgPath.endsWith(".png")) return `data:image/png;base64,${b64}`;
+  if (imgPath.endsWith(".jpg") || imgPath.endsWith(".jpeg"))
+    return `data:image/jpeg;base64,${b64}`;
+  return `data:image/png;base64,${b64}`;
 }
 
 const overrideCSS = `
@@ -52,98 +53,155 @@ const katexScripts = `
 `;
 
 function readHtml(filename) {
-    const filepath = path.join(HTML_DIR, filename);
-    if (!fs.existsSync(filepath)) return "";
-    let html = fs.readFileSync(filepath, 'utf-8');
-    
-    html = html.replace(/<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi, '');
-    html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, '');
-    html = html.replace(/<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi, '');
-    html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
+  const filepath = path.join(HTML_DIR, filename);
+  if (!fs.existsSync(filepath)) return "";
+  let html = fs.readFileSync(filepath, "utf-8");
 
-    html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
-        const fullImgPath = path.join(HTML_DIR, p1);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return `src="${b64Src}"`;
-        return match;
-    });
+  html = html.replace(
+    /<div class="header">[\s\S]*?<div class="chapter-title">[^<]*<\/div>\s*<\/div>/gi,
+    "",
+  );
+  html = html.replace(/<script[^>]*MathJax-script[^>]*><\/script>/gi, "");
+  html = html.replace(
+    /<script src="https:\/\/polyfill.io\/v3\/polyfill.min.js\?features=es6"><\/script>/gi,
+    "",
+  );
+  html = html.replace(/<\/head>/i, katexScripts + overrideCSS + "</head>");
 
-    html = html.replace(/src="([^"]+\.(?:svg|png|jpg|jpeg))"/gi, (match, p1) => {
-        if (p1.startsWith('data:') || p1.startsWith('http')) return match;
-        const filenamePath = path.basename(p1);
-        const fullImgPath = path.join(HTML_DIR, 'images', filenamePath);
-        const b64Src = encodeImage(fullImgPath);
-        if (b64Src) return 'src="' + b64Src + '"';
-        return match;
-    });
-    
-    return html.replace(/\\/g, '\\\\').replace(/`/g, '\\`').replace(/\$/g, '\\$');
+  html = html.replace(/src="(images\/[^"]+)"/g, (match, p1) => {
+    const fullImgPath = path.join(HTML_DIR, p1);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  html = html.replace(/src="([^"]+\.(?:svg|png|jpg|jpeg))"/gi, (match, p1) => {
+    if (p1.startsWith("data:") || p1.startsWith("http")) return match;
+    const filenamePath = path.basename(p1);
+    const fullImgPath = path.join(HTML_DIR, "images", filenamePath);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return 'src="' + b64Src + '"';
+    return match;
+  });
+
+  return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
 // Fixed option helper with large padding
-const opt = (text) => `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text}</div>`;
+const opt = (text) =>
+  `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text}</div>`;
 
 const mcqArray = [
-    {
-        id: "mcq1",
-        question: "<span style=\"font-weight: normal;\">The pair of equations x = a and y = b graphically represents lines which are:</span>",
-        options: [opt("parallel"), opt("intersecting at (b, a)"), opt("coincident"), opt("intersecting at (a, b)")],
-        correctAnswer: opt("intersecting at (a, b)")
-    },
-    {
-        id: "mcq2",
-        question: "<span style=\"font-weight: normal;\">For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines?</span>",
-        options: [opt("<sup>1</sup>&frasl;<sub>2</sub>"), opt("<sup>-1</sup>&frasl;<sub>2</sub>"), opt("2"), opt("-2")],
-        correctAnswer: opt("2")
-    },
-    {
-        id: "mcq3",
-        question: "<span style=\"font-weight: normal;\">If the lines given by 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, then the value of k is:</span>",
-        options: [opt("<sup>-5</sup>&frasl;<sub>4</sub>"), opt("<sup>2</sup>&frasl;<sub>5</sub>"), opt("<sup>15</sup>&frasl;<sub>4</sub>"), opt("<sup>3</sup>&frasl;<sub>2</sub>")],
-        correctAnswer: opt("<sup>15</sup>&frasl;<sub>4</sub>")
-    },
-    {
-        id: "mcq4",
-        question: "<span style=\"font-weight: normal;\">The value of c for which the pair of equations cx - y = 2 and 6x - 2y = 3 will have infinitely many solutions is:</span>",
-        options: [opt("3"), opt("-3"), opt("-12"), opt("no value")],
-        correctAnswer: opt("no value")
-    },
-    {
-        id: "mcq5",
-        question: "<span style=\"font-weight: normal;\">One equation of a pair of dependent linear equations is -5x + 7y = 2. The second equation can be:</span>",
-        options: [opt("10x + 14y + 4 = 0"), opt("-10x - 14y + 4 = 0"), opt("-10x + 14y + 4 = 0"), opt("10x - 14y = -4")],
-        correctAnswer: opt("10x - 14y = -4")
-    },
-    {
-        id: "mcq6",
-        question: "<span style=\"font-weight: normal;\">A pair of linear equations which has a unique solution x = 2, y = -3 is:</span>",
-        options: [opt("x + y = -1; 2x - 3y = -5"), opt("2x + 5y = -11; 4x + 10y = -22"), opt("2x - y = 1; 3x + 2y = 0"), opt("x - 4y - 14 = 0; 5x - y - 13 = 0")],
-        correctAnswer: opt("x - 4y - 14 = 0; 5x - y - 13 = 0")
-    },
-    {
-        id: "mcq7",
-        question: "<span style=\"font-weight: normal;\">If x = a, y = b is the solution of the equations x - y = 2 and x + y = 4, then the values of a and b are:</span>",
-        options: [opt("3 and 5"), opt("5 and 3"), opt("3 and 1"), opt("-1 and -3")],
-        correctAnswer: opt("3 and 1")
-    },
-    {
-        id: "mcq8",
-        question: "<span style=\"font-weight: normal;\">Aruna has only ₹ 1 and ₹ 2 coins with her. If total coins are 50 and amount is ₹ 75, then number of ₹ 1 and ₹ 2 coins are:</span>",
-        options: [opt("35 and 15"), opt("35 and 20"), opt("15 and 35"), opt("25 and 25")],
-        correctAnswer: opt("25 and 25")
-    },
-    {
-        id: "mcq9",
-        question: "<span style=\"font-weight: normal;\">The father's age is six times his son's age. Four years hence, the age of the father will be four times his son's age. The present ages (in years) are:</span>",
-        options: [opt("4 and 24"), opt("5 and 30"), opt("6 and 36"), opt("3 and 24")],
-        correctAnswer: opt("6 and 36")
-    },
-    {
-        id: "mcq10",
-        question: "<span style=\"font-weight: normal;\">Graphically, the pair of equations 6x - 3y + 10 = 0 and 2x - y + 9 = 0 represents two lines which are:</span>",
-        options: [opt("intersecting at exactly one point"), opt("intersecting at exactly two points"), opt("coincident"), opt("parallel")],
-        correctAnswer: opt("parallel")
-    }
+  {
+    id: "mcq1",
+    question:
+      '<span style="font-weight: normal;">The pair of equations x = a and y = b graphically represents lines which are:</span>',
+    options: [
+      opt("parallel"),
+      opt("intersecting at (b, a)"),
+      opt("coincident"),
+      opt("intersecting at (a, b)"),
+    ],
+    correctAnswer: opt("intersecting at (a, b)"),
+  },
+  {
+    id: "mcq2",
+    question:
+      '<span style="font-weight: normal;">For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines?</span>',
+    options: [
+      opt("<sup>1</sup>&frasl;<sub>2</sub>"),
+      opt("<sup>-1</sup>&frasl;<sub>2</sub>"),
+      opt("2"),
+      opt("-2"),
+    ],
+    correctAnswer: opt("2"),
+  },
+  {
+    id: "mcq3",
+    question:
+      '<span style="font-weight: normal;">If the lines given by 3x + 2ky = 2 and 2x + 5y + 1 = 0 are parallel, then the value of k is:</span>',
+    options: [
+      opt("<sup>-5</sup>&frasl;<sub>4</sub>"),
+      opt("<sup>2</sup>&frasl;<sub>5</sub>"),
+      opt("<sup>15</sup>&frasl;<sub>4</sub>"),
+      opt("<sup>3</sup>&frasl;<sub>2</sub>"),
+    ],
+    correctAnswer: opt("<sup>15</sup>&frasl;<sub>4</sub>"),
+  },
+  {
+    id: "mcq4",
+    question:
+      '<span style="font-weight: normal;">The value of c for which the pair of equations cx - y = 2 and 6x - 2y = 3 will have infinitely many solutions is:</span>',
+    options: [opt("3"), opt("-3"), opt("-12"), opt("no value")],
+    correctAnswer: opt("no value"),
+  },
+  {
+    id: "mcq5",
+    question:
+      '<span style="font-weight: normal;">One equation of a pair of dependent linear equations is -5x + 7y = 2. The second equation can be:</span>',
+    options: [
+      opt("10x + 14y + 4 = 0"),
+      opt("-10x - 14y + 4 = 0"),
+      opt("-10x + 14y + 4 = 0"),
+      opt("10x - 14y = -4"),
+    ],
+    correctAnswer: opt("10x - 14y = -4"),
+  },
+  {
+    id: "mcq6",
+    question:
+      '<span style="font-weight: normal;">A pair of linear equations which has a unique solution x = 2, y = -3 is:</span>',
+    options: [
+      opt("x + y = -1; 2x - 3y = -5"),
+      opt("2x + 5y = -11; 4x + 10y = -22"),
+      opt("2x - y = 1; 3x + 2y = 0"),
+      opt("x - 4y - 14 = 0; 5x - y - 13 = 0"),
+    ],
+    correctAnswer: opt("x - 4y - 14 = 0; 5x - y - 13 = 0"),
+  },
+  {
+    id: "mcq7",
+    question:
+      '<span style="font-weight: normal;">If x = a, y = b is the solution of the equations x - y = 2 and x + y = 4, then the values of a and b are:</span>',
+    options: [opt("3 and 5"), opt("5 and 3"), opt("3 and 1"), opt("-1 and -3")],
+    correctAnswer: opt("3 and 1"),
+  },
+  {
+    id: "mcq8",
+    question:
+      '<span style="font-weight: normal;">Aruna has only ₹ 1 and ₹ 2 coins with her. If total coins are 50 and amount is ₹ 75, then number of ₹ 1 and ₹ 2 coins are:</span>',
+    options: [
+      opt("35 and 15"),
+      opt("35 and 20"),
+      opt("15 and 35"),
+      opt("25 and 25"),
+    ],
+    correctAnswer: opt("25 and 25"),
+  },
+  {
+    id: "mcq9",
+    question:
+      "<span style=\"font-weight: normal;\">The father's age is six times his son's age. Four years hence, the age of the father will be four times his son's age. The present ages (in years) are:</span>",
+    options: [
+      opt("4 and 24"),
+      opt("5 and 30"),
+      opt("6 and 36"),
+      opt("3 and 24"),
+    ],
+    correctAnswer: opt("6 and 36"),
+  },
+  {
+    id: "mcq10",
+    question:
+      '<span style="font-weight: normal;">Graphically, the pair of equations 6x - 3y + 10 = 0 and 2x - y + 9 = 0 represents two lines which are:</span>',
+    options: [
+      opt("intersecting at exactly one point"),
+      opt("intersecting at exactly two points"),
+      opt("coincident"),
+      opt("parallel"),
+    ],
+    correctAnswer: opt("parallel"),
+  },
 ];
 
 const overview = readHtml("overview.html");
@@ -187,7 +245,7 @@ export const mathCh3: ChapterContent = {
         { id: "examples", name: "Examples", questions: [] }
     ],
     theorems: [],
-    mcqs: ${JSON.stringify(mcqArray, null, '\t\t')},
+    mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [
         "Understood the graphical representation of linear pairs.",
         "Mastered the conditions for consistency and inconsistency.",
@@ -205,5 +263,7 @@ export const mathCh3: ChapterContent = {
 };
 `;
 
-fs.writeFileSync(OUTPUT_FILE, tsCode, 'utf-8');
-console.log("math-ch3.ts generated MANUALLY and SAFELY with exact Chapter 8 strategy and height fix!");
+fs.writeFileSync(OUTPUT_FILE, tsCode, "utf-8");
+console.log(
+  "math-ch3.ts generated MANUALLY and SAFELY with exact Chapter 8 strategy and height fix!",
+);

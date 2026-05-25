@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#4CAF50"; // Premium Green for Geography Chapter 4
 
 export const c7Geo4: ChapterContent = {
-    id: "c7-geo-4",
-    number: 4,
-    title: "Air",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-geo-4",
+  number: 4,
+  title: "Air",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>Our earth is surrounded by a huge blanket of air called the atmosphere. All living beings on this earth depend on the atmosphere for their survival. It provides the air we breathe and protects us from the harmful effects of the sun’s rays.</p>
             
@@ -27,8 +27,8 @@ export const c7Geo4: ChapterContent = {
             <p>Weather is the hour-to-hour, day-to-day condition of the atmosphere. Climate is the average weather condition of a place for a longer period of time.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7g4-ex-all": `
+  htmlExercises: {
+    "c7g4-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <!-- 1. Answer the following questions -->
                 <div style="margin-bottom: 30px;">
@@ -118,82 +118,84 @@ export const c7Geo4: ChapterContent = {
                     </table>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "Our earth is surrounded by a huge blanket of air called the atmosphere.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7g4-mcq-1",
+      question: "Which gas creates the greenhouse effect in the atmosphere?",
+      options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
+      correctAnswer: "c",
     },
-    introduction: "Our earth is surrounded by a huge blanket of air called the atmosphere.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7g4-mcq-1",
-            question: "Which gas creates the greenhouse effect in the atmosphere?",
-            options: ["Oxygen", "Nitrogen", "Carbon dioxide", "Argon"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g4-mcq-2",
-            question: "The most important layer of the atmosphere is:",
-            options: ["Stratosphere", "Mesosphere", "Troposphere", "Exosphere"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g4-mcq-3",
-            question: "Which layer of the atmosphere is free from clouds?",
-            options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g4-mcq-4",
-            question: "As we go up the layers of the atmosphere, the air pressure:",
-            options: ["Increases", "Decreases", "Remains constant", "Fluctuates"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g4-mcq-5",
-            question: "Precipitation in liquid form is called:",
-            options: ["Snow", "Rain", "Sleet", "Hail"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g4-mcq-6",
-            question: "The coldest layer of the atmosphere is:",
-            options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7g4-mcq-7",
-            question: "The local wind that blows in northern India during summer is:",
-            options: ["Trade Wind", "Loo", "Monsoon", "Westerlies"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g4-mcq-8",
-            question: "Which instrument is used to measure air pressure?",
-            options: ["Barometer", "Thermometer", "Seismograph", "Rain Gauge"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7g4-mcq-9",
-            question: "The most plentiful gas in the air is:",
-            options: ["Oxygen", "Nitrogen", "Hydrogen", "Helium"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7g4-mcq-10",
-            question: "Which layer of the atmosphere reflects radio waves back to earth?",
-            options: ["Mesosphere", "Stratosphere", "Thermosphere", "Troposphere"],
-            correctAnswer: "c"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7g4-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7g4-mcq-2",
+      question: "The most important layer of the atmosphere is:",
+      options: ["Stratosphere", "Mesosphere", "Troposphere", "Exosphere"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g4-mcq-3",
+      question: "Which layer of the atmosphere is free from clouds?",
+      options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g4-mcq-4",
+      question: "As we go up the layers of the atmosphere, the air pressure:",
+      options: ["Increases", "Decreases", "Remains constant", "Fluctuates"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g4-mcq-5",
+      question: "Precipitation in liquid form is called:",
+      options: ["Snow", "Rain", "Sleet", "Hail"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g4-mcq-6",
+      question: "The coldest layer of the atmosphere is:",
+      options: ["Troposphere", "Stratosphere", "Mesosphere", "Thermosphere"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7g4-mcq-7",
+      question: "The local wind that blows in northern India during summer is:",
+      options: ["Trade Wind", "Loo", "Monsoon", "Westerlies"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g4-mcq-8",
+      question: "Which instrument is used to measure air pressure?",
+      options: ["Barometer", "Thermometer", "Seismograph", "Rain Gauge"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7g4-mcq-9",
+      question: "The most plentiful gas in the air is:",
+      options: ["Oxygen", "Nitrogen", "Hydrogen", "Helium"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7g4-mcq-10",
+      question:
+        "Which layer of the atmosphere reflects radio waves back to earth?",
+      options: ["Mesosphere", "Stratosphere", "Thermosphere", "Troposphere"],
+      correctAnswer: "c",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7g4-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

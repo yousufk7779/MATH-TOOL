@@ -1,10 +1,10 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const b64Path = 'd:/All NCERT SOLUTIONS/scratch/ch2_fig_b64.txt';
-const chapterPath = 'd:/All NCERT SOLUTIONS/client/data/content/c7-sci-2.ts';
+const b64Path = "d:/All NCERT SOLUTIONS/scratch/ch2_fig_b64.txt";
+const chapterPath = "d:/All NCERT SOLUTIONS/client/data/content/c7-sci-2.ts";
 
-const b64 = fs.readFileSync(b64Path, 'utf8').trim();
-let chapterContent = fs.readFileSync(chapterPath, 'utf8');
+const b64 = fs.readFileSync(b64Path, "utf8").trim();
+let chapterContent = fs.readFileSync(chapterPath, "utf8");
 
 const q12 = `        {
           id: "q12",
@@ -27,11 +27,17 @@ const q13 = `        {
         }`;
 
 // Find the last question closing brace and insert before the end of the array
-const searchStr = '      ]\n    }\n  ],';
-const insertPos = chapterContent.lastIndexOf('        }');
-const insertIndex = chapterContent.indexOf('}', insertPos) + 1;
+const searchStr = "      ]\n    }\n  ],";
+const insertPos = chapterContent.lastIndexOf("        }");
+const insertIndex = chapterContent.indexOf("}", insertPos) + 1;
 
-const updatedContent = chapterContent.slice(0, insertIndex) + ',\n' + q12 + '\n' + q13 + chapterContent.slice(insertIndex);
+const updatedContent =
+  chapterContent.slice(0, insertIndex) +
+  ",\n" +
+  q12 +
+  "\n" +
+  q13 +
+  chapterContent.slice(insertIndex);
 
 fs.writeFileSync(chapterPath, updatedContent);
-console.log('Successfully updated chapter file with Q12 and Q13');
+console.log("Successfully updated chapter file with Q12 and Q13");

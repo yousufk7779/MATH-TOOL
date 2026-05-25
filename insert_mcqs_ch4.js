@@ -1,6 +1,9 @@
-const fs = require('fs');
+const fs = require("fs");
 
-let fileContent = fs.readFileSync('d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-4.ts', 'utf8');
+let fileContent = fs.readFileSync(
+  "d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-4.ts",
+  "utf8",
+);
 
 const mcqsContent = `  mcqs: [
     {
@@ -115,7 +118,10 @@ const mcqsContent = `  mcqs: [
     }
   ],`;
 
-fileContent = fileContent.replace('  mcqs: [],', mcqsContent);
+fileContent = fileContent.replace("  mcqs: [],", mcqsContent);
 
-fs.writeFileSync('d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-4.ts', fileContent);
-console.log('MCQs successfully inserted into Chapter 4.');
+fs.writeFileSync(
+  "d:\\\\All NCERT SOLUTIONS\\\\client\\\\data\\\\content\\\\c9-sci-phy-4.ts",
+  fileContent,
+);
+console.log("MCQs successfully inserted into Chapter 4.");

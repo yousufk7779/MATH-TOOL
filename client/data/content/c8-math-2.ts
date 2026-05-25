@@ -4,23 +4,33 @@ export const c8Math2: ChapterContent = {
   id: "c8-math-2",
   number: 2,
   title: "Linear Equations in One Variable",
-  introduction: "In this chapter, we will learn how to solve equations where the highest power of the variable is 1 and only one variable is used.",
+  introduction:
+    "In this chapter, we will learn how to solve equations where the highest power of the variable is 1 and only one variable is used.",
   definitions: [
-    { term: "Equation", description: "A statement of equality involving variables." },
-    { term: "Linear Equation", description: "An equation where the highest power of the variable is 1." },
-    { term: "Solution", description: "The value of the variable that makes the equation true." }
+    {
+      term: "Equation",
+      description: "A statement of equality involving variables.",
+    },
+    {
+      term: "Linear Equation",
+      description: "An equation where the highest power of the variable is 1.",
+    },
+    {
+      term: "Solution",
+      description: "The value of the variable that makes the equation true.",
+    },
   ],
   keyPoints: [
     "An algebraic equation is an equality involving variables.",
     "The highest power of the variable in a linear equation is 1.",
     "Variables can be transposed from one side to another (sign changes).",
-    "Linear equations are used to solve real-life problems like ages, perimeters, etc."
+    "Linear equations are used to solve real-life problems like ages, perimeters, etc.",
   ],
   formulas: [],
   crux: [],
   exercises: [
     { id: "ex2-1", name: "Exercise 2.1", questions: [] },
-    { id: "ex2-2", name: "Exercise 2.2", questions: [] }
+    { id: "ex2-2", name: "Exercise 2.2", questions: [] },
   ],
   examples: [],
   mcqs: [
@@ -28,67 +38,73 @@ export const c8Math2: ChapterContent = {
       id: "c8-m2-q1",
       question: "In a linear equation, the highest power of the variable is:",
       options: ["0", "1", "2", "3"],
-      correctAnswer: "1"
+      correctAnswer: "1",
     },
     {
       id: "c8-m2-q2",
       question: "If x + 5 = 10, then the value of x is:",
       options: ["5", "10", "15", "-5"],
-      correctAnswer: "5"
+      correctAnswer: "5",
     },
     {
       id: "c8-m2-q3",
       question: "Transposing a positive term to the other side makes it:",
       options: ["Positive", "Negative", "Zero", "Multiply"],
-      correctAnswer: "Negative"
+      correctAnswer: "Negative",
     },
     {
       id: "c8-m2-q4",
       question: "Solution of 2x = 10 is:",
       options: ["2", "20", "5", "8"],
-      correctAnswer: "5"
+      correctAnswer: "5",
     },
     {
       id: "c8-m2-q5",
-      question: "If <span class='frac'><span class='num'>x</span><span class='den'>3</span></span> = 4, then x equals:",
-      options: ["7", "1", "12", "<span class='frac'><span class='num'>4</span><span class='den'>3</span></span>"],
-      correctAnswer: "12"
+      question:
+        "If <span class='frac'><span class='num'>x</span><span class='den'>3</span></span> = 4, then x equals:",
+      options: [
+        "7",
+        "1",
+        "12",
+        "<span class='frac'><span class='num'>4</span><span class='den'>3</span></span>",
+      ],
+      correctAnswer: "12",
     },
     {
       id: "c8-m2-q6",
       question: "How many variables are in 'Linear Equation in One Variable'?",
       options: ["Two", "One", "Three", "Zero"],
-      correctAnswer: "One"
+      correctAnswer: "One",
     },
     {
       id: "c8-m2-q7",
       question: "Is 2x + 5 = 9 a linear equation?",
       options: ["Yes", "No"],
-      correctAnswer: "Yes"
+      correctAnswer: "Yes",
     },
     {
       id: "c8-m2-q8",
       question: "If 3x - 1 = 8, then x is:",
       options: ["3", "2", "9", "7"],
-      correctAnswer: "3"
+      correctAnswer: "3",
     },
     {
       id: "c8-m2-q9",
       question: "Solution of x - 7 = -2 is:",
       options: ["9", "-9", "5", "-5"],
-      correctAnswer: "5"
+      correctAnswer: "5",
     },
     {
       id: "c8-m2-q10",
       question: "Which of these is NOT a linear equation?",
       options: ["x + 1 = 0", "y = 2", "x² + 1 = 0", "z - 5 = 4"],
-      correctAnswer: "x² + 1 = 0"
-    }
+      correctAnswer: "x² + 1 = 0",
+    },
   ],
   summary: [
     "Linear equations have degree 1.",
     "Solving involves transposing terms and isolating the variable.",
-    "Always check your result by substituting the value back into the original equation."
+    "Always check your result by substituting the value back into the original equation.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -255,6 +271,6 @@ export const c8Math2: ChapterContent = {
         <div class="q-card"><div class="q-text">5. Solve: (3t - 2)/4 - (2t + 3)/3 = <span class='frac'><span class='num'>2</span><span class='den'>3</span></span> - t</div><div class="sol-box"><div class="sol-line">(t - 18)/12 = (2 - 3t)/3 ⟹ t - 18 = 8 - 12t ⟹ <span class="ans-tag">t = 2</span></div></div></div>
         <div class="q-card"><div class="q-text">6. Solve: m - (m - 1)/2 = 1 - (m - 2)/3</div><div class="sol-box"><div class="sol-line">(m + 1)/2 = (5 - m)/3 ⟹ 3m + 3 = 10 - 2m ⟹ <span class="ans-tag">m = <span class='frac'><span class='num'>7</span><span class='den'>5</span></span></span></div></div></div>
       </div>
-    `
-  }
+    `,
+  },
 };

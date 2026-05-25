@@ -31,10 +31,7 @@
       "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-web-browser",
-      "expo-asset"
-    ],
+    "plugins": ["expo-web-browser", "expo-asset"],
     "experiments": {
       "reactCompiler": true
     },

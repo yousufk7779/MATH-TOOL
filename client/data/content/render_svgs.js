@@ -1,8 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 const dir = __dirname;
-const files = fs.readdirSync(dir).filter(f => f.startsWith('c9-math-') && f.endsWith('.ts'));
+const files = fs
+  .readdirSync(dir)
+  .filter((f) => f.startsWith("c9-math-") && f.endsWith(".ts"));
 
 let htmlContent = `
 <!DOCTYPE html>
@@ -19,20 +21,20 @@ let htmlContent = `
 <h1>Class 9 Math SVGs</h1>
 `;
 
-files.forEach(file => {
-    const content = fs.readFileSync(path.join(dir, file), 'utf-8');
-    const svgRegex = /<svg[\s\S]*?<\/svg>/g;
-    let match;
-    let count = 0;
-    while ((match = svgRegex.exec(content)) !== null) {
-        count++;
-        htmlContent += `
+files.forEach((file) => {
+  const content = fs.readFileSync(path.join(dir, file), "utf-8");
+  const svgRegex = /<svg[\s\S]*?<\/svg>/g;
+  let match;
+  let count = 0;
+  while ((match = svgRegex.exec(content)) !== null) {
+    count++;
+    htmlContent += `
         <div class="svg-card">
             <h3>${file} - SVG ${count}</h3>
             ${match[0]}
         </div>
         `;
-    }
+  }
 });
 
 htmlContent += `
@@ -40,5 +42,5 @@ htmlContent += `
 </html>
 `;
 
-fs.writeFileSync(path.join(dir, 'test_svgs.html'), htmlContent);
-console.log('test_svgs.html created!');
+fs.writeFileSync(path.join(dir, "test_svgs.html"), htmlContent);
+console.log("test_svgs.html created!");

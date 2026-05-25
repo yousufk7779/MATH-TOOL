@@ -2,42 +2,49 @@ import { ChapterContent } from "../types";
 import easyMcqsCh11 from "../easy_mcqs_ch11.json";
 
 export const mathCh11: ChapterContent = {
-    id: "ch11",
-    number: 11,
-    title: "Areas Related to Circles",
-    introduction: "In this chapter, we explore the measurement of planar figures related to circles, including sectors and segments, using algebraic and geometric principles.",
-    definitions: [
-        { term: "Sector", description: "The region between two radii and the corresponding arc of a circle." },
-        { term: "Segment", description: "The region between a chord and the corresponding arc of a circle." }
-    ],
-    keyPoints: [
-        "Area of a circle = πr²",
-        "Circumference of a circle = 2πr",
-        "Area of a sector of angle θ = (θ/360) × πr²",
-        "Length of an arc of a sector of angle θ = (θ/360) × 2πr"
-    ],
-    formulas: [
-        { name: "Area of Sector", formula: "(θ/360) × πr²" },
-        { name: "Area of Segment", formula: "Area of Sector - Area of Triangle" }
-    ],
-    crux: [
-        "Always identify the radius and the angle subtended at the center.",
-        "For segments, area of the triangle can often be found using (1/2)r² sin θ."
-    ],
-    exercises: [
-        { id: "exercise1", name: "Exercise 11.1", questions: [] }
-    ],
-    examples: [],
-    theorems: [],
-    mcqs: easyMcqsCh11 as any, // Integrated easy MCQs
+  id: "ch11",
+  number: 11,
+  title: "Areas Related to Circles",
+  introduction:
+    "In this chapter, we explore the measurement of planar figures related to circles, including sectors and segments, using algebraic and geometric principles.",
+  definitions: [
+    {
+      term: "Sector",
+      description:
+        "The region between two radii and the corresponding arc of a circle.",
+    },
+    {
+      term: "Segment",
+      description:
+        "The region between a chord and the corresponding arc of a circle.",
+    },
+  ],
+  keyPoints: [
+    "Area of a circle = πr²",
+    "Circumference of a circle = 2πr",
+    "Area of a sector of angle θ = (θ/360) × πr²",
+    "Length of an arc of a sector of angle θ = (θ/360) × 2πr",
+  ],
+  formulas: [
+    { name: "Area of Sector", formula: "(θ/360) × πr²" },
+    { name: "Area of Segment", formula: "Area of Sector - Area of Triangle" },
+  ],
+  crux: [
+    "Always identify the radius and the angle subtended at the center.",
+    "For segments, area of the triangle can often be found using (1/2)r² sin θ.",
+  ],
+  exercises: [{ id: "exercise1", name: "Exercise 11.1", questions: [] }],
+  examples: [],
+  theorems: [],
+  mcqs: easyMcqsCh11 as any, // Integrated easy MCQs
 
-    summary: [
-        "We learned to calculate area and perimeter of circles and their parts.",
-        "Applied these concepts to solve real-world problems like clock hands and brooch designs."
-    ],
+  summary: [
+    "We learned to calculate area and perimeter of circles and their parts.",
+    "Applied these concepts to solve real-world problems like clock hands and brooch designs.",
+  ],
 
-    isHtmlView: true,
-    htmlOverview: `<!DOCTYPE html>
+  isHtmlView: true,
+  htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -92,8 +99,8 @@ export const mathCh11: ChapterContent = {
     </div>
 </body>
 </html>`,
-    htmlExercises: {
-        examples: `<!DOCTYPE html>
+  htmlExercises: {
+    examples: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -157,7 +164,7 @@ export const mathCh11: ChapterContent = {
     </div>
 </body>
 </html>`,
-        exercise1: `<!DOCTYPE html>
+    exercise1: `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -305,6 +312,6 @@ export const mathCh11: ChapterContent = {
         <div class="final-answer">Option (D).</div>
     </div>
 </body>
-</html>`
-    }
+</html>`,
+  },
 };

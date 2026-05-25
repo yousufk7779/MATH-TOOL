@@ -3,11 +3,11 @@ import { ChapterContent } from "../types";
 const themeColor = "#FF5722";
 
 export const c7Hist4: ChapterContent = {
-    id: "c7-hist-4",
-    number: 4,
-    title: "The Mughal Empire",
-    isHtmlView: true,
-    htmlOverview: `
+  id: "c7-hist-4",
+  number: 4,
+  title: "The Mughal Empire",
+  isHtmlView: true,
+  htmlOverview: `
         <div style="padding: 10px; color: #fff; text-align: justify;">
             <p>The Mughal Empire was a massive and powerful state that ruled most of the Indian subcontinent for over two centuries. Starting from Babur in 1526, the empire reached its peak under Akbar and saw magnificent architecture under Shah Jahan. The Mughals created a unique system of administration and military organization that lasted for a long time.</p>
             
@@ -32,8 +32,8 @@ export const c7Hist4: ChapterContent = {
             <p>The Mughal Empire stands as one of the greatest periods in Indian history. Their innovative administrative systems, like the mansabdari and zabti, provided stability for decades. Their legacy lives on in India's architecture, language, and cultural traditions, though the empire eventually weakened after Aurangzeb's long and costly reign.</p>
         </div>
     `,
-    htmlExercises: {
-        "c7h4-ex-all": `
+  htmlExercises: {
+    "c7h4-ex-all": `
             <div style="padding: 10px; color: #fff; text-align: justify;">
                 <div style="margin-bottom: 20px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">Q.1: Match the following:</p>
@@ -107,82 +107,84 @@ export const c7Hist4: ChapterContent = {
                     <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Akbar conquered Kashmir in 1586. The Mughals brought stability, developed irrigation, and built famous gardens like Shalimar. Their rule made Kashmir a key part of the empire's cultural and economic life.</p>
                 </div>
             </div>
-        `
+        `,
+  },
+  introduction:
+    "The Mughal Empire was a massive and powerful state that ruled most of the Indian subcontinent for over two centuries.",
+  definitions: [],
+  keyPoints: [],
+  formulas: [],
+  crux: [],
+  mcqs: [
+    {
+      id: "c7h4-mcq-1",
+      question: "Who was the first Mughal emperor?",
+      options: ["Akbar", "Babur", "Humayun", "Shah Jahan"],
+      correctAnswer: "b",
     },
-    introduction: "The Mughal Empire was a massive and powerful state that ruled most of the Indian subcontinent for over two centuries.",
-    definitions: [],
-    keyPoints: [],
-    formulas: [],
-    crux: [],
-    mcqs: [
-        {
-            id: "c7h4-mcq-1",
-            question: "Who was the first Mughal emperor?",
-            options: ["Akbar", "Babur", "Humayun", "Shah Jahan"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h4-mcq-2",
-            question: "In which year was the first battle of Panipat fought?",
-            options: ["1526", "1556", "1761", "1191"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-3",
-            question: "What was the revenue system of Akbar called?",
-            options: ["Zabti", "Iqta", "Zakat", "Jizya"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-4",
-            question: "Who was Akbar's famous revenue minister?",
-            options: ["Abul Fazl", "Todar Mal", "Birbal", "Tansen"],
-            correctAnswer: "b"
-        },
-        {
-            id: "c7h4-mcq-5",
-            question: "Who wrote the 'Akbar Nama'?",
-            options: ["Abul Fazl", "Babur", "Jahangir", "Todar Mal"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-6",
-            question: "What was Akbar's idea of 'universal peace' called?",
-            options: ["Sulh-i kul", "Zabti", "Mansab", "Din-i-Ilahi"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-7",
-            question: "Which Mughal emperor built the Taj Mahal?",
-            options: ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
-            correctAnswer: "c"
-        },
-        {
-            id: "c7h4-mcq-8",
-            question: "Who was the last powerful Mughal emperor?",
-            options: ["Aurangzeb", "Shah Jahan", "Humayun", "Bahadur Shah Zafar"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-9",
-            question: "What was the rank of a Mughal official called?",
-            options: ["Mansab", "Iqta", "Jagir", "Suba"],
-            correctAnswer: "a"
-        },
-        {
-            id: "c7h4-mcq-10",
-            question: "Who was the wife of Emperor Jahangir who had great political influence?",
-            options: ["Nur Jahan", "Mumtaz Mahal", "Raziyya Sultan", "Jodha Bai"],
-            correctAnswer: "a"
-        }
-    ],
-    summary: [],
-    exercises: [
-        {
-            id: "c7h4-ex-all",
-            name: "Exercise",
-            questions: []
-        }
-    ],
-    examples: []
+    {
+      id: "c7h4-mcq-2",
+      question: "In which year was the first battle of Panipat fought?",
+      options: ["1526", "1556", "1761", "1191"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-3",
+      question: "What was the revenue system of Akbar called?",
+      options: ["Zabti", "Iqta", "Zakat", "Jizya"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-4",
+      question: "Who was Akbar's famous revenue minister?",
+      options: ["Abul Fazl", "Todar Mal", "Birbal", "Tansen"],
+      correctAnswer: "b",
+    },
+    {
+      id: "c7h4-mcq-5",
+      question: "Who wrote the 'Akbar Nama'?",
+      options: ["Abul Fazl", "Babur", "Jahangir", "Todar Mal"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-6",
+      question: "What was Akbar's idea of 'universal peace' called?",
+      options: ["Sulh-i kul", "Zabti", "Mansab", "Din-i-Ilahi"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-7",
+      question: "Which Mughal emperor built the Taj Mahal?",
+      options: ["Akbar", "Jahangir", "Shah Jahan", "Aurangzeb"],
+      correctAnswer: "c",
+    },
+    {
+      id: "c7h4-mcq-8",
+      question: "Who was the last powerful Mughal emperor?",
+      options: ["Aurangzeb", "Shah Jahan", "Humayun", "Bahadur Shah Zafar"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-9",
+      question: "What was the rank of a Mughal official called?",
+      options: ["Mansab", "Iqta", "Jagir", "Suba"],
+      correctAnswer: "a",
+    },
+    {
+      id: "c7h4-mcq-10",
+      question:
+        "Who was the wife of Emperor Jahangir who had great political influence?",
+      options: ["Nur Jahan", "Mumtaz Mahal", "Raziyya Sultan", "Jodha Bai"],
+      correctAnswer: "a",
+    },
+  ],
+  summary: [],
+  exercises: [
+    {
+      id: "c7h4-ex-all",
+      name: "Exercise",
+      questions: [],
+    },
+  ],
+  examples: [],
 };

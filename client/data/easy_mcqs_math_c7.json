@@ -154,7 +154,12 @@
   {
     "id": "mq7-20",
     "question": "Which is a linear equation in one variable?",
-    "options": ["(A) x + y = 5", "(B) x\u00b2 + 1 = 2", "(C) 2x + 3 = 7", "(D) x + y + z = 0"],
+    "options": [
+      "(A) x + y = 5",
+      "(B) x\u00b2 + 1 = 2",
+      "(C) 2x + 3 = 7",
+      "(D) x + y + z = 0"
+    ],
     "correctAnswer": "C",
     "chapterId": "math7-mix",
     "chapterTitle": "Simple Equations"
@@ -170,7 +175,12 @@
   {
     "id": "mq7-22",
     "question": "Two angles are supplementary if their sum is:",
-    "options": ["(A) 90\u00b0", "(B) 180\u00b0", "(C) 270\u00b0", "(D) 360\u00b0"],
+    "options": [
+      "(A) 90\u00b0",
+      "(B) 180\u00b0",
+      "(C) 270\u00b0",
+      "(D) 360\u00b0"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Lines and Angles"
@@ -178,7 +188,12 @@
   {
     "id": "mq7-23",
     "question": "Complement of 30\u00b0 is:",
-    "options": ["(A) 60\u00b0", "(B) 150\u00b0", "(C) 90\u00b0", "(D) 30\u00b0"],
+    "options": [
+      "(A) 60\u00b0",
+      "(B) 150\u00b0",
+      "(C) 90\u00b0",
+      "(D) 30\u00b0"
+    ],
     "correctAnswer": "A",
     "chapterId": "math7-mix",
     "chapterTitle": "Lines and Angles"
@@ -186,7 +201,12 @@
   {
     "id": "mq7-24",
     "question": "A line that intersects two or more lines at distinct points is:",
-    "options": ["(A) Parallel", "(B) Transversal", "(C) Vertical", "(D) Perpendicular"],
+    "options": [
+      "(A) Parallel",
+      "(B) Transversal",
+      "(C) Vertical",
+      "(D) Perpendicular"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Lines and Angles"
@@ -194,7 +214,12 @@
   {
     "id": "mq7-25",
     "question": "Vertically opposite angles are always:",
-    "options": ["(A) Equal", "(B) Complementary", "(C) Supplementary", "(D) 90\u00b0"],
+    "options": [
+      "(A) Equal",
+      "(B) Complementary",
+      "(C) Supplementary",
+      "(D) 90\u00b0"
+    ],
     "correctAnswer": "A",
     "chapterId": "math7-mix",
     "chapterTitle": "Lines and Angles"
@@ -202,7 +227,12 @@
   {
     "id": "mq7-26",
     "question": "Sum of three angles of a triangle is:",
-    "options": ["(A) 90\u00b0", "(B) 180\u00b0", "(C) 270\u00b0", "(D) 360\u00b0"],
+    "options": [
+      "(A) 90\u00b0",
+      "(B) 180\u00b0",
+      "(C) 270\u00b0",
+      "(D) 360\u00b0"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "The Triangle and its Properties"
@@ -210,7 +240,12 @@
   {
     "id": "mq7-27",
     "question": "A triangle with all three sides equal is:",
-    "options": ["(A) Isosceles", "(B) Equilateral", "(C) Scalene", "(D) Right angled"],
+    "options": [
+      "(A) Isosceles",
+      "(B) Equilateral",
+      "(C) Scalene",
+      "(D) Right angled"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "The Triangle and its Properties"
@@ -218,7 +253,12 @@
   {
     "id": "mq7-28",
     "question": "In a right triangle, the longest side is:",
-    "options": ["(A) Base", "(B) Perpendicular", "(C) Hypotenuse", "(D) Median"],
+    "options": [
+      "(A) Base",
+      "(B) Perpendicular",
+      "(C) Hypotenuse",
+      "(D) Median"
+    ],
     "correctAnswer": "C",
     "chapterId": "math7-mix",
     "chapterTitle": "The Triangle and its Properties"
@@ -322,7 +362,12 @@
   {
     "id": "mq7-41",
     "question": "Area of a rectangle is:",
-    "options": ["(A) Side x Side", "(B) Length x Breadth", "(C) 2(L+B)", "(D) 1/2 x B x H"],
+    "options": [
+      "(A) Side x Side",
+      "(B) Length x Breadth",
+      "(C) 2(L+B)",
+      "(D) 1/2 x B x H"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Perimeter and Area"
@@ -330,7 +375,12 @@
   {
     "id": "mq7-42",
     "question": "Circumference of a circle is:",
-    "options": ["(A) \u03c0r\u00b2", "(B) 2\u03c0r", "(C) \u03c0d\u00b2", "(D) 2\u03c0r\u00b2"],
+    "options": [
+      "(A) \u03c0r\u00b2",
+      "(B) 2\u03c0r",
+      "(C) \u03c0d\u00b2",
+      "(D) 2\u03c0r\u00b2"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Perimeter and Area"
@@ -378,7 +428,12 @@
   {
     "id": "mq7-48",
     "question": "An expression with three terms is called:",
-    "options": ["(A) Monomial", "(B) Binomial", "(C) Trinomial", "(D) Polynomial"],
+    "options": [
+      "(A) Monomial",
+      "(B) Binomial",
+      "(C) Trinomial",
+      "(D) Polynomial"
+    ],
     "correctAnswer": "C",
     "chapterId": "math7-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -386,7 +441,12 @@
   {
     "id": "mq7-49",
     "question": "Like terms have the same ______.",
-    "options": ["(A) Coefficients", "(B) Numerical values", "(C) Algebraic factors", "(D) Signs"],
+    "options": [
+      "(A) Coefficients",
+      "(B) Numerical values",
+      "(C) Algebraic factors",
+      "(D) Signs"
+    ],
     "correctAnswer": "C",
     "chapterId": "math7-mix",
     "chapterTitle": "Algebraic Expressions"
@@ -418,7 +478,12 @@
   {
     "id": "mq7-53",
     "question": "a\u1d50 x a\u207f is equal to:",
-    "options": ["(A) a\u1d50\u207f", "(B) a\u1d50\u207a\u207f", "(C) a\u1d50\u207b\u207f", "(D) (ab)\u1d50\u207a\u207f"],
+    "options": [
+      "(A) a\u1d50\u207f",
+      "(B) a\u1d50\u207a\u207f",
+      "(C) a\u1d50\u207b\u207f",
+      "(D) (ab)\u1d50\u207a\u207f"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Exponents and Powers"
@@ -426,7 +491,12 @@
   {
     "id": "mq7-54",
     "question": "Standard form of 5000 is:",
-    "options": ["(A) 5 x 10\u00b3", "(B) 50 x 10\u00b2", "(C) 0.5 x 10\u2074", "(D) 500 x 10\u00b9"],
+    "options": [
+      "(A) 5 x 10\u00b3",
+      "(B) 50 x 10\u00b2",
+      "(C) 0.5 x 10\u2074",
+      "(D) 500 x 10\u00b9"
+    ],
     "correctAnswer": "A",
     "chapterId": "math7-mix",
     "chapterTitle": "Exponents and Powers"
@@ -466,7 +536,12 @@
   {
     "id": "mq7-59",
     "question": "Angle of rotation for a regular hexagon is:",
-    "options": ["(A) 90\u00b0", "(B) 60\u00b0", "(C) 45\u00b0", "(D) 120\u00b0"],
+    "options": [
+      "(A) 90\u00b0",
+      "(B) 60\u00b0",
+      "(C) 45\u00b0",
+      "(D) 120\u00b0"
+    ],
     "correctAnswer": "B",
     "chapterId": "math7-mix",
     "chapterTitle": "Symmetry"

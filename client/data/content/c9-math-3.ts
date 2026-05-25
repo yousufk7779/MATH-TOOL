@@ -4,29 +4,39 @@ export const c9Math3: ChapterContent = {
   id: "c9-math-3",
   number: 3,
   title: "Linear Equations in Two Variables",
-  introduction: "In this chapter, we extend our knowledge of linear equations to two variables. We will learn how to write them in standard form, find their solutions, and represent them on a graph.",
+  introduction:
+    "In this chapter, we extend our knowledge of linear equations to two variables. We will learn how to write them in standard form, find their solutions, and represent them on a graph.",
   definitions: [
-    { term: "Linear Equation", description: "An equation which can be put in the form ax + by + c = 0, where a, b and c are real numbers." },
-    { term: "Solution", description: "A pair of values for x and y that satisfy the equation." },
-    { term: "Graph", description: "The visual representation of a linear equation on a Cartesian plane." }
+    {
+      term: "Linear Equation",
+      description:
+        "An equation which can be put in the form ax + by + c = 0, where a, b and c are real numbers.",
+    },
+    {
+      term: "Solution",
+      description: "A pair of values for x and y that satisfy the equation.",
+    },
+    {
+      term: "Graph",
+      description:
+        "The visual representation of a linear equation on a Cartesian plane.",
+    },
   ],
   keyPoints: [
     "A linear equation in two variables has infinitely many solutions.",
     "The graph of every linear equation in two variables is a straight line.",
-    "x = 0 is the equation of the y-axis and y = 0 is the equation of the x-axis."
+    "x = 0 is the equation of the y-axis and y = 0 is the equation of the x-axis.",
   ],
-  formulas: [
-    { name: "Standard Form", formula: "ax + by + c = 0" }
-  ],
+  formulas: [{ name: "Standard Form", formula: "ax + by + c = 0" }],
   crux: [
     "To find a solution, pick a value for x and calculate the corresponding value for y.",
-    "Every point on the line is a solution of the equation."
+    "Every point on the line is a solution of the equation.",
   ],
   exercises: [
     { id: "ex3-1", name: "Exercise 3.1", questions: [] },
     { id: "ex3-2", name: "Exercise 3.2", questions: [] },
     { id: "ex3-3", name: "Exercise 3.3", questions: [] },
-    { id: "ex3-4", name: "Exercise 3.4", questions: [] }
+    { id: "ex3-4", name: "Exercise 3.4", questions: [] },
   ],
   examples: [],
   theorems: [],
@@ -34,68 +44,79 @@ export const c9Math3: ChapterContent = {
     {
       id: "m1",
       question: "The standard form of a linear equation in two variables is:",
-      options: ["ax + b = 0", "ax² + bx + c = 0", "ax + by + c = 0", "ax + b = y²"],
-      correctAnswer: "C"
+      options: [
+        "ax + b = 0",
+        "ax² + bx + c = 0",
+        "ax + by + c = 0",
+        "ax + b = y²",
+      ],
+      correctAnswer: "C",
     },
     {
       id: "m2",
-      question: "How many solutions does a linear equation in two variables have?",
-      options: ["Unique solution", "Two solutions", "Infinitely many", "No solution"],
-      correctAnswer: "C"
+      question:
+        "How many solutions does a linear equation in two variables have?",
+      options: [
+        "Unique solution",
+        "Two solutions",
+        "Infinitely many",
+        "No solution",
+      ],
+      correctAnswer: "C",
     },
     {
       id: "m3",
       question: "The graph of the equation x = 5 is a line parallel to:",
       options: ["x-axis", "y-axis", "Origin", "None of these"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m4",
       question: "The point (0, 3) lies on which line?",
       options: ["x-axis", "y-axis", "Origin", "Quadrant II"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m5",
       question: "If (2, 0) is a solution of 2x + 3y = k, then k is:",
       options: ["2", "4", "0", "5"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m6",
       question: "The equation y = mx represents a line passing through:",
       options: ["x-axis", "y-axis", "Origin", "None of these"],
-      correctAnswer: "C"
+      correctAnswer: "C",
     },
     {
       id: "m7",
       question: "Any point on the x-axis is of the form:",
       options: ["(x, y)", "(0, y)", "(x, 0)", "(x, x)"],
-      correctAnswer: "C"
+      correctAnswer: "C",
     },
     {
       id: "m8",
       question: "Any point on the line y = x is of the form:",
       options: ["(a, a)", "(0, a)", "(a, 0)", "(a, -a)"],
-      correctAnswer: "A"
+      correctAnswer: "A",
     },
     {
       id: "m9",
       question: "Equation of the x-axis is:",
       options: ["x = 0", "y = 0", "x + y = 0", "x = y"],
-      correctAnswer: "B"
+      correctAnswer: "B",
     },
     {
       id: "m10",
       question: "The graph of a linear equation is always a:",
       options: ["Circle", "Curve", "Straight line", "Point"],
-      correctAnswer: "C"
-    }
+      correctAnswer: "C",
+    },
   ],
   summary: [
     "A linear equation in two variables is written as ax + by + c = 0.",
     "It always has infinitely many solutions and its graph is a straight line.",
-    "The coordinates of every point on the line satisfy the equation."
+    "The coordinates of every point on the line satisfy the equation.",
   ],
   isHtmlView: true,
   htmlOverview: `
@@ -649,5 +670,5 @@ export const c9Math3: ChapterContent = {
         </div>
       </div>
 `,
-  }
+  },
 };
