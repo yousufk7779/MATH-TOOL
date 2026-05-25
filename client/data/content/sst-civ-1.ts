@@ -194,19 +194,19 @@ export const sstCiv1: ChapterContent = {
                 <div style="margin-bottom: 25px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">1. What are the different forms of power sharing in modern democracies? Give an example of each of these.</p>
                     <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        The different forms of power sharing are:
-                        <br/>• <b>Horizontal Distribution of Power:</b> Power is shared among different organs of government (Legislature, Executive, and Judiciary) placed at the same level. <i>Example:</i> The Parliament, Cabinet, and Judiciary in India.
-                        <br/>• <b>Vertical Division of Power:</b> Power is shared among governments at different levels (Central, State, and Local). <i>Example:</i> The division of power between the Union, State governments, and Panchayats/Municipalities in India.
-                        <br/>• <b>Power sharing among Social Groups:</b> Power is shared among socially diverse groups (religious or linguistic groups). <i>Example:</i> The 'Community Government' in Belgium, or reserved constituencies in India for SCs/STs.
-                        <br/>• <b>Power sharing among Political Parties and Pressure Groups:</b> Competition among political parties prevents concentration of power in one hand, often leading to coalition governments. <i>Example:</i> Coalition governments in India formed by alliances like NDA or UPA.
+                        The different forms of power sharing in modern democracies are:
+                        <br/>• <b>Horizontal Power Sharing:</b> Power is shared among different organs of government (Legislature, Executive, and Judiciary). <i>Example:</i> Parliament, Cabinet, and Courts in India.
+                        <br/>• <b>Vertical Power Sharing:</b> Power is divided among governments at different levels (Union, State, and Local). <i>Example:</i> Central, State, and Panchayat levels in India.
+                        <br/>• <b>Social Group Power Sharing:</b> Power shared among diverse social, religious, or linguistic groups. <i>Example:</i> Community government in Belgium or Reserved Constituencies in India.
+                        <br/>• <b>Political Party & Coalition Power Sharing:</b> Competition and alliances among parties ensure shared power. <i>Example:</i> Coalition governments in India (e.g., NDA/UPA).
                     </p>
                 </div>
                 
                 <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">2. State one prudential reason and one moral reason for power sharing with an example from the Indian context.</p>
                     <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        • <b>Prudential Reason:</b> It helps reduce the possibility of conflict between social groups, ensuring political stability. <i>Example in India:</i> Reservation of seats in Parliament and State Assemblies for weaker sections (SCs and STs).
-                        <br/>• <b>Moral Reason:</b> It is the very spirit of democracy, asserting that citizens have a right to participate in decision-making. <i>Example in India:</i> The Panchayati Raj system, which decentralizes power to local village levels.
+                        • <b>Prudential Reason:</b> Reduces social conflict and ensures political stability. <i>Example:</i> Reserving seats in Indian Parliament/Assemblies for SCs/STs.
+                        <br/>• <b>Moral Reason:</b> Upholds the spirit of democracy by giving citizens a voice in decision-making. <i>Example:</i> Panchayati Raj (local self-government) in India.
                     </p>
                 </div>
 
@@ -218,14 +218,14 @@ export const sstCiv1: ChapterContent = {
                         <br/><b>Ouseph:</b> Every society needs some form of power sharing even if it is small or does not have social divisions.
                     </p>
                     <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Answer:</b> We agree with <b>Ouseph's</b> conclusion. Every society, regardless of its size or diversity, needs power sharing because it forms the core of democracy. It ensures representation for all sections, prevents concentration of authority, and builds mutual trust, which is essential to avoid conflict and maintain stability.
+                        <b>Answer:</b> We agree with <b>Ouseph</b>. Power sharing is essential for every democratic society, big or small, regardless of social divisions. It forms the very basis of democracy by giving all citizens representation and a stake in governance, which ensures long-term peace and stability.
                     </p>
                 </div>
 
                 <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">4. The Mayor of Merchtem, a town near Brussels in Belgium, has defended a ban on speaking French in the town’s schools. He said that the ban would help all non-Dutch speakers integrate in this Flemish town. Do you think that this measure is in keeping with the spirit of Belgium’s power sharing arrangements? Give your reasons in about 50 words.</p>
                     <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 5px;">
-                        <b>Answer:</b> No, this measure is not in keeping with the spirit of Belgium’s power-sharing arrangement. The Belgian model is built on mutual respect, accommodation, and equal rights for both linguistic groups. Forcing a ban on French violates this spirit, promotes exclusion, and could cause resentment and communal tension rather than helping integration.
+                        <b>Answer:</b> No, this ban is not in keeping with the spirit of Belgium's power-sharing arrangement. The Belgian system relies on linguistic accommodation and mutual respect. Banning French violates equal representation, promotes exclusion, and could foster conflict rather than integration.
                     </p>
                 </div>
 
@@ -235,7 +235,7 @@ export const sstCiv1: ChapterContent = {
                         "We need to give more power to the panchayats to realise the dream of Mahatma Gandhi and the hopes of the makers of our Constitution. Panchayati Raj establishes true democracy. It restores power to the only place where power belongs in a democracy – in the hands of the people. Giving power to Panchayats is also a way to reduce corruption and increase administrative efficiency. When people participate in the planning and implementation of developmental schemes, they would naturally exercise greater control over these schemes. This would eliminate the corrupt middlemen. Thus, Panchayati Raj will strengthen the foundations of our democracy."
                     </p>
                     <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px; margin-top: 10px;">
-                        <b>Answer:</b> A key prudential reason offered in this passage is that giving power to Panchayats is <b>"a way to reduce corruption and increase administrative efficiency."</b> By giving local citizens direct control over planning, it eliminates corrupt middlemen, thereby reducing losses and optimizing resource usage.
+                        <b>Answer:</b> The key prudential reason is: <b>"Giving power to Panchayats is also a way to reduce corruption and increase administrative efficiency."</b> This choice reduces the role of middlemen and optimizes resource management through local participation.
                     </p>
                 </div>
 
@@ -276,29 +276,29 @@ export const sstCiv1: ChapterContent = {
 
                 <div style="margin-bottom: 25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
                     <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 17px;">8. Match List I (forms of power sharing) with List II (forms of government) and select the correct answer using the codes given below in the lists:</p>
-                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: #E0E0E0; font-size: 14px;">
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 10px; color: #E0E0E0; font-size: 14px; border: 1px solid rgba(255,255,255,0.15);">
                         <thead>
-                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
-                                <th style="text-align: left; padding: 6px 10px; width: 50%;">List I</th>
-                                <th style="text-align: left; padding: 6px 10px; width: 50%;">List II</th>
+                            <tr style="border-bottom: 1px solid rgba(255,255,255,0.2); background-color: rgba(255,255,255,0.05);">
+                                <th style="text-align: left; padding: 8px 10px; width: 50%; border: 1px solid rgba(255,255,255,0.15);">List I</th>
+                                <th style="text-align: left; padding: 8px 10px; width: 50%; border: 1px solid rgba(255,255,255,0.15);">List II</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td style="padding: 6px 10px;">1. Power shared among different organs of government</td>
-                                <td style="padding: 6px 10px;">B. Separation of powers</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">1. Power shared among different organs of government</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">B. Separation of powers</td>
                             </tr>
                             <tr>
-                                <td style="padding: 6px 10px;">2. Power shared among governments at different levels</td>
-                                <td style="padding: 6px 10px;">D. Federal government</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">2. Power shared among governments at different levels</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">D. Federal government</td>
                             </tr>
                             <tr>
-                                <td style="padding: 6px 10px;">3. Power shared by different social groups</td>
-                                <td style="padding: 6px 10px;">A. Community government</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">3. Power shared by different social groups</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">A. Community government</td>
                             </tr>
                             <tr>
-                                <td style="padding: 6px 10px;">4. Power shared by two or more political parties</td>
-                                <td style="padding: 6px 10px;">C. Coalition government</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">4. Power shared by two or more political parties</td>
+                                <td style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.1);">C. Coalition government</td>
                             </tr>
                         </tbody>
                     </table>
