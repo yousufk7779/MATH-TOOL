@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "c10-sst-1",
+    "question": "Who was called the 'most dangerous enemy of our social order' by Metternich?",
+    "options": [
+      "(A) Giuseppe Mazzini",
+      "(B) Count Cavour",
+      "(C) Otto von Bismarck",
+      "(D) Napoleon"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-2",
+    "question": "Which treaty recognized Greece as an independent nation in 1832?",
+    "options": [
+      "(A) Treaty of Vienna",
+      "(B) Treaty of Versailles",
+      "(C) Treaty of Constantinople",
+      "(D) Treaty of Paris"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-3",
+    "question": "Who was the Chief Minister of Prussia who led German unification?",
+    "options": [
+      "(A) Giuseppe Garibaldi",
+      "(B) Otto von Bismarck",
+      "(C) Victor Emmanuel II",
+      "(D) Count Cavour"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-4",
+    "question": "The Civil Code of 1804 in France is commonly known as the:",
+    "options": [
+      "(A) French Code",
+      "(B) Napoleonic Code",
+      "(C) Bismarck Code",
+      "(D) National Code"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-5",
+    "question": "Who was proclaimed the Emperor of Germany in January 1871?",
+    "options": [
+      "(A) William I",
+      "(B) William II",
+      "(C) Friedrich Wilhelm IV",
+      "(D) Napoleon Bonaparte"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-6",
+    "question": "What does the female allegory 'Germania' wear on her head as a symbol of heroism?",
+    "options": [
+      "(A) Crown of thorns",
+      "(B) Crown of oak leaves",
+      "(C) Golden crown",
+      "(D) Red cap"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-7",
+    "question": "In which year did the French Revolution take place?",
+    "options": [
+      "(A) 1789",
+      "(B) 1804",
+      "(C) 1815",
+      "(D) 1848"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-8",
+    "question": "Who formed the secret society called 'Young Italy'?",
+    "options": [
+      "(A) Count Cavour",
+      "(B) Giuseppe Mazzini",
+      "(C) Giuseppe Garibaldi",
+      "(D) Otto von Bismarck"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-9",
+    "question": "A direct vote by which all the people of a region are asked to accept or reject a proposal is called:",
+    "options": [
+      "(A) Plebiscite",
+      "(B) Suffrage",
+      "(C) Veto",
+      "(D) Election"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-10",
+    "question": "Who was proclaimed King of united Italy in 1861?",
+    "options": [
+      "(A) Victor Emmanuel II",
+      "(B) Giuseppe Garibaldi",
+      "(C) Mazzini",
+      "(D) Cavour"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-1",
+    "chapterTitle": "The Rise of Nationalism in Europe"
+  },
+  {
+    "id": "c10-sst-11",
+    "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+    "options": [
+      "(A) 1911",
+      "(B) 1915",
+      "(C) 1917",
+      "(D) 1919"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-12",
+    "question": "Who was responsible for the Jallianwala Bagh massacre?",
+    "options": [
+      "(A) Lord Dalhousie",
+      "(B) Lord Mountbatten",
+      "(C) General Dyer",
+      "(D) Lord Irwin"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-13",
+    "question": "Why was the Non-Cooperation Movement called off by Gandhiji in 1922?",
+    "options": [
+      "(A) The British accepted their demands",
+      "(B) Due to the Chauri Chaura incident of violence",
+      "(C) Arrest of Jawaharlal Nehru",
+      "(D) Lack of public support"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-14",
+    "question": "Which incident marked the beginning of the Civil Disobedience Movement?",
+    "options": [
+      "(A) The passing of the Rowlatt Act",
+      "(B) The arrival of the Simon Commission",
+      "(C) The Dandi March (Salt Satyagraha)",
+      "(D) The Jallianwala Bagh massacre"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-15",
+    "question": "Who wrote 'Vande Mataram'?",
+    "options": [
+      "(A) Rabindranath Tagore",
+      "(B) Bankim Chandra Chattopadhyay",
+      "(C) Mahatma Gandhi",
+      "(D) Abanindranath Tagore"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-16",
+    "question": "Who designed the 'Swaraj flag' in 1921?",
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) Jawaharlal Nehru",
+      "(C) Subhas Chandra Bose",
+      "(D) Rabindranath Tagore"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-17",
+    "question": "At which Congress session was the 'Purna Swaraj' resolution passed?",
+    "options": [
+      "(A) Calcutta",
+      "(B) Lahore",
+      "(C) Madras",
+      "(D) Karachi"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-18",
+    "question": "Who formed the 'Depressed Classes Association' in 1930?",
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) Dr. B.R. Ambedkar",
+      "(C) Jyotirao Phule",
+      "(D) Kanshi Ram"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-19",
+    "question": "Why did Gandhiji travel to Champaran in 1917?",
+    "options": [
+      "(A) To start a mill workers strike",
+      "(B) To protest against high taxes",
+      "(C) To inspire peasants to struggle against the plantation system",
+      "(D) To support the Rowlatt Satyagraha"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-20",
+    "question": "Who led the peasants' movement in Awadh during the Non-Cooperation Movement?",
+    "options": [
+      "(A) Baba Ramchandra",
+      "(B) Mahatma Gandhi",
+      "(C) Alluri Sitarama Raju",
+      "(D) Jawaharlal Nehru"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-2",
+    "chapterTitle": "Nationalism in India"
+  },
+  {
+    "id": "c10-sst-21",
+    "question": "Which disease played a crucial role in the Spanish conquest of America?",
+    "options": [
+      "(A) Malaria",
+      "(B) Cholera",
+      "(C) Smallpox",
+      "(D) Rinderpest"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-22",
+    "question": "The famous 'Silk Routes' historically connected which regions?",
+    "options": [
+      "(A) Asia with Europe and Northern Africa",
+      "(B) South America with Africa",
+      "(C) North America with Europe",
+      "(D) Australia with Asia"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-23",
+    "question": "What was Rinderpest?",
+    "options": [
+      "(A) A human disease",
+      "(B) A devastating cattle disease in Africa",
+      "(C) A new type of crops",
+      "(D) A European weapon"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-24",
+    "question": "Which two institutions were established at the Bretton Woods Conference in 1944?",
+    "options": [
+      "(A) UN and WHO",
+      "(B) IMF and World Bank",
+      "(C) WTO and UNESCO",
+      "(D) League of Nations and NATO"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-25",
+    "question": "An indentured labourer was:",
+    "options": [
+      "(A) A wealthy landlord",
+      "(B) A free merchant",
+      "(C) A bonded labourer under a contract",
+      "(D) A British official"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-26",
+    "question": "Which disease killed 90% of cattle in Africa in the 1890s?",
+    "options": [
+      "(A) Rinderpest",
+      "(B) Plague",
+      "(C) Cholera",
+      "(D) Smallpox"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-27",
+    "question": "What was the name of the system of hired labor under contracts for a specific period?",
+    "options": [
+      "(A) Free labor",
+      "(B) Indentured labor",
+      "(C) Slave labor",
+      "(D) Forced labor"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-28",
+    "question": "In which continent was El Dorado, the fabled city of gold, believed to exist?",
+    "options": [
+      "(A) Europe",
+      "(B) Africa",
+      "(C) North America",
+      "(D) South America"
+    ],
+    "correctAnswer": "D",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-29",
+    "question": "What was the name of the ancient network of trade routes connecting Asia with Europe and Africa?",
+    "options": [
+      "(A) Silk Route",
+      "(B) Cotton Route",
+      "(C) Spice Route",
+      "(D) Gold Route"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-30",
+    "question": "What did the Group of 77 (G-77) countries demand?",
+    "options": [
+      "(A) A New International Economic Order",
+      "(B) More aid from the West",
+      "(C) Control over IMF",
+      "(D) Free trade with Europe"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-3",
+    "chapterTitle": "The Making of a Global World"
+  },
+  {
+    "id": "c10-sst-31",
+    "question": "Who invented the Steam Engine that revolutionized industrial production?",
+    "options": [
+      "(A) James Hargreaves",
+      "(B) Richard Arkwright",
+      "(C) James Watt",
+      "(D) Matthew Boulton"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-32",
+    "question": "Which of the following industries was the most dynamic during the first phase of industrialization in Britain?",
+    "options": [
+      "(A) Iron and Steel",
+      "(B) Cotton",
+      "(C) Coal",
+      "(D) Railways"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-33",
+    "question": "Who were the Gomasthas?",
+    "options": [
+      "(A) Indian merchants",
+      "(B) Weavers' union leaders",
+      "(C) Paid servants of the East India Company",
+      "(D) British factory owners"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-34",
+    "question": "Why did female workers in England attack the Spinning Jenny?",
+    "options": [
+      "(A) It was too difficult to operate",
+      "(B) It made too much noise",
+      "(C) They feared unemployment because it sped up the spinning process",
+      "(D) It ruined the quality of thread"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-35",
+    "question": "Which Indian port lost its importance during the colonial period?",
+    "options": [
+      "(A) Mumbai",
+      "(B) Surat",
+      "(C) Chennai",
+      "(D) Kolkata"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-36",
+    "question": "Who created the first steam engine (improved by James Watt)?",
+    "options": [
+      "(A) Newcomen",
+      "(B) Richard Arkwright",
+      "(C) James Hargreaves",
+      "(D) John Kay"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-37",
+    "question": "Who set up the first Indian Jute Mill in Calcutta in 1917?",
+    "options": [
+      "(A) Seth Hukumchand",
+      "(B) Dwarkanath Tagore",
+      "(C) Jamsetjee Jeejeebhoy",
+      "(D) G.D. Birla"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-38",
+    "question": "Why did women workers in Britain attack the Spinning Jenny?",
+    "options": [
+      "(A) It was too expensive",
+      "(B) It was dangerous to operate",
+      "(C) Fear of unemployment",
+      "(D) They preferred hand weaving"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-39",
+    "question": "Who were the gomasthas?",
+    "options": [
+      "(A) Paid servants appointed by East India Company to supervise weavers",
+      "(B) Village chiefs",
+      "(C) Cotton merchants",
+      "(D) British military officers"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-40",
+    "question": "Which city was known as the 'Finishing Centre' for woollen cloth in England?",
+    "options": [
+      "(A) Manchester",
+      "(B) London",
+      "(C) Liverpool",
+      "(D) Leeds"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-4",
+    "chapterTitle": "The Age of Industrialisation"
+  },
+  {
+    "id": "c10-sst-41",
+    "question": "Which country developed the first printing technology?",
+    "options": [
+      "(A) Japan",
+      "(B) India",
+      "(C) China",
+      "(D) Germany"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-42",
+    "question": "Who developed the first known printing press in the 1430s?",
+    "options": [
+      "(A) Marco Polo",
+      "(B) Johann Gutenberg",
+      "(C) Martin Luther",
+      "(D) Richard M. Hoe"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-43",
+    "question": "What was the very first book printed by Gutenberg?",
+    "options": [
+      "(A) Diamond Sutra",
+      "(B) The Bible",
+      "(C) The Ramayana",
+      "(D) Romeo and Juliet"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-44",
+    "question": "Which of the following refers to the art of beautiful and stylized handwriting?",
+    "options": [
+      "(A) Calligraphy",
+      "(B) Typography",
+      "(C) Photography",
+      "(D) Lithography"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-45",
+    "question": "Who wrote 'Amar Jiban', the first full-length Indian autobiography in Bengali?",
+    "options": [
+      "(A) Tarabai Shinde",
+      "(B) Rammohun Roy",
+      "(C) Rashsundari Debi",
+      "(D) Kailashbashini Debi"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-46",
+    "question": "Who wrote 'Gulamgiri' in 1871?",
+    "options": [
+      "(A) Dr. B.R. Ambedkar",
+      "(B) Jyotirao Phule",
+      "(C) E.V. Ramaswamy Naicker",
+      "(D) Mahatma Gandhi"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-47",
+    "question": "What was the name of Gutenberg's first printing press breakthrough?",
+    "options": [
+      "(A) Movable metal type",
+      "(B) Woodblock printing",
+      "(C) Lithography",
+      "(D) Steam-powered press"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-48",
+    "question": "Which country was the major producer of printed material in early times?",
+    "options": [
+      "(A) Japan",
+      "(B) China",
+      "(C) India",
+      "(D) Korea"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-49",
+    "question": "Who started publishing the weekly 'Bengal Gazette' in 1780?",
+    "options": [
+      "(A) James Augustus Hickey",
+      "(B) Raja Ram Mohan Roy",
+      "(C) Gangadhar Bhattacharya",
+      "(D) William Carey"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-50",
+    "question": "What are 'chapbooks'?",
+    "options": [
+      "(A) Heavy textbooks",
+      "(B) Pocket-size books sold by pedlars",
+      "(C) Religious scriptures",
+      "(D) Royal diaries"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-5",
+    "chapterTitle": "Print Culture and the Modern World"
+  },
+  {
+    "id": "c10-sst-51",
+    "question": "Who was the first Sadr-i-Riyasat of Jammu and Kashmir?",
+    "options": [
+      "(A) Maharaja Hari Singh",
+      "(B) Sheikh Mohammad Abdullah",
+      "(C) Dr. Karan Singh",
+      "(D) Mehr Chand Mahajan"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-52",
+    "question": "In which year was the Big Landed Estates Abolition Act passed?",
+    "options": [
+      "(A) 1947",
+      "(B) 1950",
+      "(C) 1953",
+      "(D) 1965"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-53",
+    "question": "Who was the Prime Minister of Jammu and Kashmir during the historic 'Land to the Tiller' reforms?",
+    "options": [
+      "(A) Mehr Chand Mahajan",
+      "(B) Sheikh Mohammad Abdullah",
+      "(C) Bakshi Ghulam Mohammad",
+      "(D) G.M. Sadiq"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-54",
+    "question": "The first Kashmiri opera, 'Bombur Yemberzal', was written by:",
+    "options": [
+      "(A) Dina Nath Nadim",
+      "(B) Mahjoor",
+      "(C) Rasool Mir",
+      "(D) Lal Ded"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-55",
+    "question": "Which Prime Minister of J&K resigned under the Kamraj Plan in 1963?",
+    "options": [
+      "(A) Sheikh Mohammad Abdullah",
+      "(B) Bakshi Ghulam Mohammad",
+      "(C) G.M. Sadiq",
+      "(D) Mir Qasim"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-56",
+    "question": "In which year was the J&K Reorganisation Act passed by the Indian Parliament?",
+    "options": [
+      "(A) 1947",
+      "(B) 1975",
+      "(C) 2019",
+      "(D) 2024"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-57",
+    "question": "What was the designation of the Head of State in J&K before 1965?",
+    "options": [
+      "(A) Governor",
+      "(B) Maharaja",
+      "(C) Sadr-i-Riyasat",
+      "(D) Chief Minister"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-58",
+    "question": "Who was the editor of the weekly newspaper 'Ranbir' and is known as the Father of Journalism in J&K?",
+    "options": [
+      "(A) Lala Mulk Raj Saraf",
+      "(B) Sanaullah Bhat",
+      "(C) G.M. Sadiq",
+      "(D) Mehr Chand Mahajan"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-59",
+    "question": "The Jawahar Tunnel, connecting Jammu and Srinagar, was constructed during the administration of:",
+    "options": [
+      "(A) Sheikh Mohammad Abdullah",
+      "(B) Bakshi Ghulam Mohammad",
+      "(C) G.M. Sadiq",
+      "(D) Dr. Karan Singh"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-60",
+    "question": "Which literary journal was published by the Cultural Congress?",
+    "options": [
+      "(A) Nami Chetna",
+      "(B) Jaago Duggar",
+      "(C) Kong Posh",
+      "(D) Ranbir"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-6",
+    "chapterTitle": "Post Independence Era: Jammu and Kashmir on the Path of Modernisation"
+  },
+  {
+    "id": "c10-sst-61",
+    "question": "Which one of the following type of resource is iron ore?",
+    "options": [
+      "(A) Renewable",
+      "(B) Biotic",
+      "(C) Flow",
+      "(D) Non-renewable"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-62",
+    "question": "Under which of the following type of resource tidal energy cannot be put?",
+    "options": [
+      "(A) Replenishable",
+      "(B) Human-made",
+      "(C) Abiotic",
+      "(D) Non-recyclable"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-63",
+    "question": "Which one of the following is the main cause of land degradation in Punjab?",
+    "options": [
+      "(A) Intensive cultivation",
+      "(B) Deforestation",
+      "(C) Over irrigation",
+      "(D) Overgrazing"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-64",
+    "question": "In which one of the following states is terrace cultivation practised?",
+    "options": [
+      "(A) Punjab",
+      "(B) Plains of Uttar Pradesh",
+      "(C) Haryana",
+      "(D) Uttarakhand"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-65",
+    "question": "In which of the following states black soil is predominantly found?",
+    "options": [
+      "(A) Haryana",
+      "(B) Maharashtra",
+      "(C) Rajasthan",
+      "(D) Jharkhand"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-66",
+    "question": "Which soil is also known as Regur soil?",
+    "options": [
+      "(A) Alluvial soil",
+      "(B) Black soil",
+      "(C) Red soil",
+      "(D) Laterite soil"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-67",
+    "question": "Agenda 21, signed at the 1992 Earth Summit, aims to achieve:",
+    "options": [
+      "(A) Global free trade",
+      "(B) Global sustainable development",
+      "(C) Eradication of diseases",
+      "(D) Arms reduction"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-68",
+    "question": "What is the total geographical area of India?",
+    "options": [
+      "(A) 3.28 million sq km",
+      "(B) 32.8 million sq km",
+      "(C) 2.4 million sq km",
+      "(D) 4.28 million sq km"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-69",
+    "question": "In which of the following states is mining the main cause of land degradation?",
+    "options": [
+      "(A) Punjab",
+      "(B) Haryana",
+      "(C) Jharkhand",
+      "(D) Kerala"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-70",
+    "question": "Resources which are surveyed and their quantity and quality determined for utilization are:",
+    "options": [
+      "(A) Potential resources",
+      "(B) Stock",
+      "(C) Developed resources",
+      "(D) Reserves"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-1",
+    "chapterTitle": "Resources and Development"
+  },
+  {
+    "id": "c10-sst-71",
+    "question": "Which of these statements is not a valid reason for the depletion of flora and fauna?",
+    "options": [
+      "(A) Agricultural expansion",
+      "(B) Large scale developmental projects",
+      "(C) Grazing and fuel wood collection",
+      "(D) Rapid industrialisation and urbanisation"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-72",
+    "question": "Which of the following conservation strategies do not directly involve community participation?",
+    "options": [
+      "(A) Joint forest management",
+      "(B) Beej Bachao Andolan",
+      "(C) Chipko Movement",
+      "(D) Demarcation of Wildlife sanctuaries"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-73",
+    "question": "The Asiatic Cheetah was declared extinct in India in which year?",
+    "options": [
+      "(A) 1952",
+      "(B) 1972",
+      "(C) 1983",
+      "(D) 1992"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-74",
+    "question": "Which state has the largest area under permanent forests?",
+    "options": [
+      "(A) Odisha",
+      "(B) Madhya Pradesh",
+      "(C) West Bengal",
+      "(D) Kerala"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-75",
+    "question": "The famous Chipko Movement was launched in which region?",
+    "options": [
+      "(A) Himalayas",
+      "(B) Deccan Plateau",
+      "(C) Western Ghats",
+      "(D) Thar Desert"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-76",
+    "question": "In which state was the Joint Forest Management (JFM) resolution first passed?",
+    "options": [
+      "(A) Odisha",
+      "(B) Bihar",
+      "(C) Gujarat",
+      "(D) Assam"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-77",
+    "question": "Which Tiger Reserve in West Bengal is seriously threatened by dolomite mining?",
+    "options": [
+      "(A) Corbett National Park",
+      "(B) Buxa Tiger Reserve",
+      "(C) Sundarbans National Park",
+      "(D) Bandhavgarh National Park"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-78",
+    "question": "When was the Indian Wildlife (Protection) Act implemented?",
+    "options": [
+      "(A) 1952",
+      "(B) 1972",
+      "(C) 1983",
+      "(D) 1992"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-79",
+    "question": "Forests belonging to both government and private individuals/communities are called:",
+    "options": [
+      "(A) Reserved Forests",
+      "(B) Protected Forests",
+      "(C) Unclassed Forests",
+      "(D) Sacred Groves"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-80",
+    "question": "The Chota Nagpur region's Mundas and Santhals worship which of the following trees?",
+    "options": [
+      "(A) Mahua and Kadamba",
+      "(B) Mango and Peepal",
+      "(C) Banyan and Neem",
+      "(D) Tamarind and Sal"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-2",
+    "chapterTitle": "Forest and Wildlife Resources"
+  },
+  {
+    "id": "c10-sst-81",
+    "question": "Based on rainfall and population, which of the following regions suffers from water scarcity?",
+    "options": [
+      "(A) Region with high annual rainfall and low population",
+      "(B) Region with high annual rainfall and large population",
+      "(C) Region with low annual rainfall and low population",
+      "(D) None of these"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-82",
+    "question": "Which of the following is NOT an argument in favour of multi-purpose river projects?",
+    "options": [
+      "(A) They bring water to water-scarce areas",
+      "(B) They regulate water flow to control floods",
+      "(C) They lead to large-scale displacement and loss of livelihood",
+      "(D) They generate electricity for industries and homes"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-83",
+    "question": "Multiplying urban centres with large and dense populations and urban lifestyles has led to:",
+    "options": [
+      "(A) Proper utilization of water resources",
+      "(B) Over-exploitation and depletion of water resources",
+      "(C) Conservation of water resources",
+      "(D) Increase in rainwater harvesting"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-84",
+    "question": "Who proudly proclaimed the dams as the 'Temples of modern India'?",
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) Sardar Vallabhbhai Patel",
+      "(C) Jawaharlal Nehru",
+      "(D) Dr. B.R. Ambedkar"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-85",
+    "question": "The Narmada Bachao Andolan was a movement directed against which dam?",
+    "options": [
+      "(A) Bhakra Nangal Dam",
+      "(B) Sardar Sarovar Dam",
+      "(C) Hirakud Dam",
+      "(D) Tehri Dam"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-86",
+    "question": "In the semi-arid regions of Rajasthan, agricultural fields were converted into rain-fed storage structures known as:",
+    "options": [
+      "(A) Kuls",
+      "(B) Guls",
+      "(C) Baolis",
+      "(D) Khadins and Johads"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-87",
+    "question": "Which is the first state in India to make rooftop rainwater harvesting compulsory?",
+    "options": [
+      "(A) Kerala",
+      "(B) Karnataka",
+      "(C) Tamil Nadu",
+      "(D) Rajasthan"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-88",
+    "question": "Which state is famous for 'Guls' or 'Kuls' for irrigation?",
+    "options": [
+      "(A) Western Himalayas",
+      "(B) Deccan Plateau",
+      "(C) Thar Desert",
+      "(D) Ganga Plains"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-89",
+    "question": "In which basin is the Bhakra Nangal project built?",
+    "options": [
+      "(A) Satluj-Beas basin",
+      "(B) Ganga-Brahmaputra basin",
+      "(C) Mahanadi basin",
+      "(D) Narmada basin"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-90",
+    "question": "Hirakud dam is constructed on which river?",
+    "options": [
+      "(A) Krishna",
+      "(B) Mahanadi",
+      "(C) Cauvery",
+      "(D) Godavari"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-3",
+    "chapterTitle": "Water Resources"
+  },
+  {
+    "id": "c10-sst-91",
+    "question": "Which one of the following describes a system of agriculture where a single crop is grown on a large area?",
+    "options": [
+      "(A) Shifting Agriculture",
+      "(B) Plantation Agriculture",
+      "(C) Horticulture",
+      "(D) Intensive Agriculture"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-92",
+    "question": "Which one of the following is a rabi crop?",
+    "options": [
+      "(A) Rice",
+      "(B) Gram",
+      "(C) Millets",
+      "(D) Cotton"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-93",
+    "question": "Which one of the following is a leguminous crop?",
+    "options": [
+      "(A) Pulses",
+      "(B) Jawar",
+      "(C) Millets",
+      "(D) Sesamum"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-94",
+    "question": "The Bhoodan-Gramdan movement was initiated by:",
+    "options": [
+      "(A) Mahatma Gandhi",
+      "(B) Jawaharlal Nehru",
+      "(C) Vinoba Bhave",
+      "(D) Sardar Patel"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-95",
+    "question": "Which crop is known as the 'Golden Fibre'?",
+    "options": [
+      "(A) Cotton",
+      "(B) Silk",
+      "(C) Jute",
+      "(D) Hemp"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-96",
+    "question": "Which type of agriculture is practiced on small patches of land using primitive tools?",
+    "options": [
+      "(A) Primitive subsistence farming",
+      "(B) Commercial farming",
+      "(C) Intensive subsistence farming",
+      "(D) Plantation farming"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-97",
+    "question": "Which country is the largest producer of pulses in the world?",
+    "options": [
+      "(A) India",
+      "(B) China",
+      "(C) USA",
+      "(D) Brazil"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-98",
+    "question": "What is the rearing of silkworms for the production of silk called?",
+    "options": [
+      "(A) Horticulture",
+      "(B) Pisciculture",
+      "(C) Sericulture",
+      "(D) Floriculture"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-99",
+    "question": "What is the primitive subsistence agriculture practiced in the north-eastern states of India called?",
+    "options": [
+      "(A) Milpa",
+      "(B) Ladang",
+      "(C) Jhumming",
+      "(D) Roca"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-100",
+    "question": "Which crop is known as the 'Queen of Beverages'?",
+    "options": [
+      "(A) Tea",
+      "(B) Coffee",
+      "(C) Cocoa",
+      "(D) Milk"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-4",
+    "chapterTitle": "Agriculture"
+  },
+  {
+    "id": "c10-sst-101",
+    "question": "Which one of the following minerals is formed by decomposition of rocks, leaving a residual mass of weathered material?",
+    "options": [
+      "(A) coal",
+      "(B) bauxite",
+      "(C) gold",
+      "(D) zinc"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-102",
+    "question": "Koderma, in Jharkhand is the leading producer of which one of the following minerals?",
+    "options": [
+      "(A) bauxite",
+      "(B) mica",
+      "(C) iron ore",
+      "(D) copper"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-103",
+    "question": "Minerals are deposited and accumulated in the stratas of which of the following rocks?",
+    "options": [
+      "(A) sedimentary rocks",
+      "(B) metamorphic rocks",
+      "(C) igneous rocks",
+      "(D) none of the above"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-104",
+    "question": "Which one of the following minerals is contained in the Monazite sand?",
+    "options": [
+      "(A) oil",
+      "(B) uranium",
+      "(C) thorium",
+      "(D) coal"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-105",
+    "question": "Which of the following minerals is indispensable for electrical and electronic industries?",
+    "options": [
+      "(A) Iron ore",
+      "(B) Manganese",
+      "(C) Bauxite",
+      "(D) Mica"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-106",
+    "question": "Which state is the largest producer of Bauxite in India?",
+    "options": [
+      "(A) Odisha",
+      "(B) Gujarat",
+      "(C) Jharkhand",
+      "(D) Chhattisgarh"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-107",
+    "question": "The highest quality hard coal is called:",
+    "options": [
+      "(A) Peat",
+      "(B) Lignite",
+      "(C) Bituminous",
+      "(D) Anthracite"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-108",
+    "question": "Which of the following is a non-conventional source of energy?",
+    "options": [
+      "(A) Coal",
+      "(B) Petroleum",
+      "(C) Natural Gas",
+      "(D) Solar Energy"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-109",
+    "question": "Khetri mines in Rajasthan are famous for the production of:",
+    "options": [
+      "(A) Copper",
+      "(B) Gold",
+      "(C) Iron ore",
+      "(D) Mica"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-110",
+    "question": "Which is the oldest oil-producing state in India?",
+    "options": [
+      "(A) Gujarat",
+      "(B) Maharashtra",
+      "(C) Assam",
+      "(D) Tamil Nadu"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-5",
+    "chapterTitle": "Minerals and Energy Resources"
+  },
+  {
+    "id": "c10-sst-111",
+    "question": "Which one of the following industries uses limestone as a raw material.",
+    "options": [
+      "(A) Aluminium",
+      "(B) Cement",
+      "(C) Plastic",
+      "(D) Automobile"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-112",
+    "question": "Which one of the following agencies markets steel for the public sector plants?",
+    "options": [
+      "(A) HAIL",
+      "(B) SAIL",
+      "(C) TATA Steel",
+      "(D) MNCC"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-113",
+    "question": "Which one of the following industries uses bauxite as a raw material?",
+    "options": [
+      "(A) Aluminium Smelting",
+      "(B) Cement",
+      "(C) Paper",
+      "(D) Steel"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-114",
+    "question": "Which one of the following industries manufactures telephones, computer, etc.",
+    "options": [
+      "(A) Steel",
+      "(B) Electronic",
+      "(C) Aluminium Smelting",
+      "(D) Information Technology"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-115",
+    "question": "Which of the following is a completely agro-based industry?",
+    "options": [
+      "(A) Iron and Steel Industries",
+      "(B) Petrochemical Industries",
+      "(C) Cotton Textile Industries",
+      "(D) Cement Industries"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-116",
+    "question": "Why is the Jute industry mainly concentrated in West Bengal?",
+    "options": [
+      "(A) Abundant coal reserves",
+      "(B) Proximity to iron ore",
+      "(C) Banks of the Hugli river provide water for processing",
+      "(D) Cold climate"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-117",
+    "question": "Which city is known as the electronic capital of India?",
+    "options": [
+      "(A) Mumbai",
+      "(B) Bengaluru",
+      "(C) Hyderabad",
+      "(D) Noida"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-118",
+    "question": "Which famous plateau region has the maximum concentration of iron and steel industries?",
+    "options": [
+      "(A) Deccan Plateau",
+      "(B) Malwa Plateau",
+      "(C) Chotanagpur Plateau",
+      "(D) Meghalaya Plateau"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-119",
+    "question": "Which city is known as the 'Manchester of India'?",
+    "options": [
+      "(A) Mumbai",
+      "(B) Ahmedabad",
+      "(C) Coimbatore",
+      "(D) Kanpur"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-120",
+    "question": "What type of industry is owned and operated by a group of raw material producers?",
+    "options": [
+      "(A) Public sector",
+      "(B) Joint sector",
+      "(C) Cooperative sector",
+      "(D) Private sector"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-6",
+    "chapterTitle": "Manufacturing Industries"
+  },
+  {
+    "id": "c10-sst-121",
+    "question": "Which two of the following extreme locations are connected by the east-west corridor?",
+    "options": [
+      "(A) Mumbai and Nagpur",
+      "(B) Silchar and Porbandar",
+      "(C) Mumbai and Kolkata",
+      "(D) Nagpur and Siligudi"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-122",
+    "question": "Which mode of transportation reduces trans-shipment losses and delays?",
+    "options": [
+      "(A) Railways",
+      "(B) Roadways",
+      "(C) Pipeline",
+      "(D) Waterways"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-123",
+    "question": "Which one of the following states is not connected with the H.V.J. pipeline?",
+    "options": [
+      "(A) Madhya Pradesh",
+      "(B) Maharashtra",
+      "(C) Gujarat",
+      "(D) Uttar Pradesh"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-124",
+    "question": "Which one of the following ports is the deepest land-locked and well-protected port along the east coast?",
+    "options": [
+      "(A) Chennai",
+      "(B) Paradwip",
+      "(C) Tuticorin",
+      "(D) Vishakhapatnam"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-125",
+    "question": "Which one of the following is the most important modes of transportation in India?",
+    "options": [
+      "(A) Pipeline",
+      "(B) Railways",
+      "(C) Roadways",
+      "(D) Airways"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-126",
+    "question": "Which one of the following terms is used to describe trade between two or more countries?",
+    "options": [
+      "(A) Internal trade",
+      "(B) International trade",
+      "(C) External trade",
+      "(D) Local trade"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-127",
+    "question": "Which cities does the Golden Quadrilateral Super Highway connect?",
+    "options": [
+      "(A) Delhi, Mumbai, Chennai, Kolkata",
+      "(B) Delhi, Ahmedabad, Pune, Bengaluru",
+      "(C) Srinagar, Kanyakumari, Porbandar, Silchar",
+      "(D) Mumbai, Pune, Hyderabad, Chennai"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-128",
+    "question": "Which of the following is the cheapest mode of transport in India?",
+    "options": [
+      "(A) Roadways",
+      "(B) Railways",
+      "(C) Waterways",
+      "(D) Airways"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-129",
+    "question": "Which organization constructs and meticulously maintains the National Highways in India?",
+    "options": [
+      "(A) NHAI (National Highways Authority of India)",
+      "(B) CPWD (Central Public Works Department)",
+      "(C) SPWD (State Public Works Department)",
+      "(D) Border Roads Organisation"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-130",
+    "question": "Which very fast mode of transport helps easily cover difficult terrains like high mountains or dense forests?",
+    "options": [
+      "(A) Pipelines",
+      "(B) Railways",
+      "(C) Airways",
+      "(D) Inland Waterways"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-7",
+    "chapterTitle": "Lifelines of National Economy"
+  },
+  {
+    "id": "c10-sst-131",
+    "question": "Which of the following communities constitutes the majority in Sri Lanka?",
+    "options": [
+      "(A) Sri Lankan Tamils",
+      "(B) Indian Tamils",
+      "(C) Sinhalese",
+      "(D) Muslims"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-132",
+    "question": "Which language is spoken by the majority of people in Belgium?",
+    "options": [
+      "(A) French",
+      "(B) Dutch",
+      "(C) German",
+      "(D) English"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-133",
+    "question": "The power-sharing arrangement among the Legislature, Executive, and Judiciary is known as:",
+    "options": [
+      "(A) Vertical distribution",
+      "(B) Federal division",
+      "(C) Horizontal distribution",
+      "(D) Community government"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-134",
+    "question": "A belief that the majority community should rule the country by disregarding the minority is called:",
+    "options": [
+      "(A) Democracy",
+      "(B) Majoritarianism",
+      "(C) Federalism",
+      "(D) Communism"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-135",
+    "question": "In Belgium, a special 'Community Government' is elected by people belonging to one:",
+    "options": [
+      "(A) Language community",
+      "(B) Religious community",
+      "(C) Income group",
+      "(D) Political party"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-136",
+    "question": "What percentage of the population speaks Dutch in Belgium?",
+    "options": [
+      "(A) 40%",
+      "(B) 59%",
+      "(C) 80%",
+      "(D) 1%"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-137",
+    "question": "Which community in Belgium was relatively rich and powerful?",
+    "options": [
+      "(A) Dutch-speaking",
+      "(B) French-speaking",
+      "(C) German-speaking",
+      "(D) English-speaking"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-138",
+    "question": "What system of power sharing is also known as checks and balances?",
+    "options": [
+      "(A) Horizontal power sharing",
+      "(B) Vertical power sharing",
+      "(C) Community government",
+      "(D) Coalition government"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-139",
+    "question": "In Sri Lanka, the civil war was between:",
+    "options": [
+      "(A) Buddhists and Hindus",
+      "(B) Sinhalas and Tamils",
+      "(C) Christians and Muslims",
+      "(D) Dutch and French"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-140",
+    "question": "Power sharing is desirable because it helps to:",
+    "options": [
+      "(A) Increase conflicts",
+      "(B) Reduce the possibility of conflict between social groups",
+      "(C) Impose dominance of majority",
+      "(D) Make decisions faster"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-1",
+    "chapterTitle": "Power Sharing"
+  },
+  {
+    "id": "c10-sst-141",
+    "question": "Which of the following is an example of a 'Coming Together' federation?",
+    "options": [
+      "(A) India",
+      "(B) Spain",
+      "(C) Belgium",
+      "(D) USA"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-142",
+    "question": "On which of the following subjects can BOTH the Union and State governments make laws?",
+    "options": [
+      "(A) Defence",
+      "(B) Police",
+      "(C) Education",
+      "(D) Foreign Affairs"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-143",
+    "question": "What is meant by decentralisation?",
+    "options": [
+      "(A) Power given only to the President",
+      "(B) Power taken from Center & State and given to local governments",
+      "(C) Power given to the military",
+      "(D) Power taken from states to form a dictatorship"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-144",
+    "question": "In India's federal system, the State governments have the absolute power to legislate on all those subjects neatly included in the:",
+    "options": [
+      "(A) Union List",
+      "(B) State List",
+      "(C) Concurrent List",
+      "(D) Residuary Subjects"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-145",
+    "question": "When power is legally divided between the Central and State governments, it is called a:",
+    "options": [
+      "(A) Unitary system",
+      "(B) Federal system",
+      "(C) Dictatorship",
+      "(D) Monarchy"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-146",
+    "question": "Which of the following is an example of 'coming together' federation?",
+    "options": [
+      "(A) India",
+      "(B) Spain",
+      "(C) Belgium",
+      "(D) USA"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-147",
+    "question": "Which level of government has power to legislate on 'Concurrent List' subjects?",
+    "options": [
+      "(A) Central Government only",
+      "(B) State Government only",
+      "(C) Both Central and State",
+      "(D) Local Government only"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-148",
+    "question": "What is the system of government in which power is divided between central authority and constituent units?",
+    "options": [
+      "(A) Unitary",
+      "(B) Federalism",
+      "(C) Monarchy",
+      "(D) Dictatorship"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-149",
+    "question": "Which state of India has its own special status under Article 371?",
+    "options": [
+      "(A) Uttar Pradesh",
+      "(B) Nagaland",
+      "(C) Madhya Pradesh",
+      "(D) Rajasthan"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-150",
+    "question": "In municipal corporations, the political head is called:",
+    "options": [
+      "(A) Mayor",
+      "(B) Commissioner",
+      "(C) Sarpanch",
+      "(D) President"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-2",
+    "chapterTitle": "Federalism"
+  },
+  {
+    "id": "c10-sst-151",
+    "question": "Which of the following refers to a person who firmly believes in equal rights for women and men?",
+    "options": [
+      "(A) Communalist",
+      "(B) Feminist",
+      "(C) Secularist",
+      "(D) Patriarch"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-152",
+    "question": "A state that absolutely does NOT establish any one religion as its official religion is called a:",
+    "options": [
+      "(A) Communal state",
+      "(B) Secular state",
+      "(C) Dictatorial state",
+      "(D) Religious state"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-153",
+    "question": "In which of the following institutions are seats legally reserved for women in India?",
+    "options": [
+      "(A) Lok Sabha",
+      "(B) Rajya Sabha",
+      "(C) State Assemblies",
+      "(D) Panchayati Raj bodies"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-154",
+    "question": "The social system that values men more profoundly and gives them heavy power over women is known as:",
+    "options": [
+      "(A) Feminism",
+      "(B) Matriarchy",
+      "(C) Patriarchy",
+      "(D) Democracy"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-155",
+    "question": "What is a system that values men more and gives them power over women called?",
+    "options": [
+      "(A) Patriarchy",
+      "(B) Matriarchy",
+      "(C) Hierarchy",
+      "(D) Monarchy"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-156",
+    "question": "The representation of women in Indian Lok Sabha has historically been:",
+    "options": [
+      "(A) More than 50%",
+      "(B) Around 33%",
+      "(C) Less than 15%",
+      "(D) Exactly 10%"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-157",
+    "question": "A person who does not discriminate against others on the basis of religious beliefs is a:",
+    "options": [
+      "(A) Communalist",
+      "(B) Secularist",
+      "(C) Casteist",
+      "(D) Feminist"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-158",
+    "question": "What is the name of the system where occupational groups are arranged in a hierarchical order?",
+    "options": [
+      "(A) Class system",
+      "(B) Gender division",
+      "(C) Caste system",
+      "(D) Religious system"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-159",
+    "question": "Who was the great Indian leader who fought against caste inequality?",
+    "options": [
+      "(A) Dr. B.R. Ambedkar",
+      "(B) Lal Bahadur Shastri",
+      "(C) Jawaharlal Nehru",
+      "(D) Sardar Patel"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-3",
+    "chapterTitle": "Gender, Religion and Caste"
+  },
+  {
+    "id": "c10-sst-160",
+    "question": "Which of the following is a component of a political party?",
+    "options": [
+      "(A) The leaders",
+      "(B) The active members",
+      "(C) The followers",
+      "(D) All of the above"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-161",
+    "question": "Which party system does India follow?",
+    "options": [
+      "(A) One-party system",
+      "(B) Two-party system",
+      "(C) Multi-party system",
+      "(D) No-party system"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-162",
+    "question": "Which is the oldest political party in India?",
+    "options": [
+      "(A) Bharatiya Janata Party (BJP)",
+      "(B) Indian National Congress (INC)",
+      "(C) Communist Party of India (CPI)",
+      "(D) Bahujan Samaj Party (BSP)"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-163",
+    "question": "What is a signed statement submitted to an officer where a person makes a sworn statement?",
+    "options": [
+      "(A) Affidavit",
+      "(B) Manifesto",
+      "(C) Declaration",
+      "(D) Charter"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-164",
+    "question": "What is a political party that is present in only one of the federal units called?",
+    "options": [
+      "(A) National Party",
+      "(B) State party",
+      "(C) Coalition Party",
+      "(D) Alliance Party"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-165",
+    "question": "Who is the founder of the Bahujan Samaj Party (BSP)?",
+    "options": [
+      "(A) Kanshi Ram",
+      "(B) Mayawati",
+      "(C) Jyotirao Phule",
+      "(D) B.R. Ambedkar"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-166",
+    "question": "What is the process of changing party allegiance from the party on which a person got elected?",
+    "options": [
+      "(A) Defection",
+      "(B) Nomination",
+      "(C) Campaigning",
+      "(D) Alliance"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-4",
+    "chapterTitle": "Political Parties"
+  },
+  {
+    "id": "c10-sst-167",
+    "question": "Which of the following is an expected outcome of a genuine democracy?",
+    "options": [
+      "(A) Quickest decision-making",
+      "(B) Accountable government",
+      "(C) Complete absence of corruption",
+      "(D) Zero poverty"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-168",
+    "question": "Why are decisions heavily delayed in an absolute democracy?",
+    "options": [
+      "(A) Laziness",
+      "(B) Need to deeply follow precise procedures and widespread consultation",
+      "(C) Lack of information",
+      "(D) International pressure"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-169",
+    "question": "Democracy is based on the idea of:",
+    "options": [
+      "(A) Speedy decisions",
+      "(B) Deliberation and negotiation",
+      "(C) Arbitrary rules",
+      "(D) One-person rule"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-170",
+    "question": "In which area does democracy fail to show positive results?",
+    "options": [
+      "(A) Political equality",
+      "(B) Reducing economic inequalities",
+      "(C) Dignity of citizens",
+      "(D) Accommodating diversity"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-171",
+    "question": "A democratic government is accountable to:",
+    "options": [
+      "(A) The military",
+      "(B) The citizens",
+      "(C) Foreign nations",
+      "(D) The judiciary"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-172",
+    "question": "What is the key element that makes democratic decisions more acceptable to people?",
+    "options": [
+      "(A) Force and power",
+      "(B) Transparency and procedures",
+      "(C) Secrecy",
+      "(D) Arbitrary rules"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-173",
+    "question": "Which type of government has no division of power and absolute control?",
+    "options": [
+      "(A) Federal government",
+      "(B) Democratic government",
+      "(C) Dictatorship",
+      "(D) Coalition government"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-5",
+    "chapterTitle": "Outcomes of Democracy"
+  },
+  {
+    "id": "c10-sst-174",
+    "question": "Which of the following is the most common indicator of economic development?",
+    "options": [
+      "(A) Per capita income",
+      "(B) Total population",
+      "(C) Forest cover",
+      "(D) Number of schools"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-175",
+    "question": "The Human Development Report published by UNDP compares countries based on:",
+    "options": [
+      "(A) Educational levels of people",
+      "(B) Health status",
+      "(C) Per capita income",
+      "(D) All of the above"
+    ],
+    "correctAnswer": "D",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-176",
+    "question": "What is the total income of a country divided by its total population called?",
+    "options": [
+      "(A) National income",
+      "(B) Per capita income",
+      "(C) Gross income",
+      "(D) Personal income"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-177",
+    "question": "Which state has the highest literacy rate in India?",
+    "options": [
+      "(A) Kerala",
+      "(B) Bihar",
+      "(C) Uttar Pradesh",
+      "(D) Rajasthan"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-178",
+    "question": "Who publishes the Human Development Report?",
+    "options": [
+      "(A) World Bank",
+      "(B) IMF",
+      "(C) UNDP",
+      "(D) UNESCO"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-179",
+    "question": "What is the main developmental goal of a landless rural laborer?",
+    "options": [
+      "(A) More days of work and better wages",
+      "(B) Higher support prices for crops",
+      "(C) Settling children abroad",
+      "(D) Getting electricity connection"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-180",
+    "question": "Which sector uses resources without harming the environment for future generations?",
+    "options": [
+      "(A) Rapid industrialization",
+      "(B) Sustainable development",
+      "(C) Mining",
+      "(D) Deforestation"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-1",
+    "chapterTitle": "Development"
+  },
+  {
+    "id": "c10-sst-181",
+    "question": "Which sector involves changing natural products into other forms through manufacturing?",
+    "options": [
+      "(A) Primary Sector",
+      "(B) Secondary Sector",
+      "(C) Tertiary Sector",
+      "(D) Quaternary Sector"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-182",
+    "question": "Underemployment is typically hidden in contrast to someone who does not have a job. Hence it is also called:",
+    "options": [
+      "(A) Seasonal unemployment",
+      "(B) Frictional unemployment",
+      "(C) Disguised unemployment",
+      "(D) Structural unemployment"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-183",
+    "question": "Which of the following acts guarantees 100 days of employment in rural areas?",
+    "options": [
+      "(A) Right to Information Act",
+      "(B) NREGA 2005",
+      "(C) Equal Remuneration Act",
+      "(D) Minimum Wages Act"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-184",
+    "question": "Which sector has grown the most in terms of share of GDP in recent years?",
+    "options": [
+      "(A) Primary sector",
+      "(B) Secondary sector",
+      "(C) Tertiary sector",
+      "(D) Agricultural sector"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-185",
+    "question": "What is the situation where more people are employed than required called?",
+    "options": [
+      "(A) Seasonal unemployment",
+      "(B) Disguised unemployment",
+      "(C) Structural unemployment",
+      "(D) Frictional unemployment"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-186",
+    "question": "Which sector is registered with the government and follows its rules?",
+    "options": [
+      "(A) Unorganized sector",
+      "(B) Organized sector",
+      "(C) Private sector",
+      "(D) Informal sector"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-187",
+    "question": "The public sector is guided by the motive of:",
+    "options": [
+      "(A) Social welfare",
+      "(B) Maximizing profit",
+      "(C) Helping private companies",
+      "(D) Foreign trade"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-188",
+    "question": "What is the sum of production in the primary, secondary, and tertiary sectors called?",
+    "options": [
+      "(A) Gross National Product",
+      "(B) Gross Domestic Product",
+      "(C) Net National Product",
+      "(D) Per Capita Product"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-2",
+    "chapterTitle": "Sectors of the Indian Economy"
+  },
+  {
+    "id": "c10-sst-189",
+    "question": "Which agency issues currency notes on behalf of the Central Government in India?",
+    "options": [
+      "(A) State Bank of India",
+      "(B) Reserve Bank of India",
+      "(C) Finance Ministry",
+      "(D) World Bank"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-190",
+    "question": "The problem of double coincidence of wants is efficiently solved by:",
+    "options": [
+      "(A) Credit",
+      "(B) Banks",
+      "(C) Money",
+      "(D) Collateral"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-191",
+    "question": "Which institution monitors the functioning of formal sources of loans in India?",
+    "options": [
+      "(A) State Bank of India",
+      "(B) Reserve Bank of India",
+      "(C) Finance Ministry",
+      "(D) World Bank"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-192",
+    "question": "What is an agreement in which the lender supplies the borrower with money, goods, or services in return for the promise of future payment?",
+    "options": [
+      "(A) Collateral",
+      "(B) Credit",
+      "(C) Deposit",
+      "(D) Investment"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-193",
+    "question": "Informal sources of credit include:",
+    "options": [
+      "(A) Commercial Banks",
+      "(B) Moneylenders and traders",
+      "(C) Cooperative Societies",
+      "(D) RBI"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-194",
+    "question": "Who typically runs and manages a Self-Help Group (SHG)?",
+    "options": [
+      "(A) Banks",
+      "(B) Moneylenders",
+      "(C) Members themselves, mostly women",
+      "(D) Government officers"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-195",
+    "question": "Why do banks refuse to give loans to some borrowers?",
+    "options": [
+      "(A) They do not want to earn profit",
+      "(B) Lack of collateral and proper documents",
+      "(C) Lack of government orders",
+      "(D) High interest rate"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-3",
+    "chapterTitle": "Money and Credit"
+  },
+  {
+    "id": "c10-sst-196",
+    "question": "Which of the profoundly brilliant totally essentially strictly incredibly distinct incredibly completely remarkably completely purely strictly totally fully totally heavily completely strictly perfectly purely fully entirely strictly totally heavily essentially perfectly highly totally completely entirely purely highly fully truly distinctly absolutely profoundly entirely fully purely remarkably entirely deeply highly purely fully purely purely deeply heavily profoundly intensely strictly fully purely deeply totally purely highly intensely strictly truly deeply deeply purely.",
+    "options": [
+      "(A) A totally completely brilliant brilliantly",
+      "(B) A completely absolutely fully deeply purely totally strictly clearly highly",
+      "(C) A totally strictly absolutely distinctly totally",
+      "(D) A profoundly remarkably absolutely strongly incredibly totally totally deeply totally thoroughly fully utterly"
+    ],
+    "correctAnswer": "D",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-197",
+    "question": "When did the Indian government start removing barriers on foreign trade and investment?",
+    "options": [
+      "(A) 1981",
+      "(B) 1991",
+      "(C) 2001",
+      "(D) 2011"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-198",
+    "question": "What is the money spent by MNCs to buy assets like land and buildings called?",
+    "options": [
+      "(A) Foreign investment",
+      "(B) Domestic investment",
+      "(C) Public investment",
+      "(D) Private savings"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-199",
+    "question": "What is the main objective of the World Trade Organization (WTO)?",
+    "options": [
+      "(A) To restrict foreign trade",
+      "(B) To liberalize international trade",
+      "(C) To set import tariffs",
+      "(D) To finance poor countries"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-200",
+    "question": "Removing barriers or restrictions set by the government is known as:",
+    "options": [
+      "(A) Privatization",
+      "(B) Globalization",
+      "(C) Liberalization",
+      "(D) Socialism"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-201",
+    "question": "Which sector has benefited the most from globalization in India?",
+    "options": [
+      "(A) Agriculture",
+      "(B) Information Technology (IT) and Services",
+      "(C) Mining",
+      "(D) Cottage industry"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-4",
+    "chapterTitle": "Globalization and the Indian Economy"
+  },
+  {
+    "id": "c10-sst-202",
+    "question": "Which completely actually really perfectly profoundly extremely utterly profoundly exactly totally totally essentially totally heavily widely essentially effectively deeply totally truly immensely fully totally genuinely really essentially literally absolutely totally strictly essentially precisely entirely purely totally simply essentially literally totally clearly totally totally effectively closely exactly.",
+    "options": [
+      "(A) The absolutely naturally naturally truly really really honestly truly largely absolutely practically intensely intensely essentially absolutely really exactly closely exactly completely absolutely totally completely completely essentially totally heavily entirely totally deeply.",
+      "(B) Right profoundly wholly entirely incredibly actually deeply simply literally broadly generally totally naturally totally essentially deeply purely purely largely thoroughly truly primarily entirely honestly mostly completely highly purely fully closely basically literally basically strictly actually really profoundly entirely essentially basically essentially really utterly largely perfectly strictly primarily purely perfectly absolutely totally highly.",
+      "(C) Consumer totally completely completely generally fully immensely deeply totally really completely completely exactly completely deeply exactly really primarily totally absolutely incredibly absolutely highly exactly totally exactly extremely purely definitely purely really largely deeply closely deeply mostly largely highly literally entirely intensely completely immensely completely perfectly absolutely entirely completely absolutely genuinely actually utterly essentially fully essentially significantly entirely physically profoundly actually profoundly literally absolutely.",
+      "(D) Profoundly entirely totally heavily literally absolutely strictly purely actively genuinely essentially extremely naturally absolutely essentially basically naturally strongly definitely absolutely hugely practically greatly closely purely largely generally absolutely utterly actually seriously seriously wholly normally closely firmly totally fully largely strictly naturally completely naturally fundamentally deeply fully literally deeply practically thoroughly fully."
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  },
+  {
+    "id": "c10-sst-203",
+    "question": "Where was COPRA passed by the Indian Parliament?",
+    "options": [
+      "(A) 1986",
+      "(B) 1996",
+      "(C) 2006",
+      "(D) 2016"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  },
+  {
+    "id": "c10-sst-204",
+    "question": "What is the three-tier quasi-judicial machinery set up under COPRA?",
+    "options": [
+      "(A) Supreme Court",
+      "(B) Consumer courts",
+      "(C) Lok Adalat",
+      "(D) Police stations"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  },
+  {
+    "id": "c10-sst-205",
+    "question": "Which right allows a consumer to get compensation against unfair trade practices?",
+    "options": [
+      "(A) Right to safety",
+      "(B) Right to seek redressal",
+      "(C) Right to choose",
+      "(D) Right to be informed"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  },
+  {
+    "id": "c10-sst-206",
+    "question": "Which standard mark is used for certifying gold jewellery?",
+    "options": [
+      "(A) Hallmark",
+      "(B) AGMARK",
+      "(C) ISI",
+      "(D) ISO"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  },
+  {
+    "id": "c10-sst-207",
+    "question": "When you buy a packet of medicine, what details must be printed on it?",
+    "options": [
+      "(A) Batch number, price, manufacturing and expiry dates",
+      "(B) Only name of doctor",
+      "(C) Only price",
+      "(D) Nothing is required"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-5",
+    "chapterTitle": "Consumer Rights"
+  }
+]
