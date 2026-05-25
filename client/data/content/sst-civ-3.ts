@@ -143,23 +143,8 @@ export const sstCiv3: ChapterContent = {
   exercises: [
     {
       id: "sc3-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "sc3-ex-q1",
-          number: "1",
-          question:
-            "State different forms of actively communal politics with one example each.",
-          solution: [
-            "1. Everyday beliefs: People deeply believe in religious prejudices and stereotypes. Example: Thinking people of another religion are inherently wicked.",
-            "2. Political Dominance: One religious community tries to politically dominate others. Example: A majority religion forcefully making laws only in their favor.",
-            "3. Political Mobilization: Using incredibly emotional religious symbols and religious leaders to desperately gather votes. Example: Using 'religious fatwas' during elections.",
-            "4. Communal Violence: The ugliest form, actively leading to riots and massacres. Example: The painful India-Pakistan partition riots.",
-          ],
-          answer:
-            "Forms include everyday prejudices, seeking political dominance, aggressive political mobilization using religion, and brutal communal riots.",
-        },
-      ],
+      name: "Exercise Questions",
+      questions: [],
     },
   ],
   examples: [],

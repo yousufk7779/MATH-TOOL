@@ -129,22 +129,8 @@ export const sstCiv5: ChapterContent = {
   exercises: [
     {
       id: "sc5-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "sc5-ex-q1",
-          number: "1",
-          question:
-            "How does democracy produce an immensely accountable, profoundly responsive, and completely legitimate government?",
-          solution: [
-            "1. Accountable: It wonderfully enables the people to directly choose their rulers. If the leaders do brilliantly bad work, they delightfully get violently voted out incredibly soon.",
-            "2. Responsive: It meticulously creates exceptionally important institutions and specific laws that fundamentally force the government to constantly listen to the deep needs of incredibly common people.",
-            "3. Legitimate: It beautifully involves free and incredibly fair elections. The deeply chosen government profoundly rules distinctly with the totally massive consent of the brilliantly incredible people.",
-          ],
-          answer:
-            "Through brilliantly regular elections (legitimate), heavily answering to parliament (accountable), and deeply fulfilling public needs immensely (responsive).",
-        },
-      ],
+      name: "Exercise Questions",
+      questions: [],
     },
   ],
   examples: [],

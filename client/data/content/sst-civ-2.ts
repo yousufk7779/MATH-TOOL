@@ -142,45 +142,8 @@ export const sstCiv2: ChapterContent = {
   exercises: [
     {
       id: "sc2-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "sc2-ex-q1",
-          number: "1",
-          question:
-            "Point out one feature in the practice of federalism in India that is similar to and one feature that is different from that of Belgium.",
-          solution: [
-            "Similar Feature: Both India and Belgium have essentially created a 'Holding Together' federation where the central government boldly shares its powers with regional/state governments to beautifully accommodate diversity.",
-            "Different Feature: In Belgium, the regional governments have substantial constitutional powers that are completely independent of the central government. In India, the Central Government (Union) is deliberately designed to be significantly more powerful than the State governments (e.g., Union laws override State laws in the Concurrent list).",
-          ],
-          answer:
-            "Similarity: Both are 'holding together' federations that share power with regional governments. Difference: India's central government is vastly more powerful than its state governments compared to Belgium.",
-        },
-        {
-          id: "sc2-ex-q2",
-          number: "2",
-          question:
-            "What is the main difference between a federal form of government and a unitary one? Explain with an example.",
-          solution: [
-            "In a strictly Unitary system, there is only one dominant level of government. If sub-units (states) exist, they are completely subordinate to the center. The central government can confidently pass orders to the local governments. Example: Sri Lanka heavily operates as a unitary system.",
-            "In a Federal system, power is meticulously divided between a central authority and its states. The central government absolutely CANNOT explicitly order the state government to do something because the state has its own constitutionally guaranteed powers. Example: India heavily operates as a federal system.",
-          ],
-          answer:
-            "In a Unitary system (e.g., Sri Lanka), the central government can give orders to states. In a Federal system (e.g., India), states have their own independent powers and cannot be simply ordered around by the center.",
-        },
-        {
-          id: "sc2-ex-q3",
-          number: "3",
-          question:
-            "State any two huge differences between the local government before and deeply after the highly crucial Constitutional amendment in 1992.",
-          solution: [
-            "Before 1992: Elections to overwhelmingly vital local governments (Panchayats) were generally not held regularly. Also, local governments largely did not have very much distinct power or independent resources of their own.",
-            "After 1992: It became constitutionally completely mandatory to thoroughly hold impressively regular elections to strictly local government bodies. Furthermore, at least fully one-third of all immensely crucial positions enthusiastically became legally reserved absolutely for incredibly capable women.",
-          ],
-          answer:
-            "Before 1992, elections weren't genuinely regular and they seriously lacked funds. After 1992, exceptionally regular elections proudly became heavily mandatory, and solidly one-third exceptionally crucial seats boldly became wonderfully reserved completely for significantly capable women.",
-        },
-      ],
+      name: "Exercise Questions",
+      questions: [],
     },
   ],
   examples: [],

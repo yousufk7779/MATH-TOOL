@@ -120,20 +120,8 @@ export const sstCiv4: ChapterContent = {
   exercises: [
     {
       id: "sc4-ex-1",
-      name: "Exercise 1: NCERT Questions",
-      questions: [
-        {
-          id: "sc4-ex-q1",
-          number: "1",
-          question:
-            "State the various functions political parties perform in a democracy.",
-          solution: [
-            "Contesting elections, putting forward policies, making laws, forming governments, and acting as the opposition.",
-          ],
-          answer:
-            "Contesting elections, forming policies, making laws, and running the government.",
-        },
-      ],
+      name: "Exercise Questions",
+      questions: [],
     },
   ],
   examples: [],
