@@ -93,21 +93,7 @@ function Class10SocialScienceScreen() {
             />
           </View>
 
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-economics"
-              title="ECONOMICS"
-              icon="🪙"
-              colors={JiguuColors.gradients.gold}
-              onPress={() =>
-                navigation.navigate("ChapterList", {
-                  subject: subjectName,
-                  topic: "Economics",
-                  className: className,
-                })
-              }
-            />
-          </View>
+
         </View>
       </ScrollView>
     </ScreenWrapper>
