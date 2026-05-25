@@ -7,6 +7,7 @@ import easyMathC9Mcqs from "../data/easy_mcqs_math_c9.json";
 import easyMathC8Mcqs from "../data/easy_mcqs_math_c8.json";
 import easyMathC7Mcqs from "../data/easy_mcqs_math_c7.json";
 import easySstC7Mcqs from "../data/easy_mcqs_sst_c7.json";
+import { chapterContents } from "../data/chapterContent";
 
 export interface QuizQuestion {
   id: string;
@@ -141,6 +142,34 @@ export const generateQuizAsync = async (
 
     const finalSet = [...p2, ...c2, ...l2, ...r4];
     return shuffleArray(finalSet);
+  }
+
+  if (subject === "Social Science") {
+    const sstMcqs: QuizQuestion[] = [];
+    Object.keys(chapterContents).forEach((key) => {
+      if (
+        key.startsWith("sst-his-") ||
+        key.startsWith("sst-geo-") ||
+        key.startsWith("sst-civ-") ||
+        key.startsWith("sst-eco-")
+      ) {
+        const chapter = chapterContents[key];
+        if (chapter && chapter.mcqs) {
+          chapter.mcqs.forEach((mcq) => {
+            sstMcqs.push({
+              id: mcq.id,
+              question: mcq.question,
+              options: mcq.options,
+              correctAnswer: mcq.correctAnswer.toUpperCase(),
+              chapterId: chapter.id,
+              chapterTitle: chapter.title,
+              subject: key.split("-")[1],
+            });
+          });
+        }
+      }
+    });
+    return shuffleArray(sstMcqs).slice(0, questionCount);
   }
 
   return [];
