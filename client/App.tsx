@@ -1,11 +1,10 @@
-import React, { useEffect, useCallback } from "react";
-import { StyleSheet, View } from "react-native";
+import React from "react";
+import { StyleSheet } from "react-native";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
-import * as SplashScreen from "expo-splash-screen";
 import {
   useFonts,
   NotoSans_400Regular,
@@ -24,8 +23,6 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
 
-SplashScreen.preventAutoHideAsync();
-
 const navTheme = {
   ...DefaultTheme,
   colors: {
@@ -37,56 +34,20 @@ const navTheme = {
 
 export default function App() {
   useUpdateCheck();
-  const [appIsReady, setAppIsReady] = React.useState(false);
 
-  const [fontsLoaded, fontError] = useFonts({
+  // Load fonts in the background
+  useFonts({
     NotoSans_400Regular,
     NotoSans_500Medium,
     NotoSans_600SemiBold,
     NotoSans_700Bold,
   });
 
-  useEffect(() => {
-    if (fontsLoaded || fontError) {
-      setAppIsReady(true);
-    }
-
-    // Robust fallback: Force app readiness after 3 seconds to prevent splash screen hang
-    const timeout = setTimeout(() => {
-      setAppIsReady(true);
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, [fontsLoaded, fontError]);
-
-  const onLayoutRootView = useCallback(async () => {
-    if (appIsReady) {
-      await SplashScreen.hideAsync().catch(() => {});
-    }
-  }, [appIsReady]);
-
-  // Fallback to hide splash screen in case onLayoutRootView is delayed or fails on Android
-  useEffect(() => {
-    if (appIsReady) {
-      const splashTimeout = setTimeout(async () => {
-        await SplashScreen.hideAsync().catch(() => {});
-      }, 1000);
-      return () => clearTimeout(splashTimeout);
-    }
-  }, [appIsReady]);
-
-  if (!appIsReady) {
-    return null;
-  }
-
   return (
     <ErrorBoundary>
       <QueryClientProvider client={queryClient}>
         <SafeAreaProvider style={styles.safeArea}>
-          <GestureHandlerRootView
-            style={styles.root}
-            onLayout={onLayoutRootView}
-          >
+          <GestureHandlerRootView style={styles.root}>
             <KeyboardProvider>
               <NavigationContainer theme={navTheme}>
                 <RootStackNavigator />

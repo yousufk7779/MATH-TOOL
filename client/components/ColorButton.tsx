@@ -121,7 +121,6 @@ const styles = StyleSheet.create({
     width: "100%",
     height: Spacing.buttonHeight + 4,
     borderRadius: BorderRadius.xl,
-    overflow: "hidden",
     shadowOffset: { width: 0, height: 4 },
   },
   gradient: {

@@ -1,10 +1,5 @@
-import React from "react";
-import {
-  StyleSheet,
-  useWindowDimensions,
-  ViewStyle,
-  TextStyle,
-} from "react-native";
+import React, { memo } from "react";
+import { useWindowDimensions } from "react-native";
 import RenderHtml, { defaultSystemFonts } from "react-native-render-html";
 import { JiguuColors } from "@/constants/theme";
 
@@ -63,61 +58,73 @@ const defaultTagsStyles = {
   },
 };
 
-export const ParsedText = ({
-  children,
-  style,
-  Component,
-  accentColor,
-  classesStyles,
-  tagsStyles,
-  ...rest
-}: ParsedTextProps) => {
-  const { width } = useWindowDimensions();
+export const ParsedText = memo(
+  function ParsedText({
+    children,
+    style,
+    Component,
+    accentColor,
+    classesStyles,
+    tagsStyles,
+    ...rest
+  }: ParsedTextProps) {
+    const { width } = useWindowDimensions();
 
-  if (!children) return null;
+    if (!children) return null;
 
-  // Flatten incoming style to apply to base body style
-  const flattenedStyle = StyleSheet.flatten(style) || {};
+    // Flatten incoming style to apply to base body style
+    const flattenedStyle = Array.isArray(style)
+      ? style.reduce((acc, curr) => ({ ...acc, ...curr }), {})
+      : style || {};
 
-  // Merge incoming styles with default tag styles
-  const dynamicTagsStyles = {
-    ...defaultTagsStyles,
-    ...tagsStyles,
-    body: {
-      ...defaultTagsStyles.body,
-      ...tagsStyles?.body,
-      ...flattenedStyle,
-      marginBottom: 0,
-    },
-  };
+    // Merge incoming styles with default tag styles
+    const dynamicTagsStyles = {
+      ...defaultTagsStyles,
+      ...tagsStyles,
+      body: {
+        ...defaultTagsStyles.body,
+        ...tagsStyles?.body,
+        ...flattenedStyle,
+        marginBottom: 0,
+      },
+    };
 
-  // Use passed classesStyles or keep empty object
-  const dynamicClassesStyles = {
-    ...classesStyles,
-  };
+    // Use passed classesStyles or keep empty object
+    const dynamicClassesStyles = {
+      ...classesStyles,
+    };
 
-  // Wrap in a div to ensure body styles apply if content is just text
-  const htmlContent = `<body>${children}</body>`;
+    // Wrap in a div to ensure body styles apply if content is just text
+    const htmlContent = `<body>${children}</body>`;
 
-  // Add custom fonts to system fonts so RenderHtml doesn't strip them
-  const systemFonts = [
-    ...defaultSystemFonts,
-    "NotoSans_400Regular",
-    "NotoSans_400Regular",
-  ];
+    // Add custom fonts to system fonts so RenderHtml doesn't strip them
+    const systemFonts = [
+      ...defaultSystemFonts,
+      "NotoSans_400Regular",
+      "NotoSans_400Regular",
+    ];
 
-  return (
-    <RenderHtml
-      contentWidth={width - 48}
-      source={{ html: htmlContent }}
-      tagsStyles={dynamicTagsStyles as any}
-      classesStyles={dynamicClassesStyles as any}
-      baseStyle={flattenedStyle as any}
-      enableExperimentalMarginCollapsing={true}
-      systemFonts={systemFonts}
-      {...rest}
-    />
-  );
-};
-
-const styles = StyleSheet.create({});
+    return (
+      <RenderHtml
+        contentWidth={width - 48}
+        source={{ html: htmlContent }}
+        tagsStyles={dynamicTagsStyles as any}
+        classesStyles={dynamicClassesStyles as any}
+        baseStyle={flattenedStyle as any}
+        enableExperimentalMarginCollapsing={true}
+        systemFonts={systemFonts}
+        {...rest}
+      />
+    );
+  },
+  (prevProps, nextProps) => {
+    return (
+      prevProps.children === nextProps.children &&
+      JSON.stringify(prevProps.style) === JSON.stringify(nextProps.style) &&
+      JSON.stringify(prevProps.tagsStyles) ===
+        JSON.stringify(nextProps.tagsStyles) &&
+      JSON.stringify(prevProps.classesStyles) ===
+        JSON.stringify(nextProps.classesStyles)
+    );
+  },
+);
