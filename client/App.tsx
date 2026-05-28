@@ -13,6 +13,7 @@ import {
   NotoSans_700Bold,
 } from "@expo-google-fonts/noto-sans";
 
+import * as SplashScreen from "expo-splash-screen";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "@/lib/query-client";
 
@@ -22,6 +23,9 @@ import { useUpdateCheck } from "@/hooks/useUpdateCheck";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
+
+// Prevent the splash screen from auto-hiding before asset loading is complete
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 const navTheme = {
   ...DefaultTheme,
@@ -36,12 +40,22 @@ export default function App() {
   useUpdateCheck();
 
   // Load fonts in the background
-  useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     NotoSans_400Regular,
     NotoSans_500Medium,
     NotoSans_600SemiBold,
     NotoSans_700Bold,
   });
+
+  React.useEffect(() => {
+    if (fontsLoaded || fontError) {
+      SplashScreen.hideAsync().catch(() => {});
+    }
+  }, [fontsLoaded, fontError]);
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
 
   return (
     <ErrorBoundary>

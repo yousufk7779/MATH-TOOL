@@ -14,9 +14,9 @@ export const getHomeRoute = (
   }
 
   if (chapterId) {
-    if (chapterId.startsWith("c9-")) return "Class9";
-    if (chapterId.startsWith("c8-")) return "Class8";
-    if (chapterId.startsWith("c7-")) return "Class7";
+    if (chapterId.startsWith("c9-") || chapterId.includes("-c9-")) return "Class9";
+    if (chapterId.startsWith("c8-") || chapterId.includes("-c8-")) return "Class8";
+    if (chapterId.startsWith("c7-") || chapterId.includes("-c7-")) return "Class7";
   }
 
   // Default to Class 10 Home

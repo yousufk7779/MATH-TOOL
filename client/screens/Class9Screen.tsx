@@ -53,6 +53,16 @@ function Class9Screen() {
 
           <View style={styles.buttonWrapper}>
             <ColorButton
+              testID="button-social-science"
+              title="SOCIAL SCIENCE"
+              icon="🌍"
+              colors={JiguuColors.gradients.deepOrange}
+              onPress={() => navigation.navigate("Class9SocialScience")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
               testID="button-quiz"
               title="START QUIZ"
               icon="🎯"
@@ -66,7 +76,7 @@ function Class9Screen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-notes"
-              title="QUICK NOTES"
+              title="MY NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
               onPress={() =>

@@ -90,7 +90,7 @@ function QuickNotesScreen() {
       <View style={styles.container}>
         <View style={styles.header}>
           <ThemedText style={[styles.title, { color: JiguuColors.accent1 }]}>
-            Quick Notes
+            My Notes
           </ThemedText>
         </View>
 

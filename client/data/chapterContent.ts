@@ -416,6 +416,157 @@ chapterContents["c8-math-11"] = c8Math11;
 chapterContents["c8-math-12"] = c8Math12;
 chapterContents["c8-math-13"] = c8Math13;
 
+// Create empty WebView-enabled chapters with native MCQs for Class 9 Social Science
+const sstC9Categories = ["his", "geo", "civ", "eco"];
+const sstC9CategoryNames: Record<string, string> = {
+  his: "History",
+  geo: "Geography",
+  civ: "Political Science",
+  eco: "Economics",
+};
+
+sstC9Categories.forEach((cat) => {
+  const catName = sstC9CategoryNames[cat];
+  for (let i = 1; i <= 6; i++) {
+    const id = `sst-${cat}-c9-${i}`;
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: `${catName} Chapter ${i}`,
+      isHtmlView: true,
+      htmlOverview: `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <h3 style="color: #FF8A65; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Concepts</h3>
+          <p style="line-height: 1.6; font-size: 17px;">Welcome to ${catName} Chapter ${i} Key Concepts. Content for this chapter is being prepared and will be available soon in this beautiful Web View layout!</p>
+        </div>
+      `,
+      htmlExercises: {
+        "ex-sst-qa": `
+          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Question & Answers</p>
+            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">NCERT Q&A Solutions for ${catName} Chapter ${i} will be populated here very soon.</p>
+          </div>
+        `
+      },
+      exercises: [
+        {
+          id: "ex-sst-qa",
+          name: "Q & A",
+          questions: []
+        }
+      ],
+      mcqs: [
+        {
+          id: `${id}-mcq-1`,
+          question: `This is a sample multiple-choice question 1 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "a"
+        },
+        {
+          id: `${id}-mcq-2`,
+          question: `This is a sample multiple-choice question 2 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "b"
+        },
+        {
+          id: `${id}-mcq-3`,
+          question: `This is a sample multiple-choice question 3 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "c"
+        },
+        {
+          id: `${id}-mcq-4`,
+          question: `This is a sample multiple-choice question 4 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "d"
+        },
+        {
+          id: `${id}-mcq-5`,
+          question: `This is a sample multiple-choice question 5 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "a"
+        }
+      ],
+      introduction: `Introduction for ${catName} Chapter ${i}`,
+    };
+  }
+});
+
+// Create empty WebView-enabled chapters with native MCQs for Class 8 Social Science
+const sstC8Categories = ["his", "geo", "civ"];
+const sstC8CategoryNames: Record<string, string> = {
+  his: "History",
+  geo: "Geography",
+  civ: "Political Science",
+};
+
+sstC8Categories.forEach((cat) => {
+  const catName = sstC8CategoryNames[cat];
+  for (let i = 1; i <= 6; i++) {
+    const id = `sst-${cat}-c8-${i}`;
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: `${catName} Chapter ${i}`,
+      isHtmlView: true,
+      htmlOverview: `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <h3 style="color: #FF8A65; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Concepts</h3>
+          <p style="line-height: 1.6; font-size: 17px;">Welcome to ${catName} Chapter ${i} Key Concepts. Content for this chapter is being prepared and will be available soon in this beautiful Web View layout!</p>
+        </div>
+      `,
+      htmlExercises: {
+        "ex-sst-qa": `
+          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Question & Answers</p>
+            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">NCERT Q&A Solutions for ${catName} Chapter ${i} will be populated here very soon.</p>
+          </div>
+        `
+      },
+      exercises: [
+        {
+          id: "ex-sst-qa",
+          name: "Q & A",
+          questions: []
+        }
+      ],
+      mcqs: [
+        {
+          id: `${id}-mcq-1`,
+          question: `This is a sample multiple-choice question 1 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "a"
+        },
+        {
+          id: `${id}-mcq-2`,
+          question: `This is a sample multiple-choice question 2 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "b"
+        },
+        {
+          id: `${id}-mcq-3`,
+          question: `This is a sample multiple-choice question 3 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "c"
+        },
+        {
+          id: `${id}-mcq-4`,
+          question: `This is a sample multiple-choice question 4 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "d"
+        },
+        {
+          id: `${id}-mcq-5`,
+          question: `This is a sample multiple-choice question 5 for ${catName} Chapter ${i}.`,
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: "a"
+        }
+      ],
+      introduction: `Introduction for ${catName} Chapter ${i}`,
+    };
+  }
+});
+
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };

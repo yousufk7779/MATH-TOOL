@@ -79,7 +79,7 @@ function Class7Screen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-notes"
-              title="QUICK NOTES"
+              title="MY NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
               onPress={() =>

@@ -164,6 +164,66 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "sst-eco-5", number: 5, name: "Consumer Rights", color: "#FFD600" },
     ],
   },
+  "Class 9 Social Science": {
+    History: [
+      { id: "sst-his-c9-1", number: 1, name: "Chapter 1", color: "#FF8A65" },
+      { id: "sst-his-c9-2", number: 2, name: "Chapter 2", color: "#FF8A65" },
+      { id: "sst-his-c9-3", number: 3, name: "Chapter 3", color: "#FF8A65" },
+      { id: "sst-his-c9-4", number: 4, name: "Chapter 4", color: "#FF8A65" },
+      { id: "sst-his-c9-5", number: 5, name: "Chapter 5", color: "#FF8A65" },
+      { id: "sst-his-c9-6", number: 6, name: "Chapter 6", color: "#FF8A65" },
+    ],
+    Geography: [
+      { id: "sst-geo-c9-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
+      { id: "sst-geo-c9-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
+      { id: "sst-geo-c9-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
+      { id: "sst-geo-c9-4", number: 4, name: "Chapter 4", color: "#4CAF50" },
+      { id: "sst-geo-c9-5", number: 5, name: "Chapter 5", color: "#4CAF50" },
+      { id: "sst-geo-c9-6", number: 6, name: "Chapter 6", color: "#4CAF50" },
+    ],
+    Civics: [
+      { id: "sst-civ-c9-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
+      { id: "sst-civ-c9-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
+      { id: "sst-civ-c9-3", number: 3, name: "Chapter 3", color: "#9C27B0" },
+      { id: "sst-civ-c9-4", number: 4, name: "Chapter 4", color: "#9C27B0" },
+      { id: "sst-civ-c9-5", number: 5, name: "Chapter 5", color: "#9C27B0" },
+      { id: "sst-civ-c9-6", number: 6, name: "Chapter 6", color: "#9C27B0" },
+    ],
+    Economics: [
+      { id: "sst-eco-c9-1", number: 1, name: "Chapter 1", color: "#FFD600" },
+      { id: "sst-eco-c9-2", number: 2, name: "Chapter 2", color: "#FFD600" },
+      { id: "sst-eco-c9-3", number: 3, name: "Chapter 3", color: "#FFD600" },
+      { id: "sst-eco-c9-4", number: 4, name: "Chapter 4", color: "#FFD600" },
+      { id: "sst-eco-c9-5", number: 5, name: "Chapter 5", color: "#FFD600" },
+      { id: "sst-eco-c9-6", number: 6, name: "Chapter 6", color: "#FFD600" },
+    ],
+  },
+  "Class 8 Social Science": {
+    History: [
+      { id: "sst-his-c8-1", number: 1, name: "Chapter 1", color: "#FF8A65" },
+      { id: "sst-his-c8-2", number: 2, name: "Chapter 2", color: "#FF8A65" },
+      { id: "sst-his-c8-3", number: 3, name: "Chapter 3", color: "#FF8A65" },
+      { id: "sst-his-c8-4", number: 4, name: "Chapter 4", color: "#FF8A65" },
+      { id: "sst-his-c8-5", number: 5, name: "Chapter 5", color: "#FF8A65" },
+      { id: "sst-his-c8-6", number: 6, name: "Chapter 6", color: "#FF8A65" },
+    ],
+    Geography: [
+      { id: "sst-geo-c8-1", number: 1, name: "Chapter 1", color: "#4CAF50" },
+      { id: "sst-geo-c8-2", number: 2, name: "Chapter 2", color: "#4CAF50" },
+      { id: "sst-geo-c8-3", number: 3, name: "Chapter 3", color: "#4CAF50" },
+      { id: "sst-geo-c8-4", number: 4, name: "Chapter 4", color: "#4CAF50" },
+      { id: "sst-geo-c8-5", number: 5, name: "Chapter 5", color: "#4CAF50" },
+      { id: "sst-geo-c8-6", number: 6, name: "Chapter 6", color: "#4CAF50" },
+    ],
+    Civics: [
+      { id: "sst-civ-c8-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
+      { id: "sst-civ-c8-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
+      { id: "sst-civ-c8-3", number: 3, name: "Chapter 3", color: "#9C27B0" },
+      { id: "sst-civ-c8-4", number: 4, name: "Chapter 4", color: "#9C27B0" },
+      { id: "sst-civ-c8-5", number: 5, name: "Chapter 5", color: "#9C27B0" },
+      { id: "sst-civ-c8-6", number: 6, name: "Chapter 6", color: "#9C27B0" },
+    ],
+  },
   Science: {
     Physics: [
       {

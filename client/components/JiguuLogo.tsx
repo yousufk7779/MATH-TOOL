@@ -29,19 +29,21 @@ export const JiguuLogo = memo(function JiguuLogo({
 
   const isClass9 =
     route.name === "Class9" ||
+    route.name === "Class9SocialScience" ||
     params?.className === "Class 9" ||
     (typeof params?.subject === "string" &&
       params.subject.includes("Class 9")) ||
     (typeof params?.chapterId === "string" &&
-      params.chapterId.startsWith("c9-"));
+      (params.chapterId.startsWith("c9-") || params.chapterId.includes("-c9-")));
 
   const isClass8 =
     route.name === "Class8" ||
+    route.name === "Class8SocialScience" ||
     params?.className === "Class 8" ||
     (typeof params?.subject === "string" &&
       params.subject.includes("Class 8")) ||
     (typeof params?.chapterId === "string" &&
-      params.chapterId.startsWith("c8-"));
+      (params.chapterId.startsWith("c8-") || params.chapterId.includes("-c8-")));
 
   const isClass7 =
     route.name === "Class7" ||
@@ -108,8 +110,8 @@ const styles = StyleSheet.create({
   subtitleText: {
     width: "100%",
     textAlign: "center",
-    fontSize: 15,
-    fontFamily: "NotoSans_600SemiBold",
+    fontSize: 14,
+    fontFamily: "NotoSans_400Regular",
     color: "#E0E0E0",
     letterSpacing: 1,
     includeFontPadding: false,
@@ -117,12 +119,12 @@ const styles = StyleSheet.create({
   },
   subtitleSuffixText: {
     color: JiguuColors.accent2,
-    fontWeight: "700",
+    fontFamily: "NotoSans_400Regular",
     includeFontPadding: false,
     lineHeight: 22,
   },
   subtitleTitleMatch: {
-    fontSize: 17,
+    fontSize: 16,
     color: "#FFFFFF",
     letterSpacing: 0.5,
     includeFontPadding: false,
@@ -130,7 +132,6 @@ const styles = StyleSheet.create({
   },
   dot: {
     fontSize: 22,
-    fontWeight: "900",
     color: "#FFFFFF",
     position: "relative",
     top: -1,

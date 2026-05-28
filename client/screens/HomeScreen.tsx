@@ -69,7 +69,7 @@ function HomeScreen() {
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-notes"
-              title="QUICK NOTES"
+              title="MY NOTES"
               icon="📝"
               colors={JiguuColors.gradients.green}
               onPress={() => navigation.navigate("QuickNotes")}

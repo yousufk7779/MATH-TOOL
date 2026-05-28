@@ -192,10 +192,10 @@ const styles = StyleSheet.create({
     lineHeight: 14,
   },
   title: {
-    fontSize: 12,
+    fontSize: 11,
     color: "#e64da8",
     lineHeight: 16,
-    fontFamily: "NotoSans_600SemiBold",
+    fontFamily: "NotoSans_400Regular",
     marginTop: 2,
   },
 });

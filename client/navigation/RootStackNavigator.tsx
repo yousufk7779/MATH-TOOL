@@ -18,8 +18,10 @@ import QuizScreen from "@/screens/QuizScreen";
 import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
 import Class9Screen from "@/screens/Class9Screen";
 import Class8Screen from "@/screens/Class8Screen";
+import Class8SocialScienceScreen from "@/screens/Class8SocialScienceScreen";
 import Class7Screen from "@/screens/Class7Screen";
 import Class7SocialScienceScreen from "@/screens/Class7SocialScienceScreen";
+import Class9SocialScienceScreen from "@/screens/Class9SocialScienceScreen";
 import Class10SocialScienceScreen from "@/screens/Class10SocialScienceScreen";
 
 export type RootStackParamList = {
@@ -28,7 +30,9 @@ export type RootStackParamList = {
   Class9: undefined;
   Class8: undefined;
   Class7: undefined;
+  Class8SocialScience: { className?: string } | undefined;
   Class7SocialScience: { className?: string } | undefined;
+  Class9SocialScience: { className?: string } | undefined;
   Class10SocialScience: { className?: string } | undefined;
   ScienceTopics: { className?: string } | undefined;
   ChapterList:
@@ -68,6 +72,14 @@ export default function RootStackNavigator() {
       <Stack.Screen
         name="Class7SocialScience"
         component={Class7SocialScienceScreen}
+      />
+      <Stack.Screen
+        name="Class8SocialScience"
+        component={Class8SocialScienceScreen}
+      />
+      <Stack.Screen
+        name="Class9SocialScience"
+        component={Class9SocialScienceScreen}
       />
       <Stack.Screen
         name="Class10SocialScience"
