@@ -31,40 +31,6 @@ export const CreatorCredit = memo(function CreatorCredit() {
   const isLandscape = width > height;
   const navigation = useNavigation<NavigationProp>();
 
-  // Premium Clock state and hands rotation logic
-  const [time, setTime] = React.useState(new Date());
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const hours = time.getHours();
-  const minutes = time.getMinutes();
-  const seconds = time.getSeconds();
-
-  const hourDegrees = (hours % 12) * 30 + minutes * 0.5;
-  const minuteDegrees = minutes * 6;
-  const secondDegrees = seconds * 6;
-
-  const hourRotate = `${hourDegrees}deg`;
-  const minuteRotate = `${minuteDegrees}deg`;
-  const secondRotate = `${secondDegrees}deg`;
-
-  const timeString = time.toLocaleTimeString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  });
-
-  const clockSize = isLandscape ? 32 : 52;
-  const center = clockSize / 2;
-  const hourHandLength = clockSize * 0.25;
-  const minuteHandLength = clockSize * 0.38;
-  const secondHandLength = clockSize * 0.42;
-
   const handleShare = async () => {
     try {
       await Share.share({
@@ -113,43 +79,19 @@ export const CreatorCredit = memo(function CreatorCredit() {
       </View>
 
       <View style={styles.creatorInfo}>
-        <View style={styles.clockWrapper}>
-          <Pressable
-            style={[
-              styles.photoWrapper,
-              isLandscape && styles.photoWrapperLandscape,
-            ]}
-            onPress={() => navigation.navigate("AboutEducator")}
-          >
-            <Image
-              source={sameerPhoto}
-              style={[styles.photo, isLandscape && styles.photoLandscape]}
-              resizeMode="cover"
-            />
-            {/* Soft dark overlay for contrast */}
-            <View style={styles.clockOverlay} />
-
-            {/* Elegant minimal clock hands */}
-            <View style={[styles.handContainer, { transform: [{ rotate: hourRotate }] }]}>
-              <View style={[styles.hourHand, { height: hourHandLength, top: center - hourHandLength }]} />
-            </View>
-            <View style={[styles.handContainer, { transform: [{ rotate: minuteRotate }] }]}>
-              <View style={[styles.minuteHand, { height: minuteHandLength, top: center - minuteHandLength }]} />
-            </View>
-            <View style={[styles.handContainer, { transform: [{ rotate: secondRotate }] }]}>
-              <View style={[styles.secondHand, { height: secondHandLength, top: center - secondHandLength }]} />
-            </View>
-
-            {/* Elegant center pin */}
-            <View style={styles.centerPin} />
-          </Pressable>
-
-          {!isLandscape && (
-            <ThemedText style={styles.digitalTime}>
-              {timeString}
-            </ThemedText>
-          )}
-        </View>
+        <Pressable
+          style={[
+            styles.photoWrapper,
+            isLandscape && styles.photoWrapperLandscape,
+          ]}
+          onPress={() => navigation.navigate("AboutEducator")}
+        >
+          <Image
+            source={sameerPhoto}
+            style={[styles.photo, isLandscape && styles.photoLandscape]}
+            resizeMode="cover"
+          />
+        </Pressable>
         <View style={styles.textContainer}>
           <ThemedText
             style={[styles.name, isLandscape && styles.nameLandscape]}
@@ -212,33 +154,18 @@ const styles = StyleSheet.create({
     fontFamily: "NotoSans_400Regular",
     color: JiguuColors.textPrimary,
   },
-  clockWrapper: {
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: Spacing.md,
-  },
   photoWrapper: {
     width: 52,
     height: 52,
     borderRadius: BorderRadius.full,
     overflow: "hidden",
+    marginRight: Spacing.md,
     alignItems: "center",
     justifyContent: "center",
-    borderWidth: 1.5,
-    borderColor: "rgba(255, 255, 255, 0.18)",
-    backgroundColor: "rgba(11, 15, 26, 0.5)",
-    // Premium shadow for depth
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.35,
-    shadowRadius: 4,
-    elevation: 4,
   },
   photoWrapperLandscape: {
     width: 32,
     height: 32,
-    borderWidth: 1,
-    borderColor: "rgba(255, 255, 255, 0.15)",
   },
   photo: {
     width: 52,
@@ -249,60 +176,6 @@ const styles = StyleSheet.create({
     width: 32,
     height: 44,
     marginTop: 10,
-  },
-  clockOverlay: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(11, 15, 26, 0.42)", // soft dark overlay
-  },
-  handContainer: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    alignItems: "center",
-  },
-  hourHand: {
-    position: "absolute",
-    width: 1.8,
-    backgroundColor: "#FFFFFF",
-    borderRadius: 1,
-  },
-  minuteHand: {
-    position: "absolute",
-    width: 1.2,
-    backgroundColor: "#E2E8F0",
-    borderRadius: 0.8,
-  },
-  secondHand: {
-    position: "absolute",
-    width: 0.8,
-    backgroundColor: "#e64da8", // accent pink hand
-    borderRadius: 0.4,
-  },
-  centerPin: {
-    position: "absolute",
-    width: 4,
-    height: 4,
-    borderRadius: 2,
-    backgroundColor: "#FFFFFF",
-    top: "50%",
-    left: "50%",
-    marginTop: -2,
-    marginLeft: -2,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.3,
-    shadowRadius: 1,
-    elevation: 1,
-  },
-  digitalTime: {
-    fontSize: 9,
-    fontFamily: "NotoSans_400Regular",
-    color: JiguuColors.textSecondary,
-    marginTop: 3,
-    letterSpacing: 0.5,
-    opacity: 0.8,
   },
   textContainer: {
     alignItems: "center",
