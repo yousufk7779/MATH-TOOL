@@ -127,6 +127,7 @@ import { sstCivC93 } from "./content/sst-civ-c9-3";
 import { sstCivC94 } from "./content/sst-civ-c9-4";
 import { sstCivC95 } from "./content/sst-civ-c9-5";
 import { sstCivC96 } from "./content/sst-civ-c9-6";
+import { sstEcoC91 } from "./content/sst-eco-c9-1";
 import { c7Sci1 } from "./content/c7-sci-1";
 import { c7Sci2 } from "./content/c7-sci-2";
 import { c7Sci3 } from "./content/c7-sci-3";
@@ -403,6 +404,7 @@ export const chapterContents: Record<string, ChapterContent> = {
   "sst-civ-c9-4": sstCivC94,
   "sst-civ-c9-5": sstCivC95,
   "sst-civ-c9-6": sstCivC96,
+  "sst-eco-c9-1": sstEcoC91,
 };
 
 const createEmptyContent = (
