@@ -47,13 +47,33 @@ export default function App() {
     NotoSans_700Bold,
   });
 
-  React.useEffect(() => {
-    if (fontsLoaded || fontError) {
-      SplashScreen.hideAsync().catch(() => {});
-    }
-  }, [fontsLoaded, fontError]);
+  const [isReady, setIsReady] = React.useState(false);
 
-  if (!fontsLoaded && !fontError) {
+  React.useEffect(() => {
+    let isMounted = true;
+
+    // Fallback: forcefully hide splash screen after 3 seconds if fonts take too long
+    const timer = setTimeout(() => {
+      if (isMounted && !isReady) {
+        setIsReady(true);
+        SplashScreen.hideAsync().catch(() => {});
+      }
+    }, 3000);
+
+    if (fontsLoaded || fontError) {
+      if (isMounted && !isReady) {
+        setIsReady(true);
+        SplashScreen.hideAsync().catch(() => {});
+      }
+    }
+
+    return () => {
+      isMounted = false;
+      clearTimeout(timer);
+    };
+  }, [fontsLoaded, fontError, isReady]);
+
+  if (!isReady) {
     return null;
   }
 

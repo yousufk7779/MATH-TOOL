@@ -108,6 +108,19 @@ import { c9SciBio1 } from "./content/c9-sci-bio-1";
 import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
+import { sstHisC91 } from "./content/sst-his-c9-1";
+import { sstHisC92 } from "./content/sst-his-c9-2";
+import { sstHisC93 } from "./content/sst-his-c9-3";
+import { sstHisC94 } from "./content/sst-his-c9-4";
+import { sstHisC95 } from "./content/sst-his-c9-5";
+import { sstHisC96 } from "./content/sst-his-c9-6";
+import { sstGeoC91 } from "./content/sst-geo-c9-1";
+import { sstGeoC92 } from "./content/sst-geo-c9-2";
+import { sstGeoC93 } from "./content/sst-geo-c9-3";
+import { sstGeoC94 } from "./content/sst-geo-c9-4";
+import { sstGeoC95 } from "./content/sst-geo-c9-5";
+import { sstGeoC96 } from "./content/sst-geo-c9-6";
+import { sstGeoC97 } from "./content/sst-geo-c9-7";
 import { c7Sci1 } from "./content/c7-sci-1";
 import { c7Sci2 } from "./content/c7-sci-2";
 import { c7Sci3 } from "./content/c7-sci-3";
@@ -365,6 +378,19 @@ export const chapterContents: Record<string, ChapterContent> = {
   "c8-sci-11": c8Sci11,
   "c8-sci-12": c8Sci12,
   "c8-sci-13": c8Sci13,
+  "sst-his-c9-1": sstHisC91,
+  "sst-his-c9-2": sstHisC92,
+  "sst-his-c9-3": sstHisC93,
+  "sst-his-c9-4": sstHisC94,
+  "sst-his-c9-5": sstHisC95,
+  "sst-his-c9-6": sstHisC96,
+  "sst-geo-c9-1": sstGeoC91,
+  "sst-geo-c9-2": sstGeoC92,
+  "sst-geo-c9-3": sstGeoC93,
+  "sst-geo-c9-4": sstGeoC94,
+  "sst-geo-c9-5": sstGeoC95,
+  "sst-geo-c9-6": sstGeoC96,
+  "sst-geo-c9-7": sstGeoC97,
 };
 
 const createEmptyContent = (
@@ -425,69 +451,402 @@ const sstC9CategoryNames: Record<string, string> = {
   eco: "Economics",
 };
 
+const class9HistoryTitles = [
+  "The French Revolution",
+  "Socialism in Europe and the Russian Revolution",
+  "Nazism and the Rise of Hitler",
+  "Forest Society and Colonialism",
+  "Pastoralists in the Modern World",
+  "The Integration of Princely States: A case study of Jammu and Kashmir",
+];
+
+const class9HistoryMCQs: Record<number, MCQ[]> = {
+  1: [
+    {
+      id: "sst-his-c9-1-mcq-1",
+      question: "The French Revolution broke out on:",
+      options: [
+        "14 July 1789",
+        "14 June 1789",
+        "14 August 1789",
+        "14 January 1789",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-1-mcq-2",
+      question: "Who was the ruler of France during the French Revolution?",
+      options: ["Louis XIV", "Louis XV", "Louis XVI", "Louis XVIII"],
+      correctAnswer: "c",
+    },
+    {
+      id: "sst-his-c9-1-mcq-3",
+      question: "The fortress-prison stormed by the people of Paris was the:",
+      options: ["Bastille", "Versailles", "Tuileries", "Louvre"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-1-mcq-4",
+      question: "The Third Estate comprised of:",
+      options: ["Clergy", "Nobles", "Peasants and Businessmen", "Monarchy"],
+      correctAnswer: "c",
+    },
+    {
+      id: "sst-his-c9-1-mcq-5",
+      question: "The national colors of France are:",
+      options: [
+        "Blue-White-Red",
+        "Red-Green-Blue",
+        "Yellow-White-Red",
+        "Black-Red-Yellow",
+      ],
+      correctAnswer: "a",
+    },
+  ],
+  2: [
+    {
+      id: "sst-his-c9-2-mcq-1",
+      question: "Who led the Bolshevik Party during the Russian Revolution?",
+      options: ["Vladimir Lenin", "Karl Marx", "Leon Trotsky", "Joseph Stalin"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-2-mcq-2",
+      question: "The Russian Parliament is known as the:",
+      options: ["Duma", "Reichstag", "Congress", "Parliament"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-2-mcq-3",
+      question: "In which year did the Russian Revolution take place?",
+      options: ["1905", "1917", "1914", "1921"],
+      correctAnswer: "b",
+    },
+    {
+      id: "sst-his-c9-2-mcq-4",
+      question: "The Bolsheviks were a group of:",
+      options: ["Radicals", "Liberals", "Conservatives", "Moderates"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-2-mcq-5",
+      question: "What was the main slogan of the Bolsheviks in 1917?",
+      options: [
+        "Peace, Land, and Bread",
+        "Liberty, Equality, Fraternity",
+        "Workers of the World Unite",
+        "No Taxation without Representation",
+      ],
+      correctAnswer: "a",
+    },
+  ],
+  3: [
+    {
+      id: "sst-his-c9-3-mcq-1",
+      question: "When did Adolf Hitler become the Chancellor of Germany?",
+      options: ["1933", "1929", "1939", "1945"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-3-mcq-2",
+      question: "What was the name of Hitler's political party?",
+      options: [
+        "Nazi Party",
+        "Labour Party",
+        "Socialist Party",
+        "Democratic Party",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-3-mcq-3",
+      question:
+        "Which country did Germany invade in 1939, starting World War II?",
+      options: ["Poland", "France", "Russia", "Austria"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-3-mcq-4",
+      question: "The famous book 'Mein Kampf' was written by:",
+      options: [
+        "Adolf Hitler",
+        "Joseph Goebbels",
+        "Heinrich Himmler",
+        "Benito Mussolini",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-3-mcq-5",
+      question: "What was the German parliament building called?",
+      options: ["Reichstag", "Duma", "Diet", "Bundestag"],
+      correctAnswer: "a",
+    },
+  ],
+  4: [
+    {
+      id: "sst-his-c9-4-mcq-1",
+      question: "Who was the first Inspector General of Forests in India?",
+      options: [
+        "Dietrich Brandis",
+        "George Yule",
+        "Verrier Elwin",
+        "Lord Dalhousie",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-4-mcq-2",
+      question:
+        "The system of scientific forestry was introduced in India by the:",
+      options: ["British", "French", "Dutch", "Portuguese"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-4-mcq-3",
+      question: "In which year was the first Indian Forest Act passed?",
+      options: ["1865", "1878", "1927", "1855"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-4-mcq-4",
+      question: "The shifting cultivation is known in Central America as:",
+      options: ["Milpa", "Lading", "Chitemene", "Tavy"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-4-mcq-5",
+      question: "Who led the forest rebellion in Bastar in 1910?",
+      options: [
+        "Gunda Dhur",
+        "Birsa Munda",
+        "Alluri Sitarama Raju",
+        "Sidhu Murmu",
+      ],
+      correctAnswer: "a",
+    },
+  ],
+  5: [
+    {
+      id: "sst-his-c9-5-mcq-1",
+      question: "Guijar Bakarwals are pastoral nomads of which region?",
+      options: [
+        "Jammu and Kashmir",
+        "Himachal Pradesh",
+        "Rajasthan",
+        "Maharashtra",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-5-mcq-2",
+      question:
+        "The pastoral community of Rajasthan that is known for camel herding is:",
+      options: ["Raika", "Gaddi", "Bhotia", "Sherpa"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-5-mcq-3",
+      question: "The Maasai pastoral community belongs to which continent?",
+      options: ["Africa", "Asia", "Europe", "South America"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-5-mcq-4",
+      question: "What are the seasonal pastures in high mountains called?",
+      options: ["Bugyals", "Bhabar", "Kharif", "Rabi"],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-5-mcq-5",
+      question: "The Gaddi shepherds belong to which state?",
+      options: [
+        "Himachal Pradesh",
+        "Jammu and Kashmir",
+        "Gujarat",
+        "Uttarakhand",
+      ],
+      correctAnswer: "a",
+    },
+  ],
+  6: [
+    {
+      id: "sst-his-c9-6-mcq-1",
+      question:
+        "Who was the last ruling Maharaja of Jammu and Kashmir at the time of integration?",
+      options: [
+        "Maharaja Hari Singh",
+        "Maharaja Gulab Singh",
+        "Maharaja Ranbir Singh",
+        "Maharaja Pratap Singh",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-6-mcq-2",
+      question:
+        "On which date was the Instrument of Accession signed by Maharaja Hari Singh?",
+      options: [
+        "26 October 1947",
+        "15 August 1947",
+        "26 January 1950",
+        "27 October 1947",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-6-mcq-3",
+      question:
+        "Which leader played a pivotal role in the integration of princely states into India?",
+      options: [
+        "Sardar Vallabhbhai Patel",
+        "Jawaharlal Nehru",
+        "Mahatma Gandhi",
+        "Dr. B.R. Ambedkar",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-6-mcq-4",
+      question:
+        "What was the status of Jammu and Kashmir under Article 370 of the Indian Constitution?",
+      options: [
+        "Special Status",
+        "Union Territory",
+        "Associate State",
+        "No Special Status",
+      ],
+      correctAnswer: "a",
+    },
+    {
+      id: "sst-his-c9-6-mcq-5",
+      question:
+        "The Treaty of Amritsar (1846) marked the creation of the princely state of Jammu and Kashmir under:",
+      options: ["Gulab Singh", "Ranjit Singh", "Hari Singh", "Ranbir Singh"],
+      correctAnswer: "a",
+    },
+  ],
+};
+
 sstC9Categories.forEach((cat) => {
   const catName = sstC9CategoryNames[cat];
-  for (let i = 1; i <= 6; i++) {
+  const limit = cat === "geo" ? 7 : 6;
+  for (let i = 1; i <= limit; i++) {
     const id = `sst-${cat}-c9-${i}`;
-    chapterContents[id] = {
-      id,
-      number: i,
-      title: `${catName} Chapter ${i}`,
-      isHtmlView: true,
-      htmlOverview: `
+    if (chapterContents[id]) continue;
+    const title =
+      cat === "his" ? class9HistoryTitles[i - 1] : `${catName} Chapter ${i}`;
+
+    let htmlOverview = "";
+    let htmlExercises = "";
+
+    if (cat === "his") {
+      htmlOverview = `
+        <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
+          <!-- Premium Info Card -->
+          <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+            <h3 style="color: #FF8A65; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center;">
+              <span style="margin-right: 8px; font-size: 18px;">💡</span> Core Learnings
+            </h3>
+            <ul style="color: #B3B3C6; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+              <li style="margin-bottom: 8px;">Explore critical timelines and major turning points of the period.</li>
+              <li style="margin-bottom: 8px;">Understand the socio-political movements and economic causes of key events.</li>
+              <li style="margin-bottom: 0;">Analyze impact, consequences, and long-term historical legacy on the modern world.</li>
+            </ul>
+          </div>
+          
+          <!-- Premium Status Card -->
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px dashed rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 16px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <span style="font-size: 18px;">⏳</span>
+            <span style="color: #94A3B8; font-size: 14px; font-weight: 400; text-align: center;">Comprehensive notes and answers are being processed. Stay tuned!</span>
+          </div>
+        </div>
+      `;
+
+      htmlExercises = `
+        <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
+          <!-- Premium Status Card -->
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px dashed rgba(255, 255, 255, 0.15); border-radius: 12px; padding: 16px; display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 24px;">
+            <span style="font-size: 18px;">⏳</span>
+            <span style="color: #94A3B8; font-size: 14px; font-weight: 400; text-align: center;">NCERT Q&A Solutions for this chapter will be populated here very soon.</span>
+          </div>
+
+          <!-- Interactive Tip -->
+          <div style="background-color: rgba(33, 150, 243, 0.08); border: 1px solid rgba(33, 150, 243, 0.25); border-radius: 12px; padding: 16px; display: flex; align-items: flex-start; gap: 12px;">
+            <span style="font-size: 20px;">💡</span>
+            <div>
+              <h4 style="margin: 0 0 4px 0; color: #90CAF9; font-size: 15px; font-weight: 600;">Study Tip</h4>
+              <p style="margin: 0; color: #B0BEC5; font-size: 13px; line-height: 1.5;">To prepare for exams, practice the dates and timelines first. You can write your own revision notes directly inside the <strong>Quick Notes</strong> screen!</p>
+            </div>
+          </div>
+        </div>
+      `;
+    } else {
+      htmlOverview = `
         <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
           <h3 style="color: #FF8A65; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Key Concepts</h3>
           <p style="line-height: 1.6; font-size: 17px;">Welcome to ${catName} Chapter ${i} Key Concepts. Content for this chapter is being prepared and will be available soon in this beautiful Web View layout!</p>
         </div>
-      `,
+      `;
+      htmlExercises = `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Question & Answers</p>
+          <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">NCERT Q&A Solutions for ${catName} Chapter ${i} will be populated here very soon.</p>
+        </div>
+      `;
+    }
+
+    const defaultMcqs = [
+      {
+        id: `${id}-mcq-1`,
+        question: `This is a sample multiple-choice question 1 for ${catName} Chapter ${i}.`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "a",
+      },
+      {
+        id: `${id}-mcq-2`,
+        question: `This is a sample multiple-choice question 2 for ${catName} Chapter ${i}.`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "b",
+      },
+      {
+        id: `${id}-mcq-3`,
+        question: `This is a sample multiple-choice question 3 for ${catName} Chapter ${i}.`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "c",
+      },
+      {
+        id: `${id}-mcq-4`,
+        question: `This is a sample multiple-choice question 4 for ${catName} Chapter ${i}.`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "d",
+      },
+      {
+        id: `${id}-mcq-5`,
+        question: `This is a sample multiple-choice question 5 for ${catName} Chapter ${i}.`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: "a",
+      },
+    ];
+
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: title,
+      isHtmlView: true,
+      htmlOverview: htmlOverview,
       htmlExercises: {
-        "ex-sst-qa": `
-          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
-            <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Question & Answers</p>
-            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">NCERT Q&A Solutions for ${catName} Chapter ${i} will be populated here very soon.</p>
-          </div>
-        `
+        "ex-sst-qa": htmlExercises,
       },
       exercises: [
         {
           id: "ex-sst-qa",
           name: "Q & A",
-          questions: []
-        }
+          questions: [],
+        },
       ],
-      mcqs: [
-        {
-          id: `${id}-mcq-1`,
-          question: `This is a sample multiple-choice question 1 for ${catName} Chapter ${i}.`,
-          options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "a"
-        },
-        {
-          id: `${id}-mcq-2`,
-          question: `This is a sample multiple-choice question 2 for ${catName} Chapter ${i}.`,
-          options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "b"
-        },
-        {
-          id: `${id}-mcq-3`,
-          question: `This is a sample multiple-choice question 3 for ${catName} Chapter ${i}.`,
-          options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "c"
-        },
-        {
-          id: `${id}-mcq-4`,
-          question: `This is a sample multiple-choice question 4 for ${catName} Chapter ${i}.`,
-          options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "d"
-        },
-        {
-          id: `${id}-mcq-5`,
-          question: `This is a sample multiple-choice question 5 for ${catName} Chapter ${i}.`,
-          options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "a"
-        }
-      ],
-      introduction: `Introduction for ${catName} Chapter ${i}`,
+      mcqs: cat === "his" ? class9HistoryMCQs[i] : defaultMcqs,
+      introduction: `Introduction for ${title}`,
     };
   }
 });
@@ -521,46 +880,46 @@ sstC8Categories.forEach((cat) => {
             <p style="color: #FF8A65; font-weight: bold; margin-bottom: 8px; font-size: 18px;">Question & Answers</p>
             <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">NCERT Q&A Solutions for ${catName} Chapter ${i} will be populated here very soon.</p>
           </div>
-        `
+        `,
       },
       exercises: [
         {
           id: "ex-sst-qa",
           name: "Q & A",
-          questions: []
-        }
+          questions: [],
+        },
       ],
       mcqs: [
         {
           id: `${id}-mcq-1`,
           question: `This is a sample multiple-choice question 1 for ${catName} Chapter ${i}.`,
           options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "a"
+          correctAnswer: "a",
         },
         {
           id: `${id}-mcq-2`,
           question: `This is a sample multiple-choice question 2 for ${catName} Chapter ${i}.`,
           options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "b"
+          correctAnswer: "b",
         },
         {
           id: `${id}-mcq-3`,
           question: `This is a sample multiple-choice question 3 for ${catName} Chapter ${i}.`,
           options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "c"
+          correctAnswer: "c",
         },
         {
           id: `${id}-mcq-4`,
           question: `This is a sample multiple-choice question 4 for ${catName} Chapter ${i}.`,
           options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "d"
+          correctAnswer: "d",
         },
         {
           id: `${id}-mcq-5`,
           question: `This is a sample multiple-choice question 5 for ${catName} Chapter ${i}.`,
           options: ["Option A", "Option B", "Option C", "Option D"],
-          correctAnswer: "a"
-        }
+          correctAnswer: "a",
+        },
       ],
       introduction: `Introduction for ${catName} Chapter ${i}`,
     };
