@@ -286,12 +286,36 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       },
     ],
     Economics: [
-      { id: "sst-eco-c9-1", number: 1, name: "Chapter 1", color: "#FFD600" },
-      { id: "sst-eco-c9-2", number: 2, name: "Chapter 2", color: "#FFD600" },
-      { id: "sst-eco-c9-3", number: 3, name: "Chapter 3", color: "#FFD600" },
-      { id: "sst-eco-c9-4", number: 4, name: "Chapter 4", color: "#FFD600" },
-      { id: "sst-eco-c9-5", number: 5, name: "Chapter 5", color: "#FFD600" },
-      { id: "sst-eco-c9-6", number: 6, name: "Chapter 6", color: "#FFD600" },
+      {
+        id: "sst-eco-c9-1",
+        number: 1,
+        name: "Money & Banking",
+        color: "#FFD600",
+      },
+      {
+        id: "sst-eco-c9-2",
+        number: 2,
+        name: "Understanding the Indian Economy",
+        color: "#FFD600",
+      },
+      {
+        id: "sst-eco-c9-3",
+        number: 3,
+        name: "Natural Disasters",
+        color: "#FFD600",
+      },
+      {
+        id: "sst-eco-c9-4",
+        number: 4,
+        name: "Man-Made Disasters",
+        color: "#FFD600",
+      },
+      {
+        id: "sst-eco-c9-5",
+        number: 5,
+        name: "Road Safety Education (Part- I)",
+        color: "#FFD600",
+      },
     ],
   },
   "Class 8 Social Science": {
