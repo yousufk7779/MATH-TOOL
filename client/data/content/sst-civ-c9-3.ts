@@ -189,7 +189,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q1. Which of the following statements about the reasons for conducting elections are false?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(c) Elections enable people to evaluate the performance of the judiciary.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> In India, the judiciary is independent of the government and is not subject to public evaluation or control via elections.
@@ -202,7 +202,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q2. Which of these is not a good reason to say that Indian elections are democratic?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(a) India has the largest number of voters in the world.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> The size of the electorate is a matter of population and does not guarantee that the elections are free, fair, or democratic.
@@ -250,7 +250,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q4. List all the different election related activities mentioned in the chapter and arrange them in a time sequence, beginning with the first activity and ending with the last.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Correct Time Sequence:</b>
             <ol style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;">Making of voters' list</li>
@@ -271,7 +271,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q5. Surekha is an officer in-charge of ensuring free and fair elections in an assembly constituency in a state. Describe what should she focus on for each of the following stages of election:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Election campaign:</b> She should focus on preventing candidates from distributing money/gifts, using government vehicles, using religious symbols for votes, or exceeding spending limits.
@@ -291,7 +291,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q6. Compare the proportion of communities in the US Congress with their population. Based on this, would you suggest a system of reservations?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b>Proportional Representation Comparison:</b>
             <div style="width: 100%; margin: 10px 0 16px 0;">
               <table style="width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12px; color: #D1D1E9; text-align: center;">
@@ -335,7 +335,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q7. Can we draw the following conclusions from the information given in this chapter? Give two facts to support your position for each of these.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) Election Commission of India does not have enough powers to conduct free and fair elections.</b><br/>
@@ -366,7 +366,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q8. Chinappa was convicted for torturing his wife for dowry. Satbir was held guilty of practicing untouchability. The court did not allow either of them to contest elections. Does this decision go against the principles of democratic elections?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: <b style="color: ${themeColor};">No, this decision does not go against democratic principles.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> A democracy requires a legal and moral framework to protect itself. Banning criminals convicted of severe offenses or individuals guilty of social evils like untouchability keeps the legislative body clean, protects citizens, and maintains public faith in the electoral process.
@@ -379,7 +379,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q9. Here are some reports of electoral malpractices from different parts of the world. Is there anything that these countries can learn from India to improve their elections? What would you suggest in each case?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) Nigeria: The officer in charge of counting votes deliberately increased the votes of one candidate and declared him elected.</b><br/>
@@ -402,7 +402,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q10. Here are some reports of malpractices in Indian elections. Identify what the problem in each case is. What should be done to correct the situation?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) Following the announcement of elections, the minister promised to provide financial aid to reopen the closed sugar mill.</b><br/>
@@ -433,7 +433,7 @@ export const sstCivC93: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q11. Can you tell Ramesh what is wrong with these statements?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) Women always vote the way men tell them to. So what is the point of giving them the right to vote?</b><br/>

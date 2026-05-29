@@ -50,7 +50,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) To which one of the following types of vegetation does rubber belong to?</b><br/>
@@ -75,7 +75,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) What factors are responsible for the distribution of plants and animals in India?</b><br/>
@@ -96,7 +96,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Distinguish between</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) Flora and Fauna</b><br/>
@@ -113,7 +113,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Name different types of Vegetation found in India and describe the vegetation of high altitudes.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The major types of vegetation in India are: Tropical Evergreen Forests, Tropical Deciduous Forests, Tropical Thorn Forests and Scrubs, Montane Forests, and Mangrove Forests. <br/><br/>
             <b>Vegetation of high altitudes (Montane Forests):</b> In mountainous areas, the decrease in temperature with increasing altitude leads to a corresponding change in natural vegetation. Between 1500-3000m, coniferous trees like pine, deodar, silver fir, spruce and cedar are found. At higher altitudes, alpine vegetation like silver fir, junipers, pines and birches are common. Near the snow line, they get stunted and merge into alpine grasslands.
           </div>
@@ -122,7 +122,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Quite a few species of plants and animals are endangered in India. Why?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Due to excessive exploitation of plants and animal resources by human beings. Causes include hunting by greedy hunters for commercial purposes, pollution due to chemical and industrial waste, acid deposits, introduction of alien species, and reckless cutting of forests to bring land under cultivation and habitation.
           </div>
         </div>
@@ -130,7 +130,7 @@ export const sstGeoC95: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Why has India a rich heritage of flora and fauna?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> India has a rich heritage of flora and fauna because of its immense geographical and climatic diversity. It has varied relief features (mountains, plateaus, plains, coasts), different types of soils, and a wide range of climatic conditions (varying temperature and rainfall) which provide favourable habitats for different types of flora and fauna.
           </div>
         </div>

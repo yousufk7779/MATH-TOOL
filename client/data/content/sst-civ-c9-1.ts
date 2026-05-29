@@ -192,7 +192,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q1. Here is some information about four countries. Based on this information, how would you classify each of these countries? Write 'democratic', 'undemocratic' or 'not sure' against each of these.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Country A: People who do not accept the country's official religion do not have a right to vote.</b><br/>
@@ -219,7 +219,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q2. Here is some information about four countries. Based on this information, how would you classify each of these countries? Write 'democratic', 'undemocratic' or 'not sure' against each of these.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Country P: The parliament cannot pass a law about the army without the consent of the Chief of Army.</b><br/>
@@ -246,7 +246,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q3. Which of these is not a good argument in favour of democracy? Why?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(d) Democracies are more prosperous than others</b> is not a good argument.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Economic prosperity depends on factors like resources, population, and policies, not just the form of government. Some dictatorial countries are rich, while some democratic countries are still poor.
@@ -259,7 +259,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q4. Each of these statements contains a democratic and an undemocratic element. Write out the two separately for each statement.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) A minister said that some laws have to be passed by the parliament in order to conform to the regulations decided by the World Trade Organisation (WTO).</b><br/>
@@ -285,7 +285,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q5. Which of these is not a valid reason for arguing that there is a lesser possibility of famine in a democratic country?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(d) People are free to believe in and practise any religion</b> is not a valid reason.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Religious freedom is a basic right, but it has no direct link to food supply. Famines are prevented by a free press, active opposition parties, and government accountability to voters.
@@ -298,7 +298,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q6. There are 40 villages in a district where the government has made no provision for drinking water. These villagers met and considered many methods of forcing the government to respond to their need. Which of these is not a democratic method?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(d) Paying money to government officials to get water</b> is not a democratic method.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Offering bribes is a corrupt, illegal act that violates the rule of law. Peaceful strikes, filing court cases, and holding public meetings are legal democratic methods.
@@ -311,7 +311,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q7. Write a response to the following arguments against democracy:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Army is the most disciplined and corruption-free organisation in the country. Therefore army should rule the country.</b><br/>
@@ -334,7 +334,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q8. Are the following statements in keeping with democracy as a value? Why?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Father to daughter: I don't want to hear your opinion about your marriage. In our family children marry where the parents tell them to.</b><br/>
@@ -357,7 +357,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q9. Consider the following facts about a country and decide if you would call it a democracy. Give reasons to support your decision.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) All the citizens of the country have right to vote. Elections are held regularly.</b><br/>
@@ -388,7 +388,7 @@ export const sstCivC91: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q10. Write an essay on 'Democracy and Poverty' using the information given in the US report but using examples from India.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <p style="margin: 6px 0 0 0;">
               <b>Democracy and Poverty:</b> Democracy stands on the idea of political equality (one vote, equal value). However, economic inequality often weakens this. Wealthy groups can influence political parties and policies through massive funding, while the concerns of the poor are often ignored.

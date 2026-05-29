@@ -50,7 +50,7 @@ export const sstGeoC91: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) The Tropic of Cancer does not pass through:</b><br/>
@@ -79,7 +79,7 @@ export const sstGeoC91: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 8px;"><b>(i) Name the group of islands lying in the Arabian Sea:</b><br/>The <b style="color: ${themeColor};">Lakshadweep Islands</b> lie in the Arabian Sea.</li>
               <li style="margin-bottom: 8px;"><b>(ii) Name the countries which are larger than India:</b><br/>The countries larger than India are: <b style="color: ${themeColor};">Russia, Canada, USA, China, Brazil, and Australia</b>.</li>
@@ -92,7 +92,7 @@ export const sstGeoC91: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. The sun rises two hours earlier in Arunachal Pradesh as compared to Gujarat in the west but the watches show the same time. How does this happen?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Longitudinal Lag:</b> The longitudinal stretch of India is about 30 degrees. Since the Earth takes 4 minutes to rotate 1 degree, this causes a time gap of 2 hours between the eastern (Arunachal Pradesh) and western (Gujarat) extremes.</li>
@@ -104,7 +104,7 @@ export const sstGeoC91: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. The central location of India at the head of the Indian Ocean is considered of great significance. Why?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The strategic benefits of India's central position are:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Trade Route Junction:</b> It connects industrial European countries in the west with East Asian markets in the east.</li>

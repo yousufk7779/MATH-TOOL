@@ -53,8 +53,8 @@ export const sstHisC96: ChapterContent = {
           <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">LET'S RECALL</h3>
           
           <!-- Match the Column -->
-          <p style="color: ${themeColor}; font-size: 15px; font-weight: 600; margin-bottom: 8px;">Match the Column:</p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; margin-bottom: 16px; padding-left: 10px;">
+          <p style="color: ${themeColor}; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Match the Column:</p>
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin-bottom: 16px; padding-left: 10px;">
             • <b>Lord Mountbatten:</b> Governor General of India<br/>
             • <b>Yuvraj Karan Singh:</b> Regent of Jammu & Kashmir<br/>
             • <b>Sheikh Abdullah:</b> National militia<br/>
@@ -62,8 +62,8 @@ export const sstHisC96: ChapterContent = {
           </div>
 
           <!-- Fill in the Blanks -->
-          <p style="color: ${themeColor}; font-size: 15px; font-weight: 600; margin-bottom: 8px;">Fill in the blanks:</p>
-          <ol style="color: #D1D1E9; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+          <p style="color: ${themeColor}; font-size: 16px; font-weight: 600; margin-bottom: 8px;">Fill in the blanks:</p>
+          <ol style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin: 0; padding-left: 20px;">
             <li style="margin-bottom: 6px;">The meeting of the Defence Committee was held in Delhi in the year <b style="color: ${themeColor};">1947</b>.</li>
             <li style="margin-bottom: 6px;">A unique feat in Ladakh was that of <b style="color: ${themeColor};">Colonel Chewang Rinchen</b> who resisted the tribal attack at Zojila Pass.</li>
             <li style="margin-bottom: 6px;">The two areas that fall in the territory of Pakistan Occupied Jammu & Kashmir are <b style="color: ${themeColor};">Muzaffarabad</b> and <b style="color: ${themeColor};">Mirpur</b>.</li>
@@ -75,7 +75,7 @@ export const sstHisC96: ChapterContent = {
         <!-- True or False -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <h3 style="color: ${themeColor}; font-size: 17px; font-weight: 700; margin-top: 0; margin-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px;">True or False</h3>
-          <ol style="color: #D1D1E9; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+          <ol style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; margin: 0; padding-left: 20px;">
             <li style="margin-bottom: 8px;">Karan Singh was the regent of Jammu and Kashmir at the time of the signing of Instrument of Accession. <b style="color: #EF5350;">(False)</b></li>
             <li style="margin-bottom: 8px;">V.P Menon advised the Defence Committee to provide military support to the state of Jammu and Kashmir. <b style="color: #66BB6A;">(True)</b></li>
             <li style="margin-bottom: 8px;">Brigadier Rajinder Singh was killed in an operation launched against the Tribal invaders at Uri. <b style="color: #66BB6A;">(True)</b></li>
@@ -90,32 +90,32 @@ export const sstHisC96: ChapterContent = {
           
           <!-- Qa -->
           <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">a) Briefly explain the Stand Still Agreement.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">a) Briefly explain the Stand Still Agreement.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Proposed by Maharaja Hari Singh on 12 August 1947, its purpose was to maintain status quo in trade, travel, and communication until a final decision on accession was reached. Pakistan signed it, while India sought further discussions.
             </p>
           </div>
 
           <!-- Qb -->
           <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">b) Discuss the role played by Indian army in pushing back the Pakistani raiders from the Kashmir valley.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">b) Discuss the role played by Indian army in pushing back the Pakistani raiders from the Kashmir valley.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Airlifted on 27 October 1947, the Indian Army secured Srinagar airport and won the decisive Battle of Shalateng. Led by officers like Major Somnath Sharma and Brigadier L.P. Sen, they cleared Baramulla and Uri, pushing the invaders back.
             </p>
           </div>
 
           <!-- Qc -->
           <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">c) Cite examples from the text to show that the local activists also played a vibrant role in thwarting Pakistani attack.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">c) Cite examples from the text to show that the local activists also played a vibrant role in thwarting Pakistani attack.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Local volunteers formed the National Militia to guard bridges and towns. A key example is Maqbool Sherwani, a Baramulla youth who misled the invaders to delay their advance, sacrificing his life when captured.
             </p>
           </div>
 
           <!-- Qd -->
           <div style="margin-bottom: 0;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">d) Write a brief note on the Formation of Jammu and Kashmir Constituent Assembly.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">d) Write a brief note on the Formation of Jammu and Kashmir Constituent Assembly.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Elections were held in September 1951, and the assembly met on 31 October 1951. It was formed to frame J&K's state constitution, settle the monarchy's status (which was abolished), and ratify J&K's accession to India.
             </p>
           </div>
@@ -127,16 +127,16 @@ export const sstHisC96: ChapterContent = {
           
           <!-- Qa -->
           <div style="margin-bottom: 16px;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">a) Geo-political strategic importance of the Gilgit Agency.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">a) Geo-political strategic importance of the Gilgit Agency.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Gilgit Agency shares borders with China, Afghanistan, and Pakistan. It serves as a vital gateway to Central Asia and was crucial during the "Great Game" to check Russian influence. Today, it remains highly strategic for regional corridors.
             </p>
           </div>
 
           <!-- Qb -->
           <div style="margin-bottom: 0;">
-            <p style="color: ${themeColor}; font-size: 14.5px; font-weight: 700; margin: 0 0 6px 0;">b) The Ill Effects of War.</p>
-            <p style="color: #D1D1E9; font-size: 14px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
+            <p style="color: ${themeColor}; font-size: 14.2px; font-weight: 700; margin: 0 0 6px 0;">b) The Ill Effects of War.</p>
+            <p style="color: #D1D1E9; font-size: 14.2px; line-height: 1.5; text-align: justify; margin: 0; padding-left: 10px;">
               Wars lead to massive loss of human lives, destruction of infrastructure, and severe economic collapse. They cause large-scale civilian displacement and leave long-lasting psychological trauma on families and children.
             </p>
           </div>

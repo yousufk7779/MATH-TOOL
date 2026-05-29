@@ -180,7 +180,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q1. Here are some false statements. Identify the mistake in each case and rewrite these correctly based on what you have read in this chapter.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Leaders of the freedom movement had an open mind about whether the country should be democratic or not after independence.</b><br/>
@@ -207,7 +207,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q2. Which of these was the most salient underlying conflict in the making of a democratic constitution in South Africa?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(c) Between the white minority and the black majority</b>.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> The ruling white minority wanted to protect their wealth and privileges, while the oppressed black majority demanded equal rights, land, and democratic power.
@@ -220,7 +220,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q3. Which of these is a provision that a democratic constitution does not have?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(b) Name of the head of the state</b>.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> A constitution defines the powers, limits, and election process of the head of state, but not their specific personal name.
@@ -233,7 +233,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q4. Match the following leaders with their roles in the making of the Constitution:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 8px;"><b>(a) Motilal Nehru:</b> (iv) Prepared a Constitution for India in 1928.</li>
               <li style="margin-bottom: 8px;"><b>(b) B.R. Ambedkar:</b> (iii) Chairman of the Drafting Committee.</li>
@@ -248,7 +248,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q5. Read again the extracts from Nehru’s speech ‘Tryst with Destiny’ and answer the following:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Why did Nehru use the expression “not wholly or in full measure” in the first sentence?</b><br/>
@@ -271,7 +271,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q6. guidding values of the Constitution match correctly:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 8px;"><b>(a) Sovereign:</b> (ii) People have the supreme right to make decisions.</li>
               <li style="margin-bottom: 8px;"><b>(b) Republic:</b> (iii) Head of the state is an elected person.</li>
@@ -286,7 +286,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q7. How did your school celebrate the Constitution Day on November 26th? Prepare a brief report.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Constitution Day Report:</b>
             <p style="margin: 4px 0 0 0;">
               On 26th November, our school celebrated Constitution Day. During morning assembly, students and teachers read the Preamble together. We organized a quiz and poster competition on fundamental duties. The Principal gave a short speech explaining the values of our Constitution.
@@ -299,7 +299,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q8. Here are different opinions about what made India a democracy. How much importance would you give to each of these factors?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Democracy in India is a gift of the British rulers. We received training to work with representative legislative institutions under the British rule.</b><br/>
@@ -322,7 +322,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q9. Read the 1912 extract from a conduct book for 'married women'. Do you think the values expressed in this para reflected the values underlying our constitution? Or does this go against the constitutional values?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: No, the extract goes completely <b style="color: ${themeColor};">against</b> our constitutional values.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> The extract describes women as weak and born to serve men. In contrast, the Indian Constitution treats both men and women as equals, completely rejecting gender discrimination.
@@ -335,7 +335,7 @@ export const sstCivC92: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q10. Read the following statements about a constitution. Give reasons why each of these is true or not true.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) The authority of the rules of the constitution is the same as that of any other law.</b><br/>

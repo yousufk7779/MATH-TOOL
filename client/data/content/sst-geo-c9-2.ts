@@ -51,7 +51,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) A landmass bounded by sea on three sides is referred to as:</b><br/>
@@ -76,7 +76,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) What is the bhabar?</b><br/>
@@ -101,7 +101,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Distinguish between: (i) Bhangar and Khadar, (ii) Western Ghats and Eastern Ghats.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <!-- Bhangar vs Khadar -->
             <p style="color: ${themeColor}; font-weight: bold; margin: 0 0 6px 0;">(i) Bhangar vs Khadar:</p>
             <ul style="margin: 0 0 14px 0; padding-left: 20px;">
@@ -121,7 +121,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Which are the major physiographic divisions of India? Contrast the relief of the Himalayan region with that of the Peninsular plateau.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor};">Major Divisions:</b> (1) The Himalayas, (2) The Northern Plains, (3) The Peninsular Plateau, (4) The Indian Desert, (5) The Coastal Plains, and (6) The Islands.
             
             <p style="color: ${themeColor}; font-weight: bold; margin: 10px 0 6px 0;">Contrast of Relief:</p>
@@ -135,7 +135,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Give an account of the Northern Plains of India.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Features of the Northern Plains:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Formation:</b> Deposited over millions of years by the Indus, Ganga, and Brahmaputra river systems and their tributaries.</li>
@@ -149,7 +149,7 @@ export const sstGeoC92: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Write short notes on the following: (i) The Indian Desert, (ii) The Central Highlands, (iii) The Island groups of India.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) The Indian Desert:</b> Located west of the Aravali Hills. A dry, sandy plain covered with crescent sand dunes (barchans). Low rainfall (under 150 mm/yr) and arid climate, with <b>Luni</b> as its only major river.

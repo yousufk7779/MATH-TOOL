@@ -51,7 +51,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Choose the right answer from the four alternatives given below.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) Which one of the following places receives the highest rainfall in the world?</b><br/>
@@ -80,7 +80,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Answer the following questions briefly.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) What are the controls affecting the climate of India?</b><br/>
@@ -117,7 +117,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Why does the rainfall decrease from the east to the west in Northern India?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Bay of Bengal branch of the monsoon moves inland from east to west along the Ganga plains. As it travels westward, it continuously sheds moisture, leading to a steady decrease in rainfall towards the west.
           </div>
         </div>
@@ -125,7 +125,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Give reasons as to why.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(i) Seasonal reversal of wind direction takes place over the Indian subcontinent?</b><br/>
@@ -154,7 +154,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Describe the regional variations in the climatic conditions of India with the help of suitable examples.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> India shows sharp regional contrasts in climate:
             <ul style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 6px;"><b>Temperature:</b> Summer temperatures reach 50°C in the Rajasthan desert but stay around 20°C in Pahalgam (Kashmir). Winter nights drop to -45°C in Drass but are 24°C in Chennai.</li>
@@ -166,7 +166,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Discuss the mechanism of monsoons.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The mechanism is driven by:
             <ol style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: decimal;">
               <li style="margin-bottom: 6px;"><b>Differential heating and cooling</b> of land and sea.</li>
@@ -181,7 +181,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q7 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q7. Give an account of weather conditions and characteristics of the cold season.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Characteristics of the winter season (mid-November to February):
             <ul style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 6px;"><b>Temperature:</b> Cool days and cold nights. Temperatures average 10°C-15°C in the northern plains.</li>
@@ -194,7 +194,7 @@ export const sstGeoC94: ChapterContent = {
         <!-- Q8 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q8. Give the characteristics and effects of the monsoon rainfall in India.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 8px;"><b>Characteristics:</b> Highly erratic, seasonal (June to September), unevenly distributed, and alternates between wet spells and dry breaks.</li>

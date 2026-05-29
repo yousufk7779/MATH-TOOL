@@ -179,7 +179,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q1. If you are elected as the President of India which of the following decision can you take on your own?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(c) Ask for reconsideration of a bill passed by both the Houses.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> The President is the nominal head of state and must act on the advice of the Prime Minister and Cabinet. However, the President can exercise independent judgment to send back a non-money bill to Parliament for reconsideration once.
@@ -192,7 +192,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q2. Who among the following is a part of the political executive?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(c) Home Minister.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Ministers are elected representatives of the people who hold political portfolios, forming the political executive. District Collectors, secretaries, and police chiefs are permanent civil servants (permanent executive).
@@ -205,7 +205,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q3. Which of the following statements about the judiciary is false?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(a) Every law passed by the Parliament needs approval of the Supreme Court.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Parliament is the supreme legislative organ and has the power to pass laws. The Supreme Court only intervenes if a law is challenged in court and found to violate the Constitution.
@@ -218,7 +218,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q4. Which of the following institutions can make changes to an existing law of the country?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(d) The Parliament.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Under the Indian Constitution, the Parliament is the sole body authorized to make, modify, or repeal laws.
@@ -270,7 +270,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q6. Name the institution that exercises powers on each of the following matters:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Decision on allocation of money for developing infrastructure like roads, irrigation etc. and different welfare activities for the citizens:</b><br/>
@@ -297,7 +297,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q7. Why is the Prime Minister in India not directly elected by the people? Choose the most appropriate answer and give reasons for your choice.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(a) In a Parliamentary democracy only the leader of the majority party in the Lok Sabha can become the Prime Minister.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> In a parliamentary system, the Prime Minister represents the majority coalition in the legislature. A directly elected Prime Minister without Lok Sabha majority would create a conflict of powers, making it impossible to pass bills or run the government effectively.
@@ -310,7 +310,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q8. Reaction to a film showing a hero becoming Chief Minister for a day and making massive changes in the state:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b>Reaction:</b> Such films are works of fiction. In real life, a democracy functions based on constitutional procedures and rules, not personal decrees.
             <ul style="margin: 6px 0 0 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 6px;"><b>Rizwan's view is correct:</b> Running a government without institutions leads to dictatorship, arbitrary decisions, and instability.</li>
@@ -324,7 +324,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q9. If you had the option to act as a leader in a mock Parliament with a majority in either the Lok Sabha or the Rajya Sabha, which house would you choose and why?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: I would choose to have a majority in the <b style="color: ${themeColor};">Lok Sabha</b>.
             <p style="margin: 6px 0 0 0;">
               <b>Reasons:</b>
@@ -338,7 +338,7 @@ export const sstCivC94: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q10. Which view is the correct reading of the role of judiciary regarding the reservation case?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: <b style="color: ${themeColor};">Anjaiah's view (b) is the correct reading of the judiciary's role.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> An independent judiciary is free to give verdicts against government policies. While the Supreme Court upheld the constitutional validity of the reservation order, it independently directed the government to modify it to exclude the creamy layer, showing it did not simply conform to the executive.

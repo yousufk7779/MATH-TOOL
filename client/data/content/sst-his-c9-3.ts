@@ -51,7 +51,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Describe the problems faced by the Weimar Republic.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Weimar Republic faced major difficulties from its start:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Humiliation at Versailles:</b> The Republic had to sign the harsh Treaty of Versailles, taking blame for WWI, losing colonies, and paying heavy war reparations.</li>
@@ -65,7 +65,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Discuss why Nazism became popular in Germany by 1930.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazism grew popular due to the following factors:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Economic Distress:</b> The Great Depression left workers jobless and middle classes ruined. Hitler promised employment and security.</li>
@@ -79,7 +79,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. What are the peculiar features of Nazi thinking?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazi thinking had several specific ideological features:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Racial Hierarchy:</b> There was no equality. Nordic German Aryans were the master race; Jews were at the bottom as the 'anti-race'.</li>
@@ -93,7 +93,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Explain why Nazi propaganda was effective in creating a hatred for Jews.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Nazi propaganda succeeded in spreading anti-Semitism by:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Exploiting History:</b> Playing on traditional Christian prejudices that blamed Jews for the death of Christ.</li>
@@ -107,7 +107,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Explain what role women had in Nazi society. Return to Chapter 1 on the French Revolution. Write a paragraph comparing and contrasting the role of women in the two periods.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> In Nazi Germany, women were seen as mothers whose primary duty was to maintain Aryan racial purity and raise children. They were discouraged from public life and politics, and awarded medals based on the number of children they had.
             <p style="margin: 8px 0 0 0; text-align: justify;"><b>Comparison with French Revolution:</b> During the French Revolution, women actively participated in political clubs, wrote newspapers, and fought for political equality and voting rights. In contrast, Nazi society actively discouraged women from public life, training them to submit to domestic roles. While French revolutionary women sought liberation, Nazi women were treated as instruments of state reproduction. However, both periods initially denied women full voting rights and representation.</p>
           </div>
@@ -116,7 +116,7 @@ export const sstHisC93: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. In what ways did the Nazi state seek to establish total control over its people?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Nazi state established absolute control over Germany by:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Enabling Act (1933):</b> Gave Hitler powers to bypass Parliament and rule by decree, banning all other political parties and trade unions.</li>

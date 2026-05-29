@@ -52,7 +52,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Describe the circumstances leading to the outbreak of revolutionary protest in France.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The main circumstances leading to the revolution were:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Social Inequality:</b> Society was divided into three estates. Only the Third Estate paid taxes, while the first two estates enjoyed birth privileges and paid nothing.</li>
@@ -67,7 +67,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Which groups of French society benefited from the revolution? Which groups were forced to relinquish power? Which sections of society would have been disappointed with the outcome of the revolution?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Benefited:</b> The wealthy middle class of the Third Estate (merchants, lawyers, teachers, and richer peasants) gained political power, liberty, and equal rights.</li>
@@ -80,7 +80,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Describe the legacy of the French Revolution for the peoples of the world during the nineteenth and twentieth centuries.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The global legacy of the revolution is defined by:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Spread of Liberty & Equality:</b> These ideas spread across Europe, shaking absolute monarchies and putting an end to the feudal system.</li>
@@ -93,7 +93,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Draw up a list of democratic rights we enjoy today whose origins could be traced to the French Revolution.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The democratic rights we enjoy today tracing back to the French Revolution are:
             <ul style="margin: 8px 0 0 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 6px;">Right to Equality</li>
@@ -109,7 +109,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. Would you agree with the view that the message of universal rights was beset with contradictions? Explain.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Yes, there were clear contradictions in the application of universal rights:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Exclusion of the Poor:</b> Voting rights were restricted only to active citizens (wealthy tax-paying men). The poor had no political representation.</li>
@@ -122,7 +122,7 @@ export const sstHisC91: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. How would you explain the rise of Napoleon?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Napoleon Bonaparte's rise to power was driven by:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Political Instability:</b> The Directory government, which ruled after Robespierre's fall, was weak and corrupt, constantly clashing with legislative councils.</li>

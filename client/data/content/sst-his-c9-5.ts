@@ -51,7 +51,7 @@ export const sstHisC95: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. Explain why nomadic tribes need to move from one place to another. What are the advantages to the environment of this continuous movement?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Need for Movement:</b> They migrate seasonally to find water and fresh grazing pastures for their livestock when their local resources dry up.</li>
@@ -65,7 +65,7 @@ export const sstHisC95: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. Write a short note on the history and culture of Gujjar-Bakkerwal Tribe of Jammu and Kashmir region.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>History:</b> They are pastoral nomads of Jammu & Kashmir who migrated from the plains in the 19th century to herd sheep and goats.</li>
@@ -79,7 +79,7 @@ export const sstHisC95: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Discuss why the colonial government in India brought in the following laws. In each case, explain how the law changed the lives of pastoralists: Waste Land rules, Forest Acts, Criminal Tribes Act, Grazing Tax.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Waste Land Rules:</b> Brought to convert uncultivated land into agricultural farms for tax revenue and export crops. <i>Impact:</i> Shrinks available grazing lands.</li>
@@ -93,7 +93,7 @@ export const sstHisC95: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Give reasons to explain why the Maasai community lost their grazing lands.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Maasai lost lands due to:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Colonial Borders:</b> In 1885, Maasai territory was cut in half by British-German colonial borders, pushing them into small, dry zones.</li>
@@ -107,7 +107,7 @@ export const sstHisC95: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. There are many similarities in the way in which the modern world forced changes in the lives of pastoral communities in India and East Africa. Explain.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b>Shrinking Lands:</b> In both regions, colonial states seized vast pasture lands for forests, farming, and game reserves.</li>

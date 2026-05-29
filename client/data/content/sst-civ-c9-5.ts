@@ -207,7 +207,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q1. Which of the following is not an instance of an exercise of a fundamental right?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(d) Parents' property is inherited by their children.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> Inheriting property is a legal/constitutional right (under Article 300A), but it is not a Fundamental Right. Options (a), (b), and (c) represent Right to Freedom, Cultural & Educational Rights, and Right to Equality, respectively.
@@ -220,7 +220,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q2. Which of the following freedoms is not available to an Indian citizen?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(b) Freedom to participate in armed revolution.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> The Constitution grants the right to assemble peacefully and without arms. Participating in an armed revolution threatens public order and national security, which is illegal.
@@ -233,7 +233,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q3. Which of the following rights is available under the Indian Constitution?
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Option <b style="color: ${themeColor};">(c) Right to protect one's culture.</b>
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> This is explicitly guaranteed as a Fundamental Right under Cultural and Educational Rights (Article 29). Right to work and livelihood are under Directive Principles.
@@ -246,7 +246,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q4. Name the Fundamental Right under which each of the following rights falls:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 8px;"><b>(a) Freedom to propagate one's religion:</b> <span style="color: ${themeColor}; font-weight: 600;">Right to Freedom of Religion</span></li>
               <li style="margin-bottom: 8px;"><b>(b) Right to life:</b> <span style="color: ${themeColor}; font-weight: 600;">Right to Freedom</span> (Article 21)</li>
@@ -261,7 +261,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q5. Which of these statements about the relationship between democracy and rights is more valid? Give reasons for your preference.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             Answer: Statement <b style="color: ${themeColor};">(a) Every country that is a democracy gives rights to its citizens.</b> is more valid.
             <p style="margin: 6px 0 0 0;">
               <b>Reason:</b> A democracy is based on elections, debate, and equality, which are impossible without rights like freedom of speech, voting, and assembly. While some non-democratic nations can grant civil rights, a democracy cannot exist without guaranteeing citizen rights.
@@ -274,7 +274,7 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q6. Are these restrictions on the right to freedom justified? Give reasons for your answer.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 10px;">
                 <b>(a) Indian citizens need permission to visit some border areas for reasons of security:</b><br/>
@@ -297,16 +297,16 @@ export const sstCivC95: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q7. Manoj went to a college to apply for admission into an MBA course. The clerk refused to take his application and said "You, the son of a sweeper, wish to be a manager! Has anyone done this job in your community? Go to the municipality office and apply for a sweeper’s position". Which of Manoj’s fundamental rights are being violated in this instance? Spell these out in a letter from Manoj to the district collector.
           </p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
-            <b style="color: #FFFFFF; font-size: 15px; display: block; margin-bottom: 8px;">Violated Fundamental Rights:</b>
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
+            <b style="color: #FFFFFF; font-size: 16px; display: block; margin-bottom: 8px;">Violated Fundamental Rights:</b>
             <div style="background: rgba(156, 39, 176, 0.05); border-left: 3px solid ${themeColor}; padding: 10px 14px; margin-bottom: 16px; border-radius: 0 8px 8px 0;">
               <p style="margin: 0 0 6px 0;"><span style="color: ${themeColor}; font-weight: bold;">1. Right to Equality (Article 15):</span> Refusing admission based on caste or parent's occupation is illegal discrimination.</p>
               <p style="margin: 0 0 6px 0;"><span style="color: ${themeColor}; font-weight: bold;">2. Right to Freedom (Article 19(1)(g)):</span> Manoj has the freedom to choose any occupation, trade, or education he wishes.</p>
               <p style="margin: 0;"><span style="color: ${themeColor}; font-weight: bold;">3. Abolition of Untouchability (Article 17):</span> The clerk's comment represents caste-based social exclusion, which is a punishable offense.</p>
             </div>
             
-            <b style="color: #FFFFFF; font-size: 15px; display: block; margin-bottom: 8px;">Complaint Letter to the District Collector:</b>
-            <div style="background-color: #151522; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; font-family: monospace; font-size: 12.5px; color: #C5C5D2; line-height: 1.5; white-space: pre-wrap; box-shadow: inset 0 2px 8px rgba(0,0,0,0.3);">
+            <b style="color: #FFFFFF; font-size: 16px; display: block; margin-bottom: 8px;">Complaint Letter to the District Collector:</b>
+            <div style="background-color: #151522; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; font-family: monospace; font-size: 12px; color: #C5C5D2; line-height: 1.5; white-space: pre-wrap; box-shadow: inset 0 2px 8px rgba(0,0,0,0.3);">
 To,
 The District Collector,
 Hoshangabad, Madhya Pradesh.
@@ -333,17 +333,17 @@ Manoj
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q8. When Madhurima went to the property registration office, the registrar told her, "You can’t write your name as Madhurima Banerjee d/o A. K. Banerjee. You are married, so you must give your husband’s name. Your husband’s surname is Rao. So your name should be changed to Madhurima Rao." She did not agree. She said "If my husband’s name has not changed after marriage, why should mine?" In your opinion who is right in this dispute? And why?
           </p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
-            <b style="color: #4CAF50; font-size: 15px; display: block; margin-bottom: 10px;">Verdict: Madhurima is completely right in this dispute.</b>
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
+            <b style="color: #4CAF50; font-size: 16px; display: block; margin-bottom: 10px;">Verdict: Madhurima is completely right in this dispute.</b>
             
             <!-- Comparison Columns -->
             <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
               <div style="background: rgba(244, 67, 54, 0.08); border-left: 3px solid #F44336; padding: 10px 14px; border-radius: 4px;">
-                <span style="color: #EF5350; font-weight: bold; display: block; font-size: 13.5px; margin-bottom: 4px;">❌ Registrar's Stand (Wrong)</span>
+                <span style="color: #EF5350; font-weight: bold; display: block; font-size: 13px; margin-bottom: 4px;">❌ Registrar's Stand (Wrong)</span>
                 Mandates that a married woman must use her husband's surname and father-in-law's name, treating women as dependent entities without independent legal identity.
               </div>
               <div style="background: rgba(76, 175, 80, 0.08); border-left: 3px solid #4CAF50; padding: 10px 14px; border-radius: 4px;">
-                <span style="color: #81C784; font-weight: bold; display: block; font-size: 13.5px; margin-bottom: 4px;">✅ Madhurima's Stand (Right)</span>
+                <span style="color: #81C784; font-weight: bold; display: block; font-size: 13px; margin-bottom: 4px;">✅ Madhurima's Stand (Right)</span>
                 Asserts that since marriage does not change the husband's name, it shouldn't force a change in the wife's name. She chooses to keep her maiden identity.
               </div>
             </div>
@@ -359,34 +359,34 @@ Manoj
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q9. Thousands of tribals and other forest dwellers gathered at Piparia in Hoshangabad district in Madhya Pradesh to protest against their proposed displacement from the Satpura National Park, Bori Wildlife Sanctuary and Panchmarhi Wildlife Sanctuary. They argue that such a displacement is an attack on their livelihood and beliefs. Government claims that their displacement is essential for the development of the area and for protection of wildlife. Write a petition on behalf of the forest dwellers to the NHRC, a response from the government and a report of the NHRC on this matter.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify; display: flex; flex-direction: column; gap: 16px;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify; display: flex; flex-direction: column; gap: 16px;">
             
             <!-- Petition Card -->
             <div style="background-color: rgba(3, 169, 244, 0.04); border: 1px solid rgba(3, 169, 244, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #03A9F4; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.5px; margin-bottom: 6px;">
+              <span style="color: #03A9F4; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
                 📝 1. Petition to NHRC (on behalf of Forest Dwellers)
               </span>
-              <p style="margin: 0; font-size: 13.5px; color: #E0E0E0; line-height: 1.5;">
+              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
                 "We have inhabited these forests peacefully for generations. The eviction order violates our **Right to Livelihood (Article 21)** and **Cultural Rights (Article 29)**. Displacing us without consent robs us of our survival. We request the NHRC to stay the evictions and protect our human rights."
               </p>
             </div>
 
             <!-- Government Response Card -->
             <div style="background-color: rgba(255, 152, 0, 0.04); border: 1px solid rgba(255, 152, 0, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #FF9800; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.5px; margin-bottom: 6px;">
+              <span style="color: #FF9800; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
                 🏛️ 2. Government Response to NHRC
               </span>
-              <p style="margin: 0; font-size: 13.5px; color: #E0E0E0; line-height: 1.5;">
+              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
                 "Conservation of Bori Wildlife Sanctuary and Satpura National Park is vital to protect endangered species and biodiversity. The displacement is necessary for environmental preservation. We assure a full rehabilitation package, including alternative agricultural land, housing, and financial aid."
               </p>
             </div>
 
             <!-- NHRC Report Card -->
             <div style="background-color: rgba(76, 175, 80, 0.04); border: 1px solid rgba(76, 175, 80, 0.2); border-radius: 12px; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-              <span style="color: #4CAF50; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.5px; margin-bottom: 6px;">
+              <span style="color: #4CAF50; font-weight: 700; display: flex; align-items: center; gap: 6px; font-size: 14.2px; margin-bottom: 6px;">
                 ⚖️ 3. NHRC Report & Directives
               </span>
-              <p style="margin: 0; font-size: 13.5px; color: #E0E0E0; line-height: 1.5;">
+              <p style="margin: 0; font-size: 13.2px; color: #E0E0E0; line-height: 1.5;">
                 "While environmental protection is key, the fundamental rights of forest dwellers cannot be ignored. The NHRC directs the government to suspend evictions immediately. No displacement shall take place until alternative lands are allotted, and schools, drinking water, and infrastructure are constructed at the new sites."
               </p>
             </div>
@@ -399,7 +399,7 @@ Manoj
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q10. Draw a web interconnecting different rights discussed in this chapter. For example right to freedom of movement is connected to the freedom of occupation. One reason for this is that freedom of movement enables a person to go to place of work within one’s village or city or another village, city or state. Similarly this right can be used for pilgrimage, connected with freedom to follow one’s religion. Draw a circle for each right and mark arrows that show connection between or among different rights. For each arrow, give an example that shows the linkage.
           </p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <span style="display: block; margin-bottom: 10px; font-weight: 600;">Interconnection of Fundamental Rights (Linkage Web):</span>
             
             <!-- SVG Web Graphic -->

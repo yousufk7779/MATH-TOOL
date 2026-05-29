@@ -51,7 +51,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q1 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q1. What were the social, economic and political conditions in Russia before 1905?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The pre-1905 conditions in Russia were:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Social Conditions:</b> Around 85% of the population were agriculturists. Peasants worked the land, but nobility and church owned most property. Workers in cities were divided by skill.</li>
@@ -64,7 +64,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q2 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q2. In what ways was the working population in Russia different from other countries in Europe, before 1917?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Russian workers differed from European workers in key ways:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">High Agricultural Dependence:</b> 85% of Russians worked in agriculture, compared to only 40-50% in Germany or France.</li>
@@ -78,7 +78,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q3 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q3. Why did the Tsarist autocracy collapse in 1917?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Tsarist collapse was caused by:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Impact of World War I:</b> Russia lost over 7 million soldiers. War expenses destroyed the economy and caused grain shortages in cities.</li>
@@ -92,7 +92,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q4 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q4. Make two lists: one with the main events and the effects of the February Revolution and the other with the main events and effects of the October Revolution. Write a paragraph on who was involved in each, who were the leaders and what was the impact of each on Soviet history.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <p style="margin: 6px 0 4px 0;"><b style="color: ${themeColor};">1. February Revolution (Petrograd, 1917):</b></p>
             <ul style="margin: 0; padding-left: 20px;">
@@ -111,7 +111,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q5 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q5. What were the main changes brought about by the Bolsheviks immediately after the October Revolution?</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> Immediate changes brought about by the Bolsheviks:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Nationalization:</b> All banks and industries were nationalized in November 1917.</li>
@@ -126,7 +126,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q6 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q6. Write a few lines to show what you know about: kulaks, the Duma, women workers between 1900 and 1930, the Liberals, Stalin's collectivisation programme.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b>
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 8px;"><b style="color: ${themeColor};">Kulaks:</b> Wealthy peasants in Russia. Accused of hoarding grain, they were targeted and systematically eliminated during Stalin's agricultural reforms.</li>
@@ -141,7 +141,7 @@ export const sstHisC92: ChapterContent = {
         <!-- Q7 -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">Q7. Briefly discuss the impact of Russian Revolution in Kashmir.</p>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor}; font-weight: 600;">Answer:</b> The Russian Revolution of 1917 strongly influenced Jammu and Kashmir:
             <ul style="margin: 6px 0 0 0; padding-left: 20px;">
               <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Anti-Feudalism:</b> The collapse of the Tsarist empire inspired Kashmiri leaders to organize movements to end the autocratic Dogra dynasty rule.</li>

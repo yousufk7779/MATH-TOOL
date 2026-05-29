@@ -179,7 +179,7 @@ export const sstCivC96: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 10px; line-height: 1.4; text-align: justify;">
             Q1. Collect information about any of the elections held in the erstwhile state of J&K.
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <b style="color: ${themeColor};">The 1951 J&K Constituent Assembly Elections:</b>
             <p style="margin: 6px 0 0 0;">
               These were the first general elections in post-independence Jammu and Kashmir. Yuvraj Karan Singh issued the proclamation for setting up the Constituent Assembly on May 1st, 1951.
@@ -226,7 +226,7 @@ export const sstCivC96: ChapterContent = {
           <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin-top: 0; margin-bottom: 12px; line-height: 1.5; text-align: justify;">
             Q3. Identify the errors in the following statements:
           </p>
-          <div style="color: #D1D1E9; font-size: 14px; line-height: 1.6; text-align: justify;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.6; text-align: justify;">
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc;">
               <li style="margin-bottom: 12px;">
                 <b>(a) Maharaja Hari Singh ruled J&K till accession of the state with India. So there is no need of Praja Sabha (Elected Legislative Assembly) in 1934:</b><br/>

@@ -232,24 +232,24 @@ export const sstEcoC91: ChapterContent = {
           <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">✏️</span> A. Fill in the blanks
           </h3>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.8; display: flex; flex-direction: column; gap: 14px;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
             <div>
-              <b>i.</b> <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">Reserve Bank of India (RBI)</span> issues currency notes on behalf of the Central Government.
+              <b>i.</b> <span style="color: ${themeColor}; font-weight: bold;">Reserve Bank of India (RBI)</span> issues currency notes on behalf of the Central Government.
             </div>
             <div>
-              <b>ii.</b> Banks charge a higher interest rate on loans than what they offer on <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">deposits</span>.
+              <b>ii.</b> Banks charge a higher interest rate on loans than what they offer on <span style="color: ${themeColor}; font-weight: bold;">deposits</span>.
             </div>
             <div>
-              <b>iii.</b> <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">Collateral</span> is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender.
+              <b>iii.</b> <span style="color: ${themeColor}; font-weight: bold;">Collateral</span> is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender.
             </div>
             <div>
-              <b>iv.</b> A <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">Savings bank account</span> is the simplest form of bank account which can be opened by any individual for encouraging savings.
+              <b>iv.</b> A <span style="color: ${themeColor}; font-weight: bold;">Savings bank account</span> is the simplest form of bank account which can be opened by any individual for encouraging savings.
             </div>
             <div>
-              <b>v.</b> The most common form of payments being made instead of cash is a bank instrument called a <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">cheque</span>.
+              <b>v.</b> The most common form of payments being made instead of cash is a bank instrument called a <span style="color: ${themeColor}; font-weight: bold;">cheque</span>.
             </div>
             <div>
-              <b>vi.</b> This is also called a "remotely created check", <span style="text-decoration: underline; color: ${themeColor}; font-weight: bold;">Demand Draft</span>.
+              <b>vi.</b> This is also called a "remotely created check", <span style="color: ${themeColor}; font-weight: bold;">Demand Draft</span>.
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@ export const sstEcoC91: ChapterContent = {
           <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">💡</span> B. One word Answers
           </h3>
-          <div style="color: #D1D1E9; font-size: 14.5px; line-height: 1.8; display: flex; flex-direction: column; gap: 14px;">
+          <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
             <div>
               <b>i. The central bank of India:</b><br/>
               ➡️ <span style="color: ${themeColor}; font-weight: bold;">Reserve Bank of India (RBI)</span>
@@ -292,8 +292,8 @@ export const sstEcoC91: ChapterContent = {
             
             <!-- C1 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">1. What is double coincidence of wants? Explain with an example of your own.</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">1. What is double coincidence of wants? Explain with an example of your own.</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Under the barter system, double coincidence of wants is a situation where both parties have to agree to buy and sell each other's goods. 
                 <br/><i>Example:</i> If a farmer wants to exchange wheat for shoes, he must find a shoemaker who not only has shoes to sell but also wants to buy wheat in exchange.
               </p>
@@ -301,8 +301,8 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- C1 (2nd) -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">2. Can you think of some examples of goods/services being exchanged or wages being paid through barter?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">2. Can you think of some examples of goods/services being exchanged or wages being paid through barter?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Yes, examples include:
                 <br/>• <b>Goods:</b> Village traders exchanging grains (paddy) in return for vegetables or clay pots.
                 <br/>• <b>Wages/Services:</b> Agricultural laborers receiving a portion of the crop harvest (wheat/paddy) as their wages instead of cash, or a barber cutting hair in exchange for vegetables.
@@ -311,16 +311,16 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- C2 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">3. Why is money called a medium of exchange?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">3. Why is money called a medium of exchange?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Money is called a medium of exchange because it acts as an intermediary instrument in transactions. It eliminates the double coincidence of wants by allowing individuals to easily sell their products for money and then use that money to purchase any other commodity.
               </p>
             </div>
 
             <!-- C3 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">4. What are the different forms of modern currency?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">4. What are the different forms of modern currency?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Modern currency consists of:
                 <br/>• <b>Paper currency</b> (currency notes) and <b>Coins</b>.
                 <br/>• <b>Demand Deposits</b> (money held in bank accounts).
@@ -330,56 +330,56 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- C4 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">5. Who is authorized to issue currency in India?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">5. Who is authorized to issue currency in India?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> The <b>Reserve Bank of India (RBI)</b> is authorized to issue currency notes on behalf of the Central Government. The Ministry of Finance issues one-rupee notes and all coins.
               </p>
             </div>
 
             <!-- C5 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">6. Why can no one refuse to accept payment in rupees?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">6. Why can no one refuse to accept payment in rupees?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> In India, the law legalizes the use of the Rupee as a medium of payment that cannot be refused in settling transactions. Thus, refusing the rupee is a legal offense, making it a universally accepted legal tender.
               </p>
             </div>
 
             <!-- C6 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">7. Why are the deposits in the bank account called deposits?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">7. Why are the deposits in the bank account called deposits?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> They are called deposits because depositors hand over (deposit) their surplus cash to the bank for safe keeping. Since these funds can be withdrawn at any time on the depositor's demand, they are specifically referred to as **demand deposits**.
               </p>
             </div>
 
             <!-- C7 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">8. How do banks mediate between those who have surplus money and those who need money?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">8. How do banks mediate between those who have surplus money and those who need money?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Banks accept deposits from savers (who have surplus money) and pay them a lower interest rate. Banks then use a major portion of these deposited funds to extend loans to borrowers (who need money) at a higher interest rate. The difference between these rates is the bank's earnings.
               </p>
             </div>
 
             <!-- C8 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">9. Define a Cheque.</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">9. Define a Cheque.</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> A cheque is a paper instrument instructing a bank to pay a specific amount of money from the account of the depositor (drawer) to the person or entity in whose name the cheque has been issued (payee).
               </p>
             </div>
 
             <!-- C9 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">10. Define a Loan.</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">10. Define a Loan.</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> A loan (or credit) is an agreement in which a lender supplies money, goods, or services to a borrower in return for a promise of future repayment along with a pre-agreed rate of interest.
               </p>
             </div>
 
             <!-- C10 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 6px 0;">11. Why do lenders ask for collateral while lending?</p>
-              <p style="color: #D1D1E9; margin: 0; line-height: 1.5; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0; line-height: 1.5; text-align: justify;">11. Why do lenders ask for collateral while lending?</p>
+              <p style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 <b>Answer:</b> Lenders ask for collateral (security) to protect themselves against the risk of default. If the borrower fails to repay the loan, the lender has the legal right to sell the collateral asset to recover the outstanding balance.
               </p>
             </div>
@@ -396,8 +396,8 @@ export const sstEcoC91: ChapterContent = {
             
             <!-- D1 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 8px 0; font-size: 15px;">1. What are the various forms of modern money?</p>
-              <div style="color: #D1D1E9; margin: 0; line-height: 1.6; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">1. What are the various forms of modern money?</p>
+              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 Modern money does not have intrinsic value (unlike gold/silver coins). The main forms are:
                 <ul style="margin: 6px 0 0 0; padding-left: 20px;">
                   <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Paper Currency & Coins:</b> Government-authorized banknotes and metal coins. In India, RBI prints notes and the government mints coins.</li>
@@ -410,10 +410,10 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- D2 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 8px 0; font-size: 15px;">2. What is the procedure of opening a Savings Bank account?</p>
-              <div style="color: #D1D1E9; margin: 0; line-height: 1.6; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">2. What is the procedure of opening a Savings Bank account?</p>
+              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 Opening a Savings Bank Account involves a systematic legal procedure:
-                <div style="background-color: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px; margin-top: 6px; font-family: monospace; font-size: 13px;">
+                <div style="background-color: #151522; border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px; margin-top: 6px; font-family: monospace; font-size: 12px; line-height: 1.5;">
 1. Choose a Bank: Select a commercial, cooperative, or public sector bank.
 2. Fill Account Opening Form (AOF): Obtain and fill the AOF with details (name, age, occupation, address).
 3. Attach KYC Documents: Provide copies of Identity Proof (Aadhaar, PAN card) and Address Proof (Utility bills).
@@ -426,8 +426,8 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- D3 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 8px 0; font-size: 15px;">3. How can you withdraw money from a Savings Bank account?</p>
-              <div style="color: #D1D1E9; margin: 0; line-height: 1.6; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">3. How can you withdraw money from a Savings Bank account?</p>
+              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 Money can be withdrawn from a savings bank account using several convenient methods:
                 <ul style="margin: 6px 0 0 0; padding-left: 20px;">
                   <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Withdrawal Slip:</b> A depositor physically visits the bank branch, fills a withdrawal slip along with their bank passbook, and collects cash from the cashier.</li>
@@ -440,8 +440,8 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- D4 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 8px 0; font-size: 15px;">4. What are the various forms of Plastic money?</p>
-              <div style="color: #D1D1E9; margin: 0; line-height: 1.6; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">4. What are the various forms of Plastic money?</p>
+              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 Plastic money refers to physical credit cards, debit cards, and payment cards made of plastic. The main forms are:
                 <ul style="margin: 6px 0 0 0; padding-left: 20px;">
                   <li style="margin-bottom: 6px;"><b style="color: ${themeColor};">Debit Cards:</b> Directly linked to the user's savings or current bank account. When a transaction is made, the money is instantly deducted from the account.</li>
@@ -454,13 +454,13 @@ export const sstEcoC91: ChapterContent = {
 
             <!-- D5 -->
             <div>
-              <p style="color: ${themeColor}; font-weight: 700; margin: 0 0 8px 0; font-size: 15px;">5. Explain the various credit and loan activities of Banks with an example?</p>
-              <div style="color: #D1D1E9; margin: 0; line-height: 1.6; text-align: justify;">
+              <p style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 8px 0; line-height: 1.5; text-align: justify;">5. Explain the various credit and loan activities of Banks with an example?</p>
+              <div style="color: #D1D1E9; font-size: 14.2px; margin: 0; line-height: 1.6; text-align: justify;">
                 Banks function as financial intermediaries using public deposits. Their operations are as follows:
                 <p style="margin: 6px 0 10px 0;">
                   Banks keep only a small portion of deposits as cash (normally 15% in India) to meet daily withdrawals. They use the remaining 85% to extend loans to borrowers. The bank charges a higher interest rate on loans than the rate paid on deposits.
                 </p>
-                <div style="background-color: rgba(255, 193, 7, 0.04); border-left: 3px solid ${themeColor}; padding: 12px; border-radius: 0 8px 8px 0;">
+                <div style="background-color: rgba(255, 193, 7, 0.04); border-left: 3px solid ${themeColor}; padding: 12px; border-radius: 0 8px 8px 0; font-size: 13px;">
                   <b>Example Case:</b>
                   <br/>• <b>Rohan</b> deposits ₹10,000 in his savings account. The bank offers him a <b>3% annual interest</b>.
                   <br/>• <b>Amit</b> is a shopkeeper who needs ₹8,000 to buy stock. He takes a business loan from the bank at a <b>10% annual interest</b>.
@@ -468,7 +468,6 @@ export const sstEcoC91: ChapterContent = {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 
