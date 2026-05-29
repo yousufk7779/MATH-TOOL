@@ -248,12 +248,42 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       },
     ],
     Civics: [
-      { id: "sst-civ-c9-1", number: 1, name: "Chapter 1", color: "#9C27B0" },
-      { id: "sst-civ-c9-2", number: 2, name: "Chapter 2", color: "#9C27B0" },
-      { id: "sst-civ-c9-3", number: 3, name: "Chapter 3", color: "#9C27B0" },
-      { id: "sst-civ-c9-4", number: 4, name: "Chapter 4", color: "#9C27B0" },
-      { id: "sst-civ-c9-5", number: 5, name: "Chapter 5", color: "#9C27B0" },
-      { id: "sst-civ-c9-6", number: 6, name: "Chapter 6", color: "#9C27B0" },
+      {
+        id: "sst-civ-c9-1",
+        number: 1,
+        name: "What is Democracy? Why Democracy?",
+        color: "#9C27B0",
+      },
+      {
+        id: "sst-civ-c9-2",
+        number: 2,
+        name: "Constitutional Design",
+        color: "#9C27B0",
+      },
+      {
+        id: "sst-civ-c9-3",
+        number: 3,
+        name: "Electoral Politics",
+        color: "#9C27B0",
+      },
+      {
+        id: "sst-civ-c9-4",
+        number: 4,
+        name: "Working of Institutions",
+        color: "#9C27B0",
+      },
+      {
+        id: "sst-civ-c9-5",
+        number: 5,
+        name: "Democratic Rights",
+        color: "#9C27B0",
+      },
+      {
+        id: "sst-civ-c9-6",
+        number: 6,
+        name: "Electoral Politics in the Erstwhile State of Jammu & Kashmir",
+        color: "#9C27B0",
+      },
     ],
     Economics: [
       { id: "sst-eco-c9-1", number: 1, name: "Chapter 1", color: "#FFD600" },

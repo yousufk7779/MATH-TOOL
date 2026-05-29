@@ -458,10 +458,12 @@ const styles = StyleSheet.create({
     fontFamily: "NotoSans_400Regular",
   },
   questionText: {
-    ...Typography.h4,
-    lineHeight: 28,
+    ...Typography.body,
+    fontSize: 16,
+    lineHeight: 22,
     color: JiguuColors.textPrimary,
     fontFamily: "NotoSans_400Regular",
+    textAlign: "justify",
   },
   optionsContainer: {
     gap: Spacing.md,
@@ -488,10 +490,13 @@ const styles = StyleSheet.create({
     backgroundColor: JiguuColors.triangles,
   },
   optionText: {
-    ...Typography.body,
+    ...Typography.small,
+    fontSize: 14,
+    lineHeight: 20,
     color: JiguuColors.textPrimary,
     flex: 1,
     fontFamily: "NotoSans_400Regular",
+    textAlign: "justify",
   },
   footer: {
     marginTop: "auto",

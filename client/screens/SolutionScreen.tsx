@@ -360,6 +360,20 @@ function SolutionScreen() {
       ? { textAlign: "justify" as const, lineHeight: 22 }
       : { lineHeight: 20 }),
   };
+  const scaledMcqQuestionTitle = {
+    ...Typography.body,
+    fontFamily: "NotoSans_400Regular",
+    fontSize: 16,
+    lineHeight: 22,
+    textAlign: "justify" as const,
+  };
+  const scaledMcqOptionText = {
+    ...Typography.small,
+    fontFamily: "NotoSans_400Regular",
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: "justify" as const,
+  };
 
   const exerciseSubSections = React.useMemo(() => {
     const subs: string[] = [];
@@ -749,7 +763,7 @@ function SolutionScreen() {
                       <HtmlText
                         chapterId={chapterId}
                         html={`Q${idx + 1}. ${mcq.question}`}
-                        style={[scaledQuestionTitle, { color: accentColor }]}
+                        style={[scaledMcqQuestionTitle, { color: accentColor }]}
                       />
                     </View>
                     {(shuffledOptions[mcq.id] || mcq.options || []).map(
@@ -859,14 +873,14 @@ function SolutionScreen() {
                             <HtmlText
                               html={opt}
                               style={[
-                                scaledBody,
+                                scaledMcqOptionText,
                                 {
                                   color: JiguuColors.textSecondary,
                                   lineHeight: isTallMathChapter
-                                    ? 32
+                                    ? 28
                                     : isMathSection
-                                      ? 26
-                                      : 24,
+                                      ? 22
+                                      : 20,
                                 },
                               ]}
                             />
