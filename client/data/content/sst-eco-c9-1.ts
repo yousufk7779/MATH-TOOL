@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FFC107"; // Amber/Gold theme for Economics
+const themeColor = "#FFD600"; // Yellow/Gold theme for Economics
 
 export const sstEcoC91: ChapterContent = {
   id: "sst-eco-c9-1",
@@ -170,7 +170,7 @@ export const sstEcoC91: ChapterContent = {
   htmlOverview: `
     <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
       <!-- Key Concepts Introduction -->
-      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 193, 7, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+      <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.25); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
         <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 700; margin-top: 0; margin-bottom: 12px; display: flex; align-items: center;">
           <span style="margin-right: 8px; font-size: 22px;">🪙</span> Overview
         </h3>
@@ -206,14 +206,14 @@ export const sstEcoC91: ChapterContent = {
           <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; padding: 12px;">
             <b style="color: ${themeColor};">2. Loans:</b> Borrowers take loans for business or personal use. The bank charges a higher rate of interest (e.g., 8-12%).
           </div>
-          <div style="background: rgba(255, 193, 7, 0.08); border: 1px solid rgba(255, 193, 7, 0.15); border-radius: 8px; padding: 12px;">
+          <div style="background: rgba(255, 214, 0, 0.08); border: 1px solid rgba(255, 214, 0, 0.15); border-radius: 8px; padding: 12px;">
             <b style="color: ${themeColor};">3. Spread (Bank's Income):</b> The difference between interest charged on loans and interest paid on deposits is the bank's main source of profit.
           </div>
         </div>
       </div>
       
       <!-- Key Terms -->
-      <div style="background: rgba(255, 193, 7, 0.05); border: 1.5px solid rgba(255, 193, 7, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
+      <div style="background: rgba(255, 214, 0, 0.05); border: 1.5px solid rgba(255, 214, 0, 0.25); border-radius: 16px; padding: 20px; box-shadow: 0 4px 30px rgba(0,0,0,0.15);">
         <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 600; margin-top: 0; margin-bottom: 12px;">🔑 Quick Review</h3>
         <div style="color: #E0E0E0; font-size: 14px; line-height: 1.6; text-align: justify;">
           <p style="margin-top: 0; margin-bottom: 8px;"><b style="color: ${themeColor};">Demand Deposits:</b> Bank account balances that can be withdrawn at any time on demand. They are treated like cash.</p>
@@ -228,8 +228,8 @@ export const sstEcoC91: ChapterContent = {
       <div style="padding: 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: transparent;">
         
         <!-- SECTION A: FILL IN THE BLANKS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 193, 7, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
+        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">✏️</span> A. Fill in the blanks
           </h3>
           <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
@@ -255,8 +255,8 @@ export const sstEcoC91: ChapterContent = {
         </div>
 
         <!-- SECTION B: ONE WORD ANSWERS -->
-        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 193, 7, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
+        <div style="background-color: #1E1E2E; border: 1px solid rgba(255, 214, 0, 0.2); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">💡</span> B. One word Answers
           </h3>
           <div style="color: #D1D1E9; font-size: 14.2px; line-height: 1.7; display: flex; flex-direction: column; gap: 14px;">
@@ -285,7 +285,7 @@ export const sstEcoC91: ChapterContent = {
 
         <!-- SECTION C: VERY SHORT / SHORT ANSWER TYPE QUESTIONS -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
+          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">📝</span> C. Very short / short Answer Type Questions
           </h3>
           <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -389,7 +389,7 @@ export const sstEcoC91: ChapterContent = {
 
         <!-- SECTION D: LONG ANSWER TYPE QUESTIONS -->
         <div style="background-color: #1E1E2E; border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 193, 7, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
+          <h3 style="color: ${themeColor}; font-size: 18px; font-weight: 700; margin-top: 0; margin-bottom: 16px; border-bottom: 1px solid rgba(255, 214, 0, 0.2); padding-bottom: 8px; display: flex; align-items: center;">
             <span style="margin-right: 8px;">📚</span> D. Long Answer Type Questions
           </h3>
           <div style="display: flex; flex-direction: column; gap: 24px;">
@@ -460,7 +460,7 @@ export const sstEcoC91: ChapterContent = {
                 <p style="margin: 6px 0 10px 0;">
                   Banks keep only a small portion of deposits as cash (normally 15% in India) to meet daily withdrawals. They use the remaining 85% to extend loans to borrowers. The bank charges a higher interest rate on loans than the rate paid on deposits.
                 </p>
-                <div style="background-color: rgba(255, 193, 7, 0.04); border-left: 3px solid ${themeColor}; padding: 12px; border-radius: 0 8px 8px 0; font-size: 13px;">
+                <div style="background-color: rgba(255, 214, 0, 0.04); border-left: 3px solid ${themeColor}; padding: 12px; border-radius: 0 8px 8px 0; font-size: 13px;">
                   <b>Example Case:</b>
                   <br/>• <b>Rohan</b> deposits ₹10,000 in his savings account. The bank offers him a <b>3% annual interest</b>.
                   <br/>• <b>Amit</b> is a shopkeeper who needs ₹8,000 to buy stock. He takes a business loan from the bank at a <b>10% annual interest</b>.

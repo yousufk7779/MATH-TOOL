@@ -315,6 +315,13 @@ function SolutionScreen() {
   );
   const accentColor = chapterGradient[0];
 
+  const hasExercises = React.useMemo(() => {
+    return (
+      (chapterData?.exercises && chapterData.exercises.length > 0) ||
+      (chapterData?.htmlExercises && Object.keys(chapterData.htmlExercises).length > 0)
+    );
+  }, [chapterData]);
+
   const isScienceSection =
     chapterId.startsWith("sci-") || !!chapterId.match(/^c[789]-sci-/);
   const isMathSection =
@@ -950,13 +957,15 @@ function SolutionScreen() {
             gradient={chapterGradient}
             textStyle={hwTitleStyle}
           />
-          <TabButton
-            title={tab2Title}
-            isActive={activeSection === "exercises"}
-            onPress={() => handleSectionChange("exercises")}
-            gradient={chapterGradient}
-            textStyle={hwTitleStyle}
-          />
+          {hasExercises && (
+            <TabButton
+              title={tab2Title}
+              isActive={activeSection === "exercises"}
+              onPress={() => handleSectionChange("exercises")}
+              gradient={chapterGradient}
+              textStyle={hwTitleStyle}
+            />
+          )}
           <TabButton
             title={tab3Title}
             isActive={activeSection === "mcq"}

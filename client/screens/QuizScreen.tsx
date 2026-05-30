@@ -170,7 +170,7 @@ export default function QuizScreen() {
           </LinearGradient>
         </Pressable>
 
-        {(!className || className === "Class 10" || className === "Class 7") && (
+        {(!className || className === "Class 10" || className === "Class 9" || className === "Class 7") && (
           <Pressable
             style={styles.subjectButton}
             onPress={() => startQuiz("Social Science")}

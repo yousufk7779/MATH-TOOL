@@ -1,0 +1,3360 @@
+[
+  {
+    "id": "c9-sst-1",
+    "question": "Which of the following is a key feature of democracy?",
+    "options": [
+      "(A) Rulers are not accountable to citizens",
+      "(B) Final decision-making rests with elected representatives",
+      "(C) Only rich people are allowed to vote",
+      "(D) No opposition parties are allowed"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-2",
+    "question": "In which country did women not have the right to vote until 2015?",
+    "options": [
+      "(A) Estonia",
+      "(B) Fiji",
+      "(C) Saudi Arabia",
+      "(D) Mexico"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-3",
+    "question": "In Mexico, PRI won almost every election because:",
+    "options": [
+      "(A) People genuinely preferred it",
+      "(B) No other party contested the elections",
+      "(C) It used dirty tricks and electoral malpractices",
+      "(D) It was a military dictatorship"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-4",
+    "question": "A democratic government is better than other forms of government because:",
+    "options": [
+      "(A) It is more accountable to the people",
+      "(B) It guarantees high economic growth immediately",
+      "(C) It avoids all delays in making decisions",
+      "(D) It is always free of corruption"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-5",
+    "question": "Which country's electoral system makes the vote of an indigenous citizen have more value than that of an immigrant?",
+    "options": [
+      "(A) Fiji",
+      "(B) Estonia",
+      "(C) Saudi Arabia",
+      "(D) Zimbabwe"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-6",
+    "question": "Who led a military coup in Pakistan in October 1999?",
+    "options": [
+      "(A) General Pervez Musharraf",
+      "(B) General Zia-ul-Haq",
+      "(C) Nawaz Sharif",
+      "(D) Benazir Bhutto"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-7",
+    "question": "Under which president did Zimbabwe gain independence from white minority rule?",
+    "options": [
+      "(A) Robert Mugabe",
+      "(B) Nelson Mandela",
+      "(C) Kofi Annan",
+      "(D) Julius Nyerere"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-8",
+    "question": "Which of the following is an argument against democracy?",
+    "options": [
+      "(A) It improves the quality of decision-making",
+      "(B) It leads to instability due to frequent leadership changes",
+      "(C) It enhances the dignity of citizens",
+      "(D) It provides a method to resolve conflicts peacefully"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-9",
+    "question": "A democracy must be based on a free and fair election where those currently in power have:",
+    "options": [
+      "(A) A guaranteed win",
+      "(B) A fair chance of losing",
+      "(C) No right to contest",
+      "(D) The power to cancel voting"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-10",
+    "question": "Which body in China is responsible for appointing the President of the country?",
+    "options": [
+      "(A) National People's Congress",
+      "(B) Military Council",
+      "(C) Supreme Court",
+      "(D) State Council"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-1",
+    "chapterTitle": "What is Democracy? Why Democracy?"
+  },
+  {
+    "id": "c9-sst-11",
+    "question": "Which of the following leaders was tried for treason by the white South African government?",
+    "options": [
+      "(A) Nelson Mandela",
+      "(B) Kofi Annan",
+      "(C) Martin Luther King Jr.",
+      "(D) Oliver Tambo"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-12",
+    "question": "When did South Africa become a democratic nation?",
+    "options": [
+      "(A) 26 April 1994",
+      "(B) 15 August 1947",
+      "(C) 26 January 1950",
+      "(D) 10 May 1994"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-13",
+    "question": "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
+    "options": [
+      "(A) Dr. Rajendra Prasad",
+      "(B) Dr. B.R. Ambedkar",
+      "(C) Jawaharlal Nehru",
+      "(D) Motilal Nehru"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-14",
+    "question": "The assembly of elected representatives that drafted the Indian Constitution is called the:",
+    "options": [
+      "(A) Parliament",
+      "(B) Constituent Assembly",
+      "(C) Drafting Committee",
+      "(D) Supreme Court"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-15",
+    "question": "Which of these is the introductory statement of a constitution outlining its core values?",
+    "options": [
+      "(A) Draft",
+      "(B) Amendment",
+      "(C) Preamble",
+      "(D) Article"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-16",
+    "question": "In which year did Motilal Nehru and eight other Congress leaders draft a constitution for India?",
+    "options": [
+      "(A) 1928",
+      "(B) 1931",
+      "(C) 1942",
+      "(D) 1947"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-17",
+    "question": "Which term in the Preamble means that citizens should behave as if they are members of the same family?",
+    "options": [
+      "(A) Justice",
+      "(B) Secular",
+      "(C) Fraternity",
+      "(D) Equality"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-18",
+    "question": "A republic is a country where the head of the state is:",
+    "options": [
+      "(A) A hereditary king",
+      "(B) An elected person",
+      "(C) A military general",
+      "(D) A foreign ruler"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-19",
+    "question": "What is the term used for formal changes made to the constitution?",
+    "options": [
+      "(A) Clauses",
+      "(B) Amendments",
+      "(C) Resolutions",
+      "(D) Acts"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-20",
+    "question": "Which of the following values means that the government will not favor any particular religion?",
+    "options": [
+      "(A) Sovereign",
+      "(B) Secular",
+      "(C) Socialist",
+      "(D) Democratic"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-2",
+    "chapterTitle": "Constitutional Design"
+  },
+  {
+    "id": "c9-sst-21",
+    "question": "Which of the following statements about the reasons for conducting elections is false?",
+    "options": [
+      "(A) Elections enable people to judge the performance of the government",
+      "(B) People select the representative of their choice in an election",
+      "(C) Elections enable people to evaluate the performance of the judiciary",
+      "(D) People can indicate which policies they prefer"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-22",
+    "question": "Which of these is not a good reason to say that Indian elections are democratic?",
+    "options": [
+      "(A) India has the largest number of voters in the world",
+      "(B) India's Election Commission is very powerful",
+      "(C) In India, everyone above the age of 18 has a right to vote",
+      "(D) In India, the losing parties accept the electoral verdict"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-23",
+    "question": "Who led the 'Nyaya Yudh' (Struggle for Justice) movement in Haryana in 1987?",
+    "options": [
+      "(A) Chaudhary Devi Lal",
+      "(B) Bhajan Lal",
+      "(C) Bansi Lal",
+      "(D) Chaudhary Charan Singh"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-24",
+    "question": "How many constituencies are currently reserved for Scheduled Castes (SCs) in the Lok Sabha?",
+    "options": [
+      "(A) 84",
+      "(B) 47",
+      "(C) 79",
+      "(D) 543"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-25",
+    "question": "What is the minimum age required for a citizen to contest elections in India?",
+    "options": [
+      "(A) 18 years",
+      "(B) 21 years",
+      "(C) 25 years",
+      "(D) 30 years"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-26",
+    "question": "The voters' list is officially known as:",
+    "options": [
+      "(A) Electoral Roll",
+      "(B) Citizen Directory",
+      "(C) Nomination Sheet",
+      "(D) Polling Registry"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-27",
+    "question": "Which of the following is prohibited for candidates under the Model Code of Conduct?",
+    "options": [
+      "(A) Holding public campaign rallies",
+      "(B) Using government vehicles and officials for electioneering",
+      "(C) Releasing election manifestos",
+      "(D) Conducting door-to-door campaigning"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-28",
+    "question": "What is the term of office for the members of Lok Sabha and State Legislative Assemblies in India?",
+    "options": [
+      "(A) 4 years",
+      "(B) 5 years",
+      "(C) 6 years",
+      "(D) 2 years"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-29",
+    "question": "Elections held to fill a vacancy caused by the death or resignation of a member are called:",
+    "options": [
+      "(A) General Elections",
+      "(B) Mid-term Elections",
+      "(C) By-elections",
+      "(D) Referendums"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-30",
+    "question": "Who appoints the Chief Election Commissioner (CEC) of India?",
+    "options": [
+      "(A) The Prime Minister of India",
+      "(B) The Chief Justice of India",
+      "(C) The President of India",
+      "(D) The Parliament of India"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-3",
+    "chapterTitle": "Electoral Politics"
+  },
+  {
+    "id": "c9-sst-31",
+    "question": "If you are elected as the President of India, which of the following decisions can you take on your own?",
+    "options": [
+      "(A) Select the person you like as Prime Minister",
+      "(B) Dismiss a Prime Minister who has a majority in Lok Sabha",
+      "(C) Ask for reconsideration of a bill passed by both the Houses",
+      "(D) Nominate the leaders of your choice to the Council of Ministers"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-32",
+    "question": "Who among the following is a part of the political executive?",
+    "options": [
+      "(A) District Collector",
+      "(B) Secretary of the Ministry of Home Affairs",
+      "(C) Home Minister",
+      "(D) Director General of Police"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-33",
+    "question": "Which of the following statements about the judiciary is false?",
+    "options": [
+      "(A) Every law passed by the Parliament needs approval of the Supreme Court",
+      "(B) Judiciary can strike down a law if it goes against the spirit of the Constitution",
+      "(C) Judiciary is independent of the Executive",
+      "(D) Any citizen can approach the courts if their rights are violated"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-34",
+    "question": "Which of the following institutions can make changes to an existing law of the country?",
+    "options": [
+      "(A) The Supreme Court",
+      "(B) The President",
+      "(C) The Prime Minister",
+      "(D) The Parliament"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-35",
+    "question": "Which house of the Indian Parliament controls the Council of Ministers?",
+    "options": [
+      "(A) Rajya Sabha",
+      "(B) Lok Sabha",
+      "(C) Both Houses equally",
+      "(D) Neither House"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-36",
+    "question": "What is the maximum period for which Rajya Sabha can delay a Money Bill?",
+    "options": [
+      "(A) 10 days",
+      "(B) 14 days",
+      "(C) 30 days",
+      "(D) 3 months"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-37",
+    "question": "Who is the head of state and the first citizen of India?",
+    "options": [
+      "(A) The Prime Minister",
+      "(B) The Chief Justice of India",
+      "(C) The President",
+      "(D) The Speaker of Lok Sabha"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-38",
+    "question": "What is the term used for the permanent civil service officers who work under the ministries?",
+    "options": [
+      "(A) Political Executive",
+      "(B) Permanent Executive",
+      "(C) Judicial Council",
+      "(D) Legislative Secretariat"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-39",
+    "question": "The power of the judiciary to check the constitutional validity of laws is known as:",
+    "options": [
+      "(A) Judicial Review",
+      "(B) Public Interest Litigation",
+      "(C) Advisory Jurisdiction",
+      "(D) Writ Jurisdiction"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-40",
+    "question": "In 1979, the Government of India appointed the Second Backward Classes Commission, popularly known as the:",
+    "options": [
+      "(A) Mandal Commission",
+      "(B) Sarkaria Commission",
+      "(C) Kothari Commission",
+      "(D) Radhakrishnan Commission"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-4",
+    "chapterTitle": "Working of Institutions"
+  },
+  {
+    "id": "c9-sst-41",
+    "question": "Which of the following is not an instance of the exercise of a fundamental right?",
+    "options": [
+      "(A) Workers from Bihar go to the Punjab to work on the farms",
+      "(B) Christian missions set up a chain of missionary schools",
+      "(C) Men and women government employees get the same salary",
+      "(D) Parents' property is inherited by their children"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-42",
+    "question": "Which of the following freedoms is not available to an Indian citizen?",
+    "options": [
+      "(A) Freedom to criticise the government",
+      "(B) Freedom to participate in armed revolution",
+      "(C) Freedom to start a movement to change the government",
+      "(D) Freedom to oppose the central values of the Constitution"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-43",
+    "question": "Which of the following rights is explicitly available under the Indian Constitution?",
+    "options": [
+      "(A) Right to work",
+      "(B) Right to adequate livelihood",
+      "(C) Right to protect one's culture",
+      "(D) Right to privacy"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-44",
+    "question": "Which Fundamental Right bans forced labor (begar) and child labor in hazardous occupations?",
+    "options": [
+      "(A) Right to Equality",
+      "(B) Right to Freedom",
+      "(C) Right against Exploitation",
+      "(D) Right to Freedom of Religion"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-45",
+    "question": "Dr. B.R. Ambedkar called which right the 'heart and soul' of the Indian Constitution?",
+    "options": [
+      "(A) Right to Equality",
+      "(B) Right to Freedom",
+      "(C) Right to Freedom of Religion",
+      "(D) Right to Constitutional Remedies"
+    ],
+    "correctAnswer": "D",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-46",
+    "question": "In India, untouchability is abolished and its practice is a punishable crime under the:",
+    "options": [
+      "(A) Right to Freedom",
+      "(B) Right against Exploitation",
+      "(C) Right to Equality",
+      "(D) Cultural and Educational Rights"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-47",
+    "question": "Which independent body was set up by the Indian government in 1993 to protect human rights?",
+    "options": [
+      "(A) National Human Rights Commission",
+      "(B) Election Commission",
+      "(C) Planning Commission",
+      "(D) Supreme Court Council"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-48",
+    "question": "Under the Right to Freedom, the government can impose reasonable restrictions on citizens in the interest of:",
+    "options": [
+      "(A) The ruling political party",
+      "(B) National security and public order",
+      "(C) Corporate businesses",
+      "(D) Religious leaders"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-49",
+    "question": "A formal written order issued by a High Court or the Supreme Court to safeguard rights is called a:",
+    "options": [
+      "(A) Statute",
+      "(B) Writ",
+      "(C) Memorandum",
+      "(D) Deed"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-50",
+    "question": "The Right to Education (RTE) makes free and compulsory education a fundamental right for children of age:",
+    "options": [
+      "(A) 0 to 6 years",
+      "(B) 6 to 14 years",
+      "(C) 14 to 18 years",
+      "(D) 6 to 18 years"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-5",
+    "chapterTitle": "Democratic Rights"
+  },
+  {
+    "id": "c9-sst-51",
+    "question": "When was the first ever Praja Sabha (Legislative Assembly) established in Jammu & Kashmir?",
+    "options": [
+      "(A) 1928",
+      "(B) 1934",
+      "(C) 1947",
+      "(D) 1951"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-52",
+    "question": "Who issued the proclamation for the formation of the J&K Constituent Assembly on May 1st, 1951?",
+    "options": [
+      "(A) Maharaja Hari Singh",
+      "(B) Sheikh Abdullah",
+      "(C) Yuvraj Karan Singh",
+      "(D) Jawaharlal Nehru"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-53",
+    "question": "In which year were the first elections to the J&K Constituent Assembly held?",
+    "options": [
+      "(A) 1947",
+      "(B) 1950",
+      "(C) 1951",
+      "(D) 1956"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-54",
+    "question": "Following political instability and rise of militancy, in which year was the J&K Legislative Assembly dissolved, leading to a 6-year suspension of elections?",
+    "options": [
+      "(A) 1987",
+      "(B) 1990",
+      "(C) 1996",
+      "(D) 2019"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-55",
+    "question": "Which political party won all 75 seats in the 1951 Constituent Assembly elections in J&K?",
+    "options": [
+      "(A) Indian National Congress",
+      "(B) J&K National Conference",
+      "(C) J&K People's Democratic Party",
+      "(D) Muslim Conference"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-56",
+    "question": "The state constitution of Jammu and Kashmir came into force on:",
+    "options": [
+      "(A) 26 January 1950",
+      "(B) 26 January 1957",
+      "(C) 15 August 1947",
+      "(D) 26 April 1951"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-57",
+    "question": "The franchise in the 1934 Praja Sabha elections was restricted on the basis of:",
+    "options": [
+      "(A) Property, tax paying capability, and educational qualification",
+      "(B) Only gender (only men could vote)",
+      "(C) Universal Adult Franchise",
+      "(D) Only members of the royal court"
+    ],
+    "correctAnswer": "A",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-58",
+    "question": "Under whose reign was the Praja Sabha established following public demands for reforms?",
+    "options": [
+      "(A) Maharaja Gulab Singh",
+      "(B) Maharaja Pratap Singh",
+      "(C) Maharaja Hari Singh",
+      "(D) Maharaja Ranbir Singh"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-59",
+    "question": "The first democratic elections to the J&K Legislative Assembly after the 6-year suspension in 1990 were held in:",
+    "options": [
+      "(A) 1992",
+      "(B) 1994",
+      "(C) 1996",
+      "(D) 2002"
+    ],
+    "correctAnswer": "C",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-60",
+    "question": "How many members were there in the J&K Legislative Assembly before the reorganization in 2019 (excluding seats reserved for POJK)?",
+    "options": [
+      "(A) 75",
+      "(B) 87",
+      "(C) 111",
+      "(D) 90"
+    ],
+    "correctAnswer": "B",
+    "subject": "civics",
+    "chapterId": "sst-civ-c9-6",
+    "chapterTitle": "Electoral Politics in the Erstwhile State of Jammu & Kashmir"
+  },
+  {
+    "id": "c9-sst-61",
+    "question": "Which system relies on the double coincidence of wants?",
+    "options": [
+      "(A) Monetary system",
+      "(B) Barter system",
+      "(C) Credit card system",
+      "(D) Digital banking system"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-62",
+    "question": "In India, which institution is authorized to issue currency notes?",
+    "options": [
+      "(A) State Bank of India (SBI)",
+      "(B) Reserve Bank of India (RBI)",
+      "(C) Ministry of Finance",
+      "(D) NITI Aayog"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-63",
+    "question": "What is the main source of income for commercial banks?",
+    "options": [
+      "(A) Fees charged for locker services",
+      "(B) Interest rate spread between loans and deposits",
+      "(C) Government subsidies",
+      "(D) Income tax rebates"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-64",
+    "question": "Deposits in bank accounts that can be withdrawn at any time are called:",
+    "options": [
+      "(A) Fixed deposits",
+      "(B) Recurring deposits",
+      "(C) Demand deposits",
+      "(D) Term deposits"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-65",
+    "question": "Which of the following is pledged as security against a loan?",
+    "options": [
+      "(A) Cheque",
+      "(B) Collateral",
+      "(C) Demand deposit",
+      "(D) Credit card"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-66",
+    "question": "Which of these is a form of plastic money?",
+    "options": [
+      "(A) Paper notes",
+      "(B) Coins",
+      "(C) Debit card",
+      "(D) Demand draft"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-67",
+    "question": "A cheque is a paper instructing the bank to pay a specific amount to:",
+    "options": [
+      "(A) The Central Government",
+      "(B) The person named on it",
+      "(C) The Reserve Bank Governor",
+      "(D) Any bank clerk"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-68",
+    "question": "The rate of interest charged by banks on loans is always:",
+    "options": [
+      "(A) Lower than the rate offered on deposits",
+      "(B) Equal to the rate offered on deposits",
+      "(C) Higher than the rate offered on deposits",
+      "(D) Decided solely by the borrower"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-69",
+    "question": "The central bank of India is the:",
+    "options": [
+      "(A) State Bank of India",
+      "(B) Reserve Bank of India",
+      "(C) National Bank of India",
+      "(D) Union Bank of India"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-70",
+    "question": "What makes the Indian Rupee legally valid for all transactions in India?",
+    "options": [
+      "(A) Approval from local panchayats",
+      "(B) No other currency exists",
+      "(C) Authorization by the Central Government and law",
+      "(D) It is made of metallic gold"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-1",
+    "chapterTitle": "Money & Banking"
+  },
+  {
+    "id": "c9-sst-71",
+    "question": "Which sector of the economy includes agriculture, forestry, and dairy farming?",
+    "options": [
+      "(A) Primary Sector",
+      "(B) Secondary Sector",
+      "(C) Tertiary Sector",
+      "(D) Information Technology"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-72",
+    "question": "The secondary sector is also referred to as the:",
+    "options": [
+      "(A) Service sector",
+      "(B) Industrial sector",
+      "(C) Agriculture sector",
+      "(D) Public sector"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-73",
+    "question": "GDP stands for:",
+    "options": [
+      "(A) Gross Domestic Product",
+      "(B) Grand Development Plan",
+      "(C) Government Deposit Pension",
+      "(D) Gross Demand Price"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-74",
+    "question": "Which of the following sectors contributes the highest share to India's GDP?",
+    "options": [
+      "(A) Primary sector",
+      "(B) Secondary sector",
+      "(C) Tertiary sector",
+      "(D) Quaternary sector"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-75",
+    "question": "Investment in education, training, and medical care yields a return in the form of:",
+    "options": [
+      "(A) Physical assets",
+      "(B) Human capital formation",
+      "(C) Foreign exchange",
+      "(D) Land value appreciation"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-76",
+    "question": "What type of unemployment is found when more workers are engaged in agriculture than required?",
+    "options": [
+      "(A) Educated unemployment",
+      "(B) Seasonal unemployment",
+      "(C) Disguised unemployment",
+      "(D) Frictional unemployment"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-77",
+    "question": "For estimating the poverty line in rural India, what is the accepted calorie requirement per person per day?",
+    "options": [
+      "(A) 2100 calories",
+      "(B) 2400 calories",
+      "(C) 2000 calories",
+      "(D) 2500 calories"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-78",
+    "question": "Which welfare scheme guarantees 100 days of wage employment in a year to rural households?",
+    "options": [
+      "(A) SGSY",
+      "(B) PMRY",
+      "(C) MGNREGA",
+      "(D) PMGY"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-79",
+    "question": "Buffer stock is the stockpile of food grains primarily procured by which government body?",
+    "options": [
+      "(A) NITI Aayog",
+      "(B) Ministry of Agriculture",
+      "(C) Food Corporation of India (FCI)",
+      "(D) Reserve Bank of India"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-80",
+    "question": "Which of the following is not a dimension of food security?",
+    "options": [
+      "(A) Availability of food",
+      "(B) Accessibility of food",
+      "(C) Affordability of food",
+      "(D) Advertisements of food"
+    ],
+    "correctAnswer": "D",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-2",
+    "chapterTitle": "Understanding the Indian Economy"
+  },
+  {
+    "id": "c9-sst-81",
+    "question": "Which of the following is a natural disaster?",
+    "options": [
+      "(A) Industrial chemical leak",
+      "(B) Deforestation",
+      "(C) Earthquake",
+      "(D) Road accident"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-82",
+    "question": "The earthquake zoning map divides India into how many seismic zones?",
+    "options": [
+      "(A) Two",
+      "(B) Three",
+      "(C) Four",
+      "(D) Five"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-83",
+    "question": "Jammu and Kashmir falls under which of the following seismic zones?",
+    "options": [
+      "(A) Zone I and II",
+      "(B) Zone II and III",
+      "(C) Zone III and IV",
+      "(D) Zone IV and V"
+    ],
+    "correctAnswer": "D",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-84",
+    "question": "A large mass of snow sliding down a mountain slope is called:",
+    "options": [
+      "(A) Landslide",
+      "(B) Avalanche",
+      "(C) Cloudburst",
+      "(D) Cyclone"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-85",
+    "question": "A disaster hit the Muzaffarabad region in the year 2005. Which disaster was it?",
+    "options": [
+      "(A) Landslide",
+      "(B) Cloudburst",
+      "(C) Earthquake",
+      "(D) Flood"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-86",
+    "question": "Which instrument is used to measure the magnitude of an earthquake?",
+    "options": [
+      "(A) Barometer",
+      "(B) Thermometer",
+      "(C) Seismograph",
+      "(D) Anemometer"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-87",
+    "question": "A disastrous weather event in which heavy rainfall occurs suddenly over a localized area is known as:",
+    "options": [
+      "(A) Drought",
+      "(B) Cloudburst",
+      "(C) Landslide",
+      "(D) Hailstorm"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-88",
+    "question": "Storing rainwater from rooftops for future use is called:",
+    "options": [
+      "(A) Water logging",
+      "(B) Rainwater harvesting",
+      "(C) Drip irrigation",
+      "(D) Canal irrigation"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-89",
+    "question": "The sudden movement of a mass of soil, rock, or debris down a slope is called:",
+    "options": [
+      "(A) Landslide",
+      "(B) Avalanche",
+      "(C) Earthquake",
+      "(D) Soil erosion"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-90",
+    "question": "What do we call actions taken before a disaster to reduce its risk and impact?",
+    "options": [
+      "(A) Rescue",
+      "(B) Relief",
+      "(C) Mitigation",
+      "(D) Reconstruction"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-3",
+    "chapterTitle": "Natural Disasters"
+  },
+  {
+    "id": "c9-sst-91",
+    "question": "Which of the following is a man-made disaster?",
+    "options": [
+      "(A) Earthquake",
+      "(B) Cyclone",
+      "(C) Chemical gas leak",
+      "(D) Landslide"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-92",
+    "question": "The tragic release of Methyl Isocyanate (MIC) gas in Bhopal occurred in the year:",
+    "options": [
+      "(A) 1980",
+      "(B) 1984",
+      "(C) 1990",
+      "(D) 1994"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-93",
+    "question": "Which of the following processes contributes to environmental degradation?",
+    "options": [
+      "(A) Afforestation",
+      "(B) Sustainable agriculture",
+      "(C) Urbanization and overpopulation",
+      "(D) Rainwater harvesting"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-94",
+    "question": "What is the most dangerous gas released during incomplete combustion in fire disasters?",
+    "options": [
+      "(A) Oxygen",
+      "(B) Carbon monoxide",
+      "(C) Nitrogen",
+      "(D) Hydrogen"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-95",
+    "question": "Development that meets the needs of the present without compromising the ability of future generations is called:",
+    "options": [
+      "(A) Economic growth",
+      "(B) Sustainable development",
+      "(C) Industrialization",
+      "(D) Urbanization"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-96",
+    "question": "Which method is widely used in forestry to check the spread of forest fires?",
+    "options": [
+      "(A) Waterlogging",
+      "(B) Construction of firebreaks or paths",
+      "(C) Building large dams",
+      "(D) Cutting down all trees"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-97",
+    "question": "True or False: Forest fires are mainly caused by floods.",
+    "options": [
+      "(A) True",
+      "(B) False"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-98",
+    "question": "Which of the following is a major cause of road accidents?",
+    "options": [
+      "(A) Wearing helmets",
+      "(B) Following speed limits",
+      "(C) Driving under the influence of alcohol",
+      "(D) Proper road signals"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-99",
+    "question": "What is a key step to take during a chemical gas leak disaster?",
+    "options": [
+      "(A) Open all doors and windows",
+      "(B) Run in the direction of the wind",
+      "(C) Stay indoors and seal windows with wet cloths/towels",
+      "(D) Drink tap water immediately"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-100",
+    "question": "What is the main purpose of conducting safety mock drills in schools?",
+    "options": [
+      "(A) For recreational fun",
+      "(B) To improve academic grades",
+      "(C) To train students and teachers in rescue and evacuation safety",
+      "(D) To clean the school premises"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-4",
+    "chapterTitle": "Man-Made Disasters"
+  },
+  {
+    "id": "c9-sst-101",
+    "question": "In residential areas and market places, what is the ideal speed and the maximum speed limit?",
+    "options": [
+      "(A) Ideal: 10 km/hr, Limit: 20 km/hr",
+      "(B) Ideal: 20 km/hr, Limit: 30 km/hr",
+      "(C) Ideal: 30 km/hr, Limit: 50 km/hr",
+      "(D) Ideal: 40 km/hr, Limit: 60 km/hr"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-102",
+    "question": "According to Section 129, wearing a good quality helmet reduces the chances of a severe head injury by over:",
+    "options": [
+      "(A) 50%",
+      "(B) 60%",
+      "(C) 70%",
+      "(D) 85%"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-103",
+    "question": "According to Section 138(3), buckling up seat belts reduces the chances of occupant death in a car accident by over:",
+    "options": [
+      "(A) 30%",
+      "(B) 45%",
+      "(C) 60%",
+      "(D) 80%"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-104",
+    "question": "Which rule states that drivers must stop or slow down to allow pedestrians to cross at an uncontrolled Zebra Crossing?",
+    "options": [
+      "(A) Rule 5",
+      "(B) Rule 11",
+      "(C) Rule 15",
+      "(D) Rule 21"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-105",
+    "question": "Where was the world's first manually operated gas-lit traffic signal installed in December 1868?",
+    "options": [
+      "(A) New York",
+      "(B) Paris",
+      "(C) London",
+      "(D) Chicago"
+    ],
+    "correctAnswer": "C",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-106",
+    "question": "Who patented the first automated traffic control signal system in the year 1910?",
+    "options": [
+      "(A) Earnest Sirrine",
+      "(B) Alexander Graham Bell",
+      "(C) Thomas Edison",
+      "(D) Earnest Chicago"
+    ],
+    "correctAnswer": "A",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-107",
+    "question": "Which of the following items is NOT part of the Family First Aid Kit list in the textbook?",
+    "options": [
+      "(A) Sterile Gauze Pads",
+      "(B) Antiseptic Wipes",
+      "(C) Cold Pack",
+      "(D) Stethoscope"
+    ],
+    "correctAnswer": "D",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-108",
+    "question": "What is the key message of Vietnam's Motorcycle Action Plan mentioned in the textbook?",
+    "options": [
+      "(A) Drive Safe, Live Long",
+      "(B) Love Your Child, Provide a Helmet",
+      "(C) Safety First, Speed Second",
+      "(D) Wear Helmet, Save Life"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-109",
+    "question": "In the RSE promotional weekly activities, what is the theme of 'Day 2: Click it or Ticket'?",
+    "options": [
+      "(A) Road Signs",
+      "(B) Seat Belts",
+      "(C) Education of Parents",
+      "(D) Emergency No."
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-110",
+    "question": "Road Safety Education covers measures to positively influence traffic behavior through which three dimensions?",
+    "options": [
+      "(A) Speed, Power, and Control",
+      "(B) Knowledge, Skills, and Attitude",
+      "(C) Reading, Writing, and Testing",
+      "(D) Fines, Penalties, and Licenses"
+    ],
+    "correctAnswer": "B",
+    "subject": "economics",
+    "chapterId": "sst-eco-c9-5",
+    "chapterTitle": "Road Safety Education (Part- I)"
+  },
+  {
+    "id": "c9-sst-111",
+    "question": "Which line of latitude divides India into almost two equal halves?",
+    "options": [
+      "(A) Equator",
+      "(B) Tropic of Cancer",
+      "(C) Tropic of Capricorn",
+      "(D) Prime Meridian"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-112",
+    "question": "What is India's position in terms of area in the world?",
+    "options": [
+      "(A) Fifth",
+      "(B) Sixth",
+      "(C) Seventh",
+      "(D) Eighth"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-113",
+    "question": "The Standard Meridian of India (82°30'E) passes through which of these cities?",
+    "options": [
+      "(A) Mirzapur",
+      "(B) Patna",
+      "(C) Ahmedabad",
+      "(D) Chennai"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-114",
+    "question": "Which of the following countries does not share a land boundary with India?",
+    "options": [
+      "(A) Nepal",
+      "(B) Bhutan",
+      "(C) Tajikistan",
+      "(D) Bangladesh"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-115",
+    "question": "The southernmost point of the Indian Union, which got submerged in the 2004 tsunami, is called:",
+    "options": [
+      "(A) Kanyakumari",
+      "(B) Indira Point",
+      "(C) Indira Col",
+      "(D) Lakshadweep"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-116",
+    "question": "What separates India from Sri Lanka?",
+    "options": [
+      "(A) Gulf of Khambhat",
+      "(B) Palk Strait and Gulf of Mannar",
+      "(C) Panama Canal",
+      "(D) Suez Canal"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-117",
+    "question": "The total land area of India is approximately:",
+    "options": [
+      "(A) 2.4 million sq km",
+      "(B) 3.28 million sq km",
+      "(C) 5.12 million sq km",
+      "(D) 7.51 million sq km"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-118",
+    "question": "Which island group of India lies in the Arabian Sea?",
+    "options": [
+      "(A) Andaman and Nicobar Islands",
+      "(B) Lakshadweep Islands",
+      "(C) Sri Lanka",
+      "(D) Maldives"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-119",
+    "question": "The longitudinal lag between Arunachal Pradesh and Gujarat is about:",
+    "options": [
+      "(A) 1 hour",
+      "(B) 1.5 hours",
+      "(C) 2 hours",
+      "(D) 3 hours"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-120",
+    "question": "Uttarakhand, Uttar Pradesh, Bihar, West Bengal, and Sikkim share a border with which country?",
+    "options": [
+      "(A) China",
+      "(B) Nepal",
+      "(C) Bhutan",
+      "(D) Myanmar"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-1",
+    "chapterTitle": "India - Size and Location"
+  },
+  {
+    "id": "c9-sst-121",
+    "question": "Which is the southernmost range of the Himalayas?",
+    "options": [
+      "(A) Himadri",
+      "(B) Himachal",
+      "(C) Shiwalik",
+      "(D) Purvachal"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-122",
+    "question": "The highest peak in the Eastern Ghats is:",
+    "options": [
+      "(A) Anamudi",
+      "(B) Mahendragiri",
+      "(C) Kanchenjunga",
+      "(D) Khasi"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-123",
+    "question": "A landmass bounded by sea on three sides is referred to as:",
+    "options": [
+      "(A) Coast",
+      "(B) Island",
+      "(C) Peninsula",
+      "(D) Gulf"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-124",
+    "question": "Which of the following is the older alluvium soil of the Northern Plains?",
+    "options": [
+      "(A) Bhabar",
+      "(B) Terai",
+      "(C) Bhangar",
+      "(D) Khadar"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-125",
+    "question": "The longitudinal valleys lying between the Lesser Himalayas and the Shiwaliks are known as:",
+    "options": [
+      "(A) Duns",
+      "(B) Passes",
+      "(C) Ghats",
+      "(D) Barchans"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-126",
+    "question": "Which is the only large river flowing in the Thar Desert?",
+    "options": [
+      "(A) Narmada",
+      "(B) Tapi",
+      "(C) Luni",
+      "(D) Sabarmati"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-127",
+    "question": "The Lakshadweep Islands are of which origin?",
+    "options": [
+      "(A) Volcanic",
+      "(B) Glacial",
+      "(C) Coral",
+      "(D) Tectonic"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-128",
+    "question": "What is the narrow belt of pebble deposits parallel to the Shiwalik slopes called?",
+    "options": [
+      "(A) Bhabar",
+      "(B) Terai",
+      "(C) Khadar",
+      "(D) Bhangar"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-129",
+    "question": "Which plateau lies north of the Narmada River, covering a major area of the Malwa Plateau?",
+    "options": [
+      "(A) Deccan Plateau",
+      "(B) Chotanagpur Plateau",
+      "(C) Central Highlands",
+      "(D) Shillong Plateau"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-130",
+    "question": "Which is the highest peak in the Western Ghats?",
+    "options": [
+      "(A) Mahendragiri",
+      "(B) Anamudi",
+      "(C) Doda Betta",
+      "(D) Guru Shikhar"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-2",
+    "chapterTitle": "Physical Features of India"
+  },
+  {
+    "id": "c9-sst-131",
+    "question": "In which of the following places is the Wular lake located?",
+    "options": [
+      "(A) Rajasthan",
+      "(B) Punjab",
+      "(C) Uttar Pradesh",
+      "(D) Jammu and Kashmir"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-132",
+    "question": "The river Narmada originates from:",
+    "options": [
+      "(A) Satpura",
+      "(B) Brahmagiri",
+      "(C) Amarkantak",
+      "(D) Western Ghats"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-133",
+    "question": "Which of the following is a salt water lake in India?",
+    "options": [
+      "(A) Wular",
+      "(B) Dal",
+      "(C) Sambhar",
+      "(D) Gobind Sagar"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-134",
+    "question": "Which is the longest river of Peninsular India?",
+    "options": [
+      "(A) Narmada",
+      "(B) Mahanadi",
+      "(C) Godavari",
+      "(D) Krishna"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-135",
+    "question": "Which of these Peninsular rivers flows west through a rift valley?",
+    "options": [
+      "(A) Godavari",
+      "(B) Krishna",
+      "(C) Tapi",
+      "(D) Mahanadi"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-136",
+    "question": "The Bhagirathi and Alaknanda join to form the Ganga at:",
+    "options": [
+      "(A) Haridwar",
+      "(B) Devaprayag",
+      "(C) Allahabad",
+      "(D) Rishikesh"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-137",
+    "question": "What is the Brahmaputra River known as in Tibet?",
+    "options": [
+      "(A) Dihang",
+      "(B) Tsangpo",
+      "(C) Jamuna",
+      "(D) Meghna"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-138",
+    "question": "Which of the following is a man-made/artificial lake in India?",
+    "options": [
+      "(A) Loktak",
+      "(B) Chilika",
+      "(C) Pulicat",
+      "(D) Gobind Sagar"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-139",
+    "question": "An elevated upland area separating two adjacent river basins is called a:",
+    "options": [
+      "(A) Water divide",
+      "(B) Gorge",
+      "(C) Estuary",
+      "(D) Delta"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-140",
+    "question": "Which river is also known as the 'Dakshin Ganga'?",
+    "options": [
+      "(A) Krishna",
+      "(B) Kaveri",
+      "(C) Mahanadi",
+      "(D) Godavari"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-3",
+    "chapterTitle": "Drainage"
+  },
+  {
+    "id": "c9-sst-141",
+    "question": "Which one of the following places receives the highest rainfall in the world?",
+    "options": [
+      "(A) Silchar",
+      "(B) Mawsynram",
+      "(C) Cherrapunji",
+      "(D) Guwahati"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-142",
+    "question": "The wind blowing in the northern plains in summers is known as:",
+    "options": [
+      "(A) Kaal Baisakhi",
+      "(B) Loo",
+      "(C) Trade Winds",
+      "(D) None of the above"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-143",
+    "question": "Which one of the following causes rainfall during winters in north-western part of India?",
+    "options": [
+      "(A) Cyclonic depression",
+      "(B) Retreating monsoon",
+      "(C) Western disturbances",
+      "(D) Southwest monsoon"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-144",
+    "question": "Monsoon arrives in India approximately in:",
+    "options": [
+      "(A) Early May",
+      "(B) Early July",
+      "(C) Early June",
+      "(D) Early August"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-145",
+    "question": "Which one of the following characterises the cold weather season in India?",
+    "options": [
+      "(A) Warm days and warm nights",
+      "(B) Warm days and cold nights",
+      "(C) Cool days and cold nights",
+      "(D) Cold days and warm nights"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-146",
+    "question": "What deflects the wind direction in the Northern and Southern Hemispheres?",
+    "options": [
+      "(A) Gravitational Force",
+      "(B) Coriolis Force",
+      "(C) Centrifugal Force",
+      "(D) Friction Force"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-147",
+    "question": "The low-pressure belt near the equator where trade winds converge is known as:",
+    "options": [
+      "(A) ITCZ",
+      "(B) Jet Stream",
+      "(C) Loo",
+      "(D) Mango Showers"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-148",
+    "question": "Which state in India is usually the first to receive the monsoon onset?",
+    "options": [
+      "(A) Tamil Nadu",
+      "(B) Kerala",
+      "(C) Maharashtra",
+      "(D) West Bengal"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-149",
+    "question": "The local winter rainfall in Northern India that is highly beneficial for Rabi crops is called:",
+    "options": [
+      "(A) Mango Shower",
+      "(B) Loo",
+      "(C) Mahawat",
+      "(D) Kaal Baisakhi"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-150",
+    "question": "The term 'climate' refers to weather conditions over a period of at least:",
+    "options": [
+      "(A) 10 years",
+      "(B) 20 years",
+      "(C) 30 years",
+      "(D) 50 years"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-4",
+    "chapterTitle": "Climate"
+  },
+  {
+    "id": "c9-sst-151",
+    "question": "To which one of the following types of vegetation does rubber belong to?",
+    "options": [
+      "(A) Tundra",
+      "(B) Tidal",
+      "(C) Himalayan",
+      "(D) Tropical Evergreen"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-152",
+    "question": "Cinchona trees are found in the areas of rainfall more than",
+    "options": [
+      "(A) 100 cm",
+      "(B) 50 cm",
+      "(C) 70 cm",
+      "(D) less than 50 cm"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-153",
+    "question": "In which of the following state is the Simlipal bio-reserve located?",
+    "options": [
+      "(A) Punjab",
+      "(B) Delhi",
+      "(C) Odisha",
+      "(D) West Bengal"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-154",
+    "question": "Which one of the following bio-reserves of India is not included in the world network of bioreserve?",
+    "options": [
+      "(A) Manas",
+      "(B) Nilgiri",
+      "(C) Gulf of Mannar",
+      "(D) Nanda Devi"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-155",
+    "question": "Which of the following describes the virgin vegetation which are purely Indian?",
+    "options": [
+      "(A) Endemic species",
+      "(B) Exotic species",
+      "(C) Endangered species",
+      "(D) Extinct species"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-156",
+    "question": "The most widespread vegetation in India is:",
+    "options": [
+      "(A) Tropical Evergreen Forests",
+      "(B) Tropical Deciduous Forests",
+      "(C) Montane Forests",
+      "(D) Mangrove Forests"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-157",
+    "question": "Which type of forests shed their leaves for about six to eight weeks in dry summer?",
+    "options": [
+      "(A) Tropical Evergreen",
+      "(B) Montane",
+      "(C) Tropical Deciduous",
+      "(D) Mangrove"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-158",
+    "question": "In which regions are Thorn Forests and Scrubs found?",
+    "options": [
+      "(A) Regions with more than 200 cm of rainfall",
+      "(B) Regions with less than 70 cm of rainfall",
+      "(C) High altitude mountainous regions",
+      "(D) Coastal regions with tides"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-159",
+    "question": "Where are the Sundari trees found?",
+    "options": [
+      "(A) Himalayas",
+      "(B) Western Ghats",
+      "(C) Mangrove Forests",
+      "(D) Thar Desert"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-160",
+    "question": "Which animal is the most majestic animal among the mammals found in the hot wet forests of Assam, Karnataka and Kerala?",
+    "options": [
+      "(A) Lion",
+      "(B) Tiger",
+      "(C) Elephant",
+      "(D) One-horned Rhinoceros"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-5",
+    "chapterTitle": "Natural Vegetation and Wildlife"
+  },
+  {
+    "id": "c9-sst-161",
+    "question": "Migrations change the number, distribution and composition of the population in:",
+    "options": [
+      "(A) the area of departure",
+      "(B) the area of arrival",
+      "(C) both the area of departure and arrival",
+      "(D) none of the above"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-162",
+    "question": "A large proportion of children in a population is a result of:",
+    "options": [
+      "(A) high birth rates",
+      "(B) high life expectancies",
+      "(C) high death rates",
+      "(D) more married couples"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-163",
+    "question": "The magnitude of population growth refers to:",
+    "options": [
+      "(A) the total population of an area",
+      "(B) the number of persons added each year",
+      "(C) the rate at which the population increases",
+      "(D) the number of females per thousand males"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-164",
+    "question": "According to the Census, a 'literate' person is one who:",
+    "options": [
+      "(A) can read and write his/her name",
+      "(B) can read and write any language",
+      "(C) is 7 years old and can read and write any language with understanding",
+      "(D) knows the 3 'R's (reading, writing, arithmetic)"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-165",
+    "question": "What is the sex ratio defined as?",
+    "options": [
+      "(A) Number of males per 1000 females",
+      "(B) Number of females per 1000 males",
+      "(C) Number of children per 1000 adults",
+      "(D) Number of births per 1000 deaths"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-166",
+    "question": "What is the most populous state of India according to the Census 2011?",
+    "options": [
+      "(A) Maharashtra",
+      "(B) Bihar",
+      "(C) Uttar Pradesh",
+      "(D) West Bengal"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-167",
+    "question": "Which state has the lowest population density in India according to Census 2011?",
+    "options": [
+      "(A) Sikkim",
+      "(B) Arunachal Pradesh",
+      "(C) Mizoram",
+      "(D) Goa"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-168",
+    "question": "When was India's first complete census taken?",
+    "options": [
+      "(A) 1872",
+      "(B) 1881",
+      "(C) 1901",
+      "(D) 1951"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-169",
+    "question": "Which of the following age groups is considered as the working population in India?",
+    "options": [
+      "(A) Under 15 years",
+      "(B) 15-59 years",
+      "(C) 60 years and above",
+      "(D) None of these"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-170",
+    "question": "Which policy did the government of India introduce in 2000 to improve health and family welfare?",
+    "options": [
+      "(A) National Health Policy",
+      "(B) National Education Policy",
+      "(C) National Population Policy",
+      "(D) National Child Policy"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-6",
+    "chapterTitle": "Population"
+  },
+  {
+    "id": "c9-sst-171",
+    "question": "The outer plains of the Union Territory of Jammu & Kashmir are locally called as:",
+    "options": [
+      "(A) Wuddars",
+      "(B) Pahars",
+      "(C) Khads",
+      "(D) Andarwah and Bajwat"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-172",
+    "question": "Saffron is cultivated in the:",
+    "options": [
+      "(A) Middle Mountains",
+      "(B) Karewas of Kashmir",
+      "(C) Outer Plains",
+      "(D) Plateau of Ladakh"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-173",
+    "question": "Karewas is formed of which kind of deposits?",
+    "options": [
+      "(A) Lacustrine",
+      "(B) Calcareous",
+      "(C) Argillaceous",
+      "(D) Fluvial"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-174",
+    "question": "Which river is known as the lifeline of Kashmir?",
+    "options": [
+      "(A) Chenab",
+      "(B) Jhelum",
+      "(C) Indus",
+      "(D) Ravi"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-175",
+    "question": "The cold desert of India is located in:",
+    "options": [
+      "(A) Thar Desert",
+      "(B) Ladakh",
+      "(C) Spiti Valley",
+      "(D) Rann of Kutch"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-176",
+    "question": "What are the Middle Mountains of Jammu and Kashmir locally known as?",
+    "options": [
+      "(A) Pahars",
+      "(B) Karewas",
+      "(C) Siwaliks",
+      "(D) Wuddars"
+    ],
+    "correctAnswer": "A",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-177",
+    "question": "Which of the following is a side valley of Kashmir?",
+    "options": [
+      "(A) Lidder Valley",
+      "(B) Sindh Valley",
+      "(C) Lolab Valley",
+      "(D) All of the above"
+    ],
+    "correctAnswer": "D",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-178",
+    "question": "Which river flows through the town of Jammu?",
+    "options": [
+      "(A) Chenab",
+      "(B) Jhelum",
+      "(C) Tawi",
+      "(D) Ravi"
+    ],
+    "correctAnswer": "C",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-179",
+    "question": "The lake deposits that form flat-topped terraces in Kashmir are called:",
+    "options": [
+      "(A) Siwaliks",
+      "(B) Karewas",
+      "(C) Bajwat",
+      "(D) Dun"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-180",
+    "question": "The driest place in India (with lowest precipitation) is:",
+    "options": [
+      "(A) Jaisalmer",
+      "(B) Leh (Ladakh)",
+      "(C) Bikaner",
+      "(D) Drass"
+    ],
+    "correctAnswer": "B",
+    "subject": "geography",
+    "chapterId": "sst-geo-c9-7",
+    "chapterTitle": "Geography of Jammu & Kashmir and Ladakh"
+  },
+  {
+    "id": "c9-sst-181",
+    "question": "In which year did the French Revolution break out?",
+    "options": [
+      "(A) 1774",
+      "(B) 1789",
+      "(C) 1804",
+      "(D) 1815"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-182",
+    "question": "Who was the ruler of France during the Revolution?",
+    "options": [
+      "(A) Louis XIV",
+      "(B) Louis XV",
+      "(C) Louis XVI",
+      "(D) Napoleon Bonaparte"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-183",
+    "question": "The tax called 'Tithe' was collected by the:",
+    "options": [
+      "(A) State",
+      "(B) Nobles",
+      "(C) Church",
+      "(D) Royal Army"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-184",
+    "question": "The storming of which prison marked the beginning of the French Revolution?",
+    "options": [
+      "(A) Bastille",
+      "(B) Versailles",
+      "(C) Tuileries",
+      "(D) Tower of London"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-185",
+    "question": "What was the main food of the common people in France?",
+    "options": [
+      "(A) Rice",
+      "(B) Meat",
+      "(C) Bread",
+      "(D) Potatoes"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-186",
+    "question": "The device used for beheading people during the Reign of Terror was the:",
+    "options": [
+      "(A) Spear",
+      "(B) Sword",
+      "(C) Guillotine",
+      "(D) Axe"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-187",
+    "question": "Who led the Jacobin club during the Reign of Terror?",
+    "options": [
+      "(A) Louis XVI",
+      "(B) Maximilien Robespierre",
+      "(C) John Locke",
+      "(D) Montesquieu"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-188",
+    "question": "Who wrote the famous book 'The Social Contract'?",
+    "options": [
+      "(A) John Locke",
+      "(B) Jean-Jacques Rousseau",
+      "(C) Montesquieu",
+      "(D) Voltaire"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-189",
+    "question": "Napoleon Bonaparte crowned himself Emperor of France in:",
+    "options": [
+      "(A) 1789",
+      "(B) 1799",
+      "(C) 1804",
+      "(D) 1815"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-190",
+    "question": "Napoleon was finally defeated in the Battle of:",
+    "options": [
+      "(A) Waterloo",
+      "(B) Leipzig",
+      "(C) Trafalgar",
+      "(D) Austerlitz"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-1",
+    "chapterTitle": "The French Revolution"
+  },
+  {
+    "id": "c9-sst-191",
+    "question": "Who led the Bolsheviks during the Russian Revolution?",
+    "options": [
+      "(A) Vladimir Lenin",
+      "(B) Tsar Nicholas II",
+      "(C) Karl Marx",
+      "(D) Joseph Stalin"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-192",
+    "question": "In which year did the Russian Revolution take place?",
+    "options": [
+      "(A) 1905",
+      "(B) 1914",
+      "(C) 1917",
+      "(D) 1929"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-193",
+    "question": "The Russian Parliament created after the 1905 Revolution is called:",
+    "options": [
+      "(A) Reichstag",
+      "(B) Duma",
+      "(C) Congress",
+      "(D) Diet"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-194",
+    "question": "The incident of 'Bloody Sunday' occurred in the year:",
+    "options": [
+      "(A) 1900",
+      "(B) 1905",
+      "(C) 1914",
+      "(D) 1917"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-195",
+    "question": "Karl Marx and Friedrich Engels wrote the famous work:",
+    "options": [
+      "(A) Mein Kampf",
+      "(B) The Social Contract",
+      "(C) The Communist Manifesto",
+      "(D) War and Peace"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-196",
+    "question": "The name of the secret police set up by the Bolsheviks was:",
+    "options": [
+      "(A) Gestapo",
+      "(B) Cheka",
+      "(C) KGB",
+      "(D) CBI"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-197",
+    "question": "Who introduced the Collectivisation Programme in the Soviet Union?",
+    "options": [
+      "(A) Vladimir Lenin",
+      "(B) Joseph Stalin",
+      "(C) Leon Trotsky",
+      "(D) Nikita Khrushchev"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-198",
+    "question": "What were collective farms in the Soviet Union called?",
+    "options": [
+      "(A) Mir",
+      "(B) Duma",
+      "(C) Kolkhoz",
+      "(D) Kulaks"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-199",
+    "question": "In the context of the Russian Revolution, what does 'Kulak' mean?",
+    "options": [
+      "(A) Landless worker",
+      "(B) Poor peasant",
+      "(C) Wealthy peasant",
+      "(D) Factory owner"
+    ],
+    "correctAnswer": "C",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-200",
+    "question": "Which treaty marked Russia's withdrawal from World War I?",
+    "options": [
+      "(A) Treaty of Versailles",
+      "(B) Treaty of Brest-Litovsk",
+      "(C) Treaty of Paris",
+      "(D) Treaty of Berlin"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-2",
+    "chapterTitle": "Socialism in Europe and the Russian Revolution"
+  },
+  {
+    "id": "c9-sst-201",
+    "question": "Who was the founder of the Nazi Party?",
+    "options": [
+      "(A) Adolf Hitler",
+      "(B) Joseph Goebbels",
+      "(C) Benito Mussolini",
+      "(D) Paul von Hindenburg"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-202",
+    "question": "The Weimar Republic was established in Germany after which war?",
+    "options": [
+      "(A) World War I",
+      "(B) World War II",
+      "(C) Franco-Prussian War",
+      "(D) Thirty Years War"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-203",
+    "question": "Which treaty signed in 1919 brought humiliation to Germany?",
+    "options": [
+      "(A) Treaty of Versailles",
+      "(B) Treaty of Paris",
+      "(C) Treaty of London",
+      "(D) Treaty of Berlin"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-204",
+    "question": "The German Parliament is known as the:",
+    "options": [
+      "(A) Duma",
+      "(B) Reichstag",
+      "(C) Congress",
+      "(D) Diet"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-205",
+    "question": "Which act passed in 1933 gave Hitler dictatorial powers?",
+    "options": [
+      "(A) Enabling Act",
+      "(B) Rowlatt Act",
+      "(C) Munich Pact",
+      "(D) Nuremberg Laws"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-206",
+    "question": "Who was the propaganda minister of Hitler?",
+    "options": [
+      "(A) Joseph Goebbels",
+      "(B) Heinrich Himmler",
+      "(C) Rudolf Hess",
+      "(D) Hermann Göring"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-207",
+    "question": "What was the name of the German secret state police?",
+    "options": [
+      "(A) Gestapo",
+      "(B) SS",
+      "(C) SA",
+      "(D) SD"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-208",
+    "question": "The Nazi youth organization for boys aged 14 and above was called:",
+    "options": [
+      "(A) Jungvolk",
+      "(B) Hitler Youth",
+      "(C) Consulate",
+      "(D) Bolsheviks"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-209",
+    "question": "What was the book written by Adolf Hitler during his imprisonment?",
+    "options": [
+      "(A) Mein Kampf",
+      "(B) The Social Contract",
+      "(C) Das Kapital",
+      "(D) The Communist Manifesto"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-210",
+    "question": "In which battle was Germany finally defeated in 1945, ending WWII in Europe?",
+    "options": [
+      "(A) Battle of Waterloo",
+      "(B) Battle of Berlin",
+      "(C) Battle of Stalingrad",
+      "(D) Battle of Midway"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-3",
+    "chapterTitle": "Nazism and the Rise of Hitler"
+  },
+  {
+    "id": "c9-sst-211",
+    "question": "Who was the first Inspector General of Forests in India?",
+    "options": [
+      "(A) Dietrich Brandis",
+      "(B) George Yule",
+      "(C) Verrier Elwin",
+      "(D) Lord Dalhousie"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-212",
+    "question": "In which year was the first Indian Forest Act passed?",
+    "options": [
+      "(A) 1864",
+      "(B) 1865",
+      "(C) 1878",
+      "(D) 1927"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-213",
+    "question": "According to the 1878 Act, which forests were considered the best?",
+    "options": [
+      "(A) Reserved Forests",
+      "(B) Protected Forests",
+      "(C) Village Forests",
+      "(D) Open Forests"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-214",
+    "question": "The Imperial Forest Research Institute was set up in 1906 at:",
+    "options": [
+      "(A) Dehradun",
+      "(B) Shimla",
+      "(C) Kolkata",
+      "(D) Delhi"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-215",
+    "question": "Who led the forest rebellion in Bastar in 1910?",
+    "options": [
+      "(A) Gunda Dhur",
+      "(B) Birsa Munda",
+      "(C) Sidhu Murmu",
+      "(D) Kanhu Murmu"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-216",
+    "question": "Which of these is a shifting cultivation term in Central America?",
+    "options": [
+      "(A) Milpa",
+      "(B) Lading",
+      "(C) Chitemene",
+      "(D) Podu"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-217",
+    "question": "The Dutch system of forced labor for timber cutting in Java was called:",
+    "options": [
+      "(A) Blandongdiensten",
+      "(B) Saminism",
+      "(C) Veth",
+      "(D) Tithe"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-218",
+    "question": "Who led the anti-Dutch forest protest movement in Java around 1890?",
+    "options": [
+      "(A) Surontiko Samin",
+      "(B) Father Gapon",
+      "(C) Leon Trotsky",
+      "(D) Dietrich Brandis"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-219",
+    "question": "Why did the British want to clear forests for agriculture?",
+    "options": [
+      "(A) To increase tax revenue",
+      "(B) To build ships",
+      "(C) To lay railway tracks",
+      "(D) To preserve environment"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-220",
+    "question": "Under the 1878 Forest Act, forests were divided into how many categories?",
+    "options": [
+      "(A) Two",
+      "(B) Three",
+      "(C) Four",
+      "(D) Five"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-4",
+    "chapterTitle": "Forest Society and Colonialism"
+  },
+  {
+    "id": "c9-sst-221",
+    "question": "Gujjar Bakarwals are pastoral nomads of which region?",
+    "options": [
+      "(A) Jammu and Kashmir",
+      "(B) Rajasthan",
+      "(C) Karnataka",
+      "(D) Assam"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-222",
+    "question": "The camel herders of Rajasthan are known as:",
+    "options": [
+      "(A) Gaddis",
+      "(B) Raikas",
+      "(C) Gujjars",
+      "(D) Sherpas"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-223",
+    "question": "What are the seasonal pastures on high mountains called?",
+    "options": [
+      "(A) Bhabar",
+      "(B) Bugyals",
+      "(C) Maidan",
+      "(D) Plains"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-224",
+    "question": "The Gaddi shepherds belong to which state?",
+    "options": [
+      "(A) Himachal Pradesh",
+      "(B) Gujarat",
+      "(C) Kerala",
+      "(D) Sikkim"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-225",
+    "question": "In which year did the colonial government pass the Criminal Tribes Act?",
+    "options": [
+      "(A) 1857",
+      "(B) 1871",
+      "(C) 1910",
+      "(D) 1947"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-226",
+    "question": "The Maasai community is a pastoral group of which continent?",
+    "options": [
+      "(A) Asia",
+      "(B) Africa",
+      "(C) South America",
+      "(D) Australia"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-227",
+    "question": "What is the dry forested area below the foothills of Garhwal and Kumaon called?",
+    "options": [
+      "(A) Bhabar",
+      "(B) Bugyal",
+      "(C) Kharif",
+      "(D) Tarai"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-228",
+    "question": "Why did the colonial government introduce the Grazing Tax?",
+    "options": [
+      "(A) To protect animals",
+      "(B) To maximize state revenue",
+      "(C) To stop migration",
+      "(D) To clean forest areas"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-229",
+    "question": "In 1885, Maasailand was split by a border between:",
+    "options": [
+      "(A) Britain and Germany",
+      "(B) France and Spain",
+      "(C) Portugal and Italy",
+      "(D) Belgium and Holland"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-230",
+    "question": "A caravan/group of nomadic families traveling together is known as:",
+    "options": [
+      "(A) Kafila",
+      "(B) Clan",
+      "(C) Regiment",
+      "(D) Troop"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-5",
+    "chapterTitle": "Pastoralists in the Modern World"
+  },
+  {
+    "id": "c9-sst-231",
+    "question": "Who was the Maharaja of Jammu and Kashmir in 1947?",
+    "options": [
+      "(A) Maharaja Hari Singh",
+      "(B) Maharaja Gulab Singh",
+      "(C) Maharaja Ranbir Singh",
+      "(D) Maharaja Pratap Singh"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-232",
+    "question": "On which date did Jammu and Kashmir formally accede to India?",
+    "options": [
+      "(A) 15 August 1947",
+      "(B) 26 October 1947",
+      "(C) 26 January 1950",
+      "(D) 31 October 1951"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-233",
+    "question": "Who was the leader of the National Conference during the integration of J&K?",
+    "options": [
+      "(A) Sheikh Abdullah",
+      "(B) Karan Singh",
+      "(C) Hari Singh",
+      "(D) V.P. Menon"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-234",
+    "question": "The Stand Still Agreement was offered to both India and Pakistan on:",
+    "options": [
+      "(A) 12 August 1947",
+      "(B) 15 August 1947",
+      "(C) 26 October 1947",
+      "(D) 26 January 1948"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-235",
+    "question": "Who was the first Sadar-i-Riyasat (and former Regent) of Jammu and Kashmir?",
+    "options": [
+      "(A) Karan Singh",
+      "(B) Hari Singh",
+      "(C) Sheikh Abdullah",
+      "(D) Jawaharlal Nehru"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-236",
+    "question": "Who was the Chief of Military Staff of J&K State Forces who sacrificed his life defending Uri?",
+    "options": [
+      "(A) Brigadier Rajinder Singh",
+      "(B) Major Somnath Sharma",
+      "(C) Maqbool Sherwani",
+      "(D) Col. Chewang Rinchen"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-237",
+    "question": "The young local activist of Baramulla who delayed the invaders' advance and was martyred was:",
+    "options": [
+      "(A) Maqbool Sherwani",
+      "(B) Sheikh Abdullah",
+      "(C) Kushok Bakula",
+      "(D) Chewang Rinchen"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-238",
+    "question": "The Gilgit Agency was leased by the Maharaja to the British Government in the year:",
+    "options": [
+      "(A) 1889",
+      "(B) 1935",
+      "(C) 1947",
+      "(D) 1951"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-239",
+    "question": "The J&K Constituent Assembly met for the first time in:",
+    "options": [
+      "(A) October 1947",
+      "(B) October 1951",
+      "(C) January 1950",
+      "(D) November 1956"
+    ],
+    "correctAnswer": "B",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  },
+  {
+    "id": "c9-sst-240",
+    "question": "The first Indian soldier to be posthumously awarded the Param Vir Chakra was:",
+    "options": [
+      "(A) Major Somnath Sharma",
+      "(B) Brigadier Rajinder Singh",
+      "(C) Maqbool Sherwani",
+      "(D) Brigadier L.P. Sen"
+    ],
+    "correctAnswer": "A",
+    "subject": "history",
+    "chapterId": "sst-his-c9-6",
+    "chapterTitle": "The Integration of Princely States: A case study of Jammu and Kashmir"
+  }
+]

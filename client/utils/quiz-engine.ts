@@ -8,6 +8,7 @@ import easyMathC8Mcqs from "../data/easy_mcqs_math_c8.json";
 import easyMathC7Mcqs from "../data/easy_mcqs_math_c7.json";
 import easySstC7Mcqs from "../data/easy_mcqs_sst_c7.json";
 import easySstMcqs from "../data/easy_mcqs_sst.json";
+import easySstC9Mcqs from "../data/easy_mcqs_sst_c9.json";
 
 
 export interface QuizQuestion {
@@ -108,6 +109,32 @@ export const generateQuizAsync = async (
       );
 
       const finalSet = [...p3, ...c3, ...l3, ...r1];
+      return shuffleArray(finalSet);
+    }
+    if (subject === "Social Science") {
+      const sstMcqs = easySstC9Mcqs as QuizQuestion[];
+      
+      const history = sstMcqs.filter((q) => q.subject === "history");
+      const geography = sstMcqs.filter((q) => q.subject === "geography");
+      const civics = sstMcqs.filter((q) => q.subject === "civics");
+      const economics = sstMcqs.filter((q) => q.subject === "economics");
+
+      // Pick 2 from each category (total 8) to ensure balance
+      const h2 = shuffleArray(history).slice(0, 2);
+      const g2 = shuffleArray(geography).slice(0, 2);
+      const c2 = shuffleArray(civics).slice(0, 2);
+      const e2 = shuffleArray(economics).slice(0, 2);
+
+      const selectedIds = new Set([...h2, ...g2, ...c2, ...e2].map((q) => q.id));
+      const remaining = sstMcqs.filter((q) => !selectedIds.has(q.id));
+
+      // Pick remaining 2 randomly to make it 10
+      const r2 = shuffleArray(remaining).slice(
+        0,
+        questionCount - selectedIds.size,
+      );
+
+      const finalSet = [...h2, ...g2, ...c2, ...e2, ...r2];
       return shuffleArray(finalSet);
     }
     // Fallback for Maths C9 if ever needed
