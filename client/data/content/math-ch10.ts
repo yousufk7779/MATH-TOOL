@@ -464,23 +464,20 @@ export const mathCh10: ChapterContent = {
             the point of contact.</div>
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hpdGU7IGJvcmRlcjoxcHggc29saWQgI2RkZDsiPg0KICA8ZGVmcz4NCiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjEwIiBtYXJrZXJIZWlnaHQ9IjEwIiByZWZYPSI5IiByZWZZPSIzIiBvcmllbnQ9ImF1dG8iIG1hcmtlclVuaXRzPSJzdHJva2VXaWR0aCI+DQogICAgICA8cGF0aCBkPSJNMCwwIEwwLDYgTDksMyB6IiBmaWxsPSJibGFjayIgLz4NCiAgICA8L21hcmtlcj4NCiAgPC9kZWZzPg0KICA8IS0tIENpcmNsZSAtLT4NCiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMTUwIiByPSI4MCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjE1MCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBDZW50ZXIgTyAtLT4NCiAgPHRleHQgeD0iMTkwIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPk88L3RleHQ+DQogIA0KICA8IS0tIFJhZGl1cyBPUCAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjIwMCIgeTI9IjIzMCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogIDxjaXJjbGUgY3g9IjIwMCIgY3k9IjIzMCIgcj0iMyIgZmlsbD0iYmxhY2siLz4gPCEtLSBQb2ludCBQIC0tPg0KICA8dGV4dCB4PSIyMTAiIHk9IjIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UDwvdGV4dD4NCiAgDQogIDwhLS0gVGFuZ2VudCBYWSAtLT4NCiAgPGxpbmUgeDE9IjUwIiB5MT0iMjMwIiB4Mj0iMzUwIiB5Mj0iMjMwIiBzdHJva2U9InJlZCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIgbWFya2VyLXN0YXJ0PSJ1cmwoI2Fycm93KSIvPg0KICA8dGV4dCB4PSI2MCIgeT0iMjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIj5YPC90ZXh0Pg0KICA8dGV4dCB4PSIzNDAiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+WTwvdGV4dD4NCiAgDQogIDwhLS0gUG9pbnQgUSAtLT4NCiAgPGNpcmNsZSBjeD0iMjgwIiBjeT0iMjMwIiByPSIzIiBmaWxsPSJibGFjayIvPg0KICA8dGV4dCB4PSIyODUiIHk9IjIyMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCI+UTwvdGV4dD4NCiAgDQogIDwhLS0gTGluZSBPUSAtLT4NCiAgPGxpbmUgeDE9IjIwMCIgeTE9IjE1MCIgeDI9IjI4MCIgeTI9IjIzMCIgc3Ryb2tlPSJibHVlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIvPg0KICANCiAgPCEtLSBSaWdodCBBbmdsZSBTeW1ib2wgLS0+DQogIDxwb2x5bGluZSBwb2ludHM9IjIwMCwyMjAgMjEwLDIyMCAyMTAsMjMwIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KPC9zdmc+" alt="Theorem 10.1 Diagram">
         <div class="solution-header">Proof:</div>
-        <div class="step"><strong style="color: #FB8C00;">Given: A circle with center O and a tangent XY at a
-            point P.</div>
-        <div class="step"><strong style="color: #FB8C00;">To Prove: OP is perpendicular to XY (OP ÃƒÂ¢Ã…Â Ã‚Â¥ XY).</div>
-        <div class="step"><strong style="color: #FB8C00;">Construction: Take a point Q on tangent XY, other
-            than P. Join OQ. Let OQ intersect the circle at point R.</div>
-        <div class="step"><strong style="color: #FB8C00;">Proof:</div>
-        <div class="step">We have a point Q on tangent XY (other than contact point P).</div>
-        <div class="step">Therefore, point Q must lie outside the circle.</div>
-        <div class="step">(If Q was inside, XY would be a secant, not a tangent).</div>
-        <div class="step">Since Q is outside, the distance OQ is greater than the radius of the circle.</div>
-        <div class="step">So, length OQ > length OP (since OP is the radius).</div>
-        <div class="step">This is true for every point on line XY, except point P.</div>
-        <div class="step">It means OP is the shortest distance from center O to the line XY.</div>
-        <div class="step">We know that the shortest distance from a point to a line is the perpendicular distance.</div>
-        <div class="step">Therefore, OP ÃƒÂ¢Ã…Â Ã‚Â¥ XY.</div>
-        <div class="step"><strong style="color: #FB8C00;">Final Conclusion: Hence, the tangent at any point of
-            a circle is perpendicular to the radius through the point of contact.</div>
+        <div class="step"><strong style="color: #FB8C00;">Given:</strong> A circle with centre \\(O\\) and a tangent \\(XY\\) at point \\(P\\).</div>
+        <div class="step"><strong style="color: #FB8C00;">To Prove:</strong> \\(OP \\perp XY\\) (Radius is perpendicular to the tangent at the point of contact).</div>
+        <div class="step"><strong style="color: #FB8C00;">Construction:</strong> Take any point \\(Q\\) on the tangent \\(XY\\) (other than \\(P\\)) and join \\(OQ\\).</div>
+        <div class="step"><strong style="color: #FB8C00;">Proof:</strong></div>
+        <div class="step">1. Since \\(XY\\) is a tangent touching the circle only at point \\(P\\), any other point \\(Q\\) on \\(XY\\) must lie outside the circle.</div>
+        <div class="step">2. Therefore, the distance \\(OQ\\) must be greater than the radius \\(OP\\) (i.e., \\(OQ > OP\\)).</div>
+        <div class="step">3. This is true for <em>every</em> point on the tangent \\(XY\\) except point \\(P\\).</div>
+        <div class="step">4. Since \\(OP\\) is shorter than any other line segment connecting \\(O\\) to line \\(XY\\), \\(OP\\) is the <strong>shortest distance</strong> from centre \\(O\\) to line \\(XY\\).</div>
+        <div class="step">5. Because the shortest path from a point to a line is always perpendicular, we conclude that:
+            <div class="formula-box" style="text-align: center; margin: 10px 0;">
+                \\(OP \\perp XY\\)
+            </div>
+        </div>
+        <div class="step"><strong style="color: #FB8C00;">Hence Proved.</strong></div>
     </div>
 
     <div class="content-box">

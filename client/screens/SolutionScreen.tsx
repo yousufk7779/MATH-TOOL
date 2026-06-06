@@ -1217,7 +1217,7 @@ const MathWebView = memo(
     const injectedJS = `
     const style = document.createElement('style');
     style.innerHTML = \`
-      * { max-width: 100% !important; box-sizing: border-box !important; font-weight: normal !important; }
+      * { box-sizing: border-box !important; font-weight: normal !important; }
       body { 
         margin: 0 !important; 
         padding: 5px !important; 
@@ -1227,6 +1227,9 @@ const MathWebView = memo(
         user-select: none; 
         -webkit-touch-callout: none;
       }
+      p, img, div:not(.table-container):not(.prop-table), h1, h2, h3, h4, h5, h6, b, strong, span {
+        max-width: 100% !important;
+      }
       h1, h2, h3, h4, h5, h6, b, strong, span, div, p { font-weight: normal !important; }
       img { 
         max-width: 100% !important; 
@@ -1235,14 +1238,28 @@ const MathWebView = memo(
         margin: 15px auto !important; 
         border-radius: 8px !important;
       }
-      table { 
+      table:not(.prop-table) { 
         width: 100% !important; 
         max-width: 100% !important; 
         display: table !important; 
         margin: 15px auto !important; 
         border-collapse: collapse !important;
       }
-      th, td {
+      .table-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+      .prop-table {
+        width: max-content !important;
+        max-width: none !important;
+        min-width: 100% !important;
+        display: table !important;
+        margin: 15px auto !important;
+        border-collapse: collapse !important;
+      }
+      .prop-table th, .prop-table td {
         text-align: center !important;
       }
       pre, code { 

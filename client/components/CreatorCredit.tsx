@@ -96,7 +96,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
           <ThemedText
             style={[styles.name, isLandscape && styles.nameLandscape]}
           >
-            Sameer Khan
+            Sameer Sir
           </ThemedText>
           <ThemedText style={styles.title} numberOfLines={1}>
             Founder & Educator

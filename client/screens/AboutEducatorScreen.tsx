@@ -31,10 +31,10 @@ function AboutEducatorScreen() {
                 resizeMode="cover"
               />
             </View>
-            <ThemedText style={styles.name}>Sameer Khan</ThemedText>
-            <ThemedText style={styles.role}>Educator (MCA, B.Ed)</ThemedText>
+            <ThemedText style={styles.name}>Sameer Sir</ThemedText>
+            <ThemedText style={styles.role}>(MCA, B.Ed)</ThemedText>
             <ThemedText style={styles.bodyText}>
-              Sameer Khan is a dedicated educator with a strong academic
+              Sameer Sir is a dedicated educator with a strong academic
               background (MCA, B.Ed) and over a decade of teaching experience.
               He focuses on simplifying complex concepts and helping students
               build clarity, confidence, and strong fundamentals.
@@ -85,7 +85,7 @@ function AboutEducatorScreen() {
               towards better understanding and academic success. Keep learning,
               stay curious, and give your best every day."
             </ThemedText>
-            <ThemedText style={styles.signature}>– Sameer Khan</ThemedText>
+            <ThemedText style={styles.signature}>– Sameer Sir</ThemedText>
           </View>
         </View>
       </ScrollView>

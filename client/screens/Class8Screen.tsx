@@ -54,7 +54,7 @@ function Class8Screen() {
             />
           </View>
 
-          <View style={styles.buttonWrapper}>
+          {/* <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-social-science"
               title="SOCIAL SCIENCE"
@@ -62,7 +62,7 @@ function Class8Screen() {
               colors={JiguuColors.gradients.deepOrange}
               onPress={() => navigation.navigate("Class8SocialScience")}
             />
-          </View>
+          </View> */}
 
           <View style={styles.buttonWrapper}>
             <ColorButton
