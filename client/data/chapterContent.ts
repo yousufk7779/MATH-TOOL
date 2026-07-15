@@ -256,7 +256,7 @@ export const chapterContents: Record<string, ChapterContent> = {
   ch3: mathCh3,
   ch4: mathCh4,
   ch5: mathCh5,
-  ch6: c9Math6,
+  ch6: mathCh6,
   ch7: mathCh7,
   ch8: mathCh8,
   ch9: mathCh9,

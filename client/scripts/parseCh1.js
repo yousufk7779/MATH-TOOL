@@ -1,4 +1,4 @@
-﻿const fs = require("fs");
+const fs = require("fs");
 const cheerio = require("cheerio");
 const path = require("path");
 
@@ -10,29 +10,46 @@ let result = {
   number: 1,
   title: "Real Numbers",
   introduction:
-    "A polynomial is an algebraic expression consisting of variables and coefficients, with non-negative exponent values. It forms the core of algebraic equations.",
+    "Real numbers constitute the foundation of mathematics. Every number that can be plotted on a number line is a real number. This chapter covers properties of integers, rational, and irrational numbers.",
   definitions: [
-    { term: "Degree", description: "The highest power of x in p(x)." },
     {
-      term: "Zero of a Polynomial",
-      description: "A real number k is a zero if p(k) = 0.",
+      term: "Real Numbers (R)",
+      description: "The set of rational and irrational numbers.",
     },
-    { term: "Linear", description: "Degree 1." },
-    { term: "Quadratic", description: "Degree 2." },
-    { term: "Cubic", description: "Degree 3." },
+    {
+      term: "Prime Number",
+      description: "A number that has exactly two factors (1 and itself).",
+    },
+    {
+      term: "Composite Number",
+      description: "A number that has more than two factors.",
+    },
+    {
+      term: "Rational Number",
+      description: "A number that can be written in the form p/q, where p and q are integers and q ≠ 0.",
+    },
+    {
+      term: "Irrational Number",
+      description: "A number that cannot be written in the form p/q, where p and q are integers and q ≠ 0.",
+    },
   ],
   keyPoints: [
-    "The geometrical meaning of zeros represents the x-intercepts of the polynomial graph.",
-    "The relationship between zeros and coefficients for quadratic polynomials is fundamental.",
+    "The Fundamental Theorem of Arithmetic: Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur.",
+    "Properties of irrational numbers: Proving numbers like √2, √3, and √5 are irrational.",
   ],
-  formulas: [],
+  formulas: [
+    {
+      name: "HCF and LCM Relation",
+      formula: "HCF(a, b) × LCM(a, b) = a × b (for any two positive integers a and b)",
+    },
+  ],
   crux: [
-    "A polynomial of degree n can have at most n real zeros.",
-    "For a quadratic axÂ² + bx + c, Sum of zeros = -<sup>b</sup>&frasl;<sub>a</sub>, Product of zeros = <sup>c</sup>&frasl;<sub>a</sub>.",
+    "Proving absolute irrationality of a number (such as √2 or √5) using the method of contradiction.",
+    "Determining HCF and LCM of numbers using unique prime factorisation (Fundamental Theorem of Arithmetic).",
   ],
   summary: [
-    "Polynomials offer a way to model multiple outcomes algebraically and graphically.",
-    "Their roots determine where the function crosses the axis.",
+    "Real numbers connect abstract algebra to tangible measurement.",
+    "The relationship HCF(a, b) × LCM(a, b) = a × b holds true for any two positive integers.",
     "Carefully read and understand every problem statement before jumping into the solution.",
     "A strong grasp of the core concepts is the key to solving complex problems easily.",
     "Make a habit of practicing the solved examples to get familiar with standard solution formats.",

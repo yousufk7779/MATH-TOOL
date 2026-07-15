@@ -506,10 +506,11 @@ function SolutionScreen() {
     if (chapterData) {
       if (chapterData.isHtmlView) {
         if (
-          activeSection === "mcq" &&
-          !chapterData.htmlMcqs &&
-          chapterData.mcqs &&
-          chapterData.mcqs.length > 0
+          (activeSection === "mcq" &&
+            !chapterData.htmlMcqs &&
+            chapterData.mcqs &&
+            chapterData.mcqs.length > 0) ||
+          (activeSection === "overview" && !chapterData.htmlOverview)
         ) {
           // Let it fall through to native rn UI
         } else {
