@@ -246,21 +246,17 @@ export const mathCh8: ChapterContent = {
         <div class="section-title">2. Trigonometric Ratios</div>
         <div class="step">For a right-angled triangle ABC right angled at B, with respect to angle C (θ):</div>
 
-        <div class="formula-box">
-            sin θ = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
-                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
-                    class="numerator">Opposite Side</span><span class="denominator">Hypotenuse</span></span><br><br>
-            cos θ = <span class="fraction"><span class="numerator">Base (B)</span><span
-                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
-                    class="numerator">Adjacent Side</span><span class="denominator">Hypotenuse</span></span><br><br>
-            tan θ = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
-                    class="denominator">Base (B)</span></span> = <span class="fraction"><span class="numerator">Opposite
-                    Side</span><span class="denominator">Adjacent Side</span></span>
+        <div class="formula-box" style="text-align: left !important; line-height: 2.2 !important; padding: 15px !important;">
+            \\(\\sin \\theta = \\frac{P}{H} = \\frac{\\text{Opposite Side}}{\\text{Hypotenuse}}\\)<br/><br/>
+            \\(\\cos \\theta = \\frac{B}{H} = \\frac{\\text{Adjacent Side}}{\\text{Hypotenuse}}\\)<br/><br/>
+            \\(\\tan \\theta = \\frac{P}{B} = \\frac{\\text{Opposite Side}}{\\text{Adjacent Side}}\\)
         </div>
         <div class="step">Reciprocals:</div>
-        <div class="step">cosec θ = 1/sin θ (H/P)</div>
-        <div class="step">sec θ = 1/cos θ (H/B)</div>
-        <div class="step">cot θ = 1/tan θ (B/P)</div>
+        <div class="formula-box" style="text-align: left !important; line-height: 2.2 !important; padding: 15px !important;">
+            \\(\\text{cosec } \\theta = \\frac{1}{\\sin \\theta} = \\frac{H}{P}\\)<br/><br/>
+            \\(\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{H}{B}\\)<br/><br/>
+            \\(\\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{B}{P}\\)
+        </div>
 
     </div>
 

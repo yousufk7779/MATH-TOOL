@@ -20,10 +20,10 @@ const overrideCSS = `
   .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
   .formula { color: #4CAF50 !important; }
   .true-text { color: #4CAF50 !important; }
   .false-text { color: #F44336 !important; }

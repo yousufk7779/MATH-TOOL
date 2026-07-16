@@ -1,122 +1,151 @@
-import { ChapterContent } from "../types";
+import { ChapterContent } from "../chapterContent";
 
 export const mathCh9: ChapterContent = {
-  id: "ch9",
-  number: 9,
-  title: "Some Applications of Trigonometry",
-  introduction:
-    "In this chapter, we explore how trigonometry is used in practical situations, such as finding the heights of buildings or the distances between objects, using angles of elevation and depression.",
-  definitions: [],
-  keyPoints: [
-    "Angle of Elevation: The angle formed by the line of sight with the horizontal line when the object is above the horizontal line.",
-    "Angle of Depression: The angle formed by the line of sight with the horizontal line when the object is below the horizontal line.",
-    "Trigonometric ratios (sin, cos, tan) are used to find lengths and angles in right-angled triangles.",
-  ],
-  formulas: [
-    { name: "tan θ", formula: "Opposite / Adjacent" },
-    { name: "sin θ", formula: "Opposite / Hypotenuse" },
-    { name: "cos θ", formula: "Adjacent / Hypotenuse" },
-  ],
-  crux: [
-    "Draw a clear diagram based on the problem description.",
-    "Identify the knowns (height, distance, or angle) and the unknown.",
-    "Select the appropriate trigonometric ratio (usually 'tan' for height/distance problems).",
-  ],
-  exercises: [
-    { id: "exercise1", name: "Exercise 9.1", questions: [] },
-    { id: "examples", name: "Examples", questions: [] },
-  ],
-  examples: [],
-  theorems: [],
-  mcqs: [
-    {
-      id: "mcq1",
-      question:
-        '<span style="font-weight: normal;">The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:</span>',
-      options: ["(A) 10√3 m", "(B) 10 m", "(C) 30√3 m", "(D) 10√2 m"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq2",
-      question:
-        '<span style="font-weight: normal;">A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. The length of the string is:</span>',
-      options: ["(A) 40√3 m", "(B) 30√3 m", "(C) 60√3 m", "(D) 120√3 m"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq3",
-      question:
-        '<span style="font-weight: normal;">A tower is 100√3 m high. Find the angle of elevation if its top from a point 100 m away from its foot.</span>',
-      options: ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq4",
-      question:
-        '<span style="font-weight: normal;">The shadow of a tower is equal to its height at 10:45 AM. The sun\'s altitude is:</span>',
-      options: ["(A) 30°", "(B) 45°", "(C) 60°", "(D) 90°"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq5",
-      question:
-        '<span style="font-weight: normal;">If the angle of depression of an object from a 75 m high tower is 30°, the distance of the object from the tower is:</span>',
-      options: ["(A) 75√3 m", "(B) 75 m", "(C) 25√3 m", "(D) 50 m"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq6",
-      question:
-        '<span style="font-weight: normal;">A pole 6 m high casts a shadow 2√3 m long on the ground, then the sun\'s elevation is:</span>',
-      options: ["(A) 60°", "(B) 30°", "(C) 45°", "(D) 90°"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq7",
-      question:
-        '<span style="font-weight: normal;">From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. The height of the tower is:</span>',
-      options: ["(A) 20(√3 - 1) m", "(B) 20√3 m", "(C) 20 m", "(D) 10√3 m"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq8",
-      question:
-        '<span style="font-weight: normal;">The angle of elevation of the top of a tower from two points distant s and t from its foot are complementary. Then the height of the tower is:</span>',
-      options: ["(A) st", "(B) s²t²", "(C) √st", "(D) s/t"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq9",
-      question:
-        '<span style="font-weight: normal;">If the length of the shadow of a tower is increasing, then the angle of elevation of the sun is:</span>',
-      options: [
-        "(A) Increasing",
-        "(B) Decreasing",
-        "(C) Constant",
-        "(D) None of these",
-      ],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq10",
-      question:
-        '<span style="font-weight: normal;">A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:</span>',
-      options: [
-        "(A) 15√3 m",
-        "(B) <sup>15√3</sup>&frasl;<sub>2</sub> m",
-        "(C) 7.5 m",
-        "(D) 15 m",
-      ],
-      correctAnswer: "C",
-    },
-  ],
-  summary: [
-    "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
-    "Understood the concepts of angle of elevation and depression.",
-  ],
+    id: "ch9",
+    number: 9,
+    title: "Some Applications of Trigonometry",
+    introduction: "In this chapter, we explore how trigonometry is used in practical situations, such as finding the heights of buildings or the distances between objects, using angles of elevation and depression.",
+    definitions: [],
+    keyPoints: [
+        "Angle of Elevation: The angle formed by the line of sight with the horizontal line when the object is above the horizontal line.",
+        "Angle of Depression: The angle formed by the line of sight with the horizontal line when the object is below the horizontal line.",
+        "Trigonometric ratios (sin, cos, tan) are used to find lengths and angles in right-angled triangles."
+    ],
+    formulas: [
+        { name: "tan θ", formula: "Opposite / Adjacent" },
+        { name: "sin θ", formula: "Opposite / Hypotenuse" },
+        { name: "cos θ", formula: "Adjacent / Hypotenuse" }
+    ],
+    crux: [
+        "Draw a clear diagram based on the problem description.",
+        "Identify the knowns (height, distance, or angle) and the unknown.",
+        "Select the appropriate trigonometric ratio (usually 'tan' for height/distance problems)."
+    ],
+    exercises: [
+        { id: "exercise1", name: "Exercise 9.1", questions: [] },
+        { id: "examples", name: "Examples", questions: [] }
+    ],
+    examples: [],
+    theorems: [],
+    mcqs: [
+		{
+				"id": "mcq1",
+				"question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. The height of the tower is:</span>",
+				"options": [
+						"10√3 m",
+						"10 m",
+						"30√3 m",
+						"10√2 m"
+				],
+				"correctAnswer": "10√3 m"
+		},
+		{
+				"id": "mcq2",
+				"question": "<span style=\"font-weight: normal;\">A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. The length of the string is:</span>",
+				"options": [
+						"40√3 m",
+						"30√3 m",
+						"60√3 m",
+						"120√3 m"
+				],
+				"correctAnswer": "40√3 m"
+		},
+		{
+				"id": "mcq3",
+				"question": "<span style=\"font-weight: normal;\">A tower is 100√3 m high. Find the angle of elevation if its top from a point 100 m away from its foot.</span>",
+				"options": [
+						"30°",
+						"45°",
+						"60°",
+						"90°"
+				],
+				"correctAnswer": "60°"
+		},
+		{
+				"id": "mcq4",
+				"question": "<span style=\"font-weight: normal;\">The shadow of a tower is equal to its height at 10:45 AM. The sun's altitude is:</span>",
+				"options": [
+						"30°",
+						"45°",
+						"60°",
+						"90°"
+				],
+				"correctAnswer": "45°"
+		},
+		{
+				"id": "mcq5",
+				"question": "<span style=\"font-weight: normal;\">If the angle of depression of an object from a 75 m high tower is 30°, the distance of the object from the tower is:</span>",
+				"options": [
+						"75√3 m",
+						"75 m",
+						"25√3 m",
+						"50 m"
+				],
+				"correctAnswer": "75√3 m"
+		},
+		{
+				"id": "mcq6",
+				"question": "<span style=\"font-weight: normal;\">A pole 6 m high casts a shadow 2√3 m long on the ground, then the sun's elevation is:</span>",
+				"options": [
+						"60°",
+						"30°",
+						"45°",
+						"90°"
+				],
+				"correctAnswer": "60°"
+		},
+		{
+				"id": "mcq7",
+				"question": "<span style=\"font-weight: normal;\">From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. The height of the tower is:</span>",
+				"options": [
+						"20(√3 - 1) m",
+						"20√3 m",
+						"20 m",
+						"10√3 m"
+				],
+				"correctAnswer": "20(√3 - 1) m"
+		},
+		{
+				"id": "mcq8",
+				"question": "<span style=\"font-weight: normal;\">The angle of elevation of the top of a tower from two points distant s and t from its foot are complementary. Then the height of the tower is:</span>",
+				"options": [
+						"st",
+						"s²t²",
+						"√st",
+						"s/t"
+				],
+				"correctAnswer": "√st"
+		},
+		{
+				"id": "mcq9",
+				"question": "<span style=\"font-weight: normal;\">If the length of the shadow of a tower is increasing, then the angle of elevation of the sun is:</span>",
+				"options": [
+						"Increasing",
+						"Decreasing",
+						"Constant",
+						"None of these"
+				],
+				"correctAnswer": "Decreasing"
+		},
+		{
+				"id": "mcq10",
+				"question": "<span style=\"font-weight: normal;\">A ladder 15 m long just reaches the top of a vertical wall. If the ladder makes an angle of 60° with the wall, then the height of the wall is:</span>",
+				"options": [
+						"15√3 m",
+						"<sup>15√3</sup>&frasl;<sub>2</sub> m",
+						"7.5 m",
+						"15 m"
+				],
+				"correctAnswer": "7.5 m"
+		}
+],
+    summary: [
+        "We learned to apply trigonometry to calculate heights and distances in real-world scenarios.",
+        "Understood the concepts of angle of elevation and depression."
+    ],
 
-  isHtmlView: true,
-  htmlOverview: `<!DOCTYPE html>
+    isHtmlView: true,
+    htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -137,22 +166,22 @@ export const mathCh9: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #00C6FF;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #00C6FF;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -168,8 +197,8 @@ export const mathCh9: ChapterContent = {
         }
 
         .section-title {
-            color: #00C6FF;
-            font-weight: normal ;
+            color: #D32F2F;
+            font-weight: 700;
             font-size: 1.2em;
             margin-bottom: 10px;
             border-bottom: 1px solid #ddd;
@@ -219,21 +248,21 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(0, 198, 255, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #00C6FF !important; }
-  .true-text { color: #00C6FF !important; }
-  .false-text { color: #00C6FF !important; }
+  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #00C6FF !important; font-weight: normal !important; }
+  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
 </style>
 </head>
@@ -258,21 +287,21 @@ export const mathCh9: ChapterContent = {
         </div>
 
         <div class="formula-box">
-            Line of Sight: The line drawn from the eye of an observer to the point in the object viewed
+            <strong>Line of Sight:</strong> The line drawn from the eye of an observer to the point in the object viewed
             by the observer.
         </div>
 
         <div class="formula-box">
-            Horizontal Level: The line drawn horizontally through the eye of the observer.
+            <strong>Horizontal Level:</strong> The line drawn horizontally through the eye of the observer.
         </div>
 
         <div class="formula-box">
-            Angle of Elevation: The angle formed by the line of sight with the horizontal when the
+            <strong>Angle of Elevation:</strong> The angle formed by the line of sight with the horizontal when the
             point being viewed is ABOVE the horizontal level (i.e., when we raise our head to look at the object).
         </div>
 
         <div class="formula-box">
-            Angle of Depression: The angle formed by the line of sight with the horizontal when the
+            <strong>Angle of Depression:</strong> The angle formed by the line of sight with the horizontal when the
             point being viewed is BELOW the horizontal level (i.e., when we lower our head to look at the object).
         </div>
     </div>
@@ -296,9 +325,9 @@ export const mathCh9: ChapterContent = {
         <div class="section-title">4. Trigonometric Ratios Recap</div>
         <div class="step">For a right-angled triangle with angle θ:</div>
         <ul>
-            <li>sin θ = Opposite Side / Hypotenuse</li>
-            <li>cos θ = Adjacent Side / Hypotenuse</li>
-            <li>tan θ = Opposite Side / Adjacent Side</li>
+            <li><strong>sin θ</strong> = Opposite Side / Hypotenuse</li>
+            <li><strong>cos θ</strong> = Adjacent Side / Hypotenuse</li>
+            <li><strong>tan θ</strong> = Opposite Side / Adjacent Side</li>
         </ul>
     </div>
 
@@ -307,19 +336,19 @@ export const mathCh9: ChapterContent = {
         <div class="step">Most problems in this chapter involve angles of 30°, 45°, and 60°. Memorize these values:
         </div>
         <div class="formula-box">
-            tan 30° = 1/√3 ≈ 0.577<br>
-            tan 45° = 1<br>
-            tan 60° = √3 ≈ 1.732
+            <strong>tan 30°</strong> = 1/√3 ≈ 0.577<br>
+            <strong>tan 45°</strong> = 1<br>
+            <strong>tan 60°</strong> = √3 ≈ 1.732
         </div>
         <div class="formula-box">
-            sin 30° = 1/2<br>
-            sin 45° = 1/√2<br>
-            sin 60° = √3/2
+            <strong>sin 30°</strong> = 1/2<br>
+            <strong>sin 45°</strong> = 1/√2<br>
+            <strong>sin 60°</strong> = √3/2
         </div>
         <div class="formula-box">
-            cos 30° = √3/2<br>
-            cos 45° = 1/√2<br>
-            cos 60° = 1/2
+            <strong>cos 30°</strong> = √3/2<br>
+            <strong>cos 45°</strong> = 1/√2<br>
+            <strong>cos 60°</strong> = 1/2
         </div>
     </div>
 
@@ -338,8 +367,8 @@ export const mathCh9: ChapterContent = {
 </body>
 
 </html>`,
-  htmlExercises: {
-    exercise1: `<!DOCTYPE html>
+    htmlExercises: {
+        exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -362,22 +391,22 @@ export const mathCh9: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #00C6FF;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #00C6FF;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -393,7 +422,7 @@ export const mathCh9: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -407,21 +436,21 @@ export const mathCh9: ChapterContent = {
         }
 
         .final-answer {
-            color: #00C6FF;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #00C6FF;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #00C6FF;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -479,21 +508,21 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(0, 198, 255, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #00C6FF !important; }
-  .true-text { color: #00C6FF !important; }
-  .false-text { color: #00C6FF !important; }
+  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #00C6FF !important; font-weight: normal !important; }
+  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
 </style>
 </head>
@@ -757,7 +786,7 @@ export const mathCh9: ChapterContent = {
 </body>
 
 </html>`,
-    examples: `<!DOCTYPE html>
+        examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -780,22 +809,22 @@ export const mathCh9: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #00C6FF;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #00C6FF;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -811,7 +840,7 @@ export const mathCh9: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -825,21 +854,21 @@ export const mathCh9: ChapterContent = {
         }
 
         .final-answer {
-            color: #00C6FF;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #00C6FF;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #00C6FF;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -897,21 +926,21 @@ export const mathCh9: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(0, 198, 255, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #00C6FF !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #00C6FF !important; }
-  .question { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #00C6FF !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #00C6FF !important; }
-  .true-text { color: #00C6FF !important; }
-  .false-text { color: #00C6FF !important; }
+  .question { color: #00C6FF !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; font-size: 15px !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; font-size: 15px !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #00C6FF !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #00C6FF !important; font-weight: normal !important; }
+  .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
 </style>
 </head>
@@ -1041,8 +1070,8 @@ export const mathCh9: ChapterContent = {
 
 </body>
 
-</html>`,
-  },
-  // Chapter 9 follows Chapter 8 Strategy: No htmlMcqs property here.
-  // The interactive quiz is rendered natively from the 'mcqs' array.
+</html>`
+    }
+    // Chapter 9 follows Chapter 8 Strategy: No htmlMcqs property here.
+    // The interactive quiz is rendered natively from the 'mcqs' array.
 };
