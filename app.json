@@ -2,7 +2,7 @@
   "expo": {
     "name": "NCERT SOLUTIONS",
     "slug": "jiguu-math-solutions",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "jiguu-solutions",
@@ -31,7 +31,10 @@
       "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": ["expo-web-browser", "expo-asset"],
+    "plugins": [
+      "expo-web-browser",
+      "expo-asset"
+    ],
     "experiments": {
       "reactCompiler": true
     },
