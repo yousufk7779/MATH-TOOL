@@ -845,7 +845,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       {
         id: "c7-geo-6",
         number: 6,
-        name: "Human Environment Interactions – The Tropical and the Subtropical Region",
+        name: "Human Environment Interactions - The Tropical and the Subtropical Region",
         color: "#4CAF50",
       },
       {
@@ -985,6 +985,11 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   }
 
   // Targeted theme color replacement for Class 7 Math Chapters 10-13
+  if (chapterId === "c7-geo-3") return JiguuColors.gradients.deepOrange; // Deep Orange for Changing Earth (Volcanoes/Lava)
+  if (chapterId === "c7-geo-4") return ["#C5E1A5", "#9CCC65", "#1B5E20"]; // Very Light Green for Chapter 4
+  if (chapterId === "c7-geo-5") return JiguuColors.gradients.blue; // Blue for Water
+  if (chapterId === "c7-geo-7") return JiguuColors.gradients.gold; // Gold for Deserts
+  if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;

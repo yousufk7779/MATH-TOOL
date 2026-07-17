@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#2196F3"; // Blue for Geography Chapter 5
+const themeColor = "#42A5F5"; // Matches getChapterGradient for c7-geo-5 (Blue)
 
 export const c7Geo5: ChapterContent = {
   id: "c7-geo-5",
@@ -8,205 +8,206 @@ export const c7Geo5: ChapterContent = {
   title: "Water",
   isHtmlView: true,
   htmlOverview: `
-        <div style="padding: 10px; color: #fff; text-align: justify;">
-            <p>Water is a vital resource. The sun’s heat causes evaporation of water into vapour. When the water vapour cools down, it condenses and forms clouds. From there it may fall on the land or sea in the form of rain, snow or sleet. The process by which water continually changes its form and circulates between oceans, atmosphere and land is known as the <b>water cycle</b>.</p>
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="line-height: 1.6; font-size: 16px;">Water is a vital resource that constantly circulates between the Earth's surface and the atmosphere. This chapter explores the distribution of water on our planet, the water cycle, and the movements of ocean water like waves, tides, and currents.</p>
             
-            <h3 style="color: ${themeColor}; text-align: left;">Distribution of Water Bodies</h3>
-            <p>Three-fourth of the earth's surface is covered by water. However, most of it is salty ocean water (97.3%). Only 2.7% is fresh water, found in ice-caps, ground water, rivers, and lakes. Salinity is the amount of salt in grams present in 1000 grams of water.</p>
+            <h3 style="color: ${themeColor}; text-align: left;">The Water Cycle</h3>
+            <p>The process by which water continually changes its form and circulates between oceans, atmosphere, and land is known as the **Water Cycle**. It involves evaporation, condensation, precipitation, and runoff.</p>
 
-            <h3 style="color: ${themeColor}; text-align: left;">Ocean Circulation</h3>
-            <p>Ocean water is never still. It moves continuously. The movements that occur in oceans can be broadly categorised as Waves, Tides and Currents.</p>
-            <ul style="text-align: left;">
-                <li><b style="color: ${themeColor};">Waves:</b> Formed when winds scrape across the ocean surface. During a storm, very large waves are formed (Tsunami).</li>
-                <li><b style="color: ${themeColor};">Tides:</b> The rhythmic rise and fall of ocean water twice a day. High tide helps in navigation and fishing.</li>
-                <li><b style="color: ${themeColor};">Ocean Currents:</b> Streams of water flowing constantly on the ocean surface in definite directions. They can be warm (e.g., Gulf Stream) or cold (e.g., Labrador Ocean current).</li>
+            <h3 style="color: ${themeColor}; text-align: left;">Distribution of Water Bodies</h3>
+            <p>About 71% of the Earth's surface is covered with water. However, most of it is saline:</p>
+            <ul style="text-align: left; line-height: 1.6;">
+                <li><b style="color: ${themeColor};">Oceans (Saline):</b> 97.3%</li>
+                <li><b style="color: ${themeColor};">Ice Caps & Glaciers (Freshwater):</b> 2.0%</li>
+                <li><b style="color: ${themeColor};">Ground Water (Freshwater):</b> 0.68%</li>
+                <li><b style="color: ${themeColor};">Rivers & Lakes (Freshwater):</b> Less than 0.02%</li>
+            </ul>
+
+            <h3 style="color: ${themeColor}; text-align: left;">Ocean Water Movements</h3>
+            <p>Ocean water is never still. Its movements are categorized into three types:</p>
+            <ul style="text-align: left; line-height: 1.6;">
+                <li><b style="color: ${themeColor};">Waves:</b> Formed when winds scrape across the ocean surface. Larger winds create larger waves. Undersea earthquakes can cause giant waves called **Tsunamis**.</li>
+                <li><b style="color: ${themeColor};">Tides:</b> The rhythmic rise and fall of ocean water twice a day, caused by the gravitational pull of the sun and moon.</li>
+                <li><b style="color: ${themeColor};">Ocean Currents:</b> Streams of water flowing constantly on the ocean surface in definite directions. They can be warm (originating near the equator) or cold (originating from polar regions).</li>
             </ul>
         </div>
     `,
   htmlExercises: {
     "c7g5-ex-all": `
-            <div style="padding: 10px; color: #fff; text-align: justify;">
-                <!-- 1. Answer the following questions -->
-                <div style="margin-bottom: 30px;">
-                    <p style="color: ${themeColor}; font-weight: bold; font-size: 1.1em; margin-bottom: 15px;">1. Answer the following questions.</p>
-                    
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(i) What is precipitation?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Falling of moisture in the form of rainfall, snow, sleet, or hail on the earth's surface is called precipitation.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(ii) What is water cycle?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The process by which water continually changes its form and circulates between oceans, atmosphere and land is known as the water cycle.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(iii) What are the factors affecting the height of the waves?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The height of the waves is affected by the speed of the wind, the duration of the wind, and the distance it blows over the water.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(iv) Which factors affect the movement of ocean water?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Temperature, salinity, gravity of sun and moon, and wind are the main factors affecting the movement of ocean water.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(v) What are tides and how are they caused?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Tides are the rhythmic rise and fall of ocean water twice a day. They are caused by the strong gravitational pull exerted by the sun and the moon on the earth's surface.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(vi) What are ocean currents?</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Ocean currents are streams of water flowing constantly on the ocean surface in definite directions.</p>
-                    </div>
+            <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+                
+                <!-- Q1 -->
+                <h3 style="color: ${themeColor}; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; margin-top: 20px;">1. Answer the following questions:</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(i) What is precipitation?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Precipitation is any form of water (like rain, snow, sleet, or hail) falling from the clouds to the Earth's surface.</p>
                 </div>
 
-                <!-- 2. Give reasons -->
-                <div style="margin-bottom: 30px;">
-                    <p style="color: ${themeColor}; font-weight: bold; font-size: 1.1em; margin-bottom: 15px;">2. Give reasons.</p>
-                    
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(i) Ocean water is salty</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Ocean water is salty because it contains a large amount of dissolved salts. Most of the salt is sodium chloride or the common table salt that we eat.</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: ${themeColor}; font-weight: bold;">(ii) The quality of water is deteriorating</p>
-                        <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The quality of water is deteriorating due to human activities like dumping of industrial waste, discharge of untreated sewage, and excessive use of fertilizers and pesticides which pollute water bodies.</p>
-                    </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(ii) What is water cycle?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The continuous circulation of water between oceans, atmosphere, and land through evaporation, condensation, and precipitation is called the water cycle.</p>
                 </div>
 
-                <!-- 3. Tick the correct answer -->
-                <div style="margin-bottom: 30px;">
-                    <p style="color: ${themeColor}; font-weight: bold; font-size: 1.1em; margin-bottom: 15px;">3. Tick the correct answer.</p>
-                    
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: #fff;">(i) The process by which water continually changes its form and circulates between oceans, atmosphere and land</p>
-                        <p style="color: #E0E0E0; margin-left: 10px;"><b style="color: ${themeColor};">(a) Water cycle</b> &nbsp;&nbsp; (b) Tides &nbsp;&nbsp; (c) Ocean currents</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: #fff;">(ii) Generally the warm ocean currents originate near</p>
-                        <p style="color: #E0E0E0; margin-left: 10px;">(a) Poles &nbsp;&nbsp; <b style="color: ${themeColor};">(b) Equator</b> &nbsp;&nbsp; (c) None of these</p>
-                    </div>
-
-                    <div style="margin-bottom: 18px; margin-left: 10px;">
-                        <p style="color: #fff;">(iii) The rhythmic rise and fall of ocean water twice in a day is called</p>
-                        <p style="color: #E0E0E0; margin-left: 10px;"><b style="color: ${themeColor};">(a) Tide</b> &nbsp;&nbsp; (b) Ocean current &nbsp;&nbsp; (c) Wave</p>
-                    </div>
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(iii) What are the factors affecting the height of the waves?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The height of waves is affected by wind speed, wind duration, and undersea disturbances like earthquakes.</p>
                 </div>
 
-                <!-- 4. Match the following -->
-                <div style="margin-bottom: 30px;">
-                    <p style="color: ${themeColor}; font-weight: bold; font-size: 1.1em; margin-bottom: 15px;">4. Match the following.</p>
-                    <table style="width: 100%; border-collapse: collapse; color: #fff; margin-left: 5px;">
-                        <tr>
-                            <td style="padding: 10px; border: 1px solid #555; width: 40%;">(i) Caspian Sea</td>
-                            <td style="padding: 10px; border: 1px solid #555;">(a) Largest lake</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px; border: 1px solid #555;">(ii) Tide</td>
-                            <td style="padding: 10px; border: 1px solid #555;">(b) Periodic rise and fall of water</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px; border: 1px solid #555;">(iii) Tsunami</td>
-                            <td style="padding: 10px; border: 1px solid #555;">(c) Strong seismic waves</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 10px; border: 1px solid #555;">(iv) Ocean currents</td>
-                            <td style="padding: 10px; border: 1px solid #555;">(d) Streams of water moving along definite paths</td>
-                        </tr>
-                    </table>
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(iv) Which factors affect the movement of ocean water?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> The movements of ocean water are affected by temperature variations, winds, the gravitational pull of the sun and moon, and salinity.</p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(v) What are tides and how are they caused?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Tides are the rhythmic rise and fall of ocean water twice a day. They are caused by the strong gravitational pull of the sun and the moon on the Earth.</p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(vi) What are ocean currents?</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Ocean currents are streams of water flowing constantly on the ocean surface in definite directions. They can be warm or cold.</p>
+                </div>
+
+                <!-- Q2 -->
+                <h3 style="color: ${themeColor}; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px; margin-top: 30px;">2. Give reasons:</h3>
+                
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(i) Ocean water is salty:</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Ocean water is salty because rivers dump dissolved minerals and salts from the land into the oceans. As water evaporates, the salt is left behind, increasing its concentration.</p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 5px;">(ii) The quality of water is deteriorating:</p>
+                    <p style="color: #E0E0E0;"><b style="color: ${themeColor};">Answer:</b> Water quality is deteriorating due to:
+                        <ul style="margin: 5px 0 0 20px; padding: 0; text-align: left; color: #E0E0E0;">
+                            <li>Dumping of untreated domestic sewage and industrial chemical wastes.</li>
+                            <li>Runoff containing agricultural pesticides and fertilizers.</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         `,
   },
-  introduction: "Water is a vital resource.",
+  introduction:
+    "In this chapter, we explore the distribution of water, the water cycle, and ocean movements.",
   definitions: [],
   keyPoints: [],
   formulas: [],
   crux: [],
+  exercises: [{ id: "c7g5-ex-all", name: "Chapter Solutions", questions: [] }],
+  examples: [],
   mcqs: [
     {
-      id: "c7g5-mcq-1",
-      question: "The process by which water continually changes its form is:",
-      options: ["Water cycle", "Tide", "Ocean current", "Precipitation"],
-      correctAnswer: "a",
-    },
-    {
-      id: "c7g5-mcq-2",
-      question: "Generally, warm ocean currents originate near the:",
-      options: ["Poles", "Equator", "Tropic of Cancer", "None of these"],
-      correctAnswer: "b",
-    },
-    {
-      id: "c7g5-mcq-3",
+      id: "cg5-mcq-1",
       question:
-        "The rhythmic rise and fall of ocean water twice a day is called:",
+        "The process by which water continually changes its form and circulates is the:",
+      options: ["Tides cycle", "Water cycle", "Wind current", "Tsunami"],
+      correctAnswer: "b",
+      explanation:
+        "The water cycle moves water continuously between oceans, atmosphere, and land.",
+    },
+    {
+      id: "cg5-mcq-2",
+      question: "What percentage of the Earth's total water is fresh water?",
+      options: ["97.3%", "2.7%", "50.0%", "10.0%"],
+      correctAnswer: "b",
+      explanation:
+        "Only about 2.7% of the Earth's water is freshwater, and most of it is locked in ice caps and glaciers.",
+    },
+    {
+      id: "cg5-mcq-3",
+      question: "Where is the vast majority of the Earth's water found?",
+      options: [
+        "In rivers",
+        "In fresh lakes",
+        "In oceans and seas",
+        "Under the ground",
+      ],
+      correctAnswer: "c",
+      explanation:
+        "Oceans and seas hold 97.3% of the Earth's water, which is salty.",
+    },
+    {
+      id: "cg5-mcq-4",
+      question: "Why is ocean water salty?",
+      options: [
+        "It contains dissolved table salt",
+        "It has fish waste",
+        "It is caused by seaweed",
+        "It has hot water",
+      ],
+      correctAnswer: "a",
+      explanation:
+        "Ocean water contains dissolved salts, mainly sodium chloride (common table salt), brought by rivers.",
+    },
+    {
+      id: "cg5-mcq-5",
+      question:
+        "The rhythmic rise and fall of ocean water twice a day is called a:",
       options: ["Wave", "Tide", "Ocean current", "Tsunami"],
       correctAnswer: "b",
+      explanation:
+        "Tides are the regular, twice-daily rise and fall of sea levels.",
     },
     {
-      id: "c7g5-mcq-4",
-      question: "Which is the largest lake in the world?",
-      options: ["Victoria Lake", "Superior Lake", "Caspian Sea", "Dead Sea"],
-      correctAnswer: "c",
-    },
-    {
-      id: "c7g5-mcq-5",
-      question: "The Dead Sea is located in which country?",
-      options: ["India", "Israel", "USA", "Egypt"],
-      correctAnswer: "b",
-    },
-    {
-      id: "c7g5-mcq-6",
-      question: "Tsunami is a Japanese word that means:",
-      options: ["Big Wave", "Harbour waves", "Stormy water", "Volcanic wave"],
-      correctAnswer: "b",
-    },
-    {
-      id: "c7g5-mcq-7",
-      question:
-        "Salinity is the amount of salt in grams present in ____ grams of water.",
-      options: ["100", "500", "1000", "2000"],
-      correctAnswer: "c",
-    },
-    {
-      id: "c7g5-mcq-8",
-      question: "High tides are helpful for which of these?",
+      id: "cg5-mcq-6",
+      question: "High tides are helpful because they:",
       options: [
-        "Navigation",
-        "Fishing",
-        "Electricity generation",
-        "All of these",
+        "Help in navigation and fishing",
+        "Cause coastal erosion",
+        "Produce high winds",
+        "Trigger earthquakes",
       ],
-      correctAnswer: "d",
+      correctAnswer: "a",
+      explanation:
+        "High tides raise water levels near shores, helping ships enter ports and bringing fish closer.",
     },
     {
-      id: "c7g5-mcq-9",
-      question: "The Labrador Ocean current is a:",
+      id: "cg5-mcq-7",
+      question:
+        "Ocean tides are caused by the strong gravitational attraction of the:",
+      options: [
+        "Sun and Moon",
+        "Earth's magnetic core",
+        "Wind systems",
+        "Undersea volcanoes",
+      ],
+      correctAnswer: "a",
+      explanation:
+        "The gravitational pull of both the sun and the moon causes tides on Earth.",
+    },
+    {
+      id: "cg5-mcq-8",
+      question:
+        "Streams of water flowing constantly on the ocean surface in definite directions are:",
+      options: ["Tides", "Waves", "Ocean currents", "T Tsunamis"],
+      correctAnswer: "c",
+      explanation:
+        "Ocean currents are like rivers flowing within oceans, influencing regional climates.",
+    },
+    {
+      id: "cg5-mcq-9",
+      question: "The Labrador Current is an example of a:",
       options: [
         "Warm current",
         "Cold current",
-        "Neutral current",
-        "None of these",
+        "Mild current",
+        "Subsurface current",
       ],
       correctAnswer: "b",
+      explanation:
+        "The Labrador Current is a cold current that flows from polar regions southwards.",
     },
     {
-      id: "c7g5-mcq-10",
-      question: "The Gulf Stream is a famous example of a:",
-      options: ["Cold current", "Warm current", "Tsunami", "Tide"],
+      id: "cg5-mcq-10",
+      question:
+        "Giant ocean waves caused by undersea earthquakes or landslides are:",
+      options: ["Spring tides", "Tsunamis", "Neap tides", "Drift currents"],
       correctAnswer: "b",
+      explanation:
+        "Tsunamis are massive, destructive waves generated by sudden seabed movements.",
     },
   ],
   summary: [],
-  exercises: [
-    {
-      id: "c7g5-ex-all",
-      name: "Exercise",
-      questions: [],
-    },
-  ],
-  examples: [],
 };
