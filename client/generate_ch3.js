@@ -33,6 +33,11 @@ const overrideCSS = `
   .section-title { color: #AB47BC !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 
@@ -87,9 +92,7 @@ function readHtml(filename) {
   return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
-// Fixed option helper with large padding
-const opt = (text) =>
-  `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text}</div>`;
+const opt = (text) => text;
 
 const mcqArray = [
   {
@@ -237,13 +240,12 @@ export const mathCh3: ChapterContent = {
         "Graphical interpretation of consistency and dependence."
     ],
     exercises: [
+        { id: "examples", name: "Examples", questions: [] },
         { id: "exercise1", name: "Exercise 3.1", questions: [] },
         { id: "exercise2", name: "Exercise 3.2", questions: [] },
         { id: "exercise3", name: "Exercise 3.3", questions: [] }
     ],
-    examples: [
-        { id: "examples", name: "Examples", questions: [] }
-    ],
+    examples: [],
     theorems: [],
     mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [

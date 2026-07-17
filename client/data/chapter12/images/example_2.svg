@@ -1,1 +1,55 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" style="background-color:white; border:1px solid #ddd;"><path d="M 100 150.0 L 150.0 100 L 250.0 100 L 200 150.0 Z" fill="#fff9c4" stroke="black" stroke-width="1"/><rect x="100" y="150.0" width="100" height="100" fill="#fff9c4" stroke="black" stroke-width="1"/><path d="M 200 150.0 L 250.0 100 L 250.0 200 L 200 250.0 Z" fill="#fff9c4" stroke="black" stroke-width="1"/><path d="M 100 100 A 50 50 0 0 1 200 100" fill="#bbdefb" stroke="black" fill-opacity="0.8"/><text x="150" y="250" font-family="Arial" font-size="12" fill="black" text-anchor="middle">Hemisphere on Cube</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" style="background-color:white; border:1px solid #ddd;">
+  <defs>
+    <!-- Arrowhead markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="black"/>
+    </marker>
+    <!-- Sphere Gradient -->
+    <radialGradient id="hemiGrad" cx="50%" cy="30%" r="50%" fx="40%" fy="20%">
+      <stop offset="0%" stop-color="#e1f5fe" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0288d1" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 3D Cube Faces (White background with blue borders) -->
+  <!-- Top face -->
+  <path d="M 80 130 L 135 80 L 275 80 L 220 130 Z" fill="#f5fbff" stroke="#0090f0" stroke-width="1.75"/>
+  <!-- Right face -->
+  <path d="M 220 130 L 275 80 L 275 210 L 220 260 Z" fill="#f5fbff" stroke="#0090f0" stroke-width="1.75"/>
+  <!-- Front face -->
+  <path d="M 80 130 L 220 130 L 220 260 L 80 260 Z" fill="#f5fbff" stroke="#0090f0" stroke-width="1.75"/>
+
+  <!-- Hemisphere Base Ellipse (Dashed as it is a rim on the top face) -->
+  <ellipse cx="177.5" cy="105" rx="55" ry="18.5" fill="none" stroke="#0090f0" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Hemisphere Dome -->
+  <path d="M 122.5 105 A 55 55 0 0 1 232.5 105 Z" fill="url(#hemiGrad)" stroke="#0090f0" stroke-width="2"/>
+
+  <!-- Dimension Helper / Extension lines -->
+  <!-- Height helpers -->
+  <line x1="75" y1="130" x2="50" y2="130" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <line x1="75" y1="260" x2="50" y2="260" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <!-- Width helpers -->
+  <line x1="80" y1="265" x2="80" y2="280" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <line x1="220" y1="265" x2="220" y2="280" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  
+  <!-- Diameter vertical dashed helper lines -->
+  <line x1="122.5" y1="105" x2="122.5" y2="50" stroke="black" stroke-width="1.25" stroke-dasharray="3,3"/>
+  <line x1="232.5" y1="105" x2="232.5" y2="50" stroke="black" stroke-width="1.25" stroke-dasharray="3,3"/>
+
+  <!-- Left Arrow (Vertical Height: 5 cm) -->
+  <line x1="55" y1="136" x2="55" y2="254" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="35" y="200" font-family="Arial" font-size="13" font-weight="bold" fill="black" text-anchor="middle">5 cm</text>
+
+  <!-- Bottom Arrow (Horizontal Width: 5 cm) -->
+  <line x1="86" y1="275" x2="214" y2="275" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="150" y="295" font-family="Arial" font-size="13" font-weight="bold" fill="black" text-anchor="middle">5 cm</text>
+
+  <!-- Depth Arrow (Side Edge: 5 cm) -->
+  <line x1="232" y1="137" x2="279" y2="95" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="278" y="130" font-family="Arial" font-size="13" font-weight="bold" fill="black" text-anchor="middle">5 cm</text>
+
+  <!-- Diameter Arrow (Hemisphere: 4.2 cm) -->
+  <line x1="128.5" y1="55" x2="226.5" y2="55" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="177.5" y="46" font-family="Arial" font-size="13" font-weight="bold" fill="black" text-anchor="middle">4.2 cm</text>
+</svg>

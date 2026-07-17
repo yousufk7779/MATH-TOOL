@@ -33,6 +33,11 @@ const overrideCSS = `
   .section-title { color: #00C6FF !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 

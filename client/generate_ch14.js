@@ -33,6 +33,11 @@ const overrideCSS = `
   .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 
@@ -72,6 +77,15 @@ function readHtml(filename) {
     const fullImgPath = path.join(HTML_DIR, p1);
     const b64Src = encodeImage(fullImgPath);
     if (b64Src) return `src="${b64Src}"`;
+    return match;
+  });
+
+  html = html.replace(/src="([^"]+\.(?:svg|png|jpg|jpeg))"/gi, (match, p1) => {
+    if (p1.startsWith("data:") || p1.startsWith("http")) return match;
+    const filenamePath = path.basename(p1);
+    const fullImgPath = path.join(HTML_DIR, "images", filenamePath);
+    const b64Src = encodeImage(fullImgPath);
+    if (b64Src) return 'src="' + b64Src + '"';
     return match;
   });
 
@@ -202,11 +216,10 @@ export const mathCh14: ChapterContent = {
         "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes."
     ],
     exercises: [
+        { id: "examples", name: "Examples", questions: [] },
         { id: "exercise1", name: "Exercise 14.1", questions: [] }
     ],
-    examples: [
-        { id: "examples", name: "Examples", questions: [] }
-    ],
+    examples: [],
     theorems: [],
     mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [

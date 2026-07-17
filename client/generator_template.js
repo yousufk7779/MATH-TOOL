@@ -29,6 +29,11 @@ const overrideCSS = `
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 

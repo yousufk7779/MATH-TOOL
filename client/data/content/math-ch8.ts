@@ -1,97 +1,137 @@
-import { ChapterContent } from "../types";
+import { ChapterContent } from "../chapterContent";
 
 export const mathCh8: ChapterContent = {
-  id: "ch8",
-  number: 8,
-  title: "Introduction to Trigonometry",
-  introduction: "Loading Chapter 8...",
-  definitions: [],
-  keyPoints: [],
-  formulas: [],
-  crux: [],
-  exercises: [
-    { id: "exercise1", name: "Exercise 8.1", questions: [] },
-    { id: "exercise2", name: "Exercise 8.2", questions: [] },
-    { id: "exercise3", name: "Exercise 8.3", questions: [] },
-  ],
-  examples: [],
-  theorems: [],
-  mcqs: [
-    {
-      id: "mcq1",
-      question:
-        '<span style="font-weight: normal;">1. The value of 9 sec² A - 9 tan² A is:</span>',
-      options: ["(A) 1", "(B) 9", "(C) 8", "(D) 0"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq2",
-      question:
-        '<span style="font-weight: normal;">2. The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:</span>',
-      options: ["(A) 0", "(B) 1", "(C) 2", "(D) -1"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq3",
-      question:
-        '<span style="font-weight: normal;">3. (sec A + tan A)(1 - sin A) is equal to:</span>',
-      options: ["(A) sec A", "(B) sin A", "(C) cosec A", "(D) cos A"],
-      correctAnswer: "D",
-    },
-    {
-      id: "mcq4",
-      question:
-        '<span style="font-weight: normal;">4. The value of (1 + tan² A) / (1 + cot² A) is:</span>',
-      options: ["(A) sec² A", "(B) -1", "(C) cot² A", "(D) tan² A"],
-      correctAnswer: "D",
-    },
-    {
-      id: "mcq5",
-      question:
-        '<span style="font-weight: normal;">5. If sin A = 3/4, then cos A is:</span>',
-      options: ["(A) 4/3", "(B) √7 / 4", "(C) 3 / √7", "(D) √7 / 3"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq6",
-      question:
-        '<span style="font-weight: normal;">6. If 4 tan A = 3, then the value of (4 sin θ - cos θ) / (4 sin θ + cos θ) is:</span>',
-      options: ["(A) 2/3", "(B) 1/3", "(C) 1/2", "(D) 3/4"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq7",
-      question:
-        '<span style="font-weight: normal;">7. The value of sin 60° cos 30° + sin 30° cos 60° is:</span>',
-      options: ["(A) 0", "(B) 1", "(C) 2", "(D) √3"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq8",
-      question:
-        '<span style="font-weight: normal;">8. If tan A = √3, then the value of sec A is:</span>',
-      options: ["(A) 2", "(B) √3 / 2", "(C) 1/2", "(D) 1 / √3"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq9",
-      question:
-        '<span style="font-weight: normal;">9. The value of tan 45° is:</span>',
-      options: ["(A) 0", "(B) 1", "(C) √3", "(D) 1 / √3"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq10",
-      question:
-        '<span style="font-weight: normal;">10. If cos 9α = sin α and 9α < 90°, then the value of tan 5α is:</span>',
-      options: ["(A) 1 / √3", "(B) √3", "(C) 1", "(D) 0"],
-      correctAnswer: "C",
-    },
-  ],
-  summary: [],
+    id: "ch8",
+    number: 8,
+    title: "Introduction to Trigonometry",
+    introduction: "Loading Chapter 8...",
+    definitions: [],
+    keyPoints: [],
+    formulas: [],
+    crux: [],
+    exercises: [
+        { id: "exercise1", name: "Exercise 8.1", questions: [] },
+        { id: "exercise2", name: "Exercise 8.2", questions: [] },
+        { id: "exercise3", name: "Exercise 8.3", questions: [] }
+    ],
+    examples: [],
+    theorems: [],
+    mcqs: [
+		{
+				"id": "mcq1",
+				"question": "<span style=\"font-weight: normal;\">The value of 9 sec² A - 9 tan² A is:</span>",
+				"options": [
+						"1",
+						"9",
+						"8",
+						"0"
+				],
+				"correctAnswer": "9"
+		},
+		{
+				"id": "mcq2",
+				"question": "<span style=\"font-weight: normal;\">The value of (1 + tan θ + sec θ)(1 + cot θ - cosec θ) is:</span>",
+				"options": [
+						"0",
+						"1",
+						"2",
+						"-1"
+				],
+				"correctAnswer": "2"
+		},
+		{
+				"id": "mcq3",
+				"question": "<span style=\"font-weight: normal;\">(sec A + tan A)(1 - sin A) is equal to:</span>",
+				"options": [
+						"sec A",
+						"sin A",
+						"cosec A",
+						"cos A"
+				],
+				"correctAnswer": "cos A"
+		},
+		{
+				"id": "mcq4",
+				"question": "<span style=\"font-weight: normal;\">The value of (1 + tan² A) / (1 + cot² A) is:</span>",
+				"options": [
+						"sec² A",
+						"-1",
+						"cot² A",
+						"tan² A"
+				],
+				"correctAnswer": "tan² A"
+		},
+		{
+				"id": "mcq5",
+				"question": "<span style=\"font-weight: normal;\">If sin A = <sup>3</sup>&frasl;<sub>4</sub>, then cos A is:</span>",
+				"options": [
+						"<sup>4</sup>&frasl;<sub>3</sub>",
+						"<sup>√7</sup>&frasl;<sub>4</sub>",
+						"<sup>3</sup>&frasl;<sub>√7</sub>",
+						"<sup>√7</sup>&frasl;<sub>3</sub>"
+				],
+				"correctAnswer": "<sup>√7</sup>&frasl;<sub>4</sub>"
+		},
+		{
+				"id": "mcq6",
+				"question": "<span style=\"font-weight: normal;\">If 4 tan A = 3, then the value of (4 sin θ - cos θ) / (4 sin θ + cos θ) is:</span>",
+				"options": [
+						"<sup>2</sup>&frasl;<sub>3</sub>",
+						"<sup>1</sup>&frasl;<sub>3</sub>",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"<sup>3</sup>&frasl;<sub>4</sub>"
+				],
+				"correctAnswer": "<sup>1</sup>&frasl;<sub>2</sub>"
+		},
+		{
+				"id": "mcq7",
+				"question": "<span style=\"font-weight: normal;\">The value of sin 60° cos 30° + sin 30° cos 60° is:</span>",
+				"options": [
+						"0",
+						"1",
+						"2",
+						"√3"
+				],
+				"correctAnswer": "1"
+		},
+		{
+				"id": "mcq8",
+				"question": "<span style=\"font-weight: normal;\">If tan A = √3, then the value of sec A is:</span>",
+				"options": [
+						"2",
+						"<sup>√3</sup>&frasl;<sub>2</sub>",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"<sup>1</sup>&frasl;<sub>√3</sub>"
+				],
+				"correctAnswer": "2"
+		},
+		{
+				"id": "mcq9",
+				"question": "<span style=\"font-weight: normal;\">The value of tan 45° is:</span>",
+				"options": [
+						"0",
+						"1",
+						"√3",
+						"1/√3"
+				],
+				"correctAnswer": "1"
+		},
+		{
+				"id": "mcq10",
+				"question": "<span style=\"font-weight: normal;\">If cos 9α = sin α and 9α < 90°, then the value of tan 5α is:</span>",
+				"options": [
+						"<sup>1</sup>&frasl;<sub>√3</sub>",
+						"√3",
+						"1",
+						"0"
+				],
+				"correctAnswer": "1"
+		}
+],
+    summary: [],
 
-  isHtmlView: true,
-  htmlOverview: `<!DOCTYPE html>
+    isHtmlView: true,
+    htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -112,22 +152,22 @@ export const mathCh8: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF8A65;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #FF8A65;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -143,8 +183,8 @@ export const mathCh8: ChapterContent = {
         }
 
         .section-title {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #D32F2F;
+            font-weight: 700;
             font-size: 1.2em;
             margin-bottom: 10px;
             border-bottom: 1px solid #ddd;
@@ -204,22 +244,27 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #FF8A65 !important; }
-  .true-text { color: #FF8A65 !important; }
-  .false-text { color: #FF8A65 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #FF8A65 !important; font-weight: normal !important; }
+  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -229,16 +274,16 @@ export const mathCh8: ChapterContent = {
 
     <div class="content-box">
         <div class="section-title">1. Introduction</div>
-        <div class="step">The word 'trigonometry' is derived from the Greek words <em>'tri'</em>
+        <div class="step">The word <strong>'trigonometry'</strong> is derived from the Greek words <em>'tri'</em>
             (meaning three), <em>'gon'</em> (meaning sides) and <em>'metron'</em> (meaning measure). In fact,
             trigonometry is the study of relationships between the sides and angles of a triangle.</div>
         <div class="step">In this chapter, we will study some ratios of the sides of a right triangle with respect to
-            its acute angles, called trigonometric ratios of the angle. We will restrict our discussion
+            its acute angles, called <strong>trigonometric ratios</strong> of the angle. We will restrict our discussion
             to acute angles only.</div>
-        <div class="step">Right-Angled Triangle: A triangle in which one angle is a right angle (90°).
-            The side opposite to the right angle is called the Hypotenuse. The other two sides are
-            often referred to as the Base (adjacent to the angle of interest) and the
-            Perpendicular (opposite to the angle of interest).
+        <div class="step"><strong>Right-Angled Triangle:</strong> A triangle in which one angle is a right angle (90°).
+            The side opposite to the right angle is called the <strong>Hypotenuse</strong>. The other two sides are
+            often referred to as the <strong>Base</strong> (adjacent to the angle of interest) and the
+            <strong>Perpendicular</strong> (opposite to the angle of interest).
         </div>
     </div>
 
@@ -246,17 +291,21 @@ export const mathCh8: ChapterContent = {
         <div class="section-title">2. Trigonometric Ratios</div>
         <div class="step">For a right-angled triangle ABC right angled at B, with respect to angle C (θ):</div>
 
-        <div class="formula-box" style="text-align: left !important; line-height: 2.2 !important; padding: 15px !important;">
-            \\(\\sin \\theta = \\frac{P}{H} = \\frac{\\text{Opposite Side}}{\\text{Hypotenuse}}\\)<br/><br/>
-            \\(\\cos \\theta = \\frac{B}{H} = \\frac{\\text{Adjacent Side}}{\\text{Hypotenuse}}\\)<br/><br/>
-            \\(\\tan \\theta = \\frac{P}{B} = \\frac{\\text{Opposite Side}}{\\text{Adjacent Side}}\\)
+        <div class="formula-box">
+            <strong>sin θ</strong> = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
+                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
+                    class="numerator">Opposite Side</span><span class="denominator">Hypotenuse</span></span><br><br>
+            <strong>cos θ</strong> = <span class="fraction"><span class="numerator">Base (B)</span><span
+                    class="denominator">Hypotenuse (H)</span></span> = <span class="fraction"><span
+                    class="numerator">Adjacent Side</span><span class="denominator">Hypotenuse</span></span><br><br>
+            <strong>tan θ</strong> = <span class="fraction"><span class="numerator">Perpendicular (P)</span><span
+                    class="denominator">Base (B)</span></span> = <span class="fraction"><span class="numerator">Opposite
+                    Side</span><span class="denominator">Adjacent Side</span></span>
         </div>
-        <div class="step">Reciprocals:</div>
-        <div class="formula-box" style="text-align: left !important; line-height: 2.2 !important; padding: 15px !important;">
-            \\(\\text{cosec } \\theta = \\frac{1}{\\sin \\theta} = \\frac{H}{P}\\)<br/><br/>
-            \\(\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{H}{B}\\)<br/><br/>
-            \\(\\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{B}{P}\\)
-        </div>
+        <div class="step"><strong>Reciprocals:</strong></div>
+        <div class="step">cosec θ = 1/sin θ (H/P)</div>
+        <div class="step">sec θ = 1/cos θ (H/B)</div>
+        <div class="step">cot θ = 1/tan θ (B/P)</div>
 
     </div>
 
@@ -264,11 +313,11 @@ export const mathCh8: ChapterContent = {
         <div class="section-title">Key Points to Remember</div>
         <div class="step">1. The values of the trigonometric ratios of an angle do not vary with the lengths of the
             sides of the triangle, if the angle remains the same.</div>
-        <div class="step">2. Since the hypotenuse is the longest side in a right triangle, the value of sin
-                A or cos A is always less than 1 (or, in particular, equal to 1).</div>
-        <div class="step">3. The symbol sin A is used as an abbreviation for 'the sine of the angle A'.
+        <div class="step">2. Since the hypotenuse is the longest side in a right triangle, the value of <strong>sin
+                A</strong> or <strong>cos A</strong> is always less than 1 (or, in particular, equal to 1).</div>
+        <div class="step">3. The symbol <strong>sin A</strong> is used as an abbreviation for 'the sine of the angle A'.
             sin A is not the product of 'sin' and A. 'sin' separated from A has no meaning.</div>
-        <div class="step">4. Pythagoras Theorem: In a right-angled triangle, square of Hypotenuse = sum
+        <div class="step">4. <strong>Pythagoras Theorem:</strong> In a right-angled triangle, square of Hypotenuse = sum
             of squares of other two sides (\\(H^2 = P^2 + B^2\\)).</div>
     </div>
 
@@ -345,11 +394,11 @@ export const mathCh8: ChapterContent = {
         </div>
 
         <div class="formula-box">
-            Pythagorean Identities:<br>
+            <strong>Pythagorean Identities:</strong><br>
             1. sin² A + cos² A = 1<br>
             2. 1 + tan² A = sec² A<br>
             3. 1 + cot² A = cosec² A<br><br>
-            Complementary Angles:<br>
+            <strong>Complementary Angles:</strong><br>
             sin (90° - A) = cos A<br>
             cos (90° - A) = sin A<br>
             tan (90° - A) = cot A<br>
@@ -364,8 +413,8 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-  htmlExercises: {
-    exercise1: `<!DOCTYPE html>
+    htmlExercises: {
+        exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -388,22 +437,22 @@ export const mathCh8: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF8A65;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #FF8A65;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -419,7 +468,7 @@ export const mathCh8: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -427,7 +476,7 @@ export const mathCh8: ChapterContent = {
         .sub-question {
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: normal ;
+            font-weight: 600;
             color: #444;
         }
 
@@ -440,21 +489,21 @@ export const mathCh8: ChapterContent = {
         }
 
         .final-answer {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -497,14 +546,14 @@ export const mathCh8: ChapterContent = {
         }
 
         .true-text {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #2E7D32;
             /* Green */
         }
 
         .false-text {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #D32F2F;
             /* Red */
         }
     </style>
@@ -525,22 +574,27 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #FF8A65 !important; }
-  .true-text { color: #FF8A65 !important; }
-  .false-text { color: #FF8A65 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #FF8A65 !important; font-weight: normal !important; }
+  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -785,7 +839,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-    exercise2: `<!DOCTYPE html>
+        exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -808,22 +862,22 @@ export const mathCh8: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF8A65;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #FF8A65;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -839,7 +893,7 @@ export const mathCh8: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -847,7 +901,7 @@ export const mathCh8: ChapterContent = {
         .sub-question {
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: normal ;
+            font-weight: 600;
             color: #444;
         }
 
@@ -860,21 +914,21 @@ export const mathCh8: ChapterContent = {
         }
 
         .final-answer {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -932,22 +986,27 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #FF8A65 !important; }
-  .true-text { color: #FF8A65 !important; }
-  .false-text { color: #FF8A65 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #FF8A65 !important; font-weight: normal !important; }
+  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1104,7 +1163,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-    exercise3: `<!DOCTYPE html>
+        exercise3: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1127,22 +1186,22 @@ export const mathCh8: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF8A65;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #FF8A65;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -1158,7 +1217,7 @@ export const mathCh8: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -1166,7 +1225,7 @@ export const mathCh8: ChapterContent = {
         .sub-question {
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: normal ;
+            font-weight: 600;
             color: #444;
         }
 
@@ -1179,21 +1238,21 @@ export const mathCh8: ChapterContent = {
         }
 
         .final-answer {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -1251,22 +1310,27 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #FF8A65 !important; }
-  .true-text { color: #FF8A65 !important; }
-  .false-text { color: #FF8A65 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #FF8A65 !important; font-weight: normal !important; }
+  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1489,7 +1553,7 @@ export const mathCh8: ChapterContent = {
 </body>
 
 </html>`,
-    examples: `<!DOCTYPE html>
+        examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1512,22 +1576,22 @@ export const mathCh8: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF8A65;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #FF8A65;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Noto Sans', sans-serif;
         }
@@ -1543,7 +1607,7 @@ export const mathCh8: ChapterContent = {
         }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -1557,21 +1621,21 @@ export const mathCh8: ChapterContent = {
         }
 
         .final-answer {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
 
         .solution-header {
-            color: #FF8A65;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
         .formula {
-            font-weight: normal ;
-            color: #FF8A65;
+            font-weight: bold;
+            color: #2E7D32;
             margin: 5px 0;
             display: inline-block;
         }
@@ -1629,22 +1693,27 @@ export const mathCh8: ChapterContent = {
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255, 138, 101, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FF8A65 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #FF8A65 !important; }
-  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #FF8A65 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #FF8A65 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #FF8A65 !important; }
-  .true-text { color: #FF8A65 !important; }
-  .false-text { color: #FF8A65 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #FF8A65 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #FF8A65 !important; font-weight: normal !important; }
+  .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1877,6 +1946,6 @@ export const mathCh8: ChapterContent = {
             <div class="final-answer">Hence Proved.</div>
         </div>
 
-</html>`,
-  },
+</html>`
+    }
 };

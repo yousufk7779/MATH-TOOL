@@ -330,6 +330,11 @@ export const mathCh4: ChapterContent = {
   /* Make sure every sub part of the question has the question color */
   strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
   strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -685,6 +690,11 @@ export const mathCh4: ChapterContent = {
   /* Make sure every sub part of the question has the question color */
   strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
   strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1062,6 +1072,11 @@ export const mathCh4: ChapterContent = {
   /* Make sure every sub part of the question has the question color */
   strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
   strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1404,6 +1419,11 @@ export const mathCh4: ChapterContent = {
   /* Make sure every sub part of the question has the question color */
   strong[style*="color: #FF6B6B"] { color: #42A5F5 !important; }
   strong[style*="color: #ff6b6b"] { color: #42A5F5 !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 

@@ -28,6 +28,11 @@ const overrideCSS = `
   /* Make sure every sub part of the question has the question color */
   strong[style*="color: #FF6B6B"] { color: #66BB6A !important; }
   strong[style*="color: #ff6b6b"] { color: #66BB6A !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 

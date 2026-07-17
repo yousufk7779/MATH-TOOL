@@ -33,6 +33,11 @@ const overrideCSS = `
   .section-title { color: #FF8A65 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 
@@ -303,12 +308,111 @@ function readHtml(filename) {
   return html.replace(/\\/g, "\\\\").replace(/`/g, "\\`").replace(/\$/g, "\\$");
 }
 
+function cleanMathText(text) {
+  text = text.replace(/\\\(|\\\)|\\\[|\\\]|\$|\$/g, "");
+  text = text.replace(/\\frac\{1\s*\+\s*\\tan\^2\s*A\}\{1\s*\+\s*\\cot\^2\s*A\}/g, "(1 + tan² A) / (1 + cot² A)");
+  text = text.replace(/\\frac\{4\s*\\sin\s*\\theta\s*-\s*\\cos\s*\\theta\}\{4\s*\\sin\s*\\theta\s*\+\s*\\cos\s*\\theta\}/g, "(4 sin θ - cos θ) / (4 sin θ + cos θ)");
+  
+  // Robust nested brace matching for LaTeX fractions
+  text = text.replace(/\\frac\{((?:[^{}]|\{[^{}]*\})+)\}\{((?:[^{}]|\{[^{}]*\})+)\}/g, (match, p1, p2) => {
+    p1 = cleanMathText(p1);
+    p2 = cleanMathText(p2);
+    return `<sup>${p1}</sup>&frasl;<sub>${p2}</sub>`;
+  });
+  
+  text = text.replace(/\\sec\^2/g, "sec²");
+  text = text.replace(/\\tan\^2/g, "tan²");
+  text = text.replace(/\\cot\^2/g, "cot²");
+  text = text.replace(/\\theta/g, "θ");
+  text = text.replace(/\\alpha/g, "α");
+  text = text.replace(/\\text\{\s*cosec\s*\}/g, "cosec");
+  text = text.replace(/\\text\{([^\}]+)\}/g, "$1");
+  text = text.replace(/\\sec/g, "sec");
+  text = text.replace(/\\tan/g, "tan");
+  text = text.replace(/\\cos/g, "cos");
+  text = text.replace(/\\sin/g, "sin");
+  text = text.replace(/\\cot/g, "cot");
+  text = text.replace(/\\cosec/g, "cosec");
+  text = text.replace(/\\sqrt\{(\d+)\}/g, "√$1");
+  text = text.replace(/\\sqrt/g, "√");
+  text = text.replace(/\\circ/g, "°");
+  text = text.replace(/\^\\circ/g, "°");
+  text = text.replace(/\^°/g, "°");
+  text = text.replace(/1\/\\sqrt\{3\}/g, "<sup>1</sup>&frasl;<sub>√3</sub>");
+  text = text.replace(/\{([^\}]+)\}/g, "$1");
+  text = text.replace(/[\{\}]/g, "");
+  return text.trim();
+}
+
+function parseMcqs() {
+  const filepath = path.join(HTML_DIR, "mcqs.html");
+  if (!fs.existsSync(filepath)) return [];
+  let html = fs.readFileSync(filepath, "utf-8");
+
+  const mcqs = [];
+  const boxes = html.split('<div class="content-box">').slice(1);
+
+  boxes.forEach((boxContent, idx) => {
+    const qMatch = boxContent.match(/<div class="question">([\s\S]*?)<\/div>/);
+    const optMatch = [
+      ...boxContent.matchAll(
+        /<(?:span|div) class="option">([\s\S]*?)<\/(?:span|div)>/g,
+      ),
+    ];
+    const ansMatch = boxContent.match(
+      /<(?:div|span) class="(?:final-answer|correct-answer|answer)">([\s\S]*?)<\/(?:div|span)>/,
+    );
+
+    if (qMatch && optMatch.length >= 4 && ansMatch) {
+      let questionText = qMatch[1]
+        .replace(/^\d+\.\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      questionText = cleanMathText(questionText);
+
+      const options = optMatch.map((m) => {
+        let text = m[1].replace(/^\(?([A-Da-d])\)?\s*[\.\:]?\s*/i, "").trim();
+        return cleanMathText(text);
+      });
+
+      // Extract correct answer
+      const ansRaw = ansMatch[1].toUpperCase();
+      let correctLetter = "";
+      const letterMatch = ansRaw.match(/\(([A-D])\)/);
+      if (letterMatch) {
+        correctLetter = letterMatch[1];
+      } else {
+        // Try and find A, B, C or D alone
+        const altMatch = ansRaw.match(/\b([A-D])\b/);
+        if (altMatch) correctLetter = altMatch[1];
+      }
+
+      let correctAnswer = "";
+      if (correctLetter) {
+        const cIdx = correctLetter.charCodeAt(0) - 65;
+        correctAnswer = options[cIdx] || "";
+      }
+
+      mcqs.push({
+        id: `mcq${idx + 1}`,
+        question: `<span style="font-weight: normal;">${questionText}</span>`,
+        options: options,
+        correctAnswer: correctAnswer,
+      });
+    }
+  });
+
+  return mcqs;
+}
+
 const overview = readHtml("overview.html");
 const exercise1 = readHtml("exercise1.html");
 const exercise2 = readHtml("exercise.2.html");
 const exercise3 = readHtml("exercise3.html");
 const examples = readHtml("examples.html");
 const mcqs = readHtml("mcqs.html");
+const parsedMcqs = parseMcqs();
 
 const tsCode = `import { ChapterContent } from "../chapterContent";
 
@@ -328,7 +432,7 @@ export const mathCh8: ChapterContent = {
     ],
     examples: [],
     theorems: [],
-    mcqs: [],
+    mcqs: ${JSON.stringify(parsedMcqs, null, "\t\t")},
     summary: [],
 
     isHtmlView: true,
@@ -338,8 +442,7 @@ export const mathCh8: ChapterContent = {
         exercise2: \`${exercise2}\`,
         exercise3: \`${exercise3}\`,
         examples: \`${examples}\`
-    },
-    htmlMcqs: \`${mcqs}\`
+    }
 };
 `;
 

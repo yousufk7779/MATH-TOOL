@@ -1,130 +1,155 @@
-import { ChapterContent } from "../types";
+import { ChapterContent } from "../chapterContent";
 
 export const mathCh14: ChapterContent = {
-  id: "ch14",
-  number: 14,
-  title: "Probability",
-  introduction:
-    "In this concluding chapter, we explore the mathematics of chance. We focus on calculating the theoretical probability of events based on possible outcomes and favourable cases, applying these concepts to real-world scenarios like coin tosses, dice rolls, and card draws.",
-  definitions: [
-    {
-      term: "Probability",
-      description:
-        "A numerical measure ranging from 0 to 1 that represents the likelihood of an event occurring.",
-    },
-    {
-      term: "Sure Event",
-      description:
-        "An event that is certain to happen, with a probability of 1.",
-    },
-    {
-      term: "Impossible Event",
-      description: "An event that cannot happen, with a probability of 0.",
-    },
-  ],
-  keyPoints: [
-    "The sum of probabilities of all elementary events in an experiment is always 1.",
-    "Complementary events (P(E) and P(not E)) always satisfy: P(E) + P(not E) = 1.",
-    "Probability values are always within the range [0, 1].",
-  ],
-  formulas: [
-    {
-      name: "Theoretical Prob.",
-      formula: "P(E) = (Favourable Outcomes) / (Total Outcomes)",
-    },
-    { name: "Complementary Event", formula: "P(not E) = 1 - P(E)" },
-  ],
-  crux: [
-    "Always calculate the Total Sample Space first before looking for favourable outcomes.",
-    "For complementary events, it's often easier to calculate 1 - P(Other Event).",
-    "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes.",
-  ],
-  exercises: [
-    { id: "exercise1", name: "Exercise 14.1", questions: [] },
-    { id: "examples", name: "Examples", questions: [] },
-  ],
-  examples: [],
-  theorems: [],
-  mcqs: [
-    {
-      id: "mcq1",
-      question:
-        '<span style="font-weight: normal;">The probability of an impossible event is:</span>',
-      options: ["(A) 1", "(B) 1/2", "(C) 0", "(D) Not defined"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq2",
-      question:
-        '<span style="font-weight: normal;">Which of the following cannot be the probability of an event?</span>',
-      options: ["(A) 0.1", "(B) 3%", "(C) 17/16", "(D) 0.001"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq3",
-      question:
-        '<span style="font-weight: normal;">Two coins are tossed simultaneously. What is the probability of getting at most one head?</span>',
-      options: ["(A) 1/4", "(B) 1/2", "(C) 3/4", "(D) 1"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq4",
-      question:
-        '<span style="font-weight: normal;">A card is drawn from a pack of 52 cards. The probability that it is a face card is:</span>',
-      options: ["(A) 4/13", "(B) 3/13", "(C) 2/13", "(D) 1/13"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq5",
-      question:
-        '<span style="font-weight: normal;">If P(E) = 0.07, then P(not E) is:</span>',
-      options: ["(A) 0.93", "(B) 0.03", "(C) 0.97", "(D) 0"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq6",
-      question:
-        '<span style="font-weight: normal;">A die is thrown once. The probability of getting a number less than 3 is:</span>',
-      options: ["(A) 1/3", "(B) 1/2", "(C) 1/6", "(D) 2/3"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq7",
-      question:
-        '<span style="font-weight: normal;">The probability of a certain event is:</span>',
-      options: ["(A) 0", "(B) 1", "(C) > 1", "(D) < 1"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq8",
-      question:
-        '<span style="font-weight: normal;">Which of the following can be probability of an event?</span>',
-      options: ["(A) -0.4", "(B) 1.004", "(C) 18/23", "(D) 8/7"],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq9",
-      question:
-        '<span style="font-weight: normal;">Three coins are tossed. Probability of getting exactly two tails is:</span>',
-      options: ["(A) 1/8", "(B) 3/8", "(C) 1/2", "(D) 1/4"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq10",
-      question:
-        "<span style=\"font-weight: normal;\">A letter is chosen at random from the word 'MATHEMATICS'. The probability that it is a vowel is:</span>",
-      options: ["(A) 4/11", "(B) 3/11", "(C) 5/11", "(D) 2/11"],
-      correctAnswer: "A",
-    },
-  ],
-  summary: [
-    "Mastered the basic definition and calculation of theoretical probability.",
-    "Learned to handle complementary, sure, and impossible events.",
-    "Applied probability to a wide variety of practical and theoretical experiments.",
-  ],
+    id: "ch14",
+    number: 14,
+    title: "Probability",
+    introduction: "In this concluding chapter, we explore the mathematics of chance. We focus on calculating the theoretical probability of events based on possible outcomes and favourable cases, applying these concepts to real-world scenarios like coin tosses, dice rolls, and card draws.",
+    definitions: [
+        { term: "Probability", description: "A numerical measure ranging from 0 to 1 that represents the likelihood of an event occurring." },
+        { term: "Sure Event", description: "An event that is certain to happen, with a probability of 1." },
+        { term: "Impossible Event", description: "An event that cannot happen, with a probability of 0." }
+    ],
+    keyPoints: [
+        "The sum of probabilities of all elementary events in an experiment is always 1.",
+        "Complementary events (P(E) and P(not E)) always satisfy: P(E) + P(not E) = 1.",
+        "Probability values are always within the range [0, 1]."
+    ],
+    formulas: [
+        { name: "Theoretical Prob.", formula: "P(E) = (Favourable Outcomes) / (Total Outcomes)" },
+        { name: "Complementary Event", formula: "P(not E) = 1 - P(E)" }
+    ],
+    crux: [
+        "Always calculate the Total Sample Space first before looking for favourable outcomes.",
+        "For complementary events, it's often easier to calculate 1 - P(Other Event).",
+        "Be careful with keywords like 'at least', 'at most', and 'greater than' when counting outcomes."
+    ],
+    exercises: [
+        { id: "examples", name: "Examples", questions: [] },
+        { id: "exercise1", name: "Exercise 14.1", questions: [] }
+    ],
+    examples: [],
+    theorems: [],
+    mcqs: [
+		{
+				"id": "mcq1",
+				"question": "<span style=\"font-weight: normal;\">The probability of an impossible event is:</span>",
+				"options": [
+						"1",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"0",
+						"Not defined"
+				],
+				"correctAnswer": "0"
+		},
+		{
+				"id": "mcq2",
+				"question": "<span style=\"font-weight: normal;\">Which of the following cannot be the probability of an event?</span>",
+				"options": [
+						"0.1",
+						"3%",
+						"<sup>17</sup>&frasl;<sub>16</sub>",
+						"0.001"
+				],
+				"correctAnswer": "<sup>17</sup>&frasl;<sub>16</sub>"
+		},
+		{
+				"id": "mcq3",
+				"question": "<span style=\"font-weight: normal;\">Two coins are tossed simultaneously. What is the probability of getting at most one head?</span>",
+				"options": [
+						"<sup>1</sup>&frasl;<sub>4</sub>",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"<sup>3</sup>&frasl;<sub>4</sub>",
+						"1"
+				],
+				"correctAnswer": "<sup>3</sup>&frasl;<sub>4</sub>"
+		},
+		{
+				"id": "mcq4",
+				"question": "<span style=\"font-weight: normal;\">A card is drawn from a pack of 52 cards. The probability that it is a face card is:</span>",
+				"options": [
+						"<sup>4</sup>&frasl;<sub>13</sub>",
+						"<sup>3</sup>&frasl;<sub>13</sub>",
+						"<sup>2</sup>&frasl;<sub>13</sub>",
+						"<sup>1</sup>&frasl;<sub>13</sub>"
+				],
+				"correctAnswer": "<sup>3</sup>&frasl;<sub>13</sub>"
+		},
+		{
+				"id": "mcq5",
+				"question": "<span style=\"font-weight: normal;\">If P(E) = 0.07, then P(not E) is:</span>",
+				"options": [
+						"0.93",
+						"0.03",
+						"0.97",
+						"0"
+				],
+				"correctAnswer": "0.93"
+		},
+		{
+				"id": "mcq6",
+				"question": "<span style=\"font-weight: normal;\">A die is thrown once. The probability of getting a number less than 3 is:</span>",
+				"options": [
+						"<sup>1</sup>&frasl;<sub>3</sub>",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"<sup>1</sup>&frasl;<sub>6</sub>",
+						"<sup>2</sup>&frasl;<sub>3</sub>"
+				],
+				"correctAnswer": "<sup>1</sup>&frasl;<sub>3</sub>"
+		},
+		{
+				"id": "mcq7",
+				"question": "<span style=\"font-weight: normal;\">The probability of a certain event is:</span>",
+				"options": [
+						"0",
+						"1",
+						"> 1",
+						"< 1"
+				],
+				"correctAnswer": "1"
+		},
+		{
+				"id": "mcq8",
+				"question": "<span style=\"font-weight: normal;\">Which of the following can be probability of an event?</span>",
+				"options": [
+						"-0.4",
+						"1.004",
+						"<sup>18</sup>&frasl;<sub>23</sub>",
+						"<sup>8</sup>&frasl;<sub>7</sub>"
+				],
+				"correctAnswer": "<sup>18</sup>&frasl;<sub>23</sub>"
+		},
+		{
+				"id": "mcq9",
+				"question": "<span style=\"font-weight: normal;\">Three coins are tossed. Probability of getting exactly two tails is:</span>",
+				"options": [
+						"<sup>1</sup>&frasl;<sub>8</sub>",
+						"<sup>3</sup>&frasl;<sub>8</sub>",
+						"<sup>1</sup>&frasl;<sub>2</sub>",
+						"<sup>1</sup>&frasl;<sub>4</sub>"
+				],
+				"correctAnswer": "<sup>3</sup>&frasl;<sub>8</sub>"
+		},
+		{
+				"id": "mcq10",
+				"question": "<span style=\"font-weight: normal;\">A letter is chosen at random from the word 'MATHEMATICS'. The probability that it is a vowel is:</span>",
+				"options": [
+						"<sup>4</sup>&frasl;<sub>11</sub>",
+						"<sup>3</sup>&frasl;<sub>11</sub>",
+						"<sup>5</sup>&frasl;<sub>11</sub>",
+						"<sup>2</sup>&frasl;<sub>11</sub>"
+				],
+				"correctAnswer": "<sup>4</sup>&frasl;<sub>11</sub>"
+		}
+],
+    summary: [
+        "Mastered the basic definition and calculation of theoretical probability.",
+        "Learned to handle complementary, sure, and impossible events.",
+        "Applied probability to a wide variety of practical and theoretical experiments."
+    ],
 
-  isHtmlView: true,
-  htmlOverview: `<!DOCTYPE html>
+    isHtmlView: true,
+    htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -145,22 +170,22 @@ export const mathCh14: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #66BB6A;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #66BB6A;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -168,8 +193,8 @@ export const mathCh14: ChapterContent = {
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .section-title {
-            color: #66BB6A;
-            font-weight: normal ;
+            color: #D32F2F;
+            font-weight: 700;
             font-size: 1.2em;
             margin-bottom: 10px;
             border-bottom: 1px solid #ddd;
@@ -215,22 +240,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(38, 198, 218, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #26C6DA !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #66BB6A !important; }
-  .true-text { color: #66BB6A !important; }
-  .false-text { color: #66BB6A !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #66BB6A !important; font-weight: normal !important; }
+  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -256,25 +286,25 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
     <div class="content-box">
         <div class="section-title">3. Key Terms</div>
-        <div class="step">Sure Event: An event that is certain to happen. P(E) = 1.</div>
-        <div class="step">Impossible Event: An event that cannot happen. P(E) = 0.</div>
-        <div class="step">Elementary Event: An event having only one outcome.</div>
-        <div class="step">Complementary Event: The event 'not E', denoted by Ē. P(E) + P(Ē) = 1.
+        <div class="step"><strong>Sure Event:</strong> An event that is certain to happen. P(E) = 1.</div>
+        <div class="step"><strong>Impossible Event:</strong> An event that cannot happen. P(E) = 0.</div>
+        <div class="step"><strong>Elementary Event:</strong> An event having only one outcome.</div>
+        <div class="step"><strong>Complementary Event:</strong> The event 'not E', denoted by Ē. P(E) + P(Ē) = 1.
         </div>
     </div>
 
     <div class="content-box">
         <div class="section-title">4. Common Experiments</div>
-        <div class="step">Coin: Head (H), Tail (T).</div>
-        <div class="step">Die: 1, 2, 3, 4, 5, 6.</div>
-        <div class="step">Cards: 52 cards (4 suits: Spades, Hearts, Diamonds, Clubs).</div>
+        <div class="step"><strong>Coin:</strong> Head (H), Tail (T).</div>
+        <div class="step"><strong>Die:</strong> 1, 2, 3, 4, 5, 6.</div>
+        <div class="step"><strong>Cards:</strong> 52 cards (4 suits: Spades, Hearts, Diamonds, Clubs).</div>
     </div>
 
 </body>
 
 </html>`,
-  htmlExercises: {
-    exercise1: `<!DOCTYPE html>
+    htmlExercises: {
+        exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -295,22 +325,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #66BB6A;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #66BB6A;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -318,7 +348,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -326,7 +356,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .sub-question {
             margin-left: 15px;
             margin-top: 15px;
-            font-weight: normal ;
+            font-weight: 600;
             color: #444;
         }
 
@@ -338,8 +368,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #66BB6A;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -368,22 +398,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(38, 198, 218, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #26C6DA !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #66BB6A !important; }
-  .true-text { color: #66BB6A !important; }
-  .false-text { color: #66BB6A !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #66BB6A !important; font-weight: normal !important; }
+  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -706,7 +741,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    examples: `<!DOCTYPE html>
+        examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -727,22 +762,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #66BB6A;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #66BB6A;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -750,7 +785,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -763,8 +798,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #66BB6A;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -772,8 +807,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         
 
         .solution-header {
-            color: #66BB6A;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
     
@@ -799,22 +834,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(38, 198, 218, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #66BB6A !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #66BB6A !important; }
-  .question { color: #26C6DA !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #66BB6A !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #66BB6A !important; }
-  .true-text { color: #66BB6A !important; }
-  .false-text { color: #66BB6A !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #66BB6A !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #66BB6A !important; font-weight: normal !important; }
+  .section-title { color: #66BB6A !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -859,6 +899,6 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`,
-  },
+</html>`
+    }
 };

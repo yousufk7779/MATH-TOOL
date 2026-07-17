@@ -1,1 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" style="background-color:white; border:1px solid #ddd;"><path d="M 100 150.0 L 150.0 100 L 250.0 100 L 200 150.0 Z" fill="#d7ccc8" stroke="black" stroke-width="1"/><rect x="100" y="150.0" width="100" height="100" fill="#d7ccc8" stroke="black" stroke-width="1"/><path d="M 200 150.0 L 250.0 100 L 250.0 200 L 200 250.0 Z" fill="#d7ccc8" stroke="black" stroke-width="1"/><ellipse cx="120" cy="110" rx="8" ry="4" fill="black" stroke="none" stroke-width="1"/><ellipse cx="140" cy="120" rx="8" ry="4" fill="black" stroke="none" stroke-width="1"/><ellipse cx="160" cy="130" rx="8" ry="4" fill="black" stroke="none" stroke-width="1"/><ellipse cx="180" cy="140" rx="8" ry="4" fill="black" stroke="none" stroke-width="1"/><text x="150" y="250" font-family="Arial" font-size="12" fill="black" text-anchor="middle">Pen Stand</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" style="background-color:white; border:1px solid #ddd;">
+  <defs>
+    <!-- Cuboid Face Gradients -->
+    <linearGradient id="frontGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b0ff"/>
+      <stop offset="100%" stop-color="#0080e0"/>
+    </linearGradient>
+    <linearGradient id="topGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#80d8ff"/>
+      <stop offset="100%" stop-color="#e1f5fe"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0080e0"/>
+      <stop offset="100%" stop-color="#004d80"/>
+    </linearGradient>
+    <!-- Conical Hole Radial Gradient -->
+    <radialGradient id="holeGrad" cx="50%" cy="30%" r="50%" fx="30%" fy="10%">
+      <stop offset="0%" stop-color="#0288d1"/>
+      <stop offset="100%" stop-color="#001d4a"/>
+    </radialGradient>
+    <!-- Pen Body Gradient -->
+    <linearGradient id="penBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b3e5fc"/>
+      <stop offset="50%" stop-color="#81d4fa"/>
+      <stop offset="100%" stop-color="#4fc3f7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Part: 3D Cuboid Pen Stand -->
+  <!-- Top Face -->
+  <path d="M 20 220 L 130 130 L 180 130 L 70 220 Z" fill="url(#topGrad)" stroke="black" stroke-width="1.5"/>
+  <!-- Right Face -->
+  <path d="M 70 220 L 180 130 L 180 160 L 70 250 Z" fill="url(#rightGrad)" stroke="black" stroke-width="1.5"/>
+  <!-- Front Face -->
+  <path d="M 20 220 L 70 220 L 70 250 L 20 250 Z" fill="url(#frontGrad)" stroke="black" stroke-width="1.5"/>
+
+  <!-- 4 Conical Holes on Top Face -->
+  <ellipse cx="67" cy="202" rx="9" ry="4" fill="url(#holeGrad)" stroke="black" stroke-width="0.75"/>
+  <ellipse cx="89" cy="184" rx="9" ry="4" fill="url(#holeGrad)" stroke="black" stroke-width="0.75"/>
+  <ellipse cx="111" cy="166" rx="9" ry="4" fill="url(#holeGrad)" stroke="black" stroke-width="0.75"/>
+  <ellipse cx="133" cy="148" rx="9" ry="4" fill="url(#holeGrad)" stroke="black" stroke-width="0.75"/>
+
+  <!-- Right Part: 2D Cross Section and 4 Pens -->
+  <!-- Stand Cross Section Profile (Single closed path to include notches) -->
+  <path d="M 175 220 
+           L 185 220 L 195 238 L 205 220 
+           L 215 220 L 225 238 L 235 220 
+           L 245 220 L 255 238 L 265 220 
+           L 275 220 L 285 238 L 295 220 
+           L 305 220 L 305 250 L 175 250 Z" 
+        fill="#fafafa" stroke="black" stroke-width="1.5"/>
+
+  <!-- 4 Pens -->
+  <!-- Pen 1 (X = 195) -->
+  <path d="M 187 220 L 195 238 L 203 220 Z" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <rect x="187" y="80" width="16" height="140" fill="url(#penBody)" stroke="black" stroke-width="1"/>
+  <line x1="191" y1="80" x2="191" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="195" y1="80" x2="195" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="199" y1="80" x2="199" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="203" y1="90" x2="205" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="205" y1="90" x2="205" y2="130" stroke="black" stroke-width="1"/>
+  <ellipse cx="195" cy="80" rx="8" ry="1.5" fill="#0288d1" stroke="black" stroke-width="1"/>
+
+  <!-- Pen 2 (X = 225) -->
+  <path d="M 217 220 L 225 238 L 233 220 Z" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <rect x="217" y="80" width="16" height="140" fill="url(#penBody)" stroke="black" stroke-width="1"/>
+  <line x1="221" y1="80" x2="221" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="225" y1="80" x2="225" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="229" y1="80" x2="229" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="233" y1="90" x2="235" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="235" y1="90" x2="235" y2="130" stroke="black" stroke-width="1"/>
+  <ellipse cx="225" cy="80" rx="8" ry="1.5" fill="#0288d1" stroke="black" stroke-width="1"/>
+
+  <!-- Pen 3 (X = 255) -->
+  <path d="M 247 220 L 255 238 L 263 220 Z" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <rect x="247" y="80" width="16" height="140" fill="url(#penBody)" stroke="black" stroke-width="1"/>
+  <line x1="251" y1="80" x2="251" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="255" y1="80" x2="255" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="259" y1="80" x2="259" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="263" y1="90" x2="265" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="265" y1="90" x2="265" y2="130" stroke="black" stroke-width="1"/>
+  <ellipse cx="255" cy="80" rx="8" ry="1.5" fill="#0288d1" stroke="black" stroke-width="1"/>
+
+  <!-- Pen 4 (X = 285) -->
+  <path d="M 277 220 L 285 238 L 293 220 Z" fill="#e0e0e0" stroke="black" stroke-width="1"/>
+  <rect x="277" y="80" width="16" height="140" fill="url(#penBody)" stroke="black" stroke-width="1"/>
+  <line x1="281" y1="80" x2="281" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="285" y1="80" x2="285" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="289" y1="80" x2="289" y2="220" stroke="#0288d1" stroke-width="0.75"/>
+  <line x1="293" y1="90" x2="295" y2="90" stroke="black" stroke-width="1"/>
+  <line x1="295" y1="90" x2="295" y2="130" stroke="black" stroke-width="1"/>
+  <ellipse cx="285" cy="80" rx="8" ry="1.5" fill="#0288d1" stroke="black" stroke-width="1"/>
+</svg>

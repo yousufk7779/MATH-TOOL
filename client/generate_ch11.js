@@ -43,6 +43,11 @@ const overrideCSS = `
   .section-title { color: #FF4081 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 `;
 
@@ -151,8 +156,7 @@ function parseMcqs() {
         text = text.replace(/\\text\{([^\}]+)\}/g, "$1");
         text = text.replace(/\{([^\}]+)\}/g, "$1");
 
-        // Large padding and line-height for a professional MCQ section
-        return `<div style="padding-top: 15px; padding-bottom: 15px; line-height: 2.0; font-family: 'Noto Sans', sans-serif;">${text.trim()}</div>`;
+        return text.trim();
       });
 
       const ansRaw = ansMatch[1].toUpperCase();
@@ -216,11 +220,10 @@ export const mathCh11: ChapterContent = {
         "For segments, area of the triangle can often be found using (1/2)r² sin θ."
     ],
     exercises: [
+        { id: "examples", name: "Examples", questions: [] },
         { id: "exercise1", name: "Exercise 11.1", questions: [] }
     ],
-    examples: [
-        { id: "examples", name: "Examples", questions: [] }
-    ],
+    examples: [],
     theorems: [],
     mcqs: ${JSON.stringify(mcqArray, null, "\t\t")},
     summary: [

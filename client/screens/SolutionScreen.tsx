@@ -809,15 +809,7 @@ function SolutionScreen() {
                           borderColor = accentColor;
                           backgroundColor = accentColor + "20";
                         }
-                        const isTallMathChapter = [
-                          "ch8",
-                          "ch9",
-                          "ch10",
-                          "ch11",
-                          "ch12",
-                          "ch13",
-                          "ch14",
-                        ].includes(chapterId);
+                        const isTallMathChapter = false;
                         return (
                           <TouchableOpacity
                             delayPressIn={0}

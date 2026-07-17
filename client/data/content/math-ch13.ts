@@ -1,152 +1,158 @@
-import { ChapterContent } from "../types";
+import { ChapterContent } from "../chapterContent";
 
 export const mathCh13: ChapterContent = {
-  id: "ch13",
-  number: 13,
-  title: "Statistics",
-  introduction:
-    "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean, Mode, and Median for grouped data using various mathematical techniques.",
-  definitions: [
-    {
-      term: "Mean",
-      description:
-        "The average value of a data set, calculated as the sum of all values divided by the total number of values.",
-    },
-    {
-      term: "Mode",
-      description: "The value that appears most frequently in a data set.",
-    },
-    {
-      term: "Median",
-      description:
-        "The middle value in a distribution when data is arranged in ascending or descending order.",
-    },
-  ],
-  keyPoints: [
-    "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
-    "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
-    "Cumulative frequency (cf) is essential for calculating the Median of grouped data.",
-  ],
-  formulas: [
-    { name: "Direct Mean", formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)" },
-    {
-      name: "Mode (Grouped)",
-      formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h",
-    },
-    { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" },
-  ],
-  crux: [
-    "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
-    "Step-deviation method is preferred when class intervals (h) are large to simplify arithmetic.",
-    "Remember that the Mode is a position-based average, while Mean is a value-based average.",
-  ],
-  exercises: [
-    { id: "exercise1", name: "Exercise 13.1", questions: [] },
-    { id: "exercise2", name: "Exercise 13.2", questions: [] },
-    { id: "exercise3", name: "Exercise 13.3", questions: [] },
-  ],
-  examples: [],
-  theorems: [],
-  mcqs: [
-    {
-      id: "mcq1",
-      question:
-        '<span style="font-weight: normal;">The relationship between Mean, Median and Mode for a moderately skewed distribution is:</span>',
-      options: [
-        "(A) Mode = 2 Median - 3 Mean",
-        "(B) Mode = Median - 2 Mean",
-        "(C) Mode = 3 Median - 2 Mean",
-        "(D) Mode = 2 Mean - 3 Median",
-      ],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq2",
-      question:
-        '<span style="font-weight: normal;">The mode of the following data: 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:</span>',
-      options: ["(A) 2", "(B) 3", "(C) 4", "(D) 5"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq3",
-      question:
-        '<span style="font-weight: normal;">If the mean of the following distribution is 6, find the value of p: x: 2 4 6 10 p+5; f: 3 2 3 1 2</span>',
-      options: ["(A) 6", "(B) 7", "(C) 5", "(D) 4"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq4",
-      question:
-        '<span style="font-weight: normal;">The algebraic sum of deviations of a frequency distribution from its mean is:</span>',
-      options: [
-        "(A) Always positive",
-        "(B) Always negative",
-        "(C) Zero",
-        "(D) Non-zero",
-      ],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq5",
-      question:
-        '<span style="font-weight: normal;">In the formula x̄ = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>',
-      options: [
-        "(A) xᵢ - a",
-        "(B) (xᵢ - a) / h",
-        "(C) (a - xᵢ) / h",
-        "(D) h(xᵢ - a)",
-      ],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq6",
-      question:
-        '<span style="font-weight: normal;">While computing mean of grouped data, we assume that the frequencies are:</span>',
-      options: [
-        "(A) centred at the upper limits of the classes",
-        "(B) centred at the lower limits of the classes",
-        "(C) centred at the classmarks of the classes",
-        "(D) evenly distributed",
-      ],
-      correctAnswer: "C",
-    },
-    {
-      id: "mcq7",
-      question:
-        '<span style="font-weight: normal;">Construction of a cumulative frequency table is useful in determining the:</span>',
-      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) All of these"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq8",
-      question:
-        '<span style="font-weight: normal;">Which of the following cannot be determined graphically?</span>',
-      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) None of these"],
-      correctAnswer: "A",
-    },
-    {
-      id: "mcq9",
-      question:
-        '<span style="font-weight: normal;">The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its:</span>',
-      options: ["(A) Mean", "(B) Median", "(C) Mode", "(D) Range"],
-      correctAnswer: "B",
-    },
-    {
-      id: "mcq10",
-      question:
-        '<span style="font-weight: normal;">If the mean of first n natural numbers is 5n/9, then n = ?</span>',
-      options: ["(A) 9", "(B) 10", "(C) 11", "(D) 12"],
-      correctAnswer: "A",
-    },
-  ],
-  summary: [
-    "Mastered the calculation of Mean using multiple methods.",
-    "Learned to identify the Modal and Median class for grouped frequency distributions.",
-    "Understood the relationship between Mean, Median, and Mode.",
-  ],
+    id: "ch13",
+    number: 13,
+    title: "Statistics",
+    introduction: "In this chapter, we delve into the world of data analysis. We focus on Measures of Central Tendency, learning how to calculate the Mean, Mode, and Median for grouped data using various mathematical techniques.",
+    definitions: [
+        { term: "Mean", description: "The average value of a data set, calculated as the sum of all values divided by the total number of values." },
+        { term: "Mode", description: "The value that appears most frequently in a data set." },
+        { term: "Median", description: "The middle value in a distribution when data is arranged in ascending or descending order." }
+    ],
+    keyPoints: [
+        "Mean can be calculated using Direct, Assumed Mean, or Step-Deviation methods.",
+        "The empirical relationship between the three measures is: 3 Median = Mode + 2 Mean.",
+        "Cumulative frequency (cf) is essential for calculating the Median of grouped data."
+    ],
+    formulas: [
+        { name: "Direct Mean", formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)" },
+        { name: "Mode (Grouped)", formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h" },
+        { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" }
+    ],
+    crux: [
+        "Always identify the modal class (highest frequency) and median class (first class where cf ≥ n/2).",
+        "Step-deviation method is preferred when class intervals (h) are large to simplify arithmetic.",
+        "Remember that the Mode is a position-based average, while Mean is a value-based average."
+    ],
+    exercises: [
+        { id: "examples", name: "Examples", questions: [] },
+        { id: "exercise1", name: "Exercise 13.1", questions: [] },
+        { id: "exercise2", name: "Exercise 13.2", questions: [] },
+        { id: "exercise3", name: "Exercise 13.3", questions: [] }
+    ],
+    examples: [],
+    theorems: [],
+    mcqs: [
+		{
+				"id": "mcq1",
+				"question": "<span style=\"font-weight: normal;\">The relationship between Mean, Median and Mode for a moderately skewed distribution is:</span>",
+				"options": [
+						"Mode = 2 Median - 3 Mean",
+						"Mode = Median - 2 Mean",
+						"Mode = 3 Median - 2 Mean",
+						"Mode = 2 Mean - 3 Median"
+				],
+				"correctAnswer": "Mode = 3 Median - 2 Mean"
+		},
+		{
+				"id": "mcq2",
+				"question": "<span style=\"font-weight: normal;\">The mode of the following data: 2, 6, 4, 5, 0, 2, 1, 3, 2, 3 is:</span>",
+				"options": [
+						"2",
+						"3",
+						"4",
+						"5"
+				],
+				"correctAnswer": "2"
+		},
+		{
+				"id": "mcq3",
+				"question": "<span style=\"font-weight: normal;\">If the mean of the following distribution is 6, find the value of p: x: 2 4 6 10 p+5; f: 3 2 3 1 2</span>",
+				"options": [
+						"6",
+						"7",
+						"5",
+						"4"
+				],
+				"correctAnswer": "7"
+		},
+		{
+				"id": "mcq4",
+				"question": "<span style=\"font-weight: normal;\">The algebraic sum of deviations of a frequency distribution from its mean is:</span>",
+				"options": [
+						"Always positive",
+						"Always negative",
+						"Zero",
+						"Non-zero"
+				],
+				"correctAnswer": "Zero"
+		},
+		{
+				"id": "mcq5",
+				"question": "<span style=\"font-weight: normal;\">In the formula x̄ = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>",
+				"options": [
+						"xᵢ - a",
+						"(xᵢ - a) / h",
+						"(a - xᵢ) / h",
+						"h(xᵢ - a)"
+				],
+				"correctAnswer": "(xᵢ - a) / h"
+		},
+		{
+				"id": "mcq6",
+				"question": "<span style=\"font-weight: normal;\">While computing mean of grouped data, we assume that the frequencies are:</span>",
+				"options": [
+						"centred at the upper limits of the classes",
+						"centred at the lower limits of the classes",
+						"centred at the classmarks of the classes",
+						"evenly distributed"
+				],
+				"correctAnswer": "centred at the classmarks of the classes"
+		},
+		{
+				"id": "mcq7",
+				"question": "<span style=\"font-weight: normal;\">Construction of a cumulative frequency table is useful in determining the:</span>",
+				"options": [
+						"Mean",
+						"Median",
+						"Mode",
+						"All of these"
+				],
+				"correctAnswer": "Median"
+		},
+		{
+				"id": "mcq8",
+				"question": "<span style=\"font-weight: normal;\">Which of the following cannot be determined graphically?</span>",
+				"options": [
+						"Mean",
+						"Median",
+						"Mode",
+						"None of these"
+				],
+				"correctAnswer": "Mean"
+		},
+		{
+				"id": "mcq9",
+				"question": "<span style=\"font-weight: normal;\">The abscissa of the point of intersection of the less than type and of the more than type cumulative frequency curves of a grouped data gives its:</span>",
+				"options": [
+						"Mean",
+						"Median",
+						"Mode",
+						"Range"
+				],
+				"correctAnswer": "Median"
+		},
+		{
+				"id": "mcq10",
+				"question": "<span style=\"font-weight: normal;\">If the mean of first n natural numbers is 5n/9, then n = ?</span>",
+				"options": [
+						"9",
+						"10",
+						"11",
+						"12"
+				],
+				"correctAnswer": "9"
+		}
+],
+    summary: [
+        "Mastered the calculation of Mean using multiple methods.",
+        "Learned to identify the Modal and Median class for grouped frequency distributions.",
+        "Understood the relationship between Mean, Median, and Mode."
+    ],
 
-  isHtmlView: true,
-  htmlOverview: `<!DOCTYPE html>
+    isHtmlView: true,
+    htmlOverview: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -167,22 +173,22 @@ export const mathCh13: ChapterContent = {
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #42A5F5;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #42A5F5;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -190,8 +196,8 @@ export const mathCh13: ChapterContent = {
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .section-title {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #D32F2F;
+            font-weight: 700;
             font-size: 1.2em;
             margin-bottom: 10px;
             border-bottom: 1px solid #ddd;
@@ -237,22 +243,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #42A5F5 !important; }
-  .true-text { color: #42A5F5 !important; }
-  .false-text { color: #42A5F5 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #42A5F5 !important; font-weight: normal !important; }
+  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -270,11 +281,11 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
     <div class="content-box">
         <div class="section-title">2. Mean of Grouped Data</div>
         <div class="formula-box">
-            Direct Method:<br>
+            <strong>Direct Method:</strong><br>
             x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)<br><br>
-            Assumed Mean Method:<br>
+            <strong>Assumed Mean Method:</strong><br>
             x̄ = a + (Σ fᵢdᵢ) / (Σ fᵢ), where dᵢ = xᵢ - a<br><br>
-            Step-Deviation Method:<br>
+            <strong>Step-Deviation Method:</strong><br>
             x̄ = a + [(Σ fᵢuᵢ) / (Σ fᵢ)] × h, where uᵢ = (xᵢ - a)/h
         </div>
     </div>
@@ -315,8 +326,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-  htmlExercises: {
-    exercise1: `<!DOCTYPE html>
+    htmlExercises: {
+        exercise1: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -337,22 +348,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #42A5F5;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #42A5F5;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -360,7 +371,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -373,8 +384,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -382,8 +393,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         
 
         .solution-header {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
@@ -391,7 +402,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
         th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
 
-        th { background-color: #42A5F5; color: #42A5F5; font-weight: normal ; padding: 8px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
     
 
 
@@ -415,22 +426,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #42A5F5 !important; }
-  .true-text { color: #42A5F5 !important; }
-  .false-text { color: #42A5F5 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #42A5F5 !important; font-weight: normal !important; }
+  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1030,7 +1046,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    exercise2: `<!DOCTYPE html>
+        exercise2: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1051,22 +1067,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #42A5F5;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #42A5F5;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -1074,7 +1090,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -1087,8 +1103,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -1096,8 +1112,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         
 
         .solution-header {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
@@ -1131,22 +1147,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #42A5F5 !important; }
-  .true-text { color: #42A5F5 !important; }
-  .false-text { color: #42A5F5 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #42A5F5 !important; font-weight: normal !important; }
+  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1233,7 +1254,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    exercise3: `<!DOCTYPE html>
+        exercise3: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1254,22 +1275,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #42A5F5;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #42A5F5;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -1277,7 +1298,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -1290,8 +1311,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -1299,8 +1320,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         
 
         .solution-header {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
@@ -1308,7 +1329,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
         th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
 
-        th { background-color: #42A5F5; color: #42A5F5; font-weight: normal ; padding: 8px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
     
 
 
@@ -1332,22 +1353,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #42A5F5 !important; }
-  .true-text { color: #42A5F5 !important; }
-  .false-text { color: #42A5F5 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #42A5F5 !important; font-weight: normal !important; }
+  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1583,7 +1609,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 </body>
 
 </html>`,
-    examples: `<!DOCTYPE html>
+        examples: `<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -1604,22 +1630,22 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .header {
             text-align: center;
             margin-bottom: 20px;
-            border-bottom: 2px solid #42A5F5;
+            border-bottom: 2px solid #6C63FF;
             padding-bottom: 10px;
             font-family: 'Nunito', sans-serif;
         }
 
         .logo {
-            color: #42A5F5;
+            color: #6C63FF;
             font-size: 24px;
-            font-weight: normal ;
+            font-weight: 800;
         }
 
         .chapter-title {
             text-align: center;
             color: #333;
             font-size: 20px;
-            font-weight: normal ;
+            font-weight: 700;
             margin: 10px 0;
             font-family: 'Kalam', cursive;
         }
@@ -1627,7 +1653,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         .content-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: flow-root; transition: transform 0.2s ease; }
 
         .question {
-            font-weight: normal ;
+            font-weight: 700;
             margin-bottom: 15px;
             color: #333;
         }
@@ -1640,8 +1666,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         }
 
         .final-answer {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-top: 10px;
             font-size: 1.2em;
         }
@@ -1649,8 +1675,8 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         
 
         .solution-header {
-            color: #42A5F5;
-            font-weight: normal ;
+            color: #2E7D32;
+            font-weight: 700;
             margin-bottom: 5px;
         }
 
@@ -1658,7 +1684,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
         th, td { border: 1px solid #ddd; padding: 5px; text-align: center; font-size: 0.95em; }
 
-        th { background-color: #42A5F5; color: #42A5F5; font-weight: normal ; padding: 8px; border: 1px solid #ddd; text-align: center; }
+        th { background-color: #e8f5e9; color: #2E7D32; font-weight: 700; padding: 8px; border: 1px solid #ddd; text-align: center; }
     
 
 
@@ -1682,22 +1708,27 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 <style>
   body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
-  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(102, 187, 106, 0.2) !important; color: #fff !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
   .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #42A5F5 !important; color: #fff !important; }
   h1, h2, h3, h4, h5, h6 { color: #42A5F5 !important; }
-  .question { color: #66BB6A !important; text-align: justify !important; font-weight: normal !important; font-family: 'Noto Sans', sans-serif !important; }
+  .question { color: #42A5F5 !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
   .sub-question { color: #ddd !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
   .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
-  .final-answer { color: #42A5F5 !important; text-align: justify !important; font-weight: normal !important; }
-  .formula { color: #42A5F5 !important; }
-  .true-text { color: #42A5F5 !important; }
-  .false-text { color: #42A5F5 !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
   table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
   .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
   img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
-  .section-title { color: #42A5F5 !important; font-weight: normal !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
-  .sub-header { color: #42A5F5 !important; font-weight: normal !important; }
+  .section-title { color: #42A5F5 !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
   * { font-family: 'Noto Sans', sans-serif !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
 </style>
 </head>
 
@@ -1744,6 +1775,6 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
 
 </body>
 
-</html>`,
-  },
+</html>`
+    }
 };

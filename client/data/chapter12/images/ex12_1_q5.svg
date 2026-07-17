@@ -1,1 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" style="background-color:white; border:1px solid #ddd;"><path d="M 100 150.0 L 150.0 100 L 250.0 100 L 200 150.0 Z" fill="#fff9c4" stroke="black" stroke-width="1"/><rect x="100" y="150.0" width="100" height="100" fill="#fff9c4" stroke="black" stroke-width="1"/><path d="M 200 150.0 L 250.0 100 L 250.0 200 L 200 250.0 Z" fill="#fff9c4" stroke="black" stroke-width="1"/><ellipse cx="150" cy="100" rx="50" ry="20" fill="#ccc" stroke="black" stroke-width="1"/><text x="150" y="250" font-family="Arial" font-size="12" fill="black" text-anchor="middle">Depression in Cube</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" style="background-color:white; border:1px solid #ddd;">
+  <defs>
+    <!-- Arrowhead markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="black"/>
+    </marker>
+    <!-- Depression bowl Gradient -->
+    <radialGradient id="depressGrad" cx="50%" cy="10%" r="90%" fx="50%" fy="0%">
+      <stop offset="0%" stop-color="#0288d1" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#01579b" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#002f6c" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Top Face of Cube -->
+  <path d="M 80 130 L 135 80 L 275 80 L 220 130 Z" fill="#7ab1dd" stroke="black" stroke-width="1.5"/>
+
+  <!-- 2. Depression Bowl (drawn inside, will be partially seen through semi-transparent front/right faces) -->
+  <path d="M 112.5 105 A 65 65 0 0 0 242.5 105 Z" fill="url(#depressGrad)" stroke="black" stroke-width="1.5"/>
+
+  <!-- 3. Front Face of Cube (Semi-transparent to show the depression depth inside) -->
+  <path d="M 80 130 L 220 130 L 220 260 L 80 260 Z" fill="#8abfec" fill-opacity="0.75" stroke="black" stroke-width="1.5"/>
+
+  <!-- 4. Right Face of Cube (Semi-transparent) -->
+  <path d="M 220 130 L 275 80 L 275 210 L 220 260 Z" fill="#689fcb" fill-opacity="0.75" stroke="black" stroke-width="1.5"/>
+
+  <!-- 5. Hemisphere Rim Ellipse (drawn on top for outline crispness) -->
+  <ellipse cx="177.5" cy="105" rx="65" ry="22" fill="none" stroke="black" stroke-width="1.5"/>
+
+  <!-- Dimension Helper / Extension lines -->
+  <!-- Height helpers -->
+  <line x1="75" y1="130" x2="50" y2="130" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <line x1="75" y1="260" x2="50" y2="260" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <!-- Width helpers -->
+  <line x1="80" y1="265" x2="80" y2="280" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+  <line x1="220" y1="265" x2="220" y2="280" stroke="black" stroke-width="1" stroke-dasharray="2"/>
+
+  <!-- Left Arrow (Vertical Height: l) -->
+  <line x1="55" y1="136" x2="55" y2="254" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="35" y="200" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="bold" fill="black" text-anchor="middle">l</text>
+
+  <!-- Bottom Arrow (Horizontal Width: l) -->
+  <line x1="86" y1="275" x2="214" y2="275" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="150" y="298" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="bold" fill="black" text-anchor="middle">l</text>
+
+  <!-- Depth Arrow (Side Edge: l) -->
+  <line x1="232" y1="142" x2="279" y2="100" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="278" y="132" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="bold" fill="black" text-anchor="middle">l</text>
+
+  <!-- Diameter Arrow (Hemisphere: l) -->
+  <line x1="118.5" y1="105" x2="236.5" y2="105" stroke="black" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="177.5" y="93" font-family="Georgia, serif" font-size="18" font-style="italic" font-weight="bold" fill="black" text-anchor="middle">l</text>
+</svg>
