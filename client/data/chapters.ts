@@ -985,6 +985,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   }
 
   // Targeted theme color replacement for Class 7 Math Chapters 10-13
+  if (chapterId === "c7-civ-6") return JiguuColors.gradients.teal; // Teal for Chapter 6 (distinguish from Chapter 3 Blue)
   if (chapterId === "c7-geo-3") return JiguuColors.gradients.deepOrange; // Deep Orange for Changing Earth (Volcanoes/Lava)
   if (chapterId === "c7-geo-4") return ["#C5E1A5", "#9CCC65", "#1B5E20"]; // Very Light Green for Chapter 4
   if (chapterId === "c7-geo-5") return JiguuColors.gradients.blue; // Blue for Water
