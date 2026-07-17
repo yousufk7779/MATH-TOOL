@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FDC830"; // Matches getChapterGradient for c7-civ-9 (Gold)
+const themeColor = "#66BB6A"; // Matches getChapterGradient for c7-civ-9 (Green)
 
 export const c7Civ9: ChapterContent = {
   id: "c7-civ-9",
