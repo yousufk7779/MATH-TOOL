@@ -145,13 +145,13 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: JiguuColors.accent1,
     backgroundColor: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
   },
   photo: {
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-    top: 8,
-    left: 0,
+    width: 120,
+    height: 162,
+    marginTop: 32,
   },
   logoCenter: {
     alignItems: "center",
