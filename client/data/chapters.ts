@@ -116,7 +116,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "sst-geo-7",
         number: 7,
         name: "Lifelines of National Economy",
-        color: "#7CFF00",
+        color: "#FF8A65",
       },
     ],
     Civics: [
@@ -244,7 +244,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
         id: "sst-geo-c9-7",
         number: 7,
         name: "Geography of Jammu & Kashmir and Ladakh",
-        color: "#7CFF00",
+        color: "#FF8A65",
       },
     ],
     Civics: [
@@ -1087,7 +1087,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
       JiguuColors.gradients.mint,
       JiguuColors.gradients.gold,
       JiguuColors.gradients.sky,
-      JiguuColors.gradients.neonGreen,
+      JiguuColors.gradients.deepOrange,
     ];
     return geoPool[(num - 1) % geoPool.length] as string[];
   }

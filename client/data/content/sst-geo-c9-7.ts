@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#7CFF00";
+const themeColor = "#FF8A65";
 
 export const sstGeoC97: ChapterContent = {
   id: "sst-geo-c9-7",
