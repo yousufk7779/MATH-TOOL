@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#9C27B0"; // Purple theme color for Civics/Political Science
+const themeColor = "#42A5F5"; // Purple theme color for Civics/Political Science
 
 export const sstCivC93: ChapterContent = {
   id: "sst-civ-c9-3",

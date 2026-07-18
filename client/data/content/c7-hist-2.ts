@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FF5722";
+const themeColor = "#7986CB";
 
 export const c7Hist2: ChapterContent = {
   id: "c7-hist-2",

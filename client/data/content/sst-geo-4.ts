@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#43A047"; // Premium Green color for Geography Chapter 4
+const themeColor = "#00FFAB"; // Premium Green color for Geography Chapter 4
 
 export const sstGeo4: ChapterContent = {
   id: "sst-geo-4",

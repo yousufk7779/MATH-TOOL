@@ -1,6 +1,6 @@
 import { ChapterContent } from "../types";
 
-const themeColor = "#FFD600"; // Yellow/Gold theme for Economics
+const themeColor = "#FDC830"; // Yellow/Gold theme for Economics
 
 export const sstEcoC91: ChapterContent = {
   id: "sst-eco-c9-1",
