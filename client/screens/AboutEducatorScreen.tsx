@@ -136,9 +136,9 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   photoContainer: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
+    width: 140,
+    height: 140,
+    borderRadius: 70,
     overflow: "hidden",
     alignSelf: "center",
     marginBottom: Spacing.md,
@@ -149,9 +149,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   photo: {
-    width: 120,
-    height: 162,
-    marginTop: 32,
+    width: 140,
+    height: 188,
+    marginTop: 38,
   },
   logoCenter: {
     alignItems: "center",
