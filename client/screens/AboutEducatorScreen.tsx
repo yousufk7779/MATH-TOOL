@@ -146,8 +146,11 @@ const styles = StyleSheet.create({
     borderColor: JiguuColors.accent1,
   },
   photo: {
+    position: "absolute",
     width: "100%",
-    height: "100%",
+    height: "125%",
+    top: 12,
+    left: 0,
   },
   logoCenter: {
     alignItems: "center",
