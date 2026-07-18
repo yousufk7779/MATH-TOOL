@@ -144,12 +144,13 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.md,
     borderWidth: 3,
     borderColor: JiguuColors.accent1,
+    backgroundColor: "#FFFFFF",
   },
   photo: {
     position: "absolute",
     width: "100%",
-    height: "106%",
-    top: 1,
+    height: "100%",
+    top: 8,
     left: 0,
   },
   logoCenter: {
