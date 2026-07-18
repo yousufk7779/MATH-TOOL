@@ -148,8 +148,8 @@ const styles = StyleSheet.create({
   photo: {
     position: "absolute",
     width: "100%",
-    height: "125%",
-    top: 12,
+    height: "115%",
+    top: 6,
     left: 0,
   },
   logoCenter: {
