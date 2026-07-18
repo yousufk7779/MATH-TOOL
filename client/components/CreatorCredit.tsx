@@ -8,7 +8,7 @@ import {
   Share,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Feather } from "@expo/vector-icons";
 
@@ -30,6 +30,15 @@ export const CreatorCredit = memo(function CreatorCredit() {
   const { width, height } = useWindowDimensions();
   const isLandscape = width > height;
   const navigation = useNavigation<NavigationProp>();
+  const route = useRoute();
+
+  const handleAboutPress = () => {
+    if (route.name === "AboutEducator") {
+      navigation.navigate("Home");
+    } else {
+      navigation.navigate("AboutEducator");
+    }
+  };
 
   const handleShare = async () => {
     try {
@@ -55,7 +64,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
       <View style={styles.linksContainer}>
         <Pressable
           style={styles.aboutLink}
-          onPress={() => navigation.navigate("AboutEducator")}
+          onPress={handleAboutPress}
           hitSlop={10}
         >
           <Feather
@@ -84,7 +93,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
             styles.photoWrapper,
             isLandscape && styles.photoWrapperLandscape,
           ]}
-          onPress={() => navigation.navigate("AboutEducator")}
+          onPress={handleAboutPress}
         >
           <Image
             source={sameerPhoto}
