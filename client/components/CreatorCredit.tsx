@@ -34,7 +34,7 @@ export const CreatorCredit = memo(function CreatorCredit() {
 
   const handleAboutPress = () => {
     if (route.name === "AboutEducator") {
-      navigation.navigate("Home");
+      navigation.navigate("ClassSelector");
     } else {
       navigation.navigate("AboutEducator");
     }
