@@ -28,7 +28,7 @@ function AboutEducatorScreen() {
               <Image
                 source={sameerPhoto}
                 style={styles.photo}
-                resizeMode="cover"
+                resizeMode="contain"
               />
             </View>
             <ThemedText style={styles.name}>Sameer Sir</ThemedText>
@@ -149,9 +149,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   photo: {
-    width: 140,
-    height: 188,
-    marginTop: 38,
+    width: "100%",
+    height: "100%",
   },
   logoCenter: {
     alignItems: "center",
