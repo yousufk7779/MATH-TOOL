@@ -162,13 +162,16 @@ export const c9SciPhy1: ChapterContent = {
       ],
     },
     {
+
       id: "in-text",
       name: "In-Text Questions",
+
       questions: [
         {
           id: "it-1-q1",
           number: "",
-          question: "<div style=\"text-align: center; font-size: 22px; color: #FF8A65; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div>Q1. An object has moved through a distance. Can it have zero displacement? If yes, support your answer with an example.",
+
+          question: "<div style=\"text-align: center; font-size: 22px; color: #11eea0ff; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div>Q1. An object has moved through a distance. Can it have zero displacement? If yes, support your answer with an example.",
           solution: [
             "Answer:\nYes, an object can have zero displacement even after moving a distance.\nExample: If a person walks in a circular path and comes back to the starting point, the total distance is covered but displacement is zero because initial and final positions are same.",
           ],
@@ -347,7 +350,7 @@ export const c9SciPhy1: ChapterContent = {
         },
       ],
     }
-  ],examples: [],
+  ], examples: [],
   mcqs: [
     {
       id: "c9-phy-1-mcq-1",
