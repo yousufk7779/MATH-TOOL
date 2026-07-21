@@ -160,103 +160,49 @@ export const sciPhy2: ChapterContent = {
   ],
   exercises: [
     {
-      id: "in-text",
-      name: "In-Text Questions",
-      questions: [
-        {
-          id: "sp2-it-1",
-          number: "1",
-          question: "What is meant by power of accommodation of the eye?",
-          solution: [
-            "Answer:",
-            "The ability of the eye lens to adjust its focal length to see both nearby and distant objects clearly is called the power of accommodation.",
-            "This is achieved by the ciliary muscles, which can change the curvature and thickness of the eye lens.",
-          ],
-          answer:
-            "The ability of the eye lens to adjust its focal length using ciliary muscles to focus on objects at various distances is called power of accommodation.",
-        },
-        {
-          id: "sp2-it-2",
-          number: "2",
-          question:
-            "A person with a myopic eye cannot see objects beyond 1.2 m distinctly. What should be the type of corrective lens used to restore proper vision?",
-          solution: [
-            "Answer:",
-            "The person is suffering from myopia (short-sightedness).",
-            "To correct this, a <b>concave lens</b> (diverging lens) of suitable power must be used to bring the image back onto the retina.",
-          ],
-          answer:
-            "A concave lens (diverging lens) of appropriate power should be used to restore proper vision.",
-        },
-        {
-          id: "sp2-it-3",
-          number: "3",
-          question:
-            "What is the far point and near point of the human eye with normal vision?",
-          solution: [
-            "Answer:",
-            "For a normal human eye:",
-            "1. The <b>near point</b> is the minimum distance at which objects can be seen clearly without strain, which is <b>25 cm</b>.",
-            "2. The <b>far point</b> is the maximum distance up to which the eye can see objects clearly, which is <b>infinity</b>.",
-          ],
-          answer: "Near point = 25 cm, Far point = Infinity.",
-        },
-        {
-          id: "sp2-it-4",
-          number: "4",
-          question:
-            "A student has difficulty reading the blackboard while sitting in the last row. What could be the defect the child is suffering from? How can it be corrected?",
-          solution: [
-            "Answer:",
-            "Since the student cannot see the far-off blackboard clearly but can likely see nearby objects, the student is suffering from <b>myopia</b> (short-sightedness).",
-            "This defect can be corrected by using spectacles fitted with a <b>concave lens</b> of suitable focal length or power.",
-          ],
-          answer:
-            "The student is suffering from myopia. It can be corrected using a concave lens.",
-        },
-      ],
-    },
-    {
       id: "exercise",
       name: "Exercise Questions",
       questions: [
         {
           id: "sp2-ex-1",
           number: "1",
-          question:
-            "The human eye can focus objects at different distances by adjusting the focal length of the eye lens. This is due to:<br/><br/>(a) presbyopia<br/>(b) accommodation<br/>(c) near-sightedness<br/>(d) far-sightedness",
-          solution: ["Answer: (b) accommodation"],
+          question: "The human eye can focus objects at different distances by adjusting the focal length of the eye lens. This is due to:<br/><br/>(a) presbyopia<br/>(b) accommodation<br/>(c) near-sightedness<br/>(d) far-sightedness",
+          solution: [
+            "Answer: (b) accommodation",
+          ],
           answer: "(b) accommodation",
         },
         {
           id: "sp2-ex-2",
           number: "2",
-          question:
-            "The human eye forms the image of an object at its:<br/><br/>(a) cornea<br/>(b) iris<br/>(c) pupil<br/>(d) retina",
-          solution: ["Answer: (d) retina"],
+          question: "The human eye forms the image of an object at its:<br/><br/>(a) cornea<br/>(b) iris<br/>(c) pupil<br/>(d) retina",
+          solution: [
+            "Answer: (d) retina",
+          ],
           answer: "(d) retina",
         },
         {
           id: "sp2-ex-3",
           number: "3",
-          question:
-            "The least distance of distinct vision for a young adult with normal vision is about:<br/><br/>(a) 25 m<br/>(b) 2.5 cm<br/>(c) 25 cm<br/>(d) 2.5 m",
-          solution: ["Answer: (c) 25 cm"],
+          question: "The least distance of distinct vision for a young adult with normal vision is about:<br/><br/>(a) 25 m<br/>(b) 2.5 cm<br/>(c) 25 cm<br/>(d) 2.5 m",
+          solution: [
+            "Answer: (c) 25 cm",
+          ],
           answer: "(c) 25 cm",
         },
         {
           id: "sp2-ex-4",
           number: "4",
-          question:
-            "The change in focal length of an eye lens is caused by the action of the:<br/><br/>(a) pupil<br/>(b) retina<br/>(c) ciliary muscles<br/>(d) iris",
-          solution: ["Answer: (c) muscles"],
+          question: "The change in focal length of an eye lens is caused by the action of the:<br/><br/>(a) pupil<br/>(b) retina<br/>(c) ciliary muscles<br/>(d) iris",
+          solution: [
+            "Answer: (c) muscles",
+          ],
           answer: "(c) muscles",
         },
         {
           id: "sp2-ex-5",
           number: "5",
-          question:
-            "A person needs a lens of power –5.5 dioptres for correcting his distant vision. For correcting his near vision he needs a lens of power +1.5 dioptre. What is the focal length of the lens required for correcting (i) distant vision, and (ii) near vision?",
+          question: "A person needs a lens of power –5.5 dioptres for correcting his distant vision. For correcting his near vision he needs a lens of power +1.5 dioptre. What is the focal length of the lens required for correcting (i) distant vision, and (ii) near vision?",
           solution: [
             "Answer:",
             "(i) For distant vision: P = -5.5 D",
@@ -269,14 +215,13 @@ export const sciPhy2: ChapterContent = {
         {
           id: "sp2-ex-6",
           number: "6",
-          question:
-            "The far point of a myopic person is 80 cm in front of the eye. What is the nature and power of the lens required to correct the problem?",
+          question: "The far point of a myopic person is 80 cm in front of the eye. What is the nature and power of the lens required to correct the problem?",
           solution: [
             "Answer:",
-            "Object distance u = \u221e (infinity)",
+            "Object distance u = ∞ (infinity)",
             "Image distance v = -80 cm = -0.8 m",
             "Using lens formula: 1/f = 1/v - 1/u",
-            "1/f = 1/(-0.8) - 1/(\u221e) = -1.25",
+            "1/f = 1/(-0.8) - 1/(∞) = -1.25",
             "Power P = 1/f = <b>-1.25 D</b>",
             "Since power is negative, it is a <b>concave lens</b>.",
           ],
@@ -285,8 +230,7 @@ export const sciPhy2: ChapterContent = {
         {
           id: "sp2-ex-7",
           number: "7",
-          question:
-            "Make a diagram to show how hypermetropia is corrected. The near point of a hypermetropic eye is 1 m. What is the power of the lens required to correct this defect? Assume that the near point of the normal eye is 25 cm.",
+          question: "Make a diagram to show how hypermetropia is corrected. The near point of a hypermetropic eye is 1 m. What is the power of the lens required to correct this defect? Assume that the near point of the normal eye is 25 cm.",
           solution: [
             "Answer:",
             "Near point of defective eye = 1 m = 100 cm",
@@ -303,21 +247,18 @@ export const sciPhy2: ChapterContent = {
         {
           id: "sp2-ex-8",
           number: "8",
-          question:
-            "Why is a normal eye not able to see clearly the objects placed closer than 25 cm?",
+          question: "Why is a normal eye not able to see clearly the objects placed closer than 25 cm?",
           solution: [
             "Answer:",
             "The ciliary muscles cannot contract infinitely to increase the curvature of the lens.",
             "If the object is closer than 25 cm, the lens cannot become thick enough to focus the image exactly on the retina, resulting in a blurred image.",
           ],
-          answer:
-            "Because the ciliary muscles cannot contract enough to decrease the focal length beyond a certain limit.",
+          answer: "Because the ciliary muscles cannot contract enough to decrease the focal length beyond a certain limit.",
         },
         {
           id: "sp2-ex-9",
           number: "9",
-          question:
-            "What happens to the image distance in the eye when we increase the distance of an object from the eye?",
+          question: "What happens to the image distance in the eye when we increase the distance of an object from the eye?",
           solution: [
             "Answer:",
             "The image distance in the eye remains <b>constant</b> as it is fixed by the distance between the lens and the retina.",
@@ -345,8 +286,7 @@ export const sciPhy2: ChapterContent = {
             "Planets are much closer to Earth than stars and appear as extended sources (disks) rather than points.",
             "The total variation in light intensity from different parts of the planet averages out to zero, making them appear steady.",
           ],
-          answer:
-            "Planets are close and act as extended sources, so flicker effects average out.",
+          answer: "Planets are close and act as extended sources, so flicker effects average out.",
         },
         {
           id: "sp2-ex-12",
@@ -357,14 +297,12 @@ export const sciPhy2: ChapterContent = {
             "During sunrise, sunlight travels a long distance through the atmosphere.",
             "Most of the shorter wavelengths (blue) are scattered away by atmospheric particles. Only the longer wavelengths (red) reach our eyes.",
           ],
-          answer:
-            "Due to scattering of light, where blue light is scattered away leaving mainly red light.",
+          answer: "Due to scattering of light, where blue light is scattered away leaving mainly red light.",
         },
         {
           id: "sp2-ex-13",
           number: "13",
-          question:
-            "Why does the sky appear dark instead of blue to an astronaut?",
+          question: "Why does the sky appear dark instead of blue to an astronaut?",
           solution: [
             "Answer:",
             "Space is a vacuum and has no atmosphere.",
@@ -374,6 +312,56 @@ export const sciPhy2: ChapterContent = {
         },
       ],
     },
-  ],
-  examples: [], // No extra examples right now
+    {
+      id: "in-text",
+      name: "In-Text Questions",
+      questions: [
+        {
+          id: "it-1-q1",
+          number: "1",
+          question: "What is meant by power of accommodation of the eye?",
+          solution: [
+            "Answer:",
+            "The ability of the eye lens to adjust its focal length to see both nearby and distant objects clearly is called the power of accommodation.",
+            "This is achieved by the ciliary muscles, which can change the curvature and thickness of the eye lens.",
+          ],
+          answer: "The ability of the eye lens to adjust its focal length using ciliary muscles to focus on objects at various distances is called power of accommodation.",
+        },
+        {
+          id: "it-1-q2",
+          number: "2",
+          question: "A person with a myopic eye cannot see objects beyond 1.2 m distinctly. What should be the type of corrective lens used to restore proper vision?",
+          solution: [
+            "Answer:",
+            "The person is suffering from myopia (short-sightedness).",
+            "To correct this, a <b>concave lens</b> (diverging lens) of suitable power must be used to bring the image back onto the retina.",
+          ],
+          answer: "A concave lens (diverging lens) of appropriate power should be used to restore proper vision.",
+        },
+        {
+          id: "it-1-q3",
+          number: "3",
+          question: "What is the far point and near point of the human eye with normal vision?",
+          solution: [
+            "Answer:",
+            "For a normal human eye:",
+            "1. The <b>near point</b> is the minimum distance at which objects can be seen clearly without strain, which is <b>25 cm</b>.",
+            "2. The <b>far point</b> is the maximum distance up to which the eye can see objects clearly, which is <b>infinity</b>.",
+          ],
+          answer: "Near point = 25 cm, Far point = Infinity.",
+        },
+        {
+          id: "it-1-q4",
+          number: "4",
+          question: "A student has difficulty reading the blackboard while sitting in the last row. What could be the defect the child is suffering from? How can it be corrected?",
+          solution: [
+            "Answer:",
+            "Since the student cannot see the far-off blackboard clearly but can likely see nearby objects, the student is suffering from <b>myopia</b> (short-sightedness).",
+            "This defect can be corrected by using spectacles fitted with a <b>concave lens</b> of suitable focal length or power.",
+          ],
+          answer: "The student is suffering from myopia. It can be corrected using a concave lens.",
+        },
+      ],
+    }
+  ],examples: [], // No extra examples right now
 };

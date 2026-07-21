@@ -162,85 +162,13 @@ export const c9SciPhy5: ChapterContent = {
   summary: [],
   exercises: [
     {
-      id: "c9-phy-5-it-1",
-      name: "In-Text-1",
-      questions: [
-        {
-          id: "c9-phy-5-it-1-q1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>Why is it difficult to hold a school bag having a strap made of a thin and strong string?</div>",
-          solution: [
-            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>It is difficult to hold the bag because a thin strap has a small area, so pressure increases.</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>Higher pressure causes more force on the shoulder, making it uncomfortable.</div>",
-          ],
-          answer: "",
-        },
-        {
-          id: "c9-phy-5-it-1-q2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>What do you mean by buoyancy?</div>",
-          solution: [
-            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>Buoyancy is the upward force exerted by a liquid on an object placed in it.</div>",
-          ],
-          answer: "",
-        },
-        {
-          id: "c9-phy-5-it-1-q3",
-          number: "3",
-          question:
-            "<div style='text-align: justify;'>Why does an object float or sink when placed on the surface of water?</div>",
-          solution: [
-            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>An object floats if its density is less than the density of water because buoyant force is greater than its weight.</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>It sinks if its density is greater than water.</div>",
-          ],
-          answer: "",
-        },
-      ],
-    },
-    {
-      id: "c9-phy-5-it-2",
-      name: "In-Text-2",
-      questions: [
-        {
-          id: "c9-phy-5-it-2-q1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>You find your mass to be 42 kg on a weighing machine. Is your mass more or less than 42 kg?</div>",
-          solution: [
-            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>The weighing machine measures apparent weight, which is affected by buoyant force.</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>Due to air buoyancy, the actual mass is slightly less than the measured value.</div>",
-          ],
-          answer: "",
-        },
-        {
-          id: "c9-phy-5-it-2-q2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>You have a bag of cotton and an iron bar, each showing 100 kg on a weighing machine. Which one is actually heavier and why?</div>",
-          solution: [
-            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>The iron bar is actually heavier because it has smaller volume and experiences less buoyant force.</div>",
-            "<div style='color: #FFFFFF; text-align: justify;'>The cotton bag has larger volume, so buoyant force reduces its measured weight more.</div>",
-          ],
-          answer: "",
-        },
-      ],
-    },
-    {
-      id: "c9-phy-5-ex",
-      name: "Exercise",
+      id: "exercise",
+      name: "Exercise Questions",
       questions: [
         {
           id: "c9-phy-5-ex-q1",
           number: "1",
-          question:
-            "<div style='text-align: justify;'>In what direction does the buoyant force on an object immersed in a liquid act?</div>",
+          question: "<div style='text-align: justify;'>In what direction does the buoyant force on an object immersed in a liquid act?</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
             "<div style='color: #FFFFFF; text-align: justify;'>Buoyant force acts in the upward direction.</div>",
@@ -250,8 +178,7 @@ export const c9SciPhy5: ChapterContent = {
         {
           id: "c9-phy-5-ex-q2",
           number: "2",
-          question:
-            "<div style='text-align: justify;'>Why does a block of plastic released under water come up to the surface?</div>",
+          question: "<div style='text-align: justify;'>Why does a block of plastic released under water come up to the surface?</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
             "<div style='color: #FFFFFF; text-align: justify;'>The plastic block comes up because the buoyant force acting upward is greater than its weight.</div>",
@@ -262,8 +189,7 @@ export const c9SciPhy5: ChapterContent = {
         {
           id: "c9-phy-5-ex-q3",
           number: "3",
-          question:
-            "<div style='text-align: justify;'>The volume of 50 g of a substance is 20 cm³. Will it float or sink in water?</div>",
+          question: "<div style='text-align: justify;'>The volume of 50 g of a substance is 20 cm³. Will it float or sink in water?</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
             "<div style='color: #FFFFFF; text-align: justify;'>Density = mass / volume = 50 / 20 = 2.5 g/cm³</div>",
@@ -274,8 +200,7 @@ export const c9SciPhy5: ChapterContent = {
         {
           id: "c9-phy-5-ex-q4",
           number: "4",
-          question:
-            "<div style='text-align: justify;'>A sealed packet of mass 500 g and volume 350 cm³ is placed in water. Will it float or sink? Also find mass of water displaced.</div>",
+          question: "<div style='text-align: justify;'>A sealed packet of mass 500 g and volume 350 cm³ is placed in water. Will it float or sink? Also find mass of water displaced.</div>",
           solution: [
             "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
             "<div style='color: #FFFFFF; text-align: justify;'>Density = 500 / 350 ≈ 1.43 g/cm³</div>",
@@ -290,5 +215,65 @@ export const c9SciPhy5: ChapterContent = {
         },
       ],
     },
+    {
+      id: "in-text",
+      name: "In-Text Questions",
+      questions: [
+        {
+          id: "it-1-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div><div style='text-align: justify;'>Q1. Why is it difficult to hold a school bag having a strap made of a thin and strong string?</div>",
+          solution: [
+            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>It is difficult to hold the bag because a thin strap has a small area, so pressure increases.</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>Higher pressure causes more force on the shoulder, making it uncomfortable.</div>",
+          ],
+          answer: "",
+        },
+        {
+          id: "it-1-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>What do you mean by buoyancy?</div>",
+          solution: [
+            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>Buoyancy is the upward force exerted by a liquid on an object placed in it.</div>",
+          ],
+          answer: "",
+        },
+        {
+          id: "it-1-q3",
+          number: "3",
+          question: "<div style='text-align: justify;'>Why does an object float or sink when placed on the surface of water?</div>",
+          solution: [
+            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>An object floats if its density is less than the density of water because buoyant force is greater than its weight.</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>It sinks if its density is greater than water.</div>",
+          ],
+          answer: "",
+        },
+        {
+          id: "it-2-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FFB74D; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 2</strong></div><div style='text-align: justify;'>Q1. You find your mass to be 42 kg on a weighing machine. Is your mass more or less than 42 kg?</div>",
+          solution: [
+            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>The weighing machine measures apparent weight, which is affected by buoyant force.</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>Due to air buoyancy, the actual mass is slightly less than the measured value.</div>",
+          ],
+          answer: "",
+        },
+        {
+          id: "it-2-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>You have a bag of cotton and an iron bar, each showing 100 kg on a weighing machine. Which one is actually heavier and why?</div>",
+          solution: [
+            "<div style='color: #FFFFFF; text-align: justify;'>Answer:</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>The iron bar is actually heavier because it has smaller volume and experiences less buoyant force.</div>",
+            "<div style='color: #FFFFFF; text-align: justify;'>The cotton bag has larger volume, so buoyant force reduces its measured weight more.</div>",
+          ],
+          answer: "",
+        },
+      ],
+    }
   ],
 };

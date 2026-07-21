@@ -162,113 +162,13 @@ export const c9SciPhy4: ChapterContent = {
   examples: [],
   exercises: [
     {
-      id: "c9-phy-4-it-1",
-      name: "In-Text-1",
-      questions: [
-        {
-          id: "c9-phy-4-it-1-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>State the universal law of gravitation.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>According to the universal law of gravitation, every object in the universe attracts every other object with a force.</div>",
-            "<div style='text-align: justify;'>This force is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-4-it-1-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>Write the formula to find the magnitude of the gravitational force between the earth and an object on the surface of the earth.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>F = G (m₁m₂ / r²)</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>Where:</div>",
-            "<div style='text-align: justify;'>G = gravitational constant</div>",
-            "<div style='text-align: justify;'>m₁, m₂ = masses</div>",
-            "<div style='text-align: justify;'>r = distance between centers</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-4-it-2",
-      name: "In-Text-2",
-      questions: [
-        {
-          id: "c9-phy-4-it-2-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>What do you mean by free fall?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Free fall is the motion of an object when it falls towards the earth under the influence of gravity only, without any other force acting on it.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-4-it-2-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>What do you mean by acceleration due to gravity?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Acceleration due to gravity is the acceleration produced in a body due to the gravitational pull of the earth.</div>",
-            "<div style='text-align: justify;'>Its value near the earth’s surface is about 9.8 m/s².</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-4-it-3",
-      name: "In-Text-3",
-      questions: [
-        {
-          id: "c9-phy-4-it-3-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>What are the differences between the mass of an object and its weight?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Mass is the amount of matter in an object and remains constant everywhere.</div>",
-            "<div style='text-align: justify;'>Weight is the force with which gravity pulls an object and depends on the value of gravity.</div>",
-            "<div style='text-align: justify;'>Mass is measured in kilograms, while weight is measured in newtons.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-4-it-3-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>Why is the weight of an object on the moon 1/6th its weight on the earth?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Because the gravity of the moon is about one-sixth of the gravity of the earth.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-4-ex",
-      name: "Exercise",
+      id: "exercise",
+      name: "Exercise Questions",
       questions: [
         {
           id: "c9-phy-4-ex-1",
           number: "1",
-          question:
-            "<div style='text-align: justify;'>How does the force of gravitation between two objects change when the distance between them is reduced to half?</div>",
+          question: "<div style='text-align: justify;'>How does the force of gravitation between two objects change when the distance between them is reduced to half?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Gravitational force is inversely proportional to the square of distance.</div>",
@@ -280,8 +180,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-2",
           number: "2",
-          question:
-            "<div style='text-align: justify;'>Gravitational force acts on all objects. Why does a heavy object not fall faster than a light object?</div>",
+          question: "<div style='text-align: justify;'>Gravitational force acts on all objects. Why does a heavy object not fall faster than a light object?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>All objects fall with the same acceleration due to gravity.</div>",
@@ -293,8 +192,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-3",
           number: "3",
-          question:
-            "<div style='text-align: justify;'>Find the gravitational force between the earth and a 1 kg object.<br/>(Mass of earth = 6 × 10²⁴ kg, radius = 6.4 × 10⁶ m)</div>",
+          question: "<div style='text-align: justify;'>Find the gravitational force between the earth and a 1 kg object.<br/>(Mass of earth = 6 × 10²⁴ kg, radius = 6.4 × 10⁶ m)</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Using F = G (m₁m₂ / r²)</div>",
@@ -307,8 +205,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-4",
           number: "4",
-          question:
-            "<div style='text-align: justify;'>Does the earth attract the moon with greater, smaller or same force as the moon attracts the earth? Why?</div>",
+          question: "<div style='text-align: justify;'>Does the earth attract the moon with greater, smaller or same force as the moon attracts the earth? Why?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>The earth and the moon attract each other with equal gravitational force.</div>",
@@ -320,8 +217,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-5",
           number: "5",
-          question:
-            "<div style='text-align: justify;'>If the moon attracts the earth, why does the earth not move towards the moon?</div>",
+          question: "<div style='text-align: justify;'>If the moon attracts the earth, why does the earth not move towards the moon?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>The earth also moves towards the moon, but since the mass of the earth is very large, its movement is very small and not noticeable.</div>",
@@ -332,8 +228,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-6",
           number: "6",
-          question:
-            "<div style='text-align: justify;'>What happens to gravitational force if:<br/>(i) mass of one object is doubled<br/>(ii) distance is doubled and tripled<br/>(iii) masses of both objects are doubled</div>",
+          question: "<div style='text-align: justify;'>What happens to gravitational force if:<br/>(i) mass of one object is doubled<br/>(ii) distance is doubled and tripled<br/>(iii) masses of both objects are doubled</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>(i) Force becomes double</div>",
@@ -347,8 +242,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-7",
           number: "7",
-          question:
-            "<div style='text-align: justify;'>What is the importance of universal law of gravitation?</div>",
+          question: "<div style='text-align: justify;'>What is the importance of universal law of gravitation?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>The universal law of gravitation explains the motion of planets around the sun, the falling of objects on the earth, tides in oceans, and the existence of atmosphere around the earth.</div>",
@@ -359,8 +253,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-8",
           number: "8",
-          question:
-            "<div style='text-align: justify;'>What is the acceleration of free fall?</div>",
+          question: "<div style='text-align: justify;'>What is the acceleration of free fall?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Acceleration due to gravity is about 9.8 m/s².</div>",
@@ -371,8 +264,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-9",
           number: "9",
-          question:
-            "<div style='text-align: justify;'>What do we call the gravitational force between the earth and an object?</div>",
+          question: "<div style='text-align: justify;'>What do we call the gravitational force between the earth and an object?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>It is called weight.</div>",
@@ -383,8 +275,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-10",
           number: "10",
-          question:
-            "<div style='text-align: justify;'>Will the weight of gold change from poles to equator?</div>",
+          question: "<div style='text-align: justify;'>Will the weight of gold change from poles to equator?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Yes, weight is less at equator because value of g is smaller.</div>",
@@ -395,8 +286,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-11",
           number: "11",
-          question:
-            "<div style='text-align: justify;'>Why does a sheet of paper fall slower than a crumpled ball?</div>",
+          question: "<div style='text-align: justify;'>Why does a sheet of paper fall slower than a crumpled ball?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>A sheet of paper falls slower because it experiences more air resistance due to its larger surface area, while a crumpled ball experiences less resistance.</div>",
@@ -407,8 +297,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-12",
           number: "12",
-          question:
-            "<div style='text-align: justify;'>Gravitational force on the moon is 1/6th of that on the earth. What is the weight of a 10 kg object on the moon and on the earth?</div>",
+          question: "<div style='text-align: justify;'>Gravitational force on the moon is 1/6th of that on the earth. What is the weight of a 10 kg object on the moon and on the earth?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Weight on earth = m × g = 10 × 9.8 = 98 N</div>",
@@ -422,8 +311,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-13",
           number: "13",
-          question:
-            "<div style='text-align: justify;'>A ball is thrown vertically upward with velocity 49 m/s. Find:<br/>(i) maximum height<br/>(ii) total time to return</div>",
+          question: "<div style='text-align: justify;'>A ball is thrown vertically upward with velocity 49 m/s. Find:<br/>(i) maximum height<br/>(ii) total time to return</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>u = 49 m/s, g = 9.8 m/s²</div>",
@@ -445,8 +333,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-14",
           number: "14",
-          question:
-            "<div style='text-align: justify;'>A stone is released from a height of 19.6 m. Find its final velocity before hitting ground.</div>",
+          question: "<div style='text-align: justify;'>A stone is released from a height of 19.6 m. Find its final velocity before hitting ground.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>u = 0, h = 19.6 m, g = 9.8 m/s²</div>",
@@ -463,8 +350,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-15",
           number: "15",
-          question:
-            "<div style='text-align: justify;'>A stone is thrown upward with velocity 40 m/s. Find height, displacement, and distance.</div>",
+          question: "<div style='text-align: justify;'>A stone is thrown upward with velocity 40 m/s. Find height, displacement, and distance.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>u = 40 m/s, g = 10 m/s²</div>",
@@ -483,8 +369,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-16",
           number: "16",
-          question:
-            "<div style='text-align: justify;'>Find force between earth and sun.</div>",
+          question: "<div style='text-align: justify;'>Find force between earth and sun.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Using F = G (m₁m₂ / r²)</div>",
@@ -497,8 +382,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-17",
           number: "17",
-          question:
-            "<div style='text-align: justify;'>Two stones: one dropped from 100 m, one thrown upward at 25 m/s. Find when and where they meet.</div>",
+          question: "<div style='text-align: justify;'>Two stones: one dropped from 100 m, one thrown upward at 25 m/s. Find when and where they meet.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>They meet after 4 s</div>",
@@ -511,8 +395,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-18",
           number: "18",
-          question:
-            "<div style='text-align: justify;'>A ball returns in 6 s. Find velocity, height, position after 4 s.</div>",
+          question: "<div style='text-align: justify;'>A ball returns in 6 s. Find velocity, height, position after 4 s.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Time = 6 s → upward time = 3 s</div>",
@@ -535,8 +418,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-19",
           number: "19",
-          question:
-            "<div style='text-align: justify;'>In what direction does the buoyant force on an object immersed in a liquid act?</div>",
+          question: "<div style='text-align: justify;'>In what direction does the buoyant force on an object immersed in a liquid act?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Buoyant force acts in the upward direction.</div>",
@@ -547,8 +429,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-20",
           number: "20",
-          question:
-            "<div style='text-align: justify;'>Why does a block of plastic released under water come up to the surface?</div>",
+          question: "<div style='text-align: justify;'>Why does a block of plastic released under water come up to the surface?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Because the buoyant force acting upward is greater than its weight.</div>",
@@ -559,8 +440,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-21",
           number: "21",
-          question:
-            "<div style='text-align: justify;'>The volume of 50 g of a substance is 20 cm³. Will it float or sink in water?</div>",
+          question: "<div style='text-align: justify;'>The volume of 50 g of a substance is 20 cm³. Will it float or sink in water?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Density of the object is calculated using mass/volume.</div>",
@@ -572,8 +452,7 @@ export const c9SciPhy4: ChapterContent = {
         {
           id: "c9-phy-4-ex-22",
           number: "22",
-          question:
-            "<div style='text-align: justify;'>A sealed packet of mass 500 g and volume 350 cm³ is placed in water. Will it float or sink? Also find mass of water displaced.</div>",
+          question: "<div style='text-align: justify;'>A sealed packet of mass 500 g and volume 350 cm³ is placed in water. Will it float or sink? Also find mass of water displaced.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Density = 500 / 350 ≈ 1.43 g/cm³</div>",
@@ -588,5 +467,86 @@ export const c9SciPhy4: ChapterContent = {
         },
       ],
     },
+    {
+      id: "in-text",
+      name: "In-Text Questions",
+      questions: [
+        {
+          id: "it-1-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF8A65; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div><div style='text-align: justify;'>Q1. State the universal law of gravitation.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>According to the universal law of gravitation, every object in the universe attracts every other object with a force.</div>",
+            "<div style='text-align: justify;'>This force is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-1-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>Write the formula to find the magnitude of the gravitational force between the earth and an object on the surface of the earth.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>F = G (m₁m₂ / r²)</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>Where:</div>",
+            "<div style='text-align: justify;'>G = gravitational constant</div>",
+            "<div style='text-align: justify;'>m₁, m₂ = masses</div>",
+            "<div style='text-align: justify;'>r = distance between centers</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF8A65; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 2</strong></div><div style='text-align: justify;'>Q1. What do you mean by free fall?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Free fall is the motion of an object when it falls towards the earth under the influence of gravity only, without any other force acting on it.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>What do you mean by acceleration due to gravity?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Acceleration due to gravity is the acceleration produced in a body due to the gravitational pull of the earth.</div>",
+            "<div style='text-align: justify;'>Its value near the earth’s surface is about 9.8 m/s².</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-3-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF8A65; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 3</strong></div><div style='text-align: justify;'>Q1. What are the differences between the mass of an object and its weight?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Mass is the amount of matter in an object and remains constant everywhere.</div>",
+            "<div style='text-align: justify;'>Weight is the force with which gravity pulls an object and depends on the value of gravity.</div>",
+            "<div style='text-align: justify;'>Mass is measured in kilograms, while weight is measured in newtons.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-3-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>Why is the weight of an object on the moon 1/6th its weight on the earth?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Because the gravity of the moon is about one-sixth of the gravity of the earth.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+      ],
+    }
   ],
 };

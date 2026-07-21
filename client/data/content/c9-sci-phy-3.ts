@@ -169,206 +169,13 @@ export const c9SciPhy3: ChapterContent = {
   examples: [],
   exercises: [
     {
-      id: "c9-phy-3-it-1",
-      name: "In-Text-1",
-      questions: [
-        {
-          id: "c9-phy-3-it-1-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>A force of 7 N acts on an object. The displacement is 8 m in the direction of the force. The force acts throughout the displacement. What is the work done?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Force (F) = 7 N</div>",
-            "<div style='text-align: justify;'>Displacement (s) = 8 m</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>Work done = Force × Displacement</div>",
-            "<div style='text-align: justify;'>= 7 × 8</div>",
-            "<div style='text-align: justify;'>= 56 J</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-3-it-2",
-      name: "In-Text-2",
-      questions: [
-        {
-          id: "c9-phy-3-it-2-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>When do we say that work is done?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Work is said to be done when a force acts on an object and causes displacement in the direction of the force.</div>",
-            "<div style='text-align: justify;'>If there is no displacement, no work is done.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-2-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>Write an expression for the work done when a force is acting on an object in the direction of its displacement.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Work done = Force × Displacement</div>",
-            "<div style='text-align: justify;'>W = F × s</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-2-3",
-          number: "3",
-          question:
-            "<div style='text-align: justify;'>Define 1 J of work.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>1 joule of work is done when a force of 1 N moves an object through a distance of 1 m in the direction of the force.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-2-4",
-          number: "4",
-          question:
-            "<div style='text-align: justify;'>A pair of bullocks exerts a force of 140 N on a plough. The field being ploughed is 15 m long. How much work is done?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Force (F) = 140 N</div>",
-            "<div style='text-align: justify;'>Displacement (s) = 15 m</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>Work done = F × s</div>",
-            "<div style='text-align: justify;'>= 140 × 15</div>",
-            "<div style='text-align: justify;'>= 2100 J</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-3-it-3",
-      name: "In-Text-3",
-      questions: [
-        {
-          id: "c9-phy-3-it-3-1",
-          number: "1",
-          question:
-            "<div style='text-align: justify;'>What is the kinetic energy of an object?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Kinetic energy is the energy possessed by an object due to its motion.</div>",
-            "<div style='text-align: justify;'>It depends on both mass and velocity of the object.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-3-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>Write an expression for the kinetic energy of an object.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Kinetic energy = ½ × mass × velocity²</div>",
-            "<div style='text-align: justify;'>KE = ½ mv²</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-3-3",
-          number: "3",
-          question:
-            "<div style='text-align: justify;'>The kinetic energy of an object of mass m moving with a velocity of 5 m/s is 25 J. What will be its kinetic energy when its velocity is doubled? What will be its kinetic energy when its velocity is increased three times?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Kinetic energy ∝ velocity²</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>When velocity is doubled:</div>",
-            "<div style='text-align: justify;'>New KE = 4 × 25 = 100 J</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>When velocity is tripled:</div>",
-            "<div style='text-align: justify;'>New KE = 9 × 25 = 225 J</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-3-it-4",
-      name: "In-Text-4",
-      questions: [
-        {
-          id: "c9-phy-3-it-4-1",
-          number: "1",
-          question: "<div style='text-align: justify;'>What is power?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Power is the rate of doing work or the rate at which energy is used.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-4-2",
-          number: "2",
-          question:
-            "<div style='text-align: justify;'>Define 1 watt of power.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>1 watt is the power when 1 joule of work is done in 1 second.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-4-3",
-          number: "3",
-          question:
-            "<div style='text-align: justify;'>A lamp consumes 1000 J of electrical energy in 10 s. What is its power?</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Energy = 1000 J</div>",
-            "<div style='text-align: justify;'>Time = 10 s</div>",
-            "<br/>",
-            "<div style='text-align: justify;'>Power = Energy / Time</div>",
-            "<div style='text-align: justify;'>= 1000 / 10</div>",
-            "<div style='text-align: justify;'>= 100 W</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-        {
-          id: "c9-phy-3-it-4-4",
-          number: "4",
-          question:
-            "<div style='text-align: justify;'>Define average power.</div>",
-          solution: [
-            "<div style='text-align: justify;'>Answer:</div>",
-            "<div style='text-align: justify;'>Average power is the total work done divided by total time taken.</div>",
-          ],
-          answer: "",
-          shortBoardPattern: true,
-        },
-      ],
-    },
-    {
-      id: "c9-phy-3-ex",
-      name: "Exercise",
+      id: "exercise",
+      name: "Exercise Questions",
       questions: [
         {
           id: "c9-phy-3-ex-1",
           number: "1",
-          question:
-            "<div style='text-align: justify;'>Look at the activities listed below. Reason whether work is done or not:<br><br>(a) Suma is swimming in a pond<br>(b) A donkey is carrying a load on its back<br>(c) A windmill is lifting water from a well<br>(d) A green plant is carrying out photosynthesis<br>(e) An engine is pulling a train<br>(f) Food grains are getting dried in the sun<br>(g) A sailboat is moving due to wind energy</div>",
+          question: "<div style='text-align: justify;'>Look at the activities listed below. Reason whether work is done or not:<br><br>(a) Suma is swimming in a pond<br>(b) A donkey is carrying a load on its back<br>(c) A windmill is lifting water from a well<br>(d) A green plant is carrying out photosynthesis<br>(e) An engine is pulling a train<br>(f) Food grains are getting dried in the sun<br>(g) A sailboat is moving due to wind energy</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>(a) Yes – because force causes displacement</div>",
@@ -385,8 +192,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-2",
           number: "2",
-          question:
-            "<div style='text-align: justify;'>An object is thrown at an angle and returns to the same level. What is the work done by gravity?</div>",
+          question: "<div style='text-align: justify;'>An object is thrown at an angle and returns to the same level. What is the work done by gravity?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Work done by gravity = 0</div>",
@@ -398,8 +204,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-3",
           number: "3",
-          question:
-            "<div style='text-align: justify;'>A battery lights a bulb. Describe the energy changes.</div>",
+          question: "<div style='text-align: justify;'>A battery lights a bulb. Describe the energy changes.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Chemical energy of battery is converted into electrical energy.</div>",
@@ -411,8 +216,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-4",
           number: "4",
-          question:
-            "<div style='text-align: justify;'>A force changes velocity from 5 m/s to 2 m/s of a 20 kg mass. Find work done.</div>",
+          question: "<div style='text-align: justify;'>A force changes velocity from 5 m/s to 2 m/s of a 20 kg mass. Find work done.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>m = 20 kg</div>",
@@ -429,8 +233,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-5",
           number: "5",
-          question:
-            "<div style='text-align: justify;'>A mass of 10 kg moves horizontally from A to B. What is work done by gravity?</div>",
+          question: "<div style='text-align: justify;'>A mass of 10 kg moves horizontally from A to B. What is work done by gravity?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Work done by gravity = 0</div>",
@@ -442,8 +245,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-6",
           number: "6",
-          question:
-            "<div style='text-align: justify;'>Potential energy decreases in free fall. Does it violate conservation of energy?</div>",
+          question: "<div style='text-align: justify;'>Potential energy decreases in free fall. Does it violate conservation of energy?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>No, it does not violate the law of conservation of energy.</div>",
@@ -456,8 +258,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-7",
           number: "7",
-          question:
-            "<div style='text-align: justify;'>What are the various energy transformations that occur when you are riding a bicycle?</div>",
+          question: "<div style='text-align: justify;'>What are the various energy transformations that occur when you are riding a bicycle?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Chemical energy (food) is converted into muscular energy.</div>",
@@ -470,8 +271,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-8",
           number: "8",
-          question:
-            "<div style='text-align: justify;'>Does energy transfer take place when you push a rock and it does not move? Where does the energy go?</div>",
+          question: "<div style='text-align: justify;'>Does energy transfer take place when you push a rock and it does not move? Where does the energy go?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>No work is done because there is no displacement of the rock.</div>",
@@ -483,8 +283,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-9",
           number: "9",
-          question:
-            "<div style='text-align: justify;'>A household uses 250 units of energy. Convert it into joules.</div>",
+          question: "<div style='text-align: justify;'>A household uses 250 units of energy. Convert it into joules.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>1 unit = 1 kWh = 3.6 × 10⁶ J</div>",
@@ -498,8 +297,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-10",
           number: "10",
-          question:
-            "<div style='text-align: justify;'>An object of mass 40 kg is raised to 5 m. Find its potential energy. Also find kinetic energy at half height.</div>",
+          question: "<div style='text-align: justify;'>An object of mass 40 kg is raised to 5 m. Find its potential energy. Also find kinetic energy at half height.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>PE = mgh = 40 × 10 × 5 = 2000 J</div>",
@@ -515,8 +313,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-11",
           number: "11",
-          question:
-            "<div style='text-align: justify;'>What is the work done by gravity on a satellite moving around the earth?</div>",
+          question: "<div style='text-align: justify;'>What is the work done by gravity on a satellite moving around the earth?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Work done = 0</div>",
@@ -528,8 +325,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-12",
           number: "12",
-          question:
-            "<div style='text-align: justify;'>Can there be displacement without force?</div>",
+          question: "<div style='text-align: justify;'>Can there be displacement without force?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Yes, if an object is already in motion, it can continue moving without force (due to inertia).</div>",
@@ -540,8 +336,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-13",
           number: "13",
-          question:
-            "<div style='text-align: justify;'>A person holds a bundle of hay over his head for 30 minutes and gets tired. Has he done work?</div>",
+          question: "<div style='text-align: justify;'>A person holds a bundle of hay over his head for 30 minutes and gets tired. Has he done work?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>No, no work is done in physics because there is no displacement of the object.</div>",
@@ -552,8 +347,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-14",
           number: "14",
-          question:
-            "<div style='text-align: justify;'>An electric heater is rated 1500 W. How much energy does it use in 10 hours?</div>",
+          question: "<div style='text-align: justify;'>An electric heater is rated 1500 W. How much energy does it use in 10 hours?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Power = 1500 W</div>",
@@ -569,8 +363,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-15",
           number: "15",
-          question:
-            "<div style='text-align: justify;'>Explain conservation of energy using a pendulum.</div>",
+          question: "<div style='text-align: justify;'>Explain conservation of energy using a pendulum.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>At the highest point, the pendulum has maximum potential energy and minimum kinetic energy.</div>",
@@ -583,8 +376,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-16",
           number: "16",
-          question:
-            "<div style='text-align: justify;'>An object moving with constant velocity. How much work is needed to stop it?</div>",
+          question: "<div style='text-align: justify;'>An object moving with constant velocity. How much work is needed to stop it?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Work done = loss of kinetic energy</div>",
@@ -596,8 +388,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-17",
           number: "17",
-          question:
-            "<div style='text-align: justify;'>Find work needed to stop a 1500 kg car moving at 60 km/h.</div>",
+          question: "<div style='text-align: justify;'>Find work needed to stop a 1500 kg car moving at 60 km/h.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Speed = 60 km/h = 16.67 m/s</div>",
@@ -611,8 +402,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-18",
           number: "18",
-          question:
-            "<div style='text-align: justify;'>State whether work done is positive, negative or zero.</div>",
+          question: "<div style='text-align: justify;'>State whether work done is positive, negative or zero.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Work done is positive when force and displacement are in same direction.</div>",
@@ -625,8 +415,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-19",
           number: "19",
-          question:
-            "<div style='text-align: justify;'>Soni says that the acceleration in an object could be zero even when several forces are acting on it. Do you agree? Why?</div>",
+          question: "<div style='text-align: justify;'>Soni says that the acceleration in an object could be zero even when several forces are acting on it. Do you agree? Why?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Yes, it is possible.</div>",
@@ -638,8 +427,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-20",
           number: "20",
-          question:
-            "<div style='text-align: justify;'>Find the energy in kWh consumed in 10 hours by four devices of power 500 W each.</div>",
+          question: "<div style='text-align: justify;'>Find the energy in kWh consumed in 10 hours by four devices of power 500 W each.</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>Total power = 4 × 500 = 2000 W = 2 kW</div>",
@@ -654,8 +442,7 @@ export const c9SciPhy3: ChapterContent = {
         {
           id: "c9-phy-3-ex-21",
           number: "21",
-          question:
-            "<div style='text-align: justify;'>A freely falling object eventually stops on reaching the ground. What happens to its kinetic energy?</div>",
+          question: "<div style='text-align: justify;'>A freely falling object eventually stops on reaching the ground. What happens to its kinetic energy?</div>",
           solution: [
             "<div style='text-align: justify;'>Answer:</div>",
             "<div style='text-align: justify;'>The kinetic energy is converted into heat, sound, and deformation energy when the object hits the ground.</div>",
@@ -665,5 +452,168 @@ export const c9SciPhy3: ChapterContent = {
         },
       ],
     },
+    {
+      id: "in-text",
+      name: "In-Text Questions",
+      questions: [
+        {
+          id: "it-1-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF4081; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 1</strong></div><div style='text-align: justify;'>Q1. A force of 7 N acts on an object. The displacement is 8 m in the direction of the force. The force acts throughout the displacement. What is the work done?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Force (F) = 7 N</div>",
+            "<div style='text-align: justify;'>Displacement (s) = 8 m</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>Work done = Force × Displacement</div>",
+            "<div style='text-align: justify;'>= 7 × 8</div>",
+            "<div style='text-align: justify;'>= 56 J</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF4081; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 2</strong></div><div style='text-align: justify;'>Q1. When do we say that work is done?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Work is said to be done when a force acts on an object and causes displacement in the direction of the force.</div>",
+            "<div style='text-align: justify;'>If there is no displacement, no work is done.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>Write an expression for the work done when a force is acting on an object in the direction of its displacement.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Work done = Force × Displacement</div>",
+            "<div style='text-align: justify;'>W = F × s</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q3",
+          number: "3",
+          question: "<div style='text-align: justify;'>Define 1 J of work.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>1 joule of work is done when a force of 1 N moves an object through a distance of 1 m in the direction of the force.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-2-q4",
+          number: "4",
+          question: "<div style='text-align: justify;'>A pair of bullocks exerts a force of 140 N on a plough. The field being ploughed is 15 m long. How much work is done?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Force (F) = 140 N</div>",
+            "<div style='text-align: justify;'>Displacement (s) = 15 m</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>Work done = F × s</div>",
+            "<div style='text-align: justify;'>= 140 × 15</div>",
+            "<div style='text-align: justify;'>= 2100 J</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-3-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF4081; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 3</strong></div><div style='text-align: justify;'>Q1. What is the kinetic energy of an object?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Kinetic energy is the energy possessed by an object due to its motion.</div>",
+            "<div style='text-align: justify;'>It depends on both mass and velocity of the object.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-3-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>Write an expression for the kinetic energy of an object.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Kinetic energy = ½ × mass × velocity²</div>",
+            "<div style='text-align: justify;'>KE = ½ mv²</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-3-q3",
+          number: "3",
+          question: "<div style='text-align: justify;'>The kinetic energy of an object of mass m moving with a velocity of 5 m/s is 25 J. What will be its kinetic energy when its velocity is doubled? What will be its kinetic energy when its velocity is increased three times?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Kinetic energy ∝ velocity²</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>When velocity is doubled:</div>",
+            "<div style='text-align: justify;'>New KE = 4 × 25 = 100 J</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>When velocity is tripled:</div>",
+            "<div style='text-align: justify;'>New KE = 9 × 25 = 225 J</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-4-q1",
+          number: "",
+          question: "<div style=\"text-align: center; font-size: 22px; color: #FF4081; font-family: 'NotoSans_700Bold'; margin-top: 15px; margin-bottom: 15px;\"><strong>In-Text - 4</strong></div><div style='text-align: justify;'>Q1. What is power?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Power is the rate of doing work or the rate at which energy is used.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-4-q2",
+          number: "2",
+          question: "<div style='text-align: justify;'>Define 1 watt of power.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>1 watt is the power when 1 joule of work is done in 1 second.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-4-q3",
+          number: "3",
+          question: "<div style='text-align: justify;'>A lamp consumes 1000 J of electrical energy in 10 s. What is its power?</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Energy = 1000 J</div>",
+            "<div style='text-align: justify;'>Time = 10 s</div>",
+            "<br/>",
+            "<div style='text-align: justify;'>Power = Energy / Time</div>",
+            "<div style='text-align: justify;'>= 1000 / 10</div>",
+            "<div style='text-align: justify;'>= 100 W</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+        {
+          id: "it-4-q4",
+          number: "4",
+          question: "<div style='text-align: justify;'>Define average power.</div>",
+          solution: [
+            "<div style='text-align: justify;'>Answer:</div>",
+            "<div style='text-align: justify;'>Average power is the total work done divided by total time taken.</div>",
+          ],
+          answer: "",
+          shortBoardPattern: true,
+        },
+      ],
+    }
   ],
 };
