@@ -91,7 +91,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step"><b>(i)</b></div>
                     <div class="sol-step">Equation: x + 3 = 0</div>
                     <div class="sol-step">Value: x = 3</div>
-                    <div class="sol-step">LHS = 3 + 3 = 6</div>
+                    <div class="sol-step">LHS = x + 3</div>
+                    <div class="sol-step">LHS = 3 + 3</div>
+                    <div class="sol-step">LHS = 6</div>
                     <div class="sol-step">RHS = 0</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -99,7 +101,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(ii)</b></div>
                     <div class="sol-step">Equation: x + 3 = 0</div>
                     <div class="sol-step">Value: x = 0</div>
-                    <div class="sol-step">LHS = 0 + 3 = 3</div>
+                    <div class="sol-step">LHS = x + 3</div>
+                    <div class="sol-step">LHS = 0 + 3</div>
+                    <div class="sol-step">LHS = 3</div>
                     <div class="sol-step">RHS = 0</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -107,7 +111,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(iii)</b></div>
                     <div class="sol-step">Equation: x + 3 = 0</div>
                     <div class="sol-step">Value: x = -3</div>
-                    <div class="sol-step">LHS = -3 + 3 = 0</div>
+                    <div class="sol-step">LHS = x + 3</div>
+                    <div class="sol-step">LHS = -3 + 3</div>
+                    <div class="sol-step">LHS = 0</div>
                     <div class="sol-step">RHS = 0</div>
                     <div class="sol-step">Since LHS = RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">Yes</span></div>
@@ -115,7 +121,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(iv)</b></div>
                     <div class="sol-step">Equation: x - 7 = 1</div>
                     <div class="sol-step">Value: x = 7</div>
-                    <div class="sol-step">LHS = 7 - 7 = 0</div>
+                    <div class="sol-step">LHS = x - 7</div>
+                    <div class="sol-step">LHS = 7 - 7</div>
+                    <div class="sol-step">LHS = 0</div>
                     <div class="sol-step">RHS = 1</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -123,7 +131,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(v)</b></div>
                     <div class="sol-step">Equation: x - 7 = 1</div>
                     <div class="sol-step">Value: x = 8</div>
-                    <div class="sol-step">LHS = 8 - 7 = 1</div>
+                    <div class="sol-step">LHS = x - 7</div>
+                    <div class="sol-step">LHS = 8 - 7</div>
+                    <div class="sol-step">LHS = 1</div>
                     <div class="sol-step">RHS = 1</div>
                     <div class="sol-step">Since LHS = RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">Yes</span></div>
@@ -131,7 +141,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(vi)</b></div>
                     <div class="sol-step">Equation: 5x = 25</div>
                     <div class="sol-step">Value: x = 0</div>
-                    <div class="sol-step">LHS = 5(0) = 0</div>
+                    <div class="sol-step">LHS = 5x</div>
+                    <div class="sol-step">LHS = 5(0)</div>
+                    <div class="sol-step">LHS = 0</div>
                     <div class="sol-step">RHS = 25</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -139,7 +151,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(vii)</b></div>
                     <div class="sol-step">Equation: 5x = 25</div>
                     <div class="sol-step">Value: x = 5</div>
-                    <div class="sol-step">LHS = 5(5) = 25</div>
+                    <div class="sol-step">LHS = 5x</div>
+                    <div class="sol-step">LHS = 5(5)</div>
+                    <div class="sol-step">LHS = 25</div>
                     <div class="sol-step">RHS = 25</div>
                     <div class="sol-step">Since LHS = RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">Yes</span></div>
@@ -147,7 +161,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(viii)</b></div>
                     <div class="sol-step">Equation: 5x = 25</div>
                     <div class="sol-step">Value: x = -5</div>
-                    <div class="sol-step">LHS = 5(-5) = -25</div>
+                    <div class="sol-step">LHS = 5x</div>
+                    <div class="sol-step">LHS = 5(-5)</div>
+                    <div class="sol-step">LHS = -25</div>
                     <div class="sol-step">RHS = 25</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -155,7 +171,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(ix)</b></div>
                     <div class="sol-step">Equation: m/3 = 2</div>
                     <div class="sol-step">Value: m = -6</div>
-                    <div class="sol-step">LHS = -6/3 = -2</div>
+                    <div class="sol-step">LHS = m/3</div>
+                    <div class="sol-step">LHS = -6/3</div>
+                    <div class="sol-step">LHS = -2</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -163,7 +181,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(x)</b></div>
                     <div class="sol-step">Equation: m/3 = 2</div>
                     <div class="sol-step">Value: m = 0</div>
-                    <div class="sol-step">LHS = 0/3 = 0</div>
+                    <div class="sol-step">LHS = m/3</div>
+                    <div class="sol-step">LHS = 0/3</div>
+                    <div class="sol-step">LHS = 0</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
@@ -171,7 +191,9 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step" style="margin-top: 15px;"><b>(xi)</b></div>
                     <div class="sol-step">Equation: m/3 = 2</div>
                     <div class="sol-step">Value: m = 6</div>
-                    <div class="sol-step">LHS = 6/3 = 2</div>
+                    <div class="sol-step">LHS = m/3</div>
+                    <div class="sol-step">LHS = 6/3</div>
+                    <div class="sol-step">LHS = 2</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS = RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">Yes</span></div>
@@ -185,42 +207,53 @@ export const c7Math4: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) n + 5 = 19 (n = 1):</b></div>
                     <div class="sol-step">LHS = n + 5</div>
-                    <div class="sol-step">LHS = 1 + 5 = 6</div>
+                    <div class="sol-step">LHS = 1 + 5</div>
+                    <div class="sol-step">LHS = 6</div>
                     <div class="sol-step">RHS = 19</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span>, n = 1 is not a solution.</div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) 7n + 5 = 19 (n = -2):</b></div>
                     <div class="sol-step">LHS = 7n + 5</div>
-                    <div class="sol-step">LHS = 7(-2) + 5 = -14 + 5 = -9</div>
+                    <div class="sol-step">LHS = 7(-2) + 5</div>
+                    <div class="sol-step">LHS = -14 + 5</div>
+                    <div class="sol-step">LHS = -9</div>
                     <div class="sol-step">RHS = 19</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span>, n = -2 is not a solution.</div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) 7n + 5 = 19 (n = 2):</b></div>
                     <div class="sol-step">LHS = 7n + 5</div>
-                    <div class="sol-step">LHS = 7(2) + 5 = 14 + 5 = 19</div>
+                    <div class="sol-step">LHS = 7(2) + 5</div>
+                    <div class="sol-step">LHS = 14 + 5</div>
+                    <div class="sol-step">LHS = 19</div>
                     <div class="sol-step">RHS = 19</div>
                     <div class="sol-step">Since LHS = RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">Yes</span>, n = 2 is a solution.</div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) 4p - 3 = 13 (p = 1):</b></div>
                     <div class="sol-step">LHS = 4p - 3</div>
-                    <div class="sol-step">LHS = 4(1) - 3 = 4 - 3 = 1</div>
+                    <div class="sol-step">LHS = 4(1) - 3</div>
+                    <div class="sol-step">LHS = 4 - 3</div>
+                    <div class="sol-step">LHS = 1</div>
                     <div class="sol-step">RHS = 13</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span>, p = 1 is not a solution.</div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(e) 4p - 3 = 13 (p = -4):</b></div>
                     <div class="sol-step">LHS = 4p - 3</div>
-                    <div class="sol-step">LHS = 4(-4) - 3 = -16 - 3 = -19</div>
+                    <div class="sol-step">LHS = 4(-4) - 3</div>
+                    <div class="sol-step">LHS = -16 - 3</div>
+                    <div class="sol-step">LHS = -19</div>
                     <div class="sol-step">RHS = 13</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span>, p = -4 is not a solution.</div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(f) 4p - 3 = 13 (p = 0):</b></div>
                     <div class="sol-step">LHS = 4p - 3</div>
-                    <div class="sol-step">LHS = 4(0) - 3 = 0 - 3 = -3</div>
+                    <div class="sol-step">LHS = 4(0) - 3</div>
+                    <div class="sol-step">LHS = 0 - 3</div>
+                    <div class="sol-step">LHS = -3</div>
                     <div class="sol-step">RHS = 13</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span>, p = 0 is not a solution.</div>
@@ -232,16 +265,36 @@ export const c7Math4: ChapterContent = {
                 (i) 5p + 2 = 17 &nbsp; (ii) 3m - 14 = 4</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(i) 5p + 2 = 17:</b></div>
-                    <div class="sol-step">Let p = 1: LHS = 5(1) + 2 = 7 &ne; 17</div>
-                    <div class="sol-step">Let p = 2: LHS = 5(2) + 2 = 12 &ne; 17</div>
-                    <div class="sol-step">Let p = 3: LHS = 5(3) + 2 = 15 + 2 = 17</div>
+                    <div class="sol-step">Let p = 1:</div>
+                    <div class="sol-step">LHS = 5(1) + 2</div>
+                    <div class="sol-step">LHS = 7</div>
+                    <div class="sol-step">LHS &ne; RHS (7 &ne; 17)</div>
+                    <div class="sol-step" style="margin-top: 10px;">Let p = 2:</div>
+                    <div class="sol-step">LHS = 5(2) + 2</div>
+                    <div class="sol-step">LHS = 12</div>
+                    <div class="sol-step">LHS &ne; RHS (12 &ne; 17)</div>
+                    <div class="sol-step" style="margin-top: 10px;">Let p = 3:</div>
+                    <div class="sol-step">LHS = 5(3) + 2</div>
+                    <div class="sol-step">LHS = 15 + 2</div>
+                    <div class="sol-step">LHS = 17</div>
                     <div class="sol-step">Since LHS = RHS for p = 3</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">p = 3</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(ii) 3m - 14 = 4:</b></div>
-                    <div class="sol-step">Let m = 4: LHS = 3(4) - 14 = 12 - 14 = -2 &ne; 4</div>
-                    <div class="sol-step">Let m = 5: LHS = 3(5) - 14 = 15 - 14 = 1 &ne; 4</div>
-                    <div class="sol-step">Let m = 6: LHS = 3(6) - 14 = 18 - 14 = 4</div>
+                    <div class="sol-step">Let m = 4:</div>
+                    <div class="sol-step">LHS = 3(4) - 14</div>
+                    <div class="sol-step">LHS = 12 - 14</div>
+                    <div class="sol-step">LHS = -2</div>
+                    <div class="sol-step">LHS &ne; RHS (-2 &ne; 4)</div>
+                    <div class="sol-step" style="margin-top: 10px;">Let m = 5:</div>
+                    <div class="sol-step">LHS = 3(5) - 14</div>
+                    <div class="sol-step">LHS = 15 - 14</div>
+                    <div class="sol-step">LHS = 1</div>
+                    <div class="sol-step">LHS &ne; RHS (1 &ne; 4)</div>
+                    <div class="sol-step" style="margin-top: 10px;">Let m = 6:</div>
+                    <div class="sol-step">LHS = 3(6) - 14</div>
+                    <div class="sol-step">LHS = 18 - 14</div>
+                    <div class="sol-step">LHS = 4</div>
                     <div class="sol-step">Since LHS = RHS for m = 6</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">m = 6</span></div>
                 </div>
