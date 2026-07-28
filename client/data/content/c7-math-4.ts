@@ -169,30 +169,30 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(ix)</b></div>
-                    <div class="sol-step">Equation: m/3 = 2</div>
+                    <div class="sol-step">Equation: <div class="frac"><span class="num">m</span><span class="den">3</span></div> = 2</div>
                     <div class="sol-step">Value: m = -6</div>
-                    <div class="sol-step">LHS = m/3</div>
-                    <div class="sol-step">LHS = -6/3</div>
+                    <div class="sol-step">LHS = <div class="frac"><span class="num">m</span><span class="den">3</span></div></div>
+                    <div class="sol-step">LHS = -<div class="frac"><span class="num">6</span><span class="den">3</span></div></div>
                     <div class="sol-step">LHS = -2</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(x)</b></div>
-                    <div class="sol-step">Equation: m/3 = 2</div>
+                    <div class="sol-step">Equation: <div class="frac"><span class="num">m</span><span class="den">3</span></div> = 2</div>
                     <div class="sol-step">Value: m = 0</div>
-                    <div class="sol-step">LHS = m/3</div>
-                    <div class="sol-step">LHS = 0/3</div>
+                    <div class="sol-step">LHS = <div class="frac"><span class="num">m</span><span class="den">3</span></div></div>
+                    <div class="sol-step">LHS = <div class="frac"><span class="num">0</span><span class="den">3</span></div></div>
                     <div class="sol-step">LHS = 0</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS &ne; RHS</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">No</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(xi)</b></div>
-                    <div class="sol-step">Equation: m/3 = 2</div>
+                    <div class="sol-step">Equation: <div class="frac"><span class="num">m</span><span class="den">3</span></div> = 2</div>
                     <div class="sol-step">Value: m = 6</div>
-                    <div class="sol-step">LHS = m/3</div>
-                    <div class="sol-step">LHS = 6/3</div>
+                    <div class="sol-step">LHS = <div class="frac"><span class="num">m</span><span class="den">3</span></div></div>
+                    <div class="sol-step">LHS = <div class="frac"><span class="num">6</span><span class="den">3</span></div></div>
                     <div class="sol-step">LHS = 2</div>
                     <div class="sol-step">RHS = 2</div>
                     <div class="sol-step">Since LHS = RHS</div>
@@ -340,8 +340,8 @@ export const c7Math4: ChapterContent = {
 
             <div class="sol-card">
                 <div class="question-header">5. Write the following equations in statement forms:<br/>
-                (i) p + 4 = 15 &nbsp; (ii) m - 7 = 3 &nbsp; (iii) 2m = 7 &nbsp; (iv) m/5 = 3 &nbsp; (v) 3m/5 = 6<br/>
-                (vi) 3p + 4 = 25 &nbsp; (vii) 4p - 2 = 18 &nbsp; (viii) p/2 + 2 = 8</div>
+                (i) p + 4 = 15 &nbsp; (ii) m - 7 = 3 &nbsp; (iii) 2m = 7 &nbsp; (iv) <div class="frac"><span class="num">m</span><span class="den">5</span></div> = 3 &nbsp; (v) <div class="frac"><span class="num">3m</span><span class="den">5</span></div> = 6<br/>
+                (vi) 3p + 4 = 25 &nbsp; (vii) 4p - 2 = 18 &nbsp; (viii) <div class="frac"><span class="num">p</span><span class="den">2</span></div> + 2 = 8</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(i)</b></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">The sum of numbers p and 4 is 15.</span></div>
@@ -472,8 +472,8 @@ export const c7Math4: ChapterContent = {
 
             <div class="sol-card">
                 <div class="question-header">2. Give first the step you will use to separate the variable and then solve the equation:<br/>
-                (a) 3l = 42 &nbsp; (b) b/2 = 6 &nbsp; (c) p/7 = 4 &nbsp; (d) 4x = 25<br/>
-                (e) 8y = 36 &nbsp; (f) z/3 = 5/4 &nbsp; (g) a/5 = 7/15 &nbsp; (h) 20t = -10</div>
+                (a) 3l = 42 &nbsp; (b) <div class="frac"><span class="num">b</span><span class="den">2</span></div> = 6 &nbsp; (c) <div class="frac"><span class="num">p</span><span class="den">7</span></div> = 4 &nbsp; (d) 4x = 25<br/>
+                (e) 8y = 36 &nbsp; (f) <div class="frac"><span class="num">z</span><span class="den">3</span></div> = <div class="frac"><span class="num">5</span><span class="den">4</span></div> &nbsp; (g) <div class="frac"><span class="num">a</span><span class="den">5</span></div> = <div class="frac"><span class="num">7</span><span class="den">15</span></div> &nbsp; (h) 20t = -10</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 3l = 42:</b></div>
                     <div class="sol-step">Step: Divide both sides by 3.</div>
@@ -521,7 +521,7 @@ export const c7Math4: ChapterContent = {
 
             <div class="sol-card">
                 <div class="question-header">3. Give the steps you will use to separate the variable and then solve the equation:<br/>
-                (a) 3n - 2 = 46 &nbsp; (b) 5m + 7 = 17 &nbsp; (c) 20p/3 = 40 &nbsp; (d) 3p/10 = 6</div>
+                (a) 3n - 2 = 46 &nbsp; (b) 5m + 7 = 17 &nbsp; (c) <div class="frac"><span class="num">20p</span><span class="den">3</span></div> = 40 &nbsp; (d) <div class="frac"><span class="num">3p</span><span class="den">10</span></div> = 6</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 3n - 2 = 46:</b></div>
                     <div class="sol-step">Step 1: Add 2 to both sides.</div>
@@ -559,8 +559,8 @@ export const c7Math4: ChapterContent = {
 
             <div class="sol-card">
                 <div class="question-header">4. Solve the following equations:<br/>
-                (a) 10p = 100 &nbsp; (b) 10p + 10 = 100 &nbsp; (c) p/4 = 5 &nbsp; (d) -p/3 = 5<br/>
-                (e) 3p/4 = 6 &nbsp; (f) 3s = -9 &nbsp; (g) 3s + 12 = 0 &nbsp; (h) 3s = 0<br/>
+                (a) 10p = 100 &nbsp; (b) 10p + 10 = 100 &nbsp; (c) <div class="frac"><span class="num">p</span><span class="den">4</span></div> = 5 &nbsp; (d) -<div class="frac"><span class="num">p</span><span class="den">3</span></div> = 5<br/>
+                (e) <div class="frac"><span class="num">3p</span><span class="den">4</span></div> = 6 &nbsp; (f) 3s = -9 &nbsp; (g) 3s + 12 = 0 &nbsp; (h) 3s = 0<br/>
                 (i) 2q = 6 &nbsp; (j) 2q - 6 = 0 &nbsp; (k) 2q + 6 = 0 &nbsp; (l) 2q + 6 = 12</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 10p = 100:</b></div>
@@ -582,7 +582,7 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">-p = 15</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">p = -15</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) 3p/4 = 6:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(e) <div class="frac"><span class="num">3p</span><span class="den">4</span></div> = 6:</b></div>
                     <div class="sol-step">3p = 6 &times; 4</div>
                     <div class="sol-step">3p = 24</div>
                     <div class="sol-step">p = <div class="frac"><span class="num">24</span><span class="den">3</span></div></div>
@@ -641,12 +641,12 @@ export const c7Math4: ChapterContent = {
         <div class="container">
             <div class="sol-card">
                 <div class="question-header">1. Solve the following equations:<br/>
-                (a) 2y + 5/2 = 37/2 &nbsp; (b) 5t + 28 = 10 &nbsp; (c) a/5 + 3 = 2 &nbsp; (d) q/4 + 7 = 5<br/>
-                (e) (5/2)x = -5 &nbsp; (f) (5/2)x = 25/4 &nbsp; (g) 7m + 19/2 = 13 &nbsp; (h) 6z + 10 = -2<br/>
-                (i) (3/2)l = 2/3 &nbsp; (j) (2b/3) - 5 = 3</div>
+                (a) 2y + <div class="frac"><span class="num">5</span><span class="den">2</span></div> = <div class="frac"><span class="num">37</span><span class="den">2</span></div> &nbsp; (b) 5t + 28 = 10 &nbsp; (c) <div class="frac"><span class="num">a</span><span class="den">5</span></div> + 3 = 2 &nbsp; (d) <div class="frac"><span class="num">q</span><span class="den">4</span></div> + 7 = 5<br/>
+                (e) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = -5 &nbsp; (f) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = <div class="frac"><span class="num">25</span><span class="den">4</span></div> &nbsp; (g) 7m + <div class="frac"><span class="num">19</span><span class="den">2</span></div> = 13 &nbsp; (h) 6z + 10 = -2<br/>
+                (i) <div class="frac"><span class="num">3</span><span class="den">2</span></div>l = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &nbsp; (j) <div class="frac"><span class="num">2b</span><span class="den">3</span></div> - 5 = 3</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(a) 2y + 5/2 = 37/2:</b></div>
-                    <div class="sol-step">Transposing 5/2 to RHS:</div>
+                    <div class="sol-step"><b>(a) 2y + <div class="frac"><span class="num">5</span><span class="den">2</span></div> = <div class="frac"><span class="num">37</span><span class="den">2</span></div>:</b></div>
+                    <div class="sol-step">Transposing <div class="frac"><span class="num">5</span><span class="den">2</span></div> to RHS:</div>
                     <div class="sol-step">2y = <div class="frac"><span class="num">37</span><span class="den">2</span></div> - <div class="frac"><span class="num">5</span><span class="den">2</span></div></div>
                     <div class="sol-step">2y = <div class="frac"><span class="num">32</span><span class="den">2</span></div></div>
                     <div class="sol-step">2y = 16</div>
@@ -661,21 +661,21 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">Divide both sides by 5:</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">t = -<div class="frac"><span class="num">18</span><span class="den">5</span></div></span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) a/5 + 3 = 2:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(c) <div class="frac"><span class="num">a</span><span class="den">5</span></div> + 3 = 2:</b></div>
                     <div class="sol-step">Transposing 3 to RHS:</div>
-                    <div class="sol-step">a/5 = 2 - 3</div>
-                    <div class="sol-step">a/5 = -1</div>
+                    <div class="sol-step"><div class="frac"><span class="num">a</span><span class="den">5</span></div> = 2 - 3</div>
+                    <div class="sol-step"><div class="frac"><span class="num">a</span><span class="den">5</span></div> = -1</div>
                     <div class="sol-step">Multiply both sides by 5:</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">a = -5</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) q/4 + 7 = 5:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(d) <div class="frac"><span class="num">q</span><span class="den">4</span></div> + 7 = 5:</b></div>
                     <div class="sol-step">Transposing 7 to RHS:</div>
-                    <div class="sol-step">q/4 = 5 - 7</div>
-                    <div class="sol-step">q/4 = -2</div>
+                    <div class="sol-step"><div class="frac"><span class="num">q</span><span class="den">4</span></div> = 5 - 7</div>
+                    <div class="sol-step"><div class="frac"><span class="num">q</span><span class="den">4</span></div> = -2</div>
                     <div class="sol-step">Multiply both sides by 4:</div>
                     <div class="sol-step">Answer: <span class="ans-highlight">q = -8</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) (5/2)x = -5:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(e) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = -5:</b></div>
                     <div class="sol-step">Multiply both sides by 2:</div>
                     <div class="sol-step">5x = -5 &times; 2</div>
                     <div class="sol-step">5x = -10</div>
@@ -683,7 +683,7 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">x = <div class="frac"><span class="num">-10</span><span class="den">5</span></div></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">x = -2</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(f) (5/2)x = 25/4:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(f) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = <div class="frac"><span class="num">25</span><span class="den">4</span></div>:</b></div>
                     <div class="sol-step">Multiply both sides by 2:</div>
                     <div class="sol-step">5x = <div class="frac"><span class="num">25</span><span class="den">4</span></div> &times; 2</div>
                     <div class="sol-step">5x = <div class="frac"><span class="num">25</span><span class="den">2</span></div></div>
@@ -692,8 +692,8 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">x = <div class="frac"><span class="num">5</span><span class="den">2</span></div></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">x = 2.5</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(g) 7m + 19/2 = 13:</b></div>
-                    <div class="sol-step">Transposing 19/2 to RHS:</div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(g) 7m + <div class="frac"><span class="num">19</span><span class="den">2</span></div> = 13:</b></div>
+                    <div class="sol-step">Transposing <div class="frac"><span class="num">19</span><span class="den">2</span></div> to RHS:</div>
                     <div class="sol-step">7m = 13 - <div class="frac"><span class="num">19</span><span class="den">2</span></div></div>
                     <div class="sol-step">7m = <div class="frac"><span class="num">26 - 19</span><span class="den">2</span></div></div>
                     <div class="sol-step">7m = <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
@@ -706,10 +706,10 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">6z = -2 - 10</div>
                     <div class="sol-step">6z = -12</div>
                     <div class="sol-step">Divide both sides by 6:</div>
-                    <div class="sol-step">z = -12 / 6</div>
+                    <div class="sol-step">z = -<div class="frac"><span class="num">12</span><span class="den">6</span></div></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">z = -2</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(i) (3/2)l = 2/3:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(i) <div class="frac"><span class="num">3</span><span class="den">2</span></div>l = <div class="frac"><span class="num">2</span><span class="den">3</span></div>:</b></div>
                     <div class="sol-step">Multiply both sides by 2:</div>
                     <div class="sol-step">3l = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 2</div>
                     <div class="sol-step">3l = <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
@@ -717,15 +717,15 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">l = <div class="frac"><span class="num">4</span><span class="den">3 &times; 3</span></div></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">l = <div class="frac"><span class="num">4</span><span class="den">9</span></div></span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(j) (2b/3) - 5 = 3:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(j) <div class="frac"><span class="num">2b</span><span class="den">3</span></div> - 5 = 3:</b></div>
                     <div class="sol-step">Transposing -5 to RHS:</div>
-                    <div class="sol-step">2b/3 = 3 + 5</div>
-                    <div class="sol-step">2b/3 = 8</div>
+                    <div class="sol-step"><div class="frac"><span class="num">2b</span><span class="den">3</span></div> = 3 + 5</div>
+                    <div class="sol-step"><div class="frac"><span class="num">2b</span><span class="den">3</span></div> = 8</div>
                     <div class="sol-step">Multiply both sides by 3:</div>
                     <div class="sol-step">2b = 8 &times; 3</div>
                     <div class="sol-step">2b = 24</div>
                     <div class="sol-step">Divide both sides by 2:</div>
-                    <div class="sol-step">b = 24 / 2</div>
+                    <div class="sol-step">b = <div class="frac"><span class="num">24</span><span class="den">2</span></div></div>
                     <div class="sol-step">Answer: <span class="ans-highlight">b = 12</span></div>
                 </div>
             </div>
@@ -875,7 +875,7 @@ export const c7Math4: ChapterContent = {
                 (d) When I subtracted 11 from twice a number, the result was 15.<br/>
                 (e) Munna subtracts thrice the number of notebooks he has from 50, and he finds the result to be 8.<br/>
                 (f) Ibenhal thinks of a number. If she adds 19 to it and divides the sum by 5, she will get 8.<br/>
-                (g) Anwar thinks of a number. If he takes away 7 from 5/2 of the number, the result is 23.</div>
+                (g) Anwar thinks of a number. If he takes away 7 from <div class="frac"><span class="num">5</span><span class="den">2</span></div> of the number, the result is 23.</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) Add 4 to eight times a number is 60:</b></div>
                     <div class="sol-step">Let the number be x.</div>
@@ -927,7 +927,7 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">x = 40 - 19</div>
                     <div class="sol-step">Answer: The number is <span class="ans-highlight">21</span>.</div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(g) Anwar takes away 7 from 5/2 of number is 23:</b></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b>(g) Anwar takes away 7 from <div class="frac"><span class="num">5</span><span class="den">2</span></div> of number is 23:</b></div>
                     <div class="sol-step">Let the number be x.</div>
                     <div class="sol-step">Equation: <div class="frac"><span class="num">5x</span><span class="den">2</span></div> - 7 = 23</div>
                     <div class="sol-step"><div class="frac"><span class="num">5x</span><span class="den">2</span></div> = 23 + 7</div>
