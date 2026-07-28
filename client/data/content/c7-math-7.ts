@@ -73,6 +73,7 @@ export const c7Math7: ChapterContent = {
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
             .frac .den { display: block; padding: 0 2px; }
             .step-label { color: #FFB74D; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FFA726; }
         </style>
         <div class="container">
             <div class="sol-card">
@@ -138,6 +139,7 @@ export const c7Math7: ChapterContent = {
             .frac .den { display: block; padding: 0 2px; }
             .diagram-container { background: #1a1a2e; padding: 20px; border-radius: 15px; margin: 15px 0; border: 1px solid rgba(255, 167, 38, 0.3); text-align: center; }
             .step-label { color: #FFB74D; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FFA726; }
         </style>
         <div class="container">
             <div class="sol-card">
@@ -349,6 +351,7 @@ export const c7Math7: ChapterContent = {
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
             .frac .den { display: block; padding: 0 2px; }
             .step-label { color: #FFB74D; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FFA726; }
         </style>
         <div class="container">
             <div class="sol-card">
