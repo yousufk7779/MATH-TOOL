@@ -1221,6 +1221,8 @@ const MathWebView = memo(
         -webkit-touch-callout: none;
       }
       p, img, div:not(.table-container):not(.table-responsive):not(.prop-table), h1, h2, h3, h4, h5, h6, b, strong, span {
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
         max-width: 100% !important;
       }
       h1, h2, h3, h4, h5, h6, b, strong, span, div, p { font-weight: normal !important; }

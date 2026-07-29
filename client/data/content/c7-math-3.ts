@@ -71,7 +71,7 @@ export const c7Math3: ChapterContent = {
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #AB47BC; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
             .question-header { padding: 15px; color: #AB47BC; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
             .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
             .ans-highlight { color: #CE93D8; font-weight: bold; }
             .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
@@ -309,7 +309,7 @@ export const c7Math3: ChapterContent = {
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(iv) Mean height of the girls:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Sum of heights = 135+150+139+128+151+132+146+149+143+141 = 1414</div>
+                    <div class="sol-step">Sum of heights = 135 + 150 + 139 + 128 + 151 + 132 + 146 + 149 + 143 + 141 = 1414</div>
                     <div class="sol-step">Total girls = 10</div>
                     <div class="sol-step">Mean height = <div class="frac"><span class="num">1414</span><span class="den">10</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">Mean height = 141.4 cm</span></div>
@@ -329,7 +329,7 @@ export const c7Math3: ChapterContent = {
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #AB47BC; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
             .question-header { padding: 15px; color: #AB47BC; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
             .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
             .ans-highlight { color: #CE93D8; font-weight: bold; }
             .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
@@ -375,7 +375,7 @@ export const c7Math3: ChapterContent = {
                     <div class="sol-step">6, 8, 10, 10, 15, 15, 15, 50, 80, 100, 120</div>
                     
                     <div class="sol-step" style="margin-top: 15px;"><b>Mean:</b></div>
-                    <div class="sol-step">Sum of runs = 6+8+10+10+15+15+15+50+80+100+120 = 429</div>
+                    <div class="sol-step">Sum of runs = 6 + 8 + 10 + 10 + 15 + 15 + 15 + 50 + 80 + 100 + 120 = 429</div>
                     <div class="sol-step">Mean = <div class="frac"><span class="num">429</span><span class="den">11</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">Mean = 39</span></div>
                     
@@ -465,7 +465,7 @@ export const c7Math3: ChapterContent = {
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #AB47BC; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
             .question-header { padding: 15px; color: #AB47BC; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
             .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
             .ans-highlight { color: #CE93D8; font-weight: bold; }
             .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
             .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
