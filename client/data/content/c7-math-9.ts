@@ -83,7 +83,7 @@ export const c7Math9: ChapterContent = {
                     <div class="sol-step"><b>(a) Base = 7 cm, Height = 4 cm</b></div>
                     <div class="diagram-container">
                         <svg viewBox="0 0 200 100" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 30 75 L 160 75 L 185 25 L 55 25 Z" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <path d="M 30 75 L 160 75 L 185 25 L 55 25 Z" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <line x1="55" y1="25" x2="55" y2="75" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <rect x="55" y="65" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
                             <text x="95" y="92" fill="#fff" font-size="12" text-anchor="middle">7 cm</text>
@@ -98,7 +98,7 @@ export const c7Math9: ChapterContent = {
                     <div class="sol-step" style="margin-top: 20px;"><b>(b) Base = 5 cm, Height = 3 cm</b></div>
                     <div class="diagram-container">
                         <svg viewBox="0 0 200 100" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 75 L 140 75 L 165 25 L 65 25 Z" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <path d="M 40 75 L 140 75 L 165 25 L 65 25 Z" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <line x1="65" y1="25" x2="65" y2="75" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <rect x="65" y="65" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
                             <text x="90" y="92" fill="#fff" font-size="12" text-anchor="middle">5 cm</text>
@@ -112,26 +112,15 @@ export const c7Math9: ChapterContent = {
 
                     <div class="sol-step" style="margin-top: 20px;"><b>(c) Base = 2.5 cm, Height = 3.5 cm</b></div>
                     <div class="diagram-container">
-                        <svg viewBox="0 0 200 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 50 85 L 120 85 L 150 15 L 80 15 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="80" y1="15" x2="80" y2="85" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <rect x="80" y="75" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
-                            <text x="85" y="102" fill="#fff" font-size="12" text-anchor="middle">2.5 cm</text>
-                            <text x="60" y="53" fill="#fff" font-size="12" text-anchor="middle">3.5 cm</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = Base &times; Height</div>
-                    <div class="sol-step">= 2.5 &times; 3.5</div>
-                    <div class="sol-step"><span class="ans-highlight">Area = 8.75 cm²</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(d) Base = 5 cm, Height = 4.8 cm</b></div>
-                    <div class="diagram-container">
-                        <svg viewBox="0 0 200 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 50 25 L 170 25 L 130 90 L 10 90 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="130" y1="90" x2="160" y2="35" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <text x="60" y="105" fill="#fff" font-size="12" text-anchor="middle">5 cm</text>
-                            <text x="155" y="70" fill="#fff" font-size="12" text-anchor="middle">4.8 cm</text>
+                        <svg viewBox="0 0 250 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            <!-- Parallelogram leaning left -->
+                            <path d="M 30 25 L 160 25 L 195 110 L 65 110 Z" fill="none" stroke="#00A8E8" stroke-width="2.5" />
+                            <!-- Perpendicular dashed altitude from bottom-left vertex to slanted right side -->
+                            <line x1="65" y1="110" x2="178" y2="68" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Right angle marker at foot of altitude on right side -->
+                            <path d="M 169 71 L 173 80 L 182 76" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <text x="188" y="60" fill="#fff" font-size="13" font-weight="bold">5 cm</text>
+                            <text x="115" y="80" fill="#fff" font-size="13" font-weight="bold">4.8 cm</text>
                         </svg>
                     </div>
                     <div class="sol-step">Solution:-</div>
@@ -141,11 +130,15 @@ export const c7Math9: ChapterContent = {
 
                     <div class="sol-step" style="margin-top: 20px;"><b>(e) Base = 2 cm, Height = 4.4 cm</b></div>
                     <div class="diagram-container">
-                        <svg viewBox="0 0 200 120" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 50 95 L 140 95 L 120 20 L 30 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="120" y1="20" x2="65" y2="38" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <text x="20" y="60" fill="#fff" font-size="12" text-anchor="middle">2 cm</text>
-                            <text x="95" y="32" fill="#fff" font-size="12" text-anchor="middle">4.4 cm</text>
+                        <svg viewBox="0 0 250 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            <!-- Parallelogram leaning left -->
+                            <path d="M 30 25 L 160 25 L 195 110 L 65 110 Z" fill="none" stroke="#00A8E8" stroke-width="2.5" />
+                            <!-- Perpendicular dashed altitude from bottom-left vertex to slanted right side -->
+                            <line x1="65" y1="110" x2="178" y2="68" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Right angle marker at foot of altitude on right side -->
+                            <path d="M 169 71 L 173 80 L 182 76" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <text x="188" y="60" fill="#fff" font-size="13" font-weight="bold">2 cm</text>
+                            <text x="115" y="80" fill="#fff" font-size="13" font-weight="bold">4.4 cm</text>
                         </svg>
                     </div>
                     <div class="sol-step">Solution:-</div>
@@ -161,143 +154,24 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) Base = 4 cm, Height = 3 cm</b></div>
                     <div class="diagram-container">
-                        <svg viewBox="0 0 200 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 85 L 160 85 L 70 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="70" y1="20" x2="70" y2="85" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <rect x="70" y="75" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
-                            <text x="100" y="102" fill="#fff" font-size="12" text-anchor="middle">4 cm</text>
-                            <text x="82" y="55" fill="#fff" font-size="12" text-anchor="middle">3 cm</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area of triangle = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">= <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 4 &times; 3</div>
-                    <div class="sol-step">= 2 &times; 3</div>
-                    <div class="sol-step"><span class="ans-highlight">Area = 6 cm²</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(b) Base = 5 cm, Height = 3.2 cm</b></div>
-                    <div class="diagram-container">
-                        <svg viewBox="0 0 200 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 30 85 L 170 85 L 80 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="80" y1="20" x2="80" y2="85" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <rect x="80" y="75" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
-                            <text x="100" y="102" fill="#fff" font-size="12" text-anchor="middle">5 cm</text>
-                            <text x="95" y="55" fill="#fff" font-size="12" text-anchor="middle">3.2 cm</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">= <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 5 &times; 3.2</div>
-                    <div class="sol-step">= 5 &times; 1.6</div>
-                    <div class="sol-step"><span class="ans-highlight">Area = 8 cm²</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(c) Base = 3 cm, Height = 4 cm</b></div>
-                    <div class="diagram-container">
-                        <svg viewBox="0 0 180 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 85 L 140 85 L 40 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <rect x="40" y="75" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
-                            <text x="90" y="102" fill="#fff" font-size="12" text-anchor="middle">3 cm</text>
-                            <text x="25" y="55" fill="#fff" font-size="12" text-anchor="middle">4 cm</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">= <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 3 &times; 4</div>
-                    <div class="sol-step">= 3 &times; 2</div>
-                    <div class="sol-step"><span class="ans-highlight">Area = 6 cm²</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(d) Base = 3 cm, Height = 2 cm</b></div>
-                    <div class="diagram-container">
-                        <svg viewBox="0 0 200 110" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 80 85 L 160 85 L 40 35 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="40" y1="35" x2="40" y2="85" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <line x1="40" y1="85" x2="80" y2="85" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <rect x="40" y="75" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
-                            <text x="120" y="102" fill="#fff" font-size="12" text-anchor="middle">3 cm</text>
-                            <text x="25" y="65" fill="#fff" font-size="12" text-anchor="middle">2 cm</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">= <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 3 &times; 2</div>
-                    <div class="sol-step"><span class="ans-highlight">Area = 3 cm²</span></div>
-                </div>
-            </div>
-
-            <!-- Question 3 -->
-            <div class="sol-card">
-                <div class="question-header">3. Find the missing values for Parallelograms:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) Base = 20 cm, Area = 246 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = Base &times; Height</div>
-                    <div class="sol-step">246 = 20 &times; Height</div>
-                    <div class="sol-step">Height = <div class="frac"><span class="num">246</span><span class="den">20</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Height = 12.3 cm</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(b) Height = 15 cm, Area = 154.5 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = Base &times; Height</div>
-                    <div class="sol-step">154.5 = Base &times; 15</div>
-                    <div class="sol-step">Base = <div class="frac"><span class="num">154.5</span><span class="den">15</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Base = 10.3 cm</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(c) Height = 8.4 cm, Area = 48.72 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = Base &times; Height</div>
-                    <div class="sol-step">48.72 = Base &times; 8.4</div>
-                    <div class="sol-step">Base = <div class="frac"><span class="num">48.72</span><span class="den">8.4</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Base = 5.8 cm</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(d) Base = 15.6 cm, Area = 16.38 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = Base &times; Height</div>
-                    <div class="sol-step">16.38 = 15.6 &times; Height</div>
-                    <div class="sol-step">Height = <div class="frac"><span class="num">16.38</span><span class="den">15.6</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Height = 1.05 cm</span></div>
-                </div>
-            </div>
-
-            <!-- Question 4 -->
-            <div class="sol-card">
-                <div class="question-header">4. Find the missing values for Triangles:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) Base = 15 cm, Area = 87 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">87 = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 15 &times; Height</div>
-                    <div class="sol-step">Height = <div class="frac"><span class="num">87 &times; 2</span><span class="den">15</span></div> = <div class="frac"><span class="num">174</span><span class="den">15</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Height = 11.6 cm</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(b) Height = 31.4 mm, Area = 1256 mm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">1256 = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; 31.4</div>
-                    <div class="sol-step">Base = <div class="frac"><span class="num">1256 &times; 2</span><span class="den">31.4</span></div> = <div class="frac"><span class="num">2512</span><span class="den">31.4</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Base = 80 mm</span></div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b>(c) Base = 22 cm, Area = 170.5 cm²</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Area = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; Base &times; Height</div>
-                    <div class="sol-step">170.5 = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 22 &times; Height</div>
-                    <div class="sol-step">170.5 = 11 &times; Height</div>
-                    <div class="sol-step">Height = <div class="frac"><span class="num">170.5</span><span class="den">11</span></div></div>
-                    <div class="sol-step"><span class="ans-highlight">Height = 15.5 cm</span></div>
-                </div>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="sol-card">
-                <div class="question-header">5. PQRS is a parallelogram. QM is the height from Q to SR and QN is the height from Q to PS. If SR = 12 cm and QM = 7.6 cm. Find:<br/>(a) the area of the parallelogram PQRS<br/>(b) QN, if PS = 8 cm.</div>
-                <div class="sol-body">
-                    <div class="diagram-container">
-                        <svg viewBox="0 0 240 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 110 L 190 110 L 160 20 L 10 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="160" y1="20" x2="160" y2="110" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <line x1="160" y1="20" x2="22" y2="52" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <text x="30" y="128" fill="#fff" font-size="12">S</text><text x="195" y="128" fill="#fff" font-size="12">R</text>
-                            <text x="165" y="15" fill="#fff" font-size="12">Q</text><text x="5" y="15" fill="#fff" font-size="12">P</text>
-                            <text x="165" y="70" fill="#fff" font-size="11">QM</text><text x="85" y="32" fill="#fff" font-size="11">QN</text>
+                        <svg viewBox="0 0 260 150" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            <!-- Parallelogram PQRS -->
+                            <path d="M 20 25 L 170 25 L 225 120 L 75 120 Z" fill="none" stroke="#00A8E8" stroke-width="2.5" />
+                            <!-- Altitude QM perp to SR -->
+                            <line x1="170" y1="25" x2="170" y2="120" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Altitude QN perp to PS -->
+                            <line x1="170" y1="25" x2="38" y2="56" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Right angle markers -->
+                            <rect x="156" y="106" width="14" height="14" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <path d="M 31 60 L 37 70 L 47 64" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <!-- Labels -->
+                            <text x="10" y="20" fill="#fff" font-size="14" font-weight="bold">P</text>
+                            <text x="175" y="20" fill="#fff" font-size="14" font-weight="bold">Q</text>
+                            <text x="233" y="132" fill="#fff" font-size="14" font-weight="bold">R</text>
+                            <text x="60" y="132" fill="#fff" font-size="14" font-weight="bold">S</text>
+                            <text x="172" y="134" fill="#fff" font-size="13" font-weight="bold">M</text>
+                            <text x="22" y="55" fill="#fff" font-size="13" font-weight="bold">N</text>
+                            <text x="180" y="75" fill="#fff" font-size="13" font-weight="bold">7.6 cm</text>
                         </svg>
                     </div>
                     <div class="sol-step"><b>(a) Find area of parallelogram PQRS:</b></div>
@@ -321,13 +195,23 @@ export const c7Math9: ChapterContent = {
                 <div class="question-header">6. DL and BM are the heights on sides AB and AD respectively of parallelogram ABCD. If the area of the parallelogram is 1470 cm², AB = 35 cm and AD = 49 cm, find the length of BM and DL.</div>
                 <div class="sol-body">
                     <div class="diagram-container">
-                        <svg viewBox="0 0 240 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 110 L 180 110 L 205 20 L 65 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <line x1="65" y1="20" x2="65" y2="110" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <line x1="180" y1="110" x2="52" y2="73" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
-                            <text x="30" y="128" fill="#fff" font-size="12">A</text><text x="185" y="128" fill="#fff" font-size="12">B</text>
-                            <text x="210" y="15" fill="#fff" font-size="12">C</text><text x="55" y="15" fill="#fff" font-size="12">D</text>
-                            <text x="70" y="70" fill="#fff" font-size="11">DL</text><text x="110" y="85" fill="#fff" font-size="11">BM</text>
+                        <svg viewBox="0 0 260 150" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            <!-- Parallelogram ABCD -->
+                            <path d="M 75 25 L 225 25 L 170 120 L 20 120 Z" fill="none" stroke="#00A8E8" stroke-width="2.5" />
+                            <!-- Altitude DL perp to AB -->
+                            <line x1="75" y1="25" x2="75" y2="120" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Altitude BM perp to AD -->
+                            <line x1="170" y1="120" x2="43" y2="80" stroke="#00A8E8" stroke-dasharray="4" stroke-width="2" />
+                            <!-- Right angle markers -->
+                            <rect x="75" y="106" width="14" height="14" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <path d="M 37 72 L 47 64 L 54 74" fill="none" stroke="#00A8E8" stroke-width="1.5" />
+                            <!-- Labels -->
+                            <text x="8" y="132" fill="#fff" font-size="14" font-weight="bold">A</text>
+                            <text x="178" y="132" fill="#fff" font-size="14" font-weight="bold">B</text>
+                            <text x="233" y="25" fill="#fff" font-size="14" font-weight="bold">C</text>
+                            <text x="65" y="20" fill="#fff" font-size="14" font-weight="bold">D</text>
+                            <text x="72" y="136" fill="#fff" font-size="13" font-weight="bold">L</text>
+                            <text x="28" y="85" fill="#fff" font-size="13" font-weight="bold">M</text>
                         </svg>
                     </div>
                     <div class="sol-step">Solution:-</div>
@@ -349,7 +233,7 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 220 130" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 60 95 L 180 95 L 60 30 Z" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <path d="M 60 95 L 180 95 L 60 30 Z" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <rect x="60" y="85" width="10" height="10" fill="none" stroke="#fff" stroke-width="1" />
                             <line x1="60" y1="95" x2="105" y2="58" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <text x="48" y="108" fill="#fff" font-size="12">A</text><text x="185" y="108" fill="#fff" font-size="12">C</text>
@@ -375,7 +259,7 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 220 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 40 110 L 180 110 L 110 20 Z" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <path d="M 40 110 L 180 110 L 110 20 Z" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <line x1="110" y1="20" x2="110" y2="110" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <line x1="180" y1="110" x2="90" y2="45" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <text x="105" y="15" fill="#fff" font-size="12">A</text>
@@ -506,10 +390,10 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 140 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <circle cx="70" cy="70" r="55" fill="#D81B60" fill-opacity="0.2" stroke="#D81B60" stroke-width="2" />
+                            <circle cx="70" cy="70" r="55" fill="#D81B60" fill-opacity="0.2" stroke="#00A8E8" stroke-width="2" />
                             <circle cx="70" cy="70" r="40" fill="#121212" stroke="#fff" stroke-dasharray="4" stroke-width="1.5" />
                             <line x1="70" y1="70" x2="110" y2="70" stroke="#fff" stroke-width="1.5" />
-                            <line x1="70" y1="70" x2="70" y2="15" stroke="#D81B60" stroke-width="1.5" />
+                            <line x1="70" y1="70" x2="70" y2="15" stroke="#00A8E8" stroke-width="1.5" />
                             <text x="88" y="65" fill="#fff" font-size="11">3 cm</text>
                             <text x="75" y="38" fill="#D81B60" font-size="11">4 cm</text>
                         </svg>
@@ -545,7 +429,7 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 160 100" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <path d="M 15 65 A 65 65 0 0 1 145 65 L 15 65" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <path d="M 15 65 A 65 65 0 0 1 145 65 L 15 65" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <text x="80" y="85" fill="#fff" font-size="12" text-anchor="middle">10 cm</text>
                         </svg>
                     </div>
@@ -600,7 +484,7 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 140 140" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <circle cx="70" cy="70" r="60" fill="none" stroke="#D81B60" stroke-width="2" />
+                            <circle cx="70" cy="70" r="60" fill="none" stroke="#00A8E8" stroke-width="2" />
                             <circle cx="50" cy="55" r="12" fill="#121212" stroke="#fff" stroke-width="1.5" />
                             <circle cx="90" cy="55" r="12" fill="#121212" stroke="#fff" stroke-width="1.5" />
                             <rect x="55" y="85" width="30" height="15" fill="#121212" stroke="#fff" stroke-width="1.5" />
@@ -682,8 +566,8 @@ export const c7Math9: ChapterContent = {
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg viewBox="0 0 160 160" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
-                            <circle cx="80" cy="80" r="65" fill="none" stroke="#D81B60" stroke-width="2" />
-                            <circle cx="80" cy="80" r="35" fill="none" stroke="#D81B60" stroke-dasharray="4" stroke-width="1.5" />
+                            <circle cx="80" cy="80" r="65" fill="none" stroke="#00A8E8" stroke-width="2" />
+                            <circle cx="80" cy="80" r="35" fill="none" stroke="#00A8E8" stroke-dasharray="4" stroke-width="1.5" />
                             <line x1="80" y1="80" x2="145" y2="80" stroke="#fff" stroke-width="1.5" />
                             <text x="105" y="73" fill="#fff" font-size="11">19 m</text>
                             <text x="80" y="100" fill="#fff" font-size="11" text-anchor="middle">Inner r = 9 m</text>
