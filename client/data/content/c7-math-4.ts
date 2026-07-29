@@ -70,7 +70,8 @@ export const c7Math4: ChapterContent = {
             <div class="sol-card">
                 <div class="question-header">1. Complete the last column of the table.</div>
                 <div class="sol-body">
-                    <table class="data-table">
+                    <div class="table-responsive">
+<table class="data-table">
                         <tr><th>S. No.</th><th>Equation</th><th>Value</th><th>Satisfied (Yes/No)</th></tr>
                         <tr><td>(i)</td><td>x + 3 = 0</td><td>x = 3</td><td><span class="ans-highlight">No</span></td></tr>
                         <tr><td>(ii)</td><td>x + 3 = 0</td><td>x = 0</td><td><span class="ans-highlight">No</span></td></tr>
@@ -84,6 +85,7 @@ export const c7Math4: ChapterContent = {
                         <tr><td>(x)</td><td><div class="frac"><span class="num">m</span><span class="den">3</span></div> = 2</td><td>m = 0</td><td><span class="ans-highlight">No</span></td></tr>
                         <tr><td>(xi)</td><td><div class="frac"><span class="num">m</span><span class="den">3</span></div> = 2</td><td>m = 6</td><td><span class="ans-highlight">Yes</span></td></tr>
                     </table>
+</div>
                     
                     <div class="sol-step" style="margin-top: 15px;"><b>Detailed Step-by-step Solutions:</b></div>
                     
