@@ -644,401 +644,227 @@ export const c7Math4: ChapterContent = {
             .sol-body b, .subpart-title { color: #2196F3; }
         </style>
         <div class="container">
-            <div class="sol-card">
-                <div class="question-header">1. Solve the following equations:<br/>
-                (a) 2y + <div class="frac"><span class="num">5</span><span class="den">2</span></div> = <div class="frac"><span class="num">37</span><span class="den">2</span></div> &nbsp; (b) 5t + 28 = 10 &nbsp; (c) <div class="frac"><span class="num">a</span><span class="den">5</span></div> + 3 = 2 &nbsp; (d) <div class="frac"><span class="num">q</span><span class="den">4</span></div> + 7 = 5<br/>
-                (e) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = -5 &nbsp; (f) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = <div class="frac"><span class="num">25</span><span class="den">4</span></div> &nbsp; (g) 7m + <div class="frac"><span class="num">19</span><span class="den">2</span></div> = 13 &nbsp; (h) 6z + 10 = -2<br/>
-                (i) <div class="frac"><span class="num">3</span><span class="den">2</span></div>l = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &nbsp; (j) <div class="frac"><span class="num">2b</span><span class="den">3</span></div> - 5 = 3</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) 2y + <div class="frac"><span class="num">5</span><span class="den">2</span></div> = <div class="frac"><span class="num">37</span><span class="den">2</span></div>:</b></div>
-                    <div class="sol-step">Transposing <div class="frac"><span class="num">5</span><span class="den">2</span></div> to RHS:</div>
-                    <div class="sol-step">2y = <div class="frac"><span class="num">37</span><span class="den">2</span></div> - <div class="frac"><span class="num">5</span><span class="den">2</span></div></div>
-                    <div class="sol-step">2y = <div class="frac"><span class="num">32</span><span class="den">2</span></div></div>
-                    <div class="sol-step">2y = 16</div>
-                    <div class="sol-step">Divide both sides by 2:</div>
-                    <div class="sol-step">y = <div class="frac"><span class="num">16</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">y = 8</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) 5t + 28 = 10:</b></div>
-                    <div class="sol-step">Transposing 28 to RHS:</div>
-                    <div class="sol-step">5t = 10 - 28</div>
-                    <div class="sol-step">5t = -18</div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">t = -<div class="frac"><span class="num">18</span><span class="den">5</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) <div class="frac"><span class="num">a</span><span class="den">5</span></div> + 3 = 2:</b></div>
-                    <div class="sol-step">Transposing 3 to RHS:</div>
-                    <div class="sol-step"><div class="frac"><span class="num">a</span><span class="den">5</span></div> = 2 - 3</div>
-                    <div class="sol-step"><div class="frac"><span class="num">a</span><span class="den">5</span></div> = -1</div>
-                    <div class="sol-step">Multiply both sides by 5:</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">a = -5</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) <div class="frac"><span class="num">q</span><span class="den">4</span></div> + 7 = 5:</b></div>
-                    <div class="sol-step">Transposing 7 to RHS:</div>
-                    <div class="sol-step"><div class="frac"><span class="num">q</span><span class="den">4</span></div> = 5 - 7</div>
-                    <div class="sol-step"><div class="frac"><span class="num">q</span><span class="den">4</span></div> = -2</div>
-                    <div class="sol-step">Multiply both sides by 4:</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">q = -8</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = -5:</b></div>
-                    <div class="sol-step">Multiply both sides by 2:</div>
-                    <div class="sol-step">5x = -5 &times; 2</div>
-                    <div class="sol-step">5x = -10</div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">-10</span><span class="den">5</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">x = -2</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(f) <div class="frac"><span class="num">5</span><span class="den">2</span></div>x = <div class="frac"><span class="num">25</span><span class="den">4</span></div>:</b></div>
-                    <div class="sol-step">Multiply both sides by 2:</div>
-                    <div class="sol-step">5x = <div class="frac"><span class="num">25</span><span class="den">4</span></div> &times; 2</div>
-                    <div class="sol-step">5x = <div class="frac"><span class="num">25</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">25</span><span class="den">2 &times; 5</span></div></div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">5</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">x = 2.5</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(g) 7m + <div class="frac"><span class="num">19</span><span class="den">2</span></div> = 13:</b></div>
-                    <div class="sol-step">Transposing <div class="frac"><span class="num">19</span><span class="den">2</span></div> to RHS:</div>
-                    <div class="sol-step">7m = 13 - <div class="frac"><span class="num">19</span><span class="den">2</span></div></div>
-                    <div class="sol-step">7m = <div class="frac"><span class="num">26 - 19</span><span class="den">2</span></div></div>
-                    <div class="sol-step">7m = <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Divide both sides by 7:</div>
-                    <div class="sol-step">m = <div class="frac"><span class="num">7</span><span class="den">2 &times; 7</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">m = <div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(h) 6z + 10 = -2:</b></div>
-                    <div class="sol-step">Transposing 10 to RHS:</div>
-                    <div class="sol-step">6z = -2 - 10</div>
-                    <div class="sol-step">6z = -12</div>
-                    <div class="sol-step">Divide both sides by 6:</div>
-                    <div class="sol-step">z = -<div class="frac"><span class="num">12</span><span class="den">6</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">z = -2</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(i) <div class="frac"><span class="num">3</span><span class="den">2</span></div>l = <div class="frac"><span class="num">2</span><span class="den">3</span></div>:</b></div>
-                    <div class="sol-step">Multiply both sides by 2:</div>
-                    <div class="sol-step">3l = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 2</div>
-                    <div class="sol-step">3l = <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Divide both sides by 3:</div>
-                    <div class="sol-step">l = <div class="frac"><span class="num">4</span><span class="den">3 &times; 3</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">l = <div class="frac"><span class="num">4</span><span class="den">9</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(j) <div class="frac"><span class="num">2b</span><span class="den">3</span></div> - 5 = 3:</b></div>
-                    <div class="sol-step">Transposing -5 to RHS:</div>
-                    <div class="sol-step"><div class="frac"><span class="num">2b</span><span class="den">3</span></div> = 3 + 5</div>
-                    <div class="sol-step"><div class="frac"><span class="num">2b</span><span class="den">3</span></div> = 8</div>
-                    <div class="sol-step">Multiply both sides by 3:</div>
-                    <div class="sol-step">2b = 8 &times; 3</div>
-                    <div class="sol-step">2b = 24</div>
-                    <div class="sol-step">Divide both sides by 2:</div>
-                    <div class="sol-step">b = <div class="frac"><span class="num">24</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">b = 12</span></div>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <div class="question-header">2. Solve the following equations:<br/>
-                (a) 2(x + 4) = 12 &nbsp; (b) 3(n - 5) = 21 &nbsp; (c) 3(n - 5) = -21 &nbsp; (d) -4(2 + x) = 8 &nbsp; (e) 4(2 - x) = 8</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) 2(x + 4) = 12:</b></div>
-                    <div class="sol-step">Divide both sides by 2:</div>
-                    <div class="sol-step">x + 4 = 6</div>
-                    <div class="sol-step">Transposing 4 to RHS:</div>
-                    <div class="sol-step">x = 6 - 4</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">x = 2</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) 3(n - 5) = 21:</b></div>
-                    <div class="sol-step">Divide both sides by 3:</div>
-                    <div class="sol-step">n - 5 = 7</div>
-                    <div class="sol-step">Transposing -5 to RHS:</div>
-                    <div class="sol-step">n = 7 + 5</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">n = 12</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) 3(n - 5) = -21:</b></div>
-                    <div class="sol-step">Divide both sides by 3:</div>
-                    <div class="sol-step">n - 5 = -7</div>
-                    <div class="sol-step">Transposing -5 to RHS:</div>
-                    <div class="sol-step">n = -7 + 5</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">n = -2</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) -4(2 + x) = 8:</b></div>
-                    <div class="sol-step">Divide both sides by -4:</div>
-                    <div class="sol-step">2 + x = -2</div>
-                    <div class="sol-step">Transposing 2 to RHS:</div>
-                    <div class="sol-step">x = -2 - 2</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">x = -4</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) 4(2 - x) = 8:</b></div>
-                    <div class="sol-step">Divide both sides by 4:</div>
-                    <div class="sol-step">2 - x = 2</div>
-                    <div class="sol-step">Transposing 2 to RHS:</div>
-                    <div class="sol-step">-x = 2 - 2</div>
-                    <div class="sol-step">-x = 0</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">x = 0</span></div>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <div class="question-header">3. Solve the following equations:<br/>
-                (a) 4 = 5(p - 2) &nbsp; (b) -4 = 5(p - 2) &nbsp; (c) 16 = 4 + 3(t + 2) &nbsp; (d) 4 + 5(p - 1) = 34 &nbsp; (e) 0 = 16 + 4(m - 6)</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) 4 = 5(p - 2):</b></div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step"><div class="frac"><span class="num">4</span><span class="den">5</span></div> = p - 2</div>
-                    <div class="sol-step">Transposing -2 to LHS:</div>
-                    <div class="sol-step">p = <div class="frac"><span class="num">4</span><span class="den">5</span></div> + 2</div>
-                    <div class="sol-step">p = <div class="frac"><span class="num">14</span><span class="den">5</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">p = <div class="frac"><span class="num">14</span><span class="den">5</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) -4 = 5(p - 2):</b></div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step">-<div class="frac"><span class="num">4</span><span class="den">5</span></div> = p - 2</div>
-                    <div class="sol-step">Transposing -2 to LHS:</div>
-                    <div class="sol-step">p = -<div class="frac"><span class="num">4</span><span class="den">5</span></div> + 2</div>
-                    <div class="sol-step">p = <div class="frac"><span class="num">6</span><span class="den">5</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">p = <div class="frac"><span class="num">6</span><span class="den">5</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) 16 = 4 + 3(t + 2):</b></div>
-                    <div class="sol-step">Transposing 4 to LHS:</div>
-                    <div class="sol-step">16 - 4 = 3(t + 2)</div>
-                    <div class="sol-step">12 = 3(t + 2)</div>
-                    <div class="sol-step">Divide both sides by 3:</div>
-                    <div class="sol-step">4 = t + 2</div>
-                    <div class="sol-step">Transposing 2 to LHS:</div>
-                    <div class="sol-step">t = 4 - 2</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">t = 2</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) 4 + 5(p - 1) = 34:</b></div>
-                    <div class="sol-step">Transposing 4 to RHS:</div>
-                    <div class="sol-step">5(p - 1) = 34 - 4</div>
-                    <div class="sol-step">5(p - 1) = 30</div>
-                    <div class="sol-step">Divide both sides by 5:</div>
-                    <div class="sol-step">p - 1 = 6</div>
-                    <div class="sol-step">Transposing -1 to RHS:</div>
-                    <div class="sol-step">p = 6 + 1</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">p = 7</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) 0 = 16 + 4(m - 6):</b></div>
-                    <div class="sol-step">Transposing 16 to LHS:</div>
-                    <div class="sol-step">-16 = 4(m - 6)</div>
-                    <div class="sol-step">Divide both sides by 4:</div>
-                    <div class="sol-step">-4 = m - 6</div>
-                    <div class="sol-step">Transposing -6 to LHS:</div>
-                    <div class="sol-step">m = -4 + 6</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">m = 2</span></div>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <div class="question-header">4. (a) Construct 3 equations starting with x = 2<br/>
-                (b) Construct 3 equations starting with x = -2</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) Starting with x = 2:</b></div>
-                    <div class="sol-step"><b>Equation 1:</b></div>
-                    <div class="sol-step">Multiply both sides by 6:</div>
-                    <div class="sol-step"><span class="ans-highlight">6x = 12</span></div>
-                    <div class="sol-step" style="margin-top: 10px;"><b>Equation 2:</b></div>
-                    <div class="sol-step">Subtract 4 from both sides:</div>
-                    <div class="sol-step"><span class="ans-highlight">6x - 4 = 8</span></div>
-                    <div class="sol-step" style="margin-top: 10px;"><b>Equation 3:</b></div>
-                    <div class="sol-step">Divide both sides by 6:</div>
-                    <div class="sol-step"><span class="ans-highlight">x - <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">4</span><span class="den">3</span></div></span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) Starting with x = -2:</b></div>
-                    <div class="sol-step"><b>Equation 1:</b></div>
-                    <div class="sol-step">Multiply both sides by 5:</div>
-                    <div class="sol-step"><span class="ans-highlight">5x = -10</span></div>
-                    <div class="sol-step" style="margin-top: 10px;"><b>Equation 2:</b></div>
-                    <div class="sol-step">Subtract 3 from both sides:</div>
-                    <div class="sol-step"><span class="ans-highlight">5x - 3 = -13</span></div>
-                    <div class="sol-step" style="margin-top: 10px;"><b>Equation 3:</b></div>
-                    <div class="sol-step">Divide both sides by 2:</div>
-                    <div class="sol-step"><span class="ans-highlight"><div class="frac"><span class="num">5x</span><span class="den">2</span></div> - <div class="frac"><span class="num">3</span><span class="den">2</span></div> = -<div class="frac"><span class="num">13</span><span class="den">2</span></div></span></div>
-                </div>
-            </div>
-        </div>
-`,
-    "ex4-4": `
-        <style>
-            .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #2196F3; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-            .question-header { padding: 15px; color: #2196F3; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
-            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; }
-            .ans-highlight { color: #64B5F6; font-weight: bold; }
-            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
-            .frac .den { display: block; padding: 0 2px; }
-            .step-label { color: #64B5F6; font-weight: bold; margin-right: 5px; }
-            .sol-body b, .subpart-title { color: #2196F3; }
-        </style>
-        <div class="container">
+            <!-- Question 1 -->
             <div class="sol-card">
                 <div class="question-header">1. Set up equations and solve them to find the unknown numbers in the following cases:<br/>
-                (a) Add 4 to eight times a number; you get 60.<br/>
-                (b) One-fifth of a number minus 4 gives 3.<br/>
+                (a) The sum of 5 times a number and 6 is 15.<br/>
+                (b) If <div class="frac"><span class="num">3</span><span class="den">5</span></div> times a number taken away from 16, the result is the number itself, what is the number.<br/>
                 (c) If I take three-fourths of a number and add 3 to it, I get 21.<br/>
                 (d) When I subtracted 11 from twice a number, the result was 15.<br/>
-                (e) Munna subtracts thrice the number of notebooks he has from 50, and he finds the result to be 8.<br/>
-                (f) Ibenhal thinks of a number. If she adds 19 to it and divides the sum by 5, she will get 8.<br/>
-                (g) Anwar thinks of a number. If he takes away 7 from <div class="frac"><span class="num">5</span><span class="den">2</span></div> of the number, the result is 23.</div>
+                (e) Sahil subtracts thrice the number of notebooks he has from 50, he finds the result to be 8.<br/>
+                (f) Maria thinks of a number. If she adds 19 to it and divides the sum by 5, she will get 8.<br/>
+                (g) When 6 subtracted from thrice a number, the result is 9. Find the number.</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(a) Add 4 to eight times a number is 60:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: 8x + 4 = 60</div>
-                    <div class="sol-step">8x = 60 - 4</div>
-                    <div class="sol-step">8x = 56</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">56</span><span class="den">8</span></div></div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">7</span>.</div>
+                    <div class="sol-step"><b>(a) Sum of 5 times a number and 6 is 15:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step">5 times the number = 5x</div>
+                    <div class="sol-step">Sum of 5x and 6 = 5x + 6</div>
+                    <div class="sol-step">Given equation: 5x + 6 = 15</div>
+                    <div class="sol-step">5x = 15 - 6</div>
+                    <div class="sol-step">5x = 9</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">9</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">The number is <div class="frac"><span class="num">9</span><span class="den">5</span></div></span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) One-fifth of a number minus 4 gives 3:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: <div class="frac"><span class="num">x</span><span class="den">5</span></div> - 4 = 3</div>
-                    <div class="sol-step"><div class="frac"><span class="num">x</span><span class="den">5</span></div> = 3 + 4</div>
-                    <div class="sol-step"><div class="frac"><span class="num">x</span><span class="den">5</span></div> = 7</div>
-                    <div class="sol-step">x = 7 &times; 5</div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">35</span>.</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(b) <div class="frac"><span class="num">3</span><span class="den">5</span></div> times a number taken away from 16:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step"><div class="frac"><span class="num">3</span><span class="den">5</span></div> times the number = <div class="frac"><span class="num">3x</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Taken away from 16 = 16 - <div class="frac"><span class="num">3x</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Given equation: 16 - <div class="frac"><span class="num">3x</span><span class="den">5</span></div> = x</div>
+                    <div class="sol-step">16 = x + <div class="frac"><span class="num">3x</span><span class="den">5</span></div></div>
+                    <div class="sol-step">16 = <div class="frac"><span class="num">5x + 3x</span><span class="den">5</span></div></div>
+                    <div class="sol-step">16 = <div class="frac"><span class="num">8x</span><span class="den">5</span></div></div>
+                    <div class="sol-step">8x = 16 &times; 5</div>
+                    <div class="sol-step">8x = 80</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">80</span><span class="den">8</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 10</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) Three-fourths of a number plus 3 is 21:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: <div class="frac"><span class="num">3x</span><span class="den">4</span></div> + 3 = 21</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(c) Three-fourths of a number plus 3 is 21:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step">Three-fourths of the number = <div class="frac"><span class="num">3x</span><span class="den">4</span></div></div>
+                    <div class="sol-step">Adding 3 to it = <div class="frac"><span class="num">3x</span><span class="den">4</span></div> + 3</div>
+                    <div class="sol-step">Given equation: <div class="frac"><span class="num">3x</span><span class="den">4</span></div> + 3 = 21</div>
                     <div class="sol-step"><div class="frac"><span class="num">3x</span><span class="den">4</span></div> = 21 - 3</div>
                     <div class="sol-step"><div class="frac"><span class="num">3x</span><span class="den">4</span></div> = 18</div>
                     <div class="sol-step">3x = 18 &times; 4</div>
                     <div class="sol-step">3x = 72</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">72</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">24</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 24</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) Subtracted 11 from twice a number is 15:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: 2x - 11 = 15</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(d) Subtracted 11 from twice a number is 15:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step">Twice the number = 2x</div>
+                    <div class="sol-step">Subtracting 11 = 2x - 11</div>
+                    <div class="sol-step">Given equation: 2x - 11 = 15</div>
                     <div class="sol-step">2x = 15 + 11</div>
                     <div class="sol-step">2x = 26</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">26</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">13</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 13</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(e) Munna subtracts thrice notebooks from 50 is 8:</b></div>
-                    <div class="sol-step">Let the number of notebooks be x.</div>
-                    <div class="sol-step">Equation: 50 - 3x = 8</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(e) Sahil subtracts thrice notebooks from 50 is 8:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number of notebooks Sahil has be x</div>
+                    <div class="sol-step">Thrice the number of notebooks = 3x</div>
+                    <div class="sol-step">Subtracted from 50 = 50 - 3x</div>
+                    <div class="sol-step">Given equation: 50 - 3x = 8</div>
                     <div class="sol-step">50 - 8 = 3x</div>
                     <div class="sol-step">42 = 3x</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">42</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Answer: The number of notebooks is <span class="ans-highlight">14</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">Number of notebooks = 14</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(f) Ibenhal adds 19 to number and divides by 5 is 8:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: <div class="frac"><span class="num">x + 19</span><span class="den">5</span></div> = 8</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(f) Maria adds 19 to number and divides by 5 is 8:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number Maria thinks of be x</div>
+                    <div class="sol-step">Adding 19 to it = x + 19</div>
+                    <div class="sol-step">Dividing by 5 = <div class="frac"><span class="num">x + 19</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Given equation: <div class="frac"><span class="num">x + 19</span><span class="den">5</span></div> = 8</div>
                     <div class="sol-step">x + 19 = 8 &times; 5</div>
                     <div class="sol-step">x + 19 = 40</div>
                     <div class="sol-step">x = 40 - 19</div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">21</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 21</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(g) Anwar takes away 7 from <div class="frac"><span class="num">5</span><span class="den">2</span></div> of number is 23:</b></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Equation: <div class="frac"><span class="num">5x</span><span class="den">2</span></div> - 7 = 23</div>
-                    <div class="sol-step"><div class="frac"><span class="num">5x</span><span class="den">2</span></div> = 23 + 7</div>
-                    <div class="sol-step"><div class="frac"><span class="num">5x</span><span class="den">2</span></div> = 30</div>
-                    <div class="sol-step">5x = 30 &times; 2</div>
-                    <div class="sol-step">5x = 60</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">60</span><span class="den">5</span></div></div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">12</span>.</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(g) 6 subtracted from thrice a number is 9:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step">Thrice the number = 3x</div>
+                    <div class="sol-step">Subtracting 6 = 3x - 6</div>
+                    <div class="sol-step">Given equation: 3x - 6 = 9</div>
+                    <div class="sol-step">3x = 9 + 6</div>
+                    <div class="sol-step">3x = 15</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">15</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 5</span></div>
                 </div>
             </div>
 
+            <!-- Question 2 -->
             <div class="sol-card">
                 <div class="question-header">2. Solve the following:<br/>
-                (a) The teacher tells the class that the highest marks obtained by a student in her class are twice the lowest marks plus 7. The highest score is 87. What is the lowest score?<br/>
-                (b) In an isosceles triangle, the base angles are equal. The vertex angle is 40°. What are the base angles of the triangle?<br/>
-                (c) Sachin scored twice as many runs as Rahul. Together, their runs fell two short of a double century. How many runs did each one score?</div>
+                (a) The teacher tells the class that the highest marks obtained by a student in her class is twice the lowest marks plus 7. The highest score is 87. What is the lowest score?<br/>
+                (b) In an isosceles triangle, the base angles are equal. The vertex angle is 40°. What are the base angles of the triangle? (Remember, the sum of three angles of a triangle is 180°).<br/>
+                (c) Dhoni scored twice as many runs as Yuvraj. Together, their runs fell two short of a double century. How many runs did each one score?<br/>
+                (d) Rajan's mother's age is 6 years more than 3 times Rajan's age. Find Rajan's age if his mother is 45 years old.</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(a) Lowest score:</b></div>
-                    <div class="sol-step">Let the lowest score be x.</div>
-                    <div class="sol-step">Highest score = 2x + 7</div>
-                    <div class="sol-step">Equation: 2x + 7 = 87</div>
+                    <div class="sol-step"><b>(a) Find lowest score:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the lowest score be x</div>
+                    <div class="sol-step">Twice the lowest score plus 7 = 2x + 7</div>
+                    <div class="sol-step">Given, highest score = 87</div>
+                    <div class="sol-step">2x + 7 = 87</div>
                     <div class="sol-step">2x = 87 - 7</div>
                     <div class="sol-step">2x = 80</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">80</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: The lowest score is <span class="ans-highlight">40</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">The lowest score is 40</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) Base angles of isosceles triangle:</b></div>
-                    <div class="sol-step">Let the base angle be b.</div>
-                    <div class="sol-step">Base angles of isosceles triangle are equal, so both base angles are b.</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(b) Base angles of isosceles triangle:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let each base angle be b degrees</div>
                     <div class="sol-step">Vertex angle = 40&deg;</div>
-                    <div class="sol-step">Sum of angles = b + b + 40 = 180&deg;</div>
-                    <div class="sol-step">2b + 40 = 180&deg;</div>
+                    <div class="sol-step">Sum of angles in a triangle = 180&deg;</div>
+                    <div class="sol-step">b + b + 40&deg; = 180&deg;</div>
+                    <div class="sol-step">2b + 40&deg; = 180&deg;</div>
                     <div class="sol-step">2b = 180&deg; - 40&deg;</div>
                     <div class="sol-step">2b = 140&deg;</div>
                     <div class="sol-step">b = <div class="frac"><span class="num">140&deg;</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Answer: The base angles are <span class="ans-highlight">70&deg;</span> each.</div>
+                    <div class="sol-step"><span class="ans-highlight">Each base angle is 70&deg;</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) Sachin and Rahul's runs:</b></div>
-                    <div class="sol-step">Let Rahul's runs be x.</div>
-                    <div class="sol-step">Sachin's runs = 2x</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(c) Dhoni and Yuvraj's runs:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let Yuvraj's runs be x</div>
+                    <div class="sol-step">Dhoni's runs = 2 &times; x = 2x</div>
                     <div class="sol-step">Total runs = x + 2x = 3x</div>
-                    <div class="sol-step">Total runs is 2 short of a double century (200 - 2 = 198)</div>
-                    <div class="sol-step">Equation: 3x = 198</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">198</span><span class="den">3</span></div></div>
-                    <div class="sol-step">x = 66</div>
-                    <div class="sol-step">Rahul's runs = 66</div>
-                    <div class="sol-step">Sachin's runs = 2 &times; 66 = 132</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">Rahul scored 66 runs</span> and <span class="ans-highlight">Sachin scored 132 runs</span>.</div>
+                    <div class="sol-step">Two short of double century (200 - 2) = 198</div>
+                    <div class="sol-step">3x = 198</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">198</span><span class="den">3</span></div> = 66</div>
+                    <div class="sol-step">Yuvraj's runs = 66</div>
+                    <div class="sol-step">Dhoni's runs = 2 &times; 66 = 132</div>
+                    <div class="sol-step"><span class="ans-highlight">Yuvraj scored 66 runs, Dhoni scored 132 runs</span></div>
+
+                    <div class="sol-step" style="margin-top: 20px;"><b>(d) Rajan's age:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let Rajan's age be y years</div>
+                    <div class="sol-step">3 times Rajan's age = 3y</div>
+                    <div class="sol-step">6 years more than 3 times = 3y + 6</div>
+                    <div class="sol-step">Mother's age = 45 years</div>
+                    <div class="sol-step">3y + 6 = 45</div>
+                    <div class="sol-step">3y = 45 - 6</div>
+                    <div class="sol-step">3y = 39</div>
+                    <div class="sol-step">y = <div class="frac"><span class="num">39</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Rajan's age is 13 years</span></div>
                 </div>
             </div>
 
+            <!-- Question 3 -->
             <div class="sol-card">
                 <div class="question-header">3. Solve the following:<br/>
-                (i) Irfan says that he has 7 marbles, more than five times the marbles Parmit has. Irfan has 37 marbles. How many marbles does Parmit have?<br/>
-                (ii) Laxmi's father is 49 years old. He is 4 years older than three times Laxmi's age. What is Laxmi's age?<br/>
-                (iii) People of Sundargram planted trees in the village garden. Some of the trees were fruit trees. The number of non-fruit trees was two more than three times the number of fruit trees. What was the number of fruit trees planted if the number of non-fruit trees planted was 77?</div>
+                (i) Nitin says that he has 7 marbles more than five times the marbles Aman has. Nitin has 37 marbles. How many marbles does Aman have?<br/>
+                (ii) Neelam's father is 49 years old. He is 4 years older than three times Neelam's age. What is Neelam's age?<br/>
+                (iii) People of Gulmarg planted trees in the village garden. Some of the trees were fruit trees. The number of non-fruit trees were two more than three times the number of fruit trees. What was the number of fruit trees planted if the number of non-fruit trees planted was 77?</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(i) Parmit's marbles:</b></div>
-                    <div class="sol-step">Let Parmit's marbles be m.</div>
-                    <div class="sol-step">Equation: 5m + 7 = 37</div>
+                    <div class="sol-step"><b>(i) Aman's marbles:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number of marbles Aman has be m</div>
+                    <div class="sol-step">5 times Aman's marbles = 5m</div>
+                    <div class="sol-step">7 marbles more than 5 times = 5m + 7</div>
+                    <div class="sol-step">Total marbles Nitin has = 37</div>
+                    <div class="sol-step">5m + 7 = 37</div>
                     <div class="sol-step">5m = 37 - 7</div>
                     <div class="sol-step">5m = 30</div>
                     <div class="sol-step">m = <div class="frac"><span class="num">30</span><span class="den">5</span></div></div>
-                    <div class="sol-step">Answer: Parmit has <span class="ans-highlight">6 marbles</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">Aman has 6 marbles</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(ii) Laxmi's age:</b></div>
-                    <div class="sol-step">Let Laxmi's age be y.</div>
-                    <div class="sol-step">Equation: 3y + 4 = 49</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(ii) Neelam's age:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let Neelam's age be y years</div>
+                    <div class="sol-step">Three times Neelam's age = 3y</div>
+                    <div class="sol-step">4 years older than three times = 3y + 4</div>
+                    <div class="sol-step">Father's age = 49 years</div>
+                    <div class="sol-step">3y + 4 = 49</div>
                     <div class="sol-step">3y = 49 - 4</div>
                     <div class="sol-step">3y = 45</div>
                     <div class="sol-step">y = <div class="frac"><span class="num">45</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Answer: Laxmi's age is <span class="ans-highlight">15 years</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">Neelam's age is 15 years</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(iii) Sundargram trees:</b></div>
-                    <div class="sol-step">Let the number of fruit trees be f.</div>
-                    <div class="sol-step">Equation: 3f + 2 = 77</div>
-                    <div class="sol-step">3f = 77 - 2</div>
-                    <div class="sol-step">3f = 75</div>
-                    <div class="sol-step">f = <div class="frac"><span class="num">75</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Answer: There were <span class="ans-highlight">25 fruit trees</span>.</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(iii) Fruit trees planted in Gulmarg:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number of fruit trees be x</div>
+                    <div class="sol-step">Three times fruit trees = 3x</div>
+                    <div class="sol-step">Two more than three times = 3x + 2</div>
+                    <div class="sol-step">Number of non-fruit trees = 77</div>
+                    <div class="sol-step">3x + 2 = 77</div>
+                    <div class="sol-step">3x = 77 - 2</div>
+                    <div class="sol-step">3x = 75</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">75</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Number of fruit trees = 25</span></div>
                 </div>
             </div>
 
+            <!-- Question 4 -->
             <div class="sol-card">
                 <div class="question-header">4. Solve the following riddle:<br/>
                 I am a number, Tell my identity!<br/>
                 Take me seven times over And add a fifty!<br/>
                 To reach a triple century You still need forty!</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-label">Solution:</span></div>
-                    <div class="sol-step">Let the number be x.</div>
-                    <div class="sol-step">Seven times the number = 7x</div>
-                    <div class="sol-step">Seven times the number plus fifty = 7x + 50</div>
-                    <div class="sol-step">To reach 300, we still need 40, so:</div>
-                    <div class="sol-step">Equation: (7x + 50) + 40 = 300</div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number be x</div>
+                    <div class="sol-step">Seven times over = 7x</div>
+                    <div class="sol-step">Add fifty = 7x + 50</div>
+                    <div class="sol-step">Triple century = 300</div>
+                    <div class="sol-step">To reach 300, still need 40, so:</div>
+                    <div class="sol-step">(7x + 50) + 40 = 300</div>
                     <div class="sol-step">7x + 90 = 300</div>
                     <div class="sol-step">7x = 300 - 90</div>
                     <div class="sol-step">7x = 210</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">210</span><span class="den">7</span></div></div>
-                    <div class="sol-step">Answer: The number is <span class="ans-highlight">30</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">The number is 30</span></div>
                 </div>
             </div>
         </div>
 `
   },
-
   examples: [],
   mcqs: [
     {
