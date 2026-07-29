@@ -477,49 +477,49 @@ export const c7Math4: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) x - 1 = 0:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Add 1 to both sides of the equation.</div>
+                    <div class="sol-step">Add 1 to both sides of the equation.</div>
                     <div class="sol-step">x - 1 + 1 = 0 + 1</div>
                     <div class="sol-step"><span class="ans-highlight">x = 1</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) x + 1 = 0:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Subtract 1 from both sides of the equation.</div>
+                    <div class="sol-step">Subtract 1 from both sides of the equation.</div>
                     <div class="sol-step">x + 1 - 1 = 0 - 1</div>
                     <div class="sol-step"><span class="ans-highlight">x = -1</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) x - 1 = 5:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Add 1 to both sides of the equation.</div>
+                    <div class="sol-step">Add 1 to both sides of the equation.</div>
                     <div class="sol-step">x - 1 + 1 = 5 + 1</div>
                     <div class="sol-step"><span class="ans-highlight">x = 6</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) x + 6 = 2:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Subtract 6 from both sides of the equation.</div>
+                    <div class="sol-step">Subtract 6 from both sides of the equation.</div>
                     <div class="sol-step">x + 6 - 6 = 2 - 6</div>
                     <div class="sol-step"><span class="ans-highlight">x = -4</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(e) y - 4 = -7:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Add 4 to both sides of the equation.</div>
+                    <div class="sol-step">Add 4 to both sides of the equation.</div>
                     <div class="sol-step">y - 4 + 4 = -7 + 4</div>
                     <div class="sol-step"><span class="ans-highlight">y = -3</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(f) y - 4 = 4:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Add 4 to both sides of the equation.</div>
+                    <div class="sol-step">Add 4 to both sides of the equation.</div>
                     <div class="sol-step">y - 4 + 4 = 4 + 4</div>
                     <div class="sol-step"><span class="ans-highlight">y = 8</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(g) y + 4 = 4:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Subtract 4 from both sides of the equation.</div>
+                    <div class="sol-step">Subtract 4 from both sides of the equation.</div>
                     <div class="sol-step">y + 4 - 4 = 4 - 4</div>
                     <div class="sol-step"><span class="ans-highlight">y = 0</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(h) y + 4 = -4:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Subtract 4 from both sides of the equation.</div>
+                    <div class="sol-step">Subtract 4 from both sides of the equation.</div>
                     <div class="sol-step">y + 4 - 4 = -4 - 4</div>
                     <div class="sol-step"><span class="ans-highlight">y = -8</span></div>
                 </div>
@@ -533,50 +533,50 @@ export const c7Math4: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 3l = 42:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Divide both sides by 3</div>
+                    <div class="sol-step">Divide both sides by 3</div>
                     <div class="sol-step"><div class="frac"><span class="num">3l</span><span class="den">3</span></div> = <div class="frac"><span class="num">42</span><span class="den">3</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">l = 14</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) <div class="frac"><span class="num">b</span><span class="den">2</span></div> = 6:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Multiply both sides by 2</div>
+                    <div class="sol-step">Multiply both sides by 2</div>
                     <div class="sol-step"><div class="frac"><span class="num">b</span><span class="den">2</span></div> &times; 2 = 6 &times; 2</div>
                     <div class="sol-step"><span class="ans-highlight">b = 12</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) <div class="frac"><span class="num">p</span><span class="den">7</span></div> = 4:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Multiply both sides by 7</div>
+                    <div class="sol-step">Multiply both sides by 7</div>
                     <div class="sol-step"><div class="frac"><span class="num">p</span><span class="den">7</span></div> &times; 7 = 4 &times; 7</div>
                     <div class="sol-step"><span class="ans-highlight">p = 28</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) 4x = 25:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Divide both sides by 4</div>
+                    <div class="sol-step">Divide both sides by 4</div>
                     <div class="sol-step"><div class="frac"><span class="num">4x</span><span class="den">4</span></div> = <div class="frac"><span class="num">25</span><span class="den">4</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">x = <div class="frac"><span class="num">25</span><span class="den">4</span></div></span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(e) 8y = 36:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Divide both sides by 8</div>
+                    <div class="sol-step">Divide both sides by 8</div>
                     <div class="sol-step"><div class="frac"><span class="num">8y</span><span class="den">8</span></div> = <div class="frac"><span class="num">36</span><span class="den">8</span></div></div>
                     <div class="sol-step">y = <div class="frac"><span class="num">9</span><span class="den">2</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">y = 4.5</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(f) <div class="frac"><span class="num">z</span><span class="den">3</span></div> = <div class="frac"><span class="num">5</span><span class="den">4</span></div>:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Multiply both sides by 3</div>
+                    <div class="sol-step">Multiply both sides by 3</div>
                     <div class="sol-step"><div class="frac"><span class="num">z</span><span class="den">3</span></div> &times; 3 = <div class="frac"><span class="num">5</span><span class="den">4</span></div> &times; 3</div>
                     <div class="sol-step"><span class="ans-highlight">z = <div class="frac"><span class="num">15</span><span class="den">4</span></div></span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(g) <div class="frac"><span class="num">a</span><span class="den">5</span></div> = <div class="frac"><span class="num">7</span><span class="den">15</span></div>:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Multiply both sides by 5</div>
+                    <div class="sol-step">Multiply both sides by 5</div>
                     <div class="sol-step"><div class="frac"><span class="num">a</span><span class="den">5</span></div> &times; 5 = <div class="frac"><span class="num">7</span><span class="den">15</span></div> &times; 5</div>
                     <div class="sol-step"><span class="ans-highlight">a = <div class="frac"><span class="num">7</span><span class="den">3</span></div></span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(h) 20t = -10:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step: Divide both sides by 20</div>
+                    <div class="sol-step">Divide both sides by 20</div>
                     <div class="sol-step"><div class="frac"><span class="num">20t</span><span class="den">20</span></div> = -<div class="frac"><span class="num">10</span><span class="den">20</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">t = -<div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
                 </div>
@@ -589,37 +589,37 @@ export const c7Math4: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 3n - 2 = 46:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step 1: Add 2 to both sides of the equation.</div>
+                    <div class="sol-step">Add 2 to both sides of the equation.</div>
                     <div class="sol-step">3n - 2 + 2 = 46 + 2</div>
                     <div class="sol-step">3n = 48</div>
-                    <div class="sol-step">Step 2: Divide both sides by 3.</div>
+                    <div class="sol-step">Divide both sides by 3.</div>
                     <div class="sol-step"><div class="frac"><span class="num">3n</span><span class="den">3</span></div> = <div class="frac"><span class="num">48</span><span class="den">3</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">n = 16</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) 5m + 7 = 17:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step 1: Subtract 7 from both sides of the equation.</div>
+                    <div class="sol-step">Subtract 7 from both sides of the equation.</div>
                     <div class="sol-step">5m + 7 - 7 = 17 - 7</div>
                     <div class="sol-step">5m = 10</div>
-                    <div class="sol-step">Step 2: Divide both sides by 5.</div>
+                    <div class="sol-step">Divide both sides by 5.</div>
                     <div class="sol-step"><div class="frac"><span class="num">5m</span><span class="den">5</span></div> = <div class="frac"><span class="num">10</span><span class="den">5</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">m = 2</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) <div class="frac"><span class="num">20p</span><span class="den">3</span></div> = 40:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step 1: Multiply both sides by 3.</div>
+                    <div class="sol-step">Multiply both sides by 3.</div>
                     <div class="sol-step"><div class="frac"><span class="num">20p</span><span class="den">3</span></div> &times; 3 = 40 &times; 3</div>
                     <div class="sol-step">20p = 120</div>
-                    <div class="sol-step">Step 2: Divide both sides by 20.</div>
+                    <div class="sol-step">Divide both sides by 20.</div>
                     <div class="sol-step"><div class="frac"><span class="num">20p</span><span class="den">20</span></div> = <div class="frac"><span class="num">120</span><span class="den">20</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">p = 6</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) <div class="frac"><span class="num">3p</span><span class="den">10</span></div> = 6:</b></div>
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Step 1: Multiply both sides by 10.</div>
+                    <div class="sol-step">Multiply both sides by 10.</div>
                     <div class="sol-step"><div class="frac"><span class="num">3p</span><span class="den">10</span></div> &times; 10 = 6 &times; 10</div>
                     <div class="sol-step">3p = 60</div>
-                    <div class="sol-step">Step 2: Divide both sides by 3.</div>
+                    <div class="sol-step">Divide both sides by 3.</div>
                     <div class="sol-step"><div class="frac"><span class="num">3p</span><span class="den">3</span></div> = <div class="frac"><span class="num">60</span><span class="den">3</span></div></div>
                     <div class="sol-step"><span class="ans-highlight">p = 20</span></div>
                 </div>
