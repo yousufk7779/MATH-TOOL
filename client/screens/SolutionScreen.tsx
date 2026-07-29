@@ -1387,8 +1387,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   subTabButton: {
-    paddingVertical: 6,
-    paddingHorizontal: 16,
+    paddingVertical: 8,
+    paddingHorizontal: 28,
+    minWidth: 130,
     alignItems: "center",
     borderRadius: BorderRadius.full,
     borderWidth: 1.5,
