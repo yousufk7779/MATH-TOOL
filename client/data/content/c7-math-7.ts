@@ -6,38 +6,41 @@ export const c7Math7: ChapterContent = {
   title: "Comparing Quantities",
   isHtmlView: true,
   introduction:
-    "Comparing quantities is part of our daily life. Whether it is price, height, or scores, we use ratios, percentages, and interest rates to understand relative values.",
+    "Comparing quantities is part of our daily life. Whether it is price, height, or scores, we use percentages, profit and loss, and simple interest to understand relative values.",
   definitions: [
     {
-      term: "Ratio",
-      definition: "A comparison of two quantities by division.",
+      term: "Percentage",
+      description: "A fraction with denominator 100, represented by the % symbol.",
     },
-    { term: "Percentage", definition: "A fraction with denominator 100." },
     {
       term: "Profit",
-      definition: "When Selling Price (SP) is greater than Cost Price (CP).",
+      description: "When Selling Price (SP) is greater than Cost Price (CP): Profit = SP - CP.",
+    },
+    {
+      term: "Loss",
+      description: "When Cost Price (CP) is greater than Selling Price (SP): Loss = CP - SP.",
     },
     {
       term: "Simple Interest",
-      definition:
-        "Interest calculated on the principal amount for a given time and rate.",
+      description: "Interest calculated on the principal amount over time: SI = (P × R × T) / 100.",
     },
   ],
   keyPoints: [
-    "To compare two quantities, their units must be the same.",
-    "Percentage = (Value / Total) × 100.",
-    "Profit = SP - CP; Loss = CP - SP.",
-    "Simple Interest (SI) = (P × R × T) / 100.",
+    "Percentage = (Value / Total) × 100",
+    "Profit% = (Profit / CP) × 100; Loss% = (Loss / CP) × 100",
+    "Simple Interest (SI) = (P × R × T) / 100",
+    "Amount = Principal + Simple Interest",
   ],
   formulas: [
-    { name: "Simple Interest", formula: "SI = (P × R × T) / 100" },
     { name: "Profit Percentage", formula: "(Profit / CP) × 100" },
+    { name: "Loss Percentage", formula: "(Loss / CP) × 100" },
+    { name: "Simple Interest", formula: "(P × R × T) / 100" },
+    { name: "Total Amount", formula: "Principal + Interest" },
   ],
   crux: [],
   exercises: [
     { id: "ex7-1", name: "Exercise 7.1", questions: [] },
     { id: "ex7-2", name: "Exercise 7.2", questions: [] },
-    { id: "ex7-3", name: "Exercise 7.3", questions: [] },
   ],
   htmlOverview: `
         <style>
@@ -52,82 +55,16 @@ export const c7Math7: ChapterContent = {
             .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="overview-container">
-            <p class="content-text">Learn how to analyze ratios, calculate percentages, and manage financial math like profit, loss, and interest.</p>
+            <p class="content-text">Learn how to analyze percentages and manage financial calculations like profit, loss, and simple interest according to the latest Class 7 NCERT syllabus.</p>
             <div class="point-box">
-                <div class="point-item">Ratios compare similar units.</div>
                 <div class="point-item">Percentage means 'per hundred'.</div>
-                <div class="point-item">Understand the relationship between CP, SP, and Interest.</div>
+                <div class="point-item">Profit or Loss is always calculated on the Cost Price (CP).</div>
+                <div class="point-item">Simple Interest (SI) = <div class="frac"><span class="num">P &times; R &times; T</span><span class="den">100</span></div>.</div>
             </div>
         </div>
     `,
   htmlExercises: {
-    "ex7-1": `
-        <style>
-            .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FFA726; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-            .question-header { padding: 15px; color: #FFA726; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
-            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; }
-            .ans-highlight { color: #FFB74D; font-weight: bold; }
-            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 2px; display: block; }
-            .frac .den { display: block; padding: 0 2px; }
-            .step-label { color: #FFB74D; font-weight: bold; margin-right: 5px; }
-            .sol-body b, .subpart-title { color: #FFA726; }
-        </style>
-        <div class="container">
-            <div class="sol-card">
-                <div class="question-header">1. Find the ratio of:<br/>(a) ₹ 5 to 50 paise<br/>(b) 15 kg to 210 g<br/>(c) 9 m to 27 cm<br/>(d) 30 days to 36 hours</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(a) ₹ 5 to 50 paise:</b></div>
-                    <div class="sol-step">Convert rupees to paise: ₹ 1 = 100 paise, so ₹ 5 = 5 &times; 100 = 500 paise.</div>
-                    <div class="sol-step">Ratio = <div class="frac"><span class="num">500</span><span class="den">50</span></div> = <div class="frac"><span class="num">10</span><span class="den">1</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">10 : 1</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(b) 15 kg to 210 g:</b></div>
-                    <div class="sol-step">Convert kg to g: 1 kg = 1000 g, so 15 kg = 15 &times; 1000 = 15000 g.</div>
-                    <div class="sol-step">Ratio = <div class="frac"><span class="num">15000</span><span class="den">210</span></div> = <div class="frac"><span class="num">500</span><span class="den">7</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">500 : 7</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(c) 9 m to 27 cm:</b></div>
-                    <div class="sol-step">Convert m to cm: 1 m = 100 cm, so 9 m = 9 &times; 100 = 900 cm.</div>
-                    <div class="sol-step">Ratio = <div class="frac"><span class="num">900</span><span class="den">27</span></div> = <div class="frac"><span class="num">100</span><span class="den">3</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">100 : 3</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(d) 30 days to 36 hours:</b></div>
-                    <div class="sol-step">Convert days to hours: 1 day = 24 hours, so 30 days = 30 &times; 24 = 720 hours.</div>
-                    <div class="sol-step">Ratio = <div class="frac"><span class="num">720</span><span class="den">36</span></div> = <div class="frac"><span class="num">20</span><span class="den">1</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">20 : 1</span></div>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <div class="question-header">2. In a computer lab, there are 3 computers for every 6 students. How many computers will be needed for 24 students?</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-label">Solution:</span></div>
-                    <div class="sol-step">Computers required for 6 students = 3</div>
-                    <div class="sol-step">Computers required for 1 student = <div class="frac"><span class="num">3</span><span class="den">6</span></div> = <div class="frac"><span class="num">1</span><span class="den">2</span></div></div>
-                    <div class="sol-step">Computers required for 24 students = 24 &times; <div class="frac"><span class="num">1</span><span class="den">2</span></div> = 12</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">12 computers</span></div>
-                </div>
-            </div>
-
-            <div class="sol-card">
-                <div class="question-header">3. Population of Rajasthan = 570 lakhs and population of UP = 1660 lakhs. Area of Rajasthan = 3 lakh km² and area of UP = 2 lakh km².<br/>(i) How many people are there per km² in both these states?<br/>(ii) Which state is less populated?</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b>(i) People per km²:</b></div>
-                    <div class="sol-step">Rajasthan = <div class="frac"><span class="num">570 lakhs</span><span class="den">3 lakh km²</span></div> = <span class="ans-highlight">190 people/km²</span></div>
-                    <div class="sol-step">UP = <div class="frac"><span class="num">1660 lakhs</span><span class="den">2 lakh km²</span></div> = <span class="ans-highlight">830 people/km²</span></div>
-                    
-                    <div class="sol-step" style="margin-top: 15px;"><b>(ii) Less populated state:</b></div>
-                    <div class="sol-step">Comparing the density, Rajasthan has 190 people/km², which is less than UP's 830 people/km².</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">Rajasthan</span> is less populated.</div>
-                </div>
-            </div>
-        </div>
-    `,
-    "ex7-2": `
-        <style>
+    "ex7-1": `<style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FFA726; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
             .question-header { padding: 15px; color: #FFA726; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
@@ -249,23 +186,23 @@ export const c7Math7: ChapterContent = {
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) 5% of it is 600:</b></div>
                     <div class="sol-step">Let the quantity be x. <div class="frac"><span class="num">5</span><span class="den">100</span></div> &times; x = 600 => x = <div class="frac"><span class="num">600 &times; 100</span><span class="den">5</span></div> = 120 &times; 100</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">12,000</span></div>
+                    <div class="sol-step"><span class="ans-highlight">12,000</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) 12% of it is ₹ 1080:</b></div>
                     <div class="sol-step">Let the quantity be x. <div class="frac"><span class="num">12</span><span class="den">100</span></div> &times; x = 1080 => x = <div class="frac"><span class="num">1080 &times; 100</span><span class="den">12</span></div> = 90 &times; 100</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">₹ 9,000</span></div>
+                    <div class="sol-step"><span class="ans-highlight">₹ 9,000</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) 40% of it is 500 km:</b></div>
                     <div class="sol-step">Let the quantity be x. <div class="frac"><span class="num">40</span><span class="den">100</span></div> &times; x = 500 => x = <div class="frac"><span class="num">500 &times; 100</span><span class="den">40</span></div> = 125 &times; 10</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">1250 km</span></div>
+                    <div class="sol-step"><span class="ans-highlight">1250 km</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) 70% of it is 14 minutes:</b></div>
                     <div class="sol-step">Let the quantity be x. <div class="frac"><span class="num">70</span><span class="den">100</span></div> &times; x = 14 => x = <div class="frac"><span class="num">14 &times; 100</span><span class="den">70</span></div> = <div class="frac"><span class="num">140</span><span class="den">7</span></div></div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">20 minutes</span></div>
+                    <div class="sol-step"><span class="ans-highlight">20 minutes</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(e) 8% of it is 40 liters:</b></div>
                     <div class="sol-step">Let the quantity be x. <div class="frac"><span class="num">8</span><span class="den">100</span></div> &times; x = 40 => x = <div class="frac"><span class="num">40 &times; 100</span><span class="den">8</span></div> = 5 &times; 100</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">500 liters</span></div>
+                    <div class="sol-step"><span class="ans-highlight">500 liters</span></div>
                 </div>
             </div>
 
@@ -298,7 +235,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Percentage of males = 40%</div>
                     <div class="sol-step">Total percentage of adults = 30% + 40% = 70%</div>
                     <div class="sol-step">Percentage of children = 100% - 70% = 30%</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">30%</span> are children.</div>
+                    <div class="sol-step"><span class="ans-highlight">30%</span> are children.</div>
                 </div>
             </div>
 
@@ -311,7 +248,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Percentage of voters who did not vote = 100% - 60% = <span class="ans-highlight">40%</span></div>
                     <div class="sol-step">Number of voters who did not vote = 40% of 15,000</div>
                     <div class="sol-step">= <div class="frac"><span class="num">40</span><span class="den">100</span></div> &times; 15000 = 40 &times; 150 = 6000</div>
-                    <div class="sol-step">Answer: <span class="ans-highlight">40% did not vote</span>, which corresponds to <span class="ans-highlight">6000 voters</span>.</div>
+                    <div class="sol-step"><span class="ans-highlight">40% did not vote</span>, which corresponds to <span class="ans-highlight">6000 voters</span>.</div>
                 </div>
             </div>
 
@@ -323,7 +260,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Given, 10% of x = ₹ 4000</div>
                     <div class="sol-step">=> <div class="frac"><span class="num">10</span><span class="den">100</span></div> &times; x = 4000</div>
                     <div class="sol-step">=> x = 4000 &times; 10 = 40000</div>
-                    <div class="sol-step">Answer: Meeta's salary is <span class="ans-highlight">₹ 40,000</span>.</div>
+                    <div class="sol-step">Meeta's salary is <span class="ans-highlight">₹ 40,000</span>.</div>
                 </div>
             </div>
 
@@ -334,13 +271,12 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Total matches played = 20</div>
                     <div class="sol-step">Win percentage = 25%</div>
                     <div class="sol-step">Matches won = 25% of 20 = <div class="frac"><span class="num">25</span><span class="den">100</span></div> &times; 20 = <div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; 20 = 5</div>
-                    <div class="sol-step">Answer: The team won <span class="ans-highlight">5 matches</span>.</div>
+                    <div class="sol-step">The team won <span class="ans-highlight">5 matches</span>.</div>
                 </div>
             </div>
         </div>
-    `,
-    "ex7-3": `
-        <style>
+    ``,
+    "ex7-2": `<style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FFA726; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
             .question-header { padding: 15px; color: #FFA726; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
@@ -365,25 +301,25 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Cost Price (CP) = ₹ 250, Selling Price (SP) = ₹ 325.</div>
                     <div class="sol-step">Since SP &gt; CP, it is a profit. Profit = SP - CP = 325 - 250 = ₹ 75.</div>
                     <div class="sol-step">Profit% = (<div class="frac"><span class="num">Profit</span><span class="den">CP</span></div> &times; 100)% = (<div class="frac"><span class="num">75</span><span class="den">250</span></div> &times; 100)% = 3 &times; 10%</div>
-                    <div class="sol-step">Answer: Profit is <span class="ans-highlight">₹ 75</span>, Profit Percentage = <span class="ans-highlight">30%</span></div>
+                    <div class="sol-step">Profit is <span class="ans-highlight">₹ 75</span>, Profit Percentage = <span class="ans-highlight">30%</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) Refrigerator:</b></div>
                     <div class="sol-step">CP = ₹ 12,000, SP = ₹ 13,500.</div>
                     <div class="sol-step">Since SP &gt; CP, it is a profit. Profit = 13,500 - 12,000 = ₹ 1,500.</div>
                     <div class="sol-step">Profit% = (<div class="frac"><span class="num">1500</span><span class="den">12000</span></div> &times; 100)% = <div class="frac"><span class="num">150</span><span class="den">12</span></div>% = <span class="ans-highlight">12.5%</span></div>
-                    <div class="sol-step">Answer: Profit is <span class="ans-highlight">₹ 1,500</span>, Profit Percentage = <span class="ans-highlight">12.5%</span></div>
+                    <div class="sol-step">Profit is <span class="ans-highlight">₹ 1,500</span>, Profit Percentage = <span class="ans-highlight">12.5%</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(c) Cupboard:</b></div>
                     <div class="sol-step">CP = ₹ 2,500, SP = ₹ 3,000.</div>
                     <div class="sol-step">Since SP &gt; CP, it is a profit. Profit = 3,000 - 2,500 = ₹ 500.</div>
                     <div class="sol-step">Profit% = (<div class="frac"><span class="num">500</span><span class="den">2500</span></div> &times; 100)% = <div class="frac"><span class="num">100</span><span class="den">5</span></div>% = <span class="ans-highlight">20%</span></div>
-                    <div class="sol-step">Answer: Profit is <span class="ans-highlight">₹ 500</span>, Profit Percentage = <span class="ans-highlight">20%</span></div>
+                    <div class="sol-step">Profit is <span class="ans-highlight">₹ 500</span>, Profit Percentage = <span class="ans-highlight">20%</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(d) Skirt:</b></div>
                     <div class="sol-step">CP = ₹ 250, SP = ₹ 150.</div>
                     <div class="sol-step">Since CP &gt; SP, it is a loss. Loss = CP - SP = 250 - 150 = ₹ 100.</div>
                     <div class="sol-step">Loss% = (<div class="frac"><span class="num">Loss</span><span class="den">CP</span></div> &times; 100)% = (<div class="frac"><span class="num">100</span><span class="den">250</span></div> &times; 100)% = 4 &times; 10%</div>
-                    <div class="sol-step">Answer: Loss is <span class="ans-highlight">₹ 100</span>, Loss Percentage = <span class="ans-highlight">40%</span></div>
+                    <div class="sol-step">Loss is <span class="ans-highlight">₹ 100</span>, Loss Percentage = <span class="ans-highlight">40%</span></div>
                 </div>
             </div>
 
@@ -423,7 +359,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Final population = 24,500</div>
                     <div class="sol-step">Decrease in population = 25,000 - 24,500 = 500</div>
                     <div class="sol-step">Percentage decrease = (<div class="frac"><span class="num">500</span><span class="den">25000</span></div> &times; 100)% = <div class="frac"><span class="num">50</span><span class="den">25</span></div>% = 2%</div>
-                    <div class="sol-step">Answer: The population decrease percentage is <span class="ans-highlight">2%</span>.</div>
+                    <div class="sol-step">The population decrease percentage is <span class="ans-highlight">2%</span>.</div>
                 </div>
             </div>
 
@@ -435,7 +371,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">New price = ₹ 3,70,000</div>
                     <div class="sol-step">Increase in price = 3,70,000 - 3,50,000 = ₹ 20,000</div>
                     <div class="sol-step">Percentage increase = (<div class="frac"><span class="num">20000</span><span class="den">350000</span></div> &times; 100)% = (<div class="frac"><span class="num">2</span><span class="den">35</span></div> &times; 100)% = <div class="frac"><span class="num">40</span><span class="den">7</span></div>% = 5<div class="frac"><span class="num">5</span><span class="den">7</span></div>%</div>
-                    <div class="sol-step">Answer: The price increase percentage is <span class="ans-highlight">5<div class="frac"><span class="num">5</span><span class="den">7</span></div>%</span> (or approx 5.7%).</div>
+                    <div class="sol-step">The price increase percentage is <span class="ans-highlight">5<div class="frac"><span class="num">5</span><span class="den">7</span></div>%</span> (or approx 5.7%).</div>
                 </div>
             </div>
 
@@ -446,7 +382,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Cost Price (CP) = ₹ 10,000, Profit% = 20%</div>
                     <div class="sol-step">Profit amount = 20% of 10000 = <div class="frac"><span class="num">20</span><span class="den">100</span></div> &times; 10000 = ₹ 2,000</div>
                     <div class="sol-step">Selling Price (SP) = CP + Profit = 10,000 + 2,000 = 12,000</div>
-                    <div class="sol-step">Answer: I get <span class="ans-highlight">₹ 12,000</span>.</div>
+                    <div class="sol-step">I get <span class="ans-highlight">₹ 12,000</span>.</div>
                 </div>
             </div>
 
@@ -458,7 +394,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Let Cost Price (CP) be x.</div>
                     <div class="sol-step">SP = CP &times; (100% - Loss%) => 13500 = x &times; 80%</div>
                     <div class="sol-step">x = <div class="frac"><span class="num">13500 &times; 100</span><span class="den">80</span></div> = <div class="frac"><span class="num">135000</span><span class="den">8</span></div> = 16875</div>
-                    <div class="sol-step">Answer: She bought it for <span class="ans-highlight">₹ 16,875</span>.</div>
+                    <div class="sol-step">She bought it for <span class="ans-highlight">₹ 16,875</span>.</div>
                 </div>
             </div>
 
@@ -476,18 +412,18 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">Let the weight of chalk stick be x grams.</div>
                     <div class="sol-step">Weight of carbon = 12% of x = 3g</div>
                     <div class="sol-step">=> <div class="frac"><span class="num">12</span><span class="den">100</span></div> &times; x = 3 => x = <div class="frac"><span class="num">3 &times; 100</span><span class="den">12</span></div> = <div class="frac"><span class="num">100</span><span class="den">4</span></div> = 25</div>
-                    <div class="sol-step">Answer: The weight of the chalk stick is <span class="ans-highlight">25g</span>.</div>
+                    <div class="sol-step">The weight of the chalk stick is <span class="ans-highlight">25g</span>.</div>
                 </div>
             </div>
 
             <div class="sol-card">
-                <div class="question-header">8. Amina buys a book for ₹ 275 and sells it at a loss of 15%. How much does she sell it for?</div>
+                <div class="question-header">8. Anju buys a book for ₹ 275 and sells it at a loss of 15%. How much does she sell it for?</div>
                 <div class="sol-body">
                     <div class="sol-step"><span class="step-label">Solution:</span></div>
                     <div class="sol-step">Cost Price (CP) = ₹ 275, Loss% = 15%</div>
                     <div class="sol-step">Loss amount = 15% of 275 = <div class="frac"><span class="num">15</span><span class="den">100</span></div> &times; 275 = <div class="frac"><span class="num">4125</span><span class="den">100</span></div> = ₹ 41.25</div>
                     <div class="sol-step">Selling Price (SP) = CP - Loss = 275 - 41.25 = 233.75</div>
-                    <div class="sol-step">Answer: She sells the book for <span class="ans-highlight">₹ 233.75</span>.</div>
+                    <div class="sol-step">She sells the book for <span class="ans-highlight">₹ 233.75</span>.</div>
                 </div>
             </div>
 
@@ -500,13 +436,13 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">P = ₹ 1200, R = 12% p.a., T = 3 years.</div>
                     <div class="sol-step">Simple Interest (SI) = <div class="frac"><span class="num">P &times; R &times; T</span><span class="den">100</span></div> = <div class="frac"><span class="num">1200 &times; 12 &times; 3</span><span class="den">100</span></div> = 12 &times; 36 = ₹ 432</div>
                     <div class="sol-step">Amount = Principal + SI = 1200 + 432 = 1632</div>
-                    <div class="sol-step">Answer: Amount is <span class="ans-highlight">₹ 1,632</span></div>
+                    <div class="sol-step">Amount is <span class="ans-highlight">₹ 1,632</span></div>
 
                     <div class="sol-step" style="margin-top: 15px;"><b>(b) Principal = ₹ 7,500 at 5% p.a.:</b></div>
                     <div class="sol-step">P = ₹ 7500, R = 5% p.a., T = 3 years.</div>
                     <div class="sol-step">Simple Interest (SI) = <div class="frac"><span class="num">7500 &times; 5 &times; 3</span><span class="den">100</span></div> = 75 &times; 15 = ₹ 1125</div>
                     <div class="sol-step">Amount = Principal + SI = 7500 + 1125 = 8625</div>
-                    <div class="sol-step">Answer: Amount is <span class="ans-highlight">₹ 8,625</span></div>
+                    <div class="sol-step">Amount is <span class="ans-highlight">₹ 8,625</span></div>
                 </div>
             </div>
 
@@ -517,7 +453,7 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">P = ₹ 56,000, SI = ₹ 280, T = 2 years.</div>
                     <div class="sol-step">SI = <div class="frac"><span class="num">P &times; R &times; T</span><span class="den">100</span></div> => 280 = <div class="frac"><span class="num">56000 &times; R &times; 2</span><span class="den">100</span></div></div>
                     <div class="sol-step">=> 280 = 1120 &times; R => R = <div class="frac"><span class="num">280</span><span class="den">1120</span></div> = <div class="frac"><span class="num">1</span><span class="den">4</span></div> = 0.25%</div>
-                    <div class="sol-step">Answer: The interest rate is <span class="ans-highlight">0.25% p.a.</span></div>
+                    <div class="sol-step">The interest rate is <span class="ans-highlight">0.25% p.a.</span></div>
                 </div>
             </div>
 
@@ -528,74 +464,84 @@ export const c7Math7: ChapterContent = {
                     <div class="sol-step">SI = ₹ 45, R = 9%, T = 1 year, Principal (P) = ?</div>
                     <div class="sol-step">SI = <div class="frac"><span class="num">P &times; R &times; T</span><span class="den">100</span></div> => 45 = <div class="frac"><span class="num">P &times; 9 &times; 1</span><span class="den">100</span></div></div>
                     <div class="sol-step">=> P = <div class="frac"><span class="num">45 &times; 100</span><span class="den">9</span></div> = 5 &times; 100 = 500</div>
-                    <div class="sol-step">Answer: Meena borrowed <span class="ans-highlight">₹ 500</span>.</div>
+                    <div class="sol-step">Meena borrowed <span class="ans-highlight">₹ 500</span>.</div>
                 </div>
             </div>
         </div>
-    `,
+    ``
   },
   examples: [],
   mcqs: [
     {
-      id: "m1",
-      question: "Ratio of 1 km to 100 m is:",
-      options: ["1:100", "10:1", "1:10", "100:1"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m2",
-      question: "0.75 as a percentage is:",
+      id: "c7g7-mcq-1",
+      question: "What is 0.75 expressed as a percentage?",
       options: ["7.5%", "75%", "0.75%", "750%"],
-      correctAnswer: "B",
+      correctAnswer: "b",
+      explanation: "To convert a decimal to a percentage, multiply by 100: 0.75 × 100 = 75%."
     },
     {
-      id: "m3",
-      question: "If CP = 100 and SP = 120, then profit% is:",
+      id: "c7g7-mcq-2",
+      question: "If Cost Price (CP) = ₹100 and Selling Price (SP) = ₹120, what is the profit percentage?",
       options: ["20%", "10%", "25%", "15%"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "Profit = 120 - 100 = 20. Profit% = (20 / 100) × 100 = 20%."
     },
     {
-      id: "m4",
-      question: "Simple Interest on ₹1000 at 10% for 1 year is:",
+      id: "c7g7-mcq-3",
+      question: "What is the Simple Interest on ₹1,000 at 10% per annum for 1 year?",
       options: ["₹100", "₹10", "₹1", "₹1000"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "SI = (P × R × T) / 100 = (1000 × 10 × 1) / 100 = ₹100."
     },
     {
-      id: "m5",
-      question: "20% of 50 is:",
+      id: "c7g7-mcq-4",
+      question: "What is 20% of 50?",
       options: ["10", "20", "5", "1"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "20% of 50 = (20 / 100) × 50 = 10."
     },
     {
-      id: "m6",
-      question: "If 10% of x is 20, then x is:",
+      id: "c7g7-mcq-5",
+      question: "If 10% of a number x is 20, what is x?",
       options: ["200", "100", "20", "2000"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "(10 / 100) × x = 20 ⇒ x = 20 × 10 = 200."
     },
     {
-      id: "m7",
-      question: "Ratio 3:1 in percentage is:",
+      id: "c7g7-mcq-6",
+      question: "Convert the ratio 3 : 1 into percentages for each part:",
       options: ["75%, 25%", "25%, 75%", "30%, 10%", "3%, 1%"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "Total parts = 3 + 1 = 4. First part = (3/4)×100 = 75%; Second part = (1/4)×100 = 25%."
     },
     {
-      id: "m8",
-      question: "Principal = ₹500, Rate = 5%, Time = 2 years. SI is:",
+      id: "c7g7-mcq-7",
+      question: "For Principal = ₹500, Rate = 5% p.a., Time = 2 years, what is the Simple Interest?",
       options: ["₹50", "₹25", "₹100", "₹10"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "SI = (500 × 5 × 2) / 100 = ₹50."
     },
     {
-      id: "m9",
-      question: "Profit is made when:",
-      options: ["SP > CP", "CP > SP", "SP = CP", "None"],
-      correctAnswer: "A",
+      id: "c7g7-mcq-8",
+      question: "A transaction results in a profit when:",
+      options: ["Selling Price > Cost Price", "Cost Price > Selling Price", "Selling Price = Cost Price", "None of these"],
+      correctAnswer: "a",
+      explanation: "Profit occurs when Selling Price exceeds Cost Price (SP > CP)."
     },
     {
-      id: "m10",
-      question: "0.02 as percentage is:",
+      id: "c7g7-mcq-9",
+      question: "What is 0.02 as a percentage?",
       options: ["2%", "20%", "0.2%", "200%"],
-      correctAnswer: "A",
+      correctAnswer: "a",
+      explanation: "0.02 × 100 = 2%."
     },
+    {
+      id: "c7g7-mcq-10",
+      question: "If Meeta saves ₹4000 which is 10% of her salary, what is her total salary?",
+      options: ["₹40,000", "₹4,000", "₹4,00,000", "₹44,000"],
+      correctAnswer: "a",
+      explanation: "10% of Salary = 4000 ⇒ Salary = 4000 × 10 = ₹40,000."
+    }
   ],
   summary: [],
 };
