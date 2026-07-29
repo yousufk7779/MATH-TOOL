@@ -371,39 +371,44 @@ export const c7Math4: ChapterContent = {
 
             <div class="sol-card">
                 <div class="question-header">6. Set up an equation in the following cases:<br/>
-                (i) Irfan says that he has 7 marbles, more than five times the marbles Parmit has. Irfan has 37 marbles. (Take m to be the number of Parmit's marbles).<br/>
-                (ii) Laxmi's father is 49 years old. He is 4 years older than three times Laxmi's age. (Take Laxmi's age to be y years).<br/>
-                (iii) The teacher tells the class that the highest marks obtained by a student in her class are twice the lowest marks plus 7. The highest score is 87. (Take the lowest score to be l).<br/>
+                (i) Gaurav says that he has 7 marbles more than five times the marbles Imran has. Gaurav has 37 marbles. (Take m to be the number of Imran's marbles).<br/>
+                (ii) Gulshan's father is 49 years old. He is 4 years older than three times Gulshan's age. (Take Gulshan's age to be y years).<br/>
+                (iii) The teacher tells the class that the highest marks obtained by a student in her class is twice the lowest marks plus 7. The highest score is 87. (Take the lowest score to be l).<br/>
                 (iv) In an isosceles triangle, the vertex angle is twice either base angle. (Let the base angle be b in degrees. Remember that the sum of angles of a triangle is 180 degrees).</div>
                 <div class="sol-body">
-                    <div class="sol-step"><b>(i) Irfan's marbles:</b></div>
-                    <div class="sol-step">Let the number of Parmit's marbles be m.</div>
-                    <div class="sol-step">5 times Parmit's marbles = 5m</div>
-                    <div class="sol-step">7 more than five times = 5m + 7</div>
-                    <div class="sol-step">Total marbles Irfan has = 37</div>
-                    <div class="sol-step">Equation: <span class="ans-highlight">5m + 7 = 37</span></div>
+                    <div class="sol-step"><b>(i) Gaurav's marbles:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the number of Imran's marbles be m</div>
+                    <div class="sol-step">5 times Imran's marbles = 5m</div>
+                    <div class="sol-step">7 marbles more than five times = 5m + 7</div>
+                    <div class="sol-step">Total marbles Gaurav has = 37</div>
+                    <div class="sol-step"><span class="ans-highlight">Equation: 5m + 7 = 37</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(ii) Laxmi's father's age:</b></div>
-                    <div class="sol-step">Let Laxmi's age be y years.</div>
-                    <div class="sol-step">Three times Laxmi's age = 3y</div>
-                    <div class="sol-step">4 years older = 3y + 4</div>
-                    <div class="sol-step">Total age = 49</div>
-                    <div class="sol-step">Equation: <span class="ans-highlight">3y + 4 = 49</span></div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(ii) Gulshan's father's age:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let Gulshan's age be y years</div>
+                    <div class="sol-step">Three times Gulshan's age = 3y</div>
+                    <div class="sol-step">4 years older than three times age = 3y + 4</div>
+                    <div class="sol-step">Father's age = 49</div>
+                    <div class="sol-step"><span class="ans-highlight">Equation: 3y + 4 = 49</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(iii) Highest marks:</b></div>
-                    <div class="sol-step">Let the lowest score be l.</div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(iii) Highest marks in class:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the lowest score be l</div>
                     <div class="sol-step">Twice the lowest score = 2l</div>
                     <div class="sol-step">Twice lowest score plus 7 = 2l + 7</div>
                     <div class="sol-step">Highest score = 87</div>
-                    <div class="sol-step">Equation: <span class="ans-highlight">2l + 7 = 87</span></div>
+                    <div class="sol-step"><span class="ans-highlight">Equation: 2l + 7 = 87</span></div>
 
-                    <div class="sol-step" style="margin-top: 15px;"><b>(iv) Isosceles triangle angles:</b></div>
-                    <div class="sol-step">Let the base angle be b degrees.</div>
-                    <div class="sol-step">Base angles of isosceles triangle are equal, so both base angles are b.</div>
-                    <div class="sol-step">Vertex angle = 2b</div>
-                    <div class="sol-step">Sum of angles = b + b + 2b = 180&deg;</div>
-                    <div class="sol-step">Simplifying: 4b = 180&deg;</div>
-                    <div class="sol-step">Equation: <span class="ans-highlight">4b = 180&deg;</span></div>
+                    <div class="sol-step" style="margin-top: 20px;"><b>(iv) Isosceles triangle angles:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Let the base angle be b degrees</div>
+                    <div class="sol-step">In an isosceles triangle, both base angles are equal (b and b)</div>
+                    <div class="sol-step">Vertex angle = 2 &times; base angle = 2b</div>
+                    <div class="sol-step">Sum of all three angles in a triangle = 180&deg;</div>
+                    <div class="sol-step">b + b + 2b = 180&deg;</div>
+                    <div class="sol-step">4b = 180&deg;</div>
+                    <div class="sol-step"><span class="ans-highlight">Equation: 4b = 180&deg;</span></div>
                 </div>
             </div>
         </div>
