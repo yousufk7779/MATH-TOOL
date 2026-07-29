@@ -668,9 +668,9 @@ export const c7Math3: ChapterContent = {
                 <div class="sol-body">
                     <div class="table-responsive">
                         <table class="data-table">
-                            <tr><th>Favourite Sport</th><th>Cricket</th><th>Basket Ball</th><th>Swimming</th><th>Hockey</th><th>Athletics</th></tr>
+                            <tr><th>Sport</th><th>Cricket</th><th>Basket<br/>Ball</th><th>Swim-<br/>ming</th><th>Hockey</th><th>Athle-<br/>tics</th></tr>
                             <tr><th>Watching</th><td>1240</td><td>470</td><td>510</td><td>430</td><td>250</td></tr>
-                            <tr><th>Participating</th><td>620</td><td>320</td><td>320</td><td>250</td><td>105</td></tr>
+                            <tr><th>Partici-<br/>pating</th><td>620</td><td>320</td><td>320</td><td>250</td><td>105</td></tr>
                         </table>
                     </div>
 
@@ -718,9 +718,9 @@ export const c7Math3: ChapterContent = {
                 <div class="sol-body">
                     <div class="table-responsive">
                         <table class="data-table">
-                            <tr><th>City</th><th>Ahmedabad</th><th>Amritsar</th><th>Bangalore</th><th>Chennai</th><th>Delhi</th><th>Jaipur</th><th>Jammu</th><th>Mumbai</th></tr>
-                            <tr><th>Max Temp</th><td>38°C</td><td>37°C</td><td>28°C</td><td>36°C</td><td>38°C</td><td>39°C</td><td>45°C</td><td>32°C</td></tr>
-                            <tr><th>Min Temp</th><td>29°C</td><td>26°C</td><td>21°C</td><td>27°C</td><td>28°C</td><td>29°C</td><td>26°C</td><td>27°C</td></tr>
+                            <tr><th>City</th><th>Ahmed-<br/>abad</th><th>Amrit-<br/>sar</th><th>Banga-<br/>lore</th><th>Chen-<br/>nai</th><th>Delhi</th><th>Jai-<br/>pur</th><th>Jam-<br/>mu</th><th>Mum-<br/>bai</th></tr>
+                            <tr><th>Max</th><td>38°C</td><td>37°C</td><td>28°C</td><td>36°C</td><td>38°C</td><td>39°C</td><td>45°C</td><td>32°C</td></tr>
+                            <tr><th>Min</th><td>29°C</td><td>26°C</td><td>21°C</td><td>27°C</td><td>28°C</td><td>29°C</td><td>26°C</td><td>27°C</td></tr>
                         </table>
                     </div>
 

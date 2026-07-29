@@ -1231,7 +1231,7 @@ const MathWebView = memo(
         margin: 15px auto !important; 
         border-radius: 8px !important;
       }
-      table:not(.prop-table) { 
+      table:not(.prop-table):not(.data-table) { 
         width: 100% !important; 
         max-width: 100% !important; 
         display: table !important; 
@@ -1246,20 +1246,23 @@ const MathWebView = memo(
         display: block !important;
         margin: 15px 0 !important;
       }
-      .table-container table, .table-responsive table, .prop-table {
-        width: max-content !important;
-        max-width: none !important;
-        min-width: 100% !important;
+      .table-container table, .table-responsive table, .data-table, .prop-table {
+        width: 100% !important;
+        max-width: 100% !important;
         display: table !important;
         margin: 0 auto !important;
         border-collapse: collapse !important;
+        table-layout: auto !important;
       }
       .table-container th, .table-container td,
       .table-responsive th, .table-responsive td,
+      .data-table th, .data-table td,
       .prop-table th, .prop-table td {
         text-align: center !important;
-        padding: 6px 5px !important;
-        font-size: 13px !important;
+        padding: 5px 2px !important;
+        font-size: 11.5px !important;
+        line-height: 1.25 !important;
+        word-break: normal !important;
       }
       pre, code { 
         white-space: pre-wrap !important; 
