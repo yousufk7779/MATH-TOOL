@@ -7,16 +7,36 @@ export const c7Math2: ChapterContent = {
   isHtmlView: true,
   introduction:
     "In this chapter, we will learn about fractions and decimals including their addition, subtraction, multiplication and division. We will also explore how to represent them visually and solve real-life problems.",
-  definitions: [],
-  keyPoints: [
-    "A fraction represents a part of a whole.",
-    "Proper fractions have a numerator less than the denominator.",
-    "Improper fractions have a numerator greater than or equal to the denominator.",
-    "To multiply fractions, multiply the numerators together and the denominators together.",
-    "To divide by a fraction, multiply by its reciprocal.",
-    "Decimals are another way of expressing fractions with denominators as powers of 10.",
+  definitions: [
+    {
+      term: "Proper Fraction",
+      description: "A fraction where the numerator is less than the denominator. Example: 3/5",
+    },
+    {
+      term: "Improper Fraction",
+      description: "A fraction where the numerator is greater than or equal to the denominator. Example: 7/4",
+    },
+    {
+      term: "Mixed Fraction",
+      description: "A combination of a whole number and a proper fraction. Example: 2 ¾",
+    },
+    {
+      term: "Reciprocal",
+      description: "The inverted form of a non-zero fraction such that their product is 1.",
+    },
   ],
-  formulas: [],
+  keyPoints: [
+    "To add or subtract unlike fractions, first take the LCM of denominators to make them like fractions.",
+    "Product of fractions = (Product of Numerators) / (Product of Denominators).",
+    "To divide one fraction by another, multiply the first fraction by the reciprocal of the second.",
+    "When multiplying decimals by 10, 100, or 1000, shift the decimal point to the right.",
+    "When dividing decimals by 10, 100, or 1000, shift the decimal point to the left.",
+  ],
+  formulas: [
+    { name: "Fraction Multiplication", formula: "\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}" },
+    { name: "Fraction Division", formula: "\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c}" },
+    { name: "Reciprocal", formula: "\\text{Reciprocal of } \\frac{a}{b} = \\frac{b}{a}" },
+  ],
   crux: [],
   exercises: [
     { id: "ex2-1", name: "Exercise 2.1", questions: [] },
@@ -31,18 +51,18 @@ export const c7Math2: ChapterContent = {
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
             .section-title { color: #FF4081; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
-            .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; }
+            .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; text-align: justify; }
             .point-box { background: rgba(255, 64, 129, 0.05); border-left: 4px solid #FF4081; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
-            .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; }
+            .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; text-align: justify; }
             .point-item::before { content: '•'; color: #FF4081; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <p class="content-text">This chapter deepens our understanding of fractional parts and decimal representations, focusing on precision in arithmetic operations.</p>
+            <div class="section-title">Chapter Overview: Fractions and Decimals</div>
+            <p class="content-text">This chapter covers proper, improper and mixed fractions, fraction arithmetic (addition, subtraction, multiplication, division), reciprocals, decimal operations, unit conversions, and real-life word problems.</p>
             <div class="point-box">
-                <div class="point-item">Multiplication of fractions: Product of Numerators / Product of Denominators.</div>
-                <div class="point-item">Reciprocal: Two non-zero numbers whose product is 1 are reciprocals.</div>
-                <div class="point-item">Division: Multiplication of the first fraction by the reciprocal of the second.</div>
-                <div class="point-item">Decimal multiplication: Count the total decimal places in factors to place the point in the product.</div>
+                <div class="point-item">LCM Method: Convert unlike fractions to like fractions before addition/subtraction.</div>
+                <div class="point-item">Reciprocals & Division: Flip the second fraction and multiply.</div>
+                <div class="point-item">Decimals: Shift point right for multiplication by 10/100/1000 and left for division.</div>
             </div>
         </div>
     `,
@@ -50,1531 +70,1827 @@ export const c7Math2: ChapterContent = {
     "ex2-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
-            .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 5px; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
-            .svg-container { text-align: center; margin: 20px 0; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px dashed #FF4081; }
-            .magic-table { width: 100% !important; margin: 20px auto; border-collapse: collapse; background: #1a1a2e; border: 2px solid #FF4081; table-layout: fixed; display: table !important; }
-            .magic-table td { border: 1px solid #FF4081; padding: 20px 5px; text-align: center; width: 33.33% !important; display: table-cell !important; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
+            .svg-container { text-align: center; margin: 15px auto; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px solid #42A5F5; overflow-x: auto; }
+            .svg-container svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         </style>
         <div class="container">
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Solve the following fraction expressions:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 2 - <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Writing 2 as a fraction: <div class="frac"><span class="num">2</span><span class="den">1</span></div></div>
+                    <div class="sol-step">LCM of denominators 1 and 5 = 5</div>
+                    <div class="sol-step">Converting <div class="frac"><span class="num">2</span><span class="den">1</span></div> to denominator 5: <div class="frac"><span class="num">2 × 5</span><span class="den">1 × 5</span></div> = <div class="frac"><span class="num">10</span><span class="den">5</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">10</span><span class="den">5</span></div> - <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">10 - 3</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">7</span><span class="den">5</span></div> = 1 <div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
 
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 4 + <div class="frac"><span class="num">7</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Writing 4 as a fraction: <div class="frac"><span class="num">4</span><span class="den">1</span></div></div>
+                    <div class="sol-step">LCM of denominators 1 and 8 = 8</div>
+                    <div class="sol-step">Converting <div class="frac"><span class="num">4</span><span class="den">1</span></div> to denominator 8: <div class="frac"><span class="num">4 × 8</span><span class="den">1 × 8</span></div> = <div class="frac"><span class="num">32</span><span class="den">8</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">32</span><span class="den">8</span></div> + <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">32 + 7</span><span class="den">8</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">39</span><span class="den">8</span></div> = 4 <div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
 
-            <div class="question">1. Solve:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 2 - <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">We can write 2 as <div class="frac"><span class="num">2</span><span class="den">1</span></div></div>
-                <div class="sol-step">LCM of 1 and 5 is 5</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2 &times; 5</span><span class="den">1 &times; 5</span></div> - <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">10</span><span class="den">5</span></div> - <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">10 - 3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">5</span></div></div>
-                <div class="sol-step">Converting to mixed fraction: <span class="ans-highlight">1<div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">3</span><span class="den">5</span></div> + <div class="frac"><span class="num">2</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">LCM of 5 and 7 = 35</div>
+                    <div class="sol-step"><div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">3 × 7</span><span class="den">5 × 7</span></div> = <div class="frac"><span class="num">21</span><span class="den">35</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">7</span></div> = <div class="frac"><span class="num">2 × 5</span><span class="den">7 × 5</span></div> = <div class="frac"><span class="num">10</span><span class="den">35</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">21</span><span class="den">35</span></div> + <div class="frac"><span class="num">10</span><span class="den">35</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">21 + 10</span><span class="den">35</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">31</span><span class="den">35</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 4 + <div class="frac"><span class="num">7</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">We can write 4 as <div class="frac"><span class="num">4</span><span class="den">1</span></div></div>
-                <div class="sol-step">LCM of 1 and 8 is 8</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4 &times; 8</span><span class="den">1 &times; 8</span></div> + <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">32</span><span class="den">8</span></div> + <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">32 + 7</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">39</span><span class="den">8</span></div></div>
-                <div class="sol-step">Converting to mixed fraction: <span class="ans-highlight">4<div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) <div class="frac"><span class="num">9</span><span class="den">11</span></div> - <div class="frac"><span class="num">4</span><span class="den">15</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">LCM of 11 and 15 = 165</div>
+                    <div class="sol-step"><div class="frac"><span class="num">9</span><span class="den">11</span></div> = <div class="frac"><span class="num">9 × 15</span><span class="den">165</span></div> = <div class="frac"><span class="num">135</span><span class="den">165</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">4</span><span class="den">15</span></div> = <div class="frac"><span class="num">4 × 11</span><span class="den">165</span></div> = <div class="frac"><span class="num">44</span><span class="den">165</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">135</span><span class="den">165</span></div> - <div class="frac"><span class="num">44</span><span class="den">165</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">135 - 44</span><span class="den">165</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">91</span><span class="den">165</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">3</span><span class="den">5</span></div> + <div class="frac"><span class="num">2</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">LCM of 5 and 7 is 35</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3 &times; 7</span><span class="den">5 &times; 7</span></div> + <div class="frac"><span class="num">2 &times; 5</span><span class="den">7 &times; 5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">21</span><span class="den">35</span></div> + <div class="frac"><span class="num">10</span><span class="den">35</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">21 + 10</span><span class="den">35</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">31</span><span class="den">35</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) <div class="frac"><span class="num">7</span><span class="den">10</span></div> + <div class="frac"><span class="num">2</span><span class="den">5</span></div> + <div class="frac"><span class="num">3</span><span class="den">2</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">LCM of 10, 5, 2 = 10</div>
+                    <div class="sol-step"><div class="frac"><span class="num">7</span><span class="den">10</span></div> = <div class="frac"><span class="num">7</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">2 × 2</span><span class="den">10</span></div> = <div class="frac"><span class="num">4</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">3</span><span class="den">2</span></div> = <div class="frac"><span class="num">3 × 5</span><span class="den">10</span></div> = <div class="frac"><span class="num">15</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">7 + 4 + 15</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">26</span><span class="den">10</span></div> = <div class="frac"><span class="num">13</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">13</span><span class="den">5</span></div> = 2 <div class="frac"><span class="num">3</span><span class="den">5</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) <div class="frac"><span class="num">9</span><span class="den">11</span></div> - <div class="frac"><span class="num">4</span><span class="den">15</span></div></b></div>
-                <div class="sol-step">LCM of 11 and 15 is 165</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">9 &times; 15</span><span class="den">11 &times; 15</span></div> - <div class="frac"><span class="num">4 &times; 11</span><span class="den">15 &times; 11</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">135</span><span class="den">165</span></div> - <div class="frac"><span class="num">44</span><span class="den">165</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">135 - 44</span><span class="den">165</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">91</span><span class="den">165</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 2 <div class="frac"><span class="num">2</span><span class="den">3</span></div> + 3 <div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting to improper fractions: 2 <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">8</span><span class="den">3</span></div>, 3 <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
+                    <div class="sol-step">LCM of 3 and 2 = 6</div>
+                    <div class="sol-step"><div class="frac"><span class="num">8</span><span class="den">3</span></div> = <div class="frac"><span class="num">8 × 2</span><span class="den">6</span></div> = <div class="frac"><span class="num">16</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">7</span><span class="den">2</span></div> = <div class="frac"><span class="num">7 × 3</span><span class="den">6</span></div> = <div class="frac"><span class="num">21</span><span class="den">6</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">16 + 21</span><span class="den">6</span></div> = <div class="frac"><span class="num">37</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">37</span><span class="den">6</span></div> = 6 <div class="frac"><span class="num">1</span><span class="den">6</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) <div class="frac"><span class="num">7</span><span class="den">10</span></div> + <div class="frac"><span class="num">2</span><span class="den">5</span></div> + <div class="frac"><span class="num">3</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">LCM of 10, 5 and 2 is 10</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">10</span></div> + <div class="frac"><span class="num">2 &times; 2</span><span class="den">5 &times; 2</span></div> + <div class="frac"><span class="num">3 &times; 5</span><span class="den">2 &times; 5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">10</span></div> + <div class="frac"><span class="num">4</span><span class="den">10</span></div> + <div class="frac"><span class="num">15</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7 + 4 + 15</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">26</span><span class="den">10</span></div></div>
-                <div class="sol-step">Reducing to simplest form: <div class="frac"><span class="num">13</span><span class="den">5</span></div></div>
-                <div class="sol-step">Converting to mixed fraction: <span class="ans-highlight">2<div class="frac"><span class="num">3</span><span class="den">5</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 2<div class="frac"><span class="num">2</span><span class="den">3</span></div> + 3<div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">Converting to improper fractions:</div>
-                <div class="sol-step">2<div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">2 &times; 3 + 2</span><span class="den">3</span></div> = <div class="frac"><span class="num">8</span><span class="den">3</span></div></div>
-                <div class="sol-step">3<div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">3 &times; 2 + 1</span><span class="den">2</span></div> = <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
-                <div class="sol-step">LCM of 3 and 2 is 6</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">8 &times; 2</span><span class="den">3 &times; 2</span></div> + <div class="frac"><span class="num">7 &times; 3</span><span class="den">2 &times; 3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16</span><span class="den">6</span></div> + <div class="frac"><span class="num">21</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16 + 21</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">37</span><span class="den">6</span></div></div>
-                <div class="sol-step">Converting to mixed fraction: <span class="ans-highlight">6<div class="frac"><span class="num">1</span><span class="den">6</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 8<div class="frac"><span class="num">1</span><span class="den">2</span></div> - 3<div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">Converting to improper fractions:</div>
-                <div class="sol-step">8<div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">17</span><span class="den">2</span></div></div>
-                <div class="sol-step">3<div class="frac"><span class="num">5</span><span class="den">8</span></div> = <div class="frac"><span class="num">29</span><span class="den">8</span></div></div>
-                <div class="sol-step">LCM of 2 and 8 is 8</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">17 &times; 4</span><span class="den">2 &times; 4</span></div> - <div class="frac"><span class="num">29</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">68</span><span class="den">8</span></div> - <div class="frac"><span class="num">29</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">68 - 29</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">39</span><span class="den">8</span></div></div>
-                <div class="sol-step">Converting to mixed fraction: <span class="ans-highlight">4<div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
-            </div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii)</b> 4 + <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">32 + 7</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">39</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight">4<div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii)</b> <div class="frac"><span class="num">3</span><span class="den">5</span></div> + <div class="frac"><span class="num">2</span><span class="den">7</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">21 + 10</span><span class="den">35</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight"><div class="frac"><span class="num">31</span><span class="den">35</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv)</b> <div class="frac"><span class="num">9</span><span class="den">11</span></div> - <div class="frac"><span class="num">4</span><span class="den">15</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">135 - 44</span><span class="den">165</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight"><div class="frac"><span class="num">91</span><span class="den">165</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(v)</b> <div class="frac"><span class="num">7</span><span class="den">10</span></div> + <div class="frac"><span class="num">2</span><span class="den">5</span></div> + <div class="frac"><span class="num">3</span><span class="den">2</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">7 + 4 + 15</span><span class="den">10</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">26</span><span class="den">10</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">13</span><span class="den">5</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight">2<div class="frac"><span class="num">3</span><span class="den">5</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi)</b> 2<div class="frac"><span class="num">2</span><span class="den">3</span></div> + 3<div class="frac"><span class="num">1</span><span class="den">2</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">8</span><span class="den">3</span></div> + <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">16 + 21</span><span class="den">6</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">37</span><span class="den">6</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight">6<div class="frac"><span class="num">1</span><span class="den">6</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii)</b> 8<div class="frac"><span class="num">1</span><span class="den">2</span></div> - 3<div class="frac"><span class="num">5</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">17</span><span class="den">2</span></div> - <div class="frac"><span class="num">29</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">68 - 29</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">39</span><span class="den">8</span></div></div>
-                <div class="sol-step">= <span class="ans-highlight">4<div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 8 <div class="frac"><span class="num">1</span><span class="den">2</span></div> - 3 <div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting to improper fractions: 8 <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">17</span><span class="den">2</span></div>, 3 <div class="frac"><span class="num">5</span><span class="den">8</span></div> = <div class="frac"><span class="num">29</span><span class="den">8</span></div></div>
+                    <div class="sol-step">LCM of 2 and 8 = 8</div>
+                    <div class="sol-step"><div class="frac"><span class="num">17</span><span class="den">2</span></div> = <div class="frac"><span class="num">17 × 4</span><span class="den">8</span></div> = <div class="frac"><span class="num">68</span><span class="den">8</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">68</span><span class="den">8</span></div> - <div class="frac"><span class="num">29</span><span class="den">8</span></div> = <div class="frac"><span class="num">68 - 29</span><span class="den">8</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">39</span><span class="den">8</span></div> = 4 <div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">2. Arrange the following in ascending order: <br/>(i) <div class="frac"><span class="num">2</span><span class="den">9</span></div>, <div class="frac"><span class="num">2</span><span class="den">3</span></div>, <div class="frac"><span class="num">8</span><span class="den">21</span></div></div>
-            <div class="solution">
-                <div class="sol-step"><b>Easy Method: Make Numerators Same</b></div>
-                <div class="sol-step">We have numerators 2, 2, and 8. Let's make them all 8.</div>
-                <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">9</span></div> = <div class="frac"><span class="num">2 &times; 4</span><span class="den">9 &times; 4</span></div> = <div class="frac"><span class="num">8</span><span class="den">36</span></div></div>
-                <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">2 &times; 4</span><span class="den">3 &times; 4</span></div> = <div class="frac"><span class="num">8</span><span class="den">12</span></div></div>
-                <div class="sol-step">Now we compare: <div class="frac"><span class="num">8</span><span class="den">36</span></div>, <div class="frac"><span class="num">8</span><span class="den">12</span></div>, and <div class="frac"><span class="num">8</span><span class="den">21</span></div></div>
-                <div class="sol-step">Rule: If numerators are same, the fraction with the <b>largest</b> denominator is the <b>smallest</b>.</div>
-                <div class="sol-step">Since 36 &gt; 21 &gt; 12, we have: <div class="frac"><span class="num">8</span><span class="den">36</span></div> &lt; <div class="frac"><span class="num">8</span><span class="den">21</span></div> &lt; <div class="frac"><span class="num">8</span><span class="den">12</span></div></div>
-                <div class="sol-step">Ascending order: <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">9</span></div>, <div class="frac"><span class="num">8</span><span class="den">21</span></div>, <div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Arrange the following in descending order:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">2</span><span class="den">9</span></div>, <div class="frac"><span class="num">2</span><span class="den">3</span></div>, <div class="frac"><span class="num">8</span><span class="den">21</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">LCM of denominators 9, 3, 21 = 63</div>
+                    <div class="sol-step">Converting to like fractions:</div>
+                    <div class="sol-step">• <div class="frac"><span class="num">2</span><span class="den">9</span></div> = <div class="frac"><span class="num">2 × 7</span><span class="den">63</span></div> = <div class="frac"><span class="num">14</span><span class="den">63</span></div></div>
+                    <div class="sol-step">• <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">2 × 21</span><span class="den">63</span></div> = <div class="frac"><span class="num">42</span><span class="den">63</span></div></div>
+                    <div class="sol-step">• <div class="frac"><span class="num">8</span><span class="den">21</span></div> = <div class="frac"><span class="num">8 × 3</span><span class="den">63</span></div> = <div class="frac"><span class="num">24</span><span class="den">63</span></div></div>
+                    <div class="sol-step">Comparing numerators: 42 &gt; 24 &gt; 14</div>
+                    <div class="sol-step">So, <div class="frac"><span class="num">42</span><span class="den">63</span></div> &gt; <div class="frac"><span class="num">24</span><span class="den">63</span></div> &gt; <div class="frac"><span class="num">14</span><span class="den">63</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Descending order: <div class="frac"><span class="num">2</span><span class="den">3</span></div> &gt; <div class="frac"><span class="num">8</span><span class="den">21</span></div> &gt; <div class="frac"><span class="num">2</span><span class="den">9</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">1</span><span class="den">5</span></div>, <div class="frac"><span class="num">3</span><span class="den">7</span></div>, <div class="frac"><span class="num">7</span><span class="den">10</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">LCM of denominators 5, 7, 10 = 70</div>
+                    <div class="sol-step">Converting to like fractions:</div>
+                    <div class="sol-step">• <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">1 × 14</span><span class="den">70</span></div> = <div class="frac"><span class="num">14</span><span class="den">70</span></div></div>
+                    <div class="sol-step">• <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">3 × 10</span><span class="den">70</span></div> = <div class="frac"><span class="num">30</span><span class="den">70</span></div></div>
+                    <div class="sol-step">• <div class="frac"><span class="num">7</span><span class="den">10</span></div> = <div class="frac"><span class="num">7 × 7</span><span class="den">70</span></div> = <div class="frac"><span class="num">49</span><span class="den">70</span></div></div>
+                    <div class="sol-step">Comparing numerators: 49 &gt; 30 &gt; 14</div>
+                    <div class="sol-step">So, <div class="frac"><span class="num">49</span><span class="den">70</span></div> &gt; <div class="frac"><span class="num">30</span><span class="den">70</span></div> &gt; <div class="frac"><span class="num">14</span><span class="den">70</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Descending order: <div class="frac"><span class="num">7</span><span class="den">10</span></div> &gt; <div class="frac"><span class="num">3</span><span class="den">7</span></div> &gt; <div class="frac"><span class="num">1</span><span class="den">5</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">3. In a "magic square", the sum of the numbers in each row, in each column and along the diagonal is the same. Is this a magic square?</div>
-            <table class="magic-table">
-                <tr><td style="width: 33.33%"><div class="frac"><span class="num">2</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">9</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">4</span><span class="den">13</span></div></td></tr>
-                <tr><td style="width: 33.33%"><div class="frac"><span class="num">7</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">5</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">3</span><span class="den">13</span></div></td></tr>
-                <tr><td style="width: 33.33%"><div class="frac"><span class="num">6</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">1</span><span class="den">13</span></div></td><td style="width: 33.33%"><div class="frac"><span class="num">8</span><span class="den">13</span></div></td></tr>
-            </table>
-            <div class="solution">
-                <div class="sol-step">Sum along first row = <div class="frac"><span class="num">2</span><span class="den">13</span></div> + <div class="frac"><span class="num">9</span><span class="den">13</span></div> + <div class="frac"><span class="num">4</span><span class="den">13</span></div> = <div class="frac"><span class="num">15</span><span class="den">13</span></div></div>
-                <div class="sol-step">Sum along second row = <div class="frac"><span class="num">7+5+3</span><span class="den">13</span></div> = <div class="frac"><span class="num">15</span><span class="den">13</span></div></div>
-                <div class="sol-step">Sum along third row = <div class="frac"><span class="num">6+1+8</span><span class="den">13</span></div> = <div class="frac"><span class="num">15</span><span class="den">13</span></div></div>
-                <div class="sol-step">Sum along first column = <div class="frac"><span class="num">2+7+6</span><span class="den">13</span></div> = <div class="frac"><span class="num">15</span><span class="den">13</span></div></div>
-                <div class="sol-step">Sum along diagonal = <div class="frac"><span class="num">2+5+8</span><span class="den">13</span></div> = <div class="frac"><span class="num">15</span><span class="den">13</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight">Yes, it is a magic square</span> as all sums are <div class="frac"><span class="num">15</span><span class="den">13</span></div>.</div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. In a "magic square", the sum of the numbers in each row, in each column and along the diagonals is the same. Check if the given square is a magic square:<br/>Row 1: <div class="frac"><span class="num">4</span><span class="den">11</span></div>, <div class="frac"><span class="num">9</span><span class="den">11</span></div>, <div class="frac"><span class="num">2</span><span class="den">11</span></div><br/>Row 2: <div class="frac"><span class="num">3</span><span class="den">11</span></div>, <div class="frac"><span class="num">5</span><span class="den">11</span></div>, <div class="frac"><span class="num">7</span><span class="den">11</span></div><br/>Row 3: <div class="frac"><span class="num">8</span><span class="den">11</span></div>, <div class="frac"><span class="num">1</span><span class="den">11</span></div>, <div class="frac"><span class="num">6</span><span class="den">11</span></div></div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Sum along rows:</div>
+                    <div class="sol-step">• Row 1 = <div class="frac"><span class="num">4</span><span class="den">11</span></div> + <div class="frac"><span class="num">9</span><span class="den">11</span></div> + <div class="frac"><span class="num">2</span><span class="den">11</span></div> = <div class="frac"><span class="num">4 + 9 + 2</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">• Row 2 = <div class="frac"><span class="num">3</span><span class="den">11</span></div> + <div class="frac"><span class="num">5</span><span class="den">11</span></div> + <div class="frac"><span class="num">7</span><span class="den">11</span></div> = <div class="frac"><span class="num">3 + 5 + 7</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">• Row 3 = <div class="frac"><span class="num">8</span><span class="den">11</span></div> + <div class="frac"><span class="num">1</span><span class="den">11</span></div> + <div class="frac"><span class="num">6</span><span class="den">11</span></div> = <div class="frac"><span class="num">8 + 1 + 6</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">Sum along columns:</div>
+                    <div class="sol-step">• Column 1 = <div class="frac"><span class="num">4</span><span class="den">11</span></div> + <div class="frac"><span class="num">3</span><span class="den">11</span></div> + <div class="frac"><span class="num">8</span><span class="den">11</span></div> = <div class="frac"><span class="num">4 + 3 + 8</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">• Column 2 = <div class="frac"><span class="num">9</span><span class="den">11</span></div> + <div class="frac"><span class="num">5</span><span class="den">11</span></div> + <div class="frac"><span class="num">1</span><span class="den">11</span></div> = <div class="frac"><span class="num">9 + 5 + 1</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">• Column 3 = <div class="frac"><span class="num">2</span><span class="den">11</span></div> + <div class="frac"><span class="num">7</span><span class="den">11</span></div> + <div class="frac"><span class="num">6</span><span class="den">11</span></div> = <div class="frac"><span class="num">2 + 7 + 6</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">Sum along diagonals:</div>
+                    <div class="sol-step">• Diagonal 1 = <div class="frac"><span class="num">4</span><span class="den">11</span></div> + <div class="frac"><span class="num">5</span><span class="den">11</span></div> + <div class="frac"><span class="num">6</span><span class="den">11</span></div> = <div class="frac"><span class="num">4 + 5 + 6</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">• Diagonal 2 = <div class="frac"><span class="num">2</span><span class="den">11</span></div> + <div class="frac"><span class="num">5</span><span class="den">11</span></div> + <div class="frac"><span class="num">8</span><span class="den">11</span></div> = <div class="frac"><span class="num">2 + 5 + 8</span><span class="den">11</span></div> = <div class="frac"><span class="num">15</span><span class="den">11</span></div></div>
+                    <div class="sol-step">Since all row, column and diagonal sums equal <div class="frac"><span class="num">15</span><span class="den">11</span></div>, <span class="ans-highlight">Yes, this is a magic square.</span></div>
+                </div>
             </div>
 
-            <div class="question">4. A rectangle sheet of paper is 12<div class="frac"><span class="num">1</span><span class="den">2</span></div> cm long and 10<div class="frac"><span class="num">2</span><span class="den">3</span></div> cm wide. Find its perimeter.</div>
-            <div class="solution">
-                <div class="sol-step">Length of the sheet (L) = 12<div class="frac"><span class="num">1</span><span class="den">2</span></div> cm = <div class="frac"><span class="num">25</span><span class="den">2</span></div> cm</div>
-                <div class="sol-step">Width of the sheet (W) = 10<div class="frac"><span class="num">2</span><span class="den">3</span></div> cm = <div class="frac"><span class="num">32</span><span class="den">3</span></div> cm</div>
-                <div class="sol-step">Perimeter of a rectangle = 2 &times; (Length + Width)</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">25</span><span class="den">2</span></div> + <div class="frac"><span class="num">32</span><span class="den">3</span></div>)</div>
-                <div class="sol-step">LCM of 2 and 3 is 6</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">25 &times; 3</span><span class="den">2 &times; 3</span></div> + <div class="frac"><span class="num">32 &times; 2</span><span class="den">3 &times; 2</span></div>)</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">75</span><span class="den">6</span></div> + <div class="frac"><span class="num">64</span><span class="den">6</span></div>)</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">75 + 64</span><span class="den">6</span></div>)</div>
-                <div class="sol-step">=> 2 &times; <div class="frac"><span class="num">139</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">139</span><span class="den">3</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight">46<div class="frac"><span class="num">1</span><span class="den">3</span></div> cm</span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. A rectangular sheet of paper is 12 <div class="frac"><span class="num">1</span><span class="den">2</span></div> cm long and 10 <div class="frac"><span class="num">2</span><span class="den">3</span></div> cm wide. Find its perimeter.</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Length of rectangular sheet = 12 <div class="frac"><span class="num">1</span><span class="den">2</span></div> cm = <div class="frac"><span class="num">12 × 2 + 1</span><span class="den">2</span></div> = <div class="frac"><span class="num">25</span><span class="den">2</span></div> cm</div>
+                    <div class="sol-step">Breadth of rectangular sheet = 10 <div class="frac"><span class="num">2</span><span class="den">3</span></div> cm = <div class="frac"><span class="num">10 × 3 + 2</span><span class="den">3</span></div> = <div class="frac"><span class="num">32</span><span class="den">3</span></div> cm</div>
+                    <div class="sol-step">Perimeter of rectangle = 2 × (Length + Breadth)</div>
+                    <div class="sol-step">= 2 × [<div class="frac"><span class="num">25</span><span class="den">2</span></div> + <div class="frac"><span class="num">32</span><span class="den">3</span></div>]</div>
+                    <div class="sol-step">LCM of 2 and 3 = 6</div>
+                    <div class="sol-step"><div class="frac"><span class="num">25</span><span class="den">2</span></div> = <div class="frac"><span class="num">25 × 3</span><span class="den">6</span></div> = <div class="frac"><span class="num">75</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">32</span><span class="den">3</span></div> = <div class="frac"><span class="num">32 × 2</span><span class="den">6</span></div> = <div class="frac"><span class="num">64</span><span class="den">6</span></div></div>
+                    <div class="sol-step">= 2 × [<div class="frac"><span class="num">75 + 64</span><span class="den">6</span></div>]</div>
+                    <div class="sol-step">= 2 × <div class="frac"><span class="num">139</span><span class="den">6</span></div> = <div class="frac"><span class="num">139</span><span class="den">3</span></div> cm</div>
+                    <div class="sol-step"><span class="ans-highlight">Perimeter of sheet = <div class="frac"><span class="num">139</span><span class="den">3</span></div> cm = 46 <div class="frac"><span class="num">1</span><span class="den">3</span></div> cm</span></div>
+                </div>
             </div>
 
-            <div class="question">5. Find the perimeter of (i) &Delta;ABC (ii) the square BCEF in this figure. Whose perimeter is greater?</div>
-            <div class="svg-container">
-                <svg width="240" height="220" viewBox="0 0 240 220">
-                    <!-- Triangle ABC -->
-                    <path d="M120 20 L60 100 L180 100 Z" fill="none" stroke="#FF4081" stroke-width="2" />
-                    <text x="115" y="15" fill="#fff" font-weight="bold">A</text>
-                    <text x="50" y="110" fill="#fff" font-weight="bold">B</text>
-                    <text x="185" y="110" fill="#fff" font-weight="bold">C</text>
-                    
-                    <!-- Square BCEF -->
-                    <rect x="60" y="100" width="120" height="80" fill="none" stroke="#FF4081" stroke-width="2" />
-                    <text x="50" y="190" fill="#fff" font-weight="bold">E</text>
-                    <text x="185" y="190" fill="#fff" font-weight="bold">F</text>
-                    
-                    <!-- Proper Mixed Fractions for Triangle Sides -->
-                    <g transform="translate(40, 55)">
-                        <text x="0" y="10" fill="#FF4081" font-size="14">3</text>
-                        <text x="10" y="2" fill="#FF4081" font-size="10">3</text>
-                        <line x1="10" y1="5" x2="20" y2="5" stroke="#FF4081" stroke-width="1" />
-                        <text x="10" y="14" fill="#FF4081" font-size="10">5</text>
-                        <text x="22" y="10" fill="#FF4081" font-size="12">cm</text>
-                    </g>
-                    
-                    <g transform="translate(160, 55)">
-                        <text x="0" y="10" fill="#FF4081" font-size="14">2</text>
-                        <text x="10" y="2" fill="#FF4081" font-size="10">1</text>
-                        <line x1="10" y1="5" x2="20" y2="5" stroke="#FF4081" stroke-width="1" />
-                        <text x="10" y="14" fill="#FF4081" font-size="10">4</text>
-                        <text x="22" y="10" fill="#FF4081" font-size="12">cm</text>
-                    </g>
-                    
-                    <g transform="translate(100, 85)">
-                        <text x="0" y="10" fill="#FF4081" font-size="14">2</text>
-                        <text x="10" y="2" fill="#FF4081" font-size="10">1</text>
-                        <line x1="10" y1="5" x2="20" y2="5" stroke="#FF4081" stroke-width="1" />
-                        <text x="10" y="14" fill="#FF4081" font-size="10">2</text>
-                        <text x="22" y="10" fill="#FF4081" font-size="12">cm</text>
-                    </g>
-                </svg>
-            </div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) Perimeter of &Delta;ABC:</b></div>
-                <div class="sol-step">Sides are: AB = <div class="frac"><span class="num">18</span><span class="den">5</span></div> cm, BC = <div class="frac"><span class="num">5</span><span class="den">2</span></div> cm, AC = <div class="frac"><span class="num">9</span><span class="den">4</span></div> cm</div>
-                <div class="sol-step">Perimeter = AB + BC + AC</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">18</span><span class="den">5</span></div> + <div class="frac"><span class="num">5</span><span class="den">2</span></div> + <div class="frac"><span class="num">9</span><span class="den">4</span></div></div>
-                <div class="sol-step">LCM of 5, 2 and 4 is 20</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">18 &times; 4</span><span class="den">5 &times; 4</span></div> + <div class="frac"><span class="num">5 &times; 10</span><span class="den">2 &times; 10</span></div> + <div class="frac"><span class="num">9 &times; 5</span><span class="den">4 &times; 5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">72</span><span class="den">20</span></div> + <div class="frac"><span class="num">50</span><span class="den">20</span></div> + <div class="frac"><span class="num">45</span><span class="den">20</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">72 + 50 + 45</span><span class="den">20</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">167</span><span class="den">20</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight">8<div class="frac"><span class="num">7</span><span class="den">20</span></div> cm</span></div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Find the perimeters of (i) triangle ABE (ii) rectangle BCDE in this figure. Whose perimeter is greater?</div>
+                <div class="sol-body">
+                    <div class="svg-container">
+                        <svg width="260" height="210" viewBox="0 0 260 210" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                            <polygon points="130,15 40,95 220,95" fill="rgba(66, 165, 245, 0.2)" stroke="#42A5F5" stroke-width="3"/>
+                            <rect x="40" y="95" width="180" height="85" fill="rgba(66, 165, 245, 0.1)" stroke="#42A5F5" stroke-width="3"/>
+                            <text x="130" y="12" fill="#64B5F6" font-size="15" font-weight="bold" text-anchor="middle">A</text>
+                            <text x="22" y="100" fill="#64B5F6" font-size="15" font-weight="bold">B</text>
+                            <text x="230" y="100" fill="#64B5F6" font-size="15" font-weight="bold">E</text>
+                            <text x="22" y="190" fill="#64B5F6" font-size="15" font-weight="bold">C</text>
+                            <text x="230" y="190" fill="#64B5F6" font-size="15" font-weight="bold">D</text>
+                            <text x="70" y="50" fill="#90CAF9" font-size="13" font-weight="bold">5/2 cm</text>
+                            <text x="170" y="50" fill="#90CAF9" font-size="13" font-weight="bold">3 ⅗ cm</text>
+                            <text x="130" y="115" fill="#90CAF9" font-size="13" font-weight="bold" text-anchor="middle">2 ¾ cm</text>
+                            <text x="130" y="200" fill="#90CAF9" font-size="13" font-weight="bold" text-anchor="middle">7/6 cm</text>
+                        </svg>
+                    </div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) Perimeter of square BCEF:</b></div>
-                <div class="sol-step">Side = BC = 2<div class="frac"><span class="num">1</span><span class="den">2</span></div> cm = <div class="frac"><span class="num">5</span><span class="den">2</span></div> cm</div>
-                <div class="sol-step">Perimeter = 4 &times; Side</div>
-                <div class="sol-step">=> 4 &times; <div class="frac"><span class="num">5</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">10 cm</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(i) Perimeter of Triangle ABE:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Side AB = <div class="frac"><span class="num">5</span><span class="den">2</span></div> cm</div>
+                    <div class="sol-step">Side BE = 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> cm = <div class="frac"><span class="num">11</span><span class="den">4</span></div> cm</div>
+                    <div class="sol-step">Side AE = 3 <div class="frac"><span class="num">3</span><span class="den">5</span></div> cm = <div class="frac"><span class="num">18</span><span class="den">5</span></div> cm</div>
+                    <div class="sol-step">Perimeter = AB + BE + EA = <div class="frac"><span class="num">5</span><span class="den">2</span></div> + <div class="frac"><span class="num">11</span><span class="den">4</span></div> + <div class="frac"><span class="num">18</span><span class="den">5</span></div></div>
+                    <div class="sol-step">LCM of 2, 4, 5 = 20</div>
+                    <div class="sol-step"><div class="frac"><span class="num">5</span><span class="den">2</span></div> = <div class="frac"><span class="num">50</span><span class="den">20</span></div>, <div class="frac"><span class="num">11</span><span class="den">4</span></div> = <div class="frac"><span class="num">55</span><span class="den">20</span></div>, <div class="frac"><span class="num">18</span><span class="den">5</span></div> = <div class="frac"><span class="num">72</span><span class="den">20</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">50 + 55 + 72</span><span class="den">20</span></div> = <div class="frac"><span class="num">177</span><span class="den">20</span></div> cm</div>
+                    <div class="sol-step"><span class="ans-highlight">Perimeter of △ABE = <div class="frac"><span class="num">177</span><span class="den">20</span></div> cm = 8 <div class="frac"><span class="num">17</span><span class="den">20</span></div> cm</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>Comparison:</b></div>
-                <div class="sol-step">Perimeter of Triangle = 8<div class="frac"><span class="num">7</span><span class="den">20</span></div> cm</div>
-                <div class="sol-step">Perimeter of Square = 10 cm</div>
-                <div class="sol-step">Since 10 > 8.35, the <span class="ans-highlight">Perimeter of square BCEF is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) Perimeter of Rectangle BCDE & Comparison:</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Length BE = 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> cm = <div class="frac"><span class="num">11</span><span class="den">4</span></div> cm</div>
+                    <div class="sol-step">Breadth ED = <div class="frac"><span class="num">7</span><span class="den">6</span></div> cm</div>
+                    <div class="sol-step">Perimeter = 2 × (BE + ED) = 2 × [<div class="frac"><span class="num">11</span><span class="den">4</span></div> + <div class="frac"><span class="num">7</span><span class="den">6</span></div>]</div>
+                    <div class="sol-step">LCM of 4 and 6 = 12</div>
+                    <div class="sol-step"><div class="frac"><span class="num">11</span><span class="den">4</span></div> = <div class="frac"><span class="num">33</span><span class="den">12</span></div>, <div class="frac"><span class="num">7</span><span class="den">6</span></div> = <div class="frac"><span class="num">14</span><span class="den">12</span></div></div>
+                    <div class="sol-step">= 2 × [<div class="frac"><span class="num">33 + 14</span><span class="den">12</span></div>] = 2 × <div class="frac"><span class="num">47</span><span class="den">12</span></div> = <div class="frac"><span class="num">47</span><span class="den">6</span></div> cm</div>
+                    <div class="sol-step"><span class="ans-highlight">Perimeter of BCDE = <div class="frac"><span class="num">47</span><span class="den">6</span></div> cm = 7 <div class="frac"><span class="num">5</span><span class="den">6</span></div> cm</span></div>
+                    <div class="sol-step" style="margin-top: 10px;">Comparing perimeters (LCM of 20 and 6 = 60):</div>
+                    <div class="sol-step"><div class="frac"><span class="num">177</span><span class="den">20</span></div> = <div class="frac"><span class="num">177 × 3</span><span class="den">60</span></div> = <div class="frac"><span class="num">531</span><span class="den">60</span></div></div>
+                    <div class="sol-step"><div class="frac"><span class="num">47</span><span class="den">6</span></div> = <div class="frac"><span class="num">47 × 10</span><span class="den">60</span></div> = <div class="frac"><span class="num">470</span><span class="den">60</span></div></div>
+                    <div class="sol-step">Since 531/60 &gt; 470/60, <span class="ans-highlight">Perimeter of Triangle ABE is greater.</span></div>
+                </div>
             </div>
 
-            <div class="question">6. Salim wants to put a picture in a frame. The picture is 7<div class="frac"><span class="num">3</span><span class="den">5</span></div> cm wide. To fit in the frame the picture cannot be more than 7<div class="frac"><span class="num">3</span><span class="den">10</span></div> cm wide. How much should the picture be trimmed?</div>
-            <div class="solution">
-                <div class="sol-step">Width of the picture = 7<div class="frac"><span class="num">3</span><span class="den">5</span></div> cm = <div class="frac"><span class="num">38</span><span class="den">5</span></div> cm</div>
-                <div class="sol-step">Width of the frame = 7<div class="frac"><span class="num">3</span><span class="den">10</span></div> cm = <div class="frac"><span class="num">73</span><span class="den">10</span></div> cm</div>
-                <div class="sol-step">Picture should be trimmed = Width of picture - Width of frame</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">38</span><span class="den">5</span></div> - <div class="frac"><span class="num">73</span><span class="den">10</span></div></div>
-                <div class="sol-step">LCM of 5 and 10 is 10</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">38 &times; 2</span><span class="den">5 &times; 2</span></div> - <div class="frac"><span class="num">73</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">76</span><span class="den">10</span></div> - <div class="frac"><span class="num">73</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">76 - 73</span><span class="den">10</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">10</span></div> cm</span></div>
+            <!-- Question 6 -->
+            <div class="sol-card">
+                <div class="question-header">6. Salil wants to put a picture in a frame. The picture is 7 <div class="frac"><span class="num">3</span><span class="den">5</span></div> cm wide. To fit in the frame the picture cannot be more than 7 <div class="frac"><span class="num">3</span><span class="den">10</span></div> cm wide. How much should the picture be trimmed?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Width of picture = 7 <div class="frac"><span class="num">3</span><span class="den">5</span></div> cm = <div class="frac"><span class="num">7 × 5 + 3</span><span class="den">5</span></div> = <div class="frac"><span class="num">38</span><span class="den">5</span></div> cm</div>
+                    <div class="sol-step">Max width of frame = 7 <div class="frac"><span class="num">3</span><span class="den">10</span></div> cm = <div class="frac"><span class="num">7 × 10 + 3</span><span class="den">10</span></div> = <div class="frac"><span class="num">73</span><span class="den">10</span></div> cm</div>
+                    <div class="sol-step">Width to be trimmed = Picture width - Frame width</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">38</span><span class="den">5</span></div> - <div class="frac"><span class="num">73</span><span class="den">10</span></div></div>
+                    <div class="sol-step">LCM of 5 and 10 = 10</div>
+                    <div class="sol-step"><div class="frac"><span class="num">38</span><span class="den">5</span></div> = <div class="frac"><span class="num">38 × 2</span><span class="den">10</span></div> = <div class="frac"><span class="num">76</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">76 - 73</span><span class="den">10</span></div> = <div class="frac"><span class="num">3</span><span class="den">10</span></div> cm</div>
+                    <div class="sol-step"><span class="ans-highlight">Picture to be trimmed = <div class="frac"><span class="num">3</span><span class="den">10</span></div> cm</span></div>
+                </div>
             </div>
 
-            <div class="question">7. Rozy ate <div class="frac"><span class="num">1</span><span class="den">3</span></div> part of the chocolate which her mother gave. Her sister Sonia ate the remaining chocolate. How much part of the chocolate did Sonia eat? Who had the larger share? By how much?</div>
-            <div class="solution">
-                <div class="sol-step">Let the whole chocolate be 1</div>
-                <div class="sol-step">Part of chocolate eaten by Rozy = <div class="frac"><span class="num">1</span><span class="den">3</span></div></div>
-                <div class="sol-step">Part of chocolate eaten by Sonia = 1 - <div class="frac"><span class="num">1</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3 - 1</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>Comparison of shares:</b></div>
-                <div class="sol-step">Rozy's share = <div class="frac"><span class="num">1</span><span class="den">3</span></div> | Sonia's share = <div class="frac"><span class="num">2</span><span class="den">3</span></div></div>
-                <div class="sol-step">Since <div class="frac"><span class="num">2</span><span class="den">3</span></div> > <div class="frac"><span class="num">1</span><span class="den">3</span></div>, Sonia had the larger share.</div>
-                <div class="sol-step">Difference = <div class="frac"><span class="num">2</span><span class="den">3</span></div> - <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
+            <!-- Question 7 -->
+            <div class="sol-card">
+                <div class="question-header">7. Ritu ate <div class="frac"><span class="num">3</span><span class="den">5</span></div> part of an apple and the remaining apple was eaten by her brother Somu. What part of the apple did Somu eat? Who had the larger share? By how much?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total apple = 1</div>
+                    <div class="sol-step">Part eaten by Ritu = <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Part eaten by Somu = 1 - <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">5</span><span class="den">5</span></div> - <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">5 - 3</span><span class="den">5</span></div> = <div class="frac"><span class="num">2</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Somu ate <div class="frac"><span class="num">2</span><span class="den">5</span></div> part of the apple.</span></div>
+                    <div class="sol-step">Comparing <div class="frac"><span class="num">3</span><span class="den">5</span></div> and <div class="frac"><span class="num">2</span><span class="den">5</span></div>: Since 3 &gt; 2, <div class="frac"><span class="num">3</span><span class="den">5</span></div> &gt; <div class="frac"><span class="num">2</span><span class="den">5</span></div>.</div>
+                    <div class="sol-step"><span class="ans-highlight">Ritu had the larger share.</span></div>
+                    <div class="sol-step">Difference = <div class="frac"><span class="num">3</span><span class="den">5</span></div> - <div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">3 - 2</span><span class="den">5</span></div> = <div class="frac"><span class="num">1</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Ritu's share was larger by <div class="frac"><span class="num">1</span><span class="den">5</span></div> part.</span></div>
+                </div>
             </div>
 
-            <div class="question">8. Ansh finished colouring a picture in <div class="frac"><span class="num">7</span><span class="den">12</span></div> hour. Ashiq finished colouring the same picture in <div class="frac"><span class="num">3</span><span class="den">4</span></div> hour. Who worked longer? By what fraction was it longer?</div>
-            <div class="solution">
-                <div class="sol-step">Time taken by Ansh = <div class="frac"><span class="num">7</span><span class="den">12</span></div> hour</div>
-                <div class="sol-step">Time taken by Ashiq = <div class="frac"><span class="num">3</span><span class="den">4</span></div> hour</div>
-                <div class="sol-step">To compare, we find the LCM of denominators (12 and 4), which is 12.</div>
-                <div class="sol-step">Ashiq's time = <div class="frac"><span class="num">3 &times; 3</span><span class="den">4 &times; 3</span></div> = <div class="frac"><span class="num">9</span><span class="den">12</span></div> hour</div>
-                <div class="sol-step">Since <div class="frac"><span class="num">9</span><span class="den">12</span></div> > <div class="frac"><span class="num">7</span><span class="den">12</span></div>, Ashiq worked longer.</div>
-                <div class="sol-step">Difference = <div class="frac"><span class="num">9</span><span class="den">12</span></div> - <div class="frac"><span class="num">7</span><span class="den">12</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">12</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">6</span></div> hour</span></div>
+            <!-- Question 8 -->
+            <div class="sol-card">
+                <div class="question-header">8. Michael finished colouring a picture in <div class="frac"><span class="num">7</span><span class="den">12</span></div> hour. Vaibhav finished colouring the same picture in <div class="frac"><span class="num">3</span><span class="den">4</span></div> hour. Who worked longer? By what fraction was it longer?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Time taken by Michael = <div class="frac"><span class="num">7</span><span class="den">12</span></div> hour</div>
+                    <div class="sol-step">Time taken by Vaibhav = <div class="frac"><span class="num">3</span><span class="den">4</span></div> hour = <div class="frac"><span class="num">3 × 3</span><span class="den">4 × 3</span></div> = <div class="frac"><span class="num">9</span><span class="den">12</span></div> hour</div>
+                    <div class="sol-step">Comparing <div class="frac"><span class="num">9</span><span class="den">12</span></div> and <div class="frac"><span class="num">7</span><span class="den">12</span></div>: Since 9 &gt; 7, <div class="frac"><span class="num">9</span><span class="den">12</span></div> &gt; <div class="frac"><span class="num">7</span><span class="den">12</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Vaibhav worked longer.</span></div>
+                    <div class="sol-step">Difference = <div class="frac"><span class="num">9</span><span class="den">12</span></div> - <div class="frac"><span class="num">7</span><span class="den">12</span></div> = <div class="frac"><span class="num">9 - 7</span><span class="den">12</span></div> = <div class="frac"><span class="num">2</span><span class="den">12</span></div> = <div class="frac"><span class="num">1</span><span class="den">6</span></div> hour</div>
+                    <div class="sol-step"><span class="ans-highlight">Vaibhav worked longer by <div class="frac"><span class="num">1</span><span class="den">6</span></div> of an hour.</span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
-            .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 5px; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
-            .svg-row { display: flex; align-items: center; gap: 15px; margin: 15px 0; background: #1a1a2e; padding: 10px; border-radius: 10px; flex-wrap: wrap; justify-content: center; }
-            .match-box { border: 1px dashed #FF4081; padding: 10px; margin: 10px 0; border-radius: 8px; display: flex; flex-direction: column; gap: 10px; }
-            .match-item { background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 4px; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
+            .svg-container { text-align: center; margin: 15px auto; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px solid #42A5F5; overflow-x: auto; }
+            .svg-container svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         </style>
         <div class="container">
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Which of the drawings (a) to (d) show: (i) 2 × <div class="frac"><span class="num">1</span><span class="den">5</span></div> (ii) 2 × <div class="frac"><span class="num">1</span><span class="den">2</span></div> (iii) 3 × <div class="frac"><span class="num">2</span><span class="den">3</span></div> (iv) 3 × <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
+                <div class="sol-body">
+                    <div class="svg-container">
+                        <svg width="320" height="240" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                            <g id="fig-a">
+                                <text x="10" y="40" fill="#42A5F5" font-size="14" font-weight="bold">(a)</text>
+                                <circle cx="50" cy="35" r="20" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M50,35 L50,15 A20,20 0 1,1 32.6,45 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                                <circle cx="100" cy="35" r="20" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M100,35 L100,15 A20,20 0 1,1 82.6,45 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                                <circle cx="150" cy="35" r="20" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M150,35 L150,15 A20,20 0 1,1 132.6,45 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                            <g id="fig-b">
+                                <text x="195" y="40" fill="#42A5F5" font-size="14" font-weight="bold">(b)</text>
+                                <rect x="225" y="15" width="35" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="242.5" y="15" width="17.5" height="40" fill="rgba(66, 165, 245, 0.4)"/>
+                                <rect x="270" y="15" width="35" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="287.5" y="15" width="17.5" height="40" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                            <g id="fig-c">
+                                <text x="10" y="140" fill="#42A5F5" font-size="14" font-weight="bold">(c)</text>
+                                <rect x="40" y="110" width="35" height="35" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="57.5" y="127.5" width="17.5" height="17.5" fill="rgba(66, 165, 245, 0.4)"/>
+                                <line x1="57.5" y1="110" x2="57.5" y2="145" stroke="#42A5F5" stroke-width="1"/>
+                                <line x1="40" y1="127.5" x2="75" y2="127.5" stroke="#42A5F5" stroke-width="1"/>
 
+                                <rect x="85" y="110" width="35" height="35" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="102.5" y="127.5" width="17.5" height="17.5" fill="rgba(66, 165, 245, 0.4)"/>
+                                <line x1="102.5" y1="110" x2="102.5" y2="145" stroke="#42A5F5" stroke-width="1"/>
+                                <line x1="85" y1="127.5" x2="120" y2="127.5" stroke="#42A5F5" stroke-width="1"/>
 
-            <div class="question">1. Which of the drawings (a) to (d) show:</div>
-            <div class="match-box">
-                <div class="match-item">(i) 2 &times; <div class="frac"><span class="num">1</span><span class="den">5</span></div></div>
-                <div class="match-item">(ii) 2 &times; <div class="frac"><span class="num">1</span><span class="den">2</span></div></div>
-                <div class="match-item">(iii) 3 &times; <div class="frac"><span class="num">2</span><span class="den">3</span></div></div>
-                <div class="match-item">(iv) 3 &times; <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
+                                <rect x="130" y="110" width="35" height="35" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="147.5" y="127.5" width="17.5" height="17.5" fill="rgba(66, 165, 245, 0.4)"/>
+                                <line x1="147.5" y1="110" x2="147.5" y2="145" stroke="#42A5F5" stroke-width="1"/>
+                                <line x1="130" y1="127.5" x2="165" y2="127.5" stroke="#42A5F5" stroke-width="1"/>
+                            </g>
+                            <g id="fig-d">
+                                <text x="195" y="140" fill="#42A5F5" font-size="14" font-weight="bold">(d)</text>
+                                <circle cx="235" cy="127" r="20" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M235,127 L235,107 A20,20 0 0,1 254,121 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                                <circle cx="285" cy="127" r="20" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M285,127 L285,107 A20,20 0 0,1 304,121 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(i) 2 × <div class="frac"><span class="num">1</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 2 figures, each having 1 part shaded out of 5 equal parts.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches figure (d).</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 2 × <div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 2 figures, each having 1 part shaded out of 2 equal parts.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches figure (b).</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 3 × <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 3 figures, each having 2 parts shaded out of 3 equal parts.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches figure (a).</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 3 × <div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 3 figures, each having 1 part shaded out of 4 equal parts.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches figure (c).</span></div>
+                </div>
             </div>
 
-            <div class="svg-row">
-                <span>(a)</span>
-                <svg width="60" height="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M30 30 L30 5 M30 30 L52 42 M30 30 L8 42" stroke="#FF4081"/><path d="M30 30 L30 5 A25 25 0 0 1 52 42 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M30 30 L52 42 A25 25 0 0 1 8 42 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M30 30 L30 5 M30 30 L52 42 M30 30 L8 42" stroke="#FF4081"/><path d="M30 30 L30 5 A25 25 0 0 1 52 42 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M30 30 L52 42 A25 25 0 0 1 8 42 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M30 30 L30 5 M30 30 L52 42 M30 30 L8 42" stroke="#FF4081"/><path d="M30 30 L30 5 A25 25 0 0 1 52 42 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M30 30 L52 42 A25 25 0 0 1 8 42 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
-            <div class="svg-row">
-                <span>(b)</span>
-                <svg width="60" height="60"><rect x="10" y="10" width="40" height="40" fill="none" stroke="#FF4081" stroke-width="2"/><line x1="30" y1="10" x2="30" y2="50" stroke="#FF4081"/><rect x="10" y="10" width="20" height="40" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><rect x="10" y="10" width="40" height="40" fill="none" stroke="#FF4081" stroke-width="2"/><line x1="30" y1="10" x2="30" y2="50" stroke="#FF4081"/><rect x="10" y="10" width="20" height="40" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
-            <div class="svg-row">
-                <span>(c)</span>
-                <svg width="60" height="60"><rect x="10" y="10" width="40" height="40" fill="none" stroke="#FF4081" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#FF4081"/><line x1="30" y1="10" x2="30" y2="50" stroke="#FF4081"/><rect x="10" y="10" width="20" height="20" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><rect x="10" y="10" width="40" height="40" fill="none" stroke="#FF4081" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#FF4081"/><line x1="30" y1="10" x2="30" y2="50" stroke="#FF4081"/><rect x="10" y="10" width="20" height="20" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><rect x="10" y="10" width="40" height="40" fill="none" stroke="#FF4081" stroke-width="2"/><line x1="10" y1="30" x2="50" y2="30" stroke="#FF4081"/><line x1="30" y1="10" x2="30" y2="50" stroke="#FF4081"/><rect x="10" y="10" width="20" height="20" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
-            <div class="svg-row">
-                <span>(d)</span>
-                <svg width="60" height="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M30 30 L30 5 M30 30 L53.7 22.7 M30 30 L44.7 53.7 M30 30 L15.3 53.7 M30 30 L6.3 22.7" stroke="#FF4081"/><path d="M30 30 L30 5 A25 25 0 0 1 53.7 22.7 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="60" height="60"><circle cx="30" cy="30" r="25" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M30 30 L30 5 M30 30 L53.7 22.7 M30 30 L44.7 53.7 M30 30 L15.3 53.7 M30 30 L6.3 22.7" stroke="#FF4081"/><path d="M30 30 L30 5 A25 25 0 0 1 53.7 22.7 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Some pictures (a) to (c) are given below. Tell which of them show: (i) 3 × <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">3</span><span class="den">5</span></div> (ii) 2 × <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">2</span><span class="den">3</span></div> (iii) 3 × <div class="frac"><span class="num">3</span><span class="den">4</span></div> = 2 <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
+                <div class="sol-body">
+                    <div class="svg-container">
+                        <svg width="300" height="200" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                            <g id="pic-a">
+                                <text x="5" y="35" fill="#42A5F5" font-size="13" font-weight="bold">(a)</text>
+                                <circle cx="40" cy="30" r="16" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M40,30 L40,14 A16,16 0 0,1 53.8,38 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                                <circle cx="80" cy="30" r="16" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M80,30 L80,14 A16,16 0 0,1 93.8,38 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                                <text x="108" y="35" fill="#64B5F6" font-size="16" font-weight="bold">=</text>
+                                <circle cx="135" cy="30" r="16" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <path d="M135,30 L135,14 A16,16 0 1,1 121.2,38 Z" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                            <g id="pic-b">
+                                <text x="5" y="95" fill="#42A5F5" font-size="13" font-weight="bold">(b)</text>
+                                <polygon points="40,75 25,105 55,105" fill="rgba(66, 165, 245, 0.4)" stroke="#42A5F5" stroke-width="2"/>
+                                <polygon points="75,75 60,105 90,105" fill="rgba(66, 165, 245, 0.4)" stroke="#42A5F5" stroke-width="2"/>
+                                <polygon points="110,75 95,105 125,105" fill="rgba(66, 165, 245, 0.4)" stroke="#42A5F5" stroke-width="2"/>
+                                <text x="133" y="95" fill="#64B5F6" font-size="16" font-weight="bold">=</text>
+                                <polygon points="160,75 145,105 175,105" fill="rgba(66, 165, 245, 0.4)" stroke="#42A5F5" stroke-width="2"/>
+                                <polygon points="195,75 180,105 210,105" fill="rgba(66, 165, 245, 0.4)" stroke="#42A5F5" stroke-width="2"/>
+                                <polygon points="230,75 215,105 245,105" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <polygon points="230,75 215,105 230,105" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                            <g id="pic-c">
+                                <text x="5" y="160" fill="#42A5F5" font-size="13" font-weight="bold">(c)</text>
+                                <rect x="35" y="135" width="25" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="35" y="135" width="25" height="8" fill="rgba(66, 165, 245, 0.4)"/>
+                                <rect x="70" y="135" width="25" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="70" y="135" width="25" height="8" fill="rgba(66, 165, 245, 0.4)"/>
+                                <rect x="105" y="135" width="25" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="105" y="135" width="25" height="8" fill="rgba(66, 165, 245, 0.4)"/>
+                                <text x="138" y="160" fill="#64B5F6" font-size="16" font-weight="bold">=</text>
+                                <rect x="155" y="135" width="25" height="40" fill="none" stroke="#42A5F5" stroke-width="2"/>
+                                <rect x="155" y="135" width="25" height="24" fill="rgba(66, 165, 245, 0.4)"/>
+                            </g>
+                        </svg>
+                    </div>
 
-            <div class="solution">
-                <div class="sol-step">(i) &rarr; <b>(d)</b></div>
-                <div class="sol-step">(ii) &rarr; <b>(b)</b></div>
-                <div class="sol-step">(iii) &rarr; <b>(a)</b></div>
-                <div class="sol-step">(iv) &rarr; <b>(c)</b></div>
-            </div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(i) 3 × <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 3 figures with <div class="frac"><span class="num">1</span><span class="den">5</span></div> shaded equal to 1 figure with <div class="frac"><span class="num">3</span><span class="den">5</span></div> shaded.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches picture (c).</span></div>
 
-            <div class="question">2. Some pictures (a) to (c) are given below. Tell which of them show: </div>
-            <div class="match-box">
-                <div class="match-item">(i) 3 &times; <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="match-item">(ii) 2 &times; <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">2</span><span class="den">3</span></div></div>
-                <div class="match-item">(iii) 3 &times; <div class="frac"><span class="num">3</span><span class="den">4</span></div> = 2<div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
-            </div>
-            <div class="svg-row">
-                <span>(a)</span>
-                <svg width="50" height="50"><circle cx="25" cy="25" r="20" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 25 L25 5 M25 25 L42 35 M25 25 L8 35" stroke="#FF4081"/><path d="M25 25 L25 5 A20 20 0 0 1 42 35 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="50" height="50"><circle cx="25" cy="25" r="20" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 25 L25 5 M25 25 L42 35 M25 25 L8 35" stroke="#FF4081"/><path d="M25 25 L25 5 A20 20 0 0 1 42 35 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <span style="font-size: 20px;">=</span>
-                <svg width="50" height="50"><circle cx="25" cy="25" r="20" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 25 L25 5 M25 25 L42 35 M25 25 L8 35" stroke="#FF4081"/><path d="M25 25 L25 5 A20 20 0 0 1 42 35 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M25 25 L42 35 A20 20 0 0 1 8 35 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
-            <div class="svg-row">
-                <span>(b)</span>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 5 L15 25 L35 25 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M15 25 L5 45 L25 45 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M35 25 L25 45 L45 45 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 5 L15 25 L35 25 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M15 25 L5 45 L25 45 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M35 25 L25 45 L45 45 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 5 L15 25 L35 25 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M15 25 L5 45 L25 45 Z" fill="rgba(255, 64, 129, 0.4)"/><path d="M35 25 L25 45 L45 45 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <span style="font-size: 20px;">=</span>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081" stroke-width="2"/></svg>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081" stroke-width="2"/></svg>
-                <svg width="50" height="50"><path d="M25 5 L5 45 L45 45 Z" fill="none" stroke="#FF4081" stroke-width="2"/><path d="M25 5 L15 25 L35 25 Z" fill="rgba(255, 64, 129, 0.4)"/></svg>
-            </div>
-            <div class="svg-row">
-                <span>(c)</span>
-                <svg width="40" height="60"><rect x="5" y="5" width="30" height="50" fill="none" stroke="#FF4081" stroke-width="1"/><line x1="5" y1="15" x2="35" y2="15" stroke="#FF4081"/><line x1="5" y1="25" x2="35" y2="25" stroke="#FF4081"/><line x1="5" y1="35" x2="35" y2="35" stroke="#FF4081"/><line x1="5" y1="45" x2="35" y2="45" stroke="#FF4081"/><rect x="5" y="5" width="30" height="10" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="40" height="60"><rect x="5" y="5" width="30" height="50" fill="none" stroke="#FF4081" stroke-width="1"/><line x1="5" y1="15" x2="35" y2="15" stroke="#FF4081"/><line x1="5" y1="25" x2="35" y2="25" stroke="#FF4081"/><line x1="5" y1="35" x2="35" y2="35" stroke="#FF4081"/><line x1="5" y1="45" x2="35" y2="45" stroke="#FF4081"/><rect x="5" y="5" width="30" height="10" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <svg width="40" height="60"><rect x="5" y="5" width="30" height="50" fill="none" stroke="#FF4081" stroke-width="1"/><line x1="5" y1="15" x2="35" y2="15" stroke="#FF4081"/><line x1="5" y1="25" x2="35" y2="25" stroke="#FF4081"/><line x1="5" y1="35" x2="35" y2="35" stroke="#FF4081"/><line x1="5" y1="45" x2="35" y2="45" stroke="#FF4081"/><rect x="5" y="5" width="30" height="10" fill="rgba(255, 64, 129, 0.4)"/></svg>
-                <span style="font-size: 20px;">=</span>
-                <svg width="40" height="60"><rect x="5" y="5" width="30" height="50" fill="none" stroke="#FF4081" stroke-width="1"/><line x1="5" y1="15" x2="35" y2="15" stroke="#FF4081"/><line x1="5" y1="25" x2="35" y2="25" stroke="#FF4081"/><line x1="5" y1="35" x2="35" y2="35" stroke="#FF4081"/><line x1="5" y1="45" x2="35" y2="45" stroke="#FF4081"/><rect x="5" y="5" width="30" height="30" fill="rgba(255, 64, 129, 0.4)"/></svg>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 2 × <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 2 figures with <div class="frac"><span class="num">1</span><span class="den">3</span></div> shaded equal to 1 figure with <div class="frac"><span class="num">2</span><span class="den">3</span></div> shaded.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches picture (a).</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 3 × <div class="frac"><span class="num">3</span><span class="den">4</span></div> = 2 <div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Represents 3 figures with <div class="frac"><span class="num">3</span><span class="den">4</span></div> shaded equal to 2 fully shaded and 1 with <div class="frac"><span class="num">1</span><span class="den">4</span></div> shaded.</div>
+                    <div class="sol-step"><span class="ans-highlight">Matches picture (b).</span></div>
+                </div>
             </div>
 
-            <div class="solution">
-                <div class="sol-step">(i) &rarr; <b>(c)</b></div>
-                <div class="sol-step">(ii) &rarr; <b>(a)</b></div>
-                <div class="sol-step">(iii) &rarr; <b>(b)</b></div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Multiply and reduce to lowest form and convert into a mixed fraction:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 7 × <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">7 × 3</span><span class="den">5</span></div> = <div class="frac"><span class="num">21</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 4 <div class="frac"><span class="num">1</span><span class="den">5</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 4 × <div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">4 × 1</span><span class="den">3</span></div> = <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 2 × <div class="frac"><span class="num">6</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2 × 6</span><span class="den">7</span></div> = <div class="frac"><span class="num">12</span><span class="den">7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">5</span><span class="den">7</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 5 × <div class="frac"><span class="num">2</span><span class="den">9</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">5 × 2</span><span class="den">9</span></div> = <div class="frac"><span class="num">10</span><span class="den">9</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">1</span><span class="den">9</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) <div class="frac"><span class="num">2</span><span class="den">3</span></div> × 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2 × 4</span><span class="den">3</span></div> = <div class="frac"><span class="num">8</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2 <div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) <div class="frac"><span class="num">5</span><span class="den">2</span></div> × 6</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">5 × 6</span><span class="den">2</span></div> = <div class="frac"><span class="num">30</span><span class="den">2</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 15</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 11 × <div class="frac"><span class="num">4</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">11 × 4</span><span class="den">7</span></div> = <div class="frac"><span class="num">44</span><span class="den">7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 6 <div class="frac"><span class="num">2</span><span class="den">7</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 20 × <div class="frac"><span class="num">4</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">20 × 4</span><span class="den">5</span></div> = <div class="frac"><span class="num">80</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 16</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ix) 13 × <div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">13 × 1</span><span class="den">3</span></div> = <div class="frac"><span class="num">13</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 4 <div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(x) 15 × <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">15 × 3</span><span class="den">5</span></div> = <div class="frac"><span class="num">45</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 9</span></div>
+                </div>
             </div>
 
-            <div class="question">3. Multiply and reduce to lowest form and convert into a mixed fraction:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i)</b> 7 &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">21</span><span class="den">5</span></div> = <span class="ans-highlight">4<div class="frac"><span class="num">1</span><span class="den">5</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii)</b> 4 &times; <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">4</span><span class="den">3</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii)</b> 2 &times; <div class="frac"><span class="num">6</span><span class="den">7</span></div> = <div class="frac"><span class="num">12</span><span class="den">7</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">5</span><span class="den">7</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv)</b> 5 &times; <div class="frac"><span class="num">2</span><span class="den">9</span></div> = <div class="frac"><span class="num">10</span><span class="den">9</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">1</span><span class="den">9</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(v)</b> <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 4 = <div class="frac"><span class="num">8</span><span class="den">3</span></div> = <span class="ans-highlight">2<div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi)</b> <div class="frac"><span class="num">5</span><span class="den">2</span></div> &times; 6 = 5 &times; 3 = <span class="ans-highlight">15</span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii)</b> 11 &times; <div class="frac"><span class="num">4</span><span class="den">7</span></div> = <div class="frac"><span class="num">44</span><span class="den">7</span></div> = <span class="ans-highlight">6<div class="frac"><span class="num">2</span><span class="den">7</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii)</b> 20 &times; <div class="frac"><span class="num">4</span><span class="den">5</span></div> = 4 &times; 4 = <span class="ans-highlight">16</span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix)</b> 13 &times; <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">13</span><span class="den">3</span></div> = <span class="ans-highlight">4<div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(x)</b> 15 &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div> = 3 &times; 3 = <span class="ans-highlight">9</span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(xi)</b> 16 &times; <div class="frac"><span class="num">3</span><span class="den">8</span></div> = 2 &times; 3 = <span class="ans-highlight">6</span></div>
-                <div class="sol-step" style="margin-top: 15px;"><b>(xii)</b> 6 &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">18</span><span class="den">7</span></div> = <span class="ans-highlight">2<div class="frac"><span class="num">4</span><span class="den">7</span></div></span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Shade parts of figures:</div>
+                <div class="sol-body">
+                    <div class="svg-container">
+                        <svg width="300" height="140" viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                            <rect x="10" y="10" width="75" height="100" fill="none" stroke="#42A5F5" stroke-width="2" rx="5"/>
+                            <text x="47" y="128" fill="#42A5F5" font-size="12" font-weight="bold" text-anchor="middle">(a)</text>
+                            <circle cx="28" cy="28" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="47" cy="28" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="66" cy="28" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="28" cy="50" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="47" cy="50" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="66" cy="50" r="7" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <circle cx="28" cy="72" r="7" fill="none" stroke="#42A5F5"/>
+                            <circle cx="47" cy="72" r="7" fill="none" stroke="#42A5F5"/>
+                            <circle cx="66" cy="72" r="7" fill="none" stroke="#42A5F5"/>
+                            <circle cx="28" cy="94" r="7" fill="none" stroke="#42A5F5"/>
+                            <circle cx="47" cy="94" r="7" fill="none" stroke="#42A5F5"/>
+                            <circle cx="66" cy="94" r="7" fill="none" stroke="#42A5F5"/>
+
+                            <rect x="105" y="10" width="75" height="100" fill="none" stroke="#42A5F5" stroke-width="2" rx="5"/>
+                            <text x="142" y="128" fill="#42A5F5" font-size="12" font-weight="bold" text-anchor="middle">(b)</text>
+                            <polygon points="124,18 116,36 132,36" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="142,18 134,36 150,36" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="160,18 152,36 168,36" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="124,46 116,64 132,64" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="142,46 134,64 150,64" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="160,46 152,64 168,64" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <polygon points="124,74 116,92 132,92" fill="none" stroke="#42A5F5"/>
+                            <polygon points="142,74 134,92 150,92" fill="none" stroke="#42A5F5"/>
+                            <polygon points="160,74 152,92 168,92" fill="none" stroke="#42A5F5"/>
+
+                            <rect x="195" y="10" width="95" height="100" fill="none" stroke="#42A5F5" stroke-width="2" rx="5"/>
+                            <text x="242" y="128" fill="#42A5F5" font-size="12" font-weight="bold" text-anchor="middle">(c)</text>
+                            <rect x="205" y="20" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="220" y="20" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="235" y="20" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="250" y="20" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="268" y="20" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="205" y="42" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="220" y="42" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="235" y="42" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="250" y="42" width="11" height="11" fill="rgba(66,165,245,0.7)" stroke="#42A5F5"/>
+                            <rect x="268" y="42" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                            <rect x="205" y="64" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                            <rect x="220" y="64" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                            <rect x="235" y="64" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                            <rect x="250" y="64" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                            <rect x="268" y="64" width="11" height="11" fill="none" stroke="#42A5F5"/>
+                        </svg>
+                    </div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(i) ½ of circles in box (a)</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total circles in box (a) = 12</div>
+                    <div class="sol-step">Number of circles to shade = ½ × 12 = 6</div>
+                    <div class="sol-step"><span class="ans-highlight">Shade 6 circles.</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) ⅔ of triangles in box (b)</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total triangles in box (b) = 9</div>
+                    <div class="sol-step">Number of triangles to shade = ⅔ × 9 = 6</div>
+                    <div class="sol-step"><span class="ans-highlight">Shade 6 triangles.</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) ⅗ of squares in box (c)</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total squares in box (c) = 15</div>
+                    <div class="sol-step">Number of squares to shade = ⅗ × 15 = 9</div>
+                    <div class="sol-step"><span class="ans-highlight">Shade 9 squares.</span></div>
+                </div>
             </div>
 
-            <div class="question">4. Shade: </div>
-            <div class="match-box">
-                <div class="match-item">(i) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of circles in box (a)</div>
-                <div class="match-item">(ii) <div class="frac"><span class="num">2</span><span class="den">3</span></div> of triangles in box (b)</div>
-                <div class="match-item">(iii) <div class="frac"><span class="num">3</span><span class="den">5</span></div> of squares in box (c)</div>
-            </div>
-            <div class="svg-row">
-                <div style="text-align: center;">(a)<br/><svg width="80" height="100" style="border: 1px solid #FF4081;"><circle cx="20" cy="20" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="40" cy="20" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="60" cy="20" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="20" cy="40" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="40" cy="40" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="60" cy="40" r="8" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><circle cx="20" cy="60" r="8" fill="none" stroke="#FF4081"/><circle cx="40" cy="60" r="8" fill="none" stroke="#FF4081"/><circle cx="60" cy="60" r="8" fill="none" stroke="#FF4081"/><circle cx="20" cy="80" r="8" fill="none" stroke="#FF4081"/><circle cx="40" cy="80" r="8" fill="none" stroke="#FF4081"/><circle cx="60" cy="80" r="8" fill="none" stroke="#FF4081"/></svg></div>
-                <div style="text-align: center;">(b)<br/><svg width="80" height="100" style="border: 1px solid #FF4081;"><path d="M20 10 L10 30 L30 30 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M40 10 L30 30 L50 30 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M60 10 L50 30 L70 30 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M20 40 L10 60 L30 60 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M40 40 L30 60 L50 60 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M60 40 L50 60 L70 60 Z" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><path d="M20 70 L10 90 L30 90 Z" fill="none" stroke="#FF4081"/><path d="M40 70 L30 90 L50 90 Z" fill="none" stroke="#FF4081"/><path d="M60 70 L50 90 L70 90 Z" fill="none" stroke="#FF4081"/></svg></div>
-                <div style="text-align: center;">(c)<br/><svg width="100" height="100" style="border: 1px solid #FF4081;"><rect x="10" y="10" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="30" y="10" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="50" y="10" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="70" y="10" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="10" y="30" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="30" y="30" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="50" y="30" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="70" y="30" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="10" y="50" width="15" height="15" fill="rgba(255, 64, 129, 0.4)" stroke="#FF4081"/><rect x="30" y="50" width="15" height="15" fill="none" stroke="#FF4081"/><rect x="50" y="50" width="15" height="15" fill="none" stroke="#FF4081"/><rect x="70" y="50" width="15" height="15" fill="none" stroke="#FF4081"/></svg></div>
-            </div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(a) ½ of (i) 24 (ii) 46</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) ½ × 24 = <div class="frac"><span class="num">24</span><span class="den">2</span></div> = <span class="ans-highlight">12</span></div>
+                    <div class="sol-step">• (ii) ½ × 46 = <div class="frac"><span class="num">46</span><span class="den">2</span></div> = <span class="ans-highlight">23</span></div>
 
-            <div class="question">5. Find: </div>
-            <div class="solution">
-                <div class="sol-step"><b>(a) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of:</b></div>
-                <div class="sol-step">(i) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of 24 = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 24</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">24</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">12</span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of 46 = <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; 46</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">46</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">23</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(b) ⅔ of (i) 18 (ii) 27</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) <div class="frac"><span class="num">2</span><span class="den">3</span></div> × 18 = <div class="frac"><span class="num">36</span><span class="den">3</span></div> = <span class="ans-highlight">12</span></div>
+                    <div class="sol-step">• (ii) <div class="frac"><span class="num">2</span><span class="den">3</span></div> × 27 = <div class="frac"><span class="num">54</span><span class="den">3</span></div> = <span class="ans-highlight">18</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(b) <div class="frac"><span class="num">2</span><span class="den">3</span></div> of:</b></div>
-                <div class="sol-step">(i) <div class="frac"><span class="num">2</span><span class="den">3</span></div> of 18 = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 18</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">18</span><span class="den">3</span></div>) = 2 &times; 6</div>
-                <div class="sol-step">=> <span class="ans-highlight">12</span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) <div class="frac"><span class="num">2</span><span class="den">3</span></div> of 27 = <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 27</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">27</span><span class="den">3</span></div>) = 2 &times; 9</div>
-                <div class="sol-step">=> <span class="ans-highlight">18</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(c) ¾ of (i) 16 (ii) 36</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) <div class="frac"><span class="num">3</span><span class="den">4</span></div> × 16 = <div class="frac"><span class="num">48</span><span class="den">4</span></div> = <span class="ans-highlight">12</span></div>
+                    <div class="sol-step">• (ii) <div class="frac"><span class="num">3</span><span class="den">4</span></div> × 36 = <div class="frac"><span class="num">108</span><span class="den">4</span></div> = <span class="ans-highlight">27</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(c) <div class="frac"><span class="num">3</span><span class="den">4</span></div> of:</b></div>
-                <div class="sol-step">(i) <div class="frac"><span class="num">3</span><span class="den">4</span></div> of 16 = <div class="frac"><span class="num">3</span><span class="den">4</span></div> &times; 16</div>
-                <div class="sol-step">=> 3 &times; (<div class="frac"><span class="num">16</span><span class="den">4</span></div>) = 3 &times; 4</div>
-                <div class="sol-step">=> <span class="ans-highlight">12</span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) <div class="frac"><span class="num">3</span><span class="den">4</span></div> of 36 = <div class="frac"><span class="num">3</span><span class="den">4</span></div> &times; 36</div>
-                <div class="sol-step">=> 3 &times; (<div class="frac"><span class="num">36</span><span class="den">4</span></div>) = 3 &times; 9</div>
-                <div class="sol-step">=> <span class="ans-highlight">27</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(d) <div class="frac"><span class="num">4</span><span class="den">5</span></div> of:</b></div>
-                <div class="sol-step">(i) <div class="frac"><span class="num">4</span><span class="den">5</span></div> of 20 = <div class="frac"><span class="num">4</span><span class="den">5</span></div> &times; 20</div>
-                <div class="sol-step">=> 4 &times; (<div class="frac"><span class="num">20</span><span class="den">5</span></div>) = 4 &times; 4</div>
-                <div class="sol-step">=> <span class="ans-highlight">16</span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) <div class="frac"><span class="num">4</span><span class="den">5</span></div> of 35 = <div class="frac"><span class="num">4</span><span class="den">5</span></div> &times; 35</div>
-                <div class="sol-step">=> 4 &times; (<div class="frac"><span class="num">35</span><span class="den">5</span></div>) = 4 &times; 7</div>
-                <div class="sol-step">=> <span class="ans-highlight">28</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(d) ⅘ of (i) 20 (ii) 35</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) <div class="frac"><span class="num">4</span><span class="den">5</span></div> × 20 = <div class="frac"><span class="num">80</span><span class="den">5</span></div> = <span class="ans-highlight">16</span></div>
+                    <div class="sol-step">• (ii) <div class="frac"><span class="num">4</span><span class="den">5</span></div> × 35 = <div class="frac"><span class="num">140</span><span class="den">5</span></div> = <span class="ans-highlight">28</span></div>
+                </div>
             </div>
 
-            <div class="question">6. Multiply and express as a mixed fraction:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(a) 3 &times; 5<div class="frac"><span class="num">1</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> 3 &times; (<div class="frac"><span class="num">5 &times; 5 + 1</span><span class="den">5</span></div>)</div>
-                <div class="sol-step">=> 3 &times; <div class="frac"><span class="num">26</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">78</span><span class="den">5</span></div> = <span class="ans-highlight">15<div class="frac"><span class="num">3</span><span class="den">5</span></div></span></div>
+            <!-- Question 6 -->
+            <div class="sol-card">
+                <div class="question-header">6. Multiply and express as a mixed fraction:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(a) 3 × 5 <div class="frac"><span class="num">1</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">5 <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">5 × 5 + 1</span><span class="den">5</span></div> = <div class="frac"><span class="num">26</span><span class="den">5</span></div></div>
+                    <div class="sol-step">= 3 × <div class="frac"><span class="num">26</span><span class="den">5</span></div> = <div class="frac"><span class="num">78</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 15 <div class="frac"><span class="num">3</span><span class="den">5</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(b) 5 &times; 6<div class="frac"><span class="num">3</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> 5 &times; (<div class="frac"><span class="num">6 &times; 4 + 3</span><span class="den">4</span></div>)</div>
-                <div class="sol-step">=> 5 &times; <div class="frac"><span class="num">27</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">135</span><span class="den">4</span></div> = <span class="ans-highlight">33<div class="frac"><span class="num">3</span><span class="den">4</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(b) 5 × 6 <div class="frac"><span class="num">3</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">6 <div class="frac"><span class="num">3</span><span class="den">4</span></div> = <div class="frac"><span class="num">6 × 4 + 3</span><span class="den">4</span></div> = <div class="frac"><span class="num">27</span><span class="den">4</span></div></div>
+                    <div class="sol-step">= 5 × <div class="frac"><span class="num">27</span><span class="den">4</span></div> = <div class="frac"><span class="num">135</span><span class="den">4</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 33 <div class="frac"><span class="num">3</span><span class="den">4</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(c) 7 &times; 2<div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> 7 &times; (<div class="frac"><span class="num">2 &times; 4 + 1</span><span class="den">4</span></div>)</div>
-                <div class="sol-step">=> 7 &times; <div class="frac"><span class="num">9</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">63</span><span class="den">4</span></div> = <span class="ans-highlight">15<div class="frac"><span class="num">3</span><span class="den">4</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(c) 7 × 2 <div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">1</span><span class="den">4</span></div> = <div class="frac"><span class="num">2 × 4 + 1</span><span class="den">4</span></div> = <div class="frac"><span class="num">9</span><span class="den">4</span></div></div>
+                    <div class="sol-step">= 7 × <div class="frac"><span class="num">9</span><span class="den">4</span></div> = <div class="frac"><span class="num">63</span><span class="den">4</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 15 <div class="frac"><span class="num">3</span><span class="den">4</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(d) 4 &times; 6<div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> 4 &times; (<div class="frac"><span class="num">6 &times; 3 + 1</span><span class="den">3</span></div>)</div>
-                <div class="sol-step">=> 4 &times; <div class="frac"><span class="num">19</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">76</span><span class="den">3</span></div> = <span class="ans-highlight">25<div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(d) 4 × 6 <div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">6 <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">6 × 3 + 1</span><span class="den">3</span></div> = <div class="frac"><span class="num">19</span><span class="den">3</span></div></div>
+                    <div class="sol-step">= 4 × <div class="frac"><span class="num">19</span><span class="den">3</span></div> = <div class="frac"><span class="num">76</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 25 <div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(e) 3<div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; 6</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">13</span><span class="den">4</span></div> &times; 6</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">13 &times; 3</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">39</span><span class="den">2</span></div> = <span class="ans-highlight">19<div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(e) 3 <div class="frac"><span class="num">1</span><span class="den">4</span></div> × 6</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">1</span><span class="den">4</span></div> = <div class="frac"><span class="num">3 × 4 + 1</span><span class="den">4</span></div> = <div class="frac"><span class="num">13</span><span class="den">4</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">13</span><span class="den">4</span></div> × 6 = <div class="frac"><span class="num">78</span><span class="den">4</span></div> = <div class="frac"><span class="num">39</span><span class="den">2</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 19 <div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(f) 3<div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; 8</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">17</span><span class="den">5</span></div> &times; 8</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">136</span><span class="den">5</span></div> = <span class="ans-highlight">27<div class="frac"><span class="num">1</span><span class="den">5</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(f) 3 <div class="frac"><span class="num">2</span><span class="den">5</span></div> × 8</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">3 × 5 + 2</span><span class="den">5</span></div> = <div class="frac"><span class="num">17</span><span class="den">5</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">17</span><span class="den">5</span></div> × 8 = <div class="frac"><span class="num">136</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 27 <div class="frac"><span class="num">1</span><span class="den">5</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">7. Find: </div>
-            <div class="solution">
-                <div class="sol-step"><b>(a) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of:</b></div>
-                <div class="sol-step">(i) 2<div class="frac"><span class="num">3</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">11</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">1<div class="frac"><span class="num">3</span><span class="den">8</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) 4<div class="frac"><span class="num">2</span><span class="den">9</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">38</span><span class="den">9</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">2<div class="frac"><span class="num">1</span><span class="den">9</span></div></span></div>
+            <!-- Question 7 -->
+            <div class="sol-card">
+                <div class="question-header">7. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(a) ½ of (i) 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> (ii) 4 <div class="frac"><span class="num">2</span><span class="den">9</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> = <div class="frac"><span class="num">11</span><span class="den">4</span></div> ➔ ½ × <div class="frac"><span class="num">11</span><span class="den">4</span></div> = <div class="frac"><span class="num">11</span><span class="den">8</span></div> = <span class="ans-highlight">1 <div class="frac"><span class="num">3</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step">• (ii) 4 <div class="frac"><span class="num">2</span><span class="den">9</span></div> = <div class="frac"><span class="num">38</span><span class="den">9</span></div> ➔ ½ × <div class="frac"><span class="num">38</span><span class="den">9</span></div> = <div class="frac"><span class="num">38</span><span class="den">18</span></div> = <div class="frac"><span class="num">19</span><span class="den">9</span></div> = <span class="ans-highlight">2 <div class="frac"><span class="num">1</span><span class="den">9</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(b) <div class="frac"><span class="num">5</span><span class="den">8</span></div> of:</b></div>
-                <div class="sol-step">(i) 3<div class="frac"><span class="num">5</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5</span><span class="den">8</span></div> &times; <div class="frac"><span class="num">23</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">2<div class="frac"><span class="num">19</span><span class="den">48</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(ii) 9<div class="frac"><span class="num">2</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5</span><span class="den">8</span></div> &times; <div class="frac"><span class="num">29</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">6<div class="frac"><span class="num">1</span><span class="den">24</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(b) ⅝ of (i) 3 <div class="frac"><span class="num">5</span><span class="den">6</span></div> (ii) 9 <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) 3 <div class="frac"><span class="num">5</span><span class="den">6</span></div> = <div class="frac"><span class="num">23</span><span class="den">6</span></div> ➔ <div class="frac"><span class="num">5</span><span class="den">8</span></div> × <div class="frac"><span class="num">23</span><span class="den">6</span></div> = <div class="frac"><span class="num">115</span><span class="den">48</span></div> = <span class="ans-highlight">2 <div class="frac"><span class="num">19</span><span class="den">48</span></div></span></div>
+                    <div class="sol-step">• (ii) 9 <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">29</span><span class="den">3</span></div> ➔ <div class="frac"><span class="num">5</span><span class="den">8</span></div> × <div class="frac"><span class="num">29</span><span class="den">3</span></div> = <div class="frac"><span class="num">145</span><span class="den">24</span></div> = <span class="ans-highlight">6 <div class="frac"><span class="num">1</span><span class="den">24</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">8. Rozy and Tina bought pizza 200 gm. Rozy ate <div class="frac"><span class="num">3</span><span class="den">5</span></div>. Tina ate rest. </div>
-            <div class="solution">
-                <div class="sol-step">Total weight of pizza = 200 gm</div>
-                <div class="sol-step"><b>(i) Fraction eaten by Tina:</b></div>
-                <div class="sol-step">Let total pizza be 1</div>
-                <div class="sol-step">Tina's fraction = 1 - (Rozy's fraction)</div>
-                <div class="sol-step">=> 1 - <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5 - 3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
+            <!-- Question 8 -->
+            <div class="sol-card">
+                <div class="question-header">8. Vidya and Pratap went for a picnic. Their mother gave them a water bottle that contained 5 liters of water. Vidya consumed 2/5 of the water. Pratap consumed the remaining water.</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) How much water did Vidya drink?</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total water = 5 liters</div>
+                    <div class="sol-step">Water drank by Vidya = <div class="frac"><span class="num">2</span><span class="den">5</span></div> of 5 liters</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2</span><span class="den">5</span></div> × 5 = 2 liters</div>
+                    <div class="sol-step"><span class="ans-highlight">Vidya drank 2 liters of water.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) Weight eaten by Tina:</b></div>
-                <div class="sol-step">Weight = <div class="frac"><span class="num">2</span><span class="den">5</span></div> of 200 gm</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; 200</div>
-                <div class="sol-step">=> 2 &times; (<div class="frac"><span class="num">200</span><span class="den">5</span></div>)</div>
-                <div class="sol-step">=> 2 &times; 40</div>
-                <div class="sol-step">=> <span class="ans-highlight">80 gm</span></div>
-            </div>
-
-            <div class="question">9. Javaid and Munish went to a tea party of their friend Leena. Mother offered 24 pieces of cake. Javaid ate <div class="frac"><span class="num">2</span><span class="den">6</span></div>, Leena ate <div class="frac"><span class="num">1</span><span class="den">12</span></div>, Munish ate <div class="frac"><span class="num">1</span><span class="den">4</span></div>. Find:</div>
-            <div class="solution">
-                <div class="sol-step">Total pieces of cake = 24</div>
-                <div class="sol-step"><b>(i) Pieces taken by each:</b></div>
-                <div class="sol-step">Javaid's share = <div class="frac"><span class="num">2</span><span class="den">6</span></div> of 24</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">6</span></div> &times; 24 = 2 &times; 4 = <span class="ans-highlight">8 pieces</span></div>
-                
-                <div class="sol-step" style="margin-top: 10px;">Leena's share = <div class="frac"><span class="num">1</span><span class="den">12</span></div> of 24</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">12</span></div> &times; 24 = <span class="ans-highlight">2 pieces</span></div>
-                
-                <div class="sol-step" style="margin-top: 10px;">Munish's share = <div class="frac"><span class="num">1</span><span class="den">4</span></div> of 24</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; 24 = <span class="ans-highlight">6 pieces</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) Fraction of cake remaining:</b></div>
-                <div class="sol-step">Total pieces eaten = 8 + 2 + 6 = 16 pieces</div>
-                <div class="sol-step">Remaining pieces = 24 - 16 = 8 pieces</div>
-                <div class="sol-step">Remaining fraction = <div class="frac"><span class="num">Remaining pieces</span><span class="den">Total pieces</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">8</span><span class="den">24</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) What fraction of the total quantity of water did Pratap drink?</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Fraction of water drank by Pratap = 1 - <div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">5 - 2</span><span class="den">5</span></div> = <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Quantity drank by Pratap = <div class="frac"><span class="num">3</span><span class="den">5</span></div> × 5 = 3 liters</div>
+                    <div class="sol-step"><span class="ans-highlight">Pratap drank <div class="frac"><span class="num">3</span><span class="den">5</span></div> of total water (3 liters).</span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
-            .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 5px; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
-            .box { display: inline-block; width: 30px; height: 30px; border: 2px solid #FF4081; vertical-align: middle; margin: 0 5px; text-align: center; line-height: 26px; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Find the following fractions of fractions:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) ¼ of (a) ¼ (b) ⅗ (c) 4/3</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (a) ¼ × ¼ = <div class="frac"><span class="num">1 × 1</span><span class="den">4 × 4</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">16</span></div></span></div>
+                    <div class="sol-step">• (b) ¼ × ⅗ = <div class="frac"><span class="num">1 × 3</span><span class="den">4 × 5</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">20</span></div></span></div>
+                    <div class="sol-step">• (c) ¼ × <div class="frac"><span class="num">4</span><span class="den">3</span></div> = <div class="frac"><span class="num">1 × 4</span><span class="den">4 × 3</span></div> = <div class="frac"><span class="num">4</span><span class="den">12</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
 
-
-            <div class="question">1. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">1</span><span class="den">4</span></div> of:</b></div>
-                <div class="sol-step">(a) <div class="frac"><span class="num">1</span><span class="den">4</span></div> of <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">16</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(b) <div class="frac"><span class="num">1</span><span class="den">4</span></div> of <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">20</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(c) <div class="frac"><span class="num">1</span><span class="den">4</span></div> of <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">4</span></div> &times; <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">12</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">3</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">1</span><span class="den">7</span></div> of:</b></div>
-                <div class="sol-step">(a) <div class="frac"><span class="num">2</span><span class="den">9</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">2</span><span class="den">9</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">63</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(b) <div class="frac"><span class="num">6</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">6</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">6</span><span class="den">35</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(c) <div class="frac"><span class="num">3</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">70</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">1</span><span class="den">3</span></div> of:</b></div>
-                <div class="sol-step">(a) <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">21</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">7</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(b) <div class="frac"><span class="num">1</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">9</span></div></span></div>
-                <div class="sol-step" style="margin-top: 10px;">(c) <div class="frac"><span class="num">12</span><span class="den">13</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">12</span><span class="den">13</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">12</span><span class="den">39</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">4</span><span class="den">13</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 1/7 of (a) 2/9 (b) 6/5 (c) 3/10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (a) <div class="frac"><span class="num">1</span><span class="den">7</span></div> × <div class="frac"><span class="num">2</span><span class="den">9</span></div> = <div class="frac"><span class="num">1 × 2</span><span class="den">7 × 9</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">63</span></div></span></div>
+                    <div class="sol-step">• (b) <div class="frac"><span class="num">1</span><span class="den">7</span></div> × <div class="frac"><span class="num">6</span><span class="den">5</span></div> = <div class="frac"><span class="num">1 × 6</span><span class="den">7 × 5</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">6</span><span class="den">35</span></div></span></div>
+                    <div class="sol-step">• (c) <div class="frac"><span class="num">1</span><span class="den">7</span></div> × <div class="frac"><span class="num">3</span><span class="den">10</span></div> = <div class="frac"><span class="num">1 × 3</span><span class="den">7 × 10</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">70</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">2. Multiply and reduce to lowest form (if possible):</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; 2<div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">8</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16</span><span class="den">9</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">7</span><span class="den">9</span></div></span></div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Multiply and reduce to lowest form (if possible):</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">2</span><span class="den">3</span></div> × 2 <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">8</span><span class="den">3</span></div> ➔ <div class="frac"><span class="num">2</span><span class="den">3</span></div> × <div class="frac"><span class="num">8</span><span class="den">3</span></div> = <div class="frac"><span class="num">2 × 8</span><span class="den">3 × 3</span></div> = <div class="frac"><span class="num">16</span><span class="den">9</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">7</span><span class="den">9</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">2</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">7</span><span class="den">9</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2 &times; 7</span><span class="den">7 &times; 9</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">9</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">2</span><span class="den">7</span></div> × <div class="frac"><span class="num">7</span><span class="den">9</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2 × 7</span><span class="den">7 × 9</span></div> = <div class="frac"><span class="num">14</span><span class="den">63</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">2</span><span class="den">9</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">3</span><span class="den">8</span></div> &times; <div class="frac"><span class="num">6</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">18</span><span class="den">32</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">9</span><span class="den">16</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">3</span><span class="den">8</span></div> × <div class="frac"><span class="num">6</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">3 × 6</span><span class="den">8 × 4</span></div> = <div class="frac"><span class="num">18</span><span class="den">32</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">9</span><span class="den">16</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) <div class="frac"><span class="num">9</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">27</span><span class="den">25</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">1<div class="frac"><span class="num">2</span><span class="den">25</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) <div class="frac"><span class="num">9</span><span class="den">5</span></div> × <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">9 × 3</span><span class="den">5 × 5</span></div> = <div class="frac"><span class="num">27</span><span class="den">25</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">2</span><span class="den">25</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) <div class="frac"><span class="num">1</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">15</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">15</span><span class="den">24</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">5</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) <div class="frac"><span class="num">1</span><span class="den">3</span></div> × <div class="frac"><span class="num">15</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">1 × 15</span><span class="den">3 × 8</span></div> = <div class="frac"><span class="num">15</span><span class="den">24</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">5</span><span class="den">8</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) <div class="frac"><span class="num">11</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">10</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">33</span><span class="den">20</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">1<div class="frac"><span class="num">13</span><span class="den">20</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) <div class="frac"><span class="num">11</span><span class="den">2</span></div> × <div class="frac"><span class="num">3</span><span class="den">10</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">11 × 3</span><span class="den">2 × 10</span></div> = <div class="frac"><span class="num">33</span><span class="den">20</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">13</span><span class="den">20</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) <div class="frac"><span class="num">14</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">12</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">168</span><span class="den">35</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">24</span><span class="den">5</span></div> = <span class="ans-highlight">4<div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) <div class="frac"><span class="num">4</span><span class="den">5</span></div> × <div class="frac"><span class="num">12</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">4 × 12</span><span class="den">5 × 7</span></div> = <div class="frac"><span class="num">48</span><span class="den">35</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">13</span><span class="den">35</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">3. Multiply the following fractions:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; 5<div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">21</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">42</span><span class="den">20</span></div> = <div class="frac"><span class="num">21</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">2<div class="frac"><span class="num">1</span><span class="den">10</span></div></span></div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Multiply the following fractions:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">2</span><span class="den">5</span></div> × 5 <div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">5 <div class="frac"><span class="num">1</span><span class="den">4</span></div> = <div class="frac"><span class="num">21</span><span class="den">4</span></div> ➔ <div class="frac"><span class="num">2</span><span class="den">5</span></div> × <div class="frac"><span class="num">21</span><span class="den">4</span></div> = <div class="frac"><span class="num">42</span><span class="den">20</span></div> = <div class="frac"><span class="num">21</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2 <div class="frac"><span class="num">1</span><span class="den">10</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 6<div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">7</span><span class="den">9</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">32</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">7</span><span class="den">9</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">224</span><span class="den">45</span></div> = <span class="ans-highlight">4<div class="frac"><span class="num">44</span><span class="den">45</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 6 <div class="frac"><span class="num">2</span><span class="den">5</span></div> × <div class="frac"><span class="num">7</span><span class="den">9</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">6 <div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">32</span><span class="den">5</span></div> ➔ <div class="frac"><span class="num">32</span><span class="den">5</span></div> × <div class="frac"><span class="num">7</span><span class="den">9</span></div> = <div class="frac"><span class="num">224</span><span class="den">45</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 4 <div class="frac"><span class="num">44</span><span class="den">45</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">3</span><span class="den">2</span></div> &times; 5<div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">16</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">48</span><span class="den">6</span></div> = <span class="ans-highlight">8</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">3</span><span class="den">2</span></div> × 5 <div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">5 <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">16</span><span class="den">3</span></div> ➔ <div class="frac"><span class="num">3</span><span class="den">2</span></div> × <div class="frac"><span class="num">16</span><span class="den">3</span></div> = <div class="frac"><span class="num">48</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 8</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) <div class="frac"><span class="num">5</span><span class="den">6</span></div> &times; 2<div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5</span><span class="den">6</span></div> &times; <div class="frac"><span class="num">17</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">85</span><span class="den">42</span></div> = <span class="ans-highlight">2<div class="frac"><span class="num">1</span><span class="den">42</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) <div class="frac"><span class="num">5</span><span class="den">6</span></div> × 2 <div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">17</span><span class="den">7</span></div> ➔ <div class="frac"><span class="num">5</span><span class="den">6</span></div> × <div class="frac"><span class="num">17</span><span class="den">7</span></div> = <div class="frac"><span class="num">85</span><span class="den">42</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2 <div class="frac"><span class="num">1</span><span class="den">42</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 3<div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">4</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">17</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">4</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">68</span><span class="den">35</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">33</span><span class="den">35</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 3 <div class="frac"><span class="num">2</span><span class="den">5</span></div> × <div class="frac"><span class="num">4</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">2</span><span class="den">5</span></div> = <div class="frac"><span class="num">17</span><span class="den">5</span></div> ➔ <div class="frac"><span class="num">17</span><span class="den">5</span></div> × <div class="frac"><span class="num">4</span><span class="den">7</span></div> = <div class="frac"><span class="num">68</span><span class="den">35</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">33</span><span class="den">35</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 2<div class="frac"><span class="num">3</span><span class="den">5</span></div> &times; 3</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">13</span><span class="den">5</span></div> &times; 3</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">39</span><span class="den">5</span></div> = <span class="ans-highlight">7<div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 2 <div class="frac"><span class="num">3</span><span class="den">5</span></div> × 3</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">13</span><span class="den">5</span></div> ➔ <div class="frac"><span class="num">13</span><span class="den">5</span></div> × 3 = <div class="frac"><span class="num">39</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 7 <div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3<div class="frac"><span class="num">4</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">25</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">75</span><span class="den">35</span></div> = <div class="frac"><span class="num">15</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">2<div class="frac"><span class="num">1</span><span class="den">7</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 4<div class="frac"><span class="num">3</span><span class="den">7</span></div> &times; 2<div class="frac"><span class="num">4</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">31</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">14</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">434</span><span class="den">35</span></div> = <div class="frac"><span class="num">62</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">12<div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) 3<div class="frac"><span class="num">1</span><span class="den">5</span></div> &times; 4<div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">23</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">368</span><span class="den">25</span></div> = <span class="ans-highlight">14<div class="frac"><span class="num">18</span><span class="den">25</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 3 <div class="frac"><span class="num">4</span><span class="den">7</span></div> × <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">4</span><span class="den">7</span></div> = <div class="frac"><span class="num">25</span><span class="den">7</span></div> ➔ <div class="frac"><span class="num">25</span><span class="den">7</span></div> × <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">75</span><span class="den">35</span></div> = <div class="frac"><span class="num">15</span><span class="den">7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2 <div class="frac"><span class="num">1</span><span class="den">7</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">4. Which is greater:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">2</span><span class="den">7</span></div> of <div class="frac"><span class="num">3</span><span class="den">4</span></div> or <div class="frac"><span class="num">3</span><span class="den">5</span></div> of <div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">Calculation for first case:</div>
-                <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">4</span></div> = <div class="frac"><span class="num">6</span><span class="den">28</span></div> = <div class="frac"><span class="num">3</span><span class="den">14</span></div></div>
-                <div class="sol-step" style="margin-top: 10px;">Calculation for second case:</div>
-                <div class="sol-step"><div class="frac"><span class="num">3</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">5</span><span class="den">8</span></div> = <div class="frac"><span class="num">15</span><span class="den">40</span></div> = <div class="frac"><span class="num">3</span><span class="den">8</span></div></div>
-                <div class="sol-step" style="margin-top: 10px;">Now compare <div class="frac"><span class="num">3</span><span class="den">14</span></div> and <div class="frac"><span class="num">3</span><span class="den">8</span></div>:</div>
-                <div class="sol-step">Since numerators are same, the fraction with smaller denominator is greater.</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">8</span></div> &gt; <div class="frac"><span class="num">3</span><span class="den">14</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">5</span></div> of <div class="frac"><span class="num">5</span><span class="den">8</span></div> is greater.</span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Which is greater:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">2</span><span class="den">7</span></div> of <div class="frac"><span class="num">3</span><span class="den">4</span></div> OR <div class="frac"><span class="num">3</span><span class="den">5</span></div> of <div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">First part: <div class="frac"><span class="num">2</span><span class="den">7</span></div> × <div class="frac"><span class="num">3</span><span class="den">4</span></div> = <div class="frac"><span class="num">6</span><span class="den">28</span></div> = <div class="frac"><span class="num">3</span><span class="den">14</span></div></div>
+                    <div class="sol-step">Second part: <div class="frac"><span class="num">3</span><span class="den">5</span></div> × <div class="frac"><span class="num">5</span><span class="den">8</span></div> = <div class="frac"><span class="num">15</span><span class="den">40</span></div> = <div class="frac"><span class="num">3</span><span class="den">8</span></div></div>
+                    <div class="sol-step">Comparing <div class="frac"><span class="num">3</span><span class="den">14</span></div> and <div class="frac"><span class="num">3</span><span class="den">8</span></div>: Since denominators 8 &lt; 14, <div class="frac"><span class="num">3</span><span class="den">8</span></div> &gt; <div class="frac"><span class="num">3</span><span class="den">14</span></div>.</div>
+                    <div class="sol-step"><span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">5</span></div> of <div class="frac"><span class="num">5</span><span class="den">8</span></div> is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of <div class="frac"><span class="num">6</span><span class="den">7</span></div> or <div class="frac"><span class="num">2</span><span class="den">3</span></div> of <div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">Calculation for first case:</div>
-                <div class="sol-step"><div class="frac"><span class="num">1</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">6</span><span class="den">7</span></div> = <div class="frac"><span class="num">6</span><span class="den">14</span></div> = <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step" style="margin-top: 10px;">Calculation for second case:</div>
-                <div class="sol-step"><div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">6</span><span class="den">21</span></div> = <div class="frac"><span class="num">2</span><span class="den">7</span></div></div>
-                <div class="sol-step" style="margin-top: 10px;">Now compare <div class="frac"><span class="num">3</span><span class="den">7</span></div> and <div class="frac"><span class="num">2</span><span class="den">7</span></div>:</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">7</span></div> &gt; <div class="frac"><span class="num">2</span><span class="den">7</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">2</span></div> of <div class="frac"><span class="num">6</span><span class="den">7</span></div> is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">1</span><span class="den">2</span></div> of <div class="frac"><span class="num">6</span><span class="den">7</span></div> OR <div class="frac"><span class="num">2</span><span class="den">3</span></div> of <div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">First part: <div class="frac"><span class="num">1</span><span class="den">2</span></div> × <div class="frac"><span class="num">6</span><span class="den">7</span></div> = <div class="frac"><span class="num">6</span><span class="den">14</span></div> = <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
+                    <div class="sol-step">Second part: <div class="frac"><span class="num">2</span><span class="den">3</span></div> × <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">6</span><span class="den">21</span></div> = <div class="frac"><span class="num">2</span><span class="den">7</span></div></div>
+                    <div class="sol-step">Comparing <div class="frac"><span class="num">3</span><span class="den">7</span></div> and <div class="frac"><span class="num">2</span><span class="den">7</span></div>: Since 3 &gt; 2, <div class="frac"><span class="num">3</span><span class="den">7</span></div> &gt; <div class="frac"><span class="num">2</span><span class="den">7</span></div>.</div>
+                    <div class="sol-step"><span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">2</span></div> of <div class="frac"><span class="num">6</span><span class="den">7</span></div> is greater.</span></div>
+                </div>
             </div>
 
-            <div class="question">5. Sheena plants 4 saplings, in a row, in her garden. The distance between two adjacent saplings is <div class="frac"><span class="num">3</span><span class="den">4</span></div> m. Find the distance between the first and the last sapling.</div>
-            <div class="solution">
-                <div class="sol-step">Number of saplings = 4</div>
-                <div class="sol-step">Number of gaps between saplings = 4 - 1 = 3</div>
-                <div class="sol-step">Distance between adjacent saplings = <div class="frac"><span class="num">3</span><span class="den">4</span></div> m</div>
-                <div class="sol-step">Total distance = 3 &times; <div class="frac"><span class="num">3</span><span class="den">4</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">9</span><span class="den">4</span></div> m</div>
-                <div class="sol-step">Result: <span class="ans-highlight">2<div class="frac"><span class="num">1</span><span class="den">4</span></div> m</span></div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Saili plants 4 saplings, in a row, in her garden. The distance between two adjacent saplings is ¾ m. Find the distance between the first and the last sapling.</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Distance between 2 adjacent saplings = <div class="frac"><span class="num">3</span><span class="den">4</span></div> m</div>
+                    <div class="sol-step">Number of gaps between 4 saplings = 4 - 1 = 3 gaps</div>
+                    <div class="sol-step">Distance between 1st and 4th sapling = 3 × <div class="frac"><span class="num">3</span><span class="den">4</span></div> = <div class="frac"><span class="num">9</span><span class="den">4</span></div> m</div>
+                    <div class="sol-step"><span class="ans-highlight">Total distance = <div class="frac"><span class="num">9</span><span class="den">4</span></div> m = 2 <div class="frac"><span class="num">1</span><span class="den">4</span></div> m</span></div>
+                </div>
             </div>
 
-            <div class="question">6. Aaliya reads a book for 1<div class="frac"><span class="num">3</span><span class="den">4</span></div> hours everyday. She reads the entire book in 6 days. How many hours in all were required by her to read the book?</div>
-            <div class="solution">
-                <div class="sol-step">Time taken in 1 day = 1<div class="frac"><span class="num">3</span><span class="den">4</span></div> hours = <div class="frac"><span class="num">7</span><span class="den">4</span></div> hours</div>
-                <div class="sol-step">Total days taken = 6</div>
-                <div class="sol-step">Total hours = 6 &times; <div class="frac"><span class="num">7</span><span class="den">4</span></div></div>
-                <div class="sol-step">= <div class="frac"><span class="num">42</span><span class="den">4</span></div> = <div class="frac"><span class="num">21</span><span class="den">2</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight">10<div class="frac"><span class="num">1</span><span class="den">2</span></div> hours</span></div>
+            <!-- Question 6 -->
+            <div class="sol-card">
+                <div class="question-header">6. Lipika reads a book for 1 <div class="frac"><span class="num">3</span><span class="den">4</span></div> hours every day. She reads the entire book in 6 days. How many hours in all were required by her to read the book?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Time per day = 1 <div class="frac"><span class="num">3</span><span class="den">4</span></div> hours = <div class="frac"><span class="num">7</span><span class="den">4</span></div> hours</div>
+                    <div class="sol-step">Total days = 6 days</div>
+                    <div class="sol-step">Total time = <div class="frac"><span class="num">7</span><span class="den">4</span></div> × 6 = <div class="frac"><span class="num">42</span><span class="den">4</span></div> = <div class="frac"><span class="num">21</span><span class="den">2</span></div> hours</div>
+                    <div class="sol-step"><span class="ans-highlight">Total hours required = <div class="frac"><span class="num">21</span><span class="den">2</span></div> hours = 10 <div class="frac"><span class="num">1</span><span class="den">2</span></div> hours</span></div>
+                </div>
             </div>
 
-            <div class="question">7. A car runs 16 km using 1 litre of petrol. How much distance will it cover using 2<div class="frac"><span class="num">3</span><span class="den">4</span></div> litres of petrol.</div>
-            <div class="solution">
-                <div class="sol-step">Distance covered in 1 litre of petrol = 16 km</div>
-                <div class="sol-step">Amount of petrol available = 2<div class="frac"><span class="num">3</span><span class="den">4</span></div> litres</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2 &times; 4 + 3</span><span class="den">4</span></div> = <div class="frac"><span class="num">11</span><span class="den">4</span></div> litres</div>
-                <div class="sol-step">Total distance = (Distance in 1L) &times; (Total petrol)</div>
-                <div class="sol-step">=> 16 &times; <div class="frac"><span class="num">11</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> (<div class="frac"><span class="num">16</span><span class="den">4</span></div>) &times; 11</div>
-                <div class="sol-step">=> 4 &times; 11</div>
-                <div class="sol-step">Result: <span class="ans-highlight">44 km</span></div>
+            <!-- Question 7 -->
+            <div class="sol-card">
+                <div class="question-header">7. A car runs 16 km using 1 litre of petrol. How much distance will it cover using 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> litres of petrol?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Distance covered in 1 litre = 16 km</div>
+                    <div class="sol-step">Quantity of petrol = 2 <div class="frac"><span class="num">3</span><span class="den">4</span></div> litres = <div class="frac"><span class="num">11</span><span class="den">4</span></div> litres</div>
+                    <div class="sol-step">Total distance = 16 × <div class="frac"><span class="num">11</span><span class="den">4</span></div> = 4 × 11 = 44 km</div>
+                    <div class="sol-step"><span class="ans-highlight">Total distance = 44 km</span></div>
+                </div>
             </div>
 
-            <div class="question">8. (a) (i) Provide the number in the box <div class="box"></div>, such that <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; <div class="box"></div> = <div class="frac"><span class="num">10</span><span class="den">30</span></div>.</div>
-            <div class="solution">
-                <div class="sol-step">We need a fraction: <div class="frac"><span class="num">2 &times; ?</span><span class="den">3 &times; ?</span></div> = <div class="frac"><span class="num">10</span><span class="den">30</span></div></div>
-                <div class="sol-step">Numerator: 2 &times; 5 = 10</div>
-                <div class="sol-step">Denominator: 3 &times; 10 = 30</div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">5</span><span class="den">10</span></div></span></div>
-            </div>
+            <!-- Question 8 -->
+            <div class="sol-card">
+                <div class="question-header">8. Fill in the boxes and find simplest form:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(a) (i) Provide number in [ ]: <div class="frac"><span class="num">2</span><span class="den">3</span></div> × [ ] = <div class="frac"><span class="num">10</span><span class="den">30</span></div> (ii) Simplest form</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) <div class="frac"><span class="num">2</span><span class="den">3</span></div> × <div class="frac"><span class="num">5</span><span class="den">10</span></div> = <div class="frac"><span class="num">10</span><span class="den">30</span></div> ➔ <span class="ans-highlight">Number in box = <div class="frac"><span class="num">5</span><span class="den">10</span></div></span></div>
+                    <div class="sol-step">• (ii) Simplest form of <div class="frac"><span class="num">5</span><span class="den">10</span></div> = <div class="frac"><span class="num">5 ÷ 5</span><span class="den">10 ÷ 5</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
 
-            <div class="question">(a) (ii) The simplest form of the number obtained in <div class="box"></div> is ___.</div>
-            <div class="solution">
-                <div class="sol-step">Number obtained = <div class="frac"><span class="num">5</span><span class="den">10</span></div></div>
-                <div class="sol-step">Simplest form = <div class="frac"><span class="num">5 &divide; 5</span><span class="den">10 &divide; 5</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
-            </div>
-
-            <div class="question">(b) (i) Provide the number in the box <div class="box"></div>, such that <div class="frac"><span class="num">3</span><span class="den">5</span></div> &times; <div class="box"></div> = <div class="frac"><span class="num">24</span><span class="den">75</span></div>.</div>
-            <div class="solution">
-                <div class="sol-step">We need a fraction: <div class="frac"><span class="num">3 &times; ?</span><span class="den">5 &times; ?</span></div> = <div class="frac"><span class="num">24</span><span class="den">75</span></div></div>
-                <div class="sol-step">Numerator: 3 &times; 8 = 24</div>
-                <div class="sol-step">Denominator: 5 &times; 15 = 75</div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">8</span><span class="den">15</span></div></span></div>
-            </div>
-
-            <div class="question">(b) (ii) The simplest form of the number obtained in <div class="box"></div> is ___.</div>
-            <div class="solution">
-                <div class="sol-step">Number obtained = <div class="frac"><span class="num">8</span><span class="den">15</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">8</span><span class="den">15</span></div></span></div>
-            </div>
-
-            <div class="question">(c) Fill in the box <div class="frac"><span class="num">3</span><span class="den">7</span></div> &times; <div class="box"></div> = <div class="frac"><span class="num">12</span><span class="den">91</span></div>.</div>
-            <div class="solution">
-                <div class="sol-step">We need a fraction: <div class="frac"><span class="num">3 &times; ?</span><span class="den">7 &times; ?</span></div> = <div class="frac"><span class="num">12</span><span class="den">91</span></div></div>
-                <div class="sol-step">Numerator: 3 &times; 4 = 12</div>
-                <div class="sol-step">Denominator: 7 &times; 13 = 91</div>
-                <div class="sol-step">Result: <span class="ans-highlight"><div class="frac"><span class="num">4</span><span class="den">13</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(b) (i) Provide number in [ ]: <div class="frac"><span class="num">3</span><span class="den">5</span></div> × [ ] = <div class="frac"><span class="num">24</span><span class="den">75</span></div> (ii) Simplest form</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">• (i) <div class="frac"><span class="num">3</span><span class="den">5</span></div> × <div class="frac"><span class="num">8</span><span class="den">15</span></div> = <div class="frac"><span class="num">24</span><span class="den">75</span></div> ➔ <span class="ans-highlight">Number in box = <div class="frac"><span class="num">8</span><span class="den">15</span></div></span></div>
+                    <div class="sol-step">• (ii) Simplest form of <div class="frac"><span class="num">8</span><span class="den">15</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">8</span><span class="den">15</span></div></span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-4": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
-            .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 5px; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 12 ÷ <div class="frac"><span class="num">3</span><span class="den">4</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= 12 × reciprocal of <div class="frac"><span class="num">3</span><span class="den">4</span></div></div>
+                    <div class="sol-step">= 12 × <div class="frac"><span class="num">4</span><span class="den">3</span></div> = <div class="frac"><span class="num">12 × 4</span><span class="den">3</span></div> = <div class="frac"><span class="num">48</span><span class="den">3</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 16</span></div>
 
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 14 ÷ <div class="frac"><span class="num">5</span><span class="den">6</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= 14 × reciprocal of <div class="frac"><span class="num">5</span><span class="den">6</span></div></div>
+                    <div class="sol-step">= 14 × <div class="frac"><span class="num">6</span><span class="den">5</span></div> = <div class="frac"><span class="num">84</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 16 <div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
 
-            <div class="question">1. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 12 &divide; <div class="frac"><span class="num">3</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> 12 &times; (Reciprocal of <div class="frac"><span class="num">3</span><span class="den">4</span></div>)</div>
-                <div class="sol-step">=> 12 &times; <div class="frac"><span class="num">4</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> 4 &times; 4 = <span class="ans-highlight">16</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 8 ÷ <div class="frac"><span class="num">7</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= 8 × reciprocal of <div class="frac"><span class="num">7</span><span class="den">3</span></div></div>
+                    <div class="sol-step">= 8 × <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">24</span><span class="den">7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 3 <div class="frac"><span class="num">3</span><span class="den">7</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 14 &divide; <div class="frac"><span class="num">5</span><span class="den">6</span></div></b></div>
-                <div class="sol-step">=> 14 &times; <div class="frac"><span class="num">6</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">84</span><span class="den">5</span></div> = <span class="ans-highlight">16<div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 4 ÷ <div class="frac"><span class="num">8</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= 4 × reciprocal of <div class="frac"><span class="num">8</span><span class="den">3</span></div></div>
+                    <div class="sol-step">= 4 × <div class="frac"><span class="num">3</span><span class="den">8</span></div> = <div class="frac"><span class="num">12</span><span class="den">8</span></div> = <div class="frac"><span class="num">3</span><span class="den">2</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 8 &divide; <div class="frac"><span class="num">7</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> 8 &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">24</span><span class="den">7</span></div> = <span class="ans-highlight">3<div class="frac"><span class="num">3</span><span class="den">7</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 3 ÷ 2 <div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">7</span><span class="den">3</span></div></div>
+                    <div class="sol-step">= 3 ÷ <div class="frac"><span class="num">7</span><span class="den">3</span></div> = 3 × <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">9</span><span class="den">7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">2</span><span class="den">7</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 4 &divide; <div class="frac"><span class="num">8</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> 4 &times; <div class="frac"><span class="num">3</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">12</span><span class="den">8</span></div> = <div class="frac"><span class="num">3</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">1<div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 3 &divide; 2<div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> 3 &divide; <div class="frac"><span class="num">7</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> 3 &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">1<div class="frac"><span class="num">2</span><span class="den">7</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 5 &divide; 3<div class="frac"><span class="num">4</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">=> 5 &divide; <div class="frac"><span class="num">25</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> 5 &times; <div class="frac"><span class="num">7</span><span class="den">25</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">5</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3<div class="frac"><span class="num">1</span><span class="den">2</span></div> &divide; 2<div class="frac"><span class="num">1</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &divide; <div class="frac"><span class="num">7</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">2</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">1</span><span class="den">2</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) <div class="frac"><span class="num">7</span><span class="den">13</span></div> &divide; 6<div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">13</span></div> &divide; <div class="frac"><span class="num">13</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">13</span></div> &times; <div class="frac"><span class="num">2</span><span class="den">13</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">14</span><span class="den">169</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 5 ÷ 3 <div class="frac"><span class="num">4</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">4</span><span class="den">7</span></div> = <div class="frac"><span class="num">25</span><span class="den">7</span></div></div>
+                    <div class="sol-step">= 5 ÷ <div class="frac"><span class="num">25</span><span class="den">7</span></div> = 5 × <div class="frac"><span class="num">7</span><span class="den">25</span></div> = <div class="frac"><span class="num">35</span><span class="den">25</span></div> = <div class="frac"><span class="num">7</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">2</span><span class="den">5</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">2. Find the reciprocal of each of the following fractions. Classify the reciprocals as proper fractions, improper fractions and whole numbers.</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">7</span><span class="den">3</span></div></span></div>
-                <div class="sol-step">Classification: Numerator (7) &gt; Denominator (3), so it is an <span class="ans-highlight">Improper fraction</span></div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Find the reciprocal of each of the following fractions. Classify the reciprocals as proper fractions, improper fractions and whole numbers:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">3</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">7</span><span class="den">3</span></div></div>
+                    <div class="sol-step">Since numerator (7) &gt; denominator (3), it is an <span class="ans-highlight">Improper fraction.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">8</span><span class="den">5</span></div></span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Improper fraction</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">5</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">5</span><span class="den">8</span></div> = <div class="frac"><span class="num">8</span><span class="den">5</span></div></div>
+                    <div class="sol-step">Since numerator (8) &gt; denominator (5), it is an <span class="ans-highlight">Improper fraction.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">9</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">7</span><span class="den">9</span></div></span></div>
-                <div class="sol-step">Classification: Numerator (7) &lt; Denominator (9), so it is a <span class="ans-highlight">Proper fraction</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">9</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">9</span><span class="den">7</span></div> = <div class="frac"><span class="num">7</span><span class="den">9</span></div></div>
+                    <div class="sol-step">Since numerator (7) &lt; denominator (9), it is a <span class="ans-highlight">Proper fraction.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) <div class="frac"><span class="num">6</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">5</span><span class="den">6</span></div></span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Proper fraction</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) <div class="frac"><span class="num">6</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">6</span><span class="den">5</span></div> = <div class="frac"><span class="num">5</span><span class="den">6</span></div></div>
+                    <div class="sol-step">Since numerator (5) &lt; denominator (6), it is a <span class="ans-highlight">Proper fraction.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) <div class="frac"><span class="num">12</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">7</span><span class="den">12</span></div></span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Proper fraction</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) <div class="frac"><span class="num">12</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">12</span><span class="den">7</span></div> = <div class="frac"><span class="num">7</span><span class="den">12</span></div></div>
+                    <div class="sol-step">Since numerator (7) &lt; denominator (12), it is a <span class="ans-highlight">Proper fraction.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) <div class="frac"><span class="num">1</span><span class="den">8</span></div></b></div>
-                <div class="sol-step">Reciprocal = <div class="frac"><span class="num">8</span><span class="den">1</span></div> = <span class="ans-highlight">8</span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Whole number</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) <div class="frac"><span class="num">1</span><span class="den">8</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">1</span><span class="den">8</span></div> = <div class="frac"><span class="num">8</span><span class="den">1</span></div> = 8</div>
+                    <div class="sol-step">It is a <span class="ans-highlight">Whole number.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) <div class="frac"><span class="num">1</span><span class="den">11</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight">11</span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Whole number</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">Reciprocal = <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">2</span></div></span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Improper fraction</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) <div class="frac"><span class="num">2</span><span class="den">3</span></div> &divide; <div class="frac"><span class="num">3</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">4</span><span class="den">9</span></div></div>
-                <div class="sol-step">Reciprocal of <div class="frac"><span class="num">4</span><span class="den">9</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">9</span><span class="den">4</span></div></span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Improper fraction</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(x) <div class="frac"><span class="num">4</span><span class="den">5</span></div> &times; 1<div class="frac"><span class="num">1</span><span class="den">4</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">5</span><span class="den">4</span></div> = 1</div>
-                <div class="sol-step">Reciprocal of 1 = <span class="ans-highlight">1</span></div>
-                <div class="sol-step">Classification: <span class="ans-highlight">Whole number</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) <div class="frac"><span class="num">1</span><span class="den">11</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Reciprocal of <div class="frac"><span class="num">1</span><span class="den">11</span></div> = <div class="frac"><span class="num">11</span><span class="den">1</span></div> = 11</div>
+                    <div class="sol-step">It is a <span class="ans-highlight">Whole number.</span></div>
+                </div>
             </div>
 
-            <div class="question">3. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">7</span><span class="den">3</span></div> &divide; 2</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">7</span><span class="den">6</span></div></span> = <span class="ans-highlight">1<div class="frac"><span class="num">1</span><span class="den">6</span></div></span></div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">7</span><span class="den">3</span></div> ÷ 2</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">7</span><span class="den">3</span></div> × <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">7</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">1</span><span class="den">6</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">4</span><span class="den">9</span></div> &divide; 5</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">9</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">4</span><span class="den">45</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">4</span><span class="den">9</span></div> ÷ 5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">4</span><span class="den">9</span></div> × <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">4 × 1</span><span class="den">9 × 5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">4</span><span class="den">45</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">6</span><span class="den">13</span></div> &divide; 7</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">6</span><span class="den">13</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">6</span><span class="den">91</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">6</span><span class="den">13</span></div> ÷ 7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">6</span><span class="den">13</span></div> × <div class="frac"><span class="num">1</span><span class="den">7</span></div> = <div class="frac"><span class="num">6 × 1</span><span class="den">13 × 7</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">6</span><span class="den">91</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 4<div class="frac"><span class="num">1</span><span class="den">3</span></div> &divide; 3</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">13</span><span class="den">3</span></div> &divide; 3</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">13</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">13</span><span class="den">9</span></div></span> = <span class="ans-highlight">1<div class="frac"><span class="num">4</span><span class="den">9</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 4 <div class="frac"><span class="num">1</span><span class="den">3</span></div> ÷ 3</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">4 <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">13</span><span class="den">3</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">13</span><span class="den">3</span></div> × <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">13</span><span class="den">9</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">4</span><span class="den">9</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 3<div class="frac"><span class="num">1</span><span class="den">2</span></div> &divide; 4</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &divide; 4</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 3 <div class="frac"><span class="num">1</span><span class="den">2</span></div> ÷ 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">7</span><span class="den">2</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">7</span><span class="den">2</span></div> × <div class="frac"><span class="num">1</span><span class="den">4</span></div> = <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">7</span><span class="den">8</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 4<div class="frac"><span class="num">3</span><span class="den">7</span></div> &divide; 7</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">31</span><span class="den">7</span></div> &divide; 7</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">31</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">31</span><span class="den">49</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 4 <div class="frac"><span class="num">3</span><span class="den">7</span></div> ÷ 7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">4 <div class="frac"><span class="num">3</span><span class="den">7</span></div> = <div class="frac"><span class="num">31</span><span class="den">7</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">31</span><span class="den">7</span></div> × <div class="frac"><span class="num">1</span><span class="den">7</span></div> = <div class="frac"><span class="num">31</span><span class="den">49</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">31</span><span class="den">49</span></div></span></div>
+                </div>
             </div>
 
-            <div class="question">4. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) <div class="frac"><span class="num">2</span><span class="den">5</span></div> &divide; <div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">2</span><span class="den">1</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) <div class="frac"><span class="num">2</span><span class="den">5</span></div> ÷ <div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2</span><span class="den">5</span></div> × <div class="frac"><span class="num">2</span><span class="den">1</span></div> = <div class="frac"><span class="num">4</span><span class="den">5</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">4</span><span class="den">5</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) <div class="frac"><span class="num">4</span><span class="den">9</span></div> &divide; <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">9</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">12</span><span class="den">18</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) <div class="frac"><span class="num">4</span><span class="den">9</span></div> ÷ <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">4</span><span class="den">9</span></div> × <div class="frac"><span class="num">3</span><span class="den">2</span></div> = <div class="frac"><span class="num">4 × 3</span><span class="den">9 × 2</span></div> = <div class="frac"><span class="num">12</span><span class="den">18</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">2</span><span class="den">3</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) <div class="frac"><span class="num">3</span><span class="den">7</span></div> &divide; <div class="frac"><span class="num">8</span><span class="den">7</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">7</span></div> &times; <div class="frac"><span class="num">7</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">21</span><span class="den">56</span></div> = <span class="ans-highlight"><div class="frac"><span class="num">3</span><span class="den">8</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) <div class="frac"><span class="num">3</span><span class="den">7</span></div> ÷ <div class="frac"><span class="num">8</span><span class="den">7</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">3</span><span class="den">7</span></div> × <div class="frac"><span class="num">7</span><span class="den">8</span></div> = <div class="frac"><span class="num">3 × 7</span><span class="den">7 × 8</span></div> = <div class="frac"><span class="num">21</span><span class="den">56</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">3</span><span class="den">8</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 2<div class="frac"><span class="num">1</span><span class="den">3</span></div> &divide; <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">3</span></div> &times; <div class="frac"><span class="num">5</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">35</span><span class="den">9</span></div> = <span class="ans-highlight">3<div class="frac"><span class="num">8</span><span class="den">9</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 2 <div class="frac"><span class="num">1</span><span class="den">3</span></div> ÷ <div class="frac"><span class="num">3</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">1</span><span class="den">3</span></div> = <div class="frac"><span class="num">7</span><span class="den">3</span></div> ➔ <div class="frac"><span class="num">7</span><span class="den">3</span></div> × <div class="frac"><span class="num">5</span><span class="den">3</span></div> = <div class="frac"><span class="num">35</span><span class="den">9</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 3 <div class="frac"><span class="num">8</span><span class="den">9</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 3<div class="frac"><span class="num">1</span><span class="den">2</span></div> &divide; <div class="frac"><span class="num">8</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">21</span><span class="den">16</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">5</span><span class="den">16</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 3 <div class="frac"><span class="num">1</span><span class="den">2</span></div> ÷ <div class="frac"><span class="num">8</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">7</span><span class="den">2</span></div> ➔ <div class="frac"><span class="num">7</span><span class="den">2</span></div> × <div class="frac"><span class="num">3</span><span class="den">8</span></div> = <div class="frac"><span class="num">21</span><span class="den">16</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">5</span><span class="den">16</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) <div class="frac"><span class="num">2</span><span class="den">5</span></div> &divide; 1<div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">5</span></div> &divide; <div class="frac"><span class="num">3</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">2</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">4</span><span class="den">15</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) <div class="frac"><span class="num">2</span><span class="den">5</span></div> ÷ 1 <div class="frac"><span class="num">1</span><span class="den">2</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">1 <div class="frac"><span class="num">1</span><span class="den">2</span></div> = <div class="frac"><span class="num">3</span><span class="den">2</span></div> ➔ <div class="frac"><span class="num">2</span><span class="den">5</span></div> × <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">4</span><span class="den">15</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= <div class="frac"><span class="num">4</span><span class="den">15</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3<div class="frac"><span class="num">1</span><span class="den">5</span></div> &divide; 1<div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16</span><span class="den">5</span></div> &divide; <div class="frac"><span class="num">5</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">16</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">48</span><span class="den">25</span></div> = <span class="ans-highlight">1<div class="frac"><span class="num">23</span><span class="den">25</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 3 <div class="frac"><span class="num">1</span><span class="den">5</span></div> ÷ 1 <div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">16</span><span class="den">5</span></div>, 1 <div class="frac"><span class="num">2</span><span class="den">3</span></div> = <div class="frac"><span class="num">5</span><span class="den">3</span></div> ➔ <div class="frac"><span class="num">16</span><span class="den">5</span></div> × <div class="frac"><span class="num">3</span><span class="den">5</span></div> = <div class="frac"><span class="num">48</span><span class="den">25</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">23</span><span class="den">25</span></div></span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 2<div class="frac"><span class="num">1</span><span class="den">5</span></div> &divide; 1<div class="frac"><span class="num">1</span><span class="den">5</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">11</span><span class="den">5</span></div> &divide; <div class="frac"><span class="num">6</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">11</span><span class="den">5</span></div> &times; <div class="frac"><span class="num">5</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">11</span><span class="den">6</span></div></span> = <span class="ans-highlight">1<div class="frac"><span class="num">5</span><span class="den">6</span></div></span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) 3<div class="frac"><span class="num">1</span><span class="den">2</span></div> &divide; 1<div class="frac"><span class="num">1</span><span class="den">6</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &divide; <div class="frac"><span class="num">7</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">2</span></div> &times; <div class="frac"><span class="num">6</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">42</span><span class="den">14</span></div> = <span class="ans-highlight">3</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(x) <div class="frac"><span class="num">3</span><span class="den">8</span></div> &divide; 2<div class="frac"><span class="num">2</span><span class="den">3</span></div></b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">8</span></div> &divide; <div class="frac"><span class="num">8</span><span class="den">3</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3</span><span class="den">8</span></div> &times; <div class="frac"><span class="num">3</span><span class="den">8</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight"><div class="frac"><span class="num">9</span><span class="den">64</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 2 <div class="frac"><span class="num">1</span><span class="den">5</span></div> ÷ 1 <div class="frac"><span class="num">1</span><span class="den">5</span></div></b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">11</span><span class="den">5</span></div>, 1 <div class="frac"><span class="num">1</span><span class="den">5</span></div> = <div class="frac"><span class="num">6</span><span class="den">5</span></div> ➔ <div class="frac"><span class="num">11</span><span class="den">5</span></div> × <div class="frac"><span class="num">5</span><span class="den">6</span></div> = <div class="frac"><span class="num">55</span><span class="den">30</span></div> = <div class="frac"><span class="num">11</span><span class="den">6</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 <div class="frac"><span class="num">5</span><span class="den">6</span></div></span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-5": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
-            .frac { display: inline-block; vertical-align: middle; text-align: center; margin: 0 5px; }
-            .frac .num { border-bottom: 1px solid #fff; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
+            .svg-container { text-align: center; margin: 15px auto; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px solid #42A5F5; overflow-x: auto; }
+            .svg-container svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         </style>
         <div class="container">
-            <div class="question">1. Which is greater?</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 0.5 or 0.05</b></div>
-                <div class="sol-step">=> 0.5 can be written as 0.50</div>
-                <div class="sol-step">=> 0.05 stays as 0.05</div>
-                <div class="sol-step">=> Comparing digits at tenths place: 5 &gt; 0</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.5 is greater.</span></div>
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Which is greater:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 0.5 or 0.05</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Whole number parts are equal (0 = 0).</div>
+                    <div class="sol-step">Comparing tenths place: 5 &gt; 0.</div>
+                    <div class="sol-step"><span class="ans-highlight">0.5 is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 0.7 or 0.5</b></div>
-                <div class="sol-step">=> Comparing digits at tenths place: 7 &gt; 5</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.7 is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 0.7 or 0.5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Whole number parts are equal (0 = 0).</div>
+                    <div class="sol-step">Comparing tenths place: 7 &gt; 5.</div>
+                    <div class="sol-step"><span class="ans-highlight">0.7 is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 7 or 0.7</b></div>
-                <div class="sol-step">=> 7 can be written as 7.0</div>
-                <div class="sol-step">=> Comparing whole number part: 7 &gt; 0</div>
-                <div class="sol-step">Result: <span class="ans-highlight">7 is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 7 or 0.7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Comparing whole number parts: 7 &gt; 0.</div>
+                    <div class="sol-step"><span class="ans-highlight">7 is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 1.37 or 1.49</b></div>
-                <div class="sol-step">=> Whole numbers are same (1 = 1)</div>
-                <div class="sol-step">=> Comparing digits at tenths place: 3 &lt; 4</div>
-                <div class="sol-step">Result: <span class="ans-highlight">1.49 is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 1.37 or 1.49</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Whole number parts are equal (1 = 1).</div>
+                    <div class="sol-step">Comparing tenths place: 3 &lt; 4.</div>
+                    <div class="sol-step"><span class="ans-highlight">1.49 is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 2.03 or 2.30</b></div>
-                <div class="sol-step">=> Whole numbers are same (2 = 2)</div>
-                <div class="sol-step">=> Comparing digits at tenths place: 0 &lt; 3</div>
-                <div class="sol-step">Result: <span class="ans-highlight">2.30 is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 2.03 or 2.30</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Whole number parts are equal (2 = 2).</div>
+                    <div class="sol-step">Comparing tenths place: 0 &lt; 3.</div>
+                    <div class="sol-step"><span class="ans-highlight">2.30 is greater.</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 0.8 or 0.88</b></div>
-                <div class="sol-step">=> 0.8 can be written as 0.80</div>
-                <div class="sol-step">=> 0.88 stays as 0.88</div>
-                <div class="sol-step">=> Tenths place digits are same (8 = 8)</div>
-                <div class="sol-step">=> Comparing hundredths place: 0 &lt; 8</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.88 is greater.</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 0.8 or 0.88</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Writing with equal decimal places: 0.80 and 0.88.</div>
+                    <div class="sol-step">Comparing hundredths place: 0 &lt; 8.</div>
+                    <div class="sol-step"><span class="ans-highlight">0.88 is greater.</span></div>
+                </div>
             </div>
 
-            <div class="question">2. Express as rupees using decimals:</div>
-            <div class="solution">
-                <div class="sol-step">Given: 100 paise = &rupee; 1</div>
-                <div class="sol-step">=> 1 paisa = &rupee; <div class="frac"><span class="num">1</span><span class="den">100</span></div></div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>(i) 7 paise</b></div>
-                <div class="sol-step">=> &rupee; <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
-                <div class="sol-step">Result: <span class="ans-highlight">&rupee; 0.07</span></div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Express as rupees using decimals:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 7 paise</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">100 paise = ₹ 1 ➔ 1 paise = ₹ <div class="frac"><span class="num">1</span><span class="den">100</span></div></div>
+                    <div class="sol-step">7 paise = ₹ <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= ₹ 0.07</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 7 rupees 7 paise</b></div>
-                <div class="sol-step">=> &rupee; 7 + &rupee; <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> &rupee; 7 + &rupee; 0.07</div>
-                <div class="sol-step">Result: <span class="ans-highlight">&rupee; 7.07</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 7 rupees 7 paise</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= ₹ 7 + ₹ <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= ₹ 7 + ₹ 0.07</div>
+                    <div class="sol-step"><span class="ans-highlight">= ₹ 7.07</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 77 rupees 77 paise</b></div>
-                <div class="sol-step">=> &rupee; 77 + &rupee; <div class="frac"><span class="num">77</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> &rupee; 77 + &rupee; 0.77</div>
-                <div class="sol-step">Result: <span class="ans-highlight">&rupee; 77.77</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 77 rupees 77 paise</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= ₹ 77 + ₹ <div class="frac"><span class="num">77</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= ₹ 77 + ₹ 0.77</div>
+                    <div class="sol-step"><span class="ans-highlight">= ₹ 77.77</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 50 paise</b></div>
-                <div class="sol-step">=> &rupee; <div class="frac"><span class="num">50</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> &rupee; 0.50</div>
-                <div class="sol-step">Result: <span class="ans-highlight">&rupee; 0.50</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 50 paise</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= ₹ <div class="frac"><span class="num">50</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= ₹ 0.50</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 235 paise</b></div>
-                <div class="sol-step">=> &rupee; <div class="frac"><span class="num">235</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> &rupee; 2.35</div>
-                <div class="sol-step">Result: <span class="ans-highlight">&rupee; 2.35</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 235 paise</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= ₹ <div class="frac"><span class="num">235</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= ₹ 2.35</span></div>
+                </div>
             </div>
 
-            <div class="question">3. (i) Express 5 cm in metre and kilometre</div>
-            <div class="solution">
-                <div class="sol-step"><b>Step 1: Expressing 5 cm in Metres (m)</b></div>
-                <div class="sol-step">Since 100 cm = 1 m</div>
-                <div class="sol-step">=> 5 cm = <div class="frac"><span class="num">5</span><span class="den">100</span></div> m</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.05 m</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>Step 2: Expressing 5 cm in Kilometres (km)</b></div>
-                <div class="sol-step">Since 1000 m = 1 km</div>
-                <div class="sol-step">=> 0.05 m = <div class="frac"><span class="num">0.05</span><span class="den">1000</span></div> km</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.00005 km</span></div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Express in different units:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) Express 5 cm in meter and kilometer</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">100 cm = 1 m ➔ 5 cm = <div class="frac"><span class="num">5</span><span class="den">100</span></div> m = <span class="ans-highlight">0.05 m</span></div>
+                    <div class="sol-step">1000 m = 1 km ➔ 0.05 m = <div class="frac"><span class="num">0.05</span><span class="den">1000</span></div> km = <span class="ans-highlight">0.00005 km</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) Express 35 mm in cm, m and km</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">10 mm = 1 cm ➔ 35 mm = <div class="frac"><span class="num">35</span><span class="den">10</span></div> cm = <span class="ans-highlight">3.5 cm</span></div>
+                    <div class="sol-step">100 cm = 1 m ➔ 3.5 cm = <div class="frac"><span class="num">3.5</span><span class="den">100</span></div> m = <span class="ans-highlight">0.035 m</span></div>
+                    <div class="sol-step">1000 m = 1 km ➔ 0.035 m = <div class="frac"><span class="num">0.035</span><span class="den">1000</span></div> km = <span class="ans-highlight">0.000035 km</span></div>
+                </div>
             </div>
 
-            <div class="question">(ii) Express 35 mm in cm, m and km.</div>
-            <div class="solution">
-                <div class="sol-step"><b>Step 1: Expressing 35 mm in Centimetres (cm)</b></div>
-                <div class="sol-step">Since 10 mm = 1 cm</div>
-                <div class="sol-step">=> 35 mm = <div class="frac"><span class="num">35</span><span class="den">10</span></div> cm</div>
-                <div class="sol-step">=> <span class="ans-highlight">3.5 cm</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>Step 2: Expressing 35 mm in Metres (m)</b></div>
-                <div class="sol-step">Since 100 cm = 1 m</div>
-                <div class="sol-step">=> 3.5 cm = <div class="frac"><span class="num">3.5</span><span class="den">100</span></div> m</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.035 m</span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Express in kg:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 200 g</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">1000 g = 1 kg ➔ 200 g = <div class="frac"><span class="num">200</span><span class="den">1000</span></div> kg = <span class="ans-highlight">0.2 kg</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>Step 3: Expressing 35 mm in Kilometres (km)</b></div>
-                <div class="sol-step">Since 1000 m = 1 km</div>
-                <div class="sol-step">=> 0.035 m = <div class="frac"><span class="num">0.035</span><span class="den">1000</span></div> km</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.000035 km</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 3470 g</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3470 g = <div class="frac"><span class="num">3470</span><span class="den">1000</span></div> kg = <span class="ans-highlight">3.47 kg</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 4 kg 8 g</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= 4 kg + <div class="frac"><span class="num">8</span><span class="den">1000</span></div> kg = 4 kg + 0.008 kg = <span class="ans-highlight">4.008 kg</span></div>
+                </div>
             </div>
 
-            <div class="question">4. Express in kg:</div>
-            <div class="solution">
-                <div class="sol-step">Given: 1000 g = 1 kg</div>
-                <div class="sol-step">=> 1 g = <div class="frac"><span class="num">1</span><span class="den">1000</span></div> kg</div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Write the following decimal numbers in the expanded form:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 20.03</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <span class="ans-highlight">(2 × 10) + (0 × 1) + (0 × <div class="frac"><span class="num">1</span><span class="den">10</span></div>) + (3 × <div class="frac"><span class="num">1</span><span class="den">100</span></div>)</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(i) 200 g</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">200</span><span class="den">1000</span></div> kg</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.2 kg</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 2.03</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <span class="ans-highlight">(2 × 1) + (0 × <div class="frac"><span class="num">1</span><span class="den">10</span></div>) + (3 × <div class="frac"><span class="num">1</span><span class="den">100</span></div>)</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 3470 g</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3470</span><span class="den">1000</span></div> kg</div>
-                <div class="sol-step">=> <span class="ans-highlight">3.47 kg</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 200.03</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <span class="ans-highlight">(2 × 100) + (0 × 10) + (0 × 1) + (0 × <div class="frac"><span class="num">1</span><span class="den">10</span></div>) + (3 × <div class="frac"><span class="num">1</span><span class="den">100</span></div>)</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 4 kg 8 g</b></div>
-                <div class="sol-step">=> 4 kg + <div class="frac"><span class="num">8</span><span class="den">1000</span></div> kg</div>
-                <div class="sol-step">=> 4 kg + 0.008 kg</div>
-                <div class="sol-step">Result: <span class="ans-highlight">4.008 kg</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 2.034</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= <span class="ans-highlight">(2 × 1) + (0 × <div class="frac"><span class="num">1</span><span class="den">10</span></div>) + (3 × <div class="frac"><span class="num">1</span><span class="den">100</span></div>) + (4 × <div class="frac"><span class="num">1</span><span class="den">1000</span></div>)</span></div>
+                </div>
             </div>
 
-            <div class="question">5. Write the following decimal numbers in the expanded form:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 20.03</b></div>
-                <div class="sol-step">=> 2 &times; 10 (Tens) + 0 &times; 1 (Ones)</div>
-                <div class="sol-step">=> + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> (Tenths) + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div> (Hundredths)</div>
-                <div class="sol-step">Result: <span class="ans-highlight">2 &times; 10 + 0 &times; 1 + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div></span></div>
+            <!-- Question 6 -->
+            <div class="sol-card">
+                <div class="question-header">6. Write the place value of 2 in the following decimal numbers:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 2.56</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 is in the units place before decimal. <span class="ans-highlight">Place value = Ones</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 2.03</b></div>
-                <div class="sol-step">=> 2 &times; 1 (Ones) + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> (Tenths)</div>
-                <div class="sol-step">=> + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div> (Hundredths)</div>
-                <div class="sol-step">Result: <span class="ans-highlight">2 &times; 1 + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 21.37</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 is in the tens place. <span class="ans-highlight">Place value = Tens</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 200.03</b></div>
-                <div class="sol-step">=> 2 &times; 100 (Hundreds) + 0 &times; 10 (Tens) + 0 &times; 1 (Ones)</div>
-                <div class="sol-step">=> + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> (Tenths) + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div> (Hundredths)</div>
-                <div class="sol-step">Result: <span class="ans-highlight">2 &times; 100 + 0 &times; 10 + 0 &times; 1 + 0 &times; <div class="frac"><span class="num">1</span><span class="den">10</span></div> + 3 &times; <div class="frac"><span class="num">1</span><span class="den">100</span></div></span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 10.25</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 is the first digit after decimal. <span class="ans-highlight">Place value = Tenths</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 9.42</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 is the second digit after decimal. <span class="ans-highlight">Place value = Hundredths</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 63.352</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 is the third digit after decimal. <span class="ans-highlight">Place value = Thousandths</span></div>
+                </div>
             </div>
 
-            <div class="question">6. Write the place value of 2 in the following decimal numbers:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 2.56</b></div>
-                <div class="sol-step">2 is at the ones place.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Ones</span> (or 2)</div>
+            <!-- Question 7 -->
+            <div class="sol-card">
+                <div class="question-header">7. Dinesh went from place A to B (7.5 km) and then to C (12.7 km). Ayub went from A to D (9.3 km) and then to C (11.8 km). Who travelled more and by how much?</div>
+                <div class="sol-body">
+                    <div class="svg-container">
+                        <svg width="260" height="170" viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" style="max-width:100%; height:auto; display:block; margin:0 auto;">
+                            <polygon points="45,35 135,15 235,100 85,130" fill="rgba(66, 165, 245, 0.15)" stroke="#42A5F5" stroke-width="3"/>
+                            <text x="30" y="35" fill="#42A5F5" font-size="15" font-weight="bold">A</text>
+                            <text x="135" y="12" fill="#42A5F5" font-size="15" font-weight="bold">B</text>
+                            <text x="245" y="105" fill="#42A5F5" font-size="15" font-weight="bold">C</text>
+                            <text x="70" y="145" fill="#42A5F5" font-size="15" font-weight="bold">D</text>
+                            <text x="80" y="22" fill="#90CAF9" font-size="12" font-weight="bold">7.5 km</text>
+                            <text x="195" y="55" fill="#90CAF9" font-size="12" font-weight="bold">12.7 km</text>
+                            <text x="40" y="90" fill="#90CAF9" font-size="12" font-weight="bold">9.3 km</text>
+                            <text x="155" y="130" fill="#90CAF9" font-size="12" font-weight="bold">11.8 km</text>
+                        </svg>
+                    </div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 21.37</b></div>
-                <div class="sol-step">2 is at the tens place.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Tens</span> (or 20)</div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 10.25</b></div>
-                <div class="sol-step">2 is at the tenths place.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Tenths</span> (or <div class="frac"><span class="num">2</span><span class="den">10</span></div>)</div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 9.42</b></div>
-                <div class="sol-step">2 is at the hundredths place.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Hundredths</span> (or <div class="frac"><span class="num">2</span><span class="den">100</span></div>)</div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 63.352</b></div>
-                <div class="sol-step">2 is at the thousandths place.</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Thousandths</span> (or <div class="frac"><span class="num">2</span><span class="den">1000</span></div>)</div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Distance travelled by Dinesh = AB + BC = 7.5 km + 12.7 km = 20.2 km</div>
+                    <div class="sol-step">Distance travelled by Ayub = AD + DC = 9.3 km + 11.8 km = 21.1 km</div>
+                    <div class="sol-step">Comparing 21.1 km and 20.2 km: Since 21.1 &gt; 20.2</div>
+                    <div class="sol-step"><span class="ans-highlight">Ayub travelled more distance.</span></div>
+                    <div class="sol-step">Difference = 21.1 km - 20.2 km = 0.9 km</div>
+                    <div class="sol-step"><span class="ans-highlight">Ayub travelled 0.9 km (or 900 m) more than Dinesh.</span></div>
+                </div>
             </div>
 
-            <div class="question">7. Angad went from place A to place B and from there to place C. A is 7.5 km from B and B is 12.7 km from C. Rigzin went from place A to place D and from there to place C. D is 9.3 km from A and C is 11.8 km from D. Who travelled more and by how much?</div>
-            <div style="text-align: center; margin-bottom: 20px;">
-                <svg width="250" height="150" viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M 20 80 L 120 30 L 230 110 L 140 130 Z" fill="none" stroke="#FF4081" stroke-width="3" stroke-linejoin="round"/>
-                    <circle cx="20" cy="80" r="4" fill="#fff"/>
-                    <text x="5" y="80" fill="#fff" font-size="14" font-weight="bold">A</text>
-                    <circle cx="120" cy="30" r="4" fill="#fff"/>
-                    <text x="115" y="20" fill="#fff" font-size="14" font-weight="bold">B</text>
-                    <circle cx="230" cy="110" r="4" fill="#fff"/>
-                    <text x="240" y="115" fill="#fff" font-size="14" font-weight="bold">C</text>
-                    <circle cx="140" cy="130" r="4" fill="#fff"/>
-                    <text x="135" y="145" fill="#fff" font-size="14" font-weight="bold">D</text>
-                </svg>
-            </div>
-            <div class="solution">
-                <div class="sol-step"><b>Calculation for Angad:</b></div>
-                <div class="sol-step">Angad travelled from A to B = 7.5 km</div>
-                <div class="sol-step">Angad travelled from B to C = 12.7 km</div>
-                <div class="sol-step">Total distance = 7.5 + 12.7</div>
-                <div class="sol-step">=> <span class="ans-highlight">20.2 km</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>Calculation for Rigzin:</b></div>
-                <div class="sol-step">Rigzin travelled from A to D = 9.3 km</div>
-                <div class="sol-step">Rigzin travelled from D to C = 11.8 km</div>
-                <div class="sol-step">Total distance = 9.3 + 11.8</div>
-                <div class="sol-step">=> <span class="ans-highlight">21.1 km</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;"><b>Comparison:</b></div>
-                <div class="sol-step">Since 21.1 km &gt; 20.2 km, Rigzin travelled more.</div>
-                <div class="sol-step">Difference = 21.1 - 20.2</div>
-                <div class="sol-step">=> <span class="ans-highlight">0.9 km</span></div>
-                <div class="sol-step">Final Result: <span class="ans-highlight">Rigzin travelled more by 0.9 km.</span></div>
+            <!-- Question 8 -->
+            <div class="sol-card">
+                <div class="question-header">8. Shyama bought 5 kg 300 g apples and 3 kg 250 g mangoes. Sarala bought 4 kg 800 g oranges and 4 kg 150 g bananas. Who bought more fruits?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Total fruits bought by Shyama:</div>
+                    <div class="sol-step">Apples = 5.300 kg, Mangoes = 3.250 kg</div>
+                    <div class="sol-step">Total = 5.300 + 3.250 = 8.550 kg</div>
+                    <div class="sol-step" style="margin-top: 10px;">Total fruits bought by Sarala:</div>
+                    <div class="sol-step">Oranges = 4.800 kg, Bananas = 4.150 kg</div>
+                    <div class="sol-step">Total = 4.800 + 4.150 = 8.950 kg</div>
+                    <div class="sol-step" style="margin-top: 10px;">Comparing 8.950 kg and 8.550 kg: 8.950 &gt; 8.550</div>
+                    <div class="sol-step"><span class="ans-highlight">Sarala bought more fruits.</span></div>
+                </div>
             </div>
 
-            <div class="question">8. Maria brought 5 kg 300 g apples and 3 kg 250 g mangoes. Suzy bought 4 kg 800 g oranges and 4 kg 150 g bananas. Who bought more fruits?</div>
-            <div class="solution">
-                <div class="sol-step">Fruits bought by Maria = 5 kg 300 g + 3 kg 250 g</div>
-                <div class="sol-step">= 5.300 kg + 3.250 kg</div>
-                <div class="sol-step">= <span class="ans-highlight">8.550 kg</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;">Fruits bought by Suzy = 4 kg 800 g + 4 kg 150 g</div>
-                <div class="sol-step">= 4.800 kg + 4.150 kg</div>
-                <div class="sol-step">= <span class="ans-highlight">8.950 kg</span></div>
-                
-                <div class="sol-step" style="margin-top: 15px;">Comparing both amounts: 8.950 kg &gt; 8.550 kg</div>
-                <div class="sol-step">Result: <span class="ans-highlight">Suzy bought more fruits.</span></div>
-            </div>
-
-            <div class="question">9. How much less is 28 km than 42.6 km?</div>
-            <div class="solution">
-                <div class="sol-step">We need to find the difference between 42.6 km and 28 km.</div>
-                <div class="sol-step">Difference = 42.6 - 28.0</div>
-                <div class="sol-step">= <span class="ans-highlight">14.6 km</span></div>
-                <div class="sol-step">Result: <span class="ans-highlight">28 km is 14.6 km less than 42.6 km.</span></div>
+            <!-- Question 9 -->
+            <div class="sol-card">
+                <div class="question-header">9. How much less is 28 km than 42.6 km?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Required difference = 42.6 km - 28.0 km</div>
+                    <div class="sol-step">= 14.6 km</div>
+                    <div class="sol-step"><span class="ans-highlight">28 km is 14.6 km less than 42.6 km.</span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-6": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
-            <div class="question">1. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 0.2 &times; 6</b></div>
-                <div class="sol-step">=> Multiply as whole numbers: 2 &times; 6 = 12</div>
-                <div class="sol-step">=> Put decimal point 1 place from right (as in 0.2)</div>
-                <div class="sol-step">Result: <span class="ans-highlight">1.2</span></div>
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Find the product:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 0.2 × 6</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.2 to fraction = <div class="frac"><span class="num">2</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">2</span><span class="den">10</span></div>) × 6 = <div class="frac"><span class="num">2 × 6</span><span class="den">10</span></div> = <div class="frac"><span class="num">12</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1.2</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 8 &times; 4.6</b></div>
-                <div class="sol-step">=> 8 &times; 46 = 368</div>
-                <div class="sol-step">=> Put decimal 1 place from right: <span class="ans-highlight">36.8</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 8 × 4.6</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 4.6 to fraction = <div class="frac"><span class="num">46</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= 8 × (<div class="frac"><span class="num">46</span><span class="den">10</span></div>) = <div class="frac"><span class="num">8 × 46</span><span class="den">10</span></div> = <div class="frac"><span class="num">368</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 36.8</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 2.71 &times; 5</b></div>
-                <div class="sol-step">=> 271 &times; 5 = 1355</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">13.55</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 2.71 × 5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 2.71 to fraction = <div class="frac"><span class="num">271</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">271</span><span class="den">100</span></div>) × 5 = <div class="frac"><span class="num">271 × 5</span><span class="den">100</span></div> = <div class="frac"><span class="num">1355</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 13.55</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 20.1 &times; 4</b></div>
-                <div class="sol-step">=> 201 &times; 4 = 804</div>
-                <div class="sol-step">=> Put decimal 1 place from right: <span class="ans-highlight">80.4</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 20.1 × 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 20.1 to fraction = <div class="frac"><span class="num">201</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">201</span><span class="den">10</span></div>) × 4 = <div class="frac"><span class="num">201 × 4</span><span class="den">10</span></div> = <div class="frac"><span class="num">804</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 80.4</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 0.05 &times; 7</b></div>
-                <div class="sol-step">=> 5 &times; 7 = 35</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">0.35</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 0.05 × 7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.05 to fraction = <div class="frac"><span class="num">5</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">5</span><span class="den">100</span></div>) × 7 = <div class="frac"><span class="num">5 × 7</span><span class="den">100</span></div> = <div class="frac"><span class="num">35</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.35</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 211.02 &times; 4</b></div>
-                <div class="sol-step">=> 21102 &times; 4 = 84408</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">844.08</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 211.02 × 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 211.02 to fraction = <div class="frac"><span class="num">21102</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">21102</span><span class="den">100</span></div>) × 4 = <div class="frac"><span class="num">21102 × 4</span><span class="den">100</span></div> = <div class="frac"><span class="num">84408</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 844.08</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 2 &times; 0.86</b></div>
-                <div class="sol-step">=> 2 &times; 86 = 172</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">1.72</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 10.35 &times; 4</b></div>
-                <div class="sol-step">=> 1035 &times; 4 = 4140</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">41.40</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) 209.07 &times; 12</b></div>
-                <div class="sol-step">=> 20907 &times; 12 = 250884</div>
-                <div class="sol-step">=> Put decimal 2 places from right: <span class="ans-highlight">2508.84</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(x) 467.3 &times; 4</b></div>
-                <div class="sol-step">=> 4673 &times; 4 = 18692</div>
-                <div class="sol-step">=> Put decimal 1 place from right: <span class="ans-highlight">1869.2</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 2 × 0.86</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.86 to fraction = <div class="frac"><span class="num">86</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= 2 × (<div class="frac"><span class="num">86</span><span class="den">100</span></div>) = <div class="frac"><span class="num">2 × 86</span><span class="den">100</span></div> = <div class="frac"><span class="num">172</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1.72</span></div>
+                </div>
             </div>
 
-            <div class="question">2. (i) Find the area of rectangle whose length is 5.7 cm and breadth is 3 cm.</div>
-            <div class="solution">
-                <div class="sol-step">Length of the rectangle = 5.7 cm</div>
-                <div class="sol-step">Breadth of the rectangle = 3 cm</div>
-                <div class="sol-step">Area of rectangle = Length &times; Breadth</div>
-                <div class="sol-step">= 5.7 &times; 3</div>
-                <div class="sol-step">= <span class="ans-highlight">17.1 cm&sup2;</span></div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Find the area of rectangle whose length is 5.7 cm and breadth is 3 cm.</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Length of rectangle = 5.7 cm</div>
+                    <div class="sol-step">Breadth of rectangle = 3 cm</div>
+                    <div class="sol-step">Area of rectangle = Length × Breadth</div>
+                    <div class="sol-step">= 5.7 × 3 = 17.1 cm²</div>
+                    <div class="sol-step"><span class="ans-highlight">Area = 17.1 cm²</span></div>
+                </div>
             </div>
 
-            <div class="question">(ii) Find the area of a square whose side is 12.5 cm.</div>
-            <div class="solution">
-                <div class="sol-step">Side of the square = 12.5 cm</div>
-                <div class="sol-step">Area of square = Side &times; Side</div>
-                <div class="sol-step">= 12.5 &times; 12.5</div>
-                <div class="sol-step">= <span class="ans-highlight">156.25 cm&sup2;</span></div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Find the products by multiplying with powers of 10:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 1.3 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">13</span><span class="den">10</span></div>) × 10 = <div class="frac"><span class="num">130</span><span class="den">10</span></div> = <span class="ans-highlight">13</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 36.8 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">368</span><span class="den">10</span></div>) × 10 = <div class="frac"><span class="num">3680</span><span class="den">10</span></div> = <span class="ans-highlight">368</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 153.7 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1537</span><span class="den">10</span></div>) × 10 = <div class="frac"><span class="num">15370</span><span class="den">10</span></div> = <span class="ans-highlight">1537</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 168.07 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">16807</span><span class="den">100</span></div>) × 10 = <div class="frac"><span class="num">16807</span><span class="den">10</span></div> = <span class="ans-highlight">1680.7</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 31.1 × 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">311</span><span class="den">10</span></div>) × 100 = <div class="frac"><span class="num">31100</span><span class="den">10</span></div> = <span class="ans-highlight">3110</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 156.1 × 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1561</span><span class="den">10</span></div>) × 100 = <div class="frac"><span class="num">156100</span><span class="den">10</span></div> = <span class="ans-highlight">15610</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 3.62 × 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">362</span><span class="den">100</span></div>) × 100 = <span class="ans-highlight">362</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 43.07 × 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">4307</span><span class="den">100</span></div>) × 100 = <span class="ans-highlight">4307</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ix) 0.5 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) × 10 = <span class="ans-highlight">5</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(x) 0.08 × 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">8</span><span class="den">100</span></div>) × 10 = <div class="frac"><span class="num">80</span><span class="den">100</span></div> = <span class="ans-highlight">0.8</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(xi) 0.9 × 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">9</span><span class="den">10</span></div>) × 100 = <div class="frac"><span class="num">900</span><span class="den">10</span></div> = <span class="ans-highlight">90</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(xii) 0.03 × 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">3</span><span class="den">100</span></div>) × 1000 = <div class="frac"><span class="num">3000</span><span class="den">100</span></div> = <span class="ans-highlight">30</span></div>
+                </div>
             </div>
 
-            <div class="question">3. Find:</div>
-            <div class="solution">
-                <div class="sol-step">Rule: When multiplying by 10, 100, 1000, shift the decimal point to the right by as many places as there are zeros.</div>
-
-                <div class="sol-step" style="margin-top: 10px;"><b>(i) 1.3 &times; 10</b></div>
-                <div class="sol-step">=> Shift 1 place right: <span class="ans-highlight">13</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 36.8 &times; 10</b></div>
-                <div class="sol-step">=> Shift 1 place right: <span class="ans-highlight">368</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 153.7 &times; 10</b></div>
-                <div class="sol-step">=> Shift 1 place right: <span class="ans-highlight">1537</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 168.07 &times; 10</b></div>
-                <div class="sol-step">=> Shift 1 place right: <span class="ans-highlight">1680.7</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 31.1 &times; 100</b></div>
-                <div class="sol-step">=> Shift 2 places right (add 0 if needed): <span class="ans-highlight">3110</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 156.1 &times; 100</b></div>
-                <div class="sol-step">=> Shift 2 places right: <span class="ans-highlight">15610</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3.62 &times; 100</b></div>
-                <div class="sol-step">=> Shift 2 places right: <span class="ans-highlight">362</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 43.07 &times; 100</b></div>
-                <div class="sol-step">=> Shift 2 places right: <span class="ans-highlight">4307</span></div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. A two-wheeler covers a distance of 55.3 km in 1 litre of petrol. How much distance will it cover in 10 litres of petrol?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Distance in 1 litre = 55.3 km</div>
+                    <div class="sol-step">Distance in 10 litres = 55.3 × 10 = (<div class="frac"><span class="num">553</span><span class="den">10</span></div>) × 10</div>
+                    <div class="sol-step"><span class="ans-highlight">Distance covered = 553 km</span></div>
+                </div>
             </div>
 
-            <div class="question">4. A two wheeler covers a distance of 55.3 km in one litre of petrol. How much distance will it cover in 10 litres of petrol?</div>
-            <div class="solution">
-                <div class="sol-step">Distance covered in 1 litre of petrol = 55.3 km</div>
-                <div class="sol-step">Distance covered in 10 litres of petrol = 55.3 &times; 10</div>
-                <div class="sol-step">= <span class="ans-highlight">553 km</span></div>
-                <div class="sol-step">Result: <span class="ans-highlight">It will cover 553 km.</span></div>
-            </div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 2.5 × 0.3</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">25</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">3</span><span class="den">10</span></div>) = <div class="frac"><span class="num">25 × 3</span><span class="den">100</span></div> = <div class="frac"><span class="num">75</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.75</span></div>
 
-            <div class="question">5. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 2.5 &times; 0.3</b></div>
-                <div class="sol-step">=> Multiply whole numbers: 25 &times; 3 = 75</div>
-                <div class="sol-step">=> Total decimal places = 1 (in 2.5) + 1 (in 0.3) = 2</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.75</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 0.1 × 51.7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">517</span><span class="den">10</span></div>) = <div class="frac"><span class="num">517</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 5.17</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 0.1 &times; 51.7</b></div>
-                <div class="sol-step">=> 1 &times; 517 = 517</div>
-                <div class="sol-step">=> Total decimal places = 1 + 1 = 2</div>
-                <div class="sol-step">Result: <span class="ans-highlight">5.17</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 0.2 × 316.8</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">2</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">3168</span><span class="den">10</span></div>) = <div class="frac"><span class="num">6336</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 63.36</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 0.2 &times; 316.8</b></div>
-                <div class="sol-step">=> 2 &times; 3168 = 6336</div>
-                <div class="sol-step">=> Total decimal places = 1 + 1 = 2</div>
-                <div class="sol-step">Result: <span class="ans-highlight">63.36</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 1.3 × 3.1</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">13</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">31</span><span class="den">10</span></div>) = <div class="frac"><span class="num">403</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 4.03</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 1.3 &times; 3.1</b></div>
-                <div class="sol-step">=> 13 &times; 31 = 403</div>
-                <div class="sol-step">=> Total decimal places = 1 + 1 = 2</div>
-                <div class="sol-step">Result: <span class="ans-highlight">4.03</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 0.5 × 0.05</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">5</span><span class="den">100</span></div>) = <div class="frac"><span class="num">25</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.025</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 0.5 &times; 0.05</b></div>
-                <div class="sol-step">=> 5 &times; 5 = 25</div>
-                <div class="sol-step">=> Total decimal places = 1 + 2 = 3</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.025</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 11.2 × 0.15</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">112</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">15</span><span class="den">100</span></div>) = <div class="frac"><span class="num">1680</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1.68</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 11.2 &times; 0.15</b></div>
-                <div class="sol-step">=> 112 &times; 15 = 1680</div>
-                <div class="sol-step">=> Total decimal places = 1 + 2 = 3</div>
-                <div class="sol-step">Result: <span class="ans-highlight">1.680</span> or <span class="ans-highlight">1.68</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 1.07 × 0.02</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">107</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">2</span><span class="den">100</span></div>) = <div class="frac"><span class="num">214</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.0214</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 1.07 &times; 0.02</b></div>
-                <div class="sol-step">=> 107 &times; 2 = 214</div>
-                <div class="sol-step">=> Total decimal places = 2 + 2 = 4</div>
-                <div class="sol-step">Result: <span class="ans-highlight">0.0214</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 10.05 × 1.05</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1005</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">105</span><span class="den">100</span></div>) = <div class="frac"><span class="num">105525</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 10.5525</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 10.5 &times; 1.05</b></div>
-                <div class="sol-step">=> 105 &times; 105 = 11025</div>
-                <div class="sol-step">=> Total decimal places = 1 + 2 = 3</div>
-                <div class="sol-step">Result: <span class="ans-highlight">11.025</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ix) 101.01 × 0.01</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">10101</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">10101</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 1.0101</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) 101.01 &times; 0.01</b></div>
-                <div class="sol-step">=> 10101 &times; 1 = 10101</div>
-                <div class="sol-step">=> Total decimal places = 2 + 2 = 4</div>
-                <div class="sol-step">Result: <span class="ans-highlight">1.0101</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(x) 100.01 &times; 1.1</b></div>
-                <div class="sol-step">=> 10001 &times; 11 = 110011</div>
-                <div class="sol-step">=> Total decimal places = 2 + 1 = 3</div>
-                <div class="sol-step">Result: <span class="ans-highlight">110.011</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(x) 100.01 × 1.1</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">10001</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">11</span><span class="den">10</span></div>) = <div class="frac"><span class="num">110011</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 110.011</span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
     "ex2-7": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .question { background: rgba(255, 64, 129, 0.1); color: #FF4081; padding: 12px; border-radius: 8px; border-left: 6px solid #FF4081; font-weight: bold; margin-top: 25px; margin-bottom: 15px; line-height: 1.6; }
-            .solution { background: #1E1E2E; padding: 18px; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; line-height: 1.8; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; }
-            .ans-highlight { color: #FF4081; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #FF4081; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #FF4081; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #FF80AB; font-weight: bold; }
+            .step-label { color: #FF80AB; font-weight: bold; margin-right: 5px; }
+            .sol-body b, .subpart-title { color: #FF4081; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #FF80AB; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
-            <div class="question">1. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 0.4 &divide; 2</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">10</span></div> &divide; 2</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">4</span><span class="den">10</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">2</span><span class="den">10</span></div> = <span class="ans-highlight">0.2</span></div>
+            <!-- Question 1 -->
+            <div class="sol-card">
+                <div class="question-header">1. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 0.4 ÷ 2</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.4 into fraction = <div class="frac"><span class="num">4</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">4</span><span class="den">10</span></div>) ÷ 2</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">4</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">2</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">4</span><span class="den">20</span></div> = <div class="frac"><span class="num">2</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.2</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 0.35 &divide; 5</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">35</span><span class="den">100</span></div> &divide; 5</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">35</span><span class="den">100</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">7</span><span class="den">100</span></div> = <span class="ans-highlight">0.07</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 0.35 ÷ 5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.35 into fraction = <div class="frac"><span class="num">35</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">35</span><span class="den">100</span></div>) ÷ 5</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">35</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">5</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.07</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 2.48 &divide; 4</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">248</span><span class="den">100</span></div> &divide; 4</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">248</span><span class="den">100</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">4</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">62</span><span class="den">100</span></div> = <span class="ans-highlight">0.62</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 2.48 ÷ 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 2.48 into fraction = <div class="frac"><span class="num">248</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">248</span><span class="den">100</span></div>) ÷ 4</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">248</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">4</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">62</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.62</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 65.4 &divide; 6</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">654</span><span class="den">10</span></div> &divide; 6</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">654</span><span class="den">10</span></div> &times; <div class="frac"><span class="num">1</span><span class="den">6</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">109</span><span class="den">10</span></div> = <span class="ans-highlight">10.9</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 65.4 ÷ 6</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 65.4 into fraction = <div class="frac"><span class="num">654</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">654</span><span class="den">10</span></div>) ÷ 6</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">654</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">6</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">109</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 10.9</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 651.2 &divide; 4</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">6512</span><span class="den">10</span></div> &divide; 4</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1628</span><span class="den">10</span></div> = <span class="ans-highlight">162.8</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 651.2 ÷ 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 651.2 into fraction = <div class="frac"><span class="num">6512</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">6512</span><span class="den">10</span></div>) ÷ 4</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">6512</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">4</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">1628</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 162.8</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 14.49 &divide; 7</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">1449</span><span class="den">100</span></div> &divide; 7</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">207</span><span class="den">100</span></div> = <span class="ans-highlight">2.07</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 14.49 ÷ 7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 14.49 into fraction = <div class="frac"><span class="num">1449</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1449</span><span class="den">100</span></div>) ÷ 7</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1449</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">7</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">207</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2.07</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3.96 &divide; 4</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">396</span><span class="den">100</span></div> &divide; 4</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">99</span><span class="den">100</span></div> = <span class="ans-highlight">0.99</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 3.96 ÷ 4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 3.96 into fraction = <div class="frac"><span class="num">396</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">396</span><span class="den">100</span></div>) ÷ 4</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">396</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">4</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">99</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.99</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 0.08 &divide; 5</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">8</span><span class="den">100</span></div> &divide; 5</div>
-                <div class="sol-step">=> <div class="frac"><span class="num">8</span><span class="den">500</span></div> = <div class="frac"><span class="num">16</span><span class="den">1000</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">0.016</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 0.80 ÷ 5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.80 into fraction = <div class="frac"><span class="num">80</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">80</span><span class="den">100</span></div>) ÷ 5</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">80</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">5</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">16</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.16</span></div>
+                </div>
             </div>
 
-            <div class="question">2. Find:</div>
-            <div class="solution">
-                <div class="sol-step">Rule: When dividing by 10, 100, 1000, shift the decimal point to the left by as many places as there are zeros.</div>
+            <!-- Question 2 -->
+            <div class="sol-card">
+                <div class="question-header">2. Find (dividing by 10):</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 4.8 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">48</span><span class="den">10</span></div>) ÷ 10 = (<div class="frac"><span class="num">48</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">48</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.48</span></div>
 
-                <div class="sol-step" style="margin-top: 10px;"><b>(i) 4.8 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">0.48</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 52.5 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">525</span><span class="den">10</span></div>) ÷ 10 = (<div class="frac"><span class="num">525</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">525</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 5.25</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 52.5 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">5.25</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 0.7 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">7</span><span class="den">10</span></div>) ÷ 10 = (<div class="frac"><span class="num">7</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">7</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.07</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 0.7 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">0.07</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 33.1 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">331</span><span class="den">10</span></div>) ÷ 10 = (<div class="frac"><span class="num">331</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">331</span><span class="den">100</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 3.31</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 33.1 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">3.31</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 272.23 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">27223</span><span class="den">100</span></div>) ÷ 10 = (<div class="frac"><span class="num">27223</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">27223</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 27.223</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 272.23 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">27.223</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 0.56 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">56</span><span class="den">100</span></div>) ÷ 10 = (<div class="frac"><span class="num">56</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">56</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.056</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 0.56 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">0.056</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 3.97 &divide; 10</b></div>
-                <div class="sol-step">=> Shift 1 place left: <span class="ans-highlight">0.397</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 3.97 ÷ 10</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">397</span><span class="den">100</span></div>) ÷ 10 = (<div class="frac"><span class="num">397</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">10</span></div>) = <div class="frac"><span class="num">397</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.397</span></div>
+                </div>
             </div>
 
-            <div class="question">3. Find:</div>
-            <div class="solution">
-                <div class="sol-step">Rule: When dividing by 100, shift the decimal point to the left by 2 places.</div>
+            <!-- Question 3 -->
+            <div class="sol-card">
+                <div class="question-header">3. Find (dividing by 100):</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 2.7 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">27</span><span class="den">10</span></div>) ÷ 100 = (<div class="frac"><span class="num">27</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">27</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.027</span></div>
 
-                <div class="sol-step" style="margin-top: 10px;"><b>(i) 2.7 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">0.027</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 0.3 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">3</span><span class="den">10</span></div>) ÷ 100 = (<div class="frac"><span class="num">3</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">3</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.003</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 0.3 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">0.003</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 0.78 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">78</span><span class="den">100</span></div>) ÷ 100 = (<div class="frac"><span class="num">78</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">78</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.0078</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 0.78 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">0.0078</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 432.6 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">4326</span><span class="den">10</span></div>) ÷ 100 = (<div class="frac"><span class="num">4326</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">4326</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 4.326</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 432.6 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">4.326</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 23.6 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">236</span><span class="den">10</span></div>) ÷ 100 = (<div class="frac"><span class="num">236</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">236</span><span class="den">1000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.236</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 23.6 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">0.236</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 98.53 &divide; 100</b></div>
-                <div class="sol-step">=> Shift 2 places left: <span class="ans-highlight">0.9853</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 98.53 ÷ 100</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">9853</span><span class="den">100</span></div>) ÷ 100 = (<div class="frac"><span class="num">9853</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">100</span></div>) = <div class="frac"><span class="num">9853</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.9853</span></div>
+                </div>
             </div>
 
-            <div class="question">4. Find:</div>
-            <div class="solution">
-                <div class="sol-step">Rule: When dividing by 1000, shift the decimal point to the left by 3 places.</div>
+            <!-- Question 4 -->
+            <div class="sol-card">
+                <div class="question-header">4. Find (dividing by 1000):</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 7.9 ÷ 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">79</span><span class="den">10</span></div>) ÷ 1000 = (<div class="frac"><span class="num">79</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">1000</span></div>) = <div class="frac"><span class="num">79</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.0079</span></div>
 
-                <div class="sol-step" style="margin-top: 10px;"><b>(i) 7.9 &divide; 1000</b></div>
-                <div class="sol-step">=> Shift 3 places left: <span class="ans-highlight">0.0079</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 26.3 ÷ 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">263</span><span class="den">10</span></div>) ÷ 1000 = (<div class="frac"><span class="num">263</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">1000</span></div>) = <div class="frac"><span class="num">263</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.0263</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 26.3 &divide; 1000</b></div>
-                <div class="sol-step">=> Shift 3 places left: <span class="ans-highlight">0.0263</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 38.53 ÷ 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">3853</span><span class="den">100</span></div>) ÷ 1000 = (<div class="frac"><span class="num">3853</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">1000</span></div>) = <div class="frac"><span class="num">3853</span><span class="den">100000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.03853</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 38.53 &divide; 1000</b></div>
-                <div class="sol-step">=> Shift 3 places left: <span class="ans-highlight">0.03853</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 128.9 ÷ 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">1289</span><span class="den">10</span></div>) ÷ 1000 = (<div class="frac"><span class="num">1289</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">1000</span></div>) = <div class="frac"><span class="num">1289</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.1289</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 128.9 &divide; 1000</b></div>
-                <div class="sol-step">=> Shift 3 places left: <span class="ans-highlight">0.1289</span></div>
-
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 0.5 &divide; 1000</b></div>
-                <div class="sol-step">=> Shift 3 places left: <span class="ans-highlight">0.0005</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 0.5 ÷ 1000</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) ÷ 1000 = (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">1</span><span class="den">1000</span></div>) = <div class="frac"><span class="num">5</span><span class="den">10000</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 0.0005</span></div>
+                </div>
             </div>
 
-            <div class="question">5. Find:</div>
-            <div class="solution">
-                <div class="sol-step"><b>(i) 7 &divide; 3.5</b></div>
-                <div class="sol-step">=> 7 &divide; <div class="frac"><span class="num">35</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> 7 &times; <div class="frac"><span class="num">10</span><span class="den">35</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">70</span><span class="den">35</span></div> = <span class="ans-highlight">2</span></div>
+            <!-- Question 5 -->
+            <div class="sol-card">
+                <div class="question-header">5. Find:</div>
+                <div class="sol-body">
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#FF4081;">(i) 7 ÷ 3.5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 3.5 to fraction = <div class="frac"><span class="num">35</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= 7 ÷ (<div class="frac"><span class="num">35</span><span class="den">10</span></div>) = 7 × (<div class="frac"><span class="num">10</span><span class="den">35</span></div>) = <div class="frac"><span class="num">70</span><span class="den">35</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ii) 36 &divide; 0.2</b></div>
-                <div class="sol-step">=> 36 &divide; <div class="frac"><span class="num">2</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> 36 &times; <div class="frac"><span class="num">10</span><span class="den">2</span></div></div>
-                <div class="sol-step">=> 36 &times; 5 = <span class="ans-highlight">180</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ii) 36 ÷ 0.2</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting 0.2 to fraction = <div class="frac"><span class="num">2</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= 36 ÷ (<div class="frac"><span class="num">2</span><span class="den">10</span></div>) = 36 × (<div class="frac"><span class="num">10</span><span class="den">2</span></div>) = 18 × 10</div>
+                    <div class="sol-step"><span class="ans-highlight">= 180</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iii) 3.25 &divide; 0.5</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">325</span><span class="den">100</span></div> &divide; <div class="frac"><span class="num">5</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">325</span><span class="den">100</span></div> &times; <div class="frac"><span class="num">10</span><span class="den">5</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3250</span><span class="den">500</span></div> = <div class="frac"><span class="num">65</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">6.5</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iii) 3.25 ÷ 0.5</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 3.25 = <div class="frac"><span class="num">325</span><span class="den">100</span></div>, 0.5 = <div class="frac"><span class="num">5</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">325</span><span class="den">100</span></div>) ÷ (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) = (<div class="frac"><span class="num">325</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">10</span><span class="den">5</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">3250</span><span class="den">500</span></div> = <div class="frac"><span class="num">65</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 6.5</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(iv) 30.94 &divide; 0.7</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3094</span><span class="den">100</span></div> &divide; <div class="frac"><span class="num">7</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3094</span><span class="den">100</span></div> &times; <div class="frac"><span class="num">10</span><span class="den">7</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">3094</span><span class="den">70</span></div> = <div class="frac"><span class="num">442</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">44.2</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(iv) 30.94 ÷ 0.7</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 30.94 = <div class="frac"><span class="num">3094</span><span class="den">100</span></div>, 0.7 = <div class="frac"><span class="num">7</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">3094</span><span class="den">100</span></div>) ÷ (<div class="frac"><span class="num">7</span><span class="den">10</span></div>) = (<div class="frac"><span class="num">3094</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">10</span><span class="den">7</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">30940</span><span class="den">700</span></div> = <div class="frac"><span class="num">442</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 44.2</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(v) 0.5 &divide; 0.25</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5</span><span class="den">10</span></div> &divide; <div class="frac"><span class="num">25</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">5</span><span class="den">10</span></div> &times; <div class="frac"><span class="num">100</span><span class="den">25</span></div></div>
-                <div class="sol-step">=> <span class="ans-highlight">2</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(v) 0.5 ÷ 0.25</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 0.5 = <div class="frac"><span class="num">5</span><span class="den">10</span></div>, 0.25 = <div class="frac"><span class="num">25</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) ÷ (<div class="frac"><span class="num">25</span><span class="den">100</span></div>) = (<div class="frac"><span class="num">5</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">100</span><span class="den">25</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">500</span><span class="den">250</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vi) 7.75 &divide; 0.25</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">775</span><span class="den">100</span></div> &divide; <div class="frac"><span class="num">25</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">775</span><span class="den">25</span></div> = <span class="ans-highlight">31</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vi) 7.75 ÷ 0.25</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 7.75 = <div class="frac"><span class="num">775</span><span class="den">100</span></div>, 0.25 = <div class="frac"><span class="num">25</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">775</span><span class="den">100</span></div>) ÷ (<div class="frac"><span class="num">25</span><span class="den">100</span></div>) = (<div class="frac"><span class="num">775</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">100</span><span class="den">25</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">775</span><span class="den">25</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 31</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(vii) 76.5 &divide; 0.15</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">765</span><span class="den">10</span></div> &divide; <div class="frac"><span class="num">15</span><span class="den">100</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">765</span><span class="den">10</span></div> &times; <div class="frac"><span class="num">100</span><span class="den">15</span></div></div>
-                <div class="sol-step">=> 51 &times; 10 = <span class="ans-highlight">510</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(vii) 76.5 ÷ 0.15</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 76.5 = <div class="frac"><span class="num">765</span><span class="den">10</span></div>, 0.15 = <div class="frac"><span class="num">15</span><span class="den">100</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">765</span><span class="den">10</span></div>) ÷ (<div class="frac"><span class="num">15</span><span class="den">100</span></div>) = (<div class="frac"><span class="num">765</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">100</span><span class="den">15</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">76500</span><span class="den">150</span></div> = 510</div>
+                    <div class="sol-step"><span class="ans-highlight">= 510</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(viii) 37.8 &divide; 1.4</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">378</span><span class="den">10</span></div> &divide; <div class="frac"><span class="num">14</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">378</span><span class="den">14</span></div> = <span class="ans-highlight">27</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(viii) 37.8 ÷ 1.4</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 37.8 = <div class="frac"><span class="num">378</span><span class="den">10</span></div>, 1.4 = <div class="frac"><span class="num">14</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">378</span><span class="den">10</span></div>) ÷ (<div class="frac"><span class="num">14</span><span class="den">10</span></div>) = (<div class="frac"><span class="num">378</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">10</span><span class="den">14</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">378</span><span class="den">14</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 27</span></div>
 
-                <div class="sol-step" style="margin-top: 15px;"><b>(ix) 2.73 &divide; 1.3</b></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">273</span><span class="den">100</span></div> &divide; <div class="frac"><span class="num">13</span><span class="den">10</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">273</span><span class="den">100</span></div> &times; <div class="frac"><span class="num">10</span><span class="den">13</span></div></div>
-                <div class="sol-step">=> <div class="frac"><span class="num">21</span><span class="den">10</span></div> = <span class="ans-highlight">2.1</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#FF4081;">(ix) 2.73 ÷ 1.3</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Converting decimals to fractions: 2.73 = <div class="frac"><span class="num">273</span><span class="den">100</span></div>, 1.3 = <div class="frac"><span class="num">13</span><span class="den">10</span></div></div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">273</span><span class="den">100</span></div>) ÷ (<div class="frac"><span class="num">13</span><span class="den">10</span></div>) = (<div class="frac"><span class="num">273</span><span class="den">100</span></div>) × (<div class="frac"><span class="num">10</span><span class="den">13</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">2730</span><span class="den">1300</span></div> = <div class="frac"><span class="num">21</span><span class="den">10</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">= 2.1</span></div>
+                </div>
             </div>
 
-            <div class="question">6. A vehicle covers a distance of 43.2 km in 2.4 litres of petrol. How much distance will it cover in one litre of petrol?</div>
-            <div class="solution">
-                <div class="sol-step">Distance covered in 2.4 litres of petrol = 43.2 km</div>
-                <div class="sol-step">Distance covered in 1 litre of petrol = 43.2 &divide; 2.4</div>
-                <div class="sol-step">=> <span class="ans-highlight">18 km</span></div>
-                <div class="sol-step">Result: <span class="ans-highlight">It will cover 18 km in one litre of petrol.</span></div>
+            <!-- Question 6 -->
+            <div class="sol-card">
+                <div class="question-header">6. A vehicle covers a distance of 43.2 km in 2.4 litres of petrol. How much distance will it cover in one litre of petrol?</div>
+                <div class="sol-body">
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Distance covered in 2.4 litres = 43.2 km</div>
+                    <div class="sol-step">Distance covered in 1 litre = 43.2 ÷ 2.4</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">432</span><span class="den">10</span></div>) ÷ (<div class="frac"><span class="num">24</span><span class="den">10</span></div>)</div>
+                    <div class="sol-step">= (<div class="frac"><span class="num">432</span><span class="den">10</span></div>) × (<div class="frac"><span class="num">10</span><span class="den">24</span></div>)</div>
+                    <div class="sol-step">= <div class="frac"><span class="num">432 × 10</span><span class="den">10 × 24</span></div></div>
+                    <div class="sol-step">= <div class="frac"><span class="num">432</span><span class="den">24</span></div></div>
+                    <div class="sol-step"><span class="ans-highlight">Distance covered in 1 litre = 18 km</span></div>
+                </div>
             </div>
         </div>
-        `,
+    `,
   },
-  examples: [],
   mcqs: [
-    {
-      id: "m1",
-      question: "Which of the following is a proper fraction?",
-      options: ["7/4", "3/2", "2/3", "10/7"],
-      correctAnswer: "C",
-    },
-    {
-      id: "m2",
-      question: "What is 1/2 of 10?",
-      options: ["2", "5", "10", "20"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m3",
-      question: "The reciprocal of 2 is:",
-      options: ["1/2", "2", "0", "1"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m4",
-      question: "The value of 0.1 x 0.1 is:",
-      options: ["0.1", "0.01", "0.001", "1.0"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m5",
-      question: "Which is greater, 0.5 or 0.05?",
-      options: ["0.5", "0.05", "Both equal", "None"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m6",
-      question: "The reciprocal of an improper fraction is always a:",
-      options: [
-        "Proper fraction",
-        "Improper fraction",
-        "Whole number",
-        "Mixed fraction",
-      ],
-      correctAnswer: "A",
-    },
-    {
-      id: "m7",
-      question: "What is 2/5 of 25?",
-      options: ["5", "10", "15", "20"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m8",
-      question: "The product of 0.03 x 100 is:",
-      options: ["0.3", "3", "30", "300"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m9",
-      question: "How many decimal places are in the product of 1.2 x 1.44?",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "C",
-    },
-    {
-      id: "m10",
-      question: "The simplified form of 2/3 x 3/2 is:",
-      options: ["0", "1", "4/9", "9/4"],
-      correctAnswer: "B",
-    },
-  ],
-  summary: [],
+  {
+    "id": "c7m2-mcq-1",
+    "question": "What is the reciprocal of 3/7?",
+    "options": [
+      "3/7",
+      "7/3",
+      "1/3",
+      "1/7"
+    ],
+    "correctAnswer": "b",
+    "explanation": "To find the reciprocal of a fraction, swap the numerator and denominator: 3/7 becomes 7/3."
+  },
+  {
+    "id": "c7m2-mcq-2",
+    "question": "Which of the following is a proper fraction?",
+    "options": [
+      "5/3",
+      "7/4",
+      "2/5",
+      "9/2"
+    ],
+    "correctAnswer": "c",
+    "explanation": "A proper fraction has a numerator smaller than its denominator (2 < 5)."
+  },
+  {
+    "id": "c7m2-mcq-3",
+    "question": "What is (1/2) × (2/3)?",
+    "options": [
+      "1/3",
+      "2/5",
+      "3/4",
+      "1/6"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Product of numerators / product of denominators = (1 × 2)/(2 × 3) = 2/6 = 1/3."
+  },
+  {
+    "id": "c7m2-mcq-4",
+    "question": "What is 0.3 × 10?",
+    "options": [
+      "0.03",
+      "3",
+      "30",
+      "0.30"
+    ],
+    "correctAnswer": "b",
+    "explanation": "When multiplying a decimal by 10, shift the decimal point 1 place to the right: 0.3 × 10 = 3."
+  },
+  {
+    "id": "c7m2-mcq-5",
+    "question": "What is 4.5 ÷ 10?",
+    "options": [
+      "45",
+      "4.5",
+      "0.45",
+      "0.045"
+    ],
+    "correctAnswer": "c",
+    "explanation": "When dividing a decimal by 10, shift the decimal point 1 place to the left: 4.5 ÷ 10 = 0.45."
+  },
+  {
+    "id": "c7m2-mcq-6",
+    "question": "What is 3/5 + 1/5?",
+    "options": [
+      "4/10",
+      "4/5",
+      "3/25",
+      "2/5"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Since denominators are the same, add numerators directly: (3 + 1)/5 = 4/5."
+  },
+  {
+    "id": "c7m2-mcq-7",
+    "question": "Which decimal is greater: 0.7 or 0.07?",
+    "options": [
+      "0.7",
+      "0.07",
+      "Both are equal",
+      "Cannot be compared"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Comparing tenths digit: 7 > 0, so 0.7 is greater than 0.07."
+  },
+  {
+    "id": "c7m2-mcq-8",
+    "question": "Express 50 paise in rupees using decimals:",
+    "options": [
+      "₹ 5.0",
+      "₹ 0.50",
+      "₹ 0.05",
+      "₹ 50.0"
+    ],
+    "correctAnswer": "b",
+    "explanation": "100 paise = ₹ 1, so 50 paise = 50/100 = ₹ 0.50."
+  },
+  {
+    "id": "c7m2-mcq-9",
+    "question": "What is (2/3) ÷ (2/3)?",
+    "options": [
+      "0",
+      "1",
+      "4/9",
+      "2/3"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Any non-zero fraction divided by itself is equal to 1."
+  },
+  {
+    "id": "c7m2-mcq-10",
+    "question": "What is the place value of 2 in 10.25?",
+    "options": [
+      "Ones",
+      "Tens",
+      "Tenths",
+      "Hundredths"
+    ],
+    "correctAnswer": "c",
+    "explanation": "The first position immediately after the decimal point represents Tenths."
+  }
+]
 };

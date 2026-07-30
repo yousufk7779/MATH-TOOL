@@ -1,4 +1,6 @@
-import { ChapterContent } from "../types";
+import os
+
+content = '''import { ChapterContent } from "../types";
 
 export const c7Math1: ChapterContent = {
   id: "c7-math-1",
@@ -26,9 +28,9 @@ export const c7Math1: ChapterContent = {
   ],
   formulas: [
     { name: "Additive Inverse", formula: "a + (-a) = 0" },
-    { name: "Distributive Property", formula: "a \\times (b + c) = (a \\times b) + (a \\times c)" },
-    { name: "Commutative Property", formula: "a + b = b + a \\text{ and } a \\times b = b \\times a" },
-    { name: "Associative Property", formula: "(a + b) + c = a + (b + c) \\text{ and } (a \\times b) \\times c = a \\times (b \\times c)" },
+    { name: "Distributive Property", formula: "a \\\\times (b + c) = (a \\\\times b) + (a \\\\times c)" },
+    { name: "Commutative Property", formula: "a + b = b + a \\\\text{ and } a \\\\times b = b \\\\times a" },
+    { name: "Associative Property", formula: "(a + b) + c = a + (b + c) \\\\text{ and } (a \\\\times b) \\\\times c = a \\\\times (b \\\\times c)" },
   ],
   crux: [],
   exercises: [
@@ -919,126 +921,11 @@ export const c7Math1: ChapterContent = {
         </div>
     `,
   },
-  mcqs: [
-  {
-    "id": "c7m1-mcq-1",
-    "question": "What is the sum of (-5) + 5?",
-    "options": [
-      "0",
-      "10",
-      "-10",
-      "5"
-    ],
-    "correctAnswer": "a",
-    "explanation": "Adding an integer and its additive inverse always equals 0: (-5) + 5 = 0."
-  },
-  {
-    "id": "c7m1-mcq-2",
-    "question": "What is the additive inverse of -8?",
-    "options": [
-      "-8",
-      "8",
-      "0",
-      "1"
-    ],
-    "correctAnswer": "b",
-    "explanation": "The additive inverse of a negative integer is its positive value: -(-8) = 8."
-  },
-  {
-    "id": "c7m1-mcq-3",
-    "question": "What is the product of (-4) × (-3)?",
-    "options": [
-      "-12",
-      "12",
-      "-7",
-      "7"
-    ],
-    "correctAnswer": "b",
-    "explanation": "Multiplying two negative integers gives a positive result: (-4) × (-3) = +12."
-  },
-  {
-    "id": "c7m1-mcq-4",
-    "question": "What is (-15) ÷ 3?",
-    "options": [
-      "5",
-      "-5",
-      "3",
-      "-3"
-    ],
-    "correctAnswer": "b",
-    "explanation": "Dividing a negative number by a positive number gives a negative result: (-15) ÷ 3 = -5."
-  },
-  {
-    "id": "c7m1-mcq-5",
-    "question": "What is the value of 0 × (-9)?",
-    "options": [
-      "-9",
-      "9",
-      "0",
-      "1"
-    ],
-    "correctAnswer": "c",
-    "explanation": "Any integer multiplied by 0 is always equal to 0."
-  },
-  {
-    "id": "c7m1-mcq-6",
-    "question": "Which integer is neither positive nor negative?",
-    "options": [
-      "1",
-      "-1",
-      "0",
-      "10"
-    ],
-    "correctAnswer": "c",
-    "explanation": "Zero (0) is a neutral integer. It is neither positive nor negative."
-  },
-  {
-    "id": "c7m1-mcq-7",
-    "question": "What is the result of (-1) × (-1) × (-1)?",
-    "options": [
-      "1",
-      "-1",
-      "3",
-      "-3"
-    ],
-    "correctAnswer": "b",
-    "explanation": "An odd number of negative factors gives a negative result: (-1) × (-1) × (-1) = -1."
-  },
-  {
-    "id": "c7m1-mcq-8",
-    "question": "On a number line, where do negative integers lie relative to zero?",
-    "options": [
-      "To the right of 0",
-      "To the left of 0",
-      "Above 0",
-      "Below 0"
-    ],
-    "correctAnswer": "b",
-    "explanation": "On a horizontal number line, negative numbers are always placed to the left of 0."
-  },
-  {
-    "id": "c7m1-mcq-9",
-    "question": "What is the result of (-10) + (-5)?",
-    "options": [
-      "-15",
-      "15",
-      "-5",
-      "5"
-    ],
-    "correctAnswer": "a",
-    "explanation": "When adding two negative numbers, add their values and keep the negative sign: (-10) + (-5) = -15."
-  },
-  {
-    "id": "c7m1-mcq-10",
-    "question": "Which property states that a × b = b × a?",
-    "options": [
-      "Associative Property",
-      "Commutative Property",
-      "Distributive Property",
-      "Closure Property"
-    ],
-    "correctAnswer": "b",
-    "explanation": "The Commutative Property states that changing the order of multiplication does not change the result."
-  }
-]
 };
+'''
+
+target_path = os.path.join(os.path.dirname(__file__), "data", "content", "c7-math-1.ts")
+with open(target_path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("Successfully wrote c7-math-1.ts!")

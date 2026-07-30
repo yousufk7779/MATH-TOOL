@@ -8,28 +8,19 @@ export const c7Math12: ChapterContent = {
   introduction:
     "Symmetry is a balanced and proportionate similarity that is found in nature and man-made structures. In geometry, we study line symmetry and rotational symmetry.",
   definitions: [
-    {
-      term: "Line Symmetry",
-      definition:
-        "A figure has line symmetry if it can be folded along a line so that the two parts coincide.",
-    },
-    {
-      term: "Rotational Symmetry",
-      definition:
-        "A figure has rotational symmetry if it looks the same after a rotation of less than 360°.",
-    },
-    {
-      term: "Order of Rotation",
-      definition:
-        "The number of times a figure fits onto itself during a full 360° rotation.",
-    },
+    { term: "Line Symmetry", description: "A figure has line symmetry if a line can be drawn dividing it into two identical matching halves." },
+    { term: "Rotational Symmetry", description: "A figure has rotational symmetry if it looks identical after a rotation of less than 360°." },
+    { term: "Order of Rotational Symmetry", description: "The number of positions in which a figure looks exactly the same during one complete 360° turn." },
   ],
   keyPoints: [
-    "A square has 4 lines of symmetry and rotational symmetry of order 4.",
-    "A circle has infinite lines of symmetry and every angle is an angle of rotation.",
-    "Regular polygons have the same number of lines of symmetry as their number of sides.",
+    "A regular polygon with n sides has n lines of symmetry.",
+    "A circle has infinitely many lines of symmetry.",
+    "Order of rotational symmetry of a square is 4 (angle of rotation = 90°).",
+    "Order of rotational symmetry of an equilateral triangle is 3 (angle of rotation = 120°).",
   ],
-  formulas: [],
+  formulas: [
+    { name: "Angle of Rotation", formula: "\\text{Angle of Rotation} = \\frac{360^\\circ}{\\text{Order of Symmetry}}" },
+  ],
   crux: [],
   exercises: [
     { id: "ex12-1", name: "Exercise 12.1", questions: [] },
@@ -39,18 +30,19 @@ export const c7Math12: ChapterContent = {
   htmlOverview: `
         <style>
             .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .section-title { color: #00BFA5; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
-            .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; }
-            .point-box { background: rgba(0, 191, 165, 0.05); border-left: 4px solid #00BFA5; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
-            .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; }
-            .point-item::before { content: '•'; color: #00BFA5; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
+            .section-title { color: #26C6DA; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+            .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; text-align: justify; }
+            .point-box { background: rgba(38, 198, 218, 0.05); border-left: 4px solid #26C6DA; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
+            .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; text-align: justify; }
+            .point-item::before { content: '•'; color: #26C6DA; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
         </style>
         <div class="overview-container">
-            <p class="content-text">Discover the beauty of balance through the study of mirror images and rotating patterns.</p>
+            <div class="section-title">Chapter Overview: Symmetry</div>
+            <p class="content-text">Explore line symmetry, lines of symmetry in regular polygons, rotational symmetry, center of rotation, angle of rotation, and order of rotational symmetry.</p>
             <div class="point-box">
-                <div class="point-item">Line symmetry is about folding.</div>
-                <div class="point-item">Rotational symmetry is about spinning.</div>
-                <div class="point-item">Regular shapes are the most symmetric.</div>
+                <div class="point-item">Line Symmetry: Mirror reflection symmetry across a central axis line.</div>
+                <div class="point-item">Rotational Symmetry: Matching shape orientation upon rotation around a fixed center point.</div>
+                <div class="point-item">Regular Polygons: n-sided regular polygon has n lines of symmetry and rotational order n.</div>
             </div>
         </div>
     `,
@@ -58,333 +50,172 @@ export const c7Math12: ChapterContent = {
     "ex12-1": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: rgba(0, 191, 165, 0.08); padding: 20px; border-bottom: 1px solid rgba(0, 191, 165, 0.2); border-left: 4px solid #00BFA5; color: #00BFA5; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
-            .sol-body { padding: 20px; background: #000; text-align: left; }
-            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #00BFA5; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #00BFA5; font-weight: bold; }
-            .ans-highlight { color: #64FFDA; font-weight: bold; }
-            .fig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px; }
-            .fig-item { background: rgba(255,255,255,0.03); padding: 8px; border-radius: 8px; text-align: center; border: 1px solid rgba(0, 191, 165, 0.1); }
-            .fig-label { display: block; margin-top: 5px; font-size: 0.8em; color: #64FFDA; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #26C6DA; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #26C6DA; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #80DEEA; font-weight: bold; }
+            .sol-body b, .subpart-title { color: #26C6DA; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #80DEEA; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
+            .svg-container { text-align: center; margin: 15px auto; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px solid #26C6DA; overflow-x: auto; }
+            .svg-container svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
         </style>
         <div class="container">
-            <!-- Q1 -->
+            <!-- Question 1 -->
             <div class="sol-card">
-                <div class="question-header">1. Find the axes of symmetry for the following figures (Refer to textbook for figures):</div>
+                <div class="question-header">1. Copy the figures with punched holes and find the axes of symmetry for the following (a to l):</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) <span class="ans-highlight">1 Axis</span> (Horizontal)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) <span class="ans-highlight">1 Axis</span> (Diagonal)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) <span class="ans-highlight">1 Axis</span> (Horizontal)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) <span class="ans-highlight">2 Axes</span> (Horizontal & Vertical)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) <span class="ans-highlight">4 Axes</span> (H, V, and 2 Diagonals)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) <span class="ans-highlight">4 Axes</span> (H, V, and 2 Diagonals)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (g) <span class="ans-highlight">1 Axis</span> (Vertical)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (h) <span class="ans-highlight">1 Axis</span> (Horizontal)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (i) <span class="ans-highlight">1 Axis</span> (Vertical)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (j) <span class="ans-highlight">1 Axis</span> (Horizontal)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (k) <span class="ans-highlight">2 Axes</span> (Horizontal & Vertical)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (l) <span class="ans-highlight">4 Axes</span> (H, V, and 2 Diagonals)</div>
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#26C6DA;">(a) Square with 2 holes on left & right</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">A vertical line passing through the center folds the square into matching halves.</div>
+                    <div class="sol-step"><span class="ans-highlight">1 axis of symmetry</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(b) Square with 2 holes near top-right corner</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Folding along the diagonal reflects the two holes onto each other.</div>
+                    <div class="sol-step"><span class="ans-highlight">1 axis of symmetry (Diagonal)</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(c) Square with 2 holes on right side</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">A horizontal line passing through the center reflects top hole to bottom hole.</div>
+                    <div class="sol-step"><span class="ans-highlight">1 axis of symmetry (Horizontal)</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(d) Square with 4 holes on opposite sides</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Horizontal axis folds top pair onto bottom pair.</div>
+                    <div class="sol-step"><span class="ans-highlight">1 axis of symmetry</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(e) Square with 4 corner holes</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 diagonal lines + 2 perpendicular bisectors.</div>
+                    <div class="sol-step"><span class="ans-highlight">4 axes of symmetry</span></div>
                 </div>
             </div>
 
-            <!-- Q2 -->
+            <!-- Question 7 -->
             <div class="sol-card">
-                <div class="question-header">2. Given the line(s) of symmetry, find the other hole(s):</div>
+                <div class="question-header">7. State the number of lines of symmetry for the following figures:</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) Hole will be in the <span class="ans-highlight">upper right</span> corner (symmetrically opposite to the given hole).</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) Hole will be in the <span class="ans-highlight">upper right</span> part of the square.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) Hole will be on the <span class="ans-highlight">right side</span> of the triangle's vertical axis.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) Hole will be in the <span class="ans-highlight">lower left</span> part of the circle.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) Holes will be in the <span class="ans-highlight">bottom and right</span> parts to complete symmetry about both diagonals.</div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#26C6DA;">(a) An equilateral triangle</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">3 lines along medians/altitudes.</div>
+                    <div class="sol-step"><span class="ans-highlight">= 3 lines of symmetry</span></div>
 
-            <!-- Q3 -->
-            <div class="sol-card">
-                <div class="question-header">3. Complete each figure using the dotted mirror line. Name of the completed figures:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) <span class="ans-highlight">Square</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) <span class="ans-highlight">Triangle</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) <span class="ans-highlight">Rhombus</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) <span class="ans-highlight">Circle</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) <span class="ans-highlight">Pentagon</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) <span class="ans-highlight">Octagon</span></div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(b) An isosceles triangle</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">1 line along median to unequal side.</div>
+                    <div class="sol-step"><span class="ans-highlight">= 1 line of symmetry</span></div>
 
-            <!-- Q4 -->
-            <div class="sol-card">
-                <div class="question-header">4. Identify multiple lines of symmetry, if any, in each of the following figures:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) <span class="ans-highlight">3 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) <span class="ans-highlight">2 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) <span class="ans-highlight">3 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) <span class="ans-highlight">2 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) <span class="ans-highlight">4 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) <span class="ans-highlight">1 Line</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (g) <span class="ans-highlight">4 Lines</span> of symmetry.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (h) <span class="ans-highlight">6 Lines</span> of symmetry.</div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(c) A scalene triangle</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">No matching sides.</div>
+                    <div class="sol-step"><span class="ans-highlight">= 0 lines of symmetry</span></div>
 
-            <!-- Q5 -->
-            <div class="sol-card">
-                <div class="question-header">5. Shade squares to make the figure symmetric about a diagonal. Is there more than one way?</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> <span class="ans-highlight">Yes</span>, there is more than one way. Shading can be done across either of the two diagonals.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> By shading <span class="ans-highlight">4 additional squares</span>, the figure becomes symmetric about both diagonals.</div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(d) A square</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 diagonals + 2 mid-point bisectors.</div>
+                    <div class="sol-step"><span class="ans-highlight">= 4 lines of symmetry</span></div>
 
-            <!-- Q6 -->
-            <div class="sol-card">
-                <div class="question-header">6. Complete each shape to be symmetric about the mirror line(s):</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) The shape should be reflected across the diagonal to form a <span class="ans-highlight">Symmetric Quadrilateral</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) The pattern should be reflected across both horizontal and vertical axes to complete the <span class="ans-highlight">Grid Pattern</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) The arc should be reflected across the horizontal axis to form a <span class="ans-highlight">Complete Circle/Oval</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) The dots should be reflected across the given axes to maintain <span class="ans-highlight">Bilateral Symmetry</span>.</div>
-                </div>
-            </div>
-
-            <!-- Q7 -->
-            <div class="sol-card">
-                <div class="question-header">7. State the number of lines of symmetry for the following:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) Equilateral Triangle: <span class="ans-highlight">3</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) Isosceles Triangle: <span class="ans-highlight">1</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) Scalene Triangle: <span class="ans-highlight">0</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) Square: <span class="ans-highlight">4</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) Rectangle: <span class="ans-highlight">2</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) Rhombus: <span class="ans-highlight">2</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (g) Parallelogram: <span class="ans-highlight">0</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (h) Quadrilateral: <span class="ans-highlight">0</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (i) Regular Hexagon: <span class="ans-highlight">6</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (j) Circle: <span class="ans-highlight">Infinite</span></div>
-                </div>
-            </div>
-
-            <!-- Q8 -->
-            <div class="sol-card">
-                <div class="question-header">8. What letters of the English alphabet have reflectional symmetry related to:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) Vertical Mirror: <span class="ans-highlight">A, H, I, M, O, T, U, V, W, X, Y</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) Horizontal Mirror: <span class="ans-highlight">B, C, D, E, H, I, O, X</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) Both Mirrors: <span class="ans-highlight">H, I, O, X</span></div>
-                </div>
-            </div>
-
-            <!-- Q9 -->
-            <div class="sol-card">
-                <div class="question-header">9. Give three examples of shapes with no line of symmetry.</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> 1. <span class="ans-highlight">Scalene Triangle</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> 2. <span class="ans-highlight">Parallelogram</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> 3. <span class="ans-highlight">Quadrilateral</span> with unequal sides.</div>
-                </div>
-            </div>
-
-            <!-- Q10 -->
-            <div class="sol-card">
-                <div class="question-header">10. What other name can you give to the line of symmetry of:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) An Isosceles Triangle? <span class="ans-highlight">Median/Altitude</span></div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) A Circle? <span class="ans-highlight">Diameter</span></div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(e) A rectangle</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">2 mid-point perpendicular lines.</div>
+                    <div class="sol-step"><span class="ans-highlight">= 2 lines of symmetry</span></div>
                 </div>
             </div>
         </div>
-        `,
+    `,
     "ex12-2": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: rgba(0, 191, 165, 0.08); padding: 20px; border-bottom: 1px solid rgba(0, 191, 165, 0.2); border-left: 4px solid #00BFA5; color: #00BFA5; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
-            .sol-body { padding: 20px; background: #000; text-align: left; }
-            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #00BFA5; font-weight: bold; font-size: 1.1em; }
-            .label-theme { color: #00BFA5; font-weight: bold; }
-            .ans-highlight { color: #64FFDA; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #26C6DA; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #26C6DA; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #80DEEA; font-weight: bold; }
+            .sol-body b, .subpart-title { color: #26C6DA; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #80DEEA; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
-            <!-- Q1 -->
+            <!-- Question 1 -->
             <div class="sol-card">
-                <div class="question-header">1. Which of the following figures have rotational symmetry of order more than 1? (Refer to textbook for figures):</div>
+                <div class="question-header">1. Give the order of rotational symmetry for each figure:</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) Circle with 4 parts: <span class="ans-highlight">Yes</span> (Order 4)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) Equilateral Triangle: <span class="ans-highlight">Yes</span> (Order 3)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) Vertical Line with Notches: <span class="ans-highlight">No</span> (Order 1)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) H-Shape: <span class="ans-highlight">Yes</span> (Order 2)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) Circle with 3 Parts: <span class="ans-highlight">Yes</span> (Order 3)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) 4-Blade Fan: <span class="ans-highlight">Yes</span> (Order 4)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> <span class="label-theme">Final Result:</span> Figures <span class="ans-highlight">(a), (b), (d), (e), and (f)</span> have rotational symmetry of order more than 1.</div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#26C6DA;">(a) Square</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Angle of rotation = <div class="frac"><span class="num" style="border-bottom-color:#80DEEA;">360°</span><span class="den">4</span></div> = 90°</div>
+                    <div class="sol-step"><span class="ans-highlight">Order of rotational symmetry = 4</span></div>
 
-            <!-- Q2 -->
-            <div class="sol-card">
-                <div class="question-header">2. Give the order of rotational symmetry for each figure:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (a) 2-Blade Propeller: <span class="ans-highlight">2</span> (Rotation by 180°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (b) Intersecting Lines (80°): <span class="ans-highlight">2</span> (Rotation by 180°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (c) Equilateral Triangle: <span class="ans-highlight">3</span> (Rotation by 120°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (d) 4-Blade Windmill: <span class="ans-highlight">4</span> (Rotation by 90°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (e) Plus (+) Shape: <span class="ans-highlight">4</span> (Rotation by 90°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (f) Regular Pentagon: <span class="ans-highlight">5</span> (Rotation by 72°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (g) 6-Pointed Star: <span class="ans-highlight">6</span> (Rotation by 60°)</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (h) 3-Petal Flower Pattern: <span class="ans-highlight">3</span> (Rotation by 120°)</div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(b) Equilateral Triangle</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Angle of rotation = <div class="frac"><span class="num" style="border-bottom-color:#80DEEA;">360°</span><span class="den">3</span></div> = 120°</div>
+                    <div class="sol-step"><span class="ans-highlight">Order of rotational symmetry = 3</span></div>
+
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(c) Regular Hexagon</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Angle of rotation = <div class="frac"><span class="num" style="border-bottom-color:#80DEEA;">360°</span><span class="den">6</span></div> = 60°</div>
+                    <div class="sol-step"><span class="ans-highlight">Order of rotational symmetry = 6</span></div>
                 </div>
             </div>
         </div>
-        `,
+    `,
     "ex12-3": `
         <style>
             .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 16px; margin-bottom: 25px; border: 1px solid rgba(0, 191, 165, 0.3); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-            .question-header { background: rgba(0, 191, 165, 0.08); padding: 20px; border-bottom: 1px solid rgba(0, 191, 165, 0.2); border-left: 4px solid #00BFA5; color: #00BFA5; font-size: 1.15em; font-weight: bold; line-height: 1.5; text-align: justify; }
-            .sol-body { padding: 20px; background: #000; text-align: left; }
-            .sol-step { margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px; text-align: left; position: relative; padding-left: 30px; color: #e0e0e0; font-size: 1.05em; line-height: 1.6; }
-            .step-marker { position: absolute; left: 0; top: 0; color: #00BFA5; font-weight: bold; font-size: 1.1em; }
-            .ans-highlight { color: #64FFDA; font-weight: bold; }
-            .math-table { width: 100%; border-collapse: collapse; margin-top: 10px; border: 1px solid rgba(255,255,255,0.1); table-layout: fixed; }
-            .math-table th, .math-table td { border: 1px solid rgba(255,255,255,0.1); padding: 5px 2px; text-align: center; font-size: 0.72em; word-wrap: break-word; line-height: 1.2; }
-            .math-table th { background: rgba(0, 191, 165, 0.2); color: #00BFA5; font-weight: bold; }
+            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #26C6DA; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+            .question-header { padding: 15px; color: #26C6DA; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
+            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
+            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
+            .ans-highlight { color: #80DEEA; font-weight: bold; }
+            .sol-body b, .subpart-title { color: #26C6DA; }
+            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
+            .frac .num { border-bottom: 1px solid #80DEEA; padding: 0 2px; display: block; }
+            .frac .den { display: block; padding: 0 2px; }
         </style>
         <div class="container">
-            <!-- Q1 -->
+            <!-- Question 1 -->
             <div class="sol-card">
-                <div class="question-header">1. Name any two figures that have both line symmetry and rotational symmetry.</div>
+                <div class="question-header">1. Name any two figures that have both line symmetry and rotational symmetry:</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> <span class="ans-highlight">Square</span> and <span class="ans-highlight">Equilateral Triangle</span> (or Circle).</div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">1. <span class="ans-highlight">Equilateral Triangle</span> (3 lines of symmetry, rotational order 3)</div>
+                    <div class="sol-step">2. <span class="ans-highlight">Circle</span> (Infinite lines of symmetry, infinite rotational order)</div>
                 </div>
             </div>
 
-            <!-- Q2 -->
+            <!-- Question 7 -->
             <div class="sol-card">
-                <div class="question-header">2. Give examples of triangles/quadrilaterals with specific symmetries:</div>
+                <div class="question-header">7. Can we have a rotational symmetry of order more than 1 whose angle of rotation is:</div>
                 <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (i) Triangle with both line and rotational symmetry (>1): <span class="ans-highlight">Equilateral Triangle</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (ii) Triangle with only line symmetry: <span class="ans-highlight">Isosceles Triangle</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (iii) Quadrilateral with rotational symmetry (>1) but no line symmetry: <span class="ans-highlight">Parallelogram</span>.</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (iv) Quadrilateral with line symmetry but no rotational symmetry (>1): <span class="ans-highlight">Isosceles Trapezium</span>.</div>
-                </div>
-            </div>
+                    <div class="sol-step" style="margin-top: 5px;"><b style="color:#26C6DA;">(i) 45°</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">Order = <div class="frac"><span class="num" style="border-bottom-color:#80DEEA;">360°</span><span class="den">45°</span></div> = 8</div>
+                    <div class="sol-step">Since 360° is completely divisible by 45°:</div>
+                    <div class="sol-step"><span class="ans-highlight">Yes, we can have rotational symmetry of order 8.</span></div>
 
-            <!-- Q3 -->
-            <div class="sol-card">
-                <div class="question-header">3. If a figure has two or more lines of symmetry, should it have rotational symmetry of order more than 1?</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> <span class="ans-highlight">Yes</span>. Any figure with n lines of symmetry will always have rotational symmetry of at least order n.</div>
-                </div>
-            </div>
-
-            <!-- Q4 -->
-            <div class="sol-card">
-                <div class="question-header">4. Fill in the blanks (Symmetry Table):</div>
-                <div class="sol-body">
-                    <table class="math-table">
-                        <tr><th>Shape</th><th>Centre of Rotation</th><th>Order</th><th>Angle</th></tr>
-                        <tr><td>Square</td><td>Intersection of Diagonals</td><td>4</td><td>90°</td></tr>
-                        <tr><td>Rectangle</td><td>Intersection of Diagonals</td><td>2</td><td>180°</td></tr>
-                        <tr><td>Rhombus</td><td>Intersection of Diagonals</td><td>2</td><td>180°</td></tr>
-                        <tr><td>Eq. Triangle</td><td>Centroid</td><td>3</td><td>120°</td></tr>
-                        <tr><td>Reg. Hexagon</td><td>Centre</td><td>6</td><td>60°</td></tr>
-                        <tr><td>Circle</td><td>Centre</td><td>Infinite</td><td>Any Angle</td></tr>
-                        <tr><td>Semi-circle</td><td>Mid-point of diameter</td><td>1</td><td>360°</td></tr>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Q5 -->
-            <div class="sol-card">
-                <div class="question-header">5. Name the quadrilaterals which have both line and rotational symmetry of order more than 1.</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> <span class="ans-highlight">Square, Rectangle, and Rhombus</span>.</div>
-                </div>
-            </div>
-
-            <!-- Q6 -->
-            <div class="sol-card">
-                <div class="question-header">6. After rotating by 60°, a figure looks same as original. At what other angles will this happen?</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> It will happen at multiples of 60°: <span class="ans-highlight">120°, 180°, 240°, 300°, and 360°</span>.</div>
-                </div>
-            </div>
-
-            <!-- Q7 -->
-            <div class="sol-card">
-                <div class="question-header">7. Can we have rotational symmetry of order > 1 with angle:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><span class="step-marker">=></span> (i) 45°? <span class="ans-highlight">Yes</span> (360 is divisible by 45, order 8).</div>
-                    <div class="sol-step"><span class="step-marker">=></span> (ii) 17°? <span class="ans-highlight">No</span> (360 is not exactly divisible by 17).</div>
+                    <div class="sol-step" style="margin-top: 15px;"><b style="color:#26C6DA;">(ii) 17°</b></div>
+                    <div class="sol-step">Solution:-</div>
+                    <div class="sol-step">360° ÷ 17° = 21.17 (Not a whole number)</div>
+                    <div class="sol-step">Since 360° is not divisible by 17°:</div>
+                    <div class="sol-step"><span class="ans-highlight">No, we cannot have rotational symmetry of order more than 1.</span></div>
                 </div>
             </div>
         </div>
-        `,
+    `,
   },
-  examples: [],
   mcqs: [
-    {
-      id: "m1",
-      question: "A rectangle has ______ lines of symmetry.",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m2",
-      question: "Order of rotational symmetry of a square is:",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "D",
-    },
-    {
-      id: "m3",
-      question: "A circle has ______ lines of symmetry.",
-      options: ["0", "1", "10", "Infinite"],
-      correctAnswer: "D",
-    },
-    {
-      id: "m4",
-      question: "Which letter has no lines of symmetry?",
-      options: ["A", "B", "C", "Q"],
-      correctAnswer: "D",
-    },
-    {
-      id: "m5",
-      question: "Regular hexagon has ______ lines of symmetry.",
-      options: ["3", "4", "5", "6"],
-      correctAnswer: "D",
-    },
-    {
-      id: "m6",
-      question: "Angle of rotation for order 3 is:",
-      options: ["120°", "90°", "60°", "180°"],
-      correctAnswer: "A",
-    },
-    {
-      id: "m7",
-      question: "Does a parallelogram have line symmetry?",
-      options: ["Yes", "No", "Only if square", "Only if rectangle"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m8",
-      question: "Order of rotation for letter 'S' is:",
-      options: ["1", "2", "3", "4"],
-      correctAnswer: "B",
-    },
-    {
-      id: "m9",
-      question: "A regular pentagon has symmetry of order:",
-      options: ["1", "3", "5", "10"],
-      correctAnswer: "C",
-    },
-    {
-      id: "m10",
-      question: "The smallest angle of rotation of a square is:",
-      options: ["45°", "90°", "180°", "360°"],
-      correctAnswer: "B",
-    },
-  ],
-  summary: [],
+    { id: "c7m12-mcq-1", question: "How many lines of symmetry does a square have?", options: ["1", "2", "3", "4"], correctAnswer: "d", explanation: "A square has 4 lines of symmetry (2 diagonal + 2 mid-point perpendicular bisectors)." },
+    { id: "c7m12-mcq-2", question: "How many lines of symmetry does a circle have?", options: ["1", "2", "4", "Infinitely many"], correctAnswer: "d", explanation: "Any line passing through the center of a circle is a line of symmetry." },
+    { id: "c7m12-mcq-3", question: "What is the order of rotational symmetry of a square?", options: ["1", "2", "3", "4"], correctAnswer: "d", explanation: "A square matches its original shape 4 times during one 360° turn." },
+    { id: "c7m12-mcq-4", question: "What is the angle of rotation for an equilateral triangle?", options: ["60°", "90°", "120°", "180°"], correctAnswer: "c", explanation: "Angle of rotation = 360° / 3 = 120°." },
+    { id: "c7m12-mcq-5", question: "How many lines of symmetry does a scalene triangle have?", options: ["0", "1", "2", "3"], correctAnswer: "a", explanation: "A scalene triangle has all unequal sides and 0 lines of symmetry." },
+    { id: "c7m12-mcq-6", question: "How many lines of symmetry does an isosceles triangle have?", options: ["0", "1", "2", "3"], correctAnswer: "b", explanation: "An isosceles triangle has 1 line of symmetry along its altitude." },
+    { id: "c7m12-mcq-7", question: "What is the order of rotational symmetry of a rectangle?", options: ["1", "2", "3", "4"], correctAnswer: "b", explanation: "A rectangle looks identical twice (at 180° and 360°) during a full turn." },
+    { id: "c7m12-mcq-8", question: "Which letter of the English alphabet has both horizontal and vertical line symmetry?", options: ["A", "B", "H", "C"], correctAnswer: "c", explanation: "The letter 'H' has both horizontal and vertical lines of symmetry." },
+    { id: "c7m12-mcq-9", question: "What is the angle of rotation for a regular pentagon?", options: ["60°", "72°", "90°", "108°"], correctAnswer: "b", explanation: "Angle of rotation = 360° / 5 = 72°." },
+    { id: "c7m12-mcq-10", question: "A figure having rotational symmetry of order 1 means:", options: ["High symmetry", "No rotational symmetry", "Rotates every 90°", "Is a circle"], correctAnswer: "b", explanation: "Order 1 means it only matches itself after a full 360° rotation (no non-trivial rotational symmetry)." }
+  ]
 };
