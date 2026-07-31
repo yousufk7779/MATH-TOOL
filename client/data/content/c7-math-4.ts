@@ -475,7 +475,7 @@ export const c7Math4: ChapterContent = {
             <div class="sol-card">
                 <div class="question-header">1. Give first the step you will use to separate the variable and then solve the equation:<br/>
                 (a) x - 1 = 0 &nbsp; (b) x + 1 = 0 &nbsp; (c) x - 1 = 5 &nbsp; (d) x + 6 = 2<br/>
-                (e) y - 4 = -7 &nbsp; (f) y - 4 = 4 &nbsp; (g) y + 4 = 4 &nbsp; (h) y + 4 = -4</div>
+                (e) y - 4 = -7 &nbsp; (f) y - 4 = 4 &nbsp; (g) y + 4 = 4</div>
                 <div class="sol-body">
                     <div class="sol-step"><b>(a) x - 1 = 0:</b></div>
                     <div class="sol-step">Solution:-</div>
@@ -518,12 +518,6 @@ export const c7Math4: ChapterContent = {
                     <div class="sol-step">Subtract 4 from both sides of the equation.</div>
                     <div class="sol-step">y + 4 - 4 = 4 - 4</div>
                     <div class="sol-step"><span class="ans-highlight">y = 0</span></div>
-
-                    <div class="sol-step" style="margin-top: 15px;"><b>(h) y + 4 = -4:</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Subtract 4 from both sides of the equation.</div>
-                    <div class="sol-step">y + 4 - 4 = -4 - 4</div>
-                    <div class="sol-step"><span class="ans-highlight">y = -8</span></div>
                 </div>
             </div>
 
