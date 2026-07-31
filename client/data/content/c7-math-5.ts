@@ -366,49 +366,59 @@ export const c7Math5: ChapterContent = {
                 <div class="question-header">11. In the adjoining figure, name the following pairs of angles.</div>
                 <div class="sol-body">
                     <div class="diagram-container">
-                        <svg width="240" height="240" viewBox="0 0 240 240" style="margin:auto; display:block;">
-                            <line x1="40" y1="60" x2="200" y2="180" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,60 37,65 44,62" fill="#fff" />
-                            <polygon points="200,180 203,175 196,178" fill="#fff" />
-                            <line x1="40" y1="180" x2="200" y2="60" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,180 44,178 37,175" fill="#fff" />
-                            <polygon points="200,60 196,62 203,65" fill="#fff" />
-                            <line x1="120" y1="120" x2="120" y2="30" stroke="#10B981" stroke-width="2.5" />
-                            <polygon points="117,30 120,24 123,30" fill="#10B981" />
-                            <circle cx="120" cy="120" r="4" fill="#10B981" />
-                            <text x="20" y="55" fill="#fff" font-size="14" font-weight="bold">B</text>
-                            <text x="205" y="190" fill="#fff" font-size="14" font-weight="bold">D</text>
-                            <text x="205" y="55" fill="#fff" font-size="14" font-weight="bold">A</text>
-                            <text x="20" y="190" fill="#fff" font-size="14" font-weight="bold">C</text>
-                            <text x="115" y="20" fill="#10B981" font-size="14" font-weight="bold">E</text>
-                            <text x="125" y="130" fill="#fff" font-size="14" font-weight="bold">O</text>
+                        <svg width="260" height="180" viewBox="0 0 260 180" style="margin:auto; display:block;">
+                            <!-- Horizontal Line BD -->
+                            <line x1="20" y1="100" x2="240" y2="100" stroke="#FF4081" stroke-width="2" />
+                            <polygon points="20,100 26,96 26,104" fill="#FF4081" />
+                            <polygon points="240,100 234,96 234,104" fill="#FF4081" />
+                            <circle cx="50" cy="100" r="3.5" fill="#FF4081" />
+                            <circle cx="130" cy="100" r="3.5" fill="#FF4081" />
+                            <circle cx="210" cy="100" r="3.5" fill="#FF4081" />
+                            <text x="45" y="125" fill="#fff" font-size="14" font-weight="bold">B</text>
+                            <text x="120" y="125" fill="#fff" font-size="14" font-weight="bold">O</text>
+                            <text x="210" y="85" fill="#fff" font-size="14" font-weight="bold">D</text>
+
+                            <!-- Slanted Line AC -->
+                            <line x1="35" y1="68" x2="225" y2="132" stroke="#FF4081" stroke-width="2" />
+                            <polygon points="35,68 41,73 37,77" fill="#FF4081" />
+                            <polygon points="225,132 219,127 223,123" fill="#FF4081" />
+                            <circle cx="60" cy="76" r="3.5" fill="#FF4081" />
+                            <circle cx="200" cy="124" r="3.5" fill="#FF4081" />
+                            <text x="55" y="60" fill="#fff" font-size="14" font-weight="bold">A</text>
+                            <text x="195" y="150" fill="#fff" font-size="14" font-weight="bold">C</text>
+
+                            <!-- Vertical Ray OE -->
+                            <line x1="130" y1="100" x2="130" y2="20" stroke="#FF4081" stroke-width="2.5" />
+                            <polygon points="130,20 126,26 134,26" fill="#FF4081" />
+                            <circle cx="130" cy="45" r="3.5" fill="#FF4081" />
+                            <text x="145" y="48" fill="#FF4081" font-size="14" font-weight="bold">E</text>
                         </svg>
                     </div>
                     
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0;">
                         <span class="subpart-title">(i) Obtuse vertically opposite angles</span>
                     </div>
-                    <div class="sol-step">&rArr; &ang;AOD and &ang;BOC.</div>
+                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOD and &ang;BOC</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(ii) Adjacent complementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; &ang;EOA and &ang;AOB.</div>
+                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;EOA and &ang;AOB</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(iii) Equal supplementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; &ang;EOB and &ang;EOD.</div>
+                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;EOB and &ang;EOD</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(iv) Unequal supplementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; &ang;EOA and &ang;EOC, or &ang;AOB and &ang;BOC, or &ang;AOD and &ang;DOC.</div>
+                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOB and &ang;AOD</span>, or <span class="ans-highlight">&ang;AOD and &ang;DOC</span>, or <span class="ans-highlight">&ang;DOC and &ang;BOC</span>, or <span class="ans-highlight">&ang;AOB and &ang;BOC</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(v) Adjacent angles that do not form a linear pair</span>
                     </div>
-                    <div class="sol-step">&rArr; &ang;AOB and &ang;AOE, &ang;AOE and &ang;EOD, &ang;EOD and &ang;COD.</div>
+                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOB and &ang;AOE</span>, <span class="ans-highlight">&ang;AOE and &ang;EOD</span>, <span class="ans-highlight">&ang;EOD and &ang;COD</span>.</div>
                 </div>
             </div>
         </div>
