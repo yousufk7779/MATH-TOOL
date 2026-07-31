@@ -398,27 +398,27 @@ export const c7Math5: ChapterContent = {
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0;">
                         <span class="subpart-title">(i) Obtuse vertically opposite angles</span>
                     </div>
-                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOD and &ang;BOC</span>.</div>
+                    <div class="sol-step">&rArr; <span style="color: #ffffff; font-weight: bold;">&ang;AOD and &ang;BOC</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(ii) Adjacent complementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;EOA and &ang;AOB</span>.</div>
+                    <div class="sol-step">&rArr; <span style="color: #ffffff; font-weight: bold;">&ang;EOA and &ang;AOB</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(iii) Equal supplementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;EOB and &ang;EOD</span>.</div>
+                    <div class="sol-step">&rArr; <span style="color: #ffffff; font-weight: bold;">&ang;EOB and &ang;EOD</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(iv) Unequal supplementary angles</span>
                     </div>
-                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOB and &ang;AOD</span>, or <span class="ans-highlight">&ang;AOD and &ang;DOC</span>, or <span class="ans-highlight">&ang;DOC and &ang;BOC</span>, or <span class="ans-highlight">&ang;AOB and &ang;BOC</span>.</div>
+                    <div class="sol-step">&rArr; <span style="color: #ffffff; font-weight: bold;">&ang;AOB and &ang;AOD</span>, or <span style="color: #ffffff; font-weight: bold;">&ang;AOD and &ang;DOC</span>, or <span style="color: #ffffff; font-weight: bold;">&ang;DOC and &ang;BOC</span>, or <span style="color: #ffffff; font-weight: bold;">&ang;AOB and &ang;BOC</span>.</div>
 
                     <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
                         <span class="subpart-title">(v) Adjacent angles that do not form a linear pair</span>
                     </div>
-                    <div class="sol-step">&rArr; <span class="ans-highlight">&ang;AOB and &ang;AOE</span>, <span class="ans-highlight">&ang;AOE and &ang;EOD</span>, <span class="ans-highlight">&ang;EOD and &ang;COD</span>.</div>
+                    <div class="sol-step">&rArr; <span style="color: #ffffff; font-weight: bold;">&ang;AOB and &ang;AOE</span>, <span style="color: #ffffff; font-weight: bold;">&ang;AOE and &ang;EOD</span>, <span style="color: #ffffff; font-weight: bold;">&ang;EOD and &ang;COD</span>.</div>
                 </div>
             </div>
         </div>
