@@ -315,68 +315,7 @@ export const c7Math5: ChapterContent = {
 
             <!-- Question 9 -->
             <div class="sol-card">
-                <div class="question-header">9. In the adjoining figure:</div>
-                <div class="sol-body">
-                    <div class="diagram-container">
-                        <svg width="240" height="240" viewBox="0 0 240 240" style="margin:auto; display:block;">
-                            <line x1="40" y1="40" x2="200" y2="200" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,40 37,45 44,42" fill="#fff" />
-                            <polygon points="200,200 203,195 196,198" fill="#fff" />
-                            <line x1="40" y1="200" x2="200" y2="40" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,200 44,198 37,195" fill="#fff" />
-                            <polygon points="200,40 196,42 203,45" fill="#fff" />
-                            <line x1="120" y1="120" x2="210" y2="120" stroke="#10B981" stroke-width="2.5" />
-                            <polygon points="210,117 216,120 210,123" fill="#10B981" />
-                            <circle cx="120" cy="120" r="4" fill="#10B981" />
-                            <text x="30" y="35" fill="#fff" font-size="14" font-weight="bold">A</text>
-                            <text x="205" y="215" fill="#fff" font-size="14" font-weight="bold">B</text>
-                            <text x="205" y="35" fill="#fff" font-size="14" font-weight="bold">C</text>
-                            <text x="30" y="215" fill="#fff" font-size="14" font-weight="bold">D</text>
-                            <text x="220" y="125" fill="#10B981" font-size="14" font-weight="bold">E</text>
-                            <text x="105" y="135" fill="#fff" font-size="14" font-weight="bold">O</text>
-                            <text x="120" y="75" fill="#34D399" font-size="14" font-weight="bold">1</text>
-                            <text x="155" y="105" fill="#34D399" font-size="14" font-weight="bold">2</text>
-                            <text x="155" y="140" fill="#34D399" font-size="14" font-weight="bold">3</text>
-                            <text x="120" y="170" fill="#34D399" font-size="14" font-weight="bold">4</text>
-                            <text x="80" y="125" fill="#34D399" font-size="14" font-weight="bold">5</text>
-                        </svg>
-                    </div>
-                    
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0;">
-                        <span class="subpart-title">(i) Is &ang;1 adjacent to &ang;2?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">Yes</span>. They share the common vertex O, common arm OC, and their non-common arms OA and OE are on opposite sides of OC.</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
-                        <span class="subpart-title">(ii) Is &ang;AOC adjacent to &ang;AOE?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">No</span>. They have a common vertex O and common arm OA, but they do not have non-common arms on opposite sides of the common arm (since &ang;AOC lies inside &ang;AOE).</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
-                        <span class="subpart-title">(iii) Do &ang;COE and &ang;EOD form a linear pair?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">Yes</span>. They share a common arm OE, and their non-common arms OC and OD are opposite rays forming a straight line CD.</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
-                        <span class="subpart-title">(iv) Are &ang;BOD and &ang;DOA supplementary?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">Yes</span>. They form a linear pair on straight line AB, so &ang;BOD + &ang;DOA = 180°.</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
-                        <span class="subpart-title">(v) Is &ang;1 vertically opposite to &ang;4?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">Yes</span>. They are formed opposite to each other by the intersection of straight lines AB and CD.</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 15px;">
-                        <span class="subpart-title">(vi) What is the vertically opposite angle of &ang;5?</span>
-                    </div>
-                    <div class="sol-step"><span class="ans-highlight">&ang;BOC</span> (or &ang;2 + &ang;3) because it is formed by intersecting lines AB and CD opposite to &ang;5.</div>
-                </div>
-            </div>
-
-            <!-- Question 10 -->
-            <div class="sol-card">
-                <div class="question-header">10. Indicate which pairs of angles are:</div>
+                <div class="question-header">9. Indicate which pairs of angles are:</div>
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg width="240" height="200" viewBox="0 0 240 200" style="margin:auto; display:block;">
@@ -409,89 +348,9 @@ export const c7Math5: ChapterContent = {
                 </div>
             </div>
 
-            <!-- Question 11 -->
+            <!-- Question 10 -->
             <div class="sol-card">
-                <div class="question-header">11. In the following figure, is ∠1 adjacent to ∠2? Give reasons.</div>
-                <div class="sol-body">
-                    <div class="diagram-container">
-                        <svg width="240" height="180" viewBox="0 0 240 180" style="margin:auto; display:block;">
-                            <line x1="30" y1="40" x2="160" y2="40" stroke="#fff" stroke-width="2.5" />
-                            <polygon points="30,37 24,40 30,43" fill="#fff" />
-                            <line x1="160" y1="40" x2="80" y2="140" stroke="#fff" stroke-width="2.5" />
-                            <line x1="80" y1="140" x2="210" y2="140" stroke="#fff" stroke-width="2.5" />
-                            <polygon points="210,137 216,140 210,143" fill="#fff" />
-                            <circle cx="160" cy="40" r="3.5" fill="#10B981" />
-                            <circle cx="80" cy="140" r="3.5" fill="#10B981" />
-                            <path d="M 135,40 A 25,25 0 0 0 143.7,56.3" fill="none" stroke="#34D399" stroke-width="1.5" />
-                            <path d="M 105,140 A 25,25 0 0 0 96.3,123.7" fill="none" stroke="#34D399" stroke-width="1.5" />
-                            <!-- Correct labeling coordinates inside the Z angle structure -->
-                            <text x="135" y="55" fill="#fff" font-size="14" font-weight="bold">1</text>
-                            <text x="105" y="125" fill="#fff" font-size="14" font-weight="bold">2</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step"><b>Answer:</b> <br/><span class="ans-highlight">No</span>.</div>
-                    <div class="sol-step"><b>Reason:</b> Adjacent angles must share a common vertex. In this figure, &ang;1 and &ang;2 lie on different vertices.</div>
-                </div>
-            </div>
-
-            <!-- Question 12 -->
-            <div class="sol-card">
-                <div class="question-header">12. Find the values of the angles x, y, and z in each of the following:</div>
-                <div class="sol-body">
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0;">
-                        <span class="subpart-title">(i) Intersecting lines with 55°</span>
-                    </div>
-                    <div class="diagram-container">
-                        <svg width="240" height="200" viewBox="0 0 240 200" style="margin:auto; display:block;">
-                            <line x1="40" y1="40" x2="200" y2="160" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,40 37,45 44,42" fill="#fff" />
-                            <polygon points="200,160 203,155 196,158" fill="#fff" />
-                            <line x1="40" y1="160" x2="200" y2="40" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,160 44,158 37,155" fill="#fff" />
-                            <polygon points="200,40 196,42 203,45" fill="#fff" />
-                            <circle cx="120" cy="100" r="3.5" fill="#10B981" />
-                            <text x="65" y="105" fill="#fff" font-size="14" font-weight="bold">55°</text>
-                            <text x="165" y="105" fill="#34D399" font-size="15" font-weight="bold">x</text>
-                            <text x="115" y="55" fill="#34D399" font-size="15" font-weight="bold">y</text>
-                            <text x="115" y="155" fill="#34D399" font-size="15" font-weight="bold">z</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">x = 55° (Vertically opposite angles are equal)</div>
-                    <div class="sol-step">x + y = 180° (Linear pair) &rArr; 55° + y = 180° &rArr; y = 180° - 55° = <span class="ans-highlight">125°</span></div>
-                    <div class="sol-step">z = y = <span class="ans-highlight">125°</span> (Vertically opposite angles)</div>
-                    <div class="sol-step">Result: x = 55°, y = 125°, z = 125°.</div>
-
-                    <div class="sol-step" style="border-bottom: none; padding-bottom: 0; margin-top: 25px;">
-                        <span class="subpart-title">(ii) Intersecting lines with horizontal ray</span>
-                    </div>
-                    <div class="diagram-container">
-                        <svg width="240" height="200" viewBox="0 0 240 200" style="margin:auto; display:block;">
-                            <line x1="40" y1="150" x2="200" y2="50" stroke="#fff" stroke-width="2" />
-                            <polygon points="40,150 44,147 37,145" fill="#fff" />
-                            <polygon points="200,50 196,53 203,55" fill="#fff" />
-                            <line x1="50" y1="40" x2="190" y2="160" stroke="#fff" stroke-width="2" />
-                            <polygon points="50,40 47,45 54,42" fill="#fff" />
-                            <polygon points="190,160 193,155 186,158" fill="#fff" />
-                            <line x1="120" y1="100" x2="210" y2="100" stroke="#10B981" stroke-width="2.5" />
-                            <polygon points="210,97 216,100 210,103" fill="#10B981" />
-                            <circle cx="120" cy="100" r="3.5" fill="#10B981" />
-                            <text x="65" y="95" fill="#fff" font-size="13" font-weight="bold">40°</text>
-                            <text x="120" y="60" fill="#34D399" font-size="14" font-weight="bold">x</text>
-                            <text x="170" y="85" fill="#fff" font-size="13" font-weight="bold">25°</text>
-                            <text x="110" y="145" fill="#34D399" font-size="14" font-weight="bold">y</text>
-                            <text x="155" y="130" fill="#34D399" font-size="14" font-weight="bold">z</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">z = 40° (Vertically opposite to 40°)</div>
-                    <div class="sol-step">y + z = 180° (Linear pair) &rArr; y + 40° = 180° &rArr; y = <span class="ans-highlight">140°</span></div>
-                    <div class="sol-step">40° + x + 25° = 180° (Angles on a straight line) &rArr; 65° + x = 180° &rArr; x = <span class="ans-highlight">115°</span></div>
-                    <div class="sol-step">Result: x = 115°, y = 140°, z = 40°.</div>
-                </div>
-            </div>
-
-            <!-- Question 13 -->
-            <div class="sol-card">
-                <div class="question-header">13. Fill in the blanks.</div>
+                <div class="question-header">10. Fill in the blanks.</div>
                 <div class="sol-body">
                     <div class="sol-step">(i) If two angles are complementary, then the sum of their measures is <span class="ans-highlight">90°</span>.</div>
                     <div class="sol-step">(ii) If two angles are supplementary, then the sum of their measures is <span class="ans-highlight">180°</span>.</div>
@@ -502,9 +361,9 @@ export const c7Math5: ChapterContent = {
                 </div>
             </div>
 
-            <!-- Question 14 -->
+            <!-- Question 11 -->
             <div class="sol-card">
-                <div class="question-header">14. In the adjoining figure, name the following pairs of angles.</div>
+                <div class="question-header">11. In the adjoining figure, name the following pairs of angles.</div>
                 <div class="sol-body">
                     <div class="diagram-container">
                         <svg width="240" height="240" viewBox="0 0 240 240" style="margin:auto; display:block;">
