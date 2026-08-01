@@ -350,17 +350,18 @@ export const c7Math7: ChapterContent = {
 
             <!-- Question 9 -->
             <div class="sol-card">
-                <div class="question-header">9. Meeta saves ₹ 4000 from her salary. If this is 10% of her salary. What is her salary?</div>
+                <div class="question-header">9. Sarita saves Rs 400 from her salary. If this is 10% of her salary. What is her salary?</div>
                 <div class="sol-body">
                     <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Let Meeta's total salary be ₹ x</div>
-                    <div class="sol-step">Given, 10% of x = ₹ 4000</div>
-                    <div class="sol-step"><div class="frac"><span class="num">10</span><span class="den">100</span></div> &times; x = 4000</div>
-                    <div class="sol-step">x = <div class="frac"><span class="num">4000 &times; 100</span><span class="den">10</span></div></div>
-                    <div class="sol-step">x = 4000 &times; 10</div>
-                    <div class="sol-step"><span class="ans-highlight">Meeta's salary = ₹ 40,000</span></div>
+                    <div class="sol-step">Let Sarita's total salary be ₹ x</div>
+                    <div class="sol-step">Given, 10% of x = ₹ 400</div>
+                    <div class="sol-step"><div class="frac"><span class="num">10</span><span class="den">100</span></div> &times; x = 400</div>
+                    <div class="sol-step">x = <div class="frac"><span class="num">400 &times; 100</span><span class="den">10</span></div></div>
+                    <div class="sol-step">x = 400 &times; 10</div>
+                    <div class="sol-step"><span class="ans-highlight">Sarita's salary = ₹ 4,000</span></div>
                 </div>
             </div>
+
 
             <!-- Question 10 -->
             <div class="sol-card">
