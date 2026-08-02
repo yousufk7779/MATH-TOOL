@@ -290,7 +290,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                   ) : (
                     <>
                       <Feather name="share-2" size={18} color="#FFFFFF" style={styles.btnIcon} />
-                      <Text style={styles.actionBtnText}>Share QR Poster</Text>
+                      <Text style={styles.actionBtnText}>Share QR Code</Text>
                     </>
                   )}
                 </LinearGradient>
