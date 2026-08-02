@@ -119,49 +119,51 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Save QR Code PNG Image File DIRECTLY to Gallery (Crash-Proof)
+  // Save QR Code PNG Image File (Gallery save in APK, instant file saver in Expo Go)
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
-
-      // Check if native module binary is present in current build FIRST
-      if (!isMediaLibraryAvailable()) {
-        Alert.alert(
-          "Gallery Save Notice",
-          "Direct 1-tap gallery save requires media library support in standalone APK. Please use 'Share QR' button to save or send the image."
-        );
-        return;
-      }
-
       const fileUri = await getLocalQrFileUri();
+
       if (!fileUri) {
         Alert.alert("Error", "Could not load QR code image file.");
         return;
       }
 
-      const MediaLib = require("expo-media-library");
-      const { status } = await MediaLib.requestPermissionsAsync();
-
-      if (status !== "granted") {
-        Alert.alert(
-          "Permission Required",
-          "Please allow photo gallery permission to save the QR Code to your device."
-        );
-        return;
+      // 1. Direct Gallery Save if MediaLibrary native module exists in APK
+      if (isMediaLibraryAvailable()) {
+        try {
+          const MediaLib = require("expo-media-library");
+          const { status } = await MediaLib.requestPermissionsAsync();
+          if (status === "granted") {
+            const asset = await MediaLib.createAssetAsync(fileUri);
+            if (asset) {
+              Alert.alert("Success 📸", "QR Code saved successfully to your gallery!");
+              return;
+            }
+          }
+        } catch (e) {
+          console.log("Direct MediaLibrary save error:", e);
+        }
       }
 
-      const asset = await MediaLib.createAssetAsync(fileUri);
-      if (asset) {
-        Alert.alert("Success 📸", "QR Code saved successfully to your photo gallery!");
+      // 2. Instant native file saver fallback (No warning dialogs/popups)
+      const isAvailable = await Sharing.isAvailableAsync();
+      if (isAvailable) {
+        await Sharing.shareAsync(fileUri, {
+          mimeType: "image/png",
+          dialogTitle: "Save JIGUU QR Code Image",
+          UTI: "public.png",
+        });
       } else {
-        Alert.alert("Error", "Could not save QR code to gallery.");
+        await Share.share({
+          url: fileUri,
+          title: "JIGUU QR Code",
+        });
       }
     } catch (error: any) {
-      console.error("Error saving QR code to gallery:", error);
-      Alert.alert(
-        "Save Notice",
-        "Direct gallery save is not supported in this environment."
-      );
+      console.error("Error saving QR code:", error);
+      Alert.alert("Error", error?.message || "Failed to save QR Code image.");
     } finally {
       setIsSaving(false);
     }
