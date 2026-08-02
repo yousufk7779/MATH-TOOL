@@ -36,29 +36,45 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
   const [isSharing, setIsSharing] = useState(false);
   const { width } = useWindowDimensions();
 
-  // Helper to ensure a valid file:// URI for sharing/saving
+  // Reset internal state when closing
+  const handleFullClose = () => {
+    setShowQrModal(false);
+    onClose();
+  };
+
+  // Helper to get a reliable file URI for sharing/saving
   const getLocalQrUri = async (): Promise<string> => {
+    try {
+      const resolved = Image.resolveAssetSource(jiguuQrImage);
+      if (resolved && resolved.uri) {
+        if (resolved.uri.startsWith("http") || resolved.uri.startsWith("blob")) {
+          const cacheDir =
+            (FileSystem as any)?.cacheDirectory ||
+            (FileSystem as any)?.documentDirectory ||
+            "";
+          const destination = `${cacheDir}jiguu-qr-code.png`;
+          const fileInfo = await FileSystem.getInfoAsync(destination);
+          if (!fileInfo.exists) {
+            await FileSystem.downloadAsync(resolved.uri, destination);
+          }
+          return destination;
+        }
+        return resolved.uri;
+      }
+    } catch (e) {
+      console.log("Image resolveAssetSource error:", e);
+    }
+
     const asset = Asset.fromModule(jiguuQrImage);
     if (!asset.localUri) {
       await asset.downloadAsync();
     }
-    const localUri = asset.localUri || asset.uri;
-
-    if (localUri.startsWith("http") || localUri.startsWith("blob")) {
-      const cacheDir = (FileSystem as any).cacheDirectory || (FileSystem as any).documentDirectory || "";
-      const destination = `${cacheDir}jiguu-qr-code.png`;
-      const fileInfo = await FileSystem.getInfoAsync(destination);
-      if (!fileInfo.exists) {
-        await FileSystem.downloadAsync(localUri, destination);
-      }
-      return destination;
-    }
-    return localUri;
+    return asset.localUri || asset.uri;
   };
 
-  // Option 1: Share Link (Native Share Sheet with Play Store Link)
+  // Option 1: Share Link (Native Android Share Sheet with Play Store Link)
   const handleShareLink = async () => {
-    onClose();
+    handleFullClose();
     try {
       await Share.share({
         message:
@@ -69,20 +85,23 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     }
   };
 
-  // Option 2: Show QR Code Modal
-  const handleOpenQrModal = () => {
+  // Option 2: Switch view inside modal to QR Code view
+  const handleOpenQrView = () => {
     setShowQrModal(true);
   };
 
-  const handleCloseQrModal = () => {
+  const handleBackToOptions = () => {
     setShowQrModal(false);
-    onClose();
   };
 
   // Save QR Code to Phone Gallery
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
+      if (!MediaLibrary || typeof MediaLibrary.requestPermissionsAsync !== "function") {
+        Alert.alert("Notice", "Gallery save feature is not supported in this environment.");
+        return;
+      }
       const { status } = await MediaLibrary.requestPermissionsAsync();
       if (status !== "granted") {
         Alert.alert(
@@ -114,43 +133,53 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     try {
       setIsSharing(true);
       const localUri = await getLocalQrUri();
-      const isAvailable = await Sharing.isAvailableAsync();
-      if (!isAvailable) {
-        Alert.alert("Error", "Sharing is not supported on this device.");
-        return;
+      if (Sharing && typeof Sharing.isAvailableAsync === "function") {
+        const isAvailable = await Sharing.isAvailableAsync();
+        if (isAvailable) {
+          await Sharing.shareAsync(localUri, {
+            mimeType: "image/png",
+            dialogTitle: "Share JIGUU QR Code",
+            UTI: "public.png",
+          });
+          return;
+        }
       }
-      await Sharing.shareAsync(localUri, {
-        mimeType: "image/png",
-        dialogTitle: "Share JIGUU QR Code",
-        UTI: "public.png",
+      // Fallback
+      await Share.share({
+        url: localUri,
+        title: "JIGUU QR Code",
+        message: "Scan to install JIGUU App!",
       });
     } catch (error: any) {
       console.error("Error sharing QR image:", error);
-      Alert.alert("Error", "Failed to share QR Code.");
+      Alert.alert("Error", error?.message || "Failed to share QR Code.");
     } finally {
       setIsSharing(false);
     }
   };
 
-  // Size calculations for responsive layout
+  // Responsive size for QR Image
   const qrSize = Math.min(width * 0.65, 260);
 
+  if (!visible) return null;
+
   return (
-    <>
-      {/* 1. Share Options Bottom Sheet Modal */}
-      <Modal
-        visible={visible && !showQrModal}
-        transparent
-        animationType="fade"
-        onRequestClose={onClose}
-      >
-        <Pressable style={styles.overlay} onPress={onClose}>
+    <Modal
+      visible={visible}
+      transparent={!showQrModal}
+      animationType={showQrModal ? "slide" : "fade"}
+      onRequestClose={showQrModal ? handleBackToOptions : handleFullClose}
+      statusBarTranslucent
+    >
+      {!showQrModal ? (
+        /* 1. Share Options Bottom Sheet */
+        <Pressable style={styles.overlay} onPress={handleFullClose}>
           <Pressable style={styles.optionsContainer} onPress={(e) => e.stopPropagation()}>
             <View style={styles.handleBar} />
 
             <Text style={styles.optionsTitle}>Share JIGUU</Text>
             <Text style={styles.optionsSubtitle}>
-              Choose how you want to share JIGUU app with others
+              Choose how you want to share JIGUU app
             </Text>
 
             <View style={styles.optionsList}>
@@ -185,7 +214,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                   styles.optionCard,
                   pressed && styles.optionCardPressed,
                 ]}
-                onPress={handleOpenQrModal}
+                onPress={handleOpenQrView}
               >
                 <LinearGradient
                   colors={["#E91E63", "#FF4081"]}
@@ -206,20 +235,13 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
             </View>
 
             {/* Cancel Button */}
-            <Pressable style={styles.cancelButton} onPress={onClose}>
+            <Pressable style={styles.cancelButton} onPress={handleFullClose}>
               <Text style={styles.cancelButtonText}>Cancel</Text>
             </Pressable>
           </Pressable>
         </Pressable>
-      </Modal>
-
-      {/* 2. Show QR Code Screen / Modal (White Background) */}
-      <Modal
-        visible={showQrModal}
-        transparent={false}
-        animationType="slide"
-        onRequestClose={handleCloseQrModal}
-      >
+      ) : (
+        /* 2. Show QR Code View (White Background) */
         <View style={styles.qrScreenBackground}>
           <ScrollView
             contentContainerStyle={styles.qrScrollContent}
@@ -311,7 +333,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                   styles.closeOutlineButton,
                   pressed && styles.buttonPressed,
                 ]}
-                onPress={handleCloseQrModal}
+                onPress={handleFullClose}
               >
                 <Feather name="x" size={18} color="#4A4A68" style={styles.btnIcon} />
                 <Text style={styles.closeBtnText}>Close</Text>
@@ -319,8 +341,8 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
             </View>
           </ScrollView>
         </View>
-      </Modal>
-    </>
+      )}
+    </Modal>
   );
 };
 
