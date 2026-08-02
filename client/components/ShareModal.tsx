@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   StyleSheet,
   View,
@@ -18,6 +18,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Asset } from "expo-asset";
 import * as FileSystem from "expo-file-system";
 import * as Sharing from "expo-sharing";
+import { captureRef } from "react-native-view-shot";
 
 import { JiguuColors, Spacing, BorderRadius } from "@/constants/theme";
 
@@ -33,6 +34,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
   const [showQrModal, setShowQrModal] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
   const { width } = useWindowDimensions();
+  const posterRef = useRef<View>(null);
 
   // Reset internal state when closing
   const handleFullClose = () => {
@@ -40,7 +42,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     onClose();
   };
 
-  // Safe helper to obtain a valid local file URI for the QR asset
+  // Helper to obtain fallback local QR image URI
   const getLocalQrFileUri = async (): Promise<string> => {
     try {
       const asset = Asset.fromModule(jiguuQrImage);
@@ -96,34 +98,53 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Share QR Code PNG Image File via Native Share Sheet
+  // Share Full Poster Image (Logo + Tagline + QR Code + Scan Title)
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
-      const fileUri = await getLocalQrFileUri();
+      let shareUri = "";
 
-      if (!fileUri) {
-        Alert.alert("Error", "Could not load QR code image file.");
+      // 1. Try capturing poster view snapshot
+      if (posterRef.current) {
+        try {
+          shareUri = await captureRef(posterRef, {
+            format: "png",
+            quality: 1.0,
+            result: "tmpfile",
+          });
+        } catch (captureErr) {
+          console.log("Poster captureRef error, falling back to QR asset:", captureErr);
+        }
+      }
+
+      // 2. Fallback to direct local QR image if capture failed
+      if (!shareUri) {
+        shareUri = await getLocalQrFileUri();
+      }
+
+      if (!shareUri) {
+        Alert.alert("Error", "Could not prepare poster image for sharing.");
         return;
       }
 
+      // 3. Trigger native share sheet with PNG poster
       const isAvailable = await Sharing.isAvailableAsync();
       if (isAvailable) {
-        await Sharing.shareAsync(fileUri, {
+        await Sharing.shareAsync(shareUri, {
           mimeType: "image/png",
-          dialogTitle: "Share JIGUU QR Code Image",
+          dialogTitle: "Share JIGUU Poster",
           UTI: "public.png",
         });
       } else {
         await Share.share({
-          url: fileUri,
-          title: "JIGUU QR Code",
+          url: shareUri,
+          title: "JIGUU Poster",
           message: "Scan to install JIGUU App!",
         });
       }
     } catch (error: any) {
-      console.error("Error sharing QR image:", error);
-      Alert.alert("Error", error?.message || "Failed to share QR Code image.");
+      console.error("Error sharing poster image:", error);
+      Alert.alert("Error", error?.message || "Failed to share poster image.");
     } finally {
       setIsSharing(false);
     }
@@ -198,7 +219,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                 <View style={styles.optionTextContent}>
                   <Text style={styles.optionTitle}>Show QR Code</Text>
                   <Text style={styles.optionDesc}>
-                    Display or share official JIGUU QR Code
+                    Display or share official JIGUU Poster & QR Code
                   </Text>
                 </View>
                 <Feather name="chevron-right" size={20} color={JiguuColors.textSecondary} />
@@ -212,41 +233,44 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           </Pressable>
         </Pressable>
       ) : (
-        /* 2. Show QR Code View (JIGUU Dark Theme Background for perfect white logo visibility) */
+        /* 2. Show QR Code & Poster View (Captured as full poster image when sharing) */
         <View style={styles.qrScreenBackground}>
           <ScrollView
             contentContainerStyle={styles.qrScrollContent}
             showsVerticalScrollIndicator={false}
           >
-            {/* Header: JIGUU Logo with Tagline directly below */}
-            <View style={styles.qrHeaderContainer}>
-              <Image
-                source={jiguuLogoImage}
-                style={styles.jiguuLogo}
-                resizeMode="contain"
-              />
-              <Text style={styles.taglineText}>
-                Learn Smart <Text style={styles.taglineDot}>•</Text> Study Smarter
-              </Text>
-            </View>
+            {/* Captured Poster Container (Logo + Tagline + QR + Scan Text) */}
+            <View ref={posterRef} collapsable={false} style={styles.posterContainer}>
+              {/* Header: JIGUU Logo & Tagline */}
+              <View style={styles.qrHeaderContainer}>
+                <Image
+                  source={jiguuLogoImage}
+                  style={styles.jiguuLogo}
+                  resizeMode="contain"
+                />
+                <Text style={styles.taglineText}>
+                  Learn Smart <Text style={styles.taglineDot}>•</Text> Study Smarter
+                </Text>
+              </View>
 
-            {/* Center: Large QR Image inside crisp white card */}
-            <View style={styles.qrImageWrapper}>
-              <Image
-                source={jiguuQrImage}
-                style={[styles.qrImage, { width: qrSize, height: qrSize }]}
-                resizeMode="contain"
-              />
-            </View>
+              {/* Center: Large QR Image inside crisp white card */}
+              <View style={styles.qrImageWrapper}>
+                <Image
+                  source={jiguuQrImage}
+                  style={[styles.qrImage, { width: qrSize, height: qrSize }]}
+                  resizeMode="contain"
+                />
+              </View>
 
-            {/* Sub-title directly below QR Code */}
-            <View style={styles.scanTitleContainer}>
-              <Text style={styles.scanTitle}>Scan to Install JIGUU</Text>
+              {/* Sub-title directly below QR Code */}
+              <View style={styles.scanTitleContainer}>
+                <Text style={styles.scanTitle}>Scan to Install JIGUU</Text>
+              </View>
             </View>
 
             {/* Buttons Section */}
             <View style={styles.qrButtonsContainer}>
-              {/* Share QR Button */}
+              {/* Share QR Poster Button */}
               <Pressable
                 style={({ pressed }) => [
                   styles.primaryActionButton,
@@ -266,7 +290,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                   ) : (
                     <>
                       <Feather name="share-2" size={18} color="#FFFFFF" style={styles.btnIcon} />
-                      <Text style={styles.actionBtnText}>Share QR</Text>
+                      <Text style={styles.actionBtnText}>Share QR Poster</Text>
                     </>
                   )}
                 </LinearGradient>
@@ -383,7 +407,7 @@ const styles = StyleSheet.create({
     color: JiguuColors.textSecondary,
   },
 
-  // QR Screen Styles (JIGUU Dark Theme Background for perfect white logo visibility)
+  // QR Screen Styles
   qrScreenBackground: {
     flex: 1,
     backgroundColor: JiguuColors.background, // #0B0F1A Navy Dark
@@ -394,6 +418,18 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: Spacing.xl,
     paddingVertical: Spacing["2xl"],
+  },
+
+  // Poster Layout Container (Captured by captureRef)
+  posterContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: JiguuColors.background,
+    paddingVertical: Spacing.lg,
+    paddingHorizontal: Spacing.md,
+    borderRadius: 24,
+    width: "100%",
+    marginBottom: Spacing.xl,
   },
   qrHeaderContainer: {
     alignItems: "center",
@@ -433,7 +469,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   scanTitleContainer: {
-    marginBottom: Spacing.xl,
+    marginBottom: 4,
   },
   scanTitle: {
     fontSize: 20,
