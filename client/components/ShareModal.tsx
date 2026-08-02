@@ -16,14 +16,36 @@ import {
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { Asset } from "expo-asset";
-import * as FileSystem from "expo-file-system";
-import * as Sharing from "expo-sharing";
-import * as MediaLibrary from "expo-media-library";
 
 import { JiguuColors, Spacing, BorderRadius } from "@/constants/theme";
 
 const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
 const jiguuQrImage = require("../../assets/images/jiguu-qr-code.png");
+
+// Safe runtime require helpers for optional native modules
+const getMediaLibraryModule = () => {
+  try {
+    return require("expo-media-library");
+  } catch (e) {
+    return null;
+  }
+};
+
+const getSharingModule = () => {
+  try {
+    return require("expo-sharing");
+  } catch (e) {
+    return null;
+  }
+};
+
+const getFileSystemModule = () => {
+  try {
+    return require("expo-file-system");
+  } catch (e) {
+    return null;
+  }
+};
 
 interface ShareModalProps {
   visible: boolean;
@@ -48,16 +70,16 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
       const resolved = Image.resolveAssetSource(jiguuQrImage);
       if (resolved && resolved.uri) {
         if (resolved.uri.startsWith("http") || resolved.uri.startsWith("blob")) {
-          const cacheDir =
-            (FileSystem as any)?.cacheDirectory ||
-            (FileSystem as any)?.documentDirectory ||
-            "";
-          const destination = `${cacheDir}jiguu-qr-code.png`;
-          const fileInfo = await FileSystem.getInfoAsync(destination);
-          if (!fileInfo.exists) {
-            await FileSystem.downloadAsync(resolved.uri, destination);
+          const FileSystem = getFileSystemModule();
+          if (FileSystem) {
+            const cacheDir = FileSystem.cacheDirectory || FileSystem.documentDirectory || "";
+            const destination = `${cacheDir}jiguu-qr-code.png`;
+            const fileInfo = await FileSystem.getInfoAsync(destination);
+            if (!fileInfo.exists) {
+              await FileSystem.downloadAsync(resolved.uri, destination);
+            }
+            return destination;
           }
-          return destination;
         }
         return resolved.uri;
       }
@@ -65,11 +87,16 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
       console.log("Image resolveAssetSource error:", e);
     }
 
-    const asset = Asset.fromModule(jiguuQrImage);
-    if (!asset.localUri) {
-      await asset.downloadAsync();
+    try {
+      const asset = Asset.fromModule(jiguuQrImage);
+      if (!asset.localUri) {
+        await asset.downloadAsync();
+      }
+      return asset.localUri || asset.uri;
+    } catch (e) {
+      console.log("Asset.fromModule error:", e);
+      return "";
     }
-    return asset.localUri || asset.uri;
   };
 
   // Option 1: Share Link (Native Android Share Sheet with Play Store Link)
@@ -98,11 +125,15 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
-      if (!MediaLibrary || typeof MediaLibrary.requestPermissionsAsync !== "function") {
-        Alert.alert("Notice", "Gallery save feature is not supported in this environment.");
+      const MediaLib = getMediaLibraryModule();
+      if (!MediaLib || typeof MediaLib.requestPermissionsAsync !== "function") {
+        Alert.alert(
+          "Notice",
+          "Gallery save feature requires a native rebuild with expo-media-library."
+        );
         return;
       }
-      const { status } = await MediaLibrary.requestPermissionsAsync();
+      const { status } = await MediaLib.requestPermissionsAsync();
       if (status !== "granted") {
         Alert.alert(
           "Permission Required",
@@ -111,7 +142,11 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
         return;
       }
       const localUri = await getLocalQrUri();
-      const asset = await MediaLibrary.createAssetAsync(localUri);
+      if (!localUri) {
+        Alert.alert("Error", "Could not locate QR code image file.");
+        return;
+      }
+      const asset = await MediaLib.createAssetAsync(localUri);
       if (asset) {
         Alert.alert("Success", "QR Code saved successfully.");
       } else {
@@ -133,18 +168,25 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     try {
       setIsSharing(true);
       const localUri = await getLocalQrUri();
-      if (Sharing && typeof Sharing.isAvailableAsync === "function") {
-        const isAvailable = await Sharing.isAvailableAsync();
-        if (isAvailable) {
-          await Sharing.shareAsync(localUri, {
-            mimeType: "image/png",
-            dialogTitle: "Share JIGUU QR Code",
-            UTI: "public.png",
-          });
-          return;
+      const SharingModule = getSharingModule();
+
+      if (SharingModule && typeof SharingModule.isAvailableAsync === "function") {
+        try {
+          const isAvailable = await SharingModule.isAvailableAsync();
+          if (isAvailable && localUri) {
+            await SharingModule.shareAsync(localUri, {
+              mimeType: "image/png",
+              dialogTitle: "Share JIGUU QR Code",
+              UTI: "public.png",
+            });
+            return;
+          }
+        } catch (e) {
+          console.log("Expo sharing module error, falling back:", e);
         }
       }
-      // Fallback
+
+      // Fallback to core React Native Share
       await Share.share({
         url: localUri,
         title: "JIGUU QR Code",
