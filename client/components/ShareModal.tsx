@@ -97,7 +97,59 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Share QR Code PNG Image File
+  // Save QR Code PNG Image File DIRECTLY to Gallery (No share sheet)
+  const handleSaveQr = async () => {
+    try {
+      setIsSaving(true);
+      const fileUri = await getLocalQrFileUri();
+
+      if (!fileUri) {
+        Alert.alert("Error", "Could not load QR code image file.");
+        return;
+      }
+
+      let MediaLib: any = null;
+      try {
+        MediaLib = require("expo-media-library");
+      } catch (e) {
+        MediaLib = null;
+      }
+
+      if (!MediaLib || typeof MediaLib.requestPermissionsAsync !== "function") {
+        Alert.alert(
+          "Notice",
+          "Direct gallery save requires expo-media-library native module in your app build."
+        );
+        return;
+      }
+
+      const { status } = await MediaLib.requestPermissionsAsync();
+      if (status !== "granted") {
+        Alert.alert(
+          "Permission Required",
+          "Please allow photo gallery permission to save the QR Code to your device."
+        );
+        return;
+      }
+
+      const asset = await MediaLib.createAssetAsync(fileUri);
+      if (asset) {
+        Alert.alert("Success 📸", "QR Code saved successfully to your gallery!");
+      } else {
+        Alert.alert("Error", "Could not save QR code to gallery.");
+      }
+    } catch (error: any) {
+      console.error("Error saving QR code to gallery:", error);
+      Alert.alert(
+        "Save Error",
+        error?.message || "Failed to save QR Code to gallery."
+      );
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  // Share QR Code PNG Image File via Native Share Sheet (WhatsApp, Telegram, etc.)
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
@@ -127,62 +179,6 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
       Alert.alert("Error", error?.message || "Failed to share QR Code image.");
     } finally {
       setIsSharing(false);
-    }
-  };
-
-  // Save QR Code PNG Image File
-  const handleSaveQr = async () => {
-    try {
-      setIsSaving(true);
-      const fileUri = await getLocalQrFileUri();
-
-      if (!fileUri) {
-        Alert.alert("Error", "Could not load QR code image file.");
-        return;
-      }
-
-      // Try MediaLibrary if natively present in current binary
-      let MediaLib: any = null;
-      try {
-        MediaLib = require("expo-media-library");
-      } catch (e) {
-        MediaLib = null;
-      }
-
-      if (MediaLib && typeof MediaLib.requestPermissionsAsync === "function") {
-        try {
-          const { status } = await MediaLib.requestPermissionsAsync();
-          if (status === "granted") {
-            const asset = await MediaLib.createAssetAsync(fileUri);
-            if (asset) {
-              Alert.alert("Success", "QR Code saved successfully to gallery.");
-              return;
-            }
-          }
-        } catch (e) {
-          console.log("MediaLibrary save error:", e);
-        }
-      }
-
-      // Fallback: Open native share / save intent directly
-      const isAvailable = await Sharing.isAvailableAsync();
-      if (isAvailable) {
-        await Sharing.shareAsync(fileUri, {
-          mimeType: "image/png",
-          dialogTitle: "Save / Download JIGUU QR Code Image",
-          UTI: "public.png",
-        });
-      } else {
-        await Share.share({
-          url: fileUri,
-          title: "JIGUU QR Code",
-        });
-      }
-    } catch (error: any) {
-      console.error("Error saving QR code:", error);
-      Alert.alert("Error", error?.message || "Failed to save QR Code image.");
-    } finally {
-      setIsSaving(false);
     }
   };
 
