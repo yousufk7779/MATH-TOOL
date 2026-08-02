@@ -4,410 +4,1482 @@ export const mathCh1: ChapterContent = {
   id: "ch1",
   number: 1,
   title: "Real Numbers",
-  isHtmlView: true,
-  introduction:
-    "Real numbers constitute the foundation of mathematics. Every number that can be plotted on a number line is a real number. This chapter covers prime factorisation, HCF and LCM relationships, and proofs of irrationality.",
+  introduction: "Real numbers constitute the foundation of mathematics. Every number that can be plotted on a number line is a real number. This chapter covers properties of integers, rational, and irrational numbers.",
   definitions: [
-    { term: "Real Numbers (R)", description: "The set of all rational and irrational numbers." },
-    { term: "Fundamental Theorem of Arithmetic", description: "Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique apart from the order of prime factors." },
-    { term: "Prime Factorisation", description: "Finding prime numbers that multiply together to make the original number." },
-    { term: "Irrational Number", description: "A number that cannot be written in the form p/q, where p and q are integers and q ≠ 0." }
-  ],
-  keyPoints: [
-    "HCF(a, b) × LCM(a, b) = a × b for any two positive integers a and b.",
-    "If p is a prime number and p divides a², then p divides a, where a is a positive integer.",
-    "Method of Contradiction: A standard technique used to prove irrationality of numbers like √2, √3, and √5."
-  ],
-  formulas: [
-    { name: "HCF and LCM Relation", formula: "\text{HCF}(a, b) \times \text{LCM}(a, b) = a \times b" }
-  ],
-  crux: [],
-  exercises: [
-    { id: "ex1-1", name: "Exercise 1.1", questions: [] },
-    { id: "ex1-2", name: "Exercise 1.2", questions: [] }
-  ],
-  htmlOverview: `
-        <style>
-            .overview-container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .section-title { color: #42A5F5; font-size: 1.4em; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
-            .content-text { line-height: 1.8; font-size: 1.05em; color: #E0E0E0; text-align: justify; }
-            .point-box { background: rgba(66, 165, 245, 0.05); border-left: 4px solid #42A5F5; padding: 15px; margin-top: 20px; border-radius: 0 12px 12px 0; }
-            .point-item { margin-bottom: 10px; list-style: none; display: flex; align-items: flex-start; text-align: justify; }
-            .point-item::before { content: '•'; color: #42A5F5; font-weight: bold; margin-right: 10px; font-size: 1.2em; }
-        </style>
-        <div class="overview-container">
-            <div class="section-title">Chapter Overview: Real Numbers</div>
-            <p class="content-text">Master the Fundamental Theorem of Arithmetic, prime factorisation techniques, HCF and LCM relationships, and proof of irrationality for Class 10 Board Examinations.</p>
-            <div class="point-box">
-                <div class="point-item">Fundamental Theorem of Arithmetic: Unique prime factorisation of every composite integer.</div>
-                <div class="point-item">HCF & LCM: Product rule HCF(a, b) × LCM(a, b) = a × b for two numbers.</div>
-                <div class="point-item">Irrationality Proofs: Stepwise contradiction method for √5, 3 + 2√5, etc.</div>
-            </div>
-        </div>
-    `,
-  htmlExercises: {
-    "ex1-1": `
-        <style>
-            .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #42A5F5; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-            .question-header { padding: 15px; color: #42A5F5; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
-            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
-            .ans-highlight { color: #90CAF9; font-weight: bold; }
-            .sol-body b, .subpart-title, .sol-step b { color: #42A5F5; font-weight: bold; }
-            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
-            .frac .num { border-bottom: 1.5px solid #90CAF9; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
-            .svg-container { text-align: center; margin: 15px auto; background: #1a1a2e; padding: 15px; border-radius: 10px; border: 1px solid #42A5F5; overflow-x: auto; }
-            .svg-container svg { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-            .table-responsive { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 15px 0; border: 1px solid rgba(66, 165, 245, 0.3); border-radius: 10px; background: #161625; padding: 10px; }
-            table { width: 100%; border-collapse: collapse; margin: 5px 0; }
-            th, td { border: 1px solid rgba(66, 165, 245, 0.3); padding: 10px 12px; text-align: left; color: #e0e0e0; }
-            th { background: rgba(66, 165, 245, 0.15); color: #42A5F5; font-weight: bold; }
-        </style>
-        <div class="container">
-            <!-- Question 1 -->
-            <div class="sol-card">
-                <div class="question-header">1. Express each number as a product of its prime factors:</div>
-                <div class="sol-body">
-                    <!-- Q1 (i) -->
-                    <div class="sol-step"><b style="color:#42A5F5;">(i) 140</b></div>
-                    <div class="svg-container">
-                        <svg width="220" height="140" viewBox="0 0 220 140">
-                            <!-- Factor Tree for 140 -->
-                            <circle cx="110" cy="20" r="16" fill="rgba(66, 165, 245, 0.2)" stroke="#42A5F5" stroke-width="2"/>
-                            <text x="110" y="25" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">140</text>
-                            
-                            <line x1="95" y1="33" x2="60" y2="55" stroke="#42A5F5" stroke-width="1.5"/>
-                            <line x1="125" y1="33" x2="160" y2="55" stroke="#42A5F5" stroke-width="1.5"/>
-
-                            <circle cx="60" cy="65" r="14" fill="#42A5F5"/>
-                            <text x="60" y="70" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">2</text>
-                            
-                            <circle cx="160" cy="65" r="14" fill="rgba(66, 165, 245, 0.2)" stroke="#42A5F5" stroke-width="2"/>
-                            <text x="160" y="70" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">70</text>
-
-                            <line x1="150" y1="77" x2="125" y2="98" stroke="#42A5F5" stroke-width="1.5"/>
-                            <line x1="170" y1="77" x2="190" y2="98" stroke="#42A5F5" stroke-width="1.5"/>
-
-                            <circle cx="125" cy="110" r="14" fill="#42A5F5"/>
-                            <text x="125" y="115" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">2</text>
-
-                            <circle cx="190" cy="110" r="14" fill="rgba(66, 165, 245, 0.2)" stroke="#42A5F5" stroke-width="2"/>
-                            <text x="190" y="115" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">35</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">140 &divide; 2 = 70</div>
-                    <div class="sol-step">70 &divide; 2 = 35</div>
-                    <div class="sol-step">35 &divide; 5 = 7</div>
-                    <div class="sol-step">7 &divide; 7 = 1</div>
-                    <div class="sol-step">140 = 2 &times; 2 &times; 5 &times; 7</div>
-                    <div class="sol-step"><span class="ans-highlight">= 2&sup2; &times; 5 &times; 7</span></div>
-
-                    <!-- Q1 (ii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(ii) 156</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">156 &divide; 2 = 78</div>
-                    <div class="sol-step">78 &divide; 2 = 39</div>
-                    <div class="sol-step">39 &divide; 3 = 13</div>
-                    <div class="sol-step">13 &divide; 13 = 1</div>
-                    <div class="sol-step">156 = 2 &times; 2 &times; 3 &times; 13</div>
-                    <div class="sol-step"><span class="ans-highlight">= 2&sup2; &times; 3 &times; 13</span></div>
-
-                    <!-- Q1 (iii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(iii) 3825</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">3825 &divide; 3 = 1275</div>
-                    <div class="sol-step">1275 &divide; 3 = 425</div>
-                    <div class="sol-step">425 &divide; 5 = 85</div>
-                    <div class="sol-step">85 &divide; 5 = 17</div>
-                    <div class="sol-step">17 &divide; 17 = 1</div>
-                    <div class="sol-step">3825 = 3 &times; 3 &times; 5 &times; 5 &times; 17</div>
-                    <div class="sol-step"><span class="ans-highlight">= 3&sup2; &times; 5&sup2; &times; 17</span></div>
-
-                    <!-- Q1 (iv) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(iv) 5005</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">5005 &divide; 5 = 1001</div>
-                    <div class="sol-step">1001 &divide; 7 = 143</div>
-                    <div class="sol-step">143 &divide; 11 = 13</div>
-                    <div class="sol-step">13 &divide; 13 = 1</div>
-                    <div class="sol-step"><span class="ans-highlight">5005 = 5 &times; 7 &times; 11 &times; 13</span></div>
-
-                    <!-- Q1 (v) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(v) 7429</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">7429 &divide; 17 = 437</div>
-                    <div class="sol-step">437 &divide; 19 = 23</div>
-                    <div class="sol-step">23 &divide; 23 = 1</div>
-                    <div class="sol-step"><span class="ans-highlight">7429 = 17 &times; 19 &times; 23</span></div>
-                </div>
-            </div>
-
-            <!-- Question 2 -->
-            <div class="sol-card">
-                <div class="question-header">2. Find the LCM and HCF of the following pairs of integers and verify that LCM &times; HCF = product of the two numbers:</div>
-                <div class="sol-body">
-                    <!-- Q2 (i) -->
-                    <div class="sol-step"><b style="color:#42A5F5;">(i) 26 and 91</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">Prime factorisation of 26 = 2 &times; 13</div>
-                    <div class="sol-step">Prime factorisation of 91 = 7 &times; 13</div>
-                    <div class="sol-step">HCF(26, 91) = <span class="ans-highlight">13</span></div>
-                    <div class="sol-step">LCM(26, 91) = 2 &times; 7 &times; 13 = <span class="ans-highlight">182</span></div>
-                    <div class="sol-step"><b>Verification:</b></div>
-                    <div class="sol-step">HCF &times; LCM = 13 &times; 182 = 2366</div>
-                    <div class="sol-step">Product of numbers = 26 &times; 91 = 2366</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, HCF &times; LCM = Product of two numbers (Verified).</span></div>
-
-                    <!-- Q2 (ii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(ii) 510 and 92</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">510 = 2 &times; 3 &times; 5 &times; 17</div>
-                    <div class="sol-step">92 = 2&sup2; &times; 23</div>
-                    <div class="sol-step">HCF(510, 92) = <span class="ans-highlight">2</span></div>
-                    <div class="sol-step">LCM(510, 92) = 2&sup2; &times; 3 &times; 5 &times; 17 &times; 23 = <span class="ans-highlight">23460</span></div>
-                    <div class="sol-step"><b>Verification:</b></div>
-                    <div class="sol-step">HCF &times; LCM = 2 &times; 23460 = 46920</div>
-                    <div class="sol-step">Product of numbers = 510 &times; 92 = 46920</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, HCF &times; LCM = Product of two numbers (Verified).</span></div>
-
-                    <!-- Q2 (iii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(iii) 336 and 54</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">336 = 2⁴ &times; 3 &times; 7</div>
-                    <div class="sol-step">54 = 2 &times; 3&sup3;</div>
-                    <div class="sol-step">HCF(336, 54) = 2 &times; 3 = <span class="ans-highlight">6</span></div>
-                    <div class="sol-step">LCM(336, 54) = 2⁴ &times; 3&sup3; &times; 7 = 16 &times; 27 &times; 7 = <span class="ans-highlight">3024</span></div>
-                    <div class="sol-step"><b>Verification:</b></div>
-                    <div class="sol-step">HCF &times; LCM = 6 &times; 3024 = 18144</div>
-                    <div class="sol-step">Product of numbers = 336 &times; 54 = 18144</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, HCF &times; LCM = Product of two numbers (Verified).</span></div>
-                </div>
-            </div>
-
-            <!-- Question 3 -->
-            <div class="sol-card">
-                <div class="question-header">3. Find the LCM and HCF of the following integers by applying the prime factorisation method:</div>
-                <div class="sol-body">
-                    <!-- Q3 (i) -->
-                    <div class="sol-step"><b style="color:#42A5F5;">(i) 12, 15 and 21</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">12 = 2&sup2; &times; 3</div>
-                    <div class="sol-step">15 = 3 &times; 5</div>
-                    <div class="sol-step">21 = 3 &times; 7</div>
-                    <div class="sol-step">Common factor: 3</div>
-                    <div class="sol-step"><span class="ans-highlight">HCF = 3</span></div>
-                    <div class="sol-step">LCM = 2&sup2; &times; 3 &times; 5 &times; 7 = 4 &times; 3 &times; 5 &times; 7</div>
-                    <div class="sol-step"><span class="ans-highlight">LCM = 420</span></div>
-
-                    <!-- Q3 (ii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(ii) 17, 23 and 29</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">17, 23, and 29 are all prime numbers.</div>
-                    <div class="sol-step">17 = 1 &times; 17</div>
-                    <div class="sol-step">23 = 1 &times; 23</div>
-                    <div class="sol-step">29 = 1 &times; 29</div>
-                    <div class="sol-step"><span class="ans-highlight">HCF = 1</span></div>
-                    <div class="sol-step">LCM = 17 &times; 23 &times; 29</div>
-                    <div class="sol-step"><span class="ans-highlight">LCM = 11339</span></div>
-
-                    <!-- Q3 (iii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(iii) 8, 9 and 25</b></div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">8 = 2&sup3;</div>
-                    <div class="sol-step">9 = 3&sup2;</div>
-                    <div class="sol-step">25 = 5&sup2;</div>
-                    <div class="sol-step">No common prime factor other than 1:</div>
-                    <div class="sol-step"><span class="ans-highlight">HCF = 1</span></div>
-                    <div class="sol-step">LCM = 2&sup3; &times; 3&sup2; &times; 5&sup2; = 8 &times; 9 &times; 25</div>
-                    <div class="sol-step"><span class="ans-highlight">LCM = 1800</span></div>
-                </div>
-            </div>
-
-            <!-- Question 4 -->
-            <div class="sol-card">
-                <div class="question-header">4. Given that HCF(306, 657) = 9, find LCM(306, 657):</div>
-                <div class="sol-body">
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">We know the relationship:</div>
-                    <div class="sol-step">HCF(a, b) &times; LCM(a, b) = a &times; b</div>
-                    <div class="sol-step">9 &times; LCM(306, 657) = 306 &times; 657</div>
-                    <div class="sol-step">LCM(306, 657) = <div class="frac"><span class="num">306 &times; 657</span><span class="den">9</span></div></div>
-                    <div class="sol-step">306 &divide; 9 = 34</div>
-                    <div class="sol-step">LCM(306, 657) = 34 &times; 657</div>
-                    <div class="sol-step"><span class="ans-highlight">LCM(306, 657) = 22338</span></div>
-                </div>
-            </div>
-
-            <!-- Question 5 -->
-            <div class="sol-card">
-                <div class="question-header">5. Check whether 6ⁿ can end with the digit 0 for any natural number n:</div>
-                <div class="sol-body">
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">1. If any number ends with digit 0, it must be divisible by 10 (which means divisible by both 2 and 5).</div>
-                    <div class="sol-step">2. Prime factorisation of 6ⁿ:</div>
-                    <div class="sol-step">6ⁿ = (2 &times; 3)ⁿ = 2ⁿ &times; 3ⁿ</div>
-                    <div class="sol-step">3. The prime factorisation of 6ⁿ contains only the prime numbers 2 and 3.</div>
-                    <div class="sol-step">4. By Fundamental Theorem of Arithmetic, this prime factorisation is unique.</div>
-                    <div class="sol-step">5. Since prime factor 5 is missing in 6ⁿ:</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, 6ⁿ can never end with digit 0 for any natural number n.</span></div>
-                </div>
-            </div>
-
-            <!-- Question 6 -->
-            <div class="sol-card">
-                <div class="question-header">6. Explain why 7 &times; 11 &times; 13 + 13 and 7 &times; 6 &times; 5 &times; 4 &times; 3 &times; 2 &times; 1 + 5 are composite numbers:</div>
-                <div class="sol-body">
-                    <div class="sol-step"><b style="color:#42A5F5;">Part 1: 7 &times; 11 &times; 13 + 13</b></div>
-                    <div class="sol-step">Taking common factor 13:</div>
-                    <div class="sol-step">= 13 &times; (7 &times; 11 + 1)</div>
-                    <div class="sol-step">= 13 &times; (77 + 1)</div>
-                    <div class="sol-step">= 13 &times; 78</div>
-                    <div class="sol-step">= 13 &times; (2 &times; 3 &times; 13)</div>
-                    <div class="sol-step">Since this expression has factors other than 1 and itself, <span class="ans-highlight">it is a composite number</span>.</div>
-
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">Part 2: 7 &times; 6 &times; 5 &times; 4 &times; 3 &times; 2 &times; 1 + 5</b></div>
-                    <div class="sol-step">Taking common factor 5:</div>
-                    <div class="sol-step">= 5 &times; (7 &times; 6 &times; 4 &times; 3 &times; 2 &times; 1 + 1)</div>
-                    <div class="sol-step">= 5 &times; (1008 + 1)</div>
-                    <div class="sol-step">= 5 &times; 1009</div>
-                    <div class="sol-step">Since this expression has factors 5 and 1009 other than 1 and itself, <span class="ans-highlight">it is a composite number</span>.</div>
-                </div>
-            </div>
-
-            <!-- Question 7 -->
-            <div class="sol-card">
-                <div class="question-header">7. There is a circular path around a sports field. Sonia takes 18 minutes to drive one round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point?</div>
-                <div class="sol-body">
-                    <div class="svg-container">
-                        <svg width="200" height="150" viewBox="0 0 200 150">
-                            <!-- Circular Track -->
-                            <circle cx="100" cy="75" r="55" fill="none" stroke="#42A5F5" stroke-width="4"/>
-                            <circle cx="100" cy="75" r="40" fill="none" stroke="rgba(66,165,245,0.2)" stroke-width="1.5"/>
-                            <!-- Starting point -->
-                            <circle cx="100" cy="20" r="5" fill="#FF5252"/>
-                            <text x="100" y="12" fill="#FFE082" font-size="11" font-weight="bold" text-anchor="middle">Start Point</text>
-                            <text x="100" y="70" fill="#42A5F5" font-size="11" font-weight="bold" text-anchor="middle">Sonia: 18 min</text>
-                            <text x="100" y="85" fill="#90CAF9" font-size="11" text-anchor="middle">Ravi: 12 min</text>
-                        </svg>
-                    </div>
-                    <div class="sol-step">Solution:-</div>
-                    <div class="sol-step">To find the time when they meet again at the starting point, we calculate the <b>LCM of 18 and 12</b>.</div>
-                    <div class="sol-step">Prime factorisation of 18 = 2 &times; 3&sup2;</div>
-                    <div class="sol-step">Prime factorisation of 12 = 2&sup2; &times; 3</div>
-                    <div class="sol-step">LCM(18, 12) = 2&sup2; &times; 3&sup2; = 4 &times; 9 = <span class="ans-highlight">36</span></div>
-                    <div class="sol-step"><span class="ans-highlight">They will meet again at the starting point after 36 minutes.</span></div>
-                </div>
-            </div>
-        </div>
-    `,
-    "ex1-2": `
-        <style>
-            .container { padding: 15px; color: #fff; font-family: 'Inter', sans-serif; background: #121212; }
-            .sol-card { background: #1E1E2E; border-radius: 12px; border-left: 5px solid #42A5F5; margin-bottom: 25px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-            .question-header { padding: 15px; color: #42A5F5; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.05); line-height: 1.6; text-align: justify; }
-            .sol-body { padding: 18px; line-height: 1.8; text-align: justify; }
-            .sol-step { margin-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 6px; text-align: justify; word-break: break-word; overflow-wrap: break-word; }
-            .ans-highlight { color: #90CAF9; font-weight: bold; }
-            .sol-body b, .subpart-title, .sol-step b { color: #42A5F5; font-weight: bold; }
-            .frac { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; margin: 0 4px; line-height: 1.1; font-size: 0.9em; }
-            .frac .num { border-bottom: 1.5px solid #90CAF9; padding: 0 3px; display: block; }
-            .frac .den { display: block; padding: 0 3px; }
-        </style>
-        <div class="container">
-            <!-- Question 1 -->
-            <div class="sol-card">
-                <div class="question-header">1. Prove that &radic;5 is irrational:</div>
-                <div class="sol-body">
-                    <div class="sol-step">Proof (Method of Contradiction):-</div>
-                    <div class="sol-step">1. Let us assume, to the contrary, that &radic;5 is rational.</div>
-                    <div class="sol-step">2. Therefore, we can find co-prime integers <i>a</i> and <i>b</i> (where <i>b</i> &ne; 0) such that:</div>
-                    <div class="sol-step">&radic;5 = <div class="frac"><span class="num">a</span><span class="den">b</span></div></div>
-                    <div class="sol-step">3. Squaring both sides:</div>
-                    <div class="sol-step">5 = <div class="frac"><span class="num">a&sup2;</span><span class="den">b&sup2;</span></div> &rArr; a&sup2; = 5b&sup2; &nbsp;&nbsp;&nbsp;--- (Equation 1)</div>
-                    <div class="sol-step">4. Since 5 divides a&sup2;, by theorem, <b>5 divides a</b>.</div>
-                    <div class="sol-step">5. So, we can write <b>a = 5c</b> for some integer <i>c</i>.</div>
-                    <div class="sol-step">6. Substituting a = 5c into Equation 1:</div>
-                    <div class="sol-step">(5c)&sup2; = 5b&sup2; &rArr; 25c&sup2; = 5b&sup2; &rArr; b&sup2; = 5c&sup2;</div>
-                    <div class="sol-step">7. This means 5 divides b&sup2;, and so <b>5 divides b</b>.</div>
-                    <div class="sol-step">8. Therefore, <i>a</i> and <i>b</i> have at least 5 as a common factor.</div>
-                    <div class="sol-step">9. But this contradicts our assumption that <i>a</i> and <i>b</i> are co-prime (have no common factor other than 1).</div>
-                    <div class="sol-step">10. This contradiction has arisen because of our incorrect assumption that &radic;5 is rational.</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, &radic;5 is irrational.</span></div>
-                </div>
-            </div>
-
-            <!-- Question 2 -->
-            <div class="sol-card">
-                <div class="question-header">2. Prove that 3 + 2&radic;5 is irrational:</div>
-                <div class="sol-body">
-                    <div class="sol-step">Proof (Method of Contradiction):-</div>
-                    <div class="sol-step">1. Let us assume that 3 + 2&radic;5 is rational.</div>
-                    <div class="sol-step">2. Then we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> &ne; 0) such that:</div>
-                    <div class="sol-step">3 + 2&radic;5 = <div class="frac"><span class="num">a</span><span class="den">b</span></div></div>
-                    <div class="sol-step">3. Rearranging to isolate &radic;5:</div>
-                    <div class="sol-step">2&radic;5 = <div class="frac"><span class="num">a</span><span class="den">b</span></div> - 3 = <div class="frac"><span class="num">a - 3b</span><span class="den">b</span></div></div>
-                    <div class="sol-step">&radic;5 = <div class="frac"><span class="num">a - 3b</span><span class="den">2b</span></div></div>
-                    <div class="sol-step">4. Since <i>a</i> and <i>b</i> are integers, <div class="frac"><span class="num">a - 3b</span><span class="den">2b</span></div> is rational.</div>
-                    <div class="sol-step">5. This implies that &radic;5 is rational.</div>
-                    <div class="sol-step">6. But this contradicts the fact that &radic;5 is irrational.</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, 3 + 2&radic;5 is irrational.</span></div>
-                </div>
-            </div>
-
-            <!-- Question 3 -->
-            <div class="sol-card">
-                <div class="question-header">3. Prove that the following are irrationals:</div>
-                <div class="sol-body">
-                    <!-- Q3 (i) -->
-                    <div class="sol-step"><b style="color:#42A5F5;">(i) <div class="frac"><span class="num">1</span><span class="den">&radic;2</span></div></b></div>
-                    <div class="sol-step">Proof:-</div>
-                    <div class="sol-step">1. Let us assume <div class="frac"><span class="num">1</span><span class="den">&radic;2</span></div> is rational.</div>
-                    <div class="sol-step">2. So, <div class="frac"><span class="num">1</span><span class="den">&radic;2</span></div> = <div class="frac"><span class="num">a</span><span class="den">b</span></div> (where <i>a</i>, <i>b</i> are co-prime integers, <i>b</i> &ne; 0).</div>
-                    <div class="sol-step">3. Reciprocating both sides:</div>
-                    <div class="sol-step">&radic;2 = <div class="frac"><span class="num">b</span><span class="den">a</span></div></div>
-                    <div class="sol-step">4. Since <i>a</i> and <i>b</i> are integers, <div class="frac"><span class="num">b</span><span class="den">a</span></div> is rational, which implies &radic;2 is rational.</div>
-                    <div class="sol-step">5. But this contradicts the fact that &radic;2 is irrational.</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, <div class="frac"><span class="num">1</span><span class="den">&radic;2</span></div> is irrational.</span></div>
-
-                    <!-- Q3 (ii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(ii) 7&radic;5</b></div>
-                    <div class="sol-step">Proof:-</div>
-                    <div class="sol-step">1. Let us assume 7&radic;5 is rational.</div>
-                    <div class="sol-step">2. So, 7&radic;5 = <div class="frac"><span class="num">a</span><span class="den">b</span></div> (where <i>a</i>, <i>b</i> are co-prime integers, <i>b</i> &ne; 0).</div>
-                    <div class="sol-step">3. Rearranging:</div>
-                    <div class="sol-step">&radic;5 = <div class="frac"><span class="num">a</span><span class="den">7b</span></div></div>
-                    <div class="sol-step">4. Since <i>a</i> and <i>b</i> are integers, <div class="frac"><span class="num">a</span><span class="den">7b</span></div> is rational.</div>
-                    <div class="sol-step">5. This implies &radic;5 is rational, contradicting the fact that &radic;5 is irrational.</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, 7&radic;5 is irrational.</span></div>
-
-                    <!-- Q3 (iii) -->
-                    <div class="sol-step" style="margin-top: 20px;"><b style="color:#42A5F5;">(iii) 6 + &radic;2</b></div>
-                    <div class="sol-step">Proof:-</div>
-                    <div class="sol-step">1. Let us assume 6 + &radic;2 is rational.</div>
-                    <div class="sol-step">2. So, 6 + &radic;2 = <div class="frac"><span class="num">a</span><span class="den">b</span></div> (where <i>a</i>, <i>b</i> are co-prime integers, <i>b</i> &ne; 0).</div>
-                    <div class="sol-step">3. Rearranging:</div>
-                    <div class="sol-step">&radic;2 = <div class="frac"><span class="num">a</span><span class="den">b</span></div> - 6 = <div class="frac"><span class="num">a - 6b</span><span class="den">b</span></div></div>
-                    <div class="sol-step">4. Since <i>a</i> and <i>b</i> are integers, <div class="frac"><span class="num">a - 6b</span><span class="den">b</span></div> is rational.</div>
-                    <div class="sol-step">5. This implies &radic;2 is rational, contradicting the fact that &radic;2 is irrational.</div>
-                    <div class="sol-step"><span class="ans-highlight">Hence, 6 + &radic;2 is irrational.</span></div>
-                </div>
-            </div>
-        </div>
-    `
+  {
+    "term": "Real Numbers (R)",
+    "description": "The set of rational and irrational numbers."
   },
+  {
+    "term": "Prime Number",
+    "description": "A number that has exactly two factors (1 and itself)."
+  },
+  {
+    "term": "Composite Number",
+    "description": "A number that has more than two factors."
+  },
+  {
+    "term": "Rational Number",
+    "description": "A number that can be written in the form p/q, where p and q are integers and q ≠ 0."
+  },
+  {
+    "term": "Irrational Number",
+    "description": "A number that cannot be written in the form p/q, where p and q are integers and q ≠ 0."
+  }
+],
+  keyPoints: [
+  "The Fundamental Theorem of Arithmetic: Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur.",
+  "Properties of irrational numbers: Proving numbers like √2, √3, and √5 are irrational."
+],
+  formulas: [
+  {
+    "name": "HCF and LCM Relation",
+    "formula": "HCF(a, b) × LCM(a, b) = a × b (for any two positive integers a and b)"
+  }
+],
+  crux: [
+  "Proving absolute irrationality of a number (such as √2 or √5) using the method of contradiction.",
+  "Determining HCF and LCM of numbers using unique prime factorisation (Fundamental Theorem of Arithmetic)."
+],
+  summary: [
+  "Real numbers connect abstract algebra to tangible measurement.",
+  "The relationship HCF(a, b) × LCM(a, b) = a × b holds true for any two positive integers.",
+  "Carefully read and understand every problem statement before jumping into the solution.",
+  "A strong grasp of the core concepts is the key to solving complex problems easily.",
+  "Make a habit of practicing the solved examples to get familiar with standard solution formats."
+],
+  examples: [
+  {
+    "id": "q1",
+    "number": "1",
+    "question": "<span style=\"font-weight: normal;\">Check whether 4ⁿ can end with the digit 0 for any natural number n.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Solution:</span>",
+      "For any number to end with the digit 0, it must be divisible by 10.",
+      "This implies that its prime factorization must include the prime numbers 2 and 5.",
+      "4ⁿ = (2²)ⁿ = 2²ⁿ",
+      "The prime factorization of 4ⁿ contains only the prime 2.",
+      "There is no factor 5 in it.",
+      "The Fundamental Theorem of Arithmetic guarantees the uniqueness of this factorization.",
+      "So, there is no natural number n for which 4ⁿ ends with the digit 0.",
+      "Hence, 4ⁿ cannot end with digit 0."
+    ],
+    "answer": "Hence, 4ⁿ cannot end with digit 0."
+  },
+  {
+    "id": "q2",
+    "number": "2",
+    "question": "<span style=\"font-weight: normal;\">Find the LCM and HCF of 6 and 20 by the prime factorisation method.</span>",
+    "solution": [
+      "Factor Trees for 6 and 20",
+      "<span style=\"font-weight: normal;\">Solution:</span>",
+      "Prime factorization:",
+      "6 = 2 × 3",
+      "20 = 2 × 2 × 5 = 2² × 5",
+      "To find HCF:",
+      "The common prime factor is 2.",
+      "The smallest power of the common factor 2 is 2¹.",
+      "HCF(6, 20) = 2",
+      "To find LCM:",
+      "The prime factors involved are 2, 3, and 5.",
+      "The greatest power of each prime factor involved:",
+      "2² (for 2), 3¹ (for 3), 5¹ (for 5).",
+      "LCM(6, 20) = 2² × 3 × 5 = 4 × 3 × 5 = 60",
+      "HCF(6, 20) = 2, LCM(6, 20) = 60"
+    ],
+    "answer": "HCF(6, 20) = 2, LCM(6, 20) = 60"
+  },
+  {
+    "id": "q3",
+    "number": "3",
+    "question": "<span style=\"font-weight: normal;\">Find the HCF of 96 and 404 by the prime factorisation method. Hence, find their<br/>LCM.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Solution:</span>",
+      "Prime factorization:",
+      "96 = 2 × 2 × 2 × 2 × 2 × 3 = 2⁵ × 3",
+      "404 = 2 × 2 × 101 = 2² × 101",
+      "The common prime factor is 2. The smallest power is 2².",
+      "HCF(96, 404) = 2² = 4",
+      "<span style=\"font-weight: normal;\">Finding LCM:</span>",
+      "We know the relationship:",
+      "LCM × HCF = Product of the two numbers",
+      "LCM × 4 = 96 × 404",
+      "LCM = <sup>96 × 404</sup>&frasl;<sub>4</sub>",
+      "LCM = 24 × 404",
+      "LCM = 9696",
+      "HCF = 4, LCM = 9696"
+    ],
+    "answer": "HCF = 4, LCM = 9696"
+  },
+  {
+    "id": "q4",
+    "number": "4",
+    "question": "<span style=\"font-weight: normal;\">Find the HCF and LCM of 6, 72 and 120, using the prime factorisation method.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Solution:</span>",
+      "Prime factorization:",
+      "6 = 2 × 3",
+      "72 = 2³ × 3²",
+      "120 = 2³ × 3 × 5",
+      "HCF: Common factors are 2 and 3. Smallest powers are 2¹ and 3¹.",
+      "HCF = 2 × 3 = 6",
+      "LCM: Greatest powers are 2³, 3² and 5¹.",
+      "LCM = 2³ × 3² × 5 = 8 × 9 × 5 = 360",
+      "HCF = 6, LCM = 360"
+    ],
+    "answer": "HCF = 6, LCM = 360"
+  },
+  {
+    "id": "q5",
+    "number": "5",
+    "question": "<span style=\"font-weight: normal;\">Prove that √3 is irrational.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Proof:</span>",
+      "Let us assume, to the contrary, that √3 is rational.",
+      "Therefore, we can find integers a and b (b ≠ 0) such that:",
+      "√3 = <sup>a</sup>&frasl;<sub>b</sub>",
+      "Assume a and b are co-prime.",
+      "Squaring both sides:",
+      "3b² = a²",
+      "Therefore, 3 divides a².",
+      "Theorem 1.3: If a prime p divides a², then p divides",
+      "a.",
+      "So, 3 divides a.",
+      "Let a = 3c for some integer c.",
+      "substituting a = 3c, we get:",
+      "3b² = (3c)² = 9c²",
+      "b² = 3c²",
+      "This means 3 divides b², and so 3 divides b.",
+      "Thus, a and b have at least 3 as a common factor.",
+      "But this contradicts the fact that a and b are co-prime.",
+      "This contradiction arises because of our incorrect assumption that √3 is rational.",
+      "Hence, √3 is irrational."
+    ],
+    "answer": "Hence, √3 is irrational."
+  },
+  {
+    "id": "q6",
+    "number": "6",
+    "question": "<span style=\"font-weight: normal;\">Show that 5 - √3 is irrational.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Proof:</span>",
+      "Let us assume that 5 - √3 is rational.",
+      "So we can write:",
+      "5 - √3 = <sup>a</sup>&frasl;<sub>b</sub> (where a, b are co-prime integers, b ≠ 0)",
+      "Rearranging to isolate √3:",
+      "5 - <sup>a</sup>&frasl;<sub>b</sub> = √3",
+      "√3 = <sup>5b - a</sup>&frasl;<sub>b</sub>",
+      "Since a and b are integers, the RHS <sup>5b - a</sup>&frasl;<sub>b</sub> is",
+      "rational.",
+      "This implies √3 is rational.",
+      "But this contradicts the fact that √3 is irrational.",
+      "Hence, 5 - √3 is irrational."
+    ],
+    "answer": "Hence, 5 - √3 is irrational."
+  },
+  {
+    "id": "q7",
+    "number": "7",
+    "question": "<span style=\"font-weight: normal;\">Show that 3√2 is irrational.</span>",
+    "solution": [
+      "<span style=\"font-weight: normal;\">Proof:</span>",
+      "Let us assume that 3√2 is rational.",
+      "So we can find co-prime integers a and b (b ≠ 0) such that:",
+      "3√2 = <sup>a</sup>&frasl;<sub>b</sub>",
+      "Rearranging:",
+      "√2 = <sup>a</sup>&frasl;<sub>3b</sub>",
+      "Since 3, a, and b are integers, <sup>a</sup>&frasl;<sub>3b</sub> is rational.",
+      "This implies √2 is rational.",
+      "But this contradicts the fact that √2 is irrational.",
+      "Hence, 3√2 is irrational."
+    ],
+    "answer": "Hence, 3√2 is irrational."
+  }
+],
+  exercises: [
+    { id: "examples", name: "Examples", questions: [] },
+    { id: "exercise1", name: "Exercise 1.1", questions: [] },
+    { id: "exercise2", name: "Exercise 1.2", questions: [] }
+  ],
   mcqs: [
-    { id: "c10m1-mcq-1", question: "If two positive integers a and b are written as a = x³y² and b = xy³, where x, y are prime numbers, then HCF(a, b) is:", options: ["xy", "xy²", "x³y³", "x²y²"], correctAnswer: "b", explanation: "HCF takes the smallest power of common prime factors ➔ x¹y² = xy²." },
-    { id: "c10m1-mcq-2", question: "The product of a non-zero rational and an irrational number is:", options: ["Always irrational", "Always rational", "Rational or irrational", "Zero"], correctAnswer: "a", explanation: "Multiplying any non-zero rational number with an irrational number always yields an irrational number." },
-    { id: "c10m1-mcq-3", question: "If HCF(26, 169) = 13, then LCM(26, 169) is:", options: ["26", "52", "338", "13"], correctAnswer: "c", explanation: "LCM = (26 × 169) / 13 = 2 × 169 = 338." },
-    { id: "c10m1-mcq-4", question: "The total number of factors of a prime number is:", options: ["1", "2", "3", "4"], correctAnswer: "b", explanation: "A prime number has exactly two factors: 1 and the number itself." },
-    { id: "c10m1-mcq-5", question: "Which of the following is an irrational number?", options: ["√4", "3.14", "2 + √3", "22/7"], correctAnswer: "c", explanation: "Sum of a rational (2) and an irrational (√3) is always irrational." },
-    { id: "c10m1-mcq-6", question: "If p and q are two co-prime numbers, then their HCF is:", options: ["0", "1", "p", "q"], correctAnswer: "b", explanation: "Co-prime numbers have no common factor other than 1." },
-    { id: "c10m1-mcq-7", question: "The LCM of smallest two-digit composite number and smallest composite number is:", options: ["4", "12", "20", "44"], correctAnswer: "c", explanation: "Smallest composite = 4, Smallest 2-digit composite = 10. LCM(4, 10) = 20." },
-    { id: "c10m1-mcq-8", question: "If n is a natural number, then 6ⁿ - 5ⁿ always ends with:", options: ["1", "3", "5", "7"], correctAnswer: "a", explanation: "6ⁿ ends in 6 and 5ⁿ ends in 5. So 6 - 5 = 1." },
-    { id: "c10m1-mcq-9", question: "The HCF of two consecutive natural numbers is always:", options: ["0", "1", "2", "Product of the numbers"], correctAnswer: "b", explanation: "Any two consecutive natural numbers are always co-prime, so HCF = 1." },
-    { id: "c10m1-mcq-10", question: "The exponent of 2 in the prime factorisation of 144 is:", options: ["2", "4", "5", "6"], correctAnswer: "b", explanation: "144 = 2⁴ × 3². The exponent of 2 is 4." }
-  ]
+  {
+    "id": "mcq1",
+    "question": "<span style=\"font-weight: normal;\">The HCF of 135 and 225 is:</span>",
+    "options": [
+      "(A) 15",
+      "(B) 30",
+      "(C) 45",
+      "(D) 60"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "mcq2",
+    "question": "<span style=\"font-weight: normal;\">Every composite number can be expressed as a product of:</span>",
+    "options": [
+      "(A) Odd numbers",
+      "(B) Even numbers",
+      "(C) Prime numbers",
+      "(D) Real numbers"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "mcq3",
+    "question": "<span style=\"font-weight: normal;\">For any two positive integers a and b, the relationship between HCF and LCM is:</span>",
+    "options": [
+      "(A) HCF + LCM = a × b",
+      "(B) HCF - LCM = a × b",
+      "(C) HCF × LCM = a × b",
+      "(D) HCF / LCM = a × b"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "mcq4",
+    "question": "<span style=\"font-weight: normal;\">The number √5 is:</span>",
+    "options": [
+      "(A) A rational number",
+      "(B) An irrational number",
+      "(C) A whole number",
+      "(D) A natural number"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "mcq5",
+    "question": "<span style=\"font-weight: normal;\">The prime factorization of 15 is:</span>",
+    "options": [
+      "(A) 2 × 7",
+      "(B) 3 × 5",
+      "(C) 2 × 3 × 5",
+      "(D) 5 × 5"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "mcq6",
+    "question": "<span style=\"font-weight: normal;\">If a number n ends with the digit 0, then its prime factorization must contain:</span>",
+    "options": [
+      "(A) Both 2 and 3",
+      "(B) Both 2 and 5",
+      "(C) Both 3 and 5",
+      "(D) Both 2 and 7"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "mcq7",
+    "question": "<span style=\"font-weight: normal;\">The sum of a rational and an irrational number is always:</span>",
+    "options": [
+      "(A) Rational",
+      "(B) Irrational",
+      "(C) Zero",
+      "(D) None of these"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "mcq8",
+    "question": "<span style=\"font-weight: normal;\">Which of the following is an irrational number?</span>",
+    "options": [
+      "(A) 2",
+      "(B) 0.5",
+      "(C) √2",
+      "(D) √4"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "mcq9",
+    "question": "<span style=\"font-weight: normal;\">The LCM of 12 and 15 is:</span>",
+    "options": [
+      "(A) 30",
+      "(B) 40",
+      "(C) 60",
+      "(D) 90"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "mcq10",
+    "question": "<span style=\"font-weight: normal;\">The product of a non-zero rational number and an irrational number is:</span>",
+    "options": [
+      "(A) Always rational",
+      "(B) Always irrational",
+      "(C) Sometimes rational",
+      "(D) Zero"
+    ],
+    "correctAnswer": "B"
+  }
+],
+  isHtmlView: true,
+  htmlExercises: {
+    examples: `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Numbers - Examples</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .section-title {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .formula {
+            background-color: #fff3e0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: #D32F2F;
+            font-weight: 700;
+            display: inline-block;
+            margin: 2px 0;
+            border: 1px solid #ffe0b2;
+        }
+
+        .formula-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        .diagram-placeholder {
+            float: right;
+            width: 120px;
+            height: 120px;
+            border: 2px dashed #bbb;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 11px;
+            margin-left: 10px;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\\\(', right: '\\\\)', display: false},
+        {left: '\\\\[', right: '\\\\]', display: true}
+      ]
+    });
+  });
+</script>
+
+<style>
+  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
+  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
+  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
+  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
+  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
+  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
+  * { font-family: 'Noto Sans', sans-serif !important; }
+  
+  /* Make sure every sub part of the question has the question color */
+  strong[style*="color: #FF6B6B"] { color: #FFB74D !important; }
+  strong[style*="color: #ff6b6b"] { color: #FFB74D !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
+</style>
+</head>
+
+<body>
+<!-- Example 1 -->
+    <div class="content-box">
+        <div class="question">Example 1. Check whether 4ⁿ can end with the digit 0 for any natural number n.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">For any number to end with the digit 0, it must be divisible by 10.</div>
+        <div class="step">This implies that its prime factorization must include the prime numbers 2 and 5.</div>
+
+        <div class="step formula-block"><span class="formula">4ⁿ = (2²)ⁿ = 2²ⁿ</span></div>
+        <div class="step">The prime factorization of 4ⁿ contains only the prime 2.</div>
+        <div class="step">There is no factor 5 in it.</div>
+        <div class="step">The Fundamental Theorem of Arithmetic guarantees the uniqueness of this factorization.</div>
+        <div class="step">So, there is no natural number n for which 4ⁿ ends with the digit 0.</div>
+
+        <div class="final-answer">Hence, 4ⁿ cannot end with digit 0.</div>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="content-box">
+        <div class="question">Example 2. Find the LCM and HCF of 6 and 20 by the prime factorisation method.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization:</div>
+        <div class="step">6 = 2 × 3</div>
+        <div class="step">20 = 2 × 2 × 5 = 2² × 5</div>
+
+        <div class="step"><strong>To find HCF:</strong></div>
+        <div class="step">The common prime factor is 2.</div>
+        <div class="step">The smallest power of the common factor 2 is 2¹.</div>
+        <div class="step formula-block"><span class="formula">HCF(6, 20) = 2</span></div>
+
+        <div class="step"><strong>To find LCM:</strong></div>
+        <div class="step">The prime factors involved are 2, 3, and 5.</div>
+        <div class="step">The greatest power of each prime factor involved:</div>
+        <div class="step">2² (for 2), 3¹ (for 3), 5¹ (for 5).</div>
+        <div class="step formula-block"><span class="formula">LCM(6, 20) = 2² × 3 × 5 = 4 × 3 × 5 = 60</span></div>
+
+        <div class="final-answer">HCF(6, 20) = 2, LCM(6, 20) = 60</div>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="content-box">
+        <div class="question">Example 3. Find the HCF of 96 and 404 by the prime factorisation method. Hence, find their
+            LCM.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization:</div>
+        <div class="step">96 = 2 × 2 × 2 × 2 × 2 × 3 = 2⁵ × 3</div>
+        <div class="step">404 = 2 × 2 × 101 = 2² × 101</div>
+
+        <div class="step">The common prime factor is 2. The smallest power is 2².</div>
+        <div class="step">HCF(96, 404) = 2² = 4</div>
+
+        <div class="section-title">Finding LCM:</div>
+        <div class="step">We know the relationship:</div>
+        <div class="step formula-block"><span class="formula">LCM × HCF = Product of the two numbers</span></div>
+        <div class="step">LCM × 4 = 96 × 404</div>
+        <div class="step">
+            LCM = \\(\\frac{96 × 404}{4}\\)
+        </div>
+        <div class="step">LCM = 24 × 404</div>
+        <div class="step">LCM = 9696</div>
+
+        <div class="final-answer">HCF = 4, LCM = 9696</div>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="content-box">
+        <div class="question">Example 4. Find the HCF and LCM of 6, 72 and 120, using the prime factorisation method.
+        </div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization:</div>
+        <div class="step">6 = 2 × 3</div>
+        <div class="step">72 = 2³ × 3²</div>
+        <div class="step">120 = 2³ × 3 × 5</div>
+
+        <div class="step"><strong>HCF:</strong> Common factors are 2 and 3. Smallest powers are 2¹ and 3¹.</div>
+        <div class="step formula-block"><span class="formula">HCF = 2 × 3 = 6</span></div>
+
+        <div class="step"><strong>LCM:</strong> Greatest powers are 2³, 3² and 5¹.</div>
+        <div class="step formula-block"><span class="formula">LCM = 2³ × 3² × 5 = 8 × 9 × 5 = 360</span></div>
+
+        <div class="final-answer">HCF = 6, LCM = 360</div>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="content-box">
+        <div class="question">Example 5. Prove that √3 is irrational.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume, to the contrary, that √3 is rational.</div>
+        <div class="step">Therefore, we can find integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            √3 = \\(\\frac{a}{b}\\)
+        </div>
+        <div class="step">Assume <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">Squaring both sides:</div>
+        <div class="step">3<i>b</i>² = <i>a</i>²</div>
+        <div class="step">Therefore, 3 divides <i>a</i>².</div>
+        <div class="step formula-block"><span class="formula">Theorem 1.3: If a prime p divides a², then p divides
+                a.</span></div>
+        <div class="step">So, 3 divides <i>a</i>.</div>
+
+        <div class="step">Let <i>a</i> = 3<i>c</i> for some integer <i>c</i>.</div>
+        <div class="step">substituting <i>a</i> = 3<i>c</i>, we get:</div>
+        <div class="step">3<i>b</i>² = (3<i>c</i>)² = 9<i>c</i>²</div>
+        <div class="step"><i>b</i>² = 3<i>c</i>²</div>
+        <div class="step">This means 3 divides <i>b</i>², and so 3 divides <i>b</i>.</div>
+
+        <div class="step">Thus, <i>a</i> and <i>b</i> have at least 3 as a common factor.</div>
+        <div class="step">But this contradicts the fact that <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">This contradiction arises because of our incorrect assumption that √3 is rational.</div>
+
+        <div class="final-answer">Hence, √3 is irrational.</div>
+    </div>
+
+    <!-- Example 6 -->
+    <div class="content-box">
+        <div class="question">Example 6. Show that 5 - √3 is irrational.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume that 5 - √3 is rational.</div>
+        <div class="step">So we can write:</div>
+        <div class="step">
+            5 - √3 = \\(\\frac{a}{b}\\) (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0)
+        </div>
+        <div class="step">Rearranging to isolate √3:</div>
+        <div class="step">
+            5 - \\(\\frac{a}{b}\\) = √3
+        </div>
+        <div class="step">
+            √3 = \\(\\frac{5b - a}{b}\\)
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, the RHS \\(\\frac{5b - a}{b}\\) is
+            rational.</div>
+        <div class="step">This implies √3 is rational.</div>
+        <div class="step">But this contradicts the fact that √3 is irrational.</div>
+
+        <div class="final-answer">Hence, 5 - √3 is irrational.</div>
+    </div>
+
+    <!-- Example 7 -->
+    <div class="content-box">
+        <div class="question">Example 7. Show that 3√2 is irrational.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume that 3√2 is rational.</div>
+        <div class="step">So we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            3√2 = \\(\\frac{a}{b}\\)
+        </div>
+        <div class="step">Rearranging:</div>
+        <div class="step">
+            √2 = \\(\\frac{a}{3b}\\)
+        </div>
+        <div class="step">Since 3, <i>a</i>, and <i>b</i> are integers, \\(\\frac{a}{3b}\\) is rational.
+        </div>
+        <div class="step">This implies √2 is rational.</div>
+        <div class="step">But this contradicts the fact that √2 is irrational.</div>
+
+        <div class="final-answer">Hence, 3√2 is irrational.</div>
+    </div>
+
+</body>
+
+</html>`,
+    exercise1: `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Numbers - Exercise 1.1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .content-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: flow-root;
+            transition: transform 0.2s ease;
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .section-title {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1em;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .formula {
+            background-color: #fff3e0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: #D32F2F;
+            font-weight: 700;
+            display: inline-block;
+            margin: 2px 0;
+            border: 1px solid #ffe0b2;
+        }
+
+        .formula-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\\\(', right: '\\\\)', display: false},
+        {left: '\\\\[', right: '\\\\]', display: true}
+      ]
+    });
+  });
+</script>
+
+<style>
+  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
+  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
+  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
+  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
+  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
+  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
+  * { font-family: 'Noto Sans', sans-serif !important; }
+  
+  /* Make sure every sub part of the question has the question color */
+  strong[style*="color: #FF6B6B"] { color: #FFB74D !important; }
+  strong[style*="color: #ff6b6b"] { color: #FFB74D !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
+</style>
+</head>
+
+<body>
+<!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. Express each number as a product of its prime factors:</div>
+
+        <div class="sub-question">(i) 140</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization of 140:</div>
+        <div class="step">140 = 2 × 70</div>
+        <div class="step">= 2 × 2 × 35</div>
+        <div class="step">= 2 × 2 × 5 × 7</div>
+        <div class="final-answer">140 = 2² × 5 × 7</div>
+
+        <div class="sub-question">(ii) 156</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization of 156:</div>
+        <div class="step">156 = 2 × 78</div>
+        <div class="step">= 2 × 2 × 39</div>
+        <div class="step">= 2 × 2 × 3 × 13</div>
+        <div class="final-answer">156 = 2² × 3 × 13</div>
+
+        <div class="sub-question">(iii) 3825</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization of 3825:</div>
+        <div class="step">3825 = 3 × 1275</div>
+        <div class="step">= 3 × 3 × 425</div>
+        <div class="step">= 3 × 3 × 5 × 85</div>
+        <div class="step">= 3 × 3 × 5 × 5 × 17</div>
+        <div class="final-answer">3825 = 3² × 5² × 17</div>
+
+        <div class="sub-question">(iv) 5005</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization of 5005:</div>
+        <div class="step">5005 = 5 × 1001</div>
+        <div class="step">= 5 × 7 × 143</div>
+        <div class="step">= 5 × 7 × 11 × 13</div>
+        <div class="final-answer">5005 = 5 × 7 × 11 × 13</div>
+
+        <div class="sub-question">(v) 7429</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization of 7429:</div>
+        <div class="step">7429 = 17 × 437</div>
+        <div class="step">= 17 × 19 × 23</div>
+        <div class="final-answer">7429 = 17 × 19 × 23</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <div class="question">2. Find the LCM and HCF of the following pairs of integers and verify that LCM × HCF =
+            product of the two numbers.</div>
+
+        <div class="sub-question">(i) 26 and 91</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">Prime factorization:</div>
+        <div class="step">26 = 2 × 13</div>
+        <div class="step">91 = 7 × 13</div>
+        <div class="step">HCF = Product of smallest power of each common prime factor = 13</div>
+        <div class="step">LCM = Product of greatest power of each prime factor = 2 × 7 × 13 = 182</div>
+
+        <div class="section-title">Verification:</div>
+        <div class="step formula-block"><span class="formula">LCM × HCF = Product of the numbers</span></div>
+        <div class="step">LHS = LCM × HCF = 182 × 13 = 2366</div>
+        <div class="step">RHS = Product = 26 × 91 = 2366</div>
+        <div class="final-answer">LHS = RHS. Hence Verified.</div>
+
+        <div class="sub-question">(ii) 510 and 92</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">510 = 2 × 3 × 5 × 17</div>
+        <div class="step">92 = 2 × 2 × 23 = 2² × 23</div>
+        <div class="step">HCF = 2</div>
+        <div class="step">LCM = 2² × 3 × 5 × 17 × 23 = 23460</div>
+
+        <div class="section-title">Verification:</div>
+        <div class="step">LHS = LCM × HCF = 23460 × 2 = 46920</div>
+        <div class="step">RHS = Product = 510 × 92 = 46920</div>
+        <div class="final-answer">LHS = RHS. Hence Verified.</div>
+
+        <div class="sub-question">(iii) 336 and 54</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">336 = 2 × 2 × 2 × 2 × 3 × 7 = 2⁴ × 3 × 7</div>
+        <div class="step">54 = 2 × 3 × 3 × 3 = 2 × 3³</div>
+        <div class="step">HCF = 2 × 3 = 6</div>
+        <div class="step">LCM = 2⁴ × 3³ × 7 = 3024</div>
+
+        <div class="section-title">Verification:</div>
+        <div class="step">LHS = LCM × HCF = 3024 × 6 = 18144</div>
+        <div class="step">RHS = Product = 336 × 54 = 18144</div>
+        <div class="final-answer">LHS = RHS. Hence Verified.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <div class="question">3. Find the LCM and HCF of the following integers by applying the prime factorisation
+            method.</div>
+
+        <div class="sub-question">(i) 12, 15 and 21</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">12 = 2 × 2 × 3 = 2² × 3</div>
+        <div class="step">15 = 3 × 5</div>
+        <div class="step">21 = 3 × 7</div>
+        <div class="step">HCF = 3 (Common factor)</div>
+        <div class="step">LCM = 2² × 3 × 5 × 7 = 420</div>
+        <div class="final-answer">HCF = 3, LCM = 420</div>
+
+        <div class="sub-question">(ii) 17, 23 and 29</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">17, 23, and 29 are prime numbers.</div>
+        <div class="step">17 = 1 × 17</div>
+        <div class="step">23 = 1 × 23</div>
+        <div class="step">29 = 1 × 29</div>
+        <div class="step">HCF = 1</div>
+        <div class="step">LCM = 17 × 23 × 29 = 11339</div>
+        <div class="final-answer">HCF = 1, LCM = 11339</div>
+
+        <div class="sub-question">(iii) 8, 9 and 25</div>
+        <div class="section-title">Solution:</div>
+        <div class="step">8 = 2 × 2 × 2 = 2³</div>
+        <div class="step">9 = 3 × 3 = 3²</div>
+        <div class="step">25 = 5 × 5 = 5²</div>
+        <div class="step">No common prime factor.</div>
+        <div class="step">HCF = 1</div>
+        <div class="step">LCM = 2³ × 3² × 5² = 8 × 9 × 25 = 1800</div>
+        <div class="final-answer">HCF = 1, LCM = 1800</div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="content-box">
+        <div class="question">4. Given that HCF (306, 657) = 9, find LCM (306, 657).</div>
+
+        <div class="section-title">Given:</div>
+        <div class="step">HCF (306, 657) = 9</div>
+        <div class="step">First number (a) = 306</div>
+        <div class="step">Second number (b) = 657</div>
+
+        <div class="section-title">To Find:</div>
+        <div class="step">LCM (306, 657)</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step formula-block"><span class="formula">Formula: LCM × HCF = Product of two numbers</span></div>
+        <div class="step">LCM × 9 = 306 × 657</div>
+        <div class="step">
+            LCM = \\(\\frac{306 × 657}{9}\\)
+        </div>
+        <div class="step">LCM = 34 × 657</div>
+        <div class="step">LCM = 22338</div>
+        <div class="final-answer">LCM (306, 657) = 22338</div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="content-box">
+        <div class="question">5. Check whether 6ⁿ can end with the digit 0 for any natural number n.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">If a number ends with digit 0, it must be divisible by 10.</div>
+        <div class="step">This means it must be divisible by both 2 and 5.</div>
+
+        <div class="step formula-block"><span class="formula">Prime factorization of 6ⁿ = (2 × 3)ⁿ = 2ⁿ × 3ⁿ</span>
+        </div>
+        <div class="step">The prime factors of 6ⁿ are 2 and 3.</div>
+        <div class="step">For the number to end with 0, it must contain the prime factor 5.</div>
+        <div class="step">However, 5 is not present in the prime factorization of 6ⁿ.</div>
+        <div class="step">By the Fundamental Theorem of Arithmetic, the uniqueness of prime factorization guarantees
+            that there are no other primes in the factorization of 6ⁿ.</div>
+
+        <div class="final-answer">Therefore, there is no natural number n for which 6ⁿ ends with the digit 0.</div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="content-box">
+        <div class="question">6. Explain why 7 × 11 × 13 + 13 and 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5 are composite numbers.
+        </div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">A composite number is a number that has factors other than 1 and itself.</div>
+
+        <div class="step"><strong>Part 1:</strong> 7 × 11 × 13 + 13</div>
+        <div class="step">Taking 13 common:</div>
+        <div class="step">= 13 × (7 × 11 + 1)</div>
+        <div class="step">= 13 × (77 + 1)</div>
+        <div class="step">= 13 × 78</div>
+        <div class="step">Since this expression has 13 and 78 as factors, it is a composite number.</div>
+
+        <div class="step"><strong>Part 2:</strong> 7 × 6 × 5 × 4 × 3 × 2 × 1 + 5</div>
+        <div class="step">Taking 5 common:</div>
+        <div class="step">= 5 × (7 × 6 × 4 × 3 × 2 × 1 + 1)</div>
+        <div class="step">= 5 × (1008 + 1)</div>
+        <div class="step">= 5 × 1009</div>
+        <div class="step">Since this expression has 5 and 1009 as factors, it is a composite number.</div>
+
+        <div class="final-answer">Hence, both expressions represent composite numbers.</div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="content-box">
+        <div class="question">7. There is a circular path around a sports field. Sonia takes 18 minutes to drive one
+            round of the field, while Ravi takes 12 minutes for the same. Suppose they both start at the same point and
+            at the same time, and go in the same direction. After how many minutes will they meet again at the starting
+            point?</div>
+
+        <div class="section-title">Given:</div>
+        <div class="step">Time taken by Sonia = 18 minutes</div>
+        <div class="step">Time taken by Ravi = 12 minutes</div>
+
+        <div class="section-title">To Find:</div>
+        <div class="step">Time when they meet again at the starting point.</div>
+
+        <div class="section-title">Solution:</div>
+        <div class="step">They will meet again at the starting point after a time that is a common multiple of both 18
+            and 12.</div>
+        <div class="step">Specifically, we need to find the Least Common Multiple (LCM) of 18 and 12.</div>
+
+        <div class="step">Prime factorization:</div>
+        <div class="step">18 = 2 × 3 × 3 = 2 × 3²</div>
+        <div class="step">12 = 2 × 2 × 3 = 2² × 3</div>
+
+        <div class="step">LCM(18, 12) = 2² × 3²</div>
+        <div class="step">= 4 × 9</div>
+        <div class="step">= 36</div>
+
+        <div class="final-answer">Therefore, Sonia and Ravi will meet again at the starting point after 36 minutes.
+        </div>
+    </div>
+
+</body>
+
+</html>`,
+    exercise2: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Numbers - Exercise 1.2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #fff;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #6C63FF;
+            padding-bottom: 10px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .logo {
+            color: #6C63FF;
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .chapter-title {
+            text-align: center;
+            color: #333;
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .content-box { 
+            background: #f8f9fa; 
+            border: 1px solid #e9ecef; 
+            border-radius: 8px; 
+            padding: 15px; 
+            margin-bottom: 15px; 
+            display: flow-root; 
+            transition: transform 0.2s ease; 
+        }
+
+        .question {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .sub-question {
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .section-title {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            color: #555;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 1em;
+            text-decoration: underline; /* Optional for section headers, but user said "don't underline ANY question or text" - leaving plain or bold */
+            text-decoration: none;
+        }
+
+        .step {
+            margin-bottom: 8px;
+            font-size: 1.1em;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .formula {
+            background-color: #fff3e0;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: #D32F2F;
+            font-weight: 700;
+            display: inline-block;
+            margin: 2px 0;
+            border: 1px solid #ffe0b2;
+        }
+        
+        .formula-block {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .final-answer {
+            color: #2E7D32;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            margin: 0 4px;
+        }
+
+        .numerator {
+            border-bottom: 1px solid #333;
+            display: block;
+            padding: 0 2px;
+        }
+
+        .denominator {
+            display: block;
+            padding: 0 2px;
+        }
+
+        sub, sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+        sup { top: -0.5em; }
+        sub { bottom: -0.25em; }
+
+        img { 
+            float: right; 
+            margin-left: 20px; 
+            margin-bottom: 15px; 
+            max-width: 280px; 
+            height: auto; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+            padding: 5px; 
+            background: white; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        
+        @media (max-width: 600px) { 
+            img { float: none; display: block; margin: 10px auto; max-width: 100%; } 
+        }
+    </style>
+
+    <style>
+        img {
+            background: #FFFFFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+    </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" />
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\\\(', right: '\\\\)', display: false},
+        {left: '\\\\[', right: '\\\\]', display: true}
+      ]
+    });
+  });
+</script>
+
+<style>
+  body { background: transparent !important; color: #fff !important; text-align: justify !important; padding-bottom: 150px !important; margin: 0 !important; font-family: 'Noto Sans', sans-serif !important; }
+  .content-box { background: rgba(255,255,255,0.03) !important; border: 1px solid rgba(255,255,255,0.1) !important; color: #fff !important; }
+  .formula-box { background: rgba(108, 99, 255, 0.1) !important; border-left: 4px solid #FFB74D !important; color: #fff !important; }
+  h1, h2, h3, h4, h5, h6 { color: #FFB74D !important; }
+  .question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-question { color: #FFB74D !important; text-align: justify !important; font-weight: bold !important; font-family: 'Noto Sans', sans-serif !important; }
+  .step { color: #ccc !important; text-align: justify !important; font-family: 'Noto Sans', sans-serif !important; }
+  .final-answer { color: #4CAF50 !important; text-align: justify !important; font-weight: bold !important; }
+  .formula { color: #4CAF50 !important; }
+  .true-text { color: #4CAF50 !important; }
+  .false-text { color: #F44336 !important; }
+  table, th, td, tr { border-color: #555 !important; background: transparent !important; color: #fff !important; }
+  .diagram-placeholder { background: transparent !important; color: #aaa !important; border-color: #555 !important; }
+  img { background: transparent !important; border: none !important; box-shadow: none !important; filter: brightness(0.9) invert(1) hue-rotate(180deg); max-width: 100% !important; height: auto !important; }
+  .section-title { color: #FFB74D !important; font-weight: 700 !important; border-bottom: 1px solid rgba(255,255,255,0.1) !important; font-family: 'Noto Sans', sans-serif !important; }
+  .sub-header { color: #4CAF50 !important; font-weight: 700 !important; }
+  * { font-family: 'Noto Sans', sans-serif !important; }
+  
+  /* Make sure every sub part of the question has the question color */
+  strong[style*="color: #FF6B6B"] { color: #FFB74D !important; }
+  strong[style*="color: #ff6b6b"] { color: #FFB74D !important; }
+
+  .question { font-size: 0.95em !important; }
+  .sub-question { font-size: 0.9em !important; }
+  .step { font-size: 0.9em !important; }
+  .final-answer { font-size: 0.95em !important; }
+</style>
+</head>
+<body>
+<!-- Question 1 -->
+    <div class="content-box">
+        <div class="question">1. Prove that √5 is irrational.</div>
+        
+        <div class="section-title">Given:</div>
+        <div class="step">Number √5.</div>
+
+        <div class="section-title">To Prove:</div>
+        <div class="step">√5 is an irrational number.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume, to the contrary, that √5 is rational.</div>
+        <div class="step">This means we can find integers <i>a</i> and <i>b</i> (where <i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            √5 = \\(\\frac{a}{b}\\)
+        </div>
+        <div class="step">Suppose <i>a</i> and <i>b</i> have a common factor other than 1. Can divide by the common factor to assume <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">So, <i>a</i> and <i>b</i> are co-prime.</div>
+        <div class="step">Rearranging, we get:</div>
+        <div class="step">√5 <i>b</i> = <i>a</i></div>
+        <div class="step">Squaring both sides:</div>
+        <div class="step">5<i>b</i>² = <i>a</i>²  ... (Equation 1)</div>
+        <div class="step">Therefore, 5 divides <i>a</i>².</div>
+        <div class="step formula-block"><span class="formula">Theorem 1.3: If a prime number p divides a², then p divides a.</span></div>
+        <div class="step">So, 5 divides <i>a</i>.</div>
+        
+        <div class="step">Let <i>a</i> = 5<i>c</i> for some integer <i>c</i>.</div>
+        <div class="step">Substituting <i>a</i> = 5<i>c</i> in Equation 1:</div>
+        <div class="step">5<i>b</i>² = (5<i>c</i>)²</div>
+        <div class="step">5<i>b</i>² = 25<i>c</i>²</div>
+        <div class="step">Dividing both sides by 5:</div>
+        <div class="step"><i>b</i>² = 5<i>c</i>²</div>
+        <div class="step">This limits that 5 divides <i>b</i>².</div>
+        <div class="step">So, 5 divides <i>b</i> (using Theorem 1.3 again).</div>
+        
+        <div class="step">Therefore, <i>a</i> and <i>b</i> have at least 5 as a common factor.</div>
+        <div class="step">But this contradicts the fact that <i>a</i> and <i>b</i> have no common factor other than 1 (they are co-prime).</div>
+        <div class="step">This contradiction has arisen because of our incorrect assumption that √5 is rational.</div>
+        
+        <div class="final-answer">Hence, we conclude that √5 is irrational.</div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="content-box">
+        <div class="question">2. Prove that 3 + 2√5 is irrational.</div>
+
+        <div class="section-title">Given:</div>
+        <div class="step">Number 3 + 2√5.</div>
+
+        <div class="section-title">To Prove:</div>
+        <div class="step">3 + 2√5 is irrational.</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume, to the contrary, that 3 + 2√5 is rational.</div>
+        <div class="step">That is, we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            3 + 2√5 = \\(\\frac{a}{b}\\)
+        </div>
+        <div class="step">Rearranging the equation to isolate √5:</div>
+        <div class="step">
+            2√5 = \\(\\frac{a}{b}\\) - 3
+        </div>
+        <div class="step">Taking LCM on RHS:</div>
+        <div class="step">
+            2√5 = \\(\\frac{a - 3b}{b}\\)
+        </div>
+        <div class="step">Dividing by 2:</div>
+        <div class="step">
+            <span class="formula">√5 = \\(\\frac{a - 3b}{2b}\\)</span>
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, (<i>a</i> - 3<i>b</i>) and 2<i>b</i> are also integers.</div>
+        <div class="step">
+            Thus, \\(\\frac{a - 3b}{2b}\\) is a rational number.
+        </div>
+        <div class="step">Therefore, √5 should be rational.</div>
+        <div class="step">But this contradicts the fact that √5 is irrational.</div>
+        <div class="step">This contradiction has arisen because of our incorrect assumption that 3 + 2√5 is rational.</div>
+
+        <div class="final-answer">Hence, we conclude that 3 + 2√5 is irrational.</div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="content-box">
+        <div class="question">3. Prove that the following are irrationals:</div>
+        
+        <!-- Part (i) -->
+        <div class="sub-question">(i) \\(\\frac{1}{√2}\\)</div>
+        
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume 
+            \\(\\frac{1}{√2}\\) is rational.
+        </div>
+        <div class="step">Then we can find co-prime integers <i>a</i> and <i>b</i> (<i>b</i> ≠ 0) such that:</div>
+        <div class="step">
+            \\(\\frac{1}{√2}\\) = \\(\\frac{a}{b}\\)
+        </div>
+        <div class="step">Reciprocating both sides (or cross-multiplying):</div>
+        <div class="step">
+            √2 = \\(\\frac{b}{a}\\)
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \\(\\frac{b}{a}\\) is rational.</div>
+        <div class="step">This implies √2 is rational.</div>
+        <div class="step">But this contradicts the fact that √2 is irrational.</div>
+        <div class="final-answer">Hence, \\(\\frac{1}{√2}\\) is irrational.</div>
+
+        <!-- Part (ii) -->
+        <div class="sub-question">(ii) 7√5</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume 7√5 is rational.</div>
+        <div class="step">So, 7√5 = \\(\\frac{a}{b}\\) (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">Rearranging:</div>
+        <div class="step">
+            √5 = \\(\\frac{a}{7b}\\)
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \\(\\frac{a}{7b}\\) is rational.</div>
+        <div class="step">This implies √5 is rational.</div>
+        <div class="step">But this contradicts the fact that √5 is irrational.</div>
+        <div class="final-answer">Hence, 7√5 is irrational.</div>
+
+        <!-- Part (iii) -->
+        <div class="sub-question">(iii) 6 + √2</div>
+
+        <div class="section-title">Proof:</div>
+        <div class="step">Let us assume 6 + √2 is rational.</div>
+        <div class="step">So, 6 + √2 = \\(\\frac{a}{b}\\) (where <i>a, b</i> are co-prime integers, <i>b</i> ≠ 0).</div>
+        <div class="step">Transposing 6 to the RHS:</div>
+        <div class="step">
+            √2 = \\(\\frac{a}{b}\\) - 6
+        </div>
+        <div class="step">
+            √2 = \\(\\frac{a - 6b}{b}\\)
+        </div>
+        <div class="step">Since <i>a</i> and <i>b</i> are integers, \\(\\frac{a - 6b}{b}\\) is rational.</div>
+        <div class="step">This implies √2 is rational.</div>
+        <div class="step">But this contradicts the fact that √2 is irrational.</div>
+        <div class="final-answer">Hence, 6 + √2 is irrational.</div>
+    </div>
+
+</body>
+</html>`
+  }
 };
