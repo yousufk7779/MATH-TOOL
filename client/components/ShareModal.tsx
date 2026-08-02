@@ -12,6 +12,7 @@ import {
   ScrollView,
   useWindowDimensions,
   Platform,
+  NativeModules,
 } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
@@ -21,6 +22,48 @@ import { JiguuColors, Spacing, BorderRadius } from "@/constants/theme";
 
 const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
 const jiguuQrImage = require("../../assets/images/jiguu-qr-code.png");
+
+// Bulletproof check to verify native ExpoMediaLibrary binary exists BEFORE requiring JS module
+const isMediaLibrarySupported = (): boolean => {
+  try {
+    const globalExpo = (global as any)?.ExpoModules;
+    if (globalExpo) {
+      if (typeof globalExpo.hasModule === "function") {
+        if (globalExpo.hasModule("ExpoMediaLibraryNext") || globalExpo.hasModule("ExpoMediaLibrary")) {
+          return true;
+        }
+      }
+      if (globalExpo.ExpoMediaLibraryNext || globalExpo.ExpoMediaLibrary) {
+        return true;
+      }
+    }
+    if (NativeModules.ExpoMediaLibraryNext || NativeModules.ExpoMediaLibrary || NativeModules.ExponentMediaLibrary) {
+      return true;
+    }
+  } catch (e) {}
+  return false;
+};
+
+// Bulletproof check for native ExpoSharing binary
+const isSharingSupported = (): boolean => {
+  try {
+    const globalExpo = (global as any)?.ExpoModules;
+    if (globalExpo) {
+      if (typeof globalExpo.hasModule === "function") {
+        if (globalExpo.hasModule("ExpoSharing") || globalExpo.hasModule("ExponentSharing")) {
+          return true;
+        }
+      }
+      if (globalExpo.ExpoSharing || globalExpo.ExponentSharing) {
+        return true;
+      }
+    }
+    if (NativeModules.ExpoSharing || NativeModules.ExponentSharing) {
+      return true;
+    }
+  } catch (e) {}
+  return false;
+};
 
 const getFileSystemModule = () => {
   try {
@@ -104,82 +147,25 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Save QR Code directly to Phone Gallery
-  const handleSaveQr = async () => {
-    try {
-      setIsSaving(true);
-      const localUri = await getLocalQrUri();
-      if (!localUri) {
-        Alert.alert("Error", "Could not locate QR code image file.");
-        return;
-      }
-
-      // Require expo-media-library dynamically
-      let MediaLib: any = null;
-      try {
-        MediaLib = require("expo-media-library");
-      } catch (e) {
-        MediaLib = null;
-      }
-
-      if (!MediaLib) {
-        Alert.alert(
-          "Notice",
-          "Media Library module is missing. Please rebuild the app with expo-media-library."
-        );
-        return;
-      }
-
-      // Request media library permission
-      const { status } = await MediaLib.requestPermissionsAsync();
-      if (status !== "granted") {
-        Alert.alert(
-          "Permission Required",
-          "Please allow storage permission to save the QR Code to your photo gallery."
-        );
-        return;
-      }
-
-      // Create asset directly in photo gallery / album
-      const asset = await MediaLib.createAssetAsync(localUri);
-      if (asset) {
-        Alert.alert("Success", "QR Code saved successfully.");
-      } else {
-        Alert.alert("Error", "Could not save QR code to gallery.");
-      }
-    } catch (error: any) {
-      console.error("Error saving QR code to gallery:", error);
-      Alert.alert(
-        "Save Failed",
-        error?.message || "Failed to save QR Code to gallery."
-      );
-    } finally {
-      setIsSaving(false);
-    }
-  };
-
-  // Share QR Code Image File via Share Sheet
+  // Share QR Code Image File
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
       const localUri = await getLocalQrUri();
 
-      let SharingModule: any = null;
-      try {
-        SharingModule = require("expo-sharing");
-      } catch (e) {
-        SharingModule = null;
-      }
-
-      if (SharingModule && typeof SharingModule.shareAsync === "function") {
-        const isAvailable = await SharingModule.isAvailableAsync();
-        if (isAvailable && localUri) {
-          await SharingModule.shareAsync(localUri, {
-            mimeType: "image/png",
-            dialogTitle: "Share JIGUU QR Code",
-            UTI: "public.png",
-          });
-          return;
+      if (isSharingSupported()) {
+        try {
+          const SharingModule = require("expo-sharing");
+          if (SharingModule && typeof SharingModule.shareAsync === "function") {
+            await SharingModule.shareAsync(localUri, {
+              mimeType: "image/png",
+              dialogTitle: "Share JIGUU QR Code",
+              UTI: "public.png",
+            });
+            return;
+          }
+        } catch (e) {
+          console.log("Expo sharing module exception, falling back:", e);
         }
       }
 
@@ -194,6 +180,68 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
       Alert.alert("Error", error?.message || "Failed to share QR Code.");
     } finally {
       setIsSharing(false);
+    }
+  };
+
+  // Direct Gallery Save QR Code
+  const handleSaveQr = async () => {
+    try {
+      setIsSaving(true);
+      const localUri = await getLocalQrUri();
+      if (!localUri) {
+        Alert.alert("Error", "Could not locate QR code image file.");
+        return;
+      }
+
+      // ONLY call require("expo-media-library") IF native binary exists in this client build
+      if (isMediaLibrarySupported()) {
+        try {
+          const MediaLib = require("expo-media-library");
+          const { status } = await MediaLib.requestPermissionsAsync();
+          if (status === "granted") {
+            const asset = await MediaLib.createAssetAsync(localUri);
+            if (asset) {
+              Alert.alert("Success", "QR Code saved successfully.");
+              return;
+            }
+          } else {
+            Alert.alert(
+              "Permission Required",
+              "Please grant photo gallery permission to save the QR Code."
+            );
+            return;
+          }
+        } catch (e: any) {
+          console.log("Media library save error:", e);
+        }
+      }
+
+      // If native MediaLibrary module is not in current dev build, use native share sheet directly
+      if (isSharingSupported()) {
+        try {
+          const SharingModule = require("expo-sharing");
+          await SharingModule.shareAsync(localUri, {
+            mimeType: "image/png",
+            dialogTitle: "Save JIGUU QR Code to Gallery",
+            UTI: "public.png",
+          });
+          return;
+        } catch (e) {}
+      }
+
+      await Share.share({
+        url: localUri,
+        title: "JIGUU QR Code",
+        message: "Scan to install JIGUU App!",
+      });
+    } catch (error: any) {
+      console.error("Error saving QR code to gallery:", error);
+      Alert.alert(
+        "Save Failed",
+        error?.message || "Failed to save QR Code to gallery."
+      );
+    } finally {
+      setIsSaving(false);
     }
   };
 
