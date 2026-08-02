@@ -16,7 +16,6 @@ import { ShareModal } from "@/components/ShareModal";
 import {
   Spacing,
   JiguuColors,
-  Typography,
   BorderRadius,
 } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
@@ -165,42 +164,47 @@ const styles = StyleSheet.create({
     color: JiguuColors.textPrimary,
   },
   photoWrapper: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 52,
+    height: 52,
+    borderRadius: BorderRadius.full,
     overflow: "hidden",
-    marginRight: Spacing.sm,
-  },
-  photoWrapperLandscape: {
-    width: 26,
-    height: 26,
-    borderRadius: 13,
-  },
-  photo: {
-    width: "100%",
-    height: "100%",
-  },
-  photoLandscape: {
-    width: "100%",
-    height: "100%",
-  },
-  textContainer: {
+    marginRight: Spacing.md,
+    alignItems: "center",
     justifyContent: "center",
   },
+  photoWrapperLandscape: {
+    width: 32,
+    height: 32,
+  },
+  photo: {
+    width: 52,
+    height: 70,
+    marginTop: 14,
+  },
+  photoLandscape: {
+    width: 32,
+    height: 44,
+    marginTop: 10,
+  },
+  textContainer: {
+    alignItems: "center",
+  },
   name: {
-    fontSize: 13,
-    fontFamily: "NotoSans_600SemiBold",
+    fontSize: 14,
     color: JiguuColors.textPrimary,
-    lineHeight: 16,
+    lineHeight: 18,
+    fontFamily: "NotoSans_400Regular",
+    letterSpacing: 0.5,
   },
   nameLandscape: {
     fontSize: 12,
     lineHeight: 14,
   },
   title: {
-    fontSize: 10,
+    fontSize: 11,
+    color: "#e64da8",
+    lineHeight: 16,
     fontFamily: "NotoSans_400Regular",
-    color: JiguuColors.textSecondary,
-    opacity: 0.8,
+    marginTop: 2,
   },
 });
