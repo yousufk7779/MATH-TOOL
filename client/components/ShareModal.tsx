@@ -12,6 +12,7 @@ import {
   ScrollView,
   useWindowDimensions,
   Platform,
+  NativeModules,
 } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
@@ -23,6 +24,27 @@ import { JiguuColors, Spacing, BorderRadius } from "@/constants/theme";
 
 const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
 const jiguuQrImage = require("../../assets/images/jiguu-qr-code.png");
+
+// Safe runtime check to verify if native ExpoMediaLibrary binary exists BEFORE requiring the JS package
+const isMediaLibraryAvailable = (): boolean => {
+  try {
+    const globalExpo = (global as any)?.ExpoModules;
+    if (globalExpo) {
+      if (typeof globalExpo.hasModule === "function") {
+        if (globalExpo.hasModule("ExpoMediaLibraryNext") || globalExpo.hasModule("ExpoMediaLibrary")) {
+          return true;
+        }
+      }
+      if (globalExpo.ExpoMediaLibraryNext || globalExpo.ExpoMediaLibrary) {
+        return true;
+      }
+    }
+    if (NativeModules.ExpoMediaLibraryNext || NativeModules.ExpoMediaLibrary || NativeModules.ExponentMediaLibrary) {
+      return true;
+    }
+  } catch (e) {}
+  return false;
+};
 
 interface ShareModalProps {
   visible: boolean;
@@ -97,33 +119,29 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Save QR Code PNG Image File DIRECTLY to Gallery (No share sheet)
+  // Save QR Code PNG Image File DIRECTLY to Gallery (Crash-Proof)
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
-      const fileUri = await getLocalQrFileUri();
 
+      // Check if native module binary is present in current build FIRST
+      if (!isMediaLibraryAvailable()) {
+        Alert.alert(
+          "Gallery Save Notice",
+          "Direct 1-tap gallery save requires media library support in standalone APK. Please use 'Share QR' button to save or send the image."
+        );
+        return;
+      }
+
+      const fileUri = await getLocalQrFileUri();
       if (!fileUri) {
         Alert.alert("Error", "Could not load QR code image file.");
         return;
       }
 
-      let MediaLib: any = null;
-      try {
-        MediaLib = require("expo-media-library");
-      } catch (e) {
-        MediaLib = null;
-      }
-
-      if (!MediaLib || typeof MediaLib.requestPermissionsAsync !== "function") {
-        Alert.alert(
-          "Notice",
-          "Direct gallery save requires expo-media-library native module in your app build."
-        );
-        return;
-      }
-
+      const MediaLib = require("expo-media-library");
       const { status } = await MediaLib.requestPermissionsAsync();
+
       if (status !== "granted") {
         Alert.alert(
           "Permission Required",
@@ -134,22 +152,22 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
 
       const asset = await MediaLib.createAssetAsync(fileUri);
       if (asset) {
-        Alert.alert("Success 📸", "QR Code saved successfully to your gallery!");
+        Alert.alert("Success 📸", "QR Code saved successfully to your photo gallery!");
       } else {
         Alert.alert("Error", "Could not save QR code to gallery.");
       }
     } catch (error: any) {
       console.error("Error saving QR code to gallery:", error);
       Alert.alert(
-        "Save Error",
-        error?.message || "Failed to save QR Code to gallery."
+        "Save Notice",
+        "Direct gallery save is not supported in this environment."
       );
     } finally {
       setIsSaving(false);
     }
   };
 
-  // Share QR Code PNG Image File via Native Share Sheet (WhatsApp, Telegram, etc.)
+  // Share QR Code PNG Image File via Native Share Sheet
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
