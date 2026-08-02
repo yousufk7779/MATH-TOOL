@@ -99,7 +99,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     }
   };
 
-  // Option 1: Share Link (Native Android Share Sheet with Play Store Link)
+  // Option 1: Share Link (Native Share Sheet with Play Store Link)
   const handleShareLink = async () => {
     handleFullClose();
     try {
@@ -121,19 +121,41 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Save QR Code to Phone Gallery
+  // Save QR Code to Phone Gallery (Crash-proof with try/catch blocks)
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
-      const MediaLib = getMediaLibraryModule();
-      if (!MediaLib || typeof MediaLib.requestPermissionsAsync !== "function") {
+      let MediaLib: any = null;
+      try {
+        MediaLib = getMediaLibraryModule();
+      } catch (e) {
+        MediaLib = null;
+      }
+
+      if (!MediaLib) {
         Alert.alert(
           "Notice",
-          "Gallery save feature requires a native rebuild with expo-media-library."
+          "Gallery save feature requires a native app build with expo-media-library."
         );
         return;
       }
-      const { status } = await MediaLib.requestPermissionsAsync();
+
+      // Safe permission check
+      let status: string = "";
+      try {
+        if (typeof MediaLib.requestPermissionsAsync === "function") {
+          const res = await MediaLib.requestPermissionsAsync();
+          status = res?.status || "";
+        }
+      } catch (permError: any) {
+        console.log("Permission error:", permError);
+        Alert.alert(
+          "Notice",
+          "Media Library permissions are not supported in this client build."
+        );
+        return;
+      }
+
       if (status !== "granted") {
         Alert.alert(
           "Permission Required",
@@ -141,34 +163,42 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
         );
         return;
       }
+
       const localUri = await getLocalQrUri();
       if (!localUri) {
         Alert.alert("Error", "Could not locate QR code image file.");
         return;
       }
-      const asset = await MediaLib.createAssetAsync(localUri);
-      if (asset) {
-        Alert.alert("Success", "QR Code saved successfully.");
-      } else {
-        Alert.alert("Error", "Could not save QR code to gallery.");
+
+      try {
+        const asset = await MediaLib.createAssetAsync(localUri);
+        if (asset) {
+          Alert.alert("Success", "QR Code saved successfully.");
+        } else {
+          Alert.alert("Error", "Could not save QR code to gallery.");
+        }
+      } catch (createError: any) {
+        Alert.alert("Error", createError?.message || "Failed to save QR Code.");
       }
-    } catch (error: any) {
-      console.error("Error saving QR code:", error);
-      Alert.alert(
-        "Error",
-        "Failed to save QR Code. " + (error?.message || "")
-      );
+    } catch (globalErr: any) {
+      console.log("Global save error:", globalErr);
+      Alert.alert("Notice", "Save feature is currently unavailable on this device build.");
     } finally {
       setIsSaving(false);
     }
   };
 
-  // Share QR Code Image File
+  // Share QR Code Image File (Crash-proof with fallback)
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
       const localUri = await getLocalQrUri();
-      const SharingModule = getSharingModule();
+      let SharingModule: any = null;
+      try {
+        SharingModule = getSharingModule();
+      } catch (e) {
+        SharingModule = null;
+      }
 
       if (SharingModule && typeof SharingModule.isAvailableAsync === "function") {
         try {
@@ -283,7 +313,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           </Pressable>
         </Pressable>
       ) : (
-        /* 2. Show QR Code View (White Background) */
+        /* 2. Show QR Code View (JIGUU Dark Theme Background for perfect logo visibility) */
         <View style={styles.qrScreenBackground}>
           <ScrollView
             contentContainerStyle={styles.qrScrollContent}
@@ -299,7 +329,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
               <Text style={styles.scanTitle}>Scan to Install JIGUU</Text>
             </View>
 
-            {/* Center: Large QR Image */}
+            {/* Center: Large QR Image inside crisp white card */}
             <View style={styles.qrImageWrapper}>
               <Image
                 source={jiguuQrImage}
@@ -377,7 +407,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                 ]}
                 onPress={handleFullClose}
               >
-                <Feather name="x" size={18} color="#4A4A68" style={styles.btnIcon} />
+                <Feather name="x" size={18} color="#FFFFFF" style={styles.btnIcon} />
                 <Text style={styles.closeBtnText}>Close</Text>
               </Pressable>
             </View>
@@ -480,10 +510,10 @@ const styles = StyleSheet.create({
     color: JiguuColors.textSecondary,
   },
 
-  // QR Screen Styles (White Background)
+  // QR Screen Styles (JIGUU Dark Theme Background for perfect white logo visibility)
   qrScreenBackground: {
     flex: 1,
-    backgroundColor: "#FFFFFF",
+    backgroundColor: JiguuColors.background, // #0B0F1A Navy Dark
   },
   qrScrollContent: {
     flexGrow: 1,
@@ -497,14 +527,14 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.xl,
   },
   jiguuLogo: {
-    width: 190,
-    height: 55,
+    width: 210,
+    height: 60,
     marginBottom: Spacing.md,
   },
   scanTitle: {
     fontSize: 22,
     fontFamily: "NotoSans_700Bold",
-    color: "#0B0F1A",
+    color: "#FFFFFF",
     textAlign: "center",
     letterSpacing: 0.3,
   },
@@ -513,12 +543,12 @@ const styles = StyleSheet.create({
     padding: Spacing.md,
     borderRadius: 20,
     borderWidth: 2,
-    borderColor: "#E2E8F0",
+    borderColor: "rgba(255, 255, 255, 0.2)",
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.1,
-    shadowRadius: 16,
-    elevation: 8,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.3,
+    shadowRadius: 18,
+    elevation: 10,
     alignItems: "center",
     justifyContent: "center",
     marginBottom: Spacing.xl,
@@ -532,12 +562,12 @@ const styles = StyleSheet.create({
   taglineText: {
     fontSize: 15,
     fontFamily: "NotoSans_600SemiBold",
-    color: "#8E24AA",
+    color: "#FF4081",
     textAlign: "center",
     letterSpacing: 0.5,
   },
   taglineDot: {
-    color: "#E91E63",
+    color: "#00E676",
   },
   qrButtonsContainer: {
     width: "100%",
@@ -550,7 +580,7 @@ const styles = StyleSheet.create({
     elevation: 3,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.12,
+    shadowOpacity: 0.2,
     shadowRadius: 6,
   },
   gradientButtonFill: {
@@ -568,9 +598,9 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: Spacing.lg,
     borderRadius: BorderRadius.lg,
-    backgroundColor: "#F1F5F9",
+    backgroundColor: JiguuColors.surfaceLight, // #2A2A3C
     borderWidth: 1,
-    borderColor: "#CBD5E1",
+    borderColor: JiguuColors.border, // #3B3B52
   },
   buttonPressed: {
     opacity: 0.88,
@@ -587,6 +617,6 @@ const styles = StyleSheet.create({
   closeBtnText: {
     fontSize: 16,
     fontFamily: "NotoSans_600SemiBold",
-    color: "#4A4A68",
+    color: "#FFFFFF",
   },
 });
