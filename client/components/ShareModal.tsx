@@ -133,7 +133,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Share QR Code Image File (100% crash-proof)
+  // Share QR Code Image File (Direct & Crash-proof)
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
@@ -169,58 +169,59 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     }
   };
 
-  // Save QR Code to Phone Gallery (Guaranteed Zero Native Module Crash)
+  // Direct Save QR Code (Instant action without complicated popups)
   const handleSaveQr = async () => {
     try {
       setIsSaving(true);
-
-      // Check if native MediaLibrary binary is actually compiled into this app
-      if (!isMediaLibraryNativeAvailable()) {
-        // Fallback: Open native share sheet which includes built-in "Save to Device / Gallery" option
-        Alert.alert(
-          "Save QR Code",
-          "To save the QR Code image, please use the Share sheet and select 'Save to Device / Gallery'.",
-          [
-            {
-              text: "Save via Share",
-              onPress: () => handleShareQr(),
-            },
-            {
-              text: "Cancel",
-              style: "cancel",
-            },
-          ]
-        );
-        return;
-      }
-
-      // Safe requiring only when native module is guaranteed to exist
-      const MediaLib = require("expo-media-library");
-      const { status } = await MediaLib.requestPermissionsAsync();
-
-      if (status !== "granted") {
-        Alert.alert(
-          "Permission Required",
-          "Please allow storage permission to save the QR Code to your photo gallery."
-        );
-        return;
-      }
-
       const localUri = await getLocalQrUri();
       if (!localUri) {
         Alert.alert("Error", "Could not locate QR code image file.");
         return;
       }
 
-      const asset = await MediaLib.createAssetAsync(localUri);
-      if (asset) {
-        Alert.alert("Success", "QR Code saved successfully.");
-      } else {
-        Alert.alert("Error", "Could not save QR code to gallery.");
+      // 1. Try Direct Gallery Save if native MediaLibrary is available
+      if (isMediaLibraryNativeAvailable()) {
+        try {
+          const MediaLib = require("expo-media-library");
+          const { status } = await MediaLib.requestPermissionsAsync();
+          if (status === "granted") {
+            const asset = await MediaLib.createAssetAsync(localUri);
+            if (asset) {
+              Alert.alert("Success", "QR Code saved successfully.");
+              return;
+            }
+          }
+        } catch (e) {
+          console.log("Direct MediaLibrary save error:", e);
+        }
       }
+
+      // 2. Direct Instant Download / Save Sheet fallback
+      if (isSharingNativeAvailable()) {
+        try {
+          const SharingModule = require("expo-sharing");
+          if (SharingModule && typeof SharingModule.shareAsync === "function") {
+            await SharingModule.shareAsync(localUri, {
+              mimeType: "image/png",
+              dialogTitle: "Save JIGUU QR Code",
+              UTI: "public.png",
+            });
+            return;
+          }
+        } catch (e) {
+          console.log("Expo sharing exception:", e);
+        }
+      }
+
+      // 3. Fallback core Share
+      await Share.share({
+        url: localUri,
+        title: "JIGUU QR Code",
+        message: "Scan to install JIGUU App!",
+      });
     } catch (error: any) {
       console.error("Error saving QR code:", error);
-      Alert.alert("Notice", "Could not save directly. Try using Share QR option.");
+      Alert.alert("Error", error?.message || "Failed to save QR Code.");
     } finally {
       setIsSaving(false);
     }
@@ -309,7 +310,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           </Pressable>
         </Pressable>
       ) : (
-        /* 2. Show QR Code View (JIGUU Dark Theme Background for perfect logo visibility) */
+        /* 2. Show QR Code View (JIGUU Dark Theme Background for perfect white logo visibility) */
         <View style={styles.qrScreenBackground}>
           <ScrollView
             contentContainerStyle={styles.qrScrollContent}
