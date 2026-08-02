@@ -218,14 +218,16 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
             contentContainerStyle={styles.qrScrollContent}
             showsVerticalScrollIndicator={false}
           >
-            {/* Header: JIGUU Logo */}
+            {/* Header: JIGUU Logo with Tagline directly below */}
             <View style={styles.qrHeaderContainer}>
               <Image
                 source={jiguuLogoImage}
                 style={styles.jiguuLogo}
                 resizeMode="contain"
               />
-              <Text style={styles.scanTitle}>Scan to Install JIGUU</Text>
+              <Text style={styles.taglineText}>
+                Learn Smart <Text style={styles.taglineDot}>•</Text> Study Smarter
+              </Text>
             </View>
 
             {/* Center: Large QR Image inside crisp white card */}
@@ -237,11 +239,9 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
               />
             </View>
 
-            {/* Tagline */}
-            <View style={styles.taglineContainer}>
-              <Text style={styles.taglineText}>
-                Learn Smart <Text style={styles.taglineDot}>•</Text> Study Smarter
-              </Text>
+            {/* Sub-title directly below QR Code */}
+            <View style={styles.scanTitleContainer}>
+              <Text style={styles.scanTitle}>Scan to Install JIGUU</Text>
             </View>
 
             {/* Buttons Section */}
@@ -402,14 +402,17 @@ const styles = StyleSheet.create({
   jiguuLogo: {
     width: 210,
     height: 60,
-    marginBottom: Spacing.md,
+    marginBottom: Spacing.xs,
   },
-  scanTitle: {
-    fontSize: 22,
-    fontFamily: "NotoSans_700Bold",
-    color: "#FFFFFF",
+  taglineText: {
+    fontSize: 15,
+    fontFamily: "NotoSans_600SemiBold",
+    color: "#FF4081",
     textAlign: "center",
-    letterSpacing: 0.3,
+    letterSpacing: 0.5,
+  },
+  taglineDot: {
+    color: "#00E676",
   },
   qrImageWrapper: {
     backgroundColor: "#FFFFFF",
@@ -424,23 +427,20 @@ const styles = StyleSheet.create({
     elevation: 10,
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: Spacing.xl,
+    marginBottom: Spacing.lg,
   },
   qrImage: {
     borderRadius: 12,
   },
-  taglineContainer: {
-    marginBottom: Spacing["2xl"],
+  scanTitleContainer: {
+    marginBottom: Spacing.xl,
   },
-  taglineText: {
-    fontSize: 15,
-    fontFamily: "NotoSans_600SemiBold",
-    color: "#FF4081",
+  scanTitle: {
+    fontSize: 20,
+    fontFamily: "NotoSans_700Bold",
+    color: "#FFFFFF",
     textAlign: "center",
-    letterSpacing: 0.5,
-  },
-  taglineDot: {
-    color: "#00E676",
+    letterSpacing: 0.3,
   },
   qrButtonsContainer: {
     width: "100%",
