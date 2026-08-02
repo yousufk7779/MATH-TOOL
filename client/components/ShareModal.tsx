@@ -12,7 +12,6 @@ import {
   ScrollView,
   useWindowDimensions,
   Platform,
-  NativeModules,
 } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
@@ -25,27 +24,6 @@ import { JiguuColors, Spacing, BorderRadius } from "@/constants/theme";
 const jiguuLogoImage = require("../../assets/images/jiguu-logo.png");
 const jiguuQrImage = require("../../assets/images/jiguu-qr-code.png");
 
-// Safe runtime check to verify if native ExpoMediaLibrary binary exists BEFORE requiring the JS package
-const isMediaLibraryAvailable = (): boolean => {
-  try {
-    const globalExpo = (global as any)?.ExpoModules;
-    if (globalExpo) {
-      if (typeof globalExpo.hasModule === "function") {
-        if (globalExpo.hasModule("ExpoMediaLibraryNext") || globalExpo.hasModule("ExpoMediaLibrary")) {
-          return true;
-        }
-      }
-      if (globalExpo.ExpoMediaLibraryNext || globalExpo.ExpoMediaLibrary) {
-        return true;
-      }
-    }
-    if (NativeModules.ExpoMediaLibraryNext || NativeModules.ExpoMediaLibrary || NativeModules.ExponentMediaLibrary) {
-      return true;
-    }
-  } catch (e) {}
-  return false;
-};
-
 interface ShareModalProps {
   visible: boolean;
   onClose: () => void;
@@ -53,7 +31,6 @@ interface ShareModalProps {
 
 export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
   const [showQrModal, setShowQrModal] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
   const [isSharing, setIsSharing] = useState(false);
   const { width } = useWindowDimensions();
 
@@ -117,56 +94,6 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
 
   const handleBackToOptions = () => {
     setShowQrModal(false);
-  };
-
-  // Save QR Code PNG Image File (Gallery save in APK, instant file saver in Expo Go)
-  const handleSaveQr = async () => {
-    try {
-      setIsSaving(true);
-      const fileUri = await getLocalQrFileUri();
-
-      if (!fileUri) {
-        Alert.alert("Error", "Could not load QR code image file.");
-        return;
-      }
-
-      // 1. Direct Gallery Save if MediaLibrary native module exists in APK
-      if (isMediaLibraryAvailable()) {
-        try {
-          const MediaLib = require("expo-media-library");
-          const { status } = await MediaLib.requestPermissionsAsync();
-          if (status === "granted") {
-            const asset = await MediaLib.createAssetAsync(fileUri);
-            if (asset) {
-              Alert.alert("Success 📸", "QR Code saved successfully to your gallery!");
-              return;
-            }
-          }
-        } catch (e) {
-          console.log("Direct MediaLibrary save error:", e);
-        }
-      }
-
-      // 2. Instant native file saver fallback (No warning dialogs/popups)
-      const isAvailable = await Sharing.isAvailableAsync();
-      if (isAvailable) {
-        await Sharing.shareAsync(fileUri, {
-          mimeType: "image/png",
-          dialogTitle: "Save JIGUU QR Code Image",
-          UTI: "public.png",
-        });
-      } else {
-        await Share.share({
-          url: fileUri,
-          title: "JIGUU QR Code",
-        });
-      }
-    } catch (error: any) {
-      console.error("Error saving QR code:", error);
-      Alert.alert("Error", error?.message || "Failed to save QR Code image.");
-    } finally {
-      setIsSaving(false);
-    }
   };
 
   // Share QR Code PNG Image File via Native Share Sheet
@@ -271,7 +198,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
                 <View style={styles.optionTextContent}>
                   <Text style={styles.optionTitle}>Show QR Code</Text>
                   <Text style={styles.optionDesc}>
-                    Display, save or share official JIGUU QR Code
+                    Display or share official JIGUU QR Code
                   </Text>
                 </View>
                 <Feather name="chevron-right" size={20} color={JiguuColors.textSecondary} />
@@ -319,32 +246,6 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
 
             {/* Buttons Section */}
             <View style={styles.qrButtonsContainer}>
-              {/* Save QR Button */}
-              <Pressable
-                style={({ pressed }) => [
-                  styles.primaryActionButton,
-                  pressed && styles.buttonPressed,
-                ]}
-                onPress={handleSaveQr}
-                disabled={isSaving}
-              >
-                <LinearGradient
-                  colors={["#304FFE", "#8E24AA"]}
-                  style={styles.gradientButtonFill}
-                  start={{ x: 0, y: 0 }}
-                  end={{ x: 1, y: 0 }}
-                >
-                  {isSaving ? (
-                    <ActivityIndicator size="small" color="#FFFFFF" />
-                  ) : (
-                    <>
-                      <Feather name="download" size={18} color="#FFFFFF" style={styles.btnIcon} />
-                      <Text style={styles.actionBtnText}>Save QR</Text>
-                    </>
-                  )}
-                </LinearGradient>
-              </Pressable>
-
               {/* Share QR Button */}
               <Pressable
                 style={({ pressed }) => [
