@@ -41,37 +41,38 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     onClose();
   };
 
-  // Helper to ensure the QR image is copied to a direct file:// path in FileSystem.cacheDirectory
+  // Safe helper to obtain a valid local file URI for the QR asset
   const getLocalQrFileUri = async (): Promise<string> => {
     try {
-      const cacheDir = (FileSystem as any).cacheDirectory || (FileSystem as any).documentDirectory || "";
-      const destination = `${cacheDir}jiguu_qr_code.png`;
-      const fileInfo = await FileSystem.getInfoAsync(destination);
+      const asset = Asset.fromModule(jiguuQrImage);
+      if (!asset.downloaded || !asset.localUri) {
+        await asset.downloadAsync();
+      }
+      if (asset.localUri) {
+        return asset.localUri;
+      }
+    } catch (e) {
+      console.log("Asset downloadAsync error:", e);
+    }
 
-      if (!fileInfo.exists) {
-        const asset = Asset.fromModule(jiguuQrImage);
-        if (!asset.localUri) {
-          await asset.downloadAsync();
-        }
-
-        if (asset.localUri) {
-          await FileSystem.copyAsync({
-            from: asset.localUri,
-            to: destination,
-          });
-        } else {
-          const resolved = Image.resolveAssetSource(jiguuQrImage);
-          if (resolved && resolved.uri) {
-            await FileSystem.downloadAsync(resolved.uri, destination);
+    try {
+      const resolved = Image.resolveAssetSource(jiguuQrImage);
+      if (resolved && resolved.uri) {
+        if (resolved.uri.startsWith("http://") || resolved.uri.startsWith("https://")) {
+          const cacheDir = (FileSystem as any).cacheDirectory || (FileSystem as any).documentDirectory;
+          if (cacheDir) {
+            const destination = `${cacheDir}jiguu_qr_code.png`;
+            const downloaded = await FileSystem.downloadAsync(resolved.uri, destination);
+            return downloaded.uri;
           }
         }
+        return resolved.uri;
       }
-      return destination;
     } catch (e) {
-      console.log("Error getting local QR file URI:", e);
-      const asset = Asset.fromModule(jiguuQrImage);
-      return asset.localUri || asset.uri;
+      console.log("Image resolveAssetSource error:", e);
     }
+
+    return "";
   };
 
   // Option 1: Share Link (Native Share Sheet with Play Store Link)
@@ -96,11 +97,16 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
     setShowQrModal(false);
   };
 
-  // Share QR Code PNG Image File via Native Share Sheet
+  // Share QR Code PNG Image File
   const handleShareQr = async () => {
     try {
       setIsSharing(true);
       const fileUri = await getLocalQrFileUri();
+
+      if (!fileUri) {
+        Alert.alert("Error", "Could not load QR code image file.");
+        return;
+      }
 
       const isAvailable = await Sharing.isAvailableAsync();
       if (isAvailable) {
@@ -110,11 +116,15 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           UTI: "public.png",
         });
       } else {
-        Alert.alert("Error", "Sharing is not supported on this device.");
+        await Share.share({
+          url: fileUri,
+          title: "JIGUU QR Code",
+          message: "Scan to install JIGUU App!",
+        });
       }
     } catch (error: any) {
-      console.error("Error sharing QR image file:", error);
-      Alert.alert("Error", "Failed to share QR Code image.");
+      console.error("Error sharing QR image:", error);
+      Alert.alert("Error", error?.message || "Failed to share QR Code image.");
     } finally {
       setIsSharing(false);
     }
@@ -126,7 +136,12 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
       setIsSaving(true);
       const fileUri = await getLocalQrFileUri();
 
-      // Check for MediaLibrary if natively compiled in app binary
+      if (!fileUri) {
+        Alert.alert("Error", "Could not load QR code image file.");
+        return;
+      }
+
+      // Try MediaLibrary if natively present in current binary
       let MediaLib: any = null;
       try {
         MediaLib = require("expo-media-library");
@@ -140,7 +155,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           if (status === "granted") {
             const asset = await MediaLib.createAssetAsync(fileUri);
             if (asset) {
-              Alert.alert("Success", "QR Code saved successfully.");
+              Alert.alert("Success", "QR Code saved successfully to gallery.");
               return;
             }
           }
@@ -149,20 +164,23 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
         }
       }
 
-      // If MediaLibrary is not in current dev binary, open native share sheet directly with the PNG file attached
+      // Fallback: Open native share / save intent directly
       const isAvailable = await Sharing.isAvailableAsync();
       if (isAvailable) {
         await Sharing.shareAsync(fileUri, {
           mimeType: "image/png",
-          dialogTitle: "Save / Send JIGUU QR Code Image",
+          dialogTitle: "Save / Download JIGUU QR Code Image",
           UTI: "public.png",
         });
       } else {
-        Alert.alert("Error", "Storage access is not available on this device.");
+        await Share.share({
+          url: fileUri,
+          title: "JIGUU QR Code",
+        });
       }
     } catch (error: any) {
       console.error("Error saving QR code:", error);
-      Alert.alert("Error", "Failed to save QR Code image.");
+      Alert.alert("Error", error?.message || "Failed to save QR Code image.");
     } finally {
       setIsSaving(false);
     }
