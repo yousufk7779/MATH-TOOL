@@ -233,24 +233,27 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
           </Pressable>
         </Pressable>
       ) : (
-        /* 2. Show QR Code & Poster View (Captured as full poster image when sharing) */
+        /* 2. Show QR Code & Poster View */
         <View style={styles.qrScreenBackground}>
           <ScrollView
             contentContainerStyle={styles.qrScrollContent}
             showsVerticalScrollIndicator={false}
           >
-            {/* Captured Poster Container (Logo + Tagline + QR + Scan Text) */}
+            {/* Captured Poster Container */}
             <View ref={posterRef} collapsable={false} style={styles.posterContainer}>
-              {/* Header: JIGUU Logo & Tagline */}
+              {/* Header: JIGUU Logo with Original JIGUU Subtitle */}
               <View style={styles.qrHeaderContainer}>
                 <Image
                   source={jiguuLogoImage}
                   style={styles.jiguuLogo}
                   resizeMode="contain"
                 />
-                <Text style={styles.taglineText}>
-                  Learn Smart <Text style={styles.taglineDot}>•</Text> Study Smarter
-                </Text>
+                <View style={styles.subtitleWrapper}>
+                  <Text style={styles.subtitleTitleMatch}>
+                    Learn Smart <Text style={styles.dot}>.</Text>{" "}
+                    <Text style={styles.subtitleSuffixText}>Study Smarter</Text>
+                  </Text>
+                </View>
               </View>
 
               {/* Center: Large QR Image inside crisp white card */}
@@ -270,7 +273,7 @@ export const ShareModal: React.FC<ShareModalProps> = ({ visible, onClose }) => {
 
             {/* Buttons Section */}
             <View style={styles.qrButtonsContainer}>
-              {/* Share QR Poster Button */}
+              {/* Share QR Code Button */}
               <Pressable
                 style={({ pressed }) => [
                   styles.primaryActionButton,
@@ -420,7 +423,7 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing["2xl"],
   },
 
-  // Poster Layout Container (Captured by captureRef)
+  // Poster Layout Container
   posterContainer: {
     alignItems: "center",
     justifyContent: "center",
@@ -433,22 +436,39 @@ const styles = StyleSheet.create({
   },
   qrHeaderContainer: {
     alignItems: "center",
-    marginBottom: Spacing.xl,
+    marginBottom: Spacing.md,
   },
   jiguuLogo: {
     width: 210,
     height: 60,
-    marginBottom: Spacing.xs,
+    marginBottom: 0,
   },
-  taglineText: {
-    fontSize: 15,
-    fontFamily: "NotoSans_600SemiBold",
-    color: "#FF4081",
-    textAlign: "center",
+  subtitleWrapper: {
+    height: 28,
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: -14,
+  },
+  subtitleTitleMatch: {
+    fontSize: 16,
+    color: "#FFFFFF",
     letterSpacing: 0.5,
+    fontFamily: "NotoSans_400Regular",
+    includeFontPadding: false,
+    lineHeight: 22,
   },
-  taglineDot: {
-    color: "#00E676",
+  subtitleSuffixText: {
+    color: "#e64da8",
+    fontFamily: "NotoSans_400Regular",
+    includeFontPadding: false,
+    lineHeight: 22,
+  },
+  dot: {
+    fontSize: 22,
+    color: "#FFFFFF",
+    position: "relative",
+    top: -1,
   },
   qrImageWrapper: {
     backgroundColor: "#FFFFFF",
