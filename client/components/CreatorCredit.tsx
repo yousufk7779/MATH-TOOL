@@ -1,11 +1,10 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import {
   StyleSheet,
   View,
   Image,
   useWindowDimensions,
   Pressable,
-  Share,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useNavigation, useRoute } from "@react-navigation/native";
@@ -13,6 +12,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Feather } from "@expo/vector-icons";
 
 import { ThemedText } from "@/components/ThemedText";
+import { ShareModal } from "@/components/ShareModal";
 import {
   Spacing,
   JiguuColors,
@@ -32,6 +32,8 @@ export const CreatorCredit = memo(function CreatorCredit() {
   const navigation = useNavigation<NavigationProp>();
   const route = useRoute();
 
+  const [shareModalVisible, setShareModalVisible] = useState(false);
+
   const handleAboutPress = () => {
     if (route.name === "AboutEducator") {
       navigation.navigate("ClassSelector");
@@ -40,79 +42,78 @@ export const CreatorCredit = memo(function CreatorCredit() {
     }
   };
 
-  const handleShare = async () => {
-    try {
-      await Share.share({
-        message:
-          "Download JIGUU NCERT Solutions here:\nhttps://play.google.com/store/apps/details?id=com.jiguu.mathtool",
-      });
-    } catch (error: any) {
-      console.log("Error sharing app: ", error.message);
-    }
+  const handleShare = () => {
+    setShareModalVisible(true);
   };
 
   return (
-    <View
-      style={[
-        styles.container,
-        {
-          paddingBottom: insets.bottom + Spacing.sm - 6,
-          paddingTop: isLandscape ? 4 : Spacing.md - 4,
-        },
-      ]}
-    >
-      <View style={styles.linksContainer}>
-        <Pressable
-          style={styles.aboutLink}
-          onPress={handleAboutPress}
-          hitSlop={10}
-        >
-          <Feather
-            name="info"
-            size={14}
-            color={JiguuColors.textPrimary}
-            style={styles.aboutIcon}
-          />
-          <ThemedText style={styles.aboutText}>About</ThemedText>
-        </Pressable>
-
-        <Pressable style={styles.shareLink} onPress={handleShare} hitSlop={10}>
-          <Feather
-            name="share-2"
-            size={14}
-            color={JiguuColors.textPrimary}
-            style={styles.shareIcon}
-          />
-          <ThemedText style={styles.shareText}>Share</ThemedText>
-        </Pressable>
-      </View>
-
-      <View style={styles.creatorInfo}>
-        <Pressable
-          style={[
-            styles.photoWrapper,
-            isLandscape && styles.photoWrapperLandscape,
-          ]}
-          onPress={handleAboutPress}
-        >
-          <Image
-            source={sameerPhoto}
-            style={[styles.photo, isLandscape && styles.photoLandscape]}
-            resizeMode="cover"
-          />
-        </Pressable>
-        <View style={styles.textContainer}>
-          <ThemedText
-            style={[styles.name, isLandscape && styles.nameLandscape]}
+    <>
+      <ShareModal
+        visible={shareModalVisible}
+        onClose={() => setShareModalVisible(false)}
+      />
+      <View
+        style={[
+          styles.container,
+          {
+            paddingBottom: insets.bottom + Spacing.sm - 6,
+            paddingTop: isLandscape ? 4 : Spacing.md - 4,
+          },
+        ]}
+      >
+        <View style={styles.linksContainer}>
+          <Pressable
+            style={styles.aboutLink}
+            onPress={handleAboutPress}
+            hitSlop={10}
           >
-            Sameer Sir
-          </ThemedText>
-          <ThemedText style={styles.title} numberOfLines={1}>
-            Founder & Educator
-          </ThemedText>
+            <Feather
+              name="info"
+              size={14}
+              color={JiguuColors.textPrimary}
+              style={styles.aboutIcon}
+            />
+            <ThemedText style={styles.aboutText}>About</ThemedText>
+          </Pressable>
+
+          <Pressable style={styles.shareLink} onPress={handleShare} hitSlop={10}>
+            <Feather
+              name="share-2"
+              size={14}
+              color={JiguuColors.textPrimary}
+              style={styles.shareIcon}
+            />
+            <ThemedText style={styles.shareText}>Share</ThemedText>
+          </Pressable>
+        </View>
+
+        <View style={styles.creatorInfo}>
+          <Pressable
+            style={[
+              styles.photoWrapper,
+              isLandscape && styles.photoWrapperLandscape,
+            ]}
+            onPress={handleAboutPress}
+          >
+            <Image
+              source={sameerPhoto}
+              style={[styles.photo, isLandscape && styles.photoLandscape]}
+              resizeMode="cover"
+            />
+          </Pressable>
+          <View style={styles.textContainer}>
+            <ThemedText
+              style={[styles.name, isLandscape && styles.nameLandscape]}
+            >
+              Sameer Sir
+            </ThemedText>
+            <ThemedText style={styles.title} numberOfLines={1}>
+              Founder & Educator
+            </ThemedText>
+          </View>
         </View>
       </View>
-    </View>
+    </>
   );
 });
 
@@ -164,47 +165,42 @@ const styles = StyleSheet.create({
     color: JiguuColors.textPrimary,
   },
   photoWrapper: {
-    width: 52,
-    height: 52,
-    borderRadius: BorderRadius.full,
-    overflow: "hidden",
-    marginRight: Spacing.md,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  photoWrapperLandscape: {
     width: 32,
     height: 32,
+    borderRadius: 16,
+    overflow: "hidden",
+    marginRight: Spacing.sm,
+  },
+  photoWrapperLandscape: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
   },
   photo: {
-    width: 52,
-    height: 70,
-    marginTop: 14,
+    width: "100%",
+    height: "100%",
   },
   photoLandscape: {
-    width: 32,
-    height: 44,
-    marginTop: 10,
+    width: "100%",
+    height: "100%",
   },
   textContainer: {
-    alignItems: "center",
+    justifyContent: "center",
   },
   name: {
-    fontSize: 14,
+    fontSize: 13,
+    fontFamily: "NotoSans_600SemiBold",
     color: JiguuColors.textPrimary,
-    lineHeight: 18,
-    fontFamily: "NotoSans_400Regular",
-    letterSpacing: 0.5,
+    lineHeight: 16,
   },
   nameLandscape: {
     fontSize: 12,
     lineHeight: 14,
   },
   title: {
-    fontSize: 11,
-    color: "#e64da8",
-    lineHeight: 16,
+    fontSize: 10,
     fontFamily: "NotoSans_400Regular",
-    marginTop: 2,
+    color: JiguuColors.textSecondary,
+    opacity: 0.8,
   },
 });
