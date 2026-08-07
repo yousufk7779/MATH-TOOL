@@ -40,7 +40,7 @@ export default function App() {
   useUpdateCheck();
 
   // Load fonts in the background
-  const [fontsLoaded, fontError] = useFonts({
+  useFonts({
     NotoSans_400Regular,
     NotoSans_500Medium,
     NotoSans_600SemiBold,
@@ -50,28 +50,10 @@ export default function App() {
   const [isReady, setIsReady] = React.useState(false);
 
   React.useEffect(() => {
-    let isMounted = true;
-
-    // Fallback: forcefully hide splash screen after 3 seconds if fonts take too long
-    const timer = setTimeout(() => {
-      if (isMounted && !isReady) {
-        setIsReady(true);
-        SplashScreen.hideAsync().catch(() => {});
-      }
-    }, 3000);
-
-    if (fontsLoaded || fontError) {
-      if (isMounted && !isReady) {
-        setIsReady(true);
-        SplashScreen.hideAsync().catch(() => {});
-      }
-    }
-
-    return () => {
-      isMounted = false;
-      clearTimeout(timer);
-    };
-  }, [fontsLoaded, fontError, isReady]);
+    // Hide splash screen immediately on mount for instant app launch
+    setIsReady(true);
+    SplashScreen.hideAsync().catch(() => {});
+  }, []);
 
   if (!isReady) {
     return null;

@@ -53,9 +53,12 @@ export const useUpdateCheck = () => {
       } catch (error) {
         console.log("Update check failed:", error);
       }
-    };
+    // Defer update check to background after app UI loads
+    const timer = setTimeout(() => {
+      checkVersion();
+    }, 2000);
 
-    checkVersion();
+    return () => clearTimeout(timer);
   }, []);
 };
 
