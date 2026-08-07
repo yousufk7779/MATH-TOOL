@@ -16,10 +16,12 @@ export const useUpdateCheck = () => {
         // 2. Try fetching from the backend server first (Fast & Robust)
         try {
           const baseUrl = getApiUrl();
-          const response = await fetch(`${baseUrl}api/latest-version`);
-          if (response.ok) {
-            const data = await response.json();
-            latestVersion = data.latestVersion || null;
+          if (baseUrl) {
+            const response = await fetch(`${baseUrl}api/latest-version`);
+            if (response.ok) {
+              const data = await response.json();
+              latestVersion = data.latestVersion || null;
+            }
           }
         } catch (serverError) {
           console.log(
