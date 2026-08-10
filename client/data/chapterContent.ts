@@ -961,6 +961,111 @@ sstC8Categories.forEach((cat) => {
   }
 });
 
+// Dynamically generate Class 11 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
+const c11Subjects = [
+  { prefix: "phy", title: "Physics" },
+  { prefix: "chem", title: "Chemistry" },
+  { prefix: "zoo", title: "Zoology" },
+  { prefix: "bot", title: "Botany" },
+];
+
+const c11ThemeColors = [
+  "#FF512F", // Ch 1 Coral Red
+  "#8E2DE2", // Ch 2 Purple
+  "#00b09b", // Ch 3 Mint
+  "#11998e", // Ch 4 Emerald
+  "#00c6ff", // Ch 5 Bright Blue
+  "#FF8A65", // Ch 6 Deep Orange
+  "#AB47BC", // Ch 7 Magenta
+  "#FDC830", // Ch 8 Gold
+  "#FF007F", // Ch 9 Neon Rose
+];
+
+c11Subjects.forEach(({ prefix, title }) => {
+  for (let i = 1; i <= 9; i++) {
+    const id = `c11-${prefix}-${i}`;
+    const themeColor = c11ThemeColors[(i - 1) % c11ThemeColors.length];
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: `Class 11 ${title} Chapter ${i}`,
+      isHtmlView: true,
+      htmlOverview: `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <h3 style="color: ${themeColor}; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Reference & Concept Guide</h3>
+          <p style="line-height: 1.6; font-size: 16px;">Welcome to Class 11 ${title} Chapter ${i}. Key Concepts, definitions, formulas, and reference theory for this chapter will be rendered here in this responsive Web View layout.</p>
+        </div>
+      `,
+      htmlExercises: {
+        "ex-c11-qa": `
+          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">NCERT Solutions & Answers</p>
+            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">Detailed step-by-step NCERT Solutions for Class 11 ${title} Chapter ${i} will be populated here.</p>
+          </div>
+        `,
+      },
+      exercises: [
+        {
+          id: "ex-c11-qa",
+          name: "Q & A",
+          questions: [],
+        },
+      ],
+      mcqs: Array.from({ length: 10 }, (_, index) => ({
+        id: `${id}-mcq-${index + 1}`,
+        question: `Class 11 ${title} Chapter ${i} - Practice Question ${index + 1}`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: ["a", "b", "c", "d"][index % 4],
+        explanation: `Explanation for Class 11 ${title} Chapter ${i} Question ${index + 1}.`,
+      })),
+      introduction: `Class 11 ${title} Chapter ${i} Introduction`,
+    };
+  }
+});
+
+// Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
+c11Subjects.forEach(({ prefix, title }) => {
+  for (let i = 1; i <= 9; i++) {
+    const id = `c12-${prefix}-${i}`;
+    const themeColor = c11ThemeColors[(i - 1) % c11ThemeColors.length];
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: `Class 12 ${title} Chapter ${i}`,
+      isHtmlView: true,
+      htmlOverview: `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <h3 style="color: ${themeColor}; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Reference & Concept Guide</h3>
+          <p style="line-height: 1.6; font-size: 16px;">Welcome to Class 12 ${title} Chapter ${i}. Key Concepts, definitions, formulas, and reference theory for this chapter will be rendered here in this responsive Web View layout.</p>
+        </div>
+      `,
+      htmlExercises: {
+        "ex-c12-qa": `
+          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">NCERT Solutions & Answers</p>
+            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">Detailed step-by-step NCERT Solutions for Class 12 ${title} Chapter ${i} will be populated here.</p>
+          </div>
+        `,
+      },
+      exercises: [
+        {
+          id: "ex-c12-qa",
+          name: "Q & A",
+          questions: [],
+        },
+      ],
+      mcqs: Array.from({ length: 10 }, (_, index) => ({
+        id: `${id}-mcq-${index + 1}`,
+        question: `Class 12 ${title} Chapter ${i} - Practice Question ${index + 1}`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: ["a", "b", "c", "d"][index % 4],
+        explanation: `Explanation for Class 12 ${title} Chapter ${i} Question ${index + 1}.`,
+      })),
+      introduction: `Class 12 ${title} Chapter ${i} Introduction`,
+    };
+  }
+});
+
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };

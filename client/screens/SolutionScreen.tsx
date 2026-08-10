@@ -387,6 +387,9 @@ function SolutionScreen() {
     if (chapterData?.exercises && chapterData.exercises.length > 0) {
       subs.push(...chapterData.exercises.map((ex: any) => ex.id));
     }
+    if (chapterData?.htmlExercises && typeof chapterData.htmlExercises === "object") {
+      subs.push(...Object.keys(chapterData.htmlExercises));
+    }
     if (chapterData?.examples && chapterData.examples.length > 0) {
       subs.push("examples");
     }
@@ -916,7 +919,16 @@ function SolutionScreen() {
   let tab2Title = "Exercises";
   const tab3Title = "MCQs";
 
-  if (chapterId.startsWith("sci-")) {
+  const isSeniorClass =
+    className === "Class 11" ||
+    className === "Class 12" ||
+    chapterId.startsWith("c11-") ||
+    chapterId.startsWith("c12-");
+
+  if (isSeniorClass) {
+    tab1Title = "Reference";
+    tab2Title = "Solutions";
+  } else if (chapterId.startsWith("sci-")) {
     tab1Title = "Quick Revision";
     tab2Title = "NCERT Solutions";
   } else if (chapterId.startsWith("sst-")) {
@@ -959,13 +971,15 @@ function SolutionScreen() {
               textStyle={hwTitleStyle}
             />
           )}
-          <TabButton
-            title={tab3Title}
-            isActive={activeSection === "mcq"}
-            onPress={() => handleSectionChange("mcq")}
-            gradient={chapterGradient}
-            textStyle={hwTitleStyle}
-          />
+          {!isSeniorClass && (
+            <TabButton
+              title={tab3Title}
+              isActive={activeSection === "mcq"}
+              onPress={() => handleSectionChange("mcq")}
+              gradient={chapterGradient}
+              textStyle={hwTitleStyle}
+            />
+          )}
         </View>
 
         {activeSection === "exercises" && exerciseSubSections.length > 1 && (

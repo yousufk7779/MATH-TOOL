@@ -46,6 +46,98 @@ export const class10Chapters: Chapter[] = [
 ];
 
 export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
+  "Class 12 Science": {
+    Physics: [
+      { id: "c12-phy-1", number: 1, name: "Electric Charges and Fields", color: "#FF512F" },
+      { id: "c12-phy-2", number: 2, name: "Electrostatic Potential & Capacitance", color: "#8E2DE2" },
+      { id: "c12-phy-3", number: 3, name: "Current Electricity", color: "#00b09b" },
+      { id: "c12-phy-4", number: 4, name: "Moving Charges and Magnetism", color: "#11998e" },
+      { id: "c12-phy-5", number: 5, name: "Magnetism and Matter", color: "#00c6ff" },
+      { id: "c12-phy-6", number: 6, name: "Electromagnetic Induction", color: "#FF8A65" },
+      { id: "c12-phy-7", number: 7, name: "Alternating Current", color: "#AB47BC" },
+      { id: "c12-phy-8", number: 8, name: "Electromagnetic Waves", color: "#FDC830" },
+      { id: "c12-phy-9", number: 9, name: "Ray Optics and Optical Instruments", color: "#FF007F" },
+    ],
+    Chemistry: [
+      { id: "c12-chem-1", number: 1, name: "Solutions", color: "#8E2DE2" },
+      { id: "c12-chem-2", number: 2, name: "Electrochemistry", color: "#00b09b" },
+      { id: "c12-chem-3", number: 3, name: "Chemical Kinetics", color: "#FF512F" },
+      { id: "c12-chem-4", number: 4, name: "The d- and f-Block Elements", color: "#11998e" },
+      { id: "c12-chem-5", number: 5, name: "Coordination Compounds", color: "#00c6ff" },
+      { id: "c12-chem-6", number: 6, name: "Haloalkanes and Haloarenes", color: "#FF8A65" },
+      { id: "c12-chem-7", number: 7, name: "Alcohols, Phenols and Ethers", color: "#AB47BC" },
+      { id: "c12-chem-8", number: 8, name: "Aldehydes, Ketones & Carboxylic Acids", color: "#FDC830" },
+      { id: "c12-chem-9", number: 9, name: "Amines & Biomolecules", color: "#FF007F" },
+    ],
+    Zoology: [
+      { id: "c12-zoo-1", number: 1, name: "Human Reproduction", color: "#00b09b" },
+      { id: "c12-zoo-2", number: 2, name: "Reproductive Health", color: "#FF512F" },
+      { id: "c12-zoo-3", number: 3, name: "Principles of Inheritance & Variation", color: "#8E2DE2" },
+      { id: "c12-zoo-4", number: 4, name: "Molecular Basis of Inheritance", color: "#11998e" },
+      { id: "c12-zoo-5", number: 5, name: "Evolution", color: "#00c6ff" },
+      { id: "c12-zoo-6", number: 6, name: "Human Health and Diseases", color: "#FF8A65" },
+      { id: "c12-zoo-7", number: 7, name: "Microbes in Human Welfare", color: "#AB47BC" },
+      { id: "c12-zoo-8", number: 8, name: "Biotechnology: Principles & Processes", color: "#FDC830" },
+      { id: "c12-zoo-9", number: 9, name: "Biotechnology and its Applications", color: "#FF007F" },
+    ],
+    Botany: [
+      { id: "c12-bot-1", number: 1, name: "Sexual Reproduction in Flowering Plants", color: "#11998e" },
+      { id: "c12-bot-2", number: 2, name: "Organisms and Populations", color: "#FF512F" },
+      { id: "c12-bot-3", number: 3, name: "Ecosystem", color: "#8E2DE2" },
+      { id: "c12-bot-4", number: 4, name: "Biodiversity and Conservation", color: "#00b09b" },
+      { id: "c12-bot-5", number: 5, name: "Environmental Issues", color: "#00c6ff" },
+      { id: "c12-bot-6", number: 6, name: "Plant Biotechnology & Genetics", color: "#FF8A65" },
+      { id: "c12-bot-7", number: 7, name: "Plant Physiology & Nutrition", color: "#AB47BC" },
+      { id: "c12-bot-8", number: 8, name: "Crop Improvement & Breeding", color: "#FDC830" },
+      { id: "c12-bot-9", number: 9, name: "Plant Resources & Conservation", color: "#FF007F" },
+    ],
+  },
+  "Class 11 Science": {
+    Physics: [
+      { id: "c11-phy-1", number: 1, name: "Units and Measurements", color: "#FF512F" },
+      { id: "c11-phy-2", number: 2, name: "Motion in a Straight Line", color: "#8E2DE2" },
+      { id: "c11-phy-3", number: 3, name: "Motion in a Plane", color: "#00b09b" },
+      { id: "c11-phy-4", number: 4, name: "Laws of Motion", color: "#FF8A65" },
+      { id: "c11-phy-5", number: 5, name: "Work, Energy and Power", color: "#00c6ff" },
+      { id: "c11-phy-6", number: 6, name: "System of Particles & Rotational Motion", color: "#AB47BC" },
+      { id: "c11-phy-7", number: 7, name: "Gravitation", color: "#FDC830" },
+      { id: "c11-phy-8", number: 8, name: "Mechanical Properties of Solids", color: "#FF007F" },
+      { id: "c11-phy-9", number: 9, name: "Mechanical Properties of Fluids", color: "#26C6DA" },
+    ],
+    Chemistry: [
+      { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#8E2DE2" },
+      { id: "c11-chem-2", number: 2, name: "Structure of Atom", color: "#00b09b" },
+      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#FF512F" },
+      { id: "c11-chem-4", number: 4, name: "Chemical Bonding & Molecular Structure", color: "#00c6ff" },
+      { id: "c11-chem-5", number: 5, name: "Chemical Thermodynamics", color: "#FF8A65" },
+      { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
+      { id: "c11-chem-7", number: 7, name: "Redox Reactions", color: "#FDC830" },
+      { id: "c11-chem-8", number: 8, name: "Organic Chemistry – Basic Principles", color: "#FF007F" },
+      { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#26C6DA" },
+    ],
+    Zoology: [
+      { id: "c11-zoo-1", number: 1, name: "Animal Kingdom", color: "#00b09b" },
+      { id: "c11-zoo-2", number: 2, name: "Structural Organisation in Animals", color: "#FF512F" },
+      { id: "c11-zoo-3", number: 3, name: "Biomolecules", color: "#8E2DE2" },
+      { id: "c11-zoo-4", number: 4, name: "Breathing and Exchange of Gases", color: "#00c6ff" },
+      { id: "c11-zoo-5", number: 5, name: "Body Fluids and Circulation", color: "#FF8A65" },
+      { id: "c11-zoo-6", number: 6, name: "Excretory Products and Elimination", color: "#AB47BC" },
+      { id: "c11-zoo-7", number: 7, name: "Locomotion and Movement", color: "#FDC830" },
+      { id: "c11-zoo-8", number: 8, name: "Neural Control and Coordination", color: "#FF007F" },
+      { id: "c11-zoo-9", number: 9, name: "Chemical Coordination & Integration", color: "#26C6DA" },
+    ],
+    Botany: [
+      { id: "c11-bot-1", number: 1, name: "The Living World", color: "#11998e" },
+      { id: "c11-bot-2", number: 2, name: "Biological Classification", color: "#FF512F" },
+      { id: "c11-bot-3", number: 3, name: "Plant Kingdom", color: "#8E2DE2" },
+      { id: "c11-bot-4", number: 4, name: "Cell: The Unit of Life", color: "#00b09b" },
+      { id: "c11-bot-5", number: 5, name: "Cell Cycle and Cell Division", color: "#00c6ff" },
+      { id: "c11-bot-6", number: 6, name: "Photosynthesis in Higher Plants", color: "#FF8A65" },
+      { id: "c11-bot-7", number: 7, name: "Respiration in Plants", color: "#AB47BC" },
+      { id: "c11-bot-8", number: 8, name: "Plant Growth and Development", color: "#FDC830" },
+      { id: "c11-bot-9", number: 9, name: "Anatomy of Flowering Plants", color: "#FF007F" },
+    ],
+  },
   "Class 10 Social Science": {
     History: [
       {
@@ -1115,6 +1207,22 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
       JiguuColors.gradients.violet,
     ];
     return ecoPool[(num - 1) % ecoPool.length] as string[];
+  }
+
+  if (chapterId.match(/^c1[12]-(phy|chem|zoo|bot)-\d+$/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const multiColorPool = [
+      ["#FF512F", "#DD2476"], // Coral Red
+      ["#8E2DE2", "#4A00E0"], // Purple Violet
+      ["#00b09b", "#96c93d"], // Mint Teal
+      ["#11998e", "#38ef7d"], // Emerald
+      ["#00c6ff", "#0072ff"], // Bright Blue
+      ["#FF8A65", "#FF3D00"], // Deep Orange
+      ["#AB47BC", "#7B1FA2"], // Deep Magenta
+      ["#FDC830", "#F37335"], // Gold Amber
+      ["#FF007F", "#7928CA"], // Neon Rose
+    ];
+    return multiColorPool[(num - 1) % multiColorPool.length];
   }
 
   if (chapterId.match(/^c[789]-sci-\d+$/)) {

@@ -61,6 +61,24 @@ function ClassSelectorScreen() {
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonWrapper}>
             <ColorButton
+              testID="button-class-12"
+              title="Class 12"
+              colors={["#6A11CB", "#2575FC"]}
+              onPress={() => navigation.navigate("Class12")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-class-11"
+              title="Class 11"
+              colors={["#FF512F", "#DD2476"]}
+              onPress={() => navigation.navigate("Class11")}
+            />
+          </View>
+
+          <View style={styles.buttonWrapper}>
+            <ColorButton
               testID="button-class-10"
               title="Class 10"
               colors={JiguuColors.gradients.blue}

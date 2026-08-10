@@ -27,6 +27,22 @@ export const JiguuLogo = memo(function JiguuLogo({
   let subtitleSuffix = "Class 10";
   const params = route.params as any;
 
+  const isClass12 =
+    route.name === "Class12" ||
+    params?.className === "Class 12" ||
+    (typeof params?.subject === "string" &&
+      params.subject.includes("Class 12")) ||
+    (typeof params?.chapterId === "string" &&
+      (params.chapterId.startsWith("c12-") || params.chapterId.includes("-c12-")));
+
+  const isClass11 =
+    route.name === "Class11" ||
+    params?.className === "Class 11" ||
+    (typeof params?.subject === "string" &&
+      params.subject.includes("Class 11")) ||
+    (typeof params?.chapterId === "string" &&
+      (params.chapterId.startsWith("c11-") || params.chapterId.includes("-c11-")));
+
   const isClass9 =
     route.name === "Class9" ||
     route.name === "Class9SocialScience" ||
@@ -56,7 +72,9 @@ export const JiguuLogo = memo(function JiguuLogo({
 
   const isClassSelector = route.name === "ClassSelector";
 
-  if (isClass9) subtitleSuffix = "Class 9";
+  if (isClass12) subtitleSuffix = "Class 12";
+  else if (isClass11) subtitleSuffix = "Class 11";
+  else if (isClass9) subtitleSuffix = "Class 9";
   else if (isClass8) subtitleSuffix = "Class 8";
   else if (isClass7) subtitleSuffix = "Class 7";
   else if (isClassSelector) subtitleSuffix = "Study Smarter";

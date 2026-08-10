@@ -8,12 +8,16 @@ export const getHomeRoute = (
   chapterId?: string,
 ): keyof RootStackParamList => {
   if (className) {
+    if (className.includes("Class 12")) return "Class12";
+    if (className.includes("Class 11")) return "Class11";
     if (className.includes("Class 9")) return "Class9";
     if (className.includes("Class 8")) return "Class8";
     if (className.includes("Class 7")) return "Class7";
   }
 
   if (chapterId) {
+    if (chapterId.startsWith("c12-") || chapterId.includes("-c12-")) return "Class12";
+    if (chapterId.startsWith("c11-") || chapterId.includes("-c11-")) return "Class11";
     if (chapterId.startsWith("c9-") || chapterId.includes("-c9-")) return "Class9";
     if (chapterId.startsWith("c8-") || chapterId.includes("-c8-")) return "Class8";
     if (chapterId.startsWith("c7-") || chapterId.includes("-c7-")) return "Class7";
