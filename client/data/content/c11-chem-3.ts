@@ -137,634 +137,646 @@ export const c11Chem3HtmlOverview = `
 
   <!-- EMBED 2D CRYSTAL-CLEAR HTML PERIODIC TABLE CHART -->
   
-  <div style="display: block; width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 25px 0; border: 1.5px solid #00b09b; border-radius: 12px; background: #0A111E; padding: 16px;">
+  <div style="display: block; width: 100%; max-width: 100%; overflow-x: scroll; -webkit-overflow-scrolling: touch; margin: 25px 0; border: 1.5px solid #00b09b; border-radius: 12px; background: #0A111E; padding: 16px;">
     <h3 style="color: #00b09b; margin: 0 0 4px 0; font-weight: bold; text-align: center; font-size: 18px;">✨ Modern Periodic Table (High-Definition 2D Vector View)</h3>
-    <p style="color: #80cbc4; text-align: center; font-size: 13px; margin: 0 0 16px 0;">Scroll horizontally to view all 18 Groups & 118 Elements clearly with crisp text</p>
+    <p style="color: #80cbc4; text-align: center; font-size: 13.5px; margin: 0 0 16px 0; font-weight: bold;">👈 Slide horizontally to view all 18 Groups & 118 Elements 👉</p>
 
     <!-- BLOCK LEGEND -->
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 16px; font-size: 13px;">
-      <span style="background: rgba(0, 230, 118, 0.2); border: 1px solid #00E676; color: #00E676; padding: 3px 10px; border-radius: 4px; font-weight: bold;">s-Block (Groups 1-2)</span>
-      <span style="background: rgba(255, 179, 0, 0.2); border: 1px solid #FFB300; color: #FFB300; padding: 3px 10px; border-radius: 4px; font-weight: bold;">d-Block (Groups 3-12)</span>
-      <span style="background: rgba(0, 176, 255, 0.2); border: 1px solid #00B0FF; color: #00B0FF; padding: 3px 10px; border-radius: 4px; font-weight: bold;">p-Block (Groups 13-18)</span>
-      <span style="background: rgba(224, 64, 251, 0.2); border: 1px solid #E040FB; color: #E040FB; padding: 3px 10px; border-radius: 4px; font-weight: bold;">f-Block (Lanthanoids & Actinoids)</span>
+      <span style="background: rgba(0, 230, 118, 0.2); border: 1px solid #00E676; color: #00E676; padding: 4px 12px; border-radius: 4px; font-weight: bold;">s-Block (Groups 1-2)</span>
+      <span style="background: rgba(255, 179, 0, 0.2); border: 1px solid #FFB300; color: #FFB300; padding: 4px 12px; border-radius: 4px; font-weight: bold;">d-Block (Groups 3-12)</span>
+      <span style="background: rgba(0, 176, 255, 0.2); border: 1px solid #00B0FF; color: #00B0FF; padding: 4px 12px; border-radius: 4px; font-weight: bold;">p-Block (Groups 13-18)</span>
+      <span style="background: rgba(224, 64, 251, 0.2); border: 1px solid #E040FB; color: #E040FB; padding: 4px 12px; border-radius: 4px; font-weight: bold;">f-Block (Lanthanoids & Actinoids)</span>
     </div>
 
-    <!-- MAIN GRID (18 Groups x 7 Rows) -->
-    <div style="display: grid; grid-template-columns: repeat(18, minmax(54px, 1fr)); gap: 4px; min-width: 1000px;">
-  
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">1</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">H</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hydrogen</span>
-        </div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">2</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">He</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Helium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">3</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Li</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lithium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">4</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Be</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Beryllium</span>
-        </div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">5</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">B</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Boron</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">6</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">C</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Carbon</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">7</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">N</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nitrogen</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">8</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">O</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Oxygen</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">9</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">F</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Fluorine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">10</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ne</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neon</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">11</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Na</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Sodium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">12</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Mg</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Magnesium</span>
-        </div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">13</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Al</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Aluminium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">14</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Si</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Silicon</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">15</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">P</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Phosphorus</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">16</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">S</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Sulfur</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">17</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Cl</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Chlorine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">18</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ar</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Argon</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">19</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">K</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Potassium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">20</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ca</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Calcium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">21</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Sc</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Scandium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">22</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ti</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Titanium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">23</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">V</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Vanadium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">24</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Chromium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">25</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mn</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Manganese</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">26</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Fe</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iron</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">27</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Co</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cobalt</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">28</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ni</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nickel</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">29</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cu</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Copper</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">30</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Zn</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Zinc</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">31</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ga</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gallium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">32</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ge</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Germanium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">33</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">As</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Arsenic</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">34</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Se</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Selenium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">35</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Br</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bromine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">36</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Kr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Krypton</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">37</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Rb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rubidium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">38</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Sr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Strontium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">39</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Y</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Yttrium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">40</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Zr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Zirconium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">41</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Nb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Niobium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">42</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mo</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Molybdenum</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">43</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Tc</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Technetium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">44</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ru</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Ruthenium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">45</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rh</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rhodium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">46</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Pd</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Palladium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">47</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ag</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Silver</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">48</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cd</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cadmium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">49</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">In</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Indium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">50</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Sn</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tin</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">51</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Sb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Antimony</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">52</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Te</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tellurium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">53</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">I</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iodine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">54</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Xe</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Xenon</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">55</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Cs</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cesium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">56</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ba</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Barium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">57-71</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">La-Lu</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lanthanoids</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">72</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hf</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hafnium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">73</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ta</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tantalum</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">74</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">W</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tungsten</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">75</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Re</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rhenium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">76</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Os</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Osmium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">77</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ir</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iridium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">78</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Pt</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Platinum</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">79</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Au</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gold</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">80</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hg</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Mercury</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">81</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Tl</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thallium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">82</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Pb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lead</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">83</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Bi</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bismuth</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">84</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Po</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Polonium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">85</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">At</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Astatine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">86</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Rn</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Radon</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">87</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Fr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Francium</span>
-        </div>
-        <div style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">88</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ra</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Radium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">89-103</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ac-Lr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Actinoids</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">104</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rf</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rutherfordium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">105</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Db</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Dubnium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">106</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Sg</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Seaborgium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">107</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Bh</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bohrium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">108</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hs</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hassium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">109</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mt</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Meitnerium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">110</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ds</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Darmstadtium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">111</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rg</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Roentgenium</span>
-        </div>
-        <div style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">112</span>
-          <span style="font-size: 14px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cn</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Copernicium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">113</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Nh</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nihonium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">114</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Fl</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Flerovium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">115</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Mc</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Moscovium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">116</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Lv</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Livermorium</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">117</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ts</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tennessine</span>
-        </div>
-        <div style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">118</span>
-          <span style="font-size: 14px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Og</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Oganesson</span>
-        </div>
-    </div>
+    <!-- MAIN PERIODIC TABLE HTML TABLE (DISPLAY: TABLE FORCES HORIZONTAL SCROLL) -->
+    <table style="display: table; min-width: 1200px; width: 1200px; border-collapse: separate; border-spacing: 4px; table-layout: fixed; margin: 0 auto;">
+      <thead>
+        <tr>
+          <th style="width: 25px; color: #00b09b; font-size: 11px;"></th>
+  <th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G1</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G2</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G3</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G4</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G5</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G6</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G7</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G8</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G9</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G10</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G11</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G12</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G13</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G14</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G15</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G16</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G17</th><th style="width: 62px; color: #00b09b; font-size: 12px; text-align: center; font-weight: bold;">G18</th></tr>
+      </thead>
+      <tbody><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P1</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">1</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">H</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hydrogen</div>
+        </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">2</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">He</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Helium</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P2</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">3</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Li</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lithium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">4</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Be</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Beryllium</div>
+        </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">5</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">B</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Boron</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">6</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">C</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Carbon</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">7</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">N</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nitrogen</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">8</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">O</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Oxygen</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">9</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">F</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Fluorine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">10</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ne</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neon</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P3</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">11</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Na</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Sodium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">12</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Mg</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Magnesium</div>
+        </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">13</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Al</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Aluminium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">14</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Si</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Silicon</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">15</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">P</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Phosphorus</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">16</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">S</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Sulfur</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">17</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Cl</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Chlorine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">18</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ar</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Argon</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P4</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">19</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">K</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Potassium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">20</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ca</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Calcium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">21</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Sc</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Scandium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">22</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ti</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Titanium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">23</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">V</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Vanadium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">24</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Chromium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">25</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mn</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Manganese</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">26</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Fe</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iron</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">27</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Co</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cobalt</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">28</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ni</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nickel</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">29</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cu</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Copper</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">30</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Zn</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Zinc</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">31</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ga</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gallium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">32</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ge</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Germanium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">33</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">As</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Arsenic</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">34</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Se</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Selenium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">35</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Br</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bromine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">36</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Kr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Krypton</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P5</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">37</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Rb</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rubidium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">38</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Sr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Strontium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">39</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Y</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Yttrium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">40</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Zr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Zirconium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">41</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Nb</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Niobium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">42</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mo</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Molybdenum</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">43</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Tc</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Technetium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">44</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ru</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Ruthenium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">45</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rh</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rhodium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">46</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Pd</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Palladium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">47</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ag</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Silver</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">48</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cd</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cadmium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">49</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">In</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Indium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">50</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Sn</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tin</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">51</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Sb</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Antimony</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">52</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Te</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tellurium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">53</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">I</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iodine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">54</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Xe</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Xenon</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P6</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">55</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Cs</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cesium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">56</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ba</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Barium</div>
+        </td>
+        <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">57-71</div>
+          <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">La-Lu</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lanthanoids</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">72</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hf</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hafnium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">73</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ta</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tantalum</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">74</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">W</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tungsten</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">75</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Re</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rhenium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">76</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Os</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Osmium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">77</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ir</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Iridium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">78</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Pt</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Platinum</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">79</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Au</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gold</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">80</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hg</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Mercury</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">81</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Tl</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thallium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">82</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Pb</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lead</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">83</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Bi</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bismuth</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">84</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Po</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Polonium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">85</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">At</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Astatine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">86</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Rn</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Radon</div>
+        </td></tr><tr><td style="color: #00b09b; font-size: 12px; font-weight: bold; text-align: center;">P7</td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">87</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Fr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Francium</div>
+        </td>
+        <td style="background: rgba(0, 230, 118, 0.18); border: 1px solid #00E676; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">88</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00E676; line-height: 1.1; margin: 2px 0;">Ra</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Radium</div>
+        </td>
+        <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">89-103</div>
+          <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ac-Lr</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Actinoids</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">104</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rf</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Rutherfordium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">105</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Db</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Dubnium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">106</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Sg</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Seaborgium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">107</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Bh</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Bohrium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">108</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Hs</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Hassium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">109</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Mt</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Meitnerium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">110</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Ds</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Darmstadtium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">111</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Rg</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Roentgenium</div>
+        </td>
+        <td style="background: rgba(255, 179, 0, 0.18); border: 1px solid #FFB300; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">112</div>
+          <div style="font-size: 15px; font-weight: bold; color: #FFB300; line-height: 1.1; margin: 2px 0;">Cn</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Copernicium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">113</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Nh</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nihonium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">114</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Fl</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Flerovium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">115</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Mc</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Moscovium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">116</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Lv</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Livermorium</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">117</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Ts</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Tennessine</div>
+        </td>
+        <td style="background: rgba(0, 176, 255, 0.18); border: 1px solid #00B0FF; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+          <div style="font-size: 10px; color: #BBB; line-height: 1;">118</div>
+          <div style="font-size: 15px; font-weight: bold; color: #00B0FF; line-height: 1.1; margin: 2px 0;">Og</div>
+          <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Oganesson</div>
+        </td></tr>
+      </tbody>
+    </table>
 
-    <!-- LANTHANOIDS & ACTINOIDS SEPARATE BOTTOM GRID -->
-    <div style="margin-top: 20px; min-width: 1000px;">
-      <p style="color: #E040FB; font-weight: bold; font-size: 13px; margin: 0 0 6px 0; text-align: center;">f-Block: Lanthanoid Series (4f Orbital Filled - Z = 57 to 71)</p>
-      <div style="display: grid; grid-template-columns: repeat(15, minmax(54px, 1fr)); gap: 4px;">
-  
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">57</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">La</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lanthanum</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">58</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ce</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cerium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">59</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Praseodymium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">60</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Nd</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neodymium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">61</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pm</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Promethium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">62</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Sm</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Samarium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">63</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Eu</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Europium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">64</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Gd</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gadolinium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">65</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Tb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Terbium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">66</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Dy</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Dysprosium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">67</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ho</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Holmium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">68</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Er</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Erbium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">69</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Tm</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thulium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">70</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Yb</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Ytterbium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">71</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Lu</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lutetium</span>
-        </div>
-      </div>
+    <!-- LANTHANOIDS & ACTINOIDS SEPARATE BOTTOM TABLE -->
+    <div style="margin-top: 25px;">
+      <p style="color: #E040FB; font-weight: bold; font-size: 14px; margin: 0 0 8px 0; text-align: center;">f-Block: Lanthanoid Series (4f Orbital Filled - Z = 57 to 71)</p>
+      <table style="display: table; min-width: 1200px; width: 1200px; border-collapse: separate; border-spacing: 4px; table-layout: fixed; margin: 0 auto;">
+        <tbody>
+          <tr>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">57</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">La</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lanthanum</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">58</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ce</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Cerium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">59</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pr</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Praseodymium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">60</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Nd</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neodymium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">61</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pm</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Promethium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">62</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Sm</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Samarium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">63</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Eu</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Europium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">64</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Gd</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Gadolinium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">65</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Tb</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Terbium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">66</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Dy</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Dysprosium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">67</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ho</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Holmium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">68</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Er</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Erbium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">69</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Tm</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thulium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">70</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Yb</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Ytterbium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">71</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Lu</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lutetium</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-      <p style="color: #E040FB; font-weight: bold; font-size: 13px; margin: 12px 0 6px 0; text-align: center;">f-Block: Actinoid Series (5f Orbital Filled - Z = 89 to 103)</p>
-      <div style="display: grid; grid-template-columns: repeat(15, minmax(54px, 1fr)); gap: 4px;">
-  
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">89</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ac</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Actinium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">90</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Th</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thorium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">91</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pa</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Protactinium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">92</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">U</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Uranium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">93</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Np</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neptunium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">94</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pu</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Plutonium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">95</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Am</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Americium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">96</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Cm</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Curium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">97</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Bk</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Berkelium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">98</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Cf</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Californium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">99</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Es</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Einsteinium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">100</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Fm</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Fermium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">101</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Md</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Mendelevium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">102</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">No</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nobelium</span>
-        </div>
-        <div style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 4px 2px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; min-height: 52px;">
-          <span style="font-size: 10px; color: #BBB; line-height: 1;">103</span>
-          <span style="font-size: 14px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Lr</span>
-          <span style="font-size: 9px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lawrencium</span>
-        </div>
-      </div>
+      <p style="color: #E040FB; font-weight: bold; font-size: 14px; margin: 16px 0 8px 0; text-align: center;">f-Block: Actinoid Series (5f Orbital Filled - Z = 89 to 103)</p>
+      <table style="display: table; min-width: 1200px; width: 1200px; border-collapse: separate; border-spacing: 4px; table-layout: fixed; margin: 0 auto;">
+        <tbody>
+          <tr>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">89</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Ac</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Actinium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">90</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Th</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Thorium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">91</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pa</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Protactinium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">92</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">U</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Uranium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">93</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Np</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Neptunium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">94</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Pu</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Plutonium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">95</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Am</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Americium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">96</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Cm</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Curium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">97</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Bk</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Berkelium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">98</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Cf</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Californium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">99</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Es</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Einsteinium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">100</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Fm</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Fermium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">101</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Md</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Mendelevium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">102</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">No</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Nobelium</div>
+            </td>
+            <td style="background: rgba(224, 64, 251, 0.18); border: 1px solid #E040FB; border-radius: 6px; padding: 5px 3px; text-align: center; vertical-align: middle; height: 56px;">
+              <div style="font-size: 10px; color: #BBB; line-height: 1;">103</div>
+              <div style="font-size: 15px; font-weight: bold; color: #E040FB; line-height: 1.1; margin: 2px 0;">Lr</div>
+              <div style="font-size: 9.5px; color: #DDD; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1;">Lawrencium</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
   </div>
