@@ -4,55 +4,7 @@
 export const c11Chem1HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
-  <!-- TOP FEATURE: QUICK GLOSSARY & BASIC DEFINITIONS -->
-  <div style="background: linear-gradient(135deg, rgba(255, 81, 47, 0.15), rgba(221, 36, 118, 0.15)); border: 1.5px solid #FF512F; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 style="color: #FF512F; margin: 0 0 10px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary & Basic Definitions</h2>
-    <p style="color: #FFAB91; margin: 0 0 12px 0; font-size: 14.5px; text-align: center;">Essential Fundamental Terms & Concepts for Chapter 1: Some Basic Concepts of Chemistry</p>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">1. Chemistry:</span> Branch of science studying composition, structure, properties, and transformations of matter.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">2. Matter:</span> Anything that possesses mass, occupies volume, and can be perceived by senses.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">3. Element:</span> Pure substance containing only one type of atom (e.g., Na, Cu, O₂).
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">4. Compound:</span> Substance formed by chemical combination of two or more elements in fixed mass ratio.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">5. Atom:</span> Smallest particle of an element retaining chemical identity; may or may not exist independently.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">6. Molecule:</span> Smallest independent particle of a substance formed by chemical combination of atoms.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">7. Mole (mol):</span> SI base unit containing exactly 6.02214076 × 10²³ elementary entities.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">8. Molar Mass:</span> Mass of 1 mole of a substance expressed in g/mol.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">9. Empirical Formula:</span> Simplest whole-number ratio of atoms present in a compound.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">10. Molecular Formula:</span> Actual total number of atoms of each element in a molecule.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">11. Limiting Reagent:</span> Reactant completely consumed first in a reaction, limiting product yield.
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">12. Molarity (M):</span> Moles of solute dissolved per Litre of solution (temperature-dependent).
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">13. Molality (m):</span> Moles of solute present per kilogram of solvent (temperature-independent).
-      </div>
-      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
-        <span style="color: #FF512F; font-weight: bold;">14. Mole Fraction (X):</span> Ratio of moles of one component to total moles of all components.
-      </div>
-    </div>
+  
   </div>
 
 
