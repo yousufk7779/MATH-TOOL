@@ -1317,6 +1317,9 @@ const MathWebView = memo(
       >
         <WebView
           originWhitelist={["*"]}
+          allowFileAccess={true}
+          allowingReadAccessToURL="*"
+          mixedContentMode="always"
           source={{ html: fullHtml, baseUrl: "" }}
           injectedJavaScript={injectedJS}
           onMessage={(event) => {

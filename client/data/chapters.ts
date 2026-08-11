@@ -1086,6 +1086,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
   if (chapterId === "c11-chem-4") return ["#00c6ff", "#0072ff"];
   if (chapterId === "c11-chem-5") return ["#FF8A65", "#FF3D00"];
+  if (chapterId === "c11-chem-6") return ["#AB47BC", "#7B1FA2"];
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;

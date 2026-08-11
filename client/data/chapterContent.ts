@@ -113,6 +113,7 @@ import { c11Chem2HtmlOverview, c11Chem2HtmlSolutions } from "./content/c11-chem-
 import { c11Chem3HtmlOverview, c11Chem3HtmlSolutions } from "./content/c11-chem-3";
 import { c11Chem4HtmlOverview, c11Chem4HtmlSolutions } from "./content/c11-chem-4";
 import { c11Chem5HtmlOverview, c11Chem5HtmlSolutions } from "./content/c11-chem-5";
+import { c11Chem6HtmlOverview, c11Chem6HtmlSolutions } from "./content/c11-chem-6";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1076,6 +1077,16 @@ if (ch11Chem5) {
     ch11Chem5.htmlExercises = {};
   }
   ch11Chem5.htmlExercises["ex-c11-qa"] = c11Chem5HtmlSolutions;
+}
+
+// Override Class 11 Chemistry Chapter 6 with full high-level Reference & Solutions content
+const ch11Chem6 = chapterContents["c11-chem-6"];
+if (ch11Chem6) {
+  ch11Chem6.htmlOverview = c11Chem6HtmlOverview;
+  if (!ch11Chem6.htmlExercises) {
+    ch11Chem6.htmlExercises = {};
+  }
+  ch11Chem6.htmlExercises["ex-c11-qa"] = c11Chem6HtmlSolutions;
 }
 
 // Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
