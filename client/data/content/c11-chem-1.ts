@@ -4,6 +4,58 @@
 export const c11Chem1HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
+  <!-- TOP FEATURE: QUICK GLOSSARY & BASIC DEFINITIONS -->
+  <div style="background: linear-gradient(135deg, rgba(255, 81, 47, 0.15), rgba(221, 36, 118, 0.15)); border: 1.5px solid #FF512F; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
+    <h2 style="color: #FF512F; margin: 0 0 10px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary & Basic Definitions</h2>
+    <p style="color: #FFAB91; margin: 0 0 12px 0; font-size: 14.5px; text-align: center;">Essential Fundamental Terms Every Chemistry Student Must Know</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">1. Chemistry:</span> Branch of science studying composition, structure, properties, and reactions of matter.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">2. Matter:</span> Anything that possesses mass, occupies volume, and can be perceived by senses.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">3. Element:</span> Pure substance containing only one type of atom (e.g., Na, Cu, O₂).
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">4. Compound:</span> Substance formed by chemical combination of two or more elements in fixed mass ratio.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">5. Atom:</span> Smallest particle of an element retaining chemical identity; may or may not exist independently.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">6. Molecule:</span> Smallest independent particle of a substance formed by combination of atoms.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">7. Mole (mol):</span> SI base unit containing exactly 6.022 × 10²³ elementary entities.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">8. Molar Mass:</span> Mass of 1 mole of a substance expressed in g/mol.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">9. Empirical Formula:</span> Simplest whole-number ratio of atoms present in a compound.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">10. Molecular Formula:</span> Actual total number of atoms of each element in a molecule.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">11. Limiting Reagent:</span> Reactant completely consumed first in a reaction, limiting product yield.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">12. Molarity (M):</span> Moles of solute dissolved per Litre of solution (temperature-dependent).
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">13. Molality (m):</span> Moles of solute present per kilogram of solvent (temperature-independent).
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #FF512F; border-radius: 4px;">
+        <span style="color: #FF512F; font-weight: bold;">14. Mole Fraction (X):</span> Ratio of moles of one component to total moles of all components.
+      </div>
+    </div>
+  </div>
+
+
   <!-- SECTION 1: GENERAL INTRODUCTION & IMPORTANCE OF CHEMISTRY -->
   <h2 style="color: #FF512F; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 10px; font-size: 20px;">1. General Introduction & Importance of Chemistry</h2>
   
@@ -120,8 +172,7 @@ export const c11Chem1HtmlOverview = `
     <h3 style="color: #FF512F; margin: 0 0 8px 0; font-size: 17px;">Law 2: Law of Definite Proportions / Constant Composition (Joseph Proust, 1799)</h3>
     <p style="margin: 0 0 8px 0;"><i>"A given chemical compound always contains exactly the same elements combined together in the same fixed proportion by mass, irrespective of its source or method of preparation."</i></p>
     <p style="margin: 6px 0 0 0; font-size: 14px; color: #FFAB91;"><b>Example:</b> Water (H<sub>2</sub>O) obtained from river, rain, or synthesized in lab always contains Hydrogen and Oxygen in mass ratio:<br>
-    Mass Ratio H : O = 2 : 16 = 1 : 8 = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">8</span></span>
+    Mass Ratio H : O = 2 : 16 = 1 : 8 = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">8</span></span>
     </p>
   </div>
 
@@ -197,14 +248,10 @@ export const c11Chem1HtmlOverview = `
   <h2 style="color: #FF512F; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">6. Atomic and Molecular Masses</h2>
   
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Unified Atomic Mass Unit (u or amu)</h3>
-  <p>One atomic mass unit (amu or unified mass 'u') is defined as a mass unit equal to exactly 
-  <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 3px;">1</span><span style="display:block; padding:0 3px;">12</span></span>
-  <sup>th</sup> of the mass of one Carbon-12 atom.</p>
+  <p>One atomic mass unit (amu or unified mass 'u') is defined as a mass unit equal to exactly <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">12</span></span><sup>th</sup> of the mass of one Carbon-12 atom.</p>
 
   <div style="background: rgba(255, 81, 47, 0.1); border-radius: 6px; padding: 10px; text-align: center; font-weight: bold; margin: 12px 0; color: #FFF;">
-    1 u = 1 amu = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 3px;">Mass of 1 C-12 Atom</span><span style="display:block; padding:0 3px;">12</span></span>
-    = 1.66056 × 10<sup>-24</sup> g = 1.66056 × 10<sup>-27</sup> kg
+    1 u = 1 amu = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of 1 C-12 Atom</span><span style="display:block; padding:0 4px;">12</span></span> = 1.66056 × 10<sup>-24</sup> g = 1.66056 × 10<sup>-27</sup> kg
   </div>
 
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Average Atomic Mass</h3>
@@ -212,8 +259,7 @@ export const c11Chem1HtmlOverview = `
 
   <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 12px; margin: 12px 0;">
     <p style="margin: 0; font-weight: bold; text-align: center;">
-      Average Atomic Mass = 
-      <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">(a<sub>1</sub> × m<sub>1</sub>) + (a<sub>2</sub> × m<sub>2</sub>) + ... + (a<sub>n</sub> × m<sub>n</sub>)</span><span style="display:block; padding:0 4px;">a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub></span></span>
+      Average Atomic Mass = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">(a₁ × m₁) + (a₂ × m₂) + ... + (aₙ × mₙ)</span><span style="display:block; padding:0 4px;">a₁ + a₂ + ... + aₙ</span></span>
     </p>
     <p style="margin: 8px 0 0 0; font-size: 13px; color: #FFAB91; text-align: center;">(where a<sub>i</sub> = fractional or percentage abundance, m<sub>i</sub> = atomic mass of isotope)</p>
   </div>
@@ -221,11 +267,7 @@ export const c11Chem1HtmlOverview = `
   <div style="background: rgba(255, 81, 47, 0.05); padding: 12px; border-left: 3px solid #FF512F; margin: 12px 0;">
     <b>Worked Numerical:</b> Natural Chlorine consists of 75.77% <sup>35</sup>Cl (mass = 34.969 u) and 24.23% <sup>37</sup>Cl (mass = 36.966 u). Calculate average atomic mass.<br>
     <b>Solution:</b><br>
-    Average Mass = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">(75.77 × 34.969) + (24.23 × 36.966)</span><span style="display:block; padding:0 4px;">100</span></span>
-    = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2649.5 + 895.68</span><span style="display:block; padding:0 4px;">100</span></span>
-    = <b>35.45 u</b>
+    Average Mass = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">(75.77 × 34.969) + (24.23 × 36.966)</span><span style="display:block; padding:0 4px;">100</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2649.5 + 895.68</span><span style="display:block; padding:0 4px;">100</span></span> = <b>35.45 u</b>
   </div>
 
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Molecular Mass & Formula Mass</h3>
@@ -261,17 +303,11 @@ export const c11Chem1HtmlOverview = `
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Master Formulas for Calculating Moles (n)</h3>
 
   <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin: 12px 0;">
-    <p style="margin: 6px 0;"><b>1. From Mass:</b> &nbsp;&nbsp; n = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Given Mass in grams (w)</span><span style="display:block; padding:0 4px;">Molar Mass (M)</span></span>
-    </p>
+    <p style="margin: 6px 0;"><b>1. From Mass:</b> &nbsp;&nbsp; n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Given Mass in grams (w)</span><span style="display:block; padding:0 4px;">Molar Mass (M)</span></span></p>
 
-    <p style="margin: 12px 0;"><b>2. From Number of Particles:</b> &nbsp;&nbsp; n = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Number of Particles (N)</span><span style="display:block; padding:0 4px;">Avogadro Number (N<sub>A</sub>)</span></span>
-    </p>
+    <p style="margin: 12px 0;"><b>2. From Number of Particles:</b> &nbsp;&nbsp; n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Number of Particles (N)</span><span style="display:block; padding:0 4px;">Avogadro Number (N_A)</span></span></p>
 
-    <p style="margin: 12px 0;"><b>3. From Volume of Gas at STP:</b> &nbsp;&nbsp; n = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Volume of Gas at STP (V in L)</span><span style="display:block; padding:0 4px;">22.4 L</span></span>
-    </p>
+    <p style="margin: 12px 0;"><b>3. From Volume of Gas at STP:</b> &nbsp;&nbsp; n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Volume of Gas at STP (V in L)</span><span style="display:block; padding:0 4px;">22.4 L</span></span></p>
   </div>
 
   <div style="background: rgba(255, 81, 47, 0.05); padding: 14px; border-left: 3px solid #FF512F; margin: 15px 0;">
@@ -279,9 +315,7 @@ export const c11Chem1HtmlOverview = `
     <p style="margin: 0;"><b>Question:</b> Calculate (i) Moles of CO<sub>2</sub>, (ii) Number of CO<sub>2</sub> molecules, and (iii) Total Oxygen atoms present in 8.8 grams of CO<sub>2</sub> gas.<br>
     <b>Solution:</b><br>
     Molar Mass of CO<sub>2</sub> = 12 + (2 × 16) = 44 g/mol.<br>
-    (i) Moles of CO<sub>2</sub> (n) = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">8.8 g</span><span style="display:block; padding:0 4px;">44 g/mol</span></span>
-    = <b>0.2 mol</b><br>
+    (i) Moles of CO<sub>2</sub> (n) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">8.8 g</span><span style="display:block; padding:0 4px;">44 g/mol</span></span> = <b>0.2 mol</b><br>
     (ii) Number of CO<sub>2</sub> Molecules = n × N<sub>A</sub> = 0.2 × 6.022 × 10<sup>23</sup> = <b>1.2044 × 10<sup>23</sup> molecules</b><br>
     (iii) Since 1 molecule of CO<sub>2</sub> contains 2 Oxygen atoms:<br>
     Total Oxygen atoms = 2 × (1.2044 × 10<sup>23</sup>) = <b>2.4088 × 10<sup>23</sup> atoms</b>
@@ -294,8 +328,7 @@ export const c11Chem1HtmlOverview = `
   
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Mass Percentage Composition</h3>
   <div style="background: rgba(255, 81, 47, 0.1); padding: 10px; border-radius: 6px; text-align: center; font-weight: bold; margin: 10px 0; color: #FFF;">
-    Mass % of an Element = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of element in 1 mol compound</span><span style="display:block; padding:0 4px;">Molar Mass of Compound</span></span> × 100
+    Mass % of an Element = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of element in 1 mol compound</span><span style="display:block; padding:0 4px;">Molar Mass of Compound</span></span> × 100
   </div>
 
   <h3 style="color: #FF512F; margin-top: 18px; font-size: 18px;">Empirical Formula vs Molecular Formula</h3>
@@ -309,8 +342,7 @@ export const c11Chem1HtmlOverview = `
       Molecular Formula = n × (Empirical Formula)
     </p>
     <p style="margin: 8px 0 0 0; text-align: center;">
-      n = 
-      <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Molar (Molecular) Mass</span><span style="display:block; padding:0 4px;">Empirical Formula Mass</span></span>
+      n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Molar (Molecular) Mass</span><span style="display:block; padding:0 4px;">Empirical Formula Mass</span></span>
     </p>
   </div>
 
@@ -327,23 +359,16 @@ export const c11Chem1HtmlOverview = `
     <h4 style="color: #FF512F; margin: 0 0 6px 0; font-size: 16px;">Comprehensive Worked Numerical</h4>
     <p style="margin: 0;"><b>Problem:</b> A organic compound contains 40.0% Carbon, 6.7% Hydrogen, and 53.3% Oxygen by mass. Its molar mass is 180 g/mol. Determine its Empirical Formula and Molecular Formula.<br><br>
     <b>Step-by-step Solution:</b><br>
-    • Carbon moles = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">40.0</span><span style="display:block; padding:0 4px;">12</span></span> = 3.33<br>
-    • Hydrogen moles = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.7</span><span style="display:block; padding:0 4px;">1.008</span></span> = 6.65<br>
-    • Oxygen moles = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">53.3</span><span style="display:block; padding:0 4px;">16</span></span> = 3.33<br><br>
+    • Carbon moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">40.0</span><span style="display:block; padding:0 4px;">12</span></span> = 3.33<br>
+    • Hydrogen moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.7</span><span style="display:block; padding:0 4px;">1.008</span></span> = 6.65<br>
+    • Oxygen moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">53.3</span><span style="display:block; padding:0 4px;">16</span></span> = 3.33<br><br>
     • Simple Ratio (divide by 3.33):<br>
-    C = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.33</span><span style="display:block; padding:0 4px;">3.33</span></span> = 1, &nbsp;&nbsp;
-    H = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.65</span><span style="display:block; padding:0 4px;">3.33</span></span> = 2, &nbsp;&nbsp;
-    O = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.33</span><span style="display:block; padding:0 4px;">3.33</span></span> = 1<br><br>
+    C = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.33</span><span style="display:block; padding:0 4px;">3.33</span></span> = 1, &nbsp;&nbsp;
+    H = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.65</span><span style="display:block; padding:0 4px;">3.33</span></span> = 2, &nbsp;&nbsp;
+    O = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.33</span><span style="display:block; padding:0 4px;">3.33</span></span> = 1<br><br>
     👉 <b>Empirical Formula = CH<sub>2</sub>O</b><br>
     • Empirical Formula Mass = 12 + 2(1) + 16 = 30 g/mol.<br>
-    • Multiplier n = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">180</span><span style="display:block; padding:0 4px;">30</span></span> = 6.<br>
+    • Multiplier n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">180</span><span style="display:block; padding:0 4px;">30</span></span> = 6.<br>
     👉 <b>Molecular Formula = 6 × (CH<sub>2</sub>O) = C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> (Glucose)</b>
     </p>
   </div>
@@ -380,8 +405,7 @@ export const c11Chem1HtmlOverview = `
   <h4 style="color: #FF512F; margin-top: 14px; font-size: 16px;">Golden Rule to Identify Limiting Reagent:</h4>
   <p>For reaction <i>a A + b B → Products</i>, calculate the ratio:
   <br>
-  Ratio for Reactant = 
-  <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Available Moles of Reactant</span><span style="display:block; padding:0 4px;">Stoichiometric Coefficient in balanced eq</span></span>
+  Ratio for Reactant = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Available Moles of Reactant</span><span style="display:block; padding:0 4px;">Stoichiometric Coefficient in balanced eq</span></span>
   <br>
   The reactant with the <b>smaller ratio</b> is the <b>Limiting Reagent</b>!</p>
 
@@ -390,16 +414,12 @@ export const c11Chem1HtmlOverview = `
     <p style="margin: 0;"><b>Question:</b> 50.0 kg of N<sub>2</sub>(g) and 10.0 kg of H<sub>2</sub>(g) are mixed to produce NH<sub>3</sub>(g). Identify the limiting reagent and calculate mass of NH<sub>3</sub> formed.<br><br>
     <b>Solution:</b><br>
     Balanced Reaction: N<sub>2</sub>(g) + 3 H<sub>2</sub>(g) → 2 NH<sub>3</sub>(g)<br>
-    • Moles of N<sub>2</sub> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">50000 g</span><span style="display:block; padding:0 4px;">28 g/mol</span></span> = 1785.7 mol.<br>
-    • Moles of H<sub>2</sub> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">10000 g</span><span style="display:block; padding:0 4px;">2.016 g/mol</span></span> = 4960.3 mol.<br><br>
+    • Moles of N<sub>2</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">50000 g</span><span style="display:block; padding:0 4px;">28 g/mol</span></span> = 1785.7 mol.<br>
+    • Moles of H<sub>2</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">10000 g</span><span style="display:block; padding:0 4px;">2.016 g/mol</span></span> = 4960.3 mol.<br><br>
     • According to stoichiometry, 1 mol N<sub>2</sub> requires 3 mol H<sub>2</sub>.<br>
     Moles of H<sub>2</sub> required for 1785.7 mol N<sub>2</sub> = 3 × 1785.7 = <b>5357.1 mol H<sub>2</sub></b>.<br>
     Since we only have 4960.3 mol H<sub>2</sub>, <b>H<sub>2</sub> is the Limiting Reagent!</b><br><br>
-    • Moles of NH<sub>3</sub> formed = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × Moles of H<sub>2</sub> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × 4960.3 = <b>3306.9 mol NH<sub>3</sub></b>.<br>
+    • Moles of NH<sub>3</sub> formed = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × Moles of H<sub>2</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × 4960.3 = <b>3306.9 mol NH<sub>3</sub></b>.<br>
     • Mass of NH<sub>3</sub> = 3306.9 mol × 17.03 g/mol = 56316 g = <b>56.3 kg NH<sub>3</sub></b>.
     </p>
   </div>
@@ -413,22 +433,17 @@ export const c11Chem1HtmlOverview = `
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin: 15px 0;">
     
     <h3 style="color: #FF512F; margin: 0 0 10px 0; font-size: 17px;">1. Mass Percentage (% w/w)</h3>
-    <p style="margin: 0 0 10px 0;">% w/w = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of Solute</span><span style="display:block; padding:0 4px;">Total Mass of Solution</span></span> × 100
-    </p>
+    <p style="margin: 0 0 10px 0;">% w/w = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of Solute</span><span style="display:block; padding:0 4px;">Total Mass of Solution</span></span> × 100</p>
 
     <h3 style="color: #FF512F; margin: 15px 0 10px 0; font-size: 17px;">2. Mole Fraction (X)</h3>
     <p style="margin: 0 0 10px 0;">Ratio of moles of a particular component to total moles of all components in solution.<br>
-    Mole Fraction of Solute (X<sub>A</sub>) = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n<sub>A</sub></span><span style="display:block; padding:0 4px;">n<sub>A</sub> + n<sub>B</sub></span></span><br>
+    Mole Fraction of Solute (X<sub>A</sub>) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n_A</span><span style="display:block; padding:0 4px;">n_A + n_B</span></span><br>
     <b>Property:</b> X<sub>A</sub> + X<sub>B</sub> = 1. (Dimensionless & Temperature Independent!).
     </p>
 
     <h3 style="color: #FF512F; margin: 15px 0 10px 0; font-size: 17px;">3. Molarity (M)</h3>
     <p style="margin: 0 0 10px 0;">Number of moles of solute dissolved per Litre (1 dm<sup>3</sup>) of solution.<br>
-    Molarity (M) = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Moles of Solute (n)</span><span style="display:block; padding:0 4px;">Volume of Solution in Litres (V)</span></span> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w<sub>A</sub> × 1000</span><span style="display:block; padding:0 4px;">M<sub>A</sub> × V (in mL)</span></span>
+    Molarity (M) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Moles of Solute (n)</span><span style="display:block; padding:0 4px;">Volume of Solution in Litres (V)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w_A × 1000</span><span style="display:block; padding:0 4px;">M_A × V (in mL)</span></span>
     <br>
     <b>Temperature Dependency:</b> Molarity <b>changes with Temperature</b> because solution volume expands or contracts with temperature changes.
     <br>
@@ -437,9 +452,7 @@ export const c11Chem1HtmlOverview = `
 
     <h3 style="color: #FF512F; margin: 15px 0 10px 0; font-size: 17px;">4. Molality (m)</h3>
     <p style="margin: 0 0 10px 0;">Number of moles of solute present per kilogram (kg) of solvent.<br>
-    Molality (m) = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Moles of Solute (n<sub>A</sub>)</span><span style="display:block; padding:0 4px;">Mass of Solvent in kg (W<sub>B</sub>)</span></span> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w<sub>A</sub> × 1000</span><span style="display:block; padding:0 4px;">M<sub>A</sub> × W<sub>B</sub> (in g)</span></span>
+    Molality (m) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Moles of Solute (n_A)</span><span style="display:block; padding:0 4px;">Mass of Solvent in kg (W_B)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w_A × 1000</span><span style="display:block; padding:0 4px;">M_A × W_B (in g)</span></span>
     <br>
     <b>Temperature Dependency:</b> Molality is <b>INDEPENDENT of Temperature</b> because mass does not change with temperature. (Preferred in thermodynamics!).
     </p>
@@ -453,24 +466,29 @@ export const c11Chem1HtmlOverview = `
     20% (w/w) KI means 20 g KI is present in 100 g solution.<br>
     • Mass of Solute (KI) = 20 g.<br>
     • Mass of Solvent (H<sub>2</sub>O) = 100 - 20 = 80 g = 0.080 kg.<br>
-    • Moles of KI = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">20 g</span><span style="display:block; padding:0 4px;">166 g/mol</span></span> = 0.1205 mol.<br><br>
+    • Moles of KI = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">20 g</span><span style="display:block; padding:0 4px;">166 g/mol</span></span> = 0.1205 mol.<br><br>
     (i) <b>Molality (m):</b><br>
-    m = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.1205 mol</span><span style="display:block; padding:0 4px;">0.080 kg</span></span> = <b>1.506 m (mol/kg)</b><br><br>
+    m = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.1205 mol</span><span style="display:block; padding:0 4px;">0.080 kg</span></span> = <b>1.506 m (mol/kg)</b><br><br>
     (ii) <b>Molarity (M):</b><br>
-    Volume of 100 g Solution = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass</span><span style="display:block; padding:0 4px;">Density</span></span> = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">100 g</span><span style="display:block; padding:0 4px;">1.202 g/mL</span></span> = 83.19 mL = 0.08319 L.<br>
-    Molarity = 
-    <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.1205 mol</span><span style="display:block; padding:0 4px;">0.08319 L</span></span> = <b>1.448 M (mol/L)</b>
+    Volume of 100 g Solution = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass</span><span style="display:block; padding:0 4px;">Density</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">100 g</span><span style="display:block; padding:0 4px;">1.202 g/mL</span></span> = 83.19 mL = 0.08319 L.<br>
+    Molarity = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.1205 mol</span><span style="display:block; padding:0 4px;">0.08319 L</span></span> = <b>1.448 M (mol/L)</b>
     </p>
   </div>
 
-  <!-- Summary Box -->
-  <div style="background: linear-gradient(135deg, rgba(255, 81, 47, 0.15), rgba(221, 36, 118, 0.15)); border: 1px solid #FF512F; border-radius: 10px; padding: 15px; margin-top: 25px; text-align: center;">
-    <p style="color: #FFF; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">Summary Checklist for Unit 1</p>
-    <p style="color: #FFAB91; margin: 0; font-size: 14px;">✔ 5 Laws of Chemical Combination &nbsp;|&nbsp; ✔ Dalton's Atomic Theory &nbsp;|&nbsp; ✔ Mole Concept Master Formulas &nbsp;|&nbsp; ✔ Empirical vs Molecular Formula &nbsp;|&nbsp; ✔ Limiting Reagent &nbsp;|&nbsp; ✔ Molarity vs Molality</p>
+  <!-- BOTTOM FEATURE: KEY POINTS & MASTER FORMULAS CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(255, 81, 47, 0.15), rgba(221, 36, 118, 0.15)); border: 1.5px solid #FF512F; border-radius: 10px; padding: 16px; margin-top: 25px;">
+    <h3 style="color: #FF512F; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Formula & Key Points Cheat Sheet</h3>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
+      <li><b>Avogadro Constant:</b> N<sub>A</sub> = 6.022 × 10²³ particles / mol.</li>
+      <li><b>1 u (amu):</b> 1.66056 × 10⁻²⁴ g = 1.66056 × 10⁻²⁷ kg.</li>
+      <li><b>Moles (n):</b> n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w</span><span style="display:block; padding:0 4px;">M</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">N</span><span style="display:block; padding:0 4px;">N_A</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">V (in L at STP)</span><span style="display:block; padding:0 4px;">22.4 L</span></span>.</li>
+      <li><b>Empirical & Molecular Formula:</b> Molecular Formula = n × (Empirical Formula), where n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Molecular Mass</span><span style="display:block; padding:0 4px;">Empirical Formula Mass</span></span>.</li>
+      <li><b>Molarity (M):</b> M = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n_solute</span><span style="display:block; padding:0 4px;">V_solution (L)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w_A × 1000</span><span style="display:block; padding:0 4px;">M_A × V(mL)</span></span>. (Temperature Dependent).</li>
+      <li><b>Molality (m):</b> m = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n_solute</span><span style="display:block; padding:0 4px;">W_solvent (kg)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">w_A × 1000</span><span style="display:block; padding:0 4px;">M_A × W(g)</span></span>. (Temperature Independent).</li>
+      <li><b>Mole Fraction (X):</b> X_A = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n_A</span><span style="display:block; padding:0 4px;">n_A + n_B</span></span>; X_A + X_B = 1. (Temperature Independent).</li>
+      <li><b>Dilution Law:</b> M₁V₁ = M₂V₂.</li>
+      <li><b>Vapour Density:</b> Molar Mass = 2 × Vapour Density.</li>
+    </ul>
   </div>
 
 </div>
