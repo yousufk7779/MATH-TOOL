@@ -108,6 +108,7 @@ import { c9SciBio1 } from "./content/c9-sci-bio-1";
 import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
+import { c11Chem1HtmlOverview } from "./content/c11-chem-1";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1022,6 +1023,11 @@ c11Subjects.forEach(({ prefix, title }) => {
     };
   }
 });
+
+// Override Class 11 Chemistry Chapter 1 with full high-level Reference content
+if (chapterContents["c11-chem-1"]) {
+  chapterContents["c11-chem-1"].htmlOverview = c11Chem1HtmlOverview;
+}
 
 // Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
 c11Subjects.forEach(({ prefix, title }) => {
