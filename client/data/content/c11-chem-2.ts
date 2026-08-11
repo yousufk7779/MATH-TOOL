@@ -7,17 +7,17 @@ export const c11Chem2HtmlOverview = `
   <!-- TOP FEATURE: QUICK GLOSSARY & BASIC DEFINITIONS -->
   <div style="background: linear-gradient(135deg, rgba(142, 45, 226, 0.15), rgba(74, 0, 224, 0.15)); border: 1.5px solid #8E2DE2; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
     <h2 style="color: #8E2DE2; margin: 0 0 10px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary & Basic Definitions</h2>
-    <p style="color: #B388FF; margin: 0 0 12px 0; font-size: 14.5px; text-align: center;">Key Fundamental Terms for Chapter 2: Structure of Atom</p>
+    <p style="color: #B388FF; margin: 0 0 12px 0; font-size: 14.5px; text-align: center;">Key Fundamental Terms & Concepts for Chapter 2: Structure of Atom</p>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">1. Electron:</span> Negatively charged subatomic particle (charge = -1.602 × 10⁻¹⁹ C, mass = 9.109 × 10⁻³¹ kg).
+        <span style="color: #8E2DE2; font-weight: bold;">1. Electron:</span> Negatively charged subatomic particle (charge e = -1.602 × 10⁻¹⁹ C, mass m_e = 9.109 × 10⁻³¹ kg).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">2. Proton:</span> Positively charged subatomic particle present in nucleus (charge = +1.602 × 10⁻¹⁹ C, mass = 1.672 × 10⁻²⁷ kg).
+        <span style="color: #8E2DE2; font-weight: bold;">2. Proton:</span> Positively charged subatomic particle present in nucleus (charge = +1.602 × 10⁻¹⁹ C, mass m_p = 1.6726 × 10⁻²⁷ kg).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">3. Neutron:</span> Neutral subatomic particle present in nucleus discovered by Chadwick (mass = 1.675 × 10⁻²⁷ kg).
+        <span style="color: #8E2DE2; font-weight: bold;">3. Neutron:</span> Neutral subatomic particle present in nucleus discovered by Chadwick (mass m_n = 1.6749 × 10⁻²⁷ kg).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
         <span style="color: #8E2DE2; font-weight: bold;">4. Atomic Number (Z):</span> Total number of protons present in the nucleus of an atom.
@@ -26,34 +26,49 @@ export const c11Chem2HtmlOverview = `
         <span style="color: #8E2DE2; font-weight: bold;">5. Mass Number (A):</span> Total sum of protons and neutrons (nucleons) in the nucleus (A = Z + N).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">6. Isotopes:</span> Atoms of same element having same Z but different A (e.g., ¹²C, ¹⁴C).
+        <span style="color: #8E2DE2; font-weight: bold;">6. Isotopes:</span> Atoms of same element having same Z but different mass number A (e.g., ¹²C, ¹⁴C).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
         <span style="color: #8E2DE2; font-weight: bold;">7. Isobars:</span> Atoms of different elements having same mass number A but different Z (e.g., ⁴⁰Ar, ⁴⁰Ca).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">8. Photoelectric Effect:</span> Ejection of electrons from metal surface when light of threshold frequency strikes it.
+        <span style="color: #8E2DE2; font-weight: bold;">8. Isotones:</span> Atoms of different elements having exact same number of neutrons (A - Z).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">9. de Broglie Wavelength:</span> Dual wave-particle wavelength λ = h / (mv) associated with moving matter.
+        <span style="color: #8E2DE2; font-weight: bold;">9. Isoelectronic Species:</span> Atoms, ions, or molecules containing exact same number of electrons (e.g., Na⁺, F⁻, Ne).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">10. Heisenberg Uncertainty:</span> Impossible to measure position and momentum of electron simultaneously with absolute precision (Δx · Δp ≥ h / 4π).
+        <span style="color: #8E2DE2; font-weight: bold;">10. Electromagnetic Radiation:</span> Energy propagated through space as electric and magnetic fields vibrating perpendicularly.
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">11. Orbital:</span> 3D space around nucleus where probability of finding an electron is maximum (~90%).
+        <span style="color: #8E2DE2; font-weight: bold;">11. Photoelectric Effect:</span> Ejection of electrons from metal surface when light of threshold frequency ν₀ strikes it.
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">12. Quantum Numbers:</span> Set of 4 numbers (n, l, m_l, s) that completely specify state of an electron.
+        <span style="color: #8E2DE2; font-weight: bold;">12. de Broglie Wavelength:</span> Dual wave-particle wavelength λ = h / (mv) associated with moving matter.
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">13. Aufbau Principle:</span> Orbitals are filled in order of increasing energy based on (n + l) rule.
+        <span style="color: #8E2DE2; font-weight: bold;">13. Heisenberg Uncertainty:</span> Impossible to measure position and momentum of electron simultaneously with absolute precision (Δx · Δp ≥ h / 4π).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">14. Pauli Exclusion Principle:</span> No two electrons in an atom can have same set of 4 quantum numbers.
+        <span style="color: #8E2DE2; font-weight: bold;">14. Atomic Orbital:</span> 3D space around nucleus where probability of finding an electron is maximum (~90%).
       </div>
       <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
-        <span style="color: #8E2DE2; font-weight: bold;">15. Hund's Rule:</span> Electron pairing in degenerate orbitals occurs only after each orbital is singly filled with parallel spins.
+        <span style="color: #8E2DE2; font-weight: bold;">15. Quantum Numbers:</span> Set of 4 numbers (n, l, m_l, s) that completely specify state, shell, orbital, and spin of an electron.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
+        <span style="color: #8E2DE2; font-weight: bold;">16. Nodal Surface / Node:</span> Region in space around nucleus where electron probability density |ψ|² is zero.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
+        <span style="color: #8E2DE2; font-weight: bold;">17. Aufbau Principle:</span> Orbitals are filled in order of increasing orbital energy according to (n + l) rule.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
+        <span style="color: #8E2DE2; font-weight: bold;">18. Pauli Exclusion Principle:</span> No two electrons in an atom can have identical values for all four quantum numbers.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
+        <span style="color: #8E2DE2; font-weight: bold;">19. Hund's Rule:</span> Electron pairing in degenerate orbitals occurs only after each orbital is singly filled with parallel spins.
+      </div>
+      <div style="background: rgba(0,0,0,0.2); padding: 10px 12px; border-left: 3px solid #8E2DE2; border-radius: 4px;">
+        <span style="color: #8E2DE2; font-weight: bold;">20. Exchange Energy:</span> Energy released when electrons with parallel spins in degenerate orbitals exchange their positions, leading to extra stability.
       </div>
     </div>
   </div>
@@ -69,8 +84,8 @@ export const c11Chem2HtmlOverview = `
   <ul style="padding-left: 20px;">
     <li>Travel in straight lines casting sharp shadows.</li>
     <li>Deflected towards positive plate in electric field, proving negative charge.</li>
-    <li>Specific charge ratio e/m = <b>1.758820 × 10¹¹ C/kg</b> (constant for all gases).</li>
-    <li>Millikan's Oil Drop Experiment determined charge on electron e = <b>1.6022 × 10⁻¹⁹ C</b>. Mass m = <b>9.1094 × 10⁻³¹ kg</b>.</li>
+    <li>Specific charge ratio e/m_e = <b>1.758820 × 10¹¹ C/kg</b> (constant for all gases).</li>
+    <li>Millikan's Oil Drop Experiment determined charge on electron e = <b>1.6022 × 10⁻¹⁹ C</b>. Mass m_e = <b>9.1094 × 10⁻³¹ kg</b> = 0.000548 u.</li>
   </ul>
 
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Discovery of Proton & Neutron</h3>
@@ -78,6 +93,39 @@ export const c11Chem2HtmlOverview = `
     <li><b>Proton (Anode Rays / Canal Rays - E. Goldstein, 1886):</b> Positively charged particles produced from ionized gas molecules. Mass = 1.6726 × 10⁻²⁷ kg (1.00727 u). Charge = +1.6022 × 10⁻¹⁹ C.</li>
     <li><b>Neutron (James Chadwick, 1932):</b> Bombarded thin beryllium sheet with α-particles: ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n. Neutral particles with mass slightly greater than proton (1.6749 × 10⁻²⁷ kg = 1.00867 u).</li>
   </ul>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Atomic Terms & Species Comparison</h3>
+  <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 14px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(142, 45, 226, 0.3);">
+    <thead>
+      <tr style="background: rgba(142, 45, 226, 0.3); color: #FFF;">
+        <th style="padding: 10px; border: 1px solid rgba(142, 45, 226, 0.3); text-align: left;">Term</th>
+        <th style="padding: 10px; border: 1px solid rgba(142, 45, 226, 0.3); text-align: left;">Definition</th>
+        <th style="padding: 10px; border: 1px solid rgba(142, 45, 226, 0.3); text-align: left;">Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Isotopes</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Same Z, Different A</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">¹¹H, ²¹H (D), ³¹H (T) &nbsp;|&nbsp; ¹²₆C, ¹⁴₆C</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Isobars</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Same A, Different Z</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">⁴⁰₁₈Ar, ⁴⁰₁₉K, ⁴⁰₂₀Ca</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Isotones</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Same number of Neutrons (A - Z)</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">¹⁴₆C (N=8), ¹⁵₇N (N=8), ¹⁶₈O (N=8)</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Isoelectronic</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Same total electrons</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">N³⁻, O²⁻, F⁻, Ne, Na⁺, Mg²⁺, Al³⁺ (10 e⁻)</td>
+      </tr>
+    </tbody>
+  </table>
 
 
   <!-- SECTION 2: ATOMIC MODELS & LIMITATIONS -->
@@ -97,12 +145,41 @@ export const c11Chem2HtmlOverview = `
   <ul style="padding-left: 20px;">
     <li><b>Observations:</b> Most α-particles passed undeflected; a few deflected by small angles; 1 in 20,000 bounced back by 180°.</li>
     <li><b>Conclusions:</b> Atom is mostly empty space. All positive charge and mass is concentrated in an extremely tiny central core called <b>Nucleus</b> (radius ~10⁻¹⁵ m).</li>
+    <li><b>Distance of Closest Approach (r₀):</b> r₀ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2 Z e²</span><span style="display:block; padding:0 4px;">4π ε₀ K.E.</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">4 K Z e²</span><span style="display:block; padding:0 4px;">m v²</span></span>.</li>
     <li><b>Limitations:</b> Maxwell's electromagnetic theory states accelerating revolving electrons emit radiation and collapse into nucleus (Atom unstable!). Cannot explain line spectrum of hydrogen.</li>
   </ul>
 
 
-  <!-- SECTION 3: BOHR'S ATOMIC MODEL -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">3. Bohr's Model of Hydrogen Atom</h2>
+  <!-- SECTION 3: ELECTROMAGNETIC RADIATION & PLANCK'S QUANTUM THEORY -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">3. Electromagnetic Radiation & Quantum Theory</h2>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Wave Nature of Electromagnetic Radiation</h3>
+  <p>Light and electromagnetic waves possess electric and magnetic field components oscillating perpendicularly to each other and to the direction of propagation.</p>
+  <ul style="padding-left: 20px;">
+    <li><b>Speed of Light (c):</b> c = 3.0 × 10⁸ m/s. Relation: <b>c = ν λ</b>.</li>
+    <li><b>Wave Number (ν̄):</b> Number of wavelengths per unit length: <b>ν̄ = 1 / λ</b> (unit: m⁻¹ or cm⁻¹).</li>
+  </ul>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Planck's Quantum Theory (Max Planck, 1900)</h3>
+  <p>Radiant energy is emitted or absorbed discontinuously in small packets of energy called <b>quanta</b> (or <b>photons</b> for light):</p>
+  <div style="background: rgba(142, 45, 226, 0.1); border-radius: 6px; padding: 10px; text-align: center; font-weight: bold; margin: 12px 0; color: #FFF;">
+    E = h ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h c</span><span style="display:block; padding:0 4px;">λ</span></span> &nbsp;&nbsp;(Planck's Constant h = 6.626 × 10⁻³⁴ J·s)
+  </div>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Photoelectric Effect (Albert Einstein, 1905)</h3>
+  <p>Ejection of electrons from metal surface when light of frequency ν ≥ ν₀ (threshold frequency) strikes it.</p>
+  <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 12px; margin: 12px 0;">
+    <p style="margin: 0; font-weight: bold; text-align: center; color: #FFF;">
+      Energy of Photon (E) = Work Function (W₀) + Maximum Kinetic Energy (K.E.max)
+    </p>
+    <p style="margin: 8px 0 0 0; text-align: center;">
+      h ν = h ν₀ + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m_e v² = h ν₀ + e V₀ &nbsp;&nbsp;(V₀ = Stopping Potential)
+    </p>
+  </div>
+
+
+  <!-- SECTION 4: BOHR'S ATOMIC MODEL & HYDROGEN SPECTRUM -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">4. Bohr's Model of Hydrogen Atom</h2>
   
   <p>Niels Bohr (1913) modified Rutherford's model by introducing Planck's Quantum Theory:</p>
 
@@ -117,6 +194,7 @@ export const c11Chem2HtmlOverview = `
     <p style="margin: 0; font-weight: bold; color: #FFF;">Key Bohr Formulas for Hydrogen-like Species (Z):</p>
     <ul style="margin: 6px 0 0 0; padding-left: 20px;">
       <li><b>Radius of n-th Orbit:</b> rₙ = 0.529 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n²</span><span style="display:block; padding:0 4px;">Z</span></span> Å = 52.9 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n²</span><span style="display:block; padding:0 4px;">Z</span></span> pm</li>
+      <li><b>Velocity in n-th Orbit:</b> vₙ = 2.18 × 10⁶ × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z</span><span style="display:block; padding:0 4px;">n</span></span> m/s</li>
       <li><b>Energy of n-th Orbit:</b> Eₙ = -13.6 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z²</span><span style="display:block; padding:0 4px;">n²</span></span> eV/atom = -2.18 × 10⁻¹⁸ × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z²</span><span style="display:block; padding:0 4px;">n²</span></span> J/atom</li>
       <li><b>Rydberg Formula for Wave Number:</b> ν̄ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">λ</span></span> = R_H Z² (<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n₁²</span></span> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n₂²</span></span>) &nbsp;&nbsp;(R_H = 1.09677 × 10⁷ m⁻¹)</li>
     </ul>
@@ -144,24 +222,27 @@ export const c11Chem2HtmlOverview = `
   <p><b>Limitations of Bohr's Model:</b> Applicable only to single-electron species (H, He⁺, Li²⁺); fails for multi-electron atoms. Cannot explain Zeeman Effect (splitting in magnetic field), Stark Effect (splitting in electric field), or dual nature of matter.</p>
 
 
-  <!-- SECTION 4: DUAL NATURE & HEISENBERG UNCERTAINTY -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">4. Quantum Mechanical Concepts</h2>
+  <!-- SECTION 5: DUAL NATURE & HEISENBERG UNCERTAINTY -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">5. Quantum Mechanical Concepts</h2>
   
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">de Broglie Dual Behavior of Matter (1924)</h3>
   <p>Louis de Broglie proposed that matter, like light, exhibits dual nature (both wave and particle properties):</p>
   <div style="background: rgba(142, 45, 226, 0.1); padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF;">
-    de Broglie Wavelength λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span>
+    de Broglie Wavelength λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">√(2 m K.E.)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">√(2 m q V)</span></span>
   </div>
 
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Heisenberg's Uncertainty Principle (1927)</h3>
   <p>It is impossible to simultaneously determine both the exact position (x) and exact momentum (p) of a microscopic particle like an electron with absolute accuracy:</p>
   <div style="background: rgba(142, 45, 226, 0.1); padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF;">
-    Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;⇒&nbsp;&nbsp; Δx · (m Δv) ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>
+    Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;⇒&nbsp;&nbsp; Δx · (m Δv) ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;⇒&nbsp;&nbsp; ΔE · Δt ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>
   </div>
 
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Quantum Mechanical Model & Wavefunction (ψ)</h3>
+  <p>Schrödinger Wave Equation: Ĥ ψ = E ψ. <b>ψ (Wavefunction)</b> represents orbital amplitude, while <b>|ψ|² (Probability Density)</b> represents probability of finding electron at a given position.</p>
 
-  <!-- SECTION 5: QUANTUM NUMBERS & ORBITALS -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">5. Quantum Numbers & Shapes of Orbitals</h2>
+
+  <!-- SECTION 6: QUANTUM NUMBERS & ORBITALS -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">6. Quantum Numbers & Shapes of Orbitals</h2>
 
   <!-- 3D Figure 2 -->
   <div style="text-align: center; margin: 20px 0;">
@@ -172,9 +253,9 @@ export const c11Chem2HtmlOverview = `
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">The 4 Quantum Numbers:</h3>
   <ol style="padding-left: 20px;">
     <li><b>Principal Quantum Number (n):</b> Determines shell size and main energy level (n = 1, 2, 3...). Max electrons in shell = 2n².</li>
-    <li><b>Azimuthal / Orbital Angular Momentum Quantum Number (l):</b> Determines subshell and 3D shape of orbital. Values l = 0 to (n-1). (l = 0 → s, l = 1 → p, l = 2 → d, l = 3 → f).</li>
+    <li><b>Azimuthal / Orbital Angular Momentum Quantum Number (l):</b> Determines subshell and 3D shape of orbital. Values l = 0 to (n-1). (l = 0 → s, l = 1 → p, l = 2 → d, l = 3 → f). Orbital Angular Momentum: L = √(l(l+1)) · <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">2π</span></span>.</li>
     <li><b>Magnetic Quantum Number (m_l):</b> Determines orientation of orbital in space. Values m_l = -l to +l (Total = 2l + 1 orientations).</li>
-    <li><b>Spin Quantum Number (s or m_s):</b> Determines electron spin orientation: +1/2 (clockwise ↿) or -1/2 (anti-clockwise ⇂).</li>
+    <li><b>Spin Quantum Number (s or m_s):</b> Determines electron spin orientation: +1/2 (clockwise ↿) or -1/2 (anti-clockwise ⇂). Spin Magnetic Moment: μ_s = √(n(n+2)) Bohr Magnetons (B.M.).</li>
   </ol>
 
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Shapes & Nodes of Orbitals:</h3>
@@ -186,8 +267,8 @@ export const c11Chem2HtmlOverview = `
   </ul>
 
 
-  <!-- SECTION 6: RULES FOR ELECTRONIC CONFIGURATION -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">6. Rules for Electronic Configuration</h2>
+  <!-- SECTION 7: RULES FOR ELECTRONIC CONFIGURATION -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">7. Rules for Electronic Configuration</h2>
   
   <ol style="padding-left: 20px; line-height: 1.8;">
     <li><b>Aufbau Principle:</b> Orbitals are filled in increasing order of energy according to <b>(n + l) rule</b>. (Sequence: 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s...).</li>
@@ -207,14 +288,15 @@ export const c11Chem2HtmlOverview = `
   <div style="background: linear-gradient(135deg, rgba(142, 45, 226, 0.15), rgba(74, 0, 224, 0.15)); border: 1.5px solid #8E2DE2; border-radius: 10px; padding: 16px; margin-top: 25px;">
     <h3 style="color: #8E2DE2; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Formula & Key Points Cheat Sheet</h3>
     <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>Charge of Electron:</b> e = -1.602 × 10⁻¹⁹ C, Mass m_e = 9.109 × 10⁻³¹ kg.</li>
+      <li><b>Charge & Mass:</b> e = -1.602 × 10⁻¹⁹ C, m_e = 9.109 × 10⁻³¹ kg, m_p = 1.6726 × 10⁻²⁷ kg, m_n = 1.6749 × 10⁻²⁷ kg.</li>
       <li><b>Planck's Energy Equation:</b> E = h ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h c</span><span style="display:block; padding:0 4px;">λ</span></span> &nbsp;&nbsp;(h = 6.626 × 10⁻³⁴ J·s).</li>
-      <li><b>Photoelectric Equation:</b> E = W₀ + K.E. &nbsp;⇒&nbsp; h ν = h ν₀ + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m v².</li>
+      <li><b>Photoelectric Equation:</b> E = W₀ + K.E. &nbsp;⇒&nbsp; h ν = h ν₀ + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m v² = h ν₀ + e V₀.</li>
       <li><b>Bohr Radius:</b> rₙ = 0.529 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n²</span><span style="display:block; padding:0 4px;">Z</span></span> Å. &nbsp;&nbsp; <b>Bohr Energy:</b> Eₙ = -13.6 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z²</span><span style="display:block; padding:0 4px;">n²</span></span> eV.</li>
       <li><b>Rydberg Equation:</b> ν̄ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">λ</span></span> = R_H Z² (<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n₁²</span></span> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n₂²</span></span>) &nbsp;&nbsp;(R_H = 1.09677 × 10⁷ m⁻¹).</li>
-      <li><b>de Broglie Wavelength:</b> λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span>.</li>
+      <li><b>de Broglie Wavelength:</b> λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">√(2 m K.E.)</span></span>.</li>
       <li><b>Heisenberg Uncertainty:</b> Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>.</li>
       <li><b>Nodes:</b> Radial Nodes = n - l - 1; Angular Nodes = l; Total Nodes = n - 1.</li>
+      <li><b>Spin Magnetic Moment:</b> μ_s = √(n(n+2)) Bohr Magnetons (B.M.).</li>
     </ul>
   </div>
 
@@ -231,14 +313,14 @@ export const c11Chem2HtmlSolutions = `
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q1. Who discovered the neutron in 1932?</span></p>
+    <p style="margin: 0 0 8px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q1. Who discovered the neutron in 1932 by bombarding thin beryllium sheet with α-particles?</span></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
       (A) J.J. Thomson &nbsp;&nbsp;&nbsp;&nbsp; (B) Ernest Rutherford<br>
       (C) James Chadwick &nbsp;&nbsp;&nbsp;&nbsp; (D) E. Goldstein
     </div>
     <div style="background: rgba(142, 45, 226, 0.15); border-left: 3.5px solid #8E2DE2; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #8E2DE2; font-weight: bold;">✓ Answer: (C) James Chadwick</span><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> James Chadwick discovered neutral neutrons by bombarding thin beryllium sheet with α-particles.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> James Chadwick discovered neutral neutrons via nuclear reaction ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -249,7 +331,7 @@ export const c11Chem2HtmlSolutions = `
     </div>
     <div style="background: rgba(142, 45, 226, 0.15); border-left: 3.5px solid #8E2DE2; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #8E2DE2; font-weight: bold;">✓ Answer: (B) 1 : 1837</span><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Mass of proton (1.672 × 10⁻²⁷ kg) is 1837 times greater than mass of electron (9.109 × 10⁻³¹ kg).</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Mass of proton (1.6726 × 10⁻²⁷ kg) is approximately 1837 times greater than mass of electron (9.109 × 10⁻³¹ kg).</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -409,11 +491,11 @@ export const c11Chem2HtmlSolutions = `
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 8px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q17. What is the energy of a photon of light with frequency 3 × 10¹⁵ Hz? (h = 6.626 × 10⁻³⁴ J·s)</span></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1.988 × 10⁻¹8 J &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.988 × 10⁻¹5 J<br>
+      (A) 1.988 × 10⁻¹⁸ J &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.988 × 10⁻¹⁵ J<br>
       (C) 6.626 × 10⁻³⁴ J &nbsp;&nbsp;&nbsp;&nbsp; (D) 2.21 × 10⁻¹⁹ J
     </div>
     <div style="background: rgba(142, 45, 226, 0.15); border-left: 3.5px solid #8E2DE2; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <span style="color: #8E2DE2; font-weight: bold;">✓ Answer: (A) 1.988 × 10⁻¹8 J</span><br>
+      <span style="color: #8E2DE2; font-weight: bold;">✓ Answer: (A) 1.988 × 10⁻¹⁸ J</span><br>
       <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> E = h ν = (6.626 × 10⁻³⁴) × (3 × 10¹⁵) = 1.9878 × 10⁻¹⁸ J.</span>
     </div>
   </div>
@@ -533,10 +615,10 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q29. Define Photoelectric Effect.</span></p>
+    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q29. Define Photoelectric Effect and Threshold Frequency (ν₀).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Answer:</span><br>
-      The phenomenon of ejection of electrons from a metal surface when light of suitable frequency (above threshold frequency ν₀) strikes it.
+      <b>Photoelectric Effect</b> is ejection of electrons from metal when light strikes it. <b>Threshold Frequency (ν₀)</b> is minimum frequency required to eject electrons.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -770,7 +852,7 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q62. When light of frequency 4.0 × 10¹5 s⁻¹ strikes potassium (W₀ = 2.2 eV), calculate kinetic energy of ejected photoelectron.</span></p>
+    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q62. When light of frequency 4.0 × 10¹⁵ s⁻¹ strikes potassium (W₀ = 2.2 eV), calculate kinetic energy of ejected photoelectron.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Detailed Solution:</span><br>
       E_photon = h ν = (6.626 × 10⁻³⁴) × (4.0 × 10¹⁵) = 2.65 × 10⁻¹⁸ J = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2.65 × 10⁻¹⁸</span><span style="display:block; padding:0 4px;">1.602 × 10⁻¹⁹</span></span> = 16.54 eV.<br>K.E. = E - W₀ = 16.54 - 2.2 = <b>14.34 eV</b> = <b>2.297 × 10⁻¹⁸ J</b>.
@@ -950,7 +1032,7 @@ export const c11Chem2HtmlSolutions = `
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q86 (HOTS - 5 Marks): Photoelectric Effect Threshold Analysis</span></p>
+    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q86 (HOTS - 5 Marks): Photoelectric Effect Threshold & Stopping Potential Analysis</span></p>
     
     <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) Define threshold frequency ν₀ and work function W₀.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 8px 12px; border-left: 3px solid #8E2DE2; margin-bottom: 10px;">
@@ -1041,16 +1123,16 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q93 (HOTS - 5 Marks): Ionization Energy & Hydrogen-like Species</span></p>
+    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q93 (HOTS - 5 Marks): Ionization Energy & Magnetic Moment Calculation</span></p>
     
-    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) Define Ionization Energy of an atom.</span></p>
+    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) Define Spin Magnetic Moment μ_s formula.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 8px 12px; border-left: 3px solid #8E2DE2; margin-bottom: 10px;">
-      Minimum energy required to completely remove most loosely bound electron from isolated gaseous atom in ground state.
+      μ_s = √(n(n+2)) Bohr Magnetons (B.M.), where n is the number of unpaired electrons.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(b) Ionization energy of H-atom is 13.6 eV. Calculate (i) Ionization energy of Li²⁺, (ii) Energy of 3rd orbit of Li²⁺.</span></p>
+    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(b) Calculate magnetic moment μ_s for (i) Fe²⁺ (Z=26), (ii) Fe³⁺ (Z=26), and (iii) Cu²⁺ (Z=29).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 10px 12px; border-left: 3px solid #8E2DE2;">
-      <b>(i) Ionization Energy Li²⁺ (Z=3):</b> I.E. = 13.6 × Z² = 13.6 × 3² = <b>122.4 eV</b> = <b>1.96 × 10⁻¹⁷ J/atom</b>.<br><b>(ii) Energy E₃ of Li²⁺:</b> E₃ = -13.6 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3²</span><span style="display:block; padding:0 4px;">3²</span></span> = <b>-13.6 eV</b>.
+      (i) <b>Fe²⁺ ([Ar] 3d⁶):</b> 4 unpaired electrons (n=4) ⇒ μ_s = √(4(4+2)) = √24 = <b>4.90 B.M.</b><br>(ii) <b>Fe³⁺ ([Ar] 3d⁵):</b> 5 unpaired electrons (n=5) ⇒ μ_s = √(5(5+2)) = √35 = <b>5.92 B.M.</b><br>(iii) <b>Cu²⁺ ([Ar] 3d⁹):</b> 1 unpaired electron (n=1) ⇒ μ_s = √(1(1+2)) = √3 = <b>1.73 B.M.</b>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
