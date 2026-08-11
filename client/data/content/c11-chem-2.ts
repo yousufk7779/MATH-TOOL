@@ -74,8 +74,8 @@ export const c11Chem2HtmlOverview = `
   </div>
 
 
-  <!-- SECTION 1: DISCOVERY OF SUBATOMIC PARTICLES -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 10px; font-size: 20px;">1. Discovery of Subatomic Particles</h2>
+  <!-- EXACT SYLLABUS HEADING 1 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 10px; font-size: 20px;">1. Discovery of Electron, Proton and Neutron, Atomic Number, Mass Number, Isotopes and Isobars</h2>
   
   <p>Dalton's concept of an indivisible atom was challenged by late 19th-century discharge tube experiments proving atoms consist of subatomic particles: <b>Electrons, Protons, and Neutrons</b>.</p>
 
@@ -94,7 +94,7 @@ export const c11Chem2HtmlOverview = `
     <li><b>Neutron (James Chadwick, 1932):</b> Bombarded thin beryllium sheet with α-particles: ⁹₄Be + ⁴₂He → ¹²₆C + ¹₀n. Neutral particles with mass slightly greater than proton (1.6749 × 10⁻²⁷ kg = 1.00867 u).</li>
   </ul>
 
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Atomic Terms & Species Comparison</h3>
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Atomic Number, Mass Number, Isotopes & Isobars Comparison</h3>
   <table style="width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 14px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(142, 45, 226, 0.3);">
     <thead>
       <tr style="background: rgba(142, 45, 226, 0.3); color: #FFF;">
@@ -104,6 +104,16 @@ export const c11Chem2HtmlOverview = `
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Atomic Number (Z)</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Total number of protons in nucleus</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Carbon Z = 6, Sodium Z = 11</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Mass Number (A)</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Sum of protons and neutrons (A = Z + N)</td>
+        <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Carbon A = 12, Sodium A = 23</td>
+      </tr>
       <tr>
         <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2); font-weight: bold;">Isotopes</td>
         <td style="padding: 8px; border: 1px solid rgba(142, 45, 226, 0.2);">Same Z, Different A</td>
@@ -128,8 +138,8 @@ export const c11Chem2HtmlOverview = `
   </table>
 
 
-  <!-- SECTION 2: ATOMIC MODELS & LIMITATIONS -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">2. Atomic Models & Their Limitations</h2>
+  <!-- EXACT SYLLABUS HEADING 2 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">2. Thomson's Model and its Limitations</h2>
 
   <!-- 3D Figure 1 -->
   <div style="text-align: center; margin: 20px 0;">
@@ -137,51 +147,36 @@ export const c11Chem2HtmlOverview = `
     <p style="color: #B388FF; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 2.1: 3D Visualization of Thomson Plum Pudding vs Rutherford α-Ray Scattering Nuclear Model</p>
   </div>
 
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Thomson's Model (Plum Pudding Model, 1898)</h3>
-  <p>Atom is a sphere of uniform positive charge (~10⁻¹⁰ m radius) in which electrons are embedded like seeds in a watermelon or raisins in a pudding. <b>Limitation:</b> Failed to explain α-particle scattering experiment results.</p>
+  <p>J.J. Thomson (1898) proposed that an atom is a sphere of uniform positive charge (~10⁻¹⁰ m radius) in which electrons are embedded like seeds in a watermelon or raisins in a pudding.</p>
+  <div style="background: rgba(142, 45, 226, 0.08); border-left: 4px solid #8E2DE2; padding: 12px 16px; border-radius: 6px; margin: 15px 0;">
+    <p style="margin: 0;"><b>Limitations of Thomson's Model:</b><br>
+    1. Failed to explain the results of Rutherford's α-particle scattering experiment.<br>
+    2. Could not explain the origin of atomic line spectra of elements.<br>
+    3. Lacked experimental evidence for uniform positive charge sphere distribution.</p>
+  </div>
 
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Rutherford's α-Particle Scattering Experiment & Nuclear Model (1911)</h3>
-  <p>Bombarded thin gold foil (100 nm) with high energy α-particles (⁴₂He²⁺):</p>
+
+  <!-- EXACT SYLLABUS HEADING 3 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">3. Rutherford's Model and its Limitations</h2>
+
+  <p>Rutherford bombarded a thin gold foil (100 nm) with high energy α-particles (⁴₂He²⁺):</p>
   <ul style="padding-left: 20px;">
     <li><b>Observations:</b> Most α-particles passed undeflected; a few deflected by small angles; 1 in 20,000 bounced back by 180°.</li>
     <li><b>Conclusions:</b> Atom is mostly empty space. All positive charge and mass is concentrated in an extremely tiny central core called <b>Nucleus</b> (radius ~10⁻¹⁵ m).</li>
     <li><b>Distance of Closest Approach (r₀):</b> r₀ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2 Z e²</span><span style="display:block; padding:0 4px;">4π ε₀ K.E.</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">4 K Z e²</span><span style="display:block; padding:0 4px;">m v²</span></span>.</li>
-    <li><b>Limitations:</b> Maxwell's electromagnetic theory states accelerating revolving electrons emit radiation and collapse into nucleus (Atom unstable!). Cannot explain line spectrum of hydrogen.</li>
   </ul>
-
-
-  <!-- SECTION 3: ELECTROMAGNETIC RADIATION & PLANCK'S QUANTUM THEORY -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">3. Electromagnetic Radiation & Quantum Theory</h2>
-
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Wave Nature of Electromagnetic Radiation</h3>
-  <p>Light and electromagnetic waves possess electric and magnetic field components oscillating perpendicularly to each other and to the direction of propagation.</p>
-  <ul style="padding-left: 20px;">
-    <li><b>Speed of Light (c):</b> c = 3.0 × 10⁸ m/s. Relation: <b>c = ν λ</b>.</li>
-    <li><b>Wave Number (ν̄):</b> Number of wavelengths per unit length: <b>ν̄ = 1 / λ</b> (unit: m⁻¹ or cm⁻¹).</li>
-  </ul>
-
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Planck's Quantum Theory (Max Planck, 1900)</h3>
-  <p>Radiant energy is emitted or absorbed discontinuously in small packets of energy called <b>quanta</b> (or <b>photons</b> for light):</p>
-  <div style="background: rgba(142, 45, 226, 0.1); border-radius: 6px; padding: 10px; text-align: center; font-weight: bold; margin: 12px 0; color: #FFF;">
-    E = h ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h c</span><span style="display:block; padding:0 4px;">λ</span></span> &nbsp;&nbsp;(Planck's Constant h = 6.626 × 10⁻³⁴ J·s)
-  </div>
-
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Photoelectric Effect (Albert Einstein, 1905)</h3>
-  <p>Ejection of electrons from metal surface when light of frequency ν ≥ ν₀ (threshold frequency) strikes it.</p>
-  <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 12px; margin: 12px 0;">
-    <p style="margin: 0; font-weight: bold; text-align: center; color: #FFF;">
-      Energy of Photon (E) = Work Function (W₀) + Maximum Kinetic Energy (K.E.max)
-    </p>
-    <p style="margin: 8px 0 0 0; text-align: center;">
-      h ν = h ν₀ + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m_e v² = h ν₀ + e V₀ &nbsp;&nbsp;(V₀ = Stopping Potential)
-    </p>
+  <div style="background: rgba(142, 45, 226, 0.08); border-left: 4px solid #8E2DE2; padding: 12px 16px; border-radius: 6px; margin: 15px 0;">
+    <p style="margin: 0;"><b>Limitations of Rutherford's Model:</b><br>
+    1. <b>Instability of Atom:</b> According to Maxwell's electromagnetic theory, an accelerating revolving electron must continuously radiate energy and spiral down into nucleus, making atom unstable.<br>
+    2. <b>Line Spectra:</b> Failed to explain discrete line spectrum of hydrogen atom (predicted continuous spectrum).</p>
   </div>
 
 
-  <!-- SECTION 4: BOHR'S ATOMIC MODEL & HYDROGEN SPECTRUM -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">4. Bohr's Model of Hydrogen Atom</h2>
+  <!-- EXACT SYLLABUS HEADING 4 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">4. Bohr's Model and its Limitations</h2>
   
-  <p>Niels Bohr (1913) modified Rutherford's model by introducing Planck's Quantum Theory:</p>
+  <p>Niels Bohr (1913) modified Rutherford's model by introducing Planck's Quantum Theory ($E = h
+u$):</p>
 
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Postulates of Bohr's Model:</h3>
   <ol style="padding-left: 20px;">
@@ -219,30 +214,45 @@ export const c11Chem2HtmlOverview = `
     </tbody>
   </table>
 
-  <p><b>Limitations of Bohr's Model:</b> Applicable only to single-electron species (H, He⁺, Li²⁺); fails for multi-electron atoms. Cannot explain Zeeman Effect (splitting in magnetic field), Stark Effect (splitting in electric field), or dual nature of matter.</p>
+  <div style="background: rgba(142, 45, 226, 0.08); border-left: 4px solid #8E2DE2; padding: 12px 16px; border-radius: 6px; margin: 15px 0;">
+    <p style="margin: 0;"><b>Limitations of Bohr's Model:</b><br>
+    1. Applicable only to single-electron species (H, He⁺, Li²⁺); fails for multi-electron atoms.<br>
+    2. Cannot explain <b>Zeeman Effect</b> (splitting of spectral lines in magnetic field) or <b>Stark Effect</b> (splitting in electric field).<br>
+    3. Ignores wave nature of matter and violates Heisenberg Uncertainty Principle by assigning fixed circular orbits.</p>
+  </div>
 
 
-  <!-- SECTION 5: DUAL NATURE & HEISENBERG UNCERTAINTY -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">5. Quantum Mechanical Concepts</h2>
-  
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">de Broglie Dual Behavior of Matter (1924)</h3>
-  <p>Louis de Broglie proposed that matter, like light, exhibits dual nature (both wave and particle properties):</p>
+  <!-- EXACT SYLLABUS HEADING 5 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">5. Concept of Shells and Subshells, Dual Nature of Matter and Light, de Broglie Relationship</h2>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Concept of Shells and Subshells</h3>
+  <ul style="padding-left: 20px;">
+    <li><b>Shells:</b> Main energy levels represented by principal quantum number n (1=K, 2=L, 3=M, 4=N). Maximum electrons in n-th shell = 2n².</li>
+    <li><b>Subshells:</b> Sub-energy levels present within shells designated as s, p, d, f corresponding to azimuthal quantum number l (0=s, 1=p, 2=d, 3=f). Max electrons in subshell = 2(2l + 1).</li>
+  </ul>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Dual Nature of Matter and Light & Photoelectric Effect</h3>
+  <p>Light displays wave-particle duality (diffraction/interference as wave; photoelectric effect as photon particle packets E = hν = W₀ + K.E.).</p>
+
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">de Broglie Relationship (1924)</h3>
+  <p>Louis de Broglie proposed that matter particles possess dual wave-particle nature:</p>
   <div style="background: rgba(142, 45, 226, 0.1); padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF;">
     de Broglie Wavelength λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">√(2 m K.E.)</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">√(2 m q V)</span></span>
   </div>
 
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Heisenberg's Uncertainty Principle (1927)</h3>
-  <p>It is impossible to simultaneously determine both the exact position (x) and exact momentum (p) of a microscopic particle like an electron with absolute accuracy:</p>
-  <div style="background: rgba(142, 45, 226, 0.1); padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF;">
+
+  <!-- EXACT SYLLABUS HEADING 6 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">6. Heisenberg's Uncertainty Principle</h2>
+  
+  <p>Werner Heisenberg (1927) stated that it is physically impossible to measure both the exact position (x) and exact momentum (p) of a microscopic particle like an electron simultaneously with 100% precision:</p>
+  <div style="background: rgba(142, 45, 226, 0.1); padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF; margin: 12px 0;">
     Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;⇒&nbsp;&nbsp; Δx · (m Δv) ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;⇒&nbsp;&nbsp; ΔE · Δt ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>
   </div>
-
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Quantum Mechanical Model & Wavefunction (ψ)</h3>
-  <p>Schrödinger Wave Equation: Ĥ ψ = E ψ. <b>ψ (Wavefunction)</b> represents orbital amplitude, while <b>|ψ|² (Probability Density)</b> represents probability of finding electron at a given position.</p>
+  <p><b>Significance:</b> Rules out existence of definite circular orbits (Bohr), replacing them with 3D probability region called <b>Orbitals</b>.</p>
 
 
-  <!-- SECTION 6: QUANTUM NUMBERS & ORBITALS -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">6. Quantum Numbers & Shapes of Orbitals</h2>
+  <!-- EXACT SYLLABUS HEADING 7 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">7. Concept of Orbitals, Quantum Numbers, Shapes of s, p and d-Orbitals</h2>
 
   <!-- 3D Figure 2 -->
   <div style="text-align: center; margin: 20px 0;">
@@ -252,32 +262,37 @@ export const c11Chem2HtmlOverview = `
 
   <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">The 4 Quantum Numbers:</h3>
   <ol style="padding-left: 20px;">
-    <li><b>Principal Quantum Number (n):</b> Determines shell size and main energy level (n = 1, 2, 3...). Max electrons in shell = 2n².</li>
-    <li><b>Azimuthal / Orbital Angular Momentum Quantum Number (l):</b> Determines subshell and 3D shape of orbital. Values l = 0 to (n-1). (l = 0 → s, l = 1 → p, l = 2 → d, l = 3 → f). Orbital Angular Momentum: L = √(l(l+1)) · <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">2π</span></span>.</li>
-    <li><b>Magnetic Quantum Number (m_l):</b> Determines orientation of orbital in space. Values m_l = -l to +l (Total = 2l + 1 orientations).</li>
-    <li><b>Spin Quantum Number (s or m_s):</b> Determines electron spin orientation: +1/2 (clockwise ↿) or -1/2 (anti-clockwise ⇂). Spin Magnetic Moment: μ_s = √(n(n+2)) Bohr Magnetons (B.M.).</li>
+    <li><b>Principal Quantum Number (n):</b> Determines shell size and energy level (n = 1, 2, 3...). Max electrons in shell = 2n².</li>
+    <li><b>Azimuthal Quantum Number (l):</b> Determines subshell and 3D shape. Values l = 0 to (n-1). (l=0→s, l=1→p, l=2→d, l=3→f). Orbital Angular Momentum: L = √(l(l+1)) · <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">2π</span></span>.</li>
+    <li><b>Magnetic Quantum Number (m_l):</b> Determines 3D spatial orientation. Values m_l = -l to +l (Total = 2l + 1 orientations).</li>
+    <li><b>Spin Quantum Number (s or m_s):</b> Determines electron spin orientation (+1/2 or -1/2). Spin Magnetic Moment: μ_s = √(n(n+2)) Bohr Magnetons (B.M.).</li>
   </ol>
 
-  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Shapes & Nodes of Orbitals:</h3>
+  <h3 style="color: #8E2DE2; margin-top: 18px; font-size: 18px;">Shapes of s, p and d-Orbitals & Nodes:</h3>
   <ul style="padding-left: 20px;">
-    <li><b>s-Orbital (l = 0):</b> Spherically symmetrical. Non-directional.</li>
-    <li><b>p-Orbital (l = 1):</b> Dumbbell shaped (p_x, p_y, p_z). Directional along axes.</li>
+    <li><b>s-Orbital (l = 0):</b> Spherically symmetrical, non-directional.</li>
+    <li><b>p-Orbital (l = 1):</b> Dumbbell shaped along axes (p_x, p_y, p_z).</li>
     <li><b>d-Orbital (l = 2):</b> Double dumbbell / Cloverleaf shaped (d_xy, d_yz, d_zx, d_x²-y², d_z²).</li>
     <li><b>Radial Nodes:</b> = n - l - 1. &nbsp;&nbsp; <b>Angular Nodes:</b> = l. &nbsp;&nbsp; <b>Total Nodes:</b> = n - 1.</li>
   </ul>
 
 
-  <!-- SECTION 7: RULES FOR ELECTRONIC CONFIGURATION -->
-  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">7. Rules for Electronic Configuration</h2>
+  <!-- EXACT SYLLABUS HEADING 8 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">8. Rules for Filling Electrons in Orbitals - Aufbau Principle, Pauli Exclusion Principle and Hund's Rule</h2>
   
   <ol style="padding-left: 20px; line-height: 1.8;">
     <li><b>Aufbau Principle:</b> Orbitals are filled in increasing order of energy according to <b>(n + l) rule</b>. (Sequence: 1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s...).</li>
-    <li><b>Pauli Exclusion Principle:</b> No two electrons in an atom can have identical values for all four quantum numbers. (An orbital can hold max 2 electrons with opposite spins).</li>
-    <li><b>Hund's Rule of Maximum Multiplicity:</b> Electron pairing in degenerate orbitals (same energy e.g., p_x, p_y, p_z) does not take place until each orbital is singly occupied with parallel spins.</li>
+    <li><b>Pauli Exclusion Principle:</b> No two electrons in an atom can have identical values for all four quantum numbers. (An orbital holds max 2 electrons with opposite spins).</li>
+    <li><b>Hund's Rule of Maximum Multiplicity:</b> Electron pairing in degenerate orbitals (same subshell) occurs only after each degenerate orbital is singly occupied with parallel spins.</li>
   </ol>
 
+
+  <!-- EXACT SYLLABUS HEADING 9 -->
+  <h2 style="color: #8E2DE2; border-bottom: 2px solid #8E2DE2; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">9. Electronic Configuration of Atoms, Stability of Half Filled and Completely Filled Orbitals</h2>
+  
+  <p>Electronic configuration represents distribution of electrons among various atomic orbitals.</p>
   <div style="background: rgba(142, 45, 226, 0.05); padding: 14px; border-left: 3px solid #8E2DE2; margin: 15px 0;">
-    <h4 style="color: #8E2DE2; margin: 0 0 6px 0; font-size: 16px;">Exceptional Stability of Half-Filled and Completely Filled Orbitals</h4>
+    <h4 style="color: #8E2DE2; margin: 0 0 6px 0; font-size: 16px;">Exceptional Stability of Half-Filled and Completely Filled Subshells</h4>
     <p style="margin: 0;">Half-filled (d⁵, f⁷) and completely filled (d¹⁰, f¹⁴) subshells possess extra stability due to <b>Symmetrical Distribution of Electrons</b> and <b>Maximum Exchange Energy</b>.<br>
     • <b>Chromium (Cr, Z = 24):</b> Expected: [Ar] 3d⁴ 4s² &nbsp;⇒&nbsp; Actual: <b>[Ar] 3d⁵ 4s¹</b><br>
     • <b>Copper (Cu, Z = 29):</b> Expected: [Ar] 3d⁹ 4s² &nbsp;⇒&nbsp; Actual: <b>[Ar] 3d¹⁰ 4s¹</b>
@@ -601,10 +616,10 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q27. State Thomson's Plum Pudding Model of atom.</span></p>
+    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q27. State Thomson's Plum Pudding Model of atom and its main limitation.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Answer:</span><br>
-      Thomson proposed that an atom is a sphere of uniform positive charge in which negatively charged electrons are embedded like seeds in a watermelon.
+      Thomson proposed that an atom is a sphere of uniform positive charge in which negatively charged electrons are embedded like seeds in a watermelon. <b>Limitation:</b> Failed to explain Rutherford α-particle scattering experiment.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -622,10 +637,10 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q30. State Bohr's quantization condition for orbital angular momentum.</span></p>
+    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q30. State Bohr's quantization condition for orbital angular momentum and its limitation.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Answer:</span><br>
-      Angular momentum of an electron revolving in a stationary orbit is quantized: m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span> (n = 1, 2, 3...).
+      Angular momentum of electron in stationary orbit is quantized: m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span>. <b>Limitation:</b> Fails for multi-electron atoms and violates Heisenberg principle.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -859,10 +874,10 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q63. Compare Thomson, Rutherford, and Bohr models of atom with 3 points.</span></p>
+    <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q63. Compare Thomson's Model and its Limitations with Rutherford's Model and its Limitations.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Detailed Solution:</span><br>
-      1. <b>Thomson:</b> Uniform positive sphere with embedded electrons.<br>2. <b>Rutherford:</b> Central tiny nucleus with revolving electrons.<br>3. <b>Bohr:</b> Quantized stationary orbits preventing collapse into nucleus.
+      1. <b>Thomson:</b> Uniform positive sphere with embedded electrons; failed to explain Rutherford α-scattering.<br>2. <b>Rutherford:</b> Central tiny nucleus with revolving electrons; failed to explain EM electron collapse & discrete line spectrum.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1045,11 +1060,11 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q87 (HOTS - 5 Marks): Bohr Spectrum & Rydberg Calculations</span></p>
+    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q87 (HOTS - 5 Marks): Bohr's Model and its Limitations - Spectrum & Rydberg Calculations</span></p>
     
-    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) State Bohr's postulates for hydrogen spectral lines.</span></p>
+    <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) State Bohr's postulates for hydrogen spectral lines and its limitations.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 8px 12px; border-left: 3px solid #8E2DE2; margin-bottom: 10px;">
-      Radiation is emitted or absorbed only when electron transitions between stationary orbits: ΔE = E₂ - E₁ = hν.
+      Radiation is emitted or absorbed only when electron transitions between stationary orbits: ΔE = E₂ - E₁ = hν. <b>Limitations:</b> Fails for multi-electron atoms, Zeeman effect, Stark effect.
     </div>
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(b) Calculate wavelength of 1st line (longest wavelength) in Balmer series of H-atom (R_H = 1.09677 × 10⁷ m⁻¹).</span></p>
@@ -1136,7 +1151,7 @@ export const c11Chem2HtmlSolutions = `
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q94 (HOTS - 5 Marks): Exceptional Configuration & Exchange Energy</span></p>
+    <p style="margin: 0 0 10px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q94 (HOTS - 5 Marks): Electronic Configuration of Atoms, Stability of Half Filled and Completely Filled Orbitals</span></p>
     
     <p style="margin: 8px 0 4px 0;"><span style="color: #8E2DE2; font-weight: bold;">(a) State Hund's Rule and Aufbau Principle.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 8px 12px; border-left: 3px solid #8E2DE2; margin-bottom: 10px;">
