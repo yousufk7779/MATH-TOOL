@@ -4,6 +4,74 @@
 export const c11Chem2HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
+  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (CLEAN TEXT WITHOUT BOX CONTAINER) -->
+  <h2 style="color: #8E2DE2; margin: 10px 0 6px 0; font-size: 20px; font-weight: bold;">📖 Quick Glossary & Basic Definitions</h2>
+  <p style="color: #B388FF; margin: 0 0 16px 0; font-size: 14.5px;">Key Fundamental Terms & Concepts for Chapter 2: Structure of Atom</p>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin-bottom: 25px;">
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">1. Electron:</span> Negatively charged subatomic particle (charge e = -1.602 × 10⁻¹⁹ C, mass m_e = 9.109 × 10⁻³¹ kg).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">2. Proton:</span> Positively charged subatomic particle present in nucleus (charge = +1.602 × 10⁻¹⁹ C, mass m_p = 1.6726 × 10⁻²⁷ kg).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">3. Neutron:</span> Neutral subatomic particle present in nucleus discovered by Chadwick (mass m_n = 1.6749 × 10⁻²⁷ kg).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">4. Atomic Number (Z):</span> Total number of protons present in the nucleus of an atom.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">5. Mass Number (A):</span> Total sum of protons and neutrons (nucleons) in the nucleus (A = Z + N).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">6. Isotopes:</span> Atoms of same element having same Z but different mass number A (e.g., ¹²C, ¹⁴C).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">7. Isobars:</span> Atoms of different elements having same mass number A but different Z (e.g., ⁴⁰Ar, ⁴⁰Ca).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">8. Isotones:</span> Atoms of different elements having exact same number of neutrons (A - Z).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">9. Isoelectronic Species:</span> Atoms, ions, or molecules containing exact same number of electrons (e.g., Na⁺, F⁻, Ne).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">10. Electromagnetic Radiation:</span> Energy propagated through space as electric and magnetic fields vibrating perpendicularly.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">11. Photoelectric Effect:</span> Ejection of electrons from metal surface when light of threshold frequency ν₀ strikes it.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">12. de Broglie Wavelength:</span> Dual wave-particle wavelength λ = h / (mv) associated with moving matter.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">13. Heisenberg Uncertainty:</span> Impossible to measure position and momentum of electron simultaneously with absolute precision (Δx · Δp ≥ h / 4π).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">14. Atomic Orbital:</span> 3D space around nucleus where probability of finding an electron is maximum (~90%).
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">15. Quantum Numbers:</span> Set of 4 numbers (n, l, m_l, s) that completely specify state, shell, orbital, and spin of an electron.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">16. Nodal Surface / Node:</span> Region in space around nucleus where electron probability density |ψ|² is zero.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">17. Aufbau Principle:</span> Orbitals are filled in order of increasing orbital energy according to (n + l) rule.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">18. Pauli Exclusion Principle:</span> No two electrons in an atom can have identical values for all four quantum numbers.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">19. Hund's Rule:</span> Electron pairing in degenerate orbitals occurs only after each orbital is singly filled with parallel spins.
+    </div>
+    <div style="padding: 6px 0; border-bottom: 1px solid rgba(142, 45, 226, 0.2);">
+      <span style="color: #8E2DE2; font-weight: bold;">20. Exchange Energy:</span> Energy released when electrons with parallel spins in degenerate orbitals exchange their positions, leading to extra stability.
+    </div>
+  </div>
+
+
   
   </div>
 
