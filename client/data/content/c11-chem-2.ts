@@ -2,7 +2,14 @@
 // High-Level Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
 
 export const c11Chem2HtmlOverview = `
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
+  .text-center, th, td { text-align: center !important; }
+</style>
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
   
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER) -->
@@ -404,7 +411,14 @@ u$):</p>
 `;
 
 export const c11Chem2HtmlSolutions = `
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
+  .text-center, th, td { text-align: center !important; }
+</style>
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
   <!-- SECTION A: OBJECTIVE & MCQS (25 Questions) -->
   <div style="background: rgba(142, 45, 226, 0.12); border: 1.5px solid #8E2DE2; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
@@ -802,7 +816,7 @@ export const c11Chem2HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q41. Calculate the energy of 1 mole of photons of radiation with frequency 5 × 10¹⁴ Hz.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Answer:</span><br>
-      E = N_A h ν = (6.022 × 10²³) × (6.626 × 10⁻³⁴) × (5 × 10¹⁴) = <b>199.51 kJ/mol</b>.
+      E = N_A h ν = (6.022 × 10²³) × (6.626 × 10⁻³⁴) × (5 × 10¹⁴) = <b>199.51 kJ mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -948,7 +962,7 @@ export const c11Chem2HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #8E2DE2; font-weight: bold;">Q61. Calculate energy required to ionize H-atom from ground state (n = 1).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #8E2DE2; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #B388FF; font-weight: bold;">Detailed Solution:</span><br>
-      E_ionization = E_∞ - E₁ = 0 - (-13.6 eV) = <b>+13.6 eV</b> = <b>2.18 × 10⁻¹⁸ J/atom</b> = <b>1312 kJ/mol</b>.
+      E_ionization = E_∞ - E₁ = 0 - (-13.6 eV) = <b>+13.6 eV</b> = <b>2.18 × 10⁻¹⁸ J/atom</b> = <b>1312 kJ mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(142, 45, 226, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">

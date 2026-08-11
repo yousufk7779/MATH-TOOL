@@ -2,7 +2,14 @@
 // High-Level Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
 
 export const c11Chem1HtmlOverview = `
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
+  .text-center, th, td { text-align: center !important; }
+</style>
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
   
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER) -->
@@ -33,7 +40,7 @@ export const c11Chem1HtmlOverview = `
         <span style="color: #FF512F; font-weight: bold;">7. Mole (mol):</span> SI base unit containing exactly 6.02214076 × 10²³ elementary entities.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF512F; border-radius: 6px;">
-        <span style="color: #FF512F; font-weight: bold;">8. Molar Mass:</span> Mass of 1 mole of a substance expressed in g/mol.
+        <span style="color: #FF512F; font-weight: bold;">8. Molar Mass:</span> Mass of 1 mole of a substance expressed in g mol⁻¹.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF512F; border-radius: 6px;">
         <span style="color: #FF512F; font-weight: bold;">9. Empirical Formula:</span> Simplest whole-number ratio of atoms present in a compound.
@@ -221,7 +228,7 @@ export const c11Chem1HtmlOverview = `
   <div style="background: rgba(255, 81, 47, 0.1); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin: 12px 0;">
     <p style="margin: 0; font-weight: bold; color: #FFF; font-size: 16px;">Master Interconversion Formulas for Moles (n):</p>
     <ul style="margin: 8px 0 0 0; padding-left: 20px; line-height: 1.8;">
-      <li><b>1. From Given Mass (m):</b> n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Given Mass (m in g)</span><span style="display:block; padding:0 4px;">Molar Mass (M in g/mol)</span></span></li>
+      <li><b>1. From Given Mass (m):</b> n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Given Mass (m in g)</span><span style="display:block; padding:0 4px;">Molar Mass (M in g mol⁻¹)</span></span></li>
       <li><b>2. From Number of Particles (N):</b> n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Number of Particles (N)</span><span style="display:block; padding:0 4px;">Avogadro Constant (N_A)</span></span></li>
       <li><b>3. From Volume of Gas at STP (V):</b> n = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Volume of Gas at STP (L)</span><span style="display:block; padding:0 4px;">22.4 L/mol (or 22.7 L at 1 bar)</span></span></li>
     </ul>
@@ -337,7 +344,14 @@ export const c11Chem1HtmlOverview = `
 `;
 
 export const c11Chem1HtmlSolutions = `
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
+  .text-center, th, td { text-align: center !important; }
+</style>
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
   <!-- SECTION A: OBJECTIVE & MCQS (25 Questions) -->
   <div style="background: rgba(255, 81, 47, 0.12); border: 1.5px solid #FF512F; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
@@ -375,7 +389,7 @@ export const c11Chem1HtmlSolutions = `
     </div>
     <div style="background: rgba(255, 81, 47, 0.15); border-left: 3.5px solid #FF512F; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #FF512F; font-weight: bold;">✓ Answer: (C) 1g H₂</span><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">g</span><span style="display:block; padding:0 4px;">Molar Mass</span></span>. H₂ has smallest molar mass (2g/mol), so 1g H₂ has maximum moles (0.5 mol) and max molecules.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">g</span><span style="display:block; padding:0 4px;">Molar Mass</span></span>. H₂ has smallest molar mass (2g mol⁻¹), so 1g H₂ has maximum moles (0.5 mol) and max molecules.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -397,7 +411,7 @@ export const c11Chem1HtmlSolutions = `
     </div>
     <div style="background: rgba(255, 81, 47, 0.15); border-left: 3.5px solid #FF512F; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #FF512F; font-weight: bold;">✓ Answer: (B) 55.55 M</span><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 1000g water / (18 g/mol) = 55.55 moles in 1 Litre = 55.55 M.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 1000g water / (18 g mol⁻¹) = 55.55 moles in 1 Litre = 55.55 M.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -507,7 +521,7 @@ export const c11Chem1HtmlSolutions = `
     </div>
     <div style="background: rgba(255, 81, 47, 0.15); border-left: 3.5px solid #FF512F; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #FF512F; font-weight: bold;">✓ Answer: (B) 46.6 %</span><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Molar mass Urea = 60 g/mol. Nitrogen mass = 28g. % N = (28 / 60) × 100 = 46.6%.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Molar mass Urea = 60 g mol⁻¹. Nitrogen mass = 28g. % N = (28 / 60) × 100 = 46.6%.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -693,7 +707,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q35. Calculate molar mass of Na₂SO₄.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Answer:</span><br>
-      Molar Mass = 2(23) + 32 + 4(16) = 46 + 32 + 64 = <b>142 g/mol</b>.
+      Molar Mass = 2(23) + 32 + 4(16) = 46 + 32 + 64 = <b>142 g mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -742,7 +756,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q42. Calculate number of moles in 52 g of Helium (He).</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Answer:</span><br>
-      Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52 g</span><span style="display:block; padding:0 4px;">4 g/mol</span></span> = <b>13 moles</b>.
+      Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52 g</span><span style="display:block; padding:0 4px;">4 g mol⁻¹</span></span> = <b>13 moles</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -763,7 +777,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q45. Calculate mass of 0.5 mole of N₂ gas.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Answer:</span><br>
-      Mass = 0.5 mol × 28 g/mol = <b>14 g</b>.
+      Mass = 0.5 mol × 28 g mol⁻¹ = <b>14 g</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -860,7 +874,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q58. Calculate molarity and molality of 20% (w/w) aqueous KI solution (density = 1.202 g/mL).</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      Mass of solute KI = 20g, solvent = 80g = 0.08 kg, Molar mass KI = 166 g/mol.<br>• Moles KI = 20 / 166 = 0.1205 mol.<br>• <b>Molality m</b> = 0.1205 / 0.08 kg = <b>1.506 m</b>.<br>• Volume solution = 100g / 1.202 = 83.19 mL = 0.08319 L.<br>• <b>Molarity M</b> = 0.1205 / 0.08319 = <b>1.448 M</b>.
+      Mass of solute KI = 20g, solvent = 80g = 0.08 kg, Molar mass KI = 166 g mol⁻¹.<br>• Moles KI = 20 / 166 = 0.1205 mol.<br>• <b>Molality m</b> = 0.1205 / 0.08 kg = <b>1.506 m</b>.<br>• Volume solution = 100g / 1.202 = 83.19 mL = 0.08319 L.<br>• <b>Molarity M</b> = 0.1205 / 0.08319 = <b>1.448 M</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -895,14 +909,14 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q63. Calculate mass of Na₂CO₃ required to prepare 250 mL of 0.5 M solution.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      Molar mass Na₂CO₃ = 2(23) + 12 + 3(16) = 106 g/mol.<br>Moles = 0.5 M × 0.25 L = 0.125 mol.<br>Mass = 0.125 × 106 = <b>13.25 g</b>.
+      Molar mass Na₂CO₃ = 2(23) + 12 + 3(16) = 106 g mol⁻¹.<br>Moles = 0.5 M × 0.25 L = 0.125 mol.<br>Mass = 0.125 × 106 = <b>13.25 g</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q64. A welding fuel gas contains Carbon and Hydrogen only. Burning a sample in oxygen gives 3.38g CO₂ and 0.690g H₂O. A 10.0L volume at STP weighs 11.6g. Calculate empirical and molecular formula.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      • Mass C = (12/44) × 3.38 = 0.9218g. Moles C = 0.0768.<br>• Mass H = (2/18) × 0.690 = 0.0767g. Moles H = 0.0767.<br>• Moles ratio C:H = 1:1 ⇒ <b>Empirical Formula: CH</b>.<br>• Molar mass = (11.6g / 10L) × 22.4L = 26 g/mol.<br>• n = 26 / 13 = 2 ⇒ <b>Molecular Formula: C₂H₂ (Acetylene)</b>.
+      • Mass C = (12/44) × 3.38 = 0.9218g. Moles C = 0.0768.<br>• Mass H = (2/18) × 0.690 = 0.0767g. Moles H = 0.0767.<br>• Moles ratio C:H = 1:1 ⇒ <b>Empirical Formula: CH</b>.<br>• Molar mass = (11.6g / 10L) × 22.4L = 26 g mol⁻¹.<br>• n = 26 / 13 = 2 ⇒ <b>Molecular Formula: C₂H₂ (Acetylene)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -923,7 +937,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q67. Calculate mass of 1.204 × 10²4 molecules of Glucose (C₆H₁₂O₆).</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      Moles = (1.204 × 10²⁴) / (6.022 × 10²³) = 2 mol.<br>Mass = 2 mol × 180 g/mol = <b>360 g</b>.
+      Moles = (1.204 × 10²⁴) / (6.022 × 10²³) = 2 mol.<br>Mass = 2 mol × 180 g mol⁻¹ = <b>360 g</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -951,7 +965,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q71. Calculate mass percent of each element in Glucose (C₆H₁₂O₆).</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      Molar mass = 180 g/mol.<br>• % C = (72 / 180) × 100 = <b>40.0 %</b><br>• % H = (12 / 180) × 100 = <b>6.67 %</b><br>• % O = (96 / 180) × 100 = <b>53.33 %</b>.
+      Molar mass = 180 g mol⁻¹.<br>• % C = (72 / 180) × 100 = <b>40.0 %</b><br>• % H = (12 / 180) × 100 = <b>6.67 %</b><br>• % O = (96 / 180) × 100 = <b>53.33 %</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -972,7 +986,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q74. How much KClO₃ is needed to produce 2.24 L of O₂ gas at STP?</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FFAB91; font-weight: bold;">Detailed Solution:</span><br>
-      2KClO₃ → 2KCl + 3O₂.<br>Moles O₂ = 2.24 / 22.4 = 0.1 mol.<br>Moles KClO₃ needed = (2/3) × 0.1 = 0.0667 mol.<br>Mass = 0.0667 × 122.5 g/mol = <b>8.17 g</b>.
+      2KClO₃ → 2KCl + 3O₂.<br>Moles O₂ = 2.24 / 22.4 = 0.1 mol.<br>Moles KClO₃ needed = (2/3) × 0.1 = 0.0667 mol.<br>Mass = 0.0667 × 122.5 g mol⁻¹ = <b>8.17 g</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1079,9 +1093,9 @@ export const c11Chem1HtmlSolutions = `
       Empirical formula gives simplest whole-number ratio of atoms; Molecular formula gives actual number of atoms. Relation: Molecular Formula = n × Empirical Formula (n = Molar Mass / EF Mass).
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) An organic compound contains 54.55% C, 9.09% H, and 36.36% O. Its molar mass is 88 g/mol. Determine empirical and molecular formula.</span></p>
+    <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) An organic compound contains 54.55% C, 9.09% H, and 36.36% O. Its molar mass is 88 g mol⁻¹. Determine empirical and molecular formula.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); padding: 10px 12px; border-left: 3px solid #FF512F;">
-      • C: 54.55 / 12 = 4.54 &nbsp;⇒&nbsp; 4.54 / 2.27 = 2<br>• H: 9.09 / 1 = 9.09 &nbsp;⇒&nbsp; 9.09 / 2.27 = 4<br>• O: 36.36 / 16 = 2.27 &nbsp;⇒&nbsp; 2.27 / 2.27 = 1<br>👉 <b>Empirical Formula: C₂H₄O</b> (EF Mass = 44 g/mol).<br>n = 88 / 44 = 2 ⇒ <b>Molecular Formula: C₄H₈O₂ (Butanoic acid / Ethyl acetate)</b>.
+      • C: 54.55 / 12 = 4.54 &nbsp;⇒&nbsp; 4.54 / 2.27 = 2<br>• H: 9.09 / 1 = 9.09 &nbsp;⇒&nbsp; 9.09 / 2.27 = 4<br>• O: 36.36 / 16 = 2.27 &nbsp;⇒&nbsp; 2.27 / 2.27 = 1<br>👉 <b>Empirical Formula: C₂H₄O</b> (EF Mass = 44 g mol⁻¹).<br>n = 88 / 44 = 2 ⇒ <b>Molecular Formula: C₄H₈O₂ (Butanoic acid / Ethyl acetate)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
@@ -1146,7 +1160,7 @@ export const c11Chem1HtmlSolutions = `
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) 0.45g of a organic compound gave 0.88g CO₂ and 0.54g H₂O. Vapour density of compound is 45. Find molecular formula.</span></p>
     <div style="background: rgba(255, 81, 47, 0.05); padding: 10px 12px; border-left: 3px solid #FF512F;">
-      • Mass C = (12/44) × 0.88 = 0.24g. Moles C = 0.02.<br>• Mass H = (2/18) × 0.54 = 0.06g. Moles H = 0.06.<br>• Mass O = 0.45 - (0.24 + 0.06) = 0.15g. Moles O = 0.009375.<br>Ratio C:H:O = 0.02/0.009375 : 0.06/0.009375 : 1 = 2.13 : 6.4 : 1 ⇒ <b>Empirical Formula: C₂H₆O</b>.<br>Molar mass = 2 × Vapour Density = 2 × 45 = 90 g/mol.<br>n = 90 / 46 = 2 ⇒ <b>Molecular Formula: C₄H₁₂O₂</b>.
+      • Mass C = (12/44) × 0.88 = 0.24g. Moles C = 0.02.<br>• Mass H = (2/18) × 0.54 = 0.06g. Moles H = 0.06.<br>• Mass O = 0.45 - (0.24 + 0.06) = 0.15g. Moles O = 0.009375.<br>Ratio C:H:O = 0.02/0.009375 : 0.06/0.009375 : 1 = 2.13 : 6.4 : 1 ⇒ <b>Empirical Formula: C₂H₆O</b>.<br>Molar mass = 2 × Vapour Density = 2 × 45 = 90 g mol⁻¹.<br>n = 90 / 46 = 2 ⇒ <b>Molecular Formula: C₄H₁₂O₂</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">

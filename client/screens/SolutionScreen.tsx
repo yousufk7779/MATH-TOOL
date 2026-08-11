@@ -1234,6 +1234,9 @@ const MathWebView = memo(
         user-select: none; 
         -webkit-touch-callout: none;
       }
+      p, li, div:not(.table-container):not(.table-responsive):not(.prop-table):not(.pt-scroll-wrapper) {
+        text-align: justify !important;
+      }
       p, img, div:not(.table-container):not(.table-responsive):not(.prop-table), h1, h2, h3, h4, h5, h6, b, strong, span {
         word-break: break-word !important;
         overflow-wrap: break-word !important;
