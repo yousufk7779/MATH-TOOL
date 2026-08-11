@@ -720,7 +720,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 8px 0;"><span style="color: #FF512F; font-weight: bold;">Q22. 1 mole of oxygen gas (O₂) contains:</span></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
       (A) 6.022 × 10²³ atoms &nbsp;&nbsp;&nbsp;&nbsp; (B) 6.022 × 10²³ molecules<br>
-      (C) 1.204 × 10²4 molecules &nbsp;&nbsp;&nbsp;&nbsp; (D) 3.011 × 10²³ atoms
+      (C) 1.204 × 10²⁴ molecules &nbsp;&nbsp;&nbsp;&nbsp; (D) 3.011 × 10²³ atoms
     </div>
     <div style="background: rgba(255, 81, 47, 0.15); border-left: 3.5px solid #FF512F; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <span style="color: #FF512F; font-weight: bold;">✓ Answer: (B) 6.022 × 10²³ molecules</span><br>
@@ -763,223 +763,223 @@ export const c11Chem1HtmlSolutions = `
   <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
   <div style="background: rgba(255, 81, 47, 0.12); border: 1.5px solid #FF512F; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF512F; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #FFAB91; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (20-30 Words)</p>
+    <p style="color: #FFAB91; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q26. Define Molarity. Why does it change with temperature?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       <b>Molarity (M)</b> is the number of moles of solute dissolved per Litre of solution. It changes with temperature because solution volume expands or contracts with temperature variations.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q27. State Gay Lussac's Law of Gaseous Volumes with one example.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Gases react in volumes bearing simple whole-number ratios to each other and gaseous products at constant T and P.<br><b>Example:</b> 1 Vol H₂ + 1 Vol Cl₂ → 2 Vol HCl (1:1:2).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q28. Calculate the molar mass of Sodium Carbonate (Na₂CO₃).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Na = 23, C = 12, O = 16.<br>Molar mass of Na₂CO₃ = (2 × 23) + 12 + (3 × 16) = 46 + 12 + 48 = <b>106 g/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q29. What is the difference between an atom and a molecule?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       An <b>atom</b> is the smallest unit of an element that retains chemical identity (e.g., Na, He). A <b>molecule</b> is a stable group of bonded atoms capable of independent existence (e.g., H₂O, O₂).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q30. Define Limiting Reagent in a chemical reaction.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       The <b>Limiting Reagent</b> is the reactant that is completely consumed first in a reaction, thereby limiting the theoretical yield of product formed.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q31. Express (a) 0.0000456 and (b) 234000 in scientific notation.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       (a) 0.0000456 = <span style="color:#FF512F; font-weight:bold;">4.56 × 10⁻⁵</span><br>(b) 234000 = <span style="color:#FF512F; font-weight:bold;">2.34 × 10⁵</span>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q32. State Law of Conservation of Mass. Who proposed this law?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Matter can neither be created nor destroyed in a chemical reaction; mass of reactants equals mass of products. Proposed by <b>Antoine Lavoisier (1789)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q33. How many significant figures are present in (a) 0.0025, (b) 208, (c) 500.0?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       (a) 0.0025 has <b>2</b> significant figures.<br>(b) 208 has <b>3</b> significant figures.<br>(c) 500.0 has <b>4</b> significant figures.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q34. Calculate the volume occupied by 0.5 moles of N₂ gas at STP.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       At STP, 1 mole gas occupies 22.4 L.<br>Volume of 0.5 mol N₂ = 0.5 mol × 22.4 L/mol = <b>11.2 Litres</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q35. What is unified atomic mass unit (u)?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       One unified atomic mass unit (1 u) is defined as exactly 1/12th of the mass of one Carbon-12 atom = <b>1.66056 × 10⁻²⁴ g</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q36. Define Empirical Formula and Molecular Formula.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       <b>Empirical Formula</b> gives simplest whole-number ratio of atoms in a compound. <b>Molecular Formula</b> gives actual number of atoms of each element in a molecule.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q37. Calculate mass percent of Calcium in Calcium Oxide (CaO).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Molar mass CaO = 40 + 16 = 56 g/mol.<br>Mass % Ca = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">40</span><span style="display:block; padding:0 4px;">56</span></span> × 100 = <b>71.43%</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q38. Differentiate between Precision and Accuracy.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       <b>Precision</b> refers to the closeness of various measurements for the same quantity. <b>Accuracy</b> is the agreement of a particular value to the true value.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q39. Define Mole Fraction. What is the sum of mole fractions of all components?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Mole fraction is the ratio of moles of one component to total moles of solution. The sum of mole fractions of all components is always equal to <b>1</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q40. Calculate the molarity of pure water at 4°C (density = 1.0 g/mL).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Mass of 1 L water = 1000 g.<br>Moles of H₂O = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1000</span><span style="display:block; padding:0 4px;">18</span></span> = 55.55 mol.<br>Molarity = <b>55.55 M</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q41. State Avogadro's Law.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Equal volumes of all gases under identical conditions of temperature and pressure contain equal number of molecules (V ∝ n at constant T and P).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q42. What is formula mass? Give one example where it is used.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Formula mass is the sum of atomic masses of atoms in formula unit of ionic compounds (e.g., NaCl = 23 + 35.5 = <b>58.5 u</b>) where discrete molecules do not exist.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q43. State Law of Multiple Proportions.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       When two elements form more than one compound, masses of one element combining with fixed mass of other are in simple whole-number ratios (e.g., CO and CO₂).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q44. Calculate moles of glucose present in 5.4 g of C₆H₁₂O₆.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Molar mass glucose = 180 g/mol.<br>Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">5.4 g</span><span style="display:block; padding:0 4px;">180 g/mol</span></span> = <b>0.03 mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q45. What is stoichiometry?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Stoichiometry is the quantitative study of reactants consumed and products formed in a balanced chemical reaction based on mole ratios.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q46. Define Molality. What is its unit?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       <b>Molality (m)</b> is the number of moles of solute present per kilogram (kg) of solvent. Unit: <b>mol/kg or m</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q47. Calculate the mass of 1 molecule of Oxygen (O₂).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Mass of 1 molecule O₂ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">32 g</span><span style="display:block; padding:0 4px;">6.022 × 10²³</span></span> = <b>5.31 × 10⁻²³ grams</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q48. Distinguish between Element and Compound.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       An <b>Element</b> consists of only one type of atom (e.g., Cu, O₂). A <b>Compound</b> contains two or more elements chemically combined in fixed ratio (e.g., H₂O, CO₂).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q49. Express 100 °C in Kelvin scale.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       T(K) = T(°C) + 273.15 = 100 + 273.15 = <b>373.15 K</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q50. What is ppm (parts per million)?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       ppm is concentration unit for trace components: ppm = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass of solute</span><span style="display:block; padding:0 4px;">Total mass of solution</span></span> × 10⁶.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q51. Calculate the molarity of 0.4 g NaOH in 100 mL solution.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Moles = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.4</span><span style="display:block; padding:0 4px;">40</span></span> = 0.01. Volume = 0.1 L.<br>Molarity = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.01</span><span style="display:block; padding:0 4px;">0.1</span></span> = <b>0.1 M</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q52. What is Vapour Density? State relation between Molar Mass and VD.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Vapour density is mass of gas volume relative to equal H₂ volume. <b>Molar Mass = 2 × Vapour Density</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q53. Define Isotope and Isobar.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       <b>Isotopes</b>: Same atomic number, different mass numbers (¹²C, ¹⁴C). <b>Isobars</b>: Different atomic numbers, same mass number (⁴⁰Ar, ⁴⁰Ca).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q54. How many atoms are present in 1 mole of Ozone (O₃)?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       1 mole O₃ = 6.022 × 10²³ molecules = 3 × 6.022 × 10²³ = <b>1.8066 × 10²⁴ atoms</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q55. Why is molality preferred over molarity in thermodynamic experiments?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
-      <span style="color: #FF8A65; font-weight: bold;">Answer (Word Limit: 20-30 words):</span><br>
+      <span style="color: #FF8A65; font-weight: bold;">Answer:</span><br>
       Because molality depends on mass of solvent, which is temperature-independent, whereas molarity depends on solution volume which varies with temperature.
     </div>
   </div>
   <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
   <div style="background: rgba(255, 81, 47, 0.12); border: 1.5px solid #FF512F; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF512F; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #FFAB91; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (100-150 Words)</p>
+    <p style="color: #FFAB91; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1098,7 +1098,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q72. Calculate number of atoms in (i) 52 moles of Ar, (ii) 52 u of He, (iii) 52 g of He.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FF8A65; font-weight: bold;">Detailed Solution:</span><br>
-      (i) 52 mol Ar = 52 × 6.022 × 10²³ = <b>3.131 × 10²⁵ atoms</b>.<br>(ii) 52 u He = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52</span><span style="display:block; padding:0 4px;">4</span></span> = <b>13 atoms</b>.<br>(iii) 52 g He = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52</span><span style="display:block; padding:0 4px;">4</span></span> × N_A = <b>3.131 × 10²⁵ atoms</b>.
+      (i) 52 mol Ar = 52 × 6.022 × 10²³ = <b>3.131 × 10²⁵ atoms</b>.<br>(ii) 52 u He = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52</span><span style="display:block; padding:0 4px;">4</span></span> = <b>13 atoms</b>.<br>(iii) 52 g He = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">52</span><span style="display:block; padding:0 4px;">4</span></span> × N_A = 13 × 6.022 × 10²³ = <b>7.8286 × 10²⁴ atoms</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1161,7 +1161,7 @@ export const c11Chem1HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><span style="color: #FF512F; font-weight: bold;">Q81. Calculate mass percentage of water of crystallization in CuSO₄·5H₂O.</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); border-left: 3px solid #FF512F; padding: 10px 12px; border-radius: 4px;">
       <span style="color: #FF8A65; font-weight: bold;">Detailed Solution:</span><br>
-      Molar mass CuSO₄·5H₂O = 63.5 + 32 + 64 + (5 × 18) = 249.5 g/mol.<br>Mass % H₂O = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">90</span><span style="display:block; padding:0 4px;">249.5</span></span> × 100 = <b>36.07%</b>.
+      Molar mass CuSO₄·5H₂O = 63.55 + 32.06 + 64 + (5 × 18) = 249.69 g/mol.<br>Mass % H₂O = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">90.08</span><span style="display:block; padding:0 4px;">249.69</span></span> × 100 = <b>36.07%</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1195,7 +1195,7 @@ export const c11Chem1HtmlSolutions = `
   <!-- SECTION D: LONG ANSWER & HOTS QUESTIONS (Q86 to Q100) -->
   <div style="background: rgba(255, 81, 47, 0.12); border: 1.5px solid #FF512F; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF512F; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer & HOTS Questions (Q86 to Q100)</h2>
-    <p style="color: #FFAB91; margin: 0; font-size: 14px;">15 Advanced HOTS Questions • 5 Marks Each (150-200 Words + Multi-parts)</p>
+    <p style="color: #FFAB91; margin: 0; font-size: 14px;">15 Advanced HOTS Questions • 5 Marks Each</p>
   </div>
 
   <!-- 3D Figure for Section D -->
@@ -1279,7 +1279,7 @@ export const c11Chem1HtmlSolutions = `
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) 1.0 kg Fe₂O₃ reacts with 0.5 kg CO: Fe₂O₃ + 3CO → 2Fe + 3CO₂. (i) Limiting reagent? (ii) Mass Fe produced?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 10px 12px; border-left: 3px solid #FF512F;">
-      Moles Fe₂O₃ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1000</span><span style="display:block; padding:0 4px;">160</span></span> = 6.25 mol; Moles CO = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">500</span><span style="display:block; padding:0 4px;">28</span></span> = 17.86 mol.<br>Ratio Fe₂O₃ = 6.25, Ratio CO = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">17.86</span><span style="display:block; padding:0 4px;">3</span></span> = 5.95.<br><b>(i) CO is Limiting Reagent</b>.<br><b>(ii) Moles Fe</b> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × 17.86 = 11.91 mol. Mass Fe = 11.91 × 56 = <b>666.8 g of Iron</b>.
+      Moles Fe₂O₃ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1000</span><span style="display:block; padding:0 4px;">160</span></span> = 6.25 mol; Moles CO = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">500</span><span style="display:block; padding:0 4px;">28</span></span> = 17.86 mol.<br>Ratio Fe₂O₃ = 6.25, Ratio CO = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">17.86</span><span style="display:block; padding:0 4px;">3</span></span> = 5.95.<br><b>(i) CO is Limiting Reagent</b>.<br><b>(ii) Moles Fe</b> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × 17.86 = 11.91 mol. Mass Fe = 11.91 × 55.85 = <b>665 grams of Iron</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
@@ -1339,7 +1339,7 @@ export const c11Chem1HtmlSolutions = `
     
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(a) Why is atomic mass of Carbon taken as 12.011 u instead of exactly 12.000 u?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 8px 12px; border-left: 3px solid #FF512F; margin-bottom: 10px;">
-      Because natural carbon is an isotopic mixture of ¹²C (98.89%) and ¹³C (1.11%).
+      Because natural carbon is an isotopic mixture of ¹²C (98.892%) and ¹³C (1.108%).
     </div>
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) Calculate average atomic mass of Carbon from natural abundances: ¹²C (98.892%, 12.000 u) and ¹³C (1.108%, 13.003 u).</span></p>
@@ -1383,7 +1383,7 @@ export const c11Chem1HtmlSolutions = `
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) Density of NaCl crystal is 2.165 g/cm³. Molar mass = 58.5 g/mol. Calculate edge length of unit cell (4 NaCl per cell).</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 10px 12px; border-left: 3px solid #FF512F;">
-      Cell Mass = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">4 × 58.5</span><span style="display:block; padding:0 4px;">6.022 × 10²³</span></span> = 3.886 × 10⁻²² g.<br>Volume V = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass</span><span style="display:block; padding:0 4px;">Density</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.886 × 10⁻²²</span><span style="display:block; padding:0 4px;">2.165</span></span> = 1.795 × 10⁻²² cm³.<br>Edge length a = ³√(1.795 × 10⁻²²) = <b>5.64 × 10⁻⁸ cm = 564 pm</b>.
+      Cell Mass = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">4 × 58.5</span><span style="display:block; padding:0 4px;">6.022 × 10²³</span></span> = 3.886 × 10⁻²² g.<br>Volume V = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Mass</span><span style="display:block; padding:0 4px;">Density</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3.886 × 10⁻²²</span><span style="display:block; padding:0 4px;">2.165</span></span> = 1.793 × 10⁻²² cm³.<br>Edge length a = ³√(1.793 × 10⁻²²) = <b>5.64 × 10⁻⁸ cm = 564 pm</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
@@ -1396,7 +1396,7 @@ export const c11Chem1HtmlSolutions = `
 
     <p style="margin: 8px 0 4px 0;"><span style="color: #FF512F; font-weight: bold;">(b) 25.0 mL of 0.1 M Na₂CO₃ solution reacts with 50.0 mL of 0.1 M HCl. (i) Write balanced equation. (ii) Limiting reagent? (iii) Volume of CO₂ at STP?</span></p>
     <div style="background: rgba(142, 45, 226, 0.05); padding: 10px 12px; border-left: 3px solid #FF512F;">
-      Balanced Eq: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂.<br>Moles Na₂CO₃ = 0.025 × 0.1 = 0.0025 mol.<br>Moles HCl = 0.050 × 0.1 = 0.0050 mol.<br>Ratios: Na₂CO₃ = 0.0025, HCl = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.0050</span><span style="display:block; padding:0 4px;">2</span></span> = 0.0025.<br><b>(ii) Both reactants are completely consumed (Exact Stoichiometric Proportion)!</b><br><b>(iii) Moles CO₂</b> = 0.0025 mol.<br>Volume CO₂ at STP = 0.0025 mol × 22.4 L/mol = 0.056 L = <b>56.0 mL of CO₂</b>.
+      Balanced Eq: Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂.<br>Moles Na₂CO₃ = 0.025 × 0.1 = 0.0025 mol.<br>Moles HCl = 0.050 × 0.1 = 0.0050 mol.<br>Ratios: Na₂CO₃ = 0.0025, HCl = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.0050</span><span style="display:block; padding:0 4px;">2</span></span> = 0.0025.<br><b>(ii) Both reactants are completely consumed (Exact Stoichiometric Ratio)!</b><br><b>(iii) Moles CO₂</b> = 0.0025 mol.<br>Volume CO₂ at STP = 0.0025 mol × 22.4 L/mol = 0.056 L = <b>56.0 mL of CO₂</b>.
     </div>
   </div>
 </div>
