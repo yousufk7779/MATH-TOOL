@@ -107,7 +107,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     Chemistry: [
       { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#8E2DE2" },
       { id: "c11-chem-2", number: 2, name: "Structure of Atom", color: "#00b09b" },
-      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#FF512F" },
+      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#00b09b" },
       { id: "c11-chem-4", number: 4, name: "Chemical Bonding & Molecular Structure", color: "#00c6ff" },
       { id: "c11-chem-5", number: 5, name: "Chemical Thermodynamics", color: "#FF8A65" },
       { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
