@@ -18,6 +18,7 @@ import QuizScreen from "@/screens/QuizScreen";
 import ClassSelectorScreen from "@/screens/ClassSelectorScreen";
 import Class12Screen from "@/screens/Class12Screen";
 import Class11Screen from "@/screens/Class11Screen";
+import Class11BiologyScreen from "@/screens/Class11BiologyScreen";
 import Class9Screen from "@/screens/Class9Screen";
 import Class8Screen from "@/screens/Class8Screen";
 import Class8SocialScienceScreen from "@/screens/Class8SocialScienceScreen";
@@ -31,6 +32,7 @@ export type RootStackParamList = {
   Home: undefined;
   Class12: undefined;
   Class11: undefined;
+  Class11Biology: undefined;
   Class9: undefined;
   Class8: undefined;
   Class7: undefined;
@@ -72,6 +74,7 @@ export default function RootStackNavigator() {
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Class12" component={Class12Screen} />
       <Stack.Screen name="Class11" component={Class11Screen} />
+      <Stack.Screen name="Class11Biology" component={Class11BiologyScreen} />
       <Stack.Screen name="Class9" component={Class9Screen} />
       <Stack.Screen name="Class8" component={Class8Screen} />
       <Stack.Screen name="Class7" component={Class7Screen} />
