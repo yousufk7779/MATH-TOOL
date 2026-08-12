@@ -113,7 +113,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
       { id: "c11-chem-7", number: 7, name: "Redox Reactions", color: "#FDC830" },
       { id: "c11-chem-8", number: 8, name: "Organic Chemistry – Basic Principles", color: "#FF007F" },
-      { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#26C6DA" },
+      { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#29B6F6" },
     ],
     Zoology: [
       { id: "c11-zoo-1", number: 1, name: "Animal Kingdom", color: "#00b09b" },
@@ -1092,6 +1092,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c11-chem-6") return ["#AB47BC", "#7B1FA2"];
   if (chapterId === "c11-chem-7") return ["#FDC830", "#F39C12"];
   if (chapterId === "c11-chem-8") return ["#FF007F", "#C2185B"];
+  if (chapterId === "c11-chem-9") return ["#29B6F6", "#0288D1"];
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;
