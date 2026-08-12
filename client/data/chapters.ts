@@ -116,26 +116,16 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#29B6F6" },
     ],
     Zoology: [
-      { id: "c11-zoo-1", number: 1, name: "Animal Kingdom", color: "#00b09b" },
-      { id: "c11-zoo-2", number: 2, name: "Structural Organisation in Animals", color: "#FF512F" },
-      { id: "c11-zoo-3", number: 3, name: "Biomolecules", color: "#8E2DE2" },
-      { id: "c11-zoo-4", number: 4, name: "Breathing and Exchange of Gases", color: "#00c6ff" },
-      { id: "c11-zoo-5", number: 5, name: "Body Fluids and Circulation", color: "#FF8A65" },
-      { id: "c11-zoo-6", number: 6, name: "Excretory Products and Elimination", color: "#AB47BC" },
-      { id: "c11-zoo-7", number: 7, name: "Locomotion and Movement", color: "#FDC830" },
-      { id: "c11-zoo-8", number: 8, name: "Neural Control and Coordination", color: "#FF007F" },
-      { id: "c11-zoo-9", number: 9, name: "Chemical Coordination & Integration", color: "#26C6DA" },
+      { id: "c11-zoo-1", number: 1, name: "Diversity in Living World", color: "#FF3D00" },
+      { id: "c11-zoo-2", number: 2, name: "Structural Organisation and Animal Biomolecules", color: "#7C4DFF" },
+      { id: "c11-zoo-3", number: 3, name: "Cell Structure and Function", color: "#FF007F" },
+      { id: "c11-zoo-4", number: 4, name: "Human Physiology", color: "#00B0FF" },
     ],
     Botany: [
-      { id: "c11-bot-1", number: 1, name: "The Living World", color: "#11998e" },
-      { id: "c11-bot-2", number: 2, name: "Biological Classification", color: "#FF512F" },
-      { id: "c11-bot-3", number: 3, name: "Plant Kingdom", color: "#8E2DE2" },
-      { id: "c11-bot-4", number: 4, name: "Cell: The Unit of Life", color: "#00b09b" },
-      { id: "c11-bot-5", number: 5, name: "Cell Cycle and Cell Division", color: "#00c6ff" },
-      { id: "c11-bot-6", number: 6, name: "Photosynthesis in Higher Plants", color: "#FF8A65" },
-      { id: "c11-bot-7", number: 7, name: "Respiration in Plants", color: "#AB47BC" },
-      { id: "c11-bot-8", number: 8, name: "Plant Growth and Development", color: "#FDC830" },
-      { id: "c11-bot-9", number: 9, name: "Anatomy of Flowering Plants", color: "#FF007F" },
+      { id: "c11-bot-1", number: 1, name: "Diversity of Life", color: "#00E676" },
+      { id: "c11-bot-2", number: 2, name: "Kingdom Plantae", color: "#FF9100" },
+      { id: "c11-bot-3", number: 3, name: "Plant Anatomy", color: "#E040FB" },
+      { id: "c11-bot-4", number: 4, name: "Plant Physiology", color: "#00E5FF" },
     ],
   },
   "Class 10 Social Science": {
@@ -1093,6 +1083,14 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c11-chem-7") return ["#FDC830", "#F39C12"];
   if (chapterId === "c11-chem-8") return ["#FF007F", "#C2185B"];
   if (chapterId === "c11-chem-9") return ["#29B6F6", "#0288D1"];
+  if (chapterId === "c11-bot-1") return ["#00E676", "#11998e"];
+  if (chapterId === "c11-bot-2") return ["#FF9100", "#FF3D00"];
+  if (chapterId === "c11-bot-3") return ["#E040FB", "#7B1FA2"];
+  if (chapterId === "c11-bot-4") return ["#00E5FF", "#00838F"];
+  if (chapterId === "c11-zoo-1") return ["#FF3D00", "#DD2476"];
+  if (chapterId === "c11-zoo-2") return ["#7C4DFF", "#4A00E0"];
+  if (chapterId === "c11-zoo-3") return ["#FF007F", "#C2185B"];
+  if (chapterId === "c11-zoo-4") return ["#00B0FF", "#0072ff"];
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;

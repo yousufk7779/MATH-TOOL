@@ -972,10 +972,10 @@ sstC8Categories.forEach((cat) => {
 
 // Dynamically generate Class 11 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
 const c11Subjects = [
-  { prefix: "phy", title: "Physics" },
-  { prefix: "chem", title: "Chemistry" },
-  { prefix: "zoo", title: "Zoology" },
-  { prefix: "bot", title: "Botany" },
+  { prefix: "phy", title: "Physics", maxCh: 9 },
+  { prefix: "chem", title: "Chemistry", maxCh: 9 },
+  { prefix: "zoo", title: "Zoology", maxCh: 4 },
+  { prefix: "bot", title: "Botany", maxCh: 4 },
 ];
 
 const c11ThemeColors = [
@@ -990,8 +990,8 @@ const c11ThemeColors = [
   "#FF007F", // Ch 9 Neon Rose
 ];
 
-c11Subjects.forEach(({ prefix, title }) => {
-  for (let i = 1; i <= 9; i++) {
+c11Subjects.forEach(({ prefix, title, maxCh }) => {
+  for (let i = 1; i <= maxCh; i++) {
     const id = `c11-${prefix}-${i}`;
     const themeColor = c11ThemeColors[(i - 1) % c11ThemeColors.length];
     chapterContents[id] = {

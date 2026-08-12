@@ -1,11 +1,11 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 import { StyleSheet, View, ScrollView } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenWrapper } from "@/components/ScreenWrapper";
 import { ColorButton } from "@/components/ColorButton";
-import { JiguuColors, Spacing } from "@/constants/theme";
+import { Spacing } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 
 type Class11ScreenNavigationProp = NativeStackNavigationProp<
@@ -15,6 +15,7 @@ type Class11ScreenNavigationProp = NativeStackNavigationProp<
 
 function Class11Screen() {
   const navigation = useNavigation<Class11ScreenNavigationProp>();
+  const [isBioExpanded, setIsBioExpanded] = useState(true);
 
   return (
     <ScreenWrapper showBackButton hideHomeButton homeRoute="ClassSelector">
@@ -24,6 +25,7 @@ function Class11Screen() {
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.buttonsContainer}>
+          {/* PHYSICS BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-physics"
@@ -40,6 +42,7 @@ function Class11Screen() {
             />
           </View>
 
+          {/* CHEMISTRY BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-chemistry"
@@ -56,38 +59,57 @@ function Class11Screen() {
             />
           </View>
 
+          {/* BIOLOGY MAIN BUTTON (WITH EXACT ZOOLOGY GRADIENT) */}
           <View style={styles.buttonWrapper}>
             <ColorButton
-              testID="button-zoology"
-              title="ZOOLOGY"
-              icon="🦁"
+              testID="button-biology"
+              title={`BIOLOGY ${isBioExpanded ? "▲" : "▼"}`}
+              icon="🧬"
               colors={["#00b09b", "#96c93d"]}
-              onPress={() =>
-                navigation.navigate("ChapterList", {
-                  subject: "Class 11 Science",
-                  topic: "Zoology",
-                  className: "Class 11",
-                })
-              }
+              onPress={() => setIsBioExpanded(!isBioExpanded)}
             />
           </View>
 
-          <View style={styles.buttonWrapper}>
-            <ColorButton
-              testID="button-botany"
-              title="BOTANY"
-              icon="🌿"
-              colors={["#11998e", "#38ef7d"]}
-              onPress={() =>
-                navigation.navigate("ChapterList", {
-                  subject: "Class 11 Science",
-                  topic: "Botany",
-                  className: "Class 11",
-                })
-              }
-            />
-          </View>
+          {/* NESTED BOTANY & ZOOLOGY BUTTONS INSIDE BIOLOGY (VERTICALLY CENTERED) */}
+          {isBioExpanded && (
+            <View style={styles.biologySubContainer}>
+              {/* 1. BOTANY FIRST */}
+              <View style={styles.buttonWrapper}>
+                <ColorButton
+                  testID="button-botany"
+                  title="BOTANY"
+                  icon="🌿"
+                  colors={["#11998e", "#38ef7d"]}
+                  onPress={() =>
+                    navigation.navigate("ChapterList", {
+                      subject: "Class 11 Science",
+                      topic: "Botany",
+                      className: "Class 11",
+                    })
+                  }
+                />
+              </View>
 
+              {/* 2. ZOOLOGY SECOND */}
+              <View style={styles.buttonWrapper}>
+                <ColorButton
+                  testID="button-zoology"
+                  title="ZOOLOGY"
+                  icon="🦁"
+                  colors={["#FF512F", "#DD2476"]}
+                  onPress={() =>
+                    navigation.navigate("ChapterList", {
+                      subject: "Class 11 Science",
+                      topic: "Zoology",
+                      className: "Class 11",
+                    })
+                  }
+                />
+              </View>
+            </View>
+          )}
+
+          {/* START QUIZ BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-quiz"
@@ -124,5 +146,16 @@ const styles = StyleSheet.create({
   },
   buttonWrapper: {
     width: "100%",
+  },
+  biologySubContainer: {
+    width: "100%",
+    padding: Spacing.lg,
+    borderRadius: 20,
+    backgroundColor: "rgba(0, 176, 155, 0.12)",
+    borderWidth: 1.5,
+    borderColor: "rgba(0, 176, 155, 0.4)",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: Spacing.lg,
   },
 });
