@@ -112,7 +112,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-chem-5", number: 5, name: "Thermodynamics", color: "#FF8A65" },
       { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
       { id: "c11-chem-7", number: 7, name: "Redox Reactions", color: "#FDC830" },
-      { id: "c11-chem-8", number: 8, name: "ORGANIC CHEMISTRY: ORGANIC CHEMISTRY- BASIC PRINCIPLES AND TECHNIQUES", color: "#FF007F" },
+      { id: "c11-chem-8", number: 8, name: "ORGANIC CHEMISTRY-SOME BASIC PRINCIPLES AND TECHNIQUES", color: "#FF007F" },
       { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#29B6F6" },
     ],
     Zoology: [
