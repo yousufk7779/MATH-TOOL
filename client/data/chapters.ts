@@ -1091,6 +1091,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c11-chem-5") return ["#FF8A65", "#FF3D00"];
   if (chapterId === "c11-chem-6") return ["#AB47BC", "#7B1FA2"];
   if (chapterId === "c11-chem-7") return ["#FDC830", "#F39C12"];
+  if (chapterId === "c11-chem-8") return ["#FF007F", "#C2185B"];
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;
