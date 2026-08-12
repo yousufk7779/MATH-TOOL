@@ -1,4 +1,4 @@
-// Class 11 Chemistry Chapter 8 - Organic Chemistry: Some Basic Principles and Techniques
+// Class 11 Chemistry Chapter 8 - ORGANIC CHEMISTRY-SOME BASIC PRINCIPLES AND TECHNIQUES
 // High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
 
 export const c11Chem8HtmlOverview = `
@@ -15,7 +15,7 @@ export const c11Chem8HtmlOverview = `
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
   <div style="background: rgba(255, 0, 127, 0.05); border: 1.5px solid #FF007F; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
     <h2 class="text-center" style="color: #FF007F; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #FF007F; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 8: Organic Chemistry – Some Basic Principles & Techniques</p>
+    <p class="text-center" style="color: #FF007F; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 8: ORGANIC CHEMISTRY-SOME BASIC PRINCIPLES AND TECHNIQUES</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF007F; border-radius: 6px;">
