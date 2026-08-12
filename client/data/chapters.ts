@@ -70,26 +70,16 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-chem-9", number: 9, name: "Amines & Biomolecules", color: "#FF007F" },
     ],
     Zoology: [
-      { id: "c12-zoo-1", number: 1, name: "Human Reproduction", color: "#00b09b" },
-      { id: "c12-zoo-2", number: 2, name: "Reproductive Health", color: "#FF512F" },
-      { id: "c12-zoo-3", number: 3, name: "Principles of Inheritance & Variation", color: "#8E2DE2" },
-      { id: "c12-zoo-4", number: 4, name: "Molecular Basis of Inheritance", color: "#11998e" },
-      { id: "c12-zoo-5", number: 5, name: "Evolution", color: "#00c6ff" },
-      { id: "c12-zoo-6", number: 6, name: "Human Health and Diseases", color: "#FF8A65" },
-      { id: "c12-zoo-7", number: 7, name: "Microbes in Human Welfare", color: "#AB47BC" },
-      { id: "c12-zoo-8", number: 8, name: "Biotechnology: Principles & Processes", color: "#FDC830" },
-      { id: "c12-zoo-9", number: 9, name: "Biotechnology and its Applications", color: "#FF007F" },
+      { id: "c12-zoo-1", number: 1, name: "Reproduction in Animals", color: "#FF3D00" },
+      { id: "c12-zoo-2", number: 2, name: "Genetics and Evolution", color: "#7C4DFF" },
+      { id: "c12-zoo-3", number: 3, name: "Biology in Human Welfare", color: "#FF007F" },
+      { id: "c12-zoo-4", number: 4, name: "Biotechnology and its Applications", color: "#00B0FF" },
     ],
     Botany: [
-      { id: "c12-bot-1", number: 1, name: "Sexual Reproduction in Flowering Plants", color: "#11998e" },
-      { id: "c12-bot-2", number: 2, name: "Organisms and Populations", color: "#FF512F" },
-      { id: "c12-bot-3", number: 3, name: "Ecosystem", color: "#8E2DE2" },
-      { id: "c12-bot-4", number: 4, name: "Biodiversity and Conservation", color: "#00b09b" },
-      { id: "c12-bot-5", number: 5, name: "Environmental Issues", color: "#00c6ff" },
-      { id: "c12-bot-6", number: 6, name: "Plant Biotechnology & Genetics", color: "#FF8A65" },
-      { id: "c12-bot-7", number: 7, name: "Plant Physiology & Nutrition", color: "#AB47BC" },
-      { id: "c12-bot-8", number: 8, name: "Crop Improvement & Breeding", color: "#FDC830" },
-      { id: "c12-bot-9", number: 9, name: "Plant Resources & Conservation", color: "#FF007F" },
+      { id: "c12-bot-1", number: 1, name: "Reproduction in Flowering Plants", color: "#00E676" },
+      { id: "c12-bot-2", number: 2, name: "Genetics", color: "#FF9100" },
+      { id: "c12-bot-3", number: 3, name: "Biology and Human Welfare", color: "#E040FB" },
+      { id: "c12-bot-4", number: 4, name: "Ecology and Environment", color: "#00E5FF" },
     ],
   },
   "Class 11 Science": {
@@ -1091,6 +1081,14 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c11-zoo-2") return ["#7C4DFF", "#4A00E0"];
   if (chapterId === "c11-zoo-3") return ["#FF007F", "#C2185B"];
   if (chapterId === "c11-zoo-4") return ["#00B0FF", "#0072ff"];
+  if (chapterId === "c12-bot-1") return ["#00E676", "#11998e"];
+  if (chapterId === "c12-bot-2") return ["#FF9100", "#FF3D00"];
+  if (chapterId === "c12-bot-3") return ["#E040FB", "#7B1FA2"];
+  if (chapterId === "c12-bot-4") return ["#00E5FF", "#00838F"];
+  if (chapterId === "c12-zoo-1") return ["#FF3D00", "#DD2476"];
+  if (chapterId === "c12-zoo-2") return ["#7C4DFF", "#4A00E0"];
+  if (chapterId === "c12-zoo-3") return ["#FF007F", "#C2185B"];
+  if (chapterId === "c12-zoo-4") return ["#00B0FF", "#0072ff"];
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;
