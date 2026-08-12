@@ -107,12 +107,12 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     Chemistry: [
       { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#66BB6A" },
       { id: "c11-chem-2", number: 2, name: "Structure of Atom", color: "#26C6DA" },
-      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#FF8A65" },
+      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity in Properties", color: "#FF8A65" },
       { id: "c11-chem-4", number: 4, name: "Chemical Bonding & Molecular Structure", color: "#43A047" },
-      { id: "c11-chem-5", number: 5, name: "Chemical Thermodynamics", color: "#FF8A65" },
+      { id: "c11-chem-5", number: 5, name: "Thermodynamics", color: "#FF8A65" },
       { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
       { id: "c11-chem-7", number: 7, name: "Redox Reactions", color: "#FDC830" },
-      { id: "c11-chem-8", number: 8, name: "Organic Chemistry – Basic Principles", color: "#FF007F" },
+      { id: "c11-chem-8", number: 8, name: "ORGANIC CHEMISTRY: ORGANIC CHEMISTRY- BASIC PRINCIPLES AND TECHNIQUES", color: "#FF007F" },
       { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#29B6F6" },
     ],
     Zoology: [
