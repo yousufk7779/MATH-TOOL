@@ -1,480 +1,267 @@
 // Class 11 Chemistry Chapter 5 - Chemical Thermodynamics
-// High-Level Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
 
 export const c11Chem5HtmlOverview = `
 <style>
   p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
     text-align: justify !important;
   }
-  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
-  .text-center, th, td { text-align: center !important; }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
 </style>
 
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER) -->
+  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER AT TOP) -->
   <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary & Basic Definitions</h2>
-    <p style="color: #FF8A65; margin: 0 0 16px 0; font-size: 14.5px; text-align: center;">Key Fundamental Terms & Concepts for Chapter 5: Chemical Thermodynamics</p>
+    <h2 class="text-center" style="color: #FF8A65; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
+    <p class="text-center" style="color: #FF8A65; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 5: Chemical Thermodynamics</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">1. System:</b> Specified portion of the universe under thermodynamic study.
+        <b style="color: #FF8A65;">1. Thermodynamics:</b> Science dealing with quantitative relationships between heat, work, and different forms of energy transformation.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">2. Surroundings:</b> Everything in the universe outside the system boundary capable of exchanging energy or matter with it.
+        <b style="color: #FF8A65;">2. System & Surroundings:</b> System is the specific portion of universe under thermodynamic study; Surroundings is the rest of universe interacting with system.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">3. Open System:</b> System that can exchange both matter and energy with surroundings.
+        <b style="color: #FF8A65;">3. Open, Closed & Isolated Systems:</b> Open exchanges both energy & matter; Closed exchanges energy only; Isolated exchanges neither energy nor matter.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">4. Closed System:</b> System that exchanges energy but NO matter with surroundings.
+        <b style="color: #FF8A65;">4. Intensive & Extensive Properties:</b> Intensive is independent of mass/quantity (T, P, density); Extensive depends on mass/quantity (mass, volume, U, H, S, G).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">5. Isolated System:</b> System that exchanges neither energy nor matter with surroundings.
+        <b style="color: #FF8A65;">5. State Function:</b> Property depending solely on state of system, independent of path taken (U, H, S, G, P, V, T).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">6. State Function:</b> Property depending ONLY on initial and final states of system (E, U, H, S, G, T, P, V).
+        <b style="color: #FF8A65;">6. First Law of Thermodynamics:</b> Law of Conservation of Energy: ΔU = q + w. Energy cannot be created or destroyed.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">7. Path Function:</b> Property depending on the path or mechanism followed (Heat q, Work w).
+        <b style="color: #FF8A65;">7. Internal Energy (U):</b> Total sum of all microscopic forms of potential and kinetic energy possessed by system molecules.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">8. Extensive Property:</b> Property depending on the quantity of matter present (Volume V, Mass m, Enthalpy H, Internal energy E).
+        <b style="color: #FF8A65;">8. Enthalpy (H):</b> Total heat content of system at constant pressure defined as H = U + P V (ΔH = ΔU + Δn_g R T).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">9. Intensive Property:</b> Property independent of the quantity of matter present (Temperature T, Pressure P, Density d).
+        <b style="color: #FF8A65;">9. Heat Capacity (C):</b> Amount of heat required to raise temperature of system by 1°C or 1 K (q = C ΔT).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">10. First Law of Thermodynamics:</b> Energy of an isolated universe is constant (ΔE = q + w).
+        <b style="color: #FF8A65;">10. C_p - C_v = R Relation:</b> Difference between molar heat capacities at constant pressure and volume for ideal gas equals Gas Constant R.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">11. Internal Energy (E or U):</b> Total energy stored within a chemical system.
+        <b style="color: #FF8A65;">11. Calorimetry:</b> Experimental measurement of heat changes during physical or chemical processes using Bomb / Constant Pressure Calorimeter.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">12. Enthalpy (H):</b> Total heat content at constant pressure, H = E + pV (ΔH = ΔE + pΔV).
+        <b style="color: #FF8A65;">12. Hess's Law of Constant Heat Summation:</b> Total enthalpy change of a reaction is identical whether process occurs in 1 step or multiple steps.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">13. Heat Capacity (C):</b> Heat required to raise system temperature by 1 K (C = q / ΔT).
+        <b style="color: #FF8A65;">13. Standard Enthalpy of Formation (Δ_f H^⊖):</b> Enthalpy change when 1 mole of compound is formed from its constituent elements in standard reference states.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">14. Specific Heat Capacity (c):</b> Heat required to raise temperature of 1 gram by 1 K.
+        <b style="color: #FF8A65;">14. Standard Enthalpy of Combustion (Δ_c H^⊖):</b> Enthalpy change when 1 mole of substance undergoes complete combustion in excess oxygen under standard conditions.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">15. Hess's Law:</b> Overall reaction enthalpy is constant regardless of multi-step reaction path.
+        <b style="color: #FF8A65;">15. Bond Dissociation Enthalpy:</b> Energy required to break 1 mole of specific covalent bonds in gaseous state to form gaseous radicals.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">16. Standard Enthalpy of Formation (ΔfH<sup>⊖</sup>):</b> Heat change forming 1 mol substance from standard elements.
+        <b style="color: #FF8A65;">16. Entropy (S):</b> State function measuring degree of randomness or molecular disorder of system (ΔS = q_rev / T).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">17. Enthalpy of Combustion (ΔcH<sup>⊖</sup>):</b> Heat change during complete 1 mol combustion in excess O₂.
+        <b style="color: #FF8A65;">17. Second Law of Thermodynamics:</b> Entropy of an isolated system increases in any spontaneous process (ΔS_total = ΔS_sys + ΔS_surr > 0).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">18. Entropy (S):</b> Quantitative measure of molecular disorder in a system (ΔS = q_rev / T).
+        <b style="color: #FF8A65;">18. Gibbs Free Energy (G):</b> Thermodynamic state function defined as G = H - T S; measures maximum available useful work.
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">19. Gibbs Free Energy (G):</b> Maximum useful work obtainable at constant T and P (G = H - TS).
+        <b style="color: #FF8A65;">19. Spontaneity Criterion:</b> Process is spontaneous if ΔG < 0 (negative), at equilibrium if ΔG = 0, and non-spontaneous if ΔG > 0 (positive).
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style="color: #FF8A65;">20. Spontaneous Process:</b> Process occurring naturally without external continuous work (ΔG &lt; 0).
+        <b style="color: #FF8A65;">20. ΔG^⊖ and Equilibrium Constant (K):</b> Relation linking standard Gibbs energy change to equilibrium constant: ΔG^⊖ = -2.303 R T log K_c.
       </div>
     </div>
   </div>
 
 
-  <!-- EXACT SYLLABUS HEADING 1 -->
-  <h2 style="color: #FF8A65; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Concepts of System, Types of Systems, Surrounding, Work, Heat</h2>
+  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Concepts of System, Types of Systems, Surrounding, Work, Heat, Energy, Intensive and Extensive Properties, State Functions</h2>
 
-  <!-- 3D FIGURE 5.1 -->
+  <!-- 3D IMAGE 1 -->
   <div style="text-align: center; margin: 20px 0;">
-    <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 600px; border-radius: 12px; display: block; margin: 0 auto; box-shadow: 0 4px 18px rgba(255, 138, 101, 0.35); border: 1.5px solid #FF8A65;" alt="3D Thermodynamic Systems Open Closed Isolated" />
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.1: 3D Visualization of Open, Closed, and Isolated Thermodynamic Systems & Boundary Heat/Matter Transfer</p>
+    <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(255, 138, 101, 0.35); border: 1.5px solid #FF8A65;" alt="3D System and Surroundings" />
+    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.1: 3D Visualization of Open, Closed, and Isolated Thermodynamic Systems & Energy Boundaries</p>
   </div>
 
-  <p>Thermodynamics is the study of energy transformations, heat flow, and mechanical work. A <b style="color: #FF8A65;">system</b> is the specific part of the universe selected for observation, while the <b style="color: #FF8A65;">surrounding</b> includes everything else in the universe that can interact with the system.</p>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Thermodynamic System, Types of Systems and Surroundings</h3>
+  <ul style="padding-left: 20px;">
+    <li><b style="color: #FF8A65;">Open System:</b> Can exchange both energy (heat) and matter with surroundings (e.g. water in an open beaker).</li>
+    <li><b style="color: #FF8A65;">Closed System:</b> Can exchange energy but NO matter with surroundings (e.g. water in a closed metallic vessel).</li>
+    <li><b style="color: #FF8A65;">Isolated System:</b> Can exchange NEITHER energy nor matter with surroundings (e.g. liquid in a sealed insulated Thermos flask).</li>
+  </ul>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Detailed Classification of Thermodynamic Systems:</h3>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Intensive and Extensive Properties</h3>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 16px 0;">
     <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">1. Open System</h4>
-      <p style="margin: 0;">Exchanges <b>both matter and energy</b> across its boundary. Examples: Hot tea in an open beaker, a living plant cell, human body.</p>
+      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Extensive Properties</h4>
+      <p style="margin: 0;">Properties whose value depends on the total mass/amount of matter in system.<br><i>Examples:</i> Mass (m), Volume (V), Internal Energy (U), Enthalpy (H), Entropy (S), Gibbs Free Energy (G), Heat Capacity (C).</p>
     </div>
-
     <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">2. Closed System</h4>
-      <p style="margin: 0;">Exchanges <b>energy only</b> (as heat or work), but NO exchange of matter. Examples: Hot tea in a sealed metallic flask, gas inside a sealed metal cylinder.</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">3. Isolated System</h4>
-      <p style="margin: 0;">Exchanges <b>neither matter nor energy</b> with surroundings. Examples: Liquid in a perfectly insulated double-walled Thermos flask, the Universe as a whole.</p>
+      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Intensive Properties</h4>
+      <p style="margin: 0;">Properties independent of the mass/quantity of matter in system.<br><i>Examples:</i> Temperature (T), Pressure (P), Density (ρ), Refractive Index, Viscosity, Surface Tension, Molar Heat Capacity, pH.</p>
     </div>
   </div>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Concepts of Work (w) and Heat (q):</h3>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) State Functions vs Path Functions, Work, Heat and Sign Conventions</h3>
+  <p><b>State Functions:</b> State variables (U, H, S, G, P, V, T) whose change ΔX depends only on initial and final states: ΔX = X_final - X_initial.<br>
+  <b>Path Functions:</b> Heat (q) and Work (w) depend on specific path followed.<br>
+  <b style="color: #FF8A65;">IUPAC Sign Convention:</b></p>
   <ul style="padding-left: 20px;">
-    <li><b style="color: #FF8A65;">Heat (q):</b> Energy transferred across system boundaries due to a temperature difference. Heat absorbed by system is positive (+q); heat released is negative (-q).</li>
-    <li><b style="color: #FF8A65;">Work (w):</b> Energy transfer produced by force acting through a distance. Work done ON system by surroundings is positive (+w); work done BY system on surroundings is negative (-w).</li>
-    <li><b style="color: #FF8A65;">Pressure-Volume Expansion Work:</b> For gas expanding against external pressure p_ext:
-      <div style="background: rgba(255, 138, 101, 0.12); padding: 10px; border-radius: 6px; text-align: center; margin: 8px 0; font-weight: bold; color: #FFF;">
-        w = -p_ext ΔV = -p_ext (V₂ - V₁)
-      </div>
-    </li>
+    <li>Heat absorbed by system: <b>+q</b> | Heat released by system: <b>-q</b></li>
+    <li>Work done ON system (compression): <b>+w</b> | Work done BY system (expansion): <b>-w</b></li>
   </ul>
 
 
-  <!-- EXACT SYLLABUS HEADING 2 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">2. Energy Intensive and Extensive Properties, State Functions</h2>
+  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">2. First Law of Thermodynamics, Internal Energy and Enthalpy</h2>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">State Functions vs Path Functions</h3>
-  <ul style="padding-left: 20px;">
-    <li><b style="color: #FF8A65;">State Functions:</b> Thermodynamic variables depending ONLY on the current state of system, independent of path: <b>Internal Energy (E or U), Enthalpy (H), Entropy (S), Gibbs Free Energy (G), Temperature (T), Pressure (P), Volume (V)</b>.</li>
-    <li><b style="color: #FF8A65;">Path Functions:</b> Quantities depending on the specific path followed during transition: <b>Heat (q) and Work (w)</b>.</li>
-  </ul>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Energy Intensive vs Extensive Properties</h3>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 16px 0;">
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Extensive Properties (Depend on Quantity of Matter)</h4>
-      <p style="margin: 0;">Volume (V), Mass (m), Total Internal Energy (E), Enthalpy (H), Heat Capacity (C), Entropy (S), Gibbs Free Energy (G).</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Intensive Properties (Independent of Quantity of Matter)</h4>
-      <p style="margin: 0;">Temperature (T), Pressure (P), Density (d), Molar Heat Capacity (C_m), Specific Heat (c), Refractive Index, Surface Tension.</p>
-    </div>
-  </div>
-
-
-  <!-- EXACT SYLLABUS HEADING 3 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">3. First Law of Thermodynamics, Internal Energy, Enthalpy</h2>
-
-  <!-- 3D SVG FIGURE 5.2 -->
-  <div style="background: rgba(10, 17, 30, 0.85); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin: 20px 0; text-align: center;">
-    <svg width="100%" height="220" viewBox="0 0 600 220" style="max-width: 600px; display: block; margin: 0 auto;">
-      <!-- Background Grid -->
-      <rect x="0" y="0" width="600" height="220" rx="10" fill="#0A111E" stroke="#FF8A65" stroke-width="1"/>
-      <!-- Cylinder -->
-      <rect x="180" y="40" width="240" height="140" rx="6" fill="rgba(255,138,101,0.1)" stroke="#FF8A65" stroke-width="2"/>
-      <!-- Piston -->
-      <rect x="230" y="45" width="25" height="130" rx="4" fill="#FF8A65"/>
-      <rect x="255" y="105" width="130" height="10" fill="#FF8A65"/>
-      <!-- Gas Molecule dots -->
-      <circle cx="200" cy="80" r="5" fill="#00c6ff"/>
-      <circle cx="210" cy="130" r="5" fill="#00c6ff"/>
-      <circle cx="195" cy="160" r="5" fill="#00c6ff"/>
-      <!-- Arrows -->
-      <path d="M 120 110 L 170 110" stroke="#FF5252" stroke-width="3" marker-end="url(#arrow)"/>
-      <text x="70" y="115" fill="#FF5252" font-size="14" font-weight="bold">Heat q IN</text>
-      <path d="M 390 110 L 450 110" stroke="#66BB6A" stroke-width="3"/>
-      <text x="460" y="115" fill="#66BB6A" font-size="14" font-weight="bold">Work w = -pΔV</text>
-      <!-- Formula overlay -->
-      <rect x="220" y="10" width="160" height="26" rx="6" fill="#FF8A65"/>
-      <text x="300" y="28" text-anchor="middle" fill="#000" font-size="14" font-weight="bold">ΔE = q + w</text>
-    </svg>
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.2: 3D Render Diagram of Gas Expansion Work & First Law of Thermodynamics (ΔE = q + w)</p>
-  </div>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">First Law Statement & Mathematical Formulation</h3>
-  <p>The First Law of Thermodynamics states: <span style="color: #FFF; font-weight: 500;">"Energy of an isolated system is constant; energy can change from one form to another, but cannot be created or destroyed."</span></p>
-  
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 15px 0;">
-    <div style="font-size: 19px; font-weight: bold; color: #FFF; margin-bottom: 6px;">
-      ΔE = q + w &nbsp;&nbsp;&nbsp;&nbsp; (or ΔU = q + w)
-    </div>
-    <div style="font-size: 14.5px; color: #FF8A65;">
-      • ΔE (or ΔU) = Internal Energy Change &nbsp;|&nbsp; q = Heat added &nbsp;|&nbsp; w = Work done ON system<br>
-      • For expansion against constant pressure: <b>w = -p_ext ΔV</b> $implies$ <b>ΔE = q - p_ext ΔV</b>
-    </div>
-  </div>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Enthalpy (H) and Relationship with ΔE (or ΔU)</h3>
-  <p>Enthalpy is defined as total heat content at constant pressure: <b>H = E + pV</b>. For chemical reactions involving ideal gases:</p>
-  
-  <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FF8A65; padding: 12px 14px; border-radius: 6px; text-align: center; margin: 12px 0;">
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) First Law Equation: ΔU = q + w</h3>
+  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 14px 0;">
     <div style="font-size: 18px; font-weight: bold; color: #FFF;">
-      ΔH = ΔE + Δn_g R T &nbsp;&nbsp;&nbsp;&nbsp; (or ΔH = ΔU + Δn_g R T)
-    </div>
-    <div style="font-size: 14px; color: #EEE; margin-top: 4px;">
-      Δn_g = Moles of gaseous products - Moles of gaseous reactants
+      First Law Equation: ΔU = q + w
     </div>
   </div>
 
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Internal Energy (U) and Enthalpy (H = U + P V)</h3>
+  <p>At constant volume (ΔV = 0, w = 0): <b>ΔU = q_v</b>.<br>
+  At constant pressure: Enthalpy H = U + P V $implies$ <b>ΔH = ΔU + P ΔV</b>.<br>
+  For gaseous reactions: <b style="color: #FF8A65;">ΔH = ΔU + Δn_g R T</b> (where Δn_g = moles of gaseous products - moles of gaseous reactants).</p>
 
-  
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Work Done in Isothermal Expansion & Free Expansion</h3>
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 15px 0;">
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Reversible Isothermal Work (w_rev)</h4>
-      <p style="margin: 0 0 6px 0;">Maximum work obtained when expansion occurs infinitely slowly through continuous equilibrium states:</p>
-      <div style="background: rgba(0,0,0,0.35); padding: 8px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF;">
-        w_rev = -2.303 n R T log₁₀(V₂ / V₁) = -2.303 n R T log₁₀(P₁ / P₂)
-      </div>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">Irreversible & Free Expansion Work</h4>
-      <p style="margin: 0 0 6px 0;">• Irreversible work against constant external pressure: <b>w_irrev = -p_ext (V₂ - V₁)</b>.<br>
-      • <b>Free Expansion in Vacuum (p_ext = 0):</b> <b>w = 0, q = 0, ΔE = 0</b>.</p>
-    </div>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Reversible vs Irreversible Work Equations</h3>
+  <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FF8A65; padding: 12px 14px; border-radius: 6px; margin: 12px 0;">
+    • <b>Irreversible Expansion Work:</b> w_irrev = - P_ext ΔV = - P_ext (V₂ - V₁).<br>
+    • <b>Isothermal Reversible Expansion Work:</b> w_rev = -2.303 n R T log(V₂ / V₁) = -2.303 n R T log(P₁ / P₂).<br>
+    • <b>Free Expansion (against vacuum P_ext = 0):</b> w = 0 $implies$ ΔU = 0 for isothermal free expansion.
   </div>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Reversible Adiabatic Process (q = 0)</h3>
-  <div style="background: rgba(255, 138, 101, 0.1); border-left: 4px solid #FF8A65; padding: 12px 14px; border-radius: 6px; margin: 12px 0;">
-    <p style="margin: 0;">In a reversible adiabatic expansion, no heat is exchanged (q = 0), so work is done at the expense of internal energy (w = ΔE = n C_v ΔT):<br>
-    <b style="color: #FF8A65;">P V^γ = constant &nbsp;&nbsp;|&nbsp;&nbsp; T V^(γ-1) = constant &nbsp;&nbsp;|&nbsp;&nbsp; T^γ P^(1-γ) = constant</b> (where γ = C_p / C_v).</p>
-  </div>
 
-<!-- EXACT SYLLABUS HEADING 4 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Heat Capacity, Specific Heat, Molar Heat Capacity</h2>
+  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">3. Heat Capacity, Specific Heat, Molar Heat Capacity, Measurement of ΔE and ΔH</h2>
 
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: #FF8A65;">Heat Capacity (C):</b> C = q / ΔT (Unit: J K⁻¹).</li>
-    <li><b style="color: #FF8A65;">Specific Heat (c):</b> Heat required per gram: q = m · c · ΔT (Unit: J g⁻¹ K⁻¹).</li>
-    <li><b style="color: #FF8A65;">Molar Heat Capacity (C_m):</b> Heat required per mole: q = n · C_m · ΔT (Unit: J mol⁻¹ K⁻¹).</li>
-    <li><b style="color: #FF8A65;">Mayer's Relationship (C_p - C_v = R):</b>
-      <div style="background: rgba(255, 138, 101, 0.12); padding: 10px 14px; border-radius: 6px; text-align: center; font-weight: bold; color: #FFF; margin: 10px 0; font-size: 18px;">
-        C_p - C_v = R &nbsp;&nbsp;&nbsp;&nbsp; (For 1 mole of an ideal gas)
-      </div>
-      <i>Reason:</i> At constant pressure, expanding gas performs work against external atmosphere (pΔV = RΔT), so extra heat R is required to raise temperature by 1 K!
-    </li>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Heat Capacity Definitions</h3>
+  <p>• <b>Heat Capacity (C):</b> q / ΔT.<br>
+  • <b>Specific Heat Capacity (c):</b> q / (m ΔT) (energy per gram per K).<br>
+  • <b>Molar Heat Capacity (C_m):</b> q / (n ΔT) (energy per mole per K).</p>
+
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Derivation of C_p - C_v = R Relation</h3>
+  <p>C_v = (∂U/∂T)_v and C_p = (∂H/∂T)_p. Since H = U + R T for 1 mole of ideal gas:<br>
+  C_p = C_v + R $implies$ <b style="color: #FF8A65;">C_p - C_v = R</b> (At constant pressure, gas expands doing P ΔV work against atmosphere, requiring extra energy R per K!).</p>
+
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Calorimetry: Measurement of ΔU and ΔH</h3>
+  <ul style="padding-left: 20px;">
+    <li><b style="color: #FF8A65;">Bomb Calorimeter (Constant Volume):</b> Measures ΔU = q_v. Total heat q_v = - (C_cal × ΔT + m_w c_w ΔT).</li>
+    <li><b style="color: #FF8A65;">Coffee-Cup Calorimeter (Constant Pressure):</b> Measures ΔH = q_p. Heat q_p = - m c ΔT.</li>
   </ul>
 
 
-  <!-- EXACT SYLLABUS HEADING 5: MATCHES OFFICIAL SYLLABUS EXACTLY "5. Measurement of ΔE and ΔH" -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Measurement of ΔE and ΔH</h2>
+  <!-- EXACT SYLLABUS HEADING 4 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Enthalpy Changes of Reactions and Hess's Law of Constant Heat Summation</h2>
 
-  <!-- 3D SVG FIGURE 5.3 -->
-  <div style="background: rgba(10, 17, 30, 0.85); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin: 20px 0; text-align: center;">
-    <svg width="100%" height="220" viewBox="0 0 600 220" style="max-width: 600px; display: block; margin: 0 auto;">
-      <rect x="0" y="0" width="600" height="220" rx="10" fill="#0A111E" stroke="#FF8A65" stroke-width="1"/>
-      
-      <!-- Bomb Calorimeter Left -->
-      <rect x="40" y="40" width="220" height="150" rx="8" fill="rgba(255,138,101,0.1)" stroke="#FF8A65" stroke-width="1.5"/>
-      <rect x="100" y="70" width="100" height="90" rx="6" fill="rgba(255,255,255,0.05)" stroke="#00c6ff" stroke-width="2"/>
-      <text x="150" y="30" text-anchor="middle" fill="#FF8A65" font-size="14" font-weight="bold">Bomb Calorimeter (Constant V: ΔE)</text>
-      <text x="150" y="120" text-anchor="middle" fill="#00c6ff" font-size="13" font-weight="bold">q_v = ΔE</text>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Standard Enthalpy of Reaction (Δ_r H^⊖)</h3>
+  <p>Standard state: Pure substance at 1 bar pressure and specified temperature (usually 298.15 K).<br>
+  <b style="color: #FF8A65;">Δ_r H^⊖ = Σ v_p Δ_f H^⊖ (Products) - Σ v_r Δ_f H^⊖ (Reactants)</b>.</p>
 
-      <!-- Coffee Cup Calorimeter Right -->
-      <rect x="340" y="40" width="220" height="150" rx="8" fill="rgba(255,138,101,0.1)" stroke="#FF8A65" stroke-width="1.5"/>
-      <path d="M 400 70 L 500 70 L 480 160 L 420 160 Z" fill="rgba(255,255,255,0.05)" stroke="#66BB6A" stroke-width="2"/>
-      <text x="450" y="30" text-anchor="middle" fill="#FF8A65" font-size="14" font-weight="bold">Coffee Cup Calorimeter (Constant P: ΔH)</text>
-      <text x="450" y="120" text-anchor="middle" fill="#66BB6A" font-size="13" font-weight="bold">q_p = ΔH</text>
-    </svg>
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.3: 3D Render Diagram of Bomb Calorimeter (Measuring ΔE) vs Coffee Cup Calorimeter (Measuring ΔH)</p>
-  </div>
-
-  <p>Experimental measurement of heat changes (Calorimetry) allows precise determination of internal energy change <b style="color: #FF8A65;">ΔE</b> and enthalpy change <b style="color: #FF8A65;">ΔH</b> during physical and chemical processes:</p>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 16px 0;">
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">1. Measurement of ΔE (Bomb Calorimeter)</h4>
-      <p style="margin: 0;">Measured at <b>constant volume (ΔV = 0)</b> inside a rigid steel bomb immersed in water. Work done w = 0, so measured heat evolved equals internal energy change: <b>q_v = ΔE</b>.<br>
-      Formula: <b>q_v = ΔE = - (m_w · c_w · ΔT + C_cal · ΔT) / n</b>.</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">2. Measurement of ΔH (Coffee-Cup Calorimeter)</h4>
-      <p style="margin: 0;">Measured at <b>constant atmospheric pressure (Δp = 0)</b> in polystyrene cup calorimeter. Heat absorbed or evolved in aqueous reaction equals enthalpy change: <b>q_p = ΔH</b>.<br>
-      Formula: <b>q_p = ΔH = - (m · c · ΔT) / n</b>.</p>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Hess's Law of Constant Heat Summation</h3>
+  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 14px 0;">
+    <div style="font-size: 17px; font-weight: bold; color: #FFF;">
+      Hess's Law: "Enthalpy change in a chemical reaction is constant regardless of whether reaction occurs in one step or several steps."
     </div>
   </div>
 
-
-  <!-- EXACT SYLLABUS HEADING 6 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">6. Hess's Law of Constant Heat Summation</h2>
-
-  <!-- 3D SVG FIGURE 5.4 -->
-  <div style="background: rgba(10, 17, 30, 0.85); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin: 20px 0; text-align: center;">
-    <svg width="100%" height="200" viewBox="0 0 600 200" style="max-width: 600px; display: block; margin: 0 auto;">
-      <rect x="0" y="0" width="600" height="200" rx="10" fill="#0A111E" stroke="#FF8A65" stroke-width="1"/>
-      <!-- Direct Path -->
-      <circle cx="120" cy="100" r="30" fill="#FF8A65"/>
-      <text x="120" y="105" text-anchor="middle" fill="#000" font-weight="bold" font-size="16">Reactants A</text>
-
-      <circle cx="480" cy="100" r="30" fill="#66BB6A"/>
-      <text x="480" y="105" text-anchor="middle" fill="#000" font-weight="bold" font-size="16">Products B</text>
-
-      <path d="M 160 100 L 440 100" stroke="#FFF" stroke-width="3"/>
-      <text x="300" y="85" text-anchor="middle" fill="#FFF" font-weight="bold" font-size="15">Direct Path: ΔH_total</text>
-
-      <!-- Multi-step Path -->
-      <circle cx="300" cy="160" r="25" fill="#00c6ff"/>
-      <text x="300" y="165" text-anchor="middle" fill="#000" font-weight="bold" font-size="13">Intermediates C</text>
-
-      <path d="M 140 120 L 275 150" stroke="#FFD54F" stroke-width="2.5" stroke-dasharray="4"/>
-      <text x="190" y="155" fill="#FFD54F" font-weight="bold" font-size="13">Step 1: ΔH₁</text>
-
-      <path d="M 325 150 L 460 120" stroke="#FFD54F" stroke-width="2.5" stroke-dasharray="4"/>
-      <text x="410" y="155" fill="#FFD54F" font-weight="bold" font-size="13">Step 2: ΔH₂</text>
-    </svg>
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.4: 3D Render Diagram of Hess's Law Thermochemical Cycle (ΔH_total = ΔH₁ + ΔH₂)</p>
-  </div>
-
-  <p><b style="color: #FF8A65;">Hess's Law states:</b> <span style="color: #FFF; font-weight: 500;">"The overall standard enthalpy change for a chemical reaction is identical whether the reaction takes place in one single step or in a series of multiple steps."</span></p>
-  
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 15px 0;">
-    <div style="font-size: 18px; font-weight: bold; color: #FFF; margin-bottom: 4px;">
-      Δ_r H = Δ_r H₁ + Δ_r H₂ + Δ_r H₃ + ...
-    </div>
-    <div style="font-size: 14px; color: #FF8A65;">
-      <i>Significance:</i> Allows indirect calculation of reaction enthalpies that cannot be measured directly in a calorimeter!
-    </div>
-  </div>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Enthalpy of Formation, Combustion, and Atomization</h3>
+  <p>• <b>Δ_f H^⊖ (Formation):</b> Enthalpy change when 1 mole of compound forms from elements in standard states (Note: Δ_f H^⊖ of pure elements in standard state = 0 e.g. O₂(g), C(graphite), S₈(rhombic)).<br>
+  • <b>Δ_c H^⊖ (Combustion):</b> Heat released when 1 mole burns completely in oxygen.<br>
+  • <b>Δ_a H^⊖ (Atomization):</b> Enthalpy change on breaking 1 mole of compound completely into gaseous atoms (e.g. CH₄(g) ⟶ C(g) + 4H(g), Δ_a H^⊖ = 1665 kJ/mol).</p>
 
 
-  <!-- EXACT SYLLABUS HEADING 7 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">7. Enthalpies of Reactions: Bond Dissociation, Combustion, Formation, Atomization, Sublimation, Phase Transition, Ionization and Dilution</h2>
+  <!-- EXACT SYLLABUS HEADING 5 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Enthalpy of Bond Dissociation, Combustion, Formation, Atomization, Sublimation, Phase Transition, Ionization and Dilution</h2>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin: 16px 0;">
     <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">1. Bond Dissociation Enthalpy:</b> Energy required to break 1 mol of specific covalent bond in gaseous state (e.g. H-H bond = 436 kJ mol⁻¹).
+      <b style="color:#FF8A65;">Phase Transition Enthalpies:</b><br>
+      • Δ_fus H^⊖ (Fusion): Solid ⟶ Liquid.<br>
+      • Δ_vap H^⊖ (Vaporization): Liquid ⟶ Gas.<br>
+      • Δ_sub H^⊖ (Sublimation): Solid ⟶ Gas (Δ_sub H = Δ_fus H + Δ_vap H).
     </div>
     <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">2. Enthalpy of Combustion (ΔcH<sup>⊖</sup>):</b> Heat change during complete combustion of 1 mol substance in excess O₂ (CH₄ + 2O₂ ⟶ CO₂ + 2H₂O, ΔcH<sup>⊖</sup> = -890 kJ mol⁻¹).
+      <b style="color:#FF8A65;">Bond Enthalpy (Δ_bond H^⊖):</b><br>
+      For polyatomic molecules: Mean Bond Enthalpy = Total Atomization Energy / Number of bonds (e.g. Mean C-H bond enthalpy in CH₄ = 1665 / 4 = 416.25 kJ/mol).<br>
+      Δ_r H^⊖ = Σ Bond Energies (Reactants) - Σ Bond Energies (Products).
     </div>
     <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">3. Standard Enthalpy of Formation (ΔfH<sup>⊖</sup>):</b> Form 1 mol compound from elements in standard states (C + O₂ ⟶ CO₂, ΔfH<sup>⊖</sup> = -393.5 kJ mol⁻¹).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">4. Enthalpy of Atomization (ΔaH<sup>⊖</sup>):</b> Break 1 mol substance completely into gaseous atoms (H₂(g) ⟶ 2H(g), ΔaH<sup>⊖</sup> = 435 kJ mol⁻¹).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">5. Enthalpy of Sublimation (ΔsubH<sup>⊖</sup>):</b> Direct phase change of 1 mol solid to gas (I₂(s) ⟶ I₂(g)).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">6. Enthalpy of Phase Transition:</b> Heat change during melting (fusion ΔfusH) or boiling (vaporization ΔvapH).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">7. Enthalpy of Ionization (ΔionH):</b> Heat required to ionize weak electrolyte or atom in solution.
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">8. Enthalpy of Dilution:</b> Enthalpy change when a solution containing 1 mol solute is diluted further.
-    </div>
-
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">9. Standard Enthalpy of Neutralization (ΔneutH<sup>⊖</sup>):</b> Heat released when 1 equiv strong acid neutralizes 1 equiv strong base (H⁺(aq) + OH⁻(aq) ⟶ H₂O(l), ΔneutH<sup>⊖</sup> = -57.1 kJ mol⁻¹).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">10. Enthalpy of Solution (ΔsolH<sup>⊖</sup>):</b> Heat change dissolving 1 mol solute in solvent (ΔsolH<sup>⊖</sup> = Lattice Energy U + Hydration Enthalpy ΔhydH<sup>⊖</sup>).
-    </div>
-    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF8A65; border-radius: 8px; padding: 10px 12px;">
-      <b style="color:#FF8A65;">11. Enthalpy of Hydration (ΔhydH<sup>⊖</sup>):</b> Heat evolved when 1 mol gaseous ions become hydrated by water ions (e.g. Na⁺(g) + aq ⟶ Na⁺(aq)).
-    </div>
-
-  </div>
-
-
-  <!-- EXACT SYLLABUS HEADING 8 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">8. Introduction of Entropy as a State Function</h2>
-
-  <!-- 3D SVG FIGURE 5.5 -->
-  <div style="background: rgba(10, 17, 30, 0.85); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin: 20px 0; text-align: center;">
-    <svg width="100%" height="180" viewBox="0 0 600 180" style="max-width: 600px; display: block; margin: 0 auto;">
-      <rect x="0" y="0" width="600" height="180" rx="10" fill="#0A111E" stroke="#FF8A65" stroke-width="1"/>
-      
-      <!-- Solid -->
-      <rect x="40" y="40" width="130" height="100" rx="6" fill="rgba(255,255,255,0.05)" stroke="#FF8A65"/>
-      <text x="105" y="30" text-anchor="middle" fill="#FF8A65" font-weight="bold" font-size="14">Solid (Low Entropy S)</text>
-
-      <!-- Liquid -->
-      <rect x="235" y="40" width="130" height="100" rx="6" fill="rgba(255,255,255,0.05)" stroke="#FFD54F"/>
-      <text x="300" y="30" text-anchor="middle" fill="#FFD54F" font-weight="bold" font-size="14">Liquid (Moderate S)</text>
-
-      <!-- Gas -->
-      <rect x="430" y="40" width="130" height="100" rx="6" fill="rgba(255,255,255,0.05)" stroke="#66BB6A"/>
-      <text x="495" y="30" text-anchor="middle" fill="#66BB6A" font-weight="bold" font-size="14">Gas (High Entropy S)</text>
-
-      <!-- Entropy Arrow -->
-      <path d="M 100 155 L 500 155" stroke="#00c6ff" stroke-width="3" marker-end="url(#arrow)"/>
-      <text x="300" y="175" text-anchor="middle" fill="#00c6ff" font-weight="bold" font-size="14">Increasing Molecular Disorder (ΔS > 0)</text>
-    </svg>
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.5: 3D Render Diagram of Entropy & Molecular Disorder Increase Across States of Matter (Solid ⟶ Liquid ⟶ Gas)</p>
-  </div>
-
-  <p>Entropy (S) is a thermodynamic state function measuring the degree of molecular disorder or randomness in a system. The Second Law of Thermodynamics states: <b style="color: #FF8A65;">"The total entropy of an isolated system always increases during a spontaneous process (ΔS_total > 0)."</b></p>
-  
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 15px 0;">
-    <div style="font-size: 18px; font-weight: bold; color: #FFF; margin-bottom: 4px;">
-      ΔS = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">q_rev</span><span style="display:block; padding:0 4px;">T</span></span> &nbsp;&nbsp;&nbsp;&nbsp; (Unit: J K⁻¹ mol⁻¹)
-    </div>
-    <div style="font-size: 14.5px; color: #FF8A65;">
-      • Order of Entropy: <b>S(gas) &gt;&gt; S(liquid) &gt; S(solid)</b><br>
-      • Spontaneity Criterion: <b>ΔS_total = ΔS_system + ΔS_surroundings &gt; 0</b>
+      <b style="color:#FF8A65;">Ionization & Solution Enthalpies:</b><br>
+      • Δ_ion H^⊖: Enthalpy change upon ionization.<br>
+      • Δ_sol H^⊖: Enthalpy change when 1 mol solute dissolves in solvent (Δ_sol H^⊖ = Lattice Enthalpy U + Hydration Enthalpy Δ_hyd H^⊖).
     </div>
   </div>
 
 
-  <!-- EXACT SYLLABUS HEADING 9 -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">9. Free Energy Change for Spontaneous and Non-Spontaneous Process and Criteria for Equilibrium</h2>
+  <!-- EXACT SYLLABUS HEADING 6 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">6. Introduction of Entropy as a State Function</h2>
 
-  <!-- 3D SVG FIGURE 5.6 -->
-  <div style="background: rgba(10, 17, 30, 0.85); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin: 20px 0; text-align: center;">
-    <svg width="100%" height="200" viewBox="0 0 600 200" style="max-width: 600px; display: block; margin: 0 auto;">
-      <rect x="0" y="0" width="600" height="200" rx="10" fill="#0A111E" stroke="#FF8A65" stroke-width="1"/>
-      
-      <!-- Energy Landscape Curve -->
-      <path d="M 50 50 Q 300 220 550 50" stroke="#FF8A65" stroke-width="3" fill="none"/>
-      <circle cx="300" cy="135" r="10" fill="#66BB6A"/>
-      <text x="300" y="165" text-anchor="middle" fill="#66BB6A" font-weight="bold" font-size="14">Equilibrium State (ΔG = 0, Min G)</text>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Spontaneity & Limitations of Enthalpy Criterion</h3>
+  <p>Exothermic nature (ΔH < 0) alone cannot explain spontaneity because endothermic reactions (e.g. melting of ice at 25°C, dissolution of NH₄Cl) also occur spontaneously! A second driving force—<b>Disorder / Randomness</b>—is required.</p>
 
-      <!-- Spontaneous arrow left -->
-      <path d="M 120 75 L 250 120" stroke="#00c6ff" stroke-width="2.5"/>
-      <text x="150" y="70" fill="#00c6ff" font-weight="bold" font-size="13">Spontaneous (ΔG < 0)</text>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Entropy (S) Definition & Formula</h3>
+  <p>Entropy (S) is a state function measuring degree of disorder. <b style="color: #FF8A65;">ΔS = q_rev / T</b> (J K⁻¹ mol⁻¹).<br>
+  <i>Entropy Order:</i> Gas >> Liquid > Solid.</p>
 
-      <!-- Non-spontaneous right -->
-      <path d="M 480 75 L 350 120" stroke="#FF5252" stroke-width="2.5"/>
-      <text x="450" y="70" fill="#FF5252" font-weight="bold" font-size="13">Non-Spontaneous (ΔG > 0)</text>
-    </svg>
-    <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 5.6: 3D Render Diagram of Gibbs Free Energy Landscape (Spontaneity ΔG &lt; 0 vs Equilibrium ΔG = 0)</p>
-  </div>
-
-  <p>Gibbs Free Energy (G) combines enthalpy and entropy into a single master state function predicting spontaneity at constant T and P: <b style="color: #FF8A65;">G = H - TS</b>.</p>
-  
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 15px 0;">
-    <div style="font-size: 19px; font-weight: bold; color: #FFF; margin-bottom: 4px;">
-      ΔG = ΔH - T ΔS &nbsp;&nbsp;&nbsp;&nbsp; (Gibbs-Helmholtz Equation)
-    </div>
-    <div style="font-size: 15px; color: #FF8A65;">
-      • <b>ΔG &lt; 0:</b> Process is <b>Spontaneous</b> (Feasible).<br>
-      • <b>ΔG &gt; 0:</b> Process is <b>Non-Spontaneous</b> (Not feasible naturally).<br>
-      • <b>ΔG = 0:</b> System is at <b>Chemical Equilibrium</b>!
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Second Law of Thermodynamics & Total Entropy Change</h3>
+  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 14px 0;">
+    <div style="font-size: 18px; font-weight: bold; color: #FFF;">
+      Second Law: ΔS_total = ΔS_system + ΔS_surroundings > 0 (for spontaneous process)
     </div>
   </div>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Spontaneity Decision Matrix (ΔH, ΔS, ΔG):</h3>
+
+  <!-- EXACT SYLLABUS HEADING 7 WORD-FOR-WORD -->
+  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">7. Free Energy Change for Spontaneous and Non-Spontaneous Process and Criteria for Equilibrium</h2>
+
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Gibbs Free Energy & Gibbs-Helmholtz Equation</h3>
+  <p>G = H - T S $implies$ <b style="color: #FF8A65;">ΔG = ΔH - T ΔS</b> (at constant T and P).</p>
+
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Temperature Dependence of Spontaneity</h3>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin: 16px 0;">
     <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #66BB6A; padding: 10px 12px; border-radius: 6px;">
-      <b style="color:#66BB6A;">ΔH (-), ΔS (+):</b> ΔG is ALWAYS Negative ⟶ <b>Spontaneous at all temperatures!</b>
+      <b style="color:#66BB6A;">ΔH < 0, ΔS > 0:</b> ΔG < 0 at ALL temperatures ⟶ <b>Always Spontaneous</b>.
     </div>
     <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FF5252; padding: 10px 12px; border-radius: 6px;">
-      <b style="color:#FF5252;">ΔH (+), ΔS (-):</b> ΔG is ALWAYS Positive ⟶ <b>Non-Spontaneous at all temperatures!</b>
+      <b style="color:#FF5252;">ΔH > 0, ΔS < 0:</b> ΔG > 0 at ALL temperatures ⟶ <b>Always Non-Spontaneous</b>.
     </div>
-    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FFD54F; padding: 10px 12px; border-radius: 6px;">
-      <b style="color:#FFD54F;">ΔH (-), ΔS (-):</b> Spontaneous ONLY at <b>Low Temperatures</b> (when |ΔH| > |TΔS|).
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FFB300; padding: 10px 12px; border-radius: 6px;">
+      <b style="color:#FFB300;">ΔH > 0, ΔS > 0:</b> Spontaneous only at HIGH temperatures (T > ΔH / ΔS).
     </div>
-    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FFD54F; padding: 10px 12px; border-radius: 6px;">
-      <b style="color:#FFD54F;">ΔH (+), ΔS (+):</b> Spontaneous ONLY at <b>High Temperatures</b> (when |TΔS| > |ΔH|).
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #42A5F5; padding: 10px 12px; border-radius: 6px;">
+      <b style="color:#42A5F5;">ΔH < 0, ΔS < 0:</b> Spontaneous only at LOW temperatures (T < ΔH / ΔS).
     </div>
   </div>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">Gibbs Free Energy & Equilibrium Constant (K)</h3>
-  <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #FF8A65; padding: 12px 14px; border-radius: 6px; text-align: center; margin: 12px 0;">
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Standard Free Energy & Equilibrium Constant Relation</h3>
+  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; text-align: center; margin: 14px 0;">
     <div style="font-size: 18px; font-weight: bold; color: #FFF;">
-      ΔG<sup>⊖</sup> = -R T ln K = -2.303 R T log₁₀ K
+      ΔG^⊖ = - R T ln K_c = -2.303 R T log K_c
     </div>
   </div>
 
-  <!-- BOTTOM FEATURE: MASTER FORMULA CHEAT SHEET -->
+  <!-- BOTTOM FEATURE: MASTER CHEAT SHEET -->
   <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.15), rgba(255, 61, 0, 0.15)); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #FF8A65; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Thermodynamics Cheat Sheet</h3>
+    <h3 style="color: #FF8A65; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Thermodynamics Formula Cheat Sheet</h3>
     <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>First Law:</b> ΔE = q + w &nbsp;|&nbsp; Expansion work: w = -p_ext ΔV.</li>
-      <li><b>Enthalpy Relation:</b> ΔH = ΔE + Δn_g R T.</li>
-      <li><b>Mayer's Formula:</b> C_p - C_v = R.</li>
-      <li><b>Hess's Law:</b> Δ_r H = ∑ ΔfH<sup>⊖</sup>(Products) - ∑ ΔfH<sup>⊖</sup>(Reactants).</li>
-      <li><b>Gibbs Equation:</b> ΔG = ΔH - T ΔS.</li>
-      <li><b>Equilibrium Constant:</b> ΔG<sup>⊖</sup> = -2.303 R T log K.</li>
+      <li><b>First Law:</b> ΔU = q + w</li>
+      <li><b>Work (Reversible Isothermal):</b> w_rev = -2.303 n R T log(V₂/V₁)</li>
+      <li><b>Enthalpy Relation:</b> ΔH = ΔU + Δn_g R T</li>
+      <li><b>Heat Capacities:</b> C_p - C_v = R</li>
+      <li><b>Gibbs-Helmholtz:</b> ΔG = ΔH - T ΔS</li>
+      <li><b>Equilibrium Relation:</b> ΔG^⊖ = -2.303 R T log K_c</li>
     </ul>
   </div>
 
@@ -486,924 +273,924 @@ export const c11Chem5HtmlSolutions = `
   p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
     text-align: justify !important;
   }
-  h1, h2, h3, h4, h5, h6 { text-align: left !important; }
-  .text-center, th, td { text-align: center !important; }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
 </style>
 
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions) -->
+  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions - 72% Theory) -->
   <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
     <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each</p>
+    <p style="color: #FF8A65; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Calculations)</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q1. Which of the following is an intensive property?</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Volume &nbsp;&nbsp;&nbsp;&nbsp; (B) Mass<br>
-      (C) Temperature &nbsp;&nbsp;&nbsp;&nbsp; (D) Enthalpy
+      (A) Mass &nbsp;&nbsp;&nbsp;&nbsp; (B) Volume<br>
+      (C) Internal Energy &nbsp;&nbsp;&nbsp;&nbsp; (D) Density
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Temperature</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Temperature does not depend on the quantity of matter present.</span>
+      <b style="color: #FF8A65;">✓ Answer: (D) Density</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Density is independent of quantity of mass, making it an intensive property.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q2. A process in which no heat enters or leaves the system is called:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q2. A system which can exchange energy but NOT matter with surroundings is called a/an:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Isothermal &nbsp;&nbsp;&nbsp;&nbsp; (B) Isobaric<br>
-      (C) Adiabatic &nbsp;&nbsp;&nbsp;&nbsp; (D) Isochoric
+      (A) Open system &nbsp;&nbsp;&nbsp;&nbsp; (B) Closed system<br>
+      (C) Isolated system &nbsp;&nbsp;&nbsp;&nbsp; (D) Homogeneous system
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Adiabatic</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> In an adiabatic process, heat exchange q = 0.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) Closed system</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Closed systems permit energy transfer across boundary but prevent mass transfer.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q3. Mathematical expression of First Law of Thermodynamics is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q3. The mathematical expression for the First Law of Thermodynamics is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ΔU = q - w &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔU = q + w<br>
-      (C) q = ΔU - w &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔH = q + w
+      (A) ΔU = q + w &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH = ΔU + P ΔV<br>
+      (C) ΔG = ΔH - T ΔS &nbsp;&nbsp;&nbsp;&nbsp; (D) q = C ΔT
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) ΔU = q + w</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> First law states internal energy change equals heat added plus work done on system.</span>
+      <b style="color: #FF8A65;">✓ Answer: (A) ΔU = q + w</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> First Law states change in internal energy equals heat absorbed plus work done on system.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q4. For an isothermal expansion of an ideal gas, ΔU is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q4. For an isothermal expansion of an ideal gas into vacuum (free expansion), the work done (w) is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Positive &nbsp;&nbsp;&nbsp;&nbsp; (B) Negative<br>
+      (A) Maximum &nbsp;&nbsp;&nbsp;&nbsp; (B) -2.303 nRT log(V₂/V₁)<br>
       (C) Zero &nbsp;&nbsp;&nbsp;&nbsp; (D) Infinite
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <b style="color: #FF8A65;">✓ Answer: (C) Zero</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> For an ideal gas, U depends only on T. At constant T, ΔU = 0.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Against vacuum, P_ext = 0, so work w = - P_ext ΔV = 0.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q5. The unit of Molar Heat Capacity is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q5. The difference between molar heat capacities C_p and C_v for 1 mole of an ideal gas is equal to:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) J K⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (B) J g⁻¹ K⁻¹<br>
-      (C) J mol⁻¹ K⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (D) kJ mol⁻¹
+      (A) Zero &nbsp;&nbsp;&nbsp;&nbsp; (B) Gas constant R<br>
+      (C) 2 R &nbsp;&nbsp;&nbsp;&nbsp; (D) R / 2
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) J mol⁻¹ K⁻¹</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Molar heat capacity is heat required per mole per Kelvin.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) Gas constant R</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> C_p - C_v = R due to expansion work P ΔV done at constant pressure.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q6. The relation between C_p and C_v for 1 mole of an ideal gas is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q6. A reaction is guaranteed to be spontaneous at ALL temperatures if:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) C_p + C_v = R &nbsp;&nbsp;&nbsp;&nbsp; (B) C_p - C_v = R<br>
-      (C) C_v - C_p = R &nbsp;&nbsp;&nbsp;&nbsp; (D) C_p / C_v = R
+      (A) ΔH > 0 and ΔS > 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH < 0 and ΔS > 0<br>
+      (C) ΔH > 0 and ΔS < 0 &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔH < 0 and ΔS < 0
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) C_p - C_v = R</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Mayer's formula shows extra heat R is needed at constant pressure for expansion work.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) ΔH < 0 and ΔS > 0</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> When ΔH is negative and ΔS is positive, ΔG = ΔH - T ΔS is always negative (spontaneous).</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q7. Measurement of ΔU is carried out at constant:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q7. The standard enthalpy of formation (Δ_f H^⊖) is defined as zero for which of the following?</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Pressure &nbsp;&nbsp;&nbsp;&nbsp; (B) Volume<br>
-      (C) Temperature &nbsp;&nbsp;&nbsp;&nbsp; (D) Entropy
+      (A) CO₂(g) &nbsp;&nbsp;&nbsp;&nbsp; (B) H₂O(l)<br>
+      (C) O₂(g) &nbsp;&nbsp;&nbsp;&nbsp; (D) CH₄(g)
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) Volume</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At constant volume, w = 0, so q_v = ΔU (Bomb Calorimeter).</span>
+      <b style="color: #FF8A65;">✓ Answer: (C) O₂(g)</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Standard enthalpy of formation of an element in its most stable standard reference state is zero.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q8. Enthalpy of formation of an element in its standard state is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q8. Hess's Law of Constant Heat Summation is a direct consequence of:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Zero &nbsp;&nbsp;&nbsp;&nbsp; (B) Positive<br>
-      (C) Negative &nbsp;&nbsp;&nbsp;&nbsp; (D) Variable
+      (A) First Law of Thermodynamics &nbsp;&nbsp;&nbsp;&nbsp; (B) Second Law of Thermodynamics<br>
+      (C) Third Law of Thermodynamics &nbsp;&nbsp;&nbsp;&nbsp; (D) Avogadro's Law
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (A) Zero</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> By convention, standard enthalpy of formation of an element in its reference state is zero.</span>
+      <b style="color: #FF8A65;">✓ Answer: (A) First Law of Thermodynamics</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Since enthalpy H is a state function, overall enthalpy change depends only on initial and final states.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q9. Hess's Law is based on the principle of conservation of:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q9. In an endothermic reaction at constant pressure, the sign of ΔH is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Mass &nbsp;&nbsp;&nbsp;&nbsp; (B) Energy<br>
-      (C) Momentum &nbsp;&nbsp;&nbsp;&nbsp; (D) Charge
+      (A) Negative &nbsp;&nbsp;&nbsp;&nbsp; (B) Positive<br>
+      (C) Zero &nbsp;&nbsp;&nbsp;&nbsp; (D) Infinite
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) Energy</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Hess's Law reflects state function property of enthalpy, obeying energy conservation.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) Positive</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Endothermic processes absorb heat from surroundings (q_p > 0, ΔH > 0).</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q10. A reaction is spontaneous at all temperatures if:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q10. Entropy (S) is a thermodynamic measure of:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ΔH < 0 and ΔS > 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH > 0 and ΔS < 0<br>
-      (C) ΔH > 0 and ΔS > 0 &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔH < 0 and ΔS < 0
+      (A) Total heat energy &nbsp;&nbsp;&nbsp;&nbsp; (B) Internal energy<br>
+      (C) Molecular disorder or randomness &nbsp;&nbsp;&nbsp;&nbsp; (D) Useful work
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (A) ΔH < 0 and ΔS > 0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> When ΔH is negative and ΔS is positive, ΔG = ΔH - TΔS is always negative.</span>
+      <b style="color: #FF8A65;">✓ Answer: (C) Molecular disorder or randomness</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Entropy quantifies microscopic randomness of a thermodynamic system.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q11. The entropy of a perfectly crystalline substance at absolute zero temperature is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Positive &nbsp;&nbsp;&nbsp;&nbsp; (B) Zero<br>
-      (C) Negative &nbsp;&nbsp;&nbsp;&nbsp; (D) Infinite
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) Zero</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Third Law of Thermodynamics states entropy of pure crystalline solid is zero at 0 K.</span>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q12. In a reversible process at equilibrium, ΔG is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q11. At chemical equilibrium, the change in Gibbs free energy (ΔG) is equal to:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
       (A) Positive &nbsp;&nbsp;&nbsp;&nbsp; (B) Negative<br>
       (C) Zero &nbsp;&nbsp;&nbsp;&nbsp; (D) Maximum
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <b style="color: #FF8A65;">✓ Answer: (C) Zero</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At equilibrium, Gibbs free energy change ΔG = 0.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At equilibrium, system reaches minimum free energy state (ΔG = 0).</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q13. Which of the following is NOT a state function?</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q12. Which state function change determines maximum useful non-expansion work obtainable from a system?</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Enthalpy (H) &nbsp;&nbsp;&nbsp;&nbsp; (B) Work (w)<br>
-      (C) Entropy (S) &nbsp;&nbsp;&nbsp;&nbsp; (D) Free energy (G)
+      (A) ΔU &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH<br>
+      (C) ΔS &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔG
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) Work (w)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Work depends on the path followed, so it is a path function.</span>
+      <b style="color: #FF8A65;">✓ Answer: (D) ΔG</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Decrease in Gibbs free energy (-ΔG) equals maximum useful non-expansion work (w_net).</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q14. Enthalpy change ΔH is related to ΔU by the formula:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q13. Which of the following processes leads to an INCREASE in entropy (ΔS > 0)?</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ΔH = ΔU + pΔV &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH = ΔU - pΔV<br>
-      (C) ΔU = ΔH + pΔV &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔH = q_v
+      (A) Freezing of liquid water to ice &nbsp;&nbsp;&nbsp;&nbsp; (B) Condensation of steam to water<br>
+      (C) Dissolution of sugar in water &nbsp;&nbsp;&nbsp;&nbsp; (D) Synthesis of ammonia N₂ + 3H₂ ⟶ 2NH₃
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (A) ΔH = ΔU + pΔV</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> By definition, H = U + pV, so at constant P, ΔH = ΔU + pΔV.</span>
+      <b style="color: #FF8A65;">✓ Answer: (C) Dissolution of sugar in water</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Dissolving solid sugar in liquid water breaks crystal lattice, increasing randomness.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q15. For the combustion of Methane (CH₄(g) + 2O₂(g) ⟶ CO₂(g) + 2H₂O(l)), Δn_g is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) -1<br>
-      (C) -2 &nbsp;&nbsp;&nbsp;&nbsp; (D) +1
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) -2</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Δn_g = moles of gas products (1 mol CO₂) - moles of gas reactants (1 mol CH₄ + 2 mol O₂) = 1 - 3 = -2.</span>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q16. An isolated system is one which exchanges:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Both matter and energy &nbsp;&nbsp;&nbsp;&nbsp; (B) Energy only<br>
-      (C) Neither matter nor energy &nbsp;&nbsp;&nbsp;&nbsp; (D) Matter only
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Neither matter nor energy</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Thermos flask is an example of an isolated system.</span>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q17. Standard state temperature and pressure in thermodynamics are:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0°C and 1 atm &nbsp;&nbsp;&nbsp;&nbsp; (B) 298.15 K and 1 bar<br>
-      (C) 273 K and 1 bar &nbsp;&nbsp;&nbsp;&nbsp; (D) 100°C and 1 bar
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) 298.15 K and 1 bar</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Thermodynamic standard state is 25°C (298.15 K) and 1 bar pressure.</span>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q18. Which of the following processes is exothermic?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Sublimation &nbsp;&nbsp;&nbsp;&nbsp; (B) Vaporization<br>
-      (C) Combustion &nbsp;&nbsp;&nbsp;&nbsp; (D) Fusion
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Combustion</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Combustion releases heat, so ΔH is negative (exothermic).</span>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q19. Unit of Entropy (S) is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q14. The unit of molar entropy (ΔS) in SI system is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
       (A) J mol⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (B) J K⁻¹ mol⁻¹<br>
       (C) kJ mol⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (D) J K
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
       <b style="color: #FF8A65;">✓ Answer: (B) J K⁻¹ mol⁻¹</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Entropy is heat divided by temperature per mole.</span>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Entropy is heat per Kelvin per mole: J K⁻¹ mol⁻¹.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q20. For spontaneous phase change of ice to water at 25°C:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q15. For 1 mole of ideal gas undergoing reversible isothermal expansion from V₁ to V₂, work done is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ΔH > 0, ΔS > 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔH < 0, ΔS < 0<br>
-      (C) ΔH > 0, ΔS < 0 &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔH < 0, ΔS > 0
+      (A) -2.303 R T log(V₂ / V₁) &nbsp;&nbsp;&nbsp;&nbsp; (B) - P ΔV<br>
+      (C) n C_v ΔT &nbsp;&nbsp;&nbsp;&nbsp; (D) Zero
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (A) ΔH > 0, ΔS > 0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Melting is endothermic (ΔH > 0) and increases disorder (ΔS > 0); at 25°C TΔS > ΔH.</span>
+      <b style="color: #FF8A65;">✓ Answer: (A) -2.303 R T log(V₂ / V₁)</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Formula for reversible isothermal expansion work.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q21. Relation between standard free energy change and equilibrium constant is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q16. In a Bomb Calorimeter, chemical reactions take place at constant:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ΔG<sup>⊖</sup> = R T ln K &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔG<sup>⊖</sup> = -R T ln K<br>
-      (C) ΔG<sup>⊖</sup> = -2.303 R T log K &nbsp;&nbsp;&nbsp;&nbsp; (D) Both B and C
+      (A) Pressure &nbsp;&nbsp;&nbsp;&nbsp; (B) Volume<br>
+      (C) Temperature &nbsp;&nbsp;&nbsp;&nbsp; (D) Entropy
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (D) Both B and C</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> ΔG<sup>⊖</sup> = -R T ln K = -2.303 R T log₁₀ K.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) Volume</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Bomb calorimeter is a rigid sealed vessel (ΔV = 0), measuring ΔU = q_v.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q22. Heat of neutralization of strong acid and strong base is always:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q17. If 100 J of heat is supplied to a system and system does 40 J of work, the internal energy change ΔU is:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) -57.1 kJ mol⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (B) -100 kJ mol⁻¹<br>
-      (C) 0 kJ mol⁻¹ &nbsp;&nbsp;&nbsp;&nbsp; (D) +57.1 kJ mol⁻¹
+      (A) +140 J &nbsp;&nbsp;&nbsp;&nbsp; (B) +60 J<br>
+      (C) -60 J &nbsp;&nbsp;&nbsp;&nbsp; (D) -140 J
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (A) -57.1 kJ mol⁻¹</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Neutralization is simply H⁺(aq) + OH⁻(aq) ⟶ H₂O(l) releasing 57.1 kJ/mol.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) +60 J</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> ΔU = q + w = +100 + (-40) = +60 J.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q23. Which of the following is an extensive property?</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q18. Which of the following is a PATH function?</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Density &nbsp;&nbsp;&nbsp;&nbsp; (B) Molar volume<br>
-      (C) Internal energy &nbsp;&nbsp;&nbsp;&nbsp; (D) Viscosity
+      (A) Enthalpy (H) &nbsp;&nbsp;&nbsp;&nbsp; (B) Work (w)<br>
+      (C) Entropy (S) &nbsp;&nbsp;&nbsp;&nbsp; (D) Free Energy (G)
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Internal energy</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Internal energy depends on the total mass of the system.</span>
+      <b style="color: #FF8A65;">✓ Answer: (B) Work (w)</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Work and heat depend on specific path taken between states.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q24. Work done in free expansion of an ideal gas in vacuum is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q19. Enthalpy change of sublimation (Δ_sub H) is related to fusion and vaporization by:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Positive &nbsp;&nbsp;&nbsp;&nbsp; (B) Negative<br>
-      (C) Zero &nbsp;&nbsp;&nbsp;&nbsp; (D) Infinite
+      (A) Δ_sub H = Δ_fus H + Δ_vap H &nbsp;&nbsp;&nbsp;&nbsp; (B) Δ_sub H = Δ_fus H - Δ_vap H<br>
+      (C) Δ_sub H = Δ_vap H - Δ_fus H &nbsp;&nbsp;&nbsp;&nbsp; (D) Δ_sub H = Δ_fus H × Δ_vap H
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (C) Zero</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> In vacuum p_ext = 0, so w = -p_ext ΔV = 0.</span>
+      <b style="color: #FF8A65;">✓ Answer: (A) Δ_sub H = Δ_fus H + Δ_vap H</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Sublimation (solid to gas) equals sum of melting plus boiling enthalpies.</span>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q25. Standard enthalpy of formation of C(diamond) is:</b></p>
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q20. For the reaction C(s) + O₂(g) ⟶ CO₂(g), the enthalpy change represents:</b></p>
     <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Zero &nbsp;&nbsp;&nbsp;&nbsp; (B) Non-zero positive<br>
-      (C) Negative &nbsp;&nbsp;&nbsp;&nbsp; (D) Infinite
+      (A) Enthalpy of formation of CO₂ &nbsp;&nbsp;&nbsp;&nbsp; (B) Enthalpy of combustion of Carbon<br>
+      (C) Both A and B &nbsp;&nbsp;&nbsp;&nbsp; (D) Neither A nor B
     </div>
     <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #FF8A65;">✓ Answer: (B) Non-zero positive</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Graphite is the standard state of carbon (ΔfH<sup>⊖</sup> = 0); diamond has ΔfH<sup>⊖</sup> = +1.9 kJ/mol.</span>
+      <b style="color: #FF8A65;">✓ Answer: (C) Both A and B</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Forms 1 mol CO₂ from elements and burns 1 mol Carbon completely.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q21. Relation between ΔG^⊖ and equilibrium constant K_c is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) ΔG^⊖ = -2.303 R T log K_c &nbsp;&nbsp;&nbsp;&nbsp; (B) ΔG^⊖ = 2.303 R T log K_c<br>
+      (C) ΔG^⊖ = R T ln K_c &nbsp;&nbsp;&nbsp;&nbsp; (D) ΔG^⊖ = - ΔH / T
+    </div>
+    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #FF8A65;">✓ Answer: (A) ΔG^⊖ = -2.303 R T log K_c</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Fundamental thermodynamic link between free energy and equilibrium constant.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q22. An adiabatic process is one in which:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Temperature remains constant &nbsp;&nbsp;&nbsp;&nbsp; (B) Pressure remains constant<br>
+      (C) No heat enters or leaves the system (q = 0) &nbsp;&nbsp;&nbsp;&nbsp; (D) Volume remains constant
+    </div>
+    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #FF8A65;">✓ Answer: (C) No heat enters or leaves the system (q = 0)</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Adiabatic boundaries prevent heat transfer.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q23. Third Law of Thermodynamics states that entropy of a perfectly crystalline substance is zero at:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) 0°C &nbsp;&nbsp;&nbsp;&nbsp; (B) 273.15 K<br>
+      (C) 0 K (Absolute Zero) &nbsp;&nbsp;&nbsp;&nbsp; (D) 100°C
+    </div>
+    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #FF8A65;">✓ Answer: (C) 0 K (Absolute Zero)</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At absolute zero, thermal motion ceases completely in perfect crystals.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q24. For a gaseous reaction N₂(g) + 3H₂(g) ⟶ 2NH₃(g), Δn_g is equal to:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) +2 &nbsp;&nbsp;&nbsp;&nbsp; (B) -2<br>
+      (C) +4 &nbsp;&nbsp;&nbsp;&nbsp; (D) -4
+    </div>
+    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #FF8A65;">✓ Answer: (B) -2</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Δn_g = moles of product gas (2) - moles of reactant gas (1+3 = 4) = -2.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #FF8A65;">Q25. In an endothermic spontaneous reaction, the sign of ΔS must be:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Negative &nbsp;&nbsp;&nbsp;&nbsp; (B) Positive<br>
+      (C) Zero &nbsp;&nbsp;&nbsp;&nbsp; (D) Equal to ΔH
+    </div>
+    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #FF8A65;">✓ Answer: (B) Positive</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> For ΔG = ΔH - T ΔS < 0 when ΔH > 0, T ΔS must be positive and greater than ΔH.</span>
     </div>
   </div>
   <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
   <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each</p>
+    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Short Calculations)</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q26. Define State Function with 2 examples.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q26. Define State Function and give 4 examples.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Property depending only on initial and final states of a system (e.g. Enthalpy H, Internal energy U).
+      A thermodynamic property whose value depends only on current state, independent of path. Examples: U, H, S, G.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q27. Define Path Function with 2 examples.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q27. Differentiate between Intensive and Extensive properties with 2 examples each.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Property whose value depends on the path followed during a process (e.g. Heat q, Work w).
+      <b>Extensive:</b> Depends on mass (Volume, Enthalpy).<br><b>Intensive:</b> Independent of mass (Temperature, Density).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q28. Differentiate Intensive and Extensive properties.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q28. State First Law of Thermodynamics and write its mathematical equation.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>Intensive:</b> Independent of mass (e.g. Temp T, Pressure P).<br><b>Extensive:</b> Depends on mass (e.g. Volume V, Mass m).
+      Energy can neither be created nor destroyed, only transformed. Equation: <b>ΔU = q + w</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q29. State First Law of Thermodynamics.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q29. Explain why C_p is always greater than C_v for an ideal gas.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Energy can neither be created nor destroyed; total energy of an isolated universe is constant (ΔU = q + w).
+      At constant pressure, gas expands doing work P ΔV against surroundings, requiring additional heat energy equal to R per mole.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q30. What is an Isolated System? Give 1 example.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q30. Define Standard Enthalpy of Formation (Δ_f H^⊖). What is Δ_f H^⊖ for O₂(g)?</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      A system that exchanges neither matter nor energy with surroundings (e.g. liquid in a perfect Thermos flask).
+      Enthalpy change when 1 mol compound is formed from standard elements. For O₂(g), Δ_f H^⊖ = <b>0</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q31. Write equation relating ΔH and ΔU for a gaseous reaction.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q31. State Hess's Law of Constant Heat Summation.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>ΔH = ΔU + Δn_g R T</b> (where Δn_g = gaseous product moles - gaseous reactant moles).
+      Total enthalpy change in a reaction is identical whether process takes place in one step or multiple steps.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q32. Why C_p is greater than C_v for an ideal gas?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q32. Define Entropy (S) and state its SI units.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      At constant pressure, gas expands doing work against external pressure (pΔV = RΔT), so extra heat R is required.
+      State function measuring degree of molecular randomness / disorder. SI unit: <b>J K⁻¹ mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q33. State Hess's Law of Constant Heat Summation.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q33. State Gibbs-Helmholtz equation and criteria for spontaneity.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Total enthalpy change in a chemical reaction is identical whether the reaction occurs in one step or several steps.
+      <b>ΔG = ΔH - T ΔS</b>. Spontaneous if ΔG < 0 (negative).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q34. Define Standard Enthalpy of Formation (ΔfH<sup>⊖</sup>).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q34. Explain why dissolution of NH₄Cl in water is endothermic yet spontaneous.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Enthalpy change when 1 mole of a compound is formed from constituent elements in standard states.
+      Dissolution increases entropy significantly (ΔS > 0), making T ΔS > ΔH so ΔG = ΔH - T ΔS < 0.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q35. What is standard state enthalpy of formation of reference elements?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q35. Calculate ΔU when a system absorbs 500 J of heat and performs 200 J of work.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      By convention, standard enthalpy of formation of an element in its reference state (e.g. O₂(g), C(graphite)) is <b>zero</b>.
+      ΔU = q + w = +500 + (-200) = <b>+300 J</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q36. Define Enthalpy of Combustion (ΔcH<sup>⊖</sup>).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q36. Calculate Δn_g for: CaCO₃(s) ⟶ CaO(s) + CO₂(g).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Enthalpy change when 1 mole of a substance undergoes complete combustion in excess oxygen.
+      Δn_g = moles gaseous products (1) - moles gaseous reactants (0) = <b>+1</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q37. Define Entropy (S) and state its unit.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q37. Define Reversible and Irreversible processes.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Quantitative measure of molecular disorder or randomness in a system (Unit: J K⁻¹ mol⁻¹).
+      <b>Reversible:</b> Occurs infinitesimally slowly in driving-opposing force equilibrium.<br><b>Irreversible:</b> Occurs rapidly in one direction.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q38. State Second Law of Thermodynamics in terms of entropy.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q38. Explain why enthalpy change in Bomb Calorimeter equals ΔU not ΔH.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Total entropy of an isolated system increases in any spontaneous process (ΔS_total > 0).
+      Bomb calorimeter is a rigid sealed container where volume remains constant (ΔV = 0, w = 0 ⟹ q_v = ΔU).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q39. State Third Law of Thermodynamics.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q39. Calculate work done when 2 moles of ideal gas expand reversibly from 2 L to 20 L at 300 K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Entropy of a pure perfectly crystalline substance approaches zero at absolute zero temperature (0 K).
+      w = -2.303 n R T log(V₂/V₁) = -2.303 × 2 × 8.314 × 300 × log(10) = <b>-11488 J (-11.49 kJ)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q40. Write Gibbs-Helmholtz equation.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q40. Define Bond Dissociation Enthalpy.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>ΔG = ΔH - T ΔS</b>.
+      Enthalpy required to break 1 mole of specific covalent bonds in gaseous state into gaseous atoms.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q41. What is the criteria for spontaneity in terms of ΔG?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q41. Why is enthalpy of neutralization of strong acid with strong base constant (-57.1 kJ/mol)?</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Process is <b>spontaneous when ΔG < 0</b> (negative).
+      Reaction is simply combination of H⁺(aq) and OH⁻(aq) to form 1 mole H₂O(l).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q42. What is the value of ΔG at chemical equilibrium?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q42. State Second Law of Thermodynamics in terms of total entropy.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      At chemical equilibrium, <b>ΔG = 0</b>.
+      In any spontaneous process, total entropy of universe increases: <b>ΔS_total = ΔS_sys + ΔS_surr > 0</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q43. Write relation between ΔG<sup>⊖</sup> and equilibrium constant K.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q43. Explain why entropy of a gas decreases upon liquefaction.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>ΔG<sup>⊖</sup> = -R T ln K = -2.303 R T log K</b>.
+      Gas molecules move randomly; liquid state has higher structural order, reducing randomness (ΔS < 0).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q44. Why work done in free expansion of ideal gas in vacuum is zero?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q44. Predict sign of ΔS for: 2SO₂(g) + O₂(g) ⟶ 2SO₃(g).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      In vacuum p_ext = 0, so expansion work w = -p_ext ΔV = 0.
+      3 moles of gas combine to form 2 moles of gas, reducing molecular disorder ⟹ <b>ΔS is Negative (< 0)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q45. Define Specific Heat Capacity (c).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q45. Calculate ΔH for reaction if ΔU = -300 kJ, Δn_g = -2 at 300 K (R = 8.314 J/K/mol).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Heat required to raise temperature of 1 gram of substance by 1 Kelvin (q = m · c · ΔT).
+      ΔH = ΔU + Δn_g R T = -300 + (-2 × 8.314 × 300 / 1000) = -300 - 4.99 = <b>-304.99 kJ</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q46. Differentiate Bomb Calorimeter and Coffee Cup Calorimeter.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q46. Define Calorimetry and Heat Capacity.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>Bomb Calorimeter:</b> Constant volume (measures ΔU).<br><b>Coffee Cup:</b> Constant pressure (measures ΔH).
+      <b>Calorimetry:</b> Measurement of heat changes.<br><b>Heat Capacity:</b> Heat required to raise system T by 1 K.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q47. Calculate Δn_g for N₂(g) + 3H₂(g) ⟶ 2NH₃(g).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q47. Calculate equilibrium constant K_c if ΔG^⊖ = 0 at 298 K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Δn_g = 2 - (1 + 3) = <b>-2 moles</b>.
+      ΔG^⊖ = -2.303 R T log K_c = 0 ⟹ log K_c = 0 ⟹ <b>K_c = 1</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q48. Why enthalpy of neutralization of strong acid and strong base is constant (-57.1 kJ/mol)?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q48. Why does temperature of an ideal gas remain constant during isothermal expansion?</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Because it simply represents combination of H⁺(aq) and OH⁻(aq) to form H₂O(l).
+      Internal energy of ideal gas depends only on T. For isothermal expansion ΔT = 0 ⟹ ΔU = 0.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q49. Predict sign of ΔS for H₂O(l) ⟶ H₂O(g).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q49. Define Enthalpy of Atomization (Δ_a H^⊖).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      ΔS is <b>positive (+ΔS)</b> because gas state has much higher randomness than liquid.
+      Enthalpy change on breaking 1 mole of a substance completely into gaseous atoms.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q50. Define Enthalpy of Atomization (ΔaH<sup>⊖</sup>).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q50. Why is ΔS negative when liquid water freezes to ice at 0°C?</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Enthalpy change when 1 mole of a substance is broken completely into gaseous atoms.
+      Liquid water molecules become locked in structured 3D tetrahedral ice crystal, decreasing disorder.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q51. Explain why melting of ice at room temperature is spontaneous.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q51. Calculate ΔG for process with ΔH = +40 kJ/mol, ΔS = +100 J/K/mol at 300 K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Melting is endothermic (ΔH > 0) but increases entropy (ΔS > 0). At 25°C, TΔS > ΔH, making ΔG negative.
+      ΔG = 40000 - (300 × 100) = 40000 - 30000 = <b>+10000 J (+10 kJ/mol, Non-spontaneous)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q52. What is an Adiabatic process?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q52. State Third Law of Thermodynamics.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      A process in which no heat enters or leaves the system (q = 0).
+      Entropy of a perfectly crystalline substance approaches zero as temperature approaches absolute zero (0 K).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q53. What is an Isothermal process?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q53. Define Enthalpy of Sublimation.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      A process occurring at constant temperature (T = constant, ΔT = 0, ΔU = 0 for ideal gas).
+      Enthalpy change when 1 mole of solid converts directly into gaseous state without passing through liquid.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q54. Write expression for work done in reversible isothermal gas expansion.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q54. Why is free expansion of an ideal gas adiabatic and isothermal?</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      <b>w_rev = -2.303 n R T log(V₂ / V₁)</b>.
+      Free expansion against vacuum (P_ext=0) has w=0; if insulated q=0, so ΔU=0 and ΔT=0.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q55. Why internal energy is a state function while work is not?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q55. Write relation between ΔG^⊖ and standard cell potential E^⊖_cell.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Answer:</b><br>
-      Internal energy depends only on initial and final system state, whereas work depends on path taken.
+      <b>ΔG^⊖ = - n F E^⊖_cell</b>.
     </div>
   </div>
   <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
   <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each</p>
+    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Step Calculations)</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q56. Derive Mayer's relationship C_p - C_v = R for 1 mole of an ideal gas.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q56. Derive relation ΔH = ΔU + Δn_g R T for gaseous reactions. Explain when ΔH = ΔU.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      At constant volume, q_v = ΔU = C_v ΔT.<br>At constant pressure, q_p = ΔH = C_p ΔT.<br>Since H = U + pV = U + RT $\rightarrow$ ΔH = ΔU + R ΔT.<br>Substituting values: C_p ΔT = C_v ΔT + R ΔT $\implies$ <b>C_p - C_v = R</b>.
+      H = U + PV. For ideal gas PV = nRT $\implies$ ΔH = ΔU + Δ(PV) = ΔU + Δn_g RT. ΔH = ΔU when Δn_g = 0 or at constant volume.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q57. Derive expression for work done during reversible isothermal expansion of an ideal gas.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q57. Derive C_p - C_v = R for 1 mole of an ideal gas.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      w = -∫ p_ext dV = -∫ (nRT/V) dV = -nRT ln(V₂/V₁).<br>Converting to log₁₀: <b>w_rev = -2.303 n R T log(V₂ / V₁)</b>.
+      C_v = ∂U/∂T, C_p = ∂H/∂T. H = U + RT $\implies$ dH = dU + R dT. Dividing by dT yields C_p = C_v + R $\implies$ C_p - C_v = R.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q58. Calculate ΔH for reaction: C(graphite) + 2H₂(g) ⟶ CH₄(g), given ΔcH<sup>⊖</sup> of C, H₂, CH₄ are -393.5, -285.8, -890.3 kJ/mol.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q58. Derive formula for work done in reversible isothermal expansion of an ideal gas: w = -2.303 n R T log(V₂/V₁).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Δ_r H = ΔcH<sup>⊖</sup>(C) + 2 ΔcH<sup>⊖</sup>(H₂) - ΔcH<sup>⊖</sup>(CH₄)<br>= -393.5 + 2(-285.8) - (-890.3) = -393.5 - 571.6 + 890.3 = <b>-74.8 kJ mol⁻¹</b>.
+      w = - ∫ P dV = - ∫ (nRT/V) dV = - nRT ln(V₂/V₁) = -2.303 nRT log(V₂/V₁).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q59. State Hess's Law and calculate enthalpy of formation of CO(g) given: (i) C + O₂ ⟶ CO₂, ΔH = -393.5 kJ, (ii) CO + ½O₂ ⟶ CO₂, ΔH = -283.0 kJ.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q59. State Hess's Law and calculate Δ_r H^⊖ for: C(s) + 2H₂(g) ⟶ CH₄(g) given combustion enthalpies of C, H₂, CH₄ are -393.5, -285.8, -890.3 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Subtracting reaction (ii) from reaction (i):<br>C(s) + ½O₂(g) ⟶ CO(g)<br>ΔfH<sup>⊖</sup>(CO) = -393.5 - (-283.0) = <b>-110.5 kJ mol⁻¹</b>.
+      Δ_r H^⊖ = Δ_c H(C) + 2 Δ_c H(H₂) - Δ_c H(CH₄) = -393.5 + 2(-285.8) - (-890.3) = -393.5 - 571.6 + 890.3 = <b>-74.8 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q60. Explain 4 spontaneity cases based on ΔH, ΔS, and ΔG = ΔH - TΔS.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q60. Explain Gibbs Free Energy (G = H - T S) and temperature dependence of spontaneity for all 4 cases of ΔH and ΔS.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      1. ΔH (-), ΔS (+): ΔG < 0 (Spontaneous at all T).<br>2. ΔH (+), ΔS (-): ΔG > 0 (Non-spontaneous at all T).<br>3. ΔH (-), ΔS (-): Spontaneous at low T.<br>4. ΔH (+), ΔS (+): Spontaneous at high T.
+      1. ΔH<0, ΔS>0: Always spontaneous. 2. ΔH>0, ΔS<0: Always non-spontaneous. 3. ΔH>0, ΔS>0: Spontaneous at high T. 4. ΔH<0, ΔS<0: Spontaneous at low T.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q61. Calculate standard Gibbs free energy change ΔG<sup>⊖</sup> and equilibrium constant K for reaction at 298 K: ΔH<sup>⊖</sup> = -11.7 kJ mol⁻¹, ΔS<sup>⊖</sup> = -105 J K⁻¹ mol⁻¹.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q61. Explain Entropy, Second Law of Thermodynamics, and why ΔS_total > 0 for spontaneous process.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      ΔG<sup>⊖</sup> = ΔH<sup>⊖</sup> - T ΔS<sup>⊖</sup> = -11700 - 298(-105) = -11700 + 31290 = <b>+19.59 kJ mol⁻¹</b>.<br>Since ΔG<sup>⊖</sup> > 0, K < 1 (non-spontaneous under standard states).
+      Entropy measures disorder. 2nd law states total entropy of universe increases in spontaneous process (ΔS_total = ΔS_sys + ΔS_surr > 0).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q62. Differentiate Open, Closed, and Isolated systems with 2 examples each.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q62. Calculate standard enthalpy of formation of C₂H₅OH(l) given combustion enthalpies of C(s), H₂(g), C₂H₅OH(l) are -393.5, -285.8, -1367 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • <b>Open:</b> Exchanges matter & energy (Hot water beaker, living cell).<br>• <b>Closed:</b> Exchanges energy only (Sealed bottle, piston cylinder).<br>• <b>Isolated:</b> Exchanges neither (Thermos flask, insulated box).
+      2C + 3H₂ ⟶ C₂H₅OH. Δ_f H = 2(-393.5) + 3(-285.8) - (-1367) = -787 - 857.4 + 1367 = <b>-277.4 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q63. Differentiate State Functions and Path Functions with examples.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q63. Explain Bomb Calorimeter working principle and calculation of ΔU and ΔH.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • <b>State Function:</b> Depends only on initial/final state (U, H, S, G, P, V, T).<br>• <b>Path Function:</b> Depends on process path (Heat q, Work w).
+      Reaction burnt in rigid steel bomb in water bath. Heat q_v = C_cal ΔT ⟹ ΔU = q_v / n. ΔH = ΔU + Δn_g RT.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q64. Explain First Law of Thermodynamics and calculate ΔU if a system absorbs 500 J heat and does 200 J work.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q64. Explain 4 types of phase transition enthalpies (Fusion, Vaporization, Sublimation, Transition).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      ΔU = q + w.<br>Given q = +500 J, w = -200 J (work by system).<br>ΔU = 500 - 200 = <b>+300 J</b>.
+      • Fusion: Solid ⟶ Liquid.<br>• Vaporization: Liquid ⟶ Gas.<br>• Sublimation: Solid ⟶ Gas (Δ_sub H = Δ_fus H + Δ_vap H).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q65. Explain concept of Enthalpy (H) and show why ΔH = q_p at constant pressure.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q65. Calculate bond enthalpy of C-H bond in CH₄ given atomization enthalpy of CH₄ is 1665 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      H = U + pV $\implies$ ΔH = ΔU + pΔV.<br>From 1st Law: ΔU = q_p - pΔV.<br>Substituting ΔU: ΔH = (q_p - pΔV) + pΔV = <b>q_p</b>.
+      CH₄(g) ⟶ C(g) + 4H(g) involves breaking 4 identical C-H bonds. Mean C-H bond enthalpy = 1665 / 4 = <b>416.25 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q66. Calculate bond enthalpy of C-H bond in CH₄(g) from: CH₄(g) ⟶ C(g) + 4H(g), ΔaH<sup>⊖</sup> = 1665 kJ mol⁻¹.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q66. Explain Spontaneity criteria in terms of: (a) ΔH, (b) ΔS_total, (c) ΔG.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Average C-H bond enthalpy = ΔaH<sup>⊖</sup> / 4 = 1665 / 4 = <b>416.25 kJ mol⁻¹</b>.
+      (a) ΔH alone insufficient.<br>(b) ΔS_total > 0 for spontaneous.<br>(c) ΔG < 0 at constant T, P.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q67. State 3 Laws of Thermodynamics in brief.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q67. Calculate ΔG^⊖ and K_c at 298 K for reaction with ΔH^⊖ = -54.07 kJ, ΔS^⊖ = +10.5 J/K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • <b>1st Law:</b> Conservation of energy (ΔU = q + w).<br>• <b>2nd Law:</b> Total entropy of universe increases (ΔS_univ > 0).<br>• <b>3rd Law:</b> Entropy of pure crystal at 0 K is zero.
+      ΔG^⊖ = -54070 - (298 × 10.5) = -54070 - 3129 = -57199 J = <b>-57.2 kJ</b>.<br>log K_c = -ΔG^⊖ / (2.303 R T) = 57199 / 5705.8 = 10.02 $\implies$ <b>K_c = 1.05 × 10¹⁰</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q68. Why entropy of liquid is higher than solid, and gas is higher than liquid?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q68. Explain difference between Heat (q) and Work (w) as path functions.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Liquids have higher structural disorder than rigid solids. Gases have complete random translational motion, giving maximum entropy.
+      Both represent energy transfer. Heat is transfer via temperature gradient; Work is organized energy transfer against force.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q69. Calculate enthalpy change for reaction: N₂(g) + 3H₂(g) ⟶ 2NH₃(g) at 298 K if ΔU = -88.0 kJ, R = 8.314 J K⁻¹ mol⁻¹.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q69. For reaction 2A + B ⟶ C, ΔH = 400 kJ/mol and ΔS = 0.2 kJ/K/mol. Calculate minimum temperature above which reaction becomes spontaneous.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Δn_g = 2 - 4 = -2 mol.<br>ΔH = ΔU + Δn_g R T = -88.0 + (-2 × 8.314 × 298 / 1000) = -88.0 - 4.95 = <b>-92.95 kJ</b>.
+      At threshold ΔG = 0 ⟹ T = ΔH / ΔS = 400 / 0.2 = <b>2000 K</b> (Spontaneous for T > 2000 K).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q70. Describe Bomb Calorimeter setup and how it measures internal energy change ΔU.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q70. Explain why enthalpy of solution (Δ_sol H^⊖) depends on Lattice Enthalpy and Hydration Enthalpy.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Steel vessel (bomb) immersed in water bath at constant volume. Sample ignited electrically. Heat evolved q_v = m · c · ΔT + C_cal · ΔT = -ΔU.
+      Δ_sol H^⊖ = Lattice Enthalpy U (endothermic) + Hydration Enthalpy Δ_hyd H^⊖ (exothermic). If |Δ_hyd H| > |U|, dissolution is exothermic and highly soluble.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q71. Explain why ΔH = ΔU for reactions involving only solids and liquids.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q71. Explain Third Law of Thermodynamics and absolute entropy concept.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      For solids and liquids, volume change ΔV is negligible (ΔV ≈ 0). Hence pΔV ≈ 0, so <b>ΔH = ΔU</b>.
+      Entropy of perfect crystalline substance is 0 at 0 K. Allows calculation of absolute entropy S_T = ∫ (C_p / T) dT.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q72. Differentiate Reversible and Irreversible processes.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q72. Calculate ΔH° for C₂H₄(g) + H₂(g) ⟶ C₂H₆(g) using bond energies: C=C (614), C-C (348), C-H (413), H-H (436) kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • <b>Reversible:</b> Infinitely slow, driving force marginally greater than opposing force, max work.<br>• <b>Irreversible:</b> Rapid, spontaneous, driving force much greater, real natural processes.
+      ΔH° = [614 + 436 + 4(413)] - [348 + 6(413)] = (614 + 436) - (348 + 826) = 1050 - 1174 = <b>-124 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q73. Calculate ΔS for melting of 1 mole of ice at 0°C (ΔfusH = 6.0 kJ mol⁻¹).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q73. Differentiate between State Variable and State Function.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      ΔS = ΔfusH / T = 6000 J mol⁻¹ / 273.15 K = <b>+21.97 J K⁻¹ mol⁻¹</b>.
+      State Variables are measurable properties (P, V, T, n). State Functions are mathematical functions of state variables (U, H, S, G).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q74. Explain physical significance of Gibbs Free Energy (G).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q74. Explain why melting of ice is endothermic yet spontaneous at room temperature.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Decrease in Gibbs free energy (-ΔG) equals maximum useful non-expansion work obtainable from a system at constant T and P.
+      Ice melting absorbs heat (ΔH > 0), but liquid water has higher entropy (ΔS > 0). At T > 273 K, T ΔS > ΔH so ΔG < 0.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q75. Why standard enthalpy of formation of diamond is not zero while graphite is zero?</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q75. Calculate entropy change ΔS for freezing 1 mole of water at 0°C if Δ_fus H = 6.0 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Graphite is the thermodynamically most stable allotrope of carbon at 25°C and 1 bar, chosen as standard reference state.
+      ΔS_freezing = - Δ_fus H / T = -6000 J / 273.15 K = <b>-21.97 J K⁻¹ mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q76. Calculate equilibrium constant K at 298 K for reaction with ΔG<sup>⊖</sup> = -13.6 kJ mol⁻¹.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q76. Explain why ΔU = 0 for isothermal expansion of ideal gas, but ΔU ≠ 0 for real gas.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      ΔG<sup>⊖</sup> = -2.303 R T log K $\implies$ -13600 = -2.303 × 8.314 × 298 × log K<br>log K = 13600 / 5705.8 = 2.3837 $\implies$ <b>K = 10^2.3837 = 242</b>.
+      Ideal gas internal energy depends strictly on T. Real gas has intermolecular attractions, so volume expansion requires energy to overcome attractions.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q77. Compare Heat Capacity (C), Specific Heat (c), and Molar Heat Capacity (C_m).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q77. Calculate standard Gibbs energy change ΔG^⊖ for 2NO₂(g) ⇌ N₂O₄(g) given K_p = 0.15 at 298 K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • C = q / ΔT (for whole body).<br>• c = q / (m ΔT) (per gram).<br>• C_m = q / (n ΔT) (per mole).
+      ΔG^⊖ = -2.303 R T log K_p = -2.303 × 8.314 × 298 × log(0.15) = -5705.8 × (-0.8239) = <b>+4701 J (+4.70 kJ)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q78. Predict sign of ΔS for: (i) CaCO₃(s) ⟶ CaO(s) + CO₂(g), (ii) 2SO₂(g) + O₂(g) ⟶ 2SO₃(g).</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q78. Explain why enthalpy of combustion (Δ_c H^⊖) is always negative (exothermic).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      (i) <b>+ΔS</b> (1 mol gas produced).<br>(ii) <b>-ΔS</b> (3 mol gas reactant ⟶ 2 mol gas product).
+      Combustion forms strong stable bonds in CO₂ and H₂O releasing large chemical bond energy.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q79. Explain why enthalpy of combustion ΔcH<sup>⊖</sup> is always negative.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q79. Explain Adiabatic expansion cooling effect of gases.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Combustion is always an exothermic reaction that releases thermal energy to surroundings.
+      In adiabatic expansion q=0 ⟹ ΔU = w. As gas does expansion work (w < 0), internal energy decreases (ΔU < 0), lowering temperature.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q80. Calculate work done when 2 moles of ideal gas expand isothermally from 2 L to 20 L at 300 K.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q80. Calculate enthalpy of hydrogenation of Ethene to Ethane using standard enthalpies of formation.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      w = -2.303 n R T log(V₂/V₁) = -2.303 × 2 × 8.314 × 300 × log(10) = <b>-11488 J = -11.49 kJ</b>.
+      Δ_r H^⊖ = Δ_f H(C₂H₆) - [Δ_f H(C₂H₄) + Δ_f H(H₂)] = -84.7 - (52.3 + 0) = <b>-137.0 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q81. Explain why entropy increases when a solute dissolves in a solvent.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q81. Explain relationship between Heat Capacity at constant pressure (C_p) and constant volume (C_v).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Dissolution breaks rigid crystal lattice, dispersing solute ions/molecules randomly throughout solvent.
+      C_p = (∂H/∂T)_p and C_v = (∂U/∂T)_v. Since H = U + PV, C_p - C_v = P (∂V/∂T)_p = R for ideal gas.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q82. Differentiate Exothermic and Endothermic reactions with ΔH sign and potential energy diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q82. Calculate ΔS for vaporization of 1 mole water at 100°C if Δ_vap H = 40.66 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • <b>Exothermic:</b> Heat released, ΔH < 0, Products lower energy than Reactants.<br>• <b>Endothermic:</b> Heat absorbed, ΔH > 0, Products higher energy than Reactants.
+      ΔS_vap = 40660 J / 373.15 K = <b>+108.96 J K⁻¹ mol⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q83. Calculate ΔH for H₂(g) + Cl₂(g) ⟶ 2HCl(g) given bond enthalpies H-H = 436, Cl-Cl = 242, H-Cl = 431 kJ mol⁻¹.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q83. Explain why system performs maximum work in a reversible process compared to irreversible process.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      Δ_r H = ∑ B.E.(Reactants) - ∑ B.E.(Products)<br>= (436 + 242) - 2(431) = 678 - 862 = <b>-184 kJ mol⁻¹</b>.
+      In reversible process, driving force exceeds opposing force by infinitesimal amount at every step, preventing energy dissipation.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q84. Explain why a non-spontaneous process can be made spontaneous by changing temperature.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q84. Calculate ΔH° for 2Al + 3/2 O₂ ⟶ Al₂O₃ given Δ_f H°(Al₂O₃) = -1675.7 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      If ΔH (+) and ΔS (+), process is non-spontaneous at low T, but raising T makes TΔS > ΔH, resulting in ΔG < 0 (spontaneous!).
+      Reaction forms 1 mol Al₂O₃ from elements ⟹ ΔH° = Δ_f H°(Al₂O₃) = <b>-1675.7 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q85. Write criteria for equilibrium in terms of ΔU, ΔH, ΔS, and ΔG.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #FF8A65;">Q85. Explain why entropy of universe is constantly increasing.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #FF8A65;">Detailed Solution:</b><br>
-      • Constant T, P: <b>ΔG = 0</b>.<br>• Constant U, V: <b>ΔS_sys = 0 (Maximum)</b>.<br>• Constant S, P: <b>ΔH = 0</b>.
+      All natural spontaneous processes occurring in universe are irreversible, generating positive entropy (ΔS_universe > 0).
     </div>
   </div>
   <!-- SECTION D: LONG ANSWER & HOTS QUESTIONS (Q86 to Q100) -->
   <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
     <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer & HOTS Questions (Q86 to Q100)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">15 Advanced HOTS Questions • 5 Marks Each</p>
+    <p style="color: #FF8A65; margin: 0; font-size: 14px;">15 Advanced HOTS Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Analytical)</p>
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q86 (HOTS - 5 Marks): Comprehensive Work & Energy Derivations in Thermodynamics</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q86 (HOTS - 5 Marks): First Law of Thermodynamics & Isothermal Reversible Work</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive expression for work done in isothermal reversible expansion of ideal gas and calculate w for 3 moles at 300 K expanding from 5 L to 50 L.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) State First Law of Thermodynamics. Derive expression for reversible isothermal expansion work: w = -2.303 n R T log(V₂/V₁).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      w_rev = -2.303 n R T log(V₂/V₁) = -2.303 × 3 × 8.314 × 300 × log(10) = <b>-17233 J = -17.23 kJ</b>.
+      Energy conserved: ΔU = q + w. Integrated w = - ∫ P dV = - nRT ln(V₂/V₁) = -2.303 nRT log(V₂/V₁).
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Derive relation ΔH = ΔU + Δn_g R T and calculate ΔH - ΔU for combustion of liquid Benzene at 298 K.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) 3 moles of ideal gas expand isothermally and reversibly at 300 K from 10 L to 100 L. Calculate: (a) Work done (w), (b) Heat absorbed (q), (c) Internal energy change (ΔU).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      C₆H₆(l) + 7.5O₂(g) ⟶ 6CO₂(g) + 3H₂O(l). Δn_g = 6 - 7.5 = -1.5 mol.<br>ΔH - ΔU = Δn_g R T = -1.5 × 8.314 × 298 = <b>-3716 J = -3.72 kJ</b>.
+      (a) w = -2.303 × 3 × 8.314 × 300 × log(10) = <b>-17232 J (-17.23 kJ)</b>.<br>(b) Isothermal ΔU = 0 ⟹ q = -w = <b>+17.23 kJ</b>.<br>(c) ΔU = <b>0</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q87 (HOTS - 5 Marks): Hess's Law Application & Enthalpy of Formation Calculations</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q87 (HOTS - 5 Marks): Enthalpy vs Internal Energy Relation & Gas Reaction Mechanics</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) State Hess's Law and explain its thermodynamic foundation.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive relation ΔH = ΔU + Δn_g R T. Explain conditions under which ΔH = ΔU and ΔH > ΔU.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Hess's Law states enthalpy change in a reaction is independent of path. Founded on First Law of Thermodynamics and enthalpy being a state function.
+      H = U + PV. For ideal gases Δ(PV) = Δn_g RT. ΔH = ΔU when Δn_g = 0. ΔH > ΔU when Δn_g > 0.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate standard enthalpy of formation of anhydrous Al₂Cl₆(s) from: (1) 2Al + 6HCl(aq) ⟶ Al₂Cl₆(aq) + 3H₂, ΔH = -1004 kJ; (2) H₂ + Cl₂ ⟶ 2HCl(g), ΔH = -184 kJ; (3) HCl(g) + aq ⟶ HCl(aq), ΔH = -73 kJ; (4) Al₂Cl₆(s) + aq ⟶ Al₂Cl₆(aq), ΔH = -643 kJ.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) For combustion of 1 mole liquid Benzene C₆H₆(l) + 15/2 O₂(g) ⟶ 6CO₂(g) + 3H₂O(l) at 298 K, ΔU = -3267 kJ/mol. Calculate ΔH.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Target: 2Al(s) + 3Cl₂(g) ⟶ Al₂Cl₆(s).<br>ΔfH<sup>⊖</sup> = Eq(1) + 3×Eq(2) + 6×Eq(3) - Eq(4)<br>= -1004 + 3(-184) + 6(-73) - (-643) = -1004 - 552 - 438 + 643 = <b>-1351 kJ mol⁻¹</b>.
+      Δn_g = 6 - 7.5 = -1.5.<br>ΔH = ΔU + Δn_g R T = -3267 + (-1.5 × 8.314 × 298 / 1000) = -3267 - 3.715 = <b>-3270.72 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q88 (HOTS - 5 Marks): Gibbs Free Energy, Entropy & Equilibrium Constant Inter-relations</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q88 (HOTS - 5 Marks): Hess's Law Application & Enthalpy of Formation Derivation</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive Gibbs-Helmholtz equation ΔG = ΔH - T ΔS from fundamental definitions G = H - TS.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) State Hess's Law of Constant Heat Summation. Explain why Hess's law is a consequence of First Law.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      G = H - TS. For a process at constant T: ΔG = ΔH - Δ(TS) = <b>ΔH - T ΔS</b>.
+      Enthalpy change is independent of path. Enthalpy H is a state function depending only on initial and final states.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) For reaction 2NO₂(g) ⇌ N₂O₄(g) at 298 K, ΔH<sup>⊖</sup> = -57.2 kJ, ΔS<sup>⊖</sup> = -175 J K⁻¹. Calculate ΔG<sup>⊖</sup> and equilibrium constant K.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate standard enthalpy of formation of anhydrous Al₂Cl₆(s) from elements given: (1) 2Al + 6HCl(aq) ⟶ Al₂Cl₆(aq) + 3H₂ (ΔH = -1004 kJ), (2) H₂ + Cl₂ ⟶ 2HCl(g) (ΔH = -184.1 kJ), (3) HCl(g) + aq ⟶ HCl(aq) (ΔH = -73.2 kJ), (4) Al₂Cl₆(s) + aq ⟶ Al₂Cl₆(aq) (ΔH = -643.1 kJ).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      ΔG<sup>⊖</sup> = -57200 - 298(-175) = -57200 + 52150 = <b>-5.05 kJ mol⁻¹</b>.<br>log K = -ΔG<sup>⊖</sup> / (2.303 R T) = 5050 / 5705.8 = 0.885 $\implies$ <b>K = 7.67</b>.
+      Target: 2Al + 3Cl₂ ⟶ Al₂Cl₆(s).<br>ΔH = (-1004) + 3(-184.1) + 6(-73.2) - (-643.1) = -1004 - 552.3 - 439.2 + 643.1 = <b>-1352.4 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q89 (HOTS - 5 Marks): Calorimetry & Measurement of Thermodynamic Quantities</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q89 (HOTS - 5 Marks): Gibbs Free Energy & Temperature Dependence of Spontaneity</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Describe Bomb Calorimeter construction, working principle, and mathematical formula for measuring ΔU.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive Gibbs-Helmholtz equation ΔG = ΔH - T ΔS. Explain spontaneity criteria in terms of ΔG.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Rigid steel bomb inside insulated water bath. Reaction ignited. q_v = -(m_w c_w + C_bomb) ΔT. Since volume constant, ΔU = q_v / n.
+      G = H - TS ⟹ ΔG = ΔH - T ΔS. Process is spontaneous if ΔG < 0, non-spontaneous if ΔG > 0, and at equilibrium if ΔG = 0.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) 0.5 g of Benzoic acid (M = 122 g/mol) combusted in Bomb Calorimeter raises temp of 1 kg water by 3.5°C. Calculate ΔU and ΔH at 298 K.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) For a reaction ΔH = +35.5 kJ/mol and ΔS = +83.6 J/K/mol. Calculate: (a) ΔG at 300 K, (b) Temperature at which reaction becomes spontaneous.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      q_v = m c ΔT = 1000 × 4.184 × 3.5 = 14644 J for 0.0041 mol.<br>ΔU = -14644 / 0.0041 = -3571 kJ/mol.<br>C₇H₆O₂ + 7.5O₂ ⟶ 7CO₂ + 3H₂O, Δn_g = -0.5.<br>ΔH = ΔU + Δn_g R T = -3571 + (-0.5 × 8.314 × 298 / 1000) = <b>-3572.2 kJ mol⁻¹</b>.
+      (a) ΔG = 35500 - (300 × 83.6) = 35500 - 25080 = <b>+10420 J (+10.42 kJ/mol, Non-spontaneous)</b>.<br>(b) T_eq = ΔH / ΔS = 35500 / 83.6 = <b>424.64 K</b> (Spontaneous for T > 424.64 K).
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q90 (HOTS - 5 Marks): Spontaneity Analysis & Entropy Changes in Physical & Chemical Processes</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q90 (HOTS - 5 Marks): Bomb Calorimetry Mechanics & Combustion Analysis</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain Second Law of Thermodynamics and criteria for spontaneity in isolated vs open systems.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain construction and operation of a Bomb Calorimeter for measuring internal energy change ΔU of combustion.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Isolated system: ΔS_isolated > 0. Open/Closed system at constant T, P: ΔG_sys = ΔH - TΔS < 0.
+      Steel bomb filled with oxygen submerged in insulated water jacket. Ignited electrically; heat released q_v = C_cal ΔT ⟹ ΔU = q_v / moles.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate temperature above which reaction CaCO₃(s) ⟶ CaO(s) + CO₂(g) becomes spontaneous given ΔH<sup>⊖</sup> = +178 kJ mol⁻¹, ΔS<sup>⊖</sup> = +160 J K⁻¹ mol⁻¹.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) 0.5 g of benzoic acid C₇H₆O₂ (M = 122 g/mol) was burnt in bomb calorimeter. Temperature rose by 1.5 K. Heat capacity of calorimeter is 10 kJ/K. Calculate: (a) q_v per mole (ΔU), (b) Enthalpy of combustion ΔH at 298 K.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      At equilibrium ΔG = 0 $\implies$ T = ΔH / ΔS = 178000 J / 160 J K⁻¹ = <b>1112.5 K (839.3°C)</b>.<br>Above 1112.5 K, TΔS > ΔH, making reaction spontaneous!
+      (a) Heat released q = 10 kJ/K × 1.5 K = 15 kJ. Moles = 0.5 / 122 = 0.00410 mol ⟹ ΔU = -15 / 0.00410 = <b>-3660 kJ/mol</b>.<br>(b) C₇H₆O₂(s) + 15/2 O₂(g) ⟶ 7CO₂(g) + 3H₂O(l) ⟹ Δn_g = 7 - 7.5 = -0.5.<br>ΔH = -3660 + (-0.5 × 8.314 × 298 / 1000) = <b>-3661.24 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q91 (HOTS - 5 Marks): Bond Enthalpy Calculations & Thermochemical Cycles</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q91 (HOTS - 5 Marks): Bond Enthalpy Calculations & Chemical Reaction Enthalpy</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Bond Dissociation Enthalpy and Average Bond Enthalpy.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Bond Dissociation Enthalpy and Mean Bond Enthalpy. Explain why mean bond enthalpy is used for polyatomic molecules.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Bond dissociation enthalpy is energy to break specific bond in diatomic molecule. Average bond enthalpy is mean energy per bond in polyatomic molecule.
+      Bond dissociation enthalpy is energy to break specific bond. In polyatomics (e.g. CH₄), breaking successive C-H bonds requires different energies due to changing radical environment, so mean bond enthalpy is averaged.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate enthalpy of formation of NH₃(g) given bond enthalpies: N≡N = 946, H-H = 436, N-H = 389 kJ mol⁻¹.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate standard enthalpy of formation of NH₃(g) given bond energies: N≡N (945 kJ/mol), H-H (436 kJ/mol), N-H (391 kJ/mol).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Target: ½N₂(g) + 1.5H₂(g) ⟶ NH₃(g).<br>ΔfH<sup>⊖</sup> = [½ B.E.(N≡N) + 1.5 B.E.(H-H)] - [3 B.E.(N-H)]<br>= [0.5(946) + 1.5(436)] - [3(389)] = (473 + 654) - 1167 = <b>-40 kJ mol⁻¹</b>.
+      Reaction: ½ N₂(g) + 3/2 H₂(g) ⟶ NH₃(g).<br>Δ_f H^⊖ = [½ BE(N≡N) + 3/2 BE(H-H)] - [3 BE(N-H)] = [½(945) + 3/2(436)] - [3(391)] = (472.5 + 654) - 1173 = 1126.5 - 1173 = <b>-46.5 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q92 (HOTS - 5 Marks): Molar Heat Capacities C_p & C_v for Monoatomic, Diatomic, and Polyatomic Gases</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q92 (HOTS - 5 Marks): Entropy Changes in Phase Transitions & Reversible Processes</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive relationship C_p - C_v = R and explain equipartition of energy.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Entropy as a state function. Derive entropy change expressions for fusion, vaporization, and reversible isothermal process.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Equipartition of energy allocates ½RT energy per degree of freedom. C_v = (f/2)R, C_p = (f/2 + 1)R $\implies$ C_p - C_v = R.
+      ΔS = q_rev / T. For fusion: ΔS_fus = Δ_fus H / T_m. For vaporization: ΔS_vap = Δ_vap H / T_b. For isothermal expansion: ΔS = n R ln(V₂/V₁).
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate C_v, C_p, and γ = C_p/C_v for monoatomic Argon and diatomic Nitrogen gas.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate entropy change ΔS when 36 g of liquid water at 100°C is converted into steam (Δ_vap H = 40.66 kJ/mol).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      • Monoatomic (Argon, f=3): C_v = 1.5R, C_p = 2.5R, <b>γ = 1.67</b>.<br>• Diatomic (Nitrogen, f=5): C_v = 2.5R, C_p = 3.5R, <b>γ = 1.40</b>.
+      Moles water = 36 / 18 = 2 moles.<br>ΔS = n Δ_vap H / T = (2 × 40660 J) / 373.15 K = <b>+217.93 J K⁻¹</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q93 (HOTS - 5 Marks): Phase Transitions & Clapeyron-Clausius Thermodynamic Analysis</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q93 (HOTS - 5 Marks): Gibbs Free Energy & Equilibrium Constant Synthesis</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Enthalpy of Fusion, Vaporization, and Sublimation.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Derive relation ΔG^⊖ = -2.303 R T log K_c. Explain how sign of ΔG^⊖ determines magnitude of K_c.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      • Fusion (ΔfusH): Solid ⟶ Liquid.<br>• Vaporization (ΔvapH): Liquid ⟶ Gas.<br>• Sublimation (ΔsubH): Solid ⟶ Gas (ΔsubH = ΔfusH + ΔvapH).
+      ΔG = ΔG^⊖ + RT ln Q. At equilibrium ΔG = 0 and Q = K_c ⟹ ΔG^⊖ = -RT ln K_c = -2.303 RT log K_c. If ΔG^⊖ < 0, K_c > 1 (products favored).
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate entropy change when 18 g water vaporizes at 100°C (ΔvapH = 40.66 kJ mol⁻¹).</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate equilibrium constant K_p for N₂O₄(g) ⇌ 2NO₂(g) at 298 K given Δ_f G^⊖(N₂O₄) = 97.89 kJ/mol and Δ_f G^⊖(NO₂) = 51.31 kJ/mol.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Moles of water = 18/18 = 1 mol.<br>T = 373.15 K.<br>ΔS = ΔvapH / T = 40660 / 373.15 = <b>+108.96 J K⁻¹ mol⁻¹</b>.
+      ΔG^⊖ = 2(51.31) - 97.89 = 102.62 - 97.89 = <b>+4.73 kJ/mol (+4730 J)</b>.<br>log K_p = -4730 / (2.303 × 8.314 × 298) = -4730 / 5705.8 = -0.829 $\implies$ <b>K_p = 10⁻⁰ˑ⁸²⁹ = 0.148</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q94 (HOTS - 5 Marks): Thermodynamic Reversibility & Maximum Work</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q94 (HOTS - 5 Marks): Specific Heat Capacity & Heat Capacity Relations</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain why maximum work is obtained ONLY in a reversible process.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Heat Capacity (C), Specific Heat (c), and Molar Heat Capacity (C_m). Derive C_p - C_v = R for ideal gas.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Reversible process proceeds through infinite equilibrium states with minimum energy dissipation, fulfilling w_max = -∫ p dV.
+      C = q/ΔT, c = q/(m ΔT), C_m = q/(n ΔT). C_p - C_v = R derived from H = U + RT and work done during thermal expansion.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Compare work done in isothermal expansion of 1 mole ideal gas from 10 L to 20 L at 300 K under: (a) Reversible path, (b) Irreversible against constant p_ext = 1 bar.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate heat required to raise temperature of 50 g of Copper from 25°C to 125°C (Specific heat of Copper = 0.385 J/g/K).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) w_rev = -2.303 × 1 × 8.314 × 300 × log(2) = <b>-1729 J</b>.<br>(b) w_irrev = -p_ext ΔV = -10⁵ Pa × (0.02 - 0.01 m³) = <b>-1000 J</b>.<br>Reversible expansion yields higher magnitude of work!
+      q = m c ΔT = 50 g × 0.385 J/g/K × (125 - 25) K = 50 × 0.385 × 100 = <b>1925 J (1.925 kJ)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q95 (HOTS - 5 Marks): Standard Enthalpies of Reaction & Kirchhoff's Equation</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q95 (HOTS - 5 Marks): Second & Third Laws of Thermodynamics Mechanics</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Standard Enthalpy of Reaction (Δ_r H<sup>⊖</sup>) and state factors affecting reaction enthalpy.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain Second Law of Thermodynamics, Kelvin-Planck statement, Clausius statement, and Third Law of Thermodynamics.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Heat change during reaction when all reactants/products are in standard states. Affected by temperature, physical state, and stoichiometry.
+      2nd Law: Heat cannot spontaneously flow from cold to hot without work; no engine is 100% efficient. 3rd Law: S = 0 at 0 K for perfect crystals.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Explain how enthalpy of reaction varies with temperature using Kirchhoff's Law.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) For a reaction A + B ⟶ C + D, ΔH = -100 kJ/mol and ΔS = -200 J/K/mol. Calculate: (a) ΔG at 298 K, (b) Temperature at which reaction reaches equilibrium.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Kirchhoff's equation: Δ_r H(T₂) = Δ_r H(T₁) + ΔC_p (T₂ - T₁), where ΔC_p = ∑ C_p(Products) - ∑ C_p(Reactants).
+      (a) ΔG = -100000 - (298 × -200) = -100000 + 59600 = <b>-40400 J (-40.4 kJ/mol, Spontaneous)</b>.<br>(b) T_eq = ΔH / ΔS = -100000 / -200 = <b>500 K</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q96 (HOTS - 5 Marks): Third Law of Thermodynamics & Absolute Entropy Calculations</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q96 (HOTS - 5 Marks): Spontaneity Criteria in Insulated vs Non-Insulated Systems</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) State Third Law of Thermodynamics and explain its application in determining absolute entropy of substances.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain why ΔS_system > 0 is spontaneity criterion for isolated system, whereas ΔG < 0 is criterion for system at constant T and P.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Entropy of pure crystalline solid is 0 at 0 K. Allows calculation of absolute entropy S_T = ∫₀ᵀ (C_p / T) dT.
+      Isolated system cannot exchange heat (q_surr=0 ⟹ ΔS_surr=0), so ΔS_total = ΔS_sys > 0. At constant T, P, ΔG = -T ΔS_total, making ΔG < 0 equivalent to ΔS_total > 0.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Why residual entropy exists in CO, N₂O, and Ice even near 0 K?</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Predict sign of ΔS for: (a) Crystallization of sugar from solution, (b) Rusting of iron: 4Fe(s) + 3O₂(g) ⟶ 2Fe₂O₃(s), (c) Sublimation of Iodine.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Due to molecular orientation disorder where dipole orientations are randomly frozen in crystal lattice at low temperatures.
+      (a) Sugar crystallization: <b>Negative (ΔS < 0)</b>.<br>(b) Rusting: 3 moles gas consumed ⟶ <b>Negative (ΔS < 0)</b>.<br>(c) Iodine sublimation: Solid ⟶ Gas ⟶ <b>Positive (ΔS > 0)</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q97 (HOTS - 5 Marks): Integral vs Differential Enthalpy of Solution & Hydration</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q97 (HOTS - 5 Marks): Lattice Enthalpy & Solution Thermodynamics Synthesis</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Define Enthalpy of Solution (ΔsolH<sup>⊖</sup>) and Enthalpy of Hydration (ΔhydH<sup>⊖</sup>).</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain Lattice Enthalpy and Hydration Enthalpy. Derive condition for solubility of ionic solids in water.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      ΔsolH is heat change when 1 mol solute dissolves in solvent. ΔhydH is heat released when 1 mol gaseous ions are hydrated by water.
+      Δ_sol H^⊖ = Lattice Enthalpy U + Hydration Enthalpy Δ_hyd H^⊖. Soluble if hydration enthalpy compensates lattice energy (|Δ_hyd H| > |U|) or entropy gain overcomes net endothermic Δ_sol H.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Explain why anhydrous CuSO₄ dissolution is exothermic (ΔH = -66.5 kJ) while CuSO₄·5H₂O dissolution is endothermic (ΔH = +11.7 kJ).</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Dissolution of NaCl in water has Δ_sol H^⊖ = +3.88 kJ/mol. Explain why NaCl readily dissolves in water despite being endothermic.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Anhydrous CuSO₄ undergoes strong exothermic hydration (ΔhydH = -78.2 kJ), whereas CuSO₄·5H₂O is already hydrated.
+      Dissolution breaks rigid NaCl lattice into hydrated Na⁺(aq) and Cl⁻(aq) ions, hugely increasing entropy (ΔS > 0). At 298 K, T ΔS > ΔH, making ΔG < 0.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q98 (HOTS - 5 Marks): Non-Equilibrium Thermodynamics & Biological Energy Coupling</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q98 (HOTS - 5 Marks): Reversible vs Irreversible Expansion Work Comparison</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain how non-spontaneous biological reactions (e.g. ATP synthesis) are driven in living cells.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Compare reversible isothermal expansion work and single-stage irreversible expansion work against constant external pressure.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Living cells couple endergonic (non-spontaneous, +ΔG) reactions with highly exergonic (spontaneous, -ΔG) ATP hydrolysis so total ΔG_net < 0.
+      Reversible work w_rev = -2.303 nRT log(V₂/V₁) yields maximum expansion work. Irreversible work w_irrev = - P_ext (V₂ - V₁) is smaller in magnitude.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate net ΔG for coupled reaction: Glucose + P_i ⟶ Glucose-6-P (ΔG = +13.8 kJ) coupled with ATP ⟶ ADP + P_i (ΔG = -30.5 kJ).</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) 1 mole ideal gas at 300 K expands from 10 L to 20 L: (a) Reversibly, (b) Irreversibly against constant P_ext = 1 atm. Compare magnitude of work done.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      ΔG_net = +13.8 + (-30.5) = <b>-16.7 kJ mol⁻¹</b> (Spontaneous coupled process!).
+      (a) w_rev = -2.303 × 1 × 8.314 × 300 × log(2) = -5705.8 × 0.3010 = <b>-1717.4 J</b>.<br>(b) w_irrev = - 1 atm × 10 L = -10 L atm = -10 × 101.3 J = <b>-1013.0 J</b>.<br>Reversible work is significantly greater in magnitude!
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q99 (HOTS - 5 Marks): Master Thermodynamics System State Matrix</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q99 (HOTS - 5 Marks): Thermochemical Calculations from Multiple Enthalpies of Combustion</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Summarize characteristics of Isothermal, Adiabatic, Isobaric, and Isochoric processes.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Explain standard state conditions for thermochemical data. State rules for manipulating thermochemical equations.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      • Isothermal: T=const, ΔT=0, ΔU=0 (ideal gas).<br>• Adiabatic: q=0, ΔU=w.<br>• Isobaric: P=const, q_p=ΔH.<br>• Isochoric: V=const, ΔV=0, w=0, q_v=ΔU.
+      Standard state: Pure substance at 1 bar and specified T (298 K). Reversing equation flips ΔH sign; multiplying equation multiplies ΔH by same factor.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate ΔU, q, and w for 1 mole ideal gas undergoing isothermal reversible expansion at 400 K from 1 bar to 0.1 bar.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Calculate standard enthalpy of formation of N₂O₅(g) given: (1) 2NO(g) + O₂(g) ⟶ 2NO₂(g) (ΔH = -114.1 kJ), (2) 4NO₂(g) + O₂(g) ⟶ 2N₂O₅(g) (ΔH = -110.2 kJ), (3) N₂(g) + O₂(g) ⟶ 2NO(g) (ΔH = +180.5 kJ).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      ΔU = 0 (isothermal).<br>w = -2.303 n R T log(P₁/P₂) = -2.303 × 1 × 8.314 × 400 × log(10) = <b>-7657 J</b>.<br>q = -w = <b>+7657 J</b>.
+      Target: N₂ + 5/2 O₂ ⟶ N₂O₅.<br>Combine: (3) + (1) + ½(2) ⟹ Δ_f H = 180.5 + (-114.1) + ½(-110.2) = 180.5 - 114.1 - 55.1 = <b>+11.3 kJ/mol</b>.
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q100 (HOTS - 5 Marks): Master Thermodynamics Integration Analysis</b></p>
+    <p style="margin: 0 0 10px 0;"><b style="color: #FF8A65;">Q100 (HOTS - 5 Marks): Master Thermodynamics Synthesis: Laws, Energy Functions & Spontaneity</b></p>
     
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Synthesize 3 Laws of Thermodynamics and their fundamental roles in physical chemistry.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(i) Synthesize connection between First Law (ΔU=q+w), Enthalpy (H=U+PV), Second Law (ΔS_total>0), and Gibbs Free Energy (ΔG=ΔH-TΔS).</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      1. 1st Law: Energy conservation & internal energy U.<br>2. 2nd Law: Entropy S & direction of spontaneous change.<br>3. 3rd Law: Absolute entropy baseline at 0 K.
+      First law conserves energy; enthalpy accounts for constant pressure work; second law introduces entropy for direction of change; Gibbs free energy combines enthalpy and entropy into a single criterion (ΔG < 0) at constant T and P.
     </div>
 
-    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) Explain why Gibbs Free Energy G is the ultimate criterion for chemical equilibrium and spontaneity in industrial processes.</b></p>
+    <p style="margin: 8px 0 4px 0;"><b style="color: #FF8A65;">(ii) For reaction 2SO₂(g) + O₂(g) ⇌ 2SO₃(g) at 298 K: ΔH^⊖ = -198 kJ, ΔS^⊖ = -187 J/K. Calculate: (a) ΔG^⊖ at 298 K, (b) Equilibrium constant K_p, (c) Temperature at which reaction reaches equilibrium.</b></p>
     <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Most industrial reactions occur at constant T and P. ΔG directly measures maximum net work obtainable without needing to calculate surroundings entropy change.
+      (a) ΔG^⊖ = -198000 - (298 × -187) = -198000 + 55726 = <b>-142274 J (-142.27 kJ)</b>.<br>(b) log K_p = 142274 / (2.303 × 8.314 × 298) = 142274 / 5705.8 = 24.93 ⟶ <b>K_p = 8.5 × 10²⁴</b>.<br>(c) T_eq = ΔH / ΔS = -198000 / -187 = <b>1058.8 K (875.8°C)</b>.
     </div>
   </div>
 </div>

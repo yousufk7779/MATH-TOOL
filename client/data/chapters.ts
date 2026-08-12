@@ -105,9 +105,9 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-phy-9", number: 9, name: "Mechanical Properties of Fluids", color: "#26C6DA" },
     ],
     Chemistry: [
-      { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#8E2DE2" },
-      { id: "c11-chem-2", number: 2, name: "Structure of Atom", color: "#00b09b" },
-      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#00b09b" },
+      { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#66BB6A" },
+      { id: "c11-chem-2", number: 2, name: "Structure of Atom", color: "#26C6DA" },
+      { id: "c11-chem-3", number: 3, name: "Classification of Elements & Periodicity", color: "#E91E63" },
       { id: "c11-chem-4", number: 4, name: "Chemical Bonding & Molecular Structure", color: "#00c6ff" },
       { id: "c11-chem-5", number: 5, name: "Chemical Thermodynamics", color: "#FF8A65" },
       { id: "c11-chem-6", number: 6, name: "Equilibrium", color: "#AB47BC" },
@@ -1084,6 +1084,9 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c7-geo-5") return JiguuColors.gradients.blue; // Blue for Water
   if (chapterId === "c7-geo-7") return JiguuColors.gradients.gold; // Gold for Deserts
   if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
+  if (chapterId === "c11-chem-1") return ["#66BB6A", "#388E3C"];
+  if (chapterId === "c11-chem-2") return ["#26C6DA", "#00838F"];
+  if (chapterId === "c11-chem-3") return ["#E91E63", "#C2185B"];
   if (chapterId === "c11-chem-4") return ["#00c6ff", "#0072ff"];
   if (chapterId === "c11-chem-5") return ["#FF8A65", "#FF3D00"];
   if (chapterId === "c11-chem-6") return ["#AB47BC", "#7B1FA2"];
