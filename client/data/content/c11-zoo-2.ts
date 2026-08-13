@@ -100,16 +100,13 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Body Divisions &amp; Skin Architecture</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Streamlined Body Plan:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Divided into Head and Trunk.</text>
     <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Neck &amp; Tail are completely absent.</text>
-
     <text x="22" y="145" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Skin Adaptation:</text>
     <text x="36" y="166" font-family="sans-serif" font-size="12.5" fill="#FFF">Smooth, moist, slippery skin with mucus.</text>
     <text x="36" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">Dorsal olive green with dark spots;</text>
     <text x="36" y="202" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral pale yellow.</text>
-
     <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Water Absorption:</text>
     <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#FFF">Absorbs water osmotically through skin.</text>
     <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#FFF">Frogs NEVER drink water directly!</text>
@@ -118,16 +115,13 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sensory Organs &amp; Sexual Dimorphism</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Head Sensory Structures:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of nostrils above mouth.</text>
     <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Bulged eyes with Nictitating Membrane.</text>
     <text x="36" y="132" font-family="sans-serif" font-size="12.5" fill="#FFF">Membranous Tympanum behind eyes.</text>
-
     <text x="22" y="165" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Limbs &amp; Webbed Feet:</text>
     <text x="36" y="186" font-family="sans-serif" font-size="12.5" fill="#FFF">Forelimbs have 4 digits.</text>
     <text x="36" y="204" font-family="sans-serif" font-size="12.5" fill="#FFF">Hindlimbs have 5 webbed digits.</text>
-
     <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#69F0AE">• Male Specific Features:</text>
     <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#69F0AE">1. Sound amplifying Vocal Sacs.</text>
     <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#69F0AE">2. Nuptial Pad on 1st forelimb digit.</text>
@@ -162,25 +156,18 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Digestive Organs Architecture</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mouth &amp; Bifid Tongue:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Prey capture via muscular sticky tongue.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Esophagus &amp; Stomach:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">HCl &amp; Pepsin convert food to Chyme.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Liver &amp; Gallbladder:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Secretes bile stored in Gallbladder.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pancreas:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Produces pancreatic digestive juice.</text>
-
     <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Small Intestine:</text>
     <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Villi &amp; microvilli absorb nutrients.</text>
-
     <text x="22" y="325" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Rectum &amp; Cloaca:</text>
     <text x="36" y="346" font-family="sans-serif" font-size="12.5" fill="#FFF">Fecal waste enters cloaca for expulsion.</text>
-
     <text x="22" y="385" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#69F0AE">• Carnivorous Adaptation:</text>
     <text x="36" y="405" font-family="sans-serif" font-size="12" fill="#69F0AE">Short alimentary canal length.</text>
   </g>
@@ -188,19 +175,14 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Digestion Flowchart</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Insects Captured by Bifid Tongue</text>
     <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Pharynx - Esophagus - Stomach</text>
     <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (HCl + Gastric Juice)</text>
-    
     <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Chyme Formed in Stomach</text>
     <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Bile + Pancreatic Juice)</text>
-    
     <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Intestinal Absorption by Villi</text>
     <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Rectum - Cloaca - Exterior</text>
   </g>
   <g transform="translate(20, 550)">
@@ -231,17 +213,14 @@ export const c11Zoo2HtmlOverview = `
     <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00B09B" text-anchor="middle">1. CUTANEOUS (SKIN)</text>
     <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Moist, slippery skin</text>
     <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Dissolved O2 diffuses</text>
     <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">into cutaneous blood</text>
     <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">capillaries directly.</text>
-    
     <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Operational Periods:</text>
     <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">1. In water swimming.</text>
     <text x="20" y="215" font-family="sans-serif" font-size="12" fill="#FFF">2. Hibernation (winter).</text>
     <text x="20" y="235" font-family="sans-serif" font-size="12" fill="#FFF">3. Aestivation (summer).</text>
-    
     <text x="20" y="280" font-family="sans-serif" font-size="12" fill="#69F0AE">• Only respiration mode</text>
     <text x="20" y="298" font-family="sans-serif" font-size="12" fill="#69F0AE">  during sleep states!</text>
   </g>
@@ -249,32 +228,26 @@ export const c11Zoo2HtmlOverview = `
     <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081" text-anchor="middle">2. BUCCOPHARYNGEAL</text>
     <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Oral Mucosa Exchange</text>
     <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Moist lining of buccal</text>
     <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">cavity absorbs oxygen</text>
     <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">on land environment.</text>
-    
     <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Mechanism:</text>
     <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">Buccal floor moves up</text>
     <text x="20" y="213" font-family="sans-serif" font-size="12" fill="#FFF">&amp; down drawing air</text>
     <text x="20" y="231" font-family="sans-serif" font-size="12" fill="#FFF">through nostrils.</text>
-    
     <text x="20" y="270" font-family="sans-serif" font-size="12" fill="#69F0AE">• Glottis stays closed.</text>
   </g>
   <g transform="translate(534, 65)">
     <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
     <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00E676" text-anchor="middle">3. PULMONARY (LUNGS)</text>
     <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
-    
     <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Pair of Pink Lungs</text>
     <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Located in thorax.</text>
     <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">Alveoli increase area.</text>
-    
     <text x="20" y="150" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Air Pathway:</text>
     <text x="20" y="172" font-family="sans-serif" font-size="12" fill="#FFF">Nostrils - Buccal Cavity</text>
     <text x="20" y="190" font-family="sans-serif" font-size="12" fill="#FFF">- Glottis - Lungs.</text>
-    
     <text x="20" y="230" font-family="sans-serif" font-size="12" fill="#69F0AE">• Active land respiration.</text>
   </g>
   <g transform="translate(20, 550)">
@@ -306,32 +279,25 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">3-Chambered Heart Structure</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Right Auricle:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives deoxygenated blood from Sinus Venosus.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Left Auricle:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives oxygenated blood from lungs/skin.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Single Ventricle:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Muscular chamber pumping mixed blood.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sinus Venosus:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Triangular chamber receiving Vena Cavae.</text>
-
     <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Conus Arteriosus:</text>
     <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral trunk dividing into aortic arches.</text>
   </g>
   <g transform="translate(420, 65)">
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Portal Venous Circulation Systems</text>
-    
     <rect x="12" y="48" width="356" height="190" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
     <text x="22" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">1. Hepatic Portal System:</text>
     <text x="36" y="100" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Gut &amp; Intestine to Liver.</text>
     <text x="36" y="122" font-family="sans-serif" font-size="12.5" fill="#FFF">• Transports absorbed nutrients to liver</text>
     <text x="36" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">  before entering heart circulation.</text>
-
     <rect x="12" y="255" width="356" height="201" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
     <text x="22" y="280" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">2. Renal Portal System:</text>
     <text x="36" y="305" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Lower Body to Kidneys.</text>
@@ -367,27 +333,21 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Brain &amp; Spinal Cord Divisions</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Forebrain:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Olfactory lobes, Cerebrum, Diencephalon.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Midbrain:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of prominent Optic Lobes.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Hindbrain:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Cerebellum &amp; Medulla Oblongata.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Medulla Oblongata:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Passes through Foramen Magnum into</text>
     <text x="36" y="264" font-family="sans-serif" font-size="12.5" fill="#FFF">vertebral column as Spinal Cord.</text>
-
     <text x="22" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• 10 Pairs of Cranial Nerves present.</text>
   </g>
   <g transform="translate(420, 65)">
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#69F0AE" text-anchor="middle">10 Cranial Nerves List</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
-    
     <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">I. Olfactory (Sensory - Smell)</text>
     <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">II. Optic (Sensory - Vision)</text>
     <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">III. Oculomotor (Motor - Eye muscles)</text>
@@ -427,19 +387,14 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Male Organs &amp; Testes Anatomy</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Testes:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovoid yellowish organs attached to kidney.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mesorchium:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Double fold fold of peritoneum link.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Vasa Efferentia:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">10-12 ductules arising from testes.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Bidder's Canal:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Internal kidney canal receiving sperm.</text>
-
     <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Urinogenital Duct:</text>
     <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Carries urine &amp; sperms to Cloaca.</text>
   </g>
@@ -447,19 +402,14 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sperm Pathway Flowchart</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Testes (Sperm Production)</text>
     <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">10-12 Vasa Efferentia Ductules</text>
     <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Kidneys (Bidder's Canal)</text>
     <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Urinogenital Duct</text>
     <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca - Exterior Discharge</text>
   </g>
   <g transform="translate(20, 550)">
@@ -490,16 +440,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Female Organs &amp; Ovaries Anatomy</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Ovaries:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Large lobulated organs near kidneys.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• NO Connection with Kidneys:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovaries have NO link with kidneys!</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Oviducts:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Coiled tubes opening into Cloaca.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Egg Production:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Lays 2500-3000 ova at one time.</text>
   </g>
@@ -507,19 +453,14 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Ova Pathway &amp; External Fertilization</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Ovaries (Produce 2500-3000 Ova)</text>
     <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Coiled Oviducts (Separate opening)</text>
     <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
-    
     <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca</text>
     <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Spawning in Water)</text>
-    
     <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">External Fertilization in Water</text>
     <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Thyroxin driven)</text>
-    
     <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Tadpole Larva - Adult Frog</text>
   </g>
   <g transform="translate(20, 550)">
@@ -556,29 +497,22 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Acid-Soluble Pool (&lt;1000 Da)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Trichloroacetic Acid Extraction:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Tissue ground in Cl3CCOOH &amp; filtered.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Micromolecules Fraction:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Molecular weight: 18 to 800 Da.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Constituents:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Monosaccharides, Amino acids, Nucleotides.</text>
-
     <text x="22" y="235" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#69F0AE">• Represents cytoplasmic composition.</text>
   </g>
   <g transform="translate(420, 65)">
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Acid-Insoluble Retentate (&gt;10,000 Da)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Macromolecules Fraction:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Molecular weight: &gt;10,000 Da.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Constituents:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Proteins, Polysaccharides, Nucleic acids.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Lipid Exception (&lt;800 Da):</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Cell membrane fragments form vesicles</text>
     <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">retained in insoluble filterate.</text>
@@ -609,13 +543,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Monosaccharides &amp; Disaccharides</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Monosaccharides:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Glucose, Fructose, Ribose, Deoxyribose.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Disaccharides:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Sucrose, Maltose, Lactose.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Glycosidic Bond:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Covalent linkage formed by dehydration</text>
     <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">synthesis between monosaccharides.</text>
@@ -624,16 +555,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Polysaccharides Storage &amp; Structure</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Starch:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Plant helical storage polymer (Amylose).</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Glycogen:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Animal branched storage in liver/muscles.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Cellulose:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Unbranched structural polymer in plants.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Chitin:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">N-acetylglucosamine exoskeleton polymer.</text>
   </g>
@@ -666,13 +593,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Amino Acids &amp; Zwitterion Dipole</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• 20 Standard Amino Acids:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Substituted methanes with -NH2, -COOH, -R.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Zwitterion Form:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Dipolar ion with +NH3 &amp; -COO- at pI.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Peptide Bond:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Amide linkage (-CO-NH-) by dehydration.</text>
   </g>
@@ -680,16 +604,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">4 Structural Levels of Protein</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">1. Primary Structure:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Linear sequence of amino acids.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">2. Secondary Structure:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Alpha-helix &amp; Beta-pleated sheet.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">3. Tertiary Structure:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Overall 3D folding forming active site.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">4. Quaternary Structure:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Multi-subunit assembly (Hemoglobin).</text>
   </g>
@@ -724,13 +644,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Simple Lipids &amp; Fatty Acids</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Triglycerides:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">1 Glycerol + 3 Fatty Acids linked by ester.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Saturated Fatty Acids:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">No double bond (Palmitic acid 16C).</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Unsaturated Fatty Acids:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Double bonds present (Oleic acid).</text>
   </g>
@@ -738,10 +655,8 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Phospholipids &amp; Membrane Vesicles</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Lecithin:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Phospholipid framing cell membranes.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Membrane Vesicle Formation:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Lipids form vesicles during grinding,</text>
     <text x="36" y="164" font-family="sans-serif" font-size="12.5" fill="#FFF">staying in retentate despite low MW.</text>
@@ -774,16 +689,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">B-DNA Double Helix (Watson-Crick)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Strands:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Two antiparallel polynucleotide chains.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sugar:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">2'-Deoxyribose Pentose Sugar.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Nitrogenous Bases:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine = Thymine; Guanine ≡ Cytosine.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Helix Dimensions:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Pitch = 34 Å per turn; 10 bp/turn.</text>
   </g>
@@ -791,16 +702,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">RNA Single Strand Architecture</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Strand:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Single-stranded polynucleotide chain.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Sugar:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ribose Sugar (with 2'-OH group).</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Nitrogenous Bases:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine, Uracil, Guanine, Cytosine.</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Types:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">mRNA (messenger), tRNA, rRNA.</text>
   </g>
@@ -832,13 +739,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Primary Metabolites</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Definition:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Compounds with direct physiological roles.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Examples:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Glucose, Ribose, Amino Acids, Lipids.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Occurrence:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Universal across all living species.</text>
   </g>
@@ -846,7 +750,6 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Secondary Metabolites (NCERT Categories)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">• Alkaloids: Morphine, Codeine.</text>
     <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">• Lectins: Concanavalin A.</text>
     <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">• Drugs: Vinblastine, Curcumin.</text>
@@ -886,13 +789,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Active Site &amp; ES Complex</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Active Site Crevice:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">3D pocket formed by tertiary folding.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• ES Complex Formation:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Substrate (S) binds Active Site (E) ➔ ES.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Transition State:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Transient unstable state ➔ Product (P).</text>
   </g>
@@ -900,11 +800,9 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Lowering of Activation Energy (Ea)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Energy Barrier:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Minimum energy required to reach</text>
     <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">transition state from substrate state.</text>
-
     <text x="22" y="145" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Enzymatic Acceleration:</text>
     <text x="36" y="166" font-family="sans-serif" font-size="12.5" fill="#FFF">Enzyme LOWERS Activation Energy (Ea)</text>
     <text x="36" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">allowing rapid product formation!</text>
@@ -935,10 +833,8 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Michaelis-Menten Kinetics (Vmax &amp; Km)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Maximum Velocity (Vmax):</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Rate when all enzyme active sites saturated.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Michaelis Constant (Km):</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Substrate concentration at 1/2 Vmax.</text>
     <text x="36" y="164" font-family="sans-serif" font-size="12.5" fill="#FFF">Lower Km = Higher enzyme affinity!</text>
@@ -947,13 +843,10 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Competitive Inhibition (Malonate)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Structural Mimicry:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Malonate mimics Succinate substrate.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Enzyme Inhibited:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Succinic Dehydrogenase.</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Kinetic Effect:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Km INCREASES (lowers affinity);</text>
     <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">Vmax remains UNCHANGED!</text>
@@ -984,7 +877,6 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">6 IUBMB Enzyme Classes (OTH LIL)</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
-    
     <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">1. Oxidoreductases (Redox reactions)</text>
     <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">2. Transferases (Group transfer)</text>
     <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">3. Hydrolases (Hydrolysis cleavage)</text>
@@ -996,16 +888,12 @@ export const c11Zoo2HtmlOverview = `
     <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
     <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Holoenzyme = Apoenzyme + Co-factor</text>
     <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
-    
     <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Apoenzyme:</text>
     <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Protein part of enzyme.</text>
-
     <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Prosthetic Group:</text>
     <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Tightly bound organic co-factor (Heme).</text>
-
     <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Co-enzyme:</text>
     <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Transient organic co-factor (NAD, NADP).</text>
-
     <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Metal Ions:</text>
     <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Zinc for Carboxypeptidase.</text>
   </g>
@@ -1550,56 +1438,445 @@ export const c11Zoo2HtmlSolutions = `
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q56. Detail Frog External Morphology & Body Plan with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Streamlined head and trunk, moist slippery skin, nictitating eye membrane, tympanum, vocal sacs & nuptial pads in males.<br><br><div style='text-align: center; margin: 10px 0;'>${svg1}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q56: 3D External Morphology & Body Plan of Frog</p></div>
+      Streamlined head and trunk, moist slippery skin, nictitating eye membrane, tympanum, vocal sacs & nuptial pads in males.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad1)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow1)">External Morphology &amp; Body Plan of Frog (Rana tigrina)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Body Divisions &amp; Skin Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Streamlined Body Plan:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Divided into Head and Trunk.</text>
+    <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Neck &amp; Tail are completely absent.</text>
+    <text x="22" y="145" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Skin Adaptation:</text>
+    <text x="36" y="166" font-family="sans-serif" font-size="12.5" fill="#FFF">Smooth, moist, slippery skin with mucus.</text>
+    <text x="36" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">Dorsal olive green with dark spots;</text>
+    <text x="36" y="202" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral pale yellow.</text>
+    <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Water Absorption:</text>
+    <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#FFF">Absorbs water osmotically through skin.</text>
+    <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#FFF">Frogs NEVER drink water directly!</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sensory Organs &amp; Sexual Dimorphism</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Head Sensory Structures:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of nostrils above mouth.</text>
+    <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Bulged eyes with Nictitating Membrane.</text>
+    <text x="36" y="132" font-family="sans-serif" font-size="12.5" fill="#FFF">Membranous Tympanum behind eyes.</text>
+    <text x="22" y="165" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Limbs &amp; Webbed Feet:</text>
+    <text x="36" y="186" font-family="sans-serif" font-size="12.5" fill="#FFF">Forelimbs have 4 digits.</text>
+    <text x="36" y="204" font-family="sans-serif" font-size="12.5" fill="#FFF">Hindlimbs have 5 webbed digits.</text>
+    <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#69F0AE">• Male Specific Features:</text>
+    <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#69F0AE">1. Sound amplifying Vocal Sacs.</text>
+    <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#69F0AE">2. Nuptial Pad on 1st forelimb digit.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Morphology: Head + Trunk | Nictitating Eye | Tympanum | Males: Vocal Sac &amp; Nuptial Pad</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q56: 3D External Morphology & Body Plan of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q57. Detail Frog Digestive System architecture with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style='text-align: center; margin: 10px 0;'>${svg2}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q57: 3D Alimentary Canal & Digestive System of Frog</p></div>
+      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad2)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow2)">Alimentary Canal &amp; Digestive System Architecture of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Digestive Organs Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mouth &amp; Bifid Tongue:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Prey capture via muscular sticky tongue.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Esophagus &amp; Stomach:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">HCl &amp; Pepsin convert food to Chyme.</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Liver &amp; Gallbladder:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Secretes bile stored in Gallbladder.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pancreas:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Produces pancreatic digestive juice.</text>
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Small Intestine:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Villi &amp; microvilli absorb nutrients.</text>
+    <text x="22" y="325" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Rectum &amp; Cloaca:</text>
+    <text x="36" y="346" font-family="sans-serif" font-size="12.5" fill="#FFF">Fecal waste enters cloaca for expulsion.</text>
+    <text x="22" y="385" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#69F0AE">• Carnivorous Adaptation:</text>
+    <text x="36" y="405" font-family="sans-serif" font-size="12" fill="#69F0AE">Short alimentary canal length.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Digestion Flowchart</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Insects Captured by Bifid Tongue</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Pharynx - Esophagus - Stomach</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (HCl + Gastric Juice)</text>
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Chyme Formed in Stomach</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Bile + Pancreatic Juice)</text>
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Intestinal Absorption by Villi</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Rectum - Cloaca - Exterior</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Digestion: Bifid Tongue - Stomach Chyme - Bile &amp; Pancreas - Cloaca</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q57: 3D Alimentary Canal & Digestive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q58. Detail Frog Respiratory System (3 Modes) with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style='text-align: center; margin: 10px 0;'>${svg3}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q58: 3D Respiration Modes of Frog</p></div>
+      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad3)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow3)">Cutaneous, Buccopharyngeal &amp; Pulmonary Respiration Systems of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00B09B" text-anchor="middle">1. CUTANEOUS (SKIN)</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Moist, slippery skin</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Dissolved O2 diffuses</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">into cutaneous blood</text>
+    <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">capillaries directly.</text>
+    <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Operational Periods:</text>
+    <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">1. In water swimming.</text>
+    <text x="20" y="215" font-family="sans-serif" font-size="12" fill="#FFF">2. Hibernation (winter).</text>
+    <text x="20" y="235" font-family="sans-serif" font-size="12" fill="#FFF">3. Aestivation (summer).</text>
+    <text x="20" y="280" font-family="sans-serif" font-size="12" fill="#69F0AE">• Only respiration mode</text>
+    <text x="20" y="298" font-family="sans-serif" font-size="12" fill="#69F0AE">  during sleep states!</text>
+  </g>
+  <g transform="translate(267, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081" text-anchor="middle">2. BUCCOPHARYNGEAL</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Oral Mucosa Exchange</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Moist lining of buccal</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">cavity absorbs oxygen</text>
+    <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">on land environment.</text>
+    <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Mechanism:</text>
+    <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">Buccal floor moves up</text>
+    <text x="20" y="213" font-family="sans-serif" font-size="12" fill="#FFF">&amp; down drawing air</text>
+    <text x="20" y="231" font-family="sans-serif" font-size="12" fill="#FFF">through nostrils.</text>
+    <text x="20" y="270" font-family="sans-serif" font-size="12" fill="#69F0AE">• Glottis stays closed.</text>
+  </g>
+  <g transform="translate(534, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00E676" text-anchor="middle">3. PULMONARY (LUNGS)</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Pair of Pink Lungs</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Located in thorax.</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">Alveoli increase area.</text>
+    <text x="20" y="150" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Air Pathway:</text>
+    <text x="20" y="172" font-family="sans-serif" font-size="12" fill="#FFF">Nostrils - Buccal Cavity</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="12" fill="#FFF">- Glottis - Lungs.</text>
+    <text x="20" y="230" font-family="sans-serif" font-size="12" fill="#69F0AE">• Active land respiration.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">3 Respiration Modes: Cutaneous (Skin) | Buccopharyngeal (Oral) | Pulmonary (Lungs)</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q58: 3D Respiration Modes of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q59. Detail Frog Heart & Portal Circulation with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style='text-align: center; margin: 10px 0;'>${svg4}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q59: 3D Frog Heart & Portal Systems</p></div>
+      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow4">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad4)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow4)">3-Chambered Heart &amp; Circulatory Portal Systems (Hepatic &amp; Renal)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">3-Chambered Heart Structure</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Right Auricle:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives deoxygenated blood from Sinus Venosus.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Left Auricle:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives oxygenated blood from lungs/skin.</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Single Ventricle:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Muscular chamber pumping mixed blood.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sinus Venosus:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Triangular chamber receiving Vena Cavae.</text>
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Conus Arteriosus:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral trunk dividing into aortic arches.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Portal Venous Circulation Systems</text>
+    <rect x="12" y="48" width="356" height="190" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">1. Hepatic Portal System:</text>
+    <text x="36" y="100" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Gut &amp; Intestine to Liver.</text>
+    <text x="36" y="122" font-family="sans-serif" font-size="12.5" fill="#FFF">• Transports absorbed nutrients to liver</text>
+    <text x="36" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">  before entering heart circulation.</text>
+    <rect x="12" y="255" width="356" height="201" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="280" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">2. Renal Portal System:</text>
+    <text x="36" y="305" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Lower Body to Kidneys.</text>
+    <text x="36" y="327" font-family="sans-serif" font-size="12.5" fill="#FFF">• Routes hindlimb blood through kidneys</text>
+    <text x="36" y="345" font-family="sans-serif" font-size="12.5" fill="#FFF">  for waste filtration before heart.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Circulation: 2 Auricles + 1 Ventricle | Hepatic Portal System | Renal Portal System</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q59: 3D Frog Heart & Portal Systems</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q60. Detail Frog Nervous System & 10 Cranial Nerves with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Brain divisions + 10 pairs of cranial nerves.<br><br><div style='text-align: center; margin: 10px 0;'>${svg5}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q60: 3D Frog Nervous System & Cranial Nerves</p></div>
+      Brain divisions + 10 pairs of cranial nerves.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow5">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad5)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow5)">Nervous System Architecture &amp; 10 Cranial Nerves of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Brain &amp; Spinal Cord Divisions</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Forebrain:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Olfactory lobes, Cerebrum, Diencephalon.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Midbrain:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of prominent Optic Lobes.</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Hindbrain:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Cerebellum &amp; Medulla Oblongata.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Medulla Oblongata:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Passes through Foramen Magnum into</text>
+    <text x="36" y="264" font-family="sans-serif" font-size="12.5" fill="#FFF">vertebral column as Spinal Cord.</text>
+    <text x="22" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• 10 Pairs of Cranial Nerves present.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#69F0AE" text-anchor="middle">10 Cranial Nerves List</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
+    <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">I. Olfactory (Sensory - Smell)</text>
+    <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">II. Optic (Sensory - Vision)</text>
+    <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">III. Oculomotor (Motor - Eye muscles)</text>
+    <text x="22" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">IV. Trochlear (Motor - Eye oblique)</text>
+    <text x="22" y="162" font-family="sans-serif" font-size="12.5" fill="#FFF">V. Trigeminal (Mixed - Jaw &amp; Face)</text>
+    <text x="22" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">VI. Abducens (Motor - Eye rectus)</text>
+    <text x="22" y="206" font-family="sans-serif" font-size="12.5" fill="#FFF">VII. Facial (Mixed - Face &amp; Tongue)</text>
+    <text x="22" y="228" font-family="sans-serif" font-size="12.5" fill="#FFF">VIII. Auditory (Sensory - Balance/Hearing)</text>
+    <text x="22" y="250" font-family="sans-serif" font-size="12.5" fill="#FFF">IX. Glossopharyngeal (Mixed - Pharynx)</text>
+    <text x="22" y="272" font-family="sans-serif" font-size="12.5" fill="#FFF">X. Vagus (Mixed - Heart, Lungs, Viscera)</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Brain: Forebrain + Midbrain + Hindbrain | 10 Pairs of Cranial Nerves</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q60: 3D Frog Nervous System & Cranial Nerves</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q61. Detail Male Reproductive System of Frog with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style='text-align: center; margin: 10px 0;'>${svg6}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q61: 3D Male Reproductive System of Frog</p></div>
+      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow6">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad6)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow6)">Male Reproductive System Architecture of Male Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Male Organs &amp; Testes Anatomy</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Testes:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovoid yellowish organs attached to kidney.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mesorchium:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Double fold fold of peritoneum link.</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Vasa Efferentia:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">10-12 ductules arising from testes.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Bidder's Canal:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Internal kidney canal receiving sperm.</text>
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Urinogenital Duct:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Carries urine &amp; sperms to Cloaca.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sperm Pathway Flowchart</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Testes (Sperm Production)</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">10-12 Vasa Efferentia Ductules</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Kidneys (Bidder's Canal)</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Urinogenital Duct</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca - Exterior Discharge</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Male Frog: Testes - Mesorchium - Vasa Efferentia - Bidder's Canal - Cloaca</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q61: 3D Male Reproductive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q62. Detail Female Reproductive System of Frog with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style='text-align: center; margin: 10px 0;'>${svg7}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q62: 3D Female Reproductive System of Frog</p></div>
+      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow7">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad7)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow7)">Female Reproductive System Architecture of Female Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Female Organs &amp; Ovaries Anatomy</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Ovaries:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Large lobulated organs near kidneys.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• NO Connection with Kidneys:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovaries have NO link with kidneys!</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Oviducts:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Coiled tubes opening into Cloaca.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Egg Production:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Lays 2500-3000 ova at one time.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Ova Pathway &amp; External Fertilization</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Ovaries (Produce 2500-3000 Ova)</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Coiled Oviducts (Separate opening)</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Spawning in Water)</text>
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">External Fertilization in Water</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Thyroxin driven)</text>
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Tadpole Larva - Adult Frog</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Female Frog: Ovaries (No kidney link) - Coiled Oviducts - Cloaca - Water Fertilization</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q62: 3D Female Reproductive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
     <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q63. Detail DNA Double Helix vs RNA Structure with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style='text-align: center; margin: 10px 0;'>${svg12}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q63: 3D B-DNA Double Helix vs RNA Architecture</p></div>
+      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style='text-align: center; margin: 10px 0;'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow12">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad12)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow12)">B-DNA Double Helix vs RNA Single Strand Architecture</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">B-DNA Double Helix (Watson-Crick)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Strands:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Two antiparallel polynucleotide chains.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sugar:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">2'-Deoxyribose Pentose Sugar.</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Nitrogenous Bases:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine = Thymine; Guanine ≡ Cytosine.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Helix Dimensions:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Pitch = 34 Å per turn; 10 bp/turn.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">RNA Single Strand Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Strand:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Single-stranded polynucleotide chain.</text>
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Sugar:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ribose Sugar (with 2'-OH group).</text>
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Nitrogenous Bases:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine, Uracil, Guanine, Cytosine.</text>
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Types:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">mRNA (messenger), tRNA, rRNA.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">DNA: Deoxyribose + Thymine + Double Helix | RNA: Ribose + Uracil + Single Strand</text>
+  </g>
+</svg><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q63: 3D B-DNA Double Helix vs RNA Architecture</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
