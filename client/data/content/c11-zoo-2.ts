@@ -1,0 +1,1081 @@
+// Class 11 Zoology Chapter 2 - Structural Organisation and Animal Biomolecules (Frog Anatomy, Biomolecules, Metabolites & Enzymes)
+// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+
+export const c11Zoo2HtmlOverview = `
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+
+  <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
+  <div style="background: rgba(0, 176, 155, 0.05); border: 1.5px solid #00B09B; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #00B09B; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
+    <p class="text-center" style="color: #00B09B; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 2: Structural Organisation and Animal Biomolecules</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">1. Rana tigrina:</b> Indian bullfrog, a poikilothermic amphibious vertebrate belonging to class Amphibia.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">2. Cutaneous Respiration:</b> Gaseous exchange across moist, highly vascularized skin occurring in water and during aestivation/hibernation.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">3. Cloaca:</b> Common terminal chamber in frog receiving digestive waste, urine, and reproductive gametes.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">4. Portal System:</b> Specialized venous system (Hepatic &amp; Renal portal systems) carrying blood to liver/kidneys before heart.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">5. Biomolecules:</b> Organic carbon compounds synthesized by living cells including carbohydrates, proteins, lipids, and nucleic acids.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">6. Acid-Soluble Pool:</b> Filterate fraction (&lt;1000 Da) containing micromolecules like sugars, amino acids, and nucleotides.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">7. Glycosidic Bond:</b> Covalent bond connecting monosaccharide units formed by dehydration synthesis.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">8. Peptide Bond:</b> Amide linkage (-CO-NH-) connecting amino acids in a polypeptide chain.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">9. Zwitterion:</b> Dipolar amino acid form bearing equal positive (-NH3<sup>+</sup>) and negative (-COO<sup>-</sup>) charges at its isoelectric point.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">10. Collagen:</b> Triple-helical structural protein, the most abundant protein in the animal kingdom.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">11. Phosphodiester Bond:</b> Ester bond connecting 3'-OH of pentose sugar to 5'-phosphate of adjacent nucleotide in DNA/RNA.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">12. Primary Metabolites:</b> Directly vital metabolic compounds (sugars, amino acids, lipids) with identifiable physiological roles.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">13. Secondary Metabolites:</b> Plant/microbial by-products (alkaloids, rubber, lectins, drugs) providing ecological defense &amp; human utility.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">14. Active Site:</b> Specific 3D crevice on enzyme surface where substrate binds to undergo catalytic reaction.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">15. Activation Energy (Ea):</b> Minimum energy barrier required to transition substrate into reactive transition state, lowered by enzymes.
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">16. Competitive Inhibition:</b> Reversible enzyme inhibition where inhibitor structurally resembles substrate and competes for active site (e.g., Malonate).
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">17. Km (Michaelis Constant):</b> Substrate concentration at which reaction velocity reaches half of Vmax (1/2 Vmax).
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
+        <b style="color: #00B09B;">18. Holoenzyme:</b> Complete catalytically active enzyme complex consisting of Apoenzyme (protein part) and Co-factor (non-protein part).
+      </div>
+    </div>
+  </div>
+
+
+  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
+  <h2 style="color: #00B09B; margin-top: 10px; font-size: 20px; font-weight: bold;">Morphology, Anatomy and functions of digestive, circulatory, respiratory, nervous and reproductive systems of Frog.</h2>
+
+  <p>The Indian bullfrog (<b>Rana tigrina</b>) belongs to class Amphibia of phylum Chordata. Frogs are cold-blooded poikilotherms exhibiting camouflage (mimicry) to escape predators and undergo seasonal winter sleep (<b>Hibernation</b>) and summer sleep (<b>Aestivation</b>) to survive extreme temperatures.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) External Morphology &amp; Body Plan of Frog (Rana tigrina)</h3>
+  <p>• <b style="color: #00B09B;">Body Division:</b> Body is streamlined and divided into <b>Head</b> and <b>Trunk</b> (Neck and Tail are absent).<br>
+  • <b style="color: #00B09B;">Skin Architecture:</b> Smooth, moist, slippery skin covered with mucus. Olive green dorsal surface with dark irregular spots and pale yellow ventral surface. Skin absorbs water osmotically (frogs never drink water!).<br>
+  • <b style="color: #00B09B;">Head Organs:</b> Pair of nostrils above mouth; eyes are bulged and protected by a transparent <b>Nictitating Membrane</b> during underwater swimming. A membranous <b>Tympanum</b> behind eyes receives sound signals.<br>
+  • <b style="color: #00B09B;">Limbs &amp; Sexual Dimorphism:</b> Forelimbs end in 4 digits; muscular hindlimbs end in 5 webbed digits for swimming. Male frogs are distinguished by sound-amplifying <b>Vocal Sacs</b> under throat and a <b>Nuptial Pad</b> on the first digit of forelimbs during breeding season.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Digestive System of Frog</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzEiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQxKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxKSI+QWxpbWVudGFyeSBDYW5hbCAmYW1wOyBEaWdlc3RpdmUgU3lzdGVtIG9mIEZyb2cgKFJhbmEgdGlncmluYSk8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3RpdmUgT3JnYW5zIEFyY2hpdGVjdHVyZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE1vdXRoICZhbXA7IEJpZmlkIFRvbmd1ZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlByZXkgY2FwdHVyZSB2aWEgbXVzY3VsYXIgc3RpY2t5IHRvbmd1ZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBFc29waGFndXMgJmFtcDsgU3RvbWFjaDo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5IQ2wgJmFtcDsgUGVwc2luIGNvbnZlcnQgZm9vZCB0byBDaHltZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMaXZlciAmYW1wOyBHYWxsYmxhZGRlcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TZWNyZXRlcyBiaWxlIHN0b3JlZCBpbiBHYWxsYmxhZGRlci48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYW5jcmVhczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Qcm9kdWNlcyBwYW5jcmVhdGljIGRpZ2VzdGl2ZSBqdWljZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTbWFsbCBJbnRlc3RpbmU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+VmlsbGkgJmFtcDsgbWljcm92aWxsaSBhYnNvcmIgbnV0cmllbnRzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFJlY3R1bSAmYW1wOyBDbG9hY2E6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjM0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+RmVjYWwgd2FzdGUgZW50ZXJzIGNsb2FjYSBmb3IgZXhwdWxzaW9uLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENhcm5pdm9yb3VzIERpZXQgQWRhcHRhdGlvbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iNDA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+U2hvcnQgYWxpbWVudGFyeSBjYW5hbCBzdHJ1Y3R1cmUuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3Rpb24gRmxvd2NoYXJ0PC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5JbnNlY3RzIENhcHR1cmVkIGJ5IEJpZmlkIFRvbmd1ZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+UGhhcnlueCAtIEVzb3BoYWd1cyAtIFN0b21hY2g8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoSENsICsgR2FzdHJpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DaHltZSBGb3JtZWQgaW4gU3RvbWFjaDwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTIChCaWxlICsgUGFuY3JlYXRpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5JbnRlc3RpbmFsIEFic29ycHRpb24gYnkgVmlsbGk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlJlY3R1bSAtIENsb2FjYSAtIEV4dGVyaW9yPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Gcm9nIERpZ2VzdGlvbjogQmlmaWQgVG9uZ3VlIC0gU3RvbWFjaCBDaHltZSAtIEJpbGUgJmFtcDsgUGFuY3JlYXMgLSBDbG9hY2E8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Digestive System" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.1: 3D Alimentary Canal &amp; Digestive System Architecture of Frog (Rana tigrina)</p></div>
+  <p>• <b style="color: #00B09B;">Alimentary Canal:</b> Short complete tract (carnivorous adaptation). Food (insects) captured by bilobed bifid tongue.<br>
+  • <b style="color: #00B09B;">Digestion Process:</b> Stomach secretes HCl and gastric juices converting food to chyme. Liver secretes bile stored in <b>Gallbladder</b> to emulsify fats. Pancreas produces pancreatic juice containing digestive enzymes. Digested food absorbed by microvilli in intestine. Waste passes into <b>Cloaca</b>.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) Respiratory System of Frog (3 Modes)</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzIiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQyKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cyKSI+Q3V0YW5lb3VzLCBCdWNjb3BoYXJ5bmdlYWwgJmFtcDsgUHVsbW9uYXJ5IFJlc3BpcmF0aW9uIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBDVVRBTkVPVVMgKFNLSU4pPC90ZXh0PgogICAgPHJlY3QgeD0iMTAiIHk9IjQ4IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjQwOCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPuKAoiBNb2lzdCwgc2xpcHBlcnkgc2tpbjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSI5OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkRpc3NvbHZlZCBPMiBkaWZmdXNlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5pbnRvIGN1dGFuZW91cyBibG9vZDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXBpbGxhcmllcyBkaXJlY3RseS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIE9wZXJhdGlvbmFsIFBlcmlvZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPjEuIEluIHdhdGVyIHN3aW1taW5nLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj4yLiBIaWJlcm5hdGlvbiAod2ludGVyKS48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+My4gQWVzdGl2YXRpb24gKHN1bW1lcikuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIE9ubHkgcmVzcGlyYXRpb24gbW9kZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj4gIGR1cmluZyBzbGVlcCBzdGF0ZXMhPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBCVUNDT1BIQVJZTkdFQUw8L3RleHQ+CiAgICA8cmVjdCB4PSIxMCIgeT0iNDgiIHdpZHRoPSIyMjYiIGhlaWdodD0iNDA4IiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE9yYWwgTXVjb3NhIEV4Y2hhbmdlPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TW9pc3QgbGluaW5nIG9mIGJ1Y2NhbDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXZpdHkgYWJzb3JicyBveHlnZW48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+b24gbGFuZCBlbnZpcm9ubWVudC48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE1lY2hhbmlzbTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+QnVjY2FsIGZsb29yIG1vdmVzIHVwPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjIxMyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPiZhbXA7IGRvd24gZHJhd2luZyBhaXI8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+dGhyb3VnaCBub3N0cmlscy48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj7igKIgR2xvdHRpcyBzdGF5cyBjbG9zZWQuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzQsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLiBQVUxNT05BUlkgKExVTkdTKTwvdGV4dD4KICAgIDxyZWN0IHg9IjEwIiB5PSI0OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MDgiIHJ4PSI4IiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgUGFpciBvZiBQaW5rIEx1bmdzPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TG9jYXRlZCBpbiB0aG9yYXguPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjExNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkFsdmVvbGkgaW5jcmVhc2UgYXJlYS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEFpciBQYXRod2F5OjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5Ob3N0cmlscyAtIEJ1Y2NhbCBDYXZpdHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+LSBHbG90dGlzIC0gTHVuZ3MuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIEFjdGl2ZSBsYW5kIHJlc3BpcmF0aW9uLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MyBSZXNwaXJhdGlvbiBNb2RlczogQ3V0YW5lb3VzIChTa2luKSB8IEJ1Y2NvcGhhcnluZ2VhbCAoT3JhbCkgfCBQdWxtb25hcnkgKEx1bmdzKTwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Respiratory Modes" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.2: 3D Cutaneous, Buccopharyngeal &amp; Pulmonary Respiration Systems of Frog</p></div>
+  <p>• <b style="color: #00B09B;">1. Cutaneous Respiration:</b> Gaseous exchange across moist vascular skin occurring in water, hibernation, and aestivation.<br>
+  • <b style="color: #00B09B;">2. Buccopharyngeal Respiration:</b> Exchange across moist lining of buccal cavity on land.<br>
+  • <b style="color: #00B09B;">3. Pulmonary Respiration:</b> Lungs (pair of elongated pink sac-like structures) used on land. Air enters nostrils ➔ buccal cavity ➔ lungs.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iv) Circulatory System &amp; Portal Systems of Frog</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzMiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQzKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3czKSI+My1DaGFtYmVyZWQgSGVhcnQgJmFtcDsgQ2lyY3VsYXRvcnkgUG9ydGFsIFN5c3RlbSBvZiBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My1DaGFtYmVyZWQgSGVhcnQgU3RydWN0dXJlPC90ZXh0PgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjQwOCIgcng9IjEwIiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBSaWdodCBBdXJpY2xlOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgZGVveHlnZW5hdGVkIGJsb29kIGZyb20gU2ludXMgVmVub3N1cy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMZWZ0IEF1cmljbGU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgb3h5Z2VuYXRlZCBibG9vZCBmcm9tIGx1bmdzL3NraW4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2luZ2xlIFZlbnRyaWNsZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5NdXNjdWxhciBjaGFtYmVyIHB1bXBpbmcgbWl4ZWQgYmxvb2QuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2ludXMgVmVub3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ucmlhbmd1bGFyIGNoYW1iZXIgcmVjZWl2aW5nIFZlbmEgQ2F2YWUuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgQ29udXMgQXJ0ZXJpb3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WZW50cmFsIHRydW5rIGRpdmlkaW5nIGludG8gYW9ydGljIGFyY2hlcy48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvcnRhbCBWZW5vdXMgQ2lyY3VsYXRpb24gU3lzdGVtczwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjE5MCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4xLiBIZXBhdGljIFBvcnRhbCBTeXN0ZW06PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIENvbm5lY3RzIEd1dCAmYW1wOyBJbnRlc3RpbmUgdG8gTGl2ZXIuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFRyYW5zcG9ydHMgYWJzb3JiZWQgbnV0cmllbnRzIHRvIGxpdmVyPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+ICBiZWZvcmUgZW50ZXJpbmcgaGVhcnQgY2lyY3VsYXRpb24uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIyNTUiIHdpZHRoPSIzNTYiIGhlaWdodD0iMjAxIiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4yLiBSZW5hbCBQb3J0YWwgU3lzdGVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIzMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPuKAoiBDb25uZWN0cyBMb3dlciBCb2R5IHRvIEtpZG5leXMuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjMyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFJvdXRlcyBoaW5kbGltYiBibG9vZCB0aHJvdWdoIGtpZG5leXM8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMzQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4gIGZvciB3YXN0ZSBmaWx0cmF0aW9uIGJlZm9yZSBoZWFydC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZyb2cgQ2lyY3VsYXRpb246IDIgQXVyaWNsZXMgKyAxIFZlbnRyaWNsZSB8IEhlcGF0aWMgUG9ydGFsIFN5c3RlbSB8IFJlbmFsIFBvcnRhbCBTeXN0ZW08L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Heart & Portal Systems" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.3: 3D 3-Chambered Heart &amp; Circulatory Portal Systems (Hepatic &amp; Renal) of Frog</p></div>
+  <p>• <b style="color: #00B09B;">Heart Architecture:</b> 3-chambered heart consisting of 2 Auricles and 1 Ventricle covered by pericardium. Triangular <b>Sinus Venosus</b> joins right auricle receiving deoxygenated blood from vena cava. Ventricle opens into <b>Conus Arteriosus</b> on ventral side.<br>
+  • <b style="color: #00B09B;">Portal Systems:</b> Features specialized <b>Hepatic Portal System</b> (gut to liver) and <b>Renal Portal System</b> (lower body to kidneys).<br>
+  • <b style="color: #00B09B;">Blood Composition:</b> RBCs are nucleated, oval, and contain hemoglobin.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(v) Nervous System &amp; 10 Cranial Nerves of Frog</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzQiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ0KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c0KSI+TmVydm91cyBTeXN0ZW0gQXJjaGl0ZWN0dXJlICZhbXA7IDEwIENyYW5pYWwgTmVydmVzIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CcmFpbiAmYW1wOyBTcGluYWwgQ29yZCBEaXZpc2lvbnM8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEZvcmVicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk9sZmFjdG9yeSBsb2JlcywgQ2VyZWJydW0sIERpZW5jZXBoYWxvbi48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNaWRicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYWlyIG9mIHByb21pbmVudCBPcHRpYyBMb2Jlcy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIaW5kYnJhaW46PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2VyZWJlbGx1bSAmYW1wOyBNZWR1bGxhIE9ibG9uZ2F0YS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZWR1bGxhIE9ibG9uZ2F0YTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYXNzZXMgdGhyb3VnaCBGb3JhbWVuIE1hZ251bSBpbnRvPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI2NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+dmVydGVicmFsIGNvbHVtbiBhcyBTcGluYWwgQ29yZC48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgMTAgUGFpcnMgb2YgQ3JhbmlhbCBOZXJ2ZXMgcHJlc2VudC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIENyYW5pYWwgTmVydmVzIExpc3Q8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JLiBPbGZhY3RvcnkgKFNlbnNvcnkgLSBTbWVsbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklJLiBPcHRpYyAoU2Vuc29yeSAtIFZpc2lvbik8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JSUkuIE9jdWxvbW90b3IgKE1vdG9yIC0gRXllIG11c2NsZXMpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SVYuIFRyb2NobGVhciAoTW90b3IgLSBFeWUgb2JsaXF1ZSk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WLiBUcmlnZW1pbmFsIChNaXhlZCAtIEphdyAmYW1wOyBGYWNlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJLiBBYmR1Y2VucyAoTW90b3IgLSBFeWUgcmVjdHVzKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSS4gRmFjaWFsIChNaXhlZCAtIEZhY2UgJmFtcDsgVG9uZ3VlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSUkuIEF1ZGl0b3J5IChTZW5zb3J5IC0gQmFsYW5jZS9IZWFyaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklYLiBHbG9zc29waGFyeW5nZWFsIChNaXhlZCAtIFBoYXJ5bngpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjI3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+WC4gVmFndXMgKE1peGVkIC0gSGVhcnQsIEx1bmdzLCBWaXNjZXJhKTwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJvZyBCcmFpbjogRm9yZWJyYWluICsgTWlkYnJhaW4gKyBIaW5kYnJhaW4gfCAxMCBQYWlycyBvZiBDcmFuaWFsIE5lcnZlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Nervous System" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.4: 3D Brain Architecture &amp; 10 Cranial Nerves of Frog</p></div>
+  <p>• <b style="color: #00B09B;">Central Nervous System:</b> Brain enclosed in cranium and Spinal Cord. Brain divided into <b>Forebrain</b> (Olfactory lobes, Cerebral hemispheres, Diencephalon), <b>Midbrain</b> (Optic lobes), and <b>Hindbrain</b> (Cerebellum, Medulla oblongata). Medulla passes through foramen magnum into spinal cord.<br>
+  • <b style="color: #00B09B;">Cranial Nerves:</b> Features <b style="color: #00B09B;">10 Pairs of Cranial Nerves</b> arising from the brain.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vi) Male Reproductive System of Frog</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ1KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c1KSI+TWFsZSBSZXByb2R1Y3RpdmUgU3lzdGVtIEFyY2hpdGVjdHVyZSBvZiBNYWxlIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWxlIE9yZ2FucyAmYW1wOyBUZXN0ZXMgQW5hdG9teTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgUGFpciBvZiBUZXN0ZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Pdm9pZCB5ZWxsb3dpc2ggb3JnYW5zIGF0dGFjaGVkIHRvIGtpZG5leS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZXNvcmNoaXVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkRvdWJsZSBmb2xkIGZvbGQgb2YgcGVyaXRvbmV1bSBsaW5rLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFZhc2EgRWZmZXJlbnRpYTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4xMC0xMiBkdWN0dWxlcyBhcmlzaW5nIGZyb20gdGVzdGVzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEJpZGRlcidzIENhbmFsOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkludGVybmFsIGtpZG5leSBjYW5hbCByZWNlaXZpbmcgc3Blcm0uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgVXJpbm9nZW5pdGFsIER1Y3Q6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2FycmllcyB1cmluZSAmYW1wOyBzcGVybXMgdG8gQ2xvYWNhLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3Blcm0gUGF0aHdheSBGbG93Y2hhcnQ8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+VGVzdGVzIChTcGVybSBQcm9kdWN0aW9uKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+MTAtMTIgVmFzYSBFZmZlcmVudGlhIER1Y3R1bGVzPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5LaWRuZXlzIChCaWRkZXIncyBDYW5hbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPlVyaW5vZ2VuaXRhbCBEdWN0PC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DbG9hY2EgLSBFeHRlcmlvciBEaXNjaGFyZ2U8L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbGUgRnJvZzogVGVzdGVzIC0gTWVzb3JjaGl1bSAtIFZhc2EgRWZmZXJlbnRpYSAtIEJpZGRlcidzIENhbmFsIC0gQ2xvYWNhPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Male Reproductive System of Frog" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.5: 3D Male Reproductive System Architecture of Male Frog (Testes, Vasa Efferentia &amp; Bidder's Canal)</p></div>
+  <p>• <b style="color: #00B09B;">Male Organs:</b> Pair of yellowish ovoid <b>Testes</b> adhered to upper kidneys by double fold of peritoneum called <b>Mesorchium</b>.<br>
+  • <b style="color: #00B09B;">Bidder's Canal:</b> 10-12 <b>Vasa Efferentia</b> arise from testes, enter kidneys, and open into <b style="color: #00B09B;">Bidder's Canal</b>. Urinogenital duct opens into cloaca.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vii) Female Reproductive System &amp; Metamorphosis of Frog</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzYiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ2KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c2KSI+RmVtYWxlIFJlcHJvZHVjdGl2ZSBTeXN0ZW0gQXJjaGl0ZWN0dXJlIG9mIEZlbWFsZSBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RmVtYWxlIE9yZ2FucyAmYW1wOyBPdmFyaWVzIEFuYXRvbXk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFBhaXIgb2YgT3Zhcmllczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxhcmdlIGxvYnVsYXRlZCBvcmdhbnMgbmVhciBraWRuZXlzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5PIENvbm5lY3Rpb24gd2l0aCBLaWRuZXlzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk92YXJpZXMgaGF2ZSBOTyBsaW5rIHdpdGgga2lkbmV5cyE8L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYWlyIG9mIE92aWR1Y3RzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkNvaWxlZCB0dWJlcyBvcGVuaW5nIGludG8gQ2xvYWNhLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEVnZyBQcm9kdWN0aW9uOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxheXMgMjUwMC0zMDAwIG92YSBhdCBvbmUgdGltZS48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk92YSBQYXRod2F5ICZhbXA7IEV4dGVybmFsIEZlcnRpbGl6YXRpb248L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+T3ZhcmllcyAoUHJvZHVjZSAyNTAwLTMwMDAgT3ZhKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+Q29pbGVkIE92aWR1Y3RzIChTZXBhcmF0ZSBvcGVuaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+Q2xvYWNhPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpMgKFNwYXduaW5nIGluIFdhdGVyKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPkV4dGVybmFsIEZlcnRpbGl6YXRpb24gaW4gV2F0ZXI8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoVGh5cm94aW4gZHJpdmVuKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlRhZHBvbGUgTGFydmEgLSBBZHVsdCBGcm9nPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GZW1hbGUgRnJvZzogT3ZhcmllcyAoTm8ga2lkbmV5IGxpbmspIC0gQ29pbGVkIE92aWR1Y3RzIC0gQ2xvYWNhIC0gV2F0ZXIgRmVydGlsaXphdGlvbjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Female Reproductive System of Frog" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.6: 3D Female Reproductive System Architecture of Female Frog (Ovaries, Oviducts &amp; Cloaca)</p></div>
+  <p>• <b style="color: #00B09B;">Female Organs:</b> Pair of large <b>Ovaries</b> situated near kidneys (no functional connection with kidneys). Oviducts open separately into cloaca. Female lays 2500-3000 ova at a time.<br>
+  • <b style="color: #00B09B;">Fertilization &amp; Metamorphosis:</b> External fertilization in water. Development involves ciliated aquatic <b>Tadpole Larva</b> undergoing thyroxin-driven metamorphosis into adult frog.</p>
+
+
+  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
+  <h2 style="color: #00B09B; margin-top: 30px; font-size: 20px; font-weight: bold;">Basic chemical constituents of living bodies; Bio-molecules: Structure and function of Carbohydrates, proteins, lipids and Nucleic acids; Primary and secondary metabolites.</h2>
+
+  <p>All living organisms are composed of organic chemical compounds termed <b>Biomolecules</b>. Chemical analysis of living tissue (grinding liver/plant tissue in Trichloroacetic acid Cl3CCOOH and filtering through cheesecloth) separates cellular compounds into two fractions: <b>Acid-Soluble Pool</b> (micromolecules, &lt;1000 Da) and <b>Acid-Insoluble Retentate</b> (macromolecules, &gt;10,000 Da).</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Structure and Function of Nucleic Acids (DNA &amp; RNA)</h3>
+  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMTAiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGYwNTFjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1MDIwYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9Imdsb3cxMCI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBCMDlCIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjYyMCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEwKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxMCkiPkItRE5BIERvdWJsZSBIZWxpeCB2cyBSTkEgU2luZ2xlIFN0cmFuZCBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CLUROQSBEb3VibGUgSGVsaXggKFdhdHNvbi1Dcmljayk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFN0cmFuZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ud28gYW50aXBhcmFsbGVsIHBvbHludWNsZW90aWRlIGNoYWlucy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTdWdhcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yJy1EZW94eXJpYm9zZSBQZW50b3NlIFN1Z2FyLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5pdHJvZ2Vub3VzIEJhc2VzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkFkZW5pbmUgPSBUaHltaW5lOyBHdWFuaW5lIOKJoSBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIZWxpeCBEaW1lbnNpb25zOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlBpdGNoID0gMzQgw4UgcGVyIHR1cm47IDEwIGJwL3R1cm4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgRnVuY3Rpb246IFN0YWJsZSBnZW5ldGljIGJsdWVwcmludC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJOQSBTaW5nbGUgU3RyYW5kIEFyY2hpdGVjdHVyZTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgU3RyYW5kOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+U2luZ2xlLXN0cmFuZGVkIHBvbHludWNsZW90aWRlIGNoYWluLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+4oCiIFN1Z2FyOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlJpYm9zZSBTdWdhciAod2l0aCAyJy1PSCBncm91cCkuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgTml0cm9nZW5vdXMgQmFzZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QWRlbmluZSwgVXJhY2lsLCBHdWFuaW5lLCBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPuKAoiBUeXBlczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5tUk5BIChtZXNzZW5nZXIpLCB0Uk5BLCByUk5BLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEZ1bmN0aW9uOiBUcmFuc2xhdGlvbiAmYW1wOyBSaWJvenltZXMuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ETkE6IERlb3h5cmlib3NlICsgVGh5bWluZSArIERvdWJsZSBIZWxpeCB8IFJOQTogUmlib3NlICsgVXJhY2lsICsgU2luZ2xlIFN0cmFuZDwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D DNA vs RNA Structure" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.7: 3D B-DNA Double Helix (Watson-Crick Model) vs Single-Stranded RNA Structure</p></div>
+  <p>• <b style="color: #00B09B;">4. Nucleic Acids Structure:</b> High molecular weight polymers composed of <b>Nucleotides</b>. Each nucleotide contains: 1. Nitrogenous Base (Purines: Adenine, Guanine; Pyrimidines: Cytosine, Thymine, Uracil), 2. Pentose Sugar (Ribose / Deoxyribose), 3. Phosphate group.<br>
+  • <b style="color: #00B09B;">B-DNA Double Helix vs RNA:</b> Nucleotides linked by <b style="color: #00B09B;">3'-5' Phosphodiester Bonds</b>. <b>B-DNA Double Helix</b> (Watson &amp; Crick model) features antiparallel strands with 34 Å pitch (10 base pairs per turn, 3.4 Å spacing). RNA is single-stranded containing Uracil instead of Thymine.</p>
+
+
+  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
+  <h2 style="color: #00B09B; margin-top: 30px; font-size: 20px; font-weight: bold;">Enzymes: Types, Properties and functions</h2>
+
+  <p>Enzymes are protein biocatalysts that accelerate chemical reactions by lowering activation energy barriers.</p>
+
+
+  <!-- BOTTOM CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.15), rgba(150, 201, 61, 0.15)); border: 1.5px solid #00B09B; border-radius: 10px; padding: 16px; margin-top: 25px;">
+    <h3 style="color: #00B09B; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 2 Frog Anatomy &amp; Biomolecules Cheat Sheet</h3>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
+      <li><b style="color: #00B09B;">Frog Anatomy:</b> 3-chambered heart (2A + 1V) | 3 Respiration modes (Cutaneous, Buccal, Pulmonary) | 10 Cranial Nerves | Bidder's Canal in male kidney.</li>
+      <li><b style="color: #00B09B;">Biomolecules Bonds:</b> Carbohydrates = Glycosidic | Proteins = Peptide | Lipids = Ester | DNA/RNA = Phosphodiester.</li>
+      <li><b style="color: #00B09B;">Abundant Proteins:</b> Collagen (Animals) | RuBisCO (Entire Biosphere).</li>
+      <li><b style="color: #00B09B;">Secondary Metabolites:</b> Lectins (Concanavalin A) | Drugs (Vinblastine, Curcumin) | Toxins (Abrin, Ricin) | Polymeric (Rubber).</li>
+      <li><b style="color: #00B09B;">Enzymes:</b> Lowers Activation Energy | Malonate inhibits Succinic Dehydrogenase | 6 Classes (OTH LIL) | Apoenzyme + Co-factor = Holoenzyme.</li>
+    </ul>
+  </div>
+
+</div>
+`;
+
+export const c11Zoo2HtmlSolutions = `
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+
+  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions) -->
+  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
+    <p style="color: #00B09B; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Biomolecule/Anatomy Identification)</p>
+  </div>
+
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q1. Respiration across moist skin occurring during frog hibernation and aestivation is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Pulmonary Respiration &nbsp;&nbsp;&nbsp;&nbsp; (B) Cutaneous Respiration<br>
+      (C) Buccopharyngeal Respiration &nbsp;&nbsp;&nbsp;&nbsp; (D) Branchial Respiration
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Cutaneous Respiration</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Moist vascular skin performs cutaneous gaseous exchange during hibernation and aestivation.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q2. The number of heart chambers in Frog (Rana tigrina) is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) 2 &nbsp;&nbsp;&nbsp;&nbsp; (B) 3<br>
+      (C) 4 &nbsp;&nbsp;&nbsp;&nbsp; (D) 1
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) 3</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Amphibians possess a 3-chambered heart consisting of 2 auricles and 1 ventricle.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q3. In male frogs, Bidder's canal is situated inside the:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Liver &nbsp;&nbsp;&nbsp;&nbsp; (B) Kidney<br>
+      (C) Testis &nbsp;&nbsp;&nbsp;&nbsp; (D) Spleen
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Kidney</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Bidder's canal passes through the kidney in male frogs receiving vasa efferentia.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q4. How many pairs of cranial nerves are present in Frog?</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) 8 Pairs &nbsp;&nbsp;&nbsp;&nbsp; (B) 10 Pairs<br>
+      (C) 12 Pairs &nbsp;&nbsp;&nbsp;&nbsp; (D) 14 Pairs
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) 10 Pairs</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Amphibians possess 10 pairs of cranial nerves.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q5. The bond connecting adjacent monosaccharide units in polysaccharides is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Peptide Bond &nbsp;&nbsp;&nbsp;&nbsp; (B) Glycosidic Bond<br>
+      (C) Phosphodiester Bond &nbsp;&nbsp;&nbsp;&nbsp; (D) Ester Bond
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Glycosidic Bond</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Monosaccharides are joined by glycosidic bonds formed via dehydration synthesis.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q6. The most abundant protein in the animal kingdom is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) RuBisCO &nbsp;&nbsp;&nbsp;&nbsp; (B) Collagen<br>
+      (C) Hemoglobin &nbsp;&nbsp;&nbsp;&nbsp; (D) Keratin
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Collagen</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Collagen is the most abundant structural protein in the animal world.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q7. The most abundant protein in the entire biosphere is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Collagen &nbsp;&nbsp;&nbsp;&nbsp; (B) RuBisCO<br>
+      (C) Myosin &nbsp;&nbsp;&nbsp;&nbsp; (D) Fibroin
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) RuBisCO</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> RuBisCO enzyme is the most abundant protein in the whole biosphere.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q8. A lecithin molecule is chemically classified as a:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Simple Lipochyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Phospholipid<br>
+      (C) Glycoprotein &nbsp;&nbsp;&nbsp;&nbsp; (D) Steroid
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Phospholipid</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Lecithin is a phospholipid containing a phosphate group in cell membranes.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q9. Amino acids exist as dipolar zwitterions at their:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Boiling Point &nbsp;&nbsp;&nbsp;&nbsp; (B) Isoelectric Point<br>
+      (C) Melting Point &nbsp;&nbsp;&nbsp;&nbsp; (D) Saturation Point
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Isoelectric Point</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At isoelectric pH, amino acids bear equal positive and negative charges forming zwitterions.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q10. Which secondary metabolite is classified as a Lectin?</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Morphine &nbsp;&nbsp;&nbsp;&nbsp; (B) Concanavalin A<br>
+      (C) Vinblastine &nbsp;&nbsp;&nbsp;&nbsp; (D) Ricin
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Concanavalin A</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Concanavalin A is a specialized carbohydrate-binding plant lectin.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q11. An anti-cancer drug obtained as a secondary metabolite is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Abruptin &nbsp;&nbsp;&nbsp;&nbsp; (B) Vinblastine<br>
+      (C) Codeine &nbsp;&nbsp;&nbsp;&nbsp; (D) Glutamate
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Vinblastine</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Vinblastine is an anti-cancer drug isolated from Catharanthus roseus.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q12. Enzymes accelerate reaction rates by:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Increasing Activation Energy &nbsp;&nbsp;&nbsp;&nbsp; (B) Lowering Activation Energy<br>
+      (C) Changing Equilibrium Constant &nbsp;&nbsp;&nbsp;&nbsp; (D) Consuming Substrate
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Lowering Activation Energy</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Enzymes lower the activation energy barrier required to reach the transition state.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q13. Malonate structurally resembles succinate and competitively inhibits:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Succinic Dehydrogenase &nbsp;&nbsp;&nbsp;&nbsp; (B) Pyruvate Kinase<br>
+      (C) Amylase &nbsp;&nbsp;&nbsp;&nbsp; (D) DNA Polymerase
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (A) Succinic Dehydrogenase</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Malonate is a classic competitive inhibitor of succinic dehydrogenase.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q14. Competitive inhibition affects enzyme kinetics by:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Decreasing Vmax &nbsp;&nbsp;&nbsp;&nbsp; (B) Increasing Km while Vmax remains unchanged<br>
+      (C) Decreasing Km &nbsp;&nbsp;&nbsp;&nbsp; (D) Destroying Apoenzyme
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Increasing Km while Vmax remains unchanged</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Competitive inhibitors increase Km (lower affinity) without altering Vmax.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q15. The protein part of a holoenzyme is termed the:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Co-enzyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Apoenzyme<br>
+      (C) Prosthetic Group &nbsp;&nbsp;&nbsp;&nbsp; (D) Zymogen
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Apoenzyme</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> The protein component of a conjugated enzyme complex is the apoenzyme.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q16. A tightly bound organic co-factor permanently attached to an apoenzyme is a:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Co-enzyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Prosthetic Group<br>
+      (C) Metal Ion &nbsp;&nbsp;&nbsp;&nbsp; (D) Isozyme
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Prosthetic Group</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Prosthetic groups (e.g. Heme) are tightly bound non-protein organic co-factors.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q17. Co-factor required for the activity of Carboxypeptidase is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Zinc &nbsp;&nbsp;&nbsp;&nbsp; (B) Iron<br>
+      (C) Magnesium &nbsp;&nbsp;&nbsp;&nbsp; (D) Copper
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (A) Zinc</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Zinc metal ion acts as an essential co-factor for carboxypeptidase.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q18. Pyrimidines present in DNA double helix are:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Adenine and Guanine &nbsp;&nbsp;&nbsp;&nbsp; (B) Cytosine and Thymine<br>
+      (C) Cytosine and Uracil &nbsp;&nbsp;&nbsp;&nbsp; (D) Thymine and Uracil
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Cytosine and Thymine</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> DNA contains cytosine and thymine pyrimidines (RNA has uracil instead of thymine).</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q19. According to B-DNA double helix model, pitch of DNA per turn is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) 3.4 Å &nbsp;&nbsp;&nbsp;&nbsp; (B) 34 Å<br>
+      (C) 20 Å &nbsp;&nbsp;&nbsp;&nbsp; (D) 340 Å
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) 34 Å</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> B-DNA features a 34 Å pitch per 360-degree turn containing 10 base pairs.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q20. Trichloroacetic acid (Cl3CCOOH) treatment separates living tissue into:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Acid-soluble pool and Acid-insoluble retentate &nbsp;&nbsp;&nbsp;&nbsp; (B) Only proteins and fats<br>
+      (C) Only water and gas &nbsp;&nbsp;&nbsp;&nbsp; (D) Cell wall and nucleus
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (A) Acid-soluble pool and Acid-insoluble retentate</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Cl3CCOOH filtration divides tissue into acid-soluble pool and insoluble retentate.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q21. Which of the following is a non-reducing disaccharide sugar?</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Glucose &nbsp;&nbsp;&nbsp;&nbsp; (B) Maltose<br>
+      (C) Lactose &nbsp;&nbsp;&nbsp;&nbsp; (D) Sucrose
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (D) Sucrose</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Sucrose lacks free reducing aldehyde/ketone groups, making it a non-reducing sugar.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q22. Structure of protein representing overall 3D folding essential for enzyme activity is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Primary Structure &nbsp;&nbsp;&nbsp;&nbsp; (B) Secondary Structure<br>
+      (C) Tertiary Structure &nbsp;&nbsp;&nbsp;&nbsp; (D) Quaternary Structure
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (C) Tertiary Structure</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Tertiary structure forms 3D crevices creating active sites necessary for catalysis.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q23. Alimentary canal in Frog is short because frogs are:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Herbivorous &nbsp;&nbsp;&nbsp;&nbsp; (B) Carnivorous<br>
+      (C) Omnivorous &nbsp;&nbsp;&nbsp;&nbsp; (D) Sanguinivorous
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Carnivorous</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Carnivores have shorter digestive tracts as meat is easier to digest than cellulose.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q24. Vasa efferentia in male frogs open into which canal inside kidney?</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Inguinal Canal &nbsp;&nbsp;&nbsp;&nbsp; (B) Bidder's Canal<br>
+      (C) Central Canal &nbsp;&nbsp;&nbsp;&nbsp; (D) Haversian Canal
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (B) Bidder's Canal</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Vasa efferentia enter kidney and open into Bidder's canal.</span>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q25. Enzyme class catalyzing linkage of two compounds utilizing ATP is:</b></p>
+    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
+      (A) Hydrolases &nbsp;&nbsp;&nbsp;&nbsp; (B) Lyases<br>
+      (C) Ligases &nbsp;&nbsp;&nbsp;&nbsp; (D) Isomerases
+    </div>
+    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
+      <b style="color: #00B09B;">✓ Answer: (C) Ligases</b><br>
+      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Ligases join two molecular substrates together using ATP energy.</span>
+    </div>
+  </div>
+  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
+  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
+    <p style="color: #00B09B; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Frog/Biomolecule Audits)</p>
+  </div>
+
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q26. Name scientific name and class of Indian bullfrog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Scientific Name:</b> <i>Rana tigrina</i>.<br><b style='color: #00B09B;'>Class:</b> Amphibia.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q27. Differentiate Hibernation and Aestivation in frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Hibernation:</b> Winter sleep to escape cold.<br><b style='color: #00B09B;'>Aestivation:</b> Summer sleep to escape heat and desiccation.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q28. State function of Nictitating Membrane in frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Transparent membrane covering eyes underwater to protect them while allowing vision.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q29. How do male frogs differ externally from female frogs?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Male frogs possess vocal sacs for croaking and nuptial pads on the first digit of forelimbs during breeding.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q30. Name 3 modes of respiration in Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      1. Cutaneous (skin), 2. Buccopharyngeal (buccal cavity), 3. Pulmonary (lungs).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q31. Describe heart structure of Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      3-chambered heart consisting of 2 auricles, 1 ventricle, Sinus Venosus, and Conus Arteriosus.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q32. What is Cloaca in frog?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Common terminal chamber receiving digestive fecal waste, urine from kidneys, and gametes.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q33. State function of Bidder's Canal in male frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Canal inside kidney receiving sperm from vasa efferentia and passing them to urinogenital duct.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q34. Differentiate Acid-Soluble Pool and Retentate fraction.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Acid-Soluble Pool:</b> Filterate fraction (&lt;1000 Da) containing micromolecules.<br><b style='color: #00B09B;'>Retentate:</b> Insoluble fraction (&gt;10,000 Da) containing macromolecules.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q35. Define Glycosidic Bond.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Covalent bond connecting monosaccharide units formed by dehydration synthesis.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q36. Define Peptide Bond.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Amide linkage (-CO-NH-) formed between alpha-carboxyl group of one amino acid and alpha-amino group of next.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q37. What is a Zwitterion?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Dipolar amino acid molecule carrying equal positive (-NH3<sup>+</sup>) and negative (-COO<sup>-</sup>) charges at isoelectric pH.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q38. Name most abundant protein in animals and entire biosphere.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Animal Kingdom:</b> Collagen.<br><b style='color: #00B09B;'>Entire Biosphere:</b> RuBisCO.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q39. Differentiate Saturated and Unsaturated Fatty Acids.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Saturated:</b> No carbon-carbon double bonds (e.g. Palmitic acid).<br><b style='color: #00B09B;'>Unsaturated:</b> One or more double bonds (e.g. Oleic acid).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q40. What is Lecithin?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Important phospholipid compound framing plasma membrane structures in cells.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q41. Name 3 components of a Nucleotide.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      1. Nitrogenous Base (Purine/Pyrimidine), 2. Pentose Sugar, 3. Phosphate group.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q42. Differentiate Purines and Pyrimidines.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Purines:</b> Double-ring bases (Adenine, Guanine).<br><b style='color: #00B09B;'>Pyrimidines:</b> Single-ring bases (Cytosine, Thymine, Uracil).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q43. State 3 features of B-DNA Double Helix model.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      1. Antiparallel strands, 2. Pitch is 34 Å per turn, 3. 10 base pairs per turn with 3.4 Å spacing.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q44. Differentiate Primary and Secondary Metabolites.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Primary:</b> Direct vital physiological roles in growth/metabolism.<br><b style='color: #00B09B;'>Secondary:</b> Plant/microbial by-products (alkaloids, drugs, rubber) with ecological utility.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q45. Give 4 examples of Secondary Metabolites.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      1. Alkaloids (Morphine), 2. Lectins (Concanavalin A), 3. Drugs (Vinblastine), 4. Polymers (Rubber).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q46. How do enzymes lower Activation Energy (Ea)?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      By binding substrate at active site to form ES complex, stabilizing transition state and lowering energy barrier.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q47. Define Competitive Inhibition with an example.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Inhibitor structurally resembles substrate and competes for active site binding.<br>Example: Malonate inhibiting Succinic Dehydrogenase.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q48. How does competitive inhibition affect Km and Vmax?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Increases Km (lowers affinity) while Vmax remains unchanged.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q49. Define Km (Michaelis Constant).</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Substrate concentration at which enzymatic reaction velocity reaches half of maximum velocity (1/2 Vmax).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q50. Name 6 IUBMB classes of enzymes.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      1. Oxidoreductases, 2. Transferases, 3. Hydrolases, 4. Lyases, 5. Isomerases, 6. Ligases.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q51. Differentiate Apoenzyme and Holoenzyme.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Apoenzyme:</b> Inactive protein part of enzyme.<br><b style='color: #00B09B;'>Holoenzyme:</b> Complete active complex (Apoenzyme + Co-factor).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q52. Differentiate Prosthetic Group and Co-enzyme.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      <b style='color: #00B09B;'>Prosthetic Group:</b> Tightly bound organic co-factor (e.g. Heme).<br><b style='color: #00B09B;'>Co-enzyme:</b> Loosely bound organic co-factor (e.g. NAD).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q53. What is the role of Portal System in frog?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Carries blood from organ of origin to another intermediate organ (liver/kidney) before returning to heart.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q54. Why is frog skin kept moist?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Moist skin is essential for cutaneous gas exchange as dry skin stops oxygen diffusion causing asphyxiation.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q55. What is Thyroxin's role in frog development?</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Answer:</b><br>
+      Thyroid hormone thyroxin controls metamorphosis of aquatic tadpole larva into terrestrial adult frog.
+    </div>
+  </div>
+  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
+  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
+    <p style="color: #00B09B; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Anatomical/Kinetics Audits)</p>
+  </div>
+
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q56. Detail Frog Digestive System architecture with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzEiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQxKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxKSI+QWxpbWVudGFyeSBDYW5hbCAmYW1wOyBEaWdlc3RpdmUgU3lzdGVtIG9mIEZyb2cgKFJhbmEgdGlncmluYSk8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3RpdmUgT3JnYW5zIEFyY2hpdGVjdHVyZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE1vdXRoICZhbXA7IEJpZmlkIFRvbmd1ZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlByZXkgY2FwdHVyZSB2aWEgbXVzY3VsYXIgc3RpY2t5IHRvbmd1ZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBFc29waGFndXMgJmFtcDsgU3RvbWFjaDo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5IQ2wgJmFtcDsgUGVwc2luIGNvbnZlcnQgZm9vZCB0byBDaHltZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMaXZlciAmYW1wOyBHYWxsYmxhZGRlcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TZWNyZXRlcyBiaWxlIHN0b3JlZCBpbiBHYWxsYmxhZGRlci48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYW5jcmVhczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Qcm9kdWNlcyBwYW5jcmVhdGljIGRpZ2VzdGl2ZSBqdWljZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTbWFsbCBJbnRlc3RpbmU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+VmlsbGkgJmFtcDsgbWljcm92aWxsaSBhYnNvcmIgbnV0cmllbnRzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFJlY3R1bSAmYW1wOyBDbG9hY2E6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjM0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+RmVjYWwgd2FzdGUgZW50ZXJzIGNsb2FjYSBmb3IgZXhwdWxzaW9uLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENhcm5pdm9yb3VzIERpZXQgQWRhcHRhdGlvbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iNDA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+U2hvcnQgYWxpbWVudGFyeSBjYW5hbCBzdHJ1Y3R1cmUuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3Rpb24gRmxvd2NoYXJ0PC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5JbnNlY3RzIENhcHR1cmVkIGJ5IEJpZmlkIFRvbmd1ZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+UGhhcnlueCAtIEVzb3BoYWd1cyAtIFN0b21hY2g8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoSENsICsgR2FzdHJpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DaHltZSBGb3JtZWQgaW4gU3RvbWFjaDwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTIChCaWxlICsgUGFuY3JlYXRpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5JbnRlc3RpbmFsIEFic29ycHRpb24gYnkgVmlsbGk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlJlY3R1bSAtIENsb2FjYSAtIEV4dGVyaW9yPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Gcm9nIERpZ2VzdGlvbjogQmlmaWQgVG9uZ3VlIC0gU3RvbWFjaCBDaHltZSAtIEJpbGUgJmFtcDsgUGFuY3JlYXMgLSBDbG9hY2E8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Digestive System' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q56: 3D Alimentary Canal & Digestive System of Frog</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q57. Detail Frog Respiratory System (3 Modes) with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzIiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQyKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cyKSI+Q3V0YW5lb3VzLCBCdWNjb3BoYXJ5bmdlYWwgJmFtcDsgUHVsbW9uYXJ5IFJlc3BpcmF0aW9uIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBDVVRBTkVPVVMgKFNLSU4pPC90ZXh0PgogICAgPHJlY3QgeD0iMTAiIHk9IjQ4IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjQwOCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPuKAoiBNb2lzdCwgc2xpcHBlcnkgc2tpbjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSI5OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkRpc3NvbHZlZCBPMiBkaWZmdXNlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5pbnRvIGN1dGFuZW91cyBibG9vZDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXBpbGxhcmllcyBkaXJlY3RseS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIE9wZXJhdGlvbmFsIFBlcmlvZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPjEuIEluIHdhdGVyIHN3aW1taW5nLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj4yLiBIaWJlcm5hdGlvbiAod2ludGVyKS48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+My4gQWVzdGl2YXRpb24gKHN1bW1lcikuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIE9ubHkgcmVzcGlyYXRpb24gbW9kZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj4gIGR1cmluZyBzbGVlcCBzdGF0ZXMhPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBCVUNDT1BIQVJZTkdFQUw8L3RleHQ+CiAgICA8cmVjdCB4PSIxMCIgeT0iNDgiIHdpZHRoPSIyMjYiIGhlaWdodD0iNDA4IiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE9yYWwgTXVjb3NhIEV4Y2hhbmdlPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TW9pc3QgbGluaW5nIG9mIGJ1Y2NhbDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXZpdHkgYWJzb3JicyBveHlnZW48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+b24gbGFuZCBlbnZpcm9ubWVudC48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE1lY2hhbmlzbTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+QnVjY2FsIGZsb29yIG1vdmVzIHVwPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjIxMyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPiZhbXA7IGRvd24gZHJhd2luZyBhaXI8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+dGhyb3VnaCBub3N0cmlscy48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj7igKIgR2xvdHRpcyBzdGF5cyBjbG9zZWQuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzQsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLiBQVUxNT05BUlkgKExVTkdTKTwvdGV4dD4KICAgIDxyZWN0IHg9IjEwIiB5PSI0OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MDgiIHJ4PSI4IiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgUGFpciBvZiBQaW5rIEx1bmdzPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TG9jYXRlZCBpbiB0aG9yYXguPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjExNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkFsdmVvbGkgaW5jcmVhc2UgYXJlYS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEFpciBQYXRod2F5OjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5Ob3N0cmlscyAtIEJ1Y2NhbCBDYXZpdHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+LSBHbG90dGlzIC0gTHVuZ3MuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIEFjdGl2ZSBsYW5kIHJlc3BpcmF0aW9uLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MyBSZXNwaXJhdGlvbiBNb2RlczogQ3V0YW5lb3VzIChTa2luKSB8IEJ1Y2NvcGhhcnluZ2VhbCAoT3JhbCkgfCBQdWxtb25hcnkgKEx1bmdzKTwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Respiration' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q57: 3D Respiration Modes of Frog</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q58. Detail Frog Heart & Portal Circulation with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzMiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQzKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3czKSI+My1DaGFtYmVyZWQgSGVhcnQgJmFtcDsgQ2lyY3VsYXRvcnkgUG9ydGFsIFN5c3RlbSBvZiBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My1DaGFtYmVyZWQgSGVhcnQgU3RydWN0dXJlPC90ZXh0PgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjQwOCIgcng9IjEwIiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBSaWdodCBBdXJpY2xlOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgZGVveHlnZW5hdGVkIGJsb29kIGZyb20gU2ludXMgVmVub3N1cy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMZWZ0IEF1cmljbGU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgb3h5Z2VuYXRlZCBibG9vZCBmcm9tIGx1bmdzL3NraW4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2luZ2xlIFZlbnRyaWNsZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5NdXNjdWxhciBjaGFtYmVyIHB1bXBpbmcgbWl4ZWQgYmxvb2QuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2ludXMgVmVub3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ucmlhbmd1bGFyIGNoYW1iZXIgcmVjZWl2aW5nIFZlbmEgQ2F2YWUuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgQ29udXMgQXJ0ZXJpb3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WZW50cmFsIHRydW5rIGRpdmlkaW5nIGludG8gYW9ydGljIGFyY2hlcy48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvcnRhbCBWZW5vdXMgQ2lyY3VsYXRpb24gU3lzdGVtczwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjE5MCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4xLiBIZXBhdGljIFBvcnRhbCBTeXN0ZW06PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIENvbm5lY3RzIEd1dCAmYW1wOyBJbnRlc3RpbmUgdG8gTGl2ZXIuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFRyYW5zcG9ydHMgYWJzb3JiZWQgbnV0cmllbnRzIHRvIGxpdmVyPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+ICBiZWZvcmUgZW50ZXJpbmcgaGVhcnQgY2lyY3VsYXRpb24uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIyNTUiIHdpZHRoPSIzNTYiIGhlaWdodD0iMjAxIiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4yLiBSZW5hbCBQb3J0YWwgU3lzdGVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIzMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPuKAoiBDb25uZWN0cyBMb3dlciBCb2R5IHRvIEtpZG5leXMuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjMyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFJvdXRlcyBoaW5kbGltYiBibG9vZCB0aHJvdWdoIGtpZG5leXM8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMzQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4gIGZvciB3YXN0ZSBmaWx0cmF0aW9uIGJlZm9yZSBoZWFydC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZyb2cgQ2lyY3VsYXRpb246IDIgQXVyaWNsZXMgKyAxIFZlbnRyaWNsZSB8IEhlcGF0aWMgUG9ydGFsIFN5c3RlbSB8IFJlbmFsIFBvcnRhbCBTeXN0ZW08L3RleHQ+CiAgPC9nPgo8L3N2Zz4=' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Heart & Portal' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q58: 3D Frog Heart & Portal Systems</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q59. Detail Frog Nervous System & 10 Cranial Nerves with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Brain divisions + 10 pairs of cranial nerves.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzQiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ0KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c0KSI+TmVydm91cyBTeXN0ZW0gQXJjaGl0ZWN0dXJlICZhbXA7IDEwIENyYW5pYWwgTmVydmVzIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CcmFpbiAmYW1wOyBTcGluYWwgQ29yZCBEaXZpc2lvbnM8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEZvcmVicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk9sZmFjdG9yeSBsb2JlcywgQ2VyZWJydW0sIERpZW5jZXBoYWxvbi48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNaWRicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYWlyIG9mIHByb21pbmVudCBPcHRpYyBMb2Jlcy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIaW5kYnJhaW46PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2VyZWJlbGx1bSAmYW1wOyBNZWR1bGxhIE9ibG9uZ2F0YS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZWR1bGxhIE9ibG9uZ2F0YTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYXNzZXMgdGhyb3VnaCBGb3JhbWVuIE1hZ251bSBpbnRvPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI2NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+dmVydGVicmFsIGNvbHVtbiBhcyBTcGluYWwgQ29yZC48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgMTAgUGFpcnMgb2YgQ3JhbmlhbCBOZXJ2ZXMgcHJlc2VudC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIENyYW5pYWwgTmVydmVzIExpc3Q8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JLiBPbGZhY3RvcnkgKFNlbnNvcnkgLSBTbWVsbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklJLiBPcHRpYyAoU2Vuc29yeSAtIFZpc2lvbik8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JSUkuIE9jdWxvbW90b3IgKE1vdG9yIC0gRXllIG11c2NsZXMpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SVYuIFRyb2NobGVhciAoTW90b3IgLSBFeWUgb2JsaXF1ZSk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WLiBUcmlnZW1pbmFsIChNaXhlZCAtIEphdyAmYW1wOyBGYWNlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJLiBBYmR1Y2VucyAoTW90b3IgLSBFeWUgcmVjdHVzKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSS4gRmFjaWFsIChNaXhlZCAtIEZhY2UgJmFtcDsgVG9uZ3VlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSUkuIEF1ZGl0b3J5IChTZW5zb3J5IC0gQmFsYW5jZS9IZWFyaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklYLiBHbG9zc29waGFyeW5nZWFsIChNaXhlZCAtIFBoYXJ5bngpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjI3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+WC4gVmFndXMgKE1peGVkIC0gSGVhcnQsIEx1bmdzLCBWaXNjZXJhKTwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJvZyBCcmFpbjogRm9yZWJyYWluICsgTWlkYnJhaW4gKyBIaW5kYnJhaW4gfCAxMCBQYWlycyBvZiBDcmFuaWFsIE5lcnZlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Nervous System' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q59: 3D Frog Nervous System & Cranial Nerves</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q60. Detail Male Reproductive System of Frog with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ1KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c1KSI+TWFsZSBSZXByb2R1Y3RpdmUgU3lzdGVtIEFyY2hpdGVjdHVyZSBvZiBNYWxlIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWxlIE9yZ2FucyAmYW1wOyBUZXN0ZXMgQW5hdG9teTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgUGFpciBvZiBUZXN0ZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Pdm9pZCB5ZWxsb3dpc2ggb3JnYW5zIGF0dGFjaGVkIHRvIGtpZG5leS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZXNvcmNoaXVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkRvdWJsZSBmb2xkIGZvbGQgb2YgcGVyaXRvbmV1bSBsaW5rLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFZhc2EgRWZmZXJlbnRpYTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4xMC0xMiBkdWN0dWxlcyBhcmlzaW5nIGZyb20gdGVzdGVzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEJpZGRlcidzIENhbmFsOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkludGVybmFsIGtpZG5leSBjYW5hbCByZWNlaXZpbmcgc3Blcm0uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgVXJpbm9nZW5pdGFsIER1Y3Q6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2FycmllcyB1cmluZSAmYW1wOyBzcGVybXMgdG8gQ2xvYWNhLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3Blcm0gUGF0aHdheSBGbG93Y2hhcnQ8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+VGVzdGVzIChTcGVybSBQcm9kdWN0aW9uKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+MTAtMTIgVmFzYSBFZmZlcmVudGlhIER1Y3R1bGVzPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5LaWRuZXlzIChCaWRkZXIncyBDYW5hbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPlVyaW5vZ2VuaXRhbCBEdWN0PC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DbG9hY2EgLSBFeHRlcmlvciBEaXNjaGFyZ2U8L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbGUgRnJvZzogVGVzdGVzIC0gTWVzb3JjaGl1bSAtIFZhc2EgRWZmZXJlbnRpYSAtIEJpZGRlcidzIENhbmFsIC0gQ2xvYWNhPC90ZXh0PgogIDwvZz4KPC9zdmc+' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Male Frog Reproduction' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q60: 3D Male Reproductive System of Frog</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q61. Detail Female Reproductive System of Frog with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzYiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ2KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c2KSI+RmVtYWxlIFJlcHJvZHVjdGl2ZSBTeXN0ZW0gQXJjaGl0ZWN0dXJlIG9mIEZlbWFsZSBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RmVtYWxlIE9yZ2FucyAmYW1wOyBPdmFyaWVzIEFuYXRvbXk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFBhaXIgb2YgT3Zhcmllczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxhcmdlIGxvYnVsYXRlZCBvcmdhbnMgbmVhciBraWRuZXlzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5PIENvbm5lY3Rpb24gd2l0aCBLaWRuZXlzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk92YXJpZXMgaGF2ZSBOTyBsaW5rIHdpdGgga2lkbmV5cyE8L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYWlyIG9mIE92aWR1Y3RzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkNvaWxlZCB0dWJlcyBvcGVuaW5nIGludG8gQ2xvYWNhLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEVnZyBQcm9kdWN0aW9uOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxheXMgMjUwMC0zMDAwIG92YSBhdCBvbmUgdGltZS48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk92YSBQYXRod2F5ICZhbXA7IEV4dGVybmFsIEZlcnRpbGl6YXRpb248L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+T3ZhcmllcyAoUHJvZHVjZSAyNTAwLTMwMDAgT3ZhKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+Q29pbGVkIE92aWR1Y3RzIChTZXBhcmF0ZSBvcGVuaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+Q2xvYWNhPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpMgKFNwYXduaW5nIGluIFdhdGVyKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPkV4dGVybmFsIEZlcnRpbGl6YXRpb24gaW4gV2F0ZXI8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoVGh5cm94aW4gZHJpdmVuKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlRhZHBvbGUgTGFydmEgLSBBZHVsdCBGcm9nPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GZW1hbGUgRnJvZzogT3ZhcmllcyAoTm8ga2lkbmV5IGxpbmspIC0gQ29pbGVkIE92aWR1Y3RzIC0gQ2xvYWNhIC0gV2F0ZXIgRmVydGlsaXphdGlvbjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Female Frog Reproduction' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q61: 3D Female Reproductive System of Frog</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q62. Detail DNA Double Helix vs RNA Structure with 3D diagram.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMTAiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGYwNTFjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1MDIwYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9Imdsb3cxMCI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBCMDlCIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjYyMCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEwKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxMCkiPkItRE5BIERvdWJsZSBIZWxpeCB2cyBSTkEgU2luZ2xlIFN0cmFuZCBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CLUROQSBEb3VibGUgSGVsaXggKFdhdHNvbi1Dcmljayk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFN0cmFuZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ud28gYW50aXBhcmFsbGVsIHBvbHludWNsZW90aWRlIGNoYWlucy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTdWdhcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yJy1EZW94eXJpYm9zZSBQZW50b3NlIFN1Z2FyLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5pdHJvZ2Vub3VzIEJhc2VzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkFkZW5pbmUgPSBUaHltaW5lOyBHdWFuaW5lIOKJoSBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIZWxpeCBEaW1lbnNpb25zOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlBpdGNoID0gMzQgw4UgcGVyIHR1cm47IDEwIGJwL3R1cm4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgRnVuY3Rpb246IFN0YWJsZSBnZW5ldGljIGJsdWVwcmludC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJOQSBTaW5nbGUgU3RyYW5kIEFyY2hpdGVjdHVyZTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgU3RyYW5kOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+U2luZ2xlLXN0cmFuZGVkIHBvbHludWNsZW90aWRlIGNoYWluLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+4oCiIFN1Z2FyOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlJpYm9zZSBTdWdhciAod2l0aCAyJy1PSCBncm91cCkuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgTml0cm9nZW5vdXMgQmFzZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QWRlbmluZSwgVXJhY2lsLCBHdWFuaW5lLCBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPuKAoiBUeXBlczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5tUk5BIChtZXNzZW5nZXIpLCB0Uk5BLCByUk5BLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEZ1bmN0aW9uOiBUcmFuc2xhdGlvbiAmYW1wOyBSaWJvenltZXMuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ETkE6IERlb3h5cmlib3NlICsgVGh5bWluZSArIERvdWJsZSBIZWxpeCB8IFJOQTogUmlib3NlICsgVXJhY2lsICsgU2luZ2xlIFN0cmFuZDwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='DNA vs RNA' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q62: 3D B-DNA Double Helix vs RNA Architecture</p></div>
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q63. Detail male reproductive system of Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Pair of yellow ovoid testes, mesorchium, 10-12 vasa efferentia entering kidney into Bidder's canal, urinogenital duct opening into cloaca.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q64. Detail female reproductive system of Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Pair of large ovaries near kidneys, separate oviducts opening into cloaca, lays 2500-3000 ova, external water fertilization.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q65. Detail Chemical Analysis method of living tissue using Cl3CCOOH.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Grinding tissue in Trichloroacetic acid ➔ Cheesecloth filtration ➔ Acid-Soluble pool (<1000 Da) vs Acid-Insoluble Retentate (>10,000 Da).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q66. Detail classification and structure of Carbohydrates.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Monosaccharides (Glucose), Disaccharides (Sucrose, Glycosidic bond), Polysaccharides (Starch, Glycogen, Cellulose, Chitin).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q67. Detail 4 structural levels of Proteins.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Primary (linear amino acid sequence), Secondary (alpha-helix/beta-sheet), Tertiary (overall 3D active site), Quaternary (multimer e.g. Hb).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q68. Detail structure of Amino Acids and Zwitterion formation.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Alpha-carbon bonded to -NH2, -COOH, -H, -R; Dipolar zwitterion with equal + and - charges at isoelectric pH.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q69. Detail classification and chemical structure of Lipids.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Triglycerides (Glycerol + 3 Fatty acids), Saturated vs Unsaturated, Lecithin phospholipid in cell membranes.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q70. Detail Watson & Crick B-DNA Double Helix model.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Antiparallel strands, 3'-5' phosphodiester backbone, complementary base pairing (A=T, G≡C), 34 Å pitch, 10 bp per turn.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q71. Detail Primary vs Secondary Metabolites with examples.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Primary (essential metabolic roles: sugars, amino acids); Secondary (alkaloids, drugs like vinblastine, lectins like concanavalin A, rubber).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q72. Detail active site concept and how enzymes lower Activation Energy.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Active site crevice binds substrate to form ES complex, lowering activation energy barrier to transition state.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q73. Detail Competitive Inhibition with classic Malonate example.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Inhibitor structurally mimics substrate, competing for active site; Malonate inhibits succinic dehydrogenase; increases Km, Vmax constant.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q74. Detail 6 IUBMB classes of enzymes with functions.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      1. Oxidoreductases (redox), 2. Transferases (group transfer), 3. Hydrolases (cleavage), 4. Lyases (double bond), 5. Isomerases (isomers), 6. Ligases (ATP joining).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q75. Detail co-factors: Apoenzyme, Holoenzyme, Prosthetic group, Co-enzyme, Metal ions.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Holoenzyme = Apoenzyme + Co-factor; Prosthetic (tight organic e.g. Heme), Co-enzyme (loose organic e.g. NAD), Metal ions (Zinc for Carboxypeptidase).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q76. Explain why lipids are placed in retentate fraction despite low MW.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Cell membrane fragments form insoluble lipid vesicles during grinding, remaining in retentate.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q77. Compare Starch, Glycogen, and Cellulose.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Starch (plant storage helical), Glycogen (animal branched storage), Cellulose (plant cell wall unbranched structural).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q78. Explain structural difference between DNA and RNA.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      DNA (deoxyribose, thymine, double helix); RNA (ribose, uracil, single stranded).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q79. Explain effect of Temperature and pH on enzyme velocity.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Bell-shaped curves around optimum temperature and pH; extreme temperature/pH denatures tertiary protein structure.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q80. Explain significance of Km (Michaelis constant) in enzyme kinetics.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Km is substrate concentration at 1/2 Vmax; lower Km indicates higher substrate affinity of enzyme.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q81. Detail excretory system and nitrogenous waste of Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Pair of compact red kidneys, ureters, urinary bladder opening into cloaca; ureotelic (excretes urea).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q82. Detail nervous system divisions and cranial nerves of Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      CNS (Brain + Spinal cord), PNS, ANS; 10 pairs of cranial nerves; medulla oblongata passes through foramen magnum.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q83. Detail external morphology of Frog skin and eyes.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Smooth moist slippery skin with mucus glands; eyes bulged with nictitating membrane; tympanum ear membrane.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q84. Explain ecological and economic importance of Frogs.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Controls agricultural insect pests, acts as indicator species for ecological health, vital link in food chain.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q85. Detail secondary metabolites categories table from NCERT.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
+      <b style="color: #00B09B;">Detailed Solution:</b><br>
+      Pigments (Carotenoids), Alkaloids (Morphine), Essential oils (Lemon grass), Toxins (Ricin), Lectins (Concanavalin A), Drugs (Vinblastine), Polymeric (Rubber).
+    </div>
+  </div>
+  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
+  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
+    <p style="color: #00B09B; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Kinetics Audits)</p>
+  </div>
+
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q86: Comprehensive Audit of Frog Morphology & Digestive System</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail external morphology, sexual dimorphism, and complete alimentary canal anatomy of Rana tigrina.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Streamlined head & trunk, moist skin, nictitating membrane, vocal sacs & nuptial pads in males. Alimentary canal: short, bifid tongue, stomach chyme, liver gallbladder, pancreas, cloaca.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct comparative anatomical key for Male vs Female Frog urinogenital systems.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Male: Testes ➔ Vasa efferentia ➔ Bidder's canal in kidney ➔ Urinogenital duct ➔ Cloaca. Female: Ovaries (separate from kidney) ➔ Oviduct ➔ Cloaca.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q87: Comprehensive Audit of Frog Respiration & Circulation</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail 3 modes of respiration (Cutaneous, Buccopharyngeal, Pulmonary) and 3-chambered heart architecture.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Cutaneous (moist skin in water/hibernation), Buccopharyngeal (oral lining), Pulmonary (lungs). Heart: 2 auricles + 1 ventricle, Sinus venosus, Conus arteriosus, nucleated RBCs.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail Hepatic and Renal Portal Systems in Frog and their physiological significance.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Hepatic portal system carries blood from gut to liver; Renal portal system carries blood from lower limbs to kidneys before heart.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q88: Comprehensive Audit of Biomolecules Chemical Analysis & Pool Division</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Trichloroacetic acid (Cl3CCOOH) tissue analysis method and compare Acid-Soluble Pool vs Retentate.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Acid-soluble pool (<1000 Da micromolecules: sugars, amino acids, nucleotides); Retentate (>10,000 Da macromolecules: proteins, polysaccharides, nucleic acids, membrane lipids).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Explain why lipids reside in retentate despite low molecular weight (<800 Da).</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Cell membrane phospholipids form insoluble vesicle aggregates during grinding, retained by cheesecloth.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q89: Carbohydrates & Glycosidic Bond Architecture</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure, classification, and chemical bonds of Monosaccharides, Disaccharides, and Polysaccharides.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Monosaccharides (Glucose, Ribose); Disaccharides (Sucrose, Maltose, Lactose); Polysaccharides linked by glycosidic bonds: Starch (plant helical storage), Glycogen (animal branched storage), Cellulose (unbranched plant wall), Chitin (exoskeleton).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Differentiate Reducing and Non-Reducing Sugars with Fehling's test mechanism.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Reducing sugars contain free aldehyde/ketone group (reduce Cu2+ to Cu+); Non-reducing sugars (Sucrose) have glycosidic bond masking functional group.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q90: Proteins Structural Levels & Peptide Bond Architecture</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of 20 amino acids, zwitterion formation, peptide bond (-CO-NH-), and 4 structural levels of proteins.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Alpha-carbon with -NH2, -COOH, -H, -R. Zwitterion dipolar form. Primary (sequence), Secondary (alpha-helix/beta-sheet), Tertiary (3D active site), Quaternary (Hb multimer).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare Collagen (Animal kingdom) and RuBisCO (Entire Biosphere) abundant proteins.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Collagen: triple-helical fibrous connective protein in animals; RuBisCO: carboxylase-oxygenase enzyme fixing CO2 in photosynthesis.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q91: Lipids Structure, Classification & Phospholipid Membranes</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of Triglycerides, Saturated vs Unsaturated Fatty Acids, Phospholipids (Lecithin), and Steroids.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Triglycerides (Glycerol + 3 Fatty acids); Saturated (Palmitic 16C) vs Unsaturated (Oleic); Lecithin phospholipid framing cell membranes; Steroids (Cholesterol).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail biological functions of lipids as energy reserves, insulation, and membrane barriers.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      High-density energy storage (9 kcal/g), subcutaneous heat insulation, selective permeability in cell membranes.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q92: Nucleic Acids & B-DNA Double Helix Model</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of Nucleotides (Bases, Pentose sugar, Phosphate), Phosphodiester bonds, and B-DNA Double Helix.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Purines (A,G) & Pyrimidines (C,T,U) + Deoxyribose/Ribose + Phosphate. 3'-5' phosphodiester bonds. Antiparallel double helix with 34 Å pitch (10 bp/turn, 3.4 Å spacing).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare structural and functional differences between DNA and RNA.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      DNA: Deoxyribose, Thymine, double stranded, stable genetic blueprint. RNA: Ribose, Uracil, single stranded, protein synthesis messenger.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q93: Primary vs Secondary Metabolites Master Survey</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail definitions, functions, and distribution of Primary vs Secondary Metabolites.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Primary: essential metabolic roles in growth; Universal. Secondary: plant/microbial by-products (alkaloids, drugs, lectins, rubber) with defense & industrial value.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct comprehensive secondary metabolites table covering Pigments, Alkaloids, Lectins, Toxins, Drugs, and Polymeric substances.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Pigments (Carotenoids), Alkaloids (Morphine), Terpenoids (Monoterpenes), Essential Oils (Lemon grass), Toxins (Ricin, Abrin), Lectins (Concanavalin A), Drugs (Vinblastine, Curcumin), Polymers (Rubber, Gums).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q94: Enzyme Catalysis & Activation Energy Barrier Reduction</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail active site concept, ES complex formation, and lowering of Activation Energy (Ea).</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Substrate binds 3D active site crevice forming ES complex, stabilizing transition state and lowering activation energy barrier to accelerate reaction rate.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail lock & key vs induced fit models of enzyme action.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Lock & Key: rigid complementary active site; Induced Fit: substrate binding induces conformational change in active site.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q95: Enzyme Kinetics: Vmax, Km & Substrate Saturation</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Michaelis-Menten kinetics curve: Vmax, Km (Michaelis constant), and substrate concentration effect.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Velocity increases linearly at low [S], approaches Vmax at saturation. Km is [S] at 1/2 Vmax; lower Km indicates higher substrate affinity of enzyme.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Calculate Km and reaction rate changes under varying substrate concentrations.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      V = (Vmax * [S]) / (Km + [S]). When [S] = Km, V = Vmax / 2.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q96: Enzyme Inhibition Kinetics: Competitive vs Non-Competitive</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Competitive Inhibition with Succinic Dehydrogenase inhibition by Malonate.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Inhibitor structurally mimics substrate, competing for active site. Malonate inhibits succinic dehydrogenase; increases Km, Vmax constant.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare Competitive and Non-Competitive Inhibition on Km and Vmax parameters.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Competitive: Km increases, Vmax unchanged. Non-Competitive: Km unchanged, Vmax decreases.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q97: 6 IUBMB Enzyme Classification Architecture</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail 6 IUBMB classes of enzymes with systematic naming and chemical reaction equations.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      1. Oxidoreductases (redox), 2. Transferases (group transfer), 3. Hydrolases (bond hydrolysis), 4. Lyases (double bond cleavage), 5. Isomerases (isomers), 6. Ligases (ATP joining).
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail Co-factors: Apoenzyme, Holoenzyme, Prosthetic groups, Co-enzymes, and Metal ions.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Holoenzyme = Apoenzyme + Co-factor. Prosthetic group (tight organic e.g. Heme), Co-enzyme (loose organic e.g. NAD), Metal ions (Zinc for Carboxypeptidase).
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q98: Frog Metamorphosis & Endocrine Regulation</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail developmental stages from fertilized egg ➔ aquatic Tadpole Larva ➔ terrestrial Adult Frog.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      External water fertilization ➔ ciliated herbivorous tadpole larva with gills & tail ➔ metamorphosis into carnivorous adult frog with lungs & legs.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail role of Thyroid gland and Thyroxin hormone in controlling metamorphosis.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Thyroxin triggers tail resorption, gill atrophy, lung development, and limb outgrowth during metamorphosis.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q99: Factors Affecting Enzyme Activity (Temperature & pH Kinetics)</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail effect of Temperature and pH on enzyme catalytic activity with bell-shaped curves.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Activity peaks at Optimum Temperature and Optimum pH. Low temp inactivates enzyme temporarily; high temp denatures tertiary protein structure.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Explain thermal stability of enzymes isolated from thermophilic organisms (e.g. Taq Polymerase).</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Thermophilic enzymes possess resistant tertiary structures stabilized by hydrophobic interactions and disulfide bonds.
+    </div>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
+    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q100: Master Synthesis: Unified Structural Organisation & Biomolecules Architecture</b></p>
+    
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Synthesize complete framework connecting Frog Anatomy (Digestive, Respiratory, Circulatory, Urinogenital) ⟶ Cellular Biomolecules (Carbohydrates, Proteins, Lipids, DNA/RNA) ⟶ Enzymatic Control.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
+      Frog organ systems depend on metabolic energy generated by biomolecules; cellular enzymes accelerate biochemical reactions sustaining animal life.
+    </div>
+
+    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct diagnostic summary table connecting Frog organ systems, Biomolecule bonds, Metabolites, and Enzyme classes.</b></p>
+    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
+      Frog (3-chamber heart, 10 cranial nerves) | Bonds (Glycosidic, Peptide, Phosphodiester) | Metabolites (Vinblastine, Concanavalin A) | Enzymes (6 IUBMB classes, Km, Ea).
+    </div>
+  </div>
+</div>
+`;

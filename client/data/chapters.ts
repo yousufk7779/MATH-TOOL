@@ -107,7 +107,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
     ],
     Zoology: [
       { id: "c11-zoo-1", number: 1, name: "Diversity in Living World", color: "#FF3D00" },
-      { id: "c11-zoo-2", number: 2, name: "Structural Organisation and Animal Biomolecules", color: "#7C4DFF" },
+      { id: "c11-zoo-2", number: 2, name: "Structural Organisation and Animal Biomolecules", color: "#00B09B" },
       { id: "c11-zoo-3", number: 3, name: "Cell Structure and Function", color: "#FF007F" },
       { id: "c11-zoo-4", number: 4, name: "Human Physiology", color: "#00B0FF" },
     ],
@@ -1078,7 +1078,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c11-bot-3") return ["#E040FB", "#7B1FA2"];
   if (chapterId === "c11-bot-4") return ["#00E5FF", "#00838F"];
   if (chapterId === "c11-zoo-1") return ["#FF3D00", "#DD2476"];
-  if (chapterId === "c11-zoo-2") return ["#7C4DFF", "#4A00E0"];
+  if (chapterId === "c11-zoo-2") return ["#00B09B", "#96C93D"];
   if (chapterId === "c11-zoo-3") return ["#FF007F", "#C2185B"];
   if (chapterId === "c11-zoo-4") return ["#00B0FF", "#0072ff"];
   if (chapterId === "c12-bot-1") return ["#00E676", "#11998e"];
