@@ -82,40 +82,452 @@ export const c11Zoo2HtmlOverview = `
   <p>The Indian bullfrog (<b>Rana tigrina</b>) belongs to class Amphibia of phylum Chordata. Frogs are cold-blooded poikilotherms exhibiting camouflage (mimicry) to escape predators and undergo seasonal winter sleep (<b>Hibernation</b>) and summer sleep (<b>Aestivation</b>) to survive extreme temperatures.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) External Morphology &amp; Body Plan of Frog (Rana tigrina)</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad1)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow1)">External Morphology &amp; Body Plan of Frog (Rana tigrina)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Body Divisions &amp; Skin Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Streamlined Body Plan:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Divided into Head and Trunk.</text>
+    <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Neck &amp; Tail are completely absent.</text>
+
+    <text x="22" y="145" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Skin Adaptation:</text>
+    <text x="36" y="166" font-family="sans-serif" font-size="12.5" fill="#FFF">Smooth, moist, slippery skin with mucus.</text>
+    <text x="36" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">Dorsal olive green with dark spots;</text>
+    <text x="36" y="202" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral pale yellow.</text>
+
+    <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Water Absorption:</text>
+    <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#FFF">Absorbs water osmotically through skin.</text>
+    <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#FFF">Frogs NEVER drink water directly!</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sensory Organs &amp; Sexual Dimorphism</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Head Sensory Structures:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of nostrils above mouth.</text>
+    <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">Bulged eyes with Nictitating Membrane.</text>
+    <text x="36" y="132" font-family="sans-serif" font-size="12.5" fill="#FFF">Membranous Tympanum behind eyes.</text>
+
+    <text x="22" y="165" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Limbs &amp; Webbed Feet:</text>
+    <text x="36" y="186" font-family="sans-serif" font-size="12.5" fill="#FFF">Forelimbs have 4 digits.</text>
+    <text x="36" y="204" font-family="sans-serif" font-size="12.5" fill="#FFF">Hindlimbs have 5 webbed digits.</text>
+
+    <text x="22" y="235" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#69F0AE">• Male Specific Features:</text>
+    <text x="36" y="256" font-family="sans-serif" font-size="12.5" fill="#69F0AE">1. Sound amplifying Vocal Sacs.</text>
+    <text x="36" y="274" font-family="sans-serif" font-size="12.5" fill="#69F0AE">2. Nuptial Pad on 1st forelimb digit.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Morphology: Head + Trunk | Nictitating Eye | Tympanum | Males: Vocal Sac &amp; Nuptial Pad</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.1: 3D External Morphology &amp; Body Plan of Frog (Rana tigrina)</p>
   <p>• <b style="color: #00B09B;">Body Division:</b> Body is streamlined and divided into <b>Head</b> and <b>Trunk</b> (Neck and Tail are absent).<br>
   • <b style="color: #00B09B;">Skin Architecture:</b> Smooth, moist, slippery skin covered with mucus. Olive green dorsal surface with dark irregular spots and pale yellow ventral surface. Skin absorbs water osmotically (frogs never drink water!).<br>
   • <b style="color: #00B09B;">Head Organs:</b> Pair of nostrils above mouth; eyes are bulged and protected by a transparent <b>Nictitating Membrane</b> during underwater swimming. A membranous <b>Tympanum</b> behind eyes receives sound signals.<br>
   • <b style="color: #00B09B;">Limbs &amp; Sexual Dimorphism:</b> Forelimbs end in 4 digits; muscular hindlimbs end in 5 webbed digits for swimming. Male frogs are distinguished by sound-amplifying <b>Vocal Sacs</b> under throat and a <b>Nuptial Pad</b> on the first digit of forelimbs during breeding season.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Digestive System of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzEiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQxKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxKSI+QWxpbWVudGFyeSBDYW5hbCAmYW1wOyBEaWdlc3RpdmUgU3lzdGVtIG9mIEZyb2cgKFJhbmEgdGlncmluYSk8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3RpdmUgT3JnYW5zIEFyY2hpdGVjdHVyZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE1vdXRoICZhbXA7IEJpZmlkIFRvbmd1ZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlByZXkgY2FwdHVyZSB2aWEgbXVzY3VsYXIgc3RpY2t5IHRvbmd1ZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBFc29waGFndXMgJmFtcDsgU3RvbWFjaDo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5IQ2wgJmFtcDsgUGVwc2luIGNvbnZlcnQgZm9vZCB0byBDaHltZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMaXZlciAmYW1wOyBHYWxsYmxhZGRlcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TZWNyZXRlcyBiaWxlIHN0b3JlZCBpbiBHYWxsYmxhZGRlci48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYW5jcmVhczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Qcm9kdWNlcyBwYW5jcmVhdGljIGRpZ2VzdGl2ZSBqdWljZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTbWFsbCBJbnRlc3RpbmU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+VmlsbGkgJmFtcDsgbWljcm92aWxsaSBhYnNvcmIgbnV0cmllbnRzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFJlY3R1bSAmYW1wOyBDbG9hY2E6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjM0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+RmVjYWwgd2FzdGUgZW50ZXJzIGNsb2FjYSBmb3IgZXhwdWxzaW9uLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENhcm5pdm9yb3VzIERpZXQgQWRhcHRhdGlvbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iNDA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+U2hvcnQgYWxpbWVudGFyeSBjYW5hbCBzdHJ1Y3R1cmUuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3Rpb24gRmxvd2NoYXJ0PC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5JbnNlY3RzIENhcHR1cmVkIGJ5IEJpZmlkIFRvbmd1ZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+UGhhcnlueCAtIEVzb3BoYWd1cyAtIFN0b21hY2g8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoSENsICsgR2FzdHJpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DaHltZSBGb3JtZWQgaW4gU3RvbWFjaDwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTIChCaWxlICsgUGFuY3JlYXRpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5JbnRlc3RpbmFsIEFic29ycHRpb24gYnkgVmlsbGk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlJlY3R1bSAtIENsb2FjYSAtIEV4dGVyaW9yPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Gcm9nIERpZ2VzdGlvbjogQmlmaWQgVG9uZ3VlIC0gU3RvbWFjaCBDaHltZSAtIEJpbGUgJmFtcDsgUGFuY3JlYXMgLSBDbG9hY2E8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Digestive System" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.1: 3D Alimentary Canal &amp; Digestive System Architecture of Frog (Rana tigrina)</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad2)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow2)">Alimentary Canal &amp; Digestive System Architecture of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Digestive Organs Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mouth &amp; Bifid Tongue:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Prey capture via muscular sticky tongue.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Esophagus &amp; Stomach:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">HCl &amp; Pepsin convert food to Chyme.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Liver &amp; Gallbladder:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Secretes bile stored in Gallbladder.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pancreas:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Produces pancreatic digestive juice.</text>
+
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Small Intestine:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Villi &amp; microvilli absorb nutrients.</text>
+
+    <text x="22" y="325" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Rectum &amp; Cloaca:</text>
+    <text x="36" y="346" font-family="sans-serif" font-size="12.5" fill="#FFF">Fecal waste enters cloaca for expulsion.</text>
+
+    <text x="22" y="385" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#69F0AE">• Carnivorous Adaptation:</text>
+    <text x="36" y="405" font-family="sans-serif" font-size="12" fill="#69F0AE">Short alimentary canal length.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Digestion Flowchart</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Insects Captured by Bifid Tongue</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Pharynx - Esophagus - Stomach</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (HCl + Gastric Juice)</text>
+    
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Chyme Formed in Stomach</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Bile + Pancreatic Juice)</text>
+    
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Intestinal Absorption by Villi</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Rectum - Cloaca - Exterior</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Digestion: Bifid Tongue - Stomach Chyme - Bile &amp; Pancreas - Cloaca</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.2: 3D Alimentary Canal &amp; Digestive System Architecture of Frog</p>
   <p>• <b style="color: #00B09B;">Alimentary Canal:</b> Short complete tract (carnivorous adaptation). Food (insects) captured by bilobed bifid tongue.<br>
   • <b style="color: #00B09B;">Digestion Process:</b> Stomach secretes HCl and gastric juices converting food to chyme. Liver secretes bile stored in <b>Gallbladder</b> to emulsify fats. Pancreas produces pancreatic juice containing digestive enzymes. Digested food absorbed by microvilli in intestine. Waste passes into <b>Cloaca</b>.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) Respiratory System of Frog (3 Modes)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzIiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQyKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cyKSI+Q3V0YW5lb3VzLCBCdWNjb3BoYXJ5bmdlYWwgJmFtcDsgUHVsbW9uYXJ5IFJlc3BpcmF0aW9uIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBDVVRBTkVPVVMgKFNLSU4pPC90ZXh0PgogICAgPHJlY3QgeD0iMTAiIHk9IjQ4IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjQwOCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPuKAoiBNb2lzdCwgc2xpcHBlcnkgc2tpbjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSI5OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkRpc3NvbHZlZCBPMiBkaWZmdXNlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5pbnRvIGN1dGFuZW91cyBibG9vZDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXBpbGxhcmllcyBkaXJlY3RseS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIE9wZXJhdGlvbmFsIFBlcmlvZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPjEuIEluIHdhdGVyIHN3aW1taW5nLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj4yLiBIaWJlcm5hdGlvbiAod2ludGVyKS48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+My4gQWVzdGl2YXRpb24gKHN1bW1lcikuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIE9ubHkgcmVzcGlyYXRpb24gbW9kZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj4gIGR1cmluZyBzbGVlcCBzdGF0ZXMhPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBCVUNDT1BIQVJZTkdFQUw8L3RleHQ+CiAgICA8cmVjdCB4PSIxMCIgeT0iNDgiIHdpZHRoPSIyMjYiIGhlaWdodD0iNDA4IiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE9yYWwgTXVjb3NhIEV4Y2hhbmdlPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TW9pc3QgbGluaW5nIG9mIGJ1Y2NhbDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXZpdHkgYWJzb3JicyBveHlnZW48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+b24gbGFuZCBlbnZpcm9ubWVudC48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE1lY2hhbmlzbTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+QnVjY2FsIGZsb29yIG1vdmVzIHVwPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjIxMyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPiZhbXA7IGRvd24gZHJhd2luZyBhaXI8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+dGhyb3VnaCBub3N0cmlscy48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj7igKIgR2xvdHRpcyBzdGF5cyBjbG9zZWQuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzQsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLiBQVUxNT05BUlkgKExVTkdTKTwvdGV4dD4KICAgIDxyZWN0IHg9IjEwIiB5PSI0OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MDgiIHJ4PSI4IiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgUGFpciBvZiBQaW5rIEx1bmdzPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TG9jYXRlZCBpbiB0aG9yYXguPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjExNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkFsdmVvbGkgaW5jcmVhc2UgYXJlYS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEFpciBQYXRod2F5OjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5Ob3N0cmlscyAtIEJ1Y2NhbCBDYXZpdHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+LSBHbG90dGlzIC0gTHVuZ3MuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIEFjdGl2ZSBsYW5kIHJlc3BpcmF0aW9uLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MyBSZXNwaXJhdGlvbiBNb2RlczogQ3V0YW5lb3VzIChTa2luKSB8IEJ1Y2NvcGhhcnluZ2VhbCAoT3JhbCkgfCBQdWxtb25hcnkgKEx1bmdzKTwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Respiratory Modes" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.2: 3D Cutaneous, Buccopharyngeal &amp; Pulmonary Respiration Systems of Frog</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow3">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad3)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow3)">Cutaneous, Buccopharyngeal &amp; Pulmonary Respiration Systems of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00B09B" text-anchor="middle">1. CUTANEOUS (SKIN)</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Moist, slippery skin</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Dissolved O2 diffuses</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">into cutaneous blood</text>
+    <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">capillaries directly.</text>
+    
+    <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#80CBC4">• Operational Periods:</text>
+    <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">1. In water swimming.</text>
+    <text x="20" y="215" font-family="sans-serif" font-size="12" fill="#FFF">2. Hibernation (winter).</text>
+    <text x="20" y="235" font-family="sans-serif" font-size="12" fill="#FFF">3. Aestivation (summer).</text>
+    
+    <text x="20" y="280" font-family="sans-serif" font-size="12" fill="#69F0AE">• Only respiration mode</text>
+    <text x="20" y="298" font-family="sans-serif" font-size="12" fill="#69F0AE">  during sleep states!</text>
+  </g>
+  <g transform="translate(267, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081" text-anchor="middle">2. BUCCOPHARYNGEAL</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Oral Mucosa Exchange</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Moist lining of buccal</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">cavity absorbs oxygen</text>
+    <text x="20" y="134" font-family="sans-serif" font-size="12" fill="#FFF">on land environment.</text>
+    
+    <text x="20" y="170" font-family="sans-serif" font-size="13" font-weight="bold" fill="#FF80AB">• Mechanism:</text>
+    <text x="20" y="195" font-family="sans-serif" font-size="12" fill="#FFF">Buccal floor moves up</text>
+    <text x="20" y="213" font-family="sans-serif" font-size="12" fill="#FFF">&amp; down drawing air</text>
+    <text x="20" y="231" font-family="sans-serif" font-size="12" fill="#FFF">through nostrils.</text>
+    
+    <text x="20" y="270" font-family="sans-serif" font-size="12" fill="#69F0AE">• Glottis stays closed.</text>
+  </g>
+  <g transform="translate(534, 65)">
+    <rect width="246" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
+    <text x="123" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00E676" text-anchor="middle">3. PULMONARY (LUNGS)</text>
+    <rect x="10" y="48" width="226" height="408" rx="8" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
+    
+    <text x="20" y="75" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Pair of Pink Lungs</text>
+    <text x="20" y="98" font-family="sans-serif" font-size="12" fill="#FFF">Located in thorax.</text>
+    <text x="20" y="116" font-family="sans-serif" font-size="12" fill="#FFF">Alveoli increase area.</text>
+    
+    <text x="20" y="150" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• Air Pathway:</text>
+    <text x="20" y="172" font-family="sans-serif" font-size="12" fill="#FFF">Nostrils - Buccal Cavity</text>
+    <text x="20" y="190" font-family="sans-serif" font-size="12" fill="#FFF">- Glottis - Lungs.</text>
+    
+    <text x="20" y="230" font-family="sans-serif" font-size="12" fill="#69F0AE">• Active land respiration.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">3 Respiration Modes: Cutaneous (Skin) | Buccopharyngeal (Oral) | Pulmonary (Lungs)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.3: 3D Cutaneous, Buccopharyngeal &amp; Pulmonary Respiration Systems of Frog</p>
   <p>• <b style="color: #00B09B;">1. Cutaneous Respiration:</b> Gaseous exchange across moist vascular skin occurring in water, hibernation, and aestivation.<br>
   • <b style="color: #00B09B;">2. Buccopharyngeal Respiration:</b> Exchange across moist lining of buccal cavity on land.<br>
   • <b style="color: #00B09B;">3. Pulmonary Respiration:</b> Lungs (pair of elongated pink sac-like structures) used on land. Air enters nostrils ➔ buccal cavity ➔ lungs.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iv) Circulatory System &amp; Portal Systems of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzMiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQzKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3czKSI+My1DaGFtYmVyZWQgSGVhcnQgJmFtcDsgQ2lyY3VsYXRvcnkgUG9ydGFsIFN5c3RlbSBvZiBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My1DaGFtYmVyZWQgSGVhcnQgU3RydWN0dXJlPC90ZXh0PgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjQwOCIgcng9IjEwIiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBSaWdodCBBdXJpY2xlOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgZGVveHlnZW5hdGVkIGJsb29kIGZyb20gU2ludXMgVmVub3N1cy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMZWZ0IEF1cmljbGU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgb3h5Z2VuYXRlZCBibG9vZCBmcm9tIGx1bmdzL3NraW4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2luZ2xlIFZlbnRyaWNsZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5NdXNjdWxhciBjaGFtYmVyIHB1bXBpbmcgbWl4ZWQgYmxvb2QuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2ludXMgVmVub3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ucmlhbmd1bGFyIGNoYW1iZXIgcmVjZWl2aW5nIFZlbmEgQ2F2YWUuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgQ29udXMgQXJ0ZXJpb3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WZW50cmFsIHRydW5rIGRpdmlkaW5nIGludG8gYW9ydGljIGFyY2hlcy48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvcnRhbCBWZW5vdXMgQ2lyY3VsYXRpb24gU3lzdGVtczwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjE5MCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4xLiBIZXBhdGljIFBvcnRhbCBTeXN0ZW06PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIENvbm5lY3RzIEd1dCAmYW1wOyBJbnRlc3RpbmUgdG8gTGl2ZXIuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFRyYW5zcG9ydHMgYWJzb3JiZWQgbnV0cmllbnRzIHRvIGxpdmVyPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+ICBiZWZvcmUgZW50ZXJpbmcgaGVhcnQgY2lyY3VsYXRpb24uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIyNTUiIHdpZHRoPSIzNTYiIGhlaWdodD0iMjAxIiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4yLiBSZW5hbCBQb3J0YWwgU3lzdGVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIzMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPuKAoiBDb25uZWN0cyBMb3dlciBCb2R5IHRvIEtpZG5leXMuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjMyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFJvdXRlcyBoaW5kbGltYiBibG9vZCB0aHJvdWdoIGtpZG5leXM8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMzQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4gIGZvciB3YXN0ZSBmaWx0cmF0aW9uIGJlZm9yZSBoZWFydC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZyb2cgQ2lyY3VsYXRpb246IDIgQXVyaWNsZXMgKyAxIFZlbnRyaWNsZSB8IEhlcGF0aWMgUG9ydGFsIFN5c3RlbSB8IFJlbmFsIFBvcnRhbCBTeXN0ZW08L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Heart & Portal Systems" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.3: 3D 3-Chambered Heart &amp; Circulatory Portal Systems (Hepatic &amp; Renal) of Frog</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow4">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad4)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow4)">3-Chambered Heart &amp; Circulatory Portal Systems (Hepatic &amp; Renal)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">3-Chambered Heart Structure</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Right Auricle:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives deoxygenated blood from Sinus Venosus.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Left Auricle:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Receives oxygenated blood from lungs/skin.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Single Ventricle:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Muscular chamber pumping mixed blood.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sinus Venosus:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Triangular chamber receiving Vena Cavae.</text>
+
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Conus Arteriosus:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Ventral trunk dividing into aortic arches.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Portal Venous Circulation Systems</text>
+    
+    <rect x="12" y="48" width="356" height="190" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">1. Hepatic Portal System:</text>
+    <text x="36" y="100" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Gut &amp; Intestine to Liver.</text>
+    <text x="36" y="122" font-family="sans-serif" font-size="12.5" fill="#FFF">• Transports absorbed nutrients to liver</text>
+    <text x="36" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">  before entering heart circulation.</text>
+
+    <rect x="12" y="255" width="356" height="201" rx="8" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    <text x="22" y="280" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FF4081">2. Renal Portal System:</text>
+    <text x="36" y="305" font-family="sans-serif" font-size="12.5" fill="#FFF">• Connects Lower Body to Kidneys.</text>
+    <text x="36" y="327" font-family="sans-serif" font-size="12.5" fill="#FFF">• Routes hindlimb blood through kidneys</text>
+    <text x="36" y="345" font-family="sans-serif" font-size="12.5" fill="#FFF">  for waste filtration before heart.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Circulation: 2 Auricles + 1 Ventricle | Hepatic Portal System | Renal Portal System</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.4: 3D 3-Chambered Heart &amp; Circulatory Portal Systems (Hepatic &amp; Renal) of Frog</p>
   <p>• <b style="color: #00B09B;">Heart Architecture:</b> 3-chambered heart consisting of 2 Auricles and 1 Ventricle covered by pericardium. Triangular <b>Sinus Venosus</b> joins right auricle receiving deoxygenated blood from vena cava. Ventricle opens into <b>Conus Arteriosus</b> on ventral side.<br>
   • <b style="color: #00B09B;">Portal Systems:</b> Features specialized <b>Hepatic Portal System</b> (gut to liver) and <b>Renal Portal System</b> (lower body to kidneys).<br>
   • <b style="color: #00B09B;">Blood Composition:</b> RBCs are nucleated, oval, and contain hemoglobin.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(v) Nervous System &amp; 10 Cranial Nerves of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzQiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ0KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c0KSI+TmVydm91cyBTeXN0ZW0gQXJjaGl0ZWN0dXJlICZhbXA7IDEwIENyYW5pYWwgTmVydmVzIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CcmFpbiAmYW1wOyBTcGluYWwgQ29yZCBEaXZpc2lvbnM8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEZvcmVicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk9sZmFjdG9yeSBsb2JlcywgQ2VyZWJydW0sIERpZW5jZXBoYWxvbi48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNaWRicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYWlyIG9mIHByb21pbmVudCBPcHRpYyBMb2Jlcy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIaW5kYnJhaW46PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2VyZWJlbGx1bSAmYW1wOyBNZWR1bGxhIE9ibG9uZ2F0YS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZWR1bGxhIE9ibG9uZ2F0YTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYXNzZXMgdGhyb3VnaCBGb3JhbWVuIE1hZ251bSBpbnRvPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI2NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+dmVydGVicmFsIGNvbHVtbiBhcyBTcGluYWwgQ29yZC48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgMTAgUGFpcnMgb2YgQ3JhbmlhbCBOZXJ2ZXMgcHJlc2VudC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIENyYW5pYWwgTmVydmVzIExpc3Q8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JLiBPbGZhY3RvcnkgKFNlbnNvcnkgLSBTbWVsbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklJLiBPcHRpYyAoU2Vuc29yeSAtIFZpc2lvbik8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JSUkuIE9jdWxvbW90b3IgKE1vdG9yIC0gRXllIG11c2NsZXMpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SVYuIFRyb2NobGVhciAoTW90b3IgLSBFeWUgb2JsaXF1ZSk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WLiBUcmlnZW1pbmFsIChNaXhlZCAtIEphdyAmYW1wOyBGYWNlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJLiBBYmR1Y2VucyAoTW90b3IgLSBFeWUgcmVjdHVzKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSS4gRmFjaWFsIChNaXhlZCAtIEZhY2UgJmFtcDsgVG9uZ3VlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSUkuIEF1ZGl0b3J5IChTZW5zb3J5IC0gQmFsYW5jZS9IZWFyaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklYLiBHbG9zc29waGFyeW5nZWFsIChNaXhlZCAtIFBoYXJ5bngpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjI3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+WC4gVmFndXMgKE1peGVkIC0gSGVhcnQsIEx1bmdzLCBWaXNjZXJhKTwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJvZyBCcmFpbjogRm9yZWJyYWluICsgTWlkYnJhaW4gKyBIaW5kYnJhaW4gfCAxMCBQYWlycyBvZiBDcmFuaWFsIE5lcnZlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Frog Nervous System" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.4: 3D Brain Architecture &amp; 10 Cranial Nerves of Frog</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow5">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad5)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow5)">Nervous System Architecture &amp; 10 Cranial Nerves of Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Brain &amp; Spinal Cord Divisions</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Forebrain:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Olfactory lobes, Cerebrum, Diencephalon.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Midbrain:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Pair of prominent Optic Lobes.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Hindbrain:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Cerebellum &amp; Medulla Oblongata.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Medulla Oblongata:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Passes through Foramen Magnum into</text>
+    <text x="36" y="264" font-family="sans-serif" font-size="12.5" fill="#FFF">vertebral column as Spinal Cord.</text>
+
+    <text x="22" y="305" font-family="sans-serif" font-size="13" font-weight="bold" fill="#69F0AE">• 10 Pairs of Cranial Nerves present.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00E676" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#69F0AE" text-anchor="middle">10 Cranial Nerves List</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00E676" stroke-width="1.2"/>
+    
+    <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">I. Olfactory (Sensory - Smell)</text>
+    <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">II. Optic (Sensory - Vision)</text>
+    <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">III. Oculomotor (Motor - Eye muscles)</text>
+    <text x="22" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">IV. Trochlear (Motor - Eye oblique)</text>
+    <text x="22" y="162" font-family="sans-serif" font-size="12.5" fill="#FFF">V. Trigeminal (Mixed - Jaw &amp; Face)</text>
+    <text x="22" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">VI. Abducens (Motor - Eye rectus)</text>
+    <text x="22" y="206" font-family="sans-serif" font-size="12.5" fill="#FFF">VII. Facial (Mixed - Face &amp; Tongue)</text>
+    <text x="22" y="228" font-family="sans-serif" font-size="12.5" fill="#FFF">VIII. Auditory (Sensory - Balance/Hearing)</text>
+    <text x="22" y="250" font-family="sans-serif" font-size="12.5" fill="#FFF">IX. Glossopharyngeal (Mixed - Pharynx)</text>
+    <text x="22" y="272" font-family="sans-serif" font-size="12.5" fill="#FFF">X. Vagus (Mixed - Heart, Lungs, Viscera)</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Frog Brain: Forebrain + Midbrain + Hindbrain | 10 Pairs of Cranial Nerves</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.5: 3D Brain Architecture &amp; 10 Cranial Nerves of Frog</p>
   <p>• <b style="color: #00B09B;">Central Nervous System:</b> Brain enclosed in cranium and Spinal Cord. Brain divided into <b>Forebrain</b> (Olfactory lobes, Cerebral hemispheres, Diencephalon), <b>Midbrain</b> (Optic lobes), and <b>Hindbrain</b> (Cerebellum, Medulla oblongata). Medulla passes through foramen magnum into spinal cord.<br>
   • <b style="color: #00B09B;">Cranial Nerves:</b> Features <b style="color: #00B09B;">10 Pairs of Cranial Nerves</b> arising from the brain.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vi) Male Reproductive System of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ1KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c1KSI+TWFsZSBSZXByb2R1Y3RpdmUgU3lzdGVtIEFyY2hpdGVjdHVyZSBvZiBNYWxlIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWxlIE9yZ2FucyAmYW1wOyBUZXN0ZXMgQW5hdG9teTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgUGFpciBvZiBUZXN0ZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Pdm9pZCB5ZWxsb3dpc2ggb3JnYW5zIGF0dGFjaGVkIHRvIGtpZG5leS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZXNvcmNoaXVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkRvdWJsZSBmb2xkIGZvbGQgb2YgcGVyaXRvbmV1bSBsaW5rLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFZhc2EgRWZmZXJlbnRpYTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4xMC0xMiBkdWN0dWxlcyBhcmlzaW5nIGZyb20gdGVzdGVzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEJpZGRlcidzIENhbmFsOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkludGVybmFsIGtpZG5leSBjYW5hbCByZWNlaXZpbmcgc3Blcm0uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgVXJpbm9nZW5pdGFsIER1Y3Q6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2FycmllcyB1cmluZSAmYW1wOyBzcGVybXMgdG8gQ2xvYWNhLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3Blcm0gUGF0aHdheSBGbG93Y2hhcnQ8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+VGVzdGVzIChTcGVybSBQcm9kdWN0aW9uKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+MTAtMTIgVmFzYSBFZmZlcmVudGlhIER1Y3R1bGVzPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5LaWRuZXlzIChCaWRkZXIncyBDYW5hbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPlVyaW5vZ2VuaXRhbCBEdWN0PC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DbG9hY2EgLSBFeHRlcmlvciBEaXNjaGFyZ2U8L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbGUgRnJvZzogVGVzdGVzIC0gTWVzb3JjaGl1bSAtIFZhc2EgRWZmZXJlbnRpYSAtIEJpZGRlcidzIENhbmFsIC0gQ2xvYWNhPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Male Reproductive System of Frog" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.5: 3D Male Reproductive System Architecture of Male Frog (Testes, Vasa Efferentia &amp; Bidder's Canal)</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow6">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad6)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow6)">Male Reproductive System Architecture of Male Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Male Organs &amp; Testes Anatomy</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Testes:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovoid yellowish organs attached to kidney.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Mesorchium:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Double fold fold of peritoneum link.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Vasa Efferentia:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">10-12 ductules arising from testes.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Bidder's Canal:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Internal kidney canal receiving sperm.</text>
+
+    <text x="22" y="275" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Urinogenital Duct:</text>
+    <text x="36" y="296" font-family="sans-serif" font-size="12.5" fill="#FFF">Carries urine &amp; sperms to Cloaca.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Sperm Pathway Flowchart</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Testes (Sperm Production)</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">10-12 Vasa Efferentia Ductules</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Kidneys (Bidder's Canal)</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Urinogenital Duct</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca - Exterior Discharge</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Male Frog: Testes - Mesorchium - Vasa Efferentia - Bidder's Canal - Cloaca</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.6: 3D Male Reproductive System Architecture of Male Frog (Testes, Vasa Efferentia &amp; Bidder's Canal)</p>
   <p>• <b style="color: #00B09B;">Male Organs:</b> Pair of yellowish ovoid <b>Testes</b> adhered to upper kidneys by double fold of peritoneum called <b>Mesorchium</b>.<br>
   • <b style="color: #00B09B;">Bidder's Canal:</b> 10-12 <b>Vasa Efferentia</b> arise from testes, enter kidneys, and open into <b style="color: #00B09B;">Bidder's Canal</b>. Urinogenital duct opens into cloaca.</p>
 
   <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vii) Female Reproductive System &amp; Metamorphosis of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzYiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ2KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c2KSI+RmVtYWxlIFJlcHJvZHVjdGl2ZSBTeXN0ZW0gQXJjaGl0ZWN0dXJlIG9mIEZlbWFsZSBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RmVtYWxlIE9yZ2FucyAmYW1wOyBPdmFyaWVzIEFuYXRvbXk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFBhaXIgb2YgT3Zhcmllczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxhcmdlIGxvYnVsYXRlZCBvcmdhbnMgbmVhciBraWRuZXlzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5PIENvbm5lY3Rpb24gd2l0aCBLaWRuZXlzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk92YXJpZXMgaGF2ZSBOTyBsaW5rIHdpdGgga2lkbmV5cyE8L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYWlyIG9mIE92aWR1Y3RzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkNvaWxlZCB0dWJlcyBvcGVuaW5nIGludG8gQ2xvYWNhLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEVnZyBQcm9kdWN0aW9uOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxheXMgMjUwMC0zMDAwIG92YSBhdCBvbmUgdGltZS48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk92YSBQYXRod2F5ICZhbXA7IEV4dGVybmFsIEZlcnRpbGl6YXRpb248L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+T3ZhcmllcyAoUHJvZHVjZSAyNTAwLTMwMDAgT3ZhKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+Q29pbGVkIE92aWR1Y3RzIChTZXBhcmF0ZSBvcGVuaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+Q2xvYWNhPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpMgKFNwYXduaW5nIGluIFdhdGVyKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPkV4dGVybmFsIEZlcnRpbGl6YXRpb24gaW4gV2F0ZXI8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoVGh5cm94aW4gZHJpdmVuKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlRhZHBvbGUgTGFydmEgLSBBZHVsdCBGcm9nPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GZW1hbGUgRnJvZzogT3ZhcmllcyAoTm8ga2lkbmV5IGxpbmspIC0gQ29pbGVkIE92aWR1Y3RzIC0gQ2xvYWNhIC0gV2F0ZXIgRmVydGlsaXphdGlvbjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D Female Reproductive System of Frog" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.6: 3D Female Reproductive System Architecture of Female Frog (Ovaries, Oviducts &amp; Cloaca)</p></div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow7">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad7)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow7)">Female Reproductive System Architecture of Female Frog</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Female Organs &amp; Ovaries Anatomy</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Ovaries:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Large lobulated organs near kidneys.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• NO Connection with Kidneys:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ovaries have NO link with kidneys!</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Pair of Oviducts:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Coiled tubes opening into Cloaca.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Egg Production:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Lays 2500-3000 ova at one time.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Ova Pathway &amp; External Fertilization</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="80" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Ovaries (Produce 2500-3000 Ova)</text>
+    <text x="190" y="105" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="130" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">Coiled Oviducts (Separate opening)</text>
+    <text x="190" y="155" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓</text>
+    
+    <text x="22" y="180" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Cloaca</text>
+    <text x="190" y="205" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Spawning in Water)</text>
+    
+    <text x="22" y="230" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FFF">External Fertilization in Water</text>
+    <text x="190" y="255" font-family="sans-serif" font-size="15" fill="#69F0AE" text-anchor="middle">↓ (Thyroxin driven)</text>
+    
+    <text x="22" y="280" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">Tadpole Larva - Adult Frog</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Female Frog: Ovaries (No kidney link) - Coiled Oviducts - Cloaca - Water Fertilization</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.7: 3D Female Reproductive System Architecture of Female Frog (Ovaries, Oviducts &amp; Cloaca)</p>
   <p>• <b style="color: #00B09B;">Female Organs:</b> Pair of large <b>Ovaries</b> situated near kidneys (no functional connection with kidneys). Oviducts open separately into cloaca. Female lays 2500-3000 ova at a time.<br>
   • <b style="color: #00B09B;">Fertilization &amp; Metamorphosis:</b> External fertilization in water. Development involves ciliated aquatic <b>Tadpole Larva</b> undergoing thyroxin-driven metamorphosis into adult frog.</p>
 
@@ -125,16 +537,484 @@ export const c11Zoo2HtmlOverview = `
 
   <p>All living organisms are composed of organic chemical compounds termed <b>Biomolecules</b>. Chemical analysis of living tissue (grinding liver/plant tissue in Trichloroacetic acid Cl3CCOOH and filtering through cheesecloth) separates cellular compounds into two fractions: <b>Acid-Soluble Pool</b> (micromolecules, &lt;1000 Da) and <b>Acid-Insoluble Retentate</b> (macromolecules, &gt;10,000 Da).</p>
 
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Structure and Function of Nucleic Acids (DNA &amp; RNA)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMTAiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGYwNTFjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1MDIwYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9Imdsb3cxMCI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBCMDlCIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjYyMCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEwKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxMCkiPkItRE5BIERvdWJsZSBIZWxpeCB2cyBSTkEgU2luZ2xlIFN0cmFuZCBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CLUROQSBEb3VibGUgSGVsaXggKFdhdHNvbi1Dcmljayk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFN0cmFuZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ud28gYW50aXBhcmFsbGVsIHBvbHludWNsZW90aWRlIGNoYWlucy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTdWdhcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yJy1EZW94eXJpYm9zZSBQZW50b3NlIFN1Z2FyLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5pdHJvZ2Vub3VzIEJhc2VzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkFkZW5pbmUgPSBUaHltaW5lOyBHdWFuaW5lIOKJoSBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIZWxpeCBEaW1lbnNpb25zOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlBpdGNoID0gMzQgw4UgcGVyIHR1cm47IDEwIGJwL3R1cm4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgRnVuY3Rpb246IFN0YWJsZSBnZW5ldGljIGJsdWVwcmludC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJOQSBTaW5nbGUgU3RyYW5kIEFyY2hpdGVjdHVyZTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgU3RyYW5kOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+U2luZ2xlLXN0cmFuZGVkIHBvbHludWNsZW90aWRlIGNoYWluLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+4oCiIFN1Z2FyOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlJpYm9zZSBTdWdhciAod2l0aCAyJy1PSCBncm91cCkuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgTml0cm9nZW5vdXMgQmFzZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QWRlbmluZSwgVXJhY2lsLCBHdWFuaW5lLCBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPuKAoiBUeXBlczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5tUk5BIChtZXNzZW5nZXIpLCB0Uk5BLCByUk5BLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEZ1bmN0aW9uOiBUcmFuc2xhdGlvbiAmYW1wOyBSaWJvenltZXMuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ETkE6IERlb3h5cmlib3NlICsgVGh5bWluZSArIERvdWJsZSBIZWxpeCB8IFJOQTogUmlib3NlICsgVXJhY2lsICsgU2luZ2xlIFN0cmFuZDwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" alt="3D DNA vs RNA Structure" /><p style="color: #00B09B; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 2.7: 3D B-DNA Double Helix (Watson-Crick Model) vs Single-Stranded RNA Structure</p></div>
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Biomolecules Chemical Analysis (Acid-Soluble Pool vs Retentate)</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow8">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad8)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow8)">Biomolecules Chemical Analysis (Acid-Soluble Pool vs Retentate)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Acid-Soluble Pool (&lt;1000 Da)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Trichloroacetic Acid Extraction:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Tissue ground in Cl3CCOOH &amp; filtered.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Micromolecules Fraction:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Molecular weight: 18 to 800 Da.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Constituents:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Monosaccharides, Amino acids, Nucleotides.</text>
+
+    <text x="22" y="235" font-family="sans-serif" font-size="12.5" font-weight="bold" fill="#69F0AE">• Represents cytoplasmic composition.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Acid-Insoluble Retentate (&gt;10,000 Da)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Macromolecules Fraction:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Molecular weight: &gt;10,000 Da.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Constituents:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Proteins, Polysaccharides, Nucleic acids.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Lipid Exception (&lt;800 Da):</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Cell membrane fragments form vesicles</text>
+    <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">retained in insoluble filterate.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Biomolecules: Acid-Soluble Pool (&lt;1000 Da) vs Acid-Insoluble Retentate (&gt;10,000 Da + Lipids)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.8: 3D Biomolecules Chemical Analysis (Acid-Soluble Pool vs Retentate)</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Structure and Function of Carbohydrates</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow9">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad9)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow9)">Structure &amp; Classification of Carbohydrates (Glycosidic Bonds)</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Monosaccharides &amp; Disaccharides</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Monosaccharides:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Glucose, Fructose, Ribose, Deoxyribose.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Disaccharides:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Sucrose, Maltose, Lactose.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Glycosidic Bond:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Covalent linkage formed by dehydration</text>
+    <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">synthesis between monosaccharides.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Polysaccharides Storage &amp; Structure</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Starch:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Plant helical storage polymer (Amylose).</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Glycogen:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Animal branched storage in liver/muscles.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Cellulose:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Unbranched structural polymer in plants.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Chitin:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">N-acetylglucosamine exoskeleton polymer.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Carbohydrates: Monosaccharides | Disaccharides (Glycosidic Bond) | Polysaccharides (Starch/Glycogen)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.9: 3D Structure &amp; Classification of Carbohydrates (Glycosidic Bonds)</p>
+  <p>• <b style="color: #00B09B;">1. Carbohydrates (Hydrates of Carbon):</b><br>
+  - <b style="color: #00B09B;">Monosaccharides:</b> Simple sugars (Trioses, Pentoses like Ribose/Deoxyribose, Hexoses like Glucose/Fructose).<br>
+  - <b style="color: #00B09B;">Disaccharides &amp; Polysaccharides:</b> Monosaccharides linked by <b style="color: #00B09B;">Glycosidic Bonds</b> formed via dehydration. Storage polysaccharides include <b>Starch</b> (plants) and <b>Glycogen</b> (animals, branched helical chain). Structural polysaccharides include <b>Cellulose</b> (plant cell walls) and <b>Chitin</b> (fungal walls &amp; arthropod exoskeleton).</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) Structure and Function of Proteins</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow10">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad10)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow10)">Amino Acid Zwitterions &amp; 4 Protein Structural Levels</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Amino Acids &amp; Zwitterion Dipole</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• 20 Standard Amino Acids:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Substituted methanes with -NH2, -COOH, -R.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Zwitterion Form:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Dipolar ion with +NH3 &amp; -COO- at pI.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Peptide Bond:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Amide linkage (-CO-NH-) by dehydration.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">4 Structural Levels of Protein</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">1. Primary Structure:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Linear sequence of amino acids.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">2. Secondary Structure:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Alpha-helix &amp; Beta-pleated sheet.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">3. Tertiary Structure:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Overall 3D folding forming active site.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">4. Quaternary Structure:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Multi-subunit assembly (Hemoglobin).</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Proteins: Zwitterion Amino Acids | Peptide Bond (-CO-NH-) | 4 Structural Levels (Primary to 3D)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.10: 3D Amino Acid Zwitterions &amp; 4 Structural Levels of Protein Architecture</p>
+  <p>• <b style="color: #00B09B;">2. Proteins (Polypeptides):</b><br>
+  - Heteropolymers of 20 standard <b>Amino Acids</b> linked sequentially by <b style="color: #00B09B;">Peptide Bonds (-CO-NH-)</b>.<br>
+  - <b style="color: #00B09B;">Amino Acid Structure:</b> Alpha-carbon bonded to -NH2, -COOH, -H, and variable -R group. Exist as dipolar <b style="color: #00B09B;">Zwitterions</b> at isoelectric pH.<br>
+  - <b style="color: #00B09B;">Structural Levels:</b> Primary (linear amino acid sequence), Secondary (alpha-helix / beta-pleated sheet), Tertiary (overall 3D folding crucial for enzyme active site), Quaternary (multi-subunit assembly e.g. Hemoglobin with 2 alpha + 2 beta chains).<br>
+  - <b style="color: #00B09B;">Abundant Proteins:</b> <b style="color: #00B09B;">Collagen</b> (most abundant protein in animal world); <b style="color: #00B09B;">RuBisCO</b> (most abundant protein in entire biosphere).</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iv) Structure and Function of Lipids</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow11">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad11)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow11)">Lipid Classification, Triglycerides &amp; Phospholipid Membrane</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Simple Lipids &amp; Fatty Acids</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Triglycerides:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">1 Glycerol + 3 Fatty Acids linked by ester.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Saturated Fatty Acids:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">No double bond (Palmitic acid 16C).</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Unsaturated Fatty Acids:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Double bonds present (Oleic acid).</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Phospholipids &amp; Membrane Vesicles</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Lecithin:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Phospholipid framing cell membranes.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Membrane Vesicle Formation:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Lipids form vesicles during grinding,</text>
+    <text x="36" y="164" font-family="sans-serif" font-size="12.5" fill="#FFF">staying in retentate despite low MW.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Lipids: Triglycerides (Ester Bond) | Saturated vs Unsaturated | Lecithin Phospholipid Bilayer</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.11: 3D Lipid Classification, Triglycerides &amp; Phospholipid Membrane Structure</p>
+  <p>• <b style="color: #00B09B;">3. Lipids:</b><br>
+  - Water-insoluble esters of glycerol and fatty acids. Simple lipids include <b>Triglycerides</b> (Glycerol + 3 Fatty Acids). Fatty acids may be <i>Saturated</i> (Palmitic acid 16C, no double bond) or <i>Unsaturated</i> (Oleic acid, double bonds). Compound lipids include <b>Lecithin</b> (Phospholipid framing cell membranes). Lipids reside in retentate fraction due to membrane vesicles despite low MW (&lt;800 Da).</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(v) Structure and Function of Nucleic Acids (DNA &amp; RNA)</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad12" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow12">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad12)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow12)">B-DNA Double Helix vs RNA Single Strand Architecture</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">B-DNA Double Helix (Watson-Crick)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Strands:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Two antiparallel polynucleotide chains.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Sugar:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">2'-Deoxyribose Pentose Sugar.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Nitrogenous Bases:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine = Thymine; Guanine ≡ Cytosine.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Helix Dimensions:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Pitch = 34 Å per turn; 10 bp/turn.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">RNA Single Strand Architecture</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Strand:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Single-stranded polynucleotide chain.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Sugar:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Ribose Sugar (with 2'-OH group).</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Nitrogenous Bases:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Adenine, Uracil, Guanine, Cytosine.</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Types:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">mRNA (messenger), tRNA, rRNA.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">DNA: Deoxyribose + Thymine + Double Helix | RNA: Ribose + Uracil + Single Strand</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.12: 3D B-DNA Double Helix (Watson-Crick Model) vs Single-Stranded RNA Structure</p>
   <p>• <b style="color: #00B09B;">4. Nucleic Acids Structure:</b> High molecular weight polymers composed of <b>Nucleotides</b>. Each nucleotide contains: 1. Nitrogenous Base (Purines: Adenine, Guanine; Pyrimidines: Cytosine, Thymine, Uracil), 2. Pentose Sugar (Ribose / Deoxyribose), 3. Phosphate group.<br>
   • <b style="color: #00B09B;">B-DNA Double Helix vs RNA:</b> Nucleotides linked by <b style="color: #00B09B;">3'-5' Phosphodiester Bonds</b>. <b>B-DNA Double Helix</b> (Watson &amp; Crick model) features antiparallel strands with 34 Å pitch (10 base pairs per turn, 3.4 Å spacing). RNA is single-stranded containing Uracil instead of Thymine.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vi) Primary and Secondary Metabolites</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow13">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad13)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow13)">Primary vs Secondary Metabolites Classification</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Primary Metabolites</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Definition:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Compounds with direct physiological roles.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Examples:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Glucose, Ribose, Amino Acids, Lipids.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Occurrence:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Universal across all living species.</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Secondary Metabolites (NCERT Categories)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">• Alkaloids: Morphine, Codeine.</text>
+    <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">• Lectins: Concanavalin A.</text>
+    <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">• Drugs: Vinblastine, Curcumin.</text>
+    <text x="22" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">• Toxins: Abrin, Ricin.</text>
+    <text x="22" y="162" font-family="sans-serif" font-size="12.5" fill="#FFF">• Essential Oils: Lemon grass oil.</text>
+    <text x="22" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">• Polymeric: Rubber, Gums, Cellulose.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Metabolites: Primary (Essential Growth) vs Secondary (Alkaloids, Lectins, Drugs, Rubber)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.13: 3D Primary vs Secondary Metabolites Classification (Alkaloids, Lectins, Drugs)</p>
 
 
   <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
   <h2 style="color: #00B09B; margin-top: 30px; font-size: 20px; font-weight: bold;">Enzymes: Types, Properties and functions</h2>
 
   <p>Enzymes are protein biocatalysts that accelerate chemical reactions by lowering activation energy barriers.</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Enzyme Active Site &amp; Activation Energy Barrier Reduction</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad14" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow14">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad14)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow14)">Enzyme Catalysis &amp; Activation Energy Barrier Reduction</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Active Site &amp; ES Complex</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Active Site Crevice:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">3D pocket formed by tertiary folding.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• ES Complex Formation:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Substrate (S) binds Active Site (E) ➔ ES.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Transition State:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Transient unstable state ➔ Product (P).</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Lowering of Activation Energy (Ea)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Energy Barrier:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Minimum energy required to reach</text>
+    <text x="36" y="114" font-family="sans-serif" font-size="12.5" fill="#FFF">transition state from substrate state.</text>
+
+    <text x="22" y="145" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Enzymatic Acceleration:</text>
+    <text x="36" y="166" font-family="sans-serif" font-size="12.5" fill="#FFF">Enzyme LOWERS Activation Energy (Ea)</text>
+    <text x="36" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">allowing rapid product formation!</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Enzymes: Substrate (S) + Enzyme (E) ➔ ES Complex ➔ Lowers Activation Energy (Ea) ➔ Product (P)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.14: 3D Enzyme Active Site Catalysis &amp; Lowering of Activation Energy (Ea)</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Enzyme Kinetics (Vmax, Km) &amp; Competitive Inhibition</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad15" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow15">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad15)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow15)">Enzyme Kinetics (Vmax, Km) &amp; Competitive Inhibition</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">Michaelis-Menten Kinetics (Vmax &amp; Km)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Maximum Velocity (Vmax):</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Rate when all enzyme active sites saturated.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#00B09B">• Michaelis Constant (Km):</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Substrate concentration at 1/2 Vmax.</text>
+    <text x="36" y="164" font-family="sans-serif" font-size="12.5" fill="#FFF">Lower Km = Higher enzyme affinity!</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Competitive Inhibition (Malonate)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Structural Mimicry:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Malonate mimics Succinate substrate.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Enzyme Inhibited:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Succinic Dehydrogenase.</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Kinetic Effect:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Km INCREASES (lowers affinity);</text>
+    <text x="36" y="214" font-family="sans-serif" font-size="12.5" fill="#FFF">Vmax remains UNCHANGED!</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Enzyme Kinetics: Km = [S] at 1/2 Vmax | Competitive Inhibitor (Malonate) increases Km, Vmax constant</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.15: 3D Enzyme Kinetics (Vmax, Km) &amp; Competitive Inhibition (Malonate)</p>
+
+  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) 6 IUBMB Enzyme Classes &amp; Holoenzyme Architecture</h3>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" width="100%" height="100%" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;">
+  <defs>
+    <linearGradient id="bgGrad16" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05020a"/>
+      <stop offset="50%" stop-color="#0f051c"/>
+      <stop offset="100%" stop-color="#05020a"/>
+    </linearGradient>
+    <filter id="glow16">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00B09B" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <rect width="820" height="620" rx="16" fill="url(#bgGrad16)" stroke="#00B09B" stroke-width="3"/>
+  <text x="410" y="42" font-family="system-ui, sans-serif" font-size="21" font-weight="bold" fill="#00B09B" text-anchor="middle" filter="url(#glow16)">6 IUBMB Enzyme Classes &amp; Holoenzyme Architecture</text>
+  
+  <g transform="translate(20, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#00B09B" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#80CBC4" text-anchor="middle">6 IUBMB Enzyme Classes (OTH LIL)</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#00B09B" stroke-width="1.2"/>
+    
+    <text x="22" y="74" font-family="sans-serif" font-size="12.5" fill="#FFF">1. Oxidoreductases (Redox reactions)</text>
+    <text x="22" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">2. Transferases (Group transfer)</text>
+    <text x="22" y="118" font-family="sans-serif" font-size="12.5" fill="#FFF">3. Hydrolases (Hydrolysis cleavage)</text>
+    <text x="22" y="140" font-family="sans-serif" font-size="12.5" fill="#FFF">4. Lyases (Double bond cleavage)</text>
+    <text x="22" y="162" font-family="sans-serif" font-size="12.5" fill="#FFF">5. Isomerases (Structural rearrangement)</text>
+    <text x="22" y="184" font-family="sans-serif" font-size="12.5" fill="#FFF">6. Ligases (ATP-driven joining)</text>
+  </g>
+  <g transform="translate(420, 65)">
+    <rect width="380" height="470" rx="14" fill="#0a0314" stroke="#FF4081" stroke-width="2"/>
+    <text x="190" y="30" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FF80AB" text-anchor="middle">Holoenzyme = Apoenzyme + Co-factor</text>
+    <rect x="12" y="48" width="356" height="408" rx="10" fill="#06020c" stroke="#FF4081" stroke-width="1.2"/>
+    
+    <text x="22" y="75" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Apoenzyme:</text>
+    <text x="36" y="96" font-family="sans-serif" font-size="12.5" fill="#FFF">Protein part of enzyme.</text>
+
+    <text x="22" y="125" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Prosthetic Group:</text>
+    <text x="36" y="146" font-family="sans-serif" font-size="12.5" fill="#FFF">Tightly bound organic co-factor (Heme).</text>
+
+    <text x="22" y="175" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Co-enzyme:</text>
+    <text x="36" y="196" font-family="sans-serif" font-size="12.5" fill="#FFF">Transient organic co-factor (NAD, NADP).</text>
+
+    <text x="22" y="225" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#FF4081">• Metal Ions:</text>
+    <text x="36" y="246" font-family="sans-serif" font-size="12.5" fill="#FFF">Zinc for Carboxypeptidase.</text>
+  </g>
+  <g transform="translate(20, 550)">
+    <rect width="780" height="50" rx="10" fill="#0a0314" stroke="#00B09B" stroke-width="1.8"/>
+    <text x="390" y="31" font-family="sans-serif" font-size="13.5" font-weight="bold" fill="#80CBC4" text-anchor="middle">Enzymes: 6 IUBMB Classes | Holoenzyme = Apoenzyme (Protein) + Co-factor (Non-Protein)</text>
+  </g>
+</svg>
+  <p style="color: #00B09B; font-size: 14px; text-align: center; margin-top: 6px; font-weight: bold;">Figure 2.16: 3D 6 IUBMB Enzyme Classes &amp; Apoenzyme + Co-factor = Holoenzyme Architecture</p>
 
 
   <!-- BOTTOM CHEAT SHEET -->
@@ -667,59 +1547,59 @@ export const c11Zoo2HtmlSolutions = `
   </div>
 
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q56. Detail Frog Digestive System architecture with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q56. Detail Frog External Morphology & Body Plan with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzEiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQxKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxKSI+QWxpbWVudGFyeSBDYW5hbCAmYW1wOyBEaWdlc3RpdmUgU3lzdGVtIG9mIEZyb2cgKFJhbmEgdGlncmluYSk8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3RpdmUgT3JnYW5zIEFyY2hpdGVjdHVyZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE1vdXRoICZhbXA7IEJpZmlkIFRvbmd1ZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlByZXkgY2FwdHVyZSB2aWEgbXVzY3VsYXIgc3RpY2t5IHRvbmd1ZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBFc29waGFndXMgJmFtcDsgU3RvbWFjaDo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5IQ2wgJmFtcDsgUGVwc2luIGNvbnZlcnQgZm9vZCB0byBDaHltZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMaXZlciAmYW1wOyBHYWxsYmxhZGRlcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TZWNyZXRlcyBiaWxlIHN0b3JlZCBpbiBHYWxsYmxhZGRlci48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYW5jcmVhczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Qcm9kdWNlcyBwYW5jcmVhdGljIGRpZ2VzdGl2ZSBqdWljZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTbWFsbCBJbnRlc3RpbmU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+VmlsbGkgJmFtcDsgbWljcm92aWxsaSBhYnNvcmIgbnV0cmllbnRzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFJlY3R1bSAmYW1wOyBDbG9hY2E6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjM0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+RmVjYWwgd2FzdGUgZW50ZXJzIGNsb2FjYSBmb3IgZXhwdWxzaW9uLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENhcm5pdm9yb3VzIERpZXQgQWRhcHRhdGlvbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iNDA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+U2hvcnQgYWxpbWVudGFyeSBjYW5hbCBzdHJ1Y3R1cmUuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWdlc3Rpb24gRmxvd2NoYXJ0PC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5JbnNlY3RzIENhcHR1cmVkIGJ5IEJpZmlkIFRvbmd1ZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+UGhhcnlueCAtIEVzb3BoYWd1cyAtIFN0b21hY2g8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoSENsICsgR2FzdHJpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DaHltZSBGb3JtZWQgaW4gU3RvbWFjaDwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTIChCaWxlICsgUGFuY3JlYXRpYyBKdWljZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5JbnRlc3RpbmFsIEFic29ycHRpb24gYnkgVmlsbGk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlJlY3R1bSAtIENsb2FjYSAtIEV4dGVyaW9yPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Gcm9nIERpZ2VzdGlvbjogQmlmaWQgVG9uZ3VlIC0gU3RvbWFjaCBDaHltZSAtIEJpbGUgJmFtcDsgUGFuY3JlYXMgLSBDbG9hY2E8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Digestive System' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q56: 3D Alimentary Canal & Digestive System of Frog</p></div>
+      Streamlined head and trunk, moist slippery skin, nictitating eye membrane, tympanum, vocal sacs & nuptial pads in males.<br><br><div style='text-align: center; margin: 10px 0;'>${svg1}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q56: 3D External Morphology & Body Plan of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q57. Detail Frog Respiratory System (3 Modes) with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q57. Detail Frog Digestive System architecture with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzIiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQyKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cyKSI+Q3V0YW5lb3VzLCBCdWNjb3BoYXJ5bmdlYWwgJmFtcDsgUHVsbW9uYXJ5IFJlc3BpcmF0aW9uIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBDVVRBTkVPVVMgKFNLSU4pPC90ZXh0PgogICAgPHJlY3QgeD0iMTAiIHk9IjQ4IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjQwOCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPuKAoiBNb2lzdCwgc2xpcHBlcnkgc2tpbjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSI5OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkRpc3NvbHZlZCBPMiBkaWZmdXNlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5pbnRvIGN1dGFuZW91cyBibG9vZDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXBpbGxhcmllcyBkaXJlY3RseS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIE9wZXJhdGlvbmFsIFBlcmlvZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjE5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPjEuIEluIHdhdGVyIHN3aW1taW5nLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj4yLiBIaWJlcm5hdGlvbiAod2ludGVyKS48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+My4gQWVzdGl2YXRpb24gKHN1bW1lcikuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIE9ubHkgcmVzcGlyYXRpb24gbW9kZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj4gIGR1cmluZyBzbGVlcCBzdGF0ZXMhPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjcsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBCVUNDT1BIQVJZTkdFQUw8L3RleHQ+CiAgICA8cmVjdCB4PSIxMCIgeT0iNDgiIHdpZHRoPSIyMjYiIGhlaWdodD0iNDA4IiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE9yYWwgTXVjb3NhIEV4Y2hhbmdlPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TW9pc3QgbGluaW5nIG9mIGJ1Y2NhbDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5jYXZpdHkgYWJzb3JicyBveHlnZW48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+b24gbGFuZCBlbnZpcm9ubWVudC48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE1lY2hhbmlzbTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+QnVjY2FsIGZsb29yIG1vdmVzIHVwPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjIxMyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPiZhbXA7IGRvd24gZHJhd2luZyBhaXI8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+dGhyb3VnaCBub3N0cmlscy48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjNjlGMEFFIj7igKIgR2xvdHRpcyBzdGF5cyBjbG9zZWQuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzQsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLiBQVUxNT05BUlkgKExVTkdTKTwvdGV4dD4KICAgIDxyZWN0IHg9IjEwIiB5PSI0OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MDgiIHJ4PSI4IiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgUGFpciBvZiBQaW5rIEx1bmdzPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+TG9jYXRlZCBpbiB0aG9yYXguPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjExNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiPkFsdmVvbGkgaW5jcmVhc2UgYXJlYS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIwIiB5PSIxNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEFpciBQYXRod2F5OjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmaWxsPSIjRkZGIj5Ob3N0cmlscyAtIEJ1Y2NhbCBDYXZpdHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRiI+LSBHbG90dGlzIC0gTHVuZ3MuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMCIgeT0iMjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+4oCiIEFjdGl2ZSBsYW5kIHJlc3BpcmF0aW9uLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MyBSZXNwaXJhdGlvbiBNb2RlczogQ3V0YW5lb3VzIChTa2luKSB8IEJ1Y2NvcGhhcnluZ2VhbCAoT3JhbCkgfCBQdWxtb25hcnkgKEx1bmdzKTwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Respiration' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q57: 3D Respiration Modes of Frog</p></div>
+      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style='text-align: center; margin: 10px 0;'>${svg2}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q57: 3D Alimentary Canal & Digestive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q58. Detail Frog Heart & Portal Circulation with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q58. Detail Frog Respiratory System (3 Modes) with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzMiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQzKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3czKSI+My1DaGFtYmVyZWQgSGVhcnQgJmFtcDsgQ2lyY3VsYXRvcnkgUG9ydGFsIFN5c3RlbSBvZiBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My1DaGFtYmVyZWQgSGVhcnQgU3RydWN0dXJlPC90ZXh0PgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjQwOCIgcng9IjEwIiBmaWxsPSIjMDYwMjBjIiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBSaWdodCBBdXJpY2xlOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgZGVveHlnZW5hdGVkIGJsb29kIGZyb20gU2ludXMgVmVub3N1cy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBMZWZ0IEF1cmljbGU6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+UmVjZWl2ZXMgb3h5Z2VuYXRlZCBibG9vZCBmcm9tIGx1bmdzL3NraW4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2luZ2xlIFZlbnRyaWNsZTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5NdXNjdWxhciBjaGFtYmVyIHB1bXBpbmcgbWl4ZWQgYmxvb2QuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgU2ludXMgVmVub3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ucmlhbmd1bGFyIGNoYW1iZXIgcmVjZWl2aW5nIFZlbmEgQ2F2YWUuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgQ29udXMgQXJ0ZXJpb3N1czo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WZW50cmFsIHRydW5rIGRpdmlkaW5nIGludG8gYW9ydGljIGFyY2hlcy48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBvcnRhbCBWZW5vdXMgQ2lyY3VsYXRpb24gU3lzdGVtczwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjE5MCIgcng9IjgiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSI3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4xLiBIZXBhdGljIFBvcnRhbCBTeXN0ZW06PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIENvbm5lY3RzIEd1dCAmYW1wOyBJbnRlc3RpbmUgdG8gTGl2ZXIuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjEyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFRyYW5zcG9ydHMgYWJzb3JiZWQgbnV0cmllbnRzIHRvIGxpdmVyPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+ICBiZWZvcmUgZW50ZXJpbmcgaGVhcnQgY2lyY3VsYXRpb24uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIyNTUiIHdpZHRoPSIzNTYiIGhlaWdodD0iMjAxIiByeD0iOCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj4yLiBSZW5hbCBQb3J0YWwgU3lzdGVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIzMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPuKAoiBDb25uZWN0cyBMb3dlciBCb2R5IHRvIEtpZG5leXMuPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjMyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIFJvdXRlcyBoaW5kbGltYiBibG9vZCB0aHJvdWdoIGtpZG5leXM8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMzQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4gIGZvciB3YXN0ZSBmaWx0cmF0aW9uIGJlZm9yZSBoZWFydC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZyb2cgQ2lyY3VsYXRpb246IDIgQXVyaWNsZXMgKyAxIFZlbnRyaWNsZSB8IEhlcGF0aWMgUG9ydGFsIFN5c3RlbSB8IFJlbmFsIFBvcnRhbCBTeXN0ZW08L3RleHQ+CiAgPC9nPgo8L3N2Zz4=' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Heart & Portal' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q58: 3D Frog Heart & Portal Systems</p></div>
+      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style='text-align: center; margin: 10px 0;'>${svg3}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q58: 3D Respiration Modes of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q59. Detail Frog Nervous System & 10 Cranial Nerves with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q59. Detail Frog Heart & Portal Circulation with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Brain divisions + 10 pairs of cranial nerves.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzQiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ0KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c0KSI+TmVydm91cyBTeXN0ZW0gQXJjaGl0ZWN0dXJlICZhbXA7IDEwIENyYW5pYWwgTmVydmVzIG9mIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CcmFpbiAmYW1wOyBTcGluYWwgQ29yZCBEaXZpc2lvbnM8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEZvcmVicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk9sZmFjdG9yeSBsb2JlcywgQ2VyZWJydW0sIERpZW5jZXBoYWxvbi48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNaWRicmFpbjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYWlyIG9mIHByb21pbmVudCBPcHRpYyBMb2Jlcy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIaW5kYnJhaW46PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2VyZWJlbGx1bSAmYW1wOyBNZWR1bGxhIE9ibG9uZ2F0YS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZWR1bGxhIE9ibG9uZ2F0YTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QYXNzZXMgdGhyb3VnaCBGb3JhbWVuIE1hZ251bSBpbnRvPC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI2NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+dmVydGVicmFsIGNvbHVtbiBhcyBTcGluYWwgQ29yZC48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgMTAgUGFpcnMgb2YgQ3JhbmlhbCBOZXJ2ZXMgcHJlc2VudC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEwIENyYW5pYWwgTmVydmVzIExpc3Q8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JLiBPbGZhY3RvcnkgKFNlbnNvcnkgLSBTbWVsbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklJLiBPcHRpYyAoU2Vuc29yeSAtIFZpc2lvbik8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5JSUkuIE9jdWxvbW90b3IgKE1vdG9yIC0gRXllIG11c2NsZXMpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SVYuIFRyb2NobGVhciAoTW90b3IgLSBFeWUgb2JsaXF1ZSk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5WLiBUcmlnZW1pbmFsIChNaXhlZCAtIEphdyAmYW1wOyBGYWNlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxODQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJLiBBYmR1Y2VucyAoTW90b3IgLSBFeWUgcmVjdHVzKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSS4gRmFjaWFsIChNaXhlZCAtIEZhY2UgJmFtcDsgVG9uZ3VlKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlZJSUkuIEF1ZGl0b3J5IChTZW5zb3J5IC0gQmFsYW5jZS9IZWFyaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPklYLiBHbG9zc29waGFyeW5nZWFsIChNaXhlZCAtIFBoYXJ5bngpPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjI3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+WC4gVmFndXMgKE1peGVkIC0gSGVhcnQsIEx1bmdzLCBWaXNjZXJhKTwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDU1MCkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RnJvZyBCcmFpbjogRm9yZWJyYWluICsgTWlkYnJhaW4gKyBIaW5kYnJhaW4gfCAxMCBQYWlycyBvZiBDcmFuaWFsIE5lcnZlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Frog Nervous System' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q59: 3D Frog Nervous System & Cranial Nerves</p></div>
+      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style='text-align: center; margin: 10px 0;'>${svg4}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q59: 3D Frog Heart & Portal Systems</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q60. Detail Male Reproductive System of Frog with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q60. Detail Frog Nervous System & 10 Cranial Nerves with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ1KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c1KSI+TWFsZSBSZXByb2R1Y3RpdmUgU3lzdGVtIEFyY2hpdGVjdHVyZSBvZiBNYWxlIEZyb2c8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NYWxlIE9yZ2FucyAmYW1wOyBUZXN0ZXMgQW5hdG9teTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgUGFpciBvZiBUZXN0ZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Pdm9pZCB5ZWxsb3dpc2ggb3JnYW5zIGF0dGFjaGVkIHRvIGtpZG5leS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBNZXNvcmNoaXVtOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkRvdWJsZSBmb2xkIGZvbGQgb2YgcGVyaXRvbmV1bSBsaW5rLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFZhc2EgRWZmZXJlbnRpYTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4xMC0xMiBkdWN0dWxlcyBhcmlzaW5nIGZyb20gdGVzdGVzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEJpZGRlcidzIENhbmFsOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkludGVybmFsIGtpZG5leSBjYW5hbCByZWNlaXZpbmcgc3Blcm0uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMDlCIj7igKIgVXJpbm9nZW5pdGFsIER1Y3Q6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+Q2FycmllcyB1cmluZSAmYW1wOyBzcGVybXMgdG8gQ2xvYWNhLjwvdGV4dD4KICA8L2c+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3Blcm0gUGF0aHdheSBGbG93Y2hhcnQ8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+VGVzdGVzIChTcGVybSBQcm9kdWN0aW9uKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+MTAtMTIgVmFzYSBFZmZlcmVudGlhIER1Y3R1bGVzPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIxNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5LaWRuZXlzIChCaWRkZXIncyBDYW5hbCk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjIwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkzwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPlVyaW5vZ2VuaXRhbCBEdWN0PC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpM8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5DbG9hY2EgLSBFeHRlcmlvciBEaXNjaGFyZ2U8L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA1NTApIj4KICAgIDxyZWN0IHdpZHRoPSI3ODAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1hbGUgRnJvZzogVGVzdGVzIC0gTWVzb3JjaGl1bSAtIFZhc2EgRWZmZXJlbnRpYSAtIEJpZGRlcidzIENhbmFsIC0gQ2xvYWNhPC90ZXh0PgogIDwvZz4KPC9zdmc+' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Male Frog Reproduction' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q60: 3D Male Reproductive System of Frog</p></div>
+      Brain divisions + 10 pairs of cranial nerves.<br><br><div style='text-align: center; margin: 10px 0;'>${svg5}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q60: 3D Frog Nervous System & Cranial Nerves</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q61. Detail Female Reproductive System of Frog with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q61. Detail Male Reproductive System of Frog with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwNTAyMGEiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwZjA1MWMiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdzYiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwQjA5QiIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjgyMCIgaGVpZ2h0PSI2MjAiIHJ4PSIxNiIgZmlsbD0idXJsKCNiZ0dyYWQ2KSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3c2KSI+RmVtYWxlIFJlcHJvZHVjdGl2ZSBTeXN0ZW0gQXJjaGl0ZWN0dXJlIG9mIEZlbWFsZSBGcm9nPC90ZXh0PgogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA2NSkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NzAiIHJ4PSIxNCIgZmlsbD0iIzBhMDMxNCIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RmVtYWxlIE9yZ2FucyAmYW1wOyBPdmFyaWVzIEFuYXRvbXk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFBhaXIgb2YgT3Zhcmllczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxhcmdlIGxvYnVsYXRlZCBvcmdhbnMgbmVhciBraWRuZXlzLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5PIENvbm5lY3Rpb24gd2l0aCBLaWRuZXlzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPk92YXJpZXMgaGF2ZSBOTyBsaW5rIHdpdGgga2lkbmV5cyE8L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBQYWlyIG9mIE92aWR1Y3RzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkNvaWxlZCB0dWJlcyBvcGVuaW5nIGludG8gQ2xvYWNhLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIEVnZyBQcm9kdWN0aW9uOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxheXMgMjUwMC0zMDAwIG92YSBhdCBvbmUgdGltZS48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk92YSBQYXRod2F5ICZhbXA7IEV4dGVybmFsIEZlcnRpbGl6YXRpb248L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+T3ZhcmllcyAoUHJvZHVjZSAyNTAwLTMwMDAgT3ZhKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+Q29pbGVkIE92aWR1Y3RzIChTZXBhcmF0ZSBvcGVuaW5nKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oaTPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+Q2xvYWNhPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjNjlGMEFFIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7ihpMgKFNwYXduaW5nIGluIFdhdGVyKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPkV4dGVybmFsIEZlcnRpbGl6YXRpb24gaW4gV2F0ZXI8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPuKGkyAoVGh5cm94aW4gZHJpdmVuKTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPlRhZHBvbGUgTGFydmEgLSBBZHVsdCBGcm9nPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5GZW1hbGUgRnJvZzogT3ZhcmllcyAoTm8ga2lkbmV5IGxpbmspIC0gQ29pbGVkIE92aWR1Y3RzIC0gQ2xvYWNhIC0gV2F0ZXIgRmVydGlsaXphdGlvbjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='Female Frog Reproduction' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q61: 3D Female Reproductive System of Frog</p></div>
+      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style='text-align: center; margin: 10px 0;'>${svg6}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q61: 3D Male Reproductive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q62. Detail DNA Double Helix vs RNA Structure with 3D diagram.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q62. Detail Female Reproductive System of Frog with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style='text-align: center; margin: 10px 0;'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNjIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMTAiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDUwMjBhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMGYwNTFjIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA1MDIwYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9Imdsb3cxMCI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBCMDlCIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjYyMCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEwKSIgc3Ryb2tlPSIjMDBCMDlCIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI0MTAiIHk9IjQyIiBmb250LWZhbWlseT0ic3lzdGVtLXVpLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjIxIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsdGVyPSJ1cmwoI2dsb3cxMCkiPkItRE5BIERvdWJsZSBIZWxpeCB2cyBSTkEgU2luZ2xlIFN0cmFuZCBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ3MCIgcng9IjE0IiBmaWxsPSIjMGEwMzE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5CLUROQSBEb3VibGUgSGVsaXggKFdhdHNvbi1Dcmljayk8L3RleHQ+CiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNDA4IiByeD0iMTAiIGZpbGw9IiMwNjAyMGMiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMjIiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIFN0cmFuZHM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9Ijk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ud28gYW50aXBhcmFsbGVsIHBvbHludWNsZW90aWRlIGNoYWlucy48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBTdWdhcjo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMTQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yJy1EZW94eXJpYm9zZSBQZW50b3NlIFN1Z2FyLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjA5QiI+4oCiIE5pdHJvZ2Vub3VzIEJhc2VzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkFkZW5pbmUgPSBUaHltaW5lOyBHdWFuaW5lIOKJoSBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiPuKAoiBIZWxpeCBEaW1lbnNpb25zOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIyNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlBpdGNoID0gMzQgw4UgcGVyIHR1cm47IDEwIGJwL3R1cm4uPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIyODUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgRnVuY3Rpb246IFN0YWJsZSBnZW5ldGljIGJsdWVwcmludC48L3RleHQ+CiAgPC9nPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQyMCwgNjUpIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDcwIiByeD0iMTQiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJOQSBTaW5nbGUgU3RyYW5kIEFyY2hpdGVjdHVyZTwvdGV4dD4KICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSI0MDgiIHJ4PSIxMCIgZmlsbD0iIzA2MDIwYyIgc3Ryb2tlPSIjRkY0MDgxIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIyMiIgeT0iNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgU3RyYW5kOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+U2luZ2xlLXN0cmFuZGVkIHBvbHludWNsZW90aWRlIGNoYWluLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMTI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+4oCiIFN1Z2FyOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM2IiB5PSIxNDYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPlJpYm9zZSBTdWdhciAod2l0aCAyJy1PSCBncm91cCkuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjIyIiB5PSIxNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj7igKIgTml0cm9nZW5vdXMgQmFzZXM6PC90ZXh0PgogICAgPHRleHQgeD0iMzYiIHk9IjE5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QWRlbmluZSwgVXJhY2lsLCBHdWFuaW5lLCBDeXRvc2luZS48L3RleHQ+CgogICAgPHRleHQgeD0iMjIiIHk9IjIyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiPuKAoiBUeXBlczo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNiIgeT0iMjQ2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5tUk5BIChtZXNzZW5nZXIpLCB0Uk5BLCByUk5BLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyMiIgeT0iMjg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIEZ1bmN0aW9uOiBUcmFuc2xhdGlvbiAmYW1wOyBSaWJvenltZXMuPC90ZXh0PgogIDwvZz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTUwKSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9IiMwYTAzMTQiIHN0cm9rZT0iIzAwQjA5QiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM5MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5ETkE6IERlb3h5cmlib3NlICsgVGh5bWluZSArIERvdWJsZSBIZWxpeCB8IFJOQTogUmlib3NlICsgVXJhY2lsICsgU2luZ2xlIFN0cmFuZDwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==' style='width: 100%; max-width: 580px; height: auto; border-radius: 10px; border: 1.5px solid #00B09B;' alt='DNA vs RNA' /><p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q62: 3D B-DNA Double Helix vs RNA Architecture</p></div>
+      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style='text-align: center; margin: 10px 0;'>${svg7}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q62: 3D Female Reproductive System of Frog</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q63. Detail male reproductive system of Frog.</b></p>
+    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q63. Detail DNA Double Helix vs RNA Structure with 3D diagram.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
       <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of yellow ovoid testes, mesorchium, 10-12 vasa efferentia entering kidney into Bidder's canal, urinogenital duct opening into cloaca.
+      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style='text-align: center; margin: 10px 0;'>${svg12}<p style='color: #00B09B; font-size: 13px; margin-top: 4px; font-weight: bold;'>Figure Q63: 3D B-DNA Double Helix vs RNA Architecture</p></div>
     </div>
   </div>
   <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -1004,7 +1884,7 @@ export const c11Zoo2HtmlSolutions = `
     
     <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Michaelis-Menten kinetics curve: Vmax, Km (Michaelis constant), and substrate concentration effect.</b></p>
     <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Velocity increases linearly at low [S], approaches Vmax at saturation. Km is [S] at 1/2 Vmax; lower Km indicates higher substrate affinity of enzyme.
+      Velocity increases linearly at low [S], approaches Vmax at saturation. Km is [S] at 1/2 Vmax; lower Km indicates higher enzyme-substrate affinity.
     </div>
 
     <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Calculate Km and reaction rate changes under varying substrate concentrations.</b></p>
