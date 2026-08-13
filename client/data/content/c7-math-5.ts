@@ -10,20 +10,20 @@ export const c7Math5: ChapterContent = {
   definitions: [
     {
       term: "Complementary Angles",
-      definition: "Two angles whose sum is 90°.",
+      description: "Two angles whose sum is 90°.",
     },
     {
       term: "Supplementary Angles",
-      definition: "Two angles whose sum is 180°.",
+      description: "Two angles whose sum is 180°.",
     },
     {
       term: "Adjacent Angles",
-      definition:
+      description:
         "Two angles with a common vertex and a common arm, but no common interior points.",
     },
     {
       term: "Linear Pair",
-      definition:
+      description:
         "A pair of adjacent angles whose non-common sides are opposite rays.",
     },
   ],

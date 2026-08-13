@@ -1,6 +1,7 @@
 export interface Definition {
   term: string;
-  description: string;
+  description?: string;
+  definition?: string;
 }
 export interface Formula {
   name: string;
