@@ -179,6 +179,18 @@ export const c11Zoo3HtmlOverview = `<style>
   <h2 style="color: #FF007F; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 30px;">8. Mitosis &amp; Meiosis (Cell Division Stages)</h2>
   <p><b>Mitosis</b> is equational division producing two identical diploid (2n) daughter cells. <b>Meiosis</b> is reductional division occurring in diploid germ cells producing four haploid (n) gametes with genetic variation resulting from crossing over at Pachytene.</p>
 
+  <!-- BOTTOM CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(255, 0, 127, 0.15), rgba(156, 39, 176, 0.15)); border: 1.5px solid #FF007F; border-radius: 10px; padding: 16px; margin-top: 25px;">
+    <h3 style="color: #FF007F; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 3 Cell Structure &amp; Division Cheat Sheet</h3>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
+      <li><b style="color: #FF007F;">Cell Theory &amp; Discovery:</b> Leeuwenhoek (Live cell) | Robert Brown (Nucleus, 1831) | Schleiden &amp; Schwann (1838-39) | Rudolf Virchow (1855, <i>Omnis cellula-e-cellula</i>).</li>
+      <li><b style="color: #FF007F;">Prokaryote vs Eukaryote:</b> 70S (50S+30S) vs 80S (60S+40S) Ribosomes | Circular Nucleoid vs Membrane Nucleus | Mesosome (Respiration &amp; Cell Wall) | Peptidoglycan Cell Wall.</li>
+      <li><b style="color: #FF007F;">Membranes &amp; Organelles:</b> Singer &amp; Nicolson (1972) Fluid Mosaic | Erythrocyte Membrane (52% Protein, 40% Lipid) | Endomembrane System = ER + Golgi + Lysosomes (Acid Hydrolases pH 5) + Vacuoles (Tonoplast) | Mitochondria (Oxysomes F<sub>0</sub>-F<sub>1</sub>) | Chloroplast (Grana &amp; Stroma).</li>
+      <li><b style="color: #FF007F;">Cytoskeleton &amp; Axoneme:</b> Cilia/Flagella = 9+2 Axoneme Doublets (Dynein ATPase) | Centriole = 9+0 Triplet Cartwheel | Nucleosome = 200 bp DNA + Histone Octamer (H2A, H2B, H3, H4) | Satellites (NOR).</li>
+      <li><b style="color: #FF007F;">Cell Cycle &amp; Division:</b> Interphase = 95% (G<sub>1</sub> &rarr; S &rarr; G<sub>2</sub>) | S-phase = DNA doubles (2C &rarr; 4C) | G<sub>0</sub> = Quiescent non-dividing state | Zygotene = Synapsis &amp; Synaptonemal Complex | Pachytene = Crossing over (Recombinase) | Diplotene = Chiasmata | Mitosis (Equational 2n) vs Meiosis (Reductional n).</li>
+    </ul>
+  </div>
+
 </div>`;
 
 export const c11Zoo3HtmlSolutions = `<style>
