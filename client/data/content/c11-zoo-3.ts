@@ -11,12 +11,6 @@ export const c11Zoo3HtmlOverview = `<style>
 
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
-  <!-- MASTER CELL BIOLOGY HEADER -->
-  <div style="background: rgba(255, 0, 127, 0.08); border: 2px solid #FF007F; border-radius: 12px; padding: 18px; margin-bottom: 25px; text-align: center;">
-    <h2 style="color: #FF007F; margin: 0; font-size: 22px; font-weight: bold;" class="text-center">🔬 CELL BIOLOGY: COMPREHENSIVE STUDY GUIDE &amp; DIAGRAMS (HD)</h2>
-    <p style="color: #E0E0E0; margin: 6px 0 0 0; font-size: 14.5px;" class="text-center">Official NCERT Class 11 Biology / Zoology Unit-III Chapter 3 Reference Guide</p>
-  </div>
-
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
   <div style="background: rgba(255, 0, 127, 0.05); border: 1.5px solid #FF007F; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
     <h2 class="text-center" style="color: #FF007F; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary &amp; Basic Definitions</h2>

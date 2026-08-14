@@ -11,11 +11,7 @@ export const c11Zoo4HtmlOverview = `<style>
 
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
 
-  <!-- MASTER HUMAN PHYSIOLOGY HEADER -->
-  <div style="background: rgba(0, 176, 255, 0.08); border: 2px solid #00B0FF; border-radius: 12px; padding: 18px; margin-bottom: 25px; text-align: center;">
-    <h2 style="color: #00B0FF; margin: 0; font-size: 22px; font-weight: bold;" class="text-center">🫀 HUMAN PHYSIOLOGY: COMPREHENSIVE STUDY GUIDE &amp; DIAGRAMS (HD)</h2>
-    <p style="color: #E0E0E0; margin: 6px 0 0 0; font-size: 14.5px;" class="text-center">Official NCERT Class 11 Biology / Zoology Unit-IV Chapter 4 Reference Guide</p>
-  </div>
+  
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
   <div style="background: rgba(0, 176, 255, 0.05); border: 1.5px solid #00B0FF; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
