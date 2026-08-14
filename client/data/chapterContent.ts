@@ -124,6 +124,7 @@ import { c11Bot4HtmlOverview, c11Bot4HtmlSolutions } from "./content/c11-bot-4";
 import { c11Zoo1HtmlOverview, c11Zoo1HtmlSolutions } from "./content/c11-zoo-1";
 import { c11Zoo2HtmlOverview, c11Zoo2HtmlSolutions } from "./content/c11-zoo-2";
 import { c11Zoo3HtmlOverview, c11Zoo3HtmlSolutions } from "./content/c11-zoo-3";
+import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions } from "./content/c11-zoo-4";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1197,6 +1198,16 @@ if (ch11Zoo3) {
     ch11Zoo3.htmlExercises = {};
   }
   ch11Zoo3.htmlExercises["ex-c11-qa"] = c11Zoo3HtmlSolutions;
+}
+
+// Override Class 11 Zoology Chapter 4 with full high-level Reference & Solutions content
+const ch11Zoo4 = chapterContents["c11-zoo-4"];
+if (ch11Zoo4) {
+  ch11Zoo4.htmlOverview = c11Zoo4HtmlOverview;
+  if (!ch11Zoo4.htmlExercises) {
+    ch11Zoo4.htmlExercises = {};
+  }
+  ch11Zoo4.htmlExercises["ex-c11-qa"] = c11Zoo4HtmlSolutions;
 }
 
 // Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
