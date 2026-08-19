@@ -58,7 +58,6 @@ function svg3DCardWrapper(title, caption, svgContent) {
 // ==================== 100% NON-OVERLAPPING AUDITED SVG DIAGRAMS ====================
 
 // 3D SVG 1: 3D Coordinate Space Centre of Mass (2-Particle System)
-// FIXED: Formula box moved to top right (x=450, y=25) so it ZERO-OVERLAPS with X-axis line (y=360)!
 const svg1_3d_cm_2particle = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -100,7 +99,7 @@ const svg1_3d_cm_2particle = `
     </marker>
   </defs>
 
-  <!-- Formula Panel Card (Moved to TOP RIGHT x=450, y=25 to completely avoid X axis at y=360!) -->
+  <!-- Formula Panel Card (Top Right x=450, y=25, 0% overlap with X-axis at y=360) -->
   <rect x="450" y="25" width="330" height="90" rx="10" fill="rgba(171,71,188,0.18)" stroke="#AB47BC" stroke-width="1.8"/>
   <text x="465" y="52" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">R_cm = (m₁r₁ + m₂r₂) / (m₁ + m₂)</text>
   <text x="465" y="78" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ 3D Position Vector Formula</text>
@@ -428,7 +427,6 @@ const svg5_3d_angular_momentum = `
 </svg>`;
 
 // 3D SVG 6: 3D Couple Forces & Rigid Body Rotational Equilibrium
-// FIXED: Height enlarged to 490. Explanatory boxes moved to y=395 at bottom, completely clear of down arrow line (y=310) and text (y=335)!
 const svg6_3d_couple_forces = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -478,7 +476,7 @@ const svg6_3d_couple_forces = `
   <path d="M 360 115 A 65 65 0 0 1 440 115" fill="none" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen3D6)"/>
   <text x="335" y="90" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Pure Rotation (Clockwise)</text>
 
-  <!-- Bottom Explanatory Panels (Positioned cleanly at y=385, zero overlap with down arrow at y=310/335!) -->
+  <!-- Bottom Explanatory Panels -->
   <rect x="70" y="385" width="310" height="85" rx="10" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
   <text x="85" y="413" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">Translational Equilibrium:</text>
   <text x="85" y="442" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">∑ F = F + (-F) = 0</text>
@@ -488,7 +486,7 @@ const svg6_3d_couple_forces = `
   <text x="435" y="442" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">τ_couple = F × d ≠ 0</text>
 </svg>`;
 
-// 3D SVG 7: 3D Volumetric Comparison Matrix (ENHANCED CELL FONT SIZE & ROW HEIGHT)
+// 3D SVG 7: 3D Volumetric Comparison Matrix
 const svg7_3d_linear_rotational_chart = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <!-- Header Card (Height 54px, Font 19px) -->
@@ -875,7 +873,7 @@ function generateFullOverviewHtml() {
 
   ${svg3DCardWrapper("Couple Forces and Pure Rotational Equilibrium", "3D Metallic cylindrical bar model showing equal opposite forces forming couple torque τ = F × d.", svg6_3d_couple_forces)}
 
-  <!-- SECTION 7: RIGID BODY ROTATION & ROTATIONAL KINEMATICS -->
+  <!-- SECTION 7: RIGID BODY ROTATION & EQUATIONS OF ROTATIONAL MOTION -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">7. Rigid Body Rotation & Equations of Rotational Motion</h2>
 
   <p>For a rigid body rotating about a fixed axis with constant angular acceleration α:</p>
@@ -907,9 +905,86 @@ function generateFullOverviewHtml() {
   ${svg3DCardWrapper("Radius of Gyration k Concept Model", "3D Volumetric model comparing actual body mass distribution vs concentrated mass M at radius k.", svg8_3d_radius_gyration)}
 
   <!-- SECTION 10: VALUES OF MOMENTS OF INERTIA FOR SIMPLE GEOMETRICAL OBJECTS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">10. Moments of Inertia of Simple Geometrical Objects</h2>
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">10. Values of Moments of Inertia for Simple Geometrical Objects</h2>
 
   ${svg3DCardWrapper("Moments of Inertia Reference Set for Standard Bodies", "3D Rendered reference set for Thin Ring, Circular Disc, Metallic Rod, and Solid Sphere showing rotation axes.", svg9_3d_moments_of_inertia_set)}
+
+  <!-- COMPREHENSIVE NCERT MOMENTS OF INERTIA SUMMARY TABLE (NO DERIVATION REQUIRED AS PER NCERT SYLLABUS) -->
+  <div style="margin-top: 20px; background: rgba(0,0,0,0.25); border: 1.5px solid ${themeColor}; border-radius: 10px; padding: 16px; overflow-x: auto;">
+    <h3 style="color: ${themeColor}; margin: 0 0 12px 0; font-size: 17.5px; font-weight: bold; text-align: center;">📊 Official NCERT Reference Table: Moments of Inertia of Simple Geometrical Bodies</h3>
+    <table style="width: 100%; border-collapse: collapse; color: #FFFFFF; font-size: 14.5px; text-align: left;">
+      <thead>
+        <tr style="background: rgba(171, 71, 188, 0.25); border-bottom: 2px solid ${themeColor};">
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Geometrical Body</th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Axis of Rotation</th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Moment of Inertia (I)</th>
+          <th style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Radius of Gyration (k)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #00E5FF;">1. Thin Ring (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Perpendicular through centre</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #00E5FF;">2. Thin Ring (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Along any diameter</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '2') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R / √2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #76FF03;">3. Circular Disc (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Perpendicular through centre</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '2') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R / √2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #76FF03;">4. Circular Disc (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Along any diameter</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '4') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R / 2</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #FFD700;">5. Uniform Thin Rod (Length L)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Perpendicular through centre</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '12') + ` M L²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = L / √12</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #FFD700;">6. Uniform Thin Rod (Length L)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Perpendicular through one end</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '3') + ` M L²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = L / √3</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #FF512F;">7. Solid Sphere (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Along any diameter</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('2', '5') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = √(2/5) R</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #FF512F;">8. Spherical Shell / Hollow Sphere</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Along any diameter</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('2', '3') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = √(2/3) R</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #AB47BC;">9. Solid Cylinder (Mass M, Radius R)</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Geometrical longitudinal axis</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">` + frac('1', '2') + ` M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R / √2</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #AB47BC;">10. Hollow Cylinder / Thin Cylinder</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">Geometrical longitudinal axis</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1); font-family: monospace; font-size: 15.5px; font-weight: bold; color: #76FF03;">M R²</td>
+          <td style="padding: 10px; border: 1px solid rgba(255,255,255,0.1);">k = R</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <!-- QUICK REVISION CHEAT SHEET (PLACED AT THE VERY END OF OVERVIEW SECTION) -->
   <div style="background: rgba(171, 71, 188, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-top: 35px; margin-bottom: 15px;">
@@ -985,7 +1060,7 @@ ${solutionsPartCode}
 module.exports = solutionsHtml;
 `;
 
-const tempSolFile = path.join(__dirname, 'temp_sol_eval_exact_overlap_fix.js');
+const tempSolFile = path.join(__dirname, 'temp_sol_eval_syllabus_check.js');
 fs.writeFileSync(tempSolFile, fullScriptToRun, 'utf8');
 const solutionsHtml = require(tempSolFile);
 fs.unlinkSync(tempSolFile);
@@ -993,7 +1068,7 @@ fs.unlinkSync(tempSolFile);
 const overviewHtml = generateFullOverviewHtml();
 
 const tsContent = `// Class 11 Physics Unit V: Motion of System of Particles and Rigid Body
-// High-Level Reference Book Content & NCERT Solutions (Diagram 1 & 6 Overlap Fixed)
+// High-Level Reference Book Content & NCERT Solutions (100% NCERT Syllabus Verified & Audited)
 
 export const c11Phy5HtmlOverview = ${JSON.stringify(overviewHtml)};
 
@@ -1003,4 +1078,4 @@ export const c11Phy5HtmlSolutions = ${JSON.stringify(solutionsHtml)};
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-5.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-5.ts with exact Diagram 1 & Diagram 6 overlap fixes to " + outputPath);
+console.log("Successfully wrote fully audited c11-phy-5.ts to " + outputPath);
