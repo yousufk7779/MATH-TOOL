@@ -55,9 +55,10 @@ function svg3DCardWrapper(title, caption, svgContent) {
   </div>`;
 }
 
-// ==================== 100% NON-OVERLAPPING & ENHANCED 3D SVG DIAGRAMS ====================
+// ==================== 100% NON-OVERLAPPING AUDITED SVG DIAGRAMS ====================
 
 // 3D SVG 1: 3D Coordinate Space Centre of Mass (2-Particle System)
+// FIXED: Formula box moved to top right (x=450, y=25) so it ZERO-OVERLAPS with X-axis line (y=360)!
 const svg1_3d_cm_2particle = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -99,16 +100,22 @@ const svg1_3d_cm_2particle = `
     </marker>
   </defs>
 
+  <!-- Formula Panel Card (Moved to TOP RIGHT x=450, y=25 to completely avoid X axis at y=360!) -->
+  <rect x="450" y="25" width="330" height="90" rx="10" fill="rgba(171,71,188,0.18)" stroke="#AB47BC" stroke-width="1.8"/>
+  <text x="465" y="52" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">R_cm = (m₁r₁ + m₂r₂) / (m₁ + m₂)</text>
+  <text x="465" y="78" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ 3D Position Vector Formula</text>
+  <text x="465" y="98" fill="#FFD700" font-family="sans-serif" font-size="13">• CM lies closer to larger mass m₂</text>
+
   <!-- 3D Perspective Ground Grid -->
   <g opacity="0.15" stroke="#94A3B8" stroke-width="1">
-    <line x1="80" y1="380" x2="720" y2="380"/>
-    <line x1="120" y1="320" x2="680" y2="320"/>
-    <line x1="160" y1="270" x2="640" y2="270"/>
-    <line x1="80" y1="380" x2="400" y2="210"/>
-    <line x1="240" y1="380" x2="400" y2="210"/>
-    <line x1="400" y1="380" x2="400" y2="210"/>
-    <line x1="560" y1="380" x2="400" y2="210"/>
-    <line x1="720" y1="380" x2="400" y2="210"/>
+    <line x1="80" y1="360" x2="720" y2="360"/>
+    <line x1="120" y1="310" x2="680" y2="310"/>
+    <line x1="160" y1="260" x2="640" y2="260"/>
+    <line x1="80" y1="360" x2="400" y2="200"/>
+    <line x1="240" y1="360" x2="400" y2="200"/>
+    <line x1="400" y1="360" x2="400" y2="200"/>
+    <line x1="560" y1="360" x2="400" y2="200"/>
+    <line x1="720" y1="360" x2="400" y2="200"/>
   </g>
 
   <!-- 3D Axes -->
@@ -128,39 +135,33 @@ const svg1_3d_cm_2particle = `
 
   <!-- Vertical Projection Dotted Lines -->
   <line x1="240" y1="210" x2="240" y2="330" stroke="#00E5FF" stroke-dasharray="3,3" stroke-width="1.5"/>
-  <line x1="600" y1="120" x2="600" y2="285" stroke="#FFD700" stroke-dasharray="3,3" stroke-width="1.5"/>
-  <line x1="480" y1="150" x2="480" y2="300" stroke="#AB47BC" stroke-dasharray="3,3" stroke-width="1.5"/>
+  <line x1="600" y1="145" x2="600" y2="285" stroke="#FFD700" stroke-dasharray="3,3" stroke-width="1.5"/>
+  <line x1="480" y1="175" x2="480" y2="300" stroke="#AB47BC" stroke-dasharray="3,3" stroke-width="1.5"/>
 
   <!-- Line connecting 3D spheres -->
-  <line x1="240" y1="210" x2="600" y2="120" stroke="#E2E8F0" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <line x1="240" y1="210" x2="600" y2="145" stroke="#E2E8F0" stroke-width="2.5" stroke-dasharray="6,4"/>
 
   <!-- 3D Sphere 1 (m1) -->
   <circle cx="240" cy="210" r="18" fill="url(#sphereCyan1)" filter="url(#glow3D1)"/>
-  <text x="200" y="175" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">m₁ (2 kg)</text>
+  <text x="195" y="175" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">m₁ (2 kg)</text>
 
   <!-- 3D Sphere 2 (m2) -->
-  <circle cx="600" cy="120" r="28" fill="url(#sphereGold1)" filter="url(#glow3D1)"/>
-  <text x="580" y="75" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">m₂ (4 kg)</text>
+  <circle cx="600" cy="145" r="28" fill="url(#sphereGold1)" filter="url(#glow3D1)"/>
+  <text x="640" y="150" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">m₂ (4 kg)</text>
 
   <!-- 3D Centre of Mass Sphere (CM) -->
-  <circle cx="480" cy="150" r="13" fill="url(#spherePurple1)" filter="url(#glow3D1)"/>
-  <text x="450" y="115" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">CM (R_cm)</text>
+  <circle cx="480" cy="175" r="13" fill="url(#spherePurple1)" filter="url(#glow3D1)"/>
+  <text x="445" y="145" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">CM (R_cm)</text>
 
   <!-- 3D Position Vectors -->
   <line x1="100" y1="360" x2="230" y2="220" stroke="#00E5FF" stroke-width="3" marker-end="url(#arrowCyan1)"/>
   <text x="145" y="300" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r₁</text>
 
-  <line x1="100" y1="360" x2="588" y2="128" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGold1)"/>
-  <text x="340" y="250" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">r₂</text>
+  <line x1="100" y1="360" x2="588" y2="153" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGold1)"/>
+  <text x="340" y="270" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">r₂</text>
 
-  <line x1="100" y1="360" x2="470" y2="158" stroke="#AB47BC" stroke-width="3.5" marker-end="url(#arrowPurple1)"/>
-  <text x="260" y="230" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">R_cm</text>
-
-  <!-- Formula Panel Card (Well positioned at bottom right, zero overlap) -->
-  <rect x="460" y="330" width="320" height="95" rx="10" fill="rgba(171,71,188,0.18)" stroke="#AB47BC" stroke-width="1.8"/>
-  <text x="475" y="360" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">R_cm = (m₁r₁ + m₂r₂) / (m₁ + m₂)</text>
-  <text x="475" y="388" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ 3D Position Vector Formula</text>
-  <text x="475" y="410" fill="#FFD700" font-family="sans-serif" font-size="13">• CM lies closer to larger mass m₂</text>
+  <line x1="100" y1="360" x2="470" y2="183" stroke="#AB47BC" stroke-width="3.5" marker-end="url(#arrowPurple1)"/>
+  <text x="260" y="240" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">R_cm</text>
 </svg>`;
 
 // 3D SVG 2: 3D Trajectory of CM in Mid-Air Projectile Explosion
@@ -199,12 +200,12 @@ const svg2_3d_cm_explosion = `
   <circle cx="100" cy="360" r="10" fill="#00E5FF" filter="url(#glowStrong2)"/>
   <text x="45" y="350" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Launch</text>
 
-  <!-- Mid-Air Explosion Point (Positioned clearly at apex cy=200) -->
+  <!-- Mid-Air Explosion Point -->
   <circle cx="400" cy="200" r="35" fill="url(#burstGlow2)"/>
   <circle cx="400" cy="200" r="12" fill="#FFFFFF" stroke="#FF512F" stroke-width="3"/>
   <text x="290" y="150" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">💥 Internal Explosion (F_ext = Gravity Only)</text>
 
-  <!-- 3D Fragment Trajectories (Well-spaced) -->
+  <!-- 3D Fragment Trajectories -->
   <path d="M 400 200 Q 520 110 620 360" fill="none" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="4,4"/>
   <circle cx="620" cy="360" r="9" fill="#FF512F" filter="url(#glowStrong2)"/>
   <text x="635" y="355" fill="#FF512F" font-family="sans-serif" font-size="13" font-weight="bold">Fragment m₁</text>
@@ -285,12 +286,12 @@ const svg3_3d_cm_rod_ring = `
     <!-- 3D Volumetric Semi-Circular Arc -->
     <path d="M 70 280 A 100 100 0 0 1 270 280" fill="none" stroke="url(#ring3DGrad3)" stroke-width="12" stroke-linecap="round"/>
 
-    <!-- Ring CM Badge (Well spaced at y=175) -->
+    <!-- Ring CM Badge -->
     <circle cx="170" cy="205" r="7" fill="#00E5FF" stroke="#FFFFFF" stroke-width="2"/>
     <rect x="185" y="175" width="165" height="34" rx="6" fill="rgba(0,229,255,0.15)" stroke="#00E5FF" stroke-width="1.2"/>
     <text x="195" y="197" fill="#00E5FF" font-family="monospace" font-size="14" font-weight="bold">Ring: Y_cm = 2R / π</text>
 
-    <!-- Disc CM Badge (Well spaced at y=225) -->
+    <!-- Disc CM Badge -->
     <circle cx="170" cy="232" r="7" fill="#FFD700" stroke="#FFFFFF" stroke-width="2"/>
     <rect x="185" y="225" width="165" height="34" rx="6" fill="rgba(255,215,0,0.15)" stroke="#FFD700" stroke-width="1.2"/>
     <text x="195" y="247" fill="#FFD700" font-family="monospace" font-size="14" font-weight="bold">Disc: Y_cm = 4R / 3π</text>
@@ -329,7 +330,7 @@ const svg4_3d_torque = `
   <line x1="320" y1="300" x2="520" y2="300" stroke="#00E5FF" stroke-width="4" marker-end="url(#arrowCyan3D4)"/>
   <text x="400" y="330" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">r (Position Vector)</text>
 
-  <!-- Applied Force F (Tilted in Space, label well clear at x=655) -->
+  <!-- Applied Force F -->
   <line x1="520" y1="300" x2="640" y2="180" stroke="#FF512F" stroke-width="4" marker-end="url(#arrowPink3D4)"/>
   <text x="655" y="175" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">F (Force)</text>
 
@@ -337,7 +338,7 @@ const svg4_3d_torque = `
   <path d="M 560 300 A 40 40 0 0 0 550 270" fill="none" stroke="#FFD700" stroke-width="2.5"/>
   <text x="565" y="280" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">θ</text>
 
-  <!-- 3D Torque Vector τ (Vertical UPWARD, label clear at x=345, y=65) -->
+  <!-- 3D Torque Vector τ (Vertical UPWARD) -->
   <line x1="320" y1="300" x2="320" y2="60" stroke="#76FF03" stroke-width="5" marker-end="url(#arrowGreen3D4)" filter="url(#glowGreen4)"/>
   <text x="345" y="65" fill="#76FF03" font-family="sans-serif" font-size="20" font-weight="bold">τ = r × F (Torque)</text>
 
@@ -427,8 +428,9 @@ const svg5_3d_angular_momentum = `
 </svg>`;
 
 // 3D SVG 6: 3D Couple Forces & Rigid Body Rotational Equilibrium
+// FIXED: Height enlarged to 490. Explanatory boxes moved to y=395 at bottom, completely clear of down arrow line (y=310) and text (y=335)!
 const svg6_3d_couple_forces = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="bar3D6" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#64748B"/>
@@ -447,46 +449,46 @@ const svg6_3d_couple_forces = `
   </defs>
 
   <!-- 3D Bar Shadow -->
-  <ellipse cx="400" cy="240" rx="200" ry="16" fill="rgba(0,0,0,0.5)"/>
+  <ellipse cx="400" cy="220" rx="200" ry="16" fill="rgba(0,0,0,0.5)"/>
 
   <!-- 3D Metallic Cylindrical Bar -->
-  <rect x="200" y="190" width="400" height="34" rx="8" fill="url(#bar3D6)" stroke="#94A3B8" stroke-width="2"/>
-  <ellipse cx="600" cy="207" rx="12" ry="17" fill="#334155" stroke="#94A3B8" stroke-width="1.5"/>
-  <ellipse cx="200" cy="207" rx="12" ry="17" fill="#64748B" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="200" y="170" width="400" height="34" rx="8" fill="url(#bar3D6)" stroke="#94A3B8" stroke-width="2"/>
+  <ellipse cx="600" cy="187" rx="12" ry="17" fill="#334155" stroke="#94A3B8" stroke-width="1.5"/>
+  <ellipse cx="200" cy="187" rx="12" ry="17" fill="#64748B" stroke="#94A3B8" stroke-width="1.5"/>
 
   <!-- Central Pivot Point O -->
-  <circle cx="400" cy="207" r="8" fill="#FFD700" stroke="#FFFFFF" stroke-width="2"/>
-  <text x="395" y="238" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+  <circle cx="400" cy="187" r="8" fill="#FFD700" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="395" y="218" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
 
-  <!-- Force +F at Left End (UPWARD, label at y=45 well clear) -->
-  <line x1="240" y1="190" x2="240" y2="60" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowUp6)"/>
+  <!-- Force +F at Left End (UPWARD, label at y=45) -->
+  <line x1="240" y1="170" x2="240" y2="55" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowUp6)"/>
   <text x="185" y="45" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">+F (Upward)</text>
 
-  <!-- Force -F at Right End (DOWNWARD, label at y=375 well clear) -->
-  <line x1="560" y1="224" x2="560" y2="340" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowDown6)"/>
-  <text x="515" y="375" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">-F (Downward)</text>
+  <!-- Force -F at Right End (DOWNWARD, line ends at y=310, label at y=335) -->
+  <line x1="560" y1="204" x2="560" y2="310" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowDown6)"/>
+  <text x="515" y="335" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">-F (Downward)</text>
 
   <!-- Arm Distance d Dimension -->
-  <line x1="240" y1="260" x2="560" y2="260" stroke="#AB47BC" stroke-width="2"/>
-  <line x1="240" y1="250" x2="240" y2="270" stroke="#AB47BC" stroke-width="2"/>
-  <line x1="560" y1="250" x2="560" y2="270" stroke="#AB47BC" stroke-width="2"/>
-  <text x="385" y="282" fill="#AB47BC" font-family="sans-serif" font-size="15.5" font-weight="bold">Arm Distance (d)</text>
+  <line x1="240" y1="240" x2="560" y2="240" stroke="#AB47BC" stroke-width="2"/>
+  <line x1="240" y1="230" x2="240" y2="250" stroke="#AB47BC" stroke-width="2"/>
+  <line x1="560" y1="230" x2="560" y2="250" stroke="#AB47BC" stroke-width="2"/>
+  <text x="385" y="262" fill="#AB47BC" font-family="sans-serif" font-size="15.5" font-weight="bold">Arm Distance (d)</text>
 
   <!-- Clockwise Rotation Arc -->
-  <path d="M 360 135 A 65 65 0 0 1 440 135" fill="none" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen3D6)"/>
-  <text x="335" y="110" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Pure Rotation (Clockwise)</text>
+  <path d="M 360 115 A 65 65 0 0 1 440 115" fill="none" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen3D6)"/>
+  <text x="335" y="90" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Pure Rotation (Clockwise)</text>
 
-  <!-- Bottom Explanatory Panels -->
-  <rect x="80" y="310" width="270" height="85" rx="10" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
-  <text x="95" y="338" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Translational Equilibrium:</text>
-  <text x="95" y="365" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">∑ F = F + (-F) = 0</text>
+  <!-- Bottom Explanatory Panels (Positioned cleanly at y=385, zero overlap with down arrow at y=310/335!) -->
+  <rect x="70" y="385" width="310" height="85" rx="10" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
+  <text x="85" y="413" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">Translational Equilibrium:</text>
+  <text x="85" y="442" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">∑ F = F + (-F) = 0</text>
 
-  <rect x="450" y="310" width="270" height="85" rx="10" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.5"/>
-  <text x="465" y="338" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Rotational Couple Torque:</text>
-  <text x="465" y="365" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">τ_couple = F × d ≠ 0</text>
+  <rect x="420" y="385" width="310" height="85" rx="10" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.5"/>
+  <text x="435" y="413" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Rotational Couple Torque:</text>
+  <text x="435" y="442" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">τ_couple = F × d ≠ 0</text>
 </svg>`;
 
-// 3D SVG 7: 3D Volumetric Comparison Matrix (ENHANCED CELL FONT SIZE & ROW HEIGHT AS REQUESTED BY USER)
+// 3D SVG 7: 3D Volumetric Comparison Matrix (ENHANCED CELL FONT SIZE & ROW HEIGHT)
 const svg7_3d_linear_rotational_chart = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <!-- Header Card (Height 54px, Font 19px) -->
@@ -532,7 +534,7 @@ const svg7_3d_linear_rotational_chart = `
     <text x="405" y="60" fill="#FFFFFF" font-family="sans-serif" font-size="16.5">Rotational K.E.: <tspan fill="#76FF03" font-weight="bold" font-size="18.5">E_rot = ½ I ω²</tspan></text>
   </g>
 
-  <!-- Bottom Connecting Banner (Font 16px bold) -->
+  <!-- Bottom Connecting Banner -->
   <text x="200" y="452" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">Connecting Bridges: s = r θ  |  v = r ω  |  a_t = r α  |  τ = r × F</text>
 </svg>`;
 
@@ -633,7 +635,7 @@ const svg9_3d_moments_of_inertia_set = `
     </radialGradient>
   </defs>
 
-  <!-- Grid 2x2 of 3D Standard Bodies (Height 195px, Font 18px) -->
+  <!-- Grid 2x2 of 3D Standard Bodies -->
 
   <!-- 1. 3D Thin Circular Ring -->
   <g transform="translate(25, 20)">
@@ -983,7 +985,7 @@ ${solutionsPartCode}
 module.exports = solutionsHtml;
 `;
 
-const tempSolFile = path.join(__dirname, 'temp_sol_eval_overlap_fix.js');
+const tempSolFile = path.join(__dirname, 'temp_sol_eval_exact_overlap_fix.js');
 fs.writeFileSync(tempSolFile, fullScriptToRun, 'utf8');
 const solutionsHtml = require(tempSolFile);
 fs.unlinkSync(tempSolFile);
@@ -991,7 +993,7 @@ fs.unlinkSync(tempSolFile);
 const overviewHtml = generateFullOverviewHtml();
 
 const tsContent = `// Class 11 Physics Unit V: Motion of System of Particles and Rigid Body
-// High-Level Reference Book Content & NCERT Solutions (Zero Text Overlap & Enhanced Table Visibility)
+// High-Level Reference Book Content & NCERT Solutions (Diagram 1 & 6 Overlap Fixed)
 
 export const c11Phy5HtmlOverview = ${JSON.stringify(overviewHtml)};
 
@@ -1001,4 +1003,4 @@ export const c11Phy5HtmlSolutions = ${JSON.stringify(solutionsHtml)};
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-5.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-5.ts with zero text overlaps and enlarged comparison table to " + outputPath);
+console.log("Successfully wrote c11-phy-5.ts with exact Diagram 1 & Diagram 6 overlap fixes to " + outputPath);
