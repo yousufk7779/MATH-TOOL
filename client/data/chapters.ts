@@ -84,15 +84,16 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   },
   "Class 11 Science": {
     Physics: [
-      { id: "c11-phy-1", number: 1, name: "Units and Measurements", color: "#FF512F" },
-      { id: "c11-phy-2", number: 2, name: "Motion in a Straight Line", color: "#8E2DE2" },
-      { id: "c11-phy-3", number: 3, name: "Motion in a Plane", color: "#00b09b" },
-      { id: "c11-phy-4", number: 4, name: "Laws of Motion", color: "#FF8A65" },
-      { id: "c11-phy-5", number: 5, name: "Work, Energy and Power", color: "#00c6ff" },
-      { id: "c11-phy-6", number: 6, name: "System of Particles & Rotational Motion", color: "#AB47BC" },
-      { id: "c11-phy-7", number: 7, name: "Gravitation", color: "#FDC830" },
-      { id: "c11-phy-8", number: 8, name: "Mechanical Properties of Solids", color: "#FF007F" },
-      { id: "c11-phy-9", number: 9, name: "Mechanical Properties of Fluids", color: "#26C6DA" },
+      { id: "c11-phy-1", number: 1, name: "Physical World and Measurement", color: "#FF512F" },
+      { id: "c11-phy-2", number: 2, name: "Kinematics", color: "#8E2DE2" },
+      { id: "c11-phy-3", number: 3, name: "Laws of Motion", color: "#FF8A65" },
+      { id: "c11-phy-4", number: 4, name: "Work, Energy and Power", color: "#00c6ff" },
+      { id: "c11-phy-5", number: 5, name: "Motion of System of Particles and Rigid Body", color: "#AB47BC" },
+      { id: "c11-phy-6", number: 6, name: "Gravitation", color: "#FDC830" },
+      { id: "c11-phy-7", number: 7, name: "Properties of Bulk Matter", color: "#FF007F" },
+      { id: "c11-phy-8", number: 8, name: "Thermodynamics", color: "#26C6DA" },
+      { id: "c11-phy-9", number: 9, name: "Behaviour of Perfect Gases and Kinetic Theory of Gases", color: "#42A5F5" },
+      { id: "c11-phy-10", number: 10, name: "Oscillations and Waves", color: "#00E5FF" },
     ],
     Chemistry: [
       { id: "c11-chem-1", number: 1, name: "Some Basic Concepts of Chemistry", color: "#66BB6A" },
@@ -1064,6 +1065,16 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c7-geo-5") return JiguuColors.gradients.blue; // Blue for Water
   if (chapterId === "c7-geo-7") return JiguuColors.gradients.gold; // Gold for Deserts
   if (chapterId === "c7-geo-8") return JiguuColors.gradients.rose; // Rose for J&K (Valley of Flowers/Traditional)
+  if (chapterId === "c11-phy-1") return ["#FF512F", "#DD2476"];
+  if (chapterId === "c11-phy-2") return ["#8E2DE2", "#4A00E0"];
+  if (chapterId === "c11-phy-3") return ["#FF8A65", "#FF3D00"];
+  if (chapterId === "c11-phy-4") return ["#00c6ff", "#0072ff"];
+  if (chapterId === "c11-phy-5") return ["#AB47BC", "#7B1FA2"];
+  if (chapterId === "c11-phy-6") return ["#FDC830", "#F39C12"];
+  if (chapterId === "c11-phy-7") return ["#FF007F", "#C2185B"];
+  if (chapterId === "c11-phy-8") return ["#26C6DA", "#00838F"];
+  if (chapterId === "c11-phy-9") return ["#42A5F5", "#1E88E5"];
+  if (chapterId === "c11-phy-10") return ["#00E5FF", "#00838F"];
   if (chapterId === "c11-chem-1") return ["#66BB6A", "#388E3C"];
   if (chapterId === "c11-chem-2") return ["#26C6DA", "#00838F"];
   if (chapterId === "c11-chem-3") return ["#FF8A65", "#FF3D00"];

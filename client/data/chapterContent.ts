@@ -108,6 +108,10 @@ import { c9SciBio1 } from "./content/c9-sci-bio-1";
 import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
+import { c11Phy1HtmlOverview, c11Phy1HtmlSolutions } from "./content/c11-phy-1";
+import { c11Phy2HtmlOverview, c11Phy2HtmlSolutions } from "./content/c11-phy-2";
+import { c11Phy3HtmlOverview, c11Phy3HtmlSolutions } from "./content/c11-phy-3";
+import { c11Phy4HtmlOverview, c11Phy4HtmlSolutions } from "./content/c11-phy-4";
 import { c11Chem1HtmlOverview, c11Chem1HtmlSolutions } from "./content/c11-chem-1";
 import { c11Chem2HtmlOverview, c11Chem2HtmlSolutions } from "./content/c11-chem-2";
 import { c11Chem3HtmlOverview, c11Chem3HtmlSolutions } from "./content/c11-chem-3";
@@ -980,7 +984,7 @@ sstC8Categories.forEach((cat) => {
 
 // Dynamically generate Class 11 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
 const c11Subjects = [
-  { prefix: "phy", title: "Physics", maxCh: 9 },
+  { prefix: "phy", title: "Physics", maxCh: 10 },
   { prefix: "chem", title: "Chemistry", maxCh: 9 },
   { prefix: "zoo", title: "Zoology", maxCh: 4 },
   { prefix: "bot", title: "Botany", maxCh: 4 },
@@ -1039,6 +1043,46 @@ c11Subjects.forEach(({ prefix, title, maxCh }) => {
     };
   }
 });
+
+// Override Class 11 Physics Chapter 1 with full high-level Reference & Solutions content
+const ch11Phy1 = chapterContents["c11-phy-1"];
+if (ch11Phy1) {
+  ch11Phy1.htmlOverview = c11Phy1HtmlOverview;
+  if (!ch11Phy1.htmlExercises) {
+    ch11Phy1.htmlExercises = {};
+  }
+  ch11Phy1.htmlExercises["ex-c11-qa"] = c11Phy1HtmlSolutions;
+}
+
+// Override Class 11 Physics Chapter 2 with full high-level Reference & Solutions content
+const ch11Phy2 = chapterContents["c11-phy-2"];
+if (ch11Phy2) {
+  ch11Phy2.htmlOverview = c11Phy2HtmlOverview;
+  if (!ch11Phy2.htmlExercises) {
+    ch11Phy2.htmlExercises = {};
+  }
+  ch11Phy2.htmlExercises["ex-c11-qa"] = c11Phy2HtmlSolutions;
+}
+
+// Override Class 11 Physics Chapter 3 with full high-level Reference & Solutions content
+const ch11Phy3 = chapterContents["c11-phy-3"];
+if (ch11Phy3) {
+  ch11Phy3.htmlOverview = c11Phy3HtmlOverview;
+  if (!ch11Phy3.htmlExercises) {
+    ch11Phy3.htmlExercises = {};
+  }
+  ch11Phy3.htmlExercises["ex-c11-qa"] = c11Phy3HtmlSolutions;
+}
+
+// Override Class 11 Physics Chapter 4 with full high-level Reference & Solutions content
+const ch11Phy4 = chapterContents["c11-phy-4"];
+if (ch11Phy4) {
+  ch11Phy4.htmlOverview = c11Phy4HtmlOverview;
+  if (!ch11Phy4.htmlExercises) {
+    ch11Phy4.htmlExercises = {};
+  }
+  ch11Phy4.htmlExercises["ex-c11-qa"] = c11Phy4HtmlSolutions;
+}
 
 // Override Class 11 Chemistry Chapter 1 with full high-level Reference & Solutions content
 const ch11Chem1 = chapterContents["c11-chem-1"];
