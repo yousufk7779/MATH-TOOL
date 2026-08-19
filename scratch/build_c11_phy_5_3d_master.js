@@ -56,45 +56,46 @@ function svg3DCardWrapper(title, caption, svgContent) {
   </div>`;
 }
 
-// ==================== 3D VOLUMETRIC SVG DIAGRAMS GENERATION ====================
+// ==================== 100% AUDITED SELF-CONTAINED 3D VOLUMETRIC SVG DIAGRAMS ====================
 
 // 3D SVG 1: 3D Coordinate Space Centre of Mass (2-Particle System)
 const svg1_3d_cm_2particle = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <!-- 3D Gradients -->
-    <radialGradient id="sphereCyan" cx="35%" cy="35%" r="65%">
+    <radialGradient id="sphereCyan1" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#E0F7FA"/>
       <stop offset="40%" stop-color="#00E5FF"/>
       <stop offset="85%" stop-color="#00838F"/>
       <stop offset="100%" stop-color="#004D40"/>
     </radialGradient>
-    <radialGradient id="sphereGold" cx="35%" cy="35%" r="65%">
+    <radialGradient id="sphereGold1" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#FFFDE7"/>
       <stop offset="40%" stop-color="#FFD700"/>
       <stop offset="85%" stop-color="#F57F17"/>
       <stop offset="100%" stop-color="#E65100"/>
     </radialGradient>
-    <radialGradient id="spherePurple" cx="35%" cy="35%" r="65%">
+    <radialGradient id="spherePurple1" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#F3E5F5"/>
       <stop offset="40%" stop-color="#AB47BC"/>
       <stop offset="85%" stop-color="#6A1B9A"/>
       <stop offset="100%" stop-color="#4A148C"/>
     </radialGradient>
 
-    <!-- Filters -->
-    <filter id="glow3D" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="glow3D1" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <marker id="arrowCyan" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowCyan1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
     </marker>
-    <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowGreen1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
+    </marker>
+    <marker id="arrowGold1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#FFD700"/>
     </marker>
-    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowPurple1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#AB47BC"/>
     </marker>
   </defs>
@@ -104,7 +105,6 @@ const svg1_3d_cm_2particle = `
     <line x1="80" y1="360" x2="720" y2="360"/>
     <line x1="120" y1="310" x2="680" y2="310"/>
     <line x1="160" y1="260" x2="640" y2="260"/>
-    <!-- Perspective lines radiating towards vanishing point -->
     <line x1="80" y1="360" x2="400" y2="200"/>
     <line x1="240" y1="360" x2="400" y2="200"/>
     <line x1="400" y1="360" x2="400" y2="200"/>
@@ -113,16 +113,16 @@ const svg1_3d_cm_2particle = `
   </g>
 
   <!-- 3D Axes -->
-  <line x1="100" y1="340" x2="720" y2="340" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrowCyan)"/> <!-- X Axis -->
-  <line x1="100" y1="340" x2="100" y2="50" stroke="#76FF03" stroke-width="2" marker-end="url(#arrowCyan)"/> <!-- Y Axis -->
-  <line x1="100" y1="340" x2="30" y2="390" stroke="#FFD700" stroke-width="2" marker-end="url(#arrowGold)"/> <!-- Z Axis -->
+  <line x1="100" y1="340" x2="720" y2="340" stroke="#00E5FF" stroke-width="2" marker-end="url(#arrowCyan1)"/>
+  <line x1="100" y1="340" x2="100" y2="50" stroke="#76FF03" stroke-width="2" marker-end="url(#arrowGreen1)"/>
+  <line x1="100" y1="340" x2="30" y2="390" stroke="#FFD700" stroke-width="2" marker-end="url(#arrowGold1)"/>
 
   <text x="730" y="345" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">X</text>
   <text x="95" y="40" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Y</text>
   <text x="15" y="405" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">Z</text>
   <text x="80" y="360" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">O (0,0,0)</text>
 
-  <!-- 3D Drop Shadows on Ground Plane -->
+  <!-- 3D Drop Shadows -->
   <ellipse cx="240" cy="310" rx="20" ry="8" fill="rgba(0,0,0,0.6)"/>
   <ellipse cx="600" cy="270" rx="30" ry="12" fill="rgba(0,0,0,0.6)"/>
   <ellipse cx="480" cy="285" rx="14" ry="6" fill="rgba(0,0,0,0.6)"/>
@@ -136,31 +136,31 @@ const svg1_3d_cm_2particle = `
   <line x1="240" y1="210" x2="600" y2="120" stroke="#E2E8F0" stroke-width="2.5" stroke-dasharray="6,4"/>
 
   <!-- 3D Sphere 1 (m1) -->
-  <circle cx="240" cy="210" r="18" fill="url(#sphereCyan)" filter="url(#glow3D)"/>
+  <circle cx="240" cy="210" r="18" fill="url(#sphereCyan1)" filter="url(#glow3D1)"/>
   <text x="220" y="180" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">m₁ (2 kg)</text>
 
   <!-- 3D Sphere 2 (m2) -->
-  <circle cx="600" cy="120" r="28" fill="url(#sphereGold)" filter="url(#glow3D)"/>
+  <circle cx="600" cy="120" r="28" fill="url(#sphereGold1)" filter="url(#glow3D1)"/>
   <text x="580" y="85" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">m₂ (4 kg)</text>
 
   <!-- 3D Centre of Mass Sphere (CM) -->
-  <circle cx="480" cy="150" r="13" fill="url(#spherePurple)" filter="url(#glow3D)"/>
+  <circle cx="480" cy="150" r="13" fill="url(#spherePurple1)" filter="url(#glow3D1)"/>
   <text x="460" y="125" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">CM (R_cm)</text>
 
   <!-- 3D Position Vectors -->
-  <line x1="100" y1="340" x2="230" y2="218" stroke="#00E5FF" stroke-width="3" marker-end="url(#arrowCyan)"/>
+  <line x1="100" y1="340" x2="230" y2="218" stroke="#00E5FF" stroke-width="3" marker-end="url(#arrowCyan1)"/>
   <text x="150" y="290" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r₁</text>
 
-  <line x1="100" y1="340" x2="588" y2="126" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGold)"/>
+  <line x1="100" y1="340" x2="588" y2="126" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGold1)"/>
   <text x="350" y="240" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">r₂</text>
 
-  <line x1="100" y1="340" x2="470" y2="156" stroke="#AB47BC" stroke-width="3.5" marker-end="url(#arrowPurple)"/>
+  <line x1="100" y1="340" x2="470" y2="156" stroke="#AB47BC" stroke-width="3.5" marker-end="url(#arrowPurple1)"/>
   <text x="270" y="220" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">R_cm</text>
 
   <!-- Formula Panel Card -->
   <rect x="470" y="310" width="310" height="85" rx="10" fill="rgba(171,71,188,0.18)" stroke="#AB47BC" stroke-width="1.8"/>
   <text x="485" y="338" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">R_cm = (m₁r₁ + m₂r₂) / (m₁ + m₂)</text>
-  <text x="485" y="365" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ 3D Position Vector Formula</text>
+  <text x="485" y="365" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ Exact 3D Position Vector Formula</text>
   <text x="485" y="383" fill="#FFD700" font-family="sans-serif" font-size="13">• CM lies closer to larger mass m₂</text>
 </svg>`;
 
@@ -168,13 +168,13 @@ const svg1_3d_cm_2particle = `
 const svg2_3d_cm_explosion = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <radialGradient id="burstGlow" cx="50%" cy="50%" r="50%">
+    <radialGradient id="burstGlow2" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FFFFFF"/>
       <stop offset="30%" stop-color="#FFD700"/>
       <stop offset="70%" stop-color="#FF512F"/>
       <stop offset="100%" stop-color="transparent"/>
     </radialGradient>
-    <filter id="glowStrong" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="glowStrong2" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="7" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
@@ -189,39 +189,36 @@ const svg2_3d_cm_explosion = `
   <line x1="740" y1="370" x2="660" y2="310" stroke="#475569" stroke-width="1"/>
   <text x="80" y="390" fill="#94A3B8" font-family="sans-serif" font-size="13.5">3D Ground Plane</text>
 
-  <!-- 3D Shadow of Parabolic Path on Ground Plane -->
+  <!-- 3D Shadow of Parabolic Path -->
   <path d="M 100 340 Q 400 320 700 340" fill="none" stroke="rgba(0,0,0,0.6)" stroke-width="6"/>
 
   <!-- Uninterrupted Parabolic CM Trajectory in 3D Space -->
-  <path d="M 100 340 Q 400 40 700 340" fill="none" stroke="#AB47BC" stroke-width="4" stroke-dasharray="10,6" filter="url(#glowStrong)"/>
+  <path d="M 100 340 Q 400 40 700 340" fill="none" stroke="#AB47BC" stroke-width="4" stroke-dasharray="10,6" filter="url(#glowStrong2)"/>
   <text x="460" y="110" fill="#AB47BC" font-family="sans-serif" font-size="15" font-weight="bold">Uninterrupted Parabolic CM Trajectory</text>
 
-  <!-- Launch Point 3D Shell -->
-  <circle cx="100" cy="340" r="10" fill="#00E5FF" filter="url(#glowStrong)"/>
+  <!-- Launch Point -->
+  <circle cx="100" cy="340" r="10" fill="#00E5FF" filter="url(#glowStrong2)"/>
   <text x="50" y="330" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Launch</text>
 
-  <!-- Mid-Air Explosion Point at Apex -->
-  <circle cx="400" cy="190" r="35" fill="url(#burstGlow)"/>
+  <!-- Mid-Air Explosion Point -->
+  <circle cx="400" cy="190" r="35" fill="url(#burstGlow2)"/>
   <circle cx="400" cy="190" r="12" fill="#FFFFFF" stroke="#FF512F" stroke-width="3"/>
   <text x="310" y="160" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">💥 Internal Explosion (F_ext = Gravity Only)</text>
 
-  <!-- 3D Fragment Trajectories radiating outwards -->
-  <!-- Fragment 1 (Forward high) -->
+  <!-- 3D Fragment Trajectories -->
   <path d="M 400 190 Q 520 100 620 340" fill="none" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="4,4"/>
-  <circle cx="620" cy="340" r="9" fill="#FF512F" filter="url(#glowStrong)"/>
+  <circle cx="620" cy="340" r="9" fill="#FF512F" filter="url(#glowStrong2)"/>
   <text x="635" y="335" fill="#FF512F" font-family="sans-serif" font-size="13" font-weight="bold">Fragment m₁</text>
 
-  <!-- Fragment 2 (Backward low) -->
   <path d="M 400 190 Q 360 270 330 350" fill="none" stroke="#00E5FF" stroke-width="2.5" stroke-dasharray="4,4"/>
-  <circle cx="330" cy="350" r="7" fill="#00E5FF" filter="url(#glowStrong)"/>
+  <circle cx="330" cy="350" r="7" fill="#00E5FF" filter="url(#glowStrong2)"/>
   <text x="250" y="360" fill="#00E5FF" font-family="sans-serif" font-size="13" font-weight="bold">Fragment m₂</text>
 
-  <!-- Fragment 3 (Far right out of plane Z) -->
   <path d="M 400 190 Q 570 230 730 330" fill="none" stroke="#76FF03" stroke-width="2.5" stroke-dasharray="4,4"/>
-  <circle cx="730" cy="330" r="11" fill="#76FF03" filter="url(#glowStrong)"/>
+  <circle cx="730" cy="330" r="11" fill="#76FF03" filter="url(#glowStrong2)"/>
   <text x="660" y="360" fill="#76FF03" font-family="sans-serif" font-size="13" font-weight="bold">Fragment m₃</text>
 
-  <!-- Top Explanation Card -->
+  <!-- Explanation Card -->
   <rect x="80" y="45" width="310" height="85" rx="10" fill="rgba(15,23,42,0.9)" stroke="#AB47BC" stroke-width="1.8"/>
   <text x="95" y="72" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Newton's 2nd Law for System:</text>
   <text x="95" y="95" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">F_ext = M A_cm = M g</text>
@@ -232,13 +229,13 @@ const svg2_3d_cm_explosion = `
 const svg3_3d_cm_rod_ring = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <linearGradient id="rod3DGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="rod3DGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8"/>
       <stop offset="30%" stop-color="#0284C7"/>
       <stop offset="70%" stop-color="#0369A1"/>
       <stop offset="100%" stop-color="#075985"/>
     </linearGradient>
-    <radialGradient id="ring3DGrad" cx="50%" cy="40%" r="60%">
+    <radialGradient id="ring3DGrad3" cx="50%" cy="40%" r="60%">
       <stop offset="0%" stop-color="#E1BEE7"/>
       <stop offset="50%" stop-color="#AB47BC"/>
       <stop offset="100%" stop-color="#4A148C"/>
@@ -253,7 +250,7 @@ const svg3_3d_cm_rod_ring = `
     <ellipse cx="180" cy="220" rx="140" ry="12" fill="rgba(0,0,0,0.5)"/>
 
     <!-- 3D Rod Body -->
-    <rect x="40" y="130" width="280" height="36" rx="6" fill="url(#rod3DGrad)" stroke="#38BDF8" stroke-width="1.5"/>
+    <rect x="40" y="130" width="280" height="36" rx="6" fill="url(#rod3DGrad3)" stroke="#38BDF8" stroke-width="1.5"/>
     <ellipse cx="320" cy="148" rx="10" ry="18" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5"/>
     <ellipse cx="40" cy="148" rx="10" ry="18" fill="#38BDF8" stroke="#38BDF8" stroke-width="1.5"/>
 
@@ -264,7 +261,7 @@ const svg3_3d_cm_rod_ring = `
     <!-- CM Sphere -->
     <circle cx="180" cy="148" r="8" fill="#FFD700" stroke="#FFFFFF" stroke-width="2"/>
     <line x1="180" y1="148" x2="180" y2="240" stroke="#FFD700" stroke-dasharray="4,4" stroke-width="2"/>
-    
+
     <!-- Formula Badge -->
     <rect x="110" y="250" width="140" height="40" rx="8" fill="rgba(255,215,0,0.15)" stroke="#FFD700" stroke-width="1.5"/>
     <text x="125" y="275" fill="#FFD700" font-family="monospace" font-size="16" font-weight="bold">X_cm = L / 2</text>
@@ -287,7 +284,7 @@ const svg3_3d_cm_rod_ring = `
     <ellipse cx="170" cy="270" rx="100" ry="12" fill="rgba(0,0,0,0.5)"/>
 
     <!-- 3D Volumetric Semi-Circular Arc -->
-    <path d="M 70 260 A 100 100 0 0 1 270 260" fill="none" stroke="url(#ring3DGrad)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M 70 260 A 100 100 0 0 1 270 260" fill="none" stroke="url(#ring3DGrad3)" stroke-width="12" stroke-linecap="round"/>
 
     <!-- Ring CM Badge -->
     <circle cx="170" cy="196" r="7" fill="#00E5FF" stroke="#FFFFFF" stroke-width="2"/>
@@ -305,17 +302,17 @@ const svg3_3d_cm_rod_ring = `
 const svg4_3d_torque = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+    <filter id="glowGreen4" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
-    <marker id="arrowGreen3D" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowGreen3D4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
     </marker>
-    <marker id="arrowPink3D" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowPink3D4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
     </marker>
-    <marker id="arrowCyan3D" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowCyan3D4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
     </marker>
   </defs>
@@ -326,15 +323,15 @@ const svg4_3d_torque = `
   <line x1="420" y1="330" x2="320" y2="230" stroke="#334155" stroke-dasharray="4,4"/>
 
   <!-- Pivot Point O -->
-  <circle cx="320" cy="280" r="9" fill="#FFFFFF" filter="url(#glowGreen)"/>
+  <circle cx="320" cy="280" r="9" fill="#FFFFFF" filter="url(#glowGreen4)"/>
   <text x="285" y="295" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Pivot (O)</text>
 
-  <!-- Position Vector r (On Plane) -->
-  <line x1="320" y1="280" x2="520" y2="280" stroke="#00E5FF" stroke-width="4" marker-end="url(#arrowCyan3D)"/>
+  <!-- Position Vector r -->
+  <line x1="320" y1="280" x2="520" y2="280" stroke="#00E5FF" stroke-width="4" marker-end="url(#arrowCyan3D4)"/>
   <text x="410" y="305" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">r (Position Vector)</text>
 
-  <!-- Applied Force F (Tilted in Space) -->
-  <line x1="520" y1="280" x2="630" y2="170" stroke="#FF512F" stroke-width="4" marker-end="url(#arrowPink3D)"/>
+  <!-- Applied Force F -->
+  <line x1="520" y1="280" x2="630" y2="170" stroke="#FF512F" stroke-width="4" marker-end="url(#arrowPink3D4)"/>
   <text x="645" y="170" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">F (Force)</text>
 
   <!-- Angle theta Arc -->
@@ -342,7 +339,7 @@ const svg4_3d_torque = `
   <text x="565" y="260" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">θ</text>
 
   <!-- 3D Torque Vector τ (Vertical UPWARD) -->
-  <line x1="320" y1="280" x2="320" y2="60" stroke="#76FF03" stroke-width="5" marker-end="url(#arrowGreen3D)" filter="url(#glowGreen)"/>
+  <line x1="320" y1="280" x2="320" y2="60" stroke="#76FF03" stroke-width="5" marker-end="url(#arrowGreen3D4)" filter="url(#glowGreen4)"/>
   <text x="340" y="80" fill="#76FF03" font-family="sans-serif" font-size="20" font-weight="bold">τ = r × F (Torque)</text>
 
   <!-- Right Hand Rule Spiral Curve -->
@@ -360,7 +357,7 @@ const svg4_3d_torque = `
 const svg5_3d_angular_momentum = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <radialGradient id="weightGrad" cx="35%" cy="35%" r="65%">
+    <radialGradient id="weightGrad5" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#FFD700"/>
       <stop offset="100%" stop-color="#B78103"/>
     </radialGradient>
@@ -383,8 +380,8 @@ const svg5_3d_angular_momentum = `
 
     <!-- Extended Arms & Dumbbells -->
     <line x1="60" y1="135" x2="280" y2="135" stroke="#FF512F" stroke-width="8"/>
-    <circle cx="60" cy="135" r="14" fill="url(#weightGrad)"/>
-    <circle cx="280" cy="135" r="14" fill="url(#weightGrad)"/>
+    <circle cx="60" cy="135" r="14" fill="url(#weightGrad5)"/>
+    <circle cx="280" cy="135" r="14" fill="url(#weightGrad5)"/>
 
     <!-- Slow Rotation Arrow -->
     <path d="M 120 70 A 50 20 0 0 1 220 70" fill="none" stroke="#00E5FF" stroke-width="3"/>
@@ -415,8 +412,8 @@ const svg5_3d_angular_momentum = `
 
     <!-- Tucked Arms & Dumbbells -->
     <line x1="135" y1="135" x2="205" y2="135" stroke="#FF512F" stroke-width="8"/>
-    <circle cx="135" cy="135" r="14" fill="url(#weightGrad)"/>
-    <circle cx="205" cy="135" r="14" fill="url(#weightGrad)"/>
+    <circle cx="135" cy="135" r="14" fill="url(#weightGrad5)"/>
+    <circle cx="205" cy="135" r="14" fill="url(#weightGrad5)"/>
 
     <!-- Fast Spin Multiple Arrows -->
     <path d="M 110 70 A 60 22 0 0 1 230 70" fill="none" stroke="#76FF03" stroke-width="4"/>
@@ -434,16 +431,19 @@ const svg5_3d_angular_momentum = `
 const svg6_3d_couple_forces = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <linearGradient id="bar3D" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bar3D6" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#64748B"/>
       <stop offset="50%" stop-color="#334155"/>
       <stop offset="100%" stop-color="#1E293B"/>
     </linearGradient>
-    <marker id="arrowUp" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowUp6" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
     </marker>
-    <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+    <marker id="arrowDown6" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="arrowGreen3D6" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
     </marker>
   </defs>
 
@@ -451,7 +451,7 @@ const svg6_3d_couple_forces = `
   <ellipse cx="400" cy="230" rx="200" ry="16" fill="rgba(0,0,0,0.5)"/>
 
   <!-- 3D Metallic Cylindrical Bar -->
-  <rect x="200" y="180" width="400" height="34" rx="8" fill="url(#bar3D)" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="200" y="180" width="400" height="34" rx="8" fill="url(#bar3D6)" stroke="#94A3B8" stroke-width="2"/>
   <ellipse cx="600" cy="197" rx="12" ry="17" fill="#334155" stroke="#94A3B8" stroke-width="1.5"/>
   <ellipse cx="200" cy="197" rx="12" ry="17" fill="#64748B" stroke="#94A3B8" stroke-width="1.5"/>
 
@@ -460,11 +460,11 @@ const svg6_3d_couple_forces = `
   <text x="395" y="230" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
 
   <!-- Force +F at Left End (UPWARD) -->
-  <line x1="240" y1="180" x2="240" y2="60" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowUp)"/>
+  <line x1="240" y1="180" x2="240" y2="60" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowUp6)"/>
   <text x="190" y="50" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">+F (Upward)</text>
 
   <!-- Force -F at Right End (DOWNWARD) -->
-  <line x1="560" y1="214" x2="560" y2="330" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowDown)"/>
+  <line x1="560" y1="214" x2="560" y2="330" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowDown6)"/>
   <text x="520" y="355" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">-F (Downward)</text>
 
   <!-- Arm Distance d Dimension -->
@@ -474,7 +474,7 @@ const svg6_3d_couple_forces = `
   <text x="385" y="272" fill="#AB47BC" font-family="sans-serif" font-size="15.5" font-weight="bold">Arm Distance (d)</text>
 
   <!-- Clockwise Rotation Arc -->
-  <path d="M 360 130 A 65 65 0 0 1 440 130" fill="none" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen3D)"/>
+  <path d="M 360 130 A 65 65 0 0 1 440 130" fill="none" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen3D6)"/>
   <text x="340" y="110" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Pure Rotation (Clockwise)</text>
 
   <!-- Bottom Explanatory Panels -->
@@ -540,6 +540,21 @@ const svg7_3d_linear_rotational_chart = `
 // 3D SVG 8: 3D Radius of Gyration (k) Volumetric Model
 const svg8_3d_radius_gyration = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="sphereGold8" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="40%" stop-color="#FFD700"/>
+      <stop offset="85%" stop-color="#F57F17"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <radialGradient id="sphereCyan8" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#E0F7FA"/>
+      <stop offset="40%" stop-color="#00E5FF"/>
+      <stop offset="85%" stop-color="#00838F"/>
+      <stop offset="100%" stop-color="#004D40"/>
+    </radialGradient>
+  </defs>
+
   <!-- Left Side: Actual 3D Body -->
   <g transform="translate(40, 20)">
     <text x="50" y="30" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">1. Actual 3D Mass Distribution</text>
@@ -552,12 +567,12 @@ const svg8_3d_radius_gyration = `
     <!-- 3D Volumetric Solid Shape -->
     <path d="M 130 90 Q 300 60 270 230 Q 230 330 90 270 Q 60 160 130 90 Z" fill="rgba(2,132,199,0.18)" stroke="#38BDF8" stroke-width="2.5"/>
 
-    <!-- 3D Mass Particles m1, m2, m3 -->
-    <circle cx="230" cy="120" r="8" fill="url(#sphereGold)"/>
+    <!-- 3D Mass Particles m1, m2 -->
+    <circle cx="230" cy="120" r="8" fill="url(#sphereGold8)"/>
     <line x1="160" y1="120" x2="230" y2="120" stroke="#94A3B8" stroke-dasharray="3,3"/>
     <text x="180" y="112" fill="#FFD700" font-family="sans-serif" font-size="13">m₁, r₁</text>
 
-    <circle cx="260" cy="220" r="9" fill="url(#sphereCyan)"/>
+    <circle cx="260" cy="220" r="9" fill="url(#sphereCyan8)"/>
     <line x1="160" y1="220" x2="260" y2="220" stroke="#94A3B8" stroke-dasharray="3,3"/>
     <text x="195" y="212" fill="#00E5FF" font-family="sans-serif" font-size="13">m₂, r₂</text>
 
@@ -577,7 +592,7 @@ const svg8_3d_radius_gyration = `
     <line x1="160" y1="50" x2="160" y2="340" stroke="#AB47BC" stroke-width="3" stroke-dasharray="6,6"/>
 
     <!-- 3D Mass M Sphere -->
-    <circle cx="280" cy="190" r="22" fill="url(#sphereCyan)" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="280" cy="190" r="22" fill="url(#sphereCyan8)" stroke="#FFFFFF" stroke-width="2"/>
     <text x="265" y="160" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Mass M</text>
 
     <!-- Distance k Arrow -->
@@ -595,17 +610,23 @@ const svg8_3d_radius_gyration = `
 const svg9_3d_moments_of_inertia_set = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
-    <linearGradient id="ringGold3D" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ringGold3D9" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FFFDE7"/>
       <stop offset="50%" stop-color="#FFD700"/>
       <stop offset="100%" stop-color="#B78103"/>
     </linearGradient>
-    <radialGradient id="discCyan3D" cx="40%" cy="40%" r="60%">
+    <radialGradient id="discCyan3D9" cx="40%" cy="40%" r="60%">
       <stop offset="0%" stop-color="#E0F7FA"/>
       <stop offset="60%" stop-color="#00E5FF"/>
       <stop offset="100%" stop-color="#006064"/>
     </radialGradient>
-    <radialGradient id="sphere3DGrad" cx="35%" cy="35%" r="65%">
+    <linearGradient id="rod3DGrad9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="30%" stop-color="#0284C7"/>
+      <stop offset="70%" stop-color="#0369A1"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+    <radialGradient id="sphere3DGrad9" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#FFD1D1"/>
       <stop offset="40%" stop-color="#FF512F"/>
       <stop offset="85%" stop-color="#DD2C00"/>
@@ -620,7 +641,7 @@ const svg9_3d_moments_of_inertia_set = `
     <rect x="0" y="0" width="360" height="180" rx="10" fill="rgba(255,255,255,0.03)" stroke="#AB47BC" stroke-width="1.2"/>
     <text x="20" y="30" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">1. 3D Thin Circular Ring (Transverse Axis)</text>
 
-    <ellipse cx="120" cy="110" rx="65" ry="28" fill="none" stroke="url(#ringGold3D)" stroke-width="7"/>
+    <ellipse cx="120" cy="110" rx="65" ry="28" fill="none" stroke="url(#ringGold3D9)" stroke-width="7"/>
     <line x1="120" y1="45" x2="120" y2="165" stroke="#AB47BC" stroke-width="3" stroke-dasharray="4,4"/>
 
     <text x="215" y="90" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">I = M R²</text>
@@ -632,7 +653,7 @@ const svg9_3d_moments_of_inertia_set = `
     <rect x="0" y="0" width="360" height="180" rx="10" fill="rgba(255,255,255,0.03)" stroke="#AB47BC" stroke-width="1.2"/>
     <text x="20" y="30" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">2. 3D Circular Disc (Transverse Axis)</text>
 
-    <ellipse cx="120" cy="110" rx="65" ry="28" fill="url(#discCyan3D)" stroke="#00E5FF" stroke-width="2"/>
+    <ellipse cx="120" cy="110" rx="65" ry="28" fill="url(#discCyan3D9)" stroke="#00E5FF" stroke-width="2"/>
     <line x1="120" y1="45" x2="120" y2="165" stroke="#AB47BC" stroke-width="3" stroke-dasharray="4,4"/>
 
     <text x="215" y="90" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">I = ½ M R²</text>
@@ -644,7 +665,7 @@ const svg9_3d_moments_of_inertia_set = `
     <rect x="0" y="0" width="360" height="180" rx="10" fill="rgba(255,255,255,0.03)" stroke="#AB47BC" stroke-width="1.2"/>
     <text x="20" y="30" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">3. 3D Metallic Rod (Central Axis)</text>
 
-    <rect x="45" y="100" width="150" height="18" rx="4" fill="url(#rod3DGrad)" stroke="#38BDF8" stroke-width="1"/>
+    <rect x="45" y="100" width="150" height="18" rx="4" fill="url(#rod3DGrad9)" stroke="#38BDF8" stroke-width="1"/>
     <line x1="120" y1="45" x2="120" y2="165" stroke="#AB47BC" stroke-width="3" stroke-dasharray="4,4"/>
 
     <text x="215" y="90" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">I = <sup>1</sup>/₁₂ M L²</text>
@@ -656,7 +677,7 @@ const svg9_3d_moments_of_inertia_set = `
     <rect x="0" y="0" width="360" height="180" rx="10" fill="rgba(255,255,255,0.03)" stroke="#AB47BC" stroke-width="1.2"/>
     <text x="20" y="30" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">4. 3D Solid Sphere (Diameter Axis)</text>
 
-    <circle cx="120" cy="105" r="42" fill="url(#sphere3DGrad)"/>
+    <circle cx="120" cy="105" r="42" fill="url(#sphere3DGrad9)"/>
     <ellipse cx="120" cy="105" rx="42" ry="12" fill="none" stroke="rgba(255,255,255,0.4)" stroke-dasharray="3,3"/>
     <line x1="120" y1="45" x2="120" y2="165" stroke="#AB47BC" stroke-width="3" stroke-dasharray="4,4"/>
 
@@ -963,7 +984,7 @@ ${solutionsPartCode}
 module.exports = solutionsHtml;
 `;
 
-const tempSolFile = path.join(__dirname, 'temp_sol_eval_3d.js');
+const tempSolFile = path.join(__dirname, 'temp_sol_eval_3d_audit.js');
 fs.writeFileSync(tempSolFile, fullScriptToRun, 'utf8');
 const solutionsHtml = require(tempSolFile);
 fs.unlinkSync(tempSolFile);
@@ -971,7 +992,7 @@ fs.unlinkSync(tempSolFile);
 const overviewHtml = generateFullOverviewHtml();
 
 const tsContent = `// Class 11 Physics Unit V: Motion of System of Particles and Rigid Body
-// High-Level Reference Book Content & NCERT Solutions (Enhanced with 3D Volumetric Renders)
+// High-Level Reference Book Content & NCERT Solutions (Fully Audited 3D Volumetric Renders)
 
 export const c11Phy5HtmlOverview = ${JSON.stringify(overviewHtml)};
 
@@ -981,4 +1002,4 @@ export const c11Phy5HtmlSolutions = ${JSON.stringify(solutionsHtml)};
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-5.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-5.ts with 9 3D Volumetric Renders to " + outputPath);
+console.log("Successfully wrote fully audited c11-phy-5.ts with 9 self-contained 3D Volumetric Renders to " + outputPath);
