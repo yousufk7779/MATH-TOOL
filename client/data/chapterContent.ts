@@ -112,6 +112,7 @@ import { c11Phy1HtmlOverview, c11Phy1HtmlSolutions } from "./content/c11-phy-1";
 import { c11Phy2HtmlOverview, c11Phy2HtmlSolutions } from "./content/c11-phy-2";
 import { c11Phy3HtmlOverview, c11Phy3HtmlSolutions } from "./content/c11-phy-3";
 import { c11Phy4HtmlOverview, c11Phy4HtmlSolutions } from "./content/c11-phy-4";
+import { c11Phy5HtmlOverview, c11Phy5HtmlSolutions } from "./content/c11-phy-5";
 import { c11Chem1HtmlOverview, c11Chem1HtmlSolutions } from "./content/c11-chem-1";
 import { c11Chem2HtmlOverview, c11Chem2HtmlSolutions } from "./content/c11-chem-2";
 import { c11Chem3HtmlOverview, c11Chem3HtmlSolutions } from "./content/c11-chem-3";
@@ -1082,6 +1083,16 @@ if (ch11Phy4) {
     ch11Phy4.htmlExercises = {};
   }
   ch11Phy4.htmlExercises["ex-c11-qa"] = c11Phy4HtmlSolutions;
+}
+
+// Override Class 11 Physics Chapter 5 with full high-level Reference & Solutions content
+const ch11Phy5 = chapterContents["c11-phy-5"];
+if (ch11Phy5) {
+  ch11Phy5.htmlOverview = c11Phy5HtmlOverview;
+  if (!ch11Phy5.htmlExercises) {
+    ch11Phy5.htmlExercises = {};
+  }
+  ch11Phy5.htmlExercises["ex-c11-qa"] = c11Phy5HtmlSolutions;
 }
 
 // Override Class 11 Chemistry Chapter 1 with full high-level Reference & Solutions content
