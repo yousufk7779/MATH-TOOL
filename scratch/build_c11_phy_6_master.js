@@ -82,42 +82,28 @@ const svg1_3d_keplers_laws = `
     </filter>
   </defs>
 
-  <!-- Left Side: Elliptical Orbit Geometry (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Kepler's Orbits &amp; Swept Area Law</text>
-
-    <!-- Elliptical Path -->
     <ellipse cx="180" cy="220" rx="140" ry="90" fill="none" stroke="#FDC830" stroke-width="2.5"/>
-
-    <!-- Sun at Focus F1 (x = 110, y = 220) -->
     <circle cx="110" cy="220" r="18" fill="url(#sunGrad1)" filter="url(#glowGold1)"/>
     <text x="100" y="252" fill="#FFD700" font-family="sans-serif" font-size="13.5" font-weight="bold">Sun (Focus F₁)</text>
-
-    <!-- Empty Focus F2 -->
     <circle cx="250" cy="220" r="4" fill="#94A3B8"/>
     <text x="240" y="240" fill="#94A3B8" font-family="sans-serif" font-size="13">Focus F₂</text>
 
-    <!-- Swept Sector Area A1 (Near Perihelion) -->
     <path d="M 110 220 L 40 220 A 140 90 0 0 1 70 145 Z" fill="url(#areaGrad1)" stroke="#FDC830" stroke-width="1.5"/>
     <text x="65" y="195" fill="#FDC830" font-family="sans-serif" font-size="14" font-weight="bold">Area A₁</text>
 
-    <!-- Planet at Perihelion (Fastest speed v1) -->
     <circle cx="40" cy="220" r="9" fill="url(#planetGrad1)"/>
     <text x="10" y="200" fill="#00E5FF" font-family="sans-serif" font-size="13" font-weight="bold">Perihelion (v₁ max)</text>
-
-    <!-- Planet at Aphelion (Slowest speed v2) -->
     <circle cx="320" cy="220" r="9" fill="url(#planetGrad1)"/>
     <text x="325" y="200" fill="#00E5FF" font-family="sans-serif" font-size="13" font-weight="bold">Aphelion (v₂ min)</text>
 
-    <!-- Major Axis Line -->
     <line x1="40" y1="220" x2="320" y2="220" stroke="#475569" stroke-dasharray="4,4"/>
     <text x="180" y="330" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Semi-Major Axis = a</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: 3 Kepler's Laws Cards (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Summary of Kepler's 3 Laws</text>
@@ -164,30 +150,22 @@ const svg2_3d_universal_gravitation = `
     </marker>
   </defs>
 
-  <!-- Left Side: 3D Mass Interaction Model (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Gravitational Force Pair (Action-Reaction)</text>
-
-    <!-- 3D Base Plane -->
     <ellipse cx="180" cy="300" rx="140" ry="40" fill="rgba(148,163,184,0.06)" stroke="#475569" stroke-width="1.5"/>
 
-    <!-- Mass m1 Spherical Body -->
     <circle cx="80" cy="220" r="32" fill="url(#m1Grad2)" filter="url(#glowGold2)"/>
     <text x="65" y="225" fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold">m₁</text>
 
-    <!-- Mass m2 Spherical Body -->
     <circle cx="280" cy="220" r="22" fill="url(#m2Grad2)"/>
     <text x="270" y="225" fill="#000000" font-family="sans-serif" font-size="15" font-weight="bold">m₂</text>
 
-    <!-- Attractive Force Vector F12 (on m1 towards m2) -->
     <line x1="112" y1="220" x2="175" y2="220" stroke="#FDC830" stroke-width="4.5" marker-end="url(#arrowGold2)"/>
     <text x="120" y="200" fill="#FDC830" font-family="sans-serif" font-size="14.5" font-weight="bold">F₁₂ (towards m₂)</text>
 
-    <!-- Attractive Force Vector F21 (on m2 towards m1) -->
     <line x1="258" y1="220" x2="195" y2="220" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowCyan2)"/>
     <text x="200" y="200" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">F₂₁ (towards m₁)</text>
 
-    <!-- Separation Distance r -->
     <line x1="80" y1="270" x2="280" y2="270" stroke="#76FF03" stroke-width="2"/>
     <line x1="80" y1="260" x2="80" y2="280" stroke="#76FF03" stroke-width="2"/>
     <line x1="280" y1="260" x2="280" y2="280" stroke="#76FF03" stroke-width="2"/>
@@ -196,10 +174,8 @@ const svg2_3d_universal_gravitation = `
     <text x="182" y="340" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13">✓ F₁₂ = - F₂₁ (Obeys Newton's 3rd Law)</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Universal Law Summary Card (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Law of Gravitation &amp; Constant G</text>
@@ -232,38 +208,29 @@ const svg3_3d_variation_of_g = `
     </radialGradient>
   </defs>
 
-  <!-- Left Side: Earth Sphere Altitude & Depth Geometry (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Earth Sphere &amp; Variation Locations</text>
-
-    <!-- Earth Sphere (Radius R) -->
     <circle cx="180" cy="220" r="110" fill="url(#earthGrad3)" stroke="#00E5FF" stroke-width="2"/>
     <circle cx="180" cy="220" r="5" fill="#FFFFFF"/>
     <text x="160" y="240" fill="#FFFFFF" font-family="sans-serif" font-size="14">Center (g=0)</text>
 
-    <!-- Surface Reference Point P (g = 9.8 m/s²) -->
     <circle cx="180" cy="110" r="6" fill="#FDC830"/>
     <text x="195" y="115" fill="#FDC830" font-family="sans-serif" font-size="14" font-weight="bold">Surface P (g = G M/R²)</text>
 
-    <!-- Altitude Height h Point (g' < g) -->
     <circle cx="180" cy="40" r="6" fill="#76FF03"/>
     <line x1="180" y1="110" x2="180" y2="40" stroke="#76FF03" stroke-width="2.5" stroke-dasharray="3,3"/>
     <text x="195" y="45" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Altitude h (g_h)</text>
 
-    <!-- Depth d Point (g_d < g) -->
     <circle cx="180" cy="165" r="6" fill="#FF512F"/>
     <line x1="180" y1="110" x2="180" y2="165" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="3,3"/>
     <text x="195" y="170" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Depth d (g_d)</text>
 
-    <!-- Radius R arrow -->
     <line x1="180" y1="220" x2="290" y2="220" stroke="#FFFFFF" stroke-width="2"/>
     <text x="220" y="210" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Radius R</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Variation Formulae Cards (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Acceleration g Variation Laws</text>
@@ -296,34 +263,26 @@ const svg4_3d_potential_energy_escape_velocity = `
     </marker>
   </defs>
 
-  <!-- Left Side: Gravitational Potential Well U(r) Curve (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Potential Energy Well U(r) = -G M m / r</text>
-
-    <!-- Axes -->
     <line x1="50" y1="120" x2="330" y2="120" stroke="#475569" stroke-width="2"/>
     <line x1="50" y1="60" x2="50" y2="340" stroke="#475569" stroke-width="2"/>
     <text x="340" y="125" fill="#94A3B8" font-family="sans-serif" font-size="13">r</text>
     <text x="40" y="50" fill="#94A3B8" font-family="sans-serif" font-size="13">U(r)</text>
 
-    <!-- Negative Hyperbolic Potential Well Curve -->
     <path d="M 70 320 Q 90 140 310 125" fill="none" stroke="#FDC830" stroke-width="3.5"/>
     <path d="M 70 320 Q 90 140 310 125 L 310 120 L 70 120 Z" fill="url(#wellGrad4)"/>
 
-    <!-- Earth Radius R boundary -->
     <line x1="90" y1="120" x2="90" y2="280" stroke="#00E5FF" stroke-dasharray="3,3" stroke-width="2"/>
     <text x="80" y="110" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">r = R</text>
 
-    <!-- Projectile launched with Escape Speed ve -->
     <circle cx="90" cy="240" r="8" fill="#76FF03"/>
     <line x1="90" y1="240" x2="260" y2="90" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen4)"/>
     <text x="180" y="160" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">v_e Launch → ∞</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Escape Speed & Potential Card (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Potential &amp; Escape Velocity</text>
@@ -359,29 +318,22 @@ const svg5_3d_satellites_geostationary_polar = `
     </filter>
   </defs>
 
-  <!-- Left Side: 3D Earth Satellite Orbits (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Geostationary vs Polar Satellite Orbits</text>
-
-    <!-- Earth Globe -->
     <circle cx="180" cy="220" r="70" fill="url(#earthGrad5)" stroke="#00E5FF" stroke-width="2"/>
     <text x="160" y="225" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Earth</text>
 
-    <!-- Geostationary Orbit (Equatorial Plane) -->
     <ellipse cx="180" cy="220" rx="145" ry="45" fill="none" stroke="#FDC830" stroke-width="2.5" stroke-dasharray="5,4"/>
     <circle cx="320" cy="220" r="8" fill="#FDC830" filter="url(#glowSat5)"/>
     <text x="250" y="200" fill="#FDC830" font-family="sans-serif" font-size="13.5" font-weight="bold">GEO (T = 24h)</text>
 
-    <!-- Polar Orbit (Passing over North/South Poles) -->
     <ellipse cx="180" cy="220" rx="35" ry="140" fill="none" stroke="#76FF03" stroke-width="2.5"/>
     <circle cx="180" cy="80" r="7" fill="#76FF03"/>
     <text x="195" y="85" fill="#76FF03" font-family="sans-serif" font-size="13.5" font-weight="bold">Polar Orbit (LEO)</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Satellite Orbital Speed & Period Card (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Orbital Speed &amp; Satellite Laws</text>
@@ -415,19 +367,14 @@ const svg6_3d_satellite_energy_weightlessness = `
     </radialGradient>
   </defs>
 
-  <!-- Left Side: Satellite Mechanical Energy Breakdown (Width 365, Center x = 182) -->
   <g transform="translate(20, 20)">
     <text x="182" y="30" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Orbiting Satellite Energy Balance</text>
-
-    <!-- Kinetic Energy Ek Bar -->
     <rect x="50" y="100" width="260" height="40" rx="6" fill="rgba(118,255,3,0.2)" stroke="#76FF03" stroke-width="2"/>
     <text x="65" y="125" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Kinetic E_k = + ½ G M m / r</text>
 
-    <!-- Potential Energy U Bar -->
     <rect x="50" y="160" width="260" height="40" rx="6" fill="rgba(255,81,47,0.2)" stroke="#FF512F" stroke-width="2"/>
     <text x="65" y="185" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">Potential U = - G M m / r</text>
 
-    <!-- Total Energy E_total Bar -->
     <rect x="50" y="220" width="260" height="40" rx="6" fill="rgba(253,200,48,0.2)" stroke="#FDC830" stroke-width="2"/>
     <text x="65" y="245" fill="#FDC830" font-family="sans-serif" font-size="15" font-weight="bold">Total E = - ½ G M m / r</text>
 
@@ -437,10 +384,8 @@ const svg6_3d_satellite_energy_weightlessness = `
     <text x="182" y="395" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">✓ Negative Total Energy indicates Bound Orbit!</text>
   </g>
 
-  <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Weightlessness Concept Card (Width 365, Center x = 182) -->
   <g transform="translate(415, 20)">
     <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FDC830" stroke-width="1.8"/>
     <text x="182" y="35" text-anchor="middle" fill="#FDC830" font-family="sans-serif" font-size="17" font-weight="bold">2. Weightlessness in Satellites</text>
@@ -461,7 +406,7 @@ const svg6_3d_satellite_energy_weightlessness = `
   </g>
 </svg>`;
 
-// Construct final Overview HTML for Chapter 6
+// Construct final Overview HTML for Chapter 6 (100% Exact Word-for-Word Syllabus Section Headings)
 function generateFullOverviewHtml() {
   return `
 <style>
@@ -506,7 +451,7 @@ function generateFullOverviewHtml() {
         <span style="color: #FFFFFF;">Work done in bringing mass m from infinity to distance r from mass M: U = - G M m / r.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>7. Escape Velocity (v_e):</b>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>7. Escape Speed (v_e):</b>
         <span style="color: #FFFFFF;">Minimum velocity required for a body to escape Earth's gravitational field: v_e = √(2 g R) ≈ 11.2 km/s.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
@@ -524,7 +469,7 @@ function generateFullOverviewHtml() {
     </div>
   </div>
 
-  <!-- SECTION 1: KEPLER'S LAWS OF PLANETARY MOTION -->
+  <!-- SECTION 1: KEPLER'S LAWS OF PLANETARY MOTION (100% OFFICIAL SYLLABUS TITLE) -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Kepler's Laws of Planetary Motion</h2>
   
   ${defCard("Kepler's Laws", "Johannes Kepler formulated three empirical laws governing planetary motion around the Sun based on Tycho Brahe's astronomical observations.")}
@@ -539,8 +484,8 @@ function generateFullOverviewHtml() {
 
   ${svg3DCardWrapper("Kepler's Laws of Planetary Motion (Elliptical Orbit & Swept Areas)", "3D Elliptical planetary orbit around Sun focus F1 showing areal velocity conservation dA/dt = L/2m and T² ∝ a³.", svg1_3d_keplers_laws)}
 
-  <!-- SECTION 2: NEWTON'S UNIVERSAL LAW OF GRAVITATION -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Universal Law of Gravitation & Constant G</h2>
+  <!-- SECTION 2: UNIVERSAL LAW OF GRAVITATION (100% OFFICIAL SYLLABUS TITLE) -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Universal Law of Gravitation</h2>
 
   ${defCard("Newton's Law of Gravitation", "States that every particle of matter attracts every other particle with a force directly proportional to the product of their masses and inversely proportional to the square of distance between them.")}
 
@@ -555,50 +500,51 @@ function generateFullOverviewHtml() {
 
   ${svg3DCardWrapper("Universal Law of Gravitation & Gravitational Constant G", "3D Mass interaction model showing action-reaction force pair F12 = -F21 and universal constant G values.", svg2_3d_universal_gravitation)}
 
-  <!-- SECTION 3: ACCELERATION DUE TO GRAVITY (g) AND ITS VARIATIONS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Acceleration Due to Gravity (g) and Its Variations</h2>
+  <!-- SECTION 3: ACCELERATION DUE TO GRAVITY AND ITS VARIATION WITH ALTITUDE AND DEPTH (100% OFFICIAL SYLLABUS TITLE) -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Acceleration Due to Gravity and Its Variation with Altitude and Depth</h2>
 
   ${defCard("Acceleration Due to Gravity (g)", "The acceleration acquired by a body falling freely towards Earth under its gravitational pull: g = G M / R<sup>2</sup> ≈ 9.8 m/s<sup>2</sup>.")}
 
   ${eqBox("<b>g = " + frac('G M', 'R<sup>2</sup>') + " = " + frac('4', '3') + " π G ρ R &nbsp; (where ρ is average density of Earth)</b>")}
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Three Causes of Variation in g</h3>
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Variations in Acceleration Due to Gravity</h3>
   <div style="margin: 12px 0;">
-    ${colonTopic("1. Altitude (Height h)", singleLineCode("g<sub>h</sub> = g (1 - " + frac('2h', 'R') + ") &nbsp; (for h &lt;&lt; R)"))}
-    ${colonTopic("2. Depth (d below surface)", singleLineCode("g<sub>d</sub> = g (1 - " + frac('d', 'R') + ") &nbsp; (at Earth center d=R, g=0)"))}
-    ${colonTopic("3. Rotation of Earth (Latitude λ)", singleLineCode("g<sub>λ</sub> = g - R ω<sup>2</sup> cos<sup>2</sup> λ &nbsp; (g max at Poles λ=90°, g min at Equator λ=0°)"))}
+    ${colonTopic("1. Variation with Altitude (Height h)", singleLineCode("g<sub>h</sub> = g (1 - " + frac('2h', 'R') + ") &nbsp; (for h &lt;&lt; R)"))}
+    ${colonTopic("2. Variation with Depth (d below surface)", singleLineCode("g<sub>d</sub> = g (1 - " + frac('d', 'R') + ") &nbsp; (at Earth center d=R, g=0)"))}
+    ${colonTopic("3. Variation with Latitude (Earth Rotation λ)", singleLineCode("g<sub>λ</sub> = g - R ω<sup>2</sup> cos<sup>2</sup> λ &nbsp; (g max at Poles λ=90°, g min at Equator λ=0°)"))}
   </div>
 
   ${svg3DCardWrapper("Variation of Acceleration Due to Gravity (g) with Altitude & Depth", "3D Earth sphere geometry showing g decrease at height h, depth d, and latitude λ rotational effect.", svg3_3d_variation_of_g)}
 
-  <!-- SECTION 4: GRAVITATIONAL POTENTIAL ENERGY & ESCAPE VELOCITY -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Gravitational Potential Energy & Escape Velocity</h2>
+  <!-- SECTION 4: GRAVITATIONAL POTENTIAL ENERGY AND GRAVITATIONAL POTENTIAL (100% OFFICIAL SYLLABUS TITLE) -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Gravitational Potential Energy and Gravitational Potential</h2>
 
   ${defCard("Gravitational Potential Energy (U)", "The work done by external agent in bringing mass m from infinity to distance r in gravitational field of mass M without acceleration: U = - G M m / r.")}
 
-  ${eqBox("<b>U(r) = - " + frac('G M m', 'r') + " &nbsp;|&nbsp; V(r) = - " + frac('G M', 'r') + " &nbsp;|&nbsp; v<sub>e</sub> = √(2 g R) = √(" + frac('2 G M', 'R') + ") ≈ 11.2 km/s</b>")}
+  ${eqBox("<b>U(r) = - " + frac('G M m', 'r') + " &nbsp;|&nbsp; V(r) = - " + frac('G M', 'r') + " &nbsp;|&nbsp; Relation: E<sub>g</sub> = - " + frac('dV', 'dr') + "</b>")}
 
   ${svg3DCardWrapper("Gravitational Potential Energy Well & Escape Velocity", "Hyperbolic potential energy well U(r) = -GMm/r alongside projectile escape trajectory at v_e = 11.2 km/s.", svg4_3d_potential_energy_escape_velocity)}
 
-  <!-- SECTION 5: EARTH SATELLITES & ORBITAL VELOCITY -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Earth Satellites & Orbital Velocity</h2>
+  <!-- SECTION 5: ESCAPE SPEED (100% OFFICIAL SYLLABUS TITLE) -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Escape Speed</h2>
 
-  ${defCard("Orbital Velocity (v_o)", "The minimum velocity required to put a satellite into its orbital path around Earth: v_o = √(G M / r) = √(g R).")}
+  ${defCard("Escape Speed (v_e)", "The minimum velocity with which a body must be projected vertically upward from Earth's surface so that it escapes Earth's gravitational field forever: v_e = √(2 g R) ≈ 11.2 km/s.")}
+
+  ${eqBox("<b>v<sub>e</sub> = √(2 g R) = √(" + frac('2 G M', 'R') + ") ≈ 11.2 km/s &nbsp; (Independent of mass m and projection angle)</b>")}
+
+  <!-- SECTION 6: ORBITAL VELOCITY OF A SATELLITE (100% OFFICIAL SYLLABUS TITLE) -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Orbital Velocity of a Satellite</h2>
+
+  ${defCard("Orbital Velocity (v_o)", "The minimum horizontal velocity required to put a satellite into a stable circular orbit around Earth: v_o = √(G M / r) = √(g R).")}
 
   <div style="margin: 12px 0;">
-    ${colonTopic("Orbital Speed v_o", singleLineCode("v<sub>o</sub> = √(" + frac('G M', 'R + h') + ") ≈ 7.92 km/s &nbsp; (for low Earth orbits)"))}
-    ${colonTopic("Time Period T", singleLineCode("T = " + frac('2π (R+h)<sup>3/2</sup>', '√(G M)') + " &nbsp; (For GEO: h = 35,786 km, T = 24 Hours)"))}
+    ${colonTopic("1. Orbital Speed v_o", singleLineCode("v<sub>o</sub> = √(" + frac('G M', 'R + h') + ") ≈ 7.92 km/s &nbsp; (for low Earth orbits)"))}
+    ${colonTopic("2. Relation to Escape Speed", singleLineCode("v<sub>e</sub> = √2 v<sub>o</sub> ≈ 1.414 v<sub>o</sub>"))}
+    ${colonTopic("3. Time Period T", singleLineCode("T = " + frac('2π (R+h)<sup>3/2</sup>', '√(G M)') + " &nbsp; (For GEO: h = 35,786 km, T = 24 Hours)"))}
+    ${colonTopic("4. Energy & Weightlessness", singleLineCode("E<sub>total</sub> = -" + frac('G M m', '2 r') + " &nbsp;|&nbsp; N = m(g - a) = 0 (Apparent Weightlessness)"))}
   </div>
 
   ${svg3DCardWrapper("Earth Satellites & Geostationary vs Polar Orbits", "3D Globe showing Geostationary orbit (GEO, T=24h) in equatorial plane vs Low-altitude Polar orbit.", svg5_3d_satellites_geostationary_polar)}
-
-  <!-- SECTION 6: ENERGY OF SATELLITE & WEIGHTLESSNESS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Energy of an Orbiting Satellite & Weightlessness</h2>
-
-  ${defCard("Weightlessness", "The condition in which a body experiences zero net normal contact reaction (N = 0) while in continuous free-fall along with its satellite environment.")}
-
-  ${eqBox("<b>E<sub>k</sub> = +" + frac('1', '2') + " " + frac('G M m', 'r') + " &nbsp;|&nbsp; U = -" + frac('G M m', 'r') + " &nbsp;|&nbsp; E<sub>total</sub> = -" + frac('1', '2') + " " + frac('G M m', 'r') + "</b>")}
-
   ${svg3DCardWrapper("Energy of an Orbiting Satellite & Weightlessness Concept", "Energy breakdown graph (E_k, U, E_total) alongside free-fall weightlessness N=0 phenomena inside spacecraft.", svg6_3d_satellite_energy_weightlessness)}
 
   <!-- QUICK REVISION CHEAT SHEET -->
@@ -815,7 +761,7 @@ function generateFullSolutionsHtml() {
 const overviewHtml = generateFullOverviewHtml();
 const solutionsHtml = generateFullSolutionsHtml();
 
-const tsContent = `// Class 11 Physics Unit VI: Gravitation
+const tsContent = `// Class 11 Physics Unit VI: Gravitation (100% Exact Official NCERT Syllabus Alignment)
 // High-Level Reference Book Content & NCERT Solutions (6 Self-Contained 3D Volumetric SVG Diagrams)
 
 export const c11Phy6HtmlOverview = ${JSON.stringify(overviewHtml)};
@@ -826,4 +772,4 @@ export const c11Phy6HtmlSolutions = ${JSON.stringify(solutionsHtml)};
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-6.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully generated c11-phy-6.ts with 6 3D SVG diagrams and 100 questions at " + outputPath);
+console.log("Successfully updated c11-phy-6.ts with 100% exact official syllabus headings at " + outputPath);
