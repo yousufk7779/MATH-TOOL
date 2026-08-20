@@ -185,7 +185,7 @@ const svg2_3d_unit_systems_matrix = `
   </g>
 </svg>`;
 
-// 3D SVG 3: 3D Fundamental SI Units & Supplementary Angles Model (FIXED: Expanded Height 520px, Wider 350px Rectangles at Bottom y=390, Zero Sphere Overlap)
+// 3D SVG 3: 3D Fundamental SI Units & Supplementary Angles Model (PERFECTLY CENTER-ALIGNED HEADINGS & ZERO TEXT OVERFLOW RECTANGLES)
 const svg3_3d_supplementary_angles = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -196,70 +196,72 @@ const svg3_3d_supplementary_angles = `
     </radialGradient>
   </defs>
 
-  <!-- Left Side: Plane Angle dθ (Radian) -->
-  <g transform="translate(30, 20)">
-    <text x="30" y="30" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Plane Angle: dθ = ds / r &nbsp;(Radian)</text>
+  <!-- Left Side: Plane Angle dθ (Radian) (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <!-- CENTER-ALIGNED HEADING 1 -->
+    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Plane Angle (dθ = ds / r)</text>
 
     <!-- Circular Arc Center O -->
-    <circle cx="160" cy="220" r="7" fill="#FFFFFF"/>
-    <text x="135" y="235" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+    <circle cx="160" cy="210" r="7" fill="#FFFFFF"/>
+    <text x="135" y="225" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
 
     <!-- Radii r -->
-    <line x1="160" y1="220" x2="310" y2="220" stroke="#00E5FF" stroke-width="2.5"/>
-    <line x1="160" y1="220" x2="265" y2="115" stroke="#00E5FF" stroke-width="2.5"/>
-    <text x="235" y="240" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
+    <line x1="160" y1="210" x2="310" y2="210" stroke="#00E5FF" stroke-width="2.5"/>
+    <line x1="160" y1="210" x2="265" y2="105" stroke="#00E5FF" stroke-width="2.5"/>
+    <text x="235" y="230" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
 
     <!-- Intercepted Arc ds -->
-    <path d="M 310 220 A 150 150 0 0 0 265 115" fill="none" stroke="#FF512F" stroke-width="6" stroke-linecap="round"/>
-    <text x="305" y="160" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Arc ds</text>
+    <path d="M 310 210 A 150 150 0 0 0 265 105" fill="none" stroke="#FF512F" stroke-width="6" stroke-linecap="round"/>
+    <text x="305" y="150" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Arc ds</text>
 
     <!-- Angle dθ Arc -->
-    <path d="M 210 220 A 50 50 0 0 0 195 185" fill="none" stroke="#FFD700" stroke-width="2.5"/>
-    <text x="215" y="200" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">dθ</text>
+    <path d="M 210 210 A 50 50 0 0 0 195 175" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <text x="215" y="190" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">dθ</text>
 
-    <!-- Extended Bottom Rectangle 1: Plane Angle Formula (Width 350, Height 95, y=370) -->
-    <rect x="10" y="370" width="350" height="95" rx="10" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
-    <text x="25" y="398" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Plane Angle (dθ) Law:</text>
-    <text x="25" y="425" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dθ = ds / r &nbsp; [SI Unit: Radian (rad)]</text>
-    <text x="25" y="450" fill="#76FF03" font-family="sans-serif" font-size="13.5">1 rad = 180° / π ≈ 57.3° &nbsp;|&nbsp; Full Circle = 2π rad</text>
+    <!-- Extended Bottom Rectangle 1: Plane Angle Formula (Width 365, Height 110, y=360, All Text Center-Aligned) -->
+    <rect x="0" y="360" width="365" height="110" rx="12" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
+    <text x="182" y="390" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Plane Angle (dθ) Formula</text>
+    <text x="182" y="420" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">dθ = ds / r &nbsp; [SI Unit: Radian (rad)]</text>
+    <text x="182" y="448" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">1 rad = 180° / π ≈ 57.3° &nbsp;|&nbsp; Full Circle = 2π rad</text>
   </g>
 
   <!-- Vertical Divider -->
   <line x1="400" y1="40" x2="400" y2="490" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: 3D Solid Angle dΩ (Steradian) (Shifted Sphere Up to y=180 so 0% Overlap) -->
-  <g transform="translate(420, 20)">
-    <text x="20" y="30" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">2. 3D Solid Angle: dΩ = dA / r² &nbsp;(Steradian)</text>
+  <!-- Right Side: 3D Solid Angle dΩ (Steradian) (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <!-- CENTER-ALIGNED HEADING 2 -->
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. 3D Solid Angle (dΩ = dA / r²)</text>
 
-    <!-- 3D Sphere (Center at cx=170, cy=180, r=105) -->
-    <circle cx="170" cy="180" r="105" fill="url(#sphereGrad3)" opacity="0.35"/>
-    <ellipse cx="170" cy="180" rx="105" ry="30" fill="none" stroke="rgba(255,255,255,0.25)" stroke-dasharray="4,4"/>
+    <!-- 3D Sphere (Center at cx=182, cy=180, r=100) -->
+    <circle cx="182" cy="180" r="100" fill="url(#sphereGrad3)" opacity="0.35"/>
+    <ellipse cx="182" cy="180" rx="100" ry="30" fill="none" stroke="rgba(255,255,255,0.25)" stroke-dasharray="4,4"/>
 
     <!-- Apex Point O -->
-    <circle cx="170" cy="180" r="6" fill="#FFFFFF"/>
-    <text x="150" y="185" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">O</text>
+    <circle cx="182" cy="180" r="6" fill="#FFFFFF"/>
+    <text x="162" y="185" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">O</text>
 
     <!-- 3D Cone Rays -->
-    <line x1="170" y1="180" x2="245" y2="105" stroke="#FFD700" stroke-width="2"/>
-    <line x1="170" y1="180" x2="270" y2="135" stroke="#FFD700" stroke-width="2"/>
-    <line x1="170" y1="180" x2="250" y2="175" stroke="#FFD700" stroke-width="2"/>
+    <line x1="182" y1="180" x2="255" y2="105" stroke="#FFD700" stroke-width="2"/>
+    <line x1="182" y1="180" x2="280" y2="135" stroke="#FFD700" stroke-width="2"/>
+    <line x1="182" y1="180" x2="260" y2="175" stroke="#FFD700" stroke-width="2"/>
 
     <!-- Intercepted 3D Area dA on Sphere Surface -->
-    <ellipse cx="255" cy="135" rx="26" ry="20" fill="#FFD700" opacity="0.75" stroke="#FFFFFF" stroke-width="2"/>
-    <text x="242" y="140" fill="#000000" font-family="sans-serif" font-size="13.5" font-weight="bold">dA</text>
+    <ellipse cx="265" cy="135" rx="26" ry="20" fill="#FFD700" opacity="0.75" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="252" y="140" fill="#000000" font-family="sans-serif" font-size="13.5" font-weight="bold">dA</text>
 
     <!-- Distance r label -->
-    <text x="205" y="140" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
+    <text x="215" y="140" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
 
-    <!-- Extended Bottom Rectangle 2: Solid Angle Formula (Width 350, Height 95, y=370) -->
-    <rect x="10" y="370" width="350" height="95" rx="10" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.8"/>
-    <text x="25" y="398" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">3D Solid Angle (dΩ) Law:</text>
-    <text x="25" y="425" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dΩ = dA / r² &nbsp; [SI Unit: Steradian (sr)]</text>
-    <text x="25" y="450" fill="#00E5FF" font-family="sans-serif" font-size="13.5">Entire Sphere Surface Area A = 4πr² &nbsp;⇒ &nbsp;Ω = 4π sr</text>
+    <!-- Extended Bottom Rectangle 2: Solid Angle Formula (Width 365, Height 110, y=360, All Text Center-Aligned) -->
+    <rect x="0" y="360" width="365" height="110" rx="12" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.8"/>
+    <text x="182" y="390" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">3D Solid Angle (dΩ) Formula</text>
+    <text x="182" y="420" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">dΩ = dA / r² &nbsp; [SI Unit: Steradian (sr)]</text>
+    <text x="182" y="448" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="13">Sphere Surface A = 4πr² &nbsp;⇒ &nbsp;Full Sphere = 4π sr</text>
   </g>
 </svg>`;
 
-// 3D SVG 4: Significant Figures Rules & Precision Micrometer Screw Gauge Model (FIXED: Expanded Height 480px, Multi-Line Formula Box, Zero Text Overflow)
+// 3D SVG 4: Significant Figures Rules & Precision Micrometer Screw Gauge Model
 const svg4_3d_precision_micrometer = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -306,7 +308,7 @@ const svg4_3d_precision_micrometer = `
     <line x1="300" y1="135" x2="300" y2="195" stroke="#FFD700" stroke-width="3"/>
     <text x="315" y="170" fill="#FFD700" font-family="monospace" font-size="14" font-weight="bold">45</text>
 
-    <!-- Formula Panel at Bottom Left (FIXED: Width 360, Height 115, Clean Short Multi-line Text, 0% Overflow) -->
+    <!-- Formula Panel at Bottom Left -->
     <rect x="10" y="325" width="360" height="115" rx="10" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
     <text x="25" y="352" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Least Count (LC) Formula:</text>
     <text x="25" y="378" fill="#FFFFFF" font-family="monospace" font-size="14.5" font-weight="bold">LC = Pitch / Circular Divisions</text>
@@ -314,7 +316,7 @@ const svg4_3d_precision_micrometer = `
     <text x="25" y="426" fill="#76FF03" font-family="sans-serif" font-size="13.5">Reading = MSR + (CSR × LC)</text>
   </g>
 
-  <!-- Right Side: Significant Figures Rules Card (FIXED: Width 365, Height 435, Perfect Vertical Spacing, 0% Text Overflow) -->
+  <!-- Right Side: Significant Figures Rules Card -->
   <g transform="translate(410, 20)">
     <rect x="0" y="0" width="365" height="435" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF512F" stroke-width="1.8"/>
     <text x="20" y="35" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">2. Significant Figures Rules Summary</text>
@@ -503,7 +505,7 @@ const svg7_3d_parallax_method = `
   <path d="M 375 106 A 45 45 0 0 0 425 106" fill="none" stroke="#FFD700" stroke-width="3"/>
   <text x="393" y="128" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">θ</text>
 
-  <!-- Parallax Formula Box at Bottom Center (x=240, y=400) -->
+  <!-- Parallax Formula Box at Bottom Center (x=220, y=400) -->
   <rect x="220" y="400" width="360" height="42" rx="8" fill="rgba(15,23,42,0.9)" stroke="#FF512F" stroke-width="1.8"/>
   <text x="240" y="427" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">D = b / θ &nbsp; (θ in Radians)</text>
 </svg>`;
@@ -718,4 +720,4 @@ ${solutionsPartCode}
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-1.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote updated c11-phy-1.ts with fixed 3D SVG diagrams to " + outputPath);
+console.log("Successfully wrote updated c11-phy-1.ts with centered headings and zero overflow rectangles to " + outputPath);
