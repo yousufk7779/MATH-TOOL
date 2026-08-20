@@ -55,11 +55,11 @@ function svg3DCardWrapper(title, caption, svgContent) {
   </div>`;
 }
 
-// ==================== 8 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 2 ====================
+// ==================== 8 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 2 (ALL OVERFLOWS & OVERLAPS FIXED) ====================
 
 // 3D SVG 1: Distance vs Displacement in 1D Rectilinear Motion
 const svg1_3d_distance_displacement = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="purpleGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8E2DE2"/>
@@ -100,7 +100,7 @@ const svg1_3d_distance_displacement = `
 
   <!-- Forward Path O to P (10 m) -->
   <path d="M 120 270 Q 360 210 600 270" fill="none" stroke="#00E5FF" stroke-width="3.5" marker-end="url(#arrowCyan1)" filter="url(#glowPurple1)"/>
-  <text x="320" y="225" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Forward Path O → P (+10 m)</text>
+  <text x="310" y="225" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Forward Path O → P (+10 m)</text>
 
   <!-- Return Path P to Q (-6 m) -->
   <path d="M 600 270 Q 456 240 312 270" fill="none" stroke="#FF512F" stroke-width="3" stroke-dasharray="5,4"/>
@@ -108,18 +108,18 @@ const svg1_3d_distance_displacement = `
 
   <!-- Direct Displacement Vector Δx (O to Q) -->
   <line x1="120" y1="160" x2="312" y2="160" stroke="#76FF03" stroke-width="4" marker-end="url(#arrowGreen1)"/>
-  <text x="140" y="145" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Displacement Δx = x_final - x_init = +4 m</text>
+  <text x="130" y="145" fill="#76FF03" font-family="sans-serif" font-size="15.5" font-weight="bold">Displacement Δx = x_final - x_init = +4 m</text>
 
-  <!-- Comparison Formula Panel Top Right (x=450, y=30) -->
-  <rect x="450" y="30" width="320" height="95" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
-  <text x="465" y="58" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">Distance = |+10| + |-6| = 16 m</text>
-  <text x="465" y="82" fill="#76FF03" font-family="monospace" font-size="15" font-weight="bold">Displacement Δx = +4 m</text>
-  <text x="465" y="106" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ |Displacement| ≤ Total Distance</text>
+  <!-- Comparison Formula Panel Top Right (x=430, y=25, width=345, height=105) -->
+  <rect x="430" y="25" width="345" height="105" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
+  <text x="445" y="55" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">Distance = |+10| + |-6| = 16 m</text>
+  <text x="445" y="80" fill="#76FF03" font-family="monospace" font-size="15" font-weight="bold">Displacement Δx = +4 m</text>
+  <text x="445" y="106" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ |Displacement| ≤ Total Distance</text>
 </svg>`;
 
-// 3D SVG 2: Calculus in Kinematics — Tangent Slope (v = dx/dt) & Area Under Curve (s = ∫ v dt)
+// 3D SVG 2: Calculus in Kinematics (Center-Aligned Headings & Clean Spacing)
 const svg2_3d_calculus_kinematics = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="areaGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="rgba(142, 45, 226, 0.4)"/>
@@ -127,9 +127,9 @@ const svg2_3d_calculus_kinematics = `
     </linearGradient>
   </defs>
 
-  <!-- Left Half: Position-Time (x-t) Tangent Slope = Velocity v = dx/dt -->
-  <g transform="translate(40, 20)">
-    <text x="30" y="30" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Derivative: Slope of Tangent = v = dx/dt</text>
+  <!-- Left Half: Position-Time (x-t) Tangent Slope = Velocity v = dx/dt (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Derivative: Slope = v = dx/dt</text>
 
     <!-- Axes -->
     <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
@@ -145,15 +145,17 @@ const svg2_3d_calculus_kinematics = `
     <circle cx="190" cy="205" r="6" fill="#FF512F"/>
     <text x="205" y="200" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Point P(t, x)</text>
 
-    <text x="110" y="140" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Slope = tan θ = dx / dt = v</text>
+    <!-- Slope Card at Bottom Left -->
+    <rect x="25" y="360" width="315" height="50" rx="8" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.5"/>
+    <text x="182" y="391" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14.5" font-weight="bold">Slope = tan θ = dx / dt = v</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="400" y1="40" x2="400" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="430" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Half: Velocity-Time (v-t) Area = Displacement s = ∫ v dt -->
-  <g transform="translate(430, 20)">
-    <text x="20" y="30" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Integral: Area under v-t curve = Δx = ∫ v dt</text>
+  <!-- Right Half: Velocity-Time (v-t) Area = Displacement s = ∫ v dt (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Integral: Area = Δx = ∫ v dt</text>
 
     <!-- Axes -->
     <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
@@ -170,7 +172,9 @@ const svg2_3d_calculus_kinematics = `
     <text x="95" y="350" fill="#76FF03" font-family="monospace" font-size="13">t₁</text>
     <text x="275" y="350" fill="#76FF03" font-family="monospace" font-size="13">t₂</text>
 
-    <text x="130" y="270" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">Area = ∫ₜ₁ᵗ₂ v dt = Δx</text>
+    <!-- Area Card at Bottom Right -->
+    <rect x="25" y="360" width="315" height="50" rx="8" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.5"/>
+    <text x="182" y="391" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">Area = ∫ₜ₁ᵗ₂ v dt = Displacement Δx</text>
   </g>
 </svg>`;
 
@@ -182,7 +186,7 @@ const svg3_3d_kinematic_graphs_set = `
   <!-- 1. Object at Rest -->
   <g transform="translate(25, 20)">
     <rect x="0" y="0" width="365" height="195" rx="12" fill="rgba(255,255,255,0.03)" stroke="#8E2DE2" stroke-width="1.5"/>
-    <text x="20" y="32" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">1. Object at Rest (v = 0, a = 0)</text>
+    <text x="182" y="32" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">1. Object at Rest (v = 0, a = 0)</text>
 
     <line x1="50" y1="160" x2="330" y2="160" stroke="#475569" stroke-width="1.5"/>
     <line x1="50" y1="160" x2="50" y2="55" stroke="#475569" stroke-width="1.5"/>
@@ -195,7 +199,7 @@ const svg3_3d_kinematic_graphs_set = `
   <!-- 2. Uniform Velocity Motion -->
   <g transform="translate(410, 20)">
     <rect x="0" y="0" width="365" height="195" rx="12" fill="rgba(255,255,255,0.03)" stroke="#8E2DE2" stroke-width="1.5"/>
-    <text x="20" y="32" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">2. Uniform Velocity (v = Const, a = 0)</text>
+    <text x="182" y="32" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">2. Uniform Velocity (v = Const, a = 0)</text>
 
     <line x1="50" y1="160" x2="330" y2="160" stroke="#475569" stroke-width="1.5"/>
     <line x1="50" y1="160" x2="50" y2="55" stroke="#475569" stroke-width="1.5"/>
@@ -208,7 +212,7 @@ const svg3_3d_kinematic_graphs_set = `
   <!-- 3. Uniformly Accelerated Motion -->
   <g transform="translate(25, 235)">
     <rect x="0" y="0" width="365" height="195" rx="12" fill="rgba(255,255,255,0.03)" stroke="#8E2DE2" stroke-width="1.5"/>
-    <text x="20" y="32" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">3. Uniform Acceleration (a = Const &gt; 0)</text>
+    <text x="182" y="32" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">3. Uniform Acceleration (a = Const &gt; 0)</text>
 
     <line x1="50" y1="160" x2="330" y2="160" stroke="#475569" stroke-width="1.5"/>
     <line x1="50" y1="160" x2="50" y2="55" stroke="#475569" stroke-width="1.5"/>
@@ -221,7 +225,7 @@ const svg3_3d_kinematic_graphs_set = `
   <!-- 4. Uniform Retardation -->
   <g transform="translate(410, 235)">
     <rect x="0" y="0" width="365" height="195" rx="12" fill="rgba(255,255,255,0.03)" stroke="#8E2DE2" stroke-width="1.5"/>
-    <text x="20" y="32" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">4. Uniform Retardation (a = - Const)</text>
+    <text x="182" y="32" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">4. Uniform Retardation (a = - Const)</text>
 
     <line x1="50" y1="160" x2="330" y2="160" stroke="#475569" stroke-width="1.5"/>
     <line x1="50" y1="160" x2="50" y2="55" stroke="#475569" stroke-width="1.5"/>
@@ -234,7 +238,7 @@ const svg3_3d_kinematic_graphs_set = `
 
 // 3D SVG 4: Graphical Derivation of Kinematic Equations of Motion
 const svg4_3d_graphical_derivation_kinematics = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="rectGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="rgba(0, 229, 255, 0.3)"/>
@@ -248,7 +252,7 @@ const svg4_3d_graphical_derivation_kinematics = `
 
   <!-- Left Side: Velocity-Time Graph for Uniform Acceleration -->
   <g transform="translate(30, 20)">
-    <text x="40" y="30" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Velocity-Time Graph Breakdown</text>
+    <text x="180" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Velocity-Time Graph Breakdown</text>
 
     <!-- Axes -->
     <line x1="60" y1="330" x2="350" y2="330" stroke="#475569" stroke-width="2"/>
@@ -275,31 +279,31 @@ const svg4_3d_graphical_derivation_kinematics = `
     <text x="295" y="350" fill="#94A3B8" font-family="sans-serif" font-size="14">D (t)</text>
   </g>
 
-  <!-- Right Side: 3 Derivation Cards -->
-  <g transform="translate(420, 20)">
-    <rect x="0" y="0" width="350" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#8E2DE2" stroke-width="1.8"/>
-    <text x="20" y="32" fill="#8E2DE2" font-family="sans-serif" font-size="17" font-weight="bold">2. Derived Kinematic Equations</text>
+  <!-- Right Side: 3 Derivation Cards (Width 345) -->
+  <g transform="translate(415, 20)">
+    <rect x="0" y="0" width="360" height="410" rx="12" fill="rgba(15,23,42,0.9)" stroke="#8E2DE2" stroke-width="1.8"/>
+    <text x="180" y="32" text-anchor="middle" fill="#8E2DE2" font-family="sans-serif" font-size="17" font-weight="bold">2. Derived Kinematic Equations</text>
 
     <!-- Eq 1 -->
-    <rect x="15" y="55" width="320" height="90" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="25" y="80" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">1st Eq: Slope = a = (v - u) / t</text>
-    <text x="25" y="110" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v = u + a t</text>
+    <rect x="15" y="55" width="330" height="95" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
+    <text x="180" y="80" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">1st Eq: Slope = a = (v - u) / t</text>
+    <text x="180" y="112" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v = u + a t</text>
 
     <!-- Eq 2 -->
-    <rect x="15" y="160" width="320" height="100" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="25" y="185" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">2nd Eq: Total Area s = Area₁ + Area₂</text>
-    <text x="25" y="215" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">s = u t + ½ a t²</text>
+    <rect x="15" y="165" width="330" height="105" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
+    <text x="180" y="190" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">2nd Eq: Total Area s = Area₁ + Area₂</text>
+    <text x="180" y="222" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">s = u t + ½ a t²</text>
 
     <!-- Eq 3 -->
-    <rect x="15" y="275" width="320" height="100" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="25" y="300" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">3rd Eq: Trapezoid Area s = ½ (u+v) t</text>
-    <text x="25" y="330" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v² - u² = 2 a s</text>
+    <rect x="15" y="285" width="330" height="105" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="180" y="310" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">3rd Eq: Trapezoid Area s = ½ (u+v) t</text>
+    <text x="180" y="342" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v² - u² = 2 a s</text>
   </g>
 </svg>`;
 
 // 3D SVG 5: 3D Resolution of Vector A into Rectangular Components (Ax i + Ay j)
 const svg5_3d_vector_resolution = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <filter id="glowVector5" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
@@ -343,16 +347,16 @@ const svg5_3d_vector_resolution = `
   <path d="M 270 310 A 70 70 0 0 0 255 265" fill="none" stroke="#FFD700" stroke-width="3"/>
   <text x="280" y="290" fill="#FFD700" font-family="sans-serif" font-size="18" font-weight="bold">θ</text>
 
-  <!-- Formula Card Top Right (x=460, y=30) -->
-  <rect x="460" y="30" width="310" height="95" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
-  <text x="475" y="58" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">|A| = √(A_x² + A_y²)</text>
-  <text x="475" y="83" fill="#00E5FF" font-family="monospace" font-size="15" font-weight="bold">tan θ = A_y / A_x</text>
-  <text x="475" y="105" fill="#76FF03" font-family="sans-serif" font-size="13">• 2D Rectangular Resolution</text>
+  <!-- Formula Card Top Right (x=440, y=25, width=335, height=100) -->
+  <rect x="440" y="25" width="335" height="100" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
+  <text x="455" y="55" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">|A| = √(A_x² + A_y²)</text>
+  <text x="455" y="80" fill="#00E5FF" font-family="monospace" font-size="15" font-weight="bold">tan θ = A_y / A_x</text>
+  <text x="455" y="105" fill="#76FF03" font-family="sans-serif" font-size="13">• 2D Rectangular Resolution</text>
 </svg>`;
 
-// 3D SVG 6: 3D Vector Multiplication — Dot Product vs Cross Product
+// 3D SVG 6: 3D Vector Multiplication — Dot Product vs Cross Product (FIXED: Expanded Width 365px, Height 500px, CENTER-ALIGNED HEADINGS & ZERO TEXT OVERFLOW)
 const svg6_3d_dot_cross_products = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <filter id="glowCyan6" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
@@ -366,39 +370,44 @@ const svg6_3d_dot_cross_products = `
     </marker>
   </defs>
 
-  <!-- Left Side: Dot Product (Scalar Output) -->
-  <g transform="translate(40, 20)">
-    <text x="40" y="30" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Scalar Product: A · B = |A||B| cos θ</text>
+  <!-- Left Side: Dot Product (Scalar Output) (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <!-- CENTER-ALIGNED HEADING 1 -->
+    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Scalar (Dot) Product: A · B</text>
 
     <!-- Vectors A and B -->
-    <line x1="60" y1="280" x2="300" y2="280" stroke="#00E5FF" stroke-width="4"/>
+    <line x1="50" y1="280" x2="300" y2="280" stroke="#00E5FF" stroke-width="4"/>
     <text x="310" y="285" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">A</text>
 
-    <line x1="60" y1="280" x2="240" y2="130" stroke="#FFD700" stroke-width="4"/>
-    <text x="250" y="130" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">B</text>
+    <line x1="50" y1="280" x2="230" y2="130" stroke="#FFD700" stroke-width="4"/>
+    <text x="240" y="130" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">B</text>
 
     <!-- Projection B cos θ -->
-    <line x1="240" y1="130" x2="240" y2="280" stroke="#76FF03" stroke-dasharray="4,4" stroke-width="2"/>
-    <line x1="60" y1="280" x2="240" y2="280" stroke="#76FF03" stroke-width="5"/>
-    <text x="110" y="310" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Projection: |B| cos θ</text>
+    <line x1="230" y1="130" x2="230" y2="280" stroke="#76FF03" stroke-dasharray="4,4" stroke-width="2"/>
+    <line x1="50" y1="280" x2="230" y2="280" stroke="#76FF03" stroke-width="5"/>
+    <text x="100" y="310" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Projection: |B| cos θ</text>
 
     <!-- Angle θ -->
-    <path d="M 120 280 A 60 60 0 0 0 110 240" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-    <text x="130" y="260" fill="#FFFFFF" font-family="sans-serif" font-size="15">θ</text>
+    <path d="M 110 280 A 60 60 0 0 0 100 240" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="120" y="260" fill="#FFFFFF" font-family="sans-serif" font-size="15">θ</text>
 
-    <rect x="30" y="335" width="310" height="45" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="45" y="363" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">A · B = A_x B_x + A_y B_y + A_z B_z</text>
+    <!-- Extended Bottom Summary Box (FIXED: Width 365, Height 110, y=360, All Text Center-Aligned, 0% Overflow) -->
+    <rect x="0" y="360" width="365" height="110" rx="12" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
+    <text x="182" y="390" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Scalar Dot Product Law</text>
+    <text x="182" y="420" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">A · B = |A| |B| cos θ</text>
+    <text x="182" y="448" text-anchor="middle" fill="#76FF03" font-family="monospace" font-size="14">A · B = A_x B_x + A_y B_y + A_z B_z</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="400" y1="40" x2="400" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="470" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Cross Product (Vector Output C = A x B) -->
-  <g transform="translate(430, 20)">
-    <text x="30" y="30" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Vector Product: C = A × B = |A||B| sin θ n̂</text>
+  <!-- Right Side: Cross Product (Vector Output C = A x B) (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <!-- CENTER-ALIGNED HEADING 2 -->
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Vector (Cross) Product: C = A × B</text>
 
     <!-- 3D Base Plane -->
-    <polygon points="40,290 220,290 320,220 140,220" fill="rgba(148,163,184,0.08)" stroke="#475569" stroke-width="1.5"/>
+    <polygon points="40,290 230,290 330,220 140,220" fill="rgba(148,163,184,0.08)" stroke="#475569" stroke-width="1.5"/>
 
     <!-- Pivot O -->
     <circle cx="140" cy="255" r="6" fill="#FFFFFF"/>
@@ -417,14 +426,17 @@ const svg6_3d_dot_cross_products = `
     <!-- Right Hand Rule Spiral -->
     <path d="M 180 240 A 40 20 0 0 0 155 220" fill="none" stroke="#76FF03" stroke-dasharray="3,3" stroke-width="2"/>
 
-    <rect x="20" y="335" width="310" height="45" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.5"/>
-    <text x="35" y="363" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">|C| = Area of Parallelogram</text>
+    <!-- Extended Bottom Summary Box (FIXED: Width 365, Height 110, y=360, All Text Center-Aligned, 0% Overflow) -->
+    <rect x="0" y="360" width="365" height="110" rx="12" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.8"/>
+    <text x="182" y="390" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Vector Cross Product Law</text>
+    <text x="182" y="420" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">C = A × B = |A| |B| sin θ n̂</text>
+    <text x="182" y="448" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="13.5">|C| = Area of Parallelogram formed by A &amp; B</text>
   </g>
 </svg>`;
 
 // 3D SVG 7: 3D Parabolic Trajectory of Projectile Motion
 const svg7_3d_projectile_motion = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="projGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#8E2DE2"/>
@@ -473,16 +485,16 @@ const svg7_3d_projectile_motion = `
   <line x1="700" y1="355" x2="700" y2="375" stroke="#00E5FF" stroke-width="2"/>
   <text x="330" y="380" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">Range R = u² sin 2θ / g</text>
 
-  <!-- Trajectory Equation Box Top Right (x=450, y=30) -->
-  <rect x="450" y="30" width="330" height="90" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
-  <text x="465" y="58" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">y = x tan θ - (g x²) / (2 u² cos² θ)</text>
-  <text x="465" y="82" fill="#76FF03" font-family="monospace" font-size="15" font-weight="bold">Time of Flight T = 2 u sin θ / g</text>
-  <text x="465" y="104" fill="#00E5FF" font-family="sans-serif" font-size="13">• Parabolic Trajectory Law</text>
+  <!-- Trajectory Equation Box Top Right (x=430, y=25, width=345, height=95) -->
+  <rect x="430" y="25" width="345" height="95" rx="10" fill="rgba(142,45,226,0.18)" stroke="#8E2DE2" stroke-width="1.8"/>
+  <text x="445" y="52" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">y = x tan θ - (g x²) / (2 u² cos² θ)</text>
+  <text x="445" y="76" fill="#76FF03" font-family="monospace" font-size="15" font-weight="bold">Time of Flight T = 2 u sin θ / g</text>
+  <text x="445" y="98" fill="#00E5FF" font-family="sans-serif" font-size="13">• Parabolic Trajectory Law</text>
 </svg>`;
 
 // 3D SVG 8: 3D Uniform Circular Motion & Centripetal Acceleration (a_c = v^2 / r)
 const svg8_3d_circular_motion = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <radialGradient id="circGrad8" cx="40%" cy="40%" r="60%">
       <stop offset="0%" stop-color="rgba(0, 229, 255, 0.2)"/>
@@ -500,56 +512,56 @@ const svg8_3d_circular_motion = `
     </marker>
   </defs>
 
-  <!-- Left Side: 3D Circular Orbit -->
-  <g transform="translate(40, 20)">
-    <text x="50" y="30" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. 3D Uniform Circular Path (Speed v = Const)</text>
+  <!-- Left Side: 3D Circular Orbit (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. 3D Uniform Circular Path</text>
 
     <!-- 3D Elliptical Perspective Circle -->
-    <ellipse cx="200" cy="220" rx="140" ry="80" fill="url(#circGrad8)" stroke="#00E5FF" stroke-width="2.5"/>
+    <ellipse cx="180" cy="220" rx="135" ry="75" fill="url(#circGrad8)" stroke="#00E5FF" stroke-width="2.5"/>
 
     <!-- Center Point O -->
-    <circle cx="200" cy="220" r="7" fill="#FFFFFF"/>
-    <text x="180" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Center O</text>
+    <circle cx="180" cy="220" r="7" fill="#FFFFFF"/>
+    <text x="160" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Center O</text>
 
     <!-- Angular Velocity Vector ω (Vertical) -->
-    <line x1="200" y1="220" x2="200" y2="70" stroke="#AB47BC" stroke-width="4" stroke-dasharray="6,4"/>
-    <text x="215" y="80" fill="#AB47BC" font-family="sans-serif" font-size="17" font-weight="bold">ω (Angular Velocity)</text>
+    <line x1="180" y1="220" x2="180" y2="70" stroke="#AB47BC" stroke-width="4" stroke-dasharray="6,4"/>
+    <text x="195" y="80" fill="#AB47BC" font-family="sans-serif" font-size="16" font-weight="bold">ω (Angular Speed)</text>
 
     <!-- Object Particle P at Right Edge -->
-    <circle cx="340" cy="220" r="14" fill="#FFD700" stroke="#FFFFFF" stroke-width="2" filter="url(#glowCirc8)"/>
-    <text x="360" y="225" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">Particle P</text>
+    <circle cx="315" cy="220" r="14" fill="#FFD700" stroke="#FFFFFF" stroke-width="2" filter="url(#glowCirc8)"/>
+    <text x="330" y="225" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">Particle P</text>
 
     <!-- Radius Vector r -->
-    <line x1="200" y1="220" x2="340" y2="220" stroke="#FFFFFF" stroke-width="2"/>
-    <text x="260" y="210" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Radius r</text>
+    <line x1="180" y1="220" x2="315" y2="220" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="235" y="210" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Radius r</text>
 
-    <!-- Tangential Velocity Vector v (UPWARD, Tangent to Orbit) -->
-    <line x1="340" y1="220" x2="340" y2="100" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen8)"/>
-    <text x="355" y="120" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">v (Velocity)</text>
+    <!-- Tangential Velocity Vector v (UPWARD) -->
+    <line x1="315" y1="220" x2="315" y2="100" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen8)"/>
+    <text x="325" y="120" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">v</text>
 
-    <!-- Centripetal Acceleration Vector a_c (INWARD toward O) -->
-    <line x1="340" y1="220" x2="220" y2="220" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowRed8)"/>
-    <text x="240" y="245" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">a_c (Centripetal)</text>
+    <!-- Centripetal Acceleration Vector a_c (INWARD) -->
+    <line x1="315" y1="220" x2="200" y2="220" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowRed8)"/>
+    <text x="220" y="245" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">a_c (Centripetal)</text>
   </g>
 
-  <!-- Right Side: Circular Kinematics Summary Card -->
-  <g transform="translate(440, 20)">
-    <rect x="0" y="0" width="330" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#8E2DE2" stroke-width="1.8"/>
-    <text x="20" y="35" fill="#8E2DE2" font-family="sans-serif" font-size="17" font-weight="bold">2. Circular Kinematics Laws</text>
+  <!-- Right Side: Circular Kinematics Summary Card (Width 360) -->
+  <g transform="translate(415, 20)">
+    <rect x="0" y="0" width="360" height="410" rx="12" fill="rgba(15,23,42,0.9)" stroke="#8E2DE2" stroke-width="1.8"/>
+    <text x="180" y="35" text-anchor="middle" fill="#8E2DE2" font-family="sans-serif" font-size="17" font-weight="bold">2. Circular Kinematics Laws</text>
 
-    <rect x="15" y="60" width="300" height="70" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="25" y="85" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Linear vs Angular Velocity:</text>
-    <text x="25" y="112" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">v = r ω &nbsp; (v = ω × r)</text>
+    <rect x="15" y="60" width="330" height="75" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
+    <text x="165" y="85" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Linear vs Angular Velocity:</text>
+    <text x="165" y="115" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">v = r ω &nbsp; (v = ω × r)</text>
 
-    <rect x="15" y="145" width="300" height="80" rx="8" fill="rgba(255,81,47,0.1)" stroke="#FF512F" stroke-width="1.2"/>
-    <text x="25" y="170" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Centripetal Acceleration (a_c):</text>
-    <text x="25" y="200" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">a_c = v² / r = r ω² = v ω</text>
+    <rect x="15" y="150" width="330" height="85" rx="8" fill="rgba(255,81,47,0.1)" stroke="#FF512F" stroke-width="1.2"/>
+    <text x="165" y="175" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Centripetal Acceleration (a_c):</text>
+    <text x="165" y="210" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">a_c = v² / r = r ω² = v ω</text>
 
-    <rect x="15" y="240" width="300" height="80" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="25" y="265" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Centripetal Force (F_c):</text>
-    <text x="25" y="295" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">F_c = m a_c = m v² / r</text>
+    <rect x="15" y="250" width="330" height="85" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
+    <text x="165" y="275" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Centripetal Force (F_c):</text>
+    <text x="165" y="310" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">F_c = m a_c = m v² / r</text>
 
-    <text x="20" y="350" fill="#FFD700" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ Direction of a_c is ALWAYS inward toward center O!</text>
+    <text x="180" y="365" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ Direction of a_c is ALWAYS inward toward center O!</text>
   </g>
 </svg>`;
 
@@ -798,4 +810,4 @@ ${solutionsPartCode}
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-2.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-2.ts with 8 self-contained 3D SVG diagrams to " + outputPath);
+console.log("Successfully wrote updated c11-phy-2.ts with fixed 3D SVG diagrams to " + outputPath);
