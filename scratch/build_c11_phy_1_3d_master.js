@@ -57,8 +57,8 @@ function svg3DCardWrapper(title, caption, svgContent) {
 
 // ==================== 7 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 1 ====================
 
-// 3D SVG 1: Physical Quantity & Measurement Process Model (Q = n x u)
-const svg1_3d_measurement_process = `
+// 3D SVG 1: Physical Quantity & Measurement Process Model (Q = n x u, n1 u1 = n2 u2)
+const svg1_3d_physical_quantity_model = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="rodGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -71,32 +71,18 @@ const svg1_3d_measurement_process = `
       <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
     <filter id="glowCoral1" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
     <marker id="arrowCoral1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
     </marker>
-    <marker id="arrowCyan1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
-    </marker>
   </defs>
 
-  <!-- 3D Perspective Ground Plane Grid -->
-  <g opacity="0.15" stroke="#94A3B8" stroke-width="1">
-    <line x1="60" y1="380" x2="740" y2="380"/>
-    <line x1="100" y1="310" x2="700" y2="310"/>
-    <line x1="60" y1="380" x2="200" y2="220"/>
-    <line x1="740" y1="380" x2="600" y2="220"/>
-  </g>
+  <!-- 3D Ground Shadow Grid -->
+  <ellipse cx="400" cy="390" rx="360" ry="25" fill="rgba(0,0,0,0.5)"/>
 
-  <!-- Title Card Top Right (x=450, y=30) -->
-  <rect x="450" y="30" width="320" height="90" rx="10" fill="rgba(255,81,47,0.15)" stroke="#FF512F" stroke-width="1.8"/>
-  <text x="465" y="58" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">Q = n × u &nbsp; (n₁u₁ = n₂u₂)</text>
-  <text x="465" y="82" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">✓ Inverse Law: n ∝ 1 / u</text>
-  <text x="465" y="103" fill="#FFD700" font-family="sans-serif" font-size="13">• Larger unit 'u' ⇒ Smaller magnitude 'n'</text>
-
-  <!-- Unknown Physical Rod Q (3D Cylinder) -->
+  <!-- Physical Rod Object Q to be measured -->
   <text x="80" y="70" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Unknown Physical Quantity (Q)</text>
   <ellipse cx="400" cy="140" rx="280" ry="12" fill="rgba(0,0,0,0.5)"/>
   <rect x="120" y="105" width="560" height="35" rx="6" fill="url(#rodGrad1)" filter="url(#glowCoral1)"/>
@@ -152,7 +138,7 @@ const svg2_3d_unit_systems_matrix = `
 
   <!-- Top Title Banner -->
   <rect x="25" y="20" width="750" height="50" rx="12" fill="url(#headerGrad2)"/>
-  <text x="180" y="52" fill="#FFFFFF" font-family="sans-serif" font-size="19" font-weight="bold">HISTORICAL & MODERN SYSTEMS OF UNITS MATRIX</text>
+  <text x="180" y="52" fill="#FFFFFF" font-family="sans-serif" font-size="19" font-weight="bold">HISTORICAL &amp; MODERN SYSTEMS OF UNITS MATRIX</text>
 
   <!-- System 1: CGS System -->
   <g transform="translate(25, 88)">
@@ -199,83 +185,83 @@ const svg2_3d_unit_systems_matrix = `
   </g>
 </svg>`;
 
-// 3D SVG 3: 3D Fundamental SI Units & Supplementary Angles Model (Plane Angle dθ & Solid Angle dΩ)
+// 3D SVG 3: 3D Fundamental SI Units & Supplementary Angles Model (FIXED: Expanded Height 520px, Wider 350px Rectangles at Bottom y=390, Zero Sphere Overlap)
 const svg3_3d_supplementary_angles = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <radialGradient id="sphereGrad3" cx="35%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#FFE0B2"/>
       <stop offset="50%" stop-color="#FF512F"/>
       <stop offset="100%" stop-color="#990000"/>
     </radialGradient>
-    <radialGradient id="coneGrad3" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFD700"/>
-      <stop offset="100%" stop-color="rgba(255,215,0,0.2)"/>
-    </radialGradient>
   </defs>
 
   <!-- Left Side: Plane Angle dθ (Radian) -->
-  <g transform="translate(40, 30)">
-    <text x="50" y="30" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Plane Angle: dθ = ds / r &nbsp;(Radian)</text>
+  <g transform="translate(30, 20)">
+    <text x="30" y="30" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Plane Angle: dθ = ds / r &nbsp;(Radian)</text>
 
     <!-- Circular Arc Center O -->
-    <circle cx="160" cy="230" r="7" fill="#FFFFFF"/>
-    <text x="135" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+    <circle cx="160" cy="220" r="7" fill="#FFFFFF"/>
+    <text x="135" y="235" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
 
     <!-- Radii r -->
-    <line x1="160" y1="230" x2="310" y2="230" stroke="#00E5FF" stroke-width="2.5"/>
-    <line x1="160" y1="230" x2="265" y2="125" stroke="#00E5FF" stroke-width="2.5"/>
-    <text x="235" y="250" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
+    <line x1="160" y1="220" x2="310" y2="220" stroke="#00E5FF" stroke-width="2.5"/>
+    <line x1="160" y1="220" x2="265" y2="115" stroke="#00E5FF" stroke-width="2.5"/>
+    <text x="235" y="240" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
 
     <!-- Intercepted Arc ds -->
-    <path d="M 310 230 A 150 150 0 0 0 265 125" fill="none" stroke="#FF512F" stroke-width="6" stroke-linecap="round"/>
-    <text x="305" y="170" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Arc ds</text>
+    <path d="M 310 220 A 150 150 0 0 0 265 115" fill="none" stroke="#FF512F" stroke-width="6" stroke-linecap="round"/>
+    <text x="305" y="160" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Arc ds</text>
 
     <!-- Angle dθ Arc -->
-    <path d="M 210 230 A 50 50 0 0 0 195 195" fill="none" stroke="#FFD700" stroke-width="2.5"/>
-    <text x="215" y="210" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">dθ</text>
+    <path d="M 210 220 A 50 50 0 0 0 195 185" fill="none" stroke="#FFD700" stroke-width="2.5"/>
+    <text x="215" y="200" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">dθ</text>
 
-    <!-- Formula Box -->
-    <rect x="60" y="300" width="250" height="50" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="75" y="331" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dθ = ds / r &nbsp; [Radian, rad]</text>
+    <!-- Extended Bottom Rectangle 1: Plane Angle Formula (Width 350, Height 95, y=370) -->
+    <rect x="10" y="370" width="350" height="95" rx="10" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
+    <text x="25" y="398" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Plane Angle (dθ) Law:</text>
+    <text x="25" y="425" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dθ = ds / r &nbsp; [SI Unit: Radian (rad)]</text>
+    <text x="25" y="450" fill="#76FF03" font-family="sans-serif" font-size="13.5">1 rad = 180° / π ≈ 57.3° &nbsp;|&nbsp; Full Circle = 2π rad</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="400" y1="40" x2="400" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="490" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: 3D Solid Angle dΩ (Steradian) -->
-  <g transform="translate(430, 30)">
-    <text x="30" y="30" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">2. 3D Solid Angle: dΩ = dA / r² &nbsp;(Steradian)</text>
+  <!-- Right Side: 3D Solid Angle dΩ (Steradian) (Shifted Sphere Up to y=180 so 0% Overlap) -->
+  <g transform="translate(420, 20)">
+    <text x="20" y="30" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">2. 3D Solid Angle: dΩ = dA / r² &nbsp;(Steradian)</text>
 
-    <!-- 3D Sphere Silhouette -->
-    <circle cx="170" cy="210" r="130" fill="url(#sphereGrad3)" opacity="0.3"/>
-    <ellipse cx="170" cy="210" rx="130" ry="35" fill="none" stroke="rgba(255,255,255,0.2)" stroke-dasharray="4,4"/>
+    <!-- 3D Sphere (Center at cx=170, cy=180, r=105) -->
+    <circle cx="170" cy="180" r="105" fill="url(#sphereGrad3)" opacity="0.35"/>
+    <ellipse cx="170" cy="180" rx="105" ry="30" fill="none" stroke="rgba(255,255,255,0.25)" stroke-dasharray="4,4"/>
 
     <!-- Apex Point O -->
-    <circle cx="170" cy="210" r="6" fill="#FFFFFF"/>
-    <text x="150" y="215" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">O</text>
+    <circle cx="170" cy="180" r="6" fill="#FFFFFF"/>
+    <text x="150" y="185" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">O</text>
 
     <!-- 3D Cone Rays -->
-    <line x1="170" y1="210" x2="260" y2="120" stroke="#FFD700" stroke-width="2"/>
-    <line x1="170" y1="210" x2="295" y2="155" stroke="#FFD700" stroke-width="2"/>
-    <line x1="170" y1="210" x2="270" y2="200" stroke="#FFD700" stroke-width="2"/>
+    <line x1="170" y1="180" x2="245" y2="105" stroke="#FFD700" stroke-width="2"/>
+    <line x1="170" y1="180" x2="270" y2="135" stroke="#FFD700" stroke-width="2"/>
+    <line x1="170" y1="180" x2="250" y2="175" stroke="#FFD700" stroke-width="2"/>
 
     <!-- Intercepted 3D Area dA on Sphere Surface -->
-    <ellipse cx="275" cy="155" rx="30" ry="25" fill="#FFD700" opacity="0.7" stroke="#FFFFFF" stroke-width="2"/>
-    <text x="260" y="160" fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold">dA</text>
+    <ellipse cx="255" cy="135" rx="26" ry="20" fill="#FFD700" opacity="0.75" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="242" y="140" fill="#000000" font-family="sans-serif" font-size="13.5" font-weight="bold">dA</text>
 
     <!-- Distance r label -->
-    <text x="210" y="160" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
+    <text x="205" y="140" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">r</text>
 
-    <!-- Solid Angle Badge -->
-    <rect x="50" y="300" width="270" height="50" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.5"/>
-    <text x="65" y="331" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dΩ = dA / r² &nbsp; [Steradian, sr]</text>
+    <!-- Extended Bottom Rectangle 2: Solid Angle Formula (Width 350, Height 95, y=370) -->
+    <rect x="10" y="370" width="350" height="95" rx="10" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.8"/>
+    <text x="25" y="398" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">3D Solid Angle (dΩ) Law:</text>
+    <text x="25" y="425" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">dΩ = dA / r² &nbsp; [SI Unit: Steradian (sr)]</text>
+    <text x="25" y="450" fill="#00E5FF" font-family="sans-serif" font-size="13.5">Entire Sphere Surface Area A = 4πr² &nbsp;⇒ &nbsp;Ω = 4π sr</text>
   </g>
 </svg>`;
 
-// 3D SVG 4: Significant Figures Rules & Precision Micrometer Screw Gauge Model
+// 3D SVG 4: Significant Figures Rules & Precision Micrometer Screw Gauge Model (FIXED: Expanded Height 480px, Multi-Line Formula Box, Zero Text Overflow)
 const svg4_3d_precision_micrometer = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="metalGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#94A3B8"/>
@@ -291,7 +277,7 @@ const svg4_3d_precision_micrometer = `
 
   <!-- Left Side: 3D Micrometer Screw Gauge -->
   <g transform="translate(30, 20)">
-    <text x="40" y="30" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Micrometer Screw Gauge (Precision = 0.001 cm)</text>
+    <text x="20" y="30" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Micrometer Screw Gauge (Precision = 0.001 cm)</text>
 
     <!-- U-Shaped Metal Frame -->
     <path d="M 60 120 C 20 220 20 300 140 300 C 200 300 220 240 220 200 L 180 200 C 180 230 160 260 120 260 C 70 260 70 200 85 160 Z" fill="url(#metalGrad4)" stroke="#94A3B8" stroke-width="2"/>
@@ -299,7 +285,7 @@ const svg4_3d_precision_micrometer = `
     <!-- Anvil & Spindle -->
     <rect x="85" y="150" width="20" height="30" fill="#CBD5E1"/>
     <rect x="140" y="150" width="60" height="30" fill="#CBD5E1"/>
-    <text x="95" y="140" fill="#94A3B8" font-family="sans-serif" font-size="12">Anvil</text>
+    <text x="90" y="140" fill="#94A3B8" font-family="sans-serif" font-size="12">Anvil</text>
     <text x="150" y="140" fill="#94A3B8" font-family="sans-serif" font-size="12">Spindle</text>
 
     <!-- Measured Wire Specimen -->
@@ -320,33 +306,34 @@ const svg4_3d_precision_micrometer = `
     <line x1="300" y1="135" x2="300" y2="195" stroke="#FFD700" stroke-width="3"/>
     <text x="315" y="170" fill="#FFD700" font-family="monospace" font-size="14" font-weight="bold">45</text>
 
-    <!-- Formula Panel at Bottom Left -->
-    <rect x="30" y="320" width="350" height="85" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="45" y="348" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Least Count (LC) Formula:</text>
-    <text x="45" y="375" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">LC = Pitch / No. of Circular Div = 1mm / 100 = 0.01 mm</text>
-    <text x="45" y="395" fill="#76FF03" font-family="sans-serif" font-size="13">Reading = MSR + (CSR × LC)</text>
+    <!-- Formula Panel at Bottom Left (FIXED: Width 360, Height 115, Clean Short Multi-line Text, 0% Overflow) -->
+    <rect x="10" y="325" width="360" height="115" rx="10" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.8"/>
+    <text x="25" y="352" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Least Count (LC) Formula:</text>
+    <text x="25" y="378" fill="#FFFFFF" font-family="monospace" font-size="14.5" font-weight="bold">LC = Pitch / Circular Divisions</text>
+    <text x="25" y="402" fill="#FFD700" font-family="monospace" font-size="14.5" font-weight="bold">LC = 1 mm / 100 = 0.01 mm = 0.001 cm</text>
+    <text x="25" y="426" fill="#76FF03" font-family="sans-serif" font-size="13.5">Reading = MSR + (CSR × LC)</text>
   </g>
 
-  <!-- Right Side: Significant Figures Rules Card -->
-  <g transform="translate(430, 20)">
-    <rect x="0" y="0" width="340" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF512F" stroke-width="1.8"/>
+  <!-- Right Side: Significant Figures Rules Card (FIXED: Width 365, Height 435, Perfect Vertical Spacing, 0% Text Overflow) -->
+  <g transform="translate(410, 20)">
+    <rect x="0" y="0" width="365" height="435" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF512F" stroke-width="1.8"/>
     <text x="20" y="35" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">2. Significant Figures Rules Summary</text>
 
-    <text x="20" y="75" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">1. All non-zero digits:</text>
-    <text x="35" y="98" fill="#76FF03" font-family="monospace" font-size="14">284.5 ⇒ 4 Sig Figs</text>
+    <text x="20" y="70" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">1. All non-zero digits are significant:</text>
+    <text x="35" y="93" fill="#76FF03" font-family="monospace" font-size="14" font-weight="bold">284.5 ⇒ 4 Sig Figs</text>
 
-    <text x="20" y="135" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">2. Trapped Zeros between digits:</text>
-    <text x="35" y="158" fill="#76FF03" font-family="monospace" font-size="14">4008.05 ⇒ 6 Sig Figs</text>
+    <text x="20" y="135" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">2. Trapped Zeros between non-zeros:</text>
+    <text x="35" y="158" fill="#76FF03" font-family="monospace" font-size="14" font-weight="bold">4008.05 ⇒ 6 Sig Figs</text>
 
-    <text x="20" y="195" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">3. Leading Zeros before 1st non-zero:</text>
-    <text x="35" y="218" fill="#FF512F" font-family="monospace" font-size="14">0.0032 ⇒ Only 2 Sig Figs</text>
+    <text x="20" y="200" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">3. Leading Zeros before 1st non-zero:</text>
+    <text x="35" y="223" fill="#FF512F" font-family="monospace" font-size="14" font-weight="bold">0.0032 ⇒ Only 2 Sig Figs</text>
 
-    <text x="20" y="255" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">4. Trailing Zeros with decimal:</text>
-    <text x="35" y="278" fill="#76FF03" font-family="monospace" font-size="14">5.200 ⇒ 4 Sig Figs</text>
+    <text x="20" y="265" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">4. Trailing Zeros with a decimal:</text>
+    <text x="35" y="288" fill="#76FF03" font-family="monospace" font-size="14" font-weight="bold">5.200 ⇒ 4 Sig Figs</text>
 
-    <text x="20" y="315" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">5. Scientific Notation N × 10<sup>x</sup>:</text>
-    <text x="35" y="338" fill="#FFD700" font-family="monospace" font-size="14">4.70 × 10³ ⇒ 3 Sig Figs</text>
-    <text x="35" y="365" fill="#94A3B8" font-family="sans-serif" font-size="13">Power 10³ does not affect sig figs!</text>
+    <text x="20" y="330" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">5. Scientific Notation N × 10ˣ:</text>
+    <text x="35" y="353" fill="#FFD700" font-family="monospace" font-size="14" font-weight="bold">4.70 × 10³ ⇒ 3 Sig Figs</text>
+    <text x="35" y="380" fill="#94A3B8" font-family="sans-serif" font-size="13">• Power 10³ does not alter sig figs</text>
   </g>
 </svg>`;
 
@@ -498,33 +485,27 @@ const svg7_3d_parallax_method = `
   <text x="360" y="45" fill="#FFD700" font-family="sans-serif" font-size="17" font-weight="bold">Distant Star (S)</text>
 
   <!-- Earth Ground Observatory Points A and B (y=360) -->
-  <line x1="220" y1="360" x2="580" y2="360" stroke="#00E5FF" stroke-width="4"/>
-  <circle cx="220" cy="360" r="10" fill="#76FF03" stroke="#FFFFFF" stroke-width="2"/>
-  <circle cx="580" cy="360" r="10" fill="#76FF03" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="200" y1="360" x2="600" y2="360" stroke="#76FF03" stroke-width="3"/>
+  <circle cx="200" cy="360" r="8" fill="#00E5FF"/>
+  <circle cx="600" cy="360" r="8" fill="#00E5FF"/>
+  <text x="140" y="385" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Observatory A</text>
+  <text x="590" y="385" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Observatory B</text>
+  <text x="350" y="385" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Baseline b = A B</text>
 
-  <text x="160" y="385" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Observatory A</text>
-  <text x="540" y="385" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Observatory B</text>
+  <!-- Parallax Distance Sight Rays (D) -->
+  <line x1="200" y1="360" x2="400" y2="70" stroke="#FF512F" stroke-width="2.5"/>
+  <line x1="600" y1="360" x2="400" y2="70" stroke="#FF512F" stroke-width="2.5"/>
 
-  <!-- Baseline b -->
-  <text x="365" y="390" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">Baseline (b)</text>
+  <text x="250" y="210" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Distance D</text>
+  <text x="510" y="210" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Distance D</text>
 
-  <!-- Distance D Lines from S to A and S to B -->
-  <line x1="400" y1="70" x2="220" y2="360" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="6,4"/>
-  <line x1="400" y1="70" x2="580" y2="360" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <!-- Parallax Angle θ at Apex S -->
+  <path d="M 375 106 A 45 45 0 0 0 425 106" fill="none" stroke="#FFD700" stroke-width="3"/>
+  <text x="393" y="128" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">θ</text>
 
-  <!-- Distance D Labels -->
-  <text x="270" y="210" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">Distance D</text>
-  <text x="490" y="210" fill="#FF512F" font-family="sans-serif" font-size="17" font-weight="bold">Distance D</text>
-
-  <!-- Parallax Angle θ Arc at Apex Star S -->
-  <path d="M 370 120 A 50 50 0 0 0 430 120" fill="none" stroke="#FFD700" stroke-width="3"/>
-  <text x="390" y="145" fill="#FFD700" font-family="sans-serif" font-size="18" font-weight="bold">θ</text>
-
-  <!-- Formula Panel Card Top Right (x=490, y=30) -->
-  <rect x="490" y="30" width="280" height="95" rx="10" fill="rgba(255,81,47,0.18)" stroke="#FF512F" stroke-width="1.8"/>
-  <text x="505" y="58" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">θ = b / D &nbsp; ⇒ &nbsp; D = b / θ</text>
-  <text x="505" y="83" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ Parallax Angle θ in Radians</text>
-  <text x="505" y="105" fill="#FFD700" font-family="sans-serif" font-size="13">• Used for distant stars & planets</text>
+  <!-- Parallax Formula Box at Bottom Center (x=240, y=400) -->
+  <rect x="220" y="400" width="360" height="42" rx="8" fill="rgba(15,23,42,0.9)" stroke="#FF512F" stroke-width="1.8"/>
+  <text x="240" y="427" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">D = b / θ &nbsp; (θ in Radians)</text>
 </svg>`;
 
 
@@ -545,194 +526,166 @@ function generateFullOverviewHtml() {
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
   <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
     <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Unit I: Physical World and Measurement (Units and Measurements)</p>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Unit I: Units and Measurements</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>1. Physical Quantity:</b>
-        <span style="color: #FFFFFF;">Any property of a material or system that can be quantified and measured using an accepted standard.</span>
+        <span style="color: #FFFFFF;">Any property of a material or system that can be quantified by measurement (e.g., Mass, Length, Time).</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>2. Unit of Measurement:</b>
-        <span style="color: #FFFFFF;">An arbitrarily chosen, internationally accepted standard reference quantity used to compare physical measurements.</span>
+        <span style="color: #FFFFFF;">A standard chosen reference value used to express and compare physical quantities (e.g., Metre, Kilogram).</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>3. Fundamental Quantities:</b>
-        <span style="color: #FFFFFF;">Base physical quantities that are independent of each other and cannot be defined in terms of other quantities (e.g. Mass, Length, Time).</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>3. Fundamental Units:</b>
+        <span style="color: #FFFFFF;">Independent base units that cannot be defined in terms of other physical quantities (7 SI base units).</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>4. Derived Quantities:</b>
-        <span style="color: #FFFFFF;">Quantities that can be expressed as mathematical combinations of fundamental base quantities (e.g. Velocity, Force, Work).</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>4. Derived Units:</b>
+        <span style="color: #FFFFFF;">Units obtained by combining fundamental base units algebraically (e.g., Velocity m/s, Force N).</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>5. SI Units:</b>
-        <span style="color: #FFFFFF;">Le Système International d'Unités - the modern metric standard system based on 7 base and 2 supplementary units.</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>5. Parallax:</b>
+        <span style="color: #FFFFFF;">The apparent change in position of an object relative to a background when viewed from two different positions.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>6. Significant Figures:</b>
-        <span style="color: #FFFFFF;">The total number of reliable digits in a measured quantity plus the first single digit that is uncertain.</span>
+        <span style="color: #FFFFFF;">Digits in a measured value that are known with certainty plus the first uncertain digit.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>7. Dimensions:</b>
-        <span style="color: #FFFFFF;">The powers (exponents) to which fundamental units are raised to represent a physical quantity.</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>7. Accuracy vs Precision:</b>
+        <span style="color: #FFFFFF;">Accuracy measures closeness to true value; Precision measures resolution or repeatability of measurement.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>8. Dimensional Formula:</b>
-        <span style="color: #FFFFFF;">An expression showing which base quantities and what powers enter into the unit of a physical quantity (e.g. Force = [M L T<sup>-2</sup>]).</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>8. Absolute Error:</b>
+        <span style="color: #FFFFFF;">The magnitude of the difference between the true mean value and the individual measured value.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>9. Principle of Homogeneity:</b>
-        <span style="color: #FFFFFF;">The fundamental principle stating that dimensions of all terms on both sides of a valid physical equation must be identical.</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>9. Dimensional Formula:</b>
+        <span style="color: #FFFFFF;">An expression showing which fundamental quantities and powers compose a derived physical quantity.</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>10. Systematic Error:</b>
-        <span style="color: #FFFFFF;">Errors that tend to occur in one direction only (either positive or negative) due to instrument flaws or technique.</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>10. Homogeneity Principle:</b>
+        <span style="color: #FFFFFF;">States that dimensions of all terms on both sides of a physically valid equation must be identical.</span>
       </div>
     </div>
   </div>
 
-  <!-- SECTION 1: NEED FOR MEASUREMENT -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Need for Measurement</h2>
+  <!-- SECTION 1: NEED FOR MEASUREMENT & UNITS -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Need for Measurement & Systems of Units</h2>
   
-  ${defCard("Measurement", "Measurement is the process of comparing an unknown physical quantity with a standard reference magnitude of the exact same physical kind to determine how many times the standard is contained within it.")}
+  ${defCard("Physical Quantity", "Any quantifiable property of a physical body or phenomenon that can be measured using an instrument and expressed as a numerical value n multiplied by a standard unit u: Q = n × u.")}
 
-  <p>Physics is an exact quantitative science based on observation, experimentation, and accurate numerical measurement. Qualitative descriptions such as 'hot', 'heavy', or 'fast' are subjective and insufficient for scientific analysis. To establish exact quantitative laws of nature, physical quantities must be measured accurately using well-defined standards.</p>
-  
-  <p>Every physical measurement consists of two essential parts: a numerical value (magnitude <i>n</i>) and a unit of measurement (<i>u</i>). The physical quantity <i>Q</i> is mathematically represented as:</p>
-  
-  ${eqBox("<b>Q = n × u</b>")}
+  <p>Measurement is essentially a process of comparing an unknown physical quantity with a internationally accepted standard benchmark called a unit. If the unit size chosen is u and it fits n times into the quantity Q, then Q = n × u. If the unit changes from u<sub>1</sub> to u<sub>2</sub>, the numerical value changes from n<sub>1</sub> to n<sub>2</sub> such that:</p>
 
-  <p>If a physical quantity is measured in two different unit systems with units <i>u</i><sub>1</sub> and <i>u</i><sub>2</sub> having numerical values <i>n</i><sub>1</sub> and <i>n</i><sub>2</sub> respectively, the total magnitude remains unchanged:</p>
-  
-  ${eqBox("<b>n<sub>1</sub> u<sub>1</sub> = n<sub>2</sub> u<sub>2</sub> &nbsp; ⇒ &nbsp; n ∝ " + frac('1', 'u') + "</b>")}
+  ${eqBox("<b>Q = n<sub>1</sub> u<sub>1</sub> = n<sub>2</sub> u<sub>2</sub> &nbsp; ⇒ &nbsp; n ∝ " + frac('1', 'u') + "</b>")}
 
-  <p>This fundamental inverse relationship implies that the larger the unit chosen for measurement, the smaller will be the numerical value obtained for the given quantity.</p>
+  ${svg3DCardWrapper("Physical Quantity Measurement Model (Q = n × u)", "3D Isometric physical cylinder rod Q measured against a calibrated standard unit scale u showing n = 8 units, proving inverse relation n ∝ 1/u.", svg1_3d_physical_quantity_model)}
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Role of Measurement in Physical Sciences</h3>
-  <p>Accurate measurement enables physicists to test theoretical predictions against experimental data. From describing subatomic particle trajectories to calculating planetary orbits across light years, measurement bridges theoretical models with real-world physical reality.</p>
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Characteristics of a Standard Unit</h3>
-  <p>To serve as a reliable reference standard, a unit of measurement must possess the following essential characteristics:</p>
-  
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Historical Systems of Units</h3>
   <div style="margin: 12px 0;">
-    ${colonTopic("Well-Defined", "The definition of the unit must be clear, precise, and completely unambiguous.")}
-    ${colonTopic("Invariable", "The standard unit must not change with environmental factors like temperature, pressure, or location.")}
-    ${colonTopic("Easily Reproducible", "It should be possible to replicate the standard unit with high precision anywhere in the world.")}
-    ${colonTopic("Universally Accepted", "It must be internationally agreed upon by the global scientific community.")}
+    ${colonTopic("CGS System (Centimetre-Gram-Second)", "Gaussian system based on centimetre for length, gram for mass, and second for time.")}
+    ${colonTopic("FPS System (Foot-Pound-Second)", "British Imperial system based on foot for length, pound for mass, and second for time.")}
+    ${colonTopic("MKS System (Metre-Kilogram-Second)", "Metric system based on metre for length, kilogram for mass, and second for time.")}
+    ${colonTopic("SI System (Système International d'Unités)", "Modern international standard established by CGPM in 1971 comprising 7 base units and 2 supplementary units.")}
   </div>
 
-  ${svg3DCardWrapper("Physical Quantity & Measurement Process Model (Q = n × u)", "3D Volumetric vector diagram showing physical quantity Q measured against calibrated unit scale u with inverse relation n ∝ 1/u.", svg1_3d_measurement_process)}
+  ${svg3DCardWrapper("Historical & Modern Systems of Units Comparison Matrix", "4-Pillar comparative cards for CGS, FPS, MKS, and universal SI system with base and supplementary unit badges.", svg2_3d_unit_systems_matrix)}
 
-  <!-- SECTION 2: UNITS OF MEASUREMENT & SYSTEMS OF UNITS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Units of Measurement & Systems of Units</h2>
+  <!-- SECTION 2: SI BASE & SUPPLEMENTARY UNITS -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. SI Base & Supplementary Units</h2>
 
-  ${defCard("System of Units", "A complete set of units containing both fundamental base units and derived units used to measure all types of physical quantities in a given scientific framework.")}
+  ${defCard("SI Base Units", "The seven mutually independent fundamental physical quantities defined by international agreement: Length (m), Mass (kg), Time (s), Electric Current (A), Thermodynamic Temperature (K), Amount of Substance (mol), and Luminous Intensity (cd).")}
 
-  <p>Historically, different countries developed independent systems of units based on local conventions for length, mass, and time. Three major historical unit systems were widely employed before the adoption of the metric SI system:</p>
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) CGS System (Gaussian System)</h3>
-  <div style="margin: 10px 0;">
-    ${colonTopic("Base Units", "Centimetre (cm) for length, Gram (g) for mass, Second (s) for time.")}
-    ${colonTopic("Derived Units", "Force is measured in <i>dyne</i> (1 N = 10<sup>5</sup> dyne), Work in <i>erg</i> (1 J = 10<sup>7</sup> erg).")}
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Supplementary SI Units (Plane Angle & Solid Angle)</h3>
+  <div style="margin: 12px 0;">
+    ${colonTopic("Plane Angle (dθ)", "Ratio of arc length ds to radius r: dθ = ds / r. Expressed in radians (rad). 1 rad = 180° / π ≈ 57.3°.")}
+    ${colonTopic("Solid Angle (dΩ)", "3D spatial angle subtended by a surface area dA at center of sphere of radius r: dΩ = dA / r². Expressed in steradians (sr). Full sphere = 4π sr.")}
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) FPS System (British Imperial System)</h3>
-  <div style="margin: 10px 0;">
-    ${colonTopic("Base Units", "Foot (ft) for length, Pound (lb) for mass, Second (s) for time.")}
+  ${svg3DCardWrapper("Supplementary SI Geometrical Angles Model", "2D/3D circular arc for Plane Angle dθ = ds/r (radian) side-by-side with 3D Cone/Sphere surface cutting intercepted area dA for Solid Angle dΩ = dA/r² (steradian).", svg3_3d_supplementary_angles)}
+
+  <!-- SECTION 3: MEASUREMENT OF LENGTH, MASS & TIME -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Measurement of Length, Mass, Time & Astronomical Methods</h2>
+
+  ${defCard("Parallax Method", "Indirect trigonometric triangulation technique used to measure large astronomical distances to stars and planets from Earth baselines.")}
+
+  <p>For a distant celestial star S observed from two observatories A and B separated by baseline b on Earth:</p>
+  
+  ${eqBox("<b>D = " + frac('b', 'θ') + " &nbsp; (where Parallax Angle θ is measured in radians)</b>")}
+
+  ${svg3DCardWrapper("Parallax Method for Astronomical Distance Measurements", "3D Cosmic spatial model with Earth baseline b, distant star apex S, parallax angle θ, and formula panel D = b/θ.", svg7_3d_parallax_method)}
+
+  <!-- SECTION 4: ACCURACY, PRECISION & SIGNIFICANT FIGURES -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Accuracy, Precision of Instruments & Significant Figures</h2>
+
+  ${defCard("Accuracy vs Precision", "Accuracy indicates how close a measured value is to the true value. Precision indicates the resolution or limit to which the quantity is measured by the instrument.")}
+
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Significant Figures Rules Summary</h3>
+  <div style="margin: 12px 0;">
+    ${colonTopic("Rule 1", "All non-zero digits are significant (e.g., 284.5 has 4 significant figures).")}
+    ${colonTopic("Rule 2", "All zeros occurring between two non-zero digits are significant (e.g., 4008.05 has 6 significant figures).")}
+    ${colonTopic("Rule 3", "Leading zeros preceding the first non-zero digit are NOT significant (e.g., 0.0032 has 2 significant figures).")}
+    ${colonTopic("Rule 4", "Trailing zeros in a number with a decimal point ARE significant (e.g., 5.200 has 4 significant figures).")}
+    ${colonTopic("Rule 5", "In scientific notation N × 10<sup>x</sup>, power of 10 does not affect significant figures (e.g., 4.70 × 10<sup>3</sup> has 3 significant figures).")}
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(iii) MKS System</h3>
-  <div style="margin: 10px 0;">
-    ${colonTopic("Base Units", "Metre (m) for length, Kilogram (kg) for mass, Second (s) for time.")}
-  </div>
+  ${svg3DCardWrapper("Significant Figures Rules & Precision Micrometer Screw Gauge Model", "3D Micrometer Screw Gauge (anvil, spindle, wire specimen, main scale, circular thimble scale) with Least Count LC = 0.001 cm formula side-by-side with 5 rules card for Significant Figures.", svg4_3d_precision_micrometer)}
 
-  ${svg3DCardWrapper("Historical & Modern Systems of Units Comparison Matrix", "3D Volumetric matrix comparing base dimensions of Length, Mass, and Time across CGS, FPS, MKS, and SI unit systems.", svg2_3d_unit_systems_matrix)}
+  <!-- SECTION 5: ERRORS IN MEASUREMENT & ERROR PROPAGATION -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Errors in Measurement & Combination of Errors</h2>
 
-  <!-- SECTION 3: SI UNITS: FUNDAMENTAL AND DERIVED UNITS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. SI Units: Fundamental and Derived Units</h2>
-
-  ${defCard("SI System (Système International d'Unités)", "The modern international metric standard system established in 1960 by the General Conference on Weights and Measures (CGPM), built upon 7 fundamental base units and 2 supplementary units.")}
-
-  <p>The International System of Units (SI) is a <b>coherent system of units</b>, meaning that derived units are obtained directly by simple multiplication or division of base units without introducing numerical conversion factors.</p>
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Supplementary SI Geometrical Units</h3>
-  <div style="margin: 10px 0;">
-    ${colonTopic("Plane Angle (dθ)", "Measured in <b>radian (rad)</b>. Defined as arc length divided by radius: dθ = ds / r.")}
-    ${colonTopic("Solid Angle (dΩ)", "Measured in <b>steradian (sr)</b>. Defined as intercepted surface area divided by radius squared: dΩ = dA / r<sup>2</sup>.")}
-  </div>
-
-  ${svg3DCardWrapper("Supplementary SI Geometrical Angles Model", "3D Volumetric model visualizing Plane Angle dθ = ds/r (rad) and 3D Solid Angle dΩ = dA/r² (sr).", svg3_3d_supplementary_angles)}
-
-  <!-- SECTION 4: SIGNIFICANT FIGURES & INSTRUMENTAL PRECISION -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Significant Figures & Instrumental Precision</h2>
-
-  ${defCard("Significant Figures", "The total number of reliable digits in a measured quantity plus the first single uncertain digit that carries experimental ambiguity.")}
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Precision of Measuring Instruments</h3>
-  <div style="margin: 10px 0;">
-    ${colonTopic("Meter Scale", "Least Count = 0.1 cm = 1 mm")}
-    ${colonTopic("Vernier Calipers", "Least Count = 0.01 cm = 0.1 mm")}
-    ${colonTopic("Micrometer Screw Gauge", singleLineCode("LC = " + frac('Pitch', 'No. of Circular Divisions') + " = " + frac('1 mm', '100') + " = 0.01 mm = 0.001 cm"))}
-  </div>
-
-  ${svg3DCardWrapper("Significant Figures Rules & Precision Micrometer Screw Gauge Model", "3D Volumetric micrometer model highlighting spindle, thimble scale, zero error, and significant figures rules.", svg4_3d_precision_micrometer)}
-
-  <!-- SECTION 5: ERROR ANALYSIS & COMBINATION OF ERRORS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Error Analysis & Combination of Errors</h2>
-
-  ${defCard("Experimental Error", "The numerical difference between the true theoretical value and the experimentally measured value of a physical quantity.")}
+  ${defCard("Absolute Error", "The numerical difference between the true mean value of a physical quantity and an individual measured value: Δa<sub>i</sub> = |a<sub>mean</sub> - a<sub>i</sub>|.")}
 
   <div style="margin: 12px 0;">
-    ${colonTopic("Absolute Error (Δa<sub>i</sub>)", singleLineCode("Δa<sub>i</sub> = |a<sub>mean</sub> - a<sub>i</sub>|"))}
-    ${colonTopic("Relative / Fractional Error", singleLineCode("Rel Error = " + frac('Δa<sub>mean</sub>', 'a<sub>mean</sub>')))}
-    ${colonTopic("Percentage Error (%)", singleLineCode("% Error = ( " + frac('Δa<sub>mean</sub>', 'a<sub>mean</sub>') + " ) × 100%"))}
+    ${colonTopic("Relative / Fractional Error", singleLineCode("Relative Error = " + frac('Δa<sub>mean</sub>', 'a<sub>mean</sub>')))}
+    ${colonTopic("Percentage Error", singleLineCode("Percentage Error = [ " + frac('Δa<sub>mean</sub>', 'a<sub>mean</sub>') + " ] × 100%"))}
+    ${colonTopic("Combination Rule for Powers", singleLineCode("If Z = " + frac('A<sup>p</sup> B<sup>q</sup>', 'C<sup>r</sup>') + " &nbsp; ⇒ &nbsp; " + frac('ΔZ', 'Z') + " = p " + frac('ΔA', 'A') + " + q " + frac('ΔB', 'B') + " + r " + frac('ΔC', 'C')))}
   </div>
 
-  ${svg3DCardWrapper("Error Analysis & Error Propagation Tree", "3D Volumetric decision tree illustrating absolute, relative, and percentage errors with combination laws.", svg5_3d_error_propagation_tree)}
+  ${svg3DCardWrapper("Error Analysis & Combination of Errors Tree", "3D Decision tree linking Absolute Error Δa, Relative Error Δa/a, Percentage Error %, Sum/Diff (ΔZ = ΔA + ΔB), Product/Div (ΔZ/Z = ΔA/A + ΔB/B), and Powers (ΔZ/Z = pΔA/A + qΔB/B + rΔC/C).", svg5_3d_error_propagation_tree)}
 
-  <!-- SECTION 6: DIMENSIONS OF PHYSICAL QUANTITIES & HOMOGENEITY PRINCIPLE -->
+  <!-- SECTION 6: DIMENSIONS & PRINCIPLE OF HOMOGENEITY -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Dimensions of Physical Quantities & Principle of Homogeneity</h2>
 
-  ${defCard("Dimensions", "The powers or exponents to which fundamental base quantities (Mass [M], Length [L], Time [T], Current [A], Temp [K]) are raised to represent a physical quantity.")}
+  ${defCard("Principle of Homogeneity of Dimensions", "States that a physical equation is dimensionally correct only if the fundamental dimensions of all terms on both sides of the equation are identical.")}
 
-  ${defCard("Principle of Homogeneity of Dimensions", "The fundamental law stating that a physical equation is dimensionally valid if and only if the dimensions of all terms on both sides of the equation are strictly identical.")}
+  <p>For a simple pendulum of string length l, mass m, swinging under gravity g:</p>
 
-  ${svg3DCardWrapper("Principle of Homogeneity & Simple Pendulum Dimensional Model", "3D Volumetric model demonstrating dimensional audit for simple pendulum T = 2π √(l/g) and core applications of dimensions.", svg6_3d_pendulum_homogeneity)}
+  ${eqBox("<b>T = 2π √(" + frac('l', 'g') + ") &nbsp; ⇒ &nbsp; [LHS] = [T<sup>1</sup>] = [M<sup>0</sup> L<sup>0</sup> T<sup>1</sup>], &nbsp; [RHS] = [ ( " + frac('L', 'L T<sup>-2</sup>') + " )<sup>1/2</sup> ] = [T<sup>1</sup>]</b>")}
 
-  <!-- SECTION 7: ASTRONOMICAL MEASUREMENTS & PARALLAX METHOD -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">7. Astronomical Distance Measurements & Parallax Method</h2>
-
-  ${defCard("Parallax Method", "An indirect trigonometric method used to measure large astronomical distances to stars and planets by observing shifts in position against distant celestial backgrounds.")}
-
-  ${eqBox("<b>Parallax Angle θ = " + frac('Baseline b', 'Distance D') + " &nbsp; ⇒ &nbsp; Distance D = " + frac('b', 'θ') + "</b>")}
-
-  ${svg3DCardWrapper("Parallax Method for Astronomical Distance Measurement", "3D Cosmic spatial model showing Earth baseline b, distant star apex, and parallax angle θ calculation.", svg7_3d_parallax_method)}
+  ${svg3DCardWrapper("Principle of Homogeneity & Simple Pendulum Dimensional Model", "3D Simple pendulum bob swinging in arc space with length l, mass m, gravity g, and step-by-step dimensional audit card verifying [LHS] = [RHS] = [T^1] for T = 2π√(l/g).", svg6_3d_pendulum_homogeneity)}
 
   <!-- QUICK REVISION CHEAT SHEET (PLACED AT THE VERY END OF OVERVIEW SECTION) -->
   <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-top: 35px; margin-bottom: 15px;">
     <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">⚡ Quick Revision Cheat Sheet</h2>
-    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Formulae, Dimensional Identities & Unit Conversions for Unit I</p>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Formulae, Dimensional Relations & Error Laws Summary for Unit I</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; font-size: 14px;">
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Measurement Relation:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Q = n × u &nbsp;|&nbsp; n₁u₁ = n₂u₂<br>n ∝ ` + frac('1', 'u') + `</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Measurement Law:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Q = n<sub>1</sub> u<sub>1</sub> = n<sub>2</sub> u<sub>2</sub><br>n ∝ ` + frac('1', 'u') + `</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Supplementary SI Angles:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Plane Angle: dθ = ` + frac('ds', 'r') + ` (rad)<br>Solid Angle: dΩ = ` + frac('dA', 'r²') + ` (sr)</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Supplementary Angles:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">dθ = ` + frac('ds', 'r') + ` (rad)<br>dΩ = ` + frac('dA', 'r<sup>2</sup>') + ` (sr)</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Error Combination Laws:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Sum/Diff: ΔZ = ΔA + ΔB<br>Prod/Div: ` + frac('ΔZ', 'Z') + ` = ` + frac('ΔA', 'A') + ` + ` + frac('ΔB', 'B') + `<br>Powers: ` + frac('ΔZ', 'Z') + ` = p` + frac('ΔA', 'A') + ` + q` + frac('ΔB', 'B') + `</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Parallax Distance:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">D = ` + frac('b', 'θ') + `<br>(θ in radians)</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Common Dimensional Formulae:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Force: [M¹ L¹ T⁻²] &nbsp;|&nbsp; Work: [M¹ L² T⁻²]<br>Pressure: [M¹ L⁻¹ T⁻²] &nbsp;|&nbsp; G: [M⁻¹ L³ T⁻²]</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Micrometer Screw Gauge:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">LC = ` + frac('Pitch', 'Circular Div') + ` = 0.01 mm<br>Reading = MSR + (CSR × LC)</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Parallax & Astronomical Units:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Distance D = ` + frac('b', 'θ') + `<br>1 AU = 1.496 × 10¹¹ m &nbsp;|&nbsp; 1 ly = 9.46 × 10¹⁵ m</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Error Propagation for Powers:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Z = ` + frac('A<sup>p</sup> B<sup>q</sup>', 'C<sup>r</sup>') + `<br>` + frac('ΔZ', 'Z') + ` = p ` + frac('ΔA', 'A') + ` + q ` + frac('ΔB', 'B') + ` + r ` + frac('ΔC', 'C') + `</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Simple Pendulum Period:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">T = 2π √(` + frac('l', 'g') + `)<br>[T] = [LHS] = [RHS] = [M<sup>0</sup> L<sup>0</sup> T<sup>1</sup>]</span>
       </div>
     </div>
   </div>
@@ -754,7 +707,7 @@ const solutionsPartCode = existingContent.substring(solStartIdx);
 
 const overviewHtml = generateFullOverviewHtml();
 
-const tsContent = `// Class 11 Physics Unit I: Physical World and Measurement (Units and Measurements)
+const tsContent = `// Class 11 Physics Unit I: Units and Measurements
 // High-Level Reference Book Content & NCERT Solutions (7 Self-Contained 3D Volumetric SVG Diagrams)
 
 export const c11Phy1HtmlOverview = ${JSON.stringify(overviewHtml)};
@@ -765,4 +718,4 @@ ${solutionsPartCode}
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-1.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-1.ts with 7 self-contained 3D SVG diagrams to " + outputPath);
+console.log("Successfully wrote updated c11-phy-1.ts with fixed 3D SVG diagrams to " + outputPath);
