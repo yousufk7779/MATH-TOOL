@@ -1,9 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const themeColor = "#FF8A65"; // Primary theme color for Class 11 Physics Unit III (Laws of Motion)
+const themeColor = "#FF8A65";
 
-// Clean compact inline stacked fraction helper
 function frac(num, den) {
   return `<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;">
     <span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">${num}</span>
@@ -11,504 +10,52 @@ function frac(num, den) {
   </span>`;
 }
 
-// Clean centered equation box container
 function eqBox(eqText) {
-  return `<div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 138, 101, 0.35); border-radius: 8px; padding: 10px 14px; text-align: center; margin: 14px 0; font-size: 15.5px; color: #FFFFFF; white-space: nowrap; overflow-x: auto;">${eqText}</div>`;
+  return `<div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 138, 101, 0.35); border-radius: 8px; padding: 12px 16px; text-align: center; margin: 16px 0; font-size: 16px; color: #FFFFFF; white-space: nowrap; overflow-x: auto;">${eqText}</div>`;
 }
 
-// Definition card
-function defCard(term, definition) {
-  return `
-  <div style="background: rgba(255, 138, 101, 0.06); border-left: 4px solid ${themeColor}; border-radius: 6px; padding: 12px 16px; margin: 15px 0;">
-    <b style="color: ${themeColor}; font-size: 16.5px; display: block; margin-bottom: 4px;">📌 Definition (${term}):</b>
-    <p style="margin: 0; color: #FFFFFF; line-height: 1.6; font-size: 15.5px;">${definition}</p>
-  </div>`;
-}
-
-// Helper for subtopic item with title in themeColor on new line with white explanation text
-function colonTopic(title, explanation) {
-  return `
-  <div style="margin-bottom: 12px;">
-    <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 3px;">• ${title}:</b>
-    <span style="color: #FFFFFF; line-height: 1.6; display: block; font-size: 15px;">${explanation}</span>
-  </div>`;
-}
-
-// Helper for single line code formula
-function singleLineCode(codeText) {
-  return `<code style="font-size: 14px; white-space: nowrap; font-family: monospace; color: #FFFFFF; display: inline-block;">${codeText}</code>`;
-}
-
-// 3D Diagram Card Wrapper with glowing borders and dark slate container (No redundant text badge)
 function svg3DCardWrapper(title, caption, svgContent) {
   return `
-  <div style="background: #0B0F19; border: 1.8px solid ${themeColor}; border-radius: 16px; padding: 16px; margin: 24px 0; box-shadow: 0 10px 30px rgba(255, 138, 101, 0.25);">
-    <div style="color: ${themeColor}; font-weight: bold; font-size: 17px; margin-bottom: 12px; text-align: center; letter-spacing: 0.5px;">
+  <div style="background: #0B0F19; border: 1.8px solid ${themeColor}; border-radius: 16px; padding: 18px; margin: 26px 0; box-shadow: 0 10px 30px rgba(255, 138, 101, 0.25);">
+    <div style="color: ${themeColor}; font-weight: bold; font-size: 17.5px; margin-bottom: 14px; text-align: center; letter-spacing: 0.5px;">
       📍 ${title}
     </div>
     <div style="width: 100%; max-width: 840px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
       ${svgContent}
     </div>
-    <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 12px; line-height: 1.5; font-weight: 500;">
+    <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
       💡 ${caption}
     </div>
   </div>`;
 }
 
-// ==================== 7 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 3 ====================
+const svg1_3d_projectile_motion = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <g transform="translate(15, 20)">
+    <text x="390" y="30" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">Parabolic Projectile Trajectory y(x) &amp; Velocity Vectors</text>
 
-// 3D SVG 1: Galileo's Double Inclined Plane Experiment (FIXED: Card moved to bottom center y=375 so incline lines don't intersect card!)
-const svg1_3d_galileo_inclined_plane = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <radialGradient id="ballGrad1" cx="35%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#FFFDE7"/>
-      <stop offset="40%" stop-color="#FFD700"/>
-      <stop offset="85%" stop-color="#F57F17"/>
-      <stop offset="100%" stop-color="#E65100"/>
-    </radialGradient>
-    <filter id="glowOrange1" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-  </defs>
+    <!-- Axes -->
+    <line x1="50" y1="360" x2="740" y2="360" stroke="#475569" stroke-width="2.5"/>
+    <line x1="60" y1="360" x2="60" y2="50" stroke="#475569" stroke-width="2.5"/>
+    <text x="745" y="365" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Horizontal Range R</text>
+    <text x="50" y="45" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Height y</text>
 
-  <!-- Left Section Heading -->
-  <text x="400" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">1. Galileo's Double Inclined Plane Experiment</text>
+    <!-- Parabola -->
+    <path d="M 60 360 Q 390 40 720 360" fill="none" stroke="#FF8A65" stroke-width="3.5"/>
 
-  <!-- 3D Inclined Planes Surface -->
-  <polygon points="60,340 280,340 100,130 60,130" fill="rgba(255,138,101,0.12)" stroke="#FF8A65" stroke-width="2"/>
-  
-  <!-- Horizontal Connecting Track -->
-  <line x1="60" y1="340" x2="740" y2="340" stroke="#475569" stroke-width="2"/>
+    <!-- Launch Velocity -->
+    <line x1="60" y1="360" x2="160" y2="240" stroke="#76FF03" stroke-width="3"/>
+    <text x="120" y="230" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">u → (Angle θ)</text>
 
-  <!-- Right Inclines (Varying Angles: Steep θ1, Gentle θ2, Flat θ3=0) -->
-  <line x1="280" y1="340" x2="440" y2="130" stroke="#FF512F" stroke-width="2.5" stroke-dasharray="4,4"/>
-  <text x="445" y="120" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Steep Incline (θ₁)</text>
+    <!-- Peak H_max -->
+    <line x1="390" y1="140" x2="390" y2="360" stroke="#00E5FF" stroke-dasharray="4,4" stroke-width="2"/>
+    <circle cx="390" cy="140" r="7" fill="#00E5FF"/>
+    <text x="390" y="115" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Peak H_max (v_y = 0)</text>
 
-  <line x1="280" y1="340" x2="580" y2="130" stroke="#76FF03" stroke-width="2.5" stroke-dasharray="4,4"/>
-  <text x="585" y="120" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Gentle Incline (θ₂)</text>
-
-  <line x1="280" y1="340" x2="740" y2="340" stroke="#00E5FF" stroke-width="3"/>
-  <text x="600" y="325" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Flat Track (θ₃ = 0°)</text>
-
-  <!-- Height Reference Line h -->
-  <line x1="60" y1="130" x2="740" y2="130" stroke="#94A3B8" stroke-dasharray="3,3" stroke-width="1.5"/>
-  <text x="70" y="160" fill="#94A3B8" font-family="sans-serif" font-size="14">Initial Height h</text>
-
-  <!-- 3D Rolling Ball -->
-  <circle cx="100" cy="115" r="16" fill="url(#ballGrad1)" filter="url(#glowOrange1)"/>
-  <text x="50" y="100" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">Release</text>
-
-  <!-- Motion Path Arrows -->
-  <path d="M 100 130 L 280 340 L 700 340" fill="none" stroke="#FF8A65" stroke-width="3"/>
-
-  <!-- Formula Panel Bottom Center (x=210, y=375, width=380, height=85) - Zero Intersection with Incline Lines! -->
-  <rect x="210" y="375" width="380" height="85" rx="10" fill="rgba(255,138,101,0.18)" stroke="#FF8A65" stroke-width="1.8"/>
-  <text x="400" y="400" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Galileo's Law of Inertia</text>
-  <text x="400" y="424" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="13.5" font-weight="bold">✓ On flat plane (θ = 0°), ball moves forever!</text>
-  <text x="400" y="446" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">• Zero Net Force ⇒ Constant Velocity v</text>
-</svg>`;
-
-// 3D SVG 2: Newton's Second Law — Free Body Diagram & F = ma Model
-const svg2_3d_fbd_second_law = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <linearGradient id="blockGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FF8A65"/>
-      <stop offset="100%" stop-color="#C73E1D"/>
-    </linearGradient>
-    <filter id="glowCoral2" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <marker id="arrowCyan2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
-    </marker>
-    <marker id="arrowGreen2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
-    </marker>
-    <marker id="arrowRed2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
-    </marker>
-  </defs>
-
-  <!-- Left Side: Free Body Diagram (FBD) of Mass m (Width 365, Center x = 182) -->
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Free Body Diagram (FBD) of Mass m</text>
-
-    <!-- Ground Surface -->
-    <line x1="30" y1="320" x2="330" y2="320" stroke="#475569" stroke-width="3"/>
-    <ellipse cx="180" cy="320" rx="90" ry="12" fill="rgba(0,0,0,0.5)"/>
-
-    <!-- 3D Metallic Block -->
-    <rect x="110" y="220" width="140" height="100" rx="8" fill="url(#blockGrad2)" stroke="#FF8A65" stroke-width="2" filter="url(#glowCoral2)"/>
-    <text x="165" y="275" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">Mass m</text>
-
-    <!-- Applied Force F (Rightward) -->
-    <line x1="250" y1="270" x2="345" y2="270" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowCyan2)"/>
-    <text x="280" y="255" fill="#00E5FF" font-family="sans-serif" font-size="15.5" font-weight="bold">Force F</text>
-
-    <!-- Acceleration Vector a (Rightward) -->
-    <line x1="250" y1="230" x2="330" y2="230" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen2)"/>
-    <text x="260" y="220" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Accel a</text>
-
-    <!-- Normal Reaction Force N (Upward) -->
-    <line x1="180" y1="220" x2="180" y2="100" stroke="#76FF03" stroke-width="4" marker-end="url(#arrowGreen2)"/>
-    <text x="195" y="120" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Normal N</text>
-
-    <!-- Weight W = mg (Downward) -->
-    <line x1="180" y1="320" x2="180" y2="410" stroke="#FF512F" stroke-width="4" marker-end="url(#arrowRed2)"/>
-    <text x="195" y="390" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Weight mg</text>
-  </g>
-
-  <!-- Right Side: Linear F vs a Relationship & Formula Card (Width 360, Center x = 180) -->
-  <g transform="translate(415, 20)">
-    <rect x="0" y="0" width="360" height="425" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF8A65" stroke-width="1.8"/>
-    <text x="180" y="35" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">2. Newton's 2nd Law Equations</text>
-
-    <rect x="15" y="60" width="330" height="85" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="165" y="85" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Fundamental Equation:</text>
-    <text x="165" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18" font-weight="bold">F = dp / dt = m a</text>
-
-    <rect x="15" y="160" width="330" height="105" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="165" y="185" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Component Breakdown:</text>
-    <text x="165" y="215" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">F_x = m a_x &nbsp;|&nbsp; F_y = m a_y</text>
-    <text x="165" y="242" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">N - m g = 0 &nbsp; ⇒ &nbsp; N = m g</text>
-
-    <rect x="15" y="280" width="330" height="115" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="165" y="305" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">SI &amp; CGS Units:</text>
-    <text x="165" y="335" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="14.5">1 Newton (N) = 1 kg m s⁻²</text>
-    <text x="165" y="365" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="14.5">1 N = 10⁵ Dynes &nbsp;|&nbsp; 1 kgf = 9.8 N</text>
+    <text x="390" y="410" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Trajectory Equation: y = x tanθ - [ g / (2 u² cos²θ) ] x²</text>
   </g>
 </svg>`;
 
-// 3D SVG 3: Force-Time Graph & Impulse-Momentum Theorem Model
-const svg3_3d_impulse_momentum = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <linearGradient id="impulseGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255, 138, 101, 0.4)"/>
-      <stop offset="100%" stop-color="rgba(255, 138, 101, 0.05)"/>
-    </linearGradient>
-  </defs>
-
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Impulsive Force vs Time Graph</text>
-    <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
-    <line x1="50" y1="330" x2="50" y2="60" stroke="#475569" stroke-width="2"/>
-    <text x="340" y="335" fill="#94A3B8" font-family="sans-serif" font-size="13">Time t</text>
-    <text x="45" y="50" fill="#94A3B8" font-family="sans-serif" font-size="13">Force F</text>
-
-    <path d="M 90 330 Q 190 60 290 330 Z" fill="url(#impulseGrad3)" stroke="#FF8A65" stroke-width="3"/>
-    <circle cx="190" cy="80" r="6" fill="#FFD700"/>
-    <line x1="50" y1="80" x2="190" y2="80" stroke="#FFD700" stroke-dasharray="3,3"/>
-    <text x="200" y="85" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Peak Force F_max</text>
-
-    <line x1="50" y1="180" x2="290" y2="180" stroke="#76FF03" stroke-dasharray="5,4" stroke-width="2"/>
-    <text x="60" y="170" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">F_avg Level</text>
-
-    <line x1="90" y1="330" x2="90" y2="345" stroke="#00E5FF" stroke-width="2"/>
-    <line x1="290" y1="330" x2="290" y2="345" stroke="#00E5FF" stroke-width="2"/>
-    <line x1="90" y1="340" x2="290" y2="340" stroke="#00E5FF" stroke-width="2"/>
-    <text x="190" y="360" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Impact Time Δt</text>
-  </g>
-
-  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
-
-  <g transform="translate(415, 20)">
-    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF8A65" stroke-width="1.8"/>
-    <text x="182" y="35" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">2. Impulse-Momentum Theorem</text>
-
-    <rect x="15" y="55" width="335" height="85" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="167" y="80" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Impulse Formula:</text>
-    <text x="167" y="112" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">J = F_avg × Δt = ∫ F dt = Δp</text>
-
-    <rect x="15" y="155" width="335" height="250" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="167" y="180" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Why Larger Δt Reduces Peak Force F:</text>
-
-    <text x="25" y="210" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">• Cricket Fielder Catching Ball:</text>
-    <text x="25" y="232" fill="#FFFFFF" font-family="sans-serif" font-size="13">Pulls hands back to increase Δt, reducing impact force.</text>
-
-    <text x="25" y="270" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">• Car Airbags &amp; Crumple Zones:</text>
-    <text x="25" y="292" fill="#FFFFFF" font-family="sans-serif" font-size="13">Prolong collision time Δt, lowering impact force.</text>
-
-    <text x="25" y="330" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">• High Jumpers &amp; Gymnasts:</text>
-    <text x="25" y="352" fill="#FFFFFF" font-family="sans-serif" font-size="13">Fall on foam mats to safely increase impact time Δt.</text>
-  </g>
-</svg>`;
-
-// 3D SVG 4: Conservation of Linear Momentum & Gun Recoil Model
-const svg4_3d_momentum_conservation_recoil = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <linearGradient id="gunGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#64748B"/>
-      <stop offset="50%" stop-color="#334155"/>
-      <stop offset="100%" stop-color="#1E293B"/>
-    </linearGradient>
-    <filter id="glowBullet4" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <marker id="arrowCyan4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
-    </marker>
-    <marker id="arrowRed4" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
-    </marker>
-  </defs>
-
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Conservation of Linear Momentum</text>
-
-    <path d="M 60 170 L 220 170 L 220 200 L 160 200 L 140 270 L 100 270 L 120 200 L 60 200 Z" fill="url(#gunGrad4)" stroke="#94A3B8" stroke-width="2"/>
-    <text x="110" y="155" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">Gun (Mass M)</text>
-
-    <line x1="60" y1="185" x2="10" y2="185" stroke="#FF512F" stroke-width="4.5" marker-end="url(#arrowRed4)"/>
-    <text x="5" y="165" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">V_recoil</text>
-
-    <rect x="250" y="178" width="24" height="12" rx="4" fill="#FFD700" stroke="#FFFFFF" stroke-width="1.5" filter="url(#glowBullet4)"/>
-    <text x="240" y="160" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Bullet (m)</text>
-
-    <line x1="274" y1="184" x2="365" y2="184" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowCyan4)"/>
-    <text x="310" y="170" fill="#00E5FF" font-family="sans-serif" font-size="15" font-weight="bold">Velocity v</text>
-  </g>
-
-  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
-
-  <g transform="translate(415, 20)">
-    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF8A65" stroke-width="1.8"/>
-    <text x="182" y="35" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">2. Momentum Conservation Equations</text>
-
-    <rect x="15" y="60" width="335" height="110" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="167" y="85" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Initial vs Final Momentum:</text>
-    <text x="167" y="112" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">P_initial = 0</text>
-    <text x="167" y="140" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">P_final = M V_recoil + m v = 0</text>
-
-    <rect x="15" y="185" width="335" height="85" rx="8" fill="rgba(255,81,47,0.1)" stroke="#FF512F" stroke-width="1.2"/>
-    <text x="167" y="210" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Gun Recoil Velocity Formula:</text>
-    <text x="167" y="245" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18" font-weight="bold">V_recoil = - (m v / M)</text>
-
-    <rect x="15" y="285" width="335" height="120" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="167" y="310" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Rocket Propulsion Equation:</text>
-    <text x="167" y="342" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">v(t) = v₀ + u_ex ln( m₀ / m(t) )</text>
-    <text x="167" y="375" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13">• Ejection of gas creates forward thrust</text>
-  </g>
-</svg>`;
-
-// 3D SVG 5: Lami's Theorem & Equilibrium of Concurrent Coplanar Forces Model (FIXED: Ratio law inner box x=10, width=345, font-size=14.5px, ZERO CUT-OFF!)
-const svg5_3d_lamis_theorem = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <filter id="glowCenter5" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <marker id="arrowCyan5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
-    </marker>
-    <marker id="arrowGreen5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
-    </marker>
-    <marker id="arrowGold5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#FFD700"/>
-    </marker>
-  </defs>
-
-  <!-- Left Side: 3D Concurrent Forces Equilibrium Geometry (Width 365, Center x = 182) -->
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. 3 Concurrent Coplanar Forces</text>
-
-    <!-- Central Common Point O -->
-    <circle cx="180" cy="220" r="8" fill="#FFFFFF" filter="url(#glowCenter5)"/>
-    <text x="160" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">O (Point)</text>
-
-    <!-- Force F1 (Pointing Up-Right) -->
-    <line x1="180" y1="220" x2="290" y2="110" stroke="#00E5FF" stroke-width="4.5" marker-end="url(#arrowCyan5)"/>
-    <text x="300" y="110" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">Force F₁</text>
-
-    <!-- Force F2 (Pointing Up-Left) -->
-    <line x1="180" y1="220" x2="70" y2="120" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen5)"/>
-    <text x="20" y="115" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">Force F₂</text>
-
-    <!-- Force F3 (Pointing Downward) -->
-    <line x1="180" y1="220" x2="180" y2="360" stroke="#FFD700" stroke-width="4.5" marker-end="url(#arrowGold5)"/>
-    <text x="195" y="365" fill="#FFD700" font-family="sans-serif" font-size="17" font-weight="bold">Force F₃</text>
-
-    <!-- Opposite Angles: α (between F2 & F3), β (between F1 & F3), γ (between F1 & F2) -->
-    <path d="M 120 180 A 60 60 0 0 0 180 290" fill="none" stroke="#00E5FF" stroke-width="2"/>
-    <text x="100" y="240" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">α</text>
-
-    <path d="M 180 290 A 60 60 0 0 0 240 170" fill="none" stroke="#76FF03" stroke-width="2"/>
-    <text x="230" y="240" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">β</text>
-
-    <path d="M 230 160 A 60 60 0 0 0 120 170" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <text x="170" y="145" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">γ</text>
-  </g>
-
-  <!-- Vertical Divider -->
-  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
-
-  <!-- Right Side: Lami's Theorem Card (Width 365, Center x = 182) -->
-  <g transform="translate(415, 20)">
-    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF8A65" stroke-width="1.8"/>
-    <text x="182" y="35" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">2. Lami's Theorem Formulation</text>
-
-    <!-- FIXED Ratio Law Box: inner rect width=345 x=10, font-size=14.5px centered at x=182, ZERO CUT-OFF! -->
-    <rect x="10" y="60" width="345" height="100" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="182" y="85" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Lami's Ratio Law:</text>
-    <text x="182" y="125" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="14.5" font-weight="bold">F₁ / sin α = F₂ / sin β = F₃ / sin γ</text>
-
-    <rect x="10" y="175" width="345" height="100" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="182" y="200" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Equilibrium Condition:</text>
-    <text x="182" y="230" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">∑ F = F₁ + F₂ + F₃ = 0</text>
-    <text x="182" y="255" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">∑ F_x = 0 &nbsp;|&nbsp; ∑ F_y = 0</text>
-
-    <rect x="10" y="290" width="345" height="120" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="182" y="315" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Angle Definitions:</text>
-    <text x="25" y="343" fill="#FFFFFF" font-family="sans-serif" font-size="13">• α = Angle between F₂ and F₃</text>
-    <text x="25" y="363" fill="#FFFFFF" font-family="sans-serif" font-size="13">• β = Angle between F₁ and F₃</text>
-    <text x="25" y="383" fill="#FFFFFF" font-family="sans-serif" font-size="13">• γ = Angle between F₁ and F₂</text>
-  </g>
-</svg>`;
-
-// 3D SVG 6: Static vs Kinetic Friction Curve & Angle of Repose Model
-const svg6_3d_friction_curve_repose = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <linearGradient id="fricGrad6" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FF8A65"/>
-      <stop offset="100%" stop-color="#990000"/>
-    </linearGradient>
-  </defs>
-
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Friction f vs Applied Force F</text>
-    <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
-    <line x1="50" y1="330" x2="50" y2="60" stroke="#475569" stroke-width="2"/>
-    <text x="340" y="335" fill="#94A3B8" font-family="sans-serif" font-size="13">F_applied</text>
-    <text x="45" y="50" fill="#94A3B8" font-family="sans-serif" font-size="13">Friction f</text>
-
-    <line x1="50" y1="330" x2="180" y2="120" stroke="#76FF03" stroke-width="3"/>
-    <circle cx="180" cy="120" r="6" fill="#FFD700"/>
-    <text x="145" y="100" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Limiting f_s(max) = μ_s N</text>
-
-    <line x1="180" y1="120" x2="200" y2="160" stroke="#FF512F" stroke-width="2.5"/>
-    <line x1="200" y1="160" x2="320" y2="160" stroke="#FF512F" stroke-width="3"/>
-    <text x="210" y="150" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">Kinetic f_k = μ_k N</text>
-
-    <rect x="25" y="360" width="315" height="50" rx="8" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="182" y="391" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Static Friction is Self-Adjusting!</text>
-  </g>
-
-  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
-
-  <g transform="translate(415, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Angle of Repose Model</text>
-
-    <polygon points="30,330 330,330 30,210" fill="rgba(255,138,101,0.1)" stroke="#FF8A65" stroke-width="2"/>
-    <path d="M 90 330 A 60 60 0 0 0 75 305" fill="none" stroke="#FFD700" stroke-width="2.5"/>
-    <text x="100" y="320" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">θ_repose</text>
-
-    <g transform="translate(130, 210) rotate(-22)">
-      <rect x="0" y="-30" width="80" height="40" rx="4" fill="url(#fricGrad6)" stroke="#FFFFFF" stroke-width="1.5"/>
-      <text x="20" y="-5" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Mass m</text>
-    </g>
-
-    <rect x="15" y="360" width="335" height="70" rx="8" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.5"/>
-    <text x="182" y="388" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15.5" font-weight="bold">tan θ_repose = μ_s = tan λ</text>
-    <text x="182" y="415" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">Angle of Repose = Angle of Friction!</text>
-  </g>
-</svg>`;
-
-// 3D SVG 7: 3D Free Body Diagram of Vehicle on Banked Circular Road (FIXED: Separated labels & Banked Speed formula in 13.5px font centered inside 345px box, ZERO OVERFLOW!)
-const svg7_3d_banked_road_dynamics = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
-  <defs>
-    <linearGradient id="carGrad7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284C7"/>
-      <stop offset="50%" stop-color="#00E5FF"/>
-      <stop offset="100%" stop-color="#0284C7"/>
-    </linearGradient>
-    <filter id="glowCar7" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-    <marker id="arrowGreen7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
-    </marker>
-    <marker id="arrowCyan7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
-    </marker>
-    <marker id="arrowRed7" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
-    </marker>
-  </defs>
-
-  <!-- Left Side: 3D Banked Road & Vehicle FBD (Width 365, Center x = 182) -->
-  <g transform="translate(20, 20)">
-    <text x="182" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Vehicle FBD on Banked Road (Angle θ)</text>
-
-    <!-- Banked Road Surface (Angle θ) -->
-    <polygon points="30,340 350,340 30,220" fill="rgba(148,163,184,0.08)" stroke="#475569" stroke-width="2"/>
-    <line x1="30" y1="340" x2="350" y2="220" stroke="#FF8A65" stroke-width="4"/>
-
-    <!-- Banking Angle θ Arc -->
-    <path d="M 110 340 A 80 80 0 0 0 95 305" fill="none" stroke="#FFD700" stroke-width="2.5"/>
-    <text x="120" y="330" fill="#FFD700" font-family="sans-serif" font-size="17" font-weight="bold">θ</text>
-
-    <!-- 3D Vehicle Block on Banked Track -->
-    <g transform="translate(170, 230) rotate(-20)">
-      <rect x="0" y="-35" width="90" height="45" rx="8" fill="url(#carGrad7)" stroke="#FFFFFF" stroke-width="2" filter="url(#glowCar7)"/>
-      <circle cx="20" cy="12" r="10" fill="#1E293B"/>
-      <circle cx="70" cy="12" r="10" fill="#1E293B"/>
-      <text x="25" y="-10" fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold">Car (m)</text>
-    </g>
-
-    <!-- Normal Reaction N (Perpendicular to Incline) -->
-    <line x1="210" y1="240" x2="150" y2="110" stroke="#76FF03" stroke-width="4" marker-end="url(#arrowGreen7)"/>
-    <text x="90" y="100" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Normal N</text>
-
-    <!-- N cos θ (Vertical) -->
-    <line x1="210" y1="240" x2="210" y2="130" stroke="#76FF03" stroke-dasharray="4,4" stroke-width="2"/>
-    <text x="220" y="145" fill="#76FF03" font-family="sans-serif" font-size="14">N cos θ</text>
-
-    <!-- N sin θ (Horizontal Centripetal component) -->
-    <line x1="210" y1="240" x2="90" y2="240" stroke="#00E5FF" stroke-width="4" marker-end="url(#arrowCyan7)"/>
-    <text x="35" y="225" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">N sin θ (mv²/r)</text>
-
-    <!-- Weight W = mg (Downward) -->
-    <line x1="210" y1="240" x2="210" y2="360" stroke="#FF512F" stroke-width="4" marker-end="url(#arrowRed7)"/>
-    <text x="220" y="370" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">mg</text>
-  </g>
-
-  <!-- Vertical Divider -->
-  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
-
-  <!-- Right Side: Banked Road Velocity Equations Card (Width 365, Center x = 182) -->
-  <g transform="translate(415, 20)">
-    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#FF8A65" stroke-width="1.8"/>
-    <text x="182" y="35" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="17" font-weight="bold">2. Banked Road Speeds Summary</text>
-
-    <rect x="10" y="60" width="345" height="80" rx="8" fill="rgba(0,229,255,0.1)" stroke="#00E5FF" stroke-width="1.2"/>
-    <text x="182" y="85" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">Flat Level Road Maximum Speed:</text>
-    <text x="182" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v_max = √(μ_s g r)</text>
-
-    <rect x="10" y="155" width="345" height="80" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="182" y="180" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Banked Road Optimum Speed (μ = 0):</text>
-    <text x="182" y="213" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">v_0 = √(r g tan θ)</text>
-
-    <!-- FIXED Banked Road Max Speed Box: 13.5px font centered at x=182, ZERO OVERFLOW! -->
-    <rect x="10" y="250" width="345" height="160" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="182" y="275" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Max Speed with Friction on Banked Road:</text>
-    <text x="182" y="310" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="13.5" font-weight="bold">v_max = √[ r g (μ_s + tan θ)/(1 - μ_s tan θ) ]</text>
-    <text x="25" y="348" fill="#76FF03" font-family="sans-serif" font-size="13">• Bending Cyclist: tan θ = v² / (r g)</text>
-    <text x="25" y="375" fill="#00E5FF" font-family="sans-serif" font-size="13">• Prevents skidding &amp; reduces tire wear</text>
-  </g>
-</svg>`;
-
-// Construct final Overview HTML for Chapter 3
 function generateFullOverviewHtml() {
   return `
 <style>
@@ -520,136 +67,128 @@ function generateFullOverviewHtml() {
   .text-left { text-align: left !important; }
 </style>
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
-  <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Unit III: Laws of Motion</p>
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>1. Inertia:</b>
-        <span style="color: #FFFFFF;">The inherent property of a body by virtue of which it resists any change in its state of rest or uniform motion.</span>
+  <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
+  <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Essential Core Terms for Unit II: Motion in a Plane</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>1. Scalar Quantity:</b>
+        <span style="color: #FFFFFF;">Physical quantity possessing magnitude only, obeying ordinary rules of algebra (e.g. Mass, Speed, Work).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>2. Linear Momentum (p):</b>
-        <span style="color: #FFFFFF;">The quantity of motion contained in a body, defined as product of mass m and velocity v: p = m v.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>2. Vector Quantity:</b>
+        <span style="color: #FFFFFF;">Physical quantity possessing both magnitude and direction, obeying vector addition rules (e.g. Displacement, Velocity, Force).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>3. Newton's 1st Law:</b>
-        <span style="color: #FFFFFF;">A body continues in rest or uniform motion unless acted upon by an external net unbalanced force.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>3. Unit Vector (Â):</b>
+        <span style="color: #FFFFFF;">A vector of unit magnitude indicating direction: Â = A⃗ / |A⃗|. Cartesians: î, ĵ, k̂.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>4. Newton's 2nd Law:</b>
-        <span style="color: #FFFFFF;">The rate of change of momentum is directly proportional to applied force: F = dp / dt = m a.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>4. Dot (Scalar) Product:</b>
+        <span style="color: #FFFFFF;">A⃗ · B⃗ = |A⃗||B⃗| cosθ. Produces a scalar. Maximum when parallel (θ=0°), zero when perpendicular (θ=90°).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>5. Newton's 3rd Law:</b>
-        <span style="color: #FFFFFF;">To every action, there is always an equal and opposite reaction acting on two different bodies.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>5. Cross (Vector) Product:</b>
+        <span style="color: #FFFFFF;">A⃗ × B⃗ = |A⃗||B⃗| sinθ n̂. Produces a vector perpendicular to plane containing A⃗ and B⃗ via right-hand rule.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>6. Impulse (J):</b>
-        <span style="color: #FFFFFF;">The product of a large impulsive force and short time interval Δt, equal to change in momentum Δp.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>6. Projectile Motion:</b>
+        <span style="color: #FFFFFF;">Two-dimensional curved parabolic motion under constant vertical downward gravity acceleration (a_x = 0, a_y = -g).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>7. Momentum Conservation:</b>
-        <span style="color: #FFFFFF;">In an isolated system (∑ F_ext = 0), total linear momentum remains constant over time.</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>7. Uniform Circular Motion:</b>
+        <span style="color: #FFFFFF;">Motion along a circular path at constant speed, possessing radially inward centripetal acceleration a_c = v²/r = ω²r.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>8. Lami's Theorem:</b>
-        <span style="color: #FFFFFF;">For 3 coplanar concurrent forces in equilibrium, each force is proportional to sine of angle between other two.</span>
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>9. Friction (f):</b>
-        <span style="color: #FFFFFF;">Opposing contact force arising at interface between two surfaces resisting relative motion.</span>
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>10. Angle of Repose (θ):</b>
-        <span style="color: #FFFFFF;">Maximum angle of an inclined plane at which a body placed on it just begins to slide down (tan θ = μ_s).</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>8. Relative Velocity in 2D:</b>
+        <span style="color: #FFFFFF;">Velocity of object A relative to object B in 2D space: v⃗_AB = v⃗_A - v⃗_B.</span>
       </div>
     </div>
   </div>
 
-  <!-- SECTION 1 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Intuitive Concept of Force & Galileo's Experiment</h2>
-  ${defCard("Force", "An external push or pull acting upon an object resulting from its interaction with another object.")}
-  ${svg3DCardWrapper("Galileo's Double Inclined Plane Experiment (Inertia Concept)", "3D Inclined planes setup demonstrating that a rolling ball on a frictionless flat track continues indefinitely.", svg1_3d_galileo_inclined_plane)}
+  <!-- SECTION 1: SCALAR & VECTOR QUANTITIES -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Scalar and Vector Quantities, Position and Displacement Vectors</h2>
 
-  <!-- SECTION 2 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Newton's Laws of Motion & Free Body Diagrams (FBD)</h2>
-  ${defCard("Newton's Second Law", "States that the time rate of change of linear momentum of a body is directly proportional to the applied net external force: F = dp / dt = m a.")}
-  ${eqBox("<b>F = " + frac('dp', 'dt') + " = m a &nbsp; (SI Unit: Newton N, 1 N = 1 kg m s<sup>-2</sup>)</b>")}
-  ${svg3DCardWrapper("Newton's Second Law: Free Body Diagram & F = ma Model", "3D Metallic mass block FBD showing applied force F, acceleration a, normal N, weight mg.", svg2_3d_fbd_second_law)}
+  <p>Two-dimensional kinematics analyzes motion occurring within a plane defined by two orthogonal spatial axes $X$ and $Y$. Physical quantities in two dimensions are broadly divided into scalars and vectors.</p>
 
-  <!-- SECTION 3 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Impulse & Impulse-Momentum Theorem</h2>
-  ${defCard("Impulse (J)", "The total effect of a large force acting for a very short duration of time: J = F_avg × Δt = ∫ F dt = Δp.")}
-  ${eqBox("<b>J = F<sub>avg</sub> × Δt = ∫ [F dt] = Δp = p<sub>final</sub> - p<sub>initial</sub></b>")}
-  ${svg3DCardWrapper("Force-Time Graph & Impulse-Momentum Theorem Model", "Shaded impulse area under F-t curve and real-world safety applications.", svg3_3d_impulse_momentum)}
+  <p>A <b>Scalar Quantity</b> is completely specified by a single real number representing its magnitude alongside its appropriate physical unit (e.g. Mass, Temperature, Distance, Energy). Scalars add algebraically according to ordinary rules of arithmetic.</p>
 
-  <!-- SECTION 4 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Law of Conservation of Linear Momentum & Gun Recoil</h2>
-  ${defCard("Law of Conservation of Linear Momentum", "States that if no net external force acts on a system (∑ F_ext = 0), total linear momentum remains constant.")}
-  ${eqBox("<b>M V<sub>recoil</sub> + m v = 0 &nbsp; ⇒ &nbsp; V<sub>recoil</sub> = - " + frac('m v', 'M') + "</b>")}
-  ${svg3DCardWrapper("Conservation of Linear Momentum & Gun Recoil Model", "3D Gun firing bullet model illustrating equal and opposite recoil momentum.", svg4_3d_momentum_conservation_recoil)}
+  <p>A <b>Vector Quantity</b> possesses both a magnitude and a definite spatial direction, obeying vector addition rules like the Triangle and Parallelogram laws (e.g. Position $\mathbf{r}$, Velocity $\mathbf{v}$, Acceleration $\mathbf{a}$, Force $\mathbf{F}$).</p>
 
-  <!-- SECTION 5 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Equilibrium of Concurrent Forces & Lami's Theorem</h2>
-  ${defCard("Lami's Theorem", "States that if three coplanar concurrent forces keep a body in equilibrium, F1 / sin α = F2 / sin β = F3 / sin γ.")}
-  ${eqBox("<b>" + frac('F<sub>1</sub>', 'sin α') + " = " + frac('F<sub>2</sub>', 'sin β') + " = " + frac('F<sub>3</sub>', 'sin γ') + "</b>")}
-  ${svg3DCardWrapper("Lami's Theorem & Equilibrium of Concurrent Coplanar Forces", "3D Concurrent force vectors F1, F2, F3 around pivot point O with opposite angles α, β, γ.", svg5_3d_lamis_theorem)}
+  <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Position and Displacement Vectors in 2D</h3>
+  <p>The position of a particle at point $P(x,y)$ relative to origin $O$ is specified by the <b>Position Vector</b> $\mathbf{r} = x \hat{i} + y \hat{j}$. When the particle moves to $P'(x',y')$, its <b>Displacement Vector</b> is $\Delta \mathbf{r} = \mathbf{r}' - \mathbf{r} = (x'-x)\hat{i} + (y'-y)\hat{j}$.</p>
 
-  <!-- SECTION 6 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Static & Kinetic Friction Laws & Angle of Repose</h2>
-  ${defCard("Limiting Friction (f_s(max))", "The maximum self-adjusting static friction force before sliding begins: f_s(max) = μ_s N.")}
-  ${eqBox("<b>tan θ<sub>repose</sub> = μ<sub>s</sub> = tan λ &nbsp; (Angle of Repose = Angle of Friction)</b>")}
-  ${svg3DCardWrapper("Static vs Kinetic Friction Curve & Angle of Repose Model", "Friction force vs applied force curve and inclined plane angle of repose setup.", svg6_3d_friction_curve_repose)}
+  <!-- SECTION 2: VECTOR ADDITION & COMPONENTS -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Addition and Subtraction of Vectors, Unit Vectors &amp; Rectangular Components</h2>
 
-  <!-- SECTION 7 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">7. Dynamics of Circular Motion & Banked Roads</h2>
-  ${defCard("Banking of Roads", "The phenomenon of raising the outer edge of a curved road above its inner edge at angle θ.")}
-  ${eqBox("<b>v<sub>max</sub> = √[ " + frac('r g (μ<sub>s</sub> + tan θ)', '1 - μ<sub>s</sub> tan θ') + " ] &nbsp;|&nbsp; Optimum Speed v<sub>0</sub> = √(r g tan θ)</b>")}
-  ${svg3DCardWrapper("3D Free Body Diagram of Vehicle on Banked Circular Road", "Vehicle FBD on banked track of angle θ with normal component N sin θ providing centripetal force mv²/r.", svg7_3d_banked_road_dynamics)}
+  <p>Vectors cannot be added algebraically. According to the <b>Parallelogram Law of Vector Addition</b>, if two vectors $\mathbf{A}$ and $\mathbf{B}$ inclined at angle $\theta$ are represented by adjacent sides of a parallelogram, their resultant $\mathbf{R} = \mathbf{A} + \mathbf{B}$ is represented by the diagonal passing through their common tail:</p>
+
+  ${eqBox("<b>Resultant R = √(A<sup>2</sup> + B<sup>2</sup> + 2 A B cos θ) &nbsp;|&nbsp; Direction tan α = " + frac("B sin θ", "A + B cos θ") + "</b>")}
+
+  <p>A <b>Unit Vector ($\hat{A} = \frac{\mathbf{A}}{|\mathbf{A}|}$)</b> is a dimensionless vector of unit magnitude indicating pure direction. Resolving a vector $\mathbf{A}$ into rectangular components yields $\mathbf{A}_x = A \cos\theta \hat{i}$ and $\mathbf{A}_y = A \sin\theta \hat{j}$.</p>
+
+  <!-- SECTION 3: SCALAR AND VECTOR PRODUCTS -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Scalar (Dot) and Vector (Cross) Product of Vectors</h2>
+
+  <p>The <b>Scalar (Dot) Product</b> of two vectors $\mathbf{A}$ and $\mathbf{B}$ is defined as $\mathbf{A} \cdot \mathbf{B} = |\mathbf{A}| |\mathbf{B}| \cos\theta = A_x B_x + A_y B_y + A_z B_z$. It is maximum when vectors are parallel ($\theta = 0^\circ$) and vanishes when vectors are orthogonal ($\theta = 90^\circ$).</p>
+
+  <p>The <b>Vector (Cross) Product</b> is defined as $\mathbf{A} \times \mathbf{B} = |\mathbf{A}| |\mathbf{B}| \sin\theta \hat{n}$, where $\hat{n}$ is a unit vector perpendicular to the plane containing $\mathbf{A}$ and $\mathbf{B}$ given by the Right-Hand Thumb Rule.</p>
+
+  <!-- SECTION 4: PROJECTILE MOTION -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Projectile Motion</h2>
+
+  <p>When an object is thrown into space with an initial velocity $u$ at an angle $\theta$ to the horizontal and allowed to move under gravity alone, it executes <b>Projectile Motion</b> along a parabolic trajectory.</p>
+
+  <p>The horizontal motion has zero acceleration ($a_x = 0, u_x = u \cos\theta = \text{Constant}$), while vertical motion experiences constant downward acceleration ($a_y = -g, u_y = u \sin\theta$).</p>
+
+  ${eqBox("<b>Time of Flight T = " + frac("2 u sin θ", "g") + " &nbsp;|&nbsp; Max Height H = " + frac("u<sup>2</sup> sin<sup>2</sup> θ", "2 g") + " &nbsp;|&nbsp; Range R = " + frac("u<sup>2</sup> sin 2θ", "g") + "</b>")}
+
+  ${svg3DCardWrapper("Parabolic Projectile Motion Trajectory & Velocity Vectors", "Parabolic path y(x) showing initial velocity u at angle θ, peak height H_max, time of flight T, and range R.", svg1_3d_projectile_motion)}
+
+  <!-- SECTION 5: UNIFORM CIRCULAR MOTION -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Uniform Circular Motion</h2>
+
+  <p>When a particle moves along a circular path of radius $r$ at a constant linear speed $v$, it undergoes <b>Uniform Circular Motion</b>. Although speed is constant, the velocity vector continuously changes direction, giving rise to a centripetal acceleration directed towards the center of the circle:</p>
+
+  ${eqBox("<b>a<sub>c</sub> = " + frac("v<sup>2</sup>", "r") + " = ω<sup>2</sup> r &nbsp;|&nbsp; Angular Velocity ω = " + frac("dθ", "dt") + " = 2π ν</b>")}
 
   <!-- QUICK REVISION CHEAT SHEET -->
-  <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-top: 35px; margin-bottom: 15px;">
+  <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-top: 35px; margin-bottom: 15px;">
     <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">⚡ Quick Revision Cheat Sheet</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; font-size: 14px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Newton's 2nd Law:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">F = ` + frac('dp', 'dt') + ` = m a</span>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Summary Formulae for Unit II: Motion in a Plane</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; font-size: 14.5px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Vector Products:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">A⃗ · B⃗ = A B cosθ<br>|A⃗ × B⃗| = A B sinθ</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Lami's Theorem:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">` + frac('F<sub>1</sub>', 'sin α') + ` = ` + frac('F<sub>2</sub>', 'sin β') + ` = ` + frac('F<sub>3</sub>', 'sin γ') + `</span>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Projectile Equations:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">T = 2u sinθ / g<br>H = u² sin²θ / (2g)<br>R = u² sin2θ / g (Max at θ=45°)</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Circular Motion:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">a_c = v²/r = ω²r<br>v = ω r &nbsp;|&nbsp; T = 2π / ω</span>
       </div>
     </div>
   </div>
+
 </div>
 `;
 }
 
-// Read existing Solutions HTML from client/data/content/c11-phy-3.ts
-const existingContent = fs.readFileSync(path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-3.ts'), 'utf8');
-
-const solStartIdx = existingContent.indexOf('export const c11Phy3HtmlSolutions =');
-if (solStartIdx === -1) {
-  console.error("Could not find c11Phy3HtmlSolutions in c11-phy-3.ts");
-  process.exit(1);
-}
-
-const solutionsPartCode = existingContent.substring(solStartIdx);
 const overviewHtml = generateFullOverviewHtml();
+const targetPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-3.ts');
+let content = fs.readFileSync(targetPath, 'utf8');
 
-const tsContent = `// Class 11 Physics Unit III: Laws of Motion
-// High-Level Reference Book Content & NCERT Solutions (7 Self-Contained 3D Volumetric SVG Diagrams)
+const regex = /export const c11Phy3HtmlOverview = [\s\S]*?;\s*\n\s*export const c11Phy3HtmlSolutions/;
+const replacement = `export const c11Phy3HtmlOverview = ${JSON.stringify(overviewHtml)};\n\nexport const c11Phy3HtmlSolutions`;
 
-export const c11Phy3HtmlOverview = ${JSON.stringify(overviewHtml)};
+content = content.replace(regex, replacement).replace(/\^/g, '');
+fs.writeFileSync(targetPath, content, 'utf8');
 
-${solutionsPartCode}
-`;
-
-const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-3.ts');
-fs.writeFileSync(outputPath, tsContent, 'utf8');
-
-console.log("Successfully wrote updated c11-phy-3.ts with fixed 3D SVG diagrams to " + outputPath);
+console.log("Safely updated Overview for Chapter 3!");
