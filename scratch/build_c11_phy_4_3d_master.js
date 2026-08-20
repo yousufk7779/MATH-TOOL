@@ -43,7 +43,7 @@ function singleLineCode(codeText) {
 function svg3DCardWrapper(title, caption, svgContent) {
   return `
   <div style="background: #0B0F19; border: 1.8px solid ${themeColor}; border-radius: 16px; padding: 16px; margin: 24px 0; box-shadow: 0 10px 30px rgba(0, 198, 255, 0.25);">
-    <div style="color: ${themeColor}; font-weight: bold; font-size: 17px; margin-bottom: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px;">
+    <div style="color: ${themeColor}; font-weight: bold; font-size: 17px; margin-bottom: 12px; text-align: center; letter-spacing: 0.5px;">
       📍 ${title}
     </div>
     <div style="width: 100%; max-width: 840px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
@@ -298,11 +298,11 @@ const svg4_3d_spring_potential_energy = `
     <text x="340" y="335" fill="#94A3B8" font-family="sans-serif" font-size="13">x</text>
     <text x="180" y="50" fill="#94A3B8" font-family="sans-serif" font-size="13">Energy E</text>
 
-    <!-- Potential Energy Parabola Us = 1/2 k x^2 (Opening Upward) -->
+    <!-- Potential Energy Parabola Us = 1/2 k x² (Opening Upward) -->
     <path d="M 70 110 Q 190 330 310 110" fill="none" stroke="#00c6ff" stroke-width="3"/>
     <text x="75" y="100" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">U_s = ½ k x²</text>
 
-    <!-- Kinetic Energy Parabola Ek = E - 1/2 k x^2 (Inverted) -->
+    <!-- Kinetic Energy Parabola Ek = E - 1/2 k x² (Inverted) -->
     <path d="M 70 330 Q 190 110 310 330" fill="none" stroke="#76FF03" stroke-width="3"/>
     <text x="145" y="140" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">E_k = E - ½ k x²</text>
 

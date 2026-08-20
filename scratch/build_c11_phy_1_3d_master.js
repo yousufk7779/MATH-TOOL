@@ -43,7 +43,7 @@ function singleLineCode(codeText) {
 function svg3DCardWrapper(title, caption, svgContent) {
   return `
   <div style="background: #0B0F19; border: 1.8px solid ${themeColor}; border-radius: 16px; padding: 16px; margin: 24px 0; box-shadow: 0 10px 30px rgba(255, 81, 47, 0.25);">
-    <div style="color: ${themeColor}; font-weight: bold; font-size: 17px; margin-bottom: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px;">
+    <div style="color: ${themeColor}; font-weight: bold; font-size: 17px; margin-bottom: 12px; text-align: center; letter-spacing: 0.5px;">
       📍 ${title}
     </div>
     <div style="width: 100%; max-width: 840px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08);">
@@ -386,7 +386,7 @@ const svg5_3d_error_propagation_tree = `
   <!-- Rule 3: Powers -->
   <g transform="translate(40, 375)">
     <rect x="0" y="0" width="720" height="65" rx="10" fill="rgba(255,81,47,0.15)" stroke="#FF512F" stroke-width="2"/>
-    <text x="20" y="28" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">3. Quantity Raised to Powers: Z = ( Aᵖ B^q ) / Cʳ</text>
+    <text x="20" y="28" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">3. Quantity Raised to Powers: Z = ( Aᵖ B<sup>q</sup> ) / Cʳ</text>
     <text x="20" y="53" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">Max Fractional Error: (ΔZ / Z) = p(ΔA / A) + q(ΔB / B) + r(ΔC / C)</text>
   </g>
 </svg>`;
@@ -657,7 +657,7 @@ function generateFullOverviewHtml() {
 
   ${eqBox("<b>T = 2π √(" + frac('l', 'g') + ") &nbsp; ⇒ &nbsp; [LHS] = [T<sup>1</sup>] = [M<sup>0</sup> L<sup>0</sup> T<sup>1</sup>], &nbsp; [RHS] = [ ( " + frac('L', 'L T<sup>-2</sup>') + " )<sup>1/2</sup> ] = [T<sup>1</sup>]</b>")}
 
-  ${svg3DCardWrapper("Principle of Homogeneity & Simple Pendulum Dimensional Model", "3D Simple pendulum bob swinging in arc space with length l, mass m, gravity g, and step-by-step dimensional audit card verifying [LHS] = [RHS] = [T^1] for T = 2π√(l/g).", svg6_3d_pendulum_homogeneity)}
+  ${svg3DCardWrapper("Principle of Homogeneity & Simple Pendulum Dimensional Model", "3D Simple pendulum bob swinging in arc space with length l, mass m, gravity g, and step-by-step dimensional audit card verifying [LHS] = [RHS] = [T<sup>1</sup>] for T = 2π√(l/g).", svg6_3d_pendulum_homogeneity)}
 
   <!-- QUICK REVISION CHEAT SHEET (PLACED AT THE VERY END OF OVERVIEW SECTION) -->
   <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-top: 35px; margin-bottom: 15px;">
