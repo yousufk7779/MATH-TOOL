@@ -55,11 +55,11 @@ function svg3DCardWrapper(title, caption, svgContent) {
   </div>`;
 }
 
-// ==================== 6 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 4 ====================
+// ==================== 6 SELF-CONTAINED 3D SVG DIAGRAMS FOR CHAPTER 4 (ALL OVERFLOWS & OVERLAPS FIXED) ====================
 
-// 3D SVG 1: Work Done as Area under Force-Displacement (F-x) Graph
+// 3D SVG 1: Work Done as Area under Force-Displacement (F-x) Graph (Width 365, Center x = 182)
 const svg1_3d_work_fx_graph = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="areaGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="rgba(0, 198, 255, 0.4)"/>
@@ -70,36 +70,41 @@ const svg1_3d_work_fx_graph = `
     </marker>
   </defs>
 
-  <!-- Left Side: Work W = F · s Vector Model -->
-  <g transform="translate(30, 20)">
-    <text x="30" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Constant Force: W = F · s = F s cos θ</text>
+  <!-- Left Side: Work W = F · s Vector Model (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Constant Force: W = F · s</text>
 
     <!-- Ground Line -->
-    <line x1="40" y1="310" x2="340" y2="310" stroke="#475569" stroke-width="2.5"/>
+    <line x1="30" y1="310" x2="330" y2="310" stroke="#475569" stroke-width="2.5"/>
 
     <!-- Block -->
-    <rect x="80" y="230" width="110" height="80" rx="8" fill="rgba(0,198,255,0.15)" stroke="#00c6ff" stroke-width="2"/>
-    <text x="115" y="275" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Mass m</text>
+    <rect x="70" y="230" width="110" height="80" rx="8" fill="rgba(0,198,255,0.15)" stroke="#00c6ff" stroke-width="2"/>
+    <text x="105" y="275" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Mass m</text>
 
     <!-- Displacement Vector s -->
-    <line x1="190" y1="310" x2="310" y2="310" stroke="#76FF03" stroke-width="4" marker-end="url(#arrowCyan1)"/>
-    <text x="230" y="335" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Displacement s</text>
+    <line x1="180" y1="310" x2="300" y2="310" stroke="#76FF03" stroke-width="4" marker-end="url(#arrowCyan1)"/>
+    <text x="215" y="335" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Displacement s</text>
 
     <!-- Applied Force F at Angle θ -->
-    <line x1="190" y1="270" x2="300" y2="180" stroke="#00c6ff" stroke-width="4.5" marker-end="url(#arrowCyan1)"/>
-    <text x="310" y="180" fill="#00c6ff" font-family="sans-serif" font-size="16" font-weight="bold">Force F</text>
+    <line x1="180" y1="270" x2="290" y2="180" stroke="#00c6ff" stroke-width="4.5" marker-end="url(#arrowCyan1)"/>
+    <text x="300" y="180" fill="#00c6ff" font-family="sans-serif" font-size="16" font-weight="bold">Force F</text>
 
     <!-- Angle θ Arc -->
-    <path d="M 230 270 A 40 40 0 0 0 220 245" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <text x="235" y="260" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">θ</text>
+    <path d="M 220 270 A 40 40 0 0 0 210 245" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <text x="225" y="260" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">θ</text>
+
+    <!-- Bottom Summary Box Left -->
+    <rect x="15" y="360" width="335" height="70" rx="8" fill="rgba(0,198,255,0.12)" stroke="#00c6ff" stroke-width="1.5"/>
+    <text x="182" y="388" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">W = F · s = F s cos θ</text>
+    <text x="182" y="415" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">SI Unit: Joule (J) &nbsp;|&nbsp; 1 J = 10⁷ Ergs</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="390" y1="40" x2="390" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Variable Force Area Under F-x Graph -->
-  <g transform="translate(410, 20)">
-    <text x="30" y="30" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Variable Force: W = ∫ F dx (F-x Area)</text>
+  <!-- Right Side: Variable Force Area Under F-x Graph (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Variable Force: W = ∫ F dx</text>
 
     <!-- Axes -->
     <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
@@ -115,13 +120,16 @@ const svg1_3d_work_fx_graph = `
     <text x="95" y="350" fill="#76FF03" font-family="monospace" font-size="13">x₁</text>
     <text x="275" y="350" fill="#76FF03" font-family="monospace" font-size="13">x₂</text>
 
-    <text x="135" y="260" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">Work W = ∫ₓ₁ˣ₂ F dx</text>
+    <!-- Bottom Summary Box Right -->
+    <rect x="15" y="360" width="335" height="70" rx="8" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.5"/>
+    <text x="182" y="388" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">Work W = ∫ₓ₁ˣ₂ F(x) dx</text>
+    <text x="182" y="415" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="13">Work Done = Area under F(x) vs x curve</text>
   </g>
 </svg>`;
 
 // 3D SVG 2: Work-Energy Theorem Model (W_net = ΔE_k)
 const svg2_3d_work_energy_theorem = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="workGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00c6ff"/>
@@ -136,55 +144,58 @@ const svg2_3d_work_energy_theorem = `
     </marker>
   </defs>
 
-  <!-- Left Side: 3D Acceleration Track Model -->
-  <g transform="translate(40, 20)">
-    <text x="40" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Work-Energy Theorem Physical Model</text>
+  <!-- Left Side: 3D Acceleration Track Model (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Work-Energy Physical Model</text>
 
     <!-- 3D Track Base -->
-    <polygon points="40,320 370,320 310,280 40,280" fill="rgba(148,163,184,0.08)" stroke="#475569" stroke-width="1.5"/>
+    <polygon points="30,320 360,320 300,280 30,280" fill="rgba(148,163,184,0.08)" stroke="#475569" stroke-width="1.5"/>
 
     <!-- Position x1 (Initial Velocity u) -->
-    <rect x="60" y="210" width="90" height="70" rx="8" fill="rgba(0,198,255,0.2)" stroke="#00c6ff" stroke-width="2"/>
-    <text x="80" y="250" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Mass m</text>
-    <line x1="150" y1="245" x2="200" y2="245" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGreen2)"/>
-    <text x="155" y="235" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Speed u</text>
-    <text x="85" y="300" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Position x₁</text>
+    <rect x="50" y="210" width="90" height="70" rx="8" fill="rgba(0,198,255,0.2)" stroke="#00c6ff" stroke-width="2"/>
+    <text x="70" y="250" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Mass m</text>
+    <line x1="140" y1="245" x2="190" y2="245" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowGreen2)"/>
+    <text x="145" y="235" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Speed u</text>
+    <text x="75" y="300" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Position x₁</text>
 
     <!-- Position x2 (Final Velocity v) -->
-    <rect x="250" y="210" width="90" height="70" rx="8" fill="rgba(118,255,3,0.2)" stroke="#76FF03" stroke-width="2" filter="url(#glowCyan2)"/>
-    <text x="270" y="250" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Mass m</text>
-    <line x1="340" y1="245" x2="410" y2="245" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen2)"/>
-    <text x="350" y="235" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Speed v &gt; u</text>
-    <text x="275" y="300" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Position x₂</text>
+    <rect x="230" y="210" width="90" height="70" rx="8" fill="rgba(118,255,3,0.2)" stroke="#76FF03" stroke-width="2" filter="url(#glowCyan2)"/>
+    <text x="250" y="250" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">Mass m</text>
+    <line x1="320" y1="245" x2="380" y2="245" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen2)"/>
+    <text x="325" y="235" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Speed v &gt; u</text>
+    <text x="255" y="300" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Position x₂</text>
 
     <!-- Work Arrow -->
-    <path d="M 105 190 Q 200 150 295 190" fill="none" stroke="url(#workGrad2)" stroke-width="3.5" marker-end="url(#arrowGreen2)"/>
-    <text x="140" y="160" fill="#00c6ff" font-family="sans-serif" font-size="15" font-weight="bold">Net Work W = F · Δx</text>
+    <path d="M 95 190 Q 185 150 275 190" fill="none" stroke="url(#workGrad2)" stroke-width="3.5" marker-end="url(#arrowGreen2)"/>
+    <text x="182" y="155" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="15" font-weight="bold">Net Work W = F · Δx</text>
   </g>
 
-  <!-- Right Side: Mathematical Theorem Card -->
-  <g transform="translate(450, 20)">
-    <rect x="0" y="0" width="320" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
-    <text x="20" y="35" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Work-Energy Theorem</text>
+  <!-- Vertical Divider -->
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-    <rect x="15" y="60" width="290" height="90" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
-    <text x="25" y="85" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Statement Formula:</text>
-    <text x="25" y="120" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">W_net = ΔE_k = E_k,f - E_k,i</text>
+  <!-- Right Side: Mathematical Theorem Card (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
+    <text x="182" y="35" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Work-Energy Theorem</text>
 
-    <rect x="15" y="165" width="290" height="100" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="25" y="190" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Expanded Form:</text>
-    <text x="25" y="225" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">W_net = ½ m v² - ½ m u²</text>
+    <rect x="15" y="60" width="335" height="90" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
+    <text x="167" y="85" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Statement Formula:</text>
+    <text x="167" y="120" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">W_net = ΔE_k = E_k,f - E_k,i</text>
 
-    <rect x="15" y="280" width="290" height="95" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="25" y="305" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Integral Proof:</text>
-    <text x="25" y="330" fill="#FFFFFF" font-family="monospace" font-size="14.5">W = ∫ (m v dv/dx) dx = m ∫ v dv</text>
-    <text x="25" y="355" fill="#76FF03" font-family="sans-serif" font-size="13">✓ Applies to constant &amp; variable forces!</text>
+    <rect x="15" y="165" width="335" height="100" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
+    <text x="167" y="190" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Expanded Form:</text>
+    <text x="167" y="225" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">W_net = ½ m v² - ½ m u²</text>
+
+    <rect x="15" y="280" width="335" height="120" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="167" y="305" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Integral Proof:</text>
+    <text x="167" y="335" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="14.5">W = ∫ (m v dv/dx) dx = m ∫ v dv</text>
+    <text x="167" y="365" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">✓ Applies to constant &amp; variable forces!</text>
   </g>
 </svg>`;
 
-// 3D SVG 3: Power Vector Relation P = F · v Model
+// 3D SVG 3: Power Vector Relation P = F · v Model (Width 365, Center x = 182)
 const svg3_3d_power_vector_relation = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <marker id="arrowCyan3" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#00c6ff"/>
@@ -194,54 +205,57 @@ const svg3_3d_power_vector_relation = `
     </marker>
   </defs>
 
-  <!-- Left Side: Power Vector Model (Motor Pulley System) -->
-  <g transform="translate(40, 20)">
-    <text x="40" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Power Vector Relation: P = F · v</text>
+  <!-- Left Side: Power Vector Model (Motor Pulley System) (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Power Vector Relation: P = F · v</text>
 
     <!-- Ground -->
-    <line x1="40" y1="310" x2="340" y2="310" stroke="#475569" stroke-width="2.5"/>
+    <line x1="30" y1="310" x2="330" y2="310" stroke="#475569" stroke-width="2.5"/>
 
     <!-- Load Box being pulled -->
-    <rect x="80" y="220" width="120" height="90" rx="8" fill="rgba(0,198,255,0.15)" stroke="#00c6ff" stroke-width="2"/>
-    <text x="110" y="270" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Load (m)</text>
+    <rect x="70" y="220" width="120" height="90" rx="8" fill="rgba(0,198,255,0.15)" stroke="#00c6ff" stroke-width="2"/>
+    <text x="100" y="270" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Load (m)</text>
 
     <!-- Velocity Vector v (Rightward) -->
-    <line x1="200" y1="310" x2="330" y2="310" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen3)"/>
-    <text x="240" y="335" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Velocity v</text>
+    <line x1="190" y1="310" x2="320" y2="310" stroke="#76FF03" stroke-width="4.5" marker-end="url(#arrowGreen3)"/>
+    <text x="230" y="335" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Velocity v</text>
 
     <!-- Force Vector F at Angle θ -->
-    <line x1="200" y1="265" x2="310" y2="185" stroke="#00c6ff" stroke-width="4.5" marker-end="url(#arrowCyan3)"/>
-    <text x="320" y="180" fill="#00c6ff" font-family="sans-serif" font-size="16" font-weight="bold">Force F</text>
+    <line x1="190" y1="265" x2="300" y2="185" stroke="#00c6ff" stroke-width="4.5" marker-end="url(#arrowCyan3)"/>
+    <text x="310" y="180" fill="#00c6ff" font-family="sans-serif" font-size="16" font-weight="bold">Force F</text>
 
     <!-- Angle θ Arc -->
-    <path d="M 240 265 A 40 40 0 0 0 230 240" fill="none" stroke="#FFD700" stroke-width="2"/>
-    <text x="245" y="255" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">θ</text>
+    <path d="M 230 265 A 40 40 0 0 0 220 240" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <text x="235" y="255" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">θ</text>
   </g>
 
-  <!-- Right Side: Power Units & Conversion Summary Card -->
-  <g transform="translate(430, 20)">
-    <rect x="0" y="0" width="340" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
-    <text x="20" y="35" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Power Definitions &amp; Units</text>
+  <!-- Vertical Divider -->
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-    <rect x="15" y="60" width="310" height="85" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
-    <text x="25" y="85" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Dot Product Definition:</text>
-    <text x="25" y="118" fill="#FFFFFF" font-family="monospace" font-size="17" font-weight="bold">P = dW / dt = F · v = F v cos θ</text>
+  <!-- Right Side: Power Units & Conversion Summary Card (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
+    <text x="182" y="35" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Power Definitions &amp; Units</text>
 
-    <rect x="15" y="160" width="310" height="95" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="25" y="185" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Units of Power:</text>
-    <text x="25" y="210" fill="#FFFFFF" font-family="monospace" font-size="15">1 Watt (W) = 1 Joule / second</text>
-    <text x="25" y="235" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">1 Horsepower (hp) = 746 Watts</text>
+    <rect x="15" y="60" width="335" height="90" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
+    <text x="167" y="85" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Dot Product Definition:</text>
+    <text x="167" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">P = dW / dt = F · v = F v cos θ</text>
 
-    <rect x="15" y="270" width="310" height="95" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="25" y="295" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Commercial Electrical Energy:</text>
-    <text x="25" y="325" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">1 kWh = 3.6 × 10⁶ Joules</text>
-    <text x="25" y="350" fill="#94A3B8" font-family="sans-serif" font-size="13">• Energy consumed = Power × Time</text>
+    <rect x="15" y="165" width="335" height="100" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
+    <text x="167" y="190" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Units of Power:</text>
+    <text x="167" y="218" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15">1 Watt (W) = 1 Joule / second</text>
+    <text x="167" y="245" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">1 Horsepower (hp) = 746 Watts</text>
+
+    <rect x="15" y="280" width="335" height="120" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="167" y="305" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Commercial Electrical Energy:</text>
+    <text x="167" y="338" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">1 kWh = 3.6 × 10⁶ Joules</text>
+    <text x="167" y="370" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13">• Energy consumed = Power × Time</text>
   </g>
 </svg>`;
 
 // 3D SVG 4: Spring Potential Energy & Mechanical Energy Conservation
 const svg4_3d_spring_potential_energy = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <linearGradient id="springGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00c6ff"/>
@@ -249,34 +263,34 @@ const svg4_3d_spring_potential_energy = `
     </linearGradient>
   </defs>
 
-  <!-- Left Side: Spring Mechanical System (Relaxed vs Stretched) -->
-  <g transform="translate(30, 20)">
-    <text x="30" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Spring Restoration Model (F_s = -k x)</text>
+  <!-- Left Side: Spring Mechanical System (Relaxed vs Stretched) (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Spring Restoration (F_s = -k x)</text>
 
     <!-- Wall -->
-    <rect x="40" y="60" width="20" height="270" fill="#334155" stroke="#94A3B8" stroke-width="2"/>
+    <rect x="30" y="60" width="20" height="270" fill="#334155" stroke="#94A3B8" stroke-width="2"/>
 
     <!-- Relaxed Spring (x = 0) -->
-    <path d="M 60 120 Q 80 100 100 120 Q 120 140 140 120 Q 160 100 180 120 L 200 120" fill="none" stroke="#94A3B8" stroke-width="3"/>
-    <rect x="200" y="90" width="60" height="60" rx="6" fill="rgba(148,163,184,0.3)" stroke="#94A3B8" stroke-width="2"/>
-    <text x="210" y="125" fill="#FFFFFF" font-family="sans-serif" font-size="13">x = 0</text>
-    <text x="270" y="125" fill="#94A3B8" font-family="sans-serif" font-size="13">Relaxed (U=0)</text>
+    <path d="M 50 120 Q 70 100 90 120 Q 110 140 130 120 Q 150 100 170 120 L 190 120" fill="none" stroke="#94A3B8" stroke-width="3"/>
+    <rect x="190" y="90" width="60" height="60" rx="6" fill="rgba(148,163,184,0.3)" stroke="#94A3B8" stroke-width="2"/>
+    <text x="200" y="125" fill="#FFFFFF" font-family="sans-serif" font-size="13">x = 0</text>
+    <text x="260" y="125" fill="#94A3B8" font-family="sans-serif" font-size="13">Relaxed (U=0)</text>
 
     <!-- Stretched Spring (+x) -->
-    <path d="M 60 260 Q 90 230 120 260 Q 150 290 180 260 Q 210 230 240 260 L 270 260" fill="none" stroke="#00c6ff" stroke-width="3"/>
-    <rect x="270" y="230" width="60" height="60" rx="6" fill="url(#springGrad4)" stroke="#FFFFFF" stroke-width="2"/>
-    <text x="280" y="265" fill="#FFFFFF" font-family="sans-serif" font-size="13">+x</text>
+    <path d="M 50 260 Q 80 230 110 260 Q 140 290 170 260 Q 200 230 230 260 L 260 260" fill="none" stroke="#00c6ff" stroke-width="3"/>
+    <rect x="260" y="230" width="60" height="60" rx="6" fill="url(#springGrad4)" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="270" y="265" fill="#FFFFFF" font-family="sans-serif" font-size="13">+x</text>
 
-    <line x1="200" y1="305" x2="270" y2="305" stroke="#76FF03" stroke-width="2.5"/>
-    <text x="215" y="325" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Displacement x</text>
+    <line x1="190" y1="305" x2="260" y2="305" stroke="#76FF03" stroke-width="2.5"/>
+    <text x="205" y="325" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Displacement x</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="390" y1="40" x2="390" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: Parabolic Energy Curves (Us, Ek, E_total) -->
-  <g transform="translate(410, 20)">
-    <text x="30" y="30" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Parabolic Energy Curves &amp; Conservation</text>
+  <!-- Right Side: Parabolic Energy Curves (Us, Ek, E_total) (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. Energy Curves &amp; Conservation</text>
 
     <!-- Axes -->
     <line x1="50" y1="330" x2="330" y2="330" stroke="#475569" stroke-width="2"/>
@@ -286,7 +300,7 @@ const svg4_3d_spring_potential_energy = `
 
     <!-- Potential Energy Parabola Us = 1/2 k x^2 (Opening Upward) -->
     <path d="M 70 110 Q 190 330 310 110" fill="none" stroke="#00c6ff" stroke-width="3"/>
-    <text x="80" y="100" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">U_s = ½ k x²</text>
+    <text x="75" y="100" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">U_s = ½ k x²</text>
 
     <!-- Kinetic Energy Parabola Ek = E - 1/2 k x^2 (Inverted) -->
     <path d="M 70 330 Q 190 110 310 330" fill="none" stroke="#76FF03" stroke-width="3"/>
@@ -294,7 +308,7 @@ const svg4_3d_spring_potential_energy = `
 
     <!-- Total Mechanical Energy Line E_total -->
     <line x1="70" y1="110" x2="310" y2="110" stroke="#FFD700" stroke-width="2.5" stroke-dasharray="5,4"/>
-    <text x="150" y="90" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">E_total = E_k + U_s = Const</text>
+    <text x="130" y="90" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">E_total = E_k + U_s = Const</text>
 
     <text x="50" y="350" fill="#94A3B8" font-family="monospace" font-size="13">-x_max</text>
     <text x="185" y="350" fill="#94A3B8" font-family="monospace" font-size="13">0</text>
@@ -304,7 +318,7 @@ const svg4_3d_spring_potential_energy = `
 
 // 3D SVG 5: Motion in a Vertical Circle (Loop-the-Loop)
 const svg5_3d_vertical_circle_motion = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <marker id="arrowGreen5" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#76FF03"/>
@@ -314,58 +328,61 @@ const svg5_3d_vertical_circle_motion = `
     </marker>
   </defs>
 
-  <!-- Left Side: 3D Vertical Circular Track -->
-  <g transform="translate(40, 20)">
-    <text x="30" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Vertical Circle Dynamics (Loop-the-Loop)</text>
+  <!-- Left Side: 3D Vertical Circular Track (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. Vertical Circle Dynamics (Loop)</text>
 
     <!-- Circular Track -->
-    <circle cx="200" cy="220" r="130" fill="rgba(0,198,255,0.05)" stroke="#00c6ff" stroke-width="2.5"/>
+    <circle cx="180" cy="220" r="130" fill="rgba(0,198,255,0.05)" stroke="#00c6ff" stroke-width="2.5"/>
 
     <!-- Center O -->
-    <circle cx="200" cy="220" r="6" fill="#FFFFFF"/>
-    <text x="185" y="240" fill="#FFFFFF" font-family="sans-serif" font-size="14">O</text>
+    <circle cx="180" cy="220" r="6" fill="#FFFFFF"/>
+    <text x="165" y="240" fill="#FFFFFF" font-family="sans-serif" font-size="14">O</text>
 
     <!-- Lowest Point L (Bottom) -->
-    <circle cx="200" cy="350" r="10" fill="#76FF03"/>
-    <text x="175" y="380" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Bottom (L)</text>
-    <line x1="200" y1="350" x2="310" y2="350" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen5)"/>
-    <text x="210" y="340" fill="#76FF03" font-family="sans-serif" font-size="13.5" font-weight="bold">v_L ≥ √(5gr)</text>
+    <circle cx="180" cy="350" r="10" fill="#76FF03"/>
+    <text x="155" y="380" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Bottom (L)</text>
+    <line x1="180" y1="350" x2="290" y2="350" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen5)"/>
+    <text x="190" y="340" fill="#76FF03" font-family="sans-serif" font-size="13.5" font-weight="bold">v_L ≥ √(5gr)</text>
 
     <!-- Highest Point H (Apex) -->
-    <circle cx="200" cy="90" r="10" fill="#FFD700"/>
-    <text x="180" y="70" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Apex (H)</text>
-    <line x1="200" y1="90" x2="290" y2="90" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowCyan5)"/>
-    <text x="210" y="115" fill="#FFD700" font-family="sans-serif" font-size="13.5" font-weight="bold">v_H ≥ √(gr)</text>
+    <circle cx="180" cy="90" r="10" fill="#FFD700"/>
+    <text x="160" y="70" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Apex (H)</text>
+    <line x1="180" y1="90" x2="270" y2="90" stroke="#FFD700" stroke-width="3" marker-end="url(#arrowCyan5)"/>
+    <text x="190" y="115" fill="#FFD700" font-family="sans-serif" font-size="13.5" font-weight="bold">v_H ≥ √(gr)</text>
 
     <!-- Horizontal Midpoint M -->
-    <circle cx="330" cy="220" r="9" fill="#00c6ff"/>
-    <text x="345" y="225" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Mid (M)</text>
-    <text x="250" y="210" fill="#00c6ff" font-family="sans-serif" font-size="13">v_M ≥ √(3gr)</text>
+    <circle cx="310" cy="220" r="9" fill="#00c6ff"/>
+    <text x="325" y="225" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Mid (M)</text>
+    <text x="230" y="210" fill="#00c6ff" font-family="sans-serif" font-size="13">v_M ≥ √(3gr)</text>
   </g>
 
-  <!-- Right Side: Critical Velocities & Tension Card -->
-  <g transform="translate(430, 20)">
-    <rect x="0" y="0" width="340" height="395" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
-    <text x="20" y="35" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Critical Speeds &amp; Tensions</text>
+  <!-- Vertical Divider -->
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-    <rect x="15" y="60" width="310" height="85" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
-    <text x="25" y="85" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Lowest Point (L) Conditions:</text>
-    <text x="25" y="115" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">v_L = √(5 g r) &nbsp;|&nbsp; T_L = 6 m g</text>
+  <!-- Right Side: Critical Velocities & Tension Card (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <rect x="0" y="0" width="365" height="430" rx="12" fill="rgba(15,23,42,0.9)" stroke="#00c6ff" stroke-width="1.8"/>
+    <text x="182" y="35" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="17" font-weight="bold">2. Critical Speeds &amp; Tensions</text>
 
-    <rect x="15" y="160" width="310" height="85" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
-    <text x="25" y="185" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Highest Point (H) Conditions:</text>
-    <text x="25" y="215" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">v_H = √(g r) &nbsp;|&nbsp; T_H = 0</text>
+    <rect x="15" y="60" width="335" height="90" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
+    <text x="167" y="85" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">Lowest Point (L) Conditions:</text>
+    <text x="167" y="120" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">v_L = √(5 g r) &nbsp;|&nbsp; T_L = 6 m g</text>
 
-    <rect x="15" y="260" width="310" height="105" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="25" y="285" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Tension Difference Formula:</text>
-    <text x="25" y="320" fill="#FFFFFF" font-family="monospace" font-size="18" font-weight="bold">T_L - T_H = 6 m g</text>
-    <text x="25" y="348" fill="#94A3B8" font-family="sans-serif" font-size="13">• String remains taut throughout loop</text>
+    <rect x="15" y="165" width="335" height="90" rx="8" fill="rgba(255,215,0,0.1)" stroke="#FFD700" stroke-width="1.2"/>
+    <text x="167" y="190" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Highest Point (H) Conditions:</text>
+    <text x="167" y="225" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">v_H = √(g r) &nbsp;|&nbsp; T_H = 0</text>
+
+    <rect x="15" y="270" width="335" height="130" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
+    <text x="167" y="295" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Tension Difference Formula:</text>
+    <text x="167" y="330" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="18" font-weight="bold">T_L - T_H = 6 m g</text>
+    <text x="167" y="365" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13">• String remains taut throughout loop</text>
   </g>
 </svg>`;
 
-// 3D SVG 6: 1D Head-on vs 2D Oblique Collisions & Restitution Model
+// 3D SVG 6: 1D Head-on vs 2D Oblique Collisions & Restitution Model (Width 365, Center x = 182)
 const svg6_3d_collisions_restitution = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
     <marker id="arrowCyan6" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#00c6ff"/>
@@ -375,9 +392,9 @@ const svg6_3d_collisions_restitution = `
     </marker>
   </defs>
 
-  <!-- Left Side: 1D Head-On Elastic Collision -->
-  <g transform="translate(30, 20)">
-    <text x="30" y="30" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. 1D Head-On Elastic Collision (e = 1)</text>
+  <!-- Left Side: 1D Head-On Elastic Collision (Width 365, Center x = 182) -->
+  <g transform="translate(20, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#00c6ff" font-family="sans-serif" font-size="16.5" font-weight="bold">1. 1D Head-On Collision (e = 1)</text>
 
     <!-- Before Collision -->
     <circle cx="80" cy="120" r="22" fill="rgba(0,198,255,0.3)" stroke="#00c6ff" stroke-width="2"/>
@@ -389,41 +406,41 @@ const svg6_3d_collisions_restitution = `
     <text x="210" y="125" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">m₂</text>
     <line x1="242" y1="120" x2="280" y2="120" stroke="#76FF03" stroke-width="3" marker-end="url(#arrowGreen6)"/>
     <text x="245" y="110" fill="#76FF03" font-family="sans-serif" font-size="13">u₂</text>
-    <text x="30" y="160" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Before Impact (u₁ &gt; u₂)</text>
+    <text x="182" y="160" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="13.5">Before Impact (u₁ &gt; u₂)</text>
 
-    <!-- Equal Mass Velocity Swap -->
-    <rect x="30" y="200" width="310" height="120" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
-    <text x="45" y="228" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Equal Masses Case (m₁ = m₂):</text>
-    <text x="45" y="260" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">v₁ = u₂ &nbsp;|&nbsp; v₂ = u₁</text>
-    <text x="45" y="295" fill="#76FF03" font-family="sans-serif" font-size="13.5">✓ Velocities completely exchanged!</text>
+    <!-- Equal Mass Velocity Swap Box -->
+    <rect x="15" y="200" width="335" height="130" rx="8" fill="rgba(0,198,255,0.1)" stroke="#00c6ff" stroke-width="1.2"/>
+    <text x="182" y="228" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Equal Masses Case (m₁ = m₂):</text>
+    <text x="182" y="262" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16.5" font-weight="bold">v₁ = u₂ &nbsp;|&nbsp; v₂ = u₁</text>
+    <text x="182" y="298" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13.5">✓ Velocities completely exchanged!</text>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="390" y1="40" x2="390" y2="410" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
 
-  <!-- Right Side: 2D Oblique Collision Scattering -->
-  <g transform="translate(410, 20)">
-    <text x="30" y="30" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. 2D Oblique Collision &amp; Restitution e</text>
+  <!-- Right Side: 2D Oblique Collision Scattering (Width 365, Center x = 182) -->
+  <g transform="translate(415, 20)">
+    <text x="182" y="30" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16.5" font-weight="bold">2. 2D Oblique Collision &amp; Restitution e</text>
 
     <!-- Center Collision point -->
-    <circle cx="150" cy="210" r="6" fill="#FFFFFF"/>
+    <circle cx="150" cy="200" r="6" fill="#FFFFFF"/>
 
     <!-- Incident mass m1 -->
-    <line x1="40" y1="210" x2="150" y2="210" stroke="#00c6ff" stroke-width="3.5" marker-end="url(#arrowCyan6)"/>
-    <text x="50" y="195" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">m₁ u₁</text>
+    <line x1="40" y1="200" x2="150" y2="200" stroke="#00c6ff" stroke-width="3.5" marker-end="url(#arrowCyan6)"/>
+    <text x="50" y="185" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">m₁ u₁</text>
 
     <!-- Scattered m1 at angle θ1 -->
-    <line x1="150" y1="210" x2="290" y2="120" stroke="#00c6ff" stroke-width="3.5" marker-end="url(#arrowCyan6)"/>
-    <text x="300" y="125" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">m₁ v₁ (θ₁)</text>
+    <line x1="150" y1="200" x2="290" y2="110" stroke="#00c6ff" stroke-width="3.5" marker-end="url(#arrowCyan6)"/>
+    <text x="300" y="115" fill="#00c6ff" font-family="sans-serif" font-size="14" font-weight="bold">m₁ v₁ (θ₁)</text>
 
     <!-- Target m2 recoil at angle θ2 -->
-    <line x1="150" y1="210" x2="280" y2="300" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen6)"/>
-    <text x="290" y="305" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">m₂ v₂ (θ₂)</text>
+    <line x1="150" y1="200" x2="280" y2="290" stroke="#76FF03" stroke-width="3.5" marker-end="url(#arrowGreen6)"/>
+    <text x="290" y="295" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">m₂ v₂ (θ₂)</text>
 
     <!-- Coefficient of Restitution e Box -->
-    <rect x="20" y="330" width="330" height="70" rx="8" fill="rgba(118,255,3,0.1)" stroke="#76FF03" stroke-width="1.2"/>
-    <text x="35" y="355" fill="#FFFFFF" font-family="monospace" font-size="15" font-weight="bold">e = (v₂ - v₁) / (u₁ - u₂)</text>
-    <text x="35" y="382" fill="#FFD700" font-family="sans-serif" font-size="13.5">e = 1 (Elastic), e = 0 (Perfectly Inelastic)</text>
+    <rect x="15" y="340" width="335" height="90" rx="8" fill="rgba(118,255,3,0.12)" stroke="#76FF03" stroke-width="1.5"/>
+    <text x="182" y="368" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="16" font-weight="bold">e = (v₂ - v₁) / (u₁ - u₂)</text>
+    <text x="182" y="398" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="13.5">e = 1 (Elastic), e = 0 (Perfectly Inelastic)</text>
   </g>
 </svg>`;
 
@@ -518,99 +535,79 @@ function generateFullOverviewHtml() {
   ${eqBox("<b>E<sub>k</sub> = " + frac('1', '2') + " m v<sup>2</sup> = " + frac('p<sup>2</sup>', '2 m') + "</b> &nbsp; (where p = m v is linear momentum)")}
 
   <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Statement of Work-Energy Theorem</h3>
-  ${defCard("Work-Energy Theorem", "The net work done by all forces (conservative, non-conservative, internal, and external) acting on a body is equal to the net change in its kinetic energy.")}
+  ${defCard("Work-Energy Theorem", "States that work done by the net force acting on a body is equal to the change in its kinetic energy: W_net = ΔE_k = 1/2 m v<sup>2</sup> - 1/2 m u<sup>2</sup>.")}
 
-  ${eqBox("<b>W<sub>net</sub> = ΔE<sub>k</sub> = E<sub>k, final</sub> - E<sub>k, initial</sub> = " + frac('1', '2') + " m v<sup>2</sup> - " + frac('1', '2') + " m u<sup>2</sup></b>")}
+  ${svg3DCardWrapper("Work-Energy Theorem Physical Model & Proof", "3D Motion track model showing work done accelerating mass m from speed u to v, verified by calculus integration.", svg2_3d_work_energy_theorem)}
 
-  ${svg3DCardWrapper("Work-Energy Theorem Model (W_net = ΔE_k)", "3D Acceleration track model showing velocity change from u to v under net work W_net = 1/2 m v² - 1/2 m u².", svg2_3d_work_energy_theorem)}
+  <!-- SECTION 3: POWER & VECTOR RELATION -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Power & Vector Relation (P = F · v)</h2>
 
-  <!-- SECTION 3: POWER -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Power</h2>
+  ${defCard("Power (P)", "The rate at which work is done or energy is transferred per unit time: P = dW / dt = F · v = |F||v| cos θ.")}
 
-  ${defCard("Power (P)", "The rate at which work is done by an agent, or the rate of transfer of energy per unit time.")}
+  ${eqBox("<b>P = F · v = F v cos θ</b> &nbsp; (1 Watt = 1 J/s, 1 hp = 746 W, 1 kWh = 3.6 × 10<sup>6</sup> J)")}
 
-  ${eqBox("<b>P<sub>avg</sub> = " + frac('W', 't') + " &nbsp;|&nbsp; P<sub>inst</sub> = " + frac('dW', 'dt') + " = F · " + frac('dr', 'dt') + " = F · v = |F| |v| cos θ</b>")}
+  ${svg3DCardWrapper("Power Vector Relation & Unit Conversions Model", "3D Motor pull system model showing instantaneous power P = F · v cos θ and commercial energy 1 kWh conversion.", svg3_3d_power_vector_relation)}
 
-  <div style="margin: 12px 0;">
-    ${colonTopic("SI Unit of Power", "1 Watt (W) = 1 Joule per second (1 J s<sup>-1</sup>). Larger units: 1 kW = 10<sup>3</sup> W, 1 MW = 10<sup>6</sup> W.")}
-    ${colonTopic("Horsepower (hp)", singleLineCode("1 hp = 746 Watts"))}
-    ${colonTopic("Commercial Unit of Electrical Energy", singleLineCode("1 Kilowatt-hour (kWh) = 3.6 × 10<sup>6</sup> Joules"))}
-  </div>
+  <!-- SECTION 4: CONSERVATIVE FORCES & SPRING POTENTIAL ENERGY -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Conservative Forces & Spring Potential Energy</h2>
 
-  ${svg3DCardWrapper("Power Vector Relation P = F · v Model", "3D Motor pulley system diagram illustrating power output P = F v cos θ and commercial energy units.", svg3_3d_power_vector_relation)}
+  ${defCard("Spring Potential Energy (U_s)", "The potential energy stored in a spring when stretched or compressed by displacement x from its equilibrium position: U_s = 1/2 k x<sup>2</sup>.")}
 
-  <!-- SECTION 4: POTENTIAL ENERGY & CONSERVATION OF MECHANICAL ENERGY -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Potential Energy & Conservative vs Non-Conservative Forces</h2>
+  ${eqBox("<b>F<sub>s</sub> = - k x &nbsp; ⇒ &nbsp; U<sub>s</sub> = " + frac('1', '2') + " k x<sup>2</sup> &nbsp;|&nbsp; E<sub>total</sub> = E<sub>k</sub> + U<sub>s</sub> = Const</b>")}
 
-  ${defCard("Potential Energy (U)", "The energy stored within a system by virtue of its position, configuration, or state of strain relative to a reference zero state.")}
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Potential Energy of a Stretched Spring</h3>
-  ${eqBox("<b>W<sub>ext</sub> = ∫<sub>0</sub><sup>x</sup> (k x') dx' = " + frac('1', '2') + " k x<sup>2</sup> &nbsp; ⇒ &nbsp; Elastic Potential Energy U<sub>s</sub> = " + frac('1', '2') + " k x<sup>2</sup></b>")}
-
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Law of Conservation of Mechanical Energy</h3>
-  ${defCard("Law of Conservation of Mechanical Energy", "The total mechanical energy E = E_k + U of an isolated system remains strictly constant if only conservative forces do work on the system.")}
-
-  ${eqBox("<b>E<sub>total</sub> = E<sub>k</sub> + U = " + frac('1', '2') + " m v<sup>2</sup> + m g h = Constant</b>")}
-
-  ${svg3DCardWrapper("Spring Potential Energy & Mechanical Energy Conservation", "Dual-panel diagram illustrating spring restoration force F_s = -kx side-by-side with parabolic energy curves Us, Ek, and E_total.", svg4_3d_spring_potential_energy)}
+  ${svg3DCardWrapper("Spring Potential Energy & Mechanical Energy Conservation", "Helical spring restoration model alongside parabolic U_s = 1/2 k x² vs E_k energy conservation curves.", svg4_3d_spring_potential_energy)}
 
   <!-- SECTION 5: MOTION IN A VERTICAL CIRCLE -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Motion in a Vertical Circle (Loop-the-Loop)</h2>
 
-  ${defCard("Vertical Circular Motion", "Non-uniform circular motion of a body tied to a string or inside a vertical track under the combined action of gravity and tension.")}
+  ${defCard("Vertical Circular Motion", "Non-uniform circular motion of a body tied to a string swinging in a vertical plane under gravity.")}
 
   <div style="margin: 12px 0;">
-    ${colonTopic("Highest Point (Apex H) Critical Conditions", singleLineCode("Minimum Speed v<sub>H</sub> = √(g r) &nbsp;|&nbsp; Tension T<sub>H</sub> = 0"))}
-    ${colonTopic("Lowest Point (Bottom L) Critical Conditions", singleLineCode("Minimum Speed v<sub>L</sub> = √(5 g r) &nbsp;|&nbsp; Tension T<sub>L</sub> = 6 m g"))}
-    ${colonTopic("Midway Horizontal Point (M) Critical Conditions", singleLineCode("Minimum Speed v<sub>M</sub> = √(3 g r) &nbsp;|&nbsp; Tension T<sub>M</sub> = 3 m g"))}
+    ${colonTopic("Lowest Point Speed v_L", singleLineCode("v<sub>L</sub> ≥ √(5 g r) &nbsp; (Minimum speed required to complete the loop)"))}
+    ${colonTopic("Highest Point Speed v_H", singleLineCode("v<sub>H</sub> ≥ √(g r) &nbsp; (Critical speed at top for taut string T_H ≥ 0)"))}
     ${colonTopic("Tension Difference", singleLineCode("T<sub>L</sub> - T<sub>H</sub> = 6 m g"))}
   </div>
 
-  ${svg3DCardWrapper("Motion in a Vertical Circle (Loop-the-Loop) Forces & Speeds", "3D Vertical circular track illustrating string tension vectors TL, TM, TH and critical minimum speeds.", svg5_3d_vertical_circle_motion)}
+  ${svg3DCardWrapper("Motion in a Vertical Circle (Loop-the-Loop) Speeds & Tensions", "Vertical circular loop showing critical speeds v_L = √(5gr), v_H = √(gr) and tension gap T_L - T_H = 6mg.", svg5_3d_vertical_circle_motion)}
 
-  <!-- SECTION 6: COLLISIONS IN ONE AND TWO DIMENSIONS -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Collisions in One and Two Dimensions</h2>
+  <!-- SECTION 6: COLLISIONS IN 1D & 2D -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Collisions in 1D & 2D (Elastic & Inelastic)</h2>
 
-  ${defCard("Collision", "An isolated intense interaction between two or more bodies over a short time interval during which internal forces alter their initial velocities.")}
+  ${defCard("Coefficient of Restitution (e)", "The ratio of relative velocity of separation of two colliding bodies to their relative velocity of approach: e = (v_2 - v_1) / (u_1 - u_2).")}
 
-  <div style="margin: 12px 0;">
-    ${colonTopic("Coefficient of Restitution (e)", singleLineCode("e = " + frac('v<sub>2</sub> - v<sub>1</sub>', 'u<sub>1</sub> - u<sub>2</sub>') + " &nbsp; (e = 1 Elastic, e = 0 Perfectly Inelastic)"))}
-    ${colonTopic("Final Velocity of Mass 1 in 1D Elastic", singleLineCode("v<sub>1</sub> = [ " + frac('m<sub>1</sub> - m<sub>2</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + " ] u<sub>1</sub> + [ " + frac('2 m<sub>2</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + " ] u<sub>2</sub>"))}
-    ${colonTopic("Final Velocity of Mass 2 in 1D Elastic", singleLineCode("v<sub>2</sub> = [ " + frac('2 m<sub>1</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + " ] u<sub>1</sub> + [ " + frac('m<sub>2</sub> - m<sub>1</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + " ] u<sub>2</sub>"))}
-    ${colonTopic("Special Case: Equal Masses (m<sub>1</sub> = m<sub>2</sub>)", "In 1D head-on elastic collision of equal masses, velocities are completely swapped: v<sub>1</sub> = u<sub>2</sub> and v<sub>2</sub> = u<sub>1</sub>.")}
-  </div>
+  ${eqBox("<b>e = 1 (Perfectly Elastic) &nbsp;|&nbsp; 0 < e < 1 (Inelastic) &nbsp;|&nbsp; e = 0 (Perfectly Inelastic)</b>")}
 
-  ${svg3DCardWrapper("1D Head-on vs 2D Oblique Collisions & Restitution Model", "Schematic diagram comparing head-on 1D elastic velocity swap vs 2D oblique scattering angles θ₁ and θ₂.", svg6_3d_collisions_restitution)}
+  ${svg3DCardWrapper("1D Head-on vs 2D Oblique Collisions & Restitution Model", "Dual-panel diagram comparing equal-mass 1D velocity swap vs 2D oblique scattering and restitution formula e.", svg6_3d_collisions_restitution)}
 
   <!-- QUICK REVISION CHEAT SHEET (PLACED AT THE VERY END OF OVERVIEW SECTION) -->
   <div style="background: rgba(0, 198, 255, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 16px; margin-top: 35px; margin-bottom: 15px;">
     <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">⚡ Quick Revision Cheat Sheet</h2>
-    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Formulae, Energy Theorems & Collision Relations Summary for Unit IV</p>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Formulae, Energy Relations & Collision Laws Summary for Unit IV</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; font-size: 14px;">
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Work & Work-Energy Theorem:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">W = F · s = |F||s| cos θ &nbsp;|&nbsp; W = ∫ F dx<br>W<sub>net</sub> = ΔE<sub>k</sub> = ` + frac('1', '2') + ` m v<sup>2</sup> - ` + frac('1', '2') + ` m u<sup>2</sup></span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Work Formulae:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">W = F · s = |F||s| cos θ<br>W = ∫ F(x) dx (F-x Area)</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Power & Commercial Unit:</b>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Work-Energy Theorem:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">W<sub>net</sub> = ΔE<sub>k</sub> = ` + frac('1', '2') + ` m v<sup>2</sup> - ` + frac('1', '2') + ` m u<sup>2</sup><br>E<sub>k</sub> = ` + frac('p<sup>2</sup>', '2m') + `</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Power Relations:</b>
         <span style="color: #FFFFFF; line-height: 1.6; display: block;">P = ` + frac('dW', 'dt') + ` = F · v = F v cos θ<br>1 hp = 746 W &nbsp;|&nbsp; 1 kWh = 3.6 × 10<sup>6</sup> J</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Potential Energy Formulas:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">Gravitational: U = m g h<br>Spring PE: U<sub>s</sub> = ` + frac('1', '2') + ` k x<sup>2</sup> (F<sub>s</sub> = -k x)</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Spring Potential Energy:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">F<sub>s</sub> = - k x &nbsp;|&nbsp; U<sub>s</sub> = ` + frac('1', '2') + ` k x<sup>2</sup><br>E<sub>total</sub> = E<sub>k</sub> + U<sub>s</sub> = Const</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Vertical Circle Limits:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">v<sub>L</sub> ≥ √(5 g r) &nbsp;|&nbsp; v<sub>H</sub> ≥ √(g r)<br>T<sub>L</sub> - T<sub>H</sub> = 6 m g</span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Vertical Circle Speeds:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">v<sub>L</sub> = √(5 g r) &nbsp;|&nbsp; v<sub>H</sub> = √(g r)<br>T<sub>L</sub> - T<sub>H</sub> = 6 m g</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• 1D Elastic Collision Velocities:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">v<sub>1</sub> = [ ` + frac('m<sub>1</sub> - m<sub>2</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + ` ] u<sub>1</sub> + [ ` + frac('2 m<sub>2</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + ` ] u<sub>2</sub><br>v<sub>2</sub> = [ ` + frac('2 m<sub>1</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + ` ] u<sub>1</sub> + [ ` + frac('m<sub>2</sub> - m<sub>1</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + ` ] u<sub>2</sub></span>
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 10px 12px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
-        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Inelastic Collision & e:</b>
-        <span style="color: #FFFFFF; line-height: 1.6; display: block;">e = ` + frac('v<sub>2</sub> - v<sub>1</sub>', 'u<sub>1</sub> - u<sub>2</sub>') + `<br>K.E. Loss = ` + frac('1', '2') + ` [ ` + frac('m<sub>1</sub> m<sub>2</sub>', 'm<sub>1</sub> + m<sub>2</sub>') + ` ] u<sub>1</sub><sup>2</sup></span>
+        <b style='color: ${themeColor}; display: block; margin-bottom: 3px;'>• Restitution Coefficient:</b>
+        <span style="color: #FFFFFF; line-height: 1.6; display: block;">e = ` + frac('v<sub>2</sub> - v<sub>1</sub>', 'u<sub>1</sub> - u<sub>2</sub>') + `<br>e = 1 (Elastic), e = 0 (Inelastic)</span>
       </div>
     </div>
   </div>
@@ -643,4 +640,4 @@ ${solutionsPartCode}
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c11-phy-4.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully wrote c11-phy-4.ts with 6 self-contained 3D SVG diagrams to " + outputPath);
+console.log("Successfully wrote updated c11-phy-4.ts with fixed 3D SVG diagrams to " + outputPath);
