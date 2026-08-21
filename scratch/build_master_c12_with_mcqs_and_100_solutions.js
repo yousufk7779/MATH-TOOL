@@ -52,307 +52,308 @@ const fullSolutionsHtml = `
 </div>
 `;
 
-// 25 MCQs for the MCQs tab
+// 25 Interactive MCQs (60% Basic/Engaging + 40% Moderate/Advance)
+// Distributed across A, B, C, D with explicit option labels A), B), C), D)
 const mcqs = [
   {
     id: "c12-phy-1-mcq-1",
-    question: "A polythene piece rubbed with wool is found to have a negative charge of 3.2 &times; 10<sup>-7</sup> C. The number of electrons transferred from wool to polythene is:",
+    question: "When a glass rod is rubbed with silk cloth, the glass rod becomes positively charged. What happens to the silk cloth?",
     options: [
-      "2.0 &times; 10<sup>12</sup> electrons",
-      "1.6 &times; 10<sup>19</sup> electrons",
-      "3.2 &times; 10<sup>12</sup> electrons",
-      "6.25 &times; 10<sup>18</sup> electrons"
+      "A) It gains an equal amount of positive charge",
+      "B) It acquires an equal amount of negative charge",
+      "C) It remains completely neutral",
+      "D) It loses all of its conduction electrons"
     ],
-    correctAnswer: "a",
-    explanation: "By quantization of charge q = n e &rArr; n = q / e = (3.2 &times; 10<sup>-7</sup> C) / (1.602 &times; 10<sup>-19</sup> C) = 2.0 &times; 10<sup>12</sup> electrons."
+    correctAnswer: "b",
+    explanation: "By the law of conservation of charge, electrons transferred from the glass rod to the silk cloth give the silk cloth an exactly equal amount of negative charge."
   },
   {
     id: "c12-phy-1-mcq-2",
-    question: "When the distance between two stationary point charges is doubled, the electrostatic force between them becomes:",
+    question: "What is the conventional direction of the Electric Dipole Moment vector (<b>p</b>)?",
     options: [
-      "One-fourth (F / 4)",
-      "Double (2 F)",
-      "Half (F / 2)",
-      "Four times (4 F)"
+      "A) From negative charge (-q) to positive charge (+q)",
+      "B) From positive charge (+q) to negative charge (-q)",
+      "C) Radially outward in all directions",
+      "D) Perpendicular to the dipole axis"
     ],
     correctAnswer: "a",
-    explanation: "According to Coulomb's Inverse Square Law, F &prop; 1/r<sup>2</sup>. If r' = 2r, then F' = F / (2)<sup>2</sup> = F / 4."
+    explanation: "In electrostatics, the electric dipole moment vector <b>p</b> = q (2<b>a</b>) points along the axis from the negative charge (-q) to the positive charge (+q)."
   },
   {
     id: "c12-phy-1-mcq-3",
-    question: "The SI unit of absolute electrical permittivity of free space (&epsilon;<sub>0</sub>) is:",
+    question: "Which of the following values of electrostatic charge is physically possible on a body according to the quantization of charge?",
     options: [
-      "C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup> (or F m<sup>-1</sup>)",
-      "N m<sup>2</sup> C<sup>-2</sup>",
-      "N C<sup>-1</sup>",
-      "Volt meter (V m)"
+      "A) 2.4 &times; 10<sup>-19</sup> C",
+      "B) 4.0 &times; 10<sup>-19</sup> C",
+      "C) 3.2 &times; 10<sup>-19</sup> C",
+      "D) 0.8 &times; 10<sup>-19</sup> C"
     ],
-    correctAnswer: "a",
-    explanation: "From Coulomb's law &epsilon;<sub>0</sub> = q<sub>1</sub>q<sub>2</sub> / (4&pi; F r<sup>2</sup>), SI unit is C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup>, also equivalent to Farad per meter (F m<sup>-1</sup>)."
+    correctAnswer: "c",
+    explanation: "By quantization of charge q = n e, total charge must be an integral multiple of e = 1.6 &times; 10<sup>-19</sup> C. Here, 3.2 &times; 10<sup>-19</sup> C = 2 &times; e (where n = 2)."
   },
   {
     id: "c12-phy-1-mcq-4",
-    question: "Two point charges placed in air repel each other with force F. When placed in water (dielectric constant K = 80) at the same distance, the force becomes:",
+    question: "Why can two electric field lines never intersect each other at any point?",
     options: [
-      "F / 80",
-      "80 F",
-      "F",
-      "F / 1600"
+      "A) Because field lines always remain straight",
+      "B) Because like field lines strongly repel each other",
+      "C) Because field lines are imaginary curves",
+      "D) Because at the intersection, there would be two directions of net electric field"
     ],
-    correctAnswer: "a",
-    explanation: "Electrostatic force in a dielectric medium of relative permittivity K is reduced by factor K: F<sub>med</sub> = F<sub>air</sub> / K = F / 80."
+    correctAnswer: "d",
+    explanation: "If two lines cross, two tangents could be drawn at the intersection point, which would mean two different directions of resultant electric field at the exact same location, which is physically impossible."
   },
   {
     id: "c12-phy-1-mcq-5",
-    question: "An electric dipole of dipole moment <b>p</b> placed in a uniform electric field <b>E</b> experiences maximum torque when the angle between <b>p</b> and <b>E</b> is:",
+    question: "What is the SI unit of absolute electrical permittivity of free space (&epsilon;<sub>0</sub>)?",
     options: [
-      "90&deg;",
-      "0&deg;",
-      "180&deg;",
-      "45&deg;"
+      "A) N m<sup>2</sup> C<sup>-2</sup>",
+      "B) C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup> (or F m<sup>-1</sup>)",
+      "C) N C<sup>-1</sup>",
+      "D) Volt &times; meter (V m)"
     ],
-    correctAnswer: "a",
-    explanation: "Torque on a dipole is given by &tau; = p E sin &theta;. Torque is maximum when sin &theta; = 1, which occurs at &theta; = 90&deg; (&tau;<sub>max</sub> = p E)."
+    correctAnswer: "b",
+    explanation: "From Coulomb's law &epsilon;<sub>0</sub> = q<sub>1</sub>q<sub>2</sub> / (4&pi; F r<sup>2</sup>), the SI unit is C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup>, also commonly expressed as Farad per meter (F m<sup>-1</sup>)."
   },
   {
     id: "c12-phy-1-mcq-6",
-    question: "The electric field intensity due to an infinitely long straight uniformly charged wire of linear charge density &lambda; at distance r varies as:",
+    question: "Which of the following physical quantities in electrostatics is a true vector quantity?",
     options: [
-      "E &prop; 1 / r",
-      "E &prop; 1 / r<sup>2</sup>",
-      "E &prop; 1 / r<sup>3</sup>",
-      "Independent of r"
+      "A) Electrostatic Potential",
+      "B) Electric Flux",
+      "C) Electric Dipole Moment",
+      "D) Electrostatic Potential Energy"
     ],
-    correctAnswer: "a",
-    explanation: "By Gauss's Theorem, field of an infinite straight wire is E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r), so E is inversely proportional to distance r (E &prop; 1/r)."
+    correctAnswer: "c",
+    explanation: "Electric dipole moment <b>p</b> is a vector quantity (directed from -q to +q). Potential, electric flux, and electrostatic energy are all scalar quantities."
   },
   {
     id: "c12-phy-1-mcq-7",
-    question: "Total electric flux emerging through a closed Gaussian surface enclosing an electric dipole of moment <b>p</b> is:",
+    question: "Under electrostatic equilibrium, the net electric field intensity inside a hollow metallic conductor is:",
     options: [
-      "Zero",
-      "q / &epsilon;<sub>0</sub>",
-      "2q / &epsilon;<sub>0</sub>",
-      "p / &epsilon;<sub>0</sub>"
+      "A) Maximum at the center of the cavity",
+      "B) Dependent on the shape of the conductor",
+      "C) Strictly Zero",
+      "D) Infinite"
     ],
-    correctAnswer: "a",
-    explanation: "An electric dipole consists of equal and opposite charges (+q and -q). Net enclosed charge &Sigma;q = +q + (-q) = 0. By Gauss's Law &Phi; = &Sigma;q / &epsilon;<sub>0</sub> = 0."
+    correctAnswer: "c",
+    explanation: "Free electrons redistribute on the outer metallic surface until the induced internal field completely cancels the applied field, leaving E = 0 inside (Electrostatic Shielding)."
   },
   {
     id: "c12-phy-1-mcq-8",
-    question: "Electric field intensity at any point inside a uniformly charged thin spherical shell of radius R is strictly:",
+    question: "The work done in moving a test charge of 5.0 &mu;C between two points on the same equipotential surface of potential 50 V is:",
     options: [
-      "Zero",
-      "1 / (4&pi;&epsilon;<sub>0</sub>) &times; (Q / R<sup>2</sup>)",
-      "1 / (4&pi;&epsilon;<sub>0</sub>) &times; (Q / r<sup>2</sup>)",
-      "Infinite"
+      "A) 250 &mu;J",
+      "B) 50 &mu;J",
+      "C) 10 &mu;J",
+      "D) Zero"
     ],
-    correctAnswer: "a",
-    explanation: "Since all charges reside exclusively on the outer boundary of the shell, a Gaussian surface constructed inside encloses zero charge (q<sub>enclosed</sub> = 0), making E<sub>in</sub> = 0 everywhere inside."
+    correctAnswer: "d",
+    explanation: "On an equipotential surface, potential difference &Delta;V = 0. Therefore, work done W = q<sub>0</sub> &Delta;V = q<sub>0</sub> (0) = 0."
   },
   {
     id: "c12-phy-1-mcq-9",
-    question: "The electric potential at any point on the equatorial plane of an electric dipole is:",
+    question: "The angle between electrostatic field lines and an equipotential surface is always:",
     options: [
-      "Zero",
-      "p / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)",
-      "2p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>)",
-      "Infinite"
+      "A) 90&deg; (Perpendicular)",
+      "B) 0&deg; (Parallel)",
+      "C) 45&deg;",
+      "D) 180&deg;"
     ],
     correctAnswer: "a",
-    explanation: "Every point on the equatorial plane is equidistant from +q and -q. The positive potential V<sub>+</sub> exactly cancels the negative potential V<sub>-</sub>, resulting in net V<sub>eq</sub> = 0."
+    explanation: "Because work done along an equipotential surface is zero (dW = E dl cos &theta; = 0), cos &theta; = 0 &rArr; &theta; = 90&deg;. Field lines are always normal to equipotentials."
   },
   {
     id: "c12-phy-1-mcq-10",
-    question: "The electrostatic energy stored in a capacitor of capacitance C charged to potential difference V is:",
+    question: "One Farad (1 F) of electrical capacitance is equivalent to:",
     options: [
-      "1/2 C V<sup>2</sup>",
-      "C V",
-      "1/2 C<sup>2</sup> V",
-      "2 C V<sup>2</sup>"
+      "A) 1 Joule per Volt (1 J V<sup>-1</sup>)",
+      "B) 1 Coulomb per Volt (1 C V<sup>-1</sup>)",
+      "C) 1 Newton per Coulomb (1 N C<sup>-1</sup>)",
+      "D) 1 Volt per Coulomb (1 V C<sup>-1</sup>)"
     ],
-    correctAnswer: "a",
-    explanation: "The work done in charging a capacitor is stored as potential energy: U = 1/2 C V<sup>2</sup> = Q<sup>2</sup> / (2C) = 1/2 Q V."
+    correctAnswer: "b",
+    explanation: "From definition C = Q / V, 1 Farad = 1 Coulomb / 1 Volt (1 F = 1 C V<sup>-1</sup>)."
   },
   {
     id: "c12-phy-1-mcq-11",
-    question: "The angle between electric field lines and an equipotential surface at any point is always:",
+    question: "What is the value of the dielectric constant (relative permittivity K) for a perfect metallic conductor?",
     options: [
-      "90&deg; (Perpendicular)",
-      "0&deg; (Parallel)",
-      "45&deg;",
-      "180&deg;"
+      "A) Zero",
+      "B) 1.0",
+      "C) 80",
+      "D) Infinity (&infin;)"
     ],
-    correctAnswer: "a",
-    explanation: "Since work done dW = <b>E</b> &sdot; d<b>l</b> = E dl cos &theta; = 0 on an equipotential surface, cos &theta; = 0 &rArr; &theta; = 90&deg;."
+    correctAnswer: "d",
+    explanation: "Inside a metallic conductor in equilibrium, E = 0. Since E = E<sub>0</sub> / K &rArr; K = E<sub>0</sub> / 0 = &infin;."
   },
   {
     id: "c12-phy-1-mcq-12",
-    question: "When a dielectric slab of dielectric constant K = 4 is inserted between the plates of an isolated charged capacitor (battery disconnected):",
+    question: "When two identical capacitors each of capacitance C are connected in parallel, their equivalent capacitance is:",
     options: [
-      "Capacitance increases 4 times, Potential decreases to V/4",
-      "Capacitance increases 4 times, Potential remains constant",
-      "Capacitance decreases, Potential increases 4 times",
-      "Both Capacitance and Potential remain constant"
+      "A) C / 2",
+      "B) 2 C",
+      "C) C",
+      "D) 4 C"
     ],
-    correctAnswer: "a",
-    explanation: "With battery disconnected, charge Q remains constant. Capacitance multiplies to C' = K C<sub>0</sub> = 4 C<sub>0</sub>. Potential drops to V' = Q / C' = V<sub>0</sub> / 4."
+    correctAnswer: "b",
+    explanation: "In parallel combination, equivalent capacitance is the direct algebraic sum: C<sub>p</sub> = C<sub>1</sub> + C<sub>2</sub> = C + C = 2 C."
   },
   {
     id: "c12-phy-1-mcq-13",
-    question: "For a short electric dipole, the ratio of electric field intensity at an axial point to that at an equatorial point at the same distance r is:",
+    question: "When two identical capacitors each of capacitance C are connected in series, their equivalent capacitance is:",
     options: [
-      "2 : 1",
-      "1 : 2",
-      "1 : 1",
-      "4 : 1"
-    ],
-    correctAnswer: "a",
-    explanation: "E<sub>axial</sub> = 2p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>) and E<sub>eq</sub> = p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>). Thus, E<sub>axial</sub> / E<sub>eq</sub> = 2 : 1."
-  },
-  {
-    id: "c12-phy-1-mcq-14",
-    question: "Two identical capacitors each of capacitance C are connected in parallel. Their equivalent capacitance is:",
-    options: [
-      "2 C",
-      "C / 2",
-      "C",
-      "4 C"
-    ],
-    correctAnswer: "a",
-    explanation: "In parallel combination, equivalent capacitance is the direct sum: C<sub>p</sub> = C<sub>1</sub> + C<sub>2</sub> = C + C = 2 C."
-  },
-  {
-    id: "c12-phy-1-mcq-15",
-    question: "Two identical capacitors each of capacitance C are connected in series. Their equivalent capacitance is:",
-    options: [
-      "C / 2",
-      "2 C",
-      "C",
-      "C / 4"
+      "A) C / 2",
+      "B) 2 C",
+      "C) C",
+      "D) C / 4"
     ],
     correctAnswer: "a",
     explanation: "In series combination, 1/C<sub>s</sub> = 1/C + 1/C = 2/C &rArr; C<sub>s</sub> = C / 2."
   },
   {
-    id: "c12-phy-1-mcq-16",
-    question: "The electric field intensity between two infinite parallel sheets carrying uniform surface charge densities +&sigma; and -&sigma; is:",
+    id: "c12-phy-1-mcq-14",
+    question: "The electric potential at any point on the equatorial line of an electric dipole is:",
     options: [
-      "&sigma; / &epsilon;<sub>0</sub>",
-      "&sigma; / (2 &epsilon;<sub>0</sub>)",
-      "Zero",
-      "2 &sigma; / &epsilon;<sub>0</sub>"
+      "A) Zero",
+      "B) p / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)",
+      "C) 2p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>)",
+      "D) Infinite"
     ],
     correctAnswer: "a",
-    explanation: "Between oppositely charged sheets, individual fields add in the same direction: E = &sigma;/(2&epsilon;<sub>0</sub>) + &sigma;/(2&epsilon;<sub>0</sub>) = &sigma; / &epsilon;<sub>0</sub>."
+    explanation: "Every point on the equatorial line is equidistant from +q and -q. The positive potential V<sub>+</sub> exactly cancels the negative potential V<sub>-</sub>, resulting in net V<sub>eq</sub> = 0."
+  },
+  {
+    id: "c12-phy-1-mcq-15",
+    question: "Total outward electric flux emerging from a closed Gaussian surface enclosing an electric dipole is:",
+    options: [
+      "A) q / &epsilon;<sub>0</sub>",
+      "B) 2q / &epsilon;<sub>0</sub>",
+      "C) Zero",
+      "D) p / &epsilon;<sub>0</sub>"
+    ],
+    correctAnswer: "c",
+    explanation: "An electric dipole consists of equal and opposite charges (+q and -q). Net enclosed charge &Sigma;q = +q + (-q) = 0. By Gauss's Law, &Phi; = &Sigma;q / &epsilon;<sub>0</sub> = 0."
+  },
+  {
+    id: "c12-phy-1-mcq-16",
+    question: "Two point charges in vacuum repel each other with force F. When placed at the same distance in water (dielectric constant K = 80), the new force is:",
+    options: [
+      "A) 80 F",
+      "B) F",
+      "C) F / 80",
+      "D) F / 1600"
+    ],
+    correctAnswer: "c",
+    explanation: "In a dielectric medium of relative permittivity K, the electrostatic force is reduced by factor K: F<sub>med</sub> = F<sub>vac</sub> / K = F / 80."
   },
   {
     id: "c12-phy-1-mcq-17",
-    question: "The dimensional formula of electrical capacitance (C) is:",
+    question: "An electric dipole of moment <b>p</b> in a uniform electric field <b>E</b> experiences maximum torque when the angle &theta; between <b>p</b> and <b>E</b> is:",
     options: [
-      "[M<sup>-1</sup> L<sup>-2</sup> T<sup>4</sup> A<sup>2</sup>]",
-      "[M L<sup>2</sup> T<sup>-3</sup> A<sup>-1</sup>]",
-      "[M L T<sup>-3</sup> A<sup>-1</sup>]",
-      "[M<sup>-1</sup> L<sup>-3</sup> T<sup>4</sup> A<sup>2</sup>]"
+      "A) 0&deg;",
+      "B) 45&deg;",
+      "C) 90&deg;",
+      "D) 180&deg;"
     ],
-    correctAnswer: "a",
-    explanation: "C = Q / V = [A T] / [M L<sup>2</sup> T<sup>-3</sup> A<sup>-1</sup>] = [M<sup>-1</sup> L<sup>-2</sup> T<sup>4</sup> A<sup>2</sup>]."
+    correctAnswer: "c",
+    explanation: "Torque &tau; = p E sin &theta;. Torque reaches its maximum value when sin &theta; = 1, which occurs at &theta; = 90&deg; (&tau;<sub>max</sub> = p E)."
   },
   {
     id: "c12-phy-1-mcq-18",
-    question: "The work done in rotating an electric dipole of moment p in a uniform electric field E from stable equilibrium (&theta; = 0&deg;) to unstable equilibrium (&theta; = 180&deg;) is:",
+    question: "For a short electric dipole, the ratio of electric field intensity at an axial point to an equatorial point at the same distance r is:",
     options: [
-      "2 p E",
-      "p E",
-      "Zero",
-      "-2 p E"
+      "A) 1 : 2",
+      "B) 2 : 1",
+      "C) 1 : 1",
+      "D) 4 : 1"
     ],
-    correctAnswer: "a",
-    explanation: "W = p E (cos 0&deg; - cos 180&deg;) = p E [1 - (-1)] = 2 p E."
+    correctAnswer: "b",
+    explanation: "E<sub>axial</sub> = 2p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>) and E<sub>eq</sub> = p / (4&pi;&epsilon;<sub>0</sub> r<sup>3</sup>). Taking their ratio gives E<sub>axial</sub> / E<sub>eq</sub> = 2 : 1."
   },
   {
     id: "c12-phy-1-mcq-19",
-    question: "What is the value of the dielectric constant (relative permittivity K) for a perfect metallic conductor?",
+    question: "The electric field intensity due to an infinitely long straight wire of linear charge density &lambda; varies with radial distance r as:",
     options: [
-      "Infinity (&infin;)",
-      "Zero",
-      "1",
-      "80"
+      "A) E &prop; 1 / r<sup>2</sup>",
+      "B) E &prop; 1 / r<sup>3</sup>",
+      "C) Independent of r",
+      "D) E &prop; 1 / r"
     ],
-    correctAnswer: "a",
-    explanation: "Inside a conductor in electrostatic equilibrium, induced charges completely cancel the external field (E<sub>net</sub> = 0). Since E = E<sub>0</sub>/K &rArr; K = E<sub>0</sub>/0 = &infin;."
+    correctAnswer: "d",
+    explanation: "By Gauss's Law, field around an infinite wire is E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r), so electric field is inversely proportional to distance r (E &prop; 1/r)."
   },
   {
     id: "c12-phy-1-mcq-20",
-    question: "Electrostatic shielding is based on the physical fact that:",
+    question: "A parallel plate capacitor is connected to a DC battery. When a dielectric slab of K = 3 is inserted between plates while the battery remains connected:",
     options: [
-      "Electric field inside a hollow metallic conductor is strictly zero",
-      "Electric field inside an insulator is infinite",
-      "Conductors cannot hold electric charge",
-      "Magnetic fields cancel electric fields"
+      "A) Potential difference V drops to V/3",
+      "B) Capacitance C and Stored Energy U both increase by 3 times",
+      "C) Stored charge Q remains unchanged",
+      "D) Electric field E increases 3 times"
     ],
-    correctAnswer: "a",
-    explanation: "Free electrons redistribute on the outer surface of a metal shell until E = 0 in the entire hollow cavity, shielding interior objects from external electrical forces."
+    correctAnswer: "b",
+    explanation: "Because battery maintains constant voltage V = V<sub>0</sub>, capacitance becomes C' = 3 C<sub>0</sub>, charge increases to Q' = 3 Q<sub>0</sub>, and stored energy multiplies to U' = 1/2 C' V<sup>2</sup> = 3 U<sub>0</sub>."
   },
   {
     id: "c12-phy-1-mcq-21",
-    question: "The electrostatic energy density (energy per unit volume) in a region of electric field E in vacuum is given by:",
+    question: "An isolated charged capacitor (battery disconnected) has stored energy U<sub>0</sub>. When a dielectric slab of constant K is inserted, the new stored energy is:",
     options: [
-      "1/2 &epsilon;<sub>0</sub> E<sup>2</sup>",
-      "&epsilon;<sub>0</sub> E<sup>2</sup>",
-      "1/2 &epsilon;<sub>0</sub><sup>2</sup> E",
-      "E<sup>2</sup> / (2 &epsilon;<sub>0</sub>)"
+      "A) K U<sub>0</sub>",
+      "B) U<sub>0</sub> / K",
+      "C) U<sub>0</sub>",
+      "D) K<sup>2</sup> U<sub>0</sub>"
     ],
-    correctAnswer: "a",
-    explanation: "Energy density u = U / Volume = 1/2 &epsilon;<sub>0</sub> E<sup>2</sup> [in Joules per cubic meter J m<sup>-3</sup>]."
+    correctAnswer: "b",
+    explanation: "With battery disconnected, charge Q remains constant. Stored energy U' = Q<sup>2</sup> / (2 C') = Q<sup>2</sup> / (2 K C<sub>0</sub>) = U<sub>0</sub> / K (decreases K times)."
   },
   {
     id: "c12-phy-1-mcq-22",
-    question: "When two capacitors C<sub>1</sub> and C<sub>2</sub> charged to potentials V<sub>1</sub> and V<sub>2</sub> are connected in parallel, the common potential is:",
+    question: "The electrostatic energy density (energy per unit volume) in a vacuum region with electric field E is given by:",
     options: [
-      "(C<sub>1</sub> V<sub>1</sub> + C<sub>2</sub> V<sub>2</sub>) / (C<sub>1</sub> + C<sub>2</sub>)",
-      "(V<sub>1</sub> + V<sub>2</sub>) / 2",
-      "(C<sub>1</sub> V<sub>1</sub> - C<sub>2</sub> V<sub>2</sub>) / (C<sub>1</sub> + C<sub>2</sub>)",
-      "(C<sub>1</sub> + C<sub>2</sub>) / (V<sub>1</sub> + V<sub>2</sub>)"
+      "A) 1/2 &epsilon;<sub>0</sub> E<sup>2</sup>",
+      "B) &epsilon;<sub>0</sub> E<sup>2</sup>",
+      "C) 1/2 &epsilon;<sub>0</sub><sup>2</sup> E",
+      "D) E<sup>2</sup> / (2 &epsilon;<sub>0</sub>)"
     ],
     correctAnswer: "a",
-    explanation: "By conservation of charge, Common Potential V = Total Charge / Total Capacitance = (C<sub>1</sub>V<sub>1</sub> + C<sub>2</sub>V<sub>2</sub>) / (C<sub>1</sub> + C<sub>2</sub>)."
+    explanation: "Energy density u = U / Volume = 1/2 &epsilon;<sub>0</sub> E<sup>2</sup> [in Joules per cubic meter, J m<sup>-3</sup>]."
   },
   {
     id: "c12-phy-1-mcq-23",
-    question: "The direction of the Electric Dipole Moment vector <b>p</b> is conventionally defined as:",
+    question: "The electric field intensity between two infinite parallel sheets carrying uniform surface charge densities +&sigma; and -&sigma; is:",
     options: [
-      "From negative charge (-q) to positive charge (+q)",
-      "From positive charge (+q) to negative charge (-q)",
-      "Radially outward in all directions",
-      "Perpendicular to the line joining the charges"
+      "A) &sigma; / (2 &epsilon;<sub>0</sub>)",
+      "B) &sigma; / &epsilon;<sub>0</sub>",
+      "C) 2 &sigma; / &epsilon;<sub>0</sub>",
+      "D) Zero"
     ],
-    correctAnswer: "a",
-    explanation: "By physics convention, the dipole moment vector <b>p</b> = q (2<b>a</b>) points along the dipole axis from the negative charge (-q) to the positive charge (+q)."
+    correctAnswer: "b",
+    explanation: "Between oppositely charged sheets, individual fields point in the same direction and add together: E = &sigma;/(2&epsilon;<sub>0</sub>) + &sigma;/(2&epsilon;<sub>0</sub>) = &sigma; / &epsilon;<sub>0</sub>."
   },
   {
     id: "c12-phy-1-mcq-24",
-    question: "Which of the following physical quantities is a true vector quantity?",
+    question: "The work done in rotating an electric dipole of moment p in a uniform field E from stable equilibrium (&theta; = 0&deg;) to unstable equilibrium (&theta; = 180&deg;) is:",
     options: [
-      "Electric Dipole Moment",
-      "Electric Potential",
-      "Electric Flux",
-      "Electrostatic Potential Energy"
+      "A) Zero",
+      "B) p E",
+      "C) -2 p E",
+      "D) 2 p E"
     ],
-    correctAnswer: "a",
-    explanation: "Electric dipole moment <b>p</b> is a vector (directed -q to +q). Potential, flux, and potential energy are all scalar physical quantities."
+    correctAnswer: "d",
+    explanation: "Work done W = p E (cos 0&deg; - cos 180&deg;) = p E [1 - (-1)] = 2 p E."
   },
   {
     id: "c12-phy-1-mcq-25",
-    question: "When a positive point charge +Q is brought near an isolated uncharged conducting sphere, the net charge on the sphere becomes:",
+    question: "A thin metallic spherical shell of radius R carries total charge +Q. What is the electric field at distance r from center where r < R (inside the shell)?",
     options: [
-      "Zero (remains neutral)",
-      "Positive (+Q)",
-      "Negative (-Q)",
-      "Infinite"
+      "A) Strictly Zero",
+      "B) Q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)",
+      "C) Q / (4&pi;&epsilon;<sub>0</sub> R<sup>2</sup>)",
+      "D) Q / (4&pi;&epsilon;<sub>0</sub> r)"
     ],
     correctAnswer: "a",
-    explanation: "The positive charge induces separation of charges (- on near side, + on far side), but no charge is added or removed, so total net charge remains strictly zero."
+    explanation: "All charge resides on the outer boundary. A Gaussian surface of radius r < R encloses zero charge, so E<sub>in</sub> = 0 everywhere inside."
   }
 ];
 
@@ -369,4 +370,4 @@ export const c12Phy1Mcqs = ${JSON.stringify(mcqs, null, 2)};
 `;
 
 fs.writeFileSync(c12Path, finalTsCode, 'utf8');
-console.log("Successfully created c12-phy-1.ts with full Overview, 100 Pure Solutions (Sections A-C), and 25 Interactive MCQs!");
+console.log("Successfully rebuilt c12-phy-1.ts with randomized A/B/C/D MCQs, labels A)-D), 60/40 difficulty split, and 100 solutions!");

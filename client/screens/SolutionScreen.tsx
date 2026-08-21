@@ -404,8 +404,9 @@ function SolutionScreen() {
     const newShuffled: Record<string, string[]> = {};
     chapterData.mcqs.forEach((mcq: any) => {
       const options = [...mcq.options];
-      // ONLY shuffle options if it is NOT a Maths chapter AND NOT a Science chapter
-      if (!isMathSection && !isScienceSection) {
+      const hasLabels = options.some((opt: string) => /^[A-D]\)/i.test(opt.trim()));
+      // ONLY shuffle options if it is NOT a Maths/Science chapter and NOT senior class and NOT already labeled A), B), C), D)
+      if (!isMathSection && !isScienceSection && !isSeniorClass && !hasLabels) {
         for (let i = options.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [options[i], options[j]] = [options[j], options[i]];
@@ -414,7 +415,7 @@ function SolutionScreen() {
       newShuffled[mcq.id] = options;
     });
     setShuffledOptions(newShuffled);
-  }, [chapterData, isMathSection]);
+  }, [chapterData, isMathSection, isScienceSection, isSeniorClass]);
 
   const resetMCQs = useCallback(() => {
     setQuizId((prev) => prev + 1);
@@ -892,11 +893,12 @@ function SolutionScreen() {
                       },
                     )}
 
-                    {/* Dynamic Explanation Panel: Hidden by default, Opens when user submits an answer */}
+                    {/* Dynamic Explanation Panel: Hidden by default and on correct answer; Visible ONLY on wrong answer */}
                     {(() => {
                       const userChoice = mcqAnswers[mcq.id];
                       if (!userChoice) return null;
                       let correctOptionText = mcq.correctAnswer;
+                      let correctLetter = "A)";
                       if (mcq.correctAnswer.length === 1) {
                         const charCode = mcq.correctAnswer
                           .toLowerCase()
@@ -908,48 +910,60 @@ function SolutionScreen() {
                             correctIdx < mcq.options.length
                           ) {
                             correctOptionText = mcq.options[correctIdx];
+                            correctLetter = `${String.fromCharCode(65 + correctIdx)})`;
                           }
                         }
+                      } else {
+                        const match = correctOptionText.match(/^([A-D]\))/i);
+                        if (match) correctLetter = match[1].toUpperCase();
                       }
                       const isUserCorrect = userChoice === correctOptionText;
+                      if (isUserCorrect) return null; // Hidden when user selects correct answer
+
                       return (
                         <View
                           style={{
-                            marginTop: Spacing.sm,
+                            marginTop: Spacing.md,
                             padding: Spacing.md,
-                            backgroundColor: isUserCorrect
-                              ? "rgba(76, 175, 80, 0.1)"
-                              : "rgba(244, 67, 54, 0.1)",
+                            backgroundColor: "rgba(0, 0, 0, 0.35)",
                             borderLeftWidth: 4,
-                            borderLeftColor: isUserCorrect
-                              ? "#4CAF50"
-                              : "#F44336",
+                            borderLeftColor: accentColor,
                             borderRadius: BorderRadius.sm,
                           }}
                         >
                           <ThemedText
                             style={{
-                              color: isUserCorrect ? "#4CAF50" : "#FF5252",
+                              color: accentColor,
                               fontFamily: "NotoSans_700Bold",
-                              fontSize: 14.5,
-                              marginBottom: 4,
+                              fontSize: 15,
+                              marginBottom: 6,
                             }}
                           >
-                            {isUserCorrect
-                              ? "✓ Correct Answer!"
-                              : `✗ Incorrect Option Selected (Correct: ${correctOptionText})`}
+                            Correct Answer is {correctLetter}
                           </ThemedText>
                           {mcq.explanation ? (
-                            <HtmlText
-                              chapterId={chapterId}
-                              html={`<b>Explanation:</b> ${mcq.explanation}`}
-                              style={{
-                                color: "#E2E8F0",
-                                fontFamily: "NotoSans_400Regular",
-                                fontSize: 13.5,
-                                lineHeight: 20,
-                              }}
-                            />
+                            <View style={{ marginTop: 2 }}>
+                              <ThemedText
+                                style={{
+                                  color: "#FFFFFF",
+                                  fontFamily: "NotoSans_700Bold",
+                                  fontSize: 14,
+                                  marginBottom: 3,
+                                }}
+                              >
+                                Explanation:
+                              </ThemedText>
+                              <HtmlText
+                                chapterId={chapterId}
+                                html={mcq.explanation}
+                                style={{
+                                  color: "#FFFFFF",
+                                  fontFamily: "NotoSans_400Regular",
+                                  fontSize: 14,
+                                  lineHeight: 22,
+                                }}
+                              />
+                            </View>
                           ) : null}
                         </View>
                       );
