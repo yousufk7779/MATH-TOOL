@@ -1248,15 +1248,12 @@ function generate100GenuineQuestions() {
     const qNum = idx + 1;
     html += `
   <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${mcq.title}</h3>
-    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
-      ${mcq.q}
-      <div style="margin: 12px 0; text-align: left !important; line-height: 1.8; color: #FFCC80;">
-        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[0]}</div>
-        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[1]}</div>
-        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[2]}</div>
-        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[3]}</div>
-      </div>
+    <h3 style="color: ${themeColor}; margin: 0 0 12px 0; font-size: 16.5px; font-weight: bold; line-height: 1.55;">Q${qNum}: ${mcq.q}</h3>
+    <div style="margin: 12px 0; text-align: left !important; line-height: 1.8; color: #FFCC80;">
+      <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[0]}</div>
+      <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[1]}</div>
+      <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[2]}</div>
+      <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[3]}</div>
     </div>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
       <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Explanation:</b>
@@ -1271,10 +1268,7 @@ function generate100GenuineQuestions() {
     const qNum = idx + 26;
     html += `
   <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${vsa.title}</h3>
-    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
-      ${vsa.q}
-    </div>
+    <h3 style="color: ${themeColor}; margin: 0 0 12px 0; font-size: 16.5px; font-weight: bold; line-height: 1.55;">Q${qNum}: ${vsa.q}</h3>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
       <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Explanation:</b>
       ${vsa.sol}
@@ -1287,10 +1281,7 @@ function generate100GenuineQuestions() {
     const qNum = idx + 56;
     html += `
   <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${sa.title}</h3>
-    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
-      ${sa.q}
-    </div>
+    <h3 style="color: ${themeColor}; margin: 0 0 12px 0; font-size: 16.5px; font-weight: bold; line-height: 1.55;">Q${qNum}: ${sa.q}</h3>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
       <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Step-by-Step Derivation:</b>
       ${sa.sol}
@@ -1303,10 +1294,7 @@ function generate100GenuineQuestions() {
     const qNum = idx + 86;
     html += `
   <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${la.title}</h3>
-    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
-      ${la.q}
-    </div>
+    <h3 style="color: ${themeColor}; margin: 0 0 12px 0; font-size: 16.5px; font-weight: bold; line-height: 1.55;">Q${qNum}: ${la.q}</h3>
     <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
       <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Detailed Derivation & Theoretical Proof:</b>
       ${la.sol}
