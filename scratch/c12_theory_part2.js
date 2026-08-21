@@ -56,7 +56,7 @@ function svg3DCardWrapper(title, caption, svgContent) {
     <div style="color: ${themeColor}; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
       📍 ${title}
     </div>
-    <div style="width: 100%; max-width: 920px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
       ${svgContent}
     </div>
     <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
@@ -158,6 +158,8 @@ function getTheoryPart2(svgs) {
     <li><b>6. Action of Points (Corona Discharge):</b> At sharp edges and pointed tips, radius of curvature r is very small, resulting in huge surface charge density (&sigma; &prop; 1/r) and extremely strong localized electric fields that ionize surrounding air.</li>
   </ul>
 
+  ${svg3DCardWrapper("7. CONDUCTORS IN EQUILIBRIUM & SHIELDING", "Fig 7.1: Conductor in external field showing E<sub>net</sub> = 0 inside & Fig 7.2: Electrostatic Shielding in a hollow metallic cavity (Faraday Cage).", svgs.svg7_conductor_shielding)}
+
   <!-- SECTION 11 -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">11. Dielectrics &amp; Electric Polarization</h2>
 
@@ -179,6 +181,8 @@ function getTheoryPart2(svgs) {
     <li><b>Step 3 (Earthing Plate B):</b> Connect the outer face of plate B to ground (Earth). Free positive electrons flow from Earth into plate B, completely neutralizing the positive charge on the outer face. The negative charge remains tightly bound by plate A's positive field. This bound negative charge drastically lowers the potential of plate A to a new low value V' &lt;&lt; V<sub>1</sub>.</li>
     <li><b>Conclusion:</b> Since C = Q / V', as potential V' drops dramatically for the same charge Q, the capacitance C multiplies enormously! Thus, <b>a capacitor stores large amounts of charge and energy by reducing potential through an earthed secondary plate</b>.</li>
   </ol>
+
+  ${svg3DCardWrapper("8. WORKING PRINCIPLE OF A CAPACITOR", "Fig 8: Step 1 (Isolated Plate A) &rarr; Step 2 (Plate B Induction) &rarr; Step 3 (Earthing Plate B) showing dramatic potential drop and huge capacitance multiplication.", svgs.svg8_capacitor_principle)}
 
   ${stepDerivationBox("Derivation 1: Parallel Plate Capacitor in Vacuum", `
   <b>1. Setup:</b> Consider two parallel conducting plates P<sub>1</sub> and P<sub>2</sub> each of area A separated by small distance d in vacuum, carrying charges +Q and -Q.<br>
@@ -307,7 +311,7 @@ function getTheoryPart2(svgs) {
   This positive energy loss is dissipated as thermal heat in connecting wires and electromagnetic radiation.
   `)}
 
-  ${svg3DCardWrapper("7. CAPACITORS & COMBINATIONS", "Fig 7.1: Parallel plate capacitor with dielectric slab C = &epsilon;<sub>0</sub>A / (d - t + t/K) & Fig 7.2: Series (1/C<sub>s</sub> = &Sigma; 1/C<sub>i</sub>) and Parallel (C<sub>p</sub> = &Sigma; C<sub>i</sub>) circuits.", svgs.svg7_capacitors_combinations)}
+  ${svg3DCardWrapper("9. CAPACITORS & COMBINATIONS", "Fig 9.1: Parallel plate capacitor with dielectric slab C = &epsilon;<sub>0</sub>A / (d - t + t/K) & Fig 9.2: Series (1/C<sub>s</sub> = &Sigma; 1/C<sub>i</sub>) and Parallel (C<sub>p</sub> = &Sigma; C<sub>i</sub>) circuits.", svgs.svg9_capacitors_combinations)}
 
   <!-- MASTER REVISION CHEAT SHEET -->
   <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-top: 35px; margin-bottom: 15px;">

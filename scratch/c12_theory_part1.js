@@ -56,7 +56,7 @@ function svg3DCardWrapper(title, caption, svgContent) {
     <div style="color: ${themeColor}; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
       📍 ${title}
     </div>
-    <div style="width: 100%; max-width: 920px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
       ${svgContent}
     </div>
     <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
@@ -333,7 +333,7 @@ function getTheoryPart1(svgs) {
   This fundamental result is the basis of <b>Electrostatic Shielding</b>.
   `)}
 
-  ${svg3DCardWrapper("5. GAUSS'S THEOREM APPLICATIONS", "Fig 5.1: Infinitely Long Wire E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r) & Fig 5.2: Spherical Shell showing E<sub>out</sub> = Q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>) and E<sub>in</sub> = 0 inside the cavity.", svgs.svg5_gauss_shell)}
+  ${svg3DCardWrapper("5. GAUSS'S THEOREM: 3 CORE APPLICATIONS", "Fig 5.1: Infinitely Long Wire E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r), Fig 5.2: Infinite Plane Sheet E = &sigma; / (2&epsilon;<sub>0</sub>), & Fig 5.3: Spherical Shell E<sub>out</sub> vs E<sub>in</sub> = 0.", svgs.svg5_gauss_all)}
 `;
 }
 
