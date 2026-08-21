@@ -891,6 +891,69 @@ function SolutionScreen() {
                         );
                       },
                     )}
+
+                    {/* Dynamic Explanation Panel: Hidden by default, Opens when user submits an answer */}
+                    {(() => {
+                      const userChoice = mcqAnswers[mcq.id];
+                      if (!userChoice) return null;
+                      let correctOptionText = mcq.correctAnswer;
+                      if (mcq.correctAnswer.length === 1) {
+                        const charCode = mcq.correctAnswer
+                          .toLowerCase()
+                          .charCodeAt(0);
+                        if (charCode >= 97 && charCode <= 122) {
+                          const correctIdx = charCode - 97;
+                          if (
+                            correctIdx >= 0 &&
+                            correctIdx < mcq.options.length
+                          ) {
+                            correctOptionText = mcq.options[correctIdx];
+                          }
+                        }
+                      }
+                      const isUserCorrect = userChoice === correctOptionText;
+                      return (
+                        <View
+                          style={{
+                            marginTop: Spacing.sm,
+                            padding: Spacing.md,
+                            backgroundColor: isUserCorrect
+                              ? "rgba(76, 175, 80, 0.1)"
+                              : "rgba(244, 67, 54, 0.1)",
+                            borderLeftWidth: 4,
+                            borderLeftColor: isUserCorrect
+                              ? "#4CAF50"
+                              : "#F44336",
+                            borderRadius: BorderRadius.sm,
+                          }}
+                        >
+                          <ThemedText
+                            style={{
+                              color: isUserCorrect ? "#4CAF50" : "#FF5252",
+                              fontFamily: "NotoSans_700Bold",
+                              fontSize: 14.5,
+                              marginBottom: 4,
+                            }}
+                          >
+                            {isUserCorrect
+                              ? "✓ Correct Answer!"
+                              : `✗ Incorrect Option Selected (Correct: ${correctOptionText})`}
+                          </ThemedText>
+                          {mcq.explanation ? (
+                            <HtmlText
+                              chapterId={chapterId}
+                              html={`<b>Explanation:</b> ${mcq.explanation}`}
+                              style={{
+                                color: "#E2E8F0",
+                                fontFamily: "NotoSans_400Regular",
+                                fontSize: 13.5,
+                                lineHeight: 20,
+                              }}
+                            />
+                          ) : null}
+                        </View>
+                      );
+                    })()}
                   </Animated.View>
                 );
               })}
@@ -971,7 +1034,7 @@ function SolutionScreen() {
               textStyle={hwTitleStyle}
             />
           )}
-          {!isSeniorClass && (
+          {((chapterData?.mcqs && chapterData.mcqs.length > 0) || !isSeniorClass) && (
             <TabButton
               title={tab3Title}
               isActive={activeSection === "mcq"}

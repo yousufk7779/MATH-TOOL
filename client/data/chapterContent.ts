@@ -108,7 +108,6 @@ import { c9SciBio1 } from "./content/c9-sci-bio-1";
 import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
-import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions } from "./content/c12-phy-1";
 import { c11Phy1HtmlOverview, c11Phy1HtmlSolutions } from "./content/c11-phy-1";
 import { c11Phy2HtmlOverview, c11Phy2HtmlSolutions } from "./content/c11-phy-2";
 import { c11Phy3HtmlOverview, c11Phy3HtmlSolutions } from "./content/c11-phy-3";
@@ -136,6 +135,7 @@ import { c11Zoo1HtmlOverview, c11Zoo1HtmlSolutions } from "./content/c11-zoo-1";
 import { c11Zoo2HtmlOverview, c11Zoo2HtmlSolutions } from "./content/c11-zoo-2";
 import { c11Zoo3HtmlOverview, c11Zoo3HtmlSolutions } from "./content/c11-zoo-3";
 import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions } from "./content/c11-zoo-4";
+import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions, c12Phy1Mcqs } from "./content/c12-phy-1";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1378,7 +1378,7 @@ if (ch12Phy1) {
       questions: [],
     },
   ];
-  delete (ch12Phy1 as any).mcqs;
+  ch12Phy1.mcqs = c12Phy1Mcqs;
 }
 
 export const isChapterAvailable = (chapterId: string): boolean => {
