@@ -108,6 +108,7 @@ import { c9SciBio1 } from "./content/c9-sci-bio-1";
 import { c9SciBio2 } from "./content/c9-sci-bio-2";
 import { c9SciBio3 } from "./content/c9-sci-bio-3";
 import { c9SciBio4 } from "./content/c9-sci-bio-4";
+import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions } from "./content/c12-phy-1";
 import { c11Phy1HtmlOverview, c11Phy1HtmlSolutions } from "./content/c11-phy-1";
 import { c11Phy2HtmlOverview, c11Phy2HtmlSolutions } from "./content/c11-phy-2";
 import { c11Phy3HtmlOverview, c11Phy3HtmlSolutions } from "./content/c11-phy-3";
@@ -1362,6 +1363,16 @@ c11Subjects.forEach(({ prefix, title, maxCh }) => {
     };
   }
 });
+
+// Override Class 12 Physics Chapter 1 with full high-level Reference & Solutions content
+const ch12Phy1 = chapterContents["c12-phy-1"];
+if (ch12Phy1) {
+  ch12Phy1.htmlOverview = c12Phy1HtmlOverview;
+  if (!ch12Phy1.htmlExercises) {
+    ch12Phy1.htmlExercises = {};
+  }
+  ch12Phy1.htmlExercises["ex-c11-qa"] = c12Phy1HtmlSolutions;
+}
 
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
