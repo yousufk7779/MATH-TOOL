@@ -233,7 +233,7 @@ function generateFullOverviewHtml() {
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>2. Quantization of Charge:</b>
-        <span style="color: #FFFFFF;">The principle that net charge of any body is an integral multiple of elementary charge e: q = ±n e (e = 1.6 × 10⁻¹⁹ C).</span>
+        <span style="color: #FFFFFF;">The principle that net charge of any body is an integral multiple of elementary charge e: q = ±n e (e = 1.6 × 10<sup>-19</sup> C).</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>3. Coulomb's Law:</b>
@@ -249,7 +249,7 @@ function generateFullOverviewHtml() {
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>6. Electric Flux (Φ_E):</b>
-        <span style="color: #FFFFFF;">Total number of electric field lines passing normally through a given surface: Φ_E = ∫ E⃗ · dA⃗ [N m² C⁻¹].</span>
+        <span style="color: #FFFFFF;">Total number of electric field lines passing normally through a given surface: Φ_E = ∬ E⃗ · dA⃗ [N m² C⁻¹].</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>7. Gauss's Law / Theorem:</b>
@@ -267,13 +267,13 @@ function generateFullOverviewHtml() {
 
   ${defBox("Electric Charge", "Electric charge is an intrinsic scalar physical property of fundamental subatomic particles of matter (electrons and protons) that causes them to experience an attractive or repulsive electromagnetic force when placed within electric or magnetic fields.")}
 
-  <p>Electrostatics is the study of electric forces, fields, and potentials arising from stationary charges. Historical experiments by Benjamin Franklin demonstrated the existence of two distinct types of electric charges: positive charge (acquired by a glass rod rubbed with silk) and negative charge (acquired by an ebonite rod rubbed with cat's fur). Fundamental particles possess invariant charges: an electron carries $-e = -1.602176634 \times 10^{-19}\text{ C}$, while a proton carries $+e = +1.602176634 \times 10^{-19}\text{ C}$.</p>
+  <p>Electrostatics is the study of electric forces, fields, and potentials arising from stationary charges. Historical experiments by Benjamin Franklin demonstrated the existence of two distinct types of electric charges: positive charge (acquired by a glass rod rubbed with silk) and negative charge (acquired by an ebonite rod rubbed with cat's fur). Fundamental particles possess invariant charges: an electron carries -e = -1.602 × 10<sup>-19</sup> C, while a proton carries +e = +1.602 × 10<sup>-19</sup> C.</p>
 
-  <p><b>Additivity of Charges:</b> Electric charge is a scalar quantity. Total charge of a physical system containing point charges $q_1, q_2, \dots, q_n$ is the algebraic sum of individual charges: $Q_{\text{total}} = \sum_{i=1}^n q_i$.</p>
+  <p><b>Additivity of Charges:</b> Electric charge is a scalar quantity. The total charge of a physical system containing point charges q₁, q₂, ..., qₙ is the algebraic sum of individual charges: Q_total = q₁ + q₂ + ... + qₙ.</p>
 
-  ${defBox("Quantization of Charge", "The Principle of Quantization of Charge asserts that the total electric charge acquired or possessed by any physical body is always an integral multiple of a basic quantum unit of charge e, represented mathematically as q = ±n e, where n ∈ ℤ (n = 1, 2, 3, ...).")}
+  ${defBox("Quantization of Charge", "The Principle of Quantization of Charge asserts that the total electric charge acquired or possessed by any physical body is always an integral multiple of a basic quantum unit of charge e, represented mathematically as q = ±n e, where n is an integer (n = 1, 2, 3, ...).")}
 
-  <p>At macroscopic scales where charges involved are on the order of microcoulombs ($\mu\text{C}$), charge appears continuous because $1\ \mu\text{C}$ contains approximately $6.25 \times 10^{12}$ elementary electronic charges. However, at microscopic atomic scales, quantization is strictly discrete and fundamental.</p>
+  <p>At macroscopic scales where charges involved are on the order of microcoulombs (μC), charge appears continuous because 1 μC contains approximately 6.25 × 10<sup>12</sup> elementary electronic charges. However, at microscopic atomic scales, quantization is strictly discrete and fundamental.</p>
 
   ${eqBox("<b>Quantization Equation: q = ± n e &nbsp;|&nbsp; e = 1.602 × 10<sup>-19</sup> C &nbsp;|&nbsp; 1 C = 6.25 × 10<sup>18</sup> electrons</b>")}
 
@@ -285,8 +285,8 @@ function generateFullOverviewHtml() {
   <p>Electric charge can neither be created nor destroyed in isolation; it can only be transferred from one body to another or generated/annihilated in equal and opposite (+q and -q) pairs. Prominent scientific examples demonstrating charge conservation include:</p>
 
   <ul style="margin-left: 20px; line-height: 1.8;">
-    <li><b>Pair Production &amp; Annihilation:</b> In high-energy nuclear physics, a high-energy gamma-ray photon ($\gamma$) produces an electron ($e^-$) and a positron ($e^+$): $\gamma \rightarrow e^- + e^+$. Net initial charge = $0$, net final charge = $(-1) + (+1) = 0$.</li>
-    <li><b>Radioactive Decay:</b> In the alpha decay of Uranium-238 ($_{92}^{238}\text{U} \rightarrow _{90}^{234}\text{Th} + _{2}^{4}\text{He}$), total atomic number (charge in units of $e$) before decay ($92$) equals total atomic number after decay ($90 + 2 = 92$).</li>
+    <li><b>Pair Production &amp; Annihilation:</b> In high-energy nuclear physics, a high-energy gamma-ray photon (γ) produces an electron (e<sup>-</sup>) and a positron (e<sup>+</sup>): γ → e<sup>-</sup> + e<sup>+</sup>. Net initial charge = 0, net final charge = (-1) + (+1) = 0.</li>
+    <li><b>Radioactive Decay:</b> In the alpha decay of Uranium-238 (<sup>238</sup><sub>92</sub>U → <sup>234</sup><sub>90</sub>Th + <sup>4</sup><sub>2</sub>He), total atomic number (charge in units of e) before decay (92) equals total atomic number after decay (90 + 2 = 92).</li>
   </ul>
 
   <!-- SECTION 3: COULOMB'S LAW -->
@@ -294,14 +294,14 @@ function generateFullOverviewHtml() {
 
   ${defBox("Coulomb's Law", "Coulomb's Law states that the electrostatic magnitude of force between two stationary point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance separating their centers, acting along the line joining them.")}
 
-  <p>In vacuum (or free space), the magnitude of electrostatic force $F$ between two point charges $q_1$ and $q_2$ separated by distance $r$ is:</p>
+  <p>In vacuum (or free space), the magnitude of electrostatic force F between two point charges q₁ and q₂ separated by distance r is:</p>
 
   ${eqBox("<b>F = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("q<sub>1</sub> q<sub>2</sub>", "r<sup>2</sup>") + " &nbsp;|&nbsp; " + frac("1", "4π ε<sub>0</sub>") + " = 8.9875 × 10<sup>9</sup> N m<sup>2</sup> C<sup>-2</sup></b>")}
 
-  <p>Here, $\varepsilon_0 = 8.85418781 \times 10^{-12}\text{ C}^2\text{ N}^{-1}\text{ m}^{-2}$ represents the <b>Absolute Permittivity of Free Space</b>. When the charges are immersed in a dielectric medium of permittivity $\varepsilon$, the force reduces to $F_{\text{med}} = \frac{1}{4\pi\varepsilon} \frac{q_1 q_2}{r^2} = \frac{F_{\text{vac}}}{K}$, where $K = \varepsilon_r = \frac{\varepsilon}{\varepsilon_0}$ is the <b>Dielectric Constant (Relative Permittivity)</b> of the medium.</p>
+  <p>Here, ε₀ = 8.854 × 10<sup>-12</sup> C² N⁻¹ m⁻² represents the <b>Absolute Permittivity of Free Space</b>. When the charges are immersed in a dielectric medium of permittivity ε, the force reduces to F_med = [1/(4πε)] (q₁ q₂ / r²) = F_vac / K, where K = ε_r = ε / ε₀ is the <b>Dielectric Constant (Relative Permittivity)</b> of the medium.</p>
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Vector Form of Coulomb's Law</h3>
-  <p>Let position vectors of charges $q_1$ and $q_2$ be $\mathbf{r}_1$ and $\mathbf{r}_2$. Displacement vector from $q_1$ to $q_2$ is $\mathbf{r}_{12} = \mathbf{r}_2 - \mathbf{r}_1$. The vector force $\mathbf{F}_{12}$ exerted on $q_1$ by $q_2$ is:</p>
+  <p>Let position vectors of charges q₁ and q₂ be r⃗₁ and r⃗₂. Displacement vector from q₁ to q₂ is r⃗₁₂ = r⃗₂ - r⃗₁. The vector force F⃗₁₂ exerted on q₁ by q₂ is:</p>
 
   ${eqBox("<b>F⃗<sub>12</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("q<sub>1</sub> q<sub>2</sub>", "r<sub>12</sub><sup>2</sup>") + " r̂<sub>12</sub> &nbsp; ⇒ &nbsp; F⃗<sub>12</sub> = - F⃗<sub>21</sub></b>")}
 
@@ -314,17 +314,17 @@ function generateFullOverviewHtml() {
 
   ${defBox("Principle of Superposition", "The Principle of Superposition states that when multiple point charges interact, the total electrostatic force exerted on any given charge equals the vector sum of individual forces exerted on it by all other charges taken one at a time, unaffected by the presence of other charges.")}
 
-  <p>For a system of $N$ point charges $q_1, q_2, \dots, q_N$, the total net force $\mathbf{F}_1$ acting on charge $q_1$ is:</p>
+  <p>For a system of N point charges q₁, q₂, ..., qₙ, the total net force F⃗₁ acting on charge q₁ is:</p>
 
-  ${eqBox("<b>F⃗<sub>1</sub> = F⃗<sub>12</sub> + F⃗<sub>13</sub> + \dots + F⃗<sub>1N</sub> = " + frac("q<sub>1</sub>", "4π ε<sub>0</sub>") + " ∑<sub>i=2</sub><sup>N</sup> " + frac("q<sub>i</sub>", "r<sub>1i</sub><sup>2</sup>") + " r̂<sub>1i</sub></b>")}
+  ${eqBox("<b>F⃗<sub>1</sub> = F⃗<sub>12</sub> + F⃗<sub>13</sub> + ... + F⃗<sub>1N</sub> = " + frac("q<sub>1</sub>", "4π ε<sub>0</sub>") + " ∑<sub>i=2</sub><sup>N</sup> " + frac("q<sub>i</sub>", "r<sub>1i</sub><sup>2</sup>") + " r̂<sub>1i</sub></b>")}
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Continuous Charge Distributions</h3>
   <p>When charges are distributed continuously over macroscopic regions, we define three density functions:</p>
 
   <ul style="margin-left: 20px; line-height: 1.8;">
-    <li><b>Linear Charge Density ($\lambda$):</b> Charge per unit length along a line/wire: $\lambda = \frac{dq}{dl}\ [\text{C m}^{-1}]$. Total force $\mathbf{F} = \frac{q_0}{4\pi\varepsilon_0} \int \frac{\lambda dl}{r^2} \hat{r}$.</li>
-    <li><b>Surface Charge Density ($\sigma$):</b> Charge per unit surface area: $\sigma = \frac{dq}{dA}\ [\text{C m}^{-2}]$. Total force $\mathbf{F} = \frac{q_0}{4\pi\varepsilon_0} \int \frac{\sigma dA}{r^2} \hat{r}$.</li>
-    <li><b>Volume Charge Density ($\rho$):</b> Charge per unit volume: $\rho = \frac{dq}{dV}\ [\text{C m}^{-3}]$. Total force $\mathbf{F} = \frac{q_0}{4\pi\varepsilon_0} \int \frac{\rho dV}{r^2} \hat{r}$.</li>
+    <li><b>Linear Charge Density (λ):</b> Charge per unit length along a line/wire: λ = dq / dl [C m⁻¹]. Total force F⃗ = [q₀ / (4πε₀)] ∫ (λ dl / r²) r̂.</li>
+    <li><b>Surface Charge Density (σ):</b> Charge per unit surface area: σ = dq / dA [C m⁻²]. Total force F⃗ = [q₀ / (4πε₀)] ∫ (σ dA / r²) r̂.</li>
+    <li><b>Volume Charge Density (ρ):</b> Charge per unit volume: ρ = dq / dV [C m⁻³]. Total force F⃗ = [q₀ / (4πε₀)] ∫ (ρ dV / r²) r̂.</li>
   </ul>
 
   ${svg3DCardWrapper("Continuous Charge Density Models: Linear (λ), Surface (σ), Volume (ρ)", "3D geometric breakdown of continuous charge distribution functions along wires, surface sheets, and 3D volumes.", svg2_charge_dist)}
@@ -334,14 +334,14 @@ function generateFullOverviewHtml() {
 
   ${defBox("Electric Field Intensity (E⃗)", "Electric Field Intensity at a point in space is defined as the electrostatic force experienced per unit positive infinitesimal test charge q₀ placed at that point without disturbing the source charge configuration: E⃗ = lim(q₀→0) (F⃗ / q₀).")}
 
-  <p>The SI unit of electric field intensity is Newton per Coulomb ($\text{N C}^{-1}$) or Volt per Meter ($\text{V m}^{-1}$). Dimensions are $[M L T^{-3} I^{-1}]$.</p>
+  <p>The SI unit of electric field intensity is Newton per Coulomb (N C⁻¹) or Volt per Meter (V m⁻¹). Dimensions are [M L T⁻³ I⁻¹].</p>
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Electric Field Due to a Single Isolated Point Charge</h3>
-  <p>Consider a source point charge $Q$ situated at the origin $O$. The electric field $\mathbf{E}$ at a distance $r$ due to $Q$ is derived by placing test charge $q_0$ at $P$:</p>
+  <p>Consider a source point charge Q situated at origin O. The electric field E⃗ at distance r due to Q is derived by placing test charge q₀ at P:</p>
 
   ${eqBox("<b>E⃗ = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("Q", "r<sup>2</sup>") + " r̂</b>")}
 
-  <p>The field radiates radially outwards for positive source charges ($Q > 0$) and radially inwards for negative source charges ($Q < 0$), obeying the spherical inverse square law.</p>
+  <p>The field radiates radially outwards for positive source charges (Q > 0) and radially inwards for negative source charges (Q < 0), obeying the spherical inverse square law.</p>
 
   <!-- SECTION 6: ELECTRIC FIELD LINES -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Electric Field Lines &amp; Their Fundamental Properties</h2>
@@ -351,10 +351,10 @@ function generateFullOverviewHtml() {
   <p>Fundamental properties of electric field lines include:</p>
 
   <ol style="margin-left: 20px; line-height: 1.8;">
-    <li>Field lines continuous originate from positive charges and terminate on negative charges.</li>
+    <li>Field lines continuously originate from positive charges and terminate on negative charges.</li>
     <li>Field lines are continuous curves without any breaks in free space.</li>
-    <li><b>Two electric field lines CANNEVER intersect each other.</b> If they intersected, two tangents could be drawn at the point of intersection, indicating two different directions of net electric field at a single point, which is physically impossible.</li>
-    <li>Field lines do NOT form closed loops because electrostatic field is conservative ($\oint \mathbf{E} \cdot d\mathbf{l} = 0$).</li>
+    <li><b>Two electric field lines CAN NEVER intersect each other.</b> If they intersected, two tangents could be drawn at the point of intersection, indicating two different directions of net electric field at a single point, which is physically impossible.</li>
+    <li>Field lines do NOT form closed loops because electrostatic field is conservative (∮ E⃗ · dl⃗ = 0).</li>
     <li>Relative density of field lines represents field magnitude (crowded lines indicate strong field).</li>
   </ol>
 
@@ -364,16 +364,16 @@ function generateFullOverviewHtml() {
   ${defBox("Electric Dipole & Dipole Moment (p⃗)", "An Electric Dipole is a pair of equal and opposite point charges (+q and -q) separated by a small distance 2a. The Electric Dipole Moment vector p⃗ is defined as the product of charge magnitude q and separation vector 2a⃗, directed from negative charge to positive charge: p⃗ = q (2a⃗) [C m].")}
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Derivation: Electric Field at a Point on the Axial Line of a Dipole</h3>
-  <p>Let point $P$ lie at distance $r$ from the dipole center $O$ along the axial line. Field due to $+q$ is $E_+ = \frac{1}{4\pi\varepsilon_0} \frac{q}{(r-a)^2}$, and field due to $-q$ is $E_- = \frac{1}{4\pi\varepsilon_0} \frac{q}{(r+a)^2}$. Net axial field $E_{\text{axial}} = E_+ - E_-$:</p>
+  <p>Let point P lie at distance r from dipole center O along the axial line. Field due to +q is E₊ = [1/(4πε₀)] [q / (r-a)²], and field due to -q is E₋ = [1/(4πε₀)] [q / (r+a)²]. Net axial field E_axial = E₊ - E₋:</p>
 
   ${eqBox("<b>E<sub>axial</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("2 p r", "(r<sup>2</sup> - a<sup>2</sup>)<sup>2</sup>") + " &nbsp; ⇒ &nbsp; (For r >> a): E<sub>axial</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("2 p", "r<sup>3</sup>") + "</b>")}
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(ii) Derivation: Electric Field at a Point on the Equatorial Line of a Dipole</h3>
-  <p>Let point $Q$ lie at distance $r$ from dipole center on the perpendicular bisector (equatorial line). Vertical field components cancel, while horizontal components add up ($E_{\text{eq}} = 2 E_+ \cos\theta$):</p>
+  <p>Let point Q lie at distance r from dipole center on the perpendicular bisector (equatorial line). Vertical field components cancel, while horizontal components add up (E_eq = 2 E₊ cos θ):</p>
 
   ${eqBox("<b>E<sub>eq</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("p", "(r<sup>2</sup> + a<sup>2</sup>)<sup>3/2</sup>") + " &nbsp; ⇒ &nbsp; (For r >> a): E<sub>eq</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("p", "r<sup>3</sup>") + "</b>")}
 
-  <p>Comparing axial and equatorial short dipole fields yields the crucial ratio: <b>$E_{\text{axial}} = 2 E_{\text{eq}}$</b>.</p>
+  <p>Comparing axial and equatorial short dipole fields yields the crucial ratio: <b>E_axial = 2 E_eq</b>.</p>
 
   ${svg3DCardWrapper("Electric Dipole Axial & Equatorial Electric Field Vector Model", "Derivation geometry for dipole field along axial line E_axial = [1/(4πε₀)] (2p/r³) and equatorial line E_eq = [1/(4πε₀)] (p/r³).", svg3_dipole_field)}
 
@@ -382,12 +382,12 @@ function generateFullOverviewHtml() {
 
   ${defBox("Torque on Electric Dipole", "When an electric dipole of moment p⃗ is placed in a uniform electric field E⃗ at angle θ, equal and opposite forces F⃗ = ±q E⃗ act on charges forming a couple that exerts a restoring torque: τ⃗ = p⃗ × E⃗, with magnitude τ = p E sin θ.")}
 
-  <p>Net translatory force on the dipole in a uniform electric field is zero ($\mathbf{F}_{\text{net}} = 0$), so the dipole undergoes pure rotation.</p>
+  <p>Net translatory force on the dipole in a uniform electric field is zero (F_net = 0), so the dipole undergoes pure rotation.</p>
 
   <ul style="margin-left: 20px; line-height: 1.8;">
-    <li><b>Stable Equilibrium ($\theta = 0^\circ$):</b> Dipole aligned parallel to field ($\tau = 0$, Potential Energy $U = -p E$).</li>
-    <li><b>Unstable Equilibrium ($\theta = 180^\circ$):</b> Dipole aligned anti-parallel to field ($\tau = 0$, Potential Energy $U = +p E$).</li>
-    <li><b>Maximum Torque ($\theta = 90^\circ$):</b> Dipole perpendicular to field ($\tau_{\text{max}} = p E$).</li>
+    <li><b>Stable Equilibrium (θ = 0°):</b> Dipole aligned parallel to field (τ = 0, Potential Energy U = -p E).</li>
+    <li><b>Unstable Equilibrium (θ = 180°):</b> Dipole aligned anti-parallel to field (τ = 0, Potential Energy U = +p E).</li>
+    <li><b>Maximum Torque (θ = 90°):</b> Dipole perpendicular to field (τ_max = p E).</li>
   </ul>
 
   <!-- SECTION 9: ELECTRIC FLUX -->
@@ -395,12 +395,12 @@ function generateFullOverviewHtml() {
 
   ${defBox("Electric Flux (Φ_E)", "Electric Flux Φ_E through a surface is a scalar measure of the total number of electric field lines crossing normally through that surface area: Φ_E = ∬ E⃗ · dA⃗ = ∬ E dA cos θ [N m² C⁻¹].")}
 
-  <p>Flux is positive when field lines exit a closed surface ($\theta < 90^\circ$) and negative when field lines enter a closed surface ($\theta > 90^\circ$).</p>
+  <p>Flux is positive when field lines exit a closed surface (θ < 90°) and negative when field lines enter a closed surface (θ > 90°).</p>
 
   <!-- SECTION 10: GAUSS'S THEOREM -->
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">10. Statement of Gauss's Theorem</h2>
 
-  ${defBox("Gauss's Theorem / Law", "Gauss's Theorem states that the total enclosed electric flux Φ_E through any closed three-dimensional Gaussian surface in free space equals 1/ε₀ times the net algebraic electric charge q_enclosed enclosed inside that surface: ∮ E⃗ · dA⃗ = (q_enclosed / ε₀).")}
+  ${defBox("Gauss's Theorem / Law", "Gauss's Theorem states that the total enclosed electric flux Φ_E through any closed three-dimensional Gaussian surface in free space equals 1/ε₀ times the net algebraic electric charge q_enclosed enclosed inside that surface: ∮ E⃗ · dA⃗ = q_enclosed / ε₀.")}
 
   <p>Gauss's law is valid for closed surfaces of any arbitrary shape and size. However, it is computationally most powerful when applied to highly symmetric charge distributions (spherical, cylindrical, or planar symmetry).</p>
 
@@ -408,21 +408,21 @@ function generateFullOverviewHtml() {
   <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">11. Applications of Gauss's Theorem</h2>
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(i) Electric Field Due to an Infinitely Long Straight Uniformly Charged Wire</h3>
-  <p>Consider an infinitely long wire of linear charge density $\lambda$. Construct a co-axial cylindrical Gaussian surface of radius $r$ and length $l$. Flux through circular caps is zero. Flux through curved surface $\Phi_E = E (2\pi r l) = \frac{\lambda l}{\varepsilon_0}$:</p>
+  <p>Consider an infinitely long wire of linear charge density λ. Construct a co-axial cylindrical Gaussian surface of radius r and length l. Flux through circular caps is zero. Flux through curved surface Φ_E = E (2π r l) = λ l / ε₀:</p>
 
   ${eqBox("<b>E = " + frac("λ", "2π ε<sub>0</sub> r") + " &nbsp; ⇒ &nbsp; E ∝ " + frac("1", "r") + "</b>")}
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(ii) Electric Field Due to a Uniformly Charged Infinite Plane Sheet</h3>
-  <p>Consider an infinite plane sheet of surface charge density $\sigma$. Construct a cylindrical pillbox Gaussian surface of cross-sectional area $A$ piercing the sheet. Total flux through two end caps $\Phi_E = 2 E A = \frac{\sigma A}{\varepsilon_0}$:</p>
+  <p>Consider an infinite plane sheet of surface charge density σ. Construct a cylindrical pillbox Gaussian surface of cross-sectional area A piercing the sheet. Total flux through two end caps Φ_E = 2 E A = σ A / ε₀:</p>
 
   ${eqBox("<b>E = " + frac("σ", "2 ε<sub>0</sub>") + " &nbsp; (Uniform & Distance-Independent)</b>")}
 
   <h3 style="color: ${themeColor}; margin-top: 18px;">(iii) Electric Field Due to a Uniformly Charged Thin Spherical Shell</h3>
-  <p>Consider a thin spherical shell of radius $R$ carrying total charge $Q$. Construct a concentric spherical Gaussian surface of radius $r$:</p>
+  <p>Consider a thin spherical shell of radius R carrying total charge Q. Construct a concentric spherical Gaussian surface of radius r:</p>
 
   ${eqBox("<b>1. Outside Shell (r ≥ R): E<sub>out</sub> = " + frac("1", "4π ε<sub>0</sub>") + " " + frac("Q", "r<sup>2</sup>") + " &nbsp;|&nbsp; 2. Inside Shell (r < R): E<sub>in</sub> = 0</b>")}
 
-  <p>Inside the conductor, no charge is enclosed ($q_{\text{enclosed}} = 0$), so the electric field vanishes completely ($E_{\text{in}} = 0$). This provides the physical mechanism for <b>Electrostatic Shielding</b>.</p>
+  <p>Inside the conductor, no charge is enclosed (q_enclosed = 0), so the electric field vanishes completely (E_in = 0). This provides the physical mechanism for <b>Electrostatic Shielding</b>.</p>
 
   ${svg3DCardWrapper("Gauss's Law Applications: Wire, Sheet & Thin Spherical Shell", "Gaussian surfaces & derived field expressions for infinite wire E=λ/(2πε₀r), infinite sheet E=σ/(2ε₀), and spherical shell E_in=0.", svg4_gauss_apps)}
 
@@ -438,7 +438,7 @@ function generateFullOverviewHtml() {
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Dipole Fields &amp; Torque:</b>
-        <span style="color: #FFFFFF; line-height: 1.65; display: block;">E_axial = [1/(4πε₀)] (2p/r³)<br>E_eq = [1/(4πε₀)] (p/r³)<br>τ⃗ = p⃗ × E⃗ (τ = p E sinθ)</span>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">E_axial = [1/(4πε₀)] (2p/r³)<br>E_eq = [1/(4πε₀)] (p/r³)<br>τ⃗ = p⃗ × E⃗ (τ = p E sin θ)</span>
       </div>
       <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
         <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Gauss Law Applications:</b>
@@ -574,4 +574,4 @@ export const c12Phy1HtmlSolutions = ${JSON.stringify(solutionsHtml)};
 const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c12-phy-1.ts');
 fs.writeFileSync(outputPath, tsContent, 'utf8');
 
-console.log("Successfully created c12-phy-1.ts with Pradeep's level deep prose & 100 questions!");
+console.log("Successfully created c12-phy-1.ts with 100% human-readable text!");

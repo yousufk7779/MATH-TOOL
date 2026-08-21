@@ -1368,6 +1368,8 @@ c11Subjects.forEach(({ prefix, title, maxCh }) => {
 const ch12Phy1 = chapterContents["c12-phy-1"];
 if (ch12Phy1) {
   ch12Phy1.htmlOverview = c12Phy1HtmlOverview;
+  delete (ch12Phy1 as any).exercises;
+  delete (ch12Phy1 as any).mcqs;
   if (!ch12Phy1.htmlExercises) {
     ch12Phy1.htmlExercises = {};
   }
