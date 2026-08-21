@@ -1,0 +1,1335 @@
+const fs = require('fs');
+const path = require('path');
+
+const themeColor = "#FF512F";
+
+function frac(num, den) {
+  return `<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;">
+    <span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">${num}</span>
+    <span style="padding: 0 2px; display: inline-block;">${den}</span>
+  </span>`;
+}
+
+function eqBox(eqText) {
+  return `<div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255, 81, 47, 0.35); border-radius: 8px; padding: 12px 16px; text-align: center; margin: 16px 0; font-size: 16.5px; color: #FFFFFF; white-space: nowrap; overflow-x: auto;">${eqText}</div>`;
+}
+
+function defBox(title, defContent) {
+  return `
+  <div style="background: rgba(255, 81, 47, 0.08); border-left: 4.5px solid ${themeColor}; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: ${themeColor}; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: ${title}</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">${defContent}</div>
+  </div>`;
+}
+
+function svg3DCardWrapper(title, caption, svgContent) {
+  return `
+  <div style="background: #0B0F19; border: 1.8px solid ${themeColor}; border-radius: 16px; padding: 20px; margin: 28px 0; box-shadow: 0 10px 30px rgba(255, 81, 47, 0.25);">
+    <div style="color: ${themeColor}; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
+      📍 ${title}
+    </div>
+    <div style="width: 100%; max-width: 920px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+      ${svgContent}
+    </div>
+    <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
+      💡 ${caption}
+    </div>
+  </div>`;
+}
+
+// 5 Complete Valid XML SVGs
+const svg1_coulomb = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="qRedGlow1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <radialGradient id="qCyanGlow1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </radialGradient>
+    <radialGradient id="qGoldGlow1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#EAB308"/>
+    </radialGradient>
+    <marker id="mRed1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="mCyan1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGreen1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#76FF03"/>
+    </marker>
+    <marker id="mYellow1" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">1. COULOMB'S LAW (VECTOR FORM)</text>
+
+    <circle cx="65" cy="400" r="5" fill="#94A3B8"/>
+    <text x="45" y="425" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">O (Origin)</text>
+
+    <circle cx="170" cy="140" r="22" fill="url(#qRedGlow1)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="170" y="146" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">q1</text>
+
+    <circle cx="340" cy="270" r="22" fill="url(#qCyanGlow1)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="340" y="276" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">q2</text>
+
+    <line x1="65" y1="400" x2="155" y2="158" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#mYellow1)"/>
+    <text x="90" y="270" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">r1</text>
+
+    <line x1="65" y1="400" x2="322" y2="282" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#mYellow1)"/>
+    <text x="200" y="365" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">r2</text>
+
+    <line x1="170" y1="140" x2="322" y2="256" stroke="#00E5FF" stroke-width="3" marker-end="url(#mCyan1)"/>
+    <text x="270" y="195" fill="#00E5FF" font-family="sans-serif" font-size="15.5" font-weight="bold">r21 = r2 - r1</text>
+
+    <line x1="170" y1="140" x2="90" y2="80" stroke="#FF512F" stroke-width="3" marker-end="url(#mRed1)"/>
+    <text x="140" y="75" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">F12 = -F21</text>
+
+    <line x1="340" y1="270" x2="415" y2="330" stroke="#FF512F" stroke-width="3" marker-end="url(#mRed1)"/>
+    <text x="365" y="355" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">F21</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 1.1: Coulomb's Law in Vector Form</text>
+  </g>
+
+  <line x1="460" y1="25" x2="460" y2="495" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <g transform="translate(470, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">SUPERPOSITION PRINCIPLE</text>
+
+    <circle cx="180" cy="250" r="22" fill="url(#qGoldGlow1)" stroke="#FFFFFF" stroke-width="1.8"/>
+    <text x="180" y="256" text-anchor="middle" fill="#0B0F19" font-family="sans-serif" font-size="15" font-weight="bold">+q0</text>
+
+    <circle cx="150" cy="90" r="18" fill="url(#qRedGlow1)"/>
+    <text x="150" y="95" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">q1</text>
+
+    <circle cx="65" cy="380" r="18" fill="url(#qCyanGlow1)"/>
+    <text x="65" y="385" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">q2</text>
+
+    <circle cx="340" cy="380" r="18" fill="url(#qCyanGlow1)"/>
+    <text x="340" y="385" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">q3</text>
+
+    <line x1="180" y1="250" x2="200" y2="350" stroke="#76FF03" stroke-width="2.5" marker-end="url(#mGreen1)"/>
+    <text x="160" y="335" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">F1</text>
+
+    <line x1="180" y1="250" x2="270" y2="150" stroke="#76FF03" stroke-width="2.5" marker-end="url(#mGreen1)"/>
+    <text x="220" y="180" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">F2</text>
+
+    <line x1="180" y1="250" x2="90" y2="160" stroke="#76FF03" stroke-width="2.5" marker-end="url(#mGreen1)"/>
+    <text x="110" y="200" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">F3</text>
+
+    <line x1="270" y1="150" x2="350" y2="150" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="4,4"/>
+    <line x1="180" y1="250" x2="350" y2="150" stroke="#FF512F" stroke-width="3.5" marker-end="url(#mRed1)"/>
+    <text x="315" y="125" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">F_net = Sum Fi</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 1.2: Superposition Principle</text>
+  </g>
+</svg>`;
+
+const svg2_field_lines = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="qRedGlow2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <radialGradient id="qCyanGlow2" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </radialGradient>
+    <marker id="mRed2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="mCyan2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGold2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="890" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="445" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="18" font-weight="bold">2. ELECTRIC FIELD PATTERNS &amp; FIELD LINES</text>
+
+    <!-- Sub 1: Isolated +q -->
+    <g transform="translate(15, 55)">
+      <rect x="0" y="0" width="200" height="410" rx="10" fill="rgba(255,81,47,0.06)" stroke="#FF512F" stroke-width="1.2"/>
+      <text x="100" y="32" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">Isolated +q</text>
+      <circle cx="100" cy="200" r="22" fill="url(#qRedGlow2)" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="100" y="207" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="20" font-weight="bold">+</text>
+
+      <line x1="100" y1="178" x2="100" y2="85" stroke="#FF512F" stroke-width="2.5" marker-end="url(#mRed2)"/>
+      <line x1="100" y1="222" x2="100" y2="315" stroke="#FF512F" stroke-width="2.5" marker-end="url(#mRed2)"/>
+      <line x1="78" y1="200" x2="15" y2="200" stroke="#FF512F" stroke-width="2.5" marker-end="url(#mRed2)"/>
+      <line x1="122" y1="200" x2="185" y2="200" stroke="#FF512F" stroke-width="2.5" marker-end="url(#mRed2)"/>
+
+      <line x1="84" y1="184" x2="30" y2="130" stroke="#FF512F" stroke-width="2" marker-end="url(#mRed2)"/>
+      <line x1="116" y1="216" x2="170" y2="270" stroke="#FF512F" stroke-width="2" marker-end="url(#mRed2)"/>
+      <line x1="116" y1="184" x2="170" y2="130" stroke="#FF512F" stroke-width="2" marker-end="url(#mRed2)"/>
+      <line x1="84" y1="216" x2="30" y2="270" stroke="#FF512F" stroke-width="2" marker-end="url(#mRed2)"/>
+
+      <text x="100" y="375" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Radially Outward</text>
+    </g>
+
+    <!-- Sub 2: Isolated -q -->
+    <g transform="translate(230, 55)">
+      <rect x="0" y="0" width="200" height="410" rx="10" fill="rgba(0,229,255,0.06)" stroke="#00E5FF" stroke-width="1.2"/>
+      <text x="100" y="32" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">Isolated -q</text>
+      <circle cx="100" cy="200" r="22" fill="url(#qCyanGlow2)" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="100" y="207" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="24" font-weight="bold">-</text>
+
+      <line x1="100" y1="85" x2="100" y2="178" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="100" y1="315" x2="100" y2="222" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="15" y1="200" x2="78" y2="200" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="185" y1="200" x2="122" y2="200" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+
+      <line x1="30" y1="130" x2="84" y2="184" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="170" y1="270" x2="116" y2="216" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="170" y1="130" x2="116" y2="184" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+      <line x1="30" y1="270" x2="84" y2="216" stroke="#00E5FF" stroke-width="2.5" marker-end="url(#mCyan2)"/>
+
+      <text x="100" y="375" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">Radially Inward</text>
+    </g>
+
+    <!-- Sub 3: Electric Dipole -->
+    <g transform="translate(445, 55)">
+      <rect x="0" y="0" width="210" height="410" rx="10" fill="rgba(255,215,0,0.06)" stroke="#FFD700" stroke-width="1.2"/>
+      <text x="105" y="32" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">Electric Dipole</text>
+      <circle cx="55" cy="200" r="18" fill="url(#qRedGlow2)" stroke="#FFFFFF" stroke-width="1.2"/>
+      <text x="55" y="206" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">+</text>
+
+      <circle cx="155" cy="200" r="18" fill="url(#qCyanGlow2)" stroke="#FFFFFF" stroke-width="1.2"/>
+      <text x="155" y="206" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">-</text>
+
+      <line x1="73" y1="200" x2="137" y2="200" stroke="#FFD700" stroke-width="2.5" marker-end="url(#mGold2)"/>
+      <path d="M 55 182 Q 105 125 155 182" fill="none" stroke="#FFD700" stroke-width="2.2"/>
+      <path d="M 55 218 Q 105 275 155 218" fill="none" stroke="#FFD700" stroke-width="2.2"/>
+      <path d="M 55 182 Q 105 75 155 182" fill="none" stroke="#FFD700" stroke-width="1.8"/>
+      <path d="M 55 218 Q 105 325 155 218" fill="none" stroke="#FFD700" stroke-width="1.8"/>
+
+      <text x="105" y="375" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14.5" font-weight="bold">Curved + to -</text>
+    </g>
+
+    <!-- Sub 4: Like Charges -->
+    <g transform="translate(670, 55)">
+      <rect x="0" y="0" width="205" height="410" rx="10" fill="rgba(118,255,3,0.06)" stroke="#76FF03" stroke-width="1.2"/>
+      <text x="102" y="32" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Like Charges</text>
+      <circle cx="50" cy="200" r="18" fill="url(#qRedGlow2)" stroke="#FFFFFF" stroke-width="1.2"/>
+      <text x="50" y="206" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">+</text>
+
+      <circle cx="155" cy="200" r="18" fill="url(#qRedGlow2)" stroke="#FFFFFF" stroke-width="1.2"/>
+      <text x="155" y="206" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">+</text>
+
+      <path d="M 50 182 Q 80 140 85 85" fill="none" stroke="#76FF03" stroke-width="2"/>
+      <path d="M 50 218 Q 80 260 85 315" fill="none" stroke="#76FF03" stroke-width="2"/>
+      <path d="M 155 182 Q 125 140 120 85" fill="none" stroke="#76FF03" stroke-width="2"/>
+      <path d="M 155 218 Q 125 260 120 315" fill="none" stroke="#76FF03" stroke-width="2"/>
+
+      <circle cx="102" cy="200" r="6" fill="#76FF03"/>
+      <text x="102" y="185" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">N</text>
+      <text x="102" y="375" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="14.5" font-weight="bold">Neutral Point (E = 0)</text>
+    </g>
+  </g>
+</svg>`;
+
+const svg3_dipole = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="qRedGlow3" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <radialGradient id="qCyanGlow3" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </radialGradient>
+    <marker id="mRed3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="mCyan3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGreen3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#76FF03"/>
+    </marker>
+    <marker id="mGold3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">3. ELECTRIC DIPOLE (AXIAL POINT)</text>
+
+    <line x1="20" y1="230" x2="410" y2="230" stroke="#475569" stroke-width="2" stroke-dasharray="5,5"/>
+
+    <circle cx="85" cy="230" r="18" fill="url(#qCyanGlow3)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="85" y="236" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">-q</text>
+
+    <circle cx="195" cy="230" r="18" fill="url(#qRedGlow3)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="195" y="236" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">+q</text>
+
+    <circle cx="140" cy="230" r="4.5" fill="#FFD700"/>
+    <text x="140" y="255" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+
+    <line x1="85" y1="275" x2="195" y2="275" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="85" y1="270" x2="85" y2="280" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="195" y1="270" x2="195" y2="280" stroke="#94A3B8" stroke-width="2"/>
+    <text x="140" y="295" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="14.5" font-weight="bold">2a</text>
+
+    <line x1="95" y1="175" x2="185" y2="175" stroke="#FFD700" stroke-width="3" marker-end="url(#mGold3)"/>
+    <text x="140" y="165" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">p (vector)</text>
+
+    <line x1="140" y1="330" x2="360" y2="330" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="250" y="355" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">Distance r</text>
+
+    <circle cx="360" cy="230" r="7" fill="#76FF03"/>
+    <text x="360" y="210" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">P</text>
+
+    <line x1="360" y1="230" x2="420" y2="230" stroke="#76FF03" stroke-width="3.5" marker-end="url(#mGreen3)"/>
+    <text x="360" y="180" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">E_axial || p</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 3.1: Field at Axial Point (r &gt;&gt; a)</text>
+  </g>
+
+  <line x1="460" y1="25" x2="460" y2="495" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <g transform="translate(470, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">EQUATORIAL POINT RESOLUTION</text>
+
+    <line x1="60" y1="360" x2="240" y2="360" stroke="#475569" stroke-width="2"/>
+    <circle cx="80" cy="360" r="16" fill="url(#qCyanGlow3)"/>
+    <text x="80" y="365" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">-q</text>
+
+    <circle cx="220" cy="360" r="16" fill="url(#qRedGlow3)"/>
+    <text x="220" y="365" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+q</text>
+
+    <line x1="95" y1="330" x2="205" y2="330" stroke="#FFD700" stroke-width="2.5" marker-end="url(#mGold3)"/>
+    <text x="150" y="320" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14.5" font-weight="bold">p</text>
+
+    <g transform="translate(180, 200)">
+      <line x1="0" y1="0" x2="-80" y2="-80" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#mCyan3)"/>
+      <text x="-95" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">q cos &#952;</text>
+
+      <line x1="0" y1="0" x2="80" y2="-80" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#mCyan3)"/>
+      <text x="50" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">E_equal</text>
+
+      <path d="M 0 -30 A 30 30 0 0 0 -22 -22" fill="none" stroke="#FFD700" stroke-width="2"/>
+      <text x="-15" y="-40" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">&#952;</text>
+
+      <path d="M 0 -30 A 30 30 0 0 1 22 -22" fill="none" stroke="#FFD700" stroke-width="2"/>
+      <text x="15" y="-40" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">&#952;</text>
+
+      <line x1="0" y1="0" x2="-120" y2="0" stroke="#FF512F" stroke-width="3.8" marker-end="url(#mRed3)"/>
+      <text x="-60" y="25" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="15.5" font-weight="bold">q cos &#952;</text>
+
+      <circle cx="0" cy="0" r="5" fill="#76FF03"/>
+      <text x="15" y="15" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+    </g>
+
+    <rect x="230" y="380" width="180" height="40" rx="8" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.5"/>
+    <text x="320" y="406" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="15.5" font-weight="bold">E_equatorial || -p</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 3.2: Field at Equatorial Point (r &gt;&gt; a)</text>
+  </g>
+</svg>`;
+
+const svg4_torque_flux = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="qRedGlow4" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <radialGradient id="qCyanGlow4" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </radialGradient>
+    <marker id="mRed4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="mCyan4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGreen4" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#76FF03"/>
+    </marker>
+  </defs>
+
+  <!-- Left Half: Fig 4.1 Torque on a Dipole in Uniform Field -->
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">4. TORQUE ON A DIPOLE</text>
+
+    <line x1="30" y1="100" x2="400" y2="100" stroke="#00E5FF" stroke-width="2" marker-end="url(#mCyan4)"/>
+    <line x1="30" y1="170" x2="400" y2="170" stroke="#00E5FF" stroke-width="2" marker-end="url(#mCyan4)"/>
+    <line x1="30" y1="240" x2="400" y2="240" stroke="#00E5FF" stroke-width="2" marker-end="url(#mCyan4)"/>
+    <line x1="30" y1="310" x2="400" y2="310" stroke="#00E5FF" stroke-width="2" marker-end="url(#mCyan4)"/>
+    <line x1="30" y1="380" x2="400" y2="380" stroke="#00E5FF" stroke-width="2" marker-end="url(#mCyan4)"/>
+    <text x="385" y="85" fill="#00E5FF" font-family="sans-serif" font-size="18" font-weight="bold">E (Field)</text>
+
+    <line x1="120" y1="320" x2="280" y2="160" stroke="#FFD700" stroke-width="3.5"/>
+
+    <circle cx="120" cy="320" r="18" fill="url(#qCyanGlow4)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="120" y="326" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">-q</text>
+
+    <circle cx="280" cy="160" r="18" fill="url(#qRedGlow4)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="280" y="166" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold">+q</text>
+
+    <path d="M 170 320 A 50 50 0 0 0 160 280" fill="none" stroke="#FFD700" stroke-width="2"/>
+    <text x="180" y="305" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">&#952;</text>
+
+    <line x1="280" y1="160" x2="365" y2="160" stroke="#76FF03" stroke-width="3" marker-end="url(#mGreen4)"/>
+    <text x="330" y="145" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">+qE</text>
+
+    <line x1="120" y1="320" x2="35" y2="320" stroke="#76FF03" stroke-width="3" marker-end="url(#mGreen4)"/>
+    <text x="45" y="345" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">-qE</text>
+
+    <line x1="280" y1="160" x2="280" y2="320" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4"/>
+    <line x1="120" y1="320" x2="280" y2="320" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4"/>
+    <text x="295" y="245" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">2a sin &#952;</text>
+
+    <text x="217" y="420" text-anchor="middle" fill="#FF512F" font-family="monospace" font-size="16.5" font-weight="bold">&#964; = p &times; E | &#964; = p E sin &#952;</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 4.1: Torque on a Dipole in Uniform Field</text>
+  </g>
+
+  <line x1="460" y1="25" x2="460" y2="495" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <!-- Right Half: Fig 4.2 Electric Flux -->
+  <g transform="translate(470, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">ELECTRIC FLUX (Phi_E)</text>
+
+    <path d="M 50 160 Q 200 190 380 120" fill="none" stroke="#00E5FF" stroke-width="2.2" marker-end="url(#mCyan4)"/>
+    <path d="M 50 210 Q 200 230 380 200" fill="none" stroke="#00E5FF" stroke-width="2.2" marker-end="url(#mCyan4)"/>
+    <path d="M 50 260 Q 200 260 380 270" fill="none" stroke="#00E5FF" stroke-width="2.2" marker-end="url(#mCyan4)"/>
+    <path d="M 50 310 Q 200 290 380 340" fill="none" stroke="#00E5FF" stroke-width="2.2" marker-end="url(#mCyan4)"/>
+    <text x="390" y="115" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">E (Lines)</text>
+
+    <polygon points="170,170 250,140 275,300 195,330" fill="rgba(255,81,47,0.35)" stroke="#FF512F" stroke-width="2.5"/>
+
+    <line x1="222" y1="235" x2="315" y2="185" stroke="#76FF03" stroke-width="3.5" marker-end="url(#mGreen4)"/>
+    <text x="325" y="180" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">dA</text>
+
+    <path d="M 265 210 A 25 25 0 0 0 275 228" fill="none" stroke="#FFD700" stroke-width="2.2"/>
+    <text x="285" y="235" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">&#952;</text>
+
+    <rect x="40" y="380" width="355" height="50" rx="8" fill="rgba(255,215,0,0.12)" stroke="#FFD700" stroke-width="1.5"/>
+    <text x="217" y="412" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">Formula: &#934;_E = &#8747; E &middot; dA = &#8747; E dA cos &#952;</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 4.2: Electric Flux</text>
+  </g>
+</svg>`;
+
+const svg5_gauss_shell = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="qRedGlow5" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <marker id="mRed5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FF512F"/>
+    </marker>
+    <marker id="mCyan5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGreen5" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#76FF03"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">5. GAUSS'S THEOREM (LONG WIRE)</text>
+
+    <line x1="40" y1="210" x2="395" y2="210" stroke="#FF512F" stroke-width="6"/>
+    <circle cx="80" cy="210" r="3.5" fill="#FFFFFF"/>
+    <circle cx="160" cy="210" r="3.5" fill="#FFFFFF"/>
+    <circle cx="240" cy="210" r="3.5" fill="#FFFFFF"/>
+    <circle cx="320" cy="210" r="3.5" fill="#FFFFFF"/>
+    <text x="390" y="235" fill="#FF512F" font-family="sans-serif" font-size="16" font-weight="bold">+&#955;</text>
+
+    <ellipse cx="100" cy="210" rx="20" ry="60" fill="none" stroke="#00E5FF" stroke-width="2" stroke-dasharray="4,4"/>
+    <ellipse cx="320" cy="210" rx="20" ry="60" fill="none" stroke="#00E5FF" stroke-width="2"/>
+    <line x1="100" y1="150" x2="320" y2="150" stroke="#00E5FF" stroke-width="2"/>
+    <line x1="100" y1="270" x2="320" y2="270" stroke="#00E5FF" stroke-width="2"/>
+
+    <line x1="100" y1="300" x2="320" y2="300" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="100" y1="295" x2="100" y2="305" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="320" y1="295" x2="320" y2="305" stroke="#94A3B8" stroke-width="2"/>
+    <text x="210" y="325" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="15" font-weight="bold">Length L</text>
+
+    <line x1="100" y1="210" x2="100" y2="150" stroke="#FFD700" stroke-width="2"/>
+    <text x="80" y="185" fill="#FFD700" font-family="sans-serif" font-size="14.5" font-weight="bold">r</text>
+
+    <line x1="210" y1="150" x2="210" y2="85" stroke="#76FF03" stroke-width="3" marker-end="url(#mGreen5)"/>
+    <text x="210" y="70" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">E || dA</text>
+
+    <text x="217" y="375" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14.5" font-weight="bold">E || dA only on curved surface</text>
+    <text x="217" y="410" text-anchor="middle" fill="#76FF03" font-family="monospace" font-size="17" font-weight="bold">E = &#955; / (2&#960;&#949;0 r)</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 5.1: Long Wire (&#955;)</text>
+  </g>
+
+  <line x1="460" y1="25" x2="460" y2="495" stroke="#334155" stroke-width="2" stroke-dasharray="6,6"/>
+
+  <g transform="translate(470, 15)">
+    <rect x="0" y="0" width="435" height="490" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF512F" stroke-width="1.8"/>
+    <text x="217" y="34" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="16.5" font-weight="bold">SPHERICAL SHELL (r &gt; R &amp; r &lt; R)</text>
+
+    <circle cx="217" cy="205" r="95" fill="none" stroke="#FF512F" stroke-width="4"/>
+    <circle cx="217" cy="205" r="85" fill="rgba(255,81,47,0.06)" stroke="#FF512F" stroke-width="1.5"/>
+
+    <text x="217" y="118" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+++++ Charged Shell (Q) +++++</text>
+
+    <line x1="217" y1="205" x2="285" y2="145" stroke="#FFD700" stroke-width="2"/>
+    <text x="260" y="185" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">R</text>
+
+    <circle cx="217" cy="205" r="50" fill="rgba(118,255,3,0.08)" stroke="#76FF03" stroke-width="1.8" stroke-dasharray="4,4"/>
+    <line x1="217" y1="205" x2="180" y2="170" stroke="#76FF03" stroke-width="1.8"/>
+    <text x="190" y="195" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">r</text>
+    <text x="217" y="210" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">E_in = 0</text>
+    <text x="217" y="230" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13">(q_enclosed = 0)</text>
+
+    <circle cx="217" cy="205" r="130" fill="none" stroke="#00E5FF" stroke-width="1.8" stroke-dasharray="5,5"/>
+
+    <text x="217" y="375" text-anchor="middle" fill="#00E5FF" font-family="monospace" font-size="16" font-weight="bold">E_out = [ 1 / (4&#960;&#949;0) ] (Q / r&#178;)</text>
+    <text x="217" y="410" text-anchor="middle" fill="#76FF03" font-family="monospace" font-size="16" font-weight="bold">E_in = 0 (Inside Shell)</text>
+
+    <rect x="25" y="445" width="385" height="34" rx="6" fill="rgba(255,81,47,0.12)" stroke="#FF512F" stroke-width="1"/>
+    <text x="217" y="468" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14.5" font-weight="bold">Fig 5.2: Spherical Shell (r &gt; R and r &lt; R)</text>
+  </g>
+</svg>`;
+
+function generateFullOverviewHtml() {
+  return `
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+
+  <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
+  <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Essential Core Terms for Unit I: Electric Charges and Fields</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>1. Electric Charge (q):</b>
+        <span style="color: #FFFFFF;">Intrinsic scalar property of fundamental matter particles giving rise to electrostatic attraction or repulsion [Coulomb C].</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>2. Quantization of Charge:</b>
+        <span style="color: #FFFFFF;">The principle that net charge of any body is an integral multiple of elementary charge e: q = &plusmn;n e (e = 1.6 &times; 10<sup>-19</sup> C).</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>3. Coulomb's Law:</b>
+        <span style="color: #FFFFFF;">Electrostatic force between two stationary point charges is proportional to product of charges &amp; inversely to square of distance: F = [1/(4&pi;&epsilon;<sub>0</sub>)] (q<sub>1</sub> q<sub>2</sub> / r<sup>2</sup>).</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>4. Electric Field Intensity (<b>E</b>):</b>
+        <span style="color: #FFFFFF;">Electrostatic force experienced per unit positive test charge placed at a given point: <b>E</b> = <b>F</b> / q<sub>0</sub> [N C<sup>-1</sup> or V m<sup>-1</sup>].</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>5. Electric Dipole Moment (<b>p</b>):</b>
+        <span style="color: #FFFFFF;">Vector measure of dipole strength directed from negative to positive charge: <b>p</b> = q (2<b>a</b>) [C m].</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>6. Electric Flux (&Phi;<sub>E</sub>):</b>
+        <span style="color: #FFFFFF;">Total number of electric field lines passing normally through a given surface: &Phi;<sub>E</sub> = &int;&int; <b>E</b> &sdot; d<b>A</b> = &int;&int; E dA cos &theta; [N m<sup>2</sup> C<sup>-1</sup>].</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>7. Gauss's Law / Theorem:</b>
+        <span style="color: #FFFFFF;">Total electric flux through any closed 3D surface equals 1/&epsilon;<sub>0</sub> times net charge enclosed inside: &oint; <b>E</b> &sdot; d<b>A</b> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub>.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>8. Electrostatic Shielding:</b>
+        <span style="color: #FFFFFF;">The phenomenon of protecting a region from external electric fields by enclosing it inside a hollow conductor (E<sub>in</sub> = 0).</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">1. Electric Charges &amp; Quantization of Charge</h2>
+  ${defBox("Electric Charge", "Electric charge is an intrinsic scalar physical property of fundamental subatomic particles of matter (electrons and protons) that causes them to experience an attractive or repulsive electromagnetic force when placed within electric or magnetic fields.")}
+  <p>Electrostatics is the study of electric forces, fields, and potentials arising from stationary charges. Historical experiments by Benjamin Franklin demonstrated the existence of two distinct types of electric charges: positive charge (acquired by a glass rod rubbed with silk) and negative charge (acquired by an ebonite rod rubbed with cat's fur). Fundamental particles possess invariant charges: an electron carries -e = -1.602 &times; 10<sup>-19</sup> C, while a proton carries +e = +1.602 &times; 10<sup>-19</sup> C.</p>
+  <p><b>Additivity of Charges:</b> Electric charge is a scalar quantity. The total charge of a physical system containing point charges q<sub>1</sub>, q<sub>2</sub>, ..., q<sub>n</sub> is the algebraic sum of individual charges: Q<sub>total</sub> = q<sub>1</sub> + q<sub>2</sub> + ... + q<sub>n</sub>.</p>
+  ${defBox("Quantization of Charge", "The Principle of Quantization of Charge asserts that the total electric charge acquired or possessed by any physical body is always an integral multiple of a basic quantum unit of charge e, represented mathematically as q = &plusmn;n e, where n is an integer (n = 1, 2, 3, ...).")}
+  <p>At macroscopic scales where charges involved are on the order of microcoulombs (&mu;C), charge appears continuous because 1 &mu;C contains approximately 6.25 &times; 10<sup>12</sup> elementary electronic charges. However, at microscopic atomic scales, quantization is strictly discrete and fundamental.</p>
+  ${eqBox("<b>Quantization Equation: q = &plusmn; n e &nbsp;|&nbsp; e = 1.602 &times; 10<sup>-19</sup> C &nbsp;|&nbsp; 1 C = 6.25 &times; 10<sup>18</sup> electrons</b>")}
+
+  <!-- SECTION 2 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2. Conservation of Charge</h2>
+  ${defBox("Law of Conservation of Charge", "The Law of Conservation of Charge states that the net algebraic electric charge of an isolated physical system remains strictly constant over time, regardless of any physical, chemical, or nuclear transformations taking place within the system.")}
+  <p>Electric charge can neither be created nor destroyed in isolation; it can only be transferred from one body to another or generated/annihilated in equal and opposite (+q and -q) pairs. Prominent scientific examples demonstrating charge conservation include:</p>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Pair Production &amp; Annihilation:</b> In high-energy nuclear physics, a high-energy gamma-ray photon (&gamma;) produces an electron (e<sup>-</sup>) and a positron (e<sup>+</sup>): &gamma; &rarr; e<sup>-</sup> + e<sup>+</sup>. Net initial charge = 0, net final charge = (-1) + (+1) = 0.</li>
+    <li><b>Radioactive Decay:</b> In the alpha decay of Uranium-238 (<sup>238</sup><sub>92</sub>U &rarr; <sup>234</sup><sub>90</sub>Th + <sup>4</sup><sub>2</sub>He), total atomic number (charge in units of e) before decay (92) equals total atomic number after decay (90 + 2 = 92).</li>
+  </ul>
+
+  <!-- SECTION 3 & 4 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3. Coulomb's Law, Superposition Principle &amp; Continuous Charge Distribution</h2>
+  ${defBox("Coulomb's Law", "Coulomb's Law states that the electrostatic magnitude of force between two stationary point charges is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance separating their centers, acting along the line joining them.")}
+  <p>In vacuum (or free space), the magnitude of electrostatic force F between two point charges q<sub>1</sub> and q<sub>2</sub> separated by distance r is:</p>
+  ${eqBox("<b>F = " + frac("1", "4&pi; &epsilon;<sub>0</sub>") + " " + frac("q<sub>1</sub> q<sub>2</sub>", "r<sup>2</sup>") + " &nbsp;|&nbsp; " + frac("1", "4&pi; &epsilon;<sub>0</sub>") + " = 8.9875 &times; 10<sup>9</sup> N m<sup>2</sup> C<sup>-2</sup></b>")}
+  <p>Here, <b>&epsilon;<sub>0</sub> = 8.854 &times; 10<sup>-12</sup> C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup></b> is the <b>Absolute Permittivity of Free Space</b>. In a dielectric medium with dielectric constant K, the force reduces to F<sub>med</sub> = F<sub>vac</sub> / K.</p>
+  ${defBox("Principle of Superposition", "The Principle of Superposition states that when multiple point charges interact, the total electrostatic force exerted on any given charge equals the vector sum of individual forces exerted on it by all other charges taken one at a time, unaffected by the presence of other charges.")}
+  ${svg3DCardWrapper("1. COULOMB'S LAW & SUPERPOSITION PRINCIPLE", "Fig 1.1: Coulomb's Law in Vector Form (F<sub>12</sub> = -F<sub>21</sub>) & Fig 1.2: Superposition Principle (F<sub>net</sub> = &Sigma; F<sub>i</sub>).", svg1_coulomb)}
+
+  <!-- SECTION 4 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">4. Electric Field Lines &amp; Field Patterns</h2>
+  ${defBox("Electric Field Line", "An electric field line is a smooth continuous imaginary curve drawn in an electric field such that the tangent drawn at any point on the curve gives the direction of the net electric field vector <b>E</b> at that point.")}
+  <p>Fundamental properties of electric field lines include:</p>
+  <ol style="margin-left: 20px; line-height: 1.8;">
+    <li>Field lines continuously originate from positive charges and terminate on negative charges.</li>
+    <li>Field lines are continuous curves without any breaks in free space.</li>
+    <li><b>Two electric field lines CAN NEVER intersect each other.</b> If they intersected, two tangents could be drawn at the point of intersection, indicating two different directions of net electric field at a single point, which is physically impossible.</li>
+    <li>Field lines do NOT form closed loops because electrostatic field is conservative (&oint; <b>E</b> &sdot; d<b>l</b> = 0).</li>
+  </ol>
+  ${svg3DCardWrapper("2. ELECTRIC FIELD PATTERNS & FIELD LINES", "Field patterns for Isolated +q (Outwards), Isolated -q (Inwards), Electric Dipole (+ to -), and Like Charges (+ and +, Neutral point N).", svg2_field_lines)}
+
+  <!-- SECTION 5 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">5. Electric Dipole (Axial &amp; Equatorial Fields)</h2>
+  ${defBox("Electric Dipole & Dipole Moment (<b>p</b>)", "An Electric Dipole is a pair of equal and opposite point charges (+q and -q) separated by a small distance 2a. The Electric Dipole Moment vector <b>p</b> is defined as the product of charge magnitude q and separation vector 2<b>a</b>, directed from negative charge to positive charge: <b>p</b> = q (2<b>a</b>) [C m].")}
+  <p>For a short dipole (r >> a):</p>
+  ${eqBox("<b>E<sub>axial</sub> = " + frac("1", "4&pi; &epsilon;<sub>0</sub>") + " " + frac("2 p", "r<sup>3</sup>") + " &nbsp; (Direction: Parallel to <b>p</b>) &nbsp;|&nbsp; E<sub>equatorial</sub> = " + frac("1", "4&pi; &epsilon;<sub>0</sub>") + " " + frac("p", "r<sup>3</sup>") + " &nbsp; (Direction: Anti-parallel to <b>p</b>)</b>")}
+  <p><i>Note on Direction:</i> The notation <b>E<sub>axial</sub> || p</b> means the axial electric field vector is parallel to dipole moment <b>p</b>. <b>E<sub>equatorial</sub> || -p</b> means equatorial electric field is anti-parallel to dipole moment <b>p</b>.</p>
+  ${svg3DCardWrapper("3. ELECTRIC DIPOLE (AXIAL & EQUATORIAL)", "Fig 3.1: Field at Axial Point P (E<sub>axial</sub> || <b>p</b>) & Fig 3.2: Field at Equatorial Point Q (E<sub>eq</sub> || -<b>p</b>). Ratio E<sub>axial</sub> / E<sub>eq</sub> = 2 : 1.", svg3_dipole)}
+
+  <!-- SECTION 6 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">6. Torque on a Dipole &amp; Electric Flux</h2>
+  ${defBox("Torque on Electric Dipole (<b>&tau;</b>)", "When an electric dipole of moment <b>p</b> is placed in a uniform electric field <b>E</b> at angle &theta;, equal and opposite forces <b>F</b> = &plusmn;q <b>E</b> act on charges forming a couple that exerts a restoring torque: <b>&tau;</b> = <b>p</b> &times; <b>E</b>, with magnitude &tau; = p E sin &theta; [N m].")}
+  ${defBox("Electric Flux (&Phi;<sub>E</sub>)", "Electric Flux &Phi;<sub>E</sub> through a surface is a scalar measure of the total number of electric field lines crossing normally through that surface area: &Phi;<sub>E</sub> = &int;&int; <b>E</b> &sdot; d<b>A</b> = &int;&int; E dA cos &theta; [N m<sup>2</sup> C<sup>-1</sup>].")}
+  ${svg3DCardWrapper("4. TORQUE & ELECTRIC FLUX", "Fig 4.1: Torque on a Dipole in Uniform Field (<b>&tau;</b> = <b>p</b> &times; <b>E</b>) & Fig 4.2: Electric Flux (&Phi;<sub>E</sub> = &oint; <b>E</b> &sdot; d<b>A</b>).", svg4_torque_flux)}
+
+  <!-- SECTION 7 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">7. Gauss's Theorem &amp; Applications</h2>
+  ${defBox("Gauss's Theorem / Law", "Gauss's Theorem states that the total enclosed electric flux &Phi;<sub>E</sub> through any closed three-dimensional Gaussian surface in free space equals 1/&epsilon;<sub>0</sub> times the net algebraic electric charge q<sub>enclosed</sub> enclosed inside that surface: &oint; <b>E</b> &sdot; d<b>A</b> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub>.")}
+  <p><b>Applications:</b></p>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>(i) Infinitely Long Straight Wire:</b> E = &lambda; / (2&pi; &epsilon;<sub>0</sub> r), where &lambda; is linear charge density.</li>
+    <li><b>(ii) Uniformly Charged Thin Spherical Shell:</b> Outside (r &ge; R): E<sub>out</sub> = Q / (4&pi; &epsilon;<sub>0</sub> r<sup>2</sup>); Inside (r &lt; R): E<sub>in</sub> = 0 (Electrostatic Shielding).</li>
+  </ul>
+  ${svg3DCardWrapper("5. GAUSS'S THEOREM APPLICATIONS", "Fig 5.1: Long Wire E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r) & Fig 5.2: Spherical Shell E<sub>out</sub> = Q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>), E<sub>in</sub> = 0.", svg5_gauss_shell)}
+
+  <!-- QUICK REVISION CHEAT SHEET -->
+  <div style="background: rgba(255, 81, 47, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-top: 35px; margin-bottom: 15px;">
+    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">⚡ Quick Revision Cheat Sheet</h2>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Summary Formulae for Class 12 Unit I: Electric Charges and Fields</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; font-size: 14.5px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Coulomb's Law &amp; Field:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">F = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sub>1</sub> q<sub>2</sub> / r<sup>2</sup>)<br>E = F / q<sub>0</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>)</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Dipole Fields &amp; Torque:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>)<br>E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (p / r<sup>3</sup>)<br><b>&tau;</b> = <b>p</b> &times; <b>E</b> (&tau; = p E sin &theta;)</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid ${themeColor}; border-radius: 6px;">
+        <b style='color: ${themeColor}; display: block; margin-bottom: 4px;'>• Gauss Law Applications:</b>
+        <span style="color: #FFFFFF; line-height: 1.65; display: block;">Wire: E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r)<br>Sheet: E = &sigma; / (2&epsilon;<sub>0</sub>)<br>Shell: E<sub>out</sub> = Q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>), E<sub>in</sub> = 0</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+`;
+}
+
+// Generate the 100 100% Genuine, Specific CBSE / NCERT Physics Questions & Answers
+function generate100GenuineQuestions() {
+  const mcqsData = [
+    {
+      title: "Quantization of Electric Charge",
+      q: "A polythene piece rubbed with wool is found to have a negative charge of 3.2 &times; 10<sup>-7</sup> C. What is the number of electrons transferred from wool to polythene?",
+      opts: ["a) 2.0 &times; 10<sup>12</sup> electrons", "b) 1.6 &times; 10<sup>19</sup> electrons", "c) 3.2 &times; 10<sup>12</sup> electrons", "d) 6.25 &times; 10<sup>18</sup> electrons"],
+      ans: "a) 2.0 &times; 10<sup>12</sup> electrons",
+      exp: "Using the quantization relation q = n e: n = q / e = (3.2 &times; 10<sup>-7</sup> C) / (1.602 &times; 10<sup>-19</sup> C) = 2.0 &times; 10<sup>12</sup> electrons. Since polythene gains negative charge, electrons are transferred from wool to polythene."
+    },
+    {
+      title: "Dielectric Medium and Coulomb Force",
+      q: "Two point charges placed at a distance d in air exert a force F on each other. When immersed in a liquid of dielectric constant K = 4 at the same distance, what is the new force between them?",
+      opts: ["a) F / 4", "b) 4 F", "c) 16 F", "d) F / 16"],
+      ans: "a) F / 4",
+      exp: "In a dielectric medium of relative permittivity K, the electrostatic force is reduced by a factor of K: F<sub>med</sub> = F<sub>air</sub> / K = F / 4."
+    },
+    {
+      title: "Electric Field Variation with Distance for a Point Charge",
+      q: "How does the magnitude of the electric field intensity E vary with distance r from a single isolated point charge?",
+      opts: ["a) E &prop; 1 / r<sup>2</sup>", "b) E &prop; 1 / r", "c) E &prop; 1 / r<sup>3</sup>", "d) E is independent of r"],
+      ans: "a) E &prop; 1 / r<sup>2</sup>",
+      exp: "For a point charge Q, the electric field is given by E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>), which obeys the inverse square law (E &prop; 1 / r<sup>2</sup>)."
+    },
+    {
+      title: "Electric Field on the Axis of a Short Dipole",
+      q: "For a short electric dipole of moment p, the electric field intensity at an axial point at a distance r from its center varies as:",
+      opts: ["a) E &prop; 1 / r<sup>3</sup>", "b) E &prop; 1 / r<sup>2</sup>", "c) E &prop; 1 / r", "d) E &prop; r<sup>3</sup>"],
+      ans: "a) E &prop; 1 / r<sup>3</sup>",
+      exp: "For a short dipole (r >> a), the axial electric field is E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>), which decays as the inverse cube of the distance (1 / r<sup>3</sup>)."
+    },
+    {
+      title: "Ratio of Axial to Equatorial Field of a Short Dipole",
+      q: "What is the ratio of the electric field intensity at a point on the axial line to that at an equatorial point at the same distance r from a short electric dipole?",
+      opts: ["a) 2 : 1", "b) 1 : 2", "c) 1 : 1", "d) 4 : 1"],
+      ans: "a) 2 : 1",
+      exp: "Since E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>) and E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (p / r<sup>3</sup>), the ratio E<sub>axial</sub> / E<sub>eq</sub> = (2p / r<sup>3</sup>) / (p / r<sup>3</sup>) = 2 : 1."
+    },
+    {
+      title: "Torque on a Dipole in Uniform Electric Field",
+      q: "An electric dipole of moment <b>p</b> is placed in a uniform electric field <b>E</b>. The torque acting on the dipole is maximum when the angle &theta; between <b>p</b> and <b>E</b> is:",
+      opts: ["a) 90&deg;", "b) 0&deg;", "c) 180&deg;", "d) 45&deg;"],
+      ans: "a) 90&deg;",
+      exp: "The magnitude of torque is &tau; = p E sin &theta;. Torque is maximum when sin &theta; = 1, which occurs at &theta; = 90&deg; (&tau;<sub>max</sub> = p E)."
+    },
+    {
+      title: "Stable Equilibrium of an Electric Dipole",
+      q: "An electric dipole is in stable equilibrium in a uniform electric field when the angle between dipole moment <b>p</b> and field <b>E</b> is:",
+      opts: ["a) 0&deg;", "b) 180&deg;", "c) 90&deg;", "d) 270&deg;"],
+      ans: "a) 0&deg;",
+      exp: "At &theta; = 0&deg;, torque &tau; = p E sin 0&deg; = 0 and potential energy U = -p E cos 0&deg; = -p E (minimum energy), corresponding to stable equilibrium."
+    },
+    {
+      title: "SI Unit of Electric Flux",
+      q: "Which of the following represents the correct SI unit of electric flux (&Phi;<sub>E</sub>)?",
+      opts: ["a) N m<sup>2</sup> C<sup>-1</sup> or V m", "b) N C<sup>-1</sup>", "c) J C<sup>-1</sup>", "d) C m<sup>-2</sup>"],
+      ans: "a) N m<sup>2</sup> C<sup>-1</sup> or V m",
+      exp: "Electric flux &Phi;<sub>E</sub> = E &sdot; A = (N / C) &times; m<sup>2</sup> = N m<sup>2</sup> C<sup>-1</sup>. In terms of potential: (V / m) &times; m<sup>2</sup> = V m."
+    },
+    {
+      title: "Electric Flux through a Closed Surface Enclosing a Dipole",
+      q: "A Gaussian sphere encloses an electric dipole of dipole moment p = 2 &times; 10<sup>-8</sup> C m. The total electric flux emerging through the spherical surface is:",
+      opts: ["a) Zero", "b) p / &epsilon;<sub>0</sub>", "c) 2p / &epsilon;<sub>0</sub>", "d) Infinity"],
+      ans: "a) Zero",
+      exp: "An electric dipole consists of equal and opposite charges (+q and -q). Net charge enclosed q<sub>enclosed</sub> = +q - q = 0. By Gauss's Law, &Phi;<sub>E</sub> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub> = 0."
+    },
+    {
+      title: "Electric Field inside a Uniformly Charged Thin Spherical Shell",
+      q: "A thin metallic spherical shell of radius R carries a uniform surface charge Q. The electric field intensity at a distance r < R (inside the shell) is:",
+      opts: ["a) Zero", "b) [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>)", "c) [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / R<sup>2</sup>)", "d) [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q r / R<sup>3</sup>)"],
+      ans: "a) Zero",
+      exp: "For a concentric Gaussian surface of radius r < R, no charge is enclosed inside the metallic shell (q<sub>enclosed</sub> = 0). Hence, by Gauss's Law, E<sub>in</sub> = 0."
+    },
+    {
+      title: "Dimensional Formula of Permittivity of Free Space",
+      q: "What is the dimensional formula of the absolute permittivity of free space (&epsilon;<sub>0</sub>)?",
+      opts: ["a) [M<sup>-1</sup> L<sup>-3</sup> T<sup>4</sup> A<sup>2</sup>]", "b) [M L<sup>3</sup> T<sup>-4</sup> A<sup>-2</sup>]", "c) [M<sup>-1</sup> L<sup>-2</sup> T<sup>3</sup> A<sup>1</sup>]", "d) [M L T<sup>-2</sup> A<sup>-1</sup>]"],
+      ans: "a) [M<sup>-1</sup> L<sup>-3</sup> T<sup>4</sup> A<sup>2</sup>]",
+      exp: "From Coulomb's law: &epsilon;<sub>0</sub> = q<sub>1</sub> q<sub>2</sub> / (4&pi; F r<sup>2</sup>) = [A T]<sup>2</sup> / ([M L T<sup>-2</sup>] [L<sup>2</sup>]) = [M<sup>-1</sup> L<sup>-3</sup> T<sup>4</sup> A<sup>2</sup>]."
+    },
+    {
+      title: "Electric Field Lines Behavior",
+      q: "Which of the following statements is INCORRECT regarding electric field lines?",
+      opts: ["a) Electric field lines can form closed continuous loops.", "b) Two electric field lines can never cross each other.", "c) Tangent at any point on a field line gives field direction.", "d) Field lines emerge from positive charge and terminate on negative charge."],
+      ans: "a) Electric field lines can form closed continuous loops.",
+      exp: "Electrostatic fields are conservative (&oint; <b>E</b> &sdot; d<b>l</b> = 0), meaning electric field lines can NEVER form closed loops."
+    },
+    {
+      title: "Force on a Test Charge in an Electric Field",
+      q: "An electron (charge -e, mass m) is placed in a uniform electric field of magnitude E directed vertically upwards. The acceleration experienced by the electron is:",
+      opts: ["a) e E / m downwards", "b) e E / m upwards", "c) m / (e E) downwards", "d) Zero"],
+      ans: "a) e E / m downwards",
+      exp: "The electrostatic force on a negative charge is <b>F</b> = -e <b>E</b> (opposite to the field direction). Therefore, the force and resulting acceleration a = e E / m are directed vertically downwards."
+    },
+    {
+      title: "Electric Field Due to an Infinitely Long Wire",
+      q: "The magnitude of the electric field at a distance r from an infinitely long straight wire with linear charge density &lambda; is proportional to:",
+      opts: ["a) 1 / r", "b) 1 / r<sup>2</sup>", "c) 1 / r<sup>3</sup>", "d) r"],
+      ans: "a) 1 / r",
+      exp: "Applying Gauss's theorem on a coaxial cylindrical surface gives E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r), which is inversely proportional to distance (E &prop; 1 / r)."
+    },
+    {
+      title: "Electric Field Due to an Infinite Uniformly Charged Plane Sheet",
+      q: "The electric field intensity produced by an infinitely large thin plane sheet with uniform surface charge density &sigma; is:",
+      opts: ["a) &sigma; / (2&epsilon;<sub>0</sub>) (independent of distance)", "b) &sigma; / &epsilon;<sub>0</sub>", "c) &sigma; / (2&epsilon;<sub>0</sub> r)", "d) &sigma; / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)"],
+      ans: "a) &sigma; / (2&epsilon;<sub>0</sub>) (independent of distance)",
+      exp: "Using a Gaussian pillbox piercing the sheet, the total flux is 2 E A = &sigma; A / &epsilon;<sub>0</sub>, giving E = &sigma; / (2&epsilon;<sub>0</sub>), which is uniform and independent of distance r."
+    },
+    {
+      title: "Work Done in Rotating a Dipole from 0&deg; to 180&deg;",
+      q: "What is the work done in rotating an electric dipole of moment p in a uniform electric field E from stable equilibrium (&theta; = 0&deg;) to unstable equilibrium (&theta; = 180&deg;)?",
+      opts: ["a) 2 p E", "b) p E", "c) -2 p E", "d) Zero"],
+      ans: "a) 2 p E",
+      exp: "Work done W = -p E (cos &theta;<sub>2</sub> - cos &theta;<sub>1</sub>) = -p E (cos 180&deg; - cos 0&deg;) = -p E (-1 - 1) = 2 p E."
+    },
+    {
+      title: "Superposition of Electrostatic Forces",
+      q: "If three equal positive point charges +q are placed at the vertices of an equilateral triangle, what is the net electric field at the centroid of the triangle?",
+      opts: ["a) Zero", "b) 3 q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)", "c) q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)", "d) &radic;3 q / (4&pi;&epsilon;<sub>0</sub> r<sup>2</sup>)"],
+      ans: "a) Zero",
+      exp: "By symmetry, the three equal electric field vectors from the vertices intersect at the centroid at angles of 120&deg; to each other. Their vector sum cancels out completely to 0."
+    },
+    {
+      title: "Electric Flux through a Hemisphere",
+      q: "A point charge +q is placed at the center of the circular base of an open hemispherical surface. What is the total electric flux passing through the curved surface?",
+      opts: ["a) q / (2&epsilon;<sub>0</sub>)", "b) q / &epsilon;<sub>0</sub>", "c) q / (4&epsilon;<sub>0</sub>)", "d) 2 q / &epsilon;<sub>0</sub>"],
+      ans: "a) q / (2&epsilon;<sub>0</sub>)",
+      exp: "By enclosing the charge with a complete symmetric sphere of two hemispheres, total flux is q / &epsilon;<sub>0</sub>. Therefore, exactly half of the flux passes through one hemisphere: &Phi; = q / (2&epsilon;<sub>0</sub>)."
+    },
+    {
+      title: "Conservation of Charge in Nuclear Reaction",
+      q: "In the alpha decay of a Uranium-238 nucleus (<sup>238</sup><sub>92</sub>U &rarr; <sup>234</sup><sub>90</sub>Th + <sup>4</sup><sub>2</sub>He), total electric charge before and after decay is:",
+      opts: ["a) Conserved at +92 e", "b) Reduced by 2 e", "c) Increased by 2 e", "d) Destroyed"],
+      ans: "a) Conserved at +92 e",
+      exp: "Law of conservation of charge dictates net charge remains strictly invariant: Initial charge = +92 e, Final charge = 90 e + 2 e = +92 e."
+    },
+    {
+      title: "Electric Dipole in a Non-Uniform Electric Field",
+      q: "When an electric dipole is placed in a non-uniform electric field, it experiences:",
+      opts: ["a) Both a net force and a net torque", "b) Only a torque but no net force", "c) Only a force but no torque", "d) Neither force nor torque"],
+      ans: "a) Both a net force and a net torque",
+      exp: "In a non-uniform electric field, the unequal field strengths at +q and -q result in unequal forces (F<sub>net</sub> &ne; 0), producing translational acceleration as well as a rotational torque."
+    },
+    {
+      title: "Coulomb Force between Two Alpha Particles",
+      q: "What is the electrostatic repulsive force between two &alpha;-particles (each charge q = +2e) separated by 3.2 &times; 10<sup>-15</sup> m in free space?",
+      opts: ["a) 90 N", "b) 45 N", "c) 180 N", "d) 22.5 N"],
+      ans: "a) 90 N",
+      exp: "F = [9 &times; 10<sup>9</sup>] &times; (2 &times; 1.6 &times; 10<sup>-19</sup>)<sup>2</sup> / (3.2 &times; 10<sup>-15</sup>)<sup>2</sup> = [9 &times; 10<sup>9</sup> &times; 10.24 &times; 10<sup>-38</sup>] / (10.24 &times; 10<sup>-30</sup>) = 90 N."
+    },
+    {
+      title: "Continuous Surface Charge Density Unit",
+      q: "What is the SI unit of surface charge density (&sigma;)?",
+      opts: ["a) C m<sup>-2</sup>", "b) C m<sup>-1</sup>", "c) C m<sup>-3</sup>", "d) C m"],
+      ans: "a) C m<sup>-2</sup>",
+      exp: "Surface charge density &sigma; is defined as charge per unit area (&sigma; = dq / dA), having the SI unit Coulomb per square meter (C m<sup>-2</sup>)."
+    },
+    {
+      title: "Neutral Point between Like Charges",
+      q: "Two equal positive point charges +q are placed at a distance 2d apart. Where is the neutral point (E = 0) located?",
+      opts: ["a) Exactly at the midpoint between the two charges", "b) At distance d/2 from one charge", "c) At infinity", "d) On the perpendicular bisector at distance d"],
+      ans: "a) Exactly at the midpoint between the two charges",
+      exp: "At the exact midpoint r = d from each charge, the electric fields produced by the two identical positive charges are equal in magnitude and opposite in direction, cancelling to E = 0."
+    },
+    {
+      title: "Charge Invariance with Motion",
+      q: "When a charged body moves with a relativistic speed comparable to the speed of light c, its electric charge:",
+      opts: ["a) Remains strictly unchanged (invariant)", "b) Increases with velocity", "c) Decreases with velocity", "d) Becomes zero"],
+      ans: "a) Remains strictly unchanged (invariant)",
+      exp: "Electric charge is a relativistic invariant quantity; its magnitude is independent of the frame of reference or velocity of the particle, unlike relativistic mass."
+    },
+    {
+      title: "Total Electric Flux through a Cube Enclosing Charge at Center",
+      q: "A point charge +q is situated at the geometric center of a closed cube of side L. The electric flux through any ONE face of the cube is:",
+      opts: ["a) q / (6 &epsilon;<sub>0</sub>)", "b) q / &epsilon;<sub>0</sub>", "c) q / (24 &epsilon;<sub>0</sub>)", "d) 6 q / &epsilon;<sub>0</sub>"],
+      ans: "a) q / (6 &epsilon;<sub>0</sub>)",
+      exp: "By Gauss's Law, the total flux through all 6 identical symmetric faces of the cube is &Phi;<sub>total</sub> = q / &epsilon;<sub>0</sub>. Therefore, flux through one single face is &Phi;<sub>1 face</sub> = q / (6 &epsilon;<sub>0</sub>)."
+    }
+  ];
+
+  const vsasData = [
+    {
+      title: "Define 1 Coulomb of Charge",
+      q: "Define one Coulomb (1 C) of electric charge using Coulomb's Law.",
+      sol: "One Coulomb is defined as that quantity of electrostatic charge which, when placed in vacuum at a distance of 1 meter from an equal and similar charge, repels it with an electrostatic force of 9 &times; 10<sup>9</sup> Newtons."
+    },
+    {
+      title: "State the Principle of Quantization of Charge",
+      q: "State the Principle of Quantization of electric charge and give its mathematical equation.",
+      sol: "The Principle of Quantization of Charge states that the total electric charge possessed by any physical body is always an integral multiple of a basic elementary quantum of charge e: <b>q = &plusmn;n e</b>, where n = 1, 2, 3, ... and e = 1.602 &times; 10<sup>-19</sup> C."
+    },
+    {
+      title: "State the Law of Conservation of Charge",
+      q: "State the Law of Conservation of electric charge.",
+      sol: "The Law of Conservation of Charge states that the net algebraic electric charge of an isolated physical system remains strictly constant over time, regardless of any physical, chemical, or nuclear transformations within the system."
+    },
+    {
+      title: "Why Can Two Electric Field Lines Never Cross?",
+      q: "Why can two electric field lines never intersect each other at any point?",
+      sol: "If two electric field lines intersected at a point, two tangents could be drawn at the point of intersection, indicating two different directions of the resultant electric field at the same single location, which is physically impossible."
+    },
+    {
+      title: "Define Electric Dipole Moment and State Its SI Unit",
+      q: "Define Electric Dipole Moment vector and state its SI unit and direction.",
+      sol: "The Electric Dipole Moment vector <b>p</b> is defined as the product of the magnitude of either charge q and the separation vector 2<b>a</b> between them: <b>p = q (2a)</b>. Its SI unit is Coulomb-meter (C m), and its vector direction is directed from the negative charge (-q) to the positive charge (+q)."
+    },
+    {
+      title: "What is Electrostatic Shielding?",
+      q: "What is electrostatic shielding and on what fundamental property is it based?",
+      sol: "Electrostatic shielding is the phenomenon of protecting a sensitive electrical instrument or spatial region from external electric fields by enclosing it inside a hollow conductor, based on the principle that the electrostatic field inside a charged or uncharged hollow conductor is strictly zero (E<sub>in</sub> = 0)."
+    },
+    {
+      title: "Define Electric Flux and State Its SI Unit",
+      q: "Define Electric Flux (&Phi;<sub>E</sub>) and write its SI unit.",
+      sol: "Electric Flux &Phi;<sub>E</sub> through a given surface area is defined as the total number of electric field lines crossing normally through that surface: &Phi;<sub>E</sub> = &int;&int; <b>E</b> &sdot; d<b>A</b>. Its SI unit is Newton meter squared per Coulomb (N m<sup>2</sup> C<sup>-1</sup>) or Volt meter (V m)."
+    },
+    {
+      title: "State Gauss's Theorem in Electrostatics",
+      q: "State Gauss's Law / Theorem in electrostatics.",
+      sol: "Gauss's Theorem states that the total outward electric flux &Phi;<sub>E</sub> passing through any closed three-dimensional Gaussian surface in free space equals 1/&epsilon;<sub>0</sub> times the net algebraic electric charge enclosed inside the surface: <b>&oint; <b>E</b> &sdot; d<b>A</b> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub></b>."
+    },
+    {
+      title: "Value and SI Unit of Absolute Permittivity of Free Space",
+      q: "Write the magnitude, SI unit, and dimensional formula of absolute permittivity of free space (&epsilon;<sub>0</sub>).",
+      sol: "Magnitude: &epsilon;<sub>0</sub> = 8.8541878 &times; 10<sup>-12</sup>. SI Unit: C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup> (or Farad per meter F m<sup>-1</sup>). Dimensional Formula: [M<sup>-1</sup> L<sup>-3</sup> T<sup>4</sup> A<sup>2</sup>]."
+    },
+    {
+      title: "Define Dielectric Constant (Relative Permittivity)",
+      q: "Define the Dielectric Constant (K or &epsilon;<sub>r</sub>) of a medium.",
+      sol: "The Dielectric Constant (Relative Permittivity) of a medium is defined as the ratio of the electrostatic force between two point charges in vacuum (F<sub>vac</sub>) to the force between the same charges placed at the same separation in that medium (F<sub>med</sub>): <b>K = &epsilon;<sub>r</sub> = F<sub>vac</sub> / F<sub>med</sub> = &epsilon; / &epsilon;<sub>0</sub></b>."
+    },
+    {
+      title: "What is a Gaussian Surface?",
+      q: "What is a Gaussian surface and what is its primary utility?",
+      sol: "A Gaussian surface is an arbitrary closed 3-dimensional geometric surface chosen in an electric field to evaluate total enclosed flux and calculate electric field intensity easily by exploiting spatial symmetry (spherical, cylindrical, or planar)."
+    },
+    {
+      title: "Condition for Zero Torque on an Electric Dipole",
+      q: "Under what orientation is the torque acting on an electric dipole in a uniform electric field zero?",
+      sol: "The torque &tau; = p E sin &theta; is zero when the dipole is aligned parallel (&theta; = 0&deg;, stable equilibrium) or anti-parallel (&theta; = 180&deg;, unstable equilibrium) to the direction of the uniform electric field."
+    },
+    {
+      title: "Electric Field on the Equatorial Line of a Short Dipole",
+      q: "Write the formula for the electric field at an equatorial point of a short dipole at distance r.",
+      sol: "<b>E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [p / r<sup>3</sup>]</b>, directed parallel to -<b>p</b> (i.e. anti-parallel from +q to -q)."
+    },
+    {
+      title: "Electric Field on the Axial Line of a Short Dipole",
+      q: "Write the formula for the electric field at an axial point of a short dipole at distance r.",
+      sol: "<b>E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [2p / r<sup>3</sup>]</b>, directed parallel to <b>p</b> (from -q to +q)."
+    },
+    {
+      title: "State the Principle of Superposition of Electrostatic Forces",
+      q: "State the Superposition Principle for electrostatic forces.",
+      sol: "When multiple point charges interact, the net electrostatic force acting on any given charge is the vector sum of the individual Coulomb forces exerted on it by all other charges taken one at a time, unaffected by the presence of surrounding charges."
+    },
+    {
+      title: "Electric Field Due to an Infinitely Long Wire",
+      q: "State the formula for the electric field intensity due to an infinitely long straight charged wire of linear charge density &lambda;.",
+      sol: "<b>E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r)</b>, directed radially outwards if &lambda; > 0 and radially inwards if &lambda; < 0."
+    },
+    {
+      title: "Electric Field Due to an Infinite Uniformly Charged Plane Sheet",
+      q: "State the formula for the electric field due to an infinite uniformly charged plane sheet of surface charge density &sigma;.",
+      sol: "<b>E = &sigma; / (2&epsilon;<sub>0</sub>)</b>, which is uniform, perpendicular to the sheet, and completely independent of the distance r from the sheet."
+    },
+    {
+      title: "Electric Field at the Surface of a Charged Conductor",
+      q: "What is the magnitude and direction of the electric field at the surface of a charged conductor?",
+      sol: "The electric field at the surface of any charged conductor is <b>E = &sigma; / &epsilon;<sub>0</sub></b>, directed strictly perpendicular (normal) to the surface at every point."
+    },
+    {
+      title: "Why is Electric Field Zero Inside a Hollow Charged Conductor?",
+      q: "Why is the electrostatic field inside a charged hollow metallic sphere zero?",
+      sol: "Free excess charges reside entirely on the outer surface of the conductor to minimize potential energy. A Gaussian surface drawn inside the cavity encloses zero net charge (q<sub>enclosed</sub> = 0), so by Gauss's Law, E<sub>in</sub> = 0."
+    },
+    {
+      title: "Define Linear Charge Density and State Its SI Unit",
+      q: "Define Linear Charge Density (&lambda;) and state its SI unit.",
+      sol: "Linear Charge Density is defined as the electric charge per unit length along a line or thin wire: <b>&lambda; = dq / dl</b>. Its SI unit is Coulomb per meter (C m<sup>-1</sup>)."
+    },
+    {
+      title: "Define Surface Charge Density and State Its SI Unit",
+      q: "Define Surface Charge Density (&sigma;) and state its SI unit.",
+      sol: "Surface Charge Density is defined as the electric charge distributed per unit surface area: <b>&sigma; = dq / dA</b>. Its SI unit is Coulomb per square meter (C m<sup>-2</sup>)."
+    },
+    {
+      title: "Define Volume Charge Density and State Its SI Unit",
+      q: "Define Volume Charge Density (&rho;) and state its SI unit.",
+      sol: "Volume Charge Density is defined as the electric charge distributed per unit volume of a three-dimensional body: <b>&rho; = dq / dV</b>. Its SI unit is Coulomb per cubic meter (C m<sup>-3</sup>)."
+    },
+    {
+      title: "What is an Ideal (Point) Dipole?",
+      q: "What constitutes an ideal or point electric dipole?",
+      sol: "An ideal (point) dipole is an electric dipole in which the charge magnitude q approaches infinity (q &rarr; &infin;) while the separation distance 2a approaches zero (2a &rarr; 0) such that the dipole moment product p = q (2a) remains finite and constant."
+    },
+    {
+      title: "Electric Flux through a Sphere when Radius is Doubled",
+      q: "A point charge +q is enclosed inside a Gaussian sphere of radius R. If the radius of the sphere is doubled, what happens to the total electric flux emerging through it?",
+      sol: "The total electric flux remains strictly unchanged (&Phi; = q / &epsilon;<sub>0</sub>) because by Gauss's Law, flux depends solely on the net enclosed charge q, independent of the radius, shape, or size of the Gaussian surface."
+    },
+    {
+      title: "Net Force on a Dipole in Uniform Field",
+      q: "What is the net translatory force acting on an electric dipole placed in a uniform electric field?",
+      sol: "The net translatory force is strictly zero (<b>F<sub>net</sub> = 0</b>) because the forces acting on the two equal and opposite charges are +q <b>E</b> and -q <b>E</b>, which are equal in magnitude and opposite in direction."
+    },
+    {
+      title: "Does Electrostatic Force Obey Newton's Third Law?",
+      q: "Prove that Coulomb's Law complies with Newton's Third Law of Motion.",
+      sol: "In vector notation, the force exerted on charge 1 by charge 2 is <b>F<sub>12</sub></b> = -<b>F<sub>21</sub></b>. The forces are equal in magnitude, opposite in direction, and act along the line joining the two interacting bodies, confirming Newton's Third Law."
+    },
+    {
+      title: "What is the Dielectric Constant of a Metal?",
+      q: "What is the value of the dielectric constant (relative permittivity) for a perfect metallic conductor?",
+      sol: "The dielectric constant of a metal is infinity (<b>K = &infin;</b>) because inside a conductor in electrostatic equilibrium, induced charges completely cancel external fields, resulting in E<sub>net</sub> = 0."
+    },
+    {
+      title: "Effect of Medium on Permittivity",
+      q: "How does absolute permittivity of a medium relate to free space permittivity &epsilon;<sub>0</sub>?",
+      sol: "The absolute permittivity &epsilon; of a medium is given by <b>&epsilon; = K &epsilon;<sub>0</sub></b> (or &epsilon; = &epsilon;<sub>r</sub> &epsilon;<sub>0</sub>), where K &ge; 1 is the dielectric constant of that medium."
+    },
+    {
+      title: "Sign of Electric Flux for Entering vs Exiting Lines",
+      q: "State the sign convention for electric flux entering and leaving a closed surface.",
+      sol: "Electric flux is taken as positive (&Phi; > 0) when electric field lines emerge (exit) normally outwards from a closed surface (&theta; < 90&deg;), and negative (&Phi; < 0) when field lines enter the surface (&theta; > 90&deg;)."
+    },
+    {
+      title: "Physical Significance of Electric Field",
+      q: "What is the physical significance of the electric field concept?",
+      sol: "The electric field provides a local mechanism for transmitting electrostatic forces without instantaneous action-at-a-distance. A source charge creates a physical field in space that stores electrostatic energy and exerts a deterministic force <b>F</b> = q <b>E</b> on any test charge introduced at that point."
+    }
+  ];
+
+  const sasData = [
+    {
+      title: "Calculate Number of Electrons in 1 Coulomb of Charge",
+      q: "Calculate the total number of elementary electronic charges required to constitute 1 Coulomb of negative charge.",
+      sol: "Given net charge q = 1.0 C, elementary electronic charge e = 1.602 &times; 10<sup>-19</sup> C.<br><br>Using the quantization formula: <b>q = n e</b><br>n = q / e = (1.0 C) / (1.602 &times; 10<sup>-19</sup> C) = <b>6.242 &times; 10<sup>18</sup> electrons</b>.<br><br>Thus, approximately 6.25 &times; 10<sup>18</sup> electrons must be accumulated on a neutral body to acquire a negative charge of 1 Coulomb."
+    },
+    {
+      title: "Coulomb Force Between Two Charges in Air vs Water",
+      q: "Two point charges of +2 &mu;C and +6 &mu;C are separated by a distance of 10 cm in air. Calculate the electrostatic repulsive force between them in air and when immersed in water (dielectric constant K = 80).",
+      sol: "1. <b>In Air:</b><br>F<sub>air</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sub>1</sub> q<sub>2</sub> / r<sup>2</sup>)<br>F<sub>air</sub> = (9 &times; 10<sup>9</sup>) &times; (2 &times; 10<sup>-6</sup> &times; 6 &times; 10<sup>-6</sup>) / (0.10)<sup>2</sup><br>F<sub>air</sub> = (9 &times; 10<sup>9</sup> &times; 12 &times; 10<sup>-12</sup>) / 0.01 = <b>10.8 N (Repulsive)</b>.<br><br>2. <b>In Water (K = 80):</b><br>F<sub>water</sub> = F<sub>air</sub> / K = 10.8 / 80 = <b>0.135 N</b>."
+    },
+    {
+      title: "Vector Form of Coulomb's Law and Newton's Third Law",
+      q: "Derive the vector form of Coulomb's Law for two point charges q<sub>1</sub> and q<sub>2</sub> situated at position vectors <b>r</b><sub>1</sub> and <b>r</b><sub>2</sub>, and show that electrostatic forces obey Newton's Third Law.",
+      sol: "Let displacement vector from q<sub>1</sub> to q<sub>2</sub> be <b>r</b><sub>12</sub> = <b>r</b><sub>2</sub> - <b>r</b><sub>1</sub>, with unit vector <b>r̂</b><sub>12</sub> = <b>r</b><sub>12</sub> / r<sub>12</sub>.<br><br>The vector force exerted on q<sub>2</sub> by q<sub>1</sub> is:<br><b>F</b><sub>21</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q<sub>1</sub> q<sub>2</sub> / r<sub>12</sub><sup>2</sup>] <b>r̂</b><sub>12</sub>.<br><br>Similarly, the vector force exerted on q<sub>1</sub> by q<sub>2</sub> is:<br><b>F</b><sub>12</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q<sub>1</sub> q<sub>2</sub> / r<sub>21</sub><sup>2</sup>] <b>r̂</b><sub>21</sub>.<br><br>Since <b>r̂</b><sub>21</sub> = -<b>r̂</b><sub>12</sub> and r<sub>12</sub> = r<sub>21</sub>:<br><b>F</b><sub>12</sub> = - <b>F</b><sub>21</sub>.<br>This proves that Coulomb forces are mutual, equal in magnitude, and opposite in direction, strictly obeying Newton's Third Law."
+    },
+    {
+      title: "Superposition of Forces on an Equilateral Triangle",
+      q: "Three point charges, each equal to +q, are placed at the three vertices of an equilateral triangle of side length L. Calculate the magnitude and direction of the net electrostatic force acting on any one of the charges.",
+      sol: "Let charges be at vertices A, B, and C. Consider the charge at C.<br><br>1. Force on C due to A: F<sub>1</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sup>2</sup> / L<sup>2</sup>) along line AC produced.<br>2. Force on C due to B: F<sub>2</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sup>2</sup> / L<sup>2</sup>) along line BC produced.<br><br>Angle between <b>F</b><sub>1</sub> and <b>F</b><sub>2</sub> is &theta; = 60&deg;.<br><br>Resultant force magnitude:<br>F<sub>net</sub> = &radic;(F<sub>1</sub><sup>2</sup> + F<sub>2</sub><sup>2</sup> + 2 F<sub>1</sub> F<sub>2</sub> cos 60&deg;)<br>Since F<sub>1</sub> = F<sub>2</sub> = F:<br>F<sub>net</sub> = &radic;(F<sup>2</sup> + F<sup>2</sup> + 2 F<sup>2</sup> (0.5)) = &radic;(3 F<sup>2</sup>) = <b>&radic;3 F</b>.<br><br><b>F<sub>net</sub> = &radic;3 [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sup>2</sup> / L<sup>2</sup>)</b>, directed along the angle bisector away from the triangle."
+    },
+    {
+      title: "Electric Field at the Center of a Square",
+      q: "Four point charges q<sub>A</sub> = +2 &mu;C, q<sub>B</sub> = -5 &mu;C, q<sub>C</sub> = +2 &mu;C, and q<sub>D</sub> = -5 &mu;C are located at the corners of a square ABCD of side 10 cm. Find the net force on a charge of 1 &mu;C placed at the center of the square.",
+      sol: "Let O be the center of the square. Diagonal length = 10&radic;2 cm, so distance from each corner to center r = 5&radic;2 cm = 0.05&radic;2 m.<br><br>1. Forces due to q<sub>A</sub> (+2 &mu;C) and q<sub>C</sub> (+2 &mu;C) on +1 &mu;C at O are equal in magnitude and directed opposite along diagonal AC. Hence, <b>F</b><sub>A</sub> + <b>F</b><sub>C</sub> = 0.<br>2. Forces due to q<sub>B</sub> (-5 &mu;C) and q<sub>D</sub> (-5 &mu;C) on +1 &mu;C at O are attractive, equal in magnitude, and directed opposite along diagonal BD. Hence, <b>F</b><sub>B</sub> + <b>F</b><sub>D</sub> = 0.<br><br><b>Net electrostatic force on 1 &mu;C at center O is F<sub>net</sub> = 0 N.</b>"
+    },
+    {
+      title: "Electric Dipole in Uniform Field: Torque and Potential Energy",
+      q: "An electric dipole with dipole moment 4 &times; 10<sup>-9</sup> C m is aligned at 30&deg; with the direction of a uniform electric field of magnitude 5 &times; 10<sup>4</sup> N C<sup>-1</sup>. Calculate: (i) the magnitude of torque acting on the dipole, and (ii) its potential energy.",
+      sol: "Given: p = 4 &times; 10<sup>-9</sup> C m, E = 5 &times; 10<sup>4</sup> N C<sup>-1</sup>, &theta; = 30&deg;.<br><br>1. <b>Torque:</b><br>&tau; = p E sin &theta; = (4 &times; 10<sup>-9</sup>) &times; (5 &times; 10<sup>4</sup>) &times; sin 30&deg;<br>&tau; = (20 &times; 10<sup>-5</sup>) &times; 0.5 = <b>1.0 &times; 10<sup>-4</sup> N m</b>.<br><br>2. <b>Potential Energy:</b><br>U = -p E cos &theta; = -(4 &times; 10<sup>-9</sup>) &times; (5 &times; 10<sup>4</sup>) &times; cos 30&deg;<br>U = -(20 &times; 10<sup>-5</sup>) &times; (&radic;3 / 2) = -1.732 &times; 10<sup>-4</sup> J = <b>-1.732 &times; 10<sup>-4</sup> Joules</b>."
+    },
+    {
+      title: "Electric Flux through a Cube Containing a Point Charge",
+      q: "A point charge q = 2.0 &mu;C is at the center of a cubic Gaussian surface 9.0 cm on edge. What is the net electric flux through the surface?",
+      sol: "Given: q<sub>enclosed</sub> = 2.0 &mu;C = 2.0 &times; 10<sup>-6</sup> C, &epsilon;<sub>0</sub> = 8.854 &times; 10<sup>-12</sup> C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup>.<br><br>By Gauss's Law, the total electric flux depends only on the enclosed charge, independent of the cube dimensions:<br>&Phi;<sub>E</sub> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub><br>&Phi;<sub>E</sub> = (2.0 &times; 10<sup>-6</sup> C) / (8.854 &times; 10<sup>-12</sup> C<sup>2</sup> N<sup>-1</sup> m<sup>-2</sup>)<br>&Phi;<sub>E</sub> = <b>2.26 &times; 10<sup>5</sup> N m<sup>2</sup> C<sup>-1</sup></b>."
+    },
+    {
+      title: "Electric Field of an Infinite Line Charge Numerical",
+      q: "An infinite line charge produces an electric field of magnitude 9.0 &times; 10<sup>4</sup> N C<sup>-1</sup> at a distance of 2.0 cm. Calculate the linear charge density &lambda;.",
+      sol: "Given: E = 9.0 &times; 10<sup>4</sup> N C<sup>-1</sup>, r = 2.0 cm = 0.02 m.<br><br>Electric field due to infinite wire:<br>E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r) = [2 / (4&pi;&epsilon;<sub>0</sub>)] (&lambda; / r)<br>E = (2 &times; 9 &times; 10<sup>9</sup>) &times; (&lambda; / 0.02) = (9 &times; 10<sup>11</sup>) &lambda;<br><br>&lambda; = E / (9 &times; 10<sup>11</sup>) = (9.0 &times; 10<sup>4</sup>) / (9.0 &times; 10<sup>11</sup>) = <b>1.0 &times; 10<sup>-7</sup> C m<sup>-1</sup> = 0.1 &mu;C m<sup>-1</sup></b>."
+    },
+    {
+      title: "Five Fundamental Properties of Electric Field Lines",
+      q: "List five fundamental physical properties of electrostatic field lines.",
+      sol: "1. <b>Origin & Termination:</b> Field lines originate from positive charges and terminate on negative charges.<br>2. <b>Direction:</b> The tangent drawn at any point on a field line gives the direction of electric field intensity <b>E</b> at that point.<br>3. <b>Non-Intersecting:</b> Two field lines never intersect, as that would imply two distinct field directions at one point.<br>4. <b>Non-Closed Loops:</b> Field lines do not form closed continuous loops because electrostatic fields are conservative (&oint; <b>E</b> &sdot; d<b>l</b> = 0).<br>5. <b>Density & Strength:</b> The crowding (relative density) of field lines is directly proportional to the magnitude of the electric field."
+    },
+    {
+      title: "Derive Expression for Continuous Charge Distributions",
+      q: "Explain with mathematical expressions the three types of continuous charge distributions: linear, surface, and volume.",
+      sol: "1. <b>Linear Charge Distribution (&lambda;):</b> Charge along a line/wire. &lambda; = dq / dl [C m<sup>-1</sup>]. Total force on test charge q<sub>0</sub>: <b>F</b> = [q<sub>0</sub> / (4&pi;&epsilon;<sub>0</sub>)] &int; (&lambda; dl / r<sup>2</sup>) <b>r̂</b>.<br><br>2. <b>Surface Charge Distribution (&sigma;):</b> Charge across a 2D surface. &sigma; = dq / dA [C m<sup>-2</sup>]. Total force: <b>F</b> = [q<sub>0</sub> / (4&pi;&epsilon;<sub>0</sub>)] &int; (&sigma; dA / r<sup>2</sup>) <b>r̂</b>.<br><br>3. <b>Volume Charge Distribution (&rho;):</b> Charge inside a 3D volume. &rho; = dq / dV [C m<sup>-3</sup>]. Total force: <b>F</b> = [q<sub>0</sub> / (4&pi;&epsilon;<sub>0</sub>)] &int; (&rho; dV / r<sup>2</sup>) <b>r̂</b>."
+    },
+    {
+      title: "Equilibrium of Three Collinear Charges",
+      q: "Two point charges +q and +4q are separated by distance L. Where should a third charge q' be placed on the line connecting them so that the whole system remains in equilibrium?",
+      sol: "Let q' be placed at distance x from +q. For equilibrium of q':<br>F<sub>1</sub> = F<sub>2</sub> &rArr; [1 / (4&pi;&epsilon;<sub>0</sub>)] (q q' / x<sup>2</sup>) = [1 / (4&pi;&epsilon;<sub>0</sub>)] (4q q' / (L - x)<sup>2</sup>)<br>1 / x<sup>2</sup> = 4 / (L - x)<sup>2</sup> &rArr; 1 / x = 2 / (L - x)<br>L - x = 2x &rArr; 3x = L &rArr; <b>x = L / 3 from charge +q</b>.<br><br>For system equilibrium, q' must be negative: q' = -4q / 9."
+    },
+    {
+      title: "Electric Flux through Shaded Portion of a Sphere",
+      q: "A charge q is placed at the center of a cube. What is the electric flux through each of its 6 faces?",
+      sol: "By Gauss's Law, the total flux emerging out of the closed cubic surface enclosing charge q is &Phi;<sub>total</sub> = q / &epsilon;<sub>0</sub>.<br><br>Since a cube has 6 identical, symmetrically situated faces, the flux through any single face is exactly one-sixth of the total flux:<br><b>&Phi;<sub>one face</sub> = q / (6 &epsilon;<sub>0</sub>)</b>."
+    },
+    {
+      title: "Acceleration of Alpha Particle vs Proton in Uniform Field",
+      q: "A proton and an &alpha;-particle enter a uniform electric field with the same kinetic energy. Compare their accelerations.",
+      sol: "Force on a charged particle in field E is F = q E, and acceleration a = F / m = q E / m.<br><br>For proton: q<sub>p</sub> = e, m<sub>p</sub> = m &rArr; a<sub>p</sub> = e E / m.<br>For alpha particle: q<sub>&alpha;</sub> = 2e, m<sub>&alpha;</sub> = 4m &rArr; a<sub>&alpha;</sub> = (2e) E / (4m) = e E / (2m).<br><br>Ratio of accelerations: <b>a<sub>p</sub> / a<sub>&alpha;</sub> = (e E / m) / (e E / 2m) = 2 : 1</b>."
+    },
+    {
+      title: "Physical Basis of Electrostatic Shielding and Lightning",
+      q: "Explain why it is safer to remain inside a car during a thunderstorm with lightning rather than standing under a tree.",
+      sol: "A car's metallic body acts as a closed conducting shell (Faraday cage). When lightning strikes, excess electrical charge flows entirely over the outer metallic surface into the ground without penetrating inside. The electrostatic field inside the hollow metal interior remains strictly zero (E<sub>in</sub> = 0), shielding the occupants from electric shock."
+    },
+    {
+      title: "Electric Field of Dipole at a General Point (r, &theta;)",
+      q: "Write the general formula for the magnitude of the electric field of a short dipole at any arbitrary point (r, &theta;) and deduce axial and equatorial fields as special cases.",
+      sol: "The general electric field formula at polar coordinates (r, &theta;) for a short dipole is:<br><b>E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (p / r<sup>3</sup>) &radic;(1 + 3 cos<sup>2</sup> &theta;)</b>.<br><br>1. <b>Axial Point (&theta; = 0&deg;):</b> cos 0&deg; = 1 &rArr; &radic;(1 + 3(1)) = 2 &rArr; E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>).<br>2. <b>Equatorial Point (&theta; = 90&deg;):</b> cos 90&deg; = 0 &rArr; &radic;(1 + 0) = 1 &rArr; E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (p / r<sup>3</sup>)."
+    },
+    {
+      title: "Electric Field Lines for Two Unequal Positive Charges",
+      q: "Sketch the pattern of electric field lines for two positive charges +2q and +q separated by a distance d, and indicate the position of the neutral point.",
+      sol: "Field lines emerge radially outwards from both charges, curving away from each other. Because +2q is stronger, it produces more field lines and pushes the neutral point N (where E = 0) closer to the weaker charge +q. Distance of neutral point from +q is x = d / (&radic;2 + 1)."
+    },
+    {
+      title: "Verify Conservation of Charge in Pair Annihilation",
+      q: "Explain how conservation of charge is verified in the process of pair production and pair annihilation.",
+      sol: "1. <b>Pair Production:</b> A neutral gamma-ray photon (&gamma;, charge 0) creates an electron (e<sup>-</sup>, charge -1e) and a positron (e<sup>+</sup>, charge +1e): &gamma; &rarr; e<sup>-</sup> + e<sup>+</sup>. Initial charge = 0, Final charge = -1e + 1e = 0.<br>2. <b>Pair Annihilation:</b> An electron and positron collide to form two gamma photons: e<sup>-</sup> + e<sup>+</sup> &rarr; 2&gamma;. Initial charge = -1e + 1e = 0, Final charge = 0."
+    },
+    {
+      title: "Calculate Total Flux for Charge Placed at Corner of Cube",
+      q: "A point charge q is placed at one of the 8 corners of a cube of edge a. Calculate the electric flux passing through the cube.",
+      sol: "To enclose the corner charge symmetrically, 8 identical cubes must be assembled together sharing that vertex. Total flux through all 8 cubes is q / &epsilon;<sub>0</sub>.<br><br>Therefore, the flux passing through one single cube is: <b>&Phi; = q / (8 &epsilon;<sub>0</sub>)</b>."
+    },
+    {
+      title: "Deduce Coulomb's Law from Gauss's Theorem",
+      q: "Using Gauss's Theorem, deduce Coulomb's Law for the electrostatic force between two point charges.",
+      sol: "Consider an isolated point charge q at origin O. Draw a spherical Gaussian surface of radius r centered at O.<br>By spherical symmetry, <b>E</b> is radial and uniform across the surface. Flux &Phi; = &oint; <b>E</b> &sdot; d<b>A</b> = E (4&pi; r<sup>2</sup>).<br>Applying Gauss's Law: E (4&pi; r<sup>2</sup>) = q / &epsilon;<sub>0</sub> &rArr; E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q / r<sup>2</sup>).<br><br>Placing a test charge q<sub>0</sub> at distance r, the force is F = q<sub>0</sub> E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q q<sub>0</sub> / r<sup>2</sup>), which is Coulomb's Law."
+    },
+    {
+      title: "Potential Energy of an Electric Dipole in Uniform Field",
+      q: "Derive an expression for the electrostatic potential energy stored in an electric dipole placed in a uniform electric field.",
+      sol: "Work done dW in rotating the dipole by angle d&theta; against restoring torque is dW = &tau; d&theta; = p E sin &theta; d&theta;.<br><br>Total work done from reference angle &theta;<sub>1</sub> = 90&deg; to angle &theta;:<br>W = &int;<sub>90&deg;</sub><sup>&theta;</sup> p E sin &theta; d&theta; = p E [-cos &theta;]<sub>90&deg;</sub><sup>&theta;</sup> = -p E cos &theta;.<br><br><b>Potential Energy: U = -p E cos &theta; = -<b>p</b> &sdot; <b>E</b></b>."
+    },
+    {
+      title: "Electric Field Intensity due to Thin Spherical Shell at Surface",
+      q: "Find the electric field intensity on the surface of a charged spherical shell of radius R carrying charge Q and surface charge density &sigma;.",
+      sol: "At the surface r = R, Gaussian sphere coincides with shell. Enclosed charge is Q = &sigma; (4&pi; R<sup>2</sup>).<br>E (4&pi; R<sup>2</sup>) = Q / &epsilon;<sub>0</sub> &rArr; E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / R<sup>2</sup>).<br>Substitute Q = 4&pi; R<sup>2</sup> &sigma;: <b>E = &sigma; / &epsilon;<sub>0</sub></b>."
+    },
+    {
+      title: "Ratio of Forces between Two Electrons and Two Protons",
+      q: "Compare the ratio of electrostatic force to gravitational force between two electrons at a given separation.",
+      sol: "Electrostatic force F<sub>e</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (e<sup>2</sup> / r<sup>2</sup>), Gravitational force F<sub>g</sub> = G (m<sub>e</sub><sup>2</sup> / r<sup>2</sup>).<br>Ratio F<sub>e</sub> / F<sub>g</sub> = (9 &times; 10<sup>9</sup> &times; (1.6 &times; 10<sup>-19</sup>)<sup>2</sup>) / (6.67 &times; 10<sup>-11</sup> &times; (9.1 &times; 10<sup>-31</sup>)<sup>2</sup>) &approx; <b>10<sup>42</sup></b>.<br>Electrostatic force is 10<sup>42</sup> times stronger than gravitational force."
+    },
+    {
+      title: "Why Charge Resides on Outer Surface of Conductor",
+      q: "Explain why static electric charge resides entirely on the outer surface of a conductor.",
+      sol: "In conductors, free electrons can move freely. Like charges repel each other with maximum force and push one another as far apart as possible until they reach the boundary (outer surface). Inside the conductor, E = 0, so no net charge can remain enclosed."
+    },
+    {
+      title: "Force on a Charge Placed Outside a Neutral Spherical Conductor",
+      q: "A point charge +q is placed outside an uncharged metallic sphere. Does the sphere experience any electrostatic force?",
+      sol: "Yes. The external charge +q induces negative bound charge on the near side and equal positive charge on the far side of the sphere. Since the attractive force on the nearer induced negative charges is greater than the repulsive force on the farther positive charges, the uncharged sphere experiences a <b>net attractive force towards +q</b>."
+    },
+    {
+      title: "Gauss Law Validity for Inverse Cube Law",
+      q: "Would Gauss's Law remain valid if the electrostatic force obeyed an inverse cube law (F &prop; 1/r<sup>3</sup>) instead of an inverse square law?",
+      sol: "No. Gauss's theorem fundamentally relies on the inverse square nature of Coulomb's Law (F &prop; 1/r<sup>2</sup>), where the area of a sphere increases as r<sup>2</sup> and exactly cancels the 1/r<sup>2</sup> field decay, making total flux independent of distance. For an inverse cube law, &Phi; would depend on radius (&Phi; &prop; 1/r) and Gauss's Law would fail."
+    },
+    {
+      title: "Electric Flux for Parallel Sheet Configuration",
+      q: "Two large, thin metal plates are parallel and close to each other with equal and opposite surface charge densities &plusmn;&sigma;. Find electric field E: (i) outside the plates, and (ii) between the plates.",
+      sol: "1. <b>Outside the plates:</b> Fields due to positive sheet (E<sub>+</sub> = &sigma;/2&epsilon;<sub>0</sub> outwards) and negative sheet (E<sub>-</sub> = &sigma;/2&epsilon;<sub>0</sub> inwards) are equal and opposite: <b>E<sub>outside</sub> = E<sub>+</sub> - E<sub>-</sub> = 0</b>.<br>2. <b>Between the plates:</b> Fields are in the same direction: <b>E<sub>inside</sub> = &sigma;/(2&epsilon;<sub>0</sub>) + &sigma;/(2&epsilon;<sub>0</sub>) = &sigma; / &epsilon;<sub>0</sub></b>."
+    },
+    {
+      title: "Stable vs Unstable Equilibrium of Dipole in Uniform Field",
+      q: "Contrast the stable and unstable equilibrium states of an electric dipole in a uniform electric field.",
+      sol: "1. <b>Stable Equilibrium (&theta; = 0&deg;):</b> Dipole moment <b>p</b> is parallel to field <b>E</b>. Torque &tau; = 0, Potential energy U = -p E (minimum). Small displacement creates a restoring torque returning dipole to 0&deg;.<br>2. <b>Unstable Equilibrium (&theta; = 180&deg;):</b> Dipole moment <b>p</b> is anti-parallel to <b>E</b>. Torque &tau; = 0, Potential energy U = +p E (maximum). Small displacement causes dipole to rotate completely away from 180&deg;."
+    },
+    {
+      title: "Calculate Work Done in Turning Dipole by 90&deg;",
+      q: "An electric dipole of moment 5 &times; 10<sup>-8</sup> C m is initially aligned along a uniform field of 10<sup>5</sup> N C<sup>-1</sup>. Calculate work done in rotating it through 90&deg;.",
+      sol: "Work done W = -p E (cos &theta;<sub>2</sub> - cos &theta;<sub>1</sub>)<br>W = -(5 &times; 10<sup>-8</sup> &times; 10<sup>5</sup>) &times; (cos 90&deg; - cos 0&deg;)<br>W = -(5 &times; 10<sup>-3</sup>) &times; (0 - 1) = <b>+5.0 &times; 10<sup>-3</sup> Joules</b>."
+    },
+    {
+      title: "Electric Field at Center of Semicircular Ring",
+      q: "A thin wire is bent into a semicircle of radius R carrying uniform linear charge density &lambda;. What is the electric field at the center of curvature?",
+      sol: "By symmetry, horizontal components cancel out, while vertical components along the axis of symmetry add up.<br>Integrating dE<sub>y</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (&lambda; R d&theta; / R<sup>2</sup>) sin &theta; from 0 to &pi;:<br><b>E = 2 &lambda; / (4&pi;&epsilon;<sub>0</sub> R) = &lambda; / (2&pi;&epsilon;<sub>0</sub> R)</b>, directed away from the charged ring."
+    },
+    {
+      title: "Electric Flux for a Charge Placed on Surface of a Closed Cylinder",
+      q: "A point charge q is placed exactly at the center of one flat circular end face of a cylinder. Calculate the total flux entering the cylinder.",
+      sol: "By constructing an identical symmetric cylinder on top to enclose the charge at the interface, the total flux is q / &epsilon;<sub>0</sub>.<br>Therefore, the flux entering inside the original lower cylinder is exactly half: <b>&Phi; = q / (2 &epsilon;<sub>0</sub>)</b>."
+    }
+  ];
+
+  const lasData = [
+    {
+      title: "Electric Field Intensity on the Axial Line of an Electric Dipole",
+      q: "Derive an expression for the electric field intensity at a point on the axial line of an electric dipole. Hence, deduce the expression for a short dipole.",
+      sol: "<b>1. System Description:</b><br>Consider an electric dipole consisting of two point charges -q and +q separated by a distance 2a. Let O be the center of the dipole. We wish to calculate the electric field at point P on the axial line at a distance r from center O.<br><br><b>2. Field Calculations:</b><br>Distance of P from +q is (r - a). Electric field at P due to +q is:<br>E<sub>+</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q / (r - a)<sup>2</sup>] (directed along OP produced away from +q).<br><br>Distance of P from -q is (r + a). Electric field at P due to -q is:<br>E<sub>-</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q / (r + a)<sup>2</sup>] (directed towards -q along PO).<br><br><b>3. Net Axial Field:</b><br>Since E<sub>+</sub> > E<sub>-</sub>, the net electric field is:<br>E<sub>axial</sub> = E<sub>+</sub> - E<sub>-</sub> = [q / (4&pi;&epsilon;<sub>0</sub>)] [ 1 / (r - a)<sup>2</sup> - 1 / (r + a)<sup>2</sup> ]<br>E<sub>axial</sub> = [q / (4&pi;&epsilon;<sub>0</sub>)] [ (r + a)<sup>2</sup> - (r - a)<sup>2</sup> ] / (r<sup>2</sup> - a<sup>2</sup>)<sup>2</sup><br>E<sub>axial</sub> = [q / (4&pi;&epsilon;<sub>0</sub>)] [ 4 a r ] / (r<sup>2</sup> - a<sup>2</sup>)<sup>2</sup><br><br>Since dipole moment p = q (2a):<br><b>E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [ 2 p r / (r<sup>2</sup> - a<sup>2</sup>)<sup>2</sup> ]</b>.<br><br><b>4. Short Dipole Approximation (r >> a):</b><br>Neglecting a<sup>2</sup> compared to r<sup>2</sup>, (r<sup>2</sup> - a<sup>2</sup>)<sup>2</sup> &approx; r<sup>4</sup>:<br><b>E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [ 2 p / r<sup>3</sup> ]</b>.<br>Vectorially: <b>E<sub>axial</sub></b> is directed parallel to the dipole moment vector <b>p</b>."
+    },
+    {
+      title: "Electric Field Intensity on the Equatorial Line of an Electric Dipole",
+      q: "Derive an expression for the electric field intensity at a point on the equatorial line (perpendicular bisector) of an electric dipole.",
+      sol: "<b>1. System Description:</b><br>Consider an electric dipole consisting of charges -q and +q separated by 2a with center O. Let point Q lie on the perpendicular bisector at a distance r from O.<br><br><b>2. Distance and Field Magnitudes:</b><br>Distance of Q from each charge is d = &radic;(r<sup>2</sup> + a<sup>2</sup>).<br>Magnitude of field due to +q: E<sub>+</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q / (r<sup>2</sup> + a<sup>2</sup>)] (directed away from +q).<br>Magnitude of field due to -q: E<sub>-</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [q / (r<sup>2</sup> + a<sup>2</sup>)] (directed towards -q).<br>Clearly, E<sub>+</sub> = E<sub>-</sub> = E.<br><br><b>3. Resolution of Components:</b><br>Let &theta; be the angle between dipole axis and line joining charges to Q. cos &theta; = a / &radic;(r<sup>2</sup> + a<sup>2</sup>).<br>Vertical components E<sub>+</sub> sin &theta; and E<sub>-</sub> sin &theta; are equal and opposite, cancelling to zero.<br>Horizontal components E<sub>+</sub> cos &theta; and E<sub>-</sub> cos &theta; add up in the direction opposite to dipole moment <b>p</b>.<br><br><b>4. Net Equatorial Field:</b><br>E<sub>eq</sub> = 2 E cos &theta; = 2 [1 / (4&pi;&epsilon;<sub>0</sub>)] [q / (r<sup>2</sup> + a<sup>2</sup>)] [a / &radic;(r<sup>2</sup> + a<sup>2</sup>)]<br>E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [ (2 a q) / (r<sup>2</sup> + a<sup>2</sup>)<sup>3/2</sup> ]<br>Substitute p = q (2a):<br><b>E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [ p / (r<sup>2</sup> + a<sup>2</sup>)<sup>3/2</sup> ]</b>.<br><br><b>5. For Short Dipole (r >> a):</b><br><b>E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [ p / r<sup>3</sup> ]</b>.<br>Vectorially: <b>E<sub>eq</sub></b> is directed anti-parallel to <b>p</b>."
+    },
+    {
+      title: "Gauss's Theorem Proof and Coulomb's Law Equivalence",
+      q: "State Gauss's Theorem in electrostatics. Prove it for a spherical Gaussian surface enclosing an isolated point charge q.",
+      sol: "<b>1. Statement:</b><br>Gauss's Theorem states that the total outward electric flux passing through any closed three-dimensional Gaussian surface in free space equals 1/&epsilon;<sub>0</sub> times the net algebraic electric charge enclosed inside the surface: &oint; <b>E</b> &sdot; d<b>A</b> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub>.<br><br><b>2. Proof for Isolated Point Charge:</b><br>Consider a positive point charge q at origin O. Construct a concentric spherical Gaussian surface of radius r.<br>At every point on this sphere, the electric field <b>E</b> is directed radially outwards, and the area vector d<b>A</b> is also directed radially outwards. Thus, angle &theta; = 0&deg; and <b>E</b> &sdot; d<b>A</b> = E dA cos 0&deg; = E dA.<br><br><b>3. Flux Integration:</b><br>&Phi;<sub>E</sub> = &oint; <b>E</b> &sdot; d<b>A</b> = &oint; E dA = E &oint; dA.<br>Since total surface area of the sphere is &oint; dA = 4&pi; r<sup>2</sup>:<br>&Phi;<sub>E</sub> = E (4&pi; r<sup>2</sup>).<br><br>From Coulomb's law, E = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q / r<sup>2</sup>).<br>Substitute E:<br>&Phi;<sub>E</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q / r<sup>2</sup>) &times; (4&pi; r<sup>2</sup>) = <b>q / &epsilon;<sub>0</sub></b>.<br><br>This rigorously proves Gauss's Theorem."
+    },
+    {
+      title: "Gauss's Law Application: Infinitely Long Straight Uniformly Charged Wire",
+      q: "Using Gauss's Law, derive an expression for the electric field intensity due to an infinitely long straight wire with uniform linear charge density &lambda;.",
+      sol: "<b>1. Gaussian Surface Construction:</b><br>Consider an infinitely long straight thin wire carrying uniform linear charge density &lambda;. By cylindrical symmetry, electric field lines radiate radially perpendicular to the wire.<br>Construct a coaxial cylindrical Gaussian surface of radius r and length L centered on the wire.<br><br><b>2. Charge Enclosed:</b><br>The net charge enclosed inside the Gaussian cylinder of length L is: q<sub>enclosed</sub> = &lambda; L.<br><br><b>3. Flux Through Cylinder Faces:</b><br>The cylinder has three faces:<br>- Top circular cap (S<sub>1</sub>): <b>E</b> &perp; d<b>A</b><sub>1</sub> &rArr; &Phi;<sub>1</sub> = &int; E dA cos 90&deg; = 0.<br>- Bottom circular cap (S<sub>2</sub>): <b>E</b> &perp; d<b>A</b><sub>2</sub> &rArr; &Phi;<sub>2</sub> = &int; E dA cos 90&deg; = 0.<br>- Curved cylindrical surface (S<sub>3</sub>): <b>E</b> || d<b>A</b><sub>3</sub> &rArr; &Phi;<sub>3</sub> = &int; E dA cos 0&deg; = E &int; dA = E (2&pi; r L).<br><br>Total Flux: &Phi;<sub>total</sub> = 0 + 0 + E (2&pi; r L) = E (2&pi; r L).<br><br><b>4. Applying Gauss's Law:</b><br>&Phi;<sub>total</sub> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub><br>E (2&pi; r L) = &lambda; L / &epsilon;<sub>0</sub><br><br><b>E = &lambda; / (2&pi; &epsilon;<sub>0</sub> r)</b>.<br>Vectorially: <b>E = [&lambda; / (2&pi; &epsilon;<sub>0</sub> r)] r̂</b>."
+    },
+    {
+      title: "Gauss's Law Application: Uniformly Charged Infinite Plane Sheet",
+      q: "Using Gauss's Law, derive an expression for the electric field intensity due to an infinite plane sheet of charge with uniform surface charge density &sigma;.",
+      sol: "<b>1. Gaussian Surface Construction:</b><br>Consider an infinite thin non-conducting plane sheet carrying uniform surface charge density &sigma;. The electric field is uniform, directed perpendicularly away from the sheet on both sides.<br>Construct a cylindrical pillbox Gaussian surface of cross-sectional area A piercing the sheet perpendicularly, with end caps parallel to the sheet.<br><br><b>2. Charge Enclosed:</b><br>The area of the sheet enclosed inside the cylinder is A. Hence, q<sub>enclosed</sub> = &sigma; A.<br><br><b>3. Flux Through Surfaces:</b><br>- Curved cylindrical surface: <b>E</b> is parallel to surface (<b>E</b> &perp; d<b>A</b>) &rArr; &Phi;<sub>curved</sub> = 0.<br>- Left flat end cap: <b>E</b> || d<b>A</b> &rArr; &Phi;<sub>left</sub> = E A.<br>- Right flat end cap: <b>E</b> || d<b>A</b> &rArr; &Phi;<sub>right</sub> = E A.<br><br>Total Flux &Phi;<sub>total</sub> = E A + E A = 2 E A.<br><br><b>4. Applying Gauss's Law:</b><br>2 E A = q<sub>enclosed</sub> / &epsilon;<sub>0</sub> = &sigma; A / &epsilon;<sub>0</sub><br><br><b>E = &sigma; / (2 &epsilon;<sub>0</sub>)</b>.<br>The electric field is completely independent of the distance r from the sheet."
+    },
+    {
+      title: "Gauss's Law Application: Uniformly Charged Thin Spherical Shell",
+      q: "Using Gauss's Law, derive expressions for the electric field intensity due to a uniformly charged thin spherical shell of radius R carrying charge Q: (i) outside the shell (r &ge; R), and (ii) inside the shell (r < R).",
+      sol: "<b>1. Case I: Outside the Shell (r &ge; R):</b><br>Construct a concentric spherical Gaussian surface of radius r &ge; R.<br>By spherical symmetry, <b>E</b> is radial and uniform. Area vector d<b>A</b> is radial.<br>&Phi; = &oint; <b>E</b> &sdot; d<b>A</b> = E (4&pi; r<sup>2</sup>).<br>Enclosed charge q<sub>enclosed</sub> = Q.<br>Applying Gauss's Law: E (4&pi; r<sup>2</sup>) = Q / &epsilon;<sub>0</sub><br><b>E<sub>out</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [Q / r<sup>2</sup>]</b>.<br>(For external points, the entire charge behaves as if concentrated at the center).<br><br><b>2. Case II: Inside the Shell (r < R):</b><br>Construct a concentric spherical Gaussian surface of radius r < R inside the shell.<br>Since all charge resides entirely on the outer surface of the shell, the charge enclosed within this Gaussian surface is zero (q<sub>enclosed</sub> = 0).<br>Applying Gauss's Law: E (4&pi; r<sup>2</sup>) = 0 / &epsilon;<sub>0</sub> = 0<br><b>E<sub>in</sub> = 0</b>.<br><br>This complete vanishing of the electric field inside any hollow charged conductor provides the mathematical foundation for electrostatic shielding."
+    },
+    {
+      title: "Torque and Work Done in Rotating an Electric Dipole in Uniform Field",
+      q: "Derive an expression for the torque acting on an electric dipole placed in a uniform electric field. Hence, find the work done in rotating the dipole from angle &theta;<sub>1</sub> to &theta;<sub>2</sub>.",
+      sol: "<b>1. Torque Derivation:</b><br>Consider a dipole with charges -q and +q separated by 2a in a uniform electric field <b>E</b> at angle &theta;.<br>Force on +q: <b>F</b><sub>+</sub> = +q <b>E</b>.<br>Force on -q: <b>F</b><sub>-</sub> = -q <b>E</b>.<br>Net force F<sub>net</sub> = 0.<br>Perpendicular distance between lines of action of the two forces = 2a sin &theta;.<br>Torque &tau; = Force &times; Perpendicular distance = (q E) &times; (2a sin &theta;) = (q 2a) E sin &theta;.<br>Since p = q (2a): <b>&tau; = p E sin &theta;</b> (Vectorially: <b>&tau; = p &times; E</b>).<br><br><b>2. Work Done Derivation:</b><br>Work done in rotating through small angle d&theta;: dW = &tau; d&theta; = p E sin &theta; d&theta;.<br>Total work done from &theta;<sub>1</sub> to &theta;<sub>2</sub>:<br>W = &int;<sub>&theta;<sub>1</sub></sub><sup>&theta;<sub>2</sub></sup> p E sin &theta; d&theta; = p E [-cos &theta;]<sub>&theta;<sub>1</sub></sub><sup>&theta;<sub>2</sub></sup><br><b>W = p E (cos &theta;<sub>1</sub> - cos &theta;<sub>2</sub>)</b>."
+    },
+    {
+      title: "Comprehensive Synthesis of Coulomb's Law and Superposition",
+      q: "Explain Coulomb's Law in detail. Discuss its limitations, physical importance, and apply the superposition principle to calculate the net force on a central charge surrounded by a polygon of charges.",
+      sol: "<b>1. Coulomb's Law Statement & Formula:</b><br>The electrostatic force between two stationary point charges is directly proportional to the product of charges and inversely proportional to the square of separation: F = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sub>1</sub> q<sub>2</sub> / r<sup>2</sup>).<br><br><b>2. Limitations:</b><br>- Valid only for stationary (static) charges.<br>- Applicable only to point charges (size negligible compared to distance).<br>- Valid for distances greater than nuclear dimensions (r > 10<sup>-15</sup> m).<br><br><b>3. Superposition on a Regular Polygon:</b><br>For N identical charges +q placed at the vertices of a regular N-sided polygon, the vector forces on a charge +q<sub>0</sub> at the geometric center have equal magnitudes and are symmetrically separated by angles of 360&deg;/N. Their vector sum cancels out identically to <b>F<sub>net</sub> = 0</b>."
+    },
+    {
+      title: "Detailed Physical Characteristics of Conductors in Electrostatic Fields",
+      q: "Discuss five characteristic electrostatic properties of a conductor placed in an electric field.",
+      sol: "1. <b>Inside a conductor, E = 0:</b> Free electrons redistribute until internal electric field cancels external field completely.<br>2. <b>Static charge resides strictly on the outer surface:</b> By Gauss's law, since E = 0 inside, net enclosed charge is zero.<br>3. <b>Electric field at the surface is strictly normal:</b> If there were a tangential component, surface charges would experience force and flow, violating electrostatic equilibrium. Magnitude is E = &sigma; / &epsilon;<sub>0</sub>.<br>4. <b>Electrostatic potential is constant throughout the volume:</b> Since E = -dV/dr = 0 inside, potential V is constant everywhere in and on the conductor.<br>5. <b>Electric field is zero in the cavity of a hollow conductor (Electrostatic Shielding):</b> Any cavity inside a conductor remains completely protected from external electrical influences."
+    },
+    {
+      title: "Comprehensive Numerical Problem on Dipole and Flux",
+      q: "An electric dipole consists of charges &plusmn;3.0 &mu;C separated by 2.0 mm. It is placed inside a closed sphere of radius 10 cm. Find: (i) dipole moment, (ii) electric field at an axial point 15 cm from center, (iii) electric field at an equatorial point 15 cm from center, and (iv) total flux through the sphere.",
+      sol: "Given: q = 3.0 &times; 10<sup>-6</sup> C, 2a = 2.0 &times; 10<sup>-3</sup> m, r = 0.15 m.<br><br>1. <b>Dipole Moment:</b><br>p = q (2a) = (3.0 &times; 10<sup>-6</sup>) &times; (2.0 &times; 10<sup>-3</sup>) = <b>6.0 &times; 10<sup>-9</sup> C m</b>.<br><br>2. <b>Axial Field (r >> a):</b><br>E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>) = (9 &times; 10<sup>9</sup>) &times; (2 &times; 6.0 &times; 10<sup>-9</sup>) / (0.15)<sup>3</sup><br>E<sub>axial</sub> = 108 / 0.003375 = <b>3.2 &times; 10<sup>4</sup> N C<sup>-1</sup></b>.<br><br>3. <b>Equatorial Field:</b><br>E<sub>eq</sub> = E<sub>axial</sub> / 2 = (3.2 &times; 10<sup>4</sup>) / 2 = <b>1.6 &times; 10<sup>4</sup> N C<sup>-1</sup></b>.<br><br>4. <b>Total Flux:</b><br>q<sub>enclosed</sub> = +3 &mu;C - 3 &mu;C = 0 &rArr; <b>&Phi;<sub>E</sub> = 0 N m<sup>2</sup> C<sup>-1</sup></b>."
+    },
+    {
+      title: "Gauss's Law Application: Uniformly Charged Conducting Solid Sphere",
+      q: "Explain how Gauss's Law is used to find the electric field of a solid conducting sphere of radius R carrying charge Q. Plot E versus distance r from r = 0 to r &rarr; &infin;.",
+      sol: "In a conducting sphere, excess charge Q resides entirely on the outer surface.<br><br>1. <b>Inside (r < R):</b> q<sub>enclosed</sub> = 0 &rArr; <b>E<sub>in</sub> = 0</b>.<br>2. <b>On the surface (r = R):</b> <b>E<sub>surface</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / R<sup>2</sup>)</b>.<br>3. <b>Outside (r > R):</b> <b>E<sub>out</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>) &prop; 1/r<sup>2</sup></b>.<br><br><b>Graph of E vs r:</b> E is 0 from r = 0 to r = R, jumps discontinuously to maximum value E<sub>max</sub> at r = R, and then decays inversely as 1/r<sup>2</sup> for r > R."
+    },
+    {
+      title: "Motion of a Charged Particle in a Uniform Transverse Electric Field",
+      q: "An electron of mass m and charge -e enters a region of uniform electric field E with initial horizontal velocity v<sub>x</sub> perpendicular to field lines. Derive the trajectory equation and prove that the path is parabolic.",
+      sol: "Let the electric field be directed vertically upwards along the y-axis. The force on the electron is F<sub>y</sub> = -e E (downwards).<br><br>1. <b>Horizontal Motion (x-direction):</b> No force acts horizontally. Velocity v<sub>x</sub> is constant.<br>x = v<sub>x</sub> t &rArr; t = x / v<sub>x</sub>.<br><br>2. <b>Vertical Motion (y-direction):</b> Initial vertical velocity u<sub>y</sub> = 0. Acceleration a<sub>y</sub> = e E / m.<br>y = u<sub>y</sub> t + (1/2) a<sub>y</sub> t<sup>2</sup> = (1/2) (e E / m) t<sup>2</sup>.<br><br>3. <b>Trajectory Equation:</b> Substitute t = x / v<sub>x</sub>:<br><b>y = [ e E / (2 m v<sub>x</sub><sup>2</sup>) ] x<sup>2</sup></b>.<br><br>Since y &prop; x<sup>2</sup>, the trajectory of the charged particle in a uniform transverse electric field is a <b>parabola</b>."
+    },
+    {
+      title: "Comparison of Electric Field and Gravitational Field",
+      q: "Compare the electrostatic field and gravitational field, highlighting four key similarities and four key differences.",
+      sol: "<b>Similarities:</b><br>1. Both obey inverse-square laws (E &prop; 1/r<sup>2</sup> and g &prop; 1/r<sup>2</sup>).<br>2. Both are central and conservative forces (&oint; <b>F</b> &sdot; d<b>r</b> = 0).<br>3. Both operate in vacuum without requiring a physical medium.<br>4. Both obey the principle of superposition.<br><br><b>Differences:</b><br>1. Electrostatic forces can be attractive or repulsive; Gravitational forces are always attractive.<br>2. Electrostatic force depends strongly on the intervening medium (K); Gravitational force is independent of medium.<br>3. Electrostatic force is vastly stronger (&approx; 10<sup>36</sup> to 10<sup>42</sup> times stronger).<br>4. Electric charge is quantized (q = &plusmn;n e); Mass quantization has not been observed."
+    },
+    {
+      title: "Electric Flux and Field of Non-Conducting Uniformly Charged Solid Sphere",
+      q: "Derive the electric field intensity inside and outside a non-conducting solid sphere of radius R having uniform volume charge density &rho; and total charge Q.",
+      sol: "<b>1. Outside the Sphere (r &ge; R):</b><br>Gaussian surface of radius r encloses total charge Q.<br>&Phi; = E (4&pi; r<sup>2</sup>) = Q / &epsilon;<sub>0</sub> &rArr; <b>E<sub>out</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>)</b>.<br><br><b>2. Inside the Sphere (r < R):</b><br>A concentric Gaussian sphere of radius r encloses charge q' in volume (4/3)&pi; r<sup>3</sup>.<br>q' = &rho; &times; (4/3)&pi; r<sup>3</sup> = [ Q / ((4/3)&pi; R<sup>3</sup>) ] &times; (4/3)&pi; r<sup>3</sup> = Q (r<sup>3</sup> / R<sup>3</sup>).<br><br>Applying Gauss's Law:<br>E (4&pi; r<sup>2</sup>) = q' / &epsilon;<sub>0</sub> = [Q r<sup>3</sup>] / [&epsilon;<sub>0</sub> R<sup>3</sup>]<br><b>E<sub>in</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] [Q r / R<sup>3</sup>]</b>.<br><br>Inside the non-conducting sphere, the electric field is directly proportional to distance from center (E<sub>in</sub> &prop; r)."
+    },
+    {
+      title: "Master Conceptual Summary of Unit I: Electric Charges and Fields",
+      q: "Provide an exhaustive master synthesis of Unit I: Electric Charges and Fields summarizing the core laws, formulas, symmetry principles, and technological applications.",
+      sol: "<b>1. Fundamental Principles:</b><br>- Quantization: q = &plusmn;n e (e = 1.602 &times; 10<sup>-19</sup> C).<br>- Conservation: &Sigma; q = constant in an isolated system.<br>- Coulomb's Law: <b>F</b> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (q<sub>1</sub> q<sub>2</sub> / r<sup>2</sup>) <b>r̂</b>.<br><br><b>2. Field and Dipole Formulations:</b><br>- Electric Field: <b>E</b> = <b>F</b> / q<sub>0</sub>.<br>- Dipole Moment: <b>p</b> = q (2<b>a</b>).<br>- Axial Field: E<sub>axial</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (2p / r<sup>3</sup>).<br>- Equatorial Field: E<sub>eq</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (p / r<sup>3</sup>).<br>- Torque: <b>&tau;</b> = <b>p</b> &times; <b>E</b> (&tau; = p E sin &theta;); Potential Energy: U = -<b>p</b> &sdot; <b>E</b>.<br><br><b>3. Gauss's Law & Applications:</b><br>- Law: &oint; <b>E</b> &sdot; d<b>A</b> = q<sub>enclosed</sub> / &epsilon;<sub>0</sub>.<br>- Infinite Wire: E = &lambda; / (2&pi;&epsilon;<sub>0</sub> r).<br>- Infinite Sheet: E = &sigma; / (2&epsilon;<sub>0</sub>).<br>- Spherical Shell: E<sub>out</sub> = [1 / (4&pi;&epsilon;<sub>0</sub>)] (Q / r<sup>2</sup>), E<sub>in</sub> = 0.<br><br><b>4. Applications:</b> Electrostatic shielding, Van de Graaff generators, photocopiers, and laser printers."
+    }
+  ];
+
+  let html = `
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
+  
+  <div style="text-align: center; margin-bottom: 25px; border-bottom: 2px solid ${themeColor}; padding-bottom: 10px;">
+    <h2 style="color: ${themeColor}; margin: 0; font-size: 22px; font-weight: bold; text-align: center !important;">Class 12 Physics Chapter 1: NCERT & Master Reference Solutions</h2>
+    <p style="color: #B0BEC5; margin: 5px 0 0 0; font-size: 15px; text-align: center !important;">Electric Charges and Fields — Complete 100 Authentic Questions & Detailed Step-by-Step Solutions</p>
+  </div>
+
+  <h3 style="color: ${themeColor}; border-left: 4px solid ${themeColor}; padding-left: 10px; margin-top: 25px;">Part A: Multiple Choice Questions (Q1 - Q25)</h3>`;
+
+  mcqsData.forEach((mcq, idx) => {
+    const qNum = idx + 1;
+    html += `
+  <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
+    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${mcq.title}</h3>
+    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
+      ${mcq.q}
+      <div style="margin: 12px 0; text-align: left !important; line-height: 1.8; color: #FFCC80;">
+        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[0]}</div>
+        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[1]}</div>
+        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[2]}</div>
+        <div class="mcq-option" style="text-align: left !important; margin: 4px 0;">${mcq.opts[3]}</div>
+      </div>
+    </div>
+    <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
+      <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Explanation:</b>
+      <b>Correct Answer: <span style="color: ${themeColor};">${mcq.ans}</span></b><br>
+      ${mcq.exp}
+    </div>
+  </div>`;
+  });
+
+  html += `<h3 style="color: ${themeColor}; border-left: 4px solid ${themeColor}; padding-left: 10px; margin-top: 30px;">Part B: Very Short Answer Questions (Q26 - Q55)</h3>`;
+  vsasData.forEach((vsa, idx) => {
+    const qNum = idx + 26;
+    html += `
+  <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
+    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${vsa.title}</h3>
+    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
+      ${vsa.q}
+    </div>
+    <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
+      <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Explanation:</b>
+      ${vsa.sol}
+    </div>
+  </div>`;
+  });
+
+  html += `<h3 style="color: ${themeColor}; border-left: 4px solid ${themeColor}; padding-left: 10px; margin-top: 30px;">Part C: Short Answer Questions (Q56 - Q85)</h3>`;
+  sasData.forEach((sa, idx) => {
+    const qNum = idx + 56;
+    html += `
+  <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
+    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${sa.title}</h3>
+    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
+      ${sa.q}
+    </div>
+    <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
+      <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Solution & Step-by-Step Derivation:</b>
+      ${sa.sol}
+    </div>
+  </div>`;
+  });
+
+  html += `<h3 style="color: ${themeColor}; border-left: 4px solid ${themeColor}; padding-left: 10px; margin-top: 30px;">Part D: Long Answer Questions (Q86 - Q100)</h3>`;
+  lasData.forEach((la, idx) => {
+    const qNum = idx + 86;
+    html += `
+  <div style="background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 16px; margin-bottom: 20px;">
+    <h3 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 17px; font-weight: bold;">Q${qNum}: ${la.title}</h3>
+    <div style="color: #F0F0F0; margin-bottom: 12px; line-height: 1.6; font-size: 15.5px;">
+      ${la.q}
+    </div>
+    <div style="background: rgba(255, 81, 47, 0.05); border-left: 3.5px solid ${themeColor}; padding: 12px 14px; border-radius: 4px; color: #E0E0E0; line-height: 1.6; font-size: 15px;">
+      <b style="color: ${themeColor}; display: block; margin-bottom: 6px;">💡 Detailed Derivation & Theoretical Proof:</b>
+      ${la.sol}
+    </div>
+  </div>`;
+  });
+
+  html += `\n</div>`;
+  return html;
+}
+
+const overviewHtml = generateFullOverviewHtml();
+const solutionsHtml = generate100GenuineQuestions();
+
+const tsContent = `// Class 12 Physics Unit I Chapter 1: Electric Charges and Fields (100% Exact Official NCERT Syllabus Alignment)
+// High-Level Pradeep's / S.L. Arora Digital Reference Book Content & 100 Genuine Detailed Solutions
+
+export const c12Phy1HtmlOverview = ${JSON.stringify(overviewHtml)};
+
+export const c12Phy1HtmlSolutions = ${JSON.stringify(solutionsHtml)};
+`;
+
+const outputPath = path.join(__dirname, '..', 'client', 'data', 'content', 'c12-phy-1.ts');
+fs.writeFileSync(outputPath, tsContent, 'utf8');
+
+console.log("Successfully rebuilt c12-phy-1.ts with 100 GENUINE, INDIVIDUAL CBSE/NCERT QUESTIONS AND SOLUTIONS!");
