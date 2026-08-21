@@ -48,7 +48,7 @@ export const class10Chapters: Chapter[] = [
 export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   "Class 12 Science": {
     Physics: [
-      { id: "c12-phy-1", number: 1, name: "Electric Charges and Fields", color: "#FF512F" },
+      { id: "c12-phy-1", number: 1, name: "Electrostatics", color: "#FF512F" },
       { id: "c12-phy-2", number: 2, name: "Electrostatic Potential & Capacitance", color: "#8E2DE2" },
       { id: "c12-phy-3", number: 3, name: "Current Electricity", color: "#00b09b" },
       { id: "c12-phy-4", number: 4, name: "Moving Charges and Magnetism", color: "#11998e" },
