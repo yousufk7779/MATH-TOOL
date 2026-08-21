@@ -802,7 +802,7 @@ function SolutionScreen() {
                         let borderColor = JiguuColors.border;
                         let backgroundColor = "transparent";
                         if (isSubmitted) {
-                          if (isCorrect) {
+                          if (isSelected && isCorrect) {
                             borderColor = "#4CAF50";
                             backgroundColor = "#4CAF5020";
                           } else if (isWrong) {
@@ -866,28 +866,44 @@ function SolutionScreen() {
                             style={{
                               padding: isTallMathChapter ? 14 : Spacing.sm,
                               minHeight: isTallMathChapter ? 62 : undefined,
-                              justifyContent: "center",
-                              borderWidth: 1,
+                              flexDirection: "row",
+                              alignItems: "center",
+                              justifyContent: "space-between",
+                              borderWidth: 1.5,
                               borderColor,
                               backgroundColor,
                               borderRadius: BorderRadius.sm,
                               marginBottom: Spacing.xs,
                             }}
                           >
-                            <HtmlText
-                              html={opt}
-                              style={[
-                                scaledMcqOptionText,
-                                {
-                                  color: JiguuColors.textSecondary,
-                                  lineHeight: isTallMathChapter
-                                    ? 28
-                                    : isMathSection
-                                      ? 22
-                                      : 20,
-                                },
-                              ]}
-                            />
+                            <View style={{ flex: 1, paddingRight: 8 }}>
+                              <HtmlText
+                                html={opt}
+                                style={[
+                                  scaledMcqOptionText,
+                                  {
+                                    color: isSubmitted
+                                      ? isSelected && isCorrect
+                                        ? "#4CAF50"
+                                        : isWrong
+                                          ? "#F44336"
+                                          : JiguuColors.textSecondary
+                                      : JiguuColors.textSecondary,
+                                    lineHeight: isTallMathChapter
+                                      ? 28
+                                      : isMathSection
+                                        ? 22
+                                        : 20,
+                                  },
+                                ]}
+                              />
+                            </View>
+                            {isSubmitted && isSelected && isCorrect && (
+                              <Feather name="check-circle" size={19} color="#4CAF50" />
+                            )}
+                            {isSubmitted && isWrong && (
+                              <Feather name="x-circle" size={19} color="#F44336" />
+                            )}
                           </TouchableOpacity>
                         );
                       },
@@ -914,7 +930,7 @@ function SolutionScreen() {
                           }
                         }
                       } else {
-                        const match = correctOptionText.match(/^([A-D]\))/i);
+                        const match = correctOptionText.match(/^([A-D]\)?)/i);
                         if (match) correctLetter = match[1].toUpperCase();
                       }
                       const isUserCorrect = userChoice === correctOptionText;
@@ -939,7 +955,7 @@ function SolutionScreen() {
                               marginBottom: 6,
                             }}
                           >
-                            Correct Answer is {correctLetter}
+                            Correct Answer is {correctLetter.endsWith(")") ? correctLetter : `${correctLetter})`}
                           </ThemedText>
                           {mcq.explanation ? (
                             <View style={{ marginTop: 2 }}>
@@ -1124,136 +1140,329 @@ function SolutionScreen() {
           <View
             style={{
               flex: 1,
-              backgroundColor: "rgba(0,0,0,0.5)",
+              backgroundColor: "rgba(0,0,0,0.75)",
               justifyContent: "center",
               alignItems: "center",
-              padding: Spacing.xl,
+              padding: Spacing.lg,
             }}
           >
-            <View
-              style={{
-                backgroundColor: JiguuColors.surface,
-                padding: Spacing.xl,
-                borderRadius: BorderRadius.lg,
-                width: "100%",
-                alignItems: "center",
-              }}
-            >
-              <Feather
-                name="award"
-                size={48}
-                color={accentColor}
-                style={{ marginBottom: Spacing.md }}
-              />
-              <ThemedText
-                style={[
-                  scaledH3,
-                  { color: JiguuColors.textPrimary, marginBottom: Spacing.sm },
-                ]}
-              >
-                Quiz Completed!
-              </ThemedText>
-              {(() => {
-                const totalCount = chapterData?.mcqs?.length || 0;
-                const correctCount = Object.entries(mcqAnswers).filter(
-                  ([id, ans]) => {
-                    const mcq = chapterData?.mcqs?.find(
-                      (m: any) => m.id === id,
-                    );
-                    if (!mcq) return false;
-                    let correctOptionText = mcq.correctAnswer;
-                    if (mcq.correctAnswer.length === 1) {
-                      const charCode = mcq.correctAnswer
-                        .toLowerCase()
-                        .charCodeAt(0);
-                      if (charCode >= 97 && charCode <= 122) {
-                        const correctIdx = charCode - 97;
-                        if (
-                          correctIdx >= 0 &&
-                          correctIdx < mcq.options.length
-                        ) {
-                          correctOptionText = mcq.options[correctIdx];
-                        }
+            {(() => {
+              const totalCount = chapterData?.mcqs?.length || 0;
+              const correctCount = Object.entries(mcqAnswers).filter(
+                ([id, ans]) => {
+                  const mcq = chapterData?.mcqs?.find(
+                    (m: any) => m.id === id,
+                  );
+                  if (!mcq) return false;
+                  let correctOptionText = mcq.correctAnswer;
+                  if (mcq.correctAnswer.length === 1) {
+                    const charCode = mcq.correctAnswer
+                      .toLowerCase()
+                      .charCodeAt(0);
+                    if (charCode >= 97 && charCode <= 122) {
+                      const correctIdx = charCode - 97;
+                      if (
+                        correctIdx >= 0 &&
+                        correctIdx < mcq.options.length
+                      ) {
+                        correctOptionText = mcq.options[correctIdx];
                       }
                     }
-                    return correctOptionText === ans;
-                  },
-                ).length;
-                const wrongCount = totalCount - correctCount;
-                const percentage =
-                  totalCount > 0
-                    ? Math.round((correctCount / totalCount) * 100)
-                    : 0;
-                return (
-                  <>
+                  }
+                  return correctOptionText === ans;
+                },
+              ).length;
+              const wrongCount = totalCount - correctCount;
+              const percentage =
+                totalCount > 0
+                  ? Math.round((correctCount / totalCount) * 100)
+                  : 0;
+
+              let tierEmoji = "🏆";
+              let tierTitle = "OUTSTANDING MASTERMIND!";
+              let tierMessage =
+                "Incredible performance! You've mastered this chapter with top-tier excellence! 🚀✨";
+              let tierColor = "#FFD700";
+              let tierBadgeBg = "rgba(255, 215, 0, 0.15)";
+              let tierBorder = "#FFD700";
+
+              if (percentage >= 90) {
+                tierEmoji = "🏆";
+                tierTitle = "OUTSTANDING MASTERMIND!";
+                tierMessage =
+                  "Incredible performance! You've mastered this chapter with top-tier excellence! 🚀✨";
+                tierColor = "#FFD700";
+                tierBadgeBg = "rgba(255, 215, 0, 0.15)";
+                tierBorder = "#FFD700";
+              } else if (percentage >= 75) {
+                tierEmoji = "🎯";
+                tierTitle = "EXCELLENT PERFORMANCE!";
+                tierMessage =
+                  "Strong grasp of concepts! Just a quick brush-up on minor topics and you'll hit a perfect 100%! 👏⚡";
+                tierColor = "#00E5FF";
+                tierBadgeBg = "rgba(0, 229, 255, 0.15)";
+                tierBorder = "#00E5FF";
+              } else if (percentage >= 50) {
+                tierEmoji = "📚";
+                tierTitle = "GOOD EFFORT!";
+                tierMessage =
+                  "Good attempt! Review the step-by-step solutions and key formulas to take your score to the next level! 💡📈";
+                tierColor = "#FFA726";
+                tierBadgeBg = "rgba(255, 167, 38, 0.15)";
+                tierBorder = "#FFA726";
+              } else {
+                tierEmoji = "📖";
+                tierTitle = "KEEP PRACTICING!";
+                tierMessage =
+                  "Don't worry! Read the Reference Theory guide thoroughly, understand the key explanations, and try again! 🌟💪";
+                tierColor = "#FF512F";
+                tierBadgeBg = "rgba(255, 81, 47, 0.15)";
+                tierBorder = "#FF512F";
+              }
+
+              return (
+                <View
+                  style={{
+                    backgroundColor: "#0F172A",
+                    borderWidth: 2,
+                    borderColor: tierBorder,
+                    padding: Spacing.xl,
+                    borderRadius: BorderRadius.xl,
+                    width: "100%",
+                    maxWidth: 380,
+                    alignItems: "center",
+                    shadowColor: tierColor,
+                    shadowOffset: { width: 0, height: 10 },
+                    shadowOpacity: 0.35,
+                    shadowRadius: 20,
+                    elevation: 12,
+                  }}
+                >
+                  {/* Top Emoji Badge */}
+                  <View
+                    style={{
+                      width: 72,
+                      height: 72,
+                      borderRadius: 36,
+                      backgroundColor: tierBadgeBg,
+                      borderWidth: 2,
+                      borderColor: tierColor,
+                      justifyContent: "center",
+                      alignItems: "center",
+                      marginBottom: Spacing.md,
+                    }}
+                  >
+                    <ThemedText style={{ fontSize: 36 }}>{tierEmoji}</ThemedText>
+                  </View>
+
+                  {/* Tier Title */}
+                  <ThemedText
+                    style={{
+                      color: tierColor,
+                      fontFamily: "NotoSans_700Bold",
+                      fontSize: 18,
+                      letterSpacing: 0.5,
+                      textAlign: "center",
+                      marginBottom: Spacing.xs,
+                    }}
+                  >
+                    {tierTitle}
+                  </ThemedText>
+
+                  {/* Score Pill */}
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      alignItems: "center",
+                      backgroundColor: "rgba(255, 255, 255, 0.08)",
+                      paddingHorizontal: 16,
+                      paddingVertical: 6,
+                      borderRadius: BorderRadius.full,
+                      marginVertical: Spacing.sm,
+                    }}
+                  >
                     <ThemedText
-                      style={[
-                        scaledBody,
-                        {
+                      style={{
+                        color: "#FFFFFF",
+                        fontFamily: "NotoSans_700Bold",
+                        fontSize: 22,
+                      }}
+                    >
+                      {percentage}%
+                    </ThemedText>
+                    <ThemedText
+                      style={{
+                        color: JiguuColors.textSecondary,
+                        fontFamily: "NotoSans_400Regular",
+                        fontSize: 14,
+                        marginLeft: 8,
+                      }}
+                    >
+                      ({correctCount}/{totalCount} Correct)
+                    </ThemedText>
+                  </View>
+
+                  {/* Stats 3-Column Row */}
+                  <View
+                    style={{
+                      flexDirection: "row",
+                      width: "100%",
+                      backgroundColor: "rgba(0, 0, 0, 0.3)",
+                      borderRadius: BorderRadius.md,
+                      padding: Spacing.sm,
+                      marginVertical: Spacing.md,
+                      justifyContent: "space-around",
+                    }}
+                  >
+                    <View style={{ alignItems: "center" }}>
+                      <ThemedText
+                        style={{
+                          color: "#4CAF50",
+                          fontFamily: "NotoSans_700Bold",
+                          fontSize: 16,
+                        }}
+                      >
+                        ✓ {correctCount}
+                      </ThemedText>
+                      <ThemedText
+                        style={{
                           color: JiguuColors.textSecondary,
-                          marginBottom: Spacing.xs,
-                          textAlign: "center",
-                        },
-                      ]}
+                          fontSize: 12,
+                        }}
+                      >
+                        Correct
+                      </ThemedText>
+                    </View>
+                    <View
+                      style={{
+                        width: 1,
+                        backgroundColor: "rgba(255,255,255,0.1)",
+                      }}
+                    />
+                    <View style={{ alignItems: "center" }}>
+                      <ThemedText
+                        style={{
+                          color: "#F44336",
+                          fontFamily: "NotoSans_700Bold",
+                          fontSize: 16,
+                        }}
+                      >
+                        ✗ {wrongCount}
+                      </ThemedText>
+                      <ThemedText
+                        style={{
+                          color: JiguuColors.textSecondary,
+                          fontSize: 12,
+                        }}
+                      >
+                        Wrong
+                      </ThemedText>
+                    </View>
+                    <View
+                      style={{
+                        width: 1,
+                        backgroundColor: "rgba(255,255,255,0.1)",
+                      }}
+                    />
+                    <View style={{ alignItems: "center" }}>
+                      <ThemedText
+                        style={{
+                          color: tierColor,
+                          fontFamily: "NotoSans_700Bold",
+                          fontSize: 16,
+                        }}
+                      >
+                        {percentage}%
+                      </ThemedText>
+                      <ThemedText
+                        style={{
+                          color: JiguuColors.textSecondary,
+                          fontSize: 12,
+                        }}
+                      >
+                        Accuracy
+                      </ThemedText>
+                    </View>
+                  </View>
+
+                  {/* Motivational Message */}
+                  <ThemedText
+                    style={{
+                      color: "#CBD5E1",
+                      fontFamily: "NotoSans_400Regular",
+                      fontSize: 13.5,
+                      lineHeight: 20,
+                      textAlign: "center",
+                      marginBottom: Spacing.lg,
+                    }}
+                  >
+                    {tierMessage}
+                  </ThemedText>
+
+                  {/* Action Buttons */}
+                  <TouchableOpacity
+                    delayPressIn={0}
+                    activeOpacity={0.8}
+                    style={{
+                      width: "100%",
+                      height: 46,
+                      borderRadius: BorderRadius.md,
+                      overflow: "hidden",
+                      marginBottom: Spacing.sm,
+                    }}
+                    onPress={() => resetMCQs()}
+                  >
+                    <LinearGradient
+                      colors={chapterGradient as any}
+                      start={{ x: 0, y: 0 }}
+                      end={{ x: 1, y: 0 }}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        flexDirection: "row",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: 8,
+                      }}
                     >
-                      Correct: {correctCount} | Wrong: {wrongCount}
-                    </ThemedText>
+                      <Feather name="rotate-ccw" size={16} color="#FFFFFF" />
+                      <ThemedText
+                        style={{
+                          color: "#FFFFFF",
+                          fontFamily: "NotoSans_700Bold",
+                          fontSize: 15,
+                        }}
+                      >
+                        Retake Quiz
+                      </ThemedText>
+                    </LinearGradient>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity
+                    delayPressIn={0}
+                    activeOpacity={0.7}
+                    style={{
+                      backgroundColor: "rgba(255, 255, 255, 0.08)",
+                      paddingVertical: 10,
+                      borderRadius: BorderRadius.md,
+                      width: "100%",
+                      alignItems: "center",
+                    }}
+                    onPress={() => resetMCQs()}
+                  >
                     <ThemedText
-                      style={[
-                        scaledH4,
-                        {
-                          color: accentColor,
-                          marginBottom: Spacing.lg,
-                          textAlign: "center",
-                        },
-                      ]}
+                      style={{
+                        color: JiguuColors.textSecondary,
+                        fontFamily: "NotoSans_700Bold",
+                        fontSize: 14,
+                      }}
                     >
-                      Score: {percentage}%
+                      Close &amp; Review
                     </ThemedText>
-                  </>
-                );
-              })()}
-              <TouchableOpacity
-                delayPressIn={0}
-                activeOpacity={0.7}
-                style={{
-                  backgroundColor: accentColor,
-                  paddingHorizontal: Spacing.sm,
-                  paddingVertical: Spacing.sm,
-                  borderRadius: BorderRadius.md,
-                  width: "100%",
-                  alignItems: "center",
-                  marginBottom: Spacing.sm,
-                }}
-                onPress={() => resetMCQs()}
-              >
-                <ThemedText
-                  numberOfLines={1}
-                  style={[scaledButton, { color: "#fff" }]}
-                >
-                  Retake Quiz
-                </ThemedText>
-              </TouchableOpacity>
-              <TouchableOpacity
-                delayPressIn={0}
-                activeOpacity={0.7}
-                style={{
-                  backgroundColor: JiguuColors.surfaceLight,
-                  paddingHorizontal: Spacing.xl,
-                  paddingVertical: Spacing.sm,
-                  borderRadius: BorderRadius.md,
-                  width: "100%",
-                  alignItems: "center",
-                }}
-                onPress={() => resetMCQs()}
-              >
-                <ThemedText
-                  style={[scaledButton, { color: JiguuColors.textSecondary }]}
-                >
-                  Close
-                </ThemedText>
-              </TouchableOpacity>
-            </View>
+                  </TouchableOpacity>
+                </View>
+              );
+            })()}
           </View>
         </Modal>
       </View>
