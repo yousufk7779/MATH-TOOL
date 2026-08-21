@@ -6,7 +6,7 @@ const { getTheoryPart2 } = require('./c12_theory_part2.js');
 
 const themeColor = "#FF512F";
 
-// 7 SVGs
+// 7 Perfectly Polished XML SVGs
 const svg1_coulomb = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
   <defs>
@@ -286,10 +286,10 @@ const svg3_dipole = `
 
     <g transform="translate(180, 200)">
       <line x1="0" y1="0" x2="-80" y2="-80" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#mCyan3)"/>
-      <text x="-95" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">q cos &#952;</text>
+      <text x="-95" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">E_+ (from +q)</text>
 
       <line x1="0" y1="0" x2="80" y2="-80" stroke="#38BDF8" stroke-width="2.5" marker-end="url(#mCyan3)"/>
-      <text x="50" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">E_equal</text>
+      <text x="50" y="-90" fill="#38BDF8" font-family="sans-serif" font-size="15" font-weight="bold">E_- (towards -q)</text>
 
       <path d="M 0 -30 A 30 30 0 0 0 -22 -22" fill="none" stroke="#FFD700" stroke-width="2"/>
       <text x="-15" y="-40" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">&#952;</text>
@@ -298,10 +298,10 @@ const svg3_dipole = `
       <text x="15" y="-40" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">&#952;</text>
 
       <line x1="0" y1="0" x2="-120" y2="0" stroke="#FF512F" stroke-width="3.8" marker-end="url(#mRed3)"/>
-      <text x="-60" y="25" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="15.5" font-weight="bold">q cos &#952;</text>
+      <text x="-60" y="25" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="15.5" font-weight="bold">2 E cos &#952; (Resultant)</text>
 
       <circle cx="0" cy="0" r="5" fill="#76FF03"/>
-      <text x="15" y="15" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">O</text>
+      <text x="15" y="15" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">P</text>
     </g>
 
     <rect x="230" y="380" width="180" height="40" rx="8" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" stroke-width="1.5"/>
@@ -675,7 +675,7 @@ const fullOverviewHtml = `
 </div>
 `;
 
-// Read the 100 solutions from our current c12-phy-1.ts or build them
+// Read the 100 solutions from our current c12-phy-1.ts
 const c12Path = path.join(__dirname, '..', 'client', 'data', 'content', 'c12-phy-1.ts');
 const existingFile = fs.readFileSync(c12Path, 'utf8');
 const solMatch = existingFile.match(/export const c12Phy1HtmlSolutions = ([\s\S]*?);?\s*$/);
@@ -690,4 +690,4 @@ export const c12Phy1HtmlSolutions = ${solutionsStr};
 `;
 
 fs.writeFileSync(c12Path, finalTsCode, 'utf8');
-console.log("Successfully synthesized and updated c12-phy-1.ts with 100% GOLD-STANDARD DEEP TEXTBOOK PROSE!");
+console.log("Successfully rebuilt c12-phy-1.ts with perfected SVG labels and 100% textbook depth!");
