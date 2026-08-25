@@ -138,6 +138,7 @@ import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions } from "./content/c11-zoo-4";
 import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions, c12Phy1Mcqs } from "./content/c12-phy-1";
 import { c12Phy2HtmlOverview, c12Phy2HtmlSolutions, c12Phy2Mcqs } from "./content/c12-phy-2";
 import { c12Phy3HtmlOverview, c12Phy3HtmlSolutions, c12Phy3Mcqs } from "./content/c12-phy-3";
+import { c12Phy4HtmlOverview, c12Phy4HtmlSolutions, c12Phy4Mcqs } from "./content/c12-phy-4";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1415,6 +1416,23 @@ if (ch12Phy3) {
     },
   ];
   ch12Phy3.mcqs = c12Phy3Mcqs;
+}
+
+// Override Class 12 Physics Chapter 4 with full high-level Reference & Solutions content
+const ch12Phy4 = chapterContents["c12-phy-4"];
+if (ch12Phy4) {
+  ch12Phy4.htmlOverview = c12Phy4HtmlOverview;
+  ch12Phy4.htmlExercises = {
+    "ex-c12-qa": c12Phy4HtmlSolutions,
+  };
+  ch12Phy4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy4.mcqs = c12Phy4Mcqs;
 }
 
 export const isChapterAvailable = (chapterId: string): boolean => {

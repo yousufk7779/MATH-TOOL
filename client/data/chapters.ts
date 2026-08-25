@@ -51,7 +51,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-phy-1", number: 1, name: "Electrostatics", color: "#FF512F" },
       { id: "c12-phy-2", number: 2, name: "Current Electricity", color: "#8E2DE2" },
       { id: "c12-phy-3", number: 3, name: "Magnetic Effects of Current & Magnetism", color: "#00b09b" },
-      { id: "c12-phy-4", number: 4, name: "Electromagnetic Induction & Alternating Currents", color: "#11998e" },
+      { id: "c12-phy-4", number: 4, name: "Electromagnetic Induction & Alternating Currents", color: "#0091EA" },
       { id: "c12-phy-5", number: 5, name: "Electromagnetic Waves", color: "#00c6ff" },
       { id: "c12-phy-6", number: 6, name: "Optics", color: "#FF8A65" },
       { id: "c12-phy-7", number: 7, name: "Dual Nature of Matter & Radiation", color: "#AB47BC" },
