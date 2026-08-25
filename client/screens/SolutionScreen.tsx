@@ -328,6 +328,11 @@ function SolutionScreen() {
     !isScienceSection &&
     !chapterId.startsWith("sst-") &&
     !chapterId.startsWith("eng-");
+  const isSeniorClass =
+    className === "Class 11" ||
+    className === "Class 12" ||
+    chapterId.startsWith("c11-") ||
+    chapterId.startsWith("c12-");
 
   const hwTitleStyle = { fontFamily: "NotoSans_400Regular", color: "#fff" };
 
@@ -1011,12 +1016,6 @@ function SolutionScreen() {
   let tab1Title = "Overview";
   let tab2Title = "Exercises";
   const tab3Title = "MCQs";
-
-  const isSeniorClass =
-    className === "Class 11" ||
-    className === "Class 12" ||
-    chapterId.startsWith("c11-") ||
-    chapterId.startsWith("c12-");
 
   if (isSeniorClass) {
     tab1Title = "Reference";

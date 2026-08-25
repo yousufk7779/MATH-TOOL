@@ -136,6 +136,8 @@ import { c11Zoo2HtmlOverview, c11Zoo2HtmlSolutions } from "./content/c11-zoo-2";
 import { c11Zoo3HtmlOverview, c11Zoo3HtmlSolutions } from "./content/c11-zoo-3";
 import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions } from "./content/c11-zoo-4";
 import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions, c12Phy1Mcqs } from "./content/c12-phy-1";
+import { c12Phy2HtmlOverview, c12Phy2HtmlSolutions, c12Phy2Mcqs } from "./content/c12-phy-2";
+import { c12Phy3HtmlOverview, c12Phy3HtmlSolutions, c12Phy3Mcqs } from "./content/c12-phy-3";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1379,6 +1381,40 @@ if (ch12Phy1) {
     },
   ];
   ch12Phy1.mcqs = c12Phy1Mcqs;
+}
+
+// Override Class 12 Physics Chapter 2 with full high-level Reference & Solutions content
+const ch12Phy2 = chapterContents["c12-phy-2"];
+if (ch12Phy2) {
+  ch12Phy2.htmlOverview = c12Phy2HtmlOverview;
+  ch12Phy2.htmlExercises = {
+    "ex-c12-qa": c12Phy2HtmlSolutions,
+  };
+  ch12Phy2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy2.mcqs = c12Phy2Mcqs;
+}
+
+// Override Class 12 Physics Chapter 3 with full high-level Reference & Solutions content
+const ch12Phy3 = chapterContents["c12-phy-3"];
+if (ch12Phy3) {
+  ch12Phy3.htmlOverview = c12Phy3HtmlOverview;
+  ch12Phy3.htmlExercises = {
+    "ex-c12-qa": c12Phy3HtmlSolutions,
+  };
+  ch12Phy3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy3.mcqs = c12Phy3Mcqs;
 }
 
 export const isChapterAvailable = (chapterId: string): boolean => {

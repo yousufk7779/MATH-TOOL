@@ -40,32 +40,35 @@ When styling chapter overview and solutions for Class 7, keep these rules:
 For all Class 11 and Class 12 chapters across all subjects (Physics, Chemistry, Biology/Botany/Zoology, Mathematics), ALWAYS follow this 3-Tab Architecture and strategy without exception:
 
 ### 1. Tab Structure (3 Dedicated Tabs)
-- **Tab 1: Reference (Overview)** — Comprehensive reference textbook guide (Pradeep's / S.L. Arora standard).
+- **Tab 1: Reference (Overview)** — Comprehensive reference textbook guide (Pradeep's / S.L. Arora standard) with deep explanatory prose, real-world intuitions, and standalone diagram cards.
 - **Tab 2: Solutions (Exercises)** — Exactly 100 pure theory, numerical, and derivation questions divided into Sections A, B, C.
 - **Tab 3: MCQs** — Dedicated 25-question smart interactive quiz with right-corner check/cross icons, wrong-only explanation cards, and Ultra HD gamified result dashboard.
 
 ---
 
-### 2. Tab 1: Reference Theory Standards
+### 2. Tab 1: Reference Theory Standards (Pradeep's / S.L. Arora Standard)
 1. **Deep Conceptual Explanations First (Prose First Approach)**:
    - Never start topics with short bullet points alone.
-   - Every topic and subtopic must begin with rich, deep explanatory paragraphs explaining physical intuition, principles, and mathematical formulations before questions.
-2. **100% Exact Official NCERT Syllabus Headings**:
-   - Use official NCERT syllabus headings word-for-word as main `<h2>` section titles.
-   - Organize every section into Roman-numbered subtopics `(i), (ii), (iii)` as `<h3>` subtitles.
+   - Every topic and subtopic must begin with rich, deep explanatory paragraphs explaining physical intuition, principles, atomic origins, physical mechanisms, and mathematical formulations before formulas.
+   - Include complete historical context, rules of thumb (e.g. SNOW rule, Right Hand Grip Rule, Fleming's rules), and physical insights.
+2. **100% Exact Official Syllabus Headings**:
+   - Use official syllabus headings word-for-word as main `<h2>` section titles.
+   - Organize every section into Roman-numbered subtopics `(i), (ii), (iii)` as `<h3>` / `<h4>` subtitles.
 3. **Quick Glossary Card**:
-   - Single-frame "Quick Glossary & Basic Definitions" card at the top of the Overview section summarizing key terms.
-4. **Large 3D Vector Diagrams (Maximum Visibility)**:
-   - Every crucial topic must have a dedicated large SVG diagram (`viewBox="0 0 960 540"`).
-   - Font sizes 16px–20px bold, stroke lines 2.5px–4px, high-contrast neon palette (`#00E5FF`, `#FFD700`, `#76FF03`, `#FF512F`, `#FFFFFF`).
+   - Single-frame "Quick Glossary & Basic Definitions" card at the top of the Overview section summarizing key terms, SI units, and dimensional formulas.
+4. **Dedicated Standalone Diagram Cards (Maximum Visibility)**:
+   - Every crucial topic must have a dedicated standalone diagram card placed directly under its respective section.
+   - Never merge multiple diagrams side-by-side; each diagram gets its own distinct full-width container card with a bold title and explanatory caption.
+   - Diagrams can be large SVGs (`viewBox="0 0 960 540"`, font 16–20px bold, stroke 2.5–4px, neon palette) or authentic self-contained Base64 image cards.
    - 100% valid XML entities (no `<br>`, `<sup>`, `<sub>` inside SVG `<text>`, use numeric entities like `&#952;`, `&#934;`, `&#8594;`).
-5. **Specialized Cards**:
-   - `defBox` for all official definitions with SI units and dimensional formulas.
-   - `stepDerivationBox` for full step-by-step mathematical proofs with boundary conditions.
-   - `examTrapBox` for board exam traps and common student misconceptions.
-   - `solvedExampleBox` for fully worked out board numericals.
-   - Master comparison tables/matrices (e.g. Dielectric insertion Battery Connected vs Disconnected).
-   - Master Revision Cheat Sheet at the end of the overview.
+5. **Specialized High-Contrast Educational Boxes**:
+   - `defBox`: Official standard definitions with SI units and dimensional formulas.
+   - `analogyBox`: Real-World Intuitive Analogies connecting abstract physics/chemistry concepts to everyday life (e.g., swinging stones, highway bypasses, traffic flows).
+   - `stepDerivationBox`: Full step-by-step mathematical proofs with clearly labeled steps (*Step 1: Setup $\to$ Step 2: Law $\to$ Step 3: Components & Integration $\to$ Step 4: Special Boundary Cases*).
+   - `examTrapBox`: Board exam traps and common student misconceptions.
+   - `solvedExampleBox`: Fully worked out step-by-step board numericals with complete calculations.
+   - Master comparison tables/matrices (e.g. Dia vs Para vs Ferro matrix).
+   - Master Revision Formula Cheat Sheet at the end of the overview.
 
 ---
 

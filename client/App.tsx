@@ -24,8 +24,7 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
 
-// Prevent the splash screen from auto-hiding before asset loading is complete
-SplashScreen.preventAutoHideAsync().catch(() => {});
+
 
 const navTheme = {
   ...DefaultTheme,
@@ -47,17 +46,14 @@ export default function App() {
     NotoSans_700Bold,
   });
 
-  const [isReady, setIsReady] = React.useState(false);
-
   React.useEffect(() => {
     // Hide splash screen immediately on mount for instant app launch
-    setIsReady(true);
     SplashScreen.hideAsync().catch(() => {});
+    const timer = setTimeout(() => {
+      SplashScreen.hideAsync().catch(() => {});
+    }, 300);
+    return () => clearTimeout(timer);
   }, []);
-
-  if (!isReady) {
-    return null;
-  }
 
   return (
     <ErrorBoundary>
