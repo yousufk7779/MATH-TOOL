@@ -49,15 +49,14 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
   "Class 12 Science": {
     Physics: [
       { id: "c12-phy-1", number: 1, name: "Electrostatics", color: "#FF512F" },
-      { id: "c12-phy-2", number: 2, name: "Current Electricity", color: "#8E2DE2" },
-      { id: "c12-phy-3", number: 3, name: "Magnetic Effects of Current & Magnetism", color: "#00b09b" },
-      { id: "c12-phy-4", number: 4, name: "Electromagnetic Induction & Alternating Currents", color: "#0091EA" },
-      { id: "c12-phy-5", number: 5, name: "Electromagnetic Waves", color: "#00c6ff" },
-      { id: "c12-phy-6", number: 6, name: "Optics", color: "#FF8A65" },
-      { id: "c12-phy-7", number: 7, name: "Dual Nature of Matter & Radiation", color: "#AB47BC" },
+      { id: "c12-phy-2", number: 2, name: "Current Electricity", color: "#FF9100" },
+      { id: "c12-phy-3", number: 3, name: "Magnetic Effects of Current & Magnetism", color: "#11998E" },
+      { id: "c12-phy-4", number: 4, name: "Electromagnetic Induction & Alternating Currents", color: "#00C6FF" },
+      { id: "c12-phy-5", number: 5, name: "Electromagnetic Waves", color: "#00E5FF" },
+      { id: "c12-phy-6", number: 6, name: "Optics", color: "#FF5252" },
+      { id: "c12-phy-7", number: 7, name: "Dual Nature of Matter & Radiation", color: "#E040FB" },
       { id: "c12-phy-8", number: 8, name: "Atoms & Nuclei", color: "#FDC830" },
       { id: "c12-phy-9", number: 9, name: "Electronic Devices", color: "#FF007F" },
-      { id: "c12-phy-10", number: 10, name: "Communication Systems", color: "#00E5FF" },
     ],
     Chemistry: [
       { id: "c12-chem-1", number: 1, name: "Solutions", color: "#8E2DE2" },
@@ -1098,8 +1097,14 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-bot-3") return ["#E040FB", "#7B1FA2"];
   if (chapterId === "c12-bot-4") return ["#00E5FF", "#00838F"];
   if (chapterId === "c12-phy-1") return ["#FF512F", "#DD2476"];
-  if (chapterId === "c12-phy-2") return ["#8E2DE2", "#4A00E0"];
-  if (chapterId === "c12-phy-3") return ["#00b09b", "#96c93d"];
+  if (chapterId === "c12-phy-2") return ["#FF9100", "#FF5722"];
+  if (chapterId === "c12-phy-3") return ["#11998E", "#38EF7D"];
+  if (chapterId === "c12-phy-4") return ["#00C6FF", "#0072FF"];
+  if (chapterId === "c12-phy-5") return ["#00E5FF", "#0097A7"];
+  if (chapterId === "c12-phy-6") return ["#FF5252", "#FF793F"];
+  if (chapterId === "c12-phy-7") return ["#E040FB", "#7B1FA2"];
+  if (chapterId === "c12-phy-8") return ["#FDC830", "#F57F17"];
+  if (chapterId === "c12-phy-9") return ["#FF007F", "#FF4081"];
   if (chapterId === "c12-zoo-1") return ["#FF3D00", "#DD2476"];
   if (chapterId === "c12-zoo-2") return ["#7C4DFF", "#4A00E0"];
   if (chapterId === "c12-zoo-3") return ["#FF007F", "#C2185B"];
@@ -1233,7 +1238,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const multiColorPool = [
       ["#FF512F", "#DD2476"], // Coral Red
-      ["#8E2DE2", "#4A00E0"], // Purple Violet
+      ["#FF9100", "#FF5722"], // Electric Amber
       ["#00b09b", "#96c93d"], // Mint Teal
       ["#11998e", "#38ef7d"], // Emerald
       ["#00c6ff", "#0072ff"], // Bright Blue

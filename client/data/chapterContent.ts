@@ -139,6 +139,11 @@ import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions, c12Phy1Mcqs } from "./conten
 import { c12Phy2HtmlOverview, c12Phy2HtmlSolutions, c12Phy2Mcqs } from "./content/c12-phy-2";
 import { c12Phy3HtmlOverview, c12Phy3HtmlSolutions, c12Phy3Mcqs } from "./content/c12-phy-3";
 import { c12Phy4HtmlOverview, c12Phy4HtmlSolutions, c12Phy4Mcqs } from "./content/c12-phy-4";
+import { c12Phy5HtmlOverview, c12Phy5HtmlSolutions, c12Phy5Mcqs } from "./content/c12-phy-5";
+import { c12Phy6HtmlOverview, c12Phy6HtmlSolutions, c12Phy6Mcqs } from "./content/c12-phy-6";
+import { c12Phy7HtmlOverview, c12Phy7HtmlSolutions, c12Phy7Mcqs } from "./content/c12-phy-7";
+import { c12Phy8HtmlOverview, c12Phy8HtmlSolutions, c12Phy8Mcqs } from "./content/c12-phy-8";
+import { c12Phy9HtmlOverview, c12Phy9HtmlSolutions, c12Phy9Mcqs } from "./content/c12-phy-9";
 import { sstHisC91 } from "./content/sst-his-c9-1";
 import { sstHisC92 } from "./content/sst-his-c9-2";
 import { sstHisC93 } from "./content/sst-his-c9-3";
@@ -1002,7 +1007,7 @@ const c11Subjects = [
 
 const c11ThemeColors = [
   "#FF512F", // Ch 1 Coral Red
-  "#8E2DE2", // Ch 2 Purple
+  "#FF9100", // Ch 2 Electric Amber
   "#00b09b", // Ch 3 Mint
   "#11998e", // Ch 4 Emerald
   "#00c6ff", // Ch 5 Bright Blue
@@ -1433,6 +1438,91 @@ if (ch12Phy4) {
     },
   ];
   ch12Phy4.mcqs = c12Phy4Mcqs;
+}
+
+// Override Class 12 Physics Chapter 5 with full high-level Reference & Solutions content
+const ch12Phy5 = chapterContents["c12-phy-5"];
+if (ch12Phy5) {
+  ch12Phy5.htmlOverview = c12Phy5HtmlOverview;
+  ch12Phy5.htmlExercises = {
+    "ex-c12-qa": c12Phy5HtmlSolutions,
+  };
+  ch12Phy5.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy5.mcqs = c12Phy5Mcqs;
+}
+
+// Override Class 12 Physics Chapter 6 with full high-level Reference & Solutions content
+const ch12Phy6 = chapterContents["c12-phy-6"];
+if (ch12Phy6) {
+  ch12Phy6.htmlOverview = c12Phy6HtmlOverview;
+  ch12Phy6.htmlExercises = {
+    "ex-c12-qa": c12Phy6HtmlSolutions,
+  };
+  ch12Phy6.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy6.mcqs = c12Phy6Mcqs;
+}
+
+// Override Class 12 Physics Chapter 7 with full high-level Reference & Solutions content
+const ch12Phy7 = chapterContents["c12-phy-7"];
+if (ch12Phy7) {
+  ch12Phy7.htmlOverview = c12Phy7HtmlOverview;
+  ch12Phy7.htmlExercises = {
+    "ex-c12-qa": c12Phy7HtmlSolutions,
+  };
+  ch12Phy7.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy7.mcqs = c12Phy7Mcqs;
+}
+
+// Override Class 12 Physics Chapter 8 with full high-level Reference & Solutions content
+const ch12Phy8 = chapterContents["c12-phy-8"];
+if (ch12Phy8) {
+  ch12Phy8.htmlOverview = c12Phy8HtmlOverview;
+  ch12Phy8.htmlExercises = {
+    "ex-c12-qa": c12Phy8HtmlSolutions,
+  };
+  ch12Phy8.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy8.mcqs = c12Phy8Mcqs;
+}
+
+// Override Class 12 Physics Chapter 9 with full high-level Reference & Solutions content
+const ch12Phy9 = chapterContents["c12-phy-9"];
+if (ch12Phy9) {
+  ch12Phy9.htmlOverview = c12Phy9HtmlOverview;
+  ch12Phy9.htmlExercises = {
+    "ex-c12-qa": c12Phy9HtmlSolutions,
+  };
+  ch12Phy9.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy9.mcqs = c12Phy9Mcqs;
 }
 
 export const isChapterAvailable = (chapterId: string): boolean => {
