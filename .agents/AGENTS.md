@@ -37,38 +37,49 @@ When styling chapter overview and solutions for Class 7, keep these rules:
 
 ## Class 11 & 12 Gold Standard Reference Textbook & Interactive Quiz Blueprint
 
-For all Class 11 and Class 12 chapters across all subjects (Physics, Chemistry, Biology/Botany/Zoology, Mathematics), ALWAYS follow this 3-Tab Architecture and strategy without exception:
+For ALL Class 11 and Class 12 chapters across all subjects (**Physics, Chemistry, Biology / Botany / Zoology, Mathematics**), ALWAYS follow this 3-Tab Architecture and ultra-deep reference standard without exception:
 
 ### 1. Tab Structure (3 Dedicated Tabs)
-- **Tab 1: Reference (Overview)** — Comprehensive reference textbook guide (Pradeep's / S.L. Arora standard) with deep explanatory prose, real-world intuitions, and standalone diagram cards.
+- **Tab 1: Reference (Overview)** — Comprehensive reference textbook guide (Pradeep's / S.L. Arora / OP Tandon / Trueman's / RD Sharma standard) with deep explanatory prose, real-world intuitions, standalone clean diagram cards, and end-of-chapter master formula cheat sheet.
 - **Tab 2: Solutions (Exercises)** — Exactly 100 pure theory, numerical, and derivation questions divided into Sections A, B, C.
 - **Tab 3: MCQs** — Dedicated 25-question smart interactive quiz with right-corner check/cross icons, wrong-only explanation cards, and Ultra HD gamified result dashboard.
 
 ---
 
-### 2. Tab 1: Reference Theory Standards (Pradeep's / S.L. Arora Standard)
+### 2. Tab 1: Reference Theory Standards (Gold Standard Depth & Prose-First Architecture)
 1. **Deep Conceptual Explanations First (Prose First Approach)**:
    - Never start topics with short bullet points alone.
-   - Every topic and subtopic must begin with rich, deep explanatory paragraphs explaining physical intuition, principles, atomic origins, physical mechanisms, and mathematical formulations before formulas.
-   - Include complete historical context, rules of thumb (e.g. SNOW rule, Right Hand Grip Rule, Fleming's rules), and physical insights.
+   - Every topic and subtopic must begin with rich, deep explanatory paragraphs explaining physical/chemical intuition, principles, atomic/molecular origins, physical mechanisms, and mathematical formulations before formulas.
+   - Include complete historical context, rules of thumb (e.g. SNOW rule, Right Hand Grip Rule, Fleming's rules, Le Chatelier's, Markovnikov's), and physical insights.
 2. **100% Exact Official Syllabus Headings**:
    - Use official syllabus headings word-for-word as main `<h2>` section titles.
    - Organize every section into Roman-numbered subtopics `(i), (ii), (iii)` as `<h3>` / `<h4>` subtitles.
 3. **Quick Glossary Card**:
    - Single-frame "Quick Glossary & Basic Definitions" card at the top of the Overview section summarizing key terms, SI units, and dimensional formulas.
-4. **Dedicated Standalone Diagram Cards (Maximum Visibility)**:
+4. **Clean Standalone Diagram Cards (Zero Duplicate Top Titles)**:
    - Every crucial topic must have a dedicated standalone diagram card placed directly under its respective section.
-   - Never merge multiple diagrams side-by-side; each diagram gets its own distinct full-width container card with a bold title and explanatory caption.
-   - Diagrams can be large SVGs (`viewBox="0 0 960 540"`, font 16–20px bold, stroke 2.5–4px, neon palette) or authentic self-contained Base64 image cards.
-   - 100% valid XML entities (no `<br>`, `<sup>`, `<sub>` inside SVG `<text>`, use numeric entities like `&#952;`, `&#934;`, `&#8594;`).
+   - **NO Redundant Top Titles:** Since the diagram graphic (image/SVG) itself already boldly displays the topic title and number inside the illustration, **DO NOT add duplicate title divs (`📸 Title` or `Diagram X:`) on top of the card container**.
+   - **Clean Card Structure**:
+     ```html
+     <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(${themeColor}, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+       <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 8px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 420px;">
+         <img src="..." style="width: 100%; max-width: 380px; height: auto; display: block; border-radius: 6px;" alt="..." />
+       </div>
+       <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+         💡 [Concise Concept Explanation / Caption]
+       </div>
+     </div>
+     ```
+   - **Chronological Sequence:** In all chapters, ensure diagrams strictly follow natural chronological progression (1, 2, 3, 4...) matching the theoretical flow.
 5. **Specialized High-Contrast Educational Boxes**:
    - `defBox`: Official standard definitions with SI units and dimensional formulas.
    - `analogyBox`: Real-World Intuitive Analogies connecting abstract physics/chemistry concepts to everyday life (e.g., swinging stones, highway bypasses, traffic flows).
    - `stepDerivationBox`: Full step-by-step mathematical proofs with clearly labeled steps (*Step 1: Setup $\to$ Step 2: Law $\to$ Step 3: Components & Integration $\to$ Step 4: Special Boundary Cases*).
    - `examTrapBox`: Board exam traps and common student misconceptions.
    - `solvedExampleBox`: Fully worked out step-by-step board numericals with complete calculations.
-   - Master comparison tables/matrices (e.g. Dia vs Para vs Ferro matrix).
-   - Master Revision Formula Cheat Sheet at the end of the overview.
+   - Master comparison tables/matrices (e.g. Dia vs Para vs Ferro matrix, Ohmic vs Non-Ohmic, Resistance vs Resistivity).
+6. **Master Revision Formula Cheat Sheet at End of Overview**:
+   - Every single chapter MUST conclude with a comprehensive, full-coverage **Master Revision Formula Cheat Sheet** (Section at the end) summarizing all essential formulas, constants, SI units, and key relations in stacked fraction format with zero carets.
 
 ---
 
@@ -78,7 +89,7 @@ For all Class 11 and Class 12 chapters across all subjects (Physics, Chemistry, 
    - **Section B: Short Answer (SA) Questions (2 & 3 Marks)** — **40 Questions (Q41 to Q80)**: Numerical calculations, conceptual reasoning, 2-mark derivations, comparisons.
    - **Section C: Long Answer (LA) Questions (5 Marks)** — **20 Long Derivations (Q81 to Q100)**: Comprehensive 5-mark board derivations and deep theoretical proofs.
 2. **Formatting Rules**:
-   - **Zero Raw Carets (`^`)**: Strictly forbidden in user-facing content strings.
+   - **Zero Raw Carets (`^`)**: Strictly forbidden in user-facing content strings. Always use `<sup>...</sup>`.
    - **Fractions**: Always use stacked `a over b` format helper (`frac('a', 'b')`).
    - **Powers & Charges**: Always use `<sup>...</sup>` for exponents and ionic charges.
    - **Question Headers**: Clean single-tier `<h3 style="color: ${themeColor}; ...">QXX: Title</h3>`. NO `(HOTS - 5 Marks)` labels.
