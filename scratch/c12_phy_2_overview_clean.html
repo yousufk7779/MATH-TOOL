@@ -1,0 +1,765 @@
+
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+  
+  <!-- QUICK GLOSSARY CARD -->
+  <div style="background: rgba(255, 145, 0, 0.05); border: 1.5px solid #FF9100; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #FF9100; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p class="text-center" style="color: #FF9100; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Essential Core Concepts &amp; Key Definitions &bull; Unit II: Current Electricity</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>1. Electric Current (I):</b>
+        <span style="color: #FFFFFF;">Rate of flow of electric charge across any cross-section: I = dq/dt [Ampere A, Dimensions: [A]]. Scalar quantity.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>2. Drift Velocity (v<sub>d</sub>):</b>
+        <span style="color: #FFFFFF;">Average velocity with which free electrons drift opposite to applied electric field: v<sub>d</sub> = (e E &#964;)/m &approx; 10<sup>-4</sup> m s<sup>-1</sup>.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>3. Electron Mobility (&#956;):</b>
+        <span style="color: #FFFFFF;">Magnitude of drift velocity per unit electric field: &#956; = v<sub>d</sub> / E = (e &#964;)/m [m<sup>2</sup> V<sup>-1</sup> s<sup>-1</sup>]. Always positive.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>4. Resistivity (&#961;) &amp; Conductivity (&#963;):</b>
+        <span style="color: #FFFFFF;">Intrinsic property &#961; = m / (n e<sup>2</sup> &#964;) [&Omega; m], &#963; = 1/&#961; = (n e<sup>2</sup> &#964;)/m [S m<sup>-1</sup>]. Independent of dimensions.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>5. Electromotive Force (EMF, &#949;) &amp; Internal Resistance (r):</b>
+        <span style="color: #FFFFFF;">Maximum potential difference across open-circuit cell terminals. Terminal voltage during discharge: V = &#949; - I r.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 12px 14px; border-left: 3.5px solid #FF9100; border-radius: 6px;">
+        <b style='color: #FF9100; display: block; margin-bottom: 4px;'>6. Wheatstone Bridge Condition:</b>
+        <span style="color: #FFFFFF;">When galvanometer current I<sub>g</sub> = 0 (null deflection), the ratio of bridge arms satisfies P / Q = R / S.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 25px;">1. Electric Current, Flow of Electric Charges in Metallic Conductors, Drift Velocity &amp; Mobility</h2>
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-left: 5px solid #FF9100; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 16px; font-weight: bold; margin-bottom: 4px;">📖 DEFINITION: Drift Velocity (v<sub>d</sub>)</div>
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6; margin-bottom: 8px;">Average velocity with which free electrons get drifted towards the positive terminal of a conductor under applied electric field: <b>v<sub>d</sub> = - <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e <b>E</b></span><span style="padding: 0 2px; display: inline-block;">m</span></span> &tau;</b>.</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px;">
+      <span style="color: #94A3B8;"><b>SI Unit:</b> <span style="color: #FFFFFF;">m s<sup>-1</sup></span></span>
+      <span style="color: #94A3B8;"><b>Dimension:</b> <span style="color: #FFFFFF;">[M<sup>0</sup> L<sup>1</sup> T<sup>-1</sup>]</span></span>
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-left: 5px solid #FF9100; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 16px; font-weight: bold; margin-bottom: 4px;">📖 DEFINITION: Electron Mobility (&mu;)</div>
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6; margin-bottom: 8px;">Magnitude of drift velocity acquired per unit applied electric field: <b>&mu; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">v<sub>d</sub></span><span style="padding: 0 2px; display: inline-block;">E</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e &tau;</span><span style="padding: 0 2px; display: inline-block;">m</span></span></b>.</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px;">
+      <span style="color: #94A3B8;"><b>SI Unit:</b> <span style="color: #FFFFFF;">m<sup>2</sup> V<sup>-1</sup> s<sup>-1</sup></span></span>
+      <span style="color: #94A3B8;"><b>Dimension:</b> <span style="color: #FFFFFF;">[M<sup>-1</sup> L<sup>0</sup> T<sup>2</sup> A<sup>1</sup>]</span></span>
+    </div>
+  </div>
+  <div style="background: rgba(30, 41, 59, 0.7); border: 1.2px dashed #38BDF8; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #38BDF8; font-size: 15px; font-weight: bold; margin-bottom: 4px;">💡 REAL-WORLD INTUITION: Drift vs Thermal Velocity Analogy</div>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">Imagine a huge swarm of bees buzzing wildly at 100 km/h in every random direction (thermal velocity ~10<sup>5</sup> m/s). When a gentle breeze starts blowing, the entire swarm slowly drifts forward at 1 cm/s (drift velocity ~10<sup>-4</sup> m/s). That gentle forward drift is electric current!</div>
+  </div>
+  <div style="background: rgba(220, 38, 38, 0.1); border: 1.2px solid rgba(239, 68, 68, 0.4); border-left: 5px solid #EF4444; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #F87171; font-size: 15px; font-weight: bold; margin-bottom: 4px;">⚠️ BOARD EXAM TRAP &amp; CONCEPTUAL PITFALL: Why Light Turns On Instantly Despite Slow Drift Velocity</div>
+    <div style="color: #FCA5A5; font-size: 14.5px; line-height: 1.6;">Free electrons drift at just ~0.1 mm/s. But when you flip a switch, the electric field travels through the wire at nearly the speed of light (~3 &times; 10<sup>8</sup> m/s), setting all 10<sup>28</sup> electrons per m<sup>3</sup> into motion simultaneously across the entire circuit!</div>
+  </div>
+  
+  <p>Current electricity is the dynamic branch of physics dealing with charges in steady motion. In electrostatics, charges reside at rest on conductors in electrostatic equilibrium where the internal electric field is zero. However, when an external electric field or potential difference is maintained across the ends of a metallic conductor by a battery or external power source, electric charges experience continuous electrostatic forces, establishing a macroscopic continuous electric current.</p>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Electric Current (I)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">Electric current across any cross-sectional area of a conductor is defined as the net rate of flow of electric charge passing through that area per unit time: I = dq / dt. In steady state, I = q / t. SI Unit: Ampere (A) = 1 Coulomb per second (C s<sup>-1</sup>). Dimensional Formula: [M<sup>0</sup> L<sup>0</sup> T<sup>0</sup> A<sup>1</sup>]. Electric current is a <b>scalar quantity</b> because it obeys ordinary scalar algebraic laws of addition rather than vector addition laws.</div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(i) Flow of Charges in Metallic Conductors &amp; Microscopic Electron Dynamics</h3>
+  <p>In solid metallic conductors (such as copper, aluminium, and silver), positive atomic ions are rigidly locked in crystal lattice sites, while valence electrons detach to form an abundant &quot;free electron gas&quot; with enormous number density (n &approx; 8.5 &times; 10<sup>28</sup> free electrons per m<sup>3</sup> in copper). In the absence of an applied electric field (thermal equilibrium):</p>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Thermal Random Motion:</b> Free electrons move randomly in all possible directions with high thermal speeds (u<sub>rms</sub> = &radic;(3 k<sub>B</sub> T / m) &approx; 10<sup>5</sup> to 10<sup>6</sup> m s<sup>-1</sup> at room temperature 300 K).</li>
+    <li><b>Zero Net Thermal Current:</b> Because velocity vectors are completely random in three dimensions, the average thermal velocity of all electrons across any cross-section is strictly zero: <b>u<sub>avg</sub></b> = (1/N) &Sigma; <b>u<sub>i</sub></b> = 0. Hence, an isolated metal wire carries zero electric current.</li>
+  </ul>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(ii) Drift Velocity (v<sub>d</sub>) &amp; Relaxation Time (&#964;)</h3>
+  <p>When a potential difference V is applied across a conductor of length L, a uniform internal electric field <b>E</b> = V / L is established. Each free electron of mass m and charge -e experiences an electrostatic force <b>F</b> = -e <b>E</b>, acquiring an acceleration <b>a</b> = -e <b>E</b> / m directed opposite to <b>E</b>.</p>
+  
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Drift Velocity (v<sub>d</sub>) &amp; Relaxation Time (&#964;)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;"><b>Drift Velocity (v<sub>d</sub>)</b> is the small, constant average velocity with which free electrons drift slowly through a metallic conductor in the direction opposite to the applied external electric field. Typical magnitude: 10<sup>-4</sup> m s<sup>-1</sup> (a few tenths of a millimeter per second).<br><br><b>Relaxation Time (&#964;)</b> is the average time interval elapsed between two successive collisions of a drifting free electron with the heavy positive metal lattice ions. Typical value for copper at room temperature: &#964; &approx; 10<sup>-14</sup> s.</div>
+  </div>
+
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 145, 0, 0.4); border-radius: 12px; padding: 18px; margin: 22px 0;">
+    <div style="color: #FF9100; font-weight: bold; font-size: 17.5px; margin-bottom: 12px; border-bottom: 1px dashed rgba(255, 145, 0, 0.4); padding-bottom: 6px;">
+      📐 STEP-BY-STEP MATHEMATICAL DERIVATION: Drift Velocity Formula
+    </div>
+    <div style="color: #F1F5F9; line-height: 1.75; font-size: 15.5px;">
+      <b>1. Acceleration of an Electron:</b><br>
+      Under electric field <b>E</b>, acceleration <b>a</b> = <b>F</b> / m = (-e <b>E</b>) / m.<br><br>
+      <b>2. Velocity of the i-th Electron:</b><br>
+      If the i-th electron had initial random thermal velocity <b>u<sub>i</sub></b> just after its last collision and time elapsed since that collision is t<sub>i</sub>:<br>
+      <b>v<sub>i</sub></b> = <b>u<sub>i</sub></b> + <b>a</b> t<sub>i</sub> = <b>u<sub>i</sub></b> - <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e <b>E</b></span><span style="padding: 0 2px; display: inline-block;">m</span></span> t<sub>i</sub>.<br><br>
+      <b>3. Average Velocity (Drift Velocity <b>v<sub>d</sub></b>):</b><br>
+      <b>v<sub>d</sub></b> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">N</span></span> &Sigma; <b>v<sub>i</sub></b> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">N</span></span> &Sigma; <b>u<sub>i</sub></b> - <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e <b>E</b></span><span style="padding: 0 2px; display: inline-block;">m</span></span> [<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">N</span></span> &Sigma; t<sub>i</sub>].<br><br>
+      Since <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">N</span></span> &Sigma; <b>u<sub>i</sub></b> = 0 (zero net thermal velocity) and <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">N</span></span> &Sigma; t<sub>i</sub> = &#964; (average relaxation time):<br><br>
+      <div style="background: rgba(0,0,0,0.35); border: 1px solid #FF9100; border-radius: 6px; padding: 10px; text-align: center; color: #FFFFFF; font-size: 16px;">
+        <b><b>v<sub>d</sub></b> = - <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e <b>E</b> &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span> &nbsp;|&nbsp; Magnitude: v<sub>d</sub> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e E &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e V &#964;</span><span style="padding: 0 2px; display: inline-block;">m L</span></span></b>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(iii) Derivation of Relation Between Electric Current and Drift Velocity</h3>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 145, 0, 0.4); border-radius: 12px; padding: 18px; margin: 22px 0;">
+    <div style="color: #FF9100; font-weight: bold; font-size: 17.5px; margin-bottom: 12px; border-bottom: 1px dashed rgba(255, 145, 0, 0.4); padding-bottom: 6px;">
+      📐 STEP-BY-STEP MATHEMATICAL DERIVATION: Relation Between Electric Current &amp; Drift Velocity (I = n e A v<sub>d</sub>)
+    </div>
+    <div style="color: #F1F5F9; line-height: 1.75; font-size: 15.5px;">
+      <b>1. Geometry:</b> Consider a metallic conductor of length L, uniform cross-sectional area A, and free electron number density n (electrons per m<sup>3</sup>).<br><br>
+      <b>2. Total Number of Free Electrons in Conductor:</b><br>
+      N = n &times; Volume = n &times; (A &times; L).<br><br>
+      <b>3. Total Mobile Charge in Conductor:</b><br>
+      q = N &times; e = (n A L) e.<br><br>
+      <b>4. Transit Time across Conductor:</b><br>
+      Time taken by an electron to drift through entire length L with drift speed v<sub>d</sub> is t = L / v<sub>d</sub>.<br><br>
+      <b>5. Resulting Electric Current:</b><br>
+      I = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">q</span><span style="padding: 0 2px; display: inline-block;">t</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">n A L e</span><span style="padding: 0 2px; display: inline-block;">L / v<sub>d</sub></span></span> = <b>n e A v<sub>d</sub></b>.<br><br>
+      <div style="background: rgba(0,0,0,0.35); border: 1px solid #FF9100; border-radius: 6px; padding: 10px; text-align: center; color: #FFFFFF; font-size: 16px;">
+        <b>I = n e A v<sub>d</sub> &nbsp;|&nbsp; Current Density: j = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">I</span><span style="padding: 0 2px; display: inline-block;">A</span></span> = n e v<sub>d</sub></b>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(iv) Electron Mobility (&#956;)</h3>
+  
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Mobility (&#956;)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">Mobility of a charge carrier is defined as the magnitude of its drift velocity per unit electric field applied: &#956; = v<sub>d</sub> / E = (e &#964;) / m. SI Unit: m<sup>2</sup> V<sup>-1</sup> s<sup>-1</sup> (or m<sup>2</sup> N<sup>-1</sup> C s<sup>-1</sup>). Dimensional Formula: [M<sup>-1</sup> L<sup>0</sup> T<sup>2</sup> A<sup>1</sup>]. Mobility is always a positive scalar physical quantity. Current in terms of mobility: I = n e A &#956; E.</div>
+  </div>
+
+  <div style="background: rgba(255, 193, 7, 0.08); border-left: 4.5px solid #FFC107; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FFD54F; font-size: 16.5px; display: block; margin-bottom: 6px;">⚠️ BOARD EXAM FOCUS &amp; COMMON TRAPS: Why do Electric Bulbs Glow Instantly if Drift Speed is so Tiny (~10<sup>-4</sup> m s<sup>-1</sup>)?</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">Although individual free electrons drift at a tiny speed of &approx; 0.1 mm s<sup>-1</sup>, closing the switch establishes an electromagnetic wave/electric field throughout the entire closed circuit almost instantaneously at the speed of light in vacuum (c &approx; 3 &times; 10<sup>8</sup> m s<sup>-1</sup>). Free electrons present throughout all points of the conductor begin drifting simultaneously at the very same instant, lighting the bulb immediately without having to wait for electrons to travel from the switch.</div>
+  </div>
+
+  <div style="background: rgba(0, 229, 255, 0.05); border: 1.2px solid rgba(0, 229, 255, 0.3); border-radius: 10px; padding: 16px; margin: 20px 0;">
+    <b style="color: #00E5FF; font-size: 16.5px; display: block; margin-bottom: 6px;">📝 SOLVED BOARD EXAMPLE 1:</b>
+    <div style="color: #FFFFFF; font-weight: 500; font-size: 15.5px; margin-bottom: 10px;">A copper wire of cross-sectional area 1.0 &times; 10<sup>-7</sup> m<sup>2</sup> carries a steady current of 1.5 A. Assuming free electron density of copper is 8.5 &times; 10<sup>28</sup> m<sup>-3</sup>, calculate: (a) Current density in the wire, (b) Drift velocity of free electrons. (Take e = 1.6 &times; 10<sup>-19</sup> C).</div>
+    <div style="background: rgba(0,0,0,0.3); border-left: 3px solid #00E5FF; padding: 10px 14px; border-radius: 4px; color: #E0E0E0; font-size: 15px; line-height: 1.6;">
+      <b style="color: #00E5FF;">Step-by-Step Solution:</b><br>
+      <b>(a) Current Density (j):</b><br>
+      j = I / A = (1.5 A) / (1.0 &times; 10<sup>-7</sup> m<sup>2</sup>) = <b>1.5 &times; 10<sup>7</sup> A m<sup>-2</sup></b>.<br><br>
+      <b>(b) Drift Velocity (v<sub>d</sub>):</b><br>
+      Using I = n e A v<sub>d</sub> &rarr; v<sub>d</sub> = I / (n e A) = j / (n e):<br>
+      v<sub>d</sub> = (1.5 &times; 10<sup>7</sup>) / [(8.5 &times; 10<sup>28</sup>) &times; (1.6 &times; 10<sup>-19</sup>)]<br>
+      v<sub>d</sub> = (1.5 &times; 10<sup>7</sup>) / (1.36 &times; 10<sup>10</sup>) = <b>1.10 &times; 10<sup>-3</sup> m s<sup>-1</sup> = 1.10 mm s<sup>-1</sup></b>.
+    </div>
+  </div>
+
+  <!-- SVG 1 -->
+  <div style="background: #0B0F19; border: 1.8px solid #FF9100; border-radius: 16px; padding: 20px; margin: 28px 0; box-shadow: 0 10px 30px rgba(255, 145, 0, 0.25);">
+    <div style="color: #FF9100; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
+      📍 1. FLOW OF CHARGES &amp; DRIFT VELOCITY IN A METALLIC CONDUCTOR
+    </div>
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="eGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#0072FF"/>
+    </radialGradient>
+    <radialGradient id="ionGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF8A65"/>
+      <stop offset="100%" stop-color="#FF512F"/>
+    </radialGradient>
+    <marker id="mPurple" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#FF9100"/>
+    </marker>
+    <marker id="mCyan" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#00E5FF"/>
+    </marker>
+    <marker id="mGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#76FF03"/>
+    </marker>
+    <marker id="mGold" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#FFD700"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="930" height="510" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF9100" stroke-width="2"/>
+    <text x="465" y="38" text-anchor="middle" fill="#FF9100" font-family="sans-serif" font-size="20" font-weight="bold">1. FLOW OF CHARGES &amp; DRIFT VELOCITY IN METALLIC CONDUCTOR</text>
+
+    <!-- Conductor Cylinder -->
+    <rect x="180" y="110" width="600" height="240" rx="0" fill="rgba(255, 145, 0,0.08)" stroke="#FF9100" stroke-width="2.5"/>
+    <ellipse cx="180" cy="230" rx="35" ry="120" fill="#1E1B4B" stroke="#FF9100" stroke-width="2.5"/>
+    <ellipse cx="780" cy="230" rx="35" ry="120" fill="#2E1065" stroke="#FF9100" stroke-width="2.5"/>
+
+    <!-- Electric Field E Vector -->
+    <line x1="250" y1="80" x2="710" y2="80" stroke="#FFD700" stroke-width="3.5" marker-end="url(#mGold)"/>
+    <text x="480" y="70" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="18" font-weight="bold">Electric Field E (Left to Right)</text>
+
+    <!-- Conventional Current I Vector -->
+    <line x1="250" y1="380" x2="710" y2="380" stroke="#76FF03" stroke-width="3.5" marker-end="url(#mGreen)"/>
+    <text x="480" y="405" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="18" font-weight="bold">Conventional Current I = n e A v_d (Left to Right)</text>
+
+    <!-- Positive Lattice Ions -->
+    <circle cx="280" cy="180" r="16" fill="url(#ionGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="280" y="186" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+Cu</text>
+
+    <circle cx="480" cy="160" r="16" fill="url(#ionGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="480" y="166" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+Cu</text>
+
+    <circle cx="680" cy="200" r="16" fill="url(#ionGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="680" y="206" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+Cu</text>
+
+    <circle cx="380" cy="290" r="16" fill="url(#ionGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="380" y="296" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+Cu</text>
+
+    <circle cx="580" cy="280" r="16" fill="url(#ionGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="580" y="286" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">+Cu</text>
+
+    <!-- Electrons Drifting to Left -->
+    <circle cx="700" cy="150" r="14" fill="url(#eGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="700" y="155" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">e-</text>
+    <line x1="680" y1="150" x2="590" y2="150" stroke="#00E5FF" stroke-width="3" marker-end="url(#mCyan)"/>
+    <text x="635" y="140" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">v_d</text>
+
+    <path d="M 540 230 L 490 200 L 450 250 L 370 210" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4,4"/>
+    <circle cx="370" cy="210" r="14" fill="url(#eGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="370" y="215" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">e-</text>
+    <line x1="350" y1="210" x2="260" y2="210" stroke="#00E5FF" stroke-width="3" marker-end="url(#mCyan)"/>
+    <text x="305" y="200" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">v_d</text>
+
+    <circle cx="530" cy="310" r="14" fill="url(#eGlow)" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="530" y="315" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="14" font-weight="bold">e-</text>
+    <line x1="510" y1="310" x2="420" y2="310" stroke="#00E5FF" stroke-width="3" marker-end="url(#mCyan)"/>
+    <text x="465" y="300" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="14" font-weight="bold">v_d</text>
+
+    <!-- Dimensions -->
+    <line x1="180" y1="365" x2="780" y2="365" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="480" y="358" text-anchor="middle" fill="#E2E8F0" font-family="sans-serif" font-size="15">Length L</text>
+    <text x="120" y="235" text-anchor="middle" fill="#E2E8F0" font-family="sans-serif" font-size="15">Area A</text>
+
+    <rect x="25" y="445" width="880" height="48" rx="8" fill="rgba(255, 145, 0,0.15)" stroke="#FF9100" stroke-width="1.2"/>
+    <text x="465" y="475" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">v_d = (e E &#964;) / m  |  I = n e A v_d  |  j = &#963; E  |  Mobility &#956; = v_d / E</text>
+  </g>
+</svg>
+    </div>
+    <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
+      💡 Fig 1.1: Microscopic view of electron drift velocity (v<sub>d</sub>) opposite to electric field E, collision with lattice ions (+Cu), and resulting conventional current I = n e A v<sub>d</sub>.
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">2. Ohm's Law, Electrical Resistivity, Conductivity &amp; Temperature Dependence of Resistance</h2>
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-left: 5px solid #FF9100; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 16px; font-weight: bold; margin-bottom: 4px;">📖 DEFINITION: Electrical Resistivity (&rho;)</div>
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6; margin-bottom: 8px;">Intrinsic resistance offered by unit length of conductor with unit cross-sectional area: <b>&rho; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">m</span><span style="padding: 0 2px; display: inline-block;">n e<sup>2</sup> &tau;</span></span></b> &nbsp;|&nbsp; Conductivity: <b>&sigma; = 1 / &rho; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">n e<sup>2</sup> &tau;</span><span style="padding: 0 2px; display: inline-block;">m</span></span></b>.</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px;">
+      <span style="color: #94A3B8;"><b>SI Unit:</b> <span style="color: #FFFFFF;">Ohm-meter (&Omega; m)</span></span>
+      <span style="color: #94A3B8;"><b>Dimension:</b> <span style="color: #FFFFFF;">[M<sup>1</sup> L<sup>3</sup> T<sup>-3</sup> A<sup>-2</sup>]</span></span>
+    </div>
+  </div>
+  <div style="background: rgba(30, 41, 59, 0.7); border: 1.2px dashed #38BDF8; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #38BDF8; font-size: 15px; font-weight: bold; margin-bottom: 4px;">💡 REAL-WORLD INTUITION: Resistance vs Resistivity</div>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">Resistivity (&rho;) is an intrinsic material property like the stickiness of honey or mud. Resistance (R) is the total difficulty of moving through a specific pipe: R = &rho; L / A (longer pipe = more resistance; wider pipe = less resistance).</div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1.2px solid rgba(255, 145, 0, 0.35); border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 15.5px; font-weight: bold; margin-bottom: 6px;">📝 WORKED BOARD NUMERICAL #1</div>
+    <div style="color: #E2E8F0; font-size: 14.5px; margin-bottom: 8px;"><b>Problem:</b> A copper wire has 8.5 &times; 10<sup>28</sup> free electrons/m<sup>3</sup>, length 3.0 m, and cross-section 2.0 &times; 10<sup>-6</sup> m<sup>2</sup> carrying 3.0 A. Find the drift velocity of electrons.</div>
+    <div style="background: rgba(0,0,0,0.3); padding: 10px 14px; border-radius: 6px; color: #69F0AE; font-size: 14px; line-height: 1.6;">
+      <b style="color: #FF9100;">Solution:</b><br>Formula: v<sub>d</sub> = I / (n e A)<br>v<sub>d</sub> = 3.0 / [(8.5 &times; 10<sup>28</sup>) &times; (1.6 &times; 10<sup>-19</sup>) &times; (2.0 &times; 10<sup>-6</sup>)] = 3.0 / [2.72 &times; 10<sup>4</sup>] = <b>1.10 &times; 10<sup>-4</sup> m/s (0.11 mm/s)</b>.
+    </div>
+  </div>
+
+  <p>In 1827, German physicist Georg Simon Ohm experimentally discovered the fundamental linear relationship governing the flow of electric current through metallic conductors.</p>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Ohm's Law &amp; Electrical Resistance (R)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;"><b>Ohm's Law:</b> Under constant physical conditions (such as temperature, mechanical strain, and pressure), the electric current (I) flowing through a conductor is directly proportional to the potential difference (V) applied across its terminals: V &prop; I &rArr; <b>V = I R</b>.<br><br><b>Electrical Resistance (R):</b> The opposition offered by a conductor to the flow of electric current through it: R = V / I. SI Unit: Ohm (&Omega;) = 1 Volt / 1 Ampere (V A<sup>-1</sup>). Dimensional Formula: [M<sup>1</sup> L<sup>2</sup> T<sup>-3</sup> A<sup>-2</sup>].</div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(i) Microscopic Deduction of Ohm's Law from Drift Theory</h3>
+
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 145, 0, 0.4); border-radius: 12px; padding: 18px; margin: 22px 0;">
+    <div style="color: #FF9100; font-weight: bold; font-size: 17.5px; margin-bottom: 12px; border-bottom: 1px dashed rgba(255, 145, 0, 0.4); padding-bottom: 6px;">
+      📐 STEP-BY-STEP MATHEMATICAL DERIVATION: Deduction of Ohm's Law (R = &#961; L / A)
+    </div>
+    <div style="color: #F1F5F9; line-height: 1.75; font-size: 15.5px;">
+      <b>1. Drift Velocity Expression:</b><br>
+      v<sub>d</sub> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e E &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e V &#964;</span><span style="padding: 0 2px; display: inline-block;">m L</span></span> &nbsp; (since electric field E = V / L).<br><br>
+      <b>2. Substitute v<sub>d</sub> into Current Equation:</b><br>
+      I = n e A v<sub>d</sub> = n e A [<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e V &#964;</span><span style="padding: 0 2px; display: inline-block;">m L</span></span>] = [<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964; A</span><span style="padding: 0 2px; display: inline-block;">m L</span></span>] V.<br><br>
+      <b>3. Rearranging for Potential Difference V:</b><br>
+      V = [<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">m</span><span style="padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964;</span></span> <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">L</span><span style="padding: 0 2px; display: inline-block;">A</span></span>] I = <b>R I</b>.<br><br>
+      At constant temperature, m, n, e, &#964;, L, and A are strictly constant, so V / I = Constant = R.<br><br>
+      <b>4. Electrical Resistivity (&#961;):</b><br>
+      R = &#961; <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">L</span><span style="padding: 0 2px; display: inline-block;">A</span></span> &nbsp;&rArr;&nbsp; <b>&#961; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">m</span><span style="padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964;</span></span></b>.<br><br>
+      <b>5. Electrical Conductivity (&#963;):</b><br>
+      <b>&#963; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">&#961;</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span></b>. Vector form of Ohm's Law: <b>j = &#963; E</b>.
+    </div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(ii) Temperature Dependence of Electrical Resistance &amp; Resistivity</h3>
+  <p>The electrical resistivity &#961; = m / (n e<sup>2</sup> &#964;) depends on free electron density n and relaxation time &#964;. When temperature T rises:</p>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Metals / Metallic Conductors:</b> Electron density n is constant. Increased thermal vibrations of lattice ions increase the frequency of collisions, causing relaxation time &#964; to decrease. Hence, resistivity <b>&#961; increases with temperature</b>.
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF9100; border-radius: 6px; padding: 8px; margin: 8px 0; text-align: center;">
+      <b>R<sub>T</sub> = R<sub>0</sub> [1 + &alpha; (T - T<sub>0</sub>)] &nbsp;|&nbsp; &#961;<sub>T</sub> = &#961;<sub>0</sub> [1 + &alpha; (T - T<sub>0</sub>)]</b>
+    </div>
+    Here &alpha; is the positive temperature coefficient of resistance (for Cu, &alpha; &approx; +0.0039 K<sup>-1</sup>).</li>
+    <li><b>Semiconductors &amp; Insulators:</b> Thermal energy breaks covalent bonds, causing free carrier density n to increase exponentially [n &prop; e<sup>-E<sub>g</sub>/(2 k<sub>B</sub> T)</sup>]. The massive increase in n dominates over the slight decrease in &#964;, causing resistivity to <b>decrease exponentially with temperature</b> (&alpha; is negative).</li>
+    <li><b>Standard Resistance Alloys (Manganin, Constantan, Nichrome):</b> High resistivity with nearly zero temperature coefficient (&alpha; &approx; 10<sup>-5</sup> K<sup>-1</sup>). Therefore, they are universally used to construct standard resistance boxes and potentiometer wires.</li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">3. V-I Characteristics: Linear (Ohmic) &amp; Non-Linear (Non-Ohmic) Devices</h2>
+
+  <p>Electrical devices and materials are broadly categorized based on their current-voltage (V-I) response curves:</p>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Ohmic Conductors:</b> Conductors that obey Ohm's law strictly across all voltages. Their V-I graph is a perfectly straight line passing through the origin (e.g. Copper, Silver wire at constant temperature). Resistance R = V / I = 1 / (slope of I-V graph).</li>
+    <li><b>Non-Ohmic Conductors / Devices:</b> Devices that violate Ohm's law. Their V-I graph is non-linear, does not pass through origin, or is asymmetrical under polarity reversal. Key examples:
+      <ol style="margin-left: 20px;">
+        <li><i>P-N Junction Diode:</i> High non-linear current in forward bias (exponential), negligible current in reverse bias until breakdown.</li>
+        <li><i>Thyristor:</i> Exhibits multiple conduction states and switching regions.</li>
+        <li><i>Gallium Arsenide (GaAs):</i> Displays a <b>Negative Differential Resistance</b> region where current decreases as voltage increases (dI/dV &lt; 0).</li>
+        <li><i>Electrolytes &amp; Vacuum Tubes:</i> Non-linear due to space charge and ionic back EMF.</li>
+      </ol>
+    </li>
+  </ul>
+
+  <!-- SVG 2 -->
+  <div style="background: #0B0F19; border: 1.8px solid #FF9100; border-radius: 16px; padding: 20px; margin: 28px 0; box-shadow: 0 10px 30px rgba(255, 145, 0, 0.25);">
+    <div style="color: #FF9100; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
+      📍 2. V-I CHARACTERISTICS: OHMIC VS NON-OHMIC MATERIALS
+    </div>
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <marker id="mAxis" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="930" height="510" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF9100" stroke-width="2"/>
+    <text x="465" y="38" text-anchor="middle" fill="#FF9100" font-family="sans-serif" font-size="20" font-weight="bold">2. V-I CHARACTERISTICS: OHMIC VS NON-OHMIC CONDUCTORS</text>
+
+    <!-- Panel 1: Ohmic Conductor -->
+    <g transform="translate(25, 60)">
+      <rect x="0" y="0" width="275" height="370" rx="10" fill="rgba(255, 145, 0,0.06)" stroke="#FF9100" stroke-width="1.5"/>
+      <text x="137" y="32" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="16" font-weight="bold">Metallic Conductor (Ohmic)</text>
+      <line x1="45" y1="310" x2="250" y2="310" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <line x1="45" y1="310" x2="45" y2="70" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <text x="245" y="335" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">I (Current)</text>
+      <text x="20" y="65" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">V</text>
+      <line x1="45" y1="310" x2="225" y2="100" stroke="#76FF03" stroke-width="3.5"/>
+      <text x="150" y="180" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">Slope = R = V/I</text>
+      <text x="137" y="355" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="13">Strictly Linear (Ohm's Law holds)</text>
+    </g>
+
+    <!-- Panel 2: P-N Junction Diode -->
+    <g transform="translate(325, 60)">
+      <rect x="0" y="0" width="275" height="370" rx="10" fill="rgba(0,229,255,0.06)" stroke="#00E5FF" stroke-width="1.5"/>
+      <text x="137" y="32" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">P-N Junction Diode (Non-Ohmic)</text>
+      <line x1="30" y1="260" x2="255" y2="260" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <line x1="90" y1="340" x2="90" y2="60" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <text x="250" y="285" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">V_F</text>
+      <text x="70" y="55" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">I_F</text>
+      <path d="M 90 260 Q 140 260 170 220 T 220 80" fill="none" stroke="#00E5FF" stroke-width="3.5"/>
+      <path d="M 90 260 L 50 262 L 40 320" fill="none" stroke="#00E5FF" stroke-width="2.5"/>
+      <text x="140" y="240" fill="#FFD700" font-family="sans-serif" font-size="13" font-weight="bold">V_knee</text>
+      <text x="137" y="355" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="13">Exponential (Non-linear)</text>
+    </g>
+
+    <!-- Panel 3: GaAs -->
+    <g transform="translate(625, 60)">
+      <rect x="0" y="0" width="275" height="370" rx="10" fill="rgba(255,81,47,0.06)" stroke="#FF8A65" stroke-width="1.5"/>
+      <text x="137" y="32" text-anchor="middle" fill="#FF8A65" font-family="sans-serif" font-size="16" font-weight="bold">GaAs (Negative Resistance)</text>
+      <line x1="45" y1="310" x2="250" y2="310" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <line x1="45" y1="310" x2="45" y2="70" stroke="#94A3B8" stroke-width="2" marker-end="url(#mAxis)"/>
+      <text x="245" y="335" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">V</text>
+      <text x="25" y="65" fill="#94A3B8" font-family="sans-serif" font-size="14" font-weight="bold">I</text>
+      <path d="M 45 310 Q 90 140 130 130 T 180 220 T 235 150" fill="none" stroke="#FF512F" stroke-width="3.5"/>
+      <text x="120" y="115" fill="#76FF03" font-family="sans-serif" font-size="13" font-weight="bold">Ohmic</text>
+      <text x="140" y="185" fill="#FF512F" font-family="sans-serif" font-size="13" font-weight="bold">-&#916;V/&#916;I &lt; 0</text>
+      <text x="137" y="355" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="13">Negative Dynamic Resistance Region</text>
+    </g>
+
+    <rect x="25" y="445" width="880" height="48" rx="8" fill="rgba(255, 145, 0,0.15)" stroke="#FF9100" stroke-width="1.2"/>
+    <text x="465" y="475" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Dynamic Resistance: r_d = &#916;V / &#916;I  |  Non-Ohmic: Diodes, Transistors, Electrolytes, Arc Lamps</text>
+  </g>
+</svg>
+    </div>
+    <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
+      💡 Fig 2.1: Comparison of linear Ohmic V-I graph with non-linear p-n junction diode and negative differential resistance in GaAs.
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">4. Electrical Energy, Electrical Power &amp; Joule's Heating Effect</h2>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Electrical Energy &amp; Electrical Power (P)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;"><b>Electrical Energy (W):</b> The total work done by a source of EMF in maintaining a steady current I through an electric circuit of resistance R for time t: W = V I t = I<sup>2</sup> R t = (V<sup>2</sup> / R) t [Joules J].<br><br><b>Electrical Power (P):</b> The rate at which electrical energy is consumed or dissipated into heat: P = dW / dt = <b>V I = I<sup>2</sup> R = V<sup>2</sup> / R</b>. SI Unit: Watt (W) = 1 Joule per second (J s<sup>-1</sup>). Commercial unit: <b>1 Kilowatt-hour (1 kWh) = 1 Board of Trade Unit = 3.6 &times; 10<sup>6</sup> J</b>.</div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(i) Power Dissipation in Series vs Parallel Bulb Combinations</h3>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Resistance from Rated Values:</b> For an electric bulb rated as (P<sub>rated</sub>, V<sub>rated</sub>), its filament resistance is <b>R = V<sub>rated</sub><sup>2</sup> / P<sub>rated</sub></b> (Higher rated power &rArr; Lower resistance).</li>
+    <li><b>Bulbs Connected in Series:</b> Current I is identical through all bulbs. Power dissipated P = I<sup>2</sup> R &prop; R. Therefore, the bulb with <b>higher resistance (lower rated power) glows brighter</b>.</li>
+    <li><b>Bulbs Connected in Parallel:</b> Voltage V is identical across all bulbs. Power dissipated P = V<sup>2</sup> / R &prop; 1/R. Therefore, the bulb with <b>lower resistance (higher rated power) glows brighter</b>.</li>
+  </ul>
+
+  <!-- SECTION 5 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">5. Internal Resistance of a Cell, Potential Difference &amp; Electromotive Force (EMF)</h2>
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-left: 5px solid #FF9100; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 16px; font-weight: bold; margin-bottom: 4px;">📖 DEFINITION: Electromotive Force (EMF) &amp; Internal Resistance (&Epsilon;, r)</div>
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6; margin-bottom: 8px;">Maximum potential difference between the terminals of a cell in an open circuit (when no current is drawn): <b>&Epsilon; = W / q</b>. Internal resistance: <b>r = (<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">&Epsilon;</span><span style="padding: 0 2px; display: inline-block;">V</span></span> - 1) R</b>.</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px;">
+      <span style="color: #94A3B8;"><b>SI Unit:</b> <span style="color: #FFFFFF;">Volt (V), Ohm (&Omega;)</span></span>
+      <span style="color: #94A3B8;"><b>Dimension:</b> <span style="color: #FFFFFF;">[M<sup>1</sup> L<sup>2</sup> T<sup>-3</sup> A<sup>-1</sup>]</span></span>
+    </div>
+  </div>
+  <div style="background: rgba(30, 41, 59, 0.7); border: 1.2px dashed #38BDF8; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #38BDF8; font-size: 15px; font-weight: bold; margin-bottom: 4px;">💡 REAL-WORLD INTUITION: EMF vs Terminal Voltage Analogy</div>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">EMF (&Epsilon;) is the gross salary promised by an employer ($100). The cell's internal resistance is like an unavoidable commuting tax (Ir = $10). Terminal voltage (V = &Epsilon; - Ir = $90) is the net take-home cash available to spend on external circuit appliances (R)!</div>
+  </div>
+  <div style="background: rgba(220, 38, 38, 0.1); border: 1.2px solid rgba(239, 68, 68, 0.4); border-left: 5px solid #EF4444; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #F87171; font-size: 15px; font-weight: bold; margin-bottom: 4px;">⚠️ BOARD EXAM TRAP &amp; CONCEPTUAL PITFALL: Terminal Voltage Exceeding EMF During Cell Charging</div>
+    <div style="color: #FCA5A5; font-size: 14.5px; line-height: 1.6;">During normal discharging: <b>V = &Epsilon; - I r</b> (V &lt; &Epsilon;). But when a secondary cell is being CHARGED by an external charger, current flows into the positive terminal: <b>V = &Epsilon; + I r</b> (Terminal voltage V is strictly GREATER than EMF &Epsilon;!).</div>
+  </div>
+
+  <p>An electrochemical cell converts chemical energy into electrical energy through redox reactions occurring at its electrodes. Within the cell, non-electrostatic chemical forces perform work to pump positive charge from the lower potential cathode to the higher potential anode against electrostatic repulsive fields.</p>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: EMF (&#949;), Terminal Potential Difference (V) &amp; Internal Resistance (r)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;"><b>Electromotive Force (EMF, &#949;):</b> The maximum potential difference between the electrodes of a cell when no current is drawn from it (open circuit): &#949; = dW / dq [Volt V, Dimensions: [M L<sup>2</sup> T<sup>-3</sup> A<sup>-1</sup>]].<br><br><b>Terminal Potential Difference (V):</b> The potential difference between the terminals of a cell when current I is drawn in a closed circuit.<br><br><b>Internal Resistance (r):</b> The opposition offered by the chemical electrolyte and electrodes of the cell to the flow of internal ionic current. Formula: <b>r = R [(&#949; / V) - 1]</b>.</div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(i) Mathematical Relationship During Different Operational Modes</h3>
+  <ul style="margin-left: 20px; line-height: 1.8;">
+    <li><b>Discharging Mode (Cell supplying current to load R):</b><br>
+    <span style="color: #76FF03; font-family: monospace; font-size: 16px;">I = &#949; / (R + r) &nbsp;&rArr;&nbsp; <b>V = &#949; - I r</b> &nbsp; (Terminal voltage V &lt; &#949;)</span></li>
+    <li><b>Charging Mode (External charger forcing current into cell from + to -):</b><br>
+    <span style="color: #00E5FF; font-family: monospace; font-size: 16px;"><b>V = &#949; + I r</b> &nbsp; (Terminal voltage V &gt; &#949;)</span></li>
+    <li><b>Open Circuit Condition (I = 0):</b><br>
+    <span style="color: #FFD700; font-family: monospace; font-size: 16px;"><b>V = &#949;</b> &nbsp; (Terminal voltage equals true EMF)</span></li>
+    <li><b>Short Circuit Condition (R = 0):</b><br>
+    <span style="color: #FF512F; font-family: monospace; font-size: 16px;"><b>I<sub>max</sub> = &#949; / r</b> &nbsp; (Terminal voltage V = 0, maximum dangerous current)</span></li>
+  </ul>
+
+  <!-- SVG 3 -->
+  <div style="background: #0B0F19; border: 1.8px solid #FF9100; border-radius: 16px; padding: 20px; margin: 28px 0; box-shadow: 0 10px 30px rgba(255, 145, 0, 0.25);">
+    <div style="color: #FF9100; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
+      📍 3. EMF, INTERNAL RESISTANCE &amp; TERMINAL VOLTAGE IN A CELL
+    </div>
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <marker id="mGreen3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#76FF03"/>
+    </marker>
+    <marker id="mPurple3" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#FF9100"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="930" height="510" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF9100" stroke-width="2"/>
+    <text x="465" y="38" text-anchor="middle" fill="#FF9100" font-family="sans-serif" font-size="20" font-weight="bold">3. EMF (&#949;), INTERNAL RESISTANCE (r) &amp; TERMINAL POTENTIAL DIFFERENCE (V)</text>
+
+    <!-- Circuit Diagram Box -->
+    <g transform="translate(35, 65)">
+      <rect x="0" y="0" width="460" height="360" rx="10" fill="rgba(255, 145, 0,0.06)" stroke="#FF9100" stroke-width="1.5"/>
+      <text x="230" y="30" text-anchor="middle" fill="#FF9100" font-family="sans-serif" font-size="16" font-weight="bold">Cell in Closed Circuit (Discharging)</text>
+
+      <rect x="70" y="60" width="320" height="110" rx="8" fill="rgba(255,215,0,0.06)" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <text x="230" y="85" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="14" font-weight="bold">Real Cell (EMF &#949; + Internal Resistance r)</text>
+
+      <line x1="120" y1="125" x2="120" y2="155" stroke="#76FF03" stroke-width="4"/>
+      <line x1="140" y1="110" x2="140" y2="170" stroke="#76FF03" stroke-width="5"/>
+      <text x="110" y="105" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">-</text>
+      <text x="145" y="105" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">+</text>
+      <text x="130" y="195" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">&#949;</text>
+
+      <line x1="140" y1="140" x2="220" y2="140" stroke="#FFFFFF" stroke-width="2.5"/>
+      <path d="M 220 140 L 230 125 L 245 155 L 260 125 L 275 155 L 290 125 L 300 140" fill="none" stroke="#FF512F" stroke-width="3"/>
+      <text x="260" y="180" text-anchor="middle" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">r (Internal)</text>
+      <line x1="300" y1="140" x2="360" y2="140" stroke="#FFFFFF" stroke-width="2.5"/>
+
+      <line x1="70" y1="140" x2="40" y2="140" stroke="#FFFFFF" stroke-width="2.5"/>
+      <line x1="40" y1="140" x2="40" y2="280" stroke="#FFFFFF" stroke-width="2.5"/>
+      <line x1="40" y1="280" x2="160" y2="280" stroke="#FFFFFF" stroke-width="2.5"/>
+
+      <path d="M 160 280 L 175 265 L 195 295 L 215 265 L 235 295 L 255 265 L 270 280" fill="none" stroke="#00E5FF" stroke-width="3.5"/>
+      <text x="215" y="325" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">Load Resistor R</text>
+      <line x1="270" y1="280" x2="420" y2="280" stroke="#FFFFFF" stroke-width="2.5"/>
+      <line x1="420" y1="280" x2="420" y2="140" stroke="#FFFFFF" stroke-width="2.5"/>
+      <line x1="420" y1="140" x2="390" y2="140" stroke="#FFFFFF" stroke-width="2.5"/>
+
+      <line x1="40" y1="210" x2="40" y2="250" stroke="#76FF03" stroke-width="3" marker-end="url(#mGreen3)"/>
+      <text x="25" y="235" fill="#76FF03" font-family="sans-serif" font-size="15" font-weight="bold">I</text>
+    </g>
+
+    <!-- Graph Panel -->
+    <g transform="translate(520, 65)">
+      <rect x="0" y="0" width="375" height="360" rx="10" fill="rgba(0,229,255,0.06)" stroke="#00E5FF" stroke-width="1.5"/>
+      <text x="187" y="30" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="16" font-weight="bold">V vs I Characteristics of Cell</text>
+
+      <line x1="50" y1="260" x2="330" y2="260" stroke="#94A3B8" stroke-width="2" marker-end="url(#mGreen3)"/>
+      <line x1="50" y1="260" x2="50" y2="60" stroke="#94A3B8" stroke-width="2" marker-end="url(#mPurple3)"/>
+      <text x="335" y="285" fill="#76FF03" font-family="sans-serif" font-size="14" font-weight="bold">Current I</text>
+      <text x="30" y="55" fill="#FF9100" font-family="sans-serif" font-size="14" font-weight="bold">Terminal V</text>
+
+      <line x1="50" y1="100" x2="280" y2="260" stroke="#FF512F" stroke-width="3.5"/>
+      <circle cx="50" cy="100" r="5" fill="#FFD700"/>
+      <text x="65" y="95" fill="#FFD700" font-family="sans-serif" font-size="15" font-weight="bold">V = &#949; (at I = 0)</text>
+
+      <circle cx="280" cy="260" r="5" fill="#FF512F"/>
+      <text x="240" y="290" fill="#FF512F" font-family="sans-serif" font-size="14" font-weight="bold">I_sc = &#949;/r</text>
+
+      <text x="180" y="160" fill="#FF512F" font-family="sans-serif" font-size="15" font-weight="bold">Slope = -r</text>
+      <text x="180" y="185" fill="#FFFFFF" font-family="sans-serif" font-size="14">V = &#949; - I r</text>
+
+      <rect x="25" y="305" width="325" height="40" rx="6" fill="rgba(0,0,0,0.3)" stroke="#00E5FF" stroke-width="1"/>
+      <text x="187" y="330" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="13.5" font-weight="bold">r = R (&#949;/V - 1)  |  P_max when R = r</text>
+    </g>
+
+    <rect x="25" y="445" width="880" height="48" rx="8" fill="rgba(255, 145, 0,0.15)" stroke="#FF9100" stroke-width="1.2"/>
+    <text x="465" y="475" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Discharging: V = &#949; - I r  |  Charging: V = &#949; + I r  |  Open Circuit: V = &#949;  |  Short Circuit: I_max = &#949; / r</text>
+  </g>
+</svg>
+    </div>
+    <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
+      💡 Fig 3.1: Circuit diagram of cell with internal resistance r connected to load R and V vs I discharging characteristic line with intercept &#949; and slope -r.
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">6. Kirchhoff's Rules &amp; Wheatstone Bridge Principle</h2>
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-left: 5px solid #FF9100; border-radius: 8px; padding: 14px 18px; margin: 16px 0;">
+    <div style="color: #FF9100; font-size: 16px; font-weight: bold; margin-bottom: 4px;">📖 DEFINITION: Kirchhoff's Rules (&Sigma; I = 0, &Sigma; &Delta;V = 0)</div>
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6; margin-bottom: 8px;">1. <b>Junction Rule (KCL):</b> &Sigma; I = 0 (Conservation of Charge).<br>2. <b>Loop Rule (KVL):</b> &Sigma; &Delta;V = &Sigma; &Epsilon; - &Sigma; I R = 0 (Conservation of Energy).</div>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 13.5px; background: rgba(0,0,0,0.3); padding: 8px 12px; border-radius: 6px;">
+      <span style="color: #94A3B8;"><b>SI Unit:</b> <span style="color: #FFFFFF;">Ampere (A), Volt (V)</span></span>
+      <span style="color: #94A3B8;"><b>Dimension:</b> <span style="color: #FFFFFF;">[A<sup>1</sup>], [M<sup>1</sup> L<sup>2</sup> T<sup>-3</sup> A<sup>-1</sup>]</span></span>
+    </div>
+  </div>
+  <div style="background: rgba(30, 41, 59, 0.7); border: 1.2px dashed #38BDF8; border-radius: 8px; padding: 12px 16px; margin: 14px 0;">
+    <div style="color: #38BDF8; font-size: 15px; font-weight: bold; margin-bottom: 4px;">💡 REAL-WORLD INTUITION: Wheatstone Bridge Balance Analogy</div>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">Think of a Wheatstone bridge as a balanced two-pan weighing scale. When the ratio of left arms equals the ratio of right arms (P / Q = R / S), both bridge nodes reach the EXACT SAME electric potential (V<sub>B</sub> = V<sub>D</sub>). Zero current flows through the central galvanometer branch (I<sub>g</sub> = 0)!</div>
+  </div>
+
+  <p>While simple series-parallel circuits can be reduced using Ohm's law, complex electrical networks containing multiple loops, branches, and interconnected electromotive sources require Kirchhoff's Laws, formulated by Gustav Kirchhoff in 1845.</p>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Kirchhoff's First Rule (Junction Rule / KCL)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">Kirchhoff's Junction Rule states that the algebraic sum of electric currents entering and leaving any electrical node or junction in a circuit is strictly zero: <b>&Sigma; I = 0</b>. Sum of entering currents = Sum of leaving currents. This rule is a direct physical consequence of the <b>Law of Conservation of Electric Charge</b>.</div>
+  </div>
+
+  <div style="background: rgba(255, 145, 0, 0.08); border-left: 4.5px solid #FF9100; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #FF9100; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: Kirchhoff's Second Rule (Loop Rule / KVL)</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">Kirchhoff's Loop Rule states that the algebraic sum of changes in electrostatic potential around any closed mesh or loop of an electrical circuit is strictly zero: <b>&Sigma; &Delta;V = 0 &rArr; &Sigma; &#949; = &Sigma; I R</b>. This rule is a direct physical consequence of the <b>Law of Conservation of Energy</b> (electrostatic field is conservative).</div>
+  </div>
+
+  <h3 style="color: #FF9100; margin-top: 20px;">(i) Wheatstone Bridge Network &amp; Balanced Condition Derivation</h3>
+
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1.5px solid rgba(255, 145, 0, 0.4); border-radius: 12px; padding: 18px; margin: 22px 0;">
+    <div style="color: #FF9100; font-weight: bold; font-size: 17.5px; margin-bottom: 12px; border-bottom: 1px dashed rgba(255, 145, 0, 0.4); padding-bottom: 6px;">
+      📐 STEP-BY-STEP MATHEMATICAL DERIVATION: Balanced Wheatstone Bridge Condition (P / Q = R / S)
+    </div>
+    <div style="color: #F1F5F9; line-height: 1.75; font-size: 15.5px;">
+      <b>1. Circuit Setup:</b><br>
+      Four resistors P, Q, R, S form four arms of a quadrilateral ABCD. Battery of EMF &#949; is connected across opposite junctions A and C; Galvanometer G (resistance G) is connected across junctions B and D.<br><br>
+      <b>2. Applying Kirchhoff's Junction Rule:</b><br>
+      At node B: I<sub>1</sub> = I<sub>g</sub> + I<sub>Q</sub> &nbsp;&rArr;&nbsp; I<sub>Q</sub> = I<sub>1</sub> - I<sub>g</sub>.<br>
+      At node D: I<sub>2</sub> + I<sub>g</sub> = I<sub>S</sub> &nbsp;&rArr;&nbsp; I<sub>S</sub> = I<sub>2</sub> + I<sub>g</sub>.<br><br>
+      <b>3. Applying Kirchhoff's Loop Rule to Mesh ABDA:</b><br>
+      - I<sub>1</sub> P - I<sub>g</sub> G + I<sub>2</sub> R = 0 &nbsp;&rArr;&nbsp; I<sub>1</sub> P + I<sub>g</sub> G = I<sub>2</sub> R &nbsp;--- (Equation 1).<br><br>
+      <b>4. Applying Kirchhoff's Loop Rule to Mesh BCDB:</b><br>
+      - (I<sub>1</sub> - I<sub>g</sub>) Q + (I<sub>2</sub> + I<sub>g</sub>) S + I<sub>g</sub> G = 0 &nbsp;--- (Equation 2).<br><br>
+      <b>5. Balanced Bridge Condition (Null Deflection I<sub>g</sub> = 0):</b><br>
+      When potential at B equals potential at D (V<sub>B</sub> = V<sub>D</sub>), zero current flows through galvanometer (I<sub>g</sub> = 0).<br>
+      From Equation (1): I<sub>1</sub> P = I<sub>2</sub> R.<br>
+      From Equation (2): I<sub>1</sub> Q = I<sub>2</sub> S.<br><br>
+      <b>6. Dividing the two equations:</b><br>
+      <div style="background: rgba(0,0,0,0.35); border: 1px solid #FF9100; border-radius: 6px; padding: 10px; text-align: center; color: #FFFFFF; font-size: 16.5px;">
+        <b><span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">I<sub>1</sub> P</span><span style="padding: 0 2px; display: inline-block;">I<sub>1</sub> Q</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">I<sub>2</sub> R</span><span style="padding: 0 2px; display: inline-block;">I<sub>2</sub> S</span></span> &nbsp;&rArr;&nbsp; <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">P</span><span style="padding: 0 2px; display: inline-block;">Q</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">R</span><span style="padding: 0 2px; display: inline-block;">S</span></span></b>
+      </div><br>
+      <b>Conclusion:</b> Under balanced condition, ratio P/Q equals R/S. The galvanometer can be interchanged with the battery without disturbing the null condition.
+    </div>
+  </div>
+
+  <!-- SVG 4 -->
+  <div style="background: #0B0F19; border: 1.8px solid #FF9100; border-radius: 16px; padding: 20px; margin: 28px 0; box-shadow: 0 10px 30px rgba(255, 145, 0, 0.25);">
+    <div style="color: #FF9100; font-weight: bold; font-size: 18px; margin-bottom: 16px; text-align: center; letter-spacing: 0.5px;">
+      📍 4. WHEATSTONE BRIDGE &amp; KIRCHHOFF'S CURRENT/VOLTAGE LOOPS
+    </div>
+    <div style="width: 100%; max-width: 960px; margin: 0 auto; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" style="background: linear-gradient(135deg, #0B0F19 0%, #111827 50%, #070A10 100%);">
+  <defs>
+    <radialGradient id="gGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(15, 15)">
+    <rect x="0" y="0" width="930" height="510" rx="14" fill="rgba(15,23,42,0.92)" stroke="#FF9100" stroke-width="2"/>
+    <text x="465" y="38" text-anchor="middle" fill="#FF9100" font-family="sans-serif" font-size="20" font-weight="bold">4. WHEATSTONE BRIDGE &amp; KIRCHHOFF'S LAWS</text>
+
+    <!-- Arm AB (Resistor P) -->
+    <line x1="180" y1="240" x2="310" y2="175" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M 310 175 L 320 160 L 340 190 L 360 160 L 380 190 L 400 160 L 410 175" fill="none" stroke="#76FF03" stroke-width="3.5"/>
+    <line x1="410" y1="175" x2="465" y2="100" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="340" y="145" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">Arm P (I1)</text>
+
+    <!-- Arm BC (Resistor Q) -->
+    <line x1="465" y1="100" x2="520" y2="175" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M 520 175 L 530 160 L 550 190 L 570 160 L 590 190 L 610 160 L 620 175" fill="none" stroke="#76FF03" stroke-width="3.5"/>
+    <line x1="620" y1="175" x2="750" y2="240" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="590" y="145" text-anchor="middle" fill="#76FF03" font-family="sans-serif" font-size="17" font-weight="bold">Arm Q (I1 - Ig)</text>
+
+    <!-- Arm AD (Resistor R) -->
+    <line x1="180" y1="240" x2="310" y2="305" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M 310 305 L 320 290 L 340 320 L 360 290 L 380 320 L 400 290 L 410 305" fill="none" stroke="#00E5FF" stroke-width="3.5"/>
+    <line x1="410" y1="305" x2="465" y2="380" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="340" y="340" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">Arm R (I2)</text>
+
+    <!-- Arm DC (Resistor S) -->
+    <line x1="465" y1="380" x2="520" y2="305" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M 520 305 L 530 290 L 550 320 L 570 290 L 590 320 L 610 290 L 620 305" fill="none" stroke="#00E5FF" stroke-width="3.5"/>
+    <line x1="620" y1="305" x2="750" y2="240" stroke="#FFFFFF" stroke-width="2.5"/>
+    <text x="590" y="340" text-anchor="middle" fill="#00E5FF" font-family="sans-serif" font-size="17" font-weight="bold">Arm S (I2 + Ig)</text>
+
+    <!-- Galvanometer Arm BD -->
+    <line x1="465" y1="100" x2="465" y2="205" stroke="#FFD700" stroke-width="2.5"/>
+    <circle cx="465" cy="240" r="32" fill="url(#gGlow)" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="465" y="247" text-anchor="middle" fill="#0B0F19" font-family="sans-serif" font-size="20" font-weight="bold">G</text>
+    <line x1="465" y1="275" x2="465" y2="380" stroke="#FFD700" stroke-width="2.5"/>
+    <text x="510" y="245" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">Ig = 0</text>
+
+    <!-- Node Labels -->
+    <circle cx="180" cy="240" r="8" fill="#FF9100"/>
+    <text x="150" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">A</text>
+
+    <circle cx="465" cy="100" r="8" fill="#FF9100"/>
+    <text x="465" y="78" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">B (V_B)</text>
+
+    <circle cx="750" cy="240" r="8" fill="#FF9100"/>
+    <text x="770" y="245" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">C</text>
+
+    <circle cx="465" cy="380" r="8" fill="#FF9100"/>
+    <text x="465" y="410" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="18" font-weight="bold">D (V_D)</text>
+
+    <!-- Battery Connections -->
+    <path d="M 180 240 L 90 240 L 90 460 L 400 460" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="400" y1="445" x2="400" y2="475" stroke="#76FF03" stroke-width="4"/>
+    <line x1="415" y1="435" x2="415" y2="485" stroke="#76FF03" stroke-width="5"/>
+    <text x="408" y="425" text-anchor="middle" fill="#FFD700" font-family="sans-serif" font-size="16" font-weight="bold">&#949;, K</text>
+    <path d="M 415 460 L 840 460 L 840 240 L 750 240" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+    <rect x="180" y="440" width="570" height="48" rx="8" fill="rgba(255, 145, 0,0.2)" stroke="#FF9100" stroke-width="1.5"/>
+    <text x="465" y="470" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold">Balanced Condition: V_B = V_D &#8658; I_g = 0 &#8658; P / Q = R / S</text>
+  </g>
+</svg>
+    </div>
+    <div style="color: #CBD5E1; font-size: 14.5px; text-align: center; margin-top: 14px; line-height: 1.5; font-weight: 500;">
+      💡 Fig 4.1: Bridge network showing 4 arms P, Q, R, S, central galvanometer G, branch currents, and balanced null condition P/Q = R/S.
+    </div>
+  </div>
+
+  <!-- COMPARISON MATRICES -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">7. Master Comparison Matrices</h2>
+
+  <div style="overflow-x: auto; margin: 20px 0;">
+    <table style="width: 100%; border-collapse: collapse; color: #FFFFFF; font-size: 15px; background: rgba(15,23,42,0.85); border: 1px solid #FF9100; border-radius: 8px;">
+      <thead>
+        <tr style="background: rgba(255, 145, 0,0.3); color: #FF9100; border-bottom: 2px solid #FF9100;">
+          <th style="padding: 12px; border: 1px solid rgba(255, 145, 0,0.3); text-align: left;">Parameter</th>
+          <th style="padding: 12px; border: 1px solid rgba(255, 145, 0,0.3); text-align: left;">Electromotive Force (EMF, &#949;)</th>
+          <th style="padding: 12px; border: 1px solid rgba(255, 145, 0,0.3); text-align: left;">Terminal Potential Difference (V)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2); font-weight: bold; color: #FF9100;">1. Definition</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Max work done by cell in driving unit charge through entire complete circuit.</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Work done in moving unit charge between two specific circuit points.</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2); font-weight: bold; color: #FF9100;">2. Circuit State</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Measured when circuit is <b>open</b> (no current I = 0).</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Measured when circuit is <b>closed</b> (current I &gt; 0).</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2); font-weight: bold; color: #FF9100;">3. Dependence on R</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Independent of external load resistance R.</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Directly depends on external load resistance R.</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2); font-weight: bold; color: #FF9100;">4. Cause vs Effect</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">EMF is the <b>cause</b> of current flow.</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Potential difference is the <b>effect</b> of current flow.</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2); font-weight: bold; color: #FF9100;">5. Magnitude</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">Always greater than V during discharge (&#949; &gt; V).</td>
+          <td style="padding: 10px; border: 1px solid rgba(255, 145, 0,0.2);">V = &#949; - I r (less than &#949; during discharge).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <h2 style="color: #FF9100; border-bottom: 2px solid #FF9100; padding-bottom: 6px; margin-top: 30px;">8. Master Revision Formula Cheat Sheet</h2>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 15px;">
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF9100; border-radius: 8px; padding: 12px;">
+      <b style="color: #FF9100; display: block; margin-bottom: 6px;">Drift Velocity &amp; Current</b>
+      <div style="color: #FFFFFF; font-size: 14.5px;">
+        v<sub>d</sub> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e E &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span> = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e V &#964;</span><span style="padding: 0 2px; display: inline-block;">m L</span></span><br>
+        I = n e A v<sub>d</sub><br>
+        j = I / A = n e v<sub>d</sub> = &#963; E<br>
+        &#956; = v<sub>d</sub> / E = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">e &#964;</span><span style="padding: 0 2px; display: inline-block;">m</span></span>
+      </div>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF9100; border-radius: 8px; padding: 12px;">
+      <b style="color: #FF9100; display: block; margin-bottom: 6px;">Resistance &amp; Temperature</b>
+      <div style="color: #FFFFFF; font-size: 14.5px;">
+        R = &#961; <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">L</span><span style="padding: 0 2px; display: inline-block;">A</span></span> = [<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">m</span><span style="padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964;</span></span>] <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">L</span><span style="padding: 0 2px; display: inline-block;">A</span></span><br>
+        &#961; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">m</span><span style="padding: 0 2px; display: inline-block;">n e<sup>2</sup> &#964;</span></span>, &nbsp; &#963; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">1</span><span style="padding: 0 2px; display: inline-block;">&#961;</span></span><br>
+        R<sub>T</sub> = R<sub>0</sub> [1 + &alpha; (T - T<sub>0</sub>)]<br>
+        &alpha; = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">R<sub>2</sub> - R<sub>1</sub></span><span style="padding: 0 2px; display: inline-block;">R<sub>1</sub>(T<sub>2</sub> - T<sub>1</sub>)</span></span>
+      </div>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF9100; border-radius: 8px; padding: 12px;">
+      <b style="color: #FF9100; display: block; margin-bottom: 6px;">Energy &amp; Electrical Power</b>
+      <div style="color: #FFFFFF; font-size: 14.5px;">
+        W = V I t = I<sup>2</sup> R t = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">V<sup>2</sup></span><span style="padding: 0 2px; display: inline-block;">R</span></span> t<br>
+        P = V I = I<sup>2</sup> R = <span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;"><span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">V<sup>2</sup></span><span style="padding: 0 2px; display: inline-block;">R</span></span><br>
+        1 kWh = 3.6 &times; 10<sup>6</sup> J<br>
+        Bulb R = V<sub>rated</sub><sup>2</sup> / P<sub>rated</sub>
+      </div>
+    </div>
+
+    <div style="background: rgba(0,0,0,0.3); border: 1px solid #FF9100; border-radius: 8px; padding: 12px;">
+      <b style="color: #FF9100; display: block; margin-bottom: 6px;">Cells &amp; Kirchhoff's Laws</b>
+      <div style="color: #FFFFFF; font-size: 14.5px;">
+        Discharging: V = &#949; - I r<br>
+        Charging: V = &#949; + I r<br>
+        Internal r = R [(&#949;/V) - 1]<br>
+        KCL: &Sigma; I = 0, &nbsp; KVL: &Sigma; &Delta;V = 0<br>
+        Wheatstone: P / Q = R / S (when I<sub>g</sub> = 0)
+      </div>
+    </div>
+  </div>
+
+</div>

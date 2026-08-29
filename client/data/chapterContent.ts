@@ -1,4 +1,8 @@
 import { c12Chem1HtmlOverview, c12Chem1HtmlSolutions, c12Chem1Mcqs } from "./content/c12-chem-1";
+import { c12Chem2HtmlOverview, c12Chem2HtmlSolutions, c12Chem2Mcqs } from "./content/c12-chem-2";
+import { c12Chem3HtmlOverview, c12Chem3HtmlSolutions, c12Chem3Mcqs } from "./content/c12-chem-3";
+import { c12Chem4HtmlOverview, c12Chem4HtmlSolutions, c12Chem4Mcqs } from "./content/c12-chem-4";
+import { c12Chem5HtmlOverview, c12Chem5HtmlSolutions, c12Chem5Mcqs } from "./content/c12-chem-5";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -1551,4 +1555,72 @@ if (ch12Chem1) {
     },
   ];
   ch12Chem1.mcqs = c12Chem1Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 2 (Electrochemistry)
+const ch12Chem2 = chapterContents["c12-chem-2"];
+if (ch12Chem2) {
+  ch12Chem2.htmlOverview = c12Chem2HtmlOverview;
+  ch12Chem2.htmlExercises = {
+    "ex-c12-qa": c12Chem2HtmlSolutions,
+  };
+  ch12Chem2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem2.mcqs = c12Chem2Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 3 (Chemical Kinetics)
+const ch12Chem3 = chapterContents["c12-chem-3"];
+if (ch12Chem3) {
+  ch12Chem3.htmlOverview = c12Chem3HtmlOverview;
+  ch12Chem3.htmlExercises = {
+    "ex-c12-qa": c12Chem3HtmlSolutions,
+  };
+  ch12Chem3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem3.mcqs = c12Chem3Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 4 (d and f-Block Elements)
+const ch12Chem4 = chapterContents["c12-chem-4"];
+if (ch12Chem4) {
+  ch12Chem4.htmlOverview = c12Chem4HtmlOverview;
+  ch12Chem4.htmlExercises = {
+    "ex-c12-qa": c12Chem4HtmlSolutions,
+  };
+  ch12Chem4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem4.mcqs = c12Chem4Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 5 (Coordination Compounds)
+const ch12Chem5 = chapterContents["c12-chem-5"];
+if (ch12Chem5) {
+  ch12Chem5.htmlOverview = c12Chem5HtmlOverview;
+  ch12Chem5.htmlExercises = {
+    "ex-c12-qa": c12Chem5HtmlSolutions,
+  };
+  ch12Chem5.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem5.mcqs = c12Chem5Mcqs;
 }

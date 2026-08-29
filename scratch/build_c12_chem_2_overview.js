@@ -1,0 +1,472 @@
+const fs = require('fs');
+const path = require('path');
+
+const themeColor = "#00E5FF";
+
+function frac(num, den) {
+  return `<span style="display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 0.88em; line-height: 1; margin: 0 3px;">
+    <span style="border-bottom: 1.5px solid currentColor; padding: 0 2px; display: inline-block;">${num}</span>
+    <span style="padding: 0 2px; display: inline-block;">${den}</span>
+  </span>`;
+}
+
+function eqBox(eqText) {
+  return `<div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(0, 229, 255, 0.35); border-radius: 8px; padding: 12px 16px; text-align: center; margin: 16px 0; font-size: 16px; color: #FFFFFF; white-space: nowrap; overflow-x: auto;">${eqText}</div>`;
+}
+
+function defBox(title, defContent) {
+  return `
+  <div style="background: rgba(0, 229, 255, 0.08); border-left: 4.5px solid ${themeColor}; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: ${themeColor}; font-size: 16.5px; display: block; margin-bottom: 6px;">📌 DEFINITION: ${title}</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65;">${defContent}</div>
+  </div>`;
+}
+
+function analogyBox(title, text) {
+  return `
+  <div style="background: rgba(0, 229, 255, 0.08); border-left: 4.5px solid ${themeColor}; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: ${themeColor}; font-size: 16.5px; display: block; margin-bottom: 6px;">💡 REAL-WORLD INTUITION &amp; ANALOGY: ${title}</b>
+    <div style="color: #E2E8F0; font-size: 15px; line-height: 1.65;">${text}</div>
+  </div>`;
+}
+
+function stepDerivationBox(title, stepsHtml) {
+  return `
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid rgba(0, 229, 255, 0.4); border-radius: 10px; padding: 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+    <div style="color: ${themeColor}; font-weight: bold; font-size: 16.5px; margin-bottom: 12px; border-bottom: 1px solid rgba(0,229,255,0.3); padding-bottom: 6px;">
+      📐 STEP-BY-STEP MATHEMATICAL DERIVATION: ${title}
+    </div>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.75;">
+      ${stepsHtml}
+    </div>
+  </div>`;
+}
+
+function examTrapBox(title, text) {
+  return `
+  <div style="background: rgba(239, 68, 68, 0.08); border-left: 4.5px solid #EF4444; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: #EF4444; font-size: 16.5px; display: block; margin-bottom: 6px;">⚠️ BOARD EXAM TRAP &amp; COMMON MISCONCEPTION: ${title}</b>
+    <div style="color: #FEE2E2; font-size: 15.5px; line-height: 1.65;">${text}</div>
+  </div>`;
+}
+
+function solvedExampleBox(title, prob, sol) {
+  return `
+  <div style="background: rgba(0, 229, 255, 0.08); border-left: 4.5px solid ${themeColor}; padding: 14px 18px; border-radius: 8px; margin: 18px 0;">
+    <b style="color: ${themeColor}; font-size: 16.5px; display: block; margin-bottom: 6px;">📝 WORKED BOARD NUMERICAL EXAMPLE: ${title}</b>
+    <div style="color: #FFFFFF; font-size: 15.5px; line-height: 1.65; margin-bottom: 8px;"><b style="color: ${themeColor};">Problem:</b> ${prob}</div>
+    <div style="color: #E0F7FA; font-size: 15px; line-height: 1.65; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 6px;"><b style="color: ${themeColor};">Step-by-Step Solution:</b><br>${sol}</div>
+  </div>`;
+}
+
+// ---------------- TAB 1: OVERVIEW HTML ----------------
+const htmlOverview = `
+<style>
+  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper):not(.mcq-option) {
+    text-align: justify !important;
+  }
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+  .text-center { text-align: center !important; }
+  .text-left { text-align: left !important; }
+</style>
+
+<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
+
+  <!-- QUICK GLOSSARY CARD -->
+  <div style="background: rgba(0, 229, 255, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p class="text-center" style="color: ${themeColor}; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Essential Core Concepts &amp; Key Definitions &bull; Unit II: Electrochemistry (JKBOSE / CBSE Official Syllabus - 09 Marks)</p>
+
+    <div style="display: flex; flex-direction: column; gap: 12px;">
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Electrochemistry:</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The branch of physical chemistry that deals with the interconversion of electrical energy and chemical energy, and the relationship between electrical potential and spontaneous chemical reactions.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Specific Conductivity (&kappa; - Kappa):</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The conductance of a solution of 1 cm length and 1 cm<sup>2</sup> cross-sectional area (i.e. conductance of 1 cm<sup>3</sup> of electrolytic solution). Unit: <b>S cm<sup>-1</sup></b> or <b>S m<sup>-1</sup></b>.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Molar Conductivity (&Lambda;<sub>m</sub>):</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The conducting power of all the ions produced by dissolving 1 mole of an electrolyte in a given volume of solution: &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / M. Unit: <b>S cm<sup>2</sup> mol<sup>-1</sup></b>.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Kohlrausch's Law of Independent Migration:</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">At infinite dilution, the limiting molar conductivity of an electrolyte is the sum of the individual limiting molar conductivities of its constituent cations and anions.</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Standard Electrode Potential (E&deg;):</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The potential difference developed between a metal electrode and its 1 M ionic solution at 298 K and 1 bar pressure, measured relative to the Standard Hydrogen Electrode (SHE, E&deg; = 0.00 V).</span>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
+        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">6. Faraday's Constant (F):</b>
+        <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The total electrical charge carried by exactly 1 mole of electrons: F = N<sub>A</sub> &times; e = (6.022 &times; 10<sup>23</sup>) &times; (1.602 &times; 10<sup>-19</sup> C) &approx; <b>96500 C mol<sup>-1</sup></b>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">1. Redox Reactions &amp; Electrochemical Fundamentals</h2>
+
+  <p>Electrochemistry deals with chemical transformations brought about by electrical energy and the generation of electrical energy by spontaneous chemical reactions. All electrochemical processes are fundamentally based on <b>Redox (Reduction-Oxidation) reactions</b> where electron transfer occurs between interacting chemical species.</p>
+
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• Oxidation:</b> Loss of electrons, increase in oxidation state. Occurs strictly at the <b>Anode</b>.</li>
+    <li><b style="color: ${themeColor};">• Reduction:</b> Gain of electrons, decrease in oxidation state. Occurs strictly at the <b>Cathode</b>.</li>
+    <li><b style="color: ${themeColor};">• Anode (Electrochemical / Galvanic Cell):</b> Negative terminal where oxidation takes place.</li>
+    <li><b style="color: ${themeColor};">• Cathode (Electrochemical / Galvanic Cell):</b> Positive terminal where reduction takes place.</li>
+  </ul>
+
+  ${analogyBox('Electron Highway', 'Think of an electrochemical cell as a power highway: electrons are released at the Anode (the power generation station) and travel through the external wire to the Cathode (the consumer station), providing continuous electrical current.')}
+
+  <!-- SECTION 2 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">2. Conductance in Electrolytic Solutions &amp; Cell Constant</h2>
+
+  <p>Unlike metallic conductors where electrical charge is carried by free electrons without any mass transfer, electrolytic conductors carry electrical current through the physical migration of hydrated cations and anions towards oppositely charged electrodes.</p>
+
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Electrical Resistance (R), Conductance (G) &amp; Resistivity (&rho;)</h3>
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• Ohm's Law in Solutions:</b> Current flowing through an electrolytic solution is directly proportional to the applied potential difference: <i>V = I R</i>.</li>
+    <li><b style="color: ${themeColor};">• Conductance (G):</b> The ease with which electric current flows through the solution. Reciprocal of resistance:
+      ${eqBox(`G = ${frac('1', 'R')}`)}
+      <b style="color: ${themeColor};">Unit:</b> <b>Siemens (S)</b> or <b>&Omega;<sup>-1</sup> (mho)</b>.
+    </li>
+    <li><b style="color: ${themeColor};">• Resistivity (&rho; - Specific Resistance):</b> Resistance of a solution of unit length (<i>l = 1 cm</i>) and unit cross-sectional area (<i>A = 1 cm<sup>2</sup></i>):
+      ${eqBox(`R = &rho; ${frac('l', 'A')} &rArr; &rho; = R ${frac('A', 'l')}`)}
+      <b style="color: ${themeColor};">Unit:</b> <b>&Omega; cm</b> or <b>&Omega; m</b>.
+    </li>
+  </ul>
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Specific Conductivity (&kappa; - Kappa) &amp; Cell Constant (G*)</h3>
+  ${defBox('Specific Conductivity (&kappa;)', `
+    <b style="color: ${themeColor};">Specific Conductivity (&kappa;):</b> The reciprocal of resistivity (&rho;), defined as the conductance of a solution enclosed between two parallel electrodes of unit area of cross-section (1 cm<sup>2</sup>) separated by a unit distance (1 cm):
+    ${eqBox(`&kappa; = ${frac('1', '&rho;')} = ${frac('1', 'R')} &times; ${frac('l', 'A')} = G &times; G*`)}
+    where <b>G* = l / A</b> is the <b>Cell Constant</b>.<br><br>
+    <b style="color: ${themeColor};">• Cell Constant Formulation:</b>
+    ${eqBox(`G* = ${frac('l', 'A')} = R &times; &kappa; = ${frac('&kappa;', 'G')}`)}
+    <b style="color: ${themeColor};">• Units:</b> Cell constant unit is <b>cm<sup>-1</sup></b> or <b>m<sup>-1</sup></b>. Specific conductivity unit is <b>S cm<sup>-1</sup></b> or <b>S m<sup>-1</sup></b> (1 S m<sup>-1</sup> = 0.01 S cm<sup>-1</sup>).
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Molar Conductivity (&Lambda;<sub>m</sub>) &amp; Equivalent Conductivity (&Lambda;<sub>eq</sub>)</h3>
+  ${defBox('Molar Conductivity (&Lambda;<sub>m</sub>)', `
+    <b>Molar Conductivity (&Lambda;<sub>m</sub>):</b> The conducting power of all the ions produced by dissolving 1 mole of an electrolyte in a solution of volume <i>V</i> placed between two large electrodes unit distance apart:
+    ${eqBox(`&Lambda;<sub>m</sub> = &kappa; &times; V = ${frac('&kappa; &times; 1000', 'M')}`)}
+    where <i>M</i> is the <b>Molarity (mol L<sup>-1</sup>)</b> of the solution and &kappa; is in <b>S cm<sup>-1</sup></b>.<br><br>
+    <b style="color: ${themeColor};">• In SI Units (&kappa; in S m<sup>-1</sup>, C in mol m<sup>-3</sup>):</b>
+    ${eqBox(`&Lambda;<sub>m</sub> = ${frac('&kappa;', '1000 &times; C')}`)}
+    <b style="color: ${themeColor};">• Equivalent Conductivity (&Lambda;<sub>eq</sub>):</b>
+    ${eqBox(`&Lambda;<sub>eq</sub> = ${frac('&kappa; &times; 1000', 'N')} = ${frac('&Lambda;<sub>m</sub>', 'n-factor')}`)}
+    where <i>N</i> is the <b>Normality</b> of the solution.
+  `)}
+
+  ${solvedExampleBox('Conductivity and Molar Conductivity Calculation',
+    'Resistance of a conductivity cell filled with 0.1 mol L<sup>-1</sup> KCl solution is 100 &Omega;. If the resistance of the same cell filled with 0.02 mol L<sup>-1</sup> KCl solution is 520 &Omega;, calculate the cell constant, conductivity, and molar conductivity of 0.02 mol L<sup>-1</sup> KCl solution. (Conductivity of 0.1 mol L<sup>-1</sup> KCl = 1.29 &times; 10<sup>-2</sup> S cm<sup>-1</sup>).',
+    `<b style="color: ${themeColor};">Step 1 (Cell Constant G*):</b> G* = R &times; &kappa; = 100 &Omega; &times; (1.29 &times; 10<sup>-2</sup> S cm<sup>-1</sup>) = <b>1.29 cm<sup>-1</sup></b>.<br>
+     <b style="color: ${themeColor};">Step 2 (Conductivity of 0.02 M KCl):</b> &kappa; = G* / R = 1.29 cm<sup>-1</sup> / 520 &Omega; = <b>0.248 &times; 10<sup>-2</sup> S cm<sup>-1</sup> (2.48 &times; 10<sup>-3</sup> S cm<sup>-1</sup>)</b>.<br>
+     <b style="color: ${themeColor};">Step 3 (Molar Conductivity &Lambda;<sub>m</sub>):</b> &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / M = (2.48 &times; 10<sup>-3</sup> &times; 1000) / 0.02 = <b>124 S cm<sup>2</sup> mol<sup>-1</sup></b>.`
+  )}
+
+  <!-- SECTION 3 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">3. Variation of Conductivity &amp; Molar Conductivity with Concentration</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0;">
+    <!-- Specific Conductivity vs Dilution -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.4); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 18px;">
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 6px;">1. Variation of Specific Conductivity (&kappa;) with Dilution</b>
+      <div style="color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Specific conductivity (&kappa;) <b>always decreases with decrease in concentration (dilution)</b> for both strong and weak electrolytes.<br><br>
+        <b style="color: ${themeColor};">• Reason:</b> &kappa; is the conductance of 1 cm<sup>3</sup> of solution. On dilution, the number of current-carrying ions present per unit volume (per cm<sup>3</sup>) decreases, leading to a direct decrease in specific conductivity.
+      </div>
+    </div>
+
+    <!-- Molar Conductivity vs Dilution -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.4); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 18px;">
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 6px;">2. Variation of Molar Conductivity (&Lambda;<sub>m</sub>) with Dilution</b>
+      <div style="color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
+        Molar conductivity (&Lambda;<sub>m</sub>) <b>always increases with dilution</b> (&Lambda;<sub>m</sub> = &kappa; &times; V).<br><br>
+        <b style="color: ${themeColor};">• Reason:</b> Although specific conductivity &kappa; decreases on dilution, the total volume <i>V</i> containing 1 mole of electrolyte increases much more drastically. The increase in volume more than compensates for the decrease in &kappa;.
+      </div>
+    </div>
+  </div>
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Strong vs Weak Electrolytes (Debye-H&uuml;ckel-Onsager Equation)</h3>
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• Strong Electrolytes (e.g. KCl, NaCl, HCl):</b> Completely dissociated at all concentrations. Molar conductivity increases slowly and linearly with dilution because interionic attractions decrease, allowing ions to move faster.
+      ${eqBox(`&Lambda;<sub>m</sub> = &Lambda;<sub>m</sub>&deg; - A &radic;C`)}
+      where <b>&Lambda;<sub>m</sub>&deg;</b> is the <b>Limiting Molar Conductivity</b> at infinite dilution (<i>C &rarr; 0</i>) and <i>A</i> is the Onsager slope constant. &Lambda;<sub>m</sub>&deg; is readily obtained by <b>graphical extrapolation to zero concentration</b>.
+    </li>
+    <li><b style="color: ${themeColor};">• Weak Electrolytes (e.g. CH<sub>3</sub>COOH, NH<sub>4</sub>OH):</b> Have low degree of dissociation (&alpha;) at ordinary concentrations. On dilution, &alpha; increases steeply (Ostwald's Dilution Law). At infinite dilution, dissociation approaches 100%, causing a steep upward exponential curve.
+      <br>⚠️ <b style="color: #EF4444;">Extrapolation Limitation:</b> The curve becomes asymptotic to the y-axis, so &Lambda;<sub>m</sub>&deg; for weak electrolytes <b>cannot be obtained by graphical extrapolation</b>.
+    </li>
+  </ul>
+
+  <!-- SECTION 4 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">4. Kohlrausch's Law of Independent Migration of Ions</h2>
+
+  ${defBox("Kohlrausch's Law (1875)", `
+    <b style="color: ${themeColor};">Kohlrausch's Law of Independent Migration of Ions:</b> <i>At infinite dilution, when dissociation is 100% complete and all interionic interactions vanish, each ion makes a definite individual contribution to the total limiting molar conductivity of the electrolyte, irrespective of the chemical nature of the co-ion.</i><br><br>
+    Mathematical Formulation:
+    ${eqBox(`&Lambda;<sub>m</sub>&deg; = &nu;<sub>+</sub> &lambda;<sub>+</sub>&deg; + &nu;<sub>-</sub> &lambda;<sub>-</sub>&deg;`)}
+    where <b>&lambda;<sub>+</sub>&deg;</b> and <b>&lambda;<sub>-</sub>&deg;</b> are the limiting molar conductivities of cation and anion, and <b>&nu;<sub>+</sub></b>, <b>&nu;<sub>-</sub></b> are the stoichiometric number of cations and anions produced per formula unit.<br>
+    <i>Example: &Lambda;<sub>m</sub>&deg;(Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>) = 2 &lambda;&deg;(Al<sup>3+</sup>) + 3 &lambda;&deg;(SO<sub>4</sub><sup>2-</sup>).</i>
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) 4 Fundamental Applications of Kohlrausch's Law</h3>
+  <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; padding: 12px 14px; border-radius: 6px;">
+      <b style="color: ${themeColor}; font-size: 15px; display: block; margin-bottom: 4px;">1. Calculation of &Lambda;<sub>m</sub>&deg; for Weak Electrolytes:</b>
+      <span style="color: #E2E8F0; font-size: 14.5px;">&Lambda;<sub>m</sub>&deg;(CH<sub>3</sub>COOH) = &Lambda;<sub>m</sub>&deg;(CH<sub>3</sub>COONa) + &Lambda;<sub>m</sub>&deg;(HCl) - &Lambda;<sub>m</sub>&deg;(NaCl).</span>
+    </div>
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; padding: 12px 14px; border-radius: 6px;">
+      <b style="color: ${themeColor}; font-size: 15px; display: block; margin-bottom: 4px;">2. Determination of Degree of Dissociation (&alpha;):</b>
+      <span style="color: #E2E8F0; font-size: 14.5px;">&alpha; = &Lambda;<sub>m</sub> / &Lambda;<sub>m</sub>&deg; (where &Lambda;<sub>m</sub> is molar conductivity at concentration C).</span>
+    </div>
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; padding: 12px 14px; border-radius: 6px;">
+      <b style="color: ${themeColor}; font-size: 15px; display: block; margin-bottom: 4px;">3. Calculation of Dissociation Constant (K<sub>a</sub>):</b>
+      <span style="color: #E2E8F0; font-size: 14.5px;">K<sub>a</sub> = (C &alpha;<sup>2</sup>) / (1 - &alpha;) = [ C (&Lambda;<sub>m</sub> / &Lambda;<sub>m</sub>&deg;)<sup>2</sup> ] / [ 1 - (&Lambda;<sub>m</sub> / &Lambda;<sub>m</sub>&deg;) ].</span>
+    </div>
+    <div style="background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; padding: 12px 14px; border-radius: 6px;">
+      <b style="color: ${themeColor}; font-size: 15px; display: block; margin-bottom: 4px;">4. Solubility (S) &amp; Solubility Product (K<sub>sp</sub>) of Sparingly Soluble Salts:</b>
+      <span style="color: #E2E8F0; font-size: 14.5px;">Since saturated solution of AgCl/BaSO<sub>4</sub> is extremely dilute, &Lambda;<sub>m</sub> &approx; &Lambda;<sub>m</sub>&deg; &rArr; S = (&kappa; &times; 1000) / &Lambda;<sub>m</sub>&deg; mol L<sup>-1</sup> &rArr; K<sub>sp</sub> = S<sup>2</sup>.</span>
+    </div>
+  </div>
+
+  ${solvedExampleBox('Kohlrausch Law Calculation for Acetic Acid',
+    'Calculate &Lambda;<sub>m</sub>&deg; for acetic acid given &Lambda;<sub>m</sub>&deg;(HCl) = 426 S cm<sup>2</sup> mol<sup>-1</sup>, &Lambda;<sub>m</sub>&deg;(NaCl) = 126 S cm<sup>2</sup> mol<sup>-1</sup>, and &Lambda;<sub>m</sub>&deg;(CH<sub>3</sub>COONa) = 91 S cm<sup>2</sup> mol<sup>-1</sup>. If &Lambda;<sub>m</sub> of 0.001 M acetic acid is 39.05 S cm<sup>2</sup> mol<sup>-1</sup>, calculate its degree of dissociation (&alpha;) and K<sub>a</sub>.',
+    `<b style="color: ${themeColor};">Step 1 (&Lambda;<sub>m</sub>&deg; calculation):</b> &Lambda;<sub>m</sub>&deg;(CH<sub>3</sub>COOH) = &Lambda;<sub>m</sub>&deg;(CH<sub>3</sub>COONa) + &Lambda;<sub>m</sub>&deg;(HCl) - &Lambda;<sub>m</sub>&deg;(NaCl) = 91 + 426 - 126 = <b>391 S cm<sup>2</sup> mol<sup>-1</sup></b>.<br>
+     <b style="color: ${themeColor};">Step 2 (Degree of dissociation &alpha;):</b> &alpha; = &Lambda;<sub>m</sub> / &Lambda;<sub>m</sub>&deg; = 39.05 / 391 = <b>0.10 (10%)</b>.<br>
+     <b style="color: ${themeColor};">Step 3 (Dissociation constant K<sub>a</sub>):</b> K<sub>a</sub> = (C &alpha;<sup>2</sup>) / (1 - &alpha;) = (0.001 &times; 0.10<sup>2</sup>) / (1 - 0.10) = (10<sup>-5</sup>) / 0.9 = <b>1.11 &times; 10<sup>-5</sup> mol L<sup>-1</sup></b>.`
+  )}
+
+  <!-- SECTION 5 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">5. Electrolysis &amp; Faraday's Quantitative Laws of Electrolysis</h2>
+
+  <p><b>Electrolysis</b> is the chemical decomposition of an electrolyte driven by passing direct electrical current (DC) from an external voltage source through its molten state or aqueous solution.</p>
+
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Faraday's First Law of Electrolysis</h3>
+  ${defBox("Faraday's First Law (1833)", `
+    <b style="color: ${themeColor};">Faraday's First Law:</b> <i>The mass (m) of any chemical substance deposited, liberated, or dissolved at any electrode during electrolysis is directly proportional to the total quantity of electrical charge (Q) passed through the electrolytic solution:</i>
+    ${eqBox(`m &prop; Q &rArr; <b>m = Z Q = Z I t</b>`)}
+    where <i>I</i> = Current in Amperes (A), <i>t</i> = Time in seconds (s), and <b>Z</b> is the <b>Electrochemical Equivalent (ECE)</b>.<br><br>
+    <b style="color: ${themeColor};">• Definition of Z:</b> Mass deposited when 1 Coulomb of charge passes (I = 1 A for t = 1 s):
+    ${eqBox(`Z = ${frac('Equivalent Mass (E)', 'Faraday Constant (F)')} = ${frac('M', 'n &times; 96500')}`)}
+    where <i>M</i> is Molar Mass, <i>n</i> is number of electrons transferred, and <i>F = 96500 C mol<sup>-1</sup></i>.
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Faraday's Second Law of Electrolysis</h3>
+  ${defBox("Faraday's Second Law (1833)", `
+    <b style="color: ${themeColor};">Faraday's Second Law:</b> <i>When the same quantity of electricity is passed through different electrolytic solutions connected in series, the masses of different substances liberated at the respective electrodes are directly proportional to their equivalent masses (chemical equivalent weights):</i>
+    ${eqBox(`${frac('m<sub>1</sub>', 'm<sub>2</sub>')} = ${frac('E<sub>1</sub>', 'E<sub>2</sub>')} = ${frac('Z<sub>1</sub>', 'Z<sub>2</sub>')}`)}
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Products of Electrolysis in Important Systems</h3>
+  <div style="display: flex; flex-direction: column; gap: 14px; margin: 16px 0;">
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.35); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 6px;">1. Molten NaCl (Inert Pt Electrodes):</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">
+        <b style="color: ${themeColor};">• Cathode (Reduction):</b> Na<sup>+</sup> + e<sup>-</sup> &rarr; Na(s)<br>
+        <b style="color: ${themeColor};">• Anode (Oxidation):</b> 2Cl<sup>-</sup> &rarr; Cl<sub>2</sub>(g) + 2e<sup>-</sup>
+      </div>
+    </div>
+
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.35); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 6px;">2. Aqueous NaCl (Brine Solution):</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">
+        <b style="color: ${themeColor};">• Cathode:</b> 2H<sub>2</sub>O + 2e<sup>-</sup> &rarr; H<sub>2</sub>(g) + 2OH<sup>-</sup> (Higher reduction potential than Na<sup>+</sup>)<br>
+        <b style="color: ${themeColor};">• Anode:</b> 2Cl<sup>-</sup> &rarr; Cl<sub>2</sub>(g) + 2e<sup>-</sup> (Preferred over O<sub>2</sub> evolution due to oxygen overpotential)
+      </div>
+    </div>
+
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.35); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 6px;">3. Aqueous CuSO<sub>4</sub> (Pt Electrodes vs Cu Electrodes):</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.6;">
+        <b style="color: ${themeColor};">• Inert Pt:</b> Cathode deposits Cu(s); Anode evolves O<sub>2</sub>(g) from water oxidation.<br>
+        <b style="color: ${themeColor};">• Active Cu Electrodes (Electro-refining):</b> Cathode deposits pure Cu(s); Anode dissolves copper: Cu(s) &rarr; Cu<sup>2+</sup> + 2e<sup>-</sup>.
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">6. Galvanic Cells, Daniell Cell &amp; Standard Electrode Potentials</h2>
+
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Daniell Cell &amp; Salt Bridge Functions</h3>
+  <p>The <b>Daniell Cell</b> converts the chemical energy of the spontaneous redox reaction between metallic Zinc and Copper sulfate solution into electrical energy:</p>
+  ${eqBox(`Zn(s) + Cu<sup>2+</sup>(aq) &rarr; Zn<sup>2+</sup>(aq) + Cu(s) &emsp; (E&deg;<sub>cell</sub> = 1.10 V)`)}
+
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• Anode Half-Cell (Oxidation):</b> Zn(s) &rarr; Zn<sup>2+</sup>(aq) + 2e<sup>-</sup> &nbsp; (E&deg;<sub>ox</sub> = +0.76 V).</li>
+    <li><b style="color: ${themeColor};">• Cathode Half-Cell (Reduction):</b> Cu<sup>2+</sup>(aq) + 2e<sup>-</sup> &rarr; Cu(s) &nbsp; (E&deg;<sub>red</sub> = +0.34 V).</li>
+    <li><b style="color: ${themeColor};">• IUPAC Cell Notation:</b> <b>Zn(s) | Zn<sup>2+</sup>(aq, 1 M) || Cu<sup>2+</sup>(aq, 1 M) | Cu(s)</b>.</li>
+    <li><b style="color: ${themeColor};">• Functions of Salt Bridge (Agar-agar paste with inert KCl/KNO<sub>3</sub>):</b>
+      <br>1. Maintains electrical neutrality in both half-cells by allowing ion flow.
+      <br>2. Completes the internal electrical circuit.
+      <br>3. Prevents liquid-liquid junction potential.
+    </li>
+  </ul>
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Standard Hydrogen Electrode (SHE) &amp; Electrochemical Series</h3>
+  ${defBox('Standard Hydrogen Electrode (SHE)', `
+    <b style="color: ${themeColor};">Standard Hydrogen Electrode (SHE):</b> The primary reference electrode assigned an arbitrary standard potential of exactly <b>0.00 V</b> at all temperatures:
+    ${eqBox(`Pt(s) | H<sub>2</sub>(g, 1 bar) | H<sup>+</sup>(aq, 1 M) &emsp; (E&deg; = 0.00 V)`)}
+    <b style="color: ${themeColor};">• Half-Reaction:</b> 2H<sup>+</sup>(aq, 1 M) + 2e<sup>-</sup> &#8652; H<sub>2</sub>(g, 1 bar).<br><br>
+    <b style="color: ${themeColor};">• Standard Cell EMF Formulation:</b>
+    ${eqBox(`E&deg;<sub>cell</sub> = E&deg;<sub>cathode</sub> - E&deg;<sub>anode</sub> = E&deg;<sub>right</sub> - E&deg;<sub>left</sub>`)}
+  `)}
+
+  <!-- SECTION 7 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">7. Nernst Equation &amp; Applications to Chemical Cells</h2>
+
+  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) General Derivation of Nernst Equation</h3>
+  ${stepDerivationBox('Nernst Equation for Electrode Potential and Chemical Cells', `
+    For a general reduction half-reaction: M<sup>n+</sup>(aq) + n e<sup>-</sup> &rarr; M(s)<br>
+    From thermodynamics: &Delta;G = &Delta;G&deg; + R T ln Q<br>
+    Since &Delta;G = -n F E and &Delta;G&deg; = -n F E&deg;:<br>
+    ${eqBox(`-n F E = -n F E&deg; + R T ln ${frac('[M(s)]', '[M<sup>n+</sup>]')}`)}
+    Taking pure solid activity [M(s)] = 1:
+    ${eqBox(`E = E&deg; - ${frac('2.303 R T', 'n F')} log ${frac('1', '[M<sup>n+</sup>]')}`)}
+    Substituting R = 8.314 J K<sup>-1</sup> mol<sup>-1</sup>, T = 298.15 K, F = 96487 C mol<sup>-1</sup>:
+    ${eqBox(`<b>E = E&deg; - ${frac('0.0591', 'n')} log ${frac('1', '[M<sup>n+</sup>]')} = E&deg; + ${frac('0.0591', 'n')} log [M<sup>n+</sup>]</b>`)}
+    <br>For a complete cell: a A + b B &rarr; c C + d D:
+    ${eqBox(`<b>E<sub>cell</sub> = E&deg;<sub>cell</sub> - ${frac('0.0591', 'n')} log ${frac('[C]<sup>c</sup> [D]<sup>d</sup>', '[A]<sup>a</sup> [B]<sup>b</sup>')}</b>`)}
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Equilibrium Constant (K<sub>c</sub>) from Nernst Equation</h3>
+  ${defBox('Equilibrium Constant (K<sub>c</sub>)', `
+    When an electrochemical cell reaches chemical equilibrium, cell reaction stops, current ceases, and <b>E<sub>cell</sub> = 0</b>. The reaction quotient equals the equilibrium constant (<i>Q = K<sub>c</sub></i>):
+    ${eqBox(`0 = E&deg;<sub>cell</sub> - ${frac('0.0591', 'n')} log K<sub>c</sub> &rArr; <b>log K<sub>c</sub> = ${frac('n E&deg;<sub>cell</sub>', '0.0591')}</b>`)}
+  `)}
+
+  <!-- SECTION 8 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">8. Gibbs Free Energy Change (&Delta;G) &amp; Cell Potential</h2>
+
+  <p>The electrical work done by an electrochemical cell in 1 second is equal to the product of electrical potential and total electrical charge passed. For maximum reversible work:</p>
+
+  ${eqBox(`W<sub>max</sub> = - &Delta;G = n F E<sub>cell</sub> &rArr; <b>&Delta;G = - n F E<sub>cell</sub></b>`)}
+  ${eqBox(`<b>&Delta;G&deg; = - n F E&deg;<sub>cell</sub> = - 2.303 R T log K<sub>c</sub></b>`)}
+
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• Spontaneity Criterion:</b> For a cell reaction to be thermodynamically spontaneous, <b>E<sub>cell</sub> &gt; 0</b>, which gives <b>&Delta;G &lt; 0</b> (negative).</li>
+    <li><b style="color: ${themeColor};">• Intensive vs Extensive Property:</b> <i>E<sub>cell</sub></i> is an <b>intensive property</b> (independent of reaction stoichiometry), whereas <i>&Delta;G</i> is an <b>extensive property</b> (proportional to moles of electrons <i>n</i>).</li>
+  </ul>
+
+  <!-- SECTION 9 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">9. Commercial Batteries: Primary &amp; Secondary Cells</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 14px; margin: 18px 0;">
+    <!-- Dry Cell -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.4); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 6px;">🔋 1. Dry Cell (Leclanch&eacute; Cell - Primary)</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+        <b style="color: ${themeColor};">• Anode:</b> Zinc container: Zn(s) &rarr; Zn<sup>2+</sup> + 2e<sup>-</sup><br>
+        <b style="color: ${themeColor};">• Cathode:</b> Carbon (graphite) rod surrounded by MnO<sub>2</sub> + Carbon powder.<br>
+        <b style="color: ${themeColor};">• Electrolyte:</b> Moist paste of NH<sub>4</sub>Cl + ZnCl<sub>2</sub>.<br>
+        <b style="color: ${themeColor};">• Cathode Reaction:</b> MnO<sub>2</sub> + NH<sub>4</sub><sup>+</sup> + e<sup>-</sup> &rarr; MnO(OH) + NH<sub>3</sub>.<br>
+        <b style="color: ${themeColor};">• Cell Potential:</b> &approx; <b>1.5 V</b> (Non-rechargeable; NH<sub>3</sub> forms complex [Zn(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup> preventing pressure build-up).
+      </div>
+    </div>
+
+    <!-- Mercury Cell -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.4); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 6px;">🔋 2. Mercury Cell (Primary - Button Cell)</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+        <b style="color: ${themeColor};">• Anode:</b> Zinc-Mercury amalgam: Zn(Hg) + 2OH<sup>-</sup> &rarr; ZnO(s) + H<sub>2</sub>O + 2e<sup>-</sup><br>
+        <b style="color: ${themeColor};">• Cathode:</b> Paste of HgO + Carbon: HgO(s) + H<sub>2</sub>O + 2e<sup>-</sup> &rarr; Hg(l) + 2OH<sup>-</sup><br>
+        <b style="color: ${themeColor};">• Overall Reaction:</b> Zn(Hg) + HgO(s) &rarr; ZnO(s) + Hg(l).<br>
+        <b style="color: ${themeColor};">• Cell Potential:</b> Constant <b>1.35 V</b> throughout its life (overall reaction contains no ions in solution whose concentration changes).
+      </div>
+    </div>
+
+    <!-- Lead Storage Battery -->
+    <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 229, 255, 0.4); border-left: 5px solid ${themeColor}; border-radius: 8px; padding: 14px 16px;">
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 6px;">🔋 3. Lead Storage Battery (Secondary - Automobile Inverter Battery)</b>
+      <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+        <b style="color: ${themeColor};">• Anode:</b> Spongy Lead (Pb) &nbsp;|&nbsp; <b style="color: ${themeColor};">• Cathode:</b> Lead dioxide (PbO<sub>2</sub>) grid.<br>
+        <b style="color: ${themeColor};">• Electrolyte:</b> 38% (w/w) aqueous H<sub>2</sub>SO<sub>4</sub> (density = 1.30 g mL<sup>-1</sup>).<br>
+        <b style="color: ${themeColor};">• Discharging Reactions:</b><br>
+        &nbsp;&nbsp;Anode: Pb(s) + SO<sub>4</sub><sup>2-</sup> &rarr; PbSO<sub>4</sub>(s) + 2e<sup>-</sup><br>
+        &nbsp;&nbsp;Cathode: PbO<sub>2</sub>(s) + SO<sub>4</sub><sup>2-</sup> + 4H<sup>+</sup> + 2e<sup>-</sup> &rarr; PbSO<sub>4</sub>(s) + 2H<sub>2</sub>O<br>
+        &nbsp;&nbsp;<b style="color: ${themeColor};">Overall Discharge:</b> Pb(s) + PbO<sub>2</sub>(s) + 2H<sub>2</sub>SO<sub>4</sub> &rarr; 2PbSO<sub>4</sub>(s) + 2H<sub>2</sub>O &emsp; (E = 2.0 V/cell).<br>
+        <b style="color: ${themeColor};">• Recharging Reaction:</b> 2PbSO<sub>4</sub>(s) + 2H<sub>2</sub>O &rarr; Pb(s) + PbO<sub>2</sub>(s) + 2H<sub>2</sub>SO<sub>4</sub> (exact reverse).
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 10 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">10. Fuel Cells &amp; Hydrogen Economy</h2>
+
+  ${defBox('Fuel Cell', `
+    <b style="color: ${themeColor};">Fuel Cell:</b> A galvanic cell designed to convert the chemical energy of continuous fuel combustion (such as H<sub>2</sub>, CH<sub>4</sub>, CH<sub>3</sub>OH) directly into electrical energy without undergoing thermal intermediate cycles.<br><br>
+    <b style="color: ${themeColor};">• Hydrogen-Oxygen (H<sub>2</sub>-O<sub>2</sub>) Fuel Cell (Bacon Cell):</b>
+    <br>&bull; <b style="color: ${themeColor};">Anode Reaction:</b> 2H<sub>2</sub>(g) + 4OH<sup>-</sup>(aq) &rarr; 4H<sub>2</sub>O(l) + 4e<sup>-</sup>
+    <br>&bull; <b style="color: ${themeColor};">Cathode Reaction:</b> O<sub>2</sub>(g) + 2H<sub>2</sub>O(l) + 4e<sup>-</sup> &rarr; 4OH<sup>-</sup>(aq)
+    <br>&bull; <b style="color: ${themeColor};">Overall Reaction:</b> 2H<sub>2</sub>(g) + O<sub>2</sub>(g) &rarr; 2H<sub>2</sub>O(l) &emsp; (E&deg;<sub>cell</sub> = 1.23 V).<br><br>
+    <b style="color: ${themeColor};">• Advantages:</b>
+    <br>1. High thermodynamic efficiency (&approx; 70% compared to 40% in conventional thermal plants).
+    <br>2. Zero harmful emissions (pure water by-product used by Apollo astronauts for drinking).
+    <br>3. Continuous non-decaying electrical supply as long as fuels are fed.
+  `)}
+
+  <!-- SECTION 11 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">11. Corrosion &amp; Electrochemical Theory of Rusting</h2>
+
+  <p><b>Corrosion</b> is an electrochemical phenomenon where a metal is slowly degraded into its oxide, hydroxide, or sulfide by chemical interaction with atmospheric oxygen and moisture.</p>
+
+  ${defBox('Electrochemical Mechanism of Rusting of Iron', `
+    Rusting of iron takes place via localized micro-electrochemical galvanic cells formed on the uneven metal surface in the presence of water containing dissolved CO<sub>2</sub>/O<sub>2</sub>:<br><br>
+    <b style="color: ${themeColor};">• Anodic Region (Oxidation of Iron):</b>
+    ${eqBox(`2Fe(s) &rarr; 2Fe<sup>2+</sup>(aq) + 4e<sup>-</sup> &emsp; (E&deg; = -0.44 V)`)}
+    <b style="color: ${themeColor};">• Cathodic Region (Reduction of Atmospheric Oxygen):</b>
+    ${eqBox(`O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) + 4e<sup>-</sup> &rarr; 2H<sub>2</sub>O(l) &emsp; (E&deg; = +1.23 V)`)}
+    <b style="color: ${themeColor};">• Overall Redox Process:</b>
+    ${eqBox(`2Fe(s) + O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) &rarr; 2Fe<sup>2+</sup>(aq) + 2H<sub>2</sub>O(l) &emsp; (E&deg;<sub>cell</sub> = +1.67 V)`)}
+    The ferrous ions (Fe<sup>2+</sup>) are further oxidized by atmospheric oxygen to ferric oxide, forming hydrated rust:
+    ${eqBox(`4Fe<sup>2+</sup>(aq) + O<sub>2</sub>(g) + 4H<sub>2</sub>O(l) &rarr; 2Fe<sub>2</sub>O<sub>3</sub>(s) + 8H<sup>+</sup>(aq)`)}
+    ${eqBox(`Fe<sub>2</sub>O<sub>3</sub>(s) + x H<sub>2</sub>O(l) &rarr; <b>Fe<sub>2</sub>O<sub>3</sub> &bull; x H<sub>2</sub>O (Rust)</b>`)}
+  `)}
+
+  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Methods of Corrosion Prevention</h3>
+  <ul style="margin-left: 20px; line-height: 1.85;">
+    <li><b style="color: ${themeColor};">• 1. Barrier Protection:</b> Coating the surface with paints, thin oil/grease films, or electroplating with non-corroding metals like Nickel or Chromium.</li>
+    <li><b style="color: ${themeColor};">• 2. Sacrificial Protection (Galvanization):</b> Coating iron with metallic Zinc (E&deg;(Zn<sup>2+</sup>/Zn) = -0.76 V). Because Zinc is more electropositive than iron, it oxidizes sacrificially, protecting the underlying iron even if the coating is scratched.</li>
+    <li><b style="color: ${themeColor};">• 3. Cathodic (Electrical) Protection:</b> Connecting underground iron pipes to sacrificial metal blocks (Mg or Zn) by an insulated wire. Mg oxidizes preferentially, forcing the iron pipe to act strictly as a cathode.</li>
+    <li><b style="color: ${themeColor};">• 4. Anti-Rust Solutions:</b> Alkaline phosphate or alkaline chromate coatings that form an insoluble passivating protective film and consume H<sup>+</sup> ions.</li>
+  </ul>
+
+  <!-- SECTION 12 -->
+  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 36px;">12. Master Revision Formula Cheat Sheet</h2>
+
+  <div style="background: rgba(0, 229, 255, 0.05); border: 1.5px solid rgba(0, 229, 255, 0.4); border-radius: 12px; padding: 18px; margin: 20px 0;">
+    <div style="color: #FFFFFF; font-size: 15px; line-height: 1.85;">
+      
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Conductance, Conductivity &amp; Cell Constant:</b>
+      <b style="color: ${themeColor};">• Conductance:</b> G = 1 / R &nbsp; [Unit: S or &Omega;<sup>-1</sup>].<br>
+      <b style="color: ${themeColor};">• Specific Conductivity:</b> &kappa; = (1 / R) &times; (l / A) = G &times; G* &nbsp; [Unit: S cm<sup>-1</sup> or S m<sup>-1</sup>].<br>
+      <b style="color: ${themeColor};">• Cell Constant:</b> G* = l / A = R &times; &kappa; &nbsp; [Unit: cm<sup>-1</sup> or m<sup>-1</sup>].<br>
+      <b style="color: ${themeColor};">• Molar Conductivity:</b> &Lambda;<sub>m</sub> = (&kappa; &times; 1000) / M &nbsp; [Unit: S cm<sup>2</sup> mol<sup>-1</sup>].<br>
+      <b style="color: ${themeColor};">• Onsager Equation:</b> &Lambda;<sub>m</sub> = &Lambda;<sub>m</sub>&deg; - A &radic;C.<br><br>
+
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Kohlrausch's Law &amp; Ionic Applications:</b>
+      <b style="color: ${themeColor};">• Limiting Conductivity:</b> &Lambda;<sub>m</sub>&deg; = &nu;<sub>+</sub> &lambda;<sub>+</sub>&deg; + &nu;<sub>-</sub> &lambda;<sub>-</sub>&deg;.<br>
+      <b style="color: ${themeColor};">• Degree of Dissociation:</b> &alpha; = &Lambda;<sub>m</sub> / &Lambda;<sub>m</sub>&deg;.<br>
+      <b style="color: ${themeColor};">• Dissociation Constant:</b> K<sub>a</sub> = (C &alpha;<sup>2</sup>) / (1 - &alpha;).<br>
+      <b style="color: ${themeColor};">• Sparingly Soluble Salt Solubility:</b> S = (&kappa; &times; 1000) / &Lambda;<sub>m</sub>&deg; mol L<sup>-1</sup> &nbsp;|&nbsp; K<sub>sp</sub> = S<sup>2</sup>.<br><br>
+
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Electrolysis &amp; Faraday's Constants:</b>
+      <b style="color: ${themeColor};">• Faraday's 1st Law:</b> m = Z I t = [ (M &times; I &times; t) / (n &times; 96500) ].<br>
+      <b style="color: ${themeColor};">• Faraday's 2nd Law:</b> m<sub>1</sub> / E<sub>1</sub> = m<sub>2</sub> / E<sub>2</sub>.<br>
+      <b style="color: ${themeColor};">• Faraday Constant:</b> 1 F = 96500 C mol<sup>-1</sup> of electrons.<br><br>
+
+      <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Cell Potential, Nernst Equation &amp; Thermodynamics:</b>
+      <b style="color: ${themeColor};">• Standard EMF:</b> E&deg;<sub>cell</sub> = E&deg;<sub>cathode</sub> - E&deg;<sub>anode</sub> = E&deg;<sub>right</sub> - E&deg;<sub>left</sub>.<br>
+      <b style="color: ${themeColor};">• Nernst Equation (298 K):</b> E<sub>cell</sub> = E&deg;<sub>cell</sub> - (0.0591 / n) log Q.<br>
+      <b style="color: ${themeColor};">• Equilibrium Constant:</b> log K<sub>c</sub> = (n E&deg;<sub>cell</sub>) / 0.0591.<br>
+      <b style="color: ${themeColor};">• Standard Gibbs Energy:</b> &Delta;G&deg; = - n F E&deg;<sub>cell</sub> = - 2.303 R T log K<sub>c</sub>.
+    </div>
+  </div>
+
+</div>
+`;
+
+// Export overview for inclusion
+fs.writeFileSync('scratch/c12_chem_2_overview.html', htmlOverview, 'utf8');
+console.log('✅ Generated c12_chem_2_overview.html with 100% themeColor compliance!');
