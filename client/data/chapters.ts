@@ -65,7 +65,7 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-chem-4", number: 4, name: "d and f-Block Elements", color: "#00E676" },
       { id: "c12-chem-5", number: 5, name: "Coordination Compounds", color: "#FF9100" },
       { id: "c12-chem-6", number: 6, name: "Haloalkanes and Haloarenes", color: "#2979FF" },
-      { id: "c12-chem-7", number: 7, name: "Alcohols, Phenols and Ethers", color: "#8E2DE2" },
+      { id: "c12-chem-7", number: 7, name: "Alcohols, Phenols and Ethers", color: "#FF007F" },
       { id: "c12-chem-8", number: 8, name: "Aldehydes, Ketones and Carboxylic Acids", color: "#FFD600" },
       { id: "c12-chem-9", number: 9, name: "Organic Compounds Containing Nitrogen", color: "#FF1744" },
       { id: "c12-chem-10", number: 10, name: "Biomolecules", color: "#00B0FF" },
@@ -1103,7 +1103,7 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-chem-4") return ["#00E676", "#00897B"];
   if (chapterId === "c12-chem-5") return ["#FF9100", "#FF5722"];
   if (chapterId === "c12-chem-6") return ["#2979FF", "#1565C0"];
-  if (chapterId === "c12-chem-7") return ["#8E2DE2", "#4A00E0"];
+  if (chapterId === "c12-chem-7") return ["#FF007F", "#C2185B"];
   if (chapterId === "c12-chem-8") return ["#FFD600", "#F57F17"];
   if (chapterId === "c12-chem-9") return ["#FF1744", "#C2185B"];
   if (chapterId === "c12-chem-10") return ["#00B0FF", "#0072FF"];
