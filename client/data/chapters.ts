@@ -59,13 +59,13 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-phy-9", number: 9, name: "Electronic Devices", color: "#FF007F" },
     ],
     Chemistry: [
-      { id: "c12-chem-1", number: 1, name: "Solutions", color: "#8E2DE2" },
+      { id: "c12-chem-1", number: 1, name: "Solutions", color: "#FF4081" },
       { id: "c12-chem-2", number: 2, name: "Electrochemistry", color: "#00E5FF" },
       { id: "c12-chem-3", number: 3, name: "Chemical Kinetics", color: "#FF5252" },
       { id: "c12-chem-4", number: 4, name: "d and f-Block Elements", color: "#00E676" },
       { id: "c12-chem-5", number: 5, name: "Coordination Compounds", color: "#FF9100" },
       { id: "c12-chem-6", number: 6, name: "Haloalkanes and Haloarenes", color: "#2979FF" },
-      { id: "c12-chem-7", number: 7, name: "Alcohols, Phenols and Ethers", color: "#E040FB" },
+      { id: "c12-chem-7", number: 7, name: "Alcohols, Phenols and Ethers", color: "#8E2DE2" },
       { id: "c12-chem-8", number: 8, name: "Aldehydes, Ketones and Carboxylic Acids", color: "#FFD600" },
       { id: "c12-chem-9", number: 9, name: "Organic Compounds Containing Nitrogen", color: "#FF1744" },
       { id: "c12-chem-10", number: 10, name: "Biomolecules", color: "#00B0FF" },
@@ -1097,13 +1097,13 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-bot-2") return ["#FF9100", "#FF3D00"];
   if (chapterId === "c12-bot-3") return ["#E040FB", "#7B1FA2"];
   if (chapterId === "c12-bot-4") return ["#00E5FF", "#00838F"];
-  if (chapterId === "c12-chem-1") return ["#8E2DE2", "#4A00E0"];
+  if (chapterId === "c12-chem-1") return ["#FF4081", "#D81B60"];
   if (chapterId === "c12-chem-2") return ["#00E5FF", "#00838F"];
   if (chapterId === "c12-chem-3") return ["#FF5252", "#D32F2F"];
   if (chapterId === "c12-chem-4") return ["#00E676", "#00897B"];
   if (chapterId === "c12-chem-5") return ["#FF9100", "#FF5722"];
   if (chapterId === "c12-chem-6") return ["#2979FF", "#1565C0"];
-  if (chapterId === "c12-chem-7") return ["#E040FB", "#8E24AA"];
+  if (chapterId === "c12-chem-7") return ["#8E2DE2", "#4A00E0"];
   if (chapterId === "c12-chem-8") return ["#FFD600", "#F57F17"];
   if (chapterId === "c12-chem-9") return ["#FF1744", "#C2185B"];
   if (chapterId === "c12-chem-10") return ["#00B0FF", "#0072FF"];
