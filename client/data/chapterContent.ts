@@ -1,3 +1,4 @@
+import { c12Chem1HtmlOverview, c12Chem1HtmlSolutions, c12Chem1Mcqs } from "./content/c12-chem-1";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -1534,3 +1535,20 @@ export const getChapterContent = (
 ): ChapterContent | undefined => {
   return chapterContents[chapterId];
 };
+
+// Override Class 12 Chemistry Chapter 1 (Solutions)
+const ch12Chem1 = chapterContents["c12-chem-1"];
+if (ch12Chem1) {
+  ch12Chem1.htmlOverview = c12Chem1HtmlOverview;
+  ch12Chem1.htmlExercises = {
+    "ex-c12-qa": c12Chem1HtmlSolutions,
+  };
+  ch12Chem1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem1.mcqs = c12Chem1Mcqs;
+}
