@@ -3,6 +3,7 @@ import { c12Chem2HtmlOverview, c12Chem2HtmlSolutions, c12Chem2Mcqs } from "./con
 import { c12Chem3HtmlOverview, c12Chem3HtmlSolutions, c12Chem3Mcqs } from "./content/c12-chem-3";
 import { c12Chem4HtmlOverview, c12Chem4HtmlSolutions, c12Chem4Mcqs } from "./content/c12-chem-4";
 import { c12Chem5HtmlOverview, c12Chem5HtmlSolutions, c12Chem5Mcqs } from "./content/c12-chem-5";
+import { c12Chem6HtmlOverview, c12Chem6HtmlSolutions, c12Chem6Mcqs } from "./content/c12-chem-6";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -1623,4 +1624,21 @@ if (ch12Chem5) {
     },
   ];
   ch12Chem5.mcqs = c12Chem5Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 6 (Haloalkanes and Haloarenes)
+const ch12Chem6 = chapterContents["c12-chem-6"];
+if (ch12Chem6) {
+  ch12Chem6.htmlOverview = c12Chem6HtmlOverview;
+  ch12Chem6.htmlExercises = {
+    "ex-c12-qa": c12Chem6HtmlSolutions,
+  };
+  ch12Chem6.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem6.mcqs = c12Chem6Mcqs;
 }
