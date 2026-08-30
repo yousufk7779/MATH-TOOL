@@ -24,7 +24,8 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
 
-
+// Keep splash screen visible until app is mounted
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 const navTheme = {
   ...DefaultTheme,
@@ -38,8 +39,8 @@ const navTheme = {
 export default function App() {
   useUpdateCheck();
 
-  // Load fonts in the background
-  useFonts({
+  // Load fonts
+  const [fontsLoaded, fontError] = useFonts({
     NotoSans_400Regular,
     NotoSans_500Medium,
     NotoSans_600SemiBold,
@@ -47,12 +48,24 @@ export default function App() {
   });
 
   React.useEffect(() => {
-    // Hide splash screen immediately on mount for instant app launch
-    SplashScreen.hideAsync().catch(() => {});
-    const timer = setTimeout(() => {
+    if (fontsLoaded || fontError) {
       SplashScreen.hideAsync().catch(() => {});
-    }, 300);
-    return () => clearTimeout(timer);
+    }
+  }, [fontsLoaded, fontError]);
+
+  React.useEffect(() => {
+    // Fallback safety timers to ensure splash ALWAYS hides immediately
+    SplashScreen.hideAsync().catch(() => {});
+    const t1 = setTimeout(() => {
+      SplashScreen.hideAsync().catch(() => {});
+    }, 200);
+    const t2 = setTimeout(() => {
+      SplashScreen.hideAsync().catch(() => {});
+    }, 800);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, []);
 
   return (
