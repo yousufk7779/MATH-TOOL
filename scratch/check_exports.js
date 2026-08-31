@@ -1,8 +1,15 @@
 const fs = require('fs');
-const path = require('path');
+const content = fs.readFileSync('d:\\All NCERT SOLUTIONS11\\client\\data\\content\\c12-chem-2.ts', 'utf8');
 
-const p = path.join(__dirname, '..', 'client', 'data', 'content', 'c12-phy-1.ts');
-const txt = fs.readFileSync(p, 'utf8');
+const lines = content.split('\n');
+console.log("Total lines:", lines.length);
+for (let i = 0; i < Math.min(lines.length, 30); i++) {
+  console.log(`${i+1}: ${lines[i].slice(0, 100)}`);
+}
 
-const exportMatches = txt.match(/export const \w+/g) || [];
-console.log('Exports found in c12-phy-1.ts:', exportMatches);
+// Find export lines
+lines.forEach((l, idx) => {
+  if (l.startsWith('export const')) {
+    console.log(`Export line ${idx + 1}: ${l.slice(0, 80)}`);
+  }
+});

@@ -4,6 +4,10 @@ import { c12Chem3HtmlOverview, c12Chem3HtmlSolutions, c12Chem3Mcqs } from "./con
 import { c12Chem4HtmlOverview, c12Chem4HtmlSolutions, c12Chem4Mcqs } from "./content/c12-chem-4";
 import { c12Chem5HtmlOverview, c12Chem5HtmlSolutions, c12Chem5Mcqs } from "./content/c12-chem-5";
 import { c12Chem6HtmlOverview, c12Chem6HtmlSolutions, c12Chem6Mcqs } from "./content/c12-chem-6";
+import { c12Chem7HtmlOverview, c12Chem7HtmlSolutions, c12Chem7Mcqs } from "./content/c12-chem-7";
+import { c12Chem8HtmlOverview, c12Chem8HtmlSolutions, c12Chem8Mcqs } from "./content/c12-chem-8";
+import { c12Chem9HtmlOverview, c12Chem9HtmlSolutions, c12Chem9Mcqs } from "./content/c12-chem-9";
+import { c12Chem10HtmlOverview, c12Chem10HtmlSolutions, c12Chem10Mcqs } from "./content/c12-chem-10";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -1336,7 +1340,14 @@ if (ch11Zoo4) {
 }
 
 // Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
-c11Subjects.forEach(({ prefix, title, maxCh }) => {
+const c12Subjects = [
+  { prefix: "phy", title: "Physics", maxCh: 9 },
+  { prefix: "chem", title: "Chemistry", maxCh: 10 },
+  { prefix: "zoo", title: "Zoology", maxCh: 4 },
+  { prefix: "bot", title: "Botany", maxCh: 4 },
+];
+
+c12Subjects.forEach(({ prefix, title, maxCh }) => {
   for (let i = 1; i <= maxCh; i++) {
     const id = `c12-${prefix}-${i}`;
     const themeColor = c11ThemeColors[(i - 1) % c11ThemeColors.length];
@@ -1642,3 +1653,75 @@ if (ch12Chem6) {
   ];
   ch12Chem6.mcqs = c12Chem6Mcqs;
 }
+
+// Override Class 12 Chemistry Chapter 7 (Alcohols, Phenols and Ethers)
+const ch12Chem7 = chapterContents["c12-chem-7"];
+if (ch12Chem7) {
+  ch12Chem7.htmlOverview = c12Chem7HtmlOverview;
+  ch12Chem7.htmlExercises = {
+    "ex-c12-qa": c12Chem7HtmlSolutions,
+  };
+  ch12Chem7.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem7.mcqs = c12Chem7Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 8 (Aldehydes, Ketones and Carboxylic Acids)
+const ch12Chem8 = chapterContents["c12-chem-8"];
+if (ch12Chem8) {
+  ch12Chem8.htmlOverview = c12Chem8HtmlOverview;
+  ch12Chem8.htmlExercises = {
+    "ex-c12-qa": c12Chem8HtmlSolutions,
+  };
+  ch12Chem8.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem8.mcqs = c12Chem8Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 9 (Organic Compounds Containing Nitrogen)
+const ch12Chem9 = chapterContents["c12-chem-9"];
+if (ch12Chem9) {
+  ch12Chem9.htmlOverview = c12Chem9HtmlOverview;
+  ch12Chem9.htmlExercises = {
+    "ex-c12-qa": c12Chem9HtmlSolutions,
+  };
+  ch12Chem9.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem9.mcqs = c12Chem9Mcqs;
+}
+
+// Override Class 12 Chemistry Chapter 10 (Biomolecules)
+const ch12Chem10 = chapterContents["c12-chem-10"];
+if (ch12Chem10) {
+  ch12Chem10.htmlOverview = c12Chem10HtmlOverview;
+  ch12Chem10.htmlExercises = {
+    "ex-c12-qa": c12Chem10HtmlSolutions,
+  };
+  ch12Chem10.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Chem10.mcqs = c12Chem10Mcqs;
+}
+
+
+
+
