@@ -28,18 +28,18 @@ export const c12Chem3Mcqs = [
       "D):   L² mol⁻² s⁻¹"
     ],
     "correctAnswer": "b",
-    "explanation": "For a first order reaction (n = 1), unit of k is (mol L⁻¹)^(1-1) s⁻¹ = s⁻¹ (time⁻¹)."
+    "explanation": "For a first order reaction (n = 1), unit of k is (mol L⁻¹)<sup>1-1</sup> s⁻¹ = s⁻¹ (time⁻¹)."
   },
   {
     "id": "c12-chem-3-mcq-3",
     "question": "For a reaction A + 2B → Products, the rate law is Rate = k [A]¹/² [B]². The overall order of reaction is:",
     "options": [
       "A):   2",
-      "B):   2.5 (5/2)",
-      "C):   3",
+      "B):   3",
+      "C):   2.5 (5/2)",
       "D):   1.5"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Overall order is the sum of powers: 1/2 + 2 = 5/2 = 2.5."
   },
   {
@@ -47,23 +47,23 @@ export const c12Chem3Mcqs = [
     "question": "The half-life period (t_1/2) of a zero order reaction is related to initial concentration [R]₀ as:",
     "options": [
       "A):   t_1/2 = 0.693 / k",
-      "B):   t_1/2 ∝ [R]₀",
+      "B):   t_1/2 is independent of [R]₀",
       "C):   t_1/2 ∝ 1 / [R]₀",
-      "D):   t_1/2 is independent of [R]₀"
+      "D):   t_1/2 ∝ [R]₀"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "For zero order reactions, t_1/2 = [R]₀ / (2k), which is directly proportional to initial concentration [R]₀."
   },
   {
     "id": "c12-chem-3-mcq-5",
     "question": "The half-life period of a first order reaction with rate constant k = 2.31 × 10⁻³ s⁻¹ is:",
     "options": [
-      "A):   100 s",
+      "A):   300 s",
       "B):   200 s",
-      "C):   300 s",
+      "C):   100 s",
       "D):   400 s"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "t_1/2 = 0.693 / k = 0.693 / (2.31 × 10⁻³ s⁻¹) = 300 s."
   },
   {
@@ -83,11 +83,11 @@ export const c12Chem3Mcqs = [
     "question": "Acid hydrolysis of ethyl acetate [CH₃COOC₂H₅ + H₂O(excess) → CH₃COOH + C₂H₅OH] is an example of:",
     "options": [
       "A):   Zero order reaction",
-      "B):   Pseudo first order reaction",
-      "C):   Second order reaction",
+      "B):   Second order reaction",
+      "C):   Pseudo first order reaction",
       "D):   Third order reaction"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Because water is present in vast excess, its concentration remains effectively constant, making the reaction pseudo first order."
   },
   {
@@ -95,23 +95,23 @@ export const c12Chem3Mcqs = [
     "question": "The slope of the Arrhenius plot (log k vs 1/T) is equal to:",
     "options": [
       "A):   - E_a / R",
-      "B):   - E_a / (2.303 R)",
+      "B):   log A",
       "C):   E_a / (2.303 R)",
-      "D):   log A"
+      "D):   - E_a / (2.303 R)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "From log k = log A - E_a / (2.303 R T), the slope of log k versus 1/T is - E_a / (2.303 R)."
   },
   {
     "id": "c12-chem-3-mcq-9",
     "question": "For every 10 °C rise in temperature, the reaction rate generally increases by a factor of:",
     "options": [
-      "A):   1.1 to 1.2",
-      "B):   2 to 3 times",
+      "A):   2 to 3 times",
+      "B):   1.1 to 1.2",
       "C):   5 to 10 times",
       "D):   100 times"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "The temperature coefficient (μ = k_(T+10) / k_T) for most chemical reactions lies between 2 and 3."
   },
   {
@@ -131,35 +131,35 @@ export const c12Chem3Mcqs = [
     "question": "For a first order reaction, the time required for 75% completion (t_75%) is equal to:",
     "options": [
       "A):   1.5 × t_1/2",
-      "B):   2 × t_1/2",
-      "C):   3 × t_1/2",
+      "B):   3 × t_1/2",
+      "C):   2 × t_1/2",
       "D):   4 × t_1/2"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "75% completion means 2 half-lives (100% → 50% → 25%), so t_75% = 2 × t_1/2."
   },
   {
     "id": "c12-chem-3-mcq-12",
-    "question": "In collision theory, the factor 'P' in Rate = P · Z_AB · e^(-E_a / RT) represents:",
+    "question": "In collision theory, the factor 'P' in Rate = P · Z_AB · e<sup>-E_a / RT</sup> represents:",
     "options": [
       "A):   Pressure factor",
-      "B):   Steric / Probability factor (orientation requirement)",
+      "B):   Partition coefficient",
       "C):   Planck's constant",
-      "D):   Partition coefficient"
+      "D):   Steric / Probability factor (orientation requirement)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "P is the steric or probability factor that accounts for the proper spatial geometric orientation of colliding molecules."
   },
   {
     "id": "c12-chem-3-mcq-13",
     "question": "The rate of reaction 2NO + Cl₂ → 2NOCl is doubled when Cl₂ concentration is doubled, and increases 8-fold when concentrations of both NO and Cl₂ are doubled. The order with respect to NO is:",
     "options": [
-      "A):   0",
+      "A):   2",
       "B):   1",
-      "C):   2",
+      "C):   0",
       "D):   3"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Rate ∝ [Cl₂]¹ (order w.r.t Cl₂ = 1). When both doubled, Rate = 2<sup>x</sup> · 2¹ = 8 ⇒ 2<sup>x</sup> = 4 ⇒ x = 2. Order w.r.t NO is 2."
   },
   {
@@ -178,12 +178,12 @@ export const c12Chem3Mcqs = [
     "id": "c12-chem-3-mcq-15",
     "question": "The activation energy of a chemical reaction can be determined experimentally from:",
     "options": [
-      "A):   Evaluating rate constants at two different temperatures",
+      "A):   Measuring reaction enthalpy at 298 K",
       "B):   Measuring standard cell EMF",
-      "C):   Measuring reaction enthalpy at 298 K",
+      "C):   Evaluating rate constants at two different temperatures",
       "D):   Measuring osmotic pressure"
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "c",
     "explanation": "By measuring rate constants k₁ and k₂ at temperatures T₁ and T₂, E_a is calculated using log(k₂/k₁) = [E_a/(2.303 R)] · [(T₂-T₁)/(T₁T₂)]."
   },
   {
@@ -192,22 +192,22 @@ export const c12Chem3Mcqs = [
     "options": [
       "A):   Zero",
       "B):   First",
-      "C):   Second",
-      "D):   Third"
+      "C):   Third",
+      "D):   Second"
     ],
-    "correctAnswer": "c",
-    "explanation": "Unit L mol⁻¹ s⁻¹ corresponds to second order kinetics: (mol L⁻¹)^(1-2) s⁻¹ = L mol⁻¹ s⁻¹."
+    "correctAnswer": "d",
+    "explanation": "Unit L mol⁻¹ s⁻¹ corresponds to second order kinetics: (mol L⁻¹)<sup>1-2</sup> s⁻¹ = L mol⁻¹ s⁻¹."
   },
   {
     "id": "c12-chem-3-mcq-17",
     "question": "Threshold energy (E_th) of a reaction is equal to:",
     "options": [
-      "A):   Activation Energy - Initial Energy of Reactants",
-      "B):   Activation Energy + Initial Energy of Reactants",
+      "A):   Activation Energy + Initial Energy of Reactants",
+      "B):   Activation Energy - Initial Energy of Reactants",
       "C):   Activation Energy × Temperature",
       "D):   Enthalpy of reaction (ΔH)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Threshold Energy is the total energy required for effective collision: E_th = E_reactants + E_a."
   },
   {
@@ -220,18 +220,18 @@ export const c12Chem3Mcqs = [
       "D):   Fractional order"
     ],
     "correctAnswer": "b",
-    "explanation": "Radioactive nuclear disintegrations are first order exponential decay processes: N = N₀ e^(-λt)."
+    "explanation": "Radioactive nuclear disintegrations are first order exponential decay processes: N = N₀ e<sup>-λt</sup>."
   },
   {
     "id": "c12-chem-3-mcq-19",
     "question": "The rate determining step (RDS) in a complex multi-step chemical reaction is:",
     "options": [
       "A):   The fastest elementary step",
-      "B):   The slowest elementary step",
-      "C):   The intermediate step",
+      "B):   The intermediate step",
+      "C):   The slowest elementary step",
       "D):   The step with lowest activation energy"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "The slowest step in a multi-step reaction mechanism acts as the rate-determining step and controls overall rate."
   },
   {
@@ -239,11 +239,11 @@ export const c12Chem3Mcqs = [
     "question": "For a first order reaction, the time required to complete 99% of reaction is related to time for 90% completion as:",
     "options": [
       "A):   t_99% = t_90%",
-      "B):   t_99% = 2 × t_90%",
+      "B):   t_99% = 4 × t_90%",
       "C):   t_99% = 3 × t_90%",
-      "D):   t_99% = 4 × t_90%"
+      "D):   t_99% = 2 × t_90%"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "t_99% = (2.303/k) log(100/1) = 2(2.303/k) = 2 × t_90% (since t_90% = (2.303/k) log(100/10) = 2.303/k)."
   },
   {
@@ -256,19 +256,19 @@ export const c12Chem3Mcqs = [
       "D):   Third order"
     ],
     "correctAnswer": "a",
-    "explanation": "t_1/2 ∝ [R]₀^(1-n). When n = 0, t_1/2 ∝ [R]₀. Doubling initial concentration doubles the half-life."
+    "explanation": "t_1/2 ∝ [R]₀<sup>1-n</sup>. When n = 0, t_1/2 ∝ [R]₀. Doubling initial concentration doubles the half-life."
   },
   {
     "id": "c12-chem-3-mcq-22",
     "question": "The fraction of molecules having energy equal to or greater than activation energy at temperature T is given by:",
     "options": [
-      "A):   e^(E_a / RT)",
-      "B):   e^(- E_a / RT)",
+      "A):   e<sup>E_a / RT</sup>",
+      "B):   e<sup>-E_a / RT</sup>",
       "C):   E_a / RT",
       "D):   ln(E_a / RT)"
     ],
     "correctAnswer": "b",
-    "explanation": "According to the Boltzmann distribution, the fraction of molecules with energy ≥ E_a is e^(-E_a / RT)."
+    "explanation": "According to the Boltzmann distribution, the fraction of molecules with energy ≥ E_a is e<sup>-E_a / RT</sup>."
   },
   {
     "id": "c12-chem-3-mcq-23",
@@ -287,11 +287,11 @@ export const c12Chem3Mcqs = [
     "question": "The decomposition of NH₃ on a hot platinum surface at high pressure is zero order because:",
     "options": [
       "A):   Rate is very fast",
-      "B):   Metal catalyst surface becomes completely saturated with NH₃ molecules",
+      "B):   NH₃ is an inert gas",
       "C):   Temperature is low",
-      "D):   NH₃ is an inert gas"
+      "D):   Metal catalyst surface becomes completely saturated with NH₃ molecules"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "At high pressure, all active sites on the Pt surface are occupied (saturated), making reaction rate independent of further increase in NH₃ pressure."
   },
   {

@@ -10,12 +10,12 @@ export const c12Chem5Mcqs = [
     "id": "c12-chem-5-mcq-1",
     "question": "The coordination number and oxidation state of cobalt in [Co(en)₃]³⁺ are:",
     "options": [
-      "A):   3 and +3",
-      "B):   6 and +3",
+      "A):   6 and +3",
+      "B):   3 and +3",
       "C):   6 and +2",
       "D):   4 and +3"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Ethane-1,2-diamine (en) is a didentate ligand (3 × 2 = 6 donor atoms), so coordination number is 6. Oxidation state of Co is +3."
   },
   {
@@ -23,11 +23,11 @@ export const c12Chem5Mcqs = [
     "question": "Which of the following is an AMBIDENTATE ligand?",
     "options": [
       "A):   H₂O",
-      "B):   NH₃",
-      "C):   NO₂⁻ (Nitrito)",
+      "B):   NO₂⁻ (Nitrito)",
+      "C):   NH₃",
       "D):   C₂O₄²⁻ (Oxalato)"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "b",
     "explanation": "NO₂⁻ is ambidentate because it can coordinate through Nitrogen (-NO₂⁻ nitro) or through Oxygen (-ONO⁻ nitrito)."
   },
   {
@@ -35,11 +35,11 @@ export const c12Chem5Mcqs = [
     "question": "The correct IUPAC name of K₃[Fe(CN)₆] is:",
     "options": [
       "A):   Potassium hexacyanoiron(III)",
-      "B):   Potassium hexacyanidoferrate(III)",
-      "C):   Tripotassium hexacyanoferrate(II)",
+      "B):   Tripotassium hexacyanoferrate(II)",
+      "C):   Potassium hexacyanidoferrate(III)",
       "D):   Potassium ferricyanide"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "IUPAC name: Potassium hexacyanidoferrate(III) (anionic complex ends in -ate)."
   },
   {
@@ -47,23 +47,23 @@ export const c12Chem5Mcqs = [
     "question": "How many moles of AgCl are precipitated when excess AgNO₃ is added to 1 mole of [Co(NH₃)₅Cl]Cl₂?",
     "options": [
       "A):   1 mole",
-      "B):   2 moles",
+      "B):   0 moles",
       "C):   3 moles",
-      "D):   0 moles"
+      "D):   2 moles"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "Only the 2 chloride ions outside the coordination sphere are ionisable and precipitate as AgCl."
   },
   {
     "id": "c12-chem-5-mcq-5",
     "question": "[Co(NH₃)₅SO₄]Br and [Co(NH₃)₅Br]SO₄ represent which type of isomerism?",
     "options": [
-      "A):   Linkage isomerism",
-      "B):   Ionisation isomerism",
+      "A):   Ionisation isomerism",
+      "B):   Linkage isomerism",
       "C):   Coordination isomerism",
       "D):   Geometrical isomerism"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "They exchange an ion inside the coordination sphere with a counter ion outside, representing Ionisation Isomerism."
   },
   {
@@ -83,11 +83,11 @@ export const c12Chem5Mcqs = [
     "question": "The hybridisation and geometry of [Ni(CO)₄] are:",
     "options": [
       "A):   dsp², Square planar",
-      "B):   sp³, Tetrahedral",
-      "C):   d²sp³, Octahedral",
+      "B):   d²sp³, Octahedral",
+      "C):   sp³, Tetrahedral",
       "D):   sp³d, Trigonal bipyramidal"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "In [Ni(CO)₄], Ni is in 0 oxidation state (3d⁸ 4s²). Strong CO pairs 4s electrons into 3d (3d¹⁰), giving sp³ Tetrahedral geometry."
   },
   {
@@ -95,23 +95,23 @@ export const c12Chem5Mcqs = [
     "question": "Crystal Field Splitting Energy in tetrahedral field (Δ_t) is related to octahedral field (Δ_o) as:",
     "options": [
       "A):   Δ_t = Δ_o",
-      "B):   Δ_t = (4/9) Δ_o",
+      "B):   Δ_t = (1/2) Δ_o",
       "C):   Δ_t = (9/4) Δ_o",
-      "D):   Δ_t = (1/2) Δ_o"
+      "D):   Δ_t = (4/9) Δ_o"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "In tetrahedral fields, Δ_t = (4/9) Δ_o because there are only 4 ligands and none point directly along d-orbitals."
   },
   {
     "id": "c12-chem-5-mcq-9",
     "question": "According to the Spectrochemical Series, which of the following is the STRONGEST field ligand?",
     "options": [
-      "A):   H₂O",
+      "A):   CO (Carbonyl)",
       "B):   NH₃",
       "C):   CN⁻",
-      "D):   CO (Carbonyl)"
+      "D):   H₂O"
     ],
-    "correctAnswer": "d",
+    "correctAnswer": "a",
     "explanation": "Carbon monoxide (CO) is the strongest field ligand due to synergic metal-to-ligand π-backbonding."
   },
   {
@@ -131,11 +131,11 @@ export const c12Chem5Mcqs = [
     "question": "The metal ion present in Chlorophyll is:",
     "options": [
       "A):   Fe²⁺",
-      "B):   Mg²⁺",
-      "C):   Co³⁺",
+      "B):   Co³⁺",
+      "C):   Mg²⁺",
       "D):   Zn²⁺"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Chlorophyll is a coordination complex of Magnesium (Mg²⁺) with a porphyrin ring."
   },
   {
@@ -143,35 +143,35 @@ export const c12Chem5Mcqs = [
     "question": "Which of the following complexes is OPTICALLY ACTIVE?",
     "options": [
       "A):   trans-[Co(en)₂Cl₂]⁺",
-      "B):   cis-[Co(en)₂Cl₂]⁺",
+      "B):   [NiCl₄]²⁻",
       "C):   [Pt(NH₃)₂Cl₂]",
-      "D):   [NiCl₄]²⁻"
+      "D):   cis-[Co(en)₂Cl₂]⁺"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "cis-[Co(en)₂Cl₂]⁺ lacks a plane of symmetry (chiral) and exists as d- and l- enantiomers; the trans-isomer has a plane of symmetry."
   },
   {
     "id": "c12-chem-5-mcq-13",
     "question": "The electronic configuration of d⁴ metal ion in an octahedral complex with a STRONG field ligand (Δ_o > P) is:",
     "options": [
-      "A):   t_2g³ e_g¹",
-      "B):   t_2g⁴ e_g⁰",
+      "A):   t_2g⁴ e_g⁰",
+      "B):   t_2g³ e_g¹",
       "C):   t_2g² e_g²",
       "D):   e_g⁴ t_2g⁰"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "When Δ_o > P (strong field), all 4 electrons pair up in the lower t_2g orbitals, giving t_2g⁴ e_g⁰ (low spin)."
   },
   {
     "id": "c12-chem-5-mcq-14",
     "question": "The IUPAC name of [Co(NH₃)₅(CO₃)]Cl is:",
     "options": [
-      "A):   Pentaamminecarbonatocobalt(III) chloride",
-      "B):   Pentaamminecarbonatocobalt(II) chloride",
+      "A):   Pentaamminecarbonatocobalt(II) chloride",
+      "B):   Pentaamminecarbonatocobalt(III) chloride",
       "C):   Carbonatopentaamminecobalt(III) chloride",
       "D):   Pentaamminechlorocobalt(III) carbonate"
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "b",
     "explanation": "Ligands in alphabetical order: Pentaamminecarbonatocobalt(III) chloride."
   },
   {
@@ -179,11 +179,11 @@ export const c12Chem5Mcqs = [
     "question": "Chelate complexes are exceptionally stable compared to unidentate analogs primarily due to:",
     "options": [
       "A):   Enthalpy increase",
-      "B):   Entropy increase (ΔS > 0)",
-      "C):   Decrease in temperature",
+      "B):   Decrease in temperature",
+      "C):   Entropy increase (ΔS > 0)",
       "D):   Ionic bonding"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Ring formation by polydentate ligands releases more free particles into solution, causing a favourable positive entropy change (ΔS > 0)."
   },
   {
@@ -192,22 +192,22 @@ export const c12Chem5Mcqs = [
     "options": [
       "A):   0.00 BM",
       "B):   1.73 BM",
-      "C):   4.90 BM",
-      "D):   5.92 BM"
+      "C):   5.92 BM",
+      "D):   4.90 BM"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Fe²⁺ (3d⁶) with weak H₂O has 4 unpaired electrons (n = 4). μ_s = √[4(4+2)] = √24 = 4.90 BM."
   },
   {
     "id": "c12-chem-5-mcq-17",
     "question": "Which of the following compounds exhibits LINKAGE isomerism?",
     "options": [
-      "A):   [Co(NH₃)₆]Cl₃",
-      "B):   [Co(NH₃)₅(NO₂)]Cl₂",
+      "A):   [Co(NH₃)₅(NO₂)]Cl₂",
+      "B):   [Co(NH₃)₆]Cl₃",
       "C):   [Cr(H₂O)₆]Cl₃",
       "D):   [Pt(NH₃)₄][PtCl₄]"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Because NO₂⁻ is an ambidentate ligand that can coordinate via N (nitro) or O (nitrito)."
   },
   {
@@ -227,11 +227,11 @@ export const c12Chem5Mcqs = [
     "question": "The complex [Co(NH₃)₆]³⁺ is:",
     "options": [
       "A):   Outer orbital, Paramagnetic",
-      "B):   Inner orbital (d²sp³), Diamagnetic",
-      "C):   Tetrahedral, Diamagnetic",
+      "B):   Tetrahedral, Diamagnetic",
+      "C):   Inner orbital (d²sp³), Diamagnetic",
       "D):   Square planar, Paramagnetic"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Co³⁺ (3d⁶) pairs all electrons in presence of strong NH₃, forming d²sp³ (Inner Orbital Octahedral, Diamagnetic μ = 0)."
   },
   {
@@ -239,23 +239,23 @@ export const c12Chem5Mcqs = [
     "question": "The antidote used for treatment of Lead (Pb) poisoning is:",
     "options": [
       "A):   Cisplatin",
-      "B):   Calcium disodium EDTA (CaNa₂EDTA)",
+      "B):   Vitamin B₁₂",
       "C):   Chlorophyll",
-      "D):   Vitamin B₁₂"
+      "D):   Calcium disodium EDTA (CaNa₂EDTA)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "CaNa₂EDTA chelates toxic Pb²⁺ from tissues into a water-soluble complex that is excreted by kidneys."
   },
   {
     "id": "c12-chem-5-mcq-21",
     "question": "Facial (fac) and Meridional (mer) isomerism is exhibited by octahedral complexes of the type:",
     "options": [
-      "A):   [MA₄B₂]",
-      "B):   [MA₃B₃]",
+      "A):   [MA₃B₃]",
+      "B):   [MA₄B₂]",
       "C):   [MA₂B₄]",
       "D):   [MABCD]"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "[MA₃B₃] complexes (e.g. [Co(NH₃)₃(NO₂)₃]) show fac/mer isomerism."
   },
   {
@@ -275,11 +275,11 @@ export const c12Chem5Mcqs = [
     "question": "Which of the following is a HEXADENTATE ligand?",
     "options": [
       "A):   en (Ethane-1,2-diamine)",
-      "B):   EDTA⁴⁻ (Ethylenediaminetetraacetate)",
-      "C):   Oxalate ion",
+      "B):   Oxalate ion",
+      "C):   EDTA⁴⁻ (Ethylenediaminetetraacetate)",
       "D):   DMG"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "EDTA⁴⁻ has 6 donor atoms (2 Nitrogen + 4 Oxygen atoms), acting as a hexadentate chelating ligand."
   },
   {
@@ -287,11 +287,11 @@ export const c12Chem5Mcqs = [
     "question": "In the metallurgical extraction of Gold, the soluble complex formed is:",
     "options": [
       "A):   [Au(CO)₄]⁻",
-      "B):   [Au(CN)₂]⁻ (Dicyanidoaurate(I))",
+      "B):   [Au(NH₃)₂]⁺",
       "C):   [AuCl₄]⁻",
-      "D):   [Au(NH₃)₂]⁺"
+      "D):   [Au(CN)₂]⁻ (Dicyanidoaurate(I))"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "In MacArthur-Forrest process: 4Au + 8NaCN + 2H₂O + O₂ → 4Na[Au(CN)₂] + 4NaOH."
   },
   {

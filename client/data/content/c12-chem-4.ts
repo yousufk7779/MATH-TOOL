@@ -10,12 +10,12 @@ export const c12Chem4Mcqs = [
     "id": "c12-chem-4-mcq-1",
     "question": "Which of the following elements is NOT considered a typical transition element?",
     "options": [
-      "A):   Titanium (Ti)",
-      "B):   Zinc (Zn)",
+      "A):   Zinc (Zn)",
+      "B):   Titanium (Ti)",
       "C):   Manganese (Mn)",
       "D):   Iron (Fe)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "Zinc has completely filled 3d¹⁰ orbitals in its ground state as well as in its +2 oxidation state (Zn²⁺), hence it is not a typical transition metal."
   },
   {
@@ -35,11 +35,11 @@ export const c12Chem4Mcqs = [
     "question": "The highest oxidation state exhibited by a 3d transition series element is:",
     "options": [
       "A):   +6 by Chromium",
-      "B):   +7 by Manganese",
-      "C):   +8 by Osmium",
+      "B):   +8 by Osmium",
+      "C):   +7 by Manganese",
       "D):   +5 by Vanadium"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "Manganese exhibits +7 oxidation state in KMnO₄ by utilizing all five 3d and two 4s valence electrons."
   },
   {
@@ -58,12 +58,12 @@ export const c12Chem4Mcqs = [
     "id": "c12-chem-4-mcq-5",
     "question": "Which of the following aqueous ions is completely COLORLESS?",
     "options": [
-      "A):   Ti³⁺",
+      "A):   Sc³⁺",
       "B):   Cu²⁺",
-      "C):   Sc³⁺",
+      "C):   Ti³⁺",
       "D):   Fe²⁺"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "Sc³⁺ has 3d⁰ configuration (no d-electrons), so d-d electron transitions are impossible, making it colorless."
   },
   {
@@ -83,11 +83,11 @@ export const c12Chem4Mcqs = [
     "question": "In the industrial preparation of K₂Cr₂O₇, roasting chromite ore (FeCr₂O₄) with Na₂CO₃ yields:",
     "options": [
       "A):   Sodium dichromate (Na₂Cr₂O₇)",
-      "B):   Sodium chromate (Na₂CrO₄)",
-      "C):   Chromium trioxide (CrO₃)",
+      "B):   Chromium trioxide (CrO₃)",
+      "C):   Sodium chromate (Na₂CrO₄)",
       "D):   Potassium chromate (K₂CrO₄)"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "c",
     "explanation": "4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ (Yellow) + 2Fe₂O₃ + 8CO₂."
   },
   {
@@ -95,23 +95,23 @@ export const c12Chem4Mcqs = [
     "question": "When alkali (OH⁻) is added to an orange solution of potassium dichromate, the color changes to:",
     "options": [
       "A):   Green",
-      "B):   Yellow",
+      "B):   Colorless",
       "C):   Purple",
-      "D):   Colorless"
+      "D):   Yellow"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "Cr₂O₇²⁻ (Orange) + 2OH⁻ ⇌ 2CrO₄²⁻ (Yellow) + H₂O."
   },
   {
     "id": "c12-chem-4-mcq-9",
     "question": "In acidic medium, 1 mole of KMnO₄ reacts with how many moles of Fe²⁺ ions?",
     "options": [
-      "A):   1 mole",
+      "A):   5 moles",
       "B):   2 moles",
-      "C):   5 moles",
+      "C):   1 mole",
       "D):   6 moles"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O. 1 mole of permanganate oxidizes exactly 5 moles of ferrous ions."
   },
   {
@@ -130,12 +130,12 @@ export const c12Chem4Mcqs = [
     "id": "c12-chem-4-mcq-11",
     "question": "The primary cause of Lanthanoid (Lanthanide) Contraction is:",
     "options": [
-      "A):   Imperfect shielding effect of 4f electrons",
+      "A):   Decrease in nuclear charge",
       "B):   High shielding of 5d electrons",
-      "C):   Decrease in nuclear charge",
+      "C):   Imperfect shielding effect of 4f electrons",
       "D):   Increase in principal quantum number"
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "c",
     "explanation": "4f electrons have highly diffused shapes and exert poor shielding, causing effective nuclear charge to pull outer electrons inward."
   },
   {
@@ -143,47 +143,47 @@ export const c12Chem4Mcqs = [
     "question": "Which of the following pairs of elements have almost identical atomic radii due to Lanthanoid (Lanthanide) Contraction?",
     "options": [
       "A):   Ti and Zr",
-      "B):   Zr and Hf",
+      "B):   Sc and La",
       "C):   Fe and Ni",
-      "D):   Sc and La"
+      "D):   Zr and Hf"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "Zr (160 pm) and Hf (159 pm) have virtually identical atomic and ionic radii because Lanthanoid (Lanthanide) Contraction cancels the normal size increase down the group."
   },
   {
     "id": "c12-chem-4-mcq-13",
     "question": "Which lanthanoid hydroxide has the HIGHEST basic strength?",
     "options": [
-      "A):   Lu(OH)₃",
+      "A):   La(OH)₃",
       "B):   Ce(OH)₃",
-      "C):   La(OH)₃",
+      "C):   Lu(OH)₃",
       "D):   Gd(OH)₃"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "explanation": "La³⁺ has the largest ionic radius, giving La-OH the greatest ionic character. Hence La(OH)₃ is the most basic hydroxide."
   },
   {
     "id": "c12-chem-4-mcq-14",
     "question": "Cerium (Ce, Z = 58) exhibits a stable +4 oxidation state because:",
     "options": [
-      "A):   Ce⁴⁺ attains empty noble gas [Xe] 4f⁰ configuration",
-      "B):   Ce⁴⁺ has half-filled 4f⁷ configuration",
+      "A):   Ce⁴⁺ has half-filled 4f⁷ configuration",
+      "B):   Ce⁴⁺ attains empty noble gas [Xe] 4f⁰ configuration",
       "C):   Ce⁴⁺ has completely filled 4f¹⁴ configuration",
       "D):   It is a radioactive element"
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "b",
     "explanation": "Ce⁴⁺ loses all 4 valence electrons to achieve the extraordinarily stable noble gas configuration of Xenon ([Xe] 4f⁰)."
   },
   {
     "id": "c12-chem-4-mcq-15",
     "question": "Mischmetal is an alloy predominantly composed of:",
     "options": [
-      "A):   Lanthanoid (Lanthanide) metals (~95%) and Iron (~5%)",
+      "A):   Actinoid (Actinide) metals and Lead",
       "B):   Copper and Zinc",
-      "C):   Actinoid (Actinide) metals and Lead",
+      "C):   Lanthanoid (Lanthanide) metals (~95%) and Iron (~5%)",
       "D):   Aluminum and Magnesium"
     ],
-    "correctAnswer": "a",
+    "correctAnswer": "c",
     "explanation": "Mischmetal contains ~95% lanthanoids (mostly Cerium ~50% and Lanthanum ~25%) and ~5% Iron, used in flint lighters."
   },
   {
@@ -191,23 +191,23 @@ export const c12Chem4Mcqs = [
     "question": "Actinoid (Actinide)s (Actinides) exhibit a broader range of oxidation states than Lanthanoid (Lanthanide)s (Lanthanides) because:",
     "options": [
       "A):   5f orbitals are smaller than 4f orbitals",
-      "B):   The energy gap between 5f, 6d, and 7s orbitals is very small",
+      "B):   Actinoid (Actinide)s (Actinides) have higher ionization energies",
       "C):   Actinoid (Actinide)s (Actinides) are non-metallic",
-      "D):   Actinoid (Actinide)s (Actinides) have higher ionization energies"
+      "D):   The energy gap between 5f, 6d, and 7s orbitals is very small"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "The energy difference between 5f, 6d, and 7s subshells is very narrow, allowing participation of electrons from all three orbitals in bonding."
   },
   {
     "id": "c12-chem-4-mcq-17",
     "question": "The Cr-O-Cr bridge bond angle in the dichromate ion (Cr₂O₇²⁻) is:",
     "options": [
-      "A):   109.5°",
-      "B):   126°",
+      "A):   126°",
+      "B):   109.5°",
       "C):   180°",
       "D):   90°"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "In Cr₂O₇²⁻, two CrO₄ tetrahedra share an oxygen atom at an angle of 126°."
   },
   {
@@ -240,22 +240,22 @@ export const c12Chem4Mcqs = [
     "options": [
       "A):   Scandium (Sc)",
       "B):   Titanium (Ti)",
-      "C):   Copper (Cu)",
-      "D):   Iron (Fe)"
+      "C):   Iron (Fe)",
+      "D):   Copper (Cu)"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "d",
     "explanation": "Density increases across the 3d series from Sc (3.0 g cm⁻³) to Cu (8.9 g cm⁻³) due to increase in atomic mass and decrease in atomic volume."
   },
   {
     "id": "c12-chem-4-mcq-21",
     "question": "Why is Cu⁺ ion unstable in aqueous solution and undergoes disproportionation?",
     "options": [
-      "A):   Cu⁺ is diamagnetic",
-      "B):   Hydration enthalpy of Cu²⁺ is much higher and compensates for high IE₂",
+      "A):   Hydration enthalpy of Cu²⁺ is much higher and compensates for high IE₂",
+      "B):   Cu⁺ is diamagnetic",
       "C):   Cu⁺ is a strong reducing agent",
       "D):   Cu⁺ forms insoluble salts"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "a",
     "explanation": "In aqueous solution, 2Cu⁺(aq) → Cu²⁺(aq) + Cu(s) because the high negative hydration energy of Cu²⁺ more than compensates for the second ionization energy."
   },
   {
@@ -287,11 +287,11 @@ export const c12Chem4Mcqs = [
     "question": "Interstitial compounds are characterized by:",
     "options": [
       "A):   Low melting points and softness",
-      "B):   High melting points, extreme hardness, and retained metallic conductivity",
+      "B):   High chemical reactivity",
       "C):   Complete ionic character",
-      "D):   High chemical reactivity"
+      "D):   High melting points, extreme hardness, and retained metallic conductivity"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "d",
     "explanation": "Trapping small non-metal atoms (H, C, N) in metal voids imparts very high hardness, high melting points, and chemical inertness while retaining metallic conductivity."
   },
   {
@@ -299,11 +299,11 @@ export const c12Chem4Mcqs = [
     "question": "The equivalent weight of K₂Cr₂O₇ in acidic medium is:",
     "options": [
       "A):   M / 2",
-      "B):   M / 3",
-      "C):   M / 6",
+      "B):   M / 6",
+      "C):   M / 3",
       "D):   M / 5"
     ],
-    "correctAnswer": "c",
+    "correctAnswer": "b",
     "explanation": "In acidic medium, Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O. 6 electrons are accepted per mole, so Equivalent Weight = M / 6 = 294.18 / 6 = 49.03."
   }
 ];
