@@ -1,1159 +1,1376 @@
-// Class 11 Chemistry Chapter 6 - Equilibrium
-// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// Class 11 Chemistry Chapter 6: Equilibrium
+// Gold Standard Reference Textbook & 3-Tab Architecture
+// Subject: Chemistry | Class: 11 | Code: c11-chem-6
 
 export const c11Chem6HtmlOverview = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER AT TOP) -->
-  <div style="background: rgba(171, 71, 188, 0.05); border: 1.5px solid #AB47BC; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: #AB47BC; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #AB47BC; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 6: Equilibrium</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>1. Dynamic Equilibrium:</b> State in a reversible process where forward and reverse reaction rates become equal, keeping concentrations constant.
+  <!-- Quick Glossary Card with Chapter Subtitle -->
+  <div style="background: linear-gradient(135deg, rgba(171, 71, 188, 0.12), rgba(142, 36, 170, 0.12)); border: 1.5px solid rgba(171, 71, 188, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p style="color: #AB47BC; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 6: Equilibrium</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">Dynamic Equilibrium:</b> A microscopic steady state wherein forward and reverse reaction rates become strictly equal, rendering macroscopic concentrations constant over time.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>2. Law of Mass Action:</b> At constant temperature, rate of chemical reaction is directly proportional to product of active masses of reactants.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">Law of Chemical Equilibrium:</b> At a fixed temperature, the product of molar concentrations of products raised to their stoichiometric coefficients divided by reactants is a constant (K<sub>c</sub>).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>3. Equilibrium Constant (K<sub>c</sub>):</b> Ratio of product of equilibrium molar concentrations of products to reactants, raised to stoichiometric powers.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">Le Chatelier's Principle:</b> If a stress (change in concentration, pressure, temperature) is applied to an equilibrium system, the system readjusts in the direction that nullifies the stress.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>4. Partial Pressure Constant (K<sub>p</sub>):</b> Equilibrium constant expressed in terms of partial pressures for gaseous systems (K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup>).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">pH Scale (S&oslash;rensen):</b> The negative logarithm (base 10) of the molar hydronium ion concentration: pH = -log<sub>10</sub>[H<sub>3</sub>O<sup>+</sup>].
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>5. Reaction Quotient (Q<sub>c</sub>):</b> Ratio of concentrations at any arbitrary moment (If Q<sub>c</sub> < K<sub>c</sub>, reaction shifts forward; if Q<sub>c</sub> > K<sub>c</sub>, shifts backward).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">Buffer Solution:</b> A solution that resists changes in hydrogen ion concentration (pH) upon addition of small quantities of strong acid, base, or dilution.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>6. Le Chatelier's Principle:</b> If a system at equilibrium is subjected to change in T, P, or concentration, system shifts to counteract that change.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>7. Electrolyte:</b> Substance that dissociates into ions when dissolved in water or molten state, conducting electricity.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>8. Ostwald's Dilution Law:</b> Degree of dissociation (α) of weak electrolyte is inversely proportional to square root of molar concentration (α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>9. Arrhenius Acid / Base:</b> Acid produces H<sup>+</sup> ions in aqueous solution; Base produces OH<sup>-</sup> ions.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>10. Brønsted-Lowry Theory:</b> Acid is a proton (H<sup>+</sup>) donor; Base is a proton acceptor.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>11. Conjugate Acid-Base Pair:</b> Pair of species differing only by a single proton (H<sup>+</sup>) (e.g. NH<sub>3</sub> and NH<sub>4</sub><sup>+</sup>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>12. Lewis Acid / Base:</b> Acid is an electron-pair acceptor (BF<sub>3</sub>, AlCl<sub>3</sub>); Base is an electron-pair donor (NH<sub>3</sub>, H<sub>2</sub>O).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>13. Ionic Product of Water (K<sub>w</sub>):</b> Product of molar concentrations of H<sup>+</sup> and OH<sup>-</sup> ions in pure water (K<sub>w</sub> = 1.0 × 10<sup>-14</sup> at 298 K).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>14. pH Scale:</b> Negative logarithm of hydrogen ion activity/concentration: pH = -log<sub>10</sub>[H<sup>+</sup>] (Neutral pH = 7 at 298 K).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>15. Salt Hydrolysis:</b> Interaction of salt cations or anions with water molecules to produce acidic or basic solution.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>16. Buffer Solution:</b> Solution that resists drastic changes in pH upon addition of small amounts of strong acid or strong base.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>17. Henderson-Hasselbalch Equation:</b> Equation calculating pH of acid buffer: pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>18. Solubility Product (K<sub>sp</sub>):</b> Product of molar concentrations of constituent ions in a saturated solution of sparingly soluble salt.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>19. Common Ion Effect:</b> Suppression of degree of dissociation of a weak electrolyte by addition of a strong electrolyte containing a common ion.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #AB47BC; border-radius: 6px;">
-        <b style='color: #AB47BC;'>20. Ionic Product (Q<sub>sp</sub>):</b> Concentration product of ions in solution at any moment. Precipitation occurs if Q<sub>sp</sub> > K<sub>sp</sub>.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #AB47BC;">Solubility Product (K<sub>sp</sub>):</b> The product of molar concentrations of constituent ions in a saturated solution of a sparingly soluble salt, raised to their stoichiometric powers.
       </div>
     </div>
   </div>
 
+  <!-- SECTION 1 -->
+  <h2 style="color: #AB47BC; border-bottom: 2px solid #AB47BC; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">
+    1. Equilibrium in Physical and Chemical Processes, Dynamic Nature of Equilibrium
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
-  <h2 style="color: #AB47BC; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Equilibrium in Physical and Chemical Processes, Dynamic Nature of Equilibrium</h2>
-
-  <!-- 3D IMAGE 1 -->
+  <!-- PRESERVED IMAGE 1 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(171, 71, 188, 0.35); border: 1.5px solid #AB47BC;" alt="3D Dynamic Chemical and Physical Equilibrium Setup" />
     <p style="color: #AB47BC; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 6.1: 3D Visualization of Dynamic Chemical Equilibrium, Equal Forward and Reverse Rate Vectors</p>
   </div>
 
-  <p>Chemical reactions do not always proceed to 100% completion where all reactants are transformed into products. In closed systems, many physical transformations and chemical reactions reach a state of <b>Dynamic Equilibrium</b> where forward and reverse processes occur simultaneously at identical rates, keeping macroscopic concentrations constant over time.</p>
+  
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(i) Physical Equilibria & Phase Transformations</h3>
-  <p>Physical equilibrium involves phase changes without changing chemical composition:</p>
+  <p>
+    Equilibrium represents the final state of all reversible natural and chemical processes. It is fundamentally dynamic—chemical transformations do not halt at equilibrium; rather, forward and reverse microscopic reactions proceed with exactly matched velocities (Rate<sub>f</sub> = Rate<sub>b</sub>).
+  </p>
+
+  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 16.5px;">(i) Physical Equilibria &amp; Phase Transformations</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #AB47BC;">1. Solid-Liquid Equilibrium:</b> H<sub>2</sub>O<sub>(s)</sub> &hArr; H<sub>2</sub>O<sub>(l)</sub> at 273 K (0&deg;C) and 1 atm. Rate of melting = Rate of freezing. The temperature at which solid and liquid coexist in equilibrium at 1 atm is the normal melting point.</li>
+      <li><b style="color: #AB47BC;">2. Liquid-Vapor Equilibrium:</b> H<sub>2</sub>O<sub>(l)</sub> &hArr; H<sub>2</sub>O<sub>(g)</sub> in a sealed vessel. Rate of vaporization = Rate of condensation. The equilibrium pressure exerted by the vapor is the saturated vapor pressure (V.P. &prop; T).</li>
+      <li><b style="color: #AB47BC;">3. Solid-Vapor Equilibrium:</b> I<sub>2(s)</sub> &hArr; I<sub>2(vapor)</sub> (sublimation in a closed chamber). Rate of sublimation = Rate of deposition.</li>
+    </ul>
+  </div>
+
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(ii) Dissolution Equilibria (Solids &amp; Gases in Liquids)</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Solid-Liquid Equilibrium (H<sub>2</sub>O(s) ⇋ H<sub>2</sub>O(l)):</b> Occurs at normal melting point (0 °C, 1 atm). Rate of melting equals rate of freezing.</li>
-    <li><b>Liquid-Vapor Equilibrium (H<sub>2</sub>O(l) ⇋ H<sub>2</sub>O(g)):</b> In a closed vessel, rate of vaporization equals rate of condensation. Equilibrium vapor pressure depends strictly on temperature.</li>
-    <li><b>Solid-Vapor Equilibrium (I<sub>2</sub>(s) ⇋ I<sub>2</sub>(g), Camphor, NH<sub>4</sub>Cl):</b> Sublimation equilibrium in closed container.</li>
+    <li><b style="color: #AB47BC;">Solid in Liquid:</b> Sugar<sub>(solid)</sub> &hArr; Sugar<sub>(solution)</sub>. In a saturated solution, Rate of dissolution = Rate of crystallization. Concentration remains strictly constant at a given temperature.</li>
+    <li><b style="color: #AB47BC;">Gas in Liquid (Henry's Law):</b> CO<sub>2(g)</sub> &hArr; CO<sub>2(aq)</sub>. William Henry (1803): <i>"The mass of a gas dissolved in a given volume of liquid at constant temperature is directly proportional to the partial pressure of the gas above the liquid:"</i> <b>m = k<sub>H</sub> p</b> &nbsp;|&nbsp; <b>p = K<sub>H</sub> x</b>. Applied in carbonated soft drinks sealed under high CO<sub>2</sub> pressure.</li>
   </ul>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(ii) Dissolution Equilibria (Solids & Gases in Liquids)</h3>
-  <p>• <b>Solid in Liquid (Sugar in Water):</b> At saturation, rate of dissolution of solid equals rate of crystallization of solute.<br>
-  • <b>Gas in Liquid (CO<sub>2</sub> in Soda Water - Henry's Law):</b> Mass of gas dissolved per unit volume of liquid is directly proportional to partial pressure of gas above liquid:<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">m = k<sub>H</sub> × P &nbsp;&nbsp;&nbsp;&nbsp; (Henry's Law Equation)</span></p>
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(iii) Chemical Equilibria &amp; Dynamic Nature</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Consider the reversible reaction: <b>aA + bB &hArr; cC + dD</b>.
+      <br/>Initially, forward rate is maximal and reverse rate is zero. As reactants consume and products accumulate, forward rate decreases while reverse rate accelerates, eventually converging at equilibrium where:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        Rate<sub>forward</sub> = Rate<sub>reverse</sub> &nbsp;&ne;&nbsp; 0 (Dynamic Steady State)
+      </span>
+      <br/>&bull; <b style="color: #AB47BC;">Proof of Dynamic Nature (Haber's Deuterium Experiment):</b> In Haber's synthesis, establishing equilibrium with N<sub>2</sub> and H<sub>2</sub>, then introducing heavy hydrogen D<sub>2</sub>, results in the formation of deuterated ammonia molecules (NH<sub>2</sub>D, NHD<sub>2</sub>, ND<sub>3</sub>) without changing total ammonia concentration. This conclusively proves forward and reverse reactions proceed continuously.
+    </p>
+  </div>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(iii) Chemical Equilibria & Dynamic Nature</h3>
-  <p>In a reversible chemical reaction aA + bB ⇋ cC + dD, forward reaction rate (r<sub>f</sub>) decreases over time as reactants consume, while reverse reaction rate (r<sub>r</sub>) increases as products build up. When <b>r<sub>f</sub> = r<sub>r</sub></b>, chemical equilibrium is established:<br>
-  <b>Key Features of Chemical Equilibrium:</b><br>
-  1. Dynamic Nature: Reactions do NOT stop! Both forward and reverse processes continue at identical rates.<br>
-  2. Can be attained from either direction (reactants or products).<br>
-  3. Macroscopic properties (concentration, color, pressure, density) remain constant.<br>
-  4. Catalyst speeds up attainment of equilibrium equally in both directions, but does NOT alter equilibrium position or K<sub>c</sub>!</p>
+  <!-- SECTION 2 -->
+  <h2 style="color: #AB47BC; border-bottom: 2px solid #AB47BC; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    2. Law of Mass Action, Equilibrium Constant (Kc, Kp), Factors Affecting Equilibrium
+  </h2>
 
-
-  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
-  <h2 style="color: #AB47BC; margin-top: 30px; font-size: 20px; font-weight: bold;">2. Law of Mass Action, Equilibrium Constant (Kc, Kp), Factors Affecting Equilibrium</h2>
-
-  <!-- 3D IMAGE 2 -->
+  <!-- PRESERVED IMAGE 2 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(171, 71, 188, 0.35); border: 1.5px solid #AB47BC;" alt="3D Equilibrium Constant Reaction Quotient and Le Chatelier Shift" />
     <p style="color: #AB47BC; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 6.2: 3D Equilibrium Constant Expression, K<sub>p</sub> vs K<sub>c</sub> Derivations and Q<sub>c</sub> Prediction Vectors</p>
   </div>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(i) Law of Mass Action & Expression for K<sub>c</sub></h3>
-  <p>Formulated by C.M. Guldberg and P. Waage (1864). For a general reversible reaction:<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">a A + b B ⇋ c C + d D</span>
-  The molar equilibrium constant expression K<sub>c</sub> is given by:<br>
-  <span style="color: #FFF; font-weight: bold; display: block; text-align: center; margin: 8px 0;">K<sub>c</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[C]<sup>c</sup> [D]<sup>d</sup></span><span style="display:block; padding:0 4px;">[A]<sup>a</sup> [B]<sup>b</sup></span></span></span>
-  where [A], [B], [C], [D] are equilibrium molar concentrations in mol L<sup>-1</sup>.</p>
+  
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(ii) Equilibrium Constant for Gaseous Systems (K<sub>p</sub>)</h3>
-  <p>For reactions involving gases, equilibrium constant is expressed in terms of partial pressures (K<sub>p</sub>):<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">K<sub>p</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">(p<sub>C</sub>)<sup>c</sup> (p<sub>D</sub>)<sup>d</sup></span><span style="display:block; padding:0 4px;">(p<sub>A</sub>)<sup>a</sup> (p<sub>B</sub>)<sup>b</sup></span></span></span>
-  <b>Derivation of Relation Between K<sub>p</sub> and K<sub>c</sub>:</b><br>
-  For ideal gases p<sub>i</sub> = (n<sub>i</sub> / V) R T = [C<sub>i</sub>] R T. Substituting into K<sub>p</sub> expression yields:<br>
-  <span style="color: #FFF; font-weight: bold; display: block; text-align: center; margin: 8px 0;">mathbf{K_p = K_c (R T){Δn_g}}</span>
-  where <b style='color: #AB47BC;'>Δn<sub>g</sub> = (Moles of Gaseous Products) - (Moles of Gaseous Reactants)</b>.<br>
-  • If Δn<sub>g</sub> = 0 ⟶ K<sub>p</sub> = K<sub>c</sub> (e.g. H<sub>2</sub> + I<sub>2</sub> ⇋ 2HI).<br>
-  • If Δn<sub>g</sub> > 0 ⟶ K<sub>p</sub> > K<sub>c</sub> (e.g. PCl<sub>5</sub> ⇋ PCl<sub>3</sub> + Cl<sub>2</sub>).<br>
-  • If Δn<sub>g</sub> < 0 ⟶ K<sub>p</sub> < K<sub>c</sub> (e.g. N<sub>2</sub> + 3H<sub>2</sub> ⇋ 2NH<sub>3</sub>).</p>
+  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 16.5px;">(i) Law of Mass Action &amp; Expression for K<sub>c</sub></h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Formulated by Cato Maximilian Guldberg and Peter Waage (1864): <i>"The rate of a chemical reaction at any instant is directly proportional to the product of active masses (molar concentrations) of reacting substances raised to powers equal to their stoichiometric coefficients."</i>
+      <br/>For: aA + bB &hArr; cC + dD:
+      <br/>Rate<sub>f</sub> = k<sub>f</sub> [A]<sup>a</sup> [B]<sup>b</sup> &nbsp;|&nbsp; Rate<sub>b</sub> = k<sub>b</sub> [C]<sup>c</sup> [D]<sup>d</sup>
+      <br/>At equilibrium, Rate<sub>f</sub> = Rate<sub>b</sub> &rArr; k<sub>f</sub> [A]<sup>a</sup> [B]<sup>b</sup> = k<sub>b</sub> [C]<sup>c</sup> [D]<sup>d</sup>:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        K<sub>c</sub> = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">k<sub>f</sub></span><span style="padding:0 2px;">k<sub>b</sub></span></span> = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">[C]<sup>c</sup> [D]<sup>d</sup></span><span style="padding:0 2px;">[A]<sup>a</sup> [B]<sup>b</sup></span></span>
+      </span>
+    </p>
+  </div>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(iii) Reaction Quotient (Q<sub>c</sub>) & Predicting Direction</h3>
-  <p>The Reaction Quotient Q<sub>c</sub> has identical mathematical expression as K<sub>c</sub>, but calculated using arbitrary concentrations at any instant:<br>
-  • <b>Q<sub>c</sub> < K<sub>c</sub>:</b> Reaction proceeds in <b>FORWARD DIRECTION</b> (more reactants convert to products).<br>
-  • <b>Q<sub>c</sub> > K<sub>c</sub>:</b> Reaction proceeds in <b>REVERSE DIRECTION</b> (products convert back to reactants).<br>
-  • <b>Q<sub>c</sub> = K<sub>c</sub>:</b> Reaction is at <b>EQUILIBRIUM</b>.</p>
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(ii) Equilibrium Constant for Gaseous Systems (K<sub>p</sub>) &amp; Relation K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n<sub>g</sub></sup></h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      For reactions involving ideal gases, partial pressures p<sub>i</sub> are employed:
+      <br/><b>K<sub>p</sub> = (p<sub>C</sub><sup>c</sup> &times; p<sub>D</sub><sup>d</sup>) / (p<sub>A</sub><sup>a</sup> &times; p<sub>B</sub><sup>b</sup>)</b>.
+      <br/>Using ideal gas law: p<sub>i</sub> = (n<sub>i</sub> / V) RT = c<sub>i</sub> RT = [i] RT.
+      <br/>Substituting into K<sub>p</sub> expression:
+      <br/>K<sub>p</sub> = ([C]RT)<sup>c</sup> ([D]RT)<sup>d</sup> / [([A]RT)<sup>a</sup> ([B]RT)<sup>b</sup>] = K<sub>c</sub> (RT)<sup>(c + d) - (a + b)</sup>.
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        K<sub>p</sub> = K<sub>c</sub> (RT)<sup>&Delta;n<sub>g</sub></sup>
+      </span>
+      <br/>&bull; If &Delta;n<sub>g</sub> = 0 &rArr; K<sub>p</sub> = K<sub>c</sub> (e.g., H<sub>2(g)</sub> + I<sub>2(g)</sub> &hArr; 2HI<sub>(g)</sub>).
+      <br/>&bull; If &Delta;n<sub>g</sub> &gt; 0 &rArr; K<sub>p</sub> &gt; K<sub>c</sub> (e.g., PCl<sub>5(g)</sub> &hArr; PCl<sub>3(g)</sub> + Cl<sub>2(g)</sub>).
+      <br/>&bull; If &Delta;n<sub>g</sub> &lt; 0 &rArr; K<sub>p</sub> &lt; K<sub>c</sub> (e.g., N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub>).
+    </p>
+  </div>
+
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(iii) Reaction Quotient (Q<sub>c</sub>) &amp; Predicting Direction</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The <b>Reaction Quotient (Q<sub>c</sub>)</b> has the same mathematical form as K<sub>c</sub>, but evaluates arbitrary concentrations at any given point during the reaction:
+      <br/>1. <b>Q<sub>c</sub> &lt; K<sub>c</sub>:</b> Reaction proceeds in <b>FORWARD direction</b> (reactants &rarr; products).
+      <br/>2. <b>Q<sub>c</sub> = K<sub>c</sub>:</b> System is at <b>DYNAMIC EQUILIBRIUM</b>.
+      <br/>3. <b>Q<sub>c</sub> &gt; K<sub>c</sub>:</b> Reaction proceeds in <b>REVERSE direction</b> (products &rarr; reactants).
+    </p>
+  </div>
+
+  <!-- SECTION 3 -->
+  <h2 style="color: #AB47BC; border-bottom: 2px solid #AB47BC; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    3. Le Chatelier's Principle
+  </h2>
+
+  <!-- NEW STANDALONE SVG CARD FOR LE CHATELIER -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title Banner -->
+      <text x="250" y="28" fill="#AB47BC" font-size="14" font-weight="bold" text-anchor="middle">
+        Le Chatelier's Principle &mdash; Stress vs Equilibrium Response
+      </text>
+
+      <!-- Center Equilibrium Reaction: N2 + 3H2 <=> 2NH3 + heat -->
+      <rect x="80" y="45" width="340" height="38" rx="6" fill="rgba(171, 71, 188, 0.2)" stroke="#AB47BC" stroke-width="1.5"/>
+      <text x="250" y="69" fill="#FFFFFF" font-size="13.5" font-weight="bold" text-anchor="middle">
+        N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub> &nbsp;|&nbsp; &Delta;H = -92.4 kJ (Exo)
+      </text>
+
+      <!-- Stress & Response Columns -->
+      <!-- Stress 1: Increase Pressure -->
+      <g transform="translate(40, 100)">
+        <rect width="200" height="70" rx="6" fill="rgba(38, 198, 218, 0.15)" stroke="#26C6DA" stroke-width="1.2"/>
+        <text x="100" y="22" fill="#26C6DA" font-size="11.5" font-weight="bold" text-anchor="middle">&uarr; Pressure / &darr; Volume</text>
+        <text x="100" y="42" fill="#FFFFFF" font-size="11" text-anchor="middle">Shifts to FEWER gas moles</text>
+        <text x="100" y="58" fill="#69F0AE" font-size="11" font-weight="bold" text-anchor="middle">&rarr; FORWARD (4 mol &rarr; 2 mol)</text>
+      </g>
+
+      <!-- Stress 2: Increase Temperature -->
+      <g transform="translate(260, 100)">
+        <rect width="200" height="70" rx="6" fill="rgba(244, 67, 54, 0.15)" stroke="#F44336" stroke-width="1.2"/>
+        <text x="100" y="22" fill="#F44336" font-size="11.5" font-weight="bold" text-anchor="middle">&uarr; Temperature (Heat Added)</text>
+        <text x="100" y="42" fill="#FFFFFF" font-size="11" text-anchor="middle">Favors ENDOTHERMIC step</text>
+        <text x="100" y="58" fill="#FF8A65" font-size="11" font-weight="bold" text-anchor="middle">&larr; REVERSE (Absorbs Heat)</text>
+      </g>
+
+      <!-- Stress 3: Add Reactant / Remove Product -->
+      <g transform="translate(40, 185)">
+        <rect width="200" height="70" rx="6" fill="rgba(102, 187, 106, 0.15)" stroke="#66BB6A" stroke-width="1.2"/>
+        <text x="100" y="22" fill="#66BB6A" font-size="11.5" font-weight="bold" text-anchor="middle">&uarr; [N<sub>2</sub>] or &darr; [NH<sub>3</sub>]</text>
+        <text x="100" y="42" fill="#FFFFFF" font-size="11" text-anchor="middle">Q<sub>c</sub> &lt; K<sub>c</sub> (System consumes stress)</text>
+        <text x="100" y="58" fill="#66BB6A" font-size="11" font-weight="bold" text-anchor="middle">&rarr; FORWARD Shift</text>
+      </g>
+
+      <!-- Stress 4: Addition of Catalyst -->
+      <g transform="translate(260, 185)">
+        <rect width="200" height="70" rx="6" fill="rgba(253, 200, 48, 0.15)" stroke="#FDC830" stroke-width="1.2"/>
+        <text x="100" y="22" fill="#FDC830" font-size="11.5" font-weight="bold" text-anchor="middle">Catalyst Addition</text>
+        <text x="100" y="42" fill="#FFFFFF" font-size="11" text-anchor="middle">Lowers E<sub>a</sub> equally for both</text>
+        <text x="100" y="58" fill="#FDC830" font-size="11" font-weight="bold" text-anchor="middle">NO SHIFT in Equilibrium Position</text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 6.4: Le Chatelier's Principle &mdash; Dynamic Equilibrium Shifts Under Concentration, Pressure, Temperature &amp; Catalyst Perturbations
+  </div>
+</div>
 
 
-  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
-  <h2 style="color: #AB47BC; margin-top: 30px; font-size: 20px; font-weight: bold;">3. Le Chatelier's Principle</h2>
+  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 16.5px;">(i) Statement of Le Chatelier's Principle &amp; Concentration Effects</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Henri Louis Le Chatelier (1884): <i>"If a system in chemical equilibrium is subjected to a disturbance in temperature, pressure, or concentration, the equilibrium shifts in such a direction so as to counteract and undo the applied disturbance."</i>
+      <br/>&bull; <b style="color: #AB47BC;">Concentration Effects:</b>
+      <br/>- Adding reactant or removing product: Shifts <b>FORWARD</b> (Q &lt; K).
+      <br/>- Adding product or removing reactant: Shifts <b>REVERSE</b> (Q &gt; K).
+    </p>
+  </div>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(i) Statement of Le Chatelier's Principle & Concentration Effects</h3>
-  <p><b>Le Chatelier's Principle (1884):</b> If a system at equilibrium is subjected to a change in concentration, pressure, temperature, or volume, the system adjusts itself in a direction that tends to undo or counteract the effect of that change.</p>
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(ii) Effect of Pressure and Volume Changes</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #AB47BC;">Increasing Pressure (or Decreasing Volume):</b> Equilibrium shifts toward the side with <b>FEWER moles of gas</b> to reduce total gas pressure.
+      <br/>&bull; In Haber synthesis: N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub> (&Delta;n<sub>g</sub> = 2 - 4 = -2). High pressure (200 atm) shifts reaction <b>forward</b>, maximizing ammonia yield.
+      <br/>&bull; In PCl<sub>5(g)</sub> &hArr; PCl<sub>3(g)</sub> + Cl<sub>2(g)</sub> (&Delta;n<sub>g</sub> = +1): High pressure shifts reaction <b>backward</b>.
+      <br/>&bull; If &Delta;n<sub>g</sub> = 0 (e.g., H<sub>2</sub> + I<sub>2</sub> &hArr; 2HI): Pressure has <b>NO effect</b> on equilibrium position.
+    </li>
+  </ul>
 
-  <div style="background: rgba(171, 71, 188, 0.12); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #AB47BC; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Summary of Le Chatelier Perturbation Rules</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li>• <b>Adding Reactant / Removing Product:</b> Shifts reaction <b>FORWARD</b>.</li>
-      <li>• <b>Adding Product / Removing Reactant:</b> Shifts reaction <b>BACKWARD</b>.</li>
-      <li>• <b>Increasing External Pressure:</b> Shifts reaction toward side with <b>FEWER GASEOUS MOLES</b>.</li>
-      <li>• <b>Increasing Temperature:</b> Shifts equilibrium in <b>ENDOTHERMIC DIRECTION</b> (absorbs heat).</li>
-      <li>• <b>Decreasing Temperature:</b> Shifts equilibrium in <b>EXOTHERMIC DIRECTION</b> (releases heat).</li>
-      <li>• <b>Inert Gas Addition at Constant Volume:</b> ZERO effect on equilibrium position!</li>
-      <li>• <b>Catalyst Addition:</b> Accelerates forward & reverse rates equally; zero shift in equilibrium!</li>
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(iii) Effect of Temperature, Catalyst &amp; Inert Gas Addition</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #AB47BC;">Temperature Effect (Van't Hoff Equation):</b>
+        <br/>- <i>Exothermic Reactions (&Delta;H &lt; 0):</i> Increasing temperature shifts equilibrium in <b>reverse (endothermic) direction</b>; K<sub>eq</sub> decreases.
+        <br/>- <i>Endothermic Reactions (&Delta;H &gt; 0):</i> Increasing temperature shifts equilibrium in <b>forward direction</b>; K<sub>eq</sub> increases.
+        <br/><b>log<sub>10</sub>(K<sub>2</sub> / K<sub>1</sub>) = [&Delta;H&deg; / 2.303 R] &times; [(T<sub>2</sub> - T<sub>1</sub>) / (T<sub>1</sub> T<sub>2</sub>)]</b>.
+      </li>
+      <li><b style="color: #AB47BC;">Effect of Catalyst:</b> Lowers activation energy E<sub>a</sub> equally for both forward and reverse paths. <b>Does not shift equilibrium or change K<sub>eq</sub></b>; merely accelerates attainment of equilibrium.</li>
+      <li><b style="color: #AB47BC;">Inert Gas Addition:</b>
+        <br/>- <i>At Constant Volume:</i> Total pressure rises, but partial pressures and concentrations of reacting gases remain unchanged &rArr; <b>NO SHIFT</b>.
+        <br/>- <i>At Constant Pressure:</i> Total volume expands to maintain p, lowering partial pressures &rArr; Shifts toward <b>GREATER number of gaseous moles</b> (if &Delta;n<sub>g</sub> &gt; 0, shifts forward; if &Delta;n<sub>g</sub> &lt; 0, shifts backward).
+      </li>
     </ul>
   </div>
 
+  <!-- SECTION 4 -->
+  <h2 style="color: #AB47BC; border-bottom: 2px solid #AB47BC; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    4. Ionic Equilibrium - Ionization of Acids and Bases, Strong and Weak Electrolytes, Degree of Ionization
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 4 WORD-FOR-WORD -->
-  <h2 style="color: #AB47BC; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Ionic Equilibrium - Ionization of Acids and Bases, Strong and Weak Electrolytes, Degree of Ionization</h2>
-
-  <!-- 3D IMAGE 3 -->
+  <!-- PRESERVED IMAGE 3 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,/9j/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAImAiYDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAAAAECAwQFBgf/xABKEAABBAEDAgIHBAcGBQIEBwABAAIDBBEFEiETMUFRBhQiMmFxgUKRobEVIzVSssHRJDM0YuHwFiVTcoJDY5KTovEHRFRzdYPC/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAKhEAAgICAgEEAgICAwEAAAAAAAECEQMhEjFBBBMiURRhMnEjQjOR4fD/2gAMAwEAAhEDEQA/APN0ISrsaBCEIAQlQgBCEqFBCEKgEISoAQhCAEISqgRKhCFBCVCARCVCAEIQqAQhCAEISoURCVCARCVCARCVCARCVCARCVCARCVCARCVCEEQhCAEIQgEQlQgEQhCgBIlQgEQlSIAQhChASJUIBEIQgEQlQgESJUKEEQhCAEiVCARCEKAVCVCoBIlQgBCVCFBCEKgEqEIAQhCoBCVCFBCEIASoQgBCEKgEISoUEIQgBCEIAQhLhAIhLhGEAiEqFSiISoQgiEqEAiEqEAiEqFAIhLhCARCEIASJcIQCISoQCJEqEIIhKhAIhCFACRKhAIhCEICRKhQCISpEAiEqRAIhKhQCISpEIBQhCAVCEIASp0UUkr9kUb3uxnDWkn8EsUMs7tsMT5HAZIY0uOPoqUYhPfBNHI2OSGRj3dmuYQT8gnSVrETd0teaNvbL4yB+KAjQnvikjDd8b27xlu5pG4eY808U7TnujFWcvZjc0Ruy3PbIxwgIUKY1LTXbTVnDtpdgxuzgePbso2se6N0jWOLGY3ODSQM+ZQCIUprWAXB0EoLG7nAsPsjzPkE0xvEXVLHdPO3ftO3PlnzVAxClkrzxRtklglYx3uucwgH6lENexOCYIJZAOCWMLsfchSNCndTttc1rqlgOdnaDE7Jx3xwomRyPa9zI3uDBlxDSQ0eZ8kA1KphSuFocKdkgjIIidgj7k2GCefd0IJZNvvbGF2PnhUaI0KSKCackQQySFvcMYXEfcl9WsdXperzdQDJZ0zux54QtkSE5jHyNc5jHuawZcWtJDR8fJIgESoSqgTCEqfFDLO4tgiklcBkhjS44+igI0KV1edsrYnwStkd7rHMIcfkPFLNVsVwDPXmiB4BfGWj8QhLRClUkVeeZpdDXlkaDguYwuA+oSy1rELpWywSNMLtsns5DD5E9gljkiJCcY5BE2UxvEbjhry04J8gU+WrZhax0taZgfw0ujI3fLI5VLaIkisihe//AENr/wCS7+iSOlclaHx1LD2nsWxOIP4KE5L7K6FYFK2Wuc2pYIaSHEROOCO4PCgQqaYiFJ0pOl1em/p5279p258s+aIopJpBHDE+R5+yxpcfuCotEaFKIJzI+MQSl7AS5oYctA7kjwTem/pCXY7pk4D8HBPllQWhiFYFG4XOaKlgubjIETsjPbwUfQn3Pb0JcxjLxsOWjzPkhOSI0J7YpXROlbE8xtOHPDTtB+JTVSiYQhCgEQlQqBEIQVAIhPkjkiIEkb2EjI3NIyPNSso3JWh0dOw9rhkFsTiD+CloFdIpjXna5jXQSh0nuAsOXeHHmkEEx6mIZD0v7zDD7Hz8vqlohEhSmvYFj1cwSib/AKew7vu7pssUsEhjnifG8d2vaWkfQqWgMQrIoXXNDm0rJaRkEQuII+5RPrzxtc6SCVjWu2uLmEAHyPxTkhREhTtq2HdPbXld1c9PDCd+O+PP6Imp24GdSerPGzONz43NH3kKWgQIUj69hkLZn15WxO92R0ZDT9eyeylbkiEsdSw+MjIe2JxB+uE5IlFdCkMMoh6xif0i7bv2nbnyz2ykfFKxjHvje1kgyxzmkB3yPiloDEiVCoESJUKARCEIQVCEqFOr9Dmy0aVzWIq755GvZBG1jS4kFwLzgfBW9NqHTfTHVoIX9JpqyPieTtDQ7BBz4Y/kucOuWo9Jq0KbpKrYC5z3xSEOlLvPCsf8Szl7JZazJJhTdUfIXnLwftH4hWzDTNqd88NLRq+pXm3rc19ksMrHF4bGCAfa8eVevusVotfs39QZaoua6KOs1xeY3u90EfZIXH1dZfDp1SpJXbL6pZE8UhcQW85LfkVM30gf6zqr5KrHw6mD1Id5AYfAg+YSxTNnU6NO3R0N9vVoab2Uow1kkbnF/PcYWjZe4av6SuFw0z0q/wCv59jjvxyuK1HVH346LXRNZ6nA2EEOJ34OcnyWifSfqXtQnn02KaO82Nr4nSEABo8wlimamg3JItbtTSaodVbBQe8P9r94Et5+X4p12hFT9G9ckqc0rfQnruHbaT2+h4WJFrkFeeaSnpMNYTVn13NZK4g7vtc+I8lHFrliP0dm0V0bXwyOBY8k5j5BIA8RkfigpnU6m4tv68Ae+lR/ksWlOyv6I1JpY+rHFqwe6P8AeAb2VeT0lnfrEl/1WIslgEEsDiS17QMd1FPr8mKken1YaMNWXrMjYS/L/Mk90FM3tQmt3Kep29N1SPUKcsZM1WYEPrt8w34f7ysP0avW62sU68FmWOGawzqMa7DX+HIU0/pGx8Nr1XS61WxcaWzzsc4lwPfAPAysilZNO/XtNYHmCQPDScZx4KmktHVaZcuWfT2SGe1LJHFJOI2OcSGDBHH0TdNo06ui686rqsN0upkObHG5u3nucrFp6y+rr0mrCu1zpHSHplxwNw8/qoaGpuo1dQgbEHi7D0SS7GznOfihOLOp1maSOKkY/SI6eRRjIr+37Zx34457LN1K9a0jQ9FZps764lgNiRzDgyPz4+agl9IallkAuaFWsPhibEHumeDgD4KGtrjGUIqd7TYLsddxdB1HFpjyc447j4IKZ1BjczU9XkqysqTWNOilMhdsax5PLifBU9V1Kxo8WiOt2RbvwvdK6ZuSHQu427vtZ/ksB2vWpJNSknjY9+oRCI8kCMDtgKGzqT7WkVKEsTSahd05sndtP2ceSBRZt+kTa2j6e+nRk3N1Ob1hxbxiHu1v3lc9dfUkuPdQilirnG1kjtzhxzz81Nqmou1I1S+FrPVoGwgAk7gPEqG7PHauPmhqx1WOAxFH7owFTUVRChCFTQLpPQdxbc1IifoEUX/refY5HtceXdc2tDRtV/RNieQ1WWWTwmFzHOLRgkZ7fJRmMsXKDSOrfK6Sr6PvN8aoW6kA64ONvkznn/7KTVH2q1LX7Gpaky3SkDooK7XGQxSE+yD+6QuZk9Ij/Y4qmnV6tWrYFjoxuJ6jx5uKjj1t4l1XqVmSQ6nkviLyAx2cgg+YUPL7Mv8A7+zqX2JtIlomGV8dCpUh2xMOBPNLxz5+Lj8lPGyjp8npHFYYDSktxRyD90SN5P0Lsrnh6UQspUIH6c23JSjb05Z3kYkHjtHBA4xnyWc7W55dP1GrYYJX6hM2aSUnBBB7AIFhk+zobjP+HtO0SO7GZmVNRlcQBne3uCPoQU3VbN6fTNQt6dqsep0JHh8jJM9WpzkEA9sefwWPJ6UXnVtMY1jBNp79zJicl/GMEfLhJa9IGPpWq9HS69N93ixIx7nFwznAB7IVY56tGm7V9V/4JZb/AEhZ9Y9fLDL1Du27c4z5K0yaRvotozv+IDpZc2QkkOPV9r4eX81zH6TcdAbpXRG0WOv1N3PbGMK7Fr1b9FVKNzRoLbaocGPfK5p5OTwENPE/C8l52qX6nobHZq35RM7UpN0zXcycZyc9890a7pTtR1WCau+pXlsUo7EwlkETS48HHxKz4NfrxUjTk0WtNALDp443yO2sJ8PiB8Vnanesardfatlpe7AAaMNa0dgB5BCxxy5X0bUjTD6BzQuc1xj1TaSx2WnDfA+IS05pdN9CJLlGR0Vmxd6T5WcODQMgA+CpabrUNPSXada0uG5CZut7cjm4OMeCfBr8UJswfoqu7TrBa41C92GOAxua7vlA4y2q8nQUrJntejl+24Ge/FNUneeDI3s0lEOmtfoNXQS3+0wPitPHwdKWn/6VzF/W5reoU7LIY4IqW31eCPO1gBz3+OO6tx+lVmP0jm1gVmEyxdLo7zgDjHOPMZQw8U/B0cdufUP+Jn07zabzbjZHO+TYGhvs4z4Zxj6qvqOp/ovX9LgvS9eZlfoahLjAka/t88d1ydfU5ItIv6e6JrxdkbI+Qu5aWnPb4p+qaq/U2UzPA0T1ohE6UOOZQO2R5/1Qqwu99f8Ahr6+a2ix09AaXy145fWLew4L8n2W5+Df5Lnbb677czqcb465cTGx5y5rfIlW9V1X9Ja3+kpasYBLN0JcS1waAME/HCp2ZWT25ZooGQMkeXNiZ7rB5BVHbHFxWyNIlQqdhEJUiEBNf7p+SckIyCFGDofTQE3NO/8A4+L+a2rU0kWjaKGekZ0v+xNPTw87/jx9yxbHpLTtxwi5oFaeSKFsLZHTOBwBx2TD6R1JalSC7oVe0asIiY98zgSB8l43CVJV0atGzpEnrWl6Pqk5L/0U6yZXE88N3N/EhGuAUdN1ezHwNVtQdM+bS0PP4krm62ty1tH1DTYYGCK6/dncf1Y8QPPgYRf1ue/pen0ZY2htEcPDiS/wGfLAU9qXL9C1R1V7UqtL0w1eO1PJVfarxxx22N3GE7R+f8lh+lLdRFXTxesV70Aa7oXoyS6UeIcfgmyelMsup3bMtGGSvdY1k1V7iWnaMAg9wVR1bWDqEFapBUip06u4xwscXcnuST3WseOUWtBs2dE1fUnejmtuN+wTWhi6J3n9Xzjjy4TqDRqfobbfqepCAv1BrnTzAv3EMGAcc/8A2WDR1N1PTdRpCFrxeY1peXY2YOe3igao5ugSaT0W7X2BP1N3IIGMYVeJ26+yWdtTjir3PRGKvZbZjYJw2VgID+D2BWS4uu61RqWPSP8ASdea60PrEOAaASRnPHwWVU9I5ap0giqx36LEgbl5/WbvPjjCitaxUka19LR4KVpsjZGzxyuc4EHPY8LCxysNo6LTtTval6YXtLvSukozCaJ0DvcY1ucYHhjCs6ZDqU+iej0ematHTwH72OkIMoD/AAb9rAz96wZ/SwvFievpVWvqFlhZLbY4kkHuQ3sCVnP1ucV9JjhjbG/SySx4cTvyc8jwUeKT6VF5I6aK1U13V9a0ON3Tr3ZOrWcW42ysxuOPjglY+talp1jW5obEU0lGnAa1RkT9u1zeA4/DOfwVWDXjB6UfpuKnG07y8wB525IwecfHKqVbkMNqzNPShsiZjwGSE4YXfaHxC6RxtOzLdlEdkqB2QvQZBIlQgEQhCgFQhCoBKhCA1NMrVHaZduWq0th0MkbGsjkLPe3ZPAPkp7mhEyufVeyCAQRzPbakDTFvzhpOOe34hVKOpPpaXcgglmisTSRua+M4wG7sgn6hRsu507UIZ3SSTWnRkPJz7pJOSfmhNjzo9oVzKXwB7YxK6EyfrGMPZxHlyD54VmzoLo7r4YLMDoo4GTSTSSYawEDuceJPHmE6TU6TxPba2f1yer6u6MgdNp2hpdnOTwO2O6fLqlCfrRy+sMjtVoWSOawExyR4wQM+0Dj4d0Jsq/oS0JJ2ySVomQNY50r5cMLX+64HxBVZ+n2Gaq3TpA0TOkbHkHI9rGCD4jnKu3dUrz0rNWFkoYYoIYS/GSIySS7yJymzajC70ig1GNr+nG+FxDhz7IaD+RQuyZ+mxW4bz9NrTPdXsshjbGC7LMHLiPMkZ+qdJpFSCWpHdkkqvkpmWRr2nO/2/u7DjxUFuX1GG9Ra9++S0yaORh9l0eHYOfiHBV9QttuRUWjeXQVxE8v8XbiePvCDYWYInaXWuQDHtuglwMAuHIdjwy0/eFrUNKpTR6VFLTtSSX2kunjkwIjvLc4xjAAz3VCxivoFWu7HUnndZI8mbdrfv5Knr66YI9OgDpzWhidFZiDsNkDnOzgZ74P3hUbKzNHsys3RvgO4vELHSYfMGk5LR49k+fTBJ6qa/ThZ6lHPPJK/DQSSMk/HjgK3X1uOLT4IGWbkDqrXMZ0o2HqjJLSSfdPPPdNg1qGJjYg6aJppxwOkYxri17CTkA8EcoNlNmkWDPJFLLWh2Frd8kuGvLhlu0jOcjnPZPi0O5JvD3QQvbM6BrZZQ0vkb3a3w/IK1HrNcSTvfNb6pfGWT9Nhe5jRgs8mjPPGfqpotbo+t25ZPWjDNZdK+u6Nj45mnsCD7h+Iyli2ZcWk2Zawma6EOe1z44XSYkka3OS0ePY/PBVEcrci1tg06GET2a8kEbowyJjHNeCTj2jyO+CsNowAFTSsVCVCpoEIQgOip6bp8p0ms+nbfLfiDnTxy8RkuIztxjAxk8rP/Qlpza5jfXebTi2FokG54BILseAG3JKba1Wd9KnVq2bMUcVfpSsDy1rnbiewPPBCfX1SKCfSpOm94qQOhlbwMhxdnb9HfesnH5okpaC6fUK8MtqA15w/bNDJuDi0ctHHftwfDlRV9EtWI2Ojlq5lc5sDTLgzlvfYMcj54yrVLVNP06ahFXFmWtBM+aWR7A17i5m0ANzjgfHlNq6lp0QoSS+tGTTXO6LWsGJm7i5u459k5PPdNi5FaPRLctaKZslfM0Tpo4jLiR7W5zhvmMFQ6ZDFILNqwzqQ1IepsJwHuJDWg/DJyfkrcOqwtt6dNI2Q+rVpIpMAcudv7c9vaCg0dvVhu0AR1LMAEWftPY4ODfqAQPihblWy5FoMktvSujUsyVbMUL5pGtJALj7XOOOPuUM1WhVrvsiZsskVtzPV3NOHMH2T9PFIdSZ69pczTMI6kULJG5xksOTgZVKRrruoPbXYS6xK7YD39onH5oRKXktWqEUHpC2iHOMD5ow055Mb8EfXBU9unQlj1D1GKeGWg/2mvk6glZv2ZHAIOccfFRahdhd6SNsxnfBXkia1zftNjDRkfPaVJZ1GlB647TRYkluSh73ztDQxofv2gAnOTjn4IPloim0O3EPfrve2RkUsbJMuhc44AcPDnjjKWfQrsRa1joJ3mf1dzIZNxZJ4NP3H7lZdqunxzWbFdtkyXZ45JWvaAImh4e4Ag+0cjjtwkr63FWsWJmRvcX6i201pwMsG/IPkfaS2W5lcaFbfPBFFLVmE0johJHNuY14GS1xxwcBQxUo2uuunljkjqw7t0L8tc92AwA/M8/Iq/U1PTtOfDHVNmWEWHTyPkYGuHsOa1oAP+bkrK6kbNHjqsf8ArJZupNge6GjDR8e7j9yWxcmXnaXCPR5tsOf64AJ3szwIS4sBx55GfkVEdGtNqGcug3CITmDqfrRGeztv8u6vu1+u67LE6rGNOfAawIiHWEe3Dec+YBwq1m7p9mNtuRtg3mwMjEYAEYewAB+7OcYHu47pZE5IjsaFeh9n9TJKHsjfDHKHPjc73Q4eGUn6DuOniihkqzGV7ow6OYFrXtBJaT4HA+Ss2NS04an+la8dl9p9hs5jfhrI+cuGR72fDthXaepx2tZqRx2rcsW+SRzJY2MDf1bgANvc8nlLYcplCloDp7kEc1uv0Jo3uZNFJuDi0ctHHcHGfhyoYNDtzxMfHJWzKXdFhlw6fb3LB4jy7ZVilqtCk6hDD6y+tCZXySOYA8mRm3huccDHjylr6pp8Z0+Z/rJm00ObEwMG2UbiWEnPs9+e6WxczOn06WvQguSywBs4Do4xJ+sIJIzt8gQqit6haZaiotYHboK4jfkYy7c48fDlVVUdI3WxMISoVNCIQhAW9HrRXdZp1Zt3Tmlax204OD8VqV9OrSarWrT6LbqMkMntTyuIeGsceOB44KytKtR0dYqXJWuMcMoe4N7kDyV2ld06nqUNtlm/OGF+5ssYGA5jhx7R8SF58nK9AqxaPafRbY3QBxhM7YTJ+tdGO7g3y4J88BTO0G0xrXSzVWEbDJGZhvia/GHOGOByPPGQrg15p0uKL1m1BNFV9X6cUbC15AwDvPIGO4+5VdUvabckkuiOybkoj/VnAjjc3AJBBy7IHAxxlROY0Pu+j0kV2/HBarGCm8B0ksobjOcA/HjGPiFVm0S5BVfM8wF8cbZZIBJmWNhxhzm/UfLKs6pqlOyzVBX65N+eOcb2AbMbsjv8RhS3NXpSuu3Ym2PXLtcQOjc0bIyQ0OcHZyeG8DHiicxoq3tBt0YJ5JZarzXc0TMil3Oj3e6SMdioIqzG6O+y6PqTTzCvA390gAud8TyAPmVZvatXsTa0+NsoF8x9LIHG1wJzz8EypKTorDHgy6fbFktPixwAz9HNGfmrcq2TQ2xo0tTD7diARNk6UzoXdUwvxna4DHPB+HBSW60B0erdrgDEj60uBjc5vLXY8CWnn5K5rusxahA9sNm24SzCQwyRxtZH34yOXHJ4PHCq2ner+jlSq4/rZ53Wi391m0Nbn54J+SJy1Y0Xqenac6HSI5aVuaXUGkvkilx0zvLchu0g8DPdUBoc8pl6Fiq8tdII4+qBJKGE5Ib9PHGfBJY1ec6ZRp1LFmFsMLmTNa8ta8l5PgeeCtHRdZoUKdZjjPE9jZGzMiiaRMXA4cXE54yBj4LPzWxplJmiTWWwuhEFdjajJ5ZJp/ZIc4jdnHHyWSRgkZBwccLam1as/S5KwbJvdp8NYHaMb2Sbj49sLEXSHLyRghCFsgiEqRACEIUAJUIVAIQlVAiVCEKCMJUIBMJUqFQJhLhCEKCMJUIAQhKqBMIwlQgDCVCEKCEIVABCUd0IBEJUIBEYSoQBhGEqEAiMJUIKEARhKhAJhGEqEAmEYSoQUJhJhOQgEwkwlQgEwjCVCARKhDe6ARIlQoBEqEIBruxPwXQ29I00XbWnVfWWW4Ieqx8j2uZJhge5uMAjjOPkufdy0j4Lfv6rpvrlvUKb7MtqxD0mMfEGNiywMc7OTk4zjjxXHJd6BnP0i4ymbJEXEQmMXUHUEZ7OLe+E6zod6tBLLKIT0Q0yMZKHPa12Nri3yOQrMup0X9e8HT+uzU/VugWDY1xYGF27PbAzjHdLLrFc3NUnjEh9ZgiZEC37TCwnPkPZKxymNFWxoV6uwueIS5r2MkY2UOdCXe6Hgdk5mjvh1dlK9JGAxrpJ+jIHGNrQS4E+BwPxCvTatpzZ7tmu6w+TUJmPkY+MAQtDw9wzn2jkYHbhU7Fyu46xZid+suzFkbSMOEbnFzifLs0fUqpzZNCadpMdzSbNlzntnJcKsY7P2N3PB/8AH8VFT0W5crMnhEWJS4QsfIGvmLe+weOFfr+kMVD9GRVqsMsVRoL3yxe3uccybTnjjj6KKa3pFmCGKV9xjKTpWxMjYAZWOcXN5z7JGcHupc0y6Kn6Ht+o+tYix0ut0jIOoY/39vfCdLod5kTXuEO7LA+MSgvi38N3t8M5Cfas6dbrRzzPsttx1WwCFjRtLmjAduz7uO4xlac2uR3rMborMzX2ZYQ+v6swNbhzScyd3DIyFHKZNGafR25HYijnkrNY6cQSOZM13Sd5O8icHHn2SP0Gx65ZhimrGKCXpCaSYMa5x7Nz+95jwWhqN6jQs3Yq755pZdRbLKHxhojEb3HAOfaJJ78cKvYvaVb9Zryz2o4TddbjkEAJcHD2mEZ4PkU5T7FIov0e3HTmtTCKJkMjonCSQNdvbjLQPE8rPWvrGrRalXO1jmSOuyz7SOA1zWgc+fsrIXWDbWyP9AkSpFsAhCFCCIQUIBUIQqASoQhQSoQqASpEqFBCEIBUIQqUEISoAQhKgBCEKgEIQgBCVCAVnvBInRj2wkQCISoQAhLhLtQWNQn7UbfghLGITi1JhC2CRKhCiJUJQEAiE4NS7UM2MQn7Sjag5EaFJtRtQciNCk2pNqCyNKz3gnFqGD2whbGJEqEKIhLhLhSwNSYT9qNpUtEojwjCftKNqloUMwhP2lJtKWhQzCMJ5akwhBuEnjkd05IqBDknJJJPclGEqEA1CVCEEQhCgEQlSIAQhChASpEqoBKkSoUEISqgEIVmOlJJWM4IwPBA2l2VkqEKlBCEqAEIQhRUJEqoFAQhCAnhr9RhdlQubtcQnslcwYBTCcnJQisRKhCFHwj9a1MUkA/XN/34JiFBCEoCEFaFfp6dYtwWJoI9zKzN8hz2H81UjGSux0V9TTtPpNtWXROuSukexse4PjILACc8DklDzZ8jitGFS0S5ei6sDYwwu2NMkgZvd5Nz3KWDQ7s7omtiaDK97Ghzg3lnvA+WFuP02ezTqVapYZKM0scx3gdM7sh5+GOcqzQOTpzeuJnGe2Opn3zt78+aHleeXg5HUNNsUSzrsbtkGWPY8Pa75EcKgQui1KJ1LQK1GxtFnrum6YcCY2loHOO2T4Ln3hD14ZuS2RoSkJEPSAT2tTQpY8fNDEnSNQ6DeZTNl8bA0MEjmdQb2sP2i3uAnO0K6yobDo2bQzqFnUG8M/eLe+FrapWnku3NVhnbHTkhDmTB/EgLQOnxzk9sKzPGf0rZ1nLPUX1nFsgcPazHtDMd858Pgh895pnPfoS6LNeuYgH2WdSL2hhwxnuoK9GSw2V0TQRDGZX5OMNHf812dSzDLqFOpO9odBWjlgdnx6eHN+vf6LKo0pKen3LUrozBNRc1j2vHLnEezjvlDKzy8mO7RrTbU1Ysb1IYzK8bhgNAB7/Ip/6BveqesCJm3p9XZ1B1Nn723vhdLZiLbl/UyWeqTUi2OTePbcWBoaPHOUTVIbVuXUJQ/wBUfWaWWI5wzp4ZgtI7kkjGEHvyOSbpth9B95sea7HiNzs+JVqT0euR1jYc+r0+cEWWHOO4HPJ+C6CGOqyrDoz7W2aWqWui2ez1Xe2CXZwCMALDtHb6N0QQARamyPLhqFWWbZWv6HaoxPksOrjZjcxs7S8Z/wAvdZTG/rQut9K4JTLZnGmRNi3NPrYflzuAO2cd+Oy5SPmdv+/BD1YJuStldCEo7oepFijTmvWo61dodLISGgnGeM9/optP02xqEkjK4jzGzqPMkgYA3OM5PzV30Sx/xJSzge07+ErU0TTLlSW9Haoh7paTgyF7wBL7TeMgrx5cri2jaRiTaNagYXnoyND2xkxStf7Ts4HHyUv6BvesTQGJokhlZC8F499xw0DzW/pEYg1C5WuU46LBHHbbCHbhmM57knvyrDbkcrNFnLwZr9uKSbnsYxs5+pyuDzTNUczB6P37DS6OOPO90bGula0yOb3DQfewqtLTLF6aSKBrA6Nhe/qPDA0A4OSfmuso133S2OaOKxUFmX9dHL05aXtHJz5ePisr0bZvuanGyNtkuqyBrHnAl9oeOR3+avuypkoy5dHuQ3Yqb4h1ptvT2uDmvB7EEcEJ0Wi3Jb01NsTRLBnq7nhrWAdyXHjC6kshiuR2rDmVBS0/aYoyHiCRxLWgAHJPJdjKbI10t1lvTnwWhbpbZIp27fWSwhrhjPDuA7up70hSObPo7qBmkiLIW9ONspe6ZoYWE4Dg7sQsy7VfUsGGR0bnAAkxyB7efiOF3DazGOvV4KvWe+jETRlm3CJ3U9zdnt44yuO1aGSvfkZLUbUdwei124NBHnkrrhyOT2SSM4pE4pF7DmIhCEIIhKkQAkSpFCAkSoQCIQUKEFQhKqUEIQqBUAZOBySkU1WRsVlj3jLQeUQJJaNmKESyREMPiomzSNjMYeQ0+C3NR1aCWkYYzuyOB5LAW5JLoJ8lYJUBLhZKIlwnsifIcMY53yGVN6laxn1eX/4StKLJySK2EYUjo3MOHtLT5EYTcJRbGpUEKelVfbsNiYcZ8VA2krZAhbd/0ffVrGZkm7A5CxUJGal0CEIQ2CEqEBJW/v2fX8lGpao/tLPr+SiCAVW9OrC3cZE9xbHy+Rw7hjQS7HxwFVCvaTNHBeaZnbYpGPie790OaW5+mQjOc7rRbr6PJNLSMbJ+hZiMrniPIj97jPb7I7+aglhjjhrPjnZK6aPc5rQfZOSMdlYr6i6GzSdteW1Iek5rZOHn2uR4Y9r8FThjdE5jm+8wgj5hRHmd+TUfotiOtHlrTYfM6MsEjSGhrdx3HPBHOc9lA3Sb0khY2OPgsAcZWhrtwJbg5wc44wrx1SDLgynK1k0kr5gZQSeo3aQ3jjHcZymPvM2xMjrvEUL4HM3OBOI93fjuS4/JXZx5MznadbFUz9IBgBdjcA7aDtLtvfGeMpZtLkihnjlAZbryM3s6jSNjjtHI7EO7/AhW5dSYY3PNZ/rPSdA128bQxzic4xndgkeXioZbUMjNSsyAh16doEQcNzWbt7jn7gFDrCUjIljMcjo3Y3NJacHIyPiO6jUsuzqO6YIZk7QTkgeGVGVo9kRE5pwkQhpolDlLG5VgpYzyocZQR0umaRWtUYJpRcc+ecwjoMDgzGOTnw5RQ0Vtqe5GZxiAlkbmjiSTnA+oBT9I1SrBpteCS3aryQ2HSkQsyHg44PI8lOdbgiax1SmxznWnWXiQEbDn2duD4D80Pmz5Jsq0tPqP09ty26xsfKYyYWAiHj3n/en/AKOoR0IrMnrs/UdIN1dgLQGuxnkcZ7qate06vcfYgluVyJi/2GZErCc7SM4GOQmP1KnNSjhNy3S2vlJjhjy0hzsgdx2HCGVybOfsRui2b9mJGB7drgeD547H4Kq56nuCBuz1d73ZYN+9obh3iB5hUnFD6OOCaFc5OgObDfr+SiKlq82WfX8kO6ikQeCEIQ0SRNdLIyKMZfI4NaPiTgLRfpcjprHqTN8ML3Rhz3tDpHNHtbR3PYnA7DCzq0xr2YZwNxika/Hngg4/BbjdZjptsVYXSyR9aSavLDIG8SDs7IJ447YPcLzZE70VMoVqktmz6vWMUr9hflrxtwBk8nHYKYaTcdYdCGw78N25mZiTcMt2nPtZwcYTdDlgguPdaP6o1pWEbtu7LCAAfMrQp61BWsMeylLshETYiJG7y1mctc7b2JOTjHYLjK09G7Zn/o+d0AmjbhjYGyyOke1oAJcBjnnluMd8qXTdLkvYkkIZARJ7W5ocS1hccA8nHGceadJdE1F1boEZjjZuLs+49zs//Vj6KSnfigrRRy1pHyQNmbE5rwBiQYORjnCzbobK0ekX3CDbCwumcxoaHty0vGW7hnLcjtlI7TLnUDS2HaY+r1DM3phudvLs497j5q83Wo4Z22G1H9Z74nznqDa7pjjaMcZOCc5VCPU4fUGUbVaR0HSMbzG8NdnqF4IyCPHGCtLkyNsIdKlE8f6QZ0YHTmu529oc1/bt3IBIJ+CzrFeWvgS7ASXNwHAkFpwcjw581rO1GLU79Y2mtrxssvne7dkBns+yPjhmPiSsu7PFZmdO2N7JZXvfKS7IJc4kYHhgHC64072ZbKpSJSkXpMgkSpEAIQhQgiRKhCCIQhQCFCVCAEqRKgBCEqoBCEqFABKEAJwCpGx0cbpHBrBklXo4K8AzMRI/93wChY7ps2s7nufNMPK6LRyk3I0RfIGGYYPJownNvSZ98/es6ON8jw2NjnuPg0ZKuDTNRa3caVgDz6ZXVSZycYLsust9Ru2ZrZG+ThlQ2dLimYZKPDu5iJ7/ACKptc5jsOBBHcHwV2vOWuBBW3UuxTjuJiuaWuIcMEcEFWdMtCnbEjhkLR1Wq2eD1yIe23+8A8R5rFIXnlGnR3jJZI7Oh1DXI5qro4+S4LnEuELBqEFBaBCEqHQRKhCAlqf4pn1/IqIKan/io/r+RUIVAoUjUwKRiGZFmuwLrNf0urVZSNWHp9SDc/BJyePNcrAcA/JeiatrFjTIKDIBERJXDjvbnsAp5PmeobTM61oVd8mkw1o+m6zHmV2SfAEnn6qwYPR3152murPYWks9YMmPaH1WhZtgaholiYtHVjdk9gC4D+ZWPZ0K7Z16aMxuZDJI53W25aAef9hF+zzW7I5NLqx+jupPMcUs0M+xkw5OMt7H6rjp24JXc7WQ+ieqxMkEjY7AaHgYDsFvK4ixy4oj1+mZTcmFSuCjIVPoxEQlRhU0Ce1NAT2jlQyy1AMldoaek6NVrN1Gq+1ZnZvcA7AYPguMrnBXcekNSxqfqN2jE6eKSENywZwe/P3/AIKHzfUXYU9I07/iFjIenYqSwGRrHHdtPHBXLW4KjK75Bc/XhxHQ6R8/3u3bldfo2nN0v0jigM4kkdXc54Dcbe3C4e8f7RJ/3H81LOeJNyKEh5ULlM8KIhU+pEjU9P8AxTPr+RURCmpD+2R/X8iqbKwQjwQhQTmpqcFloGlo1NmoahFVksMrtkzmR/YcZXWejXo/RuwajFY2yvik6cc7HHA4PI81yejUxqGoQ1HTxwCQkb39hxldlorPVNA12OOZrzA/AkYeCQOCF871DaZ1XRX0zRYBBqzbsAM1WP2eSNruefwCg1XTasOgaXZhi2zTg9R2T7XC6aKzBqGh3NSjwJpaxjmA/eaD/X7sKhPqtjS/RnSH1hETI0g9Rm7sF5eTs3bbMHU9Mqw+ilC5HCBZlkIe/J5HteHbwC5aVuCvQ9Yldqvo3pUlmSKF09ghz8bWN94ZXLazpUVWrBbq2hYgmc5gJjLCHN78Hw57r04J+GYezn3cKMlSP4KjK+gjkxEK9p9P1gku7BWLVBrYyW9wsvLFOiqDasyEJSMHCRdDIiEqRQgJEqRACRKhQgiEIQCoQhUAlQhCglCdscBktOEAKiwAU8Me9+Pqo2tV7T49z3fJairZynKlZC9uFa0yi69YLSS2JnL3+XwHxTJ2YcV0VOuKfo9BJjD5yZD/AC/Bd8cE5Uzy5srjjuPZs6SypUjEcMTWN8fM/M+K2m24sdguU0Rj9Q1KOsHlrTkuPkB3W7Wl0u9ako1o5YpACI5S/O4jzC3lik6PJibq2Ra1p1HUIS57AJMcSN94f1+S4KzDLStOgl7t7EdnDwIXZtmcWua44c0kEfELE9Iq+6rHYx7Ub9pPwP8AqPxVcKidcOV80vDKunzAu6b+WuGCFjW4ehZki/dcQrlUkSBN1dubznD7TQVyntWe2HxnRmkJFIWpuFxPSmLEzfI1vmVrT6VE2mZY3Hc0ZKyAS1wIPIVp2oTuhMWcA91qLVbKVEIQsgnojNyP6/kVCFY08f22P6/kVAEAoCe1I0KzUqTWpenAzce5PYNHmT4Ic5NJWwjOFqtfqWohhd152xt2tLuzR5Z7KWCClp4Be0WJv3nD2R8h/VLNqk0h97AHYK0eKcuf8UWzV1KwyNlmw0tjG1gfJnaPIYVp/wClzX6I1LczGNvUI48s4WO26/8AeUrLrvEpo8zxTEni1OrUkgxKKzzl7WHc0/E4+SxpBnldHFee1wIcQnz1aupNJw2Gx4SNHDv+4fzUOmPI8b+SOSc1RkK9bqy1Z3QzM2vb3H8/kqjgh9GMk1oiwlATsIAVN2IApoonPcGsBJKIYnSyNjYMuccALcZXjpQ7RgvPvO81DhlyqGvJQbW6XvnLvILQp6rdpRmOrZliYedrTwqcjsuymF2Fk87XLbLTb1qOy6zHYlbO7OZA72j9VUe0SEl3JPijcPNG5BGNdFeau5oy3kJBp1l8e9sZIV+IgvGe2V1Vc1xS3N25A9oIWWdw8Hnb2FpIcMEKSiP7bH9fyKuayYzed08Y8cKtQGb0f1/IqnshLkrKfgEYS+CUBDoNwnAJ7WZUjIiTgBZckaURjTha1CW/6tJBBLJHXl/vBnDXfPzUEMMcWHOG93x7BSune49+F5cj5dI2lRfrmetFJFHdlYyX32MOA75pZHSTQRQSWJXxQ/3bC7hvyVOIyyvEcLHPeezWjJKuu0jWGs3+oT4+Qz92V53Cntm7Fa4vFetaszupRvyYmkZaPHb8eUektqB9GpWbZltyQudid8ezDDjDPjjCzXTyRyFkjXNc3gtcMEKaKwxw2StD43d2nxWlBxaZl7MB/dRFamq6aam2eAl9aQ+y492n90/75WaQvdCSkrRxkqZd0+2IMtd2U9u8x0ZDfFZJSLLwxcuRpTaVATkkpEqF1OYiPFCfEWtla5wyAeVGCMgjuEK1emilc0xNxgcqqpF2itCIQhUyIhKhACVIlQAtTSdKnuB0rGAsb5rMW1pOuO0+sYenuHgquzGVyS+IOZgmNzMEcELPkjDZCArUl3qyOkx7TjlRNBe7J7lae3onLWyNrFf00Yn2nxC2tN9DdXuxNl6TK7HDIMztpI+XdW5fQrWKZEsQhsbecRv5+4gKRnFPs5zuSo563Fh54XQyltj0XolhG5jNpHy4U1H0dk1B4mth9euPeBGHu+AB7fNUdYifptlsETMQgeyR2cP6r14nGU6T2eXIm4KyD0e1Bmm61FLOdsRBY8+QPitzTqcWl6k/UbF6sase50ZZIC5+ewwuTtRkP3YwoIz7XAXpli5Nu6s42kdDWndPYc/tveXEfM5UnpE5n6MDBjL3tA+nKzqs4hZkjJ8B5roNHrQa3XdDejIYw8Pbw4H4Fc8/xjfg1i/kkcjUiJkCj1Ab7byOwwF1Fv0bu6dY2QxOssecRPjb3+BHgfwSxeg2qzN3yPrROPO1zyT+AXilkjxWz2q+VnFmP4K9TpVJKckk8u2QdgtXVfRjUtMiMs8IfCO8kZ3AfPxCwJGYWYyR1tspuGCU1TObhRkIdkxqVCFSlrTh/bovr+RVcDhWdN/x8XzP5FQN7KEZLXhfPOyGJu573BrR8V083R06qKlbk95H+L3efy8ln+jkQa+zcI5hjDW/Au8fuBXZaBoFWSJtzVGdV8g3Mid7rR4ZHiUcuKs8WRuc+PhHCyuc52cqLJC9btaHotqExvoQt44dG3Y4fIheea3oFrTtQdDDFNPCRujkZGTkeRx4hYjkUjqlRlR7nuDWguc44AHcldRpfo9GQH3nlzv+m04A+Z8VR0Gk6AzWrMT2OjAbGHtI5Pc8/D81vad1bUxjjcGtaNz3ns0KTlR871Gd+5wiXG6Npe3b6rH+OVSuaEyL9ZSeWkfYccg/I+CvuaDXfPUtCdsXvjbggeadczAWNDy7cwO5XNTaObk0rRzGowev0HDbizXBLeOSB3b/ADXKOC72wNtuKy0e+drx5kf6LkNSrCvqFiFo4ZIQPl3C7p2er0mW9GaQlAUpjPklEZ8lT3cka+hVgyGS48c+4z+ZSW5MuKv7fV9LrRjj9WHH5nlZE7uTlGeCPzm5Mm0+lLqFjps9ljeXvPZo/quy07R9Pqxg9Fr3/vvG4n+iy6EXqWmxADBcN7j5krTpOdPFJNLMIYIuHPIzz5BcJyPPLM5za8Gi+Co9ha6KMjyLQVzWr+j9d+59HEUncMz7Lv6LacwEQywWOrBJIIy4DBaSVHeaIbb4muJDTjnv2WFOiOUluOjgvajeWPBa5pwQe4Kv0rRjkAdy08EfBS+k0AjsRWWjHVBa7/uHj935LOrn2gu8Xas9v84WU9QgMFyWMkkA5aT4g9kzTx/b4vr+RWlrzBuryj7UeD9D/qs7T/8AHxfX8itHqxSuKZTA4CexuU1vYKxC3JCzJ0j0wVkkMOfBb1T0c1GaESR1XbSMguIbn71a9GKMQEl+dgc2EhrGkcF3fP0H5rqKFyTUZZWRzMYYxk7vFfOzZ2nSPRVI4a5plmmQ2zA+MntkcH5FVI4HyzMijGXvcGtHxK7sWY9QY6CZoex3Dh/MLnatf1L0kihec9OUgHz4OD+SxDNaZrj9nQaVBU0mLpRAGT7cni8/0+C0XXj1DB03dTGdm3lctasOFsAH7Q/NdKJWWtckzhk9Pc0j/qMc3j6glef5PbJNKJha1Uh1RhBaGzgfqpPEHyPwXFRuLXbXAgg4I8l2+nv67zu8BwuO1It/S1sx+71n4+9d/SSbbg/Bc0UqaNTTjHZhkpWD+qmG3P7p8D9CuXsxPgnkhkGHxuLXD4hbVJ5DgQq3pIzGrOkH/rRskPzxg/kvXhfGbj9nCa1ZkFCVIvWcREJUiARCEIQRCVIoAQQcISknGEA1CEIQEqEIUUJ7QmBSNVIyeNq7j0G0eJwdqtpgcGP2QNI43Du76dguJiXpehyBnofRezw3h3z3HKkujhJ7OjbqVdtuOo6UCeVpexmDyB3OVKL1d9x9NsgM7GB7mYPDT2K4O7btO9J9PNGSJs3QkwZQS3xz2V/RbFo+l1wXnwvm9UZkwghuMjHdeejVnS6nI2OrJM921sbS5x8gFwGs3HamwCLHRacjzJ+P9F314sdp1kyY29F+fltK8kjfJEQWOI47L0ena8nLKm+mO608LemcOaOwcM4+SYZz4RNB+qn9aY8frYufMJhdBngOXrWSS6Zy4p9oY3fK72jx5Lp9E1MVWshtO2tBwyQDkfA+fzXONlA9xv3q1QePX67pTlolZnPlkLEna3stfWj1KGRzWgPPPipa1+vZfNHBIHvgfskGCNrvJULcvSkPK5jTJ9Tdqeq/o6WqxvrPtddrjk+GMLwNHeLtHbVrta/A59eQSx7iwnHGR3HK849MtGj0y+2Su3bWsAua39xw7j5eP1XR+hM5OjO3nk2JM/eFB/8AiE9p0qp+91zj5bTn+SsHUqNnnMgUBU8igcvSdIjUoSJUNlrTf8fF8z+RUDPBT6Z+0IfmfyKgb2VIzotBIOmXm+O5h+mCu4nvNjdE+MjpvY0tx5YXnWhWRFcMLzhlhuwnyPdv48fVbPr0lVnQmaXxtJ288t+HyUlHkjwyuORnZRai0juqt30ibSlEfVY3Izy7C5F+tiNp6THud4buFjWLEtmZ0szsud+C5Rx/Z1Vs6htybURYkDw8Mdng5wFc9H5RL6/UaR1pYTsGe5GePxXK6TeNKw4OP6uUbXfDyKsWHOjnEkbiCDlrmnGPkVJw0fNy4fbyG82lchoz2Zy6uyMY2vyC8+QWlqcuLNcHxgauRfds2S0WLEsoHYPcThaMMsspDpZHP2jALnZwFypnJJR0jUsEGKMeJkB/BczrUjRrNkFgdh4/ADIWzDZbJKZnnEEDS4nzA7lcpandPPJM/wB6RxcfqvTFUj1+mx7NF2oUjYsSDTogySPayPccRu/eCiF2qI6rfUmF0LiZXFx/XDPY+Syi5KHLR6/ZR2F6eF9Xc2u0CVjTHyf1Y8h5rn7bmvd7EYYNoGAc5PmtKo/1nRoj3dFmN38vwWdOzBRnlwx4to6ezIHabA9pGC0fkpaT3W/Ru1WrgvnjlDywdyOP9Vz1K51K3qrzhzPd+IUbZZq0/UhkfG4faY7BXnyR+jyyg4zaZ0NWlYquqT2ndLqWGtbC7IceRzhW9Qkzrlhvk4fkFzHrc80okkmkfIOznOJIV6GZ5eZZZCT3c95/MrzyTNwSWhPStwMNZg7l5d+H+qxq7eQpNQtm9c3jPTYNrM+Xn9VJXi7L14ouMUmex/GJFrjv1NRvjtcfxCz9PH/MIvr+RU+sy77mwdomhn17lQaaf+YRfX8iuh3wKoIpt7KxAeQqwPAUkbsLM1aPZB0dvoUok0WzXafbY8SY8wRj8x+Ki02nUntz+v2nwBrfZ2u258+f5LB0+9JWmbLE7Dh9xHkfgt1uo0Zhumgex/jswR+K+XmxyT0epfouaKHNmw07hnAOO6ytbsiTVpp4Xe68bXD4YGfwT7WrtZE6KmwxhwwXk+1j4eSxnybimHE7tiT3ZstlZd/Wx8P+0zxaf6LUpabZsh1hj5t5yN4JyfqsLRKQt3mhxc2NgL3lpwcDw+q7Wnd687akBZGADjPYALnlgoukxzdHM2JnabG8cifHssI7fErlXMO7J5JPdejXOjqZkp2QxzmktbIOS0+YK4azXdFK+Nww5ji0/MLr6aUVaXZnJcuxKgwQovSRwN2Fvi2BoP1JP81apRGSZrRwPE+QWPqdkW700zfdc7Df+0cD8AvTjV5LOU38Sm4gdzhJlbmlC8NMY7SYi+w65sm2sDvY2jaHeTCd2fBTx6PVmrxmSIxMkjZK62156Ye6XaYwO2ACcePGey6vNT2cKOcyjBxnw810s+mUq0E9mfT5YnRRTEV3yuG7ZIxrX5787j8DjhXo6cdWD1eCCWKL1hhbOHn9f/Z5DuHh3Ph8ll50KOMykyuobo1Kcxww1SHxvrhx6zv1gfCXuHY45HGBnwUjtJpN6lb1QxtmNRzpHbg6Bry4OIzyBx4+fPgnvoUcmhavpBTr054RXhlhLmu3se14HDsAjdyeO/hkcLKXWMuSsgiEIWgIhBQhBUIQhRQntTFNXZ1Hc9lSMkjcuv8ARTVom1pdJtvDGSu3wvccAP8AFp8s/muVlgDG7mlRteq14ZxnGzuXwiC+2WWL9bGC1rj3APcLSo9D1x1oRtE72hjn+JA7BcRDrN2OJsRm6jG+6JBux8j3T363eeza2Xpg/uDB+9Y4IwrR2HpPrccdJ2nQPDppRiQj7DfL5n8lhQaK6bRZdS6rQ2N20swcnt4/VYUcmX5Jzld9ofqrvRGx64XiDq+0Wd/srolxWjhlk0c3U0R9yhbttka0VhktIOXcZ4WWIvawu+rN08aFqf6NdM5pjO/qDxxxhclHVl4mfE8RE43lp2n6radtnKOV1s06Hou+apHYs2YazZPcEncqhq2lzaXY6U2ORlrm9nD4Le9L3EXKzB/diH2R4d//ALJnpMd3o/pUkn94Wdz390f6KJvT+xGbsno6m3VNPbucPWYm4kb4n/MPgVDXdHWlkdFGGOldueR9o+a4wTvikD43uY5p4c04IVr9N3PtPY8+bmDKxKCZ64RaZ3GndCpCWwMZDECXnBwB5lcj6U6yNUutbCc14AWsP7xPdyzbWqW7TNk0xLP3BwPuCovflYjjp2d0NeVEUrimldDokIlSJVTRa0z9oQ/X8iq4PAVnTP2jD8z+RVUICRpXQ1LTNThEMrgLTRgZ/wDU/wBVzgKcDzwhxyYlNGnZrvjcQWkKuWq3W1k7RHfj67RwHjh4/qrbWaba5gssa4/Zk9k/jwhw5Sh/JGRtU0UkjBtBy3yK0/0TIeWDcPNvKQaZM3vGfuUqzMssJKmVWPPfpjPzV6Bs05DPsn7ICZtrV/8AETsBH2Wnc77gqlzVC5hiqNMUZ4Ls+07+gU4pHNY+T+KLGr3WMi9RrOBAOZXjsSPsj4LEc5IXJhKtHsx41BULlAKYlBVo60a+iXG17BimOIZxtcT9k+BV69XMbyCFzoK29P1OOSIVrxxgYZKfD4H+qh482Np84lKRhByMgjyThaeeJGh/x7FaFqk5vtNGWnkEcgqmYMHkKNGbhNbEbba3tEc/Eps1iawNrjhn7re3+qlsQRCdwrOe+Ie65zcE/RLHF8FniuwlBbSGwRK1JO2rCZD73Zo8yo5XsrR7pDjyHiVkWbDp37ndh2HktFjB5Hb6I5HFzi5xySckqXTT/wAwi+v5FViVY0z9oxfX8iqe1IpjsE4FN8AnNGUo2SNkwp2WC3g9lTPBRuWHBM2ps0/ae3czkJrQd3KoxTvidujcQVpV9QgkwLMW0/vN/ouE4yj0jSlZvejcrY7To3EDrRlgPx4I/JWI4oG6oBqJkbBznbkc+HblZkAryDMM7D8M4K1mW5tgbMyOfHZz+/3heDLbZ2Q/TGNZakewuFdji4Of32jzWJbzYtSSBvMjy7HzK0bd9pj2SzQwx99jD3/mViXNWEYLaTS0nvK73vp5JhxyuxOSE1Kw2lWdUjI68oxKR9hv7vzP5LAd3T5HknJ5JU97TLtBu61E1rQ/pktka7a7GcHB4PzX0YJQVeTyydsp7ntzsc5pIwcHGR5LXsabALB0mtNO67HM2MskI6Ujse0R+7t8znIWQe2CtiPWbknVuQVaomhLJbM2CXSYO0ZBOOd3O3GVJ3dowRu0W7PsdFYinbKY2Me2RxDg5xaDyM4BaQc9uEafo808lR77LZKr52RP6MpywOJA8MeB7ds891YZc1GCsy5BXrV6hqviij6g4YXHLgC7cTuzyoIvSGzDXrxNrwnodLDiXc9PO3jOB35wOVzub6LobW0TUZ2QPjewOlcwhpeQ5occMceMAceeRx2Tn6PIKFq1LqERDIGSM2vc4Stc8tI7eYP1+9Mi9IrkUdVuxjnVtuHF78ODewLc7frjPAUdfUbM9dunMrsl6kArNaM7jh5eCOe+T8k+Y0Z7nOecvc5x7ZccpE+RhYxjnbcPGRhwJ7458u3io85XpTRAQhCpBEIKEAqEIQCqWGTY7nsokKguyWA5m1vdQAkd1Y0vo9Y9bHwyl1Mw9YdHH0VuzF/KiAOTw9VwU4OQOJbjfyulpa5FD6Oz6aYnl8r9wfkYHb+i5NrlKx5HiqccmJSOs03Wo6umXaj43OdZGA4EAN4wtGxbtRaNI+5uL7cbWRQhpDWRj7ZHh8FxbRL0Ovsd0t2zd4bsZx9yvv1/U3wGF96YxubtLS7gjyVPLLA70dBF6RUZqkUOr0jYfCMMe04JHxWR6Qa4/VZ2kMEUUY2xxg5wFhOmJPdRukymjtD09dj3PyVGXphcm5Q9aiSF6aXJmUKG0jXo0IpoN7zyVnWohDO5gOQEsNuWFu1juFE95e4ucckqmYqSexqVIlQ6FvS/2jD8z+RVQdlb0r9pQ/M/kVUHZCDkoTUqoHApcpmUuUJRK15b7pI+RwpBI93vPcfmSVACntKhhxRpzUmN0etehc5257opgfsPHI+hCznZXQ+jPTti1pM7gG3GZjJ+zI3kFYlmCSCZ8UrS2SNxa4eRCI4wl8nFlUpqe4YTCh6UCEIVNDgnApmUoKhlou1L9iqMRSex4sdy0/RalTURZnjjNZgkc4AEOwM58crABV3Tgw3IhJE+VhcN0bPecPIKHmy4o03Rq6pdjivztmi3Sh5Dixw2k/BZsupvIxDGyP49yorzozZkMTHRx7jtY45LRnsVTJQmPDGkOkkc9xc9xc4+JKjJSEowTwOSlHpSoaVa0r9ow/X+Eqs4EHBGCrGl/tKH6/wlDRU74Tix7RktICfULBOwye7nlb2rTUXUQ2IN3Y8FznkcZJUbUbRzeUIQuhkAlBwmpUBK1+FI2U+arJzSucooqZuClHPoHr1cHq15SywM59k+67+Sx5Ccra9GdQbUvmKbaa9pvRkDvd57E/DP4EqvrWmGjYJj3Gu9xDCe7SO7Hf5h+PBXnjLjNxZp7MV3ddbZ1bTDeMhs13h9syxuhgcNnsOAdJke0QSCO/iuWc1Rlq6TxqezB07NagriAeviScSVhYna0/rWtL95yRkjBaD5qra1Cq7RJ4ILjAx9dkbKoa4ESCXc53bHI5zn4eCwtqURrPspE2akepVG19IhlrwTMgAM7jGS9uJS4tB7dvzV6xq0cVSwBqDbF10ErWTtYezpGlrQSO4AcfhnC58Rpemo8SY2dN+noPXADc/s4tx8bTjo9LDh27bsZHimU9WoVKlAC9zFLXdjBywDIk9kNwO/gSXDkrmXMwoy1PYQtnQw6nAIWxs1JkVwR7fW9jiP75znDOM+00g9ucYKdZ1ak+vPBXk2V5IbOItmBvdJmPjzxyPJc3jCRVYUSxEJUi7kBCChACEIVAqEIQCgkdkd+6ErWlzg0dygAJVqw6Rui3OdyQs6xEYZSw+CpmM1J0hoKkYeVCE9pQ00dNosBvaHqdRozIzZPGPMjII+5YT1r+i9kw6oyMP2esNMW4/ZceWn6ODU3XaYjmFqGPZDYJ9j/pSD34z8j2+BCwpVKjklTMUlNynOGEwhdDqkBKRCFTQJUiVACt0KZtSYJw0dyqi0NMtMg3MfwD4qxSb2GT3dKZFFvifkhZK17N1gicGuySshamkujGO62W9K/acPzP8ACVVibvkYwnAc4D7yrWlftOD5n+EqtFu6kewZfuG0fHPC5s0zfk0CCOy+PNsbRKRG4sD3hhADgewacnv5LPdpzHU7k7HStdC8iKN+CXBuN+SOONw7fFTifVnSyxGrDM42JIXscwEb3nc5nftlpPkMHlJNNq1SI5jjgrRtx04iOk8S7ucAkOBwefDCyeVOfVkclTTob4pvmtulZMIZNoaA4njLfIA8YPdSjTabnyuZLYbFDLIx+7aXFrGbjjHGSeAqdjULT2xySRxtO9sxkEeDK5vAcT4/T4q1HFrMVt8IrDq9YSPY4AhxlG0Dvy1wyENPkl2PbpEU9WSxWmk5ZHJDG8Dc4Eu3NOPEbCR5qncgbUtywslEgZI9g8wAcc/PvwpX3r0cMU7WsiidI3o7BgNMXYDngDd498qrZsvtTOmlbGHvc57i1uMknJytI1BTvb0Wak8kM8c0Ttr43BzT5ELpderx6jWZqlZoDjGHSNHi3tn5tPsn4YK5SFsjpmxMY50jiGtYBySewwul0xuowMMHSbuaRLC4vaW5J2ObkHBB7EeeEZxzri1JdmHQqNualDWkyGybhwcdmkjn5hOfp9epUgkvSObJNFKR0ntkaXNIDRkHHj5/ctG1AKr2appoAhJILXDPReQQWH7zgrFlc91aGu4N6cG7Zgc+0cnP3KGoyc3aeialpYu1IpWW42SyTPjLHtOGhrN2cgeSlr6HNZgilhsQuZLIGBxa8AZzg5I593w7ZChq2rdUMrQxM3SP3R72c5e3ZwfIgq1FY1mFvRbVhDqrhG4uYN2Ymk4PPOGk9u6myylNPTIW6JK6OSVtqAxMibKHhryHBwJHGMgeyRk8ZwrR0MWnQRUHsdiCN8sh3kOfJy0YxwPj2A7qpDqV6pHWcIYcmBrYHGPLto3NBGD8XDB4Pkkfcv0ZjDPBFlscbDHLHkewPYOPPB+RV2P8r8kVqm+n0RLLG58rBIWNzlgPbPh59vJXNFDjqEJZabVcHZEzuzOFny2JLLo3S7cxxtjG0Y4HZaOhtcbzcUvXcNcTD5jHf6Kro1kvh8ilbc508jnv3uLiS79457qqSp5zl5IGFAVTrjWhqs6fPFBY3zNyPyVZIUaNtWqLGoTxz2S6IYanaV+0ofr/AAlVFb0r9pQ/X+EotBKlRTHYJSSe5SDsEuFCjUJ2EbSpaLQxCftKNpTkhQxKEu1GFGyUSMd5rp6tsXtOe+WPrujYG3Ic4MsY4bK3ye3sT5YyuWaCrtC3NTsssQP2yMOQf5HzC8+WHJaNIn1DSzXY2xA/r05DhkzRjn91w+y74fcs0xldSH9OJ+paU1vq0mG26jhubGfIjxYfA+HZQfo6rqTwdLcIpnHmrK7+Bx94fA8/Nco5muy1ZzoZz2V/TdLlvPJBEcTffkd2HwHmfgtm9old74naa4uhY7oTuPg9vd/ycO3yS2ZWwRNghG2NgwB/vxUlntVHsqiX9K9H6k7iypUFkt96Wd3sj6Dj6crRt+jAjhJdp9KYAciJu1307LS0qaKlpdZjMYMYcT5k8kqz6+2Q43LzydbbJbvR5xe0KKYF+mucHjvA89/kfP4Fc69ha4tcCCDgg+C770icytrRLMDqMa9wHme/5LD16o21WOoQj9Yz++A+0P3vmPFdsGd6UumWULVo5nxXQGjQ/RAkDh1Nuc58VgFIXv27dxx5L1zg5VTo5xaQw9yhCF0MiIQhCAlQhUAhCEAqdG7ZIHeRTUKlN+LVIxEMnkBZFubrzuf4KBCGI41F2hQnApqUIbLML8Ec4XUyW47FcXZ2l9S5iO6xveOZo4kb8SOfj7QXItK2NFuxwSPhsgvqWG7JmjvjwcPiDyFiavZzkiPUNNkpygOLZI3jdFKz3ZG+Y/p4Kg6MhdMS7TXO0+8wWaMn6xhafA9pIz4H4dj2Klq6bppJriwyzLeDo67hx0uMguHg4uAbj5pypbMqZx5CarU8RY4hwIIOCD4FVyF0R2i7GpUIVNAhCVACEIQFzSf2nD8z/CVVicGTRPPZr2k/QhWtJ/aUPzP8JVPHASiNWdA/Xask9rqMayOW08tdFAGu6bmPbuPmRuHfnus6WanFpk1OvPNM5xhIc5pDSW7920HsPaHfucqhtShqzxOSwpdF7UNRbc06pWbWhjdAxwc5ke3kkng57c8/Fbf/ABDRfYL5TJllmF0b9hOYmkOII+Bzj5rl8JMJxEsEWbkLodZiq1ntLJIzK5wrQhrW5LdpPhzg/XGcLLr3XQQ7G1qkmTnM0Aeflk+CgBc3O1xbkYODjI8kAK0WOKteDVGsCTWqV2Su1kdYMYWxtALgBgn588eQAClhmo1KVivXtTTPkjaA4sLW5EgdwDyOByfNYwT2cJxMywpnWxWXWIHajC1j3hoZfruHsyN/fx5Hx8jyqV/T4hF67QJlrAjc13LoT+64eXx7FUdOuy07DJoSNzeMHkOHiCPEFbJBr41PSnFsDvZkjPPSJ7scPFp8P6oeSSeN6M+1bFy/Qk9WjjbX6Yd048E7SM9vDjgK2/Wqu3fI1xn6k2S5m4SNMbmsJH1APyVqC9p9V3r1WuW2uGiAjLG/vOafiOAD2yszWqDK114i5gkAkhPmx3I/p9FKJFxk6aIHRM1eu2QFkbqdJ25kbWsBeHOcAB5Y7kLKdI+Z5kkcXvd3ce5Ur4uU1rDkADJPgqkeyCURoC09J6QleZrclbEbtr2AkuOPd480yDSNQmALKcu3zcNo/Fa1HS9Uqw2dlSB/UiLHCRzSQD+7z3WjnlyRaqznZe6gK0LlG1XObFeWMebm8feqRCHaEk1oiKRPITSEOo1W9K/aUP1/hKqq3pX7Sh+v8JUBTb2CvNo50d2odT3bAh2Y827s5VFp4C3dOkpT+j8tKxfiqym22VvUY5wLQzH2QfNcMsmlo0iNmm0mabWtXNRdC6w17mRtrl/unHfKsfoBxFpzJw5leoyyHbMbw4Zx3+f3K2LcB0OvSg1uvB0mysla6Fx6mXHBB2nGR+aKes02UdJilf7Yd0rfB4iAc1v4PP3Lxuc/BsqO9H3bCGWGmQergtLcAOl7DPw4+9QalpdapHKYL7ZpIJelLE6MxuB55aCeRwtCxqdCc6mJJn9Ka3AWBg9oxMyCR5HGO6brN6rNpZifqDNRsiYGCURFr2R4OQ9xAye3HKRnO9gzKekSW9Mt3WyNaK/ZhHMmBl2PkOVLU0eCWGq61fZWkuZ6DTGXNIBxlzs+yCeFoafq2m0o9MrPiMzQ15sSh5aGGThw249rDcKMfoi1Xostag2NlEPhkaGO3TR7iWlnHcg457Kuc7IQV9Ba9sDprYjbJXlneRHu2CN2CBzyqd+gKYglinbYrWGl0UrWlucHBBB7EFa9XUdP6FSF9lsIbRswOLmk7C93sg4HPHksvVbVX1Ojp9OYzsqh5fNtLQ9zzk4B5wMBWEpuVMMZp92anOJoHAOAwQRkOHiCPELVv1YGiCeBphNhu813HJj8iD+6fDPK5+CQska9uMtORkZ/ArqNP1u7bshthlWfxe+Su0nHzwmaLXyQTLeiFkG6Kc4isjY8/u/uu+hWNqscle1JDKMPY4tIW3PrNbJadNpuHwBb+RWJrupt1GdsogbC5rAw7XE7sdjz8FwxpuVlbL+j6sJ4otPlJErfZiP7w8B81oWbLdPr+s2C4R7towOSe+FzGgMlfrdR8cT5Gxyhz8DgD4nwXQ+lbbFjRmMjrPJjnDjtGSBtPPCuWMOai32ItraOau6lJevPsycF54HkB2C0dMstzskG5jxtcD4g9wudBwrdWYtcOV2yYlxpCMt7KmpU3Ub0tc8hp9l37zTyD9ypkLqdWrDUdMbaiGZ6w9oDu5n+nf5ZXMOC74cnOP7Oc40xiRKUi7GAQhCAEISqkESpQE4NSyjEuE/ajapYGYSp21GFbA1KEYSgKlFarELsEKABSN4Qy1Z1cMUzvRwm9FJ0c5pEMJcHePyYfj49lkxlzJGvjdh7SCCPAjsoqWpXaZHq1ueL4MkIH3LVZ6R2ntxbjq2v/wB6BpP3jBWLaPO4uyP0lha61HeibiK7GJgB4O7PH/xZ+9c68crodU1iC5psVRlGKDpSF7XRvcQM9xg578HusB/JVhdbO0EReKdt4yl2pcHC3Z0GIT9qNqllGITiEi1YLWlftKH5n+EqoOwVvSv2lD8z+RVUdkAqEIVAJUiXCAEIwlwgETgUmEBATxuwV0voyzJmmM0JAYWerPka0z58Dnw8c/cuWaVZjfhRo82bHyVHQP0bUmEudSl298sG8feMqxLXkuaMI+k/1ik7ABbgmNx/kfzWfpAszPLoZnwxs96RriMfd3K3ZdYnZEYWzvezbtPUO4n5kpTPBK4yox4NHiaN92T/APrjP5n+isixDTG2pDHCPNo9o/Xuqs9onODwqoL5pAxgLnOOAB4raNqMpbky7JqEjzkvJ+qYLzuckny5Wnp+iV8h1p3Ud4jOGj+q1XaVpbmbfVoh8QMFaaoJwfSOdi1SVvAeceXgU2Wnp2oAlzBWmP24hwfm3t+Sk1PR/Vy6So8uaOSwnJA+CymzEdio1RqMU9wdFXUdMsUHAygOiJ9mVnLT/Q/ArPIXTV75aDHKA+Nww5jhkELP1TTWRxm1Sy6v9phOTH/UfFZaPVjyu6mY5Ct6T+04f/L+EqsQrekD/mkP/l/CVD0EWlRRy3W9ZofHGx8rmn7Wxpdj6kBW5dMjr6dFesWA6SRjJnQtLG5a/wAG8k5HB93GO3ZUKlg1LMcwaHhuQ5p43NIwR9QSnuv2X0hTMpNduA1rmt3bQcgF2MkDPbsvNOMnLRS7pWnQXYmvmsvhMlltaMNj3AucCQTyMDhW6mhh4qyuecvlja+ORmGkOzjGHbiOO/GfBZtPVLFGjJXqnZI+YSdTAOAGkYGRwee4U1XUdTc2GCGcnYWbAI2lxLfd5xk4zxlcJxns0m2RWKTIn0omTSSS2Y2PcOnwzf2A5y4q9PosEG6aW3IKzWbnEMa54dv2YwHY789/xUctHUw6OeWGwx0DWtY8xluwN93nHgp4p9amf1oepJsBZ7FdpaATuxgNx35+fK5uX0zfFkDdJhe6vCy7usWSDCOkdjml5YCT3B4J7fDupLGj1K4lllvv6EbQXbGMc8Ev2cgOwO+RyobNjWK0HSnfYia5xcC9m1xO7d7xGcbucZxlRR65dj9Yc4sdNK1rWuETA1uH7iS3GCSfxWkpvpmXaLVnRqsDGtfYlD4RYfZcGAgtjdgbRnucgfX4Jp02vp74bMsxnD7DGRxGIYkY5rXZdzwdr/jys6PVdQjcCLTiQ98ntNDsl/vZyOQfEHhSR6lO+1HNce6w1k3X2HABfgAeHb2WjHkFv25/ZiwtV44Lj60D3yPZK+Mgt8Q4gY88jC2C1um1Og0gzO5lcPPy+QVfSRLNvvWHbugSIzgD23EuJ+Pc/eoLLy55JPfzWJPk+L8HSKpWMknOScqTSqTtV1GOtuLWe9I4eDR3+vgqjxxwt/0JzHctTvY7p9LaH44zntnzVn8YNoydjXFDS6Dg1jIYIm7jgdgPE+aiqa1pt2QxU7DJJNpdgA9vqFjaxbDtMuNz3hcPwVfS7lqKpAJrEb4+k0Ma2PaRwO5zyvm38W2dVG2M9LdIifA/UKzAySM5lDRw9vn8wuTj4K9Ekk9Z0e63YXudE4NaBkk4PgvPWgtOCMEcEeS9fo8jlBp+CZI0zW0y46CQEH6KjrmnNrSts1h/Zpzlo/cd4t/p8PkiE89x96260bb1OWjJ/wCqPYJ+y8e6fv8AzW3L258kK5KjjHBNKmkY5ji1ww5pwR5FREL3p2ecahCFQCc0JqlYEZCSOIuKnFcjwV7QowdRrZGf1rP4guz9KtGt29bdLWpyPj2NGWN4yvJkzcXRTz11cjnCVkBd4Lu/TyFvrlQBgH6jwGPFQeh2l17FuWxaYHx1o9+0jIJ+P3FT3vjY/Zx7qbg3OFWfHhepadqjNfsy6beqQiGRhMe0csx8fNcHeoujuyVmgue15YABkkg4Vx577BjbU4MJWq3Rrx//ACdj/wCU7+i09I9HX2LQhtx2IA8ENf0jgO8M8dl0eZIHMiMqVkBK19U0ezplow2o9p7tcOWuHmCup0CkZ/Qy/FFF1JXyYaAMk+6sSz6tFOFbXcnGrKIupsdszjdjjPlleg6Jp01PSNWFqs6MuiJaXt/yu7LKl1HTB6NmE0oi/rf3XXdnOzHU/wBOywvUNvRDi3A9k3YVoVqstmQthifI4DOGNJP4Lodd9G2061R9OGw8yQ75sgu2njyHHiuzzJOi9HIsiLjhWG03Fu7bx5rX9HdNZf1evXk/u3Oy7HkBk/kuwk1lsGrfo1lSAUmvEJbt+mfJcsmdp6B5uarh4JprHyXqOnabFS13UIYmDpugDmNxnGT2VH0a0ixV1cS2Kj2M6bhl7eM8LK9QxaPN3wlvgoHBdRqNjT44bMEmnb7Je8NnExG07jj2e3C5mTuV6sWRyRSfSv2nD8z/AAlVB2VzSv2nB8z/AAlUx2C9CAqEJQqBQMqRrEjByu00avXfp2lskjoFs7pBK2Zg6svtcBh8/qstnmzZeBx3TKOmus0nTI5NOnbJVc6S298ULi3PSLGk5z4ZdgJmlMgmpQxV4Kctnc71ivYbh8w8Axx7ceXilnH8k5UsTCMLrJWivo9N0Q02IuikL22Yw6RxDiOCRyccfNcs4KpnbFl5jQrVKB9qzHBH7zzjJ8PMqsFs6E3Y2zY8WsDB9e/5Kms0uMWzRmkjrRNrwcRs4+JPmVQknz9oZ+a6P0b0WLUd12+C6AO2sjzjeR3J+C64U9OEXS9SrbMY29JuPyXOWRJ0eaGLVs8mfJ4LR0aL9XPaPdnsj4ea6XVPRLTZbDZq87qkZ9+No3D/AMc9lhdapUhs06wfw/kvOT5LvgfN2iZ6UOP2WdKsCzqkFZ7nbZH7Tg4PZa8dMs1aSvI95gMLpYnA9wPj8FyWj246ut1rE7i2KOTLiBnAwVuaZr0EQtw2nnZmR1d+0kjdnLfrwV3zRnfx+jz44xpWR+sF+0h2SVz16P1e/IwcNJ3AeQKt0ZXGVmT2VnU9JuXrD7NNrZ9rBuY0+0MfDxUyqkd8FJ/2YznZCtULLo5B4jsQexC09O9DtUuwtll6dVrhkCUncfoO31RqPorqWlxGx7FiJvLnRZy0eZB5wvJzjdWd5RTVGFrOntqStlgH9nm5Z/lPi3/fgq+k/tSH/wAv4Stxo9e02aseTt3s+DhyP6fVYulD/mcH1/hK0bwzbVPwZ3gEiXwCRQ9CFb3Wz6PD/nNIj/rs/MLGb3Wpok7INUqSSuDWMmY5zj4AHuvNnXxZuJ6e1up/p6R7rDDQwf1W4EkbfLv3WRo7bEmj6qNLJildZJi527Rxxz24UbrWhs152rnWGE53CJjDk+zjGVRGsU5dD1lplbHNZn3xRHuRkL5ajJm61/0ZnpIzV2GGLV5zIcF0Y3h2PA9lzkjcFa9CzGy5mWGCYuBaz1h2I2uPZzvMBL6U14a+qba8TI2uhjeen7jnEcln+VezC+L4sSRgpzUh7oC9pxOt0qs6xpFOvFjfYkcc/XGfuC7jTNM0zT4Q1kEbn49qR7QXO/35LivRe41lOF571JSHDya7sfxP3LXsao6OUjPHgvmytSZtq0kaupaXo08zbE9Bjizn2PYDv+4DuuX9IPSBrQyCnsiYzgRRjAA/ktdmqtbC+eV2I42knP5LzqTLnFxHckq4o+5al0Xjx2bY1Jlhm5jucctPcJWWHE+QH0C57HKcd5GC4n5lal6SL6ZVko6MekArWI2wPO1hy547ZXTV2aV6RhslqpG+RmD1WHaXfAkd15sGrqvQ+8ytDarHAe8iRp88DBCPBHHG4klJzez0BtfT4oOiypXEeMbemMLm9U0mGpYZapt2RF2HMHZp8CPgmu1Vxf3ViS36zVbBnL5Hg/IDxXkySfRqEa2cD6RxNi1241vAL933gH+ayHLR1my23qtqww5Y+Q7T5gcD8As5y+ritRVnGXYxCUoXYyAUjFEE8FRkNzQXD9JVR/7zP4gu59KNVuU9adDBakjZsadrTxyvMoZnRuDmkgjsQrhuyyv3SyPe7zc4k/ivHlxNsHo3pTFVl1GB16V7I2Vi7DPeec9hlGkR1NM1V9LrOEV6s1zOpgOaTn2T8cLldD1Omy62bV3TSxxtyxvv5d4Zyeyh1u/XsWzPXszzuk9qR0zA05+AHhhcOErofo7HR9Hl0a7Lf1B8ccEDHAP3e9lcJc1B51N9yFxjk6pka4d2nOVBPqViVgZJPI9o7BzyQPvVB8hJ7rtjwtdlN5vpTq476jYP/ktHSvSqwy0JNQu2pImNLhG0j23eAPkFxm9KJCussCaB0esa7Y1a0JLDgGt9yNvusHw/quo0Cy+D0LvTwvLHsk4cO491ebCQ5VmO9MyMxtkeGHu0OOD9FmWDVIp6Pot+zd0bV3WZ3y7ITt3Ht7Ll59Zk9rgqNt+ZjHNZI9rXe8A4gH5qs+TcUxYeLBsaPq1nTLDpqjwyQtLSS0Hj6/Jdd6RekkjKdVtK5E/rQHrhoDsEgfd3K84D8J/WJ4ytSwW7B03ozqEVLWa80pxGHbXHyBGMrq5tBsS6760x0ZqPkEpfu7DuQvMY5i05yrzdUsCHpCaQR/u7zj7lyyYG3oHpVC9Hc9IdRfA7cxkAa1w8cHv96oejGqW7mrCKezJIzpuO1x4zwuAF6VhJjkewng7XEZTGXZYnbo5HsPm1xBWV6diizrDv7bOP/cd+ZWQ5SyzF5JJJJ8SoCV7ccOKopb0r9pw/M/wlUm9lc0n9pw/M/wAJVRvZdgKFPLVngjEksRazDST5bgS3PlkAn5KucY57ePyXSahLCxus+swNnBtxbGGQs9nY7aRjnGMfeo2cck2noyPVp4+p1YXt6ZaH5HulwyM/MLUq63LVr14m1Ksj6xcYpZGkuYSc5747pmt25/0jbrwzEVpDG4sa7I9wcZ/32VunXgdobjMInNMReXAMDmuDxxnO4u257cYUPNkdq5IgGt3v7PslMYr9gxxAed24l3PJJUg12aN7X+qVXujkdJAXNJMJJycc8jPPKtTREXJWthobtsvqWzZ7Q425HY8Zxu5zlOjjgFWw6StVfLvf12xOYGsGwYwXcjnPu+PHklo5fD6M79LOlghgnoVbLowWsfIHF3tEk9j5lY7+Dhdc7bUsV3yMqxRtlq9BwawO5aOpnx7HOT2OMKjIxnqcxnjqCPpz+snDN7ZsnYG45/dxjjulnWE1HpGE2CR1d9hrcxscGOIPYntn7itTRnZq2WDvlrvpyFJaeHWtaZE2FteOs1jRE0Bud7Nvbuck8qvXnfW1SUWumC9xZL08bQfMY4xnyWkzeRucWdzpduOLQ6YjPusId88nKm/SQI7rkWWpKb3RkF0TjnA8D5hP9fhBz1ePLByucsezEJM19UtyuD5RJtYxhcfouOmsOlnM20Nc7vjxV7UtRdZi6EQLYs5cT3d/osxrXOkaxoy5xAA8yV0x3E7KEX2X9HqHUNUgrjOHvAdgZwPErvNX9HabdImfExwfFGXNOM5wFa0WhV0am2CFreoQOrJ4vd/TyC022mngLOX1U5STXg5rFE8g9Y6I9ggvPb4Ld9FbcsbZtgklfw6Q490eH4qx6b6PBAY9TqsawSv2TNaMDd3DvrzlYmg6gNPvkvOI5WdN58vEH710lleWJpY1FaPSq9zMYz3U/rAeOSuVF4tPfhWodQaGl7nBrWjJJPAXjlFosXZkXK0dH0lkhhAETi17WjsA7w/NctpwA1eMDsHOx9xW/cvie5a1I5DGN9jPjgYb95XO6UT+k4M/H+Er0xutjEvm2jO8AkS+ASKnpQie12ExCy1ZqyfqnzR1T5qDKMrHtovJmhQ1KSjM97GRSNkYY5I5W7mvafAhN1LUZtQsCWYRt2sDGMjbtaxo7ABUcpCVFiV2OQEpQU1GV0oyX9NvPo2RK0bmEbZGHs5vkugc7rV+vSlEkPkRks+BHguRBU0FiavJ1IJHRv8ANp/3lebLh5bXZqMqNay+eUbZXHaOzRwFVMOVI3WHvGLFeKQ/vN9g/wBE4ajUPLq0o+TwuSjOOqOnKLK/q58kernyVoarUYf8HI75yD+ikGtUftafJ9JR/RLyfRPiURXPkpYoXtcHNyHA5BHgrg1jS/GlZH/m1DtdpMH6nT3E/wDuS8fgFlvI9cR8S5UbbncGgbifHbyodY1NlSCSnVlEk8g2yyg5DB4tB8/yWVb1u7ZYYw9sMR7siG0H5nuVmlysPTtu5Elk1SEcVGUpKavYkcQQhC0BEoSJVSDgcJ4eoglWWilgSEeKDIT4qDKMqcBRIXppcm5QtJAXKsx1JZK5maBtCqqdlqZkJia72StJAZlGU1KlFF3JcpqOwUoDslWY67vVjI7uRkfIKzo2jzahYeZAY68ADpnnwB7D5lX9ZEcNOQxjAcRGwfDuVpRs5ynukYAcl3KPKVZo6j9yNyYkyrxA4lGUiFaBc0n9pw/M/wAJVMK3pX7Sh+Z/hKqDsgHKZ8skxYZXbjGwRtJHIaOwUKe1DEkWoGAnGFvXPR6elUgtSGN8cwBBbnLcjIBWLVIyvS5HxTVaWnWAAy1WAa7ycAMKN0fN9RNp6OTb6OS5ptL4v7YMs78cZ5VaXR3/AKTGn7mdTqdPdjjK7KeF8NvQ4nj2mZafmAFE5uk/8QAmWx631vdx7O77uylnnWSRxGs1Jq2oSxWpGySsw0uA4IAGPwwsl7ADwAus9JK01nXrgrwySlpBIY0uwMDyXMzM2nkKo9+CdqiNssjYHQNdiJzg9zQO5Hb8ykb+CaUrVo9VGrUttdEIbB7cNf5fAqw6oSRzhpPveA+KzateWckRRueWtLiGjOAPFaTrw0+N1ejYMsM0bTIHx4w7xAQ8mSNP4EVzbAJKrDFKxsmRM1vLuPA+Sq1n9G1DMRkRyNeR8jlT+tV5v7wGJ3n3Ca+DI3RkOb5tOUNQfFVI7S7qgbPuY7LHe00jxBToNT3Y9pcbBYlijEUg3xjsCeW/JTMvdI5ZG4nw3HhcJYr6LF1o6H0tvsdo0dcnL5ZQ4D4N7n8QuKIyVbsyT3JurM4udjA8gPIIbVcBl+GjzccLpjjxjRtzQ2C1YiaGMkO0dgeQFbjfYtENkeS0c47AfFVHTVYft9Q+TP6qrYvSTNMYwyP91vj8z4rVGOMpdFjVLrJGitXOYWnLnfvu/oFW0o/8zh/8v4SqrnKxpR/5nD9f4SqeiEFFUil4BIUDsEKHQEi0NEiil1INnZG9gildiQEtBDCQSBzgEZWpbhp1q1l7YKoka6IB3q7pGOJiLjsGeGngglcZ5uMqBzWULpItGgMNAPga6SMg2Q2TLpC9he1pAORyA3w7qvTex7i+bSKjN9OSZu6M7XFgOHAZ4GeCPHCz76fQMNJlb/SgjpMts0+GeV0UGYiwlvtvky7AP+VrR5ZVv9D6fuMccTS+D1p53OJ6kbS5o+rSG/TPko86+gcqhPlDWvwwSBuBxIPa7DKYu6dkBOCanBRlJGjK0L9SOrpmnuLT6xYa+Zxz9jOGjH0J+qi0yobl2KvnAe72nfutHJP0AK0fS2VsusOaxu1kMbImt/dAb2/FeaUrmoo2lowCVJWj6smCond06GUxvyuz60YXZoTU2NYcd8LMccEhXJbu6PA7qiTkrGNS/wBizrwBKQlIgrtRkRCEKkEQlQoBEqRKqQEqQJUKCEIVAJQEAJ4CJAQBODU9rVK2LPgtqJlsg2o2q2IVJFSdKck7GDu4/wAlrgTmivUpy25dkQGAMucezR5lbdTTKun1/wBJWx1ADitG7/1XfvEeQUTHNYWRCMsqsO5zB70p+JUOoW5bs/Ul4DRtY0dmjyCnE5y5zddI2Ib27T4qsTcFzi+U+Mjz4rA1u0JrQgY7LIBtyPF3if5fRWqrpZHNrVv7+T7X/Tb5/NGv6VBpscLGHMhblyPoQ4xnRhpUBCwekEIQgBKkSqgt6V+0ofmf4Sqg7K3pf7Rh+Z/IqoOyAVOaU1KEIy1C/BXR3df9cipNZEYnVWBoduzk8c/DsuVa7CkEhHipR5cuBTZ2tn0qE9mlO6th1YkuAf75I+XCzX6yHa3+kelx1ep0934ZXPdU+aUSHzSjj+MjtqNyxf1B9wQ2RUlsN3MgeMh+BjPjhc1rwI1e4HFhd1nZLO3fwVWG7Yr5NeeSIuGDseW5H0ULnlx5Uo1iwuErI8ZKs0qc1uwyCvGXyPOGtHimwQOllYxuMucAMnA5WjaMenxOqdIC5FKczslzxjsMfmqdpz8Lsa62yjDG2k6eGztdHYJcMO57BZjpMlNe8uOVGSqahjofuSskcx2WOLT5g4UWUAodeJdbdnxguDv+5oKuRzsdRlc6JxnDm7XBvsAeOfj5LJb3WzVM/wCg7TWW42Q72F8JPtSHwI+SHnyxSM99yx2Em3/tACrvkc85e4uPmTlD+6iJQ7RivA4uTSUmUiG6AlW9KP8AzKH6/wAJVQq1pX7Sh+v8JQpT8AhA7IUA+Hq9QCDfvcCAGZyQRyOPgtaDTtZbBpr4Lj44dScIoi2VwDTyAHY7eP4rO04zDUYfV7bacuTtnc/YGcHx8PL6rrNG1ilAzQ6duxF0OjukJcP1MrZC5pPlxkfIryZ5SXSKc9Pp96DoSvtAuuzuiDhI7Jex4blx+fIVXUXXIdSsRWrL5bETnQvfvJ3Y4IyfBdG/WYIYNNjiNGb+2zulMrA8xNMuQ4H7ORzn4LN1WnBbl1XU69sSCOw5xAYdpDn4Ht+Z74x28ViE3fyQaMyub7I32q0lhrIQI3SMeRsBPDc+ROeFZ02hZu155mXoq0VUBrnzSuaAHkjAwD35z81c03Wq1bQLdSSlTfMSzYHxk9Xk5Ljnu3PCl9GZ42abqkJmoMml6XTbdI6bsE54PdWcpJN0RJFZ3o9dM1v165Wg9VLGvknlJDtw9nBAORgLIsRCGw+JsscwYcCSM5a74hdfqWsUmN1iWB9S2+V9bDJRvY9wBDywHwHh5LnH1Y7GnTamyVrXNlAfCyItYwuJw1pz3wM48vFMWSX+wZRAU5gkYGGSNzQ9oe3cMbm+Y8wrNfU+lCyL9H6dJtGN8lfc4/M55Whc1Rl3TadGGpC10ZL3OZHtw4n3WDJwPPzK1PJJPoqRY9Hqu2PqO4dalbVj+DfekP8A8Ix9Vn3o5bzL+q7mdNs43Ann2ySMfQLddipLLCztpVJ4JHjM/hx+92P/ABWTSvx0tBvtArSSumi2RTsDw4AHJ2nyXmUnbkjb6MrUqMlCVkczmOL4WSjafBwyPqrbvRy+y3UruMQNyEzRPyduA3cQeO+PzV3UmQa3eL4rUbZI6Mbi2OPLBtYS7JB9kDgePccLara1QdeggsWYunHSjfDJvGI5OmWvYT4ZB7eYW3mnSozSOM0uhLql2OpA9jHyAkGQkAYGT2+Sut9GrUlivHDapyRWGPfHOyQmPDB7QJxkEfJTejmo1I9YomSvUpCKN4fPud7ZLCBuycd/LzWvDqlOGfTxPa08zQV7IeK3EA3N9kY7bifLurPLNOkSlRyF6qypI1jLla0HNzuruLgPgcgcqsterBHrlp+4QUpGRZbHXgwwgAkudzwBwCeTyOFjg5AK9OOV6fZlghCF1IIUIKEAqEIQAlSJUAICEoVA4BSMamNCtV4zJI1g7uOF0iiMt6fp8ltxORHE33pHdh8B5lbcLdOqACKu2V4+3L7X4dgqM9kBja8HsxRjA+PmVsafogbXZa1J7mB4yyJvDiPMnw+S6JfZ4c06XKXQ+KVs3vV4dvl0wpjp9ebkR9I/5e33LYq6fp5iBbGB8Q85RPUELS+J25g757hZbS0jniab3o5i3p5iJDh8visO3HscV207BNE6P7XdvzXI6kAMudwPzUX7PZjn4ZHpVuKgZbMg3bew8Xu8B8lm37896d8s7succlRSEnv28B5KMrLOkYLly8ghIlUOoIQhAKhCEBa0v9ow/M/kVVCtaZ+0IfmfyKqjsgFSoASgISwS5RtS7UJaEBTgUm1KAhLQ4cqWNhJS14XzSNZG1znHgBoyStXrM02BrqkwfLPC5kzXxe5k9hn81DhknWl2JPJFp9eWmz1WyZmsd1m8mPxwD5+ax5H5SvJJURQ1jhW2ISkQUip3QJQkTgEKOatarsOlWc03yODm4nBOIvgfmspo5WrUP/K7TfXjFkt/s+D+t+P0UZ5s3Rlyd1EVK8cqIqnaI1KDgoDSewykQ2K85Ks6V+0Yfr/CVUVrTP2hF9fyKAqeCEeAQoAISEJUKUBoCtNvzsovpsbC1jxtc8RjeW5Dtu7yyAVXRhRwT7INwlS4SYSgIrXr0/qJphsQjIAc4RgPc0HcAXeIzyqyc3usuKfYHRt5W/6PQMbbddmaDFTYZyD4uHuj6ux9yrejkjYNbpyvxt6oa7I8DwfzWjqd17G2KHqsEDxP+ufE3b1NpIGR2HnwvJmk2+KOiQjnOZ6PWp3uzJcstYT5hoLnfiQubmHK6uGtHqum1Kde3HHLA2SSRsjHAcnJduAwBgBcxaYGSOa17XgEjc3sfiFMNNtCQlLULFDf6u2Lc7kPfGHOYcEZafA4JVTwwE4hJhepRS2cxpSYTsJCtUgWaOoz0C41xFuJBDnxhxYRkAtPgeSqYHCckRRSdgEiVItEAoQhACEIQCoQhAW91f1MjH6xVgmpwVQRIxXanD93kCqTFcqn9ZjzGF3gZfRraDXZb1mpDLyx8o3DzA5/kumsSt1X0m9RcX7NkjgGHByGkhcjp1k078NgDmJ4djz81pvu/o7Xv0k2MzxujeGgOxkOaRnK7rG5W491orwKcb+jUhitafpBtalHYheLDGBu4ctI5x8crVpXoLFmVsBJgcSBnxC4GDUSzRJdN6bi6Swybqbu20YxhbmizmtXdPJ2aOPifAJLFJpuR5MkorTNA2C2bA+ycLltbcTemb9lrjgLVimMswbnjOSVhX5hNZlkHZziQuTVMzitytme9RlSPKjK4s9yBCRKoaBCEIBUJEqAtab/AI+L5n8iqzfBWNO/x0XzP5FV2+CEZZq1pbM7IYI3SSPOGtaOSVdl0e9DPDC+uS+Y4j2ODg8+IBBwpfRmRrdVDNwa+WGWOMk4w9zSBz+C1dHp26E1WK7J6v1us2GB5wWvLMB/wyeFGzxZcsoypGU7Q77LEMD6/tznEeHNIcR3GQcKF2nzthmldGQyF4jkJ+y45wMfQrptIgmoDT6tuMxTSXt8cbu4aGEE48icIl6eqaNNMySOOazYhjmDjhrZASN3yIIKlnn/ACJJnNQaXasMjfBCXtkc5rTkcloyfwTYtPsywxyxQueyWTpM28lzsZxhdZp1d9BunVrYEUzprGGuIB5ZtB+pTNMY7TYdPhvN9XldakLQ/gjMe0O+Az4pZX6iRgPqaho0sdhzTC/J2SMeHYI7jIzz8EP029JYjjkiIlnZ1Wb3Abh3zklasejSep1q07bMEslsNfHI8bHjBLntHwA7pddlg1HTJbMFgTmtOe0Zbsjf7o574I7/ABSyLK7MuX0f1JkrInV29R/ut6rM9s+fks+/QsUXMFljWl4Jbh7XfkSuraAfTVg2bs1gMDx/U9lzWr1XVpI92mSUA5vDHuLt2PHJSztiySckmZhSJT3V17anqDS0/rvFaPddFIKRjHOcGtaXOJwABklI1pJAaCSTgAeJXQ1YY9Li5w604e279z/KP5lU55cnD+yGtob9ofcnZB/kxud/QLSgqaXFVmhc50jpMYlcBlmPL5rQ9GNOj1J8ly77deJ21rPB7u/PwC7VprdLpCKLZjG3aMfcuU8ii6PNxnPbZ5Rb0YOBdTsNk/yPG0/f2WLLE+KQskY5jm9wRghegelekR0mDUaDdkW4NljHZuezh5fJc3MYr8OyUhsjR7Enl8D8FuMlJWjpGUoOpbRBpE9WGu8SgF581lXHMdaeYuGkpsrHRyOjeMOacEKPC03ao9EY07EVrTf2hF9fyKrKzp3+Pi+v5FQ2VPAIR4IUAIVujVjs9TqTCPaMjPiq+PaI+Kikm6D0NATg1SxROkeGMaXOccAAZJK6Gn6NH2fXpHNee0EI3P8Aqew/FU45MsYdnM7UFq7OXRtOqgdfT7LQexke4Z/JVJtJ0qbiGSau7wyd7fx5/FQ5L1MfKZypCUBad7R7VNpkw2aEf+rHyB8x3CzwEZ3jNS2izVcWuBHBHZdRqdCTUdYbJWaP7XEyfJOGtBb7RJ8ACCuUi4K2pdcnfpEOntDWMYC17x7z25JDSfIZ7LxZYScrR2UhdUuQV6x07TXZhzmabGDO4fk0eA+qwH8lWRHLZlEcTHPe7s0ckrWr6dWogPuBtifwj7saf/8AR/BLjiX7HZhwUrNn/D15Zf8AsYSnzaXfhbulpWGNHcmM4XplDRLE0DXXbDocjiGIAbfgfD7lFqOlWaUbp6Vh8oaMuYeHY+GO6w/UT+glHqzywtTCF2livR1Zp6zWxTntNGMH6jx/NcvqNCfT7BhsNGcZa4ctePMFdsWdT15Eo0UCEieQmr0IwIkSoVIIhKUIURKkSoQEIQqBUoSJzQgY9injJBBHcIggkkz02OdtG520ZwPMqZsDxEZdjumDguxwD810jKjk8iRPkSN3t7/aHkpobTo2dNzQ+P8Add4fLyVSRkleYska5kjcZB7jIz+SVszT7zfq1eiOSujcMrjtF5s1cHcKwz8XcfknPsSzuDfAdmtHAVVktcdw8/DhK++Wt212CP8AzdyrLK2cpyc3dFqzOKlcxNOZnjDv8o/qsaR+Ur3k8kqFzlxbLCFDXHlNQUgXI7osUoBYssjJwD3XUx6bSLOjtGcd1ydeYwTNkb3C1m6w0DfzuXWDiou+zGWUlH4rZnahXFW2+Mdh2VZS2Z3WJjI7uVEuRqF8VYqEiVDRYof42L6/kVAPBTUf8ZH9fyKgCAkBUokJ94knzJyq4KeCpRzlBMth5d7RcSQO+eVsT6HLAybFuvLJDGJJIWlwc1pxzyMHuFhRng/JdrqVyu+G5m3RdFNXYyIRkdUvw3G4jwyDnKh4M6cXow5qE0emRag9wMUjiwDJJGM8/LgqSzpUkcchfagdPFGJJINx3taceJ4PccLRs29Mljs6dHI7DazY45XPb0i5nIx48knlJYdVfpsptW6tlrYh6rJ2sB3HsuA8Bz3SzhbMy/pfqb3Rv1CGWwwhvRYHl3PgOMeKyZMsJacgjgjsuo16U2LZkrXdLbH1mGORjwJQeBkkDOAefouVsl3Xk3yCR245eDkOOe+fHKI9WBcuxOqc53HPnlRveXdyT8ymEoWj2KCQFK0IAVyhSdbmxnbEzmR/kP6oWUlFWy7o9cRRm/KPdyIgfE+Lvp+aisTlzycqxdsA4jjAbGwbWtHgFmvdlU80U5vkzsPRjU2s0SWBp9uOUuI+Bxg/gVpQao5zu688hsy1perC8tcB948iu0owiSWMEgBzWuJHxAP81ynBPZvi0y76R6g0+j00TyN05axo+oJ/ALg2yFjsKW7emt2C6Z+dpLWgdmjPgq7vaHCuOHFUaaJbkfXhE7ffYMO+LfP6LOIWjVmLHjP1CgvVuk8SRj9U/t/lPktlg+L4spqzp/8AjovmfyKrkKegcXY/r+RQ7FUdkJR2QgAJ7QmhXtJrC3qUEL/cLsv/AO0cn8AhicqVm7pMDdMpttyN/tUzcsz3jYf5n8l3+kwRUKrAcGZ4Bkf4k+XyXnup2TLO49snj4LebrvWhY9pwdoDh5HxXLIm+jww2+UjsJZIp4nRSNa9jhgtcMgrzjXKP6N1WSvG49MgPjyfsnw+nZdPp9x9h4a05JXL+mc07dfc2ZhaGxtDD4Ob5j6k/cucE4ypndxUkQ157EbsseR9VIdLp3yXHNaY/aYMtPzb/RZEdlwPdaVO09z2taC5xOAB4ldmcJQnHcSOf0b1CEbomMst84jk/ceVNT9G7L8PuuFZn7p5efp4fVdrVYzTYBvIdYI9t3l8AmTywXmlkvDvB47heac3LUD0QnKC/wAhzrxV06B0VJgbkYc88ud8z/JZ+mSsfr1MzHLeqDz+H44S6uyarZfBN3HII7OHgQsV8rmvDmkhwOQR4LjHE/J6uaa0ekz6r03kZUlbU2yPaCfFc1QtjUNN9YnZiQP2EjxOBz+Kz7urtpyyQV8mZp2lx7NP8yvO4NycV2dIpVbGWJGx6hOIj7AlcG/LKv8AQj1rT3U5CBM32oHn7LvL5HsVzscm49+Vp6dYMUzTnxWpxcdrtGlvRzMrHRvcx7S17SQ4HuCO4URXRel1drb8d2MDbabl2P3xwfv4K54r6GKfOKkcJKmNSJUi6kBCEIQEIQqASpEqFBSM7qNPaVTMjrPQ5rHv1JkknTY6k8OfjO0ZHOFdmEFP0VldRuMs7bjHbulgA47EO7rmdM1OTTxZEbGP9YhMJ3Z4B8R8U9uqSN0mTTtjTHJKJS/nIIGMKHz54pOdkuqag/VtQa4tbG0lrGgNAIzgckDnlagjgPr5jraefV7jK0frZ2tEbWkEZyOTjPn3XLF5ByDgjkHyVq9qTrLpwwbIrEjZ5GEA/rMEEg+XJ+9U7e29JGrLpunyzNdVtyCKeabp4ZuDY4+Sck5PHZRMpUfUbFjfPIx9Zs1cloaWkybCHDOO/wCB81kx37MRr9KTb6s5zo/ZHBd3z55T36pce6Ql8e18PQLBE0MazOQA3sOec+aWzXCf2ardDry2jBHckJhnMFgmMDDtjnZbzyMtI55UDKcDYpI43ulhs0DbjdIwNcxzCfL5OHyKrP1vUXvjeZmBzHFxLYmje4tLdzsD2jgkZKijvvZVfG7Lniv6tEcABkZdl3zJ7fUqOyqMymUiELR6UCVIhCioQhACEIVBPTP9qj+v5FQDspan+KZ9fyUQUA5KO6alCBkzCrUQLlUZ3XSeiVSO3rVeOZocwZeQfHAz+ajPJnfFWUzp9lsImdBKIz9ssIH3pDRsmo60IXmBp2mTwB8l1L/SKxHrEwsZkqBzmdEAdhwEx5YPRC2+JmI/W8ta7nAyMApbPB7jOLkGFWetTVL5uOZmtWg2Z/uI9mc+ay3IfRw7QxKAkT2qnoZPVryWZ2QQjL3nA/qt6wIqVYVa/ut5c7xefMqLQYhBUmuOHtPPTZ8B4/yC0KWg6hrJMsQbHDnHUkOAfkO5RtLs8U5Oc68I52Q5JVd58V1uoehWp1oTLA+Kzt5LI8h30B7rE0ikbGpw9SJxhY7c8lpxxzg/VItS6O8dF3TNAjdE2XUM5fy2IHGB/m/or50sR3N8Rw3Iw3dwFFfv4svDD2XSGrAdQrGFgLAWsnj8iW5B+RXWb9s6JrtnJ6j6Pt9qSkSH9+mTkO+XkVgNJBwV2TbLHTbc+JC53XYOlqj3saRHKA/OOMnv+KxI1KOrM88PBC0K+2WMxSDcxwwQrumei2qanE2aKJscR918rtod8h3KfqGgalo7RLYia+EHmSJ24D5+IXPkrqzzz2jnblZ1Wcxu5Hdp/eHmm0+Lkf1/Ira1KAWNL649+E5/8T3/AJLGq/4uP5n8itG8U+USr4JEvgkQ7Dgtr0cAbPZl8WQED6kBYgWvoj9rbY84x+aHDP8AwY+V+6Y5UDpXMfuY4tPwSvPtlVpDyoc4RNTS9anp3A55c9juCPHPhhdNajGtxRDUW+3GctDHY2Z8Mrj9Fja/UWuf2jaXfVdLo1lk+sRQSDfG7dlvngErtGC4ubOOaTWRRiPn9HdO6f6vex3mHn+aj0LS5KutxySe3DG10jX48QOAfjyr74WxVLs27qRYjfXkz9lx/PwVnS5Y5IZml2PZAJ8lxzJPG6N4XLkrIZ5ZrVgxxAuJTJq1qqOo9vHjg9lotgZQriSOUSGTndjGPgpTNA922Nz3NLfa3ea+Q8jg/wCj3vGpo5/XIxd0cWR/eVjgn/Kf6HCpaJ6LP1FosXHuihdy1jfecPP4BdRFpcBjmilna6OZhywDw74Sy3WxOPTwG+AXTPnainHyccMHFuL8Gfb0U0o2QUGnoA7iN2Tk9ycrmfSDQpYDLegeZWEl0rSOWZ8fiFej161PqE7JtXihDLJYyEwAlzc+f4LoIZoZ3uaQC1zTkHxXk9yWKXI9sUpKmeaxuIK0YX8BwVK7CK16eBvaORzR8geFNVdlhC+hNJq0c1p0aGrvFnQ/N0Lw4fI8H8wuZK6FgM1SxEOd0TvwGf5Lnitem0miZO7GpEpSL1HMEIQhAQhKqAQhCFBKEiVUg4FLuTEqE4jspMpEKloXKMpEIWhcoykQgoEqRKhQSpEqAEiVCoBCEIUlq/4ln1/JRBS1uJ2/X8lEEIKlCRKgJGHlbfo9qLdO1SCy8EsaSHgd8EYKwgVKx+Fmjhlx8lR6Aa+hC9JqE2owzV3EvEA94k+HmqUt+o70VuQtkjjkfZ3shzyG5HYLkBOfNI6YnxUo8i9M7FmdklVyUrnZTMrR7oRpCqRqiCkaVTTOoptDtKoxg4EhwT83kFd425DC1sMWGsjAa0DwAXnWlSGfTXQg/rIHbh8j/r+a026iXjJdh/2mrnkjyPBFuMmjr59VbGwuz2GVyOt6++eaHZwwAhw7d/FMl1AYzK8NaPNYF+265aMpGGgBrR5AJiXF2eiOwkmcZiXnnxXTR6jfhtnVPVdrHRtY5hJwQBwfP4rL0D0cta27q7hDWjdh0rhncfIDx/kvS7VKKehJWDWNDoy1vHDeOCuubPDWrOnLweXMnJmLs8kkrc0TWYm2ZGT7XQhm0B2CCfHhc3qtK3pNx1Sy3a8DIcDkPHmD5KrUmdWtMmaM7TyPMeKTaktGpTdUj1iDU45GBzCNp7Kx6xHMwskAc1ww5p7EeS4SrqGGgxuyz4eC0WaqyFm+R3yHiV45Y3ejjyXkz71dlX9JVWHMcbXhufLGQuSqn+0xn5/kuk1Ww5um2J5TiW04tA+ff7guag/xDPr+S9K6M+n8sroQhU9QLR0Y5tPZ+/E4fdz/ACWcrNCYV70Mrvda8bvkeD+BQxkVxZZn4eQq7wtPUa5inc0+BWe8Y7ozjjlasSrKYZsg4yMFbGkC3BONRgg6oiyMHODkY/mtDQ/QmbUKzLV2wa0bxljA3LyPM54C7irRg03R2UImmRkbCOQMvPj9Sn5KhHjVkyY+UrXZ5xHrM7NKk0wgOjc8ODiTlnOcD6rW9HpN7J4yfadHuA88H/VclJI51mR5YWkuPsnw57LW0C16tqkM0p9g5Y/4NPH+qxnknB8Rji4ytnSdd87PV5HNYG+7gYUlp8bC2SKNsDWMwQDnefNQ36xZK7HfKp9KSVwBJIXylieR3Z7HlUEWq92UxWbUhH6qJxHGPBULWoMMTXMdnPKm1x7aOlNqt/vbBBcPJg/qfyXKulc3IB48l6cuFSikvB58Em25vyXqZ6b5faDjLKZO3bK2YZHVYzPKdrGjJPwXLssFhDh3C67Ra8GraRJXtPJMww0ju0+B+hXiy4ZJpvo98JpHFWZXWLMkzvekeXH6lSQu2tK0LHo1rFYPc+jI5jSfaZh2R54HOFnsGThe+4taOXk1tEbvsEHsWkfguYxwF1mkgQtmnd2jie77mlcp4BT07uUhPwMQlKRes5iFCEKgVCMIVICVIlQAhCEKCEIwqASoCEAIQlQoiEqEAIQhUCpEqEAIQhAKhGEKgkg/vm/78FGnw/3rUxACVIhQCpcpEIB2UZTUIShcpEIQooTgcJiUIGXaVt9Sw2aPBI4IPZw8QVtyMhuwesVTkfab4sPkf6rmQVNBPLXlEkEjmPHiFDzZcPLa7L8sLmu5UDo1fg1SvYGy9Dsd/wBWIcfVv9PuVl+n7outXe2aI/aYcj/RDjzlDUkdbpVyGlolGFhAAhaT8zyfxVtmrsJ95cMLEja7YHkjZw0/DySQ2pI3Dc8Y+a888bb0bhJeTb9ODHZo1JsDqNlLQfgRk/kFyTYvgtS7Zm1B0bdpEcfujzPmiOkWs6kzmxRju95wF1xxcY0yTypPRQihfu9nI+S0oa0VeI2bj9kbfE8knyA8Sq0+qVaw204+s/8A6jxho+Q7n64WPatT2pepYkc93hnsPgB4LZlY55O9In1O+69Y342RsG2NmfdH9SqcJ/Xt/wB+CYSlhP65v+/BD2RgoqkR+CRKOyRU2KlCaE4KEZ0sDxqOlsfnM0ADJB4keB+78lThga67A2UewZWh3yyMqjQuy0rAmiweMOaezm+IK6FsNfUojNRdkjl0Z99nzH81DxTTxP8AR1r9ajZI5m4DB7KSLVWSHG5cJPBbdJvySfH4qWCexCMkZI7AryyxPwdY5I12M9JGRf8AENp0QAa8hxx5kDP4qGrEXkABTMqyWHvnncACcvkecD70kurwU29PT2Nkf4zPHA/7R/M/cu8Y0qOU5ObqJ12m/rKbW3yGBgwJnHAx5HP5qSwa9aHq1Q2yT7rmHLPqV5vZvWLb99mZ8p/zHOPkOwTa9yxVfvrTSRO/yOxlcp4n/po7Qxt/8mzc1Fs8875pyXPd3KyJYyCrzNfMrdl+IP8A/cjGHfUdj+CbMxkzOpA4PYfEf74XnucH8j1qMa0ZhaV3XobBHU0ptiR2XzuLsZ7Dt/JcW9jgey2dO1JzKDa+cOjzt+IVy/KIo9AN6J/AIC5L0s06BssN+BoaZiWyAdi7uCqUWoy7+cqxasuvMZG5wbDDl73uPAXk3GVm4xM288VNBkHZ9kiJvy7u/AfiuXK0dXv+u2R08iCIbImny8z8Ss4r6Pp8bjHfbOcnbGpEqQr0GBEJUKgVCXCMKgRCXBRhAIjCdhCFEQlwjCAEIS4QCISowqBEJ2EYQCIwlwjCoEwlwhKgEQlQhREJUIB0X94ExPjHthNwgDCMIwlwgEQlwjCUBEJcIwlARKjCMJQBCMIwlAUJ7QkaFraVRry1rVy46QQV9o2xY3Pc44ABPAUejlkmoq2ZwaVPXnnrSdSCV0bvNp7/AD81sM03Tj17YsSvpRRsdtbjqb3HAYfAEYPKsVtAr253CGd4ilqieuX4B3F23a768cKWeaWePkoM1hz/APFVY5f8zPYP9FINRo4z6pNny3tUNugK1OnKd4kmEm9rvslrsYV2xpEEVGWdr5C5leCUA4wS84I+SWcX7fZWk1lzRirVji/zO9s/0WZYnmsv3zyOkd5uPb5eS3To9aOEWZpJugypHPIG43Oc8kBo8hwqrNOq2tTrQU5ZDDMA5+8e1FjJcD4HAHdLNQnjj0jFITS0rpYtIojXPUJ3WXRzOZ6vJGWj2XDILsj8kkOm6bYZclii1B7K20bGFpe4lxBPbtwpZ0XqEcw4JIv71qt3o42WpGQxzRsacBs2N4+eFVYP1gVPXGVqyNCXCMK0bGpUYRhKA4FSRSvikEkb3Me3s5pwQokoypRlqzai9IbzW4l6M/xkjGfvGEkmu2Hj2Ia0Z8wzP5lY6cFGcvx4XdE1izPZdunle/HbJ4HyHYKLkrW0DSY9UsSNnldFExoG5v77jtYPqU6np1NmnT2tS9aBisiAth28ZBJJz5YXnlninR3jjSMfakIK6STRqNGK4+/LZe2CdkTHQBoy1zdwcQfh4KtqWitpVLchlL3w2GRsIGGvY5hcDjz7LH5EWa4mFgqSGSWB++J5a7zHit+fRKVI2J7cll1aLpNa2Pbve97Nx5PAARV03Rp7s1YT25QI3TRyRloG0M3bSCPe7jyU9+LQoz2anC8YtV+f34uPwKmZJpbzk2pGf90R/kqFmCMxutVNwrF4ja2V7TJnbnkDw+KqnhVYoy2tFtm+b+lwN9l9iwfIN2j7yszUNUmuN6Qa2KAHIiZ2+ZPiVRJTSukMEYuyOTYhKaU7CTC7UYGoTsJMKkEQlwhAOwjCk6aXprpxZSLCMKXppdicWWiHCXCl2JdqvAUQ4RhTbUbU4iiLb8EYUu1G1OIojwjCk2pcK8RRHhGE/CXalCiPajCk2owlFojwjCkwjCUKGYRhPwjCUKGYRhPwjCUKGsHtBJhSNHITcJQobhGE/CMJQGYRhPwjCUBmEYT8IwlAZhLhOwjCUBuEYTsJcKUBGhbGk268dW1Tu9RsFja7fGASxzTwcHuOVkgK7p1SW9bjqwY6khwC44A8clZkjhlSa2ajb+mgT02xTx05Y2DqAAyb2kneRnHOeykOq1hHNBAJmxNqCCBxA3F28OLj5LPr6bPNPPESyL1fPVfI7DWYOOT81Yk0mxCJi50ZbFE2Xe12Q9rjgFp8eVikeKUMf2aFzVdP1EVhcila5sT2yOjHuyEg7gM89uR8UjtUpzunrvEzaskEULZA0F42cgkZ8fJUruj2KbJXGSvL0SBKIpMujz2yEzSYmv1StHKzLTK0Oa4dxnsUpGXGHG0aD9SqyvkrPZMKbq7IA4AbwWHIdjt38FLJrEPV6wEliWOsYI3zMA3lzvaLgDwMcLS1jRoItTqT14mCvJK2ORjR7IOfL4hWG6dUOr6nEKsRayAFjdgw048ApaPPaOf/AEpXfd0y1JF031TtkbGz2dgPs7efI9lUo3q8UN+GaaxD6wWlkkLcuGHE+Y81saFpzXeu+t1Mhtclpkj7H4Z8Vy5YNzd2dvGSO+FdHaHGWiG903WXuilllYTkPlGHO+fJVVo9sLotbrabFQouqvl6jocjMYG8bjy7B95c+R7QWo7PfglcSDCTCkwkwtUelDMIwn4RhKFDcIwnYSgKChAFI2MpY25IXXTaYyX0Q06atUDrDpDvfHHlxHtd8fReTPl4G0jLoalHQ0noRV45Z5J+pJ1mktAaPYxgjnOSr1jUNKuR3GTG1GyxYZYIjjBOduHDk+ZPKm1GjFX9EKUjqzY7JnLXuLMPI9rv+CpejUEU+u1Ypo2yRuJy1wyD7JXhbTTkapdj5dTo34rkd4WIWzWGSMbC0OIaxu0NySOceKSXVKl9lyC62avFNKySJ0TQ8tDW7Q0g4zx4+a27OiVoPSim9kMbqdl59jGWhwBy3H4rm9dijh1m5HG1rGNlcGtHAAWIcWypJ9FqzqlO+LcFls8NeV8b4nsaHOaWN28jxyFUguUq2ryWK8EkdYwPiY3u4ks27jz4nkrc0CGu30ctW36dFcmjmAa1zMkggf1Uuo0KTotKtikypNYma2SADgjPl/vunNJ0SldHFGCAUwcyes78Y2jbsx3z3zlVntwvQNbt1tO1CWtF6PVJo2AHeYzzkZ8AuFlGSTjGV7PT5HIzVqyqQm4UpCbhe5GWhmEYT8IwrRKI8Iwn4RhKFDMIT8IShRY2own4QvSUZhJhPQgGYRhOQoBuEYTkIBuEYTkYQDcIwnIQDcIwnJFAJhGEqEA3CMJ2EYQCYRhLhGFANwjCcjCAQDlJhOQgG4RhOQgG4RhOQgG4RhOQgEwkwnIQDcIwnIUAALa0R9etXu2rMrmfq+hGI8F+X9yAfIDv8VjBOBWZKzjlhzVHWzPrXG22Vpo2u1CGKVnUeG5ew4c0+AJ7qsGRU6d6ubbJZDWjyA8ENd1MlrT44HkucB+SdkLHBnl/GdVZ1OpGKvY1e0+xA9ttnThYyQOc7OOSB2Ax4qnS63/EMHrMzZpjOzc9r9wd28fFYQIHYBSMkLTkHGPJOJPx2lR6G25G30ltULHMczmFmfB4AI+/CkZK5uv6sWnBbXa4fA4XnnrDs5Ljnzzyj1iTJO92T3O48rPtnF+mkdpoGpXL7brbU7pGtrlwBA4P0WCzSTJo1jUHSbRFjY3Hv8gE/IZWU2dzfdcRnyOFtN9IInaVPUmqRbug2KItB5wc88/X5o010X2pQejn5Sq57qR7slRnuuqR9GEaQzCTCchU6jcIwlQgEwlAQlCjKSR912z79rT/AEK0yWnM6J7pHNJbjkZcuHBwpOo4gAuOB2GeAvHnw86NHaahNJqHonpsl2xh0lnD5njsPaGePgm6PQgqaxplitO+WKd8jR1I9jgWg848ly1WeMSxC11HwBwL2NdgkeOPitLWdUr2a1WCtNYndAXHrzDa7aezeD2C8TwST4ov6Oo0i/HLrdzTrHJjsvmrk+DgTkfjn71h3tYm07WtRZFBWkD7BcTLHuIXNdVwdkOIPnnlNMhJySST5rcPStPYpWd36P8Artn0cvPoEMsvs7mlp2gdicfin6k6SOrpUepyRv1EWm8ggu2bvHH0XCNne0Ya9wHwJCaZCXZJOfPPKy/SSsebOy9Kdb1Gpq1ipBYLYNoGzaD3bz4LBfpVeTS5bMFwySwRtkkZ0yGDJxtDvFw8llmRzjlziT5k5W2NS0+HRbFaE2nOsRNaYJMGOOTOTID9PJdFiljriTpUjnXNTCFM7lRkL6EeiMZhGE/CMLYGYRhPwjCChmEJ+EIKJkickK62crGoSpEstiISpEsWCEISxYIQhC2CEJUAiMpUiAEJUKFESoQgEQlQgEQlQgEQlQgERhLhGEAmEYSoQCYQlwlwgG4QlQoBqRPwjCEGZRlPDVNHBuHZSzLdFbcjcroq/BKKilmOaKO9LvVx1TA7JGVdzsAJZOaKvURvV8UXF2MJx08jIx2UszziZ/UQZFcZTc4njspxp46LnHuAgeSKMouRlTPjwVGWrR3QxCfhJhDQ1In4RhCjOUJ+EYUIMyjKkazJVj1U7d2FiTSNJMqb0byrzKecEjgqSSiBjA7rk5RsvFmbuKTcVfbTLjjCjfWLXYwryQplTcjcrrKZcMgJfUiD2TkhTKW5G9WpKxYcEKU029Ev8cKckKZnF6TcpSzBTdq6og3cjKdtRtVA3KXKXCMIAQlwhCkyROKQrdnnGpEqRLKCEISwGEISpZbEwjCXCMK2LEwkwnYQlixqEqFLFiISpEsoIQhLAIwhCCwRhCEKCVCEslghKhLFhhGEoCcApZLGYRhSYSYSyWMwjCdhJhLLYmEYS4SpZbFaFeqtGFTb3V2scKM45eifaMlOa0cpoPKc1Q8tCvaMFNrsHWCeTwlgGJAUHSLYjAlzhKWAvdx4ILvaSb/aKycNkUMYG/jwUbnYicPgpWuxuVZ7uCqdIq2Z07MKq4K9Y7Km5aR9DG9EaMJcIVOomEYS4QlgMIwlwnAKWSxY2+0FrBgNdqzoxytJjv1QC8+U6wZJtAhbwlaA5zUhdmIIiPtBeetGrHsjAeeFVnYOqVcz7SrS8vJSN2Vkldg6XZPcwcceKSE4jSud2WHdlK1uMbsqFzsQEfBWbByqUh9khdobRGUXDlNwpXDlNIXqTORHhInEJFqyCJEqEAiEIQpOUhTimlLPONSJxSK2URKjCEsBhLhKAlwlksTCMJcJcKksbhJhPwjCFsZhInkJqWWxqEqRSyiISpEsoIQhLAIQhCioCEqEBKEgTgEJYoCeAkaMqRoUMNibUhapcJCEszyISE0hSuCjKG0xqXCMJQlmrHN7q3DwFVaOVZj4CjOc9k4KcCowU4FDi0SZUkfdRBPaUJxJy7lN3cphcmlyhniP3YyoHHulLlE4oajEgnKqOVmUqu5aR6odDEJSkQ2CUJE4ILABPASBPClkHxjlXGn2VVYFYb2XOSNRZNn2UrDgqPPCVpXJo6Jk25RP5KXKY4rFFskYcNQ5yYDwmlylFsJXcKq5TPOVEVuOiNkJCY4KYhMcF1syQEJhUjlGVtMgiEFItEsVCblCAtEJpQhDgNSIQhQShCFSDwEuEIQguEuEIWgGEmEIQDSEhCEKFQ3CRCFDQJEIQoiXCEIURCEIBUqEIQUBOCEIZZI0KZoQhDnIftSEIQocyJwUZCEIdYjUoQhU2SNU7EIUMskCcEIQwPCeEIUIBKYShCAaTwo3dkIQqK8igchCp2iNQhCGgShCEA8J4QhQhKxTjshCyyoXKUFCFzZtDsppQhYKCYShChoY5MKELSA0pjkIWiELgoyhC2jLGFCELoQRCEID/9k=" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(171, 71, 188, 0.35); border: 1.5px solid #AB47BC;" alt="3D Ionic Equilibrium Acid Base Conjugates and Buffer Solutions" />
     <p style="color: #AB47BC; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 6.3: 3D Ionic Equilibrium Mechanisms, Brønsted Protons, pH Scale, and Buffer Stabilization</p>
   </div>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(i) Electrolytes & Ostwald's Dilution Law</h3>
-  <p>• <b>Strong Electrolytes (HCl, NaOH, NaCl):</b> Completely ionize in water (degree of dissociation α ≈ 1).<br>
-  • <b>Weak Electrolytes (CH<sub>3</sub>COOH, NH<sub>4</sub>OH):</b> Ionize partially (α << 1). Equilibrium established between unionized molecules and ions.<br>
-  <b>Ostwald's Dilution Law for Weak Electrolytes:</b> For a weak acid HA ⇋ H<sup>+</sup> + A<sup>-</sup> with dissociation constant K<sub>a</sub> = c α<sup>2</sup> / (1 - α):<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span> &nbsp;&nbsp;&nbsp;&nbsp; (Degree of dissociation α increases with dilution!)</span></p>
+  
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(ii) Acid-Base Concepts & Conjugate Pairs</h3>
+  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 16.5px;">(i) Electrolytes &amp; Ostwald's Dilution Law</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      <b style="color: #AB47BC;">Degree of Dissociation (&alpha;):</b> Fraction of total electrolyte dissociated into ions: &alpha; = (Moles dissociated) / (Total moles taken).
+      <br/>&bull; <b style="color: #AB47BC;">Ostwald's Dilution Law for Weak Binary Electrolyte AB:</b>
+      <br/>AB &hArr; A<sup>+</sup> + B<sup>-</sup> (Initial C, Equilibrium C(1 - &alpha;), C&alpha;, C&alpha;).
+      <br/>K<sub>a</sub> = (C&alpha; &times; C&alpha;) / [C(1 - &alpha;)] = C&alpha;<sup>2</sup> / (1 - &alpha;).
+      <br/>For weak electrolytes where &alpha; &lt;&lt; 1, (1 - &alpha;) &approx; 1:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        K<sub>a</sub> &approx; C &alpha;<sup>2</sup> &rArr; &alpha; = &radic;(K<sub>a</sub> / C) = &radic;(K<sub>a</sub> &times; V)
+      </span>
+      <br/>As dilution increases (C &rarr; 0, V &rarr; &infin;), the degree of dissociation &alpha; approaches unity (100%).
+    </p>
+  </div>
+
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(ii) Acid-Base Concepts &amp; Conjugate Pairs</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Arrhenius Concept:</b> Acid releases H<sup>+</sup> in water; Base releases OH<sup>-</sup>.</li>
-    <li><b>Brønsted-Lowry Concept:</b> Acid is a Proton Donor (H<sup>+</sup>); Base is a Proton Acceptor. When an acid donates H<sup>+</sup>, it forms its <b>Conjugate Base</b>. Stronger acid forms weaker conjugate base!</li>
-    <li><b>Lewis Concept:</b> Acid is an Electron-pair Acceptor (BF<sub>3</sub>, AlCl<sub>3</sub>, Fe<sup>3+</sup>); Base is an Electron-pair Donor (NH<sub>3</sub>, H<sub>2</sub>O, F<sup>-</sup>).</li>
+    <li><b style="color: #AB47BC;">1. Arrhenius Theory (1884):</b> Acid furnishes H<sup>+</sup> ions in aqueous solution; Base furnishes OH<sup>-</sup> ions. (Limited strictly to aqueous media).</li>
+    <li><b style="color: #AB47BC;">2. Br&oslash;nsted-Lowry Theory (1923):</b> Acid is a <b>proton (H<sup>+</sup>) donor</b>; Base is a <b>proton acceptor</b>.
+      <br/>&bull; <i>Conjugate Acid-Base Pair:</i> Species differing only by a single proton (H<sup>+</sup>):
+      <br/>HCl + H<sub>2</sub>O &hArr; H<sub>3</sub>O<sup>+</sup> + Cl<sup>-</sup> (Cl<sup>-</sup> is conjugate base of strong acid HCl).
+      <br/>&bull; Strong acid possesses a weak conjugate base; weak acid possesses a strong conjugate base.
+      <br/>&bull; <i>Amphoteric Species:</i> Can donate or accept protons (e.g., H<sub>2</sub>O, HCO<sub>3</sub><sup>-</sup>, HSO<sub>4</sub><sup>-</sup>).
+    </li>
+    <li><b style="color: #AB47BC;">3. Lewis Theory (1923):</b> Acid is an <b>electron pair acceptor</b> (electrophile with vacant orbital, e.g., BF<sub>3</sub>, AlCl<sub>3</sub>, H<sup>+</sup>); Base is an <b>electron pair donor</b> (nucleophile with lone pair, e.g., :NH<sub>3</sub>, H<sub>2</sub>O:, OH<sup>-</sup>).</li>
   </ul>
 
+  <!-- SECTION 5 -->
+  <h2 style="color: #AB47BC; border-bottom: 2px solid #AB47BC; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    5. Concept of pH, Hydrolysis of Salts, Buffer Solutions, Solubility Product, Common Ion Effect
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 5 WORD-FOR-WORD -->
-  <h2 style="color: #AB47BC; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Concept of pH, Hydrolysis of Salts, Buffer Solutions, Solubility Product, Common Ion Effect</h2>
+  <!-- NEW STANDALONE SVG CARD FOR SOLUBILITY & BUFFER ACTION -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(i) Ionic Product of Water (K<sub>w</sub>) & pH Scale</h3>
-  <p>Water undergoes auto-protolysis: H<sub>2</sub>O + H<sub>2</sub>O ⇋ H<sub>3</sub>O<sup>+</sup> + OH<sup>-</sup>:<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">K<sub>w</sub> = [H<sup>+</sup>] [OH<sup>-</sup>] = 1.0 × 10<sup>-14</sup> at 298 K &nbsp;&nbsp;&nbsp;&nbsp; (pK<sub>w</sub> = pH + pOH = 14)</span>
-  • <b>pH = -log<sub>10</sub>[H<sup>+</sup>]</b> | <b>pOH = -log<sub>10</sub>[OH<sup>-</sup>]</b>.<br>
-  • Neutral solution: [H<sup>+</sup>] = 10<sup>-7</sup> M ⟶ pH = 7.<br>
-  • Acidic solution: [H<sup>+</sup>] > 10<sup>-7</sup> M ⟶ pH < 7 | Basic solution: pH > 7.</p>
+      <!-- Title Banner -->
+      <text x="250" y="28" fill="#AB47BC" font-size="14" font-weight="bold" text-anchor="middle">
+        Solubility Product (K<sub>sp</sub>) &amp; Buffer Action Dynamics
+      </text>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(ii) Hydrolysis of Salts & Hydrolysis Constant (K<sub>h</sub>)</h3>
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Weak Acid + Strong Base Salt (CH<sub>3</sub>COONa):</b> Anionic hydrolysis produces basic solution (pH > 7): <b style='color: #FFF;'>pH = 7 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>a</sub> + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> log c</b>.</li>
-    <li><b>Strong Acid + Weak Base Salt (NH<sub>4</sub>Cl):</b> Cationic hydrolysis produces acidic solution (pH < 7): <b style='color: #FFF;'>pH = 7 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>b</sub> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> log c</b>.</li>
-    <li><b>Weak Acid + Weak Base Salt (CH<sub>3</sub>COONH<sub>4</sub>):</b> Both ions hydrolyze: <b style='color: #FFF;'>pH = 7 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>a</sub> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>b</sub></b> (independent of salt concentration!).</li>
-  </ul>
+      <!-- Left Side: Ksp Precipitation Criterion -->
+      <g transform="translate(30, 50)">
+        <rect width="210" height="205" rx="8" fill="rgba(38, 198, 218, 0.1)" stroke="#26C6DA" stroke-width="1.5"/>
+        <text x="105" y="25" fill="#26C6DA" font-size="12.5" font-weight="bold" text-anchor="middle">Precipitation vs K<sub>sp</sub></text>
+        <text x="105" y="45" fill="#CBD5E1" font-size="11" text-anchor="middle">AgCl<sub>(s)</sub> &hArr; Ag<sup>+</sup><sub>(aq)</sub> + Cl<sup>-</sup><sub>(aq)</sub></text>
+        
+        <rect x="15" y="60" width="180" height="38" rx="4" fill="rgba(102, 187, 106, 0.2)" stroke="#66BB6A" stroke-width="1"/>
+        <text x="105" y="76" fill="#66BB6A" font-size="11" font-weight="bold" text-anchor="middle">Q<sub>sp</sub> &lt; K<sub>sp</sub></text>
+        <text x="105" y="91" fill="#FFFFFF" font-size="10.5" text-anchor="middle">Unsaturated &bull; No ppt</text>
 
-  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 18px;">(iii) Buffer Solutions, Henderson Equation & Solubility Product (K<sub>sp</sub>)</h3>
-  <p>• <b>Acidic Buffer (CH<sub>3</sub>COOH + CH<sub>3</sub>COONa):</b> Henderson-Hasselbalch Equation:<br>
-  <span style="color: #AB47BC; font-weight: bold; display: block; text-align: center; margin: 8px 0;">pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>)</span>
-  • <b>Basic Buffer (NH<sub>4</sub>OH + NH<sub>4</sub>Cl):</b> pOH = pK<sub>b</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Base]</span></span>) ⟶ pH = 14 - pOH.<br>
-  • <b>Solubility Product (K<sub>sp</sub>):</b> For sparingly soluble salt A<sub>x</sub>B<sub>y</sub>(s) ⇋ x A<sup>y+</sup> + y B<sup>x-</sup>: <b style='color: #FFF;'>K<sub>sp</sub> = [A<sup>y+</sup>]<sup>x</sup> [B<sup>x-</sup>]<sup>y</sup></b>.<br>
-  • <b>Precipitation Rule:</b> Precipitation occurs when Ionic Product Q<sub>sp</sub> > K<sub>sp</sub>!</p>
+        <rect x="15" y="105" width="180" height="38" rx="4" fill="rgba(253, 200, 48, 0.2)" stroke="#FDC830" stroke-width="1"/>
+        <text x="105" y="121" fill="#FDC830" font-size="11" font-weight="bold" text-anchor="middle">Q<sub>sp</sub> = K<sub>sp</sub></text>
+        <text x="105" y="136" fill="#FFFFFF" font-size="10.5" text-anchor="middle">Saturated Equilibrium</text>
 
-  <!-- BOTTOM FEATURE: MASTER CHEAT SHEET -->
-  <div style="background: linear-gradient(135deg, rgba(171, 71, 188, 0.15), rgba(123, 31, 162, 0.15)); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #AB47BC; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 6 Formula Cheat Sheet</h3>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>Equilibrium Constant:</b> K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup>.</li>
-      <li><b>Water Ionic Product:</b> K<sub>w</sub> = [H<sup>+</sup>][OH<sup>-</sup>] = 10<sup>-14</sup> ⟶ pH + pOH = 14.</li>
-      <li><b>Henderson Equation:</b> pH = pK<sub>a</sub> + log([Salt]/[Acid]).</li>
-      <li><b>Solubility Product:</b> Precipitate forms if Ionic Product Q<sub>sp</sub> > K<sub>sp</sub>.</li>
+        <rect x="15" y="150" width="180" height="42" rx="4" fill="rgba(244, 67, 54, 0.2)" stroke="#F44336" stroke-width="1"/>
+        <text x="105" y="167" fill="#F44336" font-size="11" font-weight="bold" text-anchor="middle">Q<sub>sp</sub> &gt; K<sub>sp</sub></text>
+        <text x="105" y="184" fill="#FFFFFF" font-size="10.5" font-weight="bold" text-anchor="middle">&darr; PRECIPITATION Occurs</text>
+      </g>
+
+      <!-- Right Side: Buffer Action Mechanism -->
+      <g transform="translate(260, 50)">
+        <rect width="210" height="205" rx="8" fill="rgba(171, 71, 188, 0.1)" stroke="#AB47BC" stroke-width="1.5"/>
+        <text x="105" y="25" fill="#AB47BC" font-size="12.5" font-weight="bold" text-anchor="middle">Acidic Buffer Action</text>
+        <text x="105" y="45" fill="#CBD5E1" font-size="11" text-anchor="middle">CH<sub>3</sub>COOH + CH<sub>3</sub>COONa</text>
+
+        <!-- Added H+ -->
+        <rect x="15" y="60" width="180" height="60" rx="4" fill="rgba(15, 23, 42, 0.7)" stroke="#FF8A65" stroke-width="1"/>
+        <text x="105" y="78" fill="#FF8A65" font-size="11" font-weight="bold" text-anchor="middle">If H<sup>+</sup> is added:</text>
+        <text x="105" y="94" fill="#FFFFFF" font-size="10" text-anchor="middle">CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup> &rarr; CH<sub>3</sub>COOH</text>
+        <text x="105" y="110" fill="#69F0AE" font-size="10" font-weight="bold" text-anchor="middle">pH remains constant!</text>
+
+        <!-- Added OH- -->
+        <rect x="15" y="130" width="180" height="60" rx="4" fill="rgba(15, 23, 42, 0.7)" stroke="#40C4FF" stroke-width="1"/>
+        <text x="105" y="148" fill="#40C4FF" font-size="11" font-weight="bold" text-anchor="middle">If OH<sup>-</sup> is added:</text>
+        <text x="105" y="164" fill="#FFFFFF" font-size="10" text-anchor="middle">CH<sub>3</sub>COOH + OH<sup>-</sup> &rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O</text>
+        <text x="105" y="180" fill="#69F0AE" font-size="10" font-weight="bold" text-anchor="middle">pH remains constant!</text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 6.5: Solubility Equilibrium (K<sub>sp</sub> vs Q<sub>sp</sub> Precipitation Thresholds), Common Ion Effect &amp; Buffer Stabilization Mechanics
+  </div>
+</div>
+
+
+  <h3 style="color: #AB47BC; margin-top: 18px; font-size: 16.5px;">(i) Ionic Product of Water (K<sub>w</sub>) &amp; pH Scale</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Water undergoes auto-ionization: H<sub>2</sub>O<sub>(l)</sub> + H<sub>2</sub>O<sub>(l)</sub> &hArr; H<sub>3</sub>O<sup>+</sup><sub>(aq)</sub> + OH<sup>-</sup><sub>(aq)</sub>.
+      <br/><b>K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>] [OH<sup>-</sup>] = 1.0 &times; 10<sup>-14</sup> at 298 K (25&deg;C)</b>.
+      <br/>Taking negative logarithms: <b>pK<sub>w</sub> = pH + pOH = 14.0</b>.
+      <br/>Auto-ionization is endothermic; as temperature rises, K<sub>w</sub> increases (at 60&deg;C, K<sub>w</sub> &approx; 10<sup>-13</sup> &rArr; neutral pH = 6.5).
+    </p>
+  </div>
+
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(ii) Hydrolysis of Salts &amp; Hydrolysis Constant (K<sub>h</sub>)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #AB47BC;">1. Strong Acid + Strong Base (NaCl, KNO<sub>3</sub>):</b> Neither ion hydrolyzes. Solution is <b>Neutral (pH = 7.0)</b>.</li>
+      <li><b style="color: #AB47BC;">2. Weak Acid + Strong Base (CH<sub>3</sub>COONa):</b> Anion hydrolyzes. Solution is <b>Basic (pH &gt; 7)</b>:
+        <br/><b>K<sub>h</sub> = K<sub>w</sub> / K<sub>a</sub></b> &nbsp;|&nbsp; <b>pH = 7 + <sup>1</sup>/<sub>2</sub> pK<sub>a</sub> + <sup>1</sup>/<sub>2</sub> log C</b>.
+      </li>
+      <li><b style="color: #AB47BC;">3. Strong Acid + Weak Base (NH<sub>4</sub>Cl):</b> Cation hydrolyzes. Solution is <b>Acidic (pH &lt; 7)</b>:
+        <br/><b>K<sub>h</sub> = K<sub>w</sub> / K<sub>b</sub></b> &nbsp;|&nbsp; <b>pH = 7 - <sup>1</sup>/<sub>2</sub> pK<sub>b</sub> - <sup>1</sup>/<sub>2</sub> log C</b>.
+      </li>
+      <li><b style="color: #AB47BC;">4. Weak Acid + Weak Base (CH<sub>3</sub>COONH<sub>4</sub>):</b> Both ions hydrolyze:
+        <br/><b>K<sub>h</sub> = K<sub>w</sub> / (K<sub>a</sub> &times; K<sub>b</sub>)</b> &nbsp;|&nbsp; <b>pH = 7 + <sup>1</sup>/<sub>2</sub> pK<sub>a</sub> - <sup>1</sup>/<sub>2</sub> pK<sub>b</sub></b> (Independent of concentration C).
+      </li>
     </ul>
+  </div>
+
+  <h3 style="color: #AB47BC; margin-top: 22px; font-size: 16.5px;">(iii) Buffer Solutions, Henderson Equation &amp; Solubility Product (K<sub>sp</sub>)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(171, 71, 188, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #AB47BC;">Henderson-Hasselbalch Equations:</b>
+        <br/>&bull; <i>Acidic Buffer (CH<sub>3</sub>COOH + CH<sub>3</sub>COONa):</i> <b>pH = pK<sub>a</sub> + log<sub>10</sub> ([Salt] / [Acid])</b>.
+        <br/>&bull; <i>Basic Buffer (NH<sub>4</sub>OH + NH<sub>4</sub>Cl):</i> <b>pOH = pK<sub>b</sub> + log<sub>10</sub> ([Salt] / [Base])</b> &rArr; pH = 14 - pOH.
+      </li>
+      <li><b style="color: #AB47BC;">Common Ion Effect:</b> Suppression of the degree of dissociation of a weak electrolyte by the addition of a strong electrolyte furnishing a common ion (e.g., adding CH<sub>3</sub>COONa suppresses CH<sub>3</sub>COOH dissociation; adding NH<sub>4</sub>Cl suppresses NH<sub>4</sub>OH dissociation in qualitative Group III analysis).</li>
+      <li><b style="color: #AB47BC;">Solubility Product &amp; Precipitation Criteria:</b>
+        <br/>For salt A<sub>x</sub>B<sub>y(s)</sub> &hArr; x A<sup>y+</sup> + y B<sup>x-</sup> &rArr; <b>K<sub>sp</sub> = [A<sup>y+</sup>]<sup>x</sup> [B<sup>x-</sup>]<sup>y</sup></b>.
+        <br/>- <b>Q<sub>sp</sub> &lt; K<sub>sp</sub>:</b> Unsaturated solution; no precipitate forms.
+        <br/>- <b>Q<sub>sp</sub> = K<sub>sp</sub>:</b> Saturated solution in dynamic equilibrium.
+        <br/>- <b>Q<sub>sp</sub> &gt; K<sub>sp</sub>:</b> Supersaturated solution; <b>PRECIPITATION OCCURS</b>.
+      </li>
+    </ul>
+  </div>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(74, 20, 140, 0.85)); border: 2px solid #AB47BC; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
+    <h3 style="color: #AB47BC; margin: 0 0 14px 0; font-size: 18px; text-align: center; font-weight: bold;">
+      ⚡ Master Chapter 6 Formula Cheat Sheet
+    </h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px;">
+        <thead>
+          <tr style="background: rgba(171, 71, 188, 0.25); color: #AB47BC; font-weight: bold;">
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Equilibrium Concept / Law</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Mathematical Expression</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Key Relationship / Conditions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">K<sub>p</sub> vs K<sub>c</sub>:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">K<sub>p</sub> = K<sub>c</sub> (RT)<sup>&Delta;n<sub>g</sub></sup></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&Delta;n<sub>g</sub> = moles gaseous products - reactants</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Van't Hoff Isochore:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">log<sub>10</sub>(K<sub>2</sub>/K<sub>1</sub>) = [&Delta;H&deg; / 2.303R] [(T<sub>2</sub>-T<sub>1</sub>)/(T<sub>1</sub>T<sub>2</sub>)]</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&Delta;H &gt; 0 &rArr; K increases with T</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Ostwald's Dilution Law:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&alpha; = &radic;(K<sub>a</sub> / C)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Valid for weak electrolytes (&alpha; &lt;&lt; 1)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Water Auto-ionization:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = 10<sup>-14</sup></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pH + pOH = 14.0 at 25&deg;C</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Henderson (Acidic Buffer):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pH = pK<sub>a</sub> + log<sub>10</sub>([Salt] / [Acid])</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Max buffer capacity when [Salt] = [Acid]</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Henderson (Basic Buffer):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pOH = pK<sub>b</sub> + log<sub>10</sub>([Salt] / [Base])</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pH = 14 - pOH</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Salt Hydrolysis (WA + SB):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pH = 7 + <sup>1</sup>/<sub>2</sub> pK<sub>a</sub> + <sup>1</sup>/<sub>2</sub> log C</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Basic solution (e.g., CH<sub>3</sub>COONa)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Salt Hydrolysis (SA + WB):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">pH = 7 - <sup>1</sup>/<sub>2</sub> pK<sub>b</sub> - <sup>1</sup>/<sub>2</sub> log C</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Acidic solution (e.g., NH<sub>4</sub>Cl)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #AB47BC;">Solubility Product (AB<sub>2</sub>):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">K<sub>sp</sub> = 4 S<sup>3</sup> &rArr; S = (K<sub>sp</sub> / 4)<sup>1/3</sup></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">S = molar solubility (mol L<sup>-1</sup>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 </div>
 `;
 
 export const c11Chem6HtmlSolutions = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions - 72% Theory) -->
-  <div style="background: rgba(171, 71, 188, 0.12); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
-    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #AB47BC; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Calculations)</p>
+  <!-- SECTION A -->
+  <div style="background: linear-gradient(135deg, rgba(171, 71, 188, 0.15), rgba(142, 36, 170, 0.15)); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION A: Very Short Answer (VSA) Questions (1 Mark Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q1 to Q40 &bull; Dynamic Equilibrium, Mass Action, Le Chatelier Statements &amp; pH Definitions</p>
   </div>
-
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q1. Dynamic chemical equilibrium is characterized by:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Equal concentrations of reactants and products &nbsp;&nbsp;&nbsp;&nbsp; (B) Equal rates of forward and reverse reactions<br>
-      (C) Complete stop of chemical reactions &nbsp;&nbsp;&nbsp;&nbsp; (D) Zero catalyst presence
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Equal rates of forward and reverse reactions</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Dynamic equilibrium means forward and reverse rates become equal.</span>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q1: Define Dynamic Equilibrium.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A state in a reversible process where forward and reverse rates are equal, keeping concentrations constant.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q2. The relation between K<sub>p</sub> and K<sub>c</sub> for gaseous reaction N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇋ 2NH<sub>3</sub>(g) is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) K<sub>p</sub> = K<sub>c</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) K<sub>p</sub> = K<sub>c</sub> (RT)<sup>-2</sup><br>
-      (C) K<sub>p</sub> = K<sub>c</sub> (RT)<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) K<sub>p</sub> = K<sub>c</sub> (RT)
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) K<sub>p</sub> = K<sub>c</sub> (RT)<sup>-2</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Δn<sub>g</sub> = 2 - 4 = -2 ⟶ K<sub>p</sub> = K<sub>c</sub> (RT)<sup>-2</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q2: State the Law of Mass Action.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The rate of a chemical reaction is directly proportional to the product of the active masses of the reactants.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q3. According to Le Chatelier's Principle, increasing pressure on N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇋ 2NH<sub>3</sub>(g) will:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Shift reaction backward &nbsp;&nbsp;&nbsp;&nbsp; (B) Shift reaction forward (toward fewer gas moles)<br>
-      (C) Have no effect &nbsp;&nbsp;&nbsp;&nbsp; (D) Stop the reaction
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Shift reaction forward (toward fewer gas moles)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Increasing pressure favors the side with fewer gas moles (4 moles ⟶ 2 moles).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q3: Write the relation between K_p and K_c.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n<sub>g</sub></sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q4. What is the pH of a 10<sup>-3</sup> M HCl solution at 298 K?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 3.0 &nbsp;&nbsp;&nbsp;&nbsp; (B) 7.0<br>
-      (C) 11.0 &nbsp;&nbsp;&nbsp;&nbsp; (D) 1.0
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) 3.0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> pH = -log<sub>10</sub>[10<sup>-3</sup>] = 3.0.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q4: Under what condition is K_p equal to K_c?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When &Delta;n<sub>g</sub> = 0 (equal number of gaseous moles on both sides).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q5. Which pair represents a Conjugate Acid-Base Pair according to Brønsted-Lowry concept?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) NH<sub>3</sub> and NH<sub>4</sub><sup>+</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) HCl and NaOH<br>
-      (C) H<sub>2</sub>SO<sub>4</sub> and SO<sub>4</sub><sup>2-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) HNO<sub>3</sub> and H<sub>2</sub>O
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) NH<sub>3</sub> and NH<sub>4</sub><sup>+</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Conjugate pairs differ by a single proton H<sup>+</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q5: What is the Reaction Quotient (Q_c)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The ratio of molar concentrations of products to reactants at any arbitrary point in a reaction.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q6. What is the ionic product of pure water (K<sub>w</sub>) at 298 K?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1.0 × 10<sup>-7</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.0 × 10<sup>-14</sup><br>
-      (C) 1.0 × 10<sup>-10</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) 7.0
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) 1.0 × 10<sup>-14</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> K<sub>w</sub> = [H<sup>+</sup>][OH<sup>-</sup>] = 1.0 × 10<sup>-14</sup> at 298 K.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q6: What does Q_c &lt; K_c indicate about reaction direction?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The reaction proceeds in the forward direction.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q7. According to Lewis theory, an Acid is defined as an:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Electron-pair donor &nbsp;&nbsp;&nbsp;&nbsp; (B) Electron-pair acceptor<br>
-      (C) Proton donor &nbsp;&nbsp;&nbsp;&nbsp; (D) Proton acceptor
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Electron-pair acceptor</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Lewis acid accepts electron pairs (e.g. BF<sub>3</sub>, AlCl<sub>3</sub>).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q7: What does Q_c &gt; K_c indicate about reaction direction?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The reaction proceeds in the reverse direction.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q8. Henderson-Hasselbalch equation for an Acidic Buffer is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) pH = pK<sub>a</sub> + log([Salt]/[Acid]) &nbsp;&nbsp;&nbsp;&nbsp; (B) pH = pK<sub>a</sub> - log([Salt]/[Acid])<br>
-      (C) pH = pK<sub>b</sub> + log([Base]/[Salt]) &nbsp;&nbsp;&nbsp;&nbsp; (D) pH = pK<sub>a</sub> × [Acid]
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) pH = pK<sub>a</sub> + log([Salt]/[Acid])</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Standard Henderson-Hasselbalch equation for acidic buffer.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q8: State Le Chatelier's Principle.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      If a system at equilibrium is perturbed by changes in concentration, pressure, or temperature, it shifts to counteract the disturbance.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q9. Precipitation of a sparingly soluble salt occurs when Ionic Product (Q<sub>sp</sub>) is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Equal to K<sub>sp</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) Less than K<sub>sp</sub><br>
-      (C) Greater than K<sub>sp</sub> (Q<sub>sp</sub> > K<sub>sp</sub>) &nbsp;&nbsp;&nbsp;&nbsp; (D) Zero
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (C) Greater than K<sub>sp</sub> (Q<sub>sp</sub> > K<sub>sp</sub>)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Precipitation occurs when concentration product exceeds solubility product K<sub>sp</sub>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q9: What is the effect of increasing pressure on: N2(g) + 3H2(g) &hArr; 2NH3(g)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Equilibrium shifts in the forward direction toward fewer moles of gas.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q10. Addition of CH<sub>3</sub>COONa to CH<sub>3</sub>COOH solution decreases H<sup>+</sup> ion concentration due to:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Inductive Effect &nbsp;&nbsp;&nbsp;&nbsp; (B) Common Ion Effect<br>
-      (C) Electromeric Effect &nbsp;&nbsp;&nbsp;&nbsp; (D) Resonance Effect
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Common Ion Effect</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Common acetate ion CH<sub>3</sub>COO<sup>-</sup> suppresses weak acid ionization.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q10: What is the effect of a catalyst on equilibrium position?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A catalyst accelerates both forward and reverse rates equally without shifting the equilibrium position.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q11. What is the degree of dissociation (α) according to Ostwald's Dilution Law?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) α = K<sub>a</sub> / c &nbsp;&nbsp;&nbsp;&nbsp; (B) α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span><br>
-      (C) α = c × K<sub>a</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) α = 1 - K<sub>a</sub>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Ostwald's law states α = √(K<sub>a</sub> / c).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q11: How does temperature affect an exothermic equilibrium reaction?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Increasing temperature shifts the equilibrium in the reverse (endothermic) direction.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q12. Adding a catalyst to a reaction at equilibrium:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Increases K<sub>c</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) Decreases K<sub>c</sub><br>
-      (C) Accelerates forward and reverse rates equally without shifting equilibrium &nbsp;&nbsp;&nbsp;&nbsp; (D) Shifts equilibrium forward
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (C) Accelerates forward and reverse rates equally without shifting equilibrium</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Catalyst speeds up attainment of equilibrium without altering equilibrium composition or K<sub>c</sub>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q12: What is the effect of adding an inert gas at constant volume to an equilibrium mixture?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      No effect on the equilibrium position.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q13. Which salt forms a basic aqueous solution (pH > 7) upon hydrolysis?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) NaCl &nbsp;&nbsp;&nbsp;&nbsp; (B) NH<sub>4</sub>Cl<br>
-      (C) CH<sub>3</sub>COONa &nbsp;&nbsp;&nbsp;&nbsp; (D) KNO<sub>3</sub>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (C) CH<sub>3</sub>COONa</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Salt of weak acid + strong base undergoes anionic hydrolysis producing OH<sup>-</sup> ions (pH > 7).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q13: State Henry's Law.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The mass of a gas dissolved in a liquid is directly proportional to the partial pressure of the gas above the liquid: m = k<sub>H</sub> p.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q14. For reaction H<sub>2</sub>(g) + I<sub>2</sub>(g) ⇋ 2HI(g), what is the relation between K<sub>p</sub> and K<sub>c</sub>?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) K<sub>p</sub> = K<sub>c</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) K<sub>p</sub> > K<sub>c</sub><br>
-      (C) K<sub>p</sub> < K<sub>c</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) K<sub>p</sub> = 0
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) K<sub>p</sub> = K<sub>c</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Δn<sub>g</sub> = 2 - 2 = 0 ⟶ K<sub>p</sub> = K<sub>c</sub> (RT)<sup>0</sup> = K<sub>c</sub>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q14: Define Ostwald's Dilution Law.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For a weak electrolyte, the degree of dissociation is inversely proportional to the square root of its molar concentration: &alpha; = &radic;(K<sub>a</sub> / C).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q15. What is the unit of K<sub>c</sub> for reaction: N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇋ 2NH<sub>3</sub>(g)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) L<sup>2</sup> mol<sup>-2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) mol L<sup>-1</sup><br>
-      (C) L mol<sup>-1</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) Dimensionless
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) L<sup>2</sup> mol<sup>-2</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> K<sub>c</sub> units = (mol/L)<sup>-2</sup> = L<sup>2</sup> mol<sup>-2</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q15: Define a Brønsted-Lowry Acid and Base.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      An acid is a proton (H<sup>+</sup>) donor; a base is a proton acceptor.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q16. What is the pH of a 10<sup>-2</sup> M NaOH solution?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 2.0 &nbsp;&nbsp;&nbsp;&nbsp; (B) 12.0<br>
-      (C) 7.0 &nbsp;&nbsp;&nbsp;&nbsp; (D) 14.0
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) 12.0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> pOH = -log[10<sup>-2</sup>] = 2.0 ⟶ pH = 14 - 2 = 12.0.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q16: What is a Conjugate Acid-Base Pair?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A pair of chemical species that differ by only a single proton (H<sup>+</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q17. If Reaction Quotient Q<sub>c</sub> > K<sub>c</sub>, the reaction will:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Proceed in forward direction &nbsp;&nbsp;&nbsp;&nbsp; (B) Proceed in reverse direction<br>
-      (C) Remain at equilibrium &nbsp;&nbsp;&nbsp;&nbsp; (D) Explode
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Proceed in reverse direction</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Q<sub>c</sub> > K<sub>c</sub> means excess products exist, forcing net reverse reaction.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q17: What is the conjugate base of H2O?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Hydroxide ion (OH<sup>-</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q18. Solubility product K<sub>sp</sub> expression for AgCl solid ⇋ Ag<sup>+</sup> + Cl<sup>-</sup> (solubility S mol/L) is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) S &nbsp;&nbsp;&nbsp;&nbsp; (B) S<sup>2</sup><br>
-      (C) 4S<sup>3</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) 27S<sup>4</sup>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) S<sup>2</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> K<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>] = S × S = S<sup>2</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q18: What is the conjugate acid of NH3?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ammonium ion (NH<sub>4</sub><sup>+</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q19. Which of the following is a Buffer Solution?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) CH<sub>3</sub>COOH + CH<sub>3</sub>COONa &nbsp;&nbsp;&nbsp;&nbsp; (B) HCl + NaCl<br>
-      (C) NaOH + NaCl &nbsp;&nbsp;&nbsp;&nbsp; (D) HNO<sub>3</sub> + NaNO<sub>3</sub>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) CH<sub>3</sub>COOH + CH<sub>3</sub>COONa</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Weak acid + its salt with strong base forms an acidic buffer.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q19: Define a Lewis Base.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A chemical species capable of donating an electron pair (e.g., :NH<sub>3</sub>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q20. What happens to the pH of pure water when temperature increases above 298 K?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) pH remains 7.0 &nbsp;&nbsp;&nbsp;&nbsp; (B) pH decreases below 7.0 (though water remains neutral!)<br>
-      (C) pH increases above 7.0 &nbsp;&nbsp;&nbsp;&nbsp; (D) pH becomes 0
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) pH decreases below 7.0 (though water remains neutral!)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Endothermic auto-ionization increases K<sub>w</sub> ([H<sup>+</sup>] > 10<sup>-7</sup> ⟶ pH < 7, but [H<sup>+</sup>]=[OH<sup>-</sup>]).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q20: Classify BF3 as an Arrhenius, Brønsted, or Lewis acid.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lewis acid (electron pair acceptor with incomplete octet).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q21. According to Henry's Law, solubility of a gas in liquid increases with:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Decrease in pressure &nbsp;&nbsp;&nbsp;&nbsp; (B) Increase in partial pressure of gas<br>
-      (C) Increase in temperature &nbsp;&nbsp;&nbsp;&nbsp; (D) Addition of salt
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) Increase in partial pressure of gas</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> m = k<sub>H</sub> × P (gas solubility increases directly with pressure).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q21: Define the Ionic Product of Water (K_w).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The product of molar concentrations of hydronium and hydroxide ions in water: K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = 10<sup>-14</sup> at 25°C.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q22. Which species acts as an Amphoteric substance (both Brønsted acid and base)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) HCO<sub>3</sub><sup>-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) HCl<br>
-      (C) NaOH &nbsp;&nbsp;&nbsp;&nbsp; (D) NH<sub>4</sub><sup>+</sup>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (A) HCO<sub>3</sub><sup>-</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> HCO<sub>3</sub><sup>-</sup> can donate H<sup>+</sup> (forming CO<sub>3</sub><sup>2-</sup>) or accept H<sup>+</sup> (forming H<sub>2</sub>CO<sub>3</sub>).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q22: Define pH.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The negative logarithm to base 10 of the hydronium ion concentration: pH = -log<sub>10</sub>[H<sub>3</sub>O<sup>+</sup>].
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q23. Solubility product K<sub>sp</sub> of AB<sub>2</sub> salt with solubility S is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) S<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) 4 S<sup>3</sup><br>
-      (C) 27 S<sup>4</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) 108 S<sup>5</sup>
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) 4 S<sup>3</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> AB<sub>2</sub> ⇋ A<sup>2+</sup> + 2 B<sup>-</sup> ⟶ K<sub>sp</sub> = (S)(2S)<sup>2</sup> = 4 S<sup>3</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q23: What is the pH of pure water at 25°C?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pH = 7.0 (Neutral).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q24. Adding inert gas to N<sub>2</sub> + 3H<sub>2</sub> ⇋ 2NH<sub>3</sub> at CONSTANT VOLUME causes:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Forward shift &nbsp;&nbsp;&nbsp;&nbsp; (B) Backward shift<br>
-      (C) NO SHIFT in equilibrium &nbsp;&nbsp;&nbsp;&nbsp; (D) Complete dissociation
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (C) NO SHIFT in equilibrium</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At constant volume, partial pressures of reactants/products remain unchanged.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q24: How does the pH of pure water change when heated to 60°C?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pH decreases below 7 (to ~6.5) because water dissociation is endothermic, but water remains neutral since [H<sup>+</sup>] = [OH<sup>-</sup>].
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #AB47BC;'>Q25. Heat of neutralization of strong acid with strong base is -57.1 kJ/mol. Heat of neutralization of CH<sub>3</sub>COOH with NaOH is -55.2 kJ/mol because:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) CH<sub>3</sub>COOH is strong &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.9 kJ heat is consumed in complete ionization of weak CH<sub>3</sub>COOH<br>
-      (C) NaOH is weak &nbsp;&nbsp;&nbsp;&nbsp; (D) Reaction is endothermic
-    </div>
-    <div style="background: rgba(171, 71, 188, 0.15); border-left: 3.5px solid #AB47BC; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #AB47BC;'>✓ Answer: (B) 1.9 kJ heat is consumed in complete ionization of weak CH<sub>3</sub>COOH</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 1.9 kJ energy is absorbed to ionize weak acetic acid before neutralization.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q25: Define a Buffer Solution.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A solution that resists changes in its pH upon addition of small amounts of strong acid or base.
     </div>
   </div>
-  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
-  <div style="background: rgba(171, 71, 188, 0.12); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #AB47BC; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Short Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q26: Give an example of an Acidic Buffer.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Equimolar mixture of Acetic acid (CH<sub>3</sub>COOH) and Sodium acetate (CH<sub>3</sub>COONa).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q27: Give an example of a Basic Buffer.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Equimolar mixture of Ammonium hydroxide (NH<sub>4</sub>OH) and Ammonium chloride (NH<sub>4</sub>Cl).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q28: Write the Henderson-Hasselbalch equation for an acidic buffer.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pH = pK<sub>a</sub> + log<sub>10</sub>([Salt] / [Acid]).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q29: Define Common Ion Effect.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The suppression of dissociation of a weak electrolyte by adding a strong electrolyte providing a common ion.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q30: Define Solubility Product (K_sp).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The product of molar concentrations of ions in a saturated solution of a sparingly soluble salt, raised to their stoichiometric powers.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q31: Write the relation between K_sp and molar solubility S for AgCl.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      K<sub>sp</sub> = S<sup>2</sup>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q32: Write the relation between K_sp and molar solubility S for CaF2.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      K<sub>sp</sub> = 4 S<sup>3</sup>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q33: Under what condition does precipitation occur?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Precipitation occurs when Ionic Product Q<sub>sp</sub> exceeds Solubility Product K<sub>sp</sub> (Q<sub>sp</sub> &gt; K<sub>sp</sub>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q34: What is the pH of 0.001 M HCl solution?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pH = -log(10<sup>-3</sup>) = 3.0.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q35: What is the pH of 0.01 M NaOH solution?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pOH = -log(10<sup>-2</sup>) = 2.0 &rArr; pH = 14 - 2 = 12.0.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q36: What type of salt hydrolysis occurs in aqueous NH4Cl?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Cationic hydrolysis, producing an acidic solution (pH &lt; 7).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q37: What type of salt hydrolysis occurs in aqueous CH3COONa?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Anionic hydrolysis, producing a basic solution (pH &gt; 7).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q38: Why does NaCl not undergo hydrolysis in water?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Both Na<sup>+</sup> and Cl<sup>-</sup> are spectator ions of strong base (NaOH) and strong acid (HCl) with negligible hydrolytic tendency.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q39: What is the value of &Delta;G at chemical equilibrium?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;G = 0.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q40: Write the relation between &Delta;G° and equilibrium constant K.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;G&deg; = -2.303 RT log<sub>10</sub> K.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q26. Define Dynamic Equilibrium in chemical reactions.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      State where forward reaction rate equals reverse reaction rate, keeping reactant/product concentrations constant.
+  <!-- SECTION B -->
+  <div style="background: linear-gradient(135deg, rgba(171, 71, 188, 0.15), rgba(142, 36, 170, 0.15)); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION B: Short Answer (SA) Questions (2 &amp; 3 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q41 to Q80 &bull; Kp-Kc Calculations, Buffer Equations, Salt Hydrolysis Proofs &amp; Solubility Numericals</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q41: Explain the dynamic nature of chemical equilibrium using the synthesis of Ammonia with Deuterium.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When Haber synthesis of ammonia reaches equilibrium: N<sub>2</sub> + 3H<sub>2</sub> &hArr; 2NH<sub>3</sub>, Deuterium (D<sub>2</sub>) is introduced into the vessel. After some time, mass spectrometry reveals mixed species (NH<sub>2</sub>D, NHD<sub>2</sub>, ND<sub>3</sub>) while total ammonia concentration remains unchanged. This proves molecules continue to react forward and reverse at equal rates, demonstrating dynamic equilibrium.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q27. State Law of Mass Action and write K<sub>c</sub> expression for N<sub>2</sub> + 3H<sub>2</sub> ⇋ 2NH<sub>3</sub>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Rate ∝ active masses. <b>K<sub>c</sub> = [NH<sub>3</sub>]<sup>2</sup> / ([N<sub>2</sub>][H<sub>2</sub>]<sup>3</sup>)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q42: Derive the relation K_p = K_c(RT)&Delta;n_g for a general reversible gaseous reaction.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For aA<sub>(g)</sub> + bB<sub>(g)</sub> &hArr; cC<sub>(g)</sub> + dD<sub>(g)</sub>:<br/>K<sub>p</sub> = (p<sub>C</sub><sup>c</sup> p<sub>D</sub><sup>d</sup>) / (p<sub>A</sub><sup>a</sup> p<sub>B</sub><sup>b</sup>).<br/>Using p<sub>i</sub> = c<sub>i</sub>RT = [i]RT:<br/>K<sub>p</sub> = ([C]RT)<sup>c</sup> ([D]RT)<sup>d</sup> / [([A]RT)<sup>a</sup> ([B]RT)<sup>b</sup>]<br/>K<sub>p</sub> = ([C]<sup>c</sup> [D]<sup>d</sup> / [A]<sup>a</sup> [B]<sup>b</sup>) &times; (RT)<sup>(c + d) - (a + b)</sup><br/><b>K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n<sub>g</sub></sup></b>, where &Delta;n<sub>g</sub> = (c + d) - (a + b).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q28. Write relation between K<sub>p</sub> and K<sub>c</sub>. Under what condition K<sub>p</sub> = K<sub>c</sub>?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup></b>. K<sub>p</sub> = K<sub>c</sub> when Δn<sub>g</sub> = 0.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q43: At 500 K, K_p = 1.80 &times; 10<sup>-2</sup> for: N2(g) + 3H2(g) &hArr; 2NH3(g). Calculate K_c. (R = 0.0821 L atm K<sup>-1</sup> mol<sup>-1</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;n<sub>g</sub> = 2 - (1 + 3) = -2.<br/>K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n<sub>g</sub></sup> &rArr; K<sub>c</sub> = K<sub>p</sub> / (RT)<sup>-2</sup> = K<sub>p</sub>(RT)<sup>2</sup>.<br/>K<sub>c</sub> = (1.80 &times; 10<sup>-2</sup>) &times; (0.0821 &times; 500)<sup>2</sup><br/>K<sub>c</sub> = (1.80 &times; 10<sup>-2</sup>) &times; (41.05)<sup>2</sup> = (1.80 &times; 10<sup>-2</sup>) &times; 1685.1 = <b>30.33 L<sup>2</sup> mol<sup>-2</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q29. Define Reaction Quotient (Q<sub>c</sub>). How does Q<sub>c</sub> predict reaction direction?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Q<sub>c</sub> is concentration product ratio at any instant. If Q<sub>c</sub> < K<sub>c</sub> forward; if Q<sub>c</sub> > K<sub>c</sub> reverse.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q44: State Le Chatelier's Principle and apply it to predict the optimum conditions for Haber's synthesis of Ammonia.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Reaction: N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub> &Delta;H = -92.4 kJ mol<sup>-1</sup> (&Delta;n<sub>g</sub> = -2).<br/>1. <b style="color: #AB47BC;">High Pressure (200 atm):</b> Shifts equilibrium toward fewer moles (forward), increasing yield.<br/>2. <b style="color: #AB47BC;">Moderate Temperature (700 K):</b> Forward reaction is exothermic; low T favors yield, but rate is too slow; 700 K is the optimal compromise.<br/>3. <b style="color: #AB47BC;">Catalyst:</b> Finely divided Iron with Molybdenum promoter accelerates attainment of equilibrium.<br/>4. <b style="color: #AB47BC;">Continuous Removal of NH<sub>3</sub>:</b> Liquefying and removing NH<sub>3</sub> continuously draws equilibrium forward.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q30. State Le Chatelier's Principle.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      If a system at equilibrium is perturbed (T, P, conc.), system shifts to counteract perturbation.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q45: Derive Ostwald's Dilution Law for a weak monobasic acid HA.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      HA &hArr; H<sup>+</sup> + A<sup>-</sup>.<br/>Initial: C, 0, 0.<br/>Equilibrium: C(1 - &alpha;), C&alpha;, C&alpha;.<br/>K<sub>a</sub> = [H<sup>+</sup>][A<sup>-</sup>] / [HA] = (C&alpha; &times; C&alpha;) / [C(1 - &alpha;)] = C&alpha;<sup>2</sup> / (1 - &alpha;).<br/>For weak acid &alpha; &lt;&lt; 1 &rArr; (1 - &alpha;) &approx; 1:<br/><b>K<sub>a</sub> = C &alpha;<sup>2</sup> &rArr; &alpha; = &radic;(K<sub>a</sub> / C)</b>.<br/>Also, [H<sup>+</sup>] = C&alpha; = C &radic;(K<sub>a</sub> / C) = <b>&radic;(K<sub>a</sub> C)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q31. Explain effect of catalyst on chemical equilibrium.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Catalyst speeds up forward & reverse rates equally without altering equilibrium composition or K<sub>c</sub>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q46: Calculate the degree of ionization and pH of 0.1 M Acetic acid solution. (Ka = 1.8 &times; 10<sup>-5</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &alpha; = &radic;(K<sub>a</sub> / C) = &radic;[(1.8 &times; 10<sup>-5</sup>) / 0.1] = &radic;(1.8 &times; 10<sup>-4</sup>) = <b>1.34 &times; 10<sup>-2</sup> (1.34%)</b>.<br/>[H<sup>+</sup>] = C&alpha; = 0.1 &times; (1.34 &times; 10<sup>-2</sup>) = 1.34 &times; 10<sup>-3</sup> M.<br/>pH = -log<sub>10</sub>(1.34 &times; 10<sup>-3</sup>) = 3 - log(1.34) = 3 - 0.127 = <b>2.87</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q32. Define Arrhenius Acid and Base with examples.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>Acid:</b> Gives H<sup>+</sup> in water (HCl).<br><b>Base:</b> Gives OH<sup>-</sup> in water (NaOH).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q47: Explain the Brønsted-Lowry concept of Conjugate Acid-Base Pairs with two complete reaction examples.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A conjugate acid-base pair differs by one proton (H<sup>+</sup>). An acid donates H<sup>+</sup> to become its conjugate base; a base accepts H<sup>+</sup> to become its conjugate acid.<br/>1. <b>NH<sub>3</sub> + H<sub>2</sub>O &hArr; NH<sub>4</sub><sup>+</sup> + OH<sup>-</sup>:</b> NH<sub>3</sub> (base) and NH<sub>4</sub><sup>+</sup> (conjugate acid); H<sub>2</sub>O (acid) and OH<sup>-</sup> (conjugate base).<br/>2. <b>CH<sub>3</sub>COOH + H<sub>2</sub>O &hArr; CH<sub>3</sub>COO<sup>-</sup> + H<sub>3</sub>O<sup>+</sup>:</b> CH<sub>3</sub>COOH (acid) and CH<sub>3</sub>COO<sup>-</sup> (conjugate base); H<sub>2</sub>O (base) and H<sub>3</sub>O<sup>+</sup> (conjugate acid).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q33. Define Brønsted-Lowry Acid and Base. Identify conjugate base of HSO<sub>4</sub><sup>-</sup>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>Acid:</b> Proton donor | <b>Base:</b> Proton acceptor.<br>Conjugate base of HSO<sub>4</sub><sup>-</sup> is <b>SO<sub>4</sub><sup>2-</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q48: Differentiate between Arrhenius, Brønsted-Lowry, and Lewis definitions of Acids and Bases in a comparative matrix.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #AB47BC;">Arrhenius:</b> Acid yields H<sup>+</sup> in water; Base yields OH<sup>-</sup> in water. Limited to aqueous solutions.<br/>2. <b style="color: #AB47BC;">Br&oslash;nsted-Lowry:</b> Acid is proton donor; Base is proton acceptor. Applicable to non-aqueous media.<br/>3. <b style="color: #AB47BC;">Lewis:</b> Acid is electron-pair acceptor; Base is electron-pair donor. Encompasses reactions without proton transfer (e.g., BF<sub>3</sub> + :NH<sub>3</sub>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q34. Define Lewis Acid and Base with examples.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>Acid:</b> Electron-pair acceptor (BF<sub>3</sub>, AlCl<sub>3</sub>).<br><b>Base:</b> Electron-pair donor (NH<sub>3</sub>, H<sub>2</sub>O).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q49: Derive the Henderson-Hasselbalch equation for an Acidic Buffer.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For weak acid HA: HA &hArr; H<sup>+</sup> + A<sup>-</sup> &rArr; K<sub>a</sub> = [H<sup>+</sup>][A<sup>-</sup>] / [HA].<br/>Rearranging for [H<sup>+</sup>]: [H<sup>+</sup>] = K<sub>a</sub> &times; [HA] / [A<sup>-</sup>].<br/>Taking negative logarithm (-log<sub>10</sub>):<br/>-log[H<sup>+</sup>] = -log K<sub>a</sub> - log([HA] / [A<sup>-</sup>]) = -log K<sub>a</sub> + log([A<sup>-</sup>] / [HA]).<br/>Since common ion suppresses HA dissociation, [HA] &approx; [Acid] and [A<sup>-</sup>] &approx; [Salt]:<br/><b>pH = pK<sub>a</sub> + log<sub>10</sub>([Salt] / [Acid])</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q35. Define Ionic Product of Water (K<sub>w</sub>). State its value at 298 K.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      K<sub>w</sub> = [H<sup>+</sup>][OH<sup>-</sup>] = <b>1.0 × 10<sup>-14</sup> at 298 K</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q50: Calculate the pH of a buffer solution containing 0.1 M Acetic acid and 0.2 M Sodium acetate. (Ka of CH3COOH = 1.8 &times; 10<sup>-5</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      pK<sub>a</sub> = -log(1.8 &times; 10<sup>-5</sup>) = 5 - 0.255 = 4.745.<br/>pH = pK<sub>a</sub> + log([Salt] / [Acid])<br/>pH = 4.745 + log(0.2 / 0.1) = 4.745 + log(2)<br/>pH = 4.745 + 0.301 = <b>5.05</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q36. Define pH scale. Calculate pH of 0.001 M HCl solution.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      pH = -log[H<sup>+</sup>] = -log[10<sup>-3</sup>] = <b>3.0</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q51: Explain the mechanism of Buffer Action in an acidic buffer (CH3COOH + CH3COONa).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Buffer contains abundant CH<sub>3</sub>COOH molecules and CH<sub>3</sub>COO<sup>-</sup> ions.<br/>1. <b style="color: #AB47BC;">Addition of Strong Acid (H<sup>+</sup>):</b> Added H<sup>+</sup> combines with conjugate base: <b>CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup> &rarr; CH<sub>3</sub>COOH</b>. H<sup>+</sup> is neutralized; pH remains constant.<br/>2. <b style="color: #AB47BC;">Addition of Strong Base (OH<sup>-</sup>):</b> Added OH<sup>-</sup> is neutralized by undissociated acid: <b>CH<sub>3</sub>COOH + OH<sup>-</sup> &rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O</b>. pH remains constant.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q37. State Ostwald's Dilution Law formula for weak acid.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span></b> (Degree of dissociation increases with dilution).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q52: Explain Common Ion Effect and its application in qualitative analysis of Group II and Group III cations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Common ion effect is the suppression of dissociation of a weak electrolyte by adding a strong electrolyte sharing a common ion.<br/>1. <b style="color: #AB47BC;">Group II Analysis:</b> H<sub>2</sub>S gas is passed in presence of dil. HCl. Common ion H<sup>+</sup> suppresses H<sub>2</sub>S dissociation, lowering [S<sup>2-</sup>] so that only Group II cations with extremely low K<sub>sp</sub> (CuS, PbS) precipitate.<br/>2. <b style="color: #AB47BC;">Group III Analysis:</b> NH<sub>4</sub>OH is added in presence of solid NH<sub>4</sub>Cl. Common ion NH<sub>4</sub><sup>+</sup> suppresses [OH<sup>-</sup>], precipitating only Group III hydroxides with low K<sub>sp</sub> (Fe(OH)<sub>3</sub>, Al(OH)<sub>3</sub>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q38. What is a Buffer Solution? Give 1 example of acidic buffer.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Solution resisting pH change upon adding acid/base. Example: <b>CH<sub>3</sub>COOH + CH<sub>3</sub>COONa</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q53: Derive the pH formula for the salt of a Weak Acid and Strong Base (e.g., CH3COONa).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      CH<sub>3</sub>COONa dissociates completely into Na<sup>+</sup> and CH<sub>3</sub>COO<sup>-</sup>. Anion hydrolyzes: CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O &hArr; CH<sub>3</sub>COOH + OH<sup>-</sup>.<br/>K<sub>h</sub> = [CH<sub>3</sub>COOH][OH<sup>-</sup>] / [CH<sub>3</sub>COO<sup>-</sup>] = K<sub>w</sub> / K<sub>a</sub>.<br/>[OH<sup>-</sup>] = &radic;(K<sub>h</sub> C) = &radic;[(K<sub>w</sub> / K<sub>a</sub>) C].<br/>[H<sup>+</sup>] = K<sub>w</sub> / [OH<sup>-</sup>] = &radic;[(K<sub>w</sub> K<sub>a</sub>) / C].<br/>Taking -log: <b>pH = 7 + <sup>1</sup>/<sub>2</sub> pK<sub>a</sub> + <sup>1</sup>/<sub>2</sub> log C</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q39. Write Henderson-Hasselbalch equation for an Acidic Buffer.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q54: Derive the pH formula for the salt of a Strong Acid and Weak Base (e.g., NH4Cl).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      NH<sub>4</sub>Cl dissociates into NH<sub>4</sub><sup>+</sup> and Cl<sup>-</sup>. Cation hydrolyzes: NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O &hArr; NH<sub>4</sub>OH + H<sup>+</sup>.<br/>K<sub>h</sub> = [NH<sub>4</sub>OH][H<sup>+</sup>] / [NH<sub>4</sub><sup>+</sup>] = K<sub>w</sub> / K<sub>b</sub>.<br/>[H<sup>+</sup>] = &radic;(K<sub>h</sub> C) = &radic;[(K<sub>w</sub> / K<sub>b</sub>) C].<br/>Taking -log: <b>pH = 7 - <sup>1</sup>/<sub>2</sub> pK<sub>b</sub> - <sup>1</sup>/<sub>2</sub> log C</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q40. Define Solubility Product (K<sub>sp</sub>) of sparingly soluble salt AgCl.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      K<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>] in saturated aqueous solution.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q55: Calculate the pH of 0.1 M Ammonium acetate solution. (Ka of CH3COOH = 1.8 &times; 10<sup>-5</sup>, Kb of NH4OH = 1.8 &times; 10<sup>-5</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For salt of weak acid and weak base: pH = 7 + <sup>1</sup>/<sub>2</sub> pK<sub>a</sub> - <sup>1</sup>/<sub>2</sub> pK<sub>b</sub>.<br/>pK<sub>a</sub> = 4.745, pK<sub>b</sub> = 4.745.<br/>pH = 7 + <sup>1</sup>/<sub>2</sub>(4.745) - <sup>1</sup>/<sub>2</sub>(4.745) = <b>7.0 (Neutral)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q41. State condition for precipitation of a salt.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Precipitation occurs when Ionic Product <b>Q<sub>sp</sub> > K<sub>sp</sub></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q56: The solubility of AgCl in water at 25°C is 1.06 &times; 10<sup>-5</sup> mol L<sup>-1</sup>. Calculate its Solubility Product (K_sp).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      AgCl<sub>(s)</sub> &hArr; Ag<sup>+</sup><sub>(aq)</sub> + Cl<sup>-</sup><sub>(aq)</sub>.<br/>[Ag<sup>+</sup>] = S = 1.06 &times; 10<sup>-5</sup> M, [Cl<sup>-</sup>] = S = 1.06 &times; 10<sup>-5</sup> M.<br/>K<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>] = S<sup>2</sup> = (1.06 &times; 10<sup>-5</sup>)<sup>2</sup> = <b>1.12 &times; 10<sup>-10</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q42. Explain Common Ion Effect with an example.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Suppression of weak electrolyte ionization by adding strong electrolyte with common ion (e.g. CH<sub>3</sub>COONa added to CH<sub>3</sub>COOH).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q57: Calculate the molar solubility of Lead Iodide (PbI2) in water if K_sp = 7.1 &times; 10<sup>-9</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      PbI<sub>2(s)</sub> &hArr; Pb<sup>2+</sup><sub>(aq)</sub> + 2I<sup>-</sup><sub>(aq)</sub>.<br/>[Pb<sup>2+</sup>] = S, [I<sup>-</sup>] = 2S.<br/>K<sub>sp</sub> = [Pb<sup>2+</sup>][I<sup>-</sup>]<sup>2</sup> = S &times; (2S)<sup>2</sup> = 4 S<sup>3</sup>.<br/>4 S<sup>3</sup> = 7.1 &times; 10<sup>-9</sup> &rArr; S<sup>3</sup> = 1.775 &times; 10<sup>-9</sup>.<br/>S = (1.775 &times; 10<sup>-9</sup>)<sup>1/3</sup> = <b>1.21 &times; 10<sup>-3</sup> mol L<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q43. Why does aqueous solution of CH<sub>3</sub>COONa turn basic (pH > 7)?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Anion CH<sub>3</sub>COO<sup>-</sup> hydrolyzes water: CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O ⇋ CH<sub>3</sub>COOH + OH<sup>-</sup> (producing OH<sup>-</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q58: Explain why the solubility of AgCl is lower in 0.1 M NaCl solution than in pure water.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In pure water: AgCl &hArr; Ag<sup>+</sup> + Cl<sup>-</sup>, K<sub>sp</sub> = S<sup>2</sup> &rArr; S = 1.06 &times; 10<sup>-5</sup> M.<br/>In 0.1 M NaCl: NaCl completely ionizes providing [Cl<sup>-</sup>] = 0.1 M.<br/>K<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>] = S' &times; 0.1 = 1.12 &times; 10<sup>-10</sup> &rArr; S' = <b>1.12 &times; 10<sup>-9</sup> M</b>.<br/>The common Cl<sup>-</sup> ion shifts equilibrium reverse (Le Chatelier), reducing solubility by ~10,000-fold.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q44. Why does aqueous solution of NH<sub>4</sub>Cl turn acidic (pH < 7)?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Cation NH<sub>4</sub><sup>+</sup> hydrolyzes water: NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O ⇋ NH<sub>4</sub>OH + H<sup>+</sup> (producing H<sup>+</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q59: Will a precipitate form when equal volumes of 2 &times; 10<sup>-4</sup> M AgNO3 and 2 &times; 10<sup>-4</sup> M NaCl are mixed? (K_sp of AgCl = 1.8 &times; 10<sup>-10</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When equal volumes are mixed, total volume doubles, halving concentrations:<br/>[Ag<sup>+</sup>] = (2 &times; 10<sup>-4</sup>) / 2 = 10<sup>-4</sup> M.<br/>[Cl<sup>-</sup>] = (2 &times; 10<sup>-4</sup>) / 2 = 10<sup>-4</sup> M.<br/>Ionic Product Q<sub>sp</sub> = [Ag<sup>+</sup>][Cl<sup>-</sup>] = 10<sup>-4</sup> &times; 10<sup>-4</sup> = <b>10<sup>-8</sup></b>.<br/>Since Q<sub>sp</sub> (10<sup>-8</sup>) &gt; K<sub>sp</sub> (1.8 &times; 10<sup>-10</sup>), <b>precipitation of AgCl WILL OCCUR</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q45. Calculate pH of 0.01 M NaOH solution at 298 K.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      pOH = -log[10<sup>-2</sup>] = 2.0 ⟶ pH = 14 - 2 = <b>12.0</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q60: Explain the concept of Auto-ionization of Water and derive the value of K_w at 25°C.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Water undergoes amphiprotic self-ionization: H<sub>2</sub>O + H<sub>2</sub>O &hArr; H<sub>3</sub>O<sup>+</sup> + OH<sup>-</sup>.<br/>Equilibrium constant K = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] / [H<sub>2</sub>O]<sup>2</sup>.<br/>Since water is in huge excess, [H<sub>2</sub>O] is constant: K &times; [H<sub>2</sub>O]<sup>2</sup> = K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>].<br/>At 25&deg;C, electrical conductivity shows [H<sub>3</sub>O<sup>+</sup>] = [OH<sup>-</sup>] = 1.0 &times; 10<sup>-7</sup> M.<br/><b>K<sub>w</sub> = (10<sup>-7</sup>) &times; (10<sup>-7</sup>) = 1.0 &times; 10<sup>-14</sup> mol<sup>2</sup> L<sup>-2</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q46. Why does inert gas addition at constant volume NOT affect equilibrium?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Partial pressures and concentrations of reactants/products remain unchanged.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q61: Explain why the pH of a 10<sup>-8</sup> M HCl solution is not 8.0.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      HCl is a strong acid, but at 10<sup>-8</sup> M, the concentration is so dilute that H<sup>+</sup> ions from the auto-ionization of water cannot be neglected.<br/>Total [H<sup>+</sup>] = [H<sup>+</sup>]<sub>HCl</sub> + [H<sup>+</sup>]<sub>water</sub> = 10<sup>-8</sup> + x.<br/>K<sub>w</sub> = (10<sup>-8</sup> + x)(x) = 10<sup>-14</sup> &rArr; x<sup>2</sup> + 10<sup>-8</sup>x - 10<sup>-14</sup> = 0.<br/>Solving: x = 0.95 &times; 10<sup>-7</sup> M &rArr; Total [H<sup>+</sup>] = 1.05 &times; 10<sup>-7</sup> M.<br/>pH = -log(1.05 &times; 10<sup>-7</sup>) = <b>6.98</b> (Slightly acidic, never basic).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q47. Calculate K<sub>p</sub> for reaction with K<sub>c</sub> = 0.5 at 300 K where Δn<sub>g</sub> = +1 (R = 0.0821).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      K<sub>p</sub> = K<sub>c</sub> (RT)<sup>1</sup> = 0.5 × (0.0821 × 300) = <b>12.315</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q62: Explain the relation between standard free energy change (&Delta;G°) and equilibrium constant (K) with physical interpretation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;G&deg; = -2.303 RT log<sub>10</sub> K.<br/>1. <b style="color: #AB47BC;">K &gt; 1:</b> log K is positive &rArr; &Delta;G&deg; &lt; 0. Reaction is exergonic and spontaneous under standard conditions; products dominate at equilibrium.<br/>2. <b style="color: #AB47BC;">K &lt; 1:</b> log K is negative &rArr; &Delta;G&deg; &gt; 0. Reaction is endergonic; reactants dominate.<br/>3. <b style="color: #AB47BC;">K = 1:</b> &Delta;G&deg; = 0.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q48. State relation between dissociation constant K<sub>a</sub> of weak acid and K<sub>b</sub> of conjugate base.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      <b>K<sub>a</sub> × K<sub>b</sub> = K<sub>w</sub> = 1.0 × 10<sup>-14</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q63: Calculate &Delta;G° for a reaction having equilibrium constant K = 10 at 300 K. (R = 8.314 J K<sup>-1</sup> mol<sup>-1</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;G&deg; = -2.303 RT log<sub>10</sub> K<br/>&Delta;G&deg; = -2.303 &times; 8.314 &times; 300 &times; log<sub>10</sub>(10)<br/>&Delta;G&deg; = -5744.1 &times; 1 = <b>-5744.1 J mol<sup>-1</sup> = -5.74 kJ mol<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q49. Calculate [H<sup>+</sup>] in a solution with pH = 4.7.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      [H<sup>+</sup>] = 10<sup>-4.7</sup> = <b>2.0 × 10<sup>-5</sup> M</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q64: Explain the effect of inert gas addition at (a) Constant Volume, (b) Constant Pressure on: PCl5(g) &hArr; PCl3(g) + Cl2(g).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (a) <b style="color: #AB47BC;">At Constant Volume:</b> Total pressure increases, but partial pressures of PCl<sub>5</sub>, PCl<sub>3</sub>, and Cl<sub>2</sub> remain unchanged; thus, <b>NO SHIFT</b> occurs.<br/>(b) <b style="color: #AB47BC;">At Constant Pressure:</b> Addition of gas requires volume expansion to maintain constant pressure. This dilution reduces partial pressures, shifting equilibrium toward the side with more moles (&Delta;n<sub>g</sub> = +1), so reaction shifts <b>FORWARD</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q50. Why is BF<sub>3</sub> classified as a Lewis Acid?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Boron has incomplete octet (6 e<sup>-</sup>) and accepts an electron pair.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q65: Why is an aqueous solution of Ferric Chloride (FeCl3) acidic?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      FeCl<sub>3</sub> dissociates into Fe<sup>3+</sup> and Cl<sup>-</sup>. Fe<sup>3+</sup> is a small, highly charged cation that strongly polarizes coordinated water molecules (cationic hydrolysis):<br/>[Fe(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup> + H<sub>2</sub>O &hArr; [Fe(H<sub>2</sub>O)<sub>5</sub>(OH)]<sup>2+</sup> + H<sub>3</sub>O<sup>+</sup>.<br/>The generation of excess H<sub>3</sub>O<sup>+</sup> ions renders the solution acidic (pH &lt; 7).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q51. Calculate solubility of AgCl (K<sub>sp</sub> = 1.6 × 10<sup>-10</sup>) in pure water.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      K<sub>sp</sub> = S<sup>2</sup> ⟶ S = √(1.6 × 10<sup>-10</sup>) = <b>1.26 × 10<sup>-5</sup> mol L<sup>-1</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q66: Explain why pure NaCl precipitates when dry HCl gas is passed through a saturated brine solution.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Brine contains Na<sup>+</sup> and Cl<sup>-</sup> in equilibrium with solid NaCl: NaCl<sub>(s)</sub> &hArr; Na<sup>+</sup> + Cl<sup>-</sup>. Saturated solution satisfies [Na<sup>+</sup>][Cl<sup>-</sup>] = K<sub>sp</sub>. Passing HCl gas introduces a high concentration of common Cl<sup>-</sup> ions. The ionic product [Na<sup>+</sup>][Cl<sup>-</sup>] exceeds K<sub>sp</sub>, forcing pure NaCl to precipitate out immediately.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q52. What is the conjugate acid of NH<sub>3</sub> and H<sub>2</sub>O?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      • Conjugate acid of NH<sub>3</sub> is <b>NH<sub>4</sub><sup>+</sup></b>.<br>• Conjugate acid of H<sub>2</sub>O is <b>H<sub>3</sub>O<sup>+</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q67: Explain the difference between Hydrolysis Constant (Kh), Degree of Hydrolysis (h), and pH of salt solutions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">Hydrolysis Constant (K<sub>h</sub>):</b> Equilibrium constant for the hydrolytic reaction between salt ions and water. <b style="color: #AB47BC;">Degree of Hydrolysis (h):</b> Fraction of total salt hydrolyzed at equilibrium: h = &radic;(K<sub>h</sub> / C). <b style="color: #AB47BC;">pH:</b> Measure of resulting [H<sup>+</sup>] or [OH<sup>-</sup>] produced by the hydrolysis.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q53. Calculate pH of a solution formed by mixing equal volumes of 0.1 M HCl and 0.1 M NaOH.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Neutralization produces NaCl solution ⟶ <b>pH = 7.0</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q68: What is Buffer Capacity? When is the buffer capacity of an acidic buffer maximum?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Buffer capacity is the number of moles of strong acid or base required to change the pH of one liter of buffer solution by 1 unit: &beta; = db / d(pH).<br/>Buffer capacity is <b>maximum when [Salt] = [Acid]</b>, which corresponds to <b>pH = pK<sub>a</sub></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q54. Why does Henry's law constant K<sub>H</sub> increase with temperature?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      Gas solubility in liquid decreases at higher temperatures.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q69: Explain the amphoteric nature of Water using chemical equations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Water acts as a Br&oslash;nsted base when reacting with acids by accepting a proton: <b>HCl + H<sub>2</sub>O &hArr; H<sub>3</sub>O<sup>+</sup> + Cl<sup>-</sup></b>.<br/>Water acts as a Br&oslash;nsted acid when reacting with bases by donating a proton: <b>NH<sub>3</sub> + H<sub>2</sub>O &hArr; NH<sub>4</sub><sup>+</sup> + OH<sup>-</sup></b>. This dual proton donor/acceptor behavior defines amphoterism.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q55. Calculate K<sub>sp</sub> of BaSO<sub>4</sub> if its molar solubility is 1.0 × 10<sup>-5</sup> mol/L.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Answer:</b><br>
-      K<sub>sp</sub> = S<sup>2</sup> = (1.0 × 10<sup>-5</sup>)<sup>2</sup> = <b>1.0 × 10<sup>-10</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q70: Why is liquid ammonia used as an ionizing solvent? Compare its self-ionization with water.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Liquid ammonia has a high dielectric constant and self-ionizes similarly to water:<br/><b>2NH<sub>3</sub> &hArr; NH<sub>4</sub><sup>+</sup> (Ammonium ion, Acid) + NH<sub>2</sub><sup>-</sup> (Amide ion, Base)</b>.<br/>Self-ionization constant K<sub>am</sub> = [NH<sub>4</sub><sup>+</sup>][NH<sub>2</sub><sup>-</sup>] &approx; 10<sup>-30</sup> at -50&deg;C. Substances furnishing NH<sub>4</sub><sup>+</sup> act as acids in liquid NH<sub>3</sub>, while metal amides act as bases.
     </div>
   </div>
-  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
-  <div style="background: rgba(171, 71, 188, 0.12); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #AB47BC; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Step Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q71: For a reaction A + B &hArr; C + D, the initial concentrations of A and B are equal. At equilibrium, [C] = 2[A]. Calculate K_c.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Let initial [A] = [B] = a, and [C] = [D] = 0.<br/>At equilibrium: [C] = x, [D] = x, [A] = a - x, [B] = a - x.<br/>Given: [C] = 2[A] &rArr; x = 2(a - x) &rArr; x = 2a - 2x &rArr; 3x = 2a &rArr; x = 2a/3.<br/>[A] = a - 2a/3 = a/3; [B] = a/3; [C] = 2a/3; [D] = 2a/3.<br/>K<sub>c</sub> = ([C][D]) / ([A][B]) = [(2a/3)(2a/3)] / [(a/3)(a/3)] = 4/1 = <b>4.0</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q72: Explain why the solubility of a sparingly soluble salt of a weak acid (e.g., CaCO3) increases in acidic solution.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      CaCO<sub>3(s)</sub> &hArr; Ca<sup>2+</sup> + CO<sub>3</sub><sup>2-</sup>. In acidic solution, H<sup>+</sup> ions react with carbonate ions: <b>CO<sub>3</sub><sup>2-</sup> + 2H<sup>+</sup> &hArr; H<sub>2</sub>CO<sub>3</sub> &rarr; H<sub>2</sub>O + CO<sub>2(g)</sub></b>. This removal of CO<sub>3</sub><sup>2-</sup> continuously pulls the dissolution equilibrium forward (Le Chatelier's principle), greatly increasing the solubility of CaCO<sub>3</sub>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q73: Explain the effect of temperature on the value of equilibrium constant for an endothermic reaction using Van't Hoff equation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Van't Hoff isochore: d(ln K) / dT = &Delta;H&deg; / RT<sup>2</sup>.<br/>For an endothermic reaction, &Delta;H&deg; &gt; 0. Therefore, d(ln K) / dT &gt; 0, which means ln K increases as temperature T increases. Heat acts effectively as a reactant, so raising temperature drives the reaction forward, increasing the equilibrium constant K.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q74: Explain the physiological importance of the Carbonic Acid - Bicarbonate Buffer System in human blood.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Human blood maintains a strict physiological pH of <b>7.40 &plusmn; 0.05</b> via the buffer equilibrium: <b>CO<sub>2(aq)</sub> + H<sub>2</sub>O &hArr; H<sub>2</sub>CO<sub>3</sub> &hArr; H<sup>+</sup> + HCO<sub>3</sub><sup>-</sup></b>.<br/>Excess metabolic H<sup>+</sup> is neutralized by HCO<sub>3</sub><sup>-</sup> (forming H<sub>2</sub>CO<sub>3</sub> and expelled as CO<sub>2</sub> via lungs); excess OH<sup>-</sup> is neutralized by H<sub>2</sub>CO<sub>3</sub>. If blood pH falls below 7.35 (acidosis) or rises above 7.45 (alkalosis), critical enzyme disruption occurs.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q75: State the relationship between Solubility (S in g/L) and Molar Solubility (s in mol/L).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Molar solubility s (mol L<sup>-1</sup>) = Solubility S (g L<sup>-1</sup>) / Molar Mass M (g mol<sup>-1</sup>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q76: Explain why solid and pure liquid concentrations are omitted from equilibrium constant expressions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The active mass (molar concentration) of a pure solid or liquid is given by: [X] = Density / Molar Mass. Because density and molar mass are intrinsic physical constants at a fixed temperature, the concentration of a pure solid or liquid remains completely constant regardless of how much material is present, and is incorporated directly into the value of K.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q77: Explain how an indicator works during acid-base titration using Ostwald's theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Acid-base indicators are weak organic acids (HIn) or bases whose undissociated molecules possess a color distinct from their ionized conjugate ions: <b>HIn (Color A) &hArr; H<sup>+</sup> + In<sup>-</sup> (Color B)</b>.<br/>In acidic solution, high [H<sup>+</sup>] suppresses ionization (Color A dominates). In basic solution, OH<sup>-</sup> removes H<sup>+</sup>, shifting equilibrium to In<sup>-</sup> (Color B dominates). The color change occurs over pH range = pK<sub>In</sub> &plusmn; 1.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q78: Calculate the pH of a 0.05 M Ba(OH)2 solution.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ba(OH)<sub>2</sub> is a strong diprotic base: Ba(OH)<sub>2</sub> &rarr; Ba<sup>2+</sup> + 2OH<sup>-</sup>.<br/>[OH<sup>-</sup>] = 2 &times; 0.05 = 0.10 M = 10<sup>-1</sup> M.<br/>pOH = -log(10<sup>-1</sup>) = 1.0.<br/>pH = 14 - pOH = 14 - 1.0 = <b>13.0</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q79: Explain why adding NH4Cl to an aqueous solution of NH4OH decreases its hydroxide ion concentration.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      NH<sub>4</sub>OH is a weak base: NH<sub>4</sub>OH &hArr; NH<sub>4</sub><sup>+</sup> + OH<sup>-</sup>. NH<sub>4</sub>Cl is a soluble strong electrolyte that completely dissociates: NH<sub>4</sub>Cl &rarr; NH<sub>4</sub><sup>+</sup> + Cl<sup>-</sup>. The large excess of common NH<sub>4</sub><sup>+</sup> ions forces the NH<sub>4</sub>OH dissociation equilibrium in the reverse direction according to Le Chatelier's principle, drastically suppressing [OH<sup>-</sup>] and lowering the pH.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q80: What is the physical significance of the magnitude of an Equilibrium Constant?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #AB47BC;">K &gt; 10<sup>3</sup>:</b> Reaction proceeds almost to completion; products predominate heavily.<br/>2. <b style="color: #AB47BC;">K &lt; 10<sup>-3</sup>:</b> Reaction hardly proceeds; reactants predominate heavily.<br/>3. <b style="color: #AB47BC;">10<sup>-3</sup> &le; K &le; 10<sup>3</sup>:</b> Appreciable concentrations of both reactants and products coexist at equilibrium.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q56. Explain Dynamic Nature of Chemical Equilibrium with experimental proof (Haber process with deuterium).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Reactions do not stop at equilibrium. Replacing H<sub>2</sub> with D<sub>2</sub> yields mixed ND<sub>3</sub>, proving forward and reverse rates are equal.
+  <!-- SECTION C -->
+  <div style="background: linear-gradient(135deg, rgba(171, 71, 188, 0.15), rgba(142, 36, 170, 0.15)); border: 1.5px solid rgba(171, 71, 188, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION C: Long Answer (LA) Questions (5 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q81 to Q100 &bull; Comprehensive Equilibrium Proofs, Van't Hoff Derivations &amp; Industrial Systems</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q81: State and derive the Law of Chemical Equilibrium. Distinguish between Homogeneous and Heterogeneous Equilibria with five examples.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Derivation:</b> For aA + bB &hArr; cC + dD, forward rate r<sub>f</sub> = k<sub>f</sub>[A]<sup>a</sup>[B]<sup>b</sup> and reverse rate r<sub>b</sub> = k<sub>b</sub>[C]<sup>c</sup>[D]<sup>d</sup>. At dynamic equilibrium r<sub>f</sub> = r<sub>b</sub> &rArr; k<sub>f</sub>[A]<sup>a</sup>[B]<sup>b</sup> = k<sub>b</sub>[C]<sup>c</sup>[D]<sup>d</sup> &rArr; K<sub>c</sub> = k<sub>f</sub>/k<sub>b</sub> = ([C]<sup>c</sup>[D]<sup>d</sup>) / ([A]<sup>a</sup>[B]<sup>b</sup>).<br/><br/><b style="color: #AB47BC;">2. Homogeneous Equilibria:</b> All reactants and products exist in a single phase.<br/>&bull; Gaseous: N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub><br/>&bull; Liquid: CH<sub>3</sub>COOH<sub>(l)</sub> + C<sub>2</sub>H<sub>5</sub>OH<sub>(l)</sub> &hArr; CH<sub>3</sub>COOC<sub>2</sub>H<sub>5(l)</sub> + H<sub>2</sub>O<sub>(l)</sub><br/><br/><b style="color: #AB47BC;">3. Heterogeneous Equilibria:</b> Reactants and products exist in multiple distinct phases. Pure solids/liquids are omitted from K expressions.<br/>&bull; CaCO<sub>3(s)</sub> &hArr; CaO<sub>(s)</sub> + CO<sub>2(g)</sub> &rArr; K<sub>c</sub> = [CO<sub>2</sub>], K<sub>p</sub> = p<sub>CO2</sub>.<br/>&bull; NH<sub>4</sub>HS<sub>(s)</sub> &hArr; NH<sub>3(g)</sub> + H<sub>2</sub>S<sub>(g)</sub> &rArr; K<sub>p</sub> = p<sub>NH3</sub> &times; p<sub>H2S</sub>.<br/>&bull; Fe<sub>(s)</sub> + 4H<sub>2</sub>O<sub>(g)</sub> &hArr; Fe<sub>3</sub>O<sub>4(s)</sub> + 4H<sub>2(g)</sub> &rArr; K<sub>c</sub> = [H<sub>2</sub>]<sup>4</sup> / [H<sub>2</sub>O]<sup>4</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q57. Derive relation K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup> for general reaction aA + bB ⇋ cC + dD.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Rates r<sub>f</sub> = k<sub>f</sub>[A]<sup>a</sup>[B]<sup>b</sup> and r<sub>r</sub> = k<sub>r</sub>[C]<sup>c</sup>[D]<sup>d</sup>. At equilibrium r<sub>f</sub>=r<sub>r</sub> ⟶ K<sub>c</sub> = k<sub>f</sub>/k<sub>r</sub>. Ideal gas law p<sub>i</sub>=[C<sub>i</sub>]RT leads to K<sub>p</sub> = K<sub>c</sub> (RT)<sup>(c+d)-(a+b)</sup> = <b>K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q82: Discuss Le Chatelier's Principle comprehensively: Effect of Concentration, Pressure, Volume, Temperature, Catalyst, and Inert Gas with Industrial Applications.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Core Law:</b> Perturbing a system in equilibrium causes a shift that opposes and minimizes the disturbance.<br/><br/><b style="color: #AB47BC;">2. Parameters:</b><br/>&bull; <i>Concentration:</i> Adding reactant shifts forward; removing product shifts forward.<br/>&bull; <i>Pressure:</i> Increasing pressure shifts toward fewer gas moles (&Delta;n<sub>g</sub> &lt; 0).<br/>&bull; <i>Temperature:</i> Raising T favors endothermic direction (&Delta;H &gt; 0); lowering T favors exothermic direction.<br/>&bull; <i>Catalyst:</i> Accelerates rates equally; no equilibrium shift.<br/>&bull; <i>Inert Gas:</i> At constant V, no shift; at constant p, shifts toward more moles (&Delta;n<sub>g</sub> &gt; 0).<br/><br/><b style="color: #AB47BC;">3. Industrial Syntheses:</b><br/>&bull; <i>Haber Process (NH<sub>3</sub>):</i> 200 atm, 700 K, Fe catalyst.<br/>&bull; <i>Contact Process (SO<sub>3</sub>):</i> 2SO<sub>2</sub> + O<sub>2</sub> &hArr; 2SO<sub>3</sub> (&Delta;H = -196 kJ); 1-2 atm, 720 K, V<sub>2</sub>O<sub>5</sub> catalyst.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q58. Explain Reaction Quotient (Q<sub>c</sub>) and how comparing Q<sub>c</sub> with K<sub>c</sub> predicts reaction direction.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Q<sub>c</sub> calculates instant concentrations.<br>• Q<sub>c</sub> < K<sub>c</sub>: Forward.<br>• Q<sub>c</sub> > K<sub>c</sub>: Reverse.<br>• Q<sub>c</sub> = K<sub>c</sub>: Equilibrium.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q83: Derive the Henderson-Hasselbalch Equations for both Acidic and Basic Buffers, and explain the mechanism of Buffer Action with chemical equations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Acidic Buffer (HA + NaA):</b> HA &hArr; H<sup>+</sup> + A<sup>-</sup> &rArr; K<sub>a</sub> = [H<sup>+</sup>][A<sup>-</sup>]/[HA].<br/>[H<sup>+</sup>] = K<sub>a</sub> [HA]/[A<sup>-</sup>]. Taking -log: pH = pK<sub>a</sub> + log([A<sup>-</sup>]/[HA]) &rArr; <b>pH = pK<sub>a</sub> + log<sub>10</sub>([Salt] / [Acid])</b>.<br/><br/><b style="color: #AB47BC;">2. Basic Buffer (BOH + BCl):</b> BOH &hArr; B<sup>+</sup> + OH<sup>-</sup> &rArr; K<sub>b</sub> = [B<sup>+</sup>][OH<sup>-</sup>]/[BOH].<br/>[OH<sup>-</sup>] = K<sub>b</sub> [BOH]/[B<sup>+</sup>]. Taking -log: <b>pOH = pK<sub>b</sub> + log<sub>10</sub>([Salt] / [Base])</b> &rArr; pH = 14 - pOH.<br/><br/><b style="color: #AB47BC;">3. Mechanism:</b> In acidic buffer, added H<sup>+</sup> is trapped by CH<sub>3</sub>COO<sup>-</sup> &rarr; CH<sub>3</sub>COOH; added OH<sup>-</sup> is neutralized by CH<sub>3</sub>COOH &rarr; CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O. Keeps pH stable.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q59. State Le Chatelier's Principle. Predict effect of T, P, conc. on: N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇋ 2NH<sub>3</sub>(g) (ΔH = -92.4 kJ).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Exothermic gas reaction.<br>• High P favors forward (4 mol ⟶ 2 mol).<br>• Low T favors forward (releases heat).<br>• Adding N<sub>2</sub>/H<sub>2</sub> favors forward.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q84: Explain the Hydrolysis of Salts in exhaustive detail: Four classes of salts, derivation of Hydrolysis Constants (Kh), Degree of Hydrolysis (h), and pH.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Strong Acid + Strong Base (NaCl):</b> No hydrolysis; pH = 7.0.<br/><br/><b>2. Weak Acid + Strong Base (CH<sub>3</sub>COONa):</b> CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O &hArr; CH<sub>3</sub>COOH + OH<sup>-</sup>.<br/>K<sub>h</sub> = K<sub>w</sub>/K<sub>a</sub>; h = &radic;(K<sub>h</sub>/C); [OH<sup>-</sup>] = Ch = &radic;(K<sub>h</sub>C) &rArr; <b>pH = 7 + <sup>1</sup>/<sub>2</sub>pK<sub>a</sub> + <sup>1</sup>/<sub>2</sub>log C</b>.<br/><br/><b>3. Strong Acid + Weak Base (NH<sub>4</sub>Cl):</b> NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O &hArr; NH<sub>4</sub>OH + H<sup>+</sup>.<br/>K<sub>h</sub> = K<sub>w</sub>/K<sub>b</sub>; h = &radic;(K<sub>h</sub>/C); [H<sup>+</sup>] = &radic;(K<sub>h</sub>C) &rArr; <b>pH = 7 - <sup>1</sup>/<sub>2</sub>pK<sub>b</sub> - <sup>1</sup>/<sub>2</sub>log C</b>.<br/><br/><b>4. Weak Acid + Weak Base (CH<sub>3</sub>COONH<sub>4</sub>):</b> Both ions hydrolyze.<br/>K<sub>h</sub> = K<sub>w</sub>/(K<sub>a</sub> K<sub>b</sub>); h = &radic;K<sub>h</sub>; <b>pH = 7 + <sup>1</sup>/<sub>2</sub>pK<sub>a</sub> - <sup>1</sup>/<sub>2</sub>pK<sub>b</sub></b> (Independent of C).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q60. Compare Arrhenius, Brønsted-Lowry, and Lewis theories of acids and bases with examples.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      • Arrhenius: H<sup>+</sup> / OH<sup>-</sup> in water.<br>• Brønsted: Proton donor / acceptor.<br>• Lewis: Electron-pair acceptor (BF<sub>3</sub>) / donor (NH<sub>3</sub>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q85: Discuss Solubility Product (Ksp) and Common Ion Effect in complete depth: Calculations for AB, AB2, A2B3 salts, and applications in qualitative analysis.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. Salt Types &amp; K<sub>sp</sub> Relations:</b><br/>&bull; AB (AgCl): K<sub>sp</sub> = S &times; S = <b>S<sup>2</sup></b> &rArr; S = &radic;K<sub>sp</sub>.<br/>&bull; AB<sub>2</sub> (CaF<sub>2</sub>, PbCl<sub>2</sub>): K<sub>sp</sub> = S &times; (2S)<sup>2</sup> = <b>4 S<sup>3</sup></b> &rArr; S = (K<sub>sp</sub>/4)<sup>1/3</sup>.<br/>&bull; A<sub>2</sub>B<sub>3</sub> (As<sub>2</sub>S<sub>3</sub>): K<sub>sp</sub> = (2S)<sup>2</sup> &times; (3S)<sup>3</sup> = <b>108 S<sup>5</sup></b> &rArr; S = (K<sub>sp</sub>/108)<sup>1/5</sup>.<br/><br/><b style="color: #AB47BC;">2. Precipitation Principle:</b> Precipitation occurs when Ionic Product Q<sub>sp</sub> &gt; K<sub>sp</sub>.<br/><br/><b style="color: #AB47BC;">3. Analytical Applications:</b><br/>&bull; Separation of Group II from Group IV cations by controlling sulfide ion concentration via common ion effect of HCl on H<sub>2</sub>S.<br/>&bull; Purification of common salt by passing dry HCl gas through saturated brine.<br/>&bull; Salting out of soap by adding NaCl.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q61. Derive Ostwald's Dilution Law α = √(K<sub>a</sub>/c) for weak monobasic acid.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      HA ⇋ H<sup>+</sup> + A<sup>-</sup>. Conc: c(1-α), cα, cα. K<sub>a</sub> = c<sup>2</sup>α<sup>2</sup> / c(1-α) ≈ c α<sup>2</sup> ⟶ <b>α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q86: Derive the Van't Hoff Equation relating equilibrium constant to temperature, and discuss its thermodynamic significance.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      From thermodynamics: &Delta;G&deg; = -RT ln K and &Delta;G&deg; = &Delta;H&deg; - T&Delta;S&deg;.<br/>Equating: -RT ln K = &Delta;H&deg; - T&Delta;S&deg; &rArr; ln K = -(&Delta;H&deg; / RT) + (&Delta;S&deg; / R).<br/>Differentiating with respect to T (assuming &Delta;H&deg; and &Delta;S&deg; constant):<br/><b>d(ln K) / dT = &Delta;H&deg; / RT<sup>2</sup></b> (Van't Hoff Equation).<br/>Integrating between T<sub>1</sub> and T<sub>2</sub>:<br/><b>log<sub>10</sub>(K<sub>2</sub> / K<sub>1</sub>) = [&Delta;H&deg; / 2.303 R] &times; [(T<sub>2</sub> - T<sub>1</sub>) / (T<sub>1</sub> T<sub>2</sub>)]</b>.<br/>&bull; If &Delta;H&deg; &gt; 0 (Endothermic): K<sub>2</sub> &gt; K<sub>1</sub> (K increases with T).<br/>&bull; If &Delta;H&deg; &lt; 0 (Exothermic): K<sub>2</sub> &lt; K<sub>1</sub> (K decreases with T).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q62. Explain Ionic Product of Water (K<sub>w</sub> = 10<sup>-14</sup>) and pH scale. Calculate pH of 0.005 M H<sub>2</sub>SO<sub>4</sub>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      H<sub>2</sub>SO<sub>4</sub> ⟶ 2 H<sup>+</sup> + SO<sub>4</sub><sup>2-</sup> ⟶ [H<sup>+</sup>] = 2 × 0.005 = 0.01 M = 10<sup>-2</sup> M.<br>pH = -log[10<sup>-2</sup>] = <b>2.0</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q87: Explain the Bronsted-Lowry and Lewis acid-base theories with comprehensive classification of Lewis acids and bases.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Br&oslash;nsted-Lowry:</b> Acid is proton donor, Base is proton acceptor. Conjugate pairs differ by H<sup>+</sup>. Strengths relate via K<sub>a</sub> &times; K<sub>b</sub> = K<sub>w</sub>.<br/><br/><b style="color: #AB47BC;">2. Lewis Classification:</b><br/>&bull; <i>Lewis Acids (Electrophiles):</i> (a) Incomplete octet molecules (BF<sub>3</sub>, AlCl<sub>3</sub>), (b) Simple metal cations (Ag<sup>+</sup>, Fe<sup>3+</sup>), (c) Molecules with vacant d-orbitals (SiF<sub>4</sub>, SnCl<sub>4</sub>), (d) Molecules with polar double bonds (O=C=O).<br/>&bull; <i>Lewis Bases (Nucleophiles):</i> (a) Neutral molecules with lone pairs (:NH<sub>3</sub>, H<sub>2</sub>O:), (b) Negatively charged anions (OH<sup>-</sup>, CN<sup>-</sup>, Cl<sup>-</sup>), (c) Unsaturated alkenes/alkynes with electron-rich &pi; bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q63. Explain Hydrolysis of 4 salt types and write pH formulas for CH<sub>3</sub>COONa and NH<sub>4</sub>Cl.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      • CH<sub>3</sub>COONa (WA+SB): pH = 7 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>a</sub> + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> log c.<br>• NH<sub>4</sub>Cl (SA+WB): pH = 7 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>b</sub> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> log c.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q88: Explain the relationship between Degree of Dissociation (&alpha;), Vapor Density, and Molecular Mass for a decomposing gas like PCl5.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For dissociation: PCl<sub>5(g)</sub> &hArr; PCl<sub>3(g)</sub> + Cl<sub>2(g)</sub>.<br/>Initial moles: 1; At equilibrium: 1 - &alpha;, &alpha;, &alpha;. Total moles = 1 + &alpha;.<br/>Since mass is conserved: (Theoretical Molar Mass M) / (Experimental Observed Mass M<sub>obs</sub>) = Total equilibrium moles / Initial moles = (1 + &alpha;) / 1.<br/>Since M = 2D (where D is theoretical vapor density and d is observed vapor density):<br/>D / d = 1 + &alpha; &rArr; <b>&alpha; = (D - d) / d = (M - M<sub>obs</sub>) / M<sub>obs</sub></b>.<br/>For general decomposition: A &hArr; n B: <b>&alpha; = (D - d) / [(n - 1) d]</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q64. Derive Henderson-Hasselbalch equation for Acidic Buffer (CH<sub>3</sub>COOH + CH<sub>3</sub>COONa).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      HA ⇋ H<sup>+</sup> + A<sup>-</sup> ⟶ K<sub>a</sub> = [H<sup>+</sup>][A<sup>-</sup>]/[HA] ⟶ [H<sup>+</sup>] = K<sub>a</sub> [HA]/[A<sup>-</sup>] ⟶ <b>pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q89: Explain the pH titration curves of: (a) Strong Acid vs Strong Base, (b) Weak Acid vs Strong Base, (c) Strong Acid vs Weak Base, with suitable indicator selection.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Strong Acid vs Strong Base (HCl vs NaOH):</b> Sharp vertical pH jump between pH 3.5 and 10.5 at equivalence point (pH = 7.0). Both Methyl Orange (pH 3.1-4.4) and Phenolphthalein (pH 8.2-10.0) work.<br/><br/><b>2. Weak Acid vs Strong Base (CH<sub>3</sub>COOH vs NaOH):</b> Equivalence point is alkaline (pH ~8.8) due to salt hydrolysis. pH jump occurs between 7.0 and 10.5. <b>Phenolphthalein is the only suitable indicator</b>; Methyl Orange fails.<br/><br/><b>3. Strong Acid vs Weak Base (HCl vs NH<sub>4</sub>OH):</b> Equivalence point is acidic (pH ~5.2). pH jump occurs between 3.5 and 7.0. <b>Methyl Orange is the only suitable indicator</b>; Phenolphthalein fails.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q65. Explain Solubility Product (K<sub>sp</sub>), Common Ion Effect, and application in II group cation analysis (H<sub>2</sub>S in HCl).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      In group II analysis, HCl suppresses H<sub>2</sub>S dissociation via common H<sup>+</sup> ion, so only group II radicals with very low K<sub>sp</sub> precipitate as sulfides.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q90: The equilibrium constant for the reaction: H2(g) + I2(g) &hArr; 2HI(g) is 50.0 at 448°C. If 0.50 mol of H2 and 0.50 mol of I2 are placed in a 1.0 L vessel, calculate equilibrium concentrations of all species.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Initial [H<sub>2</sub>] = 0.50 M, [I<sub>2</sub>] = 0.50 M, [HI] = 0.<br/>At equilibrium: [H<sub>2</sub>] = 0.50 - x, [I<sub>2</sub>] = 0.50 - x, [HI] = 2x.<br/>K<sub>c</sub> = [HI]<sup>2</sup> / ([H<sub>2</sub>][I<sub>2</sub>]) = (2x)<sup>2</sup> / (0.50 - x)<sup>2</sup> = 50.0.<br/>Taking square root on both sides:<br/>2x / (0.50 - x) = &radic;50.0 = 7.071.<br/>2x = 7.071(0.50 - x) = 3.5355 - 7.071x.<br/>9.071x = 3.5355 &rArr; x = 3.5355 / 9.071 = <b>0.390 M</b>.<br/>Equilibrium concentrations:<br/>&bull; <b>[H<sub>2</sub>] = 0.50 - 0.390 = 0.110 M</b>.<br/>&bull; <b>[I<sub>2</sub>] = 0.50 - 0.390 = 0.110 M</b>.<br/>&bull; <b>[HI] = 2(0.390) = 0.780 M</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q66. Calculate K<sub>c</sub> for 2 NO<sub>2</sub>(g) ⇋ N<sub>2</sub>O<sub>4</sub>(g) if equilibrium concentrations are [NO<sub>2</sub>] = 0.20 M, [N<sub>2</sub>O<sub>4</sub>] = 0.80 M.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      K<sub>c</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[N<sub>2</sub>O<sub>4</sub>]</span><span style="display:block; padding:0 4px;">[NO<sub>2</sub>]<sup>2</sup></span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.80</span><span style="display:block; padding:0 4px;">(0.20)<sup>2</sup></span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.80</span><span style="display:block; padding:0 4px;">0.04</span></span> = <b>20.0 L mol<sup>-1</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q91: Explain the concept of Simultaneous Equilibria and calculate the solubility of Ag2CrO4 in a solution containing 0.1 M AgNO3. (Ksp of Ag2CrO4 = 1.1 &times; 10<sup>-12</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ag<sub>2</sub>CrO<sub>4(s)</sub> &hArr; 2Ag<sup>+</sup><sub>(aq)</sub> + CrO<sub>4</sub><sup>2-</sup><sub>(aq)</sub>.<br/>Let solubility be S mol L<sup>-1</sup>. [CrO<sub>4</sub><sup>2-</sup>] = S.<br/>AgNO<sub>3</sub> dissociates completely: [Ag<sup>+</sup>]<sub>AgNO3</sub> = 0.1 M.<br/>Total [Ag<sup>+</sup>] = 2S + 0.1 &approx; 0.1 M (since S &lt;&lt; 0.1 due to common ion effect).<br/>K<sub>sp</sub> = [Ag<sup>+</sup>]<sup>2</sup> [CrO<sub>4</sub><sup>2-</sup>] = (0.1)<sup>2</sup> &times; S = 1.1 &times; 10<sup>-12</sup>.<br/>0.01 &times; S = 1.1 &times; 10<sup>-12</sup> &rArr; <b>S = 1.1 &times; 10<sup>-10</sup> mol L<sup>-1</sup></b>.<br/>(In pure water, S = (K<sub>sp</sub>/4)<sup>1/3</sup> = 6.5 &times; 10<sup>-5</sup> M; common ion decreases solubility by ~600,000-fold).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q67. Calculate pH of a buffer solution containing 0.1 M CH<sub>3</sub>COOH and 0.2 M CH<sub>3</sub>COONa (pK<sub>a</sub> of acetic acid = 4.74).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>) = 4.74 + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.2</span><span style="display:block; padding:0 4px;">0.1</span></span>) = 4.74 + 0.301 = <b>5.04</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q92: Discuss the Ostwald-Walker dynamic method for the determination of relative lowering of vapor pressure and equilibrium constant.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Air is bubbled successively through: (1) A train of weighed bulbs containing solution, (2) A train of bulbs containing pure solvent, (3) A U-tube containing anhydrous CaCl<sub>2</sub>.<br/>&bull; Loss in mass of solution bulbs &prop; vapor pressure of solution (p).<br/>&bull; Loss in mass of solvent bulbs &prop; (p&deg; - p).<br/>&bull; Total gain in mass of CaCl<sub>2</sub> tube &prop; p&deg;.<br/>Relative lowering: (p&deg; - p) / p&deg; = (Loss in solvent bulbs) / (Total gain in CaCl<sub>2</sub> tube). Directly calculates solute molar mass and thermodynamic activity.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q68. Calculate solubility of CaF<sub>2</sub> in g/L if K<sub>sp</sub> = 4.0 × 10<sup>-11</sup> (Molar mass CaF<sub>2</sub> = 78 g/mol).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      K<sub>sp</sub> = 4 S<sup>3</sup> = 4.0 × 10<sup>-11</sup> ⟶ S<sup>3</sup> = 10<sup>-11</sup> ⟶ S = 2.15 × 10<sup>-4</sup> mol/L.<br>Solubility = 2.15 × 10<sup>-4</sup> × 78 = <b>0.0168 g L<sup>-1</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q93: Explain the ionization of Polyprotic Weak Acids (e.g., H3PO4, H2S) and why Ka1 &gt;&gt; Ka2 &gt;&gt; Ka3.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Polyprotic acids ionize stepwise:<br/>H<sub>3</sub>PO<sub>4</sub> &hArr; H<sup>+</sup> + H<sub>2</sub>PO<sub>4</sub><sup>-</sup> (K<sub>a1</sub> = 7.5 &times; 10<sup>-3</sup>)<br/>H<sub>2</sub>PO<sub>4</sub><sup>-</sup> &hArr; H<sup>+</sup> + HPO<sub>4</sub><sup>2-</sup> (K<sub>a2</sub> = 6.2 &times; 10<sup>-8</sup>)<br/>HPO<sub>4</sub><sup>2-</sup> &hArr; H<sup>+</sup> + PO<sub>4</sub><sup>3-</sup> (K<sub>a3</sub> = 4.2 &times; 10<sup>-13</sup>).<br/>K<sub>a1</sub> &gt;&gt; K<sub>a2</sub> &gt;&gt; K<sub>a3</sub> because it is electrostaticly much harder to remove a positively charged proton (H<sup>+</sup>) from a negatively charged anion (H<sub>2</sub>PO<sub>4</sub><sup>-</sup>) than from a neutral molecule (H<sub>3</sub>PO<sub>4</sub>), and harder still from a divalent anion (HPO<sub>4</sub><sup>2-</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q69. Explain why pH of pure water is 7.0 at 25°C but 6.63 at 50°C. Is water acidic at 50°C?</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Ionization of water is endothermic, so K<sub>w</sub> increases at higher T ([H<sup>+</sup>] = 2.34×10<sup>-7</sup> M ⟶ pH = 6.63). Water remains <b>NEUTRAL</b> because [H<sup>+</sup>] = [OH<sup>-</sup>]!
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q94: Explain the concept of Acid-Base Neutralization Indicators: Two-color equilibrium, Transition interval, and Universal Indicator.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Indicators are weak dyes (HIn &hArr; H<sup>+</sup> + In<sup>-</sup>).<br/>K<sub>In</sub> = [H<sup>+</sup>][In<sup>-</sup>] / [HIn] &rArr; pH = pK<sub>In</sub> + log([In<sup>-</sup>]/[HIn]).<br/>The human eye perceives Color 1 when [HIn] &ge; 10[In<sup>-</sup>] (pH &le; pK<sub>In</sub> - 1), and Color 2 when [In<sup>-</sup>] &ge; 10[HIn] (pH &ge; pK<sub>In</sub> + 1). Thus, the visible transition interval spans <b>pH = pK<sub>In</sub> &plusmn; 1 (2 pH units)</b>.<br/>A <b>Universal Indicator</b> combines multiple dyes (thymol blue, methyl red, bromothymol blue, phenolphthalein) to display a smooth rainbow spectrum from pH 1 to 14.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q70. Explain Brønsted conjugate acid-base pairs: (a) NH<sub>3</sub>/NH<sub>4</sub><sup>+</sup>, (b) H<sub>2</sub>O/OH<sup>-</sup>, (c) HCO<sub>3</sub><sup>-</sup>/CO<sub>3</sub><sup>2-</sup>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Species differing by 1 proton H<sup>+</sup>. Stronger acid forms weaker conjugate base.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q95: Explain why the degree of hydrolysis of the salt of a weak acid and weak base is independent of concentration, while for other salts it depends on concentration.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For salt of weak acid and weak base (CH<sub>3</sub>COONH<sub>4</sub>):<br/>CH<sub>3</sub>COO<sup>-</sup> + NH<sub>4</sub><sup>+</sup> + H<sub>2</sub>O &hArr; CH<sub>3</sub>COOH + NH<sub>4</sub>OH.<br/>K<sub>h</sub> = (C h &times; C h) / [C(1 - h) &times; C(1 - h)] = h<sup>2</sup> / (1 - h)<sup>2</sup>.<br/>Concentration C cancels out completely: <b>h = &radic;K<sub>h</sub> / (1 + &radic;K<sub>h</sub>)</b>.<br/>For salts of weak acid + strong base, K<sub>h</sub> = C h<sup>2</sup> / (1 - h), so h = &radic;(K<sub>h</sub>/C) &prop; 1/&radic;C, which depends directly on dilution.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q71. Calculate equilibrium concentration of H<sub>2</sub> for H<sub>2</sub> + I<sub>2</sub> ⇋ 2HI (K<sub>c</sub> = 50) if equilibrium [I<sub>2</sub>] = 0.1 M, [HI] = 0.5 M.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      K<sub>c</sub> = [HI]<sup>2</sup> / ([H<sub>2</sub>][I<sub>2</sub>]) ⟶ 50 = (0.5)<sup>2</sup> / ([H<sub>2</sub>] × 0.1) ⟶ [H<sub>2</sub>] = 0.25 / 5 = <b>0.05 M</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q96: Calculate the change in pH when 0.01 mol of HCl is added to 1.0 L of a buffer containing 0.10 M CH3COOH and 0.10 M CH3COONa. (pKa = 4.74).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Initial pH = pK<sub>a</sub> + log(0.10/0.10) = <b>4.74</b>.<br/>Adding 0.01 mol HCl reacts with acetate ions: CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup> &rarr; CH<sub>3</sub>COOH.<br/>New [CH<sub>3</sub>COO<sup>-</sup>] = 0.10 - 0.01 = 0.09 M.<br/>New [CH<sub>3</sub>COOH] = 0.10 + 0.01 = 0.11 M.<br/>New pH = 4.74 + log(0.09 / 0.11) = 4.74 + log(0.818) = 4.74 - 0.087 = <b>4.65</b>.<br/>Change in pH = 4.74 - 4.65 = <b>0.09 units</b> (Demonstrates robust buffer stabilization).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q72. Explain Common Ion Effect on solubility of AgCl when NaCl is added.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Adding NaCl introduces common Cl<sup>-</sup> ions, shifting AgCl ⇋ Ag<sup>+</sup> + Cl<sup>-</sup> backward and drastically decreasing AgCl solubility.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q97: Explain the Fractional Precipitation of metal ions using selective solubility product control.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When two cations form precipitates with the same reagent, the cation whose precipitation requirement (Q<sub>sp</sub> &gt; K<sub>sp</sub>) is met at the lower reagent concentration precipitates first.<br/>Example: A solution contains 0.1 M Cl<sup>-</sup> and 0.1 M CrO<sub>4</sub><sup>2-</sup>. AgNO<sub>3</sub> is added.<br/>&bull; For AgCl: [Ag<sup>+</sup>] needed = K<sub>sp</sub>/[Cl<sup>-</sup>] = 1.8 &times; 10<sup>-10</sup> / 0.1 = <b>1.8 &times; 10<sup>-9</sup> M</b>.<br/>&bull; For Ag<sub>2</sub>CrO<sub>4</sub>: [Ag<sup>+</sup>] needed = &radic;(K<sub>sp</sub>/[CrO<sub>4</sub><sup>2-</sup>]) = &radic;(1.1 &times; 10<sup>-12</sup> / 0.1) = <b>3.3 &times; 10<sup>-6</sup> M</b>.<br/>AgCl precipitates first until [Cl<sup>-</sup>] drops below 5 &times; 10<sup>-5</sup> M before red Ag<sub>2</sub>CrO<sub>4</sub> begins to precipitate.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q73. Calculate degree of ionization α and pH of 0.1 M CH<sub>3</sub>COOH solution (K<sub>a</sub> = 1.8 × 10<sup>-5</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√K<sub>a</sub></span><span style="display:block; padding:0 4px;">c</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√(1.8×10<sup>-5</sup>)</span><span style="display:block; padding:0 4px;">0.1</span></span> = 0.0134 (1.34%).<br>[H<sup>+</sup>] = c α = 0.1 × 0.0134 = 1.34 × 10<sup>-3</sup> M ⟶ <b>pH = 2.87</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q98: Discuss the relationship between Chemical Equilibrium and Chemical Kinetics: Microscopic Reversibility and Detailed Balancing.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      At dynamic equilibrium, macroscopic properties are invariant because forward rate equals reverse rate: r<sub>f</sub> = r<sub>b</sub>.<br/><b style="color: #AB47BC;">Principle of Detailed Balancing:</b> At equilibrium, every elementary microscopic reaction pathway is balanced by its exact reverse elementary pathway occurring at the same rate.<br/>For elementary step: A + B &hArr; C + D, r<sub>f</sub> = k<sub>f</sub>[A][B] and r<sub>b</sub> = k<sub>b</sub>[C][D].<br/>k<sub>f</sub>[A][B] = k<sub>b</sub>[C][D] &rArr; [C][D] / ([A][B]) = k<sub>f</sub> / k<sub>b</sub> = <b>K<sub>c</sub></b>.<br/>This bridges thermodynamic equilibrium constant K<sub>c</sub> directly with kinetic rate constants.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q74. Explain buffer action of acidic buffer (CH<sub>3</sub>COOH + CH<sub>3</sub>COONa) upon adding H<sup>+</sup> or OH<sup>-</sup>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      • Added H<sup>+</sup> is neutralized by acetate ions: CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup> ⟶ CH<sub>3</sub>COOH.<br>• Added OH<sup>-</sup> is neutralized by acetic acid: CH<sub>3</sub>COOH + OH<sup>-</sup> ⟶ CH<sub>3</sub>COO<sup>-</sup> + H<sub>2</sub>O.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q99: Explain the concept of Salt Effect (Inert Ion Effect) on the solubility of sparingly soluble salts.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Adding an inert strong electrolyte without a common ion (e.g., KNO<sub>3</sub> added to AgCl solution) increases the total ionic strength of the solution: I = <sup>1</sup>/<sub>2</sub> &Sigma; c<sub>i</sub> z<sub>i</sub><sup>2</sup>.<br/>According to Debye-H&uuml;ckel limiting law, higher ionic strength stabilizes individual ions via an ionic atmosphere, lowering mean activity coefficients (&gamma;<sub>&plusmn;</sub> &lt; 1). Since thermodynamic K<sub>sp</sub>&deg; = a<sub>Ag+</sub> &times; a<sub>Cl-</sub> = &gamma;<sub>&plusmn;</sub><sup>2</sup> [Ag<sup>+</sup>][Cl<sup>-</sup>] must remain constant, the molar concentrations [Ag<sup>+</sup>] and [Cl<sup>-</sup>] must increase, <b>increasing the solubility of AgCl</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q75. Explain Henry's Law of gas solubility in liquids and list 2 industrial applications.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      m = k<sub>H</sub> P.<br>Applications: 1. Carbonated soft drinks sealed under high CO<sub>2</sub> pressure. 2. Deep sea divers gas cylinder diluents (He-O<sub>2</sub>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #AB47BC; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q100: Construct an exhaustive Master Synthesis Matrix correlating Chemical Equilibrium, Le Chatelier's Principle, Ionic Equilibria, and Analytical Applications.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #AB47BC;">1. Chemical Equilibrium:</b> Mass action law K<sub>c</sub> = k<sub>f</sub>/k<sub>b</sub>; K<sub>p</sub> = K<sub>c</sub>(RT)<sup>&Delta;n<sub>g</sub></sup>; Reaction quotient Q predicts direction (&Delta;G&deg; = -2.303 RT log K).<br/><br/><b style="color: #AB47BC;">2. Le Chatelier's Framework:</b> Concentration, pressure (&Delta;n<sub>g</sub>), temperature (Van't Hoff isochore), and inert gas addition dictate shifts; optimizes industrial Haber and Contact processes.<br/><br/><b style="color: #AB47BC;">3. Ionic Equilibria:</b> Ostwald's dilution law for weak acids/bases (&alpha; = &radic;(K/C)); Br&oslash;nsted conjugate pairs; Lewis electron-pair donation.<br/><br/><b style="color: #AB47BC;">4. pH &amp; Buffers:</b> S&oslash;rensen scale (pH = -log[H<sup>+</sup>]); Henderson-Hasselbalch equations maintain homeostasis (blood bicarbonate buffer).<br/><br/><b style="color: #AB47BC;">5. Solubility &amp; Salt Hydrolysis:</b> K<sub>sp</sub> precipitation criteria (Q<sub>sp</sub> &gt; K<sub>sp</sub>) and common ion effect govern qualitative inorganic cation analysis (Groups II, III).
     </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q76. Calculate pH of 0.05 M NH<sub>4</sub>OH solution (K<sub>b</sub> = 1.8 × 10<sup>-5</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      [OH<sup>-</sup>] = √(K<sub>b</sub> c) = √(1.8×10<sup>-5</sup> × 0.05) = 9.48 × 10<sup>-4</sup> M.<br>pOH = 3.02 ⟶ <b>pH = 14 - 3.02 = 10.98</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q77. Explain why Mg(OH)<sub>2</sub> precipitates in group IV analysis while Ca(OH)<sub>2</sub> does not.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      K<sub>sp</sub> of Mg(OH)<sub>2</sub> is small enough that ionic product exceeds K<sub>sp</sub> when NH<sub>4</sub>OH is added.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q78. Calculate K<sub>p</sub> for PCl<sub>5</sub>(g) ⇋ PCl<sub>3</sub>(g) + Cl<sub>2</sub>(g) if 50% PCl<sub>5</sub> dissociates at 2 atm total pressure.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Moles: PCl<sub>5</sub>=0.5, PCl<sub>3</sub>=0.5, Cl<sub>2</sub>=0.5 (Total=1.5).<br>p(PCl<sub>5</sub>) = (0.5/1.5)×2 = 2/3; p(PCl<sub>3</sub>) = p(Cl<sub>2</sub>) = (0.5/1.5)×2 = 2/3.<br>K<sub>p</sub> = (2/3 × 2/3) / (2/3) = <b>0.667 atm</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q79. Explain Lewis Acid-Base neutralization forming coordinate covalent bonds (e.g. BF<sub>3</sub> + :NH<sub>3</sub> ⟶ F<sub>3</sub>B←NH<sub>3</sub>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      NH<sub>3</sub> donates lone pair to electron-deficient BF<sub>3</sub>, forming a dative coordinate bond.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q80. Explain why solubility of SrSO<sub>4</sub> decreases in Na<sub>2</sub>SO<sub>4</sub> solution.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      SO<sub>4</sub><sup>2-</sup> common ion shifts equilibrium SrSO<sub>4</sub>(s) ⇋ Sr<sup>2+</sup> + SO<sub>4</sub><sup>2-</sup> to the left.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q81. Calculate pH of 10<sup>-8</sup> M HCl solution considering water auto-ionization.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Total [H<sup>+</sup>] = 10<sup>-8</sup> (acid) + 10<sup>-7</sup> (water) = 1.1 × 10<sup>-7</sup> M.<br>pH = -log(1.1 × 10<sup>-7</sup>) = <b>6.96 (Slightly acidic, NOT 8.0!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q82. Explain why CO<sub>2</sub> gas dissolves in water to form carbonic acid H<sub>2</sub>CO<sub>3</sub>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      CO<sub>2</sub> + H<sub>2</sub>O ⇋ H<sub>2</sub>CO<sub>3</sub> ⇋ H<sup>+</sup> + HCO<sub>3</sub><sup>-</sup> (Henry's law dissolution).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q83. Calculate K<sub>sp</sub> of Ag<sub>2</sub>CrO<sub>4</sub> if its solubility is 1.3 × 10<sup>-4</sup> mol/L.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      K<sub>sp</sub> = (2S)<sup>2</sup> (S) = 4 S<sup>3</sup> = 4 (1.3 × 10<sup>-4</sup>)<sup>3</sup> = <b>8.79 × 10<sup>-12</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q84. Distinguish between Homogeneous and Heterogeneous equilibria with examples.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      • <b>Homogeneous:</b> All species in same phase (N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇋ 2NH<sub>3</sub>(g)).<br>• <b>Heterogeneous:</b> Species in different phases (CaCO<sub>3</sub>(s) ⇋ CaO(s) + CO<sub>2</sub>(g)).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #AB47BC;'>Q85. Explain why blood pH is maintained at 7.42 by carbonic acid-bicarbonate buffer (H<sub>2</sub>CO<sub>3</sub> / HCO<sub>3</sub><sup>-</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); border-left: 3px solid #AB47BC; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #AB47BC;'>Detailed Solution:</b><br>
-      Biological buffer resists metabolic acid/base changes, preserving blood enzyme stability.
-    </div>
-  </div>
-  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
-  <div style="background: rgba(171, 71, 188, 0.12); border: 1.5px solid #AB47BC; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #AB47BC; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
-    <p style="color: #AB47BC; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Calculations)</p>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q86: Law of Mass Action & K_p / K_c Derivations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Law of Mass Action, derive K_c and K_p expressions, and prove K_p = K_c (RT)Δn_g.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Rates r<sub>f</sub> = k<sub>f</sub>[A]<sup>a</sup>[B]<sup>b</sup> and r<sub>r</sub> = k<sub>r</sub>[C]<sup>c</sup>[D]<sup>d</sup>. At equilibrium r<sub>f</sub>=r<sub>r</sub> ⟶ K<sub>c</sub> = k<sub>f</sub>/k<sub>r</sub>. Ideal gas law p<sub>i</sub>=[C<sub>i</sub>]RT leads to K<sub>p</sub> = K<sub>c</sub> (RT)<sup>Δn<sub>g</sub></sup>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) For equilibrium N_2(g) + 3 H_2(g) ⇋ 2 NH_3(g) at 400 K, K_c = 0.50 L<sup>2</sup> mol<sup>-2</sup>. Calculate K_p (R = 0.0821 L atm mol<sup>-1</sup> K<sup>-1</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      Δn<sub>g</sub> = 2 - 4 = -2.<br>K<sub>p</sub> = K<sub>c</sub> (RT)<sup>-2</sup> = 0.50 × (0.0821 × 400)<sup>-2</sup> = 0.50 × (32.84)<sup>-2</sup> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.50</span><span style="display:block; padding:0 4px;">1078.47</span></span> = <b>4.64 × 10<sup>-4</sup> atm<sup>-2</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q87: Le Chatelier's Principle & Industrial Haber Process Optimization</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Le Chatelier's Principle and analyze perturbation effects (Conc, P, T, Catalyst, Inert Gas) on chemical equilibrium.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      System shifts to counteract external perturbations. High pressure favors lower mole side; high temperature favors endothermic direction.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Apply Le Chatelier's principle to optimize NH_3 yield in Haber Process: N_2(g) + 3 H_2(g) ⇋ 2 NH_3(g) (ΔH = -92.4 kJ). Specify optimum P, T, and catalyst used in industry.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      1. <b>High Pressure (200 atm):</b> Shifts equilibrium forward (4 mol ⟶ 2 mol).<br>2. <b>Optimum Temperature (450 °C / 700 K):</b> Compromise between high yield and kinetic rate.<br>3. <b>Catalyst:</b> Iron oxide with K<sub>2</sub>O and Al<sub>2</sub>O<sub>3</sub> promoters.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q88: Ostwald's Dilution Law & Weak Acid Ionization</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Ostwald's Dilution Law for weak electrolytes, derive α = √(K_a / c), and explain limitations for strong electrolytes.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      HA ⇋ H<sup>+</sup> + A<sup>-</sup>. K<sub>a</sub> = c α<sup>2</sup> / (1 - α). For weak acids α << 1 ⟶ α = √(K<sub>a</sub> / c). Fails for strong electrolytes (α ≈ 1 always).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate degree of dissociation α and pH of 0.05 M Formic Acid (HCOOH) given K_a = 1.8 × 10<sup>-4</sup>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">√(1.8×10<sup>-4</sup>)</span><span style="display:block; padding:0 4px;">0.05</span></span> = √(0.0036) = <b>0.060 (6.0%)</b>.<br>[H<sup>+</sup>] = c α = 0.05 × 0.06 = 3.0 × 10<sup>-3</sup> M.<br>pH = -log(3.0 × 10<sup>-3</sup>) = 3 - 0.477 = <b>2.523</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q89: Comprehensive Acid-Base Theories & Conjugate Mechanics</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Compare Arrhenius, Brønsted-Lowry, and Lewis acid-base theories in detail with 2 examples each.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Arrhenius (H<sup>+</sup>/OH<sup>-</sup> in water), Brønsted (Proton donor/acceptor), Lewis (Electron pair acceptor/donor).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Identify Conjugate Base of: (a) H_2SO_4, (b) HCO_3_minus, (c) NH_4_plus; and Conjugate Acid of: (d) OH_minus, (e) NH_3.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      Conjugate Bases: (a) <b>HSO<sub>4</sub><sup>-</sup></b>, (b) <b>CO<sub>3</sub><sup>2-</sup></b>, (c) <b>NH<sub>3</sub></b>.<br>Conjugate Acids: (d) <b>H<sub>2</sub>O</b>, (e) <b>NH<sub>4</sub><sup>+</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q90: Salt Hydrolysis Mechanics & pH Formula Derivations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Salt Hydrolysis mechanism for 4 salt types: (1) Strong Acid + Strong Base, (2) Weak Acid + Strong Base, (3) Strong Acid + Weak Base, (4) Weak Acid + Weak Base.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      1. SA+SB (NaCl): No hydrolysis (pH=7).<br>2. WA+SB (CH<sub>3</sub>COONa): Anionic hydrolysis (pH > 7).<br>3. SA+WB (NH<sub>4</sub>Cl): Cationic hydrolysis (pH < 7).<br>4. WA+WB (CH<sub>3</sub>COONH<sub>4</sub>): Both ions hydrolyze.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate hydrolysis constant K_h, degree of hydrolysis h, and pH of 0.1 M CH_3COONa solution at 298 K (K_a of acetic acid = 1.8 × 10<sup>-5</sup>, K_w = 10<sup>-14</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      K<sub>h</sub> = K<sub>w</sub> / K<sub>a</sub> = 10<sup>-14</sup> / (1.8 × 10<sup>-5</sup>) = <b>5.56 × 10<sup>-10</sup></b>.<br>h = √(K<sub>h</sub> / c) = √(5.56 × 10<sup>-9</sup>) = <b>7.45 × 10<sup>-5</sup></b>.<br>pH = 7 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> pK<sub>a</sub> + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> log c = 7 + 2.37 - 0.50 = <b>8.87</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q91: Buffer Action & Henderson-Hasselbalch Derivations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Explain Buffer Action, Acidic vs Basic Buffers, and derive Henderson-Hasselbalch equation for Acidic Buffer.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Resists pH changes. HA ⇋ H<sup>+</sup> + A<sup>-</sup> ⟶ pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate pH of a buffer solution prepared by mixing 50 mL of 0.2 M CH_3COOH and 50 mL of 0.4 M CH_3COONa (pK_a = 4.74).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      Total Volume = 100 mL.<br>[Acid] = (50 × 0.2)/100 = 0.10 M | [Salt] = (50 × 0.4)/100 = 0.20 M.<br>pH = 4.74 + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.20</span><span style="display:block; padding:0 4px;">0.10</span></span>) = 4.74 + 0.301 = <b>5.04</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q92: Solubility Product & Precipitation Mechanics in Analytical Chemistry</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Solubility Product (K_sp), Ionic Product (Q_sp), Common Ion Effect, and applications in Qualitative Inorganic Analysis.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Precipitation occurs when Q<sub>sp</sub> > K<sub>sp</sub>. Used in group separation of cations.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Will a precipitate of Ag_2CrO_4 form when equal volumes of 2.0 × 10<sup>-4</sup> M AgNO_3 and 2.0 × 10<sup>-4</sup> M K_2CrO_4 are mixed? (K_sp of Ag_2CrO_4 = 1.1 × 10<sup>-12</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      After mixing: [Ag<sup>+</sup>] = 1.0 × 10<sup>-4</sup> M | [CrO<sub>4</sub><sup>2-</sup>] = 1.0 × 10<sup>-4</sup> M.<br>Q<sub>sp</sub> = [Ag<sup>+</sup>]<sup>2</sup> [CrO<sub>4</sub><sup>2-</sup>] = (1.0 × 10<sup>-4</sup>)<sup>2</sup> (1.0 × 10<sup>-4</sup>) = <b>1.0 × 10<sup>-12</sup></b>.<br>Since Q<sub>sp</sub> (1.0 × 10<sup>-12</sup>) < K<sub>sp</sub> (1.1 × 10<sup>-12</sup>), <b>NO PRECIPITATE FORMS!</b>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q93: Thermodynamics of Equilibrium & Gibbs Energy Connection</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Derive relation ΔG° = -RT ln K and connect thermodynamics with chemical equilibrium constants.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      At equilibrium ΔG = ΔG° + RT ln K = 0 ⟶ ΔG° = -RT ln K = -2.303 RT log K.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate standard Gibbs energy change ΔG° and equilibrium constant K_p at 298 K for: 2 SO_2(g) + O_2(g) ⇋ 2 SO_3(g) (ΔH° = -198 kJ, ΔS° = -187 J/K).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      ΔG° = ΔH° - T ΔS° = -198 - [298 × (-0.187)] = -198 + 55.7 = <b>-142.3 kJ mol<sup>-1</sup></b>.<br>log K<sub>p</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">142300</span><span style="display:block; padding:0 4px;">2.303 × 8.314 × 298</span></span> = 24.94 ⟶ <b>K<sub>p</sub> = 8.7 × 10<sup>24</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q94: Polyprotic Acid Ionization & Stepwise Dissociation</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Explain Stepwise Ionization of Polyprotic Acids (H_3PO_4, H_2S, H_2CO_3) and why K_a1 >> K_a2 >> K_a3.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Removing subsequent protons from negatively charged anions requires much more energy due to electrostatic attraction (K<sub>a1</sub> >> K<sub>a2</sub> >> K<sub>a3</sub>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate [H<sup>+</sup>], [HCO_3_minus], and [CO_3_2minus] in 0.03 M carbonic acid H_2CO_3 (K_a1 = 4.3 × 10<sup>-7</sup>, K_a2 = 5.6 × 10<sup>-11</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      [H<sup>+</sup>] ≈ [HCO<sub>3</sub><sup>-</sup>] = √(K<sub>a1</sub> c) = √(4.3×10<sup>-7</sup> × 0.03) = <b>1.13 × 10<sup>-4</sup> M</b>.<br>[CO<sub>3</sub><sup>2-</sup>] = K<sub>a2</sub> = <b>5.6 × 10<sup>-11</sup> M</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q95: Common Ion Suppression & Quantitative Solubility Calculation</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Common Ion Effect on sparingly soluble salt AB_2 in presence of strong electrolyte containing common ion A<sup>2+</sup> or B<sup>-</sup>.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Common ion shifts solubility equilibrium backward, reducing molar solubility.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Calculate solubility of BaSO_4 (K_sp = 1.1 × 10<sup>-10</sup>) in: (a) Pure water, (b) 0.10 M Na_2SO_4 solution.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      (a) Pure water: S = √(1.1 × 10<sup>-10</sup>) = <b>1.05 × 10<sup>-5</sup> mol L<sup>-1</sup></b>.<br>(b) In 0.10 M Na<sub>2</sub>SO<sub>4</sub>: [SO<sub>4</sub><sup>2-</sup>] ≈ 0.10 M ⟶ S' = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1.1 × 10<sup>-10</sup></span><span style="display:block; padding:0 4px;">0.10</span></span> = <b>1.1 × 10<sup>-9</sup> mol L<sup>-1</sup> (10,000 times less soluble!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q96: Heterogeneous Equilibrium & Decomposition Dynamics</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Heterogeneous Equilibrium principles, active mass conventions for pure solids/liquids (assigned unity 1.0), and examples (CaCO_3(s) ⇋ CaO(s) + CO_2(g)).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Concentrations of pure solids and liquids remain constant and are incorporated into K<sub>c</sub>/K<sub>p</sub>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Solid Ammonium Carbamate NH_4COONH_2 decomposes: NH_4COONH_2(s) ⇋ 2 NH_3(g) + CO_2(g). If total pressure at equilibrium is 3.0 atm, calculate K_p.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      p(NH<sub>3</sub>) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">2</span><span style="display:block; padding:0 4px;">3</span></span> × 3.0 = 2.0 atm | p(CO<sub>2</sub>) = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">3</span></span> × 3.0 = 1.0 atm.<br>K<sub>p</sub> = (p<sub>NH3</sub>)<sup>2</sup> (p<sub>CO2</sub>) = (2.0)<sup>2</sup> (1.0) = <b>4.0 atm<sup>3</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q97: Degree of Dissociation Determination from Vapor Density</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Explain determination of degree of dissociation (α) of gas from initial vapor density (D) and equilibrium vapor density (d): α = (D - d) / ((n - 1) d).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Dissociation increases total number of gas moles, decreasing mixture density.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Vapor density of PCl_5 gas is 104.25 at 0°C. At 250°C, its vapor density drops to 62.0 due to dissociation: PCl_5(g) ⇋ PCl_3(g) + Cl_2(g). Calculate degree of dissociation α at 250°C.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      D = 104.25, d = 62.0, n = 2.<br>α = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">D - d</span><span style="display:block; padding:0 4px;">(n - 1) d</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">104.25 - 62.0</span><span style="display:block; padding:0 4px;">62.0</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">42.25</span><span style="display:block; padding:0 4px;">62.0</span></span> = <b>0.6815 (68.15%)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q98: Buffer Capacity & Optimal Buffer Design</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Detail Buffer Capacity (β = dB / dpH) and optimal buffer selection criteria (pH = pK_a ± 1).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Buffer capacity is maximum when [Salt] = [Acid] (pH = pK<sub>a</sub>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Design an acidic buffer of pH = 5.00 using Propanoic Acid (pK_a = 4.87) and Sodium Propanoate. Calculate ratio of [Sodium Propanoate] / [Propanoic Acid] required.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      pH = pK<sub>a</sub> + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>) ⟶ 5.00 = 4.87 + log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>) ⟶ log(<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">[Salt]</span><span style="display:block; padding:0 4px;">[Acid]</span></span>) = 0.13.<br>Ratio [Salt]/[Acid] = 10<sup>0.13</sup> = <b>1.35</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q99: Qualitative Analysis Separation Scheme Integration</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Explain role of Ionic Equilibrium, Solubility Product, and Common Ion Effect in systematic qualitative inorganic analysis (Groups I to V).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Group I (Ag<sup>+</sup>, Pb<sup>2+</sup>) precipitated as chlorides; Group II (Cu<sup>2+</sup>, Pb<sup>2+</sup>) as sulfides in acidic medium (low [S<sup>2-</sup>]); Group IV (Zn<sup>2+</sup>, Ni<sup>2+</sup>) as sulfides in basic medium (high [S<sup>2-</sup>]).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) Explain why NH_4Cl is added before NH_4OH in Group III cation precipitation (Fe<sup>3+</sup>, Al<sup>3+</sup>, Cr<sup>3+</sup>).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      NH<sub>4</sub>Cl provides common NH<sub>4</sub><sup>+</sup> ions, suppressing NH<sub>4</sub>OH ionization so that only [OH<sup>-</sup>] is sufficient to precipitate group III hydroxides without precipitating group IV/V cations.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(171, 71, 188, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #AB47BC;'>Q100: Master Synthesis: Dynamic Equilibrium, Le Chatelier, Ionic Equilibria, pH & Solubility Products</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(i) Synthesize complete unified framework connecting Reversible Kinetics ⟶ Law of Mass Action (K_c, K_p) ⟶ Le Chatelier Perturbations ⟶ Ionic Dissociation & pH Scale ⟶ Salt Hydrolysis & Buffer Action ⟶ Solubility Product (K_sp).</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 8px 12px; border-left: 3px solid #AB47BC; margin-bottom: 10px;">
-      Dynamic equilibrium governs physical and chemical transformations. K<sub>c</sub>/K<sub>p</sub> quantifies equilibrium state; Le Chatelier principle predicts response to perturbations. In aqueous solutions, ionization of water and electrolytes establishes ionic equilibria, determining pH, salt hydrolysis, buffer stability, and precipitation via solubility products.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #AB47BC;'>(ii) For a 0.10 M solution of Weak Acid HA (K_a = 1.0 × 10<sup>-5</sup>): (a) Calculate degree of dissociation α and pH, (b) Calculate pH after adding 0.05 M NaA salt, (c) Calculate solubility of sparingly soluble salt MA (K_sp = 4.0 × 10<sup>-12</sup>) in this buffer solution.</b></p>
-    <div style="background: rgba(171, 71, 188, 0.05); padding: 10px 12px; border-left: 3px solid #AB47BC;">
-      (a) α = √(10<sup>-5</sup>/0.1) = 0.01 (1%) ⟶ [H<sup>+</sup>] = 10<sup>-3</sup> M ⟶ <b>pH = 3.00</b>.<br>(b) pH = pK<sub>a</sub> + log(0.05/0.10) = 5.00 - 0.301 = <b>4.699</b>.<br>(c) In buffer [A<sup>-</sup>] ≈ 0.05 M ⟶ S = K<sub>sp</sub> / [A<sup>-</sup>] = 4.0 × 10<sup>-12</sup> / 0.05 = <b>8.0 × 10<sup>-11</sup> mol L<sup>-1</sup></b>.
-    </div>
-  </div>
 </div>
 `;
+
+export const c11Chem6Mcqs = [
+  {
+    "id": "c11-chem-6-mcq-1",
+    "question": "At dynamic chemical equilibrium:",
+    "options": [
+      "A):   Reactants are completely converted to products",
+      "B):   Rates of forward and reverse reactions are equal",
+      "C):   Concentrations of reactants and products must be equal",
+      "D):   Reactions stop completely"
+    ],
+    "correctAnswer": "b",
+    "explanation": "At dynamic equilibrium, forward and reverse reactions proceed at equal rates, keeping macroscopic concentrations constant."
+  },
+  {
+    "id": "c11-chem-6-mcq-2",
+    "question": "For the reaction: H<sub>2(g)</sub> + I<sub>2(g)</sub> &hArr; 2HI<sub>(g)</sub>, the relation between K<sub>p</sub> and K<sub>c</sub> is:",
+    "options": [
+      "A):   K<sub>p</sub> = K<sub>c</sub>(RT)",
+      "B):   K<sub>p</sub> = K<sub>c</sub>",
+      "C):   K<sub>p</sub> = K<sub>c</sub>(RT)<sup>-1</sup>",
+      "D):   K<sub>p</sub> = K<sub>c</sub>(RT)<sup>2</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "&Delta;n<sub>g</sub> = 2 - (1 + 1) = 0. Therefore, K<sub>p</sub> = K<sub>c</sub>(RT)<sup>0</sup> = K<sub>c</sub>."
+  },
+  {
+    "id": "c11-chem-6-mcq-3",
+    "question": "If Reaction Quotient Q<sub>c</sub> is less than Equilibrium Constant K<sub>c</sub> (Q<sub>c</sub> < K<sub>c</sub>), the reaction will:",
+    "options": [
+      "A):   Proceed in the reverse direction",
+      "B):   Proceed in the forward direction",
+      "C):   Remain in equilibrium",
+      "D):   Stop reacting"
+    ],
+    "correctAnswer": "b",
+    "explanation": "When Q<sub>c</sub> &lt; K<sub>c</sub>, products must accumulate and reactants must be consumed to reach equilibrium, driving the reaction forward."
+  },
+  {
+    "id": "c11-chem-6-mcq-4",
+    "question": "According to Le Chatelier's Principle, an increase in pressure on the system: N<sub>2(g)</sub> + 3H<sub>2(g)</sub> &hArr; 2NH<sub>3(g)</sub> will:",
+    "options": [
+      "A):   Shift equilibrium in the forward direction",
+      "B):   Shift equilibrium in the reverse direction",
+      "C):   Have no effect on equilibrium",
+      "D):   Decrease the rate of reaction"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Increasing pressure shifts equilibrium toward the side with fewer gas moles (4 moles on left &rarr; 2 moles on right), favoring the forward direction."
+  },
+  {
+    "id": "c11-chem-6-mcq-5",
+    "question": "What is the effect of adding a catalyst to a reversible reaction at equilibrium?",
+    "options": [
+      "A):   Increases the yield of products",
+      "B):   Shifts equilibrium forward",
+      "C):   Increases the value of K<sub>c</sub>",
+      "D):   Accelerates attainment of equilibrium without shifting position"
+    ],
+    "correctAnswer": "d",
+    "explanation": "A catalyst lowers activation energy equally for both forward and reverse paths, speeding up the approach to equilibrium without changing K<sub>c</sub> or position."
+  },
+  {
+    "id": "c11-chem-6-mcq-6",
+    "question": "According to Ostwald's Dilution Law, the degree of dissociation (&alpha;) of a weak electrolyte is proportional to:",
+    "options": [
+      "A):   C",
+      "B):   &radic;C",
+      "C):   1 / &radic;C",
+      "D):   1 / C"
+    ],
+    "correctAnswer": "c",
+    "explanation": "&alpha; = &radic;(K<sub>a</sub> / C), so &alpha; is inversely proportional to &radic;C (directly proportional to square root of dilution &radic;V)."
+  },
+  {
+    "id": "c11-chem-6-mcq-7",
+    "question": "What is the conjugate base of HCO<sub>3</sub><sup>-</sup>?",
+    "options": [
+      "A):   H<sub>2</sub>CO<sub>3</sub>",
+      "B):   CO<sub>3</sub><sup>2-</sup>",
+      "C):   CO<sub>2</sub>",
+      "D):   H<sup>+</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "A conjugate base is formed by removing one proton (H<sup>+</sup>) from the acid: HCO<sub>3</sub><sup>-</sup> - H<sup>+</sup> = CO<sub>3</sub><sup>2-</sup>."
+  },
+  {
+    "id": "c11-chem-6-mcq-8",
+    "question": "Which of the following is a Lewis acid?",
+    "options": [
+      "A):   NH<sub>3</sub>",
+      "B):   H<sub>2</sub>O",
+      "C):   BF<sub>3</sub>",
+      "D):   OH<sup>-</sup>"
+    ],
+    "correctAnswer": "c",
+    "explanation": "BF<sub>3</sub> has an incomplete octet (6 valence electrons) with a vacant 2p orbital, allowing it to accept an electron pair as a Lewis acid."
+  },
+  {
+    "id": "c11-chem-6-mcq-9",
+    "question": "The value of the ionic product of water (K<sub>w</sub>) at 25°C is:",
+    "options": [
+      "A):   1.0 &times; 10<sup>-7</sup>",
+      "B):   1.0 &times; 10<sup>-14</sup>",
+      "C):   1.0 &times; 10<sup>-10</sup>",
+      "D):   1.0 &times; 10<sup>-1</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "At 25&deg;C (298 K), K<sub>w</sub> = [H<sub>3</sub>O<sup>+</sup>][OH<sup>-</sup>] = (10<sup>-7</sup>)(10<sup>-7</sup>) = 1.0 &times; 10<sup>-14</sup> mol<sup>2</sup> L<sup>-2</sup>."
+  },
+  {
+    "id": "c11-chem-6-mcq-10",
+    "question": "What is the pH of a 0.001 M NaOH solution at 25°C?",
+    "options": [
+      "A):   3",
+      "B):   11",
+      "C):   14",
+      "D):   7"
+    ],
+    "correctAnswer": "b",
+    "explanation": "[OH<sup>-</sup>] = 10<sup>-3</sup> M &rArr; pOH = -log(10<sup>-3</sup>) = 3 &rArr; pH = 14 - pOH = 14 - 3 = 11."
+  },
+  {
+    "id": "c11-chem-6-mcq-11",
+    "question": "An acidic buffer solution can be prepared by mixing equimolar amounts of:",
+    "options": [
+      "A):   HCl and NaCl",
+      "B):   CH<sub>3</sub>COOH and CH<sub>3</sub>COONa",
+      "C):   NaOH and NaCl",
+      "D):   NH<sub>4</sub>OH and NH<sub>4</sub>Cl"
+    ],
+    "correctAnswer": "b",
+    "explanation": "An acidic buffer consists of a weak acid and its salt with a strong base (CH<sub>3</sub>COOH + CH<sub>3</sub>COONa)."
+  },
+  {
+    "id": "c11-chem-6-mcq-12",
+    "question": "According to the Henderson-Hasselbalch equation, the pH of an acidic buffer is equal to pK<sub>a</sub> when:",
+    "options": [
+      "A):   [Salt] = 2 [Acid]",
+      "B):   [Salt] = [Acid]",
+      "C):   [Salt] = 0",
+      "D):   [Acid] = 0"
+    ],
+    "correctAnswer": "b",
+    "explanation": "pH = pK<sub>a</sub> + log([Salt]/[Acid]). When [Salt] = [Acid], log(1) = 0, so pH = pK<sub>a</sub>."
+  },
+  {
+    "id": "c11-chem-6-mcq-13",
+    "question": "An aqueous solution of Ammonium Chloride (NH<sub>4</sub>Cl) is:",
+    "options": [
+      "A):   Neutral (pH = 7)",
+      "B):   Acidic (pH &lt; 7)",
+      "C):   Basic (pH &gt; 7)",
+      "D):   Strongly basic"
+    ],
+    "correctAnswer": "b",
+    "explanation": "NH<sub>4</sub>Cl is the salt of a strong acid (HCl) and a weak base (NH<sub>4</sub>OH). The NH<sub>4</sub><sup>+</sup> cation undergoes hydrolysis to yield H<sup>+</sup>, making the solution acidic."
+  },
+  {
+    "id": "c11-chem-6-mcq-14",
+    "question": "The pH of an aqueous solution of Sodium Acetate (CH<sub>3</sub>COONa) is given by:",
+    "options": [
+      "A):   pH = 7 + 1/2 pK<sub>a</sub> + 1/2 log C",
+      "B):   pH = 7 - 1/2 pK<sub>b</sub> - 1/2 log C",
+      "C):   pH = 7 + 1/2 pK<sub>a</sub> - 1/2 pK<sub>b</sub>",
+      "D):   pH = 7.0"
+    ],
+    "correctAnswer": "a",
+    "explanation": "For the salt of a weak acid and strong base, anionic hydrolysis produces an alkaline solution: pH = 7 + 1/2 pK<sub>a</sub> + 1/2 log C."
+  },
+  {
+    "id": "c11-chem-6-mcq-15",
+    "question": "Precipitation of a sparingly soluble salt occurs when:",
+    "options": [
+      "A):   Ionic Product Q<sub>sp</sub> &lt; K<sub>sp</sub>",
+      "B):   Ionic Product Q<sub>sp</sub> = K<sub>sp</sub>",
+      "C):   Ionic Product Q<sub>sp</sub> &gt; K<sub>sp</sub>",
+      "D):   K<sub>sp</sub> = 0"
+    ],
+    "correctAnswer": "c",
+    "explanation": "When the ionic product Q<sub>sp</sub> exceeds the equilibrium solubility product K<sub>sp</sub>, the solution becomes supersaturated and precipitate forms."
+  },
+  {
+    "id": "c11-chem-6-mcq-16",
+    "question": "The relationship between solubility product (K<sub>sp</sub>) and molar solubility (S) for Lead Chloride (PbCl<sub>2</sub>) is:",
+    "options": [
+      "A):   K<sub>sp</sub> = S<sup>2</sup>",
+      "B):   K<sub>sp</sub> = 4 S<sup>3</sup>",
+      "C):   K<sub>sp</sub> = 27 S<sup>4</sup>",
+      "D):   K<sub>sp</sub> = 108 S<sup>5</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "PbCl<sub>2(s)</sub> &hArr; Pb<sup>2+</sup> + 2Cl<sup>-</sup>. K<sub>sp</sub> = [Pb<sup>2+</sup>][Cl<sup>-</sup>]<sup>2</sup> = (S)(2S)<sup>2</sup> = 4 S<sup>3</sup>."
+  },
+  {
+    "id": "c11-chem-6-mcq-17",
+    "question": "Why does the solubility of AgCl decrease in 0.1 M NaCl compared to pure water?",
+    "options": [
+      "A):   Temperature increases",
+      "B):   Common ion effect of Cl<sup>-</sup> shifts equilibrium reverse",
+      "C):   NaCl reacts with AgCl",
+      "D):   AgCl dissociates completely"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The presence of common Cl<sup>-</sup> ions from NaCl shifts the dissolution equilibrium of AgCl backward, drastically lowering its solubility."
+  },
+  {
+    "id": "c11-chem-6-mcq-18",
+    "question": "In qualitative analysis of Group II cations, H<sub>2</sub>S gas is passed in presence of dil. HCl to:",
+    "options": [
+      "A):   Increase [S<sup>2-</sup>] concentration",
+      "B):   Suppress [S<sup>2-</sup>] concentration via common ion effect",
+      "C):   Precipitate Group IV cations",
+      "D):   Oxidize metal ions"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The H<sup>+</sup> ions from HCl suppress the ionization of weak acid H<sub>2</sub>S, keeping [S<sup>2-</sup>] low so that only Group II sulfides with very low K<sub>sp</sub> precipitate."
+  },
+  {
+    "id": "c11-chem-6-mcq-19",
+    "question": "The pH of a 1.0 &times; 10<sup>-8</sup> M HCl solution is:",
+    "options": [
+      "A):   8.0",
+      "B):   6.98",
+      "C):   7.0",
+      "D):   1.0"
+    ],
+    "correctAnswer": "b",
+    "explanation": "In extremely dilute acid, H<sup>+</sup> from water auto-ionization (10<sup>-7</sup> M) must be added, yielding [H<sup>+</sup>] &approx; 1.05 &times; 10<sup>-7</sup> M &rArr; pH = 6.98."
+  },
+  {
+    "id": "c11-chem-6-mcq-20",
+    "question": "For an endothermic reaction, the value of equilibrium constant K:",
+    "options": [
+      "A):   Increases with increase in temperature",
+      "B):   Decreases with increase in temperature",
+      "C):   Is independent of temperature",
+      "D):   Becomes zero"
+    ],
+    "correctAnswer": "a",
+    "explanation": "According to Van't Hoff isochore, d(ln K)/dT = &Delta;H&deg; / RT<sup>2</sup> &gt; 0 for endothermic reactions, so K increases with rising temperature."
+  },
+  {
+    "id": "c11-chem-6-mcq-21",
+    "question": "What is the pH of human blood maintained by the bicarbonate buffer system?",
+    "options": [
+      "A):   6.8",
+      "B):   7.4",
+      "C):   8.2",
+      "D):   5.5"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Human blood is tightly buffered at pH 7.40 &plusmn; 0.05 by the carbonic acid-bicarbonate buffer system."
+  },
+  {
+    "id": "c11-chem-6-mcq-22",
+    "question": "The mathematical relation between &Delta;G° and equilibrium constant K is:",
+    "options": [
+      "A):   &Delta;G&deg; = -2.303 RT log<sub>10</sub> K",
+      "B):   &Delta;G&deg; = 2.303 RT log<sub>10</sub> K",
+      "C):   &Delta;G&deg; = -RT / log K",
+      "D):   &Delta;G&deg; = 0"
+    ],
+    "correctAnswer": "a",
+    "explanation": "&Delta;G&deg; = -RT ln K = -2.303 RT log<sub>10</sub> K."
+  },
+  {
+    "id": "c11-chem-6-mcq-23",
+    "question": "Which of the following salts will NOT undergo hydrolysis in water?",
+    "options": [
+      "A):   CH<sub>3</sub>COONa",
+      "B):   NH<sub>4</sub>Cl",
+      "C):   KNO<sub>3</sub>",
+      "D):   FeCl<sub>3</sub>"
+    ],
+    "correctAnswer": "c",
+    "explanation": "KNO<sub>3</sub> is formed from strong base (KOH) and strong acid (HNO<sub>3</sub>); neither K<sup>+</sup> nor NO<sub>3</sub><sup>-</sup> hydrolyzes in water."
+  },
+  {
+    "id": "c11-chem-6-mcq-24",
+    "question": "What happens when an inert gas is added at constant volume to a system in chemical equilibrium?",
+    "options": [
+      "A):   Equilibrium shifts forward",
+      "B):   Equilibrium shifts backward",
+      "C):   No shift in equilibrium position occurs",
+      "D):   K<sub>c</sub> increases"
+    ],
+    "correctAnswer": "c",
+    "explanation": "At constant volume, the partial pressures and molar concentrations of reacting gases remain unchanged, so the equilibrium position does not shift."
+  },
+  {
+    "id": "c11-chem-6-mcq-25",
+    "question": "The units of K<sub>p</sub> for the reaction: PCl<sub>5(g)</sub> &hArr; PCl<sub>3(g)</sub> + Cl<sub>2(g)</sub> are:",
+    "options": [
+      "A):   Dimensionless",
+      "B):   atm",
+      "C):   atm<sup>-1</sup>",
+      "D):   atm<sup>2</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "&Delta;n<sub>g</sub> = (1 + 1) - 1 = +1. Units of K<sub>p</sub> = (atm)<sup>&Delta;n<sub>g</sub></sup> = atm."
+  }
+];

@@ -1,1116 +1,1646 @@
-// Class 11 Zoology Chapter 2 - Structural Organisation and Animal Biomolecules (Frog Anatomy, Biomolecules, Metabolites & Enzymes)
-// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// Class 11 Zoology Chapter 2: Structural Organisation and Animal Biomolecules
+// Gold Standard Reference Textbook & 3-Tab Architecture
+// Subject: Zoology | Class: 11 | Code: c11-zoo-2
 
 export const c11Zoo2HtmlOverview = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS -->
-  <div style="background: rgba(0, 176, 155, 0.05); border: 1.5px solid #00B09B; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: #00B09B; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #00B09B; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 2: Structural Organisation and Animal Biomolecules</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">1. Rana tigrina:</b> Indian bullfrog, a poikilothermic amphibious vertebrate belonging to class Amphibia.
+  <!-- Quick Glossary Card with Chapter Subtitle -->
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.12), rgba(0, 137, 123, 0.12)); border: 1.5px solid rgba(0, 176, 155, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p style="color: #00B09B; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 2: Structural Organisation and Animal Biomolecules</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Cloaca:</b> A common chamber in amphibians (Frog) into which the alimentary canal, urinary bladder, and reproductive ducts open before discharging to the exterior.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">2. Cutaneous Respiration:</b> Gaseous exchange across moist, highly vascularized skin occurring in water and during aestivation/hibernation.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Bidder's Canal:</b> A specialized longitudinal canal located in the anterior part of the frog's kidney through which spermatozoa travel from vasa efferentia into the urinogenital duct.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">3. Cloaca:</b> Common terminal chamber in frog receiving digestive waste, urine, and reproductive gametes.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Zwitterion:</b> An amino acid dipolar ionic species possessing both positive (-NH<sub>3</sub><sup>+</sup>) and negative (-COO<sup>-</sup>) charges simultaneously at its isoelectric pH.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">4. Portal System:</b> Specialized venous system (Hepatic &amp; Renal portal systems) carrying blood to liver/kidneys before heart.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Peptide Bond:</b> A covalent amide linkage (-CO-NH-) formed by dehydration synthesis between the &alpha;-carboxyl group of one amino acid and the &alpha;-amino group of another.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">5. Biomolecules:</b> Organic carbon compounds synthesized by living cells including carbohydrates, proteins, lipids, and nucleic acids.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Michaelis Constant (Km):</b> The substrate concentration at which an enzyme-catalyzed reaction achieves half of its maximum velocity (&frac12; Vmax); reflects enzyme-substrate affinity.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">6. Acid-Soluble Pool:</b> Filterate fraction (&lt;1000 Da) containing micromolecules like sugars, amino acids, and nucleotides.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">7. Glycosidic Bond:</b> Covalent bond connecting monosaccharide units formed by dehydration synthesis.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">8. Peptide Bond:</b> Amide linkage (-CO-NH-) connecting amino acids in a polypeptide chain.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">9. Zwitterion:</b> Dipolar amino acid form bearing equal positive (-NH3<sup>+</sup>) and negative (-COO<sup>-</sup>) charges at its isoelectric point.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">10. Collagen:</b> Triple-helical structural protein, the most abundant protein in the animal kingdom.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">11. Phosphodiester Bond:</b> Ester bond connecting 3'-OH of pentose sugar to 5'-phosphate of adjacent nucleotide in DNA/RNA.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">12. Primary Metabolites:</b> Directly vital metabolic compounds (sugars, amino acids, lipids) with identifiable physiological roles.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">13. Secondary Metabolites:</b> Plant/microbial by-products (alkaloids, rubber, lectins, drugs) providing ecological defense &amp; human utility.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">14. Active Site:</b> Specific 3D crevice on enzyme surface where substrate binds to undergo catalytic reaction.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">15. Activation Energy (Ea):</b> Minimum energy barrier required to transition substrate into reactive transition state, lowered by enzymes.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">16. Competitive Inhibition:</b> Reversible enzyme inhibition where inhibitor structurally resembles substrate and competes for active site (e.g., Malonate).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">17. Km (Michaelis Constant):</b> Substrate concentration at which reaction velocity reaches half of Vmax (1/2 Vmax).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #00B09B; border-radius: 6px;">
-        <b style="color: #00B09B;">18. Holoenzyme:</b> Complete catalytically active enzyme complex consisting of Apoenzyme (protein part) and Co-factor (non-protein part).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #00B09B;">Secondary Metabolites:</b> Organic compounds synthesized by plants, fungi, and microbes (e.g., alkaloids, terpenoids, toxins) that have no direct role in normal growth but serve vital ecological functions.
       </div>
     </div>
   </div>
 
+  <!-- SECTION 1 -->
+  <h2 style="color: #00B09B; border-bottom: 2px solid #00B09B; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">
+    Morphology, Anatomy and functions of digestive, circulatory, respiratory, nervous and reproductive systems of Frog.
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
-  <h2 style="color: #00B09B; margin-top: 10px; font-size: 20px; font-weight: bold;">Morphology, Anatomy and functions of digestive, circulatory, respiratory, nervous and reproductive systems of Frog.</h2>
+  <!-- FIGURE 2.1 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
 
-  <p>The Indian bullfrog (<b>Rana tigrina</b>) belongs to class Amphibia of phylum Chordata. Frogs are cold-blooded poikilotherms exhibiting camouflage (mimicry) to escape predators and undergo seasonal winter sleep (<b>Hibernation</b>) and summer sleep (<b>Aestivation</b>) to survive extreme temperatures.</p>
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Frog (Rana tigrina): Major Organ Systems Architecture
+      </text>
 
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) External Morphology &amp; Body Plan of Frog (Rana tigrina)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxPC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDE8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Body Division:</b> Body is streamlined and divided into <b>Head</b> and <b>Trunk</b> (Neck and Tail are absent).<br>
-  • <b style="color: #00B09B;">Skin Architecture:</b> Smooth, moist, slippery skin covered with mucus. Olive green dorsal surface with dark irregular spots and pale yellow ventral surface. Skin absorbs water osmotically (frogs never drink water!).<br>
-  • <b style="color: #00B09B;">Head Organs:</b> Pair of nostrils above mouth; eyes are bulged and protected by a transparent <b>Nictitating Membrane</b> during underwater swimming. A membranous <b>Tympanum</b> behind eyes receives sound signals.<br>
-  • <b style="color: #00B09B;">Limbs &amp; Sexual Dimorphism:</b> Forelimbs end in 4 digits; muscular hindlimbs end in 5 webbed digits for swimming. Male frogs are distinguished by sound-amplifying <b>Vocal Sacs</b> under throat and a <b>Nuptial Pad</b> on the first digit of forelimbs during breeding season.</p>
+      <!-- 4 Systems Grid -->
+      <g transform="translate(20, 42)">
+        <!-- Digestive & Alimentary -->
+        <rect x="0" y="0" width="220" height="100" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
+        <text x="110" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">1. Digestive System</text>
+        <text x="110" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Bifid, protractile muscular tongue</text>
+        <text x="110" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Short alimentary canal (Carnivorous)</text>
+        <text x="110" y="70" fill="#69F0AE" font-size="8.5" text-anchor="middle">Liver (Bile) + Pancreas (Enzymes)</text>
+        <text x="110" y="86" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Opens into Common Cloaca</text>
 
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Digestive System of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAyPC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDI8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Alimentary Canal:</b> Short complete tract (carnivorous adaptation). Food (insects) captured by bilobed bifid tongue.<br>
-  • <b style="color: #00B09B;">Digestion Process:</b> Stomach secretes HCl and gastric juices converting food to chyme. Liver secretes bile stored in <b>Gallbladder</b> to emulsify fats. Pancreas produces pancreatic juice containing digestive enzymes. Digested food absorbed by microvilli in intestine. Waste passes into <b>Cloaca</b>.</p>
+        <!-- Circulatory & Heart -->
+        <rect x="240" y="0" width="220" height="100" rx="6" fill="rgba(255, 61, 0, 0.12)" stroke="#FF3D00" stroke-width="1.2"/>
+        <text x="350" y="20" fill="#FF3D00" font-size="11" font-weight="bold" text-anchor="middle">2. Circulatory System</text>
+        <text x="350" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">3-Chambered Heart (2 Atria + 1 Ventricle)</text>
+        <text x="350" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Sinus venosus (Dorsal receiving chamber)</text>
+        <text x="350" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Truncus arteriosus (Ventral outflow trunk)</text>
+        <text x="350" y="86" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Hepatic &amp; Renal Portal Systems</text>
+      </g>
 
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) Respiratory System of Frog (3 Modes)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAzPC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDM8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">1. Cutaneous Respiration:</b> Gaseous exchange across moist vascular skin occurring in water, hibernation, and aestivation.<br>
-  • <b style="color: #00B09B;">2. Buccopharyngeal Respiration:</b> Exchange across moist lining of buccal cavity on land.<br>
-  • <b style="color: #00B09B;">3. Pulmonary Respiration:</b> Lungs (pair of elongated pink sac-like structures) used on land. Air enters nostrils ➔ buccal cavity ➔ lungs.</p>
+      <!-- Row 2: Respiratory & Urinogenital -->
+      <g transform="translate(20, 154)">
+        <!-- Respiratory -->
+        <rect x="0" y="0" width="220" height="105" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
+        <text x="110" y="20" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">3. Triple Respiration Modes</text>
+        <text x="110" y="38" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">&bull; Cutaneous: Skin in water &amp; rest</text>
+        <text x="110" y="54" fill="#80DEEA" font-size="9" font-weight="bold" text-anchor="middle">&bull; Buccopharyngeal: In mouth cavity</text>
+        <text x="110" y="70" fill="#FFD54F" font-size="9" font-weight="bold" text-anchor="middle">&bull; Pulmonary: Pink sac-like lungs on land</text>
+        <text x="110" y="88" fill="#CBD5E1" font-size="8" text-anchor="middle">Hibernation &amp; Aestivation via Skin</text>
 
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iv) Circulatory System &amp; Portal Systems of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA0PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDQ8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Heart Architecture:</b> 3-chambered heart consisting of 2 Auricles and 1 Ventricle covered by pericardium. Triangular <b>Sinus Venosus</b> joins right auricle receiving deoxygenated blood from vena cava. Ventricle opens into <b>Conus Arteriosus</b> on ventral side.<br>
-  • <b style="color: #00B09B;">Portal Systems:</b> Features specialized <b>Hepatic Portal System</b> (gut to liver) and <b>Renal Portal System</b> (lower body to kidneys).<br>
-  • <b style="color: #00B09B;">Blood Composition:</b> RBCs are nucleated, oval, and contain hemoglobin.</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(v) Nervous System &amp; 10 Cranial Nerves of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA1PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDU8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Central Nervous System:</b> Brain enclosed in cranium and Spinal Cord. Brain divided into <b>Forebrain</b> (Olfactory lobes, Cerebral hemispheres, Diencephalon), <b>Midbrain</b> (Optic lobes), and <b>Hindbrain</b> (Cerebellum, Medulla oblongata). Medulla passes through foramen magnum into spinal cord.<br>
-  • <b style="color: #00B09B;">Cranial Nerves:</b> Features <b style="color: #00B09B;">10 Pairs of Cranial Nerves</b> arising from the brain.</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vi) Male Reproductive System of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA2PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDY8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Male Organs:</b> Pair of yellowish ovoid <b>Testes</b> adhered to upper kidneys by double fold of peritoneum called <b>Mesorchium</b>.<br>
-  • <b style="color: #00B09B;">Bidder's Canal:</b> 10-12 <b>Vasa Efferentia</b> arise from testes, enter kidneys, and open into <b style="color: #00B09B;">Bidder's Canal</b>. Urinogenital duct opens into cloaca.</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vii) Female Reproductive System &amp; Metamorphosis of Frog</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA3PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDc8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">Female Organs:</b> Pair of large <b>Ovaries</b> situated near kidneys (no functional connection with kidneys). Oviducts open separately into cloaca. Female lays 2500-3000 ova at a time.<br>
-  • <b style="color: #00B09B;">Fertilization &amp; Metamorphosis:</b> External fertilization in water. Development involves ciliated aquatic <b>Tadpole Larva</b> undergoing thyroxin-driven metamorphosis into adult frog.</p>
-
-
-  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
-  <h2 style="color: #00B09B; margin-top: 30px; font-size: 20px; font-weight: bold;">Basic chemical constituents of living bodies; Bio-molecules: Structure and function of Carbohydrates, proteins, lipids and Nucleic acids; Primary and secondary metabolites.</h2>
-
-  <p>All living organisms are composed of organic chemical compounds termed <b>Biomolecules</b>. Chemical analysis of living tissue (grinding liver/plant tissue in Trichloroacetic acid Cl3CCOOH and filtering through cheesecloth) separates cellular compounds into two fractions: <b>Acid-Soluble Pool</b> (micromolecules, &lt;1000 Da) and <b>Acid-Insoluble Retentate</b> (macromolecules, &gt;10,000 Da).</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Biomolecules Chemical Analysis (Acid-Soluble Pool vs Retentate)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJpb21vbGVjdWxlcyBDaGVtaWNhbCBBbmFseXNpczogQWNpZC1Tb2x1YmxlIFBvb2wgdnMgUmV0ZW50YXRlPC90ZXh0PgogIAogIDwhLS0gTEVGVCBQQU5FTDogQUNJRC1TT0xVQkxFIFBPT0wgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiM0MkE1RjUiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNDJBNUY1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBBY2lkLVNvbHVibGUgUG9vbCAoRmlsdHJhdGUpPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSI1NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM5MENBRjkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk1vbGVjdWxhciBXZWlnaHQgJmx0OyAxMDAwIERhIChCaW9taWNyby1tb2xlY3VsZXMpPC90ZXh0PgogICAgCiAgICA8cmVjdCB4PSIxNSIgeT0iNzUiIHdpZHRoPSIzNTAiIGhlaWdodD0iNDQwIiByeD0iOCIgZmlsbD0iIzA2MDIwQyIgc3Ryb2tlPSIjMUU4OEU1IiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8IS0tIEl0ZW0gMTogTW9ub3NhY2NoYXJpZGVzIC0tPgogICAgPHRleHQgeD0iMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjRCNUY2Ij7igKIgTW9ub3NhY2NoYXJpZGVzIChTaW1wbGUgU3VnYXJzKTo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRkZGRiI+R2x1Y29zZSwgRnJ1Y3Rvc2UsIFJpYm9zZSwgRGVveHlyaWJvc2U8L3RleHQ+CiAgICAKICAgIDwhLS0gSXRlbSAyOiBBbWlubyBBY2lkcyAtLT4KICAgIDx0ZXh0IHg9IjMwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY0QjVGNiI+4oCiIEFtaW5vIEFjaWRzIChNb25vbWVycyk6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjIwNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkZGRkYiPkdseWNpbmUsIEFsYW5pbmUsIEdsdXRhbWljIEFjaWQsIEx5c2luZTwvdGV4dD4KICAgIAogICAgPCEtLSBJdGVtIDM6IE51Y2xlb3RpZGVzICYgTnVjbGVvc2lkZXMgLS0+CiAgICA8dGV4dCB4PSIzMCIgeT0iMjUwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2NEI1RjYiPuKAoiBOdWNsZW90aWRlcyAmYW1wOyBOdWNsZW9zaWRlczo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMjc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRkZGRiI+QU1QLCBBRFAsIEFUUCwgQWRlbm9zaW5lLCBDeXRpZGluZTwvdGV4dD4KCiAgICA8IS0tIEl0ZW0gNDogTml0cm9nZW5vdXMgQmFzZXMgJiBTdWdhcnMgLS0+CiAgICA8dGV4dCB4PSIzMCIgeT0iMzIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2NEI1RjYiPuKAoiBOaXRyb2dlbm91cyBCYXNlcyAmYW1wOyBTdWdhciBQb29sczo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMzQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRkZGRiI+QWRlbmluZSwgR3VhbmluZSwgQ3l0b3NpbmUsIFRoeW1pbmUsIFVyYWNpbDwvdGV4dD4KICAgIAogICAgPCEtLSBJdGVtIDU6IElub3JnYW5pYyBJb25zICYgV2F0ZXIgLS0+CiAgICA8dGV4dCB4PSIzMCIgeT0iMzkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2NEI1RjYiPuKAoiBJbm9yZ2FuaWMgSW9ucyAmYW1wOyBNaW5lcmFsIFNvbHV0ZXM6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjQxNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkZGRkYiPks8c3VwPis8L3N1cD4sIE5hPHN1cD4rPC9zdXA+LCBDYTxzdXA+Mis8L3N1cD4sIE1nPHN1cD4yKzwvc3VwPiwgUE88c3ViPjQ8L3N1Yj48c3VwPjMtPC9zdXA+LCBDbDxzdXA+LTwvc3VwPiwgSDxzdWI+Mjwvc3ViPk88L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iNDM4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzgwREVFQSIgZm9udC13ZWlnaHQ9ImJvbGQiPihQYXNzZXMgZWFzaWx5IHRocm91Z2ggY2hlZXNlY2xvdGggZmlsdGVyKTwvdGV4dD4KICA8L2c+CiAgCiAgPCEtLSBSSUdIVCBQQU5FTDogQUNJRC1JTlNPTFVCTEUgUkVURU5UQVRFIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0MCwgNzApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNTM1IiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjQwODEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIuIEFjaWQtSW5zb2x1YmxlIFBvb2wgKFJldGVudGF0ZSk8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjU2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TW9sZWN1bGFyIFdlaWdodCAmZ3Q7IDEwLDAwMCBEYSAoQmlvbWFjcm8tbW9sZWN1bGVzKTwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMTUiIHk9Ijc1IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ0MCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iI0Y1MDA1NyIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPCEtLSBJdGVtIDE6IFByb3RlaW5zIC0tPgogICAgPHRleHQgeD0iMzAiIHk9IjExMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIj7igKIgUHJvdGVpbnMgKFBvbHlwZXB0aWRlIENoYWlucyk6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjEzNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkZGRkYiPkVuenltZXMsIENvbGxhZ2VuLCBIZW1vZ2xvYmluLCBBbnRpYm9kaWVzPC90ZXh0PgogICAgCiAgICA8IS0tIEl0ZW0gMjogTnVjbGVpYyBBY2lkcyAtLT4KICAgIDx0ZXh0IHg9IjMwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGODBBQiI+4oCiIE51Y2xlaWMgQWNpZHMgKFBvbHludWNsZW90aWRlcyk6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjIwNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkZGRkYiPkdlbm9taWMgRE5BICZhbXA7IFJOQSAobVJOQSwgdFJOQSwgclJOQSk8L3RleHQ+CiAgICAKICAgIDwhLS0gSXRlbSAzOiBQb2x5c2FjY2hhcmlkZXMgLS0+CiAgICA8dGV4dCB4PSIzMCIgeT0iMjUwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjgwQUIiPuKAoiBQb2x5c2FjY2hhcmlkZXMgKENvbXBsZXggR2x5Y2Fucyk6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjI3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkZGRkYiPlN0YXJjaCwgR2x5Y29nZW4sIENlbGx1bG9zZSwgQ2hpdGluPC90ZXh0PgogICAgCiAgICA8IS0tIEl0ZW0gNDogTGlwaWRzIChTcGVjaWFsIENhc2UpIC0tPgogICAgPHRleHQgeD0iMzAiIHk9IjMyMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY4MEFCIj7igKIgTGlwaWRzIChDZWxsIE1lbWJyYW5lIFZlc2ljbGVzKTo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMzQ0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiI+TVcgJmx0OyA4MDAgRGEgKFN0cmljdGx5IE1pY3JvbW9sZWN1bGVzISk8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMzY4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iI0ZGODBBQiIgZm9udC13ZWlnaHQ9ImJvbGQiPkZvcm0gaW5zb2x1YmxlIG1lbWJyYW5lIGZyYWdtZW50cy92ZXNpY2xlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjQ1IiB5PSIzOTIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmaWxsPSIjRkY4MEFCIiBmb250LXdlaWdodD0iYm9sZCI+UmV0YWluZWQgaW4gYWNpZC1pbnNvbHVibGUgZnJhY3Rpb24gb24gZmlsdGVyPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Structure and Function of Carbohydrates</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA4PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDg8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">1. Carbohydrates (Hydrates of Carbon):</b><br>
-  - <b style="color: #00B09B;">Monosaccharides:</b> Simple sugars (Trioses, Pentoses like Ribose/Deoxyribose, Hexoses like Glucose/Fructose).<br>
-  - <b style="color: #00B09B;">Disaccharides &amp; Polysaccharides:</b> Monosaccharides linked by <b style="color: #00B09B;">Glycosidic Bonds</b> formed via dehydration. Storage polysaccharides include <b>Starch</b> (plants) and <b>Glycogen</b> (animals, branched helical chain). Structural polysaccharides include <b>Cellulose</b> (plant cell walls) and <b>Chitin</b> (fungal walls &amp; arthropod exoskeleton).</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) Structure and Function of Proteins</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSA5PC90ZXh0PiA8dGV4dCB4PSI0MDAiIHk9IjIzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI0NCRDVFMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiPkFuYXRvbWljYWwgJiBQaHlzaW9sb2dpY2FsIFZlY3RvciBEaWFncmFtIDk8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">2. Proteins (Polypeptides):</b><br>
-  - Heteropolymers of 20 standard <b>Amino Acids</b> linked sequentially by <b style="color: #00B09B;">Peptide Bonds (-CO-NH-)</b>.<br>
-  - <b style="color: #00B09B;">Amino Acid Structure:</b> Alpha-carbon bonded to -NH2, -COOH, -H, and variable -R group. Exist as dipolar <b style="color: #00B09B;">Zwitterions</b> at isoelectric pH.<br>
-  - <b style="color: #00B09B;">Structural Levels:</b> Primary (linear amino acid sequence), Secondary (alpha-helix / beta-pleated sheet), Tertiary (overall 3D folding crucial for enzyme active site), Quaternary (multi-subunit assembly e.g. Hemoglobin with 2 alpha + 2 beta chains).<br>
-  - <b style="color: #00B09B;">Abundant Proteins:</b> <b style="color: #00B09B;">Collagen</b> (most abundant protein in animal world); <b style="color: #00B09B;">RuBisCO</b> (most abundant protein in entire biosphere).</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iv) Structure and Function of Lipids</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxpcGlkcyBBcmNoaXRlY3R1cmUgJmFtcDsgUGhvc3Bob2xpcGlkIE1lbWJyYW5lIEJpbGF5ZXI8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiNGRkI3NEQiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZCNzREIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBUcmlnbHljZXJpZGUgQ2hlbWljYWwgU3RydWN0dXJlPC90ZXh0PgogICAgPHJlY3QgeD0iMTUiIHk9IjU1IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ2MCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iI0Y1N0MwMCIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHJlY3QgeD0iMzUiIHk9Ijg1IiB3aWR0aD0iODUiIGhlaWdodD0iMzgwIiByeD0iOCIgZmlsbD0iI0ZGRTA4MiIgc3Ryb2tlPSIjRkZCMzAwIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9Ijc3IiB5PSIyNzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R2x5Y2Vyb2w8L3RleHQ+CiAgICA8dGV4dCB4PSI3NyIgeT0iMjk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNEODQzMTUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPigzLUNhcmJvbik8L3RleHQ+CgogICAgPCEtLSBUYWlsIDEgLS0+CiAgICA8bGluZSB4MT0iMTIwIiB5MT0iMTMwIiB4Mj0iMzM1IiB5Mj0iMTMwIiBzdHJva2U9IiNGRjcwNDMiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHRleHQgeD0iMjI3IiB5PSIxMjIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjRkZGIiBmb250LXdlaWdodD0iYm9sZCI+RmF0dHkgQWNpZCBUYWlsIDEgKFNhdHVyYXRlZCk8L3RleHQ+CgogICAgPCEtLSBUYWlsIDIgLS0+CiAgICA8bGluZSB4MT0iMTIwIiB5MT0iMjUwIiB4Mj0iMzM1IiB5Mj0iMjUwIiBzdHJva2U9IiNGRjcwNDMiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHRleHQgeD0iMjI3IiB5PSIyNDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmaWxsPSIjRkZGIiBmb250LXdlaWdodD0iYm9sZCI+RmF0dHkgQWNpZCBUYWlsIDIgKFVuc2F0dXJhdGVkKTwvdGV4dD4KCiAgICA8IS0tIFRhaWwgMyAtLT4KICAgIDxsaW5lIHgxPSIxMjAiIHkxPSIzNzAiIHgyPSIzMzUiIHkyPSIzNzAiIHN0cm9rZT0iI0ZGNzA0MyIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgICA8dGV4dCB4PSIyMjciIHk9IjM2MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNGRkYiIGZvbnQtd2VpZ2h0PSJib2xkIj5GYXR0eSBBY2lkIFRhaWwgMyAoRXN0ZXIgQm9uZCk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjIyNyIgeT0iNDI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZmlsbD0iI0ZGRDU0RiIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVzdGVyIExpbmthZ2UgKC1DTy1PLSk8L3RleHQ+CiAgPC9nPgoKICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBQaG9zcGhvbGlwaWQgQmlsYXllciBNZW1icmFuZTwvdGV4dD4KICAgIDxyZWN0IHg9IjE1IiB5PSI1NSIgd2lkdGg9IjM1MCIgaGVpZ2h0PSI0NjAiIHJ4PSI4IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiMwMEM4NTMiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAKICAgIDwhLS0gVG9wIEh5ZHJvcGhpbGljIEhlYWRzIC0tPgogICAgPGNpcmNsZSBjeD0iNjAiIGN5PSIxMjAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxODAiIGN5PSIxMjAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNDAiIGN5PSIxMjAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIxMjAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICAKICAgIDxsaW5lIHgxPSI1MyIgeTE9IjEzOCIgeDI9IjUzIiB5Mj0iMjIwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPGxpbmUgeDE9IjY3IiB5MT0iMTM4IiB4Mj0iNjciIHkyPSIyMjAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8bGluZSB4MT0iMTEzIiB5MT0iMTM4IiB4Mj0iMTEzIiB5Mj0iMjIwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPGxpbmUgeDE9IjEyNyIgeTE9IjEzOCIgeDI9IjEyNyIgeTI9IjIyMCIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDxsaW5lIHgxPSIxNzMiIHkxPSIxMzgiIHgyPSIxNzMiIHkyPSIyMjAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8bGluZSB4MT0iMTg3IiB5MT0iMTM4IiB4Mj0iMTg3IiB5Mj0iMjIwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIvPgoKICAgIDwhLS0gQm90dG9tIEh5ZHJvcGhpbGljIEhlYWRzIC0tPgogICAgPGNpcmNsZSBjeD0iNjAiIGN5PSIzMzAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIzMzAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIxODAiIGN5PSIzMzAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIyNDAiIGN5PSIzMzAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICA8Y2lyY2xlIGN4PSIzMDAiIGN5PSIzMzAiIHI9IjE4IiBmaWxsPSIjMDBFNjc2Ii8+CiAgICAKICAgIDxsaW5lIHgxPSI1MyIgeTE9IjMxMiIgeDI9IjUzIiB5Mj0iMjMwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPGxpbmUgeDE9IjY3IiB5MT0iMzEyIiB4Mj0iNjciIHkyPSIyMzAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8bGluZSB4MT0iMTEzIiB5MT0iMzEyIiB4Mj0iMTEzIiB5Mj0iMjMwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPGxpbmUgeDE9IjEyNyIgeTE9IjMxMiIgeDI9IjEyNyIgeTI9IjIzMCIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIAogICAgPHRleHQgeD0iMTkwIiB5PSI0MDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+4oCiIFBvbGFyIEh5ZHJvcGhpbGljIEhlYWQ8L3RleHQ+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjQyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KEdseWNlcm9sICsgUGhvc3BoYXRlIEdyb3VwKTwvdGV4dD4KCiAgICA8dGV4dCB4PSIxOTAiIHk9IjQ2NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZENTRGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7igKIgTm9uLVBvbGFyIEh5ZHJvcGhvYmljIFRhaWxzPC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSI0OTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPihTYXR1cmF0ZWQgJmFtcDsgVW5zYXR1cmF0ZWQgRmF0dHkgQWNpZHMpPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">3. Lipids:</b><br>
-  - Water-insoluble esters of glycerol and fatty acids. Simple lipids include <b>Triglycerides</b> (Glycerol + 3 Fatty Acids). Fatty acids may be <i>Saturated</i> (Palmitic acid 16C, no double bond) or <i>Unsaturated</i> (Oleic acid, double bonds). Compound lipids include <b>Lecithin</b> (Phospholipid framing cell membranes). Lipids reside in retentate fraction due to membrane vesicles despite low MW (&lt;800 Da).</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(v) Structure and Function of Nucleic Acids (DNA &amp; RNA)</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxMDwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxMDwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-  <p>• <b style="color: #00B09B;">4. Nucleic Acids Structure:</b> High molecular weight polymers composed of <b>Nucleotides</b>. Each nucleotide contains: 1. Nitrogenous Base (Purines: Adenine, Guanine; Pyrimidines: Cytosine, Thymine, Uracil), 2. Pentose Sugar (Ribose / Deoxyribose), 3. Phosphate group.<br>
-  • <b style="color: #00B09B;">B-DNA Double Helix vs RNA:</b> Nucleotides linked by <b style="color: #00B09B;">3'-5' Phosphodiester Bonds</b>. <b>B-DNA Double Helix</b> (Watson &amp; Crick model) features antiparallel strands with 34 Å pitch (10 base pairs per turn, 3.4 Å spacing). RNA is single-stranded containing Uracil instead of Thymine.</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(vi) Primary and Secondary Metabolites</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByaW1hcnkgdnMgU2Vjb25kYXJ5IE1ldGFib2xpdGVzIENvbXBhcmlzb248L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiMyNkE2OUEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTguNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMyNkE2OUEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByaW1hcnkgTWV0YWJvbGl0ZXM8L3RleHQ+CiAgICA8cmVjdCB4PSIxNSIgeT0iNTUiIHdpZHRoPSIzNTAiIGhlaWdodD0iNDYwIiByeD0iOCIgZmlsbD0iIzA2MDIwQyIgc3Ryb2tlPSIjMDA4OTdCIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgCiAgICA8dGV4dCB4PSIzMCIgeT0iOTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIFBoeXNpb2xvZ2ljYWwgUm9sZTo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMTIyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+RGlyZWN0bHkgdml0YWwgZm9yIGdyb3d0aCwgZGV2ZWxvcG1lbnQsPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPnJlc3BpcmF0aW9uICZhbXA7IGNlbGx1bGFyIHJlcHJvZHVjdGlvbi48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjMwIiB5PSIxOTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCI+4oCiIERpc3RyaWJ1dGlvbiAmYW1wOyBJZGVudGl0eTo8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMjIyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+SWRlbnRpZmlhYmxlIHBoeXNpb2xvZ2ljYWwgZnVuY3Rpb25zPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjI0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPmZvdW5kIHVuaXZlcnNhbGx5IGluIGFsbCBsaXZpbmcgY2VsbHMuPC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIzMCIgeT0iMjk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPuKAoiBLZXkgRXhhbXBsZXM6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjMyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0Ij4xLiBDYXJib2h5ZHJhdGVzIChHbHVjb3NlLCBSaWJvc2UpPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjM1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0Ij4yLiBBbWlubyBBY2lkcyAoR2x5Y2luZSwgQWxhbmluZSk8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPjMuIExpcGlkcyAmYW1wOyBGYXR0eSBBY2lkcyAoUGFsbWl0aWMgYWNpZCk8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iNDE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiPjQuIE51Y2xlb3RpZGVzICZhbXA7IE51Y2xlaWMgQWNpZHMgKEFUUCwgRE5BKTwvdGV4dD4KICA8L2c+CgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0MCwgNzApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNTM1IiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0FCNDdCQyIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0FCNDdCQyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U2Vjb25kYXJ5IE1ldGFib2xpdGVzPC90ZXh0PgogICAgPHJlY3QgeD0iMTUiIHk9IjU1IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ2MCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iIzhFMjRBQSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMzAiIHk9IjkwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDRTkzRDgiPuKAoiBFY29sb2dpY2FsIFV0aWxpdHk6PC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjExNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5QbGFudCBkZWZlbnNlIGFnYWluc3QgaGVyYml2b3Jlcy9wYXRob2dlbnMsPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjEzNiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj5odW1hbiB1dGlsaXR5IChkcnVncywgc2NlbnRzLCBydWJiZXIpLjwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMzAiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjQ0U5M0Q4Ij7igKIgNiBOQ0VSVCBDYXRlZ29yaWVzICZhbXA7IEV4YW1wbGVzOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjQ1IiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjQ0U5M0Q4Ij4xLiBBbGthbG9pZHM6IE1vcnBoaW5lLCBDb2RlaW5lPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjIzNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDRTkzRDgiPjIuIEVzc2VudGlhbCBPaWxzOiBMZW1vbiBncmFzcyBvaWw8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMjY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0NFOTNEOCI+My4gVG94aW5zOiBBYnJpbiwgUmljaW48L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMjk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0NFOTNEOCI+NC4gTGVjdGluczogQ29uY2FuYXZhbGluIEE8L3RleHQ+CiAgICA8dGV4dCB4PSI0NSIgeT0iMzI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNS41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0NFOTNEOCI+NS4gUG9seW1lcmljOiBSdWJiZXIsIEd1bXMsIENlbGx1bG9zZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQ1IiB5PSIzNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjQ0U5M0Q4Ij42LiBEcnVnczogVmluYmxhc3RpbmUsIEN1cmN1bWluPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjM4NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNDRTkzRDgiPjcuIFBpZ21lbnRzOiBDYXJvdGVub2lkcywgQW50aG9jeWFuaW5zPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+        <!-- Urinogenital -->
+        <rect x="240" y="0" width="220" height="105" rx="6" fill="rgba(224, 64, 251, 0.12)" stroke="#E040FB" stroke-width="1.2"/>
+        <text x="350" y="20" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">4. Urinogenital Systems</text>
+        <text x="350" y="38" fill="#FFFFFF" font-size="8.5" text-anchor="middle"><b style="color: #00B09B;">Male:</b> 10-12 Vasa efferentia enter</text>
+        <text x="350" y="52" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Bidder's canal &rarr; Urinogenital duct</text>
+        <text x="350" y="70" fill="#FFFFFF" font-size="8.5" text-anchor="middle"><b style="color: #00B09B;">Female:</b> Oviducts open independently</text>
+        <text x="350" y="84" fill="#69F0AE" font-size="8" text-anchor="middle">into Cloaca (no kidney connection)</text>
+        <text x="350" y="98" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Ureotelic excretion (Mesonephric kidneys)</text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.1: Comprehensive Structural Anatomy of Frog (Rana tigrina): Digestive, Circulatory, Respiratory &amp; Urinogenital Architecture
+  </div>
+</div>
 
 
-  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
-  <h2 style="color: #00B09B; margin-top: 30px; font-size: 20px; font-weight: bold;">Enzymes: Types, Properties and functions</h2>
+  <p>
+    The Indian Bullfrog (<i>Rana tigrina</i>) belongs to Class Amphibia, Phylum Chordata. Frogs are poikilothermic (cold-blooded) anamniotic tetrapods that undergo seasonal winter sleep (<b>Hibernation</b>) and summer sleep (<b>Aestivation</b>) to escape temperature extremes.
+  </p>
 
-  <p>Enzymes are protein biocatalysts that accelerate chemical reactions by lowering activation energy barriers.</p>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(i) Enzyme Active Site &amp; Activation Energy Barrier Reduction</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVuenltZSBDYXRhbHlzaXM6IEFjdGl2YXRpb24gRW5lcmd5IChFYSkgQmFycmllciBSZWR1Y3Rpb248L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTAsIDcwKSI+CiAgICA8IS0tIEF4ZXMgLS0+CiAgICA8bGluZSB4MT0iODAiIHkxPSI0NjAiIHgyPSI3NDAiIHkyPSI0NjAiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiLz4KICAgIDxsaW5lIHgxPSI4MCIgeTE9IjQ2MCIgeDI9IjgwIiB5Mj0iNTAiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIzLjUiLz4KICAgIAogICAgPHRleHQgeD0iNDEwIiB5PSI1MDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UHJvZ3Jlc3Mgb2YgUmVhY3Rpb24gKFJlYWN0aW9uIENvb3JkaW5hdGUpIOKelDwvdGV4dD4KICAgIDx0ZXh0IHg9Ii0yNTUiIHk9IjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MENCQzQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHRyYW5zZm9ybT0icm90YXRlKC05MCkiPlBvdGVudGlhbCBFbmVyZ3kgKFAuRS4pIOKelDwvdGV4dD4KICAgIAogICAgPCEtLSBTdWJzdHJhdGUgbGV2ZWwgLS0+CiAgICA8bGluZSB4MT0iODAiIHkxPSIzMjAiIHgyPSIxOTAiIHkyPSIzMjAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0LjUiLz4KICAgIDx0ZXh0IHg9IjEzNSIgeT0iMzA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN1YnN0cmF0ZSAoUyk8L3RleHQ+CiAgICAKICAgIDwhLS0gVW5jYXRhbHl6ZWQgQ3VydmUgKFJlZCBEYXNoZWQpIC0tPgogICAgPHBhdGggZD0iTSAxOTAsMzIwIEMgMzAwLDMwIDQ1MCwzMCA1NTAsNDAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtZGFzaGFycmF5PSI4LDUiLz4KICAgIDx0ZXh0IHg9IjM3MCIgeT0iNjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+RWEgV0lUSE9VVCBFbnp5bWUgKEhpZ2ggRW5lcmd5IEJhcnJpZXIpPC90ZXh0PgogICAgCiAgICA8IS0tIENhdGFseXplZCBDdXJ2ZSAoR3JlZW4gU29saWQpIC0tPgogICAgPHBhdGggZD0iTSAxOTAsMzIwIEMgMzAwLDE5MCA0NTAsMTkwIDU1MCw0MDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSI1LjUiLz4KICAgIDx0ZXh0IHg9IjM3MCIgeT0iMjEwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU2NzYiPkVhIFdJVEggRW56eW1lIChMb3dlciBFbmVyZ3kgQmFycmllcik8L3RleHQ+CiAgICAKICAgIDwhLS0gUHJvZHVjdCBsZXZlbCAtLT4KICAgIDxsaW5lIHgxPSI1NTAiIHkxPSI0MDAiIHgyPSI3MjAiIHkyPSI0MDAiIHN0cm9rZT0iIzY5RjBBRSIgc3Ryb2tlLXdpZHRoPSI0LjUiLz4KICAgIDx0ZXh0IHg9IjYzNSIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlByb2R1Y3QgKFApPC90ZXh0PgogICAgCiAgICA8IS0tIEVuZXJneSBkaWZmZXJlbmNlIHRleHQgLS0+CiAgICA8dGV4dCB4PSI2MzUiIHk9IjQ0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiNGRjgwQUIiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5FeGVyZ29uaWMgUmVhY3Rpb24gKM6URyAmbHQ7IDApPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(ii) Enzyme Kinetics (Vmax, Km) &amp; Competitive Inhibition</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVuenltZSBLaW5ldGljcyAoVm1heCAmYW1wOyBLbSkgJmFtcDsgQ29tcGV0aXRpdmUgSW5oaWJpdGlvbjwvdGV4dD4KICAKICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCwgNzApIj4KICAgIDxsaW5lIHgxPSI4MCIgeTE9IjQ2MCIgeDI9Ijc0MCIgeTI9IjQ2MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIvPgogICAgPGxpbmUgeDE9IjgwIiB5MT0iNDYwIiB4Mj0iODAiIHkyPSI1MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjMuNSIvPgogICAgCiAgICA8dGV4dCB4PSI0MTAiIHk9IjUwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBDQkM0IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TdWJzdHJhdGUgQ29uY2VudHJhdGlvbiBbU10g4p6UPC90ZXh0PgogICAgPHRleHQgeD0iLTI1NSIgeT0iMzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwQ0JDNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwKSI+UmVhY3Rpb24gVmVsb2NpdHkgKFYpIOKelDwvdGV4dD4KICAgIAogICAgPCEtLSBWbWF4IGFzeW1wdG90ZSAtLT4KICAgIDxsaW5lIHgxPSI4MCIgeTE9IjEyMCIgeDI9IjcyMCIgeTI9IjEyMCIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWRhc2hhcnJheT0iNiw0Ii8+CiAgICA8dGV4dCB4PSI3MzUiIHk9IjEyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZENTRGIj5WbWF4PC90ZXh0PgogICAgCiAgICA8IS0tIDEvMiBWbWF4IC0tPgogICAgPGxpbmUgeDE9IjgwIiB5MT0iMjkwIiB4Mj0iNzIwIiB5Mj0iMjkwIiBzdHJva2U9IiNGRkNDODAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0Ii8+CiAgICA8dGV4dCB4PSI3MzUiIHk9IjI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZDQzgwIj4xLzIgVm1heDwvdGV4dD4KICAgIAogICAgPCEtLSBOb3JtYWwgQ3VydmUgKEdyZWVuKSAtLT4KICAgIDxwYXRoIGQ9Ik0gODAsNDYwIFEgMjIwLDEyMCA3MDAsMTIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iNS41Ii8+CiAgICA8dGV4dCB4PSI0MjAiIHk9IjE2MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2Ij5Ob3JtYWwgRW56eW1lIFJlYWN0aW9uIFZlbG9jaXR5PC90ZXh0PgogICAgCiAgICA8IS0tIENvbXBldGl0aXZlIEluaGliaXRpb24gQ3VydmUgKE9yYW5nZSBEYXNoZWQpIC0tPgogICAgPHBhdGggZD0iTSA4MCw0NjAgUSA0MjAsMjYwIDcwMCwxMjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGNzA0MyIgc3Ryb2tlLXdpZHRoPSI0LjUiIHN0cm9rZS1kYXNoYXJyYXk9IjgsNCIvPgogICAgPHRleHQgeD0iNDIwIiB5PSIyNTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNzA0MyI+V2l0aCBDb21wZXRpdGl2ZSBJbmhpYml0b3IgKEttIEluY3JlYXNlcyEpPC90ZXh0PgogICAgCiAgICA8IS0tIEttIG1hcmtlciAtLT4KICAgIDxsaW5lIHgxPSIyNDAiIHkxPSIyOTAiIHgyPSIyNDAiIHkyPSI0NjAiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1kYXNoYXJyYXk9IjQsNCIvPgogICAgPHRleHQgeD0iMjQwIiB5PSI0ODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTY3NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+S208L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-
-  <h3 style="color: #00B09B; margin-top: 20px; font-size: 18px; font-weight: bold;">(iii) 6 IUBMB Enzyme Classes &amp; Holoenzyme Architecture</h3>
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNjQwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjY0MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwOUIiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSI0MiIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwOUIiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYgSVVCTUIgRW56eW1lIENsYXNzZXMgJmFtcDsgSG9sb2VuenltZSBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiM0MkE1RjUiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTguNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM0MkE1RjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhvbG9lbnp5bWUgQ29tcGxleCBGb3JtdWxhPC90ZXh0PgogICAgPHJlY3QgeD0iMTUiIHk9IjU1IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ2MCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iIzFFODhFNSIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHJlY3QgeD0iMzUiIHk9Ijg1IiB3aWR0aD0iMzEwIiBoZWlnaHQ9Ijc1IiByeD0iOCIgZmlsbD0iIzE1NjVDMCIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIxMjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SG9sb2VuenltZSAoQWN0aXZlIEVuenltZSk8L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjE5MCIgeT0iMTk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPj08L3RleHQ+CiAgICAKICAgIDxyZWN0IHg9IjM1IiB5PSIyMjUiIHdpZHRoPSIxNDUiIGhlaWdodD0iOTAiIHJ4PSI4IiBmaWxsPSIjMkU3RDMyIi8+CiAgICA8dGV4dCB4PSIxMDciIHk9IjI2MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BcG9lbnp5bWU8L3RleHQ+CiAgICA8dGV4dCB4PSIxMDciIHk9IjI4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNDOEU2QzkiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4oUHJvdGVpbiBQYXJ0KTwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMTkwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+KzwvdGV4dD4KICAgIAogICAgPHJlY3QgeD0iMjAwIiB5PSIyMjUiIHdpZHRoPSIxNDUiIGhlaWdodD0iOTAiIHJ4PSI4IiBmaWxsPSIjQzYyODI4Ii8+CiAgICA8dGV4dCB4PSIyNzIiIHk9IjI2MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Dby1mYWN0b3I8L3RleHQ+CiAgICA8dGV4dCB4PSIyNzIiIHk9IjI4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiNGRkNERDIiIGZvbnQtd2VpZ2h0PSJib2xkIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4oTm9uLXByb3RlaW4pPC90ZXh0PgoKICAgIDwhLS0gQ28tZmFjdG9yIHR5cGVzIC0tPgogICAgPHJlY3QgeD0iMzUiIHk9IjM0MCIgd2lkdGg9IjMxMCIgaGVpZ2h0PSIxNTAiIHJ4PSI2IiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiM0MkE1RjUiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iNDUiIHk9IjM2OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiPjEuIFByb3N0aGV0aWMgR3JvdXA6IFRpZ2h0IG9yZ2FuaWMgKEhlbWUpPC90ZXh0PgogICAgPHRleHQgeD0iNDUiIHk9IjQwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiPjIuIENvLWVuenltZTogTG9vc2Ugb3JnYW5pYyAoTkFELCBOQURQKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQ1IiB5PSI0NDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZENTRGIj4zLiBNZXRhbCBJb25zOiBJbm9yZ2FuaWMgKFpuPHN1cD4yKzwvc3VwPiBmb3IgQ2FyYm94eXBlcHRpZGFzZSk8L3RleHQ+CiAgPC9nPgoKICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsIDcwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjUzNSIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiNFOTFFNjMiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTguNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFOTFFNjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjYgSVVCTUIgRW56eW1lIENsYXNzaWZpY2F0aW9uPC90ZXh0PgogICAgPHJlY3QgeD0iMTUiIHk9IjU1IiB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQ2MCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iI0MyMTg1QiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIAogICAgPHRleHQgeD0iMzAiIHk9Ijk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGNDhGQjEiPjEuIE94aWRvcmVkdWN0YXNlczogUmVkb3ggcmVhY3Rpb25zPC90ZXh0PgogICAgPHRleHQgeD0iMzAiIHk9IjE1MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjQ4RkIxIj4yLiBUcmFuc2ZlcmFzZXM6IEdyb3VwIHRyYW5zZmVyICgtUE80KTwvdGV4dD4KICAgIDx0ZXh0IHg9IjMwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y0OEZCMSI+My4gSHlkcm9sYXNlczogSHlkcm9seXRpYyBib25kIGNsZWF2YWdlPC90ZXh0PgogICAgPHRleHQgeD0iMzAiIHk9IjI2MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjQ4RkIxIj40LiBMeWFzZXM6IE5vbi1oeWRyb2x5dGljIGJvbmQgY2xlYXZhZ2U8L3RleHQ+CiAgICA8dGV4dCB4PSIzMCIgeT0iMzE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGNDhGQjEiPjUuIElzb21lcmFzZXM6IElzb21lciByZWFycmFuZ2VtZW50PC90ZXh0PgogICAgPHRleHQgeD0iMzAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjQ4RkIxIj42LiBMaWdhc2VzOiBDb3ZhbGVudCBib25kIGpvaW5pbmcgKEFUUCk8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
-
-
-  <!-- BOTTOM CHEAT SHEET -->
-  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.15), rgba(150, 201, 61, 0.15)); border: 1.5px solid #00B09B; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #00B09B; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 2 Frog Anatomy &amp; Biomolecules Cheat Sheet</h3>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b style="color: #00B09B;">Frog Anatomy:</b> 3-chambered heart (2A + 1V) | 3 Respiration modes (Cutaneous, Buccal, Pulmonary) | 10 Cranial Nerves | Bidder's Canal in male kidney.</li>
-      <li><b style="color: #00B09B;">Biomolecules Bonds:</b> Carbohydrates = Glycosidic | Proteins = Peptide | Lipids = Ester | DNA/RNA = Phosphodiester.</li>
-      <li><b style="color: #00B09B;">Abundant Proteins:</b> Collagen (Animals) | RuBisCO (Entire Biosphere).</li>
-      <li><b style="color: #00B09B;">Secondary Metabolites:</b> Lectins (Concanavalin A) | Drugs (Vinblastine, Curcumin) | Toxins (Abrin, Ricin) | Polymeric (Rubber).</li>
-      <li><b style="color: #00B09B;">Enzymes:</b> Lowers Activation Energy | Malonate inhibits Succinic Dehydrogenase | 6 Classes (OTH LIL) | Apoenzyme + Co-factor = Holoenzyme.</li>
+  <h3 style="color: #00B09B; margin-top: 18px; font-size: 16.5px;">(i) External Morphology &amp; Body Plan of Frog (Rana tigrina)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #00B09B;">Skin &amp; Camouflage:</b> Smooth, moist, and slippery skin owing to mucus secreted by cutaneous mucus glands; dorsal olive-green with dark irregular spots, ventral pale yellow. Frogs never drink water; water is absorbed directly across the skin. Camouflage (mimicry) protects from predators.</li>
+      <li><b style="color: #00B09B;">Body Division:</b> Streamlined body divided into <b>Head and Trunk</b>; Neck and Tail are completely absent.</li>
+      <li><b style="color: #00B09B;">Head Appendages:</b> Protruding eyes with protective <b>Nictitating Membrane</b> for underwater vision; a circular external auditory membrane called <b>Tympanum</b> behind eyes receives airborne sound vibrations.</li>
+      <li><b style="color: #00B09B;">Sexual Dimorphism:</b> Male frogs possess a pair of sound-amplifying <b>Vocal Sacs</b> on the throat and a copulatory <b>Nuptial Pad</b> on the first digit of the forelimb to grasp the female during amplexus.</li>
     </ul>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(ii) Digestive System of Frog</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The digestive system consists of an alimentary canal and digestive glands:
+      <br/>&bull; <b style="color: #00B09B;">Alimentary Canal:</b> Relatively short because frogs are carnivores (carnivore intestines are shorter than herbivore intestines). Mouth opens into buccal cavity; tongue is <b>bilobed, bifid, and attached anteriorly</b>, allowing it to be rapidly flicked out to capture insect prey.
+      <br/>&bull; Teeth are homodont, polyphyodont, and acrodont, borne only on the maxilla (maxillary teeth) and vomer (vomerine teeth) to prevent prey escape.
+      <br/>&bull; Stomach secretes HCl and gastric juices; partially digested acidic food (<b>Chyme</b>) passes through the pylorus into the duodenum.
+      <br/>&bull; <b style="color: #00B09B;">Digestive Glands:</b> Multilobed Liver secretes bile stored in Gallbladder; Pancreas produces pancreatic juice containing trypsin and amylase. Digestion completes in ileum, and undigested waste enters rectum and exits via the <b>Cloaca</b>.
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(iii) Respiratory System of Frog (3 Modes)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #00B09B;">1. Cutaneous Respiration (Skin):</b> Operates in water and during winter hibernation and summer aestivation. Dissolved atmospheric O<sub>2</sub> diffuses across the thin, moist, highly vascularized skin directly into cutaneous capillaries.</li>
+      <li><b style="color: #00B09B;">2. Buccopharyngeal Respiration:</b> Operates when the frog is at rest on land with mouth closed. Lowering and raising the floor of the buccal cavity draws air in and out through open external nares, exchanging gases across the vascular mucous lining of the oral cavity.</li>
+      <li><b style="color: #00B09B;">3. Pulmonary Respiration (Lungs):</b> Operates on land during periods of active exertion. Pair of pink, elongated, sac-like spongy lungs located in the thorax. Air is forced into lungs by positive pressure breathing (buccal cavity acts as a force pump).</li>
+    </ul>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(iv) Circulatory System &amp; Portal Systems of Frog</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Frogs possess a closed, myogenic circulatory system:
+      <br/>&bull; <b style="color: #00B09B;">Heart Anatomy:</b> 3-chambered heart consisting of <b>2 Atria (Auricles) and 1 Ventricle</b> enclosed in a two-layered pericardium.
+      <br/>&bull; <b style="color: #00B09B;">Accessory Chambers:</b>
+        <br/>1. <i>Sinus Venosus:</i> Triangular dorsal chamber receiving deoxygenated blood from three venae cavae (two precavals and one postcaval), opening into the right atrium.
+        <br/>2. <i>Truncus Arteriosus:</i> Ventral tubular outflow vessel arising from the single ventricle that divides into left and right aortic trunks (each branching into Carotid, Systemic, and Pulmocutaneous arches).
+      <br/>&bull; <b style="color: #00B09B;">Double Portal System:</b>
+        <br/>1. <b style="color: #00B09B;">Hepatic Portal System:</b> Venous blood from the gut, stomach, and spleen passes through the liver before reaching the postcaval vein.
+        <br/>2. <b style="color: #00B09B;">Renal Portal System:</b> Venous blood from the hindlimbs and pelvis passes through the kidneys before entering the general circulation.
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(v) Nervous System &amp; 10 Cranial Nerves of Frog</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The nervous system comprises Central (Brain &amp; Spinal cord), Peripheral (10 pairs of Cranial nerves and 10 pairs of Spinal nerves), and Autonomic systems:
+      <br/>- <b style="color: #00B09B;">Forebrain:</b> Paired Olfactory lobes (smell), Cerebral hemispheres, and Diencephalon.
+      <br/>- <b style="color: #00B09B;">Midbrain:</b> Pair of large prominent <b>Optic lobes</b>.
+      <br/>- <b style="color: #00B09B;">Hindbrain:</b> Rudimentary Cerebellum and Medulla oblongata (passes through foramen magnum into spinal cord).
+      <br/>- <b style="color: #00B09B;">10 Cranial Nerves:</b> I Olfactory, II Optic, III Oculomotor, IV Trochlear, V Trigeminal, VI Abducens, VII Facial, VIII Auditory, IX Glossopharyngeal, X Vagus.
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(vi) Male Reproductive System of Frog</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Consists of a pair of yellowish, ovoid <b>Testes</b> attached to the antero-ventral surface of the kidneys by a double fold of peritoneum called <b>Mesorchium</b>:
+      <br/>- 10 to 12 delicate <b>Vasa Efferentia</b> emerge from the testes, enter the medial border of the kidneys, and empty into <b>Bidder's Canal</b>.
+      <br/>- Bidder's canal communicates with the longitudinal collecting ducts, which lead into the <b>Urinogenital Duct</b>.
+      <br/>- The urinogenital duct opens into the <b>Cloaca</b>, conveying both urine and spermatozoa (dual excretory and reproductive conduit).
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(vii) Female Reproductive System &amp; Metamorphosis of Frog</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Consists of a pair of lobulated <b>Ovaries</b> situated near the kidneys held by a peritoneal fold called <b>Mesovarium</b>:
+      <br/>- Crucially, ovaries have <b>NO functional connection with the kidneys</b>.
+      <br/>- A pair of coiled, glandular <b>Oviducts (M&uuml;llerian ducts)</b> open anteriorly into the coelom by funnel-like ostia and open posteriorly independently into the cloaca.
+      <br/>- A mature female lays 2,500 to 3,000 ova at a time. Fertilization is strictly external in water.
+      <br/>- Embryo hatches into an aquatic, herbivorous, gill-bearing <b>Tadpole Larva</b> that undergoes <b>Metamorphosis</b> (resorption of tail and gills; development of limbs and lungs) under the regulation of <b>Thyroxine hormone (requiring Iodine)</b>.
+    </p>
+  </div>
+
+  <!-- SECTION 2 -->
+  <h2 style="color: #00B09B; border-bottom: 2px solid #00B09B; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    Basic chemical constituents of living bodies; Bio-molecules: Structure and function of Carbohydrates, proteins, lipids and Nucleic acids; Primary and secondary metabolites.
+  </h2>
+
+  <!-- FIGURE 2.2 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Biomolecules Chemical Analysis: Acid-Soluble Pool vs Retentate
+      </text>
+
+      <!-- Protocol Flow -->
+      <g transform="translate(25, 42)">
+        <rect width="450" height="40" rx="4" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)"/>
+        <text x="225" y="24" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
+          Living Tissue (Liver / Leaf) ground in <b>Trichloroacetic Acid (Cl<sub>3</sub>CCOOH)</b> &rarr; Filter through Cheesecloth
+        </text>
+      </g>
+
+      <!-- Left: Acid-Soluble Pool -->
+      <g transform="translate(25, 92)">
+        <rect width="215" height="170" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">1. Acid-Soluble Pool (Filtrate)</text>
+        <text x="107" y="38" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">Micromolecules (18 - 800 Da)</text>
+        <text x="107" y="56" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Represents Cytoplasmic Composition</text>
+        <line x1="20" y1="64" x2="195" y2="64" stroke="rgba(255,255,255,0.2)"/>
+        <text x="25" y="82" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Monosaccharides:</b> Glucose, Ribose</text>
+        <text x="25" y="102" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Amino Acids:</b> Glycine, Alanine</text>
+        <text x="25" y="122" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Nucleotides:</b> AMP, ATP, GTP</text>
+        <text x="25" y="142" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Inorganic Ions:</b> Na<sup>+</sup>, K<sup>+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup></text>
+        <text x="107" y="160" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">Freely soluble in aqueous phase</text>
+      </g>
+
+      <!-- Right: Acid-Insoluble Fraction -->
+      <g transform="translate(260, 92)">
+        <rect width="215" height="170" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">2. Acid-Insoluble Pool (Retentate)</text>
+        <text x="107" y="38" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">Macromolecules (&gt; 10,000 Da)</text>
+        <text x="107" y="56" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Represents Organelles &amp; Cell Framework</text>
+        <line x1="20" y1="64" x2="195" y2="64" stroke="rgba(255,255,255,0.2)"/>
+        <text x="25" y="82" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Polysaccharides:</b> Starch, Glycogen</text>
+        <text x="25" y="102" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Proteins:</b> Polypeptides, Enzymes</text>
+        <text x="25" y="122" fill="#FFFFFF" font-size="9">&bull; <b style="color: #00B09B;">Nucleic Acids:</b> DNA and RNA</text>
+        <text x="25" y="142" fill="#FF8A65" font-size="8.5" font-weight="bold">&bull; <b style="color: #00B09B;">Lipids:</b> MW &lt; 800 Da, BUT form</text>
+        <text x="35" y="156" fill="#FF8A65" font-size="8">insoluble vesicular aggregates!</text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.2: Chemical Analysis Protocol of Living Tissue: Acid-Soluble Pool (Cytosolic Micromolecules) vs Acid-Insoluble Retentate (Macromolecules &amp; Lipids)
+  </div>
+</div>
+
+
+  <h3 style="color: #00B09B; margin-top: 18px; font-size: 16.5px;">(i) Biomolecules Chemical Analysis (Acid-Soluble Pool vs Retentate)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Living tissue (liver or leaf) is homogenized in <b>Trichloroacetic Acid (Cl<sub>3</sub>CCOOH)</b> using a pestle and mortar, yielding two distinct fractions:
+      <br/>1. <b style="color: #00B09B;">Acid-Soluble Pool (Filtrate):</b> Contains <b>Biomicromolecules</b> having molecular weights between 18 and 800 Daltons (Da). Represents the cytoplasmic composition (monosaccharides, amino acids, nucleotides, water, and minerals).
+      <br/>2. <b style="color: #00B09B;">Acid-Insoluble Pool (Retentate):</b> Contains <b>Biomacromolecules</b> having molecular weights &gt;10,000 Daltons. Represents structural components (polysaccharides, polypeptides, and nucleic acids).
+      <br/>&bull; <b style="color: #00B09B;">The Lipid Paradox:</b> Lipids have small molecular weights (&lt;800 Da), but because they are hydrophobic, cell membrane fragments round up into insoluble microscopic vesicles that cannot pass through the filter cloth, partitioning strictly into the acid-insoluble retentate.
+    </p>
+  </div>
+
+  <!-- FIGURE 2.3 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Biopolymer Structural Hierarchies: Proteins, DNA &amp; Carbohydrates
+      </text>
+
+      <!-- Row 1: Protein Structure Levels -->
+      <g transform="translate(25, 42)">
+        <rect width="450" height="105" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
+        <text x="225" y="18" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">
+          4 Structural Tiers of Proteins (Peptide Bond: -CO-NH-)
+        </text>
+
+        <g transform="translate(10, 26)">
+          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
+          <text x="49" y="16" fill="#26C6DA" font-size="9" font-weight="bold" text-anchor="middle">1&deg; Primary</text>
+          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Linear sequence</text>
+          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">N-terminal (1st AA)</text>
+          <text x="49" y="60" fill="#CBD5E1" font-size="7.5" text-anchor="middle">C-terminal (Last AA)</text>
+        </g>
+
+        <g transform="translate(118, 26)">
+          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
+          <text x="49" y="16" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">2&deg; Secondary</text>
+          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">&alpha;-Helix &amp; &beta;-Sheet</text>
+          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Hydrogen bonding</text>
+          <text x="49" y="60" fill="#FFE082" font-size="7.5" text-anchor="middle">Right-handed helix</text>
+        </g>
+
+        <g transform="translate(226, 26)">
+          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
+          <text x="49" y="16" fill="#FFD54F" font-size="9" font-weight="bold" text-anchor="middle">3&deg; Tertiary</text>
+          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">3D Globular fold</text>
+          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Creates Active Site</text>
+          <text x="49" y="60" fill="#FF8A65" font-size="7.5" text-anchor="middle">Vital for Enzymes!</text>
+        </g>
+
+        <g transform="translate(334, 26)">
+          <rect width="105" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
+          <text x="52" y="16" fill="#FF3D00" font-size="9" font-weight="bold" text-anchor="middle">4&deg; Quaternary</text>
+          <text x="52" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Multi-subunit assembly</text>
+          <text x="52" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">e.g. Adult Hemoglobin</text>
+          <text x="52" y="60" fill="#FFE082" font-size="7.5" text-anchor="middle">2 &alpha; + 2 &beta; subunits</text>
+        </g>
+      </g>
+
+      <!-- Row 2: B-DNA Double Helix & Polysaccharide Bonds -->
+      <g transform="translate(25, 160)">
+        <rect width="450" height="105" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
+        <text x="225" y="18" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">
+          Watson-Crick B-DNA Double Helix &amp; Polysaccharides
+        </text>
+        <text x="120" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">
+          <b style="color: #00B09B;">B-DNA Geometry:</b> Pitch = 34 &Aring; (3.4 nm)
+        </text>
+        <text x="120" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
+          10 bp per helical turn &bull; 3.4 &Aring; rise per bp
+        </text>
+        <text x="120" y="70" fill="#69F0AE" font-size="8.5" text-anchor="middle">
+          Base pairs: A = T (2 H-bonds) &bull; G &equiv; C (3 H-bonds)
+        </text>
+        <text x="120" y="86" fill="#FFE082" font-size="8" text-anchor="middle">
+          Antiparallel 5' &rarr; 3' and 3' &rarr; 5' phosphodiester chains
+        </text>
+
+        <!-- Right: Glycosidic Bonds -->
+        <text x="340" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">
+          <b style="color: #00B09B;">Polysaccharide Bonds:</b>
+        </text>
+        <text x="340" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
+          &bull; Starch: &alpha;-1,4 &amp; &alpha;-1,6 glucan (I<sub>2</sub> blue)
+        </text>
+        <text x="340" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
+          &bull; Cellulose: &beta;-1,4 linear (no I<sub>2</sub> color)
+        </text>
+        <text x="340" y="86" fill="#FFE082" font-size="8" text-anchor="middle">
+          &bull; Inulin: Fructose polymer &bull; Chitin: NAG polymer
+        </text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.3: Structural Architecture of Biological Macromolecules: 4 Levels of Protein Hierarchy, Watson-Crick B-DNA Double Helix &amp; Polysaccharide Linkages
+  </div>
+</div>
+
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(ii) Structure and Function of Carbohydrates</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #00B09B;">Monosaccharides:</b> Reducing sugars (Glucose, Fructose, Galactose, Ribose, Deoxyribose).</li>
+      <li><b style="color: #00B09B;">Disaccharides:</b> Two monosaccharides linked by a <b>Glycosidic Bond</b> formed by dehydration: Maltose (Glucose + Glucose), Sucrose (Glucose + Fructose, non-reducing), Lactose (Glucose + Galactose).</li>
+      <li><b style="color: #00B09B;">Polysaccharides:</b>
+        <br/>- <i>Starch:</i> Plant storage homopolymer of &alpha;-glucose; helical secondary structure traps iodine molecules giving an intense <b>deep blue color</b>.
+        <br/>- <i>Cellulose:</i> Structural unbranched polymer of &beta;-glucose; rigid straight chains lack helical coils and <b>cannot hold iodine (no color)</b>; major constituent of plant cell walls.
+        <br/>- <i>Glycogen:</i> Animal storage polysaccharide; highly branched; gives reddish color with iodine.
+        <br/>- <i>Chitin:</i> Complex structural homopolymer of <b>N-acetylglucosamine (NAG)</b> forming fungal cell walls and arthropod exoskeletons.
+      </li>
+    </ul>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(iii) Structure and Function of Proteins</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Proteins are heteropolymers of 20 standard L-&alpha;-amino acids linked by covalent <b>Peptide Bonds (-CO-NH-)</b>:
+      <br/>&bull; <b style="color: #00B09B;">Amino Acid Chemistry:</b> Substituted methanes with four valencies satisfied by -H, -COOH, -NH<sub>2</sub>, and variable -R group (Glycine: R=H; Alanine: R=CH<sub>3</sub>; Serine: R=CH<sub>2</sub>OH).
+      <br/>&bull; <b style="color: #00B09B;">4 Structural Levels:</b>
+        <br/>1. <i>Primary (1&deg;):</i> Positional linear sequence of amino acids (N-terminal first; C-terminal last).
+        <br/>2. <i>Secondary (2&deg;):</i> Localized folding stabilized by hydrogen bonds into right-handed <b>&alpha;-helices</b> or pleated <b>&beta;-sheets</b>.
+        <br/>3. <i>Tertiary (3&deg;):</i> Complete 3D globular conformational folding stabilized by disulfide bonds, ionic bonds, hydrophobic interactions, and van der Waals forces. <b>Absolute biological requirement for catalytic enzymatic activity!</b>
+        <br/>4. <i>Quaternary (4&deg;):</i> Multi-subunit assembly of two or more polypeptide chains (e.g., Human adult Hemoglobin consists of 4 subunits: 2 &alpha; and 2 &beta; chains).
+    </p>
+  </div>
+
+  <!-- FIGURE 2.4 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Lipid Architecture: Fatty Acids, Triglycerides &amp; Phospholipid Bilayer
+      </text>
+
+      <!-- Fatty Acids & Triglycerides -->
+      <g transform="translate(25, 42)">
+        <rect width="215" height="120" rx="6" fill="rgba(255, 145, 0, 0.12)" stroke="#FF9100" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">Fatty Acids &amp; Triglycerides</text>
+        <text x="107" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">R-COOH (Hydrocarbon + Carboxyl)</text>
+        <text x="107" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">&bull; <b style="color: #00B09B;">Palmitic Acid:</b> 16 Carbons (saturated)</text>
+        <text x="107" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle">&bull; <b style="color: #00B09B;">Arachidonic Acid:</b> 20 Carbons (polyunsaturated)</text>
+        <text x="107" y="90" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Glycerol (Trihydroxy propane) +</text>
+        <text x="107" y="104" fill="#FFE082" font-size="8" text-anchor="middle">3 Fatty Acids &rarr; Triglyceride (Ester bonds)</text>
+      </g>
+
+      <!-- Phospholipids & Bilayer -->
+      <g transform="translate(260, 42)">
+        <rect width="215" height="120" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">Phospholipids (Lecithin)</text>
+        <text x="107" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Amphipathic Membrane Lipids</text>
+        <text x="107" y="56" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">&bull; Hydrophilic Polar Head:</text>
+        <text x="107" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Phosphate + Choline (faces water)</text>
+        <text x="107" y="90" fill="#FF8A65" font-size="9" font-weight="bold" text-anchor="middle">&bull; Hydrophobic Nonpolar Tails:</text>
+        <text x="107" y="104" fill="#CBD5E1" font-size="8.5" text-anchor="middle">2 Fatty acid chains (sequestered inside)</text>
+      </g>
+
+      <!-- Bottom Membrane Bilayer Banner -->
+      <g transform="translate(25, 175)">
+        <rect width="450" height="90" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 176, 155, 0.3)"/>
+        <text x="225" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">
+          The Fluid Mosaic Lipid Bilayer (Singer &amp; Nicolson, 1972)
+        </text>
+        <text x="225" y="40" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
+          Self-assembling phospholipid bilayer provides fluidity, mechanical stability,
+        </text>
+        <text x="225" y="56" fill="#CBD5E1" font-size="9" text-anchor="middle">
+          and selective barrier properties to all biological cell membranes &bull; Cholesterol stabilizes fluidity.
+        </text>
+        <text x="225" y="74" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">
+          Lipids partition into the Acid-Insoluble fraction due to aggregate formation, despite low molecular weight!
+        </text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.4: Lipid Architecture: Saturated vs Unsaturated Fatty Acids, Triglyceride Synthesis &amp; Amphipathic Phospholipid Bilayer Organization
+  </div>
+</div>
+
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(iv) Structure and Function of Lipids</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Water-insoluble organic biomolecules composed of C, H, and O:
+      <br/>- <b style="color: #00B09B;">Fatty Acids:</b> Hydrocarbon chain with terminal -COOH. Saturated (no C=C double bonds; Palmitic acid, 16C; Stearic acid, 18C) vs Unsaturated (one or more C=C double bonds; Oleic acid; Arachidonic acid, 20C).
+      <br/>- <b style="color: #00B09B;">Glycerol &amp; Triglycerides:</b> Glycerol (Trihydroxy propane) esterified with 1, 2, or 3 fatty acids via <b>Ester Bonds</b> to form Monoglycerides, Diglycerides, or Triglycerides (Fats &amp; Oils).
+      <br/>- <b style="color: #00B09B;">Phospholipids:</b> Amphipathic lipids possessing a polar hydrophilic phosphate head and two non-polar hydrophobic fatty acid tails (e.g., <b>Lecithin</b>), forming the universal bilayer of all cell membranes.
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(v) Structure and Function of Nucleic Acids (DNA &amp; RNA)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Polymers of Nucleotides linked by <b>3'-5' Phosphodiester Bonds</b>:
+      <br/>&bull; <b style="color: #00B09B;">Nucleotide Anatomy:</b> Nitrogenous Base + Pentose Sugar + Phosphate Group (Nucleoside = Base + Sugar; Nucleotide = Nucleoside + Phosphate).
+      <br/>&bull; <b style="color: #00B09B;">Watson-Crick B-DNA Double Helix (1953):</b>
+        <br/>1. Two antiparallel polynucleotide strands running in opposite 5'&rarr;3' and 3'&rarr;5' directions.
+        <br/>2. Nitrogenous bases project inward: Purine pairs with Pyrimidine via complementary hydrogen bonds: <b>Adenine = Thymine (2 H-bonds)</b> and <b>Guanine &equiv; Cytosine (3 H-bonds)</b>.
+        <br/>3. Helix has a pitch of <b>34 &Aring; (3.4 nm)</b> containing <b>10 base pairs per turn</b>, with a rise per base pair of <b>3.4 &Aring; (0.34 nm)</b>.
+    </p>
+  </div>
+
+  <!-- FIGURE 2.5 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Primary vs Secondary Metabolites Classification Matrix
+      </text>
+
+      <!-- Comparison Row -->
+      <g transform="translate(25, 42)">
+        <!-- Primary -->
+        <rect x="0" y="0" width="215" height="85" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
+        <text x="107" y="18" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">Primary Metabolites</text>
+        <text x="107" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Identifiable physiological functions</text>
+        <text x="107" y="48" fill="#CBD5E1" font-size="8" text-anchor="middle">Directly involved in growth, reproduction &amp; metabolism</text>
+        <text x="107" y="64" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">Sugars, Amino acids, Lipids, Nucleotides</text>
+        <text x="107" y="76" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Universally present in all living cells</text>
+
+        <!-- Secondary -->
+        <rect x="235" y="0" width="215" height="85" rx="6" fill="rgba(224, 64, 251, 0.12)" stroke="#E040FB" stroke-width="1.2"/>
+        <text x="107" y="18" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">Secondary Metabolites</text>
+        <text x="107" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">No direct role in normal host development</text>
+        <text x="107" y="48" fill="#CBD5E1" font-size="8" text-anchor="middle">Ecological defense, herbivore deterrence &amp; medicine</text>
+        <text x="107" y="64" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Alkaloids, Toxins, Drugs, Polymeric resins</text>
+        <text x="107" y="76" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Confined to specific plant/fungal taxa</text>
+      </g>
+
+      <!-- Categories Matrix (Table 9.3 NCERT) -->
+      <g transform="translate(25, 138)">
+        <rect width="450" height="128" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 176, 155, 0.3)"/>
+        <text x="225" y="18" fill="#00B09B" font-size="10.5" font-weight="bold" text-anchor="middle">
+          Official Category Matrix of Secondary Metabolites (Table 9.3)
+        </text>
+
+        <text x="30" y="38" fill="#FF8A65" font-size="8.5" font-weight="bold">&bull; Pigments:</text>
+        <text x="125" y="38" fill="#FFFFFF" font-size="8.5">Carotenoids, Anthocyanins</text>
+        <text x="250" y="38" fill="#FF8A65" font-size="8.5" font-weight="bold">&bull; Alkaloids:</text>
+        <text x="335" y="38" fill="#FFFFFF" font-size="8.5">Morphine, Codeine</text>
+
+        <text x="30" y="58" fill="#69F0AE" font-size="8.5" font-weight="bold">&bull; Terpenoids:</text>
+        <text x="125" y="58" fill="#FFFFFF" font-size="8.5">Monoterpenes, Diterpenes</text>
+        <text x="250" y="58" fill="#69F0AE" font-size="8.5" font-weight="bold">&bull; Essential Oils:</text>
+        <text x="335" y="58" fill="#FFFFFF" font-size="8.5">Lemon grass oil</text>
+
+        <text x="30" y="78" fill="#FFD54F" font-size="8.5" font-weight="bold">&bull; Toxins:</text>
+        <text x="125" y="78" fill="#FFFFFF" font-size="8.5">Abrin, Ricin</text>
+        <text x="250" y="78" fill="#FFD54F" font-size="8.5" font-weight="bold">&bull; Lectins:</text>
+        <text x="335" y="78" fill="#FFFFFF" font-size="8.5">Concanavalin A</text>
+
+        <text x="30" y="98" fill="#26C6DA" font-size="8.5" font-weight="bold">&bull; Drugs:</text>
+        <text x="125" y="98" fill="#FFFFFF" font-size="8.5">Vinblastine, Curcumin</text>
+        <text x="250" y="98" fill="#26C6DA" font-size="8.5" font-weight="bold">&bull; Polymeric:</text>
+        <text x="335" y="98" fill="#FFFFFF" font-size="8.5">Rubber, Gums, Cellulose</text>
+
+        <text x="225" y="118" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">
+          Crucial medicinal drugs: Vinblastine (anticancer) &bull; Curcumin (anti-inflammatory)
+        </text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.5: Comparative Taxonomy of Biomolecules: Primary vs Secondary Metabolites &amp; NCERT Category Matrix (Alkaloids, Toxins, Lectins, Drugs)
+  </div>
+</div>
+
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(vi) Primary and Secondary Metabolites</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #00B09B;">Primary Metabolites:</b> Compounds with identifiable, direct physiological roles in basic cellular metabolism, growth, and reproduction (sugars, amino acids, purines, pyrimidines, fatty acids).</li>
+      <li><b style="color: #00B09B;">Secondary Metabolites (NCERT Table 9.3):</b> Organic derivatives synthesized mainly by plants, fungi, and microbes with ecological defense, attractant, or pharmacological roles:
+        <br/>- <b style="color: #00B09B;">Pigments:</b> Carotenoids, Anthocyanins.
+        <br/>- <b style="color: #00B09B;">Alkaloids:</b> Morphine, Codeine.
+        <br/>- <b style="color: #00B09B;">Terpenoids:</b> Monoterpenes, Diterpenes.
+        <br/>- <b style="color: #00B09B;">Essential Oils:</b> Lemon grass oil.
+        <br/>- <b style="color: #00B09B;">Toxins:</b> Abrin, Ricin.
+        <br/>- <b style="color: #00B09B;">Lectins:</b> Concanavalin A.
+        <br/>- <b style="color: #00B09B;">Drugs:</b> <b>Vinblastine</b> (anti-cancer), <b>Curcumin</b> (anti-inflammatory from turmeric).
+        <br/>- <b style="color: #00B09B;">Polymeric Substances:</b> Rubber, Gums, Cellulose.
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3 -->
+  <h2 style="color: #00B09B; border-bottom: 2px solid #00B09B; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    Enzymes: Types, Properties and functions
+  </h2>
+
+  <!-- FIGURE 2.6 -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="280" rx="8" fill="#0F172A"/>
+
+      <!-- Title -->
+      <text x="250" y="26" fill="#00B09B" font-size="14" font-weight="bold" text-anchor="middle">
+        Enzyme Action: Activation Energy Reduction &amp; Michaelis-Menten Kinetics
+      </text>
+
+      <!-- Left: Activation Energy Profile -->
+      <g transform="translate(25, 45)">
+        <rect width="215" height="135" rx="6" fill="rgba(244, 67, 54, 0.12)" stroke="#F44336" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#F44336" font-size="11" font-weight="bold" text-anchor="middle">Transition State &amp; Ea Reduction</text>
+        <line x1="25" y1="115" x2="195" y2="115" stroke="#CBD5E1" stroke-width="1"/>
+        <line x1="25" y1="115" x2="25" y2="35" stroke="#CBD5E1" stroke-width="1"/>
+        <!-- High curve (without enzyme) -->
+        <path d="M 30,105 Q 100,20 185,110" fill="none" stroke="#F44336" stroke-width="2"/>
+        <!-- Low curve (with enzyme) -->
+        <path d="M 30,105 Q 100,55 185,110" fill="none" stroke="#69F0AE" stroke-width="2"/>
+        <text x="107" y="42" fill="#F44336" font-size="8" text-anchor="middle">Ea WITHOUT enzyme</text>
+        <text x="107" y="74" fill="#69F0AE" font-size="8" text-anchor="middle">Ea WITH enzyme</text>
+        <text x="107" y="128" fill="#FFE082" font-size="7.5" font-weight="bold" text-anchor="middle">E + S &hArr; [ES] &rarr; [EP] &rarr; E + P</text>
+      </g>
+
+      <!-- Right: Michaelis-Menten & Inhibition -->
+      <g transform="translate(260, 45)">
+        <rect width="215" height="135" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
+        <text x="107" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">Enzyme Kinetics &amp; Km</text>
+        <text x="107" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle"><b style="color: #00B09B;">Vmax:</b> Maximum reaction velocity</text>
+        <text x="107" y="54" fill="#69F0AE" font-size="8.5" text-anchor="middle"><b style="color: #00B09B;">Km (Michaelis Constant):</b></text>
+        <text x="107" y="68" fill="#CBD5E1" font-size="8" text-anchor="middle">Substrate conc. at &frac12; Vmax (Lower Km = Higher Affinity)</text>
+        <line x1="20" y1="76" x2="195" y2="76" stroke="rgba(255,255,255,0.2)"/>
+        <text x="107" y="92" fill="#FF8A65" font-size="8.5" font-weight="bold" text-anchor="middle">Competitive Inhibition:</text>
+        <text x="107" y="106" fill="#CBD5E1" font-size="8" text-anchor="middle">Inhibitor mimics substrate; Vmax unchanged;</text>
+        <text x="107" y="120" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Km INCREASES! (e.g. Malonate vs Succinate)</text>
+      </g>
+
+      <!-- Bottom Holoenzyme Architecture -->
+      <g transform="translate(25, 192)">
+        <rect width="450" height="75" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 176, 155, 0.3)"/>
+        <text x="225" y="20" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">
+          Holoenzyme (Active Conjugated Enzyme) Architecture
+        </text>
+        <text x="225" y="38" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
+          <b>Holoenzyme = Apoenzyme (Protein part) + Cofactor (Non-protein part)</b>
+        </text>
+        <text x="225" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
+          &bull; <b style="color: #00B09B;">Prosthetic Group:</b> Tightly bound organic (Heme) &bull; <b style="color: #00B09B;">Coenzyme:</b> Transient organic / NAD, NADP (Vitamins)
+        </text>
+        <text x="225" y="68" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">
+          &bull; <b style="color: #00B09B;">Metal Ions:</b> Form coordination bonds at active site (e.g. Zn<sup>2+</sup> for Carbonic Anhydrase and Carboxypeptidase)
+        </text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 2.6: Biophysics of Enzyme Catalysis: Lowering of Activation Energy Barrier, Michaelis-Menten Kinetics (Vmax &amp; Km), Competitive Inhibition &amp; Holoenzyme Architecture
+  </div>
+</div>
+
+
+  <h3 style="color: #00B09B; margin-top: 18px; font-size: 16.5px;">(i) Enzyme Active Site &amp; Activation Energy Barrier Reduction</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Enzymes are biocatalysts (almost all proteins, except catalytic RNA <b>Ribozymes</b>) that accelerate chemical reaction rates by several million-fold without being consumed:
+      <br/>- <b style="color: #00B09B;">Active Site:</b> A specific 3D pocket or cleft created by tertiary folding of the polypeptide chain into which substrate molecules fit precisely.
+      <br/>- <b style="color: #00B09B;">Catalytic Mechanism:</b> Substrate (S) binds to enzyme active site forming an ephemeral <b>Enzyme-Substrate Complex [ES]</b>. This complex lowers the <b>Activation Energy (Ea)</b> required to reach the unstable transition state, converting substrate into product (P):
+      <br/><span style="font-weight: bold; color: #FFFFFF;">E + S &hArr; [ES] &rarr; [EP] &rarr; E + P</span>.
+    </p>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(ii) Enzyme Kinetics (Vmax, Km) &amp; Competitive Inhibition</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #00B09B;">Michaelis-Menten Kinetics:</b> As substrate concentration [S] increases, reaction velocity (V) increases rapidly, eventually leveling off at a maximal velocity (<b>Vmax</b>) when all enzyme active sites become saturated.</li>
+      <li><b style="color: #00B09B;">Michaelis Constant (Km):</b> Substrate concentration at which reaction rate is exactly <b>&frac12; Vmax</b>. Km is inversely proportional to enzyme-substrate affinity (lower Km = higher affinity).</li>
+      <li><b style="color: #00B09B;">Competitive Inhibition:</b> An inhibitor closely resembling the substrate in chemical structure competes for the catalytic active site.
+        <br/>- <i>Classic Example:</i> Inhibition of <b>Succinate Dehydrogenase</b> by <b>Malonate</b> (which structurally mimics succinate).
+        <br/>- <i>Kinetic Diagnostic:</i> <b>Vmax remains unchanged</b> (can be overcome by adding excess substrate), but <b>Km increases</b> (apparent affinity decreases).
+      </li>
+    </ul>
+  </div>
+
+  <h3 style="color: #00B09B; margin-top: 22px; font-size: 16.5px;">(iii) 6 IUBMB Enzyme Classes &amp; Holoenzyme Architecture</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 176, 155, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The International Union of Biochemistry (IUBMB) classifies enzymes into 6 fundamental classes based on the reaction catalyzed:
+      <br/>1. <b style="color: #00B09B;">Oxidoreductases / Dehydrogenases:</b> Catalyze redox reactions (e.g., Cytochrome oxidase).
+      <br/>2. <b style="color: #00B09B;">Transferases:</b> Catalyze transfer of a chemical group other than hydrogen (e.g., Hexokinase).
+      <br/>3. <b style="color: #00B09B;">Hydrolases:</b> Catalyze hydrolytic cleavage of ester, peptide, or glycosidic bonds (e.g., Pepsin, Amylase).
+      <br/>4. <b style="color: #00B09B;">Lyases:</b> Catalyze removal of groups leaving double bonds without hydrolysis (e.g., Aldolase).
+      <br/>5. <b style="color: #00B09B;">Isomerases:</b> Catalyze interconversion of optical, geometric, or positional isomers (e.g., Phosphoglucoisomerase).
+      <br/>6. <b style="color: #00B09B;">Ligases / Synthetases:</b> Catalyze joining of two molecules coupled with ATP hydrolysis (e.g., DNA Ligase).
+      <br/><br/>
+      <b style="color: #00B09B;">Holoenzyme Architecture:</b>
+      <br/><b>Holoenzyme (Active Enzyme) = Apoenzyme (Protein component) + Cofactor (Non-protein factor)</b>.
+      <br/>- <i>Prosthetic Groups:</i> Tightly and permanently bound organic cofactors (e.g., Heme in Peroxidase and Catalase).
+      <br/>- <i>Coenzymes:</i> Loosely and transiently bound organic cofactors derived from vitamins (e.g., NAD and NADP contain Niacin).
+      <br/>- <i>Metal Ions:</i> Coordinate with active site residues (e.g., Zn<sup>2+</sup> is cofactor for <b>Carbonic Anhydrase</b> and Carboxypeptidase).
+    </p>
+  </div>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(0, 77, 64, 0.85)); border: 2px solid #00B09B; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
+    <h3 style="color: #00B09B; margin: 0 0 14px 0; font-size: 18px; text-align: center; font-weight: bold;">
+      ⚡ Master Chapter 2 Frog Anatomy &amp; Biomolecules Cheat Sheet
+    </h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px;">
+        <thead>
+          <tr style="background: rgba(0, 176, 155, 0.25); color: #00B09B; font-weight: bold;">
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">System / Biomolecule Category</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Structural Formula &amp; Chemical Linkage</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Key Diagnostic Feature &amp; NCERT Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Frog Heart:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">3 Chambers (2 Atria + 1 Ventricle)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Sinus venosus (dorsal) &bull; Truncus arteriosus (ventral)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Frog Urinogenital:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Vasa efferentia &rarr; Bidder's canal (Male)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Oviducts separate from kidneys (Female) &bull; Cloaca exit</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Acid-Soluble Pool:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">18 - 800 Daltons (Micromolecules)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Amino acids, monosaccharides, nucleotides in cytosol</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Acid-Insoluble Pool:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&gt; 10,000 Daltons (Macromolecules)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Proteins, nucleic acids, polysaccharides + Lipids (vesicles)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Protein Levels:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Peptide bond (-CO-NH-)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">1&deg; sequence &bull; 2&deg; &alpha;/&beta; &bull; 3&deg; 3D active site &bull; 4&deg; Hemoglobin</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">B-DNA Double Helix:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">3'-5' Phosphodiester + Hydrogen bonds</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Pitch = 34 &Aring; &bull; 10 bp/turn &bull; A=T (2 H-bonds), G&equiv;C (3 H-bonds)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Enzyme Action:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Lowers Activation Energy (Ea) barrier</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Transition state &bull; E + S &hArr; [ES] &rarr; [EP] &rarr; E + P</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Competitive Inhibitor:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Km increases &bull; Vmax unchanged</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Malonate inhibiting Succinate Dehydrogenase</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #00B09B;">Holoenzyme:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Apoenzyme (protein) + Cofactor</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Prosthetic (Heme) &bull; Coenzyme (NAD) &bull; Metal (Zn<sup>2+</sup>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 </div>
 `;
 
 export const c11Zoo2HtmlSolutions = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions) -->
-  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
-    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #00B09B; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Biomolecule/Anatomy Identification)</p>
+  <!-- SECTION A -->
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.15), rgba(0, 137, 123, 0.15)); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION A: Very Short Answer (VSA) Questions (1 Mark Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q1 to Q40 &bull; Frog Organ Systems, Chemical Analysis Fractions, Monomer Linkages, B-DNA Geometry &amp; Enzyme Kinetics</p>
   </div>
-
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q1. Respiration across moist skin occurring during frog hibernation and aestivation is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Pulmonary Respiration &nbsp;&nbsp;&nbsp;&nbsp; (B) Cutaneous Respiration<br>
-      (C) Buccopharyngeal Respiration &nbsp;&nbsp;&nbsp;&nbsp; (D) Branchial Respiration
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Cutaneous Respiration</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Moist vascular skin performs cutaneous gaseous exchange during hibernation and aestivation.</span>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q1: What is the zoological name of the common Indian Bullfrog?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <i>Rana tigrina</i>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q2. The number of heart chambers in Frog (Rana tigrina) is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 2 &nbsp;&nbsp;&nbsp;&nbsp; (B) 3<br>
-      (C) 4 &nbsp;&nbsp;&nbsp;&nbsp; (D) 1
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) 3</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Amphibians possess a 3-chambered heart consisting of 2 auricles and 1 ventricle.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q2: Name the two body divisions of a frog.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Head and Trunk (Neck and Tail are absent).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q3. In male frogs, Bidder's canal is situated inside the:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Liver &nbsp;&nbsp;&nbsp;&nbsp; (B) Kidney<br>
-      (C) Testis &nbsp;&nbsp;&nbsp;&nbsp; (D) Spleen
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Kidney</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Bidder's canal passes through the kidney in male frogs receiving vasa efferentia.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q3: What is the function of the Nictitating Membrane in a frog?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Protects the eye from debris and water while swimming underwater.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q4. How many pairs of cranial nerves are present in Frog?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 8 Pairs &nbsp;&nbsp;&nbsp;&nbsp; (B) 10 Pairs<br>
-      (C) 12 Pairs &nbsp;&nbsp;&nbsp;&nbsp; (D) 14 Pairs
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) 10 Pairs</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Amphibians possess 10 pairs of cranial nerves.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q4: What structure receives airborne sound signals in frogs?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Tympanum (tympanic membrane).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q5. The bond connecting adjacent monosaccharide units in polysaccharides is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Peptide Bond &nbsp;&nbsp;&nbsp;&nbsp; (B) Glycosidic Bond<br>
-      (C) Phosphodiester Bond &nbsp;&nbsp;&nbsp;&nbsp; (D) Ester Bond
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Glycosidic Bond</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Monosaccharides are joined by glycosidic bonds formed via dehydration synthesis.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q5: Name the copulatory structure present on the forelimbs of male frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nuptial pad (copulatory pad on the first digit).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q6. The most abundant protein in the animal kingdom is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) RuBisCO &nbsp;&nbsp;&nbsp;&nbsp; (B) Collagen<br>
-      (C) Hemoglobin &nbsp;&nbsp;&nbsp;&nbsp; (D) Keratin
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Collagen</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Collagen is the most abundant structural protein in the animal world.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q6: Why is the alimentary canal of a frog relatively short?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because frogs are carnivores; meat is digested more easily than fibrous plant matter.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q7. The most abundant protein in the entire biosphere is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Collagen &nbsp;&nbsp;&nbsp;&nbsp; (B) RuBisCO<br>
-      (C) Myosin &nbsp;&nbsp;&nbsp;&nbsp; (D) Fibroin
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) RuBisCO</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> RuBisCO enzyme is the most abundant protein in the whole biosphere.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q7: Describe the tongue of a frog.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Bilobed, bifid, muscular, and attached anteriorly at the front of the lower jaw.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q8. A lecithin molecule is chemically classified as a:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Simple Lipochyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Phospholipid<br>
-      (C) Glycoprotein &nbsp;&nbsp;&nbsp;&nbsp; (D) Steroid
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Phospholipid</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Lecithin is a phospholipid containing a phosphate group in cell membranes.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q8: Name the common receiving chamber for digestive, urinary, and reproductive systems in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Cloaca.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q9. Amino acids exist as dipolar zwitterions at their:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Boiling Point &nbsp;&nbsp;&nbsp;&nbsp; (B) Isoelectric Point<br>
-      (C) Melting Point &nbsp;&nbsp;&nbsp;&nbsp; (D) Saturation Point
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Isoelectric Point</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> At isoelectric pH, amino acids bear equal positive and negative charges forming zwitterions.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q9: How many chambers are present in the heart of a frog?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Three chambers (2 Atria and 1 Ventricle).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q10. Which secondary metabolite is classified as a Lectin?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Morphine &nbsp;&nbsp;&nbsp;&nbsp; (B) Concanavalin A<br>
-      (C) Vinblastine &nbsp;&nbsp;&nbsp;&nbsp; (D) Ricin
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Concanavalin A</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Concanavalin A is a specialized carbohydrate-binding plant lectin.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q10: What is the Sinus Venosus in a frog's circulatory system?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A dorsal triangular accessory receiving chamber that collects deoxygenated venous blood.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q11. An anti-cancer drug obtained as a secondary metabolite is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Abruptin &nbsp;&nbsp;&nbsp;&nbsp; (B) Vinblastine<br>
-      (C) Codeine &nbsp;&nbsp;&nbsp;&nbsp; (D) Glutamate
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Vinblastine</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Vinblastine is an anti-cancer drug isolated from Catharanthus roseus.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q11: What is the Truncus Arteriosus in a frog?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A thick-walled ventral vessel carrying blood away from the ventricle, splitting into aortic arches.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q12. Enzymes accelerate reaction rates by:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Increasing Activation Energy &nbsp;&nbsp;&nbsp;&nbsp; (B) Lowering Activation Energy<br>
-      (C) Changing Equilibrium Constant &nbsp;&nbsp;&nbsp;&nbsp; (D) Consuming Substrate
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Lowering Activation Energy</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Enzymes lower the activation energy barrier required to reach the transition state.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q12: Name the three modes of respiration in adult frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Cutaneous (skin), Buccopharyngeal (mouth), and Pulmonary (lungs).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q13. Malonate structurally resembles succinate and competitively inhibits:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Succinic Dehydrogenase &nbsp;&nbsp;&nbsp;&nbsp; (B) Pyruvate Kinase<br>
-      (C) Amylase &nbsp;&nbsp;&nbsp;&nbsp; (D) DNA Polymerase
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (A) Succinic Dehydrogenase</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Malonate is a classic competitive inhibitor of succinic dehydrogenase.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q13: Which mode of respiration is utilized by frogs during hibernation and aestivation?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Cutaneous respiration (through moist skin).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q14. Competitive inhibition affects enzyme kinetics by:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Decreasing Vmax &nbsp;&nbsp;&nbsp;&nbsp; (B) Increasing Km while Vmax remains unchanged<br>
-      (C) Decreasing Km &nbsp;&nbsp;&nbsp;&nbsp; (D) Destroying Apoenzyme
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Increasing Km while Vmax remains unchanged</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Competitive inhibitors increase Km (lower affinity) without altering Vmax.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q14: How many pairs of cranial nerves are present in a frog?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      10 pairs of cranial nerves.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q15. The protein part of a holoenzyme is termed the:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Co-enzyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Apoenzyme<br>
-      (C) Prosthetic Group &nbsp;&nbsp;&nbsp;&nbsp; (D) Zymogen
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Apoenzyme</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> The protein component of a conjugated enzyme complex is the apoenzyme.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q15: What is Mesorchium in male frogs?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A double fold of peritoneum that attaches the testes to the dorsal body wall and kidneys.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q16. A tightly bound organic co-factor permanently attached to an apoenzyme is a:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Co-enzyme &nbsp;&nbsp;&nbsp;&nbsp; (B) Prosthetic Group<br>
-      (C) Metal Ion &nbsp;&nbsp;&nbsp;&nbsp; (D) Isozyme
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Prosthetic Group</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Prosthetic groups (e.g. Heme) are tightly bound non-protein organic co-factors.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q16: What is Bidder's Canal? In which sex of frog is it found?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A longitudinal canal inside the kidney of male frogs through which sperm pass into the urinogenital duct.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q17. Co-factor required for the activity of Carboxypeptidase is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Zinc &nbsp;&nbsp;&nbsp;&nbsp; (B) Iron<br>
-      (C) Magnesium &nbsp;&nbsp;&nbsp;&nbsp; (D) Copper
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (A) Zinc</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Zinc metal ion acts as an essential co-factor for carboxypeptidase.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q17: Do female frog ovaries have any anatomical connection with kidneys?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      No, ovaries are completely separate from the kidneys.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q18. Pyrimidines present in DNA double helix are:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Adenine and Guanine &nbsp;&nbsp;&nbsp;&nbsp; (B) Cytosine and Thymine<br>
-      (C) Cytosine and Uracil &nbsp;&nbsp;&nbsp;&nbsp; (D) Thymine and Uracil
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Cytosine and Thymine</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> DNA contains cytosine and thymine pyrimidines (RNA has uracil instead of thymine).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q18: Which hormone induces metamorphosis in frog tadpoles?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Thyroxine (produced by thyroid gland, requiring Iodine).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q19. According to B-DNA double helix model, pitch of DNA per turn is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 3.4 Å &nbsp;&nbsp;&nbsp;&nbsp; (B) 34 Å<br>
-      (C) 20 Å &nbsp;&nbsp;&nbsp;&nbsp; (D) 340 Å
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) 34 Å</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> B-DNA features a 34 Å pitch per 360-degree turn containing 10 base pairs.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q19: Which acid is used to grind living tissues during chemical analysis of biomolecules?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Trichloroacetic acid (Cl<sub>3</sub>CCOOH).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q20. Trichloroacetic acid (Cl3CCOOH) treatment separates living tissue into:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Acid-soluble pool and Acid-insoluble retentate &nbsp;&nbsp;&nbsp;&nbsp; (B) Only proteins and fats<br>
-      (C) Only water and gas &nbsp;&nbsp;&nbsp;&nbsp; (D) Cell wall and nucleus
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (A) Acid-soluble pool and Acid-insoluble retentate</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Cl3CCOOH filtration divides tissue into acid-soluble pool and insoluble retentate.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q20: What is the molecular weight range of Biomicromolecules in the acid-soluble pool?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      18 to 800 Daltons (Da).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q21. Which of the following is a non-reducing disaccharide sugar?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Glucose &nbsp;&nbsp;&nbsp;&nbsp; (B) Maltose<br>
-      (C) Lactose &nbsp;&nbsp;&nbsp;&nbsp; (D) Sucrose
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (D) Sucrose</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Sucrose lacks free reducing aldehyde/ketone groups, making it a non-reducing sugar.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q21: Why do Lipids appear in the acid-insoluble fraction despite having low molecular weights?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because hydrophobic lipids form large membrane fragments and water-insoluble vesicles that cannot pass through cheesecloth.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q22. Structure of protein representing overall 3D folding essential for enzyme activity is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Primary Structure &nbsp;&nbsp;&nbsp;&nbsp; (B) Secondary Structure<br>
-      (C) Tertiary Structure &nbsp;&nbsp;&nbsp;&nbsp; (D) Quaternary Structure
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (C) Tertiary Structure</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Tertiary structure forms 3D crevices creating active sites necessary for catalysis.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q22: What is a Zwitterion?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      An amino acid carrying both positive (-NH<sub>3</sub><sup>+</sup>) and negative (-COO<sup>-</sup>) charges simultaneously at its isoelectric point.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q23. Alimentary canal in Frog is short because frogs are:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Herbivorous &nbsp;&nbsp;&nbsp;&nbsp; (B) Carnivorous<br>
-      (C) Omnivorous &nbsp;&nbsp;&nbsp;&nbsp; (D) Sanguinivorous
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Carnivorous</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Carnivores have shorter digestive tracts as meat is easier to digest than cellulose.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q23: Name the simplest amino acid lacking an asymmetric carbon atom.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Glycine (R = -H).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q24. Vasa efferentia in male frogs open into which canal inside kidney?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Inguinal Canal &nbsp;&nbsp;&nbsp;&nbsp; (B) Bidder's Canal<br>
-      (C) Central Canal &nbsp;&nbsp;&nbsp;&nbsp; (D) Haversian Canal
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (B) Bidder's Canal</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Vasa efferentia enter kidney and open into Bidder's canal.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q24: What is the primary covalent linkage connecting amino acids in a polypeptide?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Peptide bond (-CO-NH-).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style="color: #00B09B;">Q25. Enzyme class catalyzing linkage of two compounds utilizing ATP is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Hydrolases &nbsp;&nbsp;&nbsp;&nbsp; (B) Lyases<br>
-      (C) Ligases &nbsp;&nbsp;&nbsp;&nbsp; (D) Isomerases
-    </div>
-    <div style="background: rgba(0, 176, 155, 0.15); border-left: 3.5px solid #00B09B; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style="color: #00B09B;">✓ Answer: (C) Ligases</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Ligases join two molecular substrates together using ATP energy.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q25: Which structural tier of a protein creates the catalytic Active Site for enzymatic activity?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Tertiary (3&deg;) structure.
     </div>
   </div>
-  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
-  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #00B09B; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Frog/Biomolecule Audits)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q26: How many polypeptide chains make up adult Human Hemoglobin?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Four chains (2 &alpha; and 2 &beta; subunits).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q27: Name the chemical bond linking monosaccharides in polysaccharides.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Glycosidic bond.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q28: Why does Starch give a blue color with Iodine whereas Cellulose does not?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Starch forms helical secondary structures that trap iodine molecules; cellulose forms rigid linear chains that cannot trap iodine.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q29: What is the storage polysaccharide of animals?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Glycogen.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q30: Name the polymer constituting the exoskeleton of arthropods and fungal cell walls.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Chitin (polymer of N-acetylglucosamine / NAG).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q31: Name the amphipathic phospholipid abundantly found in cell membranes.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lecithin.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q32: How many carbon atoms are present in Palmitic acid including the carboxyl carbon?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      16 carbon atoms.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q33: How many carbon atoms are present in Arachidonic acid?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      20 carbon atoms.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q34: What is the pitch of a Watson-Crick B-DNA double helix?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      34 &Aring; (3.4 nm).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q35: How many base pairs are present in one complete helical turn of B-DNA?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      10 base pairs.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q36: How many hydrogen bonds form between Guanine and Cytosine in DNA?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Three hydrogen bonds (G &equiv; C).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q37: Name an anti-cancer secondary metabolite drug derived from plants.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Vinblastine (from <i>Catharanthus roseus</i>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q38: Name a toxic secondary metabolite protein.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Abrin (or Ricin).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q39: Define the Michaelis Constant (Km).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The substrate concentration at which the reaction velocity is half of its maximum value (&frac12; Vmax).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q40: What happens to Vmax and Km during Competitive Inhibition?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Vmax remains unchanged, while Km increases.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q26. Name scientific name and class of Indian bullfrog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Scientific Name:</b> <i>Rana tigrina</i>.<br><b style='color: #00B09B;'>Class:</b> Amphibia.
+  <!-- SECTION B -->
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.15), rgba(0, 137, 123, 0.15)); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION B: Short Answer (SA) Questions (2 &amp; 3 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q41 to Q80 &bull; Frog Heart &amp; Portal Systems, Bidder's Canal Pathway, Protein Folding Tiers &amp; Competitive Inhibition</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q41: Describe the external adaptations of the frog (Rana tigrina) for terrestrial and aquatic life.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Aquatic Adaptations:</b> Streamlined spindle-shaped body reducing drag; moist mucus-covered skin for cutaneous gas exchange; webbed hindlimbs acting as powerful paddles; protruding eyes with transparent nictitating membrane.<br/>2. <b style="color: #00B09B;">Terrestrial Adaptations:</b> Strong muscular hindlimbs for jumping; tympanum receiving aerial sounds; lungs for pulmonary breathing; camouflaged skin coloration preventing detection by land predators.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q27. Differentiate Hibernation and Aestivation in frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Hibernation:</b> Winter sleep to escape cold.<br><b style='color: #00B09B;'>Aestivation:</b> Summer sleep to escape heat and desiccation.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q42: Explain the mechanism of food capture and digestion in the frog's stomach.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Capture:</b> Frog uses its muscular, bilobed tongue attached to the front of the jaw. When prey approaches, the tongue flicks out, sticks to the insect with mucus, and withdraws into the mouth.<br/>2. <b style="color: #00B09B;">Digestion:</b> Food enters the stomach where muscular walls churn it with gastric juice containing hydrochloric acid (HCl) and proteolytic enzymes (pepsinogen). HCl softens food and activates pepsin, digesting proteins into peptones. The partially digested acidic pulp is called <b>Chyme</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q28. State function of Nictitating Membrane in frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Transparent membrane covering eyes underwater to protect them while allowing vision.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q43: Describe the structure and functioning of the 3-chambered heart of a frog.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The frog heart consists of:<br/>1. <b style="color: #00B09B;">Two Atria:</b> Right atrium receives deoxygenated systemic blood from the <b>Sinus Venosus</b>; Left atrium receives oxygenated blood from the lungs and skin via pulmonary veins.<br/>2. <b style="color: #00B09B;">Single Ventricle:</b> Both atria contract, emptying blood into the thick-walled muscular ventricle. Although some mixing occurs, spiral valves in the outflow vessel direct oxygen-rich blood toward the brain via carotid arches and mixed blood to the body via systemic and pulmocutaneous arches.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q29. How do male frogs differ externally from female frogs?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Male frogs possess vocal sacs for croaking and nuptial pads on the first digit of forelimbs during breeding.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q44: Explain the Hepatic Portal System and Renal Portal System in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A portal system begins and ends in capillaries without directly reaching the heart:<br/>1. <b style="color: #00B09B;">Hepatic Portal System:</b> Veins draining the stomach, intestine, and pancreas unite into the hepatic portal vein, branching into sinusoidal capillaries in the liver. Allows absorbed nutrients to be processed before general circulation.<br/>2. <b style="color: #00B09B;">Renal Portal System:</b> Blood from the hindlimbs and pelvic region is collected by femoral and sciatic veins and passes through the kidneys before entering the postcaval vein.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q30. Name 3 modes of respiration in Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      1. Cutaneous (skin), 2. Buccopharyngeal (buccal cavity), 3. Pulmonary (lungs).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q45: Explain the pathway of spermatozoa in a male frog from testes to exterior.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Spermatozoa are produced in the seminiferous tubules of the paired <b>Testes</b>.<br/>2. 10 to 12 delicate <b>Vasa Efferentia</b> emerge from the testes, crossing the mesorchium to enter the kidneys.<br/>3. Sperm enter <b>Bidder's Canal</b> running longitudinally inside the kidney.<br/>4. From Bidder's canal, sperm pass into transverse collecting ducts and enter the <b>Urinogenital Duct</b>.<br/>5. The urinogenital duct discharges sperm into the <b>Cloaca</b>, which expels them into water during amplexus.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q31. Describe heart structure of Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      3-chambered heart consisting of 2 auricles, 1 ventricle, Sinus Venosus, and Conus Arteriosus.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q46: Differentiate between the Male and Female Urinogenital Systems of a frog.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Kidney Connection:</b> In males, testes are connected to kidneys via vasa efferentia and Bidder's canal; in females, ovaries have <b>zero anatomical or functional connection with kidneys</b>.<br/>2. <b style="color: #00B09B;">Conducting Ducts:</b> Males have a combined <b>Urinogenital duct</b> carrying both urine and sperm; females have separate ureters carrying urine and long, coiled <b>Oviducts</b> carrying ova.<br/>3. <b style="color: #00B09B;">External Dimorphism:</b> Males have vocal sacs and nuptial pads; females lack both.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q32. What is Cloaca in frog?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Common terminal chamber receiving digestive fecal waste, urine from kidneys, and gametes.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q47: Describe the chemical analysis protocol for separating biomolecules into two fractions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Take living tissue (vegetable leaf or rat liver) and grind it in <b>Trichloroacetic Acid (Cl<sub>3</sub>CCOOH)</b> using a pestle and mortar to make a thick slurry.<br/>2. Strain the slurry through a fine cheesecloth or cotton fabric.<br/>3. Two fractions are obtained:<br/>&bull; <b style="color: #00B09B;">Filtrate (Acid-Soluble Pool):</b> Contains micromolecules (MW 18-800 Da: monosaccharides, amino acids, nucleotides).<br/>&bull; <b style="color: #00B09B;">Retentate (Acid-Insoluble Pool):</b> Contains macromolecules (MW &gt;10,000 Da: proteins, polysaccharides, nucleic acids, and lipids).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q33. State function of Bidder's Canal in male frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Canal inside kidney receiving sperm from vasa efferentia and passing them to urinogenital duct.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q48: Explain why Lipids are non-polymeric micromolecules yet found in the acid-insoluble retentate.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lipids have small individual molecular weights (&lt;800 Da) and are not true polymers. However, lipids are strictly <b>hydrophobic and insoluble in water</b>. When living cells are homogenized during tissue grinding, their lipid bilayer plasma membranes and organellar membranes break up and automatically self-assemble into microscopic <b>water-insoluble vesicles</b>. These large lipid vesicle aggregates cannot pass through the mesh of the cheesecloth, getting trapped in the acid-insoluble retentate.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q34. Differentiate Acid-Soluble Pool and Retentate fraction.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Acid-Soluble Pool:</b> Filterate fraction (&lt;1000 Da) containing micromolecules.<br><b style='color: #00B09B;'>Retentate:</b> Insoluble fraction (&gt;10,000 Da) containing macromolecules.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q49: Explain the concept of Primary, Secondary, Tertiary, and Quaternary protein structures.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Primary (1&deg;):</b> Linear linear sequence of amino acids linked by peptide bonds.<br/>2. <b style="color: #00B09B;">Secondary (2&deg;):</b> Polypeptide chain folds into regular repeating shapes: right-handed <b>&alpha;-helix</b> or pleated <b>&beta;-sheet</b> stabilized by hydrogen bonds.<br/>3. <b style="color: #00B09B;">Tertiary (3&deg;):</b> Polypeptide chain folds extensively upon itself into a complex 3D globular shape stabilized by disulfide, ionic, and hydrophobic bonds, creating active sites for enzymes.<br/>4. <b style="color: #00B09B;">Quaternary (4&deg;):</b> Spatial arrangement and geometric assembly of two or more independent polypeptide subunits (e.g., Hemoglobin has 4 subunits).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q35. Define Glycosidic Bond.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Covalent bond connecting monosaccharide units formed by dehydration synthesis.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q50: Differentiate between Homopolysaccharides and Heteropolysaccharides with two examples each.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Homopolysaccharides:</b> Composed of only one single type of recurring monosaccharide monomer building unit.<br/>&bull; <i>Examples:</i> <b>Starch</b> (polymer of &alpha;-glucose), <b>Cellulose</b> (polymer of &beta;-glucose), <b>Glycogen</b>, <b>Inulin</b> (polymer of fructose).<br/>2. <b style="color: #00B09B;">Heteropolysaccharides:</b> Composed of two or more different types of monosaccharides or amino sugar derivatives.<br/>&bull; <i>Examples:</i> <b>Hyaluronic acid</b> (D-glucuronic acid + N-acetylglucosamine), <b>Heparin</b> (anticoagulant), <b>Chondroitin sulfate</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q36. Define Peptide Bond.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Amide linkage (-CO-NH-) formed between alpha-carboxyl group of one amino acid and alpha-amino group of next.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q51: Describe the Watson-Crick double helix model of B-DNA with its spatial dimensions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Two antiparallel polynucleotide strands wind around a central axis in a right-handed direction.<br/>2. The backbone is formed of alternating sugar and phosphate units; nitrogenous bases project inward perpendicular to axis.<br/>3. Bases pair complementarily via hydrogen bonds: <b>Adenine = Thymine (2 H-bonds)</b>; <b>Guanine &equiv; Cytosine (3 H-bonds)</b>.<br/>4. <b style="color: #00B09B;">Dimensions:</b> Pitch of one complete turn = <b>34 &Aring; (3.4 nm)</b>; contains <b>10 base pairs per turn</b>; distance between two consecutive base pairs = <b>3.4 &Aring; (0.34 nm)</b>; diameter of helix = <b>20 &Aring; (2 nm)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q37. What is a Zwitterion?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Dipolar amino acid molecule carrying equal positive (-NH3<sup>+</sup>) and negative (-COO<sup>-</sup>) charges at isoelectric pH.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q52: Explain the difference between Primary Metabolites and Secondary Metabolites.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Primary Metabolites:</b> Compounds having direct, universally recognizable physiological roles in basic cellular metabolism, growth, and reproduction (e.g., glucose, alanine, ATP, phospholipids). Universally present in all animals, plants, and microbes.<br/>2. <b style="color: #00B09B;">Secondary Metabolites:</b> Compounds with no direct role in normal cellular growth or development of the host, but possessing significant ecological roles (herbivore defense, pollinator attraction) or commercial/medicinal value (e.g., morphine, concanavalin A, vinblastine, rubber).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q38. Name most abundant protein in animals and entire biosphere.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Animal Kingdom:</b> Collagen.<br><b style='color: #00B09B;'>Entire Biosphere:</b> RuBisCO.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q53: Name six categories of Secondary Metabolites from NCERT Table 9.3 with one example each.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Alkaloids:</b> Morphine, Codeine.<br/>2. <b style="color: #00B09B;">Terpenoids:</b> Monoterpenes, Diterpenes.<br/>3. <b style="color: #00B09B;">Toxins:</b> Abrin, Ricin.<br/>4. <b style="color: #00B09B;">Lectins:</b> Concanavalin A.<br/>5. <b style="color: #00B09B;">Drugs:</b> Vinblastine (anticancer), Curcumin (anti-inflammatory).<br/>6. <b style="color: #00B09B;">Polymeric Substances:</b> Rubber, Gums, Cellulose.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q39. Differentiate Saturated and Unsaturated Fatty Acids.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Saturated:</b> No carbon-carbon double bonds (e.g. Palmitic acid).<br><b style='color: #00B09B;'>Unsaturated:</b> One or more double bonds (e.g. Oleic acid).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q54: Explain how enzymes lower the Activation Energy (Ea) of a biochemical reaction.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Chemical reactions require reactant molecules to absorb a threshold amount of energy called <b>Activation Energy (Ea)</b> to reach the unstable, high-energy transition state where chemical bonds can break and form. An enzyme binds substrate molecules specifically at its active site to form an <b>Enzyme-Substrate Complex [ES]</b>. This binding aligns reactive groups, strains existing bonds, and provides favorable catalytic microenvironments, significantly lowering the activation energy barrier. As a result, a much higher fraction of molecules possesses sufficient thermal energy to undergo transformation rapidly.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q40. What is Lecithin?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Important phospholipid compound framing plasma membrane structures in cells.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q55: Explain the concept of Km (Michaelis Constant) and its physiological significance.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Definition:</b> Km is the substrate concentration at which an enzyme-catalyzed reaction achieves half of its maximum velocity (&frac12; Vmax).<br/>2. <b style="color: #00B09B;">Significance:</b> Km is an intrinsic constant reflecting the <b>affinity</b> of an enzyme for its substrate. An enzyme with a <b>low Km</b> has a very high affinity (binds substrate tightly and reaches &frac12; Vmax at tiny concentrations); an enzyme with a <b>high Km</b> has weak affinity and requires high substrate concentrations.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q41. Name 3 components of a Nucleotide.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      1. Nitrogenous Base (Purine/Pyrimidine), 2. Pentose Sugar, 3. Phosphate group.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q56: Explain Competitive Inhibition with an example and state its effect on Vmax and Km.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Competitive inhibition occurs when an inhibitor molecule closely resembles the substrate in 3D chemical shape and competes directly for the catalytic active site.<br/>1. <b style="color: #00B09B;">Example:</b> <b>Malonate</b> closely resembles <b>Succinate</b> and competitively inhibits the enzyme <b>Succinate Dehydrogenase</b> in the Krebs cycle.<br/>2. <b style="color: #00B09B;">Effect on Kinetics:</b><br/>&bull; <b style="color: #00B09B;">Vmax remains unchanged:</b> Because excess substrate can outcompete and displace the inhibitor.<br/>&bull; <b style="color: #00B09B;">Km increases:</b> A higher substrate concentration is now required to achieve &frac12; Vmax.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q42. Differentiate Purines and Pyrimidines.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Purines:</b> Double-ring bases (Adenine, Guanine).<br><b style='color: #00B09B;'>Pyrimidines:</b> Single-ring bases (Cytosine, Thymine, Uracil).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q57: Classify Enzymes into 6 IUBMB classes based on the type of reaction catalyzed.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Oxidoreductases / Dehydrogenases:</b> Catalyze oxidation-reduction reactions (e.g., Cytochrome oxidase).<br/>2. <b style="color: #00B09B;">Transferases:</b> Catalyze transfer of a group (other than hydrogen) between substrates (e.g., Hexokinase).<br/>3. <b style="color: #00B09B;">Hydrolases:</b> Catalyze cleavage of bonds by addition of water (e.g., Pepsin, Amylase).<br/>4. <b style="color: #00B09B;">Lyases:</b> Catalyze group removal leaving double bonds without water addition (e.g., Aldolase).<br/>5. <b style="color: #00B09B;">Isomerases:</b> Catalyze geometric, optical, or structural rearrangements (e.g., Triose phosphate isomerase).<br/>6. <b style="color: #00B09B;">Ligases:</b> Catalyze joining of two molecules coupled with ATP hydrolysis (e.g., DNA Ligase).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q43. State 3 features of B-DNA Double Helix model.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      1. Antiparallel strands, 2. Pitch is 34 Å per turn, 3. 10 base pairs per turn with 3.4 Å spacing.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q58: Differentiate between Apoenzyme, Holoenzyme, and Cofactor.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Apoenzyme:</b> The catalytically inactive, purely proteinaceous component of a conjugated enzyme.<br/>2. <b style="color: #00B09B;">Cofactor:</b> The non-proteinaceous chemical component (organic or inorganic) required by the apoenzyme for catalytic activity.<br/>3. <b style="color: #00B09B;">Holoenzyme:</b> The complete, catalytically active complex formed by the association of apoenzyme and its cofactor: <b>Holoenzyme = Apoenzyme + Cofactor</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q44. Differentiate Primary and Secondary Metabolites.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Primary:</b> Direct vital physiological roles in growth/metabolism.<br><b style='color: #00B09B;'>Secondary:</b> Plant/microbial by-products (alkaloids, drugs, rubber) with ecological utility.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q59: Differentiate between Prosthetic Groups, Coenzymes, and Metal Activators.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Prosthetic Groups:</b> Organic compounds that are tightly and permanently bound to the apoenzyme (e.g., <b>Heme</b> is the prosthetic group of Peroxidase and Catalase).<br/>2. <b style="color: #00B09B;">Coenzymes:</b> Organic compounds that associate only transiently with the enzyme during catalysis, frequently derived from water-soluble B-vitamins (e.g., <b>NAD</b> and <b>NADP</b> contain Niacin).<br/>3. <b style="color: #00B09B;">Metal Activator Ions:</b> Inorganic cations that form coordination bonds with active site amino acids and substrate (e.g., <b>Zn<sup>2+</sup></b> is the cofactor for Carbonic Anhydrase and Carboxypeptidase).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q45. Give 4 examples of Secondary Metabolites.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      1. Alkaloids (Morphine), 2. Lectins (Concanavalin A), 3. Drugs (Vinblastine), 4. Polymers (Rubber).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q60: Describe the cutaneous respiration of a frog and explain why its skin must stay moist.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Cutaneous respiration occurs through the frog's skin: atmospheric or dissolved O<sub>2</sub> dissolves in the thin surface moisture film and diffuses across the thin epidermis into a dense network of dermal blood capillaries. Carbon dioxide diffuses out in reverse. If the skin dries out, respiratory gases cannot dissolve into solution, causing rapid asphyxiation and death. Frogs keep skin moist via mucus secretions and periodic immersion in water.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q46. How do enzymes lower Activation Energy (Ea)?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      By binding substrate at active site to form ES complex, stabilizing transition state and lowering energy barrier.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q61: Describe the respiratory movements during Pulmonary Respiration in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Frogs lack ribs, a diaphragm, and a thoracic rib cage; they breathe by positive pressure force-pumping:<br/>1. With mouth and glottis closed, external nares open; lowering the buccopharyngeal floor draws atmospheric air into the mouth cavity.<br/>2. External nares close; the glottis opens; raising the buccopharyngeal floor compresses air and forces it down into the lungs.<br/>3. Air is expelled from the lungs by elastic recoil of pulmonary tissue and contraction of abdominal muscles.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q47. Define Competitive Inhibition with an example.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Inhibitor structurally resembles substrate and competes for active site binding.<br>Example: Malonate inhibiting Succinic Dehydrogenase.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q62: Describe the structure and functions of the Liver and Pancreas in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Liver:</b> Reddish-brown, multi-lobed large gland producing greenish alkaline <b>Bile</b>. Bile lacks enzymes but emulsifies fats and neutralizes acidic chyme in the duodenum. Bile is stored temporarily in the sac-like <b>Gallbladder</b>.<br/>2. <b style="color: #00B09B;">Pancreas:</b> Narrow, yellowish, leaf-like mixed gland lying in the mesentery between stomach and duodenum. Secretes alkaline pancreatic juice containing trypsin (proteins), amylopsin (carbohydrates), and steapsin (fats).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q48. How does competitive inhibition affect Km and Vmax?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Increases Km (lowers affinity) while Vmax remains unchanged.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q63: Explain the structure of a Tadpole Larva and changes during Metamorphosis.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The newly hatched tadpole larva is completely aquatic and fish-like, possessing:<br/>1. An elongated tail with a caudal fin for swimming, external/internal gills for respiration, a horny jaw for feeding on algae, and a long coiled herbivorous intestine.<br/>2. <b style="color: #00B09B;">Metamorphic Transformation:</b> Under the influence of <b>Thyroxine</b>, gills and tail are autolysed and resorbed; lungs develop; forelimbs and hindlimbs erupt; intestine shortens to carnivorous dimensions; eyes develop nictitating membranes and tympana appear.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q49. Define Km (Michaelis Constant).</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Substrate concentration at which enzymatic reaction velocity reaches half of maximum velocity (1/2 Vmax).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q64: Differentiate between Nucleoside and Nucleotide with two examples each.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Nucleoside:</b> Composed of a nitrogenous base covalently linked to a pentose sugar (Ribose or Deoxyribose) via an N-glycosidic bond.<br/>&bull; <i>Examples:</i> <b>Adenosine</b>, <b>Guanosine</b>, <b>Cytidine</b>, <b>Thymidine</b>, <b>Uridine</b>.<br/>2. <b style="color: #00B09B;">Nucleotide:</b> A nucleoside esterified with one, two, or three phosphate groups at the 5'-carbon of the sugar: <b>Nucleotide = Nucleoside + Phosphate</b>.<br/>&bull; <i>Examples:</i> <b>Adenylic acid (AMP)</b>, <b>Guanylic acid (GMP)</b>, <b>Cytidylic acid (CMP)</b>, <b>ATP</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q50. Name 6 IUBMB classes of enzymes.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      1. Oxidoreductases, 2. Transferases, 3. Hydrolases, 4. Lyases, 5. Isomerases, 6. Ligases.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q65: Explain the secondary structure of RNA and differentiate it from DNA.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">RNA Structure:</b> Usually single-stranded polynucleotide that can fold back on itself to form hairpin loops stabilized by localized base pairing; contains Ribose sugar and <b>Uracil (U)</b> instead of Thymine.<br/>2. <b style="color: #00B09B;">Differences from DNA:</b> DNA is double-stranded with 2-deoxyribose sugar, contains Thymine, and carries genetic information; RNA is predominantly single-stranded, less stable, and translates genetic instructions into proteins (mRNA, tRNA, rRNA).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q51. Differentiate Apoenzyme and Holoenzyme.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Apoenzyme:</b> Inactive protein part of enzyme.<br><b style='color: #00B09B;'>Holoenzyme:</b> Complete active complex (Apoenzyme + Co-factor).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q66: Describe the Lock and Key Hypothesis vs Induced Fit Model of enzyme action.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Lock and Key Model (Emil Fischer, 1894):</b> Proposes that the active site possesses a rigid, pre-formed 3D complementary shape into which the substrate fits precisely like a key in a lock.<br/>2. <b style="color: #00B09B;">Induced Fit Model (Daniel Koshland, 1958):</b> Proposes that the active site is flexible. When the substrate enters, it induces conformational rearrangements in the catalytic residues of the active site, wrapping tightly around the transition state for optimal catalysis.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q52. Differentiate Prosthetic Group and Co-enzyme.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      <b style='color: #00B09B;'>Prosthetic Group:</b> Tightly bound organic co-factor (e.g. Heme).<br><b style='color: #00B09B;'>Co-enzyme:</b> Loosely bound organic co-factor (e.g. NAD).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q67: Explain the effect of Temperature and pH on Enzyme Activity.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Temperature:</b> Enzymes show maximal velocity at an <b>Optimum Temperature (37&deg;C in humans)</b>. Below optimum, enzymes are inactive due to low thermal kinetic energy; above optimum (&gt;45&deg;C), thermal vibration breaks hydrogen and ionic bonds, causing irreversible <b>Denaturation</b> of the 3D tertiary structure.<br/>2. <b style="color: #00B09B;">pH:</b> Each enzyme functions optimally at a specific <b>Optimum pH</b> (e.g., Pepsin at pH 1.5-2.0; Trypsin at pH 8.0). Deviations in pH alter ionization states of active site amino acid residues, disrupting substrate binding.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q53. What is the role of Portal System in frog?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Carries blood from organ of origin to another intermediate organ (liver/kidney) before returning to heart.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q68: What is Allosteric Regulation of enzymes? Explain with an example.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Allosteric regulation occurs when an effector molecule binds to a specific regulatory site on the enzyme (the <b>Allosteric Site</b>) distinct from the catalytic active site, inducing a conformational shape change that either activates or inhibits enzymatic activity.<br/>&bull; <i>Example:</i> <b>Phosphofructokinase (PFK)</b> in glycolysis is allosterically inhibited by high levels of ATP and citrate (feedback inhibition) and allosterically activated by AMP and ADP.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q54. Why is frog skin kept moist?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Moist skin is essential for cutaneous gas exchange as dry skin stops oxygen diffusion causing asphyxiation.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q69: Explain Non-Competitive Inhibition with an example and state its kinetic effects.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Non-competitive inhibition occurs when an inhibitor binds to an allosteric site on the enzyme, regardless of whether the substrate is bound or not, altering the 3D active site conformation so that catalysis cannot occur.<br/>1. <b style="color: #00B09B;">Example:</b> Cyanide ions binding to the copper/iron centers of Cytochrome c Oxidase.<br/>2. <b style="color: #00B09B;">Kinetic Effects:</b><br/>&bull; <b style="color: #00B09B;">Vmax decreases:</b> Adding excess substrate cannot reverse the inhibition.<br/>&bull; <b style="color: #00B09B;">Km remains unchanged:</b> The remaining uninhibited enzyme molecules retain their normal substrate affinity.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q55. What is Thyroxin's role in frog development?</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Answer:</b><br>
-      Thyroid hormone thyroxin controls metamorphosis of aquatic tadpole larva into terrestrial adult frog.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q70: Describe the structure of Glycogen and compare it with Amylopectin.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Glycogen is a branched storage homopolysaccharide of &alpha;-D-glucose found in animal liver and muscle tissue. Like plant amylopectin, it contains linear chains with <b>&alpha;-1,4-glycosidic bonds</b> and branch points with <b>&alpha;-1,6-glycosidic bonds</b>. However, glycogen is far more densely branched than amylopectin, with branch points occurring every <b>8 to 12 glucose residues</b> (compared to every 24-30 residues in amylopectin), enabling rapid enzymatic mobilization of glucose during exercise.
     </div>
   </div>
-  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
-  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #00B09B; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Anatomical/Kinetics Audits)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q71: Explain the biological importance of Saturated and Unsaturated Fatty Acids in dietary health.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Saturated Fatty Acids:</b> Contain single C-C bonds; pack tightly into solid fats at room temperature (e.g., butter, lard, palmitic acid). Excessive dietary intake elevates LDL blood cholesterol, promoting atherosclerosis and cardiovascular diseases.<br/>2. <b style="color: #00B09B;">Unsaturated Fatty Acids:</b> Contain one or more C=C double bonds introducing rigid kinks (e.g., oleic, linoleic, arachidonic acids); remain liquid oils at room temperature. Polyunsaturated fatty acids (PUFAs) lower blood cholesterol and serve as precursors for anti-inflammatory prostaglandins.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q72: What are Ribozymes? Explain their evolutionary significance.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ribozymes are catalytically active RNA molecules capable of catalyzing biochemical reactions (cleaving and synthesizing phosphodiester bonds) in the absence of protein enzymes (discovered by Thomas Cech and Sidney Altman, Nobel Prize 1989).<br/>&bull; <i>Significance:</i> The existence of ribozymes (such as 23S rRNA peptidyl transferase in ribosomes) provides powerful evidence for the <b>'RNA World' hypothesis</b>, showing that primordial life relied on RNA for both genetic storage and enzymatic catalysis before proteins evolved.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q73: Describe the structure and location of Fat Bodies (Corpora adiposa) in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fat bodies are bright yellow, soft, finger-like branched adipose lobes situated immediately above the anterior poles of the kidneys and testes/ovaries in frogs. They store lipid reserves synthesized during active summer feeding that supply metabolic energy during winter hibernation, summer aestivation, and fuel gametogenesis (sperm and egg production) during early spring breeding.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q74: Explain the sensory organs of a frog.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Frogs possess specialized sensory structures:<br/>1. <b style="color: #00B09B;">Touch:</b> Sensory papillae in skin.<br/>2. <b style="color: #00B09B;">Taste:</b> Taste buds on the tongue and buccal lining.<br/>3. <b style="color: #00B09B;">Smell:</b> Nasal epithelium lining the olfactory chambers.<br/>4. <b style="color: #00B09B;">Vision:</b> Spherical eyes with nictitating membranes.<br/>5. <b style="color: #00B09B;">Hearing &amp; Equilibrium:</b> Tympanic membrane externally connected via single ear ossicle (Columella auris) to inner ear, which maintains balance and perceives vibrations.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q75: Explain the physiological role of the Spleen in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The spleen is a small, dark red, spherical lymphoid organ situated in the mesentery near the anterior end of the rectum. It functions as a hemopoietic organ producing red blood cells and lymphocytes, serves as an emergency reservoir for red blood cells, and filters out worn-out erythrocytes and cellular debris from circulating blood.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q76: Explain the difference between Acrodont, Homodont, and Polyphyodont teeth in frogs.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Acrodont:</b> Teeth are attached directly to the summit of the jaw bone without deep sockets.<br/>2. <b style="color: #00B09B;">Homodont:</b> All teeth are identical in anatomical shape, size, and structure (no specialized incisors, canines, or molars).<br/>3. <b style="color: #00B09B;">Polyphyodont:</b> Teeth are shed and replaced continuously multiple times throughout the animal's lifetime.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q77: What is Concanavalin A? Name its biochemical class and application.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Concanavalin A is a carbohydrate-binding protein belonging to the class <b>Lectins</b>, isolated from the jack bean (<i>Canavalia ensiformis</i>). It binds specifically to &alpha;-D-mannosyl and &alpha;-D-glucosyl residues. Widely utilized in biochemistry and cell biology for affinity chromatography to purify glycoproteins and in immunology to stimulate T-cell proliferation.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q78: Explain why the B-DNA double helix is structurally stable.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #00B09B;">Complementary Hydrogen Bonding:</b> Millions of specific H-bonds between purines and pyrimidines along the central axis.<br/>2. <b style="color: #00B09B;">Base Stacking Interactions:</b> The planar aromatic rings of nitrogenous bases stack parallel on top of one another (3.4 &Aring; apart), generating substantial hydrophobic van der Waals attractions that shield bases from surrounding water.<br/>3. <b style="color: #00B09B;">Phosphodiester Backbone:</b> Negatively charged outer phosphate groups face outward into the aqueous solvent, stabilized by hydration shells and divalent cations (Mg<sup>2+</sup>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q79: Explain the chemical structure and biological role of ATP.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      ATP (Adenosine Triphosphate) consists of the purine base Adenine linked to Ribose sugar (forming Adenosine), which is esterified with three phosphate groups. The two terminal phosphate linkages are high-energy <b>Phosphoanhydride Bonds</b> (&Delta;G&deg;' &approx; -30.5 kJ/mol). Enzymatic hydrolysis of the terminal bond yields ADP and inorganic phosphate (Pi), releasing Gibbs free energy that directly drives mechanical, chemical, and transport work in all living cells.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q80: Explain the role of Microtriches in parasitic Flatworms.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Microtriches are tiny, dense, microscopic microvilli-like projections covering the outer surface of the syncytial tegument in parasitic flatworms (Tapeworms / <i>Taenia</i>). Because tapeworms completely lack an alimentary canal, microtriches dramatically expand the surface area of the body, allowing them to directly absorb pre-digested nutrients (glucose, amino acids) across the host's intestinal lumen.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q56. Detail Frog External Morphology & Body Plan with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Streamlined head and trunk, moist slippery skin, nictitating eye membrane, tympanum, vocal sacs & nuptial pads in males.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxMTwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxMTwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <!-- SECTION C -->
+  <div style="background: linear-gradient(135deg, rgba(0, 176, 155, 0.15), rgba(0, 137, 123, 0.15)); border: 1.5px solid rgba(0, 176, 155, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION C: Long Answer (LA) Questions (5 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q81 to Q100 &bull; Complete Organ Monographs, B-DNA Double Helix Analysis, Enzyme Catalytic Proofs &amp; Master Synthesis Matrix</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q81: Discuss the Morphology, Anatomy, and Physiology of the Digestive System of Frog (Rana tigrina) in exhaustive depth.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. External Morphology &amp; Mouth:</b> Transverse wide mouth opening into spacious buccopharyngeal cavity. Bifid, muscular tongue attached anteriorly to lower jaw; flicked out rapidly with sticky mucus to ensnare insect prey.<br/><br/><b style="color: #00B09B;">2. Dentition &amp; Ingestion:</b> Maxillary and vomerine teeth are acrodont, homodont, and polyphyodont; function purely to hold struggling prey. Esophagus is short and wide, propelling food by peristalsis.<br/><br/><b style="color: #00B09B;">3. Gastric Digestion:</b> Stomach consists of cardiac and pyloric divisions. Gastric glands secrete HCl (creates acidic pH 1.5-2.0) and pepsinogen (activated into pepsin to digest proteins into peptones). Chyme passes through pyloric sphincter.<br/><br/><b style="color: #00B09B;">4. Intestinal Digestion:</b> U-shaped Duodenum receives common bile duct (hepatopancreatic duct). Bile from liver emulsifies fats; pancreatic juice supplies trypsin (proteins), amylopsin (starch), and steapsin (lipids). Ileum possesses internal folds (absorptive rugae).<br/><br/><b style="color: #00B09B;">5. Elimination:</b> Undigested residues enter rectum and discharge into <b>Cloaca</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q57. Detail Frog Digestive System architecture with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Short alimentary canal, bifid tongue, stomach chyme, liver bile in gallbladder, pancreas.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxMjwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxMjwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q82: Discuss the Circulatory System of the Frog in exhaustive detail: Heart Anatomy, Accessory Chambers, and Hepatic & Renal Portal Systems.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Heart Anatomy:</b> 3-chambered muscular myogenic heart (2 Atria + 1 Ventricle) enclosed in double-walled pericardium filled with pericardial fluid.<br/><br/><b style="color: #00B09B;">2. Accessory Chambers:</b><br/>&bull; <i>Sinus Venosus:</i> Dorsal thin-walled triangular chamber receiving systemic deoxygenated blood from right precaval, left precaval, and single postcaval veins, opening into right atrium via sinu-atrial aperture.<br/>&bull; <i>Truncus Arteriosus:</i> Ventral tubular outflow trunk arising from right side of ventricle; internally divided by a spiral valve into synangium and pylangium, bifurcating into left and right branches (each giving off Carotid, Systemic, and Pulmocutaneous arches).<br/><br/><b style="color: #00B09B;">3. Portal Circulations:</b><br/>&bull; <i>Hepatic Portal System:</i> Collects blood from stomach, intestine, spleen via hepatic portal vein and distributes it into liver sinusoids before reaching postcaval vein.<br/>&bull; <i>Renal Portal System:</i> Collects blood from hindlimbs via femoral and sciatic veins, passing through kidney capillary beds before draining into postcaval vein.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q58. Detail Frog Respiratory System (3 Modes) with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Cutaneous (skin), Buccopharyngeal (oral cavity), Pulmonary (lungs).<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxMzwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxMzwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q83: Discuss the Respiratory Mechanisms of Frog: Cutaneous, Buccopharyngeal, and Pulmonary Respiration with Gas Exchange Mechanics.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Cutaneous Respiration (Skin):</b> Principal mode in water and sole mode during hibernation and aestivation. Skin is thin, non-cornified, highly vascularized with subcutaneous capillaries, and kept moist by mucus glands. Oxygen dissolves in surface water film and diffuses down partial pressure gradient into blood; CO<sub>2</sub> diffuses out.<br/><br/><b style="color: #00B09B;">2. Buccopharyngeal Respiration:</b> Occurs at rest on land. Mouth remains tightly closed; external nares open. Contraction of sternohyal muscles lowers the floor of the buccal cavity, drawing air in. Contraction of petrohyal muscles raises the floor, expelling air through nares. Gaseous exchange occurs across vascular mucous epithelium.<br/><br/><b style="color: #00B09B;">3. Pulmonary Respiration (Lungs):</b> Pair of pink, ovoid, hollow elastic sacs with internal alveoli. Operates by positive pressure force pumping (buccal cavity acts as a piston pump forcing air past the open glottis into lungs). Expiration occurs by abdominal muscle contraction and lung elastic recoil.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q59. Detail Frog Heart & Portal Circulation with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      3-chambered heart (2A+1V), Hepatic portal system, Renal portal system.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxNDwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxNDwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q84: Provide an Exhaustive Comparison of the Male and Female Urinogenital Systems of Frog with Bidder's Canal and Metamorphic Stages.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Male Urinogenital System:</b> Pair of yellowish ovoid Testes suspended by mesorchium. 10-12 Vasa efferentia enter medial kidney border, emptying into <b>Bidder's Canal</b>. Sperm pass into kidney collecting tubules and exit via <b>Urinogenital Ducts</b> into the cloaca. Urinogenital duct conducts both urine and spermatozoa.<br/><br/><b style="color: #00B09B;">2. Female Urinogenital System:</b> Pair of lobulated Ovaries suspended by mesovarium; <b>no connection with kidneys</b>. Oviducts (M&uuml;llerian ducts) are long coiled glandular tubes opening anteriorly via ciliated ostia and posteriorly into cloaca. Uriniferous ureters carry only urine.<br/><br/><b style="color: #00B09B;">3. Breeding &amp; Metamorphosis:</b> Amplexus occurs in water; male grasps female using nuptial pads. External fertilization yields gelatinous spawn (2,500-3,000 ova). Aquatic herbivorous tadpole larva undergoes metamorphosis under the control of thyroid <b>Thyroxine</b>, resorbing tail/gills and developing limbs and lungs.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q60. Detail Frog Nervous System & 10 Cranial Nerves with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Brain divisions + 10 pairs of cranial nerves.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxNTwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxNTwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q85: Discuss the Protocol of Chemical Analysis of Living Tissues: Acid-Soluble Pool vs Acid-Insoluble Fraction, Micromolecules vs Macromolecules.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Experimental Protocol:</b> Grind fresh tissue in 5% Trichloroacetic acid (Cl<sub>3</sub>CCOOH) in mortar; strain homogenate through cheesecloth.<br/><br/><b style="color: #00B09B;">2. Acid-Soluble Fraction (Filtrate):</b><br/>&bull; Contains <b>Biomicromolecules</b> (molecular weights 18 to 800 Da).<br/>&bull; Represents true cytoplasmic fluid composition.<br/>&bull; Comprises monosaccharides, oligosaccharides, 20 amino acids, nucleotides, organic acids, and dissolved inorganic ions.<br/><br/><b style="color: #00B09B;">3. Acid-Insoluble Fraction (Retentate):</b><br/>&bull; Contains <b>Biomacromolecules</b> (molecular weights &gt;10,000 Da).<br/>&bull; Represents structural polymeric and organellar frameworks.<br/>&bull; Comprises Proteins (polypeptides), Polysaccharides (cellulose, glycogen, starch), and Nucleic Acids (DNA and RNA).<br/>&bull; <i>Special Case of Lipids:</i> Lipids have molecular weights &lt;800 Da, but their hydrophobic properties cause them to coalesce into vesicular membrane fragments that are retained on the cheesecloth.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q61. Detail Male Reproductive System of Frog with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Testes, mesorchium, 10-12 vasa efferentia, Bidder's canal, urinogenital duct, cloaca.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxNjwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxNjwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q86: Discuss the Structure and Biological Functions of Carbohydrates: Monosaccharides, Disaccharides, and Homopolysaccharides.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Monosaccharides:</b> Polyhydroxy aldehydes or ketones with general formula (CH<sub>2</sub>O)<sub>n</sub>. Trioses (G3P), Pentoses (Ribose, Deoxyribose), Hexoses (Glucose, Fructose, Galactose).<br/><br/><b style="color: #00B09B;">2. Disaccharides:</b> Formed by dehydration synthesis linking two hexoses via <b>Glycosidic Bonds</b>:<br/>&bull; <i>Maltose:</i> &alpha;-D-glucose + &alpha;-D-glucose (&alpha;-1,4 bond; reducing).<br/>&bull; <i>Sucrose:</i> &alpha;-D-glucose + &beta;-D-fructose (&alpha;-1,&beta;-2 bond; non-reducing cane sugar).<br/>&bull; <i>Lactose:</i> &beta;-D-galactose + &beta;-D-glucose (&beta;-1,4 bond; milk sugar).<br/><br/><b style="color: #00B09B;">3. Polysaccharides:</b> High-molecular-weight polymers:<br/>&bull; <i>Starch:</i> Plant energy reserve; helical amylose traps iodine (blue color) + branched amylopectin.<br/>&bull; <i>Cellulose:</i> Plant cell wall; linear &beta;-1,4 chains linked by inter-chain H-bonds forming rigid microfibrils; does not hold iodine.<br/>&bull; <i>Glycogen:</i> Animal starch stored in liver and muscle; highly branched &alpha;-1,4 and &alpha;-1,6 glucan.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q62. Detail Female Reproductive System of Frog with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of ovaries (no kidney link), coiled oviducts, cloaca, 2500-3000 ova, external water fertilization.<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxNzwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxNzwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q87: Discuss the Structural Hierarchies of Proteins: Primary, Secondary, Tertiary, and Quaternary Organization and Denaturation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Primary (1&deg;) Structure:</b> Linear amino acid sequence linked by covalent peptide bonds (-CO-NH-). Determines all higher-order folding. Positional information (N-terminal first, C-terminal last).<br/><br/><b style="color: #00B09B;">2. Secondary (2&deg;) Structure:</b> Local folding governed by hydrogen bonding between carbonyl oxygen and amide hydrogen of backbone:<br/>&bull; <i>&alpha;-Helix:</i> Right-handed spiral with 3.6 amino acids per turn (e.g., Keratin).<br/>&bull; <i>&beta;-Pleated Sheet:</i> Polypeptide chains aligned side-by-side in parallel or antiparallel orientation (e.g., Silk fibroin).<br/><br/><b style="color: #00B09B;">3. Tertiary (3&deg;) Structure:</b> Complete 3D globular architecture formed by interactions between R-groups: hydrophobic interactions, ionic salt bridges, hydrogen bonds, and covalent <b>Disulfide bonds (-S-S-)</b>. Creates catalytic clefts (active sites) of enzymes.<br/><br/><b style="color: #00B09B;">4. Quaternary (4&deg;) Structure:</b> Spatial arrangement of multiple independent polypeptide subunits (e.g., Hemoglobin is a tetramer of 2&alpha; and 2&beta; chains).<br/><br/><b style="color: #00B09B;">5. Denaturation:</b> Physical disruption of 2&deg;, 3&deg;, and 4&deg; structures by heat, extreme pH, or urea, abolishing biological activity without cleaving primary peptide bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q63. Detail DNA Double Helix vs RNA Structure with NCERT 2D diagram.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      B-DNA antiparallel double helix (34 Å pitch, 10 bp/turn) vs single stranded RNA (uracil).<br><br><div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+RGlhZ3JhbSAxODwvdGV4dD4gPHRleHQgeD0iNDAwIiB5PSIyMzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNDQkQ1RTEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2Ij5BbmF0b21pY2FsICYgUGh5c2lvbG9naWNhbCBWZWN0b3IgRGlhZ3JhbSAxODwvdGV4dD4gPC9zdmc+" style="width: 100%; max-width: 660px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 176, 155, 0.4); border: 2px solid #00B09B;" /></div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q88: Discuss the Structure and Functions of Lipids: Fatty Acids, Neutral Fats, Phospholipids, and Steroids.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Fatty Acids:</b> Long unbranched aliphatic hydrocarbon chains terminating in a carboxyl group (-COOH):<br/>&bull; <i>Saturated:</i> No double bonds; high melting points (e.g., Palmitic acid, 16C; Stearic acid, 18C).<br/>&bull; <i>Unsaturated:</i> Possess one or more double bonds introducing 30&deg; kinks; low melting points (e.g., Oleic acid, 1 double bond; Linoleic acid, 2 double bonds; Arachidonic acid, 20C with 4 double bonds).<br/><br/><b style="color: #00B09B;">2. Triglycerides:</b> Triesters of glycerol with three fatty acids; primary high-density energy storage in adipose tissue.<br/><br/><b style="color: #00B09B;">3. Phospholipids (Glycerophospholipids):</b> Diglyceride coupled to a phosphate group and polar head group (Choline in <b>Lecithin</b>). Amphipathic nature drives spontaneous assembly into lipid bilayers of biological membranes.<br/><br/><b style="color: #00B09B;">4. Steroids &amp; Terpenes:</b> Lipids with four fused hydrocarbon rings (Cyclopentanoperhydrophenanthrene); e.g., <b>Cholesterol</b> (membrane fluidity regulator and precursor of steroid hormones, bile salts, and Vitamin D).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q64. Detail female reproductive system of Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of large ovaries near kidneys, separate oviducts opening into cloaca, lays 2500-3000 ova, external water fertilization.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q89: Discuss the Watson-Crick B-DNA Double Helix Model in exhaustive stereochemical depth.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Historical Milestone:</b> Proposed in 1953 by James Watson and Francis Crick, based on Rosalind Franklin and Maurice Wilkins' X-ray diffraction fiber data.<br/><br/><b style="color: #00B09B;">2. Structural Hallmarks:</b><br/>&bull; <i>Antiparallel Strands:</i> Two right-handed polynucleotide chains running in opposite 5'&rarr;3' and 3'&rarr;5' directions.<br/>&bull; <i>Sugar-Phosphate Backbone:</i> Hydrophilic deoxyribose and phosphate units face the exterior, linked by <b>3'-5' Phosphodiester Bonds</b>.<br/>&bull; <i>Base Pairing &amp; Complementarity:</i> Hydrophobic planar nitrogenous bases point inward, pairing complementarily: Purine with Pyrimidine via hydrogen bonds:<br/><b>Adenine = Thymine (2 H-bonds)</b> &bull; <b>Guanine &equiv; Cytosine (3 H-bonds)</b>.<br/>&bull; <i>Chargaff's Equivalence Rule:</i> [A] = [T] and [G] = [C]; hence [A + G] = [T + C] (Purines = Pyrimidines).<br/>&bull; <i>Spatial Geometry:</i> Helix diameter = 20 &Aring; (2 nm); pitch of one complete turn = 34 &Aring; (3.4 nm); contains 10 base pairs per turn; rise per base pair = 3.4 &Aring; (0.34 nm).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q65. Detail Chemical Analysis method of living tissue using Cl3CCOOH.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Grinding tissue in Trichloroacetic acid ➔ Cheesecloth filtration ➔ Acid-Soluble pool (<1000 Da) vs Acid-Insoluble Retentate (>10,000 Da).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q90: Discuss Primary and Secondary Metabolites: Characteristics, Ecological Roles, and Complete NCERT Classification Matrix.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Primary Metabolites:</b> Identified chemical structures universally present across all biological kingdoms having vital, direct functions in basic metabolism, cell maintenance, and growth (e.g., amino acids, sugars, fatty acids, nucleotides).<br/><br/><b style="color: #00B09B;">2. Secondary Metabolites:</b> Diverse organic compounds with restricted taxonomic distribution, synthesized as byproducts or specialized adaptations lacking direct developmental roles in the host, but conferring competitive ecological advantages (chemical defense against herbivores, allelopathic weed suppression, antimicrobial warfare, pollinator attraction).<br/><br/><b style="color: #00B09B;">3. Exhaustive NCERT Classification Matrix:</b><br/>&bull; <i>Pigments:</i> Carotenoids, Anthocyanins.<br/>&bull; <i>Alkaloids:</i> Morphine, Codeine (analgesics derived from opium poppy).<br/>&bull; <i>Terpenoids:</i> Monoterpenes, Diterpenes (volatile defensive compounds).<br/>&bull; <i>Essential Oils:</i> Lemon grass oil.<br/>&bull; <i>Toxins:</i> Abrin (from <i>Abrus precatorius</i>), Ricin (from castor bean).<br/>&bull; <i>Lectins:</i> Concanavalin A (carbohydrate-binding agglutinin).<br/>&bull; <i>Drugs:</i> Vinblastine (inhibits microtubule assembly in cancer chemotherapy), Curcumin (anti-inflammatory polyphenol from turmeric).<br/>&bull; <i>Polymeric Substances:</i> Natural rubber, Gums, Cellulose.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q66. Detail classification and structure of Carbohydrates.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Monosaccharides (Glucose), Disaccharides (Sucrose, Glycosidic bond), Polysaccharides (Starch, Glycogen, Cellulose, Chitin).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q91: Discuss Enzyme Action and Catalytic Mechanism: Active Site, Transition State Theory, and Activation Energy Reduction.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. General Principles:</b> Enzymes are biological catalysts that dramatically increase the rate of chemical reactions without altering chemical equilibrium (&Delta;G&deg; remains unchanged).<br/><br/><b style="color: #00B09B;">2. Active Site Topography:</b> A specialized cleft or pocket formed by specific amino acid residues brought together in tertiary folding (e.g., catalytic triad). Substrate binds through non-covalent interactions (H-bonds, ionic bonds, hydrophobic interactions).<br/><br/><b style="color: #00B09B;">3. Transition State Theory &amp; Activation Energy:</b><br/>&bull; For reactants to turn into products, they must overcome an energy hurdle called <b>Activation Energy (Ea)</b> to reach the high-energy, unstable <b>Transition State</b>.<br/>&bull; Enzyme binds substrate to form an <b>Enzyme-Substrate Complex [ES]</b>.<br/>&bull; Binding energy derived from weak interactions in the [ES] complex stabilizes the transition state, drastically lowering the activation energy barrier.<br/>&bull; The lowered barrier accelerates reaction velocity by factors of 10<sup>6</sup> to 10<sup>14</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q67. Detail 4 structural levels of Proteins.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Primary (linear amino acid sequence), Secondary (alpha-helix/beta-sheet), Tertiary (overall 3D active site), Quaternary (multimer e.g. Hb).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q92: Discuss Enzyme Kinetics in exhaustive depth: Substrate Concentration, Vmax, Km (Michaelis-Menten Equation), and Factors Modulating Activity.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Substrate Concentration Curve:</b> Hyperbolic curve (Michaelis-Menten plot). At low [S], velocity is directly proportional to [S] (first-order kinetics); at high [S], velocity approaches a maximum plateau <b>Vmax</b> where all enzyme active sites become saturated (zero-order kinetics).<br/><br/><b style="color: #00B09B;">2. Michaelis-Menten Equation:</b><br/><b>V = (Vmax &times; [S]) / (Km + [S])</b>.<br/>&bull; <b style="color: #00B09B;">Km (Michaelis Constant):</b> Substrate concentration at which V = &frac12; Vmax. Inversely proportional to affinity.<br/><br/><b style="color: #00B09B;">3. Environmental Modulators:</b><br/>&bull; <i>Temperature:</i> Bell-shaped curve with sharp denaturing drop above 45&deg;C.<br/>&bull; <i>pH:</i> Optimum pH where active site ionizing residues carry appropriate charges.<br/>&bull; <i>Product Concentration:</i> High product levels cause end-product feedback inhibition.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q68. Detail structure of Amino Acids and Zwitterion formation.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Alpha-carbon bonded to -NH2, -COOH, -H, -R; Dipolar zwitterion with equal + and - charges at isoelectric pH.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q93: Discuss Enzyme Inhibition in exhaustive detail: Competitive, Non-Competitive, and Uncompetitive Inhibition with Clinical Applications.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Competitive Inhibition:</b> Inhibitor structurally resembles substrate and binds reversibly to the active site.<br/>&bull; <i>Kinetics:</i> <b>Vmax unchanged</b>; <b>Km increases</b>.<br/>&bull; <i>Classic Example:</i> <b>Malonate</b> inhibiting <b>Succinate Dehydrogenase</b>.<br/>&bull; <i>Clinical:</i> Sulfa drugs competitively inhibit bacterial dihydropteroate synthetase (mimicking PABA) to arrest bacterial folate synthesis.<br/><br/><b style="color: #00B09B;">2. Non-Competitive Inhibition:</b> Inhibitor binds to an allosteric site distinct from active site on free enzyme or [ES] complex.<br/>&bull; <i>Kinetics:</i> <b>Vmax decreases</b>; <b>Km unchanged</b>.<br/>&bull; <i>Example:</i> Heavy metals (Pb<sup>2+</sup>, Hg<sup>2+</sup>) binding sulfhydryl (-SH) groups of enzymes.<br/><br/><b style="color: #00B09B;">3. Allosteric Feedback Inhibition:</b> End-product of a multi-step biosynthetic pathway binds allosterically to the pacemaker enzyme of the first step to arrest excessive accumulation.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q69. Detail classification and chemical structure of Lipids.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Triglycerides (Glycerol + 3 Fatty acids), Saturated vs Unsaturated, Lecithin phospholipid in cell membranes.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q94: Discuss the 6 IUBMB Enzyme Classes with Reaction Types and Holoenzyme Architecture.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. The 6 IUBMB Classes:</b><br/>&bull; <i>Class 1: Oxidoreductases:</i> Catalyze oxidation-reduction (A<sub>red</sub> + B<sub>ox</sub> &hArr; A<sub>ox</sub> + B<sub>red</sub>); e.g., Lactate dehydrogenase.<br/>&bull; <i>Class 2: Transferases:</i> Catalyze group transfer (A-X + B &hArr; A + B-X); e.g., Hexokinase.<br/>&bull; <i>Class 3: Hydrolases:</i> Catalyze bond cleavage by water addition; e.g., Lipase, Pepsin.<br/>&bull; <i>Class 4: Lyases:</i> Catalyze removal of groups leaving double bonds without water addition; e.g., Pyruvate decarboxylase.<br/>&bull; <i>Class 5: Isomerases:</i> Catalyze geometric/structural isomerizations; e.g., Phosphohexose isomerase.<br/>&bull; <i>Class 6: Ligases:</i> Catalyze joining of two molecules coupled with ATP hydrolysis; e.g., Glutamine synthetase.<br/><br/><b style="color: #00B09B;">2. Holoenzyme Architecture:</b> <b>Holoenzyme = Apoenzyme + Cofactor</b>.<br/>&bull; <i>Prosthetic Group:</i> Permanently bound organic moiety (Heme in Catalase).<br/>&bull; <i>Coenzyme:</i> Transient organic cofactor derived from vitamins (NAD, FAD).<br/>&bull; <i>Metal Activator:</i> Inorganics forming coordinate bonds (Zn<sup>2+</sup> in Carbonic Anhydrase).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q70. Detail Watson & Crick B-DNA Double Helix model.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Antiparallel strands, 3'-5' phosphodiester backbone, complementary base pairing (A=T, G≡C), 34 Å pitch, 10 bp per turn.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q95: Discuss the Nervous System and Sensory Organs of Frog (Rana tigrina) in exhaustive structural detail.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Central Nervous System (CNS):</b><br/>&bull; <i>Brain:</i> Protected within cartilaginous/bony cranium. Forebrain has paired Olfactory lobes (smell), Cerebral hemispheres, and Diencephalon (endocrine regulation). Midbrain consists of two large spherical <b>Optic lobes</b> (vision). Hindbrain has narrow transverse Cerebellum (coordination) and Medulla oblongata (regulates involuntary respiration and circulation).<br/>&bull; <i>Spinal Cord:</i> Extends through neural canal of vertebral column; terminates in filum terminale.<br/><br/><b style="color: #00B09B;">2. Peripheral Nervous System (PNS):</b><br/>&bull; 10 pairs of Cranial nerves arising from brain.<br/>&bull; 10 pairs of Spinal nerves arising from spinal cord.<br/><br/><b style="color: #00B09B;">3. Sensory Receptors:</b> Eyes with nictitating membrane &bull; Tympanum with columella auris (middle ear) &bull; Taste buds &bull; Nasal sensory epithelium &bull; Tactile sensory papillae in skin.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q71. Detail Primary vs Secondary Metabolites with examples.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Primary (essential metabolic roles: sugars, amino acids); Secondary (alkaloids, drugs like vinblastine, lectins like concanavalin A, rubber).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q96: Describe the Histological Organization of the Frog's Alimentary Canal and Kidney.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Alimentary Canal Layers:</b> Transverse section reveals 4 concentric histological coats:<br/>&bull; <i>Serosa:</i> Outermost visceral peritoneum.<br/>&bull; <i>Muscularis:</i> Outer longitudinal and inner circular smooth muscle layers driving peristalsis.<br/>&bull; <i>Submucosa:</i> Vascular loose connective tissue containing nerves and lymph vessels.<br/>&bull; <i>Mucosa:</i> Innermost glandular layer folded into longitudinal rugae, lined by simple columnar epithelium and goblet cells secreting mucus.<br/><br/><b style="color: #00B09B;">2. Kidney Histology:</b> Mesonephric kidneys composed of thousands of structural and functional units called <b>Uriniferous Tubules (Nephrons)</b>. Each nephron consists of a vascular <b>Glomerulus</b> enclosed in a double-walled <b>Bowman's capsule</b> connected to a coiled secretory tubule that reabsorbs water and salts, producing hypertonic urine excreted via the ureters.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q72. Detail active site concept and how enzymes lower Activation Energy.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Active site crevice binds substrate to form ES complex, lowering activation energy barrier to transition state.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q97: Discuss the Biomolecular Architecture of Cell Membranes: Fluid Mosaic Model, Phospholipids, and Membrane Transport Proteins.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Fluid Mosaic Model (Singer and Nicolson, 1972):</b> Quasifluid structure where proteins are embedded like a mosaic in a fluid phospholipid bilayer.<br/><br/><b style="color: #00B09B;">2. Lipid Bilayer:</b> Continuous double layer of amphipathic phospholipids with polar hydrophilic heads pointing outward toward water and non-polar hydrophobic hydrocarbon tails sequestered inside, shielding fatty acids from water.<br/><br/><b style="color: #00B09B;">3. Membrane Proteins:</b><br/>&bull; <i>Peripheral (Extrinsic) Proteins:</i> Loosely bound to outer or inner surfaces, easily extracted (e.g., Spectrin).<br/>&bull; <i>Integral (Intrinsic) Proteins:</i> Partially or totally buried within the lipid matrix, spanning the bilayer (Transmembrane channel/carrier proteins).<br/><br/><b style="color: #00B09B;">4. Transport Functions:</b> Passive diffusion of small non-polar molecules &bull; Facilitated diffusion via aquaporins &bull; Active transport via ATP-driven pumps (Na<sup>+</sup>/K<sup>+</sup>-ATPase).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q73. Detail Competitive Inhibition with classic Malonate example.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Inhibitor structurally mimics substrate, competing for active site; Malonate inhibits succinic dehydrogenase; increases Km, Vmax constant.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q98: Discuss Nucleic Acid Chemistry: Purines, Pyrimidines, Ribose vs Deoxyribose, and the Energy Roles of Nucleotides.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Nitrogenous Bases:</b><br/>&bull; <i>Purines:</i> Bicyclic 9-membered double-ring heterocyclic compounds (<b>Adenine and Guanine</b>).<br/>&bull; <i>Pyrimidines:</i> Monocyclic 6-membered single-ring heterocyclic compounds (<b>Cytosine, Thymine in DNA, Uracil in RNA</b>).<br/><br/><b style="color: #00B09B;">2. Pentose Sugars:</b> &beta;-D-Ribose in RNA (possesses -OH groups at both 2' and 3' carbons) vs &beta;-D-2-Deoxyribose in DNA (lacks oxygen at 2' carbon, having -H instead, rendering DNA chemically more stable against alkaline hydrolysis).<br/><br/><b style="color: #00B09B;">3. Nucleotide Triphosphates as Energy Couplers:</b> ATP, GTP, UTP, and CTP serve as metabolic energy carriers. ATP drives muscular contraction and active transport; GTP fuels protein synthesis translation; UTP drives glycogen/sucrose synthesis.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q74. Detail 6 IUBMB classes of enzymes with functions.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      1. Oxidoreductases (redox), 2. Transferases (group transfer), 3. Hydrolases (cleavage), 4. Lyases (double bond), 5. Isomerases (isomers), 6. Ligases (ATP joining).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q99: Discuss the Ecological and Economic Significance of Frogs in Natural Food Webs and Agriculture.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Keystone Biological Pest Controllers:</b> Frogs are voracious insectivores that consume millions of agricultural crop pests (locusts, beetles, caterpillars) and disease-transmitting insects (mosquitoes), saving billions of dollars in crop damage and curtailing the spread of malaria and dengue.<br/><b style="color: #00B09B;">2. Food Web Links:</b> Frogs serve as vital intermediate prey connecting aquatic/terrestrial invertebrates with apex vertebrate predators (snakes, birds of prey, monitor lizards).<br/><b style="color: #00B09B;">3. Environmental Bio-Indicators:</b> Because frogs possess permeable skin and undergo dual aquatic-terrestrial lifecycles, they are exceptionally sensitive to water pollution, pesticide residues, and fungal pathogens (Chytridiomycosis), serving as living early-warning indicators of ecosystem degradation.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q75. Detail co-factors: Apoenzyme, Holoenzyme, Prosthetic group, Co-enzyme, Metal ions.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Holoenzyme = Apoenzyme + Co-factor; Prosthetic (tight organic e.g. Heme), Co-enzyme (loose organic e.g. NAD), Metal ions (Zinc for Carboxypeptidase).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #00B09B; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q100: Construct an Exhaustive Master Synthesis Matrix correlating Frog Organ Systems, Chemical Analysis Fractions, Biomolecule Classes, and Enzyme Catalysis.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #00B09B;">1. Frog Structural Anatomy:</b> 3-chambered heart (sinus venosus + truncus arteriosus) &bull; Triple respiration (cutaneous, buccopharyngeal, pulmonary) &bull; Urinogenital duality (male vasa efferentia &rarr; Bidder's canal &rarr; urinogenital duct; female separate oviducts) &bull; Cloaca exit &bull; Metamorphosis via thyroxine.<br/><br/><b style="color: #00B09B;">2. Chemical Analysis:</b> Living tissue + Cl<sub>3</sub>CCOOH &rarr; Acid-Soluble Filtrate (18-800 Da micromolecules: amino acids, monosaccharides, nucleotides) vs Acid-Insoluble Retentate (&gt;10,000 Da macromolecules: proteins, nucleic acids, polysaccharides + vesicular lipids).<br/><br/><b style="color: #00B09B;">3. Biopolymer Linkages:</b> Proteins (peptide -CO-NH- bonds; 4 tiers) &bull; Nucleic acids (3'-5' phosphodiester bonds; B-DNA pitch 34 &Aring;) &bull; Polysaccharides (glycosidic bonds) &bull; Lipids (ester bonds in triglycerides; phospholipids in membrane bilayers).<br/><br/><b style="color: #00B09B;">4. Enzymes &amp; Metabolism:</b> Lowering of Activation Energy (Ea) &bull; Michaelis-Menten kinetics (Vmax &amp; Km) &bull; Competitive inhibition (malonate vs succinate dehydrogenase: Km increases, Vmax unchanged) &bull; 6 IUBMB classes &bull; Holoenzyme = Apoenzyme + Cofactor (prosthetic group, coenzyme, metal ion).
     </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q76. Explain why lipids are placed in retentate fraction despite low MW.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Cell membrane fragments form insoluble lipid vesicles during grinding, remaining in retentate.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q77. Compare Starch, Glycogen, and Cellulose.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Starch (plant storage helical), Glycogen (animal branched storage), Cellulose (plant cell wall unbranched structural).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q78. Explain structural difference between DNA and RNA.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      DNA (deoxyribose, thymine, double helix); RNA (ribose, uracil, single stranded).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q79. Explain effect of Temperature and pH on enzyme velocity.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Bell-shaped curves around optimum temperature and pH; extreme temperature/pH denatures tertiary protein structure.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q80. Explain significance of Km (Michaelis constant) in enzyme kinetics.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Km is substrate concentration at 1/2 Vmax; lower Km indicates higher substrate affinity of enzyme.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q81. Detail excretory system and nitrogenous waste of Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pair of compact red kidneys, ureters, urinary bladder opening into cloaca; ureotelic (excretes urea).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q82. Detail nervous system divisions and cranial nerves of Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      CNS (Brain + Spinal cord), PNS, ANS; 10 pairs of cranial nerves; medulla oblongata passes through foramen magnum.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q83. Detail external morphology of Frog skin and eyes.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Smooth moist slippery skin with mucus glands; eyes bulged with nictitating membrane; tympanum ear membrane.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q84. Explain ecological and economic importance of Frogs.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Controls agricultural insect pests, acts as indicator species for ecological health, vital link in food chain.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style="color: #00B09B;">Q85. Detail secondary metabolites categories table from NCERT.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); border-left: 3px solid #00B09B; padding: 10px 12px; border-radius: 4px;">
-      <b style="color: #00B09B;">Detailed Solution:</b><br>
-      Pigments (Carotenoids), Alkaloids (Morphine), Essential oils (Lemon grass), Toxins (Ricin), Lectins (Concanavalin A), Drugs (Vinblastine), Polymeric (Rubber).
-    </div>
-  </div>
-  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
-  <div style="background: rgba(0, 176, 155, 0.12); border: 1.5px solid #00B09B; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #00B09B; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
-    <p style="color: #00B09B; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Kinetics Audits)</p>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q86: Comprehensive Audit of Frog Morphology & Digestive System</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail external morphology, sexual dimorphism, and complete alimentary canal anatomy of Rana tigrina.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Streamlined head & trunk, moist skin, nictitating membrane, vocal sacs & nuptial pads in males. Alimentary canal: short, bifid tongue, stomach chyme, liver gallbladder, pancreas, cloaca.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct comparative anatomical key for Male vs Female Frog urinogenital systems.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Male: Testes ➔ Vasa efferentia ➔ Bidder's canal in kidney ➔ Urinogenital duct ➔ Cloaca. Female: Ovaries (separate from kidney) ➔ Oviduct ➔ Cloaca.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q87: Comprehensive Audit of Frog Respiration & Circulation</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail 3 modes of respiration (Cutaneous, Buccopharyngeal, Pulmonary) and 3-chambered heart architecture.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Cutaneous (moist skin in water/hibernation), Buccopharyngeal (oral lining), Pulmonary (lungs). Heart: 2 auricles + 1 ventricle, Sinus venosus, Conus arteriosus, nucleated RBCs.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail Hepatic and Renal Portal Systems in Frog and their physiological significance.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Hepatic portal system carries blood from gut to liver; Renal portal system carries blood from lower limbs to kidneys before heart.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q88: Comprehensive Audit of Biomolecules Chemical Analysis & Pool Division</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Trichloroacetic acid (Cl3CCOOH) tissue analysis method and compare Acid-Soluble Pool vs Retentate.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Acid-soluble pool (<1000 Da micromolecules: sugars, amino acids, nucleotides); Retentate (>10,000 Da macromolecules: proteins, polysaccharides, nucleic acids, membrane lipids).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Explain why lipids reside in retentate despite low molecular weight (<800 Da).</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Cell membrane phospholipids form insoluble vesicle aggregates during grinding, retained by cheesecloth.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q89: Carbohydrates & Glycosidic Bond Architecture</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure, classification, and chemical bonds of Monosaccharides, Disaccharides, and Polysaccharides.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Monosaccharides (Glucose, Ribose); Disaccharides (Sucrose, Maltose, Lactose); Polysaccharides linked by glycosidic bonds: Starch (plant helical storage), Glycogen (animal branched storage), Cellulose (unbranched plant wall), Chitin (exoskeleton).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Differentiate Reducing and Non-Reducing Sugars with Fehling's test mechanism.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Reducing sugars contain free aldehyde/ketone group (reduce Cu2+ to Cu+); Non-reducing sugars (Sucrose) have glycosidic bond masking functional group.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q90: Proteins Structural Levels & Peptide Bond Architecture</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of 20 amino acids, zwitterion formation, peptide bond (-CO-NH-), and 4 structural levels of proteins.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Alpha-carbon with -NH2, -COOH, -H, -R. Zwitterion dipolar form. Primary (sequence), Secondary (alpha-helix/beta-sheet), Tertiary (3D active site), Quaternary (Hb multimer).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare Collagen (Animal kingdom) and RuBisCO (Entire Biosphere) abundant proteins.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Collagen: triple-helical fibrous connective protein in animals; RuBisCO: carboxylase-oxygenase enzyme fixing CO2 in photosynthesis.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q91: Lipids Structure, Classification & Phospholipid Membranes</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of Triglycerides, Saturated vs Unsaturated Fatty Acids, Phospholipids (Lecithin), and Steroids.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Triglycerides (Glycerol + 3 Fatty acids); Saturated (Palmitic 16C) vs Unsaturated (Oleic); Lecithin phospholipid framing cell membranes; Steroids (Cholesterol).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail biological functions of lipids as energy reserves, insulation, and membrane barriers.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      High-density energy storage (9 kcal/g), subcutaneous heat insulation, selective permeability in cell membranes.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q92: Nucleic Acids & B-DNA Double Helix Model</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail structure of Nucleotides (Bases, Pentose sugar, Phosphate), Phosphodiester bonds, and B-DNA Double Helix.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Purines (A,G) & Pyrimidines (C,T,U) + Deoxyribose/Ribose + Phosphate. 3'-5' phosphodiester bonds. Antiparallel double helix with 34 Å pitch (10 bp/turn, 3.4 Å spacing).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare structural and functional differences between DNA and RNA.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      DNA: Deoxyribose, Thymine, double stranded, stable genetic blueprint. RNA: Ribose, Uracil, single stranded, protein synthesis messenger.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q93: Primary vs Secondary Metabolites Master Survey</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail definitions, functions, and distribution of Primary vs Secondary Metabolites.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Primary: essential metabolic roles in growth; Universal. Secondary: plant/microbial by-products (alkaloids, drugs, lectins, rubber) with defense & industrial value.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct comprehensive secondary metabolites table covering Pigments, Alkaloids, Lectins, Toxins, Drugs, and Polymeric substances.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Pigments (Carotenoids), Alkaloids (Morphine), Terpenoids (Monoterpenes), Essential Oils (Lemon grass), Toxins (Ricin, Abrin), Lectins (Concanavalin A), Drugs (Vinblastine, Curcumin), Polymers (Rubber, Gums).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q94: Enzyme Catalysis & Activation Energy Barrier Reduction</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail active site concept, ES complex formation, and lowering of Activation Energy (Ea).</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Substrate binds 3D active site crevice forming ES complex, stabilizing transition state and lowering activation energy barrier to accelerate reaction rate.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail lock & key vs induced fit models of enzyme action.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Lock & Key: rigid complementary active site; Induced Fit: substrate binding induces conformational change in active site.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q95: Enzyme Kinetics: Vmax, Km & Substrate Saturation</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Michaelis-Menten kinetics curve: Vmax, Km (Michaelis constant), and substrate concentration effect.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Velocity increases linearly at low [S], approaches Vmax at saturation. Km is [S] at 1/2 Vmax; lower Km indicates higher enzyme-substrate affinity.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Calculate Km and reaction rate changes under varying substrate concentrations.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      V = (Vmax * [S]) / (Km + [S]). When [S] = Km, V = Vmax / 2.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q96: Enzyme Inhibition Kinetics: Competitive vs Non-Competitive</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail Competitive Inhibition with Succinic Dehydrogenase inhibition by Malonate.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Inhibitor structurally mimics substrate, competing for active site. Malonate inhibits succinic dehydrogenase; increases Km, Vmax constant.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Compare Competitive and Non-Competitive Inhibition on Km and Vmax parameters.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Competitive: Km increases, Vmax unchanged. Non-Competitive: Km unchanged, Vmax decreases.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q97: 6 IUBMB Enzyme Classification Architecture</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail 6 IUBMB classes of enzymes with systematic naming and chemical reaction equations.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      1. Oxidoreductases (redox), 2. Transferases (group transfer), 3. Hydrolases (bond hydrolysis), 4. Lyases (double bond cleavage), 5. Isomerases (isomers), 6. Ligases (ATP joining).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail Co-factors: Apoenzyme, Holoenzyme, Prosthetic groups, Co-enzymes, and Metal ions.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Holoenzyme = Apoenzyme + Co-factor. Prosthetic group (tight organic e.g. Heme), Co-enzyme (loose organic e.g. NAD), Metal ions (Zinc for Carboxypeptidase).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q98: Frog Metamorphosis & Endocrine Regulation</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail developmental stages from fertilized egg ➔ aquatic Tadpole Larva ➔ terrestrial Adult Frog.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      External water fertilization ➔ ciliated herbivorous tadpole larva with gills & tail ➔ metamorphosis into carnivorous adult frog with lungs & legs.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Detail role of Thyroid gland and Thyroxin hormone in controlling metamorphosis.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Thyroxin triggers tail resorption, gill atrophy, lung development, and limb outgrowth during metamorphosis.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q99: Factors Affecting Enzyme Activity (Temperature & pH Kinetics)</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Detail effect of Temperature and pH on enzyme catalytic activity with bell-shaped curves.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Activity peaks at Optimum Temperature and Optimum pH. Low temp inactivates enzyme temporarily; high temp denatures tertiary protein structure.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Explain thermal stability of enzymes isolated from thermophilic organisms (e.g. Taq Polymerase).</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Thermophilic enzymes possess resistant tertiary structures stabilized by hydrophobic interactions and disulfide bonds.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(0, 176, 155, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style="color: #00B09B;">Q100: Master Synthesis: Unified Structural Organisation & Biomolecules Architecture</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(i) Synthesize complete framework connecting Frog Anatomy (Digestive, Respiratory, Circulatory, Urinogenital) ⟶ Cellular Biomolecules (Carbohydrates, Proteins, Lipids, DNA/RNA) ⟶ Enzymatic Control.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 8px 12px; border-left: 3px solid #00B09B; margin-bottom: 10px;">
-      Frog organ systems depend on metabolic energy generated by biomolecules; cellular enzymes accelerate biochemical reactions sustaining animal life.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style="color: #00B09B;">(ii) Construct diagnostic summary table connecting Frog organ systems, Biomolecule bonds, Metabolites, and Enzyme classes.</b></p>
-    <div style="background: rgba(0, 176, 155, 0.05); padding: 10px 12px; border-left: 3px solid #00B09B;">
-      Frog (3-chamber heart, 10 cranial nerves) | Bonds (Glycosidic, Peptide, Phosphodiester) | Metabolites (Vinblastine, Concanavalin A) | Enzymes (6 IUBMB classes, Km, Ea).
-    </div>
-  </div>
 </div>
 `;
+
+export const c11Zoo2Mcqs = [
+  {
+    "id": "c11-zoo-2-mcq-1",
+    "question": "In the male frog (Rana tigrina), spermatozoa pass from vasa efferentia into which specialized kidney canal?",
+    "options": [
+      "A):   Inguinal canal",
+      "B):   Bidder's canal",
+      "C):   Wolffian duct",
+      "D):   M&uuml;llerian duct"
+    ],
+    "correctAnswer": "b",
+    "explanation": "In male frogs, 10-12 vasa efferentia enter the kidney and communicate directly with Bidder's canal."
+  },
+  {
+    "id": "c11-zoo-2-mcq-2",
+    "question": "The heart of an adult frog consists of how many chambers?",
+    "options": [
+      "A):   Two chambers (1 atrium + 1 ventricle)",
+      "B):   Three chambers (2 atria + 1 ventricle)",
+      "C):   Four chambers (2 atria + 2 ventricles)",
+      "D):   One single chamber"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The frog heart possesses 3 chambers: two thin-walled atria and one thick-walled muscular ventricle."
+  },
+  {
+    "id": "c11-zoo-2-mcq-3",
+    "question": "The triangular accessory chamber on the dorsal surface of the frog's heart that receives venous blood is called:",
+    "options": [
+      "A):   Truncus arteriosus",
+      "B):   Sinus venosus",
+      "C):   Conus arteriosus",
+      "D):   Bulbus cordis"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Sinus venosus is the triangular dorsal receiving chamber collecting blood from three venae cavae."
+  },
+  {
+    "id": "c11-zoo-2-mcq-4",
+    "question": "During winter hibernation and summer aestivation, frogs respire exclusively through the:",
+    "options": [
+      "A):   Lungs (Pulmonary respiration)",
+      "B):   Moist skin (Cutaneous respiration)",
+      "C):   Buccal cavity (Buccopharyngeal respiration)",
+      "D):   Gills"
+    ],
+    "correctAnswer": "b",
+    "explanation": "During dormancy in burrows, the sole mode of gas exchange is diffusion across the moist vascular skin."
+  },
+  {
+    "id": "c11-zoo-2-mcq-5",
+    "question": "How many pairs of cranial nerves arise from the brain of a frog?",
+    "options": [
+      "A):   8 pairs",
+      "B):   10 pairs",
+      "C):   12 pairs",
+      "D):   31 pairs"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Amphibians (frogs) possess 10 pairs of cranial nerves, whereas reptiles, birds, and mammals possess 12 pairs."
+  },
+  {
+    "id": "c11-zoo-2-mcq-6",
+    "question": "The tongue of a frog is characterized by being:",
+    "options": [
+      "A):   Attached posteriorly and pointed",
+      "B):   Attached anteriorly and bifid (bilobed)",
+      "C):   Non-muscular and immovable",
+      "D):   Devoid of taste buds"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The frog's tongue is attached at the front of the lower jaw, bifid at the tip, and flicked out to capture prey."
+  },
+  {
+    "id": "c11-zoo-2-mcq-7",
+    "question": "Metamorphosis of a frog tadpole into an adult is biochemically controlled by the hormone:",
+    "options": [
+      "A):   Insulin",
+      "B):   Thyroxine",
+      "C):   Growth hormone",
+      "D):   Adrenaline"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Thyroid-secreted thyroxine (requiring iodine) triggers the metamorphic transformation of tadpoles."
+  },
+  {
+    "id": "c11-zoo-2-mcq-8",
+    "question": "During chemical tissue analysis, living tissue is ground with which acid?",
+    "options": [
+      "A):   Hydrochloric acid (HCl)",
+      "B):   Trichloroacetic acid (Cl<sub>3</sub>CCOOH)",
+      "C):   Sulfuric acid (H<sub>2</sub>SO<sub>4</sub>)",
+      "D):   Acetic acid (CH<sub>3</sub>COOH)"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Living tissue is homogenized in trichloroacetic acid to precipitate macromolecules from the soluble pool."
+  },
+  {
+    "id": "c11-zoo-2-mcq-9",
+    "question": "Which of the following biomolecules has a molecular weight under 800 Da but is found in the acid-insoluble retentate?",
+    "options": [
+      "A):   Glucose",
+      "B):   Lipids",
+      "C):   Amino acids",
+      "D):   Nucleotides"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Lipids are small molecules (&lt;800 Da) that form water-insoluble membrane vesicles trapped in the retentate."
+  },
+  {
+    "id": "c11-zoo-2-mcq-10",
+    "question": "The simplest amino acid lacking a chiral (asymmetric) carbon atom is:",
+    "options": [
+      "A):   Alanine",
+      "B):   Glycine",
+      "C):   Serine",
+      "D):   Valine"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Glycine has hydrogen (-H) as its variable R-group, meaning its &alpha;-carbon is bonded to two identical H atoms."
+  },
+  {
+    "id": "c11-zoo-2-mcq-11",
+    "question": "Amino acids in a polypeptide chain are covalently linked together by:",
+    "options": [
+      "A):   Glycosidic bonds",
+      "B):   Peptide bonds (-CO-NH-)",
+      "C):   Phosphodiester bonds",
+      "D):   Ester bonds"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Peptide bonds are covalent amide linkages formed between the &alpha;-carboxyl and &alpha;-amino groups."
+  },
+  {
+    "id": "c11-zoo-2-mcq-12",
+    "question": "The functional three-dimensional catalytic active site of an enzyme is formed at which structural level?",
+    "options": [
+      "A):   Primary structure",
+      "B):   Secondary structure",
+      "C):   Tertiary structure",
+      "D):   Quaternary structure"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Tertiary structure involves overall 3D globular folding that brings distant amino acids together to form the active site."
+  },
+  {
+    "id": "c11-zoo-2-mcq-13",
+    "question": "Adult human hemoglobin (Hb) displays quaternary structure consisting of:",
+    "options": [
+      "A):   One polypeptide chain",
+      "B):   Two identical chains",
+      "C):   Four subunits (two &alpha; chains and two &beta; chains)",
+      "D):   Six subunits"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Human adult hemoglobin is a tetrameric protein composed of two &alpha;-globin and two &beta;-globin subunits."
+  },
+  {
+    "id": "c11-zoo-2-mcq-14",
+    "question": "Starch gives an intense deep blue color with Iodine solution because:",
+    "options": [
+      "A):   It is a linear straight chain",
+      "B):   Its helical secondary structure traps iodine molecules in its interior",
+      "C):   It is a reducing sugar",
+      "D):   It contains nitrogen"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Amylose in starch forms a helical coil that accommodates iodine molecules to form a deep blue complex."
+  },
+  {
+    "id": "c11-zoo-2-mcq-15",
+    "question": "Cellulose does not give a blue color with Iodine because:",
+    "options": [
+      "A):   It is an animal polysaccharide",
+      "B):   It does not contain complex helices and cannot hold iodine",
+      "C):   It is digested by iodine",
+      "D):   It contains &alpha;-glucose"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Cellulose consists of unbranched straight &beta;-1,4 chains that lack helical coils to entrap iodine."
+  },
+  {
+    "id": "c11-zoo-2-mcq-16",
+    "question": "Chitin, found in fungal cell walls and arthropod exoskeletons, is a homopolymer of:",
+    "options": [
+      "A):   D-Glucose",
+      "B):   N-acetylglucosamine (NAG)",
+      "C):   D-Fructose",
+      "D):   Galactose"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Chitin is a complex structural polysaccharide composed of repeating N-acetylglucosamine (NAG) units."
+  },
+  {
+    "id": "c11-zoo-2-mcq-17",
+    "question": "Palmitic acid contains how many total carbon atoms including the carboxyl carbon?",
+    "options": [
+      "A):   14 carbons",
+      "B):   16 carbons",
+      "C):   18 carbons",
+      "D):   20 carbons"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Palmitic acid is a saturated fatty acid with chemical formula CH<sub>3</sub>(CH<sub>2</sub>)<sub>14</sub>COOH (16 carbons)."
+  },
+  {
+    "id": "c11-zoo-2-mcq-18",
+    "question": "In the Watson-Crick B-DNA double helix, the pitch of one complete helical turn is:",
+    "options": [
+      "A):   20 &Aring;",
+      "B):   34 &Aring; (3.4 nm)",
+      "C):   3.4 &Aring;",
+      "D):   100 &Aring;"
+    ],
+    "correctAnswer": "b",
+    "explanation": "B-DNA has a helical pitch of 34 &Aring; with 10 base pairs per turn, yielding a 3.4 &Aring; rise per base pair."
+  },
+  {
+    "id": "c11-zoo-2-mcq-19",
+    "question": "In DNA, Guanine pairs with Cytosine through how many hydrogen bonds?",
+    "options": [
+      "A):   One",
+      "B):   Two",
+      "C):   Three",
+      "D):   Four"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Guanine pairs complementarily with Cytosine via three hydrogen bonds (G &equiv; C)."
+  },
+  {
+    "id": "c11-zoo-2-mcq-20",
+    "question": "Which of the following is a secondary metabolite categorized as a Lectin?",
+    "options": [
+      "A):   Morphine",
+      "B):   Concanavalin A",
+      "C):   Vinblastine",
+      "D):   Ricin"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Concanavalin A is a carbohydrate-binding protein categorized as a Lectin in NCERT Table 9.3."
+  },
+  {
+    "id": "c11-zoo-2-mcq-21",
+    "question": "Vinblastine and Curcumin are secondary metabolites used medically as:",
+    "options": [
+      "A):   Toxins",
+      "B):   Drugs (anticancer and anti-inflammatory)",
+      "C):   Alkaloids",
+      "D):   Polymeric pigments"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Vinblastine (anticancer) and Curcumin (anti-inflammatory) are classified as Drugs in NCERT Table 9.3."
+  },
+  {
+    "id": "c11-zoo-2-mcq-22",
+    "question": "Enzymes catalyze chemical reactions by:",
+    "options": [
+      "A):   Increasing activation energy",
+      "B):   Lowering the activation energy (Ea) barrier",
+      "C):   Altering reaction equilibrium &Delta;G",
+      "D):   Changing product composition"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Enzymes lower the activation energy required to achieve the transition state, speeding up the reaction."
+  },
+  {
+    "id": "c11-zoo-2-mcq-23",
+    "question": "A competitive inhibitor resembles the substrate and affects enzyme kinetics by:",
+    "options": [
+      "A):   Decreasing Vmax while Km remains unchanged",
+      "B):   Increasing Km while Vmax remains unchanged",
+      "C):   Decreasing both Vmax and Km",
+      "D):   Increasing both Vmax and Km"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Competitive inhibitors compete for the active site; Vmax is unaltered (overcome by substrate), but Km increases."
+  },
+  {
+    "id": "c11-zoo-2-mcq-24",
+    "question": "Malonate inhibits which enzyme by competing directly with succinate?",
+    "options": [
+      "A):   Hexokinase",
+      "B):   Succinate Dehydrogenase",
+      "C):   Carbonic anhydrase",
+      "D):   Pepsin"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Malonate closely resembles succinate in chemical structure and competitively inhibits Succinate Dehydrogenase."
+  },
+  {
+    "id": "c11-zoo-2-mcq-25",
+    "question": "The non-protein organic cofactor tightly and permanently bound to an apoenzyme is called a:",
+    "options": [
+      "A):   Coenzyme",
+      "B):   Prosthetic Group (e.g., Heme)",
+      "C):   Metal activator",
+      "D):   Isozyme"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Prosthetic groups are organic compounds permanently bound to the apoenzyme (e.g., heme in catalase)."
+  }
+];

@@ -54,6 +54,7 @@ For ALL Class 11 and Class 12 chapters across all subjects (**Physics, Chemistry
 2. **100% Exact Official Syllabus Headings**:
    - Use official syllabus headings word-for-word as main `<h2>` section titles.
    - Organize every section into Roman-numbered subtopics `(i), (ii), (iii)` as `<h3>` / `<h4>` subtitles.
+   - **Theme Color for Subtopics & Colon-Term Headings:** All bold subtopics, key terms, and item titles that end with a colon (`:`) (e.g., `<b style="color: ${themeColor};">(i) Calyx:</b>`, `<b style="color: ${themeColor};">Sporopollenin:</b>`, `<b style="color: ${themeColor};">1. Autogamy:</b>`) MUST strictly be styled with the chapter's `themeColor`.
 3. **Quick Glossary Card**:
    - Single-frame "Quick Glossary & Basic Definitions" card at the top of the Overview section summarizing key terms, SI units, and dimensional formulas.
 4. **Clean Standalone Diagram Cards (Zero Duplicate Top Titles)**:

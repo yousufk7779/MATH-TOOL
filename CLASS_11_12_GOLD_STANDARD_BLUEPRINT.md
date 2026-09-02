@@ -27,6 +27,7 @@
   </h2>
   ```
 - Subtopics must be organized into Roman numerals `(i), (ii), (iii)` as `<h3>` subtitles.
+- **Theme Color for Subtopics & Colon-Term Headings**: All bold subtopics, key terms, and item headers ending with a colon (`:`) (e.g. `<b style="color: ${themeColor};">(i) Calyx:</b>`, `<b style="color: ${themeColor};">Sporopollenin:</b>`, `<b style="color: ${themeColor};">1. Autogamy:</b>`) MUST strictly be rendered in the chapter's `themeColor`.
 
 ### 2. Single-Frame Quick Glossary Card
 - Must be placed at the very top of the Reference Overview:

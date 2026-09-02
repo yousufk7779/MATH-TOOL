@@ -1,1258 +1,1350 @@
-// Class 11 Chemistry Chapter 2 - Structure of Atom
-// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// Class 11 Chemistry Chapter 2: Structure of Atom
+// Gold Standard Reference Textbook & 3-Tab Architecture
+// Subject: Chemistry | Class: 11 | Code: c11-chem-2
 
 export const c11Chem2HtmlOverview = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER AT TOP) -->
-  <div style="background: rgba(38, 198, 218, 0.05); border: 1.5px solid #26C6DA; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: #26C6DA; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #26C6DA; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 2: Structure of Atom</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>1. Electron:</b> Negatively charged subatomic particle (charge e = -1.602 × 10<sup>-19</sup> C, rest mass m<sub>e</sub> = 9.109 × 10<sup>-31</sup> kg).
+  <!-- Quick Glossary Card with Chapter Subtitle -->
+  <div style="background: linear-gradient(135deg, rgba(38, 198, 218, 0.12), rgba(0, 131, 143, 0.12)); border: 1.5px solid rgba(38, 198, 218, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p style="color: #26C6DA; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 2: Structure of Atom</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">Electron (e<sup>-</sup>):</b> Fundamental subatomic particle carrying unit negative charge (-1.6022 &times; 10<sup>-19</sup> C) with rest mass 9.10938 &times; 10<sup>-31</sup> kg.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>2. Proton:</b> Positively charged subatomic particle present in atomic nucleus (charge = +1.602 × 10<sup>-19</sup> C, mass m<sub>p</sub> = 1.672 × 10<sup>-27</sup> kg).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">Proton (p<sup>+</sup>) &amp; Neutron (n<sup>0</sup>):</b> Nuclear baryons; proton carries +1.6022 &times; 10<sup>-19</sup> C (mass 1.6726 &times; 10<sup>-27</sup> kg); neutron is electrically neutral (mass 1.6749 &times; 10<sup>-27</sup> kg).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>3. Neutron:</b> Neutral subatomic particle present in atomic nucleus discovered by Chadwick (mass m<sub>n</sub> = 1.675 × 10<sup>-27</sup> kg).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">Planck's Quantum Theory:</b> Radiant energy is emitted or absorbed discontinuously in discrete packets called quanta (photons): E = h&nu; = hc / &lambda;.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>4. Atomic Number (Z):</b> Number of protons present in the nucleus of an atom, defining element identity.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">de Broglie Wavelength:</b> All material particles possess wave-particle duality with matter wavelength &lambda; = h / p = h / (mv).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>5. Mass Number (A):</b> Total number of nucleons (protons + neutrons) present in the atomic nucleus (A = Z + N).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">Heisenberg Uncertainty Principle:</b> Impossible to determine simultaneously both the exact position and exact momentum of a microscopic particle: &Delta;x &bull; &Delta;p &ge; h / (4&pi;).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>6. Isotopes:</b> Atoms of the same element having same Atomic Number (Z) but different Mass Numbers (A) (e.g. <sup>1</sup>H, <sup>2</sup>H, <sup>3</sup>H).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>7. Isobars:</b> Atoms of different elements having different Atomic Numbers (Z) but same Mass Number (A) (e.g. <sup>40</sup>Ar and <sup>40</sup>Ca).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>8. Isoelectronic Species:</b> Atoms, molecules, or ions possessing the exact same number of electrons (e.g. N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Ne, Na<sup>+</sup>, Mg<sup>2+</sup> all have 10 e<sup>-</sup>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>9. Photoelectric Effect:</b> Phenomenon of instantaneous ejection of electrons from metal surface when light of suitable threshold frequency hits it.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>10. Planck Quantum Theory:</b> Radiant energy is absorbed or emitted discontinuously in discrete packets called quanta (photons, E = hν).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>11. Bohr Radius (r<sub>1</sub>):</b> Radius of the innermost stationary orbit of Hydrogen atom (n=1), equal to 0.529 Å (0.0529 nm).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>12. Rydberg Formula:</b> Mathematical equation calculating wave numbers of spectral lines in Hydrogen emission spectrum (ν̅ = R<sub>H</sub> [<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>1</sub><sup>2</sup></span></span> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>2</sub><sup>2</sup></span></span>]).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>13. de Broglie Wavelength:</b> Dual wave-particle wavelength associated with any moving microscopic particle (λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>14. Uncertainty Principle:</b> It is impossible to measure simultaneously both exact position and exact momentum of a microscopic particle (Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>15. Atomic Orbital:</b> 3D space region around atomic nucleus where probability of finding an electron is maximum (≥90%).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>16. Principal Quantum Number (n):</b> Specifies main energy shell, average distance from nucleus, and total electron capacity (2n<sup>2</sup>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>17. Azimuthal Quantum Number (l):</b> Specifies subshell shape (s, p, d, f) and orbital angular momentum (l = 0 to n-1).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>18. Aufbau Principle:</b> Electrons fill atomic orbitals in order of increasing orbital energy level (lowest (n+l) energy filled first).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>19. Pauli Exclusion Principle:</b> No two electrons in an atom can possess the exact same set of all four quantum numbers.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #26C6DA; border-radius: 6px;">
-        <b style='color: #26C6DA;'>20. Hund's Rule of Maximum Multiplicity:</b> Electron pairing in degenerate orbitals occurs only after each orbital in subshell is singly occupied with parallel spins.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #26C6DA;">Atomic Orbital:</b> A 3D spatial region around the atomic nucleus where the probability density (&psi;<sup>2</sup>) of finding an electron is maximum (&ge; 90-95%).
       </div>
     </div>
   </div>
 
+  <!-- SECTION 1 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">
+    1. Discovery of Sub-atomic Particles: Electron, Proton and Neutron, Atomic Number, Isotopes and Isobars
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Discovery of Sub-atomic Particles: Electron, Proton and Neutron, Atomic Number, Isotopes and Isobars</h2>
-
-  <!-- 3D IMAGE 1 -->
+  <!-- PRESERVED IMAGE 1 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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mY9ST30yg0S2CiiikAUHoKKKYwooopAFFFFABRRRTAKKKKQBRRRTEFFFFABRRRQAUUUUAFWbGdIXlWXOyWJoyVGSM9D9QKrUUgNa01trZ4nETHso0UKHG1ihJBIIPj3YPnzTBq3sB2tw9x2YiLMcoVDbuVx17uuMVmUUUKka8usLcRM0sKJMIZIwY1wHZ2ySfgCfnWRRRRQ0qCiiimAUUUUAFFFFABRRRSGFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRTAKKKKACiiigApaSimAtWbCdIJn7XOySJ42IGSNwxn64qrmlzQI07TV/V5IW7Jz2USoAHADFWLAnIPj8R40yPVGV4naIMySSucHGS4x9lZ1FKkFFq+nSYwJFkpDCsYJGCTySfqTVXNFFABRRRQMKKKKACiiigAooooEFFFFAwooopAFFFFABRRRQAUtFFMBKKKKACloooASiiikAUUUUAFLRRQAlFFFMAooooAKKKKACloopAFJRRQAUUUUALSUUUAFLRRQAlLRRQAlLRRQAUUUUAFFFFABSUUUAFFFFABRRRQAUUUUAFFFFMAooooAKKKKACiiigAooooAKKKKACiiigAooopAFFFFABRRRQAUUUUAFFFFAj//Z" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(38, 198, 218, 0.35); border: 1.5px solid #26C6DA;" alt="3D Subatomic Particles and Cathode Ray Discharge" />
     <p style="color: #26C6DA; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 2.1: 3D Cathode Ray Discharge Tube Experiment and Subatomic Particle Discovery</p>
   </div>
 
-  <p>Dalton's atomic hypothesis postulating that atoms are indivisible sphere units held sway throughout the 19th century. However, groundbreaking electrical discharge experiments conducted by Michael Faraday, J.J. Thomson, Ernest Rutherford, and James Chadwick near the turn of the 20th century shattered the classical view, revealing that the atom is a complex dynamic architecture composed of subatomic constituent particles: electrons, protons, and neutrons.</p>
+  
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Cathode Ray Discharge Tube Experiments & Discovery of Electron</h3>
-  <p>In 1897, English physicist J.J. Thomson investigated electrical conductivity of gases at extremely low pressures (10<sup>-2</sup> to 10<sup>-4</sup> atm) in a glass cathode ray discharge tube fitted with high voltage electrodes (10,000 V). When high voltage was applied across evacuated gas, glowing rays streamed from negative Cathode toward positive Anode:</p>
+  <p>
+    The indivisible billiard-ball model of the atom proposed by John Dalton in 1808 was challenged by experimental breakthroughs in electrical discharge through rarefied gases in late nineteenth century. Michael Faraday's electrolysis experiments and subsequent cathode ray tube studies conclusively revealed that atoms are composed of subatomic charged entities: electrons, protons, and neutrons.
+  </p>
 
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #26C6DA; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Properties of Cathode Rays & Charge-to-Mass Ratio (e/m)</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li>1. Cathode rays travel in straight lines perpendicular to cathode surface, casting sharp shadows of opaque objects placed in their path.</li>
-      <li>2. They possess mechanical kinetic energy, rotating lightweight mica paddle wheels placed in their path.</li>
-      <li>3. They are deflected toward positive electrical plate in electric fields and perpendicular in magnetic fields, proving they consist of <b>negatively charged particles</b>.</li>
-      <li>4. J.J. Thomson measured their fundamental charge-to-mass ratio:<br>
-      <span style="color: #FFF; font-weight: bold; display: block; text-align: center; margin: 6px 0;"><span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">e</span><span style="display:block; padding:0 4px;">m<sub>e</sub></span></span> = 1.758820 × 10<sup>11</sup> C kg<sup>-1</sup></span>
-      Crucially, the e/m<sub>e</sub> ratio was completely independent of the gas inside the tube or cathode metal material, establishing that <b>Electrons are universal constituent particles of all matter</b>.</li>
-      <li>5. Robert Millikan (1909 Oil Drop Experiment) measured fundamental electronic charge <b>e = 1.6022 × 10<sup>-19</sup> C</b>, yielding electron rest mass <b>m<sub>e</sub> = 9.1094 × 10<sup>-31</sup> kg</b> (<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">1837</span></span>th mass of H atom).</li>
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Cathode Ray Discharge Tube Experiments &amp; Discovery of Electron</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      When an ultra-high electrical potential difference (10,000 to 20,000 Volts) is applied across two metal electrodes sealed inside an evacuated glass tube containing gas at very low pressure (~10<sup>-2</sup> to 10<sup>-4</sup> mm Hg), streams of luminous radiations originate from the negative electrode (cathode) traveling toward the positive electrode (anode). These rays are termed <b>Cathode Rays</b>.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #26C6DA;">Properties of Cathode Rays:</b>
+        <br/>1. Travel in straight lines perpendicular to the cathode surface, casting sharp shadows of opaque objects placed in their path.
+        <br/>2. Possess mechanical kinetic energy: rotate light paddle wheels placed in their trajectory.
+        <br/>3. Deflected toward the positive plate in an electric field and perpendicular to applied magnetic fields, proving they consist of negatively charged subatomic particles named <b>electrons</b>.
+        <br/>4. Produce fluorescent green glow when striking zinc sulfide (ZnS) phosphorescent screens.
+        <br/>5. Produce penetrating X-rays when striking high-atomic-mass refractory metal targets (like Tungsten or Molybdenum).
+      </li>
+      <li><b style="color: #26C6DA;">J.J. Thomson's Charge-to-Mass Ratio (e/m<sub>e</sub>, 1897):</b> Thomson applied mutually perpendicular electric and magnetic fields, balancing deflections to measure the specific charge of electron:
+        <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+          <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">e</span><span style="padding:0 2px;">m<sub>e</sub></span></span> = 1.758820 &times; 10<sup>11</sup> C kg<sup>-1</sup>
+        </span>
+        <br/>Crucially, this ratio is completely independent of the gas enclosed and electrode material, proving electrons are universal constituents of all matter.
+      </li>
+      <li><b style="color: #26C6DA;">Millikan's Oil Drop Experiment (1909):</b> Measured single electron charge: e = -1.6022 &times; 10<sup>-19</sup> C. Hence, rest mass m<sub>e</sub> = 9.10938 &times; 10<sup>-31</sup> kg (approx. <sup>1</sup>/<sub>1837</sub> of hydrogen atom mass).</li>
     </ul>
   </div>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Discovery of Proton (Anode Rays) and Neutron</h3>
-  <p>• <b>Discovery of Proton (Eugen Goldstein, 1886):</b> Using a perforated cathode discharge tube, Goldstein discovered glowing streams traveling in opposite direction behind perforated cathode. These <b>Anode / Canal Rays</b> consisted of positively charged gaseous ions. Unlike cathode rays, the charge-to-mass ratio (e/m) of anode rays depended on the identity of gas inside tube. When Hydrogen gas was used, the lightest positive particle was obtained, named <b>Proton</b> (charge = +1.602 × 10<sup>-19</sup> C, mass m<sub>p</sub> = 1.6726 × 10<sup>-27</sup> kg).<br>
-  • <b>Discovery of Neutron (James Chadwick, 1932):</b> Chadwick bombarded a thin sheet of Beryllium with high-energy α-particles (<sup>4</sup>He<sup>2+</sup>). Neutral radiation carrying no electric charge was emitted, capable of knocking protons out of paraffin wax:<br>
-  <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;"><sup>9</sup>Be + <sup>4</sup>He ⟶ <sup>12</sup>C + <sup>1</sup>n (Neutron)</span>
-  Chadwick named these neutral particles <b>Neutrons</b> (mass m<sub>n</sub> = 1.6749 × 10<sup>-27</sup> kg, slightly heavier than proton).</p>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Discovery of Proton (Anode Rays) and Neutron</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #26C6DA;">Discovery of Proton (Eugen Goldstein, 1886):</b> Using a perforated cathode in a discharge tube, Goldstein detected rays traveling in the opposite direction from anode to cathode through the perforations, producing red fluorescence. Named <b>Canal Rays (Anode Rays)</b> by Goldstein and characterized by Wilhelm Wien and J.J. Thomson.
+      <br/>Unlike cathode rays, the charge-to-mass ratio (e/m) of anode rays depends on the nature of gas inside the tube. For Hydrogen gas, e/m is maximum; the resulting lightest positive fundamental particle was named the <b>Proton</b> (charge = +1.6022 &times; 10<sup>-19</sup> C, mass = 1.67262 &times; 10<sup>-27</sup> kg = 1.00727 u).
+    </li>
+    <li><b style="color: #26C6DA;">Discovery of Neutron (James Chadwick, 1932):</b> Chadwick bombarded thin beryllium foil with energetic alpha particles (<sup>4</sup><sub>2</sub>He), observing emission of highly penetrating neutral radiations with mass slightly greater than proton:
+      <br/><i>Nuclear Reaction:</i> <sup>9</sup><sub>4</sub>Be + <sup>4</sup><sub>2</sub>He &rarr; <sup>12</sup><sub>6</sub>C + <sup>1</sup><sub>0</sub>n.
+      <br/>The neutral particle was termed the <b>Neutron</b> (charge = 0, mass = 1.67493 &times; 10<sup>-27</sup> kg = 1.00866 u).
+    </li>
+  </ul>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Atomic Number (Z), Mass Number (A), Isotopes, Isobars & Isoelectronic Species</h3>
-  <p>• <b>Atomic Number (Z):</b> Number of protons in atomic nucleus. In neutral atom, Z = number of electrons.<br>
-  • <b>Mass Number (A):</b> Total number of nucleons (protons + neutrons) in nucleus (A = Z + N).<br>
-  • <b>Isotopes:</b> Species having same Atomic Number Z but different Mass Numbers A (e.g. Protium <sup>1</sup>H, Deuterium <sup>2</sup>H, Tritium <sup>3</sup>H). Same chemical properties, slightly different physical properties.<br>
-  • <b>Isobars:</b> Species having different Z but same A (e.g. <sup>40</sup>Ar, <sup>40</sup>K, <sup>40</sup>Ca).<br>
-  • <b>Isoelectronic Species:</b> Atoms/ions sharing identical total electron counts (e.g. N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Ne, Na<sup>+</sup>, Mg<sup>2+</sup>, Al<sup>3+</sup> all have 10 e<sup>-</sup>). Size decreases with increasing nuclear charge Z!</p>
-
-
-  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">2. Thomson's Model and Its Limitations, Rutherford's Model and Its Limitations</h2>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Thomson's Plum Pudding Model and Its Failure</h3>
-  <p>In 1898, J.J. Thomson proposed the first formal atomic model, portraying the atom as a solid sphere of uniform positive electrical charge (radius ~10<sup>-10</sup> m) in which negatively charged electrons were embedded like seeds in a watermelon or raisins in a plum pudding. While Thomson's model explained overall electrical neutrality of matter, it failed completely because it could not explain electrostatic stability or large-angle scattering of α-particles.</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Rutherford's Alpha Particle Scattering Experiment & Nuclear Model</h3>
-  <p>In 1911, Ernest Rutherford, Hans Geiger, and Ernest Marsden directed a beam of high-energy α-particles (<sup>4</sup>He<sup>2+</sup>) from a Radioactive source onto an ultrathin Gold foil (100 nm thick) surrounded by a circular Zinc sulfide (ZnS) fluorescent screen:</p>
-
-  <div style="background: rgba(0,0,0,0.3); border-left: 4px solid #26C6DA; padding: 12px 14px; border-radius: 6px; margin: 14px 0;">
-    <b style='color: #26C6DA;'>Experimental Observations & Revolutionary Conclusions:</b><br>
-    1. <b>Observation:</b> >99.9% of α-particles passed straight through gold foil undeviated.<br>
-       <i>Conclusion:</i> Most of the space inside an atom is completely empty!<br>
-    2. <b>Observation:</b> A tiny fraction (~1 in 8,000) was deflected by small and large angles.<br>
-       <i>Conclusion:</i> Positive charge is concentrated in a tiny dense central volume.<br>
-    3. <b>Observation:</b> Extremely rare α-particles (~1 in 20,000) bounced straight back by 180°.<br>
-       <i>Conclusion:</i> Entire mass and positive charge of atom is concentrated in a tiny core called <b>Nucleus</b> (radius ~10<sup>-15</sup> m, 100,000 times smaller than atom!).
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Atomic Number (Z), Mass Number (A), Isotopes, Isobars &amp; Isoelectronic Species</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #26C6DA;">Atomic Number (Z):</b> Total number of protons in the nucleus of an atom (= number of orbital electrons in a neutral atom). Established by H.G.J. Moseley's X-ray frequency law: &radic;&nu; = a(Z - b).</li>
+      <li><b style="color: #26C6DA;">Mass Number (A):</b> Total number of nucleons (protons + neutrons) in the nucleus: <b>A = Z + N</b>, where N is neutron count.</li>
+      <li><b style="color: #26C6DA;">Isotopes:</b> Atoms of the same element having identical atomic number (Z) but different mass numbers (A) due to different neutron numbers (e.g., Protium <sup>1</sup><sub>1</sub>H, Deuterium <sup>2</sup><sub>1</sub>H, Tritium <sup>3</sup><sub>1</sub>H; <sup>35</sup><sub>17</sub>Cl and <sup>37</sup><sub>17</sub>Cl). Possess identical chemical properties but slightly different physical properties.</li>
+      <li><b style="color: #26C6DA;">Isobars:</b> Atoms of different chemical elements having identical mass number (A) but different atomic numbers (Z) (e.g., <sup>40</sup><sub>18</sub>Ar, <sup>40</sup><sub>19</sub>K, and <sup>40</sup><sub>20</sub>Ca). Differ widely in chemical reactivity.</li>
+      <li><b style="color: #26C6DA;">Isotones:</b> Atoms of different elements having identical number of neutrons (N = A - Z) (e.g., <sup>14</sup><sub>6</sub>C and <sup>16</sup><sub>8</sub>O both have 8 neutrons).</li>
+      <li><b style="color: #26C6DA;">Isoelectronic Species:</b> Atoms, molecules, or ions having identical total numbers of electrons (e.g., N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Ne, Na<sup>+</sup>, Mg<sup>2+</sup>, Al<sup>3+</sup> all contain exactly 10 electrons).</li>
+    </ul>
   </div>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Drawbacks & Limitations of Rutherford's Model</h3>
-  <p>Rutherford pictured electrons orbiting the positive nucleus in circular paths like planets orbiting the Sun. However, classical Maxwellian electrodynamics dictates that an accelerating charged particle (orbiting electron undergoes continuous centripetal acceleration) MUST continuously radiate electromagnetic energy. Losing energy, the electron would spiral inward and collapse into the nucleus within 10<sup>-8</sup> seconds! Thus, Rutherford's model could NOT explain electrostatic atomic stability or discrete line spectra of Hydrogen.</p>
+  <!-- SECTION 2 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    2. Thomson's Model and Its Limitations, Rutherford's Model and Its Limitations
+  </h2>
 
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Thomson's Plum Pudding Model and Its Failure</h3>
+  <p>
+    In 1898, J.J. Thomson proposed the first atomic model, visualizing the atom as a spherical cloud of uniform positive charge (radius ~10<sup>-10</sup> m) within which negatively charged electrons are embedded like plums in a pudding or seeds in a watermelon.
+    <br/>&bull; <b style="color: #26C6DA;">Failure:</b> Could not explain atomic line spectra, nor could it explain the large-angle scattering of alpha particles observed in Rutherford's experiments.
+  </p>
 
-  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">3. Bohr's Model and Its Limitations, Concept of Shells and Subshells</h2>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Rutherford's Alpha Particle Scattering Experiment &amp; Nuclear Model</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Geiger and Marsden (under Ernest Rutherford, 1911) bombarded an ultra-thin gold foil (~100 nm thickness) with collimated high-energy alpha particles (<sup>4</sup><sub>2</sub>He<sup>2+</sup>) emitted from radioactive Radium.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #26C6DA;">Experimental Observations:</b>
+        <br/>1. Over 99.9% of alpha particles passed straight through the foil undeflected.
+        <br/>2. A small fraction (~1 in 8000) suffered large angular deflections (> 90&deg;).
+        <br/>3. An extraordinarily tiny fraction (~1 in 20,000) rebounded back along their original path (&theta; &approx; 180&deg;).
+      </li>
+      <li><b style="color: #26C6DA;">Rutherford's Conclusions &amp; Planetary Model:</b>
+        <br/>1. Most of the atom is empty space.
+        <br/>2. All positive charge and virtually the entire atomic mass are concentrated in an extraordinarily tiny central core termed the <b>Nucleus</b> (nuclear radius ~10<sup>-15</sup> m vs atomic radius ~10<sup>-10</sup> m; nuclear volume is ~10<sup>-15</sup> of atomic volume).
+        <br/>3. Electrons revolve around the nucleus in circular orbits like planets around the Sun, held by electrostatic Coulombic attraction: F<sub>e</sub> = F<sub>c</sub> &rArr; (1 / 4&pi;&epsilon;<sub>0</sub>) (Z e<sup>2</sup> / r<sup>2</sup>) = m<sub>e</sub> v<sup>2</sup> / r.
+      </li>
+    </ul>
+  </div>
 
-  <!-- 3D IMAGE 2 -->
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Drawbacks &amp; Limitations of Rutherford's Model</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #26C6DA;">1. Inability to Explain Atomic Stability (Maxwell's Classical Electromagnetic Theory):</b> According to Maxwell, an accelerated charged particle must continuously radiate electromagnetic energy. An orbital electron undergoing centripetal acceleration should continuously lose energy, spiraling inward and collapsing into the nucleus in approximately 10<sup>-8</sup> seconds. Real atoms are exceptionally stable.</li>
+    <li><b style="color: #26C6DA;">2. Inability to Explain Atomic Line Spectra:</b> If electron energy loss were continuous, the atom should emit a continuous spectrum; experimentally, atoms emit sharp, discrete line spectra characteristic of specific frequencies.</li>
+    <li><b style="color: #26C6DA;">3. Electronic Structure:</b> Failed to explain orbital distribution and energies of electrons.</li>
+  </ul>
+
+  <!-- SECTION 3 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    3. Bohr's Model and Its Limitations, Concept of Shells and Subshells
+  </h2>
+
+  <!-- PRESERVED IMAGE 2 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(38, 198, 218, 0.35); border: 1.5px solid #26C6DA;" alt="3D Bohr Atom Model and Energy Level Transitions" />
     <p style="color: #26C6DA; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 2.2: 3D Visualization of Bohr Quantum Energy Levels and Hydrogen Line Spectra Transitions</p>
   </div>
 
-  <p>In 1913, Danish physicist Niels Bohr modified Rutherford's planetary model by incorporating Planck's quantum concept to resolve atomic instability and hydrogen spectral lines.</p>
+  
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Postulates of Bohr's Quantum Model of Atom</h3>
-  <ol style="padding-left: 20px; line-height: 1.8;">
-    <li>Electrons revolve around positive nucleus only in certain specific non-radiating circular paths called <b>Stationary Orbits (Shells K, L, M, N)</b>.</li>
-    <li><b>Quantization of Angular Momentum:</b> An electron can revolve only in those orbits where its orbital angular momentum (L = m v r) is an integral multiple of <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">2π</span></span>:<br>
-    <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;">m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span> &nbsp;&nbsp;&nbsp;&nbsp; (n = 1, 2, 3...)</span></li>
-    <li>Energy is neither absorbed nor emitted as long as an electron remains in a stationary orbit.</li>
-    <li><b>Quantum Transition Condition:</b> When an electron absorbs a photon photon quantum, it jumps from lower orbit (n<sub>1</sub>) to higher orbit (n<sub>2</sub>). When returning, photon of frequency ν is emitted:<br>
-    <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;">ΔE = E<sub>2</sub> - E<sub>1</sub> = h ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h c</span><span style="display:block; padding:0 4px;">λ</span></span></span></li>
-  </ol>
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Postulates of Bohr's Quantum Model of Atom</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ol style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #26C6DA;">Postulate 1 (Stationary Orbits):</b> Electrons revolve around the nucleus only in certain discrete, non-radiating circular orbits called stationary states or principal energy shells (n = 1, 2, 3, 4... or K, L, M, N...).</li>
+      <li><b style="color: #26C6DA;">Postulate 2 (Quantization of Angular Momentum):</b> An electron can only revolve in orbits where its orbital angular momentum (L = mvr) is an integral multiple of h / 2&pi;:
+        <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+          m<sub>e</sub> v r = n <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">2&pi;</span></span> &nbsp;(where n = 1, 2, 3, ...)
+        </span>
+      </li>
+      <li><b style="color: #26C6DA;">Postulate 3 (Bohr's Frequency Condition):</b> Energy is absorbed or emitted only when an electron jumps from one stationary orbit to another:
+        <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+          &Delta;E = E<sub>2</sub> - E<sub>1</sub> = h&nu; = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h c</span><span style="padding:0 2px;">&lambda;</span></span>
+        </span>
+      </li>
+      <li><b style="color: #26C6DA;">Bohr's Radius &amp; Energy Expressions for Hydrogen-like Species (1e<sup>-</sup> species: H, He<sup>+</sup>, Li<sup>2+</sup>, Be<sup>3+</sup>):</b>
+        <br/>&bull; Radius of n-th orbit: <b>r<sub>n</sub> = 0.529 &times; (n<sup>2</sup> / Z) &Aring; = 52.9 &times; (n<sup>2</sup> / Z) pm</b>
+        <br/>&bull; Energy of n-th orbit: <b>E<sub>n</sub> = -2.18 &times; 10<sup>-18</sup> &times; (Z<sup>2</sup> / n<sup>2</sup>) J/atom = -13.6 &times; (Z<sup>2</sup> / n<sup>2</sup>) eV/atom</b>
+        <br/>&bull; Velocity of electron: <b>v<sub>n</sub> = 2.18 &times; 10<sup>6</sup> &times; (Z / n) m s<sup>-1</sup></b>
+      </li>
+    </ol>
+  </div>
 
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #26C6DA; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Key Bohr Mathematical Formulas for Hydrogen-like Species (Z)</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li>Orbit Radius: <b style='color: #FFF;'>r<sub>n</sub> = 0.529 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n<sup>2</sup></span><span style="display:block; padding:0 4px;">Z</span></span> Å = 52.9 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n<sup>2</sup></span><span style="display:block; padding:0 4px;">Z</span></span> pm</b></li>
-      <li>Electron Velocity: <b style='color: #FFF;'>v<sub>n</sub> = 2.18 × 10<sup>6</sup> × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z</span><span style="display:block; padding:0 4px;">n</span></span> m s<sup>-1</sup></b></li>
-      <li>Total Energy: <b style='color: #FFF;'>E<sub>n</sub> = -13.6 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z<sup>2</sup></span><span style="display:block; padding:0 4px;">n<sup>2</sup></span></span> eV = -2.18 × 10<sup>-18</sup> × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z<sup>2</sup></span><span style="display:block; padding:0 4px;">n<sup>2</sup></span></span> J atom<sup>-1</sup></b></li>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Hydrogen Emission Spectrum &amp; Rydberg Equation</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      When molecular hydrogen gas is excited in a discharge tube, emitted light dispersed through a prism produces five principal series of spectral lines governed by the <b>Rydberg Equation</b>:
+      <br/><span style="display:inline-block; margin: 6px 0; font-weight:bold; color: #FFFFFF;">
+        &nu;&#772; = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">1</span><span style="padding:0 2px;">&lambda;</span></span> = R<sub>H</sub> Z<sup>2</sup> <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">1</span><span style="padding:0 2px;">n<sub>1</sub><sup>2</sup></span></span> - <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">1</span><span style="padding:0 2px;">n<sub>2</sub><sup>2</sup></span></span> &nbsp;|&nbsp; R<sub>H</sub> = 109,677 cm<sup>-1</sup> = 1.097 &times; 10<sup>7</sup> m<sup>-1</sup>
+      </span>
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #26C6DA;">1. Lyman Series:</b> Transitions to n<sub>1</sub> = 1 from n<sub>2</sub> = 2, 3, 4... Spectral region: <b>Ultraviolet (UV)</b>.</li>
+      <li><b style="color: #26C6DA;">2. Balmer Series:</b> Transitions to n<sub>1</sub> = 2 from n<sub>2</sub> = 3, 4, 5... Spectral region: <b>Visible</b>. Only series in visible spectrum.</li>
+      <li><b style="color: #26C6DA;">3. Paschen Series:</b> Transitions to n<sub>1</sub> = 3 from n<sub>2</sub> = 4, 5, 6... Spectral region: <b>Near-Infrared (IR)</b>.</li>
+      <li><b style="color: #26C6DA;">4. Brackett Series:</b> Transitions to n<sub>1</sub> = 4 from n<sub>2</sub> = 5, 6, 7... Spectral region: <b>Mid-Infrared (IR)</b>.</li>
+      <li><b style="color: #26C6DA;">5. Pfund Series:</b> Transitions to n<sub>1</sub> = 5 from n<sub>2</sub> = 6, 7, 8... Spectral region: <b>Far-Infrared (IR)</b>.</li>
+      <li><b style="color: #26C6DA;">Total Spectral Lines Formula:</b> Number of spectral lines emitted when electron transitions from n<sub>2</sub> down to n<sub>1</sub>:
+        <br/><b>Total Lines = [(n<sub>2</sub> - n<sub>1</sub>)(n<sub>2</sub> - n<sub>1</sub> + 1)] / 2</b> (For de-excitation to ground state n<sub>1</sub>=1: n(n-1)/2).
+      </li>
     </ul>
   </div>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Hydrogen Emission Spectrum & Rydberg Equation</h3>
-  <p>When electric discharge is passed through H<sub>2</sub> gas at low pressure, H<sub>2</sub> molecules dissociate into excited H atoms emitting discrete spectral lines grouped into 5 spectral series:</p>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Limitations of Bohr's Model</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #26C6DA;">Multi-Electron Inapplicability:</b> Strictly valid only for single-electron systems (H, He<sup>+</sup>, Li<sup>2+</sup>, Be<sup>3+</sup>); completely fails to explain spectra of atoms with two or more electrons.</li>
+    <li><b style="color: #26C6DA;">Fine Structure:</b> Could not explain why individual spectral lines split into closely spaced doublets or triplets under high-resolution spectrometers.</li>
+    <li><b style="color: #26C6DA;">Zeeman &amp; Stark Effects:</b> Could not explain spectral line splitting in magnetic fields (<b>Zeeman effect</b>) or electric fields (<b>Stark effect</b>).</li>
+    <li><b style="color: #26C6DA;">Wave-Particle Duality &amp; Uncertainty Violation:</b> Contradicted de Broglie's wave hypothesis and Heisenberg's uncertainty principle by defining precise circular 2D trajectories.</li>
+  </ul>
 
-  <div style="overflow-x: auto; margin: 12px 0;">
-    <table style="width: 100%; border-collapse: collapse; background: rgba(0,0,0,0.3); border: 1px solid #26C6DA; font-size: 14.5px;">
-      <thead>
-        <tr style="background: rgba(38, 198, 218, 0.2); color: #26C6DA;">
-          <th style="padding: 8px; border: 1px solid #26C6DA;">Spectral Series</th>
-          <th style="padding: 8px; border: 1px solid #26C6DA;">Lower Level (n<sub>1</sub>)</th>
-          <th style="padding: 8px; border: 1px solid #26C6DA;">Upper Level (n<sub>2</sub>)</th>
-          <th style="padding: 8px; border: 1px solid #26C6DA;">Spectral Region</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#26C6DA;">Lyman</b></td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">1</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">2, 3, 4...</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">Ultraviolet (UV)</td></tr>
-        <tr><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#26C6DA;">Balmer</b></td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">2</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">3, 4, 5...</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#FFF;">Visible Region</b></td></tr>
-        <tr><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#26C6DA;">Paschen</b></td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">3</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">4, 5, 6...</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">Infrared (IR)</td></tr>
-        <tr><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#26C6DA;">Brackett</b></td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">4</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">5, 6, 7...</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">Far Infrared</td></tr>
-        <tr><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);"><b style="color:#26C6DA;">Pfund</b></td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">5</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">6, 7, 8...</td><td style="padding:8px; border:1px solid rgba(38,198,218,0.3);">Far Infrared</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>Wave number is given by <b>Rydberg Equation:</b><br>
-  <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;">ν̅ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">λ</span></span> = R<sub>H</sub> Z<sup>2</sup> [<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>1</sub><sup>2</sup></span></span> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>2</sub><sup>2</sup></span></span>] &nbsp;&nbsp;&nbsp;&nbsp; (R<sub>H</sub> = 109,677 cm<sup>-1</sup> = 1.097 × 10<sup>7</sup> m<sup>-1</sup>)</span></p>
+  <!-- SECTION 4 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    4. Dual Nature of Matter and Light, de Broglie's Relationship, Heisenberg Uncertainty Principle
+  </h2>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Limitations of Bohr's Model</h3>
-  <p>1. Failed to explain spectrum of multi-electron atoms (He, Li, Na).<br>
-  2. Could not explain fine structure (doublets and triplets) when spectral lines were examined with high-resolution spectroscopes.<br>
-  3. Failed to explain splitting of spectral lines in magnetic field (<b>Zeeman Effect</b>) and electric field (<b>Stark Effect</b>).<br>
-  4. Ignored dual wave nature of matter and Heisenberg uncertainty principle.</p>
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Wave-Particle Duality &amp; Planck Quantum Theory</h3>
+  <p>
+    Light exhibits a dual nature: wave phenomena like interference and diffraction explain propagation, while particle-like discrete photon interactions explain black-body radiation and the photoelectric effect.
+    <br/>&bull; <b style="color: #26C6DA;">Photoelectric Effect (Einstein, 1905):</b> When radiation of frequency &nu; &ge; threshold frequency (&nu;<sub>0</sub>) strikes a clean metal surface, photoelectrons are ejected instantaneously:
+    <br/><b>h&nu; = W<sub>0</sub> + KE<sub>max</sub> &rArr; h&nu; = h&nu;<sub>0</sub> + <sup>1</sup>/<sub>2</sub> m<sub>e</sub> v<sub>max</sub><sup>2</sup> = e V<sub>0</sub></b> (where W<sub>0</sub> is metal work function, V<sub>0</sub> is stopping potential).
+  </p>
 
-
-  <!-- EXACT SYLLABUS HEADING 4 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Dual Nature of Matter and Light, de Broglie's Relationship, Heisenberg Uncertainty Principle</h2>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Wave-Particle Duality & Planck Quantum Theory</h3>
-  <p>To explain blackbody radiation and photoelectric effect (ejection of e<sup>-</sup> when light hits metal), Max Planck (1900) and Albert Einstein (1905) established that light behaves as discrete packets of energy called <b>photons</b> (E = hν). Meanwhile, phenomena like diffraction and interference prove light behaves as continuous waves. Thus, light possesses <b>Dual Nature (Wave-Particle Duality)</b>.</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) de Broglie Dual Nature Relationship</h3>
-  <p>In 1924, French physicist Louis de Broglie proposed that if radiant light possesses dual nature, matter particles (electrons, protons, atoms) must also exhibit dual wave-particle character! Equating Planck energy (E = hν = hc/λ) and Einstein mass-energy (E = mc<sup>2</sup>):<br>
-  <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 10px 0;">de Broglie Wavelength: λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span></span>
-  For macroscopic objects (like a thrown cricket ball), mass m is huge, so wavelength λ is unimaginably tiny (undetectable). But for microscopic subatomic electrons (m<sub>e</sub> = 9.1 × 10<sup>-31</sup> kg), λ is comparable to atomic dimensions (~1 Å) and detectable via electron diffraction!</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Heisenberg's Uncertainty Principle</h3>
-  <p>In 1927, Werner Heisenberg formulated a revolutionary principle of quantum mechanics:</p>
-
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #26C6DA; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Heisenberg Uncertainty Principle Statement & Formula</h4>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) de Broglie Dual Nature Relationship</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
     <p style="margin: 0; line-height: 1.8;">
-      It is physically impossible to measure simultaneously both the exact position (x) and exact momentum (p = m v) of a subatomic particle with absolute accuracy.<br>
-      <span style="color: #FFF; font-weight: bold; display: block; text-align: center; margin: 8px 0;">Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp;&nbsp;&nbsp; or &nbsp;&nbsp;&nbsp;&nbsp; Δx · (m Δv) ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span></span>
-      <i>Physical Consequence:</i> If electron position is determined accurately (tiny Δx), velocity uncertainty Δv becomes enormous, proving that fixed circular Bohr orbits DO NOT EXIST in reality!
+      In 1924, Louis de Broglie postulated that just as radiation exhibits dual nature, all material particles in motion possess wave-like properties.
+      <br/>&bull; Combining Planck's relation (E = h&nu; = hc/&lambda;) and Einstein's mass-energy equivalence (E = mc<sup>2</sup> = pc):
+      <br/><span style="display:inline-block; margin: 6px 0; font-weight:bold; color: #FFFFFF;">
+        &lambda; = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">p</span></span> = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">m v</span></span> = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">&radic;(2 m KE)</span></span> = <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">&radic;(2 m q V)</span></span>
+      </span>
+      <br/>&bull; <i>For electron accelerated through potential V:</i> &lambda; = 12.27 / &radic;V &Aring; = 1.227 / &radic;V nm.
+      <br/>&bull; Confirmed experimentally by Davisson &amp; Germer (1927) via electron diffraction through nickel crystal.
     </p>
   </div>
 
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Heisenberg's Uncertainty Principle</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Formulated by Werner Heisenberg in 1927, this principle states that it is physically impossible to simultaneously measure with arbitrary precision both the position (&Delta;x) and linear momentum (&Delta;p) of a microscopic subatomic entity:
+      <br/><span style="display:inline-block; margin: 6px 0; font-weight:bold; color: #FFFFFF;">
+        &Delta;x &bull; &Delta;p &ge; <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">4&pi;</span></span> &nbsp;&rArr;&nbsp; &Delta;x &bull; (m &Delta;v) &ge; <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">h</span><span style="padding:0 2px;">4&pi;</span></span>
+      </span>
+      <br/>&bull; <i>Energy-Time Conjugate Form:</i> <b>&Delta;E &bull; &Delta;t &ge; h / 4&pi;</b>.
+      <br/>&bull; <i>Physical Consequence:</i> Proves why electrons cannot reside inside the nucleus (sub-atomic nuclear radius ~10<sup>-15</sup> m would require electron kinetic energies exceeding 200 MeV, which no atomic electron possesses).
+    </p>
+  </div>
 
-  <!-- EXACT SYLLABUS HEADING 5 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Concept of Orbitals, Quantum Numbers, Shapes of s, p and d Orbitals</h2>
+  <!-- SECTION 5 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    5. Concept of Orbitals, Quantum Numbers, Shapes of s, p and d Orbitals
+  </h2>
 
-  <!-- 3D IMAGE 3 -->
+  <!-- PRESERVED IMAGE 3 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(38, 198, 218, 0.35); border: 1.5px solid #26C6DA;" alt="3D Quantum Atomic Orbitals Shapes s p d" />
     <p style="color: #26C6DA; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 2.3: 3D Boundary Surface Diagrams and Spatial Shapes of s, p, and d Atomic Orbitals</p>
   </div>
 
-  <p>Replacing fixed Bohr orbits with Erwin Schrödinger's wave equation (Ĥ Ψ = E Ψ) led to the modern <b>Quantum Mechanical Model of Atom</b>. The square of wave function <b>Ψ<sup>2</sup> (Probability Density)</b> defines an <b>Atomic Orbital</b>—a 3D space region around the nucleus where finding an electron has maximum probability (≥90%).</p>
+  
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) 4 Quantum Numbers</h3>
-  <p>An electron in an atom is completely characterized by four quantum numbers:</p>
-
-  <ol style="padding-left: 20px; line-height: 1.8;">
-    <li><b style='color: #26C6DA;'>Principal Quantum Number (n):</b> Defines main energy shell (n = 1, 2, 3, 4...). Controls orbital size and average electron distance. Shell capacity = <b>2n<sup>2</sup></b> electrons.</li>
-    
-    <li><b style='color: #26C6DA;'>Azimuthal / Orbital Angular Momentum Quantum Number (l):</b> Defines subshell shape (l = 0 to n-1):<br>
-    • l = 0 ⟶ <b>s subshell</b> (spherical)<br>
-    • l = 1 ⟶ <b>p subshell</b> (dumbbell)<br>
-    • l = 2 ⟶ <b>d subshell</b> (double dumbbell)<br>
-    • l = 3 ⟶ <b>f subshell</b> (complex 8-lobed).<br>
-    Orbital angular momentum L = $sqrt{l(l+1)} rac{h}{2pi}$.</li>
-    
-    <li><b style='color: #26C6DA;'>Magnetic Quantum Number (m<sub>l</sub>):</b> Defines 3D spatial orientation of orbital (m<sub>l</sub> = -l to +l, total 2l+1 orientations).</li>
-    
-    <li><b style='color: #26C6DA;'>Spin Quantum Number (m<sub>s</sub>):</b> Defines intrinsic electron spin orientation (+<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> clockwise ↑, -<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> counter-clockwise ↓). Spin angular momentum S = $sqrt{s(s+1)} rac{h}{2pi}$.</li>
-  </ol>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Shapes of s, p, and d Atomic Orbitals</h3>
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>s Orbitals (l = 0, m<sub>l</sub> = 0):</b> Spherically symmetric around nucleus. 1s has 0 nodes; 2s has 1 spherical radial node (N<sub>radial</sub> = n - l - 1).</li>
-    <li><b>p Orbitals (l = 1, m<sub>l</sub> = -1, 0, +1):</b> Dumbbell shaped consisting of 2 lobes separated by a nodal plane. 3 degenerate orientations: <b>p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub></b> aligned along Cartesian axes.</li>
-    <li><b>d Orbitals (l = 2, m<sub>l</sub> = -2, -1, 0, +1, +2):</b> 5 degenerate orientations: 4 double-dumbbell shaped (<b>d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub></b>) and 1 doughnut-ring shaped (<b>d<sub>z<sup>2</sup></sub></b>).</li>
-  </ul>
-
-
-  <!-- EXACT SYLLABUS HEADING 6 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">6. Rules for Filling Electrons in Orbitals: Aufbau Principle, Pauli Exclusion Principle and Hund's Rule</h2>
-
-  <p>Electrons fill atomic orbitals according to three fundamental quantum mechanical principles:</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Aufbau Principle and (n + l) Rule</h3>
-  <p><b>Aufbau Principle:</b> In the ground state of an atom, electrons fill orbitals in order of increasing orbital energy level (lowest energy orbital filled first).<br>
-  <b>(n + l) Rule:</b><br>
-  1. Orbitals with lower (n + l) value have lower energy.<br>
-  2. If two orbitals share identical (n + l) values, the orbital with lower principal quantum number n has lower energy.<br>
-  <i>Filling Order:</i> 1s ⟶ 2s ⟶ 2p ⟶ 3s ⟶ 3p ⟶ 4s ⟶ 3d ⟶ 4p ⟶ 5s ⟶ 4d ⟶ 5p ⟶ 6s...</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Pauli's Exclusion Principle</h3>
-  <p>Formulated by Wolfgang Pauli (1925):<br>
-  <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;">No two electrons in an atom can possess the exact same set of all four quantum numbers.</span>
-  <i>Consequence:</i> An orbital can hold a maximum of <b>2 electrons</b>, and they MUST have opposite spins (↑↓)!</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Hund's Rule of Maximum Multiplicity</h3>
-  <p>Formulated by Friedrich Hund:<br>
-  <span style="color: #26C6DA; font-weight: bold; display: block; text-align: center; margin: 8px 0;">Electron pairing in degenerate orbitals (orbitals of same subshell) does not take place until each orbital is singly occupied with parallel spins (↑).</span>
-  <i>Example for Nitrogen (Z=7):</i> 1s<sup>2</sup> 2s<sup>2</sup> 2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup> (All 3 p-electrons remain unpaired with parallel spins).</p>
-
-
-  <!-- EXACT SYLLABUS HEADING 7 WORD-FOR-WORD -->
-  <h2 style="color: #26C6DA; margin-top: 30px; font-size: 20px; font-weight: bold;">7. Electronic Configuration of Atoms, Stability of Half Filled and Completely Filled Orbitals</h2>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(i) Electronic Configuration Writing (Z = 1 to 30)</h3>
-  <p>Represented as n l<sup>x</sup> where n = main shell, l = subshell symbol, x = number of electrons in subshell.<br>
-  <i>Examples:</i><br>
-  • Carbon (Z=6): 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup><br>
-  • Neon (Z=10): 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup><br>
-  • Iron (Z=26): 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>6</sup> or [Ar] 3d<sup>6</sup> 4s<sup>2</sup>.</p>
-
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(ii) Exceptional Configurations of Chromium (Z=24) and Copper (Z=29)</h3>
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #26C6DA; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Anomalous Configurations</h4>
-    • <b>Chromium (Z=24):</b> Expected [Ar] 3d<sup>4</sup> 4s<sup>2</sup> ⟶ Actual: <b style='color: #FFF;'>[Ar] 3d<sup>5</sup> 4s<sup>1</sup></b> (Half-filled d<sup>5</sup> stability!).<br>
-    • <b>Copper (Z=29):</b> Expected [Ar] 3d<sup>9</sup> 4s<sup>2</sup> ⟶ Actual: <b style='color: #FFF;'>[Ar] 3d<sup>10</sup> 4s<sup>1</sup></b> (Completely filled d<sup>10</sup> stability!).
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) 4 Quantum Numbers</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Schr&ouml;dinger wave equation H&#770;&psi; = E&psi; yields 3 quantum numbers (n, l, m<sub>l</sub>); electron spin adds the fourth (m<sub>s</sub>), completely specifying any electron's quantum state:
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #26C6DA;">1. Principal Quantum Number (n):</b> Designates main energy shell (n = 1, 2, 3, 4... or K, L, M, N...). Dictates average orbital size and energy. Maximum electrons in shell = <b>2n<sup>2</sup></b>; total orbitals in shell = <b>n<sup>2</sup></b>.</li>
+      <li><b style="color: #26C6DA;">2. Azimuthal (Orbital Angular Momentum) Quantum Number (l):</b> Designates subshell and orbital shape. Permitted values: <b>l = 0, 1, 2, ..., (n - 1)</b> (total n values).
+        <br/>&bull; l = 0 (s, spherical), l = 1 (p, dumbbell), l = 2 (d, double dumbbell), l = 3 (f, complex).
+        <br/>&bull; Orbital angular momentum: <b>L = &radic;[l(l + 1)] &times; (h / 2&pi;)</b>.
+      </li>
+      <li><b style="color: #26C6DA;">3. Magnetic Quantum Number (m<sub>l</sub>):</b> Designates spatial orientation of orbital in space. Permitted values: <b>m<sub>l</sub> = -l, ..., 0, ..., +l</b> (total <b>2l + 1</b> values).
+        <br/>&bull; For s (l=0): 1 orbital (m=0).
+        <br/>&bull; For p (l=1): 3 orbitals (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>).
+        <br/>&bull; For d (l=2): 5 orbitals (d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub>, d<sub>z<sup>2</sup></sub>).
+      </li>
+      <li><b style="color: #26C6DA;">4. Spin Quantum Number (m<sub>s</sub>):</b> Designates intrinsic electron spin angular momentum. Permitted values: <b>m<sub>s</sub> = +<sup>1</sup>/<sub>2</sub> (&uarr;, clockwise)</b> or <b>-<sup>1</sup>/<sub>2</sub> (&darr;, counter-clockwise)</b>.
+        <br/>&bull; Spin angular momentum: <b>S = &radic;[s(s + 1)] &times; (h / 2&pi;) = (&radic;3 / 2) &times; (h / 2&pi;)</b>.
+      </li>
+    </ul>
   </div>
 
-  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 18px;">(iii) Causes of Extra Stability of Half-Filled and Completely Filled Subshells</h3>
-  <ol style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Symmetrical Distribution of Charge:</b> Symmetrical arrangements impart higher electrostatic stability to atom.</li>
-    <li><b>Maximum Exchange Energy:</b> Electrons with parallel spins in degenerate orbitals exchange positions, releasing stabilizing <b>Exchange Energy (E<sub>ex</sub>)</b>. Maximum exchange energy occurs when subshells are half-filled (d<sup>5</sup>, p<sup>3</sup>, f<sup>7</sup>) or completely filled (d<sup>10</sup>, p<sup>6</sup>, f<sup>14</sup>).</li>
-  </ol>
-
-  <!-- BOTTOM FEATURE: MASTER CHEAT SHEET -->
-  <div style="background: linear-gradient(135deg, rgba(38, 198, 218, 0.15), rgba(0, 131, 143, 0.15)); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #26C6DA; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 2 Formula Cheat Sheet</h3>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>Bohr Energy:</b> E<sub>n</sub> = -13.6 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z<sup>2</sup></span><span style="display:block; padding:0 4px;">n<sup>2</sup></span></span> eV. Radius: r<sub>n</sub> = 0.529 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n<sup>2</sup></span><span style="display:block; padding:0 4px;">Z</span></span> Å.</li>
-      <li><b>Rydberg Formula:</b> ν̅ = 109,677 × [<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>1</sub><sup>2</sup></span></span> - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">n<sub>2</sub><sup>2</sup></span></span>] cm<sup>-1</sup>.</li>
-      <li><b>de Broglie & Uncertainty:</b> λ = h / m v; Δx · Δp ≥ h / 4π.</li>
-      <li><b>Quantum Numbers:</b> n = 1..∞, l = 0..n-1, m<sub>l</sub> = -l..+l, m<sub>s</sub> = ±<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>.</li>
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Shapes of s, p, and d Atomic Orbitals</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #26C6DA;">s-Orbitals (l = 0):</b> Spherically symmetric with non-directional probability distribution. Size and energy increase with n (1s < 2s < 3s).
+        <br/>&bull; Radial (Spherical) Nodes = <b>n - l - 1</b> = n - 1. Angular Nodes = l = 0. Total Nodes = <b>n - 1</b>.
+      </li>
+      <li><b style="color: #26C6DA;">p-Orbitals (l = 1):</b> Dumbbell-shaped consisting of two lobes on opposite sides of the nucleus separated by a planar nodal plane passing through the nucleus.
+        <br/>&bull; Three mutually orthogonal degenerate orbitals: <b>p<sub>x</sub></b> (nodal plane yz), <b>p<sub>y</sub></b> (nodal plane xz), <b>p<sub>z</sub></b> (nodal plane xy).
+        <br/>&bull; Radial Nodes = n - 1 - 1 = n - 2. Angular Nodes = l = 1. Total Nodes = <b>n - 1</b>.
+      </li>
+      <li><b style="color: #26C6DA;">d-Orbitals (l = 2):</b> Five degenerate orbitals:
+        <br/>&bull; <i>Non-axial (between coordinate axes):</i> <b>d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub></b> (double dumbbell shaped with 2 planar nodal surfaces).
+        <br/>&bull; <i>Axial (along coordinate axes):</i> <b>d<sub>x<sup>2</sup>-y<sup>2</sup></sub></b> (four lobes lying along x and y axes) and <b>d<sub>z<sup>2</sup></sub></b> (two lobes along z axis surrounded by a central doughnut-shaped electron toroid in xy plane; features 2 conical nodal surfaces).
+        <br/>&bull; Radial Nodes = n - 2 - 1 = n - 3. Angular Nodes = l = 2. Total Nodes = <b>n - 1</b>.
+      </li>
     </ul>
+  </div>
+
+  <!-- SECTION 6 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    6. Rules for Filling Electrons in Orbitals: Aufbau Principle, Pauli Exclusion Principle and Hund's Rule
+  </h2>
+
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Aufbau Principle and (n + l) Rule</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The German word <i>Aufbau</i> means "building up". In the ground state of an atom, electrons sequentially occupy atomic orbitals in order of increasing orbital energies:
+      <br/><b>1s &lt; 2s &lt; 2p &lt; 3s &lt; 3p &lt; 4s &lt; 3d &lt; 4p &lt; 5s &lt; 4d &lt; 5p &lt; 6s &lt; 4f &lt; 5d &lt; 6p &lt; 7s...</b>
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #26C6DA;">Bohr-Bury (n + l) Rule:</b>
+        <br/>1. The orbital with the lower value of (n + l) possesses lower energy and fills first (e.g., 4s has n+l = 4+0 = 4; 3d has n+l = 3+2 = 5; hence <b>4s fills before 3d</b>).
+        <br/>2. If two orbitals share the identical value of (n + l), the orbital with the <b>lower value of n fills first</b> (e.g., 3d has n+l = 3+2 = 5; 4p has n+l = 4+1 = 5; hence 3d fills before 4p).
+      </li>
+    </ul>
+  </div>
+
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Pauli's Exclusion Principle</h3>
+  <p>
+    Formulated by Wolfgang Pauli in 1925: <i>"No two electrons in the same atom can possess identical sets of all four quantum numbers (n, l, m<sub>l</sub>, m<sub>s</sub>)."</i>
+    <br/>&bull; <b style="color: #26C6DA;">Direct Consequence:</b> An individual atomic orbital can accommodate a <b>maximum of two electrons</b>, and these two electrons must have <b>opposite (antiparallel) spins</b> (+<sup>1</sup>/<sub>2</sub> and -<sup>1</sup>/<sub>2</sub>).
+  </p>
+
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Hund's Rule of Maximum Multiplicity</h3>
+  <p>
+    Electron pairing in degenerate orbitals belonging to the same subshell (such as p, d, or f) cannot occur until every available degenerate orbital is singly occupied by an electron with parallel spin.
+    <br/>&bull; <b style="color: #26C6DA;">Physical Reason:</b> Parallel spins minimize inter-electronic Coulombic repulsion and maximize exchange stabilization energy, minimizing total ground state energy.
+  </p>
+
+  <!-- SECTION 7 -->
+  <h2 style="color: #26C6DA; border-bottom: 2px solid #26C6DA; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    7. Electronic Configuration of Atoms, Stability of Half Filled and Completely Filled Orbitals
+  </h2>
+
+  <h3 style="color: #26C6DA; margin-top: 18px; font-size: 16.5px;">(i) Electronic Configuration Writing (Z = 1 to 30)</h3>
+  <p>
+    The standard notation writes subshell labels with superscript numbers of electrons (e.g., 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>...).
+    <br/><i>Representative Configurations:</i>
+    <br/>&bull; Hydrogen (Z=1): 1s<sup>1</sup>
+    <br/>&bull; Carbon (Z=6): 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>
+    <br/>&bull; Neon (Z=10): 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> = [Ne]
+    <br/>&bull; Scandium (Z=21): [Ar] 4s<sup>2</sup> 3d<sup>1</sup>
+    <br/>&bull; Iron (Z=26): [Ar] 4s<sup>2</sup> 3d<sup>6</sup>
+    <br/>&bull; Zinc (Z=30): [Ar] 4s<sup>2</sup> 3d<sup>10</sup>
+  </p>
+
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(ii) Exceptional Configurations of Chromium (Z=24) and Copper (Z=29)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(38, 198, 218, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #26C6DA;">Chromium (Z = 24):</b> Expected configuration [Ar] 4s<sup>2</sup> 3d<sup>4</sup> is anomalous. Actual ground state configuration is <b>[Ar] 4s<sup>1</sup> 3d<sup>5</sup></b> (half-filled d-subshell).</li>
+      <li><b style="color: #26C6DA;">Copper (Z = 29):</b> Expected configuration [Ar] 4s<sup>2</sup> 3d<sup>9</sup> is anomalous. Actual ground state configuration is <b>[Ar] 4s<sup>1</sup> 3d<sup>10</sup></b> (completely-filled d-subshell).</li>
+    </ul>
+  </div>
+
+  <h3 style="color: #26C6DA; margin-top: 22px; font-size: 16.5px;">(iii) Causes of Extra Stability of Half-Filled and Completely Filled Subshells</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #26C6DA;">1. Symmetrical Distribution of Electrons:</b> Spherically and spatially symmetrical electron charge distributions lead to lower electrostatic shielding and lower overall potential energy.</li>
+    <li><b style="color: #26C6DA;">2. Maximum Exchange Energy:</b> Electrons with parallel spins in degenerate orbitals can exchange positions among themselves. Each possible exchange releases a quantum of stabilization energy called <b>Exchange Energy</b>:
+      <br/>&bull; Total possible exchanges K = [n(n - 1)] / 2 for n parallel electrons.
+      <br/>&bull; For Cr (d<sup>5</sup>): K = 5(4)/2 = <b>10 exchanges</b> (compared to only 6 exchanges for d<sup>4</sup>).
+      <br/>The enormous exchange energy release strongly stabilizes the 4s<sup>1</sup> 3d<sup>5</sup> and 4s<sup>1</sup> 3d<sup>10</sup> states.
+    </li>
+  </ul>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(0, 96, 100, 0.85)); border: 2px solid #26C6DA; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
+    <h3 style="color: #26C6DA; margin: 0 0 14px 0; font-size: 18px; text-align: center; font-weight: bold;">
+      ⚡ Master Chapter 2 Formula Cheat Sheet
+    </h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px;">
+        <thead>
+          <tr style="background: rgba(38, 198, 218, 0.25); color: #26C6DA; font-weight: bold;">
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Quantum Law / Equation</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Mathematical Expression</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Physical Constants &amp; Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Planck's Energy:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">E = h&nu; = hc / &lambda;</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">h = 6.626 &times; 10<sup>-34</sup> J s; c = 3 &times; 10<sup>8</sup> m s<sup>-1</sup></td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Bohr's Orbit Radius:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">r<sub>n</sub> = 0.529 &times; (n<sup>2</sup> / Z) &Aring; = 52.9 (n<sup>2</sup> / Z) pm</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">For 1-electron ions (H, He<sup>+</sup>, Li<sup>2+</sup>)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Bohr's Energy Level:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">E<sub>n</sub> = -2.18 &times; 10<sup>-18</sup> (Z<sup>2</sup> / n<sup>2</sup>) J = -13.6 (Z<sup>2</sup> / n<sup>2</sup>) eV</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">1 eV = 1.6022 &times; 10<sup>-19</sup> J</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Rydberg Formula:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&nu;&#772; = 1/&lambda; = R<sub>H</sub> Z<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>]</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">R<sub>H</sub> = 1.09677 &times; 10<sup>7</sup> m<sup>-1</sup> = 109,677 cm<sup>-1</sup></td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">de Broglie Relation:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&lambda; = h / p = h / (mv) = h / &radic;(2m KE)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&lambda;<sub>e</sub> = 1.227 / &radic;V nm</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Heisenberg Principle:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&Delta;x &bull; &Delta;p &ge; h / (4&pi;) &nbsp;|&nbsp; &Delta;x &bull; &Delta;v &ge; h / (4&pi;m)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&Delta;E &bull; &Delta;t &ge; h / (4&pi;)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Orbital Angular Momentum:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">L = &radic;[l(l + 1)] &times; (h / 2&pi;)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">For s-electron (l=0), L = 0</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #26C6DA;">Nodes Count:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Radial = n - l - 1 &nbsp;|&nbsp; Angular = l &nbsp;|&nbsp; Total = n - 1</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Nodal surfaces where &psi;<sup>2</sup> = 0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 </div>
 `;
 
 export const c11Chem2HtmlSolutions = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions - 72% Theory) -->
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
-    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #26C6DA; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Calculations)</p>
+  <!-- SECTION A -->
+  <div style="background: linear-gradient(135deg, rgba(38, 198, 218, 0.15), rgba(0, 131, 143, 0.15)); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION A: Very Short Answer (VSA) Questions (1 Mark Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q1 to Q40 &bull; Subatomic Discovery, Quantum Numbers, Bohr Constants &amp; Principles</p>
   </div>
-
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q1. Who discovered the fundamental subatomic particle Neutron?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) J.J. Thomson &nbsp;&nbsp;&nbsp;&nbsp; (B) Ernest Rutherford<br>
-      (C) James Chadwick &nbsp;&nbsp;&nbsp;&nbsp; (D) Eugen Goldstein
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (C) James Chadwick</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> James Chadwick discovered neutral neutrons in 1932 by bombarding Beryllium with alpha particles.</span>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q1: Who discovered the electron and how?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      J.J. Thomson in 1897 through cathode ray discharge tube experiments.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q2. The ratio of charge to mass (e/m) for an electron was measured by:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Robert Millikan &nbsp;&nbsp;&nbsp;&nbsp; (B) J.J. Thomson<br>
-      (C) John Dalton &nbsp;&nbsp;&nbsp;&nbsp; (D) Niels Bohr
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) J.J. Thomson</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> J.J. Thomson measured e/m<sub>e</sub> = 1.7588 × 10<sup>11</sup> C kg<sup>-1</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q2: What is the absolute charge of an electron?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      -1.6022 &times; 10<sup>-19</sup> Coulombs.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q3. Which spectral series of Hydrogen atom lies in the Visible region?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Lyman Series &nbsp;&nbsp;&nbsp;&nbsp; (B) Balmer Series<br>
-      (C) Paschen Series &nbsp;&nbsp;&nbsp;&nbsp; (D) Brackett Series
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Balmer Series</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Balmer series (n<sub>1</sub>=2, n<sub>2</sub>=3,4,5...) falls in the visible light spectrum.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q3: What is the rest mass of an electron in kg?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      9.10938 &times; 10<sup>-31</sup> kg.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q4. What is the maximum number of electrons that can be accommodated in a subshell with l = 2 (d subshell)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 2 &nbsp;&nbsp;&nbsp;&nbsp; (B) 6<br>
-      (C) 10 &nbsp;&nbsp;&nbsp;&nbsp; (D) 14
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (C) 10</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Capacity = 2(2l + 1) = 2(2×2 + 1) = 10 electrons.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q4: What is the specific charge (e/m) of an electron?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1.758820 &times; 10<sup>11</sup> C kg<sup>-1</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q5. Which rule states that no two electrons in an atom can have the same set of 4 quantum numbers?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Aufbau Principle &nbsp;&nbsp;&nbsp;&nbsp; (B) Pauli Exclusion Principle<br>
-      (C) Hund's Rule &nbsp;&nbsp;&nbsp;&nbsp; (D) Heisenberg Principle
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Pauli Exclusion Principle</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Wolfgang Pauli established that an orbital can hold max 2 e<sup>-</sup> with opposite spins.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q5: Who discovered the proton?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Eugen Goldstein in 1886 via perforated cathode canal ray experiments.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q6. What is the electronic configuration of Chromium atom (Z=24)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) [Ar] 3d<sup>4</sup> 4s<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) [Ar] 3d<sup>5</sup> 4s<sup>1</sup><br>
-      (C) [Ar] 3d<sup>6</sup> 4s<sup>0</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) [Ar] 4s<sup>2</sup> 4p<sup>4</sup>
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) [Ar] 3d<sup>5</sup> 4s<sup>1</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Chromium has anomalous configuration [Ar] 3d<sup>5</sup> 4s<sup>1</sup> due to extra stability of half-filled d<sup>5</sup> subshell.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q6: Who discovered the neutron and in which year?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      James Chadwick in 1932 by bombarding beryllium with alpha particles.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q7. What is the shape of a p atomic orbital?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Spherical &nbsp;&nbsp;&nbsp;&nbsp; (B) Dumbbell<br>
-      (C) Double Dumbbell &nbsp;&nbsp;&nbsp;&nbsp; (D) Complex
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Dumbbell</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> p orbitals (l=1) possess dumbbell shape with 2 opposite lobes.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q7: Define Atomic Number (Z).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The total number of protons present in the nucleus of an atom.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q8. The principal quantum number (n = 3) can hold a maximum of how many total electrons?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 8 &nbsp;&nbsp;&nbsp;&nbsp; (B) 18<br>
-      (C) 32 &nbsp;&nbsp;&nbsp;&nbsp; (D) 9
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) 18</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Shell capacity = 2n<sup>2</sup> = 2(3)<sup>2</sup> = 18 electrons.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q8: Define Mass Number (A).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The total number of nucleons (protons + neutrons) in the nucleus: A = Z + N.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q9. Which particle has the same mass number but different atomic number as Argon-40?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Calcium-40 &nbsp;&nbsp;&nbsp;&nbsp; (B) Potassium-39<br>
-      (C) Chlorine-35 &nbsp;&nbsp;&nbsp;&nbsp; (D) Carbon-12
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) Calcium-40</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> <sup>40</sup>Ar and <sup>40</sup>Ca are Isobars sharing mass number A = 40.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q9: What are Isotopes?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Atoms of the same element having the same atomic number (Z) but different mass numbers (A).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q10. What is the de Broglie wavelength equation?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) λ = h / (m v) &nbsp;&nbsp;&nbsp;&nbsp; (B) E = h ν<br>
-      (C) Δx · Δp = h / 4π &nbsp;&nbsp;&nbsp;&nbsp; (D) E = m c<sup>2</sup>
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) λ = h / (m v)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> de Broglie wavelength λ = h / p = h / (m v).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q10: What are Isobars?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Atoms of different elements having different atomic numbers (Z) but identical mass numbers (A).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q11. Splitting of spectral lines in an external magnetic field is known as:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Stark Effect &nbsp;&nbsp;&nbsp;&nbsp; (B) Zeeman Effect<br>
-      (C) Photoelectric Effect &nbsp;&nbsp;&nbsp;&nbsp; (D) Compton Effect
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Zeeman Effect</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Zeeman effect is spectral line splitting in magnetic fields; Stark effect is in electric fields.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q11: What are Isotones?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Atoms of different elements containing identical numbers of neutrons (N = A - Z).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q12. Number of radial nodes in a 3p orbital is equal to:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) 1<br>
-      (C) 2 &nbsp;&nbsp;&nbsp;&nbsp; (D) 3
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) 1</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Radial nodes = n - l - 1 = 3 - 1 - 1 = 1.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q12: Define Isoelectronic species with an example.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Chemical species having identical total numbers of electrons; e.g., Na<sup>+</sup>, F<sup>-</sup>, and Ne (all have 10 e<sup>-</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q13. Which orbital has lower energy: 4s or 3d?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 4s &nbsp;&nbsp;&nbsp;&nbsp; (B) 3d<br>
-      (C) Both equal &nbsp;&nbsp;&nbsp;&nbsp; (D) Depends on temperature
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) 4s</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> For 4s, (n+l) = 4+0 = 4. For 3d, (n+l) = 3+2 = 5. By (n+l) rule, 4s has lower energy!</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q13: What was the major drawback of Thomson's atomic model?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      It could not explain the large-angle scattering of alpha particles observed by Rutherford.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q14. What is the value of Planck's constant (h)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 6.626 × 10<sup>-34</sup> J s &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.602 × 10<sup>-19</sup> J<br>
-      (C) 9.109 × 10<sup>-31</sup> kg &nbsp;&nbsp;&nbsp;&nbsp; (D) 6.022 × 10<sup>23</sup> mol<sup>-1</sup>
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) 6.626 × 10<sup>-34</sup> J s</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Planck's constant h = 6.626 × 10<sup>-34</sup> J s.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q14: Why did most alpha particles pass undeflected in Rutherford's experiment?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because most of the volume of the atom is empty space.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q15. Which ion is isoelectronic with Neon atom (10 e<sup>-</sup>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Na<sup>+</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) Cl<sup>-</sup><br>
-      (C) K<sup>+</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) Ca<sup>2+</sup>
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) Na<sup>+</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Na<sup>+</sup> has 11 - 1 = 10 e<sup>-</sup>, identical to Neon.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q15: State the conclusion drawn from the 180° rebound of alpha particles.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      All positive charge and virtually the entire atomic mass are concentrated in an extraordinarily tiny central nucleus.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q16. What is the radius of innermost first orbit (n=1) of Hydrogen atom?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0.529 Å &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.00 Å<br>
-      (C) 2.18 Å &nbsp;&nbsp;&nbsp;&nbsp; (D) 0.0529 Å
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) 0.529 Å</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> r<sub>1</sub> = 0.529 Å (52.9 pm).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q16: State Maxwell's classical electromagnetic limitation of Rutherford's model.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      An accelerated charged electron should continuously emit radiation, losing energy and collapsing into the nucleus in ~10<sup>-8</sup> s.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q17. Uncertainty principle Δx · Δp ≥ h / 4π was formulated by:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Louis de Broglie &nbsp;&nbsp;&nbsp;&nbsp; (B) Werner Heisenberg<br>
-      (C) Erwin Schrödinger &nbsp;&nbsp;&nbsp;&nbsp; (D) Max Planck
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Werner Heisenberg</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Heisenberg formulated the uncertainty principle in 1927.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q17: State Planck's Quantum Theory equation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      E = h&nu; = hc / &lambda;, where h = 6.626 &times; 10<sup>-34</sup> J s.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q18. How many degenerate d-orbitals exist in a d-subshell?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 3 &nbsp;&nbsp;&nbsp;&nbsp; (B) 5<br>
-      (C) 7 &nbsp;&nbsp;&nbsp;&nbsp; (D) 10
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) 5</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> For l=2, m<sub>l</sub> = -2, -1, 0, +1, +2 (5 orbitals: d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub>, d<sub>z<sup>2</sup></sub>).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q18: Define a Photon.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A discrete quantum packet of electromagnetic radiant energy carrying energy E = h&nu;.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q19. Ground state configuration of Copper (Z=29) is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) [Ar] 3d<sup>9</sup> 4s<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) [Ar] 3d<sup>10</sup> 4s<sup>1</sup><br>
-      (C) [Ar] 3d<sup>8</sup> 4s<sup>3</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) [Ar] 4s<sup>2</sup> 4p<sup>5</sup>
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) [Ar] 3d<sup>10</sup> 4s<sup>1</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Copper has anomalous configuration [Ar] 3d<sup>10</sup> 4s<sup>1</sup> due to completely filled d<sup>10</sup> stability.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q19: State Bohr's condition for quantization of angular momentum.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      m<sub>e</sub>vr = n(h / 2&pi;), where n = 1, 2, 3, ...
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q20. An orbital with l = 0 has what shape?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Dumbbell &nbsp;&nbsp;&nbsp;&nbsp; (B) Spherical<br>
-      (C) Double Dumbbell &nbsp;&nbsp;&nbsp;&nbsp; (D) Linear
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) Spherical</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> s orbitals (l=0) are spherically symmetric.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q20: What is the radius of the first Bohr orbit of Hydrogen atom in pm?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      52.9 pm (or 0.529 &Aring;).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q21. Energy required to ionize Hydrogen atom from ground state is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) +13.6 eV &nbsp;&nbsp;&nbsp;&nbsp; (B) -13.6 eV<br>
-      (C) 0 eV &nbsp;&nbsp;&nbsp;&nbsp; (D) 2.18 eV
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) +13.6 eV</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> E<sub>ionization</sub> = E<sub>∞</sub> - E<sub>1</sub> = 0 - (-13.6 eV) = +13.6 eV.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q21: What is the energy of the electron in the ground state of Hydrogen?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      -13.6 eV (or -2.18 &times; 10<sup>-18</sup> J).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q22. Which transition emits photon of shortest wavelength in Hydrogen spectrum?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) n=2 to n=1 &nbsp;&nbsp;&nbsp;&nbsp; (B) n=3 to n=1<br>
-      (C) n=4 to n=1 &nbsp;&nbsp;&nbsp;&nbsp; (D) n=∞ to n=1
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (D) n=∞ to n=1</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Largest energy gap ΔE gives shortest wavelength λ = hc / ΔE.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q22: Why is the energy of an electron in an atom assigned a negative sign?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because the energy of a free electron at infinite distance from the nucleus is zero, and attractive nuclear forces lower its potential energy.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q23. Total number of subshells present in n = 4 principal energy shell is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 2 &nbsp;&nbsp;&nbsp;&nbsp; (B) 3<br>
-      (C) 4 &nbsp;&nbsp;&nbsp;&nbsp; (D) 16
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (C) 4</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Shell n=4 contains 4 subshells: 4s, 4p, 4d, 4f.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q23: Which spectral series of Hydrogen atom falls in the visible region?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The Balmer series.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q24. What is the orbital angular momentum of an s-electron?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) h / 2π<br>
-      (C) √2 h / 2π &nbsp;&nbsp;&nbsp;&nbsp; (D) √6 h / 2π
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (A) 0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> For s-electron, l=0 ⟶ L = √l(l+1) h/2π = 0.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q24: Which spectral series of Hydrogen atom falls in the Ultraviolet region?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The Lyman series.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #26C6DA;'>Q25. Charge of 1 mole of electrons is equal to:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1.602 × 10<sup>-19</sup> C &nbsp;&nbsp;&nbsp;&nbsp; (B) 96485 C (1 Faraday)<br>
-      (C) 1.758 × 10<sup>11</sup> C &nbsp;&nbsp;&nbsp;&nbsp; (D) 1000 C
-    </div>
-    <div style="background: rgba(38, 198, 218, 0.15); border-left: 3.5px solid #26C6DA; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #26C6DA;'>✓ Answer: (B) 96485 C (1 Faraday)</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Q = N<sub>A</sub> × e = 6.022 × 10<sup>23</sup> × 1.602 × 10<sup>-19</sup> = 96485 C = 1 F.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q25: State the Rydberg equation for Hydrogen-like species.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &nu;&#772; = 1/&lambda; = R<sub>H</sub> Z<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>], where R<sub>H</sub> = 109,677 cm<sup>-1</sup>.
     </div>
   </div>
-  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #26C6DA; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Short Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q26: What is the de Broglie wavelength formula?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &lambda; = h / p = h / (mv).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q27: State Heisenberg's Uncertainty Principle mathematically.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;x &bull; &Delta;p &ge; h / (4&pi;).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q28: Define an Atomic Orbital.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A 3D region of space around the nucleus where the probability density of finding an electron (&psi;<sup>2</sup>) is maximum (>90%).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q29: What is the physical significance of &psi; and &psi;<sup>2</sup>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &psi; represents the wave function (orbital amplitude), while &psi;<sup>2</sup> represents the probability density of finding an electron.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q30: What are the allowed values of Azimuthal Quantum Number (l) for n = 3?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      l = 0 (s), 1 (p), and 2 (d).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q31: How many orbitals are present in a subshell with l = 2?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      5 orbitals (m<sub>l</sub> = -2, -1, 0, +1, +2).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q32: What is the shape of a 2s orbital?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Spherical.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q33: What is the shape of a 2p orbital?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Dumbbell.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q34: What is the shape of a 3d orbital?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Double dumbbell (except d<sub>z<sup>2</sup></sub> which is dumbbell with a doughnut ring).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q35: State the Aufbau Principle.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In the ground state of atoms, orbitals are filled in order of increasing energies according to the (n + l) rule.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q36: State the (n + l) rule.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      An orbital with lower (n + l) has lower energy; if (n + l) is identical, the orbital with lower n has lower energy.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q37: Which orbital fills first: 4s or 3d?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      4s fills first because its (n + l) = 4 + 0 = 4, whereas 3d has (n + l) = 3 + 2 = 5.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q38: State Pauli's Exclusion Principle.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      No two electrons in an atom can have the same set of all four quantum numbers.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q39: State Hund's Rule of Maximum Multiplicity.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Electron pairing in degenerate orbitals cannot occur until every degenerate orbital is singly occupied with parallel spin.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q40: Write the electronic configuration of Chromium (Z = 24).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      [Ar] 4s<sup>1</sup> 3d<sup>5</sup>.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q26. Define Isotopes and Isobars with 1 example pair each.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Isotopes:</b> Same Z, different A (e.g. <sup>12</sup>C and <sup>14</sup>C).<br><b>Isobars:</b> Different Z, same A (e.g. <sup>40</sup>Ar and <sup>40</sup>Ca).
+  <!-- SECTION B -->
+  <div style="background: linear-gradient(135deg, rgba(38, 198, 218, 0.15), rgba(0, 131, 143, 0.15)); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION B: Short Answer (SA) Questions (2 &amp; 3 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q41 to Q80 &bull; Rydberg Numericals, de Broglie Waves, Uncertainty Calculations &amp; Orbital Shapes</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q41: Differentiate between Cathode Rays and Anode Rays in three key aspects.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Nature:</b> Cathode rays consist of electrons; anode rays consist of positively charged gaseous ions.<br/>2. <b style="color: #26C6DA;">e/m Ratio:</b> Cathode rays have a constant e/m ratio independent of gas; anode rays have e/m ratios that depend on the gas enclosed.<br/>3. <b style="color: #26C6DA;">Origin:</b> Cathode rays originate from the cathode material; anode rays are produced by gas ionization in the tube space.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q27. State Planck's Quantum Theory equation for photon energy.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Energy E = h ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h c</span><span style="display:block; padding:0 4px;">λ</span></span> (where h = 6.626 × 10<sup>-34</sup> J s).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q42: Explain how J.J. Thomson measured the charge-to-mass ratio (e/m) of the electron.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Thomson applied mutually perpendicular electric and magnetic fields across a discharge tube. By adjusting electric field E and magnetic field B so that electrostatic deflection force (eE) exactly balanced magnetic Lorentz force (evB), the electron beam passed undeflected. From velocity v = E/B and measured magnetic deflection, Thomson derived: <b>e/m = E / (r B<sup>2</sup>) = 1.7588 &times; 10<sup>11</sup> C kg<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q28. What are Isoelectronic Species? Give 2 examples.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Species having exact same number of electrons (e.g. Na<sup>+</sup> and Mg<sup>2+</sup>, both have 10 e<sup>-</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q43: Explain Millikan's Oil Drop Experiment and how it determined the quantization of charge.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fine atomized oil droplets falling between two charged capacitor plates acquired electric charges by ionizing air with X-rays. By adjusting electric potential V until the upward electrical force (qE) balanced gravitational force (mg), droplets were suspended stationary. Measured charges on hundreds of droplets were always integral multiples of a fundamental unit: <b>q = n e</b>, where <b>e = 1.6022 &times; 10<sup>-19</sup> C</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q29. Define Photoelectric Effect and Threshold Frequency.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Photoelectric Effect:</b> Ejection of electrons when light hits metal.<br><b>Threshold Frequency (ν<sub>0</sub>):</b> Minimum light frequency required for e<sup>-</sup> ejection.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q44: Define Isotopes, Isobars, and Isotones with one illustrative example each.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Isotopes:</b> Same Z, different A (e.g., <sup>12</sup><sub>6</sub>C and <sup>14</sup><sub>6</sub>C).<br/>2. <b style="color: #26C6DA;">Isobars:</b> Different Z, same A (e.g., <sup>40</sup><sub>18</sub>Ar and <sup>40</sup><sub>20</sub>Ca).<br/>3. <b style="color: #26C6DA;">Isotones:</b> Same number of neutrons N = A - Z (e.g., <sup>14</sup><sub>6</sub>C and <sup>16</sup><sub>8</sub>O, both have N = 8).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q30. State Bohr's quantization condition for electron angular momentum.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span> (where n = 1, 2, 3...).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q45: State the three main observations and corresponding conclusions of Rutherford's alpha scattering experiment.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Observation:</b> >99% &alpha;-particles pass straight undeflected &rArr; <b style="color: #26C6DA;">Conclusion:</b> Most atomic volume is empty space.<br/>2. <b style="color: #26C6DA;">Observation:</b> Small fraction deflected by large angles &rArr; <b style="color: #26C6DA;">Conclusion:</b> Positive charge is concentrated in a tiny central region (nucleus).<br/>3. <b style="color: #26C6DA;">Observation:</b> 1 in 20,000 rebounds at ~180&deg; &rArr; <b style="color: #26C6DA;">Conclusion:</b> The nucleus contains virtually the entire mass of the atom.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q31. Calculate radius of 2nd stationary orbit (n=2) of Hydrogen atom.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      r<sub>2</sub> = 0.529 × 2<sup>2</sup> = <b>2.116 Å (0.2116 nm)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q46: Why does Maxwell's electromagnetic theory predict the collapse of Rutherford's atom?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      According to classical electrodynamics, an orbital electron in circular motion experiences centripetal acceleration. An accelerating charged particle must continuously radiate electromagnetic energy. As it radiates, its orbital radius must shrink continuously, causing the electron to spiral into the nucleus within ~10<sup>-8</sup> s. Since real atoms are stable, Rutherford's classical model fails.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q32. Calculate energy of an electron in 1st orbit (n=1) of H atom in Joules.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      E<sub>1</sub> = -2.18 × 10<sup>-18</sup> × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1<sup>2</sup></span><span style="display:block; padding:0 4px;">1<sup>2</sup></span></span> = <b>-2.18 × 10<sup>-18</sup> J</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q47: Explain the Photoelectric Effect and define Threshold Frequency (&nu;<sub>0</sub>) and Work Function (W<sub>0</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The ejection of electrons from a metal surface when light of suitable frequency strikes it. <b style="color: #26C6DA;">Threshold Frequency (&nu;<sub>0</sub>):</b> The minimum radiation frequency required to eject photoelectrons with zero kinetic energy. <b style="color: #26C6DA;">Work Function (W<sub>0</sub> = h&nu;<sub>0</sub>):</b> The minimum binding energy holding the electron in the metal lattice.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q33. State de Broglie relationship and write its mathematical formula.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Matter particles possess dual wave-particle nature. Wavelength λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">m v</span></span>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q48: Derive Einstein's photoelectric equation: h&nu; = W<sub>0</sub> + KE<sub>max</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Einstein applied Planck's quantum theory: an incident photon delivers energy E = h&nu; to a single bound electron. Part of this energy is consumed in overcoming the lattice binding energy (work function W<sub>0</sub> = h&nu;<sub>0</sub>), and the remaining energy is imparted as maximum kinetic energy to the ejected photoelectron: <b>h&nu; = h&nu;<sub>0</sub> + <sup>1</sup>/<sub>2</sub> m<sub>e</sub> v<sub>max</sub><sup>2</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q34. Calculate de Broglie wavelength of an electron moving with velocity 1.0 × 10<sup>6</sup> m s<sup>-1</sup>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">9.1 × 10<sup>-31</sup> × 10<sup>6</sup></span></span> = <b>7.28 × 10<sup>-10</sup> m (0.728 nm)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q49: State Bohr's postulates of stationary orbits and frequency condition.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Stationary Orbits:</b> Electrons revolve only in certain discrete, non-radiating orbits where angular momentum L = mvr = n(h / 2&pi;).<br/>2. <b style="color: #26C6DA;">Frequency Condition:</b> Radiation is emitted or absorbed only when an electron jumps between two stationary orbits: <b>&Delta;E = E<sub>2</sub> - E<sub>1</sub> = h&nu; = hc / &lambda;</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q35. State Heisenberg Uncertainty Principle formula.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Δx · Δp ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span> &nbsp;&nbsp; or &nbsp;&nbsp; Δx · (m Δv) ≥ <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π</span></span>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q50: Calculate the radius of the 2nd Bohr orbit of Li<sup>2+</sup> ion.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formula: r<sub>n</sub> = 0.529 &times; (n<sup>2</sup> / Z) &Aring;.<br/>For Li<sup>2+</sup>: Z = 3, n = 2.<br/>r<sub>2</sub> = 0.529 &times; (2<sup>2</sup> / 3) = 0.529 &times; (4 / 3) = <b>0.705 &Aring; (or 70.53 pm)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q36. Define Atomic Orbital and differentiate it from Bohr Orbit.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Orbit:</b> Well-defined circular path.<br><b>Orbital:</b> 3D space region around nucleus where probability of finding e<sup>-</sup> is maximum (≥90%).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q51: Calculate the energy of an electron in the 3rd orbit of He<sup>+</sup> ion.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formula: E<sub>n</sub> = -13.6 &times; (Z<sup>2</sup> / n<sup>2</sup>) eV.<br/>For He<sup>+</sup>: Z = 2, n = 3.<br/>E<sub>3</sub> = -13.6 &times; (2<sup>2</sup> / 3<sup>2</sup>) = -13.6 &times; (4 / 9) = <b>-6.04 eV (or -9.68 &times; 10<sup>-19</sup> J)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q37. State Principal and Azimuthal quantum numbers for 3d orbital.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      For 3d orbital: Principal n = <b>3</b>, Azimuthal l = <b>2</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q52: Explain the Lyman, Balmer, and Paschen series of the Hydrogen spectrum with transitions and spectral regions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Lyman:</b> Transitions from n<sub>2</sub> &ge; 2 to n<sub>1</sub> = 1; Spectral region: <b>Ultraviolet (UV)</b>.<br/>2. <b style="color: #26C6DA;">Balmer:</b> Transitions from n<sub>2</sub> &ge; 3 to n<sub>1</sub> = 2; Spectral region: <b>Visible</b>.<br/>3. <b style="color: #26C6DA;">Paschen:</b> Transitions from n<sub>2</sub> &ge; 4 to n<sub>1</sub> = 3; Spectral region: <b>Infrared (IR)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q38. How many radial and angular nodes are present in 4p orbital?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Angular nodes = l = 1. Radial nodes = n - l - 1 = 4 - 1 - 1 = 2. Total nodes = <b>3</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q53: Calculate the wavenumber and wavelength of the first line of the Balmer series of Hydrogen.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      First line (H<sub>&alpha;</sub>): n<sub>1</sub> = 2, n<sub>2</sub> = 3, Z = 1.<br/>&nu;&#772; = R<sub>H</sub> [1/2<sup>2</sup> - 1/3<sup>2</sup>] = 109,677 &times; [1/4 - 1/9] = 109,677 &times; (5/36) = <b>15,232.9 cm<sup>-1</sup></b>.<br/>&lambda; = 1 / &nu;&#772; = 1 / 15,232.9 cm<sup>-1</sup> = 6.565 &times; 10<sup>-5</sup> cm = <b>656.5 nm (Red line)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q39. State Aufbau Principle and arrange 3d, 4s, 4p, 5s in increasing energy order.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Electrons fill lowest energy orbitals first. Energy order: <b>4s < 3d < 4p < 5s</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q54: How many spectral lines are emitted when an electron in Hydrogen atom drops from n = 5 to ground state n = 1?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formula: Total lines N = [n(n - 1)] / 2.<br/>For n = 5: N = [5(5 - 1)] / 2 = (5 &times; 4) / 2 = <b>10 spectral lines</b> (4 Lyman, 3 Balmer, 2 Paschen, 1 Brackett).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q40. State Pauli Exclusion Principle.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      No two electrons in an atom can have the exact same set of all four quantum numbers.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q55: State four major limitations of Bohr's atomic model.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Inapplicable to multi-electron atoms.<br/>2. Could not explain fine structure (doublets/triplets) of spectral lines.<br/>3. Failed to explain the Zeeman effect (magnetic splitting) and Stark effect (electric splitting).<br/>4. Contradicted de Broglie's wave hypothesis and Heisenberg's uncertainty principle.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q41. State Hund's Rule of Maximum Multiplicity.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Electron pairing in degenerate orbitals occurs only after each orbital in subshell is singly occupied with parallel spins.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q56: State the de Broglie hypothesis and derive &lambda; = h / (mv).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      de Broglie proposed that moving particles have associated wave character. Combining Planck's relation E = hc/&lambda; and Einstein's E = mc<sup>2</sup> gives: hc/&lambda; = mc<sup>2</sup> &rArr; &lambda; = h / (mc). For a material particle of mass m moving with velocity v, momentum p = mv, yielding: <b>&lambda; = h / p = h / (mv)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q42. Write electronic configuration of Chromium (Z=24) and explain why it is anomalous.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>[Ar] 3d<sup>5</sup> 4s<sup>1</sup></b>. Anomalous because half-filled d<sup>5</sup> subshell provides extra stability.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q57: Calculate the de Broglie wavelength of an electron moving with a velocity of 2.05 &times; 10<sup>7</sup> m s<sup>-1</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &lambda; = h / (m v) = (6.626 &times; 10<sup>-34</sup>) / [(9.11 &times; 10<sup>-31</sup>) &times; (2.05 &times; 10<sup>7</sup>)] = (6.626 &times; 10<sup>-34</sup>) / (1.8675 &times; 10<sup>-23</sup>) = <b>3.55 &times; 10<sup>-11</sup> m = 0.0355 nm</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q43. Write electronic configuration of Copper (Z=29) and Cu<sup>2+</sup> ion.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Cu: <b>[Ar] 3d<sup>10</sup> 4s<sup>1</sup></b> | Cu<sup>2+</sup>: <b>[Ar] 3d<sup>9</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q58: Why is the wave nature of matter not observable in macroscopic everyday objects (like a cricket ball)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A cricket ball of mass m = 0.15 kg moving at 20 m/s has &lambda; = h / (mv) = 6.626 &times; 10<sup>-34</sup> / (0.15 &times; 20) &approx; <b>2.2 &times; 10<sup>-34</sup> m</b>. This wavelength is trillions of times smaller than atomic dimensions and completely undetectable, so macroscopic matter exhibits purely particle behavior.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q44. Why are half-filled and completely filled subshells extra stable?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Due to <b>1. Symmetrical charge distribution</b> and <b>2. Maximum exchange energy</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q59: State Heisenberg's Uncertainty Principle and explain its physical significance.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      It is impossible to determine simultaneously both the exact position and exact momentum of a subatomic particle: <b>&Delta;x &bull; &Delta;p &ge; h / 4&pi;</b>. Physically, to locate an electron, a high-energy photon must scatter off it; the collision imparts significant momentum, uncontrollably altering its velocity.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q45. Define Zeeman Effect and Stark Effect.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Zeeman:</b> Splitting of spectral lines in magnetic field.<br><b>Stark:</b> Splitting of spectral lines in electric field.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q60: A microscope using suitable photons is employed to locate an electron within a distance of 0.1 &Aring;. What is the uncertainty in its velocity?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &Delta;x = 0.1 &Aring; = 10<sup>-11</sup> m.<br/>&Delta;v &ge; h / (4&pi; m &Delta;x) = (6.626 &times; 10<sup>-34</sup>) / [4 &times; 3.1416 &times; (9.11 &times; 10<sup>-31</sup>) &times; 10<sup>-11</sup>] = 6.626 &times; 10<sup>-34</sup> / 1.1448 &times; 10<sup>-40</sup> = <b>5.79 &times; 10<sup>6</sup> m s<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q46. Calculate maximum number of electrons present in subshell with l = 3 (f-subshell).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Capacity = 2(2l + 1) = 2(2×3 + 1) = <b>14 electrons</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q61: Show that an electron cannot exist within the atomic nucleus using Heisenberg's Uncertainty Principle.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nuclear diameter is ~10<sup>-15</sup> m, so maximum position uncertainty &Delta;x &approx; 10<sup>-15</sup> m.<br/>&Delta;p &ge; h / (4&pi;&Delta;x) &approx; 6.626 &times; 10<sup>-34</sup> / (4 &times; 3.14 &times; 10<sup>-15</sup>) &approx; 5.27 &times; 10<sup>-20</sup> kg m/s.<br/>Minimum velocity v &approx; &Delta;p / m &approx; 5.27 &times; 10<sup>-20</sup> / 9.11 &times; 10<sup>-31</sup> &approx; <b>5.8 &times; 10<sup>10</sup> m/s > c</b>. Since velocity cannot exceed light speed, electrons cannot reside within the nucleus.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q47. State 2 main drawbacks of Rutherford's nuclear atomic model.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      1. Could not explain atomic electrostatic stability (accelerating e<sup>-</sup> radiating energy).<br>2. Could not explain discrete line spectrum.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q62: Differentiate between an Orbit and an Orbital in four fundamental aspects.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #26C6DA;">Definition:</b> Orbit is a definite circular 2D planar path (Bohr); orbital is a 3D region of high electron probability density (&psi;<sup>2</sup> > 90%).<br/>2. <b style="color: #26C6DA;">Uncertainty Principle:</b> Orbit violates Heisenberg's principle; orbital complies with it.<br/>3. <b style="color: #26C6DA;">Geometry:</b> Orbits are all planar circles; orbitals have distinct 3D shapes (s spherical, p dumbbell, d double dumbbell).<br/>4. <b style="color: #26C6DA;">Electron Capacity:</b> Orbit holds 2n<sup>2</sup> electrons; any orbital holds a maximum of 2 electrons.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q48. Calculate frequency of radiation emitted when e<sup>-</sup> jumps from n=2 to n=1 in H atom (ΔE = 1.635 × 10<sup>-18</sup> J).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      ν = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">ΔE</span><span style="display:block; padding:0 4px;">h</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1.635 × 10<sup>-18</sup></span><span style="display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span></span> = <b>2.47 × 10<sup>15</sup> Hz</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q63: Explain the physical significance of Principal (n) and Azimuthal (l) Quantum Numbers.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">Principal (n):</b> Determines the primary energy shell, average distance of electron from the nucleus, and maximum electron capacity (2n<sup>2</sup>). <b style="color: #26C6DA;">Azimuthal (l):</b> Determines the subshell, 3D geometric shape of the orbital, and orbital angular momentum L = &radic;[l(l+1)] (h/2&pi;).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q49. State physical significance of wave function Ψ and probability density Ψ<sup>2</sup>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Ψ:</b> Wave amplitude (no physical meaning).<br><b>Ψ<sup>2</sup>:</b> Probability density of finding e<sup>-</sup> at a point.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q64: Explain the physical significance of Magnetic (m<sub>l</sub>) and Spin (m<sub>s</sub>) Quantum Numbers.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">Magnetic (m<sub>l</sub>):</b> Determines spatial orientation of degenerate orbitals in a magnetic field; values from -l to +l (total 2l+1). <b style="color: #26C6DA;">Spin (m<sub>s</sub>):</b> Determines intrinsic spin orientation of the electron around its own axis (+1/2 &uarr; or -1/2 &darr;).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q50. Write all 4 quantum numbers for the 3s electron of Sodium (Z=11).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      n = <b>3</b>, l = <b>0</b>, m<sub>l</sub> = <b>0</b>, m<sub>s</sub> = <b>+<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q65: What is a Nodal Plane (or Angular Node) and how many nodal planes exist in 3p and 3d orbitals?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A nodal surface where electron probability density &psi;<sup>2</sup> is zero. Number of angular nodes = l.<br/>&bull; For 3p orbital: l = 1 &rArr; <b>1 angular nodal plane</b>.<br/>&bull; For 3d orbital: l = 2 &rArr; <b>2 angular nodal planes</b> (except d<sub>z<sup>2</sup></sub> which has 2 nodal cones).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q51. Distinguish between continuous spectrum and line emission spectrum.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      <b>Continuous:</b> All wavelengths merge without gaps (e.g. Rainbow).<br><b>Line Spectrum:</b> Discrete sharp bright lines separated by dark spaces (e.g. Atomic H spectrum).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q66: Calculate the number of radial nodes, angular nodes, and total nodes for a 4d orbital.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For 4d: n = 4, l = 2.<br/>&bull; Radial nodes = n - l - 1 = 4 - 2 - 1 = <b>1 radial node</b>.<br/>&bull; Angular nodes = l = <b>2 angular nodes</b>.<br/>&bull; Total nodes = n - 1 = 4 - 1 = <b>3 total nodes</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q52. Calculate wave number of photon with wavelength λ = 500 nm.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      ν̅ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">500 × 10<sup>-9</sup> m</span></span> = <b>2.0 × 10<sup>6</sup> m<sup>-1</sup> (20000 cm<sup>-1</sup>)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q67: Explain the shapes and orientations of the three degenerate 2p orbitals (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      All three p orbitals have dumbbell shapes consisting of two symmetrical lobes separated by a nodal plane through the nucleus. They are mutually perpendicular: <b>p<sub>x</sub></b> lies along the x-axis (nodal plane yz); <b>p<sub>y</sub></b> lies along the y-axis (nodal plane xz); <b>p<sub>z</sub></b> lies along the z-axis (nodal plane xy). In the absence of external fields, they are triply degenerate.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q53. Calculate uncertainty in momentum (Δp) if uncertainty in position Δx = 1.0 Å (10<sup>-10</sup> m).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      Δp = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π Δx</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">4 × 3.1416 × 10<sup>-10</sup></span></span> = <b>5.27 × 10<sup>-25</sup> kg m s<sup>-1</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q68: Describe the shapes of the five 3d orbitals, distinguishing between axial and non-axial orbitals.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">Non-Axial (Lobes between axes):</b> d<sub>xy</sub>, d<sub>yz</sub>, and d<sub>zx</sub> have four lobes directed at 45&deg; between the coordinate axes. <b style="color: #26C6DA;">Axial (Lobes along axes):</b> d<sub>x<sup>2</sup>-y<sup>2</sup></sub> has four lobes lying directly along the x and y axes; d<sub>z<sup>2</sup></sub> has two lobes along the z axis with a concentric doughnut ring in the xy plane.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q54. Why cannot 2p subshell have l = 2?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      For n = 2, maximum value of l is n - 1 = 1. Hence l = 2 (d subshell) is impossible for n=2!
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q69: State the (n + l) rule and arrange the following orbitals in order of increasing energy: 4s, 3p, 3d, 4p, 5s.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (n + l) values: 3p (3+1=4), 4s (4+0=4), 3d (3+2=5), 4p (4+1=5), 5s (5+0=5).<br/>Applying lower n when (n + l) is equal: <b>3p &lt; 4s &lt; 3d &lt; 4p &lt; 5s</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q55. Which 3d subshell orbital is doughnut-ring shaped?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Answer:</b><br>
-      The <b>d<sub>z<sup>2</sup></sub></b> orbital has a doughnut-ring electron density cone around z-axis.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q70: Explain Pauli's Exclusion Principle with Helium (He) atom electron configurations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Helium has two electrons in the 1s subshell. For electron 1: n=1, l=0, m<sub>l</sub>=0, m<sub>s</sub>=+1/2. For electron 2: n=1, l=0, m<sub>l</sub>=0, m<sub>s</sub>=-1/2. The first three quantum numbers are identical, so m<sub>s</sub> must differ. Hence, an orbital holds at most 2 electrons with opposite spins: <b>1s<sup>&uarr;&darr;</sup></b>.
     </div>
   </div>
-  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #26C6DA; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Step Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q71: Explain Hund's Rule of Maximum Multiplicity with the electronic configuration of Nitrogen (Z = 7).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>. The three 2p electrons occupy separate degenerate orbitals with parallel spins: <b>2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup> (&uarr; &uarr; &uarr;)</b>, rather than pairing up as 2p<sub>x</sub><sup>2</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>0</sup>. This maximizes total spin (S = 3/2) and exchange stability.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q72: Why is the ground-state electronic configuration of Chromium [Ar] 4s<sup>1</sup> 3d<sup>5</sup> instead of [Ar] 4s<sup>2</sup> 3d<sup>4</sup>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Transferring one electron from 4s to 3d creates a half-filled 3d<sup>5</sup> subshell. This offers: (1) perfect spherical symmetry, and (2) maximum exchange energy from 10 possible electron exchanges among parallel spins, providing stabilization energy that exceeds the 4s &rarr; 3d promotion energy.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q73: Why is the electronic configuration of Copper [Ar] 4s<sup>1</sup> 3d<sup>10</sup> instead of [Ar] 4s<sup>2</sup> 3d<sup>9</sup>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A completely filled d-subshell (3d<sup>10</sup>) possesses complete spherical symmetry and maximum exchange energy from 10 + 10 = 20 possible pairwise exchanges, providing immense thermodynamic stabilization over the partially filled 4s<sup>2</sup> 3d<sup>9</sup> state.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q74: Calculate the total number of electrons in an atom that can have the quantum numbers n = 4, m<sub>s</sub> = -1/2.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In principal shell n = 4, total orbitals = n<sup>2</sup> = 4<sup>2</sup> = 16 orbitals. Each orbital can hold exactly one electron with m<sub>s</sub> = -1/2. Therefore, total electrons with m<sub>s</sub> = -1/2 is <b>16 electrons</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q75: Write the electronic configurations of Fe<sup>2+</sup> and Fe<sup>3+</sup> ions (Z = 26).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Neutral Fe: [Ar] 4s<sup>2</sup> 3d<sup>6</sup>.<br/>&bull; Fe<sup>2+</sup> (loses two 4s electrons): <b>[Ar] 3d<sup>6</sup></b>.<br/>&bull; Fe<sup>3+</sup> (loses two 4s and one 3d electron): <b>[Ar] 3d<sup>5</sup></b> (stable half-filled subshell).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q76: Explain why Fe<sup>3+</sup> is chemically more stable than Fe<sup>2+</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fe<sup>3+</sup> has a half-filled d<sup>5</sup> configuration ([Ar] 3d<sup>5</sup>) with symmetrical distribution and maximum exchange energy (10 exchanges). Fe<sup>2+</sup> has [Ar] 3d<sup>6</sup> which lacks half-filled symmetry, making Fe<sup>3+</sup> more stable toward oxidation.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q77: Explain the Zeeman effect and Stark effect and why Bohr's model failed to explain them.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">Zeeman Effect:</b> Splitting of spectral lines in an external magnetic field. <b style="color: #26C6DA;">Stark Effect:</b> Splitting of spectral lines in an external electric field. Caused by lifting the degeneracy of orbitals with different m<sub>l</sub> values, which Bohr's 2D planar orbit model could not account for.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q78: What is the maximum number of emission lines observed when the excited electron of an H atom drops from n = 6 to n = 2?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formula: N = [(n<sub>2</sub> - n<sub>1</sub>)(n<sub>2</sub> - n<sub>1</sub> + 1)] / 2.<br/>Here n<sub>2</sub> = 6, n<sub>1</sub> = 2 &rArr; n<sub>2</sub> - n<sub>1</sub> = 4.<br/>N = [4 &times; (4 + 1)] / 2 = (4 &times; 5) / 2 = <b>10 spectral lines</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q79: Define Black Body Radiation and explain how Planck resolved the ultraviolet catastrophe.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A black body absorbs and emits all frequencies of radiation. Classical Rayleigh-Jeans theory predicted infinite radiated energy at ultraviolet frequencies (ultraviolet catastrophe). Max Planck resolved this by postulating energy is emitted only in quantized packets E = nh&nu;, matching experimental black body emission curves.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q80: Calculate the frequency and wavelength of a photon having energy 3.03 &times; 10<sup>-19</sup> Joules.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Energy E = h&nu; &rArr; &nu; = E / h = (3.03 &times; 10<sup>-19</sup>) / (6.626 &times; 10<sup>-34</sup>) = <b>4.57 &times; 10<sup>14</sup> Hz (s<sup>-1</sup>)</b>.<br/>Wavelength &lambda; = c / &nu; = (3.0 &times; 10<sup>8</sup>) / (4.57 &times; 10<sup>14</sup>) = 6.56 &times; 10<sup>-7</sup> m = <b>656 nm</b>.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q56. Explain J.J. Thomson's Cathode Ray Discharge Tube experiment. List 4 main properties of cathode rays.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      High voltage across low pressure gas produces rays from cathode to anode.<br><b>Properties:</b> 1. Travel in straight lines. 2. Carry kinetic energy. 3. Deflected by electric/magnetic fields (negatively charged). 4. Universal e/m ratio.
+  <!-- SECTION C -->
+  <div style="background: linear-gradient(135deg, rgba(38, 198, 218, 0.15), rgba(0, 131, 143, 0.15)); border: 1.5px solid rgba(38, 198, 218, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION C: Long Answer (LA) Questions (5 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q81 to Q100 &bull; Master Bohr Derivations, Quantum Models, Exchange Energy Proofs &amp; Multi-Step Problems</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q81: Describe Rutherford's Alpha Scattering Experiment: Experimental setup, Observations, Conclusions, Nuclear Model of Atom, and Classical Limitations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Experimental Setup:</b> High-energy &alpha;-particles (<sup>4</sup><sub>2</sub>He<sup>2+</sup>) from a radioactive source were collimated and directed at an ultra-thin gold foil (~100 nm thick). Scattered particles struck a circular ZnS screen, generating flashes detected with a microscope.<br/><br/><b style="color: #26C6DA;">2. Key Observations:</b> (a) >99% passed undeflected. (b) Small fraction suffered wide deflections (>90&deg;). (c) ~1 in 20,000 rebounded backward (&theta; ~ 180&deg;).<br/><br/><b style="color: #26C6DA;">3. Rutherford's Nuclear Model:</b> (a) Atom consists of a dense, positively charged nucleus containing all mass and positive charge. (b) Nuclear radius (~10<sup>-15</sup> m) is tiny compared to atomic radius (~10<sup>-10</sup> m). (c) Electrons revolve in circular orbits like planets around the Sun, held by Coulombic attraction F<sub>e</sub> = (1/4&pi;&epsilon;<sub>0</sub>)(Ze<sup>2</sup>/r<sup>2</sup>) = m<sub>e</sub>v<sup>2</sup>/r.<br/><br/><b style="color: #26C6DA;">4. Drawbacks:</b> Contradicted Maxwell's electrodynamics (accelerating electron must radiate energy, spiraling into nucleus within 10<sup>-8</sup> s); could not explain atomic line spectra or electronic configurations.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q57. Explain Rutherford's Alpha Particle Scattering Experiment. List 3 key observations and conclusions leading to Nuclear Model.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Alpha particles shot at Gold foil.<br>1. >99.9% undeviated ⟶ Most space empty.<br>2. Small deflections ⟶ Positive core.<br>3. 1 in 20000 bounced 180° ⟶ Dense tiny <b>Nucleus</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q82: State Bohr's Postulates for Hydrogen Atom: Complete derivation of Orbital Radius (r<sub>n</sub>) and Total Energy (E<sub>n</sub>) of electron in n-th orbit.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Derivation of Radius:</b> Coulombic attraction balances centripetal force: (k Z e<sup>2</sup>) / r<sup>2</sup> = (m v<sup>2</sup>) / r &rArr; v<sup>2</sup> = (k Z e<sup>2</sup>) / (m r).<br/>From quantization condition: m v r = n h / (2&pi;) &rArr; v = (n h) / (2&pi; m r).<br/>Equating: [(n h) / (2&pi; m r)]<sup>2</sup> = (k Z e<sup>2</sup>) / (m r) &rArr; <b>r<sub>n</sub> = [n<sup>2</sup> h<sup>2</sup> &epsilon;<sub>0</sub>] / [&pi; m Z e<sup>2</sup>] = 0.529 &times; (n<sup>2</sup> / Z) &Aring;</b>.<br/><br/><b style="color: #26C6DA;">2. Derivation of Energy:</b> Total Energy E = KE + PE.<br/>KE = <sup>1</sup>/<sub>2</sub> m v<sup>2</sup> = (k Z e<sup>2</sup>) / (2 r). PE = -(k Z e<sup>2</sup>) / r.<br/>E = (k Z e<sup>2</sup>) / (2 r) - (k Z e<sup>2</sup>) / r = <b>-(k Z e<sup>2</sup>) / (2 r)</b>.<br/>Substituting r<sub>n</sub>: <b>E<sub>n</sub> = -[m Z<sup>2</sup> e<sup>4</sup>] / [8 &epsilon;<sub>0</sub><sup>2</sup> h<sup>2</sup> n<sup>2</sup>] = -2.18 &times; 10<sup>-18</sup> &times; (Z<sup>2</sup> / n<sup>2</sup>) J/atom = -13.6 &times; (Z<sup>2</sup> / n<sup>2</sup>) eV</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q58. Explain 4 postulates of Bohr's Model of Hydrogen atom. Derive formula for angular momentum quantization.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      1. Stationary non-radiating orbits. 2. Quantized angular momentum m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span>. 3. Energy constant in orbit. 4. Photon absorption/emission ΔE = h ν = E<sub>2</sub> - E<sub>1</sub>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q83: Explain the Hydrogen Emission Spectrum in full detail: Rydberg Formula derivation, Spectral Series (Lyman, Balmer, Paschen, Brackett, Pfund), and Energy Level Diagram.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Rydberg Derivation:</b> &Delta;E = E<sub>2</sub> - E<sub>1</sub> = h&nu; = hc / &lambda;.<br/>Substitute Bohr's energy: hc / &lambda; = 2.18 &times; 10<sup>-18</sup> Z<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>].<br/>&nu;&#772; = 1/&lambda; = [2.18 &times; 10<sup>-18</sup> / (hc)] Z<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>] = <b>R<sub>H</sub> Z<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>]</b>, where R<sub>H</sub> = 109,677 cm<sup>-1</sup>.<br/><br/><b style="color: #26C6DA;">2. Spectral Series:</b><br/>&bull; <i>Lyman:</i> n<sub>1</sub> = 1, n<sub>2</sub> = 2, 3, 4... (UV region).<br/>&bull; <i>Balmer:</i> n<sub>1</sub> = 2, n<sub>2</sub> = 3, 4, 5... (Visible region).<br/>&bull; <i>Paschen:</i> n<sub>1</sub> = 3, n<sub>2</sub> = 4, 5, 6... (Near IR).<br/>&bull; <i>Brackett:</i> n<sub>1</sub> = 4, n<sub>2</sub> = 5, 6, 7... (Mid IR).<br/>&bull; <i>Pfund:</i> n<sub>1</sub> = 5, n<sub>2</sub> = 6, 7, 8... (Far IR).<br/><br/><b style="color: #26C6DA;">3. Line Calculation:</b> First line has smallest &Delta;E (longest &lambda;); series limit has n<sub>2</sub> = &infin; (shortest &lambda;).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q59. Explain Hydrogen emission spectral series (Lyman, Balmer, Paschen, Brackett, Pfund). State Rydberg equation.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Electrons falling to n<sub>1</sub> emit photons:<br>• Lyman (n<sub>1</sub>=1, UV), Balmer (n<sub>1</sub>=2, Visible), Paschen (n<sub>1</sub>=3, IR), Brackett (n<sub>1</sub>=4, IR), Pfund (n<sub>1</sub>=5, IR).<br>• Rydberg: ν̅ = R<sub>H</sub> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>] (R<sub>H</sub> = 109677 cm<sup>-1</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q84: Discuss the Dual Nature of Matter (de Broglie Relation) and Heisenberg Uncertainty Principle: Derivations, experimental verifications, and quantum implications.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. de Broglie Hypothesis:</b> All matter possesses wave-particle duality. For photon: E = hc/&lambda; = pc &rArr; &lambda; = h/p. Generalizing to particle of mass m and velocity v: <b>&lambda; = h / (mv)</b>. Verified by Davisson-Germer electron diffraction experiment.<br/><br/><b style="color: #26C6DA;">2. Heisenberg Uncertainty Principle:</b> &Delta;x &bull; &Delta;p &ge; h / (4&pi;). Born from wave packet nature of particles: confining a wave packet in space (&Delta;x &rarr; 0) introduces a broad spectrum of wave numbers, making momentum highly uncertain (&Delta;p &rarr; &infin;).<br/><br/><b style="color: #26C6DA;">3. Macroscopic vs Microscopic:</b> For a 0.1 kg ball, &Delta;x &bull; &Delta;v ~ 10<sup>-33</sup> m<sup>2</sup>/s (completely undetectable); for an electron (m ~ 10<sup>-30</sup> kg), &Delta;x &bull; &Delta;v ~ 10<sup>-4</sup> m<sup>2</sup>/s (enormous, invalidating classical deterministic orbits).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q60. Explain Photoelectric Effect experiment. Define Work Function (hν<sub>0</sub>) and derive Einstein's Photoelectric Equation.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Ejection of e<sup>-</sup> when light hits metal. Photon energy = Work function + Max KE:<br><span style='color:#FFF; font-weight:bold;'>h ν = h ν<sub>0</sub> + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m v<sup>2</sup><sub>max</sub></span>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q85: Detail all Four Quantum Numbers (n, l, m_l, m_s): Significance, allowed values, physical meaning, and complete orbital capacities.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Principal (n):</b> n = 1, 2, 3, 4... Determines size, primary energy shell, and total electrons (2n<sup>2</sup>). Total orbitals = n<sup>2</sup>.<br/><br/><b style="color: #26C6DA;">2. Azimuthal (l):</b> l = 0, 1, 2, ..., (n-1). Determines orbital subshell, 3D shape, and orbital angular momentum L = &radic;[l(l+1)] (h/2&pi;). s(0), p(1), d(2), f(3).<br/><br/><b>3. Magnetic (m<sub>l</sub>):</b> m<sub>l</sub> = -l, ..., 0, ..., +l (total 2l + 1 values). Determines spatial orientation in magnetic fields.<br/><br/><b>4. Spin (m<sub>s</sub>):</b> m<sub>s</sub> = +1/2 (&uarr;) or -1/2 (&darr;). Designates clockwise or counter-clockwise electron spin about its own axis.<br/><br/><b style="color: #26C6DA;">5. Shell Capacity Matrix:</b> For n = 3: l = 0 (1 orb), l = 1 (3 orbs), l = 2 (5 orbs) &rArr; 9 orbitals, maximum 18 electrons.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q61. Calculate longest wavelength line in Balmer series of Hydrogen spectrum (R<sub>H</sub> = 1.097 × 10<sup>7</sup> m<sup>-1</sup>).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Balmer series n<sub>1</sub>=2. Longest wavelength corresponds to smallest ΔE (n<sub>2</sub>=3):<br>ν̅ = 1.097 × 10<sup>7</sup> (1/4 - 1/9) = 1.097 × 10<sup>7</sup> × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">5</span><span style="display:block; padding:0 4px;">36</span></span> = 1.524 × 10<sup>6</sup> m<sup>-1</sup>.<br>λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">1.524 × 10<sup>6</sup></span></span> = <b>656.3 nm (Red Balmer line)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q86: Explain the Concept of Atomic Orbitals and Probability Density (&psi;<sup>2</sup>): Radial and Angular wave functions, Radial Distribution Curves, and Nodes.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Schr&ouml;dinger Wave Function:</b> &psi;(r, &theta;, &phi;) = R(r) &bull; Y(&theta;, &phi;). &psi; has no direct physical meaning; Max Born established that <b>&psi;<sup>2</sup>dV</b> is the probability of finding the electron in volume dV.<br/><br/><b style="color: #26C6DA;">2. Radial Distribution Function:</b> 4&pi;r<sup>2</sup> R<sup>2</sup>(r) dr gives the probability of finding the electron at distance r in a spherical shell of thickness dr.<br/>&bull; 1s has a single maximum at Bohr radius r = 0.529 &Aring;.<br/>&bull; 2s has a smaller inner maximum, a radial node (&psi;<sup>2</sup> = 0), and a larger outer maximum.<br/><br/><b style="color: #26C6DA;">3. Nodes:</b> Surfaces where electron probability is zero.<br/>&bull; Radial Nodes = n - l - 1.<br/>&bull; Angular Nodes = l.<br/>&bull; Total Nodes = n - 1.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q62. Explain 4 Quantum Numbers (n, l, m_l, m_s) with their physical significance and allowed values.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      • <b>Principal n:</b> Shell energy/size (1..∞).<br>• <b>Azimuthal l:</b> Subshell shape (0..n-1).<br>• <b>Magnetic m<sub>l</sub>:</b> 3D orientation (-l..+l).<br>• <b>Spin m<sub>s</sub>:</b> Spin orientation (±<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q87: Discuss the Rules for Filling Electrons in Orbitals: Aufbau Principle, (n + l) Rule, Pauli's Exclusion Principle, and Hund's Rule of Maximum Multiplicity.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Aufbau Principle:</b> Orbitals are filled in increasing order of energy: 1s &lt; 2s &lt; 2p &lt; 3s &lt; 3p &lt; 4s &lt; 3d &lt; 4p &lt; 5s...<br/><br/><b style="color: #26C6DA;">2. (n + l) Rule:</b> Orbital with lower (n + l) fills first (4s has 4+0=4, 3d has 3+2=5 &rArr; 4s fills before 3d). If equal, lower n fills first (3d vs 4p: both 5, 3d fills first).<br/><br/><b style="color: #26C6DA;">3. Pauli's Exclusion Principle:</b> No two electrons can have identical four quantum numbers; an orbital holds at most 2 electrons of opposite spins.<br/><br/><b style="color: #26C6DA;">4. Hund's Rule:</b> In degenerate orbitals, electrons remain unpaired with parallel spins until each orbital is singly occupied, minimizing electrostatic repulsion and maximizing exchange stabilization energy.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q63. Explain Aufbau Principle, Pauli Exclusion Principle, and Hund's Rule with examples.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      • <b>Aufbau:</b> Fill lowest (n+l) energy first.<br>• <b>Pauli:</b> Max 2 e<sup>-</sup> per orbital with opposite spins.<br>• <b>Hund:</b> Single filling with parallel spins before pairing in degenerate subshell.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q88: Explain the Exceptional Electronic Configurations of Chromium (Z = 24) and Copper (Z = 29) with complete Exchange Energy calculations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Configurations:</b> Cr is [Ar] 4s<sup>1</sup> 3d<sup>5</sup> (not 4s<sup>2</sup> 3d<sup>4</sup>); Cu is [Ar] 4s<sup>1</sup> 3d<sup>10</sup> (not 4s<sup>2</sup> 3d<sup>9</sup>).<br/><br/><b style="color: #26C6DA;">2. Exchange Energy Derivation:</b> Parallel spin electrons can exchange positions. For n parallel electrons, total exchanges K = [n(n - 1)] / 2.<br/>&bull; For 3d<sup>4</sup>: K = 4(3)/2 = <b>6 exchanges</b>.<br/>&bull; For 3d<sup>5</sup>: K = 5(4)/2 = <b>10 exchanges</b> (4 extra exchanges).<br/>&bull; For 3d<sup>9</sup>: Exchanges = 10 (spin up) + 6 (spin down) = 16.<br/>&bull; For 3d<sup>10</sup>: Exchanges = 10 + 10 = <b>20 exchanges</b> (4 extra exchanges).<br/><br/><b style="color: #26C6DA;">3. Symmetry:</b> Spherically symmetric half-filled and completely filled subshells shield the nucleus more uniformly, lowering potential energy.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q64. Explain why Chromium (Z=24) and Copper (Z=29) exhibit anomalous electronic configurations.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Cr is [Ar] 3d<sup>5</sup> 4s<sup>1</sup> and Cu is [Ar] 3d<sup>10</sup> 4s<sup>1</sup>. Half-filled (d<sup>5</sup>) and completely filled (d<sup>10</sup>) subshells provide extra stability due to charge symmetry and maximum exchange energy.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q89: Write down the Complete Electronic Configurations of all 30 Elements (Z = 1 to 30) along with orbital box diagrams for valence shells.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. H: 1s<sup>1</sup> | 2. He: 1s<sup>2</sup> | 3. Li: [He] 2s<sup>1</sup> | 4. Be: [He] 2s<sup>2</sup> | 5. B: [He] 2s<sup>2</sup> 2p<sup>1</sup><br/>6. C: [He] 2s<sup>2</sup> 2p<sup>2</sup> | 7. N: [He] 2s<sup>2</sup> 2p<sup>3</sup> | 8. O: [He] 2s<sup>2</sup> 2p<sup>4</sup> | 9. F: [He] 2s<sup>2</sup> 2p<sup>5</sup> | 10. Ne: [He] 2s<sup>2</sup> 2p<sup>6</sup><br/>11. Na: [Ne] 3s<sup>1</sup> | 12. Mg: [Ne] 3s<sup>2</sup> | 13. Al: [Ne] 3s<sup>2</sup> 3p<sup>1</sup> | 14. Si: [Ne] 3s<sup>2</sup> 3p<sup>2</sup> | 15. P: [Ne] 3s<sup>2</sup> 3p<sup>3</sup><br/>16. S: [Ne] 3s<sup>2</sup> 3p<sup>4</sup> | 17. Cl: [Ne] 3s<sup>2</sup> 3p<sup>5</sup> | 18. Ar: [Ne] 3s<sup>2</sup> 3p<sup>6</sup> | 19. K: [Ar] 4s<sup>1</sup> | 20. Ca: [Ar] 4s<sup>2</sup><br/>21. Sc: [Ar] 4s<sup>2</sup> 3d<sup>1</sup> | 22. Ti: [Ar] 4s<sup>2</sup> 3d<sup>2</sup> | 23. V: [Ar] 4s<sup>2</sup> 3d<sup>3</sup> | 24. <b>Cr: [Ar] 4s<sup>1</sup> 3d<sup>5</sup></b> | 25. Mn: [Ar] 4s<sup>2</sup> 3d<sup>5</sup><br/>26. Fe: [Ar] 4s<sup>2</sup> 3d<sup>6</sup> | 27. Co: [Ar] 4s<sup>2</sup> 3d<sup>7</sup> | 28. Ni: [Ar] 4s<sup>2</sup> 3d<sup>8</sup> | 29. <b>Cu: [Ar] 4s<sup>1</sup> 3d<sup>10</sup></b> | 30. Zn: [Ar] 4s<sup>2</sup> 3d<sup>10</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q65. Calculate energy required to excite electron from n=1 to n=3 in Hydrogen atom (E<sub>1</sub> = -13.6 eV).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      E<sub>3</sub> = -13.6 / 9 = -1.51 eV. ΔE = E<sub>3</sub> - E<sub>1</sub> = -1.51 - (-13.6) = <b>+12.09 eV (1.936 × 10<sup>-18</sup> J)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q90: Explain Black Body Radiation, the Photoelectric Effect, and Planck's Quantum Theory: The Birth of Quantum Mechanics.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Black Body Radiation:</b> Classical wave theory predicted that high-frequency ultraviolet radiation would be emitted with infinite intensity (ultraviolet catastrophe). Planck resolved this in 1900 by proposing that atoms absorb/emit energy in discrete packets (quanta): E = nh&nu;.<br/><br/><b style="color: #26C6DA;">2. Photoelectric Effect:</b> Classical theory predicted emission would depend on light intensity and exhibit time lag. Experiments showed: (a) Emission occurs instantaneously with no time lag. (b) Number of photoelectrons depends on intensity. (c) Kinetic energy depends strictly on radiation frequency &nu;. (d) No emission occurs below threshold frequency &nu;<sub>0</sub>.<br/><br/><b style="color: #26C6DA;">3. Einstein's Quantum Explanation:</b> Light consists of corpuscular photons. Energy conservation: h&nu; = W<sub>0</sub> + <sup>1</sup>/<sub>2</sub> m v<sup>2</sup>, launching modern quantum physics.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q66. Explain de Broglie dual nature concept. Calculate wavelength of 100 g ball moving at 10 m/s versus electron moving at 10<sup>6</sup> m/s.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      λ = h / (m v).<br>• Ball: λ = 6.626×10<sup>-34</sup> / (0.1 × 10) = <b>6.626 × 10<sup>-34</sup> m</b> (Undetectable).<br>• Electron: λ = 6.626×10<sup>-34</sup> / (9.1×10<sup>-31</sup> × 10<sup>6</sup>) = <b>0.728 nm</b> (Measurable!).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q91: Compare the Thomson, Rutherford, Bohr, and Quantum Mechanical Models of the Atom in an exhaustive comparative evaluation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Thomson:</b> Uniform sphere of positive charge with embedded electrons (plum pudding). Inadequate for alpha scattering and spectra.<br/><br/><b style="color: #26C6DA;">2. Rutherford:</b> Central dense positive nucleus with electrons in circular orbits. Inadequate for electrodynamic stability and discrete spectra.<br/><br/><b style="color: #26C6DA;">3. Bohr:</b> Quantized stationary non-radiating circular orbits with angular momentum L = nh/2&pi;. Explains hydrogen spectrum but fails for multi-electron atoms and violates uncertainty principle.<br/><br/><b style="color: #26C6DA;">4. Quantum Mechanical Model:</b> Built on Schr&ouml;dinger equation H&#770;&psi; = E&psi;, de Broglie duality, and Heisenberg uncertainty. Replaces deterministic orbits with 3D probability clouds (orbitals &psi;<sup>2</sup>) specified by quantum numbers (n, l, m<sub>l</sub>, m<sub>s</sub>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q67. Explain Heisenberg Uncertainty Principle. Why does it rule out existence of definite circular Bohr orbits?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Δx · Δp ≥ h / 4π. If e<sup>-</sup> were in definite Bohr orbit, Δx would be zero, making Δv infinite! Hence definite circular trajectories cannot exist.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q92: Explain the Schr&ouml;dinger Wave Equation in detail: Hamiltonian Operator, Boundary Conditions, Eigenvalues, and Eigenfunctions.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Equation:</b> H&#770;&psi; = E&psi;, where H&#770; is the Hamiltonian operator: H&#770; = -[h<sup>2</sup> / (8&pi;<sup>2</sup>m)] &nabla;<sup>2</sup> + V.<br/>In 3D Cartesian coordinates: [&part;<sup>2</sup>&psi;/&part;x<sup>2</sup> + &part;<sup>2</sup>&psi;/&part;y<sup>2</sup> + &part;<sup>2</sup>&psi;/&part;z<sup>2</sup>] + [8&pi;<sup>2</sup>m / h<sup>2</sup>](E - V)&psi; = 0.<br/><br/><b style="color: #26C6DA;">2. Eigenvalues &amp; Eigenfunctions:</b> Only certain specific energy values E (eigenvalues) permit acceptable solutions &psi; (eigenfunctions).<br/><br/><b style="color: #26C6DA;">3. Boundary Conditions:</b> &psi; must be single-valued, continuous, finite everywhere, and normalized (&int; &psi;<sup>2</sup> dV = 1). The solutions directly yield the three quantum numbers n, l, and m<sub>l</sub>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q68. Calculate minimum uncertainty in velocity (Δv) of an electron confined inside a nucleus of radius 10<sup>-14</sup> m (m<sub>e</sub> = 9.1 × 10<sup>-31</sup> kg).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Δx = 10<sup>-14</sup> m. Δv = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π m Δx</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">4 × 3.1416 × 9.1×10<sup>-31</sup> × 10<sup>-14</sup></span></span> = <b>5.79 × 10<sup>9</sup> m/s</b> (> speed of light! Proves electron CANNOT exist inside nucleus).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q93: Calculate the wavelength of the radiation emitted when an electron falls from the infinity level to the ground state of Hydrogen atom.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ionization / series limit for Lyman series: n<sub>1</sub> = 1, n<sub>2</sub> = &infin;, Z = 1.<br/>&nu;&#772; = 1/&lambda; = R<sub>H</sub> [1/1<sup>2</sup> - 1/&infin;<sup>2</sup>] = R<sub>H</sub> [1 - 0] = R<sub>H</sub> = 109,677 cm<sup>-1</sup> = 1.09677 &times; 10<sup>7</sup> m<sup>-1</sup>.<br/>&lambda; = 1 / (1.09677 &times; 10<sup>7</sup> m<sup>-1</sup>) = <b>9.117 &times; 10<sup>-8</sup> m = 91.17 nm (912 &Aring;)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q69. Explain boundary surface diagrams and shapes of s, p, and d orbitals with nodal planes.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      • s: Spherical (0 nodal planes).<br>• p: Dumbbell (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>, 1 nodal plane).<br>• d: Double dumbbell (d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub>, 2 nodal planes) and d<sub>z<sup>2</sup></sub>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q94: The kinetic energy of an electron is 4.55 &times; 10<sup>-25</sup> Joules. Calculate its: (a) Velocity, (b) de Broglie wavelength, (c) Momentum.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      m = 9.11 &times; 10<sup>-31</sup> kg.<br/>(a) KE = <sup>1</sup>/<sub>2</sub> m v<sup>2</sup> &rArr; v = &radic;[2 &times; KE / m] = &radic;[(2 &times; 4.55 &times; 10<sup>-25</sup>) / (9.11 &times; 10<sup>-31</sup>)] = &radic;[10<sup>6</sup>] = <b>1.0 &times; 10<sup>3</sup> m s<sup>-1</sup></b>.<br/>(b) &lambda; = h / (m v) = (6.626 &times; 10<sup>-34</sup>) / [(9.11 &times; 10<sup>-31</sup>) &times; 10<sup>3</sup>] = <b>7.27 &times; 10<sup>-7</sup> m = 727 nm</b>.<br/>(c) p = m v = (9.11 &times; 10<sup>-31</sup>) &times; 10<sup>3</sup> = <b>9.11 &times; 10<sup>-28</sup> kg m s<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q70. Explain (n + l) Rule for determining relative orbital energies with examples (3d vs 4s, 4d vs 5p).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      1. Lower (n+l) has lower energy (4s n+l=4 < 3d n+l=5).<br>2. Same (n+l), lower n has lower energy (4d n+l=6, 5p n+l=6 ⟶ 4d has lower n, lower energy!).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q95: A 100 W bulb emits monochromatic light of wavelength 400 nm. Calculate the number of photons emitted per second by the bulb.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Energy of one photon: E = hc / &lambda; = (6.626 &times; 10<sup>-34</sup> &times; 3 &times; 10<sup>8</sup>) / (400 &times; 10<sup>-9</sup>) = <b>4.969 &times; 10<sup>-19</sup> Joules</b>.<br/>Power of bulb = 100 W = 100 J/s.<br/>Photons emitted per second n = Total Energy / Energy per photon = 100 / (4.969 &times; 10<sup>-19</sup>) = <b>2.012 &times; 10<sup>20</sup> photons s<sup>-1</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q71. Calculate threshold frequency (ν<sub>0</sub>) and work function (W<sub>0</sub>) of Sodium metal if photoelectric threshold wavelength λ<sub>0</sub> = 540 nm.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      ν<sub>0</sub> = c / λ<sub>0</sub> = 3 × 10<sup>8</sup> / (540 × 10<sup>-9</sup>) = <b>5.56 × 10<sup>14</sup> Hz</b>.<br>W<sub>0</sub> = h ν<sub>0</sub> = 6.626 × 10<sup>-34</sup> × 5.56 × 10<sup>14</sup> = <b>3.68 × 10<sup>-19</sup> J (2.30 eV)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q96: Determine the minimum uncertainty in the position of an electron if the uncertainty in its velocity is 0.001%. (Velocity = 300 m s<sup>-1</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      v = 300 m/s; &Delta;v = (0.001 / 100) &times; 300 = 0.003 m/s = 3 &times; 10<sup>-3</sup> m s<sup>-1</sup>.<br/>&Delta;x &ge; h / (4&pi; m &Delta;v) = (6.626 &times; 10<sup>-34</sup>) / [4 &times; 3.1416 &times; (9.11 &times; 10<sup>-31</sup>) &times; (3 &times; 10<sup>-3</sup>)]<br/>&Delta;x = (6.626 &times; 10<sup>-34</sup>) / (3.434 &times; 10<sup>-32</sup>) = <b>0.01929 m = 1.93 cm</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q72. Write full electronic configuration and count unpaired electrons for: (a) Fe (Z=26), (b) Fe<sup>3+</sup>, (c) Cr<sup>3+</sup>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      (a) Fe: [Ar] 3d<sup>6</sup> 4s<sup>2</sup> (<b>4 unpaired e<sup>-</sup></b>).<br>(b) Fe<sup>3+</sup>: [Ar] 3d<sup>5</sup> (<b>5 unpaired e<sup>-</sup></b>).<br>(c) Cr<sup>3+</sup>: [Ar] 3d<sup>3</sup> (<b>3 unpaired e<sup>-</sup></b>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q97: Explain why the 4s orbital penetrates closer to the nucleus than 3d, yet 4s electrons are ionized before 3d electrons.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Penetration &amp; Infilling:</b> Radial distribution curves show that 4s has three radial nodes and three inner probability peaks close to the nucleus. Because of this high penetration, 4s experiences less shielding from inner cores and lower energy than 3d, filling first in K and Ca.<br/><br/><b style="color: #26C6DA;">2. Ionization Reversal:</b> Once 3d orbitals begin filling (from Sc to Zn), 3d electrons shield 4s electrons from nuclear attraction, driving the 4s energy level higher than 3d. Therefore, in all transition metals, <b>4s electrons are lost before 3d electrons during ionization</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q73. Explain concept of Nodes. Calculate number of radial nodes, angular nodes, and total nodes for 5d orbital.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Nodes are spatial points where Ψ<sup>2</sup> = 0.<br>• Angular nodes = l = 2.<br>• Radial nodes = n - l - 1 = 5 - 2 - 1 = 2.<br>• Total nodes = n - 1 = <b>4 nodes</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q98: An electron transition in Hydrogen-like ion He<sup>+</sup> produces a spectral line with the same wavelength as the first line of the Balmer series in Hydrogen. Identify the transition.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      First Balmer line in H (Z=1): n<sub>1</sub> = 2, n<sub>2</sub> = 3.<br/>&nu;&#772;<sub>H</sub> = R<sub>H</sub> &times; 1<sup>2</sup> [1/4 - 1/9] = R<sub>H</sub> (5/36).<br/>For He<sup>+</sup> (Z=2): &nu;&#772;<sub>He<sup>+</sup></sub> = R<sub>H</sub> &times; 2<sup>2</sup> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>] = 4 R<sub>H</sub> [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>].<br/>Equating: 4 [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>] = 5/36 &rArr; [1/n<sub>1</sub><sup>2</sup> - 1/n<sub>2</sub><sup>2</sup>] = 5/144.<br/>Notice that: 1/16 - 1/36 = (9 - 4)/144 = 5/144 &rArr; n<sub>1</sub><sup>2</sup> = 16, n<sub>2</sub><sup>2</sup> = 36.<br/>Thus, <b>n<sub>1</sub> = 4 and n<sub>2</sub> = 6 (Transition from n = 6 to n = 4)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q74. Calculate wave number and wavelength of first line of Lyman series in Hydrogen spectrum.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Lyman first line n<sub>1</sub>=1, n<sub>2</sub>=2:<br>ν̅ = 109677 × (1 - 1/4) = 109677 × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3</span><span style="display:block; padding:0 4px;">4</span></span> = <b>82257.75 cm<sup>-1</sup></b>.<br>λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">82257.75</span></span> = <b>121.5 nm (UV region)</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q99: Explain the variation of effective nuclear charge (Z_eff) and screening effect across a period and down a group.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Shielding / Screening Effect (S):</b> Inner core electrons repel valence electrons, diminishing the attractive nuclear charge experienced by the valence shell. Effective nuclear charge: <b>Z<sub>eff</sub> = Z - S</b> (Slater's rules).<br/><br/><b style="color: #26C6DA;">2. Across a Period:</b> Electrons add to the same principal energy shell, but nuclear charge Z increases by 1 each step. Since electrons in the same subshell shield each other poorly (s ~ 0.35), <b>Z<sub>eff</sub> increases steadily across a period</b>, causing atomic radii to contract.<br/><br/><b style="color: #26C6DA;">3. Down a Group:</b> An entirely new electron shell is added. Inner intervening cores shield effectively, keeping Z<sub>eff</sub> relatively constant, while principal quantum number n increases, causing atomic size to expand.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q75. Explain why Bohr's theory cannot explain fine structure of hydrogen spectral lines and Zeeman effect.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Fine structure arises from relativistic electron spin-orbit coupling. Zeeman effect arises from magnetic subshell orientation splitting; Bohr model lacked quantum subshells!
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #26C6DA; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q100: Construct an exhaustive Master Summary Framework connecting Subatomic Discoveries, Quantum Theories, Orbital Concepts, and Electronic Configurations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #26C6DA;">1. Subatomic Discoveries:</b> Electron (Thomson, discharge tube e/m), Proton (Goldstein, canal rays), Neutron (Chadwick, &alpha;-bombardment).<br/><br/><b style="color: #26C6DA;">2. Atomic Evolution:</b> Thomson (plum pudding) &rarr; Rutherford (nuclear planetary model) &rarr; Bohr (quantized angular momentum mvr = nh/2&pi;).<br/><br/><b style="color: #26C6DA;">3. Wave-Particle Revolution:</b> Planck (E = h&nu;), Einstein (photoelectric effect), de Broglie (&lambda; = h/p), Heisenberg (&Delta;x &bull; &Delta;p &ge; h/4&pi;).<br/><br/><b style="color: #26C6DA;">4. Quantum Mechanics:</b> Schr&ouml;dinger equation (H&#770;&psi; = E&psi;) &rarr; Quantum numbers (n: shell/size, l: subshell/shape, m<sub>l</sub>: orientation, m<sub>s</sub>: spin).<br/><br/><b style="color: #26C6DA;">5. Electronic Architecture:</b> Aufbau principle &amp; (n+l) rule &rarr; Pauli exclusion principle &rarr; Hund's rule of maximum multiplicity &rarr; Exceptional stability of half-filled (d<sup>5</sup>) and completely filled (d<sup>10</sup>) configurations due to symmetry and exchange energy.
     </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q76. Calculate velocity of electron revolving in 1st orbit of Hydrogen atom (r = 0.529 Å).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      v = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π m r</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">2 × 3.1416 × 9.1×10<sup>-31</sup> × 0.529×10<sup>-10</sup></span></span> = <b>2.18 × 10<sup>6</sup> m/s</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q77. Explain how Chadwick discovered neutrons by bombarding Beryllium with alpha particles.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Reaction <sup>9</sup>Be + <sup>4</sup>He ⟶ <sup>12</sup>C + <sup>1</sup>n. Emitted neutral particles had mass equal to proton, un-deflected in electric fields.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q78. Calculate maximum number of electrons in an atom that can have quantum numbers n=4, m<sub>s</sub> = +1/2.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      n=4 capacity = 2n<sup>2</sup> = 32 electrons. Half have m<sub>s</sub> = +1/2 ⟶ <b>16 electrons</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q79. Explain significance of Exchange Energy in stabilizing half-filled d<sup>5</sup> configuration.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Electrons with parallel spins in degenerate d-orbitals continuously exchange positions. Number of exchange pairs for d<sup>5</sup> = 10 exchanges, releasing maximum stabilizing Exchange Energy.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q80. Calculate kinetic energy of ejected electron when light of frequency 1.0 × 10<sup>15</sup> Hz strikes metal with work function 2.0 eV (h = 6.626 × 10<sup>-34</sup> J s, 1 eV = 1.6 × 10<sup>-19</sup> J).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      E<sub>photon</sub> = 6.626×10<sup>-34</sup> × 10<sup>15</sup> = 6.626 × 10<sup>-19</sup> J.<br>W<sub>0</sub> = 2.0 × 1.6×10<sup>-19</sup> = 3.20 × 10<sup>-19</sup> J.<br>KE<sub>max</sub> = E - W<sub>0</sub> = 6.626×10<sup>-19</sup> - 3.20×10<sup>-19</sup> = <b>3.426 × 10<sup>-19</sup> J (2.14 eV)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q81. Distinguish between Orbit and Orbital with 4 comparative points.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      1. Orbit is circular 2D path; Orbital is 3D space region.<br>2. Orbit violates Uncertainty Principle; Orbital agrees with it.<br>3. Orbit capacity 2n<sup>2</sup>; Orbital capacity max 2 e<sup>-</sup>.<br>4. Orbit non-directional; Orbitals (except s) are directional.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q82. Write set of all 4 quantum numbers for the last filling electron in Chlorine atom (Z=17).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Chlorine: [Ne] 3s<sup>2</sup> 3p<sup>5</sup>. Last electron enters 3p subshell:<br>n = <b>3</b>, l = <b>1</b>, m<sub>l</sub> = <b>0 (or ±1)</b>, m<sub>s</sub> = <b>-<span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q83. Explain why 4s orbital is filled before 3d orbital, but lost before 3d during ionization of transition metals.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      1. <b>Filling:</b> 4s has lower (n+l) energy (4+0=4 < 3+2=5), so 4s fills first.<br>2. <b>Ionization:</b> When 3d fills, 3d contracts inside 4s, shielding 4s. 4s becomes outer shell with higher principal n=4, so 4s electrons are lost first!
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q84. Calculate ionization enthalpy of He<sup>+</sup> ion in J mol<sup>-1</sup> (Z=2 for Helium).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      E<sub>1</sub> for He<sup>+</sup> = -2.18 × 10<sup>-18</sup> × 2<sup>2</sup> = -8.72 × 10<sup>-18</sup> J/atom.<br>Ionization Enthalpy per mole = 8.72 × 10<sup>-18</sup> × 6.022 × 10<sup>23</sup> = <b>5.25 × 10<sup>6</sup> J mol<sup>-1</sup> (5250 kJ mol<sup>-1</sup>)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #26C6DA;'>Q85. Explain quantum mechanical concept of Nodes and Nodal Planes with diagrams.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); border-left: 3px solid #26C6DA; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #26C6DA;'>Detailed Solution:</b><br>
-      Nodes are spatial regions where probability density Ψ<sup>2</sup> = 0.<br>• Radial nodes = n - l - 1.<br>• Angular nodes (nodal planes) = l.<br>For 3p orbital: Angular = 1, Radial = 3-1-1 = 1, Total = 2 nodes.
-    </div>
-  </div>
-  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
-  <div style="background: rgba(38, 198, 218, 0.12); border: 1.5px solid #26C6DA; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #26C6DA; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
-    <p style="color: #26C6DA; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Calculations)</p>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q86: Bohr Model Derivation & Spectral Transitions</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Derive Bohr formulas for radius of nth orbit (r_n) and energy of electron in nth orbit (E_n) for Hydrogen-like ions.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Equate electrostatic attraction <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">k Z e<sup>2</sup></span><span style="display:block; padding:0 4px;">r<sup>2</sup></span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">m v<sup>2</sup></span><span style="display:block; padding:0 4px;">r</span></span> and angular momentum quantization m v r = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n h</span><span style="display:block; padding:0 4px;">2π</span></span>. Yields r<sub>n</sub> = 0.529 <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">n<sup>2</sup></span><span style="display:block; padding:0 4px;">Z</span></span> Å and E<sub>n</sub> = -13.6 <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">Z<sup>2</sup></span><span style="display:block; padding:0 4px;">n<sup>2</sup></span></span> eV.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate wavelength of light emitted when electron in H atom drops from n=4 to n=2. Identify spectral series and region.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      Balmer series (n<sub>1</sub>=2, n<sub>2</sub>=4):<br>ν̅ = 1.097 × 10<sup>7</sup> (1/4 - 1/16) = 1.097 × 10<sup>7</sup> × <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3</span><span style="display:block; padding:0 4px;">16</span></span> = 2.0568 × 10<sup>6</sup> m<sup>-1</sup>.<br>λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2.0568 × 10<sup>6</sup></span></span> = <b>486.1 nm (Blue-Green line of Balmer Visible Series)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q87: Photoelectric Effect Quantitative Mechanics</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Photoelectric Effect experiment, Threshold Frequency, Work Function, and Einstein's Quantum Equation.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Photon energy E = hν strikes metal. Part is consumed as Work Function W<sub>0</sub> = hν<sub>0</sub>; remainder becomes max kinetic energy of ejected electron: hν = hν<sub>0</sub> + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> m v<sup>2</sup><sub>max</sub>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) When electromagnetic radiation of wavelength 300 nm strikes a metal surface, electrons are emitted with maximum kinetic energy 1.68 × 10<sup>-19</sup> J. Calculate: (a) Work function W<sub>0</sub> in eV, (b) Threshold frequency ν<sub>0</sub>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      E<sub>photon</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup> × 3 × 10<sup>8</sup></span><span style="display:block; padding:0 4px;">300 × 10<sup>-9</sup></span></span> = 6.626 × 10<sup>-19</sup> J = 4.14 eV.<br>(a) W<sub>0</sub> = E - KE = 6.626×10<sup>-19</sup> - 1.68×10<sup>-19</sup> = <b>4.946 × 10<sup>-19</sup> J (3.09 eV)</b>.<br>(b) ν<sub>0</sub> = W<sub>0</sub> / h = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">4.946 × 10<sup>-19</sup></span><span style="display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span></span> = <b>7.465 × 10<sup>14</sup> Hz</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q88: de Broglie Wavelength & Heisenberg Uncertainty Principle</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain wave-particle duality of matter, de Broglie relation (λ = h / p), and Heisenberg Uncertainty Principle.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Matter exhibits wave nature λ = h/p. Heisenberg established Δx · Δp ≥ h/4π, proving exact subatomic trajectories do not exist.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) A microscopic particle of mass 1.0 × 10<sup>-28</sup> kg is moving with velocity 3.0 × 10<sup>4</sup> m/s with accuracy of 0.01%. Calculate: (a) de Broglie wavelength, (b) Uncertainty in position Δx.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">1.0 × 10<sup>-28</sup> × 3.0 × 10<sup>4</sup></span></span> = <b>2.208 × 10<sup>-10</sup> m (0.221 nm)</b>.<br>(b) Δv = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">0.01</span><span style="display:block; padding:0 4px;">100</span></span> × 3.0×10<sup>4</sup> = 3.0 m/s.<br>Δx = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">4π m Δv</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">4 × 3.1416 × 1.0×10<sup>-28</sup> × 3.0</span></span> = <b>1.758 × 10<sup>-7</sup> m (175.8 nm)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q89: Quantum Numbers & Complete Electronic Structure of Atoms</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Principal, Azimuthal, Magnetic, and Spin Quantum Numbers. How do they define atomic orbital size, shape, orientation, and electron spin?</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      n defines shell energy/size; l defines subshell shape (s,p,d,f); m<sub>l</sub> defines 3D orientation; m<sub>s</sub> defines electron spin.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Write sets of all 4 quantum numbers for: (a) Unpaired electron in Na (Z=11), (b) 23rd electron in V (Z=23), (c) Valence electron in Potassium (Z=19).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) Na 3s<sup>1</sup>: n=3, l=0, m<sub>l</sub>=0, m<sub>s</sub>=+1/2.<br>(b) V [Ar] 3d<sup>3</sup> 4s<sup>2</sup> (3rd d-electron): n=3, l=2, m<sub>l</sub>=0 (or ±1,±2), m<sub>s</sub>=+1/2.<br>(c) K 4s<sup>1</sup>: n=4, l=0, m<sub>l</sub>=0, m<sub>s</sub>=+1/2.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q90: Rules of Electronic Configuration & Anomalous Stability</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Aufbau Principle, Pauli Exclusion Principle, and Hund's Rule of Maximum Multiplicity with orbital energy diagrams.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Aufbau fills lowest (n+l) energy first. Pauli limits max 2 e<sup>-</sup> per orbital with opposite spins. Hund requires single filling with parallel spins before pairing.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Explain why ground state electronic configurations of Chromium (Z=24) and Copper (Z=29) deviate from expected Aufbau order. Calculate total exchange energy pairs for 3d<sup>5</sup> versus 3d<sup>4</sup>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      Cr is [Ar] 3d<sup>5</sup> 4s<sup>1</sup> and Cu is [Ar] 3d<sup>10</sup> 4s<sup>1</sup>. Half-filled d<sup>5</sup> has 10 exchange pairs (vs 6 in d<sup>4</sup>), releasing maximum exchange energy and symmetrical stability.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q91: Quantum Mechanical Model & Radial Probability Density</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Schrödinger Wave Equation (Ĥ Ψ = E Ψ), physical significance of Ψ and Ψ<sup>2</sup>, and concept of Radial Probability Distribution curves.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Schrödinger equation gives wave functions Ψ. Radial distribution 4πr<sup>2</sup>Ψ<sup>2</sup> represents probability of finding electron in spherical shell at distance r.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate number of radial nodes, angular nodes, and total nodes for: (a) 1s, (b) 2s, (c) 2p, (d) 3d, (e) 4f orbitals.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) 1s: Radial = 0, Angular = 0, Total = <b>0</b>.<br>(b) 2s: Radial = 1, Angular = 0, Total = <b>1</b>.<br>(c) 2p: Radial = 0, Angular = 1, Total = <b>1</b>.<br>(d) 3d: Radial = 0, Angular = 2, Total = <b>2</b>.<br>(e) 4f: Radial = 0, Angular = 3, Total = <b>3</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q92: Rutherford Alpha Scattering vs Thomson Plum Pudding Model</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Compare Thomson's Plum Pudding Model and Rutherford's Nuclear Model with experimental setups and failures.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Thomson assumed solid positive sphere with embedded e<sup>-</sup>. Rutherford's alpha scattering proved positive charge and mass are concentrated in tiny core <b>Nucleus</b>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate nuclear radius of Gold atom (A=197) using formula R = R<sub>0</sub> A<sup>1/3</sup> (R<sub>0</sub> = 1.2 × 10<sup>-15</sup> m). Compare with atomic radius (1.5 Å).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      R<sub>nucleus</sub> = 1.2 × 10<sup>-15</sup> × (197)<sup>1/3</sup> = 1.2 × 10<sup>-15</sup> × 5.818 = <b>6.98 × 10<sup>-15</sup> m (6.98 fm)</b>.<br>Atomic radius = 1.5 × 10<sup>-10</sup> m.<br>Ratio R<sub>atom</sub> / R<sub>nucleus</sub> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1.5 × 10<sup>-10</sup></span><span style="display:block; padding:0 4px;">6.98 × 10<sup>-15</sup></span></span> ≈ <b>21,500 times larger!</b>
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q93: Blackbody Radiation & Planck Quantum Theory</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Blackbody Radiation curves, Rayleigh-Jeans failure (Ultraviolet Catastrophe), and Planck Quantum Postulate.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Classical physics failed to explain blackbody emission spectrum at short wavelengths. Planck proposed energy is quantized in photons E = hν.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate number of photons emitted per second by a 100 Watt yellow bulb emitting monochromatic light of wavelength 560 nm (h = 6.626 × 10<sup>-34</sup> J s).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      Energy per photon = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup> × 3 × 10<sup>8</sup></span><span style="display:block; padding:0 4px;">560 × 10<sup>-9</sup></span></span> = 3.55 × 10<sup>-19</sup> J.<br>Power = 100 J/s.<br>Photons per second = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">100 J/s</span><span style="display:block; padding:0 4px;">3.55 × 10<sup>-19</sup> J</span></span> = <b>2.82 × 10<sup>20</sup> photons/s</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q94: Ionization Enthalpies of Hydrogen-like Monatomic Ions</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain concept of Ionization Enthalpy of Hydrogen-like species (H, He<sup>+</sup>, Li<sup>2+</sup>, Be<sup>3+</sup>) using Bohr theory.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Ionization is electron removal from ground state n=1 to n=∞: ΔE = E<sub>∞</sub> - E<sub>1</sub> = +13.6 Z<sup>2</sup> eV = +2.18 × 10<sup>-18</sup> Z<sup>2</sup> J/atom.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate ionization energy of Li<sup>2+</sup> ion (Z=3) in: (a) eV per ion, (b) Joules per ion, (c) kJ mol<sup>-1</sup>.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) E<sub>ion</sub> = 13.6 × 3<sup>2</sup> = <b>122.4 eV/ion</b>.<br>(b) E<sub>ion</sub> = 122.4 × 1.602 × 10<sup>-19</sup> = <b>1.961 × 10<sup>-17</sup> J/ion</b>.<br>(c) E<sub>ion</sub> = 1.961 × 10<sup>-17</sup> × 6.022 × 10<sup>23</sup> / 1000 = <b>11,809 kJ mol<sup>-1</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q95: Wave Mechanical Atomic Model & Orbital Shapes</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain quantum mechanical concept of atomic orbitals, subshell shapes (s, p, d), and angular orientation.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Orbital is 3D probability space Ψ<sup>2</sup>. s is spherical; p dumbbell (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</sub>); d double-dumbbell (d<sub>xy</sub>, d<sub>yz</sub>, d<sub>zx</sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub>, d<sub>z<sup>2</sup></sub>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Draw 3D shapes and specify nodal planes for: (a) p<sub>z</sub> orbital, (b) d<sub>xy</sub> orbital, (c) d<sub>x<sup>2</sup>-y<sup>2</sup></sub> orbital.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) p<sub>z</sub>: Dumbbell along z-axis; 1 nodal plane (xy-plane).<br>(b) d<sub>xy</sub>: 4 lobes between x and y axes; 2 nodal planes (xz and yz planes).<br>(c) d<sub>x<sup>2</sup>-y<sup>2</sup></sub>: 4 lobes along x and y axes; 2 nodal planes at 45° angle.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q96: Subatomic Particle Mass, Charge & Isotopes Analysis</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Compare discovery, electric charge, rest mass, location, and stability of Electron, Proton, and Neutron.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      • Electron: -1.602×10<sup>-19</sup> C, 9.109×10<sup>-31</sup> kg, outer shell.<br>• Proton: +1.602×10<sup>-19</sup> C, 1.673×10<sup>-27</sup> kg, nucleus.<br>• Neutron: 0 C, 1.675×10<sup>-27</sup> kg, nucleus.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) An element X has mass number A = 81 and contains 31.7% more neutrons than protons. Find atomic number Z and symbol of element.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      Let protons = Z. Neutrons N = Z + 0.317 Z = 1.317 Z.<br>A = Z + N ⟶ Z + 1.317 Z = 81 ⟶ 2.317 Z = 81 ⟶ Z = 35.<br>Atomic number Z = <b>35</b> ⟶ Element symbol = <b>Bromine (<sup>81</sup><sub>35</sub>Br)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q97: Electromagnetic Spectrum & Wavelength Calculations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Electromagnetic Spectrum regions (Radio, Microwave, IR, Visible, UV, X-ray, Gamma) in order of frequency and energy.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      c = ν λ and E = h ν. Order of increasing frequency & energy: Radio < Microwave < IR < Visible < UV < X-ray < Gamma.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) FM radio station transmits at frequency 99.4 MHz (99.4 × 10<sup>6</sup> Hz). Calculate wavelength λ and energy of 1 mole of photons.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">3 × 10<sup>8</sup></span><span style="display:block; padding:0 4px;">99.4 × 10<sup>6</sup></span></span> = <b>3.018 m</b>.<br>E<sub>photon</sub> = 6.626×10<sup>-34</sup> × 99.4×10<sup>6</sup> = 6.586 × 10<sup>-26</sup> J.<br>E<sub>mole</sub> = 6.586 × 10<sup>-26</sup> × 6.022 × 10<sup>23</sup> = <b>0.0396 J mol<sup>-1</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q98: Hydrogen Spectral Series Limit Calculations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain concept of Series Limit (n<sub>2</sub> = ∞) in atomic hydrogen emission spectra.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Series limit is the highest frequency / shortest wavelength line in a spectral series, corresponding to electron transition from n<sub>2</sub> = ∞.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate series limit wavelength for: (a) Lyman Series (n<sub>1</sub>=1), (b) Balmer Series (n<sub>1</sub>=2) (R<sub>H</sub> = 1.097 × 10<sup>7</sup> m<sup>-1</sup>).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) Lyman limit (n<sub>2</sub>=∞): ν̅ = 1.097 × 10<sup>7</sup> (1/1 - 0) = 1.097 × 10<sup>7</sup> m<sup>-1</sup> ⟶ λ = <b>91.15 nm (UV limit)</b>.<br>(b) Balmer limit (n<sub>2</sub>=∞): ν̅ = 1.097 × 10<sup>7</sup> (1/4 - 0) = 2.7425 × 10<sup>6</sup> m<sup>-1</sup> ⟶ λ = <b>364.6 nm (Visible limit)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q99: Davisson-Germer Experiment & Electron Diffraction</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Explain Davisson and Germer experiment demonstrating wave nature of electrons using Nickel crystal diffraction.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Accelerated electron beam scattered by Nickel crystal produced diffraction rings identical to X-rays, experimentally proving de Broglie wave relationship λ = h/p.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) Calculate de Broglie wavelength of an electron accelerated through a potential difference of 100 Volts (e = 1.602 × 10<sup>-19</sup> C, m = 9.109 × 10<sup>-31</sup> kg).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      KE = e V = 1.602 × 10<sup>-17</sup> J. Momentum p = √(2 m KE) = √(2 × 9.109×10<sup>-31</sup> × 1.602×10<sup>-17</sup>) = 5.402 × 10<sup>-24</sup> kg m/s.<br>λ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">h</span><span style="display:block; padding:0 4px;">p</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.626 × 10<sup>-34</sup></span><span style="display:block; padding:0 4px;">5.402 × 10<sup>-24</sup></span></span> = <b>1.226 × 10<sup>-10</sup> m = 1.226 Å (0.123 nm)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(38, 198, 218, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #26C6DA;'>Q100: Master Synthesis: Classical vs Quantum Atomic Models & Quantum Chemistry</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(i) Synthesize evolution of atomic models from Dalton's sphere ⟶ Thomson's plum pudding ⟶ Rutherford's nuclear atom ⟶ Bohr's quantum orbits ⟶ Schrödinger's quantum mechanical orbital model.</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 8px 12px; border-left: 3px solid #26C6DA; margin-bottom: 10px;">
-      Classical physics failed at subatomic scale. Quantum mechanics unifies wave-particle duality, uncertainty principle, and 4 quantum numbers into modern atomic orbital theory.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #26C6DA;'>(ii) For Nitrogen atom (Z=7): (a) Write ground state electronic configuration, (b) Draw orbital box diagram, (c) Apply Hund's rule and Pauli's principle to explain magnetic behavior (Paramagnetic vs Diamagnetic).</b></p>
-    <div style="background: rgba(38, 198, 218, 0.05); padding: 10px 12px; border-left: 3px solid #26C6DA;">
-      (a) Configuration: <b>1s<sup>2</sup> 2s<sup>2</sup> 2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup></b>.<br>(b) Box diagram: 1s[↑↓] 2s[↑↓] 2p[↑][↑][↑].<br>(c) Nitrogen has 3 unpaired electrons in 2p subshell with parallel spins (Hund's rule), making Nitrogen atom <b style='color: #FFF;'>PARAMAGNETIC</b>.
-    </div>
-  </div>
 </div>
 `;
+
+export const c11Chem2Mcqs = [
+  {
+    "id": "c11-chem-2-mcq-1",
+    "question": "The charge-to-mass ratio (e/m) of cathode rays was measured by:",
+    "options": [
+      "A):   Ernest Rutherford",
+      "B):   J.J. Thomson",
+      "C):   Robert Millikan",
+      "D):   James Chadwick"
+    ],
+    "correctAnswer": "b",
+    "explanation": "J.J. Thomson measured the e/m ratio of the electron in 1897 using mutually perpendicular electric and magnetic fields (1.7588 &times; 10<sup>11</sup> C/kg)."
+  },
+  {
+    "id": "c11-chem-2-mcq-2",
+    "question": "Which of the following subatomic rays has an e/m ratio that depends on the nature of the gas inside the discharge tube?",
+    "options": [
+      "A):   Cathode rays",
+      "B):   Anode rays (canal rays)",
+      "C):   X-rays",
+      "D):   Gamma rays"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Anode rays consist of positively charged gaseous ions; their mass depends directly on the molecular mass of the gas used in the discharge tube."
+  },
+  {
+    "id": "c11-chem-2-mcq-3",
+    "question": "The radius of the first stationary Bohr orbit in a Hydrogen atom is approximately:",
+    "options": [
+      "A):   0.529 pm",
+      "B):   52.9 pm",
+      "C):   5.29 nm",
+      "D):   0.0529 pm"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Bohr radius r<sub>1</sub> = 0.529 &Aring; = 52.9 pm = 5.29 &times; 10<sup>-11</sup> m."
+  },
+  {
+    "id": "c11-chem-2-mcq-4",
+    "question": "Which spectral series of the Hydrogen atom falls in the visible region of the electromagnetic spectrum?",
+    "options": [
+      "A):   Lyman series",
+      "B):   Balmer series",
+      "C):   Paschen series",
+      "D):   Brackett series"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The Balmer series transitions down to n<sub>1</sub> = 2 emit photons in the visible spectrum (400 to 700 nm)."
+  },
+  {
+    "id": "c11-chem-2-mcq-5",
+    "question": "The energy of an electron in the first Bohr orbit of Hydrogen atom is -13.6 eV. What is its energy in the second orbit (n = 2)?",
+    "options": [
+      "A):   -6.8 eV",
+      "B):   -3.4 eV",
+      "C):   -1.51 eV",
+      "D):   -27.2 eV"
+    ],
+    "correctAnswer": "b",
+    "explanation": "E<sub>n</sub> = -13.6 / n<sup>2</sup> eV &rArr; E<sub>2</sub> = -13.6 / 2<sup>2</sup> = -13.6 / 4 = -3.4 eV."
+  },
+  {
+    "id": "c11-chem-2-mcq-6",
+    "question": "The total number of spectral lines emitted when an excited electron in a Hydrogen atom drops from n = 4 to the ground state (n = 1) is:",
+    "options": [
+      "A):   3",
+      "B):   6",
+      "C):   4",
+      "D):   10"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Total lines = [n(n - 1)] / 2 = [4(3)] / 2 = 6 lines."
+  },
+  {
+    "id": "c11-chem-2-mcq-7",
+    "question": "According to de Broglie, the wavelength of a moving particle of mass m and velocity v is given by:",
+    "options": [
+      "A):   &lambda; = h / p",
+      "B):   &lambda; = h / (mv)",
+      "C):   &lambda; = h / &radic;(2m KE)",
+      "D):   All of the above"
+    ],
+    "correctAnswer": "d",
+    "explanation": "All three expressions are mathematically identical formulations of de Broglie's matter wave relationship."
+  },
+  {
+    "id": "c11-chem-2-mcq-8",
+    "question": "Heisenberg's Uncertainty Principle states that:",
+    "options": [
+      "A):   &Delta;x &bull; &Delta;p &ge; h / (4&pi;)",
+      "B):   &Delta;x &bull; &Delta;p &le; h / (4&pi;)",
+      "C):   &Delta;x &bull; &Delta;v = h / (4&pi;)",
+      "D):   &Delta;E &bull; &Delta;t &le; h / (2&pi;)"
+    ],
+    "correctAnswer": "a",
+    "explanation": "The minimum product of uncertainty in position (&Delta;x) and uncertainty in linear momentum (&Delta;p) is h / (4&pi;)."
+  },
+  {
+    "id": "c11-chem-2-mcq-9",
+    "question": "The maximum number of electrons that can be accommodated in a principal shell with quantum number n is:",
+    "options": [
+      "A):   n<sup>2</sup>",
+      "B):   2n<sup>2</sup>",
+      "C):   2l + 1",
+      "D):   4l + 2"
+    ],
+    "correctAnswer": "b",
+    "explanation": "A shell with principal quantum number n contains n<sup>2</sup> orbitals and can hold a maximum of 2n<sup>2</sup> electrons."
+  },
+  {
+    "id": "c11-chem-2-mcq-10",
+    "question": "What are the allowed values of the Azimuthal quantum number (l) for a principal shell with n = 3?",
+    "options": [
+      "A):   1, 2, 3",
+      "B):   0, 1, 2",
+      "C):   -1, 0, +1",
+      "D):   0, 1, 2, 3"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The values of l range from 0 to n - 1; for n = 3, l can be 0 (s), 1 (p), and 2 (d)."
+  },
+  {
+    "id": "c11-chem-2-mcq-11",
+    "question": "The orbital angular momentum of an electron in a 3s orbital is:",
+    "options": [
+      "A):   h / 2&pi;",
+      "B):   Zero",
+      "C):   &radic;2 (h / 2&pi;)",
+      "D):   &radic;6 (h / 2&pi;)"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Orbital angular momentum L = &radic;[l(l + 1)] (h / 2&pi;). For an s orbital, l = 0, so L = 0."
+  },
+  {
+    "id": "c11-chem-2-mcq-12",
+    "question": "How many degenerate orbitals are present in a d-subshell (l = 2)?",
+    "options": [
+      "A):   3",
+      "B):   5",
+      "C):   7",
+      "D):   10"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The number of degenerate orbitals in a subshell is 2l + 1; for l = 2, 2(2) + 1 = 5 orbitals."
+  },
+  {
+    "id": "c11-chem-2-mcq-13",
+    "question": "Which of the following d-orbitals possesses a doughnut-shaped electron cloud in the xy-plane?",
+    "options": [
+      "A):   d<sub>xy</sub>",
+      "B):   d<sub>z<sup>2</sup></sub>",
+      "C):   d<sub>x<sup>2</sup>-y<sup>2</sup></sub>",
+      "D):   d<sub>xz</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The d<sub>z<sup>2</sup></sub> orbital consists of two vertical lobes along the z-axis and a doughnut-shaped ring (torus) in the xy-plane."
+  },
+  {
+    "id": "c11-chem-2-mcq-14",
+    "question": "The number of radial nodes in a 3p orbital is:",
+    "options": [
+      "A):   0",
+      "B):   1",
+      "C):   2",
+      "D):   3"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Radial nodes = n - l - 1. For a 3p orbital, n = 3 and l = 1, so radial nodes = 3 - 1 - 1 = 1."
+  },
+  {
+    "id": "c11-chem-2-mcq-15",
+    "question": "According to the Aufbau principle, which of the following orbitals is filled first?",
+    "options": [
+      "A):   3d",
+      "B):   4s",
+      "C):   4p",
+      "D):   5s"
+    ],
+    "correctAnswer": "b",
+    "explanation": "For 4s, (n + l) = 4 + 0 = 4; for 3d, (n + l) = 3 + 2 = 5. Lower (n + l) fills first, so 4s fills before 3d."
+  },
+  {
+    "id": "c11-chem-2-mcq-16",
+    "question": "Pauli's Exclusion Principle states that an individual orbital can hold a maximum of:",
+    "options": [
+      "A):   1 electron",
+      "B):   2 electrons with opposite spins",
+      "C):   2 electrons with parallel spins",
+      "D):   6 electrons"
+    ],
+    "correctAnswer": "b",
+    "explanation": "An atomic orbital can accommodate at most two electrons, and they must have opposite (antiparallel) spins (+1/2 and -1/2)."
+  },
+  {
+    "id": "c11-chem-2-mcq-17",
+    "question": "The ground state electronic configuration of Chromium (Z = 24) is:",
+    "options": [
+      "A):   [Ar] 4s<sup>2</sup> 3d<sup>4</sup>",
+      "B):   [Ar] 4s<sup>1</sup> 3d<sup>5</sup>",
+      "C):   [Ar] 4s<sup>0</sup> 3d<sup>6</sup>",
+      "D):   [Ar] 4s<sup>2</sup> 3d<sup>5</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Chromium has an anomalous ground-state configuration [Ar] 4s<sup>1</sup> 3d<sup>5</sup> due to the extra stability of the half-filled d-subshell."
+  },
+  {
+    "id": "c11-chem-2-mcq-18",
+    "question": "Which of the following pairs represents isoelectronic species?",
+    "options": [
+      "A):   Na<sup>+</sup> and Mg<sup>2+</sup>",
+      "B):   Al<sup>3+</sup> and O<sup>-</sup>",
+      "C):   K<sup>+</sup> and Na<sup>+</sup>",
+      "D):   Fe<sup>2+</sup> and Fe<sup>3+</sup>"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Na<sup>+</sup> (11 - 1 = 10 e<sup>-</sup>) and Mg<sup>2+</sup> (12 - 2 = 10 e<sup>-</sup>) both contain exactly 10 electrons."
+  },
+  {
+    "id": "c11-chem-2-mcq-19",
+    "question": "The total number of possible exchanges in a half-filled d<sup>5</sup> subshell with parallel spins is:",
+    "options": [
+      "A):   6",
+      "B):   10",
+      "C):   15",
+      "D):   20"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Total exchanges K = [n(n - 1)] / 2 = [5(4)] / 2 = 10 exchanges, giving maximum exchange stabilization energy."
+  },
+  {
+    "id": "c11-chem-2-mcq-20",
+    "question": "Which set of quantum numbers is NOT permitted for an electron in an atom?",
+    "options": [
+      "A):   n = 2, l = 1, m<sub>l</sub> = 0, m<sub>s</sub> = +1/2",
+      "B):   n = 3, l = 2, m<sub>l</sub> = -2, m<sub>s</sub> = -1/2",
+      "C):   n = 2, l = 2, m<sub>l</sub> = 0, m<sub>s</sub> = +1/2",
+      "D):   n = 4, l = 0, m<sub>l</sub> = 0, m<sub>s</sub> = -1/2"
+    ],
+    "correctAnswer": "c",
+    "explanation": "The value of l must be strictly less than n (l &le; n - 1). For n = 2, l cannot be 2 (a 2d orbital does not exist)."
+  },
+  {
+    "id": "c11-chem-2-mcq-21",
+    "question": "What is the de Broglie wavelength of an electron accelerated from rest through a potential difference of 100 Volts?",
+    "options": [
+      "A):   1.227 nm",
+      "B):   0.1227 nm",
+      "C):   12.27 nm",
+      "D):   0.01227 nm"
+    ],
+    "correctAnswer": "b",
+    "explanation": "&lambda; = 1.227 / &radic;V nm = 1.227 / &radic;100 = 1.227 / 10 = 0.1227 nm (or 1.227 &Aring;)."
+  },
+  {
+    "id": "c11-chem-2-mcq-22",
+    "question": "The splitting of spectral lines in an external magnetic field is known as the:",
+    "options": [
+      "A):   Stark effect",
+      "B):   Zeeman effect",
+      "C):   Photoelectric effect",
+      "D):   Compton effect"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The Zeeman effect is the splitting of spectral lines into multiple components in the presence of a static magnetic field."
+  },
+  {
+    "id": "c11-chem-2-mcq-23",
+    "question": "How many unpaired electrons are present in a ground-state Ferrous ion (Fe<sup>2+</sup>, Z = 26)?",
+    "options": [
+      "A):   2",
+      "B):   4",
+      "C):   5",
+      "D):   6"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Fe<sup>2+</sup> has configuration [Ar] 3d<sup>6</sup>. By Hund's rule, 3d<sup>6</sup> has one pair and 4 unpaired electrons."
+  },
+  {
+    "id": "c11-chem-2-mcq-24",
+    "question": "A subshell with n = 5 and l = 3 is designated as:",
+    "options": [
+      "A):   5p",
+      "B):   5d",
+      "C):   5f",
+      "D):   5g"
+    ],
+    "correctAnswer": "c",
+    "explanation": "The letter designations for azimuthal quantum numbers are: l = 0 (s), 1 (p), 2 (d), 3 (f). Hence, n = 5 and l = 3 is a 5f subshell."
+  },
+  {
+    "id": "c11-chem-2-mcq-25",
+    "question": "The work function of a metal is 4.0 eV. What is the kinetic energy of emitted photoelectrons when illuminated by light of energy 5.5 eV?",
+    "options": [
+      "A):   9.5 eV",
+      "B):   1.5 eV",
+      "C):   2.5 eV",
+      "D):   0.5 eV"
+    ],
+    "correctAnswer": "b",
+    "explanation": "KE<sub>max</sub> = h&nu; - W<sub>0</sub> = 5.5 eV - 4.0 eV = 1.5 eV."
+  }
+];

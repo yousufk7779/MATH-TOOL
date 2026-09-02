@@ -1,1184 +1,1321 @@
-// Class 11 Chemistry Chapter 3 - Classification of Elements & Periodicity in Properties
-// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// Class 11 Chemistry Chapter 3: Classification of Elements & Periodicity in Properties
+// Gold Standard Reference Textbook & 3-Tab Architecture
+// Subject: Chemistry | Class: 11 | Code: c11-chem-3
 
 export const c11Chem3HtmlOverview = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER AT TOP) -->
-  <div style="background: rgba(255, 138, 101, 0.05); border: 1.5px solid #FF8A65; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: #FF8A65; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #FF8A65; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 3: Classification of Elements & Periodicity in Properties</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>1. Periodic Law:</b> Statement that physical and chemical properties of elements are periodic functions of their atomic masses (Mendeleev) or atomic numbers (Modern).
+  <!-- Quick Glossary Card with Chapter Subtitle -->
+  <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.12), rgba(255, 61, 0, 0.12)); border: 1.5px solid rgba(255, 138, 101, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p style="color: #FF8A65; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 3: Classification of Elements &amp; Periodicity in Properties</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Mendeleev's Periodic Law:</b> The physical and chemical properties of elements are periodic functions of their atomic weights.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>2. Modern Periodic Law:</b> Physical and chemical properties of elements are periodic functions of their atomic numbers Z (Henry Moseley, 1913).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Modern Periodic Law (Moseley):</b> The physical and chemical properties of elements are periodic functions of their atomic numbers (Z).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>3. Groups:</b> 18 vertical columns in the long form of periodic table containing elements with identical outer electronic configurations.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Ionization Enthalpy (&Delta;<sub>i</sub>H):</b> The minimum energy required to remove the most loosely bound valence electron from an isolated gaseous atom in its ground state.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>4. Periods:</b> 7 horizontal rows in the periodic table corresponding to principal quantum numbers n = 1 to 7.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Electron Gain Enthalpy (&Delta;<sub>eg</sub>H):</b> The enthalpy change occurring when an isolated neutral gaseous atom acquires an electron to form a monovalent anion.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>5. Atomic Radius:</b> One-half the distance between nuclei of two covalently bonded homonuclear atoms (r<sub>cov</sub> = d / 2).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Electronegativity (&chi;):</b> The qualitative relative tendency of an atom in a chemical molecule to attract the shared pair of bonding electrons toward itself.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>6. Ionic Radius:</b> Effective distance from center of ionic nucleus to point up to which it exerts influence on electron cloud.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>7. Effective Nuclear Charge (Z<sub>eff</sub>):</b> Net positive nuclear charge experienced by an electron in a multi-electron atom (Z<sub>eff</sub> = Z - σ).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>8. Shielding / Screening Effect (σ):</b> Reduction in full nuclear attraction on outer valence electrons caused by repulsions from inner core electrons.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>9. Ionization Enthalpy (Δ<sub>i</sub>H):</b> Minimum energy required to remove the most loosely bound electron from an isolated gaseous atom in ground state (kJ mol<sup>-1</sup>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>10. Electron Gain Enthalpy (Δ<sub>eg</sub>H):</b> Enthalpy change occurring when an electron is added to an isolated neutral gaseous atom to form a uninegative anion.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>11. Electronegativity (χ):</b> Qualitative tendency of a chemically bonded atom to attract shared electron pair toward itself in a covalent bond.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>12. Pauling Scale:</b> Empirical numerical scale measuring electronegativity assigning Fluorine maximum value χ = 4.0.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>13. Valency:</b> Combining capacity of an element equal to number of valence electrons (for groups 1-4) or 8 minus valence electrons (for groups 15-18).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>14. Diagonal Relationship:</b> Similarity in chemical properties observed between certain 2nd period elements and diagonally adjacent 3rd period elements (Li-Mg, Be-Al, B-Si).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>15. Representative Elements:</b> Elements belonging to s-block and p-block (Groups 1, 2, 13 to 17) whose outer shells are incomplete.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>16. Transition Elements:</b> d-block elements (Groups 3 to 12) possessing partially filled d-orbitals in elemental state or common oxidation states.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>17. Inner Transition Elements:</b> f-block elements (Lanthanoids 4f and Actinoids 5f) placed separately at bottom of periodic table.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>18. Amphoteric Oxides:</b> Oxides that show both acidic and basic character, reacting with both acids and bases (e.g. Al<sub>2</sub>O<sub>3</sub>, ZnO, BeO).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>19. Isoelectronic Series:</b> Group of atoms/ions having identical total electron count whose ionic sizes decrease systematically with increasing atomic number Z.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #FF8A65; border-radius: 6px;">
-        <b style='color: #FF8A65;'>20. IUPAC Nomenclature (>100):</b> Systematic naming method using Latin roots (nil=0, un=1, bi=2, tri=3, quad=4, pent=5, hex=6, sept=7, oct=8, enn=9) ending in -ium.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #FF8A65;">Diagonal Relationship:</b> Close similarity in chemical properties between diagonally adjacent elements of the 2nd and 3rd periods (Li-Mg, Be-Al, B-Si).
       </div>
     </div>
   </div>
 
+  <!-- SECTION 1 -->
+  <h2 style="color: #FF8A65; border-bottom: 2px solid #FF8A65; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">
+    1. Significance of Classification, Brief History of the Development of Periodic Table
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
-  <h2 style="color: #FF8A65; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Significance of Classification, Brief History of the Development of Periodic Table</h2>
-
-  <!-- 3D IMAGE 1 -->
+  <!-- PRESERVED IMAGE 1 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(255, 138, 101, 0.35); border: 1.5px solid #FF8A65;" alt="3D Classification of Elements and Periodic System" />
     <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 3.1: 3D Historical Evolution of Chemical Element Classification and Periodic System</p>
   </div>
 
-  <p>In the early 1800s, only 31 chemical elements were known to science. However, by 1865 the number had doubled to 63, and today 118 distinct chemical elements have been identified and synthesized. Without a systematic scientific classification system, studying the vast array of individual physical properties, chemical reactivities, and compound formulas of 118 elements would be an impossibly daunting task. Classification organizes elements sharing similar chemical behaviors into families, establishing unified periodic trends.</p>
+  
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Why Do We Need to Classify Elements?</h3>
-  <p>The primary significance of classifying chemical elements is to rationalize chemical knowledge. By grouping elements based on fundamental atomic characteristics, chemists can predict the physical state, valency, oxidation states, oxide acidity, and reactivity of an unknown or newly synthesized element simply by examining its position in the periodic table.</p>
+  <p>
+    With the rapid discovery of chemical elements in the 19th century (from 31 elements in 1800 to 63 in 1865 and 118 today), it became imperative to systematically classify elements into logical families. Chemical classification synthesizes vast qualitative empirical observations into coherent predictive frameworks governing periodic reactivities.
+  </p>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Early Historical Attempts at Classification</h3>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 16.5px;">(i) Why Do We Need to Classify Elements?</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Classification groups together elements with comparable electronic structures and chemical reactivities, allowing chemists to predict the properties of unknown elements and their compounds from the systematic study of representative group members.
+    </p>
+  </div>
+
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(ii) Early Historical Attempts at Classification</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style='color: #FF8A65;'>Dobereiner's Law of Triads (1829):</b> German chemist Johann Wolfgang Döbereiner grouped elements into sets of three (Triads) with similar chemical properties. He noted that the atomic mass of the middle element was approximately equal to the arithmetic mean of the atomic masses of the other two elements:<br>
-    <i>Example (Li, Na, K):</i> Lithium (6.9 u) + Potassium (39.1 u) ⟶ Average = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">6.9 + 39.1</span><span style="display:block; padding:0 4px;">2</span></span> = <b>23.0 u</b> (exactly matching Sodium, Na!).<br>
-    <i>Limitation:</i> Döbereiner could identify only a few triads (e.g. Ca-Sr-Ba, Cl-Br-I); it failed for heavier elements.</li>
-
-    <li><b style='color: #FF8A65;'>Telluric Helix (de Chancourtois, 1862):</b> Arranged elements in order of increasing atomic weights on a cylinder helix, showing recurring properties at regular intervals.</li>
-
-    <li><b style='color: #FF8A65;'>Newlands' Law of Octaves (1865):</b> English chemist John Newlands arranged elements in increasing order of atomic weights and observed that every eighth element possessed properties similar to the first, analogous to musical octaves (sa, re, ga, ma, pa, dha, ni, sa).<br>
-    <i>Limitation:</i> Law of Octaves was valid only up to Calcium (mass 40 u). It failed completely for heavier elements and noble gases (which were undiscovered then).</li>
+    <li><b style="color: #FF8A65;">1. Lavoisier's Classification (1789):</b> Divided elements into metals and non-metals based on physical lustre, malleability, and conductivity. Inadequate because elements like metalloids exhibited dual properties.</li>
+    <li><b style="color: #FF8A65;">2. D&ouml;bereiner's Triads (Johann Wolfgang D&ouml;bereiner, 1829):</b> Arranged elements into groups of three (triads) with similar chemical properties, wherein the atomic weight of the middle element was approximately the arithmetic mean of the other two:
+      <br/>&bull; Alkali Triad: <b>Li (7), Na (23), K (39)</b> &rArr; Mean = (7 + 39) / 2 = 23.
+      <br/>&bull; Alkaline Earth Triad: <b>Ca (40), Sr (88), Ba (137)</b> &rArr; Mean = (40 + 137) / 2 = 88.5.
+      <br/>&bull; Halogen Triad: <b>Cl (35.5), Br (80), I (127)</b> &rArr; Mean = (35.5 + 127) / 2 = 81.25.
+      <br/><i>Limitation:</i> Applicable only to a few isolated triads; failed for most known elements.
+    </li>
+    <li><b style="color: #FF8A65;">3. Newlands' Law of Octaves (John Alexander Newlands, 1865):</b> Arranged elements in increasing order of atomic weights and observed that every eighth element exhibited properties analogous to the first, reminiscent of musical octaves (Sa, Re, Ga, Ma, Pa, Dha, Ni, Sa):
+      <br/>&bull; Li, Be, B, C, N, O, F &rarr; Na (8th from Li), Mg (8th from Be), Al...
+      <br/><i>Limitations:</i> Valid only up to Calcium (Z = 20); did not accommodate transition metals or noble gases.
+    </li>
+    <li><b style="color: #FF8A65;">4. Lothar Meyer's Atomic Volume Curves (1869):</b> Plotted atomic volume against atomic weight, demonstrating that elements occupying similar positions on the curve possessed similar properties (e.g., highly electropositive alkali metals occupied peaks; alkaline earth metals occupied descending slopes; halogens occupied ascending slopes).</li>
   </ul>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Mendeleev's Periodic Law and Table</h3>
-  <p>In 1869, Russian chemist Dmitri Mendeleev and German chemist Lothar Meyer independently published periodic systems. Mendeleev formulated the fundamental <b>Mendeleev's Periodic Law:</b><br>
-  <span style="color: #FF8A65; font-weight: bold; display: block; text-align: center; margin: 8px 0;">The physical and chemical properties of elements are periodic functions of their atomic masses (atomic weights).</span></p>
-
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #FF8A65; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Mendeleev's Achievements & Major Anomalies</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li><b>1. Bold Predictions of Undiscovered Elements:</b> Mendeleev left gaps in his table for undiscovered elements and accurately predicted their properties. He predicted <i>Eka-Aluminum</i> (discovered later as <b>Gallium, Ga</b>) and <i>Eka-Silicon</i> (discovered later as <b>Germanium, Ge</b>).</li>
-      <li><b>2. Correction of Atomic Weights:</b> Corrected doubtful atomic weights of Beryllium (from 13.5 to 9 u), Indium, and Gold.</li>
-      <li><b>Anomaly 1 (Anomalous Pairs):</b> Certain pairs with higher atomic weights preceded elements with lower atomic weights (e.g. Cobalt 58.9 u placed before Nickel 58.7 u; Tellurium 127.6 u placed before Iodine 126.9 u).</li>
-      <li><b>Anomaly 2 (Position of Hydrogen & Isotopes):</b> Hydrogen could not be assigned a fixed position; isotopes of elements (same mass, different position) were omitted.</li>
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(iii) Mendeleev's Periodic Law and Table</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Dmitri Ivanovich Mendeleev (1869) formulated the first comprehensive periodic table: <i>"The properties of elements are periodic functions of their atomic weights."</i>
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #FF8A65;">Merits of Mendeleev's Table:</b>
+        <br/>1. Systematic study of 63 elements arranged into 8 vertical columns (groups) and horizontal series (periods).
+        <br/>2. Boldly left blank gaps for undiscovered elements, predicting their properties with astonishing accuracy:
+        <br/>&bull; <b>Eka-Aluminium</b> &rarr; discovered as <b>Gallium (Ga)</b>.
+        <br/>&bull; <b>Eka-Silicon</b> &rarr; discovered as <b>Germanium (Ge)</b>.
+        <br/>&bull; <b>Eka-Boron</b> &rarr; discovered as <b>Scandium (Sc)</b>.
+        <br/>3. Correction of doubtful atomic weights (e.g., corrected Beryllium from 13.5 to 9.0 using Be = Equivalent weight &times; Valency = 4.5 &times; 2 = 9).
+      </li>
+      <li><b style="color: #FF8A65;">Defects of Mendeleev's Table:</b>
+        <br/>1. Anomalous pairs where heavier elements preceded lighter ones: <b>Ar (39.9) before K (39.1)</b>; <b>Co (58.9) before Ni (58.7)</b>; <b>Te (127.6) before I (126.9)</b>.
+        <br/>2. Position of Hydrogen: Resembles both alkali metals (Group I) and halogens (Group VII).
+        <br/>3. Position of Isotopes: Isotopes have different atomic weights but occupy the same position.
+        <br/>4. Grouping of chemically dissimilar elements together (e.g., reactive alkali metals Cu, Ag, Au placed alongside Na, K in Group I).
+      </li>
     </ul>
   </div>
 
+  <!-- SECTION 2 -->
+  <h2 style="color: #FF8A65; border-bottom: 2px solid #FF8A65; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    2. Modern Periodic Law and the Present Form of Periodic Table
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">2. Modern Periodic Law and the Present Form of Periodic Table</h2>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Moseley's X-Ray Frequency Work & Modern Periodic Law</h3>
-  <p>In 1913, English physicist Henry Moseley bombarded various metal targets with high-energy electrons and measured the frequencies (ν) of characteristic X-rays emitted. Plotting $sqrt{
-u}$ against Atomic Number Z yielded a perfect straight line, whereas plotting against atomic mass showed significant scatter:<br>
-  <span style="color: #FF8A65; font-weight: bold; display: block; text-align: center; margin: 8px 0;">$sqrt{
-u} = a(Z - b)$</span>
-  Moseley concluded that **Atomic Number (Z) is a far more fundamental property of an element than its Atomic Mass!** This led directly to the formulation of the **Modern Periodic Law:**<br>
-  <span style="color: #FFF; font-weight: bold; display: block; text-align: center; margin: 8px 0;">The physical and chemical properties of elements are periodic functions of their atomic numbers (Z).</span></p>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Long Form of Periodic Table (Bohr's Classification)</h3>
-  <p>The present long form of the periodic table is based on the electronic configuration of elements. It consists of **7 Horizontal Rows (Periods)** and **18 Vertical Columns (Groups)** numbered 1 to 18 according to IUPAC recommendations:</p>
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Periods (n = 1 to 7):</b> Represent principal quantum number n of outermost valence shell.<br>
-    • 1st Period (n=1): 2 elements (H, He) - Shortest period.<br>
-    • 2nd & 3rd Periods (n=2, 3): 8 elements each (Short periods).<br>
-    • 4th & 5th Periods (n=4, 5): 18 elements each (Long periods).<br>
-    • 6th Period (n=6): 32 elements (Includes 14 Lanthanoids 4f) - Longest period.<br>
-    • 7th Period (n=7): 32 elements (Includes 14 Actinoids 5f).</li>
-  </ul>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Classification of Elements into s, p, d, and f Blocks</h3>
-  <p>Based on the subshell in which the differentiating last electron enters, elements are classified into 4 distinct blocks:</p>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin: 16px 0;">
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">1. s-Block Elements</h4>
-      <p style="margin: 0;">Groups 1 (Alkali metals) & 2 (Alkaline earth metals). General outer configuration: <b style='color: #FFF;'>ns<sup>1-2</sup></b>. Soft, reactive metals with low ionization energies.</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">2. p-Block Elements</h4>
-      <p style="margin: 0;">Groups 13 to 18. General outer configuration: <b style='color: #FFF;'>ns<sup>2</sup> np<sup>1-6</sup></b>. Includes metals, metalloids, non-metals, halogens, and noble gases.</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">3. d-Block (Transition) Elements</h4>
-      <p style="margin: 0;">Groups 3 to 12. General outer configuration: <b style='color: #FFF;'>(n-1)d<sup>1-10</sup> ns<sup>1-2</sup></b>. Hard metals with variable oxidation states, colored ions, and catalytic activity.</p>
-    </div>
-
-    <div style="background: rgba(255, 138, 101, 0.08); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px;">
-      <h4 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 16px; font-weight: bold;">4. f-Block (Inner Transition)</h4>
-      <p style="margin: 0;">Lanthanoids (4f<sup>1-14</sup>) & Actinoids (5f<sup>1-14</sup>). General configuration: <b style='color: #FFF;'>(n-2)f<sup>1-14</sup> (n-1)d<sup>0-1</sup> ns<sup>2</sup></b>. Heavy radioactive metallic elements.</p>
-    </div>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 16.5px;">(i) Moseley's X-Ray Frequency Work &amp; Modern Periodic Law</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      In 1913, English physicist Henry Gwyn Jeffreys Moseley bombarded various metal anticathodes with high-speed electrons, analyzing characteristic X-ray emission frequencies (&nu;).
+      <br/>&bull; <b style="color: #FF8A65;">Moseley's Law:</b> Plotting square root of frequency (&radic;&nu;) against atomic number (Z) yielded a perfect straight line:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        &radic;&nu; = a(Z - b) &nbsp;|&nbsp; where a and b are empirical constants
+      </span>
+      <br/>When plotted against atomic weight, the graph was erratic. This conclusively proved that <b>Atomic Number (Z)</b>—the nuclear proton charge—is the fundamental property of an element, not atomic weight.
+      <br/>&bull; <b style="color: #FF8A65;">Modern Periodic Law:</b> <i>"The physical and chemical properties of the elements are periodic functions of their atomic numbers."</i>
+    </p>
   </div>
 
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(ii) Long Form of Periodic Table (Bohr's Classification)</h3>
+  <p>
+    Based on the Aufbau electronic configuration of atoms, the Long Form of the Periodic Table organizes elements into <b>7 horizontal Periods</b> and <b>18 vertical Groups</b>:
+    <br/>&bull; <b style="color: #FF8A65;">Periods:</b> Period number n corresponds to the principal quantum number of the valence shell.
+    <br/>- Period 1: Very short (2 elements: H, He).
+    <br/>- Period 2 &amp; 3: Short (8 elements each: Li-Ne, Na-Ar).
+    <br/>- Period 4 &amp; 5: Long (18 elements each: K-Kr, Rb-Xe).
+    <br/>- Period 6: Very long (32 elements: Cs-Rn, includes 14 Lanthanoids).
+    <br/>- Period 7: Incomplete/complete (32 elements: Fr-Og, includes 14 Actinoids).
+  </p>
 
-  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">3. Periodic Trends in Properties of Elements: Atomic Radii, Ionic Radii, Inert Gas Radii</h2>
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(iii) Classification of Elements into s, p, d, and f Blocks</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #FF8A65;">1. s-Block Elements (Groups 1 &amp; 2):</b> Last electron enters s-orbital. General configuration: <b>ns<sup>1-2</sup></b>. Alkali metals (Group 1: ns<sup>1</sup>) and Alkaline earth metals (Group 2: ns<sup>2</sup>). Highly electropositive, reactive metals with low ionization energies.</li>
+      <li><b style="color: #FF8A65;">2. p-Block Elements (Groups 13 to 18):</b> Last electron enters p-orbitals. General configuration: <b>ns<sup>2</sup> np<sup>1-6</sup></b>. Includes metals, metalloids, and non-metals. s-block + p-block are collectively termed <b>Representative (Main Group) Elements</b>.</li>
+      <li><b style="color: #FF8A65;">3. d-Block Elements (Groups 3 to 12):</b> Last electron enters penultimate (n - 1)d subshell. General configuration: <b>(n - 1)d<sup>1-10</sup> ns<sup>0-2</sup></b>. Known as <b>Transition Elements</b>; exhibit variable oxidation states, coloured ions, catalytic behavior, and paramagnetism.</li>
+      <li><b style="color: #FF8A65;">4. f-Block Elements (Bottom 2 Rows):</b> Last electron enters antipenultimate (n - 2)f subshell. General configuration: <b>(n - 2)f<sup>1-14</sup> (n - 1)d<sup>0-1</sup> ns<sup>2</sup></b>. Known as <b>Inner Transition Elements</b>:
+        <br/>&bull; <i>Lanthanoids (4f series):</i> Ce (Z=58) to Lu (Z=71).
+        <br/>&bull; <i>Actinoids (5f series):</i> Th (Z=90) to Lr (Z=103). All actinoids are radioactive.
+      </li>
+    </ul>
+  </div>
 
-  <!-- 3D IMAGE 2 -->
+  <!-- SECTION 3 -->
+  <h2 style="color: #FF8A65; border-bottom: 2px solid #FF8A65; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    3. Periodic Trends in Properties of Elements: Atomic Radii, Ionic Radii, Inert Gas Radii
+  </h2>
+
+  <!-- PRESERVED IMAGE 2 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(255, 138, 101, 0.35); border: 1.5px solid #FF8A65;" alt="3D Periodic Trends Atomic and Ionic Radii" />
     <p style="color: #FF8A65; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 3.2: 3D Spatial Trends in Atomic Radii, Ionic Sizes, and Effective Nuclear Shielding</p>
   </div>
 
-  <p>Physical properties of elements exhibit regular periodic variations across periods and down groups, driven primarily by effective nuclear charge (Z<sub>eff</sub>) and principal shell number (n).</p>
+  
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Atomic Radius (Covalent & Metallic Radii)</h3>
-  <p>• <b>Covalent Radius:</b> Half the internuclear distance between two identical single covalently bonded atoms (r<sub>cov</sub> = d / 2).<br>
-  • <b>Metallic Radius:</b> Half the internuclear distance between two adjacent metal cations in a metallic crystal lattice.<br>
-  <b>Periodic Trends in Atomic Radii:</b><br>
-  1. <i>Across a Period (Left to Right):</i> Atomic radius <b>DECREASES</b>. Nuclear charge Z increases while shielding σ stays constant, causing higher Z<sub>eff</sub> pulling valence shell inward.<br>
-  2. <i>Down a Group (Top to Bottom):</i> Atomic radius <b>INCREASES</b>. New principal quantum shells (n) are added, overcoming nuclear charge increase.</p>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Ionic Radius and Isoelectronic Series</h3>
-  <p>• <b>Cation Radius:</b> Always <b>smaller</b> than its parent neutral atom (e.g. Na<sup>+</sup> = 95 pm < Na = 186 pm) because loss of e<sup>-</sup> increases Z<sub>eff</sub> per remaining electron.<br>
-  • <b>Anion Radius:</b> Always <b>larger</b> than its parent neutral atom (e.g. Cl<sup>-</sup> = 181 pm > Cl = 99 pm) because added e<sup>-</sup> increases inter-electronic repulsion, expanding electron cloud.<br>
-  • <b>Isoelectronic Series Radius Trend:</b> In an isoelectronic series (N<sup>3-</sup> > O<sup>2-</sup> > F<sup>-</sup> > Na<sup>+</sup> > Mg<sup>2+</sup> > Al<sup>3+</sup>), ionic radius decreases systematically as Atomic Number Z (nuclear charge) increases!</p>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) van der Waals Radius and Noble Gas Radii Anomalies</h3>
-  <p><b>van der Waals Radius:</b> Half the internuclear distance between two non-bonded adjacent atoms belonging to neighboring molecules in solid state. van der Waals radii are ALWAYS larger than covalent radii (r<sub>vdw</sub> > r<sub>cov</sub>). Noble gases (Group 18) do not form covalent bonds; their recorded atomic radii are van der Waals radii, making Noble Gas atomic radii exceptionally large in their respective periods!</p>
-
-
-  <!-- EXACT SYLLABUS HEADING 4 WORD-FOR-WORD -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Ionization Enthalpy, Electron Gain Enthalpy, Electronegativity</h2>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Ionization Enthalpy (Δ<sub>i</sub>H) & Governing Factors</h3>
-  <p>Minimum energy required to remove the most loosely bound electron from an isolated neutral gaseous atom: M(g) + Δ<sub>i</sub>H ⟶ M<sup>+</sup>(g) + e<sup>-</sup>.<br>
-  <b>Successive Ionization Enthalpies:</b> Δ<sub>i</sub>H<sub>1</sub> < Δ<sub>i</sub>H<sub>2</sub> < Δ<sub>i</sub>H<sub>3</sub> (removing subsequent e<sup>-</sup> from positive cation requires far higher energy!).</p>
-
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #FF8A65; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Key Anomalies in Ionization Enthalpy</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li>1. <i>Beryllium (Z=4) vs Boron (Z=5):</i> Δ<sub>i</sub>H<sub>1</sub> of Be (899 kJ/mol) > B (801 kJ/mol) because Be has stable filled 2s<sup>2</sup> configuration and higher s-subshell penetration than B (2p<sup>1</sup>).</li>
-      <li>2. <i>Nitrogen (Z=7) vs Oxygen (Z=8):</i> Δ<sub>i</sub>H<sub>1</sub> of N (1402 kJ/mol) > O (1314 kJ/mol) because N possesses extra stable half-filled 2p<sup>3</sup> subshell.</li>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 16.5px;">(i) Atomic Radius (Covalent &amp; Metallic Radii)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Because an atom's electron cloud has no sharp boundary, atomic radius is measured experimentally as half the internuclear distance between bonded atoms:
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #FF8A65;">Covalent Radius (r<sub>cov</sub>):</b> One-half of the distance between nuclei of two covalently bonded identical atoms in a homonuclear diatomic molecule: <b>r<sub>cov</sub> = d / 2</b> (e.g., Cl-Cl distance 198 pm &rArr; r<sub>cov</sub> = 99 pm).</li>
+      <li><b style="color: #FF8A65;">Metallic Radius (r<sub>met</sub>):</b> One-half of the internuclear distance between two adjacent metal cations in a metallic crystal lattice (e.g., solid Cu internuclear distance 256 pm &rArr; r<sub>met</sub> = 128 pm).</li>
+      <li><b style="color: #FF8A65;">Periodic Trends:</b>
+        <br/>&bull; <i>Across a Period:</i> Atomic radius <b>decreases from left to right</b> due to increasing effective nuclear charge (Z<sub>eff</sub> = Z - S) pulling valence electrons closer to the nucleus without adding new principal shells.
+        <br/>&bull; <i>Down a Group:</i> Atomic radius <b>increases from top to bottom</b> due to the addition of an entirely new principal electron shell (n), which outweighs increasing nuclear charge.
+      </li>
     </ul>
   </div>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) Electron Gain Enthalpy (Δ<sub>eg</sub>H)</h3>
-  <p>Enthalpy change when an electron is added to a neutral gaseous atom: X(g) + e<sup>-</sup> ⟶ X<sup>-</sup>(g).<br>
-  • <b>Halogens (Group 17):</b> Have most highly negative Δ<sub>eg</sub>H values because adding 1 e<sup>-</sup> achieves stable noble gas configuration.<br>
-  • <b>Chlorine vs Fluorine Anomaly:</b> Δ<sub>eg</sub>H of <b>Chlorine (-349 kJ/mol) is MORE negative than Fluorine (-328 kJ/mol)!</b> Small compact 2p subshell of Fluorine causes strong inter-electronic repulsions, opposing electron addition.</p>
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(ii) Ionic Radius and Isoelectronic Series</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #FF8A65;">Cation Radius:</b> A cation is always <b>smaller than its parent atom</b> (e.g., Na<sup>+</sup> = 102 pm vs Na = 186 pm) because loss of valence electrons decreases electron-electron repulsion, increases effective nuclear charge per remaining electron, and often strips off an entire outer shell.</li>
+    <li><b style="color: #FF8A65;">Anion Radius:</b> An anion is always <b>larger than its parent atom</b> (e.g., F<sup>-</sup> = 133 pm vs F = 72 pm) because the addition of electrons increases inter-electronic repulsion, expanding the electron cloud against constant nuclear charge.</li>
+    <li><b style="color: #FF8A65;">Isoelectronic Series Size Trend:</b> In an isoelectronic series (species with identical electron count), ionic size <b>decreases monotonically with increasing nuclear charge (Z)</b>:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        N<sup>3-</sup> (Z=7, 171 pm) &gt; O<sup>2-</sup> (Z=8, 140 pm) &gt; F<sup>-</sup> (Z=9, 133 pm) &gt; Na<sup>+</sup> (Z=11, 102 pm) &gt; Mg<sup>2+</sup> (Z=12, 72 pm) &gt; Al<sup>3+</sup> (Z=13, 54 pm)
+      </span>
+    </li>
+  </ul>
 
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Electronegativity (χ) Trends & Scales</h3>
-  <p>Qualitative measure of an atom's ability in a chemical compound to attract shared bonding electron pair. Linus Pauling assigned Fluorine maximum value <b>χ = 4.0</b>.<br>
-  • <i>Across a Period:</i> Electronegativity <b>INCREASES</b> (F is most electronegative).<br>
-  • <i>Down a Group:</i> Electronegativity <b>DECREASES</b> (Cs/Fr least electronegative).</p>
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(iii) van der Waals Radius and Noble Gas Radii Anomalies</h3>
+  <p>
+    <b style="color: #FF8A65;">van der Waals Radius (r<sub>vdw</sub>):</b> One-half of the distance between nuclei of two non-bonded adjacent atoms belonging to neighbouring molecules in the solid state.
+    <br/>&bull; <i>Magnitude Comparison:</i> <b>r<sub>vdw</sub> &gt; r<sub>met</sub> &gt; r<sub>cov</sub></b>.
+    <br/>&bull; <i>Noble Gas Apparent Anomaly:</i> In any period, the noble gas (He, Ne, Ar) appears to have a much larger atomic radius than the preceding halogen. This is because noble gases exist as non-bonded monoatomic entities whose radii are measured exclusively as <b>van der Waals radii</b>, whereas halogens and other elements are measured as shorter <b>covalent radii</b>.
+  </p>
+
+  <!-- SECTION 4 -->
+  <h2 style="color: #FF8A65; border-bottom: 2px solid #FF8A65; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    4. Ionization Enthalpy, Electron Gain Enthalpy, Electronegativity
+  </h2>
+
+  <!-- NEW STANDALONE SVG DIAGRAM FOR PERIODIC TRENDS -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px;">
+    <svg viewBox="0 0 500 320" style="width: 100%; max-width: 460px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Background subtle grid -->
+      <rect width="500" height="320" rx="6" fill="#0F172A"/>
+      
+      <!-- Periodic Table Mini Outline -->
+      <path d="M 50,70 L 110,70 L 110,130 L 330,130 L 330,70 L 450,70 L 450,250 L 50,250 Z" fill="rgba(255, 138, 101, 0.08)" stroke="#FF8A65" stroke-width="2" stroke-dasharray="3,3"/>
+      
+      <!-- Block Labels -->
+      <rect x="60" y="80" width="40" height="160" rx="4" fill="rgba(38, 198, 218, 0.2)" stroke="#26C6DA" stroke-width="1.2"/>
+      <text x="80" y="165" fill="#26C6DA" font-size="12" font-weight="bold" text-anchor="middle">s-block</text>
+      
+      <rect x="120" y="140" width="200" height="100" rx="4" fill="rgba(253, 200, 48, 0.2)" stroke="#FDC830" stroke-width="1.2"/>
+      <text x="220" y="195" fill="#FDC830" font-size="12" font-weight="bold" text-anchor="middle">d-block (Transition)</text>
+      
+      <rect x="340" y="80" width="100" height="160" rx="4" fill="rgba(102, 187, 106, 0.2)" stroke="#66BB6A" stroke-width="1.2"/>
+      <text x="390" y="165" fill="#66BB6A" font-size="12" font-weight="bold" text-anchor="middle">p-block</text>
+
+      <!-- f-block bottom -->
+      <rect x="140" y="260" width="220" height="40" rx="4" fill="rgba(171, 71, 188, 0.2)" stroke="#AB47BC" stroke-width="1.2"/>
+      <text x="250" y="285" fill="#AB47BC" font-size="11" font-weight="bold" text-anchor="middle">f-block (Lanthanoids &amp; Actinoids)</text>
+
+      <!-- Top Arrow: Left to Right across a Period -->
+      <defs>
+        <marker id="arrowRight" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M 0,1 L 7,4 L 0,7 Z" fill="#FF5252"/>
+        </marker>
+        <marker id="arrowDown" markerWidth="8" markerHeight="8" refX="4" refY="6" orient="auto">
+          <path d="M 1,0 L 4,7 L 7,0 Z" fill="#40C4FF"/>
+        </marker>
+        <marker id="arrowLeft" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto">
+          <path d="M 7,1 L 0,4 L 7,7 Z" fill="#69F0AE"/>
+        </marker>
+      </defs>
+
+      <!-- Horizontal Trend Arrow: Across Period -->
+      <line x1="120" y1="45" x2="440" y2="45" stroke="#FF5252" stroke-width="3.5" marker-end="url(#arrowRight)"/>
+      <text x="280" y="32" fill="#FF5252" font-size="11.5" font-weight="bold" text-anchor="middle">INCREASING: Ionization Enthalpy (&Delta;iH), &Delta;egH, Electronegativity (&chi;)</text>
+      
+      <!-- Atomic Radius decrease across period -->
+      <line x1="440" y1="58" x2="130" y2="58" stroke="#69F0AE" stroke-width="2.5" marker-end="url(#arrowLeft)"/>
+      <text x="285" y="68" fill="#69F0AE" font-size="10" font-weight="bold" text-anchor="middle">&larr; INCREASING Atomic &amp; Ionic Radii (Decreases Left to Right)</text>
+
+      <!-- Vertical Trend Arrow: Down a Group -->
+      <line x1="30" y1="80" x2="30" y2="240" stroke="#40C4FF" stroke-width="3.5" marker-end="url(#arrowDown)"/>
+      <g transform="translate(18, 160) rotate(-90)">
+        <text x="0" y="0" fill="#40C4FF" font-size="11" font-weight="bold" text-anchor="middle">INCREASING: Atomic Radius, Metallic Character</text>
+      </g>
+      
+      <!-- Decreasing downward note -->
+      <text x="475" y="165" fill="#FFAB91" font-size="10" font-weight="bold" text-anchor="middle" transform="rotate(90 475 165)">DECREASING: &Delta;iH &amp; Electronegativity &rarr;</text>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 3.3: Master Periodic Trends in Ionization Enthalpy, Electron Gain Enthalpy, Electronegativity, and Atomic Radius
+  </div>
+</div>
 
 
-  <!-- EXACT SYLLABUS HEADING 5 WORD-FOR-WORD -->
-  <h2 style="color: #FF8A65; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Valency, Nomenclature of Elements with Atomic Numbers > 100</h2>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(i) Periodic Trends in Valency and Oxidation States</h3>
-  <p>Valency of representative elements equals number of valence electrons (Groups 1-4) or 8 minus valence electrons (Groups 15-18). Transition metals show variable oxidation states due to small energy gap between (n-1)d and ns subshells.</p>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(ii) IUPAC Systematic Nomenclature for Elements Z > 100</h3>
-  <p>Systematic names derived directly from atomic number digits using Latin numerical roots:<br>
-  0 = <b>nil</b>, 1 = <b>un</b>, 2 = <b>bi</b>, 3 = <b>tri</b>, 4 = <b>quad</b>, 5 = <b>pent</b>, 6 = <b>hex</b>, 7 = <b>sept</b>, 8 = <b>oct</b>, 9 = <b>enn</b>, suffix = <b>-ium</b>.<br>
-  <i>Examples:</i><br>
-  • Z = 101 ⟶ Un + nil + un + ium = <b>Unnilunium (Unu)</b> [Mendelevium, Md]<br>
-  • Z = 118 ⟶ Un + un + oct + ium = <b>Ununoctium (Uuo)</b> [Oganesson, Og].</p>
-
-  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 18px;">(iii) Diagonal Relationship and Anomalous 2nd Period Behavior</h3>
-  <p>Second period elements (Li, Be, B) differ significantly from their group family members due to exceptionally small atomic size, high charge/radius ratio, high electronegativity, and absence of d-orbitals. Instead, they resemble diagonally adjacent 3rd period elements:<br>
-  <span style="color: #FF8A65; font-weight: bold; display: block; text-align: center; margin: 8px 0;">Lithium (Li) ⟷ Magnesium (Mg) &nbsp;&nbsp;|&nbsp;&nbsp; Beryllium (Be) ⟷ Aluminum (Al) &nbsp;&nbsp;|&nbsp;&nbsp; Boron (B) ⟷ Silicon (Si)</span></p>
-
-  <!-- BOTTOM FEATURE: MASTER CHEAT SHEET -->
-  <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.15), rgba(230, 81, 0, 0.15)); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #FF8A65; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 3 Formula Cheat Sheet</h3>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>Slater Z<sub>eff</sub>:</b> Z<sub>eff</sub> = Z - σ. Increases across period, causes radius contraction.</li>
-      <li><b>Radii Trend:</b> Anion > Neutral > Cation. Isoelectronic: larger Z ⟶ smaller size.</li>
-      <li><b>Ionization Anomalies:</b> Be > B (s<sup>2</sup> vs p<sup>1</sup>); N > O (half-filled p<sup>3</sup>).</li>
-      <li><b>Electron Gain Anomaly:</b> Cl (-349 kJ/mol) > F (-328 kJ/mol) due to 2p inter-electronic repulsions.</li>
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 16.5px;">(i) Ionization Enthalpy (&Delta;<sub>i</sub>H) &amp; Governing Factors</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      <b style="color: #FF8A65;">Definition:</b> The minimum energy required to remove the most loosely bound electron from an isolated neutral gaseous atom in its ground state:
+      <br/><b>X<sub>(g)</sub> + &Delta;<sub>i</sub>H &rarr; X<sup>+</sup><sub>(g)</sub> + e<sup>-</sup></b> (Units: kJ mol<sup>-1</sup> or eV/atom). Always endothermic (&Delta;<sub>i</sub>H > 0).
+      <br/>&bull; <i>Successive Ionization Enthalpies:</i> Removing an electron from a positive ion encounters stronger net attraction: <b>&Delta;<sub>i</sub>H<sub>1</sub> &lt; &Delta;<sub>i</sub>H<sub>2</sub> &lt; &Delta;<sub>i</sub>H<sub>3</sub></b>.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #FF8A65;">Governing Factors:</b>
+        <br/>1. <i>Atomic Size:</i> &Delta;<sub>i</sub>H &prop; 1 / radius.
+        <br/>2. <i>Effective Nuclear Charge:</i> &Delta;<sub>i</sub>H &prop; Z<sub>eff</sub>.
+        <br/>3. <i>Shielding Effect:</i> Inner core electrons shield valence electrons, lowering &Delta;<sub>i</sub>H.
+        <br/>4. <i>Penetration of Subshells:</i> Closer penetration to nucleus increases binding: <b>s &gt; p &gt; d &gt; f</b>.
+        <br/>5. <i>Electronic Stability:</i> Half-filled (p<sup>3</sup>, d<sup>5</sup>) and fully-filled (s<sup>2</sup>, p<sup>6</sup>, d<sup>10</sup>) subshells exhibit unusually high &Delta;<sub>i</sub>H.
+      </li>
+      <li><b style="color: #FF8A65;">Period 2 Anomalies:</b>
+        <br/>&bull; <b style="color: #FF8A65;">Be (899 kJ/mol) &gt; B (801 kJ/mol):</b> Beryllium has stable fully-filled 2s<sup>2</sup> subshell with high penetration; Boron loses a 2p<sup>1</sup> electron shielded by the 2s core.
+        <br/>&bull; <b style="color: #FF8A65;">N (1402 kJ/mol) &gt; O (1314 kJ/mol):</b> Nitrogen has stable half-filled 2p<sup>3</sup> subshell with maximum exchange energy; Oxygen has 2p<sup>4</sup> with paired electrons experiencing inter-electronic repulsion.
+      </li>
     </ul>
+  </div>
+
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(ii) Electron Gain Enthalpy (&Delta;<sub>eg</sub>H)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The enthalpy change when an electron is added to an isolated neutral gaseous atom:
+      <br/><b>X<sub>(g)</sub> + e<sup>-</sup> &rarr; X<sup>-</sup><sub>(g)</sub> &nbsp;|&nbsp; &Delta;<sub>eg</sub>H</b>
+      <br/>&bull; <i>First Electron Gain Enthalpy:</i> Usually negative (exothermic) for halogens and chalcogens, but positive (endothermic) for noble gases (stable octet) and alkaline earth metals (stable ns<sup>2</sup>).
+      <br/>&bull; <i>Second Electron Gain Enthalpy:</i> Always <b>strongly positive (endothermic)</b> because adding an electron to an already negative ion (e.g., O<sup>-</sup> + e<sup>-</sup> &rarr; O<sup>2-</sup>) encounters severe electrostatic repulsion.
+      <br/>&bull; <b style="color: #FF8A65;">Chlorine vs Fluorine Anomaly:</b> Chlorine has a more negative &Delta;<sub>eg</sub>H (-349 kJ/mol) than Fluorine (-328 kJ/mol). Fluorine has an extremely compact 2p subshell with high inter-electronic repulsion, resisting the incoming electron; Chlorine's larger 3p subshell accommodates the extra electron with minimal repulsion. Similarly, <b>S &gt; O</b>.
+    </p>
+  </div>
+
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(iii) Electronegativity (&chi;) Trends &amp; Scales</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #FF8A65;">Definition:</b> Qualitative relative measure of the power of an atom in a molecule to attract shared bonding electrons. Unlike ionization enthalpy, electronegativity is not an isolated atomic property.</li>
+      <li><b style="color: #FF8A65;">Pauling Scale:</b> Linus Pauling arbitrarily assigned <b>Fluorine &chi; = 4.0</b> (the most electronegative element), followed by Oxygen (&chi; = 3.5), Nitrogen (&chi; = 3.0), and Chlorine (&chi; = 3.0). Formula: <b>&chi;<sub>A</sub> - &chi;<sub>B</sub> = 0.208 &times; &radic;[&Delta; (in kcal/mol)]</b> = 0.1017 &times; &radic;[&Delta; (in kJ/mol)].</li>
+      <li><b style="color: #FF8A65;">Mulliken-Jaffe Scale:</b> Electronegativity as average of ionization energy and electron affinity: <b>&chi;<sub>M</sub> = (IE + EA) / 2</b> (in eV). Pauling conversion: &chi;<sub>P</sub> &approx; &chi;<sub>M</sub> / 2.8.</li>
+      <li><b style="color: #FF8A65;">Periodic Trends:</b> Increases across a period (from alkali metals ~0.8 to halogens ~4.0) and decreases down a group due to increasing atomic size.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2 style="color: #FF8A65; border-bottom: 2px solid #FF8A65; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    5. Valency, Nomenclature of Elements with Atomic Numbers &gt; 100
+  </h2>
+
+  <h3 style="color: #FF8A65; margin-top: 18px; font-size: 16.5px;">(i) Periodic Trends in Valency and Oxidation States</h3>
+  <p>
+    <b style="color: #FF8A65;">Valency:</b> The combining capacity of an element.
+    <br/>&bull; <i>Representative Elements:</i> Valency equals either the number of valence electrons (Groups 1, 2, 13, 14) or (8 - number of valence electrons) (Groups 15 to 17). Across Period 3 with respect to Oxygen: <b>Na<sub>2</sub>O (1) &rarr; MgO (2) &rarr; Al<sub>2</sub>O<sub>3</sub> (3) &rarr; SiO<sub>2</sub> (4) &rarr; P<sub>2</sub>O<sub>5</sub> (5) &rarr; SO<sub>3</sub> (6) &rarr; Cl<sub>2</sub>O<sub>7</sub> (7)</b>.
+  </p>
+
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(ii) IUPAC Systematic Nomenclature for Elements Z &gt; 100</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      To prevent national naming controversies, IUPAC established systematic roots:
+      <br/><b>0: nil (n) | 1: un (u) | 2: bi (b) | 3: tri (t) | 4: quad (q) | 5: pent (p) | 6: hex (h) | 7: sept (s) | 8: oct (o) | 9: enn (e)</b> + suffix <b>-ium</b>.
+      <br/>&bull; Z = 101: un + nil + un + ium = <b>Unnilunium (Unu)</b> [Mendelevium, Md]
+      <br/>&bull; Z = 104: un + nil + quad + ium = <b>Unnilquadium (Unq)</b> [Rutherfordium, Rf]
+      <br/>&bull; Z = 118: un + un + oct + ium = <b>Ununoctium (Uuo)</b> [Oganesson, Og]
+    </p>
+  </div>
+
+  <h3 style="color: #FF8A65; margin-top: 22px; font-size: 16.5px;">(iii) Diagonal Relationship and Anomalous 2nd Period Behavior</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 138, 101, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The first member of each group (Li, Be, B, C, N, O, F) differs significantly from heavier congeneric members of its own group and resembles diagonally adjacent elements of the next group (<b>Li &sim; Mg, Be &sim; Al, B &sim; Si</b>).
+      <br/>&bull; <b style="color: #FF8A65;">Underlying Causes:</b>
+      <br/>1. Extremely small atomic and ionic size.
+      <br/>2. High electronegativity and high ionization enthalpy.
+      <br/>3. Complete absence of d-orbitals in valence shell (maximum covalency strictly limited to 4).
+      <br/>4. High polarizing power (charge-to-radius ratio &phi; = charge / radius). Diagonal elements have nearly identical ionic potential (&phi;).
+    </p>
+  </div>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(191, 54, 12, 0.85)); border: 2px solid #FF8A65; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
+    <h3 style="color: #FF8A65; margin: 0 0 14px 0; font-size: 18px; text-align: center; font-weight: bold;">
+      ⚡ Master Chapter 3 Formula Cheat Sheet
+    </h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px;">
+        <thead>
+          <tr style="background: rgba(255, 138, 101, 0.25); color: #FF8A65; font-weight: bold;">
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Periodic Property / Law</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Across a Period (Left &rarr; Right)</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Down a Group (Top &rarr; Bottom)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Moseley's Law:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&radic;&nu; = a(Z - b)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Z is fundamental, not atomic mass</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Atomic &amp; Ionic Radii:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Decreases (Z<sub>eff</sub> increases)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Increases (New shell n added)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Ionization Enthalpy (&Delta;<sub>i</sub>H):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Increases (Anomalies: Be &gt; B, N &gt; O)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Decreases (Size &amp; shielding increase)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Electron Gain Enthalpy (&Delta;<sub>eg</sub>H):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Becomes more negative (Exothermic)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Becomes less negative (Anomaly: Cl &gt; F, S &gt; O)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Electronegativity (&chi;):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Increases (Fluorine = 4.0 max)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Decreases (Cesium = 0.7 min)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Metallic Character:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Decreases (Metals &rarr; Metalloids &rarr; Non-metals)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Increases (Electropositive nature rises)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #FF8A65;">Acidic Character of Oxides:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Increases (Basic &rarr; Amphoteric &rarr; Acidic)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Decreases (Oxides become more basic)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 </div>
 `;
 
 export const c11Chem3HtmlSolutions = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions - 72% Theory) -->
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
-    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Calculations)</p>
+  <!-- SECTION A -->
+  <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.15), rgba(255, 61, 0, 0.15)); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION A: Very Short Answer (VSA) Questions (1 Mark Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q1 to Q40 &bull; Periodic Laws, Blocks, Radii Definitions &amp; Trend Fundamentals</p>
   </div>
-
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q1. Modern Periodic Law states that properties of elements are periodic functions of their:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Atomic Mass &nbsp;&nbsp;&nbsp;&nbsp; (B) Atomic Number<br>
-      (C) Mass Number &nbsp;&nbsp;&nbsp;&nbsp; (D) Density
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Atomic Number</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Henry Moseley (1913) established that properties depend on Atomic Number Z.</span>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q1: State Mendeleev's Periodic Law.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The physical and chemical properties of elements are periodic functions of their atomic weights.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q2. Which element has the highest negative electron gain enthalpy in the entire periodic table?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Fluorine &nbsp;&nbsp;&nbsp;&nbsp; (B) Chlorine<br>
-      (C) Bromine &nbsp;&nbsp;&nbsp;&nbsp; (D) Oxygen
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Chlorine</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Chlorine (-349 kJ/mol) has more negative electron gain enthalpy than Fluorine (-328 kJ/mol) due to lower 3p repulsions.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q2: State the Modern Periodic Law.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The physical and chemical properties of elements are periodic functions of their atomic numbers (Z).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q3. Which of the following is the most electronegative element on the Pauling scale?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Oxygen &nbsp;&nbsp;&nbsp;&nbsp; (B) Nitrogen<br>
-      (C) Fluorine &nbsp;&nbsp;&nbsp;&nbsp; (D) Chlorine
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) Fluorine</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Fluorine has the highest electronegativity value (χ = 4.0).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q3: Who formulated the Modern Periodic Law and via what experiment?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Henry Moseley in 1913 through characteristic X-ray emission frequency (&radic;&nu; vs Z) studies.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q4. The total number of elements present in the 6th period of the long form of periodic table is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 8 &nbsp;&nbsp;&nbsp;&nbsp; (B) 18<br>
-      (C) 32 &nbsp;&nbsp;&nbsp;&nbsp; (D) 14
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) 32</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Period 6 includes 6s(2) + 4f(14) + 5d(10) + 6p(6) = 32 elements.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q4: How many periods and groups are present in the Long Form of the Periodic Table?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      7 horizontal periods and 18 vertical groups.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q5. Which ion has the largest radius among the given isoelectronic species: N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup>?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) N<sup>3-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) O<sup>2-</sup><br>
-      (C) F<sup>-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) Na<sup>+</sup>
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) N<sup>3-</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> N<sup>3-</sup> has the smallest nuclear charge (Z=7) for 10 electrons, so its electron cloud is largest.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q5: What determines the period number of an element in the periodic table?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The principal quantum number (n) of the outermost valence electron shell.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q6. What is the systematic IUPAC name of the element with Atomic Number Z = 120?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Unbinilium &nbsp;&nbsp;&nbsp;&nbsp; (B) Unnilbium<br>
-      (C) Unbihexium &nbsp;&nbsp;&nbsp;&nbsp; (D) Bibinium
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) Unbinilium</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 1 = un, 2 = bi, 0 = nil ⟶ Un + bi + nil + ium = Unbinilium (Ubn).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q6: What is the general valence electronic configuration of s-block elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      ns<sup>1-2</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q7. First ionization enthalpy of Nitrogen is higher than Oxygen because Nitrogen has:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Smaller size &nbsp;&nbsp;&nbsp;&nbsp; (B) Half-filled 2p<sup>3</sup> subshell<br>
-      (C) Higher nuclear charge &nbsp;&nbsp;&nbsp;&nbsp; (D) Higher screening effect
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Half-filled 2p<sup>3</sup> subshell</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Nitrogen has extra stable half-filled 2p<sup>3</sup> configuration.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q7: What is the general valence electronic configuration of p-block elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      ns<sup>2</sup> np<sup>1-6</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q8. Lithium shows diagonal relationship with which 3rd period element?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Sodium &nbsp;&nbsp;&nbsp;&nbsp; (B) Magnesium<br>
-      (C) Aluminum &nbsp;&nbsp;&nbsp;&nbsp; (D) Silicon
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Magnesium</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Lithium (Li) shows diagonal relationship with Magnesium (Mg).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q8: What is the general valence electronic configuration of d-block elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (n - 1)d<sup>1-10</sup> ns<sup>0-2</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q9. Which block of elements contains non-metals, metalloids, and noble gases?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) s-block &nbsp;&nbsp;&nbsp;&nbsp; (B) p-block<br>
-      (C) d-block &nbsp;&nbsp;&nbsp;&nbsp; (D) f-block
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) p-block</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> p-block contains metals, non-metals, metalloids, halogens, and noble gases.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q9: What is the general valence electronic configuration of f-block elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (n - 2)f<sup>1-14</sup> (n - 1)d<sup>0-1</sup> ns<sup>2</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q10. General outer electronic configuration of d-block transition elements is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) ns<sup>2</sup> np<sup>6</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) (n-1)d<sup>1-10</sup> ns<sup>1-2</sup><br>
-      (C) (n-2)f<sup>1-14</sup> ns<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) ns<sup>1-2</sup>
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) (n-1)d<sup>1-10</sup> ns<sup>1-2</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> d-block general configuration is (n-1)d<sup>1-10</sup> ns<sup>1-2</sup>.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q10: Which blocks of elements are collectively called Representative Elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The s-block and p-block elements.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q11. Which oxide is Amphoteric in nature?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Na<sub>2</sub>O &nbsp;&nbsp;&nbsp;&nbsp; (B) CaO<br>
-      (C) Al<sub>2</sub>O<sub>3</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) SO<sub>3</sub>
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) Al<sub>2</sub>O<sub>3</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Aluminum oxide (Al<sub>2</sub>O<sub>3</sub>) reacts with both acids and bases.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q11: Define Covalent Radius.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      One-half of the distance between the centers of nuclei of two covalently bonded identical atoms in a homonuclear molecule.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q12. Across a period from left to right, atomic radius generally:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Increases &nbsp;&nbsp;&nbsp;&nbsp; (B) Decreases<br>
-      (C) Remains constant &nbsp;&nbsp;&nbsp;&nbsp; (D) First increases then decreases
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Decreases</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Increasing nuclear charge Z<sub>eff</sub> pulls outer valence electrons inward.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q12: Define Metallic Radius.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      One-half of the internuclear distance between two adjacent metal cations in a metallic crystal lattice.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q13. First ionization enthalpy of Beryllium (Be) is higher than Boron (B) because Be has:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) s<sup>2</sup> filled subshell &nbsp;&nbsp;&nbsp;&nbsp; (B) Larger size<br>
-      (C) Lower Z &nbsp;&nbsp;&nbsp;&nbsp; (D) Unpaired electron
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) s<sup>2</sup> filled subshell</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Beryllium has stable fully-filled 2s<sup>2</sup> subshell with high penetration.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q13: Define van der Waals Radius.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      One-half of the distance between nuclei of two non-bonded identical adjacent atoms in the solid state.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q14. Which group of elements is known as Chalcogens?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Group 15 &nbsp;&nbsp;&nbsp;&nbsp; (B) Group 16<br>
-      (C) Group 17 &nbsp;&nbsp;&nbsp;&nbsp; (D) Group 18
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Group 16</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Group 16 elements (O, S, Se, Te, Po) are named Chalcogens (ore formers).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q14: Arrange the radii in decreasing order of magnitude: covalent, van der Waals, metallic.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      van der Waals radius &gt; Metallic radius &gt; Covalent radius.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q15. The element predicted by Mendeleev as Eka-Aluminum is now known as:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Scandium &nbsp;&nbsp;&nbsp;&nbsp; (B) Gallium<br>
-      (C) Germanium &nbsp;&nbsp;&nbsp;&nbsp; (D) Technetium
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Gallium</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Eka-Aluminum is Gallium (Ga); Eka-Silicon is Germanium (Ge).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q15: Why does atomic radius decrease across a period from left to right?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because effective nuclear charge (Z<sub>eff</sub>) increases while electrons add to the same principal shell, pulling electrons closer.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q16. What happens to metallic character down a group in the periodic table?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Decreases &nbsp;&nbsp;&nbsp;&nbsp; (B) Increases<br>
-      (C) Remains constant &nbsp;&nbsp;&nbsp;&nbsp; (D) First decreases then increases
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Increases</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Ionization enthalpy decreases down a group, increasing electropositive metallic character.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q16: Why does atomic radius increase down a group?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because an entirely new principal electron shell (n) is added at each step, increasing distance from the nucleus.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q17. van der Waals radius of an element is always:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Equal to covalent radius &nbsp;&nbsp;&nbsp;&nbsp; (B) Smaller than covalent radius<br>
-      (C) Larger than covalent radius &nbsp;&nbsp;&nbsp;&nbsp; (D) Zero
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) Larger than covalent radius</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> r<sub>vdw</sub> > r<sub>cov</sub> because van der Waals forces involve non-bonded atoms.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q17: Why is a cation always smaller than its parent neutral atom?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because loss of electrons increases effective nuclear charge per remaining electron and reduces inter-electronic repulsion.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q18. Which oxide is strongly Basic?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Cl<sub>2</sub>O<sub>7</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) SO<sub>3</sub><br>
-      (C) Na<sub>2</sub>O &nbsp;&nbsp;&nbsp;&nbsp; (D) CO<sub>2</sub>
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) Na<sub>2</sub>O</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Alkali metal oxides like Na<sub>2</sub>O are strongly basic.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q18: Why is an anion always larger than its parent neutral atom?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because addition of electrons increases inter-electronic repulsion, expanding the electron cloud against constant nuclear charge.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q19. Atomic number of the halogen present in the 4th period is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 17 &nbsp;&nbsp;&nbsp;&nbsp; (B) 35<br>
-      (C) 53 &nbsp;&nbsp;&nbsp;&nbsp; (D) 85
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) 35</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Bromine (Br, Z=35) is the 4th period halogen.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q19: What is an Isoelectronic Series?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A group of atoms, molecules, or ions that contain the same total number of electrons.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q20. Screening / Shielding effect on outer electrons is maximum for which orbital?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) s &nbsp;&nbsp;&nbsp;&nbsp; (B) p<br>
-      (C) d &nbsp;&nbsp;&nbsp;&nbsp; (D) f
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) s</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> s-orbitals have maximum penetration and maximum shielding power (s > p > d > f).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q20: Arrange in order of decreasing ionic size: N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup>, Mg<sup>2+</sup>, Al<sup>3+</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      N<sup>3-</sup> &gt; O<sup>2-</sup> &gt; F<sup>-</sup> &gt; Na<sup>+</sup> &gt; Mg<sup>2+</sup> &gt; Al<sup>3+</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q21. Which element has zero electron gain enthalpy?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Fluorine &nbsp;&nbsp;&nbsp;&nbsp; (B) Neon<br>
-      (C) Chlorine &nbsp;&nbsp;&nbsp;&nbsp; (D) Sodium
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (B) Neon</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Noble gas Neon has stable octet, giving positive / zero electron gain enthalpy.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q21: Define Ionization Enthalpy (&Delta;<sub>i</sub>H).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The minimum energy required to remove the most loosely bound electron from an isolated gaseous atom in its ground state.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q22. Order of ionic radii for hydride, fluoride, chloride: F<sup>-</sup>, Cl<sup>-</sup>, H<sup>-</sup>:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) F<sup>-</sup> < H<sup>-</sup> < Cl<sup>-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) H<sup>-</sup> < F<sup>-</sup> < Cl<sup>-</sup><br>
-      (C) Cl<sup>-</sup> < F<sup>-</sup> < H<sup>-</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) F<sup>-</sup> < Cl<sup>-</sup> < H<sup>-</sup>
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) F<sup>-</sup> < H<sup>-</sup> < Cl<sup>-</sup></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> H<sup>-</sup> radius (~136 pm) lies between F<sup>-</sup> (133 pm) and Cl<sup>-</sup> (181 pm).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q22: What are the SI units of Ionization Enthalpy?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      kJ mol<sup>-1</sup> (or eV atom<sup>-1</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q23. IUPAC symbol for element with Z = 114 is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Uuq &nbsp;&nbsp;&nbsp;&nbsp; (B) Uun<br>
-      (C) Uut &nbsp;&nbsp;&nbsp;&nbsp; (D) Uup
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) Uuq</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 114 = Un + un + quad + ium = Ununquadium (Uuq, Flerovium).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q23: Why is the second ionization enthalpy (&Delta;<sub>i</sub>H<sub>2</sub>) always greater than the first (&Delta;<sub>i</sub>H<sub>1</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because removing an electron from a positively charged cation encounters stronger net electrostatic nuclear attraction.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q24. Which period of the periodic table contains only gaseous elements?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1st Period &nbsp;&nbsp;&nbsp;&nbsp; (B) 2nd Period<br>
-      (C) 3rd Period &nbsp;&nbsp;&nbsp;&nbsp; (D) 4th Period
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (A) 1st Period</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 1st Period contains H<sub>2</sub> and He (both gases!).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q24: Why is the first ionization enthalpy of Beryllium higher than that of Boron?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Beryllium has a stable, fully-filled 2s<sup>2</sup> subshell, whereas Boron loses an easily removed, shielded 2p<sup>1</sup> electron.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #FF8A65;'>Q25. Beryllium shows diagonal relationship with:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Lithium &nbsp;&nbsp;&nbsp;&nbsp; (B) Sodium<br>
-      (C) Aluminum &nbsp;&nbsp;&nbsp;&nbsp; (D) Silicon
-    </div>
-    <div style="background: rgba(255, 138, 101, 0.15); border-left: 3.5px solid #FF8A65; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #FF8A65;'>✓ Answer: (C) Aluminum</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Beryllium (Be) shows diagonal relationship with Aluminum (Al).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q25: Why is the first ionization enthalpy of Nitrogen higher than that of Oxygen?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen has an extra-stable half-filled 2p<sup>3</sup> subshell with maximum exchange energy.
     </div>
   </div>
-  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Short Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q26: Define Electron Gain Enthalpy (&Delta;<sub>eg</sub>H).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The enthalpy change occurring when an isolated neutral gaseous atom accepts an electron to form a monovalent negative ion.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q27: Why is the second electron gain enthalpy always endothermic (positive)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because adding an electron to an already negatively charged anion experiences strong electrostatic repulsion.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q28: Which element has the highest negative electron gain enthalpy in the periodic table?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Chlorine (&Delta;<sub>eg</sub>H = -349 kJ mol<sup>-1</sup>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q29: Why is the electron gain enthalpy of Fluorine less negative than that of Chlorine?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fluorine has a compact 2p subshell with high electron-electron repulsion, resisting the incoming electron.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q30: Define Electronegativity (&chi;).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The relative qualitative tendency of an bonded atom to attract the shared pair of electrons toward itself.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q31: Which element has the highest electronegativity on the Pauling scale?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fluorine (assigned &chi; = 4.0).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q32: Name the three most electronegative elements in the periodic table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fluorine (4.0), Oxygen (3.5), Nitrogen (3.0).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q33: What is the IUPAC systematic name and symbol for element with Z = 104?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Unnilquadium (Unq).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q34: What is the IUPAC systematic name and symbol for element with Z = 118?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ununoctium (Uuo).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q35: Define Diagonal Relationship.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The close resemblance in chemical properties between diagonally adjacent elements of the 2nd and 3rd periods (e.g., Li and Mg).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q36: Give two pairs of elements exhibiting a diagonal relationship.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lithium &amp; Magnesium, Beryllium &amp; Aluminium.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q37: Why does the first member of each group show anomalous behavior?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Due to small size, high electronegativity, high polarizing power, and absence of d-orbitals in valence shell.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q38: What is the maximum covalency of 2nd period elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Strictly limited to 4 (utilizing one 2s and three 2p orbitals).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q39: How does the acidic nature of normal oxides vary across a period?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Oxides transition from strongly basic (Na<sub>2</sub>O) to amphoteric (Al<sub>2</sub>O<sub>3</sub>) to strongly acidic (Cl<sub>2</sub>O<sub>7</sub>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q40: What was Eka-Silicon in Mendeleev's periodic table?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Germanium (Ge).
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q26. State Modern Periodic Law and contrast it with Mendeleev's Periodic Law.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Modern:</b> Properties are periodic functions of Atomic Number Z.<br><b>Mendeleev:</b> Properties were periodic functions of Atomic Mass.
+  <!-- SECTION B -->
+  <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.15), rgba(255, 61, 0, 0.15)); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION B: Short Answer (SA) Questions (2 &amp; 3 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q41 to Q80 &bull; Period 2 Anomalies, Electron Gain Comparisons, Diagonal Relationships &amp; IUPAC Rules</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q41: Explain D&ouml;bereiner's Law of Triads with two suitable examples.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      D&ouml;bereiner grouped chemically similar elements into triads where the atomic weight of the middle element was roughly the average of the outer two.<br/>1. <b style="color: #FF8A65;">Alkali Triad:</b> Li (7), Na (23), K (39) &rArr; Mean = (7 + 39)/2 = <b>23 (exact)</b>.<br/>2. <b style="color: #FF8A65;">Halogen Triad:</b> Cl (35.5), Br (80), I (127) &rArr; Mean = (35.5 + 127)/2 = <b>81.25 (&approx; 80)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q27. Why does atomic radius decrease across a period from left to right?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Nuclear charge Z increases while shell number n remains constant, causing higher Z<sub>eff</sub> pulling valence e<sup>-</sup> inward.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q42: State Newlands' Law of Octaves and explain why it was discarded.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Newlands arranged elements in order of atomic weights: every eighth element shared properties with the first (e.g., Li and Na).<br/>&bull; <b style="color: #FF8A65;">Failure Reasons:</b> 1. Valid only up to Calcium (Z = 20); heavier elements failed to fit. 2. He assumed only 56 elements existed and adjusted disparate elements into single slots (e.g., placing Co and Ni in the halogen column).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q28. Define Covalent Radius and van der Waals Radius. Which is larger?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Covalent:</b> Half internuclear distance of single covalent bond.<br><b>van der Waals:</b> Half internuclear distance of non-bonded adjacent atoms. <b style='color:#FFF;'>r<sub>vdw</sub> > r<sub>cov</sub></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q43: State three major achievements of Mendeleev's Periodic Table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #FF8A65;">Systematic Framework:</b> Consolidated all 63 known elements into 8 vertical groups.<br/>2. <b style="color: #FF8A65;">Prediction of Unknown Elements:</b> Left gaps and predicted properties of Eka-Aluminium (Gallium), Eka-Silicon (Germanium), and Eka-Boron (Scandium) accurately.<br/>3. <b style="color: #FF8A65;">Atomic Weight Corrections:</b> Corrected doubtful weights of Beryllium (13.5 &rarr; 9.0) and Platinum.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q29. Explain why Chlorine has more negative electron gain enthalpy than Fluorine.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Fluorine's small 2p subshell causes strong electron-electron repulsions, opposing addition of e<sup>-</sup>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q44: Explain three major anomalies of Mendeleev's Periodic Table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #FF8A65;">Anomalous Pairs:</b> Heavier elements placed before lighter ones: Ar (39.9) before K (39.1); Co (58.9) before Ni (58.7); Te (127.6) before I (126.9).<br/>2. <b style="color: #FF8A65;">Hydrogen Position:</b> Could not decide whether H belonged with alkali metals (Group I) or halogens (Group VII).<br/>3. <b style="color: #FF8A65;">Isotopes:</b> Atoms of same element with different masses had no separate accommodation.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q30. Define Effective Nuclear Charge (Z<sub>eff</sub>) and write Slater's formula.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Net positive charge experienced by valence electron: <b>Z<sub>eff</sub> = Z - σ</b> (where σ is screening constant).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q45: Explain Moseley's experiment and derive how it established Atomic Number as the basis of periodicity.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Moseley measured the frequencies (&nu;) of characteristic X-rays emitted from metal targets bombarded by electrons. Plotting &radic;&nu; against atomic number Z yielded a linear relation: <b>&radic;&nu; = a(Z - b)</b>. The plot against atomic weight was non-linear, proving atomic number (nuclear proton charge) dictates physical and chemical periodicity, resolving all Mendeleev's anomalous pairs.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q31. Write systematic IUPAC name and symbol for elements with Z = 105 and Z = 118.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      • Z=105: <b>Unnilpentium (Unp)</b> [Dubnium]<br>• Z=118: <b>Ununoctium (Uuo)</b> [Oganesson].
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q46: Explain the division of the Periodic Table into s, p, d, and f blocks with electron configurations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #FF8A65;">s-block:</b> Groups 1 &amp; 2; valence ns<sup>1-2</sup>.<br/>2. <b style="color: #FF8A65;">p-block:</b> Groups 13 to 18; valence ns<sup>2</sup> np<sup>1-6</sup>.<br/>3. <b style="color: #FF8A65;">d-block:</b> Groups 3 to 12; penultimate (n - 1)d<sup>1-10</sup> ns<sup>0-2</sup>.<br/>4. <b style="color: #FF8A65;">f-block:</b> 14 Lanthanoids &amp; 14 Actinoids; antipenultimate (n - 2)f<sup>1-14</sup> (n - 1)d<sup>0-1</sup> ns<sup>2</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q32. Explain why first ionization enthalpy of Nitrogen is higher than Oxygen.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Nitrogen has extra stable half-filled 2p<sup>3</sup> subshell configuration.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q47: Why does the atomic radius decrease across a period and increase down a group?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">Across Period:</b> Electrons add to the same principal shell, but nuclear charge Z increases by 1 each step. Screening among same-shell electrons is weak, so effective nuclear charge Z<sub>eff</sub> increases, drawing the valence shell closer. <b style="color: #FF8A65;">Down Group:</b> An entirely new electron shell is added at each step; the increased principal quantum number n dominates over nuclear charge, expanding the radius.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q33. Arrange the isoelectronic species in increasing radius order: Al<sup>3+</sup>, Mg<sup>2+</sup>, Na<sup>+</sup>, F<sup>-</sup>, O<sup>2-</sup>, N<sup>3-</sup>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Al<sup>3+</sup> < Mg<sup>2+</sup> < Na<sup>+</sup> < F<sup>-</sup> < O<sup>2-</sup> < N<sup>3-</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q48: Explain why noble gases possess extraordinarily large atomic radii compared to halogens in the same period.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Halogen atomic radii are determined as <b>covalent radii</b> (bonded internuclear distance d/2 where electron clouds overlap). Noble gases do not form covalent bonds; their radii are determined as <b>van der Waals radii</b> between non-bonded neighbouring atoms where only weak dispersion forces operate without orbital overlap. van der Waals radii are fundamentally larger than covalent radii.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q34. Define Electronegativity and state how it differs from Electron Gain Enthalpy.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Electronegativity:</b> Tendency to attract shared e<sup>-</sup> pair in a bond (bonded property).<br><b>Electron Gain Enthalpy:</b> Energy change when adding e<sup>-</sup> to isolated atom.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q49: Explain the size variation in the isoelectronic series: O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup>, Mg<sup>2+</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      All four ions possess exactly 10 electrons (configuration 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>). Their nuclear charges (Z) are: O (8), F (9), Na (11), Mg (12). As nuclear charge increases from Z = 8 to 12, the nuclear attraction on the 10 electrons increases, compressing the electron cloud: <b>O<sup>2-</sup> (140 pm) &gt; F<sup>-</sup> (133 pm) &gt; Na<sup>+</sup> (102 pm) &gt; Mg<sup>2+</sup> (72 pm)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q35. What is Diagonal Relationship? Give 2 example pairs.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Similarity in properties between 2nd period elements and diagonally adjacent 3rd period elements (<b>Li-Mg, Be-Al</b>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q50: What are the five key factors that govern Ionization Enthalpy (&Delta;<sub>i</sub>H)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #FF8A65;">Atomic Size:</b> Inversely proportional; larger radius weakens nuclear attraction.<br/>2. <b style="color: #FF8A65;">Effective Nuclear Charge (Z<sub>eff</sub>):</b> Directly proportional; higher Z<sub>eff</sub> holds electrons tighter.<br/>3. <b style="color: #FF8A65;">Shielding Effect:</b> Inner electron shells shield outer electrons, reducing &Delta;<sub>i</sub>H.<br/>4. <b style="color: #FF8A65;">Penetration:</b> Penetration follows s &gt; p &gt; d &gt; f; s-electrons require more removal energy.<br/>5. <b style="color: #FF8A65;">Electronic Symmetry:</b> Half-filled (p<sup>3</sup>) and fully-filled (s<sup>2</sup>, p<sup>6</sup>) subshells exhibit exceptional stability.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q36. Why is cation radius smaller than its parent neutral atom?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Loss of e<sup>-</sup> increases Z<sub>eff</sub> per remaining electron, pulling electron cloud tighter.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q51: Why is &Delta;<sub>i</sub>H<sub>1</sub> of Beryllium greater than that of Boron?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Beryllium (Z = 4, 1s<sup>2</sup> 2s<sup>2</sup>) has a completely filled 2s subshell with higher penetration and orbital stability. Boron (Z = 5, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>1</sup>) has a single 2p electron that is shielded by the inner 2s<sup>2</sup> core and penetrates less toward the nucleus, making it easier to remove.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q37. Why is anion radius larger than its parent neutral atom?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Addition of e<sup>-</sup> increases inter-electronic repulsion, expanding electron cloud.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q52: Why is &Delta;<sub>i</sub>H<sub>1</sub> of Nitrogen greater than that of Oxygen?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen (Z = 7, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>) has a stable half-filled 2p subshell with 3 parallel spins, yielding high exchange energy. Oxygen (Z = 8, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup>) contains one paired 2p orbital (2p<sub>x</sub><sup>2</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup>); electron-electron repulsion between the paired electrons makes removing the 4th electron easier.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q38. Write general electronic configuration for: (a) s-block, (b) d-block elements.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      (a) s-block: <b>ns<sup>1-2</sup></b>.<br>(b) d-block: <b>(n-1)d<sup>1-10</sup> ns<sup>1-2</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q53: Why is the second ionization enthalpy (&Delta;<sub>i</sub>H<sub>2</sub>) of Sodium much higher than that of Magnesium?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Sodium (Na: [Ne] 3s<sup>1</sup>) loses one electron to form Na<sup>+</sup> ([Ne]), achieving an extremely stable noble gas octet; removing a second electron requires disrupting this stable 2p<sup>6</sup> core. Magnesium (Mg: [Ne] 3s<sup>2</sup>) forms Mg<sup>+</sup> ([Ne] 3s<sup>1</sup>); removing the second electron yields the stable octet Mg<sup>2+</sup> ([Ne]), requiring much less energy.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q39. Why are noble gas atomic radii exceptionally large in their respective periods?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Noble gas radii are measured as van der Waals radii, which are inherently larger than covalent radii.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q54: Explain why the electron gain enthalpy of Chlorine is more negative than that of Fluorine.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fluorine (Z = 9) has an extremely compact 2p subshell. When an extra electron is added, it experiences intense electrostatic repulsion from the 7 tightly packed valence electrons. Chlorine (Z = 17) has a larger, more diffuse 3p subshell that accommodates the incoming electron with substantially less inter-electronic repulsion, releasing more energy (-349 vs -328 kJ/mol).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q40. Explain why first ionization enthalpy of Beryllium is higher than Boron.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Beryllium has stable fully-filled 2s<sup>2</sup> subshell with high penetration power compared to Boron (2p<sup>1</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q55: Why are the electron gain enthalpies of Noble Gases and Group 2 elements positive?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Noble gases have completely filled stable octets (ns<sup>2</sup> np<sup>6</sup>); an incoming electron must enter the next higher principal quantum shell (n + 1)s, which is energetically unfavorable. Group 2 alkaline earth metals have stable fully-filled ns<sup>2</sup> subshells; the extra electron must enter a higher energy np subshell.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q41. Define Amphoteric Oxide with 2 examples.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Oxide that reacts with both acids and bases to form salt and water (e.g. <b>Al<sub>2</sub>O<sub>3</sub>, ZnO</b>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q56: Differentiate between Electronegativity and Electron Gain Enthalpy.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">Electronegativity:</b> Tendency of an atom in a bonded molecule to attract shared electron pairs; a relative dimensionless property without units. <b style="color: #FF8A65;">Electron Gain Enthalpy:</b> Enthalpy change when an isolated neutral gaseous atom captures an electron; an absolute, experimentally measurable physical quantity with units kJ mol<sup>-1</sup>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q42. Which group elements are called Halogens and why?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Group 17 (F, Cl, Br, I, At) because they form sea salts (Greek <i>halo</i> = sea salt, <i>gens</i> = producer).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q57: Explain Pauling's Electronegativity scale and how it is determined from bond energies.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Pauling based his scale on the excess bond resonance energy &Delta; = E<sub>A-B</sub> - &radic;(E<sub>A-A</sub> &times; E<sub>B-B</sub>). The difference in electronegativity is given by: <b>&chi;<sub>A</sub> - &chi;<sub>B</sub> = 0.208 &times; &radic;[&Delta; (in kcal/mol)]</b> (or 0.1017 &times; &radic;[&Delta; in kJ/mol]). By assigning Fluorine &chi; = 4.0, values for all other elements were established.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q43. Why does metallic character increase down a group?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Atomic size increases and ionization enthalpy decreases, making it easier to lose electrons.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q58: Explain the Mulliken-Jaffe Electronegativity scale and its relation to Pauling's scale.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Robert Mulliken defined electronegativity as the arithmetic mean of ionization enthalpy (IE) and electron affinity (EA): <b>&chi;<sub>M</sub> = (IE + EA) / 2</b> (in eV). The values are approximately 2.8 times larger than Pauling's values: <b>&chi;<sub>P</sub> &approx; &chi;<sub>M</sub> / 2.8</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q44. Write IUPAC name for element with atomic number Z = 112.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Ununbium (Uub)</b> [Copernicium, Cn].
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q59: Explain the IUPAC naming rules for elements with atomic number > 100 with two examples.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Roots derived from Latin/Greek digits: 0:nil, 1:un, 2:bi, 3:tri, 4:quad, 5:pent, 6:hex, 7:sept, 8:oct, 9:enn. The digits are assembled sequentially and terminated with '-ium'.<br/>&bull; Z = 107: un + nil + sept + ium = <b>Unnilseptium (Uns)</b> [Bohrium, Bh].<br/>&bull; Z = 114: un + un + quad + ium = <b>Ununquadium (Uuq)</b> [Flerovium, Fl].
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q45. State 2 main anomalies of Mendeleev's periodic table.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      1. Anomalous atomic mass pairs (Co before Ni). 2. No fixed position for Hydrogen.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q60: Explain the causes of Diagonal Relationship in the Periodic Table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #FF8A65;">Similar Ionic Potential (&phi;):</b> Polarizing power &phi; = Ionic charge / (Ionic radius)<sup>2</sup> is nearly identical for diagonal pairs (Li<sup>+</sup> &sim; Mg<sup>2+</sup>, Be<sup>2+</sup> &sim; Al<sup>3+</sup>).<br/>2. <b style="color: #FF8A65;">Counteracting Trends:</b> Moving across a period increases electronegativity and decreases size; moving down a group decreases electronegativity and increases size. Moving diagonally cancels these opposing effects, yielding closely matched properties.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q46. How many elements are present in the 4th period of the periodic table?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>18 elements</b> (4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q61: State three chemical similarities between Lithium and Magnesium (Diagonal Relationship).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Both Li and Mg decompose carbonates upon heating to yield oxides and CO<sub>2</sub> (Li<sub>2</sub>CO<sub>3</sub> &rarr; Li<sub>2</sub>O + CO<sub>2</sub>), unlike other alkali carbonates.<br/>2. Both combine directly with atmospheric nitrogen to form nitrides (Li<sub>3</sub>N and Mg<sub>3</sub>N<sub>2</sub>).<br/>3. Both their chlorides (LiCl and MgCl<sub>2</sub>) are deliquescent, soluble in alcohol, and crystallize as hydrates (LiCl &bull; 2H<sub>2</sub>O and MgCl<sub>2</sub> &bull; 8H<sub>2</sub>O).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q47. Why do elements in the same group possess similar chemical properties?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Because they share identical valence shell electronic configurations.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q62: State three chemical similarities between Beryllium and Aluminium.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Both Be and Al are rendered passive by concentrated nitric acid (HNO<sub>3</sub>) due to formation of an oxide film.<br/>2. Both form amphoteric oxides (BeO and Al<sub>2</sub>O<sub>3</sub>) and hydroxides that dissolve in excess alkali to form beryllates and aluminates.<br/>3. Both their chlorides (BeCl<sub>2</sub> and AlCl<sub>3</sub>) are covalent polymeric/dimeric species with chlorine bridges, acting as Lewis acid catalysts in Friedel-Crafts reactions.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q48. Define Screening / Shielding Effect.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Repulsion exerted by inner core electrons on outer valence electrons, shielding them from full nuclear charge Z.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q63: Why can 2nd period elements not expand their coordination number beyond 4?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Elements of the 2nd period (B, C, N, O, F) have principal quantum number n = 2, containing only one 2s and three 2p orbitals (total 4 orbitals). Because they possess <b>no vacant 2d orbitals</b>, they cannot expand their octet, strictly limiting their maximum covalency to 4 (e.g., [BF<sub>4</sub>]<sup>-</sup> exists, but [BF<sub>6</sub>]<sup>3-</sup> cannot exist, whereas [AlF<sub>6</sub>]<sup>3-</sup> forms readily in Period 3).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q49. Arrange halogens in increasing order of electron gain enthalpy magnitude: F, Cl, Br, I.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>I < Br < F < Cl</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q64: Explain how the metallic character of elements changes across a period and down a group.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">Across a Period:</b> Nuclear charge increases and atomic radius contracts, binding valence electrons more tightly. Ionization enthalpy increases, decreasing the ability to lose electrons; thus, <b>metallic character decreases</b> (metals &rarr; metalloids &rarr; non-metals). <b style="color: #FF8A65;">Down a Group:</b> Atomic size expands and ionization enthalpy drops, making electron loss easier; thus, <b>metallic character increases</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q50. What is the valency of Group 16 elements toward Hydrogen?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Valency = 8 - 6 = <b>2</b> (e.g. H<sub>2</sub>O, H<sub>2</sub>S).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q65: Explain the variation in acidic/basic nature of oxides across Period 3.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Across Period 3: <b>Na<sub>2</sub>O (Strongly Basic) &rarr; MgO (Basic) &rarr; Al<sub>2</sub>O<sub>3</sub> (Amphoteric) &rarr; SiO<sub>2</sub> (Weakly Acidic) &rarr; P<sub>4</sub>O<sub>10</sub> (Acidic) &rarr; SO<sub>3</sub> (Strongly Acidic) &rarr; Cl<sub>2</sub>O<sub>7</sub> (Very Strongly Acidic)</b>. Increasing electronegativity and oxidation state enhance non-metallic character, rendering oxides increasingly acidic.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q51. Distinguish between Representative Elements and Transition Elements.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Representative:</b> s and p block elements (Group 1, 2, 13-17).<br><b>Transition:</b> d-block elements (Group 3-12).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q66: What are Metalloids? Give four examples and their positions in the periodic table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Elements whose physical and chemical properties lie intermediate between metals and non-metals, exhibiting semi-conducting behavior. They border the zigzag line separating s/d blocks from p-block non-metals: <b>Silicon (Si), Germanium (Ge), Arsenic (As), Antimony (Sb), Tellurium (Te)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q52. Why is 2nd electron gain enthalpy of Oxygen positive (+744 kJ/mol)?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Adding 2nd e<sup>-</sup> to negatively charged O<sup>-</sup> anion encounters strong electrostatic repulsion.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q67: Why does the first ionization enthalpy generally increase across a period?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Across a period, each successive element adds one proton to the nucleus and one electron to the same outer valence shell. Because electrons in the same shell shield each other poorly, effective nuclear charge Z<sub>eff</sub> increases steadily, drawing the electron cloud inward and requiring progressively more energy to remove an electron.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q53. What is Pauling Electronegativity value assigned to Fluorine?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>χ = 4.0</b> (highest in periodic table).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q68: Explain why the electron gain enthalpy of Oxygen is less negative than that of Sulfur.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Oxygen has an extremely compact 2p valence subshell with high electron density. Adding an electron creates severe inter-electronic repulsion, counteracting nuclear attraction. Sulfur has a larger 3p subshell that accommodates the extra electron with minimal repulsion, releasing more energy (-200 kJ/mol for S vs -141 kJ/mol for O).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q54. Why do second period elements show anomalous behavior compared to lower group members?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      Due to 1. Small size, 2. High electronegativity, 3. High charge/radius ratio, 4. Absence of d-orbitals.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q69: Arrange the following in increasing order of first ionization enthalpy: Na, Mg, Al, Si, P, S, Cl, Ar.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      General trend increases across Period 3 with anomalies at Mg (3s<sup>2</sup>) and P (3p<sup>3</sup>): <b>Na &lt; Al &lt; Mg &lt; Si &lt; S &lt; P &lt; Cl &lt; Ar</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q55. Which element in period 3 has the highest first ionization enthalpy?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Answer:</b><br>
-      <b>Argon (Ar)</b> (Noble gas with stable octet 3s<sup>2</sup> 3p<sup>6</sup>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q70: Why is the ionization enthalpy of Nitrogen higher than that of Oxygen, but the electron gain enthalpy of Oxygen is more negative than that of Nitrogen?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen has a stable half-filled 2p<sup>3</sup> subshell with high exchange energy, making electron removal very difficult (high IE). Adding an electron to Nitrogen disrupts this stable subshell, creating 2p<sup>4</sup> with repulsion (positive &Delta;<sub>eg</sub>H &approx; +31 kJ/mol). Oxygen (2p<sup>4</sup>) readily accepts an electron to approach a half-filled/filled configuration, releasing energy (&Delta;<sub>eg</sub>H = -141 kJ/mol).
     </div>
   </div>
-  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Step Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q71: What is Lanthanoid Contraction and what is its consequence on the sizes of 4d and 5d elements?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The steady decrease in atomic and ionic radii of the 14 Lanthanoid elements (from Ce to Lu) caused by the poor shielding effect of the diffuse 4f electrons. <b style="color: #FF8A65;">Consequence:</b> The atomic radii of 5d transition elements become almost identical to those of the preceding 4d elements (e.g., <b>Zr = 160 pm and Hf = 159 pm</b>), causing them to have virtually identical chemical reactivities.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q72: Explain the term 'Effective Nuclear Charge' (Z_eff) and Slater's screening rule concept.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Valence electrons do not experience the full nuclear charge Z because inner core electrons repel them, screening the nucleus: <b>Z<sub>eff</sub> = Z - S</b>, where S is the screening (shielding) constant calculated using Slater's rules. Across a period, Z increases by 1 while S increases by only ~0.35, resulting in a net increase in Z<sub>eff</sub> of ~0.65 per element.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q73: Calculate the effective nuclear charge experienced by a 4s valence electron in Potassium (Z = 19).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      K configuration: (1s<sup>2</sup>)(2s<sup>2</sup> 2p<sup>6</sup>)(3s<sup>2</sup> 3p<sup>6</sup>)(4s<sup>1</sup>).<br/>Using Slater's rules for 4s electron:<br/>&bull; Electrons in (n - 1) shell (3s, 3p): 8 &times; 0.85 = 6.80.<br/>&bull; Electrons in (n - 2) and inner shells (1s, 2s, 2p): 10 &times; 1.00 = 10.00.<br/>Shielding constant S = 6.80 + 10.00 = 16.80.<br/>Effective nuclear charge: <b>Z<sub>eff</sub> = Z - S = 19 - 16.80 = 2.20</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q74: Predict the formula of the binary compound formed between: (a) Element with Z = 11 and Z = 8, (b) Element with Z = 12 and Z = 7.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (a) Z = 11 is Na (valency 1), Z = 8 is O (valency 2) &rArr; <b>Na<sub>2</sub>O (Sodium Oxide)</b>.<br/>(b) Z = 12 is Mg (valency 2), Z = 7 is N (valency 3) &rArr; <b>Mg<sub>3</sub>N<sub>2</sub> (Magnesium Nitride)</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q75: Why do halogens have the most negative electron gain enthalpies in their respective periods?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Halogens have the valence electron configuration ns<sup>2</sup> np<sup>5</sup>, needing only a single electron to achieve an exceptionally stable noble gas octet (ns<sup>2</sup> np<sup>6</sup>). They also possess the smallest atomic radii and highest effective nuclear charges in their periods, strongly attracting the incoming electron.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q76: Explain why the first member of Group 1 (Lithium) forms covalent organometallic compounds, whereas other alkali metals form purely ionic compounds.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Due to Lithium's extraordinarily small ionic size (Li<sup>+</sup> = 76 pm) and high polarizing power (&phi; = charge / radius), it polarizes large anion electron clouds according to Fajan's rules, imparting substantial covalent character to compounds like LiCl and organolithium reagents (e.g., Methyllithium). Larger alkali cations (Na<sup>+</sup>, K<sup>+</sup>) have low polarizing power, forming purely ionic lattices.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q77: How does the oxidizing and reducing power of elements vary across a period and down a group?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">Across a Period:</b> Tendency to lose electrons decreases and electronegativity increases; thus, <b>reducing power decreases and oxidizing power increases</b> (alkali metals are powerful reducing agents; halogens are powerful oxidizing agents). <b style="color: #FF8A65;">Down a Group:</b> Ionization enthalpy decreases, making electron loss easier; thus, <b>reducing power generally increases</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q78: Explain why Helium has the highest first ionization enthalpy in the entire periodic table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Helium has atomic number Z = 2 with configuration 1s<sup>2</sup>. Its two electrons occupy the innermost shell closest to the nucleus with zero inner shielding, experiencing maximum effective nuclear attraction on a completely filled duplet (IE = 2372 kJ mol<sup>-1</sup>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q79: What is the significance of the terms 'Core Electrons' and 'Valence Electrons' in periodicity?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">Core Electrons:</b> Inner completely filled noble gas shells that shield the nucleus and dictate atomic size and screening constants. <b style="color: #FF8A65;">Valence Electrons:</b> Outermost electrons that participate in chemical bonding, determining valency, oxidation states, and group chemical characteristics.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q80: Explain why Nitrogen exists as a diatomic gas (N<sub>2</sub>) at room temperature, while Phosphorus exists as a solid tetra-atomic molecule (P<sub>4</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen's small atomic size allows effective lateral overlap of 2p orbitals to form strong, stable p&pi;-p&pi; multiple bonds (N&equiv;N triple bond). Phosphorus has larger, diffuse 3p orbitals that cannot overlap effectively to form multiple bonds; it instead forms single P-P sigma bonds in a tetrahedral P<sub>4</sub> molecule.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q56. Explain Moseley's X-ray experiment ($sqrt{\nu} = a(Z - b)$) and how it led to Modern Periodic Law.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Moseley showed X-ray frequency $sqrt{\nu}$ is proportional to Atomic Number Z (not mass). Proved Z is fundamental property, establishing Modern Periodic Law.
+  <!-- SECTION C -->
+  <div style="background: linear-gradient(135deg, rgba(255, 138, 101, 0.15), rgba(255, 61, 0, 0.15)); border: 1.5px solid rgba(255, 138, 101, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION C: Long Answer (LA) Questions (5 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q81 to Q100 &bull; Master Periodic Law Derivations, Comprehensive Trend Analysis &amp; Slater's Calculations</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q81: Discuss the Evolution of the Periodic Table: From D&ouml;bereiner's Triads, Newlands' Octaves, and Lothar Meyer's Curves to Mendeleev's Master Framework.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Early Foundations:</b> D&ouml;bereiner's triads (1829) identified arithmetic mass means (Li-Na-K); Newlands' octaves (1865) recognized periodic recurrence at eighth intervals but failed past Ca; Lothar Meyer (1869) plotted atomic volume vs weight, identifying spatial periodic peaks.<br/><br/><b style="color: #FF8A65;">2. Mendeleev's Periodic Law (1869):</b> <i>'Properties are periodic functions of atomic weights.'</i> Organized 63 elements into 8 groups and 7 periods.<br/><br/><b style="color: #FF8A65;">3. Historic Successes:</b> Boldly predicted undiscovered elements: Eka-Aluminium (Gallium, predicted mass 68, found 69.7), Eka-Silicon (Germanium, predicted 72, found 72.6), Eka-Boron (Scandium). Corrected atomic weights (Be from 13.5 to 9.0).<br/><br/><b style="color: #FF8A65;">4. Fatal Flaws:</b> Inverted pairs (Ar before K, Co before Ni, Te before I); anomalous hydrogen placement; could not accommodate isotopes.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q57. Explain 4 periodic blocks (s, p, d, f) with general electronic configurations and characteristic properties.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • s: ns<sup>1-2</sup> (reactive metals).<br>• p: ns<sup>2</sup> np<sup>1-6</sup> (metals, non-metals, gases).<br>• d: (n-1)d<sup>1-10</sup> ns<sup>1-2</sup> (transition metals).<br>• f: (n-2)f<sup>1-14</sup> (n-1)d<sup>0-1</sup> ns<sup>2</sup> (inner transition).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q82: Explain Moseley's Experiment and the Modern Periodic Table in depth: Law, Long Form Structure, Periods, Groups, and Electronic Basis.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Moseley's Work (1913):</b> Bombarded metal targets with cathode rays, discovering &radic;&nu; = a(Z - b). Proved atomic number Z (nuclear proton count) is the fundamental periodic determinant, not mass. Modern Law: <i>'Properties are periodic functions of atomic numbers.'</i><br/><br/><b style="color: #FF8A65;">2. Architecture:</b> 18 vertical Groups and 7 horizontal Periods based on principal quantum number n.<br/>&bull; Periods: 1 (2e<sup>-</sup>), 2 &amp; 3 (8e<sup>-</sup>), 4 &amp; 5 (18e<sup>-</sup>), 6 &amp; 7 (32e<sup>-</sup>).<br/>&bull; Groups: 1-2 (s-block), 13-18 (p-block), 3-12 (d-block), bottom rows (f-block).<br/><br/><b style="color: #FF8A65;">3. Quantum Mechanical Grounding:</b> Periodicity arises from periodic recurrence of identical valence electron configurations: Group 1 (ns<sup>1</sup>), Group 17 (ns<sup>2</sup>np<sup>5</sup>), Group 18 (ns<sup>2</sup>np<sup>6</sup>).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q58. Explain variations in Atomic Radii across period 3 (Na to Cl) and down group 1 (Li to Cs).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • Across Period 3: Size decreases (Na 186 pm ⟶ Cl 99 pm) due to increasing Z<sub>eff</sub>.<br>• Down Group 1: Size increases (Li 152 pm ⟶ Cs 262 pm) due to addition of new n shells.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q83: Discuss the Classification of Elements into s, p, d, and f Blocks: Electronic configurations, characteristic properties, and chemical trends.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. s-Block (ns<sup>1-2</sup>):</b> Highly electropositive, reactive metals with low ionization enthalpies, forming basic ionic oxides and imparting characteristic flame colors (Na golden-yellow, K lilac).<br/><br/><b>2. p-Block (ns<sup>2</sup> np<sup>1-6</sup>):</b> Broad spectrum encompassing metals, metalloids, and non-metals. Forms acidic covalent oxides. Exhibits inert pair effect in heavier members.<br/><br/><b>3. d-Block [(n - 1)d<sup>1-10</sup> ns<sup>0-2</sup>]:</b> Transition elements bridging s and p blocks. Exhibit variable oxidation states, coloured complexes, paramagnetic properties, and extensive catalytic utility.<br/><br/><b>4. f-Block [(n - 2)f<sup>1-14</sup> (n - 1)d<sup>0-1</sup> ns<sup>2</sup>]:</b> Inner transition elements (4f Lanthanoids and 5f Actinoids). Lanthanoid contraction homogenizes 4d/5d radii; all actinoids are radioactive.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q59. Explain Ionization Enthalpy (Δ<sub>i</sub>H). List 5 key factors affecting Ionization Enthalpy.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      1. Atomic size (inverse). 2. Nuclear charge Z<sub>eff</sub> (direct). 3. Shielding effect (inverse). 4. Subshell penetration (s > p > d > f). 5. Stable half-filled/filled subshells.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q84: Explain Atomic and Ionic Radii in exhaustive detail: Definitions, measurement methods, periodic trends, isoelectronic series, and shielding effects.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Definitions:</b> Covalent radius (d/2 in single covalent bond), Metallic radius (half internuclear distance in metal lattice), van der Waals radius (half distance between non-bonded solid atoms). Magnitude: r<sub>vdw</sub> &gt; r<sub>met</sub> &gt; r<sub>cov</sub>.<br/><br/><b style="color: #FF8A65;">2. Trends:</b><br/>&bull; <i>Period:</i> Decreases left to right because Z<sub>eff</sub> increases without adding new shells.<br/>&bull; <i>Group:</i> Increases top to bottom because each step adds a new principal shell n.<br/><br/><b style="color: #FF8A65;">3. Ionic Radii:</b> Cations are smaller than parent atoms (higher Z<sub>eff</sub>); anions are larger (electron repulsion expands cloud).<br/><br/><b style="color: #FF8A65;">4. Isoelectronic Series:</b> With equal electron count, size contracts monotonically with increasing nuclear charge Z: N<sup>3-</sup> (171 pm) &gt; O<sup>2-</sup> (140 pm) &gt; F<sup>-</sup> (133 pm) &gt; Na<sup>+</sup> (102 pm) &gt; Mg<sup>2+</sup> (72 pm) &gt; Al<sup>3+</sup> (54 pm).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q60. Explain 2 major ionization enthalpy anomalies: (a) Be > B, (b) N > O.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      (a) Be (899 kJ/mol) > B (801 kJ/mol): Be has filled 2s<sup>2</sup> vs B 2p<sup>1</sup>.<br>(b) N (1402 kJ/mol) > O (1314 kJ/mol): N has stable half-filled 2p<sup>3</sup>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q85: Detail Ionization Enthalpy (&Delta;iH): Successive enthalpies, governing physical factors, periodic trends, and anomalies of Period 2 and 3.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Definition:</b> Minimum energy to extract the most loosely held electron from an isolated gaseous atom in ground state: X<sub>(g)</sub> + &Delta;<sub>i</sub>H &rarr; X<sup>+</sup><sub>(g)</sub> + e<sup>-</sup>.<br/>Successive: &Delta;<sub>i</sub>H<sub>1</sub> &lt; &Delta;<sub>i</sub>H<sub>2</sub> &lt; &Delta;<sub>i</sub>H<sub>3</sub>.<br/><br/><b style="color: #FF8A65;">2. Governing Factors:</b> Atomic radius (&prop; 1/r), Effective nuclear charge (&prop; Z<sub>eff</sub>), Shielding effect (&prop; 1/S), Penetration (s &gt; p &gt; d &gt; f), Subshell symmetry (half-filled p<sup>3</sup> and full s<sup>2</sup>/p<sup>6</sup>).<br/><br/><b style="color: #FF8A65;">3. Anomalies:</b><br/>&bull; Be (899 kJ/mol) &gt; B (801 kJ/mol): Be has stable full 2s<sup>2</sup>; B loses easily removed, shielded 2p<sup>1</sup>.<br/>&bull; N (1402 kJ/mol) &gt; O (1314 kJ/mol): N has stable half-filled 2p<sup>3</sup>; O has paired 2p<sup>4</sup> with inter-electronic repulsion.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q61. Explain Electron Gain Enthalpy (Δ<sub>eg</sub>H) trends. Why is Δ<sub>eg</sub>H of Cl (-349 kJ/mol) more negative than F (-328 kJ/mol)?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      F has small 2p subshell causing intense inter-electronic repulsion. Cl has larger 3p subshell accommodating e<sup>-</sup> easily, releasing more energy.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q86: Discuss Electron Gain Enthalpy (&Delta;egH) comprehensively: Thermodynamics, periodic trends, noble gas positive values, and halogen anomalies.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Concept:</b> Enthalpy change when an electron is added to an isolated neutral gaseous atom: X<sub>(g)</sub> + e<sup>-</sup> &rarr; X<sup>-</sup><sub>(g)</sub>. Exothermic for halogens; endothermic (&Delta;<sub>eg</sub>H > 0) for noble gases and Group 2.<br/><br/><b style="color: #FF8A65;">2. Successive Values:</b> First is often negative, but second is always strongly positive (e.g., O<sup>-</sup> + e<sup>-</sup> &rarr; O<sup>2-</sup>, &Delta;<sub>eg</sub>H = +780 kJ/mol) due to electrostatic repulsion from the negatively charged anion.<br/><br/><b style="color: #FF8A65;">3. Chlorine vs Fluorine:</b> Cl (-349 kJ/mol) is more exothermic than F (-328 kJ/mol) because F's compact 2p subshell creates severe electron repulsion. Similarly, S (-200 kJ/mol) &gt; O (-141 kJ/mol).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q62. Explain Electronegativity (Pauling Scale). Compare electronegativity with Electron Gain Enthalpy.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Electronegativity χ is bonded atom e<sup>-</sup> attraction. Pauling scale F=4.0, O=3.5, N=3.0, Cl=3.0. E.G. Enthalpy is energy released for isolated atom.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q87: Explain Electronegativity (&chi;) in complete depth: Comparison with Electron Gain Enthalpy, Pauling Scale derivation, Mulliken Scale, and Periodic Trends.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Nature:</b> Qualitative relative bonded attraction power; not an isolated thermodynamic state property like &Delta;<sub>eg</sub>H.<br/><br/><b style="color: #FF8A65;">2. Pauling Scale:</b> Based on extra bond resonance energy: &Delta; = E<sub>A-B</sub> - &radic;(E<sub>A-A</sub> &times; E<sub>B-B</sub>). Formula: &chi;<sub>A</sub> - &chi;<sub>B</sub> = 0.208 &times; &radic;[&Delta; (kcal/mol)] = 0.1017 &times; &radic;[&Delta; (kJ/mol)]. Fluorine = 4.0 standard.<br/><br/><b style="color: #FF8A65;">3. Mulliken-Jaffe Scale:</b> &chi;<sub>M</sub> = (IE + EA) / 2 in eV. Conversion: &chi;<sub>P</sub> &approx; &chi;<sub>M</sub> / 2.8.<br/><br/><b style="color: #FF8A65;">4. Trends:</b> Increases across period (highest F = 4.0) and decreases down group (lowest Cs = 0.7). Dictates bond polarity and percentage ionic character.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q63. Explain Diagonal Relationship between Lithium and Magnesium with 3 chemical examples.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Similar ionic size and polarising power.<br>1. Both form normal oxides (Li<sub>2</sub>O, MgO).<br>2. Both form nitrides (Li<sub>3</sub>N, Mg<sub>3</sub>N<sub>2</sub>).<br>3. Carbonates decompose on heating (Li<sub>2</sub>CO<sub>3</sub> ⟶ Li<sub>2</sub>O + CO<sub>2</sub>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q88: Discuss the Anomalous Behavior of Second Period Elements and Diagonal Relationships: Causes, manifestations, and comparative matrix.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Causes of Anomalous Behavior:</b> Small size, high electronegativity, high polarizing power (&phi; = charge/radius), and absence of d-orbitals in valence shell (n = 2 max covalency = 4).<br/><br/><b style="color: #FF8A65;">2. Manifestations:</b> Nitrogen forms gas N&equiv;N with p&pi;-p&pi; bonds; Phosphorus forms solid P<sub>4</sub> with single bonds. Oxygen forms gas O<sub>2</sub>; Sulfur forms solid S<sub>8</sub>.<br/><br/><b style="color: #FF8A65;">3. Diagonal Relationship:</b> Diagonally adjacent pairs (Li-Mg, Be-Al, B-Si) share nearly identical polarizing powers &phi;.<br/>&bull; Li-Mg: Both form nitrides (Li<sub>3</sub>N, Mg<sub>3</sub>N<sub>2</sub>), decompose carbonates, and form deliquescent chlorides.<br/>&bull; Be-Al: Both form amphoteric oxides (BeO, Al<sub>2</sub>O<sub>3</sub>) and polymeric covalent chlorides.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q64. Explain systematic IUPAC nomenclature for super-heavy elements Z > 100. Write names for Z=101 to 105.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      101: Unnilunium (Unu)<br>102: Unnilbium (Unb)<br>103: Unniltrium (Unt)<br>104: Unnilquadium (Unq)<br>105: Unnilpentium (Unp).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q89: Explain Periodic Trends in Chemical Reactivity: Valency, Oxidation States, Metallic Character, and Acid-Base Nature of Oxides.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Valency:</b> Across period, valency with hydrogen rises from 1 to 4 and falls back to 1 (CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O, HF). With oxygen, it rises steadily from 1 to 7 (Na<sub>2</sub>O to Cl<sub>2</sub>O<sub>7</sub>).<br/><br/><b style="color: #FF8A65;">2. Metallic vs Non-Metallic:</b> Metallic character decreases across period and increases down group, paralleling electropositivity.<br/><br/><b style="color: #FF8A65;">3. Oxide Acidity:</b> Oxides of elements on the extreme left are basic (Na<sub>2</sub>O); middle elements are amphoteric (Al<sub>2</sub>O<sub>3</sub>) or neutral (CO, NO, N<sub>2</sub>O); extreme right elements are strongly acidic (SO<sub>3</sub>, Cl<sub>2</sub>O<sub>7</sub>). Basicity increases down any group.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q65. Explain why 2nd period elements (N, O, F) show anomalous properties compared to lower group members.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      1. Small atomic size. 2. High electronegativity. 3. High ionization enthalpy. 4. <b>Absence of d-orbitals</b> (cannot expand covalency beyond 4).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q90: Explain the IUPAC Nomenclature for Superheavy Elements (Z > 100) with complete table from Z = 101 to Z = 118.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Systematic Rules:</b> Roots derived from Latin/Greek digits: 0:nil, 1:un, 2:bi, 3:tri, 4:quad, 5:pent, 6:hex, 7:sept, 8:oct, 9:enn + -ium.<br/><br/><b style="color: #FF8A65;">2. Full Table (Z = 101 to 118):</b><br/>101: Unnilunium (Unu) [Md] | 102: Unnilbium (Unb) [No] | 103: Unniltrium (Unt) [Lr]<br/>104: Unnilquadium (Unq) [Rf] | 105: Unnilpentium (Unp) [Db] | 106: Unnilhexium (Unh) [Sg]<br/>107: Unnilseptium (Uns) [Bh] | 108: Unniloctium (Uno) [Hs] | 109: Unnilennium (Une) [Mt]<br/>110: Ununnilium (Uun) [Ds] | 111: Unununium (Uuu) [Rg] | 112: Ununbium (Uub) [Cn]<br/>113: Ununtrium (Uut) [Nh] | 114: Ununquadium (Uuq) [Fl] | 115: Ununpentium (Uup) [Mc]<br/>116: Ununhexium (Uuh) [Lv] | 117: Ununseptium (Uus) [Ts] | 118: Ununoctium (Uuo) [Og].
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q66. Arrange in increasing order of requested property: (a) Atomic size: B, C, N, O, F, (b) Ionization enthalpy: Li, Be, B, C, N, O, F, Ne.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      (a) Size: <b>F < O < N < C < B</b>.<br>(b) Ionization Enthalpy: <b>Li < B < Be < C < O < N < F < Ne</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q91: Explain the Inert Pair Effect: Mechanism, occurrence in heavy p-block elements, and chemical consequences.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Mechanism:</b> The reluctance of the outermost s-electrons (ns<sup>2</sup>) to participate in chemical bonding in heavier post-transition p-block elements. Caused by poor shielding of the intervening 4f and 5d electrons, pulling the valence ns<sup>2</sup> electrons tightly toward the nucleus.<br/><br/><b style="color: #FF8A65;">2. Occurrence:</b> Group 13 (Tl), Group 14 (Pb), Group 15 (Bi).<br/><br/><b style="color: #FF8A65;">3. Consequences:</b> Lower oxidation state (Group state - 2) becomes progressively more stable down the group: <b>Tl<sup>+</sup> &gt; Tl<sup>3+</sup></b>, <b>Pb<sup>2+</sup> &gt; Pb<sup>4+</sup></b>, <b>Bi<sup>3+</sup> &gt; Bi<sup>5+</sup></b>. Thus, Pb(IV) compounds like PbO<sub>2</sub> are powerful oxidizing agents.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q67. Explain why alkali metals (Group 1) have the lowest ionization enthalpies in their respective periods.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Alkali metals have largest atomic radius and single ns<sup>1</sup> valence electron shielded by inner octet core, easily lost.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q92: Compare the properties of Alkali Metals (Group 1) and Alkaline Earth Metals (Group 2) in an exhaustive periodic evaluation.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Electron Configuration:</b> Group 1 has ns<sup>1</sup>; Group 2 has ns<sup>2</sup>.<br/><b style="color: #FF8A65;">2. Atomic &amp; Ionic Radii:</b> Group 1 atoms are larger than Group 2 atoms in the same period due to lower Z<sub>eff</sub>.<br/><b style="color: #FF8A65;">3. Ionization Enthalpies:</b> Group 2 has higher &Delta;<sub>i</sub>H<sub>1</sub> than Group 1 (full s<sup>2</sup> subshell and smaller size), but Group 1 has vastly higher &Delta;<sub>i</sub>H<sub>2</sub> (disrupts noble gas core).<br/><b style="color: #FF8A65;">4. Melting &amp; Boiling Points:</b> Group 2 metals have higher melting points and densities due to 2 valence electrons participating in stronger metallic bonding.<br/><b style="color: #FF8A65;">5. Hydroxide Basicity:</b> Group 1 hydroxides (NaOH, KOH) are stronger bases and more soluble than Group 2 hydroxides [Ca(OH)<sub>2</sub>, Mg(OH)<sub>2</sub>].
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q68. Calculate effective nuclear charge (Z<sub>eff</sub>) for 4s electron in Potassium (Z=19) using Slater's rules.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Core electrons: 10 in (n-2) shield 1.0 each = 10; 8 in (n-1) shield 0.85 each = 6.8. Total σ = 16.8.<br>Z<sub>eff</sub> = Z - σ = 19 - 16.8 = <b>2.20</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q93: Discuss the Transition Elements (d-Block): Definition, general characteristics, variable oxidation states, and catalytic properties.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Definition:</b> Elements having incompletely filled d-subshells in their ground state or in any common oxidation state. Zinc, Cadmium, and Mercury have completely filled d<sup>10</sup> subshells and are pseudo-transition metals.<br/><br/><b style="color: #FF8A65;">2. Variable Oxidation States:</b> Because the energy difference between (n - 1)d and ns orbitals is tiny, electrons from both subshells participate in bonding (e.g., Manganese exhibits oxidation states from +2 to +7).<br/><br/><b style="color: #FF8A65;">3. Catalytic Utility:</b> Ability to adopt variable oxidation states and provide active surface areas for chemisorption (e.g., Fe in Haber process, Ni in hydrogenation, V<sub>2</sub>O<sub>5</sub> in Contact process).<br/><br/><b style="color: #FF8A65;">4. Colour &amp; Magnetism:</b> Unpaired d-electrons undergo d-d transitions absorbing visible light, imparting vivid colors and paramagnetism (&mu; = &radic;[n(n + 2)] BM).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q69. Explain periodic trends in oxide nature across period 3: Na<sub>2</sub>O, MgO, Al<sub>2</sub>O<sub>3</sub>, SiO<sub>2</sub>, P<sub>4</sub>O<sub>10</sub>, SO<sub>3</sub>, Cl<sub>2</sub>O<sub>7</sub>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • Basic: Na<sub>2</sub>O, MgO.<br>• Amphoteric: Al<sub>2</sub>O<sub>3</sub>.<br>• Acidic: SiO<sub>2</sub> (weak), P<sub>4</sub>O<sub>10</sub>, SO<sub>3</sub>, Cl<sub>2</sub>O<sub>7</sub> (strongly acidic).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q94: Explain the Chemistry of f-Block Elements: Lanthanoids vs Actinoids comparison, oxidation states, and Lanthanoid Contraction.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Lanthanoids (4f):</b> Ce (Z=58) to Lu (Z=71). Predominant stable oxidation state is +3 (occasional +2 and +4 for half/fully filled f<sup>0</sup>, f<sup>7</sup>, f<sup>14</sup> like Eu<sup>2+</sup>, Ce<sup>4+</sup>). Non-radioactive (except Promethium).<br/><br/><b style="color: #FF8A65;">2. Actinoids (5f):</b> Th (Z=90) to Lr (Z=103). Exhibit wide range of oxidation states (+3, +4, +5, +6, +7) because 5f, 6d, and 7s are comparable in energy. All are radioactive.<br/><br/><b style="color: #FF8A65;">3. Lanthanoid Contraction:</b> Steady decrease in atomic/ionic radii due to imperfect shielding of 4f electrons. Results in identical radii of 4d/5d congeners (Zr &sim; Hf, Nb &sim; Ta) and difficulty in separating individual rare earths.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q70. Why is 1st ionization enthalpy of Mg (738 kJ/mol) higher than Na (496 kJ/mol), but 2nd ionization enthalpy of Na (4562 kJ/mol) vastly higher than Mg (1451 kJ/mol)?</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Na<sup>+</sup> has stable noble gas octet [Ne] 2s<sup>2</sup> 2p<sup>6</sup>; removing 2nd e<sup>-</sup> requires breaking stable octet! Mg<sup>+</sup> has 3s<sup>1</sup>, easily lost.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q95: Analyze the Periodic Trends in Hydrides of Period 2 and 3 Elements: Structure, bonding, thermal stability, and acidic nature.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Group 1 &amp; 2:</b> Saline (ionic) stoichiometric hydrides (NaH, CaH<sub>2</sub>) with high melting points; liberate H<sub>2</sub> gas at anode upon electrolysis.<br/><br/><b style="color: #FF8A65;">2. Group 13:</b> Electron-deficient hydrides (B<sub>2</sub>H<sub>6</sub>) with 3-center 2-electron bridge bonds, acting as Lewis acids.<br/><br/><b style="color: #FF8A65;">3. Group 14:</b> Electron-precise tetrahedral hydrides (CH<sub>4</sub>, SiH<sub>4</sub>).<br/><br/><b style="color: #FF8A65;">4. Group 15 to 17:</b> Electron-rich hydrides with lone pairs (NH<sub>3</sub>, H<sub>2</sub>O, HF) exhibiting strong intermolecular hydrogen bonding.<br/><br/><b style="color: #FF8A65;">5. Acidic Trend across Period:</b> CH<sub>4</sub> (Neutral) &lt; NH<sub>3</sub> (Basic) &lt; H<sub>2</sub>O (Amphoteric) &lt; HF (Weak Acid) &rarr; HCl (Strong Acid). Acidic strength increases with electronegativity of central atom.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q71. Explain why Fluorine forms only OF<sub>2</sub> and cannot form F<sub>2</sub>O<sub>5</sub> or F<sub>2</sub>O<sub>7</sub>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Fluorine lacks d-orbitals in n=2 shell, so it cannot expand its covalency beyond 1 or show positive oxidation states.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q96: The first (&Delta;iH1) and second (&Delta;iH2) ionization enthalpies of three elements X, Y, Z are: X (520, 7300), Y (900, 1760), Z (1680, 3380) kJ/mol. Identify: (a) Alkali metal, (b) Alkaline earth metal, (c) Noble gas or halogen, with justifications.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Element X:</b> &Delta;<sub>i</sub>H<sub>1</sub> is low (520 kJ/mol) and &Delta;<sub>i</sub>H<sub>2</sub> is enormous (7300 kJ/mol, ~14&times; increase). Indicates loss of 1 valence electron yields noble gas core. Thus, <b style="color: #FF8A65;">X is an Alkali Metal (Group 1, Lithium)</b>.<br/><br/><b style="color: #FF8A65;">2. Element Y:</b> Moderate &Delta;<sub>i</sub>H<sub>1</sub> (900 kJ/mol) and &Delta;<sub>i</sub>H<sub>2</sub> (1760 kJ/mol, ~2&times; increase). Both valence electrons are removed before encountering a core. Thus, <b style="color: #FF8A65;">Y is an Alkaline Earth Metal (Group 2, Beryllium)</b>.<br/><br/><b style="color: #FF8A65;">3. Element Z:</b> Very high &Delta;<sub>i</sub>H<sub>1</sub> (1680 kJ/mol) and &Delta;<sub>i</sub>H<sub>2</sub> (3380 kJ/mol). Strongly retains valence electrons. Thus, <b style="color: #FF8A65;">Z is a Halogen (Group 17, Fluorine)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q72. Compare Mendeleev's Periodic Table with Modern Long Form Table in 4 points.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      1. Mass vs Atomic Number Z.<br>2. 8 groups vs 18 groups.<br>3. Subgroups combined vs separated into s,p,d,f.<br>4. Isotopes omitted vs accommodated.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q97: Explain the Concept of Screening Constant (S) and calculate Z_eff for a 3p electron in Chlorine (Z = 17) using Slater's Rules.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Concept:</b> Inner electrons repel outer valence electrons, screening the full nuclear charge Z: Z<sub>eff</sub> = Z - S.<br/><br/><b style="color: #FF8A65;">2. Slater's Rules for (ns, np) valence electron:</b><br/>&bull; Other electrons in same (ns, np) group contribute 0.35 each.<br/>&bull; Electrons in (n - 1) shell contribute 0.85 each.<br/>&bull; Electrons in (n - 2) and deeper shells contribute 1.00 each.<br/><br/><b style="color: #FF8A65;">3. Calculation for Cl (Z = 17):</b> Configuration: (1s<sup>2</sup>)(2s<sup>2</sup> 2p<sup>6</sup>)(3s<sup>2</sup> 3p<sup>5</sup>).<br/>&bull; In same shell (3s, 3p): 6 other electrons &times; 0.35 = 2.10.<br/>&bull; In (n - 1) shell (2s, 2p): 8 electrons &times; 0.85 = 6.80.<br/>&bull; In (n - 2) shell (1s): 2 electrons &times; 1.00 = 2.00.<br/>Total S = 2.10 + 6.80 + 2.00 = <b>10.90</b>.<br/><b>Z<sub>eff</sub> = 17 - 10.90 = 6.10</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q73. Explain concept of Isoelectronic Series and show size variation for N<sup>3-</sup>, O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup>, Mg<sup>2+</sup>, Al<sup>3+</sup>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      All have 10 e<sup>-</sup>. Increasing Z (7 ⟶ 13) pulls cloud tighter: N<sup>3-</sup> (171 pm) > O<sup>2-</sup> (140 pm) > F<sup>-</sup> (133 pm) > Na<sup>+</sup> (95 pm) > Mg<sup>2+</sup> (72 pm) > Al<sup>3+</sup> (50 pm).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q98: Discuss the Periodic Variations in Density, Melting Point, and Boiling Point of elements across the periodic table.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Density:</b> Increases from alkali metals to peak in transition metals (Osmium &rho; = 22.6 g/cm<sup>3</sup>, Iridium &rho; = 22.4 g/cm<sup>3</sup>) due to decreasing atomic volume and increasing atomic mass, then decreases toward p-block gases. Increases steadily down any group.<br/><br/><b style="color: #FF8A65;">2. Melting &amp; Boiling Points:</b> Rise to a maximum in Group 14 (Carbon/Diamond mp > 4000 K) and Group 6 (Tungsten mp = 3695 K) due to maximum unpaired electrons and giant covalent/metallic network bonding, then drop sharply toward noble gases (Helium bp = 4.2 K) where only weak van der Waals dispersion forces exist.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q74. Explain why Halogens (Group 17) have maximum negative electron gain enthalpies.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Outer configuration ns<sup>2</sup> np<sup>5</sup> needs only 1 electron to achieve stable noble gas octet ns<sup>2</sup> np<sup>6</sup>, releasing maximum energy.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q99: Explain why the ionic radius of a fluoride ion (F-) is 133 pm, whereas the atomic radius of Fluorine atom is only 72 pm.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Neutral Fluorine atom (Z = 9) has 9 protons attracting 9 electrons (1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup>). When an electron is added to form F<sup>-</sup> (1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>), the electron count increases to 10 while the nuclear charge remains constant at +9. The increased inter-electronic repulsion among the 8 valence electrons forces the electron cloud to expand outward, lowering the effective nuclear attraction per electron and increasing the radius from <b>72 pm to 133 pm (an 85% expansion)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q75. Write systematic IUPAC name for element Z = 117 and write its predicted outer electronic configuration.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Z=117: <b>Ununseptium (Uus)</b> [Tennessine, Ts]. Configuration: <b>[Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>5</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #FF8A65; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q100: Construct an exhaustive Master Synthesis Matrix correlating Periodic Classification, Modern Periodic Law, Blocks, Radii, and Enthalpy Trends.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #FF8A65;">1. Law:</b> Properties are periodic functions of Atomic Number Z (Moseley &radic;&nu; = a(Z - b)).<br/><br/><b style="color: #FF8A65;">2. Structural Blocks:</b> s-block (ns<sup>1-2</sup>), p-block (ns<sup>2</sup>np<sup>1-6</sup>), d-block ((n-1)d<sup>1-10</sup>ns<sup>0-2</sup>), f-block ((n-2)f<sup>1-14</sup>(n-1)d<sup>0-1</sup>ns<sup>2</sup>).<br/><br/><b style="color: #FF8A65;">3. Radii Trends:</b> Covalent/Metallic radii decrease across period (higher Z<sub>eff</sub>) and increase down group (new shell n). Cations smaller than parents; anions larger. Isoelectronic size shrinks with increasing Z.<br/><br/><b style="color: #FF8A65;">4. Energetics:</b> Ionization enthalpy &Delta;<sub>i</sub>H and Electronegativity &chi; increase across period and decrease down group (Anomalies: Be &gt; B, N &gt; O). Electron gain enthalpy &Delta;<sub>eg</sub>H is most exothermic for halogens (Anomaly: Cl &gt; F, S &gt; O).<br/><br/><b style="color: #FF8A65;">5. Chemical Periodicity:</b> Oxides evolve from basic (Na<sub>2</sub>O) to amphoteric (Al<sub>2</sub>O<sub>3</sub>) to acidic (Cl<sub>2</sub>O<sub>7</sub>); Diagonal relationships (Li-Mg, Be-Al) bridge groups via matching polarizing powers.
     </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q76. Explain why van der Waals radius is always larger than covalent radius.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Covalent bonding involves orbital overlap shortening internuclear distance; van der Waals forces involve weak dispersion without overlap.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q77. Calculate electronegativity of Chlorine on Mulliken Scale if I.E. = 13.0 eV and E.A. = 3.6 eV.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Mulliken χ = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">I.E. + E.A.</span><span style="display:block; padding:0 4px;">5.6</span></span> = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">13.0 + 3.6</span><span style="display:block; padding:0 4px;">5.6</span></span> = <b>2.96 (matches Pauling 3.0!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q78. Explain why Inert Gases (Group 18) have positive electron gain enthalpies.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Noble gases have fully filled stable octet/duplet; added e<sup>-</sup> enters next higher principal shell n+1, requiring energy input.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q79. Explain trends in metallic, non-metallic, and metalloid character across the periodic table.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • Across Period: Metallic decreases, Non-metallic increases.<br>• Down Group: Metallic increases, Non-metallic decreases.<br>Metalloids lie on diagonal border (B, Si, Ge, As, Sb, Te).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q80. Calculate position (Period and Group) of element with electronic configuration [Ar] 3d<sup>5</sup> 4s<sup>2</sup>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • Principal n = 4 ⟶ <b>4th Period</b>.<br>• Group = 3d e<sup>-</sup> + 4s e<sup>-</sup> = 5 + 2 = <b>Group 7 (Manganese, Mn)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q81. Explain why 1st ionization enthalpy of Al (577 kJ/mol) is lower than Mg (738 kJ/mol).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Al has 3p<sup>1</sup> electron which is shielded by 3s<sup>2</sup> electrons and has lower penetration power than Mg 3s<sup>2</sup>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q82. Write chemical formulas for oxides and chlorides of Eka-Aluminum (Ga) and Eka-Silicon (Ge).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      • Ga Oxide: <b>Ga<sub>2</sub>O<sub>3</sub></b>, Chloride: <b>GaCl<sub>3</sub></b>.<br>• Ge Oxide: <b>GeO<sub>2</sub></b>, Chloride: <b>GeCl<sub>4</sub></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q83. Explain why second electron gain enthalpy of Oxygen is positive (+744 kJ/mol).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      Adding 2nd e<sup>-</sup> to O<sup>-</sup> anion encounters strong electrostatic repulsion, making reaction endothermic.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q84. Predict formula of compound formed between: (a) Element Z=19 and Z=17, (b) Element Z=12 and Z=8.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      (a) K (Z=19) + Cl (Z=17) ⟶ <b>KCl</b>.<br>(b) Mg (Z=12) + O (Z=8) ⟶ <b>MgO</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #FF8A65;'>Q85. Explain why Fluorine is the most reactive non-metal while Cesium is the most reactive metal.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); border-left: 3px solid #FF8A65; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #FF8A65;'>Detailed Solution:</b><br>
-      F has highest electronegativity and small size (easily gains e<sup>-</sup>); Cs has lowest ionization enthalpy and large size (easily loses e<sup>-</sup>).
-    </div>
-  </div>
-  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
-  <div style="background: rgba(255, 138, 101, 0.12); border: 1.5px solid #FF8A65; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #FF8A65; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
-    <p style="color: #FF8A65; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Calculations)</p>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q86: Periodic Law Evolution & Moseley's Work</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Describe historical development from Dobereiner triads, Newlands octaves, Mendeleev periodic law to Moseley's modern periodic law.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Mendeleev arranged elements by atomic mass. Moseley proved X-ray frequency $sqrt{\nu} = a(Z-b)$, establishing Atomic Number Z as true fundamental periodic basis.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) An element X has atomic number Z = 114. (a) Write systematic IUPAC name, (b) Predict block, group, period, and outer electronic configuration.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) IUPAC name: <b>Ununquadium (Uuq)</b> [Flerovium, Fl].<br>(b) Period = 7, Block = <b>p-block</b>, Group = <b>Group 14</b>, Outer configuration: <b>[Rn] 5f<sup>14</sup> 6d<sup>10</sup> 7s<sup>2</sup> 7p<sup>2</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q87: Ionization Enthalpy Trends & Governing Factors</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Define Ionization Enthalpy (Δ_i H). Detail 5 factors governing I.E. and explain periodic variations across periods and groups.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Governed by 1. Size, 2. Z<sub>eff</sub>, 3. Shielding, 4. Penetration, 5. Half-filled/filled subshell stability. Increases left to right, decreases top to bottom.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) First 4 ionization enthalpies of an element X are 577, 1816, 2744, and 11577 kJ/mol. Identify group and valency of X.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Giant jump occurs between 3rd (2744) and 4th (11577) I.E., proving element X has <b>3 valence electrons</b> (Group 13, Aluminum, Valency = 3!).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q88: Electron Gain Enthalpy Anomalies & Thermochemistry</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Define Electron Gain Enthalpy (Δ_eg H). Compare trends across periods and groups. Explain Halogen and Noble Gas anomalies.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Halogens have highest negative Δ<sub>eg</sub>H. Noble gases positive due to full octet. Cl > F anomaly due to 2p inter-electronic repulsions.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Calculate enthalpy change ΔH for process: Na(g) + Cl(g) ⟶ Na<sup>+</sup>(g) + Cl<sup>-</sup>(g), given Δ<sub>i</sub>H(Na) = +496 kJ/mol and Δ<sub>eg</sub>H(Cl) = -349 kJ/mol.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      ΔH = Δ<sub>i</sub>H(Na) + Δ<sub>eg</sub>H(Cl) = +496 + (-349) = <b>+147 kJ mol<sup>-1</sup> (Endothermic without lattice energy!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q89: Electronegativity Scales & Chemical Bonding Applications</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain Electronegativity (Pauling Scale). Compare Pauling scale with Mulliken scale and Allred-Rochow scale.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Pauling χ based on bond energies Δ = E<sub>A-B</sub> - √(E<sub>A-A</sub> · E<sub>B-B</sub>). Mulliken χ = (I.E. + E.A.) / 2. Allred-Rochow χ ∝ Z<sub>eff</sub> / r<sup>2</sup>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Calculate percentage ionic character of A-B covalent bond if electronegativities are χ_A = 2.1 (Hydrogen) and χ_B = 4.0 (Fluorine) using Hannay-Smith equation.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      % Ionic = 16 |χ<sub>A</sub> - χ<sub>B</sub>| + 3.5 (χ<sub>A</sub> - χ<sub>B</sub>)<sup>2</sup> = 16(1.9) + 3.5(1.9)<sup>2</sup> = 30.4 + 12.635 = <b>43.0% Ionic Character</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q90: Atomic and Ionic Size Trends & Isoelectronic Analysis</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Define Covalent, Metallic, Ionic, and van der Waals Radii. Explain trends in atomic radii across periods and down groups.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      r<sub>vdw</sub> > r<sub>metallic</sub> > r<sub>cov</sub>. Atomic size decreases across period (Z<sub>eff</sub> ↑) and increases down group (n ↑).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Arrange species in increasing order of radius and justify: (a) Fe, Fe<sup>2+</sup>, Fe<sup>3+</sup>, (b) O<sup>2-</sup>, F<sup>-</sup>, Na<sup>+</sup>, Mg<sup>2+</sup>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) <b>Fe<sup>3+</sup> < Fe<sup>2+</sup> < Fe</b> (higher cation charge decreases size).<br>(b) <b>Mg<sup>2+</sup> < Na<sup>+</sup> < F<sup>-</sup> < O<sup>2-</sup></b> (Isoelectronic: higher Z decreases radius).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q91: Diagonal Relationship & Anomalous Second Period Behavior</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain Diagonal Relationship (Li-Mg, Be-Al, B-Si). Detail 3 causes and 4 chemical similarities for Li and Mg.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Caused by similar ionic radius and polarising power (charge/radius<sup>2</sup>). Both Li and Mg form nitrides (Li<sub>3</sub>N, Mg<sub>3</sub>N<sub>2</sub>), oxides (Li<sub>2</sub>O, MgO), and thermally unstable carbonates.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Compare chemical behavior of Beryllium (2nd period) and Aluminum (3rd period) in 3 chemical reactions.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      1. Both passivate in conc. HNO<sub>3</sub>.<br>2. Both form amphoteric oxides (BeO, Al<sub>2</sub>O<sub>3</sub>).<br>3. Both form chloro-complexes ([BeCl<sub>4</sub>]<sup>2-</sup>, [AlCl<sub>4</sub>]<sup>-</sup>).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q92: Long Form Periodic Table Classification & Electronic Configurations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain division of periodic table into s, p, d, f blocks based on valence subshell filling.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      s-block (ns<sup>1-2</sup>), p-block (ns<sup>2</sup>np<sup>1-6</sup>), d-block ((n-1)d<sup>1-10</sup>ns<sup>1-2</sup>), f-block ((n-2)f<sup>1-14</sup>ns<sup>2</sup>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) An element has outer configuration 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>3</sup>. Predict: (a) Atomic number Z, (b) Block, (c) Period, (d) Group, (e) Valency.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Configuration: [Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>3</sup>.<br>(a) Z = 18 + 10 + 2 + 3 = <b>33 (Arsenic, As)</b>.<br>(b) Block = <b>p-block</b>.<br>(c) Period = <b>4th Period</b>.<br>(d) Group = 10 + 2 + 3 = <b>Group 15</b>.<br>(e) Valency = 8 - 5 = <b>3 (and 5)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q93: Slater's Rules & Effective Nuclear Charge Calculations</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain Slater's Rules for calculating Screening Constant (σ) and Effective Nuclear Charge (Z_eff = Z - σ).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Electrons in same shell shield 0.35 each; (n-1) shell shield 0.85 each; (n-2) and inner shield 1.0 each.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Calculate Z_eff for a 3p electron in Sulfur (Z=16, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>4</sup>).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      • Same n=3 shell: 5 e<sup>-</sup> × 0.35 = 1.75.<br>• (n-1)=2 shell: 8 e<sup>-</sup> × 0.85 = 6.80.<br>• (n-2)=1 shell: 2 e<sup>-</sup> × 1.00 = 2.00.<br>Total σ = 1.75 + 6.80 + 2.00 = 10.55.<br><b>Z<sub>eff</sub> = 16 - 10.55 = 5.45</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q94: Oxide Acidity/Basicity Periodic Trends & Reactivity</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain periodic trends in chemical reactivity and oxide character across period 3 and down group 17.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Period 3 oxides shift from strongly basic (Na<sub>2</sub>O) ⟶ amphoteric (Al<sub>2</sub>O<sub>3</sub>) ⟶ strongly acidic (Cl<sub>2</sub>O<sub>7</sub>). Group 17 non-metallic reactivity decreases down group.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Write balanced chemical equations showing amphoteric nature of Aluminum oxide (Al<sub>2</sub>O<sub>3</sub>) with HCl and NaOH.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      1. Reaction with Acid: Al<sub>2</sub>O<sub>3</sub> + 6HCl ⟶ 2AlCl<sub>3</sub> + 3H<sub>2</sub>O.<br>2. Reaction with Base: Al<sub>2</sub>O<sub>3</sub> + 2NaOH + 3H<sub>2</sub>O ⟶ 2Na[Al(OH)<sub>4</sub>] (Sodium aluminate).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q95: Valency vs Oxidation State Periodic Patterns</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Distinguish between Valency and Oxidation State. Explain periodic variation of valency with respect to Oxygen and Hydrogen.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Valency is combining capacity without sign. Oxidation state is formal charge. Valency toward H increases 1 to 4 then decreases to 1. Valency toward O increases 1 to 7.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Determine highest oxidation state shown by: (a) Osmium (Z=76), (b) Manganese (Z=25), (c) Chlorine (Z=17).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) Osmium shows <b>+8</b> in OsO<sub>4</sub>.<br>(b) Manganese shows <b>+7</b> in KMnO<sub>4</sub>.<br>(c) Chlorine shows <b>+7</b> in HClO<sub>4</sub>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q96: IUPAC Nomenclature for Elements Z > 100 Systematics</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Detail IUPAC rules for naming elements Z > 100 using numerical roots nil, un, bi, tri, quad, pent, hex, sept, oct, enn.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Name derived by combining roots for digits in Z + suffix -ium. Symbol uses initial letters of roots.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Write IUPAC systematic names and 3-letter symbols for: Z = 106, 111, 115, 116.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      • Z=106: <b>Unnilhexium (Unh)</b> [Seaborgium]<br>• Z=111: <b>Unununium (Uuu)</b> [Roentgenium]<br>• Z=115: <b>Ununpentium (Uup)</b> [Moscovium]<br>• Z=116: <b>Ununhexium (Uuh)</b> [Livermorium].
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q97: Thermochemical Analysis of Ionic Bond Formation & Born-Haber Cycle</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain steps in Born-Haber Cycle for NaCl formation: Sublimation, Ionization, Dissociation, Electron Gain, and Lattice Energy.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      ΔH<sub>f</sub> = Δ<sub>sub</sub>H + Δ<sub>i</sub>H + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> Δ<sub>bond</sub>H + Δ<sub>eg</sub>H + U<sub>lattice</sub>.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Calculate Lattice Energy (U) of NaCl given: ΔH_f = -411 kJ/mol, Δ_sub H(Na) = +108 kJ/mol, Δ_i H(Na) = +496 kJ/mol, Δ_bond H(Cl_2) = +244 kJ/mol, Δ_eg H(Cl) = -349 kJ/mol.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      -411 = +108 + 496 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">244</span><span style="display:block; padding:0 4px;">2</span></span> + (-349) + U ⟶ -411 = +377 + U ⟶ <b>U = -788 kJ mol<sup>-1</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q98: Inert Pair Effect & Heavy p-Block Element Valency</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain Inert Pair Effect in heavier p-block elements (Group 13, 14, 15: Tl, Pb, Bi).</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Relativistic contraction causes 6s<sup>2</sup> electrons to be tightly held, resisting bonding. Lower oxidation state (+1 for Tl, +2 for Pb, +3 for Bi) becomes more stable than group state.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Compare stability of: (a) Tl<sup>+</sup> vs Tl<sup>3+</sup>, (b) Pb<sup>2+</sup> vs Pb<sup>4+</sup>.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) <b>Tl<sup>+</sup> is far more stable than Tl<sup>3+</sup></b> (Tl<sup>3+</sup> acts as strong oxidizing agent).<br>(b) <b>Pb<sup>2+</sup> is far more stable than Pb<sup>4+</sup></b> (PbO<sub>2</sub> is strong oxidizing agent).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q99: Second Period Element Anomalies vs Lower Members</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Explain 4 structural reasons why 2nd period elements (Li, Be, B, C, N, O, F) differ from lower congeners.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      1. Extremely small atomic size. 2. High ionization enthalpy & electronegativity. 3. <b>Absence of d-orbitals</b> (covalency capped at 4). 4. Tendency to form pπ-pπ multiple bonds.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) Explain why Nitrogen forms N<sub>2</sub> diatomic gas with triple bond, while Phosphorus forms P<sub>4</sub> tetrahedra with single bonds.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      Nitrogen's small size allows effective pπ-pπ overlap forming N≡N triple bond. Phosphorus' larger 3p orbitals cannot overlap effectively, preferring 4 single P-P bonds.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 138, 101, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #FF8A65;'>Q100: Master Synthesis: Periodic Trends, Electronic Structure & Chemical Behavior</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(i) Synthesize complete unified relation between Electronic Configuration ⟶ Periodic Position ⟶ Atomic Trends (Z_eff, Radii, I.E., E.G.H., E.N.) ⟶ Chemical Reactivity & Bonding Behavior.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 8px 12px; border-left: 3px solid #FF8A65; margin-bottom: 10px;">
-      Valence configuration determines group/period. Z<sub>eff</sub> and shell number drive radius, I.E., and electronegativity, which govern metallic/non-metallic reactivity, oxide acidity, and ionic vs covalent bonding.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #FF8A65;'>(ii) An element X has ground state configuration [Ne] 3s<sup>2</sup> 3p<sup>4</sup>. (a) Identify element, (b) Predict position, (c) Compare 1st I.E. with preceding and succeeding elements, (d) Formula of hydride and oxide.</b></p>
-    <div style="background: rgba(255, 138, 101, 0.05); padding: 10px 12px; border-left: 3px solid #FF8A65;">
-      (a) Element = <b>Sulfur (S, Z=16)</b>.<br>(b) Period = 3, Group = <b>Group 16</b>.<br>(c) I.E. of P (3p<sup>3</sup>) > S (3p<sup>4</sup>) due to half-filled p<sup>3</sup> stability; I.E. of S < Cl (3p<sup>5</sup>) due to higher Z<sub>eff</sub> of Cl.<br>(d) Hydride: <b>H<sub>2</sub>S</b> | Oxide: <b>SO<sub>2</sub> / SO<sub>3</sub></b>.
-    </div>
-  </div>
 </div>
 `;
+
+export const c11Chem3Mcqs = [
+  {
+    "id": "c11-chem-3-mcq-1",
+    "question": "According to the Modern Periodic Law, the physical and chemical properties of elements are periodic functions of their:",
+    "options": [
+      "A):   Atomic weight",
+      "B):   Atomic number",
+      "C):   Mass number",
+      "D):   Density"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Moseley established that properties of elements are periodic functions of their atomic number (Z), which represents nuclear charge."
+  },
+  {
+    "id": "c11-chem-3-mcq-2",
+    "question": "Moseley's equation relating X-ray frequency (&nu;) to atomic number (Z) is:",
+    "options": [
+      "A):   &nu; = a(Z - b)",
+      "B):   &radic;&nu; = a(Z - b)",
+      "C):   &nu;<sup>2</sup> = a(Z - b)",
+      "D):   1/&nu; = a(Z - b)"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Moseley's law states that &radic;&nu; = a(Z - b), yielding a straight line when plotted against atomic number."
+  },
+  {
+    "id": "c11-chem-3-mcq-3",
+    "question": "Which element was predicted by Mendeleev as 'Eka-Silicon'?",
+    "options": [
+      "A):   Gallium",
+      "B):   Germanium",
+      "C):   Scandium",
+      "D):   Technetium"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Mendeleev's predicted Eka-Silicon was later discovered as Germanium (Ge, Z = 32)."
+  },
+  {
+    "id": "c11-chem-3-mcq-4",
+    "question": "The general valence electronic configuration of d-block transition elements is:",
+    "options": [
+      "A):   ns<sup>2</sup> np<sup>1-6</sup>",
+      "B):   (n - 1)d<sup>1-10</sup> ns<sup>0-2</sup>",
+      "C):   (n - 2)f<sup>1-14</sup> ns<sup>2</sup>",
+      "D):   ns<sup>1-2</sup> (n - 1)p<sup>6</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Transition elements have general outer electron configuration (n - 1)d<sup>1-10</sup> ns<sup>0-2</sup>."
+  },
+  {
+    "id": "c11-chem-3-mcq-5",
+    "question": "Which of the following has the smallest atomic/ionic radius?",
+    "options": [
+      "A):   N<sup>3-</sup>",
+      "B):   O<sup>2-</sup>",
+      "C):   F<sup>-</sup>",
+      "D):   Al<sup>3+</sup>"
+    ],
+    "correctAnswer": "d",
+    "explanation": "In an isoelectronic series (10 electrons), Al<sup>3+</sup> has the highest nuclear charge (Z = 13), pulling electrons closest to give the smallest radius (54 pm)."
+  },
+  {
+    "id": "c11-chem-3-mcq-6",
+    "question": "Why is the first ionization enthalpy of Beryllium (899 kJ/mol) greater than that of Boron (801 kJ/mol)?",
+    "options": [
+      "A):   Beryllium has a larger nuclear charge",
+      "B):   Beryllium has a completely filled stable 2s<sup>2</sup> subshell",
+      "C):   Boron has a smaller atomic size",
+      "D):   Beryllium is a non-metal"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Beryllium has a stable fully-filled 2s<sup>2</sup> configuration with high penetration, while Boron loses an easily removed, shielded 2p<sup>1</sup> electron."
+  },
+  {
+    "id": "c11-chem-3-mcq-7",
+    "question": "Which of the following elements has the most negative electron gain enthalpy?",
+    "options": [
+      "A):   Fluorine",
+      "B):   Chlorine",
+      "C):   Bromine",
+      "D):   Iodine"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Chlorine has the highest negative electron gain enthalpy (-349 kJ/mol) because its larger 3p subshell avoids the high inter-electronic repulsion seen in Fluorine's compact 2p subshell."
+  },
+  {
+    "id": "c11-chem-3-mcq-8",
+    "question": "On the Pauling scale, the electronegativity assigned to Fluorine is:",
+    "options": [
+      "A):   3.5",
+      "B):   4.0",
+      "C):   3.0",
+      "D):   2.5"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Linus Pauling arbitrarily assigned Fluorine the maximum value of 4.0 as the most electronegative element."
+  },
+  {
+    "id": "c11-chem-3-mcq-9",
+    "question": "The IUPAC systematic name for the element with atomic number 115 is:",
+    "options": [
+      "A):   Ununpentium",
+      "B):   Unnilpentium",
+      "C):   Ununquadium",
+      "D):   Unnilhexium"
+    ],
+    "correctAnswer": "a",
+    "explanation": "1 = un, 1 = un, 5 = pent + ium = Ununpentium (Uup, Moscovium)."
+  },
+  {
+    "id": "c11-chem-3-mcq-10",
+    "question": "Which of the following pairs shows a diagonal relationship?",
+    "options": [
+      "A):   Li and Na",
+      "B):   Be and Al",
+      "C):   B and C",
+      "D):   Na and Mg"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Beryllium (Period 2, Group 2) and Aluminium (Period 3, Group 13) exhibit a strong diagonal relationship due to comparable polarizing powers."
+  },
+  {
+    "id": "c11-chem-3-mcq-11",
+    "question": "What is the correct order of decreasing radii for van der Waals, covalent, and metallic radii?",
+    "options": [
+      "A):   Covalent &gt; Metallic &gt; van der Waals",
+      "B):   van der Waals &gt; Metallic &gt; Covalent",
+      "C):   Metallic &gt; van der Waals &gt; Covalent",
+      "D):   van der Waals &gt; Covalent &gt; Metallic"
+    ],
+    "correctAnswer": "b",
+    "explanation": "van der Waals radius involves non-bonded contact (largest), metallic radius involves touching cations, and covalent radius involves orbital overlap (smallest)."
+  },
+  {
+    "id": "c11-chem-3-mcq-12",
+    "question": "Which of the following oxides is amphoteric in nature?",
+    "options": [
+      "A):   Na<sub>2</sub>O",
+      "B):   Al<sub>2</sub>O<sub>3</sub>",
+      "C):   SO<sub>3</sub>",
+      "D):   Cl<sub>2</sub>O<sub>7</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Aluminium oxide (Al<sub>2</sub>O<sub>3</sub>) reacts with both acids and bases, making it amphoteric."
+  },
+  {
+    "id": "c11-chem-3-mcq-13",
+    "question": "The first ionization enthalpy of Nitrogen (1402 kJ/mol) is higher than that of Oxygen (1314 kJ/mol) because:",
+    "options": [
+      "A):   Nitrogen has a smaller atomic radius",
+      "B):   Nitrogen has an extra-stable half-filled 2p<sup>3</sup> subshell",
+      "C):   Oxygen has higher electronegativity",
+      "D):   Nitrogen is a noble gas"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Nitrogen has a stable half-filled 2p<sup>3</sup> subshell with maximum exchange stabilization energy."
+  },
+  {
+    "id": "c11-chem-3-mcq-14",
+    "question": "Why can Boron only form BF<sub>4</sub><sup>-</sup>, while Aluminium can form AlF<sub>6</sub><sup>3-</sup>?",
+    "options": [
+      "A):   Boron is more metallic",
+      "B):   Boron has no vacant d-orbitals in its valence shell",
+      "C):   Aluminium has higher ionization enthalpy",
+      "D):   Aluminium is smaller than Boron"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Boron belongs to Period 2 (n = 2) and lacks d-orbitals, limiting its covalency to 4; Aluminium (Period 3) has vacant 3d orbitals to expand its octet."
+  },
+  {
+    "id": "c11-chem-3-mcq-15",
+    "question": "The second electron gain enthalpy (&Delta;<sub>eg</sub>H<sub>2</sub>) of Oxygen (O<sup>-</sup> + e<sup>-</sup> &rarr; O<sup>2-</sup>) is:",
+    "options": [
+      "A):   Negative (exothermic)",
+      "B):   Strongly positive (endothermic)",
+      "C):   Zero",
+      "D):   Equal to the first ionization energy"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Adding an electron to an already negatively charged O<sup>-</sup> anion encounters severe electrostatic repulsion, making &Delta;<sub>eg</sub>H<sub>2</sub> strongly endothermic (+780 kJ/mol)."
+  },
+  {
+    "id": "c11-chem-3-mcq-16",
+    "question": "The element with electronic configuration [Ar] 3d<sup>10</sup> 4s<sup>2</sup> 4p<sup>3</sup> belongs to:",
+    "options": [
+      "A):   Period 3, Group 13",
+      "B):   Period 4, Group 15",
+      "C):   Period 4, Group 5",
+      "D):   Period 3, Group 15"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Principal quantum number n = 4 (Period 4); Group number for p-block = 12 + np electrons = 12 + 3 = 15 (Arsenic, As)."
+  },
+  {
+    "id": "c11-chem-3-mcq-17",
+    "question": "Lanthanoid contraction is primarily caused by:",
+    "options": [
+      "A):   Imperfect shielding of 4f electrons",
+      "B):   Complete shielding of 5d electrons",
+      "C):   Increasing atomic mass",
+      "D):   High electronegativity"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Due to the diffused spatial shapes of 4f orbitals, 4f electrons shield the nuclear charge very poorly, resulting in steady size contraction."
+  },
+  {
+    "id": "c11-chem-3-mcq-18",
+    "question": "Which of the following has the highest first ionization enthalpy in the periodic table?",
+    "options": [
+      "A):   Hydrogen",
+      "B):   Helium",
+      "C):   Neon",
+      "D):   Fluorine"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Helium has the highest ionization enthalpy (2372 kJ/mol) due to its 1s<sup>2</sup> closed shell and tiny radius."
+  },
+  {
+    "id": "c11-chem-3-mcq-19",
+    "question": "The chemical similarity between Lithium and Magnesium is mainly due to:",
+    "options": [
+      "A):   Same number of valence electrons",
+      "B):   Nearly identical ionic potential (polarizing power)",
+      "C):   Identical atomic masses",
+      "D):   Same crystal structure"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Lithium and Magnesium have nearly identical polarizing powers (&phi; = charge / radius<sup>2</sup>), resulting in similar chemical properties."
+  },
+  {
+    "id": "c11-chem-3-mcq-20",
+    "question": "Which group of elements exhibits the 'Inert Pair Effect' most prominently?",
+    "options": [
+      "A):   Alkali metals",
+      "B):   Heavier p-block elements (Tl, Pb, Bi)",
+      "C):   Alkaline earth metals",
+      "D):   Noble gases"
+    ],
+    "correctAnswer": "b",
+    "explanation": "In heavier p-block elements like Tl, Pb, and Bi, the outer ns<sup>2</sup> electrons remain inert due to relativistic contraction and poor 4f/5d shielding."
+  },
+  {
+    "id": "c11-chem-3-mcq-21",
+    "question": "In Period 3, the formula of the highest oxide formed by Chlorine is:",
+    "options": [
+      "A):   Cl<sub>2</sub>O",
+      "B):   ClO<sub>2</sub>",
+      "C):   Cl<sub>2</sub>O<sub>7</sub>",
+      "D):   ClO<sub>3</sub>"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Chlorine exhibits maximum oxidation state +7 in Dichlorine Heptoxide (Cl<sub>2</sub>O<sub>7</sub>)."
+  },
+  {
+    "id": "c11-chem-3-mcq-22",
+    "question": "Which of the following elements is a metalloid?",
+    "options": [
+      "A):   Carbon",
+      "B):   Silicon",
+      "C):   Aluminium",
+      "D):   Lead"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Silicon (Si) and Germanium (Ge) are classic metalloids exhibiting semiconducting behavior."
+  },
+  {
+    "id": "c11-chem-3-mcq-23",
+    "question": "How does effective nuclear charge (Z<sub>eff</sub>) change across a period from left to right?",
+    "options": [
+      "A):   Decreases continuously",
+      "B):   Increases continuously",
+      "C):   Remains constant",
+      "D):   Decreases then increases"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Because same-shell electrons shield poorly (S increases by ~0.35 while Z increases by 1), Z<sub>eff</sub> increases by ~0.65 per element."
+  },
+  {
+    "id": "c11-chem-3-mcq-24",
+    "question": "The electronic configuration of Gadolinium (Z = 64) is:",
+    "options": [
+      "A):   [Xe] 4f<sup>8</sup> 6s<sup>2</sup>",
+      "B):   [Xe] 4f<sup>7</sup> 5d<sup>1</sup> 6s<sup>2</sup>",
+      "C):   [Xe] 4f<sup>6</sup> 5d<sup>2</sup> 6s<sup>2</sup>",
+      "D):   [Xe] 4f<sup>9</sup> 6s<sup>1</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Gadolinium maintains an extra-stable half-filled 4f<sup>7</sup> subshell by placing one electron in 5d: [Xe] 4f<sup>7</sup> 5d<sup>1</sup> 6s<sup>2</sup>."
+  },
+  {
+    "id": "c11-chem-3-mcq-25",
+    "question": "Which halogen has the lowest electronegativity?",
+    "options": [
+      "A):   Fluorine",
+      "B):   Chlorine",
+      "C):   Bromine",
+      "D):   Iodine"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Electronegativity decreases down Group 17: F (4.0) &gt; Cl (3.0) &gt; Br (2.8) &gt; I (2.5)."
+  }
+];

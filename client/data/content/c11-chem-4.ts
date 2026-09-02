@@ -1,1180 +1,1403 @@
-// Class 11 Chemistry Chapter 4 - Chemical Bonding and Molecular Structure
-// High-Level Full Reference Book Content (PW / Vedantu / RD Sharma / Unacademy Standard)
+// Class 11 Chemistry Chapter 4: Chemical Bonding & Molecular Structure
+// Gold Standard Reference Textbook & 3-Tab Architecture
+// Subject: Chemistry | Class: 11 | Code: c11-chem-4
 
 export const c11Chem4HtmlOverview = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- QUICK GLOSSARY & BASIC DEFINITIONS (SINGLE FRAME CONTAINER AT TOP) -->
-  <div style="background: rgba(67, 160, 71, 0.05); border: 1.5px solid #43A047; border-radius: 12px; padding: 16px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: #43A047; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center !important;">📖 Quick Glossary & Basic Definitions</h2>
-    <p class="text-center" style="color: #43A047; margin: 0 0 16px 0; font-size: 14.5px; text-align: center !important;">Key Fundamental Terms & Concepts for Chapter 4: Chemical Bonding and Molecular Structure</p>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>1. Chemical Bond:</b> Attractive force holding constituent atoms or ions together in different chemical species to achieve lower energy state.
+  <!-- Quick Glossary Card with Chapter Subtitle -->
+  <div style="background: linear-gradient(135deg, rgba(67, 160, 71, 0.12), rgba(46, 125, 50, 0.12)); border: 1.5px solid rgba(67, 160, 71, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 20px; font-weight: bold; text-align: center;">📖 Quick Glossary &amp; Basic Definitions</h2>
+    <p style="color: #43A047; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 4: Chemical Bonding &amp; Molecular Structure</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Chemical Bond:</b> The attractive force that holds constituent atoms, ions, or radicals together in a stable chemical entity.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>2. Octet Rule:</b> Atoms combine by gaining, losing, or sharing valence electrons to acquire a stable 8-electron outer shell (noble gas configuration).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Lattice Enthalpy (&Delta;<sub>lattice</sub>H):</b> The energy required to completely separate one mole of a solid ionic crystalline compound into gaseous constituent ions.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>3. Ionic Bond:</b> Electrostatic attraction formed by complete transfer of one or more electrons from a metallic cation to a non-metallic anion.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Dipole Moment (&mu;):</b> Product of the magnitude of electric charge (q) and the separation distance (d) between centers of positive and negative charges (&mu; = q &times; d).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>4. Covalent Bond:</b> Chemical bond formed by mutual sharing of equal number of valence electrons between two non-metallic atoms.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Hybridization:</b> Intermixing of atomic orbitals of slightly different energies to produce equivalent sets of hybrid orbitals with identical shape, energy, and directional properties.
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>5. Formal Charge:</b> Hypothetical charge assigned to an atom in a molecule assuming all bonding electron pairs are shared equally.
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Bond Order (BO):</b> Half of the difference between the number of bonding electrons (N<sub>b</sub>) and antibonding electrons (N<sub>a</sub>): BO = <sup>1</sup>/<sub>2</sub> (N<sub>b</sub> - N<sub>a</sub>).
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>6. Bond Length:</b> Equilibrium internuclear distance between two bonded atoms in a molecule (measured in Å or pm).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>7. Bond Angle:</b> Angle between orbitals containing bonding electron pairs around central atom in a complex molecule.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>8. Bond Enthalpy:</b> Amount of energy required to break 1 mole of specific chemical bonds in gaseous state (kJ mol<sup>-1</sup>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>9. Bond Order:</b> Number of electron pair bonds present between two atoms in a molecule (Bond Order = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">N<sub>b</sub> - N<sub>a</sub></span><span style="display:block; padding:0 4px;">2</span></span>).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>10. Dipole Moment (μ):</b> Vector product of magnitude of charge (q) and distance of separation (r) in polar covalent bonds (1 Debye = 3.33564 × 10<sup>-30</sup> C m).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>11. Fajans' Rules:</b> Set of rules determining covalent character in ionic bonds based on cation polarising power and anion polarisability.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>12. VSEPR Theory:</b> Model predicting 3D molecular geometry by minimizing electrostatic repulsions between valence shell electron pairs.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>13. Sigma (σ) Bond:</b> Covalent bond formed by end-to-end (head-on) axial overlap of atomic orbitals along internuclear axis.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>14. Pi (π) Bond:</b> Covalent bond formed by sideways (lateral) parallel overlap of atomic p-orbitals perpendicular to internuclear axis.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>15. Hybridization:</b> Mixing of atomic orbitals of slightly different energies to form equivalent set of new hybrid orbitals with identical shape and energy.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>16. Bonding MO (Ψ<sub>B</sub>):</b> Molecular orbital formed by additive in-phase combination of atomic wave functions (lower energy, higher stability).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>17. Antibonding MO (Ψ<sub>A</sub>*):</b> Molecular orbital formed by subtractive out-of-phase combination of atomic wave functions (higher energy, lower stability).
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>18. Hydrogen Bond:</b> Attractive dipole force between Hydrogen atom covalently bonded to highly electronegative atom (N, O, F) and lone pair of neighboring N, O, F.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>19. Resonance:</b> Condition where a single Lewis structure cannot accurately describe a molecule, requiring hybrid representation of multiple contributing structures.
-      </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 8px 12px; border-left: 3px solid #43A047; border-radius: 6px;">
-        <b style='color: #43A047;'>20. Lattice Enthalpy:</b> Energy required to completely separate 1 mole of solid ionic crystal compound into gaseous ions (kJ mol<sup>-1</sup>).
+      <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+        <b style="color: #43A047;">Hydrogen Bond:</b> Attractive dipole-dipole electrostatic interaction between a covalently bonded hydrogen atom and an intensely electronegative small atom (F, O, N).
       </div>
     </div>
   </div>
 
+  <!-- SECTION 1 -->
+  <h2 style="color: #43A047; border-bottom: 2px solid #43A047; padding-bottom: 6px; margin-top: 30px; font-size: 20px;">
+    1. Valence Electrons, Ionic Bond, Covalent Bond, Bond Parameters
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 1 WORD-FOR-WORD -->
-  <h2 style="color: #43A047; margin-top: 10px; font-size: 20px; font-weight: bold;">1. Valence Electrons, Ionic Bond, Covalent Bond, Bond Parameters</h2>
-
-  <!-- 3D IMAGE 1 -->
+  <!-- PRESERVED IMAGE 1 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(67, 160, 71, 0.35); border: 1.5px solid #43A047;" alt="3D Chemical Bonding and Ionic Covalent Overlap" />
     <p style="color: #43A047; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 4.1: 3D Visualization of Ionic Crystal Lattice and Covalent Orbital Overlap Mechanics</p>
   </div>
 
-  <p>Except for noble gases (Group 18), individual isolated atoms do not exist independently in nature under normal conditions. They spontaneously combine with identical or different atoms to form stable molecules and crystal lattices. The driving force behind chemical bond formation is the natural tendency of physical systems to attain minimum potential energy state and achieve a stable 8-electron outer shell configuration (octet rule).</p>
+  
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(i) Octet Rule & Kossel-Lewis Approach to Chemical Bonding</h3>
-  <p>In 1916, W. Kossel and G.N. Lewis proposed that atoms achieve chemical stability by acquiring noble gas electronic configurations (ns<sup>2</sup> np<sup>6</sup> octet, or 1s<sup>2</sup> duplet for H/He). Lewis depicted outer valence electrons as dots surrounding element symbols (Lewis Dot Symbols).<br>
-  <b>Limitations of Octet Rule:</b><br>
-  1. <i>Incomplete Octet of Central Atom:</i> Molecules like LiCl, BeH<sub>2</sub>, BF<sub>3</sub>, AlCl<sub>3</sub> have central atoms surrounded by fewer than 8 electrons.<br>
-  2. <i>Expanded Octet:</i> Elements in 3rd period and beyond possess d-orbitals, forming molecules with central atoms surrounded by >8 electrons (e.g. PCl<sub>5</sub> with 10 e<sup>-</sup>, SF<sub>6</sub> with 12 e<sup>-</sup>, H<sub>2</sub>SO<sub>4</sub> with 12 e<sup>-</sup>).<br>
-  3. <i>Odd-Electron Molecules:</i> Molecules like NO and NO<sub>2</sub> have unpaired odd electrons where octet rule fails.</p>
+  <p>
+    Except for noble gases possessing stable ns<sup>2</sup> np<sup>6</sup> electronic octets, isolated atoms have incomplete valence shells and higher potential energies. Chemical bonding lowers total systemic potential energy, driving atoms toward thermodynamic stability through electron transfer (ionic bonding) or electron sharing (covalent bonding).
+  </p>
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(ii) Ionic (Electrovalent) Bond Formation & Lattice Enthalpy</h3>
-  <p>An <b>Ionic Bond</b> is formed by complete transfer of valence electrons from an electropositive metal atom (forming cation M<sup>+</sup>) to an electronegative non-metal atom (forming anion X<sup>-</sup>):<br>
-  <span style="color: #43A047; font-weight: bold; display: block; text-align: center; margin: 8px 0;">M(g) ⟶ M<sup>+</sup>(g) + e<sup>-</sup> &nbsp;&nbsp;(Δ<sub>i</sub>H > 0) &nbsp;&nbsp;|&nbsp;&nbsp; X(g) + e<sup>-</sup> ⟶ X<sup>-</sup>(g) &nbsp;&nbsp;(Δ<sub>eg</sub>H < 0)</span>
-  <b>Favorable Conditions for Ionic Bond Formation:</b><br>
-  1. Low Ionization Enthalpy of metal cation.<br>
-  2. High negative Electron Gain Enthalpy of non-metal anion.<br>
-  3. High <b>Lattice Enthalpy (U)</b> of resulting crystal lattice: Energy released when 1 mole of ionic solid is formed from gaseous ions. Higher charge and smaller ionic radii maximize lattice stability.</p>
+  <h3 style="color: #43A047; margin-top: 18px; font-size: 16.5px;">(i) Octet Rule &amp; Kossel-Lewis Approach to Chemical Bonding</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      In 1916, W. Kossel and G.N. Lewis independently postulated that atoms combine either by mutual transfer or sharing of valence electrons to attain a stable outer shell of eight electrons (duplet for H and He), mirroring noble gas configurations.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #43A047;">Lewis Symbols:</b> Valence electrons represented as dots surrounding the elemental symbol (e.g., &bull;Li, :Be&bull;, :N&bull;&bull;).</li>
+      <li><b style="color: #43A047;">Limitations of Octet Rule:</b>
+        <br/>1. <i>Incomplete Octet (Electron-Deficient Species):</i> Central atom has fewer than 8 electrons (e.g., LiCl, BeH<sub>2</sub>, BF<sub>3</sub>, AlCl<sub>3</sub>).
+        <br/>2. <i>Odd-Electron Molecules:</i> Molecules with unpaired odd electrons where octet cannot be satisfied for all atoms (e.g., Nitric oxide NO, Nitrogen dioxide NO<sub>2</sub>).
+        <br/>3. <i>Expanded Octet (Hypervalent Molecules):</i> Elements of Period 3 and beyond utilize vacant d-orbitals to accommodate 10, 12, or more valence electrons (e.g., PCl<sub>5</sub> with 10e<sup>-</sup>, SF<sub>6</sub> with 12e<sup>-</sup>, IF<sub>7</sub> with 14e<sup>-</sup>, H<sub>2</sub>SO<sub>4</sub>).
+        <br/>4. Fails to explain the shape, bond angles, and relative thermodynamic stabilities of molecules, or why noble gases form compounds (e.g., XeF<sub>2</sub>, XeF<sub>4</sub>).
+      </li>
+    </ul>
+  </div>
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(iii) Covalent Bond & Fundamental Bond Parameters</h3>
-  <p>A <b>Covalent Bond</b> is formed by mutual sharing of electron pairs between two atoms (single bond 1 pair, double bond 2 pairs, triple bond 3 pairs). Key physical bond parameters include:</p>
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(ii) Ionic (Electrovalent) Bond Formation &amp; Lattice Enthalpy</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      An <b>Ionic Bond</b> is formed by complete transfer of one or more valence electrons from an electropositive metal atom to an electronegative non-metal atom, generating oppositely charged ions held by non-directional electrostatic Coulombic forces.
+      <br/>&bull; <b style="color: #43A047;">Favourable Conditions for Ionic Bond Formation:</b>
+      <br/>1. Low Ionization Enthalpy (&Delta;<sub>i</sub>H) of the metal (e.g., Cs, K, Na).
+      <br/>2. High negative Electron Gain Enthalpy (&Delta;<sub>eg</sub>H) of the non-metal (e.g., Cl, F, O).
+      <br/>3. High Lattice Enthalpy (&Delta;<sub>lattice</sub>H) of the resulting crystal.
+      <br/>&bull; <b style="color: #43A047;">Born-Haber Cycle:</b> Thermochemical cycle relating lattice enthalpy to enthalpy of formation using Hess's Law:
+      <br/><b>&Delta;<sub>f</sub>H&deg; = &Delta;<sub>sub</sub>H + <sup>1</sup>/<sub>2</sub> &Delta;<sub>diss</sub>H + &Delta;<sub>i</sub>H + &Delta;<sub>eg</sub>H - &Delta;<sub>lattice</sub>H</b>.
+    </p>
+  </div>
+
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(iii) Covalent Bond &amp; Fundamental Bond Parameters</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Bond Length:</b> Internuclear distance between two bonded atoms at equilibrium potential energy minimum. Decreases with increasing bond multiplicity (C-C 1.54 Å > C=C 1.34 Å > C≡C 1.20 Å).</li>
-    <li><b>Bond Angle:</b> Angle between orbital axes containing bonding pairs around central atom (e.g. 109.5° in CH<sub>4</sub>, 107° in NH<sub>3</sub>, 104.5° in H<sub>2</sub>O).</li>
-    <li><b>Bond Enthalpy (kJ mol<sup>-1</sup>):</b> Energy required to break 1 mole of specific covalent bonds. Higher bond order increases bond enthalpy (C≡C 839 kJ/mol > C=C 614 kJ/mol > C-C 348 kJ/mol).</li>
-    <li><b>Bond Order:</b> Number of shared electron pairs. Higher bond order increases bond strength and decreases bond length!</li>
+    <li><b style="color: #43A047;">1. Bond Length:</b> The equilibrium internuclear distance between two bonded atoms in a molecule. Measured via X-ray diffraction and rotational spectroscopy. Decreases with increasing bond multiplicity: <b>C&equiv;C (120 pm) &lt; C=C (134 pm) &lt; C-C (154 pm)</b>.</li>
+    <li><b style="color: #43A047;">2. Bond Angle:</b> The angle between orbitals containing bonding electron pairs around the central atom (e.g., H-C-H in CH<sub>4</sub> is 109.5&deg;, H-N-H in NH<sub>3</sub> is 107&deg;, H-O-H in H<sub>2</sub>O is 104.5&deg;).</li>
+    <li><b style="color: #43A047;">3. Bond Enthalpy (&Delta;<sub>bond</sub>H):</b> Amount of energy required to break one mole of a specific bond in gaseous state. Increases with bond multiplicity: <b>C&equiv;C (839 kJ/mol) &gt; C=C (614 kJ/mol) &gt; C-C (348 kJ/mol)</b>.</li>
+    <li><b style="color: #43A047;">4. Bond Order:</b> Number of chemical bonds between a pair of atoms. Isoelectronic molecules share identical bond orders (e.g., N<sub>2</sub>, CO, NO<sup>+</sup> all have 14 electrons and Bond Order = 3).
+      <br/>&bull; <i>General Correlation:</i> <b>Bond Order &prop; Bond Enthalpy &prop; 1 / Bond Length</b>.
+    </li>
   </ul>
 
+  <!-- SECTION 2 -->
+  <h2 style="color: #43A047; border-bottom: 2px solid #43A047; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    2. Lewis Structure, Polar Character of Covalent Bond, Covalent Character of Ionic Bond
+  </h2>
 
-  <!-- EXACT SYLLABUS HEADING 2 WORD-FOR-WORD -->
-  <h2 style="color: #43A047; margin-top: 30px; font-size: 20px; font-weight: bold;">2. Lewis Structure, Polar Character of Covalent Bond, Covalent Character of Ionic Bond</h2>
-
-  <!-- 3D IMAGE 2 -->
+  <!-- PRESERVED IMAGE 2 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(67, 160, 71, 0.35); border: 1.5px solid #43A047;" alt="3D Lewis Structures Dipole Moments and Fajans Rules" />
     <p style="color: #43A047; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 4.2: 3D Lewis Dot Diagrams, Dipole Vectors, and Fajans Covalent Character Mechanics</p>
   </div>
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(i) Writing Formal Charge & Lewis Dot Structures</h3>
-  <p>Formal charge assigned to an atom in a polyatomic Lewis structure is calculated by:<br>
-  <span style="color: #43A047; font-weight: bold; display: block; text-align: center; margin: 8px 0;">Formal Charge = V - L - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> B</span>
-  where V = total valence electrons in free atom, L = number of unshared lone pair electrons, B = total number of bonding electrons.<br>
-  <i>Example for Ozone (O<sub>3</sub>):</i> Central O atom has Formal Charge = 6 - 2 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(6) = <b>+1</b>; single-bonded O has 6 - 6 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(2) = <b>-1</b>; double-bonded O has 6 - 4 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(4) = <b>0</b>.</p>
+  
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(ii) Polar Covalent Bonds & Dipole Moment (μ)</h3>
-  <p>When two atoms of different electronegativities form a covalent bond, the shared electron pair is pulled toward the more electronegative atom, creating partial charges (δ+ and δ-). The polarity is quantified by <b>Dipole Moment (μ = q × r)</b> measured in Debye (1 D = 3.33564 × 10<sup>-30</sup> C m):</p>
-
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #43A047; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">Molecular Geometry & Dipole Moment Vector Cancellation</h4>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8;">
-      <li>• <b>Symmetrical Molecules (μ = 0):</b> Linear (CO<sub>2</sub>, BeF<sub>2</sub>), Trigonal Planar (BF<sub>3</sub>), Tetrahedral (CCl<sub>4</sub>), and Octahedral (SF<sub>6</sub>) have individual bond dipoles that cancel out completely!</li>
-      <li>• <b>Unsymmetrical Molecules (μ > 0):</b> Bent H<sub>2</sub>O (μ = 1.85 D) and Pyramidal NH<sub>3</sub> (μ = 1.47 D) have non-zero dipoles.</li>
-      <li>• <b>NH<sub>3</sub> vs NF<sub>3</sub> Anomaly:</b> Dipole moment of <b>NH<sub>3</sub> (1.47 D) is MUCH HIGHER than NF<sub>3</sub> (0.23 D)!</b> In NH<sub>3</sub>, N-H bond dipoles reinforce lone pair dipole. In NF<sub>3</sub>, N-F bond dipoles oppose lone pair dipole!</li>
-    </ul>
+  <h3 style="color: #43A047; margin-top: 18px; font-size: 16.5px;">(i) Writing Formal Charge &amp; Lewis Dot Structures</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      The <b>Formal Charge (FC)</b> of an atom in a Lewis structure is the electrical charge difference between the free valence electrons and those assigned in the bonded structure:
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        FC = V - L - <span style="display:inline-flex; flex-direction:column; vertical-align:middle; text-align:center; font-size:0.9em; line-height:1; margin:0 4px;"><span style="border-bottom:1.5px solid currentColor; padding:0 2px;">1</span><span style="padding:0 2px;">2</span></span> S &nbsp;|&nbsp; where V = valence e<sup>-</sup>, L = lone pair e<sup>-</sup>, S = shared bonding e<sup>-</sup>
+      </span>
+      <br/><i>Example for Ozone (O<sub>3</sub>):</i>
+      <br/>&bull; Central atom O(1): FC = 6 - 2 - <sup>1</sup>/<sub>2</sub>(6) = <b>+1</b>.
+      <br/>&bull; Double-bonded end O(2): FC = 6 - 4 - <sup>1</sup>/<sub>2</sub>(4) = <b>0</b>.
+      <br/>&bull; Single-bonded end O(3): FC = 6 - 6 - <sup>1</sup>/<sub>2</sub>(2) = <b>-1</b>.
+    </p>
   </div>
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(iii) Covalent Character in Ionic Bonds: Fajans' Rules</h3>
-  <p>No ionic bond is 100% ionic. Small cations polarize the electron cloud of large anions, pulling electron density into the internuclear region, imparting <b>Covalent Character</b> (Fajans' Rules):</p>
-  <ol style="padding-left: 20px; line-height: 1.8;">
-    <li><b>Small Cation Size:</b> Smaller cation has higher polarising power (LiCl is more covalent than NaCl).</li>
-    <li><b>Large Anion Size:</b> Larger anion has higher polarisability (LiI is more covalent than LiF).</li>
-    <li><b>High Ionic Charge:</b> Higher charge on cation or anion increases covalent character (AlCl<sub>3</sub> > MgCl<sub>2</sub> > NaCl).</li>
-    <li><b>Pseudo-Noble Gas Configuration:</b> Cations with 18-electron outer shell (d<sup>10</sup>, e.g. Cu<sup>+</sup>, Ag<sup>+</sup>) have higher polarising power than 8-electron alkali cations (Na<sup>+</sup>).</li>
-  </ol>
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(ii) Polar Covalent Bonds &amp; Dipole Moment (&mu;)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      When two atoms of differing electronegativity share electrons, the bonding pair shifts toward the more electronegative atom, inducing a partial negative charge (&delta;<sup>-</sup>) and leaving a partial positive charge (&delta;<sup>+</sup>) (e.g., H<sup>&delta;+</sup> - Cl<sup>&delta;-</sup>).
+      <br/>&bull; <b style="color: #43A047;">Dipole Moment Equation:</b>
+      <br/><b>&mu; = q &times; d</b> (Expressed in Debye units: 1 D = 3.33564 &times; 10<sup>-30</sup> C m).
+      <br/>&bull; Dipole moment is a vector quantity pointing from positive pole to negative pole (or central atom toward lone pair).
+      <br/>&bull; <i>Symmetrical Cancellation:</i> Highly symmetrical molecules have <b>&mu; = 0</b> despite polar bonds (e.g., BeF<sub>2</sub>, BF<sub>3</sub>, CCl<sub>4</sub>, CO<sub>2</sub>).
+      <br/>&bull; <b style="color: #43A047;">NH<sub>3</sub> vs NF<sub>3</sub> Dipole Moment Paradox:</b> Both molecules are trigonal pyramidal with one lone pair. However, &mu; of NH<sub>3</sub> is <b>1.47 D</b>, while &mu; of NF<sub>3</sub> is only <b>0.24 D</b>. In NH<sub>3</sub>, N is more electronegative than H, so the three N-H bond dipoles point upward in the same direction as the lone pair dipole, reinforcing each other. In NF<sub>3</sub>, F is more electronegative than N, so the three N-F bond dipoles point downward, opposing and largely canceling the lone pair dipole.
+    </p>
+  </div>
 
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(iii) Covalent Character in Ionic Bonds: Fajans' Rules</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #43A047;">Principle:</b> No chemical bond is 100% ionic. A small cation attracts the electron cloud of a large anion, pulling electron density into the internuclear region and polarizing the anion to impart partial covalent character.</li>
+    <li><b style="color: #43A047;">Fajans' Rules Favoring Covalent Character:</b>
+      <br/>1. <i>Small Cation Size:</i> High charge density increases polarizing power (e.g., LiCl is covalent; NaCl is ionic).
+      <br/>2. <i>Large Anion Size:</i> Outer electrons are loosely held, making the electron cloud easily polarizable (e.g., for AgX: AgI &gt; AgBr &gt; AgCl &gt; AgF in covalency).
+      <br/>3. <i>High Charge on Cation or Anion:</i> Higher electrostatic attraction (e.g., SnCl<sub>4</sub> has higher covalent character and lower melting point than SnCl<sub>2</sub>).
+      <br/>4. <i>Pseudo-Noble Gas Configuration:</i> Cations with outer (n - 1)d<sup>10</sup> ns<sup>0</sup> configuration have greater polarizing power than cations with noble gas (n - 1)s<sup>2</sup> (n - 1)p<sup>6</sup> configuration because d-electrons shield poorly (e.g., CuCl is more covalent than NaCl).
+    </li>
+  </ul>
 
-  <!-- EXACT SYLLABUS HEADING 3 WORD-FOR-WORD -->
-  <h2 style="color: #43A047; margin-top: 30px; font-size: 20px; font-weight: bold;">3. Valence Shell Electron Pair Repulsion (VSEPR) Theory</h2>
+  <!-- SECTION 3 -->
+  <h2 style="color: #43A047; border-bottom: 2px solid #43A047; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    3. Valence Shell Electron Pair Repulsion (VSEPR) Theory
+  </h2>
 
-  <!-- 3D IMAGE 3 -->
+  <!-- PRESERVED IMAGE 3 -->
   <div style="text-align: center; margin: 20px 0;">
     <img src="data:image/jpeg;base64,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" style="width: 100%; max-width: 550px; height: auto; border-radius: 12px; display: block; margin: 15px auto; box-shadow: 0 4px 18px rgba(67, 160, 71, 0.35); border: 1.5px solid #43A047;" alt="3D VSEPR Molecular Shapes Linear Trigonal Bipyramidal Octahedral" />
     <p style="color: #43A047; font-size: 13.5px; margin-top: 8px; font-weight: 500;">Figure 4.3: 3D VSEPR Geometries, Electron Pair Repulsion Hierarchy, and Lone Pair Distortion</p>
   </div>
 
-  <p>In 1940, R. Gillespie and R. Nyholm refined VSEPR theory to predict the 3D shapes of covalent molecules based on electron pair repulsions around central atom.</p>
+  
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(i) Fundamental Postulates & Repulsion Hierarchy</h3>
-  <ol style="padding-left: 20px; line-height: 1.8;">
-    <li>3D geometry around central atom is determined by total number of valence shell electron pairs (bonding pairs bp + lone pairs lp).</li>
-    <li>Electron pairs orient themselves in space as far apart as possible to minimize electrostatic repulsions.</li>
-    <li><b>Repulsion Hierarchy:</b> Lone pairs occupy more space because they are held by only 1 nucleus. Repulsive magnitude follows order:<br>
-    <span style="color: #43A047; font-weight: bold; display: block; text-align: center; margin: 8px 0;">(Lone Pair - Lone Pair) > (Lone Pair - Bond Pair) > (Bond Pair - Bond Pair)</span></li>
-  </ol>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(ii) Geometry of Molecules with Only Bonding Pairs</h3>
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>2 Pairs (AB<sub>2</sub>):</b> Linear, angle 180° (BeCl<sub>2</sub>, CO<sub>2</sub>).</li>
-    <li><b>3 Pairs (AB<sub>3</sub>):</b> Trigonal Planar, angle 120° (BF<sub>3</sub>, BCl<sub>3</sub>).</li>
-    <li><b>4 Pairs (AB<sub>4</sub>):</b> Tetrahedral, angle 109.5° (CH<sub>4</sub>, NH<sub>4</sub><sup>+</sup>, CCl<sub>4</sub>).</li>
-    <li><b>5 Pairs (AB<sub>5</sub>):</b> Trigonal Bipyramidal, axial 90°, equatorial 120° (PCl<sub>5</sub>).</li>
-    <li><b>6 Pairs (AB<sub>6</sub>):</b> Octahedral, angle 90° (SF<sub>6</sub>).</li>
-  </ul>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(iii) Shapes of Molecules Containing Lone Pairs</h3>
-  <p>• <b>AB<sub>3</sub>E (3 bp + 1 lp):</b> Trigonal Pyramidal, angle 107° (NH<sub>3</sub>, H<sub>3</sub>O<sup>+</sup>).<br>
-  • <b>AB<sub>2</sub>E<sub>2</sub> (2 bp + 2 lp):</b> Bent / V-shaped, angle 104.5° (H<sub>2</sub>O, H<sub>2</sub>S, Cl<sub>2</sub>O).<br>
-  • <b>AB<sub>4</sub>E (4 bp + 1 lp):</b> See-saw shape (SF<sub>4</sub> - lp occupies equatorial position!).<br>
-  • <b>AB<sub>3</sub>E<sub>2</sub> (3 bp + 2 lp):</b> T-shaped (ClF<sub>3</sub>, BrF<sub>3</sub>).<br>
-  • <b>AB<sub>2</sub>E<sub>3</sub> (2 bp + 3 lp):</b> Linear (XeF<sub>2</sub>, I<sub>3</sub><sup>-</sup>).<br>
-  • <b>AB<sub>5</sub>E (5 bp + 1 lp):</b> Square Pyramidal (BrF<sub>5</sub>, IF<sub>5</sub>).<br>
-  • <b>AB<sub>4</sub>E<sub>2</sub> (4 bp + 2 lp):</b> Square Planar (XeF<sub>4</sub>).</p>
-
-
-  <!-- EXACT SYLLABUS HEADING 4 WORD-FOR-WORD -->
-  <h2 style="color: #43A047; margin-top: 30px; font-size: 20px; font-weight: bold;">4. Valence Bond Theory, Hybridization Involving s, p and d Orbitals and Shapes of Some Simple Molecules</h2>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(i) Valence Bond Theory (VBT) & Orbital Overlap</h3>
-  <p>Introduced by Heitler & London (1927) and developed by Linus Pauling. Covalent bonds form when half-filled atomic orbitals of two approaching atoms overlap, pairing their spins.<br>
-  • <b>Sigma (σ) Bond:</b> End-to-end (head-on) axial overlap along internuclear axis (s-s, s-p, p<sub>z</sub>-p<sub>z</sub>). Stronger bond with free rotation.<br>
-  • <b>Pi (π) Bond:</b> Sideways (lateral) parallel overlap of p-orbitals perpendicular to internuclear axis. Weaker bond preventing free rotation.</p>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(ii) Concept of Hybridization</h3>
-  <p>Linus Pauling introduced hybridization—intermixing of valence atomic orbitals of comparable energy to form new hybrid orbitals of equivalent shape, size, and directional orientation:</p>
-
-  <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b>sp Hybridization:</b> 1 s + 1 p ⟶ 2 linear sp orbitals (180°, e.g. BeCl<sub>2</sub>, C<sub>2</sub>H<sub>2</sub>).</li>
-    <li><b>sp<sup>2</sup> Hybridization:</b> 1 s + 2 p ⟶ 3 trigonal planar sp<sup>2</sup> orbitals (120°, e.g. BF<sub>3</sub>, C<sub>2</sub>H<sub>4</sub>).</li>
-    <li><b>sp<sup>3</sup> Hybridization:</b> 1 s + 3 p ⟶ 4 tetrahedral sp<sup>3</sup> orbitals (109.5°, e.g. CH<sub>4</sub>, NH<sub>3</sub>, H<sub>2</sub>O).</li>
-    <li><b>sp<sup>3</sup>d Hybridization:</b> 1 s + 3 p + 1 d<sub>z<sup>2</sup></sub> ⟶ 5 trigonal bipyramidal orbitals (e.g. PCl<sub>5</sub>). Axial P-Cl bonds (2.19 Å) are longer and weaker than equatorial P-Cl bonds (2.04 Å)!</li>
-    <li><b>sp<sup>3</sup>d<sup>2</sup> Hybridization:</b> 1 s + 3 p + 2 d (d<sub>z<sup>2</sup></sub>, d<sub>x<sup>2</sup>-y<sup>2</sup></sub>) ⟶ 6 octahedral orbitals (90°, e.g. SF<sub>6</sub>).</li>
-  </ul>
-
-
-  <!-- EXACT SYLLABUS HEADING 5 WORD-FOR-WORD -->
-  <h2 style="color: #43A047; margin-top: 30px; font-size: 20px; font-weight: bold;">5. Molecular Orbital Theory of Homonuclear Diatomic Molecules (Qualitative Idea Only), Hydrogen Bond</h2>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(i) Molecular Orbital Theory (MOT) & LCAO Principle</h3>
-  <p>Developed by F. Hund and R.S. Mulliken (1932). Atomic orbitals of individual atoms combine by Linear Combination of Atomic Orbitals (LCAO) to form new **Molecular Orbitals (MOs)** encompassing all nuclei in the molecule:<br>
-  • <b>Bonding MO (Ψ<sub>B</sub> = Ψ<sub>A</sub> + Ψ<sub>B</sub>):</b> Formed by in-phase constructive interference. Lower energy, higher electron density between nuclei.<br>
-  • <b>Antibonding MO (Ψ<sub>A</sub>* = Ψ<sub>A</sub> - Ψ<sub>B</sub>):</b> Formed by out-of-phase destructive interference. Higher energy with nodal plane between nuclei.</p>
-
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(ii) MO Energy Level Diagrams & Bond Order of Homonuclear Diatomics</h3>
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin: 15px 0;">
-    <h4 style="color: #43A047; margin: 0 0 8px 0; font-size: 17px; font-weight: bold;">MO Filling Order Rules</h4>
-    • <b>For B<sub>2</sub>, C<sub>2</sub>, N<sub>2</sub> (Total e<sup>-</sup> ≤ 14):</b><br>
-    σ1s < σ*1s < σ2s < σ*2s < (π2p<sub>x</sub> = π2p<sub>y</sub>) < σ2p<sub>z</sub> < (π*2p<sub>x</sub> = π*2p<sub>y</sub>) < σ*2p<sub>z</sub>.<br>
-    • <b>For O<sub>2</sub>, F<sub>2</sub>, Ne<sub>2</sub> (Total e<sup>-</sup> > 14):</b><br>
-    σ1s < σ*1s < σ2s < σ*2s < σ2p<sub>z</sub> < (π2p<sub>x</sub> = π2p<sub>y</sub>) < (π*2p<sub>x</sub> = π*2p<sub>y</sub>) < σ*2p<sub>z</sub>.<br>
-    • <b>Bond Order Formula:</b> <b style='color: #FFF;'>Bond Order = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">N<sub>b</sub> - N<sub>a</sub></span><span style="display:block; padding:0 4px;">2</span></span></b><br>
-    • <b>Paramagnetism of O<sub>2</sub>:</b> Oxygen molecule has 16 e<sup>-</sup>. MO configuration places 2 unpaired e<sup>-</sup> in degenerate π*2p<sub>x</sub> and π*2p<sub>y</sub> orbitals, explaining why <b>O<sub>2</sub> is PARAMAGNETIC!</b> (VBT failed to explain this!).
+  <h3 style="color: #43A047; margin-top: 18px; font-size: 16.5px;">(i) Fundamental Postulates &amp; Repulsion Hierarchy</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Formulated by Sidgwick, Powell, Nyholm, and Gillespie: electron pairs in the valence shell of a central atom repel one another and adopt spatial orientations that maximize distance, minimizing repulsive energy.
+      <br/>&bull; <b style="color: #43A047;">Repulsion Hierarchy:</b>
+      <br/><span style="display:inline-block; margin: 4px 0; font-weight:bold; color: #FFFFFF;">
+        Lone Pair - Lone Pair (lp - lp) &gt; Lone Pair - Bond Pair (lp - bp) &gt; Bond Pair - Bond Pair (bp - bp)
+      </span>
+      <br/>Because a lone pair is localized on a single nucleus, it occupies greater orbital space and exerts stronger repulsive forces than a localized bond pair shared between two nuclei.
+    </p>
   </div>
 
-  <h3 style="color: #43A047; margin-top: 18px; font-size: 18px;">(iii) Hydrogen Bonding (Types & Physical Consequences)</h3>
-  <p>Dipole-dipole attraction formed between Hydrogen covalently bonded to small highly electronegative atom (F, O, N) and lone pair of another F, O, N atom:<br>
-  • <b>Intermolecular H-Bonding:</b> Occurs between separate molecules (e.g. H<sub>2</sub>O, HF, Liquid NH<sub>3</sub>, Ethanol). Gives abnormally high boiling points, high viscosity, and ice density anomaly (ice floats on water!).<br>
-  • <b>Intramolecular H-Bonding:</b> Occurs within the same molecule forming a 5 or 6 membered ring (e.g. o-Nitrophenol, Salicylaldehyde). Lowers boiling point and increases steam volatility compared to p-Nitrophenol (which forms Intermolecular H-bonds!).</p>
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(ii) Geometry of Molecules with Only Bonding Pairs</h3>
+  <ul style="padding-left: 20px; line-height: 1.8;">
+    <li><b style="color: #43A047;">AB<sub>2</sub>:</b> 2 bond pairs &rArr; <b>Linear</b> (180&deg;) &bull; Examples: BeCl<sub>2</sub>, HgCl<sub>2</sub>, CO<sub>2</sub>.</li>
+    <li><b style="color: #43A047;">AB<sub>3</sub>:</b> 3 bond pairs &rArr; <b>Trigonal Planar</b> (120&deg;) &bull; Examples: BF<sub>3</sub>, BCl<sub>3</sub>, SO<sub>3</sub>.</li>
+    <li><b style="color: #43A047;">AB<sub>4</sub>:</b> 4 bond pairs &rArr; <b>Tetrahedral</b> (109.5&deg;) &bull; Examples: CH<sub>4</sub>, SiF<sub>4</sub>, NH<sub>4</sub><sup>+</sup>.</li>
+    <li><b style="color: #43A047;">AB<sub>5</sub>:</b> 5 bond pairs &rArr; <b>Trigonal Bipyramidal</b> (Equatorial 120&deg;, Axial 90&deg;) &bull; Examples: PCl<sub>5</sub>, PF<sub>5</sub>. (Axial bonds are longer and weaker due to greater repulsion from 3 equatorial pairs).</li>
+    <li><b style="color: #43A047;">AB<sub>6</sub>:</b> 6 bond pairs &rArr; <b>Octahedral</b> (90&deg;) &bull; Examples: SF<sub>6</sub>, [AlF<sub>6</sub>]<sup>3-</sup>.</li>
+    <li><b style="color: #43A047;">AB<sub>7</sub>:</b> 7 bond pairs &rArr; <b>Pentagonal Bipyramidal</b> (72&deg; &amp; 90&deg;) &bull; Examples: IF<sub>7</sub>.</li>
+  </ul>
 
-  <!-- BOTTOM FEATURE: MASTER CHEAT SHEET -->
-  <div style="background: linear-gradient(135deg, rgba(67, 160, 71, 0.15), rgba(46, 125, 50, 0.15)); border: 1.5px solid #43A047; border-radius: 10px; padding: 16px; margin-top: 25px;">
-    <h3 style="color: #43A047; font-weight: bold; margin: 0 0 8px 0; font-size: 18px; text-align: center;">⚡ Master Chapter 4 Formula Cheat Sheet</h3>
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.8; font-size: 14.5px;">
-      <li><b>Formal Charge:</b> FC = V - L - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> B.</li>
-      <li><b>Dipole Moment:</b> μ = q × r (1 D = 3.335 × 10<sup>-30</sup> C m). Symmetrical μ=0.</li>
-      <li><b>MOT Bond Order:</b> BO = (N<sub>b</sub> - N<sub>a</sub>) / 2. Higher BO ⟶ stronger bond, shorter length.</li>
-      <li><b>O<sub>2</sub> Paramagnetism:</b> 2 unpaired e<sup>-</sup> in π*2p<sub>x</sub><sup>1</sup> π*2p<sub>y</sub><sup>1</sup>.</li>
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(iii) Shapes of Molecules Containing Lone Pairs</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #43A047;">AB<sub>2</sub>E (2 bp, 1 lp):</b> <b>Bent / V-shaped</b> (&lt; 120&deg;, ~119.5&deg;) &bull; Examples: SO<sub>2</sub>, O<sub>3</sub>.</li>
+      <li><b style="color: #43A047;">AB<sub>3</sub>E (3 bp, 1 lp):</b> <b>Trigonal Pyramidal</b> (&lt; 109.5&deg;, 107&deg;) &bull; Examples: NH<sub>3</sub>, PCl<sub>3</sub>.</li>
+      <li><b style="color: #43A047;">AB<sub>2</sub>E<sub>2</sub> (2 bp, 2 lp):</b> <b>Bent / Angular</b> (&lt; 109.5&deg;, 104.5&deg;) &bull; Examples: H<sub>2</sub>O, H<sub>2</sub>S, OF<sub>2</sub>.</li>
+      <li><b style="color: #43A047;">AB<sub>4</sub>E (4 bp, 1 lp):</b> <b>See-Saw</b> &bull; Examples: SF<sub>4</sub> (lone pair occupies equatorial position to minimize 90&deg; repulsions).</li>
+      <li><b style="color: #43A047;">AB<sub>3</sub>E<sub>2</sub> (3 bp, 2 lp):</b> <b>T-Shaped</b> &bull; Examples: ClF<sub>3</sub>, BrF<sub>3</sub> (both lone pairs occupy equatorial positions).</li>
+      <li><b style="color: #43A047;">AB<sub>2</sub>E<sub>3</sub> (2 bp, 3 lp):</b> <b>Linear</b> (180&deg;) &bull; Examples: XeF<sub>2</sub>, I<sub>3</sub><sup>-</sup> (all 3 lone pairs in equatorial plane).</li>
+      <li><b style="color: #43A047;">AB<sub>5</sub>E (5 bp, 1 lp):</b> <b>Square Pyramidal</b> &bull; Examples: BrF<sub>5</sub>, IF<sub>5</sub>.</li>
+      <li><b style="color: #43A047;">AB<sub>4</sub>E<sub>2</sub> (4 bp, 2 lp):</b> <b>Square Planar</b> (90&deg;) &bull; Examples: XeF<sub>4</sub> (lone pairs opposite at trans axial positions).</li>
     </ul>
+  </div>
+
+  <!-- SECTION 4 -->
+  <h2 style="color: #43A047; border-bottom: 2px solid #43A047; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    4. Valence Bond Theory, Hybridization Involving s, p and d Orbitals and Shapes of Some Simple Molecules
+  </h2>
+
+  <!-- NEW STANDALONE SVG CARD FOR HYBRIDIZATION -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(67, 160, 71, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 520 280" style="width: 100%; max-width: 480px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="520" height="280" rx="8" fill="#0F172A"/>
+      
+      <!-- sp Linear -->
+      <g transform="translate(60, 80)">
+        <ellipse cx="-22" cy="0" rx="26" ry="12" fill="#43A047" opacity="0.85"/>
+        <ellipse cx="22" cy="0" rx="26" ry="12" fill="#81C784" opacity="0.85"/>
+        <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+        <text x="0" y="45" fill="#43A047" font-size="12" font-weight="bold" text-anchor="middle">sp (180&deg;)</text>
+        <text x="0" y="60" fill="#CBD5E1" font-size="10.5" text-anchor="middle">Linear (BeCl<sub>2</sub>, C<sub>2</sub>H<sub>2</sub>)</text>
+      </g>
+
+      <!-- sp2 Trigonal Planar -->
+      <g transform="translate(200, 80)">
+        <ellipse cx="0" cy="-24" rx="12" ry="24" fill="#26C6DA" opacity="0.85"/>
+        <ellipse cx="-20" cy="14" rx="22" ry="12" transform="rotate(30 -20 14)" fill="#4DD0E1" opacity="0.85"/>
+        <ellipse cx="20" cy="14" rx="22" ry="12" transform="rotate(-30 20 14)" fill="#80DEEA" opacity="0.85"/>
+        <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+        <text x="0" y="45" fill="#26C6DA" font-size="12" font-weight="bold" text-anchor="middle">sp<sup>2</sup> (120&deg;)</text>
+        <text x="0" y="60" fill="#CBD5E1" font-size="10.5" text-anchor="middle">Trigonal Planar (BF<sub>3</sub>, C<sub>2</sub>H<sub>4</sub>)</text>
+      </g>
+
+      <!-- sp3 Tetrahedral -->
+      <g transform="translate(340, 80)">
+        <ellipse cx="0" cy="-25" rx="12" ry="24" fill="#FF8A65" opacity="0.85"/>
+        <ellipse cx="-20" cy="16" rx="22" ry="12" transform="rotate(35 -20 16)" fill="#FFAB91" opacity="0.85"/>
+        <ellipse cx="20" cy="16" rx="22" ry="12" transform="rotate(-35 20 16)" fill="#FFCCBC" opacity="0.85"/>
+        <ellipse cx="5" cy="8" rx="10" ry="18" fill="#FF7043" opacity="0.6"/>
+        <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+        <text x="0" y="45" fill="#FF8A65" font-size="12" font-weight="bold" text-anchor="middle">sp<sup>3</sup> (109.5&deg;)</text>
+        <text x="0" y="60" fill="#CBD5E1" font-size="10.5" text-anchor="middle">Tetrahedral (CH<sub>4</sub>, CCl<sub>4</sub>)</text>
+      </g>
+
+      <!-- sp3d and sp3d2 bottom row -->
+      <g transform="translate(130, 200)">
+        <!-- Trigonal Bipyramidal -->
+        <ellipse cx="0" cy="-28" rx="10" ry="24" fill="#FDC830" opacity="0.85"/>
+        <ellipse cx="0" cy="28" rx="10" ry="24" fill="#FDC830" opacity="0.85"/>
+        <ellipse cx="-22" cy="0" rx="22" ry="11" fill="#FFE082" opacity="0.8"/>
+        <ellipse cx="14" cy="-10" rx="18" ry="10" fill="#FFF59D" opacity="0.8"/>
+        <ellipse cx="14" cy="10" rx="18" ry="10" fill="#FFF59D" opacity="0.8"/>
+        <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+        <text x="0" y="48" fill="#FDC830" font-size="12" font-weight="bold" text-anchor="middle">sp<sup>3</sup>d (90&deg; &amp; 120&deg;)</text>
+        <text x="0" y="63" fill="#CBD5E1" font-size="10.5" text-anchor="middle">Trigonal Bipyramidal (PCl<sub>5</sub>)</text>
+      </g>
+
+      <g transform="translate(370, 200)">
+        <!-- Octahedral -->
+        <ellipse cx="0" cy="-28" rx="10" ry="24" fill="#AB47BC" opacity="0.85"/>
+        <ellipse cx="0" cy="28" rx="10" ry="24" fill="#AB47BC" opacity="0.85"/>
+        <ellipse cx="-26" cy="0" rx="24" ry="10" fill="#CE93D8" opacity="0.85"/>
+        <ellipse cx="26" cy="0" rx="24" ry="10" fill="#CE93D8" opacity="0.85"/>
+        <ellipse cx="-16" cy="-14" rx="18" ry="8" transform="rotate(-30 -16 -14)" fill="#E1BEE7" opacity="0.7"/>
+        <ellipse cx="16" cy="14" rx="18" ry="8" transform="rotate(-30 16 14)" fill="#E1BEE7" opacity="0.7"/>
+        <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+        <text x="0" y="48" fill="#AB47BC" font-size="12" font-weight="bold" text-anchor="middle">sp<sup>3</sup>d<sup>2</sup> (90&deg;)</text>
+        <text x="0" y="63" fill="#CBD5E1" font-size="10.5" text-anchor="middle">Octahedral (SF<sub>6</sub>)</text>
+      </g>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 4.4: 3D Spatial Geometry of sp, sp², sp³, sp³d, and sp³d² Hybrid Orbitals with Molecular Bond Angles
+  </div>
+</div>
+
+
+  <h3 style="color: #43A047; margin-top: 18px; font-size: 16.5px;">(i) Valence Bond Theory (VBT) &amp; Orbital Overlap</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Developed by Heitler and London (1927) and extended by Linus Pauling: a covalent bond forms by the overlapping of half-filled atomic orbitals containing electrons with antiparallel spins. Greater orbital overlap yields a stronger, shorter chemical bond.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #43A047;">Sigma (&sigma;) Bond:</b> Formed by coaxial (end-to-end / head-on) overlap of atomic orbitals along the internuclear axis (s-s, s-p, or axial p-p). Maximum electron density is localized symmetrically along the internuclear axis. Strong bond with free rotation.</li>
+      <li><b style="color: #43A047;">Pi (&pi;) Bond:</b> Formed by lateral (sideways) overlap of two parallel p-orbitals perpendicular to the internuclear axis. Electron density forms two sausage-shaped clouds above and below the internuclear plane. Weaker bond due to lesser overlap; restricts free rotation.</li>
+    </ul>
+  </div>
+
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(ii) Concept of Hybridization</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Pauling introduced hybridization to explain the equivalent bond lengths, bond energies, and directional geometries of polyatomic molecules (e.g., explaining why CH<sub>4</sub> has 4 identical C-H bonds rather than three 2p-1s bonds and one 2s-1s bond).
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #43A047;">1. sp Hybridization:</b> 1 s + 1 p &rArr; two collinear hybrid orbitals at <b>180&deg; (Linear)</b>. 50% s-character &bull; Examples: BeF<sub>2</sub>, BeCl<sub>2</sub>, HC&equiv;CH.</li>
+      <li><b style="color: #43A047;">2. sp<sup>2</sup> Hybridization:</b> 1 s + 2 p &rArr; three planar hybrid orbitals at <b>120&deg; (Trigonal Planar)</b>. 33.3% s-character &bull; Examples: BF<sub>3</sub>, BCl<sub>3</sub>, H<sub>2</sub>C=CH<sub>2</sub>.</li>
+      <li><b style="color: #43A047;">3. sp<sup>3</sup> Hybridization:</b> 1 s + 3 p &rArr; four tetrahedral hybrid orbitals directed toward corners of a regular tetrahedron at <b>109.5&deg;</b>. 25% s-character &bull; Examples: CH<sub>4</sub>, CCl<sub>4</sub>, NH<sub>3</sub> (distorted 107&deg;), H<sub>2</sub>O (distorted 104.5&deg;).</li>
+      <li><b style="color: #43A047;">4. sp<sup>3</sup>d Hybridization:</b> 1 s + 3 p + 1 d<sub>z<sup>2</sup></sub> &rArr; five hybrid orbitals directed toward corners of a <b>Trigonal Bipyramid</b> (3 equatorial at 120&deg;, 2 axial at 90&deg;) &bull; Example: PCl<sub>5</sub>. Axial P-Cl bonds (240 pm) are longer than equatorial P-Cl bonds (202 pm) due to greater repulsive strain.</li>
+      <li><b style="color: #43A047;">5. sp<sup>3</sup>d<sup>2</sup> Hybridization:</b> 1 s + 3 p + 2 d (d<sub>x<sup>2</sup>-y<sup>2</sup></sub>, d<sub>z<sup>2</sup></sub>) &rArr; six equivalent hybrid orbitals directed toward corners of an <b>Octahedron</b> at 90&deg; &bull; Example: SF<sub>6</sub>.</li>
+      <li><b style="color: #43A047;">Calculation Formula for Hybridization State:</b>
+        <br/><b>Steric Number = <sup>1</sup>/<sub>2</sub> [V + M - C + A]</b> (where V = valence e<sup>-</sup> on central atom, M = monovalent atoms attached, C = cation charge, A = anion charge).
+      </li>
+    </ul>
+  </div>
+
+  <!-- SECTION 5 -->
+  <h2 style="color: #43A047; border-bottom: 2px solid #43A047; padding-bottom: 6px; margin-top: 35px; font-size: 20px;">
+    5. Molecular Orbital Theory of Homonuclear Diatomic Molecules (Qualitative Idea Only), Hydrogen Bond
+  </h2>
+
+  <!-- NEW STANDALONE SVG CARD FOR MOT -->
+  
+<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(67, 160, 71, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
+  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
+    <svg viewBox="0 0 500 300" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="500" height="300" rx="8" fill="#0F172A"/>
+
+      <!-- Left AO (Atom A) -->
+      <text x="60" y="30" fill="#43A047" font-size="12" font-weight="bold" text-anchor="middle">Atomic Orbitals (A)</text>
+      <line x1="40" y1="230" x2="80" y2="230" stroke="#43A047" stroke-width="3"/>
+      <text x="30" y="235" fill="#CBD5E1" font-size="11" text-anchor="end">1s</text>
+
+      <line x1="40" y1="150" x2="80" y2="150" stroke="#43A047" stroke-width="3"/>
+      <text x="30" y="155" fill="#CBD5E1" font-size="11" text-anchor="end">2s</text>
+
+      <line x1="30" y1="80" x2="50" y2="80" stroke="#43A047" stroke-width="3"/>
+      <line x1="55" y1="80" x2="75" y2="80" stroke="#43A047" stroke-width="3"/>
+      <line x1="80" y1="80" x2="100" y2="80" stroke="#43A047" stroke-width="3"/>
+      <text x="25" y="85" fill="#CBD5E1" font-size="11" text-anchor="end">2p</text>
+
+      <!-- Right AO (Atom B) -->
+      <text x="440" y="30" fill="#43A047" font-size="12" font-weight="bold" text-anchor="middle">Atomic Orbitals (B)</text>
+      <line x1="420" y1="230" x2="460" y2="230" stroke="#43A047" stroke-width="3"/>
+      <text x="470" y="235" fill="#CBD5E1" font-size="11">1s</text>
+
+      <line x1="420" y1="150" x2="460" y2="150" stroke="#43A047" stroke-width="3"/>
+      <text x="470" y="155" fill="#CBD5E1" font-size="11">2s</text>
+
+      <line x1="400" y1="80" x2="420" y2="80" stroke="#43A047" stroke-width="3"/>
+      <line x1="425" y1="80" x2="445" y2="80" stroke="#43A047" stroke-width="3"/>
+      <line x1="450" y1="80" x2="470" y2="80" stroke="#43A047" stroke-width="3"/>
+      <text x="475" y="85" fill="#CBD5E1" font-size="11">2p</text>
+
+      <!-- Center Molecular Orbitals (MO) -->
+      <text x="250" y="25" fill="#26C6DA" font-size="13" font-weight="bold" text-anchor="middle">Molecular Orbitals (A<sub>2</sub>)</text>
+
+      <!-- 1s splitting -->
+      <line x1="60" y1="230" x2="230" y2="260" stroke="rgba(255,255,255,0.25)" stroke-dasharray="2,2"/>
+      <line x1="440" y1="230" x2="270" y2="260" stroke="rgba(255,255,255,0.25)" stroke-dasharray="2,2"/>
+      <line x1="225" y1="260" x2="275" y2="260" stroke="#26C6DA" stroke-width="3"/>
+      <text x="250" y="278" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">&sigma; 1s (Bonding)</text>
+
+      <line x1="60" y1="230" x2="230" y2="200" stroke="rgba(255,255,255,0.25)" stroke-dasharray="2,2"/>
+      <line x1="440" y1="230" x2="270" y2="200" stroke="rgba(255,255,255,0.25)" stroke-dasharray="2,2"/>
+      <line x1="225" y1="200" x2="275" y2="200" stroke="#FF5252" stroke-width="3"/>
+      <text x="250" y="195" fill="#FF5252" font-size="11" font-weight="bold" text-anchor="middle">&sigma;* 1s (Antibonding)</text>
+
+      <!-- 2s splitting -->
+      <line x1="225" y1="175" x2="275" y2="175" stroke="#26C6DA" stroke-width="3"/>
+      <text x="250" y="168" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">&sigma; 2s</text>
+
+      <line x1="225" y1="125" x2="275" y2="125" stroke="#FF5252" stroke-width="3"/>
+      <text x="250" y="120" fill="#FF5252" font-size="11" font-weight="bold" text-anchor="middle">&sigma;* 2s</text>
+
+      <!-- 2p splitting (O2 pattern) -->
+      <line x1="225" y1="95" x2="275" y2="95" stroke="#26C6DA" stroke-width="3"/>
+      <text x="250" y="90" fill="#26C6DA" font-size="10.5" font-weight="bold" text-anchor="middle">&sigma; 2p<sub>z</sub></text>
+
+      <line x1="205" y1="70" x2="240" y2="70" stroke="#26C6DA" stroke-width="3"/>
+      <line x1="260" y1="70" x2="295" y2="70" stroke="#26C6DA" stroke-width="3"/>
+      <text x="250" y="63" fill="#26C6DA" font-size="10.5" font-weight="bold" text-anchor="middle">&pi; 2p<sub>x</sub> = &pi; 2p<sub>y</sub></text>
+
+      <line x1="205" y1="42" x2="240" y2="42" stroke="#FF5252" stroke-width="3"/>
+      <line x1="260" y1="42" x2="295" y2="42" stroke="#FF5252" stroke-width="3"/>
+      <text x="250" y="38" fill="#FF5252" font-size="10" font-weight="bold" text-anchor="middle">&pi;* 2p<sub>x</sub> = &pi;* 2p<sub>y</sub></text>
+    </svg>
+  </div>
+  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
+    💡 Figure 4.5: Molecular Orbital Energy Level Diagram (MOT) Showing Bonding (&sigma;, &pi;) and Antibonding (&sigma;*, &pi;*) Splitting
+  </div>
+</div>
+
+
+  <h3 style="color: #43A047; margin-top: 18px; font-size: 16.5px;">(i) Molecular Orbital Theory (MOT) &amp; LCAO Principle</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      Developed by F. Hund and R.S. Mulliken (1932): atomic orbitals lose their individual identities in a molecule, merging into polycentric <b>Molecular Orbitals</b> spanning across all nuclei.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #43A047;">Linear Combination of Atomic Orbitals (LCAO):</b>
+        <br/>1. <i>Bonding Molecular Orbital (&psi;<sub>B</sub> = &psi;<sub>A</sub> + &psi;<sub>B</sub>):</i> Constructive wave interference. Electron density builds up between nuclei, lowering systemic energy below parent AOs. Stabilizes molecule.
+        <br/>2. <i>Antibonding Molecular Orbital (&psi;<sub>A</sub>* = &psi;<sub>A</sub> - &psi;<sub>B</sub>):</i> Destructive wave interference. Produces a nodal plane (&psi;<sup>2</sup> = 0) between nuclei where electron density is zero; higher energy than parent AOs. Destabilizes molecule.
+      </li>
+      <li><b style="color: #43A047;">Bond Order &amp; Magnetic Character:</b>
+        <br/><b>Bond Order = <sup>1</sup>/<sub>2</sub> (N<sub>b</sub> - N<sub>a</sub>)</b>
+        <br/>&bull; BO &gt; 0 &rArr; Molecule is stable and exists.
+        <br/>&bull; BO &le; 0 &rArr; Molecule is unstable and cannot exist (e.g., He<sub>2</sub> has N<sub>b</sub>=2, N<sub>a</sub>=2 &rArr; BO = 0).
+        <br/>&bull; <i>Paramagnetism:</i> Presence of one or more <b>unpaired electrons</b> in MOs (e.g., O<sub>2</sub> has two unpaired electrons in &pi;*2p<sub>x</sub> and &pi;*2p<sub>y</sub>; paramagnetic).
+        <br/>&bull; <i>Diamagnetism:</i> All electrons are completely paired.
+      </li>
+    </ul>
+  </div>
+
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(ii) MO Energy Level Diagrams &amp; Bond Order of Homonuclear Diatomics</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
+      <li><b style="color: #43A047;">For Molecules with Total Electrons &le; 14 (Li<sub>2</sub>, Be<sub>2</sub>, B<sub>2</sub>, C<sub>2</sub>, N<sub>2</sub>) - sp Mixing Occurs:</b>
+        <br/>&sigma;1s &lt; &sigma;*1s &lt; &sigma;2s &lt; &sigma;*2s &lt; <b>(&pi;2p<sub>x</sub> = &pi;2p<sub>y</sub>) &lt; &sigma;2p<sub>z</sub></b> &lt; (&pi;*2p<sub>x</sub> = &pi;*2p<sub>y</sub>) &lt; &sigma;*2p<sub>z</sub>
+        <br/>&bull; <i>For N<sub>2</sub> (14e<sup>-</sup>):</i> BO = (10 - 4)/2 = <b>3.0</b> (Diamagnetic).
+      </li>
+      <li><b style="color: #43A047;">For Molecules with Total Electrons &gt; 14 (O<sub>2</sub>, F<sub>2</sub>, Ne<sub>2</sub>) - No sp Mixing:</b>
+        <br/>&sigma;1s &lt; &sigma;*1s &lt; &sigma;2s &lt; &sigma;*2s &lt; <b>&sigma;2p<sub>z</sub> &lt; (&pi;2p<sub>x</sub> = &pi;2p<sub>y</sub>)</b> &lt; (&pi;*2p<sub>x</sub> = &pi;*2p<sub>y</sub>) &lt; &sigma;*2p<sub>z</sub>
+        <br/>&bull; <i>For O<sub>2</sub> (16e<sup>-</sup>):</i> BO = (10 - 6)/2 = <b>2.0</b> (Two unpaired electrons in &pi;*2p; explains O<sub>2</sub> <b>paramagnetism</b>, which Lewis and VBT failed to explain).
+      </li>
+    </ul>
+  </div>
+
+  <h3 style="color: #43A047; margin-top: 22px; font-size: 16.5px;">(iii) Hydrogen Bonding (Types &amp; Physical Consequences)</h3>
+  <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(67, 160, 71, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
+    <p style="margin: 0; line-height: 1.8;">
+      An attractive electrostatic bridge formed between a hydrogen atom covalently bonded to a strongly electronegative small atom (F, O, N) and another electronegative atom with a lone pair.
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 8px;">
+      <li><b style="color: #43A047;">1. Intermolecular Hydrogen Bonding:</b> Occurs between separate molecules of the same or different substances (e.g., H<sub>2</sub>O, HF, NH<sub>3</sub>, C<sub>2</sub>H<sub>5</sub>OH). Causes molecular association, giving water an anomalously high boiling point (100&deg;C) compared to H<sub>2</sub>S (-60&deg;C).</li>
+      <li><b style="color: #43A047;">2. Intramolecular Hydrogen Bonding (Chelation):</b> Occurs within the same single molecule between a hydrogen atom and an electronegative atom located close by (e.g., <b>o-Nitrophenol</b>, Salicylaldehyde). Prevents intermolecular association, resulting in lower boiling points and steam-volatility compared to p-nitrophenol.</li>
+      <li><b style="color: #43A047;">Anomalous Properties of Water &amp; Density of Ice:</b> In ice, each water molecule is tetrahedrally hydrogen-bonded to 4 neighbouring water molecules, forming a rigid, highly porous 3D open-cage crystal lattice. When ice melts at 0&deg;C, the cage collapses, packing molecules closer. Consequently, <b>liquid water is denser than solid ice</b>, and water reaches maximum density at <b>3.98&deg;C (4&deg;C)</b>.</li>
+    </ul>
+  </div>
+
+  <!-- MASTER REVISION CHEAT SHEET -->
+  <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(27, 94, 32, 0.85)); border: 2px solid #43A047; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
+    <h3 style="color: #43A047; margin: 0 0 14px 0; font-size: 18px; text-align: center; font-weight: bold;">
+      ⚡ Master Chapter 4 Formula Cheat Sheet
+    </h3>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px;">
+        <thead>
+          <tr style="background: rgba(67, 160, 71, 0.25); color: #43A047; font-weight: bold;">
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Bond Parameter / Law</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Formula / Mathematical Expression</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Geometry / Key Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">Formal Charge (FC):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">FC = V - L - <sup>1</sup>/<sub>2</sub> S</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">V = valence e<sup>-</sup>, L = lone e<sup>-</sup>, S = shared e<sup>-</sup></td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">Dipole Moment (&mu;):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&mu; = q &times; d</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">1 Debye = 3.336 &times; 10<sup>-30</sup> C m</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">Steric Number:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">SN = <sup>1</sup>/<sub>2</sub> [V + M - C + A]</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">SN=2 (sp), 3 (sp<sup>2</sup>), 4 (sp<sup>3</sup>), 5 (sp<sup>3</sup>d), 6 (sp<sup>3</sup>d<sup>2</sup>)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">Bond Order (BO):</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">BO = <sup>1</sup>/<sub>2</sub> (N<sub>b</sub> - N<sub>a</sub>)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">BO &prop; Bond Energy &prop; 1 / Bond Length</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">Magnetic Nature:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">&mu;<sub>s</sub> = &radic;[n(n + 2)] BM</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Unpaired electrons &rArr; Paramagnetic (O<sub>2</sub>, B<sub>2</sub>)</td>
+          </tr>
+          <tr>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #43A047;">% Ionic Character:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">16(&Delta;&chi;) + 3.5(&Delta;&chi;)<sup>2</sup></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Hannay-Smith Equation (&Delta;&chi; = &chi;<sub>A</sub> - &chi;<sub>B</sub>)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 </div>
 `;
 
 export const c11Chem4HtmlSolutions = `
-<style>
-  p, li, div:not(.table-container):not(.table-responsive):not(.pt-scroll-wrapper) {
-    text-align: justify !important;
-  }
-  h1, h2, h3, h4, h5, h6 { text-align: left; }
-  .text-center { text-align: center !important; }
-</style>
+<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
-<div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.7; font-size: 16px;">
-
-  <!-- SECTION A: OBJECTIVE & MCQS (25 Questions - 72% Theory) -->
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin-bottom: 20px;">
-    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION A: Objective & Multiple Choice Questions (Q1 to Q25)</h2>
-    <p style="color: #43A047; margin: 0; font-size: 14px;">25 Expected MCQs • 1 Mark Each (18 Conceptual Theory + 7 Calculations)</p>
+  <!-- SECTION A -->
+  <div style="background: linear-gradient(135deg, rgba(67, 160, 71, 0.15), rgba(46, 125, 50, 0.15)); border: 1.5px solid rgba(67, 160, 71, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
+    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION A: Very Short Answer (VSA) Questions (1 Mark Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q1 to Q40 &bull; Octet Violations, VSEPR Geometries, Hybridization Types &amp; MOT Definitions</p>
   </div>
-
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q1. Which of the following molecules violates the Octet Rule by possessing an expanded octet central atom?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) BF<sub>3</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) CH<sub>4</sub><br>
-      (C) SF<sub>6</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) NH<sub>3</sub>
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) SF<sub>6</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> SF<sub>6</sub> has 6 S-F bonds surrounding sulfur with 12 valence electrons (expanded octet).</span>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q1: Define Octet Rule.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Atoms transfer or share valence electrons to attain a stable valence octet of eight electrons.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q2. What is the shape of Water molecule (H<sub>2</sub>O) according to VSEPR theory?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Linear &nbsp;&nbsp;&nbsp;&nbsp; (B) Tetrahedral<br>
-      (C) Bent / V-shaped &nbsp;&nbsp;&nbsp;&nbsp; (D) Trigonal Planar
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) Bent / V-shaped</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> H<sub>2</sub>O has 2 bonding pairs and 2 lone pairs (AB<sub>2</sub>E<sub>2</sub>), yielding bent V-shape with 104.5° angle.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q2: Give two examples of electron-deficient molecules that violate the octet rule.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      BF<sub>3</sub> and BeCl<sub>2</sub>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q3. What is the hybridization of central Phosphorus atom in PCl<sub>5</sub> molecule?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) sp<sup>3</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) sp<sup>3</sup>d<br>
-      (C) sp<sup>3</sup>d<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp; (D) dsp<sup>2</sup>
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) sp<sup>3</sup>d</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> PCl<sub>5</sub> has 5 electron pairs around P, undergoing sp<sup>3</sup>d hybridization.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q3: Give two examples of hypervalent molecules with expanded octets.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      PCl<sub>5</sub> (10 electrons) and SF<sub>6</sub> (12 electrons).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q4. Why is Oxygen molecule (O<sub>2</sub>) Paramagnetic according to Molecular Orbital Theory?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Contains odd electrons &nbsp;&nbsp;&nbsp;&nbsp; (B) Has 2 unpaired electrons in π*2p orbitals<br>
-      (C) Has zero bond order &nbsp;&nbsp;&nbsp;&nbsp; (D) Forms hydrogen bonds
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Has 2 unpaired electrons in π*2p orbitals</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> MOT places 2 unpaired e<sup>-</sup> in degenerate π*2p<sub>x</sub> and π*2p<sub>y</sub> antibonding MOs.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q4: Define Lattice Enthalpy.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The energy required to completely separate one mole of a solid ionic crystalline compound into gaseous constituent ions.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q5. Which molecule has a ZERO net dipole moment (μ = 0)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) H<sub>2</sub>O &nbsp;&nbsp;&nbsp;&nbsp; (B) NH<sub>3</sub><br>
-      (C) BF<sub>3</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) NF<sub>3</sub>
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) BF<sub>3</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Symmetrical trigonal planar BF<sub>3</sub> has individual B-F dipoles canceling out completely.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q5: Define Bond Length.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The equilibrium distance between the nuclei of two bonded atoms in a molecule.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q6. What is the bond order of Nitrogen molecule (N<sub>2</sub>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1 &nbsp;&nbsp;&nbsp;&nbsp; (B) 2<br>
-      (C) 3 &nbsp;&nbsp;&nbsp;&nbsp; (D) 0
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) 3</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> N<sub>2</sub> has 10 bonding e<sup>-</sup> and 4 antibonding e<sup>-</sup>: BO = (10 - 4)/2 = 3.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q6: How does bond length vary with bond multiplicity?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Bond length decreases as bond multiplicity increases: C-C (154 pm) &gt; C=C (134 pm) &gt; C&equiv;C (120 pm).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q7. According to VSEPR theory, electron pair repulsion order is:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) bp-bp > lp-bp > lp-lp &nbsp;&nbsp;&nbsp;&nbsp; (B) lp-lp > lp-bp > bp-bp<br>
-      (C) lp-bp > lp-lp > bp-bp &nbsp;&nbsp;&nbsp;&nbsp; (D) bp-bp > lp-lp > lp-bp
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) lp-lp > lp-bp > bp-bp</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Unshared lone pairs occupy more space, creating max lp-lp repulsion.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q7: Define Bond Enthalpy.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The amount of energy required to break one mole of chemical bonds of a specific type in the gaseous state.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q8. What type of chemical bond is formed by sideways (lateral) parallel orbital overlap?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Sigma (σ) bond &nbsp;&nbsp;&nbsp;&nbsp; (B) Pi (π) bond<br>
-      (C) Ionic bond &nbsp;&nbsp;&nbsp;&nbsp; (D) Hydrogen bond
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Pi (π) bond</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Lateral parallel overlap of p-orbitals forms a Pi (π) bond.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q8: Define Bond Angle.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The internal angle between orbitals containing bonding electron pairs around the central atom.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q9. Which factor increases the Covalent Character of an ionic bond according to Fajans' Rules?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Large cation size &nbsp;&nbsp;&nbsp;&nbsp; (B) Small cation size<br>
-      (C) Small anion size &nbsp;&nbsp;&nbsp;&nbsp; (D) Low cation charge
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Small cation size</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Smaller cations have higher polarising power, increasing covalent character.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q9: Define Bond Order in Lewis theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The number of chemical bonds shared between a pair of atoms in a molecule.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q10. What is the formal charge on central Oxygen atom in Ozone (O<sub>3</sub>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 0 &nbsp;&nbsp;&nbsp;&nbsp; (B) +1<br>
-      (C) -1 &nbsp;&nbsp;&nbsp;&nbsp; (D) +2
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) +1</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> FC = 6 - 2 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(6) = +1.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q10: Write the formula for calculating Formal Charge on an atom in a Lewis structure.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formal Charge FC = V - L - <sup>1</sup>/<sub>2</sub> S.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q11. Which of the following compounds forms Intramolecular Hydrogen Bonding?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Water &nbsp;&nbsp;&nbsp;&nbsp; (B) Ethanol<br>
-      (C) o-Nitrophenol &nbsp;&nbsp;&nbsp;&nbsp; (D) p-Nitrophenol
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) o-Nitrophenol</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> o-Nitrophenol forms a 6-membered chelate ring via intramolecular H-bond.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q11: Define Dipole Moment (&mu;) and state its SI units.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Product of the magnitude of electric charge (q) and distance (d): &mu; = q &times; d. SI unit: Coulomb-meter (C m).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q12. What is the geometry of XeF<sub>4</sub> molecule?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Tetrahedral &nbsp;&nbsp;&nbsp;&nbsp; (B) Square Planar<br>
-      (C) Octahedral &nbsp;&nbsp;&nbsp;&nbsp; (D) See-saw
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Square Planar</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> XeF<sub>4</sub> has 4 bonding pairs and 2 lone pairs (AB<sub>4</sub>E<sub>2</sub>), yielding square planar shape.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q12: What is the Debye (D) in SI units?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1 D = 3.33564 &times; 10<sup>-30</sup> C m.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q13. Which bond is stronger: Sigma (σ) bond or Pi (π) bond?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Sigma (σ) bond &nbsp;&nbsp;&nbsp;&nbsp; (B) Pi (π) bond<br>
-      (C) Both equal &nbsp;&nbsp;&nbsp;&nbsp; (D) Depends on temperature
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (A) Sigma (σ) bond</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Axial head-on overlap in σ-bonds is much greater than lateral overlap in π-bonds.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q13: Why is the net dipole moment of CO<sub>2</sub> zero?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because CO<sub>2</sub> has a linear geometry (O=C=O) where two equal and opposite C=O bond dipoles cancel completely.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q14. What is the hybridization of Carbon in Ethyne (C<sub>2</sub>H<sub>2</sub>, Acetylene)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) sp<sup>3</sup> &nbsp;&nbsp;&nbsp;&nbsp; (B) sp<sup>2</sup><br>
-      (C) sp &nbsp;&nbsp;&nbsp;&nbsp; (D) dsp<sup>2</sup>
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) sp</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Triple-bonded carbon in C<sub>2</sub>H<sub>2</sub> undergoes linear sp hybridization.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q14: Why is BF<sub>3</sub> non-polar despite containing polar B-F bonds?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because BF<sub>3</sub> is symmetrical trigonal planar (120&deg;); the vector sum of the three B-F bond dipoles is zero.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q15. Why does Ice float on water?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Ice is ionic &nbsp;&nbsp;&nbsp;&nbsp; (B) Ice has open cage-like H-bonded structure with lower density<br>
-      (C) Ice is heavier &nbsp;&nbsp;&nbsp;&nbsp; (D) Water is non-polar
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Ice has open cage-like H-bonded structure with lower density</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> 3D H-bonding in ice creates open cage structure with lower density than liquid water.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q15: State Fajans' rule regarding cation size.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Smaller cations possess greater polarizing power, imparting higher covalent character to ionic bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q16. What is the bond angle in Methane (CH<sub>4</sub>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 90° &nbsp;&nbsp;&nbsp;&nbsp; (B) 120°<br>
-      (C) 109.5° &nbsp;&nbsp;&nbsp;&nbsp; (D) 180°
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) 109.5°</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Tetrahedral CH<sub>4</sub> has bond angles of 109° 28' (109.5°).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q16: State Fajans' rule regarding anion size.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Larger anions are more easily polarizable, leading to greater covalent character.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q17. What is the bond order of Helium molecule (He<sub>2</sub>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 1 &nbsp;&nbsp;&nbsp;&nbsp; (B) 0<br>
-      (C) 2 &nbsp;&nbsp;&nbsp;&nbsp; (D) 0.5
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) 0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> He<sub>2</sub> has 2 bonding e<sup>-</sup> and 2 antibonding e<sup>-</sup>: BO = (2-2)/2 = 0 (He<sub>2</sub> cannot exist!).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q17: State the repulsion order of electron pairs according to VSEPR theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lone pair - Lone pair &gt; Lone pair - Bond pair &gt; Bond pair - Bond pair.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q18. Which of the following has a See-saw molecular shape?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) SF<sub>4</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) ClF<sub>3</sub><br>
-      (C) XeF<sub>2</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) BF<sub>3</sub>
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (A) SF<sub>4</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> SF<sub>4</sub> has 4 bp + 1 lp (AB<sub>4</sub>E), yielding see-saw shape.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q18: What is the geometry and bond angle of Methane (CH<sub>4</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Tetrahedral geometry with bond angle 109.5&deg;.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q19. Dipole moment of NH<sub>3</sub> (1.47 D) is higher than NF<sub>3</sub> (0.23 D) because:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) N-F is non-polar &nbsp;&nbsp;&nbsp;&nbsp; (B) In NF<sub>3</sub>, bond dipoles oppose lone pair dipole<br>
-      (C) NH<sub>3</sub> is planar &nbsp;&nbsp;&nbsp;&nbsp; (D) NF<sub>3</sub> is ionic
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) In NF<sub>3</sub>, bond dipoles oppose lone pair dipole</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> In NF<sub>3</sub>, fluorine dipoles oppose lone pair dipole; in NH<sub>3</sub> they reinforce.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q19: What is the shape of Ammonia (NH<sub>3</sub>) according to VSEPR theory?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Trigonal pyramidal (bond angle 107&deg; due to 1 lone pair).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q20. Which overlap of atomic orbitals is impossible for bond formation along z-axis?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) s and p<sub>z</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) p<sub>z</sub> and p<sub>z</sub><br>
-      (C) p<sub>x</sub> and p<sub>y</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) s and s
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) p<sub>x</sub> and p<sub>y</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> p<sub>x</sub> and p<sub>y</sub> are mutually perpendicular (zero overlap!).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q20: What is the shape of Water (H<sub>2</sub>O) according to VSEPR theory?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Bent / V-shaped (bond angle 104.5&deg; due to 2 lone pairs).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q21. What is the bond order of peroxide ion (O<sub>2</sub><sup>2-</sup>)?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) 2.0 &nbsp;&nbsp;&nbsp;&nbsp; (B) 1.5<br>
-      (C) 1.0 &nbsp;&nbsp;&nbsp;&nbsp; (D) 2.5
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) 1.0</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> O<sub>2</sub><sup>2-</sup> has 18 e<sup>-</sup> (10 bonding, 8 antibonding): BO = (10 - 8)/2 = 1.0.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q21: What is the shape of PCl<sub>5</sub> molecule?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Trigonal bipyramidal.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q22. Which species is diamagnetic?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) O<sub>2</sub> &nbsp;&nbsp;&nbsp;&nbsp; (B) B<sub>2</sub><br>
-      (C) N<sub>2</sub> &nbsp;&nbsp;&nbsp;&nbsp; (D) NO
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) N<sub>2</sub></b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> N<sub>2</sub> has 14 e<sup>-</sup> with all electrons paired in MOs.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q22: What is the shape of SF<sub>6</sub> molecule?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Regular octahedral.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q23. Axial P-Cl bonds in PCl<sub>5</sub> are longer than equatorial P-Cl bonds because:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Axial bonds suffer greater repulsions from 3 equatorial pairs &nbsp;&nbsp;&nbsp;&nbsp; (B) Equatorial bonds are ionic<br>
-      (C) Axial bonds are double bonds &nbsp;&nbsp;&nbsp;&nbsp; (D) PCl<sub>5</sub> is planar
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (A) Axial bonds suffer greater repulsions from 3 equatorial pairs</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Axial P-Cl bonds experience three 90° repulsions vs two 90° repulsions for equatorial.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q23: What is the shape of ClF<sub>3</sub> according to VSEPR?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      T-shaped (3 bond pairs, 2 lone pairs in equatorial positions).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q24. Conversion of N<sub>2</sub> to N<sub>2</sub><sup>+</sup> causes:</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Increase in bond order &nbsp;&nbsp;&nbsp;&nbsp; (B) Decrease in bond order and increase in bond length<br>
-      (C) No change &nbsp;&nbsp;&nbsp;&nbsp; (D) Decrease in bond length
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (B) Decrease in bond order and increase in bond length</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> N<sub>2</sub> (BO=3) ⟶ N<sub>2</sub><sup>+</sup> (BO=2.5). Lower BO increases bond length.</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q24: What is the shape of XeF<sub>4</sub> molecule?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Square planar (4 bond pairs, 2 lone pairs at trans axial positions).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 8px 0;"><b style='color: #43A047;'>Q25. Which element forms the strongest Hydrogen bond?</b></p>
-    <div style="font-size: 14.5px; color: #DDD; margin-bottom: 8px;">
-      (A) Nitrogen &nbsp;&nbsp;&nbsp;&nbsp; (B) Oxygen<br>
-      (C) Fluorine &nbsp;&nbsp;&nbsp;&nbsp; (D) Chlorine
-    </div>
-    <div style="background: rgba(67, 160, 71, 0.15); border-left: 3.5px solid #43A047; padding: 8px 12px; border-radius: 4px; margin-top: 8px;">
-      <b style='color: #43A047;'>✓ Answer: (C) Fluorine</b><br>
-      <span style="font-size: 14px; color: #EEE;"><b>Explanation:</b> Fluorine has the highest electronegativity (4.0) and smallest size, forming strongest H-bond (HF).</span>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q25: What is the shape of SF<sub>4</sub> molecule?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      See-saw (4 bond pairs, 1 lone pair in equatorial position).
     </div>
   </div>
-  <!-- SECTION B: VERY SHORT ANSWER QUESTIONS (Q26 to Q55) -->
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION B: Very Short Answer Questions (Q26 to Q55)</h2>
-    <p style="color: #43A047; margin: 0; font-size: 14px;">30 Expected VSA Questions • 2 Marks Each (22 Conceptual Theory + 8 Short Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q26: Define a Sigma (&sigma;) bond.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A covalent bond formed by head-on (coaxial) overlap of atomic orbitals along the internuclear axis.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q27: Define a Pi (&pi;) bond.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A covalent bond formed by sideways (lateral) overlap of parallel p-orbitals perpendicular to the internuclear axis.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q28: Which bond is stronger: Sigma (&sigma;) or Pi (&pi;), and why?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Sigma bond is stronger because coaxial overlap is significantly greater than lateral overlap.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q29: Define Hybridization.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      The phenomenon of intermixing atomic orbitals of slightly differing energies to produce equivalent sets of hybrid orbitals.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q30: What is the hybridization of Carbon in Ethyne (C<sub>2</sub>H<sub>2</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      sp hybridization.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q31: What is the hybridization of Carbon in Ethene (C<sub>2</sub>H<sub>4</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      sp<sup>2</sup> hybridization.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q32: What is the hybridization of Carbon in Methane (CH<sub>4</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      sp<sup>3</sup> hybridization.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q33: What is the hybridization of Phosphorus in PCl<sub>5</sub>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      sp<sup>3</sup>d hybridization.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q34: What is the hybridization of Sulfur in SF<sub>6</sub>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      sp<sup>3</sup>d<sup>2</sup> hybridization.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q35: State the condition for formation of Molecular Orbitals by LCAO.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Combining atomic orbitals must have comparable energies, identical symmetry about the molecular axis, and maximum overlap.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q36: Write the formula for calculating Bond Order in MOT.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Bond Order = <sup>1</sup>/<sub>2</sub> (N<sub>b</sub> - N<sub>a</sub>).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q37: Why is Oxygen (O<sub>2</sub>) paramagnetic?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because its Molecular Orbital configuration contains two unpaired electrons in degenerate &pi;*2p<sub>x</sub> and &pi;*2p<sub>y</sub> antibonding orbitals.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q38: What is the bond order of N<sub>2</sub> molecule?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Bond Order = (10 - 4) / 2 = 3.0.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q39: Define Hydrogen Bond.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      An attractive electrostatic force between a hydrogen atom covalently bonded to F, O, or N, and another electronegative atom.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q40: Why does H<sub>2</sub>O have a higher boiling point than H<sub>2</sub>S?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Because water molecules form extensive intermolecular hydrogen bonds, whereas H<sub>2</sub>S forms only weak dipole-dipole attractions.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q26. Define Octet Rule and state 2 limitations.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Atoms combine to acquire 8 valence electrons.<br><b>Limitations:</b> 1. Incomplete octet (BF<sub>3</sub>), 2. Expanded octet (SF<sub>6</sub>).
+  <!-- SECTION B -->
+  <div style="background: linear-gradient(135deg, rgba(67, 160, 71, 0.15), rgba(46, 125, 50, 0.15)); border: 1.5px solid rgba(67, 160, 71, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION B: Short Answer (SA) Questions (2 &amp; 3 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q41 to Q80 &bull; Dipole Paradoxes, Fajans Applications, VBT Overlap &amp; Hydrogen Bonding</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q41: Explain the formation of an Ionic Bond with Calcium Oxide (CaO) as an example.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Calcium (Z = 20, [Ar] 4s<sup>2</sup>) transfers two valence electrons to Oxygen (Z = 8, 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup>). Ca forms Ca<sup>2+</sup> ([Ar]) and O forms O<sup>2-</sup> ([Ne]). The resulting Ca<sup>2+</sup> and O<sup>2-</sup> ions are held by strong electrostatic Coulombic forces in a crystalline cubic lattice: <b>Ca &rarr; Ca<sup>2+</sup> + 2e<sup>-</sup></b>, <b>O + 2e<sup>-</sup> &rarr; O<sup>2-</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q27. Define Formal Charge and write its formula.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Hypothetical charge on atom in Lewis structure: <b>Formal Charge = V - L - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span> B</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q42: Explain Lattice Enthalpy and describe how Born-Haber Cycle is used to determine it for NaCl.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Lattice enthalpy is the energy required to dissociate one mole of solid crystal into isolated gaseous ions: NaCl<sub>(s)</sub> &rarr; Na<sup>+</sup><sub>(g)</sub> + Cl<sup>-</sup><sub>(g)</sub>. The Born-Haber cycle uses Hess's law to relate it to measurable quantities: <b>&Delta;<sub>f</sub>H&deg; = &Delta;<sub>sub</sub>H(Na) + &Delta;<sub>i</sub>H(Na) + <sup>1</sup>/<sub>2</sub> &Delta;<sub>diss</sub>H(Cl<sub>2</sub>) + &Delta;<sub>eg</sub>H(Cl) - &Delta;<sub>lattice</sub>H</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q28. Why does H<sub>2</sub>O have a smaller bond angle (104.5°) than CH<sub>4</sub> (109.5°)?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      H<sub>2</sub>O has 2 lone pairs causing strong lp-lp repulsion that compresses H-O-H bond angle.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q43: Calculate the Formal Charge on each atom in the Carbonate ion (CO<sub>3</sub><sup>2-</sup>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In the Lewis structure of CO<sub>3</sub><sup>2-</sup>, carbon forms one double bond to O and two single bonds to O<sup>-</sup>.<br/>&bull; Carbon: FC = 4 - 0 - <sup>1</sup>/<sub>2</sub>(8) = <b>0</b>.<br/>&bull; Double-bonded Oxygen: FC = 6 - 4 - <sup>1</sup>/<sub>2</sub>(4) = <b>0</b>.<br/>&bull; Each Single-bonded Oxygen: FC = 6 - 6 - <sup>1</sup>/<sub>2</sub>(2) = <b>-1</b>.<br/>Total charge = 0 + 0 + (-1) + (-1) = -2.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q29. Explain why BF<sub>3</sub> is non-polar (μ = 0) while NF<sub>3</sub> is polar (μ = 0.23 D).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      BF<sub>3</sub> has symmetrical trigonal planar geometry where bond dipoles cancel; NF<sub>3</sub> has unsymmetrical pyramidal shape.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q44: Explain why the dipole moment of NH<sub>3</sub> (1.47 D) is much greater than that of NF<sub>3</sub> (0.24 D).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Both NH<sub>3</sub> and NF<sub>3</sub> have trigonal pyramidal geometries with one lone pair. In NH<sub>3</sub>, N is more electronegative than H; the three N-H bond dipoles point upward in the same direction as the lone pair dipole, reinforcing each other. In NF<sub>3</sub>, F is more electronegative than N; the three N-F bond dipoles point downward, opposing and largely canceling the lone pair dipole.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q30. State Fajans' Rules for covalent character in ionic bonds.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Covalent character increases with: 1. Small cation size, 2. Large anion size, 3. High charge on ions.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q45: Explain Fajans' Rules and predict which has higher covalent character: (a) LiCl or NaCl, (b) SnCl<sub>2</sub> or SnCl<sub>4</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fajans' rules state that smaller cations and higher charges polarize anions more effectively, increasing covalency.<br/>(a) <b style="color: #43A047;">LiCl &gt; NaCl:</b> Li<sup>+</sup> is much smaller than Na<sup>+</sup>, giving it higher polarizing power and greater covalent character.<br/>(b) <b style="color: #43A047;">SnCl<sub>4</sub> &gt; SnCl<sub>2</sub>:</b> Sn<sup>4+</sup> has a higher charge and smaller radius than Sn<sup>2+</sup>, polarizing Cl<sup>-</sup> ions more strongly.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q31. Distinguish between Sigma (σ) and Pi (π) bonds.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      <b>Sigma (σ):</b> Formed by axial end-to-end overlap (stronger).<br><b>Pi (π):</b> Formed by lateral sideways overlap (weaker).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q46: Why are axial bonds longer than equatorial bonds in PCl<sub>5</sub>?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In trigonal bipyramidal PCl<sub>5</sub>, each axial P-Cl bond pair experiences repulsion from three equatorial bond pairs at 90&deg; angles. Equatorial bond pairs experience repulsion from only two axial pairs at 90&deg;. To minimize this greater electrostatic repulsion, the axial bond pairs move farther away from the central P atom, making axial bonds (240 pm) longer and weaker than equatorial bonds (202 pm).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q32. What is Hybridization? State hybridization of Carbon in Diamond and Graphite.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Intermixing of atomic orbitals of comparable energy.<br>• Diamond = <b>sp<sup>3</sup></b> | Graphite = <b>sp<sup>2</sup></b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q47: Using VSEPR theory, predict the shape and bond angle of: (a) SO<sub>2</sub>, (b) ClF<sub>3</sub>, (c) XeF<sub>2</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (a) <b style="color: #43A047;">SO<sub>2</sub>:</b> 2 bond pairs + 1 lone pair (AB<sub>2</sub>E) &rArr; <b>Bent / Angular</b> (~119.5&deg;).<br/>(b) <b style="color: #43A047;">ClF<sub>3</sub>:</b> 3 bond pairs + 2 lone pairs (AB<sub>3</sub>E<sub>2</sub>) &rArr; <b>T-shaped</b> (lone pairs in equatorial positions).<br/>(c) <b style="color: #43A047;">XeF<sub>2</sub>:</b> 2 bond pairs + 3 lone pairs (AB<sub>2</sub>E<sub>3</sub>) &rArr; <b>Linear</b> (180&deg;, all 3 lone pairs in equatorial plane).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q33. Calculate bond order of Oxygen (O<sub>2</sub>) and Superoxide (O<sub>2</sub><sup>-</sup>) using MOT.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      • O<sub>2</sub> (16 e<sup>-</sup>): BO = (10-6)/2 = <b>2.0</b>.<br>• O<sub>2</sub><sup>-</sup> (17 e<sup>-</sup>): BO = (10-7)/2 = <b>1.5</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q48: Differentiate between a Sigma (&sigma;) bond and a Pi (&pi;) bond in four key respects.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. <b style="color: #43A047;">Overlap Mode:</b> &sigma; bond forms by coaxial (end-to-end) overlap; &pi; bond forms by lateral (sideways) overlap.<br/>2. <b style="color: #43A047;">Strength:</b> &sigma; bond is stronger due to greater overlap; &pi; bond is weaker.<br/>3. <b style="color: #43A047;">Rotation:</b> Free rotation around a &sigma; bond is possible; rotation around a &pi; bond is restricted.<br/>4. <b style="color: #43A047;">Existence:</b> &sigma; bond can exist independently; a &pi; bond exists only in conjunction with a &sigma; bond.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q34. Why is O<sub>2</sub> paramagnetic while N<sub>2</sub> is diamagnetic?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      O<sub>2</sub> has 2 unpaired electrons in degenerate π*2p MOs; N<sub>2</sub> has all electrons paired.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q49: Explain the hybridization and bonding in Ethene (C<sub>2</sub>H<sub>4</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Each carbon atom is sp<sup>2</sup> hybridized, forming 3 planar hybrid orbitals at 120&deg;. Two sp<sup>2</sup> orbitals overlap with 1s of H to form two C-H &sigma;-bonds. The third sp<sup>2</sup> orbital overlaps coaxially with the other carbon to form a C-C &sigma;-bond. The unhybridized 2p<sub>z</sub> orbital on each carbon overlaps laterally above and below the molecular plane to form one C-C &pi;-bond, producing a planar molecule with 5 &sigma; and 1 &pi; bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q35. Define Hydrogen Bonding. Differentiate Intermolecular and Intramolecular H-bonding.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Attraction between H bonded to F, O, N and lone pair of another F, O, N.<br>• <b>Intermolecular:</b> Between separate molecules.<br>• <b>Intramolecular:</b> Within same molecule.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q50: Explain the hybridization and bonding in Ethyne (C<sub>2</sub>H<sub>2</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Each carbon is sp hybridized, forming 2 linear hybrid orbitals at 180&deg;. One sp orbital forms a C-H &sigma;-bond with 1s of H; the other forms a C-C &sigma;-bond with the neighbouring carbon. Two unhybridized 2p orbitals (2p<sub>y</sub> and 2p<sub>z</sub>) on each carbon overlap laterally to form two mutually perpendicular &pi;-bonds, resulting in a linear molecule with a C&equiv;C triple bond (1 &sigma; + 2 &pi;).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q36. Why is axial P-Cl bond longer than equatorial P-Cl bond in PCl<sub>5</sub>?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Axial bonds experience three 90° repulsions from equatorial pairs, lengthening axial bonds to 2.19 Å vs 2.04 Å.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q51: Describe the hybridization of Phosphorus in PCl<sub>5</sub> and explain its thermal decomposition.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Phosphorus (3s<sup>2</sup> 3p<sup>3</sup>) promotes one 3s electron to 3d, undergoing sp<sup>3</sup>d hybridization to yield 5 hybrid orbitals with trigonal bipyramidal geometry. Because the two axial P-Cl bonds are longer and weaker than the three equatorial bonds, PCl<sub>5</sub> decomposes readily upon heating into PCl<sub>3</sub> and Cl<sub>2</sub> gas: <b>PCl<sub>5(s)</sub> &rarr; PCl<sub>3(l)</sub> + Cl<sub>2(g)</sub></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q37. Calculate formal charge on sulfur atom in Sulfate ion (SO<sub>4</sub><sup>2-</sup>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      FC = 6 - 0 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(12) = <b>0</b> (with 2 S=O and 2 S-O<sup>-</sup> bonds).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q52: Explain why the bond angles in CH<sub>4</sub>, NH<sub>3</sub>, and H<sub>2</sub>O are 109.5°, 107°, and 104.5° respectively, though all are sp<sup>3</sup> hybridized.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      All three central atoms have steric number 4 with sp<sup>3</sup> hybridization. In CH<sub>4</sub>, there are 4 bond pairs and 0 lone pairs; regular tetrahedral angle is 109.5&deg;. In NH<sub>3</sub>, 1 lone pair exerts stronger lp-bp repulsion, compressing bond angle to 107&deg;. In H<sub>2</sub>O, 2 lone pairs exert strong lp-lp and lp-bp repulsions, compressing the H-O-H bond angle further to 104.5&deg;.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q38. State geometry and shape of SF<sub>4</sub> molecule.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Geometry = Trigonal Bipyramidal | Shape = <b>See-saw</b> (1 lone pair at equatorial position).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q53: Explain the formation of Bonding and Antibonding Molecular Orbitals according to LCAO.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When atomic orbital wave functions &psi;<sub>A</sub> and &psi;<sub>B</sub> overlap:<br/>&bull; <b style="color: #43A047;">Bonding MO (&psi;<sub>B</sub> = &psi;<sub>A</sub> + &psi;<sub>B</sub>):</b> Constructive interference increases electron probability density between nuclei, lowering systemic potential energy and forming a stable bond.<br/>&bull; <b style="color: #43A047;">Antibonding MO (&psi;<sub>A</sub>* = &psi;<sub>A</sub> - &psi;<sub>B</sub>):</b> Destructive interference creates a nodal plane between nuclei where electron density is zero; nuclear repulsion raises energy above the parent AOs.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q39. Why does Ice float on water?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Ice forms open 3D cage-like H-bonded crystal lattice with larger volume and lower density than water.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q54: Write the MO electronic configuration of O<sub>2</sub> and determine its Bond Order and Magnetic Nature.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      O<sub>2</sub> (16 electrons): &sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup> &sigma;2s<sup>2</sup> &sigma;*2s<sup>2</sup> &sigma;2p<sub>z</sub><sup>2</sup> (&pi;2p<sub>x</sub><sup>2</sup> = &pi;2p<sub>y</sub><sup>2</sup>) (&pi;*2p<sub>x</sub><sup>1</sup> = &pi;*2p<sub>y</sub><sup>1</sup>).<br/>&bull; N<sub>b</sub> = 10, N<sub>a</sub> = 6.<br/>&bull; Bond Order = (10 - 6) / 2 = <b>2.0</b>.<br/>&bull; Contains two unpaired electrons in degenerate &pi;* antibonding orbitals, so O<sub>2</sub> is <b>paramagnetic</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q40. Write MO electronic configuration of Nitrogen molecule (N<sub>2</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      σ1s<sup>2</sup> σ*1s<sup>2</sup> σ2s<sup>2</sup> σ*2s<sup>2</sup> (π2p<sub>x</sub><sup>2</sup> = π2p<sub>y</sub><sup>2</sup>) σ2p<sub>z</sub><sup>2</sup>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q55: Compare the bond orders and relative stabilities of O<sub>2</sub>, O<sub>2</sub><sup>+</sup>, O<sub>2</sub><sup>-</sup>, and O<sub>2</sub><sup>2-</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      &bull; O<sub>2</sub><sup>+</sup> (15e<sup>-</sup>): BO = (10 - 5)/2 = <b>2.5</b>.<br/>&bull; O<sub>2</sub> (16e<sup>-</sup>): BO = (10 - 6)/2 = <b>2.0</b>.<br/>&bull; O<sub>2</sub><sup>-</sup> (17e<sup>-</sup>): BO = (10 - 7)/2 = <b>1.5</b>.<br/>&bull; O<sub>2</sub><sup>2-</sup> (18e<sup>-</sup>): BO = (10 - 8)/2 = <b>1.0</b>.<br/>Stability and Bond Energy order: <b>O<sub>2</sub><sup>+</sup> &gt; O<sub>2</sub> &gt; O<sub>2</sub><sup>-</sup> &gt; O<sub>2</sub><sup>2-</sup></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q41. Why does He<sub>2</sub> molecule not exist?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      He<sub>2</sub> has 2 bonding and 2 antibonding e<sup>-</sup> ⟶ Bond Order = (2-2)/2 = 0.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q56: Explain why He<sub>2</sub> molecule does not exist based on Molecular Orbital Theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      He<sub>2</sub> has 4 electrons: MO configuration is &sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup>. Here N<sub>b</sub> = 2 and N<sub>a</sub> = 2.<br/>Bond Order = <sup>1</sup>/<sub>2</sub> (N<sub>b</sub> - N<sub>a</sub>) = <sup>1</sup>/<sub>2</sub> (2 - 2) = <b>0</b>. A bond order of zero signifies no net bonding attraction, so He<sub>2</sub> cannot exist.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q42. What is resonance? Draw resonance structures of Carbonate ion (CO<sub>3</sub><sup>2-</sup>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Delocalization of electrons represented by multiple Lewis structures yielding a single resonance hybrid.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q57: Differentiate between Intermolecular and Intramolecular Hydrogen Bonding with suitable examples.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">Intermolecular:</b> Occurs between separate molecules of the same or different compounds (e.g., H<sub>2</sub>O, HF, NH<sub>3</sub>). Causes molecular association, elevating boiling points. <b style="color: #43A047;">Intramolecular:</b> Occurs within the same single molecule between a hydrogen atom and a nearby electronegative atom (e.g., o-nitrophenol, salicylaldehyde). Prevents intermolecular association, lowering boiling points and increasing steam-volatility.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q43. Explain why o-Nitrophenol is steam volatile while p-Nitrophenol is not.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      o-Nitrophenol forms intramolecular H-bonds (lower bp); p-Nitrophenol forms intermolecular H-bonds (higher bp).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q58: Explain why o-Nitrophenol is steam-volatile while p-Nitrophenol is not.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      o-Nitrophenol forms <b>intramolecular hydrogen bonding</b> (chelation) between its -OH and -NO<sub>2</sub> groups on the same benzene ring; this prevents association with other molecules, giving it a lower boiling point and steam-volatility. p-Nitrophenol cannot form intramolecular H-bonds due to steric distance; it forms extensive <b>intermolecular hydrogen bonds</b> linking separate molecules into large networks, resulting in a higher boiling point and non-volatility.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q44. Predict hybridization and shape of XeF<sub>2</sub>.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Hybridization = <b>sp<sup>3</sup>d</b> | Shape = <b>Linear</b> (3 lone pairs occupy equatorial positions).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q59: Why does ice float on water, and at what temperature is the density of water maximum?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In solid ice, water molecules form a rigid, highly open 3D tetrahedral cage lattice with extensive empty voids. When ice melts at 0&deg;C, the cage lattice collapses and water molecules pack closer together in the liquid state. Consequently, liquid water is denser than ice, allowing ice to float. Water reaches maximum density at <b>3.98&deg;C (4&deg;C)</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q45. Define Bond Length and Bond Enthalpy.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      <b>Bond Length:</b> Equilibrium internuclear distance.<br><b>Bond Enthalpy:</b> Energy required to break 1 mole of bonds.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q60: Explain Resonance and draw the resonating structures of Carbon Dioxide (CO<sub>2</sub>).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      When a single Lewis structure cannot adequately account for all properties of a molecule, the actual structure is represented as a resonance hybrid of two or more contributing canonical structures. For CO<sub>2</sub>: <b>:O&#773;=C=O&#773;: &harr; :O&equiv;C-O&#776;<sup>-</sup> &harr; <sup>-</sup>:O&#776;-C&equiv;O:</b>. The hybrid possesses equal C-O bond lengths (115 pm) intermediate between double and triple bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q46. Calculate bond order of CO molecule.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      CO (14 e<sup>-</sup>): BO = (10-4)/2 = <b>3.0</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q61: Draw the Lewis resonance structures of Ozone (O<sub>3</sub>) and calculate the average bond order.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Ozone resonates between two equivalent structures: <b>O=O<sup>+</sup>-O<sup>-</sup> &harr; <sup>-</sup>O-O<sup>+</sup>=O</b>. In the resonance hybrid, each bond has one &sigma; bond and half a &pi; bond: <b>Average Bond Order = (2 + 1) / 2 = 1.5</b>. Both O-O bond lengths are identical (128 pm), intermediate between single (148 pm) and double (121 pm) bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q47. Why is AlCl<sub>3</sub> covalent while AlF<sub>3</sub> is ionic?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Cl<sup>-</sup> is larger than F<sup>-</sup> and more easily polarized by Al<sup>3+</sup> cation (Fajans' rule).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q62: Explain why BF<sub>3</sub> is a Lewis acid and how its octet is completed in adduction with NH<sub>3</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In BF<sub>3</sub>, Boron is surrounded by only 6 valence electrons (3 bond pairs), leaving an incomplete octet and an empty 2p orbital. It acts as an electron-pair acceptor (Lewis acid). When mixed with Ammonia (:NH<sub>3</sub>) which has a lone pair, Nitrogen donates its lone pair into Boron's empty 2p orbital, forming a stable coordinate (dative) bond adduct: <b>F<sub>3</sub>B &larr; :NH<sub>3</sub></b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q48. State VSEPR shape of ClF<sub>3</sub> molecule.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Hybridization = sp<sup>3</sup>d | Shape = <b>T-shaped</b> (2 lone pairs at equatorial positions).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q63: Explain the difference between bonding and antibonding molecular orbitals in terms of probability density &psi;<sup>2</sup>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      For bonding MO (&psi;<sub>B</sub> = &psi;<sub>A</sub> + &psi;<sub>B</sub>), &psi;<sub>B</sub><sup>2</sup> = &psi;<sub>A</sub><sup>2</sup> + &psi;<sub>B</sub><sup>2</sup> + 2&psi;<sub>A</sub>&psi;<sub>B</sub>. The cross term 2&psi;<sub>A</sub>&psi;<sub>B</sub> increases electron probability density between the nuclei, shielding nuclear repulsion. For antibonding MO (&psi;<sub>A</sub>* = &psi;<sub>A</sub> - &psi;<sub>B</sub>), &psi;<sub>A</sub>*<sup>2</sup> = &psi;<sub>A</sub><sup>2</sup> + &psi;<sub>B</sub><sup>2</sup> - 2&psi;<sub>A</sub>&psi;<sub>B</sub>. The negative cross term depletes electron density between nuclei, creating a nodal plane.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q49. Why does NH<sub>3</sub> have a pyramidal shape while BF<sub>3</sub> is planar?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      NH<sub>3</sub> has 3 bp + 1 lp (sp<sup>3</sup> pyramidal); BF<sub>3</sub> has 3 bp + 0 lp (sp<sup>2</sup> trigonal planar).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q64: Calculate the dipole moment of a hypothetical molecule with 0.2 unit electronic charge separated by 1.0 &Aring;.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      q = 0.2 &times; (1.602 &times; 10<sup>-19</sup> C) = 3.204 &times; 10<sup>-20</sup> C.<br/>d = 1.0 &Aring; = 1.0 &times; 10<sup>-10</sup> m.<br/>&mu; = q &times; d = (3.204 &times; 10<sup>-20</sup>) &times; (1.0 &times; 10<sup>-10</sup>) = 3.204 &times; 10<sup>-30</sup> C m.<br/>In Debye: &mu; = (3.204 &times; 10<sup>-30</sup>) / (3.336 &times; 10<sup>-30</sup>) = <b>0.96 D</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q50. Calculate dipole moment of a non-polar linear molecule AB<sub>2</sub> (BeF<sub>2</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Net dipole moment <b>μ = 0 Debye</b> (two equal opposing B-A vectors cancel).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q65: Explain why the bond angle in H<sub>2</sub>S (92.1°) is much smaller than in H<sub>2</sub>O (104.5°).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      According to Bent's rule and Drago's rule, Oxygen in H<sub>2</sub>O is small and highly electronegative, utilizing sp<sup>3</sup> hybrid orbitals (104.5&deg;). In H<sub>2</sub>S, Sulfur is larger and less electronegative; the S-H bonding pairs occupy almost pure 3p orbitals directed at 90&deg; to minimize hybridization energy, while the lone pair resides in an almost unhybridized 3s orbital, giving an angle of 92.1&deg;.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q51. Distinguish between Bonding MO and Antibonding MO.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      <b>Bonding MO:</b> In-phase overlap, lower energy, holds nuclei together.<br><b>Antibonding MO:</b> Out-of-phase overlap, higher energy, repels nuclei.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q66: State the conditions required for maximum overlapping of atomic orbitals.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      1. Combining orbitals must have comparable energies.<br/>2. Combining orbitals must possess identical symmetry with respect to the internuclear axis (e.g., 2p<sub>z</sub> overlaps with 2p<sub>z</sub> along the z-axis).<br/>3. The orbitals must come sufficiently close together with proper spatial orientation.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q52. Why is HF a liquid while HCl is a gas at room temperature?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      HF forms strong intermolecular Hydrogen bonds; HCl forms weak dipole forces.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q67: Explain why N<sub>2</sub> has a higher bond dissociation enthalpy than O<sub>2</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In N<sub>2</sub>, the Bond Order is <b>3.0</b> (one &sigma; and two &pi; bonds) with all 10 valence electrons in bonding MOs (&sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup> &sigma;2s<sup>2</sup> &sigma;*2s<sup>2</sup> &pi;2p<sup>4</sup> &sigma;2p<sup>2</sup>), yielding &Delta;H = 945 kJ/mol. In O<sub>2</sub>, the Bond Order is only <b>2.0</b> with two antibonding electrons in &pi;*2p, yielding &Delta;H = 498 kJ/mol.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q53. Calculate number of sigma (σ) and pi (π) bonds in Ethyne (C<sub>2</sub>H<sub>2</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      C<sub>2</sub>H<sub>2</sub> (H-C≡C-H) has <b>3 σ bonds and 2 π bonds</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q68: Draw the Lewis structure of Nitric Acid (HNO<sub>3</sub>) and determine formal charges on all atoms.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Structure: H-O-N(=O)(&rarr;O).<br/>&bull; Hydrogen: FC = 0.<br/>&bull; Hydroxyl Oxygen: FC = 6 - 4 - <sup>1</sup>/<sub>2</sub>(4) = <b>0</b>.<br/>&bull; Central Nitrogen: FC = 5 - 0 - <sup>1</sup>/<sub>2</sub>(8) = <b>+1</b>.<br/>&bull; Double-bonded Oxygen: FC = 6 - 4 - <sup>1</sup>/<sub>2</sub>(4) = <b>0</b>.<br/>&bull; Single-bonded (coordinate) Oxygen: FC = 6 - 6 - <sup>1</sup>/<sub>2</sub>(2) = <b>-1</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q54. Why are metallic bonds malleable and ductile?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      Non-directional sea of delocalized valence electrons allows metal ions to slide over each other without breaking bonds.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q69: Why is AgCl insoluble in water while NaCl is readily soluble?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Na<sup>+</sup> has a stable noble gas configuration (2s<sup>2</sup> 2p<sup>6</sup>) with low polarizing power, forming a purely ionic lattice in NaCl that hydrates easily. Ag<sup>+</sup> has a pseudo-noble gas configuration (4d<sup>10</sup> 5s<sup>0</sup>) with high polarizing power, strongly polarizing Cl<sup>-</sup> according to Fajans' rules to impart substantial covalent character, drastically reducing its solubility in polar water.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q55. What is the bond order of NO molecule?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Answer:</b><br>
-      NO (15 e<sup>-</sup>): BO = (10-5)/2 = <b>2.5</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q70: Explain the term 'Isoelectronic' and write three ions isoelectronic with CO.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Isoelectronic species have identical total electron counts. Carbon Monoxide (CO) has 6 + 8 = <b>14 electrons</b>. Isoelectronic ions include: <b>N<sub>2</sub> (14e<sup>-</sup>), CN<sup>-</sup> (6 + 7 + 1 = 14e<sup>-</sup>), and NO<sup>+</sup> (7 + 8 - 1 = 14e<sup>-</sup>)</b>. All share identical Bond Order = 3.0.
     </div>
   </div>
-  <!-- SECTION C: SHORT ANSWER QUESTIONS (Q56 to Q85) -->
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION C: Short Answer Questions (Q56 to Q85)</h2>
-    <p style="color: #43A047; margin: 0; font-size: 14px;">30 Expected SA Questions • 3 Marks Each (22 Conceptual Theory + 8 Step Calculations)</p>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q71: Explain why Nitrogen cannot form NCl<sub>5</sub>, but Phosphorus readily forms PCl<sub>5</sub>.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Nitrogen belongs to Period 2 (n = 2) with valence configuration 2s<sup>2</sup> 2p<sup>3</sup>; it has no vacant d-orbitals and cannot expand its octet beyond 4 electron pairs. Phosphorus belongs to Period 3 (n = 3) and possesses accessible vacant 3d orbitals, allowing it to unpair 3s electrons and undergo sp<sup>3</sup>d hybridization to form PCl<sub>5</sub>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q72: Explain the geometry of SF<sub>4</sub> using VSEPR theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Sulfur has 6 valence electrons; in SF<sub>4</sub>, it forms 4 bond pairs and has 1 lone pair (steric number 5, sp<sup>3</sup>d). VSEPR geometry is trigonal bipyramidal. The lone pair occupies an equatorial position to minimize 90&deg; repulsions (experiencing only two 90&deg; repulsions instead of three if placed axially), producing a <b>See-Saw shape</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q73: Explain the geometry of XeF<sub>2</sub> using VSEPR theory.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Xenon has 8 valence electrons; in XeF<sub>2</sub>, it forms 2 bond pairs and has 3 lone pairs (steric number 5). All three lone pairs occupy equatorial positions at 120&deg; to cancel repulsions completely, leaving the two Fluorine atoms at axial positions at 180&deg;, yielding a strictly <b>Linear shape</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q74: Explain why the dipole moment of trans-1,2-dichloroethene is zero, but cis-1,2-dichloroethene has a non-zero dipole moment.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      In the trans-isomer, the two polar C-Cl bond dipoles point in opposite directions at 180&deg;, and the two C-H dipoles also point in opposite directions, canceling out completely (&mu; = 0 D). In the cis-isomer, both C-Cl dipoles lie on the same side of the double bond, reinforcing each other vectorially to produce a net dipole moment (&mu; = 1.90 D).
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q75: Explain the concept of Resonance Energy with Benzene as an example.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Resonance energy is the difference in energy between the actual resonance hybrid and the most stable canonical Lewis structure. For Benzene (C<sub>6</sub>H<sub>6</sub>), theoretical heat of hydrogenation of cyclohexatriene is -358.5 kJ/mol, while experimental heat of hydrogenation of benzene is only -208 kJ/mol. The difference of <b>150.5 kJ/mol (36 kcal/mol)</b> represents resonance stabilization energy.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q76: Why is HF a liquid at room temperature while HCl is a gas?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Fluorine is the most electronegative element with a tiny atomic radius. HF forms strong, extensive <b>intermolecular hydrogen bonds</b> (F-H&bull;&bull;&bull;F-H) associating molecules into zigzag liquid chains. In HCl, Chlorine is larger and less electronegative, forming only weak van der Waals forces that cannot prevent it from existing as a gas.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q77: Arrange the following in order of increasing bond angle: H<sub>2</sub>O, H<sub>2</sub>S, H<sub>2</sub>Se, H<sub>2</sub>Te.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      As the central atom size increases and electronegativity decreases from O to Te, bonding pairs move farther from the central nucleus, reducing bp-bp repulsion: <b>H<sub>2</sub>Te (90&deg;) &lt; H<sub>2</sub>Se (91&deg;) &lt; H<sub>2</sub>S (92.1&deg;) &lt; H<sub>2</sub>O (104.5&deg;)</b>.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q78: Explain why BeH<sub>2</sub> molecule has a zero dipole moment.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Beryllium in BeH<sub>2</sub> is sp hybridized with a linear geometry (H-Be-H bond angle 180&deg;). The two equal Be-H bond dipoles pull in directly opposite directions along the same line, resulting in a net dipole moment &mu; = 0.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q79: Explain the term 'Polarizability' of an anion in Fajans' rules.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Polarizability is the ease with which the electron cloud of an anion can be distorted from spherical symmetry by the electric field of an adjacent cation. Larger anions with more diffuse valence clouds (e.g., I<sup>-</sup> vs F<sup>-</sup>) are more easily polarized, increasing shared electron density and covalent character.
+    </div>
+  </div>
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q80: What is the total number of sigma and pi bonds in: (a) Benzene (C<sub>6</sub>H<sub>6</sub>), (b) Toluene (C<sub>7</sub>H<sub>8</sub>)?</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      (a) <b style="color: #43A047;">Benzene:</b> 6 C-C &sigma; + 6 C-H &sigma; = <b>12 &sigma; bonds</b>, and <b>3 &pi; bonds</b>.<br/>(b) <b style="color: #43A047;">Toluene:</b> 12 &sigma; (ring) + 3 &sigma; (methyl C-H) + 1 &sigma; (ring-methyl C-C) = <b>15 &sigma; bonds</b>, and <b>3 &pi; bonds</b>.
+    </div>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q56. Explain Kossel-Lewis approach to chemical bonding and detail 3 limitations of the Octet Rule.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Atoms combine to acquire noble gas octet.<br><b>Limitations:</b> 1. Incomplete octet (BF<sub>3</sub>). 2. Expanded octet (SF<sub>6</sub>). 3. Odd-electron species (NO).
+  <!-- SECTION C -->
+  <div style="background: linear-gradient(135deg, rgba(67, 160, 71, 0.15), rgba(46, 125, 50, 0.15)); border: 1.5px solid rgba(67, 160, 71, 0.4); border-radius: 12px; padding: 16px 20px; margin: 35px 0 24px 0;">
+    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 18.5px; font-weight: bold;">
+      SECTION C: Long Answer (LA) Questions (5 Marks Each)
+    </h2>
+    <p style="margin: 0; color: #CBD5E1; font-size: 14px;">Questions Q81 to Q100 &bull; Master VSEPR Derivations, Full MO Energy Diagrams &amp; Comprehensive Theory Proofs</p>
+  </div>
+  
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q81: Discuss VSEPR Theory comprehensively: Postulates, Repulsion Hierarchy, and Complete Derivation of Molecular Shapes for SN = 2, 3, 4, 5, 6, 7.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Core Postulates:</b> Valence shell electron pairs repel one another and adopt spatial arrangements minimizing repulsion. Repulsion hierarchy: <b>lp - lp &gt; lp - bp &gt; bp - bp</b>.<br/><br/><b style="color: #43A047;">2. Geometries without Lone Pairs:</b> SN=2 Linear (180&deg;, BeCl<sub>2</sub>); SN=3 Trigonal Planar (120&deg;, BF<sub>3</sub>); SN=4 Tetrahedral (109.5&deg;, CH<sub>4</sub>); SN=5 Trigonal Bipyramidal (equatorial 120&deg;, axial 90&deg;, PCl<sub>5</sub>); SN=6 Octahedral (90&deg;, SF<sub>6</sub>); SN=7 Pentagonal Bipyramidal (72&deg;, 90&deg;, IF<sub>7</sub>).<br/><br/><b style="color: #43A047;">3. Shapes with Lone Pairs:</b><br/>&bull; SN=4: AB<sub>3</sub>E Pyramidal (107&deg;, NH<sub>3</sub>); AB<sub>2</sub>E<sub>2</sub> Bent (104.5&deg;, H<sub>2</sub>O).<br/>&bull; SN=5: AB<sub>4</sub>E See-Saw (SF<sub>4</sub>, lp equatorial); AB<sub>3</sub>E<sub>2</sub> T-shaped (ClF<sub>3</sub>); AB<sub>2</sub>E<sub>3</sub> Linear (XeF<sub>2</sub>).<br/>&bull; SN=6: AB<sub>5</sub>E Square Pyramidal (BrF<sub>5</sub>); AB<sub>4</sub>E<sub>2</sub> Square Planar (XeF<sub>4</sub>, lp trans).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q57. Explain Lattice Enthalpy. List 3 favorable factors for ionic bond formation (NaCl).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Lattice enthalpy U is energy released forming crystal. Favorable: Low I.E. of metal, High negative E.G.H. of non-metal, High Lattice Energy.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q82: Explain Valence Bond Theory (VBT) and Orbital Overlap: Heitler-London Treatment, Potential Energy Diagram of H2, and Sigma vs Pi Overlap.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Heitler-London Treatment:</b> When two isolated H atoms approach from infinity, attractive forces (between nucleus of one and electron of other) and repulsive forces (between nuclei and between electrons) operate.<br/><br/><b style="color: #43A047;">2. Potential Energy Curve:</b> As internuclear distance decreases, attractive forces dominate and potential energy decreases to a minimum (-435.8 kJ/mol) at equilibrium bond distance r<sub>0</sub> = 74 pm. At distances &lt; 74 pm, nuclear repulsion dominates and potential energy rises sharply.<br/><br/><b style="color: #43A047;">3. Sigma (&sigma;) Overlap:</b> Coaxial overlap along internuclear axis (s-s, s-p, p-p). Symmetrical around bond axis with free rotation.<br/><br/><b style="color: #43A047;">4. Pi (&pi;) Overlap:</b> Lateral overlap of parallel p-orbitals. Produces nodal plane along internuclear axis with restricted rotation.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q58. Explain VSEPR Theory postulates and repulsion order: lp-lp > lp-bp > bp-bp. Explain shapes of NH<sub>3</sub> and H<sub>2</sub>O.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      lp occupies more space.<br>• NH<sub>3</sub> (3 bp + 1 lp): Pyramidal (107°).<br>• H<sub>2</sub>O (2 bp + 2 lp): Bent V-shape (104.5°).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q83: Discuss Hybridization in complete depth: Principles, Types (sp, sp2, sp3, sp3d, sp3d2), and Shapes of C2H2, C2H4, CH4, PCl5, and SF6.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Principles:</b> Atomic orbitals of same atom with similar energies mix to produce equivalent hybrid orbitals with maximum directional symmetry.<br/><br/><b style="color: #43A047;">2. Types &amp; Examples:</b><br/>&bull; <i>sp (Linear 180&deg;):</i> BeCl<sub>2</sub>, C<sub>2</sub>H<sub>2</sub> (each C has 1 &sigma; and 2 &pi; bonds).<br/>&bull; <i>sp<sup>2</sup> (Trigonal Planar 120&deg;):</i> BF<sub>3</sub>, C<sub>2</sub>H<sub>4</sub> (each C forms 3 &sigma; and 1 &pi; bond).<br/>&bull; <i>sp<sup>3</sup> (Tetrahedral 109.5&deg;):</i> CH<sub>4</sub> (4 equivalent C-H &sigma; bonds).<br/>&bull; <i>sp<sup>3</sup>d (Trigonal Bipyramidal):</i> PCl<sub>5</sub> (3 equatorial 120&deg; bonds, 2 longer axial 90&deg; bonds).<br/>&bull; <i>sp<sup>3</sup>d<sup>2</sup> (Octahedral 90&deg;):</i> SF<sub>6</sub> (6 equivalent S-F bonds).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q59. Explain Valence Bond Theory (VBT). Compare Sigma (σ) and Pi (π) bonds with orbital overlap diagrams.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      σ-bond: Axial head-on overlap (s-s, s-p, p<sub>z</sub>-p<sub>z</sub>). π-bond: Lateral parallel overlap (p<sub>x</sub>-p<sub>x</sub>). σ is stronger.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q84: Explain Molecular Orbital Theory (MOT) in full detail: Postulates, LCAO Method, Bonding vs Antibonding MOs, and Symmetry Rules.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Postulates:</b> Electrons reside in polycentric molecular orbitals formed by linear combination of atomic orbitals. Total MOs formed = Total combining AOs.<br/><br/><b style="color: #43A047;">2. LCAO Principles:</b> Wave functions combine as &psi;<sub>MO</sub> = c<sub>A</sub>&psi;<sub>A</sub> &plusmn; c<sub>B</sub>&psi;<sub>B</sub>.<br/>&bull; <i>Bonding MO (&psi;<sub>B</sub> = &psi;<sub>A</sub> + &psi;<sub>B</sub>):</i> Constructive interference increases electron probability between nuclei, lowering energy.<br/>&bull; <i>Antibonding MO (&psi;<sub>A</sub>* = &psi;<sub>A</sub> - &psi;<sub>B</sub>):</i> Destructive interference creates a nodal plane between nuclei, raising energy.<br/><br/><b style="color: #43A047;">3. Symmetry Rules:</b> Only AOs with same symmetry about internuclear axis can combine (e.g., 2s with 2s; 2p<sub>z</sub> with 2p<sub>z</sub> form &sigma; MOs; 2p<sub>x</sub> and 2p<sub>y</sub> form &pi; MOs).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q60. Explain Hybridization. Detail sp, sp<sup>2</sup>, and sp<sup>3</sup> hybridization with examples (C<sub>2</sub>H<sub>2</sub>, C<sub>2</sub>H<sub>4</sub>, CH<sub>4</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Intermixing of atomic orbitals.<br>• sp: Linear (180°, C<sub>2</sub>H<sub>2</sub>).<br>• sp<sup>2</sup>: Trigonal planar (120°, C<sub>2</sub>H<sub>4</sub>).<br>• sp<sup>3</sup>: Tetrahedral (109.5°, CH<sub>4</sub>).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q85: Construct and compare the Molecular Orbital Diagrams for N2 and O2: Electronic configurations, Bond Orders, and Magnetic Properties.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. N<sub>2</sub> (14e<sup>-</sup>, with sp-mixing):</b><br/>Configuration: &sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup> &sigma;2s<sup>2</sup> &sigma;*2s<sup>2</sup> (&pi;2p<sub>x</sub><sup>2</sup> = &pi;2p<sub>y</sub><sup>2</sup>) &sigma;2p<sub>z</sub><sup>2</sup>.<br/>Bond Order = <sup>1</sup>/<sub>2</sub> (10 - 4) = <b>3.0 (Triple bond)</b>. All electrons paired &rArr; <b>Diamagnetic</b>.<br/><br/><b>2. O<sub>2</sub> (16e<sup>-</sup>, without sp-mixing):</b><br/>Configuration: &sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup> &sigma;2s<sup>2</sup> &sigma;*2s<sup>2</sup> &sigma;2p<sub>z</sub><sup>2</sup> (&pi;2p<sub>x</sub><sup>2</sup> = &pi;2p<sub>y</sub><sup>2</sup>) (&pi;*2p<sub>x</sub><sup>1</sup> = &pi;*2p<sub>y</sub><sup>1</sup>).<br/>Bond Order = <sup>1</sup>/<sub>2</sub> (10 - 6) = <b>2.0 (Double bond)</b>. Contains two unpaired electrons in &pi;* degenerate orbitals &rArr; <b>Paramagnetic</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q61. Explain Molecular Orbital Theory (MOT). Define Bonding MO (Ψ<sub>B</sub>) and Antibonding MO (Ψ<sub>A</sub>*).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Atomic orbitals combine by LCAO.<br>• Ψ<sub>B</sub> = Ψ<sub>A</sub> + Ψ<sub>B</sub> (constructive, lower energy).<br>• Ψ<sub>A</sub>* = Ψ<sub>A</sub> - Ψ<sub>B</sub> (destructive, higher energy).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q86: Discuss Hydrogen Bonding in exhaustive detail: Conditions, Types (Inter vs Intra), Physical Consequences on boiling points, solubility, and ice structure.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Requirements:</b> Hydrogen atom bonded to small, highly electronegative atom (F, O, N) with lone pairs.<br/><br/><b style="color: #43A047;">2. Types:</b><br/>&bull; <i>Intermolecular:</i> Between separate molecules (H<sub>2</sub>O, HF, NH<sub>3</sub>), elevating boiling points and viscosities.<br/>&bull; <i>Intramolecular:</i> Within same molecule (o-nitrophenol), lowering boiling point and enhancing volatility.<br/><br/><b style="color: #43A047;">3. Physical Consequences:</b><br/>&bull; <i>Water vs H<sub>2</sub>S:</i> H<sub>2</sub>O is liquid at room temp (bp 100&deg;C); H<sub>2</sub>S is gas (bp -60&deg;C).<br/>&bull; <i>Ice Density:</i> Tetrahedral open-cage lattice creates empty voids. Upon melting at 0&deg;C, cage collapses, increasing density (maximum at 4&deg;C), allowing aquatic life survival.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q62. Draw MO energy level diagram of Oxygen (O<sub>2</sub>) and explain why O<sub>2</sub> is paramagnetic.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      O<sub>2</sub> (16 e<sup>-</sup>) configuration: σ1s<sup>2</sup> σ*1s<sup>2</sup> σ2s<sup>2</sup> σ*2s<sup>2</sup> σ2p<sub>z</sub><sup>2</sup> (π2p<sub>x</sub><sup>2</sup>=π2p<sub>y</sub><sup>2</sup>) (π*2p<sub>x</sub><sup>1</sup>=π*2p<sub>y</sub><sup>1</sup>). 2 unpaired e<sup>-</sup> make it <b>PARAMAGNETIC</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q87: Explain Fajans' Rules in comprehensive depth: Factors governing polarization, percentage covalent character, and effects on melting points and solubilities.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Factors:</b><br/>&bull; <i>Cation Size:</i> Smaller cation &rArr; higher polarizing power (LiCl &gt; NaCl).<br/>&bull; <i>Anion Size:</i> Larger anion &rArr; higher polarizability (AgI &gt; AgBr &gt; AgCl &gt; AgF).<br/>&bull; <i>Charge:</i> Higher ionic charges increase polarization (SnCl<sub>4</sub> &gt; SnCl<sub>2</sub>, AlCl<sub>3</sub> &gt; MgCl<sub>2</sub> &gt; NaCl).<br/>&bull; <i>Electronic Configuration:</i> Cations with pseudo-noble gas core ((n-1)d<sup>10</sup>ns<sup>0</sup>) polarize more effectively than noble gas cores (CuCl &gt; NaCl).<br/><br/><b style="color: #43A047;">2. Physical Manifestations:</b> Covalency lowers melting points and decreases solubility in polar solvents like water.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q63. Explain Hydrogen Bonding. Detail Intermolecular vs Intramolecular H-bonding with boiling point consequences.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      H bonded to F, O, N attracted to lone pair.<br>• Intermolecular (H<sub>2</sub>O, HF): Abnormally high boiling points.<br>• Intramolecular (o-Nitrophenol): Lower bp, steam volatile.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q88: Explain Dipole Moment (&mu;) in polyatomic molecules: Vector addition, symmetrical cancellation, and determination of cis-trans isomerism.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Vector Nature:</b> Net dipole moment &mu;<sub>net</sub> = &radic;[&mu;<sub>1</sub><sup>2</sup> + &mu;<sub>2</sub><sup>2</sup> + 2&mu;<sub>1</sub>&mu;<sub>2</sub> cos &theta;].<br/><br/><b style="color: #43A047;">2. Symmetrical Cancellation:</b> Highly symmetrical structures (linear BeF<sub>2</sub>, trigonal planar BF<sub>3</sub>, tetrahedral CCl<sub>4</sub>) have individual bond moments that cancel vectorially, giving &mu;<sub>net</sub> = 0 D.<br/><br/><b style="color: #43A047;">3. Cis-Trans Distinction:</b> In trans-1,2-dichloroethene, opposing bond vectors cancel (&mu; = 0 D); in cis-isomer, dipoles reinforce (&mu; = 1.90 D). Provides definitive spectroscopic identification of geometrical isomers.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q64. Explain Fajans' Rules for covalent character in ionic compounds. Rank Covalent Character: LiF, LiCl, LiBr, LiI.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Covalent character increases with small cation, large anion, high charge.<br><b>LiF < LiCl < LiBr < LiI</b> (I<sup>-</sup> is largest, most polarisable).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q89: Analyze the Molecular Orbital configurations and relative stabilities of all species of the Nitrogen system: N2, N2+, N2-, N2(2-).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. N<sub>2</sub> (14e<sup>-</sup>):</b> BO = (10 - 4)/2 = <b>3.0</b> (Diamagnetic). Highest bond energy (945 kJ/mol).<br/><b>2. N<sub>2</sub><sup>+</sup> (13e<sup>-</sup>):</b> BO = (9 - 4)/2 = <b>2.5</b> (Paramagnetic, 1 unpaired e<sup>-</sup> in &sigma;2p<sub>z</sub>).<br/><b>3. N<sub>2</sub><sup>-</sup> (15e<sup>-</sup>):</b> BO = (10 - 5)/2 = <b>2.5</b> (Paramagnetic, 1 unpaired e<sup>-</sup> in &pi;*2p).<br/><b>4. N<sub>2</sub><sup>2-</sup> (16e<sup>-</sup>):</b> BO = (10 - 6)/2 = <b>2.0</b> (Paramagnetic, 2 unpaired e<sup>-</sup> in &pi;*2p).<br/>Stability order: <b>N<sub>2</sub> &gt; N<sub>2</sub><sup>+</sup> &gt; N<sub>2</sub><sup>-</sup> &gt; N<sub>2</sub><sup>2-</sup></b> (N<sub>2</sub><sup>+</sup> is slightly more stable than N<sub>2</sub><sup>-</sup> because N<sub>2</sub><sup>-</sup> has an extra destabilizing antibonding electron).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q65. Explain Dipole Moment (μ = q × r). Why is CO<sub>2</sub> non-polar (μ = 0) while SO<sub>2</sub> is polar (μ = 1.6 D)?</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      CO<sub>2</sub> is linear O=C=O (opposing dipoles cancel); SO<sub>2</sub> is bent due to lone pair (dipoles reinforce).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q90: Explain the concept of Resonance: Conditions, Resonance Hybrid, Stability, and complete canonical structures of CO3(2-), NO3(-), and SO4(2-).</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Definition:</b> Phenomenon where two or more non-equivalent Lewis structures combine to represent a molecule.<br/><br/><b style="color: #43A047;">2. Canonical Structures:</b><br/>&bull; <i>CO<sub>3</sub><sup>2-</sup>:</i> Three equivalent canonical structures where C=O double bond alternates among three oxygen atoms. All C-O bonds are identical (129 pm, BO = 1.33).<br/>&bull; <i>NO<sub>3</sub><sup>-</sup>:</i> Three equivalent structures with identical N-O bonds (BO = 1.33).<br/>&bull; <i>SO<sub>4</sub><sup>2-</sup>:</i> Six equivalent structures with expanded sulfur octet, yielding average S-O bond order of 1.5.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q66. Calculate formal charges on all 3 Oxygen atoms in Ozone (O<sub>3</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      • Central O(1): 6 - 2 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(6) = <b>+1</b>.<br>• Double bonded O(2): 6 - 4 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(4) = <b>0</b>.<br>• Single bonded O(3): 6 - 6 - <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1</span><span style="display:block; padding:0 4px;">2</span></span>(2) = <b>-1</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q91: Discuss the Electronic Structures and Geometries of Noble Gas Fluorides and Oxides: XeF2, XeF4, XeF6, XeOF4, XeO3.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. XeF<sub>2</sub>:</b> Steric No = 5 (2 bp, 3 lp) &rArr; sp<sup>3</sup>d hybridization; <b>Linear geometry</b> (180&deg;).<br/><b>2. XeF<sub>4</sub>:</b> Steric No = 6 (4 bp, 2 lp) &rArr; sp<sup>3</sup>d<sup>2</sup> hybridization; <b>Square Planar geometry</b> (90&deg;).<br/><b>3. XeF<sub>6</sub>:</b> Steric No = 7 (6 bp, 1 lp) &rArr; sp<sup>3</sup>d<sup>3</sup> hybridization; <b>Distorted Octahedral geometry</b>.<br/><b>4. XeOF<sub>4</sub>:</b> Steric No = 6 (5 bp, 1 lp) &rArr; sp<sup>3</sup>d<sup>2</sup> hybridization; <b>Square Pyramidal geometry</b>.<br/><b>5. XeO<sub>3</sub>:</b> Steric No = 4 (3 bp, 1 lp) &rArr; sp<sup>3</sup> hybridization; <b>Trigonal Pyramidal geometry</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q67. Explain why PCl<sub>5</sub> undergoes sp<sup>3</sup>d hybridization and why axial P-Cl bonds are longer than equatorial bonds.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      P uses 3s 3p<sub>x</sub> 3p<sub>y</sub> 3p<sub>z</sub> 3d<sub>z<sup>2</sup></sub>. Axial P-Cl (2.19 Å) experience three 90° repulsions vs two 90° for equatorial (2.04 Å).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q92: Compare Valence Bond Theory (VBT) and Molecular Orbital Theory (MOT) in an exhaustive comparative matrix.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Electrons:</b> VBT treats electrons as localized in atomic orbitals; MOT treats electrons as delocalized in polycentric molecular orbitals.<br/><b style="color: #43A047;">2. Overlap:</b> VBT involves overlap of valence AOs; MOT combines all AOs of comparable energy via LCAO.<br/><b style="color: #43A047;">3. Paramagnetism:</b> VBT cannot explain the paramagnetism of O<sub>2</sub> (predicts all paired electrons); MOT naturally explains O<sub>2</sub> paramagnetism via unpaired &pi;* electrons.<br/><b style="color: #43A047;">4. Resonating Concepts:</b> VBT requires resonance to explain bond equivalency; MOT explains fractional bond orders directly without resonance.<br/><b style="color: #43A047;">5. Bond Existence:</b> VBT cannot explain one-electron bonds (H<sub>2</sub><sup>+</sup>); MOT easily predicts stability of H<sub>2</sub><sup>+</sup> (BO = 0.5).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q68. Calculate bond order and magnetic behavior of: (a) O<sub>2</sub><sup>+</sup>, (b) O<sub>2</sub><sup>-</sup>, (c) O<sub>2</sub><sup>2-</sup>.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      (a) O<sub>2</sub><sup>+</sup> (15 e<sup>-</sup>): BO = (10-5)/2 = <b>2.5</b> (Paramagnetic).<br>(b) O<sub>2</sub><sup>-</sup> (17 e<sup>-</sup>): BO = (10-7)/2 = <b>1.5</b> (Paramagnetic).<br>(c) O<sub>2</sub><sup>2-</sup> (18 e<sup>-</sup>): BO = (10-8)/2 = <b>1.0</b> (Diamagnetic).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q93: Explain the bonding and structure of Diborane (B2H6): 3-Center 2-Electron (3c-2e) Banana Bonds.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Diborane has 12 valence electrons, insufficient for 7 regular 2c-2e bonds. Each boron is sp<sup>3</sup> hybridized. Four terminal B-H bonds are conventional 2-center 2-electron &sigma;-bonds lying in one plane. The two central bridging hydrogen atoms lie above and below the plane. Each bridge bond involves overlap of one sp<sup>3</sup> hybrid orbital from each Boron and the 1s orbital of Hydrogen, forming a <b>3-center 2-electron (3c-2e) Banana Bond</b>. Reduces electron deficiency.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q69. Explain why NH<sub>3</sub> has higher dipole moment (1.47 D) than NF<sub>3</sub> (0.23 D) using vector diagrams.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      In NH<sub>3</sub>, N-H bond dipoles reinforce lone pair dipole. In NF<sub>3</sub>, N-F bond dipoles oppose lone pair dipole.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q94: Explain the anomalous properties of second-period fluorides and hydrides due to Hydrogen Bonding.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Hydrogen fluoride (HF) exhibits anomalous behavior compared to HCl, HBr, and HI due to intense hydrogen bonding: (1) Liquid at room temperature (bp 19.5&deg;C vs -85&deg;C for HCl). (2) Weak acid in dilute aqueous solution due to high H-F bond enthalpy and strong H-bonding. (3) Forms stable bifluoride salts like KHF<sub>2</sub> containing the symmetrical [F-H&bull;&bull;&bull;F]<sup>-</sup> linear ion, which no other halogen can form.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q70. Explain hybridization, geometry, and shape of SF<sub>6</sub> and IF<sub>7</sub>.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      • SF<sub>6</sub>: <b>sp<sup>3</sup>d<sup>2</sup></b>, Octahedral (90°).<br>• IF<sub>7</sub>: <b>sp<sup>3</sup>d<sup>3</sup></b>, Pentagonal Bipyramidal (72° and 90°).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q95: Explain the Variation of Bond Order, Bond Length, and Bond Energy across the Homonuclear Diatomic Series of Period 2: Li2 to F2.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Using MOT configurations:<br/>&bull; Li<sub>2</sub> (6e<sup>-</sup>): BO = 1, BL = 267 pm, BE = 110 kJ/mol.<br/>&bull; Be<sub>2</sub> (8e<sup>-</sup>): BO = 0 (Does not exist).<br/>&bull; B<sub>2</sub> (10e<sup>-</sup>): BO = 1, BL = 159 pm, BE = 290 kJ/mol.<br/>&bull; C<sub>2</sub> (12e<sup>-</sup>): BO = 2, BL = 124 pm, BE = 602 kJ/mol (two &pi; bonds).<br/>&bull; N<sub>2</sub> (14e<sup>-</sup>): BO = 3, BL = 110 pm, BE = 945 kJ/mol (maximum stability).<br/>&bull; O<sub>2</sub> (16e<sup>-</sup>): BO = 2, BL = 121 pm, BE = 498 kJ/mol.<br/>&bull; F<sub>2</sub> (18e<sup>-</sup>): BO = 1, BL = 142 pm, BE = 155 kJ/mol.<br/>Proves: <b>Higher Bond Order &rArr; Shorter Bond Length &amp; Higher Bond Energy</b>.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q71. Explain why BeCl<sub>2</sub> is linear in vapor phase but forms polymeric chains in solid state.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      In vapor phase, BeCl<sub>2</sub> is monomeric sp linear. In solid state, Be expands octet via dative coordinate bonds to form polymeric (BeCl<sub>2</sub>)<sub>n</sub> chains.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q96: Explain the hybridization and shapes of Phosphorus Halides: PCl3, PCl5, and the solid-state structure of PCl5.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b>1. PCl<sub>3</sub>:</b> Phosphorus is sp<sup>3</sup> hybridized with 3 bond pairs and 1 lone pair &rArr; <b>Trigonal Pyramidal</b> (bond angle ~100&deg;).<br/><b>2. PCl<sub>5(g)</sub>:</b> Phosphorus is sp<sup>3</sup>d hybridized with 5 bond pairs &rArr; <b>Trigonal Bipyramidal</b> (axial bonds longer than equatorial).<br/><b>3. PCl<sub>5(s)</sub> in Solid State:</b> Exists as an ionic crystal lattice composed of tetrahedral cations and octahedral anions: <b>[PCl<sub>4</sub>]<sup>+</sup> [PCl<sub>6</sub>]<sup>-</sup></b>. [PCl<sub>4</sub>]<sup>+</sup> is sp<sup>3</sup> tetrahedral; [PCl<sub>6</sub>]<sup>-</sup> is sp<sup>3</sup>d<sup>2</sup> octahedral.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q72. Calculate total number of σ and π bonds in: (a) Benzene (C<sub>6</sub>H<sub>6</sub>), (b) Propa-1,2-diene (CH<sub>2</sub>=C=CH<sub>2</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      (a) Benzene: <b>12 σ bonds and 3 π bonds</b>.<br>(b) Propa-1,2-diene: <b>6 σ bonds and 2 π bonds</b>.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q97: Discuss the concept of Metallic Bonding: Electron Sea Model vs Band Theory of Conductors, Semiconductors, and Insulators.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Electron Sea Model (Drude-Lorentz):</b> Metal consists of fixed positive kernels (cations) immersed in a sea of delocalized, mobile valence electrons. Explains electrical conductivity, thermal conductivity, metallic lustre, and malleability.<br/><br/><b style="color: #43A047;">2. Band Theory:</b> Molecular orbitals merge into continuous energy bands.<br/>&bull; <i>Conductors:</i> Valence band and conduction band overlap or conduction band is partially filled; electrons flow freely.<br/>&bull; <i>Insulators:</i> Large forbidden energy gap (&Delta;E &gt; 3 eV) between valence and conduction band; electrons cannot cross.<br/>&bull; <i>Semiconductors:</i> Small band gap (&Delta;E &lt; 1.5 eV); thermal energy promotes electrons, increasing conductivity with temperature.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q73. Explain why liquid water has maximum density at 4 °C (39.2 °F).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Heating ice from 0 to 4 °C breaks open H-bonded cage structures, collapsing water molecules closer together (maximum density at 4 °C).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q98: Explain Bent's Rule and its application in predicting molecular geometries and bond angles.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      Formulated by Henry Bent: <i>'More electronegative substituents prefer hybrid orbitals having less s-character (more p-character), whereas more electropositive substituents and lone pairs prefer hybrid orbitals having more s-character.'</i><br/>&bull; <b style="color: #43A047;">Application in PCl<sub>3</sub>F<sub>2</sub>:</b> More electronegative Fluorine atoms occupy the axial positions (sp<sup>3</sup>d axial orbitals have pure p-d character with 0% s-character), while less electronegative Chlorine atoms occupy equatorial positions (sp<sup>2</sup> with 33.3% s-character).
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q74. Compare MOT bond orders of B<sub>2</sub>, C<sub>2</sub>, N<sub>2</sub>, O<sub>2</sub>, F<sub>2</sub>.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      • B<sub>2</sub> (BO=1) < C<sub>2</sub> (BO=2) < N<sub>2</sub> (BO=3) > O<sub>2</sub> (BO=2) > F<sub>2</sub> (BO=1).
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q99: Explain the formation of Coordinate (Dative) Covalent Bonds with complete examples: NH4(+), H3O(+), and coordination complexes.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      A coordinate bond is a covalent bond in which the shared electron pair is contributed entirely by one of the bonding atoms (the donor, which possesses a lone pair) and accepted by an atom with an empty orbital (the acceptor).<br/>1. <b>Ammonium ion (NH<sub>4</sub><sup>+</sup>):</b> NH<sub>3</sub> donates its nitrogen lone pair to an empty 1s orbital of H<sup>+</sup>: <b>H<sub>3</sub>N: &rarr; H<sup>+</sup></b>.<br/>2. <b>Hydronium ion (H<sub>3</sub>O<sup>+</sup>):</b> H<sub>2</sub>O donates an oxygen lone pair to H<sup>+</sup>: <b>H<sub>2</sub>O: &rarr; H<sup>+</sup></b>.<br/>Once formed, coordinate bonds are identical in length, energy, and polarity to regular covalent bonds.
     </div>
   </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q75. Explain why C-O bond lengths in Carbonate ion (CO<sub>3</sub><sup>2-</sup>) are all equal (1.29 Å).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Resonance hybrid of 3 equivalent canonical structures averages the double bond across all 3 C-O bonds.
+  <div style="background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 16px 18px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
+    <h3 style="color: #43A047; margin: 0 0 10px 0; font-size: 16.5px; font-weight: bold;">Q100: Construct an exhaustive Master Synthesis Matrix correlating Lewis Theory, VSEPR Geometry, Hybridization, and MOT Configurations.</h3>
+    <div style="color: #E2E8F0; font-size: 14.5px; line-height: 1.65;">
+      <b style="color: #43A047;">1. Lewis Theory:</b> Octet rule, valence dot structures, formal charges (FC = V - L - <sup>1</sup>/<sub>2</sub>S), and covalent parameters.<br/><br/><b style="color: #43A047;">2. VSEPR Theory:</b> Repulsion hierarchy (lp-lp &gt; lp-bp &gt; bp-bp) determines 3D shapes: Linear (AB<sub>2</sub>), Trigonal Planar (AB<sub>3</sub>), Tetrahedral (AB<sub>4</sub>), Pyramidal (AB<sub>3</sub>E), Bent (AB<sub>2</sub>E<sub>2</sub>), Trigonal Bipyramidal (AB<sub>5</sub>), See-Saw (AB<sub>4</sub>E), T-shaped (AB<sub>3</sub>E<sub>2</sub>), Octahedral (AB<sub>6</sub>), Square Planar (AB<sub>4</sub>E<sub>2</sub>).<br/><br/><b style="color: #43A047;">3. Hybridization:</b> Steric Number = <sup>1</sup>/<sub>2</sub>[V + M - C + A] &rArr; sp (180&deg;), sp<sup>2</sup> (120&deg;), sp<sup>3</sup> (109.5&deg;), sp<sup>3</sup>d (90&deg;/120&deg;), sp<sup>3</sup>d<sup>2</sup> (90&deg;).<br/><br/><b style="color: #43A047;">4. MOT:</b> LCAO forms bonding and antibonding orbitals; Bond Order = <sup>1</sup>/<sub>2</sub>(N<sub>b</sub> - N<sub>a</sub>); explains bond stability and paramagnetism (O<sub>2</sub>, B<sub>2</sub>).<br/><br/><b style="color: #43A047;">5. Secondary Forces:</b> Intermolecular and intramolecular Hydrogen bonding dictate anomalous physical constants of water, ice, and biomolecules.
     </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q76. Explain why CuCl is more covalent than NaCl even though Cu<sup>+</sup> and Na<sup>+</sup> have similar radii.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Cu<sup>+</sup> has pseudo-noble gas configuration (3d<sup>10</sup>), which lacks shielding power and exerts higher polarising power on Cl<sup>-</sup>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q77. Calculate percentage ionic character of HCl bond if bond length is 1.275 Å and measured dipole moment is 1.03 D.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      μ<sub>ionic</sub> = e × r = 4.8×10<sup>-10</sup> esu × 1.275×10<sup>-8</sup> cm = 6.12 D.<br>% Ionic = <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">1.03</span><span style="display:block; padding:0 4px;">6.12</span></span> × 100 = <b>16.83% Ionic (83.17% Covalent!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q78. Explain why NO<sub>2</sub> dimerizes to form N<sub>2</sub>O<sub>4</sub> gas.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      NO<sub>2</sub> has an odd unpaired electron on Nitrogen; dimerization pairs up the odd electrons to form a stable N-N bond.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q79. Explain VSEPR shape of XeF<sub>4</sub> (Square Planar) with 2 lone pairs.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Xe has 8 valence e<sup>-</sup> + 4 F = 12 e<sup>-</sup> (6 pairs: 4 bp + 2 lp ⟶ sp<sup>3</sup>d<sup>2</sup>). Lone pairs occupy axial positions to minimize repulsions.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q80. Explain why B<sub>2</sub> molecule is paramagnetic with 2 unpaired electrons.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      MO configuration of B<sub>2</sub> (10 e<sup>-</sup>): σ1s<sup>2</sup> σ*1s<sup>2</sup> σ2s<sup>2</sup> σ*2s<sup>2</sup> (π2p<sub>x</sub><sup>1</sup> = π2p<sub>y</sub><sup>1</sup>). 2 unpaired e<sup>-</sup> in π2p MOs.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q81. Explain why glycerol is viscous while ethanol is a mobile liquid.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Glycerol [CH<sub>2</sub>OH-CHOH-CH<sub>2</sub>OH] has 3 -OH groups forming an extensive 3D network of intermolecular H-bonds.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q82. Calculate bond order of C<sub>2</sub> molecule and explain why C<sub>2</sub> consists of TWO PI BONDS.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      C<sub>2</sub> (12 e<sup>-</sup>): (π2p<sub>x</sub><sup>2</sup> = π2p<sub>y</sub><sup>2</sup>). Both valence pairs are in π MOs, so C<sub>2</sub> has <b>BO = 2 (2 π-bonds!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q83. Explain why SnCl<sub>4</sub> is liquid while SnCl<sub>2</sub> is solid.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Sn<sup>4+</sup> has higher charge and polarising power than Sn<sup>2+</sup>, making SnCl<sub>4</sub> covalent (liquid) and SnCl<sub>2</sub> ionic (solid).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q84. Predict geometry, hybridization, and dipole moment of Carbon Tetrachloride (CCl<sub>4</sub>).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Hybridization = <b>sp<sup>3</sup></b> | Geometry = <b>Tetrahedral</b> | Dipole Moment = <b>μ = 0 Debye</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
-    <p style="margin: 0 0 6px 0;"><b style='color: #43A047;'>Q85. Explain why boiling point of H<sub>2</sub>O (100 °C) is much higher than H<sub>2</sub>S (-60 °C).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); border-left: 3px solid #43A047; padding: 10px 12px; border-radius: 4px;">
-      <b style='color: #43A047;'>Detailed Solution:</b><br>
-      Oxygen is small and highly electronegative, forming strong intermolecular H-bonds in H<sub>2</sub>O; H<sub>2</sub>S forms weak dipole forces.
-    </div>
-  </div>
-  <!-- SECTION D: LONG ANSWER QUESTIONS (Q86 to Q100) -->
-  <div style="background: rgba(67, 160, 71, 0.12); border: 1.5px solid #43A047; border-radius: 10px; padding: 14px; margin-top: 30px; margin-bottom: 20px;">
-    <h2 style="color: #43A047; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">SECTION D: Long Answer Questions (Q86 to Q100)</h2>
-    <p style="color: #43A047; margin: 0; font-size: 14px;">15 Advanced Conceptual & Analytical Questions • 5 Marks Each (Roman Subparts: (i) Theory + (ii) Step Numerical/Calculations)</p>
   </div>
 
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q86: VSEPR Theory & Lone Pair Distortions</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Detail VSEPR postulates, repulsion hierarchy, and explain how lone pairs distort ideal tetrahedral angles in CH_4, NH_3, and H_2O.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      VSEPR minimizes repulsions (lp-lp > lp-bp > bp-bp). CH<sub>4</sub> (0 lp) = 109.5°; NH<sub>3</sub> (1 lp) = 107°; H<sub>2</sub>O (2 lp) = 104.5°.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Predict hybridization, electron geometry, molecular shape, and lone pairs for: (a) SF_4, (b) ClF_3, (c) XeF_2.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) SF<sub>4</sub>: sp<sup>3</sup>d, 4 bp + 1 lp ⟶ <b>See-saw</b>.<br>(b) ClF<sub>3</sub>: sp<sup>3</sup>d, 3 bp + 2 lp ⟶ <b>T-shaped</b>.<br>(c) XeF<sub>2</sub>: sp<sup>3</sup>d, 2 bp + 3 lp ⟶ <b>Linear</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q87: Hybridization Mechanics & Orbital Overlap</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Hybridization rules, energy requirements, and types (sp, sp_2, sp_3, sp_3d, sp_3d_2) with orbital overlap diagrams.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Mixing atomic orbitals of comparable energy forms hybrid orbitals with equivalent shapes and directional orientations.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Describe hybridization, bonding, and geometry in Ethyne (C_2H_2) and Phosphorous Pentachloride (PCl_5). Explain why axial bonds differ from equatorial bonds in PCl_5.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      C<sub>2</sub>H<sub>2</sub>: sp linear (2 σ, 2 π). PCl<sub>5</sub>: sp<sup>3</sup>d trigonal bipyramidal. Axial P-Cl (2.19 Å) suffer 3 repulsions vs 2 for equatorial (2.04 Å).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q88: Molecular Orbital Theory & Homonuclear Diatomic Spectra</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Detail MOT postulates, LCAO principles, Bonding vs Antibonding MOs, and MO filling order for e_14 vs e_gt_14.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      LCAO forms Ψ<sub>B</sub> (constructive) and Ψ<sub>A</sub>* (destructive). e<sup>-</sup> ≤ 14 has π2p before σ2p<sub>z</sub>; e<sup>-</sup> > 14 has σ2p<sub>z</sub> before π2p.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Draw complete MO energy diagram for O_2 and calculate bond orders for O_2, O_2_plus, O_2_minus, O_2_2minus. Arrange in order of bond stability and bond length.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      O<sub>2</sub> (BO=2.0, para), O<sub>2</sub><sup>+</sup> (BO=2.5, para), O<sub>2</sub><sup>-</sup> (BO=1.5, para), O<sub>2</sub><sup>2-</sup> (BO=1.0, dia).<br>• Stability: <b>O<sub>2</sub><sup>+</sup> > O<sub>2</sub> > O<sub>2</sub><sup>-</sup> > O<sub>2</sub><sup>2-</sup></b>.<br>• Length: <b>O<sub>2</sub><sup>+</sup> < O<sub>2</sub> < O<sub>2</sub><sup>-</sup> < O<sub>2</sub><sup>2-</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q89: Dipole Moment Mechanics & Molecular Symmetry</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Dipole Moment (μ = q × r), Debye units, vector addition, and symmetry cancellation in non-polar molecules.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Dipole moment is a vector pointing from positive to negative pole. Symmetrical molecules (BF<sub>3</sub>, CCl<sub>4</sub>, SF<sub>6</sub>) have μ = 0.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Calculate dipole moment of H_2O molecule given O-H bond dipole is 1.5 D and H-O-H bond angle is 104.5° (cos 52.25° = 0.6122).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      μ<sub>net</sub> = 2 μ<sub>O-H</sub> cos(θ/2) = 2(1.5)(0.6122) = <b>1.84 D (matches experimental 1.85 D!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q90: Fajans' Rules & Covalent Character in Ionic Compounds</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Detail Fajans' Rules governing partial covalent character in ionic bonds: Cation size, Anion size, Charge, and Pseudo-noble gas core.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Covalent character increases with small cation, large anion, high ionic charge, and 18 e<sup>-</sup> pseudo-core (Cu<sup>+</sup>, Ag<sup>+</sup>).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Explain differences in physical properties (melting point, solubility, conductivity): (a) NaCl vs CuCl, (b) LiCl vs KCl, (c) AlCl_3 vs AlF_3.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) CuCl is more covalent than NaCl (d<sup>10</sup> pseudo-core).<br>(b) LiCl is more covalent than KCl (smaller Li<sup>+</sup> size).<br>(c) AlCl<sub>3</sub> is covalent (sublimes) while AlF<sub>3</sub> is ionic (high mp) due to small F<sup>-</sup>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q91: Formal Charge Determination & Resonance Canonical Hybrids</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Formal Charge concept (FC = V - L - 1/2 B) and Resonance theory with canonical contributing structures.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Formal charge helps select lowest energy Lewis structure. Resonance hybrid averages bond orders across equivalent structures.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Draw resonance structures and calculate formal charges on all atoms for: (a) Carbonate ion (CO_3_2minus), (b) Nitrate ion (NO_3_minus).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) CO<sub>3</sub><sup>2-</sup>: Central C FC=0; 1 double-bonded O FC=0; 2 single-bonded O FC=-1.<br>(b) NO<sub>3</sub><sup>-</sup>: Central N FC=+1; 1 double-bonded O FC=0; 2 single-bonded O FC=-1.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q92: Hydrogen Bonding & Physical Consequences on States of Matter</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Detail Hydrogen Bonding mechanism, electronegativity requirements, Intermolecular vs Intramolecular H-bonding, and physical effects.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      H attached to F, O, N forms H-bonds. Gives high bp, high viscosity, ice density anomaly, and steam volatility differences.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Explain 3 anomalous physical phenomena using H-bonding: (a) Why H_2O boils at 100°C while H_2S boils at -60°C, (b) Why ice is lighter than liquid water, (c) Why ethanol is miscible in water.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) H<sub>2</sub>O forms strong intermolecular H-bonds.<br>(b) Ice forms open 3D cage structure with empty spaces.<br>(c) Ethanol forms intermolecular H-bonds with water molecules.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q93: VBT vs MOT Comparative Quantum Chemistry</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Compare Valence Bond Theory (VBT) and Molecular Orbital Theory (MOT) in 6 fundamental points.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      1. Atomic vs Molecular identity.<br>2. Localized vs Delocalized e<sup>-</sup>.<br>3. Hybridization vs LCAO.<br>4. Overlap of half-filled vs all AO combination.<br>5. VBT failed on O<sub>2</sub> paramagnetism; MOT explained it.<br>6. Resonance vs Single MO wave function.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Using MOT, predict stability, bond order, and magnetic character of: (a) B_2, (b) C_2, (c) N_2, (d) N_2_plus.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) B<sub>2</sub>: BO=1.0, Paramagnetic.<br>(b) C<sub>2</sub>: BO=2.0 (2 π-bonds), Diamagnetic.<br>(c) N<sub>2</sub>: BO=3.0, Diamagnetic.<br>(d) N<sub>2</sub><sup>+</sup>: BO=2.5, Paramagnetic.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q94: Bond Parameters Inter-relationships (Order, Length, Enthalpy)</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain fundamental bond parameters: Bond Length, Bond Angle, Bond Enthalpy, Bond Order, and Resonance Hybridization.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Higher Bond Order ⟶ shorter Bond Length and higher Bond Enthalpy. Resonance averages bond length.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Compare bond lengths and bond energies of: (a) C-C, C=C, C#C in ethane, ethene, ethyne, (b) N-O bonds in NO_2_minus and NO_3_minus.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) Length: C-C (1.54 Å) > C=C (1.34 Å) > C≡C (1.20 Å). Energy: C≡C (839 kJ/mol) > C=C (614) > C-C (348).<br>(b) Bond Order in NO<sub>2</sub><sup>-</sup> = 1.5; NO<sub>3</sub><sup>-</sup> = 1.33 ⟶ NO<sub>3</sub><sup>-</sup> has longer N-O bond length!
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q95: Advanced VSEPR & Xenon Fluoride Structures</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain VSEPR predictions for noble gas Xenon compounds (XeF_2, XeF_4, XeF_6, XeO_3).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Xe uses 8 valence electrons. Lone pairs occupy axial or equatorial positions to minimize repulsions.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Detail hybridization, total electron pairs, lone pairs, geometry, and shape of: (a) XeF_2, (b) XeF_4, (c) XeF_6, (d) XeO_3.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) XeF<sub>2</sub>: sp<sup>3</sup>d, 2 bp + 3 lp ⟶ <b>Linear</b>.<br>(b) XeF<sub>4</sub>: sp<sup>3</sup>d<sup>2</sup>, 4 bp + 2 lp ⟶ <b>Square Planar</b>.<br>(c) XeF<sub>6</sub>: sp<sup>3</sup>d<sup>3</sup>, 6 bp + 1 lp ⟶ <b>Distorted Octahedral</b>.<br>(d) XeO<sub>3</sub>: sp<sup>3</sup>, 3 bp + 1 lp ⟶ <b>Pyramidal</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q96: Lattice Enthalpy & Born-Haber Thermochemical Cycle</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Lattice Enthalpy (U), Kapustinskii equation, and Born-Haber Cycle thermochemical steps.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      U = K (z<sub>+</sub> z<sub>-</sub> / r<sub>+</sub> + r<sub>-</sub>). Born-Haber cycle uses Hess's law to calculate lattice energy from experimental thermodynamic data.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Calculate Lattice Enthalpy of MgO(s) from: ΔH_f(MgO) = -602 kJ/mol, Δ_sub H(Mg) = +148 kJ/mol, IE_1+IE_2(Mg) = +2188 kJ/mol, Δ_bond H(O_2) = +498 kJ/mol, EA_1+EA_2(O) = +657 kJ/mol.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      -602 = +148 + 2188 + <span style="display:inline-block; text-align:center; vertical-align:-0.4em;"><span style="border-bottom:1.5px solid currentColor; display:block; padding:0 4px;">498</span><span style="display:block; padding:0 4px;">2</span></span> + 657 + U ⟶ -602 = +3242 + U ⟶ <b>U = -3844 kJ mol<sup>-1</sup> (Vastly higher than NaCl due to +2/-2 charges!)</b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q97: Polyatomic Ion Formal Charge & Stabilization</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Formal Charge rules for optimizing Lewis structures of polyatomic ions (SO_4_2minus, PO_4_3minus, ClO_4_minus).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Structures minimizing formal charges on all atoms are preferred over strict octet structures.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Draw best Lewis structures and calculate formal charges for all atoms in: (a) Perchlorate ion (ClO_4_minus), (b) Phosphate ion (PO_4_3minus).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) ClO<sub>4</sub><sup>-</sup>: Central Cl forms 3 Cl=O and 1 Cl-O<sup>-</sup> (Cl FC=0, 3 double O FC=0, 1 single O FC=-1).<br>(b) PO<sub>4</sub><sup>3-</sup>: Central P forms 1 P=O and 3 P-O<sup>-</sup> (P FC=0, 1 double O FC=0, 3 single O FC=-1).
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q98: Resonance Energy & Aromaticity Basics</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Explain Resonance Energy (difference between actual experimental enthalpy of formation and lowest energy canonical structure).</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Resonance releases energy, stabilizing molecule (e.g. Benzene resonance energy = 152 kJ/mol).
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Calculate resonance energy of Benzene given experimental heat of hydrogenation of Benzene is -208 kJ/mol and heat of hydrogenation of Cyclohexene (1 double bond) is -120 kJ/mol.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      Theoretical 3 double bonds = 3 × (-120) = -360 kJ/mol.<br>Resonance Energy = |-208 - (-360)| = <b>152 kJ mol<sup>-1</sup></b>.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q99: Intermolecular Forces Hierarchy & States of Matter</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Detail 5 types of intermolecular forces: Ion-Dipole, Dipole-Dipole, London Dispersion, Dipole-Induced Dipole, and H-Bonding in order of strength.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Ion-Dipole > H-Bond > Dipole-Dipole > Dipole-Induced Dipole > London Dispersion.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) Identify predominant intermolecular force in: (a) Solid NaCl in Water, (b) Liquid HCl, (c) Solid Iodine (I_2), (d) Liquid Methanol (CH_3OH), (e) Xenon gas.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) Ion-Dipole force.<br>(b) Dipole-Dipole force.<br>(c) London Dispersion force.<br>(d) Hydrogen Bonding.<br>(e) London Dispersion force.
-    </div>
-  </div>
-  <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(67, 160, 71, 0.3); border-radius: 8px; padding: 14px; margin-bottom: 20px;">
-    <p style="margin: 0 0 10px 0;"><b style='color: #43A047;'>Q100: Master Synthesis: Chemical Bonding, Geometry, MOT & Physical Properties</b></p>
-    
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(i) Synthesize complete unified framework connecting Valence Configuration ⟶ Hybridization ⟶ VSEPR Geometry ⟶ MOT Bond Order & Magnetism ⟶ Dipole Moment & Intermolecular Forces ⟶ Physical State & Melting/Boiling Points.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 8px 12px; border-left: 3px solid #43A047; margin-bottom: 10px;">
-      Valence electrons determine hybridization and 3D VSEPR shape. MOT predicts bond strength and magnetism. Dipole moment and H-bonding determine physical states, solubilities, and boiling points.
-    </div>
-
-    <p style="margin: 8px 0 4px 0;"><b style='color: #43A047;'>(ii) For Carbon Monoxide (CO) and Nitrogen (N_2): (a) Write Lewis structures and formal charges, (b) Write MO configurations and calculate bond orders, (c) Explain why CO is a toxic ligand while N_2 is inert.</b></p>
-    <div style="background: rgba(67, 160, 71, 0.05); padding: 10px 12px; border-left: 3px solid #43A047;">
-      (a) CO: :C≡O: (C FC=-1, O FC=+1); N<sub>2</sub>: :N≡N: (both FC=0).<br>(b) Both have 14 e<sup>-</sup>, BO = 3.0, Diamagnetic.<br>(c) CO has a polar dipole (C<sup>δ-</sup>) and lone pair on Carbon that binds strongly to Fe in Hemoglobin; N<sub>2</sub> is non-polar and chemically inert.
-    </div>
-  </div>
 </div>
 `;
+
+export const c11Chem4Mcqs = [
+  {
+    "id": "c11-chem-4-mcq-1",
+    "question": "Which of the following molecules has an incomplete octet on the central atom?",
+    "options": [
+      "A):   CH<sub>4</sub>",
+      "B):   BF<sub>3</sub>",
+      "C):   NH<sub>3</sub>",
+      "D):   H<sub>2</sub>O"
+    ],
+    "correctAnswer": "b",
+    "explanation": "In BF<sub>3</sub>, Boron is surrounded by only 6 valence electrons (3 bond pairs), violating the octet rule as an electron-deficient species."
+  },
+  {
+    "id": "c11-chem-4-mcq-2",
+    "question": "The formal charge on the central Oxygen atom in an Ozone molecule (O<sub>3</sub>) is:",
+    "options": [
+      "A):   0",
+      "B):   +1",
+      "C):   -1",
+      "D):   +2"
+    ],
+    "correctAnswer": "b",
+    "explanation": "For central O: FC = 6 - 2 - 1/2(6) = +1."
+  },
+  {
+    "id": "c11-chem-4-mcq-3",
+    "question": "Which of the following molecules possesses a permanent non-zero dipole moment?",
+    "options": [
+      "A):   CO<sub>2</sub>",
+      "B):   BF<sub>3</sub>",
+      "C):   NF<sub>3</sub>",
+      "D):   CCl<sub>4</sub>"
+    ],
+    "correctAnswer": "c",
+    "explanation": "NF<sub>3</sub> has an asymmetric trigonal pyramidal geometry with one lone pair, giving it a net dipole moment of 0.24 D."
+  },
+  {
+    "id": "c11-chem-4-mcq-4",
+    "question": "According to Fajans' rules, covalent character in an ionic bond is favored by:",
+    "options": [
+      "A):   Large cation and small anion",
+      "B):   Small cation and large anion",
+      "C):   Low charge on both ions",
+      "D):   Noble gas configuration on cation"
+    ],
+    "correctAnswer": "b",
+    "explanation": "A small cation has high polarizing power and a large anion is easily polarizable, leading to high covalent character."
+  },
+  {
+    "id": "c11-chem-4-mcq-5",
+    "question": "What is the molecular geometry of Sulfur Tetrafluoride (SF<sub>4</sub>) according to VSEPR theory?",
+    "options": [
+      "A):   Tetrahedral",
+      "B):   Square planar",
+      "C):   See-saw",
+      "D):   Trigonal bipyramidal"
+    ],
+    "correctAnswer": "c",
+    "explanation": "SF<sub>4</sub> has 4 bond pairs and 1 lone pair (AB<sub>4</sub>E), which adopts a See-Saw shape with the lone pair at an equatorial position."
+  },
+  {
+    "id": "c11-chem-4-mcq-6",
+    "question": "The hybridization of Xenon in Xenon Tetrafluoride (XeF<sub>4</sub>) is:",
+    "options": [
+      "A):   sp<sup>3</sup>",
+      "B):   sp<sup>3</sup>d",
+      "C):   sp<sup>3</sup>d<sup>2</sup>",
+      "D):   dsp<sup>2</sup>"
+    ],
+    "correctAnswer": "c",
+    "explanation": "XeF<sub>4</sub> has 4 bond pairs and 2 lone pairs (Steric Number = 6 &rArr; sp<sup>3</sup>d<sup>2</sup> hybridization) with a square planar geometry."
+  },
+  {
+    "id": "c11-chem-4-mcq-7",
+    "question": "Why are the axial bonds longer and weaker than equatorial bonds in PCl<sub>5</sub>?",
+    "options": [
+      "A):   Axial bonds have greater s-character",
+      "B):   Axial bond pairs experience greater repulsion from equatorial pairs at 90°",
+      "C):   Equatorial bonds are ionic",
+      "D):   Phosphorus has an odd electron"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Axial bond pairs suffer electrostatic repulsion from 3 equatorial pairs at 90&deg;, forcing them outward to longer bond lengths (240 pm vs 202 pm)."
+  },
+  {
+    "id": "c11-chem-4-mcq-8",
+    "question": "According to Molecular Orbital Theory, which of the following diatomic species is paramagnetic?",
+    "options": [
+      "A):   N<sub>2</sub>",
+      "B):   O<sub>2</sub>",
+      "C):   C<sub>2</sub>",
+      "D):   Li<sub>2</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "O<sub>2</sub> has two unpaired electrons in degenerate &pi;*2p<sub>x</sub> and &pi;*2p<sub>y</sub> antibonding orbitals, making it paramagnetic."
+  },
+  {
+    "id": "c11-chem-4-mcq-9",
+    "question": "What is the Bond Order of the Peroxide ion (O<sub>2</sub><sup>2-</sup>)?",
+    "options": [
+      "A):   1.0",
+      "B):   1.5",
+      "C):   2.0",
+      "D):   2.5"
+    ],
+    "correctAnswer": "a",
+    "explanation": "O<sub>2</sub><sup>2-</sup> has 18 electrons: BO = 1/2 (N<sub>b</sub> - N<sub>a</sub>) = 1/2 (10 - 8) = 1.0."
+  },
+  {
+    "id": "c11-chem-4-mcq-10",
+    "question": "Which of the following compounds exhibits intramolecular hydrogen bonding?",
+    "options": [
+      "A):   p-Nitrophenol",
+      "B):   o-Nitrophenol",
+      "C):   Water",
+      "D):   Ethanol"
+    ],
+    "correctAnswer": "b",
+    "explanation": "o-Nitrophenol forms an intramolecular hydrogen bond (chelate ring) between its adjacent -OH and -NO<sub>2</sub> groups."
+  },
+  {
+    "id": "c11-chem-4-mcq-11",
+    "question": "The shape of the Triiodide ion (I<sub>3</sub><sup>-</sup>) is:",
+    "options": [
+      "A):   Bent",
+      "B):   Linear",
+      "C):   T-shaped",
+      "D):   Trigonal planar"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Central Iodine has 2 bond pairs and 3 lone pairs (sp<sup>3</sup>d); the 3 lone pairs occupy equatorial positions, leaving a Linear geometry (180&deg;)."
+  },
+  {
+    "id": "c11-chem-4-mcq-12",
+    "question": "What is the hybridization of the central atom in Chlorine Trifluoride (ClF<sub>3</sub>)?",
+    "options": [
+      "A):   sp<sup>3</sup>",
+      "B):   sp<sup>3</sup>d",
+      "C):   sp<sup>3</sup>d<sup>2</sup>",
+      "D):   sp<sup>2</sup>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "ClF<sub>3</sub> has 3 bond pairs and 2 lone pairs (Steric Number = 5 &rArr; sp<sup>3</sup>d hybridization) with a T-shaped geometry."
+  },
+  {
+    "id": "c11-chem-4-mcq-13",
+    "question": "The correct order of bond angles in CH<sub>4</sub>, NH<sub>3</sub>, and H<sub>2</sub>O is:",
+    "options": [
+      "A):   CH<sub>4</sub> &gt; NH<sub>3</sub> &gt; H<sub>2</sub>O",
+      "B):   H<sub>2</sub>O &gt; NH<sub>3</sub> &gt; CH<sub>4</sub>",
+      "C):   NH<sub>3</sub> &gt; CH<sub>4</sub> &gt; H<sub>2</sub>O",
+      "D):   CH<sub>4</sub> = NH<sub>3</sub> = H<sub>2</sub>O"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Bond angles decrease with increasing lone pairs due to lone pair-bond pair repulsion: CH<sub>4</sub> (109.5&deg;) &gt; NH<sub>3</sub> (107&deg;) &gt; H<sub>2</sub>O (104.5&deg;)."
+  },
+  {
+    "id": "c11-chem-4-mcq-14",
+    "question": "Which of the following diatomic species has a Bond Order equal to 3.0?",
+    "options": [
+      "A):   O<sub>2</sub>",
+      "B):   N<sub>2</sub>",
+      "C):   F<sub>2</sub>",
+      "D):   B<sub>2</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "N<sub>2</sub> (14 electrons) has BO = 1/2 (10 - 4) = 3.0, representing a strong N&equiv;N triple bond."
+  },
+  {
+    "id": "c11-chem-4-mcq-15",
+    "question": "Why is ice less dense than liquid water at 0°C?",
+    "options": [
+      "A):   Water molecules ionize in ice",
+      "B):   Ice forms an open 3D cage-like lattice with empty voids due to hydrogen bonding",
+      "C):   Ice has covalent bonds between molecules",
+      "D):   Ice contains dissolved air bubbles"
+    ],
+    "correctAnswer": "b",
+    "explanation": "In ice, each water molecule is tetrahedrally hydrogen-bonded to 4 others in an open-cage structure containing large voids, making ice less dense than water."
+  },
+  {
+    "id": "c11-chem-4-mcq-16",
+    "question": "The percentage of s-character in an sp<sup>2</sup> hybrid orbital is:",
+    "options": [
+      "A):   50%",
+      "B):   33.3%",
+      "C):   25%",
+      "D):   20%"
+    ],
+    "correctAnswer": "b",
+    "explanation": "sp<sup>2</sup> hybridization mixes one s and two p orbitals; s-character = 1 / (1 + 2) = 1/3 = 33.3%."
+  },
+  {
+    "id": "c11-chem-4-mcq-17",
+    "question": "The total number of sigma (&sigma;) and pi (&pi;) bonds in an Ethyne molecule (HC&equiv;CH) is:",
+    "options": [
+      "A):   2 &sigma; and 2 &pi;",
+      "B):   3 &sigma; and 2 &pi;",
+      "C):   2 &sigma; and 3 &pi;",
+      "D):   4 &sigma; and 1 &pi;"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Ethyne has two C-H &sigma;-bonds, one C-C &sigma;-bond, and two C-C &pi;-bonds (total 3 &sigma; and 2 &pi; bonds)."
+  },
+  {
+    "id": "c11-chem-4-mcq-18",
+    "question": "Which of the following molecules has a square planar geometry?",
+    "options": [
+      "A):   CCl<sub>4</sub>",
+      "B):   XeF<sub>4</sub>",
+      "C):   SF<sub>4</sub>",
+      "D):   SiF<sub>4</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "XeF<sub>4</sub> has 4 bonding pairs and 2 lone pairs at trans positions, producing a square planar shape."
+  },
+  {
+    "id": "c11-chem-4-mcq-19",
+    "question": "According to MOT, the bond order of Helium molecule (He<sub>2</sub>) is:",
+    "options": [
+      "A):   1",
+      "B):   0.5",
+      "C):   0",
+      "D):   2"
+    ],
+    "correctAnswer": "c",
+    "explanation": "He<sub>2</sub> has configuration &sigma;1s<sup>2</sup> &sigma;*1s<sup>2</sup>; BO = 1/2 (2 - 2) = 0, so He<sub>2</sub> cannot exist."
+  },
+  {
+    "id": "c11-chem-4-mcq-20",
+    "question": "Which of the following compounds has the highest lattice enthalpy?",
+    "options": [
+      "A):   NaCl",
+      "B):   KCl",
+      "C):   MgO",
+      "D):   CaO"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Lattice enthalpy is proportional to (q<sub>1</sub> &times; q<sub>2</sub>) / r. Mg<sup>2+</sup> and O<sup>2-</sup> have divalent charges (+2 and -2) and smaller radii than Ca<sup>2+</sup>, maximizing lattice enthalpy."
+  },
+  {
+    "id": "c11-chem-4-mcq-21",
+    "question": "Which of the following pairs of elements forms the strongest hydrogen bond?",
+    "options": [
+      "A):   H and Cl",
+      "B):   H and F",
+      "C):   H and O",
+      "D):   H and N"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Fluorine is the most electronegative and smallest atom, forming the strongest H-bond (F-H&bull;&bull;&bull;F, ~40 kJ/mol)."
+  },
+  {
+    "id": "c11-chem-4-mcq-22",
+    "question": "The bond order of Superoxide ion (O<sub>2</sub><sup>-</sup>) is:",
+    "options": [
+      "A):   2.5",
+      "B):   2.0",
+      "C):   1.5",
+      "D):   1.0"
+    ],
+    "correctAnswer": "c",
+    "explanation": "O<sub>2</sub><sup>-</sup> has 17 electrons: BO = 1/2 (10 - 7) = 1.5."
+  },
+  {
+    "id": "c11-chem-4-mcq-23",
+    "question": "The geometry of Phosphorus Trichloride (PCl<sub>3</sub>) is:",
+    "options": [
+      "A):   Trigonal planar",
+      "B):   Trigonal pyramidal",
+      "C):   T-shaped",
+      "D):   Tetrahedral"
+    ],
+    "correctAnswer": "b",
+    "explanation": "PCl<sub>3</sub> has 3 bond pairs and 1 lone pair on Phosphorus (sp<sup>3</sup>), forming a trigonal pyramidal shape."
+  },
+  {
+    "id": "c11-chem-4-mcq-24",
+    "question": "Which of the following has a linear molecular shape?",
+    "options": [
+      "A):   SO<sub>2</sub>",
+      "B):   NO<sub>2</sub>",
+      "C):   BeCl<sub>2</sub>",
+      "D):   H<sub>2</sub>O"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Beryllium in BeCl<sub>2</sub> is sp hybridized with 2 bond pairs and no lone pairs, forming a 180&deg; linear shape."
+  },
+  {
+    "id": "c11-chem-4-mcq-25",
+    "question": "In solid state, PCl<sub>5</sub> exists as:",
+    "options": [
+      "A):   Discrete PCl<sub>5</sub> covalent molecules",
+      "B):   [PCl<sub>4</sub>]<sup>+</sup> and [PCl<sub>6</sub>]<sup>-</sup> ions",
+      "C):   PCl<sub>3</sub> and Cl<sub>2</sub> molecules",
+      "D):   Polymeric P<sub>2</sub>Cl<sub>10</sub>"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Solid PCl<sub>5</sub> is an ionic crystal composed of tetrahedral [PCl<sub>4</sub>]<sup>+</sup> cations and octahedral [PCl<sub>6</sub>]<sup>-</sup> anions."
+  }
+];

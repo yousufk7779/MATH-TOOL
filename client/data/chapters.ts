@@ -70,17 +70,17 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-chem-9", number: 9, name: "Organic Compounds Containing Nitrogen", color: "#FF1744" },
       { id: "c12-chem-10", number: 10, name: "Biomolecules", color: "#00B0FF" },
     ],
-    Zoology: [
-      { id: "c12-zoo-1", number: 1, name: "Reproduction in Animals", color: "#FF3D00" },
-      { id: "c12-zoo-2", number: 2, name: "Genetics and Evolution", color: "#7C4DFF" },
-      { id: "c12-zoo-3", number: 3, name: "Biology in Human Welfare", color: "#FF007F" },
-      { id: "c12-zoo-4", number: 4, name: "Biotechnology and its Applications", color: "#00B0FF" },
-    ],
     Botany: [
       { id: "c12-bot-1", number: 1, name: "Reproduction in Flowering Plants", color: "#00E676" },
       { id: "c12-bot-2", number: 2, name: "Genetics", color: "#FF9100" },
       { id: "c12-bot-3", number: 3, name: "Biology and Human Welfare", color: "#E040FB" },
       { id: "c12-bot-4", number: 4, name: "Ecology and Environment", color: "#00E5FF" },
+    ],
+    Zoology: [
+      { id: "c12-zoo-1", number: 1, name: "Reproduction in Animals", color: "#FF3D00" },
+      { id: "c12-zoo-2", number: 2, name: "Genetics and Evolution", color: "#7C4DFF" },
+      { id: "c12-zoo-3", number: 3, name: "Biology in Human Welfare", color: "#FF007F" },
+      { id: "c12-zoo-4", number: 4, name: "Biotechnology and its Applications", color: "#00B0FF" },
     ],
   },
   "Class 11 Science": {
@@ -107,17 +107,17 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c11-chem-8", number: 8, name: "ORGANIC CHEMISTRY-SOME BASIC PRINCIPLES AND TECHNIQUES", color: "#FF007F" },
       { id: "c11-chem-9", number: 9, name: "Hydrocarbons", color: "#29B6F6" },
     ],
-    Zoology: [
-      { id: "c11-zoo-1", number: 1, name: "Diversity in Living World", color: "#FF3D00" },
-      { id: "c11-zoo-2", number: 2, name: "Structural Organisation and Animal Biomolecules", color: "#00B09B" },
-      { id: "c11-zoo-3", number: 3, name: "Cell Structure and Function", color: "#FF007F" },
-      { id: "c11-zoo-4", number: 4, name: "Human Physiology", color: "#00B0FF" },
-    ],
     Botany: [
       { id: "c11-bot-1", number: 1, name: "Diversity of Life", color: "#00E676" },
       { id: "c11-bot-2", number: 2, name: "Kingdom Plantae", color: "#FF9100" },
       { id: "c11-bot-3", number: 3, name: "Plant Anatomy", color: "#E040FB" },
       { id: "c11-bot-4", number: 4, name: "Plant Physiology", color: "#00E5FF" },
+    ],
+    Zoology: [
+      { id: "c11-zoo-1", number: 1, name: "Diversity in Living World", color: "#FF3D00" },
+      { id: "c11-zoo-2", number: 2, name: "Structural Organisation and Animal Biomolecules", color: "#00B09B" },
+      { id: "c11-zoo-3", number: 3, name: "Cell Structure and Function", color: "#FF007F" },
+      { id: "c11-zoo-4", number: 4, name: "Human Physiology", color: "#00B0FF" },
     ],
   },
   "Class 10 Social Science": {

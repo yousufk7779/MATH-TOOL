@@ -8,6 +8,14 @@ import { c12Chem7HtmlOverview, c12Chem7HtmlSolutions, c12Chem7Mcqs } from "./con
 import { c12Chem8HtmlOverview, c12Chem8HtmlSolutions, c12Chem8Mcqs } from "./content/c12-chem-8";
 import { c12Chem9HtmlOverview, c12Chem9HtmlSolutions, c12Chem9Mcqs } from "./content/c12-chem-9";
 import { c12Chem10HtmlOverview, c12Chem10HtmlSolutions, c12Chem10Mcqs } from "./content/c12-chem-10";
+import { c12Bot1HtmlOverview, c12Bot1HtmlSolutions, c12Bot1Mcqs } from "./content/c12-bot-1";
+import { c12Bot2HtmlOverview, c12Bot2HtmlSolutions, c12Bot2Mcqs } from "./content/c12-bot-2";
+import { c12Bot3HtmlOverview, c12Bot3HtmlSolutions, c12Bot3Mcqs } from "./content/c12-bot-3";
+import { c12Bot4HtmlOverview, c12Bot4HtmlSolutions, c12Bot4Mcqs } from "./content/c12-bot-4";
+import { c12Zoo1HtmlOverview, c12Zoo1HtmlSolutions, c12Zoo1Mcqs } from "./content/c12-zoo-1";
+import { c12Zoo2HtmlOverview, c12Zoo2HtmlSolutions, c12Zoo2Mcqs } from "./content/c12-zoo-2";
+import { c12Zoo3HtmlOverview, c12Zoo3HtmlSolutions, c12Zoo3Mcqs } from "./content/c12-zoo-3";
+import { c12Zoo4HtmlOverview, c12Zoo4HtmlSolutions, c12Zoo4Mcqs } from "./content/c12-zoo-4";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -128,23 +136,23 @@ import { c11Phy7HtmlOverview, c11Phy7HtmlSolutions } from "./content/c11-phy-7";
 import { c11Phy8HtmlOverview, c11Phy8HtmlSolutions } from "./content/c11-phy-8";
 import { c11Phy9HtmlOverview, c11Phy9HtmlSolutions } from "./content/c11-phy-9";
 import { c11Phy10HtmlOverview, c11Phy10HtmlSolutions } from "./content/c11-phy-10";
-import { c11Chem1HtmlOverview, c11Chem1HtmlSolutions } from "./content/c11-chem-1";
-import { c11Chem2HtmlOverview, c11Chem2HtmlSolutions } from "./content/c11-chem-2";
-import { c11Chem3HtmlOverview, c11Chem3HtmlSolutions } from "./content/c11-chem-3";
-import { c11Chem4HtmlOverview, c11Chem4HtmlSolutions } from "./content/c11-chem-4";
-import { c11Chem5HtmlOverview, c11Chem5HtmlSolutions } from "./content/c11-chem-5";
-import { c11Chem6HtmlOverview, c11Chem6HtmlSolutions } from "./content/c11-chem-6";
-import { c11Chem7HtmlOverview, c11Chem7HtmlSolutions } from "./content/c11-chem-7";
-import { c11Chem8HtmlOverview, c11Chem8HtmlSolutions } from "./content/c11-chem-8";
-import { c11Chem9HtmlOverview, c11Chem9HtmlSolutions } from "./content/c11-chem-9";
-import { c11Bot1HtmlOverview, c11Bot1HtmlSolutions } from "./content/c11-bot-1";
-import { c11Bot2HtmlOverview, c11Bot2HtmlSolutions } from "./content/c11-bot-2";
-import { c11Bot3HtmlOverview, c11Bot3HtmlSolutions } from "./content/c11-bot-3";
-import { c11Bot4HtmlOverview, c11Bot4HtmlSolutions } from "./content/c11-bot-4";
-import { c11Zoo1HtmlOverview, c11Zoo1HtmlSolutions } from "./content/c11-zoo-1";
-import { c11Zoo2HtmlOverview, c11Zoo2HtmlSolutions } from "./content/c11-zoo-2";
-import { c11Zoo3HtmlOverview, c11Zoo3HtmlSolutions } from "./content/c11-zoo-3";
-import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions } from "./content/c11-zoo-4";
+import { c11Chem1HtmlOverview, c11Chem1HtmlSolutions, c11Chem1Mcqs } from "./content/c11-chem-1";
+import { c11Chem2HtmlOverview, c11Chem2HtmlSolutions, c11Chem2Mcqs } from "./content/c11-chem-2";
+import { c11Chem3HtmlOverview, c11Chem3HtmlSolutions, c11Chem3Mcqs } from "./content/c11-chem-3";
+import { c11Chem4HtmlOverview, c11Chem4HtmlSolutions, c11Chem4Mcqs } from "./content/c11-chem-4";
+import { c11Chem5HtmlOverview, c11Chem5HtmlSolutions, c11Chem5Mcqs } from "./content/c11-chem-5";
+import { c11Chem6HtmlOverview, c11Chem6HtmlSolutions, c11Chem6Mcqs } from "./content/c11-chem-6";
+import { c11Chem7HtmlOverview, c11Chem7HtmlSolutions, c11Chem7Mcqs } from "./content/c11-chem-7";
+import { c11Chem8HtmlOverview, c11Chem8HtmlSolutions, c11Chem8Mcqs } from "./content/c11-chem-8";
+import { c11Chem9HtmlOverview, c11Chem9HtmlSolutions, c11Chem9Mcqs } from "./content/c11-chem-9";
+import { c11Bot1HtmlOverview, c11Bot1HtmlSolutions, c11Bot1Mcqs } from "./content/c11-bot-1";
+import { c11Bot2HtmlOverview, c11Bot2HtmlSolutions, c11Bot2Mcqs } from "./content/c11-bot-2";
+import { c11Bot3HtmlOverview, c11Bot3HtmlSolutions, c11Bot3Mcqs } from "./content/c11-bot-3";
+import { c11Bot4HtmlOverview, c11Bot4HtmlSolutions, c11Bot4Mcqs } from "./content/c11-bot-4";
+import { c11Zoo1HtmlOverview, c11Zoo1HtmlSolutions, c11Zoo1Mcqs } from "./content/c11-zoo-1";
+import { c11Zoo2HtmlOverview, c11Zoo2HtmlSolutions, c11Zoo2Mcqs } from "./content/c11-zoo-2";
+import { c11Zoo3HtmlOverview, c11Zoo3HtmlSolutions, c11Zoo3Mcqs } from "./content/c11-zoo-3";
+import { c11Zoo4HtmlOverview, c11Zoo4HtmlSolutions, c11Zoo4Mcqs } from "./content/c11-zoo-4";
 import { c12Phy1HtmlOverview, c12Phy1HtmlSolutions, c12Phy1Mcqs } from "./content/c12-phy-1";
 import { c12Phy2HtmlOverview, c12Phy2HtmlSolutions, c12Phy2Mcqs } from "./content/c12-phy-2";
 import { c12Phy3HtmlOverview, c12Phy3HtmlSolutions, c12Phy3Mcqs } from "./content/c12-phy-3";
@@ -1007,12 +1015,12 @@ sstC8Categories.forEach((cat) => {
   }
 });
 
-// Dynamically generate Class 11 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
+// Dynamically generate Class 11 Science Chapter Web View Structures (Physics, Chemistry, Botany, Zoology)
 const c11Subjects = [
   { prefix: "phy", title: "Physics", maxCh: 10 },
   { prefix: "chem", title: "Chemistry", maxCh: 9 },
-  { prefix: "zoo", title: "Zoology", maxCh: 4 },
   { prefix: "bot", title: "Botany", maxCh: 4 },
+  { prefix: "zoo", title: "Zoology", maxCh: 4 },
 ];
 
 const c11ThemeColors = [
@@ -1173,178 +1181,297 @@ if (ch11Phy10) {
 const ch11Chem1 = chapterContents["c11-chem-1"];
 if (ch11Chem1) {
   ch11Chem1.htmlOverview = c11Chem1HtmlOverview;
-  if (!ch11Chem1.htmlExercises) {
-    ch11Chem1.htmlExercises = {};
-  }
-  ch11Chem1.htmlExercises["ex-c11-qa"] = c11Chem1HtmlSolutions;
+  ch11Chem1.htmlExercises = {
+    "ex-c11-qa": c11Chem1HtmlSolutions,
+  };
+  ch11Chem1.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem1.mcqs = c11Chem1Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 2 with full high-level Reference & Solutions content
 const ch11Chem2 = chapterContents["c11-chem-2"];
 if (ch11Chem2) {
   ch11Chem2.htmlOverview = c11Chem2HtmlOverview;
-  if (!ch11Chem2.htmlExercises) {
-    ch11Chem2.htmlExercises = {};
-  }
-  ch11Chem2.htmlExercises["ex-c11-qa"] = c11Chem2HtmlSolutions;
+  ch11Chem2.htmlExercises = {
+    "ex-c11-qa": c11Chem2HtmlSolutions,
+  };
+  ch11Chem2.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem2.mcqs = c11Chem2Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 3 with full high-level Reference & Solutions content
 const ch11Chem3 = chapterContents["c11-chem-3"];
 if (ch11Chem3) {
   ch11Chem3.htmlOverview = c11Chem3HtmlOverview;
-  if (!ch11Chem3.htmlExercises) {
-    ch11Chem3.htmlExercises = {};
-  }
-  ch11Chem3.htmlExercises["ex-c11-qa"] = c11Chem3HtmlSolutions;
+  ch11Chem3.htmlExercises = {
+    "ex-c11-qa": c11Chem3HtmlSolutions,
+  };
+  ch11Chem3.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem3.mcqs = c11Chem3Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 4 with full high-level Reference & Solutions content
 const ch11Chem4 = chapterContents["c11-chem-4"];
 if (ch11Chem4) {
   ch11Chem4.htmlOverview = c11Chem4HtmlOverview;
-  if (!ch11Chem4.htmlExercises) {
-    ch11Chem4.htmlExercises = {};
-  }
-  ch11Chem4.htmlExercises["ex-c11-qa"] = c11Chem4HtmlSolutions;
+  ch11Chem4.htmlExercises = {
+    "ex-c11-qa": c11Chem4HtmlSolutions,
+  };
+  ch11Chem4.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem4.mcqs = c11Chem4Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 5 with full high-level Reference & Solutions content
 const ch11Chem5 = chapterContents["c11-chem-5"];
 if (ch11Chem5) {
   ch11Chem5.htmlOverview = c11Chem5HtmlOverview;
-  if (!ch11Chem5.htmlExercises) {
-    ch11Chem5.htmlExercises = {};
-  }
-  ch11Chem5.htmlExercises["ex-c11-qa"] = c11Chem5HtmlSolutions;
+  ch11Chem5.htmlExercises = {
+    "ex-c11-qa": c11Chem5HtmlSolutions,
+  };
+  ch11Chem5.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem5.mcqs = c11Chem5Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 6 with full high-level Reference & Solutions content
 const ch11Chem6 = chapterContents["c11-chem-6"];
 if (ch11Chem6) {
   ch11Chem6.htmlOverview = c11Chem6HtmlOverview;
-  if (!ch11Chem6.htmlExercises) {
-    ch11Chem6.htmlExercises = {};
-  }
-  ch11Chem6.htmlExercises["ex-c11-qa"] = c11Chem6HtmlSolutions;
+  ch11Chem6.htmlExercises = {
+    "ex-c11-qa": c11Chem6HtmlSolutions,
+  };
+  ch11Chem6.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem6.mcqs = c11Chem6Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 7 with full high-level Reference & Solutions content
 const ch11Chem7 = chapterContents["c11-chem-7"];
 if (ch11Chem7) {
   ch11Chem7.htmlOverview = c11Chem7HtmlOverview;
-  if (!ch11Chem7.htmlExercises) {
-    ch11Chem7.htmlExercises = {};
-  }
-  ch11Chem7.htmlExercises["ex-c11-qa"] = c11Chem7HtmlSolutions;
+  ch11Chem7.htmlExercises = {
+    "ex-c11-qa": c11Chem7HtmlSolutions,
+  };
+  ch11Chem7.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem7.mcqs = c11Chem7Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 8 with full high-level Reference & Solutions content
 const ch11Chem8 = chapterContents["c11-chem-8"];
 if (ch11Chem8) {
   ch11Chem8.htmlOverview = c11Chem8HtmlOverview;
-  if (!ch11Chem8.htmlExercises) {
-    ch11Chem8.htmlExercises = {};
-  }
-  ch11Chem8.htmlExercises["ex-c11-qa"] = c11Chem8HtmlSolutions;
+  ch11Chem8.htmlExercises = {
+    "ex-c11-qa": c11Chem8HtmlSolutions,
+  };
+  ch11Chem8.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem8.mcqs = c11Chem8Mcqs;
 }
 
 // Override Class 11 Chemistry Chapter 9 with full high-level Reference & Solutions content
 const ch11Chem9 = chapterContents["c11-chem-9"];
 if (ch11Chem9) {
   ch11Chem9.htmlOverview = c11Chem9HtmlOverview;
-  if (!ch11Chem9.htmlExercises) {
-    ch11Chem9.htmlExercises = {};
-  }
-  ch11Chem9.htmlExercises["ex-c11-qa"] = c11Chem9HtmlSolutions;
+  ch11Chem9.htmlExercises = {
+    "ex-c11-qa": c11Chem9HtmlSolutions,
+  };
+  ch11Chem9.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Chem9.mcqs = c11Chem9Mcqs;
 }
 
 // Override Class 11 Botany Chapter 1 with full high-level Reference & Solutions content
 const ch11Bot1 = chapterContents["c11-bot-1"];
 if (ch11Bot1) {
   ch11Bot1.htmlOverview = c11Bot1HtmlOverview;
-  if (!ch11Bot1.htmlExercises) {
-    ch11Bot1.htmlExercises = {};
-  }
-  ch11Bot1.htmlExercises["ex-c11-qa"] = c11Bot1HtmlSolutions;
+  ch11Bot1.htmlExercises = {
+    "ex-c11-qa": c11Bot1HtmlSolutions,
+  };
+  ch11Bot1.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Bot1.mcqs = c11Bot1Mcqs;
 }
 
 // Override Class 11 Botany Chapter 2 with full high-level Reference & Solutions content
 const ch11Bot2 = chapterContents["c11-bot-2"];
 if (ch11Bot2) {
   ch11Bot2.htmlOverview = c11Bot2HtmlOverview;
-  if (!ch11Bot2.htmlExercises) {
-    ch11Bot2.htmlExercises = {};
-  }
-  ch11Bot2.htmlExercises["ex-c11-qa"] = c11Bot2HtmlSolutions;
+  ch11Bot2.htmlExercises = {
+    "ex-c11-qa": c11Bot2HtmlSolutions,
+  };
+  ch11Bot2.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Bot2.mcqs = c11Bot2Mcqs;
 }
 
 // Override Class 11 Botany Chapter 3 with full high-level Reference & Solutions content
 const ch11Bot3 = chapterContents["c11-bot-3"];
 if (ch11Bot3) {
   ch11Bot3.htmlOverview = c11Bot3HtmlOverview;
-  if (!ch11Bot3.htmlExercises) {
-    ch11Bot3.htmlExercises = {};
-  }
-  ch11Bot3.htmlExercises["ex-c11-qa"] = c11Bot3HtmlSolutions;
+  ch11Bot3.htmlExercises = {
+    "ex-c11-qa": c11Bot3HtmlSolutions,
+  };
+  ch11Bot3.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Bot3.mcqs = c11Bot3Mcqs;
 }
 
 // Override Class 11 Botany Chapter 4 with full high-level Reference & Solutions content
 const ch11Bot4 = chapterContents["c11-bot-4"];
 if (ch11Bot4) {
   ch11Bot4.htmlOverview = c11Bot4HtmlOverview;
-  if (!ch11Bot4.htmlExercises) {
-    ch11Bot4.htmlExercises = {};
-  }
-  ch11Bot4.htmlExercises["ex-c11-qa"] = c11Bot4HtmlSolutions;
+  ch11Bot4.htmlExercises = {
+    "ex-c11-qa": c11Bot4HtmlSolutions,
+  };
+  ch11Bot4.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Bot4.mcqs = c11Bot4Mcqs;
 }
 
 // Override Class 11 Zoology Chapter 1 with full high-level Reference & Solutions content
 const ch11Zoo1 = chapterContents["c11-zoo-1"];
 if (ch11Zoo1) {
   ch11Zoo1.htmlOverview = c11Zoo1HtmlOverview;
-  if (!ch11Zoo1.htmlExercises) {
-    ch11Zoo1.htmlExercises = {};
-  }
-  ch11Zoo1.htmlExercises["ex-c11-qa"] = c11Zoo1HtmlSolutions;
+  ch11Zoo1.htmlExercises = {
+    "ex-c11-qa": c11Zoo1HtmlSolutions,
+  };
+  ch11Zoo1.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Zoo1.mcqs = c11Zoo1Mcqs;
 }
 
 // Override Class 11 Zoology Chapter 2 with full high-level Reference & Solutions content
 const ch11Zoo2 = chapterContents["c11-zoo-2"];
 if (ch11Zoo2) {
   ch11Zoo2.htmlOverview = c11Zoo2HtmlOverview;
-  if (!ch11Zoo2.htmlExercises) {
-    ch11Zoo2.htmlExercises = {};
-  }
-  ch11Zoo2.htmlExercises["ex-c11-qa"] = c11Zoo2HtmlSolutions;
+  ch11Zoo2.htmlExercises = {
+    "ex-c11-qa": c11Zoo2HtmlSolutions,
+  };
+  ch11Zoo2.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Zoo2.mcqs = c11Zoo2Mcqs;
 }
 
 // Override Class 11 Zoology Chapter 3 with full high-level Reference & Solutions content
 const ch11Zoo3 = chapterContents["c11-zoo-3"];
 if (ch11Zoo3) {
   ch11Zoo3.htmlOverview = c11Zoo3HtmlOverview;
-  if (!ch11Zoo3.htmlExercises) {
-    ch11Zoo3.htmlExercises = {};
-  }
-  ch11Zoo3.htmlExercises["ex-c11-qa"] = c11Zoo3HtmlSolutions;
+  ch11Zoo3.htmlExercises = {
+    "ex-c11-qa": c11Zoo3HtmlSolutions,
+  };
+  ch11Zoo3.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Zoo3.mcqs = c11Zoo3Mcqs;
 }
 
 // Override Class 11 Zoology Chapter 4 with full high-level Reference & Solutions content
 const ch11Zoo4 = chapterContents["c11-zoo-4"];
 if (ch11Zoo4) {
   ch11Zoo4.htmlOverview = c11Zoo4HtmlOverview;
-  if (!ch11Zoo4.htmlExercises) {
-    ch11Zoo4.htmlExercises = {};
-  }
-  ch11Zoo4.htmlExercises["ex-c11-qa"] = c11Zoo4HtmlSolutions;
+  ch11Zoo4.htmlExercises = {
+    "ex-c11-qa": c11Zoo4HtmlSolutions,
+  };
+  ch11Zoo4.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Zoo4.mcqs = c11Zoo4Mcqs;
 }
 
-// Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Zoology, Botany)
+// Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Botany, Zoology)
 const c12Subjects = [
   { prefix: "phy", title: "Physics", maxCh: 9 },
   { prefix: "chem", title: "Chemistry", maxCh: 10 },
-  { prefix: "zoo", title: "Zoology", maxCh: 4 },
   { prefix: "bot", title: "Botany", maxCh: 4 },
+  { prefix: "zoo", title: "Zoology", maxCh: 4 },
 ];
 
 c12Subjects.forEach(({ prefix, title, maxCh }) => {
@@ -1720,6 +1847,142 @@ if (ch12Chem10) {
     },
   ];
   ch12Chem10.mcqs = c12Chem10Mcqs;
+}
+
+// Override Class 12 Botany Chapter 1 (Reproduction in Flowering Plants)
+const ch12Bot1 = chapterContents["c12-bot-1"];
+if (ch12Bot1) {
+  ch12Bot1.htmlOverview = c12Bot1HtmlOverview;
+  ch12Bot1.htmlExercises = {
+    "ex-c12-qa": c12Bot1HtmlSolutions,
+  };
+  ch12Bot1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Bot1.mcqs = c12Bot1Mcqs;
+}
+
+// Override Class 12 Botany Chapter 2 (Genetics)
+const ch12Bot2 = chapterContents["c12-bot-2"];
+if (ch12Bot2) {
+  ch12Bot2.htmlOverview = c12Bot2HtmlOverview;
+  ch12Bot2.htmlExercises = {
+    "ex-c12-qa": c12Bot2HtmlSolutions,
+  };
+  ch12Bot2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Bot2.mcqs = c12Bot2Mcqs;
+}
+
+// Override Class 12 Botany Chapter 3 (Biology and Human Welfare)
+const ch12Bot3 = chapterContents["c12-bot-3"];
+if (ch12Bot3) {
+  ch12Bot3.htmlOverview = c12Bot3HtmlOverview;
+  ch12Bot3.htmlExercises = {
+    "ex-c12-qa": c12Bot3HtmlSolutions,
+  };
+  ch12Bot3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Bot3.mcqs = c12Bot3Mcqs;
+}
+
+// Override Class 12 Botany Chapter 4 (Ecology and Environment)
+const ch12Bot4 = chapterContents["c12-bot-4"];
+if (ch12Bot4) {
+  ch12Bot4.htmlOverview = c12Bot4HtmlOverview;
+  ch12Bot4.htmlExercises = {
+    "ex-c12-qa": c12Bot4HtmlSolutions,
+  };
+  ch12Bot4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Bot4.mcqs = c12Bot4Mcqs;
+}
+
+// Override Class 12 Zoology Chapter 1 (Reproduction in Animals)
+const ch12Zoo1 = chapterContents["c12-zoo-1"];
+if (ch12Zoo1) {
+  ch12Zoo1.htmlOverview = c12Zoo1HtmlOverview;
+  ch12Zoo1.htmlExercises = {
+    "ex-c12-qa": c12Zoo1HtmlSolutions,
+  };
+  ch12Zoo1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Zoo1.mcqs = c12Zoo1Mcqs;
+}
+
+// Override Class 12 Zoology Chapter 2 (Genetics and Evolution)
+const ch12Zoo2 = chapterContents["c12-zoo-2"];
+if (ch12Zoo2) {
+  ch12Zoo2.htmlOverview = c12Zoo2HtmlOverview;
+  ch12Zoo2.htmlExercises = {
+    "ex-c12-qa": c12Zoo2HtmlSolutions,
+  };
+  ch12Zoo2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Zoo2.mcqs = c12Zoo2Mcqs;
+}
+
+// Override Class 12 Zoology Chapter 3 (Biology in Human Welfare)
+const ch12Zoo3 = chapterContents["c12-zoo-3"];
+if (ch12Zoo3) {
+  ch12Zoo3.htmlOverview = c12Zoo3HtmlOverview;
+  ch12Zoo3.htmlExercises = {
+    "ex-c12-qa": c12Zoo3HtmlSolutions,
+  };
+  ch12Zoo3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Zoo3.mcqs = c12Zoo3Mcqs;
+}
+
+// Override Class 12 Zoology Chapter 4 (Biotechnology and its Applications)
+const ch12Zoo4 = chapterContents["c12-zoo-4"];
+if (ch12Zoo4) {
+  ch12Zoo4.htmlOverview = c12Zoo4HtmlOverview;
+  ch12Zoo4.htmlExercises = {
+    "ex-c12-qa": c12Zoo4HtmlSolutions,
+  };
+  ch12Zoo4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Zoo4.mcqs = c12Zoo4Mcqs;
 }
 
 

@@ -38,6 +38,9 @@ yarn-error.*
 
 app-example
 
+# scratch scripts
+scratch/
+
 # generated native folders
 /ios
 /android
