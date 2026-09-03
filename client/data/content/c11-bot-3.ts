@@ -1,9 +1,8 @@
 // Class 11 Botany Chapter 3: Plant Anatomy
-// Gold Standard Reference Textbook & 3-Tab Architecture
+// Complete Official Syllabus Coverage & Zero Diagrams
 // Subject: Botany | Class: 11 | Code: c11-bot-3
 
-export const c11Bot3HtmlOverview = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Bot3HtmlOverview = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- Quick Glossary Card with Chapter Subtitle -->
   <div style="background: linear-gradient(135deg, rgba(224, 64, 251, 0.12), rgba(156, 39, 176, 0.12)); border: 1.5px solid rgba(224, 64, 251, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -11,22 +10,22 @@ export const c11Bot3HtmlOverview = `
     <p style="color: #E040FB; margin: 0 0 16px 0; font-size: 14.5px; text-align: center; font-weight: 500;">Essential Core Concepts &amp; Key Definitions &bull; Chapter 3: Plant Anatomy</p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px;">
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Plant Anatomy:</b> The study of the internal structural organization and tissue systems of plants pioneered by Nehemiah Grew (Father of Plant Anatomy).
+        <b style="color: #E040FB;">Plant Anatomy:</b> The scientific investigation of the internal structural cellular organization and tissue systems of plants, established by Nehemiah Grew.
       </div>
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Casparian Strip:</b> An impermeable, suberized and lignified band found in the radial and transverse walls of endodermal cells in roots, blocking the apoplastic pathway.
+        <b style="color: #E040FB;">Casparian Strip:</b> An impermeable, suberized band in the radial and tangential walls of root endodermal cells that blocks apoplastic diffusion and forces symplastic transport into the stele.
       </div>
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Stele:</b> The entire central cylinder of primary vascular plants comprising pericycle, vascular bundles, medullary rays, and pith.
+        <b style="color: #E040FB;">Radial Vascular Bundle:</b> An arrangement wherein primary xylem and primary phloem strands occur in separate alternate radii, universally diagnostic of plant roots.
       </div>
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Open Vascular Bundle:</b> A conjoint vascular bundle containing an active strip of intrafascicular cambium between xylem and phloem, capable of secondary growth (Dicots).
+        <b style="color: #E040FB;">Conjoint Open Bundle:</b> A vascular bundle where xylem and phloem lie along the same radius with an active strip of intrafascicular cambium between them, enabling secondary growth (Dicot Stems).
       </div>
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Bulliform Cells:</b> Large, empty, colorless hygroscopic epidermal cells present on the adaxial surface of grass leaves that roll the leaf inward to prevent water loss during drought.
+        <b style="color: #E040FB;">Bulliform (Motor) Cells:</b> Large, empty, bubble-shaped, colorless epidermal cells present on the adaxial surface of grass leaves that roll the leaf inward to mitigate transpirational water loss during drought.
       </div>
       <div style="background: rgba(15, 23, 42, 0.6); padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
-        <b style="color: #E040FB;">Dendrochronology:</b> The scientific method of dating and estimating the age of woody trees by counting the concentric annual growth rings in secondary xylem.
+        <b style="color: #E040FB;">Mesophyll:</b> The specialized ground tissue system of leaves situated between upper and lower epidermises, housing chloroplasts for carbon assimilation and gas exchange.
       </div>
     </div>
   </div>
@@ -36,238 +35,129 @@ export const c11Bot3HtmlOverview = `
     Tissue systems in plants – Epidermal, ground and vascular tissue systems; Anatomy and functions of dicot and monocot root, stem and leaves
   </h2>
 
-  <!-- PRESERVED IMAGE 1 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NjAgNTYwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYzAwMmIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzYjAwNTQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWMwMDJiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjRTA0MEZCIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNzYwIiBoZWlnaHQ9IjU2MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjM4MCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWx0ZXI9InVybCgjZ2xvdykiPlBsYW50IFRpc3N1ZSBTeXN0ZW1zIEFyY2hpdGVjdHVyZSAoM0QgU3RydWN0dXJlKTwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIDEuIEVwaWRlcm1hbCBUaXNzdWUgU3lzdGVtIC0tPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MTAiIHJ4PSIxNCIgZmlsbD0icmdiYSgyMjQsNjQsMjUxLDAuMDgpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTEzIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBFUElERVJNQUwgU1lTVEVNPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSI1NSIgd2lkdGg9IjIwMiIgaGVpZ2h0PSIxMDAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjIiIHk9Ijc4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGOEJCRDAiPuKAoiBPdXRlciBQcm90ZWN0aXZlIExheWVyPC90ZXh0PgogICAgPHRleHQgeD0iMjIiIHk9IjEwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPlNpbmdsZSBsYXllciBwYXJlbmNoeW1hdG91czwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5XYXh5IEN1dGljbGUgb24gb3V0ZXIgd2FsbDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxNDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5QcmV2ZW50cyB3YXRlciB0cmFuc3BpcmF0aW9uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIxNzAiIHdpZHRoPSIyMDIiIGhlaWdodD0iMTEwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjRTA0MEZCIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSIxOTMiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y4QkJEMCI+4oCiIFN0b21hdGFsIEFwcGFyYXR1czwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5HdWFyZCBDZWxsczogS2lkbmV5IChEaWNvdCk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+R3VhcmQgQ2VsbHM6IER1bWJiZWxsIChNb25vY290KTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5TdWJzaWRpYXJ5IGNlbGxzIGFyb3VuZDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjNjlGMEFFIj5SZWd1bGF0ZXMgdHJhbnNwaXJhdGlvbiAmYW1wOyBnYXM8L3RleHQ+CgogICAgPHJlY3QgeD0iMTIiIHk9IjI5NSIgd2lkdGg9IjIwMiIgaGVpZ2h0PSIxMDAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjIiIHk9IjMxOCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjhCQkQwIj7igKIgQXBwZW5kYWdlczwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIzNDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5UcmljaG9tZXM6IFN0ZW0gaGFpcnMgKG11bHRpKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSIzNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5Sb290IEhhaXJzOiBVbmljZWxsdWxhciBleHRlbmQ8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMzgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+U2VjcmV0b3J5IC8gU2VjcmV0aW9uIGZ1bmN0aW9uPC90ZXh0PgoKICAgIDwhLS0gMi4gR3JvdW5kIFRpc3N1ZSBTeXN0ZW0gLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDcsIDApIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MTAiIHJ4PSIxNCIgZmlsbD0icmdiYSgyNTUsMTQ1LDAsMC4wOCkiIHN0cm9rZT0iI0ZGOTEwMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDx0ZXh0IHg9IjExMyIgeT0iMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGOTEwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi4gR1JPVU5EIFNZU1RFTTwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjEyIiB5PSI1NSIgd2lkdGg9IjIwMiIgaGVpZ2h0PSIxMDAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNGRjkxMDAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIyMiIgeT0iNzgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDE4MCI+4oCiIFBhcmVuY2h5bWE8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5UaGluIGNlbGx1bG9zaWMgcHJpbWFyeSB3YWxsPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMTIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+SXNvZGlhbWV0cmljIGxpdmluZyBjZWxsczwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPlN0b3JhZ2UsIGFzc2ltaWxhdGlvbiwgcGhvdG9zeW50aGVzaXM8L3RleHQ+CgogICAgICA8cmVjdCB4PSIxMiIgeT0iMTcwIiB3aWR0aD0iMjAyIiBoZWlnaHQ9IjExMCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iI0ZGOTEwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIxOTMiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDE4MCI+4oCiIENvbGxlbmNoeW1hPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMjE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+UGVjdGluIHRoaWNrIGNvcm5lciB3YWxsczwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjIzNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPk1lY2hhbmljYWwgZmxleGliaWxpdHk8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5IeXBvZGVybWlzIG9mIGRpY290IHN0ZW1zPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMjcyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzY5RjBBRSI+TGl2aW5nIG1lY2hhbmljYWwgc3VwcG9ydDwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjEyIiB5PSIyOTUiIHdpZHRoPSIyMDIiIGhlaWdodD0iMTAwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjRkY5MTAwIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMjIiIHk9IjMxOCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZEMTgwIj7igKIgU2NsZXJlbmNoeW1hPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMzQwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+SGlnaGx5IGxpZ25pZmllZCBkZWFkIGNlbGxzPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMzYwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+RmliZXJzICZhbXA7IFNjbGVyZWlkcyAoZ3JpdHR5KTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjM4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPlJpZ2lkIHN0cnVjdHVyYWwgc3VwcG9ydDwvdGV4dD4KICAgIDwvZz4KCiAgICA8IS0tIDMuIFZhc2N1bGFyIFRpc3N1ZSBTeXN0ZW0gLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0OTQsIDApIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSI0MTAiIHJ4PSIxNCIgZmlsbD0icmdiYSgwLDIzMCwxMTgsMC4wOCkiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDx0ZXh0IHg9IjExMyIgeT0iMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTY3NiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+My4gVkFTQ1VMQVIgU1lTVEVNPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTIiIHk9IjU1IiB3aWR0aD0iMjAyIiBoZWlnaHQ9IjEwMCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSI3OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgWHlsZW0gJmFtcDsgUGhsb2VtPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+WHlsZW06IFRyYWNoZWlkcyAmYW1wOyBWZXNzZWxzPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMTIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+UGhsb2VtOiBTaWV2ZSBUdWJlICZhbXA7IENvbXBhbmlvbjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjE0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPldhdGVyICZhbXA7IGZvb2QgdHJhbnNsb2NhdGlvbjwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjEyIiB5PSIxNzAiIHdpZHRoPSIyMDIiIGhlaWdodD0iMTEwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNjc2IiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMjIiIHk9IjE5MyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgQnVuZGxlIFR5cGVzPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMjE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+UmFkaWFsOiBTZXBhcmF0ZSByYWRpaSAoUm9vdHMpPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMiIgeT0iMjM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+Q29uam9pbnQgT3BlbjogQ2FtYml1bSAoU3RlbSk8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj5Db25qb2ludCBDbG9zZWQ6IE5vIGNhbWJpdW08L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIyNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjNjlGMEFFIj5Nb25vY290IHN0ZW0gPSBTY2F0dGVyZWQgY2xvc2VkPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTIiIHk9IjI5NSIgd2lkdGg9IjIwMiIgaGVpZ2h0PSIxMDAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIyMiIgeT0iMzE4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiPuKAoiBYeWxlbSBPcmllbnRhdGlvbjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjM0MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPkVuZGFyY2g6IFByb3RveHlsZW0gaW5zaWRlIChTdGVtKTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjM2MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPkV4YXJjaDogUHJvdG94eWxlbSBvdXRzaWRlIChSb290KTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjM4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPkRldmVsb3BtZW50YWwgZGlyZWN0aW9uPC90ZXh0PgogICAgPC9nPgogIDwvZz4KCiAgPCEtLSBCb3R0b20gQmFyIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA0OTUpIj4KICAgIDxyZWN0IHdpZHRoPSI3MjAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0icmdiYSgyMjQsNjQsMjUxLDAuMTUpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzNjAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y4QkJEMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UGxhbnQgQW5hdG9teSDinpQgRXBpZGVybWFsICsgR3JvdW5kICsgVmFzY3VsYXIgVGlzc3VlIFN5c3RlbXMgRm9ybSBDb21wbGV0ZSBQbGFudCBBeGlzPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(224, 64, 251, 0.4); border: 2px solid #E040FB;" alt="3D Plant Tissue Systems Architecture" /><p style="color: #E040FB; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 3.1: 3D Plant Tissue Systems Architecture (Epidermal, Ground &amp; Vascular Tissue Systems)</p></div>
-
-  
-
   <p>
-    Plants possess tissues grouped into specialized tissue systems that perform coordinated physiological functions. Julius von Sachs (1875) classified plant tissues into three fundamental systems based on their location: Epidermal Tissue System, Ground (Fundamental) Tissue System, and Vascular (Conducting) Tissue System.
+    In multicellular vascular plants, cells possessing similar developmental origins and coordinated physiological functions aggregate to form tissues. Julius von Sachs (1875) systematically classified all plant tissues into three fundamental concentric tissue systems based on their anatomical position and structural specialization: the <b>Epidermal Tissue System</b>, the <b>Ground (Fundamental) Tissue System</b>, and the <b>Vascular (Fascicular) Tissue System</b>.
   </p>
 
-  <h3 style="color: #E040FB; margin-top: 18px; font-size: 16.5px;">(i) Tissue Systems in Plants: Epidermal, Ground, and Vascular Tissue Systems</h3>
+  <h3 style="color: #E040FB; margin-top: 18px; font-size: 16.5px;">(i) Plant Tissue Systems: Epidermal, Ground, and Vascular Tissue Systems</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(224, 64, 251, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: #E040FB;">1. Epidermal Tissue System:</b> Outermost protective boundary:
-        <br/>- <b style="color: #E040FB;">Epidermis:</b> Single continuous layer of parenchymatous cells with waxy <b>Cuticle</b> (prevents transpiration; absent in roots).
-        <br/>- <b style="color: #E040FB;">Stomatal Apparatus:</b> Stomatal pore flanked by two specialized <b>Guard Cells</b> (bean-shaped in dicots; dumbbell-shaped in grasses) possessing chloroplasts and differential wall thickening (thick inner wall, thin elastic outer wall) and surrounded by <b>Subsidiary cells</b>.
-        <br/>- <b style="color: #E040FB;">Epidermal Appendages:</b> Unicellular <b>Root Hairs</b> (absorb water) vs Multicellular <b>Trichomes</b> on stems (secretory or water-loss preventive).
+      <li><b style="color: #E040FB;">1. Epidermal Tissue System:</b>
+        <br/>Forms the outermost continuous protective boundary of the entire primary plant body in direct contact with the external environment.
+        <br/>&bull; <i>Epidermis:</i> Single outer layer of tightly packed, elongated, flattened parenchymatous cells with minimal cytoplasm and a prominent central vacuole. The outer tangential walls are coated with a waxy, hydrophobic lipid layer called the <b>Cuticle</b> (composed of cutin), which impedes non-stomatal transpirational water loss. Cuticle is completely absent in subterranean roots.
+        <br/>&bull; <i>Stomatal Apparatus:</i> Microscopic apertures present predominantly on the epidermis of leaves and young green stems, regulating transpiration and photosynthetic gas exchange ($CO_2$ and $O_2$). Each stomatal apparatus comprises:
+          <br/>- <b>Stomatal Aperture (Pore):</b> Central opening through which gases diffuse.
+          <br/>- <b>Guard Cells:</b> A pair of specialized crescent/bean-shaped epidermal cells in Dicots, or elongated <b>dumb-bell shaped</b> cells in Monocots (grasses). Guard cells uniquely contain chloroplasts and display differential cell wall thickening: the inner concave wall facing the pore is heavily thickened, inelastic, and cellulosic, whereas the outer convex wall is thin and highly extensible. Influx of K<sup>+</sup> ions creates an osmotic gradient that draws water in, causing guard cells to become turgid; the thin outer walls bulge outward, pulling the thick inner walls apart and opening the stoma.
+          <br/>- <b>Subsidiary (Accessory) Cells:</b> Specialized adjacent epidermal cells that morphologically differ from ordinary epidermal cells, serving as reservoirs of water and potassium ions.
+        <br/>&bull; <i>Epidermal Appendages:</i>
+          <br/>- <b>Root Hairs:</b> Unicellular, delicate, tubular extensions of epiblema (piliferous layer) cells that dramatically increase root surface area for the absorption of capillary water and dissolved mineral ions from soil.
+          <br/>- <b>Trichomes (Stem Hairs):</b> Multicellular, branched or unbranched epidermal outgrowths on aerial stems and leaves; can be glandular (secreting resins/essential oils) or non-glandular, functioning to reflect harsh solar radiation and prevent transpirational water loss.
       </li>
-      <li><b style="color: #E040FB;">2. Ground (Fundamental) Tissue System:</b> Forms bulk of plant body between epidermis and vascular cylinder:
-        <br/>- <b style="color: #E040FB;">Cortex:</b> Parenchyma, Collenchyma (hypodermis providing mechanical tensile strength in dicot stems), and Endodermis.
-        <br/>- <b style="color: #E040FB;">Pericycle:</b> Outermost layer of stele giving rise to lateral roots and vascular cambium.
-        <br/>- <b style="color: #E040FB;">Pith &amp; Medullary Rays:</b> Central parenchymatous core and radial cellular strands.
-        <br/>- <b style="color: #E040FB;">Mesophyll:</b> Ground tissue of leaves containing chloroplasts, differentiated into upper columnar <b>Palisade</b> and lower loose <b>Spongy</b> parenchyma in dicots.
+      <li style="margin-top: 12px;"><b style="color: #E040FB;">2. Ground (Fundamental) Tissue System:</b>
+        <br/>Constitutes the massive bulk of the interior plant body, encompassing all non-epidermal and non-vascular tissues extending from below the epidermis to the center of the organ.
+        <br/>&bull; <i>Parenchyma:</i> The most abundant primary living tissue, composed of isodiametric, thin-walled cellulosic cells with conspicuous intercellular spaces, functioning in photosynthesis (chlorenchyma), nutrient storage (amyloplasts), and secretion.
+        <br/>&bull; <i>Collenchyma:</i> Living mechanical tissue localized immediately below the epidermis (hypodermis) in herbaceous Dicot stems and leaf petioles. Cells possess uneven, localized corner wall thickenings composed of cellulose, hemicellulose, and <b>pectin</b>; confers high tensile strength and mechanical flexibility against wind-induced swaying without retarding elongation growth.
+        <br/>&bull; <i>Sclerenchyma:</i> Dead, highly lignified mechanical tissue with thick secondary walls and narrow lumens, providing rigid structural support and compressive strength:
+          <br/>- <b>Fibres:</b> Long, narrow, spindle-shaped cells with tapering pointed ends occurring in bundles (e.g., bast fibres).
+          <br/>- <b>Sclereids (Stone Cells):</b> Extremely thick-walled, spherical or cylindrical cells with narrow branched pits, responsible for the gritty texture of pears, sapotas, and guava fruits, and constituting the hard shell of nuts and seed coats of legumes.
+        <br/>&bull; <i>Anatomical Zones of Ground System:</i> Cortex (hypodermis, general cortex, endodermis with suberized Casparian strips), Pericycle, Pith (Medulla), Medullary Rays, and Foliar <b>Mesophyll</b>.
       </li>
-      <li><b style="color: #E040FB;">3. Vascular Tissue System:</b> Complex conducting tissues (Xylem &amp; Phloem):
-        <br/>- <b style="color: #E040FB;">Radial:</b> Xylem and phloem occur in separate bundles arranged alternately on different radii (Characteristic of <b>all Roots</b>).
-        <br/>- <b style="color: #E040FB;">Conjoint:</b> Xylem and phloem lie along the same radius in a single bundle (Stems &amp; Leaves):
-        <br/>&nbsp;&nbsp;&bull; <i>Open:</i> Active cambium present between xylem and phloem (<b>Dicot Stem</b>; allows secondary growth).
-        <br/>&nbsp;&nbsp;&bull; <i>Closed:</i> Cambium completely absent (<b>Monocot Stem</b>; no secondary growth).
+      <li style="margin-top: 12px;"><b style="color: #E040FB;">3. Vascular Tissue System:</b>
+        <br/>The complex conductive network responsible for long-distance bidirectional hydraulic transport throughout the plant body:
+        <br/>&bull; <i>Xylem:</i> Water-conducting complex tissue comprising <b>Tracheids</b> (elongated dead cells with lignified pitted walls and imperforate ends), <b>Vessels (Tracheae)</b> (cylindrical tube-like series of syncytial vessel elements with open perforation plates at end walls), <b>Xylem Fibres</b>, and <b>Xylem Parenchyma</b> (the only living xylem component, storing starch and facilitating radial transport via ray cells).
+          <br/>- <i>Protoxylem &amp; Metaxylem:</i> Protoxylem is the first-formed primary xylem with narrow annular or spiral thickenings; Metaxylem is the later-formed xylem with wider reticulate or pitted vessels.
+          <br/>- <b>Endarch Xylem:</b> Protoxylem lies toward the center (pith) and Metaxylem develops centrifugally toward the periphery (diagnostic of <b>Stems</b>).
+          <br/>- <b>Exarch Xylem:</b> Protoxylem lies toward the periphery and Metaxylem develops centripetally toward the center (diagnostic of <b>Roots</b>).
+        <br/>&bull; <i>Phloem:</i> Sieve-tube elements (enucleated at functional maturity with porous sieve plates), <b>Companion Cells</b> (specialized parenchymatous sister cells maintaining the metabolic and pressure gradients of sieve elements via continuous plasmodesmata), <b>Phloem Parenchyma</b> (stores resins, tannins, latex; absent in most monocots), and <b>Phloem Fibres (Bast Fibres)</b> (commercial jute, hemp, flax fibres).
+        <br/>&bull; <i>Classification of Vascular Bundles:</i>
+          <br/>- <b>Radial Bundles:</b> Primary xylem and phloem strands occur in separate alternate patches arranged along different radii separated by conjunctive parenchymatous tissue (Universal diagnostic hallmark of <b>Roots</b>).
+          <br/>- <b>Conjoint Bundles:</b> Primary xylem and phloem are unified together along the same radius within a single bundle:
+            <br/>&nbsp;&nbsp;&bull; <i>Collateral Open:</i> Phloem lies on the outer side and xylem on the inner side, separated by a meristematic strip of <b>Intrafascicular Cambium</b> capable of producing secondary tissues (<b>Dicot Stems</b>).
+            <br/>&nbsp;&nbsp;&bull; <i>Collateral Closed:</i> Intrafascicular cambium is completely absent; vascular bundle is enclosed by a sclerenchymatous sheath and incapable of secondary growth (<b>Monocot Stems</b>).
+            <br/>&nbsp;&nbsp;&bull; <i>Bicollateral:</i> Phloem occurs on both outer and inner sides of central xylem with an outer and inner cambium strip (e.g., Cucurbitaceae, Solanaceae).
       </li>
     </ul>
   </div>
 
-  <!-- NEW STANDALONE SVG CARD FOR VASCULAR BUNDLES & STOMATA -->
-  
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#E040FB" font-size="14" font-weight="bold" text-anchor="middle">
-        Types of Vascular Bundles &amp; Stomatal Apparatus
-      </text>
-
-      <!-- Row 1: 3 Major Vascular Bundle Architectures -->
-      <g transform="translate(20, 42)">
-        <!-- Radial -->
-        <rect x="0" y="0" width="140" height="110" rx="6" fill="rgba(38, 198, 218, 0.15)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="70" y="20" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">1. Radial</text>
-        <text x="70" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Separate Radii</text>
-        <circle cx="70" cy="65" r="20" fill="none" stroke="#26C6DA" stroke-width="1.5"/>
-        <circle cx="70" cy="55" r="4" fill="#69F0AE"/>
-        <circle cx="70" cy="75" r="4" fill="#69F0AE"/>
-        <circle cx="60" cy="65" r="4" fill="#FF8A65"/>
-        <circle cx="80" cy="65" r="4" fill="#FF8A65"/>
-        <text x="70" y="96" fill="#80DEEA" font-size="8.5" text-anchor="middle">Xylem &amp; Phloem alternate</text>
-        <text x="70" y="106" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">All Roots (Dicot &amp; Monocot)</text>
-
-        <!-- Conjoint Open -->
-        <rect x="160" y="0" width="140" height="110" rx="6" fill="rgba(224, 64, 251, 0.15)" stroke="#E040FB" stroke-width="1.2"/>
-        <text x="230" y="20" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">2. Conjoint Open</text>
-        <text x="230" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Cambium Present</text>
-        <rect x="205" y="48" width="50" height="14" rx="2" fill="#FF8A65"/>
-        <line x1="205" y1="65" x2="255" y2="65" stroke="#FFE082" stroke-width="2"/>
-        <rect x="205" y="68" width="50" height="16" rx="2" fill="#69F0AE"/>
-        <text x="230" y="96" fill="#EA80FC" font-size="8.5" text-anchor="middle">Phloem / Cambium / Xylem</text>
-        <text x="230" y="106" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Dicot Stem (Secondary Growth)</text>
-
-        <!-- Conjoint Closed -->
-        <rect x="320" y="0" width="140" height="110" rx="6" fill="rgba(255, 145, 0, 0.15)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="390" y="20" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">3. Conjoint Closed</text>
-        <text x="390" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Cambium Absent</text>
-        <rect x="365" y="48" width="50" height="16" rx="2" fill="#FF8A65"/>
-        <rect x="365" y="66" width="50" height="18" rx="2" fill="#69F0AE"/>
-        <text x="390" y="96" fill="#FFB74D" font-size="8.5" text-anchor="middle">No Secondary Growth</text>
-        <text x="390" y="106" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Monocot Stem &amp; All Leaves</text>
-      </g>
-
-      <!-- Row 2: Stomatal Guard Cell Types -->
-      <g transform="translate(20, 162)">
-        <rect width="460" height="100" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(224, 64, 251, 0.3)"/>
-        <text x="230" y="18" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">
-          Stomatal Apparatus: Dicot vs Monocot Guard Cells
-        </text>
-
-        <!-- Left: Bean-shaped Dicots -->
-        <g transform="translate(40, 26)">
-          <ellipse cx="60" cy="35" rx="16" ry="24" fill="none" stroke="#69F0AE" stroke-width="3"/>
-          <ellipse cx="78" cy="35" rx="16" ry="24" fill="none" stroke="#69F0AE" stroke-width="3"/>
-          <ellipse cx="69" cy="35" rx="4" ry="12" fill="#0F172A"/>
-          <text x="70" y="70" fill="#FFFFFF" font-size="9.5" font-weight="bold" text-anchor="middle">Kidney / Bean Shaped</text>
-          <text x="70" y="82" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Dicot Leaves (Dorsiventral)</text>
-        </g>
-
-        <!-- Right: Dumbbell-shaped Monocots -->
-        <g transform="translate(260, 26)">
-          <!-- Dumbbell sketch -->
-          <circle cx="50" cy="35" r="8" fill="#FF8A65"/>
-          <circle cx="90" cy="35" r="8" fill="#FF8A65"/>
-          <rect x="56" y="32" width="28" height="6" fill="#FF8A65"/>
-          <text x="70" y="70" fill="#FFFFFF" font-size="9.5" font-weight="bold" text-anchor="middle">Dumbbell Shaped</text>
-          <text x="70" y="82" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Grasses &amp; Monocots (Isobilateral)</text>
-        </g>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.4: Architectural Classification of Plant Vascular Bundles (Radial, Conjoint Open/Closed) &amp; Stomatal Apparatus Morphology
-  </div>
-</div>
-
-
-  <!-- PRESERVED IMAGE 2 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NjAgNTYwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYzAwMmIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzYjAwNTQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWMwMDJiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNzYwIiBoZWlnaHQ9IjU2MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDIpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjM4MCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWNvdCB2cyBNb25vY290IFJvb3QgJmFtcDsgU3RlbSBDcm9zcy1TZWN0aW9uYWwgQW5hdG9teTwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIDEuIERpY290IHZzIE1vbm9jb3QgUm9vdCAtLT4KICAgIDxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iNDIwIiByeD0iMTQiIGZpbGw9InJnYmEoMjI0LDY0LDI1MSwwLjA2KSIgc3Ryb2tlPSIjRTA0MEZCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE3NSIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y4QkJEMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+MS4gUm9vdCBBbmF0b215IChEaWNvdCB2cyBNb25vY290KTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxNSIgeT0iNTAiIHdpZHRoPSIzMjAiIGhlaWdodD0iMTc1IiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjRTA0MEZCIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjI1IiB5PSI3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFMDQwRkIiPkRpY290IFJvb3QgKGUuZy4gU3VuZmxvd2VyKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iOTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgRXBpYmxlbWEgd2l0aCB1bmljZWxsdWxhciByb290IGhhaXJzLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIxMTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgRW5kb2Rlcm1pcyB3aXRoIHN1YmVyaW4gQ2FzcGFyaWFuIFN0cmlwcy48L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMTM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+4oCiIERpYXJjaCB0byBUZXRyYXJjaCAoMi00KSBSYWRpYWwgRXhhcmNoIGJ1bmRsZXMuPC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjE1NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPuKAoiBJbmNvbnNwaWN1b3VzIHNtYWxsIGNlbnRyYWwgUGl0aC48L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMTc0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzY5RjBBRSI+4oCiIFBlcmljeWNsZSBnaXZlcyByaXNlIHRvIGxhdGVyYWwgcm9vdHMgJmFtcDsgY2FtYml1bS48L3RleHQ+CgogICAgPHJlY3QgeD0iMTUiIHk9IjIzNSIgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxNzAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjUiIHk9IjI1NyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFMDQwRkIiPk1vbm9jb3QgUm9vdCAoZS5nLiBNYWl6ZSk6PC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjI3OSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPuKAoiBQb2x5YXJjaCAoJmd0OzYpIFJhZGlhbCBFeGFyY2ggVmFzY3VsYXIgQnVuZGxlcy48L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMjk5IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+4oCiIExhcmdlLCB3ZWxsLWRldmVsb3BlZCBjZW50cmFsIFBpdGguPC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjMxOSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPuKAoiBDYXNwYXJpYW4gc3RyaXBzIHByZXNlbnQgaW4gZW5kb2Rlcm1pcy48L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMzM5IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+4oCiIE5PIGNhbWJpdW0gZm9ybWF0aW9uIOKelCBOTyBzZWNvbmRhcnkgZ3Jvd3RoLjwvdGV4dD4KCiAgICA8IS0tIDIuIERpY290IHZzIE1vbm9jb3QgU3RlbSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM3MCwgMCkiPgogICAgICA8cmVjdCB3aWR0aD0iMzUwIiBoZWlnaHQ9IjQyMCIgcng9IjE0IiBmaWxsPSJyZ2JhKDIyNCw2NCwyNTEsMC4wNikiIHN0cm9rZT0iI0UwNDBGQiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDx0ZXh0IHg9IjE3NSIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y4QkJEMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi4gU3RlbSBBbmF0b215IChEaWNvdCB2cyBNb25vY290KTwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjE1IiB5PSI1MCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxNzUiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIyNSIgeT0iNzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIj5EaWNvdCBTdGVtIChlLmcuIFN1bmZsb3dlcik6PC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iOTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgQ29sbGVuY2h5bWF0b3VzIEh5cG9kZXJtaXMuPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMTE0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+4oCiIEVuZG9kZXJtaXMgZm9ybXMgU3RhcmNoIFNoZWF0aC48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIxMzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgUmluZyBBcnJhbmdlbWVudCBvZiBDb25qb2ludCBDb2xsYXRlcmFsIE9wZW4gYnVuZGxlcy48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIxNTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgTGFyZ2UgY2VudHJhbCBQaXRoICZhbXA7IE1lZHVsbGFyeSBSYXlzLjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjE3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiM2OUYwQUUiPuKAoiBJbnRyYWZhc2NpY3VsYXIgQ2FtYml1bSBwcmVzZW50IChzZWNvbmRhcnkgZ3Jvd3RoKS48L3RleHQ+CgogICAgICA8cmVjdCB4PSIxNSIgeT0iMjM1IiB3aWR0aD0iMzIwIiBoZWlnaHQ9IjE3MCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iI0UwNDBGQiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIyNTciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIj5Nb25vY290IFN0ZW0gKGUuZy4gTWFpemUpOjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjI3OSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPuKAoiBTY2xlcmVuY2h5bWF0b3VzIEh5cG9kZXJtaXMuPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMjk5IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+4oCiIFVuZGlmZmVyZW50aWF0ZWQgR3JvdW5kIFRpc3N1ZSAobm8gY29ydGV4L3BpdGggc3BsaXQpLjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjMxOSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPuKAoiBTY2F0dGVyZWQgQ29uam9pbnQgQ29sbGF0ZXJhbCBDbG9zZWQgYnVuZGxlcy48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIzMzkiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj7igKIgTHlzaWdlbm91cyBXYXRlciBDYXZpdGllcyBpbnNpZGUgYnVuZGxlcy48L3RleHQ+CiAgICA8L2c+CiAgPC9nPgoKICA8IS0tIEJvdHRvbSBCYXIgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDQ5NSkiPgogICAgPHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSJyZ2JhKDIyNCw2NCwyNTEsMC4xNSkiIHN0cm9rZT0iI0UwNDBGQiIgc3Ryb2tlLXdpZHRoPSIxLjgiLz4KICAgIDx0ZXh0IHg9IjM2MCIgeT0iMzEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjhCQkQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Sb290czogUmFkaWFsIEV4YXJjaCB8IERpY290IFN0ZW06IFJpbmcgT3BlbiBFbmRhcmNoIHwgTW9ub2NvdCBTdGVtOiBTY2F0dGVyZWQgQ2xvc2VkPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(224, 64, 251, 0.4); border: 2px solid #E040FB;" alt="3D Dicot vs Monocot Root and Stem Anatomy" /><p style="color: #E040FB; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 3.2: 3D Dicot vs Monocot Root &amp; Stem Cross-Sectional Anatomy</p></div>
-
-  
-
   <h3 style="color: #E040FB; margin-top: 22px; font-size: 16.5px;">(ii) Anatomy and Functions of Dicot and Monocot Roots</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(224, 64, 251, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
     <p style="margin: 0; line-height: 1.8;">
-      Roots absorb water/minerals and provide subterranean anchorage:
-      <br/>&bull; <b style="color: #E040FB;">Dicot Root (e.g., Sunflower, Gram):</b>
-        <br/>- Epiblema (Piliferous layer) with unicellular root hairs; cuticle absent.
-        <br/>- Massive multi-layered parenchymatous cortex with intercellular spaces.
-        <br/>- <b style="color: #E040FB;">Endodermis:</b> Barrel-shaped cells with suberized <b>Casparian strips</b> on radial/tangential walls; forces water symplastically into vascular cylinder.
-        <br/>- Pericycle gives origin to lateral roots and portions of secondary vascular cambium.
-        <br/>- Vascular bundles: <b>Diarch to Hexarch (2 to 6 xylem bundles)</b>; xylem is <b>Exarch</b> (protoxylem points outward toward periphery, metaxylem inward).
-        <br/>- Pith is extremely small or completely absent.
-      <br/>&bull; <b style="color: #E040FB;">Monocot Root (e.g., Maize):</b>
-        <br/>- Similar epiblema, cortex, and endodermis with Casparian strips.
-        <br/>- Vascular bundles: <b>Polyarch (more than 6, often 20-30 xylem bundles)</b>.
-        <br/>- <b>Pith is large, conspicuous, and well-developed</b>.
-        <br/>- Completely lacks secondary growth (cambium never develops).
+      Roots serve primary physiological roles in absorbing water and mineral nutrients from soil and anchoring the plant securely into the subterranean substrate:
     </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 10px;">
+      <li><b style="color: #E040FB;">1. Dicotyledonous Root (e.g., Sunflower, Gram):</b>
+        <br/>&bull; <i>Epiblema (Rhizodermis):</i> Outermost single layer of thin-walled, compactly arranged living cells without cuticle or stomata; bears abundant tubular unicellular <b>root hairs</b> for hydraulic intake.
+        <br/>&bull; <i>Cortex:</i> Massive, multi-layered ground zone composed of rounded, thin-walled parenchyma with distinct intercellular air spaces facilitating gas exchange.
+        <br/>&bull; <i>Endodermis:</i> Innermost single cortical layer of tightly interlocked barrel-shaped cells completely lacking intercellular spaces. Radial and transverse tangential walls are impregnated with an impermeable, waxy band of <b>Suberin</b> termed the <b>Casparian Strip</b>. This Casparian barrier blocks the passive apoplastic movement of water and ions, forcing all absorbed solutes to pass through the selectively permeable plasma membrane into the symplast, functioning as a physiological checkpoint.
+        <br/>&bull; <i>Pericycle:</i> A single layer of thick-walled parenchymatous cells immediately below the endodermis. It is critically important because:
+          <br/>- All <b>lateral roots arise endogenously</b> from the pericycle.
+          <br/>- Portions of the <b>vascular cambium</b> and the entire cork cambium originate from pericycle dedifferentiation during secondary growth.
+        <br/>&bull; <i>Vascular System:</i> <b>Radial arrangement with 2 to 6 (diarch to hexarch, typically tetrarch)</b> distinct xylem and phloem bundles separated by parenchymatous <b>conjunctive tissue</b>. Xylem is characteristically <b>Exarch</b> (protoxylem points outward toward the pericycle, metaxylem develops inward).
+        <br/>&bull; <i>Pith (Medulla):</i> Extremely small, inconspicuous, or completely absent due to centripetal metaxylem convergence.
+      </li>
+      <li style="margin-top: 12px;"><b style="color: #E040FB;">2. Monocotyledonous Root (e.g., Maize):</b>
+        <br/>&bull; Exhibits identical broad structural zones (epiblema, parenchymatous cortex, endodermis with Casparian strips, and pericycle).
+        <br/>&bull; <i>Polyarch Vascular Bundles:</i> Contains numerous radial vascular bundles, characteristically <b>more than 6 (polyarch, often 8 to 20 or more)</b> alternating xylem and phloem groups.
+        <br/>&bull; <i>Large, Well-Developed Pith:</i> Possesses a prominent, large, well-developed central parenchymatous pith storing nutrients.
+        <br/>&bull; <i>Absence of Secondary Growth:</i> The pericycle produces lateral roots only; vascular cambium never develops, and monocot roots completely lack secondary thickening.
+      </li>
+    </ul>
   </div>
 
   <h3 style="color: #E040FB; margin-top: 22px; font-size: 16.5px;">(iii) Anatomy and Functions of Dicot and Monocot Stems</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(224, 64, 251, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
     <p style="margin: 0; line-height: 1.8;">
-      Stems bear leaves, flowers, fruits, and conduct fluids:
-      <br/>&bull; <b style="color: #E040FB;">Dicot Stem (e.g., Sunflower):</b>
-        <br/>- Epidermis with cuticular cover and multicellular trichomes.
-        <br/>- <b style="color: #E040FB;">Hypodermis:</b> 3-5 layers of <b>Collenchyma</b> providing tensile mechanical flexibility to young stems.
-        <br/>- Endodermis rich in starch grains (termed <b>Starch Sheath</b>).
-        <br/>- Pericycle: Sclerenchymatous patches forming hard semilunar caps over vascular bundles.
-        <br/>- Vascular bundles: Arranged in a neat <b>broken ring (Eustele)</b>; <b>Conjoint, Collateral, Open</b> with active cambium strip; <b>Endarch xylem</b> (protoxylem faces center, metaxylem faces periphery).
-        <br/>- Large central parenchymatous Pith with radiating Medullary Rays.
-      <br/>&bull; <b style="color: #E040FB;">Monocot Stem (e.g., Maize):</b>
-        <br/>- Epidermis without trichomes.
-        <br/>- <b>Hypodermis is Sclerenchymatous</b> (thick-walled dead cells).
-        <br/>- Ground tissue is undifferentiated, mass of parenchyma extending from hypodermis to center.
-        <br/>- Vascular bundles: <b>Numerous, scattered throughout ground tissue (Atactostele)</b>; smaller and crowded toward periphery, larger toward center; each bundle enclosed in a <b>Sclerenchymatous Bundle Sheath</b>; <b>Conjoint, Collateral, Closed</b>; xylem vessels arranged in 'Y' or 'V' shape enclosing a <b>Lysigenous water cavity</b>.
+      Stems support the aerial foliage, optimize solar intercept for photosynthesis, and mediate bidirectional vascular conduction between subterranean roots and leaves:
     </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 10px;">
+      <li><b style="color: #E040FB;">1. Dicotyledonous Stem (e.g., Sunflower):</b>
+        <br/>&bull; <i>Epidermis:</i> Single layer of cutinized parenchymatous cells with a distinct outer <b>Cuticle</b>, interspersed with stomata and multicellular unbranched/branched <b>Trichomes</b>.
+        <br/>&bull; <i>Cortex (Three Distinct Sub-Zones):</i>
+          <br/>- <b>Hypodermis:</b> 3 to 5 sub-epidermal layers of <b>Collenchyma</b> possessing heavy pectin corner wall thickenings, conferring mechanical elasticity and tensile strength to withstand strong wind gusts.
+          <br/>- <b>General Cortex:</b> Several layers of rounded, thin-walled parenchyma cells with conspicuous intercellular spaces, storing water and nutrients.
+          <br/>- <b>Endodermis (Starch Sheath):</b> Innermost cortical boundary composed of tightly joined barrel-shaped cells laden with abundant starch grains (referred to as the Starch Sheath; Casparian strips are absent in stems).
+        <br/>&bull; <i>Pericycle:</i> Heterogeneous zone situated between the endodermis and vascular bundles; characteristically contains semilunar patches of hard, lignified <b>Sclerenchyma (Hard Bast)</b> capping the phloem of each vascular bundle, alternating with thin-walled parenchyma.
+        <br/>&bull; <i>Vascular Cylinder (Eustele):</i> Vascular bundles are arranged in a <b>characteristic concentric broken ring (Eustele)</b> surrounding the central pith:
+          <br/>- Each bundle is <b>Conjoint, Collateral, and Open</b> (possessing a thin meristematic strip of intrafascicular cambium between outer phloem and inner xylem).
+          <br/>- Xylem is <b>Endarch</b> (protoxylem directed centripetally toward the central pith, metaxylem directed centrifugally toward the periphery).
+        <br/>&bull; <i>Pith &amp; Medullary Rays:</i> Large central core of polygonal, thin-walled parenchymatous cells (pith) with distinct radiating vertical parenchymatous bands (<b>Medullary Rays</b>) extending between adjacent vascular bundles, mediating radial conduction.
+      </li>
+      <li style="margin-top: 12px;"><b style="color: #E040FB;">2. Monocotyledonous Stem (e.g., Maize):</b>
+        <br/>&bull; <i>Epidermis:</i> Covered by a robust cuticle; trichomes and stem hairs are typically absent.
+        <br/>&bull; <i>Hypodermis:</i> 2 to 3 layers of compactly arranged, heavily lignified <b>Sclerenchyma</b>, giving rigid peripheral mechanical strength.
+        <br/>&bull; <i>Undifferentiated Ground Tissue:</i> The ground tissue is not demarcated into cortex, endodermis, pericycle, or pith; instead, it consists of a continuous, uniform parenchymatous matrix extending from the hypodermis across the entire cross-section.
+        <br/>&bull; <i>Scattered Vascular Bundles (Atactostele):</i> Vascular bundles are <b>numerous and scattered throughout the ground tissue (Atactostele)</b>:
+          <br/>- Peripheral bundles are smaller in size and densely crowded together, while central bundles are progressively larger and widely spaced.
+          <br/>- Each individual vascular bundle is completely enveloped by a prominent, protective <b>Sclerenchymatous Bundle Sheath</b>.
+          <br/>- Bundles are <b>Conjoint, Collateral, and Closed</b> (completely devoid of cambium; no secondary growth).
+          <br/>- Xylem vessels are arranged in a characteristic <b>'Y' or 'V' configuration</b>: two large lateral metaxylem vessels form the arms, and one or two smaller protoxylem elements form the base.
+          <br/>- Disintegration of the earliest-formed protoxylem element and adjacent parenchyma creates a distinct <b>Lysigenous Water Cavity (Protoxylem Lacuna)</b> inside each mature bundle. Phloem parenchyma is completely absent.
+      </li>
+    </ul>
   </div>
-
-  <!-- NEW STANDALONE SVG CARD FOR SECONDARY GROWTH -->
-  
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#E040FB" font-size="14" font-weight="bold" text-anchor="middle">
-        Secondary Growth in Dicot Stem &amp; Annual Rings Formation
-      </text>
-
-      <!-- Left Box: Cambial Ring Activity -->
-      <g transform="translate(25, 45)">
-        <rect width="210" height="135" rx="6" fill="rgba(224, 64, 251, 0.15)" stroke="#E040FB" stroke-width="1.2"/>
-        <text x="105" y="20" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">Vascular Cambium Activity</text>
-        <text x="105" y="38" fill="#FFFFFF" font-size="9.5" text-anchor="middle">Fascicular + Interfascicular Cambium</text>
-        <text x="105" y="52" fill="#CBD5E1" font-size="8.5" text-anchor="middle">forms a continuous meristematic ring</text>
-        <text x="105" y="74" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">&bull; Inside: Secondary Xylem (Wood)</text>
-        <text x="105" y="90" fill="#CBD5E1" font-size="8.5" text-anchor="middle">(Produced 8-10x more vigorously)</text>
-        <text x="105" y="110" fill="#FF8A65" font-size="9" font-weight="bold" text-anchor="middle">&bull; Outside: Secondary Phloem (Bast)</text>
-        <text x="105" y="126" fill="#FFE082" font-size="8" text-anchor="middle">Crushes primary tissues over time</text>
-      </g>
-
-      <!-- Right Box: Annual Rings (Spring vs Autumn Wood) -->
-      <g transform="translate(260, 45)">
-        <rect width="215" height="135" rx="6" fill="rgba(255, 145, 0, 0.15)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">Annual Rings (Dendrochronology)</text>
-        <text x="107" y="40" fill="#69F0AE" font-size="9.5" font-weight="bold" text-anchor="middle">1. Spring Wood (Early Wood):</text>
-        <text x="107" y="54" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Active cambium; wider vessels, low density</text>
-        <text x="107" y="76" fill="#FFAB91" font-size="9.5" font-weight="bold" text-anchor="middle">2. Autumn Wood (Late Wood):</text>
-        <text x="107" y="90" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Less active; narrow vessels, high density</text>
-        <text x="107" y="112" fill="#FFE082" font-size="9" font-weight="bold" text-anchor="middle">1 Spring + 1 Autumn = 1 Annual Ring</text>
-        <text x="107" y="126" fill="#FFFFFF" font-size="8" text-anchor="middle">Counts tree age in temperate zones</text>
-      </g>
-
-      <!-- Bottom: Periderm & Cork Cambium -->
-      <g transform="translate(25, 192)">
-        <rect width="450" height="75" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="225" y="20" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">
-          Periderm Formation (Secondary Protective Cover)
-        </text>
-        <text x="225" y="38" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
-          <b>Phellogen (Cork Cambium)</b> develops in outer cortex:
-        </text>
-        <text x="120" y="58" fill="#FF8A65" font-size="9" text-anchor="middle">Outside: <b>Phellem (Cork)</b> with Suberin</text>
-        <text x="330" y="58" fill="#69F0AE" font-size="9" text-anchor="middle">Inside: <b>Phelloderm (Secondary Cortex)</b></text>
-        <text x="225" y="70" fill="#FFE082" font-size="8" font-weight="bold" text-anchor="middle">Phellogen + Phellem + Phelloderm = Periderm (with aerating Lenticels)</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.5: Secondary Growth Mechanics in Dicot Stems: Cambial Ring Activity, Annual Rings (Dendrochronology) &amp; Periderm Architecture
-  </div>
-</div>
-
-
-  <!-- PRESERVED IMAGE 3 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NjAgNTYwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYzAwMmIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMzYjAwNTQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWMwMDJiIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNzYwIiBoZWlnaHQ9IjU2MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDMpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjM4MCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EaWNvdCAoRG9yc2l2ZW50cmFsKSB2cyBNb25vY290IChJc29iaWxhdGVyYWwpIExlYWYgQW5hdG9teTwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIDEuIERvcnNpdmVudHJhbCBEaWNvdCBMZWFmIC0tPgogICAgPHJlY3Qgd2lkdGg9IjM1MCIgaGVpZ2h0PSI0MjAiIHJ4PSIxNCIgZmlsbD0icmdiYSgyMjQsNjQsMjUxLDAuMDYpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTc1IiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjhCQkQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBEaWNvdCAoRG9yc2l2ZW50cmFsKSBMZWFmPC90ZXh0PgoKICAgIDxyZWN0IHg9IjE1IiB5PSI1MCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSIzNTAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjUiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0UwNDBGQiI+4oCiIEVwaWRlcm1pcyAmYW1wOyBTdG9tYXRhOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSI5NyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgRGlzdGluY3QgVXBwZXIgKEFkYXhpYWwpICZhbXA7IExvd2VyIChBYmF4aWFsKSBlcGlkZXJtaXMuPC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjExNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgSHlwb3N0b21hdG91czogU3RvbWF0YSBwcmVzZW50IG1vc3RseSBvbiBsb3dlciBzdXJmYWNlLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyNSIgeT0iMTQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0UwNDBGQiI+4oCiIERpZmZlcmVudGlhdGVkIE1lc29waHlsbDo8L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMTY3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+ICAxLiBQYWxpc2FkZSBQYXJlbmNoeW1hOiBFbG9uZ2F0ZWQgY29sdW1uYXIgY2VsbHMgb248L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMTg3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+ICAgICBhZGF4aWFsIHNpZGUgd2l0aCBhYnVuZGFudCBjaGxvcm9wbGFzdHMuPC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjIwNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgMi4gU3Bvbmd5IFBhcmVuY2h5bWE6IExvb3NlIHNwaGVyaWNhbCBjZWxscyB3aXRoPC90ZXh0PgogICAgPHRleHQgeD0iMjUiIHk9IjIyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgICAgbGFyZ2UgYWlyIGNhdml0aWVzIGZvciBnYXMgZXhjaGFuZ2UuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjI1IiB5PSIyNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIj7igKIgVmFzY3VsYXIgU3lzdGVtICZhbXA7IFZlbmF0aW9uOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIyNzciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj4gIFZhc2N1bGFyIGJ1bmRsZXMgZW5jbG9zZWQgYnkgcGFyZW5jaHltYXRvdXM8L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMjk3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+ICBCdW5kbGUgU2hlYXRoLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIzMTciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj4gIFJldGljdWxhdGUgVmVuYXRpb24g4p6UIFZhcmlhYmxlIGJ1bmRsZSBzaXplcy48L3RleHQ+CgogICAgPCEtLSAyLiBJc29iaWxhdGVyYWwgTW9ub2NvdCBMZWFmIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzcwLCAwKSI+CiAgICAgIDxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iNDIwIiByeD0iMTQiIGZpbGw9InJnYmEoMjI0LDY0LDI1MSwwLjA2KSIgc3Ryb2tlPSIjRTA0MEZCIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPHRleHQgeD0iMTc1IiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRjhCQkQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4yLiBNb25vY290IChJc29iaWxhdGVyYWwpIExlYWY8L3RleHQ+CgogICAgICA8cmVjdCB4PSIxNSIgeT0iNTAiIHdpZHRoPSIzMjAiIGhlaWdodD0iMzUwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjRTA0MEZCIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgICAgPHRleHQgeD0iMjUiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0UwNDBGQiI+4oCiIEVwaWRlcm1pcyAmYW1wOyBTdG9tYXRhOjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9Ijk3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+ICBTdG9tYXRhIGVxdWFsIG9uIGJvdGggYWRheGlhbCBhbmQgYWJheGlhbCBzdXJmYWNlczwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjExNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgKEFtcGhpc3RvbWF0b3VzKS48L3RleHQ+CgogICAgICA8dGV4dCB4PSIyNSIgeT0iMTQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0UwNDBGQiI+4oCiIFVuZGlmZmVyZW50aWF0ZWQgTWVzb3BoeWxsOjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjE2NyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNGRkYiPiAgTWVzb3BoeWxsIG5vdCBkaWZmZXJlbnRpYXRlZCBpbnRvIHBhbGlzYWRlL3Nwb25neS48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIxODciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj4gIFVuaWZvcm0gcm91bmRlZCBjaGxvcmVuY2h5bWF0b3VzIGNlbGxzLjwvdGV4dD4KCiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIyMTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTA0MEZCIj7igKIgQnVsbGlmb3JtIE1vdG9yIENlbGxzIChHcmFzc2VzKTo8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIyMzciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj4gIExhcmdlLCBlbXB0eSwgY29sb3JsZXNzIGVwaWRlcm1hbCBjZWxscyBvbiBhZGF4aWFsIHNpZGUuPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMjU3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0ZGRiI+ICBUdXJnb3IgbG9zcyBkdXJpbmcgZHJvdWdodCBjYXVzZXMgbGVhZiByb2xsaW5nIHRvPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMjc3IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iIzY5RjBBRSI+ICBtaW5pbWl6ZSB0cmFuc3BpcmF0aW9uIHdhdGVyIGxvc3MhPC90ZXh0PgoKICAgICAgPHRleHQgeD0iMjUiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFMDQwRkIiPuKAoiBQYXJhbGxlbCBWZW5hdGlvbjo8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIzMjciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRkZGIj4gIE5lYXJseSBzaW1pbGFyLXNpemVkIHZhc2N1bGFyIGJ1bmRsZXMuPC90ZXh0PgogICAgPC9nPgogIDwvZz4KCiAgPCEtLSBCb3R0b20gQmFyIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLCA0OTUpIj4KICAgIDxyZWN0IHdpZHRoPSI3MjAiIGhlaWdodD0iNTAiIHJ4PSIxMCIgZmlsbD0icmdiYSgyMjQsNjQsMjUxLDAuMTUpIiBzdHJva2U9IiNFMDQwRkIiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzNjAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNC41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0Y4QkJEMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGljb3QgTGVhZjogUGFsaXNhZGUvU3Bvbmd5IE1lc29waHlsbCB8IE1vbm9jb3QgTGVhZjogQnVsbGlmb3JtIENlbGxzICZhbXA7IFBhcmFsbGVsIFZlaW5zPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(224, 64, 251, 0.4); border: 2px solid #E040FB;" alt="3D Dicot vs Monocot Leaf Anatomy" /><p style="color: #E040FB; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 3.3: 3D Dicot (Dorsiventral) vs Monocot (Isobilateral) Leaf Anatomy &amp; Bulliform Cells</p></div>
-
-  
 
   <h3 style="color: #E040FB; margin-top: 22px; font-size: 16.5px;">(iv) Anatomy and Functions of Dicot (Dorsiventral) and Monocot (Isobilateral) Leaves</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(224, 64, 251, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
-    <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: #E040FB;">Dicot Leaf (Dorsiventral Leaf, e.g., Mango, Sunflower):</b>
-        <br/>- Upper (Adaxial) epidermis has a thicker cuticle and fewer stomata (or hypostomatic: stomata restricted to lower abaxial epidermis).
-        <br/>- <b>Mesophyll is differentiated</b> into two distinct layers:
-        <br/>1. <i>Palisade Parenchyma:</i> Upper layer of elongated, columnar cells oriented vertically, packed tightly with chloroplasts for maximum light capture.
-        <br/>2. <i>Spongy Parenchyma:</i> Lower layer of loosely arranged, oval/irregular cells with large air cavities facilitating rapid respiratory and photosynthetic gas exchange.
-        <br/>- Vascular bundles are reticulate, variable in size, surrounded by parenchymatous bundle sheath.
+    <p style="margin: 0; line-height: 1.8;">
+      Leaves represent the primary organs of light harvesting, photosynthesis, and transpirational pull:
+    </p>
+    <ul style="padding-left: 20px; line-height: 1.8; margin-top: 10px;">
+      <li><b style="color: #E040FB;">1. Dicotyledonous Leaf (Dorsiventral Leaf, e.g., Mango, Sunflower):</b>
+        <br/>Held horizontally with distinct upper and lower surfaces receiving unequal solar irradiance:
+        <br/>&bull; <i>Epidermis:</i> Upper <b>Adaxial Epidermis</b> is covered by a thick, impervious cuticle and has few or no stomata. Lower <b>Abaxial Epidermis</b> possesses a thinner cuticle and harbors abundant stomata flanked by <b>kidney/bean-shaped guard cells</b> (<b>Hypostomatic leaf</b> condition).
+        <br/>&bull; <i>Mesophyll (Differentiated Ground Tissue):</i> The photosynthetic tissue between upper and lower epidermises is clearly partitioned into two distinct structural strata:
+          <br/>- <b>Palisade Parenchyma:</b> Situated adaxially immediately below the upper epidermis; composed of vertically elongated, cylindrical, columnar cells packed closely in parallel rows with minimal intercellular spaces, containing the highest concentration of chloroplasts to maximize photosynthetic photon capture.
+          <br/>- <b>Spongy Parenchyma:</b> Situated abaxially above the lower epidermis; composed of loosely arranged, irregularly rounded or oval cells with immense intercellular spaces and respiratory air cavities that open directly into sub-stomatal chambers, promoting rapid diffusive gas exchange ($CO_2$, $O_2$, and water vapor).
+        <br/>&bull; <i>Vascular System:</i> Reticulate venation results in vascular bundles of highly variable sizes across the lamina. Each bundle is <b>Conjoint, Collateral, and Closed</b>, enveloped by a compact layer of parenchymatous <b>Bundle Sheath Cells</b>. Xylem is oriented toward the adaxial (upper) surface, and phloem is oriented toward the abaxial (lower) surface.
       </li>
-      <li><b style="color: #E040FB;">Monocot Leaf (Isobilateral Leaf, e.g., Grasses, Maize):</b>
-        <br/>- Both adaxial and abaxial surfaces receive equal illumination; stomata distributed equally on both surfaces (<b>Amphistomatic</b>).
-        <br/>- <b>Mesophyll is undifferentiated</b> (homogeneous spongy-like chlorenchyma without distinct palisade layer).
-        <br/>- Vascular bundles are of nearly equal size due to parallel venation.
-        <br/>- <b style="color: #E040FB;">Bulliform (Motor) Cells:</b> In grasses, large, empty, thin-walled, colorless cells occur along the upper epidermis. When turgid with water, they keep the leaf lamina flat and exposed; during water stress, they lose turgor and turn flaccid, causing the leaf to <b>curl inward</b> to reduce evaporative surface area.
+      <li style="margin-top: 12px;"><b style="color: #E040FB;">2. Monocotyledonous Leaf (Isobilateral Leaf, e.g., Grasses, Maize):</b>
+        <br/>Oriented vertically so that both adaxial and abaxial surfaces receive approximately equal sunlight:
+        <br/>&bull; <i>Amphistomatic Epidermis:</i> Stomata are distributed in almost equal numbers on both adaxial and abaxial surfaces; guard cells are characteristically <b>dumb-bell shaped</b> with bulbous ends and a narrow middle pore region.
+        <br/>&bull; <i>Undifferentiated Mesophyll:</i> The ground tissue is completely uniform and homogeneous; it is not segregated into palisade and spongy layers, but consists entirely of rounded, chlorophyllous parenchymatous cells with moderate intercellular spaces.
+        <br/>&bull; <i>Bulliform (Motor) Cells:</i> Specialized, extraordinarily large, bubble-shaped, thin-walled, empty, colorless epidermal cells localized along the veins on the adaxial epidermis in grasses:
+          <br/>- When moisture is abundant, bulliform cells absorb water, become turgid, and cause the leaf blade to remain flat, expanded, and fully exposed to sunlight.
+          <br/>- Under severe water deficit or atmospheric drought, these cells rapidly lose water, turn flaccid, and cause the flexible leaf lamina to <b>roll inward into a cylinder</b>, shielding the stomata from dry winds and dramatically curtailing transpirational water loss.
+        <br/>&bull; <i>Parallel Venation:</i> Parallel vein orientation results in vascular bundles of nearly uniform dimensions across the cross-section, with larger bundles occupying main longitudinal veins.
       </li>
     </ul>
   </div>
@@ -283,55 +173,53 @@ export const c11Bot3HtmlOverview = `
           <tr style="background: rgba(224, 64, 251, 0.25); color: #E040FB; font-weight: bold;">
             <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Organ / Structure</th>
             <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Diagnostic Anatomical Features</th>
-            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Xylem Position &amp; Special Structures</th>
+            <th style="padding: 8px 10px; border: 1px solid rgba(255,255,255,0.15);">Vascular Bundle Type &amp; Key Highlights</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Dicot Root:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Diarch to hexarch (2-6 bundles); Casparian strips; tiny/absent pith</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Exarch Xylem</b>; lateral roots from pericycle</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">2-6 xylem bundles (diarch-hexarch); Casparian strips; tiny/absent pith</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Radial, Exarch Xylem</b>; lateral roots arise from pericycle</td>
           </tr>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Monocot Root:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Polyarch (&gt;6 bundles); large prominent pith; no secondary growth</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Exarch Xylem</b>; Casparian endodermis</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Polyarch (&gt;6 bundles); large prominent central pith; no secondary growth</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Radial, Exarch Xylem</b>; suberized Casparian endodermis</td>
           </tr>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Dicot Stem:</b></td>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Collenchymatous hypodermis; ring-arranged bundles (Eustele); starch sheath</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Endarch Xylem</b>; Conjoint, Collateral, Open</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Conjoint, Collateral, Open, Endarch</b>; intrafascicular cambium</td>
           </tr>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Monocot Stem:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Sclerenchymatous hypodermis; scattered bundles; bundle sheath</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Endarch Xylem</b>; Conjoint, Closed; Lysigenous cavity</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Sclerenchymatous hypodermis; scattered bundles (Atactostele); bundle sheath</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Conjoint, Collateral, Closed, Endarch</b>; Lysigenous water cavity</td>
           </tr>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Dicot Leaf:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Dorsiventral; palisade + spongy mesophyll; bean-shaped guard cells</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Hypostomatic; reticulate venation</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Dorsiventral; mesophyll split into columnar palisade &amp; spongy parenchyma</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Hypostomatic; kidney guard cells; reticulate venation</td>
           </tr>
           <tr>
             <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Monocot Leaf:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Isobilateral; undifferentiated mesophyll; dumbbell guard cells</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Bulliform Cells</b>; amphistomatic; parallel veins</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Isobilateral; undifferentiated mesophyll; dumb-bell shaped guard cells</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Bulliform Cells</b> (leaf rolling); amphistomatic; parallel veins</td>
           </tr>
           <tr>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Secondary Growth:</b></td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Vascular cambium &rarr; Sec. Xylem (wood) + Sec. Phloem; Cork cambium (Phellogen)</td>
-            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Annual rings (Spring + Autumn wood); Lenticels</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);"><b style="color: #E040FB;">Ground Tissues:</b></td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Parenchyma (living, thin cellulosic) &bull; Collenchyma (pectin corners) &bull; Sclerenchyma (lignified dead)</td>
+            <td style="padding: 7px 10px; border: 1px solid rgba(255,255,255,0.1);">Cortex, pericycle, medullary rays, pith, and mesophyll</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
-export const c11Bot3HtmlSolutions = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Bot3HtmlSolutions = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- SECTION A -->
   <div style="background: linear-gradient(135deg, rgba(224, 64, 251, 0.15), rgba(156, 39, 176, 0.15)); border: 1.5px solid rgba(224, 64, 251, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
@@ -960,308 +848,307 @@ export const c11Bot3HtmlSolutions = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
 export const c11Bot3Mcqs = [
   {
     "id": "c11-bot-3-mcq-1",
-    "question": "Julius von Sachs classified plant tissue systems into how many major systems?",
+    "question": "Who is universally regarded as the 'Father of Plant Anatomy' for his pioneering micro-structural studies?",
     "options": [
-      "A):   Two",
-      "B):   Three (Epidermal, Ground, Vascular)",
-      "C):   Four",
-      "D):   Five"
+      "A):   Nehemiah Grew",
+      "B):   Julius von Sachs",
+      "C):   Katherine Esau",
+      "D):   Robert Hooke"
     ],
-    "correctAnswer": "b",
-    "explanation": "Julius von Sachs (1875) classified plant tissues into Epidermal, Ground, and Vascular tissue systems."
+    "correctAnswer": "a",
+    "explanation": "Nehemiah Grew (1641–1712) published 'The Anatomy of Plants' and is celebrated as the Father of Plant Anatomy."
   },
   {
     "id": "c11-bot-3-mcq-2",
-    "question": "The shape of guard cells in the stomata of Grasses and other Monocots is:",
+    "question": "The three fundamental plant tissue systems (Epidermal, Ground, and Vascular) were formulated by:",
     "options": [
-      "A):   Kidney-shaped",
-      "B):   Dumbbell-shaped",
-      "C):   Spherical",
-      "D):   Triangular"
+      "A):   Katherine Esau",
+      "B):   Julius von Sachs",
+      "C):   Nageli",
+      "D):   Hanstein"
     ],
     "correctAnswer": "b",
-    "explanation": "Monocots (especially grasses) have dumbbell-shaped guard cells, whereas dicots possess kidney-shaped guard cells."
+    "explanation": "Julius von Sachs (1875) classified all plant tissues into Epidermal, Ground, and Vascular tissue systems."
   },
   {
     "id": "c11-bot-3-mcq-3",
-    "question": "The Casparian strip in root endodermal cells is composed of impermeable depositions of:",
+    "question": "In grasses and other monocotyledonous leaves, the guard cells of the stomata are characteristically:",
     "options": [
-      "A):   Cellulose and pectin",
-      "B):   Suberin and Lignin",
-      "C):   Chitin",
-      "D):   Cutin alone"
+      "A):   Kidney-shaped",
+      "B):   Bean-shaped",
+      "C):   Dumb-bell shaped",
+      "D):   Spherical"
     ],
-    "correctAnswer": "b",
-    "explanation": "Casparian strips consist of suberin and lignin deposited on radial and transverse walls, blocking the apoplast."
+    "correctAnswer": "c",
+    "explanation": "In grasses and monocots, guard cells are dumb-bell shaped with bulbous ends and a narrow middle pore."
   },
   {
     "id": "c11-bot-3-mcq-4",
-    "question": "Lateral roots in flowering plants originate endogenously from which internal tissue layer?",
+    "question": "The waxy, water-repellent layer called the Cuticle is completely absent in which of the following plant organs?",
     "options": [
-      "A):   Cortex",
-      "B):   Epidermis",
-      "C):   Pericycle",
-      "D):   Endodermis"
+      "A):   Dicot leaf epidermis",
+      "B):   Herbaceous stem epidermis",
+      "C):   Monocot leaf epidermis",
+      "D):   Root epidermis (Epiblema)"
     ],
-    "correctAnswer": "c",
-    "explanation": "In roots, lateral branches arise endogenously from dedifferentiated cells of the pericycle."
+    "correctAnswer": "d",
+    "explanation": "Cuticle is absent in subterranean roots (epiblema) to allow unrestricted absorption of water from soil."
   },
   {
     "id": "c11-bot-3-mcq-5",
-    "question": "In roots, xylem bundles are described as Exarch because:",
+    "question": "Collenchyma provides tensile mechanical support and elasticity to young dicot stems and petioles due to cell wall thickenings of:",
     "options": [
-      "A):   Metaxylem lies toward the outside",
-      "B):   Protoxylem lies toward the periphery and metaxylem toward the center",
-      "C):   Xylem surrounds phloem",
-      "D):   Cambium is absent"
+      "A):   Cellulose, Hemicellulose, and Pectin at corners",
+      "B):   Pure Lignin and Suberin deposits",
+      "C):   Cutin and Silica crystals",
+      "D):   Chitin and Calcium carbonate"
     ],
-    "correctAnswer": "b",
-    "explanation": "Exarch condition indicates that protoxylem is directed outward toward the periphery and metaxylem inward toward the center."
+    "correctAnswer": "a",
+    "explanation": "Collenchyma cells are living with localized corner wall thickenings of cellulose, hemicellulose, and pectin."
   },
   {
     "id": "c11-bot-3-mcq-6",
-    "question": "A Monocot Root is distinguished anatomically from a Dicot Root by having:",
+    "question": "The gritty, stony texture of the pulp of guava, pear, and sapota fruits is caused by the presence of:",
     "options": [
-      "A):   Diarch to hexarch xylem bundles",
-      "B):   Polyarch xylem bundles (&gt;6) and a large, well-developed pith",
-      "C):   Endarch xylem",
-      "D):   Active secondary growth"
+      "A):   Collenchyma fibers",
+      "B):   Sclereids (Stone Cells)",
+      "C):   Xylem tracheids",
+      "D):   Aleurone grains"
     ],
     "correctAnswer": "b",
-    "explanation": "Monocot roots are polyarch (numerous xylem bundles) and possess a large, conspicuous parenchymatous pith."
+    "explanation": "Sclereids (brachysclereids / stone cells) are extremely thick-walled, lignified cells providing the characteristic gritty texture of pears and guavas."
   },
   {
     "id": "c11-bot-3-mcq-7",
-    "question": "The hypodermis of a Dicot stem is composed of:",
+    "question": "In roots, primary xylem is described as 'Exarch' because:",
     "options": [
-      "A):   Parenchyma",
-      "B):   Collenchyma",
-      "C):   Sclerenchyma",
-      "D):   Chlorenchyma"
+      "A):   Protoxylem lies towards the center (pith)",
+      "B):   Metaxylem lies towards the periphery",
+      "C):   Protoxylem lies towards the periphery and metaxylem towards the center",
+      "D):   Xylem completely surrounds the central phloem"
     ],
-    "correctAnswer": "b",
-    "explanation": "Collenchyma forms the hypodermal layer in dicot stems, providing tensile mechanical flexibility."
+    "correctAnswer": "c",
+    "explanation": "In Exarch xylem (characteristic of roots), earliest-formed protoxylem faces the outer periphery while metaxylem faces inward."
   },
   {
     "id": "c11-bot-3-mcq-8",
-    "question": "The hypodermis of a Monocot stem is composed of:",
+    "question": "Which component of primary and secondary xylem is the ONLY living cellular element?",
     "options": [
-      "A):   Collenchyma",
-      "B):   Sclerenchyma",
-      "C):   Aerenchyma",
-      "D):   Parenchyma"
+      "A):   Xylem Tracheids",
+      "B):   Xylem Vessels",
+      "C):   Xylem Fibres",
+      "D):   Xylem Parenchyma"
     ],
-    "correctAnswer": "b",
-    "explanation": "Monocot stems possess a sclerenchymatous hypodermis that confers rigid structural strength."
+    "correctAnswer": "d",
+    "explanation": "Xylem parenchyma consists of living cells that store starch and fats, and mediate radial conduction of water via ray cells."
   },
   {
     "id": "c11-bot-3-mcq-9",
-    "question": "Vascular bundles in a Dicot Stem are characterized as:",
+    "question": "A vascular bundle containing an active meristematic strip of cambium between xylem and phloem is termed:",
     "options": [
-      "A):   Radial and exarch",
-      "B):   Conjoint, Collateral, Open, and Endarch",
-      "C):   Conjoint, Closed, and Exarch",
-      "D):   Scattered and closed"
+      "A):   Conjoint Collateral Open",
+      "B):   Conjoint Collateral Closed",
+      "C):   Radial Exarch",
+      "D):   Concentric Amphicribral"
     ],
-    "correctAnswer": "b",
-    "explanation": "Dicot stems have conjoint collateral open bundles (with cambium) arranged in a ring, with endarch xylem."
+    "correctAnswer": "a",
+    "explanation": "An open vascular bundle possesses intrafascicular cambium between xylem and phloem, capable of secondary growth (Dicot stems)."
   },
   {
     "id": "c11-bot-3-mcq-10",
-    "question": "In a Monocot Stem, the vascular bundles are:",
+    "question": "In plant roots, the impermeable Casparian strips embedded within endodermal cell walls are composed of:",
     "options": [
-      "A):   Arranged in a regular ring",
-      "B):   Scattered throughout ground tissue (Atactostele) and enclosed in a sclerenchymatous sheath",
-      "C):   Open with cambium",
-      "D):   Radial"
+      "A):   Pectin and hemicellulose",
+      "B):   Suberin",
+      "C):   Chitin",
+      "D):   Silica"
     ],
     "correctAnswer": "b",
-    "explanation": "Monocot stem bundles are scattered (atactostele), closed (no cambium), and surrounded by a bundle sheath."
+    "explanation": "Casparian strips are composed of suberin, an impermeable waxy substance that blocks the apoplastic movement of water."
   },
   {
     "id": "c11-bot-3-mcq-11",
-    "question": "The presence of a Lysigenous water cavity in vascular bundles is characteristic of:",
+    "question": "In a cross-section of a dicotyledonous root, lateral roots originate endogenously from the:",
     "options": [
-      "A):   Dicot root",
-      "B):   Monocot stem",
-      "C):   Dicot leaf",
-      "D):   Gymnosperm needle"
+      "A):   Hypodermis",
+      "B):   Epiblema",
+      "C):   Pericycle",
+      "D):   General cortex"
     ],
-    "correctAnswer": "b",
-    "explanation": "Breakdown of protoxylem vessels produces a lysigenous water-filled cavity in monocot stem bundles."
+    "correctAnswer": "c",
+    "explanation": "Lateral roots arise endogenously through the mitotic division of thick-walled pericycle cells opposite protoxylem points."
   },
   {
     "id": "c11-bot-3-mcq-12",
-    "question": "Bulliform cells in the leaves of grasses function in:",
+    "question": "A cross-section of a root showing 2 to 4 (diarch to tetrarch) radial vascular bundles and an inconspicuous pith belongs to a:",
     "options": [
-      "A):   Photosynthesis",
-      "B):   Inward leaf rolling during water stress to reduce transpiration",
-      "C):   Attracting insects",
-      "D):   Secreting wax"
+      "A):   Monocot Root",
+      "B):   Dicot Root",
+      "C):   Dicot Stem",
+      "D):   Monocot Stem"
     ],
     "correctAnswer": "b",
-    "explanation": "Bulliform cells lose turgor during drought, causing grass blades to curl inward and reduce transpirational water loss."
+    "explanation": "Dicot roots characteristically possess 2 to 6 (diarch to hexarch) radial bundles and a tiny or absent central pith."
   },
   {
     "id": "c11-bot-3-mcq-13",
-    "question": "In a Dorsiventral (Dicot) Leaf, the mesophyll is differentiated into:",
+    "question": "Which of the following anatomical features is diagnostic of a Monocot Root?",
     "options": [
-      "A):   Phellem and Phelloderm",
-      "B):   Palisade parenchyma and Spongy parenchyma",
-      "C):   Collenchyma and Sclerenchyma",
-      "D):   Endodermis and Pericycle"
+      "A):   Diarch radial bundles and extensive secondary growth",
+      "B):   Open vascular bundles arranged in a ring",
+      "C):   Polyarch (more than 6) radial bundles and a large, conspicuous pith",
+      "D):   Endarch xylem with starch sheath"
     ],
-    "correctAnswer": "b",
-    "explanation": "The mesophyll comprises upper columnar palisade cells and lower loosely arranged spongy parenchyma."
+    "correctAnswer": "c",
+    "explanation": "Monocot roots possess polyarch vascular bundles (usually >8) and a prominent, well-developed central parenchymatous pith."
   },
   {
     "id": "c11-bot-3-mcq-14",
-    "question": "Vascular cambium in a dicot stem cuts off more cells toward the interior, forming:",
+    "question": "In a Dicotyledonous stem, the hypodermis is composed of which living mechanical tissue?",
     "options": [
-      "A):   Secondary phloem",
-      "B):   Secondary xylem (Wood)",
-      "C):   Phelloderm",
-      "D):   Phellem"
+      "A):   Sclerenchyma",
+      "B):   Parenchyma",
+      "C):   Aerenchyma",
+      "D):   Collenchyma"
     ],
-    "correctAnswer": "b",
-    "explanation": "The vascular cambium is 8-10x more active internally, producing massive amounts of secondary xylem (wood)."
+    "correctAnswer": "d",
+    "explanation": "The hypodermis of dicot stems consists of 3–5 layers of collenchyma providing flexible mechanical support."
   },
   {
     "id": "c11-bot-3-mcq-15",
-    "question": "One Annual Growth Ring in temperate trees consists of:",
+    "question": "The innermost layer of the cortex in a dicot stem is rich in starch grains and is known as the:",
     "options": [
-      "A):   Two spring wood rings",
-      "B):   One Spring wood ring and one Autumn wood ring",
-      "C):   One sapwood ring and one heartwood ring",
-      "D):   One cork ring and one bark ring"
+      "A):   Starch Sheath (Endodermis)",
+      "B):   Casparian ring",
+      "C):   Bundle sheath",
+      "D):   Pericycle"
     ],
-    "correctAnswer": "b",
-    "explanation": "An annual ring represents one season's growth: early (spring) wood plus late (autumn) wood."
+    "correctAnswer": "a",
+    "explanation": "In dicot stems, the endodermal cells are packed with starch grains and are referred to as the Starch Sheath."
   },
   {
     "id": "c11-bot-3-mcq-16",
-    "question": "Spring wood differs from Autumn wood in having:",
+    "question": "In a Monocotyledonous stem, the vascular bundles are:",
     "options": [
-      "A):   Narrower vessels with thicker walls",
-      "B):   Wider vessel cavities and lower density",
-      "C):   Darker color and higher density",
-      "D):   No vessels"
+      "A):   Arranged in a single concentric eustelic ring",
+      "B):   Scattered throughout the ground tissue (Atactostele) and closed",
+      "C):   Radial and exarch",
+      "D):   Bicollateral and open"
     ],
     "correctAnswer": "b",
-    "explanation": "Spring wood is produced when cambium is highly active, resulting in wide lumens, thin walls, and low density."
+    "explanation": "Monocot stems have an atactostele: numerous conjoint, collateral, closed vascular bundles scattered across the ground tissue."
   },
   {
     "id": "c11-bot-3-mcq-17",
-    "question": "The non-functional, dark, central wood clogged with tyloses and resins is called:",
+    "question": "A unique internal feature of vascular bundles in a Monocot stem (e.g., Maize) is the presence of a:",
     "options": [
-      "A):   Sapwood (Alburnum)",
-      "B):   Heartwood (Duramen)",
-      "C):   Periderm",
-      "D):   Softwood"
+      "A):   Starch sheath",
+      "B):   Intrafascicular cambium",
+      "C):   Lysigenous water cavity (protoxylem lacuna)",
+      "D):   Central medullary ray"
     ],
-    "correctAnswer": "b",
-    "explanation": "Heartwood (duramen) is the central non-conducting wood that provides mechanical durability."
+    "correctAnswer": "c",
+    "explanation": "Disintegration of the lowest protoxylem element and surrounding cells creates a lysigenous water cavity in monocot bundles."
   },
   {
     "id": "c11-bot-3-mcq-18",
-    "question": "Tyloses are balloon-like ingrowths of which cells into xylem vessel lumens?",
+    "question": "In a dorsiventral Dicot leaf, the mesophyll tissue is distinctly differentiated into:",
     "options": [
-      "A):   Sieve tubes",
-      "B):   Ray or axial xylem parenchyma cells",
-      "C):   Collenchyma",
-      "D):   Companion cells"
+      "A):   Upper Palisade parenchyma and lower Spongy parenchyma",
+      "B):   Uniform isodiametric chlorenchyma",
+      "C):   Sclerenchymatous hypodermis and aerenchyma",
+      "D):   Bulliform cells and collenchyma"
     ],
-    "correctAnswer": "b",
-    "explanation": "Parenchyma cells push through pits into vessel lumens to form tyloses, blocking conduction in heartwood."
+    "correctAnswer": "a",
+    "explanation": "Dicot leaves have mesophyll differentiated into an upper closely packed columnar palisade layer and a lower loose spongy layer."
   },
   {
     "id": "c11-bot-3-mcq-19",
-    "question": "The Periderm in woody plants consists of:",
+    "question": "A leaf having stomata distributed in almost equal proportions on both adaxial and abaxial surfaces is termed:",
     "options": [
-      "A):   Epidermis, cortex, and endodermis",
-      "B):   Phellogen (cork cambium), Phellem (cork), and Phelloderm (secondary cortex)",
-      "C):   Xylem and phloem",
-      "D):   Pericycle and pith"
+      "A):   Hypostomatic",
+      "B):   Epistomatic",
+      "C):   Amphistomatic (Isobilateral Leaf)",
+      "D):   Astomatic"
     ],
-    "correctAnswer": "b",
-    "explanation": "Periderm is the composite secondary protective cover comprising Phellogen, Phellem, and Phelloderm."
+    "correctAnswer": "c",
+    "explanation": "Monocot leaves (isobilateral) are amphistomatic, bearing stomata in nearly equal numbers on both upper and lower surfaces."
   },
   {
     "id": "c11-bot-3-mcq-20",
-    "question": "Lenticels in woody stems function primarily in:",
+    "question": "Large, empty, colorless, bubble-shaped Bulliform (Motor) Cells in grass leaves function primarily to:",
     "options": [
-      "A):   Food storage",
-      "B):   Gaseous exchange between internal tissues and the atmosphere",
-      "C):   Water absorption",
-      "D):   Mechanical support"
+      "A):   Store toxic metabolic wastes",
+      "B):   Synthesize cuticular waxes",
+      "C):   Fix atmospheric nitrogen",
+      "D):   Roll the leaf inward during drought to minimize transpirational water loss"
     ],
-    "correctAnswer": "b",
-    "explanation": "Lenticels are raised aerating pores lined with complementary cells permitting gas exchange through bark."
+    "correctAnswer": "d",
+    "explanation": "When flaccid from water deficit, bulliform cells cause the leaf to curl inward, reducing exposed surface area and transpiration."
   },
   {
     "id": "c11-bot-3-mcq-21",
-    "question": "Which of the following complex tissues lacks true vessels in its wood?",
+    "question": "The strip of vascular cambium situated between primary xylem and primary phloem within a vascular bundle is the:",
     "options": [
-      "A):   Mango",
-      "B):   Sunflower",
-      "C):   Pinus (Gymnosperm)",
-      "D):   Mustard"
+      "A):   Interfascicular cambium",
+      "B):   Cork cambium (Phellogen)",
+      "C):   Intercalary meristem",
+      "D):   Intrafascicular cambium"
     ],
-    "correctAnswer": "c",
-    "explanation": "Gymnosperms (like Pinus) have non-porous softwood composed of tracheids, lacking true xylem vessels."
+    "correctAnswer": "d",
+    "explanation": "Intrafascicular cambium is primary meristematic tissue present between xylem and phloem inside the open vascular bundle."
   },
   {
     "id": "c11-bot-3-mcq-22",
-    "question": "Interfascicular cambium in a dicot stem develops by dedifferentiation of:",
+    "question": "During secondary growth in a dicot stem, the vascular cambium is more active towards the inside, producing 8 to 10 times more:",
     "options": [
-      "A):   Endodermis",
-      "B):   Medullary ray parenchyma cells",
-      "C):   Pericycle fibers",
-      "D):   Hypodermis"
+      "A):   Secondary Xylem (Wood)",
+      "B):   Secondary Phloem (Bast)",
+      "C):   Secondary Cortex (Phelloderm)",
+      "D):   Periderm"
     ],
-    "correctAnswer": "b",
-    "explanation": "Parenchyma cells of medullary rays between vascular bundles dedifferentiate into interfascicular cambium."
+    "correctAnswer": "a",
+    "explanation": "The vascular cambium ring is far more active internally, generating copious amounts of secondary xylem (wood) relative to secondary phloem."
   },
   {
     "id": "c11-bot-3-mcq-23",
-    "question": "Bark of a tree includes:",
-    "options": [
-      "A):   Only the cork layer",
-      "B):   All tissues exterior to the vascular cambium",
-      "C):   Only the secondary xylem",
-      "D):   Pith and xylem"
-    ],
-    "correctAnswer": "b",
-    "explanation": "Bark comprises all structural tissues lying external to the vascular cambium ring."
-  },
-  {
-    "id": "c11-bot-3-mcq-24",
-    "question": "In roots, the vascular cambium originates:",
-    "options": [
-      "A):   Entirely from the primary procambium",
-      "B):   Entirely as a secondary meristem from parenchyma below phloem and pericycle outside protoxylem",
-      "C):   From the epiblema",
-      "D):   From the root cap"
-    ],
-    "correctAnswer": "b",
-    "explanation": "In roots, the vascular cambium is 100% secondary in origin, formed from sub-phloem parenchyma and pericycle."
-  },
-  {
-    "id": "c11-bot-3-mcq-25",
-    "question": "The science of determining the age of a tree by counting annual growth rings is called:",
+    "question": "The scientific discipline of estimating the age of woody perennial trees by counting annual growth rings is known as:",
     "options": [
       "A):   Palynology",
       "B):   Dendrochronology",
       "C):   Phenology",
-      "D):   Pomology"
+      "D):   Paleobotany"
     ],
     "correctAnswer": "b",
-    "explanation": "Dendrochronology uses the pattern and count of annual rings in secondary xylem to determine a tree's exact age."
+    "explanation": "Dendrochronology uses annual growth rings (one spring wood + one autumn wood ring per year) to calculate tree age."
+  },
+  {
+    "id": "c11-bot-3-mcq-24",
+    "question": "The secondary protective tissue 'Periderm' comprises which three anatomical zones?",
+    "options": [
+      "A):   Epidermis, Endodermis, and Pericycle",
+      "B):   Xylem, Phloem, and Cambium",
+      "C):   Phellogen, Phellem, and Phelloderm",
+      "D):   Bark, Wood, and Pith"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Periderm comprises Phellogen (cork cambium), Phellem (cork), and Phelloderm (secondary cortex)."
+  },
+  {
+    "id": "c11-bot-3-mcq-25",
+    "question": "Aerating lens-shaped pores developed in the woody bark of trees that permit respiratory gas exchange are called:",
+    "options": [
+      "A):   Hydathodes",
+      "B):   Trichomes",
+      "C):   Tyloses",
+      "D):   Lenticels"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Lenticels are lens-shaped openings in the periderm/bark that allow gas exchange between internal tissues and the atmosphere."
   }
 ];

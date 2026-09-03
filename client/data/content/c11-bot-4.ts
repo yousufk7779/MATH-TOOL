@@ -1,9 +1,8 @@
 // Class 11 Botany Chapter 4: Plant Physiology
-// Gold Standard Reference Textbook & 3-Tab Architecture
+// Complete Official Syllabus Coverage & Zero Diagrams
 // Subject: Botany | Class: 11 | Code: c11-bot-4
 
-export const c11Bot4HtmlOverview = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Bot4HtmlOverview = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- Quick Glossary Card with Chapter Subtitle -->
   <div style="background: linear-gradient(135deg, rgba(0, 229, 255, 0.12), rgba(0, 151, 167, 0.12)); border: 1.5px solid rgba(0, 229, 255, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -36,8 +35,7 @@ export const c11Bot4HtmlOverview = `
     Respiration: Cellular respiration; Glycolysis, Kreb’s cycle and Electron transport system (along with ATP energetics); Chemiosmotic hypothesis; Aerobic and Anaerobic respirations; Amphibolic pathways; Respiratory quotient
   </h2>
 
-  <!-- PRESERVED IMAGE 1 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNTgwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDFhMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDM4NDciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAxYTI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBFNUZGIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjU4MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDEpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjQxMCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWx0ZXI9InVybCgjZ2xvdykiPkNlbGx1bGFyIFJlc3BpcmF0aW9uIFBhdGh3YXlzICZhbXA7IEFUUCBFbmVyZ2V0aWNzPC90ZXh0PgoKICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNjUpIj4KICAgIDwhLS0gMS4gR2x5Y29seXNpcyAoQ3l0b3BsYXNtKSAtLT4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyNDYiIGhlaWdodD0iNDMwIiByeD0iMTQiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMDgpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTIzIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU1RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEuIEdMWUNPTFlTSVMgKEN5dG9wbGFzbSk8L3RleHQ+CgogICAgPHJlY3QgeD0iMTAiIHk9IjU1IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjEwOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iIzAwRTVGRiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICA8dGV4dCB4PSIyMCIgeT0iNzgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIj7igKIgU3Vic3RyYXRlIEJyZWFrZG93bjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkdsdWNvc2UgKDZDKSDinpQgMiBQeXJ1dmF0ZSAoM0MpPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjEyMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QW5hZXJvYmljIC8gRU1QIFBhdGh3YXk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMTQwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4xMCBFbnp5bWUtY2F0YWx5emVkIHN0ZXBzPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEwIiB5PSIxNzgiIHdpZHRoPSIyMjYiIGhlaWdodD0iMTE4IiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjIwIiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIj7igKIgQVRQICZhbXA7IE5BREggWWllbGQ8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjIyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yIEFUUCBjb25zdW1lZCBpbml0aWFsbHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjQyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj40IEFUUCBmb3JtZWQgZGlyZWN0bHk8L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMjYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5OZXQ6IDIgQVRQICsgMiBOQURIPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iIzY5RjBBRSI+VG90YWwgWWllbGQgPSA2IHRvIDggQVRQPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEwIiB5PSIzMTAiIHdpZHRoPSIyMjYiIGhlaWdodD0iMTA4IiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjIwIiB5PSIzMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIj7igKIgRmVybWVudGF0aW9uIE9wdGlvbjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwIiB5PSIzNTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkxhY3RpYyBBY2lkIC8gQWxjb2hvbGljPC90ZXh0PgogICAgPHRleHQgeD0iMjAiIHk9IjM3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SW4gYWJzZW5jZSBvZiBPeHlnZW48L3RleHQ+CiAgICA8dGV4dCB4PSIyMCIgeT0iMzk0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5OZXQgWWllbGQgPSAyIEFUUCBvbmx5PC90ZXh0PgoKICAgIDwhLS0gMi4gS3JlYnMgQ3ljbGUgKE1pdG9jaG9uZHJpYWwgTWF0cml4KSAtLT4KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2NywgMCkiPgogICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQ2IiBoZWlnaHQ9IjQzMCIgcng9IjE0IiBmaWxsPSJyZ2JhKDI1NSwxNDUsMCwwLjA4KSIgc3Ryb2tlPSIjRkY5MTAwIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgICAgPHRleHQgeD0iMTIzIiB5PSIzMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjkxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjIuIEtSRUJTIENZQ0xFIChNYXRyaXgpPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTAiIHk9IjU1IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjEwOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iI0ZGOTEwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSI3OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQxODAiPuKAoiBMaW5rIFJlYWN0aW9uPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMTAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QeXJ1dmF0ZSDinpQgQWNldHlsLUNvQSAoMkMpPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMTIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5QeXJ1dmF0ZSBEZWh5ZHJvZ2VuYXNlPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMTQwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5ZaWVsZHM6IDIgTkFESCArIDIgQ08yPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTAiIHk9IjE3OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSIxMTgiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiNGRjkxMDAiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDE4MCI+4oCiIFRDQSBDeWNsZSBTZXF1ZW5jZTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjAiIHk9IjIyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+T0FBICg0QykgKyBBY2V0eWwtQ29BPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjQyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj7inpQgQ2l0cmF0ZSAoNkMpPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5EZWNhcmJveHlsYXRpb25zPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjNjlGMEFFIj5BbXBoaWJvbGljIHBhdGh3YXk8L3RleHQ+CgogICAgICA8cmVjdCB4PSIxMCIgeT0iMzEwIiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjEwOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iI0ZGOTEwMCIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIzMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZEMTgwIj7igKIgWWllbGQgcGVyIEdsdWNvc2U8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIzNTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPjYgTkFESCAoMTggQVRQIGVxdWl2KTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjAiIHk9IjM3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+MiBGQURIMiAoNCBBVFAgZXF1aXYpPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMzk0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj4yIEdUUC9BVFAgZGlyZWN0PC90ZXh0PgogICAgPC9nPgoKICAgIDwhLS0gMy4gRVRTICYgQ2hlbWlvc21vc2lzIChJbm5lciBNZW1icmFuZSkgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MzQsIDApIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjI0NiIgaGVpZ2h0PSI0MzAiIHJ4PSIxNCIgZmlsbD0icmdiYSgwLDIzMCwxMTgsMC4wOCkiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDx0ZXh0IHg9IjEyMyIgeT0iMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNjc2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4zLiBFVFMgJmFtcDsgQ0hFTUlPU01PU0lTPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTAiIHk9IjU1IiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjEwOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSI3OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2OUYwQUUiPuKAoiBFbGVjdHJvbiBUcmFuc3BvcnQ8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIxMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkNvbXBsZXggSSB0byBJViBpbiBDcmlzdGFlPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMTIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5VYmlxdWlub25lICZhbXA7IEN5dCBjPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMTQwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5GaW5hbCBhY2NlcHRvcjogT3h5Z2VuPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTAiIHk9IjE3OCIgd2lkdGg9IjIyNiIgaGVpZ2h0PSIxMTgiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU2NzYiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjAwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIFByb3RvbiBHcmFkaWVudDwvdGV4dD4KICAgICAgPHRleHQgeD0iMjAiIHk9IjIyMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+SCsgcHVtcGVkIHRvIGludGVybWVtYnJhbmU8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIyNDIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPkhpZ2ggcHJvdG9uIGdyYWRpZW50PC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5Ecml2ZXMgQVRQIFN5bnRoYXNlPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY5RjBBRSI+MSBOQURIPTMgQVRQfDEgRkFESDI9MiBBVFA8L3RleHQ+CgogICAgICA8cmVjdCB4PSIxMCIgeT0iMzEwIiB3aWR0aD0iMjI2IiBoZWlnaHQ9IjEwOCIgcng9IjgiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNCkiIHN0cm9rZT0iIzAwRTY3NiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIzMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgTmV0IEFUUCBCYWxhbmNlPC90ZXh0PgogICAgICA8dGV4dCB4PSIyMCIgeT0iMzU0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5HbHljb2x5c2lzOiA4IEFUUDwvdGV4dD4KICAgICAgPHRleHQgeD0iMjAiIHk9IjM3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+TGluayArIEtyZWJzOiAzMCBBVFA8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIwIiB5PSIzOTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiM2OUYwQUUiPlRvdGFsIE5ldCA9IDM2IHRvIDM4IEFUUDwvdGV4dD4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gQm90dG9tIEJhciAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTE1KSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMTUpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MEQ4RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFlcm9iaWMgUmVzcGlyYXRpb246IDEgR2x1Y29zZSArIDYgTzIg4p6UIDYgQ08yICsgNiBIMk8gKyAzOCBBVFAgKFJlc3BpcmF0b3J5IFF1b3RpZW50ID0gMS4wKTwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 229, 255, 0.4); border: 2px solid #00E5FF;" alt="3D Cellular Respiration Architecture" /><p style="color: #00E5FF; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 4.1: 3D Cellular Respiration Master Architecture (Glycolysis, Link Reaction, Krebs Cycle &amp; ETS ATP Energetics)</p></div>
+  
 
   <p>
     Cellular respiration is an enzyme-mediated catabolic exergonic process in which energy-rich organic substrates (primarily glucose) are oxidized to release metabolic energy trapped as ATP (Adenosine Triphosphate), the universal energy currency of living cells.
@@ -77,90 +75,7 @@ export const c11Bot4HtmlOverview = `
     </p>
   </div>
 
-  <!-- NEW STANDALONE SVG CARD FOR MITOCHONDRIAL ETS & CHEMIOSMOSIS -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 229, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">
-        Mitochondrial ETS Complexes &amp; Chemiosmotic ATP Synthesis
-      </text>
-
-      <!-- Complexes I to IV -->
-      <g transform="translate(25, 45)">
-        <rect width="450" height="105" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="225" y="18" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">
-          Inner Mitochondrial Membrane Electron Transport Chain (Complexes I - IV)
-        </text>
-
-        <!-- Complex I -->
-        <g transform="translate(10, 26)">
-          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="49" y="16" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">Complex I</text>
-          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">NADH Dehydrogenase</text>
-          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">FMN &amp; Fe-S centers</text>
-          <text x="49" y="60" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">Pumps 4 H<sup>+</sup></text>
-        </g>
-
-        <!-- Complex II -->
-        <g transform="translate(118, 26)">
-          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="49" y="16" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">Complex II</text>
-          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Succinate Dehydr.</text>
-          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">FAD &amp; Fe-S to UQ</text>
-          <text x="49" y="60" fill="#FF8A65" font-size="8" font-weight="bold" text-anchor="middle">No H<sup>+</sup> pumped</text>
-        </g>
-
-        <!-- Complex III -->
-        <g transform="translate(226, 26)">
-          <rect width="98" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="49" y="16" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">Complex III</text>
-          <text x="49" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Cytochrome bc<sub>1</sub></text>
-          <text x="49" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Transfers to Cyt c</text>
-          <text x="49" y="60" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">Pumps 4 H<sup>+</sup></text>
-        </g>
-
-        <!-- Complex IV -->
-        <g transform="translate(334, 26)">
-          <rect width="105" height="68" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="52" y="16" fill="#00E5FF" font-size="9" font-weight="bold" text-anchor="middle">Complex IV</text>
-          <text x="52" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Cytochrome c Oxidase</text>
-          <text x="52" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Cyt a, a<sub>3</sub> + Cu<sub>A</sub>, Cu<sub>B</sub></text>
-          <text x="52" y="60" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">&frac12; O<sub>2</sub> &rarr; H<sub>2</sub>O (2 H<sup>+</sup>)</text>
-        </g>
-      </g>
-
-      <!-- Complex V: ATP Synthase -->
-      <g transform="translate(25, 160)">
-        <rect width="450" height="105" rx="6" fill="rgba(0, 229, 255, 0.12)" stroke="#00E5FF" stroke-width="1.2"/>
-        <text x="225" y="18" fill="#00E5FF" font-size="11" font-weight="bold" text-anchor="middle">
-          Complex V: F<sub>0</sub>-F<sub>1</sub> ATP Synthase (Chemiosmosis)
-        </text>
-        <text x="225" y="38" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
-          Proton Motive Force: High [H<sup>+</sup>] in Intermembrane Space &rarr; Matrix
-        </text>
-        <text x="120" y="60" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
-          &bull; <b>F<sub>0</sub> Channel:</b> Transmembrane proton channel
-        </text>
-        <text x="330" y="60" fill="#CBD5E1" font-size="8.5" text-anchor="middle">
-          &bull; <b>F<sub>1</sub> Headpiece:</b> Rotational catalytic subunit
-        </text>
-        <text x="225" y="82" fill="#69F0AE" font-size="10" font-weight="bold" text-anchor="middle">
-          Inflow of 2 H<sup>+</sup> down electrochemical gradient drives: ADP + Pi &rarr; ATP
-        </text>
-        <text x="225" y="96" fill="#FFE082" font-size="8.5" text-anchor="middle">
-          1 NADH yields ~3 ATP (2.5 ATP) &bull; 1 FADH<sub>2</sub> yields ~2 ATP (1.5 ATP)
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 4.5: Mitochondrial Electron Transport System (Complexes I-IV) &amp; Chemiosmotic Proton Gradient / F<sub>0</sub>-F<sub>1</sub> ATP Synthase Mechanics
-  </div>
-</div>
 
 
   <h3 style="color: #00E5FF; margin-top: 22px; font-size: 16.5px;">(iii) Electron Transport System (ETS), Oxidative Phosphorylation &amp; Chemiosmotic Hypothesis</h3>
@@ -195,8 +110,7 @@ export const c11Bot4HtmlOverview = `
     Photosynthesis: Historical background; Site of Photosynthesis; Photosynthetic pigments; Mechanism of Photosynthesis – Light dependent phase (Light reaction), Photosystems; Cyclic and non-cyclic photophosphorylations; Light independent (biosynthetic) phase – Calvin (C3) cycle and Hatch &amp; Slack (C4) cycle; Factors affecting photosynthesis; Photorespiration.
   </h2>
 
-  <!-- PRESERVED IMAGE 2 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNTgwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDFhMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDM4NDciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAxYTI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjU4MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDIpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjQxMCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QaG90b3N5bnRoZXNpczogTGlnaHQtRGVwZW5kZW50IFJlYWN0aW9ucyAmYW1wOyBaLVNjaGVtZTwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIDEuIE5vbi1DeWNsaWMgUGhvdG9waG9zcGhvcnlsYXRpb24gKFotU2NoZW1lKSAtLT4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDM1IiByeD0iMTQiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMDYpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MEQ4RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEuIE5vbi1DeWNsaWMgWi1TY2hlbWUgKFBTIElJICsgUFMgSSk8L3RleHQ+CgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjM3MiIgcng9IjEwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIyNSIgeT0iNzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj5LZXkgTWVjaGFuaXNtIFN0ZXBzOjwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjUiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+4oCiIDx0c3BhbiBmaWxsPSIjODBEOEZGIj5QaG90b3N5c3RlbSBJSSAoUDY4MCk6PC90c3Bhbj4gQWJzb3JicyA2ODBubSBsaWdodDwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIxMjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAgRXhjaXRlZCBlLSB0cmFuc2ZlcnJlZCB0byBQaGVvcGh5dGluIGFjY2VwdG9yLjwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjUiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPuKAoiA8dHNwYW4gZmlsbD0iIzY5RjBBRSI+V2F0ZXIgU3BsaXR0aW5nIChQaG90b2x5c2lzKTo8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIxNjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAgMiBIMk8g4p6UIDQgSCsgKyBPMiArIDQgZS0gKFJlcGxhY2VzIFBTIElJIGUtKS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjI1IiB5PSIxOTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj7igKIgPHRzcGFuIGZpbGw9IiNGRkQxODAiPkVsZWN0cm9uIFRyYW5zcG9ydCBDaGFpbjo8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIyMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAgUGxhc3RvcXVpbm9uZSDinpQgQ3l0IGI2ZiDinpQgUGxhc3RvY3lhbmluIOKelCBQUyBJLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIyMzYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAgRHJpdmVzIEFUUCBzeW50aGVzaXMgdmlhIGNoZW1pb3Ntb3Npcy48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjI1IiB5PSIyNjIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj7igKIgPHRzcGFuIGZpbGw9IiM4MEQ4RkYiPlBob3Rvc3lzdGVtIEkgKFA3MDApOjwvdHNwYW4+IEFic29yYnMgNzAwbm0gbGlnaHQ8L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMjg0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjREREIj4gIGUtIHRyYW5zZmVycmVkIHRvIEZlcnJlZG94aW4g4p6UIE5BRFArIFJlZHVjdGFzZS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjI1IiB5PSIzMTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjlGMEFFIj7igKIgQXNzaW1pbGF0b3J5IFBvd2VyIFlpZWxkOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjI1IiB5PSIzMzIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiM2OUYwQUUiPiAgUHJvZHVjZXMgQk9USCBBVFAgYW5kIE5BRFBIICsgSCs8L3RleHQ+CiAgICA8dGV4dCB4PSIyNSIgeT0iMzUyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjNjlGMEFFIj4gIHdpdGggb3h5Z2VuIGV2b2x1dGlvbiAoTzIgcmVsZWFzZSkhPC90ZXh0PgoKICAgIDwhLS0gMi4gQ3ljbGljIFBob3RvcGhvc3Bob3J5bGF0aW9uIC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAwLCAwKSI+CiAgICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDM1IiByeD0iMTQiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMDYpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwRDhGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi4gQ3ljbGljIFBob3RvcGhvc3Bob3J5bGF0aW9uIChQUyBJIE9ubHkpPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjM3MiIgcng9IjEwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSI3NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU1RkYiPktleSBNZWNoYW5pc20gU3RlcHM6PC90ZXh0PgogICAgICAKICAgICAgPHRleHQgeD0iMjUiIHk9Ijk4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+4oCiIDx0c3BhbiBmaWxsPSIjODBEOEZGIj5PY2N1cnMgaW4gU3Ryb21hIExhbWVsbGFlOjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMTIwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjREREIj4gIExhY2tzIFBTIElJIGFuZCBOQURQIFJlZHVjdGFzZSBlbnp5bWUuPC90ZXh0PgogICAgICAKICAgICAgPHRleHQgeD0iMjUiIHk9IjE0NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPuKAoiA8dHNwYW4gZmlsbD0iI0ZGRDE4MCI+Q3ljbGljIEVsZWN0cm9uIExvb3A6PC90c3Bhbj48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIxNjgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAgUDcwMCAoUFMgSSkg4p6UIFByaW1hcnkgQWNjZXB0b3Ig4p6UIEZlcnJlZG94aW48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIxODgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNEREQiPiAg4p6UIEN5dCBiNmYg4p6UIFBsYXN0b2N5YW5pbiDinpQgUmV0dXJucyB0byBQNzAwITwvdGV4dD4KICAgICAgCiAgICAgIDx0ZXh0IHg9IjI1IiB5PSIyMTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj7igKIgPHRzcGFuIGZpbGw9IiM2OUYwQUUiPlByb3RvbiBHcmFkaWVudCAmYW1wOyBBVFAgU3ludGhlc2lzOjwvdHNwYW4+PC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMjM2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjREREIj4gIFByb3RvbnMgcHVtcGVkIHRvIFRoeWxha29pZCBsdW1lbiBnZW5lcmF0ZTwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjI1NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0RERCI+ICBncmFkaWVudCBkcml2aW5nIEFUUCBTeW50aGFzZSAoRjBGMSkuPC90ZXh0PgogICAgICAKICAgICAgPHRleHQgeD0iMjUiIHk9IjI4MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjUyNTIiPuKAoiBLZXkgRGlmZmVyZW5jZXMgZnJvbSBOb24tQ3ljbGljOjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjUiIHk9IjMwNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0RERCI+ICAxLiBOTyBQaG90b2x5c2lzIG9mIHdhdGVyIChOTyBPMiBldm9sdmVkISkuPC90ZXh0PgogICAgICA8dGV4dCB4PSIyNSIgeT0iMzI2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjNjlGMEFFIj4gIDIuIFByb2R1Y2VzIEFUUCBPTkxZIChOTyBOQURQSCBmb3JtZWQpLjwvdGV4dD4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gQm90dG9tIEJhciAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTE1KSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMTUpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MEQ4RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlRoeWxha29pZCBNZW1icmFuZTogTGlnaHQgRW5lcmd5IOKelCBBVFAgJmFtcDsgTkFEUEggKEFzc2ltaWxhdG9yeSBQb3dlciBmb3IgRGFyayBSZWFjdGlvbnMpPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 229, 255, 0.4); border: 2px solid #00E5FF;" alt="3D Photosynthesis Z-Scheme" /><p style="color: #00E5FF; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 4.2: 3D Photosynthesis Architecture (Z-Scheme Non-Cyclic &amp; Cyclic Photophosphorylation &amp; Photolysis)</p></div>
+  
 
   <h3 style="color: #00E5FF; margin-top: 18px; font-size: 16.5px;">(i) Historical Background, Site of Photosynthesis &amp; Photosynthetic Pigments</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 229, 255, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
@@ -223,8 +137,7 @@ export const c11Bot4HtmlOverview = `
     </p>
   </div>
 
-  <!-- PRESERVED IMAGE 3 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNTgwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkMyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDFhMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDM4NDciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAxYTI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSI0IiBzdGREZXZpYXRpb249IjYiIGZsb29kLWNvbG9yPSIjMDBFNUZGIiBmbG9vZC1vcGFjaXR5PSIwLjYiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjU4MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDMpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjQxMCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWx0ZXI9InVybCgjZ2xvdykiPkRhcmsgUmVhY3Rpb25zOiBDMyBDYWx2aW4gQ3ljbGUgdnMgQzQgSGF0Y2ggJmFtcDsgU2xhY2sgUGF0aHdheTwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIExlZnQgQm94OiBDMyBDYWx2aW4gQ3ljbGUgLS0+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQzNSIgcng9IjE0IiBmaWxsPSJyZ2JhKDAsMjI5LDI1NSwwLjA2KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4xLiBDMyBDYWx2aW4gQ3ljbGUgKFN0cm9tYSk8L3RleHQ+CgogICAgPHJlY3QgeD0iMTIiIHk9IjQ4IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjM3MiIgcng9IjEwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIyNSIgeT0iNzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj4zIE1hc3RlciBQaGFzZXM6PC90ZXh0PgogICAgCiAgICA8dGV4dCB4PSIyNSIgeT0iOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj4xLiA8dHNwYW4gZmlsbD0iIzgwRDhGRiI+Q2FyYm94eWxhdGlvbjo8L3RzcGFuPiBDTzIgKyBSdUJQICg1Qykg4p6UIDMtUEdBPC90ZXh0PgogICAgPHRleHQgeD0iMzUiIHk9IjExOCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0FBQSI+ICAgQ2F0YWx5emVkIGJ5IFJ1QmlzQ08gZW56eW1lLjwvdGV4dD4KICAgIDx0ZXh0IHg9IjM1IiB5PSIxMzgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNBQUEiPiAgIEZpcnN0IHN0YWJsZSBwcm9kdWN0ID0gMy1QR0EgKDNDKS48L3RleHQ+CiAgICAKICAgIDx0ZXh0IHg9IjI1IiB5PSIxNjYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj4yLiA8dHNwYW4gZmlsbD0iIzgwRDhGRiI+UmVkdWN0aW9uOjwvdHNwYW4+IDIgQVRQICsgMiBOQURQSCBwZXIgQ08yPC90ZXh0PgogICAgPHRleHQgeD0iMzUiIHk9IjE4NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0FBQSI+ICAgRm9ybXMgVHJpb3NlIFBob3NwaGF0ZSAvIEdsdWNvc2UuPC90ZXh0PgoKICAgIDx0ZXh0IHg9IjI1IiB5PSIyMTQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj4zLiA8dHNwYW4gZmlsbD0iIzgwRDhGRiI+UmVnZW5lcmF0aW9uOjwvdHNwYW4+IDEgQVRQIHBlciBDTzI8L3RleHQ+CiAgICA8dGV4dCB4PSIzNSIgeT0iMjM0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjQUFBIj4gICBSZWdlbmVyYXRlcyBSdUJQIGFjY2VwdG9yIG1vbGVjdWxlLjwvdGV4dD4KCiAgICA8dGV4dCB4PSIyNSIgeT0iMjYyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENvc3QgcGVyIEdsdWNvc2UgKDYgQ08yKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIzNSIgeT0iMjg0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjNjlGMEFFIj4gIFJlcXVpcmVzIDE4IEFUUCArIDEyIE5BRFBILjwvdGV4dD4KICAgIAogICAgPHRleHQgeD0iMjUiIHk9IjMxMiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjUyNTIiPuKAoiBQaG90b3Jlc3BpcmF0aW9uIFJpc2s6PC90ZXh0PgogICAgPHRleHQgeD0iMzUiIHk9IjMzNCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0RERCI+ICBSdUJpc0NPIG94eWdlbmFzZSBhY3Rpdml0eSB3YXN0ZXMgZW5lcmd5PC90ZXh0PgogICAgPHRleHQgeD0iMzUiIHk9IjM1NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0RERCI+ICBpbiBoaWdoIE8yIGFuZCBoaWdoIHRlbXBlcmF0dXJlITwvdGV4dD4KCiAgICA8IS0tIFJpZ2h0IEJveDogQzQgSGF0Y2ggJiBTbGFjayBQYXRod2F5IC0tPgogICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAwLCAwKSI+CiAgICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDM1IiByeD0iMTQiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMDYpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNi41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzgwRDhGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi4gQzQgSGF0Y2ggJmFtcDsgU2xhY2sgUGF0aHdheTwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSIzNzIiIHJ4PSIxMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgICA8dGV4dCB4PSIyNSIgeT0iNzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj5LcmFueiBBbmF0b215ICZhbXA7IFNwYXRpYWwgU2VwYXJhdGlvbjo8L3RleHQ+CiAgICAgIAogICAgICA8dGV4dCB4PSIyNSIgeT0iOTgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIj7igKIgPHRzcGFuIGZpbGw9IiM4MEQ4RkYiPk1lc29waHlsbCBDZWxsczo8L3RzcGFuPiBQcmltYXJ5IENPMiBGaXhhdGlvbjwvdGV4dD4KICAgICAgPHRleHQgeD0iMzUiIHk9IjExOCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0FBQSI+ICAgUEVQICgzQykgKyBDTzIg4p6UIE9BQSAoNEMgT3hhbG9hY2V0YXRlKS48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjM1IiB5PSIxMzgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNBQUEiPiAgIFBFUGNhc2UgaGFzIE5PIG94eWdlbmFzZSBhY3Rpdml0eSE8L3RleHQ+CiAgICAgIAogICAgICA8dGV4dCB4PSIyNSIgeT0iMTY2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+4oCiIDx0c3BhbiBmaWxsPSIjODBEOEZGIj5CdW5kbGUgU2hlYXRoIENlbGxzOjwvdHNwYW4+IFNlY29uZGFyeSBGaXhhdGlvbjwvdGV4dD4KICAgICAgPHRleHQgeD0iMzUiIHk9IjE4NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0FBQSI+ICAgTWFsYXRlIHRyYW5zcG9ydGVkIOKelCBEZWNhcmJveHlsYXRlZCB0byBDTzIuPC90ZXh0PgogICAgICA8dGV4dCB4PSIzNSIgeT0iMjA2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjQUFBIj4gICBIaWdoIENPMiBzdXBwcmVzc2VzIFBob3RvcmVzcGlyYXRpb24hPC90ZXh0PgogICAgICA8dGV4dCB4PSIzNSIgeT0iMjI2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjQUFBIj4gICBSdUJpc0NPIGZpeGVzIENPMiBpbiBDMyBjeWNsZS48L3RleHQ+CgogICAgICA8dGV4dCB4PSIyNSIgeT0iMjU0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzY5RjBBRSI+4oCiIENvc3QgcGVyIEdsdWNvc2UgKDYgQ08yKTo8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjM1IiB5PSIyNzYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiM2OUYwQUUiPiAgUmVxdWlyZXMgMzAgQVRQICsgMTIgTkFEUEguPC90ZXh0PgogICAgICA8dGV4dCB4PSIzNSIgeT0iMjk2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjNjlGMEFFIj4gIChIaWdoZXIgZWZmaWNpZW5jeSBhdCBoaWdoIHRlbXAhKS48L3RleHQ+CiAgICAgIAogICAgICA8dGV4dCB4PSIyNSIgeT0iMzI0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjREREIj4gIEV4YW1wbGVzOiBNYWl6ZSwgU3VnYXJjYW5lLCBTb3JnaHVtLjwvdGV4dD4KICAgIDwvZz4KICA8L2c+CgogIDwhLS0gQm90dG9tIEJhciAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTE1KSI+CiAgICA8cmVjdCB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwIiByeD0iMTAiIGZpbGw9InJnYmEoMCwyMjksMjU1LDAuMTUpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS44Ii8+CiAgICA8dGV4dCB4PSIzOTAiIHk9IjMxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM4MEQ4RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkM0IFBsYW50cyBhdm9pZCBQaG90b3Jlc3BpcmF0aW9uIHZpYSBLcmFueiBBbmF0b215ICZhbXA7IFBFUGNhc2Ug4p6UIEhpZ2hlciB5aWVsZCBhdCBoaWdoIHRlbXAhPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 229, 255, 0.4); border: 2px solid #00E5FF;" alt="3D C3 vs C4 Pathways" /><p style="color: #00E5FF; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 4.3: 3D C3 Calvin Cycle vs C4 Hatch &amp; Slack Pathway Architecture</p></div>
+  
 
   <h3 style="color: #00E5FF; margin-top: 22px; font-size: 16.5px;">(iii) Light-Independent Phase: Calvin (C3) Cycle, Hatch &amp; Slack (C4) Cycle &amp; Photorespiration</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 229, 255, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
@@ -244,64 +157,7 @@ export const c11Bot4HtmlOverview = `
     </ul>
   </div>
 
-  <!-- NEW STANDALONE SVG CARD FOR PHOTORESPIRATION & BLACKMAN'S LAW -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 229, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#00E5FF" font-size="14" font-weight="bold" text-anchor="middle">
-        Photorespiration (C<sub>2</sub> Cycle) &amp; Blackman's Law of Limiting Factors
-      </text>
-
-      <!-- Left Box: Photorespiratory Organelle Shuttling -->
-      <g transform="translate(25, 45)">
-        <rect width="215" height="135" rx="6" fill="rgba(244, 67, 54, 0.15)" stroke="#F44336" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#F44336" font-size="11" font-weight="bold" text-anchor="middle">Photorespiration (C<sub>2</sub> Cycle)</text>
-        <text x="107" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">RuBisCO Oxygenase Activity at high O<sub>2</sub></text>
-        <text x="107" y="56" fill="#EF9A9A" font-size="8.5" text-anchor="middle">RuBP + O<sub>2</sub> &rarr; 3-PGA (3C) + Phosphoglycolate (2C)</text>
-        
-        <text x="107" y="76" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">3 Organelles Cooperate:</text>
-        <text x="107" y="92" fill="#CBD5E1" font-size="8" text-anchor="middle">1. Chloroplast (Glycolate synthesis)</text>
-        <text x="107" y="106" fill="#CBD5E1" font-size="8" text-anchor="middle">2. Peroxisome (Glycine formation)</text>
-        <text x="107" y="120" fill="#CBD5E1" font-size="8" text-anchor="middle">3. Mitochondria (Serine + CO<sub>2</sub> release)</text>
-        <text x="107" y="130" fill="#FF8A65" font-size="7.5" font-weight="bold" text-anchor="middle">Wastes 25% of fixed carbon with ZERO ATP!</text>
-      </g>
-
-      <!-- Right Box: Blackman's Law -->
-      <g transform="translate(260, 45)">
-        <rect width="215" height="135" rx="6" fill="rgba(0, 229, 255, 0.15)" stroke="#00E5FF" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#00E5FF" font-size="11" font-weight="bold" text-anchor="middle">Blackman's Law (1905)</text>
-        <text x="107" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Law of Limiting Factors</text>
-        <!-- Mini Curve sketch -->
-        <line x1="30" y1="100" x2="185" y2="100" stroke="#FFFFFF" stroke-width="1"/>
-        <line x1="30" y1="100" x2="30" y2="50" stroke="#FFFFFF" stroke-width="1"/>
-        <path d="M 30,100 L 90,65 L 180,65" fill="none" stroke="#00E5FF" stroke-width="2"/>
-        <text x="107" y="115" fill="#80D8FF" font-size="8" text-anchor="middle">Rate determined by factor</text>
-        <text x="107" y="126" fill="#80D8FF" font-size="8" text-anchor="middle">at its lowest minimal value</text>
-      </g>
-
-      <!-- Bottom: C4 Advantage Summary -->
-      <g transform="translate(25, 192)">
-        <rect width="450" height="75" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 229, 255, 0.3)"/>
-        <text x="225" y="20" fill="#00E5FF" font-size="11" font-weight="bold" text-anchor="middle">
-          Evolutionary Significance of C<sub>4</sub> Kranz Anatomy
-        </text>
-        <text x="225" y="38" fill="#FFFFFF" font-size="9.5" text-anchor="middle">
-          C<sub>4</sub> plants (Maize, Sugarcane) concentrate CO<sub>2</sub> around RuBisCO via PEPcase in bundle sheath cells,
-        </text>
-        <text x="225" y="54" fill="#69F0AE" font-size="9.5" font-weight="bold" text-anchor="middle">
-          completely eliminating photorespiratory waste &amp; doubling photosynthetic productivity!
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 4.6: C<sub>2</sub> Photorespiratory Organelle Shuttling (Chloroplast &rarr; Peroxisome &rarr; Mitochondrion) &amp; Blackman's Law of Limiting Factors
-  </div>
-</div>
 
 
   <h3 style="color: #00E5FF; margin-top: 22px; font-size: 16.5px;">(iv) Factors Affecting Photosynthesis</h3>
@@ -346,8 +202,7 @@ export const c11Bot4HtmlOverview = `
     Sequence of developmental process in a plant cell; Plant growth regulators; Discovery and physiological effects of Auxins, Gibberellins, Cytokinins, Ethylene and Abscissic Acid
   </h2>
 
-  <!-- PRESERVED IMAGE 4 -->
-  <div style="text-align: center; margin: 24px 0;"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MjAgNTgwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmdHcmFkNCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMDFhMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiMwMDM4NDciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAxYTI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iODIwIiBoZWlnaHQ9IjU4MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnR3JhZDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjQxMCIgeT0iNDIiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QbGFudCBHcm93dGggUmVndWxhdG9ycyAoUEdScykgJmFtcDsgR3Jvd3RoIEN1cnZlczwvdGV4dD4KCiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDY1KSI+CiAgICA8IS0tIExlZnQgQm94OiA1IFBHUnMgTWFzdGVyIFN1bW1hcnkgLS0+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQzNSIgcng9IjE0IiBmaWxsPSJyZ2JhKDAsMjI5LDI1NSwwLjA2KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj41IFBsYW50IEdyb3d0aCBSZWd1bGF0b3JzIChQR1JzKTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iNDgiIHdpZHRoPSIzNTYiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjIiIHk9IjY4IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMy41IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTVGRiI+MS4gQXV4aW5zIChJQUEgLyBJQkEgLyBOQUEpOjwvdGV4dD4KICAgIDx0ZXh0IHg9IjIyIiB5PSI4OCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+QXBpY2FsIERvbWluYW5jZSwgQ2VsbCBFbG9uZ2F0aW9uLCBSb290aW5nPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIxMjQiIHdpZHRoPSIzNTYiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjIiIHk9IjE0NCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU1RkYiPjIuIEdpYmJlcmVsbGlucyAoR0EzKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMTY0IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TdGVtIEJvbHRpbmcsIFNlZWQgR2VybWluYXRpb24sIFN1Z2FyY2FuZSB5aWVsZDwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iMjAwIiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjcwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyMjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj4zLiBDeXRva2luaW5zIChaZWF0aW4gLyBLaW5ldGluKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMjQwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5DZWxsIERpdmlzaW9uLCBPdmVyY29tZXMgQXBpY2FsIERvbWluYW5jZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIxMiIgeT0iMjc2IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjcwIiByeD0iOCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEiLz4KICAgIDx0ZXh0IHg9IjIyIiB5PSIyOTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzLjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZEMTgwIj40LiBFdGh5bGVuZSAoR2FzZW91cyAtIEV0aGVwaG9uKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMzE2IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5GcnVpdCBSaXBlbmluZywgVHJpcGxlIFJlc3BvbnNlLCBBYnNjaXNzaW9uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjEyIiB5PSIzNTIiIHdpZHRoPSIzNTYiIGhlaWdodD0iNzAiIHJ4PSI4IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMjIiIHk9IjM3MiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMuNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjUyNTIiPjUuIEFic2Npc2ljIEFjaWQgKEFCQSAtIFN0cmVzcyBIb3Jtb25lKTo8L3RleHQ+CiAgICA8dGV4dCB4PSIyMiIgeT0iMzkyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMi41IiBmaWxsPSIjRkZGIj5TdG9tYXRhbCBDbG9zdXJlLCBTZWVkIERvcm1hbmN5LCBTdHJlc3MgdG9sZXJhbmNlPC90ZXh0PgoKICAgIDwhLS0gUmlnaHQgQm94OiBHcm93dGggUmF0ZXMgJiBDdXJ2ZXMgLS0+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MDAsIDApIj4KICAgICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0MzUiIHJ4PSIxNCIgZmlsbD0icmdiYSgwLDIyOSwyNTUsMC4wNikiIHN0cm9rZT0iIzAwRTVGRiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Hcm93dGggUmF0ZXMgJmFtcDsgU2lnbW9pZCBDdXJ2ZTwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjEyIiB5PSI0OCIgd2lkdGg9IjM1NiIgaGVpZ2h0PSIxNzUiIHJ4PSIxMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA0KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgICA8dGV4dCB4PSIyMiIgeT0iNzQiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj4xLiBBcml0aG1ldGljIEdyb3d0aDo8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSI5NiIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIE9ubHkgMSBkYXVnaHRlciBjZWxsIGRpdmlkZXMgd2hpbGUgb3RoZXI8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIxMTYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPiAgZGlmZmVyZW50aWF0ZXMgaW50byBwZXJtYW5lbnQgY2VsbC48L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIxMzgiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiNGRkYiPuKAoiBMaW5lYXIgR3Jvd3RoIEZvcm11bGE6IEx0ID0gTDAgKyBydDwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjE2MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIENvbnN0YW50IGdyb3d0aCByYXRlIChSb290IHRpcCBlbG9uZ2F0aW9uKS48L3RleHQ+CgogICAgICA8cmVjdCB4PSIxMiIgeT0iMjM1IiB3aWR0aD0iMzU2IiBoZWlnaHQ9IjE4NyIgcng9IjEwIiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDQpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIyNjEiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0LjUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj4yLiBHZW9tZXRyaWMgR3Jvd3RoIChTLVNpZ21vaWQgQ3VydmUpOjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjI4MyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIEJvdGggZGF1Z2h0ZXIgY2VsbHMgcmV0YWluIGRpdmlzaW9uIGNhcGFjaXR5LjwvdGV4dD4KICAgICAgPHRleHQgeD0iMjIiIHk9IjMwMyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIuNSIgZmlsbD0iI0ZGRiI+4oCiIEZvcm11bGE6IFcxID0gVzAgKiBlXihydCk8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIzMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiM2OUYwQUUiPjEuIExhZyBQaGFzZSDinpQgMi4gTG9nIChFeHBvbmVudGlhbCkgUGhhc2U8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjIyIiB5PSIzNDciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyLjUiIGZpbGw9IiM2OUYwQUUiPuKelCAzLiBTdGF0aW9uYXJ5IFBoYXNlIChOdXRyaWVudCBsaW1pdGF0aW9uKS48L3RleHQ+CiAgICA8L2c+CiAgPC9nPgoKICA8IS0tIEJvdHRvbSBCYXIgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAsIDUxNSkiPgogICAgPHJlY3Qgd2lkdGg9Ijc4MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSJyZ2JhKDAsMjI5LDI1NSwwLjE1KSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEuOCIvPgogICAgPHRleHQgeD0iMzkwIiB5PSIzMSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjODBEOEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5EZXZlbG9wbWVudCA9IEdyb3d0aCArIERpZmZlcmVudGlhdGlvbiAoUmVndWxhdGVkIGJ5IEF1eGluLCBHQSwgQ3l0b2tpbmluLCBFdGh5bGVuZSAmYW1wOyBBQkEpPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="width: 100%; max-width: 650px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 6px 22px rgba(0, 229, 255, 0.4); border: 2px solid #00E5FF;" alt="3D PGRs &amp; Growth Rates" /><p style="color: #00E5FF; font-size: 14px; margin-top: 10px; font-weight: bold;">Figure 4.4: 3D Plant Growth Regulators (PGRs) Action &amp; Growth Rate Curves (Arithmetic vs Sigmoid)</p></div>
+  
 
   <h3 style="color: #00E5FF; margin-top: 18px; font-size: 16.5px;">(i) Sequence of Developmental Process in a Plant Cell &amp; PGR Classification</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(0, 229, 255, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
@@ -462,11 +317,9 @@ export const c11Bot4HtmlOverview = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
-export const c11Bot4HtmlSolutions = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Bot4HtmlSolutions = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- SECTION A -->
   <div style="background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(0, 151, 167, 0.15)); border: 1.5px solid rgba(0, 229, 255, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
@@ -1095,308 +948,307 @@ export const c11Bot4HtmlSolutions = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
 export const c11Bot4Mcqs = [
   {
     "id": "c11-bot-4-mcq-1",
-    "question": "The net yield of ATP produced directly during Glycolysis per glucose molecule is:",
+    "question": "Where does the biochemical sequence of Glycolysis (EMP pathway) take place within the cell?",
     "options": [
-      "A):   1 ATP",
-      "B):   2 ATP",
-      "C):   4 ATP",
-      "D):   36 ATP"
+      "A):   Cytoplasm (Cytosol)",
+      "B):   Mitochondrial matrix",
+      "C):   Inner mitochondrial membrane",
+      "D):   Peroxisome"
     ],
-    "correctAnswer": "b",
-    "explanation": "Glycolysis produces 4 ATP gross by substrate-level phosphorylation but consumes 2 ATP, leaving a net gain of 2 ATP."
+    "correctAnswer": "a",
+    "explanation": "Glycolysis takes place in the cytoplasm (cytosol) of all living cells and is independent of molecular oxygen."
   },
   {
     "id": "c11-bot-4-mcq-2",
-    "question": "The enzyme that catalyzes the pacemaker (rate-limiting) committed step of Glycolysis is:",
+    "question": "Which of the following glycolytic enzymes acts as the primary 'Pacemaker' or rate-limiting enzyme?",
     "options": [
       "A):   Hexokinase",
       "B):   Phosphofructokinase (PFK)",
-      "C):   Aldolase",
+      "C):   Enolase",
       "D):   Pyruvate kinase"
     ],
     "correctAnswer": "b",
-    "explanation": "Phosphofructokinase (PFK) converts Fructose-6-phosphate to Fructose-1,6-bisphosphate, serving as the master regulatory pacemaker."
+    "explanation": "Phosphofructokinase (PFK) catalyzes the irreversible conversion of Fructose-6-phosphate to Fructose-1,6-bisphosphate."
   },
   {
     "id": "c11-bot-4-mcq-3",
-    "question": "In the Krebs cycle, the enzyme Succinate Dehydrogenase is uniquely located in:",
+    "question": "What is the net yield of ATP molecules produced directly by substrate-level phosphorylation in Glycolysis per glucose?",
     "options": [
-      "A):   Mitochondrial matrix",
-      "B):   Outer mitochondrial membrane",
-      "C):   Inner mitochondrial membrane (Complex II)",
-      "D):   Cytoplasm"
+      "A):   4 ATP",
+      "B):   1 ATP",
+      "C):   2 ATP",
+      "D):   36 ATP"
     ],
     "correctAnswer": "c",
-    "explanation": "Succinate Dehydrogenase is embedded in the inner mitochondrial membrane, directly linked to the ETS as Complex II."
+    "explanation": "Glycolysis generates 4 gross ATP while consuming 2 ATP initially, resulting in a net yield of 2 ATP per glucose molecule."
   },
   {
     "id": "c11-bot-4-mcq-4",
-    "question": "The terminal electron acceptor in the mitochondrial electron transport system (Complex IV) is:",
+    "question": "In the Link Reaction connecting glycolysis to the Krebs cycle, pyruvate is converted into Acetyl-CoA by:",
     "options": [
-      "A):   Cytochrome c",
-      "B):   Ubiquinone",
-      "C):   Molecular Oxygen (O<sub>2</sub>)",
-      "D):   NAD<sup>+</sup>"
+      "A):   Reductive amination",
+      "B):   Hydrolytic cleavage",
+      "C):   Substrate-level phosphorylation",
+      "D):   Oxidative Decarboxylation"
     ],
-    "correctAnswer": "c",
-    "explanation": "Complex IV (Cytochrome c oxidase) transfers electrons to terminal O<sub>2</sub>, combining with protons to form water."
+    "correctAnswer": "d",
+    "explanation": "Pyruvate undergoes oxidative decarboxylation via the pyruvate dehydrogenase complex to yield Acetyl-CoA, NADH, and CO2."
   },
   {
     "id": "c11-bot-4-mcq-5",
-    "question": "According to Peter Mitchell's chemiosmotic hypothesis, ATP synthesis is driven by:",
+    "question": "During the Krebs cycle, the conversion of Succinate to Fumarate is coupled to the reduction of:",
     "options": [
-      "A):   Direct hydrolysis of GTP",
-      "B):   An electrochemical proton gradient across the inner membrane",
-      "C):   Diffusion of glucose",
-      "D):   Heat released by glycolysis"
+      "A):   FAD to FADH2",
+      "B):   NAD+ to NADH",
+      "C):   NADP+ to NADPH",
+      "D):   GDP to GTP"
     ],
-    "correctAnswer": "b",
-    "explanation": "The proton motive force generated by proton pumping through ETS drives protons through F<sub>0</sub>-F<sub>1</sub> ATP Synthase."
+    "correctAnswer": "a",
+    "explanation": "Succinate dehydrogenase catalyzes the oxidation of succinate to fumarate while reducing FAD directly to FADH2."
   },
   {
     "id": "c11-bot-4-mcq-6",
-    "question": "The Respiratory Quotient (RQ) for fats like Tripalmitin is approximately:",
+    "question": "In the mitochondrial electron transport system (ETS), the terminal electron acceptor that forms water is:",
     "options": [
-      "A):   1.0",
-      "B):   0.7",
-      "C):   0.9",
-      "D):   Infinity"
+      "A):   Cytochrome c",
+      "B):   Molecular Oxygen (O2)",
+      "C):   Ubiquinone",
+      "D):   NAD+"
     ],
     "correctAnswer": "b",
-    "explanation": "Fats require more oxygen for oxidation than the volume of CO<sub>2</sub> released; for Tripalmitin, 102 CO<sub>2</sub> / 145 O<sub>2</sub> &approx; 0.7."
+    "explanation": "Molecular oxygen acts as the final electron and proton acceptor at Complex IV (Cytochrome c oxidase) to produce water."
   },
   {
     "id": "c11-bot-4-mcq-7",
-    "question": "The photolysis of water in Photosystem II requires which essential mineral ions?",
+    "question": "According to Peter Mitchell's Chemiosmotic Hypothesis, ATP synthesis is directly energized by:",
     "options": [
-      "A):   Fe<sup>2+</sup> and Cu<sup>2+</sup>",
-      "B):   Mn<sup>2+</sup> and Cl<sup>-</sup>",
-      "C):   Mg<sup>2+</sup> and Zn<sup>2+</sup>",
-      "D):   K<sup>+</sup> and Na<sup>+</sup>"
+      "A):   Direct transfer of phosphate from glucose",
+      "B):   Hydrolysis of GTP in the matrix",
+      "C):   An electrochemical proton gradient across the inner mitochondrial membrane",
+      "D):   Binding of oxygen to Complex I"
     ],
-    "correctAnswer": "b",
-    "explanation": "Manganese (Mn<sup>2+</sup>) and chloride (Cl<sup>-</sup>) are vital cofactors for the water-splitting Oxygen Evolving Complex in PS II."
+    "correctAnswer": "c",
+    "explanation": "Proton extrusion creates an electrochemical proton gradient; passage of protons back via F0-F1 ATP synthase drives ATP production."
   },
   {
     "id": "c11-bot-4-mcq-8",
-    "question": "Which of the following products is formed during Cyclic Photophosphorylation?",
+    "question": "What is the Respiratory Quotient (RQ) when Tripalmitin (a representative fat) is utilized as the respiratory substrate?",
     "options": [
-      "A):   ATP only",
-      "B):   ATP and NADPH",
-      "C):   NADPH and O<sub>2</sub>",
-      "D):   Glucose"
+      "A):   1.0",
+      "B):   0.9",
+      "C):   1.4",
+      "D):   0.7"
     ],
-    "correctAnswer": "a",
-    "explanation": "Cyclic photophosphorylation involves only PS I and produces ATP only; no NADPH is formed and no O<sub>2</sub> is evolved."
+    "correctAnswer": "d",
+    "explanation": "Fats require more oxygen for complete combustion than the volume of CO2 released; for Tripalmitin, RQ = 102 CO2 / 145 O2 = 0.7."
   },
   {
     "id": "c11-bot-4-mcq-9",
-    "question": "The primary CO<sub>2</sub> acceptor molecule in the Calvin (C<sub>3</sub>) Cycle is:",
+    "question": "Why is the respiratory pathway universally characterized as an 'Amphibolic Pathway'?",
     "options": [
-      "A):   PEP (Phosphoenolpyruvate)",
-      "B):   RuBP (Ribulose-1,5-bisphosphate)",
-      "C):   OAA (Oxaloacetate)",
-      "D):   3-PGA"
+      "A):   It involves both catabolic breakdown of substrates and anabolic synthesis of biomolecules from intermediates",
+      "B):   It operates only in amphibious plant species",
+      "C):   It uses equal amounts of oxygen and carbon dioxide",
+      "D):   It proceeds identically in light and darkness"
     ],
-    "correctAnswer": "b",
-    "explanation": "RuBP (a 5-carbon ketose sugar) fixes CO<sub>2</sub> via RuBisCO to form 3-Phosphoglyceric acid (3-PGA)."
+    "correctAnswer": "a",
+    "explanation": "Respiration is amphibolic because its catabolic breakdown intermediates serve as vital precursors for anabolic biosynthesis."
   },
   {
     "id": "c11-bot-4-mcq-10",
-    "question": "The first stable compound formed in C<sub>4</sub> plants following CO<sub>2</sub> fixation is:",
+    "question": "Who demonstrated that the green parts of plants release oxygen only in the presence of sunlight?",
     "options": [
-      "A):   3-Phosphoglycerate (3C)",
-      "B):   Oxaloacetate (4C)",
-      "C):   Malate (4C)",
-      "D):   Aspartate (4C)"
+      "A):   Joseph Priestley",
+      "B):   Jan Ingenhousz",
+      "C):   Julius von Sachs",
+      "D):   T.W. Engelmann"
     ],
     "correctAnswer": "b",
-    "explanation": "PEPcase in mesophyll cells fixes CO<sub>2</sub> into Phosphoenolpyruvate (3C) to form Oxaloacetic acid (4C)."
+    "explanation": "Jan Ingenhousz (1779) placed aquatic plants in light and dark, proving that oxygen bubbles form only around illuminated green parts."
   },
   {
     "id": "c11-bot-4-mcq-11",
-    "question": "Kranz anatomy in leaves is an evolutionary hallmark of which group of plants?",
+    "question": "Photolysis of water (water-splitting complex) during the light reactions of photosynthesis is physically associated with:",
     "options": [
-      "A):   C<sub>3</sub> plants",
-      "B):   C<sub>4</sub> plants (e.g., Maize, Sugarcane)",
-      "C):   Hydrophytes",
-      "D):   Bryophytes"
+      "A):   Photosystem I on stroma lamellae",
+      "B):   CF0-CF1 ATP Synthase",
+      "C):   Photosystem II on the inner lumen side of the thylakoid membrane",
+      "D):   RuBisCO in the stroma"
     ],
-    "correctAnswer": "b",
-    "explanation": "C<sub>4</sub> plants possess Kranz anatomy featuring prominent bundle sheath cells surrounded by mesophyll cells."
+    "correctAnswer": "c",
+    "explanation": "The oxygen-evolving complex (OEC) with Mn, Ca, and Cl ions is located on the inner lumenal face of PSII."
   },
   {
     "id": "c11-bot-4-mcq-12",
-    "question": "Photorespiration occurs when the enzyme RuBisCO binds with:",
+    "question": "Which of the following products is formed EXCLUSIVELY in Non-Cyclic Photophosphorylation (Z-scheme) and NOT in Cyclic Photophosphorylation?",
     "options": [
-      "A):   CO<sub>2</sub> instead of O<sub>2</sub>",
-      "B):   O<sub>2</sub> instead of CO<sub>2</sub>",
-      "C):   Nitrogen gas",
-      "D):   Water"
+      "A):   ATP only",
+      "B):   Both NADPH and Oxygen (O2)",
+      "C):   Glyceraldehyde-3-phosphate",
+      "D):   Glucose"
     ],
     "correctAnswer": "b",
-    "explanation": "RuBisCO has oxygenase activity; at high O<sub>2</sub> and temperature, it oxygenates RuBP to phosphoglycolate and 3-PGA."
+    "explanation": "Cyclic photophosphorylation generates ATP alone; non-cyclic photophosphorylation produces ATP, NADPH, and releases O2."
   },
   {
     "id": "c11-bot-4-mcq-13",
-    "question": "The three organelles that cooperate in the photorespiratory C<sub>2</sub> cycle are:",
+    "question": "The primary carbon dioxide acceptor molecule in the Calvin (C3) cycle is:",
     "options": [
-      "A):   Chloroplast, Golgisome, Endoplasmic reticulum",
-      "B):   Chloroplast, Peroxisome, Mitochondria",
-      "C):   Mitochondria, Ribosome, Vacuole",
-      "D):   Nucleus, Chloroplast, Lysosome"
+      "A):   Phosphoenolpyruvate (PEP)",
+      "B):   Oxaloacetic acid (OAA)",
+      "C):   Ribulose-1,5-bisphosphate (RuBP)",
+      "D):   3-Phosphoglyceric acid (3-PGA)"
     ],
-    "correctAnswer": "b",
-    "explanation": "Photorespiration shuttles metabolites sequentially through Chloroplast &rarr; Peroxisome &rarr; Mitochondria."
+    "correctAnswer": "c",
+    "explanation": "In the C3 cycle, the 5-carbon ketose sugar Ribulose-1,5-bisphosphate (RuBP) accepts CO2 catalyzed by RuBisCO."
   },
   {
     "id": "c11-bot-4-mcq-14",
-    "question": "Who formulated the Law of Limiting Factors in 1905?",
+    "question": "For the synthesis of ONE molecule of Glucose through the Calvin cycle, how many ATP and NADPH molecules are consumed?",
     "options": [
-      "A):   Melvin Calvin",
-      "B):   F.F. Blackman",
-      "C):   Cornelius van Niel",
-      "D):   Julius von Sachs"
+      "A):   12 ATP and 12 NADPH",
+      "B):   30 ATP and 12 NADPH",
+      "C):   38 ATP and 10 NADPH",
+      "D):   18 ATP and 12 NADPH"
     ],
-    "correctAnswer": "b",
-    "explanation": "F.F. Blackman stated that when a process depends on multiple factors, its rate is dictated by the slowest factor."
+    "correctAnswer": "d",
+    "explanation": "Each turn of the C3 cycle uses 3 ATP and 2 NADPH; 6 turns to fix 1 glucose consume 18 ATP and 12 NADPH."
   },
   {
     "id": "c11-bot-4-mcq-15",
-    "question": "The mathematical formula representing geometric exponential growth is:",
+    "question": "Kranz Anatomy, featuring large bundle sheath cells with agranal chloroplasts, is characteristic of:",
     "options": [
-      "A):   L<sub>t</sub> = L<sub>0</sub> + rt",
-      "B):   W<sub>1</sub> = W<sub>0</sub> e<sup>rt</sup>",
-      "C):   P = 2n",
-      "D):   E = mc<sup>2</sup>"
+      "A):   C4 plants like Maize and Sugarcane",
+      "B):   C3 plants like Rice and Wheat",
+      "C):   CAM plants like Pineapple",
+      "D):   Hydrophytes like Hydrilla"
     ],
-    "correctAnswer": "b",
-    "explanation": "Geometric growth follows W<sub>1</sub> = W<sub>0</sub> e<sup>rt</sup>, where r is the relative growth rate and e is base of natural log."
+    "correctAnswer": "a",
+    "explanation": "Kranz ('wreath') anatomy is the hallmark anatomical specialization of C4 plants (e.g., Maize, Sugarcane, Sorghum)."
   },
   {
     "id": "c11-bot-4-mcq-16",
-    "question": "The phenomenon where a differentiated cell regains mitotic division capacity (e.g., cork cambium formation) is called:",
+    "question": "Photorespiration (C2 cycle) occurs when the active site of RuBisCO binds oxygen instead of carbon dioxide at:",
     "options": [
-      "A):   Differentiation",
-      "B):   Dedifferentiation",
-      "C):   Redifferentiation",
-      "D):   Senescence"
+      "A):   Low temperature and high CO2 levels",
+      "B):   High O2 concentration, low CO2 concentration, and high temperature",
+      "C):   Total darkness",
+      "D):   High humidity and low light"
     ],
     "correctAnswer": "b",
-    "explanation": "Dedifferentiation is the process whereby mature non-dividing permanent cells revert to an active meristematic state."
+    "explanation": "Under high O2, low CO2, and elevated temperatures, RuBisCO acts as an oxygenase, initiating the wasteful C2 photorespiratory cycle."
   },
   {
     "id": "c11-bot-4-mcq-17",
-    "question": "Apical dominance, where the terminal bud suppresses the outgrowth of axillary lateral buds, is maintained by:",
+    "question": "According to Blackman's Law of Limiting Factors (1905), the rate of a physiological process is determined by the factor that is:",
     "options": [
-      "A):   Gibberellin",
-      "B):   Auxin",
-      "C):   Cytokinin",
-      "D):   Ethylene"
+      "A):   Present in maximum abundance",
+      "B):   Completely unaffected by temperature",
+      "C):   Nearest to its minimal value",
+      "D):   Optically active"
     ],
-    "correctAnswer": "b",
-    "explanation": "Auxin produced at the shoot tip moves basipetally to maintain apical dominance over lateral buds."
+    "correctAnswer": "c",
+    "explanation": "Blackman stated that when a process is governed by multiple factors, its rate is limited by the pace of the slowest factor nearest to its minimum."
   },
   {
     "id": "c11-bot-4-mcq-18",
-    "question": "Which synthetic auxin is extensively utilized as a selective herbicide to eliminate broad-leaved weeds?",
+    "question": "A typical S-shaped (Sigmoid) growth curve displayed by whole plants and organ populations comprises the phases:",
     "options": [
-      "A):   IAA",
-      "B):   2,4-D",
-      "C):   IBA",
-      "D):   GA<sub>3</sub>"
+      "A):   Lag Phase -> Log (Exponential) Phase -> Stationary Phase",
+      "B):   Log Phase -> Lag Phase -> Linear Phase",
+      "C):   Stationary Phase -> Lag Phase -> Decline Phase",
+      "D):   Linear Phase -> Arithmetic Phase -> Maturation Phase"
     ],
-    "correctAnswer": "b",
-    "explanation": "2,4-D (2,4-Dichlorophenoxyacetic acid) selectively kills broad-leaved dicot weeds without harming monocot crops."
+    "correctAnswer": "a",
+    "explanation": "The geometric sigmoid curve comprises an initial slow Lag Phase, a rapid exponential Log Phase, and a plateaued Stationary Phase."
   },
   {
     "id": "c11-bot-4-mcq-19",
-    "question": "Bakanae (foolish seedling) disease in rice led directly to the discovery of:",
+    "question": "The formation of interfascicular cambium and cork cambium (phellogen) from fully differentiated living parenchyma cells is an example of:",
     "options": [
-      "A):   Auxins",
-      "B):   Gibberellins",
-      "C):   Cytokinins",
-      "D):   Abscisic acid"
+      "A):   Differentiation",
+      "B):   Redifferentiation",
+      "C):   Dedifferentiation",
+      "D):   Senescence"
     ],
-    "correctAnswer": "b",
-    "explanation": "E. Kurosawa discovered gibberellins from the fungal pathogen Gibberella fujikuroi causing foolish seedling disease."
+    "correctAnswer": "c",
+    "explanation": "Dedifferentiation occurs when living permanent differentiated cells regain their capacity to divide under specific stimuli."
   },
   {
     "id": "c11-bot-4-mcq-20",
-    "question": "Bolting, the rapid internode elongation prior to flowering in rosette plants like cabbage, is induced by:",
+    "question": "Heterophylly in Buttercup (Ranunculus), where submerged leaves are highly dissected and aerial leaves are lobed, demonstrates:",
     "options": [
-      "A):   Auxin",
-      "B):   Gibberellin",
-      "C):   Abscisic acid",
-      "D):   Ethylene"
+      "A):   Dendrochronology",
+      "B):   Vernalization",
+      "C):   Photoperiodism",
+      "D):   Plasticity"
     ],
-    "correctAnswer": "b",
-    "explanation": "Gibberellins trigger rapid stem and internode extension (bolting) in cabbage, beet, and carrots."
+    "correctAnswer": "d",
+    "explanation": "Plasticity is the capacity of plants to form distinct structural pathways in response to environmental conditions (e.g., heterophylly)."
   },
   {
     "id": "c11-bot-4-mcq-21",
-    "question": "The delay of leaf senescence by nutrient mobilization under the influence of Cytokinins is known as the:",
+    "question": "Which plant growth regulator was first isolated from human urine and oat (Avena sativa) coleoptile tips by F.W. Went?",
     "options": [
-      "A):   Pasteur Effect",
-      "B):   Richmond-Lang Effect",
-      "C):   Warburg Effect",
-      "D):   Emerson Effect"
+      "A):   Auxin (IAA)",
+      "B):   Gibberellin",
+      "C):   Cytokinin",
+      "D):   Abscisic acid"
     ],
-    "correctAnswer": "b",
-    "explanation": "The Richmond-Lang effect describes the significant retardation of leaf senescence achieved by cytokinins."
+    "correctAnswer": "a",
+    "explanation": "Auxin (Indole-3-acetic acid / IAA) was isolated from human urine and by F.W. Went from oat coleoptile tips using agar blocks."
   },
   {
     "id": "c11-bot-4-mcq-22",
-    "question": "The only naturally occurring gaseous plant growth regulator is:",
+    "question": "The agricultural practice of applying Gibberellins (GA3) to biennial rosette plants like cabbage to induce internodal elongation prior to flowering is termed:",
     "options": [
-      "A):   Auxin",
-      "B):   Gibberellin",
-      "C):   Ethylene",
-      "D):   Abscisic acid"
+      "A):   Apical dominance",
+      "B):   Bolting",
+      "C):   Etiolation",
+      "D):   Abscission"
     ],
-    "correctAnswer": "c",
-    "explanation": "Ethylene (C<sub>2</sub>H<sub>4</sub>) is the sole gaseous plant hormone, regulating fruit ripening and senescence."
+    "correctAnswer": "b",
+    "explanation": "Bolting is the rapid internodal stem elongation just prior to flowering stimulated by gibberellic acid in rosette plants."
   },
   {
     "id": "c11-bot-4-mcq-23",
-    "question": "During severe drought and water stress, which hormone causes rapid stomatal closure in leaves?",
+    "question": "Cytokinins delay the senescence of detached green leaves and maintain chlorophyll retention through a phenomenon known as the:",
     "options": [
-      "A):   Auxin",
-      "B):   Cytokinin",
-      "C):   Abscisic Acid (ABA)",
-      "D):   Gibberellin"
+      "A):   Kranz effect",
+      "B):   Pasteur effect",
+      "C):   Richmond-Lang effect",
+      "D):   Emerson enhancement effect"
     ],
     "correctAnswer": "c",
-    "explanation": "Abscisic acid (the stress hormone) stimulates ion efflux from guard cells, causing flaccidity and rapid stomatal closure."
+    "explanation": "The Richmond-Lang effect refers to the delayed senescence and nutrient mobilization in leaves induced by cytokinins."
   },
   {
     "id": "c11-bot-4-mcq-24",
-    "question": "The presence of two different forms of leaves on the same plant (Heterophylly) is an example of:",
+    "question": "The only natural Gaseous Plant Growth Regulator, which accelerates commercial fruit ripening and promotes triple response in seedlings, is:",
     "options": [
-      "A):   Senescence",
-      "B):   Plasticity",
-      "C):   Apical dominance",
-      "D):   Vernalization"
+      "A):   Abscisic Acid",
+      "B):   Kinetin",
+      "C):   Indole butyric acid",
+      "D):   Ethylene"
     ],
-    "correctAnswer": "b",
-    "explanation": "Plasticity is the capacity of plants to alter developmental morphology in response to environmental cues."
+    "correctAnswer": "d",
+    "explanation": "Ethylene (C2H4) is a volatile hydrocarbon gas that promotes fruit ripening, leaf epinasty, and the classic seedling triple response."
   },
   {
     "id": "c11-bot-4-mcq-25",
-    "question": "The promotion of flowering by a period of low-temperature chilling exposure is called:",
+    "question": "Which plant hormone acts as a 'Stress Hormone' by triggering rapid stomatal closure during severe soil and atmospheric drought?",
     "options": [
-      "A):   Photoperiodism",
-      "B):   Vernalization",
-      "C):   Dormancy",
-      "D):   Stratification"
+      "A):   Gibberellin (GA3)",
+      "B):   Abscisic Acid (ABA)",
+      "C):   Cytokinin",
+      "D):   Auxin"
     ],
     "correctAnswer": "b",
-    "explanation": "Vernalization is the low-temperature (chilling) requirement for acquiring floral competence."
+    "explanation": "Abscisic Acid (ABA) is the master stress hormone; it binds guard cell receptors to cause potassium ion efflux, closing stomata."
   }
 ];

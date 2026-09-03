@@ -1,9 +1,8 @@
 // Class 11 Zoology Chapter 4: Human Physiology
-// Gold Standard Reference Textbook & 3-Tab Architecture
+// Complete Official Syllabus Coverage & Zero Diagrams
 // Subject: Zoology | Class: 11 | Code: c11-zoo-4
 
-export const c11Zoo4HtmlOverview = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo4HtmlOverview = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- Quick Glossary Card with Chapter Subtitle -->
   <div style="background: linear-gradient(135deg, rgba(0, 176, 255, 0.12), rgba(2, 119, 189, 0.12)); border: 1.5px solid rgba(0, 176, 255, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -36,59 +35,11 @@ export const c11Zoo4HtmlOverview = `
     1. Breathing and Respiration
   </h2>
 
-  <!-- FIGURE 4.1 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhVTUFOIFJFU1BJUkFUT1JZIFNZU1RFTSAmYW1wOyBBTFZFT0xBUiBHQVMgRVhDSEFOR0U8L3RleHQ+CgogIDwhLS0gTEVGVDogUmVzcGlyYXRvcnkgU3lzdGVtIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwLCA2MCkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NjAiIHJ4PSIxMiIgZmlsbD0iIzBEMDcyMiIgc3Ryb2tlPSIjMDBCMEZGIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5SZXNwaXJhdG9yeSBUcmFjdCBBcmNoaXRlY3R1cmU8L3RleHQ+CiAgICAKICAgIDwhLS0gTmFzYWwgJiBQaGFyeW54IC0tPgogICAgPHBhdGggZD0iTSAxMjAgNzAgUSAxNDAgNzAgMTUwIDkwIEwgMTUwIDE0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRTBFMEUwIiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDxjaXJjbGUgY3g9IjEyMCIgY3k9IjcwIiByPSIxMCIgZmlsbD0iIzQyQTVGNSIvPgogICAgPHRleHQgeD0iNTAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFMEUwRTAiPk5hc2FsIENhdml0eTwvdGV4dD4KICAgIDxsaW5lIHgxPSIxMDAiIHkxPSI3MiIgeDI9IjExMCIgeTI9IjcyIiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogICAgPHRleHQgeD0iNTAiIHk9IjExNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRTBFMEUwIj5QaGFyeW54ICZhbXA7IExhcnlueDwvdGV4dD4KICAgIDxsaW5lIHgxPSIxMzUiIHkxPSIxMTIiIHgyPSIxNTAiIHkyPSIxMTIiIHN0cm9rZT0iIzAwQjBGRiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KCiAgICA8IS0tIFRyYWNoZWEgLS0+CiAgICA8cGF0aCBkPSJNIDE1MCAxNDAgTCAxNTAgMjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IjQgNCIvPgogICAgPHRleHQgeD0iNDAiIHk9IjE4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj5UcmFjaGVhIChXaW5kcGlwZSk8L3RleHQ+CiAgICA8bGluZSB4MT0iMTMwIiB5MT0iMTc4IiB4Mj0iMTQ1IiB5Mj0iMTc4IiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CgogICAgPCEtLSBMdW5ncyAtLT4KICAgIDxwYXRoIGQ9Ik0gMTUwIDIyMCBRIDkwIDI0MCA4MCAzNDAgUSA4MCAzOTAgMTQwIDM4MCBMIDE1MCAyMjAgWiIgZmlsbD0icmdiYSgyNTUsIDY0LCAxMjksIDAuNCkiIHN0cm9rZT0iI0ZGNDA4MSIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8cGF0aCBkPSJNIDE1MCAyMjAgUSAyMTAgMjQwIDIyMCAzNDAgUSAyMjAgMzkwIDE2MCAzODAgTCAxNTAgMjIwIFoiIGZpbGw9InJnYmEoMjU1LCA2NCwgMTI5LCAwLjQpIiBzdHJva2U9IiNGRjQwODEiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHRleHQgeD0iMzUiIHk9IjMyMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY0MDgxIj5SaWdodCBMdW5nPC90ZXh0PgogICAgPHRleHQgeD0iMjMwIiB5PSIzMjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNDA4MSI+TGVmdCBMdW5nPC90ZXh0PgoKICAgIDwhLS0gQnJvbmNoaW9sZXMgLS0+CiAgICA8cGF0aCBkPSJNIDE1MCAyMjAgTCAxMTAgMjcwIE0gMTEwIDI3MCBMIDk1IDMxMCBNIDExMCAyNzAgTCAxMzAgMzEwIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgPHBhdGggZD0iTSAxNTAgMjIwIEwgMTkwIDI3MCBNIDE5MCAyNzAgTCAxNzAgMzEwIE0gMTkwIDI3MCBMIDIwNSAzMTAiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIyIi8+CgogICAgPCEtLSBEaWFwaHJhZ20gLS0+CiAgICA8cGF0aCBkPSJNIDYwIDQxMCBRIDE1MCAzNzAgMjQwIDQxMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjYiLz4KICAgIDx0ZXh0IHg9IjE1MCIgeT0iNDM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRpYXBocmFnbSBNdXNjbGU8L3RleHQ+CiAgPC9nPgoKICA8IS0tIFJJR0hUOiBBbHZlb2xpICYgR2FzIEV4Y2hhbmdlIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0MCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iIzAwRTVGRiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTVGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QWx2ZW9sYXIgQ2FwaWxsYXJ5IEdhcyBFeGNoYW5nZTwvdGV4dD4KCiAgICA8IS0tIEFsdmVvbHVzIENpcmNsZSAtLT4KICAgIDxjaXJjbGUgY3g9IjE5MCIgY3k9IjE4MCIgcj0iOTAiIGZpbGw9InJnYmEoMCwgMjI5LCAyNTUsIDAuMTUpIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIxMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTVGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QWx2ZW9sdXMgQ2F2aXR5PC90ZXh0PgogICAgCiAgICA8IS0tIENhcGlsbGFyeSBWZXNzZWwgLS0+CiAgICA8cGF0aCBkPSJNIDYwIDE4MCBDIDEwMCAyODAgMjgwIDI4MCAzMjAgMTgwIiBmaWxsPSJub25lIiBzdHJva2U9IiNGRjE3NDQiIHN0cm9rZS13aWR0aD0iMTIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMjcwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjE3NDQiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlB1bG1vbmFyeSBDYXBpbGxhcnkgQmxvb2Q8L3RleHQ+CgogICAgPCEtLSBHYXMgRXhjaGFuZ2UgQXJyb3dzIC0tPgogICAgPHBhdGggZD0iTSAxNjAgMTgwIEwgMTYwIDIyMCIgc3Ryb2tlPSIjNjZCQjZBIiBzdHJva2Utd2lkdGg9IjQiIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIi8+CiAgICA8dGV4dCB4PSIxNDAiIHk9IjIwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjZCQjZBIj5P4oKCPC90ZXh0PgoKICAgIDxwYXRoIGQ9Ik0gMjIwIDIyMCBMIDIyMCAxODAiIHN0cm9rZT0iI0ZGNTI1MiIgc3Ryb2tlLXdpZHRoPSI0IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgogICAgPHRleHQgeD0iMjM1IiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGNTI1MiI+Q0/igoI8L3RleHQ+CgogICAgPCEtLSBCcmVhdGhpbmcgTWVjaGFuaXNtIEJveCAtLT4KICAgIDxyZWN0IHg9IjI1IiB5PSIzMTAiIHdpZHRoPSIzMzAiIGhlaWdodD0iMTMwIiByeD0iOCIgZmlsbD0iIzA2MDIwQyIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QnJlYXRoaW5nIE1lY2hhbmlzbSBGbG93Y2hhcnQ8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iMzcwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNFMEUwRTAiPkluc3BpcmF0aW9uOiBEaWFwaHJhZ20gY29udHJhY3RzICZyYXJyOyBUaG9yYXggZXhwYW5kczwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSI0MDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0UwRTBFMCI+RXhwaXJhdGlvbjogRGlhcGhyYWdtIHJlbGF4ZXMgJnJhcnI7IFRob3JheCBjb250cmFjdHM8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iNDI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0IwQkVDNSI+SW50cmEtcHVsbW9uYXJ5IHByZXNzdXJlIGdyYWRpZW50IGNvbnRyb2xzIGFpciBmbG93PC90ZXh0PgogIDwvZz4KPC9zdmc+" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.1: Human Respiratory System Architecture, Alveolar Gas Exchange &amp; Mechanism of Breathing Flowchart</p>
-</div>
+  
 
   
 
-  <!-- FIGURE 4.2 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 270" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="270" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#00B0FF" font-size="13.5" font-weight="bold" text-anchor="middle">
-        Oxygen-Hemoglobin Dissociation Curve &amp; The Bohr Effect
-      </text>
-      <!-- Left: Sigmoid Curve Graph -->
-      <g transform="translate(25, 42)">
-        <rect width="215" height="210" rx="6" fill="rgba(0, 176, 255, 0.1)" stroke="#00B0FF" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#00B0FF" font-size="10.5" font-weight="bold" text-anchor="middle">Sigmoid Saturation Curve</text>
-        <line x1="30" y1="180" x2="195" y2="180" stroke="#CBD5E1" stroke-width="1"/>
-        <line x1="30" y1="180" x2="30" y2="35" stroke="#CBD5E1" stroke-width="1"/>
-        <!-- Sigmoid S-Curve -->
-        <path d="M 30,178 Q 75,175 100,110 T 190,50" fill="none" stroke="#FF007F" stroke-width="2.5"/>
-        <!-- Shift Right (Bohr) -->
-        <path d="M 30,178 Q 95,175 125,125 T 190,70" fill="none" stroke="#FF9100" stroke-width="1.5" stroke-dasharray="4,3"/>
-        <text x="107" y="75" fill="#FF007F" font-size="8" font-weight="bold" text-anchor="middle">Normal Curve</text>
-        <text x="135" y="145" fill="#FF9100" font-size="8" font-weight="bold" text-anchor="middle">Shift Right (Bohr)</text>
-        <text x="110" y="194" fill="#CBD5E1" font-size="7.5" text-anchor="middle">pO<sub>2</sub> (mm Hg) &rarr;</text>
-        <text x="10" y="110" fill="#CBD5E1" font-size="7.5" transform="rotate(-90 10,110)" text-anchor="middle">% Hb Saturation</text>
-      </g>
-      <!-- Right: Shift Factors & CO2 Transport -->
-      <g transform="translate(260, 42)">
-        <rect width="215" height="210" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="107" y="20" fill="#69F0AE" font-size="10.5" font-weight="bold" text-anchor="middle">Bohr Effect: Right Shift Factors</text>
-        <text x="15" y="42" fill="#FFFFFF" font-size="8.5">&bull; <b>High pCO<sub>2</sub>:</b> In metabolizing tissues</text>
-        <text x="15" y="60" fill="#FFFFFF" font-size="8.5">&bull; <b>High [H<sup>+</sup>] / Low pH:</b> Lactic acidosis</text>
-        <text x="15" y="78" fill="#FFFFFF" font-size="8.5">&bull; <b style="color: #00B0FF;">High Temperature:</b> Muscle exercise</text>
-        <text x="15" y="96" fill="#FFFFFF" font-size="8.5">&bull; <b style="color: #00B0FF;">High 2,3-BPG:</b> Facilitates O<sub>2</sub> unloading</text>
-        <line x1="15" y1="106" x2="200" y2="106" stroke="rgba(255,255,255,0.15)"/>
-        <text x="107" y="124" fill="#FFE082" font-size="10" font-weight="bold" text-anchor="middle">Modes of CO<sub>2</sub> Transport in Blood</text>
-        <text x="15" y="144" fill="#FFFFFF" font-size="8.5">1. <b>Bicarbonate (HCO<sub>3</sub><sup>-</sup>): ~70%</b></text>
-        <text x="25" y="158" fill="#CBD5E1" font-size="7.5">(Carbonic Anhydrase + Chloride Shift)</text>
-        <text x="15" y="174" fill="#FFFFFF" font-size="8.5">2. <b>Carbamino-Hb: ~20-25%</b></text>
-        <text x="15" y="192" fill="#FFFFFF" font-size="8.5">3. <b>Dissolved in Plasma: ~7%</b></text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 4.2: Oxygen-Hemoglobin Dissociation Sigmoid Curve, Factors Inducing Right Shift (Bohr Effect in Tissues) &amp; The 3 Modes of Blood CO<sub>2</sub> Transport
-  </div>
-</div>
 
 
   <h3 style="color: #00B0FF; margin-top: 18px; font-size: 16.5px;">(i) Human Respiratory System Architecture</h3>
@@ -115,11 +66,7 @@ export const c11Zoo4HtmlOverview = `
     2. Body Fluids and Circulation
   </h2>
 
-  <!-- FIGURE 4.3 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNUUlVDVFVSRSBPRiBIVU1BTiBIRUFSVCAmYW1wOyBTVEFOREFSRCBFQ0cgVFJBQ0U8L3RleHQ+CgogIDwhLS0gTEVGVDogSGVhcnQgQW5hdG9teSAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0ZGMTc0NCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGMTc0NCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+NC1DaGFtYmVyZWQgSGVhcnQgQW5hdG9teTwvdGV4dD4KCiAgICA8IS0tIEhlYXJ0IE91dGxpbmUgLS0+CiAgICA8cGF0aCBkPSJNIDEyMCAxMjAgQyA4MCAxODAgODAgMzIwIDE5MCA0MTAgQyAzMDAgMzIwIDMwMCAxODAgMjYwIDEyMCBaIiBmaWxsPSJyZ2JhKDI1NSwgMjMsIDY4LCAwLjI1KSIgc3Ryb2tlPSIjRkYxNzQ0IiBzdHJva2Utd2lkdGg9IjMiLz4KICAgIAogICAgPCEtLSBTZXB0dW0gLS0+CiAgICA8bGluZSB4MT0iMTkwIiB5MT0iMTIwIiB4Mj0iMTkwIiB5Mj0iNDAwIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPGxpbmUgeDE9IjkwIiB5MT0iMjMwIiB4Mj0iMjkwIiB5Mj0iMjMwIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iNCIvPgoKICAgIDwhLS0gQ2hhbWJlcnMgTGFiZWxzIC0tPgogICAgPHJlY3QgeD0iMTA1IiB5PSIxNTAiIHdpZHRoPSI3MCIgaGVpZ2h0PSI1MCIgcng9IjYiIGZpbGw9IiMxNTY1QzAiLz4KICAgIDx0ZXh0IHg9IjE0MCIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJpZ2h0IEF0cml1bTwvdGV4dD4KCiAgICA8cmVjdCB4PSIyMDUiIHk9IjE1MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjUwIiByeD0iNiIgZmlsbD0iI0M2MjgyOCIvPgogICAgPHRleHQgeD0iMjQwIiB5PSIxODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TGVmdCBBdHJpdW08L3RleHQ+CgogICAgPHJlY3QgeD0iMTA1IiB5PSIyNzAiIHdpZHRoPSI3MCIgaGVpZ2h0PSI2MCIgcng9IjYiIGZpbGw9IiMxNTY1QzAiLz4KICAgIDx0ZXh0IHg9IjE0MCIgeT0iMzA1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJpZ2h0IFZlbnRyaWNsZTwvdGV4dD4KCiAgICA8cmVjdCB4PSIyMDUiIHk9IjI3MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjYwIiByeD0iNiIgZmlsbD0iI0M2MjgyOCIvPgogICAgPHRleHQgeD0iMjQwIiB5PSIzMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TGVmdCBWZW50cmljbGU8L3RleHQ+CgogICAgPCEtLSBNYWpvciBWZXNzZWxzIC0tPgogICAgPHRleHQgeD0iMTkwIiB5PSI4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY1MjUyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Bb3J0YSAmYW1wOyBQdWxtb25hcnkgQXJ0ZXJ5PC90ZXh0PgogICAgPHRleHQgeD0iMTkwIiB5PSI0NDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U0EgTm9kZSAoUGFjZW1ha2VyKSAmYW1wOyBBViBWYWx2ZXM8L3RleHQ+CiAgPC9nPgoKICA8IS0tIFJJR0hUOiBFQ0cgVHJhY2UgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQwLCA2MCkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NjAiIHJ4PSIxMiIgZmlsbD0iIzBEMDcyMiIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TdGFuZGFyZCBFQ0cgR3JhcGggVHJhY2U8L3RleHQ+CgogICAgPCEtLSBFQ0cgV2F2ZSBQYXRoIC0tPgogICAgPHBhdGggZD0iTSA0MCAyMjAgTCA5MCAyMjAgUSAxMTAgMTgwIDEyNSAyMjAgTCAxNDAgMjQwIEwgMTU1IDkwIEwgMTc1IDI3MCBMIDE5MCAyMjAgTCAyMzAgMjIwIFEgMjU1IDE2MCAyODAgMjIwIEwgMzQwIDIyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjQiLz4KCiAgICA8IS0tIFdhdmUgTGFiZWxzIC0tPgogICAgPGNpcmNsZSBjeD0iMTEwIiBjeT0iMTk1IiByPSIxNCIgZmlsbD0iI0ZGRDU0RiIvPgogICAgPHRleHQgeD0iMTEwIiB5PSIyMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UDwvdGV4dD4KICAgIDx0ZXh0IHg9IjExMCIgeT0iMTY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkF0cmlhbCBEZXBvbC48L3RleHQ+CgogICAgPGNpcmNsZSBjeD0iMTU1IiBjeT0iODAiIHI9IjE2IiBmaWxsPSIjRkYxNzQ0Ii8+CiAgICA8dGV4dCB4PSIxNTUiIHk9Ijg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlFSUzwvdGV4dD4KICAgIDx0ZXh0IHg9IjE1NSIgeT0iNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGMTc0NCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VmVudHJpY3VsYXIgRGVwb2wuPC90ZXh0PgoKICAgIDxjaXJjbGUgY3g9IjI2MCIgY3k9IjE4MCIgcj0iMTQiIGZpbGw9IiM2NkJCNkEiLz4KICAgIDx0ZXh0IHg9IjI2MCIgeT0iMTg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlQ8L3RleHQ+CiAgICA8dGV4dCB4PSIyNjAiIHk9IjE1MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjZCQjZBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5WZW50cmljdWxhciBSZXBvbC48L3RleHQ+CgogICAgPCEtLSBFQ0cgU3VtbWFyeSBCb3ggLS0+CiAgICA8cmVjdCB4PSIyNSIgeT0iMzEwIiB3aWR0aD0iMzMwIiBoZWlnaHQ9IjEzMCIgcng9IjgiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iIzAwQjBGRiIgc3Ryb2tlLXdpZHRoPSIxLjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVDRyBDbGluaWNhbCBQYXJhbWV0ZXJzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjM2NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBQLVdhdmU6IEF0cmlhbCBjb250cmFjdGlvbiAvIGRlcG9sYXJpemF0aW9uPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjM5MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBRUlMgQ29tcGxleDogVmVudHJpY3VsYXIgY29udHJhY3Rpb248L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iNDE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0UwRTBFMCI+4oCiIFQtV2F2ZTogVmVudHJpY3VsYXIgcmVjb3ZlcnkgLyByZWxheGF0aW9uPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.3: Structure of Human Heart, 4 Chambers, Major Vessels &amp; Standard ECG Trace Graph</p>
-</div>
+  
 
   
 
@@ -157,58 +104,11 @@ export const c11Zoo4HtmlOverview = `
     3. Excretory Products and Their Elimination
   </h2>
 
-  <!-- FIGURE 4.4 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhVTUFOIEVYQ1JFVE9SWSBTWVNURU0gJmFtcDsgTkVQSFJPTiBGSU5FIFNUUlVDVFVSRTwvdGV4dD4KCiAgPCEtLSBMRUZUOiBFeGNyZXRvcnkgU3lzdGVtIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwLCA2MCkiPgogICAgPHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0NjAiIHJ4PSIxMiIgZmlsbD0iIzBEMDcyMiIgc3Ryb2tlPSIjRkY5ODAwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY5ODAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IdW1hbiBFeGNyZXRvcnkgT3JnYW5zPC90ZXh0PgoKICAgIDwhLS0gS2lkbmV5cyAtLT4KICAgIDxwYXRoIGQ9Ik0gMTAwIDEyMCBDIDcwIDE2MCA3MCAyMjAgMTAwIDI1MCBDIDEzMCAyMjAgMTIwIDE2MCAxMDAgMTIwIFoiIGZpbGw9IiNDNjI4MjgiIHN0cm9rZT0iI0ZGNTI1MiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSI1MCIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjUyNTIiPlJpZ2h0IEtpZG5leTwvdGV4dD4KCiAgICA8cGF0aCBkPSJNIDI4MCAxMjAgQyAyNTAgMTYwIDI2MCAyMjAgMjgwIDI1MCBDIDMxMCAyMjAgMzEwIDE2MCAyODAgMTIwIFoiIGZpbGw9IiNDNjI4MjgiIHN0cm9rZT0iI0ZGNTI1MiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIzMDAiIHk9IjE4MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkY1MjUyIj5MZWZ0IEtpZG5leTwvdGV4dD4KCiAgICA8IS0tIFVyZXRlcnMgLS0+CiAgICA8cGF0aCBkPSJNIDExMCAyMjAgUSAxNDAgMzEwIDE2NSAzNTAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNIDI3MCAyMjAgUSAyNDAgMzEwIDIxNSAzNTAiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI5MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZENTRGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5VcmV0ZXJzPC90ZXh0PgoKICAgIDwhLS0gQmxhZGRlciAmIFVyZXRocmEgLS0+CiAgICA8Y2lyY2xlIGN4PSIxOTAiIGN5PSIzODAiIHI9IjMwIiBmaWxsPSJyZ2JhKDI1NSwgMjEzLCA3OSwgMC4zKSIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJsYWRkZXI8L3RleHQ+CgogICAgPGxpbmUgeDE9IjE5MCIgeTE9IjQxMCIgeDI9IjE5MCIgeTI9IjQ0MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iNDU1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlVyZXRocmE8L3RleHQ+CiAgPC9nPgoKICA8IS0tIFJJR0hUOiBOZXBocm9uIFN0cnVjdHVyZSAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsIDYwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ2MCIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPk5lcGhyb24gRmluZSBBcmNoaXRlY3R1cmU8L3RleHQ+CgogICAgPCEtLSBHbG9tZXJ1bHVzICYgQm93bWFuJ3MgQ2Fwc3VsZSAtLT4KICAgIDxwYXRoIGQ9Ik0gNzAgMTAwIEMgNDAgMTAwIDQwIDE2MCAxMDAgMTYwIEMgMTMwIDE2MCAxMzAgMTAwIDcwIDEwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkYxNzQ0IiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDxjaXJjbGUgY3g9IjcwIiBjeT0iMTMwIiByPSIyMCIgZmlsbD0iI0ZGMTc0NCIvPgogICAgPHRleHQgeD0iNjAiIHk9IjgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRjE3NDQiPkdsb21lcnVsdXMgJmFtcDsgQm93bWFuJ3M8L3RleHQ+CgogICAgPCEtLSBQQ1QgJiBMb29wIG9mIEhlbmxlIC0tPgogICAgPHBhdGggZD0iTSAxMDAgMTQwIFEgMTQwIDEyMCAxNzAgMTYwIEwgMTcwIDMyMCBRIDE5MCAzODAgMjEwIDMyMCBMIDIxMCAxNjAgUSAyNTAgMTIwIDI4MCAxNjAgTCAyODAgNDEwIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iNSIvPgoKICAgIDwhLS0gUmVnaW9uIExhYmVscyAtLT4KICAgIDx0ZXh0IHg9IjE0MCIgeT0iMTEwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU1RkYiPlBDVDwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzk1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkxvb3Agb2YgSGVubGU8L3RleHQ+CiAgICA8dGV4dCB4PSIyNTAiIHk9IjExMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIj5EQ1Q8L3RleHQ+CiAgICA8dGV4dCB4PSIzMTAiIHk9IjMwMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjZCQjZBIj5Db2xsZWN0aW5nIER1Y3Q8L3RleHQ+CgogICAgPCEtLSBDb3VudGVyIEN1cnJlbnQgQm94IC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjQxNSIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIzNSIgcng9IjYiIGZpbGw9IiMwNjAyMEMiIHN0cm9rZT0iIzAwQjBGRiIgc3Ryb2tlLXdpZHRoPSIxIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjQzNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Pc21vbGFyIEdyYWRpZW50OiAzMDAgbU9zbW9sL0wgKENvcnRleCkgJnJhcnI7IDEyMDAgKE1lZHVsbGEpPC90ZXh0PgogIDwvZz4KPC9zdmc+" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.4: Human Excretory System Organs &amp; Fine Structure of Nephron (Glomerulus, Henle's Loop, PCT/DCT)</p>
-</div>
+  
 
   
 
-  <!-- FIGURE 4.5 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 270" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="270" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#00B0FF" font-size="13.5" font-weight="bold" text-anchor="middle">
-        Renal Countercurrent System &amp; RAAS Feedback Loop
-      </text>
-      <!-- Left: Countercurrent Multiplier -->
-      <g transform="translate(25, 42)">
-        <rect width="215" height="210" rx="6" fill="rgba(0, 176, 255, 0.1)" stroke="#00B0FF" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#00B0FF" font-size="10.5" font-weight="bold" text-anchor="middle">Henle's Loop &amp; Vasa Recta</text>
-        <text x="20" y="42" fill="#FFFFFF" font-size="8.5">&bull; <b style="color: #00B0FF;">Cortex:</b> 300 mOsm/L (Isotonic)</text>
-        <text x="20" y="60" fill="#CBD5E1" font-size="8.5">&bull; <b style="color: #00B0FF;">Outer Medulla:</b> 600 - 900 mOsm/L</text>
-        <text x="20" y="78" fill="#FFE082" font-size="8.5" font-weight="bold">&bull; <b style="color: #00B0FF;">Inner Medullary Tip:</b> 1200 mOsm/L</text>
-        <line x1="20" y1="88" x2="195" y2="88" stroke="rgba(255,255,255,0.2)"/>
-        <text x="20" y="108" fill="#26C6DA" font-size="8.5" font-weight="bold">Descending Limb:</text>
-        <text x="30" y="122" fill="#CBD5E1" font-size="8">Permeable to H<sub>2</sub>O; impermeable to NaCl</text>
-        <text x="20" y="142" fill="#FF8A65" font-size="8.5" font-weight="bold">Ascending Limb:</text>
-        <text x="30" y="156" fill="#CBD5E1" font-size="8">Impermeable to H<sub>2</sub>O; actively pumps NaCl</text>
-        <text x="107" y="185" fill="#69F0AE" font-size="8.5" font-weight="bold" text-anchor="middle">Yields 4&times; Hypertonic Urine (1200 mOsm)</text>
-      </g>
-      <!-- Right: RAAS Cascade -->
-      <g transform="translate(260, 42)">
-        <rect width="215" height="210" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="107" y="20" fill="#FFE082" font-size="10.5" font-weight="bold" text-anchor="middle">RAAS Hormonal Cascade</text>
-        <text x="107" y="42" fill="#FF8A65" font-size="8.5" text-anchor="middle">Low Blood Pressure / Low GFR</text>
-        <text x="107" y="58" fill="#FFFFFF" font-size="9" text-anchor="middle">&darr; JG Cells secrete</text>
-        <rect x="50" y="66" width="115" height="24" rx="4" fill="#00B0FF"/>
-        <text x="107" y="82" fill="#FFFFFF" font-size="9" font-weight="bold" text-anchor="middle">RENIN</text>
-        <text x="107" y="105" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Angiotensinogen &rarr; Angiotensin I</text>
-        <text x="107" y="122" fill="#69F0AE" font-size="8.5" text-anchor="middle">&darr; ACE (Lungs)</text>
-        <text x="107" y="138" fill="#FFE082" font-size="9" font-weight="bold" text-anchor="middle">Angiotensin II (Vasoconstrictor)</text>
-        <text x="107" y="156" fill="#FFFFFF" font-size="8.5" text-anchor="middle">&darr; Stimulates Adrenal Cortex</text>
-        <text x="107" y="174" fill="#FF007F" font-size="9" font-weight="bold" text-anchor="middle">ALDOSTERONE</text>
-        <text x="107" y="196" fill="#69F0AE" font-size="8" font-weight="bold" text-anchor="middle">Na<sup>+</sup> &amp; H<sub>2</sub>O Reabsorption &rarr; BP Normal!</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 4.5: Countercurrent Multiplier &amp; Exchanger System Generating Medullary Osmotic Gradient (300 to 1200 mOsm/L) &amp; RAAS Feedback Loop
-  </div>
-</div>
 
 
   <h3 style="color: #00B0FF; margin-top: 18px; font-size: 16.5px;">(i) Human Excretory System &amp; Nephron Architecture</h3>
@@ -241,70 +141,11 @@ export const c11Zoo4HtmlOverview = `
     4. Locomotion and Movement
   </h2>
 
-  <!-- FIGURE 4.6 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhVTUFOIFNLRUxFVE9OIE9WRVJWSUVXICZhbXA7IFNZTk9WSUFMIEpPSU5UUzwvdGV4dD4KCiAgPCEtLSBMRUZUOiBTa2VsZXRvbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SHVtYW4gU2tlbGV0b24gKDIwNiBCb25lcyk8L3RleHQ+CgogICAgPCEtLSBTa3VsbCAtLT4KICAgIDxjaXJjbGUgY3g9IjE5MCIgY3k9IjgwIiByPSIyNSIgZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjQjBCRUM1IiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjIzMCIgeT0iODUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiI+U2t1bGwgKEF4aWFsKTwvdGV4dD4KCiAgICA8IS0tIFNwaW5lICYgUmliY2FnZSAtLT4KICAgIDxsaW5lIHgxPSIxOTAiIHkxPSIxMDUiIHgyPSIxOTAiIHkyPSIyODAiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSI2Ii8+CiAgICA8ZWxsaXBzZSBjeD0iMTkwIiBjeT0iMTYwIiByeD0iNDUiIHJ5PSIzNSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjIiLz4KICAgIDx0ZXh0IHg9IjI1MCIgeT0iMTY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiPlJpYmNhZ2UgJmFtcDsgU3Rlcm51bTwvdGV4dD4KCiAgICA8IS0tIFBlbHZpcyAmIExpbWJzIC0tPgogICAgPHBhdGggZD0iTSAxNTAgMjgwIEwgMjMwIDI4MCBMIDE5MCAzMjAgWiIgZmlsbD0iI0ZGRiIvPgogICAgPGxpbmUgeDE9IjE2NSIgeTE9IjMyMCIgeDI9IjE1NSIgeTI9IjQ0MCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjUiLz4KICAgIDxsaW5lIHgxPSIyMTUiIHkxPSIzMjAiIHgyPSIyMjUiIHkyPSI0NDAiIHN0cm9rZT0iI0ZGRiIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjQ1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5MaW1icyAoQXBwZW5kaWN1bGFyKTwvdGV4dD4KICA8L2c+CgogIDwhLS0gUklHSFQ6IEpvaW50cyBDbGFzc2lmaWNhdGlvbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsIDYwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ2MCIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlR5cGVzIG9mIFN5bm92aWFsIEpvaW50czwvdGV4dD4KCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMCwgNTApIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI4NSIgcng9IjYiIGZpbGw9IiMxNTY1QzAiLz4KICAgICAgPHRleHQgeD0iODAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJhbGwgJmFtcDsgU29ja2V0PC90ZXh0PgogICAgICA8dGV4dCB4PSI4MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRTBFMEUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TaG91bGRlciAmYW1wOyBIaXA8L3RleHQ+CgogICAgICA8cmVjdCB4PSIxODAiIHk9IjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iODUiIHJ4PSI2IiBmaWxsPSIjMkU3RDMyIi8+CiAgICAgIDx0ZXh0IHg9IjI2MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SGluZ2UgSm9pbnQ8L3RleHQ+CiAgICAgIDx0ZXh0IHg9IjI2MCIgeT0iNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRTBFMEUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5LbmVlICZhbXA7IEVsYm93PC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMCIgeT0iMTA1IiB3aWR0aD0iMTYwIiBoZWlnaHQ9Ijg1IiByeD0iNiIgZmlsbD0iI0M2MjgyOCIvPgogICAgICA8dGV4dCB4PSI4MCIgeT0iMTM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBpdm90IEpvaW50PC90ZXh0PgogICAgICA8dGV4dCB4PSI4MCIgeT0iMTY1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iI0UwRTBFMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QXRsYXMgJmFtcDsgQXhpcyAoQzEtQzIpPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMTgwIiB5PSIxMDUiIHdpZHRoPSIxNjAiIGhlaWdodD0iODUiIHJ4PSI2IiBmaWxsPSIjNkExQjlBIi8+CiAgICAgIDx0ZXh0IHg9IjI2MCIgeT0iMTM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNhZGRsZSBKb2ludDwvdGV4dD4KICAgICAgPHRleHQgeD0iMjYwIiB5PSIxNjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmaWxsPSIjRTBFMEUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UaHVtYiBDYXJwYWxzPC90ZXh0PgogICAgPC9nPgoKICAgIDwhLS0gTXVzY2xlIFR5cGVzIC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjI3MCIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIxNjUiIHJ4PSI4IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBCMEZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NdXNjbGUgVGlzc3VlIFR5cGVzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjMyNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPjEuIFNrZWxldGFsIE11c2NsZTogU3RyaWF0ZWQsIFZvbHVudGFyeTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSIzNTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj4yLiBDYXJkaWFjIE11c2NsZTogU3RyaWF0ZWQsIEludm9sdW50YXJ5IChIZWFydCk8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0UwRTBFMCI+My4gU21vb3RoIE11c2NsZTogTm9uLXN0cmlhdGVkLCBJbnZvbHVudGFyeSAoVmlzY2VyYSk8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iNDE1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0ZGRDU0RiI+U2xpZGluZyBGaWxhbWVudDogQ2HCsuKBuiBiaW5kcyBUcm9wb25pbiBDICZyYXJyOyBBY3RpbiBzbGlkZXM8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.6: Human Skeleton Overview, Types of Synovial Joints &amp; Muscle Tissue Classification</p>
-</div>
+  
 
   
 
-  <!-- FIGURE 4.7 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 176, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 270" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="270" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#00B0FF" font-size="13.5" font-weight="bold" text-anchor="middle">
-        Sarcomere Molecular Architecture &amp; Sliding Filament Mechanism
-      </text>
-      <!-- Sarcomere Anatomy Diagram -->
-      <g transform="translate(25, 42)">
-        <rect width="450" height="110" rx="6" fill="rgba(0, 176, 255, 0.1)" stroke="#00B0FF" stroke-width="1.2"/>
-        <!-- Z lines -->
-        <line x1="50" y1="20" x2="50" y2="90" stroke="#FF007F" stroke-width="3"/>
-        <line x1="400" y1="20" x2="400" y2="90" stroke="#FF007F" stroke-width="3"/>
-        <text x="50" y="15" fill="#FF007F" font-size="8.5" font-weight="bold" text-anchor="middle">Z-Line</text>
-        <text x="400" y="15" fill="#FF007F" font-size="8.5" font-weight="bold" text-anchor="middle">Z-Line</text>
-        <!-- Thin actin filaments -->
-        <line x1="50" y1="40" x2="190" y2="40" stroke="#26C6DA" stroke-width="2.5"/>
-        <line x1="50" y1="70" x2="190" y2="70" stroke="#26C6DA" stroke-width="2.5"/>
-        <line x1="400" y1="40" x2="260" y2="40" stroke="#26C6DA" stroke-width="2.5"/>
-        <line x1="400" y1="70" x2="260" y2="70" stroke="#26C6DA" stroke-width="2.5"/>
-        <!-- Thick myosin filaments -->
-        <line x1="140" y1="55" x2="310" y2="55" stroke="#FF9100" stroke-width="5"/>
-        <line x1="225" y1="25" x2="225" y2="85" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="2,2"/>
-        <text x="225" y="20" fill="#CBD5E1" font-size="8" text-anchor="middle">M-Line</text>
-        <!-- Bands -->
-        <text x="225" y="102" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">
-          &larr; A-Band (Dark Anisotropic: Length CONSTANT!) &rarr;
-        </text>
-      </g>
-      <!-- Bottom Sliding Filament Cycle Steps -->
-      <g transform="translate(25, 160)">
-        <rect width="450" height="95" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="225" y="18" fill="#69F0AE" font-size="10" font-weight="bold" text-anchor="middle">
-          The 4-Step Cross-Bridge Contraction Cycle (Huxley &amp; Hanson, 1954)
-        </text>
-        <text x="25" y="38" fill="#FFFFFF" font-size="8.5">
-          1. <b>Ca<sup>2+</sup> Influx:</b> Ca<sup>2+</sup> binds Troponin C, pulling Tropomyosin away to expose actin active sites.
-        </text>
-        <text x="25" y="54" fill="#FFFFFF" font-size="8.5">
-          2. <b style="color: #00B0FF;">Cross-Bridge Formation:</b> Energized Myosin head (hydrolyzing ATP &rarr; ADP + Pi) binds to Actin.
-        </text>
-        <text x="25" y="70" fill="#FFFFFF" font-size="8.5">
-          3. <b style="color: #00B0FF;">Power Stroke:</b> Myosin head pivots, pulling actin filaments toward M-line; <b>H-zone &amp; I-band SHORTEN!</b>
-        </text>
-        <text x="25" y="86" fill="#FFE082" font-size="8.5" font-weight="bold">
-          4. <b style="color: #00B0FF;">Detachment:</b> Fresh ATP binds Myosin head, breaking cross-bridge. (Rigor Mortis occurs if ATP is lacking).
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 4.7: Sarcomere Ultrastructure (Z-lines, I-band, A-band, H-zone, M-line) &amp; Molecular 4-Step Actin-Myosin Cross-Bridge Sliding Cycle
-  </div>
-</div>
 
 
   <h3 style="color: #00B0FF; margin-top: 18px; font-size: 16.5px;">(i) Skeletal System &amp; Synovial Joints</h3>
@@ -339,11 +180,7 @@ export const c11Zoo4HtmlOverview = `
     5. Neural Control and Coordination
   </h2>
 
-  <!-- FIGURE 4.8 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlNUUlVDVFVSRSBPRiBORVVST04sIFNZTkFQU0UgJmFtcDsgUkVGTEVYIEFSQzwvdGV4dD4KCiAgPCEtLSBMRUZUOiBUeXBpY2FsIE5ldXJvbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0ZGRDU0RiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VHlwaWNhbCBOZXVyb24gU3RydWN0dXJlPC90ZXh0PgoKICAgIDwhLS0gU29tYSAmIERlbmRyaXRlcyAtLT4KICAgIDxjaXJjbGUgY3g9IjkwIiBjeT0iMTUwIiByPSIzNSIgZmlsbD0iI0ZGRDU0RiIvPgogICAgPHRleHQgeD0iOTAiIHk9IjE1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5Tb21hPC90ZXh0PgogICAgPHBhdGggZD0iTSA2MCAxMzAgTCAzMCAxMTAgTSA2MCAxNzAgTCAzMCAxOTAgTSA5MCAxMTUgTCA5MCA4NSBNIDEyMCAxMzAgTCAxNTAgMTEwIiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgPHRleHQgeD0iNDAiIHk9Ijc1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkQ1NEYiPkRlbmRyaXRlczwvdGV4dD4KCiAgICA8IS0tIEF4b24gJiBNeWVsaW4gLS0+CiAgICA8bGluZSB4MT0iMTI1IiB5MT0iMTUwIiB4Mj0iMzQwIiB5Mj0iMTUwIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iOCIvPgogICAgPHJlY3QgeD0iMTUwIiB5PSIxNDAiIHdpZHRoPSI0MCIgaGVpZ2h0PSIyMCIgcng9IjQiIGZpbGw9IiMwMEU1RkYiLz4KICAgIDxyZWN0IHg9IjIxMCIgeT0iMTQwIiB3aWR0aD0iNDAiIGhlaWdodD0iMjAiIHJ4PSI0IiBmaWxsPSIjMDBFNUZGIi8+CiAgICA8cmVjdCB4PSIyNzAiIHk9IjE0MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzAwRTVGRiIvPgogICAgPHRleHQgeD0iMjMwIiB5PSIxMjUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTVGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TXllbGluIFNoZWF0aDwvdGV4dD4KICAgIDx0ZXh0IHg9IjIwMCIgeT0iMTgwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMSIgZmlsbD0iI0ZGRiI+Tm9kZXMgb2YgUmFudmllcjwvdGV4dD4KCiAgICA8IS0tIFN5bmFwc2UgQm94IC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjIzMCIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIyMDAiIHJ4PSI4IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjI1NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMDBFNUZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5DaGVtaWNhbCBTeW5hcHNlIEtpbmV0aWNzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjI5MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBQcmUtc3luYXB0aWMgbWVtYnJhbmUgcmVsZWFzZXMgQWNldHlsY2hvbGluZTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSIzMjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj7igKIgTmV1cm90cmFuc21pdHRlciBjcm9zc2VzIFN5bmFwdGljIENsZWZ0PC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjM1MCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBCaW5kcyBQb3N0LXN5bmFwdGljIHJlY2VwdG9ycyAmcmFycjsgTmErIGluZmx1eDwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSIzODAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj7igKIgUmVzdGluZyBQb3RlbnRpYWw6IC03MCBtViB8IEFjdGlvbjogKzMwIG1WPC90ZXh0PgogIDwvZz4KCiAgPCEtLSBSSUdIVDogUmVmbGV4IEFyYyAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NDAsIDYwKSI+CiAgICA8cmVjdCB3aWR0aD0iMzgwIiBoZWlnaHQ9IjQ2MCIgcng9IjEyIiBmaWxsPSIjMEQwNzIyIiBzdHJva2U9IiM2NkJCNkEiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM2NkJCNkEiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlJlZmxleCBBcmMgTmV1cmFsIFBhdGh3YXk8L3RleHQ+CgogICAgPCEtLSBTdGltdWx1cyB0byBFZmZlY3RvciAtLT4KICAgIDxyZWN0IHg9IjQwIiB5PSI4MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgcng9IjYiIGZpbGw9IiNGRjE3NDQiLz4KICAgIDx0ZXh0IHg9IjkwIiB5PSIxMTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U3RpbXVsdXMgLyBSZWNlcHRvcjwvdGV4dD4KCiAgICA8cGF0aCBkPSJNIDE0MCAxMDUgTCAyNDAgMTA1IiBzdHJva2U9IiNGRkQ1NEYiIHN0cm9rZS13aWR0aD0iNCIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iOTUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+QWZmZXJlbnQgTmV1cm9uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjI0MCIgeT0iODAiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIHJ4PSI2IiBmaWxsPSIjOUMyN0IwIi8+CiAgICA8dGV4dCB4PSIyOTAiIHk9IjExMCIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TcGluYWwgQ29yZCBDTlM8L3RleHQ+CgogICAgPHBhdGggZD0iTSAyOTAgMTMwIEwgMjkwIDIyMCBMIDE0MCAyMjAiIHN0cm9rZT0iIzAwRTVGRiIgc3Ryb2tlLXdpZHRoPSI0IiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPgogICAgPHRleHQgeD0iMjE1IiB5PSIyMTAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwRTVGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RWZmZXJlbnQgTW90b3IgTmV1cm9uPC90ZXh0PgoKICAgIDxyZWN0IHg9IjQwIiB5PSIxOTUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIHJ4PSI2IiBmaWxsPSIjNjZCQjZBIi8+CiAgICA8dGV4dCB4PSI5MCIgeT0iMjI1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkVmZmVjdG9yIE11c2NsZTwvdGV4dD4KCiAgICA8IS0tIFN1bW1hcnkgQm94IC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjI5MCIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIxNDAiIHJ4PSI4IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiM2NkJCNkEiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9IjMxNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTUiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjZCQjZBIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BdXRvbm9taWMgJmFtcDsgU29tYXRpYyBQTlM8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iMzQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0UwRTBFMCI+4oCiIENOUzogQnJhaW4gJmFtcDsgU3BpbmFsIENvcmQgKEludGVncmF0aW9uKTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSIzNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj7igKIgU3ltcGF0aGV0aWM6IEZpZ2h0LW9yLUZsaWdodCAoRW1lcmdlbmN5KTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSI0MDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj7igKIgUGFyYXN5bXBhdGhldGljOiBSZXN0LWFuZC1EaWdlc3Q8L3RleHQ+CiAgPC9nPgo8L3N2Zz4=" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.8: Structure of Typical Neuron, Chemical Synapse Impulse Transmission &amp; Reflex Arc Pathway</p>
-</div>
+  
 
   
 
@@ -372,11 +209,7 @@ export const c11Zoo4HtmlOverview = `
     6. Chemical Coordination and Integration
   </h2>
 
-  <!-- FIGURE 4.9 -->
-  <div style="text-align: center; margin: 24px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4NTAgNTUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICA8cmVjdCB3aWR0aD0iODUwIiBoZWlnaHQ9IjU1MCIgcng9IjE2IiBmaWxsPSIjMDkwNDE0IiBzdHJva2U9IiMwMEIwRkYiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPHRleHQgeD0iNDI1IiB5PSIzOCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEIwRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkhVTUFOIEVORE9DUklORSBHTEFORFMgJmFtcDsgSE9STU9ORSBBQ1RJT048L3RleHQ+CgogIDwhLS0gTEVGVDogRW5kb2NyaW5lIEdsYW5kcyAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iI0FCNDdCQyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0FCNDdCQyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWFqb3IgSHVtYW4gRW5kb2NyaW5lIEdsYW5kczwvdGV4dD4KCiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MCwgNTApIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0NSIgcng9IjYiIGZpbGw9IiMxNTY1QzAiLz4KICAgICAgPHRleHQgeD0iMTUwIiB5PSIyNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5IeXBvdGhhbGFtdXMgJmFtcDsgUGl0dWl0YXJ5IChNYXN0ZXIgR2xhbmQpPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMCIgeT0iNTUiIHdpZHRoPSIzMDAiIGhlaWdodD0iNDUiIHJ4PSI2IiBmaWxsPSIjMkU3RDMyIi8+CiAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iODIiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VGh5cm9pZCAmYW1wOyBQYXJhdGh5cm9pZCAoVDMsIFQ0LCBQVEgpPC90ZXh0PgoKICAgICAgPHJlY3QgeD0iMCIgeT0iMTEwIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQ1IiByeD0iNiIgZmlsbD0iI0M2MjgyOCIvPgogICAgICA8dGV4dCB4PSIxNTAiIHk9IjEzNyIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5BZHJlbmFsIEdsYW5kcyAoQ29ydGlzb2wgJmFtcDsgQWRyZW5hbGluZSk8L3RleHQ+CgogICAgICA8cmVjdCB4PSIwIiB5PSIxNjUiIHdpZHRoPSIzMDAiIGhlaWdodD0iNDUiIHJ4PSI2IiBmaWxsPSIjRkY4RjAwIi8+CiAgICAgIDx0ZXh0IHg9IjE1MCIgeT0iMTkyIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBhbmNyZWFzIChJbnN1bGluICZhbXA7IEdsdWNhZ29uKTwvdGV4dD4KCiAgICAgIDxyZWN0IHg9IjAiIHk9IjIyMCIgd2lkdGg9IjMwMCIgaGVpZ2h0PSI0NSIgcng9IjYiIGZpbGw9IiM2QTFCOUEiLz4KICAgICAgPHRleHQgeD0iMTUwIiB5PSIyNDciIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+R29uYWRzOiBUZXN0aXMgJmFtcDsgT3ZhcnkgKFNleCBTdGVyb2lkcyk8L3RleHQ+CiAgICA8L2c+CgogICAgPCEtLSBOb24tRW5kb2NyaW5lIEhvcm1vbmVzIC0tPgogICAgPHJlY3QgeD0iMjUiIHk9IjMzNSIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIxMDAiIHJ4PSI2IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiNBQjQ3QkMiIHN0cm9rZS13aWR0aD0iMSIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIzNjAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0FCNDdCQyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Tm9uLUVuZG9jcmluZSBUaXNzdWUgSG9ybW9uZXM8L3RleHQ+CiAgICA8dGV4dCB4PSIzNSIgeT0iMzg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0UwRTBFMCI+4oCiIEFORiAoSGVhcnQpIHwgRXJ5dGhyb3BvaWV0aW4gKEtpZG5leSk8L3RleHQ+CiAgICA8dGV4dCB4PSIzNSIgeT0iNDEwIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iI0UwRTBFMCI+4oCiIEdhc3RyaW4sIFNlY3JldGluLCBDQ0ssIEdJUCAoRy5JLiBUcmFjdCk8L3RleHQ+CiAgPC9nPgoKICA8IS0tIFJJR0hUOiBNZWNoYW5pc20gb2YgQWN0aW9uIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ0MCwgNjApIj4KICAgIDxyZWN0IHdpZHRoPSIzODAiIGhlaWdodD0iNDYwIiByeD0iMTIiIGZpbGw9IiMwRDA3MjIiIHN0cm9rZT0iIzAwQjBGRiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICAgIDx0ZXh0IHg9IjE5MCIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzAwQjBGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWVjaGFuaXNtIG9mIEhvcm1vbmUgQWN0aW9uPC90ZXh0PgoKICAgIDwhLS0gUHJvdGVpbiBIb3Jtb25lIEJveCAtLT4KICAgIDxyZWN0IHg9IjI1IiB5PSI2MCIgd2lkdGg9IjMzMCIgaGVpZ2h0PSIxNzAiIHJ4PSI4IiBmaWxsPSIjMDYwMjBDIiBzdHJva2U9IiMwMEU1RkYiIHN0cm9rZS13aWR0aD0iMS4yIi8+CiAgICA8dGV4dCB4PSIxOTAiIHk9Ijg1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNSIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMwMEU1RkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPjEuIFByb3RlaW4gLyBQZXB0aWRlIEhvcm1vbmVzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjExNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBXYXRlci1zb2x1YmxlIChlLmcuIEluc3VsaW4sIFBpdHVpdGFyeSBILik8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iMTQ1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0UwRTBFMCI+4oCiIEJpbmRzIENlbGwtTWVtYnJhbmUgUmVjZXB0b3JzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjE3NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBHZW5lcmF0ZXMgMm5kIE1lc3NlbmdlcnMgKGNBTVAsIElQ4oKDLCBDYcKy4oG6KTwvdGV4dD4KICAgIDx0ZXh0IHg9IjQwIiB5PSIyMDUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjEzIiBmaWxsPSIjRTBFMEUwIj7igKIgVHJpZ2dlcnMgcmFwaWQgaW50cmFjZWxsdWxhciBjYXNjYWRlPC90ZXh0PgoKICAgIDwhLS0gU3Rlcm9pZCBIb3Jtb25lIEJveCAtLT4KICAgIDxyZWN0IHg9IjI1IiB5PSIyNTAiIHdpZHRoPSIzMzAiIGhlaWdodD0iMTcwIiByeD0iOCIgZmlsbD0iIzA2MDIwQyIgc3Ryb2tlPSIjRkZENTRGIiBzdHJva2Utd2lkdGg9IjEuMiIvPgogICAgPHRleHQgeD0iMTkwIiB5PSIyNzUiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0ZGRDU0RiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Mi4gU3Rlcm9pZCAvIExpcGlkIEhvcm1vbmVzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjMwNSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBMaXBpZC1zb2x1YmxlIChlLmcuIENvcnRpc29sLCBFc3Ryb2dlbik8L3RleHQ+CiAgICA8dGV4dCB4PSI0MCIgeT0iMzM1IiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgZmlsbD0iI0UwRTBFMCI+4oCiIENyb3NzZXMgUGxhc21hIE1lbWJyYW5lIGRpcmVjdGx5PC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjM2NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBCaW5kcyBJbnRyYWNlbGx1bGFyIE51Y2xlYXIgUmVjZXB0b3JzPC90ZXh0PgogICAgPHRleHQgeD0iNDAiIHk9IjM5NSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTMiIGZpbGw9IiNFMEUwRTAiPuKAoiBEaXJlY3RseSByZWd1bGF0ZXMgRE5BIEdlbmUgRXhwcmVzc2lvbjwvdGV4dD4KICA8L2c+Cjwvc3ZnPg==" style="max-width: 100%; border-radius: 10px; border: 2px solid #00B0FF; box-shadow: 0 4px 18px rgba(0, 176, 255, 0.25);" />
-  <p style="color: #00B0FF; font-size: 13.5px; margin-top: 6px; font-weight: bold; text-anchor: middle;">Figure 4.9: Human Endocrine Glands Overview &amp; Mechanism of Hormone Action (Protein vs Steroid Hormones)</p>
-</div>
+  
 
   
 
@@ -466,11 +299,9 @@ export const c11Zoo4HtmlOverview = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
-export const c11Zoo4HtmlSolutions = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo4HtmlSolutions = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- SECTION A -->
   <div style="background: linear-gradient(135deg, rgba(0, 176, 255, 0.15), rgba(2, 119, 189, 0.15)); border: 1.5px solid rgba(0, 176, 255, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
@@ -1099,229 +930,192 @@ export const c11Zoo4HtmlSolutions = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
 export const c11Zoo4Mcqs = [
   {
     "id": "c11-zoo-4-mcq-1",
-    "question": "The maximum volume of air a person can exhale after a forced maximum inspiration is known as:",
+    "question": "What is the normal Tidal Volume (TV) of air inspired or expired during normal restful breathing in a healthy human adult?",
     "options": [
-      "A):   Tidal Volume",
-      "B):   Vital Capacity (VC = TV + IRV + ERV)",
-      "C):   Total Lung Capacity",
-      "D):   Inspiratory Capacity"
+      "A):   Approximately 500 mL",
+      "B):   1,000 - 1,100 mL",
+      "C):   2,500 - 3,000 mL",
+      "D):   1,200 mL"
     ],
-    "correctAnswer": "b",
-    "explanation": "Vital Capacity is the greatest volume of air that can be exhaled following maximal forced inhalation (~3.5 to 4.5 L)."
+    "correctAnswer": "a",
+    "explanation": "Tidal Volume (TV) is the volume of air inspired or expired during a normal respiration, measuring approximately 500 mL."
   },
   {
     "id": "c11-zoo-4-mcq-2",
-    "question": "What is the primary factor that shifts the Oxygen-Hemoglobin dissociation curve to the right (Bohr effect)?",
+    "question": "The majority (~70%) of carbon dioxide is transported through human blood from tissues to lungs in the form of:",
     "options": [
-      "A):   Low temperature",
-      "B):   High pCO<sub>2</sub>, low pH, and high temperature in active tissues",
-      "C):   High pO<sub>2</sub> in alveoli",
-      "D):   Low 2,3-BPG concentration"
+      "A):   Dissolved gas in blood plasma",
+      "B):   Bicarbonate ions (HCO3-) in plasma",
+      "C):   Carbamino-hemoglobin in erythrocytes",
+      "D):   Carbonic acid crystals"
     ],
     "correctAnswer": "b",
-    "explanation": "High pCO<sub>2</sub> and high [H<sup>+</sup>] in metabolizing tissues decrease Hb-O<sub>2</sub> affinity, shifting the curve right to unload O<sub>2</sub>."
+    "explanation": "About 70% of CO2 is converted by RBC carbonic anhydrase into bicarbonate ions (HCO3-), which diffuse into blood plasma via chloride shift."
   },
   {
     "id": "c11-zoo-4-mcq-3",
-    "question": "Approximately 70% of carbon dioxide is transported in human blood in the form of:",
+    "question": "A rightward shift of the Oxygen-Hemoglobin Dissociation Curve (Bohr Effect), facilitating oxygen unloading at tissues, is caused by:",
     "options": [
-      "A):   Dissolved gas in plasma",
-      "B):   Bicarbonate ions (HCO<sub>3</sub><sup>-</sup>)",
-      "C):   Carbaminohemoglobin",
-      "D):   Carbon monoxide"
+      "A):   Low pCO2 and high pH",
+      "B):   Low temperature and low 2,3-BPG",
+      "C):   High pCO2, elevated [H+] (low pH), and high temperature",
+      "D):   High pO2 and basic blood pH"
     ],
-    "correctAnswer": "b",
-    "explanation": "Around 70% of CO<sub>2</sub> is converted inside RBCs into bicarbonate ions by the zinc enzyme carbonic anhydrase."
+    "correctAnswer": "c",
+    "explanation": "Elevated pCO2, acidosis (high H+), and increased temperature reduce hemoglobin's affinity for oxygen, shifting the curve to the right."
   },
   {
     "id": "c11-zoo-4-mcq-4",
-    "question": "The normal resting Cardiac Output of a healthy adult human is approximately:",
+    "question": "The natural biological pacemaker of the human heart, responsible for initiating spontaneous rhythmic electrical impulses (~72 bpm), is the:",
     "options": [
-      "A):   70 mL/min",
-      "B):   5,000 mL/min (5 Liters/min)",
-      "C):   125 mL/min",
-      "D):   180 Liters/min"
+      "A):   Atrioventricular (AV) node",
+      "B):   Bundle of His",
+      "C):   Purkinje fibers",
+      "D):   Sinoatrial (SA) node"
     ],
-    "correctAnswer": "b",
-    "explanation": "Cardiac Output = Stroke Volume (70 mL) &times; Heart Rate (72 bpm) &approx; 5,000 mL/min (5 L/min)."
+    "correctAnswer": "d",
+    "explanation": "The Sinoatrial (SA) node located in the right upper corner of the right atrium possesses the highest rate of automaticity (~70-75/min)."
   },
   {
     "id": "c11-zoo-4-mcq-5",
-    "question": "The first heart sound 'LUBB' is produced by the simultaneous closure of which valves?",
+    "question": "On a standard clinical Electrocardiogram (ECG), the QRS complex represents:",
     "options": [
-      "A):   Semilunar valves",
-      "B):   Atrioventricular (Tricuspid and Bicuspid / Mitral) valves",
-      "C):   Aortic valve alone",
-      "D):   Eustachian valve"
+      "A):   Depolarization of the ventricles",
+      "B):   Depolarization of the atria",
+      "C):   Repolarization of the ventricles",
+      "D):   Atrial relaxation"
     ],
-    "correctAnswer": "b",
-    "explanation": "Closure of the AV valves at the start of ventricular systole produces the dull, prolonged 'LUBB' sound."
+    "correctAnswer": "a",
+    "explanation": "The QRS complex represents ventricular depolarization, which triggers ventricular contraction (systole)."
   },
   {
     "id": "c11-zoo-4-mcq-6",
-    "question": "In a standard Electrocardiogram (ECG), the QRS complex represents:",
+    "question": "Erythroblastosis Foetalis (hemolytic disease of the newborn) develops due to Rh incompatibility when:",
     "options": [
-      "A):   Atrial depolarization",
-      "B):   Ventricular depolarization (initiating ventricular contraction)",
-      "C):   Ventricular repolarization",
-      "D):   Joint diastole"
+      "A):   Both mother and father are Rh-negative",
+      "B):   An Rh-negative mother carries a second Rh-positive fetus",
+      "C):   An Rh-positive mother carries an Rh-negative fetus",
+      "D):   Both parents are Rh-positive"
     ],
     "correctAnswer": "b",
-    "explanation": "The QRS complex corresponds to rapid ventricular depolarization that triggers ventricular contraction."
+    "explanation": "Anti-Rh antibodies formed in an Rh- mother during a first Rh+ pregnancy cross the placenta in a subsequent Rh+ pregnancy, destroying fetal RBCs."
   },
   {
     "id": "c11-zoo-4-mcq-7",
-    "question": "Which blood vessel carries fully oxygenated blood from the lungs directly into the left atrium?",
+    "question": "Which specialized region of the human nephron reabsorbs 70 to 80 percent of filtered electrolytes, water, and virtually 100% of glucose?",
     "options": [
-      "A):   Pulmonary Artery",
-      "B):   Pulmonary Vein",
-      "C):   Coronary Artery",
-      "D):   Superior Vena Cava"
+      "A):   Ascending limb of Henle's loop",
+      "B):   Distal convoluted tubule (DCT)",
+      "C):   Proximal Convoluted Tubule (PCT)",
+      "D):   Collecting duct"
     ],
-    "correctAnswer": "b",
-    "explanation": "Pulmonary veins are the only veins in the adult body that carry freshly oxygenated blood from lungs to left atrium."
+    "correctAnswer": "c",
+    "explanation": "The PCT is lined by simple cuboidal brush border epithelium, reabsorbing ~70-80% of electrolytes and water, and all glucose and amino acids."
   },
   {
     "id": "c11-zoo-4-mcq-8",
-    "question": "The average Glomerular Filtration Rate (GFR) in a healthy human adult is:",
+    "question": "The hyperosmotic medullary gradient in the kidney (rising from 300 mOsmol/L in cortex to 1200 mOsmol/L in medulla) is maintained by:",
     "options": [
-      "A):   1.5 L/day",
-      "B):   125 mL/min (180 Liters/day)",
-      "C):   5 L/min",
-      "D):   50 mL/min"
+      "A):   Peritubular capillaries alone",
+      "B):   Glomerular podocytes",
+      "C):   Urinary bladder contractions",
+      "D):   Counter-Current Mechanism operating between the Loop of Henle and Vasa Recta"
     ],
-    "correctAnswer": "b",
-    "explanation": "GFR is ~125 mL/min, meaning the kidneys form ~180 Liters of ultrafiltrate each day (99% of which is reabsorbed)."
+    "correctAnswer": "d",
+    "explanation": "Counter-current flow in Henle's loop and vasa recta along with NaCl and urea recycling creates and maintains the medullary osmotic gradient."
   },
   {
     "id": "c11-zoo-4-mcq-9",
-    "question": "In the nephron, maximum reabsorption of water, glucose, and electrolytes (70-80%) occurs in the:",
+    "question": "Atrial Natriuretic Factor (ANF) is secreted by the heart atria in response to elevated blood pressure and acts as an antagonist to RAAS by causing:",
     "options": [
-      "A):   Proximal Convoluted Tubule (PCT)",
-      "B):   Henle's Loop",
-      "C):   Distal Convoluted Tubule (DCT)",
-      "D):   Collecting Duct"
+      "A):   Vasodilation and increased excretion of sodium (Natriuresis)",
+      "B):   Vasoconstriction and sodium retention",
+      "C):   Increased secretion of aldosterone",
+      "D):   Release of erythropoietin"
     ],
     "correctAnswer": "a",
-    "explanation": "The brush-border simple cuboidal epithelium of the PCT reabsorbs 100% of glucose and 70-80% of electrolytes and water."
+    "explanation": "ANF induces vasodilation of blood vessels and promotes sodium and water excretion (natriuresis/diuresis), thereby decreasing blood pressure."
   },
   {
     "id": "c11-zoo-4-mcq-10",
-    "question": "The medullary hyperosmotic gradient (300 to 1,200 mOsm/L) in human kidneys is established primarily by:",
-    "options": [
-      "A):   PCT microvilli",
-      "B):   Countercurrent Mechanism between Henle's Loop and Vasa Recta",
-      "C):   Podocytes",
-      "D):   Macula densa"
-    ],
-    "correctAnswer": "b",
-    "explanation": "The countercurrent multiplier (Henle's loop) and exchanger (vasa recta) create the 1,200 mOsm/L gradient."
-  },
-  {
-    "id": "c11-zoo-4-mcq-11",
-    "question": "Which enzyme is secreted by Juxtaglomerular (JG) cells to initiate the RAAS blood pressure cascade?",
-    "options": [
-      "A):   Erythropoietin",
-      "B):   Renin",
-      "C):   Pepsin",
-      "D):   Angiotensinase"
-    ],
-    "correctAnswer": "b",
-    "explanation": "Renin is secreted by renal JG cells when renal blood pressure or GFR drops, activating Angiotensin II."
-  },
-  {
-    "id": "c11-zoo-4-mcq-12",
-    "question": "How many total bones are present in the adult human Axial Skeleton?",
-    "options": [
-      "A):   126 bones",
-      "B):   80 bones",
-      "C):   206 bones",
-      "D):   60 bones"
-    ],
-    "correctAnswer": "b",
-    "explanation": "The human skeleton consists of 206 bones: 80 in the axial skeleton and 126 in the appendicular skeleton."
-  },
-  {
-    "id": "c11-zoo-4-mcq-13",
-    "question": "The joint present between the Atlas (1st vertebra) and Axis (2nd vertebra) is a:",
-    "options": [
-      "A):   Hinge joint",
-      "B):   Pivot joint",
-      "C):   Saddle joint",
-      "D):   Gliding joint"
-    ],
-    "correctAnswer": "b",
-    "explanation": "The atlanto-axial joint is a pivot joint that allows the head to rotate side-to-side (shaking 'no')."
-  },
-  {
-    "id": "c11-zoo-4-mcq-14",
-    "question": "The anatomical segment of a myofibril situated between two successive Z-lines is called a:",
+    "question": "The anatomical and functional contractile unit of a myofibril bounded between two successive Z-lines is the:",
     "options": [
       "A):   Sarcolemma",
       "B):   Sarcomere",
       "C):   Sarcoplasm",
-      "D):   Myofilament"
-    ],
-    "correctAnswer": "b",
-    "explanation": "A sarcomere is the basic structural and functional contractile unit of a striated muscle fiber."
-  },
-  {
-    "id": "c11-zoo-4-mcq-15",
-    "question": "During skeletal muscle contraction, which sarcomere band maintains a constant length?",
-    "options": [
-      "A):   I-band",
-      "B):   H-zone",
-      "C):   A-band (Anisotropic dark band)",
-      "D):   Both I-band and H-zone"
-    ],
-    "correctAnswer": "c",
-    "explanation": "During contraction, actin slides over myosin; the I-band and H-zone shorten, but the A-band length stays constant."
-  },
-  {
-    "id": "c11-zoo-4-mcq-16",
-    "question": "During muscle contraction, Calcium ions bind directly to which regulatory protein?",
-    "options": [
-      "A):   Actin",
-      "B):   Troponin C",
-      "C):   Tropomyosin",
       "D):   Myosin head"
     ],
     "correctAnswer": "b",
-    "explanation": "Ca<sup>2+</sup> binds to Troponin C, pulling tropomyosin aside to uncover the myosin-binding sites on actin."
+    "explanation": "The sarcomere is the basic functional repeating unit of striated muscle contraction located between two consecutive Z-lines."
   },
   {
-    "id": "c11-zoo-4-mcq-17",
-    "question": "The electrogenic Na+/K+-ATPase pump expels and imports how many ions per ATP consumed?",
+    "id": "c11-zoo-4-mcq-11",
+    "question": "During skeletal muscle contraction, calcium ions released from the sarcoplasmic reticulum bind to which specific regulatory protein subunit?",
     "options": [
-      "A):   2 Na<sup>+</sup> out, 3 K<sup>+</sup> in",
-      "B):   3 Na<sup>+</sup> expelled out, 2 K<sup>+</sup> imported in",
-      "C):   1 Na<sup>+</sup> out, 1 K<sup>+</sup> in",
-      "D):   3 Na<sup>+</sup> in, 2 K<sup>+</sup> out"
+      "A):   Tropomyosin",
+      "B):   Myosin light chains",
+      "C):   Troponin C",
+      "D):   Actin active sites"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Ca2+ binds to Troponin C, causing a conformational change that moves tropomyosin away to unmask active myosin-binding sites on actin."
+  },
+  {
+    "id": "c11-zoo-4-mcq-12",
+    "question": "Which of the following is a classic example of a freely movable Ball and Socket Synovial Joint in the human skeleton?",
+    "options": [
+      "A):   Joint between atlas and axis vertebrae",
+      "B):   Shoulder joint (Glenohumeral joint) and Hip joint",
+      "C):   Knee joint and elbow joint",
+      "D):   Joints between carpal bones"
     ],
     "correctAnswer": "b",
-    "explanation": "The Na<sup>+</sup>/K<sup>+</sup>-ATPase pump moves 3 Na<sup>+</sup> out of the cell and 2 K<sup>+</sup> into the cell per ATP molecule."
+    "explanation": "The shoulder joint (humerus in glenoid cavity) and hip joint (femur in acetabulum) are classic ball and socket synovial joints."
   },
   {
-    "id": "c11-zoo-4-mcq-18",
-    "question": "Rapid depolarisation during an axonal action potential is caused by the sudden influx of:",
+    "id": "c11-zoo-4-mcq-13",
+    "question": "The negative Resting Membrane Potential (~ -70 mV) across an unexcited axonal membrane is actively maintained by the:",
     "options": [
-      "A):   Potassium ions (K<sup>+</sup>)",
-      "B):   Sodium ions (Na<sup>+</sup>)",
-      "C):   Chloride ions (Cl<sup>-</sup>)",
-      "D):   Calcium ions"
+      "A):   Passive leakage of sodium into the axoplasm",
+      "B):   Calcium-ATPase pump",
+      "C):   Electrogenic Na+/K+ Pump (pumping 3 Na+ outward for every 2 K+ inward)",
+      "D):   Chloride-bicarbonate exchanger"
     ],
-    "correctAnswer": "b",
-    "explanation": "Opening of voltage-gated Na<sup>+</sup> channels triggers a massive influx of Na<sup>+</sup>, depolarizing the axon to +30 mV."
+    "correctAnswer": "c",
+    "explanation": "The Na+/K+-ATPase pump expels 3 Na+ ions out while importing 2 K+ ions in, consuming 1 ATP and maintaining negative resting polarity."
   },
   {
-    "id": "c11-zoo-4-mcq-19",
-    "question": "Which hypothalamic hormone stored in the posterior pituitary stimulates uterine contractions during child birth?",
+    "id": "c11-zoo-4-mcq-14",
+    "question": "The rapid electrical Depolarization phase of an Action Potential in a neuron is caused by the sudden opening of:",
+    "options": [
+      "A):   Voltage-gated potassium channels (K+ efflux)",
+      "B):   Calcium pump channels",
+      "C):   Chloride channels",
+      "D):   Voltage-gated Sodium channels (Na+ influx)"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Upon reaching threshold (-55 mV), voltage-gated Na+ channels open rapidly, allowing a massive influx of Na+ that reverses polarity to +30 mV."
+  },
+  {
+    "id": "c11-zoo-4-mcq-15",
+    "question": "The Hypothalamic hormone that stimulates the anterior pituitary to synthesize and release gonadotropins (LH and FSH) is:",
+    "options": [
+      "A):   GnRH (Gonadotropin-Releasing Hormone)",
+      "B):   Somatostatin",
+      "C):   Prolactin",
+      "D):   Oxytocin"
+    ],
+    "correctAnswer": "a",
+    "explanation": "GnRH from the hypothalamus reaches the adenohypophysis via the hypophyseal portal system to stimulate LH and FSH release."
+  },
+  {
+    "id": "c11-zoo-4-mcq-16",
+    "question": "Which hormone, synthesized by the hypothalamus and stored in the posterior pituitary, stimulates vigorous uterine contractions during parturition and milk ejection?",
     "options": [
       "A):   Prolactin",
       "B):   Oxytocin",
@@ -1329,78 +1123,114 @@ export const c11Zoo4Mcqs = [
       "D):   Progesterone"
     ],
     "correctAnswer": "b",
-    "explanation": "Oxytocin stimulates vigorous labor contractions of the myometrium and triggers milk ejection during nursing."
+    "explanation": "Oxytocin (the 'birth hormone' and 'milk ejection hormone') stimulates uterine myometrial contractions and mammary milk let-down."
+  },
+  {
+    "id": "c11-zoo-4-mcq-17",
+    "question": "Parathyroid Hormone (PTH) and Calcitonin (Thyrocalcitonin) act antagonistically in regulating blood calcium levels because:",
+    "options": [
+      "A):   Both decrease blood calcium levels",
+      "B):   Both increase bone resorption",
+      "C):   PTH increases blood calcium (hypercalcemic) while Calcitonin decreases blood calcium (hypocalcemic)",
+      "D):   PTH acts only on kidneys while calcitonin acts only on the intestine"
+    ],
+    "correctAnswer": "c",
+    "explanation": "PTH mobilizes calcium from bones into blood (hypercalcemic), while thyroid calcitonin deposits calcium into bones (hypocalcemic)."
+  },
+  {
+    "id": "c11-zoo-4-mcq-18",
+    "question": "Insulin, synthesized by the beta-cells of the Islets of Langerhans, decreases blood glucose levels primarily by:",
+    "options": [
+      "A):   Stimulating cellular glucose uptake and promoting Glycogenesis in liver and muscles",
+      "B):   Stimulating glycogenolysis and gluconeogenesis",
+      "C):   Inhibiting amino acid transport into cells",
+      "D):   Promoting lipolysis in adipose tissue"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Insulin enhances cellular glucose uptake (via GLUT4 translocation) and promotes glycogenesis in hepatocytes and skeletal myocytes."
+  },
+  {
+    "id": "c11-zoo-4-mcq-19",
+    "question": "Lipid-soluble steroid hormones (e.g., Estrogen, Testosterone, Cortisol) exert their cellular effects by:",
+    "options": [
+      "A):   Binding exclusively to outer cell surface G-protein coupled receptors",
+      "B):   Generating cyclic AMP as a second messenger in the cytoplasm",
+      "C):   Crossing the plasma membrane to bind Intracellular / Nuclear Receptors and directly regulating gene expression",
+      "D):   Opening voltage-gated ion channels"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Steroids diffuse freely across lipophilic membranes to bind intracellular nuclear receptors, modifying gene transcription directly."
   },
   {
     "id": "c11-zoo-4-mcq-20",
-    "question": "A deficiency of dietary Iodine impairs the synthesis of which hormones, causing simple goiter?",
+    "question": "A chronic respiratory disorder characterized by alveolar wall destruction, loss of elastic recoil, and decreased gas exchange surface due to cigarette smoking is:",
     "options": [
-      "A):   Insulin and Glucagon",
-      "B):   Thyroxine (T4) and Triiodothyronine (T3)",
-      "C):   PTH and Calcitonin",
-      "D):   Adrenaline and Noradrenaline"
+      "A):   Bronchial Asthma",
+      "B):   Pneumonia",
+      "C):   Silicosis",
+      "D):   Emphysema"
     ],
-    "correctAnswer": "b",
-    "explanation": "Iodine is essential for thyroid hormone production; its deficiency results in thyroid enlargement (goiter)."
+    "correctAnswer": "d",
+    "explanation": "Emphysema is a chronic obstructive pulmonary disease caused by cigarette smoking that destroys alveolar septa, reducing respiratory surface area."
   },
   {
     "id": "c11-zoo-4-mcq-21",
-    "question": "Parathyroid Hormone (PTH) and Thyrocalcitonin (TCT) act antagonistically to regulate blood levels of:",
+    "question": "The peptide hormone Erythropoietin (EPO), which stimulates bone marrow erythropoiesis (RBC production), is primarily synthesized and released by the:",
     "options": [
-      "A):   Glucose",
-      "B):   Calcium (Ca<sup>2+</sup>)",
-      "C):   Sodium",
-      "D):   Iron"
+      "A):   Juxtaglomerular cells of the Kidney",
+      "B):   Adrenal cortex",
+      "C):   Spleen",
+      "D):   Liver hepatocytes"
     ],
-    "correctAnswer": "b",
-    "explanation": "PTH raises blood calcium levels (hypercalcemic), while TCT lowers blood calcium levels (hypocalcemic)."
+    "correctAnswer": "a",
+    "explanation": "Juxtaglomerular (JG) cells of the kidney secrete erythropoietin in response to renal hypoxia, stimulating erythropoiesis in bone marrow."
   },
   {
     "id": "c11-zoo-4-mcq-22",
-    "question": "Beta (&beta;) cells of the Islets of Langerhans in the pancreas secrete which hypoglycemic hormone?",
+    "question": "An autoimmune disorder in which antibodies block acetylcholine receptors at neuromuscular junctions, leading to progressive muscle weakness and paralysis, is:",
     "options": [
-      "A):   Glucagon",
-      "B):   Insulin",
-      "C):   Somatostatin",
-      "D):   Cortisol"
+      "A):   Muscular dystrophy",
+      "B):   Myasthenia Gravis",
+      "C):   Tetany",
+      "D):   Gouty arthritis"
     ],
     "correctAnswer": "b",
-    "explanation": "Insulin is secreted by &beta;-cells to promote glucose uptake into cells, lowering blood glucose levels."
+    "explanation": "Myasthenia gravis is an autoimmune disease where autoantibodies bind and destroy nicotinic acetylcholine receptors at neuromuscular junctions."
   },
   {
     "id": "c11-zoo-4-mcq-23",
-    "question": "Water-soluble peptide hormones cannot cross the cell membrane and instead generate intracellular:",
+    "question": "Deficiency of Antidiuretic Hormone (ADH / Vasopressin) leads to excessive loss of water in urine without glucose, a condition known as:",
     "options": [
-      "A):   Steroids",
-      "B):   Second Messengers (such as cyclic AMP, IP<sub>3</sub>, Ca<sup>2+</sup>)",
-      "C):   Chromatin fibers",
-      "D):   Ribosomes"
+      "A):   Diabetes Mellitus",
+      "B):   Addison's disease",
+      "C):   Diabetes Insipidus",
+      "D):   Cushing's syndrome"
     ],
-    "correctAnswer": "b",
-    "explanation": "Peptide hormones bind cell-surface receptors and generate second messengers like cAMP to trigger intracellular responses."
+    "correctAnswer": "c",
+    "explanation": "Hyposecretion of ADH prevents water reabsorption in renal tubules, leading to severe polyuria and dehydration called Diabetes Insipidus."
   },
   {
     "id": "c11-zoo-4-mcq-24",
-    "question": "Atrial Natriuretic Factor (ANF) is secreted by the heart atrial wall in response to:",
+    "question": "The respiratory rhythm center that generates the basic involuntary breathing pattern is localized in the:",
     "options": [
-      "A):   Low blood sugar",
-      "B):   High blood pressure / elevated blood volume (opposing RAAS)",
-      "C):   Low body temperature",
-      "D):   Extreme hypoxia"
+      "A):   Pneumotaxic center of the pons",
+      "B):   Cerebellum",
+      "C):   Hypothalamus",
+      "D):   Medulla Oblongata"
     ],
-    "correctAnswer": "b",
-    "explanation": "ANF is released when atria are stretched by high blood pressure, causing vasodilation and natriuresis to lower BP."
+    "correctAnswer": "d",
+    "explanation": "The primary respiratory rhythm center is located in the medulla oblongata, regulating normal autonomic rhythmic respiratory cycles."
   },
   {
     "id": "c11-zoo-4-mcq-25",
-    "question": "Diabetes Insipidus is caused by the hyposecretion of which hormone from the neurohypophysis?",
+    "question": "The total volume of air a person can exhale after a forced maximum inspiration is termed Vital Capacity (VC), which equals:",
     "options": [
-      "A):   Insulin",
-      "B):   Antidiuretic Hormone (ADH / Vasopressin)",
-      "C):   Aldosterone",
-      "D):   Glucagon"
+      "A):   TV + RV",
+      "B):   TV + IRV + ERV",
+      "C):   IRV + ERV + RV",
+      "D):   TLC - ERV"
     ],
     "correctAnswer": "b",
-    "explanation": "Deficiency of ADH prevents water reabsorption in the collecting ducts, causing massive excretion of dilute urine (polyuria)."
+    "explanation": "Vital Capacity (VC) is the maximum volume of air that can be expired after maximum inspiration: VC = TV + IRV + ERV (~3,500 - 4,500 mL)."
   }
 ];

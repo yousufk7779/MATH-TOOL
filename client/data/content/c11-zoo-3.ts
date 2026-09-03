@@ -1,9 +1,8 @@
 // Class 11 Zoology Chapter 3: Cell Structure and Function
-// Gold Standard Reference Textbook & 3-Tab Architecture
+// Complete Official Syllabus Coverage & Zero Diagrams
 // Subject: Zoology | Class: 11 | Code: c11-zoo-3
 
-export const c11Zoo3HtmlOverview = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo3HtmlOverview = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- Quick Glossary Card with Chapter Subtitle -->
   <div style="background: linear-gradient(135deg, rgba(255, 0, 127, 0.12), rgba(194, 24, 91, 0.12)); border: 1.5px solid rgba(255, 0, 127, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -36,47 +35,7 @@ export const c11Zoo3HtmlOverview = `
     1. Cell Theory and General Cell Organisation
   </h2>
 
-  <!-- FIGURE 3.1 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 270" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="270" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Prokaryotic vs Eukaryotic Cellular Architecture</text>
-      <!-- Left: Prokaryote -->
-      <g transform="translate(25, 40)">
-        <rect width="215" height="215" rx="6" fill="rgba(255, 145, 0, 0.12)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="107" y="22" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">Prokaryotic Cell (Bacterium)</text>
-        <text x="107" y="38" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Size: 0.1 - 5.0 &mu;m &bull; No membrane-bound organelles</text>
-        <line x1="20" y1="46" x2="195" y2="46" stroke="rgba(255,255,255,0.2)"/>
-        <text x="25" y="66" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Envelope:</b> Glycocalyx + Wall + Membrane</text>
-        <text x="25" y="86" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Genetic:</b> Naked circular nucleoid (no histones)</text>
-        <text x="25" y="106" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Plasmids:</b> Small extrachromosomal DNA</text>
-        <text x="25" y="126" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Ribosomes:</b> 70S (50S + 30S subunits)</text>
-        <text x="25" y="146" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Mesosome:</b> Plasma membrane infolding</text>
-        <text x="25" y="166" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Locomotion:</b> Flagellin protein flagella</text>
-        <text x="107" y="195" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Bacteria, Blue-green Algae, Mycoplasma</text>
-      </g>
-      <!-- Right: Eukaryote -->
-      <g transform="translate(260, 40)">
-        <rect width="215" height="215" rx="6" fill="rgba(255, 0, 127, 0.12)" stroke="#FF007F" stroke-width="1.2"/>
-        <text x="107" y="22" fill="#FF007F" font-size="11" font-weight="bold" text-anchor="middle">Eukaryotic Cell (Animal / Plant)</text>
-        <text x="107" y="38" fill="#CBD5E1" font-size="8.5" text-anchor="middle">Size: 10 - 100 &mu;m &bull; Extensive compartmentalization</text>
-        <line x1="20" y1="46" x2="195" y2="46" stroke="rgba(255,255,255,0.2)"/>
-        <text x="25" y="66" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">True Nucleus:</b> Double envelope + nuclear pores</text>
-        <text x="25" y="86" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Chromatin:</b> Linear DNA wrapped on histones</text>
-        <text x="25" y="106" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Ribosomes:</b> 80S (60S + 40S in cytosol)</text>
-        <text x="25" y="126" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Organelles:</b> ER, Golgi, Lysosomes, Vacuoles</text>
-        <text x="25" y="146" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Energy:</b> Mitochondria &amp; Plastids (Chloroplasts)</text>
-        <text x="25" y="166" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Cytoskeleton:</b> Microtubules (9+2) &amp; filaments</text>
-        <text x="107" y="195" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Protists, Fungi, Plants, Animals</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.1: Architectural Comparison: Prokaryotic Cell (70S, Nucleoid, Plasmids, Mesosomes) vs Eukaryotic Cell (80S, True Nucleus, Organelles)
-  </div>
-</div>
 
 
   <p>
@@ -114,51 +73,7 @@ export const c11Zoo3HtmlOverview = `
     2. Cell Membrane and Cell Wall Architecture
   </h2>
 
-  <!-- FIGURE 3.2 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Fluid Mosaic Model of Plasma Membrane (Singer &amp; Nicolson, 1972)</text>
-      <!-- Bilayer Diagram -->
-      <g transform="translate(25, 45)">
-        <rect width="450" height="190" rx="6" fill="rgba(255, 0, 127, 0.1)" stroke="rgba(255, 0, 127, 0.3)"/>
-        <!-- Upper heads -->
-        <g fill="#26C6DA">
-          <circle cx="50" cy="55" r="8"/><circle cx="75" cy="55" r="8"/><circle cx="100" cy="55" r="8"/>
-          <circle cx="125" cy="55" r="8"/><circle cx="275" cy="55" r="8"/><circle cx="300" cy="55" r="8"/>
-          <circle cx="325" cy="55" r="8"/><circle cx="350" cy="55" r="8"/><circle cx="375" cy="55" r="8"/>
-          <circle cx="400" cy="55" r="8"/>
-        </g>
-        <!-- Integral Protein -->
-        <rect x="155" y="40" width="90" height="95" rx="10" fill="#FF007F" stroke="#FFFFFF" stroke-width="1.5"/>
-        <text x="200" y="90" fill="#FFFFFF" font-size="9" font-weight="bold" text-anchor="middle">Integral</text>
-        <text x="200" y="104" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Protein</text>
-        <!-- Lower heads -->
-        <g fill="#26C6DA">
-          <circle cx="50" cy="120" r="8"/><circle cx="75" cy="120" r="8"/><circle cx="100" cy="120" r="8"/>
-          <circle cx="125" cy="120" r="8"/><circle cx="275" cy="120" r="8"/><circle cx="300" cy="120" r="8"/>
-          <circle cx="325" cy="120" r="8"/><circle cx="350" cy="120" r="8"/><circle cx="375" cy="120" r="8"/>
-          <circle cx="400" cy="120" r="8"/>
-        </g>
-        <!-- Peripheral Protein -->
-        <ellipse cx="90" cy="148" rx="35" ry="12" fill="#69F0AE"/>
-        <text x="90" y="152" fill="#0F172A" font-size="8" font-weight="bold" text-anchor="middle">Peripheral Protein</text>
-        <!-- Explanations -->
-        <text x="250" y="165" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">
-          Lipids enable quasi-fluid lateral mobility of embedded proteins &bull; Cholesterol buffers fluidity
-        </text>
-        <text x="250" y="178" fill="#CBD5E1" font-size="8" text-anchor="middle">
-          Hydrophilic Phosphate Heads outside (polar) &bull; Hydrophobic Fatty Acid Tails inside (non-polar)
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.2: Fluid Mosaic Model of Biological Membrane: Amphipathic Phospholipid Bilayer, Integral Channel Proteins, Peripheral Proteins &amp; Cholesterol
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Fluid Mosaic Model (Singer &amp; Nicolson, 1972)</h3>
@@ -187,64 +102,7 @@ export const c11Zoo3HtmlOverview = `
     3. The Endomembrane System (ER, Golgi, Lysosomes, Vacuoles)
   </h2>
 
-  <!-- FIGURE 3.3 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">The Endomembrane System: ER &rarr; Golgi &rarr; Lysosomes &rarr; Vacuoles</text>
-      <!-- Flow Diagram -->
-      <g transform="translate(20, 42)">
-        <rect x="0" y="0" width="135" height="120" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="67" y="20" fill="#26C6DA" font-size="10.5" font-weight="bold" text-anchor="middle">1. Endoplasmic Retic.</text>
-        <text x="67" y="38" fill="#69F0AE" font-size="8.5" font-weight="bold" text-anchor="middle">&bull; RER (with Ribosomes):</text>
-        <text x="67" y="52" fill="#CBD5E1" font-size="8" text-anchor="middle">Protein synthesis &amp; folding</text>
-        <text x="67" y="72" fill="#FFB74D" font-size="8.5" font-weight="bold" text-anchor="middle">&bull; SER (no Ribosomes):</text>
-        <text x="67" y="86" fill="#CBD5E1" font-size="8" text-anchor="middle">Lipid synthesis &amp; steroidal</text>
-        <text x="67" y="100" fill="#CBD5E1" font-size="8" text-anchor="middle">hormones (detoxification)</text>
-
-        <!-- Arrow -->
-        <text x="148" y="65" fill="#FFE082" font-size="16" font-weight="bold">&rarr;</text>
-
-        <rect x="165" y="0" width="150" height="120" rx="6" fill="rgba(255, 0, 127, 0.12)" stroke="#FF007F" stroke-width="1.2"/>
-        <text x="240" y="20" fill="#FF007F" font-size="10.5" font-weight="bold" text-anchor="middle">2. Golgi Apparatus</text>
-        <text x="240" y="38" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Camillo Golgi (1898)</text>
-        <text x="240" y="54" fill="#CBD5E1" font-size="8" text-anchor="middle">&bull; <b style="color: #FF007F;">Cis-Face:</b> Forming / receiving</text>
-        <text x="240" y="70" fill="#CBD5E1" font-size="8" text-anchor="middle">&bull; <b style="color: #FF007F;">Trans-Face:</b> Maturing / shipping</text>
-        <text x="240" y="88" fill="#69F0AE" font-size="8.5" font-weight="bold" text-anchor="middle">Glycosylation:</text>
-        <text x="240" y="102" fill="#FFE082" font-size="7.5" text-anchor="middle">Forms Glycoproteins &amp; Glycolipids</text>
-
-        <!-- Arrow -->
-        <text x="328" y="65" fill="#FFE082" font-size="16" font-weight="bold">&rarr;</text>
-
-        <rect x="345" y="0" width="115" height="120" rx="6" fill="rgba(255, 145, 0, 0.12)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="402" y="20" fill="#FF9100" font-size="10.5" font-weight="bold" text-anchor="middle">3. Lysosomes</text>
-        <text x="402" y="38" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Acid Hydrolases</text>
-        <text x="402" y="54" fill="#CBD5E1" font-size="8" text-anchor="middle">Active at pH ~5.0</text>
-        <text x="402" y="70" fill="#CBD5E1" font-size="8" text-anchor="middle">Digests all biomolecules</text>
-        <text x="402" y="88" fill="#FF8A65" font-size="8.5" font-weight="bold" text-anchor="middle">'Suicide Bags'</text>
-        <text x="402" y="104" fill="#FFE082" font-size="7.5" text-anchor="middle">Vacuoles: Tonoplast</text>
-      </g>
-      <!-- Bottom coordination banner -->
-      <g transform="translate(20, 175)">
-        <rect width="460" height="70" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="230" y="20" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">
-          Why Endomembrane System? Coordinated Functional Secretory Vesicle Route
-        </text>
-        <text x="230" y="38" fill="#FFFFFF" font-size="8.5" text-anchor="middle">
-          Mitochondria, Chloroplasts, and Peroxisomes are NOT part of the endomembrane system
-        </text>
-        <text x="230" y="52" fill="#CBD5E1" font-size="8" text-anchor="middle">
-          because their functions are not coordinated with ER, Golgi, Lysosomes, and Vacuoles!
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.3: Endomembrane System Architecture: ER Synthesis &rarr; Golgi Packaging &amp; Glycosylation &rarr; Lysosomal Acid Hydrolases &amp; Tonoplast Vacuoles
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Endoplasmic Reticulum &amp; Golgi Apparatus Organization</h3>
@@ -275,89 +133,10 @@ export const c11Zoo3HtmlOverview = `
     4. Energy Transductors: Mitochondria and Plastids
   </h2>
 
-  <!-- FIGURE 3.4 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Mitochondrion Ultrastructure &amp; F0-F1 Oxysome Particles</text>
-      <g transform="translate(25, 42)">
-        <rect width="215" height="200" rx="6" fill="rgba(255, 61, 0, 0.12)" stroke="#FF3D00" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#FF3D00" font-size="11" font-weight="bold" text-anchor="middle">Double Membrane Anatomy</text>
-        <text x="20" y="44" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Outer Membrane:</b> Smooth, porous</text>
-        <text x="20" y="64" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Inner Membrane:</b> Infolded into <b>Cristae</b></text>
-        <text x="20" y="80" fill="#CBD5E1" font-size="8">(increases surface area for ETS)</text>
-        <text x="20" y="104" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Matrix:</b> Dense fluid containing:</text>
-        <text x="30" y="120" fill="#69F0AE" font-size="8.5">- Circular naked DNA molecule</text>
-        <text x="30" y="136" fill="#69F0AE" font-size="8.5">- 70S prokaryotic-type ribosomes</text>
-        <text x="30" y="152" fill="#69F0AE" font-size="8.5">- Krebs cycle enzymes</text>
-        <text x="107" y="180" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Semi-Autonomous Organelle</text>
-      </g>
-      <g transform="translate(260, 42)">
-        <rect width="215" height="200" rx="6" fill="rgba(0, 229, 255, 0.12)" stroke="#00E5FF" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#00E5FF" font-size="11" font-weight="bold" text-anchor="middle">F<sub>0</sub>-F<sub>1</sub> Complex (Oxysome)</text>
-        <!-- Elementary Particle Sketch -->
-        <circle cx="107" cy="70" r="18" fill="#FF007F"/>
-        <text x="107" y="74" fill="#FFFFFF" font-size="8.5" font-weight="bold" text-anchor="middle">F<sub>1</sub> Head</text>
-        <rect x="102" y="88" width="10" height="20" fill="#FFE082"/>
-        <rect x="85" y="108" width="44" height="14" rx="3" fill="#26C6DA"/>
-        <text x="107" y="118" fill="#0F172A" font-size="8" font-weight="bold" text-anchor="middle">F<sub>0</sub> Base</text>
-        <text x="107" y="145" fill="#FFFFFF" font-size="8.5" text-anchor="middle"><b>F<sub>0</sub> Base:</b> Transmembrane proton pore</text>
-        <text x="107" y="160" fill="#FFFFFF" font-size="8.5" text-anchor="middle"><b>F<sub>1</sub> Head:</b> Catalyzes ADP + Pi &rarr; ATP</text>
-        <text x="107" y="185" fill="#69F0AE" font-size="8.5" font-weight="bold" text-anchor="middle">Site of ATP Synthesis (Powerhouse)</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.4: Mitochondrion Ultrastructure: Outer/Inner Membrane, Cristae, 70S Ribosomes, Circular DNA &amp; F<sub>0</sub>-F<sub>1</sub> ATP Synthase (Oxysomes)
-  </div>
-</div>
 
 
-  <!-- FIGURE 3.5 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Plastids Classification &amp; Chloroplast Fine Structure</text>
-      <g transform="translate(25, 42)">
-        <rect width="450" height="100" rx="6" fill="rgba(105, 240, 174, 0.12)" stroke="#69F0AE" stroke-width="1.2"/>
-        <text x="225" y="20" fill="#69F0AE" font-size="11" font-weight="bold" text-anchor="middle">Plastid Classification Matrix (Schimper)</text>
-        <g transform="translate(10, 30)">
-          <rect width="135" height="58" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="67" y="16" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">1. Chloroplasts</text>
-          <text x="67" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Chlorophyll a &amp; b</text>
-          <text x="67" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Photosynthesis (Green)</text>
-        </g>
-        <g transform="translate(155, 30)">
-          <rect width="135" height="58" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="67" y="16" fill="#FF9100" font-size="9" font-weight="bold" text-anchor="middle">2. Chromoplasts</text>
-          <text x="67" y="32" fill="#FFFFFF" font-size="8" text-anchor="middle">Carotene &amp; Xanthophyll</text>
-          <text x="67" y="46" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Petals &amp; Fruits (Color)</text>
-        </g>
-        <g transform="translate(300, 30)">
-          <rect width="140" height="58" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="70" y="16" fill="#26C6DA" font-size="9" font-weight="bold" text-anchor="middle">3. Leucoplasts</text>
-          <text x="70" y="30" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Amyloplast (Starch)</text>
-          <text x="70" y="42" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Elaioplast (Oil &amp; Fats)</text>
-          <text x="70" y="54" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Aleuroplast (Protein)</text>
-        </g>
-      </g>
-      <g transform="translate(25, 152)">
-        <rect width="450" height="95" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255,255,255,0.2)"/>
-        <text x="225" y="20" fill="#FFE082" font-size="10.5" font-weight="bold" text-anchor="middle">Chloroplast Ultrastructure Compartments</text>
-        <text x="30" y="40" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Thylakoids &amp; Grana:</b> Flattened disc sacs stacked like coins; site of <b>Light Reactions (ATP &amp; NADPH)</b></text>
-        <text x="30" y="60" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Stroma:</b> Gel-like matrix containing <b>RuBisCO</b>, 70S ribosomes &amp; circular DNA; site of <b>Dark Reactions (Calvin Cycle)</b></text>
-        <text x="30" y="80" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Stroma Lamellae:</b> Interconnecting membranous tubules connecting adjacent grana stacks</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.5: Plastid Classification (Chloroplast, Chromoplast, Leucoplast) &amp; Chloroplast Anatomy (Thylakoids, Grana Stacks, Stroma Lamellae &amp; Stroma)
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Mitochondria Ultrastructure &amp; Oxysomes</h3>
@@ -389,38 +168,7 @@ export const c11Zoo3HtmlOverview = `
     5. Ribosomes, Cytoskeleton, Centrosome, Cilia &amp; Flagella
   </h2>
 
-  <!-- FIGURE 3.6 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 250" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="250" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Microtubule Architecture: Cilia / Flagella (9+2) vs Centriole (9+0)</text>
-      <g transform="translate(25, 42)">
-        <rect width="215" height="190" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="107" y="22" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">Cilia &amp; Flagella (9+2 Axoneme)</text>
-        <circle cx="107" cy="85" r="45" fill="none" stroke="#26C6DA" stroke-width="2"/>
-        <circle cx="102" cy="85" r="5" fill="#FF007F"/><circle cx="112" cy="85" r="5" fill="#FF007F"/>
-        <text x="107" y="145" fill="#FFFFFF" font-size="9" text-anchor="middle"><b>9 Peripheral Doublets</b> + <b>2 Central Singlets</b></text>
-        <text x="107" y="160" fill="#CBD5E1" font-size="8" text-anchor="middle">Interdoublet Nexin linkers &bull; Radial spokes</text>
-        <text x="107" y="174" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Dynein arms (ATP-driven sliding motility)</text>
-      </g>
-      <g transform="translate(260, 42)">
-        <rect width="215" height="190" rx="6" fill="rgba(255, 145, 0, 0.12)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="107" y="22" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">Centriole (9+0 Cartwheel)</text>
-        <circle cx="107" cy="85" r="45" fill="none" stroke="#FF9100" stroke-width="2"/>
-        <circle cx="107" cy="85" r="8" fill="#FF007F"/>
-        <text x="107" y="89" fill="#FFFFFF" font-size="7.5" font-weight="bold" text-anchor="middle">Hub</text>
-        <text x="107" y="145" fill="#FFFFFF" font-size="9" text-anchor="middle"><b>9 Peripheral Triplets</b> + <b>0 Central Microtubule</b></text>
-        <text x="107" y="160" fill="#CBD5E1" font-size="8" text-anchor="middle">Radial spokes connect triplets to central hub</text>
-        <text x="107" y="174" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Forms Basal Body &amp; Mitotic Spindle Poles</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.6: Comparative Cytoskeletal Architecture: Cilia/Flagella 9+2 Axoneme with Dynein Arms vs Centriole 9+0 Cartwheel Structure
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Cilia &amp; Flagella 9+2 Axoneme Architecture</h3>
@@ -449,46 +197,7 @@ export const c11Zoo3HtmlOverview = `
     6. Nuclear Organisation and Chromatin Architecture
   </h2>
 
-  <!-- FIGURE 3.7 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Nucleus Architecture, Nucleosome &amp; Chromosome Types</text>
-      <!-- Nucleus Components -->
-      <g transform="translate(25, 42)">
-        <rect width="215" height="195" rx="6" fill="rgba(224, 64, 251, 0.12)" stroke="#E040FB" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#E040FB" font-size="10.5" font-weight="bold" text-anchor="middle">Nucleus Components (Robert Brown, 1831)</text>
-        <text x="20" y="44" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Double Envelope:</b> Perinuclear space (10-50 nm)</text>
-        <text x="20" y="64" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Nuclear Pores:</b> Bidirectional RNA &amp; protein flow</text>
-        <text x="20" y="84" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Nucleolus:</b> Non-membrane factory for <b>rRNA</b></text>
-        <text x="20" y="104" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Chromatin (Flemming):</b> DNA + Basic Histones</text>
-        <text x="20" y="124" fill="#69F0AE" font-size="8.5">&bull; <b style="color: #FF007F;">Euchromatin:</b> Loose, transcriptionally active</text>
-        <text x="20" y="140" fill="#FF8A65" font-size="8.5">&bull; <b style="color: #FF007F;">Heterochromatin:</b> Dense, inactive, dark</text>
-        <text x="107" y="175" fill="#FFE082" font-size="8.5" font-weight="bold" text-anchor="middle">Nucleosome: Octamer + 146 bp DNA</text>
-      </g>
-      <!-- Chromosome Morphology -->
-      <g transform="translate(260, 42)">
-        <rect width="215" height="195" rx="6" fill="rgba(0, 229, 255, 0.12)" stroke="#00E5FF" stroke-width="1.2"/>
-        <text x="107" y="20" fill="#00E5FF" font-size="10.5" font-weight="bold" text-anchor="middle">4 Types based on Centromere Position</text>
-        <g transform="translate(15, 34)">
-          <text x="0" y="18" fill="#69F0AE" font-size="9" font-weight="bold">1. Metacentric:</text>
-          <text x="0" y="30" fill="#CBD5E1" font-size="8">Middle centromere &rarr; Two equal arms (V-shaped)</text>
-          <text x="0" y="52" fill="#26C6DA" font-size="9" font-weight="bold">2. Sub-metacentric:</text>
-          <text x="0" y="64" fill="#CBD5E1" font-size="8">Slightly away from center &rarr; One short + one long (L-shaped)</text>
-          <text x="0" y="86" fill="#FFD54F" font-size="9" font-weight="bold">3. Acrocentric:</text>
-          <text x="0" y="98" fill="#CBD5E1" font-size="8">Close to end &rarr; Extremely short p-arm + long q-arm (J-shaped)</text>
-          <text x="0" y="120" fill="#FF3D00" font-size="9" font-weight="bold">4. Telocentric:</text>
-          <text x="0" y="132" fill="#CBD5E1" font-size="8">Terminal centromere at very tip (I-shaped)</text>
-        </g>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.7: Nuclear Organization: Double Envelope, Pores, Nucleolus, Euchromatin vs Heterochromatin &amp; 4 Chromosome Morphologies
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Nuclear Envelope, Nucleolus &amp; Chromatin Packaging</h3>
@@ -520,44 +229,7 @@ export const c11Zoo3HtmlOverview = `
     7. Cell Cycle and Interphase Dynamics
   </h2>
 
-  <!-- FIGURE 3.8 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">The Cell Cycle Wheel &amp; Interphase Phases (Howard &amp; Pelc, 1953)</text>
-      <!-- Wheel Representation -->
-      <g transform="translate(25, 42)">
-        <rect width="220" height="195" rx="6" fill="rgba(0, 176, 155, 0.12)" stroke="#00B09B" stroke-width="1.2"/>
-        <text x="110" y="22" fill="#00B09B" font-size="11" font-weight="bold" text-anchor="middle">Interphase (95% of Cycle Duration)</text>
-        <text x="20" y="48" fill="#26C6DA" font-size="9.5" font-weight="bold">&bull; G<sub>1</sub> Phase (Gap 1):</text>
-        <text x="30" y="62" fill="#CBD5E1" font-size="8">Active RNA &amp; protein synthesis; cell growth</text>
-        <text x="20" y="86" fill="#69F0AE" font-size="9.5" font-weight="bold">&bull; S Phase (Synthesis):</text>
-        <text x="30" y="100" fill="#FFE082" font-size="8.5" font-weight="bold">DNA doubles: 2C &rarr; 4C! (Chromosome number 2n unchanged)</text>
-        <text x="30" y="114" fill="#CBD5E1" font-size="8">Centriole duplicates in cytoplasm</text>
-        <text x="20" y="138" fill="#FFD54F" font-size="9.5" font-weight="bold">&bull; G<sub>2</sub> Phase (Gap 2):</text>
-        <text x="30" y="152" fill="#CBD5E1" font-size="8">Tubulin synthesis for mitotic spindle assembly</text>
-        <text x="110" y="180" fill="#FF8A65" font-size="8.5" font-weight="bold" text-anchor="middle">G<sub>0</sub> Phase: Quiescent metabolic arrest</text>
-      </g>
-      <!-- M Phase Breakdown -->
-      <g transform="translate(260, 42)">
-        <rect width="215" height="195" rx="6" fill="rgba(255, 0, 127, 0.12)" stroke="#FF007F" stroke-width="1.2"/>
-        <text x="107" y="22" fill="#FF007F" font-size="11" font-weight="bold" text-anchor="middle">M Phase (Mitosis - 5% of Duration)</text>
-        <text x="20" y="48" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Prophase:</b> Chromatin condenses, asters form</text>
-        <text x="20" y="74" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Metaphase:</b> Chromosomes align at equatorial plate</text>
-        <text x="30" y="88" fill="#FFE082" font-size="8.5">(Best stage to study morphology &amp; count number)</text>
-        <text x="20" y="114" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Anaphase:</b> Centromeres split; chromatids separate</text>
-        <text x="30" y="128" fill="#FFE082" font-size="8.5">(Best stage to study chromosome shape V, L, J, I)</text>
-        <text x="20" y="154" fill="#FFFFFF" font-size="9">&bull; <b style="color: #FF007F;">Telophase:</b> Nuclear envelope reforms; decondensation</text>
-        <text x="107" y="180" fill="#69F0AE" font-size="8.5" font-weight="bold" text-anchor="middle">Cytokinesis: Furrowing (Animals) / Cell plate (Plants)</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.8: The Complete Cell Cycle Wheel: Interphase (G<sub>1</sub>, S DNA Duplication 2C&rarr;4C, G<sub>2</sub>), G<sub>0</sub> Quiescence &amp; M Phase Stages
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Interphase Stages (G1, S, G2) and G0 Phase</h3>
@@ -576,80 +248,7 @@ export const c11Zoo3HtmlOverview = `
     8. Mitosis &amp; Meiosis (Cell Division Stages)
   </h2>
 
-  <!-- FIGURE 3.9 -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 260" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="260" rx="8" fill="#0F172A"/>
-      <text x="250" y="24" fill="#FF007F" font-size="13.5" font-weight="bold" text-anchor="middle">Meiosis I: 5 Sub-stages of Prophase I &amp; Crossing Over</text>
-      <!-- 5 Stages Grid -->
-      <g transform="translate(20, 42)">
-        <rect width="460" height="195" rx="6" fill="rgba(255, 0, 127, 0.1)" stroke="rgba(255, 0, 127, 0.3)"/>
-        <!-- 1 Leptotene -->
-        <g transform="translate(15, 15)">
-          <rect width="80" height="95" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="40" y="18" fill="#26C6DA" font-size="9" font-weight="bold" text-anchor="middle">1. Leptotene</text>
-          <text x="40" y="36" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Beaded bouquet</text>
-          <text x="40" y="50" fill="#CBD5E1" font-size="7" text-anchor="middle">Chromatin</text>
-          <text x="40" y="62" fill="#CBD5E1" font-size="7" text-anchor="middle">condenses into</text>
-          <text x="40" y="74" fill="#CBD5E1" font-size="7" text-anchor="middle">slender threads</text>
-        </g>
-        <!-- 2 Zygotene -->
-        <g transform="translate(105, 15)">
-          <rect width="80" height="95" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="40" y="18" fill="#69F0AE" font-size="9" font-weight="bold" text-anchor="middle">2. Zygotene</text>
-          <text x="40" y="36" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Synapsis begins</text>
-          <text x="40" y="50" fill="#FFE082" font-size="7" text-anchor="middle">Synaptonemal</text>
-          <text x="40" y="62" fill="#FFE082" font-size="7" text-anchor="middle">Complex forms</text>
-          <text x="40" y="76" fill="#CBD5E1" font-size="7" text-anchor="middle">Forms Bivalents</text>
-        </g>
-        <!-- 3 Pachytene -->
-        <g transform="translate(195, 15)">
-          <rect width="80" height="95" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="40" y="18" fill="#FF007F" font-size="9" font-weight="bold" text-anchor="middle">3. Pachytene</text>
-          <text x="40" y="34" fill="#FFE082" font-size="7.5" font-weight="bold" text-anchor="middle">Crossing Over!</text>
-          <text x="40" y="48" fill="#CBD5E1" font-size="7" text-anchor="middle">Recombinase</text>
-          <text x="40" y="60" fill="#CBD5E1" font-size="7" text-anchor="middle">enzyme mediates</text>
-          <text x="40" y="72" fill="#CBD5E1" font-size="7" text-anchor="middle">non-sister gene</text>
-          <text x="40" y="84" fill="#CBD5E1" font-size="7" text-anchor="middle">exchange</text>
-        </g>
-        <!-- 4 Diplotene -->
-        <g transform="translate(285, 15)">
-          <rect width="80" height="95" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="40" y="18" fill="#FFD54F" font-size="9" font-weight="bold" text-anchor="middle">4. Diplotene</text>
-          <text x="40" y="36" fill="#FFFFFF" font-size="7.5" text-anchor="middle">Desynapsis</text>
-          <text x="40" y="50" fill="#FFE082" font-size="7" text-anchor="middle">X-shaped</text>
-          <text x="40" y="62" fill="#FFE082" font-size="7.5" font-weight="bold" text-anchor="middle">Chiasmata</text>
-          <text x="40" y="76" fill="#CBD5E1" font-size="7" text-anchor="middle">become visible</text>
-        </g>
-        <!-- 5 Diakinesis -->
-        <g transform="translate(375, 15)">
-          <rect width="75" height="95" rx="4" fill="rgba(15, 23, 42, 0.7)"/>
-          <text x="37" y="18" fill="#FF3D00" font-size="9" font-weight="bold" text-anchor="middle">5. Diakinesis</text>
-          <text x="37" y="36" fill="#FFFFFF" font-size="7" text-anchor="middle">Terminalization</text>
-          <text x="37" y="50" fill="#CBD5E1" font-size="7" text-anchor="middle">Chiasmata shift</text>
-          <text x="37" y="62" fill="#CBD5E1" font-size="7" text-anchor="middle">to chromosome</text>
-          <text x="37" y="74" fill="#CBD5E1" font-size="7" text-anchor="middle">tips; envelope</text>
-          <text x="37" y="86" fill="#CBD5E1" font-size="7" text-anchor="middle">breaks down</text>
-        </g>
-        <!-- Bottom Recombination Banner -->
-        <text x="230" y="135" fill="#FFE082" font-size="9" font-weight="bold" text-anchor="middle">
-          Pachytene Crossing Over generates Genetic Variations &rarr; Raw Material for Evolution!
-        </text>
-        <text x="230" y="152" fill="#FFFFFF" font-size="8.5" text-anchor="middle">
-          Meiosis reduces chromosome number from 2n &rarr; n &bull; Yields 4 genetically distinct haploid gametes
-        </text>
-        <text x="230" y="168" fill="#CBD5E1" font-size="8" text-anchor="middle">
-          Interkinesis (short pause between Meiosis I and II) lacks DNA replication!
-        </text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 3.9: Prophase I Sub-stages: Leptotene, Zygotene Synapsis, Pachytene Crossing Over (Recombinase), Diplotene Chiasmata &amp; Diakinesis Terminalization
-  </div>
-</div>
 
 
   <h3 style="color: #FF007F; margin-top: 18px; font-size: 16.5px;">(i) Mitosis (Equational Division) &amp; Cytokinesis</h3>
@@ -743,11 +342,9 @@ export const c11Zoo3HtmlOverview = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
-export const c11Zoo3HtmlSolutions = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo3HtmlSolutions = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- SECTION A -->
   <div style="background: linear-gradient(135deg, rgba(255, 0, 127, 0.15), rgba(194, 24, 91, 0.15)); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
@@ -1376,308 +973,307 @@ export const c11Zoo3HtmlSolutions = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
 export const c11Zoo3Mcqs = [
   {
     "id": "c11-zoo-3-mcq-1",
-    "question": "Who formulated the foundational doctrine 'Omnis cellula-e cellula'?",
+    "question": "Who formulated the seminal biological generalization 'Omnis cellula-e cellula' (all cells arise from pre-existing cells)?",
     "options": [
-      "A):   Robert Hooke",
-      "B):   Rudolf Virchow (1855)",
-      "C):   Schleiden and Schwann",
+      "A):   Rudolf Virchow (1855)",
+      "B):   Matthias Schleiden",
+      "C):   Theodor Schwann",
       "D):   Robert Brown"
     ],
-    "correctAnswer": "b",
-    "explanation": "Rudolf Virchow in 1855 modified the Cell Theory by adding the principle that all cells arise from pre-existing cells."
+    "correctAnswer": "a",
+    "explanation": "Rudolf Virchow in 1855 modified the classical Cell Theory by establishing that all new cells originate from the division of pre-existing cells."
   },
   {
     "id": "c11-zoo-3-mcq-2",
-    "question": "Which of the following cellular structures is unique to prokaryotic cells?",
+    "question": "In the widely accepted Fluid Mosaic Model of Singer and Nicolson (1972), the plasma membrane is described as:",
     "options": [
-      "A):   Nucleolus",
-      "B):   Mesosome",
-      "C):   Endoplasmic reticulum",
-      "D):   80S Ribosome"
+      "A):   A rigid sandwich of proteins enclosing a central carbohydrate core",
+      "B):   Protein icebergs floating in a sea of fluid phospholipid bilayer",
+      "C):   A continuous trilaminar cellulose and pectin meshwork",
+      "D):   A static solid layer of cholesterol and glycolipids"
     ],
     "correctAnswer": "b",
-    "explanation": "Mesosomes are specialized infoldings of the plasma membrane found exclusively in bacteria."
+    "explanation": "Singer and Nicolson described cell membranes as a quasi-fluid phospholipid bilayer in which peripheral and integral proteins float laterally."
   },
   {
     "id": "c11-zoo-3-mcq-3",
-    "question": "According to the Fluid Mosaic Model, the cell membrane is composed of:",
+    "question": "Which of the following cellular organelles is NOT considered a functional component of the Endomembrane System?",
     "options": [
-      "A):   A solid layer of proteins sandwiched between lipids",
-      "B):   A quasi-fluid phospholipid bilayer with floating integral and peripheral proteins",
-      "C):   A continuous carbohydrate sheet",
-      "D):   Pure cellulose microfibrils"
+      "A):   Endoplasmic Reticulum",
+      "B):   Golgi Apparatus",
+      "C):   Mitochondria",
+      "D):   Lysosomes"
     ],
-    "correctAnswer": "b",
-    "explanation": "Singer & Nicolson (1972) demonstrated that proteins float like a mosaic in a quasi-fluid lipid bilayer."
+    "correctAnswer": "c",
+    "explanation": "The endomembrane system includes ER, Golgi apparatus, lysosomes, and vacuoles; mitochondria and chloroplasts are autonomous organelles."
   },
   {
     "id": "c11-zoo-3-mcq-4",
-    "question": "Which organelle is NOT considered part of the Endomembrane System?",
+    "question": "The primary biochemical function of the Rough Endoplasmic Reticulum (RER) bearing surface ribosomes is:",
     "options": [
-      "A):   Golgi apparatus",
-      "B):   Mitochondrion",
-      "C):   Lysosome",
-      "D):   Endoplasmic reticulum"
+      "A):   Synthesis of steroid hormones",
+      "B):   Detoxification of lipid-soluble drugs",
+      "C):   Storage of glycogen granules",
+      "D):   Protein synthesis and processing"
     ],
-    "correctAnswer": "b",
-    "explanation": "Mitochondria (along with chloroplasts and peroxisomes) are not coordinated with ER-Golgi traffic."
+    "correctAnswer": "d",
+    "explanation": "RER is studded with ribosomes and specializes in the synthesis, folding, and translocation of secretory and membrane proteins."
   },
   {
     "id": "c11-zoo-3-mcq-5",
-    "question": "Smooth Endoplasmic Reticulum (SER) is the major cellular site for the synthesis of:",
+    "question": "The cis (forming) and trans (maturing) faces of the Golgi apparatus function respectively in:",
     "options": [
-      "A):   Secretory proteins",
-      "B):   Lipids, phospholipids, and steroid hormones",
-      "C):   Ribosomal RNA",
-      "D):   Starch"
+      "A):   Receiving transition vesicles from ER and discharging secretory vesicles",
+      "B):   Synthesizing ATP and storing starch",
+      "C):   Replicating genomic DNA and transcribing rRNA",
+      "D):   Hydrolyzing waste macromolecules into amino acids"
     ],
-    "correctAnswer": "b",
-    "explanation": "SER synthesizes lipids and steroidal hormones, while RER synthesizes proteins."
+    "correctAnswer": "a",
+    "explanation": "The convex cis face receives transport vesicles from the ER, while the concave trans face buds off mature modified secretory vesicles."
   },
   {
     "id": "c11-zoo-3-mcq-6",
-    "question": "The primary organelle responsible for post-translational packaging and glycosylation of glycoproteins is:",
+    "question": "Lysosomes are membrane-bound digestive vesicles rich in hydrolytic enzymes (acid hydrolases) that operate at an optimal pH of:",
     "options": [
-      "A):   Golgi Apparatus",
-      "B):   Lysosome",
-      "C):   Peroxisome",
-      "D):   Centrosome"
+      "A):   pH 8.5 (Alkaline)",
+      "B):   pH 5.0 (Acidic)",
+      "C):   pH 7.0 (Neutral)",
+      "D):   pH 11.0 (Strongly basic)"
     ],
-    "correctAnswer": "a",
-    "explanation": "The Golgi apparatus modifies proteins by glycosylation, converting them into glycoproteins and glycolipids."
+    "correctAnswer": "b",
+    "explanation": "Lysosomal acid hydrolases (lipases, proteases, nucleases, carbohydrases) are maximally active in an acidic lumen around pH 5.0."
   },
   {
     "id": "c11-zoo-3-mcq-7",
-    "question": "Hydrolytic enzymes present inside lysosomes function optimally at an:",
+    "question": "The infoldings of the inner mitochondrial membrane that substantially increase surface area for ATP synthase complexes are termed:",
     "options": [
-      "A):   Alkaline pH ~8.5",
-      "B):   Acidic pH ~4.5 - 5.0",
-      "C):   Neutral pH 7.0",
-      "D):   Any pH"
+      "A):   Cisternae",
+      "B):   Thylakoids",
+      "C):   Cristae",
+      "D):   Granal lamellae"
     ],
-    "correctAnswer": "b",
-    "explanation": "Lysosomal acid hydrolases (lipases, proteases, nucleases) are active exclusively in an acidic microenvironment."
+    "correctAnswer": "c",
+    "explanation": "Cristae are tubular or lamellar infoldings of the inner mitochondrial membrane studded with F0-F1 ATP synthase particles."
   },
   {
     "id": "c11-zoo-3-mcq-8",
-    "question": "The single semi-permeable membrane enclosing the central vacuole in plant cells is called the:",
+    "question": "Plant leucoplasts that specialize specifically in the storage of starch grains are called:",
     "options": [
-      "A):   Plasmalemma",
-      "B):   Tonoplast",
-      "C):   Pericardium",
-      "D):   Mesenteron"
+      "A):   Elaioplasts",
+      "B):   Aleuroplasts",
+      "C):   Chromoplasts",
+      "D):   Amyloplasts"
     ],
-    "correctAnswer": "b",
-    "explanation": "Tonoplast is the semi-permeable membrane bounding the plant cell vacuole, maintaining high turgor."
+    "correctAnswer": "d",
+    "explanation": "Amyloplasts store starch (carbohydrates); elaioplasts store oils/fats; aleuroplasts store proteins."
   },
   {
     "id": "c11-zoo-3-mcq-9",
-    "question": "Infoldings of the inner mitochondrial membrane that increase surface area for the ETS are called:",
+    "question": "The 80S cytosolic ribosomes of eukaryotic cells are composed of which two sedimentation subunits?",
     "options": [
-      "A):   Thylakoids",
-      "B):   Cristae",
-      "C):   Cisternae",
-      "D):   Lamellae"
+      "A):   60S and 40S subunits",
+      "B):   50S and 30S subunits",
+      "C):   50S and 40S subunits",
+      "D):   60S and 30S subunits"
     ],
-    "correctAnswer": "b",
-    "explanation": "Cristae are inward projections of the inner mitochondrial membrane housing respiratory complexes."
+    "correctAnswer": "a",
+    "explanation": "Eukaryotic 80S ribosomes dissociate into a large 60S subunit and a small 40S subunit; prokaryotic 70S ribosomes consist of 50S and 30S."
   },
   {
     "id": "c11-zoo-3-mcq-10",
-    "question": "Amyloplasts, Elaioplasts, and Aleuroplasts belong to which category of plastids?",
+    "question": "The internal axoneme of eukaryotic cilia and flagella exhibits a characteristic microtubular arrangement of:",
     "options": [
-      "A):   Chromoplasts",
-      "B):   Leucoplasts",
-      "C):   Chloroplasts",
-      "D):   Phaeoplasts"
+      "A):   9 + 0 doublet array",
+      "B):   9 + 2 arrangement (9 peripheral doublets + 2 central singlets)",
+      "C):   9 triplets without central tubules",
+      "D):   8 doublets + 1 central singlet"
     ],
     "correctAnswer": "b",
-    "explanation": "Leucoplasts are non-pigmented nutrient storage plastids: Amyloplasts (starch), Elaioplasts (oil), Aleuroplasts (protein)."
+    "explanation": "Cilia and flagella have an axoneme featuring 9 peripheral doublet microtubules surrounding 2 central singlet microtubules (9+2 pattern)."
   },
   {
     "id": "c11-zoo-3-mcq-11",
-    "question": "The axoneme of eukaryotic Cilia and Flagella exhibits which microtubule pattern?",
+    "question": "The cartwheel-like non-membrane bound centrioles of the centrosome exhibit a microtubular organization of:",
     "options": [
-      "A):   9 + 0 array of triplets",
-      "B):   9 + 2 array (9 peripheral doublets + 2 central singlets)",
-      "C):   7 + 2 array",
-      "D):   9 + 3 array"
+      "A):   9 + 2 doublets",
+      "B):   8 + 2 singlets",
+      "C):   9 + 0 array of evenly spaced triplet microtubules",
+      "D):   12 peripheral singlets"
     ],
-    "correctAnswer": "b",
-    "explanation": "Cilia and flagella display a 9+2 arrangement of doublet microtubules around two central singlets."
+    "correctAnswer": "c",
+    "explanation": "Centrioles possess a 9+0 cartwheel structure consisting of 9 peripheral triplets of tubulin microtubules with no central tubule."
   },
   {
     "id": "c11-zoo-3-mcq-12",
-    "question": "The internal cartwheel structure of a Centriole exhibits which microtubule pattern?",
+    "question": "A chromosome possessing its centromere situated at the very terminal tip, resulting in a single visible arm, is termed:",
     "options": [
-      "A):   9 + 2 array",
-      "B):   9 + 0 array (9 peripheral triplets + 0 central microtubules)",
-      "C):   8 + 1 array",
-      "D):   Solid cylinder"
+      "A):   Metacentric",
+      "B):   Telocentric",
+      "C):   Sub-metacentric",
+      "D):   Acrocentric"
     ],
     "correctAnswer": "b",
-    "explanation": "Centrioles possess a 9+0 cartwheel structure consisting of 9 peripheral triplets and a central hub."
+    "explanation": "Telocentric chromosomes have a terminal centromere; acrocentric has centromere close to end; metacentric has median centromere."
   },
   {
     "id": "c11-zoo-3-mcq-13",
-    "question": "The nucleolus is the active cellular site for the transcription and assembly of:",
+    "question": "During which phase of the eukaryotic cell cycle does DNA replication take place, resulting in doubling of nuclear DNA amount from 2C to 4C?",
     "options": [
-      "A):   Messenger RNA (mRNA)",
-      "B):   Ribosomal RNA (rRNA)",
-      "C):   Transfer RNA (tRNA)",
-      "D):   Glycogen"
+      "A):   G1 Phase",
+      "B):   G2 Phase",
+      "C):   S Phase (Synthesis Phase)",
+      "D):   M Phase"
     ],
-    "correctAnswer": "b",
-    "explanation": "The nucleolus is the specialized non-membraned nuclear sub-compartment dedicated to rRNA synthesis."
+    "correctAnswer": "c",
+    "explanation": "During the S (Synthesis) phase of interphase, nuclear DNA replicates (2C to 4C) and the centrosome/centrioles duplicate in the cytoplasm."
   },
   {
     "id": "c11-zoo-3-mcq-14",
-    "question": "A basic structural unit of chromatin comprising ~146 bp of DNA wound around a histone octamer is a:",
+    "question": "Cells that exit the active cell cycle and enter a quiescent, metabolically active non-dividing state reside in:",
     "options": [
-      "A):   Centromere",
-      "B):   Nucleosome",
-      "C):   Kinetochore",
-      "D):   Telomere"
+      "A):   S phase",
+      "B):   G2 phase",
+      "C):   Metaphase",
+      "D):   G0 Phase (Quiescent stage)"
     ],
-    "correctAnswer": "b",
-    "explanation": "Nucleosomes are the 'beads-on-a-string' repeating units of eukaryotic chromatin packaging."
+    "correctAnswer": "d",
+    "explanation": "Cells in G0 (quiescent stage, such as mature heart muscle cells and neurons) remain metabolically active but divide only upon tissue injury."
   },
   {
     "id": "c11-zoo-3-mcq-15",
-    "question": "A chromosome having its centromere located exactly at the median midpoint is termed:",
+    "question": "At which mitotic stage do all duplicated chromosomes align along the equatorial plane forming a single equatorial plate?",
     "options": [
-      "A):   Acrocentric",
-      "B):   Metacentric (V-shaped at anaphase)",
-      "C):   Telocentric",
-      "D):   Sub-metacentric"
+      "A):   Metaphase",
+      "B):   Anaphase",
+      "C):   Telophase",
+      "D):   Prophase"
     ],
-    "correctAnswer": "b",
-    "explanation": "Metacentric chromosomes have a middle centromere with two equal arms, appearing V-shaped at anaphase."
+    "correctAnswer": "a",
+    "explanation": "During metaphase, chromosomes assemble at the spindle equator (metaphase plate) with kinetochores attached to spindle microtubules."
   },
   {
     "id": "c11-zoo-3-mcq-16",
-    "question": "During which phase of the cell cycle does DNA replication take place?",
+    "question": "The longitudinal splitting of centromeres followed by the poleward separation of sister chromatids occurs during:",
     "options": [
-      "A):   G<sub>1</sub> phase",
-      "B):   S Phase (Synthesis phase)",
-      "C):   G<sub>2</sub> phase",
-      "D):   M phase"
+      "A):   Prophase",
+      "B):   Anaphase",
+      "C):   Telophase",
+      "D):   Metaphase"
     ],
     "correctAnswer": "b",
-    "explanation": "During the S phase, nuclear DNA replication occurs and centrioles duplicate in the cytoplasm."
+    "explanation": "At anaphase, each centromere splits simultaneously, allowing daughter chromosomes (separated sister chromatids) to migrate to opposite poles."
   },
   {
     "id": "c11-zoo-3-mcq-17",
-    "question": "If a cell has 2C DNA and 2n chromosomes in G1, after S-phase its content becomes:",
+    "question": "In plant cell cytokinesis, division of the cytoplasm occurs centrifugally through the formation of a precursor structure called the:",
     "options": [
-      "A):   2C DNA and 4n chromosomes",
-      "B):   4C DNA and 2n chromosomes",
-      "C):   4C DNA and 4n chromosomes",
-      "D):   1C DNA and n chromosomes"
+      "A):   Cleavage furrow",
+      "B):   Contractile ring",
+      "C):   Cell Plate (Phragmoplast)",
+      "D):   Synaptonemal complex"
     ],
-    "correctAnswer": "b",
-    "explanation": "In S-phase, DNA content doubles from 2C to 4C, but the chromosome number remains unchanged at 2n."
+    "correctAnswer": "c",
+    "explanation": "Plant cytokinesis proceeds centrifugally (from center outward) via Golgi-derived vesicles coalescing into a cell plate (phragmoplast)."
   },
   {
     "id": "c11-zoo-3-mcq-18",
-    "question": "Cells in an adult animal that do not divide (e.g., heart muscle cells) enter a quiescent resting stage called:",
+    "question": "Pairing of homologous chromosomes (Synapsis) to form bivalents or tetrads occurs during which sub-stage of Prophase I?",
     "options": [
-      "A):   G<sub>1</sub> phase",
-      "B):   G<sub>0</sub> Phase",
-      "C):   S phase",
-      "D):   Telophase"
-    ],
-    "correctAnswer": "b",
-    "explanation": "G<sub>0</sub> is the quiescent phase where differentiated cells remain metabolically active but do not divide."
-  },
-  {
-    "id": "c11-zoo-3-mcq-19",
-    "question": "The best stage to study chromosome morphology, banding, and count numbers under a light microscope is:",
-    "options": [
-      "A):   Prophase",
-      "B):   Metaphase",
-      "C):   Anaphase",
-      "D):   Telophase"
-    ],
-    "correctAnswer": "b",
-    "explanation": "At metaphase, chromosomes reach maximum condensation and align cleanly at the equatorial plate."
-  },
-  {
-    "id": "c11-zoo-3-mcq-20",
-    "question": "The stage of mitosis where centromeres split and sister chromatids separate toward opposite poles is:",
-    "options": [
-      "A):   Prophase",
-      "B):   Metaphase",
-      "C):   Anaphase",
-      "D):   Telophase"
-    ],
-    "correctAnswer": "c",
-    "explanation": "At anaphase, centromeres split simultaneously, allowing daughter chromosomes to migrate to poles."
-  },
-  {
-    "id": "c11-zoo-3-mcq-21",
-    "question": "Pairing of homologous chromosomes (Synapsis) mediated by the synaptonemal complex occurs in:",
-    "options": [
-      "A):   Leptotene",
-      "B):   Zygotene",
+      "A):   Zygotene",
+      "B):   Leptotene",
       "C):   Pachytene",
       "D):   Diplotene"
     ],
-    "correctAnswer": "b",
-    "explanation": "Synapsis occurs during Zygotene of Prophase I, forming paired bivalents."
+    "correctAnswer": "a",
+    "explanation": "Synapsis (homologous chromosome pairing) mediated by the synaptonemal complex takes place during zygotene of prophase I."
   },
   {
-    "id": "c11-zoo-3-mcq-22",
-    "question": "Crossing over, the reciprocal exchange of genetic segments between non-sister chromatids, occurs in:",
+    "id": "c11-zoo-3-mcq-19",
+    "question": "Crossing over between non-sister chromatids of homologous chromosomes, mediated by the enzyme Recombinase, occurs during:",
     "options": [
       "A):   Zygotene",
-      "B):   Pachytene",
-      "C):   Diplotene",
-      "D):   Diakinesis"
-    ],
-    "correctAnswer": "b",
-    "explanation": "Crossing over occurs during Pachytene, catalyzed by the enzyme recombinase."
-  },
-  {
-    "id": "c11-zoo-3-mcq-23",
-    "question": "X-shaped points of crossing over called Chiasmata first become visible during:",
-    "options": [
-      "A):   Zygotene",
-      "B):   Pachytene",
-      "C):   Diplotene",
+      "B):   Diplotene",
+      "C):   Pachytene",
       "D):   Diakinesis"
     ],
     "correctAnswer": "c",
-    "explanation": "During Diplotene, dissolution of the synaptonemal complex makes X-shaped chiasmata clearly visible."
+    "explanation": "Pachytene is characterized by the exchange of genetic material (crossing over) between non-sister chromatids catalyzed by recombinase."
   },
   {
-    "id": "c11-zoo-3-mcq-24",
-    "question": "Terminalization of chiasmata is the hallmark event of which final sub-stage of Prophase I?",
+    "id": "c11-zoo-3-mcq-20",
+    "question": "Dissolution of the synaptonemal complex and the visual emergence of X-shaped cross-over points called 'Chiasmata' marks:",
     "options": [
       "A):   Leptotene",
       "B):   Pachytene",
-      "C):   Diplotene",
-      "D):   Diakinesis"
+      "C):   Diakinesis",
+      "D):   Diplotene"
     ],
     "correctAnswer": "d",
-    "explanation": "During Diakinesis, chiasmata slide toward the terminal ends of the chromosomes (terminalization)."
+    "explanation": "During diplotene, homologous chromosomes separate except at points of crossing over, revealing X-shaped chiasmata."
+  },
+  {
+    "id": "c11-zoo-3-mcq-21",
+    "question": "During Anaphase I of Meiosis I, the key mechanical event leading to reduction in chromosome number is:",
+    "options": [
+      "A):   Separation of homologous chromosomes to opposite poles while centromeres remain intact",
+      "B):   Splitting of centromeres and separation of sister chromatids",
+      "C):   Replication of nuclear DNA",
+      "D):   Dissolution of the nuclear envelope"
+    ],
+    "correctAnswer": "a",
+    "explanation": "In Anaphase I, homologous chromosome pairs separate to opposite poles without centromere cleavage, halving the chromosome number."
+  },
+  {
+    "id": "c11-zoo-3-mcq-22",
+    "question": "The brief interphase-like resting period between Meiosis I and Meiosis II, during which NO DNA replication occurs, is called:",
+    "options": [
+      "A):   Quiescent G0 stage",
+      "B):   Interkinesis (Intermeiotic stage)",
+      "C):   S Phase",
+      "D):   Diakinesis"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Interkinesis is a short pause between Telophase I and Prophase II; it involves protein synthesis but strictly no DNA replication."
+  },
+  {
+    "id": "c11-zoo-3-mcq-23",
+    "question": "The primary biological significance of meiosis in sexually reproducing organisms is that it:",
+    "options": [
+      "A):   Doubles the chromosome number in each successive generation",
+      "B):   Replaces damaged somatic tissues through clonal replication",
+      "C):   Maintains a constant species chromosome number across generations and introduces genetic diversity",
+      "D):   Synthesizes cell wall pectin"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Meiosis halves chromosome number in gametes (ensuring constant 2n on fertilization) and generates genetic variations via crossing over."
+  },
+  {
+    "id": "c11-zoo-3-mcq-24",
+    "question": "The disc-shaped multi-protein structure located on the centromere of each chromosome that serves as the attachment site for spindle fibers is the:",
+    "options": [
+      "A):   Centrosome",
+      "B):   Telomere",
+      "C):   Chromomere",
+      "D):   Kinetochore"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Kinetochores are specialized disc-like protein assemblies flanking the centromere where spindle microtubules attach during cell division."
   },
   {
     "id": "c11-zoo-3-mcq-25",
-    "question": "Anaphase I of Meiosis differs crucially from Anaphase of Mitosis because:",
+    "question": "The cementing intercellular glue that binds adjacent plant cell walls together is the Middle Lamella, composed primarily of:",
     "options": [
-      "A):   Chromosomes do not move",
-      "B):   Centromeres do not divide, and intact homologous chromosomes separate",
-      "C):   DNA replication occurs",
-      "D):   Spindle fibers dissolve"
+      "A):   Lignin and suberin",
+      "B):   Calcium and Magnesium Pectate",
+      "C):   Cellulose microfibrils",
+      "D):   Chitin polymers"
     ],
     "correctAnswer": "b",
-    "explanation": "In Anaphase I, centromeres remain intact; homologous chromosome pairs separate to halve the chromosome number."
+    "explanation": "The middle lamella is composed of calcium and magnesium pectate, functioning as an intercellular cement between plant cells."
   }
 ];

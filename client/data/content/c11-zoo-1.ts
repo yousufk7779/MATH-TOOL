@@ -1,9 +1,8 @@
 // Class 11 Zoology Chapter 1: Diversity in Living World
-// Gold Standard Reference Textbook & 3-Tab Architecture
+// Complete Official Syllabus Coverage & Zero Diagrams
 // Subject: Zoology | Class: 11 | Code: c11-zoo-1
 
-export const c11Zoo1HtmlOverview = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo1HtmlOverview = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- Quick Glossary Card with Chapter Subtitle -->
   <div style="background: linear-gradient(135deg, rgba(255, 61, 0, 0.12), rgba(216, 67, 21, 0.12)); border: 1.5px solid rgba(255, 61, 0, 0.35); border-radius: 12px; padding: 18px 20px; margin-bottom: 26px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
@@ -36,11 +35,7 @@ export const c11Zoo1HtmlOverview = `
     Animal Kingdom; General characters and classification of animals (non-chordates up to phyla level and chordates up to the level of class).
   </h2>
 
-  <!-- PRESERVED IMAGE 1 -->
-  <div style="text-align: center; margin: 32px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+Wm9vbG9neSBEaWFncmFtIDE8L3RleHQ+IDx0ZXh0IHg9IjQwMCIgeT0iMjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQ0JENUUxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiI+VmVjdG9yIEhpZ2gtRGVmaW5pdGlvbiBEaWFncmFtIDE8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 860px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 10px 32px rgba(255, 61, 0, 0.35); border: 2px solid #FF3D00;" alt="Basis of Animal Classification" />
-  <p style="color: #FF3D00; font-size: 15px; margin-top: 12px; font-weight: bold;">Figure 1.1: Ultra-HD 3D Biological Diagram - Basis of Animal Classification (Body Symmetry &amp; Coelom Types)</p>
-</div>
+  
 
   <p>
     The Animal Kingdom (Kingdom Animalia / Metazoa) encompasses multicellular, eukaryotic, heterotrophic organisms lacking cell walls. Systematists classify animals into distinct phyla based on structural complexity, body symmetry, embryonic germ layers, coelom organization, and developmental fate of blastopores.
@@ -72,11 +67,7 @@ export const c11Zoo1HtmlOverview = `
     </ul>
   </div>
 
-  <!-- PRESERVED IMAGE 2 (Collage of Non-Chordates) -->
-  <div style="text-align: center; margin: 32px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+Wm9vbG9neSBEaWFncmFtIDI8L3RleHQ+IDx0ZXh0IHg9IjQwMCIgeT0iMjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQ0JENUUxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiI+VmVjdG9yIEhpZ2gtRGVmaW5pdGlvbiBEaWFncmFtIDI8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 860px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 10px 32px rgba(255, 61, 0, 0.35); border: 2px solid #FF3D00;" alt="Representative Non-Chordate Organisms" />
-  <p style="color: #FF3D00; font-size: 15px; margin-top: 12px; font-weight: bold;">Figure 1.2: Ultra-HD 3D Representative Organisms Collage - Flashcards of Key Non-Chordate Phyla (Sycon, Hydra, Ascaris, Earthworm, Prawn, Starfish)</p>
-</div>
+  
 
   <h3 style="color: #FF3D00; margin-top: 22px; font-size: 16.5px;">(ii) Non-Chordate Phyla (Porifera to Hemichordata): General Characters &amp; Examples</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 61, 0, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
@@ -94,11 +85,7 @@ export const c11Zoo1HtmlOverview = `
     </ul>
   </div>
 
-  <!-- PRESERVED IMAGE 3 (Chordate Body Plan) -->
-  <div style="text-align: center; margin: 32px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+Wm9vbG9neSBEaWFncmFtIDM8L3RleHQ+IDx0ZXh0IHg9IjQwMCIgeT0iMjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQ0JENUUxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiI+VmVjdG9yIEhpZ2gtRGVmaW5pdGlvbiBEaWFncmFtIDM8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 860px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 10px 32px rgba(255, 61, 0, 0.35); border: 2px solid #FF3D00;" alt="Generalized Chordate Body Plan" />
-  <p style="color: #FF3D00; font-size: 15px; margin-top: 12px; font-weight: bold;">Figure 1.3: Ultra-HD 3D Anatomical Illustration - Generalized Chordate Body Plan (Notochord, Nerve Cord &amp; Gill Slits)</p>
-</div>
+  
 
   <h3 style="color: #FF3D00; margin-top: 22px; font-size: 16.5px;">(iii) Phylum Chordata Architecture: Subphyla &amp; Classes of Vertebrata</h3>
   <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 61, 0, 0.25); border-radius: 10px; padding: 14px 18px; margin: 16px 0;">
@@ -116,93 +103,7 @@ export const c11Zoo1HtmlOverview = `
     </p>
   </div>
 
-  <!-- NEW STANDALONE SVG CARD FOR VERTEBRATA & HEART EVOLUTION -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#FF3D00" font-size="14" font-weight="bold" text-anchor="middle">
-        Subphylum Vertebrata: Divisions, Superclasses &amp; Classes
-      </text>
-
-      <!-- Row 1: Agnatha vs Gnathostomata -->
-      <g transform="translate(25, 42)">
-        <!-- Agnatha -->
-        <rect x="0" y="0" width="135" height="110" rx="6" fill="rgba(255, 145, 0, 0.15)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="67" y="20" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">1. Agnatha (Jawless)</text>
-        <text x="67" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">Class: Cyclostomata</text>
-        <circle cx="67" cy="65" r="16" fill="none" stroke="#FF9100" stroke-width="2"/>
-        <circle cx="67" cy="65" r="6" fill="#FF9100"/>
-        <text x="67" y="94" fill="#FFE082" font-size="8.5" text-anchor="middle">Circular sucking mouth</text>
-        <text x="67" y="105" fill="#CBD5E1" font-size="8" text-anchor="middle">Petromyzon (Lamprey)</text>
-
-        <!-- Gnathostomata Pisces -->
-        <rect x="155" y="0" width="145" height="110" rx="6" fill="rgba(38, 198, 218, 0.15)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="227" y="20" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">2. Pisces (Fins)</text>
-        <text x="227" y="38" fill="#FFFFFF" font-size="8.5" text-anchor="middle">Chondrichthyes vs Osteichthyes</text>
-        <text x="227" y="56" fill="#80DEEA" font-size="8" text-anchor="middle">&bull; Cartilaginous: Placoid scales</text>
-        <text x="227" y="70" fill="#80DEEA" font-size="8" text-anchor="middle">Ventral mouth (Scoliodon)</text>
-        <text x="227" y="86" fill="#FFE082" font-size="8" text-anchor="middle">&bull; Bony: Cycloid/ctenoid scales</text>
-        <text x="227" y="100" fill="#FFE082" font-size="8" text-anchor="middle">Terminal mouth &amp; Operculum</text>
-
-        <!-- Gnathostomata Tetrapoda -->
-        <rect x="320" y="0" width="130" height="110" rx="6" fill="rgba(255, 61, 0, 0.15)" stroke="#FF3D00" stroke-width="1.2"/>
-        <text x="385" y="20" fill="#FF3D00" font-size="11" font-weight="bold" text-anchor="middle">3. Tetrapoda (Limbs)</text>
-        <text x="385" y="38" fill="#FFFFFF" font-size="9" text-anchor="middle">4 Land Classes</text>
-        <text x="385" y="56" fill="#69F0AE" font-size="8" text-anchor="middle">&bull; Amphibia (Dual life)</text>
-        <text x="385" y="70" fill="#FFD54F" font-size="8" text-anchor="middle">&bull; Reptilia (Dry scales)</text>
-        <text x="385" y="86" fill="#80D8FF" font-size="8" text-anchor="middle">&bull; Aves (Pneumatic bones)</text>
-        <text x="385" y="100" fill="#FF8A65" font-size="8" text-anchor="middle">&bull; Mammalia (Mammary glands)</text>
-      </g>
-
-      <!-- Row 2: Heart Chambers Evolutionary Matrix -->
-      <g transform="translate(25, 162)">
-        <rect width="450" height="100" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 61, 0, 0.3)"/>
-        <text x="225" y="18" fill="#FF3D00" font-size="11" font-weight="bold" text-anchor="middle">
-          Evolution of Heart Chambers &amp; Circulation in Vertebrates
-        </text>
-
-        <g transform="translate(15, 28)">
-          <rect width="95" height="60" rx="4" fill="rgba(38, 198, 218, 0.1)"/>
-          <text x="47" y="18" fill="#26C6DA" font-size="9.5" font-weight="bold" text-anchor="middle">Pisces</text>
-          <text x="47" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">2 Chambers</text>
-          <text x="47" y="48" fill="#CBD5E1" font-size="7.5" text-anchor="middle">1 Atrium + 1 Ventricle</text>
-          <text x="47" y="58" fill="#FFE082" font-size="7" text-anchor="middle">Single Venous Flow</text>
-        </g>
-
-        <g transform="translate(125, 28)">
-          <rect width="95" height="60" rx="4" fill="rgba(105, 240, 174, 0.1)"/>
-          <text x="47" y="18" fill="#69F0AE" font-size="9.5" font-weight="bold" text-anchor="middle">Amphibia</text>
-          <text x="47" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">3 Chambers</text>
-          <text x="47" y="48" fill="#CBD5E1" font-size="7.5" text-anchor="middle">2 Atria + 1 Ventricle</text>
-          <text x="47" y="58" fill="#FFE082" font-size="7" text-anchor="middle">Incomplete Double</text>
-        </g>
-
-        <g transform="translate(235, 28)">
-          <rect width="95" height="60" rx="4" fill="rgba(255, 213, 79, 0.1)"/>
-          <text x="47" y="18" fill="#FFD54F" font-size="9.5" font-weight="bold" text-anchor="middle">Reptilia</text>
-          <text x="47" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">3.5 Chambers</text>
-          <text x="47" y="48" fill="#CBD5E1" font-size="7.5" text-anchor="middle">Incomplete Septum</text>
-          <text x="47" y="58" fill="#FF8A65" font-size="7" text-anchor="middle">Crocodile: 4 Chambers</text>
-        </g>
-
-        <g transform="translate(345, 28)">
-          <rect width="90" height="60" rx="4" fill="rgba(255, 61, 0, 0.1)"/>
-          <text x="45" y="18" fill="#FF3D00" font-size="9.5" font-weight="bold" text-anchor="middle">Aves &amp; Mammals</text>
-          <text x="45" y="34" fill="#FFFFFF" font-size="8.5" text-anchor="middle">4 Chambers</text>
-          <text x="45" y="48" fill="#CBD5E1" font-size="7.5" text-anchor="middle">2 Atria + 2 Ventricles</text>
-          <text x="45" y="58" fill="#69F0AE" font-size="7" text-anchor="middle">Complete Double</text>
-        </g>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 1.4: Subphyla of Chordata &amp; Comparative Architectural Matrix of Vertebrata Classes (Agnatha vs Gnathostomata &amp; Heart Evolution)
-  </div>
-</div>
 
 
   <!-- SECTION 2 -->
@@ -236,63 +137,7 @@ export const c11Zoo1HtmlOverview = `
     </p>
   </div>
 
-  <!-- NEW STANDALONE SVG CARD FOR J&K & LADAKH NATIONAL PARKS -->
   
-<div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-  <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 12px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 500px;">
-    <svg viewBox="0 0 500 280" style="width: 100%; max-width: 470px; height: auto; display: block;" xmlns="http://www.w3.org/2000/svg">
-      <rect width="500" height="280" rx="8" fill="#0F172A"/>
-
-      <!-- Title -->
-      <text x="250" y="26" fill="#FF3D00" font-size="14" font-weight="bold" text-anchor="middle">
-        National Parks of Jammu, Kashmir &amp; Ladakh: Flagship Species
-      </text>
-
-      <!-- 4 Parks Matrix -->
-      <g transform="translate(20, 42)">
-        <!-- Dachigam -->
-        <rect x="0" y="0" width="220" height="100" rx="6" fill="rgba(255, 61, 0, 0.12)" stroke="#FF3D00" stroke-width="1.2"/>
-        <text x="110" y="20" fill="#FF3D00" font-size="11" font-weight="bold" text-anchor="middle">1. Dachigam National Park</text>
-        <text x="110" y="36" fill="#FFFFFF" font-size="9" text-anchor="middle">Srinagar, Kashmir (141 km&sup2;)</text>
-        <text x="110" y="54" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">🌟 Hangul (Kashmir Stag)</text>
-        <text x="110" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle"><i>Cervus hanglu hanglu</i> (Critically Endangered)</text>
-        <text x="110" y="86" fill="#69F0AE" font-size="8" text-anchor="middle">Himalayan Black Bear, Musk Deer, Leopard</text>
-
-        <!-- Hemis -->
-        <rect x="240" y="0" width="220" height="100" rx="6" fill="rgba(38, 198, 218, 0.12)" stroke="#26C6DA" stroke-width="1.2"/>
-        <text x="350" y="20" fill="#26C6DA" font-size="11" font-weight="bold" text-anchor="middle">2. Hemis National Park</text>
-        <text x="350" y="36" fill="#FFFFFF" font-size="9" text-anchor="middle">Leh, Ladakh (4,400 km&sup2; - Largest in India)</text>
-        <text x="350" y="54" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">🌟 Snow Leopard (Shan)</text>
-        <text x="350" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle"><i>Panthera uncia</i> (Highest Density Globally)</text>
-        <text x="350" y="86" fill="#69F0AE" font-size="8" text-anchor="middle">Tibetan Wolf, Bharal (Blue Sheep), Ibex</text>
-      </g>
-
-      <!-- Row 2: Kishtwar & Kazinag -->
-      <g transform="translate(20, 154)">
-        <!-- Kishtwar -->
-        <rect x="0" y="0" width="220" height="105" rx="6" fill="rgba(255, 145, 0, 0.12)" stroke="#FF9100" stroke-width="1.2"/>
-        <text x="110" y="20" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">3. Kishtwar National Park</text>
-        <text x="110" y="36" fill="#FFFFFF" font-size="9" text-anchor="middle">Kishtwar District, Jammu (400 km&sup2;)</text>
-        <text x="110" y="54" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">🌟 Himalayan Musk Deer</text>
-        <text x="110" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle"><i>Moschus chrysogaster</i> &amp; Himalayan Tahr</text>
-        <text x="110" y="86" fill="#69F0AE" font-size="8" text-anchor="middle">Himalayan Snowcock, Brown Bear</text>
-        <text x="110" y="98" fill="#80DEEA" font-size="7.5" text-anchor="middle">High altitude coniferous alpine forests</text>
-
-        <!-- Kazinag -->
-        <rect x="240" y="0" width="220" height="105" rx="6" fill="rgba(224, 64, 251, 0.12)" stroke="#E040FB" stroke-width="1.2"/>
-        <text x="350" y="20" fill="#E040FB" font-size="11" font-weight="bold" text-anchor="middle">4. Kazinag National Park</text>
-        <text x="350" y="36" fill="#FFFFFF" font-size="9" text-anchor="middle">Baramulla District, Kashmir (LOC Border)</text>
-        <text x="350" y="54" fill="#FFE082" font-size="9.5" font-weight="bold" text-anchor="middle">🌟 Flare-horned Markhor</text>
-        <text x="350" y="70" fill="#CBD5E1" font-size="8.5" text-anchor="middle"><i>Capra falconeri cashmiriensis</i></text>
-        <text x="350" y="86" fill="#69F0AE" font-size="8" text-anchor="middle">Salim Ali NP: City Forest (Srinagar)</text>
-        <text x="350" y="98" fill="#80DEEA" font-size="7.5" text-anchor="middle">Rare avian sanctuary &amp; Kashmiri Serow</text>
-      </g>
-    </svg>
-  </div>
-  <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-    💡 Figure 1.5: Protected National Parks of Jammu, Kashmir &amp; Ladakh: Ecological Locations &amp; Flagship Endemic Wildlife Species
-  </div>
-</div>
 
 
   <!-- SECTION 3 -->
@@ -324,11 +169,7 @@ export const c11Zoo1HtmlOverview = `
     </p>
   </div>
 
-  <!-- PRESERVED IMAGE 4 (Biosphere Reserve Zonation) -->
-  <div style="text-align: center; margin: 32px 0;">
-  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4gPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIHJ4PSIxNiIgZmlsbD0iIzBCMEYxOSIgc3Ryb2tlPSIjMDBFNUZGIiBzdHJva2Utd2lkdGg9IjIiLz4gPHRleHQgeD0iNDAwIiB5PSIxODAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMwMEU1RkYiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCI+Wm9vbG9neSBEaWFncmFtIDQ8L3RleHQ+IDx0ZXh0IHg9IjQwMCIgeT0iMjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjQ0JENUUxIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiI+VmVjdG9yIEhpZ2gtRGVmaW5pdGlvbiBEaWFncmFtIDQ8L3RleHQ+IDwvc3ZnPg==" style="width: 100%; max-width: 860px; height: auto; border-radius: 14px; display: block; margin: 15px auto; box-shadow: 0 10px 32px rgba(255, 61, 0, 0.35); border: 2px solid #FF3D00;" alt="Biosphere Reserve Zonation Architecture" />
-  <p style="color: #FF3D00; font-size: 15px; margin-top: 12px; font-weight: bold;">Figure 1.6: Ultra-HD 3D Conservation Diagram - Biosphere Reserve Zonation Architecture &amp; Selected National Parks Reference</p>
-</div>
+  
 
   <!-- MASTER REVISION CHEAT SHEET -->
   <div style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(183, 28, 28, 0.85)); border: 2px solid #FF3D00; border-radius: 12px; padding: 20px; margin-top: 35px; box-shadow: 0 6px 25px rgba(0,0,0,0.4);">
@@ -410,11 +251,9 @@ export const c11Zoo1HtmlOverview = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
-export const c11Zoo1HtmlSolutions = `
-<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
+export const c11Zoo1HtmlSolutions = `<div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #F1F5F9; line-height: 1.7; font-size: 15px; padding: 4px 6px;">
 
   <!-- SECTION A -->
   <div style="background: linear-gradient(135deg, rgba(255, 61, 0, 0.15), rgba(216, 67, 21, 0.15)); border: 1.5px solid rgba(255, 61, 0, 0.4); border-radius: 12px; padding: 16px 20px; margin-bottom: 24px;">
@@ -1043,308 +882,307 @@ export const c11Zoo1HtmlSolutions = `
     </div>
   </div>
 
-</div>
-`;
+</div>`;
 
 export const c11Zoo1Mcqs = [
   {
     "id": "c11-zoo-1-mcq-1",
-    "question": "Which of the following phyla exhibits only a cellular grade of body organization without true tissues?",
+    "question": "Which of the following animal phyla is characterized by a purely Cellular Level of body organization?",
     "options": [
-      "A):   Cnidaria",
-      "B):   Porifera (Sponges)",
+      "A):   Porifera (Sponges)",
+      "B):   Cnidaria (Coelenterata)",
       "C):   Platyhelminthes",
       "D):   Ctenophora"
     ],
-    "correctAnswer": "b",
-    "explanation": "Poriferans are multicellular metazoans possessing loose cellular aggregates without true tissues."
+    "correctAnswer": "a",
+    "explanation": "Sponges (Phylum Porifera) exhibit a loose cellular aggregate body plan without true tissues."
   },
   {
     "id": "c11-zoo-1-mcq-2",
-    "question": "Radial symmetry is characteristically exhibited by adult forms of which phylum?",
+    "question": "In which animal phylum do we observe adults with Radial Symmetry while their free-swimming larvae exhibit Bilateral Symmetry?",
     "options": [
-      "A):   Annelida",
-      "B):   Arthropoda",
-      "C):   Echinodermata (Starfish)",
-      "D):   Mollusca"
+      "A):   Mollusca",
+      "B):   Echinodermata",
+      "C):   Annelida",
+      "D):   Arthropoda"
     ],
-    "correctAnswer": "c",
-    "explanation": "Adult echinoderms exhibit pentamerous radial symmetry, although their free-swimming larvae are bilaterally symmetrical."
+    "correctAnswer": "b",
+    "explanation": "Adult echinoderms (e.g., Starfish) are pentamerously radial, whereas their ciliated larvae (e.g., Bipinnaria) are bilateral."
   },
   {
     "id": "c11-zoo-1-mcq-3",
-    "question": "A true body cavity (coelom) completely lined by mesoderm on all sides is absent in:",
+    "question": "Animals possessing a 'Pseudocoelom' (where mesoderm exists as scattered pouches within the blastocoel) belong to:",
     "options": [
-      "A):   Annelida",
-      "B):   Platyhelminthes (Flatworms)",
-      "C):   Mollusca",
+      "A):   Platyhelminthes",
+      "B):   Annelida",
+      "C):   Aschelminthes (Roundworms)",
       "D):   Chordata"
     ],
-    "correctAnswer": "b",
-    "explanation": "Platyhelminthes are acoelomate; the space between body wall and gut is filled with parenchymatous mesenchyme."
+    "correctAnswer": "c",
+    "explanation": "Aschelminthes (Nematodes) possess a false body cavity or pseudocoelom not completely lined by mesodermal peritoneum."
   },
   {
     "id": "c11-zoo-1-mcq-4",
-    "question": "Pseudocoelomate body architecture with scattered mesodermal pouches is diagnostic of:",
+    "question": "Flagellated collar cells called 'Choanocytes' that line the spongocoel and radial canals are diagnostic of:",
     "options": [
-      "A):   Aschelminthes (Roundworms)",
-      "B):   Porifera",
-      "C):   Annelida",
-      "D):   Cnidaria"
+      "A):   Cnidarians",
+      "B):   Ctenophores",
+      "C):   Echinoderms",
+      "D):   Sponges (Porifera)"
     ],
-    "correctAnswer": "a",
-    "explanation": "Aschelminthes (nematodes like Ascaris) possess a pseudocoel derived from embryonic blastocoel."
+    "correctAnswer": "d",
+    "explanation": "Choanocytes (collar cells) maintain water flow through ostia into the spongocoel for filter feeding in Porifera."
   },
   {
     "id": "c11-zoo-1-mcq-5",
-    "question": "Choanocytes (collar cells) lining the central spongocoel and canals are unique to:",
+    "question": "Stinging capsules called 'Cnidocytes' containing poisonous nematocysts are specialized structures used for offense and defense in:",
     "options": [
-      "A):   Cnidaria",
+      "A):   Cnidaria (Coelenterata)",
       "B):   Porifera",
-      "C):   Ctenophora",
-      "D):   Platyhelminthes"
+      "C):   Platyhelminthes",
+      "D):   Ctenophora"
     ],
-    "correctAnswer": "b",
-    "explanation": "Choanocytes are flagellated collar cells characteristic of sponges that maintain inward water currents."
+    "correctAnswer": "a",
+    "explanation": "Cnidocytes (stinging cells) with nematocysts are the hallmark diagnostic feature of Phylum Cnidaria."
   },
   {
     "id": "c11-zoo-1-mcq-6",
-    "question": "Metagenesis, the alternation between asexual polyp and sexual medusa generations, is seen in:",
+    "question": "The presence of 8 external rows of ciliated comb plates used for locomotion and pronounced bioluminescence is characteristic of:",
     "options": [
-      "A):   Hydra",
-      "B):   Obelia",
-      "C):   Planaria",
-      "D):   Ascaris"
+      "A):   Porifera",
+      "B):   Ctenophora (Comb Jellies)",
+      "C):   Mollusca",
+      "D):   Echinodermata"
     ],
     "correctAnswer": "b",
-    "explanation": "Obelia exhibits true metagenesis where polyps bud medusae asexually, and medusae produce polyps sexually."
+    "explanation": "Ctenophores (e.g., Pleurobrachia) possess 8 ciliated comb plates and emit living biological light (bioluminescence)."
   },
   {
     "id": "c11-zoo-1-mcq-7",
-    "question": "Flame cells (protonephridia) function as excretory and osmoregulatory structures in:",
+    "question": "Specialized excretory and osmoregulatory cells known as 'Flame Cells' (Protonephridia) are found in:",
     "options": [
-      "A):   Sponges",
-      "B):   Platyhelminthes (Flatworms)",
-      "C):   Earthworms",
-      "D):   Insects"
+      "A):   Annelids",
+      "B):   Arthropods",
+      "C):   Platyhelminthes (Flatworms)",
+      "D):   Molluscs"
     ],
-    "correctAnswer": "b",
-    "explanation": "Flame cells regulate ionic balance and excrete wastes in flatworms like Planaria and Fasciola."
+    "correctAnswer": "c",
+    "explanation": "Flatworms (Phylum Platyhelminthes) possess flame cells (solenocytes/protonephridia) for osmoregulation and excretion."
   },
   {
     "id": "c11-zoo-1-mcq-8",
-    "question": "The largest phylum in the Animal Kingdom, comprising over 80% of all described species, is:",
+    "question": "Which of the following is the LARGEST phylum of the animal kingdom, comprising more than two-thirds of all named animal species?",
     "options": [
       "A):   Mollusca",
-      "B):   Arthropoda",
+      "B):   Annelida",
       "C):   Chordata",
-      "D):   Annelida"
+      "D):   Arthropoda"
     ],
-    "correctAnswer": "b",
-    "explanation": "Arthropoda is the largest phylum, characterized by jointed appendages and a tough chitinous exoskeleton."
+    "correctAnswer": "d",
+    "explanation": "Phylum Arthropoda is the largest phylum, characterized by chitinous exoskeletons and jointed appendages."
   },
   {
     "id": "c11-zoo-1-mcq-9",
-    "question": "Malpighian tubules serve as the primary excretory organs in:",
+    "question": "The file-like rasping organ used for feeding found in the mouth of most molluscs is called the:",
     "options": [
-      "A):   Annelids",
-      "B):   Insects (Cockroach)",
-      "C):   Molluscs",
-      "D):   Fishes"
+      "A):   Radula",
+      "B):   Choanocyte",
+      "C):   Parapodium",
+      "D):   Statocyst"
     ],
-    "correctAnswer": "b",
-    "explanation": "In terrestrial arthropods (insects), Malpighian tubules extract uric acid from haemolymph."
+    "correctAnswer": "a",
+    "explanation": "The radula is a chitinous ribbon armed with microscopic transverse teeth used by molluscs to scrape food."
   },
   {
     "id": "c11-zoo-1-mcq-10",
-    "question": "A chitinous rasping, tongue-like feeding organ called a Radula is found in:",
+    "question": "The Water Vascular System (Ambulacral System) operating tube feet for locomotion, food capture, and respiration is unique to:",
     "options": [
-      "A):   Arthropoda",
-      "B):   Mollusca",
-      "C):   Echinodermata",
-      "D):   Annelida"
+      "A):   Mollusca",
+      "B):   Echinodermata",
+      "C):   Hemichordata",
+      "D):   Porifera"
     ],
     "correctAnswer": "b",
-    "explanation": "Phylum Mollusca possesses a radula bearing rows of recurved chitinous teeth for scraping food."
+    "explanation": "Echinoderms possess a hydraulic water vascular system derived from coelom terminating in contractile tube feet (podia)."
   },
   {
     "id": "c11-zoo-1-mcq-11",
-    "question": "The Water Vascular System (Ambulacral System) utilizing tube feet for locomotion is unique to:",
+    "question": "In which subphylum of Chordata does the notochord persist throughout life, extending from the tip of the head to the tail?",
     "options": [
-      "A):   Porifera",
-      "B):   Echinodermata",
-      "C):   Hemichordata",
-      "D):   Mollusca"
+      "A):   Urochordata (Tunicata)",
+      "B):   Vertebrata",
+      "C):   Cephalochordata (e.g., Branchiostoma / Amphioxus)",
+      "D):   Hemichordata"
     ],
-    "correctAnswer": "b",
-    "explanation": "Echinoderms uniquely possess a hydraulic water vascular system ending in contractile tube feet."
+    "correctAnswer": "c",
+    "explanation": "In Cephalochordata (Amphioxus), the rod-like notochord extends along the entire length from rostrum to tail throughout life."
   },
   {
     "id": "c11-zoo-1-mcq-12",
-    "question": "Which of the following is NOT one of the four primary diagnostic features of Phylum Chordata?",
+    "question": "Cartilaginous fishes (Class Chondrichthyes) are distinguished from bony fishes (Class Osteichthyes) by having:",
     "options": [
-      "A):   Notochord",
-      "B):   Dorsal hollow tubular nerve cord",
-      "C):   Ventral nerve cord with paired ganglia",
-      "D):   Pharyngeal gill slits"
+      "A):   Cycloid scales and operculum",
+      "B):   Placoid scales, ventral mouth, and absence of an operculum",
+      "C):   Terminal mouth and swim bladder",
+      "D):   External fertilization and pneumatic bones"
     ],
-    "correctAnswer": "c",
-    "explanation": "Chordates possess a DORSAL hollow nerve cord; a ventral solid nerve cord is a non-chordate hallmark."
+    "correctAnswer": "b",
+    "explanation": "Chondrichthyes (sharks, rays) possess placoid denticles, ventral mouths, exposed gill slits without opercula, and pelvic claspers in males."
   },
   {
     "id": "c11-zoo-1-mcq-13",
-    "question": "In Urochordata (Tunicata), the notochord is present:",
+    "question": "Which of the following reptiles uniquely possesses a completely divided, FOUR-chambered heart (two atria and two ventricles)?",
     "options": [
-      "A):   Throughout life from head to tail",
-      "B):   Only in the larval tail",
-      "C):   Only in adult stage",
-      "D):   Never present"
+      "A):   Calotes (Garden lizard)",
+      "B):   Naja (Cobra)",
+      "C):   Crocodile (Crocodilus)",
+      "D):   Chelone (Turtle)"
     ],
-    "correctAnswer": "b",
-    "explanation": "In urochordates (e.g., Ascidia), the notochord is restricted to the larval tail and lost during metamorphosis."
+    "correctAnswer": "c",
+    "explanation": "Crocodilians are the only living reptiles with an anatomically complete 4-chambered heart separating systemic and pulmonary circuits."
   },
   {
     "id": "c11-zoo-1-mcq-14",
-    "question": "Cartilaginous fishes (Chondrichthyes) differ from bony fishes (Osteichthyes) in having:",
+    "question": "Pneumatic bones with internal air cavities, wishbone (furcula), and lack of a urinary bladder are flight adaptations characteristic of:",
     "options": [
-      "A):   A bony operculum over gill slits",
-      "B):   Placoid scales and absence of an air bladder",
-      "C):   Cycloid scales",
-      "D):   Terminal mouth"
+      "A):   Mammals",
+      "B):   Reptiles",
+      "C):   Amphibians",
+      "D):   Birds (Class Aves)"
     ],
-    "correctAnswer": "b",
-    "explanation": "Chondrichthyes have placoid scales, separate gill slits without opercula, and lack swim bladders."
+    "correctAnswer": "d",
+    "explanation": "Class Aves possesses lightweight pneumatic bones connected to respiratory air sacs to reduce body weight for flight."
   },
   {
     "id": "c11-zoo-1-mcq-15",
-    "question": "Which of the following reptiles possesses a completely divided four-chambered heart?",
+    "question": "Dachigam National Park near Srinagar was named 'Dachigam' (meaning 'Ten Villages') because:",
     "options": [
-      "A):   Chameleon",
-      "B):   Crocodile",
-      "C):   Viper snake",
-      "D):   Tortoise"
+      "A):   Ten villages were relocated in 1910 to create a protected royal catchment for Dal Lake",
+      "B):   It is situated across ten hill summits",
+      "C):   It protects ten species of endangered deer",
+      "D):   It was established by ten village councils"
     ],
-    "correctAnswer": "b",
-    "explanation": "Crocodiles uniquely possess a 4-chambered heart (2 atria and 2 ventricles), unlike 3-chambered lizards/snakes."
+    "correctAnswer": "a",
+    "explanation": "The Maharaja of Kashmir relocated ten villages from the valley in 1910 to safeguard Srinagar's clean drinking water supply."
   },
   {
     "id": "c11-zoo-1-mcq-16",
-    "question": "Pneumatic, air-filled hollow bones that reduce body weight for aerial flight are characteristic of:",
+    "question": "The critically endangered flagship mammal conserved primarily in Dachigam National Park is the:",
     "options": [
-      "A):   Amphibia",
-      "B):   Reptilia",
-      "C):   Aves (Birds)",
-      "D):   Mammalia"
+      "A):   Snow Leopard",
+      "B):   Kashmir Stag or Hangul (Cervus hanglu hanglu)",
+      "C):   Markhor",
+      "D):   Chiru (Tibetan Antelope)"
     ],
-    "correctAnswer": "c",
-    "explanation": "Birds possess pneumatic light bones connected to air sacs to minimize mass for flight."
+    "correctAnswer": "b",
+    "explanation": "Hangul (Cervus hanglu hanglu) is an IUCN Critically Endangered deer endemic to Kashmir, primarily found in Dachigam."
   },
   {
     "id": "c11-zoo-1-mcq-17",
-    "question": "The flagship endangered mammal conserved in Dachigam National Park is:",
+    "question": "The endangered Himalayan Musk Deer (Moschus chrysogaster) and Himalayan Snowcock are prominently protected in:",
     "options": [
-      "A):   Tiger",
-      "B):   Hangul (Kashmir Stag)",
-      "C):   One-horned Rhinoceros",
-      "D):   Lion-tailed Macaque"
+      "A):   Salim Ali National Park",
+      "B):   Jim Corbett National Park",
+      "C):   Kishtwar National Park",
+      "D):   Sundarbans National Park"
     ],
-    "correctAnswer": "b",
-    "explanation": "Dachigam National Park in Srinagar shelters the world's last viable population of the Kashmir Stag (Hangul)."
+    "correctAnswer": "c",
+    "explanation": "Kishtwar National Park in Jammu province features steep glacial terrain harboring the endangered Himalayan Musk Deer."
   },
   {
     "id": "c11-zoo-1-mcq-18",
-    "question": "The name 'Dachigam' literally translates in Kashmiri to:",
+    "question": "Kazinag National Park in Baramulla district along the Line of Control is globally renowned for the conservation of:",
     "options": [
-      "A):   Deep Valley",
-      "B):   Ten Villages",
-      "C):   High Mountain",
-      "D):   Royal Forest"
+      "A):   Flare-horned Markhor (Capra falconeri cashmiriensis)",
+      "B):   Bengal Tiger",
+      "C):   One-horned Rhinoceros",
+      "D):   Great Indian Bustard"
     ],
-    "correctAnswer": "b",
-    "explanation": "Dachigam means 'Ten Villages', honoring the 10 villages relocated in 1910 to create the protected catchment."
+    "correctAnswer": "a",
+    "explanation": "Kazinag National Park was established to protect the endangered Markhor, the world's largest wild goat with spiral horns."
   },
   {
     "id": "c11-zoo-1-mcq-19",
-    "question": "The largest National Park in India by geographical land area is:",
+    "question": "Which National Park in Ladakh is the LARGEST national park in India and globally famed as the 'Snow Leopard Capital'?",
     "options": [
-      "A):   Jim Corbett National Park",
-      "B):   Hemis High Altitude National Park (Ladakh)",
-      "C):   Kaziranga National Park",
-      "D):   Gir National Park"
+      "A):   Dachigam National Park",
+      "B):   Kazinag National Park",
+      "C):   Hemis National Park",
+      "D):   Salim Ali National Park"
     ],
-    "correctAnswer": "b",
-    "explanation": "Hemis National Park in Ladakh spans an enormous 4,400 km&sup2;, making it India's largest national park."
+    "correctAnswer": "c",
+    "explanation": "Hemis National Park (4,400 km²) in Ladakh is India's largest national park, housing the highest density of wild Snow Leopards."
   },
   {
     "id": "c11-zoo-1-mcq-20",
-    "question": "Hemis National Park is internationally renowned for having the world's highest density of:",
+    "question": "Salim Ali National Park (City Forest National Park), known for its diverse avian fauna and Kashmiri Serow, is situated in:",
     "options": [
-      "A):   Royal Bengal Tiger",
-      "B):   Snow Leopard (Panthera uncia)",
-      "C):   Asiatic Wild Ass",
-      "D):   Tibetan Antelope (Chiru)"
+      "A):   Leh",
+      "B):   Jammu",
+      "C):   Kishtwar",
+      "D):   Srinagar"
     ],
-    "correctAnswer": "b",
-    "explanation": "Hemis is globally celebrated as the Snow Leopard Capital, sheltering ~200 wild snow leopards."
+    "correctAnswer": "d",
+    "explanation": "Salim Ali National Park is situated in Srinagar city, named in honor of the renowned Indian ornithologist Dr. Salim Ali."
   },
   {
     "id": "c11-zoo-1-mcq-21",
-    "question": "Kazinag National Park in Baramulla district was established primarily to conserve the majestic:",
+    "question": "What is the primary legal difference between a National Park and a Wildlife Sanctuary?",
     "options": [
-      "A):   Flare-horned Markhor (Capra falconeri)",
-      "B):   Red Panda",
-      "C):   Golden Langur",
-      "D):   Gharial"
+      "A):   Human settlements, cattle grazing, and resource exploitation are strictly prohibited in National Parks",
+      "B):   National Parks allow private ownership of land",
+      "C):   Sanctuaries are created solely by international treaties",
+      "D):   National Parks protect only single endangered species"
     ],
     "correctAnswer": "a",
-    "explanation": "Kazinag National Park protects the endangered Flare-horned Markhor, the largest wild goat on Earth."
+    "explanation": "National Parks have statutory inviolate boundaries with zero private rights or grazing; Sanctuaries allow limited sustainable rights."
   },
   {
     "id": "c11-zoo-1-mcq-22",
-    "question": "The endangered Himalayan Musk Deer (Moschus chrysogaster) is a primary flagship species in:",
+    "question": "In a UNESCO Biosphere Reserve, the strictly protected, legally inviolate inner zone where no human activity is permitted is the:",
     "options": [
-      "A):   Kishtwar National Park",
-      "B):   Ranthambore National Park",
-      "C):   Bandipur National Park",
-      "D):   Sundarbans"
+      "A):   Buffer Zone",
+      "B):   Core Zone",
+      "C):   Transition Zone",
+      "D):   Cooperation Area"
     ],
-    "correctAnswer": "a",
-    "explanation": "Kishtwar National Park in Jammu division is a crucial high-altitude sanctuary for the Himalayan Musk Deer."
+    "correctAnswer": "b",
+    "explanation": "The Core Zone is strictly protected and non-manipulative, dedicated exclusively to conserving pristine ecosystems and wildlife."
   },
   {
     "id": "c11-zoo-1-mcq-23",
-    "question": "In a UNESCO Biosphere Reserve, human settlements and traditional agriculture are permitted in the:",
+    "question": "UNESCO's global framework for establishing Biosphere Reserves is known as the:",
     "options": [
-      "A):   Core Zone",
-      "B):   Buffer Zone",
-      "C):   Transition Zone (Area of Cooperation)",
-      "D):   Inviolate Sanctum"
+      "A):   CITES Program",
+      "B):   RAMSAR Convention",
+      "C):   Man and the Biosphere (MAB) Program",
+      "D):   IUCN Red Data Program"
     ],
     "correctAnswer": "c",
-    "explanation": "The outermost Transition Zone accommodates local settlements, sustainable farming, and economic activities."
+    "explanation": "UNESCO launched the Man and the Biosphere (MAB) Program in 1971 to promote sustainable socio-ecological conservation."
   },
   {
     "id": "c11-zoo-1-mcq-24",
-    "question": "Which of the following activities is strictly prohibited by law within a National Park?",
+    "question": "Which zone of a Biosphere Reserve accommodates controlled educational visits, limited research, and regulated low-impact ecotourism?",
     "options": [
-      "A):   Scientific observation",
-      "B):   Commercial timber harvesting and cattle grazing",
-      "C):   Ecological census",
-      "D):   Wildlife photography"
+      "A):   Core Zone",
+      "B):   Agricultural Zone",
+      "C):   Urban settlement zone",
+      "D):   Buffer Zone"
     ],
-    "correctAnswer": "b",
-    "explanation": "Under the Wildlife Protection Act, 1972, cattle grazing and commercial resource extraction are totally prohibited."
+    "correctAnswer": "d",
+    "explanation": "The Buffer Zone surrounds the core zone, permitting controlled educational activities, scientific research, and ecotourism."
   },
   {
     "id": "c11-zoo-1-mcq-25",
-    "question": "UNESCO's Man and the Biosphere (MAB) Program was launched in the year:",
+    "question": "The outermost peripheral area of a Biosphere Reserve where local human communities engage in sustainable agriculture and living is the:",
     "options": [
-      "A):   1961",
-      "B):   1971",
-      "C):   1986",
-      "D):   1992"
+      "A):   Transition Zone (Area of Cooperation)",
+      "B):   Core Zone",
+      "C):   Inviolate Sanctuary Zone",
+      "D):   Buffer Zone"
     ],
-    "correctAnswer": "b",
-    "explanation": "The Man and the Biosphere (MAB) program was initiated by UNESCO in 1971 to promote biosphere reserves."
+    "correctAnswer": "a",
+    "explanation": "The Transition Zone (Area of Cooperation) allows sustainable agricultural, forestry, and human settlements in harmony with conservation."
   }
 ];
