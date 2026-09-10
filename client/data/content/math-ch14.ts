@@ -289,7 +289,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         <div class="step"><strong>Sure Event:</strong> An event that is certain to happen. P(E) = 1.</div>
         <div class="step"><strong>Impossible Event:</strong> An event that cannot happen. P(E) = 0.</div>
         <div class="step"><strong>Elementary Event:</strong> An event having only one outcome.</div>
-        <div class="step"><strong>Complementary Event:</strong> The event 'not E', denoted by Ē. P(E) + P(Ē) = 1.
+        <div class="step"><strong>Complementary Event:</strong> The event 'not E', denoted by E<sub>avg</sub>. P(E) + P(E<sub>avg</sub>) = 1.
         </div>
     </div>
 

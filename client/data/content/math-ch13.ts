@@ -16,7 +16,7 @@ export const mathCh13: ChapterContent = {
         "Cumulative frequency (cf) is essential for calculating the Median of grouped data."
     ],
     formulas: [
-        { name: "Direct Mean", formula: "x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)" },
+        { name: "Direct Mean", formula: "x = (Σ fᵢxᵢ) / (Σ fᵢ)" },
         { name: "Mode (Grouped)", formula: "l + [(f₁ - f₀) / (2f₁ - f₀ - f₂)] × h" },
         { name: "Median (Grouped)", formula: "l + [(n/2 - cf) / f] × h" }
     ],
@@ -80,7 +80,7 @@ export const mathCh13: ChapterContent = {
 		},
 		{
 				"id": "mcq5",
-				"question": "<span style=\"font-weight: normal;\">In the formula x̄ = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>",
+				"question": "<span style=\"font-weight: normal;\">In the formula x = a + (Σfᵢuᵢ/Σfᵢ) × h, uᵢ is:</span>",
 				"options": [
 						"xᵢ - a",
 						"(xᵢ - a) / h",
@@ -282,11 +282,11 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
         <div class="section-title">2. Mean of Grouped Data</div>
         <div class="formula-box">
             <strong>Direct Method:</strong><br>
-            x̄ = (Σ fᵢxᵢ) / (Σ fᵢ)<br><br>
+            x = (Σ fᵢxᵢ) / (Σ fᵢ)<br><br>
             <strong>Assumed Mean Method:</strong><br>
-            x̄ = a + (Σ fᵢdᵢ) / (Σ fᵢ), where dᵢ = xᵢ - a<br><br>
+            x = a + (Σ fᵢdᵢ) / (Σ fᵢ), where dᵢ = xᵢ - a<br><br>
             <strong>Step-Deviation Method:</strong><br>
-            x̄ = a + [(Σ fᵢuᵢ) / (Σ fᵢ)] × h, where uᵢ = (xᵢ - a)/h
+            x = a + [(Σ fᵢuᵢ) / (Σ fᵢ)] × h, where uᵢ = (xᵢ - a)/h
         </div>
     </div>
 
@@ -516,7 +516,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
                 <th>162</th>
             </tr>
         </table>
-        <div class="step">Mean x̄ = Σfixi / Σfi = 162 / 20 = 8.1.</div>
+        <div class="step">Mean x = Σfixi / Σfi = 162 / 20 = 8.1.</div>
         <div class="final-answer">Mean = 8.1 plants.</div>
     </div>
 
@@ -584,7 +584,7 @@ img { float: right; margin-left: 20px; margin-bottom: 15px; max-width: 280px; he
                 <th>-12</th>
             </tr>
         </table>
-        <div class="step">Mean x̄ = a + (Σfiui / Σfi) × h</div>
+        <div class="step">Mean x = a + (Σfiui / Σfi) × h</div>
         <div class="step">= 550 + (-12/50) × 20</div>
         <div class="step">= 550 - 4.8 = 545.2.</div>
         <div class="final-answer">Mean Daily Wages = ₹ 545.20.</div>
