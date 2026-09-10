@@ -44,7 +44,6 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
     <ThemedView style={styles.container}>
       {__DEV__ ? (
         <Pressable
-          delayPressIn={0}
           onPress={() => setIsModalVisible(true)}
           style={({ pressed }) => [
             styles.topButton,
@@ -68,7 +67,6 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
         </ThemedText>
 
         <Pressable
-          delayPressIn={0}
           onPress={handleRestart}
           style={({ pressed }) => [
             styles.button,
@@ -102,7 +100,6 @@ export function ErrorFallback({ error, resetError }: ErrorFallbackProps) {
                   Error Details
                 </ThemedText>
                 <Pressable
-                  delayPressIn={0}
                   onPress={() => setIsModalVisible(false)}
                   style={({ pressed }) => [
                     styles.closeButton,

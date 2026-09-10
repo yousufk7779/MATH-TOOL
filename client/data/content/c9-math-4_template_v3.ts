@@ -1,6 +1,4 @@
-import { ChapterContent } from "../types";
-
-export const c9Math4: ChapterContent = {
+export const c9Math4: any = {
   id: "c9-math-4",
   number: 4,
   title: "Coordinate Geometry",

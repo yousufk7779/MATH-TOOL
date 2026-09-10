@@ -48,7 +48,6 @@ export const NavigationButtons = memo(function NavigationButtons({
     <View style={styles.container}>
       <Pressable
         testID="button-back"
-        delayPressIn={0}
         style={({ pressed }) => [
           styles.buttonContainer,
           pressed && styles.cardPressed,
@@ -89,7 +88,6 @@ export const NavigationButtons = memo(function NavigationButtons({
       {!hideHomeButton && (
         <Pressable
           testID="button-home"
-          delayPressIn={0}
           style={({ pressed }) => [
             styles.buttonContainer,
             pressed && styles.cardPressed,

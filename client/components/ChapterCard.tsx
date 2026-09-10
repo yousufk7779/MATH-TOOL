@@ -59,7 +59,6 @@ export const ChapterCard = memo(function ChapterCard({
   return (
     <Pressable
       testID={testID}
-      delayPressIn={0}
       onPress={isAvailable ? handlePress : undefined}
       onPressIn={isAvailable ? handlePressIn : undefined}
       onPressOut={isAvailable ? handlePressOut : undefined}

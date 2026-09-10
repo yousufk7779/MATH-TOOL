@@ -63,7 +63,6 @@ export const ColorButton = memo(function ColorButton({
   return (
     <Pressable
       testID={testID}
-      delayPressIn={0}
       onPress={handlePress}
       onPressIn={handlePressIn}
       onPressOut={handlePressOut}

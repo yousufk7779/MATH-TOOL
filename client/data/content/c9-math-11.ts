@@ -2,10 +2,10 @@ import { ChapterContent } from "../chapterContent";
 
 export const c9Math11: ChapterContent = {
   id: "c9-math-11",
-  chapterNumber: 11,
+  number: 11,
   title: "Statistics",
-  subject: "Mathematics",
-  class: "9th",
+  introduction:
+    "In this chapter, we explore the collection, presentation, analysis, and interpretation of numerical data.",
   exercises: [
     { id: "ex11.1", name: "Exercise 11.1", questions: [] },
     { id: "ex11.2", name: "Exercise 11.2", questions: [] },
