@@ -20,6 +20,7 @@ interface ColorButtonProps {
   style?: ViewStyle;
   testID?: string;
   glow?: boolean;
+  borderColor?: string;
 }
 
 export const ColorButton = memo(function ColorButton({
@@ -31,6 +32,7 @@ export const ColorButton = memo(function ColorButton({
   style,
   testID,
   glow = true,
+  borderColor,
 }: ColorButtonProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -82,7 +84,12 @@ export const ColorButton = memo(function ColorButton({
         style,
       ]}
     >
-      <View style={styles.buttonWrapper}>
+      <View
+        style={[
+          styles.buttonWrapper,
+          borderColor ? { borderWidth: 1.5, borderColor } : null,
+        ]}
+      >
         <LinearGradient
           colors={backgroundColors}
           start={{ x: 0.5, y: 0 }}
@@ -95,7 +102,9 @@ export const ColorButton = memo(function ColorButton({
               {
                 borderColor: isGlossy
                   ? "rgba(255,255,255,0.8)"
-                  : "rgba(255,255,255,0.3)",
+                  : borderColor
+                    ? borderColor
+                    : "rgba(255,255,255,0.3)",
               },
             ]}
           >
