@@ -21,8 +21,6 @@ type ClassSelectorNavigationProp = NativeStackNavigationProp<
   "ClassSelector"
 >;
 
-const GOLDEN_BORDER = "rgba(255, 215, 0, 0.65)";
-
 function ClassSelectorScreen() {
   const navigation = useNavigation<ClassSelectorNavigationProp>();
 
@@ -66,7 +64,6 @@ function ClassSelectorScreen() {
               testID="button-class-12"
               title="Class 12"
               colors={["#6A11CB", "#2575FC"]}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Class12")}
             />
           </View>
@@ -76,7 +73,6 @@ function ClassSelectorScreen() {
               testID="button-class-11"
               title="Class 11"
               colors={["#FF512F", "#DD2476"]}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Class11")}
             />
           </View>
@@ -86,7 +82,6 @@ function ClassSelectorScreen() {
               testID="button-class-10"
               title="Class 10"
               colors={JiguuColors.gradients.blue}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Home")}
             />
           </View>
@@ -96,7 +91,6 @@ function ClassSelectorScreen() {
               testID="button-class-9"
               title="Class 9"
               colors={JiguuColors.gradients.purple}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Class9")}
             />
           </View>
@@ -106,7 +100,6 @@ function ClassSelectorScreen() {
               testID="button-class-8"
               title="Class 8"
               colors={JiguuColors.gradients.pink}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Class8")}
             />
           </View>
@@ -116,7 +109,6 @@ function ClassSelectorScreen() {
               testID="button-class-7"
               title="Class 7"
               colors={JiguuColors.gradients.green}
-              borderColor={GOLDEN_BORDER}
               onPress={() => navigation.navigate("Class7")}
             />
           </View>
