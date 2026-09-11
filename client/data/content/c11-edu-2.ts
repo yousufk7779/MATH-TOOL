@@ -112,33 +112,32 @@ export const c11Edu2HtmlOverview = `
 
   <!-- STANDALONE DIAGRAM 1: SIGNIFICANCE OF AIMS FLOWCHART -->
   <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 198, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-    <div style="display: flex; justify-content: center; align-items: center; background: #0B132B; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 440px;">
+    <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.2); margin: 0 auto; max-width: 440px;">
       <svg viewBox="0 0 380 230" style="width: 100%; max-width: 400px; height: auto;" xmlns="http://www.w3.org/2000/svg">
-        <!-- Central Aim Circle -->
-        <circle cx="190" cy="115" r="48" fill="#1E293B" stroke="#00C6FF" stroke-width="3" />
-        <text x="190" y="108" fill="#00C6FF" font-size="12" font-weight="bold" text-anchor="middle">CENTRAL</text>
-        <text x="190" y="125" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">AIMS</text>
+        <!-- Central Hub -->
+        <circle cx="190" cy="115" r="46" fill="#00C6FF" stroke="#0284C7" stroke-width="2.5" />
+        <text x="190" y="110" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">EDUCATIONAL</text>
+        <text x="190" y="126" fill="#FFFFFF" font-size="13" font-weight="bold" text-anchor="middle">AIMS</text>
         
-        <!-- Satellite Nodes -->
         <!-- Top: Curriculum -->
-        <rect x="120" y="10" width="140" height="32" rx="6" fill="#1E293B" stroke="#66BB6A" stroke-width="2" />
-        <text x="190" y="31" fill="#66BB6A" font-size="12" font-weight="bold" text-anchor="middle">Determines Curriculum</text>
-        <line x1="190" y1="42" x2="190" y2="67" stroke="#66BB6A" stroke-width="2" stroke-dasharray="3 3" />
+        <rect x="120" y="12" width="140" height="32" rx="6" fill="#F0FDF4" stroke="#16A34A" stroke-width="2" />
+        <text x="190" y="33" fill="#15803D" font-size="12" font-weight="bold" text-anchor="middle">Determines Curriculum</text>
+        <line x1="190" y1="44" x2="190" y2="69" stroke="#0F172A" stroke-width="1.8" stroke-dasharray="3 3" />
 
         <!-- Right: Methods -->
-        <rect x="250" y="100" width="120" height="32" rx="6" fill="#1E293B" stroke="#FF9100" stroke-width="2" />
-        <text x="310" y="121" fill="#FF9100" font-size="11" font-weight="bold" text-anchor="middle">Guides Methods</text>
-        <line x1="238" y1="115" x2="250" y2="115" stroke="#FF9100" stroke-width="2" stroke-dasharray="3 3" />
+        <rect x="250" y="99" width="120" height="32" rx="6" fill="#FFF7ED" stroke="#EA580C" stroke-width="2" />
+        <text x="310" y="120" fill="#C2410C" font-size="11" font-weight="bold" text-anchor="middle">Guides Methods</text>
+        <line x1="236" y1="115" x2="250" y2="115" stroke="#0F172A" stroke-width="1.8" stroke-dasharray="3 3" />
 
         <!-- Bottom: Evaluation -->
-        <rect x="120" y="185" width="140" height="32" rx="6" fill="#1E293B" stroke="#E040FB" stroke-width="2" />
-        <text x="190" y="206" fill="#E040FB" font-size="12" font-weight="bold" text-anchor="middle">Sets Evaluation</text>
-        <line x1="190" y1="163" x2="190" y2="185" stroke="#E040FB" stroke-width="2" stroke-dasharray="3 3" />
+        <rect x="120" y="185" width="140" height="32" rx="6" fill="#FAF5FF" stroke="#9333EA" stroke-width="2" />
+        <text x="190" y="206" fill="#7E22CE" font-size="12" font-weight="bold" text-anchor="middle">Sets Evaluation</text>
+        <line x1="190" y1="161" x2="190" y2="185" stroke="#0F172A" stroke-width="1.8" stroke-dasharray="3 3" />
 
         <!-- Left: Direction -->
-        <rect x="10" y="100" width="120" height="32" rx="6" fill="#1E293B" stroke="#FF5252" stroke-width="2" />
-        <text x="70" y="121" fill="#FF5252" font-size="11" font-weight="bold" text-anchor="middle">Gives Direction</text>
-        <line x1="130" y1="115" x2="142" y2="115" stroke="#FF5252" stroke-width="2" stroke-dasharray="3 3" />
+        <rect x="10" y="99" width="120" height="32" rx="6" fill="#FFF1F2" stroke="#E11D48" stroke-width="2" />
+        <text x="70" y="120" fill="#BE123C" font-size="11" font-weight="bold" text-anchor="middle">Gives Direction</text>
+        <line x1="130" y1="115" x2="144" y2="115" stroke="#0F172A" stroke-width="1.8" stroke-dasharray="3 3" />
       </svg>
     </div>
     <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
@@ -216,22 +215,22 @@ export const c11Edu2HtmlOverview = `
 
   <!-- STANDALONE DIAGRAM 2: SYNTHESIS MATRIX -->
   <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(0, 198, 255, 0.4); border-radius: 10px; padding: 14px 16px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-    <div style="display: flex; justify-content: center; align-items: center; background: #0B132B; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 440px;">
+    <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.2); margin: 0 auto; max-width: 440px;">
       <svg viewBox="0 0 380 200" style="width: 100%; max-width: 400px; height: auto;" xmlns="http://www.w3.org/2000/svg">
         <!-- Individual Circle -->
-        <circle cx="130" cy="100" r="65" fill="rgba(0, 198, 255, 0.2)" stroke="#00C6FF" stroke-width="2.5" />
-        <text x="90" y="95" fill="#00C6FF" font-size="12" font-weight="bold" text-anchor="middle">INDIVIDUAL</text>
-        <text x="90" y="112" fill="#FFFFFF" font-size="10" text-anchor="middle">Self-Realization</text>
+        <circle cx="130" cy="100" r="65" fill="rgba(0, 198, 255, 0.15)" stroke="#0284C7" stroke-width="2.5" />
+        <text x="90" y="93" fill="#0369A1" font-size="12" font-weight="bold" text-anchor="middle">INDIVIDUAL</text>
+        <text x="90" y="110" fill="#334155" font-size="10" font-weight="bold" text-anchor="middle">Self-Realization</text>
 
         <!-- Social Circle -->
-        <circle cx="250" cy="100" r="65" fill="rgba(102, 187, 106, 0.2)" stroke="#66BB6A" stroke-width="2.5" />
-        <text x="290" y="95" fill="#66BB6A" font-size="12" font-weight="bold" text-anchor="middle">SOCIAL</text>
-        <text x="290" y="112" fill="#FFFFFF" font-size="10" text-anchor="middle">Social Welfare</text>
+        <circle cx="250" cy="100" r="65" fill="rgba(34, 197, 94, 0.15)" stroke="#16A34A" stroke-width="2.5" />
+        <text x="290" y="93" fill="#15803D" font-size="12" font-weight="bold" text-anchor="middle">SOCIAL</text>
+        <text x="290" y="110" fill="#334155" font-size="10" font-weight="bold" text-anchor="middle">Social Welfare</text>
 
         <!-- Overlap / Synthesis -->
-        <text x="190" y="92" fill="#FFD54F" font-size="11" font-weight="bold" text-anchor="middle">SYNTHESIS</text>
-        <text x="190" y="108" fill="#FFFFFF" font-size="9" font-weight="bold" text-anchor="middle">Democratic</text>
-        <text x="190" y="122" fill="#FFFFFF" font-size="9" font-weight="bold" text-anchor="middle">Citizenship</text>
+        <text x="190" y="90" fill="#B45309" font-size="11.5" font-weight="bold" text-anchor="middle">SYNTHESIS</text>
+        <text x="190" y="106" fill="#0F172A" font-size="9.5" font-weight="bold" text-anchor="middle">Democratic</text>
+        <text x="190" y="120" fill="#0F172A" font-size="9.5" font-weight="bold" text-anchor="middle">Citizenship</text>
       </svg>
     </div>
     <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
@@ -656,309 +655,304 @@ export const c11Edu2HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu2Mcqs = [
-  // TIER 1: EASY & DIRECT RECALL (Q1 to Q10)
   {
-    id: "c11-edu-2-mcq-1",
-    question: "Who among the following was the foremost champion of the Individual Aim of Education in modern times?",
-    options: [
+    "id": "c11-edu-2-mcq-1",
+    "question": "Who among the following was the foremost champion of the Individual Aim of Education in modern times?",
+    "options": [
       "A):   John Dewey",
       "B):   Sir Percy Nunn",
       "C):   Aristotle",
-      "D):   W. C. Bagley",
+      "D):   W. C. Bagley"
     ],
-    correctAnswer: "b",
-    explanation: "Sir Percy Nunn famously championed the Individual Aim in his book 'Education: Its Data and First Principles'.",
+    "correctAnswer": "b",
+    "explanation": "Sir Percy Nunn famously championed the Individual Aim in his book 'Education: Its Data and First Principles'."
   },
   {
-    id: "c11-edu-2-mcq-2",
-    question: "Education without a clearly defined aim is most commonly compared to:",
-    options: [
+    "id": "c11-edu-2-mcq-2",
+    "question": "Education without a clearly defined aim is most commonly compared to:",
+    "options": [
       "A):   A ship sailing without a rudder or compass",
       "B):   A locomotive moving on high-speed tracks",
       "C):   A well-equipped library",
-      "D):   An artist working with paints",
+      "D):   An artist working with paints"
     ],
-    correctAnswer: "a",
-    explanation: "Aimless education drifts aimlessly like a rudderless ship in high seas and risks total wreck.",
+    "correctAnswer": "a",
+    "explanation": "Aimless education drifts aimlessly like a rudderless ship in high seas and risks total wreck."
   },
   {
-    id: "c11-edu-2-mcq-3",
-    question: "The economic aim of education is popularly known by which of the following names?",
-    options: [
+    "id": "c11-edu-2-mcq-3",
+    "question": "The economic aim of education is popularly known by which of the following names?",
+    "options": [
       "A):   Knowledge aim",
-      "B):   Bread and butter aim",
-      "C):   Complete living aim",
-      "D):   Cultural aim",
+      "B):   Complete living aim",
+      "C):   Bread and butter aim",
+      "D):   Cultural aim"
     ],
-    correctAnswer: "b",
-    explanation: "The vocational or economic aim is popularly called the 'Bread and Butter aim' because it enables the learner to earn a livelihood.",
+    "correctAnswer": "c",
+    "explanation": "The vocational or economic aim is popularly called the 'Bread and Butter aim' because it enables the learner to earn a livelihood."
   },
   {
-    id: "c11-edu-2-mcq-4",
-    question: "Which ancient Greek city-state practiced the extreme social aim of education where children belonged entirely to the state?",
-    options: [
+    "id": "c11-edu-2-mcq-4",
+    "question": "Which ancient Greek city-state practiced the extreme social aim of education where children belonged entirely to the state?",
+    "options": [
       "A):   Athens",
-      "B):   Sparta",
+      "B):   Thebes",
       "C):   Corinth",
-      "D):   Thebes",
+      "D):   Sparta"
     ],
-    correctAnswer: "b",
-    explanation: "In ancient Sparta, extreme state absolutism prevailed, and children were trained solely for military discipline and state service.",
+    "correctAnswer": "d",
+    "explanation": "In ancient Sparta, extreme state absolutism prevailed, and children were trained solely for military discipline and state service."
   },
   {
-    id: "c11-edu-2-mcq-5",
-    question: "'Man is by nature a social animal.' This famous foundational philosophical statement was made by:",
-    options: [
-      "A):   Aristotle",
-      "B):   Rousseau",
+    "id": "c11-edu-2-mcq-5",
+    "question": "'Man is by nature a social animal.' This famous foundational philosophical statement was made by:",
+    "options": [
+      "A):   Rousseau",
+      "B):   Aristotle",
       "C):   Sir Percy Nunn",
-      "D):   Herbart",
+      "D):   Herbart"
     ],
-    correctAnswer: "a",
-    explanation: "Aristotle declared in his Politics that man is by nature a social animal, and anyone outside society is either a beast or a god.",
+    "correctAnswer": "b",
+    "explanation": "Aristotle declared in his Politics that man is by nature a social animal, and anyone outside society is either a beast or a god."
   },
   {
-    id: "c11-edu-2-mcq-6",
-    question: "Which German philosopher declared that 'The one and the whole work of education may be summed up in the concept of morality'?",
-    options: [
-      "A):   Immanuel Kant",
-      "B):   J. F. Herbart",
+    "id": "c11-edu-2-mcq-6",
+    "question": "Which German philosopher declared that 'The one and the whole work of education may be summed up in the concept of morality'?",
+    "options": [
+      "A):   J. F. Herbart",
+      "B):   Immanuel Kant",
       "C):   Froebel",
-      "D):   Hegel",
+      "D):   Hegel"
     ],
-    correctAnswer: "b",
-    explanation: "J. F. Herbart considered moral character as the single, all-encompassing goal of education.",
+    "correctAnswer": "a",
+    "explanation": "J. F. Herbart considered moral character as the single, all-encompassing goal of education."
   },
   {
-    id: "c11-edu-2-mcq-7",
-    question: "Mahatma Gandhi's scheme of Basic Education (Nai Talim) strongly supported which practical educational aim?",
-    options: [
+    "id": "c11-edu-2-mcq-7",
+    "question": "Mahatma Gandhi's scheme of Basic Education (Nai Talim) strongly supported which practical educational aim?",
+    "options": [
       "A):   Extreme militarism",
-      "B):   Vocational self-reliance through productive crafts",
+      "B):   Complete isolation from village life",
       "C):   Theoretical classical literature only",
-      "D):   Complete isolation from village life",
+      "D):   Vocational self-reliance through productive crafts"
     ],
-    correctAnswer: "b",
-    explanation: "Gandhiji emphasized productive manual crafts (like spinning and weaving) to make education self-supporting and employment-ready.",
+    "correctAnswer": "d",
+    "explanation": "Gandhiji emphasized productive manual crafts (like spinning and weaving) to make education self-supporting and employment-ready."
   },
   {
-    id: "c11-edu-2-mcq-8",
-    question: "The famous educational statement 'Nothing good enters into the human world except in and through the free activities of individual men and women' belongs to:",
-    options: [
-      "A):   Sir Percy Nunn",
+    "id": "c11-edu-2-mcq-8",
+    "question": "The famous educational statement 'Nothing good enters into the human world except in and through the free activities of individual men and women' belongs to:",
+    "options": [
+      "A):   Plato",
       "B):   Karl Marx",
-      "C):   Plato",
-      "D):   John Dewey",
+      "C):   Sir Percy Nunn",
+      "D):   John Dewey"
     ],
-    correctAnswer: "a",
-    explanation: "This is Sir Percy Nunn's iconic quote forming the bedrock of the Individual Aim of Education.",
+    "correctAnswer": "c",
+    "explanation": "This is Sir Percy Nunn's iconic quote forming the bedrock of the Individual Aim of Education."
   },
   {
-    id: "c11-edu-2-mcq-9",
-    question: "Which of the following is the chief danger of an unrestricted, extreme individual aim of education?",
-    options: [
+    "id": "c11-edu-2-mcq-9",
+    "question": "Which of the following is the chief danger of an unrestricted, extreme individual aim of education?",
+    "options": [
       "A):   Excessive state discipline",
       "B):   Selfish egocentrism and social anarchy",
       "C):   Lack of individual creativity",
-      "D):   Over-emphasis on national defense",
+      "D):   Over-emphasis on national defense"
     ],
-    correctAnswer: "b",
-    explanation: "If every individual is permitted to act purely on personal whims without social restraint, it leads to selfishness and social anarchy.",
+    "correctAnswer": "b",
+    "explanation": "If every individual is permitted to act purely on personal whims without social restraint, it leads to selfishness and social anarchy."
   },
   {
-    id: "c11-edu-2-mcq-10",
-    question: "According to Swami Vivekananda, the primary goal of man-making education is:",
-    options: [
-      "A):   Accumulating vast bookish information",
-      "B):   Building character and expanding the intellect",
+    "id": "c11-edu-2-mcq-10",
+    "question": "According to Swami Vivekananda, the primary goal of man-making education is:",
+    "options": [
+      "A):   Building character and expanding the intellect",
+      "B):   Accumulating vast bookish information",
       "C):   Passing examination papers with high ranks",
-      "D):   Learning foreign languages exclusively",
+      "D):   Learning foreign languages exclusively"
     ],
-    correctAnswer: "b",
-    explanation: "Vivekananda championed education by which character is formed, strength of mind is increased, and intellect is expanded.",
+    "correctAnswer": "a",
+    "explanation": "Vivekananda championed education by which character is formed, strength of mind is increased, and intellect is expanded."
   },
-
-  // TIER 2: MODERATE & CONCEPTUAL (Q11 to Q18)
   {
-    id: "c11-edu-2-mcq-11",
-    question: "How do modern educational philosophers reconcile the individual and social aims of education?",
-    options: [
+    "id": "c11-edu-2-mcq-11",
+    "question": "How do modern educational philosophers reconcile the individual and social aims of education?",
+    "options": [
       "A):   By eliminating individual liberty entirely",
-      "B):   By recognizing that individuality develops in and through the social environment",
-      "C):   By abolishing all schools and public institutions",
-      "D):   By declaring both aims completely irreconcilable",
+      "B):   By abolishing all schools and public institutions",
+      "C):   By recognizing that individuality develops in and through the social environment",
+      "D):   By declaring both aims completely irreconcilable"
     ],
-    correctAnswer: "b",
-    explanation: "Individual and social aims are complementary poles: an individual develops unique gifts only through social interaction, and society prospers through cultured individuals.",
+    "correctAnswer": "c",
+    "explanation": "Individual and social aims are complementary poles: an individual develops unique gifts only through social interaction, and society prospers through cultured individuals."
   },
   {
-    id: "c11-edu-2-mcq-12",
-    question: "John Dewey supported the 'Social Aim' of education primarily in which specific form?",
-    options: [
+    "id": "c11-edu-2-mcq-12",
+    "question": "John Dewey supported the 'Social Aim' of education primarily in which specific form?",
+    "options": [
       "A):   Totalitarian state regimentation",
-      "B):   Democratic social efficiency and cooperative community living",
+      "B):   Strict military training",
       "C):   Religious theological indoctrination",
-      "D):   Strict military training",
+      "D):   Democratic social efficiency and cooperative community living"
     ],
-    correctAnswer: "b",
-    explanation: "Dewey championed democratic social efficiency &mdash; preparing individuals to participate creatively and cooperatively in a democratic society.",
+    "correctAnswer": "d",
+    "explanation": "Dewey championed democratic social efficiency &mdash; preparing individuals to participate creatively and cooperatively in a democratic society."
   },
   {
-    id: "c11-edu-2-mcq-13",
-    question: "What is the primary risk of reducing education entirely to the 'Bread and Butter' (economic) aim?",
-    options: [
-      "A):   Students become incapable of earning money",
-      "B):   Education degrades into narrow commercialism, neglecting moral, cultural, and spiritual values",
+    "id": "c11-edu-2-mcq-13",
+    "question": "What is the primary risk of reducing education entirely to the 'Bread and Butter' (economic) aim?",
+    "options": [
+      "A):   Education degrades into narrow commercialism, neglecting moral, cultural, and spiritual values",
+      "B):   Students become incapable of earning money",
       "C):   Schools close down due to lack of students",
-      "D):   Physical health of students is ruined",
+      "D):   Physical health of students is ruined"
     ],
-    correctAnswer: "b",
-    explanation: "An exclusive vocational focus treats humans as mere commercial cogs and ignores artistic, cultural, and moral refinement.",
+    "correctAnswer": "a",
+    "explanation": "An exclusive vocational focus treats humans as mere commercial cogs and ignores artistic, cultural, and moral refinement."
   },
   {
-    id: "c11-edu-2-mcq-14",
-    question: "Why are clearly defined aims indispensable for the curriculum designer?",
-    options: [
-      "A):   Because aims determine which subjects and experiences are included or omitted",
-      "B):   Because aims reduce the salary of school teachers",
+    "id": "c11-edu-2-mcq-14",
+    "question": "Why are clearly defined aims indispensable for the curriculum designer?",
+    "options": [
+      "A):   Because aims reduce the salary of school teachers",
+      "B):   Because aims determine which subjects and experiences are included or omitted",
       "C):   Because aims mandate the color of school uniforms",
-      "D):   Because aims eliminate the need for written examinations",
+      "D):   Because aims eliminate the need for written examinations"
     ],
-    correctAnswer: "a",
-    explanation: "Curriculum is the vehicle designed to reach the educational aim; what is taught directly depends on what goal is intended.",
+    "correctAnswer": "b",
+    "explanation": "Curriculum is the vehicle designed to reach the educational aim; what is taught directly depends on what goal is intended."
   },
   {
-    id: "c11-edu-2-mcq-15",
-    question: "The psychological argument for the Individual Aim of Education is primarily grounded in:",
-    options: [
+    "id": "c11-edu-2-mcq-15",
+    "question": "The psychological argument for the Individual Aim of Education is primarily grounded in:",
+    "options": [
       "A):   The existence of uniform instincts in all humans",
-      "B):   The reality of individual differences in intellect, interests, and learning paces",
+      "B):   The superiority of urban schools over rural schools",
       "C):   The need for standardized board examinations",
-      "D):   The superiority of urban schools over rural schools",
+      "D):   The reality of individual differences in intellect, interests, and learning paces"
     ],
-    correctAnswer: "b",
-    explanation: "Psychology reveals that no two children have identical intelligence or learning styles, demanding respect for individual uniqueness.",
+    "correctAnswer": "d",
+    "explanation": "Psychology reveals that no two children have identical intelligence or learning styles, demanding respect for individual uniqueness."
   },
   {
-    id: "c11-edu-2-mcq-16",
-    question: "Which of the following best represents the relationship between moral aim and spiritual aim in education?",
-    options: [
-      "A):   Moral aim governs external ethical conduct in society, while spiritual aim fosters inner transcendence and soul-awakening",
+    "id": "c11-edu-2-mcq-16",
+    "question": "Which of the following best represents the relationship between moral aim and spiritual aim in education?",
+    "options": [
+      "A):   Moral aim is only for adults, while spiritual aim is only for infants",
       "B):   They are totally contradictory and oppose each other",
-      "C):   Moral aim is only for adults, while spiritual aim is only for infants",
-      "D):   Spiritual aim is solely focused on earning high income",
+      "C):   Moral aim governs external ethical conduct in society, while spiritual aim fosters inner transcendence and soul-awakening",
+      "D):   Spiritual aim is solely focused on earning high income"
     ],
-    correctAnswer: "a",
-    explanation: "Moral education deals with ethical, righteous behavior in human relationships, while spiritual education deals with inner self-realization and universal peace.",
+    "correctAnswer": "c",
+    "explanation": "Moral education deals with ethical, righteous behavior in human relationships, while spiritual education deals with inner self-realization and universal peace."
   },
   {
-    id: "c11-edu-2-mcq-17",
-    question: "Dr. S. Radhakrishnan warned that training the intellect without educating the heart and spirit produces:",
-    options: [
+    "id": "c11-edu-2-mcq-17",
+    "question": "Dr. S. Radhakrishnan warned that training the intellect without educating the heart and spirit produces:",
+    "options": [
       "A):   Saintly scholars",
       "B):   Clever barbarians and potential social menaces",
       "C):   Selfless social workers",
-      "D):   Ideal democratic leaders",
+      "D):   Ideal democratic leaders"
     ],
-    correctAnswer: "b",
-    explanation: "Dr. Radhakrishnan famously warned that mere intellectual sharpness without ethical values produces 'clever barbarians'.",
+    "correctAnswer": "b",
+    "explanation": "Dr. Radhakrishnan famously warned that mere intellectual sharpness without ethical values produces 'clever barbarians'."
   },
   {
-    id: "c11-edu-2-mcq-18",
-    question: "National Education Policy (NEP 2020) connects with the vocational/economic aim of education by introducing:",
-    options: [
-      "A):   Heavy tuition fees for all school students",
-      "B):   Vocational exposure and 10 bagless days of hands-on skill internships from Grade 6",
+    "id": "c11-edu-2-mcq-18",
+    "question": "National Education Policy (NEP 2020) connects with the vocational/economic aim of education by introducing:",
+    "options": [
+      "A):   Vocational exposure and 10 bagless days of hands-on skill internships from Grade 6",
+      "B):   Heavy tuition fees for all school students",
       "C):   Immediate military drafting of all secondary students",
-      "D):   Abolishing all practical laboratories",
+      "D):   Abolishing all practical laboratories"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 integrates vocational learning from Grade 6 with 10 bagless days of experiential learning with local crafts and artisans.",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 integrates vocational learning from Grade 6 with 10 bagless days of experiential learning with local crafts and artisans."
   },
-
-  // TIER 3: ADVANCE & ANALYTICAL (Q19 to Q25)
   {
-    id: "c11-edu-2-mcq-19",
-    question: "Assertion (A): Educational aims can never remain static or fixed for all times.\nReason (R): Society continuously evolves with new economic, scientific, technological, and cultural paradigms.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-2-mcq-19",
+    "question": "Assertion (A): Educational aims can never remain static or fixed for all times.\nReason (R): Society continuously evolves with new economic, scientific, technological, and cultural paradigms.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "Educational aims are dynamic because education reflects changing societal needs, scientific discoveries, and global shifts.",
+    "correctAnswer": "d",
+    "explanation": "Educational aims are dynamic because education reflects changing societal needs, scientific discoveries, and global shifts."
   },
   {
-    id: "c11-edu-2-mcq-20",
-    question: "A totalitarian regime manipulates school curriculum to instill unquestioning loyalty to the dictator and suppresses dissenting thoughts. This represents:",
-    options: [
+    "id": "c11-edu-2-mcq-20",
+    "question": "A totalitarian regime manipulates school curriculum to instill unquestioning loyalty to the dictator and suppresses dissenting thoughts. This represents:",
+    "options": [
       "A):   The democratic individual aim",
-      "B):   The extreme social aim (State Absolutism)",
-      "C):   The spiritual aim of self-realization",
-      "D):   Dewey's social efficiency model",
+      "B):   The spiritual aim of self-realization",
+      "C):   The extreme social aim (State Absolutism)",
+      "D):   Dewey's social efficiency model"
     ],
-    correctAnswer: "b",
-    explanation: "Extinguishing individual free thought and molding students as passive tools of the state is the hallmark of extreme social absolutism.",
+    "correctAnswer": "c",
+    "explanation": "Extinguishing individual free thought and molding students as passive tools of the state is the hallmark of extreme social absolutism."
   },
   {
-    id: "c11-edu-2-mcq-21",
-    question: "Consider a student who excels brilliantly in computer engineering but uses his skills to steal confidential bank data. Which essential aim of education did his schooling fail to achieve?",
-    options: [
+    "id": "c11-edu-2-mcq-21",
+    "question": "Consider a student who excels brilliantly in computer engineering but uses his skills to steal confidential bank data. Which essential aim of education did his schooling fail to achieve?",
+    "options": [
       "A):   The economic aim",
-      "B):   The intellectual aim",
-      "C):   The moral and character-building aim",
-      "D):   The physical health aim",
+      "B):   The moral and character-building aim",
+      "C):   The intellectual aim",
+      "D):   The physical health aim"
     ],
-    correctAnswer: "c",
-    explanation: "The student possessed intellectual and technical skills, but lacked moral character and ethical conscience, demonstrating a failure of moral education.",
+    "correctAnswer": "b",
+    "explanation": "The student possessed intellectual and technical skills, but lacked moral character and ethical conscience, demonstrating a failure of moral education."
   },
   {
-    id: "c11-edu-2-mcq-22",
-    question: "How does the 'Synthesis of Individual and Social Aims' manifest in a truly democratic classroom?",
-    options: [
+    "id": "c11-edu-2-mcq-22",
+    "question": "How does the 'Synthesis of Individual and Social Aims' manifest in a truly democratic classroom?",
+    "options": [
       "A):   Students are forced into rigid silence and military marching",
-      "B):   Each child is encouraged to discover personal strengths while learning teamwork, empathy, and mutual respect",
+      "B):   Every student is assigned the exact same identical assignment regardless of interest",
       "C):   The teacher lectures continuously without allowing students to ask questions",
-      "D):   Every student is assigned the exact same identical assignment regardless of interest",
+      "D):   Each child is encouraged to discover personal strengths while learning teamwork, empathy, and mutual respect"
     ],
-    correctAnswer: "b",
-    explanation: "Democratic education respects individual uniqueness while fostering cooperative social skills, civic empathy, and collaborative teamwork.",
+    "correctAnswer": "d",
+    "explanation": "Democratic education respects individual uniqueness while fostering cooperative social skills, civic empathy, and collaborative teamwork."
   },
   {
-    id: "c11-edu-2-mcq-23",
-    question: "Which of the following aphorisms best encapsulates the spiritual aim of education in traditional Indian philosophy?",
-    options: [
-      "A):   'Money makes the world go round'",
-      "B):   'Sa Vidya Ya Vimuktaye' (That is knowledge which liberates)",
+    "id": "c11-edu-2-mcq-23",
+    "question": "Which of the following aphorisms best encapsulates the spiritual aim of education in traditional Indian philosophy?",
+    "options": [
+      "A):   'Sa Vidya Ya Vimuktaye' (That is knowledge which liberates)",
+      "B):   'Money makes the world go round'",
       "C):   'Might is right in all spheres'",
-      "D):   'Eat, drink and be merry'",
+      "D):   'Eat, drink and be merry'"
     ],
-    correctAnswer: "b",
-    explanation: "'Sa Vidya Ya Vimuktaye' expresses the spiritual aim: true knowledge liberates the soul from ignorance, narrow desires, and mental bondage.",
+    "correctAnswer": "a",
+    "explanation": "'Sa Vidya Ya Vimuktaye' expresses the spiritual aim: true knowledge liberates the soul from ignorance, narrow desires, and mental bondage."
   },
   {
-    id: "c11-edu-2-mcq-24",
-    question: "Match List-I with List-II:\n(a) Sir Percy Nunn  — (1) Social Efficiency & Democracy\n(b) John Dewey      — (2) Individual Uniqueness\n(c) J. F. Herbart   — (3) Bread and Butter through Village Crafts\n(d) Mahatma Gandhi  — (4) Moral Character as Sole End",
-    options: [
-      "A):   (a)-(2), (b)-(1), (c)-(4), (d)-(3)",
+    "id": "c11-edu-2-mcq-24",
+    "question": "Match List-I with List-II:\n(a) Sir Percy Nunn  — (1) Social Efficiency & Democracy\n(b) John Dewey      — (2) Individual Uniqueness\n(c) J. F. Herbart   — (3) Bread and Butter through Village Crafts\n(d) Mahatma Gandhi  — (4) Moral Character as Sole End",
+    "options": [
+      "A):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
       "B):   (a)-(1), (b)-(2), (c)-(3), (d)-(4)",
-      "C):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
-      "D):   (a)-(2), (b)-(4), (c)-(1), (d)-(3)",
+      "C):   (a)-(2), (b)-(1), (c)-(4), (d)-(3)",
+      "D):   (a)-(2), (b)-(4), (c)-(1), (d)-(3)"
     ],
-    correctAnswer: "a",
-    explanation: "Nunn: Individual Uniqueness; Dewey: Democratic Social Efficiency; Herbart: Moral Character; Gandhi: Productive Craft Self-reliance.",
+    "correctAnswer": "c",
+    "explanation": "Nunn: Individual Uniqueness; Dewey: Democratic Social Efficiency; Herbart: Moral Character; Gandhi: Productive Craft Self-reliance."
   },
   {
-    id: "c11-edu-2-mcq-25",
-    question: "Why is an exclusively intellectual education without moral and vocational components considered deeply deficient for developing countries?",
-    options: [
-      "A):   It produces educated unemployed youth who lack practical skills and social empathy",
-      "B):   It is too inexpensive to implement in public schools",
+    "id": "c11-edu-2-mcq-25",
+    "question": "Why is an exclusively intellectual education without moral and vocational components considered deeply deficient for developing countries?",
+    "options": [
+      "A):   It is too inexpensive to implement in public schools",
+      "B):   It produces educated unemployed youth who lack practical skills and social empathy",
       "C):   It causes excessive physical fatigue",
-      "D):   It eliminates the need for colleges",
+      "D):   It eliminates the need for colleges"
     ],
-    correctAnswer: "a",
-    explanation: "Mere theoretical academic degrees without vocational skills lead to mass unemployment, and without moral grounding, produce social alienation and cynicism.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Mere theoretical academic degrees without vocational skills lead to mass unemployment, and without moral grounding, produce social alienation and cynicism."
+  }
 ];

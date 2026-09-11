@@ -1005,309 +1005,304 @@ export const c11Edu7HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu7Mcqs = [
-  // Tier 1: Basic Recall & Definitions (Q1 to Q10)
   {
-    id: "c11-edu-7-mcq-1",
-    question: "The Latin word from which the term 'Statistics' is derived is:",
-    options: [
-      "A):   Status",
-      "B):   Statista",
+    "id": "c11-edu-7-mcq-1",
+    "question": "The Latin word from which the term 'Statistics' is derived is:",
+    "options": [
+      "A):   Statista",
+      "B):   Status",
       "C):   Statistik",
       "D):   Static"
     ],
-    correctAnswer: "A",
-    explanation: "Statistics is derived from the Latin word 'Status', Italian word 'Statista', and German word 'Statistik', all denoting a political state."
+    "correctAnswer": "b",
+    "explanation": "Statistics is derived from the Latin word 'Status', Italian word 'Statista', and German word 'Statistik', all denoting a political state."
   },
   {
-    id: "c11-edu-7-mcq-2",
-    question: "In the singular sense, Statistics is defined as:",
-    options: [
-      "A):   Only numerical raw marks",
-      "B):   The science of collection, presentation, analysis, and interpretation of data",
+    "id": "c11-edu-7-mcq-2",
+    "question": "In the singular sense, Statistics is defined as:",
+    "options": [
+      "A):   The science of collection, presentation, analysis, and interpretation of data",
+      "B):   Only numerical raw marks",
       "C):   A collection of random qualitative opinions",
       "D):   Government taxation records only"
     ],
-    correctAnswer: "B",
-    explanation: "According to Croxton & Cowden, in the singular sense Statistics is the science of collection, presentation, analysis, and interpretation of numerical data."
+    "correctAnswer": "a",
+    "explanation": "According to Croxton & Cowden, in the singular sense Statistics is the science of collection, presentation, analysis, and interpretation of numerical data."
   },
   {
-    id: "c11-edu-7-mcq-3",
-    question: "Which educational psychologist famously emphasized the vital role of statistics in mental measurement and testing?",
-    options: [
+    "id": "c11-edu-7-mcq-3",
+    "question": "Which educational psychologist famously emphasized the vital role of statistics in mental measurement and testing?",
+    "options": [
       "A):   John Dewey",
       "B):   Jean Piaget",
       "C):   Henry E. Garrett",
       "D):   B.F. Skinner"
     ],
-    correctAnswer: "C",
-    explanation: "Henry E. Garrett is celebrated for authoring 'Statistics in Psychology and Education', establishing statistical foundations in testing."
+    "correctAnswer": "c",
+    "explanation": "Henry E. Garrett is celebrated for authoring 'Statistics in Psychology and Education', establishing statistical foundations in testing."
   },
   {
-    id: "c11-edu-7-mcq-4",
-    question: "A Histogram is constructed using continuous rectangular bars erected on:",
-    options: [
+    "id": "c11-edu-7-mcq-4",
+    "question": "A Histogram is constructed using continuous rectangular bars erected on:",
+    "options": [
       "A):   Class midpoints",
-      "B):   Exact class boundaries",
+      "B):   Arbitrary qualitative ranks",
       "C):   Cumulative frequencies only",
-      "D):   Arbitrary qualitative ranks"
+      "D):   Exact class boundaries"
     ],
-    correctAnswer: "B",
-    explanation: "The base of each rectangle in a histogram corresponds to the true continuous class boundaries (exact limits) with zero gap between them."
+    "correctAnswer": "d",
+    "explanation": "The base of each rectangle in a histogram corresponds to the true continuous class boundaries (exact limits) with zero gap between them."
   },
   {
-    id: "c11-edu-7-mcq-5",
-    question: "In a Frequency Polygon, the class frequencies are plotted directly against the:",
-    options: [
+    "id": "c11-edu-7-mcq-5",
+    "question": "In a Frequency Polygon, the class frequencies are plotted directly against the:",
+    "options": [
       "A):   Upper class limits",
-      "B):   Lower class limits",
-      "C):   Class midpoints (mid-values)",
+      "B):   Class midpoints (mid-values)",
+      "C):   Lower class limits",
       "D):   Origin"
     ],
-    correctAnswer: "C",
-    explanation: "A frequency polygon plots frequencies at the midpoint of each class interval, joined by straight line segments."
+    "correctAnswer": "b",
+    "explanation": "A frequency polygon plots frequencies at the midpoint of each class interval, joined by straight line segments."
   },
   {
-    id: "c11-edu-7-mcq-6",
-    question: "What is the total sum of angles at the center of a Pie Chart?",
-    options: [
-      "A):   180°",
+    "id": "c11-edu-7-mcq-6",
+    "question": "What is the total sum of angles at the center of a Pie Chart?",
+    "options": [
+      "A):   360°",
       "B):   270°",
-      "C):   360°",
+      "C):   180°",
       "D):   100°"
     ],
-    correctAnswer: "C",
-    explanation: "A full circle encompasses 360 degrees, and each category sector angle is proportional to its frequency divided by N multiplied by 360°."
+    "correctAnswer": "a",
+    "explanation": "A full circle encompasses 360 degrees, and each category sector angle is proportional to its frequency divided by N multiplied by 360°."
   },
   {
-    id: "c11-edu-7-mcq-7",
-    question: "The point of intersection of 'Less than' and 'More than' Ogives corresponds on the X-axis to the:",
-    options: [
+    "id": "c11-edu-7-mcq-7",
+    "question": "The point of intersection of 'Less than' and 'More than' Ogives corresponds on the X-axis to the:",
+    "options": [
       "A):   Arithmetic Mean",
-      "B):   Median",
+      "B):   Standard Deviation",
       "C):   Mode",
-      "D):   Standard Deviation"
+      "D):   Median"
     ],
-    correctAnswer: "B",
-    explanation: "The point where the rising and falling cumulative frequency curves intersect projects vertically down to the exact Median on the score axis."
+    "correctAnswer": "d",
+    "explanation": "The point where the rising and falling cumulative frequency curves intersect projects vertically down to the exact Median on the score axis."
   },
   {
-    id: "c11-edu-7-mcq-8",
-    question: "Which measure of central tendency is calculated as the sum of all scores divided by the total number of scores?",
-    options: [
-      "A):   Arithmetic Mean",
+    "id": "c11-edu-7-mcq-8",
+    "question": "Which measure of central tendency is calculated as the sum of all scores divided by the total number of scores?",
+    "options": [
+      "A):   Mode",
       "B):   Median",
-      "C):   Mode",
+      "C):   Arithmetic Mean",
       "D):   Range"
     ],
-    correctAnswer: "A",
-    explanation: "The Arithmetic Mean is the arithmetic average: Mean = (∑ X) / N."
+    "correctAnswer": "c",
+    "explanation": "The Arithmetic Mean is the arithmetic average: Mean = (∑ X) / N."
   },
   {
-    id: "c11-edu-7-mcq-9",
-    question: "The score value that occurs most frequently in a distribution is known as the:",
-    options: [
+    "id": "c11-edu-7-mcq-9",
+    "question": "The score value that occurs most frequently in a distribution is known as the:",
+    "options": [
       "A):   Mean",
-      "B):   Median",
-      "C):   Mode",
+      "B):   Mode",
+      "C):   Median",
       "D):   Variance"
     ],
-    correctAnswer: "C",
-    explanation: "The Mode is the point of maximum frequency density or greatest popularity in a dataset."
+    "correctAnswer": "b",
+    "explanation": "The Mode is the point of maximum frequency density or greatest popularity in a dataset."
   },
   {
-    id: "c11-edu-7-mcq-10",
-    question: "Which of the following represents an inherent limitation of Statistics?",
-    options: [
-      "A):   It condenses bulky data",
-      "B):   It deals only with aggregates, not isolated individuals",
+    "id": "c11-edu-7-mcq-10",
+    "question": "Which of the following represents an inherent limitation of Statistics?",
+    "options": [
+      "A):   It deals only with aggregates, not isolated individuals",
+      "B):   It condenses bulky data",
       "C):   It enables objective comparisons",
       "D):   It facilitates graphical presentation"
     ],
-    correctAnswer: "B",
-    explanation: "Statistics cannot study an isolated single score without referencing group context; it deals solely with numerical aggregates."
+    "correctAnswer": "a",
+    "explanation": "Statistics cannot study an isolated single score without referencing group context; it deals solely with numerical aggregates."
   },
-
-  // Tier 2: Conceptual & Structural Questions (Q11 to Q18)
   {
-    id: "c11-edu-7-mcq-11",
-    question: "Why are the two extreme ends of a Frequency Polygon extended to adjacent hypothetical intervals?",
-    options: [
-      "A):   To make it touch zero frequency and form a closed polygon",
+    "id": "c11-edu-7-mcq-11",
+    "question": "Why are the two extreme ends of a Frequency Polygon extended to adjacent hypothetical intervals?",
+    "options": [
+      "A):   To convert it into a Pie chart",
       "B):   To increase the total frequency count",
-      "C):   To convert it into a Pie chart",
+      "C):   To make it touch zero frequency and form a closed polygon",
       "D):   To remove outliers"
     ],
-    correctAnswer: "A",
-    explanation: "Connecting to hypothetical midpoints with zero frequency closes the polygon against the horizontal baseline, making its area equal to that of the histogram."
+    "correctAnswer": "c",
+    "explanation": "Connecting to hypothetical midpoints with zero frequency closes the polygon against the horizontal baseline, making its area equal to that of the histogram."
   },
   {
-    id: "c11-edu-7-mcq-12",
-    question: "Karl Pearson's empirical formula linking the three measures of central tendency is:",
-    options: [
+    "id": "c11-edu-7-mcq-12",
+    "question": "Karl Pearson's empirical formula linking the three measures of central tendency is:",
+    "options": [
       "A):   Mode = 2Median - 3Mean",
-      "B):   Mode = 3Median - 2Mean",
+      "B):   Median = 3Mode - 2Mean",
       "C):   Mean = 3Median - 2Mode",
-      "D):   Median = 3Mode - 2Mean"
+      "D):   Mode = 3Median - 2Mean"
     ],
-    correctAnswer: "B",
-    explanation: "In moderately skewed distributions, the empirical relationship is: Mode = 3Median - 2Mean."
+    "correctAnswer": "d",
+    "explanation": "In moderately skewed distributions, the empirical relationship is: Mode = 3Median - 2Mean."
   },
   {
-    id: "c11-edu-7-mcq-13",
-    question: "If a test score distribution has extreme outliers (e.g. one student scored 100 while all others scored 20), which average is least distorted?",
-    options: [
-      "A):   Arithmetic Mean",
-      "B):   Median",
+    "id": "c11-edu-7-mcq-13",
+    "question": "If a test score distribution has extreme outliers (e.g. one student scored 100 while all others scored 20), which average is least distorted?",
+    "options": [
+      "A):   Median",
+      "B):   Arithmetic Mean",
       "C):   Weighted Mean",
       "D):   Harmonic Mean"
     ],
-    correctAnswer: "B",
-    explanation: "The Median is a positional average depending solely on rank order, making it unaffected by extreme outlier scores."
+    "correctAnswer": "a",
+    "explanation": "The Median is a positional average depending solely on rank order, making it unaffected by extreme outlier scores."
   },
   {
-    id: "c11-edu-7-mcq-14",
-    question: "In a perfectly symmetrical, normal bell-shaped distribution curve:",
-    options: [
+    "id": "c11-edu-7-mcq-14",
+    "question": "In a perfectly symmetrical, normal bell-shaped distribution curve:",
+    "options": [
       "A):   Mean > Median > Mode",
-      "B):   Mode > Median > Mean",
-      "C):   Mean = Median = Mode",
+      "B):   Mean = Median = Mode",
+      "C):   Mode > Median > Mean",
       "D):   Mean + Median = Mode"
     ],
-    correctAnswer: "C",
-    explanation: "In a symmetrical normal distribution, the Mean, Median, and Mode coincide at the exact center of the curve."
+    "correctAnswer": "b",
+    "explanation": "In a symmetrical normal distribution, the Mean, Median, and Mode coincide at the exact center of the curve."
   },
   {
-    id: "c11-edu-7-mcq-15",
-    question: "When class intervals are open-ended (e.g., 'Below 20' and 'Above 80'), which measure of central tendency can STILL be accurately computed?",
-    options: [
+    "id": "c11-edu-7-mcq-15",
+    "question": "When class intervals are open-ended (e.g., 'Below 20' and 'Above 80'), which measure of central tendency can STILL be accurately computed?",
+    "options": [
       "A):   Arithmetic Mean",
-      "B):   Median",
+      "B):   Combined Mean",
       "C):   Standard Deviation",
-      "D):   Combined Mean"
+      "D):   Median"
     ],
-    correctAnswer: "B",
-    explanation: "The Median depends only on the central frequency count; hence open-ended extreme intervals do not impede its calculation."
+    "correctAnswer": "d",
+    "explanation": "The Median depends only on the central frequency count; hence open-ended extreme intervals do not impede its calculation."
   },
   {
-    id: "c11-edu-7-mcq-16",
-    question: "In the step-deviation formula Mean = AM + [(∑ f d') / N] × i, the symbol 'i' stands for:",
-    options: [
+    "id": "c11-edu-7-mcq-16",
+    "question": "In the step-deviation formula Mean = AM + [(∑ f d') / N] × i, the symbol 'i' stands for:",
+    "options": [
       "A):   Individual score",
       "B):   Assumed mean",
       "C):   Length/width of class interval",
       "D):   Total frequency"
     ],
-    correctAnswer: "C",
-    explanation: "'i' represents the size or width of the class interval (e.g., for class 20-30, i = 10)."
+    "correctAnswer": "c",
+    "explanation": "'i' represents the size or width of the class interval (e.g., for class 20-30, i = 10)."
   },
   {
-    id: "c11-edu-7-mcq-17",
-    question: "In a positively skewed distribution where the exam was unusually difficult, the relative order of averages is:",
-    options: [
+    "id": "c11-edu-7-mcq-17",
+    "question": "In a positively skewed distribution where the exam was unusually difficult, the relative order of averages is:",
+    "options": [
       "A):   Mean < Median < Mode",
       "B):   Mode < Median < Mean",
       "C):   Mean = Median > Mode",
       "D):   Mode = Mean < Median"
     ],
-    correctAnswer: "B",
-    explanation: "In a positive skew, the tail extends to the right; the Mean is pulled furthest toward high scores, resulting in Mode < Median < Mean."
+    "correctAnswer": "b",
+    "explanation": "In a positive skew, the tail extends to the right; the Mean is pulled furthest toward high scores, resulting in Mode < Median < Mean."
   },
   {
-    id: "c11-edu-7-mcq-18",
-    question: "Which graphic representation is most suitable for displaying the budget allocation of a school across various departments?",
-    options: [
-      "A):   Ogive",
-      "B):   Pie Chart",
+    "id": "c11-edu-7-mcq-18",
+    "question": "Which graphic representation is most suitable for displaying the budget allocation of a school across various departments?",
+    "options": [
+      "A):   Pie Chart",
+      "B):   Ogive",
       "C):   Frequency Polygon",
       "D):   Scatter plot"
     ],
-    correctAnswer: "B",
-    explanation: "A Pie Chart displays parts of a whole proportionally as radial angular sectors of a circle."
+    "correctAnswer": "a",
+    "explanation": "A Pie Chart displays parts of a whole proportionally as radial angular sectors of a circle."
   },
-
-  // Tier 3: Numerical & Analytical Application Questions (Q19 to Q25)
   {
-    id: "c11-edu-7-mcq-19",
-    question: "The test scores of 5 students are 12, 16, 20, 24, and 28. What is the Arithmetic Mean?",
-    options: [
+    "id": "c11-edu-7-mcq-19",
+    "question": "The test scores of 5 students are 12, 16, 20, 24, and 28. What is the Arithmetic Mean?",
+    "options": [
       "A):   18",
-      "B):   20",
+      "B):   24",
       "C):   22",
-      "D):   24"
+      "D):   20"
     ],
-    correctAnswer: "B",
-    explanation: "Mean = (12 + 16 + 20 + 24 + 28) / 5 = 100 / 5 = 20."
+    "correctAnswer": "d",
+    "explanation": "Mean = (12 + 16 + 20 + 24 + 28) / 5 = 100 / 5 = 20."
   },
   {
-    id: "c11-edu-7-mcq-20",
-    question: "Find the Median of the following ranked scores: 8, 11, 14, 17, 21, 25.",
-    options: [
+    "id": "c11-edu-7-mcq-20",
+    "question": "Find the Median of the following ranked scores: 8, 11, 14, 17, 21, 25.",
+    "options": [
       "A):   14.5",
-      "B):   15.5",
-      "C):   17.0",
+      "B):   17.0",
+      "C):   15.5",
       "D):   16.0"
     ],
-    correctAnswer: "B",
-    explanation: "Since N = 6 (even), Median = average of 3rd and 4th scores = (14 + 17) / 2 = 31 / 2 = 15.5."
+    "correctAnswer": "c",
+    "explanation": "Since N = 6 (even), Median = average of 3rd and 4th scores = (14 + 17) / 2 = 31 / 2 = 15.5."
   },
   {
-    id: "c11-edu-7-mcq-21",
-    question: "If a frequency distribution has Mean = 52 and Median = 50, what is its empirical Mode?",
-    options: [
-      "A):   46",
-      "B):   48",
+    "id": "c11-edu-7-mcq-21",
+    "question": "If a frequency distribution has Mean = 52 and Median = 50, what is its empirical Mode?",
+    "options": [
+      "A):   48",
+      "B):   46",
       "C):   50",
       "D):   54"
     ],
-    correctAnswer: "A",
-    explanation: "Mode = 3Median - 2Mean = 3(50) - 2(52) = 150 - 104 = 46."
+    "correctAnswer": "b",
+    "explanation": "Mode = 3Median - 2Mean = 3(50) - 2(52) = 150 - 104 = 46."
   },
   {
-    id: "c11-edu-7-mcq-22",
-    question: "In a class of 60 students, 15 opted for Science. What is the central angle for the Science sector in a Pie Chart?",
-    options: [
+    "id": "c11-edu-7-mcq-22",
+    "question": "In a class of 60 students, 15 opted for Science. What is the central angle for the Science sector in a Pie Chart?",
+    "options": [
       "A):   60°",
       "B):   75°",
-      "C):   90°",
-      "D):   120°"
+      "C):   120°",
+      "D):   90°"
     ],
-    correctAnswer: "C",
-    explanation: "Angle = (15 / 60) × 360° = (1/4) × 360° = 90°."
+    "correctAnswer": "d",
+    "explanation": "Angle = (15 / 60) × 360° = (1/4) × 360° = 90°."
   },
   {
-    id: "c11-edu-7-mcq-23",
-    question: "What is the midpoint (X) of the class interval 30 – 40?",
-    options: [
-      "A):   30",
+    "id": "c11-edu-7-mcq-23",
+    "question": "What is the midpoint (X) of the class interval 30 – 40?",
+    "options": [
+      "A):   35",
       "B):   34.5",
-      "C):   35",
+      "C):   30",
       "D):   40"
     ],
-    correctAnswer: "C",
-    explanation: "Midpoint = (Lower Limit + Upper Limit) / 2 = (30 + 40) / 2 = 70 / 2 = 35."
+    "correctAnswer": "a",
+    "explanation": "Midpoint = (Lower Limit + Upper Limit) / 2 = (30 + 40) / 2 = 70 / 2 = 35."
   },
   {
-    id: "c11-edu-7-mcq-24",
-    question: "If the scores of 7 pupils are 14, 18, 14, 22, 14, 25, and 18, what is the Mode?",
-    options: [
-      "A):   14",
+    "id": "c11-edu-7-mcq-24",
+    "question": "If the scores of 7 pupils are 14, 18, 14, 22, 14, 25, and 18, what is the Mode?",
+    "options": [
+      "A):   22",
       "B):   18",
-      "C):   22",
+      "C):   14",
       "D):   25"
     ],
-    correctAnswer: "A",
-    explanation: "The score 14 appears 3 times, which is the highest frequency; hence the Mode is 14."
+    "correctAnswer": "c",
+    "explanation": "The score 14 appears 3 times, which is the highest frequency; hence the Mode is 14."
   },
   {
-    id: "c11-edu-7-mcq-25",
-    question: "In grouped data calculation, if N = 80, the Median class is the class interval whose cumulative frequency first contains or exceeds:",
-    options: [
+    "id": "c11-edu-7-mcq-25",
+    "question": "In grouped data calculation, if N = 80, the Median class is the class interval whose cumulative frequency first contains or exceeds:",
+    "options": [
       "A):   20",
       "B):   40",
       "C):   60",
       "D):   80"
     ],
-    correctAnswer: "B",
-    explanation: "Median class is located at N/2 = 80 / 2 = 40; it is the first class whose cumulative frequency equals or exceeds 40."
+    "correctAnswer": "b",
+    "explanation": "Median class is located at N/2 = 80 / 2 = 40; it is the first class whose cumulative frequency equals or exceeds 40."
   }
 ];

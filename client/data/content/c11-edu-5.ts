@@ -634,309 +634,304 @@ export const c11Edu5HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu5Mcqs = [
-  // TIER 1: EASY & DIRECT RECALL (Q1 to Q10)
   {
-    id: "c11-edu-5-mcq-1",
-    question: "Who defined Guidance as 'personal help given by someone to assist a person to decide where he wants to go and what he wants to do'?",
-    options: [
-      "A):   Arthur J. Jones",
-      "B):   Wilhelm Wundt",
+    "id": "c11-edu-5-mcq-1",
+    "question": "Who defined Guidance as 'personal help given by someone to assist a person to decide where he wants to go and what he wants to do'?",
+    "options": [
+      "A):   Wilhelm Wundt",
+      "B):   Arthur J. Jones",
       "C):   Auguste Comte",
-      "D):   John B. Watson",
+      "D):   John B. Watson"
     ],
-    correctAnswer: "a",
-    explanation: "Arthur J. Jones provided this standard definition in 'Principles of Guidance'.",
+    "correctAnswer": "b",
+    "explanation": "Arthur J. Jones provided this standard definition in 'Principles of Guidance'."
   },
   {
-    id: "c11-edu-5-mcq-2",
-    question: "What are the three universally recognized major types of Guidance?",
-    options: [
+    "id": "c11-edu-5-mcq-2",
+    "question": "What are the three universally recognized major types of Guidance?",
+    "options": [
       "A):   Educational, Vocational, and Personal-Social",
       "B):   Military, Commercial, and Religious",
       "C):   Primary, Secondary, and Higher",
-      "D):   Chemical, Biological, and Physical",
+      "D):   Chemical, Biological, and Physical"
     ],
-    correctAnswer: "a",
-    explanation: "Educational, Vocational, and Personal-Social guidance form the three pillars of guidance services.",
+    "correctAnswer": "a",
+    "explanation": "Educational, Vocational, and Personal-Social guidance form the three pillars of guidance services."
   },
   {
-    id: "c11-edu-5-mcq-3",
-    question: "Which psychologist famously described Adolescence as a period of 'Storm and Stress' (Sturm und Drang)?",
-    options: [
-      "A):   G. Stanley Hall",
-      "B):   Jean Piaget",
-      "C):   Carl Rogers",
-      "D):   B. F. Skinner",
-    ],
-    correctAnswer: "a",
-    explanation: "G. Stanley Hall famously identified adolescence as a period of profound storm and stress.",
-  },
-  {
-    id: "c11-edu-5-mcq-4",
-    question: "Who is the founder of the 'Client-Centered' (Non-Directive) approach to Counseling?",
-    options: [
+    "id": "c11-edu-5-mcq-3",
+    "question": "Which psychologist famously described Adolescence as a period of 'Storm and Stress' (Sturm und Drang)?",
+    "options": [
       "A):   Carl Rogers",
+      "B):   Jean Piaget",
+      "C):   G. Stanley Hall",
+      "D):   B. F. Skinner"
+    ],
+    "correctAnswer": "c",
+    "explanation": "G. Stanley Hall famously identified adolescence as a period of profound storm and stress."
+  },
+  {
+    "id": "c11-edu-5-mcq-4",
+    "question": "Who is the founder of the 'Client-Centered' (Non-Directive) approach to Counseling?",
+    "options": [
+      "A):   Sigmund Freud",
       "B):   E. G. Williamson",
       "C):   F. C. Thorne",
-      "D):   Sigmund Freud",
+      "D):   Carl Rogers"
     ],
-    correctAnswer: "a",
-    explanation: "Carl Rogers revolutionized counseling with his non-directive, client-centered humanistic therapy.",
+    "correctAnswer": "d",
+    "explanation": "Carl Rogers revolutionized counseling with his non-directive, client-centered humanistic therapy."
   },
   {
-    id: "c11-edu-5-mcq-5",
-    question: "Directive Counseling (Counselor-Centered Counseling) was primarily formulated by:",
-    options: [
-      "A):   E. G. Williamson",
-      "B):   Carl Rogers",
+    "id": "c11-edu-5-mcq-5",
+    "question": "Directive Counseling (Counselor-Centered Counseling) was primarily formulated by:",
+    "options": [
+      "A):   Carl Rogers",
+      "B):   E. G. Williamson",
       "C):   George Payne",
-      "D):   Auguste Comte",
+      "D):   Auguste Comte"
     ],
-    correctAnswer: "a",
-    explanation: "E. G. Williamson of Minnesota formulated the directive (counselor-centered) counseling model.",
+    "correctAnswer": "b",
+    "explanation": "E. G. Williamson of Minnesota formulated the directive (counselor-centered) counseling model."
   },
   {
-    id: "c11-edu-5-mcq-6",
-    question: "The synthesis approach that combines elements of both Directive and Non-Directive counseling is known as:",
-    options: [
+    "id": "c11-edu-5-mcq-6",
+    "question": "The synthesis approach that combines elements of both Directive and Non-Directive counseling is known as:",
+    "options": [
       "A):   Eclectic Counseling",
       "B):   Aversive Therapy",
       "C):   Authoritarian Guidance",
-      "D):   Hypnotic Counseling",
+      "D):   Hypnotic Counseling"
     ],
-    correctAnswer: "a",
-    explanation: "Eclectic Counseling, developed by F. C. Thorne, selects the best methods from directive and non-directive models.",
+    "correctAnswer": "a",
+    "explanation": "Eclectic Counseling, developed by F. C. Thorne, selects the best methods from directive and non-directive models."
   },
   {
-    id: "c11-edu-5-mcq-7",
-    question: "Which type of guidance specifically assists students in choosing school subjects, improving study habits, and preparing for board examinations?",
-    options: [
-      "A):   Educational Guidance",
+    "id": "c11-edu-5-mcq-7",
+    "question": "Which type of guidance specifically assists students in choosing school subjects, improving study habits, and preparing for board examinations?",
+    "options": [
+      "A):   Marital Guidance",
       "B):   Vocational Guidance",
       "C):   Clinical Guidance",
-      "D):   Marital Guidance",
+      "D):   Educational Guidance"
     ],
-    correctAnswer: "a",
-    explanation: "Educational guidance deals with curriculum selection, study skills, and school adjustment.",
+    "correctAnswer": "d",
+    "explanation": "Educational guidance deals with curriculum selection, study skills, and school adjustment."
   },
   {
-    id: "c11-edu-5-mcq-8",
-    question: "Assisting an individual to choose, prepare for, and enter into an occupation suited to their aptitude is known as:",
-    options: [
-      "A):   Vocational Guidance",
+    "id": "c11-edu-5-mcq-8",
+    "question": "Assisting an individual to choose, prepare for, and enter into an occupation suited to their aptitude is known as:",
+    "options": [
+      "A):   Moral Indoctrination",
       "B):   Personal Counseling",
-      "C):   Moral Indoctrination",
-      "D):   Social Service",
+      "C):   Vocational Guidance",
+      "D):   Social Service"
     ],
-    correctAnswer: "a",
-    explanation: "Vocational guidance helps an individual navigate occupational choice and career readiness.",
+    "correctAnswer": "c",
+    "explanation": "Vocational guidance helps an individual navigate occupational choice and career readiness."
   },
   {
-    id: "c11-edu-5-mcq-9",
-    question: "What is the national initiative launched by the Ministry of Education for psychosocial support and mental health of students?",
-    options: [
-      "A):   MANODARPAN",
-      "B):   DIKSHA",
+    "id": "c11-edu-5-mcq-9",
+    "question": "What is the national initiative launched by the Ministry of Education for psychosocial support and mental health of students?",
+    "options": [
+      "A):   DIKSHA",
+      "B):   MANODARPAN",
       "C):   SWAYAM",
-      "D):   NISHTHA",
+      "D):   NISHTHA"
     ],
-    correctAnswer: "a",
-    explanation: "MANODARPAN is the national platform providing psychological and mental health counseling to students.",
+    "correctAnswer": "b",
+    "explanation": "MANODARPAN is the national platform providing psychological and mental health counseling to students."
   },
   {
-    id: "c11-edu-5-mcq-10",
-    question: "A cardinal ethical rule of professional school counseling is:",
-    options: [
+    "id": "c11-edu-5-mcq-10",
+    "question": "A cardinal ethical rule of professional school counseling is:",
+    "options": [
       "A):   Strict professional confidentiality of personal disclosures",
       "B):   Publishing student counseling notes on school notice boards",
       "C):   Giving corporal punishment to stressed students",
-      "D):   Grading students with marks after therapy",
+      "D):   Grading students with marks after therapy"
     ],
-    correctAnswer: "a",
-    explanation: "Confidentiality is the sacred ethical cornerstone of the professional counselor-client relationship.",
+    "correctAnswer": "a",
+    "explanation": "Confidentiality is the sacred ethical cornerstone of the professional counselor-client relationship."
   },
-
-  // TIER 2: MODERATE & CONCEPTUAL (Q11 to Q18)
   {
-    id: "c11-edu-5-mcq-11",
-    question: "Which of the following best describes the structural relationship between Guidance and Counseling?",
-    options: [
-      "A):   Guidance is the broad comprehensive umbrella, while Counseling is its intimate, specialized core",
+    "id": "c11-edu-5-mcq-11",
+    "question": "Which of the following best describes the structural relationship between Guidance and Counseling?",
+    "options": [
+      "A):   Guidance is only for elderly people, while counseling is only for infants",
       "B):   Guidance and counseling are completely opposite and unrelated fields",
-      "C):   Guidance is only for elderly people, while counseling is only for infants",
-      "D):   Counseling is for animals, while guidance is for machines",
+      "C):   Guidance is the broad comprehensive umbrella, while Counseling is its intimate, specialized core",
+      "D):   Counseling is for animals, while guidance is for machines"
     ],
-    correctAnswer: "a",
-    explanation: "All counseling is guidance, but counseling represents the specialized, one-on-one core of the broad guidance umbrella.",
+    "correctAnswer": "c",
+    "explanation": "All counseling is guidance, but counseling represents the specialized, one-on-one core of the broad guidance umbrella."
   },
   {
-    id: "c11-edu-5-mcq-12",
-    question: "Why should a guidance counselor NEVER impose a decision upon a student?",
-    options: [
-      "A):   Because the ultimate goal of guidance is to cultivate autonomous self-direction and decision-making capacity in the student",
+    "id": "c11-edu-5-mcq-12",
+    "question": "Why should a guidance counselor NEVER impose a decision upon a student?",
+    "options": [
+      "A):   Because decisions do not matter in education",
       "B):   Because counselors are forbidden by law from speaking to students",
       "C):   Because students always know everything automatically",
-      "D):   Because decisions do not matter in education",
+      "D):   Because the ultimate goal of guidance is to cultivate autonomous self-direction and decision-making capacity in the student"
     ],
-    correctAnswer: "a",
-    explanation: "Guidance is not imposition; it empowers the individual to understand themselves and make self-directed choices.",
+    "correctAnswer": "d",
+    "explanation": "Guidance is not imposition; it empowers the individual to understand themselves and make self-directed choices."
   },
   {
-    id: "c11-edu-5-mcq-13",
-    question: "In Carl Rogers' Client-Centered Therapy, what is meant by 'Unconditional Positive Regard'?",
-    options: [
+    "id": "c11-edu-5-mcq-13",
+    "question": "In Carl Rogers' Client-Centered Therapy, what is meant by 'Unconditional Positive Regard'?",
+    "options": [
       "A):   Accepting and respecting the client as a worthy human being without judgment, conditions, or moral condemnation",
       "B):   Always agreeing with everything the client says, even if illegal",
       "C):   Giving financial prizes to the client after each session",
-      "D):   Never allowing the client to talk",
+      "D):   Never allowing the client to talk"
     ],
-    correctAnswer: "a",
-    explanation: "Unconditional positive regard means providing total warmth, non-judgmental acceptance, and respect to the client.",
+    "correctAnswer": "a",
+    "explanation": "Unconditional positive regard means providing total warmth, non-judgmental acceptance, and respect to the client."
   },
   {
-    id: "c11-edu-5-mcq-14",
-    question: "What is the primary role of a Classroom Teacher in relation to the Professional School Counselor?",
-    options: [
-      "A):   Acting as a sensitive frontline observer and referral agent who spots distress and connects the child with the counselor",
-      "B):   Conducting deep clinical psychotherapy in the classroom",
+    "id": "c11-edu-5-mcq-14",
+    "question": "What is the primary role of a Classroom Teacher in relation to the Professional School Counselor?",
+    "options": [
+      "A):   Conducting deep clinical psychotherapy in the classroom",
+      "B):   Acting as a sensitive frontline observer and referral agent who spots distress and connects the child with the counselor",
       "C):   Refusing to talk to the school counselor",
-      "D):   Punishing students who visit the counseling room",
+      "D):   Punishing students who visit the counseling room"
     ],
-    correctAnswer: "a",
-    explanation: "The teacher observes student behavior daily and acts as the vital referral agent connecting troubled students to counselors.",
+    "correctAnswer": "b",
+    "explanation": "The teacher observes student behavior daily and acts as the vital referral agent connecting troubled students to counselors."
   },
   {
-    id: "c11-edu-5-mcq-15",
-    question: "According to developmental psychologist Erik Erikson, which major psycho-social crisis characterizes the adolescent stage?",
-    options: [
-      "A):   Identity vs. Role Confusion",
+    "id": "c11-edu-5-mcq-15",
+    "question": "According to developmental psychologist Erik Erikson, which major psycho-social crisis characterizes the adolescent stage?",
+    "options": [
+      "A):   Autonomy vs. Shame",
       "B):   Trust vs. Mistrust",
       "C):   Integrity vs. Despair",
-      "D):   Autonomy vs. Shame",
+      "D):   Identity vs. Role Confusion"
     ],
-    correctAnswer: "a",
-    explanation: "Erikson identified 'Identity vs. Role Confusion' as the defining psychological struggle of adolescence.",
+    "correctAnswer": "d",
+    "explanation": "Erikson identified 'Identity vs. Role Confusion' as the defining psychological struggle of adolescence."
   },
   {
-    id: "c11-edu-5-mcq-16",
-    question: "Why is the common belief that 'Guidance is only for problematic, delinquent, or failing students' fundamentally flawed?",
-    options: [
-      "A):   Because guidance is a universal developmental service that helps gifted, average, and slow learners maximize their potential",
+    "id": "c11-edu-5-mcq-16",
+    "question": "Why is the common belief that 'Guidance is only for problematic, delinquent, or failing students' fundamentally flawed?",
+    "options": [
+      "A):   Because delinquent students are expelled immediately",
       "B):   Because schools do not have failing students",
-      "C):   Because delinquent students are expelled immediately",
-      "D):   Because only teachers need guidance",
+      "C):   Because guidance is a universal developmental service that helps gifted, average, and slow learners maximize their potential",
+      "D):   Because only teachers need guidance"
     ],
-    correctAnswer: "a",
-    explanation: "Guidance is developmental and preventive for all normal individuals, not merely a remedial patch for problem cases.",
+    "correctAnswer": "c",
+    "explanation": "Guidance is developmental and preventive for all normal individuals, not merely a remedial patch for problem cases."
   },
   {
-    id: "c11-edu-5-mcq-17",
-    question: "A high school student is paralyzed with indecision between choosing Science and Arts streams after Class 10. Which type of guidance does the student urgently require?",
-    options: [
-      "A):   Educational and Vocational Guidance",
-      "B):   Medical Surgical Guidance",
+    "id": "c11-edu-5-mcq-17",
+    "question": "A high school student is paralyzed with indecision between choosing Science and Arts streams after Class 10. Which type of guidance does the student urgently require?",
+    "options": [
+      "A):   Medical Surgical Guidance",
+      "B):   Educational and Vocational Guidance",
       "C):   Legal Criminal Guidance",
-      "D):   Retirement Guidance",
+      "D):   Retirement Guidance"
     ],
-    correctAnswer: "a",
-    explanation: "Selecting academic streams and mapping them to future careers requires educational and vocational guidance.",
+    "correctAnswer": "b",
+    "explanation": "Selecting academic streams and mapping them to future careers requires educational and vocational guidance."
   },
   {
-    id: "c11-edu-5-mcq-18",
-    question: "How can parents most constructively contribute to their adolescent child's career decision-making?",
-    options: [
+    "id": "c11-edu-5-mcq-18",
+    "question": "How can parents most constructively contribute to their adolescent child's career decision-making?",
+    "options": [
       "A):   By supporting the child's genuine aptitudes and interests rather than projecting unfulfilled parental ambitions",
       "B):   By forcing the child to pursue medical entrance exams against their will",
       "C):   By locking the child in a room with study guides",
-      "D):   By constantly comparing the child with high-scoring neighborhood children",
+      "D):   By constantly comparing the child with high-scoring neighborhood children"
     ],
-    correctAnswer: "a",
-    explanation: "Constructive parenting respects the child's unique aptitudes rather than imposing unfulfilled parental dreams.",
+    "correctAnswer": "a",
+    "explanation": "Constructive parenting respects the child's unique aptitudes rather than imposing unfulfilled parental dreams."
   },
-
-  // TIER 3: ADVANCE & ANALYTICAL (Q19 to Q25)
   {
-    id: "c11-edu-5-mcq-19",
-    question: "Assertion (A): Confidentiality in school counseling cannot be violated except in cases involving imminent danger of self-harm or violence.\nReason (R): Trust is the fundamental bedrock of the counseling relationship, without which clients will conceal critical emotional pain.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-5-mcq-19",
+    "question": "Assertion (A): Confidentiality in school counseling cannot be violated except in cases involving imminent danger of self-harm or violence.\nReason (R): Trust is the fundamental bedrock of the counseling relationship, without which clients will conceal critical emotional pain.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "Confidentiality builds therapeutic trust; breaking it is only permissible ethically when life safety is at imminent risk.",
+    "correctAnswer": "d",
+    "explanation": "Confidentiality builds therapeutic trust; breaking it is only permissible ethically when life safety is at imminent risk."
   },
   {
-    id: "c11-edu-5-mcq-20",
-    question: "A Class 11 student begins skipping school, shows sudden weight loss, and displays razor cuts on their wrists. What is the immediate ethical obligation of the classroom teacher?",
-    options: [
-      "A):   Immediately report the critical safety concern to the professional school counselor and principal for crisis intervention",
+    "id": "c11-edu-5-mcq-20",
+    "question": "A Class 11 student begins skipping school, shows sudden weight loss, and displays razor cuts on their wrists. What is the immediate ethical obligation of the classroom teacher?",
+    "options": [
+      "A):   Ignore the situation because it is outside the academic syllabus",
       "B):   Scold the student publicly in front of the entire assembly",
-      "C):   Ignore the situation because it is outside the academic syllabus",
-      "D):   Give the student failing marks in the upcoming exam",
+      "C):   Immediately report the critical safety concern to the professional school counselor and principal for crisis intervention",
+      "D):   Give the student failing marks in the upcoming exam"
     ],
-    correctAnswer: "a",
-    explanation: "Signs of self-harm require prompt, confidential referral to the professional school counselor and crisis intervention.",
+    "correctAnswer": "c",
+    "explanation": "Signs of self-harm require prompt, confidential referral to the professional school counselor and crisis intervention."
   },
   {
-    id: "c11-edu-5-mcq-21",
-    question: "Compare the counselor's stance in Williamson's Directive counseling versus Rogers' Non-Directive counseling. What is the fundamental difference?",
-    options: [
-      "A):   Williamson acts as an authoritative diagnostic expert prescribing solutions, whereas Rogers acts as an empathetic facilitator empowering client self-discovery",
-      "B):   Williamson does not use language while Rogers uses sign language",
+    "id": "c11-edu-5-mcq-21",
+    "question": "Compare the counselor's stance in Williamson's Directive counseling versus Rogers' Non-Directive counseling. What is the fundamental difference?",
+    "options": [
+      "A):   Williamson does not use language while Rogers uses sign language",
+      "B):   Williamson acts as an authoritative diagnostic expert prescribing solutions, whereas Rogers acts as an empathetic facilitator empowering client self-discovery",
       "C):   Rogers orders the client what to do while Williamson listens silently",
-      "D):   There is zero philosophical difference between them",
+      "D):   There is zero philosophical difference between them"
     ],
-    correctAnswer: "a",
-    explanation: "Directive is counselor-led diagnosis and prescription; non-directive is client-led self-realization and growth.",
+    "correctAnswer": "b",
+    "explanation": "Directive is counselor-led diagnosis and prescription; non-directive is client-led self-realization and growth."
   },
   {
-    id: "c11-edu-5-mcq-22",
-    question: "Match the Counseling Pioneer with their foundational concept:\n(a) Carl Rogers       — (1) Eclectic Counseling Synthesis\n(b) E. G. Williamson  — (2) Period of Storm and Stress\n(c) F. C. Thorne      — (3) Client-Centered Therapy & Unconditional Regard\n(d) G. Stanley Hall   — (4) Directive Counselor-Centered Model",
-    options: [
-      "A):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)",
+    "id": "c11-edu-5-mcq-22",
+    "question": "Match the Counseling Pioneer with their foundational concept:\n(a) Carl Rogers       — (1) Eclectic Counseling Synthesis\n(b) E. G. Williamson  — (2) Period of Storm and Stress\n(c) F. C. Thorne      — (3) Client-Centered Therapy & Unconditional Regard\n(d) G. Stanley Hall   — (4) Directive Counselor-Centered Model",
+    "options": [
+      "A):   (a)-(3), (b)-(1), (c)-(4), (d)-(2)",
       "B):   (a)-(1), (b)-(2), (c)-(3), (d)-(4)",
       "C):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
-      "D):   (a)-(3), (b)-(1), (c)-(4), (d)-(2)",
+      "D):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)"
     ],
-    correctAnswer: "a",
-    explanation: "Rogers: Client-Centered; Williamson: Directive; Thorne: Eclectic; Hall: Storm & Stress.",
+    "correctAnswer": "d",
+    "explanation": "Rogers: Client-Centered; Williamson: Directive; Thorne: Eclectic; Hall: Storm & Stress."
   },
   {
-    id: "c11-edu-5-mcq-23",
-    question: "How does the National Education Policy (NEP 2020) mandate the institutionalization of school counseling?",
-    options: [
+    "id": "c11-edu-5-mcq-23",
+    "question": "How does the National Education Policy (NEP 2020) mandate the institutionalization of school counseling?",
+    "options": [
       "A):   By requiring school complexes to have access to certified professional counselors and social workers to foster socio-emotional wellbeing",
       "B):   By banning students from expressing emotional feelings in school",
       "C):   By replacing teachers with automated machines",
-      "D):   By abolishing all career counseling exhibitions",
+      "D):   By abolishing all career counseling exhibitions"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 explicitly incorporates trained professional counselors and social workers within school complexes.",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 explicitly incorporates trained professional counselors and social workers within school complexes."
   },
   {
-    id: "c11-edu-5-mcq-24",
-    question: "Why is peer counseling emerging as an extraordinarily potent tool in modern adolescent guidance programs?",
-    options: [
-      "A):   Because teenagers frequently confide in empathetic peers more readily and without fear of adult judgment than with authority figures",
+    "id": "c11-edu-5-mcq-24",
+    "question": "Why is peer counseling emerging as an extraordinarily potent tool in modern adolescent guidance programs?",
+    "options": [
+      "A):   Because peer counselors are paid government salaries",
       "B):   Because peer counseling eliminates the need for adult school principals",
-      "C):   Because peer counselors are paid government salaries",
-      "D):   Because teenagers never have any emotional problems",
+      "C):   Because teenagers frequently confide in empathetic peers more readily and without fear of adult judgment than with authority figures",
+      "D):   Because teenagers never have any emotional problems"
     ],
-    correctAnswer: "a",
-    explanation: "Adolescents relate strongly to peers; trained peer mentors bridge the gap to adult counselors without generating fear.",
+    "correctAnswer": "c",
+    "explanation": "Adolescents relate strongly to peers; trained peer mentors bridge the gap to adult counselors without generating fear."
   },
   {
-    id: "c11-edu-5-mcq-25",
-    question: "A student excels exceptionally in spatial reasoning and fine-motor design (DAT scores), but their parents demand they study corporate law. Which guidance service can resolve this familial conflict constructively?",
-    options: [
-      "A):   A collaborative vocational and family counseling session presenting objective aptitude test results and career mapping",
-      "B):   Expelling the student from the school immediately",
+    "id": "c11-edu-5-mcq-25",
+    "question": "A student excels exceptionally in spatial reasoning and fine-motor design (DAT scores), but their parents demand they study corporate law. Which guidance service can resolve this familial conflict constructively?",
+    "options": [
+      "A):   Expelling the student from the school immediately",
+      "B):   A collaborative vocational and family counseling session presenting objective aptitude test results and career mapping",
       "C):   Fining the parents heavily",
-      "D):   Ignoring the student's test scores completely",
+      "D):   Ignoring the student's test scores completely"
     ],
-    correctAnswer: "a",
-    explanation: "Collaborative counseling using standardized aptitude data and career mapping helps parents and students reach an informed, harmonious decision.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Collaborative counseling using standardized aptitude data and career mapping helps parents and students reach an informed, harmonious decision."
+  }
 ];

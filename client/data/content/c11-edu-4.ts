@@ -679,309 +679,304 @@ export const c11Edu4HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu4Mcqs = [
-  // TIER 1: EASY & DIRECT RECALL (Q1 to Q10)
   {
-    id: "c11-edu-4-mcq-1",
-    question: "Who coined the term 'Sociology' in the year 1839 from Latin 'Socius' and Greek 'Logos'?",
-    options: [
-      "A):   Auguste Comte",
-      "B):   George Payne",
+    "id": "c11-edu-4-mcq-1",
+    "question": "Who coined the term 'Sociology' in the year 1839 from Latin 'Socius' and Greek 'Logos'?",
+    "options": [
+      "A):   George Payne",
+      "B):   Auguste Comte",
       "C):   Emile Durkheim",
-      "D):   John Dewey",
+      "D):   John Dewey"
     ],
-    correctAnswer: "a",
-    explanation: "Auguste Comte is recognized as the Father of Sociology and coined the term in 1839.",
+    "correctAnswer": "b",
+    "explanation": "Auguste Comte is recognized as the Father of Sociology and coined the term in 1839."
   },
   {
-    id: "c11-edu-4-mcq-2",
-    question: "Who is widely acknowledged as the 'Father of Educational Sociology' following his 1928 book 'Principles of Educational Sociology'?",
-    options: [
+    "id": "c11-edu-4-mcq-2",
+    "question": "Who is widely acknowledged as the 'Father of Educational Sociology' following his 1928 book 'Principles of Educational Sociology'?",
+    "options": [
       "A):   George Payne",
       "B):   Wilhelm Wundt",
       "C):   Max Weber",
-      "D):   Aristotle",
+      "D):   Aristotle"
     ],
-    correctAnswer: "a",
-    explanation: "George Payne is known as the Father of Educational Sociology.",
+    "correctAnswer": "a",
+    "explanation": "George Payne is known as the Father of Educational Sociology."
   },
   {
-    id: "c11-edu-4-mcq-3",
-    question: "The word 'Culture' is derived from the Latin verb 'Colere'. What does it mean?",
-    options: [
-      "A):   To cultivate or refine",
+    "id": "c11-edu-4-mcq-3",
+    "question": "The word 'Culture' is derived from the Latin verb 'Colere'. What does it mean?",
+    "options": [
+      "A):   To trade or sell",
       "B):   To fight or conquer",
-      "C):   To trade or sell",
-      "D):   To run or compete",
+      "C):   To cultivate or refine",
+      "D):   To run or compete"
     ],
-    correctAnswer: "a",
-    explanation: "'Colere' is a Latin verb meaning to cultivate, till the ground, or refine human faculties.",
+    "correctAnswer": "c",
+    "explanation": "'Colere' is a Latin verb meaning to cultivate, till the ground, or refine human faculties."
   },
   {
-    id: "c11-edu-4-mcq-4",
-    question: "Who gave the classic 1871 definition: 'Culture is that complex whole which includes knowledge, belief, art, morals, law, custom...'?",
-    options: [
-      "A):   Edward Burnett Tylor",
+    "id": "c11-edu-4-mcq-4",
+    "question": "Who gave the classic 1871 definition: 'Culture is that complex whole which includes knowledge, belief, art, morals, law, custom...'?",
+    "options": [
+      "A):   B. F. Skinner",
       "B):   Karl Marx",
       "C):   John Locke",
-      "D):   B. F. Skinner",
+      "D):   Edward Burnett Tylor"
     ],
-    correctAnswer: "a",
-    explanation: "E. B. Tylor formulated this foundational anthropological definition in 1871.",
+    "correctAnswer": "d",
+    "explanation": "E. B. Tylor formulated this foundational anthropological definition in 1871."
   },
   {
-    id: "c11-edu-4-mcq-5",
-    question: "Which of the following belongs to Material Culture?",
-    options: [
-      "A):   Buildings, computers, and tools",
-      "B):   Religious beliefs and moral values",
+    "id": "c11-edu-4-mcq-5",
+    "question": "Which of the following belongs to Material Culture?",
+    "options": [
+      "A):   Religious beliefs and moral values",
+      "B):   Buildings, computers, and tools",
       "C):   Poetry and philosophical theories",
-      "D):   Customs and wedding ceremonies",
+      "D):   Customs and wedding ceremonies"
     ],
-    correctAnswer: "a",
-    explanation: "Material culture consists of concrete, tangible physical artifacts created by humans.",
+    "correctAnswer": "b",
+    "explanation": "Material culture consists of concrete, tangible physical artifacts created by humans."
   },
   {
-    id: "c11-edu-4-mcq-6",
-    question: "Who formulated the famous sociological concept of 'Cultural Lag'?",
-    options: [
+    "id": "c11-edu-4-mcq-6",
+    "question": "Who formulated the famous sociological concept of 'Cultural Lag'?",
+    "options": [
       "A):   William F. Ogburn",
       "B):   Emile Durkheim",
       "C):   Sir Percy Nunn",
-      "D):   Auguste Comte",
+      "D):   Auguste Comte"
     ],
-    correctAnswer: "a",
-    explanation: "W. F. Ogburn introduced the concept of Cultural Lag in his 1922 book 'Social Change'.",
+    "correctAnswer": "a",
+    "explanation": "W. F. Ogburn introduced the concept of Cultural Lag in his 1922 book 'Social Change'."
   },
   {
-    id: "c11-edu-4-mcq-7",
-    question: "'Social change is a change in social relationships.' This concise definition was given by:",
-    options: [
-      "A):   MacIver and Page",
+    "id": "c11-edu-4-mcq-7",
+    "question": "'Social change is a change in social relationships.' This concise definition was given by:",
+    "options": [
+      "A):   Plato",
       "B):   Gates and Taylor",
       "C):   Rousseau",
-      "D):   Plato",
+      "D):   MacIver and Page"
     ],
-    correctAnswer: "a",
-    explanation: "MacIver and Page famously defined social change as changes in social relationships.",
+    "correctAnswer": "d",
+    "explanation": "MacIver and Page famously defined social change as changes in social relationships."
   },
   {
-    id: "c11-edu-4-mcq-8",
-    question: "Which of the following is NOT an inherent characteristic of culture?",
-    options: [
+    "id": "c11-edu-4-mcq-8",
+    "question": "Which of the following is NOT an inherent characteristic of culture?",
+    "options": [
       "A):   Culture is learned",
-      "B):   Culture is biologically inherited through genes",
-      "C):   Culture is shared socially",
-      "D):   Culture is transmissive across generations",
+      "B):   Culture is shared socially",
+      "C):   Culture is biologically inherited through genes",
+      "D):   Culture is transmissive across generations"
     ],
-    correctAnswer: "b",
-    explanation: "Culture is never biologically inherited through genes; it is acquired socially through learning and socialization.",
+    "correctAnswer": "c",
+    "explanation": "Culture is never biologically inherited through genes; it is acquired socially through learning and socialization."
   },
   {
-    id: "c11-edu-4-mcq-9",
-    question: "Who defined Education as 'the socialization of the younger generation'?",
-    options: [
-      "A):   Emile Durkheim",
-      "B):   Auguste Comte",
+    "id": "c11-edu-4-mcq-9",
+    "question": "Who defined Education as 'the socialization of the younger generation'?",
+    "options": [
+      "A):   Auguste Comte",
+      "B):   Emile Durkheim",
       "C):   Sigmund Freud",
-      "D):   Wilhelm Wundt",
+      "D):   Wilhelm Wundt"
     ],
-    correctAnswer: "a",
-    explanation: "French sociologist Emile Durkheim defined education as the methodical socialization of the young.",
+    "correctAnswer": "b",
+    "explanation": "French sociologist Emile Durkheim defined education as the methodical socialization of the young."
   },
   {
-    id: "c11-edu-4-mcq-10",
-    question: "Which of the following represents Non-Material Culture?",
-    options: [
-      "A):   Smartphones and tablets",
-      "B):   Moral values, language, and customs",
+    "id": "c11-edu-4-mcq-10",
+    "question": "Which of the following represents Non-Material Culture?",
+    "options": [
+      "A):   Moral values, language, and customs",
+      "B):   Smartphones and tablets",
       "C):   Railways and bridges",
-      "D):   School laboratory apparatus",
+      "D):   School laboratory apparatus"
     ],
-    correctAnswer: "b",
-    explanation: "Non-material culture consists of intangible values, beliefs, customs, and language.",
+    "correctAnswer": "a",
+    "explanation": "Non-material culture consists of intangible values, beliefs, customs, and language."
   },
-
-  // TIER 2: MODERATE & CONCEPTUAL (Q11 to Q18)
   {
-    id: "c11-edu-4-mcq-11",
-    question: "How does Educational Sociology differ fundamentally from the Sociology of Education?",
-    options: [
-      "A):   Educational sociology is practical and applied, whereas sociology of education is theoretical and descriptive",
+    "id": "c11-edu-4-mcq-11",
+    "question": "How does Educational Sociology differ fundamentally from the Sociology of Education?",
+    "options": [
+      "A):   They are completely identical in every respect",
       "B):   Educational sociology is for animals while sociology of education is for humans",
-      "C):   They are completely identical in every respect",
-      "D):   Sociology of education was invented in India only",
+      "C):   Educational sociology is practical and applied, whereas sociology of education is theoretical and descriptive",
+      "D):   Sociology of education was invented in India only"
     ],
-    correctAnswer: "a",
-    explanation: "Educational sociology is applied and normative, while sociology of education is theoretical general sociology.",
+    "correctAnswer": "c",
+    "explanation": "Educational sociology is applied and normative, while sociology of education is theoretical general sociology."
   },
   {
-    id: "c11-edu-4-mcq-12",
-    question: "According to W. F. Ogburn, what is the underlying cause of 'Cultural Lag'?",
-    options: [
-      "A):   Material culture (technology) advances rapidly, while non-material culture (customs and ethics) lags behind",
+    "id": "c11-edu-4-mcq-12",
+    "question": "According to W. F. Ogburn, what is the underlying cause of 'Cultural Lag'?",
+    "options": [
+      "A):   Governments abolish all technological inventions",
       "B):   People stop going to schools",
       "C):   Non-material culture moves faster than technology",
-      "D):   Governments abolish all technological inventions",
+      "D):   Material culture (technology) advances rapidly, while non-material culture (customs and ethics) lags behind"
     ],
-    correctAnswer: "a",
-    explanation: "Cultural lag arises when material technology gallops forward faster than human ethical and legal customs can adapt.",
+    "correctAnswer": "d",
+    "explanation": "Cultural lag arises when material technology gallops forward faster than human ethical and legal customs can adapt."
   },
   {
-    id: "c11-edu-4-mcq-13",
-    question: "In what way does Culture directly dictate the educational curriculum of a nation?",
-    options: [
+    "id": "c11-edu-4-mcq-13",
+    "question": "In what way does Culture directly dictate the educational curriculum of a nation?",
+    "options": [
       "A):   School subjects, literature, and history directly reflect the values, ideals, and achievements of that culture",
       "B):   Culture forces schools to teach only foreign languages",
       "C):   Culture closes all schools during winter",
-      "D):   Culture prohibits the study of science",
+      "D):   Culture prohibits the study of science"
     ],
-    correctAnswer: "a",
-    explanation: "Curriculum is the vehicle for transmitting the prevailing cultural heritage, ideals, and knowledge of a society.",
+    "correctAnswer": "a",
+    "explanation": "Curriculum is the vehicle for transmitting the prevailing cultural heritage, ideals, and knowledge of a society."
   },
   {
-    id: "c11-edu-4-mcq-14",
-    question: "How does Education serve as a 'critical filter' or 'refiner' of culture rather than a blind mirror?",
-    options: [
-      "A):   By eliminating outdated superstitions, caste discrimination, and dogmas while preserving noble heritage",
-      "B):   By destroying all ancient historical libraries",
+    "id": "c11-edu-4-mcq-14",
+    "question": "How does Education serve as a 'critical filter' or 'refiner' of culture rather than a blind mirror?",
+    "options": [
+      "A):   By destroying all ancient historical libraries",
+      "B):   By eliminating outdated superstitions, caste discrimination, and dogmas while preserving noble heritage",
       "C):   By forcing all students to adopt identical clothing",
-      "D):   By rejecting all scientific research",
+      "D):   By rejecting all scientific research"
     ],
-    correctAnswer: "a",
-    explanation: "Education critically weeds out obsolete, harmful taboos (untouchability, child marriage) while conserving positive values.",
+    "correctAnswer": "b",
+    "explanation": "Education critically weeds out obsolete, harmful taboos (untouchability, child marriage) while conserving positive values."
   },
   {
-    id: "c11-edu-4-mcq-15",
-    question: "Why is Education described as an 'Agent of Social Change'?",
-    options: [
-      "A):   Because it creates new scientific values, dismantles social prejudices, and trains reformers",
+    "id": "c11-edu-4-mcq-15",
+    "question": "Why is Education described as an 'Agent of Social Change'?",
+    "options": [
+      "A):   Because it opposes all forms of modernization",
       "B):   Because it prevents people from talking to each other",
       "C):   Because it enforces ancient feudal caste systems",
-      "D):   Because it opposes all forms of modernization",
+      "D):   Because it creates new scientific values, dismantles social prejudices, and trains reformers"
     ],
-    correctAnswer: "a",
-    explanation: "Education awakens critical consciousness, equips youth with modern skills, and instills democratic ideals that reform society.",
+    "correctAnswer": "d",
+    "explanation": "Education awakens critical consciousness, equips youth with modern skills, and instills democratic ideals that reform society."
   },
   {
-    id: "c11-edu-4-mcq-16",
-    question: "Which of the following scenarios best demonstrates Education acting as a 'Product of Social Change'?",
-    options: [
-      "A):   Schools adopting computer coding and AI curricula following the global digital revolution",
+    "id": "c11-edu-4-mcq-16",
+    "question": "Which of the following scenarios best demonstrates Education acting as a 'Product of Social Change'?",
+    "options": [
+      "A):   A school closing down permanently due to heavy rainfall",
       "B):   A teacher assigning homework from an ancient manuscript",
-      "C):   A school closing down permanently due to heavy rainfall",
-      "D):   Students wearing traditional uniform",
+      "C):   Schools adopting computer coding and AI curricula following the global digital revolution",
+      "D):   Students wearing traditional uniform"
     ],
-    correctAnswer: "a",
-    explanation: "When external technological revolution forces schools to overhaul their curricula and classrooms, education is reacting as a product of social change.",
+    "correctAnswer": "c",
+    "explanation": "When external technological revolution forces schools to overhaul their curricula and classrooms, education is reacting as a product of social change."
   },
   {
-    id: "c11-edu-4-mcq-17",
-    question: "What is meant by the 'Super-Organic' characteristic of culture?",
-    options: [
-      "A):   Culture outlives the physical lifespan of any individual human creator and persists across centuries",
-      "B):   Culture is composed entirely of organic chemicals",
+    "id": "c11-edu-4-mcq-17",
+    "question": "What is meant by the 'Super-Organic' characteristic of culture?",
+    "options": [
+      "A):   Culture is composed entirely of organic chemicals",
+      "B):   Culture outlives the physical lifespan of any individual human creator and persists across centuries",
       "C):   Culture exists only inside vegetables and crops",
-      "D):   Culture can be seen through an optical microscope",
+      "D):   Culture can be seen through an optical microscope"
     ],
-    correctAnswer: "a",
-    explanation: "'Super-organic' means culture transcends individual biological lifespans and endures across generations as a social legacy.",
+    "correctAnswer": "b",
+    "explanation": "'Super-organic' means culture transcends individual biological lifespans and endures across generations as a social legacy."
   },
   {
-    id: "c11-edu-4-mcq-18",
-    question: "Which of the following is considered a major sociological barrier that resists social change through education?",
-    options: [
+    "id": "c11-edu-4-mcq-18",
+    "question": "Which of the following is considered a major sociological barrier that resists social change through education?",
+    "options": [
       "A):   Deep-seated traditional orthodoxy, caste prejudices, and fear of losing privilege",
       "B):   Abundance of modern science laboratories",
       "C):   High literacy rates among women",
-      "D):   Prompt distribution of school scholarships",
+      "D):   Prompt distribution of school scholarships"
     ],
-    correctAnswer: "a",
-    explanation: "Orthodoxy, fatalism, cultural inertia, and entrenched caste/gender prejudices resist progressive social transformation.",
+    "correctAnswer": "a",
+    "explanation": "Orthodoxy, fatalism, cultural inertia, and entrenched caste/gender prejudices resist progressive social transformation."
   },
-
-  // TIER 3: ADVANCE & ANALYTICAL (Q19 to Q25)
   {
-    id: "c11-edu-4-mcq-19",
-    question: "Assertion (A): The invention of smartphones without corresponding digital etiquette and cyber-ethics education created rampant cyberbullying.\nReason (R): As W. F. Ogburn proved, material culture advances exponentially faster than non-material customs and laws, causing Cultural Lag.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-4-mcq-19",
+    "question": "Assertion (A): The invention of smartphones without corresponding digital etiquette and cyber-ethics education created rampant cyberbullying.\nReason (R): As W. F. Ogburn proved, material culture advances exponentially faster than non-material customs and laws, causing Cultural Lag.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "Smartphones (material) outpaced cyber ethics (non-material), causing a classic cultural lag that education must bridge.",
+    "correctAnswer": "d",
+    "explanation": "Smartphones (material) outpaced cyber ethics (non-material), causing a classic cultural lag that education must bridge."
   },
   {
-    id: "c11-edu-4-mcq-20",
-    question: "A village community previously restricted girls from studying past Grade 5. After the establishment of a local high school and awareness campaigns, girls now top state exams and enter universities. This illustrates:",
-    options: [
-      "A):   Education acting as a transformative agent of social change and gender justice",
+    "id": "c11-edu-4-mcq-20",
+    "question": "A village community previously restricted girls from studying past Grade 5. After the establishment of a local high school and awareness campaigns, girls now top state exams and enter universities. This illustrates:",
+    "options": [
+      "A):   Education acting merely as a passive preserver of orthodox tradition",
       "B):   The negative impact of extreme individualism",
-      "C):   Education acting merely as a passive preserver of orthodox tradition",
-      "D):   Totalitarian military indoctrination",
+      "C):   Education acting as a transformative agent of social change and gender justice",
+      "D):   Totalitarian military indoctrination"
     ],
-    correctAnswer: "a",
-    explanation: "Breaking entrenched gender subjugation through schooling is a prime example of education driving progressive social change.",
+    "correctAnswer": "c",
+    "explanation": "Breaking entrenched gender subjugation through schooling is a prime example of education driving progressive social change."
   },
   {
-    id: "c11-edu-4-mcq-21",
-    question: "How does the National Education Policy (NEP 2020) embody the sociological synthesis between Cultural Preservation and Modernization?",
-    options: [
-      "A):   By reviving Indian Knowledge Systems (IKS) and mother-tongue instruction alongside cutting-edge global 21st-century digital competencies",
-      "B):   By banning all foreign science and technology textbooks",
+    "id": "c11-edu-4-mcq-21",
+    "question": "How does the National Education Policy (NEP 2020) embody the sociological synthesis between Cultural Preservation and Modernization?",
+    "options": [
+      "A):   By banning all foreign science and technology textbooks",
+      "B):   By reviving Indian Knowledge Systems (IKS) and mother-tongue instruction alongside cutting-edge global 21st-century digital competencies",
       "C):   By abolishing all historical monuments",
-      "D):   By mandating ancient Gurukul forest living for all students",
+      "D):   By mandating ancient Gurukul forest living for all students"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 uniquely synthesizes rootedness in Indian cultural ethos with cutting-edge global digital skills.",
+    "correctAnswer": "b",
+    "explanation": "NEP 2020 uniquely synthesizes rootedness in Indian cultural ethos with cutting-edge global digital skills."
   },
   {
-    id: "c11-edu-4-mcq-22",
-    question: "Match the Sociological Thinker with their core contribution:\n(a) George Payne      — (1) Defined Culture as that complex whole (1871)\n(b) E. B. Tylor       — (2) Formulated theory of Cultural Lag\n(c) W. F. Ogburn      — (3) Father of Educational Sociology (1928)\n(d) Emile Durkheim    — (4) Education is the socialization of the young",
-    options: [
-      "A):   (a)-(3), (b)-(1), (c)-(2), (d)-(4)",
+    "id": "c11-edu-4-mcq-22",
+    "question": "Match the Sociological Thinker with their core contribution:\n(a) George Payne      — (1) Defined Culture as that complex whole (1871)\n(b) E. B. Tylor       — (2) Formulated theory of Cultural Lag\n(c) W. F. Ogburn      — (3) Father of Educational Sociology (1928)\n(d) Emile Durkheim    — (4) Education is the socialization of the young",
+    "options": [
+      "A):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)",
       "B):   (a)-(1), (b)-(2), (c)-(3), (d)-(4)",
       "C):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
-      "D):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)",
+      "D):   (a)-(3), (b)-(1), (c)-(2), (d)-(4)"
     ],
-    correctAnswer: "a",
-    explanation: "Payne: Father of Ed. Sociology; Tylor: Complex Whole Culture; Ogburn: Cultural Lag; Durkheim: Socialization.",
+    "correctAnswer": "d",
+    "explanation": "Payne: Father of Ed. Sociology; Tylor: Complex Whole Culture; Ogburn: Cultural Lag; Durkheim: Socialization."
   },
   {
-    id: "c11-edu-4-mcq-23",
-    question: "Why can an educational system never be 'socially neutral'?",
-    options: [
+    "id": "c11-edu-4-mcq-23",
+    "question": "Why can an educational system never be 'socially neutral'?",
+    "options": [
       "A):   Because education inevitably reflects and promotes the values, power structures, and cultural ideals of the society it serves",
       "B):   Because all schools are built by the military",
       "C):   Because teachers are forbidden from voting",
-      "D):   Because textbooks are written in code",
+      "D):   Because textbooks are written in code"
     ],
-    correctAnswer: "a",
-    explanation: "Education is intrinsically a social institution; its curriculum, language, and goals reflect societal power and cultural values.",
+    "correctAnswer": "a",
+    "explanation": "Education is intrinsically a social institution; its curriculum, language, and goals reflect societal power and cultural values."
   },
   {
-    id: "c11-edu-4-mcq-24",
-    question: "Which of the following is the most accurate description of the relationship between Education and Social Change?",
-    options: [
+    "id": "c11-edu-4-mcq-24",
+    "question": "Which of the following is the most accurate description of the relationship between Education and Social Change?",
+    "options": [
       "A):   It is a one-way street where only society changes education",
-      "B):   It is a reciprocal, two-way interaction where education initiates social changes and remodels itself in response to social transformations",
-      "C):   Education and social change have zero connection or influence on each other",
-      "D):   Education only prevents changes from ever taking place",
+      "B):   Education and social change have zero connection or influence on each other",
+      "C):   It is a reciprocal, two-way interaction where education initiates social changes and remodels itself in response to social transformations",
+      "D):   Education only prevents changes from ever taking place"
     ],
-    correctAnswer: "b",
-    explanation: "Education and social change operate in a symbiotic, two-way loop: education causes change and is remodeled by change.",
+    "correctAnswer": "c",
+    "explanation": "Education and social change operate in a symbiotic, two-way loop: education causes change and is remodeled by change."
   },
   {
-    id: "c11-edu-4-mcq-25",
-    question: "When an educational system successfully stabilizes social change, what does it achieve?",
-    options: [
-      "A):   It prevents social dislocation and moral anarchy by anchoring youth in core ethical values while adapting smoothly to technological changes",
-      "B):   It halts all scientific discoveries permanently",
+    "id": "c11-edu-4-mcq-25",
+    "question": "When an educational system successfully stabilizes social change, what does it achieve?",
+    "options": [
+      "A):   It halts all scientific discoveries permanently",
+      "B):   It prevents social dislocation and moral anarchy by anchoring youth in core ethical values while adapting smoothly to technological changes",
       "C):   It ensures that no student ever questions authority",
-      "D):   It eliminates all competitive examinations",
+      "D):   It eliminates all competitive examinations"
     ],
-    correctAnswer: "a",
-    explanation: "Stabilizing social change means guiding society through transitions smoothly without suffering cultural breakdown or moral vacuum.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Stabilizing social change means guiding society through transitions smoothly without suffering cultural breakdown or moral vacuum."
+  }
 ];

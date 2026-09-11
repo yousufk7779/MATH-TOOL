@@ -584,309 +584,304 @@ export const c11Edu6HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu6Mcqs = [
-  // TIER 1: EASY & DIRECT RECALL (Q1 to Q10)
   {
-    id: "c11-edu-6-mcq-1",
-    question: "Who was the Chairman of the Committee that drafted the National Education Policy 2020?",
-    options: [
-      "A):   Dr. K. Kasturirangan",
-      "B):   Dr. Yash Pal",
+    "id": "c11-edu-6-mcq-1",
+    "question": "Who was the Chairman of the Committee that drafted the National Education Policy 2020?",
+    "options": [
+      "A):   Dr. Yash Pal",
+      "B):   Dr. K. Kasturirangan",
       "C):   Dr. D. S. Kothari",
-      "D):   Prof. Yashwant Sinha",
+      "D):   Prof. Yashwant Sinha"
     ],
-    correctAnswer: "a",
-    explanation: "Former ISRO chief Dr. K. Kasturirangan chaired the Committee for the Draft National Education Policy 2020.",
+    "correctAnswer": "b",
+    "explanation": "Former ISRO chief Dr. K. Kasturirangan chaired the Committee for the Draft National Education Policy 2020."
   },
   {
-    id: "c11-edu-6-mcq-2",
-    question: "What is the new pedagogical and curricular structure introduced by NEP 2020?",
-    options: [
+    "id": "c11-edu-6-mcq-2",
+    "question": "What is the new pedagogical and curricular structure introduced by NEP 2020?",
+    "options": [
       "A):   5+3+3+4",
       "B):   10+2+3",
       "C):   8+4",
-      "D):   5+4+3+2",
+      "D):   5+4+3+2"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 restructured Indian schooling into the 5+3+3+4 framework.",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 restructured Indian schooling into the 5+3+3+4 framework."
   },
   {
-    id: "c11-edu-6-mcq-3",
-    question: "In the 5+3+3+4 design, how many years are dedicated to the Foundational Stage?",
-    options: [
-      "A):   5 Years (Ages 3 to 8)",
+    "id": "c11-edu-6-mcq-3",
+    "question": "In the 5+3+3+4 design, how many years are dedicated to the Foundational Stage?",
+    "options": [
+      "A):   2 Years (Ages 4 to 6)",
       "B):   3 Years (Ages 6 to 9)",
-      "C):   2 Years (Ages 4 to 6)",
-      "D):   4 Years (Ages 14 to 18)",
+      "C):   5 Years (Ages 3 to 8)",
+      "D):   4 Years (Ages 14 to 18)"
     ],
-    correctAnswer: "a",
-    explanation: "The Foundational Stage spans 5 years (3 years preschool/Balvatika + Grades 1 & 2).",
+    "correctAnswer": "c",
+    "explanation": "The Foundational Stage spans 5 years (3 years preschool/Balvatika + Grades 1 & 2)."
   },
   {
-    id: "c11-edu-6-mcq-4",
-    question: "Which of the following is NOT one of the Five Guiding Pillars of NEP 2020?",
-    options: [
-      "A):   Commercialization",
+    "id": "c11-edu-6-mcq-4",
+    "question": "Which of the following is NOT one of the Five Guiding Pillars of NEP 2020?",
+    "options": [
+      "A):   Accountability",
       "B):   Access",
       "C):   Equity",
-      "D):   Accountability",
+      "D):   Commercialization"
     ],
-    correctAnswer: "a",
-    explanation: "The 5 pillars are Access, Equity, Quality, Affordability, and Accountability. Commercialization is strictly opposed.",
+    "correctAnswer": "d",
+    "explanation": "The 5 pillars are Access, Equity, Quality, Affordability, and Accountability. Commercialization is strictly opposed."
   },
   {
-    id: "c11-edu-6-mcq-5",
-    question: "What is the full form of 'FLN', which is considered an urgent national mission under NEP 2020?",
-    options: [
-      "A):   Foundational Literacy and Numeracy",
-      "B):   Formal Learning Network",
+    "id": "c11-edu-6-mcq-5",
+    "question": "What is the full form of 'FLN', which is considered an urgent national mission under NEP 2020?",
+    "options": [
+      "A):   Formal Learning Network",
+      "B):   Foundational Literacy and Numeracy",
       "C):   Federal Language Norm",
-      "D):   Financial Literacy Network",
+      "D):   Financial Literacy Network"
     ],
-    correctAnswer: "a",
-    explanation: "FLN stands for Foundational Literacy and Numeracy, targeted under the NIPUN Bharat mission.",
+    "correctAnswer": "b",
+    "explanation": "FLN stands for Foundational Literacy and Numeracy, targeted under the NIPUN Bharat mission."
   },
   {
-    id: "c11-edu-6-mcq-6",
-    question: "From which grade does NEP 2020 introduce vocational education and coding with 10 bagless days of internships?",
-    options: [
+    "id": "c11-edu-6-mcq-6",
+    "question": "From which grade does NEP 2020 introduce vocational education and coding with 10 bagless days of internships?",
+    "options": [
       "A):   Grade 6",
       "B):   Grade 1",
       "C):   Grade 9",
-      "D):   Grade 11",
+      "D):   Grade 11"
     ],
-    correctAnswer: "a",
-    explanation: "Vocational crafts and coding exposure begin in Grade 6 in the Middle Stage.",
+    "correctAnswer": "a",
+    "explanation": "Vocational crafts and coding exposure begin in Grade 6 in the Middle Stage."
   },
   {
-    id: "c11-edu-6-mcq-7",
-    question: "The NCF for the Foundational Stage (NCF-FS 2022) bases early childhood development on which ancient Indian concept?",
-    options: [
-      "A):   Panchakosha",
+    "id": "c11-edu-6-mcq-7",
+    "question": "The NCF for the Foundational Stage (NCF-FS 2022) bases early childhood development on which ancient Indian concept?",
+    "options": [
+      "A):   Triguna",
       "B):   Ashtanga",
       "C):   Navaratna",
-      "D):   Triguna",
+      "D):   Panchakosha"
     ],
-    correctAnswer: "a",
-    explanation: "NCF-FS 2022 is anchored in the Panchakosha model (the five sheaths of human development).",
+    "correctAnswer": "d",
+    "explanation": "NCF-FS 2022 is anchored in the Panchakosha model (the five sheaths of human development)."
   },
   {
-    id: "c11-edu-6-mcq-8",
-    question: "What is 'Jaadui Pitara' launched by the Ministry of Education under NCF-FS?",
-    options: [
-      "A):   A play-based learning-teaching material kit with toys, flashcards, and puzzles for ages 3–8",
+    "id": "c11-edu-6-mcq-8",
+    "question": "What is 'Jaadui Pitara' launched by the Ministry of Education under NCF-FS?",
+    "options": [
+      "A):   A military recruitment uniform",
       "B):   A digital bank account",
-      "C):   A military recruitment uniform",
-      "D):   A sports stadium",
+      "C):   A play-based learning-teaching material kit with toys, flashcards, and puzzles for ages 3–8",
+      "D):   A sports stadium"
     ],
-    correctAnswer: "a",
-    explanation: "Jaadui Pitara is an indigenous play-based learning kit containing toys, puppets, and puzzles.",
+    "correctAnswer": "c",
+    "explanation": "Jaadui Pitara is an indigenous play-based learning kit containing toys, puppets, and puzzles."
   },
   {
-    id: "c11-edu-6-mcq-9",
-    question: "What is the national target set by NEP 2020 for public expenditure on education as a percentage of GDP?",
-    options: [
-      "A):   6% of GDP",
-      "B):   1% of GDP",
+    "id": "c11-edu-6-mcq-9",
+    "question": "What is the national target set by NEP 2020 for public expenditure on education as a percentage of GDP?",
+    "options": [
+      "A):   1% of GDP",
+      "B):   6% of GDP",
       "C):   15% of GDP",
-      "D):   25% of GDP",
+      "D):   25% of GDP"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 targets increasing public investment in education to 6% of GDP.",
+    "correctAnswer": "b",
+    "explanation": "NEP 2020 targets increasing public investment in education to 6% of GDP."
   },
   {
-    id: "c11-edu-6-mcq-10",
-    question: "What is PARAKH, set up under NEP 2020?",
-    options: [
+    "id": "c11-edu-6-mcq-10",
+    "question": "What is PARAKH, set up under NEP 2020?",
+    "options": [
       "A):   A National Assessment Center for holistic student evaluation and board standardization",
       "B):   A student loan agency",
       "C):   A sports tournament committee",
-      "D):   A foreign university campus",
+      "D):   A foreign university campus"
     ],
-    correctAnswer: "a",
-    explanation: "PARAKH is the national assessment center established to standardize evaluation norms across Indian boards.",
+    "correctAnswer": "a",
+    "explanation": "PARAKH is the national assessment center established to standardize evaluation norms across Indian boards."
   },
-
-  // TIER 2: MODERATE & CONCEPTUAL (Q11 to Q18)
   {
-    id: "c11-edu-6-mcq-11",
-    question: "How does the Foundational Stage of NEP 2020 remedy the major deficiency of the former 10+2 system?",
-    options: [
-      "A):   By formally incorporating Early Childhood Care and Education (ECCE for ages 3 to 6) into the school structure",
+    "id": "c11-edu-6-mcq-11",
+    "question": "How does the Foundational Stage of NEP 2020 remedy the major deficiency of the former 10+2 system?",
+    "options": [
+      "A):   By making boarding school compulsory for toddlers",
       "B):   By abolishing all preschools",
-      "C):   By making boarding school compulsory for toddlers",
-      "D):   By mandating 6-hour daily written exams for 4-year-olds",
+      "C):   By formally incorporating Early Childhood Care and Education (ECCE for ages 3 to 6) into the school structure",
+      "D):   By mandating 6-hour daily written exams for 4-year-olds"
     ],
-    correctAnswer: "a",
-    explanation: "The old 10+2 system began formal schooling at age 6, ignoring the critical brain development window of ages 3–6.",
+    "correctAnswer": "c",
+    "explanation": "The old 10+2 system began formal schooling at age 6, ignoring the critical brain development window of ages 3–6."
   },
   {
-    id: "c11-edu-6-mcq-12",
-    question: "In the Secondary Stage (Grades 9 to 12), what is the most revolutionary curricular change introduced by NEP 2020?",
-    options: [
-      "A):   Elimination of rigid separations between Arts, Science, Commerce, and vocational streams",
+    "id": "c11-edu-6-mcq-12",
+    "question": "In the Secondary Stage (Grades 9 to 12), what is the most revolutionary curricular change introduced by NEP 2020?",
+    "options": [
+      "A):   Restricting secondary schooling to boys only",
       "B):   Forcing all students to study only Physics",
       "C):   Banning students from learning languages",
-      "D):   Restricting secondary schooling to boys only",
+      "D):   Elimination of rigid separations between Arts, Science, Commerce, and vocational streams"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 allows multidisciplinary subject choice, enabling students to combine sciences with arts or vocational skills.",
+    "correctAnswer": "d",
+    "explanation": "NEP 2020 allows multidisciplinary subject choice, enabling students to combine sciences with arts or vocational skills."
   },
   {
-    id: "c11-edu-6-mcq-13",
-    question: "Under the 'Equity' pillar of NEP 2020, what are 'SEZs'?",
-    options: [
+    "id": "c11-edu-6-mcq-13",
+    "question": "Under the 'Equity' pillar of NEP 2020, what are 'SEZs'?",
+    "options": [
       "A):   Special Education Zones created in areas with significant disadvantaged populations",
       "B):   Special Economic Zones for tax evasion",
       "C):   Space Exploration Zones",
-      "D):   Sport Entertainment Zones",
+      "D):   Sport Entertainment Zones"
     ],
-    correctAnswer: "a",
-    explanation: "Special Education Zones (SEZs) target infrastructure and quality educational resources to marginalized regions.",
+    "correctAnswer": "a",
+    "explanation": "Special Education Zones (SEZs) target infrastructure and quality educational resources to marginalized regions."
   },
   {
-    id: "c11-edu-6-mcq-14",
-    question: "Why does NEP 2020 strongly advocate the Mother Tongue / Home Language as the medium of instruction up to Grade 5?",
-    options: [
-      "A):   Because young children learn, comprehend, and express abstract concepts most effortlessly in their mother tongue",
-      "B):   Because English books are prohibited in India",
+    "id": "c11-edu-6-mcq-14",
+    "question": "Why does NEP 2020 strongly advocate the Mother Tongue / Home Language as the medium of instruction up to Grade 5?",
+    "options": [
+      "A):   Because English books are prohibited in India",
+      "B):   Because young children learn, comprehend, and express abstract concepts most effortlessly in their mother tongue",
       "C):   Because teachers do not know other languages",
-      "D):   Because foreign languages damage physical health",
+      "D):   Because foreign languages damage physical health"
     ],
-    correctAnswer: "a",
-    explanation: "Cognitive science establishes that foundational concepts are assimilated most naturally in the child's home language.",
+    "correctAnswer": "b",
+    "explanation": "Cognitive science establishes that foundational concepts are assimilated most naturally in the child's home language."
   },
   {
-    id: "c11-edu-6-mcq-15",
-    question: "In the Panchakosha model of NCF-FS, which sheath relates to mental and emotional wellbeing?",
-    options: [
-      "A):   Manomaya Kosha",
+    "id": "c11-edu-6-mcq-15",
+    "question": "In the Panchakosha model of NCF-FS, which sheath relates to mental and emotional wellbeing?",
+    "options": [
+      "A):   Vijnanamaya Kosha",
       "B):   Annamaya Kosha",
       "C):   Pranamaya Kosha",
-      "D):   Vijnanamaya Kosha",
+      "D):   Manomaya Kosha"
     ],
-    correctAnswer: "a",
-    explanation: "Manomaya Kosha governs emotional stability, feelings, empathy, and mental health.",
+    "correctAnswer": "d",
+    "explanation": "Manomaya Kosha governs emotional stability, feelings, empathy, and mental health."
   },
   {
-    id: "c11-edu-6-mcq-16",
-    question: "How does the NCF-SE 2023 propose to alleviate high-stakes examination anxiety for Class 10 and 12 students?",
-    options: [
-      "A):   By offering Board Examinations at least twice a year in modular formats testing core competencies",
+    "id": "c11-edu-6-mcq-16",
+    "question": "How does the NCF-SE 2023 propose to alleviate high-stakes examination anxiety for Class 10 and 12 students?",
+    "options": [
+      "A):   By holding exams secretly at midnight",
       "B):   By permanently eliminating all evaluation and granting diplomas to everyone without study",
-      "C):   By holding exams secretly at midnight",
-      "D):   By doubling the length of question papers",
+      "C):   By offering Board Examinations at least twice a year in modular formats testing core competencies",
+      "D):   By doubling the length of question papers"
     ],
-    correctAnswer: "a",
-    explanation: "Holding board exams twice a year in modular formats allows students to improve their scores and reduces exam trauma.",
+    "correctAnswer": "c",
+    "explanation": "Holding board exams twice a year in modular formats allows students to improve their scores and reduces exam trauma."
   },
   {
-    id: "c11-edu-6-mcq-17",
-    question: "What is the primary function of the State School Standards Authority (SSSA) established under the 'Accountability' pillar?",
-    options: [
-      "A):   Setting transparent minimum standards and public disclosures for both public and private schools",
-      "B):   Manufacturing school buses",
+    "id": "c11-edu-6-mcq-17",
+    "question": "What is the primary function of the State School Standards Authority (SSSA) established under the 'Accountability' pillar?",
+    "options": [
+      "A):   Manufacturing school buses",
+      "B):   Setting transparent minimum standards and public disclosures for both public and private schools",
       "C):   Running commercial retail shops",
-      "D):   Administering university entrance tests",
+      "D):   Administering university entrance tests"
     ],
-    correctAnswer: "a",
-    explanation: "The SSSA provides independent, transparent accreditation and quality monitoring for all schools in a state.",
+    "correctAnswer": "b",
+    "explanation": "The SSSA provides independent, transparent accreditation and quality monitoring for all schools in a state."
   },
   {
-    id: "c11-edu-6-mcq-18",
-    question: "In the Three-Language Formula outlined in NCF-SE 2023, what is the mandatory requirement regarding the languages chosen?",
-    options: [
+    "id": "c11-edu-6-mcq-18",
+    "question": "In the Three-Language Formula outlined in NCF-SE 2023, what is the mandatory requirement regarding the languages chosen?",
+    "options": [
       "A):   At least two of the three languages must be native to India",
       "B):   All three languages must be foreign languages",
       "C):   Only ancient Latin is permitted",
-      "D):   Students cannot learn any Indian language",
+      "D):   Students cannot learn any Indian language"
     ],
-    correctAnswer: "a",
-    explanation: "NCF-SE requires that at least two of the three languages studied must be native Indian languages.",
+    "correctAnswer": "a",
+    "explanation": "NCF-SE requires that at least two of the three languages studied must be native Indian languages."
   },
-
-  // TIER 3: ADVANCE & ANALYTICAL (Q19 to Q25)
   {
-    id: "c11-edu-6-mcq-19",
-    question: "Assertion (A): Over 85% of cumulative brain development occurs prior to age 6, making the Foundational Stage biologically crucial.\nReason (R): NEP 2020 formalizes ECCE through play-based Anganwadis and Balvatikas to nurture neural growth during this formative window.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-6-mcq-19",
+    "question": "Assertion (A): Over 85% of cumulative brain development occurs prior to age 6, making the Foundational Stage biologically crucial.\nReason (R): NEP 2020 formalizes ECCE through play-based Anganwadis and Balvatikas to nurture neural growth during this formative window.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "Neuroscientific research confirms that the early brain develops fastest before age 6, directly justifying NEP's Foundational Stage.",
+    "correctAnswer": "d",
+    "explanation": "Neuroscientific research confirms that the early brain develops fastest before age 6, directly justifying NEP's Foundational Stage."
   },
   {
-    id: "c11-edu-6-mcq-20",
-    question: "A school replaces traditional numerical report cards with a 360-degree Holistic Progress Card (HPC) including self-evaluation, peer feedback, and project competencies. This represents a shift towards:",
-    options: [
-      "A):   Competency-based, formative assessment advocated by NCF-SE",
+    "id": "c11-edu-6-mcq-20",
+    "question": "A school replaces traditional numerical report cards with a 360-degree Holistic Progress Card (HPC) including self-evaluation, peer feedback, and project competencies. This represents a shift towards:",
+    "options": [
+      "A):   The narrow view of education",
       "B):   A return to colonial rote memorization",
-      "C):   The narrow view of education",
-      "D):   Totalitarian military discipline",
+      "C):   Competency-based, formative assessment advocated by NCF-SE",
+      "D):   Totalitarian military discipline"
     ],
-    correctAnswer: "a",
-    explanation: "The 360-degree HPC embodies formative, competency-based assessment evaluating the whole child.",
+    "correctAnswer": "c",
+    "explanation": "The 360-degree HPC embodies formative, competency-based assessment evaluating the whole child."
   },
   {
-    id: "c11-edu-6-mcq-21",
-    question: "How does NEP 2020 synthesize Mahatma Gandhi's 'Nai Talim' (Basic Education) with 21st-century technological realities?",
-    options: [
-      "A):   By reviving hands-on craft learning through 10 bagless internship days while integrating modern coding and AI from Grade 6",
-      "B):   By abolishing all computers in schools",
+    "id": "c11-edu-6-mcq-21",
+    "question": "How does NEP 2020 synthesize Mahatma Gandhi's 'Nai Talim' (Basic Education) with 21st-century technological realities?",
+    "options": [
+      "A):   By abolishing all computers in schools",
+      "B):   By reviving hands-on craft learning through 10 bagless internship days while integrating modern coding and AI from Grade 6",
       "C):   By rejecting all agricultural education",
-      "D):   By forcing students to study only British history",
+      "D):   By forcing students to study only British history"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 bridges Gandhi's dignity of manual craft with modern digital coding and experiential learning.",
+    "correctAnswer": "b",
+    "explanation": "NEP 2020 bridges Gandhi's dignity of manual craft with modern digital coding and experiential learning."
   },
   {
-    id: "c11-edu-6-mcq-22",
-    question: "Match the NEP 2020 Term with its correct function:\n(a) PARAKH    — (1) Indigenous play kit for ages 3–8\n(b) SSSA      — (2) Holistic Early Childhood Sheaths\n(c) Jaadui Pitara — (3) National Assessment Center\n(d) Panchakosha — (4) State School Standards Authority",
-    options: [
-      "A):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)",
+    "id": "c11-edu-6-mcq-22",
+    "question": "Match the NEP 2020 Term with its correct function:\n(a) PARAKH    — (1) Indigenous play kit for ages 3–8\n(b) SSSA      — (2) Holistic Early Childhood Sheaths\n(c) Jaadui Pitara — (3) National Assessment Center\n(d) Panchakosha — (4) State School Standards Authority",
+    "options": [
+      "A):   (a)-(3), (b)-(1), (c)-(4), (d)-(2)",
       "B):   (a)-(1), (b)-(2), (c)-(3), (d)-(4)",
       "C):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
-      "D):   (a)-(3), (b)-(1), (c)-(4), (d)-(2)",
+      "D):   (a)-(3), (b)-(4), (c)-(1), (d)-(2)"
     ],
-    correctAnswer: "a",
-    explanation: "PARAKH: Assessment Center; SSSA: State Standards Authority; Jaadui Pitara: Play Kit; Panchakosha: 5 Sheaths.",
+    "correctAnswer": "d",
+    "explanation": "PARAKH: Assessment Center; SSSA: State Standards Authority; Jaadui Pitara: Play Kit; Panchakosha: 5 Sheaths."
   },
   {
-    id: "c11-edu-6-mcq-23",
-    question: "Why does NCF-FS explicitly prohibit formal written examinations and heavy printed textbooks for children aged 3 to 6?",
-    options: [
+    "id": "c11-edu-6-mcq-23",
+    "question": "Why does NCF-FS explicitly prohibit formal written examinations and heavy printed textbooks for children aged 3 to 6?",
+    "options": [
       "A):   Because premature rote testing induces stress and stunts creative, sensory, and socio-emotional play-based development",
       "B):   Because printing presses ran out of paper",
       "C):   Because teachers do not know how to grade tests",
-      "D):   Because written exams are illegal for everyone in India",
+      "D):   Because written exams are illegal for everyone in India"
     ],
-    correctAnswer: "a",
-    explanation: "Early childhood requires joyful play, sensory exploration, and dialogue; premature written testing causes severe cognitive harm.",
+    "correctAnswer": "a",
+    "explanation": "Early childhood requires joyful play, sensory exploration, and dialogue; premature written testing causes severe cognitive harm."
   },
   {
-    id: "c11-edu-6-mcq-24",
-    question: "Under the 'Quality' pillar of NEP 2020, what is the mandatory requirement for in-service teachers regarding continuous professional development (CPD)?",
-    options: [
-      "A):   At least 50 hours of continuous professional development per year",
+    "id": "c11-edu-6-mcq-24",
+    "question": "Under the 'Quality' pillar of NEP 2020, what is the mandatory requirement for in-service teachers regarding continuous professional development (CPD)?",
+    "options": [
+      "A):   Writing a 500-page book every month",
       "B):   Zero hours of training",
-      "C):   Writing a 500-page book every month",
-      "D):   Teaching without salary for two years",
+      "C):   At least 50 hours of continuous professional development per year",
+      "D):   Teaching without salary for two years"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 mandates at least 50 hours of continuous professional development annually for every teacher and headmaster.",
+    "correctAnswer": "c",
+    "explanation": "NEP 2020 mandates at least 50 hours of continuous professional development annually for every teacher and headmaster."
   },
   {
-    id: "c11-edu-6-mcq-25",
-    question: "Which of the following best summarizes the ultimate philosophical vision of NEP 2020?",
-    options: [
-      "A):   Creating an India-centered education system that transforms the nation into a vibrant, equitable, and sustainable global knowledge superpower",
-      "B):   Adopting 19th-century colonial British schooling across all states",
+    "id": "c11-edu-6-mcq-25",
+    "question": "Which of the following best summarizes the ultimate philosophical vision of NEP 2020?",
+    "options": [
+      "A):   Adopting 19th-century colonial British schooling across all states",
+      "B):   Creating an India-centered education system that transforms the nation into a vibrant, equitable, and sustainable global knowledge superpower",
       "C):   Eliminating all schools and relying exclusively on private tutoring",
-      "D):   Restricting secondary and higher education to wealthy elites",
+      "D):   Restricting secondary and higher education to wealthy elites"
     ],
-    correctAnswer: "a",
-    explanation: "NEP 2020 envisions an India-centered educational system transforming the nation into a global knowledge superpower.",
-  },
+    "correctAnswer": "b",
+    "explanation": "NEP 2020 envisions an India-centered educational system transforming the nation into a global knowledge superpower."
+  }
 ];

@@ -727,309 +727,304 @@ export const c11Edu3HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu3Mcqs = [
-  // TIER 1: EASY & DIRECT RECALL (Q1 to Q10)
   {
-    id: "c11-edu-3-mcq-1",
-    question: "The word 'Psychology' is derived from two Greek words, 'Psyche' and 'Logos'. What does 'Psyche' literally mean?",
-    options: [
+    "id": "c11-edu-3-mcq-1",
+    "question": "The word 'Psychology' is derived from two Greek words, 'Psyche' and 'Logos'. What does 'Psyche' literally mean?",
+    "options": [
       "A):   Brain",
       "B):   Soul or Mind",
       "C):   Body",
-      "D):   Behavior",
+      "D):   Behavior"
     ],
-    correctAnswer: "b",
-    explanation: "In ancient Greek, 'Psyche' means the soul, breath of life, or mind.",
+    "correctAnswer": "b",
+    "explanation": "In ancient Greek, 'Psyche' means the soul, breath of life, or mind."
   },
   {
-    id: "c11-edu-3-mcq-2",
-    question: "Who founded the world's first experimental psychology laboratory at Leipzig, Germany in 1879?",
-    options: [
+    "id": "c11-edu-3-mcq-2",
+    "question": "Who founded the world's first experimental psychology laboratory at Leipzig, Germany in 1879?",
+    "options": [
       "A):   Wilhelm Wundt",
       "B):   Sigmund Freud",
       "C):   John B. Watson",
-      "D):   B. F. Skinner",
+      "D):   B. F. Skinner"
     ],
-    correctAnswer: "a",
-    explanation: "Wilhelm Wundt established the world's first psychological laboratory in 1879 at Leipzig.",
+    "correctAnswer": "a",
+    "explanation": "Wilhelm Wundt established the world's first psychological laboratory in 1879 at Leipzig."
   },
   {
-    id: "c11-edu-3-mcq-3",
-    question: "Who is celebrated as the Father of Behaviorism in Psychology?",
-    options: [
+    "id": "c11-edu-3-mcq-3",
+    "question": "Who is celebrated as the Father of Behaviorism in Psychology?",
+    "options": [
       "A):   E. L. Thorndike",
-      "B):   John B. Watson",
-      "C):   Jean Piaget",
-      "D):   William James",
+      "B):   Jean Piaget",
+      "C):   John B. Watson",
+      "D):   William James"
     ],
-    correctAnswer: "b",
-    explanation: "J. B. Watson founded Behaviorism, asserting that psychology must study observable behavior.",
+    "correctAnswer": "c",
+    "explanation": "J. B. Watson founded Behaviorism, asserting that psychology must study observable behavior."
   },
   {
-    id: "c11-edu-3-mcq-4",
-    question: "'First psychology lost its soul, then its mind, then its consciousness; it still has behavior of a sort.' This famous summary was given by:",
-    options: [
-      "A):   R. S. Woodworth",
+    "id": "c11-edu-3-mcq-4",
+    "question": "'First psychology lost its soul, then its mind, then its consciousness; it still has behavior of a sort.' This famous summary was given by:",
+    "options": [
+      "A):   Plato",
       "B):   Ivan Pavlov",
       "C):   B. F. Skinner",
-      "D):   Plato",
+      "D):   R. S. Woodworth"
     ],
-    correctAnswer: "a",
-    explanation: "R. S. Woodworth famously summarized the four evolutionary stages of psychology.",
+    "correctAnswer": "d",
+    "explanation": "R. S. Woodworth famously summarized the four evolutionary stages of psychology."
   },
   {
-    id: "c11-edu-3-mcq-5",
-    question: "'Learning is the modification of behavior through experience and training.' This standard definition is credited to:",
-    options: [
-      "A):   Gates and others",
-      "B):   Aristotle",
+    "id": "c11-edu-3-mcq-5",
+    "question": "'Learning is the modification of behavior through experience and training.' This standard definition is credited to:",
+    "options": [
+      "A):   Aristotle",
+      "B):   Gates and others",
       "C):   John Dewey",
-      "D):   Herbart",
+      "D):   Herbart"
     ],
-    correctAnswer: "a",
-    explanation: "Gates and associates provided this widely cited textbook definition of learning.",
+    "correctAnswer": "b",
+    "explanation": "Gates and associates provided this widely cited textbook definition of learning."
   },
   {
-    id: "c11-edu-3-mcq-6",
-    question: "The Latin root word of 'Motivation' is 'Movere'. What does it mean?",
-    options: [
-      "A):   To meditate",
-      "B):   To move or set in motion",
+    "id": "c11-edu-3-mcq-6",
+    "question": "The Latin root word of 'Motivation' is 'Movere'. What does it mean?",
+    "options": [
+      "A):   To move or set in motion",
+      "B):   To meditate",
       "C):   To remember",
-      "D):   To judge",
+      "D):   To judge"
     ],
-    correctAnswer: "b",
-    explanation: "'Movere' is a Latin verb meaning 'to move' or stimulate action.",
+    "correctAnswer": "a",
+    "explanation": "'Movere' is a Latin verb meaning 'to move' or stimulate action."
   },
   {
-    id: "c11-edu-3-mcq-7",
-    question: "Who termed Motivation in school learning as the 'superhighway to effective instruction'?",
-    options: [
-      "A):   B. F. Skinner",
+    "id": "c11-edu-3-mcq-7",
+    "question": "Who termed Motivation in school learning as the 'superhighway to effective instruction'?",
+    "options": [
+      "A):   Pestalozzi",
       "B):   Wilhelm Wundt",
       "C):   Sigmund Freud",
-      "D):   Pestalozzi",
+      "D):   B. F. Skinner"
     ],
-    correctAnswer: "a",
-    explanation: "B. F. Skinner famously called motivation the superhighway to learning.",
+    "correctAnswer": "d",
+    "explanation": "B. F. Skinner famously called motivation the superhighway to learning."
   },
   {
-    id: "c11-edu-3-mcq-8",
-    question: "Studying hard purely out of intense personal curiosity and joy of learning is an example of:",
-    options: [
+    "id": "c11-edu-3-mcq-8",
+    "question": "Studying hard purely out of intense personal curiosity and joy of learning is an example of:",
+    "options": [
       "A):   Extrinsic motivation",
-      "B):   Intrinsic motivation",
-      "C):   Negative punishment",
-      "D):   Conditioned reflex",
+      "B):   Negative punishment",
+      "C):   Intrinsic motivation",
+      "D):   Conditioned reflex"
     ],
-    correctAnswer: "b",
-    explanation: "Intrinsic motivation comes from internal joy, self-expression, and curiosity without external rewards.",
+    "correctAnswer": "c",
+    "explanation": "Intrinsic motivation comes from internal joy, self-expression, and curiosity without external rewards."
   },
   {
-    id: "c11-edu-3-mcq-9",
-    question: "Which of the following is an example of Extrinsic Motivation?",
-    options: [
+    "id": "c11-edu-3-mcq-9",
+    "question": "Which of the following is an example of Extrinsic Motivation?",
+    "options": [
       "A):   Playing music because you love the melody",
       "B):   Solving mathematical problems to win a cash prize",
       "C):   Reading history because it fascinates your imagination",
-      "D):   Volunteering to help animals out of deep empathy",
+      "D):   Volunteering to help animals out of deep empathy"
     ],
-    correctAnswer: "b",
-    explanation: "Working to win cash prizes, medals, or marks is driven by external incentives (extrinsic).",
+    "correctAnswer": "b",
+    "explanation": "Working to win cash prizes, medals, or marks is driven by external incentives (extrinsic)."
   },
   {
-    id: "c11-edu-3-mcq-10",
-    question: "Which thinker defined Educational Psychology concisely as 'the science of education'?",
-    options: [
+    "id": "c11-edu-3-mcq-10",
+    "question": "Which thinker defined Educational Psychology concisely as 'the science of education'?",
+    "options": [
       "A):   E. A. Peel",
       "B):   Plato",
       "C):   J. B. Watson",
-      "D):   Rousseau",
+      "D):   Rousseau"
     ],
-    correctAnswer: "a",
-    explanation: "E. A. Peel concisely defined Educational Psychology as the science of education.",
+    "correctAnswer": "a",
+    "explanation": "E. A. Peel concisely defined Educational Psychology as the science of education."
   },
-
-  // TIER 2: MODERATE & CONCEPTUAL (Q11 to Q18)
   {
-    id: "c11-edu-3-mcq-11",
-    question: "Why was the early definition of Psychology as the 'Science of the Soul' abandoned by modern science?",
-    options: [
+    "id": "c11-edu-3-mcq-11",
+    "question": "Why was the early definition of Psychology as the 'Science of the Soul' abandoned by modern science?",
+    "options": [
       "A):   Because the soul is an observable physical gland in the brain",
-      "B):   Because the soul is metaphysical, invisible, and cannot be measured experimentally in a laboratory",
-      "C):   Because the soul only exists in plant life",
-      "D):   Because ancient Greeks banned science",
+      "B):   Because the soul only exists in plant life",
+      "C):   Because the soul is metaphysical, invisible, and cannot be measured experimentally in a laboratory",
+      "D):   Because ancient Greeks banned science"
     ],
-    correctAnswer: "b",
-    explanation: "The soul is an abstract, metaphysical concept that cannot be observed, quantified, or tested empirically.",
+    "correctAnswer": "c",
+    "explanation": "The soul is an abstract, metaphysical concept that cannot be observed, quantified, or tested empirically."
   },
   {
-    id: "c11-edu-3-mcq-12",
-    question: "How does Maturation fundamentally differ from the process of Learning?",
-    options: [
-      "A):   Maturation is biological development determined by genetic clocks, whereas learning requires practice and experience",
+    "id": "c11-edu-3-mcq-12",
+    "question": "How does Maturation fundamentally differ from the process of Learning?",
+    "options": [
+      "A):   Learning occurs without any brain activity",
       "B):   Maturation occurs only in schools while learning occurs in forests",
       "C):   Maturation ends at birth",
-      "D):   Learning occurs without any brain activity",
+      "D):   Maturation is biological development determined by genetic clocks, whereas learning requires practice and experience"
     ],
-    correctAnswer: "a",
-    explanation: "Maturation is natural biological unfolding, whereas learning requires practice, stimulus, and conscious effort.",
+    "correctAnswer": "d",
+    "explanation": "Maturation is natural biological unfolding, whereas learning requires practice, stimulus, and conscious effort."
   },
   {
-    id: "c11-edu-3-mcq-13",
-    question: "In psychology, the phenomenon where spaced study sessions with rest intervals yield superior retention over continuous cramming is known as:",
-    options: [
-      "A):   Massed practice effect",
-      "B):   Distributed (spaced) practice effect",
+    "id": "c11-edu-3-mcq-13",
+    "question": "In psychology, the phenomenon where spaced study sessions with rest intervals yield superior retention over continuous cramming is known as:",
+    "options": [
+      "A):   Distributed (spaced) practice effect",
+      "B):   Massed practice effect",
       "C):   Subconscious blocking",
-      "D):   Sensory extinction",
+      "D):   Sensory extinction"
     ],
-    correctAnswer: "b",
-    explanation: "Distributed or spaced practice allows neural consolidation, producing far better long-term recall than cramming.",
+    "correctAnswer": "a",
+    "explanation": "Distributed or spaced practice allows neural consolidation, producing far better long-term recall than cramming."
   },
   {
-    id: "c11-edu-3-mcq-14",
-    question: "What happens in the 'Motivation Cycle' immediately after a 'Need' arises in an individual?",
-    options: [
+    "id": "c11-edu-3-mcq-14",
+    "question": "What happens in the 'Motivation Cycle' immediately after a 'Need' arises in an individual?",
+    "options": [
       "A):   The goal is achieved directly",
       "B):   A 'Drive' (internal physiological or psychological state of tension) is created",
       "C):   The organism immediately falls asleep",
-      "D):   Arousal reduces to zero",
+      "D):   Arousal reduces to zero"
     ],
-    correctAnswer: "b",
-    explanation: "A Need leads directly to a Drive (internal state of tension) that urges the organism to act.",
+    "correctAnswer": "b",
+    "explanation": "A Need leads directly to a Drive (internal state of tension) that urges the organism to act."
   },
   {
-    id: "c11-edu-3-mcq-15",
-    question: "Which of the following is a major Material/Task factor that speeds up human learning?",
-    options: [
-      "A):   Making the learning material meaningful and logically organized",
+    "id": "c11-edu-3-mcq-15",
+    "question": "Which of the following is a major Material/Task factor that speeds up human learning?",
+    "options": [
+      "A):   Excluding all diagrams and examples",
       "B):   Using nonsense syllables without real-world connections",
       "C):   Increasing the syllabus length by tenfold",
-      "D):   Excluding all diagrams and examples",
+      "D):   Making the learning material meaningful and logically organized"
     ],
-    correctAnswer: "a",
-    explanation: "Meaningfulness and logical organization allow quick cognitive schema integration and rapid recall.",
+    "correctAnswer": "d",
+    "explanation": "Meaningfulness and logical organization allow quick cognitive schema integration and rapid recall."
   },
   {
-    id: "c11-edu-3-mcq-16",
-    question: "A teacher provides immediate feedback on a student's test answers. How does this affect the student's learning?",
-    options: [
+    "id": "c11-edu-3-mcq-16",
+    "question": "A teacher provides immediate feedback on a student's test answers. How does this affect the student's learning?",
+    "options": [
       "A):   It ruins memory completely",
-      "B):   It reinforces correct associations and quickly eradicates conceptual errors",
-      "C):   It causes permanent distraction",
-      "D):   It eliminates the need for further study",
+      "B):   It causes permanent distraction",
+      "C):   It reinforces correct associations and quickly eradicates conceptual errors",
+      "D):   It eliminates the need for further study"
     ],
-    correctAnswer: "b",
-    explanation: "Immediate knowledge of results (feedback) acts as reinforcement, cementing correct responses.",
+    "correctAnswer": "c",
+    "explanation": "Immediate knowledge of results (feedback) acts as reinforcement, cementing correct responses."
   },
   {
-    id: "c11-edu-3-mcq-17",
-    question: "Why can excessive reliance on Extrinsic Rewards (like chocolates or money) be harmful in the long run?",
-    options: [
-      "A):   It can undermine and extinguish natural intrinsic curiosity once the reward is discontinued",
-      "B):   It makes textbooks disappear",
+    "id": "c11-edu-3-mcq-17",
+    "question": "Why can excessive reliance on Extrinsic Rewards (like chocolates or money) be harmful in the long run?",
+    "options": [
+      "A):   It makes textbooks disappear",
+      "B):   It can undermine and extinguish natural intrinsic curiosity once the reward is discontinued",
       "C):   It speeds up brain damage",
-      "D):   It stops physical growth",
+      "D):   It stops physical growth"
     ],
-    correctAnswer: "a",
-    explanation: "The 'overjustification effect' shows that excessive external rewards can reduce genuine internal love for learning.",
+    "correctAnswer": "b",
+    "explanation": "The 'overjustification effect' shows that excessive external rewards can reduce genuine internal love for learning."
   },
   {
-    id: "c11-edu-3-mcq-18",
-    question: "According to E. L. Thorndike's 'Law of Readiness', learning is most efficient when:",
-    options: [
+    "id": "c11-edu-3-mcq-18",
+    "question": "According to E. L. Thorndike's 'Law of Readiness', learning is most efficient when:",
+    "options": [
       "A):   The learner's nervous system is biologically and emotionally prepared to act",
       "B):   The student is forced to study under threat of severe beating",
       "C):   The classroom lights are completely turned off",
-      "D):   The teacher speaks in a foreign language",
+      "D):   The teacher speaks in a foreign language"
     ],
-    correctAnswer: "a",
-    explanation: "When a conduction unit is ready to conduct, doing so is satisfying; forcing action before readiness produces frustration.",
+    "correctAnswer": "a",
+    "explanation": "When a conduction unit is ready to conduct, doing so is satisfying; forcing action before readiness produces frustration."
   },
-
-  // TIER 3: ADVANCE & ANALYTICAL (Q19 to Q25)
   {
-    id: "c11-edu-3-mcq-19",
-    question: "Assertion (A): Attempting to teach complex formal geometry proofs to a 3-year-old child will invariably fail.\nReason (R): Cognitive learning is strictly bounded by biological maturation and neural development.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-3-mcq-19",
+    "question": "Assertion (A): Attempting to teach complex formal geometry proofs to a 3-year-old child will invariably fail.\nReason (R): Cognitive learning is strictly bounded by biological maturation and neural development.",
+    "options": [
+      "A):   (A) is false, but (R) is true",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
       "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "D):   Both (A) and (R) are true, and (R) is the correct explanation of (A)"
     ],
-    correctAnswer: "a",
-    explanation: "Learning cannot precede biological maturation. Neural structures must mature before abstract geometry can be comprehended.",
+    "correctAnswer": "d",
+    "explanation": "Learning cannot precede biological maturation. Neural structures must mature before abstract geometry can be comprehended."
   },
   {
-    id: "c11-edu-3-mcq-20",
-    question: "A student who is chronically terrified of his teacher's harsh verbal abuse frequently fails tests despite studying at home. This illustrates the negative impact of which factor on learning?",
-    options: [
+    "id": "c11-edu-3-mcq-20",
+    "question": "A student who is chronically terrified of his teacher's harsh verbal abuse frequently fails tests despite studying at home. This illustrates the negative impact of which factor on learning?",
+    "options": [
       "A):   The Task Meaningfulness factor",
-      "B):   The Socio-Emotional Classroom Climate factor",
-      "C):   The Maturation biological factor",
-      "D):   The Distributed Practice factor",
+      "B):   The Maturation biological factor",
+      "C):   The Socio-Emotional Classroom Climate factor",
+      "D):   The Distributed Practice factor"
     ],
-    correctAnswer: "b",
-    explanation: "Fear and high anxiety release stress hormones that paralyze working memory, demonstrating the critical role of emotional classroom climate.",
+    "correctAnswer": "c",
+    "explanation": "Fear and high anxiety release stress hormones that paralyze working memory, demonstrating the critical role of emotional classroom climate."
   },
   {
-    id: "c11-edu-3-mcq-21",
-    question: "An adolescent student practices coding daily for 5 hours without being told by anyone, losing track of time because of pure fascination with technology. This represents:",
-    options: [
+    "id": "c11-edu-3-mcq-21",
+    "question": "An adolescent student practices coding daily for 5 hours without being told by anyone, losing track of time because of pure fascination with technology. This represents:",
+    "options": [
       "A):   Extrinsic motivation driven by social compliance",
       "B):   Intrinsic motivation driven by autonomy, mastery, and flow",
       "C):   Classical aversive conditioning",
-      "D):   A state of severe maladjustment",
+      "D):   A state of severe maladjustment"
     ],
-    correctAnswer: "b",
-    explanation: "Engaging in deep task immersion out of pure fascination is the hallmark of intrinsic motivation and psychological 'flow'.",
+    "correctAnswer": "b",
+    "explanation": "Engaging in deep task immersion out of pure fascination is the hallmark of intrinsic motivation and psychological 'flow'."
   },
   {
-    id: "c11-edu-3-mcq-22",
-    question: "Match the Psychological Thinker with their core contribution:\n(a) Wilhelm Wundt  — (1) Father of Behaviorism\n(b) J. B. Watson     — (2) Founded first psychology lab in 1879\n(c) B. F. Skinner   — (3) Psychology lost soul, mind, consciousness\n(d) R. S. Woodworth — (4) Motivation as superhighway to learning",
-    options: [
-      "A):   (a)-(2), (b)-(1), (c)-(4), (d)-(3)",
+    "id": "c11-edu-3-mcq-22",
+    "question": "Match the Psychological Thinker with their core contribution:\n(a) Wilhelm Wundt  — (1) Father of Behaviorism\n(b) J. B. Watson     — (2) Founded first psychology lab in 1879\n(c) B. F. Skinner   — (3) Psychology lost soul, mind, consciousness\n(d) R. S. Woodworth — (4) Motivation as superhighway to learning",
+    "options": [
+      "A):   (a)-(2), (b)-(4), (c)-(1), (d)-(3)",
       "B):   (a)-(1), (b)-(2), (c)-(3), (d)-(4)",
       "C):   (a)-(4), (b)-(3), (c)-(2), (d)-(1)",
-      "D):   (a)-(2), (b)-(4), (c)-(1), (d)-(3)",
+      "D):   (a)-(2), (b)-(1), (c)-(4), (d)-(3)"
     ],
-    correctAnswer: "a",
-    explanation: "Wundt: 1st Lab 1879; Watson: Behaviorism; Skinner: Motivation Superhighway; Woodworth: Historical Aphorism.",
+    "correctAnswer": "d",
+    "explanation": "Wundt: 1st Lab 1879; Watson: Behaviorism; Skinner: Motivation Superhighway; Woodworth: Historical Aphorism."
   },
   {
-    id: "c11-edu-3-mcq-23",
-    question: "How does the National Education Policy (NEP 2020) apply the principles of Educational Psychology in student evaluation?",
-    options: [
-      "A):   By imposing mandatory 10-hour daily written tests",
-      "B):   By replacing high-stakes rote exams with a 360-degree holistic progress card covering cognitive, socio-emotional, and psychomotor domains",
+    "id": "c11-edu-3-mcq-23",
+    "question": "How does the National Education Policy (NEP 2020) apply the principles of Educational Psychology in student evaluation?",
+    "options": [
+      "A):   By replacing high-stakes rote exams with a 360-degree holistic progress card covering cognitive, socio-emotional, and psychomotor domains",
+      "B):   By imposing mandatory 10-hour daily written tests",
       "C):   By ranking students from top to bottom on public notice boards",
-      "D):   By eliminating all art, sports, and music classes",
+      "D):   By eliminating all art, sports, and music classes"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 adopts psychological holistic assessment, evaluating cognitive, emotional, and psychomotor growth rather than rote marks alone.",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 adopts psychological holistic assessment, evaluating cognitive, emotional, and psychomotor growth rather than rote marks alone."
   },
   {
-    id: "c11-edu-3-mcq-24",
-    question: "Why is praise generally considered psychologically superior to reproof (blame) in motivating learners?",
-    options: [
-      "A):   Praise fosters self-efficacy and positive reinforcement, while constant reproof generates learned helplessness and resentment",
+    "id": "c11-edu-3-mcq-24",
+    "question": "Why is praise generally considered psychologically superior to reproof (blame) in motivating learners?",
+    "options": [
+      "A):   Reproof causes instantaneous hearing loss",
       "B):   Praise costs more money for the school administration",
-      "C):   Reproof causes instantaneous hearing loss",
-      "D):   There is no psychological difference between praise and blame",
+      "C):   Praise fosters self-efficacy and positive reinforcement, while constant reproof generates learned helplessness and resentment",
+      "D):   There is no psychological difference between praise and blame"
     ],
-    correctAnswer: "a",
-    explanation: "Experimental studies by Hurlock and others prove that praise builds self-efficacy, while relentless blame breeds feelings of defeat.",
+    "correctAnswer": "c",
+    "explanation": "Experimental studies by Hurlock and others prove that praise builds self-efficacy, while relentless blame breeds feelings of defeat."
   },
   {
-    id: "c11-edu-3-mcq-25",
-    question: "Which of the following scenarios best exemplifies the ideal synthesis of Intrinsic and Extrinsic motivation in education?",
-    options: [
+    "id": "c11-edu-3-mcq-25",
+    "question": "Which of the following scenarios best exemplifies the ideal synthesis of Intrinsic and Extrinsic motivation in education?",
+    "options": [
       "A):   A child who is locked in a room until he memorizes 50 pages",
       "B):   A student who is initially attracted to robotics by a school competition (extrinsic), but develops a lifelong passion and inner mastery for engineering (intrinsic)",
       "C):   A student who only studies if given a candy for every answered question",
-      "D):   A student who refuses to attend school because grades exist",
+      "D):   A student who refuses to attend school because grades exist"
     ],
-    correctAnswer: "b",
-    explanation: "Extrinsic incentives can serve as a catalyst to introduce students to an activity, which then blooms into enduring intrinsic passion.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Extrinsic incentives can serve as a catalyst to introduce students to an activity, which then blooms into enduring intrinsic passion."
+  }
 ];

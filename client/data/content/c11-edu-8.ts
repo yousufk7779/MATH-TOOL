@@ -695,309 +695,304 @@ export const c11Edu8HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu8Mcqs = [
-  // Tier 1: Basic Recall & Definitions (Q1 to Q10)
   {
-    id: "c11-edu-8-mcq-1",
-    question: "The word 'Value' is etymologically derived from which Latin root word?",
-    options: [
-      "A):   Valere",
-      "B):   Validus",
+    "id": "c11-edu-8-mcq-1",
+    "question": "The word 'Value' is etymologically derived from which Latin root word?",
+    "options": [
+      "A):   Validus",
+      "B):   Valere",
       "C):   Valor",
       "D):   Valens"
     ],
-    correctAnswer: "A",
-    explanation: "The word 'Value' originates from the Latin verb 'Valere', which translates to 'to be of worth, to be strong, or to have excellence'."
+    "correctAnswer": "b",
+    "explanation": "The word 'Value' originates from the Latin verb 'Valere', which translates to 'to be of worth, to be strong, or to have excellence'."
   },
   {
-    id: "c11-edu-8-mcq-2",
-    question: "According to Johan Galtung, 'Negative Peace' is defined as:",
-    options: [
-      "A):   The active presence of social justice and equity",
-      "B):   The mere absence of direct physical violence or war",
+    "id": "c11-edu-8-mcq-2",
+    "question": "According to Johan Galtung, 'Negative Peace' is defined as:",
+    "options": [
+      "A):   The mere absence of direct physical violence or war",
+      "B):   The active presence of social justice and equity",
       "C):   A state of continuous civil rebellion",
       "D):   Ecological conservation only"
     ],
-    correctAnswer: "B",
-    explanation: "Johan Galtung defined Negative Peace strictly as the absence of direct physical violence or overt military warfare."
+    "correctAnswer": "a",
+    "explanation": "Johan Galtung defined Negative Peace strictly as the absence of direct physical violence or overt military warfare."
   },
   {
-    id: "c11-edu-8-mcq-3",
-    question: "Which landmark international report formulated the four pillars of modern education, including 'Learning to Live Together'?",
-    options: [
+    "id": "c11-edu-8-mcq-3",
+    "question": "Which landmark international report formulated the four pillars of modern education, including 'Learning to Live Together'?",
+    "options": [
       "A):   Kothari Commission Report",
       "B):   Mudaliar Commission Report",
       "C):   Jacques Delors UNESCO Report",
       "D):   Radhakrishnan Commission Report"
     ],
-    correctAnswer: "C",
-    explanation: "The 1996 UNESCO Report 'Learning: The Treasure Within', chaired by Jacques Delors, established the four foundational pillars of learning."
+    "correctAnswer": "c",
+    "explanation": "The 1996 UNESCO Report 'Learning: The Treasure Within', chaired by Jacques Delors, established the four foundational pillars of learning."
   },
   {
-    id: "c11-edu-8-mcq-4",
-    question: "Who famously proclaimed: 'Preventing conflicts is the work of politics; establishing lasting peace is the work of education'?",
-    options: [
-      "A):   Maria Montessori",
+    "id": "c11-edu-8-mcq-4",
+    "question": "Who famously proclaimed: 'Preventing conflicts is the work of politics; establishing lasting peace is the work of education'?",
+    "options": [
+      "A):   Aristotle",
       "B):   Jean-Jacques Rousseau",
       "C):   John Locke",
-      "D):   Aristotle"
+      "D):   Maria Montessori"
     ],
-    correctAnswer: "A",
-    explanation: "Dr. Maria Montessori was a passionate advocate of peace education, emphasizing that real, enduring peace can only be constructed through the education of the child."
+    "correctAnswer": "d",
+    "explanation": "Dr. Maria Montessori was a passionate advocate of peace education, emphasizing that real, enduring peace can only be constructed through the education of the child."
   },
   {
-    id: "c11-edu-8-mcq-5",
-    question: "Which of the following is NOT one of the five universal human values recognized by NCERT?",
-    options: [
+    "id": "c11-edu-8-mcq-5",
+    "question": "Which of the following is NOT one of the five universal human values recognized by NCERT?",
+    "options": [
       "A):   Truth (Satya)",
-      "B):   Right Conduct (Dharma)",
-      "C):   Material Wealth (Artha)",
+      "B):   Material Wealth (Artha)",
+      "C):   Right Conduct (Dharma)",
       "D):   Non-violence (Ahimsa)"
     ],
-    correctAnswer: "C",
-    explanation: "The five universal values recognized by NCERT are Truth, Right Conduct, Peace, Love, and Non-violence. Material wealth is not an ethical value."
+    "correctAnswer": "b",
+    "explanation": "The five universal values recognized by NCERT are Truth, Right Conduct, Peace, Love, and Non-violence. Material wealth is not an ethical value."
   },
   {
-    id: "c11-edu-8-mcq-6",
-    question: "The Latin word 'Valere' fundamentally signifies:",
-    options: [
-      "A):   To govern and rule",
-      "B):   To be of worth or to be strong",
+    "id": "c11-edu-8-mcq-6",
+    "question": "The Latin word 'Valere' fundamentally signifies:",
+    "options": [
+      "A):   To be of worth or to be strong",
+      "B):   To govern and rule",
       "C):   To collect economic revenue",
       "D):   To punish wrongdoers"
     ],
-    correctAnswer: "B",
-    explanation: "'Valere' in classical Latin means 'to be of worth, to be strong, to be worthy of esteem'."
+    "correctAnswer": "a",
+    "explanation": "'Valere' in classical Latin means 'to be of worth, to be strong, to be worthy of esteem'."
   },
   {
-    id: "c11-edu-8-mcq-7",
-    question: "The educational maxim 'Values are caught, not taught' implies that values are primarily learned through:",
-    options: [
+    "id": "c11-edu-8-mcq-7",
+    "question": "The educational maxim 'Values are caught, not taught' implies that values are primarily learned through:",
+    "options": [
       "A):   Rote memorization of moral definitions",
-      "B):   Observing and imitating the lived examples of teachers and elders",
+      "B):   Paying hefty school tuition fees",
       "C):   Scoring high grades in written exams",
-      "D):   Paying hefty school tuition fees"
+      "D):   Observing and imitating the lived examples of teachers and elders"
     ],
-    correctAnswer: "B",
-    explanation: "Values are absorbed through environmental osmosis &mdash; students internalize values by watching genuine behaviors, fair discipline, and compassionate role models."
+    "correctAnswer": "d",
+    "explanation": "Values are absorbed through environmental osmosis &mdash; students internalize values by watching genuine behaviors, fair discipline, and compassionate role models."
   },
   {
-    id: "c11-edu-8-mcq-8",
-    question: "Which constitutional value ensures that all citizens are treated with equal respect regardless of religion, caste, or gender?",
-    options: [
+    "id": "c11-edu-8-mcq-8",
+    "question": "Which constitutional value ensures that all citizens are treated with equal respect regardless of religion, caste, or gender?",
+    "options": [
       "A):   Autocracy",
-      "B):   Equality",
-      "C):   Monarchy",
+      "B):   Monarchy",
+      "C):   Equality",
       "D):   Xenophobia"
     ],
-    correctAnswer: "B",
-    explanation: "Equality of status and opportunity is guaranteed by the Constitution of India as a foundational democratic value."
+    "correctAnswer": "c",
+    "explanation": "Equality of status and opportunity is guaranteed by the Constitution of India as a foundational democratic value."
   },
   {
-    id: "c11-edu-8-mcq-9",
-    question: "What does the concept of 'Positive Peace' actively require in a society?",
-    options: [
+    "id": "c11-edu-8-mcq-9",
+    "question": "What does the concept of 'Positive Peace' actively require in a society?",
+    "options": [
       "A):   A heavy police presence on every street",
       "B):   The presence of social justice, equal opportunity, and human rights",
       "C):   Strict suppression of public free speech",
       "D):   Only an armed ceasefire between warring factions"
     ],
-    correctAnswer: "B",
-    explanation: "Positive Peace demands the presence of justice, equity, human dignity, and the eradication of structural discrimination."
+    "correctAnswer": "b",
+    "explanation": "Positive Peace demands the presence of justice, equity, human dignity, and the eradication of structural discrimination."
   },
   {
-    id: "c11-edu-8-mcq-10",
-    question: "Which Sanskrit phrase epitomizes the global dimension of peace education by viewing the entire world as one family?",
-    options: [
-      "A):   Satyameva Jayate",
-      "B):   Vasudhaiva Kutumbakam",
+    "id": "c11-edu-8-mcq-10",
+    "question": "Which Sanskrit phrase epitomizes the global dimension of peace education by viewing the entire world as one family?",
+    "options": [
+      "A):   Vasudhaiva Kutumbakam",
+      "B):   Satyameva Jayate",
       "C):   Vidya Dadati Vinayam",
       "D):   Tamaso Ma Jyotirgamaya"
     ],
-    correctAnswer: "B",
-    explanation: "'Vasudhaiva Kutumbakam' (from the Maha Upanishad) means 'The World is One Family', encapsulating global citizenship."
+    "correctAnswer": "a",
+    "explanation": "'Vasudhaiva Kutumbakam' (from the Maha Upanishad) means 'The World is One Family', encapsulating global citizenship."
   },
-
-  // Tier 2: Conceptual & Pedagogical Questions (Q11 to Q18)
   {
-    id: "c11-edu-8-mcq-11",
-    question: "In peace education, the term 'Structural Violence' refers to:",
-    options: [
+    "id": "c11-edu-8-mcq-11",
+    "question": "In peace education, the term 'Structural Violence' refers to:",
+    "options": [
       "A):   Physical damage to school brick buildings",
-      "B):   Systemic societal inequalities, poverty, and discrimination that prevent people from meeting their basic needs",
-      "C):   Earthquakes and volcanic eruptions",
+      "B):   Earthquakes and volcanic eruptions",
+      "C):   Systemic societal inequalities, poverty, and discrimination that prevent people from meeting their basic needs",
       "D):   Traffic accidents on highways"
     ],
-    correctAnswer: "B",
-    explanation: "Structural violence refers to institutionalized systems (like poverty, casteism, gender bias) that quietly harm people by denying them fundamental human rights."
+    "correctAnswer": "c",
+    "explanation": "Structural violence refers to institutionalized systems (like poverty, casteism, gender bias) that quietly harm people by denying them fundamental human rights."
   },
   {
-    id: "c11-edu-8-mcq-12",
-    question: "The 'Integrated Approach' to value education is considered superior to the 'Direct Approach' because:",
-    options: [
+    "id": "c11-edu-8-mcq-12",
+    "question": "The 'Integrated Approach' to value education is considered superior to the 'Direct Approach' because:",
+    "options": [
       "A):   It eliminates the need for teachers completely",
-      "B):   Values permeate naturally across all subjects and activities without artificial preaching",
+      "B):   It focuses only on physical fitness",
       "C):   It requires no examination preparation at all",
-      "D):   It focuses only on physical fitness"
+      "D):   Values permeate naturally across all subjects and activities without artificial preaching"
     ],
-    correctAnswer: "B",
-    explanation: "The integrated approach weaves values organically through science, literature, history, and sports, making ethics an inseparable part of daily life."
+    "correctAnswer": "d",
+    "explanation": "The integrated approach weaves values organically through science, literature, history, and sports, making ethics an inseparable part of daily life."
   },
   {
-    id: "c11-edu-8-mcq-13",
-    question: "The unwritten, implicit cultural ethos and moral atmosphere of a school is formally designated as the:",
-    options: [
-      "A):   Explicit syllabus",
-      "B):   Hidden curriculum",
+    "id": "c11-edu-8-mcq-13",
+    "question": "The unwritten, implicit cultural ethos and moral atmosphere of a school is formally designated as the:",
+    "options": [
+      "A):   Hidden curriculum",
+      "B):   Explicit syllabus",
       "C):   Vocational stream",
       "D):   Board question bank"
     ],
-    correctAnswer: "B",
-    explanation: "The 'Hidden Curriculum' encompasses the subtle values, attitudes, and interpersonal practices transmitted by the school environment."
+    "correctAnswer": "a",
+    "explanation": "The 'Hidden Curriculum' encompasses the subtle values, attitudes, and interpersonal practices transmitted by the school environment."
   },
   {
-    id: "c11-edu-8-mcq-14",
-    question: "In Gandhian philosophy, 'Ahimsa' (Non-violence) is fundamentally:",
-    options: [
+    "id": "c11-edu-8-mcq-14",
+    "question": "In Gandhian philosophy, 'Ahimsa' (Non-violence) is fundamentally:",
+    "options": [
       "A):   A passive compromise made out of weakness and cowardice",
       "B):   An active moral force of love, truth, and spiritual courage",
       "C):   Total indifference to social injustice",
       "D):   Running away from battlefield duties"
     ],
-    correctAnswer: "B",
-    explanation: "Mahatma Gandhi emphasized that Ahimsa is the supreme courage of the soul &mdash; refusing to repay evil with evil and converting opponents through love and truth."
+    "correctAnswer": "b",
+    "explanation": "Mahatma Gandhi emphasized that Ahimsa is the supreme courage of the soul &mdash; refusing to repay evil with evil and converting opponents through love and truth."
   },
   {
-    id: "c11-edu-8-mcq-15",
-    question: "Which pillar of education in the Delors Report is most directly associated with peace, empathy, and conflict resolution?",
-    options: [
+    "id": "c11-edu-8-mcq-15",
+    "question": "Which pillar of education in the Delors Report is most directly associated with peace, empathy, and conflict resolution?",
+    "options": [
       "A):   Learning to Know",
       "B):   Learning to Do",
-      "C):   Learning to Live Together",
-      "D):   Learning to Be"
+      "C):   Learning to Be",
+      "D):   Learning to Live Together"
     ],
-    correctAnswer: "C",
-    explanation: "'Learning to Live Together' specifically focuses on empathy, mutual understanding, shared human projects, and peaceful conflict resolution."
+    "correctAnswer": "d",
+    "explanation": "'Learning to Live Together' specifically focuses on empathy, mutual understanding, shared human projects, and peaceful conflict resolution."
   },
   {
-    id: "c11-edu-8-mcq-16",
-    question: "The holistic triad of value internalization requires the harmonious coordination of which three human dimensions?",
-    options: [
-      "A):   Head (Knowing), Heart (Feeling), and Hands (Acting)",
+    "id": "c11-edu-8-mcq-16",
+    "question": "The holistic triad of value internalization requires the harmonious coordination of which three human dimensions?",
+    "options": [
+      "A):   Reading, Writing, and Arithmetic",
       "B):   Memory, Speech, and Hearing",
-      "C):   Reading, Writing, and Arithmetic",
+      "C):   Head (Knowing), Heart (Feeling), and Hands (Acting)",
       "D):   Eyes, Ears, and Tongue"
     ],
-    correctAnswer: "A",
-    explanation: "True character is built when moral knowing (Head), moral feeling/empathy (Heart), and moral action/service (Hands) work together."
+    "correctAnswer": "c",
+    "explanation": "True character is built when moral knowing (Head), moral feeling/empathy (Heart), and moral action/service (Hands) work together."
   },
   {
-    id: "c11-edu-8-mcq-17",
-    question: "What is the primary function of a student 'Peer Mediation Cell' in a secondary school?",
-    options: [
+    "id": "c11-edu-8-mcq-17",
+    "question": "What is the primary function of a student 'Peer Mediation Cell' in a secondary school?",
+    "options": [
       "A):   To assign corporal punishment to undisciplined students",
       "B):   To help disputing peers communicate constructively and reach mutually agreeable solutions",
       "C):   To spy on classmates and report to the police",
       "D):   To take over the principal's administrative duties"
     ],
-    correctAnswer: "B",
-    explanation: "Peer mediation trains students to act as impartial facilitators, helping fellow students resolve arguments non-violently."
+    "correctAnswer": "b",
+    "explanation": "Peer mediation trains students to act as impartial facilitators, helping fellow students resolve arguments non-violently."
   },
   {
-    id: "c11-edu-8-mcq-18",
-    question: "National Education Policy 2020 (NEP 2020) places explicit emphasis on inculcating which constitutional duties?",
-    options: [
-      "A):   Only paying taxes on time",
-      "B):   Fundamental Duties under Article 51A, including scientific temper, environmental protection, and public harmony",
+    "id": "c11-edu-8-mcq-18",
+    "question": "National Education Policy 2020 (NEP 2020) places explicit emphasis on inculcating which constitutional duties?",
+    "options": [
+      "A):   Fundamental Duties under Article 51A, including scientific temper, environmental protection, and public harmony",
+      "B):   Only paying taxes on time",
       "C):   Enrolling in military forces compulsorily",
       "D):   Studying abroad after school"
     ],
-    correctAnswer: "B",
-    explanation: "NEP 2020 mandates inculcating the Fundamental Duties enshrined in Article 51A of the Constitution of India."
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 mandates inculcating the Fundamental Duties enshrined in Article 51A of the Constitution of India."
   },
-
-  // Tier 3: Analytical & Passage-Based Reasoning (Q19 to Q25)
   {
-    id: "c11-edu-8-mcq-19",
-    question: "In an analytical passage-based question, two students have a fight on the playground. A restorative justice response would require:",
-    options: [
+    "id": "c11-edu-8-mcq-19",
+    "question": "In an analytical passage-based question, two students have a fight on the playground. A restorative justice response would require:",
+    "options": [
       "A):   Expelling both students permanently from school",
-      "B):   Guiding both students to understand the emotional harm caused and collaborate on fixing the damage",
+      "B):   Caning the students in front of the morning assembly",
       "C):   Ignoring the incident completely",
-      "D):   Caning the students in front of the morning assembly"
+      "D):   Guiding both students to understand the emotional harm caused and collaborate on fixing the damage"
     ],
-    correctAnswer: "B",
-    explanation: "Restorative justice focuses on healing, understanding the impact of one's actions, apologizing, and restoring positive relationships."
+    "correctAnswer": "d",
+    "explanation": "Restorative justice focuses on healing, understanding the impact of one's actions, apologizing, and restoring positive relationships."
   },
   {
-    id: "c11-edu-8-mcq-20",
-    question: "When a school morning assembly includes two minutes of silent meditation, its primary psychological objective is:",
-    options: [
+    "id": "c11-edu-8-mcq-20",
+    "question": "When a school morning assembly includes two minutes of silent meditation, its primary psychological objective is:",
+    "options": [
       "A):   To make students feel sleepy before class",
-      "B):   To foster inner serenity, self-awareness, and emotional centering",
-      "C):   To punish students who arrived late",
+      "B):   To punish students who arrived late",
+      "C):   To foster inner serenity, self-awareness, and emotional centering",
       "D):   To test lung capacity"
     ],
-    correctAnswer: "B",
-    explanation: "Silent meditation helps quiet mental chatter, promotes self-regulation, and cultivates intrapersonal inner peace."
+    "correctAnswer": "c",
+    "explanation": "Silent meditation helps quiet mental chatter, promotes self-regulation, and cultivates intrapersonal inner peace."
   },
   {
-    id: "c11-edu-8-mcq-21",
-    question: "If a student discovers a wallet containing money on the playground and hands it over to the principal's office, they are demonstrating:",
-    options: [
-      "A):   Personal integrity and moral honesty",
-      "B):   Lack of financial ambition",
+    "id": "c11-edu-8-mcq-21",
+    "question": "If a student discovers a wallet containing money on the playground and hands it over to the principal's office, they are demonstrating:",
+    "options": [
+      "A):   Lack of financial ambition",
+      "B):   Personal integrity and moral honesty",
       "C):   Fear of police arrest only",
       "D):   Negative peace"
     ],
-    correctAnswer: "A",
-    explanation: "Returning lost property without expectation of reward is a classic exhibition of personal honesty and moral integrity."
+    "correctAnswer": "b",
+    "explanation": "Returning lost property without expectation of reward is a classic exhibition of personal honesty and moral integrity."
   },
   {
-    id: "c11-edu-8-mcq-22",
-    question: "Which of the following classroom practices is an obstacle to building a culture of peace?",
-    options: [
+    "id": "c11-edu-8-mcq-22",
+    "question": "Which of the following classroom practices is an obstacle to building a culture of peace?",
+    "options": [
       "A):   Encouraging collaborative group projects",
-      "B):   Sarcastic teacher remarks that publicly humiliate slow-learning students",
+      "B):   Organizing cultural exchange festivals",
       "C):   Electing class monitors democratically",
-      "D):   Organizing cultural exchange festivals"
+      "D):   Sarcastic teacher remarks that publicly humiliate slow-learning students"
     ],
-    correctAnswer: "B",
-    explanation: "Public sarcasm and humiliation by a teacher inflict emotional violence, destroying child self-esteem and breeding resentment."
+    "correctAnswer": "d",
+    "explanation": "Public sarcasm and humiliation by a teacher inflict emotional violence, destroying child self-esteem and breeding resentment."
   },
   {
-    id: "c11-edu-8-mcq-23",
-    question: "In a case where students spread false rumors about a classmate online, the most effective value-education intervention is:",
-    options: [
+    "id": "c11-edu-8-mcq-23",
+    "question": "In a case where students spread false rumors about a classmate online, the most effective value-education intervention is:",
+    "options": [
       "A):   Conducting a guided empathy workshop where offenders confront the real emotional distress caused by cyber-bullying",
       "B):   Banning computers and the internet forever in the district",
       "C):   Encouraging the victim to retaliate with worse online insults",
       "D):   Rewarding the rumor spreaders for computer proficiency"
     ],
-    correctAnswer: "A",
-    explanation: "Helping students develop digital empathy and witness the genuine psychological suffering caused by cyber-bullying brings authentic moral awakening."
+    "correctAnswer": "a",
+    "explanation": "Helping students develop digital empathy and witness the genuine psychological suffering caused by cyber-bullying brings authentic moral awakening."
   },
   {
-    id: "c11-edu-8-mcq-24",
-    question: "How does engaging students in environmental tree-planting drives contribute to peace education?",
-    options: [
+    "id": "c11-edu-8-mcq-24",
+    "question": "How does engaging students in environmental tree-planting drives contribute to peace education?",
+    "options": [
       "A):   It teaches commercial timber trading",
-      "B):   It fosters ecological peace by cultivating reverence for nature and selfless service (Seva)",
-      "C):   It replaces the need for studying science subjects",
+      "B):   It replaces the need for studying science subjects",
+      "C):   It fosters ecological peace by cultivating reverence for nature and selfless service (Seva)",
       "D):   It reduces school electricity bills directly"
     ],
-    correctAnswer: "B",
-    explanation: "Caring for living plants develops environmental stewardship, nurturing the ecological dimension of global peace."
+    "correctAnswer": "c",
+    "explanation": "Caring for living plants develops environmental stewardship, nurturing the ecological dimension of global peace."
   },
   {
-    id: "c11-edu-8-mcq-25",
-    question: "According to the UNESCO definition, a true 'Culture of Peace' is built upon:",
-    options: [
+    "id": "c11-edu-8-mcq-25",
+    "question": "According to the UNESCO definition, a true 'Culture of Peace' is built upon:",
+    "options": [
       "A):   Massive stockpiles of nuclear deterrent weapons",
       "B):   Values, attitudes, and behaviors based on non-violence, respect for human rights, and democratic participation",
       "C):   Homogeneous cultural assimilation erasing all regional differences",
       "D):   Authoritarian censorship of newspapers"
     ],
-    correctAnswer: "B",
-    explanation: "UNESCO defines a Culture of Peace as a set of values, attitudes, and modes of behavior based on respect for life, ending violence, and promoting human rights."
+    "correctAnswer": "b",
+    "explanation": "UNESCO defines a Culture of Peace as a set of values, attitudes, and modes of behavior based on respect for life, ending violence, and promoting human rights."
   }
 ];

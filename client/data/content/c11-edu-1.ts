@@ -104,98 +104,54 @@ export const c11Edu1HtmlOverview = `
 
   <!-- STANDALONE DIAGRAM 1: ETYMOLOGICAL TREE -->
   <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 81, 47, 0.4); border-radius: 10px; padding: 14px 16px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-    <div style="display: flex; justify-content: center; align-items: center; background: #0B132B; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 480px;">
-      <svg viewBox="0 0 460 260" style="width: 100%; max-width: 440px; height: auto;" xmlns="http://www.w3.org/2000/svg">
-        <rect x="150" y="10" width="160" height="42" rx="8" fill="#FF512F" />
-        <text x="230" y="36" fill="#FFFFFF" font-size="16" font-weight="bold" text-anchor="middle">EDUCATION</text>
+    <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.2); margin: 0 auto; max-width: 480px;">
+      <svg viewBox="0 0 460 250" style="width: 100%; max-width: 440px; height: auto;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="150" y="8" width="160" height="38" rx="8" fill="#FF512F" />
+        <text x="230" y="32" fill="#FFFFFF" font-size="15" font-weight="bold" text-anchor="middle">EDUCATION</text>
         
-        <path d="M 230 52 L 230 75 L 110 75 L 110 95" stroke="#FF512F" stroke-width="2.5" fill="none" />
-        <path d="M 230 75 L 350 75 L 350 95" stroke="#FF512F" stroke-width="2.5" fill="none" />
+        <path d="M 230 46 L 230 68 L 115 68 L 115 88" stroke="#0F172A" stroke-width="2" fill="none" />
+        <path d="M 230 68 L 345 68 L 345 88" stroke="#0F172A" stroke-width="2" fill="none" />
         
-        <rect x="35" y="95" width="150" height="34" rx="6" fill="#1E293B" stroke="#FF512F" stroke-width="1.5" />
-        <text x="110" y="117" fill="#FF512F" font-size="14" font-weight="bold" text-anchor="middle">Latin Roots</text>
+        <rect x="40" y="88" width="150" height="30" rx="6" fill="#FFF1EE" stroke="#FF512F" stroke-width="2" />
+        <text x="115" y="108" fill="#C2410C" font-size="13" font-weight="bold" text-anchor="middle">🏛️ Latin Roots</text>
 
-        <path d="M 110 129 L 110 145 L 35 145 L 35 160" stroke="#FF8A65" stroke-width="1.8" fill="none" />
-        <path d="M 110 145 L 110 160" stroke="#FF8A65" stroke-width="1.8" fill="none" />
-        <path d="M 110 145 L 185 145 L 185 160" stroke="#FF8A65" stroke-width="1.8" fill="none" />
+        <path d="M 115 118 L 115 136 L 45 136 L 45 148" stroke="#0F172A" stroke-width="1.6" fill="none" />
+        <path d="M 115 136 L 115 148" stroke="#0F172A" stroke-width="1.6" fill="none" />
+        <path d="M 115 136 L 185 136 L 185 148" stroke="#0F172A" stroke-width="1.6" fill="none" />
 
-        <rect x="5" y="160" width="60" height="40" rx="4" fill="#0F172A" stroke="#FF8A65" stroke-width="1" />
-        <text x="35" y="177" fill="#CBD5E1" font-size="11" font-weight="bold" text-anchor="middle">Educare</text>
-        <text x="35" y="192" fill="#94A3B8" font-size="9" text-anchor="middle">(To Nourish)</text>
+        <rect x="15" y="148" width="60" height="42" rx="5" fill="#FFFFFF" stroke="#FF512F" stroke-width="1.5" />
+        <text x="45" y="166" fill="#0F172A" font-size="10" font-weight="bold" text-anchor="middle">Educare</text>
+        <text x="45" y="180" fill="#64748B" font-size="8.5" text-anchor="middle">To Nourish</text>
 
-        <rect x="80" y="160" width="60" height="40" rx="4" fill="#0F172A" stroke="#FF8A65" stroke-width="1" />
-        <text x="110" y="177" fill="#CBD5E1" font-size="11" font-weight="bold" text-anchor="middle">Educere</text>
-        <text x="110" y="192" fill="#94A3B8" font-size="9" text-anchor="middle">(To Lead Out)</text>
+        <rect x="85" y="148" width="60" height="42" rx="5" fill="#FFFFFF" stroke="#FF512F" stroke-width="1.5" />
+        <text x="115" y="166" fill="#0F172A" font-size="10" font-weight="bold" text-anchor="middle">Educere</text>
+        <text x="115" y="180" fill="#64748B" font-size="8.5" text-anchor="middle">To Lead Out</text>
 
-        <rect x="155" y="160" width="60" height="40" rx="4" fill="#0F172A" stroke="#FF8A65" stroke-width="1" />
-        <text x="185" y="177" fill="#CBD5E1" font-size="11" font-weight="bold" text-anchor="middle">Educatum</text>
-        <text x="185" y="192" fill="#94A3B8" font-size="9" text-anchor="middle">(Instruction)</text>
+        <rect x="155" y="148" width="60" height="42" rx="5" fill="#FFFFFF" stroke="#FF512F" stroke-width="1.5" />
+        <text x="185" y="166" fill="#0F172A" font-size="10" font-weight="bold" text-anchor="middle">Educatum</text>
+        <text x="185" y="180" fill="#64748B" font-size="8.5" text-anchor="middle">Instruction</text>
 
-        <rect x="275" y="95" width="150" height="34" rx="6" fill="#1E293B" stroke="#00C6FF" stroke-width="1.5" />
-        <text x="350" y="117" fill="#00C6FF" font-size="14" font-weight="bold" text-anchor="middle">Indian Roots</text>
+        <rect x="270" y="88" width="150" height="30" rx="6" fill="#E0F7FA" stroke="#0284C7" stroke-width="2" />
+        <text x="345" y="108" fill="#0369A1" font-size="13" font-weight="bold" text-anchor="middle">🕉️ Indian Roots</text>
 
-        <path d="M 350 129 L 350 145 L 300 145 L 300 160" stroke="#00C6FF" stroke-width="1.8" fill="none" />
-        <path d="M 350 145 L 400 145 L 400 160" stroke="#00C6FF" stroke-width="1.8" fill="none" />
+        <path d="M 345 118 L 345 136 L 300 136 L 300 148" stroke="#0F172A" stroke-width="1.6" fill="none" />
+        <path d="M 345 136 L 390 136 L 390 148" stroke="#0F172A" stroke-width="1.6" fill="none" />
 
-        <rect x="260" y="160" width="80" height="40" rx="4" fill="#0F172A" stroke="#00C6FF" stroke-width="1" />
-        <text x="300" y="177" fill="#CBD5E1" font-size="11" font-weight="bold" text-anchor="middle">Vidya (Vid)</text>
-        <text x="300" y="192" fill="#94A3B8" font-size="9" text-anchor="middle">(Self-Knowledge)</text>
+        <rect x="260" y="148" width="80" height="42" rx="5" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
+        <text x="300" y="166" fill="#0F172A" font-size="10" font-weight="bold" text-anchor="middle">Vidya (Vid)</text>
+        <text x="300" y="180" fill="#64748B" font-size="8.5" text-anchor="middle">Self-Knowledge</text>
 
-        <rect x="360" y="160" width="80" height="40" rx="4" fill="#0F172A" stroke="#00C6FF" stroke-width="1" />
-        <text x="400" y="177" fill="#CBD5E1" font-size="11" font-weight="bold" text-anchor="middle">Shiksha (Shas)</text>
-        <text x="400" y="192" fill="#94A3B8" font-size="9" text-anchor="middle">(Discipline)</text>
+        <rect x="350" y="148" width="80" height="42" rx="5" fill="#FFFFFF" stroke="#0284C7" stroke-width="1.5" />
+        <text x="390" y="166" fill="#0F172A" font-size="10" font-weight="bold" text-anchor="middle">Shiksha (Shas)</text>
+        <text x="390" y="180" fill="#64748B" font-size="8.5" text-anchor="middle">Moral Discipline</text>
 
-        <rect x="50" y="220" width="360" height="30" rx="6" fill="rgba(255, 81, 47, 0.2)" stroke="#FF512F" stroke-dasharray="3 3" />
-        <text x="230" y="240" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">Synthesis: Nurturing Inherent Potential into Enlightened Character</text>
+        <rect x="25" y="205" width="410" height="32" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" />
+        <text x="230" y="226" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">💡 Synthesis: Drawing out latent human potential into enlightened character</text>
       </svg>
     </div>
     <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
-      💡 Flowchart summarizing the classical Latin and Sanskrit etymological roots of Education.
+      💡 Etymological Tree: Classical Latin and Sanskrit roots defining the nature of Education.
     </div>
-  </div>
-
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Narrow vs. Broader Concept of Education</h3>
-  <p>Educational theorists distinguish between two fundamental perspectives of education:</p>
-
-  <!-- COMPARISON TABLE CARD -->
-  <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 81, 47, 0.4); border-radius: 10px; padding: 14px 16px; margin: 20px 0; overflow-x: auto;">
-    <h4 style="color: ${themeColor}; font-size: 16px; font-weight: bold; margin: 0 0 12px 0;">⚖️ Master Comparison: Narrower vs. Broader Meaning of Education</h4>
-    <table style="width: 100%; border-collapse: collapse; font-size: 14.5px; color: #FFFFFF;">
-      <thead>
-        <tr style="background: rgba(255, 81, 47, 0.2); border-bottom: 2px solid ${themeColor};">
-          <th style="padding: 10px; text-align: left; border: 1px solid rgba(255,255,255,0.1); width: 20%;">Dimension</th>
-          <th style="padding: 10px; text-align: left; border: 1px solid rgba(255,255,255,0.1); width: 40%;">Narrower Meaning (Schooling)</th>
-          <th style="padding: 10px; text-align: left; border: 1px solid rgba(255,255,255,0.1); width: 40%;">Broader Meaning (Lifelong)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: ${themeColor};">1. Scope</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Confined to formal schools, colleges, and structured classrooms.</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Co-extensive with life itself; happens everywhere (home, nature, society).</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: ${themeColor};">2. Time Period</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Starts at school admission and ends when obtaining a certificate/degree.</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Lifelong; commences from the womb and continues until the tomb.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: ${themeColor};">3. Curriculum</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Rigid, pre-planned, textbook-centered, and subject-bound.</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Flexible, dynamic, experiential, and encompasses all life activities.</td>
-        </tr>
-        <tr style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: ${themeColor};">4. Role of Teacher</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Dominant knowledge-giver and instructor; passive learner.</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Facilitator and guide; student actively learns from diverse environments.</td>
-        </tr>
-        <tr>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: ${themeColor};">5. Agency</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Formal agencies only (School, University).</td>
-          <td style="padding: 9px; border: 1px solid rgba(255,255,255,0.1);">Formal, Informal (family, peer group), and Non-formal agencies.</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 
   <!-- SECTION 1.2 -->
@@ -256,29 +212,29 @@ export const c11Edu1HtmlOverview = `
 
   <!-- STANDALONE DIAGRAM 2: TRIPOLAR PROCESS -->
   <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(255, 81, 47, 0.4); border-radius: 10px; padding: 14px 16px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
-    <div style="display: flex; justify-content: center; align-items: center; background: #0B132B; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.1); margin: 0 auto; max-width: 420px;">
-      <svg viewBox="0 0 360 260" style="width: 100%; max-width: 380px; height: auto;" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="180,30 50,220 310,220" fill="rgba(255, 81, 47, 0.08)" stroke="#FF512F" stroke-width="2" stroke-dasharray="4 4" />
+    <div style="display: flex; justify-content: center; align-items: center; background: #FFFDF8; border-radius: 8px; padding: 16px; border: 1px solid rgba(255,255,255,0.2); margin: 0 auto; max-width: 420px;">
+      <svg viewBox="0 0 360 250" style="width: 100%; max-width: 380px; height: auto;" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="180,35 50,210 310,210" fill="#FFF7ED" stroke="#EA580C" stroke-width="2" stroke-dasharray="4 4" />
         
-        <circle cx="180" cy="30" r="32" fill="#1E293B" stroke="#FF512F" stroke-width="2.5" />
-        <text x="180" y="28" fill="#FF512F" font-size="12" font-weight="bold" text-anchor="middle">POLE 1</text>
-        <text x="180" y="44" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">TEACHER</text>
+        <circle cx="180" cy="35" r="30" fill="#FFFFFF" stroke="#FF512F" stroke-width="2.5" />
+        <text x="180" y="32" fill="#FF512F" font-size="11" font-weight="bold" text-anchor="middle">POLE 1</text>
+        <text x="180" y="47" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">TEACHER</text>
 
-        <circle cx="50" cy="220" r="32" fill="#1E293B" stroke="#00C6FF" stroke-width="2.5" />
-        <text x="50" y="218" fill="#00C6FF" font-size="12" font-weight="bold" text-anchor="middle">POLE 2</text>
-        <text x="50" y="234" fill="#FFFFFF" font-size="12" font-weight="bold" text-anchor="middle">CHILD</text>
+        <circle cx="50" cy="210" r="30" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5" />
+        <text x="50" y="207" fill="#0284C7" font-size="11" font-weight="bold" text-anchor="middle">POLE 2</text>
+        <text x="50" y="222" fill="#0F172A" font-size="11" font-weight="bold" text-anchor="middle">CHILD</text>
 
-        <circle cx="310" cy="220" r="32" fill="#1E293B" stroke="#66BB6A" stroke-width="2.5" />
-        <text x="310" y="218" fill="#66BB6A" font-size="12" font-weight="bold" text-anchor="middle">POLE 3</text>
-        <text x="310" y="234" fill="#FFFFFF" font-size="11" font-weight="bold" text-anchor="middle">SOCIETY</text>
+        <circle cx="310" cy="210" r="30" fill="#FFFFFF" stroke="#16A34A" stroke-width="2.5" />
+        <text x="310" y="207" fill="#16A34A" font-size="11" font-weight="bold" text-anchor="middle">POLE 3</text>
+        <text x="310" y="222" fill="#0F172A" font-size="10.5" font-weight="bold" text-anchor="middle">SOCIETY</text>
 
-        <path d="M 155 55 L 75 190" stroke="#FF512F" stroke-width="2" />
-        <path d="M 205 55 L 285 190" stroke="#FF512F" stroke-width="2" />
-        <path d="M 85 220 L 275 220" stroke="#00C6FF" stroke-width="2" />
+        <path d="M 155 58 L 75 185" stroke="#0F172A" stroke-width="1.8" />
+        <path d="M 205 58 L 285 185" stroke="#0F172A" stroke-width="1.8" />
+        <path d="M 80 210 L 280 210" stroke="#0F172A" stroke-width="1.8" />
 
-        <circle cx="180" cy="155" r="28" fill="#FF512F" />
-        <text x="180" y="152" fill="#FFFFFF" font-size="10" font-weight="bold" text-anchor="middle">JOHN</text>
-        <text x="180" y="165" fill="#FFFFFF" font-size="10" font-weight="bold" text-anchor="middle">DEWEY</text>
+        <circle cx="180" cy="150" r="26" fill="#FF512F" stroke="#C2410C" stroke-width="2" />
+        <text x="180" y="147" fill="#FFFFFF" font-size="9.5" font-weight="bold" text-anchor="middle">JOHN</text>
+        <text x="180" y="160" fill="#FFFFFF" font-size="9.5" font-weight="bold" text-anchor="middle">DEWEY</text>
       </svg>
     </div>
     <div style="color: #CBD5E1; font-size: 14px; text-align: center; margin-top: 10px; line-height: 1.5; font-weight: 500;">
@@ -770,309 +726,304 @@ export const c11Edu1HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c11Edu1Mcqs = [
-  /* Tier 1: Easy & Basic Recall (Q1 to Q10) */
   {
-    id: "c11-edu-1-mcq-1",
-    question: "The Latin word 'Educare' fundamentally means:",
-    options: [
-      "A):   To bring up or to nourish",
-      "B):   To lead out or draw forth",
+    "id": "c11-edu-1-mcq-1",
+    "question": "The Latin word 'Educare' fundamentally means:",
+    "options": [
+      "A):   To lead out or draw forth",
+      "B):   To bring up or to nourish",
       "C):   The act of strict examination",
-      "D):   To memorize ancient scriptures",
+      "D):   To memorize ancient scriptures"
     ],
-    correctAnswer: "a",
-    explanation: "Educare is a Latin verb meaning 'to nourish', 'to bring up', or 'to foster' from external guidance.",
+    "correctAnswer": "b",
+    "explanation": "Educare is a Latin verb meaning 'to nourish', 'to bring up', or 'to foster' from external guidance."
   },
   {
-    id: "c11-edu-1-mcq-2",
-    question: "The Latin word 'Educere' is composed of 'E' and 'Ducere', which etymologically signifies:",
-    options: [
-      "A):   To pour knowledge into an empty vessel",
-      "B):   To lead out or draw forth latent potential",
+    "id": "c11-edu-1-mcq-2",
+    "question": "The Latin word 'Educere' is composed of 'E' and 'Ducere', which etymologically signifies:",
+    "options": [
+      "A):   To lead out or draw forth latent potential",
+      "B):   To pour knowledge into an empty vessel",
       "C):   To enforce military discipline in school",
-      "D):   To award degrees upon completion",
+      "D):   To award degrees upon completion"
     ],
-    correctAnswer: "b",
-    explanation: "'Educere' means 'to lead out' or 'to draw forth' &mdash; drawing out the innate potential already present inside the child.",
+    "correctAnswer": "a",
+    "explanation": "'Educere' means 'to lead out' or 'to draw forth' &mdash; drawing out the innate potential already present inside the child."
   },
   {
-    id: "c11-edu-1-mcq-3",
-    question: "The Indian word 'Vidya' is derived from the Sanskrit root 'Vid', which means:",
-    options: [
+    "id": "c11-edu-1-mcq-3",
+    "question": "The Indian word 'Vidya' is derived from the Sanskrit root 'Vid', which means:",
+    "options": [
       "A):   To punish",
       "B):   To acquire wealth",
       "C):   To know or to realize truth",
-      "D):   To recite poetry",
+      "D):   To recite poetry"
     ],
-    correctAnswer: "c",
-    explanation: "The Sanskrit root 'Vid' means 'to know', 'to understand', or 'to attain spiritual self-realization'.",
+    "correctAnswer": "c",
+    "explanation": "The Sanskrit root 'Vid' means 'to know', 'to understand', or 'to attain spiritual self-realization'."
   },
   {
-    id: "c11-edu-1-mcq-4",
-    question: "The term 'Shiksha' has its origin in the Sanskrit root 'Shas', which denotes:",
-    options: [
+    "id": "c11-edu-1-mcq-4",
+    "question": "The term 'Shiksha' has its origin in the Sanskrit root 'Shas', which denotes:",
+    "options": [
       "A):   To earn profit",
-      "B):   To control, discipline, or govern",
+      "B):   To wander aimlessly",
       "C):   To celebrate festivals",
-      "D):   To wander aimlessly",
+      "D):   To control, discipline, or govern"
     ],
-    correctAnswer: "b",
-    explanation: "'Shas' means to discipline, regulate, control, or govern desires and impulses.",
+    "correctAnswer": "d",
+    "explanation": "'Shas' means to discipline, regulate, control, or govern desires and impulses."
   },
   {
-    id: "c11-edu-1-mcq-5",
-    question: "Who among the following defined education as 'the manifestation of the perfection already in man'?",
-    options: [
+    "id": "c11-edu-1-mcq-5",
+    "question": "Who among the following defined education as 'the manifestation of the perfection already in man'?",
+    "options": [
       "A):   Mahatma Gandhi",
       "B):   Swami Vivekananda",
       "C):   John Dewey",
-      "D):   Jean-Jacques Rousseau",
+      "D):   Jean-Jacques Rousseau"
     ],
-    correctAnswer: "b",
-    explanation: "Swami Vivekananda gave this famous Vedantic definition, emphasizing that perfection resides inside the human soul.",
+    "correctAnswer": "b",
+    "explanation": "Swami Vivekananda gave this famous Vedantic definition, emphasizing that perfection resides inside the human soul."
   },
   {
-    id: "c11-edu-1-mcq-6",
-    question: "'By education I mean an all-round drawing out of the best in child and man &mdash; body, mind and spirit.' This iconic definition was given by:",
-    options: [
-      "A):   Dr. S. Radhakrishnan",
+    "id": "c11-edu-1-mcq-6",
+    "question": "'By education I mean an all-round drawing out of the best in child and man &mdash; body, mind and spirit.' This iconic definition was given by:",
+    "options": [
+      "A):   Mahatma Gandhi",
       "B):   Allama Iqbal",
-      "C):   Mahatma Gandhi",
-      "D):   F. L. Redden",
+      "C):   Dr. S. Radhakrishnan",
+      "D):   F. L. Redden"
     ],
-    correctAnswer: "c",
-    explanation: "Mahatma Gandhi formulated this definition, emphasizing the 3 H's: Head, Heart, and Hand.",
+    "correctAnswer": "a",
+    "explanation": "Mahatma Gandhi formulated this definition, emphasizing the 3 H's: Head, Heart, and Hand."
   },
   {
-    id: "c11-edu-1-mcq-7",
-    question: "The concept of 'Negative Education' in childhood was formulated by which famous Western philosopher?",
-    options: [
-      "A):   Jean-Jacques Rousseau",
+    "id": "c11-edu-1-mcq-7",
+    "question": "The concept of 'Negative Education' in childhood was formulated by which famous Western philosopher?",
+    "options": [
+      "A):   Aristotle",
       "B):   John Dewey",
       "C):   Sir John Adams",
-      "D):   Aristotle",
+      "D):   Jean-Jacques Rousseau"
     ],
-    correctAnswer: "a",
-    explanation: "In his book 'Emile', J. J. Rousseau advocated Negative Education &mdash; protecting the young child from the artificial vices of society.",
+    "correctAnswer": "d",
+    "explanation": "In his book 'Emile', J. J. Rousseau advocated Negative Education &mdash; protecting the young child from the artificial vices of society."
   },
   {
-    id: "c11-edu-1-mcq-8",
-    question: "Sir John Adams characterized education as which type of pedagogical process?",
-    options: [
+    "id": "c11-edu-1-mcq-8",
+    "question": "Sir John Adams characterized education as which type of pedagogical process?",
+    "options": [
       "A):   Tripolar Process",
-      "B):   Bipolar Process",
-      "C):   Unipolar Process",
-      "D):   Multipolar Process",
+      "B):   Unipolar Process",
+      "C):   Bipolar Process",
+      "D):   Multipolar Process"
     ],
-    correctAnswer: "b",
-    explanation: "Sir John Adams famously described education as a Bipolar process involving two active poles: Educator and Educand.",
+    "correctAnswer": "c",
+    "explanation": "Sir John Adams famously described education as a Bipolar process involving two active poles: Educator and Educand."
   },
   {
-    id: "c11-edu-1-mcq-9",
-    question: "Which thinker stated that 'Education is not preparation for life; education is life itself'?",
-    options: [
+    "id": "c11-edu-1-mcq-9",
+    "question": "Which thinker stated that 'Education is not preparation for life; education is life itself'?",
+    "options": [
       "A):   Plato",
       "B):   John Dewey",
       "C):   F. L. Redden",
-      "D):   Swami Vivekananda",
+      "D):   Swami Vivekananda"
     ],
-    correctAnswer: "b",
-    explanation: "American pragmatist John Dewey asserted that living and learning are inseparable &mdash; education is life itself.",
+    "correctAnswer": "b",
+    "explanation": "American pragmatist John Dewey asserted that living and learning are inseparable &mdash; education is life itself."
   },
   {
-    id: "c11-edu-1-mcq-10",
-    question: "According to Dr. S. Radhakrishnan, complete education must provide training of the intellect, refinement of the heart, and discipline of the:",
-    options: [
-      "A):   Wallet",
-      "B):   Spirit",
+    "id": "c11-edu-1-mcq-10",
+    "question": "According to Dr. S. Radhakrishnan, complete education must provide training of the intellect, refinement of the heart, and discipline of the:",
+    "options": [
+      "A):   Spirit",
+      "B):   Wallet",
       "C):   Physical senses only",
-      "D):   Government",
+      "D):   Government"
     ],
-    correctAnswer: "b",
-    explanation: "Dr. Radhakrishnan stated: 'Education, to be complete, must be a training of the intellect, refinement of the heart and discipline of the spirit.'",
+    "correctAnswer": "a",
+    "explanation": "Dr. Radhakrishnan stated: 'Education, to be complete, must be a training of the intellect, refinement of the heart and discipline of the spirit.'"
   },
-
-  /* Tier 2: Moderate Conceptual (Q11 to Q18) */
   {
-    id: "c11-edu-1-mcq-11",
-    question: "In John Dewey's Tripolar process of education, what constitutes the crucial third pole alongside the Teacher and the Student?",
-    options: [
+    "id": "c11-edu-1-mcq-11",
+    "question": "In John Dewey's Tripolar process of education, what constitutes the crucial third pole alongside the Teacher and the Student?",
+    "options": [
       "A):   The Examination Board",
-      "B):   The Social Environment (Curriculum & Society)",
-      "C):   The Textbook Publisher",
-      "D):   The School Building",
+      "B):   The Textbook Publisher",
+      "C):   The Social Environment (Curriculum & Society)",
+      "D):   The School Building"
     ],
-    correctAnswer: "b",
-    explanation: "Dewey proved that learning requires interaction with the Social Environment (Society / Curriculum).",
+    "correctAnswer": "c",
+    "explanation": "Dewey proved that learning requires interaction with the Social Environment (Society / Curriculum)."
   },
   {
-    id: "c11-edu-1-mcq-12",
-    question: "Which of the following is a characteristic of the 'Narrower' meaning of education?",
-    options: [
+    "id": "c11-edu-1-mcq-12",
+    "question": "Which of the following is a characteristic of the 'Narrower' meaning of education?",
+    "options": [
       "A):   It continues from birth until death",
-      "B):   It is confined to formal institutions and prescribed syllabi",
+      "B):   It does not involve examinations",
       "C):   It includes all informal life experiences",
-      "D):   It does not involve examinations",
+      "D):   It is confined to formal institutions and prescribed syllabi"
     ],
-    correctAnswer: "b",
-    explanation: "The narrow concept of education refers strictly to formal schooling, planned syllabi, classrooms, and examinations.",
+    "correctAnswer": "d",
+    "explanation": "The narrow concept of education refers strictly to formal schooling, planned syllabi, classrooms, and examinations."
   },
   {
-    id: "c11-edu-1-mcq-13",
-    question: "Gandhiji's educational scheme of Basic Education (Nai Talim) placed primary pedagogical emphasis on:",
-    options: [
-      "A):   Rote learning of foreign languages",
-      "B):   Learning through productive manual craft",
+    "id": "c11-edu-1-mcq-13",
+    "question": "Gandhiji's educational scheme of Basic Education (Nai Talim) placed primary pedagogical emphasis on:",
+    "options": [
+      "A):   Learning through productive manual craft",
+      "B):   Rote learning of foreign languages",
       "C):   Military drill exclusively",
-      "D):   Abstract philosophical debates without practice",
+      "D):   Abstract philosophical debates without practice"
     ],
-    correctAnswer: "b",
-    explanation: "Gandhiji's Wardha Scheme (Nai Talim) made productive village handicrafts (like spinning/weaving) the center of education.",
+    "correctAnswer": "a",
+    "explanation": "Gandhiji's Wardha Scheme (Nai Talim) made productive village handicrafts (like spinning/weaving) the center of education."
   },
   {
-    id: "c11-edu-1-mcq-14",
-    question: "Allama Iqbal's educational philosophy is predominantly focused on the awakening and strengthening of:",
-    options: [
+    "id": "c11-edu-1-mcq-14",
+    "question": "Allama Iqbal's educational philosophy is predominantly focused on the awakening and strengthening of:",
+    "options": [
       "A):   Passive submission to fate",
       "B):   'Khudi' (Selfhood and active creative personality)",
       "C):   Commercial advertising skills",
-      "D):   Physical wrestling techniques only",
+      "D):   Physical wrestling techniques only"
     ],
-    correctAnswer: "b",
-    explanation: "Iqbal centered his philosophy on 'Khudi' &mdash; the dynamic cultivation of self-respect, moral courage, and spiritual willpower.",
+    "correctAnswer": "b",
+    "explanation": "Iqbal centered his philosophy on 'Khudi' &mdash; the dynamic cultivation of self-respect, moral courage, and spiritual willpower."
   },
   {
-    id: "c11-edu-1-mcq-15",
-    question: "Which branch of education answers the fundamental question of 'HOW' and 'WHEN' a child learns best?",
-    options: [
+    "id": "c11-edu-1-mcq-15",
+    "question": "Which branch of education answers the fundamental question of 'HOW' and 'WHEN' a child learns best?",
+    "options": [
       "A):   Educational Philosophy",
-      "B):   Educational Psychology",
+      "B):   Educational History",
       "C):   Educational Sociology",
-      "D):   Educational History",
+      "D):   Educational Psychology"
     ],
-    correctAnswer: "b",
-    explanation: "Educational Psychology studies the laws of learning, developmental stages, and individual differences (How and When to teach).",
+    "correctAnswer": "d",
+    "explanation": "Educational Psychology studies the laws of learning, developmental stages, and individual differences (How and When to teach)."
   },
   {
-    id: "c11-edu-1-mcq-16",
-    question: "Which branch of education formulates the core aims, ideals, and ultimate values of an educational system?",
-    options: [
-      "A):   Educational Philosophy",
+    "id": "c11-edu-1-mcq-16",
+    "question": "Which branch of education formulates the core aims, ideals, and ultimate values of an educational system?",
+    "options": [
+      "A):   School Hygiene",
       "B):   Educational Statistics",
-      "C):   School Hygiene",
-      "D):   Comparative Pedagogy",
+      "C):   Educational Philosophy",
+      "D):   Comparative Pedagogy"
     ],
-    correctAnswer: "a",
-    explanation: "Educational Philosophy investigates the meaning of life, formulating the aims, values, and principles of curriculum.",
+    "correctAnswer": "c",
+    "explanation": "Educational Philosophy investigates the meaning of life, formulating the aims, values, and principles of curriculum."
   },
   {
-    id: "c11-edu-1-mcq-17",
-    question: "'Education is the deliberate and systematic influence exerted by the mature person upon the immature...' This definition belongs to:",
-    options: [
-      "A):   F. L. Redden",
-      "B):   Swami Vivekananda",
+    "id": "c11-edu-1-mcq-17",
+    "question": "'Education is the deliberate and systematic influence exerted by the mature person upon the immature...' This definition belongs to:",
+    "options": [
+      "A):   Swami Vivekananda",
+      "B):   F. L. Redden",
       "C):   Rousseau",
-      "D):   Allama Iqbal",
+      "D):   Allama Iqbal"
     ],
-    correctAnswer: "a",
-    explanation: "F. L. Redden provided this classic Western definition emphasizing mature influence and systematic training.",
+    "correctAnswer": "b",
+    "explanation": "F. L. Redden provided this classic Western definition emphasizing mature influence and systematic training."
   },
   {
-    id: "c11-edu-1-mcq-18",
-    question: "Why is education considered 'Both an Art and a Science'?",
-    options: [
-      "A):   Because it teaches both painting and chemistry",
-      "B):   Because it relies on scientific learning laws while demanding creative and empathetic teaching art",
+    "id": "c11-edu-1-mcq-18",
+    "question": "Why is education considered 'Both an Art and a Science'?",
+    "options": [
+      "A):   Because it relies on scientific learning laws while demanding creative and empathetic teaching art",
+      "B):   Because it teaches both painting and chemistry",
       "C):   Because only scientists and artists can become teachers",
-      "D):   Because it was invented during the Renaissance period",
+      "D):   Because it was invented during the Renaissance period"
     ],
-    correctAnswer: "b",
-    explanation: "Education is a science because of its systematic psychological principles, and an art because teaching requires creative intuition and empathy.",
+    "correctAnswer": "a",
+    "explanation": "Education is a science because of its systematic psychological principles, and an art because teaching requires creative intuition and empathy."
   },
-
-  /* Tier 3: Advance & Analytical (Q19 to Q25) */
   {
-    id: "c11-edu-1-mcq-19",
-    question: "A teenager learns punctuality and civic responsibility by observing family elders and volunteering in a community relief camp. This exemplifies:",
-    options: [
+    "id": "c11-edu-1-mcq-19",
+    "question": "A teenager learns punctuality and civic responsibility by observing family elders and volunteering in a community relief camp. This exemplifies:",
+    "options": [
       "A):   Narrow concept of education",
-      "B):   Broader and informal concept of education",
+      "B):   Classroom rote learning",
       "C):   Purely commercial vocational training",
-      "D):   Classroom rote learning",
+      "D):   Broader and informal concept of education"
     ],
-    correctAnswer: "b",
-    explanation: "Learning through real-life community participation and observational modeling reflects the broader, lifelong, informal concept of education.",
+    "correctAnswer": "d",
+    "explanation": "Learning through real-life community participation and observational modeling reflects the broader, lifelong, informal concept of education."
   },
   {
-    id: "c11-edu-1-mcq-20",
-    question: "Assertion (A): Educational Psychology is indispensable for a modern classroom teacher.\nReason (R): It enables the teacher to understand individual differences, learning stages, and emotional needs of learners.",
-    options: [
-      "A):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+    "id": "c11-edu-1-mcq-20",
+    "question": "Assertion (A): Educational Psychology is indispensable for a modern classroom teacher.\nReason (R): It enables the teacher to understand individual differences, learning stages, and emotional needs of learners.",
+    "options": [
+      "A):   (A) is true, but (R) is false",
       "B):   Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
-      "C):   (A) is true, but (R) is false",
-      "D):   (A) is false, but (R) is true",
+      "C):   Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+      "D):   (A) is false, but (R) is true"
     ],
-    correctAnswer: "a",
-    explanation: "A teacher cannot instruct effectively without understanding developmental psychology and individual learner differences.",
+    "correctAnswer": "c",
+    "explanation": "A teacher cannot instruct effectively without understanding developmental psychology and individual learner differences."
   },
   {
-    id: "c11-edu-1-mcq-21",
-    question: "Compare the views of Rousseau and John Dewey. What is the fundamental difference in their pedagogical approach?",
-    options: [
+    "id": "c11-edu-1-mcq-21",
+    "question": "Compare the views of Rousseau and John Dewey. What is the fundamental difference in their pedagogical approach?",
+    "options": [
       "A):   Rousseau wanted strict corporal punishment while Dewey favored textbooks",
       "B):   Rousseau favored individual isolation in nature, whereas Dewey insisted on active social interaction in a democratic school community",
       "C):   Dewey rejected learning by doing while Rousseau invented computers",
-      "D):   There is no philosophical difference between them",
+      "D):   There is no philosophical difference between them"
     ],
-    correctAnswer: "b",
-    explanation: "Rousseau was an individualist naturalist who isolated Emile in nature; Dewey was a pragmatist who placed the child in an active social community.",
+    "correctAnswer": "b",
+    "explanation": "Rousseau was an individualist naturalist who isolated Emile in nature; Dewey was a pragmatist who placed the child in an active social community."
   },
   {
-    id: "c11-edu-1-mcq-22",
-    question: "The ancient Sanskrit aphorism 'Sa Vidya Ya Vimuktaye' aligns most closely with which modern educational ideal?",
-    options: [
+    "id": "c11-edu-1-mcq-22",
+    "question": "The ancient Sanskrit aphorism 'Sa Vidya Ya Vimuktaye' aligns most closely with which modern educational ideal?",
+    "options": [
       "A):   Education that trains students only for clerical office work",
-      "B):   Education that liberates the human mind from superstitions, narrowness, and mental bondage",
+      "B):   Education that prepares students only for military warfare",
       "C):   Education that encourages rote memorization of multiplication tables",
-      "D):   Education that prepares students only for military warfare",
+      "D):   Education that liberates the human mind from superstitions, narrowness, and mental bondage"
     ],
-    correctAnswer: "b",
-    explanation: "'That is knowledge which liberates' &mdash; liberating humanity from ignorance, dogmatism, and mental enslavement.",
+    "correctAnswer": "d",
+    "explanation": "'That is knowledge which liberates' &mdash; liberating humanity from ignorance, dogmatism, and mental enslavement."
   },
   {
-    id: "c11-edu-1-mcq-23",
-    question: "National Education Policy (NEP 2020) shifts the focus from rote schooling to experiential, holistic, and multidisciplinary learning. This is a direct shift towards:",
-    options: [
-      "A):   The narrow concept of education",
-      "B):   The broader concept of education and Gandhi-Dewey experiential principles",
+    "id": "c11-edu-1-mcq-23",
+    "question": "National Education Policy (NEP 2020) shifts the focus from rote schooling to experiential, holistic, and multidisciplinary learning. This is a direct shift towards:",
+    "options": [
+      "A):   The broader concept of education and Gandhi-Dewey experiential principles",
+      "B):   The narrow concept of education",
       "C):   Elimination of all schools",
-      "D):   Ancient colonial British curriculum",
+      "D):   Ancient colonial British curriculum"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 directly embodies broader education principles (holistic, experiential, multi-disciplinary, and character-driven).",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 directly embodies broader education principles (holistic, experiential, multi-disciplinary, and character-driven)."
   },
   {
-    id: "c11-edu-1-mcq-24",
-    question: "If a school focuses solely on passing board examinations through intense memorization while ignoring students' emotional, social, and moral growth, it is guilty of:",
-    options: [
+    "id": "c11-edu-1-mcq-24",
+    "question": "If a school focuses solely on passing board examinations through intense memorization while ignoring students' emotional, social, and moral growth, it is guilty of:",
+    "options": [
       "A):   Implementing Dewey's tripolar model",
-      "B):   Restricting education to an ultra-narrow, mechanical perspective",
-      "C):   Promoting Vivekananda's man-making philosophy",
-      "D):   Practicing holistic naturalism",
+      "B):   Promoting Vivekananda's man-making philosophy",
+      "C):   Restricting education to an ultra-narrow, mechanical perspective",
+      "D):   Practicing holistic naturalism"
     ],
-    correctAnswer: "b",
-    explanation: "Confining education to test-scores and rote-learning ignores character, emotions, and physical growth &mdash; the hallmark of narrow schooling.",
+    "correctAnswer": "c",
+    "explanation": "Confining education to test-scores and rote-learning ignores character, emotions, and physical growth &mdash; the hallmark of narrow schooling."
   },
   {
-    id: "c11-edu-1-mcq-25",
-    question: "Which of the following best represents the complete synthesis of Education as an interdisciplinary field?",
-    options: [
+    "id": "c11-edu-1-mcq-25",
+    "question": "Which of the following best represents the complete synthesis of Education as an interdisciplinary field?",
+    "options": [
       "A):   A single subject that only studies school building architecture",
       "B):   A dynamic discipline integrating Philosophy (Aims), Psychology (Methods), and Sociology (Context)",
       "C):   A system that eliminates teachers and relies solely on self-study",
-      "D):   A field that studies only past historical dates without present applications",
+      "D):   A field that studies only past historical dates without present applications"
     ],
-    correctAnswer: "b",
-    explanation: "Education synthesizes Philosophy (determining aims), Psychology (guiding learning processes), and Sociology (understanding social context).",
-  },
+    "correctAnswer": "b",
+    "explanation": "Education synthesizes Philosophy (determining aims), Psychology (guiding learning processes), and Sociology (understanding social context)."
+  }
 ];
