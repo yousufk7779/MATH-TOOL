@@ -16,6 +16,7 @@ import { c12Zoo1HtmlOverview, c12Zoo1HtmlSolutions, c12Zoo1Mcqs } from "./conten
 import { c12Zoo2HtmlOverview, c12Zoo2HtmlSolutions, c12Zoo2Mcqs } from "./content/c12-zoo-2";
 import { c12Zoo3HtmlOverview, c12Zoo3HtmlSolutions, c12Zoo3Mcqs } from "./content/c12-zoo-3";
 import { c12Zoo4HtmlOverview, c12Zoo4HtmlSolutions, c12Zoo4Mcqs } from "./content/c12-zoo-4";
+import { c11Edu1HtmlOverview, c11Edu1HtmlSolutions, c11Edu1Mcqs } from "./content/c11-edu-1";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2201,6 +2202,19 @@ if (ch12Zoo4) {
   ch12Zoo4.mcqs = c12Zoo4Mcqs;
 }
 
-
-
-
+// Override Class 11 Education Chapter 1 (Concept and Nature of Education)
+const ch11Edu1 = chapterContents["c11-edu-1"];
+if (ch11Edu1) {
+  ch11Edu1.htmlOverview = c11Edu1HtmlOverview;
+  ch11Edu1.htmlExercises = {
+    "ex-c11-qa": c11Edu1HtmlSolutions,
+  };
+  ch11Edu1.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu1.mcqs = c11Edu1Mcqs;
+}

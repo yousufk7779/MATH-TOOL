@@ -1290,6 +1290,21 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
     return ecoPool[(num - 1) % ecoPool.length] as string[];
   }
 
+  if (chapterId.match(/^c1[12]-edu-\d+$/)) {
+    const num = parseInt(chapterId.split("-").pop() || "1");
+    const eduGradients = [
+      ["#FF512F", "#DD2476"], // Ch 1 Sunset Coral (#FF512F)
+      ["#00C6FF", "#0072FF"], // Ch 2 Electric Cyan (#00C6FF)
+      ["#11998E", "#38EF7D"], // Ch 3 Mint Emerald (#11998E)
+      ["#8E2DE2", "#4A00E0"], // Ch 4 Violet Purple (#8E2DE2)
+      ["#FF8A65", "#FF3D00"], // Ch 5 Deep Orange (#FF8A65)
+      ["#FDC830", "#F37335"], // Ch 6 Golden Amber (#FDC830)
+      ["#FF007F", "#7928CA"], // Ch 7 Neon Rose (#FF007F)
+      ["#29B6F6", "#0288D1"], // Ch 8 Sky Royal Blue (#29B6F6)
+    ];
+    return eduGradients[(num - 1) % eduGradients.length];
+  }
+
   if (chapterId.match(/^c1[12]-(phy|chem|zoo|bot)-\d+$/)) {
     const num = parseInt(chapterId.split("-").pop() || "1");
     const multiColorPool = [
