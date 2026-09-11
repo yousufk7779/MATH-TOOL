@@ -17,6 +17,7 @@ import { c12Zoo2HtmlOverview, c12Zoo2HtmlSolutions, c12Zoo2Mcqs } from "./conten
 import { c12Zoo3HtmlOverview, c12Zoo3HtmlSolutions, c12Zoo3Mcqs } from "./content/c12-zoo-3";
 import { c12Zoo4HtmlOverview, c12Zoo4HtmlSolutions, c12Zoo4Mcqs } from "./content/c12-zoo-4";
 import { c11Edu1HtmlOverview, c11Edu1HtmlSolutions, c11Edu1Mcqs } from "./content/c11-edu-1";
+import { c11Edu2HtmlOverview, c11Edu2HtmlSolutions, c11Edu2Mcqs } from "./content/c11-edu-2";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2218,3 +2219,21 @@ if (ch11Edu1) {
   ];
   ch11Edu1.mcqs = c11Edu1Mcqs;
 }
+
+// Override Class 11 Education Chapter 2 (Aims of Education)
+const ch11Edu2 = chapterContents["c11-edu-2"];
+if (ch11Edu2) {
+  ch11Edu2.htmlOverview = c11Edu2HtmlOverview;
+  ch11Edu2.htmlExercises = {
+    "ex-c11-qa": c11Edu2HtmlSolutions,
+  };
+  ch11Edu2.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu2.mcqs = c11Edu2Mcqs;
+}
+
