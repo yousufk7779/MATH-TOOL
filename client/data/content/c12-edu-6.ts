@@ -661,8 +661,7 @@ export const c12Edu6HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Exposition of Exceptional Children: Concept of Positive and Negative Deviations, Identification, and Classroom Provisions.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of Exceptional Children: Concept of Positive and Negative Deviations, Identification, and Classroom Provisions.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Concept of Exceptionality:</b><br />
@@ -679,8 +678,7 @@ export const c12Edu6HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Critical Analysis of Learning Disabilities: Neurological Basis, Detailed Typology, and Step-by-Step IEP Formulation.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Critical Analysis of Learning Disabilities: Neurological Basis, Detailed Typology, and Step-by-Step IEP Formulation.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Meaning &amp; Neurological Nature:</b><br />
@@ -699,8 +697,7 @@ export const c12Edu6HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: Inclusive Education as a Global Paradigm: Concept, Need, Importance, and Systemic Barriers in Indian Schools.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Inclusive Education as a Global Paradigm: Concept, Need, Importance, and Systemic Barriers in Indian Schools.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Inclusive Philosophy:</b><br />
@@ -718,8 +715,7 @@ export const c12Edu6HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: Exhaustive Overview of the Rights of Persons with Disabilities (RPWD) Act, 2016.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: Exhaustive Overview of the Rights of Persons with Disabilities (RPWD) Act, 2016.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Legislative Background:</b><br />
@@ -735,8 +731,7 @@ export const c12Edu6HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Real-World Classroom Inclusion Case Study: Diagnostic Evaluation and 4-Tier Inclusive Remediation Blueprint.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Real-World Classroom Inclusion Case Study: Diagnostic Evaluation and 4-Tier Inclusive Remediation Blueprint.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">Case Profile:</b><br />
@@ -762,309 +757,304 @@ export const c12Edu6HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu6Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-6-mcq-1",
-    question: "Who is universally recognized in educational psychology as the 'Father of Special Education'?",
-    options: [
-      "A):   Samuel A. Kirk",
-      "B):   Jean Piaget",
+    "id": "c12-edu-6-mcq-1",
+    "question": "Who is universally recognized in educational psychology as the 'Father of Special Education'?",
+    "options": [
+      "A):   Jean Piaget",
+      "B):   Samuel A. Kirk",
       "C):   Sigmund Freud",
-      "D):   B. F. Skinner",
+      "D):   B. F. Skinner"
     ],
-    correctAnswer: "a",
-    explanation: "Dr. Samuel A. Kirk is widely acclaimed as the father of special education and coined the term 'Learning Disability' in 1963.",
+    "correctAnswer": "b",
+    "explanation": "Dr. Samuel A. Kirk is widely acclaimed as the father of special education and coined the term 'Learning Disability' in 1963."
   },
   {
-    id: "c12-edu-6-mcq-2",
-    question: "According to Lewis Terman's Stanford-Binet intelligence scale, what is the minimum IQ required to be classified as 'Gifted'?",
-    options: [
-      "A):   IQ 90",
+    "id": "c12-edu-6-mcq-2",
+    "question": "According to Lewis Terman's Stanford-Binet intelligence scale, what is the minimum IQ required to be classified as 'Gifted'?",
+    "options": [
+      "A):   IQ 140",
       "B):   IQ 110",
-      "C):   IQ 140",
-      "D):   IQ 70",
+      "C):   IQ 90",
+      "D):   IQ 70"
     ],
-    correctAnswer: "c",
-    explanation: "In Terman's classic classification, children with an IQ of 140 and above are classified as Gifted / Genius.",
+    "correctAnswer": "a",
+    "explanation": "In Terman's classic classification, children with an IQ of 140 and above are classified as Gifted / Genius."
   },
   {
-    id: "c12-edu-6-mcq-3",
-    question: "Which of the following is categorized as a 'Positive Deviation' on the normal distribution curve?",
-    options: [
+    "id": "c12-edu-6-mcq-3",
+    "question": "Which of the following is categorized as a 'Positive Deviation' on the normal distribution curve?",
+    "options": [
       "A):   Dyslexic child",
-      "B):   Gifted and creative prodigy",
-      "C):   Slow learner",
-      "D):   Hearing impaired child",
+      "B):   Slow learner",
+      "C):   Gifted and creative prodigy",
+      "D):   Hearing impaired child"
     ],
-    correctAnswer: "b",
-    explanation: "Positive deviations represent children who deviate above the statistical norm in intelligence, talent, or creativity.",
+    "correctAnswer": "c",
+    "explanation": "Positive deviations represent children who deviate above the statistical norm in intelligence, talent, or creativity."
   },
   {
-    id: "c12-edu-6-mcq-4",
-    question: "A specific learning disability characterized primarily by severe difficulty in reading and word recognition is called:",
-    options: [
+    "id": "c12-edu-6-mcq-4",
+    "question": "A specific learning disability characterized primarily by severe difficulty in reading and word recognition is called:",
+    "options": [
       "A):   Dyscalculia",
       "B):   Dysgraphia",
-      "C):   Dyslexia",
-      "D):   Dyspraxia",
+      "C):   Dyspraxia",
+      "D):   Dyslexia"
     ],
-    correctAnswer: "c",
-    explanation: "Dyslexia is a neurodevelopmental reading disability affecting phonological decoding and fluent word recognition.",
+    "correctAnswer": "d",
+    "explanation": "Dyslexia is a neurodevelopmental reading disability affecting phonological decoding and fluent word recognition."
   },
   {
-    id: "c12-edu-6-mcq-5",
-    question: "A severe learning disability involving difficulty in understanding numerical quantities and arithmetic operations is called:",
-    options: [
+    "id": "c12-edu-6-mcq-5",
+    "question": "A severe learning disability involving difficulty in understanding numerical quantities and arithmetic operations is called:",
+    "options": [
       "A):   Dysgraphia",
       "B):   Dyscalculia",
       "C):   Dyslexia",
-      "D):   Aphasia",
+      "D):   Aphasia"
     ],
-    correctAnswer: "b",
-    explanation: "Dyscalculia is a specific mathematical learning disability affecting number comprehension and arithmetic calculation.",
+    "correctAnswer": "b",
+    "explanation": "Dyscalculia is a specific mathematical learning disability affecting number comprehension and arithmetic calculation."
   },
   {
-    id: "c12-edu-6-mcq-6",
-    question: "What does the educational acronym IEP stand for?",
-    options: [
-      "A):   Integrated Elementary Pedagogy",
-      "B):   Individualized Education Plan",
+    "id": "c12-edu-6-mcq-6",
+    "question": "What does the educational acronym IEP stand for?",
+    "options": [
+      "A):   Individualized Education Plan",
+      "B):   Integrated Elementary Pedagogy",
       "C):   Institutional Evaluation Program",
-      "D):   International Educational Policy",
+      "D):   International Educational Policy"
     ],
-    correctAnswer: "b",
-    explanation: "IEP stands for Individualized Education Plan, a legally mandated tailored instructional plan for students with special needs.",
+    "correctAnswer": "a",
+    "explanation": "IEP stands for Individualized Education Plan, a legally mandated tailored instructional plan for students with special needs."
   },
   {
-    id: "c12-edu-6-mcq-7",
-    question: "In which year was the landmark Rights of Persons with Disabilities (RPWD) Act passed by the Parliament of India?",
-    options: [
+    "id": "c12-edu-6-mcq-7",
+    "question": "In which year was the landmark Rights of Persons with Disabilities (RPWD) Act passed by the Parliament of India?",
+    "options": [
       "A):   1995",
       "B):   2009",
-      "C):   2016",
-      "D):   2020",
+      "C):   2020",
+      "D):   2016"
     ],
-    correctAnswer: "c",
-    explanation: "The RPWD Act was passed in December 2016, replacing the earlier PWD Act of 1995.",
+    "correctAnswer": "d",
+    "explanation": "The RPWD Act was passed in December 2016, replacing the earlier PWD Act of 1995."
   },
   {
-    id: "c12-edu-6-mcq-8",
-    question: "How many disability categories are officially recognized under the RPWD Act, 2016?",
-    options: [
+    "id": "c12-edu-6-mcq-8",
+    "question": "How many disability categories are officially recognized under the RPWD Act, 2016?",
+    "options": [
       "A):   7 categories",
       "B):   14 categories",
       "C):   21 categories",
-      "D):   28 categories",
+      "D):   28 categories"
     ],
-    correctAnswer: "c",
-    explanation: "The RPWD Act 2016 significantly expanded the recognized categories of disability from 7 to 21 conditions.",
+    "correctAnswer": "c",
+    "explanation": "The RPWD Act 2016 significantly expanded the recognized categories of disability from 7 to 21 conditions."
   },
   {
-    id: "c12-edu-6-mcq-9",
-    question: "Under the RPWD Act 2016, children with benchmark disabilities have the statutory right to free education up to the age of:",
-    options: [
+    "id": "c12-edu-6-mcq-9",
+    "question": "Under the RPWD Act 2016, children with benchmark disabilities have the statutory right to free education up to the age of:",
+    "options": [
       "A):   14 years",
       "B):   18 years",
       "C):   21 years",
-      "D):   10 years",
+      "D):   10 years"
     ],
-    correctAnswer: "b",
-    explanation: "Unlike the general RTE Act (up to 14 years), the RPWD Act 2016 extends free education for children with benchmark disabilities up to 18 years.",
+    "correctAnswer": "b",
+    "explanation": "Unlike the general RTE Act (up to 14 years), the RPWD Act 2016 extends free education for children with benchmark disabilities up to 18 years."
   },
   {
-    id: "c12-edu-6-mcq-10",
-    question: "The historic 1994 World Conference that proclaimed the global mandate for Inclusive Education was held under UNESCO auspices at:",
-    options: [
-      "A):   Geneva, Switzerland",
-      "B):   Salamanca, Spain",
+    "id": "c12-edu-6-mcq-10",
+    "question": "The historic 1994 World Conference that proclaimed the global mandate for Inclusive Education was held under UNESCO auspices at:",
+    "options": [
+      "A):   Salamanca, Spain",
+      "B):   Geneva, Switzerland",
       "C):   Paris, France",
-      "D):   New York, USA",
+      "D):   New York, USA"
     ],
-    correctAnswer: "b",
-    explanation: "The UNESCO World Conference on Special Needs Education was held in Salamanca, Spain in 1994, issuing the historic Salamanca Statement.",
+    "correctAnswer": "a",
+    "explanation": "The UNESCO World Conference on Special Needs Education was held in Salamanca, Spain in 1994, issuing the historic Salamanca Statement."
   },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
   {
-    id: "c12-edu-6-mcq-11",
-    question: "A 9-year-old student with normal intelligence consistently reverses letters while writing, turning 'b' into 'd' and 'saw' into 'was'. This student displays classic signs of:",
-    options: [
+    "id": "c12-edu-6-mcq-11",
+    "question": "A 9-year-old student with normal intelligence consistently reverses letters while writing, turning 'b' into 'd' and 'saw' into 'was'. This student displays classic signs of:",
+    "options": [
       "A):   Mental Retardation",
-      "B):   Dyslexia",
-      "C):   Hearing Impairment",
-      "D):   Giftedness",
+      "B):   Hearing Impairment",
+      "C):   Dyslexia",
+      "D):   Giftedness"
     ],
-    correctAnswer: "b",
-    explanation: "Letter reversals, phonetic confusion, and word inversions are hallmark diagnostic indicators of Dyslexia in school children.",
+    "correctAnswer": "c",
+    "explanation": "Letter reversals, phonetic confusion, and word inversions are hallmark diagnostic indicators of Dyslexia in school children."
   },
   {
-    id: "c12-edu-6-mcq-12",
-    question: "Why is 'Enrichment' widely preferred over 'Acceleration' (grade skipping) for gifted students by modern educational psychologists?",
-    options: [
+    "id": "c12-edu-6-mcq-12",
+    "question": "Why is 'Enrichment' widely preferred over 'Acceleration' (grade skipping) for gifted students by modern educational psychologists?",
+    "options": [
       "A):   Because acceleration is illegal",
-      "B):   Because enrichment keeps gifted children with their chronological age peers, preventing social and emotional maladjustment",
+      "B):   Because enrichment requires no teachers",
       "C):   Because gifted children have low intelligence",
-      "D):   Because enrichment requires no teachers",
+      "D):   Because enrichment keeps gifted children with their chronological age peers, preventing social and emotional maladjustment"
     ],
-    correctAnswer: "b",
-    explanation: "Acceleration can cause severe socio-emotional friction when a young child is placed with older peers; enrichment nurtures intellect safely within age cohort.",
+    "correctAnswer": "d",
+    "explanation": "Acceleration can cause severe socio-emotional friction when a young child is placed with older peers; enrichment nurtures intellect safely within age cohort."
   },
   {
-    id: "c12-edu-6-mcq-13",
-    question: "Which of the following is a primary characteristic of a child with a Specific Learning Disability (LD)?",
-    options: [
-      "A):   Low general intelligence (IQ below 70)",
-      "B):   Severe discrepancy between normal/above-normal intelligence and actual academic performance",
+    "id": "c12-edu-6-mcq-13",
+    "question": "Which of the following is a primary characteristic of a child with a Specific Learning Disability (LD)?",
+    "options": [
+      "A):   Severe discrepancy between normal/above-normal intelligence and actual academic performance",
+      "B):   Low general intelligence (IQ below 70)",
       "C):   Severe sensory blindness",
-      "D):   Total inability to speak",
+      "D):   Total inability to speak"
     ],
-    correctAnswer: "b",
-    explanation: "A child with LD possesses normal or superior IQ, but displays an unexpected, acute discrepancy in specific academic processing areas.",
+    "correctAnswer": "a",
+    "explanation": "A child with LD possesses normal or superior IQ, but displays an unexpected, acute discrepancy in specific academic processing areas."
   },
   {
-    id: "c12-edu-6-mcq-14",
-    question: "What is the key philosophical difference between 'Integrated Education' and 'Inclusive Education'?",
-    options: [
-      "A):   In integrated education the child must adapt to the school, whereas in inclusive education the school and curriculum adapt to the child",
-      "B):   Integrated education is only for gifted children",
+    "id": "c12-edu-6-mcq-14",
+    "question": "What is the key philosophical difference between 'Integrated Education' and 'Inclusive Education'?",
+    "options": [
+      "A):   Integrated education is only for gifted children",
+      "B):   In integrated education the child must adapt to the school, whereas in inclusive education the school and curriculum adapt to the child",
       "C):   Inclusive education is conducted exclusively online",
-      "D):   Integrated education requires no exams",
+      "D):   Integrated education requires no exams"
     ],
-    correctAnswer: "a",
-    explanation: "Integration demands that the child fit into an unmodified system; Inclusion transforms the school, curriculum, and pedagogy to accommodate every unique child.",
+    "correctAnswer": "b",
+    "explanation": "Integration demands that the child fit into an unmodified system; Inclusion transforms the school, curriculum, and pedagogy to accommodate every unique child."
   },
   {
-    id: "c12-edu-6-mcq-15",
-    question: "A student who exhibits extremely distorted, cramped handwriting and finds it agonizing to copy notes from the blackboard is experiencing:",
-    options: [
-      "A):   Dysgraphia",
+    "id": "c12-edu-6-mcq-15",
+    "question": "A student who exhibits extremely distorted, cramped handwriting and finds it agonizing to copy notes from the blackboard is experiencing:",
+    "options": [
+      "A):   Down Syndrome",
       "B):   Dyscalculia",
       "C):   Autism",
-      "D):   Down Syndrome",
+      "D):   Dysgraphia"
     ],
-    correctAnswer: "a",
-    explanation: "Dysgraphia is a specific learning disability affecting fine motor mechanics and spatial layout of written expression.",
+    "correctAnswer": "d",
+    "explanation": "Dysgraphia is a specific learning disability affecting fine motor mechanics and spatial layout of written expression."
   },
   {
-    id: "c12-edu-6-mcq-16",
-    question: "According to Joseph Renzulli's Three-Ring Conception, Giftedness is the intersection of which three components?",
-    options: [
+    "id": "c12-edu-6-mcq-16",
+    "question": "According to Joseph Renzulli's Three-Ring Conception, Giftedness is the intersection of which three components?",
+    "options": [
       "A):   Wealth, Health, and Luck",
-      "B):   Above-Average Ability, High Creativity, and High Task Commitment",
-      "C):   Memory, Obedience, and Discipline",
-      "D):   Speed, Height, and Strength",
+      "B):   Memory, Obedience, and Discipline",
+      "C):   Above-Average Ability, High Creativity, and High Task Commitment",
+      "D):   Speed, Height, and Strength"
     ],
-    correctAnswer: "b",
-    explanation: "Renzulli's model defines giftedness as the interaction of above-average ability, high creativity, and high task commitment.",
+    "correctAnswer": "c",
+    "explanation": "Renzulli's model defines giftedness as the interaction of above-average ability, high creativity, and high task commitment."
   },
   {
-    id: "c12-edu-6-mcq-17",
-    question: "What percentage of seats is reserved for persons with benchmark disabilities in government higher educational institutions under the RPWD Act 2016?",
-    options: [
+    "id": "c12-edu-6-mcq-17",
+    "question": "What percentage of seats is reserved for persons with benchmark disabilities in government higher educational institutions under the RPWD Act 2016?",
+    "options": [
       "A):   3%",
-      "B):   4%",
-      "C):   5%",
-      "D):   10%",
+      "B):   5%",
+      "C):   4%",
+      "D):   10%"
     ],
-    correctAnswer: "c",
-    explanation: "The RPWD Act 2016 increased higher education reservation from 3% to 5% for individuals with benchmark disabilities.",
+    "correctAnswer": "b",
+    "explanation": "The RPWD Act 2016 increased higher education reservation from 3% to 5% for individuals with benchmark disabilities."
   },
   {
-    id: "c12-edu-6-mcq-18",
-    question: "Which of the following is a mandated accommodation in an Individualized Education Plan (IEP) for a dyslexic student during board examinations?",
-    options: [
+    "id": "c12-edu-6-mcq-18",
+    "question": "Which of the following is a mandated accommodation in an Individualized Education Plan (IEP) for a dyslexic student during board examinations?",
+    "options": [
       "A):   Giving zero marks for spelling errors and providing extra compensatory examination time",
       "B):   Expelling the student from the examination center",
       "C):   Doubling the syllabus for the student",
-      "D):   Forbidding the use of oral questions",
+      "D):   Forbidding the use of oral questions"
     ],
-    correctAnswer: "a",
-    explanation: "Board regulations mandate providing compensatory time (typically 20 mins/hour), ignoring spelling errors in non-language subjects, and allowing scribes/readers.",
+    "correctAnswer": "a",
+    "explanation": "Board regulations mandate providing compensatory time (typically 20 mins/hour), ignoring spelling errors in non-language subjects, and allowing scribes/readers."
   },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
   {
-    id: "c12-edu-6-mcq-19",
-    question: "A teacher observes that a Grade 6 child is outstanding at verbal discussions, but when asked to solve 34 &minus; 18 on paper, the child cannot comprehend the minus sign or borrowing concept. This child should be evaluated for:",
-    options: [
-      "A):   Dyscalculia",
+    "id": "c12-edu-6-mcq-19",
+    "question": "A teacher observes that a Grade 6 child is outstanding at verbal discussions, but when asked to solve 34 &minus; 18 on paper, the child cannot comprehend the minus sign or borrowing concept. This child should be evaluated for:",
+    "options": [
+      "A):   Conduct Disorder",
       "B):   Dysgraphia",
       "C):   Emotional Maladjustment",
-      "D):   Conduct Disorder",
+      "D):   Dyscalculia"
     ],
-    correctAnswer: "a",
-    explanation: "Severe, isolated inability to process arithmetic symbols and mathematical borrowing despite normal verbal reasoning indicates Dyscalculia.",
+    "correctAnswer": "d",
+    "explanation": "Severe, isolated inability to process arithmetic symbols and mathematical borrowing despite normal verbal reasoning indicates Dyscalculia."
   },
   {
-    id: "c12-edu-6-mcq-20",
-    question: "Why does the National Education Policy (NEP 2020) emphasize the 'Least Restrictive Environment' (LRE) for children with special needs?",
-    options: [
+    "id": "c12-edu-6-mcq-20",
+    "question": "Why does the National Education Policy (NEP 2020) emphasize the 'Least Restrictive Environment' (LRE) for children with special needs?",
+    "options": [
       "A):   To minimize school construction costs",
-      "B):   To ensure that special-needs children are educated to the maximum extent possible alongside their non-disabled peers",
-      "C):   To remove teachers from classrooms",
-      "D):   To convert schools into hospitals",
+      "B):   To remove teachers from classrooms",
+      "C):   To ensure that special-needs children are educated to the maximum extent possible alongside their non-disabled peers",
+      "D):   To convert schools into hospitals"
     ],
-    correctAnswer: "b",
-    explanation: "The LRE mandate ensures that children with disabilities are educated alongside general peers rather than being segregated unnecessarily.",
+    "correctAnswer": "c",
+    "explanation": "The LRE mandate ensures that children with disabilities are educated alongside general peers rather than being segregated unnecessarily."
   },
   {
-    id: "c12-edu-6-mcq-21",
-    question: "A regular classroom contains a gifted student, a dyslexic student, a hearing-impaired student with a hearing aid, and average learners. How should the teacher design the lesson?",
-    options: [
+    "id": "c12-edu-6-mcq-21",
+    "question": "A regular classroom contains a gifted student, a dyslexic student, a hearing-impaired student with a hearing aid, and average learners. How should the teacher design the lesson?",
+    "options": [
       "A):   Lecture continuously at high speed to challenge the gifted child",
       "B):   Apply Universal Design for Learning (UDL) with differentiated multi-sensory materials, visual aids, and peer collaboration",
       "C):   Ask the disabled students to sit in the library during class",
-      "D):   Teach strictly from one textbook without variation",
+      "D):   Teach strictly from one textbook without variation"
     ],
-    correctAnswer: "b",
-    explanation: "Universal Design for Learning (UDL) provides multiple means of representation, expression, and engagement to accommodate all diverse learners simultaneously.",
+    "correctAnswer": "b",
+    "explanation": "Universal Design for Learning (UDL) provides multiple means of representation, expression, and engagement to accommodate all diverse learners simultaneously."
   },
   {
-    id: "c12-edu-6-mcq-22",
-    question: "Which of the following conditions was newly included as a recognized disability under the RPWD Act, 2016 for the first time in India?",
-    options: [
+    "id": "c12-edu-6-mcq-22",
+    "question": "Which of the following conditions was newly included as a recognized disability under the RPWD Act, 2016 for the first time in India?",
+    "options": [
       "A):   Blindness",
-      "B):   Specific Learning Disabilities and Autism Spectrum Disorder",
+      "B):   Leprosy Cured",
       "C):   Locomotor Disability",
-      "D):   Leprosy Cured",
+      "D):   Specific Learning Disabilities and Autism Spectrum Disorder"
     ],
-    correctAnswer: "b",
-    explanation: "The RPWD Act 2016 officially recognized Specific Learning Disabilities (SLD) and Autism Spectrum Disorder (ASD) for statutory protection for the first time.",
+    "correctAnswer": "d",
+    "explanation": "The RPWD Act 2016 officially recognized Specific Learning Disabilities (SLD) and Autism Spectrum Disorder (ASD) for statutory protection for the first time."
   },
   {
-    id: "c12-edu-6-mcq-23",
-    question: "An adolescent with cerebral palsy wishes to join a mainstream government school, but the principal denies admission citing the lack of wheelchair ramps. Under the RPWD Act 2016, this denial is:",
-    options: [
-      "A):   Completely lawful and encouraged",
-      "B):   A punishable illegal act of discrimination carrying penal fines and imprisonment",
+    "id": "c12-edu-6-mcq-23",
+    "question": "An adolescent with cerebral palsy wishes to join a mainstream government school, but the principal denies admission citing the lack of wheelchair ramps. Under the RPWD Act 2016, this denial is:",
+    "options": [
+      "A):   A punishable illegal act of discrimination carrying penal fines and imprisonment",
+      "B):   Completely lawful and encouraged",
       "C):   An optional decision left to the principal's mood",
-      "D):   Permitted if the student pays double tuition fee",
+      "D):   Permitted if the student pays double tuition fee"
     ],
-    correctAnswer: "b",
-    explanation: "Denying admission to a disabled student is a direct violation of Chapter III of the RPWD Act 2016, punishable by law.",
+    "correctAnswer": "a",
+    "explanation": "Denying admission to a disabled student is a direct violation of Chapter III of the RPWD Act 2016, punishable by law."
   },
   {
-    id: "c12-edu-6-mcq-24",
-    question: "What is the primary role of general non-disabled peers in an inclusive educational classroom?",
-    options: [
+    "id": "c12-edu-6-mcq-24",
+    "question": "What is the primary role of general non-disabled peers in an inclusive educational classroom?",
+    "options": [
       "A):   To ignore students with disabilities completely",
-      "B):   To act as peer buddies, collaborative learning partners, and agents of empathy and inclusion",
-      "C):   To report disabled classmates to the principal",
-      "D):   To take tests on behalf of special-needs students",
+      "B):   To report disabled classmates to the principal",
+      "C):   To act as peer buddies, collaborative learning partners, and agents of empathy and inclusion",
+      "D):   To take tests on behalf of special-needs students"
     ],
-    correctAnswer: "b",
-    explanation: "Peer tutoring and peer buddy systems build collaborative academic support and nurture compassionate social attitudes.",
+    "correctAnswer": "c",
+    "explanation": "Peer tutoring and peer buddy systems build collaborative academic support and nurture compassionate social attitudes."
   },
   {
-    id: "c12-edu-6-mcq-25",
-    question: "Why is a multidisciplinary team necessary when drafting an Individualized Education Plan (IEP)?",
-    options: [
-      "A):   Because no single professional possesses the complete medical, psychological, and pedagogical expertise required to assess and support a child's diverse needs",
-      "B):   Because government rules require minimum ten signatures on every paper",
+    "id": "c12-edu-6-mcq-25",
+    "question": "Why is a multidisciplinary team necessary when drafting an Individualized Education Plan (IEP)?",
+    "options": [
+      "A):   Because government rules require minimum ten signatures on every paper",
+      "B):   Because no single professional possesses the complete medical, psychological, and pedagogical expertise required to assess and support a child's diverse needs",
       "C):   To increase the fee paid by parents",
-      "D):   To delay the implementation of special education",
+      "D):   To delay the implementation of special education"
     ],
-    correctAnswer: "a",
-    explanation: "An effective IEP integrates insights from educators, psychologists, therapists, and parents to address all cognitive, sensory, and emotional dimensions.",
-  },
+    "correctAnswer": "b",
+    "explanation": "An effective IEP integrates insights from educators, psychologists, therapists, and parents to address all cognitive, sensory, and emotional dimensions."
+  }
 ];

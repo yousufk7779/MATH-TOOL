@@ -830,309 +830,304 @@ export const c12Edu1HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu1Mcqs = [
-  // Tier 1: Basic Recall & Definitions (Q1 to Q10)
   {
-    id: "c12-edu-1-mcq-1",
-    question: "The word 'Philosophy' is derived from two Greek words, 'Philos' and 'Sophia', which literally mean:",
-    options: [
+    "id": "c12-edu-1-mcq-1",
+    "question": "The word 'Philosophy' is derived from two Greek words, 'Philos' and 'Sophia', which literally mean:",
+    "options": [
       "A):   Love of Power",
       "B):   Love of Wisdom",
       "C):   Search for Wealth",
       "D):   Study of Nature"
     ],
-    correctAnswer: "B",
-    explanation: "In Greek, 'Philos' means love and 'Sophia' means wisdom; hence, Philosophy etymologically translates to 'Love of Wisdom'."
+    "correctAnswer": "b",
+    "explanation": "In Greek, 'Philos' means love and 'Sophia' means wisdom; hence, Philosophy etymologically translates to 'Love of Wisdom'."
   },
   {
-    id: "c12-edu-1-mcq-2",
-    question: "Who famously declared: 'Education is the dynamic side of philosophy'?",
-    options: [
-      "A):   John Dewey",
-      "B):   Sir John Adams",
+    "id": "c12-edu-1-mcq-2",
+    "question": "Who famously declared: 'Education is the dynamic side of philosophy'?",
+    "options": [
+      "A):   Sir John Adams",
+      "B):   John Dewey",
       "C):   Jean-Jacques Rousseau",
       "D):   Plato"
     ],
-    correctAnswer: "B",
-    explanation: "Sir John Adams articulated that education is the dynamic, active aspect of philosophical beliefs, putting ideals into practical effect."
+    "correctAnswer": "a",
+    "explanation": "Sir John Adams articulated that education is the dynamic, active aspect of philosophical beliefs, putting ideals into practical effect."
   },
   {
-    id: "c12-edu-1-mcq-3",
-    question: "Which philosophical school considers Mind and Spirit as the ultimate reality of the universe?",
-    options: [
+    "id": "c12-edu-1-mcq-3",
+    "question": "Which philosophical school considers Mind and Spirit as the ultimate reality of the universe?",
+    "options": [
       "A):   Naturalism",
       "B):   Pragmatism",
       "C):   Idealism",
       "D):   Realism"
     ],
-    correctAnswer: "C",
-    explanation: "Idealism posits that ultimate reality is spiritual and mental, while the physical material world is transient and subordinate."
+    "correctAnswer": "c",
+    "explanation": "Idealism posits that ultimate reality is spiritual and mental, while the physical material world is transient and subordinate."
   },
   {
-    id: "c12-edu-1-mcq-4",
-    question: "The term 'Pragmatism' is derived from the Greek root word 'Pragma', which means:",
-    options: [
+    "id": "c12-edu-1-mcq-4",
+    "question": "The term 'Pragmatism' is derived from the Greek root word 'Pragma', which means:",
+    "options": [
       "A):   Idea or thought",
-      "B):   Action, deed, or practice",
+      "B):   Spiritual meditation",
       "C):   Divine blessing",
-      "D):   Spiritual meditation"
+      "D):   Action, deed, or practice"
     ],
-    correctAnswer: "B",
-    explanation: "'Pragma' in Greek means action, work, business, or practical deed."
+    "correctAnswer": "d",
+    "explanation": "'Pragma' in Greek means action, work, business, or practical deed."
   },
   {
-    id: "c12-edu-1-mcq-5",
-    question: "Who is universally recognized as the Father of Western Idealism?",
-    options: [
-      "A):   Plato",
-      "B):   John Dewey",
+    "id": "c12-edu-1-mcq-5",
+    "question": "Who is universally recognized as the Father of Western Idealism?",
+    "options": [
+      "A):   John Dewey",
+      "B):   Plato",
       "C):   William James",
       "D):   Aristotle"
     ],
-    correctAnswer: "A",
-    explanation: "Plato, the disciple of Socrates and author of 'The Republic', is the founding father of Western philosophical Idealism."
+    "correctAnswer": "b",
+    "explanation": "Plato, the disciple of Socrates and author of 'The Republic', is the founding father of Western philosophical Idealism."
   },
   {
-    id: "c12-edu-1-mcq-6",
-    question: "Which of the following represents the three eternal universal values championed by Idealism?",
-    options: [
-      "A):   Money, Fame, and Power",
-      "B):   Satyam (Truth), Shivam (Goodness), and Sundaram (Beauty)",
+    "id": "c12-edu-1-mcq-6",
+    "question": "Which of the following represents the three eternal universal values championed by Idealism?",
+    "options": [
+      "A):   Satyam (Truth), Shivam (Goodness), and Sundaram (Beauty)",
+      "B):   Money, Fame, and Power",
       "C):   Action, Experiment, and Utility",
       "D):   Freedom, Conflict, and Change"
     ],
-    correctAnswer: "B",
-    explanation: "Idealism holds that Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram) are absolute, eternal spiritual values."
+    "correctAnswer": "a",
+    "explanation": "Idealism holds that Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram) are absolute, eternal spiritual values."
   },
   {
-    id: "c12-edu-1-mcq-7",
-    question: "The educational slogan 'Education is life itself, not a preparation for life' is the core philosophy of:",
-    options: [
+    "id": "c12-edu-1-mcq-7",
+    "question": "The educational slogan 'Education is life itself, not a preparation for life' is the core philosophy of:",
+    "options": [
       "A):   Idealism",
-      "B):   Pragmatism",
+      "B):   Perennialism",
       "C):   Scholasticism",
-      "D):   Perennialism"
+      "D):   Pragmatism"
     ],
-    correctAnswer: "B",
-    explanation: "John Dewey and Pragmatists assert that school must be an active miniature society where the child lives and grows continuously."
+    "correctAnswer": "d",
+    "explanation": "John Dewey and Pragmatists assert that school must be an active miniature society where the child lives and grows continuously."
   },
   {
-    id: "c12-edu-1-mcq-8",
-    question: "The Project Method of teaching was formulated and developed by:",
-    options: [
-      "A):   William Heard Kilpatrick",
+    "id": "c12-edu-1-mcq-8",
+    "question": "The Project Method of teaching was formulated and developed by:",
+    "options": [
+      "A):   Friedrich Froebel",
       "B):   Plato",
-      "C):   Friedrich Froebel",
+      "C):   William Heard Kilpatrick",
       "D):   Immanuel Kant"
     ],
-    correctAnswer: "A",
-    explanation: "Dr. William Heard Kilpatrick formulated the Project Method as a pragmatic application of Dewey's experimental philosophy."
+    "correctAnswer": "c",
+    "explanation": "Dr. William Heard Kilpatrick formulated the Project Method as a pragmatic application of Dewey's experimental philosophy."
   },
   {
-    id: "c12-edu-1-mcq-9",
-    question: "Which philosopher compared the school to a garden, the child to a tender plant, and the teacher to a gardener?",
-    options: [
+    "id": "c12-edu-1-mcq-9",
+    "question": "Which philosopher compared the school to a garden, the child to a tender plant, and the teacher to a gardener?",
+    "options": [
       "A):   John Dewey",
       "B):   Friedrich Froebel",
       "C):   Socrates",
       "D):   C.S. Peirce"
     ],
-    correctAnswer: "B",
-    explanation: "Friedrich Froebel, the German idealist educator and creator of Kindergarten, used the classic gardener-plant metaphor."
+    "correctAnswer": "b",
+    "explanation": "Friedrich Froebel, the German idealist educator and creator of Kindergarten, used the classic gardener-plant metaphor."
   },
   {
-    id: "c12-edu-1-mcq-10",
-    question: "According to Pragmatism, the criterion of truth of an idea is its:",
-    options: [
-      "A):   Ancient scriptural origin",
-      "B):   Practical utility and working consequences",
+    "id": "c12-edu-1-mcq-10",
+    "question": "According to Pragmatism, the criterion of truth of an idea is its:",
+    "options": [
+      "A):   Practical utility and working consequences",
+      "B):   Ancient scriptural origin",
       "C):   Endorsement by kings and priests",
       "D):   Abstract mathematical symmetry"
     ],
-    correctAnswer: "B",
-    explanation: "Pragmatism holds that an idea is true if and only if it works successfully when tested in practical experience (utility)."
+    "correctAnswer": "a",
+    "explanation": "Pragmatism holds that an idea is true if and only if it works successfully when tested in practical experience (utility)."
   },
-
-  // Tier 2: Conceptual & Structural Questions (Q11 to Q18)
   {
-    id: "c12-edu-1-mcq-11",
-    question: "In the curriculum of Idealism, which group of subjects is assigned the highest status?",
-    options: [
+    "id": "c12-edu-1-mcq-11",
+    "question": "In the curriculum of Idealism, which group of subjects is assigned the highest status?",
+    "options": [
       "A):   Industrial crafts and physical sciences",
-      "B):   Humanities, Philosophy, Ethics, and Fine Arts",
-      "C):   Commercial bookkeeping and salesmanship",
+      "B):   Commercial bookkeeping and salesmanship",
+      "C):   Humanities, Philosophy, Ethics, and Fine Arts",
       "D):   Agricultural farming only"
     ],
-    correctAnswer: "B",
-    explanation: "Because Idealism prioritizes the human mind and soul, humanities, literature, ethics, and philosophy occupy the supreme position."
+    "correctAnswer": "c",
+    "explanation": "Because Idealism prioritizes the human mind and soul, humanities, literature, ethics, and philosophy occupy the supreme position."
   },
   {
-    id: "c12-edu-1-mcq-12",
-    question: "What is the primary role of the teacher in Pragmatic education?",
-    options: [
+    "id": "c12-edu-1-mcq-12",
+    "question": "What is the primary role of the teacher in Pragmatic education?",
+    "options": [
       "A):   An infallible spiritual authority demanding blind obedience",
-      "B):   A democratic facilitator, advisor, and partner in collaborative social learning",
+      "B):   A passive spectator who remains absent from class",
       "C):   A strict taskmaster who delivers long lectures",
-      "D):   A passive spectator who remains absent from class"
+      "D):   A democratic facilitator, advisor, and partner in collaborative social learning"
     ],
-    correctAnswer: "B",
-    explanation: "Pragmatism conceives the teacher as a guide, facilitator, and senior partner who arranges learning environments."
+    "correctAnswer": "d",
+    "explanation": "Pragmatism conceives the teacher as a guide, facilitator, and senior partner who arranges learning environments."
   },
   {
-    id: "c12-edu-1-mcq-13",
-    question: "The Socratic Method of teaching is fundamentally based on:",
-    options: [
-      "A):   Hands-on workshop machinery",
-      "B):   Dialectical Question-and-Answer leading to critical insight",
+    "id": "c12-edu-1-mcq-13",
+    "question": "The Socratic Method of teaching is fundamentally based on:",
+    "options": [
+      "A):   Dialectical Question-and-Answer leading to critical insight",
+      "B):   Hands-on workshop machinery",
       "C):   Rote memorization of religious mantras",
       "D):   Physical gymnastics"
     ],
-    correctAnswer: "B",
-    explanation: "Socrates used dialectic questioning to bring latent knowledge from the pupil's mind into conscious understanding."
+    "correctAnswer": "a",
+    "explanation": "Socrates used dialectic questioning to bring latent knowledge from the pupil's mind into conscious understanding."
   },
   {
-    id: "c12-edu-1-mcq-14",
-    question: "What is the correct chronological sequence of the four stages in Kilpatrick's Project Method?",
-    options: [
+    "id": "c12-edu-1-mcq-14",
+    "question": "What is the correct chronological sequence of the four stages in Kilpatrick's Project Method?",
+    "options": [
       "A):   Executing -> Planning -> Purposing -> Judging",
       "B):   Purposing -> Planning -> Executing -> Judging",
       "C):   Planning -> Purposing -> Judging -> Executing",
       "D):   Judging -> Executing -> Planning -> Purposing"
     ],
-    correctAnswer: "B",
-    explanation: "The four stages proceed logically: Purposing (defining goal) -> Planning (blueprint) -> Executing (work) -> Judging (evaluation)."
+    "correctAnswer": "b",
+    "explanation": "The four stages proceed logically: Purposing (defining goal) -> Planning (blueprint) -> Executing (work) -> Judging (evaluation)."
   },
   {
-    id: "c12-edu-1-mcq-15",
-    question: "The branch of philosophy that investigates the nature, sources, and validity of knowledge is termed:",
-    options: [
+    "id": "c12-edu-1-mcq-15",
+    "question": "The branch of philosophy that investigates the nature, sources, and validity of knowledge is termed:",
+    "options": [
       "A):   Metaphysics",
-      "B):   Epistemology",
+      "B):   Ethics",
       "C):   Axiology",
-      "D):   Ethics"
+      "D):   Epistemology"
     ],
-    correctAnswer: "B",
-    explanation: "Epistemology is the philosophical study of the origin, nature, methods, and limits of human knowledge."
+    "correctAnswer": "d",
+    "explanation": "Epistemology is the philosophical study of the origin, nature, methods, and limits of human knowledge."
   },
   {
-    id: "c12-edu-1-mcq-16",
-    question: "Why do idealists advocate 'Impressionistic Discipline'?",
-    options: [
+    "id": "c12-edu-1-mcq-16",
+    "question": "Why do idealists advocate 'Impressionistic Discipline'?",
+    "options": [
       "A):   Because they believe in using iron rods for punishment",
-      "B):   Because the noble personality and moral aura of the teacher naturally inspire self-restraint in students",
-      "C):   Because students should have complete unregulated freedom",
+      "B):   Because students should have complete unregulated freedom",
+      "C):   Because the noble personality and moral aura of the teacher naturally inspire self-restraint in students",
       "D):   Because discipline is impossible in school"
     ],
-    correctAnswer: "B",
-    explanation: "Impressionistic discipline relies on the inspirational moral character of the teacher to stimulate willing self-discipline."
+    "correctAnswer": "c",
+    "explanation": "Impressionistic discipline relies on the inspirational moral character of the teacher to stimulate willing self-discipline."
   },
   {
-    id: "c12-edu-1-mcq-17",
-    question: "John Dewey classified children's natural impulses into four categories. Which of the following is NOT one of them?",
-    options: [
+    "id": "c12-edu-1-mcq-17",
+    "question": "John Dewey classified children's natural impulses into four categories. Which of the following is NOT one of them?",
+    "options": [
       "A):   Social instinct of communication",
-      "B):   Instinct of inquiry and investigation",
-      "C):   Instinct of aggressive military domination",
+      "B):   Instinct of aggressive military domination",
+      "C):   Instinct of inquiry and investigation",
       "D):   Instinct of artistic expression and construction"
     ],
-    correctAnswer: "C",
-    explanation: "Dewey identified conversation, inquiry, construction, and artistic expression. Aggressive domination is not an educational instinct."
+    "correctAnswer": "b",
+    "explanation": "Dewey identified conversation, inquiry, construction, and artistic expression. Aggressive domination is not an educational instinct."
   },
   {
-    id: "c12-edu-1-mcq-18",
-    question: "In which book did John Dewey present his comprehensive philosophy of democratic and pragmatic education?",
-    options: [
-      "A):   The Republic",
+    "id": "c12-edu-1-mcq-18",
+    "question": "In which book did John Dewey present his comprehensive philosophy of democratic and pragmatic education?",
+    "options": [
+      "A):   Democracy and Education",
       "B):   Emile",
-      "C):   Democracy and Education",
+      "C):   The Republic",
       "D):   The School and the Army"
     ],
-    correctAnswer: "C",
-    explanation: "Published in 1916, 'Democracy and Education' is John Dewey's masterwork on progressive, pragmatic pedagogy."
+    "correctAnswer": "a",
+    "explanation": "Published in 1916, 'Democracy and Education' is John Dewey's masterwork on progressive, pragmatic pedagogy."
   },
-
-  // Tier 3: Numerical & Analytical Application Questions (Q19 to Q25)
   {
-    id: "c12-edu-1-mcq-19",
-    question: "If a school designs its entire annual curriculum around real-world projects like running a cooperative student store, school gardening, and community surveying, it is strictly following:",
-    options: [
+    "id": "c12-edu-1-mcq-19",
+    "question": "If a school designs its entire annual curriculum around real-world projects like running a cooperative student store, school gardening, and community surveying, it is strictly following:",
+    "options": [
       "A):   Classical Idealism",
-      "B):   Experimental Pragmatism",
+      "B):   Authoritarianism",
       "C):   Supernaturalism",
-      "D):   Authoritarianism"
+      "D):   Experimental Pragmatism"
     ],
-    correctAnswer: "B",
-    explanation: "Organizing education around practical community activities, cooperative stores, and learning by doing is the hallmark of Pragmatism."
+    "correctAnswer": "d",
+    "explanation": "Organizing education around practical community activities, cooperative stores, and learning by doing is the hallmark of Pragmatism."
   },
   {
-    id: "c12-edu-1-mcq-20",
-    question: "An educator argues: 'Values like Truth, Justice, and Love do not change with fashion, climate, or centuries; they are timeless eternal realities.' This view represents:",
-    options: [
-      "A):   Idealist Axiology",
+    "id": "c12-edu-1-mcq-20",
+    "question": "An educator argues: 'Values like Truth, Justice, and Love do not change with fashion, climate, or centuries; they are timeless eternal realities.' This view represents:",
+    "options": [
+      "A):   Materialist Axiology",
       "B):   Pragmatist Axiology",
-      "C):   Materialist Axiology",
+      "C):   Idealist Axiology",
       "D):   Marxist Axiology"
     ],
-    correctAnswer: "A",
-    explanation: "Idealist axiology asserts that values are absolute, eternal, and objective, existing independently of human convenience."
+    "correctAnswer": "c",
+    "explanation": "Idealist axiology asserts that values are absolute, eternal, and objective, existing independently of human convenience."
   },
   {
-    id: "c12-edu-1-mcq-21",
-    question: "In contrast to Idealism, how does Pragmatism view values?",
-    options: [
+    "id": "c12-edu-1-mcq-21",
+    "question": "In contrast to Idealism, how does Pragmatism view values?",
+    "options": [
       "A):   As permanent divine commandments carved in stone",
       "B):   As dynamic, human-made standards that are continuously created and tested in social action",
       "C):   As completely non-existent and useless",
       "D):   As hereditary genetic traits"
     ],
-    correctAnswer: "B",
-    explanation: "Pragmatism holds that values are created by human experience; what proves beneficial in solving problems becomes a value."
+    "correctAnswer": "b",
+    "explanation": "Pragmatism holds that values are created by human experience; what proves beneficial in solving problems becomes a value."
   },
   {
-    id: "c12-edu-1-mcq-22",
-    question: "When a teacher structures a science lesson by first presenting a real-world dilemma, encouraging student hypothesis formulation, laboratory testing, and collaborative evaluation, they are executing:",
-    options: [
+    "id": "c12-edu-1-mcq-22",
+    "question": "When a teacher structures a science lesson by first presenting a real-world dilemma, encouraging student hypothesis formulation, laboratory testing, and collaborative evaluation, they are executing:",
+    "options": [
       "A):   The Socratic Dialectic",
-      "B):   The Pragmatic Problem-Solving Method",
+      "B):   Mechanical Rote Drill",
       "C):   Impressionistic Conditioning",
-      "D):   Mechanical Rote Drill"
+      "D):   The Pragmatic Problem-Solving Method"
     ],
-    correctAnswer: "B",
-    explanation: "Problem-solving through hypothesis formulation and experimental verification is the core scientific method of Pragmatism."
+    "correctAnswer": "d",
+    "explanation": "Problem-solving through hypothesis formulation and experimental verification is the core scientific method of Pragmatism."
   },
   {
-    id: "c12-edu-1-mcq-23",
-    question: "Which of the following thinkers represents an Indian synthesis of deep spiritual Idealism with practical educational experiments?",
-    options: [
+    "id": "c12-edu-1-mcq-23",
+    "question": "Which of the following thinkers represents an Indian synthesis of deep spiritual Idealism with practical educational experiments?",
+    "options": [
       "A):   Swami Vivekananda",
       "B):   Machiavelli",
       "C):   Thomas Hobbes",
       "D):   Jeremy Bentham"
     ],
-    correctAnswer: "A",
-    explanation: "Swami Vivekananda defined education as 'the manifestation of the perfection already in man', combining spiritual idealism with human service."
+    "correctAnswer": "a",
+    "explanation": "Swami Vivekananda defined education as 'the manifestation of the perfection already in man', combining spiritual idealism with human service."
   },
   {
-    id: "c12-edu-1-mcq-24",
-    question: "Why is Pragmatism frequently termed 'Instrumentalism' by John Dewey?",
-    options: [
+    "id": "c12-edu-1-mcq-24",
+    "question": "Why is Pragmatism frequently termed 'Instrumentalism' by John Dewey?",
+    "options": [
       "A):   Because it requires musical instruments in every classroom",
-      "B):   Because it views human thoughts, ideas, and theories as instruments for problem-solving and social reconstruction",
-      "C):   Because it emphasizes mechanical engineering only",
+      "B):   Because it emphasizes mechanical engineering only",
+      "C):   Because it views human thoughts, ideas, and theories as instruments for problem-solving and social reconstruction",
       "D):   Because it measures pupil IQ with medical instruments"
     ],
-    correctAnswer: "B",
-    explanation: "Dewey called his philosophy Instrumentalism because he viewed ideas and concepts not as static truths, but as tools/instruments to adapt to the environment."
+    "correctAnswer": "c",
+    "explanation": "Dewey called his philosophy Instrumentalism because he viewed ideas and concepts not as static truths, but as tools/instruments to adapt to the environment."
   },
   {
-    id: "c12-edu-1-mcq-25",
-    question: "The ideal modern 21st-century educational curriculum achieves balance by integrating:",
-    options: [
-      "A):   Idealist moral and ethical ends with Pragmatic experimental and technological means",
-      "B):   Only rote memorization of ancient medieval grammar",
+    "id": "c12-edu-1-mcq-25",
+    "question": "The ideal modern 21st-century educational curriculum achieves balance by integrating:",
+    "options": [
+      "A):   Only rote memorization of ancient medieval grammar",
+      "B):   Idealist moral and ethical ends with Pragmatic experimental and technological means",
       "C):   Physical combat training without academic subjects",
       "D):   Purely theoretical speculation without practical application"
     ],
-    correctAnswer: "A",
-    explanation: "A balanced modern curriculum combines the high moral vision and character of Idealism with the scientific inquiry and hands-on utility of Pragmatism."
+    "correctAnswer": "b",
+    "explanation": "A balanced modern curriculum combines the high moral vision and character of Idealism with the scientific inquiry and hands-on utility of Pragmatism."
   }
 ];

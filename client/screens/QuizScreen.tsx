@@ -94,7 +94,9 @@ export default function QuizScreen() {
     setSelectedIndex(optionIndex);
     setShowAnswer(true);
 
-    const isCorrect = selectedLetter === currentQ.correctAnswer;
+    const isCorrect =
+      selectedLetter.toUpperCase() ===
+      (currentQ.correctAnswer || "").trim().toUpperCase();
     const newScore = isCorrect ? score + 1 : score;
 
     if (isCorrect) {
@@ -216,7 +218,9 @@ export default function QuizScreen() {
           {question.options.map((option, index) => {
             const currentLetter = String.fromCharCode(65 + index);
             const isSelected = selectedIndex === index;
-            const isCorrect = question.correctAnswer === currentLetter;
+            const isCorrect =
+              (question.correctAnswer || "").trim().toUpperCase() ===
+              currentLetter.toUpperCase();
 
             return (
               <Pressable

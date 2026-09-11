@@ -647,309 +647,304 @@ export const c12Edu2HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu2Mcqs = [
-  // Tier 1: Basic Recall & Definitions (Q1 to Q10)
   {
-    id: "c12-edu-2-mcq-1",
-    question: "According to the World Health Organization (WHO), health is defined as:",
-    options: [
+    "id": "c12-edu-2-mcq-1",
+    "question": "According to the World Health Organization (WHO), health is defined as:",
+    "options": [
       "A):   The mere absence of physical disease or infirmity",
       "B):   A state of complete physical, mental, and social wellbeing",
       "C):   Possessing muscular bodily strength only",
       "D):   Scoring top ranks in academic examinations"
     ],
-    correctAnswer: "B",
-    explanation: "The WHO famously defines health as a state of complete physical, mental, and social wellbeing, and not merely the absence of disease."
+    "correctAnswer": "b",
+    "explanation": "The WHO famously defines health as a state of complete physical, mental, and social wellbeing, and not merely the absence of disease."
   },
   {
-    id: "c12-edu-2-mcq-2",
-    question: "Who is celebrated as the pioneer of the modern Mental Hygiene movement?",
-    options: [
+    "id": "c12-edu-2-mcq-2",
+    "question": "Who is celebrated as the pioneer of the modern Mental Hygiene movement?",
+    "options": [
       "A):   Clifford Beers",
       "B):   Sigmund Freud",
       "C):   Hans Selye",
       "D):   John B. Watson"
     ],
-    correctAnswer: "A",
-    explanation: "Clifford Beers founded the Mental Hygiene movement in 1908 following the publication of his autobiographical book 'A Mind That Found Itself'."
+    "correctAnswer": "a",
+    "explanation": "Clifford Beers founded the Mental Hygiene movement in 1908 following the publication of his autobiographical book 'A Mind That Found Itself'."
   },
   {
-    id: "c12-edu-2-mcq-3",
-    question: "The concept of biological stress and the distinction between Eustress and Distress was pioneered by:",
-    options: [
+    "id": "c12-edu-2-mcq-3",
+    "question": "The concept of biological stress and the distinction between Eustress and Distress was pioneered by:",
+    "options": [
       "A):   Jean Piaget",
-      "B):   Hans Selye",
-      "C):   Ivan Pavlov",
+      "B):   Ivan Pavlov",
+      "C):   Hans Selye",
       "D):   Carl Jung"
     ],
-    correctAnswer: "B",
-    explanation: "Austrian-Canadian endocrinologist Hans Selye is universally recognized as the Father of Stress Research."
+    "correctAnswer": "c",
+    "explanation": "Austrian-Canadian endocrinologist Hans Selye is universally recognized as the Father of Stress Research."
   },
   {
-    id: "c12-edu-2-mcq-4",
-    question: "Positive, constructive stress that enhances motivation and performance is termed:",
-    options: [
+    "id": "c12-edu-2-mcq-4",
+    "question": "Positive, constructive stress that enhances motivation and performance is termed:",
+    "options": [
       "A):   Distress",
-      "B):   Eustress",
+      "B):   Catatonia",
       "C):   Hypostress",
-      "D):   Catatonia"
+      "D):   Eustress"
     ],
-    correctAnswer: "B",
-    explanation: "Eustress (derived from Greek 'eu' meaning good) is positive stress that enhances focus, vitality, and optimal performance."
+    "correctAnswer": "d",
+    "explanation": "Eustress (derived from Greek 'eu' meaning good) is positive stress that enhances focus, vitality, and optimal performance."
   },
   {
-    id: "c12-edu-2-mcq-5",
-    question: "An obsessive mental health preoccupation with perceived minor or imaginary flaws in physical appearance is known as:",
-    options: [
+    "id": "c12-edu-2-mcq-5",
+    "question": "An obsessive mental health preoccupation with perceived minor or imaginary flaws in physical appearance is known as:",
+    "options": [
       "A):   Schizophrenia",
       "B):   Body Dysmorphic Disorder (BDD)",
       "C):   Dyslexia",
       "D):   Amnesia"
     ],
-    correctAnswer: "B",
-    explanation: "Body Dysmorphic Disorder (BDD) involves an obsessive fixation on imagined or minor physical appearance defects."
+    "correctAnswer": "b",
+    "explanation": "Body Dysmorphic Disorder (BDD) involves an obsessive fixation on imagined or minor physical appearance defects."
   },
   {
-    id: "c12-edu-2-mcq-6",
-    question: "Which psychologist famously described adolescence as a developmental period of 'Storm and Stress'?",
-    options: [
+    "id": "c12-edu-2-mcq-6",
+    "question": "Which psychologist famously described adolescence as a developmental period of 'Storm and Stress'?",
+    "options": [
       "A):   G. Stanley Hall",
       "B):   Erik Erikson",
       "C):   Edward Thorndike",
       "D):   B.F. Skinner"
     ],
-    correctAnswer: "A",
-    explanation: "G. Stanley Hall coined the classic phrase 'Storm and Stress' (Sturm und Drang) to describe adolescent emotional volatility."
+    "correctAnswer": "a",
+    "explanation": "G. Stanley Hall coined the classic phrase 'Storm and Stress' (Sturm und Drang) to describe adolescent emotional volatility."
   },
   {
-    id: "c12-edu-2-mcq-7",
-    question: "The Yerkes-Dodson Law dictates that the relationship between stress/arousal and performance follows a:",
-    options: [
+    "id": "c12-edu-2-mcq-7",
+    "question": "The Yerkes-Dodson Law dictates that the relationship between stress/arousal and performance follows a:",
+    "options": [
       "A):   Linear upward straight line",
-      "B):   Inverted-U shaped curve",
+      "B):   Continuous downward line",
       "C):   Flat horizontal line",
-      "D):   Continuous downward line"
+      "D):   Inverted-U shaped curve"
     ],
-    correctAnswer: "B",
-    explanation: "The Yerkes-Dodson law demonstrates an inverted-U curve: performance rises with arousal up to an optimal point, then drops during excessive stress."
+    "correctAnswer": "d",
+    "explanation": "The Yerkes-Dodson law demonstrates an inverted-U curve: performance rises with arousal up to an optimal point, then drops during excessive stress."
   },
   {
-    id: "c12-edu-2-mcq-8",
-    question: "Which of the following is an internal personal cause of poor mental health?",
-    options: [
-      "A):   Extreme perfectionism and low self-esteem",
+    "id": "c12-edu-2-mcq-8",
+    "question": "Which of the following is an internal personal cause of poor mental health?",
+    "options": [
+      "A):   Recreational public parks",
       "B):   Clean drinking water",
-      "C):   Recreational public parks",
+      "C):   Extreme perfectionism and low self-esteem",
       "D):   Supportive teachers"
     ],
-    correctAnswer: "A",
-    explanation: "Internal cognitive distortions, irrational perfectionism, and poor self-concept are primary personal determinants of mental distress."
+    "correctAnswer": "c",
+    "explanation": "Internal cognitive distortions, irrational perfectionism, and poor self-concept are primary personal determinants of mental distress."
   },
   {
-    id: "c12-edu-2-mcq-9",
-    question: "Which parenting style is proven by developmental psychologists to produce the highest emotional resilience in children?",
-    options: [
+    "id": "c12-edu-2-mcq-9",
+    "question": "Which parenting style is proven by developmental psychologists to produce the highest emotional resilience in children?",
+    "options": [
       "A):   Authoritarian (Harsh, rigid)",
       "B):   Authoritative (Warm, democratic boundaries)",
       "C):   Permissive (No rules, neglectful)",
       "D):   Detached"
     ],
-    correctAnswer: "B",
-    explanation: "Authoritative parenting combines high warmth, active dialogue, and clear reasonable boundaries, nurturing sound mental health."
+    "correctAnswer": "b",
+    "explanation": "Authoritative parenting combines high warmth, active dialogue, and clear reasonable boundaries, nurturing sound mental health."
   },
   {
-    id: "c12-edu-2-mcq-10",
-    question: "Harmful, unmanageable negative stress that causes physical and psychological breakdown is termed:",
-    options: [
-      "A):   Eustress",
-      "B):   Distress",
+    "id": "c12-edu-2-mcq-10",
+    "question": "Harmful, unmanageable negative stress that causes physical and psychological breakdown is termed:",
+    "options": [
+      "A):   Distress",
+      "B):   Eustress",
       "C):   Homeostasis",
       "D):   Catharsis"
     ],
-    correctAnswer: "B",
-    explanation: "Distress occurs when stress overwhelms an individual's coping capacity, resulting in emotional and physiological collapse."
+    "correctAnswer": "a",
+    "explanation": "Distress occurs when stress overwhelms an individual's coping capacity, resulting in emotional and physiological collapse."
   },
-
-  // Tier 2: Conceptual & Pedagogical Questions (Q11 to Q18)
   {
-    id: "c12-edu-2-mcq-11",
-    question: "Why does toxic comparison between siblings or classmates severely damage adolescent mental health?",
-    options: [
+    "id": "c12-edu-2-mcq-11",
+    "question": "Why does toxic comparison between siblings or classmates severely damage adolescent mental health?",
+    "options": [
       "A):   It improves mathematical reasoning",
-      "B):   It destroys self-esteem, breeds inferiority complexes, and triggers deep resentment",
-      "C):   It reduces physical fatigue",
+      "B):   It reduces physical fatigue",
+      "C):   It destroys self-esteem, breeds inferiority complexes, and triggers deep resentment",
       "D):   It guarantees admission to top colleges"
     ],
-    correctAnswer: "B",
-    explanation: "Comparison invalidates the child's unique self-worth, fostering feelings of inadequacy, jealousy, and chronic anxiety."
+    "correctAnswer": "c",
+    "explanation": "Comparison invalidates the child's unique self-worth, fostering feelings of inadequacy, jealousy, and chronic anxiety."
   },
   {
-    id: "c12-edu-2-mcq-12",
-    question: "Which of the following represents an effective physiological technique to alleviate examination panic?",
-    options: [
+    "id": "c12-edu-2-mcq-12",
+    "question": "Which of the following represents an effective physiological technique to alleviate examination panic?",
+    "options": [
       "A):   Drinking excessive caffeine energy drinks",
-      "B):   Diaphragmatic deep breathing (Pranayama) and muscle relaxation",
+      "B):   Skipping meals completely",
       "C):   Staying awake all night before the exam",
-      "D):   Skipping meals completely"
+      "D):   Diaphragmatic deep breathing (Pranayama) and muscle relaxation"
     ],
-    correctAnswer: "B",
-    explanation: "Deep diaphragmatic breathing stimulates the vagus nerve and activates the calming parasympathetic nervous system."
+    "correctAnswer": "d",
+    "explanation": "Deep diaphragmatic breathing stimulates the vagus nerve and activates the calming parasympathetic nervous system."
   },
   {
-    id: "c12-edu-2-mcq-13",
-    question: "The primary biological hormone released by the adrenal glands during chronic distress is:",
-    options: [
-      "A):   Insulin",
-      "B):   Cortisol",
+    "id": "c12-edu-2-mcq-13",
+    "question": "The primary biological hormone released by the adrenal glands during chronic distress is:",
+    "options": [
+      "A):   Cortisol",
+      "B):   Insulin",
       "C):   Thyroxine",
       "D):   Melatonin"
     ],
-    correctAnswer: "B",
-    explanation: "Cortisol is the primary stress hormone; prolonged high levels damage hippocampal memory circuits and depress immunity."
+    "correctAnswer": "a",
+    "explanation": "Cortisol is the primary stress hormone; prolonged high levels damage hippocampal memory circuits and depress immunity."
   },
   {
-    id: "c12-edu-2-mcq-14",
-    question: "When a student challenges negative thoughts like 'I will fail completely' with 'I have prepared well and will do my best', they are practicing:",
-    options: [
+    "id": "c12-edu-2-mcq-14",
+    "question": "When a student challenges negative thoughts like 'I will fail completely' with 'I have prepared well and will do my best', they are practicing:",
+    "options": [
       "A):   Substance abuse",
       "B):   Cognitive restructuring (reframing)",
       "C):   Body dysmorphia",
       "D):   Catastrophizing"
     ],
-    correctAnswer: "B",
-    explanation: "Cognitive restructuring is a therapeutic technique of identifying and replacing irrational, self-defeating thoughts with realistic affirmations."
+    "correctAnswer": "b",
+    "explanation": "Cognitive restructuring is a therapeutic technique of identifying and replacing irrational, self-defeating thoughts with realistic affirmations."
   },
   {
-    id: "c12-edu-2-mcq-15",
-    question: "Which of the following is an observable behavioral red flag indicating that a student may be in severe psychological distress?",
-    options: [
+    "id": "c12-edu-2-mcq-15",
+    "question": "Which of the following is an observable behavioral red flag indicating that a student may be in severe psychological distress?",
+    "options": [
       "A):   Active participation in classroom sports",
-      "B):   Sudden, prolonged social isolation, extreme lethargy, and declining academic performance",
+      "B):   Asking insightful scientific questions",
       "C):   Submitting homework on time consistently",
-      "D):   Asking insightful scientific questions"
+      "D):   Sudden, prolonged social isolation, extreme lethargy, and declining academic performance"
     ],
-    correctAnswer: "B",
-    explanation: "Abrupt withdrawal from peer social circles, uncharacteristic fatigue, and sudden grade collapse are classic clinical warning signs."
+    "correctAnswer": "d",
+    "explanation": "Abrupt withdrawal from peer social circles, uncharacteristic fatigue, and sudden grade collapse are classic clinical warning signs."
   },
   {
-    id: "c12-edu-2-mcq-16",
-    question: "What is the three-fold mission of Mental Hygiene in educational institutions?",
-    options: [
+    "id": "c12-edu-2-mcq-16",
+    "question": "What is the three-fold mission of Mental Hygiene in educational institutions?",
+    "options": [
       "A):   Examining, Grading, and Punishing",
-      "B):   Preventive, Preservative, and Curative",
-      "C):   Taxation, Accounting, and Auditing",
+      "B):   Taxation, Accounting, and Auditing",
+      "C):   Preventive, Preservative, and Curative",
       "D):   Drilling, Memorizing, and Competing"
     ],
-    correctAnswer: "B",
-    explanation: "Mental hygiene operates through three phases: Preventive (stopping disorders), Preservative (maintaining wellness), and Curative (therapy)."
+    "correctAnswer": "c",
+    "explanation": "Mental hygiene operates through three phases: Preventive (stopping disorders), Preservative (maintaining wellness), and Curative (therapy)."
   },
   {
-    id: "c12-edu-2-mcq-17",
-    question: "Adolescent substance abuse is particularly hazardous to brain development because it damages the:",
-    options: [
-      "A):   Prefrontal cortex responsible for decision-making and impulse control",
-      "B):   Inner ear balance bones",
+    "id": "c12-edu-2-mcq-17",
+    "question": "Adolescent substance abuse is particularly hazardous to brain development because it damages the:",
+    "options": [
+      "A):   Inner ear balance bones",
+      "B):   Prefrontal cortex responsible for decision-making and impulse control",
       "C):   Eye retinas only",
       "D):   Fingernails and hair"
     ],
-    correctAnswer: "A",
-    explanation: "The adolescent prefrontal cortex is still maturing until age 25; psychoactive substances disrupt neural circuits for executive judgment."
+    "correctAnswer": "b",
+    "explanation": "The adolescent prefrontal cortex is still maturing until age 25; psychoactive substances disrupt neural circuits for executive judgment."
   },
   {
-    id: "c12-edu-2-mcq-18",
-    question: "How can secondary school teachers actively support student mental health without acting as certified psychiatrists?",
-    options: [
-      "A):   By prescribing pharmaceutical medications directly to students",
-      "B):   By creating a supportive, anxiety-free classroom and referring distressed pupils to the school counselor",
+    "id": "c12-edu-2-mcq-18",
+    "question": "How can secondary school teachers actively support student mental health without acting as certified psychiatrists?",
+    "options": [
+      "A):   By creating a supportive, anxiety-free classroom and referring distressed pupils to the school counselor",
+      "B):   By prescribing pharmaceutical medications directly to students",
       "C):   By expelling any student who looks sad",
       "D):   By increasing homework loads during examination weeks"
     ],
-    correctAnswer: "B",
-    explanation: "Teachers serve as compassionate frontline guardians &mdash; creating safe, empathetic classrooms and connecting students with counselors."
+    "correctAnswer": "a",
+    "explanation": "Teachers serve as compassionate frontline guardians &mdash; creating safe, empathetic classrooms and connecting students with counselors."
   },
-
-  // Tier 3: Analytical & Case-Based Application Questions (Q19 to Q25)
   {
-    id: "c12-edu-2-mcq-19",
-    question: "A high-school student spends 3 hours every morning applying filters to selfies, crying over perceived facial asymmetry, and avoiding school. They are exhibiting symptoms of:",
-    options: [
+    "id": "c12-edu-2-mcq-19",
+    "question": "A high-school student spends 3 hours every morning applying filters to selfies, crying over perceived facial asymmetry, and avoiding school. They are exhibiting symptoms of:",
+    "options": [
       "A):   Normal adolescent grooming",
-      "B):   Body Dysmorphic Disorder (BDD)",
+      "B):   Healthy Eustress",
       "C):   Superior artistic aptitude",
-      "D):   Healthy Eustress"
+      "D):   Body Dysmorphic Disorder (BDD)"
     ],
-    correctAnswer: "B",
-    explanation: "Obsessive, distressing preoccupation with imagined facial flaws and avoiding school due to appearance shame are hallmark criteria of BDD."
+    "correctAnswer": "d",
+    "explanation": "Obsessive, distressing preoccupation with imagined facial flaws and avoiding school due to appearance shame are hallmark criteria of BDD."
   },
   {
-    id: "c12-edu-2-mcq-20",
-    question: "Under the Yerkes-Dodson principle, if a student feels zero arousal or concern before an exam, their performance is likely to be:",
-    options: [
+    "id": "c12-edu-2-mcq-20",
+    "question": "Under the Yerkes-Dodson principle, if a student feels zero arousal or concern before an exam, their performance is likely to be:",
+    "options": [
       "A):   Exceptionally brilliant",
-      "B):   Poor due to under-arousal, lack of motivation, and careless complacency",
-      "C):   Completely unaffected",
+      "B):   Completely unaffected",
+      "C):   Poor due to under-arousal, lack of motivation, and careless complacency",
       "D):   Ranked number one in the state"
     ],
-    correctAnswer: "B",
-    explanation: "Insufficient arousal results in lethargy, lack of preparation, and subpar performance under the Yerkes-Dodson curve."
+    "correctAnswer": "c",
+    "explanation": "Insufficient arousal results in lethargy, lack of preparation, and subpar performance under the Yerkes-Dodson curve."
   },
   {
-    id: "c12-edu-2-mcq-21",
-    question: "In family dynamics, an Authoritarian parent who yells 'You must score 98% or you will bring shame on this family' is inducing:",
-    options: [
+    "id": "c12-edu-2-mcq-21",
+    "question": "In family dynamics, an Authoritarian parent who yells 'You must score 98% or you will bring shame on this family' is inducing:",
+    "options": [
       "A):   Healthy self-actualization",
       "B):   Destructive chronic distress, fear of failure, and emotional alienation",
       "C):   High creative innovation",
       "D):   Positive Eustress"
     ],
-    correctAnswer: "B",
-    explanation: "Authoritarian conditional pressure creates paralyzing anxiety, depression, and deep emotional disconnect between parent and child."
+    "correctAnswer": "b",
+    "explanation": "Authoritarian conditional pressure creates paralyzing anxiety, depression, and deep emotional disconnect between parent and child."
   },
   {
-    id: "c12-edu-2-mcq-22",
-    question: "Why is physical sports and aerobic exercise considered a premier mental health intervention in schools?",
-    options: [
+    "id": "c12-edu-2-mcq-22",
+    "question": "Why is physical sports and aerobic exercise considered a premier mental health intervention in schools?",
+    "options": [
       "A):   It prevents students from opening textbooks",
-      "B):   It stimulates the natural release of mood-elevating endorphins and lowers circulating cortisol levels",
+      "B):   It eliminates the need for teachers",
       "C):   It replaces the need for healthy sleep",
-      "D):   It eliminates the need for teachers"
+      "D):   It stimulates the natural release of mood-elevating endorphins and lowers circulating cortisol levels"
     ],
-    correctAnswer: "B",
-    explanation: "Aerobic exercise triggers endorphin and BDNF release in the brain while metabolizing physical stress chemicals."
+    "correctAnswer": "d",
+    "explanation": "Aerobic exercise triggers endorphin and BDNF release in the brain while metabolizing physical stress chemicals."
   },
   {
-    id: "c12-edu-2-mcq-23",
-    question: "When a school establishes a confidential 'Peer Support Club' where trained student leaders listen to peers experiencing loneliness, they are addressing:",
-    options: [
+    "id": "c12-edu-2-mcq-23",
+    "question": "When a school establishes a confidential 'Peer Support Club' where trained student leaders listen to peers experiencing loneliness, they are addressing:",
+    "options": [
       "A):   Relationship disorders and social isolation",
       "B):   School bus transportation routing",
       "C):   Building masonry repairs",
       "D):   Teacher salary accounting"
     ],
-    correctAnswer: "A",
-    explanation: "Peer support cells combat the root causes of adolescent relationship disorders, loneliness, and feelings of social alienation."
+    "correctAnswer": "a",
+    "explanation": "Peer support cells combat the root causes of adolescent relationship disorders, loneliness, and feelings of social alienation."
   },
   {
-    id: "c12-edu-2-mcq-24",
-    question: "If an adolescent student uses alcohol on weekends to 'shut off anxious thoughts about board exams', they are engaging in:",
-    options: [
+    "id": "c12-edu-2-mcq-24",
+    "question": "If an adolescent student uses alcohol on weekends to 'shut off anxious thoughts about board exams', they are engaging in:",
+    "options": [
       "A):   Adaptive relaxation training",
-      "B):   Maladaptive chemical self-medication leading toward substance dependence",
-      "C):   Cognitive problem-solving",
+      "B):   Cognitive problem-solving",
+      "C):   Maladaptive chemical self-medication leading toward substance dependence",
       "D):   Mindfulness meditation"
     ],
-    correctAnswer: "B",
-    explanation: "Using psychoactive depressants to escape emotional distress is maladaptive self-medication, a major risk factor for substance addiction."
+    "correctAnswer": "c",
+    "explanation": "Using psychoactive depressants to escape emotional distress is maladaptive self-medication, a major risk factor for substance addiction."
   },
   {
-    id: "c12-edu-2-mcq-25",
-    question: "The most effective long-term strategy for schools to ensure sound student mental health is:",
-    options: [
+    "id": "c12-edu-2-mcq-25",
+    "question": "The most effective long-term strategy for schools to ensure sound student mental health is:",
+    "options": [
       "A):   Cancelling all exams and grades permanently",
       "B):   A collaborative ecosystem integrating life-skills education, supportive parenting, and anti-bullying counseling cells",
       "C):   Isolating struggling students in separate locked rooms",
       "D):   Relying exclusively on annual written examinations"
     ],
-    correctAnswer: "B",
-    explanation: "A holistic, multi-tier ecosystem involving supportive homes, positive classrooms, life skills, and counseling ensures lasting mental health."
+    "correctAnswer": "b",
+    "explanation": "A holistic, multi-tier ecosystem involving supportive homes, positive classrooms, life skills, and counseling ensures lasting mental health."
   }
 ];

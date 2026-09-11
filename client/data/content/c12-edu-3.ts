@@ -709,8 +709,7 @@ export const c12Edu3HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Analysis of the Concept of Adjustment and the Complete Profile of a Well-Adjusted Personality.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Analysis of the Concept of Adjustment and the Complete Profile of a Well-Adjusted Personality.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Conceptual Foundations &amp; Definition:</b><br />
@@ -731,8 +730,7 @@ export const c12Edu3HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Detailed Classification and Analytical Exposition of the Causes of Maladjustment.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Detailed Classification and Analytical Exposition of the Causes of Maladjustment.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Introduction:</b><br />
@@ -750,8 +748,7 @@ export const c12Edu3HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: Exhaustive Examination of the Four Defense Mechanisms: Rationalization, Sublimation, Escapism, and Fantasy.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Exhaustive Examination of the Four Defense Mechanisms: Rationalization, Sublimation, Escapism, and Fantasy.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Freudian Concept of Ego-Defense:</b><br />
@@ -770,8 +767,7 @@ export const c12Edu3HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: The Strategic Role of the Teacher and School Guidance Cell in Detecting and Remedying Maladjustment.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: The Strategic Role of the Teacher and School Guidance Cell in Detecting and Remedying Maladjustment.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Teacher as Frontline Mental Health Guardian:</b><br />
@@ -790,8 +786,7 @@ export const c12Edu3HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Real-World Adolescent Case Study: Diagnostic Evaluation and Educational Remediation Strategy.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Real-World Adolescent Case Study: Diagnostic Evaluation and Educational Remediation Strategy.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">Case Profile:</b><br />
@@ -818,309 +813,304 @@ export const c12Edu3HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu3Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-3-mcq-1",
-    question: "Who defined adjustment as 'the process by which a living organism maintains a balance between its needs and the circumstances that influence the satisfaction of these needs'?",
-    options: [
-      "A):   L. S. Shaffer",
-      "B):   B. F. Skinner",
+    "id": "c12-edu-3-mcq-1",
+    "question": "Who defined adjustment as 'the process by which a living organism maintains a balance between its needs and the circumstances that influence the satisfaction of these needs'?",
+    "options": [
+      "A):   B. F. Skinner",
+      "B):   L. S. Shaffer",
       "C):   Sigmund Freud",
-      "D):   John Dewey",
+      "D):   John Dewey"
     ],
-    correctAnswer: "a",
-    explanation: "L. S. Shaffer provided this classic, standard psychological definition of adjustment focusing on the balance between personal needs and environmental circumstances.",
+    "correctAnswer": "b",
+    "explanation": "L. S. Shaffer provided this classic, standard psychological definition of adjustment focusing on the balance between personal needs and environmental circumstances."
   },
   {
-    id: "c12-edu-3-mcq-2",
-    question: "The Latin word root 'juxtare' from which the term 'Adjustment' is derived means:",
-    options: [
-      "A):   To control strictly",
-      "B):   To bring close or fit together",
+    "id": "c12-edu-3-mcq-2",
+    "question": "The Latin word root 'juxtare' from which the term 'Adjustment' is derived means:",
+    "options": [
+      "A):   To bring close or fit together",
+      "B):   To control strictly",
       "C):   To separate completely",
-      "D):   To escape from friction",
+      "D):   To escape from friction"
     ],
-    correctAnswer: "b",
-    explanation: "Adjustment comes from the Latin 'ad' (toward) and 'juxtare' (to bring close or fit together), denoting harmonious relationship with the environment.",
+    "correctAnswer": "a",
+    "explanation": "Adjustment comes from the Latin 'ad' (toward) and 'juxtare' (to bring close or fit together), denoting harmonious relationship with the environment."
   },
   {
-    id: "c12-edu-3-mcq-3",
-    question: "Who originally formulated the concept of Defense Mechanisms in psychological theory?",
-    options: [
+    "id": "c12-edu-3-mcq-3",
+    "question": "Who originally formulated the concept of Defense Mechanisms in psychological theory?",
+    "options": [
       "A):   Ivan Pavlov",
       "B):   Carl Rogers",
       "C):   Sigmund Freud",
-      "D):   Jean Piaget",
+      "D):   Jean Piaget"
     ],
-    correctAnswer: "c",
-    explanation: "Sigmund Freud pioneered the psychoanalytic concept of Defense Mechanisms as unconscious tactics used by the Ego to protect against anxiety.",
+    "correctAnswer": "c",
+    "explanation": "Sigmund Freud pioneered the psychoanalytic concept of Defense Mechanisms as unconscious tactics used by the Ego to protect against anxiety."
   },
   {
-    id: "c12-edu-3-mcq-4",
-    question: "A fox failing to reach the juicy grapes and walking away declaring that 'the grapes are sour' is a classic example of:",
-    options: [
+    "id": "c12-edu-3-mcq-4",
+    "question": "A fox failing to reach the juicy grapes and walking away declaring that 'the grapes are sour' is a classic example of:",
+    "options": [
       "A):   Sublimation",
       "B):   Escapism",
       "C):   Fantasy",
-      "D):   Rationalization",
+      "D):   Rationalization"
     ],
-    correctAnswer: "d",
-    explanation: "This is the classic 'Sour Grapes' variety of Rationalization, where an unattainable goal is devalued to protect self-esteem.",
+    "correctAnswer": "d",
+    "explanation": "This is the classic 'Sour Grapes' variety of Rationalization, where an unattainable goal is devalued to protect self-esteem."
   },
   {
-    id: "c12-edu-3-mcq-5",
-    question: "Which of the following defense mechanisms is regarded by psychologists as the most healthy, mature, and constructive?",
-    options: [
-      "A):   Sublimation",
-      "B):   Rationalization",
-      "C):   Escapism",
-      "D):   Daydreaming",
-    ],
-    correctAnswer: "a",
-    explanation: "Sublimation is universally considered the most constructive defense mechanism because it redirects primitive, unacceptable drives into socially commendable, productive channels.",
-  },
-  {
-    id: "c12-edu-3-mcq-6",
-    question: "Which of the following is considered an objective cause of maladjustment in students?",
-    options: [
-      "A):   Severe poverty and lack of basic learning infrastructure",
-      "B):   Personal feeling of guilt",
-      "C):   Inferiority complex",
-      "D):   Unrealistic level of aspiration",
-    ],
-    correctAnswer: "a",
-    explanation: "Poverty, destitution, and lack of school infrastructure are objective (external, material) causes of maladjustment.",
-  },
-  {
-    id: "c12-edu-3-mcq-7",
-    question: "A student who invents plausible, socially acceptable reasons to justify failing an examination is using which defense mechanism?",
-    options: [
-      "A):   Sublimation",
-      "B):   Rationalization",
-      "C):   Projection",
-      "D):   Regression",
-    ],
-    correctAnswer: "b",
-    explanation: "Rationalization involves inventing plausible, logical-sounding excuses to justify failure and shield the ego from humiliation.",
-  },
-  {
-    id: "c12-edu-3-mcq-8",
-    question: "Chronic nail-biting, thumb-sucking, and facial tics in a school student are categorized as:",
-    options: [
-      "A):   Psychosomatic and physical symptoms of maladjustment",
-      "B):   Cognitive intellectual brilliance",
-      "C):   Normal developmental achievements",
-      "D):   Indicators of authoritative parenting",
-    ],
-    correctAnswer: "a",
-    explanation: "Motor habits like nail-biting, thumb-sucking, and nervous tics are physical and psychosomatic manifestations of unresolved inner tension and maladjustment.",
-  },
-  {
-    id: "c12-edu-3-mcq-9",
-    question: "The defense mechanism in which an individual escapes from harsh reality into an imaginary world of instant wish-fulfillment is called:",
-    options: [
-      "A):   Sublimation",
-      "B):   Fantasy / Daydreaming",
-      "C):   Sweet Lemon",
-      "D):   Direct problem solving",
-    ],
-    correctAnswer: "b",
-    explanation: "Fantasy and Daydreaming allow an individual to mentally construct a world where all frustrated desires are effortlessly satisfied without real-world effort.",
-  },
-  {
-    id: "c12-edu-3-mcq-10",
-    question: "Which of the following is a primary characteristic of a well-adjusted individual?",
-    options: [
-      "A):   Extremely low frustration tolerance",
-      "B):   Persistent hostility toward peers",
-      "C):   Realistic self-knowledge and high frustration tolerance",
-      "D):   Chronic dependence on defense mechanisms",
-    ],
-    correctAnswer: "c",
-    explanation: "Realistic self-insight, self-acceptance, emotional balance, and high frustration tolerance are hallmarks of sound personal adjustment.",
-  },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
-  {
-    id: "c12-edu-3-mcq-11",
-    question: "An aggressive teenager who channels his violent impulses into professional boxing and wins a national medal has demonstrated:",
-    options: [
-      "A):   Escapism",
-      "B):   Sublimation",
-      "C):   Rationalization",
-      "D):   Fantasy",
-    ],
-    correctAnswer: "b",
-    explanation: "Channeling aggressive, violent energy into disciplined sports like boxing or martial arts is a textbook example of Sublimation.",
-  },
-  {
-    id: "c12-edu-3-mcq-12",
-    question: "A poor clerk who claims that 'wealth is the root of all evil and poverty keeps the soul pure' is employing which specific form of rationalization?",
-    options: [
-      "A):   Sour Grapes",
-      "B):   Sweet Lemon",
-      "C):   Sublimation",
-      "D):   Conquering Hero Fantasy",
-    ],
-    correctAnswer: "b",
-    explanation: "Convincing oneself that an undesirable, impoverished situation forced upon them is actually sweet, noble, and desirable is the 'Sweet Lemon' mechanism.",
-  },
-  {
-    id: "c12-edu-3-mcq-13",
-    question: "Which of the following is a social cause of student maladjustment?",
-    options: [
-      "A):   Endocrine gland disorder",
-      "B):   Sensory blindness",
-      "C):   Toxic peer bullying and domestic marital warfare",
-      "D):   Inborn mental handicap",
-    ],
-    correctAnswer: "c",
-    explanation: "Domestic conflict, family breakdown, and peer bullying originate in interpersonal and cultural environments, making them social causes.",
-  },
-  {
-    id: "c12-edu-3-mcq-14",
-    question: "A student who avoids studying for difficult pre-board exams by binge-watching web series for 10 hours daily is exhibiting:",
-    options: [
-      "A):   Escapism",
-      "B):   Sublimation",
-      "C):   Direct problem solving",
-      "D):   Accurate self-insight",
-    ],
-    correctAnswer: "a",
-    explanation: "Escapism involves seeking temporary behavioral distraction and flight from stressful duties and responsibilities.",
-  },
-  {
-    id: "c12-edu-3-mcq-15",
-    question: "What distinguishes direct methods of coping from defense mechanisms?",
-    options: [
-      "A):   Direct methods operate unconsciously, while defense mechanisms are conscious",
-      "B):   Direct methods attack the actual problem, while defense mechanisms distort reality to reduce anxiety",
-      "C):   Direct methods always lead to neurosis",
-      "D):   Direct methods are exclusively used by children",
-    ],
-    correctAnswer: "b",
-    explanation: "Direct coping methods consciously address the objective barrier, whereas defense mechanisms unconsciously protect the ego by distorting reality.",
-  },
-  {
-    id: "c12-edu-3-mcq-16",
-    question: "In Shaffer's Cycle of Adjustment, what immediately follows the emergence of an unsatisfied Need or Drive?",
-    options: [
-      "A):   Sublimation",
-      "B):   Encountering an Obstacle / Barrier",
-      "C):   Instant relief",
-      "D):   Complete maladjustment",
-    ],
-    correctAnswer: "b",
-    explanation: "In Shaffer's model, a drive or need motivates action, but when it encounters a barrier or obstacle, varied coping behaviors are provoked.",
-  },
-  {
-    id: "c12-edu-3-mcq-17",
-    question: "A shy adolescent who imagines himself as an Olympic champion being applauded by millions is indulging in the:",
-    options: [
-      "A):   Suffering Hero Fantasy",
-      "B):   Conquering Hero Fantasy",
-      "C):   Sour Grapes Rationalization",
-      "D):   Sweet Lemon Rationalization",
-    ],
-    correctAnswer: "b",
-    explanation: "The 'Conquering Hero' fantasy involves daydreaming about extraordinary triumphs, glory, and public acclaim to compensate for feelings of weakness.",
-  },
-  {
-    id: "c12-edu-3-mcq-18",
-    question: "Which of the following parenting styles is most strongly associated with raising well-adjusted, confident adolescents?",
-    options: [
-      "A):   Authoritarian (rigid and harsh)",
-      "B):   Permissive (negligent and zero rules)",
-      "C):   Authoritative (warm, communicative, and firm boundaries)",
-      "D):   Rejecting-neglecting",
-    ],
-    correctAnswer: "c",
-    explanation: "Authoritative parenting provides high emotional warmth combined with clear democratic guidelines, fostering sound adolescent adjustment.",
-  },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
-  {
-    id: "c12-edu-3-mcq-19",
-    question: "Rohan fails to qualify for the school cricket team. He asserts: 'The cricket pitch was poorly prepared and the coach is biased toward his relatives.' Which mechanism is Rohan utilizing?",
-    options: [
+    "id": "c12-edu-3-mcq-5",
+    "question": "Which of the following defense mechanisms is regarded by psychologists as the most healthy, mature, and constructive?",
+    "options": [
       "A):   Rationalization",
       "B):   Sublimation",
       "C):   Escapism",
-      "D):   Regression",
+      "D):   Daydreaming"
     ],
-    correctAnswer: "a",
-    explanation: "Rohan is fabricating external excuses (biased coach, bad pitch) to explain away his failure, which is a clear case of Rationalization.",
+    "correctAnswer": "b",
+    "explanation": "Sublimation is universally considered the most constructive defense mechanism because it redirects primitive, unacceptable drives into socially commendable, productive channels."
   },
   {
-    id: "c12-edu-3-mcq-20",
-    question: "When an adolescent continuously sets an unrealistically high Level of Aspiration that far exceeds their intellectual capacity, what is the most probable psychological consequence?",
-    options: [
+    "id": "c12-edu-3-mcq-6",
+    "question": "Which of the following is considered an objective cause of maladjustment in students?",
+    "options": [
+      "A):   Severe poverty and lack of basic learning infrastructure",
+      "B):   Personal feeling of guilt",
+      "C):   Inferiority complex",
+      "D):   Unrealistic level of aspiration"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Poverty, destitution, and lack of school infrastructure are objective (external, material) causes of maladjustment."
+  },
+  {
+    "id": "c12-edu-3-mcq-7",
+    "question": "A student who invents plausible, socially acceptable reasons to justify failing an examination is using which defense mechanism?",
+    "options": [
+      "A):   Sublimation",
+      "B):   Regression",
+      "C):   Projection",
+      "D):   Rationalization"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Rationalization involves inventing plausible, logical-sounding excuses to justify failure and shield the ego from humiliation."
+  },
+  {
+    "id": "c12-edu-3-mcq-8",
+    "question": "Chronic nail-biting, thumb-sucking, and facial tics in a school student are categorized as:",
+    "options": [
+      "A):   Normal developmental achievements",
+      "B):   Cognitive intellectual brilliance",
+      "C):   Psychosomatic and physical symptoms of maladjustment",
+      "D):   Indicators of authoritative parenting"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Motor habits like nail-biting, thumb-sucking, and nervous tics are physical and psychosomatic manifestations of unresolved inner tension and maladjustment."
+  },
+  {
+    "id": "c12-edu-3-mcq-9",
+    "question": "The defense mechanism in which an individual escapes from harsh reality into an imaginary world of instant wish-fulfillment is called:",
+    "options": [
+      "A):   Sublimation",
+      "B):   Fantasy / Daydreaming",
+      "C):   Sweet Lemon",
+      "D):   Direct problem solving"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Fantasy and Daydreaming allow an individual to mentally construct a world where all frustrated desires are effortlessly satisfied without real-world effort."
+  },
+  {
+    "id": "c12-edu-3-mcq-10",
+    "question": "Which of the following is a primary characteristic of a well-adjusted individual?",
+    "options": [
+      "A):   Realistic self-knowledge and high frustration tolerance",
+      "B):   Persistent hostility toward peers",
+      "C):   Extremely low frustration tolerance",
+      "D):   Chronic dependence on defense mechanisms"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Realistic self-insight, self-acceptance, emotional balance, and high frustration tolerance are hallmarks of sound personal adjustment."
+  },
+  {
+    "id": "c12-edu-3-mcq-11",
+    "question": "An aggressive teenager who channels his violent impulses into professional boxing and wins a national medal has demonstrated:",
+    "options": [
+      "A):   Escapism",
+      "B):   Rationalization",
+      "C):   Sublimation",
+      "D):   Fantasy"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Channeling aggressive, violent energy into disciplined sports like boxing or martial arts is a textbook example of Sublimation."
+  },
+  {
+    "id": "c12-edu-3-mcq-12",
+    "question": "A poor clerk who claims that 'wealth is the root of all evil and poverty keeps the soul pure' is employing which specific form of rationalization?",
+    "options": [
+      "A):   Sour Grapes",
+      "B):   Conquering Hero Fantasy",
+      "C):   Sublimation",
+      "D):   Sweet Lemon"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Convincing oneself that an undesirable, impoverished situation forced upon them is actually sweet, noble, and desirable is the 'Sweet Lemon' mechanism."
+  },
+  {
+    "id": "c12-edu-3-mcq-13",
+    "question": "Which of the following is a social cause of student maladjustment?",
+    "options": [
+      "A):   Toxic peer bullying and domestic marital warfare",
+      "B):   Sensory blindness",
+      "C):   Endocrine gland disorder",
+      "D):   Inborn mental handicap"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Domestic conflict, family breakdown, and peer bullying originate in interpersonal and cultural environments, making them social causes."
+  },
+  {
+    "id": "c12-edu-3-mcq-14",
+    "question": "A student who avoids studying for difficult pre-board exams by binge-watching web series for 10 hours daily is exhibiting:",
+    "options": [
+      "A):   Sublimation",
+      "B):   Escapism",
+      "C):   Direct problem solving",
+      "D):   Accurate self-insight"
+    ],
+    "correctAnswer": "b",
+    "explanation": "Escapism involves seeking temporary behavioral distraction and flight from stressful duties and responsibilities."
+  },
+  {
+    "id": "c12-edu-3-mcq-15",
+    "question": "What distinguishes direct methods of coping from defense mechanisms?",
+    "options": [
+      "A):   Direct methods operate unconsciously, while defense mechanisms are conscious",
+      "B):   Direct methods are exclusively used by children",
+      "C):   Direct methods always lead to neurosis",
+      "D):   Direct methods attack the actual problem, while defense mechanisms distort reality to reduce anxiety"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Direct coping methods consciously address the objective barrier, whereas defense mechanisms unconsciously protect the ego by distorting reality."
+  },
+  {
+    "id": "c12-edu-3-mcq-16",
+    "question": "In Shaffer's Cycle of Adjustment, what immediately follows the emergence of an unsatisfied Need or Drive?",
+    "options": [
+      "A):   Sublimation",
+      "B):   Instant relief",
+      "C):   Encountering an Obstacle / Barrier",
+      "D):   Complete maladjustment"
+    ],
+    "correctAnswer": "c",
+    "explanation": "In Shaffer's model, a drive or need motivates action, but when it encounters a barrier or obstacle, varied coping behaviors are provoked."
+  },
+  {
+    "id": "c12-edu-3-mcq-17",
+    "question": "A shy adolescent who imagines himself as an Olympic champion being applauded by millions is indulging in the:",
+    "options": [
+      "A):   Suffering Hero Fantasy",
+      "B):   Conquering Hero Fantasy",
+      "C):   Sour Grapes Rationalization",
+      "D):   Sweet Lemon Rationalization"
+    ],
+    "correctAnswer": "b",
+    "explanation": "The 'Conquering Hero' fantasy involves daydreaming about extraordinary triumphs, glory, and public acclaim to compensate for feelings of weakness."
+  },
+  {
+    "id": "c12-edu-3-mcq-18",
+    "question": "Which of the following parenting styles is most strongly associated with raising well-adjusted, confident adolescents?",
+    "options": [
+      "A):   Authoritative (warm, communicative, and firm boundaries)",
+      "B):   Permissive (negligent and zero rules)",
+      "C):   Authoritarian (rigid and harsh)",
+      "D):   Rejecting-neglecting"
+    ],
+    "correctAnswer": "a",
+    "explanation": "Authoritative parenting provides high emotional warmth combined with clear democratic guidelines, fostering sound adolescent adjustment."
+  },
+  {
+    "id": "c12-edu-3-mcq-19",
+    "question": "Rohan fails to qualify for the school cricket team. He asserts: 'The cricket pitch was poorly prepared and the coach is biased toward his relatives.' Which mechanism is Rohan utilizing?",
+    "options": [
+      "A):   Regression",
+      "B):   Sublimation",
+      "C):   Escapism",
+      "D):   Rationalization"
+    ],
+    "correctAnswer": "d",
+    "explanation": "Rohan is fabricating external excuses (biased coach, bad pitch) to explain away his failure, which is a clear case of Rationalization."
+  },
+  {
+    "id": "c12-edu-3-mcq-20",
+    "question": "When an adolescent continuously sets an unrealistically high Level of Aspiration that far exceeds their intellectual capacity, what is the most probable psychological consequence?",
+    "options": [
       "A):   Enhanced emotional poise",
-      "B):   Chronic frustration, acute anxiety, and maladjustment",
-      "C):   Elimination of defense mechanisms",
-      "D):   Automatic attainment of sublimation",
+      "B):   Elimination of defense mechanisms",
+      "C):   Chronic frustration, acute anxiety, and maladjustment",
+      "D):   Automatic attainment of sublimation"
     ],
-    correctAnswer: "b",
-    explanation: "A severe disparity between aspiration and ability inevitably causes repeated failure, leading to chronic frustration, guilt, and maladjustment.",
+    "correctAnswer": "c",
+    "explanation": "A severe disparity between aspiration and ability inevitably causes repeated failure, leading to chronic frustration, guilt, and maladjustment."
   },
   {
-    id: "c12-edu-3-mcq-21",
-    question: "A teacher observes that a 15-year-old student has started bunking classes (truancy), displaying unprovoked aggression, and biting his nails. These behaviors collectively signal:",
-    options: [
+    "id": "c12-edu-3-mcq-21",
+    "question": "A teacher observes that a 15-year-old student has started bunking classes (truancy), displaying unprovoked aggression, and biting his nails. These behaviors collectively signal:",
+    "options": [
       "A):   Superior scholastic readiness",
       "B):   A syndrome of underlying adolescent maladjustment",
       "C):   Positive development of sublimation",
-      "D):   Successful completion of the adjustment cycle",
+      "D):   Successful completion of the adjustment cycle"
     ],
-    correctAnswer: "b",
-    explanation: "Truancy, aggression, and nail-biting are classic behavioral and physical symptoms of adolescent emotional maladjustment requiring prompt intervention.",
+    "correctAnswer": "b",
+    "explanation": "Truancy, aggression, and nail-biting are classic behavioral and physical symptoms of adolescent emotional maladjustment requiring prompt intervention."
   },
   {
-    id: "c12-edu-3-mcq-22",
-    question: "Under the guidelines of the National Education Policy (NEP 2020), what institutional mechanism is strongly recommended in schools to curb student maladjustment?",
-    options: [
+    "id": "c12-edu-3-mcq-22",
+    "question": "Under the guidelines of the National Education Policy (NEP 2020), what institutional mechanism is strongly recommended in schools to curb student maladjustment?",
+    "options": [
       "A):   Strict corporal punishment squads",
-      "B):   Dedicated School Guidance and Counseling Cells with trained counselors",
+      "B):   Immediate expulsion of all underperforming students",
       "C):   Public posting of failure lists on notice boards",
-      "D):   Immediate expulsion of all underperforming students",
+      "D):   Dedicated School Guidance and Counseling Cells with trained counselors"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 mandates setting up accessible Guidance and Counseling cells in schools to provide socio-emotional support and prevent maladjustment.",
+    "correctAnswer": "d",
+    "explanation": "NEP 2020 mandates setting up accessible Guidance and Counseling cells in schools to provide socio-emotional support and prevent maladjustment."
   },
   {
-    id: "c12-edu-3-mcq-23",
-    question: "An adolescent girl experiencing intense heartbreak and emotional rejection writes a bestselling, deeply moving novel. Psychologically, this transformation is an example of:",
-    options: [
-      "A):   Sour Grapes Rationalization",
-      "B):   Sublimation of emotional distress into creative literature",
+    "id": "c12-edu-3-mcq-23",
+    "question": "An adolescent girl experiencing intense heartbreak and emotional rejection writes a bestselling, deeply moving novel. Psychologically, this transformation is an example of:",
+    "options": [
+      "A):   Sublimation of emotional distress into creative literature",
+      "B):   Sour Grapes Rationalization",
       "C):   Escapism through daydreaming",
-      "D):   Sweet Lemon Mechanism",
+      "D):   Sweet Lemon Mechanism"
     ],
-    correctAnswer: "b",
-    explanation: "Channeling painful emotional turbulence into literary or artistic masterpieces is a sublime example of Sublimation.",
+    "correctAnswer": "a",
+    "explanation": "Channeling painful emotional turbulence into literary or artistic masterpieces is a sublime example of Sublimation."
   },
   {
-    id: "c12-edu-3-mcq-24",
-    question: "Which of the following describes the 'Suffering Hero' (or Martyr) fantasy?",
-    options: [
+    "id": "c12-edu-3-mcq-24",
+    "question": "Which of the following describes the 'Suffering Hero' (or Martyr) fantasy?",
+    "options": [
       "A):   Imagining conquering enemy armies in battle",
-      "B):   Daydreaming about tragic illness or death to make guilt-ridden parents weep and repent",
-      "C):   Pretending that hard work is unnecessary",
-      "D):   Channeling anger into painting",
+      "B):   Pretending that hard work is unnecessary",
+      "C):   Daydreaming about tragic illness or death to make guilt-ridden parents weep and repent",
+      "D):   Channeling anger into painting"
     ],
-    correctAnswer: "b",
-    explanation: "In the 'Suffering Hero' fantasy, the adolescent imagines suffering injury or tragic death so that neglectful parents or friends will feel overwhelming remorse.",
+    "correctAnswer": "c",
+    "explanation": "In the 'Suffering Hero' fantasy, the adolescent imagines suffering injury or tragic death so that neglectful parents or friends will feel overwhelming remorse."
   },
   {
-    id: "c12-edu-3-mcq-25",
-    question: "Why does chronic reliance on defense mechanisms like escapism and rationalization ultimately exacerbate maladjustment instead of curing it?",
-    options: [
+    "id": "c12-edu-3-mcq-25",
+    "question": "Why does chronic reliance on defense mechanisms like escapism and rationalization ultimately exacerbate maladjustment instead of curing it?",
+    "options": [
       "A):   Because they resolve environmental barriers too quickly",
       "B):   Because they only reduce subjective anxiety temporarily while leaving the underlying objective problem unsolved",
       "C):   Because they convert all unconscious thoughts into conscious ones",
-      "D):   Because they require excessive physical exercise",
+      "D):   Because they require excessive physical exercise"
     ],
-    correctAnswer: "b",
-    explanation: "Defense mechanisms mask anxiety without resolving the objective root cause; thus the real problem accumulates, deepening chronic maladjustment.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Defense mechanisms mask anxiety without resolving the objective root cause; thus the real problem accumulates, deepening chronic maladjustment."
+  }
 ];

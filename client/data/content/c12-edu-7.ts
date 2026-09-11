@@ -674,8 +674,7 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Exposition of Variability: Meaning, Need, and Detailed Comparative Analysis of the Four Measures of Dispersion.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of Variability: Meaning, Need, and Detailed Comparative Analysis of the Four Measures of Dispersion.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Concept of Variability:</b><br />
@@ -694,8 +693,7 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Exhaustive Analysis of Standard Deviation: Mathematical Definition, Properties, and Superiority in Educational Measurement.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Exhaustive Analysis of Standard Deviation: Mathematical Definition, Properties, and Superiority in Educational Measurement.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Definition &amp; Formulations:</b><br />
@@ -711,8 +709,7 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: Critical Analysis of Correlation: Meaning, Types, and Pedagogical Applications in School Decision-Making.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Critical Analysis of Correlation: Meaning, Types, and Pedagogical Applications in School Decision-Making.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Concept of Correlation:</b><br />
@@ -731,8 +728,7 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: Detailed Comparative Exposition of Spearman's Rank Difference Method and Pearson's Product-Moment Method.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: Detailed Comparative Exposition of Spearman's Rank Difference Method and Pearson's Product-Moment Method.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Theoretical Paradigms:</b><br />
@@ -748,8 +744,7 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Full Numerical Board Master Problem: Step-by-Step Computation and Interpretation of Spearman's Rank Correlation (&rho;).
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Full Numerical Board Master Problem: Step-by-Step Computation and Interpretation of Spearman's Rank Correlation (&rho;).
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">Problem Statement:</b><br />
@@ -799,309 +794,304 @@ export const c12Edu7HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu7Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-7-mcq-1",
-    question: "Who introduced the concept of Standard Deviation in statistical science in 1893?",
-    options: [
+    "id": "c12-edu-7-mcq-1",
+    "question": "Who introduced the concept of Standard Deviation in statistical science in 1893?",
+    "options": [
       "A):   Charles Spearman",
       "B):   Karl Pearson",
       "C):   Francis Galton",
-      "D):   Lewis Terman",
+      "D):   Lewis Terman"
     ],
-    correctAnswer: "b",
-    explanation: "Karl Pearson introduced the Standard Deviation in 1893 as the root-mean-square deviation from the arithmetic mean.",
+    "correctAnswer": "b",
+    "explanation": "Karl Pearson introduced the Standard Deviation in 1893 as the root-mean-square deviation from the arithmetic mean."
   },
   {
-    id: "c12-edu-7-mcq-2",
-    question: "What is the simplest and crudest measure of variability in statistics?",
-    options: [
-      "A):   Quartile Deviation",
-      "B):   Range",
+    "id": "c12-edu-7-mcq-2",
+    "question": "What is the simplest and crudest measure of variability in statistics?",
+    "options": [
+      "A):   Range",
+      "B):   Quartile Deviation",
       "C):   Mean Deviation",
-      "D):   Standard Deviation",
+      "D):   Standard Deviation"
     ],
-    correctAnswer: "b",
-    explanation: "The Range (Highest &minus; Lowest score) is the simplest, quickest, but crudest measure of dispersion.",
+    "correctAnswer": "a",
+    "explanation": "The Range (Highest &minus; Lowest score) is the simplest, quickest, but crudest measure of dispersion."
   },
   {
-    id: "c12-edu-7-mcq-3",
-    question: "The formula for calculating Quartile Deviation (QD) is:",
-    options: [
-      "A):   (Q3 &minus; Q1) / 2",
+    "id": "c12-edu-7-mcq-3",
+    "question": "The formula for calculating Quartile Deviation (QD) is:",
+    "options": [
+      "A):   Q3 &minus; Q1",
       "B):   (Q3 + Q1) / 2",
-      "C):   Q3 &minus; Q1",
-      "D):   (Q3 &times; Q1) / 2",
+      "C):   (Q3 &minus; Q1) / 2",
+      "D):   (Q3 &times; Q1) / 2"
     ],
-    correctAnswer: "a",
-    explanation: "Quartile Deviation is half of the interquartile range: QD = (Q3 &minus; Q1) / 2.",
+    "correctAnswer": "c",
+    "explanation": "Quartile Deviation is half of the interquartile range: QD = (Q3 &minus; Q1) / 2."
   },
   {
-    id: "c12-edu-7-mcq-4",
-    question: "The permissible numerical range of the Coefficient of Correlation (r) is strictly between:",
-    options: [
+    "id": "c12-edu-7-mcq-4",
+    "question": "The permissible numerical range of the Coefficient of Correlation (r) is strictly between:",
+    "options": [
       "A):   0.00 and +1.00",
-      "B):   &minus;1.00 and +1.00",
+      "B):   0.00 and +100.00",
       "C):   &minus;&infin; and +&infin;",
-      "D):   0.00 and +100.00",
+      "D):   &minus;1.00 and +1.00"
     ],
-    correctAnswer: "b",
-    explanation: "The correlation coefficient is mathematically bounded strictly between &minus;1.00 (perfect negative) and +1.00 (perfect positive).",
+    "correctAnswer": "d",
+    "explanation": "The correlation coefficient is mathematically bounded strictly between &minus;1.00 (perfect negative) and +1.00 (perfect positive)."
   },
   {
-    id: "c12-edu-7-mcq-5",
-    question: "Who developed the Rank Difference method of correlation in 1904?",
-    options: [
+    "id": "c12-edu-7-mcq-5",
+    "question": "Who developed the Rank Difference method of correlation in 1904?",
+    "options": [
       "A):   Karl Pearson",
       "B):   Charles Spearman",
       "C):   B. F. Skinner",
-      "D):   Edward Thorndike",
+      "D):   Edward Thorndike"
     ],
-    correctAnswer: "b",
-    explanation: "Charles Spearman developed the Rank Difference correlation method (&rho;) in 1904 for ordinal rank data.",
+    "correctAnswer": "b",
+    "explanation": "Charles Spearman developed the Rank Difference correlation method (&rho;) in 1904 for ordinal rank data."
   },
   {
-    id: "c12-edu-7-mcq-6",
-    question: "A correlation coefficient of r = 0.00 between shoe size and intelligence indicates:",
-    options: [
-      "A):   Perfect positive correlation",
-      "B):   Zero correlation (no linear relationship)",
+    "id": "c12-edu-7-mcq-6",
+    "question": "A correlation coefficient of r = 0.00 between shoe size and intelligence indicates:",
+    "options": [
+      "A):   Zero correlation (no linear relationship)",
+      "B):   Perfect positive correlation",
       "C):   Severe negative correlation",
-      "D):   Calculation error",
+      "D):   Calculation error"
     ],
-    correctAnswer: "b",
-    explanation: "r = 0.00 denotes zero correlation, meaning no systematic linear association exists between the two variables.",
+    "correctAnswer": "a",
+    "explanation": "r = 0.00 denotes zero correlation, meaning no systematic linear association exists between the two variables."
   },
   {
-    id: "c12-edu-7-mcq-7",
-    question: "Which Greek letter is standardly used to designate the Standard Deviation of a distribution?",
-    options: [
+    "id": "c12-edu-7-mcq-7",
+    "question": "Which Greek letter is standardly used to designate the Standard Deviation of a distribution?",
+    "options": [
       "A):   &alpha; (Alpha)",
       "B):   &beta; (Beta)",
-      "C):   &sigma; (Sigma)",
-      "D):   &theta; (Theta)",
+      "C):   &theta; (Theta)",
+      "D):   &sigma; (Sigma)"
     ],
-    correctAnswer: "c",
-    explanation: "The lowercase Greek letter &sigma; (Sigma) is universally used to denote Standard Deviation.",
+    "correctAnswer": "d",
+    "explanation": "The lowercase Greek letter &sigma; (Sigma) is universally used to denote Standard Deviation."
   },
   {
-    id: "c12-edu-7-mcq-8",
-    question: "What happens to the sum of deviations of all scores from their arithmetic mean (&sum; x) if algebraic signs are NOT ignored?",
-    options: [
-      "A):   It always equals zero (&sum; x = 0)",
+    "id": "c12-edu-7-mcq-8",
+    "question": "What happens to the sum of deviations of all scores from their arithmetic mean (&sum; x) if algebraic signs are NOT ignored?",
+    "options": [
+      "A):   It equals the range",
       "B):   It equals the standard deviation",
-      "C):   It equals the range",
-      "D):   It equals 100",
+      "C):   It always equals zero (&sum; x = 0)",
+      "D):   It equals 100"
     ],
-    correctAnswer: "a",
-    explanation: "A fundamental mathematical property of the arithmetic mean is that the algebraic sum of deviations from it is always exactly zero.",
+    "correctAnswer": "c",
+    "explanation": "A fundamental mathematical property of the arithmetic mean is that the algebraic sum of deviations from it is always exactly zero."
   },
   {
-    id: "c12-edu-7-mcq-9",
-    question: "If an increase in study hours is accompanied by a systematic increase in test marks, the correlation is:",
-    options: [
+    "id": "c12-edu-7-mcq-9",
+    "question": "If an increase in study hours is accompanied by a systematic increase in test marks, the correlation is:",
+    "options": [
       "A):   Negative",
       "B):   Positive",
       "C):   Zero",
-      "D):   Spurious",
+      "D):   Spurious"
     ],
-    correctAnswer: "b",
-    explanation: "When both variables move in the same direction, the correlation is Positive.",
+    "correctAnswer": "b",
+    "explanation": "When both variables move in the same direction, the correlation is Positive."
   },
   {
-    id: "c12-edu-7-mcq-10",
-    question: "Which measure of dispersion is immune to extreme outlier scores because it considers only the middle 50% of the distribution?",
-    options: [
-      "A):   Range",
-      "B):   Quartile Deviation",
+    "id": "c12-edu-7-mcq-10",
+    "question": "Which measure of dispersion is immune to extreme outlier scores because it considers only the middle 50% of the distribution?",
+    "options": [
+      "A):   Quartile Deviation",
+      "B):   Range",
       "C):   Mean Deviation",
-      "D):   Standard Deviation",
+      "D):   Standard Deviation"
     ],
-    correctAnswer: "b",
-    explanation: "Quartile Deviation is computed between Q1 and Q3, ignoring the top 25% and bottom 25% outlier extremes.",
+    "correctAnswer": "a",
+    "explanation": "Quartile Deviation is computed between Q1 and Q3, ignoring the top 25% and bottom 25% outlier extremes."
   },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
   {
-    id: "c12-edu-7-mcq-11",
-    question: "In an examination, the highest score is 95 and the lowest score is 35. What is the Range?",
-    options: [
+    "id": "c12-edu-7-mcq-11",
+    "question": "In an examination, the highest score is 95 and the lowest score is 35. What is the Range?",
+    "options": [
       "A):   50",
-      "B):   60",
-      "C):   65",
-      "D):   130",
+      "B):   65",
+      "C):   60",
+      "D):   130"
     ],
-    correctAnswer: "b",
-    explanation: "Range = Highest &minus; Lowest = 95 &minus; 35 = 60.",
+    "correctAnswer": "c",
+    "explanation": "Range = Highest &minus; Lowest = 95 &minus; 35 = 60."
   },
   {
-    id: "c12-edu-7-mcq-12",
-    question: "Why is the Standard Deviation considered mathematically superior to the Mean Deviation?",
-    options: [
+    "id": "c12-edu-7-mcq-12",
+    "question": "Why is the Standard Deviation considered mathematically superior to the Mean Deviation?",
+    "options": [
       "A):   Because it ignores all negative signs arbitrarily",
-      "B):   Because it squares the deviations, resolving negative signs according to valid algebraic laws",
+      "B):   Because it is always equal to the Median",
       "C):   Because it does not require a Mean",
-      "D):   Because it is always equal to the Median",
+      "D):   Because it squares the deviations, resolving negative signs according to valid algebraic laws"
     ],
-    correctAnswer: "b",
-    explanation: "Standard Deviation squares the deviations ((&minus;x)&sup2; = +x&sup2;), resolving negative signs algebraically without arbitrary absolute-value omissions.",
+    "correctAnswer": "d",
+    "explanation": "Standard Deviation squares the deviations ((&minus;x)&sup2; = +x&sup2;), resolving negative signs algebraically without arbitrary absolute-value omissions."
   },
   {
-    id: "c12-edu-7-mcq-13",
-    question: "When a psychologist correlates judges' rankings in an inter-school debate contest with N = 12, which correlation method is appropriate?",
-    options: [
-      "A):   Pearson's Product-Moment Method",
-      "B):   Spearman's Rank Difference Method",
+    "id": "c12-edu-7-mcq-13",
+    "question": "When a psychologist correlates judges' rankings in an inter-school debate contest with N = 12, which correlation method is appropriate?",
+    "options": [
+      "A):   Spearman's Rank Difference Method",
+      "B):   Pearson's Product-Moment Method",
       "C):   Quartile Deviation",
-      "D):   Range analysis",
+      "D):   Range analysis"
     ],
-    correctAnswer: "b",
-    explanation: "Spearman's Rank Difference method is specifically designed for ordinal ranks and small samples (N &lt; 30).",
+    "correctAnswer": "a",
+    "explanation": "Spearman's Rank Difference method is specifically designed for ordinal ranks and small samples (N &lt; 30)."
   },
   {
-    id: "c12-edu-7-mcq-14",
-    question: "If the third quartile Q3 is 60 and the first quartile Q1 is 40, what is the Quartile Deviation (QD)?",
-    options: [
+    "id": "c12-edu-7-mcq-14",
+    "question": "If the third quartile Q3 is 60 and the first quartile Q1 is 40, what is the Quartile Deviation (QD)?",
+    "options": [
       "A):   20",
       "B):   10",
       "C):   50",
-      "D):   100",
+      "D):   100"
     ],
-    correctAnswer: "b",
-    explanation: "QD = (Q3 &minus; Q1) / 2 = (60 &minus; 40) / 2 = 20 / 2 = 10.",
+    "correctAnswer": "b",
+    "explanation": "QD = (Q3 &minus; Q1) / 2 = (60 &minus; 40) / 2 = 20 / 2 = 10."
   },
   {
-    id: "c12-edu-7-mcq-15",
-    question: "In a perfectly normal distribution curve, approximately what percentage of student scores fall within Mean &plusmn; 1 Standard Deviation (&sigma;)?",
-    options: [
+    "id": "c12-edu-7-mcq-15",
+    "question": "In a perfectly normal distribution curve, approximately what percentage of student scores fall within Mean &plusmn; 1 Standard Deviation (&sigma;)?",
+    "options": [
       "A):   50%",
-      "B):   68.26%",
+      "B):   99.73%",
       "C):   95.44%",
-      "D):   99.73%",
+      "D):   68.26%"
     ],
-    correctAnswer: "b",
-    explanation: "In a normal distribution, approximately 68.26% of all cases lie within 1 standard deviation on either side of the mean.",
+    "correctAnswer": "d",
+    "explanation": "In a normal distribution, approximately 68.26% of all cases lie within 1 standard deviation on either side of the mean."
   },
   {
-    id: "c12-edu-7-mcq-16",
-    question: "If acute examination anxiety causes a severe drop in memory recall during a test, the correlation between anxiety and recall is:",
-    options: [
+    "id": "c12-edu-7-mcq-16",
+    "question": "If acute examination anxiety causes a severe drop in memory recall during a test, the correlation between anxiety and recall is:",
+    "options": [
       "A):   Positive",
-      "B):   Negative",
-      "C):   Zero",
-      "D):   Neutral",
+      "B):   Zero",
+      "C):   Negative",
+      "D):   Neutral"
     ],
-    correctAnswer: "b",
-    explanation: "When one variable increases (anxiety) while the other decreases (recall), the relationship is Negative.",
+    "correctAnswer": "c",
+    "explanation": "When one variable increases (anxiety) while the other decreases (recall), the relationship is Negative."
   },
   {
-    id: "c12-edu-7-mcq-17",
-    question: "Two classroom sections have identical Mean marks of 65. Section X has &sigma; = 3.2, while Section Y has &sigma; = 14.8. What does this indicate?",
-    options: [
-      "A):   Section X is far more homogeneous and uniform in performance than Section Y",
-      "B):   Section Y is more homogeneous than Section X",
+    "id": "c12-edu-7-mcq-17",
+    "question": "Two classroom sections have identical Mean marks of 65. Section X has &sigma; = 3.2, while Section Y has &sigma; = 14.8. What does this indicate?",
+    "options": [
+      "A):   Section Y is more homogeneous than Section X",
+      "B):   Section X is far more homogeneous and uniform in performance than Section Y",
       "C):   Both sections have identical student scores",
-      "D):   Section X has higher failure rate",
+      "D):   Section X has higher failure rate"
     ],
-    correctAnswer: "a",
-    explanation: "A smaller standard deviation indicates that student scores are tightly clustered around the mean (homogeneous).",
+    "correctAnswer": "b",
+    "explanation": "A smaller standard deviation indicates that student scores are tightly clustered around the mean (homogeneous)."
   },
   {
-    id: "c12-edu-7-mcq-18",
-    question: "What is the primary operational assumption required before using Pearson's Product-Moment correlation (r)?",
-    options: [
-      "A):   Data must be in qualitative ordinal ranks",
-      "B):   Variables must be continuous, measured on an interval or ratio scale, and approximately normally distributed",
+    "id": "c12-edu-7-mcq-18",
+    "question": "What is the primary operational assumption required before using Pearson's Product-Moment correlation (r)?",
+    "options": [
+      "A):   Variables must be continuous, measured on an interval or ratio scale, and approximately normally distributed",
+      "B):   Data must be in qualitative ordinal ranks",
       "C):   Sample size must be less than 5",
-      "D):   Variables must have zero variance",
+      "D):   Variables must have zero variance"
     ],
-    correctAnswer: "b",
-    explanation: "Pearson's r is a parametric measure requiring continuous interval/ratio score distributions and linear relationship.",
+    "correctAnswer": "a",
+    "explanation": "Pearson's r is a parametric measure requiring continuous interval/ratio score distributions and linear relationship."
   },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
   {
-    id: "c12-edu-7-mcq-19",
-    question: "In Spearman's rank correlation formula, what does &sum; D&sup2; represent?",
-    options: [
+    "id": "c12-edu-7-mcq-19",
+    "question": "In Spearman's rank correlation formula, what does &sum; D&sup2; represent?",
+    "options": [
       "A):   Sum of student roll numbers",
-      "B):   Sum of the squared differences between paired ranks",
+      "B):   Square root of the standard deviation",
       "C):   Total number of subjects",
-      "D):   Square root of the standard deviation",
+      "D):   Sum of the squared differences between paired ranks"
     ],
-    correctAnswer: "b",
-    explanation: "&sum; D&sup2; represents the sum of the squared differences between the ranks assigned to each individual in the two variables (D = R1 &minus; R2).",
+    "correctAnswer": "d",
+    "explanation": "&sum; D&sup2; represents the sum of the squared differences between the ranks assigned to each individual in the two variables (D = R1 &minus; R2)."
   },
   {
-    id: "c12-edu-7-mcq-20",
-    question: "If the ranks of 6 students in Physics and Chemistry are identical (1, 2, 3, 4, 5, 6 in both), what is the value of Spearman's &rho;?",
-    options: [
+    "id": "c12-edu-7-mcq-20",
+    "question": "If the ranks of 6 students in Physics and Chemistry are identical (1, 2, 3, 4, 5, 6 in both), what is the value of Spearman's &rho;?",
+    "options": [
       "A):   0.00",
       "B):   &minus;1.00",
       "C):   +1.00",
-      "D):   +0.50",
+      "D):   +0.50"
     ],
-    correctAnswer: "c",
-    explanation: "If ranks are identical, every D = 0, so &sum; D&sup2; = 0. Substituting in formula: &rho; = 1 &minus; 0 = +1.00 (perfect positive correlation).",
+    "correctAnswer": "c",
+    "explanation": "If ranks are identical, every D = 0, so &sum; D&sup2; = 0. Substituting in formula: &rho; = 1 &minus; 0 = +1.00 (perfect positive correlation)."
   },
   {
-    id: "c12-edu-7-mcq-21",
-    question: "A high school counselor correlates students' Class 10 science test scores with their subsequent Class 12 NEET entrance ranks and finds r = +0.82. How should this result be used?",
-    options: [
+    "id": "c12-edu-7-mcq-21",
+    "question": "A high school counselor correlates students' Class 10 science test scores with their subsequent Class 12 NEET entrance ranks and finds r = +0.82. How should this result be used?",
+    "options": [
       "A):   To discourage all students from taking science",
       "B):   As a reliable predictive indicator for academic stream counseling and career prognosis",
       "C):   To cancel the board examinations",
-      "D):   To force all students into arts",
+      "D):   To force all students into arts"
     ],
-    correctAnswer: "b",
-    explanation: "A high positive correlation (+0.82) confirms strong predictive validity, making it a reliable tool for educational stream guidance.",
+    "correctAnswer": "b",
+    "explanation": "A high positive correlation (+0.82) confirms strong predictive validity, making it a reliable tool for educational stream guidance."
   },
   {
-    id: "c12-edu-7-mcq-22",
-    question: "For a dataset with scores 5, 5, 5, 5, 5, what are the Mean and the Standard Deviation?",
-    options: [
+    "id": "c12-edu-7-mcq-22",
+    "question": "For a dataset with scores 5, 5, 5, 5, 5, what are the Mean and the Standard Deviation?",
+    "options": [
       "A):   Mean = 5, &sigma; = 5",
-      "B):   Mean = 5, &sigma; = 0",
+      "B):   Mean = 25, &sigma; = 0",
       "C):   Mean = 0, &sigma; = 5",
-      "D):   Mean = 25, &sigma; = 0",
+      "D):   Mean = 5, &sigma; = 0"
     ],
-    correctAnswer: "b",
-    explanation: "When all scores in a distribution are identical, there is zero scatter; hence Mean = 5 and &sigma; = 0.",
+    "correctAnswer": "d",
+    "explanation": "When all scores in a distribution are identical, there is zero scatter; hence Mean = 5 and &sigma; = 0."
   },
   {
-    id: "c12-edu-7-mcq-23",
-    question: "Why is Quartile Deviation particularly recommended over Standard Deviation when analyzing income or wealth distributions of student families?",
-    options: [
+    "id": "c12-edu-7-mcq-23",
+    "question": "Why is Quartile Deviation particularly recommended over Standard Deviation when analyzing income or wealth distributions of student families?",
+    "options": [
       "A):   Because income distributions are heavily skewed with extreme billionaire outliers that artificially distort the mean and standard deviation",
       "B):   Because QD requires computers",
       "C):   Because income cannot be counted in numbers",
-      "D):   Because standard deviation is only for physics",
+      "D):   Because standard deviation is only for physics"
     ],
-    correctAnswer: "a",
-    explanation: "Income and wealth data are notoriously skewed by extreme outliers; Quartile Deviation focuses on the middle 50%, remaining unaffected by extreme wealth.",
+    "correctAnswer": "a",
+    "explanation": "Income and wealth data are notoriously skewed by extreme outliers; Quartile Deviation focuses on the middle 50%, remaining unaffected by extreme wealth."
   },
   {
-    id: "c12-edu-7-mcq-24",
-    question: "If a researcher obtains a correlation coefficient of r = +1.25 between motivation and memory recall, what must be concluded?",
-    options: [
+    "id": "c12-edu-7-mcq-24",
+    "question": "If a researcher obtains a correlation coefficient of r = +1.25 between motivation and memory recall, what must be concluded?",
+    "options": [
       "A):   Motivation causes infinite memory",
       "B):   The result proves superior learning",
       "C):   A mathematical calculation error occurred, because r can never exceed +1.00",
-      "D):   The test is 125% valid",
+      "D):   The test is 125% valid"
     ],
-    correctAnswer: "c",
-    explanation: "The correlation coefficient can NEVER exceed +1.00 or fall below &minus;1.00; any value like +1.25 indicates a calculation error.",
+    "correctAnswer": "c",
+    "explanation": "The correlation coefficient can NEVER exceed +1.00 or fall below &minus;1.00; any value like +1.25 indicates a calculation error."
   },
   {
-    id: "c12-edu-7-mcq-25",
-    question: "Which measure of variability should a curriculum committee use when standardizing a nationwide board examination paper?",
-    options: [
+    "id": "c12-edu-7-mcq-25",
+    "question": "Which measure of variability should a curriculum committee use when standardizing a nationwide board examination paper?",
+    "options": [
       "A):   Range",
-      "B):   Quartile Deviation",
-      "C):   Standard Deviation",
-      "D):   Mode deviation",
+      "B):   Standard Deviation",
+      "C):   Quartile Deviation",
+      "D):   Mode deviation"
     ],
-    correctAnswer: "c",
-    explanation: "Standard Deviation is the universally mandated measure for standardizing national examinations, scaling score distributions, and equating test forms.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Standard Deviation is the universally mandated measure for standardizing national examinations, scaling score distributions, and equating test forms."
+  }
 ];

@@ -620,8 +620,7 @@ export const c12Edu5HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Exposition of Educational Technology: Meaning, Scope, Principles, and Difference between Technology in and of Education.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of Educational Technology: Meaning, Scope, Principles, and Difference between Technology in and of Education.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Conceptual Meaning &amp; Scope:</b><br />
@@ -641,8 +640,7 @@ export const c12Edu5HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Detailed Classification and Comparative Analysis of Hardware and Software Approaches to Educational Technology.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Detailed Classification and Comparative Analysis of Hardware and Software Approaches to Educational Technology.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Introduction &amp; Lumsdaine's Framework:</b><br />
@@ -661,8 +659,7 @@ export const c12Edu5HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: The Revolutionary Role of ICT in Modern Teaching-Learning and NEP 2020 Digital Initiatives.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: The Revolutionary Role of ICT in Modern Teaching-Learning and NEP 2020 Digital Initiatives.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Conceptual Convergence of ICT:</b><br />
@@ -681,8 +678,7 @@ export const c12Edu5HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: Critical Examination of Modern Learning Models: Online Learning, Blended Learning, and Flipped Classrooms.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: Critical Examination of Modern Learning Models: Online Learning, Blended Learning, and Flipped Classrooms.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Paradigm Shift in Educational Delivery:</b><br />
@@ -700,8 +696,7 @@ export const c12Edu5HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Real-World Pedagogical Case Study: Implementation of a Flipped Blended Learning Model in a Senior Secondary School.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Real-World Pedagogical Case Study: Implementation of a Flipped Blended Learning Model in a Senior Secondary School.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">Case Context:</b><br />
@@ -728,309 +723,304 @@ export const c12Edu5HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu5Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-5-mcq-1",
-    question: "The Greek root word 'Techne' from which 'Technology' is derived means:",
-    options: [
+    "id": "c12-edu-5-mcq-1",
+    "question": "The Greek root word 'Techne' from which 'Technology' is derived means:",
+    "options": [
       "A):   Science or discourse",
       "B):   Art, skill, or craft",
       "C):   Machine or motor",
-      "D):   Computer or screen",
+      "D):   Computer or screen"
     ],
-    correctAnswer: "b",
-    explanation: "Technology comes from the Greek 'Techne' (art, craft, or skill) and 'Logos' (science, study, or discourse).",
+    "correctAnswer": "b",
+    "explanation": "Technology comes from the Greek 'Techne' (art, craft, or skill) and 'Logos' (science, study, or discourse)."
   },
   {
-    id: "c12-edu-5-mcq-2",
-    question: "Who classified Educational Technology into Hardware (ET-1) and Software (ET-2) approaches in 1964?",
-    options: [
-      "A):   B. F. Skinner",
-      "B):   Arthur A. Lumsdaine",
+    "id": "c12-edu-5-mcq-2",
+    "question": "Who classified Educational Technology into Hardware (ET-1) and Software (ET-2) approaches in 1964?",
+    "options": [
+      "A):   Arthur A. Lumsdaine",
+      "B):   B. F. Skinner",
       "C):   Jean Piaget",
-      "D):   John Dewey",
+      "D):   John Dewey"
     ],
-    correctAnswer: "b",
-    explanation: "Arthur A. Lumsdaine pioneered the classic categorization of educational technology into Hardware and Software approaches in 1964.",
+    "correctAnswer": "a",
+    "explanation": "Arthur A. Lumsdaine pioneered the classic categorization of educational technology into Hardware and Software approaches in 1964."
   },
   {
-    id: "c12-edu-5-mcq-3",
-    question: "The Hardware approach to educational technology (ET-1) is firmly rooted in:",
-    options: [
+    "id": "c12-edu-5-mcq-3",
+    "question": "The Hardware approach to educational technology (ET-1) is firmly rooted in:",
+    "options": [
       "A):   Behavioral psychology",
-      "B):   Physical sciences and engineering",
-      "C):   Sociology and anthropology",
-      "D):   Linguistics and grammar",
+      "B):   Sociology and anthropology",
+      "C):   Physical sciences and engineering",
+      "D):   Linguistics and grammar"
     ],
-    correctAnswer: "b",
-    explanation: "The Hardware approach originates in physical sciences and electrical/mechanical engineering, focusing on equipment and transmission devices.",
+    "correctAnswer": "c",
+    "explanation": "The Hardware approach originates in physical sciences and electrical/mechanical engineering, focusing on equipment and transmission devices."
   },
   {
-    id: "c12-edu-5-mcq-4",
-    question: "The Software approach to educational technology (ET-2) is rooted in:",
-    options: [
-      "A):   Behavioral sciences and psychology of learning",
+    "id": "c12-edu-5-mcq-4",
+    "question": "The Software approach to educational technology (ET-2) is rooted in:",
+    "options": [
+      "A):   Astronomy",
       "B):   Mechanical and civil engineering",
       "C):   Thermodynamics",
-      "D):   Astronomy",
+      "D):   Behavioral sciences and psychology of learning"
     ],
-    correctAnswer: "a",
-    explanation: "The Software approach is grounded in behavioral sciences, learning theories, and pedagogical instructional design.",
+    "correctAnswer": "d",
+    "explanation": "The Software approach is grounded in behavioral sciences, learning theories, and pedagogical instructional design."
   },
   {
-    id: "c12-edu-5-mcq-5",
-    question: "Which of the following is designated as 'Technology of Education'?",
-    options: [
+    "id": "c12-edu-5-mcq-5",
+    "question": "Which of the following is designated as 'Technology of Education'?",
+    "options": [
       "A):   Hardware Approach (ET-1)",
       "B):   Software Approach (ET-2)",
       "C):   Television Broadcasting",
-      "D):   LCD Projector Manufacturing",
+      "D):   LCD Projector Manufacturing"
     ],
-    correctAnswer: "b",
-    explanation: "The Software approach represents the 'Technology of Education' because it re-engineers instructional psychology and learning processes.",
+    "correctAnswer": "b",
+    "explanation": "The Software approach represents the 'Technology of Education' because it re-engineers instructional psychology and learning processes."
   },
   {
-    id: "c12-edu-5-mcq-6",
-    question: "What does the acronym ICT stand for in modern educational pedagogy?",
-    options: [
-      "A):   Integrated Classroom Teaching",
-      "B):   Information and Communication Technology",
+    "id": "c12-edu-5-mcq-6",
+    "question": "What does the acronym ICT stand for in modern educational pedagogy?",
+    "options": [
+      "A):   Information and Communication Technology",
+      "B):   Integrated Classroom Teaching",
       "C):   Instructional Computer Training",
-      "D):   Internal Cognitive Testing",
+      "D):   Internal Cognitive Testing"
     ],
-    correctAnswer: "b",
-    explanation: "ICT stands for Information and Communication Technology, denoting the convergence of computing, internet, and multimedia.",
+    "correctAnswer": "a",
+    "explanation": "ICT stands for Information and Communication Technology, denoting the convergence of computing, internet, and multimedia."
   },
   {
-    id: "c12-edu-5-mcq-7",
-    question: "A live Zoom or Google Meet classroom session where teacher and students interact in real time is an example of:",
-    options: [
-      "A):   Synchronous Online Learning",
+    "id": "c12-edu-5-mcq-7",
+    "question": "A live Zoom or Google Meet classroom session where teacher and students interact in real time is an example of:",
+    "options": [
+      "A):   Traditional Chalk-and-Talk",
       "B):   Asynchronous Online Learning",
       "C):   Pure Hardware Maintenance",
-      "D):   Traditional Chalk-and-Talk",
+      "D):   Synchronous Online Learning"
     ],
-    correctAnswer: "a",
-    explanation: "Synchronous learning occurs concurrently in real time, enabling immediate live interaction, question-answer, and chat.",
+    "correctAnswer": "d",
+    "explanation": "Synchronous learning occurs concurrently in real time, enabling immediate live interaction, question-answer, and chat."
   },
   {
-    id: "c12-edu-5-mcq-8",
-    question: "A pedagogical model that strategically integrates traditional face-to-face classroom teaching with digital online instruction is called:",
-    options: [
+    "id": "c12-edu-5-mcq-8",
+    "question": "A pedagogical model that strategically integrates traditional face-to-face classroom teaching with digital online instruction is called:",
+    "options": [
       "A):   Rote Learning",
-      "B):   Blended Learning",
-      "C):   Mechanical Learning",
-      "D):   Isolated Distance Education",
+      "B):   Mechanical Learning",
+      "C):   Blended Learning",
+      "D):   Isolated Distance Education"
     ],
-    correctAnswer: "b",
-    explanation: "Blended Learning (or Hybrid Learning) thoughtfully fuses physical face-to-face instruction with online digital learning.",
+    "correctAnswer": "c",
+    "explanation": "Blended Learning (or Hybrid Learning) thoughtfully fuses physical face-to-face instruction with online digital learning."
   },
   {
-    id: "c12-edu-5-mcq-9",
-    question: "Who were the pioneering high school educators who developed the 'Flipped Classroom' model in 2007?",
-    options: [
-      "A):   Jonathan Bergmann and Aaron Sams",
-      "B):   Wilhelm Wundt and William James",
+    "id": "c12-edu-5-mcq-9",
+    "question": "Who were the pioneering high school educators who developed the 'Flipped Classroom' model in 2007?",
+    "options": [
+      "A):   Wilhelm Wundt and William James",
+      "B):   Jonathan Bergmann and Aaron Sams",
       "C):   Ivan Pavlov and B. F. Skinner",
-      "D):   Sigmund Freud and Carl Jung",
+      "D):   Sigmund Freud and Carl Jung"
     ],
-    correctAnswer: "a",
-    explanation: "Jonathan Bergmann and Aaron Sams, two Colorado chemistry teachers, pioneered the modern Flipped Classroom approach in 2007.",
+    "correctAnswer": "b",
+    "explanation": "Jonathan Bergmann and Aaron Sams, two Colorado chemistry teachers, pioneered the modern Flipped Classroom approach in 2007."
   },
   {
-    id: "c12-edu-5-mcq-10",
-    question: "In a Flipped Classroom, where does the direct instructional lecture primarily take place?",
-    options: [
-      "A):   In the school auditorium under strict silence",
-      "B):   At home via pre-recorded video lessons at the student's own pace",
+    "id": "c12-edu-5-mcq-10",
+    "question": "In a Flipped Classroom, where does the direct instructional lecture primarily take place?",
+    "options": [
+      "A):   At home via pre-recorded video lessons at the student's own pace",
+      "B):   In the school auditorium under strict silence",
       "C):   During end-of-term examination halls",
-      "D):   Exclusively on the playground",
+      "D):   Exclusively on the playground"
     ],
-    correctAnswer: "b",
-    explanation: "In a flipped model, direct lecture delivery is shifted outside the classroom to the home, watched at the student's own pace.",
+    "correctAnswer": "a",
+    "explanation": "In a flipped model, direct lecture delivery is shifted outside the classroom to the home, watched at the student's own pace."
   },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
   {
-    id: "c12-edu-5-mcq-11",
-    question: "Which of the following belongs strictly to the Software Approach (ET-2) of educational technology?",
-    options: [
+    "id": "c12-edu-5-mcq-11",
+    "question": "Which of the following belongs strictly to the Software Approach (ET-2) of educational technology?",
+    "options": [
       "A):   Overhead LCD projector",
-      "B):   Programmed instructional learning material based on Skinner's operant conditioning",
-      "C):   Interactive flat screen television",
-      "D):   Digital tablet hardware",
+      "B):   Interactive flat screen television",
+      "C):   Programmed instructional learning material based on Skinner's operant conditioning",
+      "D):   Digital tablet hardware"
     ],
-    correctAnswer: "b",
-    explanation: "Programmed instructional learning modules are psychological, software-based pedagogical designs (ET-2), whereas screens and projectors are hardware (ET-1).",
+    "correctAnswer": "c",
+    "explanation": "Programmed instructional learning modules are psychological, software-based pedagogical designs (ET-2), whereas screens and projectors are hardware (ET-1)."
   },
   {
-    id: "c12-edu-5-mcq-12",
-    question: "Why is the Software approach considered superior in modifying student learning behavior compared to the Hardware approach alone?",
-    options: [
+    "id": "c12-edu-5-mcq-12",
+    "question": "Why is the Software approach considered superior in modifying student learning behavior compared to the Hardware approach alone?",
+    "options": [
       "A):   Because hardware is cheaper than software",
-      "B):   Because software is based directly on learning theories and psychological principles of behavior modification",
+      "B):   Because hardware cannot be plugged into electricity",
       "C):   Because software does not require any human intervention",
-      "D):   Because hardware cannot be plugged into electricity",
+      "D):   Because software is based directly on learning theories and psychological principles of behavior modification"
     ],
-    correctAnswer: "b",
-    explanation: "The Software approach directly harnesses psychological principles (reinforcement, sequencing, active response) to reshape cognitive structures.",
+    "correctAnswer": "d",
+    "explanation": "The Software approach directly harnesses psychological principles (reinforcement, sequencing, active response) to reshape cognitive structures."
   },
   {
-    id: "c12-edu-5-mcq-13",
-    question: "A student watching pre-recorded chemistry video lectures at midnight, pausing to take notes, and submitting assignments on a portal is practicing:",
-    options: [
-      "A):   Synchronous Online Learning",
-      "B):   Asynchronous Online Learning",
+    "id": "c12-edu-5-mcq-13",
+    "question": "A student watching pre-recorded chemistry video lectures at midnight, pausing to take notes, and submitting assignments on a portal is practicing:",
+    "options": [
+      "A):   Asynchronous Online Learning",
+      "B):   Synchronous Online Learning",
       "C):   Traditional Lecture Method",
-      "D):   Physical Rote Memorization",
+      "D):   Physical Rote Memorization"
     ],
-    correctAnswer: "b",
-    explanation: "Asynchronous learning allows students to access instructional content and complete tasks at their own schedule without live concurrent meetings.",
+    "correctAnswer": "a",
+    "explanation": "Asynchronous learning allows students to access instructional content and complete tasks at their own schedule without live concurrent meetings."
   },
   {
-    id: "c12-edu-5-mcq-14",
-    question: "How does the Flipped Classroom model align with Bloom's Revised Taxonomy?",
-    options: [
-      "A):   Lower-order cognitive tasks (Remembering, Understanding) happen at home, while higher-order tasks (Applying, Analyzing) happen in school with teacher guidance",
-      "B):   All higher-order tasks are permanently eliminated",
+    "id": "c12-edu-5-mcq-14",
+    "question": "How does the Flipped Classroom model align with Bloom's Revised Taxonomy?",
+    "options": [
+      "A):   All higher-order tasks are permanently eliminated",
+      "B):   Lower-order cognitive tasks (Remembering, Understanding) happen at home, while higher-order tasks (Applying, Analyzing) happen in school with teacher guidance",
       "C):   Students only engage in remembering facts during school hours",
-      "D):   Evaluation is shifted completely to parents",
+      "D):   Evaluation is shifted completely to parents"
     ],
-    correctAnswer: "a",
-    explanation: "Flipped classrooms flip Bloom's hierarchy: basic remembering occurs at home via video lectures, while complex application and analysis happen in class under teacher coaching.",
+    "correctAnswer": "b",
+    "explanation": "Flipped classrooms flip Bloom's hierarchy: basic remembering occurs at home via video lectures, while complex application and analysis happen in class under teacher coaching."
   },
   {
-    id: "c12-edu-5-mcq-15",
-    question: "A biology teacher uses an interactive 3D virtual simulation to demonstrate the beating human heart instead of merely drawing a static chalk diagram. Which principle of ET is utilized?",
-    options: [
-      "A):   Principle of Multi-Sensory Appeal and Visualization",
+    "id": "c12-edu-5-mcq-15",
+    "question": "A biology teacher uses an interactive 3D virtual simulation to demonstrate the beating human heart instead of merely drawing a static chalk diagram. Which principle of ET is utilized?",
+    "options": [
+      "A):   Principle of Corporal Restraint",
       "B):   Principle of Rote Drill",
       "C):   Principle of Negative Reinforcement",
-      "D):   Principle of Corporal Restraint",
+      "D):   Principle of Multi-Sensory Appeal and Visualization"
     ],
-    correctAnswer: "a",
-    explanation: "Interactive 3D simulations engage multiple sensory modalities, enhancing conceptual retention according to Edgar Dale's Cone of Experience.",
+    "correctAnswer": "d",
+    "explanation": "Interactive 3D simulations engage multiple sensory modalities, enhancing conceptual retention according to Edgar Dale's Cone of Experience."
   },
   {
-    id: "c12-edu-5-mcq-16",
-    question: "Why is a modern computer lab without high-quality instructional software considered pedagogically incomplete?",
-    options: [
-      "A):   Because hardware is the physical carrier, but software is the intellectual instructional content (body without soul)",
+    "id": "c12-edu-5-mcq-16",
+    "question": "Why is a modern computer lab without high-quality instructional software considered pedagogically incomplete?",
+    "options": [
+      "A):   Because students prefer chalkboards over keyboards",
       "B):   Because computers cannot function without air conditioning",
-      "C):   Because students prefer chalkboards over keyboards",
-      "D):   Because hardware operates only in synchronous mode",
+      "C):   Because hardware is the physical carrier, but software is the intellectual instructional content (body without soul)",
+      "D):   Because hardware operates only in synchronous mode"
     ],
-    correctAnswer: "a",
-    explanation: "Hardware (machines) cannot teach by itself; it requires software (curated pedagogic content and learning design) to create educational value.",
+    "correctAnswer": "c",
+    "explanation": "Hardware (machines) cannot teach by itself; it requires software (curated pedagogic content and learning design) to create educational value."
   },
   {
-    id: "c12-edu-5-mcq-17",
-    question: "Which of the following represents a major limitation of 100% purely Online Learning compared to Blended Learning?",
-    options: [
+    "id": "c12-edu-5-mcq-17",
+    "question": "Which of the following represents a major limitation of 100% purely Online Learning compared to Blended Learning?",
+    "options": [
       "A):   Inability to use digital video",
       "B):   Absence of face-to-face social-emotional interaction and peer socialization",
       "C):   Lack of digital textbooks",
-      "D):   Inability to review recorded lessons",
+      "D):   Inability to review recorded lessons"
     ],
-    correctAnswer: "b",
-    explanation: "Pure online learning often deprives students of physical peer camaraderie, face-to-face emotional bonding, and hands-on laboratory experiences.",
+    "correctAnswer": "b",
+    "explanation": "Pure online learning often deprives students of physical peer camaraderie, face-to-face emotional bonding, and hands-on laboratory experiences."
   },
   {
-    id: "c12-edu-5-mcq-18",
-    question: "Under the guidelines of the National Education Policy (NEP 2020), what is the key mandate of the National Educational Technology Forum (NETF)?",
-    options: [
-      "A):   To manufacture computer monitors",
-      "B):   To provide an autonomous platform for the free exchange of ideas on the use of technology to enhance learning and planning",
+    "id": "c12-edu-5-mcq-18",
+    "question": "Under the guidelines of the National Education Policy (NEP 2020), what is the key mandate of the National Educational Technology Forum (NETF)?",
+    "options": [
+      "A):   To provide an autonomous platform for the free exchange of ideas on the use of technology to enhance learning and planning",
+      "B):   To manufacture computer monitors",
       "C):   To enforce pencil-and-paper examinations exclusively",
-      "D):   To ban smartphones across universities",
+      "D):   To ban smartphones across universities"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 establishes the NETF as an autonomous forum to steer educational technology policy, research, and deployment across India.",
+    "correctAnswer": "a",
+    "explanation": "NEP 2020 establishes the NETF as an autonomous forum to steer educational technology policy, research, and deployment across India."
   },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
   {
-    id: "c12-edu-5-mcq-19",
-    question: "A high school adopts the 'Station Rotation' model: for 20 minutes students engage with digital software, then rotate to small-group teacher instruction, then to collaborative peer projects. This is an example of:",
-    options: [
-      "A):   Blended Learning",
+    "id": "c12-edu-5-mcq-19",
+    "question": "A high school adopts the 'Station Rotation' model: for 20 minutes students engage with digital software, then rotate to small-group teacher instruction, then to collaborative peer projects. This is an example of:",
+    "options": [
+      "A):   Authoritarian Pedagogy",
       "B):   Pure Correspondence Course",
       "C):   Hardware-Only Approach",
-      "D):   Authoritarian Pedagogy",
+      "D):   Blended Learning"
     ],
-    correctAnswer: "a",
-    explanation: "The Station Rotation model is one of the classic, highly effective implementations of Blended Learning in modern schools.",
+    "correctAnswer": "d",
+    "explanation": "The Station Rotation model is one of the classic, highly effective implementations of Blended Learning in modern schools."
   },
   {
-    id: "c12-edu-5-mcq-20",
-    question: "During homework, a student often felt helpless and gave up on difficult math problems. After her school flipped the classroom, she solves problems in class where her teacher gives immediate guidance. What pedagogical problem was resolved?",
-    options: [
+    "id": "c12-edu-5-mcq-20",
+    "question": "During homework, a student often felt helpless and gave up on difficult math problems. After her school flipped the classroom, she solves problems in class where her teacher gives immediate guidance. What pedagogical problem was resolved?",
+    "options": [
       "A):   Elimination of physical school buildings",
-      "B):   Providing teacher scaffolding during the high-cognitive-load application stage rather than leaving the student stranded at home",
-      "C):   Complete elimination of all assessments",
-      "D):   Conversion of mathematics into biological science",
+      "B):   Complete elimination of all assessments",
+      "C):   Providing teacher scaffolding during the high-cognitive-load application stage rather than leaving the student stranded at home",
+      "D):   Conversion of mathematics into biological science"
     ],
-    correctAnswer: "b",
-    explanation: "Flipping shifts teacher presence to when students need help most &mdash; during challenging application and problem-solving.",
+    "correctAnswer": "c",
+    "explanation": "Flipping shifts teacher presence to when students need help most &mdash; during challenging application and problem-solving."
   },
   {
-    id: "c12-edu-5-mcq-21",
-    question: "Which of the following best exemplifies the 'Principle of Immediate Reinforcement' in educational technology?",
-    options: [
+    "id": "c12-edu-5-mcq-21",
+    "question": "Which of the following best exemplifies the 'Principle of Immediate Reinforcement' in educational technology?",
+    "options": [
       "A):   Receiving annual exam results four months after testing",
       "B):   An online quiz that provides immediate feedback, explains why an option is wrong, and unlocks the next concept",
       "C):   Listening to a two-hour uninterrupted monologue lecture",
-      "D):   Copying definitions from a blackboard without understanding",
+      "D):   Copying definitions from a blackboard without understanding"
     ],
-    correctAnswer: "b",
-    explanation: "Immediate automated feedback informs the learner of correctness instantaneously, reinforcing learning according to Skinnerian principles.",
+    "correctAnswer": "b",
+    "explanation": "Immediate automated feedback informs the learner of correctness instantaneously, reinforcing learning according to Skinnerian principles."
   },
   {
-    id: "c12-edu-5-mcq-22",
-    question: "A school in a remote district faces a severe shortage of qualified physics teachers. Which ICT initiative under the Government of India provides free digital video lectures and MOOC courses to bridge this gap?",
-    options: [
-      "A):   SWAYAM and PM e-VIDYA",
+    "id": "c12-edu-5-mcq-22",
+    "question": "A school in a remote district faces a severe shortage of qualified physics teachers. Which ICT initiative under the Government of India provides free digital video lectures and MOOC courses to bridge this gap?",
+    "options": [
+      "A):   Private television soap operas",
       "B):   Commercial gaming apps",
       "C):   Social media chatrooms",
-      "D):   Private television soap operas",
+      "D):   SWAYAM and PM e-VIDYA"
     ],
-    correctAnswer: "a",
-    explanation: "SWAYAM and PM e-VIDYA are government initiatives providing high-quality digital educational broadcasting and online courses nationwide.",
+    "correctAnswer": "d",
+    "explanation": "SWAYAM and PM e-VIDYA are government initiatives providing high-quality digital educational broadcasting and online courses nationwide."
   },
   {
-    id: "c12-edu-5-mcq-23",
-    question: "Why does the Flipped Classroom model promote active learning over traditional classroom lecturing?",
-    options: [
-      "A):   Because students sleep during class hours",
-      "B):   Because classroom time is transformed from passive listening into dynamic discussions, peer collaboration, and problem-solving",
+    "id": "c12-edu-5-mcq-23",
+    "question": "Why does the Flipped Classroom model promote active learning over traditional classroom lecturing?",
+    "options": [
+      "A):   Because classroom time is transformed from passive listening into dynamic discussions, peer collaboration, and problem-solving",
+      "B):   Because students sleep during class hours",
       "C):   Because teachers no longer need to prepare lesson plans",
-      "D):   Because examinations are permanently abolished",
+      "D):   Because examinations are permanently abolished"
     ],
-    correctAnswer: "b",
-    explanation: "Flipping liberates class time from monologues, dedicating it to active intellectual engagement, experiments, and collaborative debate.",
+    "correctAnswer": "a",
+    "explanation": "Flipping liberates class time from monologues, dedicating it to active intellectual engagement, experiments, and collaborative debate."
   },
   {
-    id: "c12-edu-5-mcq-24",
-    question: "In an educational technology systems approach, what are the three interdependent operational components?",
-    options: [
+    "id": "c12-edu-5-mcq-24",
+    "question": "In an educational technology systems approach, what are the three interdependent operational components?",
+    "options": [
       "A):   Chalk, Duster, Blackboard",
-      "B):   Input, Process, Output",
-      "C):   Teacher, Desk, Chair",
-      "D):   Electricity, Wire, Plug",
+      "B):   Teacher, Desk, Chair",
+      "C):   Input, Process, Output",
+      "D):   Electricity, Wire, Plug"
     ],
-    correctAnswer: "b",
-    explanation: "The Systems Approach (ET-3) conceptualizes educational institutions through Input (students/resources), Process (instruction), and Output (achieved learning).",
+    "correctAnswer": "c",
+    "explanation": "The Systems Approach (ET-3) conceptualizes educational institutions through Input (students/resources), Process (instruction), and Output (achieved learning)."
   },
   {
-    id: "c12-edu-5-mcq-25",
-    question: "How does the role of the teacher change when modern learning models (Blended, Flipped, Online) are implemented effectively?",
-    options: [
+    "id": "c12-edu-5-mcq-25",
+    "question": "How does the role of the teacher change when modern learning models (Blended, Flipped, Online) are implemented effectively?",
+    "options": [
       "A):   The teacher is completely replaced by artificial intelligence robots",
       "B):   The teacher transitions from a 'Sage on the Stage' (authoritarian lecturer) to a 'Guide on the Side' (facilitator, mentor, and learning architect)",
       "C):   The teacher is restricted to clerical administrative duties only",
-      "D):   The teacher's authority over grades increases drastically",
+      "D):   The teacher's authority over grades increases drastically"
     ],
-    correctAnswer: "b",
-    explanation: "Modern learning models transform the teacher into an empathetic facilitator, coach, and curator of learning experiences.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Modern learning models transform the teacher into an empathetic facilitator, coach, and curator of learning experiences."
+  }
 ];

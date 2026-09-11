@@ -745,8 +745,7 @@ export const c12Edu4HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Exposition of the Principles of Growth and Development and their Vital Implications for Educators.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of the Principles of Growth and Development and their Vital Implications for Educators.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Conceptual Introduction:</b><br />
@@ -767,8 +766,7 @@ export const c12Edu4HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Exhaustive Comparative Analysis of the Stages of Development (Infancy &rarr; Childhood &rarr; Adolescence).
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Exhaustive Comparative Analysis of the Stages of Development (Infancy &rarr; Childhood &rarr; Adolescence).
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Introduction:</b><br />
@@ -786,8 +784,7 @@ export const c12Edu4HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: Critical Examination of Adolescence: Complex Characteristics, Primary Needs, and Prevailing Psychosocial Problems.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Critical Examination of Adolescence: Complex Characteristics, Primary Needs, and Prevailing Psychosocial Problems.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Nature of Adolescence:</b><br />
@@ -807,8 +804,7 @@ export const c12Edu4HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: The Strategic and Collaborative Role of Parents and Teachers in Resolving the Crises of Adolescence.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: The Strategic and Collaborative Role of Parents and Teachers in Resolving the Crises of Adolescence.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Collaborative Adolescent Ecosystem:</b><br />
@@ -830,8 +826,7 @@ export const c12Edu4HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Real-World Adolescent Case Study: Diagnostic Evaluation and Comprehensive Remediation Blueprint.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Real-World Adolescent Case Study: Diagnostic Evaluation and Comprehensive Remediation Blueprint.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">Case Profile:</b><br />
@@ -858,309 +853,304 @@ export const c12Edu4HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu4Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-4-mcq-1",
-    question: "Who famously characterized adolescence as a period of 'Storm and Stress' (Sturm und Drang) in 1904?",
-    options: [
+    "id": "c12-edu-4-mcq-1",
+    "question": "Who famously characterized adolescence as a period of 'Storm and Stress' (Sturm und Drang) in 1904?",
+    "options": [
       "A):   Jean Piaget",
       "B):   G. Stanley Hall",
       "C):   Erik Erikson",
-      "D):   John B. Watson",
+      "D):   John B. Watson"
     ],
-    correctAnswer: "b",
-    explanation: "G. Stanley Hall published his pioneering two-volume treatise in 1904, defining adolescence as a period of intense storm and stress.",
+    "correctAnswer": "b",
+    "explanation": "G. Stanley Hall published his pioneering two-volume treatise in 1904, defining adolescence as a period of intense storm and stress."
   },
   {
-    id: "c12-edu-4-mcq-2",
-    question: "The principle of development stating that growth proceeds vertically from head to toe is known as:",
-    options: [
+    "id": "c12-edu-4-mcq-2",
+    "question": "The principle of development stating that growth proceeds vertically from head to toe is known as:",
+    "options": [
       "A):   Cephalocaudal Principle",
       "B):   Proximodistal Principle",
       "C):   Principle of Uniformity",
-      "D):   Principle of Regression",
+      "D):   Principle of Regression"
     ],
-    correctAnswer: "a",
-    explanation: "The Cephalocaudal trend dictates that developmental motor control progresses from head to tail (head before legs).",
+    "correctAnswer": "a",
+    "explanation": "The Cephalocaudal trend dictates that developmental motor control progresses from head to tail (head before legs)."
   },
   {
-    id: "c12-edu-4-mcq-3",
-    question: "The principle of development stating that motor control radiates from the central bodily axis outward to the extremities is known as:",
-    options: [
+    "id": "c12-edu-4-mcq-3",
+    "question": "The principle of development stating that motor control radiates from the central bodily axis outward to the extremities is known as:",
+    "options": [
       "A):   Cephalocaudal Trend",
-      "B):   Proximodistal Trend",
-      "C):   Principle of Continuity",
-      "D):   Principle of Stagnation",
+      "B):   Principle of Continuity",
+      "C):   Proximodistal Trend",
+      "D):   Principle of Stagnation"
     ],
-    correctAnswer: "b",
-    explanation: "The Proximodistal sequence dictates outward progression from the central spinal cord to peripheral extremities like fingers.",
+    "correctAnswer": "c",
+    "explanation": "The Proximodistal sequence dictates outward progression from the central spinal cord to peripheral extremities like fingers."
   },
   {
-    id: "c12-edu-4-mcq-4",
-    question: "Which stage of human development is commonly referred to by psychologists as the 'Toy Age' and 'Questioning Age'?",
-    options: [
+    "id": "c12-edu-4-mcq-4",
+    "question": "Which stage of human development is commonly referred to by psychologists as the 'Toy Age' and 'Questioning Age'?",
+    "options": [
       "A):   Infancy",
       "B):   Later Childhood",
-      "C):   Early Childhood",
-      "D):   Adolescence",
+      "C):   Adolescence",
+      "D):   Early Childhood"
     ],
-    correctAnswer: "c",
-    explanation: "Early Childhood (3 to 6 years) is designated the Toy Age due to self-centered play and the Questioning Age due to insatiable curiosity.",
+    "correctAnswer": "d",
+    "explanation": "Early Childhood (3 to 6 years) is designated the Toy Age due to self-centered play and the Questioning Age due to insatiable curiosity."
   },
   {
-    id: "c12-edu-4-mcq-5",
-    question: "Later Childhood (6 to 12 years) is known in educational psychology as the:",
-    options: [
-      "A):   Gang Age",
-      "B):   Toy Age",
+    "id": "c12-edu-4-mcq-5",
+    "question": "Later Childhood (6 to 12 years) is known in educational psychology as the:",
+    "options": [
+      "A):   Toy Age",
+      "B):   Gang Age",
       "C):   Age of Storm and Stress",
-      "D):   Sensorimotor Stage",
+      "D):   Sensorimotor Stage"
     ],
-    correctAnswer: "a",
-    explanation: "Later Childhood is called the Gang Age because children form tightly-knit same-sex peer groups and exhibit deep peer loyalty.",
+    "correctAnswer": "b",
+    "explanation": "Later Childhood is called the Gang Age because children form tightly-knit same-sex peer groups and exhibit deep peer loyalty."
   },
   {
-    id: "c12-edu-4-mcq-6",
-    question: "Which of the following describes the fundamental nature of Growth?",
-    options: [
-      "A):   Lifelong qualitative transformation",
-      "B):   Purely quantitative physical and structural bodily enlargement",
+    "id": "c12-edu-4-mcq-6",
+    "question": "Which of the following describes the fundamental nature of Growth?",
+    "options": [
+      "A):   Purely quantitative physical and structural bodily enlargement",
+      "B):   Lifelong qualitative transformation",
       "C):   Emotional self-regulation",
-      "D):   Continuous from womb to tomb",
+      "D):   Continuous from womb to tomb"
     ],
-    correctAnswer: "b",
-    explanation: "Growth refers specifically to quantitative structural increases in height, weight, and cellular dimensions ending at physical maturity.",
+    "correctAnswer": "a",
+    "explanation": "Growth refers specifically to quantitative structural increases in height, weight, and cellular dimensions ending at physical maturity."
   },
   {
-    id: "c12-edu-4-mcq-7",
-    question: "According to Erik Erikson, the central psychosocial crisis of adolescence is:",
-    options: [
+    "id": "c12-edu-4-mcq-7",
+    "question": "According to Erik Erikson, the central psychosocial crisis of adolescence is:",
+    "options": [
       "A):   Trust vs. Mistrust",
       "B):   Autonomy vs. Shame",
       "C):   Industry vs. Inferiority",
-      "D):   Identity vs. Role Confusion",
+      "D):   Identity vs. Role Confusion"
     ],
-    correctAnswer: "d",
-    explanation: "Erikson identified Identity vs. Role Confusion as the defining psychosocial developmental crisis of adolescence.",
+    "correctAnswer": "d",
+    "explanation": "Erikson identified Identity vs. Role Confusion as the defining psychosocial developmental crisis of adolescence."
   },
   {
-    id: "c12-edu-4-mcq-8",
-    question: "The Latin root word 'adolescere' from which the term 'Adolescence' is derived means:",
-    options: [
+    "id": "c12-edu-4-mcq-8",
+    "question": "The Latin root word 'adolescere' from which the term 'Adolescence' is derived means:",
+    "options": [
       "A):   To remain a child",
-      "B):   To grow into maturity",
-      "C):   To obey authority",
-      "D):   To escape from stress",
+      "B):   To obey authority",
+      "C):   To grow into maturity",
+      "D):   To escape from stress"
     ],
-    correctAnswer: "b",
-    explanation: "Adolescence comes from the Latin verb 'adolescere', which means 'to grow up' or 'to advance into maturity'.",
+    "correctAnswer": "c",
+    "explanation": "Adolescence comes from the Latin verb 'adolescere', which means 'to grow up' or 'to advance into maturity'."
   },
   {
-    id: "c12-edu-4-mcq-9",
-    question: "The relationship between Heredity (H) and Environment (E) in shaping Development (D) is mathematically expressed by Woodworth as:",
-    options: [
+    "id": "c12-edu-4-mcq-9",
+    "question": "The relationship between Heredity (H) and Environment (E) in shaping Development (D) is mathematically expressed by Woodworth as:",
+    "options": [
       "A):   D = H + E",
       "B):   D = H &times; E",
       "C):   D = H / E",
-      "D):   D = H - E",
+      "D):   D = H - E"
     ],
-    correctAnswer: "b",
-    explanation: "Robert S. Woodworth formulated that development is the multiplicative interaction of heredity and environment: D = H &times; E.",
+    "correctAnswer": "b",
+    "explanation": "Robert S. Woodworth formulated that development is the multiplicative interaction of heredity and environment: D = H &times; E."
   },
   {
-    id: "c12-edu-4-mcq-10",
-    question: "At which stage does a human being experience the primary psychosocial crisis of 'Trust vs. Mistrust'?",
-    options: [
+    "id": "c12-edu-4-mcq-10",
+    "question": "At which stage does a human being experience the primary psychosocial crisis of 'Trust vs. Mistrust'?",
+    "options": [
       "A):   Infancy",
       "B):   Early Childhood",
       "C):   Later Childhood",
-      "D):   Adolescence",
+      "D):   Adolescence"
     ],
-    correctAnswer: "a",
-    explanation: "Infancy is the stage where the baby develops foundational trust or mistrust toward the world depending on parental responsiveness.",
+    "correctAnswer": "a",
+    "explanation": "Infancy is the stage where the baby develops foundational trust or mistrust toward the world depending on parental responsiveness."
   },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
   {
-    id: "c12-edu-4-mcq-11",
-    question: "An infant first thrashes its whole body and limbs while crying, and only later learns to express distress through localized facial tears. This demonstrates the:",
-    options: [
+    "id": "c12-edu-4-mcq-11",
+    "question": "An infant first thrashes its whole body and limbs while crying, and only later learns to express distress through localized facial tears. This demonstrates the:",
+    "options": [
       "A):   Principle of Cephalocaudal Development",
-      "B):   Principle of General to Specific Responses",
-      "C):   Principle of Individual Differences",
-      "D):   Principle of Hereditary Stagnation",
+      "B):   Principle of Individual Differences",
+      "C):   Principle of General to Specific Responses",
+      "D):   Principle of Hereditary Stagnation"
     ],
-    correctAnswer: "b",
-    explanation: "The Principle of General to Specific Responses dictates that mass, undifferentiated bodily reactions precede refined, specific actions.",
+    "correctAnswer": "c",
+    "explanation": "The Principle of General to Specific Responses dictates that mass, undifferentiated bodily reactions precede refined, specific actions."
   },
   {
-    id: "c12-edu-4-mcq-12",
-    question: "A child learning to hold a heavy ball with both arms before learning to grip a slender fountain pen with its fingers is an example of:",
-    options: [
-      "A):   Proximodistal development",
+    "id": "c12-edu-4-mcq-12",
+    "question": "A child learning to hold a heavy ball with both arms before learning to grip a slender fountain pen with its fingers is an example of:",
+    "options": [
+      "A):   Egocentrism",
       "B):   Cephalocaudal development",
       "C):   Sublimation",
-      "D):   Egocentrism",
+      "D):   Proximodistal development"
     ],
-    correctAnswer: "a",
-    explanation: "Developing control over large central arm muscles before mastering fine finger dexterity demonstrates the Proximodistal principle.",
+    "correctAnswer": "d",
+    "explanation": "Developing control over large central arm muscles before mastering fine finger dexterity demonstrates the Proximodistal principle."
   },
   {
-    id: "c12-edu-4-mcq-13",
-    question: "Which parenting style is proven by developmental psychologists to produce the most confident, emotionally stable, and resilient adolescents?",
-    options: [
-      "A):   Authoritarian (dictatorial and punitive)",
+    "id": "c12-edu-4-mcq-13",
+    "question": "Which parenting style is proven by developmental psychologists to produce the most confident, emotionally stable, and resilient adolescents?",
+    "options": [
+      "A):   Authoritative (high warmth, open dialogue, and democratic boundaries)",
       "B):   Permissive (indulgent with zero guidelines)",
-      "C):   Authoritative (high warmth, open dialogue, and democratic boundaries)",
-      "D):   Neglecting (indifferent and emotionally absent)",
+      "C):   Authoritarian (dictatorial and punitive)",
+      "D):   Neglecting (indifferent and emotionally absent)"
     ],
-    correctAnswer: "c",
-    explanation: "Authoritative parenting balances warmth, empathy, and active listening with clear democratic rules, fostering optimal adolescent adjustment.",
+    "correctAnswer": "a",
+    "explanation": "Authoritative parenting balances warmth, empathy, and active listening with clear democratic rules, fostering optimal adolescent adjustment."
   },
   {
-    id: "c12-edu-4-mcq-14",
-    question: "Adolescents passionately idolizing cricket icons, movie stars, or historical revolutionaries and copying their hairstyles and mannerisms is known as:",
-    options: [
+    "id": "c12-edu-4-mcq-14",
+    "question": "Adolescents passionately idolizing cricket icons, movie stars, or historical revolutionaries and copying their hairstyles and mannerisms is known as:",
+    "options": [
       "A):   Rationalization",
       "B):   Hero-Worship",
       "C):   Proximodistal fixation",
-      "D):   Sensorimotor assimilation",
+      "D):   Sensorimotor assimilation"
     ],
-    correctAnswer: "b",
-    explanation: "Hero-worship is a prominent psychological characteristic of adolescence, where youth seek ideals to emulate during identity formation.",
+    "correctAnswer": "b",
+    "explanation": "Hero-worship is a prominent psychological characteristic of adolescence, where youth seek ideals to emulate during identity formation."
   },
   {
-    id: "c12-edu-4-mcq-15",
-    question: "Why does physical growth in later childhood differ markedly from infancy and adolescence?",
-    options: [
+    "id": "c12-edu-4-mcq-15",
+    "question": "Why does physical growth in later childhood differ markedly from infancy and adolescence?",
+    "options": [
       "A):   Because it stops completely",
-      "B):   Because it is slow, steady, and uniform compared to the rapid spurts of infancy and puberty",
+      "B):   Because it follows a reverse cephalocaudal pattern",
       "C):   Because it is purely qualitative",
-      "D):   Because it follows a reverse cephalocaudal pattern",
+      "D):   Because it is slow, steady, and uniform compared to the rapid spurts of infancy and puberty"
     ],
-    correctAnswer: "b",
-    explanation: "Later childhood is a period of physical consolidation characterized by slow, steady, and uniform growth between the spurts of infancy and puberty.",
+    "correctAnswer": "d",
+    "explanation": "Later childhood is a period of physical consolidation characterized by slow, steady, and uniform growth between the spurts of infancy and puberty."
   },
   {
-    id: "c12-edu-4-mcq-16",
-    question: "The ideological, psychological, and cultural divide between conservative parents and modern youth over lifestyle and values is termed:",
-    options: [
+    "id": "c12-edu-4-mcq-16",
+    "question": "The ideological, psychological, and cultural divide between conservative parents and modern youth over lifestyle and values is termed:",
+    "options": [
       "A):   Cognitive dissonance",
-      "B):   The Generation Gap",
-      "C):   The Gang Age",
-      "D):   Cephalocaudal crisis",
+      "B):   The Gang Age",
+      "C):   The Generation Gap",
+      "D):   Cephalocaudal crisis"
     ],
-    correctAnswer: "b",
-    explanation: "The Generation Gap describes the communication and value gulf separating older parents from modern adolescents.",
+    "correctAnswer": "c",
+    "explanation": "The Generation Gap describes the communication and value gulf separating older parents from modern adolescents."
   },
   {
-    id: "c12-edu-4-mcq-17",
-    question: "Which of the following is an example of channeling adolescent aggressive energy through Sublimation in schools?",
-    options: [
-      "A):   Enrolling aggressive students into competitive boxing, athletic teams, and martial arts",
-      "B):   Giving harsh corporal punishment in morning assembly",
+    "id": "c12-edu-4-mcq-17",
+    "question": "Which of the following is an example of channeling adolescent aggressive energy through Sublimation in schools?",
+    "options": [
+      "A):   Giving harsh corporal punishment in morning assembly",
+      "B):   Enrolling aggressive students into competitive boxing, athletic teams, and martial arts",
       "C):   Locking students in isolated detention rooms",
-      "D):   Forbidding all physical activity to enforce book study",
+      "D):   Forbidding all physical activity to enforce book study"
     ],
-    correctAnswer: "a",
-    explanation: "Sublimation redirects raw physical and aggressive drives into socially valued avenues like martial arts, athletics, and sports.",
+    "correctAnswer": "b",
+    "explanation": "Sublimation redirects raw physical and aggressive drives into socially valued avenues like martial arts, athletics, and sports."
   },
   {
-    id: "c12-edu-4-mcq-18",
-    question: "At which stage of development does abstract hypothetical deductive reasoning emerge according to Jean Piaget?",
-    options: [
-      "A):   Sensorimotor (Infancy)",
+    "id": "c12-edu-4-mcq-18",
+    "question": "At which stage of development does abstract hypothetical deductive reasoning emerge according to Jean Piaget?",
+    "options": [
+      "A):   Formal operational (Adolescence)",
       "B):   Pre-operational (Early Childhood)",
       "C):   Concrete operational (Later Childhood)",
-      "D):   Formal operational (Adolescence)",
+      "D):   Sensorimotor (Infancy)"
     ],
-    correctAnswer: "d",
-    explanation: "Piaget's Formal Operational stage begins in adolescence (around 11–15 years), enabling abstract, hypothetical, and philosophical thinking.",
+    "correctAnswer": "a",
+    "explanation": "Piaget's Formal Operational stage begins in adolescence (around 11–15 years), enabling abstract, hypothetical, and philosophical thinking."
   },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
   {
-    id: "c12-edu-4-mcq-19",
-    question: "A high school teacher notices that a 16-year-old boy has become intensely rebellious, skips school, and fights frequently after his father strictly banned him from choosing an arts career. What is the root cause of this rebellion?",
-    options: [
+    "id": "c12-edu-4-mcq-19",
+    "question": "A high school teacher notices that a 16-year-old boy has become intensely rebellious, skips school, and fights frequently after his father strictly banned him from choosing an arts career. What is the root cause of this rebellion?",
+    "options": [
       "A):   Lack of sensory motor coordination",
-      "B):   Suppression of the adolescent's need for autonomy and vocational self-expression by authoritarian parenting",
+      "B):   Fixation in the toy age",
       "C):   Cephalocaudal developmental delay",
-      "D):   Fixation in the toy age",
+      "D):   Suppression of the adolescent's need for autonomy and vocational self-expression by authoritarian parenting"
     ],
-    correctAnswer: "b",
-    explanation: "Authoritarian denial of legitimate adolescent autonomy and vocational aspirations inevitably provokes severe defiance and behavioral rebellion.",
+    "correctAnswer": "d",
+    "explanation": "Authoritarian denial of legitimate adolescent autonomy and vocational aspirations inevitably provokes severe defiance and behavioral rebellion."
   },
   {
-    id: "c12-edu-4-mcq-20",
-    question: "Two healthy children in the same Grade 1 class show marked differences: one reads fluently while the other struggles with basic alphabets. Which developmental principle explains this?",
-    options: [
-      "A):   Principle of Individual Differences",
+    "id": "c12-edu-4-mcq-20",
+    "question": "Two healthy children in the same Grade 1 class show marked differences: one reads fluently while the other struggles with basic alphabets. Which developmental principle explains this?",
+    "options": [
+      "A):   Principle of Non-Continuity",
       "B):   Principle of Stagnant Growth",
-      "C):   Principle of Non-Continuity",
-      "D):   Principle of Negative Reinforcement",
+      "C):   Principle of Individual Differences",
+      "D):   Principle of Negative Reinforcement"
     ],
-    correctAnswer: "a",
-    explanation: "The Principle of Individual Differences establishes that children mature at unique internal rates despite following the same sequence.",
+    "correctAnswer": "c",
+    "explanation": "The Principle of Individual Differences establishes that children mature at unique internal rates despite following the same sequence."
   },
   {
-    id: "c12-edu-4-mcq-21",
-    question: "Under the National Education Policy (NEP 2020), what role does the Adolescent Education Program (AEP) play in secondary schools?",
-    options: [
+    "id": "c12-edu-4-mcq-21",
+    "question": "Under the National Education Policy (NEP 2020), what role does the Adolescent Education Program (AEP) play in secondary schools?",
+    "options": [
       "A):   Conducting military drills exclusively",
       "B):   Providing life skills, scientific sex education, stress management, and substance abuse awareness",
       "C):   Enforcing rote memorization of textbooks",
-      "D):   Abolishing all extracurricular activities",
+      "D):   Abolishing all extracurricular activities"
     ],
-    correctAnswer: "b",
-    explanation: "The Adolescent Education Program (AEP) under NEP 2020 imparts crucial life skills, health education, and substance abuse awareness.",
+    "correctAnswer": "b",
+    "explanation": "The Adolescent Education Program (AEP) under NEP 2020 imparts crucial life skills, health education, and substance abuse awareness."
   },
   {
-    id: "c12-edu-4-mcq-22",
-    question: "A 15-year-old girl starves herself and engages in obsessive mirror-checking due to a distorted belief that her facial shape is ugly, despite normal appearance. This condition is diagnosed as:",
-    options: [
-      "A):   Body Dysmorphic Disorder exacerbated by digital social media comparison",
+    "id": "c12-edu-4-mcq-22",
+    "question": "A 15-year-old girl starves herself and engages in obsessive mirror-checking due to a distorted belief that her facial shape is ugly, despite normal appearance. This condition is diagnosed as:",
+    "options": [
+      "A):   Sensorimotor assimilation",
       "B):   Normal concrete operational logic",
       "C):   Healthy sublimation",
-      "D):   Sensorimotor assimilation",
+      "D):   Body Dysmorphic Disorder exacerbated by digital social media comparison"
     ],
-    correctAnswer: "a",
-    explanation: "Body Dysmorphic Disorder (BDD) involves obsessive preoccupation with perceived bodily defects, heavily amplified during adolescence.",
+    "correctAnswer": "d",
+    "explanation": "Body Dysmorphic Disorder (BDD) involves obsessive preoccupation with perceived bodily defects, heavily amplified during adolescence."
   },
   {
-    id: "c12-edu-4-mcq-23",
-    question: "Why is publicly ridiculing or sarcastically shaming an adolescent student in the classroom considered destructive by educational psychologists?",
-    options: [
-      "A):   Because it increases their test scores",
-      "B):   Because adolescents have hyper-sensitive egos, and public humiliation shatters self-worth, triggering rebellion or mutism",
+    "id": "c12-edu-4-mcq-23",
+    "question": "Why is publicly ridiculing or sarcastically shaming an adolescent student in the classroom considered destructive by educational psychologists?",
+    "options": [
+      "A):   Because adolescents have hyper-sensitive egos, and public humiliation shatters self-worth, triggering rebellion or mutism",
+      "B):   Because it increases their test scores",
       "C):   Because it accelerates the cephalocaudal sequence",
-      "D):   Because it converts development into growth",
+      "D):   Because it converts development into growth"
     ],
-    correctAnswer: "b",
-    explanation: "Adolescents have fragile, emerging self-concepts; public humiliation causes deep narcissistic trauma, driving them into truancy or hostility.",
+    "correctAnswer": "a",
+    "explanation": "Adolescents have fragile, emerging self-concepts; public humiliation causes deep narcissistic trauma, driving them into truancy or hostility."
   },
   {
-    id: "c12-edu-4-mcq-24",
-    question: "Which of the following correctly pairs the developmental stage with its primary psychosocial crisis formulated by Erik Erikson?",
-    options: [
+    "id": "c12-edu-4-mcq-24",
+    "question": "Which of the following correctly pairs the developmental stage with its primary psychosocial crisis formulated by Erik Erikson?",
+    "options": [
       "A):   Infancy &mdash; Industry vs. Inferiority",
       "B):   Early Childhood &mdash; Identity vs. Role Confusion",
       "C):   Later Childhood &mdash; Industry vs. Inferiority",
-      "D):   Adolescence &mdash; Trust vs. Mistrust",
+      "D):   Adolescence &mdash; Trust vs. Mistrust"
     ],
-    correctAnswer: "c",
-    explanation: "Later Childhood (school age) corresponds to Erikson's crisis of Industry vs. Inferiority, where children master formal skills and social teamwork.",
+    "correctAnswer": "c",
+    "explanation": "Later Childhood (school age) corresponds to Erikson's crisis of Industry vs. Inferiority, where children master formal skills and social teamwork."
   },
   {
-    id: "c12-edu-4-mcq-25",
-    question: "Developmental psychologists argue that development is 'an integrated whole'. What does this imply for school curriculum planning?",
-    options: [
+    "id": "c12-edu-4-mcq-25",
+    "question": "Developmental psychologists argue that development is 'an integrated whole'. What does this imply for school curriculum planning?",
+    "options": [
       "A):   Curriculum must focus exclusively on intellectual IQ tests",
       "B):   Schools must cater simultaneously to physical, intellectual, emotional, and social development of students",
       "C):   All students must be awarded identical marks",
-      "D):   Physical sports should be removed to maximize study time",
+      "D):   Physical sports should be removed to maximize study time"
     ],
-    correctAnswer: "b",
-    explanation: "Because development is integrated, a balanced curriculum must nurture physical health, cognitive intellect, emotional resilience, and social skills together.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Because development is integrated, a balanced curriculum must nurture physical health, cognitive intellect, emotional resilience, and social skills together."
+  }
 ];

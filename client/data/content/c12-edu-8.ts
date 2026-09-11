@@ -574,8 +574,7 @@ export const c12Edu8HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q21: Comprehensive Exposition of the UNESCO Four Pillars of Education (Jacques Delors Report) and their Relevance to Contemporary Reform.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of the UNESCO Four Pillars of Education (Jacques Delors Report) and their Relevance to Contemporary Reform.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The Historic Delors Report (1996):</b><br />
@@ -594,8 +593,7 @@ export const c12Edu8HtmlSolutions = `
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q22: Critical Analysis of 21st Century Skills: Pedagogical Strategies for Cultivating Learning, Literacy, and Life Skills under NEP 2020.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Critical Analysis of 21st Century Skills: Pedagogical Strategies for Cultivating Learning, Literacy, and Life Skills under NEP 2020.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The 21st Century Imperative:</b><br />
@@ -613,8 +611,7 @@ export const c12Edu8HtmlSolutions = `
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q23: Exhaustive Analysis of Vocational Education under NEP 2020: Integration, Lokvidya, and National Economic Transformation.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Exhaustive Analysis of Vocational Education under NEP 2020: Integration, Lokvidya, and National Economic Transformation.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. Re-Imagining Vocational Education:</b><br />
@@ -633,8 +630,7 @@ export const c12Edu8HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q24: Sustainable Development Goals (SDGs) and Education: The Pivotal Role of SDG 4 in Achieving the 2030 Global Agenda.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: Sustainable Development Goals (SDGs) and Education: The Pivotal Role of SDG 4 in Achieving the 2030 Global Agenda.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <p><b style="color: \${themeColor};">I. The 2030 Agenda for Sustainable Development:</b><br />
@@ -653,8 +649,7 @@ export const c12Edu8HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">
-      Q25: Board Examination Passage-Based Master Case Study: Integrating 21st-Century Competencies and Sustainable Development under NEP 2020.
+    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Board Examination Passage-Based Master Case Study: Integrating 21st-Century Competencies and Sustainable Development under NEP 2020.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
       <div style="background: rgba(0,0,0,0.3); border-left: 4px solid \${themeColor}; padding: 12px 16px; border-radius: 6px; margin-bottom: 12px;">
@@ -687,309 +682,304 @@ export const c12Edu8HtmlSolutions = `
 /* -------------------------------------------------------------------------- */
 
 export const c12Edu8Mcqs = [
-  // TIER 1: EASY RECALL & DEFINITIONS (Q1 to Q10)
   {
-    id: "c12-edu-8-mcq-1",
-    question: "What was the title of the historic 1996 UNESCO report on the Four Pillars of Education chaired by Jacques Delors?",
-    options: [
+    "id": "c12-edu-8-mcq-1",
+    "question": "What was the title of the historic 1996 UNESCO report on the Four Pillars of Education chaired by Jacques Delors?",
+    "options": [
       "A):   Learning to Be",
       "B):   Learning: The Treasure Within",
       "C):   Education for All",
-      "D):   The Global Classroom",
+      "D):   The Global Classroom"
     ],
-    correctAnswer: "b",
-    explanation: "The Delors Commission UNESCO report was titled 'Learning: The Treasure Within' (1996).",
+    "correctAnswer": "b",
+    "explanation": "The Delors Commission UNESCO report was titled 'Learning: The Treasure Within' (1996)."
   },
   {
-    id: "c12-edu-8-mcq-2",
-    question: "Which UNESCO pillar of education emphasizes learning how to learn, concentration, and critical intellectual inquiry?",
-    options: [
-      "A):   Learning to Do",
-      "B):   Learning to Know",
-      "C):   Learning to Live Together",
-      "D):   Learning to Be",
-    ],
-    correctAnswer: "b",
-    explanation: "Learning to Know involves mastering the instruments of knowledge, developing concentration, and learning how to learn throughout life.",
-  },
-  {
-    id: "c12-edu-8-mcq-3",
-    question: "Which UNESCO pillar of education focuses on cultivating empathy, eliminating prejudice, and peaceful conflict resolution?",
-    options: [
+    "id": "c12-edu-8-mcq-2",
+    "question": "Which UNESCO pillar of education emphasizes learning how to learn, concentration, and critical intellectual inquiry?",
+    "options": [
       "A):   Learning to Know",
       "B):   Learning to Do",
       "C):   Learning to Live Together",
-      "D):   Learning to Be",
+      "D):   Learning to Be"
     ],
-    correctAnswer: "c",
-    explanation: "Learning to Live Together is designed to foster social solidarity, mutual understanding, and global peace.",
+    "correctAnswer": "a",
+    "explanation": "Learning to Know involves mastering the instruments of knowledge, developing concentration, and learning how to learn throughout life."
   },
   {
-    id: "c12-edu-8-mcq-4",
-    question: "Which of the following represents the '4 Cs' of 21st-century learning skills under NEP 2020?",
-    options: [
+    "id": "c12-edu-8-mcq-3",
+    "question": "Which UNESCO pillar of education focuses on cultivating empathy, eliminating prejudice, and peaceful conflict resolution?",
+    "options": [
+      "A):   Learning to Know",
+      "B):   Learning to Do",
+      "C):   Learning to Live Together",
+      "D):   Learning to Be"
+    ],
+    "correctAnswer": "c",
+    "explanation": "Learning to Live Together is designed to foster social solidarity, mutual understanding, and global peace."
+  },
+  {
+    "id": "c12-edu-8-mcq-4",
+    "question": "Which of the following represents the '4 Cs' of 21st-century learning skills under NEP 2020?",
+    "options": [
       "A):   Chalk, Chart, Computer, Calculator",
-      "B):   Critical Thinking, Creativity, Collaboration, Communication",
+      "B):   Caste, Culture, Community, Class",
       "C):   Control, Command, Calculation, Correction",
-      "D):   Caste, Culture, Community, Class",
+      "D):   Critical Thinking, Creativity, Collaboration, Communication"
     ],
-    correctAnswer: "b",
-    explanation: "The 4 Cs are Critical Thinking, Creativity, Collaboration, and Communication.",
+    "correctAnswer": "d",
+    "explanation": "The 4 Cs are Critical Thinking, Creativity, Collaboration, and Communication."
   },
   {
-    id: "c12-edu-8-mcq-5",
-    question: "By which year does NEP 2020 aim for at least 50% of learners to have exposure to vocational education?",
-    options: [
+    "id": "c12-edu-8-mcq-5",
+    "question": "By which year does NEP 2020 aim for at least 50% of learners to have exposure to vocational education?",
+    "options": [
       "A):   2022",
       "B):   2025",
       "C):   2030",
-      "D):   2035",
+      "D):   2035"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 specifically targets that at least 50% of learners shall receive vocational exposure by 2025.",
+    "correctAnswer": "b",
+    "explanation": "NEP 2020 specifically targets that at least 50% of learners shall receive vocational exposure by 2025."
   },
   {
-    id: "c12-edu-8-mcq-6",
-    question: "The '10-day bagless period' introduced in NEP 2020 for middle school students (Grades 6–8) is aimed at:",
-    options: [
-      "A):   Playing commercial video games",
-      "B):   Vocational sampling and interning with local craftspersons to appreciate the Dignity of Labor (Lokvidya)",
+    "id": "c12-edu-8-mcq-6",
+    "question": "The '10-day bagless period' introduced in NEP 2020 for middle school students (Grades 6–8) is aimed at:",
+    "options": [
+      "A):   Vocational sampling and interning with local craftspersons to appreciate the Dignity of Labor (Lokvidya)",
+      "B):   Playing commercial video games",
       "C):   Extending summer holidays",
-      "D):   Complete cancellation of all studies",
+      "D):   Complete cancellation of all studies"
     ],
-    correctAnswer: "b",
-    explanation: "The 10-day bagless period provides hands-on vocational exposure to local artisans (pottery, carpentry, gardening), fostering respect for manual work.",
+    "correctAnswer": "a",
+    "explanation": "The 10-day bagless period provides hands-on vocational exposure to local artisans (pottery, carpentry, gardening), fostering respect for manual work."
   },
   {
-    id: "c12-edu-8-mcq-7",
-    question: "The definition of Sustainable Development was first officially formulated in 1987 in which landmark report?",
-    options: [
+    "id": "c12-edu-8-mcq-7",
+    "question": "The definition of Sustainable Development was first officially formulated in 1987 in which landmark report?",
+    "options": [
       "A):   The Delors Report",
-      "B):   The Brundtland Commission Report ('Our Common Future')",
+      "B):   The Hunter Commission Report",
       "C):   The Kothari Commission Report",
-      "D):   The Hunter Commission Report",
+      "D):   The Brundtland Commission Report ('Our Common Future')"
     ],
-    correctAnswer: "b",
-    explanation: "The Brundtland Commission report 'Our Common Future' (1987) gave the classic definition of sustainable development.",
+    "correctAnswer": "d",
+    "explanation": "The Brundtland Commission report 'Our Common Future' (1987) gave the classic definition of sustainable development."
   },
   {
-    id: "c12-edu-8-mcq-8",
-    question: "How many Sustainable Development Goals (SDGs) are formulated in the United Nations 2030 Agenda?",
-    options: [
+    "id": "c12-edu-8-mcq-8",
+    "question": "How many Sustainable Development Goals (SDGs) are formulated in the United Nations 2030 Agenda?",
+    "options": [
       "A):   10 Goals",
       "B):   15 Goals",
       "C):   17 Goals",
-      "D):   21 Goals",
+      "D):   21 Goals"
     ],
-    correctAnswer: "c",
-    explanation: "The UN 2030 Agenda features exactly 17 Sustainable Development Goals with 169 targets.",
+    "correctAnswer": "c",
+    "explanation": "The UN 2030 Agenda features exactly 17 Sustainable Development Goals with 169 targets."
   },
   {
-    id: "c12-edu-8-mcq-9",
-    question: "Which specific Sustainable Development Goal is exclusively dedicated to 'Quality Education'?",
-    options: [
+    "id": "c12-edu-8-mcq-9",
+    "question": "Which specific Sustainable Development Goal is exclusively dedicated to 'Quality Education'?",
+    "options": [
       "A):   SDG 1",
-      "B):   SDG 3",
-      "C):   SDG 4",
-      "D):   SDG 13",
+      "B):   SDG 4",
+      "C):   SDG 3",
+      "D):   SDG 13"
     ],
-    correctAnswer: "c",
-    explanation: "SDG 4 is dedicated to ensuring inclusive and equitable quality education and promoting lifelong learning opportunities for all.",
+    "correctAnswer": "b",
+    "explanation": "SDG 4 is dedicated to ensuring inclusive and equitable quality education and promoting lifelong learning opportunities for all."
   },
   {
-    id: "c12-edu-8-mcq-10",
-    question: "What is the primary function of the Academic Bank of Credits (ABC) established under NEP 2020?",
-    options: [
-      "A):   To lend cash money to students",
-      "B):   To digitally store academic and vocational credits earned by students, facilitating flexible multi-entry and multi-exit pathways",
+    "id": "c12-edu-8-mcq-10",
+    "question": "What is the primary function of the Academic Bank of Credits (ABC) established under NEP 2020?",
+    "options": [
+      "A):   To digitally store academic and vocational credits earned by students, facilitating flexible multi-entry and multi-exit pathways",
+      "B):   To lend cash money to students",
       "C):   To collect school tuition fees online",
-      "D):   To issue government passports",
+      "D):   To issue government passports"
     ],
-    correctAnswer: "b",
-    explanation: "The ABC is a digital credit repository allowing students to accumulate, transfer, and redeem credits between academic and vocational streams.",
+    "correctAnswer": "a",
+    "explanation": "The ABC is a digital credit repository allowing students to accumulate, transfer, and redeem credits between academic and vocational streams."
   },
-
-  // TIER 2: MODERATE CONCEPT APPLICATIONS (Q11 to Q18)
   {
-    id: "c12-edu-8-mcq-11",
-    question: "A high school student uses critical thinking to evaluate whether an internet news story about climate change is authentic or a fabricated deepfake. Which literacy skill is demonstrated?",
-    options: [
+    "id": "c12-edu-8-mcq-11",
+    "question": "A high school student uses critical thinking to evaluate whether an internet news story about climate change is authentic or a fabricated deepfake. Which literacy skill is demonstrated?",
+    "options": [
       "A):   Physical motor dexterity",
-      "B):   Media and Information Literacy",
-      "C):   Traditional rote memorization",
-      "D):   Operant conditioning",
+      "B):   Traditional rote memorization",
+      "C):   Media and Information Literacy",
+      "D):   Operant conditioning"
     ],
-    correctAnswer: "b",
-    explanation: "Evaluating online source credibility and detecting manipulated media falls under Media and Information Literacy.",
+    "correctAnswer": "c",
+    "explanation": "Evaluating online source credibility and detecting manipulated media falls under Media and Information Literacy."
   },
   {
-    id: "c12-edu-8-mcq-12",
-    question: "Why did vocational education fail to achieve mass popularity in India under previous educational policies?",
-    options: [
+    "id": "c12-edu-8-mcq-12",
+    "question": "Why did vocational education fail to achieve mass popularity in India under previous educational policies?",
+    "options": [
       "A):   Because India had no industries",
-      "B):   Because it was treated as an inferior dead-end stream separated from mainstream academic degrees (social stigma)",
+      "B):   Because textbooks were too expensive",
       "C):   Because students hated practical work",
-      "D):   Because textbooks were too expensive",
+      "D):   Because it was treated as an inferior dead-end stream separated from mainstream academic degrees (social stigma)"
     ],
-    correctAnswer: "b",
-    explanation: "Vocational education historically suffered from acute social stigma, seen as a dumping ground without lateral mobility to higher university degrees.",
+    "correctAnswer": "d",
+    "explanation": "Vocational education historically suffered from acute social stigma, seen as a dumping ground without lateral mobility to higher university degrees."
   },
   {
-    id: "c12-edu-8-mcq-13",
-    question: "Under the Three Pillars of Sustainability, economic growth must be accompanied by which other two essential dimensions?",
-    options: [
-      "A):   Military power and space travel",
-      "B):   Social equity and environmental protection",
+    "id": "c12-edu-8-mcq-13",
+    "question": "Under the Three Pillars of Sustainability, economic growth must be accompanied by which other two essential dimensions?",
+    "options": [
+      "A):   Social equity and environmental protection",
+      "B):   Military power and space travel",
       "C):   Tax increases and price inflation",
-      "D):   Paper exams and physical chalkboards",
+      "D):   Paper exams and physical chalkboards"
     ],
-    correctAnswer: "b",
-    explanation: "Sustainable development requires the three interdependent pillars: Economic Viability, Social Equity, and Environmental Protection.",
+    "correctAnswer": "a",
+    "explanation": "Sustainable development requires the three interdependent pillars: Economic Viability, Social Equity, and Environmental Protection."
   },
   {
-    id: "c12-edu-8-mcq-14",
-    question: "Which UNESCO pillar emphasizes the complete flourishing of the human being &mdash; spiritual, aesthetic, moral, and physical?",
-    options: [
+    "id": "c12-edu-8-mcq-14",
+    "question": "Which UNESCO pillar emphasizes the complete flourishing of the human being &mdash; spiritual, aesthetic, moral, and physical?",
+    "options": [
       "A):   Learning to Know",
-      "B):   Learning to Do",
-      "C):   Learning to Be",
-      "D):   Learning to Live Together",
+      "B):   Learning to Be",
+      "C):   Learning to Do",
+      "D):   Learning to Live Together"
     ],
-    correctAnswer: "c",
-    explanation: "Learning to Be focuses on the holistic development of the whole person &mdash; mind, body, spirit, aesthetic imagination, and ethics.",
+    "correctAnswer": "b",
+    "explanation": "Learning to Be focuses on the holistic development of the whole person &mdash; mind, body, spirit, aesthetic imagination, and ethics."
   },
   {
-    id: "c12-edu-8-mcq-15",
-    question: "Under NEP 2020, if a student studies Physics, Mathematics, and Carpentry simultaneously in Class 12, which principle is realized?",
-    options: [
+    "id": "c12-edu-8-mcq-15",
+    "question": "Under NEP 2020, if a student studies Physics, Mathematics, and Carpentry simultaneously in Class 12, which principle is realized?",
+    "options": [
       "A):   Rigid streaming",
-      "B):   Eradication of hard separations between academic and vocational streams",
+      "B):   Segregation model",
       "C):   Compulsory rote memorization",
-      "D):   Segregation model",
+      "D):   Eradication of hard separations between academic and vocational streams"
     ],
-    correctAnswer: "b",
-    explanation: "NEP 2020 eliminates the rigid boundaries between arts, science, and vocational education, allowing multi-disciplinary combinations.",
+    "correctAnswer": "d",
+    "explanation": "NEP 2020 eliminates the rigid boundaries between arts, science, and vocational education, allowing multi-disciplinary combinations."
   },
   {
-    id: "c12-edu-8-mcq-16",
-    question: "Target 4.7 of SDG 4 explicitly mandates that all learners acquire knowledge and skills for:",
-    options: [
+    "id": "c12-edu-8-mcq-16",
+    "question": "Target 4.7 of SDG 4 explicitly mandates that all learners acquire knowledge and skills for:",
+    "options": [
       "A):   Stock market speculation",
-      "B):   Education for Sustainable Development (ESD), human rights, gender equality, and global citizenship",
-      "C):   Military combat readiness",
-      "D):   Manufacturing plastic toys",
+      "B):   Military combat readiness",
+      "C):   Education for Sustainable Development (ESD), human rights, gender equality, and global citizenship",
+      "D):   Manufacturing plastic toys"
     ],
-    correctAnswer: "b",
-    explanation: "Target 4.7 focuses on Education for Sustainable Development (ESD), global citizenship, peace, and human rights.",
+    "correctAnswer": "c",
+    "explanation": "Target 4.7 focuses on Education for Sustainable Development (ESD), global citizenship, peace, and human rights."
   },
   {
-    id: "c12-edu-8-mcq-17",
-    question: "In the 21st-century FLIPS framework for life and career skills, what does 'F' stand for?",
-    options: [
+    "id": "c12-edu-8-mcq-17",
+    "question": "In the 21st-century FLIPS framework for life and career skills, what does 'F' stand for?",
+    "options": [
       "A):   Finance",
       "B):   Flexibility and Adaptability",
       "C):   Fitness",
-      "D):   Formality",
+      "D):   Formality"
     ],
-    correctAnswer: "b",
-    explanation: "In FLIPS, F stands for Flexibility & Adaptability, L for Leadership, I for Initiative, P for Productivity, and S for Social skills.",
+    "correctAnswer": "b",
+    "explanation": "In FLIPS, F stands for Flexibility & Adaptability, L for Leadership, I for Initiative, P for Productivity, and S for Social skills."
   },
   {
-    id: "c12-edu-8-mcq-18",
-    question: "How does the National Skills Qualifications Framework (NSQF) facilitate student vocational advancement?",
-    options: [
-      "A):   By banning all degrees",
-      "B):   By standardizing competency levels from basic craft certificates to postgraduate diplomas, enabling national equivalence",
+    "id": "c12-edu-8-mcq-18",
+    "question": "How does the National Skills Qualifications Framework (NSQF) facilitate student vocational advancement?",
+    "options": [
+      "A):   By standardizing competency levels from basic craft certificates to postgraduate diplomas, enabling national equivalence",
+      "B):   By banning all degrees",
       "C):   By enforcing identical salaries for all jobs",
-      "D):   By eliminating mathematics from schools",
+      "D):   By eliminating mathematics from schools"
     ],
-    correctAnswer: "b",
-    explanation: "NSQF organizes qualifications across a series of levels of knowledge, skills, and aptitude, ensuring seamless industry recognition.",
+    "correctAnswer": "a",
+    "explanation": "NSQF organizes qualifications across a series of levels of knowledge, skills, and aptitude, ensuring seamless industry recognition."
   },
-
-  // TIER 3: ADVANCED ANALYTICAL & CASE-BASED SCENARIOS (Q19 to Q25)
   {
-    id: "c12-edu-8-mcq-19",
-    question: "A classroom project where Hindu, Muslim, Christian, and Sikh students collaboratively restore a local polluted river while studying environmental science exemplifies which two UNESCO pillars simultaneously?",
-    options: [
-      "A):   Learning to Know and Learning to Live Together",
+    "id": "c12-edu-8-mcq-19",
+    "question": "A classroom project where Hindu, Muslim, Christian, and Sikh students collaboratively restore a local polluted river while studying environmental science exemplifies which two UNESCO pillars simultaneously?",
+    "options": [
+      "A):   Learning to Memorize and Learning to Recite",
       "B):   Learning to Disagree and Learning to Divide",
       "C):   Learning to Test and Learning to Grade",
-      "D):   Learning to Memorize and Learning to Recite",
+      "D):   Learning to Know and Learning to Live Together"
     ],
-    correctAnswer: "a",
-    explanation: "Acquiring ecological understanding represents Learning to Know, while working harmoniously across diverse religious groups embodies Learning to Live Together.",
+    "correctAnswer": "d",
+    "explanation": "Acquiring ecological understanding represents Learning to Know, while working harmoniously across diverse religious groups embodies Learning to Live Together."
   },
   {
-    id: "c12-edu-8-mcq-20",
-    question: "Why is 'Collaboration' considered an essential 21st-century skill that cannot be easily replaced by artificial intelligence?",
-    options: [
+    "id": "c12-edu-8-mcq-20",
+    "question": "Why is 'Collaboration' considered an essential 21st-century skill that cannot be easily replaced by artificial intelligence?",
+    "options": [
       "A):   Because computers cannot count numbers",
-      "B):   Because human collaboration relies on empathy, shared emotional resonance, cultural nuance, and interpersonal negotiation",
-      "C):   Because collaboration takes place only without electricity",
-      "D):   Because AI is banned in all workplaces",
+      "B):   Because collaboration takes place only without electricity",
+      "C):   Because human collaboration relies on empathy, shared emotional resonance, cultural nuance, and interpersonal negotiation",
+      "D):   Because AI is banned in all workplaces"
     ],
-    correctAnswer: "b",
-    explanation: "Interpersonal collaboration requires emotional intelligence, empathy, and social negotiation &mdash; distinctly human traits.",
+    "correctAnswer": "c",
+    "explanation": "Interpersonal collaboration requires emotional intelligence, empathy, and social negotiation &mdash; distinctly human traits."
   },
   {
-    id: "c12-edu-8-mcq-21",
-    question: "How does the incorporation of 'Lokvidya' (traditional Indian vocational crafts) in NEP 2020 contribute to national development?",
-    options: [
+    "id": "c12-edu-8-mcq-21",
+    "question": "How does the incorporation of 'Lokvidya' (traditional Indian vocational crafts) in NEP 2020 contribute to national development?",
+    "options": [
       "A):   By eliminating modern computers from schools",
       "B):   By preserving indigenous artisanal heritage, instilling dignity of labor, and driving rural economic self-reliance",
       "C):   By replacing university professors with machine tools",
-      "D):   By banning foreign trade",
+      "D):   By banning foreign trade"
     ],
-    correctAnswer: "b",
-    explanation: "Lokvidya recognizes indigenous artisanal knowledge, honoring traditional craftspeople and fostering rural entrepreneurship.",
+    "correctAnswer": "b",
+    "explanation": "Lokvidya recognizes indigenous artisanal knowledge, honoring traditional craftspeople and fostering rural entrepreneurship."
   },
   {
-    id: "c12-edu-8-mcq-22",
-    question: "A country achieves rapid industrial GDP growth by cutting down 90% of its pristine forests and contaminating drinking water. Under sustainable development principles, this growth is:",
-    options: [
+    "id": "c12-edu-8-mcq-22",
+    "question": "A country achieves rapid industrial GDP growth by cutting down 90% of its pristine forests and contaminating drinking water. Under sustainable development principles, this growth is:",
+    "options": [
       "A):   Highly sustainable and praiseworthy",
-      "B):   Unsustainable and catastrophic, because it compromises the survival and resource needs of future generations",
+      "B):   Approved by Brundtland Commission",
       "C):   An example of circular economy",
-      "D):   Approved by Brundtland Commission",
+      "D):   Unsustainable and catastrophic, because it compromises the survival and resource needs of future generations"
     ],
-    correctAnswer: "b",
-    explanation: "Economic growth that destroys ecological foundations directly violates the fundamental principle of intergenerational equity.",
+    "correctAnswer": "d",
+    "explanation": "Economic growth that destroys ecological foundations directly violates the fundamental principle of intergenerational equity."
   },
   {
-    id: "c12-edu-8-mcq-23",
-    question: "Under NEP 2020, how does the integration of vocational education from middle school help reduce the dropout rate in secondary schools?",
-    options: [
-      "A):   By making examinations optional",
-      "B):   By providing practical, employment-relevant skills that make education meaningful and economically valuable for marginalized youth",
+    "id": "c12-edu-8-mcq-23",
+    "question": "Under NEP 2020, how does the integration of vocational education from middle school help reduce the dropout rate in secondary schools?",
+    "options": [
+      "A):   By providing practical, employment-relevant skills that make education meaningful and economically valuable for marginalized youth",
+      "B):   By making examinations optional",
       "C):   By paying students monthly cash wages during class",
-      "D):   By abolishing all attendance rules",
+      "D):   By abolishing all attendance rules"
     ],
-    correctAnswer: "b",
-    explanation: "Practical vocational skills provide immediate economic relevance, motivating students from low-income families to remain in school.",
+    "correctAnswer": "a",
+    "explanation": "Practical vocational skills provide immediate economic relevance, motivating students from low-income families to remain in school."
   },
   {
-    id: "c12-edu-8-mcq-24",
-    question: "Which of the following describes the core philosophical vision uniting Jacques Delors' Four Pillars, NEP 2020, and the UN SDGs?",
-    options: [
+    "id": "c12-edu-8-mcq-24",
+    "question": "Which of the following describes the core philosophical vision uniting Jacques Delors' Four Pillars, NEP 2020, and the UN SDGs?",
+    "options": [
       "A):   Transforming humans into mechanical industrial cogs",
-      "B):   A holistic, humanistic, and sustainable vision that nurtures intellect, ethics, social peace, and ecological harmony",
-      "C):   Restricting education to wealthy urban elites exclusively",
-      "D):   Standardizing all global cultures into a single language",
+      "B):   Restricting education to wealthy urban elites exclusively",
+      "C):   A holistic, humanistic, and sustainable vision that nurtures intellect, ethics, social peace, and ecological harmony",
+      "D):   Standardizing all global cultures into a single language"
     ],
-    correctAnswer: "b",
-    explanation: "All three frameworks champion holistic human development, ethical citizenship, peaceful co-existence, and ecological sustainability.",
+    "correctAnswer": "c",
+    "explanation": "All three frameworks champion holistic human development, ethical citizenship, peaceful co-existence, and ecological sustainability."
   },
   {
-    id: "c12-edu-8-mcq-25",
-    question: "In a passage-based board question, a student is presented with a scenario where youth use drones to monitor agricultural crop health. This scenario synthesizes:",
-    options: [
+    "id": "c12-edu-8-mcq-25",
+    "question": "In a passage-based board question, a student is presented with a scenario where youth use drones to monitor agricultural crop health. This scenario synthesizes:",
+    "options": [
       "A):   Only 19th-century rote drill",
       "B):   Vocational skill, technology literacy, and sustainable agricultural development (SDG 2 &amp; SDG 4)",
       "C):   Pure leisure without educational value",
-      "D):   A violation of school discipline",
+      "D):   A violation of school discipline"
     ],
-    correctAnswer: "b",
-    explanation: "Deploying drone technology in agriculture perfectly synthesizes modern vocational training, tech literacy, and sustainable development.",
-  },
+    "correctAnswer": "b",
+    "explanation": "Deploying drone technology in agriculture perfectly synthesizes modern vocational training, tech literacy, and sustainable development."
+  }
 ];
