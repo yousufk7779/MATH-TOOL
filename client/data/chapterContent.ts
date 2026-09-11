@@ -1722,6 +1722,194 @@ if (ch12Phy8) {
   ch12Phy8.mcqs = c12Phy8Mcqs;
 }
 
+}
+
+// Dynamically generate Class 12 Science Chapter Web View Structures (Physics, Chemistry, Botany, Zoology)
+const c12Subjects = [
+  { prefix: "phy", title: "Physics", maxCh: 9 },
+  { prefix: "chem", title: "Chemistry", maxCh: 10 },
+  { prefix: "bot", title: "Botany", maxCh: 4 },
+  { prefix: "zoo", title: "Zoology", maxCh: 4 },
+];
+
+c12Subjects.forEach(({ prefix, title, maxCh }) => {
+  for (let i = 1; i <= maxCh; i++) {
+    const id = `c12-${prefix}-${i}`;
+    const themeColor = c11ThemeColors[(i - 1) % c11ThemeColors.length];
+    chapterContents[id] = {
+      id,
+      number: i,
+      title: `Class 12 ${title} Chapter ${i}`,
+      isHtmlView: true,
+      htmlOverview: `
+        <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+          <h3 style="color: ${themeColor}; text-align: left; margin-top: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 5px;">Reference & Concept Guide</h3>
+          <p style="line-height: 1.6; font-size: 16px;">Welcome to Class 12 ${title} Chapter ${i}. Key Concepts, definitions, formulas, and reference theory for this chapter will be rendered here in this responsive Web View layout.</p>
+        </div>
+      `,
+      htmlExercises: {
+        "ex-c12-qa": `
+          <div style="padding: 10px; color: #fff; text-align: justify; font-family: sans-serif;">
+            <p style="color: ${themeColor}; font-weight: bold; margin-bottom: 8px; font-size: 18px;">NCERT Solutions & Answers</p>
+            <p style="color: #E0E0E0; line-height: 1.6; font-size: 15px;">Detailed step-by-step NCERT Solutions for Class 12 ${title} Chapter ${i} will be populated here.</p>
+          </div>
+        `,
+      },
+      exercises: [
+        {
+          id: "ex-c12-qa",
+          name: "Q & A",
+          questions: [],
+        },
+      ],
+      mcqs: Array.from({ length: 10 }, (_, index) => ({
+        id: `${id}-mcq-${index + 1}`,
+        question: `Class 12 ${title} Chapter ${i} - Practice Question ${index + 1}`,
+        options: ["Option A", "Option B", "Option C", "Option D"],
+        correctAnswer: ["a", "b", "c", "d"][index % 4],
+        explanation: `Explanation for Class 12 ${title} Chapter ${i} Question ${index + 1}.`,
+      })),
+      introduction: `Class 12 ${title} Chapter ${i} Introduction`,
+    };
+  }
+});
+
+// Override Class 12 Physics Chapter 1 with full high-level Reference & Solutions content
+const ch12Phy1 = chapterContents["c12-phy-1"];
+if (ch12Phy1) {
+  ch12Phy1.htmlOverview = c12Phy1HtmlOverview;
+  ch12Phy1.htmlExercises = {
+    "ex-c12-qa": c12Phy1HtmlSolutions,
+  };
+  ch12Phy1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy1.mcqs = c12Phy1Mcqs;
+}
+
+// Override Class 12 Physics Chapter 2 with full high-level Reference & Solutions content
+const ch12Phy2 = chapterContents["c12-phy-2"];
+if (ch12Phy2) {
+  ch12Phy2.htmlOverview = c12Phy2HtmlOverview;
+  ch12Phy2.htmlExercises = {
+    "ex-c12-qa": c12Phy2HtmlSolutions,
+  };
+  ch12Phy2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy2.mcqs = c12Phy2Mcqs;
+}
+
+// Override Class 12 Physics Chapter 3 with full high-level Reference & Solutions content
+const ch12Phy3 = chapterContents["c12-phy-3"];
+if (ch12Phy3) {
+  ch12Phy3.htmlOverview = c12Phy3HtmlOverview;
+  ch12Phy3.htmlExercises = {
+    "ex-c12-qa": c12Phy3HtmlSolutions,
+  };
+  ch12Phy3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy3.mcqs = c12Phy3Mcqs;
+}
+
+// Override Class 12 Physics Chapter 4 with full high-level Reference & Solutions content
+const ch12Phy4 = chapterContents["c12-phy-4"];
+if (ch12Phy4) {
+  ch12Phy4.htmlOverview = c12Phy4HtmlOverview;
+  ch12Phy4.htmlExercises = {
+    "ex-c12-qa": c12Phy4HtmlSolutions,
+  };
+  ch12Phy4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy4.mcqs = c12Phy4Mcqs;
+}
+
+// Override Class 12 Physics Chapter 5 with full high-level Reference & Solutions content
+const ch12Phy5 = chapterContents["c12-phy-5"];
+if (ch12Phy5) {
+  ch12Phy5.htmlOverview = c12Phy5HtmlOverview;
+  ch12Phy5.htmlExercises = {
+    "ex-c12-qa": c12Phy5HtmlSolutions,
+  };
+  ch12Phy5.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy5.mcqs = c12Phy5Mcqs;
+}
+
+// Override Class 12 Physics Chapter 6 with full high-level Reference & Solutions content
+const ch12Phy6 = chapterContents["c12-phy-6"];
+if (ch12Phy6) {
+  ch12Phy6.htmlOverview = c12Phy6HtmlOverview;
+  ch12Phy6.htmlExercises = {
+    "ex-c12-qa": c12Phy6HtmlSolutions,
+  };
+  ch12Phy6.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy6.mcqs = c12Phy6Mcqs;
+}
+
+// Override Class 12 Physics Chapter 7 with full high-level Reference & Solutions content
+const ch12Phy7 = chapterContents["c12-phy-7"];
+if (ch12Phy7) {
+  ch12Phy7.htmlOverview = c12Phy7HtmlOverview;
+  ch12Phy7.htmlExercises = {
+    "ex-c12-qa": c12Phy7HtmlSolutions,
+  };
+  ch12Phy7.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy7.mcqs = c12Phy7Mcqs;
+}
+
+// Override Class 12 Physics Chapter 8 with full high-level Reference & Solutions content
+const ch12Phy8 = chapterContents["c12-phy-8"];
+if (ch12Phy8) {
+  ch12Phy8.htmlOverview = c12Phy8HtmlOverview;
+  ch12Phy8.htmlExercises = {
+    "ex-c12-qa": c12Phy8HtmlSolutions,
+  };
+  ch12Phy8.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Phy8.mcqs = c12Phy8Mcqs;
+}
+
 // Override Class 12 Physics Chapter 9 with full high-level Reference & Solutions content
 const ch12Phy9 = chapterContents["c12-phy-9"];
 if (ch12Phy9) {
@@ -1737,6 +1925,152 @@ if (ch12Phy9) {
     },
   ];
   ch12Phy9.mcqs = c12Phy9Mcqs;
+}
+
+// Dynamically generate Class 11 & Class 12 Arts Education Chapter Structures
+const eduThemeColors = [
+  "#FF512F", // Ch 1 Sunset Coral
+  "#00C6FF", // Ch 2 Electric Cyan
+  "#11998E", // Ch 3 Mint Emerald
+  "#8E2DE2", // Ch 4 Violet Purple
+  "#FF8A65", // Ch 5 Deep Orange
+  "#FDC830", // Ch 6 Golden Amber
+  "#FF007F", // Ch 7 Neon Rose
+  "#29B6F6", // Ch 8 Sky Royal Blue
+];
+
+const c11EduTitles = [
+  "Concept and Nature of Education",
+  "Aims of Education",
+  "Psychological Foundations of Education",
+  "Sociological Foundations of Education",
+  "Guidance and Counseling",
+  "National Educational Policy 2020 and the Curriculum Frameworks",
+  "Statistics and Education",
+  "Peace and Value Education",
+];
+
+const c12EduTitles = [
+  "Philosophical Foundations of Education",
+  "Mental Health and Wellbeing",
+  "Adjustment and Maladjustment",
+  "Human Growth and Development",
+  "Educational Technology",
+  "Inclusive Education",
+  "Statistics in Education",
+  "Education and the Contemporary World",
+];
+
+// Initialize Class 11 Education (c11-edu-1 to c11-edu-8)
+for (let i = 1; i <= 8; i++) {
+  const id = `c11-edu-${i}`;
+  const themeColor = eduThemeColors[(i - 1) % eduThemeColors.length];
+  const title = c11EduTitles[i - 1];
+  chapterContents[id] = {
+    id,
+    number: i,
+    title: `Unit ${i}: ${title}`,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <h2 style="color: ${themeColor}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+          Unit ${i}: ${title}
+        </h2>
+        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
+          <h4 style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0;">📖 Gold Standard Textbook Reference</h4>
+          <p style="color: #CBD5E1; font-size: 14.5px; line-height: 1.6; margin: 0;">Comprehensive theoretical foundations, philosophical origins, thinker viewpoints, and visual concept maps for this unit are being rendered here.</p>
+        </div>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c11-qa": `
+        <div style="padding: 14px; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+            Unit ${i}: Golden 25 Board Master Q&A
+          </h3>
+          <p style="color: #94A3B8; font-size: 14.5px; line-height: 1.6;">
+            Strictly curated 25 Board Exam Questions (Section A: 12 VSAT, Section B: 8 SAT, Section C: 5 LAT) for Unit ${i}.
+          </p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c11-qa",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 25 }, (_, idx) => ({
+      id: `${id}-mcq-${idx + 1}`,
+      question: `Class 11 Education Unit ${i} (${title}) - Practice Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for Question ${idx + 1}`,
+        `B):   Option 2 for Question ${idx + 1}`,
+        `C):   Option 3 for Question ${idx + 1}`,
+        `D):   Option 4 for Question ${idx + 1}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for Unit ${i} Question ${idx + 1} based on the prescribed textbook syllabus.`,
+    })),
+    introduction: `Unit ${i}: ${title}`,
+  };
+}
+
+// Initialize Class 12 Education (c12-edu-1 to c12-edu-8)
+for (let i = 1; i <= 8; i++) {
+  const id = `c12-edu-${i}`;
+  const themeColor = eduThemeColors[(i - 1) % eduThemeColors.length];
+  const title = c12EduTitles[i - 1];
+  chapterContents[id] = {
+    id,
+    number: i,
+    title: `Unit ${i}: ${title}`,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <h2 style="color: ${themeColor}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+          Unit ${i}: ${title}
+        </h2>
+        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
+          <h4 style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0;">📖 Gold Standard Textbook Reference</h4>
+          <p style="color: #CBD5E1; font-size: 14.5px; line-height: 1.6; margin: 0;">Comprehensive theoretical foundations, policy developments, historical commissions, and visual concept maps for this unit are being rendered here.</p>
+        </div>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c12-qa": `
+        <div style="padding: 14px; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+            Unit ${i}: Golden 25 Board Master Q&A
+          </h3>
+          <p style="color: #94A3B8; font-size: 14.5px; line-height: 1.6;">
+            Strictly curated 25 Board Exam Questions (Section A: 12 VSAT, Section B: 8 SAT, Section C: 5 LAT) for Unit ${i}.
+          </p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c12-qa",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 25 }, (_, idx) => ({
+      id: `${id}-mcq-${idx + 1}`,
+      question: `Class 12 Education Unit ${i} (${title}) - Practice Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for Question ${idx + 1}`,
+        `B):   Option 2 for Question ${idx + 1}`,
+        `C):   Option 3 for Question ${idx + 1}`,
+        `D):   Option 4 for Question ${idx + 1}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for Unit ${i} Question ${idx + 1} based on the prescribed textbook syllabus.`,
+    })),
+    introduction: `Unit ${i}: ${title}`,
+  };
 }
 
 export const isChapterAvailable = (chapterId: string): boolean => {

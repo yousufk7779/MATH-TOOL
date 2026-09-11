@@ -69,7 +69,24 @@ function Class11Screen() {
             />
           </View>
 
-          {/* 4. START QUIZ BUTTON */}
+          {/* 4. EDUCATION BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-education"
+              title="EDUCATION"
+              icon="🎓"
+              colors={["#F39C12", "#D35400"]}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 11 Arts",
+                  topic: "Education",
+                  className: "Class 11",
+                })
+              }
+            />
+          </View>
+
+          {/* 5. START QUIZ BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-quiz"

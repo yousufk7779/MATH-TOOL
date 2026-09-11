@@ -126,3 +126,21 @@ For ALL Class 11 and Class 12 chapters across all subjects (**Physics, Chemistry
      - $< 50\%$: 📖 **KEEP PRACTICING!**
    - Live stats (`✓ Correct`, `✗ Wrong`, `🎯 Accuracy`).
    - Gradient **Retake Quiz** and **Close & Review** action buttons.
+
+---
+
+## Class 11 & 12 Arts & Humanities (Education) Master Blueprint
+
+Full detailed rules are in `.agents/ARTS_SUBJECTS_RULES.md`. For ALL Arts and Humanities chapters (**Education, Political Science, Sociology, History**), ALWAYS enforce these core principles:
+
+1. **Pedagogical Reality**: Arts students do NOT memorize heavy walls of text or complex numericals. They need structured, point-wise, high-scoring answers. **Never force 100 questions**.
+2. **Tab 1 (Reference)**:
+   - Official syllabus headings (`1.1`, `1.2`, etc.) with Roman sub-items `(i), (ii)`.
+   - Theme color on subtopics and colon terms.
+   - Specialized visual boxes: `thinkerQuoteBox` (verbatim quotes/philosophy), `comparisonTableBox`, `boardExamTipBox` (how to score in 4m/6m), and `policyConnectBox` (NEP 2020 / RTE).
+   - Standalone concept flowcharts without redundant top titles.
+3. **Tab 2 (Solutions) — Exact "Golden 25" Board Questions**:
+   - **Section A: VSAT (1 & 2 Marks) — 12 Questions (Q1 to Q12)**: Crisp 20-30 words, 1-minute recall.
+   - **Section B: SAT (4 Marks) — 8 Questions (Q13 to Q20)**: 80-100 words, strictly 4 to 5 bullet points with bold themed subheadings.
+   - **Section C: LAT (6 Marks) — 5 Questions (Q21 to Q25)**: 120-150 words, 3-tier structure (Introduction $\to$ Core Key Dimensions $\to$ Conclusion/Educational Implication).
+4. **Tab 3 (MCQs)**: Exactly 20 to 25 smart interactive questions with **Easy to Advance tiered progression** (Tier 1: Q1-Q10 Easy recall; Tier 2: Q11-Q18 Moderate concepts; Tier 3: Q19-Q25 Advance analytical), 100% chapter syllabus based, with green/red feedback and gamified dashboard.

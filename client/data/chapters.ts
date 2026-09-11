@@ -83,6 +83,30 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-zoo-4", number: 4, name: "Biotechnology and its Applications", color: "#00B0FF" },
     ],
   },
+  "Class 11 Arts": {
+    Education: [
+      { id: "c11-edu-1", number: 1, name: "Concept and Nature of Education", color: "#FF512F" },
+      { id: "c11-edu-2", number: 2, name: "Aims of Education", color: "#00C6FF" },
+      { id: "c11-edu-3", number: 3, name: "Psychological Foundations of Education", color: "#11998E" },
+      { id: "c11-edu-4", number: 4, name: "Sociological Foundations of Education", color: "#8E2DE2" },
+      { id: "c11-edu-5", number: 5, name: "Guidance and Counseling", color: "#FF8A65" },
+      { id: "c11-edu-6", number: 6, name: "National Educational Policy 2020 and the Curriculum Frameworks", color: "#FDC830" },
+      { id: "c11-edu-7", number: 7, name: "Statistics and Education", color: "#FF007F" },
+      { id: "c11-edu-8", number: 8, name: "Peace and Value Education", color: "#29B6F6" },
+    ],
+  },
+  "Class 12 Arts": {
+    Education: [
+      { id: "c12-edu-1", number: 1, name: "Philosophical Foundations of Education", color: "#FF512F" },
+      { id: "c12-edu-2", number: 2, name: "Mental Health and Wellbeing", color: "#00C6FF" },
+      { id: "c12-edu-3", number: 3, name: "Adjustment and Maladjustment", color: "#11998E" },
+      { id: "c12-edu-4", number: 4, name: "Human Growth and Development", color: "#8E2DE2" },
+      { id: "c12-edu-5", number: 5, name: "Educational Technology", color: "#FF8A65" },
+      { id: "c12-edu-6", number: 6, name: "Inclusive Education", color: "#FDC830" },
+      { id: "c12-edu-7", number: 7, name: "Statistics in Education", color: "#FF007F" },
+      { id: "c12-edu-8", number: 8, name: "Education and the Contemporary World", color: "#29B6F6" },
+    ],
+  },
   "Class 11 Science": {
     Physics: [
       { id: "c11-phy-1", number: 1, name: "Physical World and Measurement", color: "#FF512F" },
@@ -1120,6 +1144,27 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-zoo-2") return ["#7C4DFF", "#4A00E0"];
   if (chapterId === "c12-zoo-3") return ["#FF007F", "#C2185B"];
   if (chapterId === "c12-zoo-4") return ["#00B0FF", "#0072ff"];
+
+  // Class 11 Education (8 Chapters - Vibrant Multi-Color Gradients)
+  if (chapterId === "c11-edu-1") return ["#FF512F", "#DD2476"]; // Sunset Coral
+  if (chapterId === "c11-edu-2") return ["#00C6FF", "#0072FF"]; // Electric Cyan
+  if (chapterId === "c11-edu-3") return ["#11998E", "#38EF7D"]; // Mint Emerald
+  if (chapterId === "c11-edu-4") return ["#8E2DE2", "#4A00E0"]; // Violet Purple
+  if (chapterId === "c11-edu-5") return ["#FF8A65", "#FF3D00"]; // Deep Orange
+  if (chapterId === "c11-edu-6") return ["#FDC830", "#F39C12"]; // Golden Amber
+  if (chapterId === "c11-edu-7") return ["#FF007F", "#C2185B"]; // Neon Rose
+  if (chapterId === "c11-edu-8") return ["#29B6F6", "#0288D1"]; // Sky Royal Blue
+
+  // Class 12 Education (8 Chapters - Vibrant Multi-Color Gradients)
+  if (chapterId === "c12-edu-1") return ["#FF512F", "#DD2476"]; // Sunset Coral
+  if (chapterId === "c12-edu-2") return ["#00C6FF", "#0072FF"]; // Electric Cyan
+  if (chapterId === "c12-edu-3") return ["#11998E", "#38EF7D"]; // Mint Emerald
+  if (chapterId === "c12-edu-4") return ["#8E2DE2", "#4A00E0"]; // Violet Purple
+  if (chapterId === "c12-edu-5") return ["#FF8A65", "#FF3D00"]; // Deep Orange
+  if (chapterId === "c12-edu-6") return ["#FDC830", "#F39C12"]; // Golden Amber
+  if (chapterId === "c12-edu-7") return ["#FF007F", "#C2185B"]; // Neon Rose
+  if (chapterId === "c12-edu-8") return ["#29B6F6", "#0288D1"]; // Sky Royal Blue
+
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;
   if (chapterId === "c7-math-12") return JiguuColors.gradients.teal;
