@@ -25,6 +25,7 @@ import { c11Edu6HtmlOverview, c11Edu6HtmlSolutions, c11Edu6Mcqs } from "./conten
 import { c11Edu7HtmlOverview, c11Edu7HtmlSolutions, c11Edu7Mcqs } from "./content/c11-edu-7";
 import { c11Edu8HtmlOverview, c11Edu8HtmlSolutions, c11Edu8Mcqs } from "./content/c11-edu-8";
 import { c12Edu1HtmlOverview, c12Edu1HtmlSolutions, c12Edu1Mcqs } from "./content/c12-edu-1";
+import { c12Edu2HtmlOverview, c12Edu2HtmlSolutions, c12Edu2Mcqs } from "./content/c12-edu-2";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2362,6 +2363,24 @@ if (ch12Edu1) {
   ];
   ch12Edu1.mcqs = c12Edu1Mcqs;
 }
+
+// Override Class 12 Education Chapter 2 (Mental Health and Wellbeing)
+const ch12Edu2 = chapterContents["c12-edu-2"];
+if (ch12Edu2) {
+  ch12Edu2.htmlOverview = c12Edu2HtmlOverview;
+  ch12Edu2.htmlExercises = {
+    "ex-c12-qa": c12Edu2HtmlSolutions,
+  };
+  ch12Edu2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu2.mcqs = c12Edu2Mcqs;
+}
+
 
 
 
