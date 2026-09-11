@@ -29,6 +29,7 @@ import { c12Edu2HtmlOverview, c12Edu2HtmlSolutions, c12Edu2Mcqs } from "./conten
 import { c12Edu3HtmlOverview, c12Edu3HtmlSolutions, c12Edu3Mcqs } from "./content/c12-edu-3";
 import { c12Edu4HtmlOverview, c12Edu4HtmlSolutions, c12Edu4Mcqs } from "./content/c12-edu-4";
 import { c12Edu5HtmlOverview, c12Edu5HtmlSolutions, c12Edu5Mcqs } from "./content/c12-edu-5";
+import { c12Edu6HtmlOverview, c12Edu6HtmlSolutions, c12Edu6Mcqs } from "./content/c12-edu-6";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2433,6 +2434,23 @@ if (ch12Edu5) {
     },
   ];
   ch12Edu5.mcqs = c12Edu5Mcqs;
+}
+
+// Override Class 12 Education Chapter 6 (Inclusive Education)
+const ch12Edu6 = chapterContents["c12-edu-6"];
+if (ch12Edu6) {
+  ch12Edu6.htmlOverview = c12Edu6HtmlOverview;
+  ch12Edu6.htmlExercises = {
+    "ex-c12-qa": c12Edu6HtmlSolutions,
+  };
+  ch12Edu6.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu6.mcqs = c12Edu6Mcqs;
 }
 
 
