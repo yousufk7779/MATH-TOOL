@@ -20,6 +20,7 @@ import { c11Edu1HtmlOverview, c11Edu1HtmlSolutions, c11Edu1Mcqs } from "./conten
 import { c11Edu2HtmlOverview, c11Edu2HtmlSolutions, c11Edu2Mcqs } from "./content/c11-edu-2";
 import { c11Edu3HtmlOverview, c11Edu3HtmlSolutions, c11Edu3Mcqs } from "./content/c11-edu-3";
 import { c11Edu4HtmlOverview, c11Edu4HtmlSolutions, c11Edu4Mcqs } from "./content/c11-edu-4";
+import { c11Edu5HtmlOverview, c11Edu5HtmlSolutions, c11Edu5Mcqs } from "./content/c11-edu-5";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2271,4 +2272,21 @@ if (ch11Edu4) {
     },
   ];
   ch11Edu4.mcqs = c11Edu4Mcqs;
+}
+
+// Override Class 11 Education Chapter 5 (Guidance and Counseling)
+const ch11Edu5 = chapterContents["c11-edu-5"];
+if (ch11Edu5) {
+  ch11Edu5.htmlOverview = c11Edu5HtmlOverview;
+  ch11Edu5.htmlExercises = {
+    "ex-c11-qa": c11Edu5HtmlSolutions,
+  };
+  ch11Edu5.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu5.mcqs = c11Edu5Mcqs;
 }
