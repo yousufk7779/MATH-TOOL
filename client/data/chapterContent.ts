@@ -22,6 +22,7 @@ import { c11Edu3HtmlOverview, c11Edu3HtmlSolutions, c11Edu3Mcqs } from "./conten
 import { c11Edu4HtmlOverview, c11Edu4HtmlSolutions, c11Edu4Mcqs } from "./content/c11-edu-4";
 import { c11Edu5HtmlOverview, c11Edu5HtmlSolutions, c11Edu5Mcqs } from "./content/c11-edu-5";
 import { c11Edu6HtmlOverview, c11Edu6HtmlSolutions, c11Edu6Mcqs } from "./content/c11-edu-6";
+import { c11Edu7HtmlOverview, c11Edu7HtmlSolutions, c11Edu7Mcqs } from "./content/c11-edu-7";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2308,4 +2309,22 @@ if (ch11Edu6) {
   ];
   ch11Edu6.mcqs = c11Edu6Mcqs;
 }
+
+// Override Class 11 Education Chapter 7 (Statistics and Education)
+const ch11Edu7 = chapterContents["c11-edu-7"];
+if (ch11Edu7) {
+  ch11Edu7.htmlOverview = c11Edu7HtmlOverview;
+  ch11Edu7.htmlExercises = {
+    "ex-c11-qa": c11Edu7HtmlSolutions,
+  };
+  ch11Edu7.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu7.mcqs = c11Edu7Mcqs;
+}
+
 
