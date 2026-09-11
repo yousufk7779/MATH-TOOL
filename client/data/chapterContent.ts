@@ -19,6 +19,7 @@ import { c12Zoo4HtmlOverview, c12Zoo4HtmlSolutions, c12Zoo4Mcqs } from "./conten
 import { c11Edu1HtmlOverview, c11Edu1HtmlSolutions, c11Edu1Mcqs } from "./content/c11-edu-1";
 import { c11Edu2HtmlOverview, c11Edu2HtmlSolutions, c11Edu2Mcqs } from "./content/c11-edu-2";
 import { c11Edu3HtmlOverview, c11Edu3HtmlSolutions, c11Edu3Mcqs } from "./content/c11-edu-3";
+import { c11Edu4HtmlOverview, c11Edu4HtmlSolutions, c11Edu4Mcqs } from "./content/c11-edu-4";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2253,4 +2254,21 @@ if (ch11Edu3) {
     },
   ];
   ch11Edu3.mcqs = c11Edu3Mcqs;
+}
+
+// Override Class 11 Education Chapter 4 (Sociological Foundations of Education)
+const ch11Edu4 = chapterContents["c11-edu-4"];
+if (ch11Edu4) {
+  ch11Edu4.htmlOverview = c11Edu4HtmlOverview;
+  ch11Edu4.htmlExercises = {
+    "ex-c11-qa": c11Edu4HtmlSolutions,
+  };
+  ch11Edu4.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu4.mcqs = c11Edu4Mcqs;
 }
