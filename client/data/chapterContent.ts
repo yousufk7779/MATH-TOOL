@@ -31,6 +31,7 @@ import { c12Edu4HtmlOverview, c12Edu4HtmlSolutions, c12Edu4Mcqs } from "./conten
 import { c12Edu5HtmlOverview, c12Edu5HtmlSolutions, c12Edu5Mcqs } from "./content/c12-edu-5";
 import { c12Edu6HtmlOverview, c12Edu6HtmlSolutions, c12Edu6Mcqs } from "./content/c12-edu-6";
 import { c12Edu7HtmlOverview, c12Edu7HtmlSolutions, c12Edu7Mcqs } from "./content/c12-edu-7";
+import { c12Edu8HtmlOverview, c12Edu8HtmlSolutions, c12Edu8Mcqs } from "./content/c12-edu-8";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2470,6 +2471,24 @@ if (ch12Edu7) {
   ];
   ch12Edu7.mcqs = c12Edu7Mcqs;
 }
+
+// Override Class 12 Education Chapter 8 (Education and the Contemporary World)
+const ch12Edu8 = chapterContents["c12-edu-8"];
+if (ch12Edu8) {
+  ch12Edu8.htmlOverview = c12Edu8HtmlOverview;
+  ch12Edu8.htmlExercises = {
+    "ex-c12-qa": c12Edu8HtmlSolutions,
+  };
+  ch12Edu8.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu8.mcqs = c12Edu8Mcqs;
+}
+
 
 
 
