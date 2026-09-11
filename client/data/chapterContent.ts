@@ -28,6 +28,7 @@ import { c12Edu1HtmlOverview, c12Edu1HtmlSolutions, c12Edu1Mcqs } from "./conten
 import { c12Edu2HtmlOverview, c12Edu2HtmlSolutions, c12Edu2Mcqs } from "./content/c12-edu-2";
 import { c12Edu3HtmlOverview, c12Edu3HtmlSolutions, c12Edu3Mcqs } from "./content/c12-edu-3";
 import { c12Edu4HtmlOverview, c12Edu4HtmlSolutions, c12Edu4Mcqs } from "./content/c12-edu-4";
+import { c12Edu5HtmlOverview, c12Edu5HtmlSolutions, c12Edu5Mcqs } from "./content/c12-edu-5";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2415,6 +2416,23 @@ if (ch12Edu4) {
     },
   ];
   ch12Edu4.mcqs = c12Edu4Mcqs;
+}
+
+// Override Class 12 Education Chapter 5 (Educational Technology)
+const ch12Edu5 = chapterContents["c12-edu-5"];
+if (ch12Edu5) {
+  ch12Edu5.htmlOverview = c12Edu5HtmlOverview;
+  ch12Edu5.htmlExercises = {
+    "ex-c12-qa": c12Edu5HtmlSolutions,
+  };
+  ch12Edu5.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu5.mcqs = c12Edu5Mcqs;
 }
 
 
