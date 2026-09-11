@@ -27,6 +27,7 @@ import { c11Edu8HtmlOverview, c11Edu8HtmlSolutions, c11Edu8Mcqs } from "./conten
 import { c12Edu1HtmlOverview, c12Edu1HtmlSolutions, c12Edu1Mcqs } from "./content/c12-edu-1";
 import { c12Edu2HtmlOverview, c12Edu2HtmlSolutions, c12Edu2Mcqs } from "./content/c12-edu-2";
 import { c12Edu3HtmlOverview, c12Edu3HtmlSolutions, c12Edu3Mcqs } from "./content/c12-edu-3";
+import { c12Edu4HtmlOverview, c12Edu4HtmlSolutions, c12Edu4Mcqs } from "./content/c12-edu-4";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2397,6 +2398,23 @@ if (ch12Edu3) {
     },
   ];
   ch12Edu3.mcqs = c12Edu3Mcqs;
+}
+
+// Override Class 12 Education Chapter 4 (Human Growth and Development)
+const ch12Edu4 = chapterContents["c12-edu-4"];
+if (ch12Edu4) {
+  ch12Edu4.htmlOverview = c12Edu4HtmlOverview;
+  ch12Edu4.htmlExercises = {
+    "ex-c12-qa": c12Edu4HtmlSolutions,
+  };
+  ch12Edu4.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu4.mcqs = c12Edu4Mcqs;
 }
 
 
