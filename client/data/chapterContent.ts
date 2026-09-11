@@ -21,6 +21,7 @@ import { c11Edu2HtmlOverview, c11Edu2HtmlSolutions, c11Edu2Mcqs } from "./conten
 import { c11Edu3HtmlOverview, c11Edu3HtmlSolutions, c11Edu3Mcqs } from "./content/c11-edu-3";
 import { c11Edu4HtmlOverview, c11Edu4HtmlSolutions, c11Edu4Mcqs } from "./content/c11-edu-4";
 import { c11Edu5HtmlOverview, c11Edu5HtmlSolutions, c11Edu5Mcqs } from "./content/c11-edu-5";
+import { c11Edu6HtmlOverview, c11Edu6HtmlSolutions, c11Edu6Mcqs } from "./content/c11-edu-6";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2290,3 +2291,21 @@ if (ch11Edu5) {
   ];
   ch11Edu5.mcqs = c11Edu5Mcqs;
 }
+
+// Override Class 11 Education Chapter 6 (National Educational Policy 2020 and the Curriculum Frameworks)
+const ch11Edu6 = chapterContents["c11-edu-6"];
+if (ch11Edu6) {
+  ch11Edu6.htmlOverview = c11Edu6HtmlOverview;
+  ch11Edu6.htmlExercises = {
+    "ex-c11-qa": c11Edu6HtmlSolutions,
+  };
+  ch11Edu6.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu6.mcqs = c11Edu6Mcqs;
+}
+
