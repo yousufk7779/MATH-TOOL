@@ -24,6 +24,7 @@ import { c11Edu5HtmlOverview, c11Edu5HtmlSolutions, c11Edu5Mcqs } from "./conten
 import { c11Edu6HtmlOverview, c11Edu6HtmlSolutions, c11Edu6Mcqs } from "./content/c11-edu-6";
 import { c11Edu7HtmlOverview, c11Edu7HtmlSolutions, c11Edu7Mcqs } from "./content/c11-edu-7";
 import { c11Edu8HtmlOverview, c11Edu8HtmlSolutions, c11Edu8Mcqs } from "./content/c11-edu-8";
+import { c12Edu1HtmlOverview, c12Edu1HtmlSolutions, c12Edu1Mcqs } from "./content/c12-edu-1";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2344,6 +2345,24 @@ if (ch11Edu8) {
   ];
   ch11Edu8.mcqs = c11Edu8Mcqs;
 }
+
+// Override Class 12 Education Chapter 1 (Philosophical Foundations of Education)
+const ch12Edu1 = chapterContents["c12-edu-1"];
+if (ch12Edu1) {
+  ch12Edu1.htmlOverview = c12Edu1HtmlOverview;
+  ch12Edu1.htmlExercises = {
+    "ex-c12-qa": c12Edu1HtmlSolutions,
+  };
+  ch12Edu1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu1.mcqs = c12Edu1Mcqs;
+}
+
 
 
 
