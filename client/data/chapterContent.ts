@@ -30,6 +30,7 @@ import { c12Edu3HtmlOverview, c12Edu3HtmlSolutions, c12Edu3Mcqs } from "./conten
 import { c12Edu4HtmlOverview, c12Edu4HtmlSolutions, c12Edu4Mcqs } from "./content/c12-edu-4";
 import { c12Edu5HtmlOverview, c12Edu5HtmlSolutions, c12Edu5Mcqs } from "./content/c12-edu-5";
 import { c12Edu6HtmlOverview, c12Edu6HtmlSolutions, c12Edu6Mcqs } from "./content/c12-edu-6";
+import { c12Edu7HtmlOverview, c12Edu7HtmlSolutions, c12Edu7Mcqs } from "./content/c12-edu-7";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2451,6 +2452,23 @@ if (ch12Edu6) {
     },
   ];
   ch12Edu6.mcqs = c12Edu6Mcqs;
+}
+
+// Override Class 12 Education Chapter 7 (Statistics in Education)
+const ch12Edu7 = chapterContents["c12-edu-7"];
+if (ch12Edu7) {
+  ch12Edu7.htmlOverview = c12Edu7HtmlOverview;
+  ch12Edu7.htmlExercises = {
+    "ex-c12-qa": c12Edu7HtmlSolutions,
+  };
+  ch12Edu7.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu7.mcqs = c12Edu7Mcqs;
 }
 
 
