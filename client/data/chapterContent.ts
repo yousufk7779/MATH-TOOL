@@ -23,6 +23,7 @@ import { c11Edu4HtmlOverview, c11Edu4HtmlSolutions, c11Edu4Mcqs } from "./conten
 import { c11Edu5HtmlOverview, c11Edu5HtmlSolutions, c11Edu5Mcqs } from "./content/c11-edu-5";
 import { c11Edu6HtmlOverview, c11Edu6HtmlSolutions, c11Edu6Mcqs } from "./content/c11-edu-6";
 import { c11Edu7HtmlOverview, c11Edu7HtmlSolutions, c11Edu7Mcqs } from "./content/c11-edu-7";
+import { c11Edu8HtmlOverview, c11Edu8HtmlSolutions, c11Edu8Mcqs } from "./content/c11-edu-8";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2326,5 +2327,23 @@ if (ch11Edu7) {
   ];
   ch11Edu7.mcqs = c11Edu7Mcqs;
 }
+
+// Override Class 11 Education Chapter 8 (Peace and Value Education)
+const ch11Edu8 = chapterContents["c11-edu-8"];
+if (ch11Edu8) {
+  ch11Edu8.htmlOverview = c11Edu8HtmlOverview;
+  ch11Edu8.htmlExercises = {
+    "ex-c11-qa": c11Edu8HtmlSolutions,
+  };
+  ch11Edu8.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Edu8.mcqs = c11Edu8Mcqs;
+}
+
 
 
