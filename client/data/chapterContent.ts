@@ -26,6 +26,7 @@ import { c11Edu7HtmlOverview, c11Edu7HtmlSolutions, c11Edu7Mcqs } from "./conten
 import { c11Edu8HtmlOverview, c11Edu8HtmlSolutions, c11Edu8Mcqs } from "./content/c11-edu-8";
 import { c12Edu1HtmlOverview, c12Edu1HtmlSolutions, c12Edu1Mcqs } from "./content/c12-edu-1";
 import { c12Edu2HtmlOverview, c12Edu2HtmlSolutions, c12Edu2Mcqs } from "./content/c12-edu-2";
+import { c12Edu3HtmlOverview, c12Edu3HtmlSolutions, c12Edu3Mcqs } from "./content/c12-edu-3";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2379,6 +2380,23 @@ if (ch12Edu2) {
     },
   ];
   ch12Edu2.mcqs = c12Edu2Mcqs;
+}
+
+// Override Class 12 Education Chapter 3 (Adjustment and Maladjustment)
+const ch12Edu3 = chapterContents["c12-edu-3"];
+if (ch12Edu3) {
+  ch12Edu3.htmlOverview = c12Edu3HtmlOverview;
+  ch12Edu3.htmlExercises = {
+    "ex-c12-qa": c12Edu3HtmlSolutions,
+  };
+  ch12Edu3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Edu3.mcqs = c12Edu3Mcqs;
 }
 
 
