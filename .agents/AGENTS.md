@@ -139,7 +139,7 @@ Full detailed rules are in `.agents/ARTS_SUBJECTS_RULES.md`. For ALL Arts and Hu
    - Theme color on subtopics and colon terms.
    - Specialized visual boxes: `thinkerQuoteBox` (verbatim quotes/philosophy), `comparisonTableBox`, `boardExamTipBox` (how to score in 4m/6m), and `policyConnectBox` (NEP 2020 / RTE).
    - Standalone concept flowcharts without redundant top titles.
-3. **Tab 2 (Solutions) — Exact "Golden 25" Board Questions**:
+3. **Tab 2 (Q & A) — Exact "Golden 25" Board Questions**:
    - **Section A: VSAT (1 & 2 Marks) — 12 Questions (Q1 to Q12)**: Crisp 20-30 words, 1-minute recall.
    - **Section B: SAT (4 Marks) — 8 Questions (Q13 to Q20)**: 80-100 words, strictly 4 to 5 bullet points with bold themed subheadings.
    - **Section C: LAT (6 Marks) — 5 Questions (Q21 to Q25)**: 120-150 words, 3-tier structure (Introduction $\to$ Core Key Dimensions $\to$ Conclusion/Educational Implication).

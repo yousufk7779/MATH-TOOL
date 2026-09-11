@@ -18,8 +18,8 @@ This rulebook applies to ALL **Arts and Humanities subjects** for Class 11 and C
 ## 2. The 3-Tab Architecture for Arts Chapters
 
 Every chapter in Arts subjects MUST follow the dedicated 3-Tab structure:
-- **Tab 1: Reference (Overview)** — Comprehensive reference textbook guide tailored for humanities.
-- **Tab 2: Solutions (Q/A)** — Exactly **25 Board Master Questions** divided into Section A (VSAT), Section B (SAT), and Section C (LAT).
+- **Tab 1: Reference** — Comprehensive reference textbook guide tailored for humanities.
+- **Tab 2: Q & A** — Exactly **25 Board Master Questions** divided into Section A (VSAT), Section B (SAT), and Section C (LAT).
 - **Tab 3: MCQs** — Exactly **20 to 25 Smart Interactive MCQs** with live green/red feedback and gamified dashboard.
 
 ---

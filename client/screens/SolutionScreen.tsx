@@ -1020,6 +1020,13 @@ function SolutionScreen() {
   if (isSeniorClass) {
     tab1Title = "Reference";
     tab2Title = "Solutions";
+    if (
+      chapterId.match(/^c1[12]-(edu|pol|soc|his|psy)-/) ||
+      chapterId.includes("-edu-") ||
+      chapterId.includes("-arts-")
+    ) {
+      tab2Title = "Q & A";
+    }
   } else if (chapterId.startsWith("sci-")) {
     tab1Title = "Quick Revision";
     tab2Title = "NCERT Solutions";
