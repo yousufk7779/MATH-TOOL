@@ -32,6 +32,9 @@ import { c12Edu5HtmlOverview, c12Edu5HtmlSolutions, c12Edu5Mcqs } from "./conten
 import { c12Edu6HtmlOverview, c12Edu6HtmlSolutions, c12Edu6Mcqs } from "./content/c12-edu-6";
 import { c12Edu7HtmlOverview, c12Edu7HtmlSolutions, c12Edu7Mcqs } from "./content/c12-edu-7";
 import { c12Edu8HtmlOverview, c12Edu8HtmlSolutions, c12Edu8Mcqs } from "./content/c12-edu-8";
+import { c12Pol1HtmlOverview, c12Pol1HtmlSolutions, c12Pol1Mcqs } from "./content/c12-pol-1";
+import { c12Pol2HtmlOverview, c12Pol2HtmlSolutions, c12Pol2Mcqs } from "./content/c12-pol-2";
+import { c12Pol3HtmlOverview, c12Pol3HtmlSolutions, c12Pol3Mcqs } from "./content/c12-pol-3";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -1901,6 +1904,140 @@ for (let i = 1; i <= 8; i++) {
   };
 }
 
+// Dynamically generate Class 12 Political Science Chapter Structures (15 Chapters)
+const c12PolTitles = [
+  "Disintegration of the \"Second World\" and the Collapse of Bipolarity",
+  "Alternative Centres of Economic and Political Power",
+  "South Asia in the Post-Cold War Era",
+  "International Organizations in a Unipolar World",
+  "Security in Contemporary World",
+  "Globalization and its Critics",
+  "Environmental and Natural Resources in Global Politics",
+  "Nation-Building and Its Problems",
+  "Era of One-Party Dominance",
+  "Politics of Planned Development",
+  "India's External Relations",
+  "Challenge to and Restoration of Congress System",
+  "Crisis of the Constitutional Order",
+  "Regional Aspirations and Conflicts",
+  "Recent Developments in Indian Politics",
+];
+
+const c12PolMarks = [
+  "6 Marks",
+  "6 Marks",
+  "6 Marks",
+  "6 Marks",
+  "6 Marks",
+  "4 Marks",
+  "6 Marks",
+  "6 Marks",
+  "4 Marks",
+  "2 Marks",
+  "6 Marks",
+  "5 Marks",
+  "4 Marks",
+  "6 Marks",
+  "7 Marks",
+];
+
+const c12PolThemeColors = [
+  "#FF512F",
+  "#00C6FF",
+  "#11998E",
+  "#8E2DE2",
+  "#FF8A65",
+  "#FDC830",
+  "#00E676",
+  "#FF6D00",
+  "#2979FF",
+  "#00BFA5",
+  "#E040FB",
+  "#FF007F",
+  "#D50000",
+  "#7C4DFF",
+  "#00C853",
+];
+
+const c12PolParts = [
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part A: Contemporary World Politics",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+  "Part B: Politics in India since Independence",
+];
+
+// Initialize Class 12 Political Science (c12-pol-1 to c12-pol-15)
+for (let i = 1; i <= 15; i++) {
+  const id = `c12-pol-${i}`;
+  const themeColor = c12PolThemeColors[i - 1];
+  const title = c12PolTitles[i - 1];
+  const marks = c12PolMarks[i - 1];
+  const part = c12PolParts[i - 1];
+  chapterContents[id] = {
+    id,
+    number: i,
+    title: `Chapter ${i}: ${title}`,
+    isHtmlView: true,
+    htmlOverview: `
+      <div style="padding: 14px; color: #F8FAFC; text-align: justify; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <div style="display: inline-block; background: ${themeColor}22; border: 1px solid ${themeColor}; border-radius: 6px; padding: 4px 10px; margin-bottom: 12px;">
+          <span style="color: ${themeColor}; font-size: 12px; font-weight: 800; letter-spacing: 0.5px;">${part.toUpperCase()} • ${marks.toUpperCase()}</span>
+        </div>
+        <h2 style="color: ${themeColor}; font-size: 22px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+          Chapter ${i}: ${title}
+        </h2>
+        <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
+          <h4 style="color: ${themeColor}; font-size: 16px; font-weight: 700; margin: 0 0 6px 0;">🏛️ Ultra Gold Reference Guide</h4>
+          <p style="color: #CBD5E1; font-size: 14.5px; line-height: 1.6; margin: 0;">Comprehensive ideological analyses, diplomatic treaties, historical mechanisms, and high-contrast concept flowcharts are being prepared for this chapter.</p>
+        </div>
+      </div>
+    `,
+    htmlExercises: {
+      "ex-c12-qa": `
+        <div style="padding: 14px; color: #F8FAFC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+          <h3 style="color: ${themeColor}; font-size: 20px; font-weight: 800; border-bottom: 2px solid ${themeColor}; padding-bottom: 8px; margin-bottom: 16px;">
+            Chapter ${i}: Board Master Q&A (${marks})
+          </h3>
+          <p style="color: #94A3B8; font-size: 14.5px; line-height: 1.6;">
+            Targeted Board Exam Questions curated strictly according to the official ${marks} board weightage.
+          </p>
+        </div>
+      `,
+    },
+    exercises: [
+      {
+        id: "ex-c12-qa",
+        name: "Q & A",
+        questions: [],
+      },
+    ],
+    mcqs: Array.from({ length: 20 }, (_, idx) => ({
+      id: `${id}-mcq-${idx + 1}`,
+      question: `Class 12 Political Science Chapter ${i} (${title}) - Practice Question ${idx + 1}`,
+      options: [
+        `A):   Option 1 for Question ${idx + 1}`,
+        `B):   Option 2 for Question ${idx + 1}`,
+        `C):   Option 3 for Question ${idx + 1}`,
+        `D):   Option 4 for Question ${idx + 1}`,
+      ],
+      correctAnswer: ["a", "b", "c", "d"][idx % 4],
+      explanation: `Detailed explanation for Chapter ${i} Question ${idx + 1} based on official NCERT / State Board curriculum.`,
+    })),
+    introduction: `Chapter ${i}: ${title}`,
+  };
+}
+
 export const isChapterAvailable = (chapterId: string): boolean => {
   return !!chapterContents[chapterId];
 };
@@ -2487,6 +2624,57 @@ if (ch12Edu8) {
     },
   ];
   ch12Edu8.mcqs = c12Edu8Mcqs;
+}
+
+// Override Class 12 Political Science Chapter 1 (Disintegration of the Second World & Collapse of Bipolarity)
+const ch12Pol1 = chapterContents["c12-pol-1"];
+if (ch12Pol1) {
+  ch12Pol1.htmlOverview = c12Pol1HtmlOverview;
+  ch12Pol1.htmlExercises = {
+    "ex-c12-qa": c12Pol1HtmlSolutions,
+  };
+  ch12Pol1.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol1.mcqs = c12Pol1Mcqs;
+}
+
+// Override Class 12 Political Science Chapter 2 (Alternative Centres of Economic and Political Power)
+const ch12Pol2 = chapterContents["c12-pol-2"];
+if (ch12Pol2) {
+  ch12Pol2.htmlOverview = c12Pol2HtmlOverview;
+  ch12Pol2.htmlExercises = {
+    "ex-c12-qa": c12Pol2HtmlSolutions,
+  };
+  ch12Pol2.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol2.mcqs = c12Pol2Mcqs;
+}
+
+// Override Class 12 Political Science Chapter 3 (South Asia in the Post-Cold War Era)
+const ch12Pol3 = chapterContents["c12-pol-3"];
+if (ch12Pol3) {
+  ch12Pol3.htmlOverview = c12Pol3HtmlOverview;
+  ch12Pol3.htmlExercises = {
+    "ex-c12-qa": c12Pol3HtmlSolutions,
+  };
+  ch12Pol3.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol3.mcqs = c12Pol3Mcqs;
 }
 
 

@@ -6,6 +6,8 @@ export interface Chapter {
   name: string;
   color: string;
   locked?: boolean;
+  marks?: string;
+  section?: string;
 }
 
 export const class10Chapters: Chapter[] = [
@@ -105,6 +107,26 @@ export const otherSubjectsData: Record<string, Record<string, Chapter[]>> = {
       { id: "c12-edu-6", number: 6, name: "Inclusive Education", color: "#FDC830" },
       { id: "c12-edu-7", number: 7, name: "Statistics in Education", color: "#FF007F" },
       { id: "c12-edu-8", number: 8, name: "Education and the Contemporary World", color: "#29B6F6" },
+    ],
+    "Political Science": [
+      // Part A: Contemporary World Politics (40 Marks)
+      { id: "c12-pol-1", number: 1, name: "Disintegration of the Second World & Collapse of Bipolarity", color: "#FF512F", marks: "6 Marks", section: "Part A" },
+      { id: "c12-pol-2", number: 2, name: "Alternative Centres of Economic & Political Power", color: "#00C6FF", marks: "6 Marks", section: "Part A" },
+      { id: "c12-pol-3", number: 3, name: "South Asia in the Post-Cold War Era", color: "#11998E", marks: "6 Marks", section: "Part A" },
+      { id: "c12-pol-4", number: 4, name: "International Organizations in a Unipolar World", color: "#8E2DE2", marks: "6 Marks", section: "Part A" },
+      { id: "c12-pol-5", number: 5, name: "Security in Contemporary World", color: "#FF8A65", marks: "6 Marks", section: "Part A" },
+      { id: "c12-pol-6", number: 6, name: "Globalization and its Critics", color: "#FDC830", marks: "4 Marks", section: "Part A" },
+      { id: "c12-pol-7", number: 7, name: "Environmental & Natural Resources in Global Politics", color: "#00E676", marks: "6 Marks", section: "Part A" },
+
+      // Part B: Politics in India since Independence (40 Marks)
+      { id: "c12-pol-8", number: 8, name: "Nation-Building and Its Problems", color: "#FF6D00", marks: "6 Marks", section: "Part B" },
+      { id: "c12-pol-9", number: 9, name: "Era of One-Party Dominance", color: "#2979FF", marks: "4 Marks", section: "Part B" },
+      { id: "c12-pol-10", number: 10, name: "Politics of Planned Development", color: "#00BFA5", marks: "2 Marks", section: "Part B" },
+      { id: "c12-pol-11", number: 11, name: "India's External Relations", color: "#E040FB", marks: "6 Marks", section: "Part B" },
+      { id: "c12-pol-12", number: 12, name: "Challenge to & Restoration of Congress System", color: "#FF007F", marks: "5 Marks", section: "Part B" },
+      { id: "c12-pol-13", number: 13, name: "Crisis of the Constitutional Order", color: "#D50000", marks: "4 Marks", section: "Part B" },
+      { id: "c12-pol-14", number: 14, name: "Regional Aspirations and Conflicts", color: "#7C4DFF", marks: "6 Marks", section: "Part B" },
+      { id: "c12-pol-15", number: 15, name: "Recent Developments in Indian Politics", color: "#00C853", marks: "7 Marks", section: "Part B" },
     ],
   },
   "Class 11 Science": {
@@ -1164,6 +1186,23 @@ export function getChapterGradient(chapter: Chapter | string): string[] {
   if (chapterId === "c12-edu-6") return ["#FDC830", "#F39C12"]; // Golden Amber
   if (chapterId === "c12-edu-7") return ["#FF007F", "#C2185B"]; // Neon Rose
   if (chapterId === "c12-edu-8") return ["#29B6F6", "#0288D1"]; // Sky Royal Blue
+
+  // Class 12 Political Science (15 Chapters - Vibrant Two-Stop Gradients)
+  if (chapterId === "c12-pol-1") return ["#FF512F", "#DD2476"]; // Sunset Crimson
+  if (chapterId === "c12-pol-2") return ["#00C6FF", "#0072FF"]; // Ocean Cyan
+  if (chapterId === "c12-pol-3") return ["#11998E", "#38EF7D"]; // Mint Teal
+  if (chapterId === "c12-pol-4") return ["#8E2DE2", "#4A00E0"]; // Royal Violet
+  if (chapterId === "c12-pol-5") return ["#FF8A65", "#FF5722"]; // Bronze Coral
+  if (chapterId === "c12-pol-6") return ["#FDC830", "#F37335"]; // Golden Amber
+  if (chapterId === "c12-pol-7") return ["#00E676", "#00B0FF"]; // Emerald Cyan
+  if (chapterId === "c12-pol-8") return ["#FF6D00", "#FFAB00"]; // Saffron Flame
+  if (chapterId === "c12-pol-9") return ["#2979FF", "#1565C0"]; // Cobalt Electric
+  if (chapterId === "c12-pol-10") return ["#00BFA5", "#00E5FF"]; // Deep Aqua
+  if (chapterId === "c12-pol-11") return ["#E040FB", "#8E24AA"]; // Neon Amethyst
+  if (chapterId === "c12-pol-12") return ["#FF007F", "#E91E63"]; // Rose Fuchsia
+  if (chapterId === "c12-pol-13") return ["#D50000", "#B71C1C"]; // Bold Crimson
+  if (chapterId === "c12-pol-14") return ["#7C4DFF", "#536DFE"]; // Deep Indigo
+  if (chapterId === "c12-pol-15") return ["#00C853", "#64DD17"]; // Vibrant Green
 
   if (chapterId === "c7-math-10") return JiguuColors.gradients.gold;
   if (chapterId === "c7-math-11") return JiguuColors.gradients.pink;

@@ -20,6 +20,7 @@ interface ChapterCardProps {
   onPress?: () => void;
   testID?: string;
   isAvailable?: boolean;
+  marks?: string;
 }
 
 export const ChapterCard = memo(function ChapterCard({
@@ -30,6 +31,7 @@ export const ChapterCard = memo(function ChapterCard({
   onPress,
   testID,
   isAvailable = true,
+  marks,
 }: ChapterCardProps) {
   const [isPressed, setIsPressed] = useState(false);
 
@@ -89,6 +91,11 @@ export const ChapterCard = memo(function ChapterCard({
               <ThemedText style={styles.name} numberOfLines={2}>
                 {name}
               </ThemedText>
+              {marks ? (
+                <View style={styles.marksBadge}>
+                  <ThemedText style={styles.marksBadgeText}>{marks}</ThemedText>
+                </View>
+              ) : null}
             </View>
             {!isAvailable && (
               <View style={styles.chevronIcon}>
@@ -159,6 +166,22 @@ const styles = StyleSheet.create({
     fontFamily: "NotoSans_400Regular",
     fontSize: 15,
     textTransform: "uppercase", // Match SS style
+  },
+  marksBadge: {
+    alignSelf: "flex-start",
+    backgroundColor: "rgba(0, 0, 0, 0.3)",
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    borderRadius: 6,
+    marginTop: 4,
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.3)",
+  },
+  marksBadgeText: {
+    fontSize: 11,
+    fontWeight: "700",
+    color: "#FFFFFF",
+    letterSpacing: 0.3,
   },
   chevronIcon: {
     width: 24,

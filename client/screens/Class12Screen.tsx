@@ -86,7 +86,24 @@ function Class12Screen() {
             />
           </View>
 
-          {/* 5. START QUIZ BUTTON */}
+          {/* 5. POLITICAL SCIENCE BUTTON */}
+          <View style={styles.buttonWrapper}>
+            <ColorButton
+              testID="button-political-science"
+              title="POLITICAL SCIENCE"
+              icon="🏛️"
+              colors={["#0083B0", "#00B4DB"]}
+              onPress={() =>
+                navigation.navigate("ChapterList", {
+                  subject: "Class 12 Arts",
+                  topic: "Political Science",
+                  className: "Class 12",
+                })
+              }
+            />
+          </View>
+
+          {/* 6. START QUIZ BUTTON */}
           <View style={styles.buttonWrapper}>
             <ColorButton
               testID="button-quiz"

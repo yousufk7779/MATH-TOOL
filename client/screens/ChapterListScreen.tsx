@@ -49,25 +49,57 @@ function ChapterListScreen() {
       const available = !item.locked;
       const chapterGradient = getChapterGradient(item.id);
 
+      const isPolSciencePartA = item.id === "c12-pol-1";
+      const isPolSciencePartB = item.id === "c12-pol-8";
+
       return (
-        <ChapterCard
-          testID={`chapter-card-${item.id}`}
-          number={item.number}
-          name={item.name}
-          colors={chapterGradient}
-          isAvailable={available}
-          onPress={() => {
-            console.log("Chapter clicked:", item.id);
-            navigation.navigate("Solution", {
-              chapterId: item.id,
-              chapterName: item.name,
-              className: className,
-            });
-          }}
-        />
+        <View>
+          {isPolSciencePartA && (
+            <View style={styles.sectionBanner}>
+              <View style={[styles.sectionBadge, styles.badgePartA]}>
+                <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartA]}>
+                  PART A • 40 MARKS
+                </ThemedText>
+              </View>
+              <ThemedText style={styles.sectionBannerTitle}>
+                Contemporary World Politics
+              </ThemedText>
+            </View>
+          )}
+
+          {isPolSciencePartB && (
+            <View style={[styles.sectionBanner, styles.sectionBannerPartB]}>
+              <View style={[styles.sectionBadge, styles.badgePartB]}>
+                <ThemedText style={[styles.sectionBadgeText, styles.badgeTextPartB]}>
+                  PART B • 40 MARKS
+                </ThemedText>
+              </View>
+              <ThemedText style={styles.sectionBannerTitle}>
+                Politics in India since Independence
+              </ThemedText>
+            </View>
+          )}
+
+          <ChapterCard
+            testID={`chapter-card-${item.id}`}
+            number={item.number}
+            name={item.name}
+            colors={chapterGradient}
+            isAvailable={available}
+            marks={item.marks}
+            onPress={() => {
+              console.log("Chapter clicked:", item.id);
+              navigation.navigate("Solution", {
+                chapterId: item.id,
+                chapterName: item.name,
+                className: className,
+              });
+            }}
+          />
+        </View>
       );
     },
-    [navigation, subject],
+    [navigation, subject, className],
   );
 
   const displayTopic =
@@ -133,5 +165,50 @@ const styles = StyleSheet.create({
 
   separator: {
     height: Spacing.md,
+  },
+  sectionBanner: {
+    backgroundColor: "rgba(15, 23, 42, 0.75)",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.12)",
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    marginBottom: 14,
+  },
+  sectionBannerPartB: {
+    marginTop: 22,
+  },
+  sectionBadge: {
+    alignSelf: "flex-start",
+    paddingHorizontal: 10,
+    paddingVertical: 3,
+    borderRadius: 6,
+    borderWidth: 1,
+    marginBottom: 6,
+  },
+  badgePartA: {
+    backgroundColor: "rgba(0, 198, 255, 0.15)",
+    borderColor: "rgba(0, 198, 255, 0.5)",
+  },
+  badgePartB: {
+    backgroundColor: "rgba(255, 109, 0, 0.15)",
+    borderColor: "rgba(255, 109, 0, 0.5)",
+  },
+  sectionBadgeText: {
+    fontSize: 11,
+    fontWeight: "800",
+    letterSpacing: 0.5,
+  },
+  badgeTextPartA: {
+    color: "#00E5FF",
+  },
+  badgeTextPartB: {
+    color: "#FFA000",
+  },
+  sectionBannerTitle: {
+    fontSize: 16,
+    fontWeight: "700",
+    color: "#FFFFFF",
+    letterSpacing: 0.2,
   },
 });
