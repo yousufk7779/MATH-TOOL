@@ -144,3 +144,20 @@ Full detailed rules are in `.agents/ARTS_SUBJECTS_RULES.md`. For ALL Arts and Hu
    - **Section B: SAT (4 Marks) — 8 Questions (Q13 to Q20)**: 80-100 words, strictly 4 to 5 bullet points with bold themed subheadings.
    - **Section C: LAT (6 Marks) — 5 Questions (Q21 to Q25)**: 120-150 words, 3-tier structure (Introduction $\to$ Core Key Dimensions $\to$ Conclusion/Educational Implication).
 4. **Tab 3 (MCQs)**: Exactly 20 to 25 smart interactive questions with **Easy to Advance tiered progression** (Tier 1: Q1-Q10 Easy recall; Tier 2: Q11-Q18 Moderate concepts; Tier 3: Q19-Q25 Advance analytical), 100% chapter syllabus based, with green/red feedback and gamified dashboard.
+
+---
+
+## Class 12 Political Science Master Blueprint
+
+Full authoritative rules, chapter syllabus mapping (15 chapters across Part A and Part B), board-weightage adaptive question counts, theme color palette, and Ultra HD 3D white-bg diagram standards are recorded permanently in:
+👉 `.agents/CLASS_12_POL_SCIENCE_BLUEPRINT.md`
+
+### Core Political Science Directives:
+1. **Ultra Gold Reference Standards (Tab 1)**: Zero superficial points; full explanatory geopolitical/constitutional prose; exact syllabus headings with Roman subtopics `(i), (ii)`; strict theme color on colon terms `<b style="color: ${themeColor};">Term:</b>`; specialized boxes (`thinkerQuoteBox`, `keyTreatyBox`, `comparisonTableBox`, `boardExamTipBox`); chronological revision timeline at end.
+2. **Ultra HD 3D Diagrams (White Background)**: Crisp visual diagrams/flowcharts with `#FFFFFF` background enclosed in sleek cards; zero duplicate top titles.
+3. **Board-Weightage Adaptive Questions (Tab 2)**:
+   - **2-Marks Chapter (Ch 10)**: Exactly 10 questions (8 VSAT + 2 SA, NO 6-mark essay).
+   - **4-Marks Chapters (Ch 6, 9, 13)**: Exactly 15 questions (8 VSAT + 7 SAT 4M, NO 6-mark essay).
+   - **5, 6 & 7-Marks Chapters (All others)**: Exactly 25 questions (12 VSAT + 8 SAT 4M + 5 LAT 6M).
+4. **Interactive MCQs (Tab 3)**: 15 to 20 MCQs with green/red feedback and tiered difficulty.
+
