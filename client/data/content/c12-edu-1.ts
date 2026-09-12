@@ -21,100 +21,100 @@ export const c12Edu1HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
-  <div style="background: rgba(255, 81, 47, 0.06); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">🏛️ Quick Glossary &amp; Core Philosophical Concepts</h2>
+  <div style="background: rgba(255, 81, 47, 0.06); border: 1.5px solid #FF512F; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #FF512F; font-weight: bold; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">🏛️ Quick Glossary &amp; Core Philosophical Concepts</h2>
     <p class="text-center" style="color: #FFAB91; margin: 0 0 16px 0; font-size: 14.5px;">Essential Terminologies &bull; Class 12 Unit 1: Philosophical Foundations of Education (10 Marks)</p>
 
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Philosophy (Philos + Sophia):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF512F; border-radius: 6px;">
+        <b style="color: #FF512F; font-size: 16px; display: block; margin-bottom: 4px;">1. Philosophy (Philos + Sophia):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The critical love, search, and pursuit of fundamental wisdom, truth, and the ultimate nature of existence, reality (Metaphysics), knowledge (Epistemology), and values (Axiology).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Philosophy:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF512F; border-radius: 6px;">
+        <b style="color: #FF512F; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Philosophy:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The applied philosophical discipline that analyzes, formulates, and guides the ultimate aims, curricular designs, instructional methods, and disciplinary ideals of education (John Adams: <i>"Education is the dynamic side of philosophy"</i>).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Idealism:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF512F; border-radius: 6px;">
+        <b style="color: #FF512F; font-size: 16px; display: block; margin-bottom: 4px;">3. Idealism:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The oldest philosophical school (Plato, Socrates, Kant, Froebel, Vivekananda) postulating that ultimate reality is spiritual, ideal, and mental; eternal universal values &mdash; <i>Satyam, Shivam, Sundaram</i> (Truth, Goodness, Beauty) &mdash; are unchangeable and absolute.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Pragmatism (Experimentalism / Instrumentalism):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF512F; border-radius: 6px;">
+        <b style="color: #FF512F; font-size: 16px; display: block; margin-bottom: 4px;">4. Pragmatism (Experimentalism / Instrumentalism):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A modern American school (C.S. Peirce, William James, John Dewey) derived from Greek <i>Pragma</i> (Action), holding that reality is ever-changing, truth is dynamic and verified by its practical working consequences (<i>"Truth is what works"</i>), and education is life itself through <i>Learning by Doing</i>.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Project Method:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF512F; border-radius: 6px;">
+        <b style="color: #FF512F; font-size: 16px; display: block; margin-bottom: 4px;">5. Project Method:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A signature pragmatic pedagogical method formulated by William Heard Kilpatrick wherein learning proceeds through a wholehearted, purposeful activity carried to completion in a natural social environment.</span>
       </div>
     </div>
   </div>
 
   <!-- SECTION 1.1 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">1.1 Educational philosophy: meaning and scope</h2>
+  <h2 style="color: #FF512F; font-weight: bold; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 30px;">1.1 Educational philosophy: meaning and scope</h2>
 
   <p>Education and Philosophy are twin disciplines intimately linked in an organic, unbreakable relationship. Education is the conscious, organized effort of human society to shape human behavior and preserve cultural heritage; but in what direction should human behavior be shaped? What constitutes the 'Good Life'? What knowledge is of most worth? These paramount questions cannot be answered by empirical laboratory tests alone &mdash; they demand deep philosophical contemplation. Without philosophy, education is like a rudderless ship drifting aimlessly across the ocean; without education, philosophy remains an ethereal, abstract contemplation confined to Ivory towers.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Etymological Derivation &amp; Definitions</h3>
-  <p>The English word <b style="color: ${themeColor};">"Philosophy"</b> is derived from two ancient Greek root words:</p>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(i) Etymological Derivation &amp; Definitions</h3>
+  <p>The English word <b style="color: #FF512F;">"Philosophy"</b> is derived from two ancient Greek root words:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Philos:</b> Meaning <i>Love</i>, affection, or passionate devotion.</li>
-    <li><b style="color: ${themeColor};">Sophia:</b> Meaning <i>Wisdom</i>, insight, or supreme knowledge.</li>
+    <li><b style="color: #FF512F;">Philos:</b> Meaning <i>Love</i>, affection, or passionate devotion.</li>
+    <li><b style="color: #FF512F;">Sophia:</b> Meaning <i>Wisdom</i>, insight, or supreme knowledge.</li>
   </ul>
   <p>Thus, etymologically, <b>Philosophy means "Love of Wisdom"</b>. Pythagoras was the first Greek thinker to describe himself as a <i>philosophos</i> (a lover of wisdom rather than a possessor of absolute knowledge).</p>
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 8px 0;">📖 Classic Aphorisms on Philosophy and Education:</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF512F; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
+    <h4 style="color: #FF512F; font-weight: bold; margin: 0 0 8px 0;">📖 Classic Aphorisms on Philosophy and Education:</h4>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">1. Sir John Adams:</b> <i>"Education is the dynamic side of philosophy. It is the active aspect of philosophical beliefs, the practical means of realizing each value of life."</i> Philosophy provides the blueprint of life; education provides the construction engine.
+      <b style="color: #FF512F;">1. Sir John Adams:</b> <i>"Education is the dynamic side of philosophy. It is the active aspect of philosophical beliefs, the practical means of realizing each value of life."</i> Philosophy provides the blueprint of life; education provides the construction engine.
     </p>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">2. John Dewey:</b> <i>"Philosophy may be defined as the general theory of education. If we are willing to conceive education as the process of forming fundamental dispositions, intellectual and emotional, toward nature and fellow-men, philosophy may even be defined as the general theory of education."</i>
+      <b style="color: #FF512F;">2. John Dewey:</b> <i>"Philosophy may be defined as the general theory of education. If we are willing to conceive education as the process of forming fundamental dispositions, intellectual and emotional, toward nature and fellow-men, philosophy may even be defined as the general theory of education."</i>
     </p>
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">3. Johann Gottlieb Fichte:</b> <i>"The art of education will never attain complete clearness in itself without philosophy."</i>
+      <b style="color: #FF512F;">3. Johann Gottlieb Fichte:</b> <i>"The art of education will never attain complete clearness in itself without philosophy."</i>
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) The Tripartite Pillars of Philosophy in Education</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(ii) The Tripartite Pillars of Philosophy in Education</h3>
   <p>Every educational system rests upon three metaphysical and philosophical pillars:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">1. Metaphysics (Study of Reality):</b> What is the ultimate nature of the universe and the human soul? Is reality purely physical matter (Naturalism/Materialism), or is it spiritual consciousness and divine mind (Idealism)? This directly decides the ultimate <b>Aims of Education</b>.</li>
-    <li><b style="color: ${themeColor};">2. Epistemology (Theory of Knowledge):</b> What is the nature, source, and validity of human knowledge? Do we know truth through spiritual intuition, rational contemplation, sense perception, or practical experimental action? This directly governs the <b>Methods of Teaching and Pedagogy</b>.</li>
-    <li><b style="color: ${themeColor};">3. Axiology (Theory of Values):</b> What is good, beautiful, and ethically right? (Divided into Ethics and Aesthetics). This directly determines the <b>School Curriculum, Moral Education, and Disciplinary Standards</b>.</li>
+    <li><b style="color: #FF512F;">1. Metaphysics (Study of Reality):</b> What is the ultimate nature of the universe and the human soul? Is reality purely physical matter (Naturalism/Materialism), or is it spiritual consciousness and divine mind (Idealism)? This directly decides the ultimate <b>Aims of Education</b>.</li>
+    <li><b style="color: #FF512F;">2. Epistemology (Theory of Knowledge):</b> What is the nature, source, and validity of human knowledge? Do we know truth through spiritual intuition, rational contemplation, sense perception, or practical experimental action? This directly governs the <b>Methods of Teaching and Pedagogy</b>.</li>
+    <li><b style="color: #FF512F;">3. Axiology (Theory of Values):</b> What is good, beautiful, and ethically right? (Divided into Ethics and Aesthetics). This directly determines the <b>School Curriculum, Moral Education, and Disciplinary Standards</b>.</li>
   </ul>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Scope of Educational Philosophy</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(iii) Scope of Educational Philosophy</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">1. Determining the Aims and Ideals of Education:</b>
+      <b style="color: #FF512F; font-size: 16px;">1. Determining the Aims and Ideals of Education:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Philosophy defines whether the ultimate aim is self-realization of the immortal soul (Idealism), social efficiency and democratic problem-solving (Pragmatism), or individual survival in nature (Naturalism).
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">2. Guiding Curriculum Construction and Subject Priority:</b>
+      <b style="color: #FF512F; font-size: 16px;">2. Guiding Curriculum Construction and Subject Priority:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Philosophy determines which subjects should dominate schooling. If a society values timeless spiritual ideals, humanities and ethics reign supreme; if it values industrial productivity and technology, utilitarian sciences and vocational projects are prioritized.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">3. Selection of Pedagogical Methods of Teaching:</b>
+      <b style="color: #FF512F; font-size: 16px;">3. Selection of Pedagogical Methods of Teaching:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Instructional methodologies are operationalized expressions of epistemological beliefs: Idealists employ dialectic discussion and Socratic questioning; Pragmatists demand project-based active experimentation and scientific inquiry.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">4. Formulating the Concept and Nature of Discipline:</b>
+      <b style="color: #FF512F; font-size: 16px;">4. Formulating the Concept and Nature of Discipline:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Philosophy dictates whether discipline should be imposed externally through authority, cultivated through internal moral restraint (Idealism), or born naturally from collaborative social participation (Pragmatism).
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">5. Defining the Status and Role of Teacher and Learner:</b>
+      <b style="color: #FF512F; font-size: 16px;">5. Defining the Status and Role of Teacher and Learner:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Clarifies whether the teacher is an exalted spiritual guru and moral torchbearer (Idealism) or an experienced friend, facilitator, and senior researcher in the child's learning journey (Pragmatism).
       </p>
@@ -165,139 +165,139 @@ export const c12Edu1HtmlOverview = `
   </div>
 
   <!-- SECTION 1.2 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">1.2 Schools of educational philosophy: Idealism and Pragmatism</h2>
+  <h2 style="color: #FF512F; font-weight: bold; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 35px;">1.2 Schools of educational philosophy: Idealism and Pragmatism</h2>
 
   <p>Humanity's philosophical heritage has developed numerous distinct traditions. In Class 12 official syllabus, two monumental Western schools of thought are prescribed for deep comparative study: <b>Idealism</b> (the spiritual, eternal classical foundation) and <b>Pragmatism</b> (the modern, experimental, progressive foundation).</p>
 
   <!-- ======================================================================== -->
   <!-- SCHOOL 1: IDEALISM                                                       -->
   <!-- ======================================================================== -->
-  <div style="background: rgba(255, 81, 47, 0.08); border: 1.5px solid ${themeColor}; border-radius: 10px; padding: 18px; margin: 25px 0;">
-    <h2 style="color: ${themeColor}; margin: 0 0 10px 0; font-size: 20px; font-weight: bold;">🌟 A. Idealism in Education</h2>
+  <div style="background: rgba(255, 81, 47, 0.08); border: 1.5px solid #FF512F; border-radius: 10px; padding: 18px; margin: 25px 0;">
+    <h2 style="color: #FF512F; font-weight: bold; margin: 0 0 10px 0; font-size: 20px; font-weight: bold;">🌟 A. Idealism in Education</h2>
     <p style="color: #FFFFFF; font-size: 15px; line-height: 1.7; margin: 0 0 12px 0;">
-      <b style="color: ${themeColor};">Idealism</b> is the oldest philosophical doctrine in human thought. Its name is derived from "Idea-ism" (Plato's doctrine of ideas). It posits that <b>Mind and Spirit are the ultimate reality</b>. Matter, physical objects, and bodily senses are temporary, perishable, and secondary. True reality belongs to the timeless, unchanging realm of spiritual forms and universal ideas.
+      <b style="color: #FF512F;">Idealism</b> is the oldest philosophical doctrine in human thought. Its name is derived from "Idea-ism" (Plato's doctrine of ideas). It posits that <b>Mind and Spirit are the ultimate reality</b>. Matter, physical objects, and bodily senses are temporary, perishable, and secondary. True reality belongs to the timeless, unchanging realm of spiritual forms and universal ideas.
     </p>
     <p style="color: #FFCCBC; font-size: 14.5px; line-height: 1.6; margin: 0;">
-      <b>Major Proponents:</b> 
+      <b style="color: #FF512F; font-weight: bold;">Major Proponents:</b> 
       <br/>&bull; <i>Western Philosophers:</i> <b>Socrates, Plato</b> (Father of Western Idealism &bull; <i>The Republic</i>), <b>Immanuel Kant, G.W.F. Hegel, Friedrich Froebel</b> (Father of Kindergarten).
       <br/>&bull; <i>Indian Thinkers:</i> <b>Swami Vivekananda, Rabindranath Tagore, Mahatma Gandhi, Sri Aurobindo, and the Vedic Rishis</b>.
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Aims of Education under Idealism</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 20px;">(i) Aims of Education under Idealism</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 14px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">1. Self-Realization (Exaltation of Personality):</b>
+      <b style="color: #FF512F; font-size: 16px;">1. Self-Realization (Exaltation of Personality):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         The supreme purpose of education is the progressive unfolding of the divine spiritual potential within each individual soul, transforming the lower animal nature into enlightened human divinity.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">2. Realization and Conservation of the Eternal Values (Satyam, Shivam, Sundaram):</b>
+      <b style="color: #FF512F; font-size: 16px;">2. Realization and Conservation of the Eternal Values (Satyam, Shivam, Sundaram):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Idealism insists that absolute spiritual values exist eternally independent of human whim: <b>Truth (Satyam)</b>, <b>Goodness (Shivam)</b>, and <b>Beauty (Sundaram)</b>. Education must guide the child to discover, appreciate, and manifest these three eternal virtues in daily life.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">3. Transmission and Enrichment of Cultural &amp; Spiritual Heritage:</b>
+      <b style="color: #FF512F; font-size: 16px;">3. Transmission and Enrichment of Cultural &amp; Spiritual Heritage:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Culture is the collective spiritual achievement of humanity. Education must transmit the accumulated artistic, literary, and philosophical treasures of our ancestors to upcoming generations.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 81, 47, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">4. Development of Moral Conscience and Character:</b>
+      <b style="color: #FF512F; font-size: 16px;">4. Development of Moral Conscience and Character:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Education is worthless if it produces clever intellects without moral character. Idealism insists on strict ethical self-discipline, purity of intention, and altruistic service.
       </p>
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Idealist Curriculum</h3>
-  <p>Idealists advocate an <b style="color: ${themeColor};">Idea-centered and Value-oriented Curriculum</b>. The curriculum is constructed not around transient child impulses or ephemeral commercial demands, but around permanent spiritual activities of the human race:</p>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(ii) Idealist Curriculum</h3>
+  <p>Idealists advocate an <b style="color: #FF512F;">Idea-centered and Value-oriented Curriculum</b>. The curriculum is constructed not around transient child impulses or ephemeral commercial demands, but around permanent spiritual activities of the human race:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">1. Intellectual Activities (Quest for Truth / Satyam):</b> Philosophy, Logic, Mathematics, Language, and Pure Sciences.</li>
-    <li><b style="color: ${themeColor};">2. Moral and Ethical Activities (Quest for Goodness / Shivam):</b> Ethics, Religion, Civics, History, and Moral Instruction.</li>
-    <li><b style="color: ${themeColor};">3. Aesthetic Activities (Quest for Beauty / Sundaram):</b> Fine Arts, Music, Poetry, Painting, and Literature.</li>
-    <li><b style="color: ${themeColor};">Subordinate Position of Physical Sciences:</b> Idealists include physical training and biological sciences only as subservient instruments to keep the body healthy as the holy temple of the soul.</li>
+    <li><b style="color: #FF512F;">1. Intellectual Activities (Quest for Truth / Satyam):</b> Philosophy, Logic, Mathematics, Language, and Pure Sciences.</li>
+    <li><b style="color: #FF512F;">2. Moral and Ethical Activities (Quest for Goodness / Shivam):</b> Ethics, Religion, Civics, History, and Moral Instruction.</li>
+    <li><b style="color: #FF512F;">3. Aesthetic Activities (Quest for Beauty / Sundaram):</b> Fine Arts, Music, Poetry, Painting, and Literature.</li>
+    <li><b style="color: #FF512F;">Subordinate Position of Physical Sciences:</b> Idealists include physical training and biological sciences only as subservient instruments to keep the body healthy as the holy temple of the soul.</li>
   </ul>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Methods of Teaching under Idealism</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(iii) Methods of Teaching under Idealism</h3>
   <p>Idealists do not endorse any single mechanical textbook technique; rather, they regard method as an art to stimulate the child's internal intellectual and spiritual powers:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Socratic Dialectic &amp; Question-Answer Method:</b> Socrates believed that knowledge is dormant in the child's soul; through probing, analytical questioning, the teacher acts as an intellectual midwife bringing latent ideas into conscious birth.</li>
-    <li><b style="color: ${themeColor};">Lecture and Discussion Method:</b> Inspiring teacher discourses that stimulate deep philosophical contemplation.</li>
-    <li><b style="color: ${themeColor};">Imitation of Worthy Role Models:</b> Direct observation and internalization of the noble traits of teachers and heroic historical figures.</li>
-    <li><b style="color: ${themeColor};">Role of the Teacher in Idealism:</b> The teacher occupies the absolute <b>central, exalted position</b> in the educational universe. Froebel compared the school to a <i>garden</i>, the child to a <i>tender plant</i>, and the teacher to a <i>wise gardener</i> who lovingly tends, prunes, and nurtures the soul.</li>
-    <li><b style="color: ${themeColor};">Concept of Discipline:</b> Rejects harsh corporal punishment. Advocates <b>Impressionistic Discipline</b> &mdash; where the saintly moral aura and dignified personality of the teacher inspire willing self-discipline and moral restraint in the pupil.</li>
+    <li><b style="color: #FF512F;">Socratic Dialectic &amp; Question-Answer Method:</b> Socrates believed that knowledge is dormant in the child's soul; through probing, analytical questioning, the teacher acts as an intellectual midwife bringing latent ideas into conscious birth.</li>
+    <li><b style="color: #FF512F;">Lecture and Discussion Method:</b> Inspiring teacher discourses that stimulate deep philosophical contemplation.</li>
+    <li><b style="color: #FF512F;">Imitation of Worthy Role Models:</b> Direct observation and internalization of the noble traits of teachers and heroic historical figures.</li>
+    <li><b style="color: #FF512F;">Role of the Teacher in Idealism:</b> The teacher occupies the absolute <b>central, exalted position</b> in the educational universe. Froebel compared the school to a <i>garden</i>, the child to a <i>tender plant</i>, and the teacher to a <i>wise gardener</i> who lovingly tends, prunes, and nurtures the soul.</li>
+    <li><b style="color: #FF512F;">Concept of Discipline:</b> Rejects harsh corporal punishment. Advocates <b>Impressionistic Discipline</b> &mdash; where the saintly moral aura and dignified personality of the teacher inspire willing self-discipline and moral restraint in the pupil.</li>
   </ul>
 
   <!-- ======================================================================== -->
   <!-- SCHOOL 2: PRAGMATISM                                                     -->
   <!-- ======================================================================== -->
   <div style="background: rgba(37, 99, 235, 0.08); border: 1.5px solid #2563EB; border-radius: 10px; padding: 18px; margin: 30px 0 20px 0;">
-    <h2 style="color: #60A5FA; margin: 0 0 10px 0; font-size: 20px; font-weight: bold;">⚡ B. Pragmatism in Education</h2>
+    <h2 style="color: #FF512F; font-weight: bold; margin: 0 0 10px 0; font-size: 20px; font-weight: bold;">⚡ B. Pragmatism in Education</h2>
     <p style="color: #FFFFFF; font-size: 15px; line-height: 1.7; margin: 0 0 12px 0;">
       <b style="color: #60A5FA;">Pragmatism</b> is a distinctly modern, realistic, practical philosophy that originated in the United States in the late 19th century. The word is derived from the Greek noun <b>"Pragma"</b>, meaning <i>action, deed, work, or practical business</i>. Pragmatism firmly rejects all fixed, eternal, and transcendental dogmas. It asserts that <b>reality is dynamic, plastic, and constantly in the making</b> through active human experimentation.
     </p>
     <p style="color: #BFDBFE; font-size: 14.5px; line-height: 1.6; margin: 0;">
-      <b>Major Proponents:</b> 
-      <br/>&bull; <b>Charles Sanders Peirce:</b> Founder of the pragmatic maxim of meaning.
-      <br/>&bull; <b>William James:</b> Popularized psychological and religious pragmatism (*"Truth happens to an idea; it is made true by events"*).
-      <br/>&bull; <b>John Dewey:</b> The undisputed titan of educational pragmatism (known as <i>Instrumentalism</i> or <i>Progressivism</i> &bull; author of <i>Democracy and Education</i>).
-      <br/>&bull; <b>William Heard Kilpatrick:</b> Dewey's foremost disciple and architect of the celebrated <i>Project Method</i>.
+      <b style="color: #FF512F; font-weight: bold;">Major Proponents:</b> 
+      <br/>&bull; <b style="color: #FF512F; font-weight: bold;">Charles Sanders Peirce:</b> Founder of the pragmatic maxim of meaning.
+      <br/>&bull; <b style="color: #FF512F; font-weight: bold;">William James:</b> Popularized psychological and religious pragmatism (*"Truth happens to an idea; it is made true by events"*).
+      <br/>&bull; <b style="color: #FF512F; font-weight: bold;">John Dewey:</b> The undisputed titan of educational pragmatism (known as <i>Instrumentalism</i> or <i>Progressivism</i> &bull; author of <i>Democracy and Education</i>).
+      <br/>&bull; <b style="color: #FF512F; font-weight: bold;">William Heard Kilpatrick:</b> Dewey's foremost disciple and architect of the celebrated <i>Project Method</i>.
     </p>
   </div>
 
-  <h3 style="color: #60A5FA; margin-top: 20px;">(i) Aims of Education under Pragmatism</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 20px;">(i) Aims of Education under Pragmatism</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 14px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(37, 99, 235, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #60A5FA; font-size: 16px;">1. No Fixed, Pre-Determined, or Eternal Aims:</b>
+      <b style="color: #FF512F; font-weight: bold; font-size: 16px;">1. No Fixed, Pre-Determined, or Eternal Aims:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Pragmatism categorically rejects fixed, unchangeable aims of education. As John Dewey famously asserted: <i>"Education is life itself, not a preparation for future living."</i> Aims grow out of existing life situations and change as circumstances change.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(37, 99, 235, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #60A5FA; font-size: 16px;">2. Continuous Reconstruction of Experience:</b>
+      <b style="color: #FF512F; font-weight: bold; font-size: 16px;">2. Continuous Reconstruction of Experience:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Education is the progressive reorganization, reconstruction, and enrichment of direct personal experience that adds to the meaning of experience and increases the ability to direct the course of subsequent experience.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(37, 99, 235, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #60A5FA; font-size: 16px;">3. Cultivation of Social Efficiency &amp; Democratic Living:</b>
+      <b style="color: #FF512F; font-weight: bold; font-size: 16px;">3. Cultivation of Social Efficiency &amp; Democratic Living:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Developing individuals who are economically self-reliant, socially adaptable, cooperative, and actively engaged in democratic problem-solving within their communities.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(37, 99, 235, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #60A5FA; font-size: 16px;">4. Creation of New Values (Dynamic Axiology):</b>
+      <b style="color: #FF512F; font-weight: bold; font-size: 16px;">4. Creation of New Values (Dynamic Axiology):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Values are not ready-made, eternal spiritual truths waiting to be discovered. Values are created, tested, and modified by human beings in the crucible of social action. What works beneficially for human welfare is valuable.
       </p>
     </div>
   </div>
 
-  <h3 style="color: #60A5FA; margin-top: 24px;">(ii) Pragmatic Curriculum</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(ii) Pragmatic Curriculum</h3>
   <p>Pragmatists advocate an <b style="color: #60A5FA;">Activity-centered and Experience-based Curriculum</b> constructed around four guiding pedagogical principles:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: #60A5FA;">1. Principle of Utility:</b> Every subject taught must have immediate practical utility in the child's everyday social and vocational life (General Sciences, Health, Civics, Mathematics, Domestic Arts).</li>
-    <li><b style="color: #60A5FA;">2. Principle of Child's Natural Interests:</b> Dewey identified four fundamental instincts in children: the instinct for <i>conversation/communication</i>, <i>inquiry/investigation</i>, <i>construction/creation</i>, and <i>artistic expression</i>. The curriculum must channel these natural drives.</li>
-    <li><b style="color: #60A5FA;">3. Principle of Experience and Activity:</b> Elimination of passive bookish subjects in favor of workshops, gardening, cooking, laboratory experimentation, and social service.</li>
-    <li><b style="color: #60A5FA;">4. Principle of Integration:</b> Breaking down rigid artificial barriers between distinct academic subjects. Knowledge is seen as an organic, unified whole applied to solve real-world problems.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">1. Principle of Utility:</b> Every subject taught must have immediate practical utility in the child's everyday social and vocational life (General Sciences, Health, Civics, Mathematics, Domestic Arts).</li>
+    <li><b style="color: #FF512F; font-weight: bold;">2. Principle of Child's Natural Interests:</b> Dewey identified four fundamental instincts in children: the instinct for <i>conversation/communication</i>, <i>inquiry/investigation</i>, <i>construction/creation</i>, and <i>artistic expression</i>. The curriculum must channel these natural drives.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">3. Principle of Experience and Activity:</b> Elimination of passive bookish subjects in favor of workshops, gardening, cooking, laboratory experimentation, and social service.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">4. Principle of Integration:</b> Breaking down rigid artificial barriers between distinct academic subjects. Knowledge is seen as an organic, unified whole applied to solve real-world problems.</li>
   </ul>
 
-  <h3 style="color: #60A5FA; margin-top: 24px;">(iii) Methods of Teaching under Pragmatism</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 24px;">(iii) Methods of Teaching under Pragmatism</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: #60A5FA;">Learning by Doing (Action First):</b> Knowledge gained through direct hands-on bodily experience is permanent, meaningful, and functional; passive memorization of abstract lecture notes is condemned.</li>
-    <li><b style="color: #60A5FA;">Problem-Solving Method:</b> The child confronts a genuine, real-life difficulty, analyzes the problem, formulates tentative hypotheses, gathers data, and verifies the solution through experimental testing.</li>
-    <li><b style="color: #60A5FA;">The Project Method (W.H. Kilpatrick):</b> Defined by Kilpatrick as <i>"a wholehearted purposeful activity proceeding in a social environment."</i></li>
-    <li><b style="color: #60A5FA;">Role of the Teacher in Pragmatism:</b> The teacher is NOT an authoritarian autocrat or a divine guru on a pedestal. The teacher is an experienced <b>facilitator, friend, guide, and senior partner</b> who arranges rich social learning environments and suggests purposeful challenges.</li>
-    <li><b style="color: #60A5FA;">Concept of Discipline:</b> Pragmatism rejects external regimentation and artificial punishments. It champions <b>Emancipatory / Social Discipline</b> &mdash; an internal discipline that develops naturally when students collaborate harmoniously on shared group projects.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">Learning by Doing (Action First):</b> Knowledge gained through direct hands-on bodily experience is permanent, meaningful, and functional; passive memorization of abstract lecture notes is condemned.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">Problem-Solving Method:</b> The child confronts a genuine, real-life difficulty, analyzes the problem, formulates tentative hypotheses, gathers data, and verifies the solution through experimental testing.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">The Project Method (W.H. Kilpatrick):</b> Defined by Kilpatrick as <i>"a wholehearted purposeful activity proceeding in a social environment."</i></li>
+    <li><b style="color: #FF512F; font-weight: bold;">Role of the Teacher in Pragmatism:</b> The teacher is NOT an authoritarian autocrat or a divine guru on a pedestal. The teacher is an experienced <b>facilitator, friend, guide, and senior partner</b> who arranges rich social learning environments and suggests purposeful challenges.</li>
+    <li><b style="color: #FF512F; font-weight: bold;">Concept of Discipline:</b> Pragmatism rejects external regimentation and artificial punishments. It champions <b>Emancipatory / Social Discipline</b> &mdash; an internal discipline that develops naturally when students collaborate harmoniously on shared group projects.</li>
   </ul>
 
   <!-- STANDALONE CLEAN DIAGRAM 2: IDEALISM VS PRAGMATISM ARCHITECTURE (SCIENCE-STYLE WHITE BG) -->
@@ -436,11 +436,11 @@ export const c12Edu1HtmlOverview = `
   </div>
 
   <!-- COMPARATIVE EVALUATION MATRIX -->
-  <h3 style="color: ${themeColor}; margin-top: 28px;">(iii) Comprehensive Comparative Matrix: Idealism vs Pragmatism</h3>
+  <h3 style="color: #FF512F; font-weight: bold; margin-top: 28px;">(iii) Comprehensive Comparative Matrix: Idealism vs Pragmatism</h3>
   <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid rgba(255, 81, 47, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; color: #FFFFFF;">
       <thead>
-        <tr style="background: rgba(255, 81, 47, 0.25); border-bottom: 2px solid ${themeColor};">
+        <tr style="background: rgba(255, 81, 47, 0.25); border-bottom: 2px solid #FF512F;">
           <th style="padding: 10px; width: 22%;">Dimension</th>
           <th style="padding: 10px; width: 39%;">Idealism</th>
           <th style="padding: 10px; width: 39%;">Pragmatism</th>
@@ -448,37 +448,37 @@ export const c12Edu1HtmlOverview = `
       </thead>
       <tbody>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">1. Ultimate Reality</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">1. Ultimate Reality</td>
           <td style="padding: 9px;">Spiritual mind, divine consciousness, eternal ideas.</td>
           <td style="padding: 9px;">Dynamic physical and social experience in continuous change.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">2. Nature of Truth</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">2. Nature of Truth</td>
           <td style="padding: 9px;">Absolute, eternal, unchangeable, pre-existing.</td>
           <td style="padding: 9px;">Relative, man-made, verified by practical utility (<i>"Truth is what works"</i>).</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">3. Aim of Education</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">3. Aim of Education</td>
           <td style="padding: 9px;">Self-realization, spiritual perfection, moral character.</td>
           <td style="padding: 9px;">Reconstruction of experience, social efficiency, democratic living.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">4. Curriculum Center</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">4. Curriculum Center</td>
           <td style="padding: 9px;">Idea-centered: Humanities, Religion, Ethics, Philosophy, Fine Arts.</td>
           <td style="padding: 9px;">Child &amp; Activity-centered: Sciences, Crafts, Practical projects, Civics.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">5. Teaching Methods</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">5. Teaching Methods</td>
           <td style="padding: 9px;">Socratic Question-Answer, Dialectics, Lecture, Intellectual debate.</td>
           <td style="padding: 9px;">Learning by Doing, Project Method, Problem-Solving, Scientific Inquiry.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">6. Role of Teacher</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">6. Role of Teacher</td>
           <td style="padding: 9px;">Supreme Guru, moral model, central gardener of the soul.</td>
           <td style="padding: 9px;">Facilitator, advisor, friendly guide, partner in experimentation.</td>
         </tr>
         <tr style="background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">7. Concept of Discipline</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF512F;">7. Concept of Discipline</td>
           <td style="padding: 9px;">Impressionistic discipline &mdash; inner moral restraint via teacher's aura.</td>
           <td style="padding: 9px;">Social / Emancipatory discipline &mdash; born of cooperative project work.</td>
         </tr>
@@ -496,8 +496,8 @@ export const c12Edu1HtmlOverview = `
 export const c12Edu1HtmlSolutions = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
-  <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid ${themeColor}; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
+  <div style="background: rgba(255, 81, 47, 0.08); border-left: 4px solid #FF512F; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
+    <h3 style="color: #FF512F; font-weight: bold; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
     <p style="margin: 0; color: #CBD5E1; font-size: 14px;">
       Class 12 Unit 1: Philosophical Foundations of Education (10 Marks) &bull; Strictly 12 VSAT (1 &amp; 2 Marks), 8 SAT (4 Marks), and 5 LAT (6 Marks).
     </p>
@@ -506,63 +506,63 @@ export const c12Edu1HtmlSolutions = `
   <!-- ======================================================================== -->
   <!-- SECTION A: VERY SHORT ANSWER TYPE (1 & 2 MARKS) - 12 QUESTIONS          -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">
+  <h2 style="color: #FF512F; font-weight: bold; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 25px;">
     Section A: Very Short Answer Questions (1 &amp; 2 Marks)
   </h2>
 
   <!-- Q1 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q1: What is the etymological derivation of the word 'Philosophy'?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q1: What is the etymological derivation of the word 'Philosophy'?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The word <b style="color: ${themeColor};">"Philosophy"</b> is derived from two ancient Greek root words &mdash; <i>'Philos'</i> (meaning Love) and <i>'Sophia'</i> (meaning Wisdom). Hence, Philosophy literally translates to the <b>"Love of Wisdom"</b>.
+      The word <b style="color: #FF512F;">"Philosophy"</b> is derived from two ancient Greek root words &mdash; <i>'Philos'</i> (meaning Love) and <i>'Sophia'</i> (meaning Wisdom). Hence, Philosophy literally translates to the <b>"Love of Wisdom"</b>.
     </p>
   </div>
 
   <!-- Q2 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q2: Who famously stated that "Education is the dynamic side of philosophy"? Explain in one sentence.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q2: Who famously stated that "Education is the dynamic side of philosophy"? Explain in one sentence.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: ${themeColor};">Sir John Adams</b> stated this. It means that while philosophy formulates the theoretical ideals and blueprints of life, education is the active, practical machinery that translates those philosophical beliefs into living human conduct.
+      <b style="color: #FF512F;">Sir John Adams</b> stated this. It means that while philosophy formulates the theoretical ideals and blueprints of life, education is the active, practical machinery that translates those philosophical beliefs into living human conduct.
     </p>
   </div>
 
   <!-- Q3 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q3: What is the etymological origin of the term 'Pragmatism'?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q3: What is the etymological origin of the term 'Pragmatism'?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The term <b style="color: ${themeColor};">"Pragmatism"</b> is derived from the Greek word <i>'Pragma'</i>, which means <b>action, deed, work, or practical activity</b>.
+      The term <b style="color: #FF512F;">"Pragmatism"</b> is derived from the Greek word <i>'Pragma'</i>, which means <b>action, deed, work, or practical activity</b>.
     </p>
   </div>
 
   <!-- Q4 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q4: Define Idealism as a school of educational philosophy.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q4: Define Idealism as a school of educational philosophy.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: ${themeColor};">Idealism</b> is that philosophical doctrine which asserts that the ultimate reality is spiritual, ideal, and mental, and that the material physical world is subordinate and transient compared to eternal universal spiritual values.
+      <b style="color: #FF512F;">Idealism</b> is that philosophical doctrine which asserts that the ultimate reality is spiritual, ideal, and mental, and that the material physical world is subordinate and transient compared to eternal universal spiritual values.
     </p>
   </div>
 
   <!-- Q5 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q5: Name two Western and two Indian idealist educational philosophers.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q5: Name two Western and two Indian idealist educational philosophers.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      &bull; <b>Western Idealists:</b> Plato and Friedrich Froebel.
+      &bull; <b style="color: #FF512F; font-weight: bold;">Western Idealists:</b> Plato and Friedrich Froebel.
       <br/>
-      &bull; <b>Indian Idealists:</b> Swami Vivekananda and Sri Aurobindo.
+      &bull; <b style="color: #FF512F; font-weight: bold;">Indian Idealists:</b> Swami Vivekananda and Sri Aurobindo.
     </p>
   </div>
 
   <!-- Q6 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q6: State the three eternal spiritual values emphasized by Idealism.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q6: State the three eternal spiritual values emphasized by Idealism.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The three absolute eternal values are: (1) <b style="color: ${themeColor};">Satyam (Truth)</b>, (2) <b style="color: ${themeColor};">Shivam (Goodness)</b>, and (3) <b style="color: ${themeColor};">Sundaram (Beauty)</b>.
+      The three absolute eternal values are: (1) <b style="color: #FF512F;">Satyam (Truth)</b>, (2) <b style="color: #FF512F;">Shivam (Goodness)</b>, and (3) <b style="color: #FF512F;">Sundaram (Beauty)</b>.
     </p>
   </div>
 
   <!-- Q7 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q7: What is meant by "Learning by Doing" in Pragmatism?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q7: What is meant by "Learning by Doing" in Pragmatism?</h3>
     <p style="color: #FFFFFF; margin: 0;">
       It is John Dewey's foundational pedagogical principle which asserts that true learning occurs through direct, hands-on, practical activity and personal experimentation rather than passive listening to abstract lectures.
     </p>
@@ -570,23 +570,23 @@ export const c12Edu1HtmlSolutions = `
 
   <!-- Q8 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q8: Who propounded the 'Project Method' in education, and to which philosophical school does it belong?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q8: Who propounded the 'Project Method' in education, and to which philosophical school does it belong?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The <b style="color: ${themeColor};">Project Method</b> was propounded by <b>William Heard Kilpatrick</b> (a disciple of John Dewey), and it belongs to the school of <b>Pragmatism</b>.
+      The <b style="color: #FF512F;">Project Method</b> was propounded by <b>William Heard Kilpatrick</b> (a disciple of John Dewey), and it belongs to the school of <b>Pragmatism</b>.
     </p>
   </div>
 
   <!-- Q9 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q9: Contrast the role of the teacher in Idealism and Pragmatism in two points.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q9: Contrast the role of the teacher in Idealism and Pragmatism in two points.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      In <b style="color: ${themeColor};">Idealism</b>, the teacher is central, exalted as a spiritual guru and moral torchbearer. In <b style="color: ${themeColor};">Pragmatism</b>, the teacher is a democratic facilitator, advisor, and partner in collaborative social inquiry.
+      In <b style="color: #FF512F;">Idealism</b>, the teacher is central, exalted as a spiritual guru and moral torchbearer. In <b style="color: #FF512F;">Pragmatism</b>, the teacher is a democratic facilitator, advisor, and partner in collaborative social inquiry.
     </p>
   </div>
 
   <!-- Q10 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q10: Why do pragmatists reject fixed and predetermined aims of education?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q10: Why do pragmatists reject fixed and predetermined aims of education?</h3>
     <p style="color: #FFFFFF; margin: 0;">
       Because pragmatists believe reality and human society are in a state of continuous, dynamic change; therefore, fixed, rigid, eternal aims restrict growth. For pragmatists, <i>"education is life itself, not a preparation for life."</i>
     </p>
@@ -594,230 +594,230 @@ export const c12Edu1HtmlSolutions = `
 
   <!-- Q11 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q11: What type of discipline is advocated by Idealism?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q11: What type of discipline is advocated by Idealism?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      Idealism advocates <b style="color: ${themeColor};">Impressionistic Discipline</b> &mdash; inner moral restraint and self-control cultivated through the sublime, inspiring moral influence and noble personality of the teacher.
+      Idealism advocates <b style="color: #FF512F;">Impressionistic Discipline</b> &mdash; inner moral restraint and self-control cultivated through the sublime, inspiring moral influence and noble personality of the teacher.
     </p>
   </div>
 
   <!-- Q12 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q12: Enumerate the four essential steps of the Project Method.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q12: Enumerate the four essential steps of the Project Method.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The four steps formulated by Kilpatrick are: (1) <b style="color: ${themeColor};">Purposing</b>, (2) <b style="color: ${themeColor};">Planning</b>, (3) <b style="color: ${themeColor};">Executing</b>, and (4) <b style="color: ${themeColor};">Judging</b> (Evaluating).
+      The four steps formulated by Kilpatrick are: (1) <b style="color: #FF512F;">Purposing</b>, (2) <b style="color: #FF512F;">Planning</b>, (3) <b style="color: #FF512F;">Executing</b>, and (4) <b style="color: #FF512F;">Judging</b> (Evaluating).
     </p>
   </div>
 
   <!-- ======================================================================== -->
   <!-- SECTION B: SHORT ANSWER TYPE (4 MARKS) - 8 QUESTIONS                     -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">
+  <h2 style="color: #FF512F; font-weight: bold; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 30px;">
     Section B: Short Answer Questions (4 Marks)
   </h2>
 
   <!-- Q13 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q13: Explain the intimate relationship between Philosophy and Education with four key arguments.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q13: Explain the intimate relationship between Philosophy and Education with four key arguments.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Two Sides of the Same Coin:</b> Philosophy represents the contemplative, theoretical side of life's ideals; Education represents the active, operational side that implements those ideals (Adams).</li>
-      <li><b style="color: ${themeColor};">2. Philosophy Determines the Aims of Education:</b> Without philosophy, educators cannot know what direction to guide youth; every educational aim reflects a philosophical worldview.</li>
-      <li><b style="color: ${themeColor};">3. Philosophy Shapes Curriculum and Method:</b> Idealist philosophy produces a humanities curriculum with dialectics; Pragmatic philosophy produces an activity curriculum with projects.</li>
-      <li><b style="color: ${themeColor};">4. Great Philosophers were Great Educators:</b> Historical titans like Socrates, Plato, Rousseau, Dewey, Gandhi, and Tagore proved their philosophies through concrete educational experiments.</li>
+      <li><b style="color: #FF512F;">1. Two Sides of the Same Coin:</b> Philosophy represents the contemplative, theoretical side of life's ideals; Education represents the active, operational side that implements those ideals (Adams).</li>
+      <li><b style="color: #FF512F;">2. Philosophy Determines the Aims of Education:</b> Without philosophy, educators cannot know what direction to guide youth; every educational aim reflects a philosophical worldview.</li>
+      <li><b style="color: #FF512F;">3. Philosophy Shapes Curriculum and Method:</b> Idealist philosophy produces a humanities curriculum with dialectics; Pragmatic philosophy produces an activity curriculum with projects.</li>
+      <li><b style="color: #FF512F;">4. Great Philosophers were Great Educators:</b> Historical titans like Socrates, Plato, Rousseau, Dewey, Gandhi, and Tagore proved their philosophies through concrete educational experiments.</li>
     </ul>
   </div>
 
   <!-- Q14 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q14: Discuss the scope of Educational Philosophy in shaping school educational policies.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q14: Discuss the scope of Educational Philosophy in shaping school educational policies.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Formulating National Educational Aims:</b> Resolves fundamental questions regarding the balance between individual self-actualization and social manpower demands.</li>
-      <li><b style="color: ${themeColor};">2. Determining Epistemological Frameworks for Curriculum:</b> Guides boards in structuring syllabi based on how human knowledge is authenticated (logic, inquiry, experimentation).</li>
-      <li><b style="color: ${themeColor};">3. Establishing Disciplinary Ethics:</b> Replaces punitive, authoritarian punishment policies with restorative and self-regulatory disciplinary systems.</li>
-      <li><b style="color: ${themeColor};">4. Clarifying Democratic and Secular Values:</b> Guides multi-cultural school communities in celebrating constitutional diversity, equity, and social justice.</li>
+      <li><b style="color: #FF512F;">1. Formulating National Educational Aims:</b> Resolves fundamental questions regarding the balance between individual self-actualization and social manpower demands.</li>
+      <li><b style="color: #FF512F;">2. Determining Epistemological Frameworks for Curriculum:</b> Guides boards in structuring syllabi based on how human knowledge is authenticated (logic, inquiry, experimentation).</li>
+      <li><b style="color: #FF512F;">3. Establishing Disciplinary Ethics:</b> Replaces punitive, authoritarian punishment policies with restorative and self-regulatory disciplinary systems.</li>
+      <li><b style="color: #FF512F;">4. Clarifying Democratic and Secular Values:</b> Guides multi-cultural school communities in celebrating constitutional diversity, equity, and social justice.</li>
     </ul>
   </div>
 
   <!-- Q15 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q15: Explain four major aims of education according to the school of Idealism.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q15: Explain four major aims of education according to the school of Idealism.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Self-Realization (Exaltation of Personality):</b> Awakening the higher spiritual consciousness within the student, liberating them from crude animal instincts.</li>
-      <li><b style="color: ${themeColor};">2. Realization of Universal Spiritual Values:</b> Guiding learners to perceive, love, and practice Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram) throughout life.</li>
-      <li><b style="color: ${themeColor};">3. Conservation and Transmission of Cultural Heritage:</b> Handing down the spiritual, artistic, literary, and philosophical achievements of human civilization.</li>
-      <li><b style="color: ${themeColor};">4. Development of Moral Conscience:</b> Instilling unshakeable ethical principles, intellectual humility, and dedication to righteous duty over selfish desire.</li>
+      <li><b style="color: #FF512F;">1. Self-Realization (Exaltation of Personality):</b> Awakening the higher spiritual consciousness within the student, liberating them from crude animal instincts.</li>
+      <li><b style="color: #FF512F;">2. Realization of Universal Spiritual Values:</b> Guiding learners to perceive, love, and practice Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram) throughout life.</li>
+      <li><b style="color: #FF512F;">3. Conservation and Transmission of Cultural Heritage:</b> Handing down the spiritual, artistic, literary, and philosophical achievements of human civilization.</li>
+      <li><b style="color: #FF512F;">4. Development of Moral Conscience:</b> Instilling unshakeable ethical principles, intellectual humility, and dedication to righteous duty over selfish desire.</li>
     </ul>
   </div>
 
   <!-- Q16 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q16: Describe the nature of curriculum advocated by Idealism. Why are humanities given supreme importance?</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q16: Describe the nature of curriculum advocated by Idealism. Why are humanities given supreme importance?</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Idea-Centered Structure:</b> Built around the eternal spiritual experiences of humanity rather than transient physical utility or commercial fads.</li>
-      <li><b style="color: ${themeColor};">2. Tripartite Division:</b> Encompasses Intellectual subjects (Philosophy, Literature, Mathematics), Moral subjects (Ethics, Religion, History), and Aesthetic subjects (Fine Arts, Music, Poetry).</li>
-      <li><b style="color: ${themeColor};">3. Supremacy of Humanities:</b> Humanities deal directly with the human mind, soul, character, and eternal ideals; hence, they are placed above material physical sciences.</li>
-      <li><b style="color: ${themeColor};">4. Auxiliary Role of Sciences:</b> Physical sciences and bodily hygiene are included merely to keep the body fit as the sacred dwelling place of the immortal soul.</li>
+      <li><b style="color: #FF512F;">1. Idea-Centered Structure:</b> Built around the eternal spiritual experiences of humanity rather than transient physical utility or commercial fads.</li>
+      <li><b style="color: #FF512F;">2. Tripartite Division:</b> Encompasses Intellectual subjects (Philosophy, Literature, Mathematics), Moral subjects (Ethics, Religion, History), and Aesthetic subjects (Fine Arts, Music, Poetry).</li>
+      <li><b style="color: #FF512F;">3. Supremacy of Humanities:</b> Humanities deal directly with the human mind, soul, character, and eternal ideals; hence, they are placed above material physical sciences.</li>
+      <li><b style="color: #FF512F;">4. Auxiliary Role of Sciences:</b> Physical sciences and bodily hygiene are included merely to keep the body fit as the sacred dwelling place of the immortal soul.</li>
     </ul>
   </div>
 
   <!-- Q17 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q17: Explain the fundamental philosophical tenets of Pragmatism and their impact on education.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q17: Explain the fundamental philosophical tenets of Pragmatism and their impact on education.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Dynamic Concept of Reality:</b> Pragmatism rejects static, pre-existing eternal worlds; reality is ever-changing and shaped by human action.</li>
-      <li><b style="color: ${themeColor};">2. Utilitarian Theory of Truth:</b> An idea is true only if it works in practice and produces beneficial human consequences (<i>Instrumentalism</i>).</li>
-      <li><b style="color: ${themeColor};">3. Education as Life Itself:</b> School is not an artificial preparatory ground for adulthood; it is an active miniature democratic society where students live and learn collaboratively.</li>
-      <li><b style="color: ${themeColor};">4. Child-Centered Progressive Pedagogy:</b> Shifted classroom practice from passive rote textbook drilling to active student inquiry, experimental projects, and social problem-solving.</li>
+      <li><b style="color: #FF512F;">1. Dynamic Concept of Reality:</b> Pragmatism rejects static, pre-existing eternal worlds; reality is ever-changing and shaped by human action.</li>
+      <li><b style="color: #FF512F;">2. Utilitarian Theory of Truth:</b> An idea is true only if it works in practice and produces beneficial human consequences (<i>Instrumentalism</i>).</li>
+      <li><b style="color: #FF512F;">3. Education as Life Itself:</b> School is not an artificial preparatory ground for adulthood; it is an active miniature democratic society where students live and learn collaboratively.</li>
+      <li><b style="color: #FF512F;">4. Child-Centered Progressive Pedagogy:</b> Shifted classroom practice from passive rote textbook drilling to active student inquiry, experimental projects, and social problem-solving.</li>
     </ul>
   </div>
 
   <!-- Q18 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q18: Analyze the curriculum advocated by Pragmatism based on its core principles.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q18: Analyze the curriculum advocated by Pragmatism based on its core principles.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Principle of Utility:</b> Subjects must have direct practical relevance to the child's contemporary life (Health, Sanitation, Civics, Mathematics).</li>
-      <li><b style="color: ${themeColor};">2. Principle of Child's Natural Interests:</b> Aligned with Dewey's four natural drives &mdash; conversation, exploration, construction, and artistic expression.</li>
-      <li><b style="color: ${themeColor};">3. Principle of Integration:</b> Rejects watertight separation between subjects; weaves sciences, social studies, and languages around real-world projects.</li>
-      <li><b style="color: ${themeColor};">4. Inclusion of Practical Crafts:</b> Workshops, cooking, gardening, woodwork, and industrial arts are treated as primary learning labs rather than extracurricular hobbies.</li>
+      <li><b style="color: #FF512F;">1. Principle of Utility:</b> Subjects must have direct practical relevance to the child's contemporary life (Health, Sanitation, Civics, Mathematics).</li>
+      <li><b style="color: #FF512F;">2. Principle of Child's Natural Interests:</b> Aligned with Dewey's four natural drives &mdash; conversation, exploration, construction, and artistic expression.</li>
+      <li><b style="color: #FF512F;">3. Principle of Integration:</b> Rejects watertight separation between subjects; weaves sciences, social studies, and languages around real-world projects.</li>
+      <li><b style="color: #FF512F;">4. Inclusion of Practical Crafts:</b> Workshops, cooking, gardening, woodwork, and industrial arts are treated as primary learning labs rather than extracurricular hobbies.</li>
     </ul>
   </div>
 
   <!-- Q19 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q19: Explain the Project Method of teaching, detailing its four operational stages.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q19: Explain the Project Method of teaching, detailing its four operational stages.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Stage 1 &mdash; Purposing:</b> The students, guided by the teacher, identify and select a meaningful, wholehearted goal arising from genuine real-life needs.</li>
-      <li><b style="color: ${themeColor};">2. Stage 2 &mdash; Planning:</b> Students collaboratively discuss, divide labor, blueprint procedures, and gather required materials and tools.</li>
-      <li><b style="color: ${themeColor};">3. Stage 3 &mdash; Executing:</b> The active hands-on phase where learners build, calculate, experiment, collect data, and carry out the physical tasks.</li>
-      <li><b style="color: ${themeColor};">4. Stage 4 &mdash; Judging:</b> Critical self-evaluation where students compare final outcomes against initial goals, review mistakes, and record learning gains.</li>
+      <li><b style="color: #FF512F;">1. Stage 1 &mdash; Purposing:</b> The students, guided by the teacher, identify and select a meaningful, wholehearted goal arising from genuine real-life needs.</li>
+      <li><b style="color: #FF512F;">2. Stage 2 &mdash; Planning:</b> Students collaboratively discuss, divide labor, blueprint procedures, and gather required materials and tools.</li>
+      <li><b style="color: #FF512F;">3. Stage 3 &mdash; Executing:</b> The active hands-on phase where learners build, calculate, experiment, collect data, and carry out the physical tasks.</li>
+      <li><b style="color: #FF512F;">4. Stage 4 &mdash; Judging:</b> Critical self-evaluation where students compare final outcomes against initial goals, review mistakes, and record learning gains.</li>
     </ul>
   </div>
 
   <!-- Q20 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q20: Distinguish between Idealism and Pragmatism regarding the concept and administration of student discipline.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q20: Distinguish between Idealism and Pragmatism regarding the concept and administration of student discipline.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Basis of Discipline:</b> Idealism bases discipline on internal moral restraint and spiritual reverence; Pragmatism bases discipline on social cooperation and democratic teamwork.</li>
-      <li><b style="color: ${themeColor};">2. Role of the Teacher:</b> In Idealism, the teacher's noble moral aura inspires willing self-discipline (<i>Impressionistic discipline</i>); in Pragmatism, discipline arises from shared project duties.</li>
-      <li><b style="color: ${themeColor};">3. Nature of Freedom:</b> Idealism grants freedom regulated by ethical ideals; Pragmatism grants broad social freedom (<i>Emancipatory discipline</i>) through group responsibility.</li>
-      <li><b style="color: ${themeColor};">4. Rejection of Corporal Punishment:</b> Both philosophies strictly reject corporal punishment &mdash; Idealism because it insults the soul, Pragmatism because it destroys democratic participation.</li>
+      <li><b style="color: #FF512F;">1. Basis of Discipline:</b> Idealism bases discipline on internal moral restraint and spiritual reverence; Pragmatism bases discipline on social cooperation and democratic teamwork.</li>
+      <li><b style="color: #FF512F;">2. Role of the Teacher:</b> In Idealism, the teacher's noble moral aura inspires willing self-discipline (<i>Impressionistic discipline</i>); in Pragmatism, discipline arises from shared project duties.</li>
+      <li><b style="color: #FF512F;">3. Nature of Freedom:</b> Idealism grants freedom regulated by ethical ideals; Pragmatism grants broad social freedom (<i>Emancipatory discipline</i>) through group responsibility.</li>
+      <li><b style="color: #FF512F;">4. Rejection of Corporal Punishment:</b> Both philosophies strictly reject corporal punishment &mdash; Idealism because it insults the soul, Pragmatism because it destroys democratic participation.</li>
     </ul>
   </div>
 
   <!-- ======================================================================== -->
   <!-- SECTION C: LONG ANSWER TYPE (6 MARKS) - 5 QUESTIONS                      -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">
+  <h2 style="color: #FF512F; font-weight: bold; border-bottom: 2px solid #FF512F; padding-bottom: 6px; margin-top: 30px;">
     Section C: Long Answer Questions (6 Marks)
   </h2>
 
   <!-- Q21 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q21: What is Educational Philosophy? Discuss in detail its meaning, scope, and why education without philosophy is blind and philosophy without education is invalid.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q21: What is Educational Philosophy? Discuss in detail its meaning, scope, and why education without philosophy is blind and philosophy without education is invalid.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Meaning &amp; Conceptual Foundation:</b><br/>
+      <p><b style="color: #FF512F;">1. Meaning &amp; Conceptual Foundation:</b><br/>
       Derived from the Greek words <i>Philos</i> (Love) and <i>Sophia</i> (Wisdom), Philosophy is the critical pursuit of ultimate truth and reality. When philosophical inquiry is applied to solve fundamental problems of schooling &mdash; aims, curricula, teaching methods, and moral discipline &mdash; it constitutes <b>Educational Philosophy</b>.</p>
 
-      <p><b style="color: ${themeColor};">2. The Symbiotic Interdependence:</b><br/>
+      <p><b style="color: #FF512F;">2. The Symbiotic Interdependence:</b><br/>
       As Sir John Adams brilliantly formulated, <i>"Education is the dynamic side of philosophy."</i> Education without philosophy is blind because it possesses no compass, no clear aims, and no ethical foundation; it degenerates into chaotic, mechanical drill. Conversely, philosophy without education is invalid and toothless because without education to cultivate philosophical ideas in young minds, philosophy remains sterile speculative theory.</p>
 
-      <p><b style="color: ${themeColor};">3. Comprehensive Scope of Educational Philosophy:</b></p>
+      <p><b style="color: #FF512F;">3. Comprehensive Scope of Educational Philosophy:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Aims of Education:</b> Clarifies whether schools should produce spiritual seekers, democratic citizens, or economic technicians.</li>
-        <li><b style="color: ${themeColor};">(b) Curricular Framework:</b> Determines subject hierarchies based on epistemological and axiological criteria.</li>
-        <li><b style="color: ${themeColor};">(c) Pedagogical Methods:</b> Derives teaching techniques from theories of knowledge (dialectic vs. experimentation).</li>
-        <li><b style="color: ${themeColor};">(d) School Disciplinary Policies:</b> Formulates ethical codes for student conduct and classroom management.</li>
+        <li><b style="color: #FF512F;">(a) Aims of Education:</b> Clarifies whether schools should produce spiritual seekers, democratic citizens, or economic technicians.</li>
+        <li><b style="color: #FF512F;">(b) Curricular Framework:</b> Determines subject hierarchies based on epistemological and axiological criteria.</li>
+        <li><b style="color: #FF512F;">(c) Pedagogical Methods:</b> Derives teaching techniques from theories of knowledge (dialectic vs. experimentation).</li>
+        <li><b style="color: #FF512F;">(d) School Disciplinary Policies:</b> Formulates ethical codes for student conduct and classroom management.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">4. Conclusion:</b><br/>
+      <p><b style="color: #FF512F;">4. Conclusion:</b><br/>
       Every educational reformer &mdash; from Plato and Rousseau to Dewey and Mahatma Gandhi &mdash; was first and foremost a profound philosopher who created an educational system to realize their philosophical vision.</p>
     </div>
   </div>
 
   <!-- Q22 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q22: Critically examine the philosophy of Idealism in education with special reference to its aims of education, curriculum, methods of teaching, and the role of the teacher.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q22: Critically examine the philosophy of Idealism in education with special reference to its aims of education, curriculum, methods of teaching, and the role of the teacher.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Core Metaphysical Tenet:</b><br/>
+      <p><b style="color: #FF512F;">1. Core Metaphysical Tenet:</b><br/>
       Idealism asserts that ultimate reality is spiritual and mental. Material nature is ephemeral, while ideas and moral virtues are eternal. The human soul is a spark of universal spiritual divinity.</p>
 
-      <p><b style="color: ${themeColor};">2. Aims of Education under Idealism:</b></p>
+      <p><b style="color: #FF512F;">2. Aims of Education under Idealism:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Self-Realization:</b> The supreme goal is the unfolding of the child's higher spiritual self.</li>
-        <li><b style="color: ${themeColor};">(b) Realization of Absolute Values:</b> Experiencing, preserving, and radiating Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram).</li>
-        <li><b style="color: ${themeColor};">(c) Moral Character Building:</b> Subordinating animal passions to rational, altruistic moral laws.</li>
+        <li><b style="color: #FF512F;">(a) Self-Realization:</b> The supreme goal is the unfolding of the child's higher spiritual self.</li>
+        <li><b style="color: #FF512F;">(b) Realization of Absolute Values:</b> Experiencing, preserving, and radiating Truth (Satyam), Goodness (Shivam), and Beauty (Sundaram).</li>
+        <li><b style="color: #FF512F;">(c) Moral Character Building:</b> Subordinating animal passions to rational, altruistic moral laws.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. Curricular Structure:</b><br/>
+      <p><b style="color: #FF512F;">3. Curricular Structure:</b><br/>
       An idea-centered curriculum dominated by humanities, philosophy, ethics, religion, logic, and fine arts. Physical sciences are recognized only as supportive instruments for bodily health.</p>
 
-      <p><b style="color: ${themeColor};">4. Pedagogical Methods &amp; The Exalted Teacher:</b><br/>
+      <p><b style="color: #FF512F;">4. Pedagogical Methods &amp; The Exalted Teacher:</b><br/>
       Methods include the Socratic questioning technique, intellectual debate, lecture, and meditation. The teacher occupies the supreme pedestal in Idealism &mdash; depicted by Froebel as the master gardener who nurtures the tender human plant into spiritual bloom through <b>Impressionistic Discipline</b>.</p>
     </div>
   </div>
 
   <!-- Q23 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q23: Discuss in detail the educational philosophy of Pragmatism with special focus on its epistemological tenets, aims of education, and the Project Method of teaching.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q23: Discuss in detail the educational philosophy of Pragmatism with special focus on its epistemological tenets, aims of education, and the Project Method of teaching.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Meaning &amp; Epistemological Foundation:</b><br/>
+      <p><b style="color: #FF512F;">1. Meaning &amp; Epistemological Foundation:</b><br/>
       Originating from Greek <i>Pragma</i> (action), Pragmatism (developed by Peirce, James, and Dewey) rejects static metaphysics. It holds that truth is not absolute or pre-existing; truth is made in the process of experience. An idea is true if and only if it works beneficially when applied to solve real problems.</p>
 
-      <p><b style="color: ${themeColor};">2. Pragmatic Aims of Education:</b></p>
+      <p><b style="color: #FF512F;">2. Pragmatic Aims of Education:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Continuous Reconstruction of Experience:</b> Education is an ongoing process of growth, not a preparation for remote future living.</li>
-        <li><b style="color: ${themeColor};">(b) Cultivation of Social Efficiency:</b> Preparing students for active democratic participation, cooperative teamwork, and practical problem-solving.</li>
-        <li><b style="color: ${themeColor};">(c) No Predetermined Finalities:</b> Aims evolve dynamically as human society progresses.</li>
+        <li><b style="color: #FF512F;">(a) Continuous Reconstruction of Experience:</b> Education is an ongoing process of growth, not a preparation for remote future living.</li>
+        <li><b style="color: #FF512F;">(b) Cultivation of Social Efficiency:</b> Preparing students for active democratic participation, cooperative teamwork, and practical problem-solving.</li>
+        <li><b style="color: #FF512F;">(c) No Predetermined Finalities:</b> Aims evolve dynamically as human society progresses.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. The Project Method (W.H. Kilpatrick):</b><br/>
+      <p><b style="color: #FF512F;">3. The Project Method (W.H. Kilpatrick):</b><br/>
       The crowning pedagogical contribution of Pragmatism. Kilpatrick defined it as <i>"a wholehearted purposeful activity proceeding in a social environment."</i> It moves through four systematic steps: (1) <b>Purposing</b> (students define their goal), (2) <b>Planning</b> (collaborative blueprinting), (3) <b>Executing</b> (practical work), and (4) <b>Judging</b> (objective self-assessment).</p>
 
-      <p><b style="color: ${themeColor};">4. Educational Legacy:</b><br/>
+      <p><b style="color: #FF512F;">4. Educational Legacy:</b><br/>
       Pragmatism revolutionized global education by dethroning passive bookish memorization and establishing child-centered, experiential learning.</p>
     </div>
   </div>
 
   <!-- Q24 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q24: Critically compare and contrast Idealism and Pragmatism on the parameters of Metaphysics, Epistemology, Axiology, Curriculum, and Pedagogical Methods.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q24: Critically compare and contrast Idealism and Pragmatism on the parameters of Metaphysics, Epistemology, Axiology, Curriculum, and Pedagogical Methods.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Metaphysical Comparison:</b><br/>
+      <p><b style="color: #FF512F;">1. Metaphysical Comparison:</b><br/>
       Idealism views ultimate reality as spiritual, mental, and eternal (Plato's world of ideas). Pragmatism views reality as physical, social, and ever-evolving through human action (Dewey's changing universe).</p>
 
-      <p><b style="color: ${themeColor};">2. Epistemological Comparison:</b><br/>
+      <p><b style="color: #FF512F;">2. Epistemological Comparison:</b><br/>
       Idealism holds that knowledge is intuitive, rational, and revealed through contemplation. Pragmatism holds that knowledge is empirical, instrumental, and validated strictly by practical experimental results.</p>
 
-      <p><b style="color: ${themeColor};">3. Axiological Comparison (Values):</b><br/>
+      <p><b style="color: #FF512F;">3. Axiological Comparison (Values):</b><br/>
       Idealism asserts that values (Truth, Goodness, Beauty) are absolute, eternal, and pre-existing. Pragmatism asserts that values are relative, man-made, and constantly re-tested in social living.</p>
 
-      <p><b style="color: ${themeColor};">4. Curriculum and Teaching Methods:</b><br/>
+      <p><b style="color: #FF512F;">4. Curriculum and Teaching Methods:</b><br/>
       Idealism promotes an idea-centered curriculum rich in humanities, philosophy, and religion taught via Socratic questioning and lectures. Pragmatism promotes an activity-centered curriculum rich in sciences, vocational crafts, and social projects taught via <i>Learning by Doing</i>.</p>
 
-      <p><b style="color: ${themeColor};">5. Synthesis:</b><br/>
+      <p><b style="color: #FF512F;">5. Synthesis:</b><br/>
       While Idealism provides education with lofty moral aims and spiritual vision, Pragmatism equips it with dynamic scientific methods and practical democratic relevance.</p>
     </div>
   </div>
 
   <!-- Q25 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q25: Evaluate the relevance and applicability of both Idealism and Pragmatism in addressing the ethical and technological challenges of 21st-century contemporary school education.</h3>
+    <h3 style="color: #FF512F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q25: Evaluate the relevance and applicability of both Idealism and Pragmatism in addressing the ethical and technological challenges of 21st-century contemporary school education.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. The Contemporary Educational Dilemma:</b><br/>
+      <p><b style="color: #FF512F;">1. The Contemporary Educational Dilemma:</b><br/>
       21st-century education is trapped between rapid technological disruption (Artificial Intelligence, digital connectivity) and an acute moral vacuum (erosion of values, cyber-crimes, consumerist greed). Neither philosophy alone is sufficient; modern education requires an eclectic synthesis of both.</p>
 
-      <p><b style="color: ${themeColor};">2. Relevance of Idealism Today:</b></p>
+      <p><b style="color: #FF512F;">2. Relevance of Idealism Today:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Moral Compass in a Materialistic Age:</b> Idealism provides students with unshakeable ethical grounding &mdash; integrity, compassion, and human dignity &mdash; safeguarding youth from becoming soulless technocrats.</li>
-        <li><b style="color: ${themeColor};">(b) Reverence for the Teacher:</b> Amidst impersonal digital screens, Idealism restores the sacred personal mentor-student bond, affirming that values are transmitted through living human inspiration.</li>
+        <li><b style="color: #FF512F;">(a) Moral Compass in a Materialistic Age:</b> Idealism provides students with unshakeable ethical grounding &mdash; integrity, compassion, and human dignity &mdash; safeguarding youth from becoming soulless technocrats.</li>
+        <li><b style="color: #FF512F;">(b) Reverence for the Teacher:</b> Amidst impersonal digital screens, Idealism restores the sacred personal mentor-student bond, affirming that values are transmitted through living human inspiration.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. Relevance of Pragmatism Today:</b></p>
+      <p><b style="color: #FF512F;">3. Relevance of Pragmatism Today:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Competency-Based Learning (NEP 2020):</b> Dewey's experiential <i>Learning by Doing</i> and Kilpatrick's Project Method form the foundational bedrock of modern STEM, vocational education, and collaborative problem-solving.</li>
-        <li><b style="color: ${themeColor};">(b) Democratic Social Cohesion:</b> Pragmatism trains students to respect diverse viewpoints, deconstruct dogma through scientific inquiry, and build participatory communities.</li>
+        <li><b style="color: #FF512F;">(a) Competency-Based Learning (NEP 2020):</b> Dewey's experiential <i>Learning by Doing</i> and Kilpatrick's Project Method form the foundational bedrock of modern STEM, vocational education, and collaborative problem-solving.</li>
+        <li><b style="color: #FF512F;">(b) Democratic Social Cohesion:</b> Pragmatism trains students to respect diverse viewpoints, deconstruct dogma through scientific inquiry, and build participatory communities.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">4. Conclusion:</b><br/>
+      <p><b style="color: #FF512F;">4. Conclusion:</b><br/>
       The ideal school of the 21st century must blend <b>Idealist ends</b> (noble character, spiritual depth, universal human values) with <b>Pragmatic means</b> (scientific projects, technological mastery, and practical social problem-solving).</p>
     </div>
   </div>

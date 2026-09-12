@@ -21,71 +21,71 @@ export const c12Edu7HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
-  <div style="background: rgba(255, 0, 127, 0.08); border: 1.5px solid \${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: \${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📊 Quick Glossary &amp; Core Statistical Concepts</h2>
+  <div style="background: rgba(255, 0, 127, 0.08); border: 1.5px solid #FF007F; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #FF007F; font-weight: bold; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📊 Quick Glossary &amp; Core Statistical Concepts</h2>
     <p class="text-center" style="color: #FF80BF; margin: 0 0 16px 0; font-size: 14.5px;">Essential Terminologies &bull; Class 12 Unit 7: Statistics in Education (10 Marks)</p>
 
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid \${themeColor}; border-radius: 6px;">
-        <b style="color: \${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Variability (Dispersion / Scatter):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">1. Variability (Dispersion / Scatter):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The degree of spread, scatter, or dispersion of individual scores around a central measure of average (Mean, Median, or Mode). It indicates whether a group of students is homogeneous (closely clustered) or heterogeneous (widely scattered).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid \${themeColor}; border-radius: 6px;">
-        <b style="color: \${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Standard Deviation (&sigma; / SD):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">2. Standard Deviation (&sigma; / SD):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Introduced by Karl Pearson in 1893, it is the square root of the arithmetic mean of the squared deviations of scores from their arithmetic mean. It is the most stable, reliable, and mathematically rigorous measure of dispersion.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid \${themeColor}; border-radius: 6px;">
-        <b style="color: \${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Quartile Deviation (QD / Semi-Interquartile Range):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">3. Quartile Deviation (QD / Semi-Interquartile Range):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">One-half of the distance between the third quartile (75th percentile, Q3) and the first quartile (25th percentile, Q1): QD = (Q3 &minus; Q1) / 2. It is insensitive to extreme outlier scores.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid \${themeColor}; border-radius: 6px;">
-        <b style="color: \${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Correlation Coefficient (r / &rho;):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">4. Correlation Coefficient (r / &rho;):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A mathematical index quantifying the strength and direction of relationship between two paired variables (X and Y), strictly bounded between &minus;1.00 (perfect negative) and +1.00 (perfect positive).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid \${themeColor}; border-radius: 6px;">
-        <b style="color: \${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Spearman's Rank Difference vs. Pearson's Product-Moment:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">5. Spearman's Rank Difference vs. Pearson's Product-Moment:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;"><b>Spearman's Rho (&rho;)</b> is a non-parametric method based on ordinal rank differences used for small samples (N &lt; 30). <b>Pearson's (r)</b> is a parametric method based on continuous score deviations used for large normal samples.</span>
       </div>
     </div>
   </div>
 
   <!-- SECTION 7.1 -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 30px;">7.1 Concept/ applicability of variability</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 30px;">7.1 Concept/ applicability of variability</h2>
 
-  <p>In educational measurement, calculating the measures of central tendency &mdash; the Mean, Median, and Mode &mdash; provides only a single representative central value for a class. However, relying exclusively on averages can be deeply misleading. Consider two classroom sections of 30 students each: in Section A, every student scores between 48 and 52 marks, giving a Mean of 50. In Section B, half the students score 10 marks while the other half score 90 marks, also yielding a Mean of 50. Although their averages are identical, Section A is highly <b>homogeneous</b> (compactly clustered), whereas Section B is wildly <b>heterogeneous</b> (widely scattered). To capture this essential spread, educational statisticians compute <b style="color: \${themeColor};">Variability</b> (also termed <i>Dispersion</i> or <i>Scatter</i>).</p>
+  <p>In educational measurement, calculating the measures of central tendency &mdash; the Mean, Median, and Mode &mdash; provides only a single representative central value for a class. However, relying exclusively on averages can be deeply misleading. Consider two classroom sections of 30 students each: in Section A, every student scores between 48 and 52 marks, giving a Mean of 50. In Section B, half the students score 10 marks while the other half score 90 marks, also yielding a Mean of 50. Although their averages are identical, Section A is highly <b>homogeneous</b> (compactly clustered), whereas Section B is wildly <b>heterogeneous</b> (widely scattered). To capture this essential spread, educational statisticians compute <b style="color: #FF007F;">Variability</b> (also termed <i>Dispersion</i> or <i>Scatter</i>).</p>
 
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(i) Meaning of Variability</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) Meaning of Variability</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Standard Definition:</b> <i>Variability refers to the extent to which the scores in a distribution are spread out, scattered, or dispersed around a central tendency (the Mean or Median). A small measure of variability indicates close clustering and high group uniformity; a large measure of variability indicates widespread dispersion and extreme individual differences.</i>
+      <b style="color: #FF007F;">Standard Definition:</b> <i>Variability refers to the extent to which the scores in a distribution are spread out, scattered, or dispersed around a central tendency (the Mean or Median). A small measure of variability indicates close clustering and high group uniformity; a large measure of variability indicates widespread dispersion and extreme individual differences.</i>
     </p>
   </div>
 
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(ii) Educational Applicability &amp; Need of Variability</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Educational Applicability &amp; Need of Variability</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: \${themeColor}; font-size: 16px;">1. Judging the Representativeness of the Mean:</b>
+      <b style="color: #FF007F; font-size: 16px;">1. Judging the Representativeness of the Mean:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         When variability is small, the calculated Mean is highly dependable, accurate, and truly representative of student performance. When variability is enormous, the Mean is an artificial mathematical abstraction that conceals huge educational disparities.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: \${themeColor}; font-size: 16px;">2. Comparing the Uniformity of Two Groups or Two Subjects:</b>
+      <b style="color: #FF007F; font-size: 16px;">2. Comparing the Uniformity of Two Groups or Two Subjects:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Variability reveals whether Section A is more consistent in performance than Section B, or whether a class displays more uniform ability in Mathematics compared to English literature.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: \${themeColor}; font-size: 16px;">3. Facilitating Homogeneous Ability Grouping:</b>
+      <b style="color: #FF007F; font-size: 16px;">3. Facilitating Homogeneous Ability Grouping:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Knowledge of score spread enables school principals to group students appropriately for remedial coaching, honors seminars, and differentiated instruction based on actual cognitive dispersion.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: \${themeColor}; font-size: 16px;">4. Essential Gateway to Advanced Inferential Statistics:</b>
+      <b style="color: #FF007F; font-size: 16px;">4. Essential Gateway to Advanced Inferential Statistics:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Without measures of variability (particularly the Standard Deviation), it is mathematically impossible to compute Correlation, Z-scores, Standard Errors, Analysis of Variance (ANOVA), or normalize test scores on the Bell Curve.
       </p>
@@ -129,59 +129,59 @@ export const c12Edu7HtmlOverview = `
   </div>
 
   <!-- SECTION 7.2 -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 35px;">7.2 Methods of determining variability (Calculation and Uses): Range, Mean deviation, Quartile deviation, Standard deviation</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">7.2 Methods of determining variability (Calculation and Uses): Range, Mean deviation, Quartile deviation, Standard deviation</h2>
 
   <p>In educational statistics, four established mathematical methods are utilized to quantify the dispersion of test scores, ranked in order of increasing statistical refinement:</p>
 
   <!-- METHOD 1: RANGE -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(i) The Range</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) The Range</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 6px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Definition &amp; Formula:</b> The Range is the simplest, crudest measure of variability. It is the rough difference between the highest score and the lowest score in a distribution:
+      <b style="color: #FF007F;">Definition &amp; Formula:</b> The Range is the simplest, crudest measure of variability. It is the rough difference between the highest score and the lowest score in a distribution:
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">Range = Highest Score (H) &minus; Lowest Score (L)</span>
     </p>
     <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Merits &amp; Limitations:</b> It can be computed in seconds; however, it is highly unstable because it is governed exclusively by the two most extreme outlier scores, completely ignoring all intermediate scores.
-      <br /><b style="color: \${themeColor};">Uses:</b> Quick preliminary surveys of test scores, daily temperature variations, and stock market bounds.
+      <b style="color: #FF007F;">Merits &amp; Limitations:</b> It can be computed in seconds; however, it is highly unstable because it is governed exclusively by the two most extreme outlier scores, completely ignoring all intermediate scores.
+      <br /><b style="color: #FF007F;">Uses:</b> Quick preliminary surveys of test scores, daily temperature variations, and stock market bounds.
     </p>
   </div>
 
   <!-- METHOD 2: QUARTILE DEVIATION -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(ii) Quartile Deviation (QD / Semi-Interquartile Range)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Quartile Deviation (QD / Semi-Interquartile Range)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 6px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Definition &amp; Formula:</b> Quartile Deviation is one-half of the distance between the third quartile (Q3, the 75th percentile) and the first quartile (Q1, the 25th percentile):
+      <b style="color: #FF007F;">Definition &amp; Formula:</b> Quartile Deviation is one-half of the distance between the third quartile (Q3, the 75th percentile) and the first quartile (Q1, the 25th percentile):
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">QD = (Q3 &minus; Q1) / 2</span>
     </p>
     <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Merits &amp; Limitations:</b> It focuses on the middle 50% of scores and is completely impervious to bizarre, distorted extreme scores. However, it ignores the top 25% and bottom 25% of scores and is not amenable to algebraic manipulation.
-      <br /><b style="color: \${themeColor};">Uses:</b> Best deployed when the distribution is heavily skewed, when extreme scores distort the mean, or when the Median is the measure of central tendency.
+      <b style="color: #FF007F;">Merits &amp; Limitations:</b> It focuses on the middle 50% of scores and is completely impervious to bizarre, distorted extreme scores. However, it ignores the top 25% and bottom 25% of scores and is not amenable to algebraic manipulation.
+      <br /><b style="color: #FF007F;">Uses:</b> Best deployed when the distribution is heavily skewed, when extreme scores distort the mean, or when the Median is the measure of central tendency.
     </p>
   </div>
 
   <!-- METHOD 3: MEAN DEVIATION -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(iii) Mean Deviation (MD / Average Deviation)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iii) Mean Deviation (MD / Average Deviation)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 6px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Definition &amp; Formula:</b> Mean Deviation is the arithmetic mean of the absolute deviations of all individual scores from the distribution's Mean (or Median), strictly ignoring plus and minus signs:
+      <b style="color: #FF007F;">Definition &amp; Formula:</b> Mean Deviation is the arithmetic mean of the absolute deviations of all individual scores from the distribution's Mean (or Median), strictly ignoring plus and minus signs:
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">MD = &sum; |x| / N = &sum; |X &minus; Mean| / N</span>
     </p>
     <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Merits &amp; Limitations:</b> It takes every single score in the class into account and is intuitively easy to comprehend. However, artificially dropping algebraic plus/minus signs mathematically violates rigorous algebraic laws.
-      <br /><b style="color: \${themeColor};">Uses:</b> When an easily interpretable measure of average scatter incorporating all students is required without complex calculations.
+      <b style="color: #FF007F;">Merits &amp; Limitations:</b> It takes every single score in the class into account and is intuitively easy to comprehend. However, artificially dropping algebraic plus/minus signs mathematically violates rigorous algebraic laws.
+      <br /><b style="color: #FF007F;">Uses:</b> When an easily interpretable measure of average scatter incorporating all students is required without complex calculations.
     </p>
   </div>
 
   <!-- METHOD 4: STANDARD DEVIATION -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(iv) Standard Deviation (&sigma; / SD / Root-Mean-Square Deviation)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iv) Standard Deviation (&sigma; / SD / Root-Mean-Square Deviation)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 6px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Definition &amp; Formula:</b> Introduced by Karl Pearson in 1893, Standard Deviation is the square root of the arithmetic mean of the squared deviations from the Mean. Squaring the deviations mathematically resolves negative signs without violating algebraic laws:
+      <b style="color: #FF007F;">Definition &amp; Formula:</b> Introduced by Karl Pearson in 1893, Standard Deviation is the square root of the arithmetic mean of the squared deviations from the Mean. Squaring the deviations mathematically resolves negative signs without violating algebraic laws:
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">&sigma; = &radic;[ &sum; x&sup2; / N ] = &radic;[ &sum; (X &minus; M)&sup2; / N ]</span>
     </p>
     <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Merits &amp; Limitations:</b> The gold standard of educational statistics. It is stable, mathematically pure, minimally affected by sample fluctuations, and serves as the building block for Z-scores and ANOVA. However, it requires tedious calculations.
-      <br /><b style="color: \${themeColor};">Uses:</b> Educational research, board examination scaling, psychometric test standardization, and calculating Pearson's correlation.
+      <b style="color: #FF007F;">Merits &amp; Limitations:</b> The gold standard of educational statistics. It is stable, mathematically pure, minimally affected by sample fluctuations, and serves as the building block for Z-scores and ANOVA. However, it requires tedious calculations.
+      <br /><b style="color: #FF007F;">Uses:</b> Educational research, board examination scaling, psychometric test standardization, and calculating Pearson's correlation.
     </p>
   </div>
 
@@ -229,25 +229,25 @@ export const c12Edu7HtmlOverview = `
   </div>
 
   <!-- SECTION 7.3 -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 35px;">7.3 Correlation: applications and types</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">7.3 Correlation: applications and types</h2>
 
-  <p>In educational psychology, we constantly investigate whether two separate student traits or abilities are related to each other. For example: Does high intelligence correspond to high examination scores? Does examination anxiety impair academic recall? <b style="color: \${themeColor};">Correlation</b> is the mathematical technique that investigates and quantifies the degree of mutual association or co-variation between two paired variables.</p>
+  <p>In educational psychology, we constantly investigate whether two separate student traits or abilities are related to each other. For example: Does high intelligence correspond to high examination scores? Does examination anxiety impair academic recall? <b style="color: #FF007F;">Correlation</b> is the mathematical technique that investigates and quantifies the degree of mutual association or co-variation between two paired variables.</p>
 
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(i) The Coefficient of Correlation (r / &rho;)</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) The Coefficient of Correlation (r / &rho;)</h3>
   <p>The strength and direction of correlation are represented by a single index called the <b>Coefficient of Correlation</b>, bounded strictly between <b>&minus;1.00 and +1.00</b>:</p>
   <ul style="padding-left: 20px; line-height: 1.8; color: #FFFFFF;">
-    <li><b style="color: #34D399;">+1.00:</b> Perfect Positive Correlation.</li>
-    <li><b style="color: #38EF7D;">+0.70 to +0.99:</b> High Positive Correlation.</li>
-    <li><b style="color: #6EE7B7;">+0.30 to +0.69:</b> Moderate Positive Correlation.</li>
-    <li><b style="color: #CBD5E1;">0.00:</b> Zero / Absence of Correlation.</li>
-    <li><b style="color: #F87171;">&minus;0.01 to &minus;0.99:</b> Negative Correlation.</li>
-    <li><b style="color: #EF4444;">&minus;1.00:</b> Perfect Negative Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">+1.00:</b> Perfect Positive Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">+0.70 to +0.99:</b> High Positive Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">+0.30 to +0.69:</b> Moderate Positive Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">0.00:</b> Zero / Absence of Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">&minus;0.01 to &minus;0.99:</b> Negative Correlation.</li>
+    <li><b style="color: #FF007F; font-weight: bold;">&minus;1.00:</b> Perfect Negative Correlation.</li>
   </ul>
 
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(ii) Types of Correlation</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Types of Correlation</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #34D399; font-size: 16px;">📈 1. Positive Correlation (0 &lt; r &le; +1.00):</b>
+      <b style="color: #FF007F; font-weight: bold; font-size: 16px;">📈 1. Positive Correlation (0 &lt; r &le; +1.00):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Occurs when two variables move in the <b>same direction</b>. An increase in variable X is accompanied by a corresponding increase in variable Y (or decrease in X accompanied by decrease in Y).
         <br /><i>Examples:</i> Study hours and board marks; Height and weight; Vocabulary size and reading comprehension.
@@ -255,7 +255,7 @@ export const c12Edu7HtmlOverview = `
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #F87171; font-size: 16px;">📉 2. Negative Correlation (&minus;1.00 &le; r &lt; 0):</b>
+      <b style="color: #FF007F; font-weight: bold; font-size: 16px;">📉 2. Negative Correlation (&minus;1.00 &le; r &lt; 0):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Occurs when two variables move in <b>opposite directions</b>. As variable X increases, variable Y systematically decreases.
         <br /><i>Examples:</i> Acute examination anxiety and performance recall; Number of school absences and academic grades; Driving speed and remaining fuel.
@@ -263,7 +263,7 @@ export const c12Edu7HtmlOverview = `
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(148, 163, 184, 0.4); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: #CBD5E1; font-size: 16px;">⚪ 3. Zero Correlation (r = 0.00):</b>
+      <b style="color: #FF007F; font-weight: bold; font-size: 16px;">⚪ 3. Zero Correlation (r = 0.00):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Occurs when there is a complete absence of any linear relationship. Changes in variable X have zero bearing on variable Y.
         <br /><i>Examples:</i> Shoe size and intelligence quotient (IQ); Body weight and mathematical aptitude; Hair length and musical talent.
@@ -271,12 +271,12 @@ export const c12Edu7HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(iii) Educational Applications of Correlation</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iii) Educational Applications of Correlation</h3>
   <ul style="padding-left: 20px; line-height: 1.8; color: #FFFFFF;">
-    <li><b style="color: \${themeColor};">1. Prediction and Prognosis:</b> Enables educators to forecast future college performance based on Class 10/12 board marks.</li>
-    <li><b style="color: \${themeColor};">2. Determining Test Reliability:</b> Using test-retest or split-half methods to correlate test administrations, ensuring consistent measurement.</li>
-    <li><b style="color: \${themeColor};">3. Determining Test Validity:</b> Correlating scores on a new aptitude test against proven real-world job performance criteria.</li>
-    <li><b style="color: \${themeColor};">4. Vocational and Educational Counseling:</b> Helping students choose career streams matching their proven correlated aptitudes.</li>
+    <li><b style="color: #FF007F;">1. Prediction and Prognosis:</b> Enables educators to forecast future college performance based on Class 10/12 board marks.</li>
+    <li><b style="color: #FF007F;">2. Determining Test Reliability:</b> Using test-retest or split-half methods to correlate test administrations, ensuring consistent measurement.</li>
+    <li><b style="color: #FF007F;">3. Determining Test Validity:</b> Correlating scores on a new aptitude test against proven real-world job performance criteria.</li>
+    <li><b style="color: #FF007F;">4. Vocational and Educational Counseling:</b> Helping students choose career streams matching their proven correlated aptitudes.</li>
   </ul>
 
   <!-- STANDALONE CLEAN DIAGRAM 3: SCATTER PLOTS OF CORRELATION (SCIENCE-STYLE WHITE BG) -->
@@ -341,53 +341,53 @@ export const c12Edu7HtmlOverview = `
   </div>
 
   <!-- SECTION 7.4 -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 35px;">7.4 Computation of correlation through Rank difference method (Spearman) and Product moment method (Pearson)</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">7.4 Computation of correlation through Rank difference method (Spearman) and Product moment method (Pearson)</h2>
 
   <p>To calculate the coefficient of correlation in classroom and psychometric testing, two primary methods are prescribed:</p>
 
   <!-- METHOD 1: SPEARMAN'S RANK DIFFERENCE METHOD -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(i) Spearman's Rank Difference Method (&rho; / Rho)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) Spearman's Rank Difference Method (&rho; / Rho)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Formulated by:</b> British psychologist <b>Charles Spearman</b> in 1904. It is a non-parametric method used when scores are arranged in ordinal ranks, when sample size is small (<b>N &lt; 30</b>), or when qualitative attributes (beauty, leadership, honesty) are being compared.
+      <b style="color: #FF007F;">Formulated by:</b> British psychologist <b>Charles Spearman</b> in 1904. It is a non-parametric method used when scores are arranged in ordinal ranks, when sample size is small (<b>N &lt; 30</b>), or when qualitative attributes (beauty, leadership, honesty) are being compared.
     </p>
     <p style="margin: 0 0 8px 0; font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">
       &rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ]
     </p>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0; color: #FFFFFF;">
-      <li><b style="color: \${themeColor};">&rho; (Rho):</b> Coefficient of Rank Correlation.</li>
-      <li><b style="color: \${themeColor};">D:</b> Difference between paired ranks of a student (D = R1 &minus; R2).</li>
-      <li><b style="color: \${themeColor};">&sum; D&sup2;:</b> Sum of the squares of rank differences.</li>
-      <li><b style="color: \${themeColor};">N:</b> Total number of paired students/observations.</li>
+      <li><b style="color: #FF007F;">&rho; (Rho):</b> Coefficient of Rank Correlation.</li>
+      <li><b style="color: #FF007F;">D:</b> Difference between paired ranks of a student (D = R1 &minus; R2).</li>
+      <li><b style="color: #FF007F;">&sum; D&sup2;:</b> Sum of the squares of rank differences.</li>
+      <li><b style="color: #FF007F;">N:</b> Total number of paired students/observations.</li>
     </ul>
   </div>
 
   <!-- METHOD 2: PEARSON'S PRODUCT-MOMENT METHOD -->
-  <h3 style="color: \${themeColor}; margin-top: 24px;">(ii) Pearson's Product-Moment Correlation Method (r)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid \${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Pearson's Product-Moment Correlation Method (r)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Formulated by:</b> <b>Karl Pearson</b>. It is the most mathematically rigorous, stable parametric measure of correlation, designed for continuous interval/ratio data and large sample sizes (<b>N &gt; 30</b>).
+      <b style="color: #FF007F;">Formulated by:</b> <b>Karl Pearson</b>. It is the most mathematically rigorous, stable parametric measure of correlation, designed for continuous interval/ratio data and large sample sizes (<b>N &gt; 30</b>).
     </p>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Deviation Formula:</b>
+      <b style="color: #FF007F;">Deviation Formula:</b>
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 16px;">r = &sum; xy / (N &sigma;x &sigma;y) = &sum; xy / &radic;[ (&sum; x&sup2;) &times; (&sum; y&sup2;) ]</span>
       <br />where <span style="font-family: monospace;">x = (X &minus; Mx)</span> and <span style="font-family: monospace;">y = (Y &minus; My)</span>.
     </p>
     <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-      <b style="color: \${themeColor};">Raw Score Formula:</b>
+      <b style="color: #FF007F;">Raw Score Formula:</b>
       <br /><span style="font-family: monospace; color: #FF80BF; font-weight: bold; font-size: 15px;">r = [ N &sum; XY &minus; (&sum;X)(&sum;Y) ] / &radic;[ {N &sum;X&sup2; &minus; (&sum;X)&sup2;} {N &sum;Y&sup2; &minus; (&sum;Y)&sup2;} ]</span>
     </p>
   </div>
 
   <!-- COMPARISON TABLE BOX -->
-  <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid \${themeColor}; border-radius: 10px; padding: 16px; margin: 25px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; font-weight: bold; margin: 0 0 12px 0;">
+  <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid #FF007F; border-radius: 10px; padding: 16px; margin: 25px 0;">
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; font-weight: bold; margin: 0 0 12px 0;">
       📊 Master Comparative Matrix: Spearman (Rho) vs. Pearson (r)
     </h3>
     <div style="overflow-x: auto;">
       <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: #F8FAFC;">
         <thead>
-          <tr style="background: rgba(255, 0, 127, 0.25); border-bottom: 2px solid \${themeColor};">
+          <tr style="background: rgba(255, 0, 127, 0.25); border-bottom: 2px solid #FF007F;">
             <th style="padding: 10px; text-align: left;">Dimension</th>
             <th style="padding: 10px; text-align: left;">Spearman's Rank Difference (&rho;)</th>
             <th style="padding: 10px; text-align: left;">Pearson's Product-Moment (r)</th>
@@ -395,22 +395,22 @@ export const c12Edu7HtmlOverview = `
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 10px; font-weight: bold; color: \${themeColor};">Statistical Nature</td>
+            <td style="padding: 10px; font-weight: bold; color: #FF007F;">Statistical Nature</td>
             <td style="padding: 10px;">Non-parametric (ordinal scale).</td>
             <td style="padding: 10px;">Parametric (interval/ratio continuous scale).</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 10px; font-weight: bold; color: \${themeColor};">Sample Size</td>
+            <td style="padding: 10px; font-weight: bold; color: #FF007F;">Sample Size</td>
             <td style="padding: 10px;">Ideal for small samples (N &lt; 30).</td>
             <td style="padding: 10px;">Mandatory for large samples (N &gt; 30).</td>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-            <td style="padding: 10px; font-weight: bold; color: \${themeColor};">Underlying Data</td>
+            <td style="padding: 10px; font-weight: bold; color: #FF007F;">Underlying Data</td>
             <td style="padding: 10px;">Ranks, qualitative attributes (judges, debate).</td>
             <td style="padding: 10px;">Exact quantitative test marks and continuous scores.</td>
           </tr>
           <tr>
-            <td style="padding: 10px; font-weight: bold; color: \${themeColor};">Calculation Speed</td>
+            <td style="padding: 10px; font-weight: bold; color: #FF007F;">Calculation Speed</td>
             <td style="padding: 10px;">Fast, simple arithmetic differences.</td>
             <td style="padding: 10px;">Laborious, mathematically rigorous.</td>
           </tr>
@@ -429,8 +429,8 @@ export const c12Edu7HtmlOverview = `
 export const c12Edu7HtmlSolutions = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
-  <div style="background: rgba(255, 0, 127, 0.08); border-left: 4px solid \${themeColor}; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
-    <h3 style="color: \${themeColor}; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
+  <div style="background: rgba(255, 0, 127, 0.08); border-left: 4px solid #FF007F; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
+    <h3 style="color: #FF007F; font-weight: bold; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
     <p style="margin: 0; color: #CBD5E1; font-size: 14px;">
       Class 12 Unit 7: Statistics in Education (10 Marks) &bull; Strictly 12 VSAT (1 &amp; 2 Marks), 8 SAT (4 Marks), and 5 LAT (6 Marks).
     </p>
@@ -439,37 +439,37 @@ export const c12Edu7HtmlSolutions = `
   <!-- ======================================================================== -->
   <!-- SECTION A: VERY SHORT ANSWER TYPE (1 & 2 MARKS) - 12 QUESTIONS          -->
   <!-- ======================================================================== -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 25px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 25px;">
     Section A: Very Short Answer Questions (1 &amp; 2 Marks)
   </h2>
 
   <!-- Q1 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q1: Define 'Variability' in educational statistics.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q1: Define 'Variability' in educational statistics.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">Variability</b> refers to the degree of spread, scatter, or dispersion of individual test scores around a measure of central tendency (the Mean or Median).
+      <b style="color: #FF007F;">Variability</b> refers to the degree of spread, scatter, or dispersion of individual test scores around a measure of central tendency (the Mean or Median).
     </p>
   </div>
 
   <!-- Q2 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q2: State the formula for calculating Range and give an example.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q2: State the formula for calculating Range and give an example.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">Range = Highest Score (H) &minus; Lowest Score (L)</b>. For scores 20, 35, 50, 65, 80: Range = 80 &minus; 20 = 60.
+      <b style="color: #FF007F;">Range = Highest Score (H) &minus; Lowest Score (L)</b>. For scores 20, 35, 50, 65, 80: Range = 80 &minus; 20 = 60.
     </p>
   </div>
 
   <!-- Q3 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q3: What is Quartile Deviation (QD)? State its mathematical formula.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q3: What is Quartile Deviation (QD)? State its mathematical formula.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">Quartile Deviation</b> is one-half of the distance between the 75th percentile (Q3) and the 25th percentile (Q1): <b style="color: \${themeColor};">QD = (Q3 &minus; Q1) / 2</b>.
+      <b style="color: #FF007F;">Quartile Deviation</b> is one-half of the distance between the 75th percentile (Q3) and the 25th percentile (Q1): <b style="color: #FF007F;">QD = (Q3 &minus; Q1) / 2</b>.
     </p>
   </div>
 
   <!-- Q4 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q4: Why does Mean Deviation ignore plus and minus signs?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q4: Why does Mean Deviation ignore plus and minus signs?</h3>
     <p style="color: #FFFFFF; margin: 0;">
       By mathematical definition, the algebraic sum of deviations from the Mean is always zero (&sum; x = 0). Therefore, Mean Deviation ignores plus and minus signs to compute the absolute average distance of scores from the mean.
     </p>
@@ -477,111 +477,111 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q5 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q5: Who introduced the concept of Standard Deviation, and in which year?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q5: Who introduced the concept of Standard Deviation, and in which year?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The concept of Standard Deviation was introduced by the eminent British mathematician <b style="color: \${themeColor};">Karl Pearson</b> in <b style="color: \${themeColor};">1893</b>.
+      The concept of Standard Deviation was introduced by the eminent British mathematician <b style="color: #FF007F;">Karl Pearson</b> in <b style="color: #FF007F;">1893</b>.
     </p>
   </div>
 
   <!-- Q6 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q6: State the formula of Standard Deviation (&sigma;) for ungrouped data.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q6: State the formula of Standard Deviation (&sigma;) for ungrouped data.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">&sigma; = &radic;[ &sum; x&sup2; / N ]</b>, where <b style="color: \${themeColor};">x = (X &minus; Mean)</b> is the deviation of each score from the mean, and <b style="color: \${themeColor};">N</b> is the total number of scores.
+      <b style="color: #FF007F;">&sigma; = &radic;[ &sum; x&sup2; / N ]</b>, where <b style="color: #FF007F;">x = (X &minus; Mean)</b> is the deviation of each score from the mean, and <b style="color: #FF007F;">N</b> is the total number of scores.
     </p>
   </div>
 
   <!-- Q7 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q7: Define Correlation in educational measurement.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q7: Define Correlation in educational measurement.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">Correlation</b> is the mathematical technique used to measure and describe the strength and direction of mutual relationship or co-variation between two paired variables.
+      <b style="color: #FF007F;">Correlation</b> is the mathematical technique used to measure and describe the strength and direction of mutual relationship or co-variation between two paired variables.
     </p>
   </div>
 
   <!-- Q8 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q8: Differentiate between Positive and Negative Correlation with one example of each.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q8: Differentiate between Positive and Negative Correlation with one example of each.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      In <b style="color: \${themeColor};">Positive Correlation</b>, variables move in the same direction (e.g., study time and test marks). In <b style="color: \${themeColor};">Negative Correlation</b>, variables move in opposite directions (e.g., examination anxiety and academic recall).
+      In <b style="color: #FF007F;">Positive Correlation</b>, variables move in the same direction (e.g., study time and test marks). In <b style="color: #FF007F;">Negative Correlation</b>, variables move in opposite directions (e.g., examination anxiety and academic recall).
     </p>
   </div>
 
   <!-- Q9 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q9: What is Zero Correlation? Give an educational example.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q9: What is Zero Correlation? Give an educational example.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">Zero Correlation (r = 0.00)</b> indicates complete absence of any linear relationship between two variables (e.g., a student's shoe size and their intelligence quotient [IQ]).
+      <b style="color: #FF007F;">Zero Correlation (r = 0.00)</b> indicates complete absence of any linear relationship between two variables (e.g., a student's shoe size and their intelligence quotient [IQ]).
     </p>
   </div>
 
   <!-- Q10 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q10: What is the permissible numerical range of the Correlation Coefficient (r)?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q10: What is the permissible numerical range of the Correlation Coefficient (r)?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The coefficient of correlation is strictly bounded between <b style="color: \${themeColor};">&minus;1.00 (perfect negative)</b> and <b style="color: \${themeColor};">+1.00 (perfect positive)</b>.
+      The coefficient of correlation is strictly bounded between <b style="color: #FF007F;">&minus;1.00 (perfect negative)</b> and <b style="color: #FF007F;">+1.00 (perfect positive)</b>.
     </p>
   </div>
 
   <!-- Q11 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q11: State Spearman's Rank Difference formula for correlation.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q11: State Spearman's Rank Difference formula for correlation.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">&rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ]</b>, where D is the difference between paired ranks (R1 &minus; R2) and N is the number of pairs.
+      <b style="color: #FF007F;">&rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ]</b>, where D is the difference between paired ranks (R1 &minus; R2) and N is the number of pairs.
     </p>
   </div>
 
   <!-- Q12 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q12: State Pearson's Product-Moment formula for correlation using score deviations.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q12: State Pearson's Product-Moment formula for correlation using score deviations.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: \${themeColor};">r = &sum; xy / &radic;[ (&sum; x&sup2;) &times; (&sum; y&sup2;) ]</b>, where x = X &minus; Mx and y = Y &minus; My.
+      <b style="color: #FF007F;">r = &sum; xy / &radic;[ (&sum; x&sup2;) &times; (&sum; y&sup2;) ]</b>, where x = X &minus; Mx and y = Y &minus; My.
     </p>
   </div>
 
   <!-- ======================================================================== -->
   <!-- SECTION B: SHORT ANSWER TYPE (4 MARKS) - 8 QUESTIONS                    -->
   <!-- ======================================================================== -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 35px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">
     Section B: Short Answer Questions (4 Marks)
   </h2>
 
   <!-- Q13 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q13: Explain why measures of central tendency alone are inadequate to describe a distribution.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q13: Explain why measures of central tendency alone are inadequate to describe a distribution.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
       Central tendencies describe only the middle point, hiding critical score spread:
       <ul style="padding-left: 20px; margin: 6px 0 0 0;">
-        <li><b style="color: \${themeColor};">1. Concealing Individual Differences:</b> Two classes may both have a Mean of 50, but one class may consist of closely grouped average learners, while the other has geniuses and failing students.</li>
-        <li><b style="color: \${themeColor};">2. Misleading Pedagogical Decisions:</b> A teacher looking only at the Mean may prepare a single intermediate lesson, alienating struggling students and boring gifted learners.</li>
-        <li><b style="color: \${themeColor};">3. Assessing Consistency:</b> Variability reveals whether a group's performance is stable or unpredictable.</li>
-        <li><b style="color: \${themeColor};">4. Conclusion:</b> An average without variability is like describing a city's climate by average annual temperature without mentioning winter freezes or summer heatwaves.</li>
+        <li><b style="color: #FF007F;">1. Concealing Individual Differences:</b> Two classes may both have a Mean of 50, but one class may consist of closely grouped average learners, while the other has geniuses and failing students.</li>
+        <li><b style="color: #FF007F;">2. Misleading Pedagogical Decisions:</b> A teacher looking only at the Mean may prepare a single intermediate lesson, alienating struggling students and boring gifted learners.</li>
+        <li><b style="color: #FF007F;">3. Assessing Consistency:</b> Variability reveals whether a group's performance is stable or unpredictable.</li>
+        <li><b style="color: #FF007F;">4. Conclusion:</b> An average without variability is like describing a city's climate by average annual temperature without mentioning winter freezes or summer heatwaves.</li>
       </ul>
     </div>
   </div>
 
   <!-- Q14 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q14: Compare Range, Quartile Deviation, Mean Deviation, and Standard Deviation in terms of reliability and utility.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q14: Compare Range, Quartile Deviation, Mean Deviation, and Standard Deviation in terms of reliability and utility.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
       The four dispersion measures represent escalating levels of statistical precision:
       <ul style="padding-left: 20px; margin: 6px 0 0 0;">
-        <li><b style="color: \${themeColor};">1. Range:</b> Fastest to compute, but least reliable because it depends solely on two extreme outliers.</li>
-        <li><b style="color: \${themeColor};">2. Quartile Deviation (QD):</b> Measures middle 50% spread; highly useful for skewed distributions, but ignores 50% of the sample data.</li>
-        <li><b style="color: \${themeColor};">3. Mean Deviation (MD):</b> Averages absolute distances of all scores; highly intuitive, but mathematically flawed by ignoring algebraic signs.</li>
-        <li><b style="color: \${themeColor};">4. Standard Deviation (&sigma;):</b> Most reliable, stable, and mathematically sound; serves as the cornerstone for advanced inferential statistics.</li>
+        <li><b style="color: #FF007F;">1. Range:</b> Fastest to compute, but least reliable because it depends solely on two extreme outliers.</li>
+        <li><b style="color: #FF007F;">2. Quartile Deviation (QD):</b> Measures middle 50% spread; highly useful for skewed distributions, but ignores 50% of the sample data.</li>
+        <li><b style="color: #FF007F;">3. Mean Deviation (MD):</b> Averages absolute distances of all scores; highly intuitive, but mathematically flawed by ignoring algebraic signs.</li>
+        <li><b style="color: #FF007F;">4. Standard Deviation (&sigma;):</b> Most reliable, stable, and mathematically sound; serves as the cornerstone for advanced inferential statistics.</li>
       </ul>
     </div>
   </div>
 
   <!-- Q15 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q15: Calculate the Range and Quartile Deviation for the given scores: 12, 15, 18, 22, 25, 28, 32.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q15: Calculate the Range and Quartile Deviation for the given scores: 12, 15, 18, 22, 25, 28, 32.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
-      <b style="color: \${themeColor};">Step 1 &mdash; Calculate Range:</b>
+      <b style="color: #FF007F;">Step 1 &mdash; Calculate Range:</b>
       <br />Highest Score (H) = 32, Lowest Score (L) = 12.
       <br /><span style="font-family: monospace; color: #FF80BF;">Range = H &minus; L = 32 &minus; 12 = 20</span>.
-      <br /><b style="color: \${themeColor};">Step 2 &mdash; Calculate Quartile Deviation (QD):</b>
+      <br /><b style="color: #FF007F;">Step 2 &mdash; Calculate Quartile Deviation (QD):</b>
       <br />Total items N = 7 (already in ascending order).
       <br />Q1 = (N + 1)/4 th term = 8/4 = 2nd term = 15.
       <br />Q3 = 3(N + 1)/4 th term = 3(8)/4 = 6th term = 28.
@@ -591,60 +591,60 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q16 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q16: Calculate the Mean Deviation from the mean for the scores: 6, 8, 10, 12, 14.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q16: Calculate the Mean Deviation from the mean for the scores: 6, 8, 10, 12, 14.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
-      <b style="color: \${themeColor};">Step 1 &mdash; Calculate Mean (M):</b>
+      <b style="color: #FF007F;">Step 1 &mdash; Calculate Mean (M):</b>
       <br />&sum; X = 6 + 8 + 10 + 12 + 14 = 50. N = 5.
       <br />Mean (M) = 50 / 5 = 10.
-      <br /><b style="color: \${themeColor};">Step 2 &mdash; Compute Absolute Deviations |x| = |X &minus; M|:</b>
+      <br /><b style="color: #FF007F;">Step 2 &mdash; Compute Absolute Deviations |x| = |X &minus; M|:</b>
       <br />|6 &minus; 10| = 4; |8 &minus; 10| = 2; |10 &minus; 10| = 0; |12 &minus; 10| = 2; |14 &minus; 10| = 4.
       <br />&sum; |x| = 4 + 2 + 0 + 2 + 4 = 12.
-      <br /><b style="color: \${themeColor};">Step 3 &mdash; Apply Formula:</b>
+      <br /><b style="color: #FF007F;">Step 3 &mdash; Apply Formula:</b>
       <br /><span style="font-family: monospace; color: #FF80BF;">MD = &sum; |x| / N = 12 / 5 = 2.4</span>.
     </div>
   </div>
 
   <!-- Q17 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q17: Calculate the Standard Deviation (&sigma;) for the ungrouped scores: 4, 6, 8, 10, 12.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q17: Calculate the Standard Deviation (&sigma;) for the ungrouped scores: 4, 6, 8, 10, 12.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
-      <b style="color: \${themeColor};">Step 1 &mdash; Calculate Mean (M):</b>
+      <b style="color: #FF007F;">Step 1 &mdash; Calculate Mean (M):</b>
       <br />&sum; X = 4 + 6 + 8 + 10 + 12 = 40. N = 5.
       <br />Mean (M) = 40 / 5 = 8.
-      <br /><b style="color: \${themeColor};">Step 2 &mdash; Compute Deviations (x = X &minus; M) and Squared Deviations (x&sup2;):</b>
+      <br /><b style="color: #FF007F;">Step 2 &mdash; Compute Deviations (x = X &minus; M) and Squared Deviations (x&sup2;):</b>
       <br />(4 &minus; 8)&sup2; = (&minus;4)&sup2; = 16; (6 &minus; 8)&sup2; = (&minus;2)&sup2; = 4; (8 &minus; 8)&sup2; = 0&sup2; = 0; (10 &minus; 8)&sup2; = 2&sup2; = 4; (12 &minus; 8)&sup2; = 4&sup2; = 16.
       <br />&sum; x&sup2; = 16 + 4 + 0 + 4 + 16 = 40.
-      <br /><b style="color: \${themeColor};">Step 3 &mdash; Apply Standard Deviation Formula:</b>
+      <br /><b style="color: #FF007F;">Step 3 &mdash; Apply Standard Deviation Formula:</b>
       <br /><span style="font-family: monospace; color: #FF80BF;">&sigma; = &radic;[ &sum; x&sup2; / N ] = &radic;[ 40 / 5 ] = &radic;8 &approx; 2.83</span>.
     </div>
   </div>
 
   <!-- Q18 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q18: Explain the educational applications of correlation in testing, prediction, and guidance.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q18: Explain the educational applications of correlation in testing, prediction, and guidance.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
       Correlation is an indispensable tool in educational practice:
       <ul style="padding-left: 20px; margin: 6px 0 0 0;">
-        <li><b style="color: \${themeColor};">1. Predictive Prognosis:</b> Correlating admission test scores with subsequent academic performance helps predict student success in professional courses.</li>
-        <li><b style="color: \${themeColor};">2. Determining Reliability:</b> Correlating scores obtained by students on test-retest administrations proves whether an examination tool is consistent.</li>
-        <li><b style="color: \${themeColor};">3. Validating Achievement Tests:</b> Correlating school examination marks with established standardized tests determines test validity.</li>
-        <li><b style="color: \${themeColor};">4. Career &amp; Stream Guidance:</b> Evaluating correlation between mechanical aptitude and engineering performance guides students into suitable vocational streams.</li>
+        <li><b style="color: #FF007F;">1. Predictive Prognosis:</b> Correlating admission test scores with subsequent academic performance helps predict student success in professional courses.</li>
+        <li><b style="color: #FF007F;">2. Determining Reliability:</b> Correlating scores obtained by students on test-retest administrations proves whether an examination tool is consistent.</li>
+        <li><b style="color: #FF007F;">3. Validating Achievement Tests:</b> Correlating school examination marks with established standardized tests determines test validity.</li>
+        <li><b style="color: #FF007F;">4. Career &amp; Stream Guidance:</b> Evaluating correlation between mechanical aptitude and engineering performance guides students into suitable vocational streams.</li>
       </ul>
     </div>
   </div>
 
   <!-- Q19 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q19: Calculate the Spearman Rank Correlation Coefficient (&rho;) for 5 students ranked in English (X) and History (Y): Ranks (1, 2, 3, 4, 5) and (2, 1, 4, 3, 5).</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q19: Calculate the Spearman Rank Correlation Coefficient (&rho;) for 5 students ranked in English (X) and History (Y): Ranks (1, 2, 3, 4, 5) and (2, 1, 4, 3, 5).</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
-      <b style="color: \${themeColor};">Step 1 &mdash; Calculate Rank Differences (D = R1 &minus; R2) and D&sup2;:</b>
+      <b style="color: #FF007F;">Step 1 &mdash; Calculate Rank Differences (D = R1 &minus; R2) and D&sup2;:</b>
       <br />Student 1: D = 1 &minus; 2 = &minus;1 &rarr; D&sup2; = 1
       <br />Student 2: D = 2 &minus; 1 = +1 &rarr; D&sup2; = 1
       <br />Student 3: D = 3 &minus; 4 = &minus;1 &rarr; D&sup2; = 1
       <br />Student 4: D = 4 &minus; 3 = +1 &rarr; D&sup2; = 1
       <br />Student 5: D = 5 &minus; 5 = 0 &rarr; D&sup2; = 0
       <br />&sum; D&sup2; = 1 + 1 + 1 + 1 + 0 = 4. N = 5.
-      <br /><b style="color: \${themeColor};">Step 2 &mdash; Apply Spearman's Formula:</b>
+      <br /><b style="color: #FF007F;">Step 2 &mdash; Apply Spearman's Formula:</b>
       <br />&rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ] = 1 &minus; [ 6(4) / (5(25 &minus; 1)) ]
       <br />&rho; = 1 &minus; [ 24 / (5 &times; 24) ] = 1 &minus; [ 1 / 5 ] = 1 &minus; 0.20 = <b style="color: #FF80BF;">+0.80</b>.
       <br /><span style="color: #38EF7D;">Interpretation: There is a very high positive correlation (+0.80) between English and History ranks.</span>
@@ -653,14 +653,14 @@ export const c12Edu7HtmlSolutions = `
 
   <!-- Q20 -->
   <div style="margin: 20px 0;">
-    <h3 style="color: \${themeColor}; font-size: 16px; margin-bottom: 6px;">Q20: Differentiate systematically between Spearman's Rank Difference method and Pearson's Product-Moment method.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q20: Differentiate systematically between Spearman's Rank Difference method and Pearson's Product-Moment method.</h3>
     <div style="color: #FFFFFF; line-height: 1.7;">
       Spearman and Pearson methods serve different statistical scenarios:
       <ul style="padding-left: 20px; margin: 6px 0 0 0;">
-        <li><b style="color: \${themeColor};">1. Data Scale:</b> Spearman (&rho;) uses ordinal rank data; Pearson (r) requires continuous interval/ratio score data.</li>
-        <li><b style="color: \${themeColor};">2. Sample Size:</b> Spearman is designed for small samples (N &lt; 30); Pearson requires large normal distributions (N &gt; 30).</li>
-        <li><b style="color: \${themeColor};">3. Mathematical Nature:</b> Spearman is a non-parametric distribution-free technique; Pearson is a parametric technique assuming normality.</li>
-        <li><b style="color: \${themeColor};">4. Computational Ease:</b> Spearman is rapid and simple; Pearson requires calculating extensive cross-products and standard deviations.</li>
+        <li><b style="color: #FF007F;">1. Data Scale:</b> Spearman (&rho;) uses ordinal rank data; Pearson (r) requires continuous interval/ratio score data.</li>
+        <li><b style="color: #FF007F;">2. Sample Size:</b> Spearman is designed for small samples (N &lt; 30); Pearson requires large normal distributions (N &gt; 30).</li>
+        <li><b style="color: #FF007F;">3. Mathematical Nature:</b> Spearman is a non-parametric distribution-free technique; Pearson is a parametric technique assuming normality.</li>
+        <li><b style="color: #FF007F;">4. Computational Ease:</b> Spearman is rapid and simple; Pearson requires calculating extensive cross-products and standard deviations.</li>
       </ul>
     </div>
   </div>
@@ -668,92 +668,92 @@ export const c12Edu7HtmlSolutions = `
   <!-- ======================================================================== -->
   <!-- SECTION C: LONG ANSWER TYPE (6 MARKS) - 5 QUESTIONS                     -->
   <!-- ======================================================================== -->
-  <h2 style="color: \${themeColor}; border-bottom: 2px solid \${themeColor}; padding-bottom: 6px; margin-top: 35px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">
     Section C: Long Answer Questions (6 Marks)
   </h2>
 
   <!-- Q21 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of Variability: Meaning, Need, and Detailed Comparative Analysis of the Four Measures of Dispersion.
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; margin-bottom: 8px;">Q21: Comprehensive Exposition of Variability: Meaning, Need, and Detailed Comparative Analysis of the Four Measures of Dispersion.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
-      <p><b style="color: \${themeColor};">I. Concept of Variability:</b><br />
+      <p><b style="color: #FF007F;">I. Concept of Variability:</b><br />
       While central tendencies identify the focal center of gravity, Variability quantifies the degree of dispersion or scatter of scores around that average. It answers whether a classroom is homogeneous or heterogeneous.</p>
 
-      <p><b style="color: \${themeColor};">II. Four Measures of Dispersion Compared:</b><br />
-      (1) <b style="color: \${themeColor};">Range (H &minus; L):</b> Fastest, crudest measure. Governed exclusively by two extreme outliers, ignoring all intermediate scores.<br />
-      (2) <b style="color: \${themeColor};">Quartile Deviation (QD = [Q3 &minus; Q1] / 2):</b> Measures middle 50% spread. Ideal for truncated or skewed distributions with extreme outliers, but ignores top and bottom 25% data.<br />
-      (3) <b style="color: \${themeColor};">Mean Deviation (MD = &sum;|x| / N):</b> Arithmetic mean of absolute deviations. Considers every score, but artificially ignores algebraic signs, violating algebraic laws.<br />
-      (4) <b style="color: \${themeColor};">Standard Deviation (&sigma; = &radic;[&sum;x&sup2; / N]):</b> The square root of mean squared deviations. Pure algebra, mathematically stable, minimally affected by sample fluctuations.</p>
+      <p><b style="color: #FF007F;">II. Four Measures of Dispersion Compared:</b><br />
+      (1) <b style="color: #FF007F;">Range (H &minus; L):</b> Fastest, crudest measure. Governed exclusively by two extreme outliers, ignoring all intermediate scores.<br />
+      (2) <b style="color: #FF007F;">Quartile Deviation (QD = [Q3 &minus; Q1] / 2):</b> Measures middle 50% spread. Ideal for truncated or skewed distributions with extreme outliers, but ignores top and bottom 25% data.<br />
+      (3) <b style="color: #FF007F;">Mean Deviation (MD = &sum;|x| / N):</b> Arithmetic mean of absolute deviations. Considers every score, but artificially ignores algebraic signs, violating algebraic laws.<br />
+      (4) <b style="color: #FF007F;">Standard Deviation (&sigma; = &radic;[&sum;x&sup2; / N]):</b> The square root of mean squared deviations. Pure algebra, mathematically stable, minimally affected by sample fluctuations.</p>
 
-      <p><b style="color: \${themeColor};">III. Educational Significance:</b><br />
+      <p><b style="color: #FF007F;">III. Educational Significance:</b><br />
       Educators use variability to judge mean reliability, evaluate teacher effectiveness, design homogeneous ability groups, and conduct educational research.</p>
     </div>
   </div>
 
   <!-- Q22 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q22: Exhaustive Analysis of Standard Deviation: Mathematical Definition, Properties, and Superiority in Educational Measurement.
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; margin-bottom: 8px;">Q22: Exhaustive Analysis of Standard Deviation: Mathematical Definition, Properties, and Superiority in Educational Measurement.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
-      <p><b style="color: \${themeColor};">I. Definition &amp; Formulations:</b><br />
+      <p><b style="color: #FF007F;">I. Definition &amp; Formulations:</b><br />
       Formulated by Karl Pearson in 1893, Standard Deviation (&sigma;) is the square root of the arithmetic mean of squared deviations from the Mean. For ungrouped data: &sigma; = &radic;[ &sum; x&sup2; / N ]. For grouped data: &sigma; = i &times; &radic;[ (&sum; fx'&sup2; / N) &minus; (&sum; fx' / N)&sup2; ].</p>
 
-      <p><b style="color: \${themeColor};">II. Why Standard Deviation is the Gold Standard:</b><br />
-      (1) <b style="color: \${themeColor};">Algebraic Integrity:</b> By squaring deviations, negative signs vanish naturally without mathematically illegitimate absolute-value assumptions.<br />
-      (2) <b style="color: \${themeColor};">Sample Stability:</b> Displays the smallest sampling fluctuation among all dispersion measures.<br />
-      (3) <b style="color: \${themeColor};">Normal Curve Properties:</b> In a normal bell curve, exactly 68.26% of cases fall within Mean &plusmn; 1&sigma;; 95.44% fall within Mean &plusmn; 2&sigma;; and 99.73% fall within Mean &plusmn; 3&sigma;.<br />
-      (4) <b style="color: \${themeColor};">Foundation for Inferential Statistics:</b> Indispensable for computing Z-scores, T-scores, Standard Error, Pearson's r, and ANOVA.</p>
+      <p><b style="color: #FF007F;">II. Why Standard Deviation is the Gold Standard:</b><br />
+      (1) <b style="color: #FF007F;">Algebraic Integrity:</b> By squaring deviations, negative signs vanish naturally without mathematically illegitimate absolute-value assumptions.<br />
+      (2) <b style="color: #FF007F;">Sample Stability:</b> Displays the smallest sampling fluctuation among all dispersion measures.<br />
+      (3) <b style="color: #FF007F;">Normal Curve Properties:</b> In a normal bell curve, exactly 68.26% of cases fall within Mean &plusmn; 1&sigma;; 95.44% fall within Mean &plusmn; 2&sigma;; and 99.73% fall within Mean &plusmn; 3&sigma;.<br />
+      (4) <b style="color: #FF007F;">Foundation for Inferential Statistics:</b> Indispensable for computing Z-scores, T-scores, Standard Error, Pearson's r, and ANOVA.</p>
     </div>
   </div>
 
   <!-- Q23 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q23: Critical Analysis of Correlation: Meaning, Types, and Pedagogical Applications in School Decision-Making.
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; margin-bottom: 8px;">Q23: Critical Analysis of Correlation: Meaning, Types, and Pedagogical Applications in School Decision-Making.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
-      <p><b style="color: \${themeColor};">I. Concept of Correlation:</b><br />
+      <p><b style="color: #FF007F;">I. Concept of Correlation:</b><br />
       Pioneered by Francis Galton and Karl Pearson, correlation quantifies the degree and direction of co-variation between two paired variables, represented by a coefficient ranging from &minus;1.00 to +1.00.</p>
 
-      <p><b style="color: \${themeColor};">II. Types of Correlation:</b><br />
-      (1) <b style="color: \${themeColor};">Positive Correlation (r &gt; 0):</b> Variables change in the same direction (e.g., intelligence and scholastic achievement).<br />
-      (2) <b style="color: \${themeColor};">Negative Correlation (r &lt; 0):</b> Variables change in opposite directions (e.g., chronic absenteeism and grade point average).<br />
-      (3) <b style="color: \${themeColor};">Zero Correlation (r = 0.00):</b> No linear relationship exists (e.g., shoe size and memory span).<br />
-      (4) <b style="color: \${themeColor};">Linear vs. Curvilinear:</b> Constant proportionality vs. variable changes (like the Yerkes-Dodson arousal curve).</p>
+      <p><b style="color: #FF007F;">II. Types of Correlation:</b><br />
+      (1) <b style="color: #FF007F;">Positive Correlation (r &gt; 0):</b> Variables change in the same direction (e.g., intelligence and scholastic achievement).<br />
+      (2) <b style="color: #FF007F;">Negative Correlation (r &lt; 0):</b> Variables change in opposite directions (e.g., chronic absenteeism and grade point average).<br />
+      (3) <b style="color: #FF007F;">Zero Correlation (r = 0.00):</b> No linear relationship exists (e.g., shoe size and memory span).<br />
+      (4) <b style="color: #FF007F;">Linear vs. Curvilinear:</b> Constant proportionality vs. variable changes (like the Yerkes-Dodson arousal curve).</p>
 
-      <p><b style="color: \${themeColor};">III. Pedagogical Decision-Making:</b><br />
+      <p><b style="color: #FF007F;">III. Pedagogical Decision-Making:</b><br />
       Schools use correlation to establish psychometric test reliability, validate internal examination papers against board standards, predict academic success, and provide scientific stream counseling.</p>
     </div>
   </div>
 
   <!-- Q24 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q24: Detailed Comparative Exposition of Spearman's Rank Difference Method and Pearson's Product-Moment Method.
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; margin-bottom: 8px;">Q24: Detailed Comparative Exposition of Spearman's Rank Difference Method and Pearson's Product-Moment Method.
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
-      <p><b style="color: \${themeColor};">I. Theoretical Paradigms:</b><br />
+      <p><b style="color: #FF007F;">I. Theoretical Paradigms:</b><br />
       Spearman's Rho (&rho;) is a non-parametric technique operating on ordinal rank orders, while Pearson's r is a parametric technique operating on continuous quantitative deviations from the mean.</p>
 
-      <p><b style="color: \${themeColor};">II. Comprehensive Comparison:</b><br />
-      (1) <b style="color: \${themeColor};">Mathematical Formulas:</b> Spearman: &rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ]. Pearson: r = &sum; xy / &radic;[ (&sum; x&sup2;) &times; (&sum; y&sup2;) ].<br />
-      (2) <b style="color: \${themeColor};">Sample Requirements:</b> Spearman is ideal for small samples (N &lt; 30); Pearson requires large normally distributed samples (N &gt; 30).<br />
-      (3) <b style="color: \${themeColor};">Suitability:</b> Spearman handles qualitative judgments (debate ranks, art contests, teacher ratings); Pearson handles continuous numerical test scores.<br />
-      (4) <b style="color: \${themeColor};">Precision:</b> Pearson is more sensitive and mathematically powerful; Spearman is faster but loses granular score distance information by reducing scores to ranks.</p>
+      <p><b style="color: #FF007F;">II. Comprehensive Comparison:</b><br />
+      (1) <b style="color: #FF007F;">Mathematical Formulas:</b> Spearman: &rho; = 1 &minus; [ 6 &sum; D&sup2; / (N(N&sup2; &minus; 1)) ]. Pearson: r = &sum; xy / &radic;[ (&sum; x&sup2;) &times; (&sum; y&sup2;) ].<br />
+      (2) <b style="color: #FF007F;">Sample Requirements:</b> Spearman is ideal for small samples (N &lt; 30); Pearson requires large normally distributed samples (N &gt; 30).<br />
+      (3) <b style="color: #FF007F;">Suitability:</b> Spearman handles qualitative judgments (debate ranks, art contests, teacher ratings); Pearson handles continuous numerical test scores.<br />
+      (4) <b style="color: #FF007F;">Precision:</b> Pearson is more sensitive and mathematically powerful; Spearman is faster but loses granular score distance information by reducing scores to ranks.</p>
     </div>
   </div>
 
   <!-- Q25 -->
   <div style="margin: 22px 0;">
-    <h3 style="color: \${themeColor}; font-size: 17px; margin-bottom: 8px;">Q25: Full Numerical Board Master Problem: Step-by-Step Computation and Interpretation of Spearman's Rank Correlation (&rho;).
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 17px; margin-bottom: 8px;">Q25: Full Numerical Board Master Problem: Step-by-Step Computation and Interpretation of Spearman's Rank Correlation (&rho;).
     </h3>
     <div style="color: #FFFFFF; line-height: 1.75;">
-      <p><b style="color: \${themeColor};">Problem Statement:</b><br />
+      <p><b style="color: #FF007F;">Problem Statement:</b><br />
       Calculate the Spearman Rank Correlation Coefficient (&rho;) between scores obtained by 7 students in English (X) and Mathematics (Y), and interpret the result.</p>
 
       <div style="overflow-x: auto; margin: 10px 0;">
         <table style="width: 100%; border-collapse: collapse; font-size: 13.5px; color: #FFFFFF; text-align: center;">
           <thead>
-            <tr style="background: rgba(255, 0, 127, 0.3); border-bottom: 2px solid \${themeColor};">
+            <tr style="background: rgba(255, 0, 127, 0.3); border-bottom: 2px solid #FF007F;">
               <th style="padding: 6px;">Student</th>
               <th style="padding: 6px;">English (X)</th>
               <th style="padding: 6px;">Maths (Y)</th>
@@ -775,13 +775,13 @@ export const c12Edu7HtmlSolutions = `
         </table>
       </div>
 
-      <p><b style="color: \${themeColor};">Calculations:</b><br />
+      <p><b style="color: #FF007F;">Calculations:</b><br />
       &sum; D&sup2; = 1 + 1 + 1 + 1 + 1 + 1 + 0 = <b>6</b>. Total pairs N = <b>7</b>.<br />
       N(N&sup2; &minus; 1) = 7(49 &minus; 1) = 7 &times; 48 = <b>336</b>.<br />
       6 &times; &sum; D&sup2; = 6 &times; 6 = <b>36</b>.<br />
       &rho; = 1 &minus; [ 36 / 336 ] = 1 &minus; 0.107 = <b style="color: #FF80BF; font-size: 16px;">+0.893 &approx; +0.89</b>.</p>
 
-      <p><b style="color: \${themeColor};">Pedagogical Interpretation:</b><br />
+      <p><b style="color: #FF007F;">Pedagogical Interpretation:</b><br />
       The obtained coefficient &rho; = +0.89 signifies a <b>very high positive correlation</b> between English and Mathematics achievement among these students. Students who rank high in English consistently rank high in Mathematics, indicating high generalized scholastic ability across both linguistic and mathematical domains.</p>
     </div>
   </div>

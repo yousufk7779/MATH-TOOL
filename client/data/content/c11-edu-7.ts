@@ -21,166 +21,166 @@ export const c11Edu7HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
-  <div style="background: rgba(255, 0, 127, 0.06); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📊 Quick Glossary &amp; Core Statistical Concepts</h2>
+  <div style="background: rgba(255, 0, 127, 0.06); border: 1.5px solid #FF007F; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #FF007F; font-weight: bold; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📊 Quick Glossary &amp; Core Statistical Concepts</h2>
     <p class="text-center" style="color: #FF80BF; margin: 0 0 16px 0; font-size: 14.5px;">Essential Terminologies &bull; Unit 7: Statistics and Education (10 Marks)</p>
 
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Statistics:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">1. Statistics:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The scientific body of mathematical methods employed for the collection, organization, summarization, graphical presentation, analysis, and meaningful interpretation of numerical data.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Statistics:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Statistics:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The specialized branch of statistics that applies quantitative measurement and statistical tools to educational evaluation, test scores, pupil intelligence, academic achievement, and institutional planning (Garrett).</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Frequency Distribution:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">3. Frequency Distribution:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A systematic tabular arrangement of raw scores into non-overlapping groups or class intervals along with the corresponding frequency (number of occurrences) of students falling in each class.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Measures of Central Tendency:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">4. Measures of Central Tendency:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Statistical averages (Mean, Median, Mode) that represent the central point or typical score around which all individual observations in a frequency distribution tend to cluster.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Ogive:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #FF007F; border-radius: 6px;">
+        <b style="color: #FF007F; font-size: 16px; display: block; margin-bottom: 4px;">5. Ogive:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A cumulative frequency line graph (S-shaped curve) constructed using cumulative frequencies plotted against class boundaries, utilized specifically for locating the Median and percentiles graphically.</span>
       </div>
     </div>
   </div>
 
   <!-- SECTION 7.1 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">7.1 Statistics: Meaning and significance in Education</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 30px;">7.1 Statistics: Meaning and significance in Education</h2>
 
   <p>In contemporary educational science, evaluation is no longer based on subjective teacher impressions or arbitrary guesswork. When hundreds of students sit for board examinations, psychological assessments, or aptitude evaluations, teachers and administrators are confronted with massive stacks of chaotic raw marks. Without mathematical reduction, these numbers remain unintelligible. Statistics is the scientific language through which raw figures are transformed into precise, meaningful, and actionable educational insights.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Etymology and Definitions of Statistics</h3>
-  <p>The term <b style="color: ${themeColor};">"Statistics"</b> has its roots in several classical European languages, all reflecting statecraft and governance:</p>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) Etymology and Definitions of Statistics</h3>
+  <p>The term <b style="color: #FF007F;">"Statistics"</b> has its roots in several classical European languages, all reflecting statecraft and governance:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Latin word:</b> <i>Status</i> (meaning a political state or condition of affairs).</li>
-    <li><b style="color: ${themeColor};">Italian word:</b> <i>Statista</i> (meaning a statesman or person skilled in state administration).</li>
-    <li><b style="color: ${themeColor};">German word:</b> <i>Statistik</i> (first introduced by Gottfried Achenwall in 1749 to denote the comprehensive collection of state revenue, population, and military data).</li>
-    <li><b style="color: ${themeColor};">French word:</b> <i>Statistique</i>.</li>
+    <li><b style="color: #FF007F;">Latin word:</b> <i>Status</i> (meaning a political state or condition of affairs).</li>
+    <li><b style="color: #FF007F;">Italian word:</b> <i>Statista</i> (meaning a statesman or person skilled in state administration).</li>
+    <li><b style="color: #FF007F;">German word:</b> <i>Statistik</i> (first introduced by Gottfried Achenwall in 1749 to denote the comprehensive collection of state revenue, population, and military data).</li>
+    <li><b style="color: #FF007F;">French word:</b> <i>Statistique</i>.</li>
   </ul>
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 8px 0;">📖 Two Broad Senses of Statistics:</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 18px 0;">
+    <h4 style="color: #FF007F; font-weight: bold; margin: 0 0 8px 0;">📖 Two Broad Senses of Statistics:</h4>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">1. Statistics in the Plural Sense (Numerical Data):</b> According to <b>Horace Secrist</b>, <i>"By statistics we mean aggregates of facts affected to a marked extent by multiplicity of causes, numerically expressed, enumerated or estimated according to reasonable standards of accuracy, collected in a systematic manner for a predetermined purpose, and placed in relation to each other."</i>
+      <b style="color: #FF007F;">1. Statistics in the Plural Sense (Numerical Data):</b> According to <b>Horace Secrist</b>, <i>"By statistics we mean aggregates of facts affected to a marked extent by multiplicity of causes, numerically expressed, enumerated or estimated according to reasonable standards of accuracy, collected in a systematic manner for a predetermined purpose, and placed in relation to each other."</i>
     </p>
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">2. Statistics in the Singular Sense (Statistical Science):</b> According to <b>Croxton and Cowden</b>, <i>"Statistics may be defined as the science of collection, presentation, analysis and interpretation of numerical data."</i>
+      <b style="color: #FF007F;">2. Statistics in the Singular Sense (Statistical Science):</b> According to <b>Croxton and Cowden</b>, <i>"Statistics may be defined as the science of collection, presentation, analysis and interpretation of numerical data."</i>
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Educational Statistics (Garrett's Definition)</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Educational Statistics (Garrett's Definition)</h3>
   <p>In pedagogical disciplines, <b>Henry E. Garrett</b> defined Educational Statistics as the indispensable mathematical methodology applied to psychology and education to interpret test results, measure mental traits, establish norms, and validate pedagogical research hypotheses.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Significance and Functions of Statistics in Education</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iii) Significance and Functions of Statistics in Education</h3>
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">1. Condensation and Simplification of Bulky Data:</b>
+      <b style="color: #FF007F; font-size: 16px;">1. Condensation and Simplification of Bulky Data:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         It condenses chaotic masses of scores of hundreds of pupils into a single concise frequency table, a histogram, or a single representative numerical value (such as the Mean mark of 68%).
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">2. Accurate and Objective Comparison:</b>
+      <b style="color: #FF007F; font-size: 16px;">2. Accurate and Objective Comparison:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         It allows valid comparisons between individual students, between two sections of a class, across different academic years, or between distinct school districts using standardized percentiles and standard scores.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">3. Measuring Individual Differences:</b>
+      <b style="color: #FF007F; font-size: 16px;">3. Measuring Individual Differences:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Psychological variability in intelligence, mechanical aptitude, memory span, and reading speed can only be scientifically quantified and categorized (into gifted, average, or slow learners) through statistical standard deviations and normal probability curves.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">4. Prediction and Educational Prognosis:</b>
+      <b style="color: #FF007F; font-size: 16px;">4. Prediction and Educational Prognosis:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         By establishing correlation coefficients between class 10 aptitude scores and higher secondary science success, educators can offer evidence-based career guidance.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 0, 127, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">5. Construction and Standardization of Tests:</b>
+      <b style="color: #FF007F; font-size: 16px;">5. Construction and Standardization of Tests:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         No examination paper or psychometric test can be considered scientifically reliable or valid without item analysis, difficulty index calculation, and discrimination power evaluation computed via statistics.
       </p>
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iv) Inherent Limitations of Statistics</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iv) Inherent Limitations of Statistics</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Deals only with Aggregates:</b> A single isolated mark (e.g., Rahul scored 72) has no statistical significance unless compared against the group distribution.</li>
-    <li><b style="color: ${themeColor};">Restricted to Quantitative Phenomena:</b> Pure qualitative human qualities like empathy, artistic creativity, moral character, or spiritual dedication cannot be directly measured by statistics without psychometric scaling.</li>
-    <li><b style="color: ${themeColor};">Statistical Truths are Probabilistic:</b> Laws of statistics are true only on the average and over large sample sizes; they do not apply uniformly to every individual case.</li>
-    <li><b style="color: ${themeColor};">Prone to Deliberate Misuse:</b> In the hands of untrained or biased personnel, statistics can be manipulated to produce misleading claims (e.g., presenting selective percentages to mask institutional failure).</li>
+    <li><b style="color: #FF007F;">Deals only with Aggregates:</b> A single isolated mark (e.g., Rahul scored 72) has no statistical significance unless compared against the group distribution.</li>
+    <li><b style="color: #FF007F;">Restricted to Quantitative Phenomena:</b> Pure qualitative human qualities like empathy, artistic creativity, moral character, or spiritual dedication cannot be directly measured by statistics without psychometric scaling.</li>
+    <li><b style="color: #FF007F;">Statistical Truths are Probabilistic:</b> Laws of statistics are true only on the average and over large sample sizes; they do not apply uniformly to every individual case.</li>
+    <li><b style="color: #FF007F;">Prone to Deliberate Misuse:</b> In the hands of untrained or biased personnel, statistics can be manipulated to produce misleading claims (e.g., presenting selective percentages to mask institutional failure).</li>
   </ul>
 
   <!-- SECTION 7.2 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">7.2 Graphical representation of Data: Histogram, Frequency polygon/ Ogive, Pie chart</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">7.2 Graphical representation of Data: Histogram, Frequency polygon/ Ogive, Pie chart</h2>
 
   <p>While statistical frequency tables organize numerical data, human cognition processes visual images far faster than rows of numbers. Graphical representation translates abstract tables into clear geometrical patterns, instantly displaying central peaks, dispersion, symmetry, and skewness.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Fundamental Rules of Graphic Presentation</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 20px;">(i) Fundamental Rules of Graphic Presentation</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Axes Allocation:</b> Independent variable (scores, class intervals, or test limits) is invariably plotted on the horizontal <b>X-axis (Abscissa)</b>; dependent variable (frequencies) is plotted on the vertical <b>Y-axis (Ordinate)</b>.</li>
-    <li><b style="color: ${themeColor};">Scale Selection:</b> Scales should be chosen so that the entire graph fits harmoniously on the sheet. The conventional guideline (the <b>75% Rule</b>) states that the maximum vertical height of the curve should be approximately 75% of its total horizontal width.</li>
-    <li><b style="color: ${themeColor};">False Base Line (Kink / Zig-zag line):</b> When class intervals start at a high score far above zero (e.g., 50-60), a small jagged break (&#8767;) is made near the origin to maintain proportionality.</li>
+    <li><b style="color: #FF007F;">Axes Allocation:</b> Independent variable (scores, class intervals, or test limits) is invariably plotted on the horizontal <b>X-axis (Abscissa)</b>; dependent variable (frequencies) is plotted on the vertical <b>Y-axis (Ordinate)</b>.</li>
+    <li><b style="color: #FF007F;">Scale Selection:</b> Scales should be chosen so that the entire graph fits harmoniously on the sheet. The conventional guideline (the <b>75% Rule</b>) states that the maximum vertical height of the curve should be approximately 75% of its total horizontal width.</li>
+    <li><b style="color: #FF007F;">False Base Line (Kink / Zig-zag line):</b> When class intervals start at a high score far above zero (e.g., 50-60), a small jagged break (&#8767;) is made near the origin to maintain proportionality.</li>
   </ul>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Histogram (Column Diagram)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Histogram (Column Diagram)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      A <b style="color: ${themeColor};">Histogram</b> is a two-dimensional bar graph composed of contiguous (adjoining) vertical rectangles erected on the exact continuous class boundaries of a frequency distribution. 
+      A <b style="color: #FF007F;">Histogram</b> is a two-dimensional bar graph composed of contiguous (adjoining) vertical rectangles erected on the exact continuous class boundaries of a frequency distribution. 
       <br/><br/>
       &bull; <b>Base of rectangle</b> = True class width (exact lower limit to exact upper limit, e.g., 19.5 to 29.5).
       <br/>
       &bull; <b>Height of rectangle</b> = Corresponding class frequency.
       <br/>
-      &bull; <b>Continuous Nature:</b> Since class intervals are continuous, there is <b>zero gap</b> between adjacent rectangles. The total area enclosed by all bars is strictly proportional to the total frequency ($N$).
+      &bull; <b style="color: #FF007F; font-weight: bold;">Continuous Nature:</b> Since class intervals are continuous, there is <b>zero gap</b> between adjacent rectangles. The total area enclosed by all bars is strictly proportional to the total frequency ($N$).
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Frequency Polygon</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iii) Frequency Polygon</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      A <b style="color: ${themeColor};">Frequency Polygon</b> is a closed multi-segmented line graph constructed by plotting the class frequency directly against the exact <b>Midpoint (Mid-value, X)</b> of each class interval, and connecting adjacent plotted points with straight line segments.
+      A <b style="color: #FF007F;">Frequency Polygon</b> is a closed multi-segmented line graph constructed by plotting the class frequency directly against the exact <b>Midpoint (Mid-value, X)</b> of each class interval, and connecting adjacent plotted points with straight line segments.
       <br/><br/>
-      &bull; <b>Closing the Polygon:</b> To make it a true closed geometrical polygon resting on the horizontal baseline, the two end-points are extended to the midpoints of the two immediate hypothetical adjacent class intervals (one below the lowest class and one above the highest class) where the frequency is strictly <b>zero</b>.
+      &bull; <b style="color: #FF007F; font-weight: bold;">Closing the Polygon:</b> To make it a true closed geometrical polygon resting on the horizontal baseline, the two end-points are extended to the midpoints of the two immediate hypothetical adjacent class intervals (one below the lowest class and one above the highest class) where the frequency is strictly <b>zero</b>.
       <br/>
-      &bull; <b>Equivalence with Histogram:</b> The total area under a frequency polygon is mathematically equal to the total area of the corresponding histogram.
+      &bull; <b style="color: #FF007F; font-weight: bold;">Equivalence with Histogram:</b> The total area under a frequency polygon is mathematically equal to the total area of the corresponding histogram.
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iv) Ogive (Cumulative Frequency Curve)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iv) Ogive (Cumulative Frequency Curve)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      An <b style="color: ${themeColor};">Ogive</b> (pronounced <i>oh-jive</i>) is a smooth cumulative frequency curve shaped like an elongated S-curve.
+      An <b style="color: #FF007F;">Ogive</b> (pronounced <i>oh-jive</i>) is a smooth cumulative frequency curve shaped like an elongated S-curve.
       <br/><br/>
-      &bull; <b>'Less than' Ogive:</b> Plotted by taking the <i>upper exact class limits</i> on the X-axis and the cumulative frequencies starting from the bottom class upwards on the Y-axis. The curve rises continuously from bottom-left to top-right.
+      &bull; <b style="color: #FF007F; font-weight: bold;">'Less than' Ogive:</b> Plotted by taking the <i>upper exact class limits</i> on the X-axis and the cumulative frequencies starting from the bottom class upwards on the Y-axis. The curve rises continuously from bottom-left to top-right.
       <br/>
-      &bull; <b>'More than' Ogive:</b> Plotted by taking the <i>lower exact class limits</i> on the X-axis and cumulative frequencies counting downwards from top to bottom. The curve slopes downwards.
+      &bull; <b style="color: #FF007F; font-weight: bold;">'More than' Ogive:</b> Plotted by taking the <i>lower exact class limits</i> on the X-axis and cumulative frequencies counting downwards from top to bottom. The curve slopes downwards.
       <br/>
-      &bull; <b style="color: ${themeColor};">Graphical Determination of Median:</b> If both curves are drawn on the same coordinate axes, the point of intersection projected vertically downward onto the horizontal X-axis gives the exact <b>Median</b> of the distribution! Alternatively, draw a horizontal line at N/2 on the Y-axis to meet the Ogive; dropping a perpendicular to the X-axis identifies the Median directly.
+      &bull; <b style="color: #FF007F;">Graphical Determination of Median:</b> If both curves are drawn on the same coordinate axes, the point of intersection projected vertically downward onto the horizontal X-axis gives the exact <b>Median</b> of the distribution! Alternatively, draw a horizontal line at N/2 on the Y-axis to meet the Ogive; dropping a perpendicular to the X-axis identifies the Median directly.
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(v) Pie Chart (Sector Diagram / Circle Graph)</h3>
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(v) Pie Chart (Sector Diagram / Circle Graph)</h3>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 12px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      A <b style="color: ${themeColor};">Pie Chart</b> is a circular statistical diagram where a complete circle of 360&deg; is partitioned into radial sectors, each representing a distinct component category of the educational data.
+      A <b style="color: #FF007F;">Pie Chart</b> is a circular statistical diagram where a complete circle of 360&deg; is partitioned into radial sectors, each representing a distinct component category of the educational data.
       <br/><br/>
-      &bull; <b>Central Angle Formula:</b> The angle subtended at the center by each category sector is calculated as:
-      <div class="text-center" style="margin: 10px 0; font-weight: bold; color: ${themeColor}; font-size: 16px;">
+      &bull; <b style="color: #FF007F; font-weight: bold;">Central Angle Formula:</b> The angle subtended at the center by each category sector is calculated as:
+      <div class="text-center" style="margin: 10px 0; font-weight: bold; color: #FF007F; font-size: 16px;">
         Sector Angle (&theta;) = (Class Frequency / Total N) &times; 360&deg;
       </div>
-      &bull; <b>Educational Application:</b> Ideal for showing the proportion of school budgets allocated across salaries, infrastructure, laboratory equipment, and sports; or displaying student enrollment percentages across Science, Arts, Commerce, and Vocational streams.
+      &bull; <b style="color: #FF007F; font-weight: bold;">Educational Application:</b> Ideal for showing the proportion of school budgets allocated across salaries, infrastructure, laboratory equipment, and sports; or displaying student enrollment percentages across Science, Arts, Commerce, and Vocational streams.
     </p>
   </div>
 
@@ -265,32 +265,32 @@ export const c11Edu7HtmlOverview = `
   </div>
 
   <!-- SECTION 7.3 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">7.3 Descriptive statistics: Measures of Central Tendency from grouped and ungrouped data (Mean, Median, Mode)</h2>
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 35px;">7.3 Descriptive statistics: Measures of Central Tendency from grouped and ungrouped data (Mean, Median, Mode)</h2>
 
-  <p>A <b style="color: ${themeColor};">Measure of Central Tendency</b> is a single representative value that describes the center or average of an entire frequency distribution. It captures the general level of performance of a class in one single score, around which other marks cluster. The three classic measures of central tendency are the <b>Arithmetic Mean</b>, the <b>Median</b>, and the <b>Mode</b>.</p>
+  <p>A <b style="color: #FF007F;">Measure of Central Tendency</b> is a single representative value that describes the center or average of an entire frequency distribution. It captures the general level of performance of a class in one single score, around which other marks cluster. The three classic measures of central tendency are the <b>Arithmetic Mean</b>, the <b>Median</b>, and the <b>Mode</b>.</p>
 
   <!-- MEAN (ARITHMETIC AVERAGE) -->
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Arithmetic Mean (&mu; or X&#772;)</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(i) Arithmetic Mean (&mu; or X&#772;)</h3>
   <p>The Arithmetic Mean is the sum of all individual scores divided by the total number of scores. It is the most sensitive, widely used, and mathematically stable measure of central tendency.</p>
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 8px 0;">📐 Formulas for Arithmetic Mean:</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+    <h4 style="color: #FF007F; font-weight: bold; margin: 0 0 8px 0;">📐 Formulas for Arithmetic Mean:</h4>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>1. Ungrouped Data:</b>
+      <b style="color: #FF007F; font-weight: bold;">1. Ungrouped Data:</b>
       <br/>
       X&#772; = (&sum; X) / N
       <br/>
       <span style="font-size: 14px; color: #CBD5E1;">Where &sum; X = Sum of all individual scores, and N = Total number of observations.</span>
     </p>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>2. Grouped Data &mdash; Direct Method:</b>
+      <b style="color: #FF007F; font-weight: bold;">2. Grouped Data &mdash; Direct Method:</b>
       <br/>
       X&#772; = (&sum; f X) / N
       <br/>
       <span style="font-size: 14px; color: #CBD5E1;">Where f = Class frequency, X = Midpoint of class interval, and N = &sum; f.</span>
     </p>
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>3. Grouped Data &mdash; Assumed Mean (Step Deviation / Short-cut) Method:</b>
+      <b style="color: #FF007F; font-weight: bold;">3. Grouped Data &mdash; Assumed Mean (Step Deviation / Short-cut) Method:</b>
       <br/>
       X&#772; = AM + [(&sum; f d') / N] &times; i
       <br/>
@@ -300,13 +300,13 @@ export const c11Edu7HtmlOverview = `
 
   <!-- WORKED EXAMPLE: MEAN -->
   <div style="background: rgba(0, 0, 0, 0.35); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
-    <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 6px;">📝 Step-by-Step Worked Calculation: Mean (Grouped Data)</b>
+    <b style="color: #FF007F; font-size: 15.5px; display: block; margin-bottom: 6px;">📝 Step-by-Step Worked Calculation: Mean (Grouped Data)</b>
     <p style="font-size: 14px; color: #E2E8F0; margin: 0 0 10px 0;">Calculate the Mean for the following test scores of 50 students:</p>
     
     <div style="overflow-x: auto;">
       <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13.5px; color: #FFFFFF;">
         <thead>
-          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid ${themeColor};">
+          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid #FF007F;">
             <th style="padding: 6px;">Class Interval</th>
             <th style="padding: 6px;">Midpoint (X)</th>
             <th style="padding: 6px;">Frequency (f)</th>
@@ -317,7 +317,7 @@ export const c11Edu7HtmlOverview = `
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>50 &ndash; 60</td><td>55</td><td>4</td><td>+2</td><td>+8</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>40 &ndash; 50</td><td>45</td><td>12</td><td>+1</td><td>+12</td></tr>
-          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: ${themeColor};">30 &ndash; 40 (AM)</td><td>35</td><td>18</td><td>0</td><td>0</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: #FF007F;">30 &ndash; 40 (AM)</td><td>35</td><td>18</td><td>0</td><td>0</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>20 &ndash; 30</td><td>25</td><td>10</td><td>&minus;1</td><td>&minus;10</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>10 &ndash; 20</td><td>15</td><td>6</td><td>&minus;2</td><td>&minus;12</td></tr>
           <tr style="font-weight: bold; background: rgba(255,255,255,0.05);"><td colspan="2">Total</td><td>N = 50</td><td>&mdash;</td><td>&sum; f d' = &minus;2</td></tr>
@@ -326,26 +326,26 @@ export const c11Edu7HtmlOverview = `
     </div>
 
     <div style="margin-top: 10px; font-size: 14.5px; color: #F1F5F9; line-height: 1.7;">
-      <b>Calculation using Step-Deviation:</b><br/>
+      <b style="color: #FF007F; font-weight: bold;">Calculation using Step-Deviation:</b><br/>
       X&#772; = AM + [(&sum; f d') / N] &times; i = 35 + [(-2) / 50] &times; 10 = 35 - 0.40 = <b>34.60</b>
     </div>
   </div>
 
   <!-- MEDIAN -->
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Median (Mdn)</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(ii) Median (Mdn)</h3>
   <p>The Median is the positional average. It is the exact middle point of an array of scores ranked in ascending or descending order of magnitude, dividing the distribution into two equal halves (50% cases lie above and 50% lie below).</p>
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 8px 0;">📐 Formulas for Median:</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+    <h4 style="color: #FF007F; font-weight: bold; margin: 0 0 8px 0;">📐 Formulas for Median:</h4>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>1. Ungrouped Data:</b> First rank the scores in serial order.
+      <b style="color: #FF007F; font-weight: bold;">1. Ungrouped Data:</b> First rank the scores in serial order.
       <br/>
       &bull; If N is <b>odd</b>: Median = [(N + 1) / 2]-th score.
       <br/>
       &bull; If N is <b>even</b>: Median = Average of (N / 2)-th score and [(N / 2) + 1]-th score.
     </p>
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>2. Grouped Data Formula:</b>
+      <b style="color: #FF007F; font-weight: bold;">2. Grouped Data Formula:</b>
       <br/>
       Median = L + [((N / 2) - F) / f_m] &times; i
       <br/>
@@ -362,13 +362,13 @@ export const c11Edu7HtmlOverview = `
 
   <!-- WORKED EXAMPLE: MEDIAN -->
   <div style="background: rgba(0, 0, 0, 0.35); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 8px; padding: 14px 16px; margin: 16px 0;">
-    <b style="color: ${themeColor}; font-size: 15.5px; display: block; margin-bottom: 6px;">📝 Step-by-Step Worked Calculation: Median (Grouped Data)</b>
+    <b style="color: #FF007F; font-size: 15.5px; display: block; margin-bottom: 6px;">📝 Step-by-Step Worked Calculation: Median (Grouped Data)</b>
     <p style="font-size: 14px; color: #E2E8F0; margin: 0 0 10px 0;">Find the Median for N = 50 (from the previous distribution):</p>
     
     <div style="overflow-x: auto;">
       <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13.5px; color: #FFFFFF;">
         <thead>
-          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid ${themeColor};">
+          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid #FF007F;">
             <th style="padding: 6px;">Class Interval</th>
             <th style="padding: 6px;">Exact Limits</th>
             <th style="padding: 6px;">f</th>
@@ -378,7 +378,7 @@ export const c11Edu7HtmlOverview = `
         <tbody>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>50 &ndash; 60</td><td>49.5 &ndash; 59.5</td><td>4</td><td>50</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>40 &ndash; 50</td><td>39.5 &ndash; 49.5</td><td>12</td><td>46</td></tr>
-          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: ${themeColor};">30 &ndash; 40 (Median Class)</td><td>29.5 &ndash; 39.5</td><td>18</td><td>34</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: #FF007F;">30 &ndash; 40 (Median Class)</td><td>29.5 &ndash; 39.5</td><td>18</td><td>34</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>20 &ndash; 30</td><td>19.5 &ndash; 29.5</td><td>10</td><td>16</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>10 &ndash; 20</td><td>9.5 &ndash; 19.5</td><td>6</td><td>6</td></tr>
         </tbody>
@@ -386,31 +386,31 @@ export const c11Edu7HtmlOverview = `
     </div>
 
     <div style="margin-top: 10px; font-size: 14.5px; color: #F1F5F9; line-height: 1.7;">
-      <b>Step 1:</b> Find N/2 = 50 / 2 = 25.<br/>
-      <b>Step 2:</b> Looking at cumulative frequencies from bottom up, 25 falls in class <b>30&ndash;40</b> (since cf reaches 16 in 20-30, and up to 34 in 30-40). Thus, Median class = 30&ndash;40.<br/>
-      <b>Step 3:</b> L = 29.5, F = 16, f_m = 18, i = 10.<br/>
+      <b style="color: #FF007F; font-weight: bold;">Step 1:</b> Find N/2 = 50 / 2 = 25.<br/>
+      <b style="color: #FF007F; font-weight: bold;">Step 2:</b> Looking at cumulative frequencies from bottom up, 25 falls in class <b>30&ndash;40</b> (since cf reaches 16 in 20-30, and up to 34 in 30-40). Thus, Median class = 30&ndash;40.<br/>
+      <b style="color: #FF007F; font-weight: bold;">Step 3:</b> L = 29.5, F = 16, f_m = 18, i = 10.<br/>
       Median = 29.5 + [(25 - 16) / 18] &times; 10 = 29.5 + (9 / 18) &times; 10 = 29.5 + 5.0 = <b>34.50</b>
     </div>
   </div>
 
   <!-- MODE -->
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(iii) Mode (Mo)</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 24px;">(iii) Mode (Mo)</h3>
   <p>The Mode is the most frequent or popular value in a distribution &mdash; the point on the score scale where frequencies reach their absolute maximum density.</p>
 
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 8px 0;">📐 Formulas for Mode:</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #FF007F; border-radius: 8px; padding: 14px 16px; margin: 14px 0;">
+    <h4 style="color: #FF007F; font-weight: bold; margin: 0 0 8px 0;">📐 Formulas for Mode:</h4>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>1. Ungrouped Data:</b> By simple inspection, the score that appears with the highest frequency. (e.g., in 12, 15, 15, 18, 15, 20 &rarr; Mode = 15).
+      <b style="color: #FF007F; font-weight: bold;">1. Ungrouped Data:</b> By simple inspection, the score that appears with the highest frequency. (e.g., in 12, 15, 15, 18, 15, 20 &rarr; Mode = 15).
     </p>
     <p style="margin: 0 0 8px 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>2. Empirical Formula (Karl Pearson's Relationship):</b>
+      <b style="color: #FF007F; font-weight: bold;">2. Empirical Formula (Karl Pearson's Relationship):</b>
       <br/>
       Mode = 3Median - 2Mean
       <br/>
       <span style="font-size: 14px; color: #CBD5E1;">For our calculated sample: Mode = 3(34.50) - 2(34.60) = 103.50 - 69.20 = <b>34.30</b>.</span>
     </p>
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.8;">
-      <b>3. Grouped Data Interpolation Formula:</b>
+      <b style="color: #FF007F; font-weight: bold;">3. Grouped Data Interpolation Formula:</b>
       <br/>
       Mode = L + [(f_1 - f_0) / (2f_1 - f_0 - f_2)] &times; i
       <br/>
@@ -523,11 +523,11 @@ export const c11Edu7HtmlOverview = `
   </div>
 
   <!-- COMPARATIVE EVALUATION MATRIX: MEAN VS MEDIAN VS MODE -->
-  <h3 style="color: ${themeColor}; margin-top: 28px;">(iv) Comparative Analysis: Mean vs Median vs Mode</h3>
+  <h3 style="color: #FF007F; font-weight: bold; margin-top: 28px;">(iv) Comparative Analysis: Mean vs Median vs Mode</h3>
   <div style="background: rgba(15, 23, 42, 0.85); border: 1.5px solid rgba(255, 0, 127, 0.4); border-radius: 10px; padding: 14px; margin: 16px 0; overflow-x: auto;">
     <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; color: #FFFFFF;">
       <thead>
-        <tr style="background: rgba(255, 0, 127, 0.25); border-bottom: 2px solid ${themeColor};">
+        <tr style="background: rgba(255, 0, 127, 0.25); border-bottom: 2px solid #FF007F;">
           <th style="padding: 10px; width: 22%;">Dimension</th>
           <th style="padding: 10px; width: 26%;">Arithmetic Mean (X&#772;)</th>
           <th style="padding: 10px; width: 26%;">Median (Mdn)</th>
@@ -536,37 +536,37 @@ export const c11Edu7HtmlOverview = `
       </thead>
       <tbody>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Nature</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Nature</td>
           <td style="padding: 9px;">Mathematical / Algebraic average.</td>
           <td style="padding: 9px;">Positional average (50th percentile).</td>
           <td style="padding: 9px;">Inspectional / Density average.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Sensitivity to Outliers</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Sensitivity to Outliers</td>
           <td style="padding: 9px; color: #F87171;">Highly sensitive; violently distorted by one freak score.</td>
           <td style="padding: 9px; color: #4ADE80;">Completely immune to extreme high/low marks.</td>
           <td style="padding: 9px; color: #4ADE80;">Unaffected by extreme values.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Based on All Scores?</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Based on All Scores?</td>
           <td style="padding: 9px;">Yes, every single score enters calculation.</td>
           <td style="padding: 9px;">No, depends only on ranks and middle count.</td>
           <td style="padding: 9px;">No, depends only on the single peak class.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Open-Ended Intervals</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Open-Ended Intervals</td>
           <td style="padding: 9px;">Cannot be calculated without arbitrary limits.</td>
           <td style="padding: 9px;">Easily calculated without assuming limits.</td>
           <td style="padding: 9px;">Easily calculated if modal class is closed.</td>
         </tr>
         <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Algebraic Treatment</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Algebraic Treatment</td>
           <td style="padding: 9px;">Ideal for advanced analysis (SD, ANOVA, correlation).</td>
           <td style="padding: 9px;">Not amenable to further algebraic operations.</td>
           <td style="padding: 9px;">Unsuitable for further mathematical expansion.</td>
         </tr>
         <tr style="background: rgba(255,255,255,0.02);">
-          <td style="padding: 9px; font-weight: bold; color: ${themeColor};">Graphical Finding</td>
+          <td style="padding: 9px; font-weight: bold; color: #FF007F;">Graphical Finding</td>
           <td style="padding: 9px;">Cannot be determined from a graph directly.</td>
           <td style="padding: 9px; color: #38BDF8;">Readily determined via Ogive curves.</td>
           <td style="padding: 9px; color: #38BDF8;">Readily determined from a Histogram.</td>
@@ -576,48 +576,48 @@ export const c11Edu7HtmlOverview = `
   </div>
 
   <!-- MASTER FORMULA REVISION CHEAT SHEET -->
-  <div style="background: rgba(255, 0, 127, 0.08); border: 2px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-top: 35px;">
-    <h3 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">⚡ Master Formula Revision Cheat Sheet</h3>
+  <div style="background: rgba(255, 0, 127, 0.08); border: 2px solid #FF007F; border-radius: 12px; padding: 18px; margin-top: 35px;">
+    <h3 class="text-center" style="color: #FF007F; font-weight: bold; margin: 0 0 6px 0; font-size: 19px; font-weight: bold;">⚡ Master Formula Revision Cheat Sheet</h3>
     <p class="text-center" style="color: #FF80BF; margin: 0 0 16px 0; font-size: 13.5px;">All Mathematical Equations for Unit 7: Statistics and Education</p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Arithmetic Mean (Ungrouped):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Arithmetic Mean (Ungrouped):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">X&#772; = (&sum; X) / N</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Mean (Grouped Direct):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Mean (Grouped Direct):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">X&#772; = (&sum; f X) / N</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Mean (Assumed / Step-Deviation):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Mean (Assumed / Step-Deviation):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">X&#772; = AM + [(&sum; f d') / N] &times; i</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Median (Grouped Data):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Median (Grouped Data):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">Median = L + [((N / 2) - F) / f_m] &times; i</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Mode (Grouped Interpolation):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Mode (Grouped Interpolation):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">Mode = L + [(f_1 - f_0) / (2f_1 - f_0 - f_2)] &times; i</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Karl Pearson's Empirical Mode:</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Karl Pearson's Empirical Mode:</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">Mode = 3Median - 2Mean</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Pie Chart Sector Central Angle:</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Pie Chart Sector Central Angle:</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">&theta; = (f / N) &times; 360&deg;</div>
       </div>
 
-      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid ${themeColor};">
-        <b style="color: ${themeColor}; font-size: 14px;">Midpoint (Mid-value of Class):</b>
+      <div style="background: rgba(0,0,0,0.3); padding: 12px 14px; border-radius: 8px; border-left: 3px solid #FF007F;">
+        <b style="color: #FF007F; font-size: 14px;">Midpoint (Mid-value of Class):</b>
         <div style="color: #FFFFFF; font-size: 15px; margin-top: 4px; font-weight: 600;">X = (Lower Limit + Upper Limit) / 2</div>
       </div>
     </div>
@@ -633,8 +633,8 @@ export const c11Edu7HtmlOverview = `
 export const c11Edu7HtmlSolutions = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
-  <div style="background: rgba(255, 0, 127, 0.08); border-left: 4px solid ${themeColor}; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
-    <h3 style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
+  <div style="background: rgba(255, 0, 127, 0.08); border-left: 4px solid #FF007F; border-radius: 6px; padding: 14px 16px; margin-bottom: 24px;">
+    <h3 style="color: #FF007F; font-weight: bold; margin: 0 0 6px 0; font-size: 18px; font-weight: bold;">🎯 Golden 25 Board Examination Q &amp; A Blueprint</h3>
     <p style="margin: 0; color: #CBD5E1; font-size: 14px;">
       Unit 7: Statistics and Education (10 Marks) &bull; Strictly 12 VSAT (1 &amp; 2 Marks), 8 SAT (4 Marks), and 5 LAT (6 Marks).
     </p>
@@ -643,45 +643,45 @@ export const c11Edu7HtmlSolutions = `
   <!-- ======================================================================== -->
   <!-- SECTION A: VERY SHORT ANSWER TYPE (1 & 2 MARKS) - 12 QUESTIONS          -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 25px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 25px;">
     Section A: Very Short Answer Questions (1 &amp; 2 Marks)
   </h2>
 
   <!-- Q1 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q1: From which European root words is the term 'Statistics' derived?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q1: From which European root words is the term 'Statistics' derived?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The word <b style="color: ${themeColor};">"Statistics"</b> is derived from the Latin word <i>'Status'</i>, the Italian word <i>'Statista'</i>, the German word <i>'Statistik'</i>, and the French word <i>'Statistique'</i>, all fundamentally meaning a political state or governmental affairs.
+      The word <b style="color: #FF007F;">"Statistics"</b> is derived from the Latin word <i>'Status'</i>, the Italian word <i>'Statista'</i>, the German word <i>'Statistik'</i>, and the French word <i>'Statistique'</i>, all fundamentally meaning a political state or governmental affairs.
     </p>
   </div>
 
   <!-- Q2 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q2: Define Educational Statistics according to Henry E. Garrett.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q2: Define Educational Statistics according to Henry E. Garrett.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      According to <b style="color: ${themeColor};">Garrett</b>, Educational Statistics is the specialized branch of statistical science that deals with the collection, analysis, and interpretation of mental and educational measurements, test scores, and research data in educational psychology and pedagogy.
+      According to <b style="color: #FF007F;">Garrett</b>, Educational Statistics is the specialized branch of statistical science that deals with the collection, analysis, and interpretation of mental and educational measurements, test scores, and research data in educational psychology and pedagogy.
     </p>
   </div>
 
   <!-- Q3 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q3: Differentiate between grouped data and ungrouped data.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q3: Differentiate between grouped data and ungrouped data.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      <b style="color: ${themeColor};">Ungrouped data</b> is raw, unorganized marks recorded individually for each student (e.g., 15, 22, 18, 29). <b style="color: ${themeColor};">Grouped data</b> is organized systematically into condensed class intervals with corresponding frequencies (e.g., marks 10&ndash;20: 5 students).
+      <b style="color: #FF007F;">Ungrouped data</b> is raw, unorganized marks recorded individually for each student (e.g., 15, 22, 18, 29). <b style="color: #FF007F;">Grouped data</b> is organized systematically into condensed class intervals with corresponding frequencies (e.g., marks 10&ndash;20: 5 students).
     </p>
   </div>
 
   <!-- Q4 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q4: What is a Histogram?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q4: What is a Histogram?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      A <b style="color: ${themeColor};">Histogram</b> is a two-dimensional bar diagram constructed on exact class boundaries where continuous rectangular columns are erected with class widths as bases and frequencies as heights, with zero gap between adjoining rectangles.
+      A <b style="color: #FF007F;">Histogram</b> is a two-dimensional bar diagram constructed on exact class boundaries where continuous rectangular columns are erected with class widths as bases and frequencies as heights, with zero gap between adjoining rectangles.
     </p>
   </div>
 
   <!-- Q5 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q5: Why is a Frequency Polygon closed at both extreme ends?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q5: Why is a Frequency Polygon closed at both extreme ends?</h3>
     <p style="color: #FFFFFF; margin: 0;">
       A frequency polygon is extended to hypothetical midpoints of zero-frequency class intervals at both ends so that it forms a complete, closed geometrical figure resting on the horizontal baseline, making its total area mathematically equal to the area of the histogram.
     </p>
@@ -689,55 +689,55 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q6 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q6: State the mathematical formula to find the sector angle in a Pie Chart.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q6: State the mathematical formula to find the sector angle in a Pie Chart.</h3>
     <p style="color: #FFFFFF; margin: 0;">
       The central angle (&theta;) of any component sector in a Pie Chart is given by:
       <br/>
-      <b style="color: ${themeColor};">&theta; = [(Frequency of Category, f) / (Total Frequency, N)] &times; 360&deg;</b>.
+      <b style="color: #FF007F;">&theta; = [(Frequency of Category, f) / (Total Frequency, N)] &times; 360&deg;</b>.
     </p>
   </div>
 
   <!-- Q7 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q7: What is an Ogive, and how is it used to locate the Median graphically?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q7: What is an Ogive, and how is it used to locate the Median graphically?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      An <b style="color: ${themeColor};">Ogive</b> is a cumulative frequency line curve. The Median is located graphically either at the horizontal coordinate where a line from N/2 on the vertical axis intersects the Ogive, or at the intersection point of the 'Less than' and 'More than' Ogives dropped down to the X-axis.
+      An <b style="color: #FF007F;">Ogive</b> is a cumulative frequency line curve. The Median is located graphically either at the horizontal coordinate where a line from N/2 on the vertical axis intersects the Ogive, or at the intersection point of the 'Less than' and 'More than' Ogives dropped down to the X-axis.
     </p>
   </div>
 
   <!-- Q8 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q8: Define Arithmetic Mean and state its formula for ungrouped data.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q8: Define Arithmetic Mean and state its formula for ungrouped data.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The <b style="color: ${themeColor};">Arithmetic Mean</b> is the sum of all numerical values in a dataset divided by the total number of items:
+      The <b style="color: #FF007F;">Arithmetic Mean</b> is the sum of all numerical values in a dataset divided by the total number of items:
       <br/>
-      <b style="color: ${themeColor};">X&#772; = (&sum; X) / N</b>, where &sum; X is the sum of raw scores and N is the total number of pupils.
+      <b style="color: #FF007F;">X&#772; = (&sum; X) / N</b>, where &sum; X is the sum of raw scores and N is the total number of pupils.
     </p>
   </div>
 
   <!-- Q9 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q9: Define Median and state its formula for grouped frequency distributions.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q9: Define Median and state its formula for grouped frequency distributions.</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      The <b style="color: ${themeColor};">Median</b> is the exact central score dividing an ordered distribution into two equal halves. For grouped data:
+      The <b style="color: #FF007F;">Median</b> is the exact central score dividing an ordered distribution into two equal halves. For grouped data:
       <br/>
-      <b style="color: ${themeColor};">Median = L + [((N / 2) - F) / f_m] &times; i</b>, where L is lower limit of median class, F is cumulative frequency below median class, and f_m is median class frequency.
+      <b style="color: #FF007F;">Median = L + [((N / 2) - F) / f_m] &times; i</b>, where L is lower limit of median class, F is cumulative frequency below median class, and f_m is median class frequency.
     </p>
   </div>
 
   <!-- Q10 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q10: State Karl Pearson's empirical formula connecting Mean, Median, and Mode.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q10: State Karl Pearson's empirical formula connecting Mean, Median, and Mode.</h3>
     <p style="color: #FFFFFF; margin: 0;">
       In moderately asymmetrical distributions, the relationship is given by:
       <br/>
-      <b style="color: ${themeColor};">Mode = 3Median - 2Mean</b>.
+      <b style="color: #FF007F;">Mode = 3Median - 2Mean</b>.
     </p>
   </div>
 
   <!-- Q11 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q11: In an examination, the Mean marks is 48 and the Median is 45. Calculate the Mode.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q11: In an examination, the Mean marks is 48 and the Median is 45. Calculate the Mode.</h3>
     <p style="color: #FFFFFF; margin: 0;">
       Using the empirical formula:
       <br/>
@@ -747,61 +747,61 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q12 -->
   <div style="margin: 18px 0;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin-bottom: 6px;">Q12: Why is the Median preferred over the Mean when extreme scores (outliers) are present?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16px; margin-bottom: 6px;">Q12: Why is the Median preferred over the Mean when extreme scores (outliers) are present?</h3>
     <p style="color: #FFFFFF; margin: 0;">
-      Because the Mean is sensitive to every numerical score, a single extremely high or zero mark will violently distort it. The <b style="color: ${themeColor};">Median</b> depends purely on the central rank order and remains completely unaffected by extreme outliers.
+      Because the Mean is sensitive to every numerical score, a single extremely high or zero mark will violently distort it. The <b style="color: #FF007F;">Median</b> depends purely on the central rank order and remains completely unaffected by extreme outliers.
     </p>
   </div>
 
   <!-- ======================================================================== -->
   <!-- SECTION B: SHORT ANSWER TYPE (4 MARKS) - 8 QUESTIONS                     -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 30px;">
     Section B: Short Answer Questions (4 Marks)
   </h2>
 
   <!-- Q13 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q13: Explain four major importances of Statistics in the field of education.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q13: Explain four major importances of Statistics in the field of education.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Precise Evaluation of Student Learning:</b> Replaces vague subjective labels like 'good' or 'poor' with scientific metrics such as percentile ranks and standardized test marks.</li>
-      <li><b style="color: ${themeColor};">2. Meaningful Data Condensation:</b> Summarizes hundreds of chaotic examination marks into a single understandable frequency table and central average (Mean).</li>
-      <li><b style="color: ${themeColor};">3. Identifying Individual Differences:</b> Allows schools to detect gifted students, average learners, and learning-disabled children through standard deviation and normal curve plotting.</li>
-      <li><b style="color: ${themeColor};">4. Standardizing Psychological Tests:</b> Essential for calculating item difficulty index, test reliability, and criterion validity of board question papers and psychometric tools.</li>
+      <li><b style="color: #FF007F;">1. Precise Evaluation of Student Learning:</b> Replaces vague subjective labels like 'good' or 'poor' with scientific metrics such as percentile ranks and standardized test marks.</li>
+      <li><b style="color: #FF007F;">2. Meaningful Data Condensation:</b> Summarizes hundreds of chaotic examination marks into a single understandable frequency table and central average (Mean).</li>
+      <li><b style="color: #FF007F;">3. Identifying Individual Differences:</b> Allows schools to detect gifted students, average learners, and learning-disabled children through standard deviation and normal curve plotting.</li>
+      <li><b style="color: #FF007F;">4. Standardizing Psychological Tests:</b> Essential for calculating item difficulty index, test reliability, and criterion validity of board question papers and psychometric tools.</li>
     </ul>
   </div>
 
   <!-- Q14 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q14: Distinguish between a Histogram and a Frequency Polygon with four points of difference.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q14: Distinguish between a Histogram and a Frequency Polygon with four points of difference.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Geometric Form:</b> A Histogram is a series of adjoining rectangular vertical columns; a Frequency Polygon is a multi-sided closed line graph.</li>
-      <li><b style="color: ${themeColor};">2. Plotting Basis:</b> Rectangles in a Histogram are erected on true <i>exact class boundaries</i>; points in a Frequency Polygon are plotted over <i>class midpoints</i>.</li>
-      <li><b style="color: ${themeColor};">3. Continuity:</b> In a Histogram, columns stand edge-to-edge with no gaps; a Frequency Polygon must be deliberately closed by connecting to hypothetical zero-frequency intervals at both ends.</li>
-      <li><b style="color: ${themeColor};">4. Multiple Comparisons:</b> Two or more distributions cannot be overlaid clearly on a single Histogram; however, multiple Frequency Polygons can easily be drawn on the same coordinate axes to compare multiple class sections.</li>
+      <li><b style="color: #FF007F;">1. Geometric Form:</b> A Histogram is a series of adjoining rectangular vertical columns; a Frequency Polygon is a multi-sided closed line graph.</li>
+      <li><b style="color: #FF007F;">2. Plotting Basis:</b> Rectangles in a Histogram are erected on true <i>exact class boundaries</i>; points in a Frequency Polygon are plotted over <i>class midpoints</i>.</li>
+      <li><b style="color: #FF007F;">3. Continuity:</b> In a Histogram, columns stand edge-to-edge with no gaps; a Frequency Polygon must be deliberately closed by connecting to hypothetical zero-frequency intervals at both ends.</li>
+      <li><b style="color: #FF007F;">4. Multiple Comparisons:</b> Two or more distributions cannot be overlaid clearly on a single Histogram; however, multiple Frequency Polygons can easily be drawn on the same coordinate axes to compare multiple class sections.</li>
     </ul>
   </div>
 
   <!-- Q15 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q15: Explain the construction and educational uses of an Ogive curve.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q15: Explain the construction and educational uses of an Ogive curve.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Construction Principle:</b> Cumulative frequencies are computed (either 'less than' or 'more than'). In a 'Less than' Ogive, cumulative counts are plotted against exact upper class limits and joined in a smooth S-shaped curve.</li>
-      <li><b style="color: ${themeColor};">2. Direct Graphical Median:</b> Locating N/2 on the vertical axis and reading the corresponding horizontal coordinate provides the exact Median without computing complex interpolation formulas.</li>
-      <li><b style="color: ${themeColor};">3. Determination of Quartiles and Percentiles:</b> Readily identifies Q_1 (at N/4), Q_3 (at 3N/4), and deciles to categorize top 10% merit students for scholarships.</li>
-      <li><b style="color: ${themeColor};">4. Evaluating Class Pass Percentages:</b> Allows teachers to visually determine what percentage of pupils scored above any specific cut-off mark (e.g., marks &ge; 40).</li>
+      <li><b style="color: #FF007F;">1. Construction Principle:</b> Cumulative frequencies are computed (either 'less than' or 'more than'). In a 'Less than' Ogive, cumulative counts are plotted against exact upper class limits and joined in a smooth S-shaped curve.</li>
+      <li><b style="color: #FF007F;">2. Direct Graphical Median:</b> Locating N/2 on the vertical axis and reading the corresponding horizontal coordinate provides the exact Median without computing complex interpolation formulas.</li>
+      <li><b style="color: #FF007F;">3. Determination of Quartiles and Percentiles:</b> Readily identifies Q_1 (at N/4), Q_3 (at 3N/4), and deciles to categorize top 10% merit students for scholarships.</li>
+      <li><b style="color: #FF007F;">4. Evaluating Class Pass Percentages:</b> Allows teachers to visually determine what percentage of pupils scored above any specific cut-off mark (e.g., marks &ge; 40).</li>
     </ul>
   </div>
 
   <!-- Q16 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q16: Calculate the Arithmetic Mean from the following ungrouped scores of 10 students: 18, 22, 25, 30, 15, 28, 35, 20, 32, 25.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q16: Calculate the Arithmetic Mean from the following ungrouped scores of 10 students: 18, 22, 25, 30, 15, 28, 35, 20, 32, 25.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <b style="color: ${themeColor};">Step 1: Formula:</b> X&#772; = (&sum; X) / N.<br/>
-      <b style="color: ${themeColor};">Step 2: Sum of scores (&sum; X):</b><br/>
+      <b style="color: #FF007F;">Step 1: Formula:</b> X&#772; = (&sum; X) / N.<br/>
+      <b style="color: #FF007F;">Step 2: Sum of scores (&sum; X):</b><br/>
       &sum; X = 18 + 22 + 25 + 30 + 15 + 28 + 35 + 20 + 32 + 25 = 250.<br/>
-      <b style="color: ${themeColor};">Step 3: Total number of observations (N):</b> N = 10.<br/>
-      <b style="color: ${themeColor};">Step 4: Calculation:</b><br/>
+      <b style="color: #FF007F;">Step 3: Total number of observations (N):</b> N = 10.<br/>
+      <b style="color: #FF007F;">Step 4: Calculation:</b><br/>
       X&#772; = 250 / 10 = <b>25.0</b>.<br/>
       <span style="color: #4ADE80; font-weight: bold;">Answer: The Arithmetic Mean score is 25.</span>
     </div>
@@ -809,15 +809,15 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q17 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q17: Calculate the Median from the following test marks: 12, 18, 25, 14, 30, 22, 28, 35, 20.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q17: Calculate the Median from the following test marks: 12, 18, 25, 14, 30, 22, 28, 35, 20.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <b style="color: ${themeColor};">Step 1: Arrange scores in ascending order:</b><br/>
+      <b style="color: #FF007F;">Step 1: Arrange scores in ascending order:</b><br/>
       12, 14, 18, 20, 22, 25, 28, 30, 35.<br/>
-      <b style="color: ${themeColor};">Step 2: Identify total number of scores (N):</b><br/>
+      <b style="color: #FF007F;">Step 2: Identify total number of scores (N):</b><br/>
       Here, N = 9 (which is an <b>odd number</b>).<br/>
-      <b style="color: ${themeColor};">Step 3: Positional Formula:</b><br/>
+      <b style="color: #FF007F;">Step 3: Positional Formula:</b><br/>
       Median = [(N + 1) / 2]-th score = [(9 + 1) / 2]-th score = 5th score.<br/>
-      <b style="color: ${themeColor};">Step 4: Identify 5th score in the ranked series:</b><br/>
+      <b style="color: #FF007F;">Step 4: Identify 5th score in the ranked series:</b><br/>
       1st=12, 2nd=14, 3rd=18, 4th=20, <b>5th=22</b>.<br/>
       <span style="color: #4ADE80; font-weight: bold;">Answer: The Median mark is 22.</span>
     </div>
@@ -825,98 +825,98 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q18 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q18: State four merits and four demerits of Arithmetic Mean.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q18: State four merits and four demerits of Arithmetic Mean.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">Merit 1 (Rigidly Defined):</b> Defined by a strict mathematical formula that yields a single unambiguous result.</li>
-      <li><b style="color: ${themeColor};">Merit 2 (Based on All Observations):</b> Utilizes every single score in the dataset, making it highly representative.</li>
-      <li><b style="color: ${themeColor};">Merit 3 (Algebraic Stability):</b> Highly amenable to further algebraic manipulation such as standard deviations, correlations, and ANOVA.</li>
-      <li><b style="color: ${themeColor};">Merit 4 (Sampling Reliability):</b> Fluctuates the least under repeated random samplings from the same population.</li>
-      <li><b style="color: #F87171;">Demerit 1 (Outlier Vulnerability):</b> Severely influenced by extreme values; a single extreme score can distort the entire average.</li>
-      <li><b style="color: #F87171;">Demerit 2 (Cannot Handle Open-Ended Classes):</b> Cannot be calculated if intervals are 'Below 20' or 'Above 80' without guessing boundaries.</li>
-      <li><b style="color: #F87171;">Demerit 3 (Misleading Impressions):</b> Can produce hypothetical values that do not correspond to any real student score (e.g., 24.7 marks).</li>
-      <li><b style="color: #F87171;">Demerit 4 (Non-Graphical):</b> Cannot be directly inspected or pinpointed from a graph.</li>
+      <li><b style="color: #FF007F;">Merit 1 (Rigidly Defined):</b> Defined by a strict mathematical formula that yields a single unambiguous result.</li>
+      <li><b style="color: #FF007F;">Merit 2 (Based on All Observations):</b> Utilizes every single score in the dataset, making it highly representative.</li>
+      <li><b style="color: #FF007F;">Merit 3 (Algebraic Stability):</b> Highly amenable to further algebraic manipulation such as standard deviations, correlations, and ANOVA.</li>
+      <li><b style="color: #FF007F;">Merit 4 (Sampling Reliability):</b> Fluctuates the least under repeated random samplings from the same population.</li>
+      <li><b style="color: #FF007F; font-weight: bold;">Demerit 1 (Outlier Vulnerability):</b> Severely influenced by extreme values; a single extreme score can distort the entire average.</li>
+      <li><b style="color: #FF007F; font-weight: bold;">Demerit 2 (Cannot Handle Open-Ended Classes):</b> Cannot be calculated if intervals are 'Below 20' or 'Above 80' without guessing boundaries.</li>
+      <li><b style="color: #FF007F; font-weight: bold;">Demerit 3 (Misleading Impressions):</b> Can produce hypothetical values that do not correspond to any real student score (e.g., 24.7 marks).</li>
+      <li><b style="color: #FF007F; font-weight: bold;">Demerit 4 (Non-Graphical):</b> Cannot be directly inspected or pinpointed from a graph.</li>
     </ul>
   </div>
 
   <!-- Q19 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q19: Explain the concept of Mode. State two practical educational applications.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q19: Explain the concept of Mode. State two practical educational applications.</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Core Concept:</b> The Mode is the score that occurs with the maximum frequency in a distribution &mdash; the point of greatest concentration or popularity.</li>
-      <li><b style="color: ${themeColor};">2. Grouped Calculation:</b> Found by locating the modal class (class with highest frequency) and applying interpolation: Mode = L + [(f_1 - f_0) / (2f_1 - f_0 - f_2)] &times; i.</li>
-      <li><b style="color: ${themeColor};">3. Application in School Uniforms &amp; Books:</b> Used by school administrations to order uniform sizes, desks, or textbooks based on the most common student measurements.</li>
-      <li><b style="color: ${themeColor};">4. Evaluating Common Student Errors:</b> Identifies the most frequent misconception or error committed by students in a multiple-choice examination.</li>
+      <li><b style="color: #FF007F;">1. Core Concept:</b> The Mode is the score that occurs with the maximum frequency in a distribution &mdash; the point of greatest concentration or popularity.</li>
+      <li><b style="color: #FF007F;">2. Grouped Calculation:</b> Found by locating the modal class (class with highest frequency) and applying interpolation: Mode = L + [(f_1 - f_0) / (2f_1 - f_0 - f_2)] &times; i.</li>
+      <li><b style="color: #FF007F;">3. Application in School Uniforms &amp; Books:</b> Used by school administrations to order uniform sizes, desks, or textbooks based on the most common student measurements.</li>
+      <li><b style="color: #FF007F;">4. Evaluating Common Student Errors:</b> Identifies the most frequent misconception or error committed by students in a multiple-choice examination.</li>
     </ul>
   </div>
 
   <!-- Q20 -->
   <div style="margin: 20px 0; background: rgba(15, 23, 42, 0.7); border-radius: 8px; padding: 14px 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin-bottom: 8px;">Q20: Under what specific conditions should an educator choose Mean, Median, or Mode?</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 16.5px; margin-bottom: 8px;">Q20: Under what specific conditions should an educator choose Mean, Median, or Mode?</h3>
     <ul style="padding-left: 20px; line-height: 1.8; margin: 0;">
-      <li><b style="color: ${themeColor};">1. Choose Mean:</b> When the score distribution is reasonably symmetrical, scores are interval/ratio data, and further advanced statistical analysis (like SD or correlation) is planned.</li>
-      <li><b style="color: ${themeColor};">2. Choose Median:</b> When the distribution is highly skewed, contains extreme outliers (very high or very low scores), or contains open-ended classes (e.g., 'Above 90').</li>
-      <li><b style="color: ${themeColor};">3. Choose Median for Ordinal Data:</b> When evaluating ranked qualitative attributes like ranking in poetry, discipline, or painting contests.</li>
-      <li><b style="color: ${themeColor};">4. Choose Mode:</b> When the quickest estimate of central tendency is needed by simple inspection, or when identifying the most popular choice in categorical surveys.</li>
+      <li><b style="color: #FF007F;">1. Choose Mean:</b> When the score distribution is reasonably symmetrical, scores are interval/ratio data, and further advanced statistical analysis (like SD or correlation) is planned.</li>
+      <li><b style="color: #FF007F;">2. Choose Median:</b> When the distribution is highly skewed, contains extreme outliers (very high or very low scores), or contains open-ended classes (e.g., 'Above 90').</li>
+      <li><b style="color: #FF007F;">3. Choose Median for Ordinal Data:</b> When evaluating ranked qualitative attributes like ranking in poetry, discipline, or painting contests.</li>
+      <li><b style="color: #FF007F;">4. Choose Mode:</b> When the quickest estimate of central tendency is needed by simple inspection, or when identifying the most popular choice in categorical surveys.</li>
     </ul>
   </div>
 
   <!-- ======================================================================== -->
   <!-- SECTION C: LONG ANSWER TYPE (6 MARKS) - 5 QUESTIONS                      -->
   <!-- ======================================================================== -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">
+  <h2 style="color: #FF007F; font-weight: bold; border-bottom: 2px solid #FF007F; padding-bottom: 6px; margin-top: 30px;">
     Section C: Long Answer Questions (6 Marks)
   </h2>
 
   <!-- Q21 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q21: What is Statistics? Discuss in detail its significance, functions, and limitations in education.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q21: What is Statistics? Discuss in detail its significance, functions, and limitations in education.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Introduction &amp; Concept:</b><br/>
+      <p><b style="color: #FF007F;">1. Introduction &amp; Concept:</b><br/>
       Statistics is the science that deals with the collection, presentation, analysis, and interpretation of quantitative educational facts. In modern schools, teachers assess cognitive, affective, and psychomotor development across large student cohorts. Statistics transforms these raw examination figures into meaningful summaries.</p>
 
-      <p><b style="color: ${themeColor};">2. Five Core Functions in Education:</b></p>
+      <p><b style="color: #FF007F;">2. Five Core Functions in Education:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Summarization:</b> Condenses bulky mark sheets into single figures like Mean or Median.</li>
-        <li><b style="color: ${themeColor};">(b) Scientific Comparison:</b> Enables relative grading by comparing an individual's score to the group mean via percentile ranks.</li>
-        <li><b style="color: ${themeColor};">(c) Test Standardization:</b> Crucial for establishing item difficulty, discrimination index, and reliability in state board examinations.</li>
-        <li><b style="color: ${themeColor};">(d) Educational Planning:</b> Guides state education departments in projecting future enrollment, teacher requirements, and budget allocations.</li>
-        <li><b style="color: ${themeColor};">(e) Educational Research:</b> Tests educational hypotheses, such as verifying whether digital smart boards significantly improve science comprehension over traditional lecturing.</li>
+        <li><b style="color: #FF007F;">(a) Summarization:</b> Condenses bulky mark sheets into single figures like Mean or Median.</li>
+        <li><b style="color: #FF007F;">(b) Scientific Comparison:</b> Enables relative grading by comparing an individual's score to the group mean via percentile ranks.</li>
+        <li><b style="color: #FF007F;">(c) Test Standardization:</b> Crucial for establishing item difficulty, discrimination index, and reliability in state board examinations.</li>
+        <li><b style="color: #FF007F;">(d) Educational Planning:</b> Guides state education departments in projecting future enrollment, teacher requirements, and budget allocations.</li>
+        <li><b style="color: #FF007F;">(e) Educational Research:</b> Tests educational hypotheses, such as verifying whether digital smart boards significantly improve science comprehension over traditional lecturing.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. Key Limitations:</b><br/>
+      <p><b style="color: #FF007F;">3. Key Limitations:</b><br/>
       Despite its immense utility, statistics deals strictly with group aggregates rather than isolated individuals; it cannot measure pure qualitative virtues like honesty or artistic creativity without psychometric conversion; its laws hold true only on the average; and it can be misused if applied by untrained hands.</p>
     </div>
   </div>
 
   <!-- Q22 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q22: Explain the four major graphical representations of educational data (Histogram, Frequency Polygon, Ogive, Pie Chart) and their relative advantages.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q22: Explain the four major graphical representations of educational data (Histogram, Frequency Polygon, Ogive, Pie Chart) and their relative advantages.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Introduction:</b><br/>
+      <p><b style="color: #FF007F;">1. Introduction:</b><br/>
       Graphical presentation is a visual method of communicating statistical tables. Graphs possess instant visual appeal, facilitate rapid comprehension, and reveal the underlying shape of score distributions.</p>
 
-      <p><b style="color: ${themeColor};">2. Detailed Examination of the Four Graphs:</b></p>
+      <p><b style="color: #FF007F;">2. Detailed Examination of the Four Graphs:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Histogram:</b> Built using adjacent vertical columns erected on continuous class boundaries. Advantage: Clearly displays density of scores across intervals and allows visual determination of Mode.</li>
-        <li><b style="color: ${themeColor};">(b) Frequency Polygon:</b> Constructed by joining class frequencies plotted over midpoints, closed at both ends by extending to zero-frequency intervals. Advantage: Ideal for overlaying multiple curves to compare multiple class sections.</li>
-        <li><b style="color: ${themeColor};">(c) Ogive (Cumulative Frequency Curve):</b> S-shaped curve plotted using cumulative frequencies against class limits. Advantage: Specifically utilized for finding the Median, Quartiles, and percentiles directly from the graph.</li>
-        <li><b style="color: ${themeColor};">(d) Pie Chart:</b> Circular chart partitioned into radial sectors where each angle equals (f / N) &times; 360&deg;. Advantage: Outstanding for illustrating proportional budget breakdowns or stream-wise enrollment percentages.</li>
+        <li><b style="color: #FF007F;">(a) Histogram:</b> Built using adjacent vertical columns erected on continuous class boundaries. Advantage: Clearly displays density of scores across intervals and allows visual determination of Mode.</li>
+        <li><b style="color: #FF007F;">(b) Frequency Polygon:</b> Constructed by joining class frequencies plotted over midpoints, closed at both ends by extending to zero-frequency intervals. Advantage: Ideal for overlaying multiple curves to compare multiple class sections.</li>
+        <li><b style="color: #FF007F;">(c) Ogive (Cumulative Frequency Curve):</b> S-shaped curve plotted using cumulative frequencies against class limits. Advantage: Specifically utilized for finding the Median, Quartiles, and percentiles directly from the graph.</li>
+        <li><b style="color: #FF007F;">(d) Pie Chart:</b> Circular chart partitioned into radial sectors where each angle equals (f / N) &times; 360&deg;. Advantage: Outstanding for illustrating proportional budget breakdowns or stream-wise enrollment percentages.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. Conclusion:</b><br/>
+      <p><b style="color: #FF007F;">3. Conclusion:</b><br/>
       Each graphical method serves a specialized pedagogical role: histograms for score concentration, polygons for group comparisons, ogives for positional cut-offs, and pie charts for categorical proportions.</p>
     </div>
   </div>
 
   <!-- Q23 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q23: Calculate the Arithmetic Mean (using both Direct and Step-Deviation methods) for the following frequency distribution:</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q23: Calculate the Arithmetic Mean (using both Direct and Step-Deviation methods) for the following frequency distribution:</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
       <p style="margin-bottom: 10px;">Scores: 10&ndash;20 (f=5), 20&ndash;30 (f=8), 30&ndash;40 (f=15), 40&ndash;50 (f=12), 50&ndash;60 (f=6), 60&ndash;70 (f=4). Total N = 50.</p>
       
       <div style="overflow-x: auto; margin-bottom: 12px;">
         <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13.5px;">
-          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid ${themeColor};">
+          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid #FF007F;">
             <th style="padding: 6px;">Class Interval</th><th>f</th><th>Midpoint (X)</th><th>f &times; X</th><th>d'=(X-35)/10</th><th>f &times; d'</th>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>10 &ndash; 20</td><td>5</td><td>15</td><td>75</td><td>&minus;2</td><td>&minus;10</td></tr>
@@ -929,10 +929,10 @@ export const c11Edu7HtmlSolutions = `
         </table>
       </div>
 
-      <p><b style="color: ${themeColor};">Method 1 (Direct Method):</b><br/>
+      <p><b style="color: #FF007F;">Method 1 (Direct Method):</b><br/>
       X&#772; = (&sum; f X) / N = 1930 / 50 = <b>38.60</b>.</p>
 
-      <p><b style="color: ${themeColor};">Method 2 (Step-Deviation Method):</b><br/>
+      <p><b style="color: #FF007F;">Method 2 (Step-Deviation Method):</b><br/>
       Let Assumed Mean AM = 35, class width i = 10.<br/>
       X&#772; = AM + [(&sum; f d') / N] &times; i = 35 + (18 / 50) &times; 10 = 35 + 3.60 = <b>38.60</b>.</p>
       
@@ -942,34 +942,34 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q24 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q24: Calculate the Median for the following frequency distribution of examination marks:</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q24: Calculate the Median for the following frequency distribution of examination marks:</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
       <p style="margin-bottom: 10px;">Scores: 0&ndash;10 (f=4), 10&ndash;20 (f=7), 20&ndash;30 (f=12), 30&ndash;40 (f=10), 40&ndash;50 (f=5), 50&ndash;60 (f=2). Total N = 40.</p>
       
       <div style="overflow-x: auto; margin-bottom: 12px;">
         <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13.5px;">
-          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid ${themeColor};">
+          <tr style="background: rgba(255, 0, 127, 0.2); border-bottom: 2px solid #FF007F;">
             <th style="padding: 6px;">Class Interval</th><th>Frequency (f)</th><th>Cumulative Frequency (cf)</th>
           </tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>0 &ndash; 10</td><td>4</td><td>4</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>10 &ndash; 20</td><td>7</td><td>11</td></tr>
-          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: ${themeColor};">20 &ndash; 30 (Median Class)</td><td>12</td><td>23</td></tr>
+          <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(255, 0, 127, 0.1);"><td style="font-weight: bold; color: #FF007F;">20 &ndash; 30 (Median Class)</td><td>12</td><td>23</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>30 &ndash; 40</td><td>10</td><td>33</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>40 &ndash; 50</td><td>5</td><td>38</td></tr>
           <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);"><td>50 &ndash; 60</td><td>2</td><td>40</td></tr>
         </table>
       </div>
 
-      <p><b style="color: ${themeColor};">Step 1: Find N/2:</b><br/>
+      <p><b style="color: #FF007F;">Step 1: Find N/2:</b><br/>
       N / 2 = 40 / 2 = 20.</p>
 
-      <p><b style="color: ${themeColor};">Step 2: Locate Median Class:</b><br/>
+      <p><b style="color: #FF007F;">Step 2: Locate Median Class:</b><br/>
       The 20th item falls in the class <b>20&ndash;30</b> (since cf below it is 11, and cf of 20-30 reaches 23). Thus, Median Class = 20&ndash;30.</p>
 
-      <p><b style="color: ${themeColor};">Step 3: State parameters:</b><br/>
+      <p><b style="color: #FF007F;">Step 3: State parameters:</b><br/>
       L = 20, F = 11 (cumulative frequency before median class), f_m = 12, i = 10.</p>
 
-      <p><b style="color: ${themeColor};">Step 4: Formula &amp; Calculation:</b><br/>
+      <p><b style="color: #FF007F;">Step 4: Formula &amp; Calculation:</b><br/>
       Median = L + [((N / 2) - F) / f_m] &times; i = 20 + [(20 - 11) / 12] &times; 10<br/>
       Median = 20 + (9 / 12) &times; 10 = 20 + 0.75 &times; 10 = 20 + 7.50 = <b>27.50</b>.</p>
       
@@ -979,20 +979,20 @@ export const c11Edu7HtmlSolutions = `
 
   <!-- Q25 -->
   <div style="margin: 24px 0; background: rgba(15, 23, 42, 0.75); border-radius: 10px; padding: 18px 20px;">
-    <h3 style="color: ${themeColor}; font-size: 18px; margin-bottom: 12px;">Q25: Define Central Tendency. Critically compare Arithmetic Mean, Median, and Mode in terms of concept, computation, merits, limitations, and specific educational utility.</h3>
+    <h3 style="color: #FF007F; font-weight: bold; font-size: 18px; margin-bottom: 12px;">Q25: Define Central Tendency. Critically compare Arithmetic Mean, Median, and Mode in terms of concept, computation, merits, limitations, and specific educational utility.</h3>
     <div style="line-height: 1.8; color: #FFFFFF;">
-      <p><b style="color: ${themeColor};">1. Definition:</b><br/>
+      <p><b style="color: #FF007F;">1. Definition:</b><br/>
       A Measure of Central Tendency is a single representative central value around which all the individual scores of a distribution tend to cluster. It serves as an index of group performance.</p>
 
-      <p><b style="color: ${themeColor};">2. Comparative Synthesis across Dimensions:</b></p>
+      <p><b style="color: #FF007F;">2. Comparative Synthesis across Dimensions:</b></p>
       <ul style="padding-left: 20px;">
-        <li><b style="color: ${themeColor};">(a) Conceptual Foundation:</b> Mean is the mathematical centroid; Median is the 50th percentile rank; Mode is the peak frequency point.</li>
-        <li><b style="color: ${themeColor};">(b) Computational Demand:</b> Mean requires the sum of all scores; Median requires cumulative frequency tracking; Mode can often be identified by inspection or Pearson's empirical approximation.</li>
-        <li><b style="color: ${themeColor};">(c) Robustness:</b> Median and Mode are robust against extreme outliers; Mean is fragile and pulled strongly toward skewed tails.</li>
-        <li><b style="color: ${themeColor};">(d) Mathematical Fertility:</b> Mean is the only measure suitable for advanced algebraic operations like standard deviation and correlation; Median and Mode cannot be algebraically combined across subsets.</li>
+        <li><b style="color: #FF007F;">(a) Conceptual Foundation:</b> Mean is the mathematical centroid; Median is the 50th percentile rank; Mode is the peak frequency point.</li>
+        <li><b style="color: #FF007F;">(b) Computational Demand:</b> Mean requires the sum of all scores; Median requires cumulative frequency tracking; Mode can often be identified by inspection or Pearson's empirical approximation.</li>
+        <li><b style="color: #FF007F;">(c) Robustness:</b> Median and Mode are robust against extreme outliers; Mean is fragile and pulled strongly toward skewed tails.</li>
+        <li><b style="color: #FF007F;">(d) Mathematical Fertility:</b> Mean is the only measure suitable for advanced algebraic operations like standard deviation and correlation; Median and Mode cannot be algebraically combined across subsets.</li>
       </ul>
 
-      <p><b style="color: ${themeColor};">3. Pedagogical Recommendation:</b><br/>
+      <p><b style="color: #FF007F;">3. Pedagogical Recommendation:</b><br/>
       Educators should employ the <b>Mean</b> for grading standard examinations when distributions are normal; the <b>Median</b> for reporting skewed school performance or handling open-ended score brackets; and the <b>Mode</b> for determining common classroom needs or standard supply sizes.</p>
     </div>
   </div>

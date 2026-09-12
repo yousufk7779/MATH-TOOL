@@ -21,89 +21,89 @@ export const c11Edu2HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
-  <div style="background: rgba(0, 198, 255, 0.05); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📖 Quick Glossary &amp; Core Aims of Education</h2>
+  <div style="background: rgba(0, 198, 255, 0.05); border: 1.5px solid #00C6FF; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #00C6FF; font-weight: bold; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">📖 Quick Glossary &amp; Core Aims of Education</h2>
     <p class="text-center" style="color: #80D8FF; margin: 0 0 16px 0; font-size: 14.5px;">Essential Terminologies &bull; Unit 2: Aims of Education (10 Marks)</p>
 
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Educational Aim:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #00C6FF; border-radius: 6px;">
+        <b style="color: #00C6FF; font-size: 16px; display: block; margin-bottom: 4px;">1. Educational Aim:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A conscious, predetermined purpose or goal that guides, organizes, and terminates educational activities. Education without an aim is like a rudderless ship drifting in a storm.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Individual Aim (Sir Percy Nunn):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #00C6FF; border-radius: 6px;">
+        <b style="color: #00C6FF; font-size: 16px; display: block; margin-bottom: 4px;">2. Individual Aim (Sir Percy Nunn):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Focuses on the maximum self-realization, creative freedom, and complete development of an individual's innate capacities and distinct personality.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Social Aim (Socialization &amp; Citizenship):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #00C6FF; border-radius: 6px;">
+        <b style="color: #00C6FF; font-size: 16px; display: block; margin-bottom: 4px;">3. Social Aim (Socialization &amp; Citizenship):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Emphasizes the subordination or alignment of individual interests to societal welfare, cultivating civic responsibility, democratic cooperation, and social efficiency.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Economic / Vocational Aim ("Bread &amp; Butter"):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #00C6FF; border-radius: 6px;">
+        <b style="color: #00C6FF; font-size: 16px; display: block; margin-bottom: 4px;">4. Economic / Vocational Aim ("Bread &amp; Butter"):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Aims to equip the learner with practical skills, productive knowledge, and self-reliance to earn an honest livelihood and contribute to national economic growth.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Moral &amp; Spiritual Aim (Character Building):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #00C6FF; border-radius: 6px;">
+        <b style="color: #00C6FF; font-size: 16px; display: block; margin-bottom: 4px;">5. Moral &amp; Spiritual Aim (Character Building):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The highest ideal of education according to Herbart, Gandhi, and Vivekananda &mdash; transcending material pursuits to foster ethical purity, self-control, empathy, and spiritual illumination.</span>
       </div>
     </div>
   </div>
 
   <!-- SECTION 2.1 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">2.1 Meaning and Significance of Aims in Education</h2>
+  <h2 style="color: #00C6FF; font-weight: bold; border-bottom: 2px solid #00C6FF; padding-bottom: 6px; margin-top: 30px;">2.1 Meaning and Significance of Aims in Education</h2>
 
   <p>Human action differs fundamentally from animal instinct because human action is conscious, purposeful, and directed towards predefined objectives. In the words of <b>John Dewey</b>, <i>"An aim is a foreseen end that gives direction to activity; it influences the steps taken to reach the end."</i> Education is a deliberate and continuous endeavor; without clearly formulated aims, educational practice becomes chaotic, random, and wasteful.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Meaning of Educational Aims</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 24px;">(i) Meaning of Educational Aims</h3>
   <p>An educational aim is not a vague wish or a utopian dream. It represents a definite target that educators, policy-makers, and learners strive to achieve through systematic instruction and curriculum. It answers three fundamental questions:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Why educate?</b> &mdash; Formulates the philosophical justification and overarching purpose.</li>
-    <li><b style="color: ${themeColor};">Whom to educate?</b> &mdash; Understands the learner's biological and psychological potential.</li>
-    <li><b style="color: ${themeColor};">How and towards what to educate?</b> &mdash; Determines the curriculum, pedagogical methods, and evaluation criteria.</li>
+    <li><b style="color: #00C6FF;">Why educate?</b> &mdash; Formulates the philosophical justification and overarching purpose.</li>
+    <li><b style="color: #00C6FF;">Whom to educate?</b> &mdash; Understands the learner's biological and psychological potential.</li>
+    <li><b style="color: #00C6FF;">How and towards what to educate?</b> &mdash; Determines the curriculum, pedagogical methods, and evaluation criteria.</li>
   </ul>
 
   <!-- INTUITIVE ANALOGY BOX -->
-  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid ${themeColor}; border-radius: 8px; padding: 14px 18px; margin: 20px 0;">
-    <h4 style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 16px;">💡 Real-World Intuitive Analogy: Why Aims Are Essential</h4>
+  <div style="background: rgba(15, 23, 42, 0.85); border-left: 4px solid #00C6FF; border-radius: 8px; padding: 14px 18px; margin: 20px 0;">
+    <h4 style="color: #00C6FF; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">💡 Real-World Intuitive Analogy: Why Aims Are Essential</h4>
     <p style="margin: 0; color: #CBD5E1; font-size: 15px; line-height: 1.65;">
       Imagine a magnificent ship sailing into the high seas without a rudder, compass, or designated port of destination. The captain may burn immense fuel and hoist mighty sails, but the vessel will drift aimlessly and ultimately wreck against rocks. Similarly, an educational system without clear aims exhausts time, energy, and national resources without producing cultured or capable citizens.
     </p>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(ii) Significance &amp; Importance of Aims in Education</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 24px;">(ii) Significance &amp; Importance of Aims in Education</h3>
   <p>The formulation of clear educational aims is universally acknowledged as indispensable for the following reasons:</p>
 
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">1. Provides Clear Direction to Teachers and Students:</b>
+      <b style="color: #00C6FF; font-size: 16px;">1. Provides Clear Direction to Teachers and Students:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Aims act as a lighthouse. They clarify to teachers what changes must be brought about in the child's behavior and motivate students by giving them a clear vision of their life goals.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">2. Determines the Structure of Curriculum:</b>
+      <b style="color: #00C6FF; font-size: 16px;">2. Determines the Structure of Curriculum:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         The subjects taught, textbooks written, and co-curricular activities planned directly derive from the chosen aims. If the aim is vocational self-reliance, technical crafts are emphasized; if the aim is moral excellence, ethics and philosophy take precedence.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">3. Guides the Selection of Teaching Methods:</b>
+      <b style="color: #00C6FF; font-size: 16px;">3. Guides the Selection of Teaching Methods:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Methods of teaching are tools to reach educational aims. Democratic aims require project methods and discussions, whereas authoritarian aims favor rote recitation.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">4. Serves as a Criterion for Evaluation and Assessment:</b>
+      <b style="color: #00C6FF; font-size: 16px;">4. Serves as a Criterion for Evaluation and Assessment:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         An educational system cannot measure its success or diagnose its shortcomings without comparing student performance against pre-set educational benchmarks.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">5. Avoids Wastage of Energy, Time, and Public Resources:</b>
+      <b style="color: #00C6FF; font-size: 16px;">5. Avoids Wastage of Energy, Time, and Public Resources:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Clearly articulated national aims prevent schools from pursuing conflicting or obsolete practices, ensuring optimal utilization of educational investments.
       </p>
@@ -146,71 +146,71 @@ export const c11Edu2HtmlOverview = `
   </div>
 
   <!-- SECTION 2.2 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">2.2 Individual Aims of Education</h2>
+  <h2 style="color: #00C6FF; font-weight: bold; border-bottom: 2px solid #00C6FF; padding-bottom: 6px; margin-top: 35px;">2.2 Individual Aims of Education</h2>
 
   <p>The <b>Individual Aim</b> of education posits that the individual human being is the ultimate reality and the supreme center of educational endeavor. The state, society, and institutions exist solely to serve, nourish, and fulfill the individual &mdash; not vice versa.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Proponents &amp; Philosophical Roots</h3>
-  <p>The chief champion of the modern individual aim was the renowned British educator <b style="color: ${themeColor};">Sir Percy Nunn</b> (1870–1944). In his seminal work <i>'Education: Its Data and First Principles'</i>, Nunn asserted:</p>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(i) Proponents &amp; Philosophical Roots</h3>
+  <p>The chief champion of the modern individual aim was the renowned British educator <b style="color: #00C6FF;">Sir Percy Nunn</b> (1870–1944). In his seminal work <i>'Education: Its Data and First Principles'</i>, Nunn asserted:</p>
   
-  <blockquote style="margin: 12px 0; padding: 12px 16px; background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; color: #FFFFFF; font-size: 15px; font-style: italic; line-height: 1.6;">
+  <blockquote style="margin: 12px 0; padding: 12px 16px; background: rgba(0,0,0,0.3); border-left: 4px solid #00C6FF; color: #FFFFFF; font-size: 15px; font-style: italic; line-height: 1.6;">
     "Nothing good enters into the human world except in and through the free activities of individual men and women... Education should secure conditions for the most complete development of individuality to enable each person to make his unique contribution to the common good."
   </blockquote>
 
   <p>Earlier naturalistic philosophers like <b>Jean-Jacques Rousseau</b> and child-centric educators like <b>Pestalozzi</b> and <b>Froebel</b> had strongly paved the way for this viewpoint by demanding freedom for the child's natural instincts and individual rhythm.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Arguments in Favor of Individual Aim</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(ii) Arguments in Favor of Individual Aim</h3>
   <div style="display: flex; flex-direction: column; gap: 10px; margin: 12px 0;">
     <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #66BB6A; border-radius: 4px;">
-      <b style="color: #66BB6A;">1. Biological Argument:</b> Sir Percy Nunn argued that every living organism strives for self-preservation, unique variation, and self-expression. Evolution favors individual uniqueness.
+      <b style="color: #00C6FF; font-weight: bold;">1. Biological Argument:</b> Sir Percy Nunn argued that every living organism strives for self-preservation, unique variation, and self-expression. Evolution favors individual uniqueness.
     </div>
     <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #66BB6A; border-radius: 4px;">
-      <b style="color: #66BB6A;">2. Psychological Argument:</b> Modern psychology proves that no two individuals are identical. Every learner possesses unique intellect, interests, aptitudes, and learning paces that must be respected.
+      <b style="color: #00C6FF; font-weight: bold;">2. Psychological Argument:</b> Modern psychology proves that no two individuals are identical. Every learner possesses unique intellect, interests, aptitudes, and learning paces that must be respected.
     </div>
     <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #66BB6A; border-radius: 4px;">
-      <b style="color: #66BB6A;">3. Democratic &amp; Spiritual Argument:</b> Democracy is rooted in the sacred inviolability and dignity of the individual. Spiritually, self-realization is an intensely personal inward journey.
+      <b style="color: #00C6FF; font-weight: bold;">3. Democratic &amp; Spiritual Argument:</b> Democracy is rooted in the sacred inviolability and dignity of the individual. Spiritually, self-realization is an intensely personal inward journey.
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(iii) Criticisms and Dangers of Extreme Individualism</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(iii) Criticisms and Dangers of Extreme Individualism</h3>
   <div style="background: rgba(255, 82, 82, 0.08); border-left: 4px solid #FF5252; padding: 12px 16px; border-radius: 6px; margin: 14px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
-      <b style="color: #FF5252;">Exam Warning &bull; Pitfalls of Unchecked Individualism:</b><br>
-      &bull; <b>Leads to Social Anarchy:</b> If individuals pursue unrestricted self-interest without social restraint, society collapses into chaos.<br>
-      &bull; <b>Breeds Selfishness:</b> An isolated child becomes egocentric, lacking civic duty, empathy, and sacrifice for the collective.<br>
-      &bull; <b>Philosophically Unrealistic:</b> Human personality cannot develop in total isolation; language, culture, and intellect are born through social interaction.
+      <b style="color: #00C6FF; font-weight: bold;">Exam Warning &bull; Pitfalls of Unchecked Individualism:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Leads to Social Anarchy:</b> If individuals pursue unrestricted self-interest without social restraint, society collapses into chaos.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Breeds Selfishness:</b> An isolated child becomes egocentric, lacking civic duty, empathy, and sacrifice for the collective.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Philosophically Unrealistic:</b> Human personality cannot develop in total isolation; language, culture, and intellect are born through social interaction.
     </p>
   </div>
 
   <!-- SECTION 2.3 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">2.3 Social Aims of Education</h2>
+  <h2 style="color: #00C6FF; font-weight: bold; border-bottom: 2px solid #00C6FF; padding-bottom: 6px; margin-top: 35px;">2.3 Social Aims of Education</h2>
 
   <p>The <b>Social Aim</b> of education stands in sharp contrast to the individual aim. It asserts that society or the state is the supreme reality, and the individual is merely a functioning cell within the vast social organism. The primary duty of education is to mold individuals into disciplined, law-abiding, cooperative, and useful citizens.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Two Forms of Social Aim</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(i) Two Forms of Social Aim</h3>
   <p>Educational historians divide the social aim into two distinctly opposing forms:</p>
 
   <div style="display: grid; grid-template-columns: 1fr; gap: 14px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 82, 82, 0.4); border-radius: 8px; padding: 14px;">
-      <h4 style="color: #FF5252; margin: 0 0 6px 0; font-size: 16px;">⚔️ 1. Extreme Social Aim (State Absolutism / Totalitarianism)</h4>
+      <h4 style="color: #00C6FF; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">⚔️ 1. Extreme Social Aim (State Absolutism / Totalitarianism)</h4>
       <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
         Historically seen in <b>Ancient Sparta</b> and 20th-century totalitarian regimes (Nazi Germany, Fascist Italy). The individual has no private rights; the child belongs to the state from birth. Education is reduced to strict military regimentation, propaganda, and unquestioning blind obedience.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(0, 198, 255, 0.4); border-radius: 8px; padding: 14px;">
-      <h4 style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 16px;">🤝 2. Democratic Social Aim (Social Efficiency &amp; Co-operation)</h4>
+      <h4 style="color: #00C6FF; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">🤝 2. Democratic Social Aim (Social Efficiency &amp; Co-operation)</h4>
       <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
-        Advocated by American philosopher <b style="color: ${themeColor};">John Dewey</b> and sociologist <b>W. C. Bagley</b>. Education aims to cultivate <i>social efficiency</i> &mdash; economic competence, civic intelligence, active tolerance, and cooperative participation in community problem-solving without crushing individual identity.
+        Advocated by American philosopher <b style="color: #00C6FF;">John Dewey</b> and sociologist <b>W. C. Bagley</b>. Education aims to cultivate <i>social efficiency</i> &mdash; economic competence, civic intelligence, active tolerance, and cooperative participation in community problem-solving without crushing individual identity.
       </p>
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Arguments in Favor of Social Aim</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(ii) Arguments in Favor of Social Aim</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Aristotle's Axiom:</b> <i>"Man is by nature a social animal."</i> A person outside society is either a beast or a god.</li>
-    <li><b style="color: ${themeColor};">Cultural Transmission:</b> Human heritage &mdash; language, science, art, and moral norms &mdash; is created and preserved collectively by society.</li>
-    <li><b style="color: ${themeColor};">Security and Interdependence:</b> Modern civilized life is completely interdependent; individual survival is impossible without collective infrastructure.</li>
+    <li><b style="color: #00C6FF;">Aristotle's Axiom:</b> <i>"Man is by nature a social animal."</i> A person outside society is either a beast or a god.</li>
+    <li><b style="color: #00C6FF;">Cultural Transmission:</b> Human heritage &mdash; language, science, art, and moral norms &mdash; is created and preserved collectively by society.</li>
+    <li><b style="color: #00C6FF;">Security and Interdependence:</b> Modern civilized life is completely interdependent; individual survival is impossible without collective infrastructure.</li>
   </ul>
 
   <!-- STANDALONE DIAGRAM 2: SYNTHESIS MATRIX -->
@@ -238,83 +238,83 @@ export const c11Edu2HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(iii) Synthesis of Individual and Social Aims</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(iii) Synthesis of Individual and Social Aims</h3>
   <p>Modern educational thought completely rejects the artificial antagonism between individual and social aims. As <b>Sir Percy Nunn</b> admitted in his later clarification, <i>"Individuality develops in a social environment."</i> Similarly, <b>John Dewey</b> showed that a society is rich and progressive only when its individual members are creative, free, and self-reliant. Therefore, the true democratic aim of education is a <b>harmonious synthesis</b>: developing individuality in and through service to society.</p>
 
   <!-- SECTION 2.4 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">2.4 Economic / Vocational Aims of Education</h2>
+  <h2 style="color: #00C6FF; font-weight: bold; border-bottom: 2px solid #00C6FF; padding-bottom: 6px; margin-top: 35px;">2.4 Economic / Vocational Aims of Education</h2>
 
   <p>Commonly referred to as the <b>"Bread and Butter Aim"</b> or the <b>Vocational Aim</b>, the economic aim emphasizes that education must prepare the child to earn a respectable livelihood, achieve economic self-reliance, and make a tangible contribution to the nation's material prosperity.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Why Economic / Vocational Aim is Vital</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(i) Why Economic / Vocational Aim is Vital</h3>
   <p>No education can claim to be practical or humane if its graduates remain helpless parasites unable to feed themselves or their families. As <b>Mahatma Gandhi</b> forcefully noted in 1937:</p>
 
-  <blockquote style="margin: 12px 0; padding: 12px 16px; background: rgba(0,0,0,0.3); border-left: 4px solid ${themeColor}; color: #FFFFFF; font-size: 15px; font-style: italic; line-height: 1.6;">
+  <blockquote style="margin: 12px 0; padding: 12px 16px; background: rgba(0,0,0,0.3); border-left: 4px solid #00C6FF; color: #FFFFFF; font-size: 15px; font-style: italic; line-height: 1.6;">
     "True education ought to be for the boys and girls a kind of insurance against unemployment... It should be self-supporting."
   </blockquote>
 
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Eradication of Poverty:</b> In developing nations like India, academic degrees that do not lead to employment breed mass frustration and economic dependency.</li>
-    <li><b style="color: ${themeColor};">Dignity of Labor:</b> Vocational education bridges the artificial gap between intellectual work and manual craft, teaching students to respect honest physical toil.</li>
-    <li><b style="color: ${themeColor};">Psychological Fulfillment:</b> Economic independence builds self-confidence, emotional stability, and self-worth in young adults.</li>
+    <li><b style="color: #00C6FF;">Eradication of Poverty:</b> In developing nations like India, academic degrees that do not lead to employment breed mass frustration and economic dependency.</li>
+    <li><b style="color: #00C6FF;">Dignity of Labor:</b> Vocational education bridges the artificial gap between intellectual work and manual craft, teaching students to respect honest physical toil.</li>
+    <li><b style="color: #00C6FF;">Psychological Fulfillment:</b> Economic independence builds self-confidence, emotional stability, and self-worth in young adults.</li>
   </ul>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Limitations of Purely Economic Aims</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(ii) Limitations of Purely Economic Aims</h3>
   <div style="background: rgba(255, 145, 0, 0.08); border-left: 4px solid #FF9100; padding: 12px 16px; border-radius: 6px; margin: 14px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.65;">
-      <b>Pitfalls of an Exclusive "Bread &amp; Butter" Focus:</b><br>
+      <b style="color: #00C6FF; font-weight: bold;">Pitfalls of an Exclusive "Bread &amp; Butter" Focus:</b><br>
       If education is treated solely as a bread-earning machine, it degrades into narrow trade apprenticeships. It reduces human beings to commercial cogs, neglecting artistic sensitivity, ethical values, literature, and spiritual depth. As the biblical adage reminds us: <i>"Man does not live by bread alone."</i>
     </p>
   </div>
 
   <!-- SECTION 2.5 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">2.5 Moral and Spiritual Aims of Education</h2>
+  <h2 style="color: #00C6FF; font-weight: bold; border-bottom: 2px solid #00C6FF; padding-bottom: 6px; margin-top: 35px;">2.5 Moral and Spiritual Aims of Education</h2>
 
   <p>The <b>Moral and Spiritual Aim</b> is universally regarded by great educational philosophers as the summit and crown of all educational endeavors. While economic education fills the stomach and intellectual training sharpens the mind, moral and spiritual education ennobles the soul and creates humane character.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Great Thinkers on Moral and Spiritual Aims</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(i) Great Thinkers on Moral and Spiritual Aims</h3>
 
   <div style="display: flex; flex-direction: column; gap: 14px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">🇮🇳 Mahatma Gandhi:</b>
+      <b style="color: #00C6FF; font-size: 16px;">🇮🇳 Mahatma Gandhi:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         <i>"The end of all knowledge must be the building up of character."</i> Gandhi considered moral training through personal example, non-violence (Ahimsa), truth (Satya), and self-purification as far more foundational than literacy.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">🧘 Swami Vivekananda:</b>
+      <b style="color: #00C6FF; font-size: 16px;">🧘 Swami Vivekananda:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         <i>"We want that education by which character is formed, strength of mind is increased, the intellect is expanded, and by which one can stand on one's own feet."</i> Vivekananda insisted that secular scientific education without spiritual values leads to destruction.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">🇩🇪 J. F. Herbart (German Philosopher):</b>
+      <b style="color: #00C6FF; font-size: 16px;">🇩🇪 J. F. Herbart (German Philosopher):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         <i>"The one and the whole work of education may be summed up in the concept of morality."</i> To Herbart, virtue is the supreme end of all pedagogical efforts.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">🎓 Dr. S. Radhakrishnan:</b>
+      <b style="color: #00C6FF; font-size: 16px;">🎓 Dr. S. Radhakrishnan:</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
         Education must foster spiritual inwardness. An educational system that trains the intellect without transforming the heart creates dangerous, clever barbarians.
       </p>
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Supreme Need in Modern Society</h3>
+  <h3 style="color: #00C6FF; font-weight: bold; margin-top: 20px;">(ii) Supreme Need in Modern Society</h3>
   <p>In the 21st-century era of rapid technological breakthroughs, consumerism, and cyber alienation, moral and spiritual education is no longer a luxury &mdash; it is an urgent survival necessity. It safeguards youth against corruption, hatred, intolerance, and moral bankruptcy by nurturing empathy, honesty, ecological sensitivity, and universal brotherhood.</p>
 
   <!-- NEP 2020 POLICY CONNECT BOX -->
   <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #00C6FF; border-radius: 8px; padding: 14px 18px; margin: 25px 0;">
-    <h4 style="color: #00C6FF; margin: 0 0 6px 0; font-size: 16px;">🏛️ Modern Relevance: Connect with NEP 2020 on Aims</h4>
+    <h4 style="color: #00C6FF; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">🏛️ Modern Relevance: Connect with NEP 2020 on Aims</h4>
     <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
       The <b>National Education Policy (NEP 2020)</b> embodies the ultimate synthesis of all these aims:
-      <br>&bull; <b>Individual Aim:</b> Emphasizes flexible choice, discovering unique talent, and holistic child-centered progress cards.
-      <br>&bull; <b>Economic Aim:</b> Introduces vocational integration from Grade 6 with hands-on internships (bagless days).
-      <br>&bull; <b>Moral/Social Aim:</b> Embeds constitutional values, Seva (selfless service), ethics, and universal human values (UHV) directly into the national curriculum framework.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Individual Aim:</b> Emphasizes flexible choice, discovering unique talent, and holistic child-centered progress cards.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Economic Aim:</b> Introduces vocational integration from Grade 6 with hands-on internships (bagless days).
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Moral/Social Aim:</b> Embeds constitutional values, Seva (selfless service), ethics, and universal human values (UHV) directly into the national curriculum framework.
     </p>
   </div>
 
@@ -336,8 +336,8 @@ export const c11Edu2HtmlSolutions = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- SECTION A HEADER -->
-  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid #00C6FF; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+    <h2 style="color: #00C6FF; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION A: Very Short Answer Type Questions (VSAT &bull; 1 &amp; 2 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">12 Questions &bull; Word Limit: 20–30 Words &bull; Direct Recall &amp; Board Facts</span>
@@ -345,89 +345,89 @@ export const c11Edu2HtmlSolutions = `
 
   <!-- Q1 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q1: Define an "Aim in Education".</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q1: Define an "Aim in Education".</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      An <b style="color: ${themeColor};">educational aim</b> is a conscious, predetermined goal or foreseen end that guides, organizes, motivates, and directs all teaching-learning activities in a purposeful direction.
+      An <b style="color: #00C6FF;">educational aim</b> is a conscious, predetermined goal or foreseen end that guides, organizes, motivates, and directs all teaching-learning activities in a purposeful direction.
     </div>
   </div>
 
   <!-- Q2 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q2: Give one popular analogy showing the danger of aimless education.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q2: Give one popular analogy showing the danger of aimless education.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Education without clear aims is like a <b style="color: ${themeColor};">ship sailing without a rudder or compass</b>, or an architect attempting to build a palace without an architectural blueprint.
+      Education without clear aims is like a <b style="color: #00C6FF;">ship sailing without a rudder or compass</b>, or an architect attempting to build a palace without an architectural blueprint.
     </div>
   </div>
 
   <!-- Q3 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q3: Who was the chief modern champion of the Individual Aim of Education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q3: Who was the chief modern champion of the Individual Aim of Education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">Sir Percy Nunn</b> (1870–1944), an eminent British educational thinker who stated that nothing good enters the human world except through the free activity of individual men and women.
+      <b style="color: #00C6FF;">Sir Percy Nunn</b> (1870–1944), an eminent British educational thinker who stated that nothing good enters the human world except through the free activity of individual men and women.
     </div>
   </div>
 
   <!-- Q4 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q4: What is the core essence of the Individual Aim of Education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q4: What is the core essence of the Individual Aim of Education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      The core essence is <b style="color: ${themeColor};">maximum self-realization</b> and autonomous development of the child's unique biological, intellectual, creative, and moral capacities without unnecessary external coercion.
+      The core essence is <b style="color: #00C6FF;">maximum self-realization</b> and autonomous development of the child's unique biological, intellectual, creative, and moral capacities without unnecessary external coercion.
     </div>
   </div>
 
   <!-- Q5 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q5: What is the Social Aim of Education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q5: What is the Social Aim of Education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      The <b style="color: ${themeColor};">Social Aim</b> regards society/state as paramount, asserting that education should socialize the child, cultivate civic loyalty, and prepare useful, cooperative, and productive citizens.
+      The <b style="color: #00C6FF;">Social Aim</b> regards society/state as paramount, asserting that education should socialize the child, cultivate civic loyalty, and prepare useful, cooperative, and productive citizens.
     </div>
   </div>
 
   <!-- Q6 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q6: Distinguish between the Extreme Social Aim and the Democratic Social Aim.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q6: Distinguish between the Extreme Social Aim and the Democratic Social Aim.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      &bull; <b style="color: ${themeColor};">Extreme Social Aim:</b> Subordinates the individual totally to the state (as in Sparta or Nazi Germany).<br>
-      &bull; <b style="color: ${themeColor};">Democratic Social Aim:</b> Fosters social efficiency, cooperation, and civic responsibility while respecting individual liberty (Dewey).
+      &bull; <b style="color: #00C6FF;">Extreme Social Aim:</b> Subordinates the individual totally to the state (as in Sparta or Nazi Germany).<br>
+      &bull; <b style="color: #00C6FF;">Democratic Social Aim:</b> Fosters social efficiency, cooperation, and civic responsibility while respecting individual liberty (Dewey).
     </div>
   </div>
 
   <!-- Q7 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q7: What is meant by the "Bread and Butter Aim" of Education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q7: What is meant by the "Bread and Butter Aim" of Education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      The <b style="color: ${themeColor};">"Bread and Butter Aim"</b> (Vocational Aim) emphasizes equipping learners with practical knowledge and marketable skills to earn an independent, honest living and eliminate economic helplessness.
+      The <b style="color: #00C6FF;">"Bread and Butter Aim"</b> (Vocational Aim) emphasizes equipping learners with practical knowledge and marketable skills to earn an independent, honest living and eliminate economic helplessness.
     </div>
   </div>
 
   <!-- Q8 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q8: State Mahatma Gandhi's viewpoint on the Economic / Vocational Aim.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q8: State Mahatma Gandhi's viewpoint on the Economic / Vocational Aim.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Gandhiji insisted that education must serve as an <b style="color: ${themeColor};">insurance against unemployment</b>. Through his scheme of Basic Education (Nai Talim), he advocated learning through productive village crafts.
+      Gandhiji insisted that education must serve as an <b style="color: #00C6FF;">insurance against unemployment</b>. Through his scheme of Basic Education (Nai Talim), he advocated learning through productive village crafts.
     </div>
   </div>
 
   <!-- Q9 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q9: What did J. F. Herbart state regarding the supreme aim of education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q9: What did J. F. Herbart state regarding the supreme aim of education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Herbart stated: <b style="color: ${themeColor};">"The one and the whole work of education may be summed up in the concept of morality."</b> He placed virtue as the supreme educational aim.
+      Herbart stated: <b style="color: #00C6FF;">"The one and the whole work of education may be summed up in the concept of morality."</b> He placed virtue as the supreme educational aim.
     </div>
   </div>
 
   <!-- Q10 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q10: What is the primary difference between Moral Aim and Spiritual Aim?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q10: What is the primary difference between Moral Aim and Spiritual Aim?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      &bull; <b style="color: ${themeColor};">Moral Aim:</b> Focuses on ethical conduct, social honesty, empathy, and righteousness in everyday human relationships.<br>
-      &bull; <b style="color: ${themeColor};">Spiritual Aim:</b> Focuses on inward self-transcendence, cosmic unity, soul-purification, and realization of universal truth.
+      &bull; <b style="color: #00C6FF;">Moral Aim:</b> Focuses on ethical conduct, social honesty, empathy, and righteousness in everyday human relationships.<br>
+      &bull; <b style="color: #00C6FF;">Spiritual Aim:</b> Focuses on inward self-transcendence, cosmic unity, soul-purification, and realization of universal truth.
     </div>
   </div>
 
   <!-- Q11 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q11: State one major criticism of an exclusive Bread and Butter Aim.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q11: State one major criticism of an exclusive Bread and Butter Aim.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
       An exclusive vocational focus degenerates education into mere machine training, leading to commercialism and neglecting cultural, emotional, artistic, and spiritual values.
     </div>
@@ -435,15 +435,15 @@ export const c11Edu2HtmlSolutions = `
 
   <!-- Q12 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q12: How does NEP 2020 integrate the Economic Aim with schooling?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q12: How does NEP 2020 integrate the Economic Aim with schooling?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      NEP 2020 introduces <b style="color: ${themeColor};">vocational education from Grade 6</b>, including 10 days of bagless vocational internships with local artisans, carpenters, and potters.
+      NEP 2020 introduces <b style="color: #00C6FF;">vocational education from Grade 6</b>, including 10 days of bagless vocational internships with local artisans, carpenters, and potters.
     </div>
   </div>
 
   <!-- SECTION B HEADER -->
-  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid #00C6FF; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
+    <h2 style="color: #00C6FF; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION B: Short Answer Type Questions (SAT &bull; 4 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">8 Questions &bull; Word Limit: 80–100 Words &bull; 4 to 5 Themed Bullet Points</span>
@@ -451,103 +451,103 @@ export const c11Edu2HtmlSolutions = `
 
   <!-- Q13 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q13: Explain four reasons why aims are necessary in education.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q13: Explain four reasons why aims are necessary in education.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Aims serve as the foundational cornerstone of any educational system for four key reasons:
-      <br>&bull; <b style="color: ${themeColor};">Clear Direction:</b> Aims provide purposeful guidance to teachers and students, preventing educational efforts from degenerating into random, uncoordinated tasks.
-      <br>&bull; <b style="color: ${themeColor};">Curriculum Construction:</b> Aims determine the selection of subjects, textbooks, and co-curricular experiences suitable for national goals.
-      <br>&bull; <b style="color: ${themeColor};">Pedagogical Guidance:</b> The choice of classroom teaching techniques (lecture vs. project method) is dictated by the intended outcome.
-      <br>&bull; <b style="color: ${themeColor};">Benchmarking &amp; Assessment:</b> Aims provide an objective yardstick to evaluate student progress and measure institutional effectiveness.
+      <br>&bull; <b style="color: #00C6FF;">Clear Direction:</b> Aims provide purposeful guidance to teachers and students, preventing educational efforts from degenerating into random, uncoordinated tasks.
+      <br>&bull; <b style="color: #00C6FF;">Curriculum Construction:</b> Aims determine the selection of subjects, textbooks, and co-curricular experiences suitable for national goals.
+      <br>&bull; <b style="color: #00C6FF;">Pedagogical Guidance:</b> The choice of classroom teaching techniques (lecture vs. project method) is dictated by the intended outcome.
+      <br>&bull; <b style="color: #00C6FF;">Benchmarking &amp; Assessment:</b> Aims provide an objective yardstick to evaluate student progress and measure institutional effectiveness.
     </div>
   </div>
 
   <!-- Q14 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q14: State four arguments in support of the Individual Aim of Education.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q14: State four arguments in support of the Individual Aim of Education.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Advocates of the individual aim justify their position on the following grounds:
-      <br>&bull; <b style="color: ${themeColor};">Biological Uniqueness:</b> As Sir Percy Nunn noted, nature never creates identical duplicates; every human being has a unique biological endowment.
-      <br>&bull; <b style="color: ${themeColor};">Psychological Reality:</b> Children differ fundamentally in cognitive pace, emotional temperament, and special talents, requiring personalized nurture.
-      <br>&bull; <b style="color: ${themeColor};">Source of All Human Progress:</b> All historic inventions, scientific discoveries, and philosophical masterpieces originated from creative individual minds, not collective mobs.
-      <br>&bull; <b style="color: ${themeColor};">Democratic Dignity:</b> Democracy recognizes the sacred sovereignty and inviolable fundamental rights of every individual citizen.
+      <br>&bull; <b style="color: #00C6FF;">Biological Uniqueness:</b> As Sir Percy Nunn noted, nature never creates identical duplicates; every human being has a unique biological endowment.
+      <br>&bull; <b style="color: #00C6FF;">Psychological Reality:</b> Children differ fundamentally in cognitive pace, emotional temperament, and special talents, requiring personalized nurture.
+      <br>&bull; <b style="color: #00C6FF;">Source of All Human Progress:</b> All historic inventions, scientific discoveries, and philosophical masterpieces originated from creative individual minds, not collective mobs.
+      <br>&bull; <b style="color: #00C6FF;">Democratic Dignity:</b> Democracy recognizes the sacred sovereignty and inviolable fundamental rights of every individual citizen.
     </div>
   </div>
 
   <!-- Q15 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q15: What are the primary criticisms against the Individual Aim of Education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q15: What are the primary criticisms against the Individual Aim of Education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Unrestricted individual aim suffers from severe theoretical and practical flaws:
-      <br>&bull; <b style="color: ${themeColor};">Danger of Social Anarchy:</b> If every individual is permitted to act entirely according to personal whim, law, order, and societal harmony crumble.
-      <br>&bull; <b style="color: ${themeColor};">Breeds Selfish Egocentrism:</b> An exclusively self-centered education fails to cultivate compassion, civic duty, and self-sacrifice for the common good.
-      <br>&bull; <b style="color: ${themeColor};">Denies Social Reality:</b> Man cannot grow or survive in isolation; human speech, thought, and moral values are acquired exclusively through social interaction.
-      <br>&bull; <b style="color: ${themeColor};">Ignores National Needs:</b> Over-individualized education neglects urgent national developmental requirements like defense, public health, and social unity.
+      <br>&bull; <b style="color: #00C6FF;">Danger of Social Anarchy:</b> If every individual is permitted to act entirely according to personal whim, law, order, and societal harmony crumble.
+      <br>&bull; <b style="color: #00C6FF;">Breeds Selfish Egocentrism:</b> An exclusively self-centered education fails to cultivate compassion, civic duty, and self-sacrifice for the common good.
+      <br>&bull; <b style="color: #00C6FF;">Denies Social Reality:</b> Man cannot grow or survive in isolation; human speech, thought, and moral values are acquired exclusively through social interaction.
+      <br>&bull; <b style="color: #00C6FF;">Ignores National Needs:</b> Over-individualized education neglects urgent national developmental requirements like defense, public health, and social unity.
     </div>
   </div>
 
   <!-- Q16 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q16: Describe the Social Aim of Education and state four arguments in its favor.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q16: Describe the Social Aim of Education and state four arguments in its favor.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       The social aim asserts that the welfare, continuity, and progress of society take precedence over isolated individuals:
-      <br>&bull; <b style="color: ${themeColor};">Man is a Social Being:</b> As Aristotle established, human life is meaningful only within organized society; solitary isolation stunts development.
-      <br>&bull; <b style="color: ${themeColor};">Preservation of Culture:</b> Language, traditions, legal codes, and science are social heritages that can only be preserved and transmitted through socialized education.
-      <br>&bull; <b style="color: ${themeColor};">Interdependence and Security:</b> Modern civilization rests on economic division of labor, communal peace, and collective defense.
-      <br>&bull; <b style="color: ${themeColor};">Prevention of Selfish Chaos:</b> Social education disciplines raw human impulses into responsible, cooperative, and patriotic citizenship.
+      <br>&bull; <b style="color: #00C6FF;">Man is a Social Being:</b> As Aristotle established, human life is meaningful only within organized society; solitary isolation stunts development.
+      <br>&bull; <b style="color: #00C6FF;">Preservation of Culture:</b> Language, traditions, legal codes, and science are social heritages that can only be preserved and transmitted through socialized education.
+      <br>&bull; <b style="color: #00C6FF;">Interdependence and Security:</b> Modern civilization rests on economic division of labor, communal peace, and collective defense.
+      <br>&bull; <b style="color: #00C6FF;">Prevention of Selfish Chaos:</b> Social education disciplines raw human impulses into responsible, cooperative, and patriotic citizenship.
     </div>
   </div>
 
   <!-- Q17 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q17: How did John Dewey and Sir Percy Nunn reconcile the Individual and Social Aims?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q17: How did John Dewey and Sir Percy Nunn reconcile the Individual and Social Aims?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Modern educational philosophy resolves the dispute between individual and social aims through a constructive synthesis:
-      <br>&bull; <b style="color: ${themeColor};">Complementary Poles:</b> Individual development and social efficiency are not mutually contradictory, but two sides of the exact same shield.
-      <br>&bull; <b style="color: ${themeColor};">Nunn's Resolution:</b> Sir Percy Nunn admitted that an individual's true personality can unfold and find creative fulfillment only within a rich social medium.
-      <br>&bull; <b style="color: ${themeColor};">Dewey's Democratic Ideal:</b> John Dewey proved that a democratic society thrives only when its individual citizens are intellectually free, creative, and socially responsive.
-      <br>&bull; <b style="color: ${themeColor};">Educational Synthesis:</b> True education develops the individual to the fullest potential so that he or she can serve society most effectively.
+      <br>&bull; <b style="color: #00C6FF;">Complementary Poles:</b> Individual development and social efficiency are not mutually contradictory, but two sides of the exact same shield.
+      <br>&bull; <b style="color: #00C6FF;">Nunn's Resolution:</b> Sir Percy Nunn admitted that an individual's true personality can unfold and find creative fulfillment only within a rich social medium.
+      <br>&bull; <b style="color: #00C6FF;">Dewey's Democratic Ideal:</b> John Dewey proved that a democratic society thrives only when its individual citizens are intellectually free, creative, and socially responsive.
+      <br>&bull; <b style="color: #00C6FF;">Educational Synthesis:</b> True education develops the individual to the fullest potential so that he or she can serve society most effectively.
     </div>
   </div>
 
   <!-- Q18 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q18: Explain the importance and limitations of the Economic / Vocational Aim.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q18: Explain the importance and limitations of the Economic / Vocational Aim.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       The vocational "bread and butter" aim carries immense practical merit along with certain risks:
-      <br>&bull; <b style="color: ${themeColor};">Merit &bull; Eradication of Poverty:</b> Equips youth with self-supporting productive skills to secure gainful employment.
-      <br>&bull; <b style="color: ${themeColor};">Merit &bull; Dignity of Manual Labor:</b> Destroys colonial snobbery against physical labor and elevates the status of craftsmen.
-      <br>&bull; <b style="color: ${themeColor};">Limitation &bull; Risk of Commercialism:</b> An excessive focus on moneymaking reduces schools to trade workshops and treats students as mechanical tools.
-      <br>&bull; <b style="color: ${themeColor};">Limitation &bull; Neglect of Higher Values:</b> Ignores aesthetic, literary, moral, and spiritual dimensions essential for a complete, cultured human life.
+      <br>&bull; <b style="color: #00C6FF;">Merit &bull; Eradication of Poverty:</b> Equips youth with self-supporting productive skills to secure gainful employment.
+      <br>&bull; <b style="color: #00C6FF;">Merit &bull; Dignity of Manual Labor:</b> Destroys colonial snobbery against physical labor and elevates the status of craftsmen.
+      <br>&bull; <b style="color: #00C6FF;">Limitation &bull; Risk of Commercialism:</b> An excessive focus on moneymaking reduces schools to trade workshops and treats students as mechanical tools.
+      <br>&bull; <b style="color: #00C6FF;">Limitation &bull; Neglect of Higher Values:</b> Ignores aesthetic, literary, moral, and spiritual dimensions essential for a complete, cultured human life.
     </div>
   </div>
 
   <!-- Q19 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q19: Explain Mahatma Gandhi's concept of Moral and Character-Building Aim.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q19: Explain Mahatma Gandhi's concept of Moral and Character-Building Aim.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Mahatma Gandhi placed character-building at the pinnacle of all learning:
-      <br>&bull; <b style="color: ${themeColor};">Supreme Purpose:</b> Gandhi declared that the ultimate end of all knowledge must be the building up of moral character.
-      <br>&bull; <b style="color: ${themeColor};">Literacy is Not Education:</b> He argued that mere intellectual knowledge of the alphabet without purity of personal life is useless and dangerous.
-      <br>&bull; <b style="color: ${themeColor};">Foundational Virtues:</b> Education must cultivate Ahimsa (non-violence), Satya (truth), self-restraint (Brahmacharya), and fearless courage.
-      <br>&bull; <b style="color: ${themeColor};">Teacher's Personal Example:</b> Gandhi maintained that moral education cannot be taught through dry textbooks, but through the living moral example of the teacher.
+      <br>&bull; <b style="color: #00C6FF;">Supreme Purpose:</b> Gandhi declared that the ultimate end of all knowledge must be the building up of moral character.
+      <br>&bull; <b style="color: #00C6FF;">Literacy is Not Education:</b> He argued that mere intellectual knowledge of the alphabet without purity of personal life is useless and dangerous.
+      <br>&bull; <b style="color: #00C6FF;">Foundational Virtues:</b> Education must cultivate Ahimsa (non-violence), Satya (truth), self-restraint (Brahmacharya), and fearless courage.
+      <br>&bull; <b style="color: #00C6FF;">Teacher's Personal Example:</b> Gandhi maintained that moral education cannot be taught through dry textbooks, but through the living moral example of the teacher.
     </div>
   </div>
 
   <!-- Q20 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q20: Why is the Moral and Spiritual Aim considered indispensable in 21st-century education?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q20: Why is the Moral and Spiritual Aim considered indispensable in 21st-century education?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       In our contemporary world, moral and spiritual education is crucial for four critical reasons:
-      <br>&bull; <b style="color: ${themeColor};">Restraining Technological Power:</b> Science gives human beings enormous power; without moral conscience, technology becomes a tool of destruction and nuclear warfare.
-      <br>&bull; <b style="color: ${themeColor};">Combating Consumerism:</b> Counters rampant materialism, greed, and superficial display by anchoring the youth in inner peace and contentment.
-      <br>&bull; <b style="color: ${themeColor};">Fostering Social Harmony:</b> Cultivates empathy, mutual tolerance, and compassion across religious, cultural, and racial divides.
-      <br>&bull; <b style="color: ${themeColor};">Mental Wellbeing:</b> Provides spiritual anchor and emotional resilience against the modern epidemics of anxiety, depression, and existential vacuum.
+      <br>&bull; <b style="color: #00C6FF;">Restraining Technological Power:</b> Science gives human beings enormous power; without moral conscience, technology becomes a tool of destruction and nuclear warfare.
+      <br>&bull; <b style="color: #00C6FF;">Combating Consumerism:</b> Counters rampant materialism, greed, and superficial display by anchoring the youth in inner peace and contentment.
+      <br>&bull; <b style="color: #00C6FF;">Fostering Social Harmony:</b> Cultivates empathy, mutual tolerance, and compassion across religious, cultural, and racial divides.
+      <br>&bull; <b style="color: #00C6FF;">Mental Wellbeing:</b> Provides spiritual anchor and emotional resilience against the modern epidemics of anxiety, depression, and existential vacuum.
     </div>
   </div>
 
   <!-- SECTION C HEADER -->
-  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(0, 198, 255, 0.15); border-left: 5px solid #00C6FF; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
+    <h2 style="color: #00C6FF; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION C: Long Answer Type Questions (LAT &bull; 6 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">5 Comprehensive Board Questions &bull; 3-Tier Answer Blueprint (Intro &rarr; Core Analysis &rarr; Conclusion)</span>
@@ -555,94 +555,94 @@ export const c11Edu2HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q21: Discuss in detail the meaning and profound significance of aims in education.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q21: Discuss in detail the meaning and profound significance of aims in education.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #00C6FF;">1. Introduction:</b><br>
       An aim is a consciously predetermined objective that guides, organizes, and gives direction to human activity. As John Dewey stated, an aim influences every sequential step taken toward an end. In education, aims represent the philosophical ideals and practical outcomes that a society seeks to realize in its children. Without clearly defined aims, educational effort becomes wasteful, contradictory, and completely rudderless.
       <br><br>
-      <b style="color: ${themeColor};">2. Core Key Dimensions &amp; Significance:</b><br>
-      &bull; <b>Defines Direction:</b> Aims act as a compass for educators, giving clear purpose to classroom instructions and motivating learners with tangible milestones.<br>
-      &bull; <b>Determines Curriculum Content:</b> Curriculum is merely the path to reach an aim. When aims emphasize national industrialization, vocational subjects are prioritized; when aims focus on democratic citizenship, social sciences and constitutional ethics are highlighted.<br>
-      &bull; <b>Guides Selection of Teaching Methods:</b> Aims govern pedagogy. A rote-memorization aim demands dictation, while an aim of critical inquiry necessitates problem-solving, laboratory experimentation, and seminars.<br>
-      &bull; <b>Establishes Assessment Standards:</b> Aims provide the criterion benchmarks against which student achievements, school effectiveness, and educational reforms are empirically evaluated.<br>
-      &bull; <b>Prevents Wastage of Resources:</b> Formulated aims prevent national expenditure, instructional hours, and youth energy from being squandered on outdated practices.
+      <b style="color: #00C6FF;">2. Core Key Dimensions &amp; Significance:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Defines Direction:</b> Aims act as a compass for educators, giving clear purpose to classroom instructions and motivating learners with tangible milestones.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Determines Curriculum Content:</b> Curriculum is merely the path to reach an aim. When aims emphasize national industrialization, vocational subjects are prioritized; when aims focus on democratic citizenship, social sciences and constitutional ethics are highlighted.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Guides Selection of Teaching Methods:</b> Aims govern pedagogy. A rote-memorization aim demands dictation, while an aim of critical inquiry necessitates problem-solving, laboratory experimentation, and seminars.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Establishes Assessment Standards:</b> Aims provide the criterion benchmarks against which student achievements, school effectiveness, and educational reforms are empirically evaluated.<br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Prevents Wastage of Resources:</b> Formulated aims prevent national expenditure, instructional hours, and youth energy from being squandered on outdated practices.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #00C6FF;">3. Conclusion &amp; Educational Implication:</b><br>
       In conclusion, aims are the living soul of education. A progressive educational system must constantly revise and align its aims with constitutional values, technological revolutions, and global demands to nurture dynamic, ethical, and productive citizens.
     </div>
   </div>
 
   <!-- Q22 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q22: Critically examine the Individual Aim of Education. State its merits, limitations, and modern relevance.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q22: Critically examine the Individual Aim of Education. State its merits, limitations, and modern relevance.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #00C6FF;">1. Introduction:</b><br>
       The Individual Aim of education asserts that the child is the supreme center of the educational process. Advocated vigorously by Sir Percy Nunn, this view maintains that the state and educational institutions exist solely to secure conditions for the complete self-expression and autonomous growth of the individual.
       <br><br>
-      <b style="color: ${themeColor};">2. Comprehensive Critical Analysis:</b><br>
-      &bull; <b>Merits:</b>
+      <b style="color: #00C6FF;">2. Comprehensive Critical Analysis:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Merits:</b>
       <br>&nbsp;&nbsp;&bull; <i>Respect for Psychological Differences:</i> Acknowledges that every child possesses unique cognitive, creative, and emotional endowments that must not be crushed by uniform standardization.
       <br>&nbsp;&nbsp;&bull; <i>Fosters Creative Inventions:</i> All civilizational breakthroughs &mdash; from Newton's physics to Tagore's poetry &mdash; were the products of free individual genius.
       <br>&nbsp;&nbsp;&bull; <i>Democratic Foundation:</i> Upholds human dignity and freedom against authoritarian state oppression.
-      <br>&bull; <b>Limitations:</b>
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Limitations:</b>
       <br>&nbsp;&nbsp;&bull; <i>Risk of Social Chaos:</i> Unchecked individualism leads to selfishness, lawlessness, and disregard for the collective common good.
       <br>&nbsp;&nbsp;&bull; <i>Psychological Untruth:</i> Man cannot develop in a vacuum; without human society, language, moral codes, and culture could never exist.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Modern Relevance:</b><br>
+      <b style="color: #00C6FF;">3. Conclusion &amp; Modern Relevance:</b><br>
       In our modern educational landscape, the individual aim is not interpreted as isolated selfishness, but as child-centered pedagogy. Modern curriculum frameworks (like NEP 2020) endorse the individual aim by providing multi-disciplinary flexibility, recognizing varied learning styles, and promoting creative self-actualization.
     </div>
   </div>
 
   <!-- Q23 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q23: What is the Social Aim of Education? Distinguish between its Extreme and Democratic forms, and evaluate its significance.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q23: What is the Social Aim of Education? Distinguish between its Extreme and Democratic forms, and evaluate its significance.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #00C6FF;">1. Introduction:</b><br>
       The Social Aim of education posits that society is the supreme reality, and the individual is merely a functional component of the social order. It emphasizes that human beings are fundamentally social creatures whose abilities, culture, and survival depend entirely on collective social organization.
       <br><br>
-      <b style="color: ${themeColor};">2. Core Comparison &amp; Critical Dimensions:</b><br>
-      &bull; <b>Extreme Social Aim (Totalitarian Model):</b> In this model (Sparta, Fascist regimes), the state is absolute. The child belongs entirely to the state. Education is reduced to regimented training, blind obedience, and military conscription. Individual rights, creative dissent, and free speech are ruthlessly extinguished.
-      <br>&bull; <b>Democratic Social Aim (John Dewey Model):</b> Here, education focuses on "Social Efficiency." It cultivates cooperative living, civic intelligence, active tolerance, and economic self-reliance. It does not crush individuality; rather, it enriches the individual so that he or she may contribute constructively to a democratic society.
-      <br>&bull; <b>Key Significance:</b> The democratic social aim preserves cultural heritage, promotes communal peace, fosters democratic brotherhood, and ensures social progress through collective responsibility.
+      <b style="color: #00C6FF;">2. Core Comparison &amp; Critical Dimensions:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Extreme Social Aim (Totalitarian Model):</b> In this model (Sparta, Fascist regimes), the state is absolute. The child belongs entirely to the state. Education is reduced to regimented training, blind obedience, and military conscription. Individual rights, creative dissent, and free speech are ruthlessly extinguished.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Democratic Social Aim (John Dewey Model):</b> Here, education focuses on "Social Efficiency." It cultivates cooperative living, civic intelligence, active tolerance, and economic self-reliance. It does not crush individuality; rather, it enriches the individual so that he or she may contribute constructively to a democratic society.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Key Significance:</b> The democratic social aim preserves cultural heritage, promotes communal peace, fosters democratic brotherhood, and ensures social progress through collective responsibility.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #00C6FF;">3. Conclusion &amp; Educational Implication:</b><br>
       Education must reject totalitarian indoctrination while actively championing democratic social responsibility. The school must function as a miniature community where children practice democracy, teamwork, and social justice.
     </div>
   </div>
 
   <!-- Q24 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q24: "Individual and Social aims are not conflicting, but complementary." Discuss this synthesis with arguments.</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q24: "Individual and Social aims are not conflicting, but complementary." Discuss this synthesis with arguments.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #00C6FF;">1. Introduction:</b><br>
       For centuries, educational thinkers debated whether the development of the individual or the welfare of society should be the primary aim of education. However, mature educational philosophy regards this conflict as entirely artificial. As modern educational thinkers have demonstrated, individuality and society are reciprocal and inseparable.
       <br><br>
-      <b style="color: ${themeColor};">2. Core Arguments Supporting the Synthesis:</b><br>
-      &bull; <b>Society Exists for the Individual:</b> Society is not an abstract mechanical idol; it is an association of living individuals. A society can be free, cultured, and progressive only when its individual members are educated, ethical, and creative.
-      <br>&bull; <b>Individual Realizes Self Only in Society:</b> As Sir Percy Nunn himself conceded, an isolated human being remains a helpless wild creature. It is only in the mirror of society &mdash; through language, community, and service &mdash; that an individual discovers personal identity and moral purpose.
-      <br>&bull; <b>John Dewey's Pragmatic Reconciliation:</b> Dewey proved that the highest individual development occurs when a child actively participates in the cooperative life of the social community.
-      <br>&bull; <b>The Concept of Socialized Individuality:</b> True education nurtures "socialized individuality" &mdash; an autonomous, self-reliant individual whose deepest creative satisfaction comes from serving others.
+      <b style="color: #00C6FF;">2. Core Arguments Supporting the Synthesis:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">Society Exists for the Individual:</b> Society is not an abstract mechanical idol; it is an association of living individuals. A society can be free, cultured, and progressive only when its individual members are educated, ethical, and creative.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">Individual Realizes Self Only in Society:</b> As Sir Percy Nunn himself conceded, an isolated human being remains a helpless wild creature. It is only in the mirror of society &mdash; through language, community, and service &mdash; that an individual discovers personal identity and moral purpose.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">John Dewey's Pragmatic Reconciliation:</b> Dewey proved that the highest individual development occurs when a child actively participates in the cooperative life of the social community.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">The Concept of Socialized Individuality:</b> True education nurtures "socialized individuality" &mdash; an autonomous, self-reliant individual whose deepest creative satisfaction comes from serving others.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #00C6FF;">3. Conclusion &amp; Educational Implication:</b><br>
       In conclusion, individual and social aims are two sides of the same coin. Education must balance personal fulfillment with public duty, cultivating individuals who are fully developed within themselves and deeply dedicated to the common welfare of humanity.
     </div>
   </div>
 
   <!-- Q25 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(0, 198, 255, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q25: Analyze the Economic and Moral/Spiritual Aims of Education. How does NEP 2020 synthesize both for balanced national growth?</h3>
+    <h3 style="color: #00C6FF; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q25: Analyze the Economic and Moral/Spiritual Aims of Education. How does NEP 2020 synthesize both for balanced national growth?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #00C6FF;">1. Introduction:</b><br>
       A complete education must attend to both the physical-economic survival of the human being and the ethical-spiritual illumination of the soul. The economic aim ensures self-sufficiency and national wealth, while the moral and spiritual aim elevates character, empathy, and social justice.
       <br><br>
-      <b style="color: ${themeColor};">2. Comparative Analysis:</b><br>
-      &bull; <b>The Economic Aim (Bread &amp; Butter):</b> Vital for banishing poverty, eradicating youth unemployment, and promoting national self-reliance. As Gandhiji emphasized in Basic Education, learning through productive craft ensures that education acts as an insurance against unemployment. However, when pursued in isolation, it degrades into hollow materialism.
-      <br>&bull; <b>The Moral &amp; Spiritual Aim (Character Building):</b> Swami Vivekananda, Herbart, and Radhakrishnan asserted that intellectual power without ethical values creates clever monsters. Moral education trains the conscience in truth, justice, non-violence, and selfless compassion.
-      <br>&bull; <b>The NEP 2020 Synthesis:</b>
+      <b style="color: #00C6FF;">2. Comparative Analysis:</b><br>
+      &bull; <b style="color: #00C6FF; font-weight: bold;">The Economic Aim (Bread &amp; Butter):</b> Vital for banishing poverty, eradicating youth unemployment, and promoting national self-reliance. As Gandhiji emphasized in Basic Education, learning through productive craft ensures that education acts as an insurance against unemployment. However, when pursued in isolation, it degrades into hollow materialism.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">The Moral &amp; Spiritual Aim (Character Building):</b> Swami Vivekananda, Herbart, and Radhakrishnan asserted that intellectual power without ethical values creates clever monsters. Moral education trains the conscience in truth, justice, non-violence, and selfless compassion.
+      <br>&bull; <b style="color: #00C6FF; font-weight: bold;">The NEP 2020 Synthesis:</b>
       <br>&nbsp;&nbsp;&bull; <i>Vocational Integration:</i> NEP 2020 mandates vocational exposure from Grade 6 (10 bagless days, craft internships) to build productive skills.
       <br>&nbsp;&nbsp;&bull; <i>Value-Based Education:</i> Concurrently embeds Universal Human Values (UHV), constitutional ethics, Seva, and environmental empathy throughout the curriculum.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #00C6FF;">3. Conclusion &amp; Educational Implication:</b><br>
       Neither economic wealth without morality, nor moral philosophy without economic livelihood, can sustain a vibrant civilization. NEP 2020 provides a harmonious blueprint uniting vocational competence with spiritual nobility, preparing youth for both material success and enlightened citizenship.
     </div>
   </div>

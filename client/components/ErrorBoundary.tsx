@@ -1,4 +1,5 @@
 import React, { Component, ComponentType, PropsWithChildren } from "react";
+import * as SplashScreen from "expo-splash-screen";
 import { ErrorFallback, ErrorFallbackProps } from "@/components/ErrorFallback";
 
 export type ErrorBoundaryProps = PropsWithChildren<{
@@ -21,10 +22,12 @@ export class ErrorBoundary extends Component<
   };
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
+    SplashScreen.hideAsync().catch(() => {});
     return { error };
   }
 
   componentDidCatch(error: Error, info: { componentStack: string }): void {
+    SplashScreen.hideAsync().catch(() => {});
     if (typeof this.props.onError === "function") {
       this.props.onError(error, info.componentStack);
     }
@@ -36,6 +39,10 @@ export class ErrorBoundary extends Component<
 
   render() {
     const { FallbackComponent } = this.props;
+
+    if (this.state.error) {
+      SplashScreen.hideAsync().catch(() => {});
+    }
 
     return this.state.error && FallbackComponent ? (
       <FallbackComponent

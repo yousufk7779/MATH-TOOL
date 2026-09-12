@@ -21,68 +21,68 @@ export const c11Edu3HtmlOverview = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- QUICK GLOSSARY & BASIC DEFINITIONS CARD -->
-  <div style="background: rgba(17, 153, 142, 0.06); border: 1.5px solid ${themeColor}; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
-    <h2 class="text-center" style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">🧠 Quick Glossary &amp; Core Psychological Terms</h2>
+  <div style="background: rgba(17, 153, 142, 0.06); border: 1.5px solid #11998E; border-radius: 12px; padding: 18px; margin-bottom: 25px;">
+    <h2 class="text-center" style="color: #11998E; font-weight: bold; margin: 0 0 6px 0; font-size: 20px; font-weight: bold;">🧠 Quick Glossary &amp; Core Psychological Terms</h2>
     <p class="text-center" style="color: #64FFDA; margin: 0 0 16px 0; font-size: 14.5px;">Essential Concepts &bull; Unit 3: Psychological Foundations of Education (10 Marks)</p>
 
     <div style="display: flex; flex-direction: column; gap: 12px;">
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">1. Psychology (Etymological Meaning):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #11998E; border-radius: 6px;">
+        <b style="color: #11998E; font-size: 16px; display: block; margin-bottom: 4px;">1. Psychology (Etymological Meaning):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Derived from two Greek words: <i>'Psyche'</i> (soul/mind) and <i>'Logos'</i> (study or science). Modern psychology is defined as the scientific study of human and animal behavior and mental processes.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Psychology:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #11998E; border-radius: 6px;">
+        <b style="color: #11998E; font-size: 16px; display: block; margin-bottom: 4px;">2. Educational Psychology:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">The specialized branch of applied psychology that investigates the learner, learning processes, teaching techniques, and educational environments to maximize pedagogical effectiveness.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">3. Learning:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #11998E; border-radius: 6px;">
+        <b style="color: #11998E; font-size: 16px; display: block; margin-bottom: 4px;">3. Learning:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">A relatively permanent modification of behavioral tendencies brought about through active experience, practice, instruction, and environmental interaction.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">4. Motivation (Movere):</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #11998E; border-radius: 6px;">
+        <b style="color: #11998E; font-size: 16px; display: block; margin-bottom: 4px;">4. Motivation (Movere):</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">Derived from Latin <i>'Movere'</i> (to move). It is the internal driving force, condition, or catalyst that arouses, sustains, directs, and terminates goal-oriented behavior.</span>
       </div>
-      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid ${themeColor}; border-radius: 6px;">
-        <b style="color: ${themeColor}; font-size: 16px; display: block; margin-bottom: 4px;">5. Intrinsic vs. Extrinsic Motivation:</b>
+      <div style="background: rgba(0,0,0,0.25); padding: 14px 16px; border-left: 4px solid #11998E; border-radius: 6px;">
+        <b style="color: #11998E; font-size: 16px; display: block; margin-bottom: 4px;">5. Intrinsic vs. Extrinsic Motivation:</b>
         <span style="color: #FFFFFF; font-size: 15px; line-height: 1.6;"><b>Intrinsic</b> comes from internal curiosity, genuine interest, and inherent self-satisfaction. <b>Extrinsic</b> is driven by external incentives such as marks, praise, rewards, trophies, or fear of punishment.</span>
       </div>
     </div>
   </div>
 
   <!-- SECTION 3.1 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 30px;">3.1 Meaning and Scope of Psychology</h2>
+  <h2 style="color: #11998E; font-weight: bold; border-bottom: 2px solid #11998E; padding-bottom: 6px; margin-top: 30px;">3.1 Meaning and Scope of Psychology</h2>
 
   <p>The relationship between psychology and education is organic and inseparable. If education is the process of modifying human behavior in desirable directions, psychology is the scientific study of that very behavior. Without an understanding of how human beings think, perceive, feel, remember, and develop, educational practice remains blind and mechanical.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 24px;">(i) Historical Evolution of the Definition of Psychology</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 24px;">(i) Historical Evolution of the Definition of Psychology</h3>
   <p>The definition of psychology underwent four distinct historical stages before reaching its modern scientific status:</p>
 
   <div style="display: flex; flex-direction: column; gap: 12px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">1. Psychology as the Science of the Soul (Ancient Greek Stage):</b>
+      <b style="color: #11998E; font-size: 16px;">1. Psychology as the Science of the Soul (Ancient Greek Stage):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-        Early philosophers like <b style="color: ${themeColor};">Plato and Aristotle</b> defined psychology as the study of the soul (from Greek <i>Psyche</i>). This definition was discarded because the soul is metaphysical, invisible, lacks physical location, and cannot be subjected to empirical laboratory observation or measurement.
+        Early philosophers like <b style="color: #11998E;">Plato and Aristotle</b> defined psychology as the study of the soul (from Greek <i>Psyche</i>). This definition was discarded because the soul is metaphysical, invisible, lacks physical location, and cannot be subjected to empirical laboratory observation or measurement.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">2. Psychology as the Science of the Mind (17th &amp; 18th Century):</b>
+      <b style="color: #11998E; font-size: 16px;">2. Psychology as the Science of the Mind (17th &amp; 18th Century):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-        Philosophers such as <b style="color: ${themeColor};">John Locke and Immanuel Kant</b> substituted 'soul' with 'mind'. However, this too was rejected because the mind remained subjective, abstract, and impossible to dissect or observe scientifically from the outside.
+        Philosophers such as <b style="color: #11998E;">John Locke and Immanuel Kant</b> substituted 'soul' with 'mind'. However, this too was rejected because the mind remained subjective, abstract, and impossible to dissect or observe scientifically from the outside.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">3. Psychology as the Science of Consciousness (19th Century):</b>
+      <b style="color: #11998E; font-size: 16px;">3. Psychology as the Science of Consciousness (19th Century):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-        In 1879, <b style="color: ${themeColor};">Wilhelm Wundt</b> founded the world's first psychological laboratory in Leipzig, Germany, and together with <b style="color: ${themeColor};">William James</b> defined psychology as the science of conscious experience. Sigmund Freud destroyed this definition by demonstrating that conscious experience represents merely the tiny visible tip of the mental iceberg, while the vast submerged portion consists of the <b>subconscious and unconscious mind</b>.
+        In 1879, <b style="color: #11998E;">Wilhelm Wundt</b> founded the world's first psychological laboratory in Leipzig, Germany, and together with <b style="color: #11998E;">William James</b> defined psychology as the science of conscious experience. Sigmund Freud destroyed this definition by demonstrating that conscious experience represents merely the tiny visible tip of the mental iceberg, while the vast submerged portion consists of the <b>subconscious and unconscious mind</b>.
       </p>
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px;">
-      <b style="color: ${themeColor}; font-size: 16px;">4. Psychology as the Science of Behavior (20th Century to Present):</b>
+      <b style="color: #11998E; font-size: 16px;">4. Psychology as the Science of Behavior (20th Century to Present):</b>
       <p style="margin: 6px 0 0 0; color: #FFFFFF; font-size: 14.5px; line-height: 1.6;">
-        Pioneered by <b style="color: ${themeColor};">J. B. Watson (Father of Behaviorism)</b>, psychology finally established itself as an objective, positive science of observable, recordable, and measurable <b>behavior</b>. As psychologist <b>R. S. Woodworth</b> famously summarized in his iconic aphorism:
+        Pioneered by <b style="color: #11998E;">J. B. Watson (Father of Behaviorism)</b>, psychology finally established itself as an objective, positive science of observable, recordable, and measurable <b>behavior</b>. As psychologist <b>R. S. Woodworth</b> famously summarized in his iconic aphorism:
         <br><i>"First psychology lost its soul, then its mind, then its consciousness; it still has behavior of a sort."</i>
       </p>
     </div>
@@ -137,75 +137,75 @@ export const c11Edu3HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Scope of Psychology as a Discipline</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(ii) Scope of Psychology as a Discipline</h3>
   <p>The scope of psychology is remarkably comprehensive, embracing diverse human and animal endeavors:</p>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">General Psychology:</b> Formulates fundamental laws of sensation, perception, learning, memory, and emotion in normal adults.</li>
-    <li><b style="color: ${themeColor};">Developmental Psychology:</b> Studies human behavioral progression from prenatal conception, infancy, childhood, adolescence to old age.</li>
-    <li><b style="color: ${themeColor};">Abnormal Psychology:</b> Investigates mental deviations, neuroses, psychoses, phobias, and behavioral disorders.</li>
-    <li><b style="color: ${themeColor};">Social Psychology:</b> Examines individual interaction within groups, mob psychology, leadership, prejudices, and propaganda.</li>
-    <li><b style="color: ${themeColor};">Educational Psychology:</b> The vital branch focusing on learning behaviors, pedagogy, and classroom dynamics.</li>
+    <li><b style="color: #11998E;">General Psychology:</b> Formulates fundamental laws of sensation, perception, learning, memory, and emotion in normal adults.</li>
+    <li><b style="color: #11998E;">Developmental Psychology:</b> Studies human behavioral progression from prenatal conception, infancy, childhood, adolescence to old age.</li>
+    <li><b style="color: #11998E;">Abnormal Psychology:</b> Investigates mental deviations, neuroses, psychoses, phobias, and behavioral disorders.</li>
+    <li><b style="color: #11998E;">Social Psychology:</b> Examines individual interaction within groups, mob psychology, leadership, prejudices, and propaganda.</li>
+    <li><b style="color: #11998E;">Educational Psychology:</b> The vital branch focusing on learning behaviors, pedagogy, and classroom dynamics.</li>
   </ul>
 
   <!-- SECTION 3.2 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">3.2 Meaning and Functions of Educational Psychology</h2>
+  <h2 style="color: #11998E; font-weight: bold; border-bottom: 2px solid #11998E; padding-bottom: 6px; margin-top: 35px;">3.2 Meaning and Functions of Educational Psychology</h2>
 
-  <p>Educational Psychology is that specialized, applied branch of psychology that takes the empirical principles discovered in general psychology and applies them directly to the concrete situations of teaching and learning. In the words of <b style="color: ${themeColor};">E. A. Peel</b>, <i>"Educational Psychology is the science of education."</i> According to <b style="color: ${themeColor};">B. F. Skinner</b>, <i>"Educational Psychology deals with teaching and learning."</i></p>
+  <p>Educational Psychology is that specialized, applied branch of psychology that takes the empirical principles discovered in general psychology and applies them directly to the concrete situations of teaching and learning. In the words of <b style="color: #11998E;">E. A. Peel</b>, <i>"Educational Psychology is the science of education."</i> According to <b style="color: #11998E;">B. F. Skinner</b>, <i>"Educational Psychology deals with teaching and learning."</i></p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Scope of Educational Psychology</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(i) Scope of Educational Psychology</h3>
   <p>The subject matter of educational psychology revolves around five foundational nuclei:</p>
   <ol style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">The Learner:</b> Understanding individual differences, innate capacities, intelligence quotient (IQ), emotional stability, and developmental stages.</li>
-    <li><b style="color: ${themeColor};">The Learning Process:</b> How information is acquired, retained, transferred, and recalled (laws of learning, memory, forgetting, thinking).</li>
-    <li><b style="color: ${themeColor};">The Learning Situation &amp; Environment:</b> Classroom climate, lighting, seating, psychological rapport, socio-emotional warmth, and discipline.</li>
-    <li><b style="color: ${themeColor};">The Teaching Situation:</b> Formulating pedagogical methods, audiovisual techniques, and effective teacher-pupil communication.</li>
-    <li><b style="color: ${themeColor};">Evaluation &amp; Assessment:</b> Designing valid, reliable psychological tests, diagnostic tools, and grading standards.</li>
+    <li><b style="color: #11998E;">The Learner:</b> Understanding individual differences, innate capacities, intelligence quotient (IQ), emotional stability, and developmental stages.</li>
+    <li><b style="color: #11998E;">The Learning Process:</b> How information is acquired, retained, transferred, and recalled (laws of learning, memory, forgetting, thinking).</li>
+    <li><b style="color: #11998E;">The Learning Situation &amp; Environment:</b> Classroom climate, lighting, seating, psychological rapport, socio-emotional warmth, and discipline.</li>
+    <li><b style="color: #11998E;">The Teaching Situation:</b> Formulating pedagogical methods, audiovisual techniques, and effective teacher-pupil communication.</li>
+    <li><b style="color: #11998E;">Evaluation &amp; Assessment:</b> Designing valid, reliable psychological tests, diagnostic tools, and grading standards.</li>
   </ol>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Indispensable Functions &amp; Need for the Teacher</h3>
-  <div style="background: rgba(17, 153, 142, 0.08); border-left: 4px solid ${themeColor}; padding: 14px 18px; border-radius: 6px; margin: 16px 0;">
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(ii) Indispensable Functions &amp; Need for the Teacher</h3>
+  <div style="background: rgba(17, 153, 142, 0.08); border-left: 4px solid #11998E; padding: 14px 18px; border-radius: 6px; margin: 16px 0;">
     <p style="margin: 0; color: #FFFFFF; font-size: 15px; line-height: 1.65;">
-      <b>Why Every Teacher Must Study Educational Psychology:</b><br>
-      &bull; <b>To Understand Individual Differences:</b> Every student has a unique learning pace. Psychology prevents teachers from imposing uniform expectations on all learners.<br>
-      &bull; <b>To Select Age-Appropriate Methods:</b> Primary children learn through play and concrete objects, whereas secondary students need abstract logic and problem-solving.<br>
-      &bull; <b>To Eliminate Maladjustment:</b> Helps teachers identify the root emotional causes of classroom misbehavior, delinquency, and truancy rather than resorting to cruel corporal punishment.<br>
-      &bull; <b>To Master Motivation:</b> Teaches teachers how to awaken internal curiosity and enthusiasm instead of ruling through fear and intimidation.
+      <b style="color: #11998E; font-weight: bold;">Why Every Teacher Must Study Educational Psychology:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">To Understand Individual Differences:</b> Every student has a unique learning pace. Psychology prevents teachers from imposing uniform expectations on all learners.<br>
+      &bull; <b style="color: #11998E; font-weight: bold;">To Select Age-Appropriate Methods:</b> Primary children learn through play and concrete objects, whereas secondary students need abstract logic and problem-solving.<br>
+      &bull; <b style="color: #11998E; font-weight: bold;">To Eliminate Maladjustment:</b> Helps teachers identify the root emotional causes of classroom misbehavior, delinquency, and truancy rather than resorting to cruel corporal punishment.<br>
+      &bull; <b style="color: #11998E; font-weight: bold;">To Master Motivation:</b> Teaches teachers how to awaken internal curiosity and enthusiasm instead of ruling through fear and intimidation.
     </p>
   </div>
 
   <!-- SECTION 3.3 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">3.3 Meaning and Characteristics of Learning</h2>
+  <h2 style="color: #11998E; font-weight: bold; border-bottom: 2px solid #11998E; padding-bottom: 6px; margin-top: 35px;">3.3 Meaning and Characteristics of Learning</h2>
 
   <p>Learning is the central phenomenon of human life. From the moment of birth until the final breath, a human being is continually exposed to novel stimuli, acquires fresh experiences, and modifies behavior. In psychology, learning is not mere bookish memorization; it is the fundamental process through which an organism adjusts to its environment.</p>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Standard Psychological Definitions of Learning</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(i) Standard Psychological Definitions of Learning</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Gates and Others:</b> <i>"Learning is the modification of behavior through experience and training."</i></li>
-    <li><b style="color: ${themeColor};">B. F. Skinner:</b> <i>"Learning is a process of progressive behavior adaptation."</i></li>
-    <li><b style="color: ${themeColor};">Crow and Crow:</b> <i>"Learning involves the acquisition of habits, knowledge, and attitudes."</i></li>
+    <li><b style="color: #11998E;">Gates and Others:</b> <i>"Learning is the modification of behavior through experience and training."</i></li>
+    <li><b style="color: #11998E;">B. F. Skinner:</b> <i>"Learning is a process of progressive behavior adaptation."</i></li>
+    <li><b style="color: #11998E;">Crow and Crow:</b> <i>"Learning involves the acquisition of habits, knowledge, and attitudes."</i></li>
   </ul>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Fundamental Characteristics of Learning</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(ii) Fundamental Characteristics of Learning</h3>
   <div style="display: flex; flex-direction: column; gap: 10px; margin: 14px 0;">
-    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid ${themeColor}; border-radius: 4px;">
-      <b style="color: ${themeColor};">1. Learning is Continuous &amp; Lifelong:</b> It begins in the cradle and terminates only at the grave. No age is barred from learning.
+    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #11998E; border-radius: 4px;">
+      <b style="color: #11998E;">1. Learning is Continuous &amp; Lifelong:</b> It begins in the cradle and terminates only at the grave. No age is barred from learning.
     </div>
-    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid ${themeColor}; border-radius: 4px;">
-      <b style="color: ${themeColor};">2. Learning Involves Modification of Behavior:</b> It alters tendencies across all three domains: Cognitive (thinking), Affective (feeling), and Psychomotor (acting).
+    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #11998E; border-radius: 4px;">
+      <b style="color: #11998E;">2. Learning Involves Modification of Behavior:</b> It alters tendencies across all three domains: Cognitive (thinking), Affective (feeling), and Psychomotor (acting).
     </div>
-    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid ${themeColor}; border-radius: 4px;">
-      <b style="color: ${themeColor};">3. Learning is Purposeful &amp; Goal-Directed:</b> Meaningful learning occurs when the individual has a conscious goal to reach; purposeless tasks yield minimal retention.
+    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #11998E; border-radius: 4px;">
+      <b style="color: #11998E;">3. Learning is Purposeful &amp; Goal-Directed:</b> Meaningful learning occurs when the individual has a conscious goal to reach; purposeless tasks yield minimal retention.
     </div>
-    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid ${themeColor}; border-radius: 4px;">
-      <b style="color: ${themeColor};">4. Learning is Universal:</b> It is not restricted to human beings; all living creatures adapt through learning.
+    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #11998E; border-radius: 4px;">
+      <b style="color: #11998E;">4. Learning is Universal:</b> It is not restricted to human beings; all living creatures adapt through learning.
     </div>
-    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid ${themeColor}; border-radius: 4px;">
-      <b style="color: ${themeColor};">5. Learning is Active:</b> The learner must actively participate mentally or physically. Passive listening without cognitive involvement does not produce learning.
+    <div style="background: rgba(15, 23, 42, 0.7); padding: 10px 14px; border-left: 3px solid #11998E; border-radius: 4px;">
+      <b style="color: #11998E;">5. Learning is Active:</b> The learner must actively participate mentally or physically. Passive listening without cognitive involvement does not produce learning.
     </div>
   </div>
 
   <!-- SECTION 3.4 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">3.4 Factors Affecting Learning</h2>
+  <h2 style="color: #11998E; font-weight: bold; border-bottom: 2px solid #11998E; padding-bottom: 6px; margin-top: 35px;">3.4 Factors Affecting Learning</h2>
 
   <p>The speed, depth, and permanence of learning are determined by the complex interplay of three major categories of factors:</p>
 
@@ -251,18 +251,18 @@ export const c11Edu3HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) Detailed Breakdown of Factors</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(i) Detailed Breakdown of Factors</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">1. Learner-Related Factors:</b>
+    <li><b style="color: #11998E;">1. Learner-Related Factors:</b>
       <br>&bull; <i>Maturation &amp; Readiness:</i> A child cannot learn abstract algebra at age 4 or walk before neuromotor maturation. As Thorndike stated in his Law of Readiness, learning occurs smoothly only when the nervous system is ready.
       <br>&bull; <i>Motivation &amp; Interest:</i> Without internal or external motive, attention wanders and comprehension drops.
       <br>&bull; <i>Physical Health &amp; Fatigue:</i> Malnutrition, eye strain, lack of sleep, or mental exhaustion sharply impede learning efficiency.
     </li>
-    <li><b style="color: ${themeColor};">2. Material / Task Factors:</b>
+    <li><b style="color: #11998E;">2. Material / Task Factors:</b>
       <br>&bull; <i>Meaningfulness:</i> Meaningful prose and logical associations are learned dozens of times faster than nonsense syllables (Ebbinghaus findings).
       <br>&bull; <i>Difficulty &amp; Length:</i> Overly long and complex material causes rapid fatigue and cognitive overload.
     </li>
-    <li><b style="color: ${themeColor};">3. Environmental &amp; Methodological Factors:</b>
+    <li><b style="color: #11998E;">3. Environmental &amp; Methodological Factors:</b>
       <br>&bull; <i>Spaced vs. Massed Practice:</i> Distributed practice with intermittent rest breaks produces far superior long-term retention compared to last-minute cramming.
       <br>&bull; <i>Knowledge of Results (Feedback):</i> Immediate feedback acts as reinforcement, cementing correct responses and eliminating errors.
       <br>&bull; <i>Physical &amp; Emotional Climate:</i> Well-ventilated, well-lit classrooms with an empathetic, supportive teacher foster deep engagement.
@@ -270,9 +270,9 @@ export const c11Edu3HtmlOverview = `
   </ul>
 
   <!-- SECTION 3.5 -->
-  <h2 style="color: ${themeColor}; border-bottom: 2px solid ${themeColor}; padding-bottom: 6px; margin-top: 35px;">3.5 Concept and Types of Motivation (Intrinsic and Extrinsic)</h2>
+  <h2 style="color: #11998E; font-weight: bold; border-bottom: 2px solid #11998E; padding-bottom: 6px; margin-top: 35px;">3.5 Concept and Types of Motivation (Intrinsic and Extrinsic)</h2>
 
-  <p>Motivation is the golden key to learning. In the famous words of <b style="color: ${themeColor};">B. F. Skinner</b>, <i>"Motivation in school learning is the superhighway to effective instruction."</i> Motivation represents that psychological tension or energy within an organism that drives it to act persistently until a desired goal is realized.</p>
+  <p>Motivation is the golden key to learning. In the famous words of <b style="color: #11998E;">B. F. Skinner</b>, <i>"Motivation in school learning is the superhighway to effective instruction."</i> Motivation represents that psychological tension or energy within an organism that drives it to act persistently until a desired goal is realized.</p>
 
   <!-- STANDALONE CLEAN DIAGRAM 3: MOTIVATION CYCLE (SCIENCE-STYLE WHITE BG) -->
   <div style="background: rgba(15, 23, 42, 0.9); border: 1.5px solid rgba(17, 153, 142, 0.4); border-radius: 10px; padding: 14px 16px; margin: 25px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.35); text-align: center;">
@@ -333,11 +333,11 @@ export const c11Edu3HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(i) The Two Fundamental Types of Motivation</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(i) The Two Fundamental Types of Motivation</h3>
 
   <div style="display: grid; grid-template-columns: 1fr; gap: 14px; margin: 16px 0;">
     <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(17, 153, 142, 0.4); border-radius: 8px; padding: 14px;">
-      <h4 style="color: ${themeColor}; margin: 0 0 6px 0; font-size: 16px;">🔥 1. Intrinsic Motivation (Internal &bull; Natural Drive)</h4>
+      <h4 style="color: #11998E; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">🔥 1. Intrinsic Motivation (Internal &bull; Natural Drive)</h4>
       <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
         Originates from within the individual. The learner engages in an activity purely for the joy, intellectual curiosity, self-expression, and inherent satisfaction it provides.
         <br>&bull; <i>Examples:</i> Reading a novel out of sheer interest, painting for personal joy, solving complex puzzles without expecting any prize.
@@ -346,7 +346,7 @@ export const c11Edu3HtmlOverview = `
     </div>
 
     <div style="background: rgba(15, 23, 42, 0.85); border: 1.2px solid rgba(255, 145, 0, 0.4); border-radius: 8px; padding: 14px;">
-      <h4 style="color: #FF9100; margin: 0 0 6px 0; font-size: 16px;">🎁 2. Extrinsic Motivation (External &bull; Artificial Drive)</h4>
+      <h4 style="color: #11998E; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">🎁 2. Extrinsic Motivation (External &bull; Artificial Drive)</h4>
       <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
         Driven by factors external to the learning activity itself. The student performs the task not for its own sake, but as a means to achieve an external reward or avoid a penalty.
         <br>&bull; <i>Examples:</i> Studying solely to pass a board examination, win a scholarship medal, gain parental praise, or escape detention.
@@ -355,21 +355,21 @@ export const c11Edu3HtmlOverview = `
     </div>
   </div>
 
-  <h3 style="color: ${themeColor}; margin-top: 20px;">(ii) Classroom Techniques to Motivate Learners</h3>
+  <h3 style="color: #11998E; font-weight: bold; margin-top: 20px;">(ii) Classroom Techniques to Motivate Learners</h3>
   <ul style="padding-left: 20px; line-height: 1.8;">
-    <li><b style="color: ${themeColor};">Praise vs. Blame:</b> Psychological experiments prove that judicious praise and constructive encouragement are far more effective than continuous sarcasm and blame.</li>
-    <li><b style="color: ${themeColor};">Knowledge of Results:</b> When learners are shown their progress charts immediately, motivation increases significantly.</li>
-    <li><b style="color: ${themeColor};">Novelty and Curiosity:</b> Monotonous classroom lectures destroy motivation; using audiovisual aids, field trips, and experiments reignites attention.</li>
-    <li><b style="color: ${themeColor};">Cooperative Learning over Ruthless Competition:</b> Healthy group teamwork builds emotional security, whereas destructive competition creates anxiety and defeatism.</li>
+    <li><b style="color: #11998E;">Praise vs. Blame:</b> Psychological experiments prove that judicious praise and constructive encouragement are far more effective than continuous sarcasm and blame.</li>
+    <li><b style="color: #11998E;">Knowledge of Results:</b> When learners are shown their progress charts immediately, motivation increases significantly.</li>
+    <li><b style="color: #11998E;">Novelty and Curiosity:</b> Monotonous classroom lectures destroy motivation; using audiovisual aids, field trips, and experiments reignites attention.</li>
+    <li><b style="color: #11998E;">Cooperative Learning over Ruthless Competition:</b> Healthy group teamwork builds emotional security, whereas destructive competition creates anxiety and defeatism.</li>
   </ul>
 
   <!-- NEP 2020 POLICY CONNECT BOX -->
   <div style="background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid #11998E; border-radius: 8px; padding: 14px 18px; margin: 25px 0;">
-    <h4 style="color: #11998E; margin: 0 0 6px 0; font-size: 16px;">🏛️ Modern Relevance: Psychological Shift in NEP 2020</h4>
+    <h4 style="color: #11998E; font-weight: bold; margin: 0 0 6px 0; font-size: 16px;">🏛️ Modern Relevance: Psychological Shift in NEP 2020</h4>
     <p style="margin: 0; color: #CBD5E1; font-size: 14.5px; line-height: 1.6;">
       The <b>National Education Policy (NEP 2020)</b> transforms Indian classrooms by applying core educational psychology:
-      <br>&bull; <b>Child-Centered Mental Health:</b> Replaces high-stakes exam anxiety with 360-degree holistic progress report cards covering cognitive, socio-emotional, and psychomotor development.
-      <br>&bull; <b>Nurturing Intrinsic Motivation:</b> Eliminates rigid silos between arts, sciences, and vocational streams, allowing students to learn subjects driven by genuine passion and internal joy.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Child-Centered Mental Health:</b> Replaces high-stakes exam anxiety with 360-degree holistic progress report cards covering cognitive, socio-emotional, and psychomotor development.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Nurturing Intrinsic Motivation:</b> Eliminates rigid silos between arts, sciences, and vocational streams, allowing students to learn subjects driven by genuine passion and internal joy.
     </p>
   </div>
 
@@ -391,8 +391,8 @@ export const c11Edu3HtmlSolutions = `
 <div style="padding: 12px; color: #E0E0E0; text-align: justify; font-family: system-ui, -apple-system, sans-serif; line-height: 1.75; font-size: 16px;">
 
   <!-- SECTION A HEADER -->
-  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid #11998E; padding: 10px 16px; border-radius: 4px; margin: 15px 0 20px 0;">
+    <h2 style="color: #11998E; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION A: Very Short Answer Type Questions (VSAT &bull; 1 &amp; 2 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">12 Questions &bull; Word Limit: 20–30 Words &bull; Direct Recall &amp; Board Facts</span>
@@ -400,108 +400,108 @@ export const c11Edu3HtmlSolutions = `
 
   <!-- Q1 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q1: What is the Greek etymological derivation of the word 'Psychology'?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q1: What is the Greek etymological derivation of the word 'Psychology'?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      The word <b style="color: ${themeColor};">'Psychology'</b> is derived from two Greek words: <b style="color: ${themeColor};">'Psyche'</b> (meaning soul or breath of life) and <b style="color: ${themeColor};">'Logos'</b> (meaning study, science, or discourse).
+      The word <b style="color: #11998E;">'Psychology'</b> is derived from two Greek words: <b style="color: #11998E;">'Psyche'</b> (meaning soul or breath of life) and <b style="color: #11998E;">'Logos'</b> (meaning study, science, or discourse).
     </div>
   </div>
 
   <!-- Q2 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q2: Who is regarded as the "Father of Behaviorism"?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q2: Who is regarded as the "Father of Behaviorism"?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">John B. Watson (J. B. Watson)</b> is regarded as the Father of Behaviorism. He defined psychology strictly as the positive science of observable behavior.
+      <b style="color: #11998E;">John B. Watson (J. B. Watson)</b> is regarded as the Father of Behaviorism. He defined psychology strictly as the positive science of observable behavior.
     </div>
   </div>
 
   <!-- Q3 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q3: State R. S. Woodworth's famous statement summarizing the evolution of psychology.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q3: State R. S. Woodworth's famous statement summarizing the evolution of psychology.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Woodworth stated: <b style="color: ${themeColor};">"First psychology lost its soul, then its mind, then its consciousness; it still has behavior of a sort."</b>
+      Woodworth stated: <b style="color: #11998E;">"First psychology lost its soul, then its mind, then its consciousness; it still has behavior of a sort."</b>
     </div>
   </div>
 
   <!-- Q4 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q4: Where and by whom was the world's first psychological laboratory established?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q4: Where and by whom was the world's first psychological laboratory established?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      The first psychological laboratory was founded by <b style="color: ${themeColor};">Wilhelm Wundt</b> in the year <b style="color: ${themeColor};">1879</b> at Leipzig University in Germany.
+      The first psychological laboratory was founded by <b style="color: #11998E;">Wilhelm Wundt</b> in the year <b style="color: #11998E;">1879</b> at Leipzig University in Germany.
     </div>
   </div>
 
   <!-- Q5 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q5: Define Educational Psychology according to E. A. Peel.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q5: Define Educational Psychology according to E. A. Peel.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      According to <b style="color: ${themeColor};">E. A. Peel:</b>
+      According to <b style="color: #11998E;">E. A. Peel:</b>
       <br><i>"Educational Psychology is the science of education."</i> It applies scientific psychological principles to instructional practices.
     </div>
   </div>
 
   <!-- Q6 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q6: State the modern psychological definition of "Learning".</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q6: State the modern psychological definition of "Learning".</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      According to <b style="color: ${themeColor};">Gates and others:</b>
-      <br><b style="color: ${themeColor};">"Learning is the modification of behavior through experience and training."</b> It produces progressive behavioral adaptations.
+      According to <b style="color: #11998E;">Gates and others:</b>
+      <br><b style="color: #11998E;">"Learning is the modification of behavior through experience and training."</b> It produces progressive behavioral adaptations.
     </div>
   </div>
 
   <!-- Q7 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q7: State two important characteristics of learning.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q7: State two important characteristics of learning.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      &bull; <b>Lifelong &amp; Continuous:</b> Learning begins at birth and continues across the lifespan until death.
-      <br>&bull; <b>Active Process:</b> Learning requires active cognitive and physical engagement by the learner.
+      &bull; <b style="color: #11998E; font-weight: bold;">Lifelong &amp; Continuous:</b> Learning begins at birth and continues across the lifespan until death.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Active Process:</b> Learning requires active cognitive and physical engagement by the learner.
     </div>
   </div>
 
   <!-- Q8 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q8: How does maturation differ from learning?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q8: How does maturation differ from learning?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      <b style="color: ${themeColor};">Maturation</b> is biological growth independent of environmental training (e.g. bird growing wings); whereas <b style="color: ${themeColor};">learning</b> depends directly on practice, experience, and effort.
+      <b style="color: #11998E;">Maturation</b> is biological growth independent of environmental training (e.g. bird growing wings); whereas <b style="color: #11998E;">learning</b> depends directly on practice, experience, and effort.
     </div>
   </div>
 
   <!-- Q9 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q9: What is the Latin origin of the word 'Motivation'?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q9: What is the Latin origin of the word 'Motivation'?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Motivation originates from the Latin verb <b style="color: ${themeColor};">'Movere'</b>, which literally translates <i>'to move'</i> or to set into purposeful motion.
+      Motivation originates from the Latin verb <b style="color: #11998E;">'Movere'</b>, which literally translates <i>'to move'</i> or to set into purposeful motion.
     </div>
   </div>
 
   <!-- Q10 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q10: Give two clear differences between Intrinsic and Extrinsic Motivation.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q10: Give two clear differences between Intrinsic and Extrinsic Motivation.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      &bull; <b>Source:</b> Intrinsic motivation arises from within (curiosity/joy); extrinsic motivation arises from outside (grades/rewards).
-      <br>&bull; <b>Durability:</b> Intrinsic motivation is enduring and self-sustaining; extrinsic motivation often ends when rewards stop.
+      &bull; <b style="color: #11998E; font-weight: bold;">Source:</b> Intrinsic motivation arises from within (curiosity/joy); extrinsic motivation arises from outside (grades/rewards).
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Durability:</b> Intrinsic motivation is enduring and self-sustaining; extrinsic motivation often ends when rewards stop.
     </div>
   </div>
 
   <!-- Q11 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q11: Why is B. F. Skinner's quote on motivation famous?</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q11: Why is B. F. Skinner's quote on motivation famous?</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      Skinner proclaimed that <b style="color: ${themeColor};">"Motivation in school learning is the superhighway to effective instruction,"</b> highlighting that learning without motivation is virtually impossible.
+      Skinner proclaimed that <b style="color: #11998E;">"Motivation in school learning is the superhighway to effective instruction,"</b> highlighting that learning without motivation is virtually impossible.
     </div>
   </div>
 
   <!-- Q12 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px;">
-    <h3 style="color: ${themeColor}; font-size: 16px; margin: 0 0 8px 0;">Q12: Mention any two major learner-related factors that influence learning.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16px; margin: 0 0 8px 0;">Q12: Mention any two major learner-related factors that influence learning.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.6;">
-      &bull; <b style="color: ${themeColor};">Intellectual Ability (IQ) &amp; Readiness:</b> Mental capacity and developmental readiness.
-      <br>&bull; <b style="color: ${themeColor};">Physical Health &amp; Fatigue:</b> Sensory vitality, nutrition, and freedom from exhaustion.
+      &bull; <b style="color: #11998E;">Intellectual Ability (IQ) &amp; Readiness:</b> Mental capacity and developmental readiness.
+      <br>&bull; <b style="color: #11998E;">Physical Health &amp; Fatigue:</b> Sensory vitality, nutrition, and freedom from exhaustion.
     </div>
   </div>
 
   <!-- SECTION B HEADER -->
-  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid #11998E; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
+    <h2 style="color: #11998E; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION B: Short Answer Type Questions (SAT &bull; 4 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">8 Questions &bull; Word Limit: 80–100 Words &bull; 4 to 5 Themed Bullet Points</span>
@@ -509,105 +509,105 @@ export const c11Edu3HtmlSolutions = `
 
   <!-- Q13 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q13: Trace the four historical stages in the evolution of the definition of Psychology.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q13: Trace the four historical stages in the evolution of the definition of Psychology.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Psychology progressed through four distinct conceptual phases:
-      <br>&bull; <b style="color: ${themeColor};">1. Science of the Soul:</b> Aristotle and Plato studied the soul; discarded because soul is metaphysical and cannot be verified empirically.
-      <br>&bull; <b style="color: ${themeColor};">2. Science of the Mind:</b> Locke and Kant replaced soul with mind; discarded because mind was abstract and subjective.
-      <br>&bull; <b style="color: ${themeColor};">3. Science of Consciousness:</b> Wundt and William James analyzed conscious states; discarded because Freud proved that the unconscious mind controls behavior.
-      <br>&bull; <b style="color: ${themeColor};">4. Science of Behavior:</b> J. B. Watson firmly established psychology as the positive science of observable, measurable behavior.
+      <br>&bull; <b style="color: #11998E;">1. Science of the Soul:</b> Aristotle and Plato studied the soul; discarded because soul is metaphysical and cannot be verified empirically.
+      <br>&bull; <b style="color: #11998E;">2. Science of the Mind:</b> Locke and Kant replaced soul with mind; discarded because mind was abstract and subjective.
+      <br>&bull; <b style="color: #11998E;">3. Science of Consciousness:</b> Wundt and William James analyzed conscious states; discarded because Freud proved that the unconscious mind controls behavior.
+      <br>&bull; <b style="color: #11998E;">4. Science of Behavior:</b> J. B. Watson firmly established psychology as the positive science of observable, measurable behavior.
     </div>
   </div>
 
   <!-- Q14 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q14: Explain four primary functions of Educational Psychology for a school teacher.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q14: Explain four primary functions of Educational Psychology for a school teacher.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Educational psychology equips the teacher with vital pedagogical insights:
-      <br>&bull; <b style="color: ${themeColor};">Understanding Individual Differences:</b> Identifies varied intellectual, emotional, and sensory needs among students to tailor instruction.
-      <br>&bull; <b style="color: ${themeColor};">Selecting Appropriate Teaching Methods:</b> Guides whether to use concrete play methods or abstract analytical discussions based on developmental age.
-      <br>&bull; <b style="color: ${themeColor};">Managing Classroom Discipline:</b> Teaches positive reinforcement and replaces harsh punitive corporal punishment with psychological understanding.
-      <br>&bull; <b style="color: ${themeColor};">Handling Problem Children:</b> Diagnoses emotional causes behind truancy, aggression, stammering, and learning disabilities.
+      <br>&bull; <b style="color: #11998E;">Understanding Individual Differences:</b> Identifies varied intellectual, emotional, and sensory needs among students to tailor instruction.
+      <br>&bull; <b style="color: #11998E;">Selecting Appropriate Teaching Methods:</b> Guides whether to use concrete play methods or abstract analytical discussions based on developmental age.
+      <br>&bull; <b style="color: #11998E;">Managing Classroom Discipline:</b> Teaches positive reinforcement and replaces harsh punitive corporal punishment with psychological understanding.
+      <br>&bull; <b style="color: #11998E;">Handling Problem Children:</b> Diagnoses emotional causes behind truancy, aggression, stammering, and learning disabilities.
     </div>
   </div>
 
   <!-- Q15 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q15: Describe the scope of Educational Psychology across its five main areas.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q15: Describe the scope of Educational Psychology across its five main areas.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       The scope of educational psychology encompasses five comprehensive components:
-      <br>&bull; <b style="color: ${themeColor};">The Learner:</b> Studies innate abilities, developmental milestones, personality, and intelligence of the student.
-      <br>&bull; <b style="color: ${themeColor};">The Learning Process:</b> Analyzes laws of learning, theories of conditioning, memory, retention, and transfer of learning.
-      <br>&bull; <b style="color: ${themeColor};">The Learning Situation:</b> Investigates environmental conditions, lighting, noise, and emotional classroom atmosphere.
-      <br>&bull; <b style="color: ${themeColor};">The Teaching Situation:</b> Focuses on instructional planning, motivational techniques, and teacher-pupil rapport.
-      <br>&bull; <b style="color: ${themeColor};">Evaluation &amp; Measurement:</b> Develops standardized achievement tests, diagnostic tools, and grading criteria.
+      <br>&bull; <b style="color: #11998E;">The Learner:</b> Studies innate abilities, developmental milestones, personality, and intelligence of the student.
+      <br>&bull; <b style="color: #11998E;">The Learning Process:</b> Analyzes laws of learning, theories of conditioning, memory, retention, and transfer of learning.
+      <br>&bull; <b style="color: #11998E;">The Learning Situation:</b> Investigates environmental conditions, lighting, noise, and emotional classroom atmosphere.
+      <br>&bull; <b style="color: #11998E;">The Teaching Situation:</b> Focuses on instructional planning, motivational techniques, and teacher-pupil rapport.
+      <br>&bull; <b style="color: #11998E;">Evaluation &amp; Measurement:</b> Develops standardized achievement tests, diagnostic tools, and grading criteria.
     </div>
   </div>
 
   <!-- Q16 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q16: State and explain four essential characteristics of the Learning process.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q16: State and explain four essential characteristics of the Learning process.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       The core characteristics of learning include:
-      <br>&bull; <b style="color: ${themeColor};">Continuous &amp; Lifelong:</b> Operates from birth till death through endless interaction with the external world.
-      <br>&bull; <b style="color: ${themeColor};">Modification of Behavior:</b> Replaces crude instincts with refined habits, cognitive knowledge, and motor competencies.
-      <br>&bull; <b style="color: ${themeColor};">Active &amp; Purposive:</b> Real learning demands energetic cognitive participation toward a meaningful personal objective.
-      <br>&bull; <b style="color: ${themeColor};">Adjustment to Environment:</b> Empowers the individual to overcome obstacles, solve daily crises, and adapt to novel societal settings.
+      <br>&bull; <b style="color: #11998E;">Continuous &amp; Lifelong:</b> Operates from birth till death through endless interaction with the external world.
+      <br>&bull; <b style="color: #11998E;">Modification of Behavior:</b> Replaces crude instincts with refined habits, cognitive knowledge, and motor competencies.
+      <br>&bull; <b style="color: #11998E;">Active &amp; Purposive:</b> Real learning demands energetic cognitive participation toward a meaningful personal objective.
+      <br>&bull; <b style="color: #11998E;">Adjustment to Environment:</b> Empowers the individual to overcome obstacles, solve daily crises, and adapt to novel societal settings.
     </div>
   </div>
 
   <!-- Q17 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q17: Explain how Learner-Related factors affect the learning process.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q17: Explain how Learner-Related factors affect the learning process.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Characteristics inherent to the learner determine learning capability:
-      <br>&bull; <b style="color: ${themeColor};">Maturation &amp; Readiness:</b> Anatomical and neural readiness precedes complex learning (e.g. vocal cords maturing before speech).
-      <br>&bull; <b style="color: ${themeColor};">Motivation &amp; Will to Learn:</b> High interest activates concentration, while apathy leads to rapid distraction.
-      <br>&bull; <b style="color: ${themeColor};">Intelligence &amp; Aptitude:</b> High-IQ learners process abstract concepts rapidly, whereas slow learners require repetitive concrete illustrations.
-      <br>&bull; <b style="color: ${themeColor};">Physical Health &amp; Fatigue:</b> Chronic illness, hunger, and physical exhaustion drastically reduce attention span and retention.
+      <br>&bull; <b style="color: #11998E;">Maturation &amp; Readiness:</b> Anatomical and neural readiness precedes complex learning (e.g. vocal cords maturing before speech).
+      <br>&bull; <b style="color: #11998E;">Motivation &amp; Will to Learn:</b> High interest activates concentration, while apathy leads to rapid distraction.
+      <br>&bull; <b style="color: #11998E;">Intelligence &amp; Aptitude:</b> High-IQ learners process abstract concepts rapidly, whereas slow learners require repetitive concrete illustrations.
+      <br>&bull; <b style="color: #11998E;">Physical Health &amp; Fatigue:</b> Chronic illness, hunger, and physical exhaustion drastically reduce attention span and retention.
     </div>
   </div>
 
   <!-- Q18 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q18: Explain how Environmental and Methodological factors influence learning.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q18: Explain how Environmental and Methodological factors influence learning.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       External conditions and pedagogical techniques powerfully impact learning outcomes:
-      <br>&bull; <b style="color: ${themeColor};">Distributed vs. Massed Practice:</b> Spaced study sessions with brief rests yield far better retention than continuous cramming.
-      <br>&bull; <b style="color: ${themeColor};">Immediate Knowledge of Results:</b> Instant feedback reinforces correct neural associations and prevents errors from solidifying.
-      <br>&bull; <b style="color: ${themeColor};">Physical Comfort:</b> Adequate natural light, fresh ventilation, and low noise levels sustain mental freshness.
-      <br>&bull; <b style="color: ${themeColor};">Teacher's Personality:</b> Warm, enthusiastic, and approachable teachers inspire confidence, whereas authoritarian hostility induces anxiety.
+      <br>&bull; <b style="color: #11998E;">Distributed vs. Massed Practice:</b> Spaced study sessions with brief rests yield far better retention than continuous cramming.
+      <br>&bull; <b style="color: #11998E;">Immediate Knowledge of Results:</b> Instant feedback reinforces correct neural associations and prevents errors from solidifying.
+      <br>&bull; <b style="color: #11998E;">Physical Comfort:</b> Adequate natural light, fresh ventilation, and low noise levels sustain mental freshness.
+      <br>&bull; <b style="color: #11998E;">Teacher's Personality:</b> Warm, enthusiastic, and approachable teachers inspire confidence, whereas authoritarian hostility induces anxiety.
     </div>
   </div>
 
   <!-- Q19 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q19: Describe the steps of the Motivation Cycle with a suitable example.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q19: Describe the steps of the Motivation Cycle with a suitable example.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       The motivation cycle follows a sequential, recurring psychological loop:
-      <br>&bull; <b style="color: ${themeColor};">1. Need:</b> A physiological or psychological deficit occurs (e.g. hunger or desire to pass an exam).
-      <br>&bull; <b style="color: ${themeColor};">2. Drive:</b> The deficit generates an internal state of bodily tension or urge to act.
-      <br>&bull; <b style="color: ${themeColor};">3. Arousal:</b> Energy mobilization and heightened alertness occur.
-      <br>&bull; <b style="color: ${themeColor};">4. Goal-Directed Behavior:</b> The organism executes targeted activities (e.g. searching for food or studying).
-      <br>&bull; <b style="color: ${themeColor};">5. Goal Attainment &amp; Reduction:</b> The goal is achieved, the need is fulfilled, and psychological tension reduces.
+      <br>&bull; <b style="color: #11998E;">1. Need:</b> A physiological or psychological deficit occurs (e.g. hunger or desire to pass an exam).
+      <br>&bull; <b style="color: #11998E;">2. Drive:</b> The deficit generates an internal state of bodily tension or urge to act.
+      <br>&bull; <b style="color: #11998E;">3. Arousal:</b> Energy mobilization and heightened alertness occur.
+      <br>&bull; <b style="color: #11998E;">4. Goal-Directed Behavior:</b> The organism executes targeted activities (e.g. searching for food or studying).
+      <br>&bull; <b style="color: #11998E;">5. Goal Attainment &amp; Reduction:</b> The goal is achieved, the need is fulfilled, and psychological tension reduces.
     </div>
   </div>
 
   <!-- Q20 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 18px;">
-    <h3 style="color: ${themeColor}; font-size: 16.5px; margin: 0 0 10px 0;">Q20: Suggest four practical techniques to motivate uninspired students in the classroom.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 16.5px; margin: 0 0 10px 0;">Q20: Suggest four practical techniques to motivate uninspired students in the classroom.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.65;">
       Teachers can stimulate learning interest through effective psychological strategies:
-      <br>&bull; <b style="color: ${themeColor};">Judicious Praise over Sarcasm:</b> Recognizing genuine effort boosts self-efficacy; public humiliation causes resentment.
-      <br>&bull; <b style="color: ${themeColor};">Introduction of Novelty:</b> Utilizing interactive charts, digital media, and hands-on experiments breaks monotony.
-      <br>&bull; <b style="color: ${themeColor};">Setting Realistic Short-Term Goals:</b> Breaking massive syllabi into bite-sized, achievable targets creates frequent feelings of success.
-      <br>&bull; <b style="color: ${themeColor};">Relating Lessons to Real Life:</b> Linking theoretical topics to students' daily experiences demonstrates practical relevance and value.
+      <br>&bull; <b style="color: #11998E;">Judicious Praise over Sarcasm:</b> Recognizing genuine effort boosts self-efficacy; public humiliation causes resentment.
+      <br>&bull; <b style="color: #11998E;">Introduction of Novelty:</b> Utilizing interactive charts, digital media, and hands-on experiments breaks monotony.
+      <br>&bull; <b style="color: #11998E;">Setting Realistic Short-Term Goals:</b> Breaking massive syllabi into bite-sized, achievable targets creates frequent feelings of success.
+      <br>&bull; <b style="color: #11998E;">Relating Lessons to Real Life:</b> Linking theoretical topics to students' daily experiences demonstrates practical relevance and value.
     </div>
   </div>
 
   <!-- SECTION C HEADER -->
-  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid ${themeColor}; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
-    <h2 style="color: ${themeColor}; margin: 0; font-size: 18px; font-weight: bold;">
+  <div style="background: rgba(17, 153, 142, 0.15); border-left: 5px solid #11998E; padding: 10px 16px; border-radius: 4px; margin: 30px 0 20px 0;">
+    <h2 style="color: #11998E; font-weight: bold; margin: 0; font-size: 18px; font-weight: bold;">
       SECTION C: Long Answer Type Questions (LAT &bull; 6 Marks)
     </h2>
     <span style="color: #CBD5E1; font-size: 13.5px;">5 Comprehensive Board Questions &bull; 3-Tier Answer Blueprint (Intro &rarr; Core Analysis &rarr; Conclusion)</span>
@@ -615,102 +615,102 @@ export const c11Edu3HtmlSolutions = `
 
   <!-- Q21 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q21: Define Psychology and critically discuss its historical evolution from the Science of the Soul to the Science of Behavior.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q21: Define Psychology and critically discuss its historical evolution from the Science of the Soul to the Science of Behavior.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #11998E;">1. Introduction:</b><br>
       Psychology is the positive and empirical science of human and animal behavior and cognitive processes. Etymologically derived from the Greek terms <i>Psyche</i> (soul) and <i>Logos</i> (study), it began as an abstract branch of philosophy and evolved over two millennia into an independent, experimental science.
       <br><br>
-      <b style="color: ${themeColor};">2. Historical Evolution &amp; Critical Dimensions:</b><br>
-      &bull; <b>Stage 1: Science of the Soul (Ancient Greek Period):</b> Plato and Aristotle formulated psychology as the study of the metaphysical soul. This view was rejected because the soul is unobservable, intangible, and lacks empirical, verifiable existence.
-      <br>&bull; <b>Stage 2: Science of the Mind (17th–18th Century):</b> John Locke and European philosophers defined psychology as mental philosophy. However, the exact nature, structure, and boundaries of the mind remained subjective and unmeasurable.
-      <br>&bull; <b>Stage 3: Science of Consciousness (19th Century):</b> With Wilhelm Wundt establishing the first psychological laboratory in 1879, psychology embraced experimental introspection to analyze conscious states. But Sigmund Freud revealed that conscious experience accounts for merely a tiny fraction of human mental life, while the vast subconscious and unconscious drives dominate behavior.
-      <br>&bull; <b>Stage 4: Science of Behavior (20th Century to Present):</b> J. B. Watson introduced Behaviorism, arguing that objective science can study only observable actions, reactions, and measurable reflexes. Modern psychologists synthesized this with cognitive psychology to define psychology as the science of behavior and mental processes.
+      <b style="color: #11998E;">2. Historical Evolution &amp; Critical Dimensions:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">Stage 1: Science of the Soul (Ancient Greek Period):</b> Plato and Aristotle formulated psychology as the study of the metaphysical soul. This view was rejected because the soul is unobservable, intangible, and lacks empirical, verifiable existence.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Stage 2: Science of the Mind (17th–18th Century):</b> John Locke and European philosophers defined psychology as mental philosophy. However, the exact nature, structure, and boundaries of the mind remained subjective and unmeasurable.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Stage 3: Science of Consciousness (19th Century):</b> With Wilhelm Wundt establishing the first psychological laboratory in 1879, psychology embraced experimental introspection to analyze conscious states. But Sigmund Freud revealed that conscious experience accounts for merely a tiny fraction of human mental life, while the vast subconscious and unconscious drives dominate behavior.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Stage 4: Science of Behavior (20th Century to Present):</b> J. B. Watson introduced Behaviorism, arguing that objective science can study only observable actions, reactions, and measurable reflexes. Modern psychologists synthesized this with cognitive psychology to define psychology as the science of behavior and mental processes.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #11998E;">3. Conclusion &amp; Educational Implication:</b><br>
       As Woodworth brilliantly summarized, psychology shed its soul, mind, and consciousness to become the objective science of behavior. In education, this allows teachers to measure, evaluate, and modify students' observable academic and social habits through systematic pedagogy.
     </div>
   </div>
 
   <!-- Q22 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q22: What is Educational Psychology? Elaborate its comprehensive scope and explain why it is indispensable for effective classroom teaching.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q22: What is Educational Psychology? Elaborate its comprehensive scope and explain why it is indispensable for effective classroom teaching.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #11998E;">1. Introduction:</b><br>
       Educational Psychology is an applied branch of psychology that utilizes psychological principles, theories, and research methodologies to optimize teaching and learning within educational institutions. According to Peel, it is the "science of education," serving as the scientific foundation for curriculum, instructional design, and classroom management.
       <br><br>
-      <b style="color: ${themeColor};">2. Scope &amp; Foundational Pillars:</b><br>
-      &bull; <b>The Learner:</b> Studies growth stages, biological maturation, individual intelligence differences, interests, aptitudes, and personality dynamics.
-      <br>&bull; <b>The Learning Process:</b> Details how knowledge is assimilated, conditioning laws, retention mechanics, forgetting curves, and transfer of learning to real life.
-      <br>&bull; <b>The Learning Environment:</b> Analyzes the psychological climate, seating patterns, sociometric groupings, and classroom physical conditions.
-      <br>&bull; <b>The Teaching Situation:</b> Guides teachers in pedagogical techniques, instructional strategies, lesson structuring, and media integration.
-      <br>&bull; <b>Evaluation &amp; Measurement:</b> Formulates psychological tests, aptitude assessments, and diagnostic metrics to identify learning gaps.
+      <b style="color: #11998E;">2. Scope &amp; Foundational Pillars:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">The Learner:</b> Studies growth stages, biological maturation, individual intelligence differences, interests, aptitudes, and personality dynamics.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">The Learning Process:</b> Details how knowledge is assimilated, conditioning laws, retention mechanics, forgetting curves, and transfer of learning to real life.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">The Learning Environment:</b> Analyzes the psychological climate, seating patterns, sociometric groupings, and classroom physical conditions.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">The Teaching Situation:</b> Guides teachers in pedagogical techniques, instructional strategies, lesson structuring, and media integration.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Evaluation &amp; Measurement:</b> Formulates psychological tests, aptitude assessments, and diagnostic metrics to identify learning gaps.
       <br><br>
-      <b style="color: ${themeColor};">3. Indispensability for the Modern Teacher &amp; Conclusion:</b><br>
+      <b style="color: #11998E;">3. Indispensability for the Modern Teacher &amp; Conclusion:</b><br>
       Without educational psychology, teaching degenerates into blind guesswork. It enables the teacher to shift from rigid teacher-centered authoritarianism to empathetic child-centered pedagogy. It helps identify learning disabilities like dyslexia, prevents delinquency, and ensures that classroom instruction aligns harmoniously with child developmental stages.
     </div>
   </div>
 
   <!-- Q23 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q23: Define Learning. Discuss its primary characteristics and analyze the role of Maturation in learning.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q23: Define Learning. Discuss its primary characteristics and analyze the role of Maturation in learning.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #11998E;">1. Introduction:</b><br>
       Learning is defined by Gates as the "modification of behavior through experience and training." It represents the progressive process through which human beings acquire novel habits, factual knowledge, sensory-motor skills, and emotional attitudes, leading to enhanced adaptive capacity.
       <br><br>
-      <b style="color: ${themeColor};">2. Fundamental Characteristics of Learning:</b><br>
-      &bull; <b>Continuous &amp; Comprehensive:</b> An unending lifelong voyage encompassing cognitive, affective, and psychomotor domains.
-      <br>&bull; <b>Goal-Oriented &amp; Purposive:</b> Efficiency peaks when the learner recognizes the purpose and value of the task.
-      <br>&bull; <b>Active Engagement:</b> Learning is not a passive reception like pouring water into a jug; the learner must reconstruct experience mentally.
-      <br>&bull; <b>Universal Adaptation:</b> Operates across all cultures, societies, and biological species.
+      <b style="color: #11998E;">2. Fundamental Characteristics of Learning:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">Continuous &amp; Comprehensive:</b> An unending lifelong voyage encompassing cognitive, affective, and psychomotor domains.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Goal-Oriented &amp; Purposive:</b> Efficiency peaks when the learner recognizes the purpose and value of the task.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Active Engagement:</b> Learning is not a passive reception like pouring water into a jug; the learner must reconstruct experience mentally.
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Universal Adaptation:</b> Operates across all cultures, societies, and biological species.
       <br><br>
-      <b style="color: ${themeColor};">3. The Critical Role of Maturation &amp; Conclusion:</b><br>
+      <b style="color: #11998E;">3. The Critical Role of Maturation &amp; Conclusion:</b><br>
       Maturation is biological, internal growth and neurological ripening that unfolds naturally according to genetic clocks. Learning is entirely dependent on maturation. For instance, attempting to teach a 6-month-old child to write is futile because fine motor muscles and neural pathways have not matured. Maturation sets the physiological ceiling and readiness; learning builds competencies upon that biological foundation. Teaching before readiness produces frustration and failure.
     </div>
   </div>
 
   <!-- Q24 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q24: Provide an exhaustive analysis of the Factors Affecting Learning (Learner, Material, and Environmental factors).</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q24: Provide an exhaustive analysis of the Factors Affecting Learning (Learner, Material, and Environmental factors).</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #11998E;">1. Introduction:</b><br>
       The learning process is never uniform; its velocity, depth, and permanence depend on a delicate interplay between internal biological attributes of the learner, the nature of the academic material, and the surrounding physical-social environment.
       <br><br>
-      <b style="color: ${themeColor};">2. Detailed Tripartite Analysis:</b><br>
-      &bull; <b>1. Learner-Related Factors:</b>
+      <b style="color: #11998E;">2. Detailed Tripartite Analysis:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">1. Learner-Related Factors:</b>
       <br>&nbsp;&nbsp;&bull; <i>Readiness &amp; Maturation:</i> Thorndike's Law of Readiness states that learning occurs smoothly when the organism is ready.
       <br>&nbsp;&nbsp;&bull; <i>Motivation &amp; Aspiration:</i> Internal drive focuses attention and sustains persistence in the face of academic difficulty.
       <br>&nbsp;&nbsp;&bull; <i>Physical &amp; Mental Health:</i> Sickness, malnutrition, sensory impairments, and anxiety severely restrict cognitive bandwidth.
-      <br>&bull; <b>2. Material / Task Factors:</b>
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">2. Material / Task Factors:</b>
       <br>&nbsp;&nbsp;&bull; <i>Meaningfulness:</i> Material connecting with existing cognitive schema is mastered exponentially faster than abstract lists.
       <br>&nbsp;&nbsp;&bull; <i>Organization &amp; Structure:</i> Content sequenced logically from simple-to-complex minimizes cognitive fatigue.
-      <br>&bull; <b>3. Methodological &amp; Environmental Factors:</b>
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">3. Methodological &amp; Environmental Factors:</b>
       <br>&nbsp;&nbsp;&bull; <i>Practice Distribution:</i> Spaced learning outclasses massed cramming for long-term memory consolidation.
       <br>&nbsp;&nbsp;&bull; <i>Knowledge of Results:</i> Immediate corrective feedback reinforces correct behaviors and eliminates erroneous concepts.
       <br>&nbsp;&nbsp;&bull; <i>Classroom Climate:</i> Comfortable lighting, absence of distracting noise, and an emotionally supportive teacher foster optimal learning.
       <br><br>
-      <b style="color: ${themeColor};">3. Conclusion &amp; Educational Implication:</b><br>
+      <b style="color: #11998E;">3. Conclusion &amp; Educational Implication:</b><br>
       Educators cannot simply blame students for poor performance. Effective schooling requires synchronizing all three dimensions &mdash; preparing the learner, organizing curriculum meaningfully, and cultivating an inspiring, threat-free classroom climate.
     </div>
   </div>
 
   <!-- Q25 -->
   <div style="background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(17, 153, 142, 0.3); border-radius: 8px; padding: 18px; margin-bottom: 20px;">
-    <h3 style="color: ${themeColor}; font-size: 17px; margin: 0 0 12px 0;">Q25: Define Motivation. Differentiate comprehensively between Intrinsic and Extrinsic Motivation, and describe classroom strategies to foster genuine learning desire.</h3>
+    <h3 style="color: #11998E; font-weight: bold; font-size: 17px; margin: 0 0 12px 0;">Q25: Define Motivation. Differentiate comprehensively between Intrinsic and Extrinsic Motivation, and describe classroom strategies to foster genuine learning desire.</h3>
     <div style="color: #FFFFFF; font-size: 15px; line-height: 1.7;">
-      <b style="color: ${themeColor};">1. Introduction:</b><br>
+      <b style="color: #11998E;">1. Introduction:</b><br>
       Derived from the Latin <i>Movere</i> (to move), motivation is the dynamic, energizing force that activates, directs, and sustains behavior toward a predefined goal. As B. F. Skinner noted, motivation in school is the superhighway to learning; without it, all instructional apparatus remains sterile.
       <br><br>
-      <b style="color: ${themeColor};">2. Comprehensive Differentiation:</b><br>
-      &bull; <b>Intrinsic Motivation (Internal Locus):</b>
+      <b style="color: #11998E;">2. Comprehensive Differentiation:</b><br>
+      &bull; <b style="color: #11998E; font-weight: bold;">Intrinsic Motivation (Internal Locus):</b>
       <br>&nbsp;&nbsp;&bull; <i>Nature:</i> The activity is its own reward; driven by innate curiosity, competence mastery, and creative joy.
       <br>&nbsp;&nbsp;&bull; <i>Persistence:</i> High durability; continues independently even without supervision or external prizes.
       <br>&nbsp;&nbsp;&bull; <i>Outcome:</i> Fosters deep conceptual learning, original thinking, and emotional fulfillment.
-      <br>&bull; <b>Extrinsic Motivation (External Locus):</b>
+      <br>&bull; <b style="color: #11998E; font-weight: bold;">Extrinsic Motivation (External Locus):</b>
       <br>&nbsp;&nbsp;&bull; <i>Nature:</i> Driven by artificial external stimuli like grades, money, gold medals, social approval, or threat of punishment.
       <br>&nbsp;&nbsp;&bull; <i>Persistence:</i> Fragile; ceases abruptly as soon as the external reward or threat is withdrawn.
       <br>&nbsp;&nbsp;&bull; <i>Outcome:</i> Encourages minimum-effort compliance and superficial memorization.
       <br><br>
-      <b style="color: ${themeColor};">3. Strategic Classroom Applications &amp; Conclusion:</b><br>
+      <b style="color: #11998E;">3. Strategic Classroom Applications &amp; Conclusion:</b><br>
       To transition students from fragile extrinsic incentives to enduring intrinsic motivation, teachers must:
       <br>&bull; Provide autonomy and choice in projects.
       <br>&bull; Deliver immediate, specific, and descriptive praise focused on effort rather than innate ability.

@@ -28,7 +28,7 @@ import {
 } from "@/constants/theme";
 import { RootStackParamList } from "@/navigation/RootStackNavigator";
 import { getChapter, getChapterGradient } from "@/data/chapters";
-import { getChapterContent } from "@/data/chapterContent";
+import type { ChapterContent } from "@/data/chapterContent";
 import { getHomeRoute } from "@/utils/navigation-utils";
 
 type SolutionRouteProp = RouteProp<RootStackParamList, "Solution">;
@@ -305,10 +305,11 @@ function SolutionScreen() {
   const [quizId, setQuizId] = useState(0);
 
   const chapter = React.useMemo(() => getChapter(chapterId), [chapterId]);
-  const chapterData = React.useMemo(
-    () => getChapterContent(chapterId),
-    [chapterId],
-  );
+  const chapterData: ChapterContent | undefined = React.useMemo(() => {
+    // Lazy-load chapter content on demand to keep initial app load lightning fast
+    const { getChapterContent } = require("@/data/chapterContent");
+    return getChapterContent(chapterId);
+  }, [chapterId]);
   const chapterGradient = React.useMemo(
     () => getChapterGradient(chapterId),
     [chapterId],

@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { KeyboardProvider } from "react-native-keyboard-controller";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -24,8 +23,8 @@ import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 import { JiguuColors } from "@/constants/theme";
 
-// Keep splash screen visible until app is mounted
-SplashScreen.preventAutoHideAsync().catch(() => {});
+// Do NOT prevent auto hide so native splash never freezes if an error or delay occurs
+SplashScreen.hideAsync().catch(() => {});
 
 const navTheme = {
   ...DefaultTheme,
@@ -48,20 +47,18 @@ export default function App() {
   });
 
   React.useEffect(() => {
-    if (fontsLoaded || fontError) {
-      SplashScreen.hideAsync().catch(() => {});
-    }
+    SplashScreen.hideAsync().catch(() => {});
   }, [fontsLoaded, fontError]);
 
   React.useEffect(() => {
-    // Fallback safety timers to ensure splash ALWAYS hides immediately
+    // Immediate and staggered safety calls to guarantee splash is dismissed
     SplashScreen.hideAsync().catch(() => {});
     const t1 = setTimeout(() => {
       SplashScreen.hideAsync().catch(() => {});
-    }, 200);
+    }, 100);
     const t2 = setTimeout(() => {
       SplashScreen.hideAsync().catch(() => {});
-    }, 800);
+    }, 500);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
@@ -73,12 +70,10 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <SafeAreaProvider style={styles.safeArea}>
           <GestureHandlerRootView style={styles.root}>
-            <KeyboardProvider>
-              <NavigationContainer theme={navTheme}>
-                <RootStackNavigator />
-              </NavigationContainer>
-              <StatusBar style="dark" />
-            </KeyboardProvider>
+            <NavigationContainer theme={navTheme}>
+              <RootStackNavigator />
+            </NavigationContainer>
+            <StatusBar style="dark" />
           </GestureHandlerRootView>
         </SafeAreaProvider>
       </QueryClientProvider>
