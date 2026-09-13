@@ -61,6 +61,7 @@ import { c11Pol11HtmlOverview, c11Pol11HtmlSolutions, c11Pol11Mcqs } from "./con
 import { c11Pol12HtmlOverview, c11Pol12HtmlSolutions, c11Pol12Mcqs } from "./content/c11-pol-12";
 import { c11Pol13HtmlOverview, c11Pol13HtmlSolutions, c11Pol13Mcqs } from "./content/c11-pol-13";
 import { c11Pol14HtmlOverview, c11Pol14HtmlSolutions, c11Pol14Mcqs } from "./content/c11-pol-14";
+import { c11Pol15HtmlOverview, c11Pol15HtmlSolutions, c11Pol15Mcqs } from "./content/c11-pol-15";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3289,6 +3290,23 @@ if (ch11Pol14) {
     },
   ];
   ch11Pol14.mcqs = c11Pol14Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 15 (Rights)
+const ch11Pol15 = chapterContents["c11-pol-15"];
+if (ch11Pol15) {
+  ch11Pol15.htmlOverview = c11Pol15HtmlOverview;
+  ch11Pol15.htmlExercises = {
+    "ex-c11-qa": c11Pol15HtmlSolutions,
+  };
+  ch11Pol15.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol15.mcqs = c11Pol15Mcqs;
 }
 
 
