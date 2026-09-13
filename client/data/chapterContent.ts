@@ -44,6 +44,7 @@ import { c12Pol9HtmlOverview, c12Pol9HtmlSolutions, c12Pol9Mcqs } from "./conten
 import { c12Pol10HtmlOverview, c12Pol10HtmlSolutions, c12Pol10Mcqs } from "./content/c12-pol-10";
 import { c12Pol11HtmlOverview, c12Pol11HtmlSolutions, c12Pol11Mcqs } from "./content/c12-pol-11";
 import { c12Pol12HtmlOverview, c12Pol12HtmlSolutions, c12Pol12Mcqs } from "./content/c12-pol-12";
+import { c12Pol13HtmlOverview, c12Pol13HtmlSolutions, c12Pol13Mcqs } from "./content/c12-pol-13";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2838,6 +2839,24 @@ if (ch12Pol12) {
   ];
   ch12Pol12.mcqs = c12Pol12Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 13 (Crisis of the Constitutional Order)
+const ch12Pol13 = chapterContents["c12-pol-13"];
+if (ch12Pol13) {
+  ch12Pol13.htmlOverview = c12Pol13HtmlOverview;
+  ch12Pol13.htmlExercises = {
+    "ex-c12-qa": c12Pol13HtmlSolutions,
+  };
+  ch12Pol13.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol13.mcqs = c12Pol13Mcqs;
+}
+
 
 
 
