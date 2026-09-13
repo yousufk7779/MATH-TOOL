@@ -40,6 +40,7 @@ import { c12Pol5HtmlOverview, c12Pol5HtmlSolutions, c12Pol5Mcqs } from "./conten
 import { c12Pol6HtmlOverview, c12Pol6HtmlSolutions, c12Pol6Mcqs } from "./content/c12-pol-6";
 import { c12Pol7HtmlOverview, c12Pol7HtmlSolutions, c12Pol7Mcqs } from "./content/c12-pol-7";
 import { c12Pol8HtmlOverview, c12Pol8HtmlSolutions, c12Pol8Mcqs } from "./content/c12-pol-8";
+import { c12Pol9HtmlOverview, c12Pol9HtmlSolutions, c12Pol9Mcqs } from "./content/c12-pol-9";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -2766,6 +2767,24 @@ if (ch12Pol8) {
   ];
   ch12Pol8.mcqs = c12Pol8Mcqs;
 }
+
+// Override Class 12 Political Science Chapter 9 (Era of One-Party Dominance)
+const ch12Pol9 = chapterContents["c12-pol-9"];
+if (ch12Pol9) {
+  ch12Pol9.htmlOverview = c12Pol9HtmlOverview;
+  ch12Pol9.htmlExercises = {
+    "ex-c12-qa": c12Pol9HtmlSolutions,
+  };
+  ch12Pol9.exercises = [
+    {
+      id: "ex-c12-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch12Pol9.mcqs = c12Pol9Mcqs;
+}
+
 
 
 
