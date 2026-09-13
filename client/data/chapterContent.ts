@@ -60,6 +60,7 @@ import { c11Pol10HtmlOverview, c11Pol10HtmlSolutions, c11Pol10Mcqs } from "./con
 import { c11Pol11HtmlOverview, c11Pol11HtmlSolutions, c11Pol11Mcqs } from "./content/c11-pol-11";
 import { c11Pol12HtmlOverview, c11Pol12HtmlSolutions, c11Pol12Mcqs } from "./content/c11-pol-12";
 import { c11Pol13HtmlOverview, c11Pol13HtmlSolutions, c11Pol13Mcqs } from "./content/c11-pol-13";
+import { c11Pol14HtmlOverview, c11Pol14HtmlSolutions, c11Pol14Mcqs } from "./content/c11-pol-14";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3271,6 +3272,23 @@ if (ch11Pol13) {
     },
   ];
   ch11Pol13.mcqs = c11Pol13Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 14 (Social Justice)
+const ch11Pol14 = chapterContents["c11-pol-14"];
+if (ch11Pol14) {
+  ch11Pol14.htmlOverview = c11Pol14HtmlOverview;
+  ch11Pol14.htmlExercises = {
+    "ex-c11-qa": c11Pol14HtmlSolutions,
+  };
+  ch11Pol14.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol14.mcqs = c11Pol14Mcqs;
 }
 
 
