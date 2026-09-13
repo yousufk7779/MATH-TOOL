@@ -47,6 +47,7 @@ import { c12Pol12HtmlOverview, c12Pol12HtmlSolutions, c12Pol12Mcqs } from "./con
 import { c12Pol13HtmlOverview, c12Pol13HtmlSolutions, c12Pol13Mcqs } from "./content/c12-pol-13";
 import { c12Pol14HtmlOverview, c12Pol14HtmlSolutions, c12Pol14Mcqs } from "./content/c12-pol-14";
 import { c12Pol15HtmlOverview, c12Pol15HtmlSolutions, c12Pol15Mcqs } from "./content/c12-pol-15";
+import { c11Pol1HtmlOverview, c11Pol1HtmlSolutions, c11Pol1Mcqs } from "./content/c11-pol-1";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3038,6 +3039,24 @@ if (ch12Pol15) {
   ];
   ch12Pol15.mcqs = c12Pol15Mcqs;
 }
+
+// Override Class 11 Political Science Chapter 1 (Making of the Constitution)
+const ch11Pol1 = chapterContents["c11-pol-1"];
+if (ch11Pol1) {
+  ch11Pol1.htmlOverview = c11Pol1HtmlOverview;
+  ch11Pol1.htmlExercises = {
+    "ex-c11-qa": c11Pol1HtmlSolutions,
+  };
+  ch11Pol1.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol1.mcqs = c11Pol1Mcqs;
+}
+
 
 
 
