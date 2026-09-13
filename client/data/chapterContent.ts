@@ -58,6 +58,7 @@ import { c11Pol8HtmlOverview, c11Pol8HtmlSolutions, c11Pol8Mcqs } from "./conten
 import { c11Pol9HtmlOverview, c11Pol9HtmlSolutions, c11Pol9Mcqs } from "./content/c11-pol-9";
 import { c11Pol10HtmlOverview, c11Pol10HtmlSolutions, c11Pol10Mcqs } from "./content/c11-pol-10";
 import { c11Pol11HtmlOverview, c11Pol11HtmlSolutions, c11Pol11Mcqs } from "./content/c11-pol-11";
+import { c11Pol12HtmlOverview, c11Pol12HtmlSolutions, c11Pol12Mcqs } from "./content/c11-pol-12";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3235,6 +3236,23 @@ if (ch11Pol11) {
     },
   ];
   ch11Pol11.mcqs = c11Pol11Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 12 (Freedom)
+const ch11Pol12 = chapterContents["c11-pol-12"];
+if (ch11Pol12) {
+  ch11Pol12.htmlOverview = c11Pol12HtmlOverview;
+  ch11Pol12.htmlExercises = {
+    "ex-c11-qa": c11Pol12HtmlSolutions,
+  };
+  ch11Pol12.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol12.mcqs = c11Pol12Mcqs;
 }
 
 
