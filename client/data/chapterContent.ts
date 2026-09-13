@@ -59,6 +59,7 @@ import { c11Pol9HtmlOverview, c11Pol9HtmlSolutions, c11Pol9Mcqs } from "./conten
 import { c11Pol10HtmlOverview, c11Pol10HtmlSolutions, c11Pol10Mcqs } from "./content/c11-pol-10";
 import { c11Pol11HtmlOverview, c11Pol11HtmlSolutions, c11Pol11Mcqs } from "./content/c11-pol-11";
 import { c11Pol12HtmlOverview, c11Pol12HtmlSolutions, c11Pol12Mcqs } from "./content/c11-pol-12";
+import { c11Pol13HtmlOverview, c11Pol13HtmlSolutions, c11Pol13Mcqs } from "./content/c11-pol-13";
 import { ChapterHTMLs } from "./chapterHTMLs";
 import {
   Definition,
@@ -3253,6 +3254,23 @@ if (ch11Pol12) {
     },
   ];
   ch11Pol12.mcqs = c11Pol12Mcqs;
+}
+
+// Override Class 11 Political Science Chapter 13 (Equality)
+const ch11Pol13 = chapterContents["c11-pol-13"];
+if (ch11Pol13) {
+  ch11Pol13.htmlOverview = c11Pol13HtmlOverview;
+  ch11Pol13.htmlExercises = {
+    "ex-c11-qa": c11Pol13HtmlSolutions,
+  };
+  ch11Pol13.exercises = [
+    {
+      id: "ex-c11-qa",
+      name: "Q & A",
+      questions: [],
+    },
+  ];
+  ch11Pol13.mcqs = c11Pol13Mcqs;
 }
 
 
